@@ -1,8 +1,9 @@
 class ListBindingHelper(object):
- """ Provides functionality to discover a bindable list and the properties of the items contained in the list when they differ from the public properties of the object to which they bind. """
- @staticmethod
- def GetList(*__args):
-  """
+    """ Provides functionality to discover a bindable list and the properties of the items contained in the list when they differ from the public properties of the object to which they bind. """
+
+    @staticmethod
+    def GetList(*__args):
+        """
   GetList(dataSource: object,dataMember: str) -> object
 
   
@@ -35,10 +36,11 @@ class ListBindingHelper(object):
 
     source specified by list.
   """
-  pass
- @staticmethod
- def GetListItemProperties(*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetListItemProperties(*__args):
+        """
   GetListItemProperties(dataSource: object,dataMember: str,listAccessors: Array[PropertyDescriptor]) -> PropertyDescriptorCollection
 
   
@@ -115,10 +117,11 @@ class ListBindingHelper(object):
 
     contained in list,or properties of list.
   """
-  pass
- @staticmethod
- def GetListItemType(*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetListItemType(*__args):
+        """
   GetListItemType(dataSource: object,dataMember: str) -> Type
 
   
@@ -153,10 +156,11 @@ class ListBindingHelper(object):
 
    Returns: The System.Type of the items contained in the list.
   """
-  pass
- @staticmethod
- def GetListName(list,listAccessors):
-  """
+        pass
+
+    @staticmethod
+    def GetListName(list, listAccessors):
+        """
   GetListName(list: object,listAccessors: Array[PropertyDescriptor]) -> str
 
   
@@ -181,11 +185,11 @@ class ListBindingHelper(object):
 
     source type.
   """
-  pass
- __all__=[
-  'GetList',
-  'GetListItemProperties',
-  'GetListItemType',
-  'GetListName',
- ]
+        pass
 
+    __all__ = [
+        "GetList",
+        "GetListItemProperties",
+        "GetListItemType",
+        "GetListName",
+    ]

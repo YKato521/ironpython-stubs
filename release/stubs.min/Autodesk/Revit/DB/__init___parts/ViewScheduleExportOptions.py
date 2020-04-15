@@ -1,5 +1,5 @@
-class ViewScheduleExportOptions(object,IDisposable):
- """
+class ViewScheduleExportOptions(object, IDisposable):
+    """
  The export options used to export schedule views.
 
  
@@ -8,34 +8,44 @@ class ViewScheduleExportOptions(object,IDisposable):
 
  ViewScheduleExportOptions(other: ViewScheduleExportOptions)
  """
- def Dispose(self):
-  """ Dispose(self: ViewScheduleExportOptions) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: ViewScheduleExportOptions,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,other=None):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: ViewScheduleExportOptions) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: ViewScheduleExportOptions,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, other=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,other: ViewScheduleExportOptions)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- ColumnHeaders=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """How to export column headers. Default is MultipleRows.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    ColumnHeaders = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """How to export column headers. Default is MultipleRows.
 
 
 
@@ -47,8 +57,10 @@ Set: ColumnHeaders(self: ViewScheduleExportOptions)=value
 
 """
 
- FieldDelimiter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """How to delimit fields. Default is Tab.
+    FieldDelimiter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """How to delimit fields. Default is Tab.
 
 
 
@@ -60,8 +72,10 @@ Set: FieldDelimiter(self: ViewScheduleExportOptions)=value
 
 """
 
- HeadersFootersBlanks=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether to export group headers,footers,and blank lines. Default is true.
+    HeadersFootersBlanks = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether to export group headers,footers,and blank lines. Default is true.
 
 
 
@@ -73,8 +87,10 @@ Set: HeadersFootersBlanks(self: ViewScheduleExportOptions)=value
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -84,8 +100,10 @@ Get: IsValidObject(self: ViewScheduleExportOptions) -> bool
 
 """
 
- TextQualifier=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """How to qualify text fields. Default is DoubleQuote.
+    TextQualifier = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """How to qualify text fields. Default is DoubleQuote.
 
 
 
@@ -97,8 +115,8 @@ Set: TextQualifier(self: ViewScheduleExportOptions)=value
 
 """
 
- Title=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether or not to export the schedule title. Default is true.
+    Title = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Whether or not to export the schedule title. Default is true.
 
 
 
@@ -109,5 +127,3 @@ Get: Title(self: ViewScheduleExportOptions) -> bool
 Set: Title(self: ViewScheduleExportOptions)=value
 
 """
-
-

@@ -8,26 +8,28 @@
 # no functions
 # classes
 
+
 class EntityTags(object):
- """ EntityTags(tags: Dictionary[str,object],parent: DesignScriptEntity) """
- def AddTag(self,tag,data):
-  """ AddTag(self: EntityTags,tag: str,data: object) """
-  pass
- def LookupTag(self,name):
-  """ LookupTag(self: EntityTags,name: str) -> object """
-  pass
- @staticmethod
- def __new__(self,tags,parent):
-  """ __new__(cls: type,tags: Dictionary[str,object],parent: DesignScriptEntity) """
-  pass
- Parent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Parent(self: EntityTags) -> DesignScriptEntity
+    """ EntityTags(tags: Dictionary[str,object],parent: DesignScriptEntity) """
+
+    def AddTag(self, tag, data):
+        """ AddTag(self: EntityTags,tag: str,data: object) """
+        pass
+
+    def LookupTag(self, name):
+        """ LookupTag(self: EntityTags,name: str) -> object """
+        pass
+
+    @staticmethod
+    def __new__(self, tags, parent):
+        """ __new__(cls: type,tags: Dictionary[str,object],parent: DesignScriptEntity) """
+        pass
+
+    Parent = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Parent(self: EntityTags) -> DesignScriptEntity
 
 
 
 Set: Parent(self: EntityTags)=value
 
 """
-
-
-

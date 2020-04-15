@@ -1,13 +1,14 @@
-class PerformanceCounterPermissionAttribute(CodeAccessSecurityAttribute,_Attribute):
- """
+class PerformanceCounterPermissionAttribute(CodeAccessSecurityAttribute, _Attribute):
+    """
  Allows declaritive performance counter permission checks.
 
  
 
  PerformanceCounterPermissionAttribute(action: SecurityAction)
  """
- def CreatePermission(self):
-  """
+
+    def CreatePermission(self):
+        """
   CreatePermission(self: PerformanceCounterPermissionAttribute) -> IPermission
 
   
@@ -22,18 +23,24 @@ class PerformanceCounterPermissionAttribute(CodeAccessSecurityAttribute,_Attribu
 
    Returns: An System.Security.IPermission that represents the created permission.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,action):
-  """ __new__(cls: type,action: SecurityAction) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- CategoryName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the performance counter category.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, action):
+        """ __new__(cls: type,action: SecurityAction) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    CategoryName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the performance counter category.
 
 
 
@@ -45,8 +52,10 @@ Set: CategoryName(self: PerformanceCounterPermissionAttribute)=value
 
 """
 
- MachineName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the computer name for the performance counter.
+    MachineName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the computer name for the performance counter.
 
 
 
@@ -58,8 +67,10 @@ Set: MachineName(self: PerformanceCounterPermissionAttribute)=value
 
 """
 
- PermissionAccess=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the access levels used in the permissions request.
+    PermissionAccess = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the access levels used in the permissions request.
 
 
 
@@ -70,5 +81,3 @@ Get: PermissionAccess(self: PerformanceCounterPermissionAttribute) -> Performanc
 Set: PermissionAccess(self: PerformanceCounterPermissionAttribute)=value
 
 """
-
-

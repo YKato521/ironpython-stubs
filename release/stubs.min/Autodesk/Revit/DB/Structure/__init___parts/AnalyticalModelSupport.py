@@ -1,10 +1,12 @@
-class AnalyticalModelSupport(object,IDisposable):
- """ Represents one support for an Element,in the realm of the Analytical Model. """
- def Dispose(self):
-  """ Dispose(self: AnalyticalModelSupport) """
-  pass
- def GetCurve(self):
-  """
+class AnalyticalModelSupport(object, IDisposable):
+    """ Represents one support for an Element,in the realm of the Analytical Model. """
+
+    def Dispose(self):
+        """ Dispose(self: AnalyticalModelSupport) """
+        pass
+
+    def GetCurve(self):
+        """
   GetCurve(self: AnalyticalModelSupport) -> Curve
 
   
@@ -13,9 +15,10 @@ class AnalyticalModelSupport(object,IDisposable):
 
    Returns: Represents the curve providing support,if the Support Type is Curve Support.
   """
-  pass
- def GetFace(self):
-  """
+        pass
+
+    def GetFace(self):
+        """
   GetFace(self: AnalyticalModelSupport) -> Face
 
   
@@ -26,9 +29,10 @@ class AnalyticalModelSupport(object,IDisposable):
 
     Surface Support.
   """
-  pass
- def GetPoint(self):
-  """
+        pass
+
+    def GetPoint(self):
+        """
   GetPoint(self: AnalyticalModelSupport) -> XYZ
 
   
@@ -37,9 +41,10 @@ class AnalyticalModelSupport(object,IDisposable):
 
    Returns: Represents the point providing support,if the Support Type is Point Support.
   """
-  pass
- def GetPriority(self):
-  """
+        pass
+
+    def GetPriority(self):
+        """
   GetPriority(self: AnalyticalModelSupport) -> AnalyticalSupportPriority
 
   
@@ -48,9 +53,10 @@ class AnalyticalModelSupport(object,IDisposable):
 
    Returns: Indicates the support priority,as determined by Analytical Support Checking
   """
-  pass
- def GetSupportingElement(self):
-  """
+        pass
+
+    def GetSupportingElement(self):
+        """
   GetSupportingElement(self: AnalyticalModelSupport) -> ElementId
 
   
@@ -59,9 +65,10 @@ class AnalyticalModelSupport(object,IDisposable):
 
    Returns: Represents Element that provides support.
   """
-  pass
- def GetSupportType(self):
-  """
+        pass
+
+    def GetSupportType(self):
+        """
   GetSupportType(self: AnalyticalModelSupport) -> AnalyticalSupportType
 
   
@@ -70,24 +77,32 @@ class AnalyticalModelSupport(object,IDisposable):
 
    Returns: Indicates type of support provided.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: AnalyticalModelSupport,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: AnalyticalModelSupport,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -96,5 +111,3 @@ Get: IsValidObject(self: AnalyticalModelSupport) -> bool
 
 
 """
-
-

@@ -1,8 +1,9 @@
 class UnitUtils(object):
- """ A utility class of functions related to units. """
- @staticmethod
- def Convert(value,currentDisplayUnit,desiredDisplayUnit):
-  """
+    """ A utility class of functions related to units. """
+
+    @staticmethod
+    def Convert(value, currentDisplayUnit, desiredDisplayUnit):
+        """
   Convert(value: float,currentDisplayUnit: DisplayUnitType,desiredDisplayUnit: DisplayUnitType) -> float
 
   
@@ -23,10 +24,11 @@ class UnitUtils(object):
 
    Returns: The converted value.
   """
-  pass
- @staticmethod
- def ConvertFromInternalUnits(value,displayUnit):
-  """
+        pass
+
+    @staticmethod
+    def ConvertFromInternalUnits(value, displayUnit):
+        """
   ConvertFromInternalUnits(value: float,displayUnit: DisplayUnitType) -> float
 
   
@@ -41,10 +43,11 @@ class UnitUtils(object):
 
    Returns: The converted value.
   """
-  pass
- @staticmethod
- def ConvertToInternalUnits(value,displayUnit):
-  """
+        pass
+
+    @staticmethod
+    def ConvertToInternalUnits(value, displayUnit):
+        """
   ConvertToInternalUnits(value: float,displayUnit: DisplayUnitType) -> float
 
   
@@ -59,10 +62,11 @@ class UnitUtils(object):
 
    Returns: The converted value.
   """
-  pass
- @staticmethod
- def GetTypeCatalogString(*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetTypeCatalogString(*__args):
+        """
   GetTypeCatalogString(unitType: UnitType) -> str
 
   
@@ -93,10 +97,11 @@ class UnitUtils(object):
 
     in type catalogs.
   """
-  pass
- @staticmethod
- def GetUnitGroup(unitType):
-  """
+        pass
+
+    @staticmethod
+    def GetUnitGroup(unitType):
+        """
   GetUnitGroup(unitType: UnitType) -> UnitGroup
 
   
@@ -109,10 +114,11 @@ class UnitUtils(object):
 
    Returns: The unit group.
   """
-  pass
- @staticmethod
- def GetValidDisplayUnits(unitType=None):
-  """
+        pass
+
+    @staticmethod
+    def GetValidDisplayUnits(unitType=None):
+        """
   GetValidDisplayUnits() -> IList[DisplayUnitType]
 
   
@@ -133,10 +139,11 @@ class UnitUtils(object):
 
    Returns: The valid display units.
   """
-  pass
- @staticmethod
- def GetValidUnitTypes():
-  """
+        pass
+
+    @staticmethod
+    def GetValidUnitTypes():
+        """
   GetValidUnitTypes() -> IList[UnitType]
 
   
@@ -145,10 +152,11 @@ class UnitUtils(object):
 
    Returns: The valid unit types.
   """
-  pass
- @staticmethod
- def IsValidDisplayUnit(*__args):
-  """
+        pass
+
+    @staticmethod
+    def IsValidDisplayUnit(*__args):
+        """
   IsValidDisplayUnit(displayUnit: DisplayUnitType) -> bool
 
   
@@ -175,10 +183,11 @@ class UnitUtils(object):
 
    Returns: True if the display unit is valid,false otherwise.
   """
-  pass
- @staticmethod
- def IsValidUnitType(unitType):
-  """
+        pass
+
+    @staticmethod
+    def IsValidUnitType(unitType):
+        """
   IsValidUnitType(unitType: UnitType) -> bool
 
   
@@ -191,16 +200,16 @@ class UnitUtils(object):
 
    Returns: True if the unit type is valid,false otherwise.
   """
-  pass
- __all__=[
-  'Convert',
-  'ConvertFromInternalUnits',
-  'ConvertToInternalUnits',
-  'GetTypeCatalogString',
-  'GetUnitGroup',
-  'GetValidDisplayUnits',
-  'GetValidUnitTypes',
-  'IsValidDisplayUnit',
-  'IsValidUnitType',
- ]
+        pass
 
+    __all__ = [
+        "Convert",
+        "ConvertFromInternalUnits",
+        "ConvertToInternalUnits",
+        "GetTypeCatalogString",
+        "GetUnitGroup",
+        "GetValidDisplayUnits",
+        "GetValidUnitTypes",
+        "IsValidDisplayUnit",
+        "IsValidUnitType",
+    ]

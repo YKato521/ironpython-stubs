@@ -1,8 +1,9 @@
-class LoadCase(Element,IDisposable):
- """ An object that represents a load usage. """
- @staticmethod
- def Create(document,name,natureId,*__args):
-  """
+class LoadCase(Element, IDisposable):
+    """ An object that represents a load usage. """
+
+    @staticmethod
+    def Create(document, name, natureId, *__args):
+        """
   Create(document: Document,name: str,natureId: ElementId,loadCaseCategory: LoadCaseCategory) -> LoadCase
 
   
@@ -79,15 +80,18 @@ class LoadCase(Element,IDisposable):
 
    Returns: The newly created load case element if successful,ll otherwise.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def IsLoadCaseSubcategoryId(self,loadCaseSubcategoryId):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def IsLoadCaseSubcategoryId(self, loadCaseSubcategoryId):
+        """
   IsLoadCaseSubcategoryId(self: LoadCase,loadCaseSubcategoryId: ElementId) -> bool
 
   
@@ -106,9 +110,10 @@ class LoadCase(Element,IDisposable):
 
    Returns: True if the ID refers to load case category element,false otherwise.
   """
-  pass
- def IsLoadNatureId(self,natureId):
-  """
+        pass
+
+    def IsLoadNatureId(self, natureId):
+        """
   IsLoadNatureId(self: LoadCase,natureId: ElementId) -> bool
 
   
@@ -121,10 +126,11 @@ class LoadCase(Element,IDisposable):
 
    Returns: True if the ID refers to LoadNature element,false otherwise.
   """
-  pass
- @staticmethod
- def IsNumberUnique(document,number):
-  """
+        pass
+
+    @staticmethod
+    def IsNumberUnique(document, number):
+        """
   IsNumberUnique(document: Document,number: int) -> bool
 
   
@@ -137,24 +143,32 @@ class LoadCase(Element,IDisposable):
 
    Returns: True if the given number is unique among all load cases,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- NatureCategory=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The nature category of the load case.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    NatureCategory = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The nature category of the load case.
 
 
 
@@ -166,8 +180,8 @@ Set: NatureCategory(self: LoadCase)=value
 
 """
 
- NatureId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The nature ID of the load case.
+    NatureId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The nature ID of the load case.
 
 
 
@@ -179,8 +193,8 @@ Set: NatureId(self: LoadCase)=value
 
 """
 
- Number=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns unique load case number.
+    Number = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns unique load case number.
 
 
 
@@ -192,8 +206,10 @@ Set: Number(self: LoadCase)=value
 
 """
 
- SubcategoryId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Build-in or user defined subcategory of Structural Load Cases (Autodesk.Revit.DB.BuiltInCategory.OST_LoadCases) category.
+    SubcategoryId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Build-in or user defined subcategory of Structural Load Cases (Autodesk.Revit.DB.BuiltInCategory.OST_LoadCases) category.
 
 
 
@@ -204,5 +220,3 @@ Get: SubcategoryId(self: LoadCase) -> ElementId
 Set: SubcategoryId(self: LoadCase)=value
 
 """
-
-

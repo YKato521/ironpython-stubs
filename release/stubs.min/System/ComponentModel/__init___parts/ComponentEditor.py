@@ -1,7 +1,8 @@
 class ComponentEditor(object):
- """ Provides the base class for a custom component editor. """
- def EditComponent(self,*__args):
-  """
+    """ Provides the base class for a custom component editor. """
+
+    def EditComponent(self, *__args):
+        """
   EditComponent(self: ComponentEditor,context: ITypeDescriptorContext,component: object) -> bool
 
   
@@ -32,4 +33,4 @@ class ComponentEditor(object):
 
    Returns: true if the component was modified; otherwise,false.
   """
-  pass
+        pass

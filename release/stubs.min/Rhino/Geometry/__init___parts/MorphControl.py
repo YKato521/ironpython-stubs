@@ -1,13 +1,14 @@
-class MorphControl(GeometryBase,IDisposable,ISerializable):
- """
+class MorphControl(GeometryBase, IDisposable, ISerializable):
+    """
  Represents a geometry that is able to control the morphing behaviour of some other geometry.
 
  
 
  MorphControl(originCurve: NurbsCurve,targetCurve: NurbsCurve)
  """
- def ConstructConstObject(self,*args):
-  """
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -18,9 +19,10 @@ class MorphControl(GeometryBase,IDisposable,ISerializable):
 
    subobject_index: The subobject index.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: CommonObject,disposing: bool)
 
    For derived class implementers.
@@ -45,9 +47,10 @@ class MorphControl(GeometryBase,IDisposable,ISerializable):
 
     finalizer.
   """
-  pass
- def Morph(self,geometry):
-  """
+        pass
+
+    def Morph(self, geometry):
+        """
   Morph(self: MorphControl,geometry: GeometryBase) -> bool
 
   
@@ -60,9 +63,10 @@ class MorphControl(GeometryBase,IDisposable,ISerializable):
 
    Returns: true on success,false on failure.
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: CommonObject)
 
    For derived classes implementers.
@@ -71,45 +75,54 @@ class MorphControl(GeometryBase,IDisposable,ISerializable):
 
     instance from being const.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: GeometryBase)
 
    Is called when a non-const operation occurs.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,originCurve,targetCurve):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, originCurve, targetCurve):
+        """
   __new__(cls: type,originCurve: NurbsCurve,targetCurve: NurbsCurve)
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- PreserveStructure=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """true if the morph should be done in a way that preserves the structure
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    PreserveStructure = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """true if the morph should be done in a way that preserves the structure
 
    of the geometry.  In particular,for NURBS objects,true  eans that
 
@@ -127,8 +140,10 @@ Set: PreserveStructure(self: MorphControl)=value
 
 """
 
- QuickPreview=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """true if the morph should be done as quickly as possible because the
+    QuickPreview = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """true if the morph should be done as quickly as possible because the
 
    result is being used for some type of dynamic preview.  If QuickPreview
 
@@ -146,8 +161,10 @@ Set: QuickPreview(self: MorphControl)=value
 
 """
 
- SpaceMorphTolerance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The 3d fitting tolerance used when morphing surfaces and breps.
+    SpaceMorphTolerance = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The 3d fitting tolerance used when morphing surfaces and breps.
 
    The default is 0.0 and any value <= 0.0 is ignored by morphing functions.
 
@@ -162,5 +179,3 @@ Get: SpaceMorphTolerance(self: MorphControl) -> float
 Set: SpaceMorphTolerance(self: MorphControl)=value
 
 """
-
-

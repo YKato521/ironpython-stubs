@@ -1,13 +1,19 @@
-class NumericUpDownAccelerationCollection(MarshalByRefObject,ICollection[NumericUpDownAcceleration],IEnumerable[NumericUpDownAcceleration],IEnumerable):
- """
+class NumericUpDownAccelerationCollection(
+    MarshalByRefObject,
+    ICollection[NumericUpDownAcceleration],
+    IEnumerable[NumericUpDownAcceleration],
+    IEnumerable,
+):
+    """
  Represents a sorted collection of System.Windows.Forms.NumericUpDownAcceleration objects in the System.Windows.Forms.NumericUpDown control.
 
  
 
  NumericUpDownAccelerationCollection()
  """
- def Add(self,acceleration):
-  """
+
+    def Add(self, acceleration):
+        """
   Add(self: NumericUpDownAccelerationCollection,acceleration: NumericUpDownAcceleration)
 
    Adds a new System.Windows.Forms.NumericUpDownAcceleration to the 
@@ -22,9 +28,10 @@ class NumericUpDownAccelerationCollection(MarshalByRefObject,ICollection[Numeric
 
     System.Windows.Forms.NumericUpDownAccelerationCollection.
   """
-  pass
- def AddRange(self,accelerations):
-  """
+        pass
+
+    def AddRange(self, accelerations):
+        """
   AddRange(self: NumericUpDownAccelerationCollection,*accelerations: Array[NumericUpDownAcceleration])
 
    Adds the elements of the specified array to the 
@@ -39,16 +46,18 @@ class NumericUpDownAccelerationCollection(MarshalByRefObject,ICollection[Numeric
 
     to the collection.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: NumericUpDownAccelerationCollection)
 
    Removes all elements from the System.Windows.Forms.NumericUpDownAccelerationCollection.
   """
-  pass
- def Contains(self,acceleration):
-  """
+        pass
+
+    def Contains(self, acceleration):
+        """
   Contains(self: NumericUpDownAccelerationCollection,acceleration: NumericUpDownAcceleration) -> bool
 
   
@@ -71,9 +80,10 @@ class NumericUpDownAccelerationCollection(MarshalByRefObject,ICollection[Numeric
 
     System.Windows.Forms.NumericUpDownAccelerationCollection; otherwise,false.
   """
-  pass
- def CopyTo(self,array,index):
-  """
+        pass
+
+    def CopyTo(self, array, index):
+        """
   CopyTo(self: NumericUpDownAccelerationCollection,array: Array[NumericUpDownAcceleration],index: int)
 
    Copies the System.Windows.Forms.NumericUpDownAccelerationCollection values to a one-dimensional 
@@ -92,9 +102,10 @@ class NumericUpDownAccelerationCollection(MarshalByRefObject,ICollection[Numeric
 
    index: The index in array where copying begins.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -125,9 +136,10 @@ class NumericUpDownAccelerationCollection(MarshalByRefObject,ICollection[Numeric
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def Remove(self,acceleration):
-  """
+        pass
+
+    def Remove(self, acceleration):
+        """
   Remove(self: NumericUpDownAccelerationCollection,acceleration: NumericUpDownAcceleration) -> bool
 
   
@@ -146,27 +158,34 @@ class NumericUpDownAccelerationCollection(MarshalByRefObject,ICollection[Numeric
 
     System.Windows.Forms.NumericUpDownAccelerationCollection; otherwise,false.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__(self: ICollection[NumericUpDownAcceleration],item: NumericUpDownAcceleration) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of objects in the System.Windows.Forms.NumericUpDownAccelerationCollection.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__(self: ICollection[NumericUpDownAcceleration],item: NumericUpDownAcceleration) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of objects in the System.Windows.Forms.NumericUpDownAccelerationCollection.
 
 
 
@@ -176,8 +195,10 @@ Get: Count(self: NumericUpDownAccelerationCollection) -> int
 
 """
 
- IsReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Windows.Forms.NumericUpDownAccelerationCollection is read-only.
+    IsReadOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Windows.Forms.NumericUpDownAccelerationCollection is read-only.
 
 
 
@@ -186,5 +207,3 @@ Get: IsReadOnly(self: NumericUpDownAccelerationCollection) -> bool
 
 
 """
-
-

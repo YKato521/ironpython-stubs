@@ -1,8 +1,9 @@
 class AnalyticalSupportChecking(object):
- """ Utilities that allow for detection of incorrect or incomplete analytical supports. """
- @staticmethod
- def CheckMemberSupports(document,progressIndicatorText):
-  """
+    """ Utilities that allow for detection of incorrect or incomplete analytical supports. """
+
+    @staticmethod
+    def CheckMemberSupports(document, progressIndicatorText):
+        """
   CheckMemberSupports(document: Document,progressIndicatorText: str) -> bool
 
   
@@ -17,8 +18,8 @@ class AnalyticalSupportChecking(object):
 
    Returns: True if the support check succeeded,false otherwise.
   """
-  pass
- __all__=[
-  'CheckMemberSupports',
- ]
+        pass
 
+    __all__ = [
+        "CheckMemberSupports",
+    ]

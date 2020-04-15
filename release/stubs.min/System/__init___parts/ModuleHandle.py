@@ -1,7 +1,8 @@
 class ModuleHandle(object):
- """ Represents a runtime handle for a module. """
- def Equals(self,*__args):
-  """
+    """ Represents a runtime handle for a module. """
+
+    def Equals(self, *__args):
+        """
   Equals(self: ModuleHandle,handle: ModuleHandle) -> bool
 
   
@@ -36,12 +37,14 @@ class ModuleHandle(object):
 
     structure; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """ GetHashCode(self: ModuleHandle) -> int """
-  pass
- def GetRuntimeFieldHandleFromMetadataToken(self,fieldToken):
-  """
+        pass
+
+    def GetHashCode(self):
+        """ GetHashCode(self: ModuleHandle) -> int """
+        pass
+
+    def GetRuntimeFieldHandleFromMetadataToken(self, fieldToken):
+        """
   GetRuntimeFieldHandleFromMetadataToken(self: ModuleHandle,fieldToken: int) -> RuntimeFieldHandle
 
   
@@ -54,9 +57,10 @@ class ModuleHandle(object):
 
    Returns: A System.RuntimeFieldHandle for the field identified by fieldToken.
   """
-  pass
- def GetRuntimeMethodHandleFromMetadataToken(self,methodToken):
-  """
+        pass
+
+    def GetRuntimeMethodHandleFromMetadataToken(self, methodToken):
+        """
   GetRuntimeMethodHandleFromMetadataToken(self: ModuleHandle,methodToken: int) -> RuntimeMethodHandle
 
   
@@ -73,9 +77,10 @@ class ModuleHandle(object):
 
    Returns: A System.RuntimeMethodHandle for the method or constructor identified by methodToken.
   """
-  pass
- def GetRuntimeTypeHandleFromMetadataToken(self,typeToken):
-  """
+        pass
+
+    def GetRuntimeTypeHandleFromMetadataToken(self, typeToken):
+        """
   GetRuntimeTypeHandleFromMetadataToken(self: ModuleHandle,typeToken: int) -> RuntimeTypeHandle
 
   
@@ -88,9 +93,12 @@ class ModuleHandle(object):
 
    Returns: A System.RuntimeTypeHandle for the type identified by typeToken.
   """
-  pass
- def ResolveFieldHandle(self,fieldToken,typeInstantiationContext=None,methodInstantiationContext=None):
-  """
+        pass
+
+    def ResolveFieldHandle(
+        self, fieldToken, typeInstantiationContext=None, methodInstantiationContext=None
+    ):
+        """
   ResolveFieldHandle(self: ModuleHandle,fieldToken: int,typeInstantiationContext: Array[RuntimeTypeHandle],methodInstantiationContext: Array[RuntimeTypeHandle]) -> RuntimeFieldHandle
 
   
@@ -131,9 +139,15 @@ class ModuleHandle(object):
 
    Returns: A System.RuntimeFieldHandle for the field identified by fieldToken.
   """
-  pass
- def ResolveMethodHandle(self,methodToken,typeInstantiationContext=None,methodInstantiationContext=None):
-  """
+        pass
+
+    def ResolveMethodHandle(
+        self,
+        methodToken,
+        typeInstantiationContext=None,
+        methodInstantiationContext=None,
+    ):
+        """
   ResolveMethodHandle(self: ModuleHandle,methodToken: int,typeInstantiationContext: Array[RuntimeTypeHandle],methodInstantiationContext: Array[RuntimeTypeHandle]) -> RuntimeMethodHandle
 
   
@@ -180,9 +194,12 @@ class ModuleHandle(object):
 
    Returns: A System.RuntimeMethodHandle for the method or constructor identified by methodToken.
   """
-  pass
- def ResolveTypeHandle(self,typeToken,typeInstantiationContext=None,methodInstantiationContext=None):
-  """
+        pass
+
+    def ResolveTypeHandle(
+        self, typeToken, typeInstantiationContext=None, methodInstantiationContext=None
+    ):
+        """
   ResolveTypeHandle(self: ModuleHandle,typeToken: int,typeInstantiationContext: Array[RuntimeTypeHandle],methodInstantiationContext: Array[RuntimeTypeHandle]) -> RuntimeTypeHandle
 
   
@@ -223,14 +240,19 @@ class ModuleHandle(object):
 
    Returns: A System.RuntimeTypeHandle for the type identified by typeToken.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __ne__(self,*args):
-  pass
- MDStreamVersion=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the metadata stream version.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    MDStreamVersion = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the metadata stream version.
 
 
 
@@ -240,6 +262,4 @@ Get: MDStreamVersion(self: ModuleHandle) -> int
 
 """
 
-
- EmptyHandle=None
-
+    EmptyHandle = None

@@ -1,7 +1,10 @@
 class FlatButtonAppearance(object):
- """ Provides properties that specify the appearance of System.Windows.Forms.Button controls whose System.Windows.Forms.FlatStyle is System.Windows.Forms.FlatStyle.Flat. """
- BorderColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the color of the border around the button.
+    """ Provides properties that specify the appearance of System.Windows.Forms.Button controls whose System.Windows.Forms.FlatStyle is System.Windows.Forms.FlatStyle.Flat. """
+
+    BorderColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the color of the border around the button.
 
 
 
@@ -13,8 +16,10 @@ Set: BorderColor(self: FlatButtonAppearance)=value
 
 """
 
- BorderSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that specifies the size,in pixels,of the border around the button.
+    BorderSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that specifies the size,in pixels,of the border around the button.
 
 
 
@@ -26,8 +31,10 @@ Set: BorderSize(self: FlatButtonAppearance)=value
 
 """
 
- CheckedBackColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the color of the client area of the button when the button is checked and the mouse pointer is outside the bounds of the control.
+    CheckedBackColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the color of the client area of the button when the button is checked and the mouse pointer is outside the bounds of the control.
 
 
 
@@ -39,8 +46,10 @@ Set: CheckedBackColor(self: FlatButtonAppearance)=value
 
 """
 
- MouseDownBackColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the color of the client area of the button when the mouse is pressed within the bounds of the control.
+    MouseDownBackColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the color of the client area of the button when the mouse is pressed within the bounds of the control.
 
 
 
@@ -52,8 +61,10 @@ Set: MouseDownBackColor(self: FlatButtonAppearance)=value
 
 """
 
- MouseOverBackColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the color of the client area of the button when the mouse pointer is within the bounds of the control.
+    MouseOverBackColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the color of the client area of the button when the mouse pointer is within the bounds of the control.
 
 
 
@@ -64,5 +75,3 @@ Get: MouseOverBackColor(self: FlatButtonAppearance) -> Color
 Set: MouseOverBackColor(self: FlatButtonAppearance)=value
 
 """
-
-

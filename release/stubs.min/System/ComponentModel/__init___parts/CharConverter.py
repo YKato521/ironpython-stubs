@@ -1,13 +1,14 @@
 class CharConverter(TypeConverter):
- """
+    """
  Provides a type converter to convert Unicode character objects to and from various other representations.
 
  
 
  CharConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: CharConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -26,9 +27,10 @@ class CharConverter(TypeConverter):
 
    Returns: true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: CharConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -45,9 +47,10 @@ class CharConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: CharConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -66,4 +69,4 @@ class CharConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
+        pass

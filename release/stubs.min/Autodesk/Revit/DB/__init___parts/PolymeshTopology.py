@@ -1,10 +1,12 @@
-class PolymeshTopology(object,IDisposable):
- """ A class representing topology of a polymesh. """
- def Dispose(self):
-  """ Dispose(self: PolymeshTopology) """
-  pass
- def GetFacet(self,idx):
-  """
+class PolymeshTopology(object, IDisposable):
+    """ A class representing topology of a polymesh. """
+
+    def Dispose(self):
+        """ Dispose(self: PolymeshTopology) """
+        pass
+
+    def GetFacet(self, idx):
+        """
   GetFacet(self: PolymeshTopology,idx: int) -> PolymeshFacet
 
   
@@ -21,9 +23,10 @@ class PolymeshTopology(object,IDisposable):
 
     vertices of the polymesh.
   """
-  pass
- def GetFacets(self):
-  """
+        pass
+
+    def GetFacets(self):
+        """
   GetFacets(self: PolymeshTopology) -> IList[PolymeshFacet]
 
   
@@ -36,9 +39,10 @@ class PolymeshTopology(object,IDisposable):
 
     defined by 3 vertices of the polymesh.
   """
-  pass
- def GetNormal(self,idx):
-  """
+        pass
+
+    def GetNormal(self, idx):
+        """
   GetNormal(self: PolymeshTopology,idx: int) -> XYZ
 
   
@@ -51,9 +55,10 @@ class PolymeshTopology(object,IDisposable):
 
    Returns: XYZ value representing a normal vector
   """
-  pass
- def GetNormals(self):
-  """
+        pass
+
+    def GetNormals(self):
+        """
   GetNormals(self: PolymeshTopology) -> IList[XYZ]
 
   
@@ -62,9 +67,10 @@ class PolymeshTopology(object,IDisposable):
 
    Returns: An array of XYZ values,each representing a normal vector
   """
-  pass
- def GetPoint(self,idx):
-  """
+        pass
+
+    def GetPoint(self, idx):
+        """
   GetPoint(self: PolymeshTopology,idx: int) -> XYZ
 
   
@@ -77,9 +83,10 @@ class PolymeshTopology(object,IDisposable):
 
    Returns: XYZ coordinates of the point
   """
-  pass
- def GetPoints(self):
-  """
+        pass
+
+    def GetPoints(self):
+        """
   GetPoints(self: PolymeshTopology) -> IList[XYZ]
 
   
@@ -88,9 +95,10 @@ class PolymeshTopology(object,IDisposable):
 
    Returns: An array of XYZ coordinates
   """
-  pass
- def GetUV(self,idx):
-  """
+        pass
+
+    def GetUV(self, idx):
+        """
   GetUV(self: PolymeshTopology,idx: int) -> UV
 
   
@@ -103,9 +111,10 @@ class PolymeshTopology(object,IDisposable):
 
    Returns: UV coordinates at the given index
   """
-  pass
- def GetUVs(self):
-  """
+        pass
+
+    def GetUVs(self):
+        """
   GetUVs(self: PolymeshTopology) -> IList[UV]
 
   
@@ -114,24 +123,32 @@ class PolymeshTopology(object,IDisposable):
 
    Returns: An array of UV coordinates
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: PolymeshTopology,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- DistributionOfNormals=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates the distribution of normal vectors along the tessellated polymesh surface.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: PolymeshTopology,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    DistributionOfNormals = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates the distribution of normal vectors along the tessellated polymesh surface.
 
 
 
@@ -141,8 +158,10 @@ Get: DistributionOfNormals(self: PolymeshTopology) -> DistributionOfNormals
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -152,8 +171,10 @@ Get: IsValidObject(self: PolymeshTopology) -> bool
 
 """
 
- NumberOfFacets=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The number of facet in the polymesh.
+    NumberOfFacets = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The number of facet in the polymesh.
 
 
 
@@ -163,8 +184,10 @@ Get: NumberOfFacets(self: PolymeshTopology) -> int
 
 """
 
- NumberOfNormals=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The number of normals associated with the polymesh
+    NumberOfNormals = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The number of normals associated with the polymesh
 
 
 
@@ -174,8 +197,10 @@ Get: NumberOfNormals(self: PolymeshTopology) -> int
 
 """
 
- NumberOfPoints=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The number of points in the polymesh
+    NumberOfPoints = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The number of points in the polymesh
 
 
 
@@ -185,8 +210,10 @@ Get: NumberOfPoints(self: PolymeshTopology) -> int
 
 """
 
- NumberOfUVs=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The number of UV coordinates available for the polymesh.
+    NumberOfUVs = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The number of UV coordinates available for the polymesh.
 
 
 
@@ -195,5 +222,3 @@ Get: NumberOfUVs(self: PolymeshTopology) -> int
 
 
 """
-
-

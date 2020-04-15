@@ -1,5 +1,5 @@
-class OverrideGraphicSettings(object,IDisposable):
- """
+class OverrideGraphicSettings(object, IDisposable):
+    """
  Settings to override display of elements in a view.
 
  
@@ -8,14 +8,17 @@ class OverrideGraphicSettings(object,IDisposable):
 
  OverrideGraphicSettings()
  """
- def Dispose(self):
-  """ Dispose(self: OverrideGraphicSettings) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: OverrideGraphicSettings,disposing: bool) """
-  pass
- def SetCutFillColor(self,color):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: OverrideGraphicSettings) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: OverrideGraphicSettings,disposing: bool) """
+        pass
+
+    def SetCutFillColor(self, color):
+        """
   SetCutFillColor(self: OverrideGraphicSettings,color: Color) -> OverrideGraphicSettings
 
   
@@ -32,9 +35,10 @@ class OverrideGraphicSettings(object,IDisposable):
 
    Returns: Reference to the changed object.
   """
-  pass
- def SetCutFillPatternId(self,fillPatternId):
-  """
+        pass
+
+    def SetCutFillPatternId(self, fillPatternId):
+        """
   SetCutFillPatternId(self: OverrideGraphicSettings,fillPatternId: ElementId) -> OverrideGraphicSettings
 
   
@@ -51,9 +55,10 @@ class OverrideGraphicSettings(object,IDisposable):
 
    Returns: Reference to the changed object.
   """
-  pass
- def SetCutFillPatternVisible(self,cutFillPatternVisible):
-  """
+        pass
+
+    def SetCutFillPatternVisible(self, cutFillPatternVisible):
+        """
   SetCutFillPatternVisible(self: OverrideGraphicSettings,cutFillPatternVisible: bool) -> OverrideGraphicSettings
 
   
@@ -66,9 +71,10 @@ class OverrideGraphicSettings(object,IDisposable):
 
    Returns: Reference to the changed object.
   """
-  pass
- def SetCutLineColor(self,color):
-  """
+        pass
+
+    def SetCutLineColor(self, color):
+        """
   SetCutLineColor(self: OverrideGraphicSettings,color: Color) -> OverrideGraphicSettings
 
   
@@ -85,9 +91,10 @@ class OverrideGraphicSettings(object,IDisposable):
 
    Returns: Reference to the changed object.
   """
-  pass
- def SetCutLinePatternId(self,linePatternId):
-  """
+        pass
+
+    def SetCutLinePatternId(self, linePatternId):
+        """
   SetCutLinePatternId(self: OverrideGraphicSettings,linePatternId: ElementId) -> OverrideGraphicSettings
 
   
@@ -104,9 +111,10 @@ class OverrideGraphicSettings(object,IDisposable):
 
    Returns: Reference to the changed object.
   """
-  pass
- def SetCutLineWeight(self,lineWeight):
-  """
+        pass
+
+    def SetCutLineWeight(self, lineWeight):
+        """
   SetCutLineWeight(self: OverrideGraphicSettings,lineWeight: int) -> OverrideGraphicSettings
 
   
@@ -123,9 +131,10 @@ class OverrideGraphicSettings(object,IDisposable):
 
    Returns: Reference to the changed object.
   """
-  pass
- def SetDetailLevel(self,detailLevel):
-  """
+        pass
+
+    def SetDetailLevel(self, detailLevel):
+        """
   SetDetailLevel(self: OverrideGraphicSettings,detailLevel: ViewDetailLevel) -> OverrideGraphicSettings
 
   
@@ -138,9 +147,10 @@ class OverrideGraphicSettings(object,IDisposable):
 
    Returns: Reference to the changed object.
   """
-  pass
- def SetHalftone(self,halftone):
-  """
+        pass
+
+    def SetHalftone(self, halftone):
+        """
   SetHalftone(self: OverrideGraphicSettings,halftone: bool) -> OverrideGraphicSettings
 
   
@@ -153,9 +163,10 @@ class OverrideGraphicSettings(object,IDisposable):
 
    Returns: Reference to the changed object.
   """
-  pass
- def SetProjectionFillColor(self,color):
-  """
+        pass
+
+    def SetProjectionFillColor(self, color):
+        """
   SetProjectionFillColor(self: OverrideGraphicSettings,color: Color) -> OverrideGraphicSettings
 
   
@@ -172,9 +183,10 @@ class OverrideGraphicSettings(object,IDisposable):
 
    Returns: Reference to the changed object.
   """
-  pass
- def SetProjectionFillPatternId(self,fillPatternId):
-  """
+        pass
+
+    def SetProjectionFillPatternId(self, fillPatternId):
+        """
   SetProjectionFillPatternId(self: OverrideGraphicSettings,fillPatternId: ElementId) -> OverrideGraphicSettings
 
   
@@ -193,9 +205,10 @@ class OverrideGraphicSettings(object,IDisposable):
 
    Returns: Reference to the changed object.
   """
-  pass
- def SetProjectionFillPatternVisible(self,projectFillPatternVisible):
-  """
+        pass
+
+    def SetProjectionFillPatternVisible(self, projectFillPatternVisible):
+        """
   SetProjectionFillPatternVisible(self: OverrideGraphicSettings,projectFillPatternVisible: bool) -> OverrideGraphicSettings
 
   
@@ -208,9 +221,10 @@ class OverrideGraphicSettings(object,IDisposable):
 
    Returns: Reference to the changed object.
   """
-  pass
- def SetProjectionLineColor(self,color):
-  """
+        pass
+
+    def SetProjectionLineColor(self, color):
+        """
   SetProjectionLineColor(self: OverrideGraphicSettings,color: Color) -> OverrideGraphicSettings
 
   
@@ -227,9 +241,10 @@ class OverrideGraphicSettings(object,IDisposable):
 
    Returns: Reference to the changed object.
   """
-  pass
- def SetProjectionLinePatternId(self,linePatternId):
-  """
+        pass
+
+    def SetProjectionLinePatternId(self, linePatternId):
+        """
   SetProjectionLinePatternId(self: OverrideGraphicSettings,linePatternId: ElementId) -> OverrideGraphicSettings
 
   
@@ -246,9 +261,10 @@ class OverrideGraphicSettings(object,IDisposable):
 
    Returns: Reference to the changed object.
   """
-  pass
- def SetProjectionLineWeight(self,lineWeight):
-  """
+        pass
+
+    def SetProjectionLineWeight(self, lineWeight):
+        """
   SetProjectionLineWeight(self: OverrideGraphicSettings,lineWeight: int) -> OverrideGraphicSettings
 
   
@@ -265,9 +281,10 @@ class OverrideGraphicSettings(object,IDisposable):
 
    Returns: Reference to the changed object.
   """
-  pass
- def SetSurfaceTransparency(self,transparency):
-  """
+        pass
+
+    def SetSurfaceTransparency(self, transparency):
+        """
   SetSurfaceTransparency(self: OverrideGraphicSettings,transparency: int) -> OverrideGraphicSettings
 
   
@@ -284,29 +301,37 @@ class OverrideGraphicSettings(object,IDisposable):
 
    Returns: Reference to the changed object.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,overrideGraphicSettings=None):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, overrideGraphicSettings=None):
+        """
   __new__(cls: type,overrideGraphicSettings: OverrideGraphicSettings)
 
   __new__(cls: type)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- CutFillColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Cut surface fill color.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    CutFillColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Cut surface fill color.
 
 
 
@@ -316,8 +341,10 @@ Get: CutFillColor(self: OverrideGraphicSettings) -> Color
 
 """
 
- CutFillPatternId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """ElementId of the cut surface fill pattern.
+    CutFillPatternId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """ElementId of the cut surface fill pattern.
 
 
 
@@ -327,8 +354,10 @@ Get: CutFillPatternId(self: OverrideGraphicSettings) -> ElementId
 
 """
 
- CutLineColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Cut surface line color.
+    CutLineColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Cut surface line color.
 
 
 
@@ -338,8 +367,10 @@ Get: CutLineColor(self: OverrideGraphicSettings) -> Color
 
 """
 
- CutLinePatternId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """ElementId of the cut surface line pattern.
+    CutLinePatternId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """ElementId of the cut surface line pattern.
 
 
 
@@ -349,8 +380,10 @@ Get: CutLinePatternId(self: OverrideGraphicSettings) -> ElementId
 
 """
 
- CutLineWeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Cut surface line weight.
+    CutLineWeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Cut surface line weight.
 
 
 
@@ -360,8 +393,10 @@ Get: CutLineWeight(self: OverrideGraphicSettings) -> int
 
 """
 
- DetailLevel=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Detail Level.
+    DetailLevel = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The Detail Level.
 
 
 
@@ -371,8 +406,8 @@ Get: DetailLevel(self: OverrideGraphicSettings) -> ViewDetailLevel
 
 """
 
- Halftone=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Value of the halftone override.
+    Halftone = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Value of the halftone override.
 
 
 
@@ -382,8 +417,10 @@ Get: Halftone(self: OverrideGraphicSettings) -> bool
 
 """
 
- IsCutFillPatternVisible=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Visibility of the cut surface fill pattern.
+    IsCutFillPatternVisible = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Visibility of the cut surface fill pattern.
 
 
 
@@ -393,8 +430,10 @@ Get: IsCutFillPatternVisible(self: OverrideGraphicSettings) -> bool
 
 """
 
- IsProjectionFillPatternVisible=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The visibility of the projection surface fill pattern.
+    IsProjectionFillPatternVisible = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The visibility of the projection surface fill pattern.
 
 
 
@@ -404,8 +443,10 @@ Get: IsProjectionFillPatternVisible(self: OverrideGraphicSettings) -> bool
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -415,8 +456,10 @@ Get: IsValidObject(self: OverrideGraphicSettings) -> bool
 
 """
 
- ProjectionFillColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Projection surface fill color.
+    ProjectionFillColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Projection surface fill color.
 
 
 
@@ -426,8 +469,10 @@ Get: ProjectionFillColor(self: OverrideGraphicSettings) -> Color
 
 """
 
- ProjectionFillPatternId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """ElementId of the projection surface fill pattern.
+    ProjectionFillPatternId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """ElementId of the projection surface fill pattern.
 
 
 
@@ -437,8 +482,10 @@ Get: ProjectionFillPatternId(self: OverrideGraphicSettings) -> ElementId
 
 """
 
- ProjectionLineColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Projection surface line color.
+    ProjectionLineColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Projection surface line color.
 
 
 
@@ -448,8 +495,10 @@ Get: ProjectionLineColor(self: OverrideGraphicSettings) -> Color
 
 """
 
- ProjectionLinePatternId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Id of the projection surface line pattern.
+    ProjectionLinePatternId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Id of the projection surface line pattern.
 
 
 
@@ -459,8 +508,10 @@ Get: ProjectionLinePatternId(self: OverrideGraphicSettings) -> ElementId
 
 """
 
- ProjectionLineWeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The projection surface line weight.
+    ProjectionLineWeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The projection surface line weight.
 
 
 
@@ -470,8 +521,10 @@ Get: ProjectionLineWeight(self: OverrideGraphicSettings) -> int
 
 """
 
- Transparency=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Transparency of surfaces.
+    Transparency = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Transparency of surfaces.
 
 
 
@@ -481,6 +534,4 @@ Get: Transparency(self: OverrideGraphicSettings) -> int
 
 """
 
-
- InvalidPenNumber=-1
-
+    InvalidPenNumber = -1

@@ -1,8 +1,9 @@
 class TextRenderer(object):
- """ Provides methods used to measure and render text. This class cannot be inherited. """
- @staticmethod
- def DrawText(dc,text,font,*__args):
-  """
+    """ Provides methods used to measure and render text. This class cannot be inherited. """
+
+    @staticmethod
+    def DrawText(dc, text, font, *__args):
+        """
   DrawText(dc: IDeviceContext,text: str,font: Font,bounds: Rectangle,foreColor: Color,backColor: Color)
 
    Draws the specified text within the specified bounds using the specified device context,font,
@@ -179,10 +180,11 @@ class TextRenderer(object):
 
    flags: A bitwise combination of the System.Windows.Forms.TextFormatFlags values.
   """
-  pass
- @staticmethod
- def MeasureText(*__args):
-  """
+        pass
+
+    @staticmethod
+    def MeasureText(*__args):
+        """
   MeasureText(dc: IDeviceContext,text: str,font: Font) -> Size
 
   
@@ -345,4 +347,4 @@ class TextRenderer(object):
 
    Returns: The System.Drawing.Size,in pixels,of text drawn with the specified font.
   """
-  pass
+        pass

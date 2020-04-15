@@ -1,13 +1,14 @@
 class SizeFConverter(TypeConverter):
- """
+    """
  Converts System.Drawing.SizeF objects from one type to another.
 
  
 
  SizeFConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: SizeFConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -26,9 +27,10 @@ class SizeFConverter(TypeConverter):
 
    Returns: true to indicate the conversion can be performed; otherwise,false.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: SizeFConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -47,9 +49,10 @@ class SizeFConverter(TypeConverter):
 
    Returns: true if this converter can perform the conversion otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: SizeFConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -62,9 +65,10 @@ class SizeFConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: SizeFConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -79,9 +83,10 @@ class SizeFConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def CreateInstance(self,*__args):
-  """
+        pass
+
+    def CreateInstance(self, *__args):
+        """
   CreateInstance(self: SizeFConverter,context: ITypeDescriptorContext,propertyValues: IDictionary) -> object
 
   
@@ -102,9 +107,10 @@ class SizeFConverter(TypeConverter):
 
     created.
   """
-  pass
- def GetCreateInstanceSupported(self,context=None):
-  """
+        pass
+
+    def GetCreateInstanceSupported(self, context=None):
+        """
   GetCreateInstanceSupported(self: SizeFConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -121,9 +127,10 @@ class SizeFConverter(TypeConverter):
 
    Returns: Always returns true.
   """
-  pass
- def GetProperties(self,*__args):
-  """
+        pass
+
+    def GetProperties(self, *__args):
+        """
   GetProperties(self: SizeFConverter,context: ITypeDescriptorContext,value: object,attributes: Array[Attribute]) -> PropertyDescriptorCollection
 
   
@@ -144,9 +151,10 @@ class SizeFConverter(TypeConverter):
 
    Returns: A System.ComponentModel.PropertyDescriptorCollection containing the properties.
   """
-  pass
- def GetPropertiesSupported(self,context=None):
-  """
+        pass
+
+    def GetPropertiesSupported(self, context=None):
+        """
   GetPropertiesSupported(self: SizeFConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -159,4 +167,4 @@ class SizeFConverter(TypeConverter):
 
    Returns: Always returns true.
   """
-  pass
+        pass

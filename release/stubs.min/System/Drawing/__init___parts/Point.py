@@ -1,5 +1,5 @@
 class Point(object):
- """
+    """
  Represents an ordered pair of integer x- and y-coordinates that defines a point in a two-dimensional plane.
 
  
@@ -10,9 +10,10 @@ class Point(object):
 
  Point(dw: int)
  """
- @staticmethod
- def Add(pt,sz):
-  """
+
+    @staticmethod
+    def Add(pt, sz):
+        """
   Add(pt: Point,sz: Size) -> Point
 
   
@@ -27,10 +28,11 @@ class Point(object):
 
    Returns: The System.Drawing.Point that is the result of the addition operation.
   """
-  pass
- @staticmethod
- def Ceiling(value):
-  """
+        pass
+
+    @staticmethod
+    def Ceiling(value):
+        """
   Ceiling(value: PointF) -> Point
 
   
@@ -47,9 +49,10 @@ class Point(object):
 
    Returns: The System.Drawing.Point this method converts to.
   """
-  pass
- def Equals(self,obj):
-  """
+        pass
+
+    def Equals(self, obj):
+        """
   Equals(self: Point,obj: object) -> bool
 
   
@@ -66,9 +69,10 @@ class Point(object):
 
    Returns: true if obj is a System.Drawing.Point and has the same coordinates as this System.Drawing.Point.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Point) -> int
 
   
@@ -77,9 +81,10 @@ class Point(object):
 
    Returns: An integer value that specifies a hash value for this System.Drawing.Point.
   """
-  pass
- def Offset(self,*__args):
-  """
+        pass
+
+    def Offset(self, *__args):
+        """
   Offset(self: Point,p: Point)
 
    Translates this System.Drawing.Point by the specified System.Drawing.Point.
@@ -98,10 +103,11 @@ class Point(object):
 
    dy: The amount to offset the y-coordinate.
   """
-  pass
- @staticmethod
- def Round(value):
-  """
+        pass
+
+    @staticmethod
+    def Round(value):
+        """
   Round(value: PointF) -> Point
 
   
@@ -118,10 +124,11 @@ class Point(object):
 
    Returns: The System.Drawing.Point this method converts to.
   """
-  pass
- @staticmethod
- def Subtract(pt,sz):
-  """
+        pass
+
+    @staticmethod
+    def Subtract(pt, sz):
+        """
   Subtract(pt: Point,sz: Size) -> Point
 
   
@@ -140,9 +147,10 @@ class Point(object):
 
    Returns: The System.Drawing.Point that is the result of the subtraction operation.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: Point) -> str
 
   
@@ -151,10 +159,11 @@ class Point(object):
 
    Returns: A string that represents this System.Drawing.Point.
   """
-  pass
- @staticmethod
- def Truncate(value):
-  """
+        pass
+
+    @staticmethod
+    def Truncate(value):
+        """
   Truncate(value: PointF) -> Point
 
   
@@ -171,16 +180,19 @@ class Point(object):
 
    Returns: The System.Drawing.Point this method converts to.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__[Point]() -> Point
 
   
@@ -191,14 +203,17 @@ class Point(object):
 
   __new__(cls: type,dw: int)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __sub__(self,*args):
-  """ x.__sub__(y) <==> x-y """
-  pass
- IsEmpty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether this System.Drawing.Point is empty.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __sub__(self, *args):
+        """ x.__sub__(y) <==> x-y """
+        pass
+
+    IsEmpty = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether this System.Drawing.Point is empty.
 
 
 
@@ -208,8 +223,8 @@ Get: IsEmpty(self: Point) -> bool
 
 """
 
- X=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the x-coordinate of this System.Drawing.Point.
+    X = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the x-coordinate of this System.Drawing.Point.
 
 
 
@@ -221,8 +236,8 @@ Set: X(self: Point)=value
 
 """
 
- Y=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the y-coordinate of this System.Drawing.Point.
+    Y = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the y-coordinate of this System.Drawing.Point.
 
 
 
@@ -234,6 +249,4 @@ Set: Y(self: Point)=value
 
 """
 
-
- Empty=None
-
+    Empty = None

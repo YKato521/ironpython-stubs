@@ -1,5 +1,5 @@
-class PolylineCurve(Curve,IDisposable,ISerializable):
- """
+class PolylineCurve(Curve, IDisposable, ISerializable):
+    """
  Represents the geometry of a set of linked line segments.
 
     This is fundamentally a class that derives from Rhino.Geometry.Curve
@@ -14,8 +14,9 @@ class PolylineCurve(Curve,IDisposable,ISerializable):
 
  PolylineCurve(points: IEnumerable[Point3d])
  """
- def ConstructConstObject(self,*args):
-  """
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -26,9 +27,10 @@ class PolylineCurve(Curve,IDisposable,ISerializable):
 
    subobject_index: The subobject index.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: Curve,disposing: bool)
 
    For derived class implementers.
@@ -53,9 +55,10 @@ class PolylineCurve(Curve,IDisposable,ISerializable):
 
     finalizer.
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: Curve)
 
    For derived classes implementers.
@@ -64,16 +67,18 @@ class PolylineCurve(Curve,IDisposable,ISerializable):
 
     instance from being const.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: GeometryBase)
 
    Is called when a non-const operation occurs.
   """
-  pass
- def Point(self,index):
-  """
+        pass
+
+    def Point(self, index):
+        """
   Point(self: PolylineCurve,index: int) -> Point3d
 
   
@@ -86,9 +91,10 @@ class PolylineCurve(Curve,IDisposable,ISerializable):
 
    Returns: A point.
   """
-  pass
- def SetPoint(self,index,point):
-  """
+        pass
+
+    def SetPoint(self, index, point):
+        """
   SetPoint(self: PolylineCurve,index: int,point: Point3d)
 
    Sets a point at a specified index in the polyline curve.
@@ -99,29 +105,33 @@ class PolylineCurve(Curve,IDisposable,ISerializable):
 
    point: A point location to set.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,other: PolylineCurve)
@@ -130,11 +140,15 @@ class PolylineCurve(Curve,IDisposable,ISerializable):
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- PointCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of points in this polyline.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    PointCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the number of points in this polyline.
 
 
 
@@ -143,5 +157,3 @@ Get: PointCount(self: PolylineCurve) -> int
 
 
 """
-
-

@@ -1,7 +1,8 @@
-class DBNull(object,ISerializable,IConvertible):
- """ Represents a nonexistent value. This class cannot be inherited. """
- def GetObjectData(self,info,context):
-  """
+class DBNull(object, ISerializable, IConvertible):
+    """ Represents a nonexistent value. This class cannot be inherited. """
+
+    def GetObjectData(self, info, context):
+        """
   GetObjectData(self: DBNull,info: SerializationInfo,context: StreamingContext)
 
    Implements the System.Runtime.Serialization.ISerializable interface and returns the data needed 
@@ -22,9 +23,10 @@ class DBNull(object,ISerializable,IConvertible):
 
     the serialized stream associated with the System.DBNull object.
   """
-  pass
- def GetTypeCode(self):
-  """
+        pass
+
+    def GetTypeCode(self):
+        """
   GetTypeCode(self: DBNull) -> TypeCode
 
   
@@ -33,9 +35,10 @@ class DBNull(object,ISerializable,IConvertible):
 
    Returns: The System.TypeCode value for System.DBNull,which is System.TypeCode.DBNull.
   """
-  pass
- def ToString(self,provider=None):
-  """
+        pass
+
+    def ToString(self, provider=None):
+        """
   ToString(self: DBNull,provider: IFormatProvider) -> str
 
   
@@ -60,19 +63,24 @@ class DBNull(object,ISerializable,IConvertible):
 
    Returns: An empty string (System.String.Empty).
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __nonzero__(self,*args):
-  """ __nonzero__(value: DBNull) -> bool """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- Value=None
+        pass
 
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __nonzero__(self, *args):
+        """ __nonzero__(value: DBNull) -> bool """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Value = None

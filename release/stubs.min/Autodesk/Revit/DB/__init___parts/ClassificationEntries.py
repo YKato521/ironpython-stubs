@@ -1,11 +1,15 @@
-class ClassificationEntries(KeyBasedTreeEntries,IEnumerable[KeyBasedTreeEntry],IEnumerable,IDisposable):
- """ A collection of ClassificationEntry objects that make up the classification table. """
- def Dispose(self):
-  """ Dispose(self: KeyBasedTreeEntries,A_0: bool) """
-  pass
- @staticmethod
- def LoadClassificationEntriesFromFile(filePath,loadContent):
-  """
+class ClassificationEntries(
+    KeyBasedTreeEntries, IEnumerable[KeyBasedTreeEntry], IEnumerable, IDisposable
+):
+    """ A collection of ClassificationEntry objects that make up the classification table. """
+
+    def Dispose(self):
+        """ Dispose(self: KeyBasedTreeEntries,A_0: bool) """
+        pass
+
+    @staticmethod
+    def LoadClassificationEntriesFromFile(filePath, loadContent):
+        """
   LoadClassificationEntriesFromFile(filePath: str,loadContent: KeyBasedTreeEntriesLoadContent) -> bool
 
   
@@ -40,19 +44,24 @@ class ClassificationEntries(KeyBasedTreeEntries,IEnumerable[KeyBasedTreeEntry],I
 
     cannot be read.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: KeyBasedTreeEntries,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: KeyBasedTreeEntries,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass

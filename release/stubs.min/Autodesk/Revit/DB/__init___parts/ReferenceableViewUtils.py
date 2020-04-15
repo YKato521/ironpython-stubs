@@ -1,8 +1,9 @@
 class ReferenceableViewUtils(object):
- """ Utilities related to reference views such as reference sections and reference callouts. """
- @staticmethod
- def ChangeReferencedView(document,referenceId,desiredViewId):
-  """
+    """ Utilities related to reference views such as reference sections and reference callouts. """
+
+    @staticmethod
+    def ChangeReferencedView(document, referenceId, desiredViewId):
+        """
   ChangeReferencedView(document: Document,referenceId: ElementId,desiredViewId: ElementId)
 
    Changes a particular reference view (such as a reference section or reference 
@@ -19,10 +20,11 @@ class ReferenceableViewUtils(object):
 
    desiredViewId: The id of the View that the reference section or callout will refer to.
   """
-  pass
- @staticmethod
- def GetReferencedViewId(document,referenceId):
-  """
+        pass
+
+    @staticmethod
+    def GetReferencedViewId(document, referenceId):
+        """
   GetReferencedViewId(document: Document,referenceId: ElementId) -> ElementId
 
   
@@ -41,9 +43,9 @@ class ReferenceableViewUtils(object):
 
    Returns: The id of the referenced view.
   """
-  pass
- __all__=[
-  'ChangeReferencedView',
-  'GetReferencedViewId',
- ]
+        pass
 
+    __all__ = [
+        "ChangeReferencedView",
+        "GetReferencedViewId",
+    ]

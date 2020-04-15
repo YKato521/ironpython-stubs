@@ -1,5 +1,5 @@
-class WarningException(SystemException,ISerializable,_Exception):
- """
+class WarningException(SystemException, ISerializable, _Exception):
+    """
  Specifies an exception that is handled as a warning instead of an error.
 
  
@@ -14,11 +14,13 @@ class WarningException(SystemException,ISerializable,_Exception):
 
  WarningException(message: str,helpUrl: str,helpTopic: str)
  """
- def add_SerializeObjectState(self,*args):
-  """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def GetObjectData(self,info,context):
-  """
+
+    def add_SerializeObjectState(self, *args):
+        """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def GetObjectData(self, info, context):
+        """
   GetObjectData(self: WarningException,info: SerializationInfo,context: StreamingContext)
 
    Sets the System.Runtime.Serialization.SerializationInfo with the parameter name and additional 
@@ -39,16 +41,19 @@ class WarningException(SystemException,ISerializable,_Exception):
 
     means for serialization to retain that context and an additional caller-defined context.
   """
-  pass
- def remove_SerializeObjectState(self,*args):
-  """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,message=None,*__args):
-  """
+        pass
+
+    def remove_SerializeObjectState(self, *args):
+        """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, message=None, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,message: str)
@@ -61,13 +66,16 @@ class WarningException(SystemException,ISerializable,_Exception):
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- HelpTopic=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the Help topic associated with the warning.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    HelpTopic = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the Help topic associated with the warning.
 
 
 
@@ -77,8 +85,8 @@ Get: HelpTopic(self: WarningException) -> str
 
 """
 
- HelpUrl=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the Help file associated with the warning.
+    HelpUrl = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the Help file associated with the warning.
 
 
 
@@ -87,5 +95,3 @@ Get: HelpUrl(self: WarningException) -> str
 
 
 """
-
-

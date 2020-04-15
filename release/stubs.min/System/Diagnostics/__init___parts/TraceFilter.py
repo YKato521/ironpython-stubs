@@ -1,7 +1,10 @@
 class TraceFilter(object):
- """ Provides the base class for trace filter implementations. """
- def ShouldTrace(self,cache,source,eventType,id,formatOrMessage,args,data1,data):
-  """
+    """ Provides the base class for trace filter implementations. """
+
+    def ShouldTrace(
+        self, cache, source, eventType, id, formatOrMessage, args, data1, data
+    ):
+        """
   ShouldTrace(self: TraceFilter,cache: TraceEventCache,source: str,eventType: TraceEventType,id: int,formatOrMessage: str,args: Array[object],data1: object,data: Array[object]) -> bool
 
   
@@ -36,4 +39,4 @@ class TraceFilter(object):
 
    Returns: true to trace the specified event; otherwise,false.
   """
-  pass
+        pass

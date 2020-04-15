@@ -1,10 +1,12 @@
-class SolidCurveIntersection(object,IEnumerable[Curve],IEnumerable,IDisposable):
- """ This class represents the results of a calculation of intersection between a solid volume and a curve. """
- def Dispose(self):
-  """ Dispose(self: SolidCurveIntersection) """
-  pass
- def GetCurveSegment(self,index):
-  """
+class SolidCurveIntersection(object, IEnumerable[Curve], IEnumerable, IDisposable):
+    """ This class represents the results of a calculation of intersection between a solid volume and a curve. """
+
+    def Dispose(self):
+        """ Dispose(self: SolidCurveIntersection) """
+        pass
+
+    def GetCurveSegment(self, index):
+        """
   GetCurveSegment(self: SolidCurveIntersection,index: int) -> Curve
 
   
@@ -17,9 +19,10 @@ class SolidCurveIntersection(object,IEnumerable[Curve],IEnumerable,IDisposable):
 
    Returns: The curve.
   """
-  pass
- def GetCurveSegmentExtents(self,index):
-  """
+        pass
+
+    def GetCurveSegmentExtents(self, index):
+        """
   GetCurveSegmentExtents(self: SolidCurveIntersection,index: int) -> CurveExtents
 
   
@@ -32,9 +35,10 @@ class SolidCurveIntersection(object,IEnumerable[Curve],IEnumerable,IDisposable):
 
    Returns: The curve extents.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: SolidCurveIntersection) -> IEnumerator[Curve]
 
   
@@ -43,30 +47,40 @@ class SolidCurveIntersection(object,IEnumerable[Curve],IEnumerable,IDisposable):
 
    Returns: An IEnumerator object that can be used to iterate through the collection.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: SolidCurveIntersection,disposing: bool) """
-  pass
- def __contains__(self,*args):
-  """ __contains__[Curve](enumerable: IEnumerable[Curve],value: Curve) -> bool """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: SolidCurveIntersection,disposing: bool) """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[Curve](enumerable: IEnumerable[Curve],value: Curve) -> bool """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -76,8 +90,10 @@ Get: IsValidObject(self: SolidCurveIntersection) -> bool
 
 """
 
- ResultType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The result type used to calculate the intersections.
+    ResultType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The result type used to calculate the intersections.
 
 
 
@@ -87,8 +103,10 @@ Get: ResultType(self: SolidCurveIntersection) -> SolidCurveIntersectionMode
 
 """
 
- SegmentCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The number of segments in the results.
+    SegmentCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The number of segments in the results.
 
 
 
@@ -97,5 +115,3 @@ Get: SegmentCount(self: SolidCurveIntersection) -> int
 
 
 """
-
-

@@ -1,8 +1,9 @@
 class CheckBoxRenderer(object):
- """ Provides methods used to render a check box control with or without visual styles. This class cannot be inherited. """
- @staticmethod
- def DrawCheckBox(g,glyphLocation,*__args):
-  """
+    """ Provides methods used to render a check box control with or without visual styles. This class cannot be inherited. """
+
+    @staticmethod
+    def DrawCheckBox(g, glyphLocation, *__args):
+        """
   DrawCheckBox(g: Graphics,glyphLocation: Point,textBounds: Rectangle,checkBoxText: str,font: Font,image: Image,imageBounds: Rectangle,focused: bool,state: CheckBoxState)
 
    Draws a check box control in the specified state and location,with the specified text and 
@@ -141,10 +142,11 @@ class CheckBoxRenderer(object):
 
     state of the check box.
   """
-  pass
- @staticmethod
- def DrawParentBackground(g,bounds,childControl):
-  """
+        pass
+
+    @staticmethod
+    def DrawParentBackground(g, bounds, childControl):
+        """
   DrawParentBackground(g: Graphics,bounds: Rectangle,childControl: Control)
 
    Draws the background of a control's parent in the specified area.
@@ -159,10 +161,11 @@ class CheckBoxRenderer(object):
 
    childControl: The control whose parent's background will be drawn.
   """
-  pass
- @staticmethod
- def GetGlyphSize(g,state):
-  """
+        pass
+
+    @staticmethod
+    def GetGlyphSize(g, state):
+        """
   GetGlyphSize(g: Graphics,state: CheckBoxState) -> Size
 
   
@@ -181,10 +184,11 @@ class CheckBoxRenderer(object):
 
    Returns: A System.Drawing.Size that represents the size of the check box glyph.
   """
-  pass
- @staticmethod
- def IsBackgroundPartiallyTransparent(state):
-  """
+        pass
+
+    @staticmethod
+    def IsBackgroundPartiallyTransparent(state):
+        """
   IsBackgroundPartiallyTransparent(state: CheckBoxState) -> bool
 
   
@@ -203,6 +207,6 @@ class CheckBoxRenderer(object):
 
     false.
   """
-  pass
- RenderMatchingApplicationState=True
+        pass
 
+    RenderMatchingApplicationState = True

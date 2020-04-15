@@ -8,17 +8,20 @@
 # no functions
 # classes
 
-class IResourceReader(IEnumerable,IDisposable):
- """ Provides the base functionality to read data from resource files. """
- def Close(self):
-  """
+
+class IResourceReader(IEnumerable, IDisposable):
+    """ Provides the base functionality to read data from resource files. """
+
+    def Close(self):
+        """
   Close(self: IResourceReader)
 
    Closes the resource reader after releasing any resources associated with it.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: IResourceReader) -> IDictionaryEnumerator
 
   
@@ -27,34 +30,40 @@ class IResourceReader(IEnumerable,IDisposable):
 
    Returns: A dictionary enumerator for the resources for this reader.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
 
 class IResourceWriter(IDisposable):
- """ Provides functionality to write resources to an output file or stream. """
- def AddResource(self,name,value):
-  """
+    """ Provides functionality to write resources to an output file or stream. """
+
+    def AddResource(self, name, value):
+        """
   AddResource(self: IResourceWriter,name: str,value: Array[Byte])
 
    Adds an 8-bit unsigned integer array as a named resource to the list of resources to be written.
@@ -85,18 +94,20 @@ class IResourceWriter(IDisposable):
 
    value: The value of the resource.
   """
-  pass
- def Close(self):
-  """
+        pass
+
+    def Close(self):
+        """
   Close(self: IResourceWriter)
 
    Closes the underlying resource file or stream,ensuring all the data has been written to the 
 
     file.
   """
-  pass
- def Generate(self):
-  """
+        pass
+
+    def Generate(self):
+        """
   Generate(self: IResourceWriter)
 
    Writes all the resources added by the 
@@ -105,13 +116,15 @@ class IResourceWriter(IDisposable):
 
     file or stream.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
 
-class MissingManifestResourceException(SystemException,ISerializable,_Exception):
- """
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+
+class MissingManifestResourceException(SystemException, ISerializable, _Exception):
+    """
  The exception thrown if the main assembly does not contain the resources for the neutral culture,and they are required because of a missing appropriate satellite assembly.
 
  
@@ -122,18 +135,22 @@ class MissingManifestResourceException(SystemException,ISerializable,_Exception)
 
  MissingManifestResourceException(message: str,inner: Exception)
  """
- def add_SerializeObjectState(self,*args):
-  """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def remove_SerializeObjectState(self,*args):
-  """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,message=None,inner=None):
-  """
+
+    def add_SerializeObjectState(self, *args):
+        """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def remove_SerializeObjectState(self, *args):
+        """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, message=None, inner=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,message: str)
@@ -142,14 +159,17 @@ class MissingManifestResourceException(SystemException,ISerializable,_Exception)
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
+        pass
 
-class MissingSatelliteAssemblyException(SystemException,ISerializable,_Exception):
- """
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+
+class MissingSatelliteAssemblyException(SystemException, ISerializable, _Exception):
+    """
  The exception that is thrown when the satellite assembly for the resources of the neutral culture is missing.
 
  
@@ -162,18 +182,22 @@ class MissingSatelliteAssemblyException(SystemException,ISerializable,_Exception
 
  MissingSatelliteAssemblyException(message: str,inner: Exception)
  """
- def add_SerializeObjectState(self,*args):
-  """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def remove_SerializeObjectState(self,*args):
-  """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,message=None,*__args):
-  """
+
+    def add_SerializeObjectState(self, *args):
+        """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def remove_SerializeObjectState(self, *args):
+        """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, message=None, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,message: str)
@@ -184,13 +208,18 @@ class MissingSatelliteAssemblyException(SystemException,ISerializable,_Exception
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- CultureName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name of a neutral culture.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    CultureName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the name of a neutral culture.
 
 
 
@@ -201,9 +230,8 @@ Get: CultureName(self: MissingSatelliteAssemblyException) -> str
 """
 
 
-
-class NeutralResourcesLanguageAttribute(Attribute,_Attribute):
- """
+class NeutralResourcesLanguageAttribute(Attribute, _Attribute):
+    """
  Informs the System.Resources.ResourceManager of the default culture of an application. This class cannot be inherited.
 
  
@@ -212,19 +240,24 @@ class NeutralResourcesLanguageAttribute(Attribute,_Attribute):
 
  NeutralResourcesLanguageAttribute(cultureName: str,location: UltimateResourceFallbackLocation)
  """
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,cultureName,location=None):
-  """
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, cultureName, location=None):
+        """
   __new__(cls: type,cultureName: str)
 
   __new__(cls: type,cultureName: str,location: UltimateResourceFallbackLocation)
   """
-  pass
- CultureName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the culture name.
+        pass
+
+    CultureName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the culture name.
 
 
 
@@ -234,8 +267,8 @@ Get: CultureName(self: NeutralResourcesLanguageAttribute) -> str
 
 """
 
- Location=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the location for the System.Resources.ResourceManager class to use to retrieve neutral resources by using the resource fallback process.
+    Location = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the location for the System.Resources.ResourceManager class to use to retrieve neutral resources by using the resource fallback process.
 
 
 
@@ -246,9 +279,8 @@ Get: Location(self: NeutralResourcesLanguageAttribute) -> UltimateResourceFallba
 """
 
 
-
 class ResourceManager(object):
- """
+    """
  Represents a resource manager that provides convenient access to culture-specific resources at run time.
 
  
@@ -259,9 +291,10 @@ class ResourceManager(object):
 
  ResourceManager(resourceSource: Type)
  """
- @staticmethod
- def CreateFileBasedResourceManager(baseName,resourceDir,usingResourceSet):
-  """
+
+    @staticmethod
+    def CreateFileBasedResourceManager(baseName, resourceDir, usingResourceSet):
+        """
   CreateFileBasedResourceManager(baseName: str,resourceDir: str,usingResourceSet: Type) -> ResourceManager
 
   
@@ -292,9 +325,10 @@ class ResourceManager(object):
 
     resources instead of in the assembly manifest.
   """
-  pass
- def GetNeutralResourcesLanguage(self,*args):
-  """
+        pass
+
+    def GetNeutralResourcesLanguage(self, *args):
+        """
   GetNeutralResourcesLanguage(a: Assembly) -> CultureInfo
 
   
@@ -315,9 +349,10 @@ class ResourceManager(object):
 
     System.Globalization.CultureInfo.InvariantCulture.
   """
-  pass
- def GetObject(self,name,culture=None):
-  """
+        pass
+
+    def GetObject(self, name, culture=None):
+        """
   GetObject(self: ResourceManager,name: str,culture: CultureInfo) -> object
 
   
@@ -358,9 +393,10 @@ class ResourceManager(object):
 
     resource set exists but name cannot be found,the method returns null.
   """
-  pass
- def GetResourceFileName(self,*args):
-  """
+        pass
+
+    def GetResourceFileName(self, *args):
+        """
   GetResourceFileName(self: ResourceManager,culture: CultureInfo) -> str
 
   
@@ -373,9 +409,10 @@ class ResourceManager(object):
 
    Returns: The name that can be used for a resource file for the given System.Globalization.CultureInfo.
   """
-  pass
- def GetResourceSet(self,culture,createIfNotExists,tryParents):
-  """
+        pass
+
+    def GetResourceSet(self, culture, createIfNotExists, tryParents):
+        """
   GetResourceSet(self: ResourceManager,culture: CultureInfo,createIfNotExists: bool,tryParents: bool) -> ResourceSet
 
   
@@ -396,9 +433,10 @@ class ResourceManager(object):
 
    Returns: The specified System.Resources.ResourceSet.
   """
-  pass
- def GetSatelliteContractVersion(self,*args):
-  """
+        pass
+
+    def GetSatelliteContractVersion(self, *args):
+        """
   GetSatelliteContractVersion(a: Assembly) -> Version
 
   
@@ -419,9 +457,10 @@ class ResourceManager(object):
 
    Returns: The satellite contract System.Version of the given assembly,or null if no version was found.
   """
-  pass
- def GetStream(self,name,culture=None):
-  """
+        pass
+
+    def GetStream(self, name, culture=None):
+        """
   GetStream(self: ResourceManager,name: str,culture: CultureInfo) -> UnmanagedMemoryStream
 
   
@@ -456,9 +495,10 @@ class ResourceManager(object):
 
    Returns: An unmanaged memory stream object object that represents a resource.
   """
-  pass
- def GetString(self,name,culture=None):
-  """
+        pass
+
+    def GetString(self, name, culture=None):
+        """
   GetString(self: ResourceManager,name: str,culture: CultureInfo) -> str
 
   
@@ -491,9 +531,10 @@ class ResourceManager(object):
 
     be found in a resource set.
   """
-  pass
- def InternalGetResourceSet(self,*args):
-  """
+        pass
+
+    def InternalGetResourceSet(self, *args):
+        """
   InternalGetResourceSet(self: ResourceManager,culture: CultureInfo,createIfNotExists: bool,tryParents: bool) -> ResourceSet
 
   
@@ -514,19 +555,21 @@ class ResourceManager(object):
 
    Returns: The specified System.Resources.ResourceSet.
   """
-  pass
- def ReleaseAllResources(self):
-  """
+        pass
+
+    def ReleaseAllResources(self):
+        """
   ReleaseAllResources(self: ResourceManager)
 
    Tells the System.Resources.ResourceManager to call System.Resources.ResourceSet.Close on all 
 
     System.Resources.ResourceSet objects and release all resources.
   """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,baseName: str,assembly: Assembly)
@@ -535,9 +578,10 @@ class ResourceManager(object):
 
   __new__(cls: type,resourceSource: Type)
   """
-  pass
- BaseName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the root name of the resource files that the System.Resources.ResourceManager searches for resources.
+        pass
+
+    BaseName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the root name of the resource files that the System.Resources.ResourceManager searches for resources.
 
 
 
@@ -547,15 +591,19 @@ Get: BaseName(self: ResourceManager) -> str
 
 """
 
- FallbackLocation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the location from which to retrieve neutral fallback resources.
+    FallbackLocation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the location from which to retrieve neutral fallback resources.
 
 
 
 """
 
- IgnoreCase=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value indicating whether the current instance of ResourceManager allows case-insensitive resource lookups in the System.Resources.ResourceManager.GetString(System.String) and System.Resources.ResourceManager.GetObject(System.String) methods.
+    IgnoreCase = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value indicating whether the current instance of ResourceManager allows case-insensitive resource lookups in the System.Resources.ResourceManager.GetString(System.String) and System.Resources.ResourceManager.GetObject(System.String) methods.
 
 
 
@@ -567,8 +615,10 @@ Set: IgnoreCase(self: ResourceManager)=value
 
 """
 
- ResourceSetType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Type of the System.Resources.ResourceSet the System.Resources.ResourceManager uses to construct a System.Resources.ResourceSet object.
+    ResourceSetType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Type of the System.Resources.ResourceSet the System.Resources.ResourceManager uses to construct a System.Resources.ResourceSet object.
 
 
 
@@ -578,16 +628,15 @@ Get: ResourceSetType(self: ResourceManager) -> Type
 
 """
 
+    BaseNameField = None
+    HeaderVersionNumber = 1
+    MagicNumber = -1091581234
+    MainAssembly = None
+    ResourceSets = None
 
- BaseNameField=None
- HeaderVersionNumber=1
- MagicNumber=-1091581234
- MainAssembly=None
- ResourceSets=None
 
-
-class ResourceReader(object,IResourceReader,IEnumerable,IDisposable):
- """
+class ResourceReader(object, IResourceReader, IEnumerable, IDisposable):
+    """
  Enumerates the resources in a binary resources (.resources) file by reading sequential resource name/value pairs.
 
  
@@ -596,24 +645,27 @@ class ResourceReader(object,IResourceReader,IEnumerable,IDisposable):
 
  ResourceReader(stream: Stream)
  """
- def Close(self):
-  """
+
+    def Close(self):
+        """
   Close(self: ResourceReader)
 
    Releases all operating system resources associated with this System.Resources.ResourceReader 
 
     object.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: ResourceReader)
 
    Releases all resources used by the current instance of the System.Resources.ResourceReader class.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: ResourceReader) -> IDictionaryEnumerator
 
   
@@ -622,9 +674,10 @@ class ResourceReader(object,IResourceReader,IEnumerable,IDisposable):
 
    Returns: An enumerator for this System.Resources.ResourceReader object.
   """
-  pass
- def GetResourceData(self,resourceName,resourceType,resourceData):
-  """
+        pass
+
+    def GetResourceData(self, resourceName, resourceType, resourceData):
+        """
   GetResourceData(self: ResourceReader,resourceName: str) -> (str,Array[Byte])
 
   
@@ -635,43 +688,50 @@ class ResourceReader(object,IResourceReader,IEnumerable,IDisposable):
 
    resourceName: The name of a resource.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,fileName: str)
 
   __new__(cls: type,stream: Stream)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
+        pass
 
-class ResourceSet(object,IDisposable,IEnumerable):
- """
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+
+class ResourceSet(object, IDisposable, IEnumerable):
+    """
  Stores all the resources localized for one particular culture,ignoring all other cultures,including any fallback rules.
 
  
@@ -682,24 +742,27 @@ class ResourceSet(object,IDisposable,IEnumerable):
 
  ResourceSet(reader: IResourceReader)
  """
- def Close(self):
-  """
+
+    def Close(self):
+        """
   Close(self: ResourceSet)
 
    Closes and releases any resources used by this System.Resources.ResourceSet.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: ResourceSet)
 
    Disposes of the resources (other than memory) used by the current instance of 
 
     System.Resources.ResourceSet.
   """
-  pass
- def GetDefaultReader(self):
-  """
+        pass
+
+    def GetDefaultReader(self):
+        """
   GetDefaultReader(self: ResourceSet) -> Type
 
   
@@ -710,9 +773,10 @@ class ResourceSet(object,IDisposable,IEnumerable):
 
     System.Resources.ResourceSet.
   """
-  pass
- def GetDefaultWriter(self):
-  """
+        pass
+
+    def GetDefaultWriter(self):
+        """
   GetDefaultWriter(self: ResourceSet) -> Type
 
   
@@ -723,9 +787,10 @@ class ResourceSet(object,IDisposable,IEnumerable):
 
     System.Resources.ResourceSet.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: ResourceSet) -> IDictionaryEnumerator
 
   
@@ -738,9 +803,10 @@ class ResourceSet(object,IDisposable,IEnumerable):
 
    Returns: An System.Collections.IDictionaryEnumerator for this System.Resources.ResourceSet.
   """
-  pass
- def GetObject(self,name,ignoreCase=None):
-  """
+        pass
+
+    def GetObject(self, name, ignoreCase=None):
+        """
   GetObject(self: ResourceSet,name: str,ignoreCase: bool) -> object
 
   
@@ -771,9 +837,10 @@ class ResourceSet(object,IDisposable,IEnumerable):
 
    Returns: The requested resource.
   """
-  pass
- def GetString(self,name,ignoreCase=None):
-  """
+        pass
+
+    def GetString(self, name, ignoreCase=None):
+        """
   GetString(self: ResourceSet,name: str,ignoreCase: bool) -> str
 
   
@@ -804,41 +871,47 @@ class ResourceSet(object,IDisposable,IEnumerable):
 
    Returns: The value of a resource,if the value is a System.String.
   """
-  pass
- def ReadResources(self,*args):
-  """
+        pass
+
+    def ReadResources(self, *args):
+        """
   ReadResources(self: ResourceSet)
 
    Reads all the resources and stores them in a System.Collections.Hashtable indicated in the 
 
     System.Resources.ResourceSet.Table property.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,fileName: str)
@@ -847,18 +920,21 @@ class ResourceSet(object,IDisposable,IEnumerable):
 
   __new__(cls: type,reader: IResourceReader)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Reader=None
- Table=None
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Reader = None
+    Table = None
 
 
-class ResourceWriter(object,IResourceWriter,IDisposable):
- """
+class ResourceWriter(object, IResourceWriter, IDisposable):
+    """
  Writes resources in the system-default format to an output file or an output stream. This class cannot be inherited.
 
  
@@ -867,8 +943,9 @@ class ResourceWriter(object,IResourceWriter,IDisposable):
 
  ResourceWriter(stream: Stream)
  """
- def AddResource(self,name,value,closeAfterWrite=None):
-  """
+
+    def AddResource(self, name, value, closeAfterWrite=None):
+        """
   AddResource(self: ResourceWriter,name: str,value: Stream,closeAfterWrite: bool)
 
    Adds a named resource specified as a stream to the list of resources to be written,and 
@@ -931,9 +1008,10 @@ class ResourceWriter(object,IResourceWriter,IDisposable):
 
    value: The value of the resource.
   """
-  pass
- def AddResourceData(self,name,typeName,serializedData):
-  """
+        pass
+
+    def AddResourceData(self, name, typeName, serializedData):
+        """
   AddResourceData(self: ResourceWriter,name: str,typeName: str,serializedData: Array[Byte])
 
    Adds a unit of data as a resource to the list of resources to be written.
@@ -946,60 +1024,71 @@ class ResourceWriter(object,IResourceWriter,IDisposable):
 
    serializedData: A byte array that contains the binary representation of the added data.
   """
-  pass
- def Close(self):
-  """
+        pass
+
+    def Close(self):
+        """
   Close(self: ResourceWriter)
 
    Saves the resources to the output stream and then closes it.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: ResourceWriter)
 
    Allows users to close the resource file or stream,explicitly releasing resources.
   """
-  pass
- def Generate(self):
-  """
+        pass
+
+    def Generate(self):
+        """
   Generate(self: ResourceWriter)
 
    Saves all resources to the output stream in the system default format.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,fileName: str)
 
   __new__(cls: type,stream: Stream)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- TypeNameConverter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a delegate that enables resource assemblies to be written that target versions of the .NET Framework prior to the .NET Framework version�4�by using qualified assembly names.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    TypeNameConverter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a delegate that enables resource assemblies to be written that target versions of the .NET Framework prior to the .NET Framework version�4�by using qualified assembly names.
 
 
 
@@ -1012,9 +1101,8 @@ Set: TypeNameConverter(self: ResourceWriter)=value
 """
 
 
-
-class ResXDataNode(object,ISerializable):
- """
+class ResXDataNode(object, ISerializable):
+    """
  Represents an element in a resource file.
 
  
@@ -1027,8 +1115,9 @@ class ResXDataNode(object,ISerializable):
 
  ResXDataNode(name: str,fileRef: ResXFileRef,typeNameConverter: Func[Type,str])
  """
- def GetNodePosition(self):
-  """
+
+    def GetNodePosition(self):
+        """
   GetNodePosition(self: ResXDataNode) -> Point
 
   
@@ -1043,9 +1132,10 @@ class ResXDataNode(object,ISerializable):
 
     System.Drawing.Point.X of 0 and a System.Drawing.Point.Y of 0.
   """
-  pass
- def GetValue(self,*__args):
-  """
+        pass
+
+    def GetValue(self, *__args):
+        """
   GetValue(self: ResXDataNode,names: Array[AssemblyName]) -> object
 
   
@@ -1070,9 +1160,10 @@ class ResXDataNode(object,ISerializable):
 
    Returns: The System.Object corresponding to the stored value.
   """
-  pass
- def GetValueTypeName(self,*__args):
-  """
+        pass
+
+    def GetValueTypeName(self, *__args):
+        """
   GetValueTypeName(self: ResXDataNode,names: Array[AssemblyName]) -> str
 
   
@@ -1097,13 +1188,15 @@ class ResXDataNode(object,ISerializable):
 
    Returns: A System.String representing the fully qualified name of the type.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,name,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, name, *__args):
+        """
   __new__(cls: type,name: str,value: object)
 
   __new__(cls: type,name: str,value: object,typeNameConverter: Func[Type,str])
@@ -1112,14 +1205,17 @@ class ResXDataNode(object,ISerializable):
 
   __new__(cls: type,name: str,fileRef: ResXFileRef,typeNameConverter: Func[Type,str])
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Comment=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets an arbitrary comment regarding this resource.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Comment = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets an arbitrary comment regarding this resource.
 
 
 
@@ -1131,8 +1227,8 @@ Set: Comment(self: ResXDataNode)=value
 
 """
 
- FileRef=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the file reference for this resource.
+    FileRef = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the file reference for this resource.
 
 
 
@@ -1142,8 +1238,8 @@ Get: FileRef(self: ResXDataNode) -> ResXFileRef
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of this resource.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the name of this resource.
 
 
 
@@ -1156,9 +1252,8 @@ Set: Name(self: ResXDataNode)=value
 """
 
 
-
 class ResXFileRef(object):
- """
+    """
  Represents a link to an external resource.
 
  
@@ -1167,8 +1262,9 @@ class ResXFileRef(object):
 
  ResXFileRef(fileName: str,typeName: str,textFileEncoding: Encoding)
  """
- def ToString(self):
-  """
+
+    def ToString(self):
+        """
   ToString(self: ResXFileRef) -> str
 
   
@@ -1179,17 +1275,19 @@ class ResXFileRef(object):
 
     the current erload:System.Resources.ResXFileRef.#ctor constructor.
   """
-  pass
- @staticmethod
- def __new__(self,fileName,typeName,textFileEncoding=None):
-  """
+        pass
+
+    @staticmethod
+    def __new__(self, fileName, typeName, textFileEncoding=None):
+        """
   __new__(cls: type,fileName: str,typeName: str)
 
   __new__(cls: type,fileName: str,typeName: str,textFileEncoding: Encoding)
   """
-  pass
- FileName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the file name specified in the current erload:System.Resources.ResXFileRef.#ctor constructor.
+        pass
+
+    FileName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the file name specified in the current erload:System.Resources.ResXFileRef.#ctor constructor.
 
 
 
@@ -1199,8 +1297,10 @@ Get: FileName(self: ResXFileRef) -> str
 
 """
 
- TextFileEncoding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the encoding specified in the current erload:System.Resources.ResXFileRef.#ctor constructor.
+    TextFileEncoding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the encoding specified in the current erload:System.Resources.ResXFileRef.#ctor constructor.
 
 
 
@@ -1210,8 +1310,8 @@ Get: TextFileEncoding(self: ResXFileRef) -> Encoding
 
 """
 
- TypeName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the type name specified in the current erload:System.Resources.ResXFileRef.#ctor constructor.
+    TypeName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the type name specified in the current erload:System.Resources.ResXFileRef.#ctor constructor.
 
 
 
@@ -1221,12 +1321,11 @@ Get: TypeName(self: ResXFileRef) -> str
 
 """
 
+    Converter = None
 
- Converter=None
 
-
-class ResXResourceReader(object,IResourceReader,IEnumerable,IDisposable):
- """
+class ResXResourceReader(object, IResourceReader, IEnumerable, IDisposable):
+    """
  Enumerates XML resource (.resx) files and streams,and reads the sequential resource name and value pairs.
 
  
@@ -1249,15 +1348,17 @@ class ResXResourceReader(object,IResourceReader,IEnumerable,IDisposable):
 
  ResXResourceReader(fileName: str,assemblyNames: Array[AssemblyName])
  """
- def Close(self):
-  """
+
+    def Close(self):
+        """
   Close(self: ResXResourceReader)
 
    Releases all resources used by the System.Resources.ResXResourceReader.
   """
-  pass
- def Dispose(self,*args):
-  """
+        pass
+
+    def Dispose(self, *args):
+        """
   Dispose(self: ResXResourceReader,disposing: bool)
 
    Releases the unmanaged resources used by the System.Resources.ResXResourceReader and optionally 
@@ -1270,10 +1371,11 @@ class ResXResourceReader(object,IResourceReader,IEnumerable,IDisposable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- @staticmethod
- def FromFileContents(fileContents,*__args):
-  """
+        pass
+
+    @staticmethod
+    def FromFileContents(fileContents, *__args):
+        """
   FromFileContents(fileContents: str,assemblyNames: Array[AssemblyName]) -> ResXResourceReader
 
   
@@ -1336,9 +1438,10 @@ class ResXResourceReader(object,IResourceReader,IEnumerable,IDisposable):
 
    Returns: An object that reads resources from the fileContents string.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: ResXResourceReader) -> IDictionaryEnumerator
 
   
@@ -1347,9 +1450,10 @@ class ResXResourceReader(object,IResourceReader,IEnumerable,IDisposable):
 
    Returns: An enumerator for the current System.Resources.ResourceReader object.
   """
-  pass
- def GetMetadataEnumerator(self):
-  """
+        pass
+
+    def GetMetadataEnumerator(self):
+        """
   GetMetadataEnumerator(self: ResXResourceReader) -> IDictionaryEnumerator
 
   
@@ -1362,32 +1466,37 @@ class ResXResourceReader(object,IResourceReader,IEnumerable,IDisposable):
 
    Returns: An enumerator for the metadata in a resource.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,fileName: str)
 
   __new__(cls: type,fileName: str,typeResolver: ITypeResolutionService)
@@ -1406,12 +1515,14 @@ class ResXResourceReader(object,IResourceReader,IEnumerable,IDisposable):
 
   __new__(cls: type,fileName: str,assemblyNames: Array[AssemblyName])
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- BasePath=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the base path for the relative file path specified in a System.Resources.ResXFileRef object.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    BasePath = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the base path for the relative file path specified in a System.Resources.ResXFileRef object.
 
 
 
@@ -1423,8 +1534,10 @@ Set: BasePath(self: ResXResourceReader)=value
 
 """
 
- UseResXDataNodes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether System.Resources.ResXDataNode objects are returned when reading the current XML resource file or stream.
+    UseResXDataNodes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether System.Resources.ResXDataNode objects are returned when reading the current XML resource file or stream.
 
 
 
@@ -1437,9 +1550,8 @@ Set: UseResXDataNodes(self: ResXResourceReader)=value
 """
 
 
-
-class ResXResourceSet(ResourceSet,IDisposable,IEnumerable):
- """
+class ResXResourceSet(ResourceSet, IDisposable, IEnumerable):
+    """
  Gathers all items that represent an XML resource (.resx) file into a single object.
 
  
@@ -1448,8 +1560,9 @@ class ResXResourceSet(ResourceSet,IDisposable,IEnumerable):
 
  ResXResourceSet(stream: Stream)
  """
- def Dispose(self):
-  """
+
+    def Dispose(self):
+        """
   Dispose(self: ResourceSet,disposing: bool)
 
    Releases resources (other than memory) associated with the current instance,closing internal 
@@ -1462,9 +1575,10 @@ class ResXResourceSet(ResourceSet,IDisposable,IEnumerable):
 
    disposing: Indicates whether the objects contained in the current instance should be explicitly closed.
   """
-  pass
- def GetDefaultReader(self):
-  """
+        pass
+
+    def GetDefaultReader(self):
+        """
   GetDefaultReader(self: ResXResourceSet) -> Type
 
   
@@ -1475,9 +1589,10 @@ class ResXResourceSet(ResourceSet,IDisposable,IEnumerable):
 
     System.Resources.ResXResourceSet.
   """
-  pass
- def GetDefaultWriter(self):
-  """
+        pass
+
+    def GetDefaultWriter(self):
+        """
   GetDefaultWriter(self: ResXResourceSet) -> Type
 
   
@@ -1488,52 +1603,59 @@ class ResXResourceSet(ResourceSet,IDisposable,IEnumerable):
 
     System.Resources.ResXResourceSet.
   """
-  pass
- def ReadResources(self,*args):
-  """
+        pass
+
+    def ReadResources(self, *args):
+        """
   ReadResources(self: ResourceSet)
 
    Reads all the resources and stores them in a System.Collections.Hashtable indicated in the 
 
     System.Resources.ResourceSet.Table property.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,fileName: str)
 
   __new__(cls: type,stream: Stream)
   """
-  pass
- Reader=None
- Table=None
+        pass
+
+    Reader = None
+    Table = None
 
 
-class ResXResourceWriter(object,IResourceWriter,IDisposable):
- """
+class ResXResourceWriter(object, IResourceWriter, IDisposable):
+    """
  Writes resources in an XML resource (.resx) file or an output stream.
 
  
@@ -1550,8 +1672,9 @@ class ResXResourceWriter(object,IResourceWriter,IDisposable):
 
  ResXResourceWriter(textWriter: TextWriter,typeNameConverter: Func[Type,str])
  """
- def AddAlias(self,aliasName,assemblyName):
-  """
+
+    def AddAlias(self, aliasName, assemblyName):
+        """
   AddAlias(self: ResXResourceWriter,aliasName: str,assemblyName: AssemblyName)
 
    Adds the specified alias to a list of aliases.
@@ -1562,9 +1685,10 @@ class ResXResourceWriter(object,IResourceWriter,IDisposable):
 
    assemblyName: The name of the assembly represented by aliasName.
   """
-  pass
- def AddMetadata(self,name,value):
-  """
+        pass
+
+    def AddMetadata(self, name, value):
+        """
   AddMetadata(self: ResXResourceWriter,name: str,value: object)
 
    Adds a design-time property whose value is specified as an object to the list of resources to 
@@ -1607,9 +1731,10 @@ class ResXResourceWriter(object,IResourceWriter,IDisposable):
 
    value: A byte array containing the value of the property to add.
   """
-  pass
- def AddResource(self,*__args):
-  """
+        pass
+
+    def AddResource(self, *__args):
+        """
   AddResource(self: ResXResourceWriter,name: str,value: str)
 
    Adds a string resource to the resources.
@@ -1652,23 +1777,26 @@ class ResXResourceWriter(object,IResourceWriter,IDisposable):
 
    value: The value of the resource.
   """
-  pass
- def Close(self):
-  """
+        pass
+
+    def Close(self):
+        """
   Close(self: ResXResourceWriter)
 
    Releases all resources used by the System.Resources.ResXResourceWriter.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: ResXResourceWriter)
 
    Releases all resources used by the System.Resources.ResXResourceWriter.
   """
-  pass
- def Generate(self):
-  """
+        pass
+
+    def Generate(self):
+        """
   Generate(self: ResXResourceWriter)
 
    Writes all resources added by the 
@@ -1677,29 +1805,33 @@ class ResXResourceWriter(object,IResourceWriter,IDisposable):
 
     output file or stream.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,fileName: str)
 
   __new__(cls: type,fileName: str,typeNameConverter: Func[Type,str])
@@ -1712,12 +1844,14 @@ class ResXResourceWriter(object,IResourceWriter,IDisposable):
 
   __new__(cls: type,textWriter: TextWriter,typeNameConverter: Func[Type,str])
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- BasePath=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the base path for the relative file path specified in a System.Resources.ResXFileRef object.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    BasePath = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the base path for the relative file path specified in a System.Resources.ResXFileRef object.
 
 
 
@@ -1729,33 +1863,37 @@ Set: BasePath(self: ResXResourceWriter)=value
 
 """
 
+    BinSerializedObjectMimeType = "application/x-microsoft.net.object.binary.base64"
+    ByteArraySerializedObjectMimeType = (
+        "application/x-microsoft.net.object.bytearray.base64"
+    )
+    DefaultSerializedObjectMimeType = "application/x-microsoft.net.object.binary.base64"
+    ResMimeType = "text/microsoft-resx"
+    ResourceSchema = '\r\n <!-- \r\n Microsoft ResX Schema \r\n \r\n Version 2.0\r\n \r\n The primary goals of this format is to allow a simple XML format \r\n that is mostly human readable. The generation and parsing of the \r\n various data types are done through the TypeConverter classes \r\n associated with the data types.\r\n \r\n Example:\r\n \r\n ... ado.net/XML headers & schema ...\r\n <resheader name="resmimetype">text/microsoft-resx</resheader>\r\n <resheader name="version">2.0</resheader>\r\n <resheader name="reader">System.Resources.ResXResourceReader,System.Windows.Forms,...</resheader>\r\n <resheader name="writer">System.Resources.ResXResourceWriter,System.Windows.Forms,...</resheader>\r\n <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>\r\n <data name="Color1" type="System.Drawing.Color,System.Drawing">Blue</data>\r\n <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">\r\n  <value>[base64 mime encoded serialized .NET Framework object]</value>\r\n </data>\r\n <data name="Icon1" type="System.Drawing.Icon,System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">\r\n  <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>\r\n  <comment>This is a comment</comment>\r\n </data>\r\n    \r\n There are any number of "resheader" rows that contain simple \r\n name/value pairs.\r\n \r\n Each data row contains a name,and value. The row also contains a \r\n type or mimetype. Type corresponds to a .NET class that support \r\n text/value conversion through the TypeConverter architecture. \r\n Classes that don\'t support this are serialized and stored with the \r\n mimetype set.\r\n \r\n The mimetype is used for serialized objects,and tells the \r\n ResXResourceReader how to depersist the object. This is currently not \r\n extensible. For a given mimetype the value must be set accordingly:\r\n \r\n Note - application/x-microsoft.net.object.binary.base64 is the format \r\n that the ResXResourceWriter will generate,however the reader can \r\n read any of the formats listed below.\r\n \r\n mimetype: application/x-microsoft.net.object.binary.base64\r\n value   : The object must be serialized with \r\n   : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter\r\n   : and then encoded with base64 encoding.\r\n \r\n mimetype: application/x-microsoft.net.object.soap.base64\r\n value   : The object must be serialized with \r\n   : System.Runtime.Serialization.Formatters.Soap.SoapFormatter\r\n   : and then encoded with base64 encoding.\r\n\r\n mimetype: application/x-microsoft.net.object.bytearray.base64\r\n value   : The object must be serialized into a byte array \r\n   : using a System.ComponentModel.TypeConverter\r\n   : and then encoded with base64 encoding.\r\n -->\r\n <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">\r\n  <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>\r\n  <xsd:element name="root" msdata:IsDataSet="true">\r\n   <xsd:complexType>\r\n    <xsd:choice maxOccurs="unbounded">\r\n     <xsd:element name="metadata">\r\n      <xsd:complexType>\r\n       <xsd:sequence>\r\n       <xsd:element name="value" type="xsd:string" minOccurs="0"/>\r\n       </xsd:sequence>\r\n       <xsd:attribute name="name" use="required" type="xsd:string"/>\r\n       <xsd:attribute name="type" type="xsd:string"/>\r\n       <xsd:attribute name="mimetype" type="xsd:string"/>\r\n       <xsd:attribute ref="xml:space"/>       \r\n      </xsd:complexType>\r\n     </xsd:element>\r\n     <xsd:element name="assembly">\r\n       <xsd:complexType>\r\n      <xsd:attribute name="alias" type="xsd:string"/>\r\n      <xsd:attribute name="name" type="xsd:string"/>\r\n       </xsd:complexType>\r\n     </xsd:element>\r\n     <xsd:element name="data">\r\n      <xsd:complexType>\r\n       <xsd:sequence>\r\n        <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />\r\n        <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />\r\n       </xsd:sequence>\r\n       <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />\r\n       <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />\r\n       <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />\r\n       <xsd:attribute ref="xml:space"/>\r\n      </xsd:complexType>\r\n     </xsd:element>\r\n     <xsd:element name="resheader">\r\n      <xsd:complexType>\r\n       <xsd:sequence>\r\n        <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />\r\n       </xsd:sequence>\r\n       <xsd:attribute name="name" type="xsd:string" use="required" />\r\n      </xsd:complexType>\r\n     </xsd:element>\r\n    </xsd:choice>\r\n   </xsd:complexType>\r\n  </xsd:element>\r\n  </xsd:schema>\r\n  '
+    SoapSerializedObjectMimeType = "application/x-microsoft.net.object.soap.base64"
+    Version = "2.0"
 
- BinSerializedObjectMimeType='application/x-microsoft.net.object.binary.base64'
- ByteArraySerializedObjectMimeType='application/x-microsoft.net.object.bytearray.base64'
- DefaultSerializedObjectMimeType='application/x-microsoft.net.object.binary.base64'
- ResMimeType='text/microsoft-resx'
- ResourceSchema='\r\n <!-- \r\n Microsoft ResX Schema \r\n \r\n Version 2.0\r\n \r\n The primary goals of this format is to allow a simple XML format \r\n that is mostly human readable. The generation and parsing of the \r\n various data types are done through the TypeConverter classes \r\n associated with the data types.\r\n \r\n Example:\r\n \r\n ... ado.net/XML headers & schema ...\r\n <resheader name="resmimetype">text/microsoft-resx</resheader>\r\n <resheader name="version">2.0</resheader>\r\n <resheader name="reader">System.Resources.ResXResourceReader,System.Windows.Forms,...</resheader>\r\n <resheader name="writer">System.Resources.ResXResourceWriter,System.Windows.Forms,...</resheader>\r\n <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>\r\n <data name="Color1" type="System.Drawing.Color,System.Drawing">Blue</data>\r\n <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">\r\n  <value>[base64 mime encoded serialized .NET Framework object]</value>\r\n </data>\r\n <data name="Icon1" type="System.Drawing.Icon,System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">\r\n  <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>\r\n  <comment>This is a comment</comment>\r\n </data>\r\n    \r\n There are any number of "resheader" rows that contain simple \r\n name/value pairs.\r\n \r\n Each data row contains a name,and value. The row also contains a \r\n type or mimetype. Type corresponds to a .NET class that support \r\n text/value conversion through the TypeConverter architecture. \r\n Classes that don\'t support this are serialized and stored with the \r\n mimetype set.\r\n \r\n The mimetype is used for serialized objects,and tells the \r\n ResXResourceReader how to depersist the object. This is currently not \r\n extensible. For a given mimetype the value must be set accordingly:\r\n \r\n Note - application/x-microsoft.net.object.binary.base64 is the format \r\n that the ResXResourceWriter will generate,however the reader can \r\n read any of the formats listed below.\r\n \r\n mimetype: application/x-microsoft.net.object.binary.base64\r\n value   : The object must be serialized with \r\n   : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter\r\n   : and then encoded with base64 encoding.\r\n \r\n mimetype: application/x-microsoft.net.object.soap.base64\r\n value   : The object must be serialized with \r\n   : System.Runtime.Serialization.Formatters.Soap.SoapFormatter\r\n   : and then encoded with base64 encoding.\r\n\r\n mimetype: application/x-microsoft.net.object.bytearray.base64\r\n value   : The object must be serialized into a byte array \r\n   : using a System.ComponentModel.TypeConverter\r\n   : and then encoded with base64 encoding.\r\n -->\r\n <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">\r\n  <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>\r\n  <xsd:element name="root" msdata:IsDataSet="true">\r\n   <xsd:complexType>\r\n    <xsd:choice maxOccurs="unbounded">\r\n     <xsd:element name="metadata">\r\n      <xsd:complexType>\r\n       <xsd:sequence>\r\n       <xsd:element name="value" type="xsd:string" minOccurs="0"/>\r\n       </xsd:sequence>\r\n       <xsd:attribute name="name" use="required" type="xsd:string"/>\r\n       <xsd:attribute name="type" type="xsd:string"/>\r\n       <xsd:attribute name="mimetype" type="xsd:string"/>\r\n       <xsd:attribute ref="xml:space"/>       \r\n      </xsd:complexType>\r\n     </xsd:element>\r\n     <xsd:element name="assembly">\r\n       <xsd:complexType>\r\n      <xsd:attribute name="alias" type="xsd:string"/>\r\n      <xsd:attribute name="name" type="xsd:string"/>\r\n       </xsd:complexType>\r\n     </xsd:element>\r\n     <xsd:element name="data">\r\n      <xsd:complexType>\r\n       <xsd:sequence>\r\n        <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />\r\n        <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />\r\n       </xsd:sequence>\r\n       <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />\r\n       <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />\r\n       <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />\r\n       <xsd:attribute ref="xml:space"/>\r\n      </xsd:complexType>\r\n     </xsd:element>\r\n     <xsd:element name="resheader">\r\n      <xsd:complexType>\r\n       <xsd:sequence>\r\n        <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />\r\n       </xsd:sequence>\r\n       <xsd:attribute name="name" type="xsd:string" use="required" />\r\n      </xsd:complexType>\r\n     </xsd:element>\r\n    </xsd:choice>\r\n   </xsd:complexType>\r\n  </xsd:element>\r\n  </xsd:schema>\r\n  '
- SoapSerializedObjectMimeType='application/x-microsoft.net.object.soap.base64'
- Version='2.0'
 
-
-class SatelliteContractVersionAttribute(Attribute,_Attribute):
- """
+class SatelliteContractVersionAttribute(Attribute, _Attribute):
+    """
  Instructs the System.Resources.ResourceManager to ask for a particular version of a satellite assembly to simplify updates of the main assembly of an application.
 
  
 
  SatelliteContractVersionAttribute(version: str)
  """
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,version):
-  """ __new__(cls: type,version: str) """
-  pass
- Version=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the version of the satellite assemblies with the required resources.
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, version):
+        """ __new__(cls: type,version: str) """
+        pass
+
+    Version = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the version of the satellite assemblies with the required resources.
 
 
 
@@ -1766,40 +1904,48 @@ Get: Version(self: SatelliteContractVersionAttribute) -> str
 """
 
 
-
-class UltimateResourceFallbackLocation(Enum,IComparable,IFormattable,IConvertible):
- """
+class UltimateResourceFallbackLocation(Enum, IComparable, IFormattable, IConvertible):
+    """
  Specifies the assembly for the System.Resources.ResourceManager class to use to retrieve neutral resources by using the Packaging and Deploying Resources.
 
  
 
  enum UltimateResourceFallbackLocation,values: MainAssembly (0),Satellite (1)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- MainAssembly=None
- Satellite=None
- value__=None
 
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
 
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    MainAssembly = None
+    Satellite = None
+    value__ = None

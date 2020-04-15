@@ -1,7 +1,10 @@
-class HttpListenerPrefixCollection(object,ICollection[str],IEnumerable[str],IEnumerable):
- """ Represents the collection used to store Uniform Resource Identifier (URI) prefixes for System.Net.HttpListener objects. """
- def Add(self,uriPrefix):
-  """
+class HttpListenerPrefixCollection(
+    object, ICollection[str], IEnumerable[str], IEnumerable
+):
+    """ Represents the collection used to store Uniform Resource Identifier (URI) prefixes for System.Net.HttpListener objects. """
+
+    def Add(self, uriPrefix):
+        """
   Add(self: HttpListenerPrefixCollection,uriPrefix: str)
 
    Adds a Uniform Resource Identifier (URI) prefix to the collection.
@@ -12,16 +15,18 @@ class HttpListenerPrefixCollection(object,ICollection[str],IEnumerable[str],IEnu
 
     prefix must be terminated with a forward slash ("/").
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: HttpListenerPrefixCollection)
 
    Removes all the Uniform Resource Identifier (URI) prefixes from the collection.
   """
-  pass
- def Contains(self,uriPrefix):
-  """
+        pass
+
+    def Contains(self, uriPrefix):
+        """
   Contains(self: HttpListenerPrefixCollection,uriPrefix: str) -> bool
 
   
@@ -38,9 +43,10 @@ class HttpListenerPrefixCollection(object,ICollection[str],IEnumerable[str],IEnu
 
    Returns: true if this collection contains the prefix specified by uriPrefix; otherwise,false.
   """
-  pass
- def CopyTo(self,array,offset):
-  """
+        pass
+
+    def CopyTo(self, array, offset):
+        """
   CopyTo(self: HttpListenerPrefixCollection,array: Array[str],offset: int)
 
    Copies the contents of an System.Net.HttpListenerPrefixCollection to the specified string array.
@@ -69,9 +75,10 @@ class HttpListenerPrefixCollection(object,ICollection[str],IEnumerable[str],IEnu
 
    offset: The zero-based index in array at which copying begins.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: HttpListenerPrefixCollection) -> IEnumerator[str]
 
   
@@ -82,9 +89,10 @@ class HttpListenerPrefixCollection(object,ICollection[str],IEnumerable[str],IEnu
 
     the strings in this collection.
   """
-  pass
- def Remove(self,uriPrefix):
-  """
+        pass
+
+    def Remove(self, uriPrefix):
+        """
   Remove(self: HttpListenerPrefixCollection,uriPrefix: str) -> bool
 
   
@@ -103,27 +111,34 @@ class HttpListenerPrefixCollection(object,ICollection[str],IEnumerable[str],IEnu
 
     otherwise false.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__(self: ICollection[str],item: str) -> bool """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of prefixes contained in the collection.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__(self: ICollection[str],item: str) -> bool """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of prefixes contained in the collection.
 
 
 
@@ -133,8 +148,10 @@ Get: Count(self: HttpListenerPrefixCollection) -> int
 
 """
 
- IsReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether access to the collection is read-only.
+    IsReadOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether access to the collection is read-only.
 
 
 
@@ -144,8 +161,10 @@ Get: IsReadOnly(self: HttpListenerPrefixCollection) -> bool
 
 """
 
- IsSynchronized=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether access to the collection is synchronized (thread-safe).
+    IsSynchronized = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether access to the collection is synchronized (thread-safe).
 
 
 
@@ -154,5 +173,3 @@ Get: IsSynchronized(self: HttpListenerPrefixCollection) -> bool
 
 
 """
-
-

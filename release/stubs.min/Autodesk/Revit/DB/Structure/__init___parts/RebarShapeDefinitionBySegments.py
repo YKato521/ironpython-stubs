@@ -1,5 +1,5 @@
-class RebarShapeDefinitionBySegments(RebarShapeDefinition,IDisposable):
- """
+class RebarShapeDefinitionBySegments(RebarShapeDefinition, IDisposable):
+    """
  Definition of a shape in terms of one or more straight segments of rebar,
 
     with arc bends between the segments.
@@ -8,8 +8,9 @@ class RebarShapeDefinitionBySegments(RebarShapeDefinition,IDisposable):
 
  RebarShapeDefinitionBySegments(doc: Document,numberOfSegments: int)
  """
- def AddBendDefaultRadius(self,vertexIndex,turn,angle):
-  """
+
+    def AddBendDefaultRadius(self, vertexIndex, turn, angle):
+        """
   AddBendDefaultRadius(self: RebarShapeDefinitionBySegments,vertexIndex: int,turn: RebarShapeVertexTurn,angle: RebarShapeBendAngle)
 
    Specify a default-radius bend.
@@ -26,9 +27,12 @@ class RebarShapeDefinitionBySegments(RebarShapeDefinition,IDisposable):
 
    angle: Specify whether the bend is acute,obtuse,etc.
   """
-  pass
- def AddBendVariableRadius(self,vertexIndex,turn,angle,paramId,measureIncludingBarThickness):
-  """
+        pass
+
+    def AddBendVariableRadius(
+        self, vertexIndex, turn, angle, paramId, measureIncludingBarThickness
+    ):
+        """
   AddBendVariableRadius(self: RebarShapeDefinitionBySegments,vertexIndex: int,turn: RebarShapeVertexTurn,angle: RebarShapeBendAngle,paramId: ElementId,measureIncludingBarThickness: bool)
 
    Specify a variable-radius bend.
@@ -53,9 +57,12 @@ class RebarShapeDefinitionBySegments(RebarShapeDefinition,IDisposable):
 
     measured to the inside.
   """
-  pass
- def AddConstraintParallelToSegment(self,iSegment,paramId,measureToOutsideOfBend0,measureToOutsideOfBend1):
-  """
+        pass
+
+    def AddConstraintParallelToSegment(
+        self, iSegment, paramId, measureToOutsideOfBend0, measureToOutsideOfBend1
+    ):
+        """
   AddConstraintParallelToSegment(self: RebarShapeDefinitionBySegments,iSegment: int,paramId: ElementId,measureToOutsideOfBend0: bool,measureToOutsideOfBend1: bool)
 
    Constrain the length of a segment by parameterizing its length.
@@ -90,9 +97,19 @@ class RebarShapeDefinitionBySegments(RebarShapeDefinition,IDisposable):
 
     dimension.
   """
-  pass
- def AddConstraintToSegment(self,iSegment,paramId,constraintDirCoordX,constraintDirCoordY,signOfZCoordOfCrossProductOfConstraintDirBySegmentDir,measureToOutsideOfBend0,measureToOutsideOfBend1):
-  """
+        pass
+
+    def AddConstraintToSegment(
+        self,
+        iSegment,
+        paramId,
+        constraintDirCoordX,
+        constraintDirCoordY,
+        signOfZCoordOfCrossProductOfConstraintDirBySegmentDir,
+        measureToOutsideOfBend0,
+        measureToOutsideOfBend1,
+    ):
+        """
   AddConstraintToSegment(self: RebarShapeDefinitionBySegments,iSegment: int,paramId: ElementId,constraintDirCoordX: float,constraintDirCoordY: float,signOfZCoordOfCrossProductOfConstraintDirBySegmentDir: int,measureToOutsideOfBend0: bool,measureToOutsideOfBend1: bool)
 
    Add a constraint that helps determine the length of a segment.
@@ -151,9 +168,19 @@ class RebarShapeDefinitionBySegments(RebarShapeDefinition,IDisposable):
 
     dimension.
   """
-  pass
- def AddListeningDimensionBendToBend(self,paramId,constraintDirCoordX,constraintDirCoordY,iSegment0,iEnd0,iSegment1,iEnd1):
-  """
+        pass
+
+    def AddListeningDimensionBendToBend(
+        self,
+        paramId,
+        constraintDirCoordX,
+        constraintDirCoordY,
+        iSegment0,
+        iEnd0,
+        iSegment1,
+        iEnd1,
+    ):
+        """
   AddListeningDimensionBendToBend(self: RebarShapeDefinitionBySegments,paramId: ElementId,constraintDirCoordX: float,constraintDirCoordY: float,iSegment0: int,iEnd0: int,iSegment1: int,iEnd1: int)
 
    Specify a dimension between two bends,measured by a read-only parameter.
@@ -180,9 +207,18 @@ class RebarShapeDefinitionBySegments(RebarShapeDefinition,IDisposable):
 
    iEnd1: End (0 or 1) of the second segment.
   """
-  pass
- def AddListeningDimensionSegmentToBend(self,paramId,constraintDirCoordX,constraintDirCoordY,iSegment0,iSegment1,iEnd1):
-  """
+        pass
+
+    def AddListeningDimensionSegmentToBend(
+        self,
+        paramId,
+        constraintDirCoordX,
+        constraintDirCoordY,
+        iSegment0,
+        iSegment1,
+        iEnd1,
+    ):
+        """
   AddListeningDimensionSegmentToBend(self: RebarShapeDefinitionBySegments,paramId: ElementId,constraintDirCoordX: float,constraintDirCoordY: float,iSegment0: int,iSegment1: int,iEnd1: int)
 
    Specify a dimension perpendicular to one fixed-direction segment,
@@ -217,9 +253,12 @@ class RebarShapeDefinitionBySegments(RebarShapeDefinition,IDisposable):
 
    iEnd1: End (0 or 1) of the second segment.
   """
-  pass
- def AddListeningDimensionSegmentToSegment(self,paramId,constraintDirCoordX,constraintDirCoordY,iSegment0,iSegment1):
-  """
+        pass
+
+    def AddListeningDimensionSegmentToSegment(
+        self, paramId, constraintDirCoordX, constraintDirCoordY, iSegment0, iSegment1
+    ):
+        """
   AddListeningDimensionSegmentToSegment(self: RebarShapeDefinitionBySegments,paramId: ElementId,constraintDirCoordX: float,constraintDirCoordY: float,iSegment0: int,iSegment1: int)
 
    Specify a dimension perpendicular to two fixed-direction segments,measured by 
@@ -246,12 +285,14 @@ class RebarShapeDefinitionBySegments(RebarShapeDefinition,IDisposable):
 
    iSegment1: Index of the second segment (0 to NumberOfSegments - 1).
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: RebarShapeDefinition,A_0: bool) """
-  pass
- def GetSegment(self,segmentIndex):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: RebarShapeDefinition,A_0: bool) """
+        pass
+
+    def GetSegment(self, segmentIndex):
+        """
   GetSegment(self: RebarShapeDefinitionBySegments,segmentIndex: int) -> RebarShapeSegment
 
   
@@ -264,9 +305,10 @@ class RebarShapeDefinitionBySegments(RebarShapeDefinition,IDisposable):
 
    Returns: The requested segment.
   """
-  pass
- def GetVertex(self,vertexIndex):
-  """
+        pass
+
+    def GetVertex(self, vertexIndex):
+        """
   GetVertex(self: RebarShapeDefinitionBySegments,vertexIndex: int) -> RebarShapeVertex
 
   
@@ -279,12 +321,14 @@ class RebarShapeDefinitionBySegments(RebarShapeDefinition,IDisposable):
 
    Returns: The requested vertex.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: RebarShapeDefinition,disposing: bool) """
-  pass
- def RemoveParameterFromSegment(self,iSegment,paramId):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: RebarShapeDefinition,disposing: bool) """
+        pass
+
+    def RemoveParameterFromSegment(self, iSegment, paramId):
+        """
   RemoveParameterFromSegment(self: RebarShapeDefinitionBySegments,iSegment: int,paramId: ElementId)
 
    Remove constraints from a segment.
@@ -295,9 +339,12 @@ class RebarShapeDefinitionBySegments(RebarShapeDefinition,IDisposable):
 
    paramId: Id of a parameter driving one or more constraints.
   """
-  pass
- def SetSegmentAs180DegreeBend(self,iSegment,paramId=None,measureToOutsideOfBend=None):
-  """
+        pass
+
+    def SetSegmentAs180DegreeBend(
+        self, iSegment, paramId=None, measureToOutsideOfBend=None
+    ):
+        """
   SetSegmentAs180DegreeBend(self: RebarShapeDefinitionBySegments,iSegment: int)
 
    Indicates that a segment is a "virtual" segment introduced to describe a 
@@ -340,9 +387,10 @@ class RebarShapeDefinitionBySegments(RebarShapeDefinition,IDisposable):
 
     interior face.
   """
-  pass
- def SetSegmentFixedDirection(self,iSegment,vecCoordX,vecCoordY):
-  """
+        pass
+
+    def SetSegmentFixedDirection(self, iSegment, vecCoordX, vecCoordY):
+        """
   SetSegmentFixedDirection(self: RebarShapeDefinitionBySegments,iSegment: int,vecCoordX: float,vecCoordY: float)
 
    Fix the direction of a segment.
@@ -355,9 +403,10 @@ class RebarShapeDefinitionBySegments(RebarShapeDefinition,IDisposable):
 
    vecCoordY: The y-coordinate of a 2D vector specifying the segment direction.
   """
-  pass
- def SetSegmentVariableDirection(self,iSegment):
-  """
+        pass
+
+    def SetSegmentVariableDirection(self, iSegment):
+        """
   SetSegmentVariableDirection(self: RebarShapeDefinitionBySegments,iSegment: int)
 
    Remove the fixed direction from a segment.
@@ -366,22 +415,29 @@ class RebarShapeDefinitionBySegments(RebarShapeDefinition,IDisposable):
 
    iSegment: Index of the segment (0 to NumberOfSegments - 1).
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,doc,numberOfSegments):
-  """ __new__(cls: type,doc: Document,numberOfSegments: int) """
-  pass
- MajorSegmentIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Index of a segment that can be considered the most important. Revit
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, doc, numberOfSegments):
+        """ __new__(cls: type,doc: Document,numberOfSegments: int) """
+        pass
+
+    MajorSegmentIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Index of a segment that can be considered the most important. Revit
 
    attempts to preserve the orientation of this segment when a Rebar instance
 
@@ -397,8 +453,10 @@ Set: MajorSegmentIndex(self: RebarShapeDefinitionBySegments)=value
 
 """
 
- NumberOfSegments=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The number of straight segments in this shape.
+    NumberOfSegments = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The number of straight segments in this shape.
 
 
 
@@ -408,8 +466,10 @@ Get: NumberOfSegments(self: RebarShapeDefinitionBySegments) -> int
 
 """
 
- NumberOfVertices=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The number of vertices in this shape,always equal to NumberOfSegments + 1.
+    NumberOfVertices = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The number of vertices in this shape,always equal to NumberOfSegments + 1.
 
 
 
@@ -418,5 +478,3 @@ Get: NumberOfVertices(self: RebarShapeDefinitionBySegments) -> int
 
 
 """
-
-

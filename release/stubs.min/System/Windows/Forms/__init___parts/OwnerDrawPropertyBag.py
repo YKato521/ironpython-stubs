@@ -1,8 +1,9 @@
-class OwnerDrawPropertyBag(MarshalByRefObject,ISerializable):
- """ Contains values of properties that a component might need only occasionally. """
- @staticmethod
- def Copy(value):
-  """
+class OwnerDrawPropertyBag(MarshalByRefObject, ISerializable):
+    """ Contains values of properties that a component might need only occasionally. """
+
+    @staticmethod
+    def Copy(value):
+        """
   Copy(value: OwnerDrawPropertyBag) -> OwnerDrawPropertyBag
 
   
@@ -15,9 +16,10 @@ class OwnerDrawPropertyBag(MarshalByRefObject,ISerializable):
 
    Returns: A new System.Windows.Forms.OwnerDrawPropertyBag.
   """
-  pass
- def IsEmpty(self):
-  """
+        pass
+
+    def IsEmpty(self):
+        """
   IsEmpty(self: OwnerDrawPropertyBag) -> bool
 
   
@@ -28,9 +30,10 @@ class OwnerDrawPropertyBag(MarshalByRefObject,ISerializable):
 
     false.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -61,18 +64,22 @@ class OwnerDrawPropertyBag(MarshalByRefObject,ISerializable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """ __new__(cls: type,info: SerializationInfo,context: StreamingContext) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- BackColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the background color for the component.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """ __new__(cls: type,info: SerializationInfo,context: StreamingContext) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    BackColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the background color for the component.
 
 
 
@@ -84,8 +91,8 @@ Set: BackColor(self: OwnerDrawPropertyBag)=value
 
 """
 
- Font=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the font of the text displayed by the component.
+    Font = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the font of the text displayed by the component.
 
 
 
@@ -97,8 +104,8 @@ Set: Font(self: OwnerDrawPropertyBag)=value
 
 """
 
- ForeColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the foreground color of the component.
+    ForeColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the foreground color of the component.
 
 
 
@@ -109,5 +116,3 @@ Get: ForeColor(self: OwnerDrawPropertyBag) -> Color
 Set: ForeColor(self: OwnerDrawPropertyBag)=value
 
 """
-
-

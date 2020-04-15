@@ -1,11 +1,12 @@
-class WorksharingDisplaySettings(Element,IDisposable):
- """
+class WorksharingDisplaySettings(Element, IDisposable):
+    """
  WorksharingDisplaySettings controls how elements will appear when they are
 
     displayed in any of the worksharing display modes.
  """
- def CanUserHaveOverrides(self,username):
-  """
+
+    def CanUserHaveOverrides(self, username):
+        """
   CanUserHaveOverrides(self: WorksharingDisplaySettings,username: str) -> bool
 
   
@@ -18,12 +19,14 @@ class WorksharingDisplaySettings(Element,IDisposable):
 
    Returns: False if the username is on the list of removed users,True otherwise.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def GetAllUsersWithGraphicOverrides(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def GetAllUsersWithGraphicOverrides(self):
+        """
   GetAllUsersWithGraphicOverrides(self: WorksharingDisplaySettings) -> ICollection[str]
 
   
@@ -42,12 +45,14 @@ class WorksharingDisplaySettings(Element,IDisposable):
 
    Returns: All usernames that have been assigned graphic overrides.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetGraphicOverrides(self,*__args):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetGraphicOverrides(self, *__args):
+        """
   GetGraphicOverrides(self: WorksharingDisplaySettings,statusInCentral: ModelUpdatesStatus) -> WorksharingDisplayGraphicSettings
 
   
@@ -96,10 +101,11 @@ class WorksharingDisplaySettings(Element,IDisposable):
 
    Returns: The graphic overrides assigned to this user.
   """
-  pass
- @staticmethod
- def GetOrCreateWorksharingDisplaySettings(doc):
-  """
+        pass
+
+    @staticmethod
+    def GetOrCreateWorksharingDisplaySettings(doc):
+        """
   GetOrCreateWorksharingDisplaySettings(doc: Document) -> WorksharingDisplaySettings
 
   
@@ -118,9 +124,10 @@ class WorksharingDisplaySettings(Element,IDisposable):
 
    Returns: The worksharing display settings for the document.
   """
-  pass
- def GetRemovedUsers(self):
-  """
+        pass
+
+    def GetRemovedUsers(self):
+        """
   GetRemovedUsers(self: WorksharingDisplaySettings) -> ICollection[str]
 
   
@@ -129,21 +136,26 @@ class WorksharingDisplaySettings(Element,IDisposable):
 
    Returns: Users who have been explicitly removed from the list.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def RemoveUsers(self,document,usersToRemove,usersActuallyRemoved):
-  """ RemoveUsers(self: WorksharingDisplaySettings,document: Document,usersToRemove: ICollection[str]) -> ICollection[str] """
-  pass
- def RestoreUsers(self,usersToRestore):
-  """ RestoreUsers(self: WorksharingDisplaySettings,usersToRestore: ICollection[str]) -> int """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetGraphicOverrides(self,*__args):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def RemoveUsers(self, document, usersToRemove, usersActuallyRemoved):
+        """ RemoveUsers(self: WorksharingDisplaySettings,document: Document,usersToRemove: ICollection[str]) -> ICollection[str] """
+        pass
+
+    def RestoreUsers(self, usersToRestore):
+        """ RestoreUsers(self: WorksharingDisplaySettings,usersToRestore: ICollection[str]) -> int """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetGraphicOverrides(self, *__args):
+        """
   SetGraphicOverrides(self: WorksharingDisplaySettings,status: ModelUpdatesStatus,overrides: WorksharingDisplayGraphicSettings)
 
    Sets the graphic overrides assigned to elements with a particular status in the 
@@ -198,9 +210,10 @@ class WorksharingDisplaySettings(Element,IDisposable):
 
    overrides: The desired graphic overrides for this ownership status.
   """
-  pass
- def UserHasGraphicOverrides(self,username):
-  """
+        pass
+
+    def UserHasGraphicOverrides(self, username):
+        """
   UserHasGraphicOverrides(self: WorksharingDisplaySettings,username: str) -> bool
 
   
@@ -219,13 +232,16 @@ class WorksharingDisplaySettings(Element,IDisposable):
 
    Returns: True if there are graphic overrides assigned to the username,false otherwise.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

@@ -1,7 +1,8 @@
 class UCOMIEnumVARIANT:
- """ Use System.Runtime.InteropServices.ComTypes.IEnumVARIANT instead. """
- def Clone(self,ppenum):
-  """
+    """ Use System.Runtime.InteropServices.ComTypes.IEnumVARIANT instead. """
+
+    def Clone(self, ppenum):
+        """
   Clone(self: UCOMIEnumVARIANT,ppenum: int)
 
    Creates another enumerator that contains the same enumeration state as the current one.
@@ -10,9 +11,10 @@ class UCOMIEnumVARIANT:
 
    ppenum: On successful return,a reference to the newly created enumerator.
   """
-  pass
- def Next(self,celt,rgvar,pceltFetched):
-  """
+        pass
+
+    def Next(self, celt, rgvar, pceltFetched):
+        """
   Next(self: UCOMIEnumVARIANT,celt: int,rgvar: int,pceltFetched: int) -> int
 
   
@@ -29,9 +31,10 @@ class UCOMIEnumVARIANT:
 
    Returns: S_OK if the pceltFetched parameter equals the celt parameter; otherwise,S_FALSE.
   """
-  pass
- def Reset(self):
-  """
+        pass
+
+    def Reset(self):
+        """
   Reset(self: UCOMIEnumVARIANT) -> int
 
   
@@ -40,9 +43,10 @@ class UCOMIEnumVARIANT:
 
    Returns: An HRESULT with the value S_OK.
   """
-  pass
- def Skip(self,celt):
-  """
+        pass
+
+    def Skip(self, celt):
+        """
   Skip(self: UCOMIEnumVARIANT,celt: int) -> int
 
   
@@ -55,7 +59,8 @@ class UCOMIEnumVARIANT:
 
    Returns: S_OK if the number of elements skipped equals celt parameter; otherwise,S_FALSE.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

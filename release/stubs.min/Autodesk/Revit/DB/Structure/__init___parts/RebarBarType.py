@@ -1,18 +1,20 @@
-class RebarBarType(ElementType,IDisposable):
- """ A Rebar type object that is used in the generation of Rebar """
- @staticmethod
- def Create(ADoc):
-  """
+class RebarBarType(ElementType, IDisposable):
+    """ A Rebar type object that is used in the generation of Rebar """
+
+    @staticmethod
+    def Create(ADoc):
+        """
   Create(ADoc: Document) -> RebarBarType
 
   
 
    Creates a new RebarBarType object
   """
-  pass
- @staticmethod
- def CreateDefaultRebarBarType(ADoc):
-  """
+        pass
+
+    @staticmethod
+    def CreateDefaultRebarBarType(ADoc):
+        """
   CreateDefaultRebarBarType(ADoc: Document) -> ElementId
 
   
@@ -25,12 +27,14 @@ class RebarBarType(ElementType,IDisposable):
 
    Returns: The newly created type id.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def GetAutoCalcHookLengths(self,hookId):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def GetAutoCalcHookLengths(self, hookId):
+        """
   GetAutoCalcHookLengths(self: RebarBarType,hookId: ElementId) -> bool
 
   
@@ -47,12 +51,14 @@ class RebarBarType(ElementType,IDisposable):
 
    Returns: True if the hook lengths are automatically calculated,otherwise false
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetHookLength(self,hookId):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetHookLength(self, hookId):
+        """
   GetHookLength(self: RebarBarType,hookId: ElementId) -> float
 
   
@@ -65,9 +71,10 @@ class RebarBarType(ElementType,IDisposable):
 
    Returns: The hook length for a hook type
   """
-  pass
- def GetHookOffsetLength(self,hookId):
-  """
+        pass
+
+    def GetHookOffsetLength(self, hookId):
+        """
   GetHookOffsetLength(self: RebarBarType,hookId: ElementId) -> float
 
   
@@ -80,9 +87,10 @@ class RebarBarType(ElementType,IDisposable):
 
    Returns: The hook offset length for a hook type
   """
-  pass
- def GetHookPermission(self,hookId):
-  """
+        pass
+
+    def GetHookPermission(self, hookId):
+        """
   GetHookPermission(self: RebarBarType,hookId: ElementId) -> bool
 
   
@@ -95,9 +103,10 @@ class RebarBarType(ElementType,IDisposable):
 
    Returns: True if the hook type is permitted for this bar type,otherwise false
   """
-  pass
- def GetHookTangentLength(self,hookId):
-  """
+        pass
+
+    def GetHookTangentLength(self, hookId):
+        """
   GetHookTangentLength(self: RebarBarType,hookId: ElementId) -> float
 
   
@@ -110,9 +119,10 @@ class RebarBarType(ElementType,IDisposable):
 
    Returns: The hook tangent length for a hook type
   """
-  pass
- def GetReinforcementRoundingManager(self):
-  """
+        pass
+
+    def GetReinforcementRoundingManager(self):
+        """
   GetReinforcementRoundingManager(self: RebarBarType) -> RebarRoundingManager
 
   
@@ -121,12 +131,14 @@ class RebarBarType(ElementType,IDisposable):
 
    Returns: The rounding manager.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def SetAutoCalcHookLengths(self,hookId,autoCalculated):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def SetAutoCalcHookLengths(self, hookId, autoCalculated):
+        """
   SetAutoCalcHookLengths(self: RebarBarType,hookId: ElementId,autoCalculated: bool)
 
    Identifies if the hook lengths of a hook type are automatically calculated for 
@@ -147,12 +159,14 @@ class RebarBarType(ElementType,IDisposable):
 
     reported
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetHookLength(self,hookId,hookLength):
-  """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetHookLength(self, hookId, hookLength):
+        """
   SetHookLength(self: RebarBarType,hookId: ElementId,hookLength: float)
 
    Identifies the hook length for a hook type
@@ -163,9 +177,10 @@ class RebarBarType(ElementType,IDisposable):
 
    hookLength: The hook length for a hook type
   """
-  pass
- def SetHookOffsetLength(self,hookId,newLength):
-  """
+        pass
+
+    def SetHookOffsetLength(self, hookId, newLength):
+        """
   SetHookOffsetLength(self: RebarBarType,hookId: ElementId,newLength: float)
 
    Identifies the hook offset length for a hook type
@@ -176,9 +191,10 @@ class RebarBarType(ElementType,IDisposable):
 
    newLength: The hook offset length for a hook type
   """
-  pass
- def SetHookPermission(self,hookId,permission):
-  """
+        pass
+
+    def SetHookPermission(self, hookId, permission):
+        """
   SetHookPermission(self: RebarBarType,hookId: ElementId,permission: bool)
 
    Identifies if a hook type is permitted for this bar type
@@ -189,9 +205,10 @@ class RebarBarType(ElementType,IDisposable):
 
    permission: True if the hook type should be permitted for this bar type,otherwise false
   """
-  pass
- def SetHookTangentLength(self,hookId,newLength):
-  """
+        pass
+
+    def SetHookTangentLength(self, hookId, newLength):
+        """
   SetHookTangentLength(self: RebarBarType,hookId: ElementId,newLength: float)
 
    Identifies the hook tangent length for a hook type
@@ -202,18 +219,24 @@ class RebarBarType(ElementType,IDisposable):
 
    newLength: The hook tangent length for a hook type
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- BarDiameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Defines bar diameter of rebar
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    BarDiameter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Defines bar diameter of rebar
 
 
 
@@ -225,8 +248,10 @@ Set: BarDiameter(self: RebarBarType)=value
 
 """
 
- DeformationType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Defines bar deformation type.
+    DeformationType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Defines bar deformation type.
 
 
 
@@ -238,8 +263,10 @@ Set: DeformationType(self: RebarBarType)=value
 
 """
 
- MaximumBendRadius=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Defines maximum bend radius of rebar
+    MaximumBendRadius = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Defines maximum bend radius of rebar
 
 
 
@@ -251,8 +278,10 @@ Set: MaximumBendRadius(self: RebarBarType)=value
 
 """
 
- StandardBendDiameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Defines bar bend diameter for rebar whose style is standard
+    StandardBendDiameter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Defines bar bend diameter for rebar whose style is standard
 
 
 
@@ -264,8 +293,10 @@ Set: StandardBendDiameter(self: RebarBarType)=value
 
 """
 
- StandardHookBendDiameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Defines hook bend diameter for rebar whose style is standard
+    StandardHookBendDiameter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Defines hook bend diameter for rebar whose style is standard
 
 
 
@@ -277,8 +308,10 @@ Set: StandardHookBendDiameter(self: RebarBarType)=value
 
 """
 
- StirrupTieBendDiameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Defines bar and hook bend diameter for rebar whose style is stirrup/tie
+    StirrupTieBendDiameter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Defines bar and hook bend diameter for rebar whose style is stirrup/tie
 
 
 
@@ -289,5 +322,3 @@ Get: StirrupTieBendDiameter(self: RebarBarType) -> float
 Set: StirrupTieBendDiameter(self: RebarBarType)=value
 
 """
-
-

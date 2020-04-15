@@ -1,7 +1,8 @@
-class FamilyType(APIObject,IDisposable):
- """ The family type object provides read access to the values of family parameters for this type. """
- def AsDouble(self,familyParameter):
-  """
+class FamilyType(APIObject, IDisposable):
+    """ The family type object provides read access to the values of family parameters for this type. """
+
+    def AsDouble(self, familyParameter):
+        """
   AsDouble(self: FamilyType,familyParameter: FamilyParameter) -> Nullable[float]
 
   
@@ -14,9 +15,10 @@ class FamilyType(APIObject,IDisposable):
 
     the input argument is not double type or this parameter has no value.
   """
-  pass
- def AsElementId(self,familyParameter):
-  """
+        pass
+
+    def AsElementId(self, familyParameter):
+        """
   AsElementId(self: FamilyType,familyParameter: FamilyParameter) -> ElementId
 
   
@@ -35,9 +37,10 @@ class FamilyType(APIObject,IDisposable):
 
     Autodesk::Revit::DB::ElementId^ type or this parameter has no value.
   """
-  pass
- def AsInteger(self,familyParameter):
-  """
+        pass
+
+    def AsInteger(self, familyParameter):
+        """
   AsInteger(self: FamilyType,familyParameter: FamilyParameter) -> Nullable[int]
 
   
@@ -50,9 +53,10 @@ class FamilyType(APIObject,IDisposable):
 
     of the input argument is not integer type or this parameter has no value.
   """
-  pass
- def AsString(self,familyParameter):
-  """
+        pass
+
+    def AsString(self, familyParameter):
+        """
   AsString(self: FamilyType,familyParameter: FamilyParameter) -> str
 
   
@@ -65,9 +69,10 @@ class FamilyType(APIObject,IDisposable):
 
   argument is not string type or this parameter has no value.
   """
-  pass
- def AsValueString(self,familyParameter):
-  """
+        pass
+
+    def AsValueString(self, familyParameter):
+        """
   AsValueString(self: FamilyType,familyParameter: FamilyParameter) -> str
 
   
@@ -76,36 +81,44 @@ class FamilyType(APIObject,IDisposable):
 
    Returns: The string that represents the parameter value with unit.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: APIObject,A_0: bool) """
-  pass
- def HasValue(self,familyParameter):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: APIObject,A_0: bool) """
+        pass
+
+    def HasValue(self, familyParameter):
+        """
   HasValue(self: FamilyType,familyParameter: FamilyParameter) -> bool
 
   
 
    Indicates if this family parameter has an assigned value or not.
   """
-  pass
- def ReleaseManagedResources(self,*args):
-  """ ReleaseManagedResources(self: APIObject) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: APIObject) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The name of the family type.
+        pass
+
+    def ReleaseManagedResources(self, *args):
+        """ ReleaseManagedResources(self: APIObject) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: APIObject) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The name of the family type.
 
 
 
@@ -114,5 +127,3 @@ Get: Name(self: FamilyType) -> str
 
 
 """
-
-

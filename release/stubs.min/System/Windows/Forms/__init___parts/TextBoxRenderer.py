@@ -1,8 +1,9 @@
 class TextBoxRenderer(object):
- """ Provides methods used to render a text box control with visual styles. This class cannot be inherited. """
- @staticmethod
- def DrawTextBox(g,bounds,*__args):
-  """
+    """ Provides methods used to render a text box control with visual styles. This class cannot be inherited. """
+
+    @staticmethod
+    def DrawTextBox(g, bounds, *__args):
+        """
   DrawTextBox(g: Graphics,bounds: Rectangle,textBoxText: str,font: Font,flags: TextFormatFlags,state: TextBoxState)
 
    Draws a text box control in the specified state and bounds,and with the specified text and text 
@@ -117,6 +118,6 @@ class TextBoxRenderer(object):
 
     of the text box.
   """
-  pass
- IsSupported=True
+        pass
 
+    IsSupported = True

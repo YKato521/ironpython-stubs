@@ -1,7 +1,8 @@
 class IDockablePaneProvider:
- """ Interface that the Revit UI will call during initialization of the user interface to gather information about add-in dockable pane windows. """
- def SetupDockablePane(self,data):
-  """
+    """ Interface that the Revit UI will call during initialization of the user interface to gather information about add-in dockable pane windows. """
+
+    def SetupDockablePane(self, data):
+        """
   SetupDockablePane(self: IDockablePaneProvider,data: DockablePaneProviderData)
 
    Method called during initialization of the user interface to gather information 
@@ -28,7 +29,8 @@ class IDockablePaneProvider:
 
     property by setting it here.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

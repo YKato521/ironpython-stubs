@@ -1,10 +1,12 @@
 class IExternalResourceServer(IExternalServer):
- """ The interface used to provide custom implementation to provide access to external resources (such as linked files) from arbitrary locations. """
- def AreSameResources(self,reference1,reference2):
-  """ AreSameResources(self: IExternalResourceServer,reference1: IDictionary[str,str],reference2: IDictionary[str,str]) -> bool """
-  pass
- def GetIconPath(self):
-  """
+    """ The interface used to provide custom implementation to provide access to external resources (such as linked files) from arbitrary locations. """
+
+    def AreSameResources(self, reference1, reference2):
+        """ AreSameResources(self: IExternalResourceServer,reference1: IDictionary[str,str],reference2: IDictionary[str,str]) -> bool """
+        pass
+
+    def GetIconPath(self):
+        """
   GetIconPath(self: IExternalResourceServer) -> str
 
   
@@ -19,9 +21,10 @@ class IExternalResourceServer(IExternalServer):
 
    Returns: The image file of the server.
   """
-  pass
- def GetInformationLink(self):
-  """
+        pass
+
+    def GetInformationLink(self):
+        """
   GetInformationLink(self: IExternalResourceServer) -> str
 
   
@@ -34,9 +37,10 @@ class IExternalResourceServer(IExternalServer):
 
    Returns: The URL providing server information.
   """
-  pass
- def GetInSessionPath(self,reference,originalDisplayPath):
-  """
+        pass
+
+    def GetInSessionPath(self, reference, originalDisplayPath):
+        """
   GetInSessionPath(self: IExternalResourceServer,reference: ExternalResourceReference,originalDisplayPath: str) -> str
 
   
@@ -67,9 +71,10 @@ class IExternalResourceServer(IExternalServer):
 
     Revit.
   """
-  pass
- def GetResourceVersionStatus(self,reference):
-  """
+        pass
+
+    def GetResourceVersionStatus(self, reference):
+        """
   GetResourceVersionStatus(self: IExternalResourceServer,reference: ExternalResourceReference) -> ResourceVersionStatus
 
   
@@ -90,9 +95,10 @@ class IExternalResourceServer(IExternalServer):
 
     status.
   """
-  pass
- def GetShortName(self):
-  """
+        pass
+
+    def GetShortName(self):
+        """
   GetShortName(self: IExternalResourceServer) -> str
 
   
@@ -101,9 +107,10 @@ class IExternalResourceServer(IExternalServer):
 
    Returns: The short name of the server.
   """
-  pass
- def GetTypeSpecificServerOperations(self,extensions):
-  """
+        pass
+
+    def GetTypeSpecificServerOperations(self, extensions):
+        """
   GetTypeSpecificServerOperations(self: IExternalResourceServer,extensions: ExternalResourceServerExtensions)
 
    Implement this method to get operations supported by the external server for a 
@@ -118,9 +125,10 @@ class IExternalResourceServer(IExternalServer):
 
     to a particular type of external resource.
   """
-  pass
- def IsResourceWellFormed(self,extRef):
-  """
+        pass
+
+    def IsResourceWellFormed(self, extRef):
+        """
   IsResourceWellFormed(self: IExternalResourceServer,extRef: ExternalResourceReference) -> bool
 
   
@@ -143,9 +151,12 @@ class IExternalResourceServer(IExternalServer):
 
     False otherwise.
   """
-  pass
- def LoadResource(self,loadRequestId,resourceType,desiredResource,loadContext,loadResults):
-  """
+        pass
+
+    def LoadResource(
+        self, loadRequestId, resourceType, desiredResource, loadContext, loadResults
+    ):
+        """
   LoadResource(self: IExternalResourceServer,loadRequestId: Guid,resourceType: ExternalResourceType,desiredResource: ExternalResourceReference,loadContext: ExternalResourceLoadContext,loadResults: ExternalResourceLoadContent)
 
    Implement this method to load the requested resource.
@@ -168,9 +179,10 @@ class IExternalResourceServer(IExternalServer):
 
     ExternalResourceLoadContent for the type of data.
   """
-  pass
- def SetupBrowserData(self,browseData):
-  """
+        pass
+
+    def SetupBrowserData(self, browseData):
+        """
   SetupBrowserData(self: IExternalResourceServer,browseData: ExternalResourceBrowserData)
 
    Implement this method to setup external resource browser data which will be 
@@ -185,9 +197,10 @@ class IExternalResourceServer(IExternalServer):
 
     by the server.
   """
-  pass
- def SupportsExternalResourceType(self,type):
-  """
+        pass
+
+    def SupportsExternalResourceType(self, type):
+        """
   SupportsExternalResourceType(self: IExternalResourceServer,type: ExternalResourceType) -> bool
 
   
@@ -210,7 +223,8 @@ class IExternalResourceServer(IExternalServer):
 
    Returns: True if the server supports the specified type of external resource
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

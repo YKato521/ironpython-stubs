@@ -1,7 +1,8 @@
-class StringKeyFrame(Freezable,ISealable,IKeyFrame):
- """ Defines an animation segment with its own target value and interpolation method for a System.Windows.Media.Animation.StringAnimationUsingKeyFrames. """
- def CloneCore(self,*args):
-  """
+class StringKeyFrame(Freezable, ISealable, IKeyFrame):
+    """ Defines an animation segment with its own target value and interpolation method for a System.Windows.Media.Animation.StringAnimationUsingKeyFrames. """
+
+    def CloneCore(self, *args):
+        """
   CloneCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a clone (deep copy) of the specified System.Windows.Freezable using base 
@@ -14,9 +15,10 @@ class StringKeyFrame(Freezable,ISealable,IKeyFrame):
 
    sourceFreezable: The object to clone.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """
   CloneCurrentValueCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a modifiable clone (deep copy) of the specified System.Windows.Freezable 
@@ -29,9 +31,10 @@ class StringKeyFrame(Freezable,ISealable,IKeyFrame):
 
    sourceFreezable: The System.Windows.Freezable to be cloned.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -40,9 +43,10 @@ class StringKeyFrame(Freezable,ISealable,IKeyFrame):
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """
   CreateInstanceCore(self: Freezable) -> Freezable
 
   
@@ -55,9 +59,10 @@ class StringKeyFrame(Freezable,ISealable,IKeyFrame):
 
    Returns: The new instance.
   """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: Freezable,isChecking: bool) -> bool
 
   
@@ -84,9 +89,10 @@ class StringKeyFrame(Freezable,ISealable,IKeyFrame):
 
     it cannot be made unmodifiable.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """
   GetAsFrozenCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a frozen clone of the specified System.Windows.Freezable using base 
@@ -99,9 +105,10 @@ class StringKeyFrame(Freezable,ISealable,IKeyFrame):
 
    sourceFreezable: The instance to copy.
   """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """
   GetCurrentValueAsFrozenCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the current instance a frozen clone of the specified System.Windows.Freezable. If the 
@@ -114,9 +121,10 @@ class StringKeyFrame(Freezable,ISealable,IKeyFrame):
 
    sourceFreezable: The System.Windows.Freezable to copy and freeze.
   """
-  pass
- def InterpolateValue(self,baseValue,keyFrameProgress):
-  """
+        pass
+
+    def InterpolateValue(self, baseValue, keyFrameProgress):
+        """
   InterpolateValue(self: StringKeyFrame,baseValue: str,keyFrameProgress: float) -> str
 
   
@@ -135,9 +143,10 @@ class StringKeyFrame(Freezable,ISealable,IKeyFrame):
 
    Returns: The output value of this key frame given the specified base value and progress.
   """
-  pass
- def InterpolateValueCore(self,*args):
-  """
+        pass
+
+    def InterpolateValueCore(self, *args):
+        """
   InterpolateValueCore(self: StringKeyFrame,baseValue: str,keyFrameProgress: float) -> str
 
   
@@ -160,16 +169,18 @@ class StringKeyFrame(Freezable,ISealable,IKeyFrame):
 
    Returns: The output value of this key frame given the specified base value and progress.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: Freezable)
 
    Called when the current System.Windows.Freezable object is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -200,9 +211,10 @@ class StringKeyFrame(Freezable,ISealable,IKeyFrame):
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -219,9 +231,10 @@ class StringKeyFrame(Freezable,ISealable,IKeyFrame):
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -230,9 +243,10 @@ class StringKeyFrame(Freezable,ISealable,IKeyFrame):
 
     members that are not dependency properties.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -249,9 +263,10 @@ class StringKeyFrame(Freezable,ISealable,IKeyFrame):
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -262,9 +277,10 @@ class StringKeyFrame(Freezable,ISealable,IKeyFrame):
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -273,22 +289,25 @@ class StringKeyFrame(Freezable,ISealable,IKeyFrame):
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """
   __new__(cls: type)
 
   __new__(cls: type,value: str)
 
   __new__(cls: type,value: str,keyTime: KeyTime)
   """
-  pass
- KeyTime=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the time at which the key frame's target System.Windows.Media.Animation.StringKeyFrame.Value should be reached.
+        pass
+
+    KeyTime = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the time at which the key frame's target System.Windows.Media.Animation.StringKeyFrame.Value should be reached.
 
 
 
@@ -300,8 +319,8 @@ Set: KeyTime(self: StringKeyFrame)=value
 
 """
 
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the key frame's target value.
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the key frame's target value.
 
 
 
@@ -313,7 +332,5 @@ Set: Value(self: StringKeyFrame)=value
 
 """
 
-
- KeyTimeProperty=None
- ValueProperty=None
-
+    KeyTimeProperty = None
+    ValueProperty = None

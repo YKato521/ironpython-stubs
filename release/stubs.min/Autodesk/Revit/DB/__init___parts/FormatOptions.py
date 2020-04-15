@@ -1,5 +1,5 @@
-class FormatOptions(object,IDisposable):
- """
+class FormatOptions(object, IDisposable):
+    """
  Options for formatting numbers with units.
 
  
@@ -16,8 +16,9 @@ class FormatOptions(object,IDisposable):
 
  FormatOptions()
  """
- def CanHaveUnitSymbol(self,displayUnit=None):
-  """
+
+    def CanHaveUnitSymbol(self, displayUnit=None):
+        """
   CanHaveUnitSymbol(displayUnit: DisplayUnitType) -> bool
 
   
@@ -42,9 +43,10 @@ class FormatOptions(object,IDisposable):
 
    Returns: True if a unit symbol can be specified,false otherwise.
   """
-  pass
- def CanSuppressLeadingZeros(self,displayUnit=None):
-  """
+        pass
+
+    def CanSuppressLeadingZeros(self, displayUnit=None):
+        """
   CanSuppressLeadingZeros(displayUnit: DisplayUnitType) -> bool
 
   
@@ -69,9 +71,10 @@ class FormatOptions(object,IDisposable):
 
    Returns: True if leading zeros can be suppressed,false otherwise.
   """
-  pass
- def CanSuppressSpaces(self,displayUnit=None):
-  """
+        pass
+
+    def CanSuppressSpaces(self, displayUnit=None):
+        """
   CanSuppressSpaces(displayUnit: DisplayUnitType) -> bool
 
   
@@ -96,9 +99,10 @@ class FormatOptions(object,IDisposable):
 
    Returns: True if spaces can be suppressed,false otherwise.
   """
-  pass
- def CanSuppressTrailingZeros(self,displayUnit=None):
-  """
+        pass
+
+    def CanSuppressTrailingZeros(self, displayUnit=None):
+        """
   CanSuppressTrailingZeros(displayUnit: DisplayUnitType) -> bool
 
   
@@ -123,9 +127,10 @@ class FormatOptions(object,IDisposable):
 
    Returns: True if trailing zeros can be suppressed,false otherwise.
   """
-  pass
- def CanUsePlusPrefix(self,displayUnit=None):
-  """
+        pass
+
+    def CanUsePlusPrefix(self, displayUnit=None):
+        """
   CanUsePlusPrefix(displayUnit: DisplayUnitType) -> bool
 
   
@@ -150,12 +155,14 @@ class FormatOptions(object,IDisposable):
 
    Returns: True if a plus prefix can be displayed,false otherwise.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: FormatOptions) """
-  pass
- def GetValidUnitSymbols(self,displayUnit=None):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: FormatOptions) """
+        pass
+
+    def GetValidUnitSymbols(self, displayUnit=None):
+        """
   GetValidUnitSymbols(displayUnit: DisplayUnitType) -> IList[UnitSymbolType]
 
   
@@ -176,9 +183,10 @@ class FormatOptions(object,IDisposable):
 
    Returns: The valid unit symbols.
   """
-  pass
- def IsValidAccuracy(self,*__args):
-  """
+        pass
+
+    def IsValidAccuracy(self, *__args):
+        """
   IsValidAccuracy(displayUnit: DisplayUnitType,accuracy: float) -> bool
 
   
@@ -205,9 +213,10 @@ class FormatOptions(object,IDisposable):
 
    Returns: True if the accuracy is valid,false otherwise.
   """
-  pass
- def IsValidForUnitType(self,unitType):
-  """
+        pass
+
+    def IsValidForUnitType(self, unitType):
+        """
   IsValidForUnitType(self: FormatOptions,unitType: UnitType) -> bool
 
   
@@ -220,9 +229,10 @@ class FormatOptions(object,IDisposable):
 
    Returns: True if the FormatOptions is valid,false otherwise.
   """
-  pass
- def IsValidUnitSymbol(self,*__args):
-  """
+        pass
+
+    def IsValidUnitSymbol(self, *__args):
+        """
   IsValidUnitSymbol(displayUnit: DisplayUnitType,unitSymbol: UnitSymbolType) -> bool
 
   
@@ -253,22 +263,27 @@ class FormatOptions(object,IDisposable):
 
    Returns: True if the unit symbol is valid,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: FormatOptions,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: FormatOptions,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,other: FormatOptions)
 
   __new__(cls: type,displayUnit: DisplayUnitType,unitSymbol: UnitSymbolType,accuracy: float)
@@ -281,12 +296,14 @@ class FormatOptions(object,IDisposable):
 
   __new__(cls: type)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Accuracy=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The accuracy to which values will be rounded.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Accuracy = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The accuracy to which values will be rounded.
 
 
 
@@ -298,8 +315,10 @@ Set: Accuracy(self: FormatOptions)=value
 
 """
 
- DisplayUnits=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The units and display format used to format values.
+    DisplayUnits = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The units and display format used to format values.
 
 
 
@@ -311,8 +330,10 @@ Set: DisplayUnits(self: FormatOptions)=value
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -322,8 +343,10 @@ Get: IsValidObject(self: FormatOptions) -> bool
 
 """
 
- RoundingMethod=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The method used to round values: round to nearest,round up,or round down.
+    RoundingMethod = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The method used to round values: round to nearest,round up,or round down.
 
 
 
@@ -335,8 +358,10 @@ Set: RoundingMethod(self: FormatOptions)=value
 
 """
 
- SuppressLeadingZeros=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if leading zeros should be suppressed in feet and fractional inches.
+    SuppressLeadingZeros = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if leading zeros should be suppressed in feet and fractional inches.
 
 
 
@@ -348,8 +373,10 @@ Set: SuppressLeadingZeros(self: FormatOptions)=value
 
 """
 
- SuppressSpaces=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if spaces around the dash should be suppressed in feet and fractional inches.
+    SuppressSpaces = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if spaces around the dash should be suppressed in feet and fractional inches.
 
 
 
@@ -361,8 +388,10 @@ Set: SuppressSpaces(self: FormatOptions)=value
 
 """
 
- SuppressTrailingZeros=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if trailing zeros after the decimal point should be
+    SuppressTrailingZeros = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if trailing zeros after the decimal point should be
 
    suppressed.
 
@@ -376,8 +405,10 @@ Set: SuppressTrailingZeros(self: FormatOptions)=value
 
 """
 
- UnitSymbol=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The unit symbol that should be displayed to indicate the units of the value.
+    UnitSymbol = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The unit symbol that should be displayed to indicate the units of the value.
 
 
 
@@ -389,8 +420,10 @@ Set: UnitSymbol(self: FormatOptions)=value
 
 """
 
- UseDefault=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether default or custom formatting should be used.
+    UseDefault = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates whether default or custom formatting should be used.
 
 
 
@@ -402,8 +435,10 @@ Set: UseDefault(self: FormatOptions)=value
 
 """
 
- UseDigitGrouping=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if digit grouping symbols should be displayed.
+    UseDigitGrouping = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if digit grouping symbols should be displayed.
 
 
 
@@ -415,8 +450,10 @@ Set: UseDigitGrouping(self: FormatOptions)=value
 
 """
 
- UsePlusPrefix=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if a plus sign prefix should be displayed for positive and zero values.
+    UsePlusPrefix = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if a plus sign prefix should be displayed for positive and zero values.
 
 
 
@@ -427,5 +464,3 @@ Get: UsePlusPrefix(self: FormatOptions) -> bool
 Set: UsePlusPrefix(self: FormatOptions)=value
 
 """
-
-

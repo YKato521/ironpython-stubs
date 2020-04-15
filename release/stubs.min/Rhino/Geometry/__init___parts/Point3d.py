@@ -1,5 +1,12 @@
-class Point3d(object,ISerializable,IEquatable[Point3d],IComparable[Point3d],IComparable,IEpsilonComparable[Point3d]):
- """
+class Point3d(
+    object,
+    ISerializable,
+    IEquatable[Point3d],
+    IComparable[Point3d],
+    IComparable,
+    IEpsilonComparable[Point3d],
+):
+    """
  Represents the three coordinates of a point in three-dimensional space,
 
     using System.Double-precision floating point values.
@@ -16,9 +23,10 @@ class Point3d(object,ISerializable,IEquatable[Point3d],IComparable[Point3d],ICom
 
  Point3d(point: Point4d)
  """
- @staticmethod
- def Add(*__args):
-  """
+
+    @staticmethod
+    def Add(*__args):
+        """
   Add(point: Point3d,vector: Vector3f) -> Point3d
 
   
@@ -99,13 +107,15 @@ class Point3d(object,ISerializable,IEquatable[Point3d],IComparable[Point3d],ICom
 
    Returns: A new point that results from the addition of point and vector.
   """
-  pass
- @staticmethod
- def ArePointsCoplanar(points,tolerance):
-  """ ArePointsCoplanar(points: IEnumerable[Point3d],tolerance: float) -> bool """
-  pass
- def CompareTo(self,other):
-  """
+        pass
+
+    @staticmethod
+    def ArePointsCoplanar(points, tolerance):
+        """ ArePointsCoplanar(points: IEnumerable[Point3d],tolerance: float) -> bool """
+        pass
+
+    def CompareTo(self, other):
+        """
   CompareTo(self: Point3d,other: Point3d) -> int
 
   
@@ -126,13 +136,15 @@ class Point3d(object,ISerializable,IEquatable[Point3d],IComparable[Point3d],ICom
 
     other.Y-1: if this.X == other.X and this.Y == other.Y and this.Z < other.Z+1: otherwise.
   """
-  pass
- @staticmethod
- def CullDuplicates(points,tolerance):
-  """ CullDuplicates(points: IEnumerable[Point3d],tolerance: float) -> Array[Point3d] """
-  pass
- def DistanceTo(self,other):
-  """
+        pass
+
+    @staticmethod
+    def CullDuplicates(points, tolerance):
+        """ CullDuplicates(points: IEnumerable[Point3d],tolerance: float) -> Array[Point3d] """
+        pass
+
+    def DistanceTo(self, other):
+        """
   DistanceTo(self: Point3d,other: Point3d) -> float
 
   
@@ -145,10 +157,11 @@ class Point3d(object,ISerializable,IEquatable[Point3d],IComparable[Point3d],ICom
 
    Returns: The length of the line between this and the other point; or 0 if any of the points is not valid.
   """
-  pass
- @staticmethod
- def Divide(point,t):
-  """
+        pass
+
+    @staticmethod
+    def Divide(point, t):
+        """
   Divide(point: Point3d,t: float) -> Point3d
 
   
@@ -169,18 +182,20 @@ class Point3d(object,ISerializable,IEquatable[Point3d],IComparable[Point3d],ICom
 
    Returns: A new point that is coordinatewise divided by t.
   """
-  pass
- def EpsilonEquals(self,other,epsilon):
-  """
+        pass
+
+    def EpsilonEquals(self, other, epsilon):
+        """
   EpsilonEquals(self: Point3d,other: Point3d,epsilon: float) -> bool
 
   
 
    Check that all values in other are within epsilon of the values in this
   """
-  pass
- def Equals(self,*__args):
-  """
+        pass
+
+    def Equals(self, *__args):
+        """
   Equals(self: Point3d,point: Point3d) -> bool
 
   
@@ -209,9 +224,10 @@ class Point3d(object,ISerializable,IEquatable[Point3d],IComparable[Point3d],ICom
 
    Returns: true if obj is a Point3d and has the same coordinates as this; otherwise false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Point3d) -> int
 
   
@@ -220,9 +236,10 @@ class Point3d(object,ISerializable,IEquatable[Point3d],IComparable[Point3d],ICom
 
    Returns: A non-unique integer that represents this point.
   """
-  pass
- def Interpolate(self,pA,pB,t):
-  """
+        pass
+
+    def Interpolate(self, pA, pB, t):
+        """
   Interpolate(self: Point3d,pA: Point3d,pB: Point3d,t: float)
 
    Interpolate between two points.
@@ -245,10 +262,11 @@ class Point3d(object,ISerializable,IEquatable[Point3d],IComparable[Point3d],ICom
 
     between pA and pB.
   """
-  pass
- @staticmethod
- def Multiply(*__args):
-  """
+        pass
+
+    @staticmethod
+    def Multiply(*__args):
+        """
   Multiply(t: float,point: Point3d) -> Point3d
 
   
@@ -289,14 +307,16 @@ class Point3d(object,ISerializable,IEquatable[Point3d],IComparable[Point3d],ICom
 
    Returns: A new point that is coordinatewise multiplied by t.
   """
-  pass
- @staticmethod
- def SortAndCullPointList(points,minimumDistance):
-  """ SortAndCullPointList(points: IEnumerable[Point3d],minimumDistance: float) -> Array[Point3d] """
-  pass
- @staticmethod
- def Subtract(*__args):
-  """
+        pass
+
+    @staticmethod
+    def SortAndCullPointList(points, minimumDistance):
+        """ SortAndCullPointList(points: IEnumerable[Point3d],minimumDistance: float) -> Array[Point3d] """
+        pass
+
+    @staticmethod
+    def Subtract(*__args):
+        """
   Subtract(point1: Point3d,point2: Point3d) -> Vector3d
 
   
@@ -337,9 +357,10 @@ class Point3d(object,ISerializable,IEquatable[Point3d],IComparable[Point3d],ICom
 
    Returns: A new point that is the difference of point minus vector.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: Point3d) -> str
 
   
@@ -348,9 +369,10 @@ class Point3d(object,ISerializable,IEquatable[Point3d],IComparable[Point3d],ICom
 
    Returns: The point representation in the form X,Y,Z.
   """
-  pass
- def Transform(self,xform):
-  """
+        pass
+
+    def Transform(self, xform):
+        """
   Transform(self: Point3d,xform: Transform)
 
    Transforms the present point in place. The transformation matrix acts on the left of the point. 
@@ -365,39 +387,51 @@ class Point3d(object,ISerializable,IEquatable[Point3d],IComparable[Point3d],ICom
 
    xform: Transformation to apply.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __div__(self,*args):
-  """ x.__div__(y) <==> x/y """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __mul__(self,*args):
-  """ x.__mul__(y) <==> x*y """
-  pass
- def __neg__(self,*args):
-  """ x.__neg__() <==> -x """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __div__(self, *args):
+        """ x.__div__(y) <==> x/y """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __mul__(self, *args):
+        """ x.__mul__(y) <==> x*y """
+        pass
+
+    def __neg__(self, *args):
+        """ x.__neg__() <==> -x """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__[Point3d]() -> Point3d
 
   
@@ -412,11 +446,13 @@ class Point3d(object,ISerializable,IEquatable[Point3d],IComparable[Point3d],ICom
 
   __new__(cls: type,point: Point4d)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __radd__(self,*args):
-  """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __radd__(self, *args):
+        """
   __radd__(vector: Vector3d,point: Point3d) -> Point3d
 
   
@@ -445,14 +481,17 @@ class Point3d(object,ISerializable,IEquatable[Point3d],IComparable[Point3d],ICom
 
    Returns: A new point that results from the addition of point1 and point2.
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __rmul__(self,*args):
-  """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __rmul__(self, *args):
+        """
   __rmul__(t: float,point: Point3d) -> Point3d
 
   
@@ -467,9 +506,10 @@ class Point3d(object,ISerializable,IEquatable[Point3d],IComparable[Point3d],ICom
 
    Returns: A new point that is coordinatewise multiplied by t.
   """
-  pass
- def __rsub__(self,*args):
-  """
+        pass
+
+    def __rsub__(self, *args):
+        """
   __rsub__(point1: Point3d,point2: Point3d) -> Vector3d
 
   
@@ -484,17 +524,21 @@ class Point3d(object,ISerializable,IEquatable[Point3d],IComparable[Point3d],ICom
 
    Returns: A new vector that is the difference of point minus vector.
   """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- def __str__(self,*args):
-  pass
- def __sub__(self,*args):
-  """ x.__sub__(y) <==> x-yx.__sub__(y) <==> x-y """
-  pass
- IsValid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Each coordinate of the point must pass the Rhino.RhinoMath.IsValidDouble(System.Double) test.
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    def __sub__(self, *args):
+        """ x.__sub__(y) <==> x-yx.__sub__(y) <==> x-y """
+        pass
+
+    IsValid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Each coordinate of the point must pass the Rhino.RhinoMath.IsValidDouble(System.Double) test.
 
 
 
@@ -504,8 +548,10 @@ Get: IsValid(self: Point3d) -> bool
 
 """
 
- MaximumCoordinate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the largest (both positive and negative) valid coordinate in this point,
+    MaximumCoordinate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the largest (both positive and negative) valid coordinate in this point,
 
    or RhinoMath.UnsetValue if no coordinate is valid.
 
@@ -517,8 +563,10 @@ Get: MaximumCoordinate(self: Point3d) -> float
 
 """
 
- MinimumCoordinate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the smallest (both positive and negative) coordinate value in this point.
+    MinimumCoordinate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the smallest (both positive and negative) coordinate value in this point.
 
 
 
@@ -528,8 +576,8 @@ Get: MinimumCoordinate(self: Point3d) -> float
 
 """
 
- X=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the X (first) coordinate of this point.
+    X = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the X (first) coordinate of this point.
 
 
 
@@ -541,8 +589,8 @@ Set: X(self: Point3d)=value
 
 """
 
- Y=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Y (second) coordinate of this point.
+    Y = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Y (second) coordinate of this point.
 
 
 
@@ -554,8 +602,8 @@ Set: Y(self: Point3d)=value
 
 """
 
- Z=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Z (third) coordinate of this point.
+    Z = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Z (third) coordinate of this point.
 
 
 
@@ -567,7 +615,5 @@ Set: Z(self: Point3d)=value
 
 """
 
-
- Origin=None
- Unset=None
-
+    Origin = None
+    Unset = None

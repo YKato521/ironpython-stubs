@@ -8,10 +8,12 @@
 # no functions
 # classes
 
-class Encoding(object,ICloneable):
- """ Represents a character encoding. """
- def Clone(self):
-  """
+
+class Encoding(object, ICloneable):
+    """ Represents a character encoding. """
+
+    def Clone(self):
+        """
   Clone(self: Encoding) -> object
 
   
@@ -24,10 +26,11 @@ class Encoding(object,ICloneable):
 
    Returns: A copy of the current System.Text.Encoding object.
   """
-  pass
- @staticmethod
- def Convert(srcEncoding,dstEncoding,bytes,index=None,count=None):
-  """
+        pass
+
+    @staticmethod
+    def Convert(srcEncoding, dstEncoding, bytes, index=None, count=None):
+        """
   Convert(srcEncoding: Encoding,dstEncoding: Encoding,bytes: Array[Byte],index: int,count: int) -> Array[Byte]
 
   
@@ -70,9 +73,10 @@ class Encoding(object,ICloneable):
 
     dstEncoding.
   """
-  pass
- def Equals(self,value):
-  """
+        pass
+
+    def Equals(self, value):
+        """
   Equals(self: Encoding,value: object) -> bool
 
   
@@ -87,9 +91,10 @@ class Encoding(object,ICloneable):
 
     otherwise,false.
   """
-  pass
- def GetByteCount(self,*__args):
-  """
+        pass
+
+    def GetByteCount(self, *__args):
+        """
   GetByteCount(self: Encoding,chars: Array[Char],index: int,count: int) -> int
 
   
@@ -160,9 +165,10 @@ class Encoding(object,ICloneable):
 
    Returns: The number of bytes produced by encoding the specified characters.
   """
-  pass
- def GetBytes(self,*__args):
-  """
+        pass
+
+    def GetBytes(self, *__args):
+        """
   GetBytes(self: Encoding,s: str) -> Array[Byte]
 
   
@@ -287,9 +293,10 @@ class Encoding(object,ICloneable):
 
    Returns: The actual number of bytes written into bytes.
   """
-  pass
- def GetCharCount(self,bytes,*__args):
-  """
+        pass
+
+    def GetCharCount(self, bytes, *__args):
+        """
   GetCharCount(self: Encoding,bytes: Byte*,count: int) -> int
 
   
@@ -344,9 +351,10 @@ class Encoding(object,ICloneable):
 
    Returns: The number of characters produced by decoding the specified sequence of bytes.
   """
-  pass
- def GetChars(self,bytes,*__args):
-  """
+        pass
+
+    def GetChars(self, bytes, *__args):
+        """
   GetChars(self: Encoding,bytes: Array[Byte],byteIndex: int,byteCount: int,chars: Array[Char],charIndex: int) -> int
 
   
@@ -429,9 +437,10 @@ class Encoding(object,ICloneable):
 
    Returns: A character array containing the results of decoding the specified sequence of bytes.
   """
-  pass
- def GetDecoder(self):
-  """
+        pass
+
+    def GetDecoder(self):
+        """
   GetDecoder(self: Encoding) -> Decoder
 
   
@@ -444,9 +453,10 @@ class Encoding(object,ICloneable):
 
    Returns: A System.Text.Decoder that converts an encoded sequence of bytes into a sequence of characters.
   """
-  pass
- def GetEncoder(self):
-  """
+        pass
+
+    def GetEncoder(self):
+        """
   GetEncoder(self: Encoding) -> Encoder
 
   
@@ -461,10 +471,11 @@ class Encoding(object,ICloneable):
 
     bytes.
   """
-  pass
- @staticmethod
- def GetEncoding(*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetEncoding(*__args):
+        """
   GetEncoding(name: str) -> Encoding
 
   
@@ -569,10 +580,11 @@ class Encoding(object,ICloneable):
 
    Returns: The encoding that is associated with the specified code page.
   """
-  pass
- @staticmethod
- def GetEncodings():
-  """
+        pass
+
+    @staticmethod
+    def GetEncodings():
+        """
   GetEncodings() -> Array[EncodingInfo]
 
   
@@ -581,9 +593,10 @@ class Encoding(object,ICloneable):
 
    Returns: An array that contains all encodings.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Encoding) -> int
 
   
@@ -592,9 +605,10 @@ class Encoding(object,ICloneable):
 
    Returns: The hash code for the current instance.
   """
-  pass
- def GetMaxByteCount(self,charCount):
-  """
+        pass
+
+    def GetMaxByteCount(self, charCount):
+        """
   GetMaxByteCount(self: Encoding,charCount: int) -> int
 
   
@@ -611,9 +625,10 @@ class Encoding(object,ICloneable):
 
    Returns: The maximum number of bytes produced by encoding the specified number of characters.
   """
-  pass
- def GetMaxCharCount(self,byteCount):
-  """
+        pass
+
+    def GetMaxCharCount(self, byteCount):
+        """
   GetMaxCharCount(self: Encoding,byteCount: int) -> int
 
   
@@ -630,9 +645,10 @@ class Encoding(object,ICloneable):
 
    Returns: The maximum number of characters produced by decoding the specified number of bytes.
   """
-  pass
- def GetPreamble(self):
-  """
+        pass
+
+    def GetPreamble(self):
+        """
   GetPreamble(self: Encoding) -> Array[Byte]
 
   
@@ -643,9 +659,10 @@ class Encoding(object,ICloneable):
 
     of length zero,if a preamble is not required.
   """
-  pass
- def GetString(self,bytes,*__args):
-  """
+        pass
+
+    def GetString(self, bytes, *__args):
+        """
   GetString(self: Encoding,bytes: Array[Byte],index: int,count: int) -> str
 
   
@@ -684,9 +701,10 @@ class Encoding(object,ICloneable):
 
   GetString(self: Encoding,bytes: Byte*,byteCount: int) -> str
   """
-  pass
- def IsAlwaysNormalized(self,form=None):
-  """
+        pass
+
+    def IsAlwaysNormalized(self, form=None):
+        """
   IsAlwaysNormalized(self: Encoding,form: NormalizationForm) -> bool
 
   
@@ -721,36 +739,44 @@ class Encoding(object,ICloneable):
 
     false.
   """
-  pass
- @staticmethod
- def RegisterProvider(provider):
-  """ RegisterProvider(provider: EncodingProvider) """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """
+        pass
+
+    @staticmethod
+    def RegisterProvider(provider):
+        """ RegisterProvider(provider: EncodingProvider) """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """
   __new__(cls: type)
 
   __new__(cls: type,codePage: int)
 
   __new__(cls: type,codePage: int,encoderFallback: EncoderFallback,decoderFallback: DecoderFallback)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- BodyName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets a name for the current encoding that can be used with mail agent body tags.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    BodyName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """When overridden in a derived class,gets a name for the current encoding that can be used with mail agent body tags.
 
 
 
@@ -760,8 +786,8 @@ Get: BodyName(self: Encoding) -> str
 
 """
 
- CodePage=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets the code page identifier of the current System.Text.Encoding.
+    CodePage = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """When overridden in a derived class,gets the code page identifier of the current System.Text.Encoding.
 
 
 
@@ -771,8 +797,10 @@ Get: CodePage(self: Encoding) -> int
 
 """
 
- DecoderFallback=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Text.DecoderFallback object for the current System.Text.Encoding object.
+    DecoderFallback = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Text.DecoderFallback object for the current System.Text.Encoding object.
 
 
 
@@ -784,8 +812,10 @@ Set: DecoderFallback(self: Encoding)=value
 
 """
 
- EncoderFallback=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Text.EncoderFallback object for the current System.Text.Encoding object.
+    EncoderFallback = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Text.EncoderFallback object for the current System.Text.Encoding object.
 
 
 
@@ -797,8 +827,10 @@ Set: EncoderFallback(self: Encoding)=value
 
 """
 
- EncodingName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets the human-readable description of the current encoding.
+    EncodingName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """When overridden in a derived class,gets the human-readable description of the current encoding.
 
 
 
@@ -808,8 +840,10 @@ Get: EncodingName(self: Encoding) -> str
 
 """
 
- HeaderName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets a name for the current encoding that can be used with mail agent header tags.
+    HeaderName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """When overridden in a derived class,gets a name for the current encoding that can be used with mail agent header tags.
 
 
 
@@ -819,8 +853,10 @@ Get: HeaderName(self: Encoding) -> str
 
 """
 
- IsBrowserDisplay=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets a value indicating whether the current encoding can be used by browser clients for displaying content.
+    IsBrowserDisplay = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """When overridden in a derived class,gets a value indicating whether the current encoding can be used by browser clients for displaying content.
 
 
 
@@ -830,8 +866,10 @@ Get: IsBrowserDisplay(self: Encoding) -> bool
 
 """
 
- IsBrowserSave=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets a value indicating whether the current encoding can be used by browser clients for saving content.
+    IsBrowserSave = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """When overridden in a derived class,gets a value indicating whether the current encoding can be used by browser clients for saving content.
 
 
 
@@ -841,8 +879,10 @@ Get: IsBrowserSave(self: Encoding) -> bool
 
 """
 
- IsMailNewsDisplay=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets a value indicating whether the current encoding can be used by mail and news clients for displaying content.
+    IsMailNewsDisplay = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """When overridden in a derived class,gets a value indicating whether the current encoding can be used by mail and news clients for displaying content.
 
 
 
@@ -852,8 +892,10 @@ Get: IsMailNewsDisplay(self: Encoding) -> bool
 
 """
 
- IsMailNewsSave=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets a value indicating whether the current encoding can be used by mail and news clients for saving content.
+    IsMailNewsSave = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """When overridden in a derived class,gets a value indicating whether the current encoding can be used by mail and news clients for saving content.
 
 
 
@@ -863,8 +905,10 @@ Get: IsMailNewsSave(self: Encoding) -> bool
 
 """
 
- IsReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets a value indicating whether the current encoding is read-only.
+    IsReadOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """When overridden in a derived class,gets a value indicating whether the current encoding is read-only.
 
 
 
@@ -874,8 +918,10 @@ Get: IsReadOnly(self: Encoding) -> bool
 
 """
 
- IsSingleByte=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets a value indicating whether the current encoding uses single-byte code points.
+    IsSingleByte = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """When overridden in a derived class,gets a value indicating whether the current encoding uses single-byte code points.
 
 
 
@@ -885,8 +931,8 @@ Get: IsSingleByte(self: Encoding) -> bool
 
 """
 
- WebName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets the name registered with the Internet Assigned Numbers Authority (IANA) for the current encoding.
+    WebName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """When overridden in a derived class,gets the name registered with the Internet Assigned Numbers Authority (IANA) for the current encoding.
 
 
 
@@ -896,8 +942,10 @@ Get: WebName(self: Encoding) -> str
 
 """
 
- WindowsCodePage=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets the Windows operating system code page that most closely corresponds to the current encoding.
+    WindowsCodePage = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """When overridden in a derived class,gets the Windows operating system code page that most closely corresponds to the current encoding.
 
 
 
@@ -907,26 +955,26 @@ Get: WindowsCodePage(self: Encoding) -> int
 
 """
 
+    ASCII = None
+    BigEndianUnicode = None
+    Default = None
+    Unicode = None
+    UTF32 = None
+    UTF7 = None
+    UTF8 = None
 
- ASCII=None
- BigEndianUnicode=None
- Default=None
- Unicode=None
- UTF32=None
- UTF7=None
- UTF8=None
 
-
-class ASCIIEncoding(Encoding,ICloneable):
- """
+class ASCIIEncoding(Encoding, ICloneable):
+    """
  Represents an ASCII character encoding of Unicode characters.
 
  
 
  ASCIIEncoding()
  """
- def GetByteCount(self,chars,*__args):
-  """
+
+    def GetByteCount(self, chars, *__args):
+        """
   GetByteCount(self: ASCIIEncoding,chars: Char*,count: int) -> int
 
   
@@ -981,9 +1029,10 @@ class ASCIIEncoding(Encoding,ICloneable):
 
    Returns: The number of bytes produced by encoding the specified characters.
   """
-  pass
- def GetBytes(self,*__args):
-  """
+        pass
+
+    def GetBytes(self, *__args):
+        """
   GetBytes(self: ASCIIEncoding,chars: Char*,charCount: int,bytes: Byte*,byteCount: int) -> int
 
   
@@ -1046,9 +1095,10 @@ class ASCIIEncoding(Encoding,ICloneable):
 
    Returns: The actual number of bytes written into bytes.
   """
-  pass
- def GetCharCount(self,bytes,*__args):
-  """
+        pass
+
+    def GetCharCount(self, bytes, *__args):
+        """
   GetCharCount(self: ASCIIEncoding,bytes: Byte*,count: int) -> int
 
   
@@ -1087,9 +1137,10 @@ class ASCIIEncoding(Encoding,ICloneable):
 
    Returns: The number of characters produced by decoding the specified sequence of bytes.
   """
-  pass
- def GetChars(self,bytes,*__args):
-  """
+        pass
+
+    def GetChars(self, bytes, *__args):
+        """
   GetChars(self: ASCIIEncoding,bytes: Byte*,byteCount: int,chars: Char*,charCount: int) -> int
 
   
@@ -1132,9 +1183,10 @@ class ASCIIEncoding(Encoding,ICloneable):
 
    Returns: The actual number of characters written into chars.
   """
-  pass
- def GetDecoder(self):
-  """
+        pass
+
+    def GetDecoder(self):
+        """
   GetDecoder(self: ASCIIEncoding) -> Decoder
 
   
@@ -1149,9 +1201,10 @@ class ASCIIEncoding(Encoding,ICloneable):
 
     Unicode characters.
   """
-  pass
- def GetEncoder(self):
-  """
+        pass
+
+    def GetEncoder(self):
+        """
   GetEncoder(self: ASCIIEncoding) -> Encoder
 
   
@@ -1166,9 +1219,10 @@ class ASCIIEncoding(Encoding,ICloneable):
 
     sequence of bytes.
   """
-  pass
- def GetMaxByteCount(self,charCount):
-  """
+        pass
+
+    def GetMaxByteCount(self, charCount):
+        """
   GetMaxByteCount(self: ASCIIEncoding,charCount: int) -> int
 
   
@@ -1181,9 +1235,10 @@ class ASCIIEncoding(Encoding,ICloneable):
 
    Returns: The maximum number of bytes produced by encoding the specified number of characters.
   """
-  pass
- def GetMaxCharCount(self,byteCount):
-  """
+        pass
+
+    def GetMaxCharCount(self, byteCount):
+        """
   GetMaxCharCount(self: ASCIIEncoding,byteCount: int) -> int
 
   
@@ -1196,9 +1251,10 @@ class ASCIIEncoding(Encoding,ICloneable):
 
    Returns: The maximum number of characters produced by decoding the specified number of bytes.
   """
-  pass
- def GetString(self,bytes,*__args):
-  """
+        pass
+
+    def GetString(self, bytes, *__args):
+        """
   GetString(self: ASCIIEncoding,bytes: Array[Byte],byteIndex: int,byteCount: int) -> str
 
   
@@ -1215,14 +1271,19 @@ class ASCIIEncoding(Encoding,ICloneable):
 
    Returns: A System.String containing the results of decoding the specified sequence of bytes.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- IsSingleByte=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the current encoding uses single-byte code points.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    IsSingleByte = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the current encoding uses single-byte code points.
 
 
 
@@ -1233,11 +1294,11 @@ Get: IsSingleByte(self: ASCIIEncoding) -> bool
 """
 
 
-
 class Decoder(object):
- """ Converts a sequence of encoded bytes into a set of characters. """
- def Convert(self,bytes,*__args):
-  """
+    """ Converts a sequence of encoded bytes into a set of characters. """
+
+    def Convert(self, bytes, *__args):
+        """
   Convert(self: Decoder,bytes: Byte*,byteCount: int,chars: Char*,charCount: int,flush: bool) -> (int,int,bool)
 
   
@@ -1286,9 +1347,10 @@ class Decoder(object):
 
    flush: true to indicate that no further data is to be converted; otherwise,false.
   """
-  pass
- def GetCharCount(self,bytes,*__args):
-  """
+        pass
+
+    def GetCharCount(self, bytes, *__args):
+        """
   GetCharCount(self: Decoder,bytes: Byte*,count: int,flush: bool) -> int
 
   
@@ -1373,9 +1435,10 @@ class Decoder(object):
 
     the internal buffer.
   """
-  pass
- def GetChars(self,bytes,*__args):
-  """
+        pass
+
+    def GetChars(self, bytes, *__args):
+        """
   GetChars(self: Decoder,bytes: Byte*,byteCount: int,chars: Char*,charCount: int,flush: bool) -> int
 
   
@@ -1456,16 +1519,18 @@ class Decoder(object):
 
    Returns: The actual number of characters written into chars.
   """
-  pass
- def Reset(self):
-  """
+        pass
+
+    def Reset(self):
+        """
   Reset(self: Decoder)
 
    When overridden in a derived class,sets the decoder back to its initial state.
   """
-  pass
- Fallback=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a System.Text.DecoderFallback object for the current System.Text.Decoder object.
+        pass
+
+    Fallback = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a System.Text.DecoderFallback object for the current System.Text.Decoder object.
 
 
 
@@ -1477,8 +1542,10 @@ Set: Fallback(self: Decoder)=value
 
 """
 
- FallbackBuffer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Text.DecoderFallbackBuffer object associated with the current System.Text.Decoder object.
+    FallbackBuffer = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Text.DecoderFallbackBuffer object associated with the current System.Text.Decoder object.
 
 
 
@@ -1489,11 +1556,11 @@ Get: FallbackBuffer(self: Decoder) -> DecoderFallbackBuffer
 """
 
 
-
 class DecoderFallback(object):
- """ Provides a failure-handling mechanism,called a fallback,for an encoded input byte sequence that cannot be converted to an output character. """
- def CreateFallbackBuffer(self):
-  """
+    """ Provides a failure-handling mechanism,called a fallback,for an encoded input byte sequence that cannot be converted to an output character. """
+
+    def CreateFallbackBuffer(self):
+        """
   CreateFallbackBuffer(self: DecoderFallback) -> DecoderFallbackBuffer
 
   
@@ -1506,9 +1573,12 @@ class DecoderFallback(object):
 
    Returns: An object that provides a fallback buffer for a decoder.
   """
-  pass
- MaxCharCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets the maximum number of characters the current System.Text.DecoderFallback object can return.
+        pass
+
+    MaxCharCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """When overridden in a derived class,gets the maximum number of characters the current System.Text.DecoderFallback object can return.
 
 
 
@@ -1518,21 +1588,21 @@ Get: MaxCharCount(self: DecoderFallback) -> int
 
 """
 
-
- ExceptionFallback=None
- ReplacementFallback=None
+    ExceptionFallback = None
+    ReplacementFallback = None
 
 
 class DecoderExceptionFallback(DecoderFallback):
- """
+    """
  Throws System.Text.DecoderFallbackException if an encoded input byte sequence cannot be converted to a decoded output character. This class cannot be inherited.
 
  
 
  DecoderExceptionFallback()
  """
- def CreateFallbackBuffer(self):
-  """
+
+    def CreateFallbackBuffer(self):
+        """
   CreateFallbackBuffer(self: DecoderExceptionFallback) -> DecoderFallbackBuffer
 
   
@@ -1541,9 +1611,10 @@ class DecoderExceptionFallback(DecoderFallback):
 
    Returns: A System.Text.DecoderFallbackBuffer object.
   """
-  pass
- def Equals(self,value):
-  """
+        pass
+
+    def Equals(self, value):
+        """
   Equals(self: DecoderExceptionFallback,value: object) -> bool
 
   
@@ -1560,9 +1631,10 @@ class DecoderExceptionFallback(DecoderFallback):
 
    Returns: true if value is not null and is a System.Text.DecoderExceptionFallback object; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: DecoderExceptionFallback) -> int
 
   
@@ -1571,14 +1643,19 @@ class DecoderExceptionFallback(DecoderFallback):
 
    Returns: The return value is always the same arbitrary value,and has no special significance.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __ne__(self,*args):
-  pass
- MaxCharCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the maximum number of characters this instance can return.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    MaxCharCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the maximum number of characters this instance can return.
 
 
 
@@ -1589,11 +1666,11 @@ Get: MaxCharCount(self: DecoderExceptionFallback) -> int
 """
 
 
-
 class DecoderFallbackBuffer(object):
- """ Provides a buffer that allows a fallback handler to return an alternate string to a decoder when it cannot decode an input byte sequence. """
- def Fallback(self,bytesUnknown,index):
-  """
+    """ Provides a buffer that allows a fallback handler to return an alternate string to a decoder when it cannot decode an input byte sequence. """
+
+    def Fallback(self, bytesUnknown, index):
+        """
   Fallback(self: DecoderFallbackBuffer,bytesUnknown: Array[Byte],index: int) -> bool
 
   
@@ -1614,9 +1691,10 @@ class DecoderFallbackBuffer(object):
 
     bytesUnknown.
   """
-  pass
- def GetNextChar(self):
-  """
+        pass
+
+    def GetNextChar(self):
+        """
   GetNextChar(self: DecoderFallbackBuffer) -> Char
 
   
@@ -1625,9 +1703,10 @@ class DecoderFallbackBuffer(object):
 
    Returns: The next character in the fallback buffer.
   """
-  pass
- def MovePrevious(self):
-  """
+        pass
+
+    def MovePrevious(self):
+        """
   MovePrevious(self: DecoderFallbackBuffer) -> bool
 
   
@@ -1644,16 +1723,18 @@ class DecoderFallbackBuffer(object):
 
     false.
   """
-  pass
- def Reset(self):
-  """
+        pass
+
+    def Reset(self):
+        """
   Reset(self: DecoderFallbackBuffer)
 
    Initializes all data and state information pertaining to this fallback buffer.
   """
-  pass
- Remaining=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets the number of characters in the current System.Text.DecoderFallbackBuffer object that remain to be processed.
+        pass
+
+    Remaining = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """When overridden in a derived class,gets the number of characters in the current System.Text.DecoderFallbackBuffer object that remain to be processed.
 
 
 
@@ -1664,17 +1745,17 @@ Get: Remaining(self: DecoderFallbackBuffer) -> int
 """
 
 
-
 class DecoderExceptionFallbackBuffer(DecoderFallbackBuffer):
- """
+    """
  Throws System.Text.DecoderFallbackException when an encoded input byte sequence cannot be converted to a decoded output character. This class cannot be inherited.
 
  
 
  DecoderExceptionFallbackBuffer()
  """
- def Fallback(self,bytesUnknown,index):
-  """
+
+    def Fallback(self, bytesUnknown, index):
+        """
   Fallback(self: DecoderExceptionFallbackBuffer,bytesUnknown: Array[Byte],index: int) -> bool
 
   
@@ -1699,9 +1780,10 @@ class DecoderExceptionFallbackBuffer(DecoderFallbackBuffer):
 
     unchanging,because this method implements an abstract method.
   """
-  pass
- def GetNextChar(self):
-  """
+        pass
+
+    def GetNextChar(self):
+        """
   GetNextChar(self: DecoderExceptionFallbackBuffer) -> Char
 
   
@@ -1712,9 +1794,10 @@ class DecoderExceptionFallbackBuffer(DecoderFallbackBuffer):
 
     although it is unchanging,because this method implements an abstract method.
   """
-  pass
- def MovePrevious(self):
-  """
+        pass
+
+    def MovePrevious(self):
+        """
   MovePrevious(self: DecoderExceptionFallbackBuffer) -> bool
 
   
@@ -1729,9 +1812,10 @@ class DecoderExceptionFallbackBuffer(DecoderFallbackBuffer):
 
     this method implements an abstract method.
   """
-  pass
- Remaining=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of characters in the current System.Text.DecoderExceptionFallbackBuffer object that remain to be processed.
+        pass
+
+    Remaining = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of characters in the current System.Text.DecoderExceptionFallbackBuffer object that remain to be processed.
 
 
 
@@ -1742,9 +1826,8 @@ Get: Remaining(self: DecoderExceptionFallbackBuffer) -> int
 """
 
 
-
-class DecoderFallbackException(ArgumentException,ISerializable,_Exception):
- """
+class DecoderFallbackException(ArgumentException, ISerializable, _Exception):
+    """
  The exception that is thrown when a decoder fallback operation fails. This class cannot be inherited.
 
  
@@ -1757,18 +1840,22 @@ class DecoderFallbackException(ArgumentException,ISerializable,_Exception):
 
  DecoderFallbackException(message: str,bytesUnknown: Array[Byte],index: int)
  """
- def add_SerializeObjectState(self,*args):
-  """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def remove_SerializeObjectState(self,*args):
-  """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,message=None,*__args):
-  """
+
+    def add_SerializeObjectState(self, *args):
+        """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def remove_SerializeObjectState(self, *args):
+        """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, message=None, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,message: str)
@@ -1777,13 +1864,18 @@ class DecoderFallbackException(ArgumentException,ISerializable,_Exception):
 
   __new__(cls: type,message: str,bytesUnknown: Array[Byte],index: int)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- BytesUnknown=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the input byte sequence that caused the exception.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    BytesUnknown = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the input byte sequence that caused the exception.
 
 
 
@@ -1793,8 +1885,8 @@ Get: BytesUnknown(self: DecoderFallbackException) -> Array[Byte]
 
 """
 
- Index=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the index position in the input byte sequence of the byte that caused the exception.
+    Index = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the index position in the input byte sequence of the byte that caused the exception.
 
 
 
@@ -1805,9 +1897,8 @@ Get: Index(self: DecoderFallbackException) -> int
 """
 
 
-
 class DecoderReplacementFallback(DecoderFallback):
- """
+    """
  Provides a failure-handling mechanism,called a fallback,for an encoded input byte sequence that cannot be converted to an output character. The fallback emits a user-specified replacement string instead of a decoded input byte sequence. This class cannot be inherited.
 
  
@@ -1816,8 +1907,9 @@ class DecoderReplacementFallback(DecoderFallback):
 
  DecoderReplacementFallback(replacement: str)
  """
- def CreateFallbackBuffer(self):
-  """
+
+    def CreateFallbackBuffer(self):
+        """
   CreateFallbackBuffer(self: DecoderReplacementFallback) -> DecoderFallbackBuffer
 
   
@@ -1832,9 +1924,10 @@ class DecoderReplacementFallback(DecoderFallback):
 
     original decoding operation input.
   """
-  pass
- def Equals(self,value):
-  """
+        pass
+
+    def Equals(self, value):
+        """
   Equals(self: DecoderReplacementFallback,value: object) -> bool
 
   
@@ -1857,9 +1950,10 @@ class DecoderReplacementFallback(DecoderFallback):
 
     System.Text.DecoderReplacementFallback object; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: DecoderReplacementFallback) -> int
 
   
@@ -1868,22 +1962,28 @@ class DecoderReplacementFallback(DecoderFallback):
 
    Returns: The hash code of the value of the object.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- @staticmethod
- def __new__(self,replacement=None):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    @staticmethod
+    def __new__(self, replacement=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,replacement: str)
   """
-  pass
- def __ne__(self,*args):
-  pass
- DefaultString=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the replacement string that is the value of the System.Text.DecoderReplacementFallback object.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    DefaultString = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the replacement string that is the value of the System.Text.DecoderReplacementFallback object.
 
 
 
@@ -1893,8 +1993,10 @@ Get: DefaultString(self: DecoderReplacementFallback) -> str
 
 """
 
- MaxCharCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of characters in the replacement string for the System.Text.DecoderReplacementFallback object.
+    MaxCharCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the number of characters in the replacement string for the System.Text.DecoderReplacementFallback object.
 
 
 
@@ -1905,17 +2007,17 @@ Get: MaxCharCount(self: DecoderReplacementFallback) -> int
 """
 
 
-
 class DecoderReplacementFallbackBuffer(DecoderFallbackBuffer):
- """
+    """
  Represents a substitute output string that is emitted when the original input byte sequence cannot be decoded. This class cannot be inherited.
 
  
 
  DecoderReplacementFallbackBuffer(fallback: DecoderReplacementFallback)
  """
- def Fallback(self,bytesUnknown,index):
-  """
+
+    def Fallback(self, bytesUnknown, index):
+        """
   Fallback(self: DecoderReplacementFallbackBuffer,bytesUnknown: Array[Byte],index: int) -> bool
 
   
@@ -1930,9 +2032,10 @@ class DecoderReplacementFallbackBuffer(DecoderFallbackBuffer):
 
    Returns: true if the replacement string is not empty; false if the replacement string is empty.
   """
-  pass
- def GetNextChar(self):
-  """
+        pass
+
+    def GetNextChar(self):
+        """
   GetNextChar(self: DecoderReplacementFallbackBuffer) -> Char
 
   
@@ -1941,9 +2044,10 @@ class DecoderReplacementFallbackBuffer(DecoderFallbackBuffer):
 
    Returns: The next character in the replacement fallback buffer.
   """
-  pass
- def MovePrevious(self):
-  """
+        pass
+
+    def MovePrevious(self):
+        """
   MovePrevious(self: DecoderReplacementFallbackBuffer) -> bool
 
   
@@ -1958,22 +2062,25 @@ class DecoderReplacementFallbackBuffer(DecoderFallbackBuffer):
 
     otherwise,false.
   """
-  pass
- def Reset(self):
-  """
+        pass
+
+    def Reset(self):
+        """
   Reset(self: DecoderReplacementFallbackBuffer)
 
    Initializes all internal state information and data in the 
 
     System.Text.DecoderReplacementFallbackBuffer object.
   """
-  pass
- @staticmethod
- def __new__(self,fallback):
-  """ __new__(cls: type,fallback: DecoderReplacementFallback) """
-  pass
- Remaining=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of characters in the replacement fallback buffer that remain to be processed.
+        pass
+
+    @staticmethod
+    def __new__(self, fallback):
+        """ __new__(cls: type,fallback: DecoderReplacementFallback) """
+        pass
+
+    Remaining = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of characters in the replacement fallback buffer that remain to be processed.
 
 
 
@@ -1984,11 +2091,11 @@ Get: Remaining(self: DecoderReplacementFallbackBuffer) -> int
 """
 
 
-
 class Encoder(object):
- """ Converts a set of characters into a sequence of bytes. """
- def Convert(self,chars,*__args):
-  """
+    """ Converts a set of characters into a sequence of bytes. """
+
+    def Convert(self, chars, *__args):
+        """
   Convert(self: Encoder,chars: Char*,charCount: int,bytes: Byte*,byteCount: int,flush: bool) -> (int,int,bool)
 
   
@@ -2037,9 +2144,10 @@ class Encoder(object):
 
    flush: true to indicate no further data is to be converted; otherwise,false.
   """
-  pass
- def GetByteCount(self,chars,*__args):
-  """
+        pass
+
+    def GetByteCount(self, chars, *__args):
+        """
   GetByteCount(self: Encoder,chars: Char*,count: int,flush: bool) -> int
 
   
@@ -2100,9 +2208,10 @@ class Encoder(object):
 
     internal buffer.
   """
-  pass
- def GetBytes(self,chars,*__args):
-  """
+        pass
+
+    def GetBytes(self, chars, *__args):
+        """
   GetBytes(self: Encoder,chars: Char*,charCount: int,bytes: Byte*,byteCount: int,flush: bool) -> int
 
   
@@ -2159,16 +2268,18 @@ class Encoder(object):
 
    Returns: The actual number of bytes written into bytes.
   """
-  pass
- def Reset(self):
-  """
+        pass
+
+    def Reset(self):
+        """
   Reset(self: Encoder)
 
    When overridden in a derived class,sets the encoder back to its initial state.
   """
-  pass
- Fallback=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a System.Text.EncoderFallback object for the current System.Text.Encoder object.
+        pass
+
+    Fallback = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a System.Text.EncoderFallback object for the current System.Text.Encoder object.
 
 
 
@@ -2180,8 +2291,10 @@ Set: Fallback(self: Encoder)=value
 
 """
 
- FallbackBuffer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Text.EncoderFallbackBuffer object associated with the current System.Text.Encoder object.
+    FallbackBuffer = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Text.EncoderFallbackBuffer object associated with the current System.Text.Encoder object.
 
 
 
@@ -2192,11 +2305,11 @@ Get: FallbackBuffer(self: Encoder) -> EncoderFallbackBuffer
 """
 
 
-
 class EncoderFallback(object):
- """ Provides a failure-handling mechanism,called a fallback,for an input character that cannot be converted to an encoded output byte sequence. """
- def CreateFallbackBuffer(self):
-  """
+    """ Provides a failure-handling mechanism,called a fallback,for an input character that cannot be converted to an encoded output byte sequence. """
+
+    def CreateFallbackBuffer(self):
+        """
   CreateFallbackBuffer(self: EncoderFallback) -> EncoderFallbackBuffer
 
   
@@ -2209,9 +2322,12 @@ class EncoderFallback(object):
 
    Returns: An  object that provides a fallback buffer for an encoder.
   """
-  pass
- MaxCharCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets the maximum number of characters the current System.Text.EncoderFallback object can return.
+        pass
+
+    MaxCharCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """When overridden in a derived class,gets the maximum number of characters the current System.Text.EncoderFallback object can return.
 
 
 
@@ -2221,21 +2337,21 @@ Get: MaxCharCount(self: EncoderFallback) -> int
 
 """
 
-
- ExceptionFallback=None
- ReplacementFallback=None
+    ExceptionFallback = None
+    ReplacementFallback = None
 
 
 class EncoderExceptionFallback(EncoderFallback):
- """
+    """
  Throws a System.Text.EncoderFallbackException if an input character cannot be converted to an encoded output byte sequence. This class cannot be inherited.
 
  
 
  EncoderExceptionFallback()
  """
- def CreateFallbackBuffer(self):
-  """
+
+    def CreateFallbackBuffer(self):
+        """
   CreateFallbackBuffer(self: EncoderExceptionFallback) -> EncoderFallbackBuffer
 
   
@@ -2244,9 +2360,10 @@ class EncoderExceptionFallback(EncoderFallback):
 
    Returns: A System.Text.EncoderFallbackBuffer object.
   """
-  pass
- def Equals(self,value):
-  """
+        pass
+
+    def Equals(self, value):
+        """
   Equals(self: EncoderExceptionFallback,value: object) -> bool
 
   
@@ -2265,9 +2382,10 @@ class EncoderExceptionFallback(EncoderFallback):
 
     System.Text.EncoderExceptionFallback object; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: EncoderExceptionFallback) -> int
 
   
@@ -2276,14 +2394,19 @@ class EncoderExceptionFallback(EncoderFallback):
 
    Returns: The return value is always the same arbitrary value,and has no special significance.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __ne__(self,*args):
-  pass
- MaxCharCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the maximum number of characters this instance can return.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    MaxCharCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the maximum number of characters this instance can return.
 
 
 
@@ -2294,11 +2417,11 @@ Get: MaxCharCount(self: EncoderExceptionFallback) -> int
 """
 
 
-
 class EncoderFallbackBuffer(object):
- """ Provides a buffer that allows a fallback handler to return an alternate string to an encoder when it cannot encode an input character. """
- def Fallback(self,*__args):
-  """
+    """ Provides a buffer that allows a fallback handler to return an alternate string to an encoder when it cannot encode an input character. """
+
+    def Fallback(self, *__args):
+        """
   Fallback(self: EncoderFallbackBuffer,charUnknownHigh: Char,charUnknownLow: Char,index: int) -> bool
 
   
@@ -2343,9 +2466,10 @@ class EncoderFallbackBuffer(object):
 
     charUnknown.
   """
-  pass
- def GetNextChar(self):
-  """
+        pass
+
+    def GetNextChar(self):
+        """
   GetNextChar(self: EncoderFallbackBuffer) -> Char
 
   
@@ -2354,9 +2478,10 @@ class EncoderFallbackBuffer(object):
 
    Returns: The next character in the fallback buffer.
   """
-  pass
- def MovePrevious(self):
-  """
+        pass
+
+    def MovePrevious(self):
+        """
   MovePrevious(self: EncoderFallbackBuffer) -> bool
 
   
@@ -2373,16 +2498,18 @@ class EncoderFallbackBuffer(object):
 
     false.
   """
-  pass
- def Reset(self):
-  """
+        pass
+
+    def Reset(self):
+        """
   Reset(self: EncoderFallbackBuffer)
 
    Initializes all data and state information pertaining to this fallback buffer.
   """
-  pass
- Remaining=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets the number of characters in the current System.Text.EncoderFallbackBuffer object that remain to be processed.
+        pass
+
+    Remaining = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """When overridden in a derived class,gets the number of characters in the current System.Text.EncoderFallbackBuffer object that remain to be processed.
 
 
 
@@ -2393,17 +2520,17 @@ Get: Remaining(self: EncoderFallbackBuffer) -> int
 """
 
 
-
 class EncoderExceptionFallbackBuffer(EncoderFallbackBuffer):
- """
+    """
  Throws System.Text.EncoderFallbackException when an input character cannot be converted to an encoded output byte sequence. This class cannot be inherited.
 
  
 
  EncoderExceptionFallbackBuffer()
  """
- def Fallback(self,*__args):
-  """
+
+    def Fallback(self, *__args):
+        """
   Fallback(self: EncoderExceptionFallbackBuffer,charUnknownHigh: Char,charUnknownLow: Char,index: int) -> bool
 
   
@@ -2452,9 +2579,10 @@ class EncoderExceptionFallbackBuffer(EncoderFallbackBuffer):
 
     throws an exception.
   """
-  pass
- def GetNextChar(self):
-  """
+        pass
+
+    def GetNextChar(self):
+        """
   GetNextChar(self: EncoderExceptionFallbackBuffer) -> Char
 
   
@@ -2465,9 +2593,10 @@ class EncoderExceptionFallbackBuffer(EncoderFallbackBuffer):
 
     although it is unchanging,because this method implements an abstract method.
   """
-  pass
- def MovePrevious(self):
-  """
+        pass
+
+    def MovePrevious(self):
+        """
   MovePrevious(self: EncoderExceptionFallbackBuffer) -> bool
 
   
@@ -2482,9 +2611,10 @@ class EncoderExceptionFallbackBuffer(EncoderFallbackBuffer):
 
     this method implements an abstract method.
   """
-  pass
- Remaining=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of characters in the current System.Text.EncoderExceptionFallbackBuffer object that remain to be processed.
+        pass
+
+    Remaining = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of characters in the current System.Text.EncoderExceptionFallbackBuffer object that remain to be processed.
 
 
 
@@ -2495,9 +2625,8 @@ Get: Remaining(self: EncoderExceptionFallbackBuffer) -> int
 """
 
 
-
-class EncoderFallbackException(ArgumentException,ISerializable,_Exception):
- """
+class EncoderFallbackException(ArgumentException, ISerializable, _Exception):
+    """
  The exception that is thrown when an encoder fallback operation fails. This class cannot be inherited.
 
  
@@ -2508,11 +2637,13 @@ class EncoderFallbackException(ArgumentException,ISerializable,_Exception):
 
  EncoderFallbackException(message: str,innerException: Exception)
  """
- def add_SerializeObjectState(self,*args):
-  """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def IsUnknownSurrogate(self):
-  """
+
+    def add_SerializeObjectState(self, *args):
+        """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def IsUnknownSurrogate(self):
+        """
   IsUnknownSurrogate(self: EncoderFallbackException) -> bool
 
   
@@ -2521,29 +2652,37 @@ class EncoderFallbackException(ArgumentException,ISerializable,_Exception):
 
    Returns: true if the input was a surrogate pair; otherwise,false.
   """
-  pass
- def remove_SerializeObjectState(self,*args):
-  """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,message=None,innerException=None):
-  """
+        pass
+
+    def remove_SerializeObjectState(self, *args):
+        """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, message=None, innerException=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,message: str)
 
   __new__(cls: type,message: str,innerException: Exception)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- CharUnknown=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the input character that caused the exception.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    CharUnknown = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the input character that caused the exception.
 
 
 
@@ -2553,8 +2692,10 @@ Get: CharUnknown(self: EncoderFallbackException) -> Char
 
 """
 
- CharUnknownHigh=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the high component character of the surrogate pair that caused the exception.
+    CharUnknownHigh = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the high component character of the surrogate pair that caused the exception.
 
 
 
@@ -2564,8 +2705,10 @@ Get: CharUnknownHigh(self: EncoderFallbackException) -> Char
 
 """
 
- CharUnknownLow=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the low component character of the surrogate pair that caused the exception.
+    CharUnknownLow = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the low component character of the surrogate pair that caused the exception.
 
 
 
@@ -2575,8 +2718,8 @@ Get: CharUnknownLow(self: EncoderFallbackException) -> Char
 
 """
 
- Index=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the index position in the input buffer of the character that caused the exception.
+    Index = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the index position in the input buffer of the character that caused the exception.
 
 
 
@@ -2587,9 +2730,8 @@ Get: Index(self: EncoderFallbackException) -> int
 """
 
 
-
 class EncoderReplacementFallback(EncoderFallback):
- """
+    """
  Provides a failure handling mechanism,called a fallback,for an input character that cannot be converted to an output byte sequence. The fallback uses a user-specified replacement string instead of the original input character. This class cannot be inherited.
 
  
@@ -2598,8 +2740,9 @@ class EncoderReplacementFallback(EncoderFallback):
 
  EncoderReplacementFallback(replacement: str)
  """
- def CreateFallbackBuffer(self):
-  """
+
+    def CreateFallbackBuffer(self):
+        """
   CreateFallbackBuffer(self: EncoderReplacementFallback) -> EncoderFallbackBuffer
 
   
@@ -2614,9 +2757,10 @@ class EncoderReplacementFallback(EncoderFallback):
 
     object.
   """
-  pass
- def Equals(self,value):
-  """
+        pass
+
+    def Equals(self, value):
+        """
   Equals(self: EncoderReplacementFallback,value: object) -> bool
 
   
@@ -2637,9 +2781,10 @@ class EncoderReplacementFallback(EncoderFallback):
 
     System.Text.EncoderReplacementFallback object; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: EncoderReplacementFallback) -> int
 
   
@@ -2648,22 +2793,28 @@ class EncoderReplacementFallback(EncoderFallback):
 
    Returns: The hash code of the value of the object.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- @staticmethod
- def __new__(self,replacement=None):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    @staticmethod
+    def __new__(self, replacement=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,replacement: str)
   """
-  pass
- def __ne__(self,*args):
-  pass
- DefaultString=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the replacement string that is the value of the System.Text.EncoderReplacementFallback object.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    DefaultString = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the replacement string that is the value of the System.Text.EncoderReplacementFallback object.
 
 
 
@@ -2673,8 +2824,10 @@ Get: DefaultString(self: EncoderReplacementFallback) -> str
 
 """
 
- MaxCharCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of characters in the replacement string for the System.Text.EncoderReplacementFallback object.
+    MaxCharCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the number of characters in the replacement string for the System.Text.EncoderReplacementFallback object.
 
 
 
@@ -2685,17 +2838,17 @@ Get: MaxCharCount(self: EncoderReplacementFallback) -> int
 """
 
 
-
 class EncoderReplacementFallbackBuffer(EncoderFallbackBuffer):
- """
+    """
  Represents a substitute input string that is used when the original input character cannot be encoded. This class cannot be inherited.
 
  
 
  EncoderReplacementFallbackBuffer(fallback: EncoderReplacementFallback)
  """
- def Fallback(self,*__args):
-  """
+
+    def Fallback(self, *__args):
+        """
   Fallback(self: EncoderReplacementFallbackBuffer,charUnknownHigh: Char,charUnknownLow: Char,index: int) -> bool
 
   
@@ -2736,9 +2889,10 @@ class EncoderReplacementFallbackBuffer(EncoderFallbackBuffer):
 
    Returns: true if the replacement string is not empty; false if the replacement string is empty.
   """
-  pass
- def GetNextChar(self):
-  """
+        pass
+
+    def GetNextChar(self):
+        """
   GetNextChar(self: EncoderReplacementFallbackBuffer) -> Char
 
   
@@ -2747,9 +2901,10 @@ class EncoderReplacementFallbackBuffer(EncoderFallbackBuffer):
 
    Returns: The next Unicode character in the replacement fallback buffer that the application can encode.
   """
-  pass
- def MovePrevious(self):
-  """
+        pass
+
+    def MovePrevious(self):
+        """
   MovePrevious(self: EncoderReplacementFallbackBuffer) -> bool
 
   
@@ -2766,22 +2921,25 @@ class EncoderReplacementFallbackBuffer(EncoderFallbackBuffer):
 
     otherwise,false.
   """
-  pass
- def Reset(self):
-  """
+        pass
+
+    def Reset(self):
+        """
   Reset(self: EncoderReplacementFallbackBuffer)
 
    Initializes all internal state information and data in this instance of 
 
     System.Text.EncoderReplacementFallbackBuffer.
   """
-  pass
- @staticmethod
- def __new__(self,fallback):
-  """ __new__(cls: type,fallback: EncoderReplacementFallback) """
-  pass
- Remaining=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of characters in the replacement fallback buffer that remain to be processed.
+        pass
+
+    @staticmethod
+    def __new__(self, fallback):
+        """ __new__(cls: type,fallback: EncoderReplacementFallback) """
+        pass
+
+    Remaining = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of characters in the replacement fallback buffer that remain to be processed.
 
 
 
@@ -2792,11 +2950,11 @@ Get: Remaining(self: EncoderReplacementFallbackBuffer) -> int
 """
 
 
-
 class EncodingInfo(object):
- """ Provides basic information about an encoding. """
- def Equals(self,value):
-  """
+    """ Provides basic information about an encoding. """
+
+    def Equals(self, value):
+        """
   Equals(self: EncodingInfo,value: object) -> bool
 
   
@@ -2815,9 +2973,10 @@ class EncodingInfo(object):
 
     System.Text.EncodingInfo object; otherwise,false.
   """
-  pass
- def GetEncoding(self):
-  """
+        pass
+
+    def GetEncoding(self):
+        """
   GetEncoding(self: EncodingInfo) -> Encoding
 
   
@@ -2830,9 +2989,10 @@ class EncodingInfo(object):
 
    Returns: A System.Text.Encoding object that corresponds to the current System.Text.EncodingInfo object.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: EncodingInfo) -> int
 
   
@@ -2841,14 +3001,17 @@ class EncodingInfo(object):
 
    Returns: A 32-bit signed integer hash code.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __ne__(self,*args):
-  pass
- CodePage=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the code page identifier of the encoding.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    CodePage = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the code page identifier of the encoding.
 
 
 
@@ -2858,8 +3021,10 @@ Get: CodePage(self: EncodingInfo) -> int
 
 """
 
- DisplayName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the human-readable description of the encoding.
+    DisplayName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the human-readable description of the encoding.
 
 
 
@@ -2869,8 +3034,8 @@ Get: DisplayName(self: EncodingInfo) -> str
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name registered with the Internet Assigned Numbers Authority (IANA) for the encoding.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the name registered with the Internet Assigned Numbers Authority (IANA) for the encoding.
 
 
 
@@ -2881,11 +3046,11 @@ Get: Name(self: EncodingInfo) -> str
 """
 
 
-
 class EncodingProvider(object):
- """ EncodingProvider() """
- def GetEncoding(self,*__args):
-  """
+    """ EncodingProvider() """
+
+    def GetEncoding(self, *__args):
+        """
   GetEncoding(self: EncodingProvider,name: str,encoderFallback: EncoderFallback,decoderFallback: DecoderFallback) -> Encoding
 
   GetEncoding(self: EncodingProvider,codepage: int,encoderFallback: EncoderFallback,decoderFallback: DecoderFallback) -> Encoding
@@ -2894,48 +3059,60 @@ class EncodingProvider(object):
 
   GetEncoding(self: EncodingProvider,codepage: int) -> Encoding
   """
-  pass
+        pass
 
-class NormalizationForm(Enum,IComparable,IFormattable,IConvertible):
- """
+
+class NormalizationForm(Enum, IComparable, IFormattable, IConvertible):
+    """
  Defines the type of normalization to perform.
 
  
 
  enum NormalizationForm,values: FormC (1),FormD (2),FormKC (5),FormKD (6)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- FormC=None
- FormD=None
- FormKC=None
- FormKD=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    FormC = None
+    FormD = None
+    FormKC = None
+    FormKD = None
+    value__ = None
 
 
-class StringBuilder(object,ISerializable):
- """
+class StringBuilder(object, ISerializable):
+    """
  Represents a mutable string of characters. This class cannot be inherited.
 
  
@@ -2952,8 +3129,9 @@ class StringBuilder(object,ISerializable):
 
  StringBuilder(capacity: int,maxCapacity: int)
  """
- def Append(self,value,*__args):
-  """
+
+    def Append(self, value, *__args):
+        """
   Append(self: StringBuilder,value: Decimal) -> StringBuilder
 
   
@@ -3210,9 +3388,10 @@ class StringBuilder(object,ISerializable):
 
    Returns: A reference to this instance after the append operation has completed.
   """
-  pass
- def AppendFormat(self,*__args):
-  """
+        pass
+
+    def AppendFormat(self, *__args):
+        """
   AppendFormat(self: StringBuilder,provider: IFormatProvider,format: str,arg0: object,arg1: object) -> StringBuilder
 
   AppendFormat(self: StringBuilder,provider: IFormatProvider,format: str,arg0: object) -> StringBuilder
@@ -3349,9 +3528,10 @@ class StringBuilder(object,ISerializable):
 
     string representation of the corresponding object argument.
   """
-  pass
- def AppendLine(self,value=None):
-  """
+        pass
+
+    def AppendLine(self, value=None):
+        """
   AppendLine(self: StringBuilder,value: str) -> StringBuilder
 
   
@@ -3376,9 +3556,10 @@ class StringBuilder(object,ISerializable):
 
    Returns: A reference to this instance after the append operation has completed.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: StringBuilder) -> StringBuilder
 
   
@@ -3387,9 +3568,10 @@ class StringBuilder(object,ISerializable):
 
    Returns: An object whose System.Text.StringBuilder.Length is 0 (zero).
   """
-  pass
- def CopyTo(self,sourceIndex,destination,destinationIndex,count):
-  """
+        pass
+
+    def CopyTo(self, sourceIndex, destination, destinationIndex, count):
+        """
   CopyTo(self: StringBuilder,sourceIndex: int,destination: Array[Char],destinationIndex: int,count: int)
 
    Copies the characters from a specified segment of this instance to a specified segment of a 
@@ -3412,9 +3594,10 @@ class StringBuilder(object,ISerializable):
 
    count: The number of characters to be copied.
   """
-  pass
- def EnsureCapacity(self,capacity):
-  """
+        pass
+
+    def EnsureCapacity(self, capacity):
+        """
   EnsureCapacity(self: StringBuilder,capacity: int) -> int
 
   
@@ -3431,9 +3614,10 @@ class StringBuilder(object,ISerializable):
 
    Returns: The new capacity of this instance.
   """
-  pass
- def Equals(self,*__args):
-  """
+        pass
+
+    def Equals(self, *__args):
+        """
   Equals(self: StringBuilder,sb: StringBuilder) -> bool
 
   
@@ -3448,9 +3632,10 @@ class StringBuilder(object,ISerializable):
 
     System.Text.StringBuilder.MaxCapacity values; otherwise,false.
   """
-  pass
- def Insert(self,index,value,*__args):
-  """
+        pass
+
+    def Insert(self, index, value, *__args):
+        """
   Insert(self: StringBuilder,index: int,value: Single) -> StringBuilder
 
   
@@ -3777,9 +3962,10 @@ class StringBuilder(object,ISerializable):
 
    Returns: A reference to this instance after the insert operation has completed.
   """
-  pass
- def Remove(self,startIndex,length):
-  """
+        pass
+
+    def Remove(self, startIndex, length):
+        """
   Remove(self: StringBuilder,startIndex: int,length: int) -> StringBuilder
 
   
@@ -3794,9 +3980,10 @@ class StringBuilder(object,ISerializable):
 
    Returns: A reference to this instance after the excise operation has completed.
   """
-  pass
- def Replace(self,*__args):
-  """
+        pass
+
+    def Replace(self, *__args):
+        """
   Replace(self: StringBuilder,oldChar: Char,newChar: Char) -> StringBuilder
 
   
@@ -3879,9 +4066,10 @@ class StringBuilder(object,ISerializable):
 
     from startIndex to startIndex + count - 1.
   """
-  pass
- def ToString(self,startIndex=None,length=None):
-  """
+        pass
+
+    def ToString(self, startIndex=None, length=None):
+        """
   ToString(self: StringBuilder,startIndex: int,length: int) -> str
 
   
@@ -3904,19 +4092,23 @@ class StringBuilder(object,ISerializable):
 
    Returns: A string whose value is the same as this instance.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,capacity: int)
@@ -3929,19 +4121,24 @@ class StringBuilder(object,ISerializable):
 
   __new__(cls: type,capacity: int,maxCapacity: int)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- def __str__(self,*args):
-  pass
- Capacity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the maximum number of characters that can be contained in the memory allocated by the current instance.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Capacity = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the maximum number of characters that can be contained in the memory allocated by the current instance.
 
 
 
@@ -3953,8 +4150,8 @@ Set: Capacity(self: StringBuilder)=value
 
 """
 
- Length=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the length of the current System.Text.StringBuilder object.
+    Length = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the length of the current System.Text.StringBuilder object.
 
 
 
@@ -3966,8 +4163,10 @@ Set: Length(self: StringBuilder)=value
 
 """
 
- MaxCapacity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the maximum capacity of this instance.
+    MaxCapacity = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the maximum capacity of this instance.
 
 
 
@@ -3978,9 +4177,8 @@ Get: MaxCapacity(self: StringBuilder) -> int
 """
 
 
-
-class UnicodeEncoding(Encoding,ICloneable):
- """
+class UnicodeEncoding(Encoding, ICloneable):
+    """
  Represents a UTF-16 encoding of Unicode characters.
 
  
@@ -3991,8 +4189,9 @@ class UnicodeEncoding(Encoding,ICloneable):
 
  UnicodeEncoding(bigEndian: bool,byteOrderMark: bool)
  """
- def Equals(self,value):
-  """
+
+    def Equals(self, value):
+        """
   Equals(self: UnicodeEncoding,value: object) -> bool
 
   
@@ -4011,9 +4210,10 @@ class UnicodeEncoding(Encoding,ICloneable):
 
     otherwise,false.
   """
-  pass
- def GetByteCount(self,*__args):
-  """
+        pass
+
+    def GetByteCount(self, *__args):
+        """
   GetByteCount(self: UnicodeEncoding,chars: Char*,count: int) -> int
 
   
@@ -4068,9 +4268,10 @@ class UnicodeEncoding(Encoding,ICloneable):
 
    Returns: The number of bytes produced by encoding the specified characters.
   """
-  pass
- def GetBytes(self,*__args):
-  """
+        pass
+
+    def GetBytes(self, *__args):
+        """
   GetBytes(self: UnicodeEncoding,chars: Char*,charCount: int,bytes: Byte*,byteCount: int) -> int
 
   
@@ -4133,9 +4334,10 @@ class UnicodeEncoding(Encoding,ICloneable):
 
    Returns: The actual number of bytes written into bytes.
   """
-  pass
- def GetCharCount(self,bytes,*__args):
-  """
+        pass
+
+    def GetCharCount(self, bytes, *__args):
+        """
   GetCharCount(self: UnicodeEncoding,bytes: Byte*,count: int) -> int
 
   
@@ -4174,9 +4376,10 @@ class UnicodeEncoding(Encoding,ICloneable):
 
    Returns: The number of characters produced by decoding the specified sequence of bytes.
   """
-  pass
- def GetChars(self,bytes,*__args):
-  """
+        pass
+
+    def GetChars(self, bytes, *__args):
+        """
   GetChars(self: UnicodeEncoding,bytes: Byte*,byteCount: int,chars: Char*,charCount: int) -> int
 
   
@@ -4219,9 +4422,10 @@ class UnicodeEncoding(Encoding,ICloneable):
 
    Returns: The actual number of characters written into chars.
   """
-  pass
- def GetDecoder(self):
-  """
+        pass
+
+    def GetDecoder(self):
+        """
   GetDecoder(self: UnicodeEncoding) -> Decoder
 
   
@@ -4236,9 +4440,10 @@ class UnicodeEncoding(Encoding,ICloneable):
 
     Unicode characters.
   """
-  pass
- def GetEncoder(self):
-  """
+        pass
+
+    def GetEncoder(self):
+        """
   GetEncoder(self: UnicodeEncoding) -> Encoder
 
   
@@ -4253,9 +4458,10 @@ class UnicodeEncoding(Encoding,ICloneable):
 
     encoded sequence of bytes.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: UnicodeEncoding) -> int
 
   
@@ -4264,9 +4470,10 @@ class UnicodeEncoding(Encoding,ICloneable):
 
    Returns: The hash code for the current System.Text.UnicodeEncoding object.
   """
-  pass
- def GetMaxByteCount(self,charCount):
-  """
+        pass
+
+    def GetMaxByteCount(self, charCount):
+        """
   GetMaxByteCount(self: UnicodeEncoding,charCount: int) -> int
 
   
@@ -4279,9 +4486,10 @@ class UnicodeEncoding(Encoding,ICloneable):
 
    Returns: The maximum number of bytes produced by encoding the specified number of characters.
   """
-  pass
- def GetMaxCharCount(self,byteCount):
-  """
+        pass
+
+    def GetMaxCharCount(self, byteCount):
+        """
   GetMaxCharCount(self: UnicodeEncoding,byteCount: int) -> int
 
   
@@ -4294,9 +4502,10 @@ class UnicodeEncoding(Encoding,ICloneable):
 
    Returns: The maximum number of characters produced by decoding the specified number of bytes.
   """
-  pass
- def GetPreamble(self):
-  """
+        pass
+
+    def GetPreamble(self):
+        """
   GetPreamble(self: UnicodeEncoding) -> Array[Byte]
 
   
@@ -4311,9 +4520,10 @@ class UnicodeEncoding(Encoding,ICloneable):
 
     requests a byte order mark. Otherwise,this method returns a byte array of length zero.
   """
-  pass
- def GetString(self,bytes,*__args):
-  """
+        pass
+
+    def GetString(self, bytes, *__args):
+        """
   GetString(self: UnicodeEncoding,bytes: Array[Byte],index: int,count: int) -> str
 
   
@@ -4330,32 +4540,38 @@ class UnicodeEncoding(Encoding,ICloneable):
 
    Returns: A System.String object containing the results of decoding the specified sequence of bytes.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,bigEndian=None,byteOrderMark=None,throwOnInvalidBytes=None):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, bigEndian=None, byteOrderMark=None, throwOnInvalidBytes=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,bigEndian: bool,byteOrderMark: bool)
 
   __new__(cls: type,bigEndian: bool,byteOrderMark: bool,throwOnInvalidBytes: bool)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- CharSize=2
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    CharSize = 2
 
 
-class UTF32Encoding(Encoding,ICloneable):
- """
+class UTF32Encoding(Encoding, ICloneable):
+    """
  Represents a UTF-32 encoding of Unicode characters.
 
  
@@ -4366,8 +4582,9 @@ class UTF32Encoding(Encoding,ICloneable):
 
  UTF32Encoding(bigEndian: bool,byteOrderMark: bool,throwOnInvalidCharacters: bool)
  """
- def Equals(self,value):
-  """
+
+    def Equals(self, value):
+        """
   Equals(self: UTF32Encoding,value: object) -> bool
 
   
@@ -4386,9 +4603,10 @@ class UTF32Encoding(Encoding,ICloneable):
 
     otherwise,false.
   """
-  pass
- def GetByteCount(self,*__args):
-  """
+        pass
+
+    def GetByteCount(self, *__args):
+        """
   GetByteCount(self: UTF32Encoding,chars: Char*,count: int) -> int
 
   
@@ -4443,9 +4661,10 @@ class UTF32Encoding(Encoding,ICloneable):
 
    Returns: The number of bytes produced by encoding the specified characters.
   """
-  pass
- def GetBytes(self,*__args):
-  """
+        pass
+
+    def GetBytes(self, *__args):
+        """
   GetBytes(self: UTF32Encoding,chars: Char*,charCount: int,bytes: Byte*,byteCount: int) -> int
 
   
@@ -4508,9 +4727,10 @@ class UTF32Encoding(Encoding,ICloneable):
 
    Returns: The actual number of bytes written into bytes.
   """
-  pass
- def GetCharCount(self,bytes,*__args):
-  """
+        pass
+
+    def GetCharCount(self, bytes, *__args):
+        """
   GetCharCount(self: UTF32Encoding,bytes: Byte*,count: int) -> int
 
   
@@ -4549,9 +4769,10 @@ class UTF32Encoding(Encoding,ICloneable):
 
    Returns: The number of characters produced by decoding the specified sequence of bytes.
   """
-  pass
- def GetChars(self,bytes,*__args):
-  """
+        pass
+
+    def GetChars(self, bytes, *__args):
+        """
   GetChars(self: UTF32Encoding,bytes: Byte*,byteCount: int,chars: Char*,charCount: int) -> int
 
   
@@ -4594,9 +4815,10 @@ class UTF32Encoding(Encoding,ICloneable):
 
    Returns: The actual number of characters written into chars.
   """
-  pass
- def GetDecoder(self):
-  """
+        pass
+
+    def GetDecoder(self):
+        """
   GetDecoder(self: UTF32Encoding) -> Decoder
 
   
@@ -4611,9 +4833,10 @@ class UTF32Encoding(Encoding,ICloneable):
 
     Unicode characters.
   """
-  pass
- def GetEncoder(self):
-  """
+        pass
+
+    def GetEncoder(self):
+        """
   GetEncoder(self: UTF32Encoding) -> Encoder
 
   
@@ -4628,9 +4851,10 @@ class UTF32Encoding(Encoding,ICloneable):
 
     sequence of bytes.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: UTF32Encoding) -> int
 
   
@@ -4639,9 +4863,10 @@ class UTF32Encoding(Encoding,ICloneable):
 
    Returns: The hash code for the current System.Text.UTF32Encoding object.
   """
-  pass
- def GetMaxByteCount(self,charCount):
-  """
+        pass
+
+    def GetMaxByteCount(self, charCount):
+        """
   GetMaxByteCount(self: UTF32Encoding,charCount: int) -> int
 
   
@@ -4654,9 +4879,10 @@ class UTF32Encoding(Encoding,ICloneable):
 
    Returns: The maximum number of bytes produced by encoding the specified number of characters.
   """
-  pass
- def GetMaxCharCount(self,byteCount):
-  """
+        pass
+
+    def GetMaxCharCount(self, byteCount):
+        """
   GetMaxCharCount(self: UTF32Encoding,byteCount: int) -> int
 
   
@@ -4669,9 +4895,10 @@ class UTF32Encoding(Encoding,ICloneable):
 
    Returns: The maximum number of characters produced by decoding the specified number of bytes.
   """
-  pass
- def GetPreamble(self):
-  """
+        pass
+
+    def GetPreamble(self):
+        """
   GetPreamble(self: UTF32Encoding) -> Array[Byte]
 
   
@@ -4686,9 +4913,10 @@ class UTF32Encoding(Encoding,ICloneable):
 
     requests a byte order mark. Otherwise,this method returns a byte array of length zero.
   """
-  pass
- def GetString(self,bytes,*__args):
-  """
+        pass
+
+    def GetString(self, bytes, *__args):
+        """
   GetString(self: UTF32Encoding,bytes: Array[Byte],index: int,count: int) -> str
 
   
@@ -4705,30 +4933,38 @@ class UTF32Encoding(Encoding,ICloneable):
 
    Returns: A System.String containing the results of decoding the specified sequence of bytes.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,bigEndian=None,byteOrderMark=None,throwOnInvalidCharacters=None):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self, bigEndian=None, byteOrderMark=None, throwOnInvalidCharacters=None
+    ):
+        """
   __new__(cls: type)
 
   __new__(cls: type,bigEndian: bool,byteOrderMark: bool)
 
   __new__(cls: type,bigEndian: bool,byteOrderMark: bool,throwOnInvalidCharacters: bool)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
 
-class UTF7Encoding(Encoding,ICloneable):
- """
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+
+class UTF7Encoding(Encoding, ICloneable):
+    """
  Represents a UTF-7 encoding of Unicode characters.
 
  
@@ -4737,8 +4973,9 @@ class UTF7Encoding(Encoding,ICloneable):
 
  UTF7Encoding(allowOptionals: bool)
  """
- def Equals(self,value):
-  """
+
+    def Equals(self, value):
+        """
   Equals(self: UTF7Encoding,value: object) -> bool
 
   
@@ -4757,9 +4994,10 @@ class UTF7Encoding(Encoding,ICloneable):
 
     System.Text.UTF7Encoding object; otherwise,false.
   """
-  pass
- def GetByteCount(self,*__args):
-  """
+        pass
+
+    def GetByteCount(self, *__args):
+        """
   GetByteCount(self: UTF7Encoding,chars: Char*,count: int) -> int
 
   
@@ -4814,9 +5052,10 @@ class UTF7Encoding(Encoding,ICloneable):
 
    Returns: The number of bytes produced by encoding the specified characters.
   """
-  pass
- def GetBytes(self,*__args):
-  """
+        pass
+
+    def GetBytes(self, *__args):
+        """
   GetBytes(self: UTF7Encoding,chars: Char*,charCount: int,bytes: Byte*,byteCount: int) -> int
 
   
@@ -4879,9 +5118,10 @@ class UTF7Encoding(Encoding,ICloneable):
 
    Returns: The actual number of bytes written into bytes.
   """
-  pass
- def GetCharCount(self,bytes,*__args):
-  """
+        pass
+
+    def GetCharCount(self, bytes, *__args):
+        """
   GetCharCount(self: UTF7Encoding,bytes: Byte*,count: int) -> int
 
   
@@ -4920,9 +5160,10 @@ class UTF7Encoding(Encoding,ICloneable):
 
    Returns: The number of characters produced by decoding the specified sequence of bytes.
   """
-  pass
- def GetChars(self,bytes,*__args):
-  """
+        pass
+
+    def GetChars(self, bytes, *__args):
+        """
   GetChars(self: UTF7Encoding,bytes: Byte*,byteCount: int,chars: Char*,charCount: int) -> int
 
   
@@ -4965,9 +5206,10 @@ class UTF7Encoding(Encoding,ICloneable):
 
    Returns: The actual number of characters written into chars.
   """
-  pass
- def GetDecoder(self):
-  """
+        pass
+
+    def GetDecoder(self):
+        """
   GetDecoder(self: UTF7Encoding) -> Decoder
 
   
@@ -4982,9 +5224,10 @@ class UTF7Encoding(Encoding,ICloneable):
 
     characters.
   """
-  pass
- def GetEncoder(self):
-  """
+        pass
+
+    def GetEncoder(self):
+        """
   GetEncoder(self: UTF7Encoding) -> Encoder
 
   
@@ -4999,9 +5242,10 @@ class UTF7Encoding(Encoding,ICloneable):
 
     sequence of bytes.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: UTF7Encoding) -> int
 
   
@@ -5010,9 +5254,10 @@ class UTF7Encoding(Encoding,ICloneable):
 
    Returns: A 32-bit signed integer hash code.
   """
-  pass
- def GetMaxByteCount(self,charCount):
-  """
+        pass
+
+    def GetMaxByteCount(self, charCount):
+        """
   GetMaxByteCount(self: UTF7Encoding,charCount: int) -> int
 
   
@@ -5025,9 +5270,10 @@ class UTF7Encoding(Encoding,ICloneable):
 
    Returns: The maximum number of bytes produced by encoding the specified number of characters.
   """
-  pass
- def GetMaxCharCount(self,byteCount):
-  """
+        pass
+
+    def GetMaxCharCount(self, byteCount):
+        """
   GetMaxCharCount(self: UTF7Encoding,byteCount: int) -> int
 
   
@@ -5040,9 +5286,10 @@ class UTF7Encoding(Encoding,ICloneable):
 
    Returns: The maximum number of characters produced by decoding the specified number of bytes.
   """
-  pass
- def GetString(self,bytes,*__args):
-  """
+        pass
+
+    def GetString(self, bytes, *__args):
+        """
   GetString(self: UTF7Encoding,bytes: Array[Byte],index: int,count: int) -> str
 
   
@@ -5059,28 +5306,34 @@ class UTF7Encoding(Encoding,ICloneable):
 
    Returns: A System.String containing the results of decoding the specified sequence of bytes.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,allowOptionals=None):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, allowOptionals=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,allowOptionals: bool)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
 
-class UTF8Encoding(Encoding,ICloneable):
- """
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+
+class UTF8Encoding(Encoding, ICloneable):
+    """
  Represents a UTF-8 encoding of Unicode characters.
 
  
@@ -5091,8 +5344,9 @@ class UTF8Encoding(Encoding,ICloneable):
 
  UTF8Encoding(encoderShouldEmitUTF8Identifier: bool,throwOnInvalidBytes: bool)
  """
- def Equals(self,value):
-  """
+
+    def Equals(self, value):
+        """
   Equals(self: UTF8Encoding,value: object) -> bool
 
   
@@ -5111,9 +5365,10 @@ class UTF8Encoding(Encoding,ICloneable):
 
     otherwise,false.
   """
-  pass
- def GetByteCount(self,chars,*__args):
-  """
+        pass
+
+    def GetByteCount(self, chars, *__args):
+        """
   GetByteCount(self: UTF8Encoding,chars: Char*,count: int) -> int
 
   
@@ -5168,9 +5423,10 @@ class UTF8Encoding(Encoding,ICloneable):
 
    Returns: The number of bytes produced by encoding the specified characters.
   """
-  pass
- def GetBytes(self,*__args):
-  """
+        pass
+
+    def GetBytes(self, *__args):
+        """
   GetBytes(self: UTF8Encoding,chars: Char*,charCount: int,bytes: Byte*,byteCount: int) -> int
 
   
@@ -5233,9 +5489,10 @@ class UTF8Encoding(Encoding,ICloneable):
 
    Returns: The actual number of bytes written into bytes.
   """
-  pass
- def GetCharCount(self,bytes,*__args):
-  """
+        pass
+
+    def GetCharCount(self, bytes, *__args):
+        """
   GetCharCount(self: UTF8Encoding,bytes: Byte*,count: int) -> int
 
   
@@ -5274,9 +5531,10 @@ class UTF8Encoding(Encoding,ICloneable):
 
    Returns: The number of characters produced by decoding the specified sequence of bytes.
   """
-  pass
- def GetChars(self,bytes,*__args):
-  """
+        pass
+
+    def GetChars(self, bytes, *__args):
+        """
   GetChars(self: UTF8Encoding,bytes: Byte*,byteCount: int,chars: Char*,charCount: int) -> int
 
   
@@ -5319,9 +5577,10 @@ class UTF8Encoding(Encoding,ICloneable):
 
    Returns: The actual number of characters written into chars.
   """
-  pass
- def GetDecoder(self):
-  """
+        pass
+
+    def GetDecoder(self):
+        """
   GetDecoder(self: UTF8Encoding) -> Decoder
 
   
@@ -5336,9 +5595,10 @@ class UTF8Encoding(Encoding,ICloneable):
 
     characters.
   """
-  pass
- def GetEncoder(self):
-  """
+        pass
+
+    def GetEncoder(self):
+        """
   GetEncoder(self: UTF8Encoding) -> Encoder
 
   
@@ -5353,9 +5613,10 @@ class UTF8Encoding(Encoding,ICloneable):
 
     sequence of bytes.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: UTF8Encoding) -> int
 
   
@@ -5364,9 +5625,10 @@ class UTF8Encoding(Encoding,ICloneable):
 
    Returns: The hash code for the current instance.
   """
-  pass
- def GetMaxByteCount(self,charCount):
-  """
+        pass
+
+    def GetMaxByteCount(self, charCount):
+        """
   GetMaxByteCount(self: UTF8Encoding,charCount: int) -> int
 
   
@@ -5379,9 +5641,10 @@ class UTF8Encoding(Encoding,ICloneable):
 
    Returns: The maximum number of bytes produced by encoding the specified number of characters.
   """
-  pass
- def GetMaxCharCount(self,byteCount):
-  """
+        pass
+
+    def GetMaxCharCount(self, byteCount):
+        """
   GetMaxCharCount(self: UTF8Encoding,byteCount: int) -> int
 
   
@@ -5394,9 +5657,10 @@ class UTF8Encoding(Encoding,ICloneable):
 
    Returns: The maximum number of characters produced by decoding the specified number of bytes.
   """
-  pass
- def GetPreamble(self):
-  """
+        pass
+
+    def GetPreamble(self):
+        """
   GetPreamble(self: UTF8Encoding) -> Array[Byte]
 
   
@@ -5411,9 +5675,10 @@ class UTF8Encoding(Encoding,ICloneable):
 
     requests a byte order mark. Otherwise,this method returns a byte array of length zero.
   """
-  pass
- def GetString(self,bytes,*__args):
-  """
+        pass
+
+    def GetString(self, bytes, *__args):
+        """
   GetString(self: UTF8Encoding,bytes: Array[Byte],index: int,count: int) -> str
 
   
@@ -5430,27 +5695,32 @@ class UTF8Encoding(Encoding,ICloneable):
 
    Returns: A System.String containing the results of decoding the specified sequence of bytes.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,encoderShouldEmitUTF8Identifier=None,throwOnInvalidBytes=None):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, encoderShouldEmitUTF8Identifier=None, throwOnInvalidBytes=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,encoderShouldEmitUTF8Identifier: bool)
 
   __new__(cls: type,encoderShouldEmitUTF8Identifier: bool,throwOnInvalidBytes: bool)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
 
 # variables with complex values
-

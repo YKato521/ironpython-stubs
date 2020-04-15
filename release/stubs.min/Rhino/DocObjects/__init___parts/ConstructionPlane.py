@@ -1,5 +1,5 @@
 class ConstructionPlane(object):
- """
+    """
  Represents a contruction plane inside the document.
 
     Use Rhino.DocObjects.Tables.NamedConstructionPlaneTable
@@ -10,8 +10,11 @@ class ConstructionPlane(object):
 
  ConstructionPlane()
  """
- DepthBuffered=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets whether the grid is drawn on top of geometry.
+
+    DepthBuffered = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets whether the grid is drawn on top of geometry.
 
    false=grid is always drawn behind 3d geometrytrue=grid is drawn at its depth as a 3d plane and grid lines obscure things behind the grid.
 
@@ -25,8 +28,10 @@ Set: DepthBuffered(self: ConstructionPlane)=value
 
 """
 
- GridLineCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the total amount of grid lines in each direction.
+    GridLineCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the total amount of grid lines in each direction.
 
 
 
@@ -38,8 +43,10 @@ Set: GridLineCount(self: ConstructionPlane)=value
 
 """
 
- GridSpacing=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the distance between grid lines.
+    GridSpacing = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the distance between grid lines.
 
 
 
@@ -51,8 +58,10 @@ Set: GridSpacing(self: ConstructionPlane)=value
 
 """
 
- GridXColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the color of the grid X-axis mark.
+    GridXColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the color of the grid X-axis mark.
 
 
 
@@ -64,8 +73,10 @@ Set: GridXColor(self: ConstructionPlane)=value
 
 """
 
- GridYColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the color of the grid Y-axis mark.
+    GridYColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the color of the grid Y-axis mark.
 
 
 
@@ -77,8 +88,10 @@ Set: GridYColor(self: ConstructionPlane)=value
 
 """
 
- GridZColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the color of the grid Z-axis mark.
+    GridZColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the color of the grid Z-axis mark.
 
 
 
@@ -90,8 +103,8 @@ Set: GridZColor(self: ConstructionPlane)=value
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the grid.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the name of the grid.
 
 
 
@@ -101,8 +114,8 @@ Get: Name(self: ConstructionPlane) -> str
 
 """
 
- Plane=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the geometric plane to use for construction.
+    Plane = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the geometric plane to use for construction.
 
 
 
@@ -114,8 +127,8 @@ Set: Plane(self: ConstructionPlane)=value
 
 """
 
- ShowAxes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets whether the axes of the grid shuld be visible.
+    ShowAxes = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets whether the axes of the grid shuld be visible.
 
 
 
@@ -127,8 +140,8 @@ Set: ShowAxes(self: ConstructionPlane)=value
 
 """
 
- ShowGrid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets whether the grid itself should be visible.
+    ShowGrid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets whether the grid itself should be visible.
 
 
 
@@ -140,8 +153,10 @@ Set: ShowGrid(self: ConstructionPlane)=value
 
 """
 
- SnapSpacing=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """when "grid snap" is enabled,the distance between snap points.
+    SnapSpacing = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """when "grid snap" is enabled,the distance between snap points.
 
    Typically this is the same distance as grid spacing.
 
@@ -155,8 +170,10 @@ Set: SnapSpacing(self: ConstructionPlane)=value
 
 """
 
- ThickLineColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the color of the thicker,wider line.
+    ThickLineColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the color of the thicker,wider line.
 
 
 
@@ -168,8 +185,10 @@ Set: ThickLineColor(self: ConstructionPlane)=value
 
 """
 
- ThickLineFrequency=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the recurrence of a wider line on the grid.
+    ThickLineFrequency = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the recurrence of a wider line on the grid.
 
    0: No lines are thick,all are drawn thin.1: All lines are thick.2: Every other line is thick.3: One line in three lines is thick (and two are thin).4: ...
 
@@ -183,8 +202,10 @@ Set: ThickLineFrequency(self: ConstructionPlane)=value
 
 """
 
- ThinLineColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the color of the thinner,less prominent line.
+    ThinLineColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the color of the thinner,less prominent line.
 
 
 
@@ -195,5 +216,3 @@ Get: ThinLineColor(self: ConstructionPlane) -> Color
 Set: ThinLineColor(self: ConstructionPlane)=value
 
 """
-
-

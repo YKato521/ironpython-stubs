@@ -1,13 +1,20 @@
-class DnsPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStackWalk,IUnrestrictedPermission):
- """
+class DnsPermission(
+    CodeAccessPermission,
+    IPermission,
+    ISecurityEncodable,
+    IStackWalk,
+    IUnrestrictedPermission,
+):
+    """
  Controls rights to access Domain Name System (DNS) servers on the network.
 
  
 
  DnsPermission(state: PermissionState)
  """
- def Copy(self):
-  """
+
+    def Copy(self):
+        """
   Copy(self: DnsPermission) -> IPermission
 
   
@@ -18,9 +25,10 @@ class DnsPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStackWa
 
     instance.
   """
-  pass
- def FromXml(self,securityElement):
-  """
+        pass
+
+    def FromXml(self, securityElement):
+        """
   FromXml(self: DnsPermission,securityElement: SecurityElement)
 
    Reconstructs a System.Net.DnsPermission instance from an XML encoding.
@@ -29,9 +37,10 @@ class DnsPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStackWa
 
    securityElement: The XML encoding to use to reconstruct the System.Net.DnsPermission instance.
   """
-  pass
- def Intersect(self,target):
-  """
+        pass
+
+    def Intersect(self, target):
+        """
   Intersect(self: DnsPermission,target: IPermission) -> IPermission
 
   
@@ -56,9 +65,10 @@ class DnsPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStackWa
 
     returns null.
   """
-  pass
- def IsSubsetOf(self,target):
-  """
+        pass
+
+    def IsSubsetOf(self, target):
+        """
   IsSubsetOf(self: DnsPermission,target: IPermission) -> bool
 
   
@@ -77,9 +87,10 @@ class DnsPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStackWa
 
     otherwise,true.
   """
-  pass
- def IsUnrestricted(self):
-  """
+        pass
+
+    def IsUnrestricted(self):
+        """
   IsUnrestricted(self: DnsPermission) -> bool
 
   
@@ -90,9 +101,10 @@ class DnsPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStackWa
 
     System.Security.Permissions.PermissionState.Unrestricted; otherwise,false.
   """
-  pass
- def ToXml(self):
-  """
+        pass
+
+    def ToXml(self):
+        """
   ToXml(self: DnsPermission) -> SecurityElement
 
   
@@ -103,9 +115,10 @@ class DnsPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStackWa
 
     security object,including state information.
   """
-  pass
- def Union(self,target):
-  """
+        pass
+
+    def Union(self, target):
+        """
   Union(self: DnsPermission,target: IPermission) -> IPermission
 
   
@@ -130,15 +143,19 @@ class DnsPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStackWa
 
     unrestricted; otherwise,it returns a System.Net.DnsPermission instance that is restricted.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,state):
-  """ __new__(cls: type,state: PermissionState) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, state):
+        """ __new__(cls: type,state: PermissionState) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass

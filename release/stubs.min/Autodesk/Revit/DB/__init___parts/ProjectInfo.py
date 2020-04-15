@@ -1,28 +1,36 @@
-class ProjectInfo(Element,IDisposable):
- """ An object that represents a Project Information within the Autodesk Revit project. """
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Address=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get or Set the Project Address of the Project Information.
+class ProjectInfo(Element, IDisposable):
+    """ An object that represents a Project Information within the Autodesk Revit project. """
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Address = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get or Set the Project Address of the Project Information.
 
 
 
@@ -34,8 +42,8 @@ Set: Address(self: ProjectInfo)=value
 
 """
 
- Author=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get or Set the Project Author of the Project Information.
+    Author = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get or Set the Project Author of the Project Information.
 
 
 
@@ -47,8 +55,10 @@ Set: Author(self: ProjectInfo)=value
 
 """
 
- BuildingName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get or Set the Building Name of the Project Information.
+    BuildingName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get or Set the Building Name of the Project Information.
 
 
 
@@ -60,8 +70,10 @@ Set: BuildingName(self: ProjectInfo)=value
 
 """
 
- ClientName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get or Set the Client Name of the Project Information.
+    ClientName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get or Set the Client Name of the Project Information.
 
 
 
@@ -73,8 +85,8 @@ Set: ClientName(self: ProjectInfo)=value
 
 """
 
- IssueDate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get or Set the Project Issue Date of the Project Information.
+    IssueDate = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get or Set the Project Issue Date of the Project Information.
 
 
 
@@ -86,8 +98,8 @@ Set: IssueDate(self: ProjectInfo)=value
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get or Set the Project Name of the Project Information.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get or Set the Project Name of the Project Information.
 
 
 
@@ -99,8 +111,8 @@ Set: Name(self: ProjectInfo)=value
 
 """
 
- Number=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get or Set the Project Number of the Project Information.
+    Number = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get or Set the Project Number of the Project Information.
 
 
 
@@ -112,8 +124,10 @@ Set: Number(self: ProjectInfo)=value
 
 """
 
- OrganizationDescription=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get or Set the Organization Description of the Project Information.
+    OrganizationDescription = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get or Set the Organization Description of the Project Information.
 
 
 
@@ -125,8 +139,10 @@ Set: OrganizationDescription(self: ProjectInfo)=value
 
 """
 
- OrganizationName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get or Set the Organization Name of the Project Information.
+    OrganizationName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get or Set the Organization Name of the Project Information.
 
 
 
@@ -138,8 +154,8 @@ Set: OrganizationName(self: ProjectInfo)=value
 
 """
 
- Status=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get or Set the Project Status of the Project Information.
+    Status = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get or Set the Project Status of the Project Information.
 
 
 
@@ -150,5 +166,3 @@ Get: Status(self: ProjectInfo) -> str
 Set: Status(self: ProjectInfo)=value
 
 """
-
-

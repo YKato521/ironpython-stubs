@@ -1,7 +1,8 @@
 class IItemContainerGenerator:
- """ An interface that is implemented by classes which are responsible for generating user interface (UI) content on behalf of a host. """
- def GenerateNext(self,isNewlyRealized=None):
-  """
+    """ An interface that is implemented by classes which are responsible for generating user interface (UI) content on behalf of a host. """
+
+    def GenerateNext(self, isNewlyRealized=None):
+        """
   GenerateNext(self: IItemContainerGenerator) -> (DependencyObject,bool)
 
   
@@ -28,9 +29,10 @@ class IItemContainerGenerator:
 
     next item.
   """
-  pass
- def GeneratorPositionFromIndex(self,itemIndex):
-  """
+        pass
+
+    def GeneratorPositionFromIndex(self, itemIndex):
+        """
   GeneratorPositionFromIndex(self: IItemContainerGenerator,itemIndex: int) -> GeneratorPosition
 
   
@@ -49,9 +51,10 @@ class IItemContainerGenerator:
 
     specified index.
   """
-  pass
- def GetItemContainerGeneratorForPanel(self,panel):
-  """
+        pass
+
+    def GetItemContainerGeneratorForPanel(self, panel):
+        """
   GetItemContainerGeneratorForPanel(self: IItemContainerGenerator,panel: Panel) -> ItemContainerGenerator
 
   
@@ -68,9 +71,10 @@ class IItemContainerGenerator:
 
    Returns: An System.Windows.Controls.ItemContainerGenerator appropriate for use by the specified panel.
   """
-  pass
- def IndexFromGeneratorPosition(self,position):
-  """
+        pass
+
+    def IndexFromGeneratorPosition(self, position):
+        """
   IndexFromGeneratorPosition(self: IItemContainerGenerator,position: GeneratorPosition) -> int
 
   
@@ -93,9 +97,10 @@ class IItemContainerGenerator:
 
     System.Windows.Controls.Primitives.GeneratorPosition.
   """
-  pass
- def PrepareItemContainer(self,container):
-  """
+        pass
+
+    def PrepareItemContainer(self, container):
+        """
   PrepareItemContainer(self: IItemContainerGenerator,container: DependencyObject)
 
    Prepares the specified element as the container for the corresponding item.
@@ -106,9 +111,10 @@ class IItemContainerGenerator:
 
     erload:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext.
   """
-  pass
- def Remove(self,position,count):
-  """
+        pass
+
+    def Remove(self, position, count):
+        """
   Remove(self: IItemContainerGenerator,position: GeneratorPosition,count: int)
 
    Removes one or more generated (realized) items.
@@ -123,16 +129,18 @@ class IItemContainerGenerator:
 
    count: The System.Int32 number of elements to remove,starting at position.
   """
-  pass
- def RemoveAll(self):
-  """
+        pass
+
+    def RemoveAll(self):
+        """
   RemoveAll(self: IItemContainerGenerator)
 
    Removes all generated (realized) items.
   """
-  pass
- def StartAt(self,position,direction,allowStartAtRealizedItem=None):
-  """
+        pass
+
+    def StartAt(self, position, direction, allowStartAtRealizedItem=None):
+        """
   StartAt(self: IItemContainerGenerator,position: GeneratorPosition,direction: GeneratorDirection,allowStartAtRealizedItem: bool) -> IDisposable
 
   
@@ -189,7 +197,8 @@ class IItemContainerGenerator:
 
    Returns: An System.IDisposable object that tracks the lifetime of the generation process.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

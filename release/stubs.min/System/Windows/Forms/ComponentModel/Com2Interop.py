@@ -8,8 +8,9 @@
 # no functions
 # classes
 
+
 class Com2Variant(object):
- """
+    """
  Facilitates proper recognition of a variant type.
 
  
@@ -17,10 +18,12 @@ class Com2Variant(object):
  Com2Variant()
  """
 
+
 class ICom2PropertyPageDisplayService:
- """ Defines a method that shows the property page for an ActiveX control. """
- def ShowPropertyPage(self,title,component,dispid,pageGuid,parentHandle):
-  """
+    """ Defines a method that shows the property page for an ActiveX control. """
+
+    def ShowPropertyPage(self, title, component, dispid, pageGuid, parentHandle):
+        """
   ShowPropertyPage(self: ICom2PropertyPageDisplayService,title: str,component: object,dispid: int,pageGuid: Guid,parentHandle: IntPtr)
 
    Shows a property page for the specified object.
@@ -37,22 +40,26 @@ class ICom2PropertyPageDisplayService:
 
    parentHandle: A IntPtr that is the handle of the parent control of the property page.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
 
 class IComPropertyBrowser:
- """ Allows Visual Studio to communicate internally with the System.Windows.Forms.PropertyGrid control. """
- def DropDownDone(self):
-  """
+    """ Allows Visual Studio to communicate internally with the System.Windows.Forms.PropertyGrid control. """
+
+    def DropDownDone(self):
+        """
   DropDownDone(self: IComPropertyBrowser)
 
    Closes any open drop-down controls on the System.Windows.Forms.PropertyGrid control.
   """
-  pass
- def EnsurePendingChangesCommitted(self):
-  """
+        pass
+
+    def EnsurePendingChangesCommitted(self):
+        """
   EnsurePendingChangesCommitted(self: IComPropertyBrowser) -> bool
 
   
@@ -61,18 +68,20 @@ class IComPropertyBrowser:
 
    Returns: true if the System.Windows.Forms.PropertyGrid successfully commits changes; otherwise,false.
   """
-  pass
- def HandleF4(self):
-  """
+        pass
+
+    def HandleF4(self):
+        """
   HandleF4(self: IComPropertyBrowser)
 
    Activates the System.Windows.Forms.PropertyGrid control when the user chooses Properties for a 
 
     control in Design view.
   """
-  pass
- def LoadState(self,key):
-  """
+        pass
+
+    def LoadState(self, key):
+        """
   LoadState(self: IComPropertyBrowser,key: RegistryKey)
 
    Loads user states from the registry into the System.Windows.Forms.PropertyGrid control.
@@ -81,9 +90,10 @@ class IComPropertyBrowser:
 
    key: The registry key that contains the user states.
   """
-  pass
- def SaveState(self,key):
-  """
+        pass
+
+    def SaveState(self, key):
+        """
   SaveState(self: IComPropertyBrowser,key: RegistryKey)
 
    Saves user states from the System.Windows.Forms.PropertyGrid control to the registry.
@@ -92,12 +102,16 @@ class IComPropertyBrowser:
 
    key: The registry key that contains the user states.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- InPropertySet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Windows.Forms.PropertyGrid control is currently setting one of the properties of its selected object.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    InPropertySet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Windows.Forms.PropertyGrid control is currently setting one of the properties of its selected object.
 
 
 
@@ -107,7 +121,4 @@ Get: InPropertySet(self: IComPropertyBrowser) -> bool
 
 """
 
-
- ComComponentNameChanged=None
-
-
+    ComComponentNameChanged = None

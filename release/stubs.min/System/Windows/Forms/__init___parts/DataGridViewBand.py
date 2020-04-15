@@ -1,7 +1,8 @@
-class DataGridViewBand(DataGridViewElement,ICloneable,IDisposable):
- """ Represents a linear collection of elements in a System.Windows.Forms.DataGridView control. """
- def Clone(self):
-  """
+class DataGridViewBand(DataGridViewElement, ICloneable, IDisposable):
+    """ Represents a linear collection of elements in a System.Windows.Forms.DataGridView control. """
+
+    def Clone(self):
+        """
   Clone(self: DataGridViewBand) -> object
 
   
@@ -10,23 +11,26 @@ class DataGridViewBand(DataGridViewElement,ICloneable,IDisposable):
 
    Returns: An System.Object that represents the cloned System.Windows.Forms.DataGridViewBand.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: DataGridViewBand)
 
    Releases all resources used by the System.Windows.Forms.DataGridViewBand.
   """
-  pass
- def OnDataGridViewChanged(self,*args):
-  """
+        pass
+
+    def OnDataGridViewChanged(self, *args):
+        """
   OnDataGridViewChanged(self: DataGridViewBand)
 
    Called when the band is associated with a different System.Windows.Forms.DataGridView.
   """
-  pass
- def RaiseCellClick(self,*args):
-  """
+        pass
+
+    def RaiseCellClick(self, *args):
+        """
   RaiseCellClick(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellClick event.
@@ -35,9 +39,10 @@ class DataGridViewBand(DataGridViewElement,ICloneable,IDisposable):
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseCellContentClick(self,*args):
-  """
+        pass
+
+    def RaiseCellContentClick(self, *args):
+        """
   RaiseCellContentClick(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellContentClick event.
@@ -46,9 +51,10 @@ class DataGridViewBand(DataGridViewElement,ICloneable,IDisposable):
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseCellContentDoubleClick(self,*args):
-  """
+        pass
+
+    def RaiseCellContentDoubleClick(self, *args):
+        """
   RaiseCellContentDoubleClick(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellContentDoubleClick event.
@@ -57,9 +63,10 @@ class DataGridViewBand(DataGridViewElement,ICloneable,IDisposable):
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseCellValueChanged(self,*args):
-  """
+        pass
+
+    def RaiseCellValueChanged(self, *args):
+        """
   RaiseCellValueChanged(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellValueChanged event.
@@ -68,9 +75,10 @@ class DataGridViewBand(DataGridViewElement,ICloneable,IDisposable):
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseDataError(self,*args):
-  """
+        pass
+
+    def RaiseDataError(self, *args):
+        """
   RaiseDataError(self: DataGridViewElement,e: DataGridViewDataErrorEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.DataError event.
@@ -79,9 +87,10 @@ class DataGridViewBand(DataGridViewElement,ICloneable,IDisposable):
 
    e: A System.Windows.Forms.DataGridViewDataErrorEventArgs that contains the event data.
   """
-  pass
- def RaiseMouseWheel(self,*args):
-  """
+        pass
+
+    def RaiseMouseWheel(self, *args):
+        """
   RaiseMouseWheel(self: DataGridViewElement,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseWheel event.
@@ -90,9 +99,10 @@ class DataGridViewBand(DataGridViewElement,ICloneable,IDisposable):
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: DataGridViewBand) -> str
 
   
@@ -101,30 +111,37 @@ class DataGridViewBand(DataGridViewElement,ICloneable,IDisposable):
 
    Returns: A System.String that represents the current System.Windows.Forms.DataGridViewBand.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- ContextMenuStrip=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the shortcut menu for the band.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    ContextMenuStrip = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the shortcut menu for the band.
 
 
 
@@ -136,8 +153,10 @@ Set: ContextMenuStrip(self: DataGridViewBand)=value
 
 """
 
- DefaultCellStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the default cell style of the band.
+    DefaultCellStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the default cell style of the band.
 
 
 
@@ -149,8 +168,10 @@ Set: DefaultCellStyle(self: DataGridViewBand)=value
 
 """
 
- DefaultHeaderCellType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the run-time type of the default header cell.
+    DefaultHeaderCellType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the run-time type of the default header cell.
 
 
 
@@ -162,8 +183,8 @@ Set: DefaultHeaderCellType(self: DataGridViewBand)=value
 
 """
 
- Displayed=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the band is currently displayed onscreen.
+    Displayed = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the band is currently displayed onscreen.
 
 
 
@@ -173,8 +194,8 @@ Get: Displayed(self: DataGridViewBand) -> bool
 
 """
 
- Frozen=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the band will move when a user scrolls through the System.Windows.Forms.DataGridView.
+    Frozen = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the band will move when a user scrolls through the System.Windows.Forms.DataGridView.
 
 
 
@@ -186,8 +207,10 @@ Set: Frozen(self: DataGridViewBand)=value
 
 """
 
- HasDefaultCellStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Windows.Forms.DataGridViewBand.DefaultCellStyle property has been set.
+    HasDefaultCellStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Windows.Forms.DataGridViewBand.DefaultCellStyle property has been set.
 
 
 
@@ -197,15 +220,17 @@ Get: HasDefaultCellStyle(self: DataGridViewBand) -> bool
 
 """
 
- HeaderCellCore=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the header cell of the System.Windows.Forms.DataGridViewBand.
+    HeaderCellCore = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the header cell of the System.Windows.Forms.DataGridViewBand.
 
 
 
 """
 
- Index=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the relative position of the band within the System.Windows.Forms.DataGridView control.
+    Index = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the relative position of the band within the System.Windows.Forms.DataGridView control.
 
 
 
@@ -215,8 +240,10 @@ Get: Index(self: DataGridViewBand) -> int
 
 """
 
- InheritedStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the cell style in effect for the current band,taking into account style inheritance.
+    InheritedStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the cell style in effect for the current band,taking into account style inheritance.
 
 
 
@@ -226,15 +253,15 @@ Get: InheritedStyle(self: DataGridViewBand) -> DataGridViewCellStyle
 
 """
 
- IsRow=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the band represents a row.
+    IsRow = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the band represents a row.
 
 
 
 """
 
- ReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the user can edit the band's cells.
+    ReadOnly = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the user can edit the band's cells.
 
 
 
@@ -246,8 +273,8 @@ Set: ReadOnly(self: DataGridViewBand)=value
 
 """
 
- Resizable=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the band can be resized in the user interface (UI).
+    Resizable = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the band can be resized in the user interface (UI).
 
 
 
@@ -259,8 +286,8 @@ Set: Resizable(self: DataGridViewBand)=value
 
 """
 
- Selected=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the band is in a selected user interface (UI) state.
+    Selected = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the band is in a selected user interface (UI) state.
 
 
 
@@ -272,8 +299,8 @@ Set: Selected(self: DataGridViewBand)=value
 
 """
 
- Tag=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the object that contains data to associate with the band.
+    Tag = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the object that contains data to associate with the band.
 
 
 
@@ -285,8 +312,8 @@ Set: Tag(self: DataGridViewBand)=value
 
 """
 
- Visible=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the band is visible to the user.
+    Visible = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the band is visible to the user.
 
 
 
@@ -297,5 +324,3 @@ Get: Visible(self: DataGridViewBand) -> bool
 Set: Visible(self: DataGridViewBand)=value
 
 """
-
-

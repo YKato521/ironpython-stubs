@@ -1,7 +1,8 @@
 class ICustomFactory:
- """ Enables users to write activation code for managed objects that extend System.MarshalByRefObject. """
- def CreateInstance(self,serverType):
-  """
+    """ Enables users to write activation code for managed objects that extend System.MarshalByRefObject. """
+
+    def CreateInstance(self, serverType):
+        """
   CreateInstance(self: ICustomFactory,serverType: Type) -> MarshalByRefObject
 
   
@@ -14,7 +15,8 @@ class ICustomFactory:
 
    Returns: A System.MarshalByRefObject associated with the specified type.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

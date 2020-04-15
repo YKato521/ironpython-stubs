@@ -1,5 +1,13 @@
-class Interpolator(RhinoList[float],IList[float],ICollection[float],IEnumerable[float],IEnumerable,IList,ICollection):
- """
+class Interpolator(
+    RhinoList[float],
+    IList[float],
+    ICollection[float],
+    IEnumerable[float],
+    IEnumerable,
+    IList,
+    ICollection,
+):
+    """
  Exposes a set of standard numeric interpolation algorithms.
 
  
@@ -14,8 +22,9 @@ class Interpolator(RhinoList[float],IList[float],ICollection[float],IEnumerable[
 
  Interpolator(amount: int,defaultValue: float)
  """
- def InterpolateCatmullRom(self,t):
-  """
+
+    def InterpolateCatmullRom(self, t):
+        """
   InterpolateCatmullRom(self: Interpolator,t: float) -> float
 
   
@@ -38,9 +47,10 @@ class Interpolator(RhinoList[float],IList[float],ICollection[float],IEnumerable[
 
    Returns: The sampled value at t.
   """
-  pass
- def InterpolateCosine(self,t):
-  """
+        pass
+
+    def InterpolateCosine(self, t):
+        """
   InterpolateCosine(self: Interpolator,t: float) -> float
 
   
@@ -63,9 +73,10 @@ class Interpolator(RhinoList[float],IList[float],ICollection[float],IEnumerable[
 
    Returns: The sampled value at t.
   """
-  pass
- def InterpolateCubic(self,t):
-  """
+        pass
+
+    def InterpolateCubic(self, t):
+        """
   InterpolateCubic(self: Interpolator,t: float) -> float
 
   
@@ -88,9 +99,10 @@ class Interpolator(RhinoList[float],IList[float],ICollection[float],IEnumerable[
 
    Returns: The sampled value at t.
   """
-  pass
- def InterpolateLinear(self,t):
-  """
+        pass
+
+    def InterpolateLinear(self, t):
+        """
   InterpolateLinear(self: Interpolator,t: float) -> float
 
   
@@ -113,9 +125,10 @@ class Interpolator(RhinoList[float],IList[float],ICollection[float],IEnumerable[
 
    Returns: The sampled value at t.
   """
-  pass
- def InterpolateNearestNeighbour(self,t):
-  """
+        pass
+
+    def InterpolateNearestNeighbour(self, t):
+        """
   InterpolateNearestNeighbour(self: Interpolator,t: float) -> float
 
   
@@ -138,19 +151,23 @@ class Interpolator(RhinoList[float],IList[float],ICollection[float],IEnumerable[
 
    Returns: The sampled value at t.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,initialCapacity: int)
@@ -161,12 +178,14 @@ class Interpolator(RhinoList[float],IList[float],ICollection[float],IEnumerable[
 
   __new__(cls: type,amount: int,defaultValue: float)
   """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Cyclical=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether or not the values inside this Interpolator 
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Cyclical = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether or not the values inside this Interpolator 
 
    are to be treated as cyclical (i.e. circular).
 
@@ -179,5 +198,3 @@ Get: Cyclical(self: Interpolator) -> bool
 Set: Cyclical(self: Interpolator)=value
 
 """
-
-

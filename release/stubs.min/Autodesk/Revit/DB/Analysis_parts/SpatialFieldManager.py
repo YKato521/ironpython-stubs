@@ -1,11 +1,12 @@
-class SpatialFieldManager(Element,IDisposable):
- """
+class SpatialFieldManager(Element, IDisposable):
+    """
  Exposes all API for an external analysis application.
 
     Its primary role is creation,deletion and modification of SpatialFieldElement elements.
  """
- def AddSpatialFieldPrimitive(self,*__args):
-  """
+
+    def AddSpatialFieldPrimitive(self, *__args):
+        """
   AddSpatialFieldPrimitive(self: SpatialFieldManager,reference: Reference) -> int
 
   
@@ -92,17 +93,19 @@ class SpatialFieldManager(Element,IDisposable):
 
    Returns: Unique index of primitive for future references
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: SpatialFieldManager)
 
    Clear all analysis results managed by this manager object
   """
-  pass
- @staticmethod
- def CreateSpatialFieldManager(view,numberOfMeasurements):
-  """
+        pass
+
+    @staticmethod
+    def CreateSpatialFieldManager(view, numberOfMeasurements):
+        """
   CreateSpatialFieldManager(view: View,numberOfMeasurements: int) -> SpatialFieldManager
 
   
@@ -123,15 +126,18 @@ class SpatialFieldManager(Element,IDisposable):
 
    Returns: Manager object for the view passed in the argument
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetLegend(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetLegend(self):
+        """
   GetLegend(self: SpatialFieldManager) -> AnalysisDisplayLegend
 
   
@@ -140,9 +146,10 @@ class SpatialFieldManager(Element,IDisposable):
 
    Returns: The legend element or NULL
   """
-  pass
- def GetMaximum(self,resultIndex,rawValue):
-  """
+        pass
+
+    def GetMaximum(self, resultIndex, rawValue):
+        """
   GetMaximum(self: SpatialFieldManager,resultIndex: int,rawValue: bool) -> float
 
   
@@ -161,9 +168,10 @@ class SpatialFieldManager(Element,IDisposable):
 
    Returns: Resulting maximum value
   """
-  pass
- def GetMinimum(self,resultIndex,rawValue):
-  """
+        pass
+
+    def GetMinimum(self, resultIndex, rawValue):
+        """
   GetMinimum(self: SpatialFieldManager,resultIndex: int,rawValue: bool) -> float
 
   
@@ -182,18 +190,20 @@ class SpatialFieldManager(Element,IDisposable):
 
    Returns: Resulting minimum value
   """
-  pass
- def GetRegisteredResults(self):
-  """
+        pass
+
+    def GetRegisteredResults(self):
+        """
   GetRegisteredResults(self: SpatialFieldManager) -> IList[int]
 
   
 
    Returns an array of indices of all registered results
   """
-  pass
- def GetResultSchema(self,idx):
-  """
+        pass
+
+    def GetResultSchema(self, idx):
+        """
   GetResultSchema(self: SpatialFieldManager,idx: int) -> AnalysisResultSchema
 
   
@@ -204,10 +214,11 @@ class SpatialFieldManager(Element,IDisposable):
 
    idx: Index of registered result schema
   """
-  pass
- @staticmethod
- def GetSpatialFieldManager(view):
-  """
+        pass
+
+    @staticmethod
+    def GetSpatialFieldManager(view):
+        """
   GetSpatialFieldManager(view: View) -> SpatialFieldManager
 
   
@@ -220,9 +231,10 @@ class SpatialFieldManager(Element,IDisposable):
 
    Returns: Manager object for the view passed in the argument
   """
-  pass
- def IsResultSchemaNameUnique(self,name,resultIndexToSkip):
-  """
+        pass
+
+    def IsResultSchemaNameUnique(self, name, resultIndexToSkip):
+        """
   IsResultSchemaNameUnique(self: SpatialFieldManager,name: str,resultIndexToSkip: int) -> bool
 
   
@@ -241,10 +253,11 @@ class SpatialFieldManager(Element,IDisposable):
 
    Returns: True if name is unique,false otherwise.
   """
-  pass
- @staticmethod
- def IsTextTypeIdValid(textTypeId,doc):
-  """
+        pass
+
+    @staticmethod
+    def IsTextTypeIdValid(textTypeId, doc):
+        """
   IsTextTypeIdValid(textTypeId: ElementId,doc: Document) -> bool
 
   
@@ -259,9 +272,10 @@ class SpatialFieldManager(Element,IDisposable):
 
    Returns: True if text type id is valid,false otherwise.
   """
-  pass
- def RegisterResult(self,resultSchema):
-  """
+        pass
+
+    def RegisterResult(self, resultSchema):
+        """
   RegisterResult(self: SpatialFieldManager,resultSchema: AnalysisResultSchema) -> int
 
   
@@ -274,12 +288,14 @@ class SpatialFieldManager(Element,IDisposable):
 
    Returns: Unique index assigned to the result
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def RemoveSpatialFieldPrimitive(self,idx):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def RemoveSpatialFieldPrimitive(self, idx):
+        """
   RemoveSpatialFieldPrimitive(self: SpatialFieldManager,idx: int)
 
    Removes analysis results primitive identified by the unique index
@@ -288,18 +304,22 @@ class SpatialFieldManager(Element,IDisposable):
 
    idx: Unique index identifying the primitive
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetMeasurementDescriptions(self,measurementDescriptions):
-  """ SetMeasurementDescriptions(self: SpatialFieldManager,measurementDescriptions: IList[str]) """
-  pass
- def SetMeasurementNames(self,measurementNames):
-  """ SetMeasurementNames(self: SpatialFieldManager,measurementNames: IList[str]) """
-  pass
- def SetResultSchema(self,idx,resultSchema):
-  """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetMeasurementDescriptions(self, measurementDescriptions):
+        """ SetMeasurementDescriptions(self: SpatialFieldManager,measurementDescriptions: IList[str]) """
+        pass
+
+    def SetMeasurementNames(self, measurementNames):
+        """ SetMeasurementNames(self: SpatialFieldManager,measurementNames: IList[str]) """
+        pass
+
+    def SetResultSchema(self, idx, resultSchema):
+        """
   SetResultSchema(self: SpatialFieldManager,idx: int,resultSchema: AnalysisResultSchema)
 
    Sets a new value for an existing result schema in the result registry
@@ -310,9 +330,12 @@ class SpatialFieldManager(Element,IDisposable):
 
    resultSchema: Result schema replacing the existent one
   """
-  pass
- def UpdateSpatialFieldPrimitive(self,idx,fieldDomainPoints,fieldValues,resultIndex):
-  """
+        pass
+
+    def UpdateSpatialFieldPrimitive(
+        self, idx, fieldDomainPoints, fieldValues, resultIndex
+    ):
+        """
   UpdateSpatialFieldPrimitive(self: SpatialFieldManager,idx: int,fieldDomainPoints: FieldDomainPoints,fieldValues: FieldValues,resultIndex: int)
 
    Populates analysis results data (or replaces the existing data) in the existing 
@@ -349,18 +372,24 @@ class SpatialFieldManager(Element,IDisposable):
 
    resultIndex: Unique index identifying the result schema
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- CurrentMeasurement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Stores the currently displayed measurement
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    CurrentMeasurement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Stores the currently displayed measurement
 
 
 
@@ -372,8 +401,10 @@ Set: CurrentMeasurement(self: SpatialFieldManager)=value
 
 """
 
- LegendPosition=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Stores current position of analysis results legend element in view
+    LegendPosition = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Stores current position of analysis results legend element in view
 
 
 
@@ -385,8 +416,10 @@ Set: LegendPosition(self: SpatialFieldManager)=value
 
 """
 
- LegendShowConfigurationName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If true legend contains analysis configuration name.
+    LegendShowConfigurationName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """If true legend contains analysis configuration name.
 
 
 
@@ -398,8 +431,10 @@ Set: LegendShowConfigurationName(self: SpatialFieldManager)=value
 
 """
 
- LegendShowDescription=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If true legend contains analysis description.
+    LegendShowDescription = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """If true legend contains analysis description.
 
 
 
@@ -411,8 +446,10 @@ Set: LegendShowDescription(self: SpatialFieldManager)=value
 
 """
 
- LegendTextTypeId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Stores element id of text associated with common (result-independent) part of legend in view.
+    LegendTextTypeId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Stores element id of text associated with common (result-independent) part of legend in view.
 
 
 
@@ -424,8 +461,10 @@ Set: LegendTextTypeId(self: SpatialFieldManager)=value
 
 """
 
- NumberOfMeasurements=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Stores the total number of measurements
+    NumberOfMeasurements = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Stores the total number of measurements
 
 
 
@@ -435,8 +474,10 @@ Get: NumberOfMeasurements(self: SpatialFieldManager) -> int
 
 """
 
- ResultsVisibleInView=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Enables analysis results visibility in the view.
+    ResultsVisibleInView = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Enables analysis results visibility in the view.
 
 
 
@@ -448,8 +489,10 @@ Set: ResultsVisibleInView(self: SpatialFieldManager)=value
 
 """
 
- UseRangeForAllMeasurements=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Governs how minimum and maximum values (the data range) are calculated.
+    UseRangeForAllMeasurements = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Governs how minimum and maximum values (the data range) are calculated.
 
 
 
@@ -460,5 +503,3 @@ Get: UseRangeForAllMeasurements(self: SpatialFieldManager) -> bool
 Set: UseRangeForAllMeasurements(self: SpatialFieldManager)=value
 
 """
-
-

@@ -1,16 +1,18 @@
 class Clipboard(object):
- """ Provides methods to place data on and retrieve data from the system Clipboard. This class cannot be inherited. """
- @staticmethod
- def Clear():
-  """
+    """ Provides methods to place data on and retrieve data from the system Clipboard. This class cannot be inherited. """
+
+    @staticmethod
+    def Clear():
+        """
   Clear()
 
    Removes all data from the Clipboard.
   """
-  pass
- @staticmethod
- def ContainsAudio():
-  """
+        pass
+
+    @staticmethod
+    def ContainsAudio():
+        """
   ContainsAudio() -> bool
 
   
@@ -23,10 +25,11 @@ class Clipboard(object):
 
    Returns: true if there is audio data on the Clipboard; otherwise,false.
   """
-  pass
- @staticmethod
- def ContainsData(format):
-  """
+        pass
+
+    @staticmethod
+    def ContainsData(format):
+        """
   ContainsData(format: str) -> bool
 
   
@@ -45,10 +48,11 @@ class Clipboard(object):
 
     that format; otherwise,false.
   """
-  pass
- @staticmethod
- def ContainsFileDropList():
-  """
+        pass
+
+    @staticmethod
+    def ContainsFileDropList():
+        """
   ContainsFileDropList() -> bool
 
   
@@ -61,10 +65,11 @@ class Clipboard(object):
 
    Returns: true if there is a file drop list on the Clipboard; otherwise,false.
   """
-  pass
- @staticmethod
- def ContainsImage():
-  """
+        pass
+
+    @staticmethod
+    def ContainsImage():
+        """
   ContainsImage() -> bool
 
   
@@ -77,10 +82,11 @@ class Clipboard(object):
 
    Returns: true if there is image data on the Clipboard; otherwise,false.
   """
-  pass
- @staticmethod
- def ContainsText(format=None):
-  """
+        pass
+
+    @staticmethod
+    def ContainsText(format=None):
+        """
   ContainsText(format: TextDataFormat) -> bool
 
   
@@ -109,10 +115,11 @@ class Clipboard(object):
 
    Returns: true if there is text data on the Clipboard; otherwise,false.
   """
-  pass
- @staticmethod
- def GetAudioStream():
-  """
+        pass
+
+    @staticmethod
+    def GetAudioStream():
+        """
   GetAudioStream() -> Stream
 
   
@@ -123,10 +130,11 @@ class Clipboard(object):
 
     the System.Windows.Forms.DataFormats.WaveAudio format.
   """
-  pass
- @staticmethod
- def GetData(format):
-  """
+        pass
+
+    @staticmethod
+    def GetData(format):
+        """
   GetData(format: str) -> object
 
   
@@ -141,10 +149,11 @@ class Clipboard(object):
 
     data that is in the specified format or can be converted to that format.
   """
-  pass
- @staticmethod
- def GetDataObject():
-  """
+        pass
+
+    @staticmethod
+    def GetDataObject():
+        """
   GetDataObject() -> IDataObject
 
   
@@ -155,10 +164,11 @@ class Clipboard(object):
 
     if there is no data on the Clipboard.
   """
-  pass
- @staticmethod
- def GetFileDropList():
-  """
+        pass
+
+    @staticmethod
+    def GetFileDropList():
+        """
   GetFileDropList() -> StringCollection
 
   
@@ -171,10 +181,11 @@ class Clipboard(object):
 
     be converted to that format.
   """
-  pass
- @staticmethod
- def GetImage():
-  """
+        pass
+
+    @staticmethod
+    def GetImage():
+        """
   GetImage() -> Image
 
   
@@ -187,10 +198,11 @@ class Clipboard(object):
 
     converted to that format.
   """
-  pass
- @staticmethod
- def GetText(format=None):
-  """
+        pass
+
+    @staticmethod
+    def GetText(format=None):
+        """
   GetText(format: TextDataFormat) -> str
 
   
@@ -227,10 +239,11 @@ class Clipboard(object):
 
     format,depending on the operating system.
   """
-  pass
- @staticmethod
- def SetAudio(*__args):
-  """
+        pass
+
+    @staticmethod
+    def SetAudio(*__args):
+        """
   SetAudio(audioStream: Stream)
 
    Clears the Clipboard and then adds a System.IO.Stream in the 
@@ -255,10 +268,11 @@ class Clipboard(object):
 
    audioBytes: A System.Byte array containing the audio data.
   """
-  pass
- @staticmethod
- def SetData(format,data):
-  """
+        pass
+
+    @staticmethod
+    def SetData(format, data):
+        """
   SetData(format: str,data: object)
 
    Clears the Clipboard and then adds data in the specified format.
@@ -269,10 +283,11 @@ class Clipboard(object):
 
    data: An System.Object representing the data to add.
   """
-  pass
- @staticmethod
- def SetDataObject(data,copy=None,retryTimes=None,retryDelay=None):
-  """
+        pass
+
+    @staticmethod
+    def SetDataObject(data, copy=None, retryTimes=None, retryDelay=None):
+        """
   SetDataObject(data: object,copy: bool,retryTimes: int,retryDelay: int)
 
    Clears the Clipboard and then attempts to place data on it the specified number of times and 
@@ -315,10 +330,11 @@ class Clipboard(object):
 
    data: The data to place on the Clipboard.
   """
-  pass
- @staticmethod
- def SetFileDropList(filePaths):
-  """
+        pass
+
+    @staticmethod
+    def SetFileDropList(filePaths):
+        """
   SetFileDropList(filePaths: StringCollection)
 
    Clears the Clipboard and then adds a collection of file names in the 
@@ -331,10 +347,11 @@ class Clipboard(object):
 
    filePaths: A System.Collections.Specialized.StringCollection containing the file names.
   """
-  pass
- @staticmethod
- def SetImage(image):
-  """
+        pass
+
+    @staticmethod
+    def SetImage(image):
+        """
   SetImage(image: Image)
 
    Clears the Clipboard and then adds an System.Drawing.Image in the 
@@ -347,10 +364,11 @@ class Clipboard(object):
 
    image: The System.Drawing.Image to add to the Clipboard.
   """
-  pass
- @staticmethod
- def SetText(text,format=None):
-  """
+        pass
+
+    @staticmethod
+    def SetText(text, format=None):
+        """
   SetText(text: str,format: TextDataFormat)
 
    Clears the Clipboard and then adds text data in the format indicated by the specified 
@@ -377,4 +395,4 @@ class Clipboard(object):
 
    text: The text to add to the Clipboard.
   """
-  pass
+        pass

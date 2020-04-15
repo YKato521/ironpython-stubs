@@ -1,8 +1,9 @@
 class LayoutInformation(object):
- """ Defines methods that provide additional information about the layout state of an element. """
- @staticmethod
- def GetLayoutClip(element):
-  """
+    """ Defines methods that provide additional information about the layout state of an element. """
+
+    @staticmethod
+    def GetLayoutClip(element):
+        """
   GetLayoutClip(element: FrameworkElement) -> Geometry
 
   
@@ -15,10 +16,11 @@ class LayoutInformation(object):
 
    Returns: A System.Windows.Media.Geometry that represents the visible region of an element.
   """
-  pass
- @staticmethod
- def GetLayoutExceptionElement(dispatcher):
-  """
+        pass
+
+    @staticmethod
+    def GetLayoutExceptionElement(dispatcher):
+        """
   GetLayoutExceptionElement(dispatcher: Dispatcher) -> UIElement
 
   
@@ -41,10 +43,11 @@ class LayoutInformation(object):
 
     unhandled exception.
   """
-  pass
- @staticmethod
- def GetLayoutSlot(element):
-  """
+        pass
+
+    @staticmethod
+    def GetLayoutSlot(element):
+        """
   GetLayoutSlot(element: FrameworkElement) -> Rect
 
   
@@ -61,10 +64,10 @@ class LayoutInformation(object):
 
    Returns: A System.Windows.Rect that represents the layout slot of the element.
   """
-  pass
- __all__=[
-  'GetLayoutClip',
-  'GetLayoutExceptionElement',
-  'GetLayoutSlot',
- ]
+        pass
 
+    __all__ = [
+        "GetLayoutClip",
+        "GetLayoutExceptionElement",
+        "GetLayoutSlot",
+    ]

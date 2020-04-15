@@ -1,7 +1,8 @@
-class FileDialog(CommonDialog,IComponent,IDisposable):
- """ Displays a dialog box from which the user can select a file. """
- def Dispose(self):
-  """
+class FileDialog(CommonDialog, IComponent, IDisposable):
+    """ Displays a dialog box from which the user can select a file. """
+
+    def Dispose(self):
+        """
   Dispose(self: Component,disposing: bool)
 
    Releases the unmanaged resources used by the System.ComponentModel.Component and optionally 
@@ -14,9 +15,10 @@ class FileDialog(CommonDialog,IComponent,IDisposable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -35,9 +37,10 @@ class FileDialog(CommonDialog,IComponent,IDisposable):
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def HookProc(self,*args):
-  """
+        pass
+
+    def HookProc(self, *args):
+        """
   HookProc(self: FileDialog,hWnd: IntPtr,msg: int,wparam: IntPtr,lparam: IntPtr) -> IntPtr
 
   
@@ -62,9 +65,10 @@ class FileDialog(CommonDialog,IComponent,IDisposable):
 
     if the default dialog box procedure ignores the message.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -95,9 +99,10 @@ class FileDialog(CommonDialog,IComponent,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def OnFileOk(self,*args):
-  """
+        pass
+
+    def OnFileOk(self, *args):
+        """
   OnFileOk(self: FileDialog,e: CancelEventArgs)
 
    Raises the System.Windows.Forms.FileDialog.FileOk event.
@@ -106,9 +111,10 @@ class FileDialog(CommonDialog,IComponent,IDisposable):
 
    e: A System.ComponentModel.CancelEventArgs that contains the event data.
   """
-  pass
- def OnHelpRequest(self,*args):
-  """
+        pass
+
+    def OnHelpRequest(self, *args):
+        """
   OnHelpRequest(self: CommonDialog,e: EventArgs)
 
    Raises the System.Windows.Forms.CommonDialog.HelpRequest event.
@@ -117,9 +123,10 @@ class FileDialog(CommonDialog,IComponent,IDisposable):
 
    e: An System.Windows.Forms.HelpEventArgs that provides the event data.
   """
-  pass
- def OwnerWndProc(self,*args):
-  """
+        pass
+
+    def OwnerWndProc(self, *args):
+        """
   OwnerWndProc(self: CommonDialog,hWnd: IntPtr,msg: int,wparam: IntPtr,lparam: IntPtr) -> IntPtr
 
   
@@ -142,16 +149,18 @@ class FileDialog(CommonDialog,IComponent,IDisposable):
 
    Returns: The result of the message processing,which is dependent on the message sent.
   """
-  pass
- def Reset(self):
-  """
+        pass
+
+    def Reset(self):
+        """
   Reset(self: FileDialog)
 
    Resets all properties to their default values.
   """
-  pass
- def RunDialog(self,*args):
-  """
+        pass
+
+    def RunDialog(self, *args):
+        """
   RunDialog(self: FileDialog,hWndOwner: IntPtr) -> bool
 
   
@@ -164,9 +173,10 @@ class FileDialog(CommonDialog,IComponent,IDisposable):
 
    Returns: true if the file could be opened; otherwise,false.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: FileDialog) -> str
 
   
@@ -175,30 +185,37 @@ class FileDialog(CommonDialog,IComponent,IDisposable):
 
    Returns: A string version of this object.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- AddExtension=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the dialog box automatically adds an extension to a file name if the user omits the extension.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AddExtension = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the dialog box automatically adds an extension to a file name if the user omits the extension.
 
 
 
@@ -210,8 +227,10 @@ Set: AddExtension(self: FileDialog)=value
 
 """
 
- AutoUpgradeEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether this System.Windows.Forms.FileDialog instance should automatically upgrade appearance and behavior when running on Windows Vista.
+    AutoUpgradeEnabled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether this System.Windows.Forms.FileDialog instance should automatically upgrade appearance and behavior when running on Windows Vista.
 
 
 
@@ -223,15 +242,19 @@ Set: AutoUpgradeEnabled(self: FileDialog)=value
 
 """
 
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- CheckFileExists=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the dialog box displays a warning if the user specifies a file name that does not exist.
+    CheckFileExists = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the dialog box displays a warning if the user specifies a file name that does not exist.
 
 
 
@@ -243,8 +266,10 @@ Set: CheckFileExists(self: FileDialog)=value
 
 """
 
- CheckPathExists=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the dialog box displays a warning if the user specifies a path that does not exist.
+    CheckPathExists = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the dialog box displays a warning if the user specifies a path that does not exist.
 
 
 
@@ -256,8 +281,10 @@ Set: CheckPathExists(self: FileDialog)=value
 
 """
 
- CustomPlaces=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the custom places collection for this System.Windows.Forms.FileDialog instance.
+    CustomPlaces = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the custom places collection for this System.Windows.Forms.FileDialog instance.
 
 
 
@@ -267,8 +294,10 @@ Get: CustomPlaces(self: FileDialog) -> FileDialogCustomPlacesCollection
 
 """
 
- DefaultExt=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the default file name extension.
+    DefaultExt = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the default file name extension.
 
 
 
@@ -280,8 +309,10 @@ Set: DefaultExt(self: FileDialog)=value
 
 """
 
- DereferenceLinks=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the dialog box returns the location of the file referenced by the shortcut or whether it returns the location of the shortcut (.lnk).
+    DereferenceLinks = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the dialog box returns the location of the file referenced by the shortcut or whether it returns the location of the shortcut (.lnk).
 
 
 
@@ -293,22 +324,24 @@ Set: DereferenceLinks(self: FileDialog)=value
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- FileName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a string containing the file name selected in the file dialog box.
+    FileName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a string containing the file name selected in the file dialog box.
 
 
 
@@ -320,8 +353,8 @@ Set: FileName(self: FileDialog)=value
 
 """
 
- FileNames=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the file names of all selected files in the dialog box.
+    FileNames = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the file names of all selected files in the dialog box.
 
 
 
@@ -331,8 +364,8 @@ Get: FileNames(self: FileDialog) -> Array[str]
 
 """
 
- Filter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the current file name filter string,which determines the choices that appear in the "Save as file type" or "Files of type" box in the dialog box.
+    Filter = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the current file name filter string,which determines the choices that appear in the "Save as file type" or "Files of type" box in the dialog box.
 
 
 
@@ -344,8 +377,10 @@ Set: Filter(self: FileDialog)=value
 
 """
 
- FilterIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the index of the filter currently selected in the file dialog box.
+    FilterIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the index of the filter currently selected in the file dialog box.
 
 
 
@@ -357,8 +392,10 @@ Set: FilterIndex(self: FileDialog)=value
 
 """
 
- InitialDirectory=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the initial directory displayed by the file dialog box.
+    InitialDirectory = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the initial directory displayed by the file dialog box.
 
 
 
@@ -370,22 +407,24 @@ Set: InitialDirectory(self: FileDialog)=value
 
 """
 
- Instance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the Win32 instance handle for the application.
+    Instance = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the Win32 instance handle for the application.
 
 
 
 """
 
- Options=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets values to initialize the System.Windows.Forms.FileDialog.
+    Options = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets values to initialize the System.Windows.Forms.FileDialog.
 
 
 
 """
 
- RestoreDirectory=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the dialog box restores the current directory before closing.
+    RestoreDirectory = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the dialog box restores the current directory before closing.
 
 
 
@@ -397,8 +436,8 @@ Set: RestoreDirectory(self: FileDialog)=value
 
 """
 
- ShowHelp=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the Help button is displayed in the file dialog box.
+    ShowHelp = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the Help button is displayed in the file dialog box.
 
 
 
@@ -410,8 +449,10 @@ Set: ShowHelp(self: FileDialog)=value
 
 """
 
- SupportMultiDottedExtensions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets whether the dialog box supports displaying and saving files that have multiple file name extensions.
+    SupportMultiDottedExtensions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets whether the dialog box supports displaying and saving files that have multiple file name extensions.
 
 
 
@@ -423,8 +464,8 @@ Set: SupportMultiDottedExtensions(self: FileDialog)=value
 
 """
 
- Title=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the file dialog box title.
+    Title = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the file dialog box title.
 
 
 
@@ -436,8 +477,10 @@ Set: Title(self: FileDialog)=value
 
 """
 
- ValidateNames=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the dialog box accepts only valid Win32 file names.
+    ValidateNames = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the dialog box accepts only valid Win32 file names.
 
 
 
@@ -449,7 +492,5 @@ Set: ValidateNames(self: FileDialog)=value
 
 """
 
-
- EventFileOk=None
- FileOk=None
-
+    EventFileOk = None
+    FileOk = None

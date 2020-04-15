@@ -1,5 +1,5 @@
-class Transaction(object,IDisposable):
- """
+class Transaction(object, IDisposable):
+    """
  Transactions are context-like objects that guard any changes made to a Revit model
 
  
@@ -8,8 +8,9 @@ class Transaction(object,IDisposable):
 
  Transaction(document: Document)
  """
- def Commit(self,options=None):
-  """
+
+    def Commit(self, options=None):
+        """
   Commit(self: Transaction) -> TransactionStatus
 
   
@@ -122,12 +123,14 @@ class Transaction(object,IDisposable):
 
     Autodesk.Revit.DB.FailureHandlingOptions for more details.)
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Transaction) """
-  pass
- def GetFailureHandlingOptions(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Transaction) """
+        pass
+
+    def GetFailureHandlingOptions(self):
+        """
   GetFailureHandlingOptions(self: Transaction) -> FailureHandlingOptions
 
   
@@ -136,9 +139,10 @@ class Transaction(object,IDisposable):
 
    Returns: An instance of FailureHandlingOptions
   """
-  pass
- def GetName(self):
-  """
+        pass
+
+    def GetName(self):
+        """
   GetName(self: Transaction) -> str
 
   
@@ -147,9 +151,10 @@ class Transaction(object,IDisposable):
 
    Returns: The transaction's current name.
   """
-  pass
- def GetStatus(self):
-  """
+        pass
+
+    def GetStatus(self):
+        """
   GetStatus(self: Transaction) -> TransactionStatus
 
   
@@ -158,9 +163,10 @@ class Transaction(object,IDisposable):
 
    Returns: The current status of the transaction.
   """
-  pass
- def HasEnded(self):
-  """
+        pass
+
+    def HasEnded(self):
+        """
   HasEnded(self: Transaction) -> bool
 
   
@@ -171,9 +177,10 @@ class Transaction(object,IDisposable):
 
     otherwise.
   """
-  pass
- def HasStarted(self):
-  """
+        pass
+
+    def HasStarted(self):
+        """
   HasStarted(self: Transaction) -> bool
 
   
@@ -182,12 +189,14 @@ class Transaction(object,IDisposable):
 
    Returns: True if the transaction has already started,False otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Transaction,disposing: bool) """
-  pass
- def RollBack(self,options=None):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Transaction,disposing: bool) """
+        pass
+
+    def RollBack(self, options=None):
+        """
   RollBack(self: Transaction) -> TransactionStatus
 
   
@@ -268,9 +277,10 @@ class Transaction(object,IDisposable):
 
     details.)
   """
-  pass
- def SetFailureHandlingOptions(self,options):
-  """
+        pass
+
+    def SetFailureHandlingOptions(self, options):
+        """
   SetFailureHandlingOptions(self: Transaction,options: FailureHandlingOptions)
 
    Sets options for handling failures to be used when the transaction is being 
@@ -283,9 +293,10 @@ class Transaction(object,IDisposable):
 
    options: An instance of FailureHandlingOptions to be applied to the transaction
   """
-  pass
- def SetName(self,name):
-  """
+        pass
+
+    def SetName(self, name):
+        """
   SetName(self: Transaction,name: str)
 
    Sets the transaction's name.
@@ -294,9 +305,10 @@ class Transaction(object,IDisposable):
 
    name: A name for the transaction.
   """
-  pass
- def Start(self,name=None):
-  """
+        pass
+
+    def Start(self, name=None):
+        """
   Start(self: Transaction) -> TransactionStatus
 
   
@@ -339,29 +351,37 @@ class Transaction(object,IDisposable):
 
     document.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,document,name=None):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, document, name=None):
+        """
   __new__(cls: type,document: Document,name: str)
 
   __new__(cls: type,document: Document)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -370,5 +390,3 @@ Get: IsValidObject(self: Transaction) -> bool
 
 
 """
-
-

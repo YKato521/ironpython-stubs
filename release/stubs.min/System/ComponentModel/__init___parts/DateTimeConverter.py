@@ -1,13 +1,14 @@
 class DateTimeConverter(TypeConverter):
- """
+    """
  Provides a type converter to convert System.DateTime objects to and from various other representations.
 
  
 
  DateTimeConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: DateTimeConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -26,9 +27,10 @@ class DateTimeConverter(TypeConverter):
 
    Returns: true if this object can perform the conversion; otherwise,false.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: DateTimeConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -47,9 +49,10 @@ class DateTimeConverter(TypeConverter):
 
    Returns: true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: DateTimeConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -66,9 +69,10 @@ class DateTimeConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: DateTimeConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -87,4 +91,4 @@ class DateTimeConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
+        pass

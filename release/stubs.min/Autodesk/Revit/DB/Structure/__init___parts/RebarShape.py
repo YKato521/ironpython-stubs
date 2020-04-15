@@ -1,8 +1,20 @@
-class RebarShape(ElementType,IDisposable):
- """ RebarShape specifies the shape type for a Rebar instance. """
- @staticmethod
- def Create(doc,definition,multiplanarDefinition,style,attachmentType,startHookAngle,startHookOrientation,endHookAngle,endHookOrientation,higherEnd):
-  """
+class RebarShape(ElementType, IDisposable):
+    """ RebarShape specifies the shape type for a Rebar instance. """
+
+    @staticmethod
+    def Create(
+        doc,
+        definition,
+        multiplanarDefinition,
+        style,
+        attachmentType,
+        startHookAngle,
+        startHookOrientation,
+        endHookAngle,
+        endHookOrientation,
+        higherEnd,
+    ):
+        """
   Create(doc: Document,definition: RebarShapeDefinition,multiplanarDefinition: RebarShapeMultiplanarDefinition,style: RebarStyle,attachmentType: StirrupTieAttachmentType,startHookAngle: int,startHookOrientation: RebarHookOrientation,endHookAngle: int,endHookOrientation: RebarHookOrientation,higherEnd: int) -> RebarShape
 
   
@@ -95,12 +107,14 @@ class RebarShape(ElementType,IDisposable):
 
    Returns: A new RebarShape instance.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def GetAllowed(self,barType):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def GetAllowed(self, barType):
+        """
   GetAllowed(self: RebarShape,barType: RebarBarType) -> bool
 
   
@@ -117,12 +131,14 @@ class RebarShape(ElementType,IDisposable):
 
    Returns: True if this shape may be combined with this barType.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetCurvesForBrowser(self):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetCurvesForBrowser(self):
+        """
   GetCurvesForBrowser(self: RebarShape) -> IList[Curve]
 
   
@@ -131,9 +147,10 @@ class RebarShape(ElementType,IDisposable):
 
    Returns: An array of curves representing the shape with its default parameters.
   """
-  pass
- def GetDefaultHookAngle(self,index):
-  """
+        pass
+
+    def GetDefaultHookAngle(self, index):
+        """
   GetDefaultHookAngle(self: RebarShape,index: int) -> int
 
   
@@ -148,9 +165,10 @@ class RebarShape(ElementType,IDisposable):
 
    index: 0 for the starting hook,1 for the ending hook.
   """
-  pass
- def GetDefaultHookOrientation(self,index):
-  """
+        pass
+
+    def GetDefaultHookOrientation(self, index):
+        """
   GetDefaultHookOrientation(self: RebarShape,index: int) -> RebarHookOrientation
 
   
@@ -161,18 +179,20 @@ class RebarShape(ElementType,IDisposable):
 
    index: 0 for the starting hook,1 for the ending hook.
   """
-  pass
- def GetEndTreatmentTypeId(self,iEnd):
-  """
+        pass
+
+    def GetEndTreatmentTypeId(self, iEnd):
+        """
   GetEndTreatmentTypeId(self: RebarShape,iEnd: int) -> ElementId
 
   
 
    get the id of the end treatment for the designated shape end
   """
-  pass
- def GetMultiplanarDefinition(self):
-  """
+        pass
+
+    def GetMultiplanarDefinition(self):
+        """
   GetMultiplanarDefinition(self: RebarShape) -> RebarShapeMultiplanarDefinition
 
   
@@ -181,9 +201,10 @@ class RebarShape(ElementType,IDisposable):
 
    Returns: A copy of the multiplanar definition. Changes will not affect the RebarShape.
   """
-  pass
- def GetRebarShapeDefinition(self):
-  """
+        pass
+
+    def GetRebarShapeDefinition(self):
+        """
   GetRebarShapeDefinition(self: RebarShape) -> RebarShapeDefinition
 
   
@@ -192,18 +213,20 @@ class RebarShape(ElementType,IDisposable):
 
    Returns: A copy of the definition. Changes will not affect the RebarShape.
   """
-  pass
- def HasEndTreatment(self):
-  """
+        pass
+
+    def HasEndTreatment(self):
+        """
   HasEndTreatment(self: RebarShape) -> bool
 
   
 
    returns true if the shape has end treatment for at least one end.
   """
-  pass
- def IsSameShapeIgnoringHooks(self,otherShape):
-  """
+        pass
+
+    def IsSameShapeIgnoringHooks(self, otherShape):
+        """
   IsSameShapeIgnoringHooks(self: RebarShape,otherShape: RebarShape) -> bool
 
   
@@ -222,12 +245,14 @@ class RebarShape(ElementType,IDisposable):
 
    Returns: True if the shape definitions match,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def SetAllowed(self,barType,allowed):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def SetAllowed(self, barType, allowed):
+        """
   SetAllowed(self: RebarShape,barType: RebarBarType,allowed: bool)
 
    Specify which bar types can be used with this RebarShape. Bar types are allowed 
@@ -242,28 +267,34 @@ class RebarShape(ElementType,IDisposable):
 
    allowed: Whether this shape may be combined with barType.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetEndTreatmentTypeId(self,treatmenetId,iEnd):
-  """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetEndTreatmentTypeId(self, treatmenetId, iEnd):
+        """
   SetEndTreatmentTypeId(self: RebarShape,treatmenetId: ElementId,iEnd: int)
 
    set the end treatment type id for the designated shape end
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- HigherEnd=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Defines the higher end of rebar shape.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    HigherEnd = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Defines the higher end of rebar shape.
 
 
 
@@ -273,8 +304,10 @@ Get: HigherEnd(self: RebarShape) -> int
 
 """
 
- RebarStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether the shape represents a standard bar or a stirrup.
+    RebarStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether the shape represents a standard bar or a stirrup.
 
 
 
@@ -284,8 +317,10 @@ Get: RebarStyle(self: RebarShape) -> RebarStyle
 
 """
 
- ShapeFamilyId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get and return the rebar shape family id.
+    ShapeFamilyId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get and return the rebar shape family id.
 
 
 
@@ -295,8 +330,8 @@ Get: ShapeFamilyId(self: RebarShape) -> ElementId
 
 """
 
- SimpleArc=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Check whether this shape consists of a single arc,possibly with hooks.
+    SimpleArc = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Check whether this shape consists of a single arc,possibly with hooks.
 
 
 
@@ -306,8 +341,10 @@ Get: SimpleArc(self: RebarShape) -> bool
 
 """
 
- SimpleLine=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Check whether this shape consists of a single straight segment,possibly with hooks.
+    SimpleLine = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Check whether this shape consists of a single straight segment,possibly with hooks.
 
 
 
@@ -317,8 +354,10 @@ Get: SimpleLine(self: RebarShape) -> bool
 
 """
 
- StirrupTieAttachment=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The attachment type of stirrup ties and rebars.
+    StirrupTieAttachment = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The attachment type of stirrup ties and rebars.
 
 
 
@@ -327,5 +366,3 @@ Get: StirrupTieAttachment(self: RebarShape) -> StirrupTieAttachmentType
 
 
 """
-
-

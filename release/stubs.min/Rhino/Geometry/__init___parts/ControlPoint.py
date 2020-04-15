@@ -1,5 +1,5 @@
-class ControlPoint(object,IEpsilonComparable[ControlPoint]):
- """
+class ControlPoint(object, IEpsilonComparable[ControlPoint]):
+    """
  Represents control-point geometry with three-dimensional position and weight.
 
  
@@ -14,21 +14,24 @@ class ControlPoint(object,IEpsilonComparable[ControlPoint]):
 
  ControlPoint(pt: Point4d)
  """
- def EpsilonEquals(self,other,epsilon):
-  """
+
+    def EpsilonEquals(self, other, epsilon):
+        """
   EpsilonEquals(self: ControlPoint,other: ControlPoint,epsilon: float) -> bool
 
   
 
    Check that all values in other are within epsilon of the values in this
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__[ControlPoint]() -> ControlPoint
 
   
@@ -43,16 +46,20 @@ class ControlPoint(object,IEpsilonComparable[ControlPoint]):
 
   __new__(cls: type,pt: Point4d)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- Location=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the location of the control point. 
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Location = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the location of the control point. 
 
    Internally,Rhino stores the location of a weighted control-point 
 
@@ -70,8 +77,8 @@ Set: Location(self: ControlPoint)=value
 
 """
 
- Weight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the weight of this control point.
+    Weight = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the weight of this control point.
 
 
 
@@ -83,6 +90,4 @@ Set: Weight(self: ControlPoint)=value
 
 """
 
-
- Unset=None
-
+    Unset = None

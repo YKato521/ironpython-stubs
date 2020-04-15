@@ -1,17 +1,21 @@
-class RevisionCloud(Element,IDisposable):
- """ A RevisionCloud is a graphical "cloud" that can be displayed on a view or sheet to indicate where revisions in the model have occurred. """
- @staticmethod
- def Create(document,view,revisionId,curves):
-  """ Create(document: Document,view: View,revisionId: ElementId,curves: IList[Curve]) -> RevisionCloud """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetSheetIds(self):
-  """
+class RevisionCloud(Element, IDisposable):
+    """ A RevisionCloud is a graphical "cloud" that can be displayed on a view or sheet to indicate where revisions in the model have occurred. """
+
+    @staticmethod
+    def Create(document, view, revisionId, curves):
+        """ Create(document: Document,view: View,revisionId: ElementId,curves: IList[Curve]) -> RevisionCloud """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetSheetIds(self):
+        """
   GetSheetIds(self: RevisionCloud) -> ISet[ElementId]
 
   
@@ -24,9 +28,10 @@ class RevisionCloud(Element,IDisposable):
 
    Returns: The ids of the ViewSheets where this RevisionCloud may appear.
   """
-  pass
- def GetSketchCurves(self):
-  """
+        pass
+
+    def GetSketchCurves(self):
+        """
   GetSketchCurves(self: RevisionCloud) -> IList[Curve]
 
   
@@ -35,9 +40,10 @@ class RevisionCloud(Element,IDisposable):
 
    Returns: Copies of the sketched curves that form this RevisionCloud.
   """
-  pass
- def IsRevisionIssued(self):
-  """
+        pass
+
+    def IsRevisionIssued(self):
+        """
   IsRevisionIssued(self: RevisionCloud) -> bool
 
   
@@ -50,24 +56,32 @@ class RevisionCloud(Element,IDisposable):
 
    Returns: True if the Revision has been issued,False otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- RevisionId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Revision associated with this RevisionCloud.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    RevisionId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The Revision associated with this RevisionCloud.
 
 
 
@@ -78,5 +92,3 @@ Get: RevisionId(self: RevisionCloud) -> ElementId
 Set: RevisionId(self: RevisionCloud)=value
 
 """
-
-

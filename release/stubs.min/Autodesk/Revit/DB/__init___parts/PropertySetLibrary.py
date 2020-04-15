@@ -1,7 +1,8 @@
-class PropertySetLibrary(Element,IDisposable):
- """ A named collection of property sets. """
- def AddPropertySet(self,propertySetId):
-  """
+class PropertySetLibrary(Element, IDisposable):
+    """ A named collection of property sets. """
+
+    def AddPropertySet(self, propertySetId):
+        """
   AddPropertySet(self: PropertySetLibrary,propertySetId: ElementId)
 
    Adds a property set from the document to this library.
@@ -10,9 +11,10 @@ class PropertySetLibrary(Element,IDisposable):
 
    propertySetId: Identifier of the property set to add.
   """
-  pass
- def AddPropertySetWithName(self,propertySetId,name):
-  """
+        pass
+
+    def AddPropertySetWithName(self, propertySetId, name):
+        """
   AddPropertySetWithName(self: PropertySetLibrary,propertySetId: ElementId,name: str)
 
    Adds a property set from the document to this library using an alternate name.
@@ -23,9 +25,10 @@ class PropertySetLibrary(Element,IDisposable):
 
    name: The alternate name to use for the property set in the library.
   """
-  pass
- def AddToDocument(self,name,document,overwrite):
-  """
+        pass
+
+    def AddToDocument(self, name, document, overwrite):
+        """
   AddToDocument(self: PropertySetLibrary,name: str,document: Document,overwrite: bool) -> PropertySetElement
 
   
@@ -54,9 +57,10 @@ class PropertySetLibrary(Element,IDisposable):
 
    Returns: The new PropertySetElement.
   """
-  pass
- def AddToDocumentWithName(self,name,document,overwrite,addAsName):
-  """
+        pass
+
+    def AddToDocumentWithName(self, name, document, overwrite, addAsName):
+        """
   AddToDocumentWithName(self: PropertySetLibrary,name: str,document: Document,overwrite: bool,addAsName: str) -> PropertySetElement
 
   
@@ -81,10 +85,11 @@ class PropertySetLibrary(Element,IDisposable):
 
    Returns: The new PropertySetElement.
   """
-  pass
- @staticmethod
- def Create(document):
-  """
+        pass
+
+    @staticmethod
+    def Create(document):
+        """
   Create(document: Document) -> PropertySetLibrary
 
   
@@ -97,12 +102,14 @@ class PropertySetLibrary(Element,IDisposable):
 
    Returns: The new PropertySetLibrary.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def ExportXml(self,fileName):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def ExportXml(self, fileName):
+        """
   ExportXml(self: PropertySetLibrary,fileName: str) -> bool
 
   
@@ -115,10 +122,11 @@ class PropertySetLibrary(Element,IDisposable):
 
    Returns: True if the export succeeded,otherwise false.
   """
-  pass
- @staticmethod
- def Find(doc,name):
-  """
+        pass
+
+    @staticmethod
+    def Find(doc, name):
+        """
   Find(doc: Document,name: str) -> ElementId
 
   
@@ -141,21 +149,24 @@ class PropertySetLibrary(Element,IDisposable):
 
     invalidElementId if no library with that name exists.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetName(self):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetName(self):
+        """
   GetName(self: PropertySetLibrary) -> str
 
   
 
    Gets the name of the property set library.
   """
-  pass
- def HasPropertySet(self,name):
-  """
+        pass
+
+    def HasPropertySet(self, name):
+        """
   HasPropertySet(self: PropertySetLibrary,name: str) -> bool
 
   
@@ -170,10 +181,11 @@ class PropertySetLibrary(Element,IDisposable):
 
     false.
   """
-  pass
- @staticmethod
- def ImportXml(document,fileName,overwriteExisting):
-  """
+        pass
+
+    @staticmethod
+    def ImportXml(document, fileName, overwriteExisting):
+        """
   ImportXml(document: Document,fileName: str,overwriteExisting: bool) -> PropertySetLibrary
 
   
@@ -196,12 +208,14 @@ class PropertySetLibrary(Element,IDisposable):
 
    Returns: The new PropertySetLibrary.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def RemovePropertySet(self,name):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def RemovePropertySet(self, name):
+        """
   RemovePropertySet(self: PropertySetLibrary,name: str) -> bool
 
   
@@ -216,9 +230,10 @@ class PropertySetLibrary(Element,IDisposable):
 
     false.
   """
-  pass
- def RenamePropertySet(self,name,newName):
-  """
+        pass
+
+    def RenamePropertySet(self, name, newName):
+        """
   RenamePropertySet(self: PropertySetLibrary,name: str,newName: str) -> bool
 
   
@@ -233,9 +248,10 @@ class PropertySetLibrary(Element,IDisposable):
 
    Returns: True if the property set was found and renamed,otherwise false.
   """
-  pass
- def RenameSubclass(self,oldSubclass,newSubclass):
-  """
+        pass
+
+    def RenameSubclass(self, oldSubclass, newSubclass):
+        """
   RenameSubclass(self: PropertySetLibrary,oldSubclass: str,newSubclass: str) -> int
 
   
@@ -254,28 +270,34 @@ class PropertySetLibrary(Element,IDisposable):
 
    Returns: The number of property sets whose subclass was changed.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetName(self,name):
-  """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetName(self, name):
+        """
   SetName(self: PropertySetLibrary,name: str)
 
    Sets the name of the property set library.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Locked=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether a property set library is locked into a document or not.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Locked = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Indicates whether a property set library is locked into a document or not.
 
    Locked libraries are read-only and cannot be removed.
 
@@ -287,8 +309,8 @@ Get: Locked(self: PropertySetLibrary) -> bool
 
 """
 
- ReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether a property set library is read-only or not.
+    ReadOnly = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Indicates whether a property set library is read-only or not.
 
    Read-only libraries cannot be renamed,or added to.
 
@@ -301,5 +323,3 @@ Get: ReadOnly(self: PropertySetLibrary) -> bool
 Set: ReadOnly(self: PropertySetLibrary)=value
 
 """
-
-

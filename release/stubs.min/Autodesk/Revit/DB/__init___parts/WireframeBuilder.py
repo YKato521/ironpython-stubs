@@ -1,13 +1,14 @@
-class WireframeBuilder(ShapeBuilder,IDisposable):
- """
+class WireframeBuilder(ShapeBuilder, IDisposable):
+    """
  Constructs a shape representation consisting of points and curves. That shape would typically be stored in a DirectShape or a DirectShapeType object.
 
  
 
  WireframeBuilder()
  """
- def AddCurve(self,GCurve):
-  """
+
+    def AddCurve(self, GCurve):
+        """
   AddCurve(self: WireframeBuilder,GCurve: Curve)
 
    Add a curve to the shape representation stored in this WireframeBuilder.
@@ -16,9 +17,10 @@ class WireframeBuilder(ShapeBuilder,IDisposable):
 
    GCurve: The curve to be added.
   """
-  pass
- def AddPoint(self,GPoint):
-  """
+        pass
+
+    def AddPoint(self, GPoint):
+        """
   AddPoint(self: WireframeBuilder,GPoint: Point)
 
    Add a point to the shape representation stored in this WireframeBuilder.
@@ -27,23 +29,27 @@ class WireframeBuilder(ShapeBuilder,IDisposable):
 
    GPoint: The point to be added.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: ShapeBuilder,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: ShapeBuilder,disposing: bool) """
-  pass
- def Reset(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: ShapeBuilder,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: ShapeBuilder,disposing: bool) """
+        pass
+
+    def Reset(self):
+        """
   Reset(self: WireframeBuilder)
 
    Clears the accumulated geometry.
   """
-  pass
- @staticmethod
- def ValidateCurve(GCurve):
-  """
+        pass
+
+    @staticmethod
+    def ValidateCurve(GCurve):
+        """
   ValidateCurve(GCurve: Curve) -> bool
 
   
@@ -66,10 +72,11 @@ class WireframeBuilder(ShapeBuilder,IDisposable):
 
     being built.
   """
-  pass
- @staticmethod
- def ValidatePoint(GPoint):
-  """
+        pass
+
+    @staticmethod
+    def ValidatePoint(GPoint):
+        """
   ValidatePoint(GPoint: Point) -> bool
 
   
@@ -88,13 +95,16 @@ class WireframeBuilder(ShapeBuilder,IDisposable):
 
     being built.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

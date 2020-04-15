@@ -1,13 +1,40 @@
-class RebarContainer(Element,IDisposable,IEnumerable[RebarContainerItem],IEnumerable):
- """ An object that represents an Rebar Container Element within the Autodesk Revit project. """
- def AppendItemFromCurves(self,style,barType,startHook,endHook,normal,curves,startHookOrient,endHookOrient,useExistingShapeIfPossible,createNewShape):
-  """ AppendItemFromCurves(self: RebarContainer,style: RebarStyle,barType: RebarBarType,startHook: RebarHookType,endHook: RebarHookType,normal: XYZ,curves: IList[Curve],startHookOrient: RebarHookOrientation,endHookOrient: RebarHookOrientation,useExistingShapeIfPossible: bool,createNewShape: bool) -> RebarContainerItem """
-  pass
- def AppendItemFromCurvesAndShape(self,rebarShape,barType,startHook,endHook,normal,curves,startHookOrient,endHookOrient):
-  """ AppendItemFromCurvesAndShape(self: RebarContainer,rebarShape: RebarShape,barType: RebarBarType,startHook: RebarHookType,endHook: RebarHookType,normal: XYZ,curves: IList[Curve],startHookOrient: RebarHookOrientation,endHookOrient: RebarHookOrientation) -> RebarContainerItem """
-  pass
- def AppendItemFromRebar(self,rebar):
-  """
+class RebarContainer(
+    Element, IDisposable, IEnumerable[RebarContainerItem], IEnumerable
+):
+    """ An object that represents an Rebar Container Element within the Autodesk Revit project. """
+
+    def AppendItemFromCurves(
+        self,
+        style,
+        barType,
+        startHook,
+        endHook,
+        normal,
+        curves,
+        startHookOrient,
+        endHookOrient,
+        useExistingShapeIfPossible,
+        createNewShape,
+    ):
+        """ AppendItemFromCurves(self: RebarContainer,style: RebarStyle,barType: RebarBarType,startHook: RebarHookType,endHook: RebarHookType,normal: XYZ,curves: IList[Curve],startHookOrient: RebarHookOrientation,endHookOrient: RebarHookOrientation,useExistingShapeIfPossible: bool,createNewShape: bool) -> RebarContainerItem """
+        pass
+
+    def AppendItemFromCurvesAndShape(
+        self,
+        rebarShape,
+        barType,
+        startHook,
+        endHook,
+        normal,
+        curves,
+        startHookOrient,
+        endHookOrient,
+    ):
+        """ AppendItemFromCurvesAndShape(self: RebarContainer,rebarShape: RebarShape,barType: RebarBarType,startHook: RebarHookType,endHook: RebarHookType,normal: XYZ,curves: IList[Curve],startHookOrient: RebarHookOrientation,endHookOrient: RebarHookOrientation) -> RebarContainerItem """
+        pass
+
+    def AppendItemFromRebar(self, rebar):
+        """
   AppendItemFromRebar(self: RebarContainer,rebar: Rebar) -> RebarContainerItem
 
   
@@ -20,9 +47,10 @@ class RebarContainer(Element,IDisposable,IEnumerable[RebarContainerItem],IEnumer
 
    Returns: The Rebar Container Item.
   """
-  pass
- def AppendItemFromRebarShape(self,rebarShape,barType,origin,xVector,yVector):
-  """
+        pass
+
+    def AppendItemFromRebarShape(self, rebarShape, barType, origin, xVector, yVector):
+        """
   AppendItemFromRebarShape(self: RebarContainer,rebarShape: RebarShape,barType: RebarBarType,origin: XYZ,xVector: XYZ,yVector: XYZ) -> RebarContainerItem
 
   
@@ -59,9 +87,10 @@ class RebarContainer(Element,IDisposable,IEnumerable[RebarContainerItem],IEnumer
 
    Returns: The Rebar Container Item.
   """
-  pass
- def CanApplyPresentationMode(self,dBView):
-  """
+        pass
+
+    def CanApplyPresentationMode(self, dBView):
+        """
   CanApplyPresentationMode(self: RebarContainer,dBView: View) -> bool
 
   
@@ -78,16 +107,18 @@ class RebarContainer(Element,IDisposable,IEnumerable[RebarContainerItem],IEnumer
 
    Returns: True if presentation mode can be applied for this view,false otherwise.
   """
-  pass
- def ClearItems(self):
-  """
+        pass
+
+    def ClearItems(self):
+        """
   ClearItems(self: RebarContainer)
 
    Clears all the Items stored in this Rebar Container element.
   """
-  pass
- def Contains(self,pItem):
-  """
+        pass
+
+    def Contains(self, pItem):
+        """
   Contains(self: RebarContainer,pItem: RebarContainerItem) -> bool
 
   
@@ -100,10 +131,11 @@ class RebarContainer(Element,IDisposable,IEnumerable[RebarContainerItem],IEnumer
 
    Returns: True if RebarContainer has this item as one of its members,false otherwise.
   """
-  pass
- @staticmethod
- def Create(aDoc,hostElement,rebarContainerTypeId):
-  """
+        pass
+
+    @staticmethod
+    def Create(aDoc, hostElement, rebarContainerTypeId):
+        """
   Create(aDoc: Document,hostElement: Element,rebarContainerTypeId: ElementId) -> RebarContainer
 
   
@@ -120,15 +152,18 @@ class RebarContainer(Element,IDisposable,IEnumerable[RebarContainerItem],IEnumer
 
    Returns: The newly created Rebar Container instance.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: RebarContainer) -> IEnumerator[RebarContainerItem]
 
   
@@ -137,9 +172,10 @@ class RebarContainer(Element,IDisposable,IEnumerable[RebarContainerItem],IEnumer
 
    Returns: An IEnumerator object that can be used to iterate through the collection.
   """
-  pass
- def GetHostId(self):
-  """
+        pass
+
+    def GetHostId(self):
+        """
   GetHostId(self: RebarContainer) -> ElementId
 
   
@@ -152,9 +188,10 @@ class RebarContainer(Element,IDisposable,IEnumerable[RebarContainerItem],IEnumer
 
     floor,foundation,beam,brace or column.
   """
-  pass
- def GetItem(self,itemIndex):
-  """
+        pass
+
+    def GetItem(self, itemIndex):
+        """
   GetItem(self: RebarContainer,itemIndex: int) -> RebarContainerItem
 
   
@@ -167,9 +204,10 @@ class RebarContainer(Element,IDisposable,IEnumerable[RebarContainerItem],IEnumer
 
    Returns: Rebar Container Item
   """
-  pass
- def GetParametersManager(self):
-  """
+        pass
+
+    def GetParametersManager(self):
+        """
   GetParametersManager(self: RebarContainer) -> RebarContainerParameterManager
 
   
@@ -178,9 +216,10 @@ class RebarContainer(Element,IDisposable,IEnumerable[RebarContainerItem],IEnumer
 
    Returns: The parameters manager.
   """
-  pass
- def GetRebarContainerIterator(self):
-  """
+        pass
+
+    def GetRebarContainerIterator(self):
+        """
   GetRebarContainerIterator(self: RebarContainer) -> RebarContainerIterator
 
   
@@ -195,9 +234,10 @@ class RebarContainer(Element,IDisposable,IEnumerable[RebarContainerItem],IEnumer
 
     Container Items in the collection.
   """
-  pass
- def GetReinforcementRoundingManager(self):
-  """
+        pass
+
+    def GetReinforcementRoundingManager(self):
+        """
   GetReinforcementRoundingManager(self: RebarContainer) -> RebarRoundingManager
 
   
@@ -206,9 +246,10 @@ class RebarContainer(Element,IDisposable,IEnumerable[RebarContainerItem],IEnumer
 
    Returns: The rounding manager.
   """
-  pass
- def HasPresentationOverrides(self,dBView):
-  """
+        pass
+
+    def HasPresentationOverrides(self, dBView):
+        """
   HasPresentationOverrides(self: RebarContainer,dBView: View) -> bool
 
   
@@ -227,9 +268,10 @@ class RebarContainer(Element,IDisposable,IEnumerable[RebarContainerItem],IEnumer
 
     presentation settings,false otherwise.
   """
-  pass
- def IsItemHidden(self,view,itemIndex):
-  """
+        pass
+
+    def IsItemHidden(self, view, itemIndex):
+        """
   IsItemHidden(self: RebarContainer,view: View,itemIndex: int) -> bool
 
   
@@ -244,9 +286,10 @@ class RebarContainer(Element,IDisposable,IEnumerable[RebarContainerItem],IEnumer
 
    Returns: True if the RebarContainerItem is hidden in this view,false otherwise.
   """
-  pass
- def IsSolidInView(self,view):
-  """
+        pass
+
+    def IsSolidInView(self, view):
+        """
   IsSolidInView(self: RebarContainer,view: View3D) -> bool
 
   
@@ -261,9 +304,10 @@ class RebarContainer(Element,IDisposable,IEnumerable[RebarContainerItem],IEnumer
 
     otherwise.
   """
-  pass
- def IsUnobscuredInView(self,view):
-  """
+        pass
+
+    def IsUnobscuredInView(self, view):
+        """
   IsUnobscuredInView(self: RebarContainer,view: View) -> bool
 
   
@@ -276,12 +320,14 @@ class RebarContainer(Element,IDisposable,IEnumerable[RebarContainerItem],IEnumer
 
    Returns: True if rebar is shown unobscured,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def RemoveItem(self,pItem):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def RemoveItem(self, pItem):
+        """
   RemoveItem(self: RebarContainer,pItem: RebarContainerItem)
 
    Removes Item from the Rebar Container.
@@ -290,12 +336,14 @@ class RebarContainer(Element,IDisposable,IEnumerable[RebarContainerItem],IEnumer
 
    pItem: Item to be removed from this Rebar Container
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetHostId(self,doc,hostId):
-  """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetHostId(self, doc, hostId):
+        """
   SetHostId(self: RebarContainer,doc: Document,hostId: ElementId)
 
    The element that contains the rebar.
@@ -316,9 +364,10 @@ class RebarContainer(Element,IDisposable,IEnumerable[RebarContainerItem],IEnumer
 
      element.
   """
-  pass
- def SetItemHiddenStatus(self,view,itemIndex,hide):
-  """
+        pass
+
+    def SetItemHiddenStatus(self, view, itemIndex, hide):
+        """
   SetItemHiddenStatus(self: RebarContainer,view: View,itemIndex: int,hide: bool)
 
    Sets the RebarContainerItem to be hidden or unhidden in the given view.
@@ -331,9 +380,10 @@ class RebarContainer(Element,IDisposable,IEnumerable[RebarContainerItem],IEnumer
 
    hide: True to hide this RebarContainerItem in the view,false to unhide the item.
   """
-  pass
- def SetSolidInView(self,view,solid):
-  """
+        pass
+
+    def SetSolidInView(self, view, solid):
+        """
   SetSolidInView(self: RebarContainer,view: View3D,solid: bool)
 
    Sets this RebarContainer element is shown as solid in the given 3D view.
@@ -346,9 +396,10 @@ class RebarContainer(Element,IDisposable,IEnumerable[RebarContainerItem],IEnumer
 
     false otherwise.
   """
-  pass
- def SetUnobscuredInView(self,view,unobscured):
-  """
+        pass
+
+    def SetUnobscuredInView(self, view, unobscured):
+        """
   SetUnobscuredInView(self: RebarContainer,view: View,unobscured: bool)
 
    Sets this rebar container element to be shown unobscured in a view.
@@ -359,27 +410,36 @@ class RebarContainer(Element,IDisposable,IEnumerable[RebarContainerItem],IEnumer
 
    unobscured: True if rebar is shown unobscured,false otherwise.
   """
-  pass
- def __contains__(self,*args):
-  """ __contains__[RebarContainerItem](enumerable: IEnumerable[RebarContainerItem],value: RebarContainerItem) -> bool """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- ItemsCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The count of Items in this Rebar Container.
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[RebarContainerItem](enumerable: IEnumerable[RebarContainerItem],value: RebarContainerItem) -> bool """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    ItemsCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The count of Items in this Rebar Container.
 
 
 
@@ -389,8 +449,10 @@ Get: ItemsCount(self: RebarContainer) -> int
 
 """
 
- PresentItemsAsSubelements=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies if Items should be presented in schedules and tags as separate subelements.
+    PresentItemsAsSubelements = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies if Items should be presented in schedules and tags as separate subelements.
 
 
 
@@ -402,8 +464,10 @@ Set: PresentItemsAsSubelements(self: RebarContainer)=value
 
 """
 
- ScheduleMark=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Schedule Mark parameter. On creation,the Schedule Mark is set
+    ScheduleMark = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The Schedule Mark parameter. On creation,the Schedule Mark is set
 
    to a value that is unique to the host,but it can be set to
 
@@ -418,5 +482,3 @@ Get: ScheduleMark(self: RebarContainer) -> str
 Set: ScheduleMark(self: RebarContainer)=value
 
 """
-
-

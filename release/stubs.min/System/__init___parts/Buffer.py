@@ -1,8 +1,9 @@
 class Buffer(object):
- """ Manipulates arrays of primitive types. """
- @staticmethod
- def BlockCopy(src,srcOffset,dst,dstOffset,count):
-  """
+    """ Manipulates arrays of primitive types. """
+
+    @staticmethod
+    def BlockCopy(src, srcOffset, dst, dstOffset, count):
+        """
   BlockCopy(src: Array,srcOffset: int,dst: Array,dstOffset: int,count: int)
 
    Copies a specified number of bytes from a source array starting at a particular offset to a 
@@ -23,10 +24,11 @@ class Buffer(object):
 
    count: The number of bytes to copy.
   """
-  pass
- @staticmethod
- def ByteLength(array):
-  """
+        pass
+
+    @staticmethod
+    def ByteLength(array):
+        """
   ByteLength(array: Array) -> int
 
   
@@ -39,10 +41,11 @@ class Buffer(object):
 
    Returns: The number of bytes in the array.
   """
-  pass
- @staticmethod
- def GetByte(array,index):
-  """
+        pass
+
+    @staticmethod
+    def GetByte(array, index):
+        """
   GetByte(array: Array,index: int) -> Byte
 
   
@@ -57,14 +60,16 @@ class Buffer(object):
 
    Returns: Returns the index byte in the array.
   """
-  pass
- @staticmethod
- def MemoryCopy(source,destination,destinationSizeInBytes,sourceBytesToCopy):
-  """ MemoryCopy(source: Void*,destination: Void*,destinationSizeInBytes: UInt64,sourceBytesToCopy: UInt64)MemoryCopy(source: Void*,destination: Void*,destinationSizeInBytes: Int64,sourceBytesToCopy: Int64) """
-  pass
- @staticmethod
- def SetByte(array,index,value):
-  """
+        pass
+
+    @staticmethod
+    def MemoryCopy(source, destination, destinationSizeInBytes, sourceBytesToCopy):
+        """ MemoryCopy(source: Void*,destination: Void*,destinationSizeInBytes: UInt64,sourceBytesToCopy: UInt64)MemoryCopy(source: Void*,destination: Void*,destinationSizeInBytes: Int64,sourceBytesToCopy: Int64) """
+        pass
+
+    @staticmethod
+    def SetByte(array, index, value):
+        """
   SetByte(array: Array,index: int,value: Byte)
 
    Assigns a specified value to a byte at a particular location in a specified array.
@@ -77,12 +82,12 @@ class Buffer(object):
 
    value: A value to assign.
   """
-  pass
- __all__=[
-  'BlockCopy',
-  'ByteLength',
-  'GetByte',
-  'MemoryCopy',
-  'SetByte',
- ]
+        pass
 
+    __all__ = [
+        "BlockCopy",
+        "ByteLength",
+        "GetByte",
+        "MemoryCopy",
+        "SetByte",
+    ]

@@ -1,7 +1,8 @@
 class IUpdater:
- """ The interface used to create an updater capable of reacting to changes in the Revit model. """
- def Execute(self,data):
-  """
+    """ The interface used to create an updater capable of reacting to changes in the Revit model. """
+
+    def Execute(self, data):
+        """
   Execute(self: IUpdater,data: UpdaterData)
 
    The method that Revit will invoke to perform an update.
@@ -14,9 +15,10 @@ class IUpdater:
 
      the changes that triggered the update.
   """
-  pass
- def GetAdditionalInformation(self):
-  """
+        pass
+
+    def GetAdditionalInformation(self):
+        """
   GetAdditionalInformation(self: IUpdater) -> str
 
   
@@ -27,9 +29,10 @@ class IUpdater:
 
     is not loaded
   """
-  pass
- def GetChangePriority(self):
-  """
+        pass
+
+    def GetChangePriority(self):
+        """
   GetChangePriority(self: IUpdater) -> ChangePriority
 
   
@@ -44,9 +47,10 @@ class IUpdater:
 
     the updater
   """
-  pass
- def GetUpdaterId(self):
-  """
+        pass
+
+    def GetUpdaterId(self):
+        """
   GetUpdaterId(self: IUpdater) -> UpdaterId
 
   
@@ -57,16 +61,18 @@ class IUpdater:
 
     once during registration of the updater
   """
-  pass
- def GetUpdaterName(self):
-  """
+        pass
+
+    def GetUpdaterName(self):
+        """
   GetUpdaterName(self: IUpdater) -> str
 
   
 
    Returns a name that the Updater can be identified by to the user
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

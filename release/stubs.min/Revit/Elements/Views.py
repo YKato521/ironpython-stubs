@@ -8,10 +8,12 @@
 # no functions
 # classes
 
-class View(Element,IDisposable,IGraphicItem,IFormattable):
- """ An abstract Revit View - All view types inherit from this type """
- def AddFilter(self,parameterFilter):
-  """
+
+class View(Element, IDisposable, IGraphicItem, IFormattable):
+    """ An abstract Revit View - All view types inherit from this type """
+
+    def AddFilter(self, parameterFilter):
+        """
   AddFilter(self: View,parameterFilter: ParameterFilterElement)
 
    Add Filter to View
@@ -20,9 +22,10 @@ class View(Element,IDisposable,IGraphicItem,IFormattable):
 
    parameterFilter: Parameter filter
   """
-  pass
- def ExportAsImage(self,path):
-  """
+        pass
+
+    def ExportAsImage(self, path):
+        """
   ExportAsImage(self: View,path: str) -> Bitmap
 
   
@@ -43,25 +46,28 @@ class View(Element,IDisposable,IGraphicItem,IFormattable):
 
    Returns: The image
   """
-  pass
- def FilterOverrides(self,parameterFilter):
-  """
+        pass
+
+    def FilterOverrides(self, parameterFilter):
+        """
   FilterOverrides(self: View,parameterFilter: ParameterFilterElement) -> OverrideGraphicSettings
 
   
 
    Get Filter overrides
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def SetFilterOverrides(self,parameterFilter,overrides):
-  """
+        pass
+
+    def SetFilterOverrides(self, parameterFilter, overrides):
+        """
   SetFilterOverrides(self: View,parameterFilter: ParameterFilterElement,overrides: OverrideGraphicSettings)
 
    Set Filter overrides
@@ -72,26 +78,33 @@ class View(Element,IDisposable,IGraphicItem,IFormattable):
 
    overrides: overrides settings
   """
-  pass
- def ToString(self,format=None,formatProvider=None):
-  """ ToString(self: View) -> str """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- Filters=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get View Filters
+        pass
+
+    def ToString(self, format=None, formatProvider=None):
+        """ ToString(self: View) -> str """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Filters = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get View Filters
 
 
 
@@ -101,47 +114,50 @@ Get: Filters(self: View) -> IEnumerable[ParameterFilterElement]
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
-
-class View3D(View,IDisposable,IGraphicItem,IFormattable):
- # no doc
- def BuildOrientation3D(self,*args):
-  """
+class View3D(View, IDisposable, IGraphicItem, IFormattable):
+    # no doc
+    def BuildOrientation3D(self, *args):
+        """
   BuildOrientation3D(eyePoint: XYZ,target: XYZ) -> ViewOrientation3D
 
   
 
    Build Orientation3D object for eye point and a target point
   """
-  pass
- def Create3DView(self,*args):
-  """
+        pass
+
+    def Create3DView(self, *args):
+        """
   Create3DView(orient: ViewOrientation3D,name: str,isPerspective: bool) -> View3D
 
   
 
    Create a Revit 3D View
   """
-  pass
- @staticmethod
- def CreateUniqueViewName(name):
-  """
+        pass
+
+    @staticmethod
+    def CreateUniqueViewName(name):
+        """
   CreateUniqueViewName(name: str) -> str
 
   
@@ -164,12 +180,14 @@ class View3D(View,IDisposable,IGraphicItem,IFormattable):
 
     the name.
   """
-  pass
- def GetPointCloud(self,*args):
-  """ GetPointCloud(solid: Solid,pts: List[XYZ])GetPointCloud(geomInst: GeometryInstance,pts: List[XYZ])GetPointCloud(e: Element,pts: List[XYZ]) """
-  pass
- def GetVisibleElementFilter(self,*args):
-  """
+        pass
+
+    def GetPointCloud(self, *args):
+        """ GetPointCloud(solid: Solid,pts: List[XYZ])GetPointCloud(geomInst: GeometryInstance,pts: List[XYZ])GetPointCloud(e: Element,pts: List[XYZ]) """
+        pass
+
+    def GetVisibleElementFilter(self, *args):
+        """
   GetVisibleElementFilter() -> FilteredElementCollector
 
   
@@ -182,9 +200,10 @@ class View3D(View,IDisposable,IGraphicItem,IFormattable):
 
     Dynamo would like to operate.
   """
-  pass
- def InternalIsolateInView(self,*args):
-  """
+        pass
+
+    def InternalIsolateInView(self, *args):
+        """
   InternalIsolateInView(self: View3D,bbox: BoundingBoxXYZ)
 
    Isolate the bounding box in the current view
@@ -195,65 +214,79 @@ class View3D(View,IDisposable,IGraphicItem,IFormattable):
 
     around it
   """
-  pass
- def InternalRemoveIsolation(self,*args):
-  """
+        pass
+
+    def InternalRemoveIsolation(self, *args):
+        """
   InternalRemoveIsolation(self: View3D)
 
    Show all hiddent elements in the view
   """
-  pass
- def InternalSetName(self,*args):
-  """
+        pass
+
+    def InternalSetName(self, *args):
+        """
   InternalSetName(self: View3D,name: str)
 
    Set the name of the current view
   """
-  pass
- def InternalSetOrientation(self,*args):
-  """
+        pass
+
+    def InternalSetOrientation(self, *args):
+        """
   InternalSetOrientation(self: View3D,orient: ViewOrientation3D)
 
    Set the orientation of the view
   """
-  pass
- def InternalSetView3D(self,*args):
-  """
+        pass
+
+    def InternalSetView3D(self, *args):
+        """
   InternalSetView3D(self: View3D,view: View3D)
 
    Set the InternalView3D property and the associated element id and unique id
   """
-  pass
- def IsolateInView(self,*args):
-  """
+        pass
+
+    def IsolateInView(self, *args):
+        """
   IsolateInView(view: View3D,element: Element)
 
    Make a single element appear in a particular view
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -263,30 +296,32 @@ Get: InternalElement(self: View3D) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
+    DEFAULT_VIEW_NAME = "dynamo3D"
+    InternalUniqueId = None
 
- DEFAULT_VIEW_NAME='dynamo3D'
- InternalUniqueId=None
 
+class AxonometricView(View3D, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit View3D """
 
-class AxonometricView(View3D,IDisposable,IGraphicItem,IFormattable):
- """ A Revit View3D """
- @staticmethod
- def ByEyePointAndTarget(eyePoint,target,name):
-  """
+    @staticmethod
+    def ByEyePointAndTarget(eyePoint, target, name):
+        """
   ByEyePointAndTarget(eyePoint: Point,target: Point,name: str) -> AxonometricView
 
   
@@ -309,10 +344,13 @@ class AxonometricView(View3D,IDisposable,IGraphicItem,IFormattable):
 
    Returns: An AxonometricView object.
   """
-  pass
- @staticmethod
- def ByEyePointTargetAndBoundingBox(eyePoint,target,boundingBox,name,isolateElement):
-  """
+        pass
+
+    @staticmethod
+    def ByEyePointTargetAndBoundingBox(
+        eyePoint, target, boundingBox, name, isolateElement
+    ):
+        """
   ByEyePointTargetAndBoundingBox(eyePoint: Point,target: Point,boundingBox: BoundingBox,name: str,isolateElement: bool) -> AxonometricView
 
   
@@ -347,10 +385,11 @@ class AxonometricView(View3D,IDisposable,IGraphicItem,IFormattable):
 
    Returns: An AxonometricView object.
   """
-  pass
- @staticmethod
- def ByEyePointTargetAndElement(eyePoint,target,name,element,isolateElement):
-  """
+        pass
+
+    @staticmethod
+    def ByEyePointTargetAndElement(eyePoint, target, name, element, isolateElement):
+        """
   ByEyePointTargetAndElement(eyePoint: Point,target: Point,name: str,element: Element,isolateElement: bool) -> AxonometricView
 
   
@@ -391,9 +430,10 @@ class AxonometricView(View3D,IDisposable,IGraphicItem,IFormattable):
 
    Returns: An AxonometricView object.
   """
-  pass
- def InternalIsolateInView(self,*args):
-  """
+        pass
+
+    def InternalIsolateInView(self, *args):
+        """
   InternalIsolateInView(self: View3D,bbox: BoundingBoxXYZ)
 
    Isolate the bounding box in the current view
@@ -404,137 +444,160 @@ class AxonometricView(View3D,IDisposable,IGraphicItem,IFormattable):
 
     around it
   """
-  pass
- def InternalRemoveIsolation(self,*args):
-  """
+        pass
+
+    def InternalRemoveIsolation(self, *args):
+        """
   InternalRemoveIsolation(self: View3D)
 
    Show all hiddent elements in the view
   """
-  pass
- def InternalSetName(self,*args):
-  """
+        pass
+
+    def InternalSetName(self, *args):
+        """
   InternalSetName(self: View3D,name: str)
 
    Set the name of the current view
   """
-  pass
- def InternalSetOrientation(self,*args):
-  """
+        pass
+
+    def InternalSetOrientation(self, *args):
+        """
   InternalSetOrientation(self: View3D,orient: ViewOrientation3D)
 
    Set the orientation of the view
   """
-  pass
- def InternalSetView3D(self,*args):
-  """
+        pass
+
+    def InternalSetView3D(self, *args):
+        """
   InternalSetView3D(self: View3D,view: View3D)
 
    Set the InternalView3D property and the associated element id and unique id
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class CeilingPlanView(PlanView, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit ViewPlan """
 
-class CeilingPlanView(PlanView,IDisposable,IGraphicItem,IFormattable):
- """ A Revit ViewPlan """
- @staticmethod
- def ByLevel(level):
-  """
+    @staticmethod
+    def ByLevel(level):
+        """
   ByLevel(level: Level) -> CeilingPlanView
 
   
 
    Create a Revit Floor Plan at a given Level
   """
-  pass
- def InternalSetPlanView(self,*args):
-  """
+        pass
+
+    def InternalSetPlanView(self, *args):
+        """
   InternalSetPlanView(self: PlanView,plan: ViewPlan)
 
    Set the InternalViewPlan property and the associated element id and unique id
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class DraftingView(View, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit ViewDrafting """
 
-class DraftingView(View,IDisposable,IGraphicItem,IFormattable):
- """ A Revit ViewDrafting """
- @staticmethod
- def ByName(name):
-  """
+    @staticmethod
+    def ByName(name):
+        """
   ByName(name: str) -> DraftingView
 
   
@@ -547,30 +610,39 @@ class DraftingView(View,IDisposable,IGraphicItem,IFormattable):
 
    Returns: The view
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -580,87 +652,99 @@ Get: InternalElement(self: DraftingView) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class FloorPlanView(PlanView, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit ViewPlan """
 
-class FloorPlanView(PlanView,IDisposable,IGraphicItem,IFormattable):
- """ A Revit ViewPlan """
- @staticmethod
- def ByLevel(level):
-  """
+    @staticmethod
+    def ByLevel(level):
+        """
   ByLevel(level: Level) -> FloorPlanView
 
   
 
    Create a Revit Floor Plan at a given Level
   """
-  pass
- def InternalSetPlanView(self,*args):
-  """
+        pass
+
+    def InternalSetPlanView(self, *args):
+        """
   InternalSetPlanView(self: PlanView,plan: ViewPlan)
 
    Set the InternalViewPlan property and the associated element id and unique id
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class PerspectiveView(View3D, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit View3D """
 
-class PerspectiveView(View3D,IDisposable,IGraphicItem,IFormattable):
- """ A Revit View3D """
- @staticmethod
- def ByEyePointAndTarget(eyePoint,target,element,name,isolateElement):
-  """
+    @staticmethod
+    def ByEyePointAndTarget(eyePoint, target, element, name, isolateElement):
+        """
   ByEyePointAndTarget(eyePoint: Point,target: Point,element: object,name: str,isolateElement: bool) -> PerspectiveView
 
   
@@ -703,10 +787,13 @@ class PerspectiveView(View3D,IDisposable,IGraphicItem,IFormattable):
 
    Returns: Returns the resulting PerspectiveView object.
   """
-  pass
- @staticmethod
- def ByEyePointTargetAndBoundingBox(eyePoint,target,boundingBox,name,isolateElement):
-  """
+        pass
+
+    @staticmethod
+    def ByEyePointTargetAndBoundingBox(
+        eyePoint, target, boundingBox, name, isolateElement
+    ):
+        """
   ByEyePointTargetAndBoundingBox(eyePoint: Point,target: Point,boundingBox: BoundingBox,name: str,isolateElement: bool) -> PerspectiveView
 
   
@@ -725,10 +812,11 @@ class PerspectiveView(View3D,IDisposable,IGraphicItem,IFormattable):
 
    boundingBox: Bounding box represented in meters
   """
-  pass
- @staticmethod
- def ByEyePointTargetAndElement(eyePoint,target,element,name,isolateElement):
-  """
+        pass
+
+    @staticmethod
+    def ByEyePointTargetAndElement(eyePoint, target, element, name, isolateElement):
+        """
   ByEyePointTargetAndElement(eyePoint: Point,target: Point,element: Element,name: str,isolateElement: bool) -> PerspectiveView
 
   
@@ -737,9 +825,10 @@ class PerspectiveView(View3D,IDisposable,IGraphicItem,IFormattable):
 
     Element
   """
-  pass
- def InternalIsolateInView(self,*args):
-  """
+        pass
+
+    def InternalIsolateInView(self, *args):
+        """
   InternalIsolateInView(self: View3D,bbox: BoundingBoxXYZ)
 
    Isolate the bounding box in the current view
@@ -750,79 +839,92 @@ class PerspectiveView(View3D,IDisposable,IGraphicItem,IFormattable):
 
     around it
   """
-  pass
- def InternalRemoveIsolation(self,*args):
-  """
+        pass
+
+    def InternalRemoveIsolation(self, *args):
+        """
   InternalRemoveIsolation(self: View3D)
 
    Show all hiddent elements in the view
   """
-  pass
- def InternalSetName(self,*args):
-  """
+        pass
+
+    def InternalSetName(self, *args):
+        """
   InternalSetName(self: View3D,name: str)
 
    Set the name of the current view
   """
-  pass
- def InternalSetOrientation(self,*args):
-  """
+        pass
+
+    def InternalSetOrientation(self, *args):
+        """
   InternalSetOrientation(self: View3D,orient: ViewOrientation3D)
 
    Set the orientation of the view
   """
-  pass
- def InternalSetView3D(self,*args):
-  """
+        pass
+
+    def InternalSetView3D(self, *args):
+        """
   InternalSetView3D(self: View3D,view: View3D)
 
    Set the InternalView3D property and the associated element id and unique id
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class SectionView(View, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit ViewSection """
 
-class SectionView(View,IDisposable,IGraphicItem,IFormattable):
- """ A Revit ViewSection """
- @staticmethod
- def ByBoundingBox(box):
-  """
+    @staticmethod
+    def ByBoundingBox(box):
+        """
   ByBoundingBox(box: BoundingBox) -> SectionView
 
   
@@ -833,10 +935,11 @@ class SectionView(View,IDisposable,IGraphicItem,IFormattable):
 
    box: The bounding box of the view in meters
   """
-  pass
- @staticmethod
- def ByCoordinateSystemMinPointMaxPoint(cs,minPoint,maxPoint):
-  """
+        pass
+
+    @staticmethod
+    def ByCoordinateSystemMinPointMaxPoint(cs, minPoint, maxPoint):
+        """
   ByCoordinateSystemMinPointMaxPoint(cs: CoordinateSystem,minPoint: Point,maxPoint: Point) -> SectionView
 
   
@@ -845,30 +948,39 @@ class SectionView(View,IDisposable,IGraphicItem,IFormattable):
 
     maxPoint
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -878,29 +990,33 @@ Get: InternalElement(self: SectionView) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class Sheet(Element, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit ViewSheet """
 
-class Sheet(Element,IDisposable,IGraphicItem,IFormattable):
- """ A Revit ViewSheet """
- @staticmethod
- def ByNameNumberTitleBlockAndView(sheetName,sheetNumber,titleBlockFamilyType,view):
-  """
+    @staticmethod
+    def ByNameNumberTitleBlockAndView(
+        sheetName, sheetNumber, titleBlockFamilyType, view
+    ):
+        """
   ByNameNumberTitleBlockAndView(sheetName: str,sheetNumber: str,titleBlockFamilyType: FamilyType,view: View) -> Sheet
 
   
@@ -913,10 +1029,13 @@ class Sheet(Element,IDisposable,IGraphicItem,IFormattable):
 
     onto the sheet.
   """
-  pass
- @staticmethod
- def ByNameNumberTitleBlockAndViews(sheetName,sheetNumber,titleBlockFamilyType,views):
-  """
+        pass
+
+    @staticmethod
+    def ByNameNumberTitleBlockAndViews(
+        sheetName, sheetNumber, titleBlockFamilyType, views
+    ):
+        """
   ByNameNumberTitleBlockAndViews(sheetName: str,sheetNumber: str,titleBlockFamilyType: FamilyType,views: Array[View]) -> Sheet
 
   
@@ -929,30 +1048,39 @@ class Sheet(Element,IDisposable,IGraphicItem,IFormattable):
 
     views onto the sheet.
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -962,22 +1090,24 @@ Get: InternalElement(self: Sheet) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- SheetName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the SheetName of the Sheet
+    SheetName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get the SheetName of the Sheet
 
 
 
@@ -987,8 +1117,10 @@ Get: SheetName(self: Sheet) -> str
 
 """
 
- SheetNumber=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the SheetNumber of the Sheet
+    SheetNumber = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get the SheetNumber of the Sheet
 
 
 
@@ -998,8 +1130,8 @@ Get: SheetNumber(self: Sheet) -> str
 
 """
 
- Views=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the Views on a Sheet
+    Views = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get the Views on a Sheet
 
 
 
@@ -1009,15 +1141,15 @@ Get: Views(self: Sheet) -> Array[View]
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class StructuralPlanView(PlanView, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit ViewPlan """
 
-class StructuralPlanView(PlanView,IDisposable,IGraphicItem,IFormattable):
- """ A Revit ViewPlan """
- @staticmethod
- def ByLevel(level):
-  """
+    @staticmethod
+    def ByLevel(level):
+        """
   ByLevel(level: Level) -> StructuralPlanView
 
   
@@ -1030,50 +1162,57 @@ class StructuralPlanView(PlanView,IDisposable,IGraphicItem,IFormattable):
 
    Returns: A StructuralPlanView if successful.
   """
-  pass
- def InternalSetPlanView(self,*args):
-  """
+        pass
+
+    def InternalSetPlanView(self, *args):
+        """
   InternalSetPlanView(self: PlanView,plan: ViewPlan)
 
    Set the InternalViewPlan property and the associated element id and unique id
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
-
- InternalUniqueId=None
-
-
+    InternalUniqueId = None

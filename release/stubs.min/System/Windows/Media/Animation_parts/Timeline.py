@@ -1,7 +1,8 @@
-class Timeline(Animatable,ISealable,IAnimatable,IResource):
- """ Defines a segment of time. """
- def AllocateClock(self,*args):
-  """
+class Timeline(Animatable, ISealable, IAnimatable, IResource):
+    """ Defines a segment of time. """
+
+    def AllocateClock(self, *args):
+        """
   AllocateClock(self: Timeline) -> Clock
 
   
@@ -10,9 +11,10 @@ class Timeline(Animatable,ISealable,IAnimatable,IResource):
 
    Returns: A clock for this System.Windows.Media.Animation.Timeline.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: Timeline) -> Timeline
 
   
@@ -27,9 +29,10 @@ class Timeline(Animatable,ISealable,IAnimatable,IResource):
 
     property is false even if the source's System.Windows.Freezable.IsFrozen property is true.
   """
-  pass
- def CloneCore(self,*args):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """
   CloneCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a clone (deep copy) of the specified System.Windows.Freezable using base 
@@ -42,9 +45,10 @@ class Timeline(Animatable,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The object to clone.
   """
-  pass
- def CloneCurrentValue(self):
-  """
+        pass
+
+    def CloneCurrentValue(self):
+        """
   CloneCurrentValue(self: Timeline) -> Timeline
 
   
@@ -59,9 +63,10 @@ class Timeline(Animatable,ISealable,IAnimatable,IResource):
 
     property is false even if the source's System.Windows.Freezable.IsFrozen property is true.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """
   CloneCurrentValueCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a modifiable clone (deep copy) of the specified System.Windows.Freezable 
@@ -74,9 +79,10 @@ class Timeline(Animatable,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Freezable to be cloned.
   """
-  pass
- def CreateClock(self,hasControllableRoot=None):
-  """
+        pass
+
+    def CreateClock(self, hasControllableRoot=None):
+        """
   CreateClock(self: Timeline,hasControllableRoot: bool) -> Clock
 
   
@@ -145,9 +151,10 @@ class Timeline(Animatable,ISealable,IAnimatable,IResource):
 
     as the root.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -156,9 +163,10 @@ class Timeline(Animatable,ISealable,IAnimatable,IResource):
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """
   CreateInstanceCore(self: Freezable) -> Freezable
 
   
@@ -171,9 +179,10 @@ class Timeline(Animatable,ISealable,IAnimatable,IResource):
 
    Returns: The new instance.
   """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: Timeline,isChecking: bool) -> bool
 
   
@@ -196,9 +205,10 @@ class Timeline(Animatable,ISealable,IAnimatable,IResource):
 
     having begun to change the frozen status of this object.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """
   GetAsFrozenCore(self: Timeline,sourceFreezable: Freezable)
 
    Makes this instance a clone of the specified System.Windows.Media.Animation.Timeline object.
@@ -207,9 +217,10 @@ class Timeline(Animatable,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Media.Animation.Timeline instance to clone.
   """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """
   GetCurrentValueAsFrozenCore(self: Timeline,sourceFreezable: Freezable)
 
    Makes this instance a frozen clone of the specified System.Windows.Media.Animation.Timeline. 
@@ -222,10 +233,11 @@ class Timeline(Animatable,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Media.Animation.Timeline to copy and freeze.
   """
-  pass
- @staticmethod
- def GetDesiredFrameRate(timeline):
-  """
+        pass
+
+    @staticmethod
+    def GetDesiredFrameRate(timeline):
+        """
   GetDesiredFrameRate(timeline: Timeline) -> Nullable[int]
 
   
@@ -238,9 +250,10 @@ class Timeline(Animatable,ISealable,IAnimatable,IResource):
 
    Returns: The desired frame rate of this timeline. The default value is null.
   """
-  pass
- def GetNaturalDuration(self,*args):
-  """
+        pass
+
+    def GetNaturalDuration(self, *args):
+        """
   GetNaturalDuration(self: Timeline,clock: Clock) -> Duration
 
   
@@ -259,9 +272,10 @@ class Timeline(Animatable,ISealable,IAnimatable,IResource):
 
     System.Windows.Duration.Automatic if the natural duration is unknown.
   """
-  pass
- def GetNaturalDurationCore(self,*args):
-  """
+        pass
+
+    def GetNaturalDurationCore(self, *args):
+        """
   GetNaturalDurationCore(self: Timeline,clock: Clock) -> Duration
 
   
@@ -286,16 +300,18 @@ class Timeline(Animatable,ISealable,IAnimatable,IResource):
 
     System.Windows.Duration.Automatic if the natural duration is unknown.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: Freezable)
 
    Called when the current System.Windows.Freezable object is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -326,9 +342,10 @@ class Timeline(Animatable,ISealable,IAnimatable,IResource):
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -345,9 +362,10 @@ class Timeline(Animatable,ISealable,IAnimatable,IResource):
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -356,13 +374,15 @@ class Timeline(Animatable,ISealable,IAnimatable,IResource):
 
     members that are not dependency properties.
   """
-  pass
- @staticmethod
- def SetDesiredFrameRate(timeline,desiredFrameRate):
-  """ SetDesiredFrameRate(timeline: Timeline,desiredFrameRate: Nullable[int]) """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    @staticmethod
+    def SetDesiredFrameRate(timeline, desiredFrameRate):
+        """ SetDesiredFrameRate(timeline: Timeline,desiredFrameRate: Nullable[int]) """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -379,9 +399,10 @@ class Timeline(Animatable,ISealable,IAnimatable,IResource):
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -392,9 +413,10 @@ class Timeline(Animatable,ISealable,IAnimatable,IResource):
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -403,13 +425,15 @@ class Timeline(Animatable,ISealable,IAnimatable,IResource):
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """
   __new__(cls: type)
 
   __new__(cls: type,beginTime: Nullable[TimeSpan])
@@ -418,9 +442,12 @@ class Timeline(Animatable,ISealable,IAnimatable,IResource):
 
   __new__(cls: type,beginTime: Nullable[TimeSpan],duration: Duration,repeatBehavior: RepeatBehavior)
   """
-  pass
- AccelerationRatio=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value specifying the percentage of the timeline's System.Windows.Media.Animation.Timeline.Duration spent accelerating the passage of time from zero to its maximum rate.
+        pass
+
+    AccelerationRatio = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value specifying the percentage of the timeline's System.Windows.Media.Animation.Timeline.Duration spent accelerating the passage of time from zero to its maximum rate.
 
 
 
@@ -432,8 +459,10 @@ Set: AccelerationRatio(self: Timeline)=value
 
 """
 
- AutoReverse=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether the timeline plays in reverse after it completes a forward iteration.
+    AutoReverse = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether the timeline plays in reverse after it completes a forward iteration.
 
 
 
@@ -445,8 +474,8 @@ Set: AutoReverse(self: Timeline)=value
 
 """
 
- BeginTime=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the time at which this System.Windows.Media.Animation.Timeline should begin.
+    BeginTime = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the time at which this System.Windows.Media.Animation.Timeline should begin.
 
 
 
@@ -458,8 +487,10 @@ Set: BeginTime(self: Timeline)=value
 
 """
 
- DecelerationRatio=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value specifying the percentage of the timeline's System.Windows.Media.Animation.Timeline.Duration spent decelerating the passage of time from its maximum rate to zero.
+    DecelerationRatio = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value specifying the percentage of the timeline's System.Windows.Media.Animation.Timeline.Duration spent decelerating the passage of time from its maximum rate to zero.
 
 
 
@@ -471,8 +502,8 @@ Set: DecelerationRatio(self: Timeline)=value
 
 """
 
- Duration=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the length of time for which this timeline plays,not counting repetitions.
+    Duration = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the length of time for which this timeline plays,not counting repetitions.
 
 
 
@@ -484,8 +515,10 @@ Set: Duration(self: Timeline)=value
 
 """
 
- FillBehavior=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that specifies how the System.Windows.Media.Animation.Timeline behaves after it reaches the end of its active period.
+    FillBehavior = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that specifies how the System.Windows.Media.Animation.Timeline behaves after it reaches the end of its active period.
 
 
 
@@ -497,8 +530,8 @@ Set: FillBehavior(self: Timeline)=value
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of this System.Windows.Media.Animation.Timeline.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the name of this System.Windows.Media.Animation.Timeline.
 
 
 
@@ -510,8 +543,10 @@ Set: Name(self: Timeline)=value
 
 """
 
- RepeatBehavior=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the repeating behavior of this timeline.
+    RepeatBehavior = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the repeating behavior of this timeline.
 
 
 
@@ -523,8 +558,10 @@ Set: RepeatBehavior(self: Timeline)=value
 
 """
 
- SpeedRatio=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the rate,relative to its parent,at which time progresses for this System.Windows.Media.Animation.Timeline.
+    SpeedRatio = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the rate,relative to its parent,at which time progresses for this System.Windows.Media.Animation.Timeline.
 
 
 
@@ -536,20 +573,18 @@ Set: SpeedRatio(self: Timeline)=value
 
 """
 
-
- AccelerationRatioProperty=None
- AutoReverseProperty=None
- BeginTimeProperty=None
- Completed=None
- CurrentGlobalSpeedInvalidated=None
- CurrentStateInvalidated=None
- CurrentTimeInvalidated=None
- DecelerationRatioProperty=None
- DesiredFrameRateProperty=None
- DurationProperty=None
- FillBehaviorProperty=None
- NameProperty=None
- RemoveRequested=None
- RepeatBehaviorProperty=None
- SpeedRatioProperty=None
-
+    AccelerationRatioProperty = None
+    AutoReverseProperty = None
+    BeginTimeProperty = None
+    Completed = None
+    CurrentGlobalSpeedInvalidated = None
+    CurrentStateInvalidated = None
+    CurrentTimeInvalidated = None
+    DecelerationRatioProperty = None
+    DesiredFrameRateProperty = None
+    DurationProperty = None
+    FillBehaviorProperty = None
+    NameProperty = None
+    RemoveRequested = None
+    RepeatBehaviorProperty = None
+    SpeedRatioProperty = None

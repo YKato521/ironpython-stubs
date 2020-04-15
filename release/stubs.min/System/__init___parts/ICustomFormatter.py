@@ -1,7 +1,8 @@
 class ICustomFormatter:
- """ Defines a method that supports custom formatting of the value of an object. """
- def Format(self,format,arg,formatProvider):
-  """
+    """ Defines a method that supports custom formatting of the value of an object. """
+
+    def Format(self, format, arg, formatProvider):
+        """
   Format(self: ICustomFormatter,format: str,arg: object,formatProvider: IFormatProvider) -> str
 
   
@@ -24,7 +25,8 @@ class ICustomFormatter:
 
     formatProvider.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

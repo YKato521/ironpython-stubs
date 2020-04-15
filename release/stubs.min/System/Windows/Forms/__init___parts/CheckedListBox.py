@@ -1,13 +1,36 @@
-class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlaceObject,IOleInPlaceActiveObject,IOleWindow,IViewObject,IViewObject2,IPersist,IPersistStreamInit,IPersistPropertyBag,IPersistStorage,IQuickActivate,ISupportOleDropSource,IDropTarget,ISynchronizeInvoke,IWin32Window,IArrangedElement,IBindableComponent):
- """
+class CheckedListBox(
+    ListBox,
+    IComponent,
+    IDisposable,
+    IOleControl,
+    IOleObject,
+    IOleInPlaceObject,
+    IOleInPlaceActiveObject,
+    IOleWindow,
+    IViewObject,
+    IViewObject2,
+    IPersist,
+    IPersistStreamInit,
+    IPersistPropertyBag,
+    IPersistStorage,
+    IQuickActivate,
+    ISupportOleDropSource,
+    IDropTarget,
+    ISynchronizeInvoke,
+    IWin32Window,
+    IArrangedElement,
+    IBindableComponent,
+):
+    """
  Displays a System.Windows.Forms.ListBox in which a check box is displayed to the left of each item.
 
  
 
  CheckedListBox()
  """
- def AccessibilityNotifyClients(self,*args):
-  """
+
+    def AccessibilityNotifyClients(self, *args):
+        """
   AccessibilityNotifyClients(self: Control,accEvent: AccessibleEvents,objectID: int,childID: int)
 
    Notifies the accessibility client applications of the specified 
@@ -38,9 +61,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    childID: The child System.Windows.Forms.Control to notify of the accessible event.
   """
-  pass
- def AddItemsCore(self,*args):
-  """
+        pass
+
+    def AddItemsCore(self, *args):
+        """
   AddItemsCore(self: ListBox,value: Array[object])
 
    This member is obsolete,and there is no replacement.
@@ -49,9 +73,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    value: An array of objects.
   """
-  pass
- def CreateAccessibilityInstance(self,*args):
-  """
+        pass
+
+    def CreateAccessibilityInstance(self, *args):
+        """
   CreateAccessibilityInstance(self: CheckedListBox) -> AccessibleObject
 
   
@@ -60,9 +85,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    Returns: A new System.Windows.Forms.AccessibleObject for the control.
   """
-  pass
- def CreateControlsInstance(self,*args):
-  """
+        pass
+
+    def CreateControlsInstance(self, *args):
+        """
   CreateControlsInstance(self: Control) -> ControlCollection
 
   
@@ -71,23 +97,26 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    Returns: A new instance of System.Windows.Forms.Control.ControlCollection assigned to the control.
   """
-  pass
- def CreateHandle(self,*args):
-  """
+        pass
+
+    def CreateHandle(self, *args):
+        """
   CreateHandle(self: Control)
 
    Creates a handle for the control.
   """
-  pass
- def CreateItemCollection(self,*args):
-  """
+        pass
+
+    def CreateItemCollection(self, *args):
+        """
   CreateItemCollection(self: CheckedListBox) -> ObjectCollection
 
    Returns: A System.Windows.Forms.ListBox.ObjectCollection that represents the new item collection.
   """
-  pass
- def DefWndProc(self,*args):
-  """
+        pass
+
+    def DefWndProc(self, *args):
+        """
   DefWndProc(self: Control,m: Message) -> Message
 
   
@@ -98,16 +127,18 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    m: The Windows System.Windows.Forms.Message to process.
   """
-  pass
- def DestroyHandle(self,*args):
-  """
+        pass
+
+    def DestroyHandle(self, *args):
+        """
   DestroyHandle(self: Control)
 
    Destroys the handle associated with the control.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: Control,disposing: bool)
 
    Releases the unmanaged resources used by the System.Windows.Forms.Control and its child controls 
@@ -120,9 +151,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def FilterItemOnProperty(self,*args):
-  """
+        pass
+
+    def FilterItemOnProperty(self, *args):
+        """
   FilterItemOnProperty(self: ListControl,item: object,field: str) -> object
 
   
@@ -157,9 +189,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    Returns: The filtered object.
   """
-  pass
- def GetAccessibilityObjectById(self,*args):
-  """
+        pass
+
+    def GetAccessibilityObjectById(self, *args):
+        """
   GetAccessibilityObjectById(self: Control,objectId: int) -> AccessibleObject
 
   
@@ -172,9 +205,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    Returns: An System.Windows.Forms.AccessibleObject.
   """
-  pass
- def GetAutoSizeMode(self,*args):
-  """
+        pass
+
+    def GetAutoSizeMode(self, *args):
+        """
   GetAutoSizeMode(self: Control) -> AutoSizeMode
 
   
@@ -187,9 +221,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    Returns: One of the System.Windows.Forms.AutoSizeMode values.
   """
-  pass
- def GetItemChecked(self,index):
-  """
+        pass
+
+    def GetItemChecked(self, index):
+        """
   GetItemChecked(self: CheckedListBox,index: int) -> bool
 
   
@@ -202,9 +237,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    Returns: true if the item is checked; otherwise,false.
   """
-  pass
- def GetItemCheckState(self,index):
-  """
+        pass
+
+    def GetItemCheckState(self, index):
+        """
   GetItemCheckState(self: CheckedListBox,index: int) -> CheckState
 
   
@@ -217,9 +253,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    Returns: One of the System.Windows.Forms.CheckState values.
   """
-  pass
- def GetScaledBounds(self,*args):
-  """
+        pass
+
+    def GetScaledBounds(self, *args):
+        """
   GetScaledBounds(self: ListBox,bounds: Rectangle,factor: SizeF,specified: BoundsSpecified) -> Rectangle
 
   
@@ -240,9 +277,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    Returns: A System.Drawing.Rectangle representing the bounds within which the control is scaled.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -261,9 +299,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def GetStyle(self,*args):
-  """
+        pass
+
+    def GetStyle(self, *args):
+        """
   GetStyle(self: Control,flag: ControlStyles) -> bool
 
   
@@ -276,9 +315,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    Returns: true if the specified control style bit is set to true; otherwise,false.
   """
-  pass
- def GetTopLevel(self,*args):
-  """
+        pass
+
+    def GetTopLevel(self, *args):
+        """
   GetTopLevel(self: Control) -> bool
 
   
@@ -287,16 +327,18 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    Returns: true if the control is a top-level control; otherwise,false.
   """
-  pass
- def InitLayout(self,*args):
-  """
+        pass
+
+    def InitLayout(self, *args):
+        """
   InitLayout(self: Control)
 
    Called after the control has been added to another container.
   """
-  pass
- def InvokeGotFocus(self,*args):
-  """
+        pass
+
+    def InvokeGotFocus(self, *args):
+        """
   InvokeGotFocus(self: Control,toInvoke: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.GotFocus event for the specified control.
@@ -307,9 +349,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def InvokeLostFocus(self,*args):
-  """
+        pass
+
+    def InvokeLostFocus(self, *args):
+        """
   InvokeLostFocus(self: Control,toInvoke: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.LostFocus event for the specified control.
@@ -320,9 +363,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def InvokeOnClick(self,*args):
-  """
+        pass
+
+    def InvokeOnClick(self, *args):
+        """
   InvokeOnClick(self: Control,toInvoke: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Click event for the specified control.
@@ -333,9 +377,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def InvokePaint(self,*args):
-  """
+        pass
+
+    def InvokePaint(self, *args):
+        """
   InvokePaint(self: Control,c: Control,e: PaintEventArgs)
 
    Raises the System.Windows.Forms.Control.Paint event for the specified control.
@@ -346,9 +391,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def InvokePaintBackground(self,*args):
-  """
+        pass
+
+    def InvokePaintBackground(self, *args):
+        """
   InvokePaintBackground(self: Control,c: Control,e: PaintEventArgs)
 
    Raises the PaintBackground event for the specified control.
@@ -359,9 +405,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def IsInputChar(self,*args):
-  """
+        pass
+
+    def IsInputChar(self, *args):
+        """
   IsInputChar(self: Control,charCode: Char) -> bool
 
   
@@ -376,9 +423,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
     false.
   """
-  pass
- def IsInputKey(self,*args):
-  """
+        pass
+
+    def IsInputKey(self, *args):
+        """
   IsInputKey(self: ListControl,keyData: Keys) -> bool
 
   
@@ -397,9 +445,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
     System.Windows.Forms.Keys.Alt.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -430,9 +479,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def NotifyInvalidate(self,*args):
-  """
+        pass
+
+    def NotifyInvalidate(self, *args):
+        """
   NotifyInvalidate(self: Control,invalidatedArea: Rectangle)
 
    Raises the System.Windows.Forms.Control.Invalidated event with a specified region of the control 
@@ -445,9 +495,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    invalidatedArea: A System.Drawing.Rectangle representing the area to invalidate.
   """
-  pass
- def OnAutoSizeChanged(self,*args):
-  """
+        pass
+
+    def OnAutoSizeChanged(self, *args):
+        """
   OnAutoSizeChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.AutoSizeChanged event.
@@ -456,16 +507,18 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBackColorChanged(self,*args):
-  """
+        pass
+
+    def OnBackColorChanged(self, *args):
+        """
   OnBackColorChanged(self: CheckedListBox,e: EventArgs)
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBackgroundImageChanged(self,*args):
-  """
+        pass
+
+    def OnBackgroundImageChanged(self, *args):
+        """
   OnBackgroundImageChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BackgroundImageChanged event.
@@ -474,9 +527,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBackgroundImageLayoutChanged(self,*args):
-  """
+        pass
+
+    def OnBackgroundImageLayoutChanged(self, *args):
+        """
   OnBackgroundImageLayoutChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BackgroundImageLayoutChanged event.
@@ -485,16 +539,18 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBindingContextChanged(self,*args):
-  """
+        pass
+
+    def OnBindingContextChanged(self, *args):
+        """
   OnBindingContextChanged(self: ListControl,e: EventArgs)
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnCausesValidationChanged(self,*args):
-  """
+        pass
+
+    def OnCausesValidationChanged(self, *args):
+        """
   OnCausesValidationChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.CausesValidationChanged event.
@@ -503,16 +559,18 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnChangeUICues(self,*args):
-  """
+        pass
+
+    def OnChangeUICues(self, *args):
+        """
   OnChangeUICues(self: ListBox,e: UICuesEventArgs)
 
    e: A System.Windows.Forms.UICuesEventArgs that contains the event data.
   """
-  pass
- def OnClick(self,*args):
-  """
+        pass
+
+    def OnClick(self, *args):
+        """
   OnClick(self: CheckedListBox,e: EventArgs)
 
    Raises the System.Windows.Forms.CheckedListBox.Click event.
@@ -521,9 +579,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnClientSizeChanged(self,*args):
-  """
+        pass
+
+    def OnClientSizeChanged(self, *args):
+        """
   OnClientSizeChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ClientSizeChanged event.
@@ -532,9 +591,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnContextMenuChanged(self,*args):
-  """
+        pass
+
+    def OnContextMenuChanged(self, *args):
+        """
   OnContextMenuChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ContextMenuChanged event.
@@ -543,9 +603,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnContextMenuStripChanged(self,*args):
-  """
+        pass
+
+    def OnContextMenuStripChanged(self, *args):
+        """
   OnContextMenuStripChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ContextMenuStripChanged event.
@@ -554,9 +615,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnControlAdded(self,*args):
-  """
+        pass
+
+    def OnControlAdded(self, *args):
+        """
   OnControlAdded(self: Control,e: ControlEventArgs)
 
    Raises the System.Windows.Forms.Control.ControlAdded event.
@@ -565,9 +627,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: A System.Windows.Forms.ControlEventArgs that contains the event data.
   """
-  pass
- def OnControlRemoved(self,*args):
-  """
+        pass
+
+    def OnControlRemoved(self, *args):
+        """
   OnControlRemoved(self: Control,e: ControlEventArgs)
 
    Raises the System.Windows.Forms.Control.ControlRemoved event.
@@ -576,16 +639,18 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: A System.Windows.Forms.ControlEventArgs that contains the event data.
   """
-  pass
- def OnCreateControl(self,*args):
-  """
+        pass
+
+    def OnCreateControl(self, *args):
+        """
   OnCreateControl(self: Control)
 
    Raises the System.Windows.Forms.Control.CreateControl method.
   """
-  pass
- def OnCursorChanged(self,*args):
-  """
+        pass
+
+    def OnCursorChanged(self, *args):
+        """
   OnCursorChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.CursorChanged event.
@@ -594,23 +659,26 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDataSourceChanged(self,*args):
-  """
+        pass
+
+    def OnDataSourceChanged(self, *args):
+        """
   OnDataSourceChanged(self: ListBox,e: EventArgs)
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDisplayMemberChanged(self,*args):
-  """
+        pass
+
+    def OnDisplayMemberChanged(self, *args):
+        """
   OnDisplayMemberChanged(self: ListBox,e: EventArgs)
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDockChanged(self,*args):
-  """
+        pass
+
+    def OnDockChanged(self, *args):
+        """
   OnDockChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.DockChanged event.
@@ -619,9 +687,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDoubleClick(self,*args):
-  """
+        pass
+
+    def OnDoubleClick(self, *args):
+        """
   OnDoubleClick(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.DoubleClick event.
@@ -630,15 +699,18 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDpiChangedAfterParent(self,*args):
-  """ OnDpiChangedAfterParent(self: Control,e: EventArgs) """
-  pass
- def OnDpiChangedBeforeParent(self,*args):
-  """ OnDpiChangedBeforeParent(self: Control,e: EventArgs) """
-  pass
- def OnDragDrop(self,*args):
-  """
+        pass
+
+    def OnDpiChangedAfterParent(self, *args):
+        """ OnDpiChangedAfterParent(self: Control,e: EventArgs) """
+        pass
+
+    def OnDpiChangedBeforeParent(self, *args):
+        """ OnDpiChangedBeforeParent(self: Control,e: EventArgs) """
+        pass
+
+    def OnDragDrop(self, *args):
+        """
   OnDragDrop(self: Control,drgevent: DragEventArgs)
 
    Raises the System.Windows.Forms.Control.DragDrop event.
@@ -647,9 +719,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    drgevent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnDragEnter(self,*args):
-  """
+        pass
+
+    def OnDragEnter(self, *args):
+        """
   OnDragEnter(self: Control,drgevent: DragEventArgs)
 
    Raises the System.Windows.Forms.Control.DragEnter event.
@@ -658,9 +731,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    drgevent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnDragLeave(self,*args):
-  """
+        pass
+
+    def OnDragLeave(self, *args):
+        """
   OnDragLeave(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.DragLeave event.
@@ -669,9 +743,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDragOver(self,*args):
-  """
+        pass
+
+    def OnDragOver(self, *args):
+        """
   OnDragOver(self: Control,drgevent: DragEventArgs)
 
    Raises the System.Windows.Forms.Control.DragOver event.
@@ -680,9 +755,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    drgevent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnDrawItem(self,*args):
-  """
+        pass
+
+    def OnDrawItem(self, *args):
+        """
   OnDrawItem(self: CheckedListBox,e: DrawItemEventArgs)
 
    Raises the System.Windows.Forms.CheckedListBox.DrawItem event.
@@ -691,9 +767,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: The System.Windows.Forms.DrawItemEventArgs object with the details
   """
-  pass
- def OnEnabledChanged(self,*args):
-  """
+        pass
+
+    def OnEnabledChanged(self, *args):
+        """
   OnEnabledChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.EnabledChanged event.
@@ -702,9 +779,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnEnter(self,*args):
-  """
+        pass
+
+    def OnEnter(self, *args):
+        """
   OnEnter(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Enter event.
@@ -713,9 +791,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnFontChanged(self,*args):
-  """
+        pass
+
+    def OnFontChanged(self, *args):
+        """
   OnFontChanged(self: CheckedListBox,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.FontChanged event.
@@ -724,9 +803,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnForeColorChanged(self,*args):
-  """
+        pass
+
+    def OnForeColorChanged(self, *args):
+        """
   OnForeColorChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ForeColorChanged event.
@@ -735,9 +815,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnFormat(self,*args):
-  """
+        pass
+
+    def OnFormat(self, *args):
+        """
   OnFormat(self: ListControl,e: ListControlConvertEventArgs)
 
    Raises the System.Windows.Forms.ListControl.Format event.
@@ -746,9 +827,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: A System.Windows.Forms.ListControlConvertEventArgs that contains the event data.
   """
-  pass
- def OnFormatInfoChanged(self,*args):
-  """
+        pass
+
+    def OnFormatInfoChanged(self, *args):
+        """
   OnFormatInfoChanged(self: ListControl,e: EventArgs)
 
    Raises the System.Windows.Forms.ListControl.FormatInfoChanged event.
@@ -757,9 +839,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnFormatStringChanged(self,*args):
-  """
+        pass
+
+    def OnFormatStringChanged(self, *args):
+        """
   OnFormatStringChanged(self: ListControl,e: EventArgs)
 
    Raises the System.Windows.Forms.ListControl.FormatStringChanged event.
@@ -768,9 +851,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnFormattingEnabledChanged(self,*args):
-  """
+        pass
+
+    def OnFormattingEnabledChanged(self, *args):
+        """
   OnFormattingEnabledChanged(self: ListControl,e: EventArgs)
 
    Raises the System.Windows.Forms.ListControl.FormattingEnabledChanged event.
@@ -779,9 +863,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnGiveFeedback(self,*args):
-  """
+        pass
+
+    def OnGiveFeedback(self, *args):
+        """
   OnGiveFeedback(self: Control,gfbevent: GiveFeedbackEventArgs)
 
    Raises the System.Windows.Forms.Control.GiveFeedback event.
@@ -790,9 +875,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    gfbevent: A System.Windows.Forms.GiveFeedbackEventArgs that contains the event data.
   """
-  pass
- def OnGotFocus(self,*args):
-  """
+        pass
+
+    def OnGotFocus(self, *args):
+        """
   OnGotFocus(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.GotFocus event.
@@ -801,9 +887,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnHandleCreated(self,*args):
-  """
+        pass
+
+    def OnHandleCreated(self, *args):
+        """
   OnHandleCreated(self: CheckedListBox,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.HandleCreated event.
@@ -812,9 +899,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnHandleDestroyed(self,*args):
-  """
+        pass
+
+    def OnHandleDestroyed(self, *args):
+        """
   OnHandleDestroyed(self: ListBox,e: EventArgs)
 
    Overridden to be sure that items are set up and cleared out correctly. Inheriting controls 
@@ -827,9 +915,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnHelpRequested(self,*args):
-  """
+        pass
+
+    def OnHelpRequested(self, *args):
+        """
   OnHelpRequested(self: Control,hevent: HelpEventArgs)
 
    Raises the System.Windows.Forms.Control.HelpRequested event.
@@ -838,9 +927,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    hevent: A System.Windows.Forms.HelpEventArgs that contains the event data.
   """
-  pass
- def OnImeModeChanged(self,*args):
-  """
+        pass
+
+    def OnImeModeChanged(self, *args):
+        """
   OnImeModeChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ImeModeChanged event.
@@ -849,9 +939,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnInvalidated(self,*args):
-  """
+        pass
+
+    def OnInvalidated(self, *args):
+        """
   OnInvalidated(self: Control,e: InvalidateEventArgs)
 
    Raises the System.Windows.Forms.Control.Invalidated event.
@@ -860,9 +951,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.Windows.Forms.InvalidateEventArgs that contains the event data.
   """
-  pass
- def OnItemCheck(self,*args):
-  """
+        pass
+
+    def OnItemCheck(self, *args):
+        """
   OnItemCheck(self: CheckedListBox,ice: ItemCheckEventArgs)
 
    Raises the System.Windows.Forms.CheckedListBox.ItemCheck event.
@@ -871,9 +963,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    ice: An System.Windows.Forms.ItemCheckEventArgs that contains the event data.
   """
-  pass
- def OnKeyDown(self,*args):
-  """
+        pass
+
+    def OnKeyDown(self, *args):
+        """
   OnKeyDown(self: Control,e: KeyEventArgs)
 
    Raises the System.Windows.Forms.Control.KeyDown event.
@@ -882,9 +975,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: A System.Windows.Forms.KeyEventArgs that contains the event data.
   """
-  pass
- def OnKeyPress(self,*args):
-  """
+        pass
+
+    def OnKeyPress(self, *args):
+        """
   OnKeyPress(self: CheckedListBox,e: KeyPressEventArgs)
 
    Raises the System.Windows.Forms.Control.KeyPress event.
@@ -893,9 +987,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: The System.Windows.Forms.KeyPressEventArgs that was raised.
   """
-  pass
- def OnKeyUp(self,*args):
-  """
+        pass
+
+    def OnKeyUp(self, *args):
+        """
   OnKeyUp(self: Control,e: KeyEventArgs)
 
    Raises the System.Windows.Forms.Control.KeyUp event.
@@ -904,9 +999,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: A System.Windows.Forms.KeyEventArgs that contains the event data.
   """
-  pass
- def OnLayout(self,*args):
-  """
+        pass
+
+    def OnLayout(self, *args):
+        """
   OnLayout(self: Control,levent: LayoutEventArgs)
 
    Raises the System.Windows.Forms.Control.Layout event.
@@ -915,9 +1011,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    levent: A System.Windows.Forms.LayoutEventArgs that contains the event data.
   """
-  pass
- def OnLeave(self,*args):
-  """
+        pass
+
+    def OnLeave(self, *args):
+        """
   OnLeave(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Leave event.
@@ -926,9 +1023,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnLocationChanged(self,*args):
-  """
+        pass
+
+    def OnLocationChanged(self, *args):
+        """
   OnLocationChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.LocationChanged event.
@@ -937,9 +1035,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnLostFocus(self,*args):
-  """
+        pass
+
+    def OnLostFocus(self, *args):
+        """
   OnLostFocus(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.LostFocus event.
@@ -948,9 +1047,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMarginChanged(self,*args):
-  """
+        pass
+
+    def OnMarginChanged(self, *args):
+        """
   OnMarginChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.MarginChanged event.
@@ -959,9 +1059,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: A System.EventArgs that contains the event data.
   """
-  pass
- def OnMeasureItem(self,*args):
-  """
+        pass
+
+    def OnMeasureItem(self, *args):
+        """
   OnMeasureItem(self: CheckedListBox,e: MeasureItemEventArgs)
 
    Raises the System.Windows.Forms.CheckedListBox.MeasureItem event.
@@ -970,9 +1071,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: A System.Windows.Forms.MeasureItemEventArgs that contains the event data.
   """
-  pass
- def OnMouseCaptureChanged(self,*args):
-  """
+        pass
+
+    def OnMouseCaptureChanged(self, *args):
+        """
   OnMouseCaptureChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.MouseCaptureChanged event.
@@ -981,9 +1083,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseClick(self,*args):
-  """
+        pass
+
+    def OnMouseClick(self, *args):
+        """
   OnMouseClick(self: Control,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseClick event.
@@ -992,9 +1095,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseDoubleClick(self,*args):
-  """
+        pass
+
+    def OnMouseDoubleClick(self, *args):
+        """
   OnMouseDoubleClick(self: Control,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseDoubleClick event.
@@ -1003,9 +1107,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseDown(self,*args):
-  """
+        pass
+
+    def OnMouseDown(self, *args):
+        """
   OnMouseDown(self: Control,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseDown event.
@@ -1014,9 +1119,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseEnter(self,*args):
-  """
+        pass
+
+    def OnMouseEnter(self, *args):
+        """
   OnMouseEnter(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.MouseEnter event.
@@ -1025,9 +1131,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseHover(self,*args):
-  """
+        pass
+
+    def OnMouseHover(self, *args):
+        """
   OnMouseHover(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.MouseHover event.
@@ -1036,9 +1143,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseLeave(self,*args):
-  """
+        pass
+
+    def OnMouseLeave(self, *args):
+        """
   OnMouseLeave(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.MouseLeave event.
@@ -1047,9 +1155,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseMove(self,*args):
-  """
+        pass
+
+    def OnMouseMove(self, *args):
+        """
   OnMouseMove(self: Control,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseMove event.
@@ -1058,9 +1167,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseUp(self,*args):
-  """
+        pass
+
+    def OnMouseUp(self, *args):
+        """
   OnMouseUp(self: Control,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseUp event.
@@ -1069,9 +1179,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseWheel(self,*args):
-  """
+        pass
+
+    def OnMouseWheel(self, *args):
+        """
   OnMouseWheel(self: Control,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseWheel event.
@@ -1080,9 +1191,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMove(self,*args):
-  """
+        pass
+
+    def OnMove(self, *args):
+        """
   OnMove(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Move event.
@@ -1091,9 +1203,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnNotifyMessage(self,*args):
-  """
+        pass
+
+    def OnNotifyMessage(self, *args):
+        """
   OnNotifyMessage(self: Control,m: Message)
 
    Notifies the control of Windows messages.
@@ -1102,9 +1215,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    m: A System.Windows.Forms.Message that represents the Windows message.
   """
-  pass
- def OnPaddingChanged(self,*args):
-  """
+        pass
+
+    def OnPaddingChanged(self, *args):
+        """
   OnPaddingChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.PaddingChanged event.
@@ -1113,9 +1227,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: A System.EventArgs that contains the event data.
   """
-  pass
- def OnPaint(self,*args):
-  """
+        pass
+
+    def OnPaint(self, *args):
+        """
   OnPaint(self: Control,e: PaintEventArgs)
 
    Raises the System.Windows.Forms.Control.Paint event.
@@ -1124,9 +1239,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: A System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def OnPaintBackground(self,*args):
-  """
+        pass
+
+    def OnPaintBackground(self, *args):
+        """
   OnPaintBackground(self: Control,pevent: PaintEventArgs)
 
    Paints the background of the control.
@@ -1135,9 +1251,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    pevent: A System.Windows.Forms.PaintEventArgs that contains information about the control to paint.
   """
-  pass
- def OnParentBackColorChanged(self,*args):
-  """
+        pass
+
+    def OnParentBackColorChanged(self, *args):
+        """
   OnParentBackColorChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BackColorChanged event when the 
@@ -1150,9 +1267,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentBackgroundImageChanged(self,*args):
-  """
+        pass
+
+    def OnParentBackgroundImageChanged(self, *args):
+        """
   OnParentBackgroundImageChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BackgroundImageChanged event when the 
@@ -1165,9 +1283,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentBindingContextChanged(self,*args):
-  """
+        pass
+
+    def OnParentBindingContextChanged(self, *args):
+        """
   OnParentBindingContextChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BindingContextChanged event when the 
@@ -1180,16 +1299,18 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentChanged(self,*args):
-  """
+        pass
+
+    def OnParentChanged(self, *args):
+        """
   OnParentChanged(self: ListBox,e: EventArgs)
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentCursorChanged(self,*args):
-  """
+        pass
+
+    def OnParentCursorChanged(self, *args):
+        """
   OnParentCursorChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.CursorChanged event.
@@ -1198,9 +1319,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentEnabledChanged(self,*args):
-  """
+        pass
+
+    def OnParentEnabledChanged(self, *args):
+        """
   OnParentEnabledChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.EnabledChanged event when the 
@@ -1213,9 +1335,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentFontChanged(self,*args):
-  """
+        pass
+
+    def OnParentFontChanged(self, *args):
+        """
   OnParentFontChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.FontChanged event when the 
@@ -1228,9 +1351,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentForeColorChanged(self,*args):
-  """
+        pass
+
+    def OnParentForeColorChanged(self, *args):
+        """
   OnParentForeColorChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ForeColorChanged event when the 
@@ -1243,9 +1367,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentRightToLeftChanged(self,*args):
-  """
+        pass
+
+    def OnParentRightToLeftChanged(self, *args):
+        """
   OnParentRightToLeftChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.RightToLeftChanged event when the 
@@ -1258,9 +1383,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentVisibleChanged(self,*args):
-  """
+        pass
+
+    def OnParentVisibleChanged(self, *args):
+        """
   OnParentVisibleChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.VisibleChanged event when the 
@@ -1273,9 +1399,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnPreviewKeyDown(self,*args):
-  """
+        pass
+
+    def OnPreviewKeyDown(self, *args):
+        """
   OnPreviewKeyDown(self: Control,e: PreviewKeyDownEventArgs)
 
    Raises the System.Windows.Forms.Control.PreviewKeyDown event.
@@ -1284,9 +1411,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: A System.Windows.Forms.PreviewKeyDownEventArgs that contains the event data.
   """
-  pass
- def OnPrint(self,*args):
-  """
+        pass
+
+    def OnPrint(self, *args):
+        """
   OnPrint(self: Control,e: PaintEventArgs)
 
    Raises the System.Windows.Forms.Control.Paint event.
@@ -1295,9 +1423,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: A System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def OnQueryContinueDrag(self,*args):
-  """
+        pass
+
+    def OnQueryContinueDrag(self, *args):
+        """
   OnQueryContinueDrag(self: Control,qcdevent: QueryContinueDragEventArgs)
 
    Raises the System.Windows.Forms.Control.QueryContinueDrag event.
@@ -1306,9 +1435,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    qcdevent: A System.Windows.Forms.QueryContinueDragEventArgs that contains the event data.
   """
-  pass
- def OnRegionChanged(self,*args):
-  """
+        pass
+
+    def OnRegionChanged(self, *args):
+        """
   OnRegionChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.RegionChanged event.
@@ -1317,16 +1447,18 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnResize(self,*args):
-  """
+        pass
+
+    def OnResize(self, *args):
+        """
   OnResize(self: ListBox,e: EventArgs)
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnRightToLeftChanged(self,*args):
-  """
+        pass
+
+    def OnRightToLeftChanged(self, *args):
+        """
   OnRightToLeftChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.RightToLeftChanged event.
@@ -1335,9 +1467,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnSelectedIndexChanged(self,*args):
-  """
+        pass
+
+    def OnSelectedIndexChanged(self, *args):
+        """
   OnSelectedIndexChanged(self: CheckedListBox,e: EventArgs)
 
    Raises the System.Windows.Forms.ListBox.SelectedIndexChanged event.
@@ -1346,16 +1479,18 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnSelectedValueChanged(self,*args):
-  """
+        pass
+
+    def OnSelectedValueChanged(self, *args):
+        """
   OnSelectedValueChanged(self: ListBox,e: EventArgs)
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnSizeChanged(self,*args):
-  """
+        pass
+
+    def OnSizeChanged(self, *args):
+        """
   OnSizeChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.SizeChanged event.
@@ -1364,9 +1499,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnStyleChanged(self,*args):
-  """
+        pass
+
+    def OnStyleChanged(self, *args):
+        """
   OnStyleChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.StyleChanged event.
@@ -1375,9 +1511,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnSystemColorsChanged(self,*args):
-  """
+        pass
+
+    def OnSystemColorsChanged(self, *args):
+        """
   OnSystemColorsChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.SystemColorsChanged event.
@@ -1386,9 +1523,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnTabIndexChanged(self,*args):
-  """
+        pass
+
+    def OnTabIndexChanged(self, *args):
+        """
   OnTabIndexChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.TabIndexChanged event.
@@ -1397,9 +1535,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnTabStopChanged(self,*args):
-  """
+        pass
+
+    def OnTabStopChanged(self, *args):
+        """
   OnTabStopChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.TabStopChanged event.
@@ -1408,9 +1547,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnTextChanged(self,*args):
-  """
+        pass
+
+    def OnTextChanged(self, *args):
+        """
   OnTextChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.TextChanged event.
@@ -1419,9 +1559,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnValidated(self,*args):
-  """
+        pass
+
+    def OnValidated(self, *args):
+        """
   OnValidated(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Validated event.
@@ -1430,9 +1571,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnValidating(self,*args):
-  """
+        pass
+
+    def OnValidating(self, *args):
+        """
   OnValidating(self: Control,e: CancelEventArgs)
 
    Raises the System.Windows.Forms.Control.Validating event.
@@ -1441,9 +1583,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: A System.ComponentModel.CancelEventArgs that contains the event data.
   """
-  pass
- def OnValueMemberChanged(self,*args):
-  """
+        pass
+
+    def OnValueMemberChanged(self, *args):
+        """
   OnValueMemberChanged(self: ListControl,e: EventArgs)
 
    Raises the System.Windows.Forms.ListControl.ValueMemberChanged event.
@@ -1452,9 +1595,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnVisibleChanged(self,*args):
-  """
+        pass
+
+    def OnVisibleChanged(self, *args):
+        """
   OnVisibleChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.VisibleChanged event.
@@ -1463,9 +1607,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def ProcessCmdKey(self,*args):
-  """
+        pass
+
+    def ProcessCmdKey(self, *args):
+        """
   ProcessCmdKey(self: Control,msg: Message,keyData: Keys) -> (bool,Message)
 
   
@@ -1484,9 +1629,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    Returns: true if the character was processed by the control; otherwise,false.
   """
-  pass
- def ProcessDialogChar(self,*args):
-  """
+        pass
+
+    def ProcessDialogChar(self, *args):
+        """
   ProcessDialogChar(self: Control,charCode: Char) -> bool
 
   
@@ -1499,9 +1645,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    Returns: true if the character was processed by the control; otherwise,false.
   """
-  pass
- def ProcessDialogKey(self,*args):
-  """
+        pass
+
+    def ProcessDialogKey(self, *args):
+        """
   ProcessDialogKey(self: Control,keyData: Keys) -> bool
 
   
@@ -1514,9 +1661,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    Returns: true if the key was processed by the control; otherwise,false.
   """
-  pass
- def ProcessKeyEventArgs(self,*args):
-  """
+        pass
+
+    def ProcessKeyEventArgs(self, *args):
+        """
   ProcessKeyEventArgs(self: Control,m: Message) -> (bool,Message)
 
   
@@ -1533,9 +1681,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    Returns: true if the message was processed by the control; otherwise,false.
   """
-  pass
- def ProcessKeyMessage(self,*args):
-  """
+        pass
+
+    def ProcessKeyMessage(self, *args):
+        """
   ProcessKeyMessage(self: Control,m: Message) -> (bool,Message)
 
   
@@ -1552,9 +1701,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    Returns: true if the message was processed by the control; otherwise,false.
   """
-  pass
- def ProcessKeyPreview(self,*args):
-  """
+        pass
+
+    def ProcessKeyPreview(self, *args):
+        """
   ProcessKeyPreview(self: Control,m: Message) -> (bool,Message)
 
   
@@ -1571,9 +1721,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    Returns: true if the message was processed by the control; otherwise,false.
   """
-  pass
- def ProcessMnemonic(self,*args):
-  """
+        pass
+
+    def ProcessMnemonic(self, *args):
+        """
   ProcessMnemonic(self: Control,charCode: Char) -> bool
 
   
@@ -1586,9 +1737,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    Returns: true if the character was processed as a mnemonic by the control; otherwise,false.
   """
-  pass
- def RaiseDragEvent(self,*args):
-  """
+        pass
+
+    def RaiseDragEvent(self, *args):
+        """
   RaiseDragEvent(self: Control,key: object,e: DragEventArgs)
 
    Raises the appropriate drag event.
@@ -1599,9 +1751,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def RaiseKeyEvent(self,*args):
-  """
+        pass
+
+    def RaiseKeyEvent(self, *args):
+        """
   RaiseKeyEvent(self: Control,key: object,e: KeyEventArgs)
 
    Raises the appropriate key event.
@@ -1612,9 +1765,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: A System.Windows.Forms.KeyEventArgs that contains the event data.
   """
-  pass
- def RaiseMouseEvent(self,*args):
-  """
+        pass
+
+    def RaiseMouseEvent(self, *args):
+        """
   RaiseMouseEvent(self: Control,key: object,e: MouseEventArgs)
 
    Raises the appropriate mouse event.
@@ -1625,9 +1779,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def RaisePaintEvent(self,*args):
-  """
+        pass
+
+    def RaisePaintEvent(self, *args):
+        """
   RaisePaintEvent(self: Control,key: object,e: PaintEventArgs)
 
    Raises the appropriate paint event.
@@ -1638,16 +1793,18 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    e: A System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def RecreateHandle(self,*args):
-  """
+        pass
+
+    def RecreateHandle(self, *args):
+        """
   RecreateHandle(self: Control)
 
    Forces the re-creation of the handle for the control.
   """
-  pass
- def RefreshItem(self,*args):
-  """
+        pass
+
+    def RefreshItem(self, *args):
+        """
   RefreshItem(self: ListBox,index: int)
 
    Refreshes the item contained at the specified index.
@@ -1656,28 +1813,32 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    index: The zero-based index of the element to refresh.
   """
-  pass
- def RefreshItems(self,*args):
-  """
+        pass
+
+    def RefreshItems(self, *args):
+        """
   RefreshItems(self: CheckedListBox)
 
    Parses all System.Windows.Forms.CheckedListBox items again and gets new text strings for the 
 
     items.
   """
-  pass
- def RescaleConstantsForDpi(self,*args):
-  """ RescaleConstantsForDpi(self: ListBox,deviceDpiOld: int,deviceDpiNew: int) """
-  pass
- def ResetMouseEventArgs(self,*args):
-  """
+        pass
+
+    def RescaleConstantsForDpi(self, *args):
+        """ RescaleConstantsForDpi(self: ListBox,deviceDpiOld: int,deviceDpiNew: int) """
+        pass
+
+    def ResetMouseEventArgs(self, *args):
+        """
   ResetMouseEventArgs(self: Control)
 
    Resets the control to handle the System.Windows.Forms.Control.MouseLeave event.
   """
-  pass
- def RtlTranslateAlignment(self,*args):
-  """
+        pass
+
+    def RtlTranslateAlignment(self, *args):
+        """
   RtlTranslateAlignment(self: Control,align: ContentAlignment) -> ContentAlignment
 
   
@@ -1726,9 +1887,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    Returns: One of the System.Windows.Forms.HorizontalAlignment values.
   """
-  pass
- def RtlTranslateContent(self,*args):
-  """
+        pass
+
+    def RtlTranslateContent(self, *args):
+        """
   RtlTranslateContent(self: Control,align: ContentAlignment) -> ContentAlignment
 
   
@@ -1745,9 +1907,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    Returns: One of the System.Drawing.ContentAlignment values.
   """
-  pass
- def RtlTranslateHorizontal(self,*args):
-  """
+        pass
+
+    def RtlTranslateHorizontal(self, *args):
+        """
   RtlTranslateHorizontal(self: Control,align: HorizontalAlignment) -> HorizontalAlignment
 
   
@@ -1764,9 +1927,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    Returns: One of the System.Windows.Forms.HorizontalAlignment values.
   """
-  pass
- def RtlTranslateLeftRight(self,*args):
-  """
+        pass
+
+    def RtlTranslateLeftRight(self, *args):
+        """
   RtlTranslateLeftRight(self: Control,align: LeftRightAlignment) -> LeftRightAlignment
 
   
@@ -1783,9 +1947,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    Returns: One of the System.Windows.Forms.LeftRightAlignment values.
   """
-  pass
- def ScaleControl(self,*args):
-  """
+        pass
+
+    def ScaleControl(self, *args):
+        """
   ScaleControl(self: ListBox,factor: SizeF,specified: BoundsSpecified)
 
    factor: The factor by which the height and width of the control will be scaled.
@@ -1794,9 +1959,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
     when defining its size and position.
   """
-  pass
- def ScaleCore(self,*args):
-  """
+        pass
+
+    def ScaleCore(self, *args):
+        """
   ScaleCore(self: Control,dx: Single,dy: Single)
 
    This method is not relevant for this class.
@@ -1807,9 +1973,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    dy: The vertical scaling factor.
   """
-  pass
- def Select(self):
-  """
+        pass
+
+    def Select(self):
+        """
   Select(self: Control,directed: bool,forward: bool)
 
    Activates a child control. Optionally specifies the direction in the tab order to select the 
@@ -1824,9 +1991,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    forward: true to move forward in the tab order; false to move backward in the tab order.
   """
-  pass
- def SetAutoSizeMode(self,*args):
-  """
+        pass
+
+    def SetAutoSizeMode(self, *args):
+        """
   SetAutoSizeMode(self: Control,mode: AutoSizeMode)
 
    Sets a value indicating how a control will behave when its System.Windows.Forms.Control.AutoSize 
@@ -1839,9 +2007,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    mode: One of the System.Windows.Forms.AutoSizeMode values.
   """
-  pass
- def SetBoundsCore(self,*args):
-  """
+        pass
+
+    def SetBoundsCore(self, *args):
+        """
   SetBoundsCore(self: ListBox,x: int,y: int,width: int,height: int,specified: BoundsSpecified)
 
    Sets the specified bounds of the System.Windows.Forms.ListBox control.
@@ -1858,9 +2027,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    specified: A bitwise combination of the System.Windows.Forms.BoundsSpecified values.
   """
-  pass
- def SetClientSizeCore(self,*args):
-  """
+        pass
+
+    def SetClientSizeCore(self, *args):
+        """
   SetClientSizeCore(self: Control,x: int,y: int)
 
    Sets the size of the client area of the control.
@@ -1871,9 +2041,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    y: The client area height,in pixels.
   """
-  pass
- def SetItemChecked(self,index,value):
-  """
+        pass
+
+    def SetItemChecked(self, index, value):
+        """
   SetItemChecked(self: CheckedListBox,index: int,value: bool)
 
    Sets System.Windows.Forms.CheckState for the item at the specified index to Checked.
@@ -1884,9 +2055,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    value: true to set the item as checked; otherwise,false.
   """
-  pass
- def SetItemCheckState(self,index,value):
-  """
+        pass
+
+    def SetItemCheckState(self, index, value):
+        """
   SetItemCheckState(self: CheckedListBox,index: int,value: CheckState)
 
    Sets the check state of the item at the specified index.
@@ -1897,9 +2069,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    value: One of the System.Windows.Forms.CheckState values.
   """
-  pass
- def SetItemCore(self,*args):
-  """
+        pass
+
+    def SetItemCore(self, *args):
+        """
   SetItemCore(self: ListBox,index: int,value: object)
 
    Sets the object with the specified index in the derived class.
@@ -1910,9 +2083,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    value: The object.
   """
-  pass
- def SetItemsCore(self,*args):
-  """
+        pass
+
+    def SetItemsCore(self, *args):
+        """
   SetItemsCore(self: ListBox,value: IList)
 
    Clears the contents of the System.Windows.Forms.ListBox and adds the specified items to the 
@@ -1925,9 +2099,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    value: An array of objects to insert into the control.
   """
-  pass
- def SetStyle(self,*args):
-  """
+        pass
+
+    def SetStyle(self, *args):
+        """
   SetStyle(self: Control,flag: ControlStyles,value: bool)
 
    Sets a specified System.Windows.Forms.ControlStyles flag to either true or false.
@@ -1938,9 +2113,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    value: true to apply the specified style to the control; otherwise,false.
   """
-  pass
- def SetTopLevel(self,*args):
-  """
+        pass
+
+    def SetTopLevel(self, *args):
+        """
   SetTopLevel(self: Control,value: bool)
 
    Sets the control as the top-level control.
@@ -1949,9 +2125,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    value: true to set the control as the top-level control; otherwise,false.
   """
-  pass
- def SetVisibleCore(self,*args):
-  """
+        pass
+
+    def SetVisibleCore(self, *args):
+        """
   SetVisibleCore(self: Control,value: bool)
 
    Sets the control to the specified visible state.
@@ -1960,9 +2137,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    value: true to make the control visible; otherwise,false.
   """
-  pass
- def SizeFromClientSize(self,*args):
-  """
+        pass
+
+    def SizeFromClientSize(self, *args):
+        """
   SizeFromClientSize(self: Control,clientSize: Size) -> Size
 
   
@@ -1975,16 +2153,18 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    Returns: A System.Drawing.Size value representing the height and width of the entire control.
   """
-  pass
- def Sort(self,*args):
-  """
+        pass
+
+    def Sort(self, *args):
+        """
   Sort(self: ListBox)
 
    Sorts the items in the System.Windows.Forms.ListBox.
   """
-  pass
- def UpdateBounds(self,*args):
-  """
+        pass
+
+    def UpdateBounds(self, *args):
+        """
   UpdateBounds(self: Control,x: int,y: int,width: int,height: int,clientWidth: int,clientHeight: int)
 
    Updates the bounds of the control with the specified size,location,and client size.
@@ -2021,23 +2201,26 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    Updates the bounds of the control with the current size and location.
   """
-  pass
- def UpdateStyles(self,*args):
-  """
+        pass
+
+    def UpdateStyles(self, *args):
+        """
   UpdateStyles(self: Control)
 
    Forces the assigned styles to be reapplied to the control.
   """
-  pass
- def UpdateZOrder(self,*args):
-  """
+        pass
+
+    def UpdateZOrder(self, *args):
+        """
   UpdateZOrder(self: Control)
 
    Updates the control in its parent's z-order.
   """
-  pass
- def WmReflectCommand(self,*args):
-  """
+        pass
+
+    def WmReflectCommand(self, *args):
+        """
   WmReflectCommand(self: CheckedListBox,m: Message) -> Message
 
   
@@ -2054,9 +2237,10 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
     System.Windows.Forms.CheckedListBox control.
   """
-  pass
- def WndProc(self,*args):
-  """
+        pass
+
+    def WndProc(self, *args):
+        """
   WndProc(self: CheckedListBox,m: Message) -> Message
 
   
@@ -2067,51 +2251,64 @@ class CheckedListBox(ListBox,IComponent,IDisposable,IOleControl,IOleObject,IOleI
 
    m: The Windows System.Windows.Forms.Message to process.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- AllowSelection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Windows.Forms.ListBox currently enables selection of list items.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AllowSelection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Windows.Forms.ListBox currently enables selection of list items.
 
 
 
 """
 
- CanEnableIme=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Windows.Forms.Control.ImeMode property can be set to an active value,to enable IME support.
+    CanEnableIme = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Windows.Forms.Control.ImeMode property can be set to an active value,to enable IME support.
 
 
 
 """
 
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determines if events can be raised on the control.
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Determines if events can be raised on the control.
 
 
 
 """
 
- CheckedIndices=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Collection of checked indexes in this System.Windows.Forms.CheckedListBox.
+    CheckedIndices = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Collection of checked indexes in this System.Windows.Forms.CheckedListBox.
 
 
 
@@ -2121,8 +2318,10 @@ Get: CheckedIndices(self: CheckedListBox) -> CheckedIndexCollection
 
 """
 
- CheckedItems=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Collection of checked items in this System.Windows.Forms.CheckedListBox.
+    CheckedItems = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Collection of checked items in this System.Windows.Forms.CheckedListBox.
 
 
 
@@ -2132,8 +2331,10 @@ Get: CheckedItems(self: CheckedListBox) -> CheckedItemCollection
 
 """
 
- CheckOnClick=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the check box should be toggled when an item is selected.
+    CheckOnClick = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the check box should be toggled when an item is selected.
 
 
 
@@ -2145,22 +2346,28 @@ Set: CheckOnClick(self: CheckedListBox)=value
 
 """
 
- CreateParams=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the required creation parameters when the control handle is created.
+    CreateParams = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the required creation parameters when the control handle is created.
 
 
 
 """
 
- DataManager=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Forms.CurrencyManager associated with this control.
+    DataManager = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Windows.Forms.CurrencyManager associated with this control.
 
 
 
 """
 
- DataSource=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the data source for the control.
+    DataSource = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the data source for the control.
 
 
 
@@ -2172,59 +2379,77 @@ Set: DataSource(self: CheckedListBox)=value
 
 """
 
- DefaultCursor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the default cursor for the control.
+    DefaultCursor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the default cursor for the control.
 
 
 
 """
 
- DefaultImeMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the default Input Method Editor (IME) mode supported by the control.
+    DefaultImeMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the default Input Method Editor (IME) mode supported by the control.
 
 
 
 """
 
- DefaultMargin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the space,in pixels,that is specified by default between controls.
+    DefaultMargin = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the space,in pixels,that is specified by default between controls.
 
 
 
 """
 
- DefaultMaximumSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the length and height,in pixels,that is specified as the default maximum size of a control.
+    DefaultMaximumSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the length and height,in pixels,that is specified as the default maximum size of a control.
 
 
 
 """
 
- DefaultMinimumSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the length and height,in pixels,that is specified as the default minimum size of a control.
+    DefaultMinimumSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the length and height,in pixels,that is specified as the default minimum size of a control.
 
 
 
 """
 
- DefaultPadding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the internal spacing,in pixels,of the contents of a control.
+    DefaultPadding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the internal spacing,in pixels,of the contents of a control.
 
 
 
 """
 
- DefaultSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    DefaultSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- DisplayMember=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a string that specifies a property of the objects contained in the list box whose contents you want to display.
+    DisplayMember = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a string that specifies a property of the objects contained in the list box whose contents you want to display.
 
 
 
@@ -2236,15 +2461,17 @@ Set: DisplayMember(self: CheckedListBox)=value
 
 """
 
- DoubleBuffered=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether this control should redraw its surface using a secondary buffer to reduce or prevent flicker.
+    DoubleBuffered = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether this control should redraw its surface using a secondary buffer to reduce or prevent flicker.
 
 
 
 """
 
- DrawMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating the mode for drawing elements of the System.Windows.Forms.CheckedListBox. This property is not relevant to this class.
+    DrawMode = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating the mode for drawing elements of the System.Windows.Forms.CheckedListBox. This property is not relevant to this class.
 
 
 
@@ -2256,29 +2483,35 @@ Set: DrawMode(self: CheckedListBox)=value
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- FontHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the height of the font of the control.
+    FontHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the height of the font of the control.
 
 
 
 """
 
- ImeModeBase=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the IME mode of a control.
+    ImeModeBase = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the IME mode of a control.
 
 
 
 """
 
- ItemHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the height of the item area.
+    ItemHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the height of the item area.
 
 
 
@@ -2290,8 +2523,8 @@ Set: ItemHeight(self: CheckedListBox)=value
 
 """
 
- Items=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of items in this System.Windows.Forms.CheckedListBox.
+    Items = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the collection of items in this System.Windows.Forms.CheckedListBox.
 
 
 
@@ -2301,8 +2534,8 @@ Get: Items(self: CheckedListBox) -> ObjectCollection
 
 """
 
- Padding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets padding within the System.Windows.Forms.CheckedListBox. This property is not relevant to this class.
+    Padding = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets padding within the System.Windows.Forms.CheckedListBox. This property is not relevant to this class.
 
 
 
@@ -2314,29 +2547,37 @@ Set: Padding(self: CheckedListBox)=value
 
 """
 
- RenderRightToLeft=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is now obsolete.
+    RenderRightToLeft = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property is now obsolete.
 
 
 
 """
 
- ResizeRedraw=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the control redraws itself when resized.
+    ResizeRedraw = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the control redraws itself when resized.
 
 
 
 """
 
- ScaleChildren=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that determines the scaling of child controls.
+    ScaleChildren = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that determines the scaling of child controls.
 
 
 
 """
 
- SelectionMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value specifying the selection mode.
+    SelectionMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value specifying the selection mode.
 
 
 
@@ -2348,22 +2589,28 @@ Set: SelectionMode(self: CheckedListBox)=value
 
 """
 
- ShowFocusCues=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the control should display focus rectangles.
+    ShowFocusCues = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the control should display focus rectangles.
 
 
 
 """
 
- ShowKeyboardCues=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the user interface is in the appropriate state to show or hide keyboard accelerators.
+    ShowKeyboardCues = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the user interface is in the appropriate state to show or hide keyboard accelerators.
 
 
 
 """
 
- ThreeDCheckBoxes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the check boxes have a System.Windows.Forms.ButtonState of Flat or Normal.
+    ThreeDCheckBoxes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the check boxes have a System.Windows.Forms.ButtonState of Flat or Normal.
 
 
 
@@ -2375,8 +2622,10 @@ Set: ThreeDCheckBoxes(self: CheckedListBox)=value
 
 """
 
- UseCompatibleTextRendering=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that determines whether to use the System.Drawing.Graphics class (GDI+) or the System.Windows.Forms.TextRenderer class (GDI) to render text.
+    UseCompatibleTextRendering = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that determines whether to use the System.Drawing.Graphics class (GDI+) or the System.Windows.Forms.TextRenderer class (GDI) to render text.
 
 
 
@@ -2388,8 +2637,10 @@ Set: UseCompatibleTextRendering(self: CheckedListBox)=value
 
 """
 
- ValueMember=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a string that specifies the property of the data source from which to draw the value.
+    ValueMember = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a string that specifies the property of the data source from which to draw the value.
 
 
 
@@ -2401,16 +2652,14 @@ Set: ValueMember(self: CheckedListBox)=value
 
 """
 
-
- CheckedIndexCollection=None
- CheckedItemCollection=None
- Click=None
- DataSourceChanged=None
- DisplayMemberChanged=None
- DrawItem=None
- ItemCheck=None
- MeasureItem=None
- MouseClick=None
- ObjectCollection=None
- ValueMemberChanged=None
-
+    CheckedIndexCollection = None
+    CheckedItemCollection = None
+    Click = None
+    DataSourceChanged = None
+    DisplayMemberChanged = None
+    DrawItem = None
+    ItemCheck = None
+    MeasureItem = None
+    MouseClick = None
+    ObjectCollection = None
+    ValueMemberChanged = None

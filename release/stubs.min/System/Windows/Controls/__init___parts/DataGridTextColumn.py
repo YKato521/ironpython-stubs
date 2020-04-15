@@ -1,20 +1,25 @@
 class DataGridTextColumn(DataGridBoundColumn):
- """
+    """
  Represents a System.Windows.Controls.DataGrid column that hosts textual content in its cells.
 
  
 
  DataGridTextColumn()
  """
- DataGridOwner=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Controls.DataGrid control that contains this column.
+
+    DataGridOwner = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Windows.Controls.DataGrid control that contains this column.
 
 
 
 """
 
- FontFamily=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the font family for the content of cells in the column.
+    FontFamily = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the font family for the content of cells in the column.
 
 
 
@@ -26,8 +31,8 @@ Set: FontFamily(self: DataGridTextColumn)=value
 
 """
 
- FontSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the font size for the content of cells in the column.
+    FontSize = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the font size for the content of cells in the column.
 
 
 
@@ -39,8 +44,8 @@ Set: FontSize(self: DataGridTextColumn)=value
 
 """
 
- FontStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the font style for the content of cells in the column.
+    FontStyle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the font style for the content of cells in the column.
 
 
 
@@ -52,8 +57,10 @@ Set: FontStyle(self: DataGridTextColumn)=value
 
 """
 
- FontWeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the font weight for the content of cells in the column.
+    FontWeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the font weight for the content of cells in the column.
 
 
 
@@ -65,8 +72,10 @@ Set: FontWeight(self: DataGridTextColumn)=value
 
 """
 
- Foreground=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Windows.Media.Brush that is used to paint the text contents of cells in the column.
+    Foreground = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Windows.Media.Brush that is used to paint the text contents of cells in the column.
 
 
 
@@ -78,12 +87,10 @@ Set: Foreground(self: DataGridTextColumn)=value
 
 """
 
-
- DefaultEditingElementStyle=None
- DefaultElementStyle=None
- FontFamilyProperty=None
- FontSizeProperty=None
- FontStyleProperty=None
- FontWeightProperty=None
- ForegroundProperty=None
-
+    DefaultEditingElementStyle = None
+    DefaultElementStyle = None
+    FontFamilyProperty = None
+    FontSizeProperty = None
+    FontStyleProperty = None
+    FontWeightProperty = None
+    ForegroundProperty = None

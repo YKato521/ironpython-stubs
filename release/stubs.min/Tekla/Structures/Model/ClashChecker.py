@@ -8,19 +8,19 @@
 # no functions
 # classes
 
+
 class ClashChekerEvent(object):
- # no doc
- @staticmethod
- def GetClashCheckHandler():
-  """ GetClashCheckHandler() -> ClashCheckHandler """
-  pass
- ClashCheckDoneDelegate=None
- ClashDetectedDelegate=None
- __all__=[
-  '__reduce_ex__',
-  'ClashCheckDoneDelegate',
-  'ClashDetectedDelegate',
-  'GetClashCheckHandler',
- ]
+    # no doc
+    @staticmethod
+    def GetClashCheckHandler():
+        """ GetClashCheckHandler() -> ClashCheckHandler """
+        pass
 
-
+    ClashCheckDoneDelegate = None
+    ClashDetectedDelegate = None
+    __all__ = [
+        "__reduce_ex__",
+        "ClashCheckDoneDelegate",
+        "ClashDetectedDelegate",
+        "GetClashCheckHandler",
+    ]

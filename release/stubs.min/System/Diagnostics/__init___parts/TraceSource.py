@@ -1,5 +1,5 @@
 class TraceSource(object):
- """
+    """
  Provides a set of methods and properties that enable applications to trace the execution of code and associate trace messages with their source.
 
  
@@ -8,22 +8,25 @@ class TraceSource(object):
 
  TraceSource(name: str,defaultLevel: SourceLevels)
  """
- def Close(self):
-  """
+
+    def Close(self):
+        """
   Close(self: TraceSource)
 
    Closes all the trace listeners in the trace listener collection.
   """
-  pass
- def Flush(self):
-  """
+        pass
+
+    def Flush(self):
+        """
   Flush(self: TraceSource)
 
    Flushes all the trace listeners in the trace listener collection.
   """
-  pass
- def GetSupportedAttributes(self,*args):
-  """
+        pass
+
+    def GetSupportedAttributes(self, *args):
+        """
   GetSupportedAttributes(self: TraceSource) -> Array[str]
 
   
@@ -34,9 +37,10 @@ class TraceSource(object):
 
     no custom attributes.
   """
-  pass
- def TraceData(self,eventType,id,data):
-  """
+        pass
+
+    def TraceData(self, eventType, id, data):
+        """
   TraceData(self: TraceSource,eventType: TraceEventType,id: int,*data: Array[object])
 
    Writes trace data to the trace listeners in the System.Diagnostics.TraceSource.Listeners 
@@ -69,9 +73,10 @@ class TraceSource(object):
 
    data: The trace data.
   """
-  pass
- def TraceEvent(self,eventType,id,*__args):
-  """
+        pass
+
+    def TraceEvent(self, eventType, id, *__args):
+        """
   TraceEvent(self: TraceSource,eventType: TraceEventType,id: int,format: str,*args: Array[object])
 
    Writes a trace event to the trace listeners in the System.Diagnostics.TraceSource.Listeners 
@@ -128,9 +133,10 @@ class TraceSource(object):
 
    id: A numeric identifier for the event.
   """
-  pass
- def TraceInformation(self,*__args):
-  """
+        pass
+
+    def TraceInformation(self, *__args):
+        """
   TraceInformation(self: TraceSource,format: str,*args: Array[object])
 
    Writes an informational message to the trace listeners in the 
@@ -163,9 +169,10 @@ class TraceSource(object):
 
    message: The informative message to write.
   """
-  pass
- def TraceTransfer(self,id,message,relatedActivityId):
-  """
+        pass
+
+    def TraceTransfer(self, id, message, relatedActivityId):
+        """
   TraceTransfer(self: TraceSource,id: int,message: str,relatedActivityId: Guid)
 
    Writes a trace transfer message to the trace listeners in the 
@@ -184,17 +191,21 @@ class TraceSource(object):
 
    relatedActivityId: A structure that identifies the related activity.
   """
-  pass
- @staticmethod
- def __new__(self,name,defaultLevel=None):
-  """
+        pass
+
+    @staticmethod
+    def __new__(self, name, defaultLevel=None):
+        """
   __new__(cls: type,name: str)
 
   __new__(cls: type,name: str,defaultLevel: SourceLevels)
   """
-  pass
- Attributes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the custom switch attributes defined in the application configuration file.
+        pass
+
+    Attributes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the custom switch attributes defined in the application configuration file.
 
 
 
@@ -204,8 +215,8 @@ Get: Attributes(self: TraceSource) -> StringDictionary
 
 """
 
- Listeners=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of trace listeners for the trace source.
+    Listeners = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the collection of trace listeners for the trace source.
 
 
 
@@ -215,8 +226,8 @@ Get: Listeners(self: TraceSource) -> TraceListenerCollection
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name of the trace source.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the name of the trace source.
 
 
 
@@ -226,8 +237,8 @@ Get: Name(self: TraceSource) -> str
 
 """
 
- Switch=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the source switch value.
+    Switch = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the source switch value.
 
 
 
@@ -238,5 +249,3 @@ Get: Switch(self: TraceSource) -> SourceSwitch
 Set: Switch(self: TraceSource)=value
 
 """
-
-

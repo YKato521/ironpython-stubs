@@ -1,5 +1,5 @@
 class MeshFace(object):
- """
+    """
  Represents the values of the four indices of a mesh face quad.
 
     If the third and fourth values are the same,this face represents a
@@ -12,8 +12,9 @@ class MeshFace(object):
 
  MeshFace(a: int,b: int,c: int,d: int)
  """
- def Flip(self):
-  """
+
+    def Flip(self):
+        """
   Flip(self: MeshFace) -> MeshFace
 
   
@@ -24,9 +25,10 @@ class MeshFace(object):
 
     always maintained.
   """
-  pass
- def IsValid(self,vertexCount=None):
-  """
+        pass
+
+    def IsValid(self, vertexCount=None):
+        """
   IsValid(self: MeshFace,vertexCount: int) -> bool
 
   
@@ -73,9 +75,10 @@ class MeshFace(object):
 
     IsValid(int) instead.
   """
-  pass
- def Set(self,a,b,c,d=None):
-  """
+        pass
+
+    def Set(self, a, b, c, d=None):
+        """
   Set(self: MeshFace,a: int,b: int,c: int,d: int)
 
    Sets all the corners for this face as a quad.
@@ -102,13 +105,15 @@ class MeshFace(object):
 
    c: Index of third corner.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- @staticmethod
- def __new__(self,a,b,c,d=None):
-  """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    @staticmethod
+    def __new__(self, a, b, c, d=None):
+        """
   __new__[MeshFace]() -> MeshFace
 
   
@@ -117,12 +122,14 @@ class MeshFace(object):
 
   __new__(cls: type,a: int,b: int,c: int,d: int)
   """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- A=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the first corner index of the mesh face.
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    A = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the first corner index of the mesh face.
 
 
 
@@ -134,8 +141,8 @@ Set: A(self: MeshFace)=value
 
 """
 
- B=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the second corner index of the mesh face.
+    B = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the second corner index of the mesh face.
 
 
 
@@ -147,8 +154,8 @@ Set: B(self: MeshFace)=value
 
 """
 
- C=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the third corner index of the mesh face.
+    C = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the third corner index of the mesh face.
 
 
 
@@ -160,8 +167,8 @@ Set: C(self: MeshFace)=value
 
 """
 
- D=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the fourth corner index of the mesh face. 
+    D = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the fourth corner index of the mesh face. 
 
    If D equals C,the mesh face is considered to be a triangle 
 
@@ -177,8 +184,8 @@ Set: D(self: MeshFace)=value
 
 """
 
- IsQuad=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether or not this mesh face is a quad. 
+    IsQuad = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether or not this mesh face is a quad. 
 
    A mesh face is considered to be a triangle when C does not equal D,
 
@@ -192,8 +199,10 @@ Get: IsQuad(self: MeshFace) -> bool
 
 """
 
- IsTriangle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether or not this mesh face is a triangle. 
+    IsTriangle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether or not this mesh face is a triangle. 
 
    A mesh face is considered to be a triangle when C equals D,thus it is 
 
@@ -207,6 +216,4 @@ Get: IsTriangle(self: MeshFace) -> bool
 
 """
 
-
- Unset=None
-
+    Unset = None

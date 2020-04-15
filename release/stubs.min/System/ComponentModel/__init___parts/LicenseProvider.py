@@ -1,7 +1,8 @@
 class LicenseProvider(object):
- """ Provides the abstract base class for implementing a license provider. """
- def GetLicense(self,context,type,instance,allowExceptions):
-  """
+    """ Provides the abstract base class for implementing a license provider. """
+
+    def GetLicense(self, context, type, instance, allowExceptions):
+        """
   GetLicense(self: LicenseProvider,context: LicenseContext,type: Type,instance: object,allowExceptions: bool) -> License
 
   
@@ -28,4 +29,4 @@ class LicenseProvider(object):
 
    Returns: A valid System.ComponentModel.License.
   """
-  pass
+        pass

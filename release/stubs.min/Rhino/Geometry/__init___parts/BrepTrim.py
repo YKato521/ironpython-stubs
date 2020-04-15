@@ -1,5 +1,5 @@
-class BrepTrim(CurveProxy,IDisposable,ISerializable):
- """
+class BrepTrim(CurveProxy, IDisposable, ISerializable):
+    """
  Brep trim information is stored in BrepTrim classes. Brep.Trims is an
 
     array of all the trims in the brep. A BrepTrim is derived from CurveProxy
@@ -12,8 +12,9 @@ class BrepTrim(CurveProxy,IDisposable,ISerializable):
 
     and the trim as a curve may not agree.
  """
- def ConstructConstObject(self,*args):
-  """
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -24,9 +25,10 @@ class BrepTrim(CurveProxy,IDisposable,ISerializable):
 
    subobject_index: The subobject index.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: Curve,disposing: bool)
 
    For derived class implementers.
@@ -51,9 +53,10 @@ class BrepTrim(CurveProxy,IDisposable,ISerializable):
 
     finalizer.
   """
-  pass
- def GetTolerances(self,toleranceU,toleranceV):
-  """
+        pass
+
+    def GetTolerances(self, toleranceU, toleranceV):
+        """
   GetTolerances(self: BrepTrim) -> (float,float)
 
   
@@ -64,9 +67,10 @@ class BrepTrim(CurveProxy,IDisposable,ISerializable):
 
     curves.
   """
-  pass
- def GetTrimParameter(self,edgeParameter,trimParameter):
-  """
+        pass
+
+    def GetTrimParameter(self, edgeParameter, trimParameter):
+        """
   GetTrimParameter(self: BrepTrim,edgeParameter: float) -> (bool,float)
 
   
@@ -75,9 +79,10 @@ class BrepTrim(CurveProxy,IDisposable,ISerializable):
 
    Returns: true on success
   """
-  pass
- def IsReversed(self):
-  """
+        pass
+
+    def IsReversed(self):
+        """
   IsReversed(self: BrepTrim) -> bool
 
   
@@ -86,9 +91,10 @@ class BrepTrim(CurveProxy,IDisposable,ISerializable):
 
    Returns: true if the 2d trim and 3d edge have opposite orientations
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: Curve)
 
    For derived classes implementers.
@@ -97,16 +103,18 @@ class BrepTrim(CurveProxy,IDisposable,ISerializable):
 
     instance from being const.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: GeometryBase)
 
    Is called when a non-const operation occurs.
   """
-  pass
- def SetTolerances(self,toleranceU,toleranceV):
-  """
+        pass
+
+    def SetTolerances(self, toleranceU, toleranceV):
+        """
   SetTolerances(self: BrepTrim,toleranceU: float,toleranceV: float)
 
    The values in tolerance[] record the accuracy of the parameter space
@@ -115,9 +123,10 @@ class BrepTrim(CurveProxy,IDisposable,ISerializable):
 
     curves.
   """
-  pass
- def SetTrimCurve(self,curve2dIndex,subDomain=None):
-  """
+        pass
+
+    def SetTrimCurve(self, curve2dIndex, subDomain=None):
+        """
   SetTrimCurve(self: BrepTrim,curve2dIndex: int,subDomain: Interval) -> bool
 
   
@@ -142,28 +151,32 @@ class BrepTrim(CurveProxy,IDisposable,ISerializable):
 
    Returns: true if successful
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Brep=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the Brep that owns this trim.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Brep = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the Brep that owns this trim.
 
 
 
@@ -173,8 +186,8 @@ Get: Brep(self: BrepTrim) -> Brep
 
 """
 
- Edge=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Brep edge this trim belongs to. This will be null for singular trims
+    Edge = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Brep edge this trim belongs to. This will be null for singular trims
 
 
 
@@ -184,8 +197,8 @@ Get: Edge(self: BrepTrim) -> BrepEdge
 
 """
 
- Face=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Brep face this trim belongs to
+    Face = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Brep face this trim belongs to
 
 
 
@@ -195,8 +208,8 @@ Get: Face(self: BrepTrim) -> BrepFace
 
 """
 
- IsoStatus=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """
+    IsoStatus = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """
 
 
 
@@ -208,8 +221,8 @@ Set: IsoStatus(self: BrepTrim)=value
 
 """
 
- Loop=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Loop that this trim belongs to
+    Loop = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Loop that this trim belongs to
 
 
 
@@ -219,8 +232,8 @@ Get: Loop(self: BrepTrim) -> BrepLoop
 
 """
 
- TrimIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the index of this trim in the Brep.Trims collection.
+    TrimIndex = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the index of this trim in the Brep.Trims collection.
 
 
 
@@ -230,8 +243,8 @@ Get: TrimIndex(self: BrepTrim) -> int
 
 """
 
- TrimType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Type of trim
+    TrimType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Type of trim
 
 
 
@@ -242,5 +255,3 @@ Get: TrimType(self: BrepTrim) -> BrepTrimType
 Set: TrimType(self: BrepTrim)=value
 
 """
-
-

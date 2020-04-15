@@ -1,8 +1,9 @@
 class GridTablesFactory(object):
- """ Provides the System.Windows.Forms.GridTablesFactory.CreateGridTables(System.Windows.Forms.DataGridTableStyle,System.Object,System.String,System.Windows.Forms.BindingContext) method. """
- @staticmethod
- def CreateGridTables(gridTable,dataSource,dataMember,bindingManager):
-  """
+    """ Provides the System.Windows.Forms.GridTablesFactory.CreateGridTables(System.Windows.Forms.DataGridTableStyle,System.Object,System.String,System.Windows.Forms.BindingContext) method. """
+
+    @staticmethod
+    def CreateGridTables(gridTable, dataSource, dataMember, bindingManager):
+        """
   CreateGridTables(gridTable: DataGridTableStyle,dataSource: object,dataMember: str,bindingManager: BindingContext) -> Array[DataGridTableStyle]
 
   
@@ -25,4 +26,4 @@ class GridTablesFactory(object):
 
    Returns: An array of System.Windows.Forms.DataGridTableStyle objects.
   """
-  pass
+        pass

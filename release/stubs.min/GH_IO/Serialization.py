@@ -8,16 +8,18 @@
 # no functions
 # classes
 
-class EncodedStringWriter(StringWriter,IDisposable):
- """
+
+class EncodedStringWriter(StringWriter, IDisposable):
+    """
  This class is needed to override the UTF-16 encoding property of the default DotNET StringWriter.
 
  
 
  EncodedStringWriter()
  """
- def Dispose(self):
-  """
+
+    def Dispose(self):
+        """
   Dispose(self: StringWriter,disposing: bool)
 
    Releases the unmanaged resources used by the System.IO.StringWriter and optionally releases the 
@@ -30,9 +32,10 @@ class EncodedStringWriter(StringWriter,IDisposable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -63,30 +66,35 @@ class EncodedStringWriter(StringWriter,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- Encoding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Always return UTF-8.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Encoding = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Always return UTF-8.
 
 
 
@@ -96,20 +104,20 @@ Get: Encoding(self: EncodedStringWriter) -> Encoding
 
 """
 
-
- CoreNewLine=None
+    CoreNewLine = None
 
 
 class GH_Archive(object):
- """
+    """
  This is the base archive class which takes care of all (de)serialization and messaging.
 
  
 
  GH_Archive()
  """
- def AddMessage(self,*__args):
-  """
+
+    def AddMessage(self, *__args):
+        """
   AddMessage(self: GH_Archive,message: GH_Message)
 
    Add a new message to the record.
@@ -128,9 +136,10 @@ class GH_Archive(object):
 
    message_type: Message type.
   """
-  pass
- def AppendObject(self,target,target_name):
-  """
+        pass
+
+    def AppendObject(self, target, target_name):
+        """
   AppendObject(self: GH_Archive,target: GH_ISerializable,target_name: str) -> bool
 
   
@@ -155,16 +164,18 @@ class GH_Archive(object):
 
    Returns: True on succes,false on failure.
   """
-  pass
- def ClearMessages(self):
-  """
+        pass
+
+    def ClearMessages(self):
+        """
   ClearMessages(self: GH_Archive)
 
    Remove all messages from the log.
   """
-  pass
- def CreateNewRoot(self,forWriting):
-  """
+        pass
+
+    def CreateNewRoot(self, forWriting):
+        """
   CreateNewRoot(self: GH_Archive,forWriting: bool)
 
    Discards the current data tree and instantiates a new root node. 
@@ -183,9 +194,10 @@ class GH_Archive(object):
 
    forWriting: If true,all data fields are reset.
   """
-  pass
- def CreateTopLevelNode(self,root_name):
-  """
+        pass
+
+    def CreateTopLevelNode(self, root_name):
+        """
   CreateTopLevelNode(self: GH_Archive,root_name: str) -> GH_IWriter
 
   
@@ -206,9 +218,10 @@ class GH_Archive(object):
 
    Returns: The GH_IWriter incarnation of the GH_Chunk that represents the new Node.
   """
-  pass
- def Deserialize_Binary(self,data):
-  """
+        pass
+
+    def Deserialize_Binary(self, data):
+        """
   Deserialize_Binary(self: GH_Archive,data: Array[Byte]) -> bool
 
   
@@ -221,9 +234,10 @@ class GH_Archive(object):
 
    Returns: True on success,false on failure.
   """
-  pass
- def Deserialize_Xml(self,xml_content):
-  """
+        pass
+
+    def Deserialize_Xml(self, xml_content):
+        """
   Deserialize_Xml(self: GH_Archive,xml_content: str) -> bool
 
   
@@ -236,9 +250,10 @@ class GH_Archive(object):
 
    Returns: True on success,false on failure.
   """
-  pass
- def ExtractObject(self,target,target_name):
-  """
+        pass
+
+    def ExtractObject(self, target, target_name):
+        """
   ExtractObject(self: GH_Archive,target: GH_ISerializable,target_name: str) -> bool
 
   
@@ -253,9 +268,10 @@ class GH_Archive(object):
 
    Returns: True on succes,false on failure.
   """
-  pass
- def MessageCount(self,includeInfo=None,includeWarnings=None,includeErrors=None):
-  """
+        pass
+
+    def MessageCount(self, includeInfo=None, includeWarnings=None, includeErrors=None):
+        """
   MessageCount(self: GH_Archive,includeInfo: bool,includeWarnings: bool,includeErrors: bool) -> int
 
   
@@ -286,13 +302,15 @@ class GH_Archive(object):
 
    Returns: The number of recorded messages.
   """
-  pass
- @staticmethod
- def OpenFileDialog(title,file_path,additional_filters):
-  """ OpenFileDialog(title: str,file_path: str,additional_filters: List[str]) -> (bool,str) """
-  pass
- def ReadFromFile(self,file_name):
-  """
+        pass
+
+    @staticmethod
+    def OpenFileDialog(title, file_path, additional_filters):
+        """ OpenFileDialog(title: str,file_path: str,additional_filters: List[str]) -> (bool,str) """
+        pass
+
+    def ReadFromFile(self, file_name):
+        """
   ReadFromFile(self: GH_Archive,file_name: str) -> bool
 
   
@@ -309,13 +327,15 @@ class GH_Archive(object):
 
     fields of this archive ought to be treated as invalid.
   """
-  pass
- @staticmethod
- def SaveFileDialog(title,file_path,additional_filters):
-  """ SaveFileDialog(title: str,file_path: str,additional_filters: List[str]) -> (bool,str) """
-  pass
- def Serialize_Binary(self):
-  """
+        pass
+
+    @staticmethod
+    def SaveFileDialog(title, file_path, additional_filters):
+        """ SaveFileDialog(title: str,file_path: str,additional_filters: List[str]) -> (bool,str) """
+        pass
+
+    def Serialize_Binary(self):
+        """
   Serialize_Binary(self: GH_Archive) -> Array[Byte]
 
   
@@ -324,9 +344,10 @@ class GH_Archive(object):
 
    Returns: A byte array containing the Binary stream.
   """
-  pass
- def Serialize_Xml(self):
-  """
+        pass
+
+    def Serialize_Xml(self):
+        """
   Serialize_Xml(self: GH_Archive) -> str
 
   
@@ -335,9 +356,10 @@ class GH_Archive(object):
 
    Returns: A string containing the Xml content.
   """
-  pass
- def ShowMessageLog(self):
-  """
+        pass
+
+    def ShowMessageLog(self):
+        """
   ShowMessageLog(self: GH_Archive) -> DialogResult
 
   
@@ -352,9 +374,10 @@ class GH_Archive(object):
 
    Returns: The closing flag for the displayed log form.
   """
-  pass
- def WriteToFile(self,file_name,overwrite,remember_path):
-  """
+        pass
+
+    def WriteToFile(self, file_name, overwrite, remember_path):
+        """
   WriteToFile(self: GH_Archive,file_name: str,overwrite: bool,remember_path: bool) -> bool
 
   
@@ -377,9 +400,10 @@ class GH_Archive(object):
 
    Returns: True on succes,false if file already exists and overwrite is set to false.
   """
-  pass
- FileName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the filename (without extension) of the currently loaded data tree.
+        pass
+
+    FileName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the filename (without extension) of the currently loaded data tree.
 
    If the path field has not been set,"unnamed" is returned.
 
@@ -391,8 +415,10 @@ Get: FileName(self: GH_Archive) -> str
 
 """
 
- GetRootNode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the root node of this archive. 
+    GetRootNode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the root node of this archive. 
 
    Typically you do not need to modify the Root. 
 
@@ -408,8 +434,10 @@ Get: GetRootNode(self: GH_Archive) -> GH_Chunk
 
 """
 
- IsBinaryPath=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the Path field points to a Binary Grasshopper file.
+    IsBinaryPath = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the Path field points to a Binary Grasshopper file.
 
 
 
@@ -419,8 +447,8 @@ Get: IsBinaryPath(self: GH_Archive) -> bool
 
 """
 
- IsPath=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether or not the path field has been set.
+    IsPath = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether or not the path field has been set.
 
 
 
@@ -430,8 +458,8 @@ Get: IsPath(self: GH_Archive) -> bool
 
 """
 
- IsXmlPath=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the Path field points to an Xml Grasshopper file.
+    IsXmlPath = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether the Path field points to an Xml Grasshopper file.
 
 
 
@@ -441,8 +469,8 @@ Get: IsXmlPath(self: GH_Archive) -> bool
 
 """
 
- Messages=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the internal list of messages.
+    Messages = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the internal list of messages.
 
 
 
@@ -452,8 +480,8 @@ Get: Messages(self: GH_Archive) -> List[GH_Message]
 
 """
 
- Path=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the path to the file from which this archive was read and/or written to. 
+    Path = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the path to the file from which this archive was read and/or written to. 
 
    If the archive hasn't been read or written yet,this field will be null.
 
@@ -467,8 +495,10 @@ Set: Path(self: GH_Archive)=value
 
 """
 
- WorstCaseMessageType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the worst case message type. 
+    WorstCaseMessageType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the worst case message type. 
 
    If the record contains at least 1 error,the worst case is GH_Message_Type.error. 
 
@@ -486,21 +516,23 @@ Get: WorstCaseMessageType(self: GH_Archive) -> GH_Message_Type
 
 """
 
+    GH_IO_Version = None
+    GrasshopperBinaryExtension = ".gh"
+    GrasshopperUserExtension = ".ghuser"
+    GrasshopperXmlExtension = ".ghx"
 
- GH_IO_Version=None
- GrasshopperBinaryExtension='.gh'
- GrasshopperUserExtension='.ghuser'
- GrasshopperXmlExtension='.ghx'
 
-
-class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_IReader):
- """
+class GH_Chunk(
+    object, GH_IWriter, GH_IChunk, GH_IBinarySupport, GH_IXmlSupport, GH_IReader
+):
+    """
  Full implementation of GH_IChunk,GH_IReader,GH_IWriter,GH_IBinarySupport and GH_IXmlSupport. 
 
     Instances of this class are usually disguised as one of the interfaces it implements.
  """
- def AddComment(self,comment_text):
-  """
+
+    def AddComment(self, comment_text):
+        """
   AddComment(self: GH_Chunk,comment_text: str)
 
    Adds a text comment to this chunk. Comments are serialized only if the output flavour is a 
@@ -523,9 +555,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
     characters for a chosen format flavour.
   """
-  pass
- def AddMessage(self,m,t):
-  """
+        pass
+
+    def AddMessage(self, m, t):
+        """
   AddMessage(self: GH_Chunk,m: str,t: GH_Message_Type)
 
    Log a new message with the top-level archive. 
@@ -546,9 +579,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    t: Message type.
   """
-  pass
- def ChunkExists(self,name,index=None):
-  """
+        pass
+
+    def ChunkExists(self, name, index=None):
+        """
   ChunkExists(self: GH_Chunk,name: str,index: int) -> bool
 
   
@@ -599,9 +633,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if a chunk with the specified name exists,otherwise false.
   """
-  pass
- def CreateChunk(self,chunk_name,chunk_index=None):
-  """
+        pass
+
+    def CreateChunk(self, chunk_name, chunk_index=None):
+        """
   CreateChunk(self: GH_Chunk,chunk_name: str,chunk_index: int) -> GH_IWriter
 
   
@@ -640,9 +675,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The newly created child chunk.
   """
-  pass
- def FindChunk(self,name,index=None):
-  """
+        pass
+
+    def FindChunk(self, name, index=None):
+        """
   FindChunk(self: GH_Chunk,name: str,index: int) -> GH_IReader
 
   
@@ -697,9 +733,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
     found.
   """
-  pass
- def FindItem(self,name,index=None):
-  """
+        pass
+
+    def FindItem(self, name, index=None):
+        """
   FindItem(self: GH_Chunk,name: str,index: int) -> GH_Item
 
   
@@ -756,9 +793,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
      or null of no matching item could be found.
   """
-  pass
- def GetBoolean(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetBoolean(self, item_name, item_index=None):
+        """
   GetBoolean(self: GH_Chunk,item_name: str,item_index: int) -> bool
 
   
@@ -797,9 +835,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetBoundingBox(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetBoundingBox(self, item_name, item_index=None):
+        """
   GetBoundingBox(self: GH_Chunk,item_name: str,item_index: int) -> GH_BoundingBox
 
   
@@ -838,9 +877,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetByte(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetByte(self, item_name, item_index=None):
+        """
   GetByte(self: GH_Chunk,item_name: str,item_index: int) -> Byte
 
   
@@ -879,9 +919,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetByteArray(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetByteArray(self, item_name, item_index=None):
+        """
   GetByteArray(self: GH_Chunk,item_name: str,item_index: int) -> Array[Byte]
 
   
@@ -920,9 +961,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetDate(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetDate(self, item_name, item_index=None):
+        """
   GetDate(self: GH_Chunk,item_name: str,item_index: int) -> DateTime
 
   
@@ -961,9 +1003,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetDecimal(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetDecimal(self, item_name, item_index=None):
+        """
   GetDecimal(self: GH_Chunk,item_name: str,item_index: int) -> Decimal
 
   
@@ -1002,9 +1045,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetDouble(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetDouble(self, item_name, item_index=None):
+        """
   GetDouble(self: GH_Chunk,item_name: str,item_index: int) -> float
 
   
@@ -1043,9 +1087,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetDoubleArray(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetDoubleArray(self, item_name, item_index=None):
+        """
   GetDoubleArray(self: GH_Chunk,item_name: str,item_index: int) -> Array[float]
 
   
@@ -1084,9 +1129,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetDrawingBitmap(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetDrawingBitmap(self, item_name, item_index=None):
+        """
   GetDrawingBitmap(self: GH_Chunk,item_name: str,item_index: int) -> Bitmap
 
   
@@ -1125,9 +1171,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetDrawingColor(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetDrawingColor(self, item_name, item_index=None):
+        """
   GetDrawingColor(self: GH_Chunk,item_name: str,item_index: int) -> Color
 
   
@@ -1166,9 +1213,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetDrawingPoint(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetDrawingPoint(self, item_name, item_index=None):
+        """
   GetDrawingPoint(self: GH_Chunk,item_name: str,item_index: int) -> Point
 
   
@@ -1207,9 +1255,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetDrawingPointF(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetDrawingPointF(self, item_name, item_index=None):
+        """
   GetDrawingPointF(self: GH_Chunk,item_name: str,item_index: int) -> PointF
 
   
@@ -1248,9 +1297,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetDrawingRectangle(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetDrawingRectangle(self, item_name, item_index=None):
+        """
   GetDrawingRectangle(self: GH_Chunk,item_name: str,item_index: int) -> Rectangle
 
   
@@ -1289,9 +1339,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetDrawingRectangleF(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetDrawingRectangleF(self, item_name, item_index=None):
+        """
   GetDrawingRectangleF(self: GH_Chunk,item_name: str,item_index: int) -> RectangleF
 
   
@@ -1330,9 +1381,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetDrawingSize(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetDrawingSize(self, item_name, item_index=None):
+        """
   GetDrawingSize(self: GH_Chunk,item_name: str,item_index: int) -> Size
 
   
@@ -1371,9 +1423,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetDrawingSizeF(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetDrawingSizeF(self, item_name, item_index=None):
+        """
   GetDrawingSizeF(self: GH_Chunk,item_name: str,item_index: int) -> SizeF
 
   
@@ -1412,9 +1465,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetGuid(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetGuid(self, item_name, item_index=None):
+        """
   GetGuid(self: GH_Chunk,item_name: str,item_index: int) -> Guid
 
   
@@ -1453,9 +1507,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetInt32(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetInt32(self, item_name, item_index=None):
+        """
   GetInt32(self: GH_Chunk,item_name: str,item_index: int) -> int
 
   
@@ -1494,9 +1549,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetInt64(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetInt64(self, item_name, item_index=None):
+        """
   GetInt64(self: GH_Chunk,item_name: str,item_index: int) -> Int64
 
   
@@ -1535,9 +1591,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetInterval1D(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetInterval1D(self, item_name, item_index=None):
+        """
   GetInterval1D(self: GH_Chunk,item_name: str,item_index: int) -> GH_Interval1D
 
   
@@ -1576,9 +1633,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetInterval2D(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetInterval2D(self, item_name, item_index=None):
+        """
   GetInterval2D(self: GH_Chunk,item_name: str,item_index: int) -> GH_Interval2D
 
   
@@ -1617,9 +1675,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetLine(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetLine(self, item_name, item_index=None):
+        """
   GetLine(self: GH_Chunk,item_name: str,item_index: int) -> GH_Line
 
   
@@ -1658,9 +1717,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetPath(self,item_name,*__args):
-  """
+        pass
+
+    def GetPath(self, item_name, *__args):
+        """
   GetPath(self: GH_Chunk,item_name: str,basePath: str) -> Array[str]
 
   
@@ -1709,9 +1769,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
     path,two strings will be returned.
   """
-  pass
- def GetPlane(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetPlane(self, item_name, item_index=None):
+        """
   GetPlane(self: GH_Chunk,item_name: str,item_index: int) -> GH_Plane
 
   
@@ -1750,9 +1811,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetPoint2D(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetPoint2D(self, item_name, item_index=None):
+        """
   GetPoint2D(self: GH_Chunk,item_name: str,item_index: int) -> GH_Point2D
 
   
@@ -1791,9 +1853,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetPoint3D(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetPoint3D(self, item_name, item_index=None):
+        """
   GetPoint3D(self: GH_Chunk,item_name: str,item_index: int) -> GH_Point3D
 
   
@@ -1832,9 +1895,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetPoint4D(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetPoint4D(self, item_name, item_index=None):
+        """
   GetPoint4D(self: GH_Chunk,item_name: str,item_index: int) -> GH_Point4D
 
   
@@ -1873,9 +1937,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetSingle(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetSingle(self, item_name, item_index=None):
+        """
   GetSingle(self: GH_Chunk,item_name: str,item_index: int) -> Single
 
   
@@ -1914,9 +1979,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetString(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetString(self, item_name, item_index=None):
+        """
   GetString(self: GH_Chunk,item_name: str,item_index: int) -> str
 
   
@@ -1955,9 +2021,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- def GetVersion(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetVersion(self, item_name, item_index=None):
+        """
   GetVersion(self: GH_Chunk,item_name: str,item_index: int) -> GH_Version
 
   
@@ -1996,10 +2063,11 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: The inner value of the item.
   """
-  pass
- @staticmethod
- def InstantiateRoot(owner):
-  """
+        pass
+
+    @staticmethod
+    def InstantiateRoot(owner):
+        """
   InstantiateRoot(owner: GH_Archive) -> GH_Chunk
 
   
@@ -2016,9 +2084,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    owner: The archive which owns this chunk.
   """
-  pass
- def ItemExists(self,name,index=None):
-  """
+        pass
+
+    def ItemExists(self, name, index=None):
+        """
   ItemExists(self: GH_Chunk,name: str,index: int) -> bool
 
   
@@ -2059,9 +2128,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if an item with a similar name already exists,false if not.
   """
-  pass
- def Read(self,*__args):
-  """
+        pass
+
+    def Read(self, *__args):
+        """
   Read(self: GH_Chunk,node: XmlNode)
 
    Read this chunk and all child chunks from an Xml node.
@@ -2078,9 +2148,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    reader: The Binary reader to use,cannot be null.
   """
-  pass
- def RemoveChunk(self,*__args):
-  """
+        pass
+
+    def RemoveChunk(self, *__args):
+        """
   RemoveChunk(self: GH_Chunk,chunk: GH_IChunk) -> bool
 
   
@@ -2135,9 +2206,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True is chunk was removed,false if no matching chunk could be found.
   """
-  pass
- def RemoveItem(self,itemName,itemIndex=None):
-  """
+        pass
+
+    def RemoveItem(self, itemName, itemIndex=None):
+        """
   RemoveItem(self: GH_Chunk,itemName: str,itemIndex: int) -> bool
 
   
@@ -2164,9 +2236,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True on success,false on failure.
   """
-  pass
- def SetBoolean(self,item_name,*__args):
-  """
+        pass
+
+    def SetBoolean(self, item_name, *__args):
+        """
   SetBoolean(self: GH_Chunk,item_name: str,item_index: int,item_value: bool)
 
    Add a new data item to this chunk. 
@@ -2201,9 +2274,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetBoundingBox(self,item_name,*__args):
-  """
+        pass
+
+    def SetBoundingBox(self, item_name, *__args):
+        """
   SetBoundingBox(self: GH_Chunk,item_name: str,item_index: int,item_value: GH_BoundingBox)
 
    Add a new data item to this chunk. 
@@ -2238,9 +2312,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetByte(self,item_name,*__args):
-  """
+        pass
+
+    def SetByte(self, item_name, *__args):
+        """
   SetByte(self: GH_Chunk,item_name: str,item_index: int,item_value: Byte)
 
    Add a new data item to this chunk. 
@@ -2275,9 +2350,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetByteArray(self,item_name,*__args):
-  """
+        pass
+
+    def SetByteArray(self, item_name, *__args):
+        """
   SetByteArray(self: GH_Chunk,item_name: str,item_index: int,item_value: Array[Byte])
 
    Add a new data item to this chunk. 
@@ -2312,9 +2388,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetDate(self,item_name,*__args):
-  """
+        pass
+
+    def SetDate(self, item_name, *__args):
+        """
   SetDate(self: GH_Chunk,item_name: str,item_index: int,item_value: DateTime)
 
    Add a new data item to this chunk. 
@@ -2349,9 +2426,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetDecimal(self,item_name,*__args):
-  """
+        pass
+
+    def SetDecimal(self, item_name, *__args):
+        """
   SetDecimal(self: GH_Chunk,item_name: str,item_index: int,item_value: Decimal)
 
    Add a new data item to this chunk. 
@@ -2386,9 +2464,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetDouble(self,item_name,*__args):
-  """
+        pass
+
+    def SetDouble(self, item_name, *__args):
+        """
   SetDouble(self: GH_Chunk,item_name: str,item_index: int,item_value: float)
 
    Add a new data item to this chunk. 
@@ -2423,9 +2502,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetDoubleArray(self,item_name,*__args):
-  """
+        pass
+
+    def SetDoubleArray(self, item_name, *__args):
+        """
   SetDoubleArray(self: GH_Chunk,item_name: str,item_index: int,item_value: Array[float])
 
    Add a new data item to this chunk. 
@@ -2460,9 +2540,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetDrawingBitmap(self,item_name,*__args):
-  """
+        pass
+
+    def SetDrawingBitmap(self, item_name, *__args):
+        """
   SetDrawingBitmap(self: GH_Chunk,item_name: str,item_index: int,item_value: Bitmap)
 
    Add a new data item to this chunk. 
@@ -2497,9 +2578,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetDrawingColor(self,item_name,*__args):
-  """
+        pass
+
+    def SetDrawingColor(self, item_name, *__args):
+        """
   SetDrawingColor(self: GH_Chunk,item_name: str,item_index: int,item_value: Color)
 
    Add a new data item to this chunk. 
@@ -2534,9 +2616,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetDrawingPoint(self,item_name,*__args):
-  """
+        pass
+
+    def SetDrawingPoint(self, item_name, *__args):
+        """
   SetDrawingPoint(self: GH_Chunk,item_name: str,item_index: int,item_value: Point)
 
    Add a new data item to this chunk. 
@@ -2571,9 +2654,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetDrawingPointF(self,item_name,*__args):
-  """
+        pass
+
+    def SetDrawingPointF(self, item_name, *__args):
+        """
   SetDrawingPointF(self: GH_Chunk,item_name: str,item_index: int,item_value: PointF)
 
    Add a new data item to this chunk. 
@@ -2608,9 +2692,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetDrawingRectangle(self,item_name,*__args):
-  """
+        pass
+
+    def SetDrawingRectangle(self, item_name, *__args):
+        """
   SetDrawingRectangle(self: GH_Chunk,item_name: str,item_index: int,item_value: Rectangle)
 
    Add a new data item to this chunk. 
@@ -2645,9 +2730,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetDrawingRectangleF(self,item_name,*__args):
-  """
+        pass
+
+    def SetDrawingRectangleF(self, item_name, *__args):
+        """
   SetDrawingRectangleF(self: GH_Chunk,item_name: str,item_index: int,item_value: RectangleF)
 
    Add a new data item to this chunk. 
@@ -2682,9 +2768,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetDrawingSize(self,item_name,*__args):
-  """
+        pass
+
+    def SetDrawingSize(self, item_name, *__args):
+        """
   SetDrawingSize(self: GH_Chunk,item_name: str,item_index: int,item_value: Size)
 
    Add a new data item to this chunk. 
@@ -2719,9 +2806,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetDrawingSizeF(self,item_name,*__args):
-  """
+        pass
+
+    def SetDrawingSizeF(self, item_name, *__args):
+        """
   SetDrawingSizeF(self: GH_Chunk,item_name: str,item_index: int,item_value: SizeF)
 
    Add a new data item to this chunk. 
@@ -2756,9 +2844,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetGuid(self,item_name,*__args):
-  """
+        pass
+
+    def SetGuid(self, item_name, *__args):
+        """
   SetGuid(self: GH_Chunk,item_name: str,item_index: int,item_value: Guid)
 
    Add a new data item to this chunk. 
@@ -2793,9 +2882,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetInt32(self,item_name,*__args):
-  """
+        pass
+
+    def SetInt32(self, item_name, *__args):
+        """
   SetInt32(self: GH_Chunk,item_name: str,item_index: int,item_value: int)
 
    Add a new data item to this chunk. 
@@ -2830,9 +2920,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetInt64(self,item_name,*__args):
-  """
+        pass
+
+    def SetInt64(self, item_name, *__args):
+        """
   SetInt64(self: GH_Chunk,item_name: str,item_index: int,item_value: Int64)
 
    Add a new data item to this chunk. 
@@ -2867,9 +2958,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetInterval1D(self,item_name,*__args):
-  """
+        pass
+
+    def SetInterval1D(self, item_name, *__args):
+        """
   SetInterval1D(self: GH_Chunk,item_name: str,item_index: int,item_value: GH_Interval1D)
 
    Add a new data item to this chunk. 
@@ -2904,9 +2996,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetInterval2D(self,item_name,*__args):
-  """
+        pass
+
+    def SetInterval2D(self, item_name, *__args):
+        """
   SetInterval2D(self: GH_Chunk,item_name: str,item_index: int,item_value: GH_Interval2D)
 
    Add a new data item to this chunk. 
@@ -2941,9 +3034,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetLine(self,item_name,*__args):
-  """
+        pass
+
+    def SetLine(self, item_name, *__args):
+        """
   SetLine(self: GH_Chunk,item_name: str,item_index: int,item_value: GH_Line)
 
    Add a new data item to this chunk. 
@@ -2978,9 +3072,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetPath(self,item_name,*__args):
-  """
+        pass
+
+    def SetPath(self, item_name, *__args):
+        """
   SetPath(self: GH_Chunk,item_name: str,item_index: int,absolutePath: str,basePath: str)
 
    Add a new data item to this chunk. 
@@ -3019,9 +3114,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    basePath: Base path. This will be used to also store a relative path.
   """
-  pass
- def SetPlane(self,item_name,*__args):
-  """
+        pass
+
+    def SetPlane(self, item_name, *__args):
+        """
   SetPlane(self: GH_Chunk,item_name: str,item_index: int,item_value: GH_Plane)
 
    Add a new data item to this chunk. 
@@ -3056,9 +3152,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetPoint2D(self,item_name,*__args):
-  """
+        pass
+
+    def SetPoint2D(self, item_name, *__args):
+        """
   SetPoint2D(self: GH_Chunk,item_name: str,item_index: int,item_value: GH_Point2D)
 
    Add a new data item to this chunk. 
@@ -3093,9 +3190,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetPoint3D(self,item_name,*__args):
-  """
+        pass
+
+    def SetPoint3D(self, item_name, *__args):
+        """
   SetPoint3D(self: GH_Chunk,item_name: str,item_index: int,item_value: GH_Point3D)
 
    Add a new data item to this chunk. 
@@ -3130,9 +3228,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetPoint4D(self,item_name,*__args):
-  """
+        pass
+
+    def SetPoint4D(self, item_name, *__args):
+        """
   SetPoint4D(self: GH_Chunk,item_name: str,item_index: int,item_value: GH_Point4D)
 
    Add a new data item to this chunk. 
@@ -3167,9 +3266,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetSingle(self,item_name,*__args):
-  """
+        pass
+
+    def SetSingle(self, item_name, *__args):
+        """
   SetSingle(self: GH_Chunk,item_name: str,item_index: int,item_value: Single)
 
    Add a new data item to this chunk. 
@@ -3204,9 +3304,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetString(self,item_name,*__args):
-  """
+        pass
+
+    def SetString(self, item_name, *__args):
+        """
   SetString(self: GH_Chunk,item_name: str,item_index: int,item_value: str)
 
    Add a new data item to this chunk. 
@@ -3241,9 +3342,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    item_value: Value of item to add.
   """
-  pass
- def SetVersion(self,item_name,*__args):
-  """
+        pass
+
+    def SetVersion(self, item_name, *__args):
+        """
   SetVersion(self: GH_Chunk,item_name: str,item_value: GH_Version)
 
    Add a new data item to this chunk. 
@@ -3320,9 +3422,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    revision: Revision component of Version structure.
   """
-  pass
- def TryGetBoolean(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetBoolean(self, item_name, *__args):
+        """
   TryGetBoolean(self: GH_Chunk,item_name: str,item_index: int,value: bool) -> (bool,bool)
 
   
@@ -3365,9 +3468,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetBoundingBox(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetBoundingBox(self, item_name, *__args):
+        """
   TryGetBoundingBox(self: GH_Chunk,item_name: str,item_index: int,value: GH_BoundingBox) -> (bool,GH_BoundingBox)
 
   
@@ -3410,9 +3514,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetByte(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetByte(self, item_name, *__args):
+        """
   TryGetByte(self: GH_Chunk,item_name: str,item_index: int,value: Byte) -> (bool,Byte)
 
   
@@ -3455,9 +3560,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetDate(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetDate(self, item_name, *__args):
+        """
   TryGetDate(self: GH_Chunk,item_name: str,item_index: int,value: DateTime) -> (bool,DateTime)
 
   
@@ -3500,9 +3606,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetDecimal(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetDecimal(self, item_name, *__args):
+        """
   TryGetDecimal(self: GH_Chunk,item_name: str,item_index: int,value: Decimal) -> (bool,Decimal)
 
   
@@ -3545,9 +3652,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetDouble(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetDouble(self, item_name, *__args):
+        """
   TryGetDouble(self: GH_Chunk,item_name: str,item_index: int,value: float) -> (bool,float)
 
   
@@ -3590,9 +3698,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetDrawingColor(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetDrawingColor(self, item_name, *__args):
+        """
   TryGetDrawingColor(self: GH_Chunk,item_name: str,item_index: int,value: Color) -> (bool,Color)
 
   
@@ -3635,9 +3744,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetDrawingPoint(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetDrawingPoint(self, item_name, *__args):
+        """
   TryGetDrawingPoint(self: GH_Chunk,item_name: str,item_index: int,value: Point) -> (bool,Point)
 
   
@@ -3680,9 +3790,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetDrawingPointF(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetDrawingPointF(self, item_name, *__args):
+        """
   TryGetDrawingPointF(self: GH_Chunk,item_name: str,item_index: int,value: PointF) -> (bool,PointF)
 
   
@@ -3725,9 +3836,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetDrawingRectangle(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetDrawingRectangle(self, item_name, *__args):
+        """
   TryGetDrawingRectangle(self: GH_Chunk,item_name: str,item_index: int,value: Rectangle) -> (bool,Rectangle)
 
   
@@ -3770,9 +3882,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetDrawingRectangleF(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetDrawingRectangleF(self, item_name, *__args):
+        """
   TryGetDrawingRectangleF(self: GH_Chunk,item_name: str,item_index: int,value: RectangleF) -> (bool,RectangleF)
 
   
@@ -3815,9 +3928,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetDrawingSize(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetDrawingSize(self, item_name, *__args):
+        """
   TryGetDrawingSize(self: GH_Chunk,item_name: str,item_index: int,value: Size) -> (bool,Size)
 
   
@@ -3860,9 +3974,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetDrawingSizeF(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetDrawingSizeF(self, item_name, *__args):
+        """
   TryGetDrawingSizeF(self: GH_Chunk,item_name: str,item_index: int,value: SizeF) -> (bool,SizeF)
 
   
@@ -3905,9 +4020,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetGuid(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetGuid(self, item_name, *__args):
+        """
   TryGetGuid(self: GH_Chunk,item_name: str,item_index: int,value: Guid) -> (bool,Guid)
 
   
@@ -3950,9 +4066,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetInt32(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetInt32(self, item_name, *__args):
+        """
   TryGetInt32(self: GH_Chunk,item_name: str,item_index: int,value: int) -> (bool,int)
 
   
@@ -3995,9 +4112,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetInt64(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetInt64(self, item_name, *__args):
+        """
   TryGetInt64(self: GH_Chunk,item_name: str,item_index: int,value: Int64) -> (bool,Int64)
 
   
@@ -4040,9 +4158,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetInterval1D(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetInterval1D(self, item_name, *__args):
+        """
   TryGetInterval1D(self: GH_Chunk,item_name: str,item_index: int,value: GH_Interval1D) -> (bool,GH_Interval1D)
 
   
@@ -4085,9 +4204,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetInterval2D(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetInterval2D(self, item_name, *__args):
+        """
   TryGetInterval2D(self: GH_Chunk,item_name: str,item_index: int,value: GH_Interval2D) -> (bool,GH_Interval2D)
 
   
@@ -4130,9 +4250,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetLine(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetLine(self, item_name, *__args):
+        """
   TryGetLine(self: GH_Chunk,item_name: str,item_index: int,value: GH_Line) -> (bool,GH_Line)
 
   
@@ -4175,9 +4296,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetPlane(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetPlane(self, item_name, *__args):
+        """
   TryGetPlane(self: GH_Chunk,item_name: str,item_index: int,value: GH_Plane) -> (bool,GH_Plane)
 
   
@@ -4220,9 +4342,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetPoint2D(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetPoint2D(self, item_name, *__args):
+        """
   TryGetPoint2D(self: GH_Chunk,item_name: str,item_index: int,value: GH_Point2D) -> (bool,GH_Point2D)
 
   
@@ -4265,9 +4388,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetPoint3D(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetPoint3D(self, item_name, *__args):
+        """
   TryGetPoint3D(self: GH_Chunk,item_name: str,item_index: int,value: GH_Point3D) -> (bool,GH_Point3D)
 
   
@@ -4310,9 +4434,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetPoint4D(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetPoint4D(self, item_name, *__args):
+        """
   TryGetPoint4D(self: GH_Chunk,item_name: str,item_index: int,value: GH_Point4D) -> (bool,GH_Point4D)
 
   
@@ -4355,9 +4480,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetSingle(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetSingle(self, item_name, *__args):
+        """
   TryGetSingle(self: GH_Chunk,item_name: str,item_index: int,value: Single) -> (bool,Single)
 
   
@@ -4400,9 +4526,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetString(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetString(self, item_name, *__args):
+        """
   TryGetString(self: GH_Chunk,item_name: str,item_index: int,value: str) -> (bool,str)
 
   
@@ -4445,9 +4572,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetVersion(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetVersion(self, item_name, *__args):
+        """
   TryGetVersion(self: GH_Chunk,item_name: str,item_index: int,value: GH_Version) -> (bool,GH_Version)
 
   
@@ -4490,9 +4618,10 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    Returns: True if the value was set.
   """
-  pass
- def Write(self,writer):
-  """
+        pass
+
+    def Write(self, writer):
+        """
   Write(self: GH_Chunk,writer: XmlWriter)
 
    Serialize this chunk into an Xml stream.
@@ -4509,13 +4638,15 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
    writer: The Binary writer to use,cannot be null.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """
   __new__(cls: type)
 
   __new__(cls: type,chunk_archive: GH_Archive)
@@ -4524,12 +4655,14 @@ class GH_Chunk(object,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_I
 
   __new__(cls: type,chunk_archive: GH_Archive,chunk_name: str,chunk_index: int)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Archive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a pointer to the archive that owns the Root of the tree this chunk belongs to.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Archive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a pointer to the archive that owns the Root of the tree this chunk belongs to.
 
 
 
@@ -4539,8 +4672,10 @@ Get: Archive(self: GH_Chunk) -> GH_Archive
 
 """
 
- ArchiveLocation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a string representing the URI with which the archive is associated. 
+    ArchiveLocation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a string representing the URI with which the archive is associated. 
 
    The location may be a null string.
 
@@ -4552,8 +4687,10 @@ Get: ArchiveLocation(self: GH_Chunk) -> str
 
 """
 
- ChunkCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of child chunks contained in this chunk. 
+    ChunkCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the number of child chunks contained in this chunk. 
 
    The set of all child chunks is referred to as a 'litter'.
 
@@ -4565,8 +4702,8 @@ Get: ChunkCount(self: GH_Chunk) -> int
 
 """
 
- Chunks=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a pointer to the internal list of child chunks. 
+    Chunks = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a pointer to the internal list of child chunks. 
 
    Do not access this list unless you know what you are doing.
 
@@ -4578,8 +4715,10 @@ Get: Chunks(self: GH_Chunk) -> List[GH_IChunk]
 
 """
 
- HasComments=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether or not comments have been stored in this chunk.
+    HasComments = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether or not comments have been stored in this chunk.
 
 
 
@@ -4589,8 +4728,8 @@ Get: HasComments(self: GH_Chunk) -> bool
 
 """
 
- HasIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the index existence implication. The item is considered to have an index qualifier 
+    HasIndex = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the index existence implication. The item is considered to have an index qualifier 
 
    if the index value is larger than or equal to zero.
 
@@ -4602,8 +4741,8 @@ Get: HasIndex(self: GH_Chunk) -> bool
 
 """
 
- HasName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name validity of this item. 
+    HasName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the name validity of this item. 
 
    The item is considered to have an invalid name if string.IsNullOrEmpty(name)
 
@@ -4615,8 +4754,8 @@ Get: HasName(self: GH_Chunk) -> bool
 
 """
 
- Index=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the index of this chunk. The index is set by the owner of this chunk. 
+    Index = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the index of this chunk. The index is set by the owner of this chunk. 
 
    Indices smaller than zero imply no index has been set. 
 
@@ -4630,8 +4769,8 @@ Get: Index(self: GH_Chunk) -> int
 
 """
 
- ItemCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of items contained in this chunk.
+    ItemCount = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of items contained in this chunk.
 
 
 
@@ -4641,8 +4780,8 @@ Get: ItemCount(self: GH_Chunk) -> int
 
 """
 
- Items=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a pointer to the internal list of items. 
+    Items = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a pointer to the internal list of items. 
 
    Do not access this list unless you know what you are doing.
 
@@ -4654,8 +4793,8 @@ Get: Items(self: GH_Chunk) -> List[GH_Item]
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name of this chunk. The name is set by the owner of this chunk. 
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the name of this chunk. The name is set by the owner of this chunk. 
 
    Names must be at least 1 character long. 
 
@@ -4669,22 +4808,22 @@ Get: Name(self: GH_Chunk) -> str
 
 """
 
-
- ChunkKeyedCollection=None
- m_archive=None
- m_chunks=None
- m_comments=None
- m_index=None
- m_items=None
- m_name=None
- name_comp=None
+    ChunkKeyedCollection = None
+    m_archive = None
+    m_chunks = None
+    m_comments = None
+    m_index = None
+    m_items = None
+    m_name = None
+    name_comp = None
 
 
 class GH_Compression(object):
- """ Provides static methods for compression of byte-arrays. """
- @staticmethod
- def Compress(data):
-  """
+    """ Provides static methods for compression of byte-arrays. """
+
+    @staticmethod
+    def Compress(data):
+        """
   Compress(data: Array[Byte]) -> Array[Byte]
 
   
@@ -4697,10 +4836,11 @@ class GH_Compression(object):
 
    Returns: An array of compressed bytes.
   """
-  pass
- @staticmethod
- def Decompress(compressedData):
-  """
+        pass
+
+    @staticmethod
+    def Decompress(compressedData):
+        """
   Decompress(compressedData: Array[Byte]) -> Array[Byte]
 
   
@@ -4713,16 +4853,18 @@ class GH_Compression(object):
 
    Returns: An array of decompressed bytes.
   """
-  pass
+        pass
+
 
 class GH_IBinarySupport:
- """
+    """
  Interface which declares all methods required for objects that 
 
     can be (de)serialized to and from a binary archive.
  """
- def Read(self,reader):
-  """
+
+    def Read(self, reader):
+        """
   Read(self: GH_IBinarySupport,reader: BinaryReader)
 
    Called when an object is required to deserialize itself.
@@ -4731,9 +4873,10 @@ class GH_IBinarySupport:
 
    reader: Reader object to be used for deserialization.
   """
-  pass
- def Write(self,writer):
-  """
+        pass
+
+    def Write(self, writer):
+        """
   Write(self: GH_IBinarySupport,writer: BinaryWriter)
 
    Called when an object is required to serialize itself.
@@ -4742,19 +4885,22 @@ class GH_IBinarySupport:
 
    writer: Writer object to be used for serialization.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
 
 class GH_IXmlSupport:
- """
+    """
  Interface which declares all methods required for objects that 
 
     can be (de)serialized to and from an Xml archive.
  """
- def Read(self,node):
-  """
+
+    def Read(self, node):
+        """
   Read(self: GH_IXmlSupport,node: XmlNode)
 
    Called when an object is required to deserialize itself.
@@ -4763,9 +4909,10 @@ class GH_IXmlSupport:
 
    node: Node object to be used for deserialization.
   """
-  pass
- def Write(self,writer):
-  """
+        pass
+
+    def Write(self, writer):
+        """
   Write(self: GH_IXmlSupport,writer: XmlWriter)
 
    Called when an object is required to serialize itself.
@@ -4774,15 +4921,18 @@ class GH_IXmlSupport:
 
    writer: Writer object to be used for serialization.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
 
-class GH_IChunk(GH_IBinarySupport,GH_IXmlSupport):
- """ Base interface for all Archive Chunks. """
- def AddMessage(self,m,t):
-  """
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+
+class GH_IChunk(GH_IBinarySupport, GH_IXmlSupport):
+    """ Base interface for all Archive Chunks. """
+
+    def AddMessage(self, m, t):
+        """
   AddMessage(self: GH_IChunk,m: str,t: GH_Message_Type)
 
    Log a new message with the top-level archive. 
@@ -4803,12 +4953,14 @@ class GH_IChunk(GH_IBinarySupport,GH_IXmlSupport):
 
    t: Message type.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Archive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a pointer to the archive that owns the Root of the tree this chunk belongs to.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Archive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a pointer to the archive that owns the Root of the tree this chunk belongs to.
 
 
 
@@ -4818,8 +4970,10 @@ Get: Archive(self: GH_IChunk) -> GH_Archive
 
 """
 
- ArchiveLocation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a string representing the URI with which the archive is associated. 
+    ArchiveLocation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a string representing the URI with which the archive is associated. 
 
    The location may be a null string.
 
@@ -4831,8 +4985,10 @@ Get: ArchiveLocation(self: GH_IChunk) -> str
 
 """
 
- ChunkCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of child chunks contained in this chunk. 
+    ChunkCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the number of child chunks contained in this chunk. 
 
    The set of all child chunks is referred to as a 'litter'.
 
@@ -4844,8 +5000,8 @@ Get: ChunkCount(self: GH_IChunk) -> int
 
 """
 
- Chunks=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a pointer to the internal list of child chunks. 
+    Chunks = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a pointer to the internal list of child chunks. 
 
    Do not access this list unless you know what you are doing.
 
@@ -4857,8 +5013,8 @@ Get: Chunks(self: GH_IChunk) -> List[GH_IChunk]
 
 """
 
- Index=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the index of this chunk. The index is set by the owner of this chunk. 
+    Index = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the index of this chunk. The index is set by the owner of this chunk. 
 
    Indices smaller than zero imply no index has been set. 
 
@@ -4872,8 +5028,8 @@ Get: Index(self: GH_IChunk) -> int
 
 """
 
- ItemCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of items contained in this chunk.
+    ItemCount = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of items contained in this chunk.
 
 
 
@@ -4883,8 +5039,8 @@ Get: ItemCount(self: GH_IChunk) -> int
 
 """
 
- Items=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a pointer to the internal list of items. 
+    Items = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a pointer to the internal list of items. 
 
    Do not access this list unless you know what you are doing.
 
@@ -4896,8 +5052,8 @@ Get: Items(self: GH_IChunk) -> List[GH_Item]
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name of this chunk. The name is set by the owner of this chunk. 
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the name of this chunk. The name is set by the owner of this chunk. 
 
    Names must be at least 1 character long. 
 
@@ -4912,11 +5068,11 @@ Get: Name(self: GH_IChunk) -> str
 """
 
 
+class GH_IReader(GH_IChunk, GH_IBinarySupport, GH_IXmlSupport):
+    """ Provides access to a subset of GH_Chunk methods used for reading archives. """
 
-class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
- """ Provides access to a subset of GH_Chunk methods used for reading archives. """
- def ChunkExists(self,name,index=None):
-  """
+    def ChunkExists(self, name, index=None):
+        """
   ChunkExists(self: GH_IReader,name: str,index: int) -> bool
 
   
@@ -4967,9 +5123,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if a chunk with the specified name exists,otherwise false.
   """
-  pass
- def FindChunk(self,name,index=None):
-  """
+        pass
+
+    def FindChunk(self, name, index=None):
+        """
   FindChunk(self: GH_IReader,name: str,index: int) -> GH_IReader
 
   
@@ -5024,9 +5181,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
     found.
   """
-  pass
- def FindItem(self,name,index=None):
-  """
+        pass
+
+    def FindItem(self, name, index=None):
+        """
   FindItem(self: GH_IReader,name: str,index: int) -> GH_Item
 
   
@@ -5083,9 +5241,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
      or null of no matching item could be found.
   """
-  pass
- def GetBoolean(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetBoolean(self, item_name, item_index=None):
+        """
   GetBoolean(self: GH_IReader,item_name: str,item_index: int) -> bool
 
   
@@ -5124,9 +5283,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetBoundingBox(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetBoundingBox(self, item_name, item_index=None):
+        """
   GetBoundingBox(self: GH_IReader,item_name: str,item_index: int) -> GH_BoundingBox
 
   
@@ -5165,9 +5325,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetByte(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetByte(self, item_name, item_index=None):
+        """
   GetByte(self: GH_IReader,item_name: str,item_index: int) -> Byte
 
   
@@ -5206,9 +5367,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetByteArray(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetByteArray(self, item_name, item_index=None):
+        """
   GetByteArray(self: GH_IReader,item_name: str,item_index: int) -> Array[Byte]
 
   
@@ -5247,9 +5409,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetDate(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetDate(self, item_name, item_index=None):
+        """
   GetDate(self: GH_IReader,item_name: str,item_index: int) -> DateTime
 
   
@@ -5288,9 +5451,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetDecimal(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetDecimal(self, item_name, item_index=None):
+        """
   GetDecimal(self: GH_IReader,item_name: str,item_index: int) -> Decimal
 
   
@@ -5329,9 +5493,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetDouble(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetDouble(self, item_name, item_index=None):
+        """
   GetDouble(self: GH_IReader,item_name: str,item_index: int) -> float
 
   
@@ -5370,9 +5535,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetDoubleArray(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetDoubleArray(self, item_name, item_index=None):
+        """
   GetDoubleArray(self: GH_IReader,item_name: str,item_index: int) -> Array[float]
 
   
@@ -5411,9 +5577,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetDrawingBitmap(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetDrawingBitmap(self, item_name, item_index=None):
+        """
   GetDrawingBitmap(self: GH_IReader,item_name: str,item_index: int) -> Bitmap
 
   
@@ -5452,9 +5619,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetDrawingColor(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetDrawingColor(self, item_name, item_index=None):
+        """
   GetDrawingColor(self: GH_IReader,item_name: str,item_index: int) -> Color
 
   
@@ -5493,9 +5661,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetDrawingPoint(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetDrawingPoint(self, item_name, item_index=None):
+        """
   GetDrawingPoint(self: GH_IReader,item_name: str,item_index: int) -> Point
 
   
@@ -5534,9 +5703,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetDrawingPointF(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetDrawingPointF(self, item_name, item_index=None):
+        """
   GetDrawingPointF(self: GH_IReader,item_name: str,item_index: int) -> PointF
 
   
@@ -5575,9 +5745,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetDrawingRectangle(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetDrawingRectangle(self, item_name, item_index=None):
+        """
   GetDrawingRectangle(self: GH_IReader,item_name: str,item_index: int) -> Rectangle
 
   
@@ -5616,9 +5787,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetDrawingRectangleF(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetDrawingRectangleF(self, item_name, item_index=None):
+        """
   GetDrawingRectangleF(self: GH_IReader,item_name: str,item_index: int) -> RectangleF
 
   
@@ -5657,9 +5829,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetDrawingSize(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetDrawingSize(self, item_name, item_index=None):
+        """
   GetDrawingSize(self: GH_IReader,item_name: str,item_index: int) -> Size
 
   
@@ -5698,9 +5871,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetDrawingSizeF(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetDrawingSizeF(self, item_name, item_index=None):
+        """
   GetDrawingSizeF(self: GH_IReader,item_name: str,item_index: int) -> SizeF
 
   
@@ -5739,9 +5913,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetGuid(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetGuid(self, item_name, item_index=None):
+        """
   GetGuid(self: GH_IReader,item_name: str,item_index: int) -> Guid
 
   
@@ -5780,9 +5955,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetInt32(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetInt32(self, item_name, item_index=None):
+        """
   GetInt32(self: GH_IReader,item_name: str,item_index: int) -> int
 
   
@@ -5821,9 +5997,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetInt64(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetInt64(self, item_name, item_index=None):
+        """
   GetInt64(self: GH_IReader,item_name: str,item_index: int) -> Int64
 
   
@@ -5862,9 +6039,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetInterval1D(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetInterval1D(self, item_name, item_index=None):
+        """
   GetInterval1D(self: GH_IReader,item_name: str,item_index: int) -> GH_Interval1D
 
   
@@ -5903,9 +6081,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetInterval2D(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetInterval2D(self, item_name, item_index=None):
+        """
   GetInterval2D(self: GH_IReader,item_name: str,item_index: int) -> GH_Interval2D
 
   
@@ -5944,9 +6123,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetLine(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetLine(self, item_name, item_index=None):
+        """
   GetLine(self: GH_IReader,item_name: str,item_index: int) -> GH_Line
 
   
@@ -5985,9 +6165,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetPath(self,item_name,*__args):
-  """
+        pass
+
+    def GetPath(self, item_name, *__args):
+        """
   GetPath(self: GH_IReader,item_name: str,item_index: int,basePath: str) -> Array[str]
 
   
@@ -6036,9 +6217,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
     path,two strings will be returned.
   """
-  pass
- def GetPlane(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetPlane(self, item_name, item_index=None):
+        """
   GetPlane(self: GH_IReader,item_name: str,item_index: int) -> GH_Plane
 
   
@@ -6077,9 +6259,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetPoint2D(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetPoint2D(self, item_name, item_index=None):
+        """
   GetPoint2D(self: GH_IReader,item_name: str,item_index: int) -> GH_Point2D
 
   
@@ -6118,9 +6301,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetPoint3D(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetPoint3D(self, item_name, item_index=None):
+        """
   GetPoint3D(self: GH_IReader,item_name: str,item_index: int) -> GH_Point3D
 
   
@@ -6159,9 +6343,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetPoint4D(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetPoint4D(self, item_name, item_index=None):
+        """
   GetPoint4D(self: GH_IReader,item_name: str,item_index: int) -> GH_Point4D
 
   
@@ -6200,9 +6385,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetSingle(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetSingle(self, item_name, item_index=None):
+        """
   GetSingle(self: GH_IReader,item_name: str,item_index: int) -> Single
 
   
@@ -6241,9 +6427,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetString(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetString(self, item_name, item_index=None):
+        """
   GetString(self: GH_IReader,item_name: str,item_index: int) -> str
 
   
@@ -6282,9 +6469,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def GetVersion(self,item_name,item_index=None):
-  """
+        pass
+
+    def GetVersion(self, item_name, item_index=None):
+        """
   GetVersion(self: GH_IReader,item_name: str,item_index: int) -> GH_Version
 
   
@@ -6323,9 +6511,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: The inner value of the item.
   """
-  pass
- def ItemExists(self,name,index=None):
-  """
+        pass
+
+    def ItemExists(self, name, index=None):
+        """
   ItemExists(self: GH_IReader,name: str,index: int) -> bool
 
   
@@ -6374,9 +6563,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if an item with the specified name exists,otherwise false.
   """
-  pass
- def TryGetBoolean(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetBoolean(self, item_name, *__args):
+        """
   TryGetBoolean(self: GH_IReader,item_name: str,item_index: int,value: bool) -> (bool,bool)
 
   
@@ -6419,9 +6609,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetBoundingBox(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetBoundingBox(self, item_name, *__args):
+        """
   TryGetBoundingBox(self: GH_IReader,item_name: str,item_index: int,value: GH_BoundingBox) -> (bool,GH_BoundingBox)
 
   
@@ -6464,9 +6655,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetByte(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetByte(self, item_name, *__args):
+        """
   TryGetByte(self: GH_IReader,item_name: str,item_index: int,value: Byte) -> (bool,Byte)
 
   
@@ -6509,9 +6701,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetDate(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetDate(self, item_name, *__args):
+        """
   TryGetDate(self: GH_IReader,item_name: str,item_index: int,value: DateTime) -> (bool,DateTime)
 
   
@@ -6554,9 +6747,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetDecimal(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetDecimal(self, item_name, *__args):
+        """
   TryGetDecimal(self: GH_IReader,item_name: str,item_index: int,value: Decimal) -> (bool,Decimal)
 
   
@@ -6599,9 +6793,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetDouble(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetDouble(self, item_name, *__args):
+        """
   TryGetDouble(self: GH_IReader,item_name: str,item_index: int,value: float) -> (bool,float)
 
   
@@ -6644,9 +6839,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetDrawingColor(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetDrawingColor(self, item_name, *__args):
+        """
   TryGetDrawingColor(self: GH_IReader,item_name: str,item_index: int,value: Color) -> (bool,Color)
 
   
@@ -6689,9 +6885,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetDrawingPoint(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetDrawingPoint(self, item_name, *__args):
+        """
   TryGetDrawingPoint(self: GH_IReader,item_name: str,item_index: int,value: Point) -> (bool,Point)
 
   
@@ -6734,9 +6931,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetDrawingPointF(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetDrawingPointF(self, item_name, *__args):
+        """
   TryGetDrawingPointF(self: GH_IReader,item_name: str,item_index: int,value: PointF) -> (bool,PointF)
 
   
@@ -6779,9 +6977,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetDrawingRectangle(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetDrawingRectangle(self, item_name, *__args):
+        """
   TryGetDrawingRectangle(self: GH_IReader,item_name: str,item_index: int,value: Rectangle) -> (bool,Rectangle)
 
   
@@ -6824,9 +7023,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetDrawingRectangleF(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetDrawingRectangleF(self, item_name, *__args):
+        """
   TryGetDrawingRectangleF(self: GH_IReader,item_name: str,item_index: int,value: RectangleF) -> (bool,RectangleF)
 
   
@@ -6869,9 +7069,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetDrawingSize(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetDrawingSize(self, item_name, *__args):
+        """
   TryGetDrawingSize(self: GH_IReader,item_name: str,item_index: int,value: Size) -> (bool,Size)
 
   
@@ -6914,9 +7115,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetDrawingSizeF(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetDrawingSizeF(self, item_name, *__args):
+        """
   TryGetDrawingSizeF(self: GH_IReader,item_name: str,item_index: int,value: SizeF) -> (bool,SizeF)
 
   
@@ -6959,9 +7161,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetGuid(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetGuid(self, item_name, *__args):
+        """
   TryGetGuid(self: GH_IReader,item_name: str,value: Guid) -> (bool,Guid)
 
   
@@ -7004,9 +7207,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetInt32(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetInt32(self, item_name, *__args):
+        """
   TryGetInt32(self: GH_IReader,item_name: str,item_index: int,value: int) -> (bool,int)
 
   
@@ -7049,9 +7253,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetInt64(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetInt64(self, item_name, *__args):
+        """
   TryGetInt64(self: GH_IReader,item_name: str,item_index: int,value: Int64) -> (bool,Int64)
 
   
@@ -7094,9 +7299,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetInterval1D(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetInterval1D(self, item_name, *__args):
+        """
   TryGetInterval1D(self: GH_IReader,item_name: str,item_index: int,value: GH_Interval1D) -> (bool,GH_Interval1D)
 
   
@@ -7139,9 +7345,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetInterval2D(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetInterval2D(self, item_name, *__args):
+        """
   TryGetInterval2D(self: GH_IReader,item_name: str,item_index: int,value: GH_Interval2D) -> (bool,GH_Interval2D)
 
   
@@ -7184,9 +7391,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetLine(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetLine(self, item_name, *__args):
+        """
   TryGetLine(self: GH_IReader,item_name: str,item_index: int,value: GH_Line) -> (bool,GH_Line)
 
   
@@ -7229,9 +7437,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetPlane(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetPlane(self, item_name, *__args):
+        """
   TryGetPlane(self: GH_IReader,item_name: str,item_index: int,value: GH_Plane) -> (bool,GH_Plane)
 
   
@@ -7274,9 +7483,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetPoint2D(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetPoint2D(self, item_name, *__args):
+        """
   TryGetPoint2D(self: GH_IReader,item_name: str,item_index: int,value: GH_Point2D) -> (bool,GH_Point2D)
 
   
@@ -7319,9 +7529,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetPoint3D(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetPoint3D(self, item_name, *__args):
+        """
   TryGetPoint3D(self: GH_IReader,item_name: str,item_index: int,value: GH_Point3D) -> (bool,GH_Point3D)
 
   
@@ -7364,9 +7575,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetPoint4D(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetPoint4D(self, item_name, *__args):
+        """
   TryGetPoint4D(self: GH_IReader,item_name: str,item_index: int,value: GH_Point4D) -> (bool,GH_Point4D)
 
   
@@ -7409,9 +7621,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetSingle(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetSingle(self, item_name, *__args):
+        """
   TryGetSingle(self: GH_IReader,item_name: str,item_index: int,value: Single) -> (bool,Single)
 
   
@@ -7454,9 +7667,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetString(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetString(self, item_name, *__args):
+        """
   TryGetString(self: GH_IReader,item_name: str,item_index: int,value: str) -> (bool,str)
 
   
@@ -7499,9 +7713,10 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if the value was set.
   """
-  pass
- def TryGetVersion(self,item_name,*__args):
-  """
+        pass
+
+    def TryGetVersion(self, item_name, *__args):
+        """
   TryGetVersion(self: GH_IReader,item_name: str,item_index: int,value: GH_Version) -> (bool,GH_Version)
 
   
@@ -7544,15 +7759,18 @@ class GH_IReader(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True if the value was set.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
 
-class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
- """ Provides access to a subset of GH_Chunk methods used for writing archives. """
- def AddComment(self,comment_text):
-  """
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+
+class GH_IWriter(GH_IChunk, GH_IBinarySupport, GH_IXmlSupport):
+    """ Provides access to a subset of GH_Chunk methods used for writing archives. """
+
+    def AddComment(self, comment_text):
+        """
   AddComment(self: GH_IWriter,comment_text: str)
 
    Adds a text comment to this chunk. Comments are serialized only if the output flavour is a 
@@ -7575,9 +7793,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
     characters for a chosen format flavour.
   """
-  pass
- def CreateChunk(self,chunk_name,chunk_index=None):
-  """
+        pass
+
+    def CreateChunk(self, chunk_name, chunk_index=None):
+        """
   CreateChunk(self: GH_IWriter,chunk_name: str,chunk_index: int) -> GH_IWriter
 
   
@@ -7612,9 +7831,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    chunk_name: Name of new child chunk.
   """
-  pass
- def RemoveChunk(self,*__args):
-  """
+        pass
+
+    def RemoveChunk(self, *__args):
+        """
   RemoveChunk(self: GH_IWriter,chunk: GH_IChunk) -> bool
 
   
@@ -7669,9 +7889,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True is chunk was removed,false if no matching chunk could be found.
   """
-  pass
- def RemoveItem(self,itemName,itemIndex=None):
-  """
+        pass
+
+    def RemoveItem(self, itemName, itemIndex=None):
+        """
   RemoveItem(self: GH_IWriter,itemName: str,itemIndex: int) -> bool
 
   
@@ -7698,9 +7919,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    Returns: True on success,false on failure.
   """
-  pass
- def SetBoolean(self,item_name,*__args):
-  """
+        pass
+
+    def SetBoolean(self, item_name, *__args):
+        """
   SetBoolean(self: GH_IWriter,item_name: str,item_index: int,item_value: bool)
 
    Add a new data item to this chunk. 
@@ -7735,9 +7957,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetBoundingBox(self,item_name,*__args):
-  """
+        pass
+
+    def SetBoundingBox(self, item_name, *__args):
+        """
   SetBoundingBox(self: GH_IWriter,item_name: str,item_index: int,item_value: GH_BoundingBox)
 
    Add a new data item to this chunk. 
@@ -7772,9 +7995,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetByte(self,item_name,*__args):
-  """
+        pass
+
+    def SetByte(self, item_name, *__args):
+        """
   SetByte(self: GH_IWriter,item_name: str,item_index: int,item_value: Byte)
 
    Add a new data item to this chunk. 
@@ -7809,9 +8033,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetByteArray(self,item_name,*__args):
-  """
+        pass
+
+    def SetByteArray(self, item_name, *__args):
+        """
   SetByteArray(self: GH_IWriter,item_name: str,item_index: int,item_value: Array[Byte])
 
    Add a new data item to this chunk. 
@@ -7846,9 +8071,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetDate(self,item_name,*__args):
-  """
+        pass
+
+    def SetDate(self, item_name, *__args):
+        """
   SetDate(self: GH_IWriter,item_name: str,item_index: int,item_value: DateTime)
 
    Add a new data item to this chunk. 
@@ -7883,9 +8109,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetDecimal(self,item_name,*__args):
-  """
+        pass
+
+    def SetDecimal(self, item_name, *__args):
+        """
   SetDecimal(self: GH_IWriter,item_name: str,item_index: int,item_value: Decimal)
 
    Add a new data item to this chunk. 
@@ -7920,9 +8147,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetDouble(self,item_name,*__args):
-  """
+        pass
+
+    def SetDouble(self, item_name, *__args):
+        """
   SetDouble(self: GH_IWriter,item_name: str,item_index: int,item_value: float)
 
    Add a new data item to this chunk. 
@@ -7957,9 +8185,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetDoubleArray(self,item_name,*__args):
-  """
+        pass
+
+    def SetDoubleArray(self, item_name, *__args):
+        """
   SetDoubleArray(self: GH_IWriter,item_name: str,item_index: int,item_value: Array[float])
 
    Add a new data item to this chunk. 
@@ -7994,9 +8223,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetDrawingBitmap(self,item_name,*__args):
-  """
+        pass
+
+    def SetDrawingBitmap(self, item_name, *__args):
+        """
   SetDrawingBitmap(self: GH_IWriter,item_name: str,item_index: int,item_value: Bitmap)
 
    Add a new data item to this chunk. 
@@ -8031,9 +8261,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetDrawingColor(self,item_name,*__args):
-  """
+        pass
+
+    def SetDrawingColor(self, item_name, *__args):
+        """
   SetDrawingColor(self: GH_IWriter,item_name: str,item_index: int,item_value: Color)
 
    Add a new data item to this chunk. 
@@ -8068,9 +8299,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetDrawingPoint(self,item_name,*__args):
-  """
+        pass
+
+    def SetDrawingPoint(self, item_name, *__args):
+        """
   SetDrawingPoint(self: GH_IWriter,item_name: str,item_index: int,item_value: Point)
 
    Add a new data item to this chunk. 
@@ -8105,9 +8337,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetDrawingPointF(self,item_name,*__args):
-  """
+        pass
+
+    def SetDrawingPointF(self, item_name, *__args):
+        """
   SetDrawingPointF(self: GH_IWriter,item_name: str,item_index: int,item_value: PointF)
 
    Add a new data item to this chunk. 
@@ -8142,9 +8375,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetDrawingRectangle(self,item_name,*__args):
-  """
+        pass
+
+    def SetDrawingRectangle(self, item_name, *__args):
+        """
   SetDrawingRectangle(self: GH_IWriter,item_name: str,item_index: int,item_value: Rectangle)
 
    Add a new data item to this chunk. 
@@ -8179,9 +8413,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetDrawingRectangleF(self,item_name,*__args):
-  """
+        pass
+
+    def SetDrawingRectangleF(self, item_name, *__args):
+        """
   SetDrawingRectangleF(self: GH_IWriter,item_name: str,item_index: int,item_value: RectangleF)
 
    Add a new data item to this chunk. 
@@ -8216,9 +8451,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetDrawingSize(self,item_name,*__args):
-  """
+        pass
+
+    def SetDrawingSize(self, item_name, *__args):
+        """
   SetDrawingSize(self: GH_IWriter,item_name: str,item_index: int,item_value: Size)
 
    Add a new data item to this chunk. 
@@ -8253,9 +8489,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetDrawingSizeF(self,item_name,*__args):
-  """
+        pass
+
+    def SetDrawingSizeF(self, item_name, *__args):
+        """
   SetDrawingSizeF(self: GH_IWriter,item_name: str,item_index: int,item_value: SizeF)
 
    Add a new data item to this chunk. 
@@ -8290,9 +8527,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetGuid(self,item_name,*__args):
-  """
+        pass
+
+    def SetGuid(self, item_name, *__args):
+        """
   SetGuid(self: GH_IWriter,item_name: str,item_index: int,item_value: Guid)
 
    Add a new data item to this chunk. 
@@ -8327,9 +8565,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetInt32(self,item_name,*__args):
-  """
+        pass
+
+    def SetInt32(self, item_name, *__args):
+        """
   SetInt32(self: GH_IWriter,item_name: str,item_index: int,item_value: int)
 
    Add a new data item to this chunk. 
@@ -8364,9 +8603,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetInt64(self,item_name,*__args):
-  """
+        pass
+
+    def SetInt64(self, item_name, *__args):
+        """
   SetInt64(self: GH_IWriter,item_name: str,item_index: int,item_value: Int64)
 
    Add a new data item to this chunk. 
@@ -8401,9 +8641,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetInterval1D(self,item_name,*__args):
-  """
+        pass
+
+    def SetInterval1D(self, item_name, *__args):
+        """
   SetInterval1D(self: GH_IWriter,item_name: str,item_index: int,item_value: GH_Interval1D)
 
    Add a new data item to this chunk. 
@@ -8438,9 +8679,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetInterval2D(self,item_name,*__args):
-  """
+        pass
+
+    def SetInterval2D(self, item_name, *__args):
+        """
   SetInterval2D(self: GH_IWriter,item_name: str,item_index: int,item_value: GH_Interval2D)
 
    Add a new data item to this chunk. 
@@ -8475,9 +8717,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetLine(self,item_name,*__args):
-  """
+        pass
+
+    def SetLine(self, item_name, *__args):
+        """
   SetLine(self: GH_IWriter,item_name: str,item_index: int,item_value: GH_Line)
 
    Add a new data item to this chunk. 
@@ -8512,9 +8755,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetPath(self,item_name,*__args):
-  """
+        pass
+
+    def SetPath(self, item_name, *__args):
+        """
   SetPath(self: GH_IWriter,item_name: str,item_index: int,absolutePath: str,basePath: str)
 
    Add a new data item to this chunk. 
@@ -8553,9 +8797,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    basePath: Base path. This will be used to also store a relative path.
   """
-  pass
- def SetPlane(self,item_name,*__args):
-  """
+        pass
+
+    def SetPlane(self, item_name, *__args):
+        """
   SetPlane(self: GH_IWriter,item_name: str,item_index: int,item_value: GH_Plane)
 
    Add a new data item to this chunk. 
@@ -8590,9 +8835,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetPoint2D(self,item_name,*__args):
-  """
+        pass
+
+    def SetPoint2D(self, item_name, *__args):
+        """
   SetPoint2D(self: GH_IWriter,item_name: str,item_index: int,item_value: GH_Point2D)
 
    Add a new data item to this chunk. 
@@ -8627,9 +8873,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetPoint3D(self,item_name,*__args):
-  """
+        pass
+
+    def SetPoint3D(self, item_name, *__args):
+        """
   SetPoint3D(self: GH_IWriter,item_name: str,item_index: int,item_value: GH_Point3D)
 
    Add a new data item to this chunk. 
@@ -8664,9 +8911,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetPoint4D(self,item_name,*__args):
-  """
+        pass
+
+    def SetPoint4D(self, item_name, *__args):
+        """
   SetPoint4D(self: GH_IWriter,item_name: str,item_index: int,item_value: GH_Point4D)
 
    Add a new data item to this chunk. 
@@ -8701,9 +8949,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetSingle(self,item_name,*__args):
-  """
+        pass
+
+    def SetSingle(self, item_name, *__args):
+        """
   SetSingle(self: GH_IWriter,item_name: str,item_index: int,item_value: Single)
 
    Add a new data item to this chunk. 
@@ -8738,9 +8987,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def SetString(self,item_name,*__args):
-  """
+        pass
+
+    def SetString(self, item_name, *__args):
+        """
   SetString(self: GH_IWriter,item_name: str,item_index: int,item_value: str)
 
    Add a new data item to this chunk. 
@@ -8775,9 +9025,10 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add. If a null String is supplied,a zero-length String will be serialized.
   """
-  pass
- def SetVersion(self,item_name,*__args):
-  """
+        pass
+
+    def SetVersion(self, item_name, *__args):
+        """
   SetVersion(self: GH_IWriter,item_name: str,major: int,minor: int,revision: int)
 
    Add a new data item to this chunk. 
@@ -8854,21 +9105,26 @@ class GH_IWriter(GH_IChunk,GH_IBinarySupport,GH_IXmlSupport):
 
    item_value: Value of item to add.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
 
-class GH_LooseChunk(GH_Chunk,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSupport,GH_IReader):
- """
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+
+class GH_LooseChunk(
+    GH_Chunk, GH_IWriter, GH_IChunk, GH_IBinarySupport, GH_IXmlSupport, GH_IReader
+):
+    """
  A utility class for creating partial archives.
 
  
 
  GH_LooseChunk(chunk_name: str)
  """
- def Deserialize_Binary(self,content):
-  """
+
+    def Deserialize_Binary(self, content):
+        """
   Deserialize_Binary(self: GH_LooseChunk,content: Array[Byte])
 
    Deserializes a byte array.
@@ -8879,9 +9135,10 @@ class GH_LooseChunk(GH_Chunk,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSuppo
 
    Returns: True on success,false on failure.
   """
-  pass
- def Deserialize_Xml(self,xml_content):
-  """
+        pass
+
+    def Deserialize_Xml(self, xml_content):
+        """
   Deserialize_Xml(self: GH_LooseChunk,xml_content: str)
 
    Deserializes an Xml string.
@@ -8892,9 +9149,10 @@ class GH_LooseChunk(GH_Chunk,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSuppo
 
    Returns: True on success,false on failure.
   """
-  pass
- def Serialize_Binary(self):
-  """
+        pass
+
+    def Serialize_Binary(self):
+        """
   Serialize_Binary(self: GH_LooseChunk) -> Array[Byte]
 
   
@@ -8903,9 +9161,10 @@ class GH_LooseChunk(GH_Chunk,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSuppo
 
    Returns: An array of bytes representing the Loose chunk.
   """
-  pass
- def Serialize_Xml(self):
-  """
+        pass
+
+    def Serialize_Xml(self):
+        """
   Serialize_Xml(self: GH_LooseChunk) -> str
 
   
@@ -8914,24 +9173,27 @@ class GH_LooseChunk(GH_Chunk,GH_IWriter,GH_IChunk,GH_IBinarySupport,GH_IXmlSuppo
 
    Returns: A string containing the Xml content.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,chunk_name):
-  """ __new__(cls: type,chunk_name: str) """
-  pass
- m_archive=None
- m_chunks=None
- m_comments=None
- m_index=None
- m_items=None
- m_name=None
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, chunk_name):
+        """ __new__(cls: type,chunk_name: str) """
+        pass
+
+    m_archive = None
+    m_chunks = None
+    m_comments = None
+    m_index = None
+    m_items = None
+    m_name = None
 
 
 class GH_Message(object):
- """
+    """
  Represents an archive log message. 
 
     Messages are collected during read/write operations.
@@ -8944,18 +9206,20 @@ class GH_Message(object):
 
  GH_Message(message_content: str,message_type: GH_Message_Type)
  """
- @staticmethod
- def __new__(self,message_content=None,message_type=None):
-  """
+
+    @staticmethod
+    def __new__(self, message_content=None, message_type=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,message_content: str)
 
   __new__(cls: type,message_content: str,message_type: GH_Message_Type)
   """
-  pass
- Message=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the text content of this message.
+        pass
+
+    Message = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the text content of this message.
 
 
 
@@ -8965,8 +9229,8 @@ Get: Message(self: GH_Message) -> str
 
 """
 
- Type=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the type of this message.
+    Type = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the type of this message.
 
 
 
@@ -8977,46 +9241,56 @@ Get: Type(self: GH_Message) -> GH_Message_Type
 """
 
 
-
-class GH_Message_Type(Enum,IComparable,IFormattable,IConvertible):
- """
+class GH_Message_Type(Enum, IComparable, IFormattable, IConvertible):
+    """
  Message type flag.
 
  
 
  enum GH_Message_Type,values: error (2),info (0),warning (1)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- error=None
- info=None
- value__=None
- warning=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    error = None
+    info = None
+    value__ = None
+    warning = None
 
 
-class ID(object,IComparable[ID]):
- """
+class ID(object, IComparable[ID]):
+    """
  An ID is used to uniquely identify a specific item.
 
  
@@ -9025,21 +9299,24 @@ class ID(object,IComparable[ID]):
 
  ID(name: str,index: int)
  """
- def ToString(self):
-  """
+
+    def ToString(self):
+        """
   ToString(self: ID) -> str
 
   
 
    Gets a string representation for this ID.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,name,index=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, name, index=None):
+        """
   __new__[ID]() -> ID
 
   
@@ -9048,14 +9325,17 @@ class ID(object,IComparable[ID]):
 
   __new__(cls: type,name: str,index: int)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- HasIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets whether the index has been set.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    HasIndex = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets whether the index has been set.
 
 
 
@@ -9065,8 +9345,8 @@ Get: HasIndex(self: ID) -> bool
 
 """
 
- HasName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets whether the name has been set. 
+    HasName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets whether the name has been set. 
 
    Every valid ID must have a name.
 
@@ -9078,8 +9358,8 @@ Get: HasName(self: ID) -> bool
 
 """
 
- Index=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the index of this ID,if there is no valid index then -1 is returned.
+    Index = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the index of this ID,if there is no valid index then -1 is returned.
 
 
 
@@ -9089,8 +9369,8 @@ Get: Index(self: ID) -> int
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name of this ID.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the name of this ID.
 
 
 
@@ -9099,6 +9379,3 @@ Get: Name(self: ID) -> str
 
 
 """
-
-
-

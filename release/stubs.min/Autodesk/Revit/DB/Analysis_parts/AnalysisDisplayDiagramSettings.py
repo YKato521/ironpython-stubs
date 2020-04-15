@@ -1,5 +1,5 @@
-class AnalysisDisplayDiagramSettings(object,IDisposable):
- """
+class AnalysisDisplayDiagramSettings(object, IDisposable):
+    """
  Contains diagram settings for analysis display style element.
 
  
@@ -8,11 +8,13 @@ class AnalysisDisplayDiagramSettings(object,IDisposable):
 
  AnalysisDisplayDiagramSettings(other: AnalysisDisplayDiagramSettings)
  """
- def Dispose(self):
-  """ Dispose(self: AnalysisDisplayDiagramSettings) """
-  pass
- def IsEqual(self,other):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: AnalysisDisplayDiagramSettings) """
+        pass
+
+    def IsEqual(self, other):
+        """
   IsEqual(self: AnalysisDisplayDiagramSettings,other: AnalysisDisplayDiagramSettings) -> bool
 
   
@@ -25,32 +27,39 @@ class AnalysisDisplayDiagramSettings(object,IDisposable):
 
    Returns: True if objects are equal,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: AnalysisDisplayDiagramSettings,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,other=None):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: AnalysisDisplayDiagramSettings,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, other=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,other: AnalysisDisplayDiagramSettings)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- FenceType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Type of diagram fence visualization.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    FenceType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Type of diagram fence visualization.
 
 
 
@@ -62,8 +71,10 @@ Set: FenceType(self: AnalysisDisplayDiagramSettings)=value
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -73,8 +84,10 @@ Get: IsValidObject(self: AnalysisDisplayDiagramSettings) -> bool
 
 """
 
- OutlineColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Color of outline and fence lines in the diagram.
+    OutlineColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Color of outline and fence lines in the diagram.
 
 
 
@@ -86,8 +99,10 @@ Set: OutlineColor(self: AnalysisDisplayDiagramSettings)=value
 
 """
 
- OutlineLineWeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Line weight of outline and fence lines in the diagram.
+    OutlineLineWeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Line weight of outline and fence lines in the diagram.
 
 
 
@@ -99,8 +114,8 @@ Set: OutlineLineWeight(self: AnalysisDisplayDiagramSettings)=value
 
 """
 
- Rounding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Increment to which numeric values of analysis results are rounded in diagram.
+    Rounding = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Increment to which numeric values of analysis results are rounded in diagram.
 
 
 
@@ -112,8 +127,10 @@ Set: Rounding(self: AnalysisDisplayDiagramSettings)=value
 
 """
 
- TextLabelType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Type of diagram text label visualization.
+    TextLabelType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Type of diagram text label visualization.
 
 
 
@@ -125,8 +142,10 @@ Set: TextLabelType(self: AnalysisDisplayDiagramSettings)=value
 
 """
 
- TextTypeId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Element id of text associated with the settings.
+    TextTypeId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Element id of text associated with the settings.
 
 
 
@@ -138,8 +157,10 @@ Set: TextTypeId(self: AnalysisDisplayDiagramSettings)=value
 
 """
 
- Transparency=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Transparency percentage of diagram color fill
+    Transparency = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Transparency percentage of diagram color fill
 
 
 
@@ -150,5 +171,3 @@ Get: Transparency(self: AnalysisDisplayDiagramSettings) -> int
 Set: Transparency(self: AnalysisDisplayDiagramSettings)=value
 
 """
-
-

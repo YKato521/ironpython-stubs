@@ -1,13 +1,14 @@
 class MultilineStringConverter(TypeConverter):
- """
+    """
  Provides a type converter to convert multiline strings to a simple string.
 
  
 
  MultilineStringConverter()
  """
- def ConvertTo(self,*__args):
-  """
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: MultilineStringConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -30,9 +31,10 @@ class MultilineStringConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def GetProperties(self,*__args):
-  """
+        pass
+
+    def GetProperties(self, *__args):
+        """
   GetProperties(self: MultilineStringConverter,context: ITypeDescriptorContext,value: object,attributes: Array[Attribute]) -> PropertyDescriptorCollection
 
   
@@ -55,9 +57,10 @@ class MultilineStringConverter(TypeConverter):
 
     this data type,or null if there are no properties.
   """
-  pass
- def GetPropertiesSupported(self,context=None):
-  """
+        pass
+
+    def GetPropertiesSupported(self, context=None):
+        """
   GetPropertiesSupported(self: MultilineStringConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -72,4 +75,4 @@ class MultilineStringConverter(TypeConverter):
 
     find the properties of this object; otherwise,false.
   """
-  pass
+        pass

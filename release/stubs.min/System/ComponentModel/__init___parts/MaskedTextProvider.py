@@ -1,5 +1,5 @@
-class MaskedTextProvider(object,ICloneable):
- """
+class MaskedTextProvider(object, ICloneable):
+    """
  Represents a mask-parsing service that can be used by any number of controls that support masking,such as the System.Windows.Forms.MaskedTextBox control.
 
  
@@ -18,8 +18,9 @@ class MaskedTextProvider(object,ICloneable):
 
  MaskedTextProvider(mask: str,culture: CultureInfo,allowPromptAsInput: bool,promptChar: Char,passwordChar: Char,restrictToAscii: bool)
  """
- def Add(self,input,testPosition=None,resultHint=None):
-  """
+
+    def Add(self, input, testPosition=None, resultHint=None):
+        """
   Add(self: MaskedTextProvider,input: str) -> bool
 
   
@@ -84,9 +85,10 @@ class MaskedTextProvider(object,ICloneable):
 
    Returns: true if the input character was added successfully; otherwise false.
   """
-  pass
- def Clear(self,resultHint=None):
-  """
+        pass
+
+    def Clear(self, resultHint=None):
+        """
   Clear(self: MaskedTextProvider) -> MaskedTextResultHint
 
   
@@ -103,9 +105,10 @@ class MaskedTextProvider(object,ICloneable):
 
     characters.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: MaskedTextProvider) -> object
 
   
@@ -114,9 +117,10 @@ class MaskedTextProvider(object,ICloneable):
 
    Returns: The System.ComponentModel.MaskedTextProvider object this method creates,cast as an object.
   """
-  pass
- def FindAssignedEditPositionFrom(self,position,direction):
-  """
+        pass
+
+    def FindAssignedEditPositionFrom(self, position, direction):
+        """
   FindAssignedEditPositionFrom(self: MaskedTextProvider,position: int,direction: bool) -> int
 
   
@@ -141,9 +145,10 @@ class MaskedTextProvider(object,ICloneable):
 
     editable position encountered; otherwise System.ComponentModel.MaskedTextProvider.InvalidIndex.
   """
-  pass
- def FindAssignedEditPositionInRange(self,startPosition,endPosition,direction):
-  """
+        pass
+
+    def FindAssignedEditPositionInRange(self, startPosition, endPosition, direction):
+        """
   FindAssignedEditPositionInRange(self: MaskedTextProvider,startPosition: int,endPosition: int,direction: bool) -> int
 
   
@@ -170,9 +175,10 @@ class MaskedTextProvider(object,ICloneable):
 
     editable position encountered; otherwise System.ComponentModel.MaskedTextProvider.InvalidIndex.
   """
-  pass
- def FindEditPositionFrom(self,position,direction):
-  """
+        pass
+
+    def FindEditPositionFrom(self, position, direction):
+        """
   FindEditPositionFrom(self: MaskedTextProvider,position: int,direction: bool) -> int
 
   
@@ -197,9 +203,10 @@ class MaskedTextProvider(object,ICloneable):
 
     position encountered; otherwise System.ComponentModel.MaskedTextProvider.InvalidIndex.
   """
-  pass
- def FindEditPositionInRange(self,startPosition,endPosition,direction):
-  """
+        pass
+
+    def FindEditPositionInRange(self, startPosition, endPosition, direction):
+        """
   FindEditPositionInRange(self: MaskedTextProvider,startPosition: int,endPosition: int,direction: bool) -> int
 
   
@@ -226,9 +233,10 @@ class MaskedTextProvider(object,ICloneable):
 
     position encountered; otherwise System.ComponentModel.MaskedTextProvider.InvalidIndex.
   """
-  pass
- def FindNonEditPositionFrom(self,position,direction):
-  """
+        pass
+
+    def FindNonEditPositionFrom(self, position, direction):
+        """
   FindNonEditPositionFrom(self: MaskedTextProvider,position: int,direction: bool) -> int
 
   
@@ -253,9 +261,10 @@ class MaskedTextProvider(object,ICloneable):
 
     position encountered; otherwise System.ComponentModel.MaskedTextProvider.InvalidIndex.
   """
-  pass
- def FindNonEditPositionInRange(self,startPosition,endPosition,direction):
-  """
+        pass
+
+    def FindNonEditPositionInRange(self, startPosition, endPosition, direction):
+        """
   FindNonEditPositionInRange(self: MaskedTextProvider,startPosition: int,endPosition: int,direction: bool) -> int
 
   
@@ -282,9 +291,10 @@ class MaskedTextProvider(object,ICloneable):
 
     position encountered; otherwise System.ComponentModel.MaskedTextProvider.InvalidIndex.
   """
-  pass
- def FindUnassignedEditPositionFrom(self,position,direction):
-  """
+        pass
+
+    def FindUnassignedEditPositionFrom(self, position, direction):
+        """
   FindUnassignedEditPositionFrom(self: MaskedTextProvider,position: int,direction: bool) -> int
 
   
@@ -309,9 +319,10 @@ class MaskedTextProvider(object,ICloneable):
 
     editable position encountered; otherwise System.ComponentModel.MaskedTextProvider.InvalidIndex.
   """
-  pass
- def FindUnassignedEditPositionInRange(self,startPosition,endPosition,direction):
-  """
+        pass
+
+    def FindUnassignedEditPositionInRange(self, startPosition, endPosition, direction):
+        """
   FindUnassignedEditPositionInRange(self: MaskedTextProvider,startPosition: int,endPosition: int,direction: bool) -> int
 
   
@@ -338,10 +349,11 @@ class MaskedTextProvider(object,ICloneable):
 
     editable position encountered; otherwise System.ComponentModel.MaskedTextProvider.InvalidIndex.
   """
-  pass
- @staticmethod
- def GetOperationResultFromHint(hint):
-  """
+        pass
+
+    @staticmethod
+    def GetOperationResultFromHint(hint):
+        """
   GetOperationResultFromHint(hint: MaskedTextResultHint) -> bool
 
   
@@ -364,9 +376,10 @@ class MaskedTextProvider(object,ICloneable):
 
     otherwise,false if it represents failure.
   """
-  pass
- def InsertAt(self,input,position,testPosition=None,resultHint=None):
-  """
+        pass
+
+    def InsertAt(self, input, position, testPosition=None, resultHint=None):
+        """
   InsertAt(self: MaskedTextProvider,input: str,position: int) -> bool
 
   
@@ -431,9 +444,10 @@ class MaskedTextProvider(object,ICloneable):
 
    Returns: true if the insertion was successful; otherwise,false.
   """
-  pass
- def IsAvailablePosition(self,position):
-  """
+        pass
+
+    def IsAvailablePosition(self, position):
+        """
   IsAvailablePosition(self: MaskedTextProvider,position: int) -> bool
 
   
@@ -448,9 +462,10 @@ class MaskedTextProvider(object,ICloneable):
 
     yet; otherwise false.
   """
-  pass
- def IsEditPosition(self,position):
-  """
+        pass
+
+    def IsEditPosition(self, position):
+        """
   IsEditPosition(self: MaskedTextProvider,position: int) -> bool
 
   
@@ -463,10 +478,11 @@ class MaskedTextProvider(object,ICloneable):
 
    Returns: true if the specified position in the formatted string is editable; otherwise false.
   """
-  pass
- @staticmethod
- def IsValidInputChar(c):
-  """
+        pass
+
+    @staticmethod
+    def IsValidInputChar(c):
+        """
   IsValidInputChar(c: Char) -> bool
 
   
@@ -479,10 +495,11 @@ class MaskedTextProvider(object,ICloneable):
 
    Returns: true if the specified character contains a valid input value; otherwise false.
   """
-  pass
- @staticmethod
- def IsValidMaskChar(c):
-  """
+        pass
+
+    @staticmethod
+    def IsValidMaskChar(c):
+        """
   IsValidMaskChar(c: Char) -> bool
 
   
@@ -495,10 +512,11 @@ class MaskedTextProvider(object,ICloneable):
 
    Returns: true if the specified character contains a valid mask value; otherwise false.
   """
-  pass
- @staticmethod
- def IsValidPasswordChar(c):
-  """
+        pass
+
+    @staticmethod
+    def IsValidPasswordChar(c):
+        """
   IsValidPasswordChar(c: Char) -> bool
 
   
@@ -511,9 +529,10 @@ class MaskedTextProvider(object,ICloneable):
 
    Returns: true if the specified character contains a valid password value; otherwise false.
   """
-  pass
- def Remove(self,testPosition=None,resultHint=None):
-  """
+        pass
+
+    def Remove(self, testPosition=None, resultHint=None):
+        """
   Remove(self: MaskedTextProvider) -> (bool,int,MaskedTextResultHint)
 
   
@@ -534,9 +553,10 @@ class MaskedTextProvider(object,ICloneable):
 
    Returns: true if the character was successfully removed; otherwise,false.
   """
-  pass
- def RemoveAt(self,*__args):
-  """
+        pass
+
+    def RemoveAt(self, *__args):
+        """
   RemoveAt(self: MaskedTextProvider,startPosition: int,endPosition: int) -> (bool,int,MaskedTextResultHint)
 
   
@@ -581,9 +601,10 @@ class MaskedTextProvider(object,ICloneable):
 
    Returns: true if the character was successfully removed; otherwise,false.
   """
-  pass
- def Replace(self,input,*__args):
-  """
+        pass
+
+    def Replace(self, input, *__args):
+        """
   Replace(self: MaskedTextProvider,input: str,position: int) -> bool
 
   
@@ -696,9 +717,10 @@ class MaskedTextProvider(object,ICloneable):
 
    Returns: true if the character was successfully replaced; otherwise,false.
   """
-  pass
- def Set(self,input,testPosition=None,resultHint=None):
-  """
+        pass
+
+    def Set(self, input, testPosition=None, resultHint=None):
+        """
   Set(self: MaskedTextProvider,input: str) -> (bool,int,MaskedTextResultHint)
 
   
@@ -727,9 +749,10 @@ class MaskedTextProvider(object,ICloneable):
 
    Returns: true if all the characters were successfully set; otherwise,false.
   """
-  pass
- def ToDisplayString(self):
-  """
+        pass
+
+    def ToDisplayString(self):
+        """
   ToDisplayString(self: MaskedTextProvider) -> str
 
   
@@ -738,9 +761,10 @@ class MaskedTextProvider(object,ICloneable):
 
    Returns: The formatted System.String that includes prompts and mask literals.
   """
-  pass
- def ToString(self,*__args):
-  """
+        pass
+
+    def ToString(self, *__args):
+        """
   ToString(self: MaskedTextProvider,includePrompt: bool,includeLiterals: bool) -> str
 
   
@@ -881,9 +905,10 @@ class MaskedTextProvider(object,ICloneable):
 
     character values; otherwise the System.String.Empty string.
   """
-  pass
- def VerifyChar(self,input,position,hint):
-  """
+        pass
+
+    def VerifyChar(self, input, position, hint):
+        """
   VerifyChar(self: MaskedTextProvider,input: Char,position: int) -> (bool,MaskedTextResultHint)
 
   
@@ -898,9 +923,10 @@ class MaskedTextProvider(object,ICloneable):
 
    Returns: true if the specified character is valid for the specified position; otherwise,false.
   """
-  pass
- def VerifyEscapeChar(self,input,position):
-  """
+        pass
+
+    def VerifyEscapeChar(self, input, position):
+        """
   VerifyEscapeChar(self: MaskedTextProvider,input: Char,position: int) -> bool
 
   
@@ -915,9 +941,10 @@ class MaskedTextProvider(object,ICloneable):
 
    Returns: true if the specified character would be escaped at the specified position; otherwise,false.
   """
-  pass
- def VerifyString(self,input,testPosition=None,resultHint=None):
-  """
+        pass
+
+    def VerifyString(self, input, testPosition=None, resultHint=None):
+        """
   VerifyString(self: MaskedTextProvider,input: str) -> (bool,int,MaskedTextResultHint)
 
   
@@ -946,19 +973,23 @@ class MaskedTextProvider(object,ICloneable):
 
    Returns: true if the specified string represents valid input; otherwise,false.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,mask,*__args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, mask, *__args):
+        """
   __new__(cls: type,mask: str)
 
   __new__(cls: type,mask: str,restrictToAscii: bool)
@@ -973,14 +1004,19 @@ class MaskedTextProvider(object,ICloneable):
 
   __new__(cls: type,mask: str,culture: CultureInfo,allowPromptAsInput: bool,promptChar: Char,passwordChar: Char,restrictToAscii: bool)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- AllowPromptAsInput=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the prompt character should be treated as a valid input character or not.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AllowPromptAsInput = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the prompt character should be treated as a valid input character or not.
 
 
 
@@ -990,8 +1026,8 @@ Get: AllowPromptAsInput(self: MaskedTextProvider) -> bool
 
 """
 
- AsciiOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the mask accepts characters outside of the ASCII character set.
+    AsciiOnly = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the mask accepts characters outside of the ASCII character set.
 
 
 
@@ -1001,8 +1037,10 @@ Get: AsciiOnly(self: MaskedTextProvider) -> bool
 
 """
 
- AssignedEditPositionCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of editable character positions that have already been successfully assigned an input value.
+    AssignedEditPositionCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the number of editable character positions that have already been successfully assigned an input value.
 
 
 
@@ -1012,8 +1050,10 @@ Get: AssignedEditPositionCount(self: MaskedTextProvider) -> int
 
 """
 
- AvailableEditPositionCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of editable character positions in the input mask that have not yet been assigned an input value.
+    AvailableEditPositionCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the number of editable character positions in the input mask that have not yet been assigned an input value.
 
 
 
@@ -1023,8 +1063,8 @@ Get: AvailableEditPositionCount(self: MaskedTextProvider) -> int
 
 """
 
- Culture=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the culture that determines the value of the localizable separators and placeholders in the input mask.
+    Culture = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the culture that determines the value of the localizable separators and placeholders in the input mask.
 
 
 
@@ -1034,8 +1074,10 @@ Get: Culture(self: MaskedTextProvider) -> CultureInfo
 
 """
 
- EditPositionCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of editable positions in the formatted string.
+    EditPositionCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the number of editable positions in the formatted string.
 
 
 
@@ -1045,8 +1087,10 @@ Get: EditPositionCount(self: MaskedTextProvider) -> int
 
 """
 
- EditPositions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a newly created enumerator for the editable positions in the formatted string.
+    EditPositions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a newly created enumerator for the editable positions in the formatted string.
 
 
 
@@ -1056,8 +1100,10 @@ Get: EditPositions(self: MaskedTextProvider) -> IEnumerator
 
 """
 
- IncludeLiterals=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether literal characters in the input mask should be included in the formatted string.
+    IncludeLiterals = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether literal characters in the input mask should be included in the formatted string.
 
 
 
@@ -1069,8 +1115,10 @@ Set: IncludeLiterals(self: MaskedTextProvider)=value
 
 """
 
- IncludePrompt=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether System.Windows.Forms.MaskedTextBox.PromptChar is used to represent the absence of user input when displaying the formatted string.
+    IncludePrompt = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether System.Windows.Forms.MaskedTextBox.PromptChar is used to represent the absence of user input when displaying the formatted string.
 
 
 
@@ -1082,8 +1130,10 @@ Set: IncludePrompt(self: MaskedTextProvider)=value
 
 """
 
- IsPassword=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that determines whether password protection should be applied to the formatted string.
+    IsPassword = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that determines whether password protection should be applied to the formatted string.
 
 
 
@@ -1095,8 +1145,10 @@ Set: IsPassword(self: MaskedTextProvider)=value
 
 """
 
- LastAssignedPosition=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the index in the mask of the rightmost input character that has been assigned to the mask.
+    LastAssignedPosition = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the index in the mask of the rightmost input character that has been assigned to the mask.
 
 
 
@@ -1106,8 +1158,8 @@ Get: LastAssignedPosition(self: MaskedTextProvider) -> int
 
 """
 
- Length=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the length of the mask,absent any mask modifier characters.
+    Length = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the length of the mask,absent any mask modifier characters.
 
 
 
@@ -1117,8 +1169,8 @@ Get: Length(self: MaskedTextProvider) -> int
 
 """
 
- Mask=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the input mask.
+    Mask = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the input mask.
 
 
 
@@ -1128,8 +1180,10 @@ Get: Mask(self: MaskedTextProvider) -> str
 
 """
 
- MaskCompleted=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether all required inputs have been entered into the formatted string.
+    MaskCompleted = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether all required inputs have been entered into the formatted string.
 
 
 
@@ -1139,8 +1193,8 @@ Get: MaskCompleted(self: MaskedTextProvider) -> bool
 
 """
 
- MaskFull=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether all required and optional inputs have been entered into the formatted string.
+    MaskFull = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether all required and optional inputs have been entered into the formatted string.
 
 
 
@@ -1150,8 +1204,10 @@ Get: MaskFull(self: MaskedTextProvider) -> bool
 
 """
 
- PasswordChar=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the character to be substituted for the actual input characters.
+    PasswordChar = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the character to be substituted for the actual input characters.
 
 
 
@@ -1163,8 +1219,10 @@ Set: PasswordChar(self: MaskedTextProvider)=value
 
 """
 
- PromptChar=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the character used to represent the absence of user input for all available edit positions.
+    PromptChar = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the character used to represent the absence of user input for all available edit positions.
 
 
 
@@ -1176,8 +1234,10 @@ Set: PromptChar(self: MaskedTextProvider)=value
 
 """
 
- ResetOnPrompt=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that determines how an input character that matches the prompt character should be handled.
+    ResetOnPrompt = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that determines how an input character that matches the prompt character should be handled.
 
 
 
@@ -1189,8 +1249,10 @@ Set: ResetOnPrompt(self: MaskedTextProvider)=value
 
 """
 
- ResetOnSpace=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that determines how a space input character should be handled.
+    ResetOnSpace = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that determines how a space input character should be handled.
 
 
 
@@ -1202,8 +1264,10 @@ Set: ResetOnSpace(self: MaskedTextProvider)=value
 
 """
 
- SkipLiterals=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether literal character positions in the mask can be overwritten by their same values.
+    SkipLiterals = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether literal character positions in the mask can be overwritten by their same values.
 
 
 
@@ -1215,7 +1279,5 @@ Set: SkipLiterals(self: MaskedTextProvider)=value
 
 """
 
-
- DefaultPasswordChar=None
- InvalidIndex=-1
-
+    DefaultPasswordChar = None
+    InvalidIndex = -1

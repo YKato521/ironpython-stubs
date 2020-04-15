@@ -1,7 +1,8 @@
 class InputLanguage(object):
- """ Provides methods and fields to manage the input language. This class cannot be inherited. """
- def Equals(self,value):
-  """
+    """ Provides methods and fields to manage the input language. This class cannot be inherited. """
+
+    def Equals(self, value):
+        """
   Equals(self: InputLanguage,value: object) -> bool
 
   
@@ -14,10 +15,11 @@ class InputLanguage(object):
 
    Returns: true if the two languages are equal; otherwise,false.
   """
-  pass
- @staticmethod
- def FromCulture(culture):
-  """
+        pass
+
+    @staticmethod
+    def FromCulture(culture):
+        """
   FromCulture(culture: CultureInfo) -> InputLanguage
 
   
@@ -30,9 +32,10 @@ class InputLanguage(object):
 
    Returns: An System.Windows.Forms.InputLanguage that represents the previously selected input language.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: InputLanguage) -> int
 
   
@@ -41,14 +44,17 @@ class InputLanguage(object):
 
    Returns: The hash code for this input language.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __ne__(self,*args):
-  pass
- Culture=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the culture of the current input language.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    Culture = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the culture of the current input language.
 
 
 
@@ -58,8 +64,8 @@ Get: Culture(self: InputLanguage) -> CultureInfo
 
 """
 
- Handle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the handle for the input language.
+    Handle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the handle for the input language.
 
 
 
@@ -69,8 +75,10 @@ Get: Handle(self: InputLanguage) -> IntPtr
 
 """
 
- LayoutName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name of the current keyboard layout as it appears in the regional settings of the operating system on the computer.
+    LayoutName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the name of the current keyboard layout as it appears in the regional settings of the operating system on the computer.
 
 
 
@@ -80,8 +88,6 @@ Get: LayoutName(self: InputLanguage) -> str
 
 """
 
-
- CurrentInputLanguage=None
- DefaultInputLanguage=None
- InstalledInputLanguages=None
-
+    CurrentInputLanguage = None
+    DefaultInputLanguage = None
+    InstalledInputLanguages = None

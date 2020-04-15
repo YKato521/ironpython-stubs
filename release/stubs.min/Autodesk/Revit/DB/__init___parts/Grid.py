@@ -1,8 +1,9 @@
-class Grid(DatumPlane,IDisposable):
- """ Represents a single grid line within Autodesk Revit. """
- @staticmethod
- def Create(document,*__args):
-  """
+class Grid(DatumPlane, IDisposable):
+    """ Represents a single grid line within Autodesk Revit. """
+
+    @staticmethod
+    def Create(document, *__args):
+        """
   Create(document: Document,line: Line) -> Grid
 
   
@@ -31,15 +32,18 @@ class Grid(DatumPlane,IDisposable):
 
    Returns: The newly created grid line.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetExtents(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetExtents(self):
+        """
   GetExtents(self: Grid) -> Outline
 
   
@@ -58,15 +62,18 @@ class Grid(DatumPlane,IDisposable):
 
     for arc grids.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetVerticalExtents(self,bottom,top):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetVerticalExtents(self, bottom, top):
+        """
   SetVerticalExtents(self: Grid,bottom: float,top: float)
 
    Adjusts the grid to extend through only the vertical range between bottom and 
@@ -87,18 +94,22 @@ class Grid(DatumPlane,IDisposable):
 
     bottom range.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Curve=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Retrieves an object that represents the geometry of the grid line.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Curve = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Retrieves an object that represents the geometry of the grid line.
 
 
 
@@ -108,8 +119,8 @@ Get: Curve(self: Grid) -> Curve
 
 """
 
- IsCurved=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies if the grid line is curved or straight.
+    IsCurved = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Identifies if the grid line is curved or straight.
 
 
 
@@ -118,5 +129,3 @@ Get: IsCurved(self: Grid) -> bool
 
 
 """
-
-

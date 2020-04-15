@@ -1,5 +1,5 @@
-class Exception(object,ISerializable,_Exception):
- """
+class Exception(object, ISerializable, _Exception):
+    """
  Represents errors that occur during application execution.
 
  
@@ -10,11 +10,13 @@ class Exception(object,ISerializable,_Exception):
 
  Exception(message: str,innerException: Exception)
  """
- def add_SerializeObjectState(self,*args):
-  """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def GetBaseException(self):
-  """
+
+    def add_SerializeObjectState(self, *args):
+        """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def GetBaseException(self):
+        """
   GetBaseException(self: Exception) -> Exception
 
   
@@ -31,9 +33,10 @@ class Exception(object,ISerializable,_Exception):
 
     returns the current exception.
   """
-  pass
- def GetObjectData(self,info,context):
-  """
+        pass
+
+    def GetObjectData(self, info, context):
+        """
   GetObjectData(self: Exception,info: SerializationInfo,context: StreamingContext)
 
    When overridden in a derived class,sets the System.Runtime.Serialization.SerializationInfo with 
@@ -54,9 +57,10 @@ class Exception(object,ISerializable,_Exception):
 
     source or destination.
   """
-  pass
- def GetType(self):
-  """
+        pass
+
+    def GetType(self):
+        """
   GetType(self: Exception) -> Type
 
   
@@ -65,12 +69,14 @@ class Exception(object,ISerializable,_Exception):
 
    Returns: A System.Type object that represents the exact runtime type of the current instance.
   """
-  pass
- def remove_SerializeObjectState(self,*args):
-  """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def remove_SerializeObjectState(self, *args):
+        """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: Exception) -> str
 
   
@@ -79,13 +85,15 @@ class Exception(object,ISerializable,_Exception):
 
    Returns: A string representation of the current exception.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,message=None,innerException=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, message=None, innerException=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,message: str)
@@ -94,16 +102,20 @@ class Exception(object,ISerializable,_Exception):
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- Data=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of key/value pairs that provide additional user-defined information about the exception.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Data = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a collection of key/value pairs that provide additional user-defined information about the exception.
 
 
 
@@ -113,8 +125,8 @@ Get: Data(self: Exception) -> IDictionary
 
 """
 
- HelpLink=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a link to the help file associated with this exception.
+    HelpLink = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a link to the help file associated with this exception.
 
 
 
@@ -126,8 +138,8 @@ Set: HelpLink(self: Exception)=value
 
 """
 
- HResult=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets HRESULT,a coded numerical value that is assigned to a specific exception.
+    HResult = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets HRESULT,a coded numerical value that is assigned to a specific exception.
 
 
 
@@ -137,8 +149,10 @@ Get: HResult(self: Exception) -> int
 
 """
 
- InnerException=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Exception instance that caused the current exception.
+    InnerException = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Exception instance that caused the current exception.
 
 
 
@@ -148,8 +162,8 @@ Get: InnerException(self: Exception) -> Exception
 
 """
 
- Message=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a message that describes the current exception.
+    Message = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a message that describes the current exception.
 
 
 
@@ -159,8 +173,8 @@ Get: Message(self: Exception) -> str
 
 """
 
- Source=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the application or the object that causes the error.
+    Source = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the name of the application or the object that causes the error.
 
 
 
@@ -172,8 +186,10 @@ Set: Source(self: Exception)=value
 
 """
 
- StackTrace=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a string representation of the immediate frames on the call stack.
+    StackTrace = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a string representation of the immediate frames on the call stack.
 
 
 
@@ -183,8 +199,10 @@ Get: StackTrace(self: Exception) -> str
 
 """
 
- TargetSite=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the method that throws the current exception.
+    TargetSite = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the method that throws the current exception.
 
 
 
@@ -193,5 +211,3 @@ Get: TargetSite(self: Exception) -> MethodBase
 
 
 """
-
-

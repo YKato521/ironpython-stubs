@@ -1,13 +1,14 @@
-class DataGridViewCellCollection(BaseCollection,ICollection,IEnumerable,IList):
- """
+class DataGridViewCellCollection(BaseCollection, ICollection, IEnumerable, IList):
+    """
  Represents a collection of cells in a System.Windows.Forms.DataGridViewRow.
 
  
 
  DataGridViewCellCollection(dataGridViewRow: DataGridViewRow)
  """
- def Add(self,dataGridViewCell):
-  """
+
+    def Add(self, dataGridViewCell):
+        """
   Add(self: DataGridViewCellCollection,dataGridViewCell: DataGridViewCell) -> int
 
   
@@ -20,9 +21,10 @@ class DataGridViewCellCollection(BaseCollection,ICollection,IEnumerable,IList):
 
    Returns: The position in which to insert the new element.
   """
-  pass
- def AddRange(self,dataGridViewCells):
-  """
+        pass
+
+    def AddRange(self, dataGridViewCells):
+        """
   AddRange(self: DataGridViewCellCollection,*dataGridViewCells: Array[DataGridViewCell])
 
    Adds an array of cells to the collection.
@@ -31,16 +33,18 @@ class DataGridViewCellCollection(BaseCollection,ICollection,IEnumerable,IList):
 
    dataGridViewCells: The array of System.Windows.Forms.DataGridViewCell objects to add to the collection.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: DataGridViewCellCollection)
 
    Clears all cells from the collection.
   """
-  pass
- def Contains(self,dataGridViewCell):
-  """
+        pass
+
+    def Contains(self, dataGridViewCell):
+        """
   Contains(self: DataGridViewCellCollection,dataGridViewCell: DataGridViewCell) -> bool
 
   
@@ -53,9 +57,10 @@ class DataGridViewCellCollection(BaseCollection,ICollection,IEnumerable,IList):
 
    Returns: true if dataGridViewCell is in the collection; otherwise,false.
   """
-  pass
- def CopyTo(self,*__args):
-  """
+        pass
+
+    def CopyTo(self, *__args):
+        """
   CopyTo(self: DataGridViewCellCollection,array: Array[DataGridViewCell],index: int)
 
    Copies the entire collection of cells into an array at a specified location within the array.
@@ -66,9 +71,10 @@ class DataGridViewCellCollection(BaseCollection,ICollection,IEnumerable,IList):
 
    index: The index of the element in array at which to start copying.
   """
-  pass
- def IndexOf(self,dataGridViewCell):
-  """
+        pass
+
+    def IndexOf(self, dataGridViewCell):
+        """
   IndexOf(self: DataGridViewCellCollection,dataGridViewCell: DataGridViewCell) -> int
 
   
@@ -83,9 +89,10 @@ class DataGridViewCellCollection(BaseCollection,ICollection,IEnumerable,IList):
 
     collection; otherwise,-1.
   """
-  pass
- def Insert(self,index,dataGridViewCell):
-  """
+        pass
+
+    def Insert(self, index, dataGridViewCell):
+        """
   Insert(self: DataGridViewCellCollection,index: int,dataGridViewCell: DataGridViewCell)
 
    Inserts a cell into the collection at the specified index.
@@ -96,9 +103,10 @@ class DataGridViewCellCollection(BaseCollection,ICollection,IEnumerable,IList):
 
    dataGridViewCell: The System.Windows.Forms.DataGridViewCell to insert.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -129,9 +137,10 @@ class DataGridViewCellCollection(BaseCollection,ICollection,IEnumerable,IList):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def OnCollectionChanged(self,*args):
-  """
+        pass
+
+    def OnCollectionChanged(self, *args):
+        """
   OnCollectionChanged(self: DataGridViewCellCollection,e: CollectionChangeEventArgs)
 
    Raises the System.Windows.Forms.DataGridViewCellCollection.CollectionChanged event.
@@ -140,9 +149,10 @@ class DataGridViewCellCollection(BaseCollection,ICollection,IEnumerable,IList):
 
    e: A System.ComponentModel.CollectionChangeEventArgs that contains the event data.
   """
-  pass
- def Remove(self,cell):
-  """
+        pass
+
+    def Remove(self, cell):
+        """
   Remove(self: DataGridViewCellCollection,cell: DataGridViewCell)
 
    Removes the specified cell from the collection.
@@ -151,9 +161,10 @@ class DataGridViewCellCollection(BaseCollection,ICollection,IEnumerable,IList):
 
    cell: The System.Windows.Forms.DataGridViewCell to remove from the collection.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: DataGridViewCellCollection,index: int)
 
    Removes the cell at the specified index.
@@ -162,12 +173,14 @@ class DataGridViewCellCollection(BaseCollection,ICollection,IEnumerable,IList):
 
    index: The zero-based index of the System.Windows.Forms.DataGridViewCell to be removed.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IList,value: object) -> bool
 
   
@@ -180,33 +193,38 @@ class DataGridViewCellCollection(BaseCollection,ICollection,IEnumerable,IList):
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,dataGridViewRow):
-  """ __new__(cls: type,dataGridViewRow: DataGridViewRow) """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]=x.__setitem__(i,y) <==> x[i]= """
-  pass
- List=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an System.Collections.ArrayList containing System.Windows.Forms.DataGridViewCellCollection objects.
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, dataGridViewRow):
+        """ __new__(cls: type,dataGridViewRow: DataGridViewRow) """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]=x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    List = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an System.Collections.ArrayList containing System.Windows.Forms.DataGridViewCellCollection objects.
 
 
 
 """
 
-
- CollectionChanged=None
-
+    CollectionChanged = None

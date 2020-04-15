@@ -8,16 +8,18 @@
 # no functions
 # classes
 
+
 class ExtendedProtectionPolicyElement(ConfigurationElement):
- """
+    """
  The System.Security.Authentication.ExtendedProtection.Configuration.ExtendedProtectionPolicyElement class represents a configuration element for an System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.
 
  
 
  ExtendedProtectionPolicyElement()
  """
- def BuildPolicy(self):
-  """
+
+    def BuildPolicy(self):
+        """
   BuildPolicy(self: ExtendedProtectionPolicyElement) -> ExtendedProtectionPolicy
 
   
@@ -42,9 +44,12 @@ class ExtendedProtectionPolicyElement(ConfigurationElement):
 
     represents the extended protection policy created.
   """
-  pass
- CustomServiceNames=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the custom Service Provider Name (SPN) list used to match against a client's SPN for this configuration policy element.
+        pass
+
+    CustomServiceNames = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the custom Service Provider Name (SPN) list used to match against a client's SPN for this configuration policy element.
 
 
 
@@ -54,24 +59,32 @@ Get: CustomServiceNames(self: ExtendedProtectionPolicyElement) -> ServiceNameEle
 
 """
 
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- PolicyEnforcement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the policy enforcement value for this configuration policy element.
+    PolicyEnforcement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the policy enforcement value for this configuration policy element.
 
 
 
@@ -83,10 +96,14 @@ Set: PolicyEnforcement(self: ExtendedProtectionPolicyElement)=value
 
 """
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- ProtectionScenario=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the kind of protection enforced by the extended protection policy for this configuration policy element.
+    ProtectionScenario = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the kind of protection enforced by the extended protection policy for this configuration policy element.
 
 
 
@@ -99,33 +116,39 @@ Set: ProtectionScenario(self: ExtendedProtectionPolicyElement)=value
 """
 
 
-
 class ServiceNameElement(ConfigurationElement):
- """
+    """
  The System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElement class represents a configuration element for a service name used in a System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElementCollection.
 
  
 
  ServiceNameElement()
  """
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Service Provider Name (SPN) for this System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElement instance.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Service Provider Name (SPN) for this System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElement instance.
 
 
 
@@ -137,20 +160,24 @@ Set: Name(self: ServiceNameElement)=value
 
 """
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
 
-
-class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IEnumerable):
- """
+class ServiceNameElementCollection(
+    ConfigurationElementCollection, ICollection, IEnumerable
+):
+    """
  The System.Security.Authentication.ExtendedProtection.ServiceNameCollection class is a collection of service principal names that represent a configuration element for an System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.
 
  
 
  ServiceNameElementCollection()
  """
- def Add(self,element):
-  """
+
+    def Add(self, element):
+        """
   Add(self: ServiceNameElementCollection,element: ServiceNameElement)
 
    The 
@@ -175,9 +202,10 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
     System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElementCollection.
   """
-  pass
- def BaseAdd(self,*args):
-  """
+        pass
+
+    def BaseAdd(self, *args):
+        """
   BaseAdd(self: ConfigurationElementCollection,index: int,element: ConfigurationElement)
 
    Adds a configuration element to the configuration element collection.
@@ -210,16 +238,18 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
    element: The System.Configuration.ConfigurationElement to add.
   """
-  pass
- def BaseClear(self,*args):
-  """
+        pass
+
+    def BaseClear(self, *args):
+        """
   BaseClear(self: ConfigurationElementCollection)
 
    Removes all configuration element objects from the collection.
   """
-  pass
- def BaseGet(self,*args):
-  """
+        pass
+
+    def BaseGet(self, *args):
+        """
   BaseGet(self: ConfigurationElementCollection,index: int) -> ConfigurationElement
 
   
@@ -244,9 +274,10 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
    Returns: The System.Configuration.ConfigurationElement with the specified key; otherwise,null.
   """
-  pass
- def BaseGetAllKeys(self,*args):
-  """
+        pass
+
+    def BaseGetAllKeys(self, *args):
+        """
   BaseGetAllKeys(self: ConfigurationElementCollection) -> Array[object]
 
   
@@ -261,9 +292,10 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
     contained in the System.Configuration.ConfigurationElementCollection.
   """
-  pass
- def BaseGetKey(self,*args):
-  """
+        pass
+
+    def BaseGetKey(self, *args):
+        """
   BaseGetKey(self: ConfigurationElementCollection,index: int) -> object
 
   
@@ -276,9 +308,10 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
    Returns: The key for the specified System.Configuration.ConfigurationElement.
   """
-  pass
- def BaseIndexOf(self,*args):
-  """
+        pass
+
+    def BaseIndexOf(self, *args):
+        """
   BaseIndexOf(self: ConfigurationElementCollection,element: ConfigurationElement) -> int
 
   
@@ -291,9 +324,10 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
    Returns: The index of the specified System.Configuration.ConfigurationElement; otherwise,-1.
   """
-  pass
- def BaseIsRemoved(self,*args):
-  """
+        pass
+
+    def BaseIsRemoved(self, *args):
+        """
   BaseIsRemoved(self: ConfigurationElementCollection,key: object) -> bool
 
   
@@ -312,9 +346,10 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
     otherwise,false. The default is false.
   """
-  pass
- def BaseRemove(self,*args):
-  """
+        pass
+
+    def BaseRemove(self, *args):
+        """
   BaseRemove(self: ConfigurationElementCollection,key: object)
 
    Removes a System.Configuration.ConfigurationElement from the collection.
@@ -323,9 +358,10 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
    key: The key of the System.Configuration.ConfigurationElement to remove.
   """
-  pass
- def BaseRemoveAt(self,*args):
-  """
+        pass
+
+    def BaseRemoveAt(self, *args):
+        """
   BaseRemoveAt(self: ConfigurationElementCollection,index: int)
 
    Removes the System.Configuration.ConfigurationElement at the specified index location.
@@ -334,9 +370,10 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
    index: The index location of the System.Configuration.ConfigurationElement to remove.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: ServiceNameElementCollection)
 
    The 
@@ -347,9 +384,10 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
     System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElementCollection.
   """
-  pass
- def CreateNewElement(self,*args):
-  """
+        pass
+
+    def CreateNewElement(self, *args):
+        """
   CreateNewElement(self: ServiceNameElementCollection) -> ConfigurationElement
 
   CreateNewElement(self: ConfigurationElementCollection,elementName: str) -> ConfigurationElement
@@ -364,9 +402,10 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
    Returns: A new System.Configuration.ConfigurationElement.
   """
-  pass
- def DeserializeElement(self,*args):
-  """
+        pass
+
+    def DeserializeElement(self, *args):
+        """
   DeserializeElement(self: ConfigurationElement,reader: XmlReader,serializeCollectionKey: bool)
 
    Reads XML from the configuration file.
@@ -377,12 +416,14 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
    serializeCollectionKey: true to serialize only the collection key properties; otherwise,false.
   """
-  pass
- def GetElementKey(self,*args):
-  """ GetElementKey(self: ServiceNameElementCollection,element: ConfigurationElement) -> object """
-  pass
- def GetTransformedAssemblyString(self,*args):
-  """
+        pass
+
+    def GetElementKey(self, *args):
+        """ GetElementKey(self: ServiceNameElementCollection,element: ConfigurationElement) -> object """
+        pass
+
+    def GetTransformedAssemblyString(self, *args):
+        """
   GetTransformedAssemblyString(self: ConfigurationElement,assemblyName: str) -> str
 
   
@@ -401,9 +442,10 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
     available.
   """
-  pass
- def GetTransformedTypeString(self,*args):
-  """
+        pass
+
+    def GetTransformedTypeString(self, *args):
+        """
   GetTransformedTypeString(self: ConfigurationElement,typeName: str) -> str
 
   
@@ -422,16 +464,18 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
     available.
   """
-  pass
- def get_Item(self,*__args):
-  """
+        pass
+
+    def get_Item(self, *__args):
+        """
   get_Item(self: ConfigurationElement,propertyName: str) -> object
 
   get_Item(self: ConfigurationElement,prop: ConfigurationProperty) -> object
   """
-  pass
- def IndexOf(self,element):
-  """
+        pass
+
+    def IndexOf(self, element):
+        """
   IndexOf(self: ServiceNameElementCollection,element: ServiceNameElement) -> int
 
   
@@ -464,25 +508,28 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
     System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElementCollection.
   """
-  pass
- def Init(self,*args):
-  """
+        pass
+
+    def Init(self, *args):
+        """
   Init(self: ConfigurationElement)
 
    Sets the System.Configuration.ConfigurationElement object to its initial state.
   """
-  pass
- def InitializeDefault(self,*args):
-  """
+        pass
+
+    def InitializeDefault(self, *args):
+        """
   InitializeDefault(self: ConfigurationElement)
 
    Used to initialize a default set of values for the System.Configuration.ConfigurationElement 
 
     object.
   """
-  pass
- def IsElementName(self,*args):
-  """
+        pass
+
+    def IsElementName(self, *args):
+        """
   IsElementName(self: ConfigurationElementCollection,elementName: str) -> bool
 
   
@@ -499,9 +546,10 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
    Returns: true if the element exists in the collection; otherwise,false. The default is false.
   """
-  pass
- def IsElementRemovable(self,*args):
-  """
+        pass
+
+    def IsElementRemovable(self, *args):
+        """
   IsElementRemovable(self: ConfigurationElementCollection,element: ConfigurationElement) -> bool
 
   
@@ -520,9 +568,10 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
     System.Configuration.ConfigurationElementCollection; otherwise,false. The default is true.
   """
-  pass
- def IsModified(self,*args):
-  """
+        pass
+
+    def IsModified(self, *args):
+        """
   IsModified(self: ConfigurationElementCollection) -> bool
 
   
@@ -535,9 +584,10 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
    Returns: true if any contained element has been modified; otherwise,false
   """
-  pass
- def ListErrors(self,*args):
-  """
+        pass
+
+    def ListErrors(self, *args):
+        """
   ListErrors(self: ConfigurationElement,errorList: IList)
 
    Adds the invalid-property errors in this System.Configuration.ConfigurationElement object,and 
@@ -550,9 +600,10 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
    errorList: An object that implements the System.Collections.IList interface.
   """
-  pass
- def OnDeserializeUnrecognizedAttribute(self,*args):
-  """
+        pass
+
+    def OnDeserializeUnrecognizedAttribute(self, *args):
+        """
   OnDeserializeUnrecognizedAttribute(self: ConfigurationElement,name: str,value: str) -> bool
 
   
@@ -567,9 +618,10 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
    Returns: true when an unknown attribute is encountered while deserializing; otherwise,false.
   """
-  pass
- def OnDeserializeUnrecognizedElement(self,*args):
-  """
+        pass
+
+    def OnDeserializeUnrecognizedElement(self, *args):
+        """
   OnDeserializeUnrecognizedElement(self: ConfigurationElementCollection,elementName: str,reader: XmlReader) -> bool
 
   
@@ -586,9 +638,10 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
     false.
   """
-  pass
- def OnRequiredPropertyNotFound(self,*args):
-  """
+        pass
+
+    def OnRequiredPropertyNotFound(self, *args):
+        """
   OnRequiredPropertyNotFound(self: ConfigurationElement,name: str) -> object
 
   
@@ -601,16 +654,18 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
    Returns: None.
   """
-  pass
- def PostDeserialize(self,*args):
-  """
+        pass
+
+    def PostDeserialize(self, *args):
+        """
   PostDeserialize(self: ConfigurationElement)
 
    Called after deserialization.
   """
-  pass
- def PreSerialize(self,*args):
-  """
+        pass
+
+    def PreSerialize(self, *args):
+        """
   PreSerialize(self: ConfigurationElement,writer: XmlWriter)
 
    Called before serialization.
@@ -621,9 +676,10 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
     System.Configuration.ConfigurationElement.
   """
-  pass
- def Remove(self,*__args):
-  """
+        pass
+
+    def Remove(self, *__args):
+        """
   Remove(self: ServiceNameElementCollection,name: str)
 
    The 
@@ -678,9 +734,10 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
     System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElementCollection.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: ServiceNameElementCollection,index: int)
 
    The 
@@ -709,9 +766,10 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
     System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElementCollection.
   """
-  pass
- def Reset(self,*args):
-  """
+        pass
+
+    def Reset(self, *args):
+        """
   Reset(self: ConfigurationElementCollection,parentElement: ConfigurationElement)
 
    Resets the System.Configuration.ConfigurationElementCollection to its unmodified state when 
@@ -726,18 +784,20 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
     any; otherwise,null.
   """
-  pass
- def ResetModified(self,*args):
-  """
+        pass
+
+    def ResetModified(self, *args):
+        """
   ResetModified(self: ConfigurationElementCollection)
 
    Resets the value of the System.Configuration.ConfigurationElementCollection.IsModified property 
 
     to false when overridden in a derived class.
   """
-  pass
- def SerializeElement(self,*args):
-  """
+        pass
+
+    def SerializeElement(self, *args):
+        """
   SerializeElement(self: ConfigurationElementCollection,writer: XmlWriter,serializeCollectionKey: bool) -> bool
 
   
@@ -758,9 +818,10 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
     file successfully.
   """
-  pass
- def SerializeToXmlElement(self,*args):
-  """
+        pass
+
+    def SerializeToXmlElement(self, *args):
+        """
   SerializeToXmlElement(self: ConfigurationElement,writer: XmlWriter,elementName: str) -> bool
 
   
@@ -779,9 +840,10 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
    Returns: true if writing was successful; otherwise,false.
   """
-  pass
- def SetPropertyValue(self,*args):
-  """
+        pass
+
+    def SetPropertyValue(self, *args):
+        """
   SetPropertyValue(self: ConfigurationElement,prop: ConfigurationProperty,value: object,ignoreLocks: bool)
 
    Sets a property to the specified value.
@@ -794,21 +856,24 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
    ignoreLocks: true if the locks on the property should be ignored; otherwise,false.
   """
-  pass
- def SetReadOnly(self,*args):
-  """
+        pass
+
+    def SetReadOnly(self, *args):
+        """
   SetReadOnly(self: ConfigurationElementCollection)
 
    Sets the System.Configuration.ConfigurationElementCollection.IsReadOnly property for the 
 
     System.Configuration.ConfigurationElementCollection object and for all sub-elements.
   """
-  pass
- def set_Item(self,*__args):
-  """ set_Item(self: ConfigurationElement,propertyName: str,value: object)set_Item(self: ConfigurationElement,prop: ConfigurationProperty,value: object) """
-  pass
- def Unmerge(self,*args):
-  """
+        pass
+
+    def set_Item(self, *__args):
+        """ set_Item(self: ConfigurationElement,propertyName: str,value: object)set_Item(self: ConfigurationElement,prop: ConfigurationProperty,value: object) """
+        pass
+
+    def Unmerge(self, *args):
+        """
   Unmerge(self: ConfigurationElementCollection,sourceElement: ConfigurationElement,parentElement: ConfigurationElement,saveMode: ConfigurationSaveMode)
 
    Reverses the effect of merging configuration information from different levels of the 
@@ -835,79 +900,100 @@ class ServiceNameElementCollection(ConfigurationElementCollection,ICollection,IE
 
     values to include.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]=x.__setitem__(i,y) <==> x[i]= """
-  pass
- AddElementName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the System.Configuration.ConfigurationElement to associate with the add operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]=x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    AddElementName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the System.Configuration.ConfigurationElement to associate with the add operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
 
 
 
 """
 
- ClearElementName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name for the System.Configuration.ConfigurationElement to associate with the clear operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
+    ClearElementName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name for the System.Configuration.ConfigurationElement to associate with the clear operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
 
 
 
 """
 
- ElementName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name used to identify this collection of elements in the configuration file when overridden in a derived class.
+    ElementName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the name used to identify this collection of elements in the configuration file when overridden in a derived class.
 
 
 
 """
 
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of properties.
-
-
-
-"""
-
- RemoveElementName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the System.Configuration.ConfigurationElement to associate with the remove operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the collection of properties.
 
 
 
 """
 
- ThrowOnDuplicate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether an attempt to add a duplicate System.Configuration.ConfigurationElement to the System.Configuration.ConfigurationElementCollection will cause an exception to be thrown.
+    RemoveElementName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the System.Configuration.ConfigurationElement to associate with the remove operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
 
 
 
 """
 
+    ThrowOnDuplicate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether an attempt to add a duplicate System.Configuration.ConfigurationElement to the System.Configuration.ConfigurationElementCollection will cause an exception to be thrown.
 
 
+
+"""

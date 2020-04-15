@@ -1,8 +1,9 @@
 class DocumentValidation(object):
- """ Utility functions with document validation """
- @staticmethod
- def CanDeleteElement(document,elementId):
-  """
+    """ Utility functions with document validation """
+
+    @staticmethod
+    def CanDeleteElement(document, elementId):
+        """
   CanDeleteElement(document: Document,elementId: ElementId) -> bool
 
   
@@ -17,8 +18,8 @@ class DocumentValidation(object):
 
    Returns: True if the element can be deleted,false otherwise.
   """
-  pass
- __all__=[
-  'CanDeleteElement',
- ]
+        pass
 
+    __all__ = [
+        "CanDeleteElement",
+    ]

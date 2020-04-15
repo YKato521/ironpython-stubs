@@ -1,5 +1,5 @@
 class CryptoKeySecurity(NativeObjectSecurity):
- """
+    """
  Provides the ability to control access to a cryptographic key object without direct manipulation of  an Access Control List (ACL).
 
  
@@ -8,8 +8,17 @@ class CryptoKeySecurity(NativeObjectSecurity):
 
  CryptoKeySecurity(securityDescriptor: CommonSecurityDescriptor)
  """
- def AccessRuleFactory(self,identityReference,accessMask,isInherited,inheritanceFlags,propagationFlags,type):
-  """
+
+    def AccessRuleFactory(
+        self,
+        identityReference,
+        accessMask,
+        isInherited,
+        inheritanceFlags,
+        propagationFlags,
+        type,
+    ):
+        """
   AccessRuleFactory(self: CryptoKeySecurity,identityReference: IdentityReference,accessMask: int,isInherited: bool,inheritanceFlags: InheritanceFlags,propagationFlags: PropagationFlags,type: AccessControlType) -> AccessRule
 
   
@@ -48,9 +57,10 @@ class CryptoKeySecurity(NativeObjectSecurity):
 
    Returns: The System.Security.AccessControl.AccessRule object that this method creates.
   """
-  pass
- def AddAccessRule(self,rule):
-  """
+        pass
+
+    def AddAccessRule(self, rule):
+        """
   AddAccessRule(self: CryptoKeySecurity,rule: CryptoKeyAccessRule)
 
    Adds the specified access rule to the Discretionary Access Control List (DACL) associated with 
@@ -63,9 +73,10 @@ class CryptoKeySecurity(NativeObjectSecurity):
 
    rule: The access rule to add.
   """
-  pass
- def AddAuditRule(self,rule):
-  """
+        pass
+
+    def AddAuditRule(self, rule):
+        """
   AddAuditRule(self: CryptoKeySecurity,rule: CryptoKeyAuditRule)
 
    Adds the specified audit rule to the System Access Control List (SACL) associated with this 
@@ -78,9 +89,18 @@ class CryptoKeySecurity(NativeObjectSecurity):
 
    rule: The audit rule to add.
   """
-  pass
- def AuditRuleFactory(self,identityReference,accessMask,isInherited,inheritanceFlags,propagationFlags,flags):
-  """
+        pass
+
+    def AuditRuleFactory(
+        self,
+        identityReference,
+        accessMask,
+        isInherited,
+        inheritanceFlags,
+        propagationFlags,
+        flags,
+    ):
+        """
   AuditRuleFactory(self: CryptoKeySecurity,identityReference: IdentityReference,accessMask: int,isInherited: bool,inheritanceFlags: InheritanceFlags,propagationFlags: PropagationFlags,flags: AuditFlags) -> AuditRule
 
   
@@ -119,9 +139,10 @@ class CryptoKeySecurity(NativeObjectSecurity):
 
    Returns: The System.Security.AccessControl.AuditRule object that this method creates.
   """
-  pass
- def RemoveAccessRule(self,rule):
-  """
+        pass
+
+    def RemoveAccessRule(self, rule):
+        """
   RemoveAccessRule(self: CryptoKeySecurity,rule: CryptoKeyAccessRule) -> bool
 
   
@@ -140,9 +161,10 @@ class CryptoKeySecurity(NativeObjectSecurity):
 
    Returns: true if the access rule was successfully removed; otherwise,false.
   """
-  pass
- def RemoveAccessRuleAll(self,rule):
-  """
+        pass
+
+    def RemoveAccessRuleAll(self, rule):
+        """
   RemoveAccessRuleAll(self: CryptoKeySecurity,rule: CryptoKeyAccessRule)
 
    Removes all access rules that have the same security identifier as the specified access rule 
@@ -157,9 +179,10 @@ class CryptoKeySecurity(NativeObjectSecurity):
 
    rule: The access rule to remove.
   """
-  pass
- def RemoveAccessRuleSpecific(self,rule):
-  """
+        pass
+
+    def RemoveAccessRuleSpecific(self, rule):
+        """
   RemoveAccessRuleSpecific(self: CryptoKeySecurity,rule: CryptoKeyAccessRule)
 
    Removes all access rules that exactly match the specified access rule from the Discretionary 
@@ -174,9 +197,10 @@ class CryptoKeySecurity(NativeObjectSecurity):
 
    rule: The access rule to remove.
   """
-  pass
- def RemoveAuditRule(self,rule):
-  """
+        pass
+
+    def RemoveAuditRule(self, rule):
+        """
   RemoveAuditRule(self: CryptoKeySecurity,rule: CryptoKeyAuditRule) -> bool
 
   
@@ -195,9 +219,10 @@ class CryptoKeySecurity(NativeObjectSecurity):
 
    Returns: true if the audit rule was successfully removed; otherwise,false.
   """
-  pass
- def RemoveAuditRuleAll(self,rule):
-  """
+        pass
+
+    def RemoveAuditRuleAll(self, rule):
+        """
   RemoveAuditRuleAll(self: CryptoKeySecurity,rule: CryptoKeyAuditRule)
 
    Removes all audit rules that have the same security identifier as the specified audit rule from 
@@ -212,9 +237,10 @@ class CryptoKeySecurity(NativeObjectSecurity):
 
    rule: The audit rule to remove.
   """
-  pass
- def RemoveAuditRuleSpecific(self,rule):
-  """
+        pass
+
+    def RemoveAuditRuleSpecific(self, rule):
+        """
   RemoveAuditRuleSpecific(self: CryptoKeySecurity,rule: CryptoKeyAuditRule)
 
    Removes all audit rules that exactly match the specified audit rule from the System Access 
@@ -227,9 +253,10 @@ class CryptoKeySecurity(NativeObjectSecurity):
 
    rule: The audit rule to remove.
   """
-  pass
- def ResetAccessRule(self,rule):
-  """
+        pass
+
+    def ResetAccessRule(self, rule):
+        """
   ResetAccessRule(self: CryptoKeySecurity,rule: CryptoKeyAccessRule)
 
    Removes all access rules in the Discretionary Access Control List (DACL) associated with this 
@@ -242,9 +269,10 @@ class CryptoKeySecurity(NativeObjectSecurity):
 
    rule: The access rule to reset.
   """
-  pass
- def SetAccessRule(self,rule):
-  """
+        pass
+
+    def SetAccessRule(self, rule):
+        """
   SetAccessRule(self: CryptoKeySecurity,rule: CryptoKeyAccessRule)
 
    Removes all access rules that contain the same security identifier and qualifier as the 
@@ -259,9 +287,10 @@ class CryptoKeySecurity(NativeObjectSecurity):
 
    rule: The access rule to set.
   """
-  pass
- def SetAuditRule(self,rule):
-  """
+        pass
+
+    def SetAuditRule(self, rule):
+        """
   SetAuditRule(self: CryptoKeySecurity,rule: CryptoKeyAuditRule)
 
    Removes all audit rules that contain the same security identifier and qualifier as the specified 
@@ -276,17 +305,21 @@ class CryptoKeySecurity(NativeObjectSecurity):
 
    rule: The audit rule to set.
   """
-  pass
- @staticmethod
- def __new__(self,securityDescriptor=None):
-  """
+        pass
+
+    @staticmethod
+    def __new__(self, securityDescriptor=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,securityDescriptor: CommonSecurityDescriptor)
   """
-  pass
- AccessRightType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Type of the securable object associated with this System.Security.AccessControl.CryptoKeySecurity object.
+        pass
+
+    AccessRightType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Type of the securable object associated with this System.Security.AccessControl.CryptoKeySecurity object.
 
 
 
@@ -296,15 +329,19 @@ Get: AccessRightType(self: CryptoKeySecurity) -> Type
 
 """
 
- AccessRulesModified=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that specifies whether the access rules associated with this System.Security.AccessControl.ObjectSecurity object have been modified.
+    AccessRulesModified = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that specifies whether the access rules associated with this System.Security.AccessControl.ObjectSecurity object have been modified.
 
 
 
 """
 
- AccessRuleType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Type of the object associated with the access rules of this System.Security.AccessControl.CryptoKeySecurity object. The System.Type object must be an object that can be cast as a System.Security.Principal.SecurityIdentifier object.
+    AccessRuleType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Type of the object associated with the access rules of this System.Security.AccessControl.CryptoKeySecurity object. The System.Type object must be an object that can be cast as a System.Security.Principal.SecurityIdentifier object.
 
 
 
@@ -314,15 +351,19 @@ Get: AccessRuleType(self: CryptoKeySecurity) -> Type
 
 """
 
- AuditRulesModified=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that specifies whether the audit rules associated with this System.Security.AccessControl.ObjectSecurity object have been modified.
+    AuditRulesModified = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that specifies whether the audit rules associated with this System.Security.AccessControl.ObjectSecurity object have been modified.
 
 
 
 """
 
- AuditRuleType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Type object associated with the audit rules of this System.Security.AccessControl.CryptoKeySecurity object. The System.Type object must be an object that can be cast as a System.Security.Principal.SecurityIdentifier object.
+    AuditRuleType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Type object associated with the audit rules of this System.Security.AccessControl.CryptoKeySecurity object. The System.Type object must be an object that can be cast as a System.Security.Principal.SecurityIdentifier object.
 
 
 
@@ -332,32 +373,36 @@ Get: AuditRuleType(self: CryptoKeySecurity) -> Type
 
 """
 
- GroupModified=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that specifies whether the group associated with the securable object has been modified.
+    GroupModified = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that specifies whether the group associated with the securable object has been modified.
 
 
 
 """
 
- IsContainer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a Boolean value that specifies whether this System.Security.AccessControl.ObjectSecurity object is a container object.
+    IsContainer = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a Boolean value that specifies whether this System.Security.AccessControl.ObjectSecurity object is a container object.
 
 
 
 """
 
- IsDS=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a Boolean value that specifies whether this System.Security.AccessControl.ObjectSecurity object is a directory object.
+    IsDS = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a Boolean value that specifies whether this System.Security.AccessControl.ObjectSecurity object is a directory object.
 
 
 
 """
 
- OwnerModified=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that specifies whether the owner of the securable object has been modified.
+    OwnerModified = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that specifies whether the owner of the securable object has been modified.
 
 
 
 """
-
-

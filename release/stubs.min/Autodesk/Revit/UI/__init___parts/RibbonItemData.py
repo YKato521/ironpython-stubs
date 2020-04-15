@@ -1,7 +1,8 @@
 class RibbonItemData(object):
- """ Base class used to contain information necessary to construct a RibbonItem in the Ribbon. """
- def GetContextualHelp(self):
-  """
+    """ Base class used to contain information necessary to construct a RibbonItem in the Ribbon. """
+
+    def GetContextualHelp(self):
+        """
   GetContextualHelp(self: RibbonItemData) -> ContextualHelp
 
   
@@ -10,9 +11,10 @@ class RibbonItemData(object):
 
    Returns: The contextual help assigned to the item,or ll if there is no binding assigned.
   """
-  pass
- def SetContextualHelp(self,contextualHelp):
-  """
+        pass
+
+    def SetContextualHelp(self, contextualHelp):
+        """
   SetContextualHelp(self: RibbonItemData,contextualHelp: ContextualHelp)
 
    Sets the contextual help bound with this button data.
@@ -21,13 +23,17 @@ class RibbonItemData(object):
 
    contextualHelp: The contextual help.
   """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """ __new__(cls: type,name: str) """
-  pass
- LongDescription=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Long description of the command tooltip
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """ __new__(cls: type,name: str) """
+        pass
+
+    LongDescription = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Long description of the command tooltip
 
 
 
@@ -39,8 +45,8 @@ Set: LongDescription(self: RibbonItemData)=value
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The name of the item.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The name of the item.
 
 
 
@@ -52,8 +58,8 @@ Set: Name(self: RibbonItemData)=value
 
 """
 
- ToolTip=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The description that appears as a ToolTip for the item.
+    ToolTip = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The description that appears as a ToolTip for the item.
 
 
 
@@ -65,8 +71,10 @@ Set: ToolTip(self: RibbonItemData)=value
 
 """
 
- ToolTipImage=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The image to show as a part of the button extended tooltip
+    ToolTipImage = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The image to show as a part of the button extended tooltip
 
 
 
@@ -77,5 +85,3 @@ Get: ToolTipImage(self: RibbonItemData) -> ImageSource
 Set: ToolTipImage(self: RibbonItemData)=value
 
 """
-
-

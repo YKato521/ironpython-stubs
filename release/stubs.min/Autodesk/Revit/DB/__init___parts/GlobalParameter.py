@@ -1,7 +1,8 @@
-class GlobalParameter(ParameterElement,IDisposable):
- """ This class represents a GlobalParameter element in Revit. """
- def CanChangeReporting(self):
-  """
+class GlobalParameter(ParameterElement, IDisposable):
+    """ This class represents a GlobalParameter element in Revit. """
+
+    def CanChangeReporting(self):
+        """
   CanChangeReporting(self: GlobalParameter) -> bool
 
   
@@ -14,9 +15,10 @@ class GlobalParameter(ParameterElement,IDisposable):
 
    Returns: Returns True if the change is allowed; False otherwise.
   """
-  pass
- def CanLabelDimension(self,dimensionId):
-  """
+        pass
+
+    def CanLabelDimension(self, dimensionId):
+        """
   CanLabelDimension(self: GlobalParameter,dimensionId: ElementId) -> bool
 
   
@@ -31,10 +33,11 @@ class GlobalParameter(ParameterElement,IDisposable):
 
     oterwise.
   """
-  pass
- @staticmethod
- def Create(document,name,datatype):
-  """
+        pass
+
+    @staticmethod
+    def Create(document, name, datatype):
+        """
   Create(document: Document,name: str,datatype: ParameterType) -> GlobalParameter
 
   
@@ -51,12 +54,14 @@ class GlobalParameter(ParameterElement,IDisposable):
 
    Returns: An instance of the new global parameter
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def GetAffectedElements(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def GetAffectedElements(self):
+        """
   GetAffectedElements(self: GlobalParameter) -> ISet[ElementId]
 
   
@@ -65,9 +70,10 @@ class GlobalParameter(ParameterElement,IDisposable):
 
    Returns: Collection of Element Ids.
   """
-  pass
- def GetAffectedGlobalParameters(self):
-  """
+        pass
+
+    def GetAffectedGlobalParameters(self):
+        """
   GetAffectedGlobalParameters(self: GlobalParameter) -> ISet[ElementId]
 
   
@@ -80,12 +86,14 @@ class GlobalParameter(ParameterElement,IDisposable):
 
    Returns: Collection of Element Ids.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetFormula(self):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetFormula(self):
+        """
   GetFormula(self: GlobalParameter) -> str
 
   
@@ -94,9 +102,10 @@ class GlobalParameter(ParameterElement,IDisposable):
 
    Returns: The string representing the expression assigned to the parameter.
   """
-  pass
- def GetLabeledDimensions(self):
-  """
+        pass
+
+    def GetLabeledDimensions(self):
+        """
   GetLabeledDimensions(self: GlobalParameter) -> ISet[ElementId]
 
   
@@ -109,9 +118,10 @@ class GlobalParameter(ParameterElement,IDisposable):
 
    Returns: Collection of Element Ids.
   """
-  pass
- def GetLabelName(self):
-  """
+        pass
+
+    def GetLabelName(self):
+        """
   GetLabelName(self: GlobalParameter) -> str
 
   
@@ -124,9 +134,10 @@ class GlobalParameter(ParameterElement,IDisposable):
 
    Returns: The name of the parameter's label.
   """
-  pass
- def GetValue(self):
-  """
+        pass
+
+    def GetValue(self):
+        """
   GetValue(self: GlobalParameter) -> ParameterValue
 
   
@@ -135,9 +146,10 @@ class GlobalParameter(ParameterElement,IDisposable):
 
    Returns: An instance of one of the classes derived from the ParameterValue base class.
   """
-  pass
- def HasValidTypeForReporting(self):
-  """
+        pass
+
+    def HasValidTypeForReporting(self):
+        """
   HasValidTypeForReporting(self: GlobalParameter) -> bool
 
   
@@ -148,10 +160,11 @@ class GlobalParameter(ParameterElement,IDisposable):
 
     otherwise.
   """
-  pass
- @staticmethod
- def IsValidDataType(datatype):
-  """
+        pass
+
+    @staticmethod
+    def IsValidDataType(datatype):
+        """
   IsValidDataType(datatype: ParameterType) -> bool
 
   
@@ -164,18 +177,20 @@ class GlobalParameter(ParameterElement,IDisposable):
 
    Returns: True if the data type is suitable for a global parameter; False otherwise.
   """
-  pass
- def IsValidFormula(self,expression):
-  """
+        pass
+
+    def IsValidFormula(self, expression):
+        """
   IsValidFormula(self: GlobalParameter,expression: str) -> bool
 
   
 
    Tests that the given expression is a valid as formula for this parameter.
   """
-  pass
- def LabelDimension(self,dimensionId):
-  """
+        pass
+
+    def LabelDimension(self, dimensionId):
+        """
   LabelDimension(self: GlobalParameter,dimensionId: ElementId)
 
    Labels a dimension with this global parameter.
@@ -184,12 +199,14 @@ class GlobalParameter(ParameterElement,IDisposable):
 
    dimensionId: Id of a dimension element.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def SetDrivingDimension(self,dimensionId):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def SetDrivingDimension(self, dimensionId):
+        """
   SetDrivingDimension(self: GlobalParameter,dimensionId: ElementId)
 
    Set a dimension to drive the value of this parameter.
@@ -198,12 +215,14 @@ class GlobalParameter(ParameterElement,IDisposable):
 
    dimensionId: Id of a dimension element.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetFormula(self,expression):
-  """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetFormula(self, expression):
+        """
   SetFormula(self: GlobalParameter,expression: str)
 
    Sets a formula expression for this parameter.
@@ -212,9 +231,10 @@ class GlobalParameter(ParameterElement,IDisposable):
 
    expression: Valid formula string.
   """
-  pass
- def SetValue(self,value):
-  """
+        pass
+
+    def SetValue(self, value):
+        """
   SetValue(self: GlobalParameter,value: ParameterValue)
 
    Sets a new value of the global parameter.
@@ -223,9 +243,10 @@ class GlobalParameter(ParameterElement,IDisposable):
 
    value: An instance of one of the value classes derived from ParameterValue.
   """
-  pass
- def UnlabelDimension(self,dimensionId):
-  """
+        pass
+
+    def UnlabelDimension(self, dimensionId):
+        """
   UnlabelDimension(self: GlobalParameter,dimensionId: ElementId)
 
    Unlabels a dimension that is currently labeled by this global parameter.
@@ -234,18 +255,24 @@ class GlobalParameter(ParameterElement,IDisposable):
 
    dimensionId: Id of a dimension element.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- IsDrivenByDimension=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether this parameter is driven by a dimension or not.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    IsDrivenByDimension = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates whether this parameter is driven by a dimension or not.
 
 
 
@@ -255,8 +282,10 @@ Get: IsDrivenByDimension(self: GlobalParameter) -> bool
 
 """
 
- IsDrivenByFormula=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether this parameter is driven by a formula or not.
+    IsDrivenByFormula = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates whether this parameter is driven by a formula or not.
 
 
 
@@ -266,8 +295,10 @@ Get: IsDrivenByFormula(self: GlobalParameter) -> bool
 
 """
 
- IsReporting=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether this is a reporting global parameter or not.
+    IsReporting = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates whether this is a reporting global parameter or not.
 
 
 
@@ -278,5 +309,3 @@ Get: IsReporting(self: GlobalParameter) -> bool
 Set: IsReporting(self: GlobalParameter)=value
 
 """
-
-

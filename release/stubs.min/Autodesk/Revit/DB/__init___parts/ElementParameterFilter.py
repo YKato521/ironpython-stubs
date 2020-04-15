@@ -1,5 +1,5 @@
-class ElementParameterFilter(ElementSlowFilter,IDisposable):
- """
+class ElementParameterFilter(ElementSlowFilter, IDisposable):
+    """
  A filter used to match elements by one or more parameter filter rules.
 
  
@@ -12,11 +12,13 @@ class ElementParameterFilter(ElementSlowFilter,IDisposable):
 
  ElementParameterFilter(filterRule: FilterRule)
  """
- def Dispose(self):
-  """ Dispose(self: ElementFilter,A_0: bool) """
-  pass
- def GetRules(self):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: ElementFilter,A_0: bool) """
+        pass
+
+    def GetRules(self):
+        """
   GetRules(self: ElementParameterFilter) -> IList[FilterRule]
 
   
@@ -25,22 +27,27 @@ class ElementParameterFilter(ElementSlowFilter,IDisposable):
 
    Returns: A copy of the set of rules.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: ElementFilter,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: ElementFilter,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,filterRules: IList[FilterRule],inverted: bool)
 
   __new__(cls: type,filterRules: IList[FilterRule])
@@ -49,4 +56,4 @@ class ElementParameterFilter(ElementSlowFilter,IDisposable):
 
   __new__(cls: type,filterRule: FilterRule)
   """
-  pass
+        pass

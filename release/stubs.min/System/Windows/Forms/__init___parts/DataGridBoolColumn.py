@@ -1,5 +1,10 @@
-class DataGridBoolColumn(DataGridColumnStyle,IComponent,IDisposable,IDataGridColumnStyleEditingNotificationService):
- """
+class DataGridBoolColumn(
+    DataGridColumnStyle,
+    IComponent,
+    IDisposable,
+    IDataGridColumnStyleEditingNotificationService,
+):
+    """
  Specifies a column in which each cell contains a check box for representing a Boolean value.
 
  
@@ -10,8 +15,9 @@ class DataGridBoolColumn(DataGridColumnStyle,IComponent,IDisposable,IDataGridCol
 
  DataGridBoolColumn(prop: PropertyDescriptor,isDefault: bool)
  """
- def Abort(self,*args):
-  """
+
+    def Abort(self, *args):
+        """
   Abort(self: DataGridBoolColumn,rowNum: int)
 
    Initiates a request to interrupt an edit procedure.
@@ -20,18 +26,20 @@ class DataGridBoolColumn(DataGridColumnStyle,IComponent,IDisposable,IDataGridCol
 
    rowNum: The number of the row in which an operation is being interrupted.
   """
-  pass
- def BeginUpdate(self,*args):
-  """
+        pass
+
+    def BeginUpdate(self, *args):
+        """
   BeginUpdate(self: DataGridColumnStyle)
 
    Suspends the painting of the column until the System.Windows.Forms.DataGridColumnStyle.EndUpdate 
 
     method is called.
   """
-  pass
- def CheckValidDataSource(self,*args):
-  """
+        pass
+
+    def CheckValidDataSource(self, *args):
+        """
   CheckValidDataSource(self: DataGridColumnStyle,value: CurrencyManager)
 
    Throws an exception if the System.Windows.Forms.DataGrid does not have a valid data source,or 
@@ -44,9 +52,10 @@ class DataGridBoolColumn(DataGridColumnStyle,IComponent,IDisposable,IDataGridCol
 
    value: A System.Windows.Forms.CurrencyManager to check.
   """
-  pass
- def ColumnStartedEditing(self,*args):
-  """
+        pass
+
+    def ColumnStartedEditing(self, *args):
+        """
   ColumnStartedEditing(self: DataGridColumnStyle,editingControl: Control)
 
    Informs the System.Windows.Forms.DataGrid that the user has begun editing the column.
@@ -55,9 +64,10 @@ class DataGridBoolColumn(DataGridColumnStyle,IComponent,IDisposable,IDataGridCol
 
    editingControl: The System.Windows.Forms.Control that hosted by the column.
   """
-  pass
- def Commit(self,*args):
-  """
+        pass
+
+    def Commit(self, *args):
+        """
   Commit(self: DataGridBoolColumn,dataSource: CurrencyManager,rowNum: int) -> bool
 
   
@@ -72,12 +82,14 @@ class DataGridBoolColumn(DataGridColumnStyle,IComponent,IDisposable,IDataGridCol
 
    Returns: true if the editing procedure committed successfully; otherwise,false.
   """
-  pass
- def ConcedeFocus(self,*args):
-  """ ConcedeFocus(self: DataGridBoolColumn) """
-  pass
- def CreateHeaderAccessibleObject(self,*args):
-  """
+        pass
+
+    def ConcedeFocus(self, *args):
+        """ ConcedeFocus(self: DataGridBoolColumn) """
+        pass
+
+    def CreateHeaderAccessibleObject(self, *args):
+        """
   CreateHeaderAccessibleObject(self: DataGridColumnStyle) -> AccessibleObject
 
   
@@ -86,9 +98,10 @@ class DataGridBoolColumn(DataGridColumnStyle,IComponent,IDisposable,IDataGridCol
 
    Returns: An System.Windows.Forms.AccessibleObject for the column.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: Component,disposing: bool)
 
    Releases the unmanaged resources used by the System.ComponentModel.Component and optionally 
@@ -101,9 +114,10 @@ class DataGridBoolColumn(DataGridColumnStyle,IComponent,IDisposable,IDataGridCol
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def Edit(self,*args):
-  """
+        pass
+
+    def Edit(self, *args):
+        """
   Edit(self: DataGridBoolColumn,source: CurrencyManager,rowNum: int,bounds: Rectangle,readOnly: bool,displayText: str,cellIsVisible: bool)
 
    Prepares the cell for editing a value.
@@ -162,25 +176,28 @@ class DataGridBoolColumn(DataGridColumnStyle,IComponent,IDisposable,IDataGridCol
 
     false.
   """
-  pass
- def EndUpdate(self,*args):
-  """
+        pass
+
+    def EndUpdate(self, *args):
+        """
   EndUpdate(self: DataGridColumnStyle)
 
    Resumes the painting of columns suspended by calling the 
 
     System.Windows.Forms.DataGridColumnStyle.BeginUpdate method.
   """
-  pass
- def EnterNullValue(self,*args):
-  """
+        pass
+
+    def EnterNullValue(self, *args):
+        """
   EnterNullValue(self: DataGridBoolColumn)
 
    Enters a System.DBNull.Value into the column.
   """
-  pass
- def GetColumnValueAtRow(self,*args):
-  """
+        pass
+
+    def GetColumnValueAtRow(self, *args):
+        """
   GetColumnValueAtRow(self: DataGridBoolColumn,lm: CurrencyManager,row: int) -> object
 
   
@@ -195,9 +212,10 @@ class DataGridBoolColumn(DataGridColumnStyle,IComponent,IDisposable,IDataGridCol
 
    Returns: The value,typed as System.Object.
   """
-  pass
- def GetMinimumHeight(self,*args):
-  """
+        pass
+
+    def GetMinimumHeight(self, *args):
+        """
   GetMinimumHeight(self: DataGridBoolColumn) -> int
 
   
@@ -206,9 +224,10 @@ class DataGridBoolColumn(DataGridColumnStyle,IComponent,IDisposable,IDataGridCol
 
    Returns: The height of the column. The default is 16.
   """
-  pass
- def GetPreferredHeight(self,*args):
-  """
+        pass
+
+    def GetPreferredHeight(self, *args):
+        """
   GetPreferredHeight(self: DataGridBoolColumn,g: Graphics,value: object) -> int
 
   
@@ -223,9 +242,10 @@ class DataGridBoolColumn(DataGridColumnStyle,IComponent,IDisposable,IDataGridCol
 
    Returns: The height used to automatically resize cells in a column.
   """
-  pass
- def GetPreferredSize(self,*args):
-  """
+        pass
+
+    def GetPreferredSize(self, *args):
+        """
   GetPreferredSize(self: DataGridBoolColumn,g: Graphics,value: object) -> Size
 
   
@@ -240,9 +260,10 @@ class DataGridBoolColumn(DataGridColumnStyle,IComponent,IDisposable,IDataGridCol
 
    Returns: A System.Drawing.Size that contains the drawing information for the cell.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -261,16 +282,18 @@ class DataGridBoolColumn(DataGridColumnStyle,IComponent,IDisposable,IDataGridCol
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def Invalidate(self,*args):
-  """
+        pass
+
+    def Invalidate(self, *args):
+        """
   Invalidate(self: DataGridColumnStyle)
 
    Redraws the column and causes a paint message to be sent to the control.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -301,9 +324,10 @@ class DataGridBoolColumn(DataGridColumnStyle,IComponent,IDisposable,IDataGridCol
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def Paint(self,*args):
-  """
+        pass
+
+    def Paint(self, *args):
+        """
   Paint(self: DataGridBoolColumn,g: Graphics,bounds: Rectangle,source: CurrencyManager,rowNum: int,backBrush: Brush,foreBrush: Brush,alignToRight: bool)
 
    Draws the System.Windows.Forms.DataGridBoolColumn with the given System.Drawing.Graphics,
@@ -374,16 +398,18 @@ class DataGridBoolColumn(DataGridColumnStyle,IComponent,IDisposable,IDataGridCol
 
    rowNum: The number of the row referred to in the underlying data.
   """
-  pass
- def ReleaseHostedControl(self,*args):
-  """
+        pass
+
+    def ReleaseHostedControl(self, *args):
+        """
   ReleaseHostedControl(self: DataGridColumnStyle)
 
    Allows the column to free resources when the control it hosts is not needed.
   """
-  pass
- def SetColumnValueAtRow(self,*args):
-  """
+        pass
+
+    def SetColumnValueAtRow(self, *args):
+        """
   SetColumnValueAtRow(self: DataGridBoolColumn,lm: CurrencyManager,row: int,value: object)
 
    Sets the value of a specified row.
@@ -396,9 +422,10 @@ class DataGridBoolColumn(DataGridColumnStyle,IComponent,IDisposable,IDataGridCol
 
    value: The value to set,typed as System.Object.
   """
-  pass
- def SetDataGrid(self,*args):
-  """
+        pass
+
+    def SetDataGrid(self, *args):
+        """
   SetDataGrid(self: DataGridColumnStyle,value: DataGrid)
 
    Sets the System.Windows.Forms.DataGrid control that this column belongs to.
@@ -407,9 +434,10 @@ class DataGridBoolColumn(DataGridColumnStyle,IComponent,IDisposable,IDataGridCol
 
    value: The System.Windows.Forms.DataGrid control that this column belongs to.
   """
-  pass
- def SetDataGridInColumn(self,*args):
-  """
+        pass
+
+    def SetDataGridInColumn(self, *args):
+        """
   SetDataGridInColumn(self: DataGridColumnStyle,value: DataGrid)
 
    Sets the System.Windows.Forms.DataGrid for the column.
@@ -418,9 +446,10 @@ class DataGridBoolColumn(DataGridColumnStyle,IComponent,IDisposable,IDataGridCol
 
    value: A System.Windows.Forms.DataGrid.
   """
-  pass
- def UpdateUI(self,*args):
-  """
+        pass
+
+    def UpdateUI(self, *args):
+        """
   UpdateUI(self: DataGridColumnStyle,source: CurrencyManager,rowNum: int,displayText: str)
 
    Updates the value of a specified row with the given text.
@@ -437,40 +466,46 @@ class DataGridBoolColumn(DataGridColumnStyle,IComponent,IDisposable,IDataGridCol
 
    displayText: The new value.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,prop=None,isDefault=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, prop=None, isDefault=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,prop: PropertyDescriptor)
 
   __new__(cls: type,prop: PropertyDescriptor,isDefault: bool)
   """
-  pass
- def __str__(self,*args):
-  pass
- AllowNull=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether null values are allowed.
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AllowNull = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether null values are allowed.
 
 
 
@@ -482,29 +517,35 @@ Set: AllowNull(self: DataGridBoolColumn)=value
 
 """
 
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- FalseValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the actual value used when setting the value of the column to false.
+    FalseValue = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the actual value used when setting the value of the column to false.
 
 
 
@@ -516,15 +557,17 @@ Set: FalseValue(self: DataGridBoolColumn)=value
 
 """
 
- FontHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the height of the column's font.
+    FontHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the height of the column's font.
 
 
 
 """
 
- NullValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the actual value used when setting the value of the column to System.DBNull.Value.
+    NullValue = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the actual value used when setting the value of the column to System.DBNull.Value.
 
 
 
@@ -536,8 +579,8 @@ Set: NullValue(self: DataGridBoolColumn)=value
 
 """
 
- TrueValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the actual value used when setting the value of the column to true.
+    TrueValue = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the actual value used when setting the value of the column to true.
 
 
 
@@ -549,8 +592,6 @@ Set: TrueValue(self: DataGridBoolColumn)=value
 
 """
 
-
- AllowNullChanged=None
- FalseValueChanged=None
- TrueValueChanged=None
-
+    AllowNullChanged = None
+    FalseValueChanged = None
+    TrueValueChanged = None

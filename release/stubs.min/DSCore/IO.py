@@ -8,11 +8,13 @@
 # no functions
 # classes
 
+
 class CSV(object):
- """ Methods for working with CSV (comma-separated values) files. """
- @staticmethod
- def ReadFromFile(file):
-  """
+    """ Methods for working with CSV (comma-separated values) files. """
+
+    @staticmethod
+    def ReadFromFile(file):
+        """
   ReadFromFile(file: FileInfo) -> Array[Array[object]]
 
   
@@ -31,10 +33,11 @@ class CSV(object):
 
    Returns: CSV contents of the given file.
   """
-  pass
- @staticmethod
- def WriteToFile(filePath,data):
-  """
+        pass
+
+    @staticmethod
+    def WriteToFile(filePath, data):
+        """
   WriteToFile(filePath: str,data: Array[Array[object]])
 
    Write a list of lists into a file using a comma-separated values 
@@ -53,18 +56,20 @@ class CSV(object):
 
    Returns: Contents of the text file.
   """
-  pass
- __all__=[
-  'ReadFromFile',
-  'WriteToFile',
- ]
+        pass
+
+    __all__ = [
+        "ReadFromFile",
+        "WriteToFile",
+    ]
 
 
 class Directory(object):
- """ Methods for working with Directories. """
- @staticmethod
- def Contents(directory,searchString):
-  """
+    """ Methods for working with Directories. """
+
+    @staticmethod
+    def Contents(directory, searchString):
+        """
   Contents(directory: DirectoryInfo,searchString: str) -> Dictionary[str,IList]
 
   
@@ -77,10 +82,11 @@ class Directory(object):
 
    searchString: Search string used to filter results. Defaults to "*.*" (displays all contents).
   """
-  pass
- @staticmethod
- def Copy(directory,destinationPath,overwriteFiles):
-  """
+        pass
+
+    @staticmethod
+    def Copy(directory, destinationPath, overwriteFiles):
+        """
   Copy(directory: DirectoryInfo,destinationPath: str,overwriteFiles: bool)
 
    Copies a directory to a destination location.
@@ -91,10 +97,11 @@ class Directory(object):
 
    destinationPath: Destination of the copy operation on disk.
   """
-  pass
- @staticmethod
- def Delete(path,recursive):
-  """
+        pass
+
+    @staticmethod
+    def Delete(path, recursive):
+        """
   Delete(path: str,recursive: bool)
 
    Deletes a directory.
@@ -105,10 +112,11 @@ class Directory(object):
 
    recursive: Whether or not to delete all contents of the directory,defaults to false.
   """
-  pass
- @staticmethod
- def Exists(path):
-  """
+        pass
+
+    @staticmethod
+    def Exists(path):
+        """
   Exists(path: str) -> bool
 
   
@@ -119,88 +127,101 @@ class Directory(object):
 
    path: Path to a directory on disk.
   """
-  pass
- @staticmethod
- def FromPath(path):
-  """ FromPath(path: str) -> DirectoryInfo """
-  pass
- @staticmethod
- def Move(path,newPath,overwriteFiles):
-  """
+        pass
+
+    @staticmethod
+    def FromPath(path):
+        """ FromPath(path: str) -> DirectoryInfo """
+        pass
+
+    @staticmethod
+    def Move(path, newPath, overwriteFiles):
+        """
   Move(path: str,newPath: str,overwriteFiles: bool)
 
    Moves a directory to a new location.
   """
-  pass
- __all__=[
-  'Contents',
-  'Copy',
-  'Delete',
-  'Exists',
-  'FromPath',
-  'Move',
- ]
+        pass
+
+    __all__ = [
+        "Contents",
+        "Copy",
+        "Delete",
+        "Exists",
+        "FromPath",
+        "Move",
+    ]
 
 
 class File(object):
- """ Methods for working with Files. """
- @staticmethod
- def AbsolutePath(path,hintPath):
-  """ AbsolutePath(path: str,hintPath: str) -> str """
-  pass
- @staticmethod
- def Copy(file,destinationPath,overwrite):
-  """
+    """ Methods for working with Files. """
+
+    @staticmethod
+    def AbsolutePath(path, hintPath):
+        """ AbsolutePath(path: str,hintPath: str) -> str """
+        pass
+
+    @staticmethod
+    def Copy(file, destinationPath, overwrite):
+        """
   Copy(file: FileInfo,destinationPath: str,overwrite: bool)
 
    Copies a file.
   """
-  pass
- @staticmethod
- def Delete(path):
-  """
+        pass
+
+    @staticmethod
+    def Delete(path):
+        """
   Delete(path: str)
 
    Deletes the specified file.
   """
-  pass
- @staticmethod
- def Exists(path):
-  """
+        pass
+
+    @staticmethod
+    def Exists(path):
+        """
   Exists(path: str) -> bool
 
   
 
    Determines if a file exists at the given path.
   """
-  pass
- @staticmethod
- def ExportToCSV(filePath,data):
-  """ ExportToCSV(filePath: str,data: Array[Array[object]]) """
-  pass
- @staticmethod
- def FromPath(path):
-  """ FromPath(path: str) -> FileInfo """
-  pass
- @staticmethod
- def LoadImageFromPath(path):
-  """ LoadImageFromPath(path: str) -> Bitmap """
-  pass
- @staticmethod
- def Move(path,newPath,overwrite):
-  """
+        pass
+
+    @staticmethod
+    def ExportToCSV(filePath, data):
+        """ ExportToCSV(filePath: str,data: Array[Array[object]]) """
+        pass
+
+    @staticmethod
+    def FromPath(path):
+        """ FromPath(path: str) -> FileInfo """
+        pass
+
+    @staticmethod
+    def LoadImageFromPath(path):
+        """ LoadImageFromPath(path: str) -> Bitmap """
+        pass
+
+    @staticmethod
+    def Move(path, newPath, overwrite):
+        """
   Move(path: str,newPath: str,overwrite: bool)
 
    Moves a specified file to a new location
   """
-  pass
- @staticmethod
- def ReadImage(path,xSamples,ySamples):
-  """ ReadImage(path: str,xSamples: int,ySamples: int) -> Array[Color] """
-  pass
- @staticmethod
- def ReadText(*__args):
-  """
+        pass
+
+    @staticmethod
+    def ReadImage(path, xSamples, ySamples):
+        """ ReadImage(path: str,xSamples: int,ySamples: int) -> Array[Color] """
+        pass
+
+    @staticmethod
+    def ReadText(*__args):
+        """
   ReadText(path: str) -> str
 
   ReadText(file: FileInfo) -> str
@@ -211,14 +232,16 @@ class File(object):
 
    Returns: Contents of the text file.
   """
-  pass
- @staticmethod
- def WriteImage(filePath,fileName,image):
-  """ WriteImage(filePath: str,fileName: str,image: Bitmap) -> bool """
-  pass
- @staticmethod
- def WriteText(filePath,text):
-  """
+        pass
+
+    @staticmethod
+    def WriteImage(filePath, fileName, image):
+        """ WriteImage(filePath: str,fileName: str,image: Bitmap) -> bool """
+        pass
+
+    @staticmethod
+    def WriteText(filePath, text):
+        """
   WriteText(filePath: str,text: str)
 
    Write the text content to a file specified by the path
@@ -229,28 +252,30 @@ class File(object):
 
    text: Text content
   """
-  pass
- __all__=[
-  'AbsolutePath',
-  'Copy',
-  'Delete',
-  'Exists',
-  'ExportToCSV',
-  'FromPath',
-  'LoadImageFromPath',
-  'Move',
-  'ReadImage',
-  'ReadText',
-  'WriteImage',
-  'WriteText',
- ]
+        pass
+
+    __all__ = [
+        "AbsolutePath",
+        "Copy",
+        "Delete",
+        "Exists",
+        "ExportToCSV",
+        "FromPath",
+        "LoadImageFromPath",
+        "Move",
+        "ReadImage",
+        "ReadText",
+        "WriteImage",
+        "WriteText",
+    ]
 
 
 class FilePath(object):
- """ Methods for operating on strings representing file paths. """
- @staticmethod
- def ChangeExtension(path,newExtension):
-  """
+    """ Methods for operating on strings representing file paths. """
+
+    @staticmethod
+    def ChangeExtension(path, newExtension):
+        """
   ChangeExtension(path: str,newExtension: str) -> str
 
   
@@ -263,10 +288,11 @@ class FilePath(object):
 
    newExtension: New extension.
   """
-  pass
- @staticmethod
- def Combine(paths):
-  """
+        pass
+
+    @staticmethod
+    def Combine(paths):
+        """
   Combine(*paths: Array[str]) -> str
 
   
@@ -277,10 +303,11 @@ class FilePath(object):
 
    paths: String to combine into a path.
   """
-  pass
- @staticmethod
- def DirectoryName(path):
-  """
+        pass
+
+    @staticmethod
+    def DirectoryName(path):
+        """
   DirectoryName(path: str) -> str
 
   
@@ -291,10 +318,11 @@ class FilePath(object):
 
    path: Path to get directory information of.
   """
-  pass
- @staticmethod
- def Extension(path):
-  """
+        pass
+
+    @staticmethod
+    def Extension(path):
+        """
   Extension(path: str) -> str
 
   
@@ -305,10 +333,11 @@ class FilePath(object):
 
    path: Path to get extension of.
   """
-  pass
- @staticmethod
- def FileName(path,withExtension):
-  """
+        pass
+
+    @staticmethod
+    def FileName(path, withExtension):
+        """
   FileName(path: str,withExtension: bool) -> str
 
   
@@ -321,10 +350,11 @@ class FilePath(object):
 
    withExtension: Determines whether or not the extension is included in the result,defaults to true.
   """
-  pass
- @staticmethod
- def HasExtension(path):
-  """
+        pass
+
+    @staticmethod
+    def HasExtension(path):
+        """
   HasExtension(path: str) -> bool
 
   
@@ -335,22 +365,24 @@ class FilePath(object):
 
    path: Path to check for an extension.
   """
-  pass
- __all__=[
-  'ChangeExtension',
-  'Combine',
-  'DirectoryName',
-  'Extension',
-  'FileName',
-  'HasExtension',
- ]
+        pass
+
+    __all__ = [
+        "ChangeExtension",
+        "Combine",
+        "DirectoryName",
+        "Extension",
+        "FileName",
+        "HasExtension",
+    ]
 
 
 class Image(object):
- """ Methods for operating on Image Bitmaps. """
- @staticmethod
- def Dimensions(image):
-  """
+    """ Methods for operating on Image Bitmaps. """
+
+    @staticmethod
+    def Dimensions(image):
+        """
   Dimensions(image: Bitmap) -> Dictionary[str,int]
 
   
@@ -361,10 +393,11 @@ class Image(object):
 
    image: Image to get dimensions of.
   """
-  pass
- @staticmethod
- def FromPixels(colors,width=None,height=None):
-  """
+        pass
+
+    @staticmethod
+    def FromPixels(colors, width=None, height=None):
+        """
   FromPixels(colors: Array[Color],width: int,height: int) -> Bitmap
 
   
@@ -393,14 +426,16 @@ class Image(object):
 
    Returns: Image
   """
-  pass
- @staticmethod
- def Pixels(image,xSamples,ySamples):
-  """ Pixels(image: Bitmap,xSamples: Nullable[int],ySamples: Nullable[int]) -> Array[Array[Color]] """
-  pass
- @staticmethod
- def ReadFromFile(file):
-  """
+        pass
+
+    @staticmethod
+    def Pixels(image, xSamples, ySamples):
+        """ Pixels(image: Bitmap,xSamples: Nullable[int],ySamples: Nullable[int]) -> Array[Array[Color]] """
+        pass
+
+    @staticmethod
+    def ReadFromFile(file):
+        """
   ReadFromFile(file: FileInfo) -> Bitmap
 
   
@@ -413,10 +448,11 @@ class Image(object):
 
    Returns: Image
   """
-  pass
- @staticmethod
- def WriteToFile(path,image):
-  """
+        pass
+
+    @staticmethod
+    def WriteToFile(path, image):
+        """
   WriteToFile(path: str,image: Bitmap)
 
    Write the image to a path,given the specified file name.
@@ -427,13 +463,12 @@ class Image(object):
 
    Returns: It is successful or not.
   """
-  pass
- __all__=[
-  'Dimensions',
-  'FromPixels',
-  'Pixels',
-  'ReadFromFile',
-  'WriteToFile',
- ]
+        pass
 
-
+    __all__ = [
+        "Dimensions",
+        "FromPixels",
+        "Pixels",
+        "ReadFromFile",
+        "WriteToFile",
+    ]

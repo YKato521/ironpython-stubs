@@ -1,13 +1,14 @@
 class ArrayWithOffset(object):
- """
+    """
  Encapsulates an array and an offset within the specified array.
 
  
 
  ArrayWithOffset(array: object,offset: int)
  """
- def Equals(self,obj):
-  """
+
+    def Equals(self, obj):
+        """
   Equals(self: ArrayWithOffset,obj: ArrayWithOffset) -> bool
 
   
@@ -44,9 +45,10 @@ class ArrayWithOffset(object):
 
    Returns: true if the object matches this System.Runtime.InteropServices.ArrayWithOffset; otherwise,false.
   """
-  pass
- def GetArray(self):
-  """
+        pass
+
+    def GetArray(self):
+        """
   GetArray(self: ArrayWithOffset) -> object
 
   
@@ -55,9 +57,10 @@ class ArrayWithOffset(object):
 
    Returns: The managed array this instance references.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: ArrayWithOffset) -> int
 
   
@@ -66,9 +69,10 @@ class ArrayWithOffset(object):
 
    Returns: The hash code for this instance.
   """
-  pass
- def GetOffset(self):
-  """
+        pass
+
+    def GetOffset(self):
+        """
   GetOffset(self: ArrayWithOffset) -> int
 
   
@@ -81,17 +85,20 @@ class ArrayWithOffset(object):
 
    Returns: The offset for this instance.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- @staticmethod
- def __new__(self,array,offset):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    @staticmethod
+    def __new__(self, array, offset):
+        """
   __new__(cls: type,array: object,offset: int)
 
   __new__[ArrayWithOffset]() -> ArrayWithOffset
   """
-  pass
- def __ne__(self,*args):
-  pass
+        pass
+
+    def __ne__(self, *args):
+        pass

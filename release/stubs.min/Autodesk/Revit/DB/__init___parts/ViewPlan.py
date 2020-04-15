@@ -1,7 +1,8 @@
-class ViewPlan(View,IDisposable):
- """ Class for plan views """
- def CheckPlanViewRangeValidity(self,planViewRange):
-  """
+class ViewPlan(View, IDisposable):
+    """ Class for plan views """
+
+    def CheckPlanViewRangeValidity(self, planViewRange):
+        """
   CheckPlanViewRangeValidity(self: ViewPlan,planViewRange: PlanViewRange) -> IList[PlanViewRangeError]
 
   
@@ -14,10 +15,11 @@ class ViewPlan(View,IDisposable):
 
    Returns: List of enums describing any errors in the plan view range.
   """
-  pass
- @staticmethod
- def Create(document,viewFamilyTypeId,levelId):
-  """
+        pass
+
+    @staticmethod
+    def Create(document, viewFamilyTypeId, levelId):
+        """
   Create(document: Document,viewFamilyTypeId: ElementId,levelId: ElementId) -> ViewPlan
 
   
@@ -38,10 +40,11 @@ class ViewPlan(View,IDisposable):
 
    Returns: The new ViewPlan.
   """
-  pass
- @staticmethod
- def CreateAreaPlan(document,areaSchemeId,levelId):
-  """
+        pass
+
+    @staticmethod
+    def CreateAreaPlan(document, areaSchemeId, levelId):
+        """
   CreateAreaPlan(document: Document,areaSchemeId: ElementId,levelId: ElementId) -> ViewPlan
 
   
@@ -58,15 +61,18 @@ class ViewPlan(View,IDisposable):
 
    Returns: The new area plan ViewPlan.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: View,view: View) -> BoundingBoxXYZ """
-  pass
- def GetUnderlayBaseLevel(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: View,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetUnderlayBaseLevel(self):
+        """
   GetUnderlayBaseLevel(self: ViewPlan) -> ElementId
 
   
@@ -81,9 +87,10 @@ class ViewPlan(View,IDisposable):
 
     elements will be displayed as underlay.
   """
-  pass
- def GetUnderlayOrientation(self):
-  """
+        pass
+
+    def GetUnderlayOrientation(self):
+        """
   GetUnderlayOrientation(self: ViewPlan) -> UnderlayOrientation
 
   
@@ -92,9 +99,10 @@ class ViewPlan(View,IDisposable):
 
    Returns: The underlay orientation for this view.
   """
-  pass
- def GetUnderlayTopLevel(self):
-  """
+        pass
+
+    def GetUnderlayTopLevel(self):
+        """
   GetUnderlayTopLevel(self: ViewPlan) -> ElementId
 
   
@@ -109,9 +117,10 @@ class ViewPlan(View,IDisposable):
 
     everything above the underlay base level.
   """
-  pass
- def GetViewRange(self):
-  """
+        pass
+
+    def GetViewRange(self):
+        """
   GetViewRange(self: ViewPlan) -> PlanViewRange
 
   
@@ -120,15 +129,18 @@ class ViewPlan(View,IDisposable):
 
    Returns: The view range.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetUnderlayBaseLevel(self,levelId):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetUnderlayBaseLevel(self, levelId):
+        """
   SetUnderlayBaseLevel(self: ViewPlan,levelId: ElementId)
 
    Sets the level whose elevation will determine the bottom of the underlay range.
@@ -145,9 +157,10 @@ class ViewPlan(View,IDisposable):
 
    levelId: The element id of a level in the project or else InvalidElementId.
   """
-  pass
- def SetUnderlayOrientation(self,uo):
-  """
+        pass
+
+    def SetUnderlayOrientation(self, uo):
+        """
   SetUnderlayOrientation(self: ViewPlan,uo: UnderlayOrientation)
 
    Sets the underlay orientation for this view.
@@ -156,9 +169,10 @@ class ViewPlan(View,IDisposable):
 
    uo: The underlay orientation for this view.
   """
-  pass
- def SetUnderlayRange(self,baseLevelId,topLevelId):
-  """
+        pass
+
+    def SetUnderlayRange(self, baseLevelId, topLevelId):
+        """
   SetUnderlayRange(self: ViewPlan,baseLevelId: ElementId,topLevelId: ElementId)
 
    Sets the underlay base and underlay top to the specified levels.
@@ -181,9 +195,10 @@ class ViewPlan(View,IDisposable):
 
      then the underlay range is unbounded.
   """
-  pass
- def SetViewRange(self,planViewRange):
-  """
+        pass
+
+    def SetViewRange(self, planViewRange):
+        """
   SetViewRange(self: ViewPlan,planViewRange: PlanViewRange)
 
    Sets the view range.
@@ -192,18 +207,24 @@ class ViewPlan(View,IDisposable):
 
    planViewRange: The view range.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- AreaScheme=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The area scheme.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    AreaScheme = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The area scheme.
 
 
 
@@ -212,5 +233,3 @@ Get: AreaScheme(self: ViewPlan) -> AreaScheme
 
 
 """
-
-

@@ -1,7 +1,8 @@
 class TypeListConverter(TypeConverter):
- """ Provides a type converter that can be used to populate a list box with available types. """
- def CanConvertFrom(self,*__args):
-  """
+    """ Provides a type converter that can be used to populate a list box with available types. """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: TypeListConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -20,9 +21,10 @@ class TypeListConverter(TypeConverter):
 
    Returns: true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: TypeListConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -41,9 +43,10 @@ class TypeListConverter(TypeConverter):
 
    Returns: true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: TypeListConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -60,9 +63,10 @@ class TypeListConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: TypeListConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -81,9 +85,10 @@ class TypeListConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def GetStandardValues(self,context=None):
-  """
+        pass
+
+    def GetStandardValues(self, context=None):
+        """
   GetStandardValues(self: TypeListConverter,context: ITypeDescriptorContext) -> StandardValuesCollection
 
   
@@ -98,9 +103,10 @@ class TypeListConverter(TypeConverter):
 
     valid values,or null if the data type does not support a standard set of values.
   """
-  pass
- def GetStandardValuesExclusive(self,context=None):
-  """
+        pass
+
+    def GetStandardValuesExclusive(self, context=None):
+        """
   GetStandardValuesExclusive(self: TypeListConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -123,9 +129,10 @@ class TypeListConverter(TypeConverter):
 
     ntext) is an exhaustive list of possible values. This method never returns false.
   """
-  pass
- def GetStandardValuesSupported(self,context=None):
-  """
+        pass
+
+    def GetStandardValuesSupported(self, context=None):
+        """
   GetStandardValuesSupported(self: TypeListConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -148,8 +155,9 @@ class TypeListConverter(TypeConverter):
 
     returns false.
   """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """ __new__(cls: type,types: Array[Type]) """
-  pass
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """ __new__(cls: type,types: Array[Type]) """
+        pass

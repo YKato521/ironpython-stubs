@@ -1,13 +1,14 @@
 class ListViewItemConverter(ExpandableObjectConverter):
- """
+    """
  Provides a type converter to convert System.Windows.Forms.ListViewItem objects to and from various other representations.
 
  
 
  ListViewItemConverter()
  """
- def CanConvertTo(self,*__args):
-  """
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: ListViewItemConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -26,9 +27,10 @@ class ListViewItemConverter(ExpandableObjectConverter):
 
    Returns: true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: ListViewItemConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -53,4 +55,4 @@ class ListViewItemConverter(ExpandableObjectConverter):
 
    Returns: The converted object.
   """
-  pass
+        pass

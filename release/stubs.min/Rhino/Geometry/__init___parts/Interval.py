@@ -1,5 +1,12 @@
-class Interval(object,ISerializable,IEquatable[Interval],IComparable[Interval],IComparable,IEpsilonComparable[Interval]):
- """
+class Interval(
+    object,
+    ISerializable,
+    IEquatable[Interval],
+    IComparable[Interval],
+    IComparable,
+    IEpsilonComparable[Interval],
+):
+    """
  Represents an interval in one-dimensional space,
 
     that is defined as two extrema or bounds.
@@ -10,8 +17,9 @@ class Interval(object,ISerializable,IEquatable[Interval],IComparable[Interval],I
 
  Interval(other: Interval)
  """
- def CompareTo(self,other):
-  """
+
+    def CompareTo(self, other):
+        """
   CompareTo(self: Interval,other: Interval) -> int
 
   
@@ -32,18 +40,20 @@ class Interval(object,ISerializable,IEquatable[Interval],IComparable[Interval],I
 
     == other[0] and this[1] < other[1]+1: if this[0] == other[0] and this[1] > other[1].
   """
-  pass
- def EpsilonEquals(self,other,epsilon):
-  """
+        pass
+
+    def EpsilonEquals(self, other, epsilon):
+        """
   EpsilonEquals(self: Interval,other: Interval,epsilon: float) -> bool
 
   
 
    Check that all values in other are within epsilon of the values in this
   """
-  pass
- def Equals(self,*__args):
-  """
+        pass
+
+    def Equals(self, *__args):
+        """
   Equals(self: Interval,other: Interval) -> bool
 
   
@@ -80,10 +90,11 @@ class Interval(object,ISerializable,IEquatable[Interval],IComparable[Interval],I
 
    Returns: true if obj is an Rhino.Geometry.Interval and has the same bounds; false otherwise.
   """
-  pass
- @staticmethod
- def FromIntersection(a,b):
-  """
+        pass
+
+    @staticmethod
+    def FromIntersection(a, b):
+        """
   FromIntersection(a: Interval,b: Interval) -> Interval
 
   
@@ -112,10 +123,11 @@ class Interval(object,ISerializable,IEquatable[Interval],IComparable[Interval],I
 
      empty set interval or disjoint intervals is the empty set interval.
   """
-  pass
- @staticmethod
- def FromUnion(a,b):
-  """
+        pass
+
+    @staticmethod
+    def FromUnion(a, b):
+        """
   FromUnion(a: Interval,b: Interval) -> Interval
 
   
@@ -138,9 +150,10 @@ class Interval(object,ISerializable,IEquatable[Interval],IComparable[Interval],I
 
     max(a.Max(),b.Max())]
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Interval) -> int
 
   
@@ -149,9 +162,10 @@ class Interval(object,ISerializable,IEquatable[Interval],IComparable[Interval],I
 
    Returns: A hash value that might be equal for two different Rhino.Geometry.Interval values.
   """
-  pass
- def Grow(self,value):
-  """
+        pass
+
+    def Grow(self, value):
+        """
   Grow(self: Interval,value: float)
 
    Grows the Rhino.Geometry.Interval to include the given number.
@@ -160,9 +174,10 @@ class Interval(object,ISerializable,IEquatable[Interval],IComparable[Interval],I
 
    value: Number to include in this interval.
   """
-  pass
- def IncludesInterval(self,interval,strict=None):
-  """
+        pass
+
+    def IncludesInterval(self, interval, strict=None):
+        """
   IncludesInterval(self: Interval,interval: Interval,strict: bool) -> bool
 
   
@@ -191,9 +206,10 @@ class Interval(object,ISerializable,IEquatable[Interval],IComparable[Interval],I
 
     Interval; otherwise false.
   """
-  pass
- def IncludesParameter(self,t,strict=None):
-  """
+        pass
+
+    def IncludesParameter(self, t, strict=None):
+        """
   IncludesParameter(self: Interval,t: float,strict: bool) -> bool
 
   
@@ -220,16 +236,18 @@ class Interval(object,ISerializable,IEquatable[Interval],IComparable[Interval],I
 
    Returns: true if t is contained within or is coincident with the limits of this Interval.
   """
-  pass
- def MakeIncreasing(self):
-  """
+        pass
+
+    def MakeIncreasing(self):
+        """
   MakeIncreasing(self: Interval)
 
    Ensures this Rhino.Geometry.Interval is either singleton or increasing.
   """
-  pass
- def NormalizedIntervalAt(self,intervalParameter):
-  """
+        pass
+
+    def NormalizedIntervalAt(self, intervalParameter):
+        """
   NormalizedIntervalAt(self: Interval,intervalParameter: Interval) -> Interval
 
   
@@ -238,9 +256,10 @@ class Interval(object,ISerializable,IEquatable[Interval],IComparable[Interval],I
 
    Returns: Normalized parameter x so that min*(1.0-x) + max*x=intervalParameter.
   """
-  pass
- def NormalizedParameterAt(self,intervalParameter):
-  """
+        pass
+
+    def NormalizedParameterAt(self, intervalParameter):
+        """
   NormalizedParameterAt(self: Interval,intervalParameter: float) -> float
 
   
@@ -249,9 +268,10 @@ class Interval(object,ISerializable,IEquatable[Interval],IComparable[Interval],I
 
    Returns: Normalized parameter x so that min*(1.0-x) + max*x=intervalParameter.
   """
-  pass
- def ParameterAt(self,normalizedParameter):
-  """
+        pass
+
+    def ParameterAt(self, normalizedParameter):
+        """
   ParameterAt(self: Interval,normalizedParameter: float) -> float
 
   
@@ -260,9 +280,10 @@ class Interval(object,ISerializable,IEquatable[Interval],IComparable[Interval],I
 
    Returns: Interval parameter min*(1.0-normalizedParameter) + max*normalizedParameter.
   """
-  pass
- def ParameterIntervalAt(self,normalizedInterval):
-  """
+        pass
+
+    def ParameterIntervalAt(self, normalizedInterval):
+        """
   ParameterIntervalAt(self: Interval,normalizedInterval: Interval) -> Interval
 
   
@@ -271,23 +292,26 @@ class Interval(object,ISerializable,IEquatable[Interval],IComparable[Interval],I
 
    Returns: Interval parameter min*(1.0-normalizedParameter) + max*normalized_paramete.
   """
-  pass
- def Reverse(self):
-  """
+        pass
+
+    def Reverse(self):
+        """
   Reverse(self: Interval)
 
    Changes interval to [-T1,-T0].
   """
-  pass
- def Swap(self):
-  """
+        pass
+
+    def Swap(self):
+        """
   Swap(self: Interval)
 
    Exchanges T0 and T1.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: Interval) -> str
 
   
@@ -296,30 +320,39 @@ class Interval(object,ISerializable,IEquatable[Interval],IComparable[Interval],I
 
    Returns: A string with T0,T1.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__[Interval]() -> Interval
 
   
@@ -328,11 +361,13 @@ class Interval(object,ISerializable,IEquatable[Interval],IComparable[Interval],I
 
   __new__(cls: type,other: Interval)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __radd__(self,*args):
-  """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __radd__(self, *args):
+        """
   __radd__(number: float,interval: Interval) -> Interval
 
   
@@ -347,14 +382,17 @@ class Interval(object,ISerializable,IEquatable[Interval],IComparable[Interval],I
 
    Returns: A new interval where T0 and T1 are summed with number.
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __rsub__(self,*args):
-  """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __rsub__(self, *args):
+        """
   __rsub__(number: float,interval: Interval) -> Interval
 
   
@@ -369,17 +407,23 @@ class Interval(object,ISerializable,IEquatable[Interval],IComparable[Interval],I
 
    Returns: A new interval with [number-T0,number-T1].
   """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- def __str__(self,*args):
-  pass
- def __sub__(self,*args):
-  """ x.__sub__(y) <==> x-y """
-  pass
- IsDecreasing=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns true if T[0] > T[1].
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    def __sub__(self, *args):
+        """ x.__sub__(y) <==> x-y """
+        pass
+
+    IsDecreasing = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns true if T[0] > T[1].
 
 
 
@@ -389,8 +433,10 @@ Get: IsDecreasing(self: Interval) -> bool
 
 """
 
- IsIncreasing=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns true if T0 < T1.
+    IsIncreasing = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns true if T0 < T1.
 
 
 
@@ -400,8 +446,10 @@ Get: IsIncreasing(self: Interval) -> bool
 
 """
 
- IsSingleton=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns true if T0 == T1 != ON.UnsetValue.
+    IsSingleton = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns true if T0 == T1 != ON.UnsetValue.
 
 
 
@@ -411,8 +459,8 @@ Get: IsSingleton(self: Interval) -> bool
 
 """
 
- IsValid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether or not this Interval is valid. 
+    IsValid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether or not this Interval is valid. 
 
    Valid intervals must contain valid numbers.
 
@@ -424,8 +472,8 @@ Get: IsValid(self: Interval) -> bool
 
 """
 
- Length=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the signed length of the numeric range. 
+    Length = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the signed length of the numeric range. 
 
    If the interval is decreasing,a negative length will be returned.
 
@@ -437,8 +485,8 @@ Get: Length(self: Interval) -> float
 
 """
 
- Max=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the larger of T0 and T1.
+    Max = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the larger of T0 and T1.
 
 
 
@@ -448,8 +496,8 @@ Get: Max(self: Interval) -> float
 
 """
 
- Mid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the average of T0 and T1.
+    Mid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the average of T0 and T1.
 
 
 
@@ -459,8 +507,8 @@ Get: Mid(self: Interval) -> float
 
 """
 
- Min=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the smaller of T0 and T1.
+    Min = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the smaller of T0 and T1.
 
 
 
@@ -470,8 +518,8 @@ Get: Min(self: Interval) -> float
 
 """
 
- T0=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the lower bound of the Interval.
+    T0 = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the lower bound of the Interval.
 
 
 
@@ -483,8 +531,8 @@ Set: T0(self: Interval)=value
 
 """
 
- T1=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the upper bound of the Interval.
+    T1 = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the upper bound of the Interval.
 
 
 
@@ -496,6 +544,4 @@ Set: T1(self: Interval)=value
 
 """
 
-
- Unset=None
-
+    Unset = None

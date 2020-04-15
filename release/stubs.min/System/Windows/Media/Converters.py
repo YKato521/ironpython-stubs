@@ -8,10 +8,12 @@
 # no functions
 # classes
 
+
 class BaseIListConverter(TypeConverter):
- """ Defines methods used to convert System.Collections.IList collection members to and from instances of System.String. """
- def CanConvertFrom(self,*__args):
-  """
+    """ Defines methods used to convert System.Collections.IList collection members to and from instances of System.String. """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: BaseIListConverter,td: ITypeDescriptorContext,t: Type) -> bool
 
   
@@ -26,9 +28,10 @@ class BaseIListConverter(TypeConverter):
 
    Returns: true if this type can be converted; otherwise,false.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: BaseIListConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -43,9 +46,10 @@ class BaseIListConverter(TypeConverter):
 
    Returns: true if this type can be converted; otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: BaseIListConverter,td: ITypeDescriptorContext,ci: CultureInfo,value: object) -> object
 
   
@@ -62,9 +66,10 @@ class BaseIListConverter(TypeConverter):
 
    Returns: An System.Object that represents the result of the conversion.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: BaseIListConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -83,10 +88,11 @@ class BaseIListConverter(TypeConverter):
 
    Returns: String representation of the System.Collections.IList collection.
   """
-  pass
+        pass
+
 
 class BoolIListConverter(BaseIListConverter):
- """
+    """
  Converts the members of an System.Collections.IList collection of Boolean values to and from instances of System.String.
 
  
@@ -94,16 +100,18 @@ class BoolIListConverter(BaseIListConverter):
  BoolIListConverter()
  """
 
+
 class BrushValueSerializer(ValueSerializer):
- """
+    """
  Converts instances of System.String to and from instances of System.Windows.Media.Brush.
 
  
 
  BrushValueSerializer()
  """
- def CanConvertFromString(self,value,context):
-  """
+
+    def CanConvertFromString(self, value, context):
+        """
   CanConvertFromString(self: BrushValueSerializer,value: str,context: IValueSerializerContext) -> bool
 
   
@@ -122,9 +130,10 @@ class BrushValueSerializer(ValueSerializer):
 
    Returns: true if the value can be converted; otherwise,false.
   """
-  pass
- def CanConvertToString(self,value,context):
-  """
+        pass
+
+    def CanConvertToString(self, value, context):
+        """
   CanConvertToString(self: BrushValueSerializer,value: object,context: IValueSerializerContext) -> bool
 
   
@@ -139,9 +148,10 @@ class BrushValueSerializer(ValueSerializer):
 
    Returns: true if value can be converted into a System.String; otherwise,false.
   """
-  pass
- def ConvertFromString(self,value,context):
-  """
+        pass
+
+    def ConvertFromString(self, value, context):
+        """
   ConvertFromString(self: BrushValueSerializer,value: str,context: IValueSerializerContext) -> object
 
   
@@ -156,9 +166,10 @@ class BrushValueSerializer(ValueSerializer):
 
    Returns: A new instance of System.Windows.Media.Brush based on the supplied value.
   """
-  pass
- def ConvertToString(self,value,context):
-  """
+        pass
+
+    def ConvertToString(self, value, context):
+        """
   ConvertToString(self: BrushValueSerializer,value: object,context: IValueSerializerContext) -> str
 
   
@@ -173,18 +184,20 @@ class BrushValueSerializer(ValueSerializer):
 
    Returns: A System.String representation of the supplied System.Windows.Media.Brush object.
   """
-  pass
+        pass
+
 
 class CacheModeValueSerializer(ValueSerializer):
- """
+    """
  Converts instances of System.String to and from instances of System.Windows.Media.CacheMode.
 
  
 
  CacheModeValueSerializer()
  """
- def CanConvertFromString(self,value,context):
-  """
+
+    def CanConvertFromString(self, value, context):
+        """
   CanConvertFromString(self: CacheModeValueSerializer,value: str,context: IValueSerializerContext) -> bool
 
   
@@ -203,9 +216,10 @@ class CacheModeValueSerializer(ValueSerializer):
 
    Returns: true if value can be converted; otherwise,false.
   """
-  pass
- def CanConvertToString(self,value,context):
-  """
+        pass
+
+    def CanConvertToString(self, value, context):
+        """
   CanConvertToString(self: CacheModeValueSerializer,value: object,context: IValueSerializerContext) -> bool
 
   
@@ -224,9 +238,10 @@ class CacheModeValueSerializer(ValueSerializer):
 
    Returns: true if value can be converted into a System.String; otherwise,false.
   """
-  pass
- def ConvertFromString(self,value,context):
-  """
+        pass
+
+    def ConvertFromString(self, value, context):
+        """
   ConvertFromString(self: CacheModeValueSerializer,value: str,context: IValueSerializerContext) -> object
 
   
@@ -241,9 +256,10 @@ class CacheModeValueSerializer(ValueSerializer):
 
    Returns: A new instance of System.Windows.Media.CacheMode based on the specified value.
   """
-  pass
- def ConvertToString(self,value,context):
-  """
+        pass
+
+    def ConvertToString(self, value, context):
+        """
   ConvertToString(self: CacheModeValueSerializer,value: object,context: IValueSerializerContext) -> str
 
   
@@ -258,10 +274,11 @@ class CacheModeValueSerializer(ValueSerializer):
 
    Returns: A System.String representation of the specified System.Windows.Media.CacheMode object.
   """
-  pass
+        pass
+
 
 class CharIListConverter(BaseIListConverter):
- """
+    """
  Converts the members of an System.Collections.IList collection of Unicode characters to and from instances of System.String.
 
  
@@ -269,16 +286,18 @@ class CharIListConverter(BaseIListConverter):
  CharIListConverter()
  """
 
+
 class DoubleCollectionValueSerializer(ValueSerializer):
- """
+    """
  Converts instances of System.String to and from instances of System.Windows.Media.DoubleCollection.
 
  
 
  DoubleCollectionValueSerializer()
  """
- def CanConvertFromString(self,value,context):
-  """
+
+    def CanConvertFromString(self, value, context):
+        """
   CanConvertFromString(self: DoubleCollectionValueSerializer,value: str,context: IValueSerializerContext) -> bool
 
   
@@ -297,9 +316,10 @@ class DoubleCollectionValueSerializer(ValueSerializer):
 
    Returns: true if the value can be converted; otherwise,false.
   """
-  pass
- def CanConvertToString(self,value,context):
-  """
+        pass
+
+    def CanConvertToString(self, value, context):
+        """
   CanConvertToString(self: DoubleCollectionValueSerializer,value: object,context: IValueSerializerContext) -> bool
 
   
@@ -318,9 +338,10 @@ class DoubleCollectionValueSerializer(ValueSerializer):
 
    Returns: true if value can be converted into a System.String; otherwise,false.
   """
-  pass
- def ConvertFromString(self,value,context):
-  """
+        pass
+
+    def ConvertFromString(self, value, context):
+        """
   ConvertFromString(self: DoubleCollectionValueSerializer,value: str,context: IValueSerializerContext) -> object
 
   
@@ -335,9 +356,10 @@ class DoubleCollectionValueSerializer(ValueSerializer):
 
    Returns: A new instance of System.Windows.Media.DoubleCollection based on the supplied value.
   """
-  pass
- def ConvertToString(self,value,context):
-  """
+        pass
+
+    def ConvertToString(self, value, context):
+        """
   ConvertToString(self: DoubleCollectionValueSerializer,value: object,context: IValueSerializerContext) -> str
 
   
@@ -352,10 +374,11 @@ class DoubleCollectionValueSerializer(ValueSerializer):
 
    Returns: A System.String representation of the supplied System.Windows.Media.DoubleCollection object.
   """
-  pass
+        pass
+
 
 class DoubleIListConverter(BaseIListConverter):
- """
+    """
  Converts members of an System.Collections.IList collection containing System.Double numbers to and from instances of System.String.
 
  
@@ -363,16 +386,18 @@ class DoubleIListConverter(BaseIListConverter):
  DoubleIListConverter()
  """
 
+
 class GeometryValueSerializer(ValueSerializer):
- """
+    """
  Converts instances of System.String to and from instances of System.Windows.Media.Geometry.
 
  
 
  GeometryValueSerializer()
  """
- def CanConvertFromString(self,value,context):
-  """
+
+    def CanConvertFromString(self, value, context):
+        """
   CanConvertFromString(self: GeometryValueSerializer,value: str,context: IValueSerializerContext) -> bool
 
   
@@ -391,9 +416,10 @@ class GeometryValueSerializer(ValueSerializer):
 
    Returns: true if the value can be converted; otherwise,false.
   """
-  pass
- def CanConvertToString(self,value,context):
-  """
+        pass
+
+    def CanConvertToString(self, value, context):
+        """
   CanConvertToString(self: GeometryValueSerializer,value: object,context: IValueSerializerContext) -> bool
 
   
@@ -408,9 +434,10 @@ class GeometryValueSerializer(ValueSerializer):
 
    Returns: true if value can be converted into a System.String; otherwise,false.
   """
-  pass
- def ConvertFromString(self,value,context):
-  """
+        pass
+
+    def ConvertFromString(self, value, context):
+        """
   ConvertFromString(self: GeometryValueSerializer,value: str,context: IValueSerializerContext) -> object
 
   
@@ -425,9 +452,10 @@ class GeometryValueSerializer(ValueSerializer):
 
    Returns: A new instance of System.Windows.Media.Geometry based on the supplied value.
   """
-  pass
- def ConvertToString(self,value,context):
-  """
+        pass
+
+    def ConvertToString(self, value, context):
+        """
   ConvertToString(self: GeometryValueSerializer,value: object,context: IValueSerializerContext) -> str
 
   
@@ -442,18 +470,20 @@ class GeometryValueSerializer(ValueSerializer):
 
    Returns: A System.String representation of the supplied System.Windows.Media.Geometry object.
   """
-  pass
+        pass
+
 
 class Int32CollectionValueSerializer(ValueSerializer):
- """
+    """
  Converts instances of System.String to and from instances of System.Windows.Media.Int32Collection.
 
  
 
  Int32CollectionValueSerializer()
  """
- def CanConvertFromString(self,value,context):
-  """
+
+    def CanConvertFromString(self, value, context):
+        """
   CanConvertFromString(self: Int32CollectionValueSerializer,value: str,context: IValueSerializerContext) -> bool
 
   
@@ -468,9 +498,10 @@ class Int32CollectionValueSerializer(ValueSerializer):
 
    Returns: A System.String representation of the supplied System.Windows.Media.Int32Collection object.
   """
-  pass
- def CanConvertToString(self,value,context):
-  """
+        pass
+
+    def CanConvertToString(self, value, context):
+        """
   CanConvertToString(self: Int32CollectionValueSerializer,value: object,context: IValueSerializerContext) -> bool
 
   
@@ -485,9 +516,10 @@ class Int32CollectionValueSerializer(ValueSerializer):
 
    Returns: A new instance of System.Windows.Media.Int32Collection based on the supplied value.
   """
-  pass
- def ConvertFromString(self,value,context):
-  """
+        pass
+
+    def ConvertFromString(self, value, context):
+        """
   ConvertFromString(self: Int32CollectionValueSerializer,value: str,context: IValueSerializerContext) -> object
 
   
@@ -506,9 +538,10 @@ class Int32CollectionValueSerializer(ValueSerializer):
 
    Returns: true if value can be converted into a System.String; otherwise,false.
   """
-  pass
- def ConvertToString(self,value,context):
-  """
+        pass
+
+    def ConvertToString(self, value, context):
+        """
   ConvertToString(self: Int32CollectionValueSerializer,value: object,context: IValueSerializerContext) -> str
 
   
@@ -527,18 +560,20 @@ class Int32CollectionValueSerializer(ValueSerializer):
 
    Returns: true if the value can be converted; otherwise,false.
   """
-  pass
+        pass
+
 
 class PathFigureCollectionValueSerializer(ValueSerializer):
- """
+    """
  Converts instances of System.String to and from instances of System.Windows.Media.PathFigureCollection.
 
  
 
  PathFigureCollectionValueSerializer()
  """
- def CanConvertFromString(self,value,context):
-  """
+
+    def CanConvertFromString(self, value, context):
+        """
   CanConvertFromString(self: PathFigureCollectionValueSerializer,value: str,context: IValueSerializerContext) -> bool
 
   
@@ -557,9 +592,10 @@ class PathFigureCollectionValueSerializer(ValueSerializer):
 
    Returns: true if the value can be converted; otherwise,false.
   """
-  pass
- def CanConvertToString(self,value,context):
-  """
+        pass
+
+    def CanConvertToString(self, value, context):
+        """
   CanConvertToString(self: PathFigureCollectionValueSerializer,value: object,context: IValueSerializerContext) -> bool
 
   
@@ -578,9 +614,10 @@ class PathFigureCollectionValueSerializer(ValueSerializer):
 
    Returns: true if value can be converted into a System.String; otherwise,false.
   """
-  pass
- def ConvertFromString(self,value,context):
-  """
+        pass
+
+    def ConvertFromString(self, value, context):
+        """
   ConvertFromString(self: PathFigureCollectionValueSerializer,value: str,context: IValueSerializerContext) -> object
 
   
@@ -595,9 +632,10 @@ class PathFigureCollectionValueSerializer(ValueSerializer):
 
    Returns: A new instance of System.Windows.Media.PathFigureCollection based on the supplied value.
   """
-  pass
- def ConvertToString(self,value,context):
-  """
+        pass
+
+    def ConvertToString(self, value, context):
+        """
   ConvertToString(self: PathFigureCollectionValueSerializer,value: object,context: IValueSerializerContext) -> str
 
   
@@ -612,18 +650,20 @@ class PathFigureCollectionValueSerializer(ValueSerializer):
 
    Returns: A System.String representation of the supplied System.Windows.Media.PathFigureCollection object.
   """
-  pass
+        pass
+
 
 class PointCollectionValueSerializer(ValueSerializer):
- """
+    """
  Converts instances of System.String to and from instances of System.Windows.Media.PointCollection.
 
  
 
  PointCollectionValueSerializer()
  """
- def CanConvertFromString(self,value,context):
-  """
+
+    def CanConvertFromString(self, value, context):
+        """
   CanConvertFromString(self: PointCollectionValueSerializer,value: str,context: IValueSerializerContext) -> bool
 
   
@@ -642,9 +682,10 @@ class PointCollectionValueSerializer(ValueSerializer):
 
    Returns: true if the value can be converted; otherwise,false.
   """
-  pass
- def CanConvertToString(self,value,context):
-  """
+        pass
+
+    def CanConvertToString(self, value, context):
+        """
   CanConvertToString(self: PointCollectionValueSerializer,value: object,context: IValueSerializerContext) -> bool
 
   
@@ -663,9 +704,10 @@ class PointCollectionValueSerializer(ValueSerializer):
 
    Returns: true if value can be converted into a System.String; otherwise,false.
   """
-  pass
- def ConvertFromString(self,value,context):
-  """
+        pass
+
+    def ConvertFromString(self, value, context):
+        """
   ConvertFromString(self: PointCollectionValueSerializer,value: str,context: IValueSerializerContext) -> object
 
   
@@ -680,9 +722,10 @@ class PointCollectionValueSerializer(ValueSerializer):
 
    Returns: A new instance of System.Windows.Media.PointCollection based on the supplied value.
   """
-  pass
- def ConvertToString(self,value,context):
-  """
+        pass
+
+    def ConvertToString(self, value, context):
+        """
   ConvertToString(self: PointCollectionValueSerializer,value: object,context: IValueSerializerContext) -> str
 
   
@@ -697,10 +740,11 @@ class PointCollectionValueSerializer(ValueSerializer):
 
    Returns: A System.String representation of the supplied System.Windows.Media.PointCollection object.
   """
-  pass
+        pass
+
 
 class PointIListConverter(BaseIListConverter):
- """
+    """
  Converts an System.Collections.IList collection of System.Windows.Point values to and from instances of System.String.
 
  
@@ -708,16 +752,18 @@ class PointIListConverter(BaseIListConverter):
  PointIListConverter()
  """
 
+
 class TransformValueSerializer(ValueSerializer):
- """
+    """
  Converts instances of System.String to and from instances of System.Windows.Media.Transform.
 
  
 
  TransformValueSerializer()
  """
- def CanConvertFromString(self,value,context):
-  """
+
+    def CanConvertFromString(self, value, context):
+        """
   CanConvertFromString(self: TransformValueSerializer,value: str,context: IValueSerializerContext) -> bool
 
   
@@ -736,9 +782,10 @@ class TransformValueSerializer(ValueSerializer):
 
    Returns: true if the value can be converted; otherwise,false.
   """
-  pass
- def CanConvertToString(self,value,context):
-  """
+        pass
+
+    def CanConvertToString(self, value, context):
+        """
   CanConvertToString(self: TransformValueSerializer,value: object,context: IValueSerializerContext) -> bool
 
   
@@ -753,9 +800,10 @@ class TransformValueSerializer(ValueSerializer):
 
    Returns: true if value can be converted into a System.String; otherwise,false.
   """
-  pass
- def ConvertFromString(self,value,context):
-  """
+        pass
+
+    def ConvertFromString(self, value, context):
+        """
   ConvertFromString(self: TransformValueSerializer,value: str,context: IValueSerializerContext) -> object
 
   
@@ -770,9 +818,10 @@ class TransformValueSerializer(ValueSerializer):
 
    Returns: A new instance of System.Windows.Media.Transform based on the supplied value.
   """
-  pass
- def ConvertToString(self,value,context):
-  """
+        pass
+
+    def ConvertToString(self, value, context):
+        """
   ConvertToString(self: TransformValueSerializer,value: object,context: IValueSerializerContext) -> str
 
   
@@ -787,10 +836,11 @@ class TransformValueSerializer(ValueSerializer):
 
    Returns: A System.String representation of the supplied System.Windows.Media.Transform object.
   """
-  pass
+        pass
+
 
 class UShortIListConverter(BaseIListConverter):
- """
+    """
  Converts an System.Collections.IList collection of UShort number values to and from instances of System.String.
 
  
@@ -798,16 +848,18 @@ class UShortIListConverter(BaseIListConverter):
  UShortIListConverter()
  """
 
+
 class VectorCollectionValueSerializer(ValueSerializer):
- """
+    """
  Converts instances of System.String to and from instances of System.Windows.Media.VectorCollection.
 
  
 
  VectorCollectionValueSerializer()
  """
- def CanConvertFromString(self,value,context):
-  """
+
+    def CanConvertFromString(self, value, context):
+        """
   CanConvertFromString(self: VectorCollectionValueSerializer,value: str,context: IValueSerializerContext) -> bool
 
   
@@ -826,9 +878,10 @@ class VectorCollectionValueSerializer(ValueSerializer):
 
    Returns: true if the value can be converted; otherwise,false.
   """
-  pass
- def CanConvertToString(self,value,context):
-  """
+        pass
+
+    def CanConvertToString(self, value, context):
+        """
   CanConvertToString(self: VectorCollectionValueSerializer,value: object,context: IValueSerializerContext) -> bool
 
   
@@ -847,9 +900,10 @@ class VectorCollectionValueSerializer(ValueSerializer):
 
    Returns: true if value can be converted into a System.String; otherwise,false.
   """
-  pass
- def ConvertFromString(self,value,context):
-  """
+        pass
+
+    def ConvertFromString(self, value, context):
+        """
   ConvertFromString(self: VectorCollectionValueSerializer,value: str,context: IValueSerializerContext) -> object
 
   
@@ -864,9 +918,10 @@ class VectorCollectionValueSerializer(ValueSerializer):
 
    Returns: A new instance of System.Windows.Media.VectorCollection based on the supplied value.
   """
-  pass
- def ConvertToString(self,value,context):
-  """
+        pass
+
+    def ConvertToString(self, value, context):
+        """
   ConvertToString(self: VectorCollectionValueSerializer,value: object,context: IValueSerializerContext) -> str
 
   
@@ -881,5 +936,4 @@ class VectorCollectionValueSerializer(ValueSerializer):
 
    Returns: A System.String representation of the supplied System.Windows.Media.VectorCollection object.
   """
-  pass
-
+        pass

@@ -1,8 +1,9 @@
-class FabricWireItem(object,IDisposable):
- """ Provides implementation for FabricWires stored in a Custom Fabric Sheet """
- @staticmethod
- def Create(distance,wireLength,wireType):
-  """
+class FabricWireItem(object, IDisposable):
+    """ Provides implementation for FabricWires stored in a Custom Fabric Sheet """
+
+    @staticmethod
+    def Create(distance, wireLength, wireType):
+        """
   Create(distance: float,wireLength: float,wireType: ElementId) -> FabricWireItem
 
   
@@ -19,27 +20,34 @@ class FabricWireItem(object,IDisposable):
 
    Returns: The newly created Fabric wire instance.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: FabricWireItem) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: FabricWireItem,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Distance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Distance to the next fabric wire item
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: FabricWireItem) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: FabricWireItem,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Distance = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Distance to the next fabric wire item
 
 
 
@@ -51,8 +59,10 @@ Set: Distance(self: FabricWireItem)=value
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -62,8 +72,10 @@ Get: IsValidObject(self: FabricWireItem) -> bool
 
 """
 
- WireLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Wire length for this wire item
+    WireLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Wire length for this wire item
 
 
 
@@ -75,8 +87,8 @@ Set: WireLength(self: FabricWireItem)=value
 
 """
 
- WireType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The wire type of this wire item
+    WireType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The wire type of this wire item
 
 
 
@@ -87,5 +99,3 @@ Get: WireType(self: FabricWireItem) -> ElementId
 Set: WireType(self: FabricWireItem)=value
 
 """
-
-

@@ -8,13 +8,16 @@
 # no functions
 # classes
 
-class Application(APIObject,IDisposable):
- """ The Application Creation object is used to create new instances of utility objects. """
- def Dispose(self):
-  """ Dispose(self: APIObject,A_0: bool) """
-  pass
- def NewAreaCreationData(self,areaView,point):
-  """
+
+class Application(APIObject, IDisposable):
+    """ The Application Creation object is used to create new instances of utility objects. """
+
+    def Dispose(self):
+        """ Dispose(self: APIObject,A_0: bool) """
+        pass
+
+    def NewAreaCreationData(self, areaView, point):
+        """
   NewAreaCreationData(self: Application,areaView: ViewPlan,point: UV) -> AreaCreationData
 
   
@@ -33,9 +36,10 @@ class Application(APIObject,IDisposable):
 
    Returns: The object containing the data needed for area creation.
   """
-  pass
- def NewBoundingBoxUV(self,min_u=None,min_v=None,max_u=None,max_v=None):
-  """
+        pass
+
+    def NewBoundingBoxUV(self, min_u=None, min_v=None, max_u=None, max_v=None):
+        """
   NewBoundingBoxUV(self: Application) -> BoundingBoxUV
 
   
@@ -58,27 +62,30 @@ class Application(APIObject,IDisposable):
 
    max_v: The second coordinate of max.
   """
-  pass
- def NewBoundingBoxXYZ(self):
-  """
+        pass
+
+    def NewBoundingBoxXYZ(self):
+        """
   NewBoundingBoxXYZ(self: Application) -> BoundingBoxXYZ
 
   
 
    Creates a three-dimensional rectangular box.
   """
-  pass
- def NewBuildingSiteExportOptions(self):
-  """
+        pass
+
+    def NewBuildingSiteExportOptions(self):
+        """
   NewBuildingSiteExportOptions(self: Application) -> BuildingSiteExportOptions
 
   
 
    Creates Building Site Export options.
   """
-  pass
- def NewCategorySet(self):
-  """
+        pass
+
+    def NewCategorySet(self):
+        """
   NewCategorySet(self: Application) -> CategorySet
 
   
@@ -87,9 +94,10 @@ class Application(APIObject,IDisposable):
 
    Returns: A new instance of a Category Set.
   """
-  pass
- def NewColor(self):
-  """
+        pass
+
+    def NewColor(self):
+        """
   NewColor(self: Application) -> Color
 
   
@@ -98,9 +106,10 @@ class Application(APIObject,IDisposable):
 
    Returns: The new color object.
   """
-  pass
- def NewCombinableElementArray(self):
-  """
+        pass
+
+    def NewCombinableElementArray(self):
+        """
   NewCombinableElementArray(self: Application) -> CombinableElementArray
 
   
@@ -109,9 +118,10 @@ class Application(APIObject,IDisposable):
 
    Returns: An empty array that can contain any CombinableElement derived objects.
   """
-  pass
- def NewCurveArrArray(self):
-  """
+        pass
+
+    def NewCurveArrArray(self):
+        """
   NewCurveArrArray(self: Application) -> CurveArrArray
 
   
@@ -120,9 +130,10 @@ class Application(APIObject,IDisposable):
 
    Returns: The empty array of curve loops.
   """
-  pass
- def NewCurveArray(self):
-  """
+        pass
+
+    def NewCurveArray(self):
+        """
   NewCurveArray(self: Application) -> CurveArray
 
   
@@ -131,9 +142,10 @@ class Application(APIObject,IDisposable):
 
    Returns: An empty array that can hold geometric curves.
   """
-  pass
- def NewCurveLoopsProfile(self,curveLoops):
-  """
+        pass
+
+    def NewCurveLoopsProfile(self, curveLoops):
+        """
   NewCurveLoopsProfile(self: Application,curveLoops: CurveArrArray) -> CurveLoopsProfile
 
   
@@ -146,36 +158,40 @@ class Application(APIObject,IDisposable):
 
    Returns: The new CurveLoopsProfile object.
   """
-  pass
- def NewDoubleArray(self):
-  """
+        pass
+
+    def NewDoubleArray(self):
+        """
   NewDoubleArray(self: Application) -> DoubleArray
 
   
 
    Creates a new instance of a double array.
   """
-  pass
- def NewDWFExportOptions(self):
-  """
+        pass
+
+    def NewDWFExportOptions(self):
+        """
   NewDWFExportOptions(self: Application) -> DWFExportOptions
 
   
 
    Creates DWF Export options.
   """
-  pass
- def NewDWFXExportOptions(self):
-  """
+        pass
+
+    def NewDWFXExportOptions(self):
+        """
   NewDWFXExportOptions(self: Application) -> DWFXExportOptions
 
   
 
    Creates DWFX Export options.
   """
-  pass
- def NewElementId(self):
-  """
+        pass
+
+    def NewElementId(self):
+        """
   NewElementId(self: Application) -> ElementId
 
   
@@ -184,9 +200,10 @@ class Application(APIObject,IDisposable):
 
    Returns: The new Autodesk::Revit::DB::ElementId^ object.
   """
-  pass
- def NewElementSet(self):
-  """
+        pass
+
+    def NewElementSet(self):
+        """
   NewElementSet(self: Application) -> ElementSet
 
   
@@ -195,18 +212,20 @@ class Application(APIObject,IDisposable):
 
    Returns: A new Element Set.
   """
-  pass
- def NewFaceArray(self):
-  """
+        pass
+
+    def NewFaceArray(self):
+        """
   NewFaceArray(self: Application) -> FaceArray
 
   
 
    Creates a new instance of a face array.
   """
-  pass
- def NewFamilyInstanceCreationData(self,*__args):
-  """
+        pass
+
+    def NewFamilyInstanceCreationData(self, *__args):
+        """
   NewFamilyInstanceCreationData(self: Application,location: XYZ,symbol: FamilySymbol,level: Level,structuralType: StructuralType) -> FamilyInstanceCreationData
 
   
@@ -411,9 +430,10 @@ class Application(APIObject,IDisposable):
 
     inserted.
   """
-  pass
- def NewFamilySymbolProfile(self,familySymbol):
-  """
+        pass
+
+    def NewFamilySymbolProfile(self, familySymbol):
+        """
   NewFamilySymbolProfile(self: Application,familySymbol: FamilySymbol) -> FamilySymbolProfile
 
   
@@ -426,45 +446,50 @@ class Application(APIObject,IDisposable):
 
    Returns: The new FamilySymbolProfile object.
   """
-  pass
- def NewFBXExportOptions(self):
-  """
+        pass
+
+    def NewFBXExportOptions(self):
+        """
   NewFBXExportOptions(self: Application) -> FBXExportOptions
 
   
 
    Creates 3D-Studio Max (FBX) Export options.
   """
-  pass
- def NewGBXMLImportOptions(self):
-  """
+        pass
+
+    def NewGBXMLImportOptions(self):
+        """
   NewGBXMLImportOptions(self: Application) -> GBXMLImportOptions
 
   
 
    Creates Green-Building XML Import options.
   """
-  pass
- def NewGeometryOptions(self):
-  """
+        pass
+
+    def NewGeometryOptions(self):
+        """
   NewGeometryOptions(self: Application) -> Options
 
   
 
    Creates an object to specify user preferences in parsing of geometry.
   """
-  pass
- def NewImageImportOptions(self):
-  """
+        pass
+
+    def NewImageImportOptions(self):
+        """
   NewImageImportOptions(self: Application) -> ImageImportOptions
 
   
 
    Creates Image Import options.
   """
-  pass
- def NewInstanceBinding(self,categorySet=None):
-  """
+        pass
+
+    def NewInstanceBinding(self, categorySet=None):
+        """
   NewInstanceBinding(self: Application) -> InstanceBinding
 
   
@@ -489,18 +514,20 @@ class Application(APIObject,IDisposable):
 
    Returns: A new instance binding object.
   """
-  pass
- def NewIntersectionResultArray(self):
-  """
+        pass
+
+    def NewIntersectionResultArray(self):
+        """
   NewIntersectionResultArray(self: Application) -> IntersectionResultArray
 
   
 
    Creates a new instance of an IntersectionResult array.
   """
-  pass
- def NewPlane(self,*__args):
-  """
+        pass
+
+    def NewPlane(self, *__args):
+        """
   NewPlane(self: Application,xVec: XYZ,yVec: XYZ,origin: XYZ) -> Plane
 
   
@@ -547,9 +574,10 @@ class Application(APIObject,IDisposable):
 
    Returns: If successful a new geometric plane will be returned. Otherwise ll.
   """
-  pass
- def NewPointOnEdge(self,edgeReference,locationOnCurve):
-  """
+        pass
+
+    def NewPointOnEdge(self, edgeReference, locationOnCurve):
+        """
   NewPointOnEdge(self: Application,edgeReference: Reference,locationOnCurve: PointLocationOnCurve) -> PointOnEdge
 
   
@@ -572,9 +600,10 @@ class Application(APIObject,IDisposable):
 
     exception with failure information will be thrown.
   """
-  pass
- def NewPointOnEdgeEdgeIntersection(self,edgeReference1,edgeReference2):
-  """
+        pass
+
+    def NewPointOnEdgeEdgeIntersection(self, edgeReference1, edgeReference2):
+        """
   NewPointOnEdgeEdgeIntersection(self: Application,edgeReference1: Reference,edgeReference2: Reference) -> PointOnEdgeEdgeIntersection
 
   
@@ -593,9 +622,12 @@ class Application(APIObject,IDisposable):
 
    Returns: A new PointOnEdgeEdgeIntersection object.
   """
-  pass
- def NewPointOnEdgeFaceIntersection(self,edgeReference,faceReference,orientWithEdge):
-  """
+        pass
+
+    def NewPointOnEdgeFaceIntersection(
+        self, edgeReference, faceReference, orientWithEdge
+    ):
+        """
   NewPointOnEdgeFaceIntersection(self: Application,edgeReference: Reference,faceReference: Reference,orientWithEdge: bool) -> PointOnEdgeFaceIntersection
 
   
@@ -616,9 +648,10 @@ class Application(APIObject,IDisposable):
 
    Returns: A new PointOnEdgeFaceIntersection object.
   """
-  pass
- def NewPointOnFace(self,faceReference,uv):
-  """
+        pass
+
+    def NewPointOnFace(self, faceReference, uv):
+        """
   NewPointOnFace(self: Application,faceReference: Reference,uv: UV) -> PointOnFace
 
   
@@ -637,9 +670,10 @@ class Application(APIObject,IDisposable):
 
    Returns: A new PointOnFace object.
   """
-  pass
- def NewPointOnPlane(self,planeReference,position,xvec,offset):
-  """
+        pass
+
+    def NewPointOnPlane(self, planeReference, position, xvec, offset):
+        """
   NewPointOnPlane(self: Application,planeReference: Reference,position: UV,xvec: UV,offset: float) -> PointOnPlane
 
   
@@ -694,9 +728,10 @@ class Application(APIObject,IDisposable):
 
     properties set to match the given 3-dimensional arguments.
   """
-  pass
- def NewPointRelativeToPoint(self,hostPointReference):
-  """
+        pass
+
+    def NewPointRelativeToPoint(self, hostPointReference):
+        """
   NewPointRelativeToPoint(self: Application,hostPointReference: Reference) -> PointRelativeToPoint
 
   
@@ -719,9 +754,10 @@ class Application(APIObject,IDisposable):
 
     otherwise an exception with failure information will be thrown.
   """
-  pass
- def NewProjectPosition(self,ew,ns,elevation,angle):
-  """
+        pass
+
+    def NewProjectPosition(self, ew, ns, elevation, angle):
+        """
   NewProjectPosition(self: Application,ew: float,ns: float,elevation: float,angle: float) -> ProjectPosition
 
   
@@ -738,18 +774,20 @@ class Application(APIObject,IDisposable):
 
    angle: Rotation angle away from true north in the range of -PI to +PI.
   """
-  pass
- def NewReferenceArray(self):
-  """
+        pass
+
+    def NewReferenceArray(self):
+        """
   NewReferenceArray(self: Application) -> ReferenceArray
 
   
 
    Creates a new instance of a reference array.
   """
-  pass
- def NewReferencePointArray(self):
-  """
+        pass
+
+    def NewReferencePointArray(self):
+        """
   NewReferencePointArray(self: Application) -> ReferencePointArray
 
   
@@ -758,18 +796,20 @@ class Application(APIObject,IDisposable):
 
    Returns: An empty array that can hold ReferencePoint objects.
   """
-  pass
- def NewSpaceSet(self):
-  """
+        pass
+
+    def NewSpaceSet(self):
+        """
   NewSpaceSet(self: Application) -> SpaceSet
 
   
 
    Creates a new instance of a space set.
   """
-  pass
- def NewTypeBinding(self,categorySet=None):
-  """
+        pass
+
+    def NewTypeBinding(self, categorySet=None):
+        """
   NewTypeBinding(self: Application) -> TypeBinding
 
   
@@ -794,9 +834,10 @@ class Application(APIObject,IDisposable):
 
    Returns: A new type binding object.
   """
-  pass
- def NewUV(self,*__args):
-  """
+        pass
+
+    def NewUV(self, *__args):
+        """
   NewUV(self: Application) -> UV
 
   
@@ -825,9 +866,10 @@ class Application(APIObject,IDisposable):
 
    uv: The supplied UV object
   """
-  pass
- def NewVertexIndexPair(self,iTop,iBottom):
-  """
+        pass
+
+    def NewVertexIndexPair(self, iTop, iBottom):
+        """
   NewVertexIndexPair(self: Application,iTop: int,iBottom: int) -> VertexIndexPair
 
   
@@ -842,9 +884,10 @@ class Application(APIObject,IDisposable):
 
    Returns: The new VertexIndexPair object.
   """
-  pass
- def NewVertexIndexPairArray(self):
-  """
+        pass
+
+    def NewVertexIndexPairArray(self):
+        """
   NewVertexIndexPairArray(self: Application) -> VertexIndexPairArray
 
   
@@ -853,18 +896,20 @@ class Application(APIObject,IDisposable):
 
    Returns: The new VertexIndexPairArray objects.
   """
-  pass
- def NewViewSet(self):
-  """
+        pass
+
+    def NewViewSet(self):
+        """
   NewViewSet(self: Application) -> ViewSet
 
   
 
    Creates a new instance of a View set.
   """
-  pass
- def NewXYZ(self,*__args):
-  """
+        pass
+
+    def NewXYZ(self, *__args):
+        """
   NewXYZ(self: Application) -> XYZ
 
   
@@ -895,25 +940,31 @@ class Application(APIObject,IDisposable):
 
    xyz: The supplied XYZ object
   """
-  pass
- def ReleaseManagedResources(self,*args):
-  """ ReleaseManagedResources(self: APIObject) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: APIObject) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def ReleaseManagedResources(self, *args):
+        """ ReleaseManagedResources(self: APIObject) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: APIObject) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
 
 class AreaCreationData(object):
- """
+    """
  A class which wraps the arguments of Area for batch creation
 
  
@@ -922,16 +973,18 @@ class AreaCreationData(object):
 
  AreaCreationData(areaView: ViewPlan,point: UV)
  """
- @staticmethod
- def __new__(self,*__args):
-  """
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,proxy: object)
 
   __new__(cls: type,areaView: ViewPlan,point: UV)
   """
-  pass
- TagPoint=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specify the location of the area tag.
+        pass
+
+    TagPoint = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Specify the location of the area tag.
 
 
 
@@ -944,18 +997,19 @@ Set: TagPoint(self: AreaCreationData)=value
 """
 
 
-
-class ItemFactoryBase(APIObject,IDisposable):
- """
+class ItemFactoryBase(APIObject, IDisposable):
+    """
  The ItemFactoryBase object is used to create new instances of elements within the
 
  Autodesk Revit document.
  """
- def Dispose(self):
-  """ Dispose(self: APIObject,A_0: bool) """
-  pass
- def NewAlignment(self,view,reference1,reference2):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: APIObject,A_0: bool) """
+        pass
+
+    def NewAlignment(self, view, reference1, reference2):
+        """
   NewAlignment(self: ItemFactoryBase,view: View,reference1: Reference,reference2: Reference) -> Dimension
 
   
@@ -976,9 +1030,10 @@ class ItemFactoryBase(APIObject,IDisposable):
 
     otherwise an exception with failure information will be thrown.
   """
-  pass
- def NewDetailCurve(self,view,geometryCurve):
-  """
+        pass
+
+    def NewDetailCurve(self, view, geometryCurve):
+        """
   NewDetailCurve(self: ItemFactoryBase,view: View,geometryCurve: Curve) -> DetailCurve
 
   
@@ -993,9 +1048,10 @@ class ItemFactoryBase(APIObject,IDisposable):
 
    Returns: If successful a new detail curve element. Otherwise ll.
   """
-  pass
- def NewDetailCurveArray(self,view,geometryCurveArray):
-  """
+        pass
+
+    def NewDetailCurveArray(self, view, geometryCurveArray):
+        """
   NewDetailCurveArray(self: ItemFactoryBase,view: View,geometryCurveArray: CurveArray) -> DetailCurveArray
 
   
@@ -1016,9 +1072,10 @@ class ItemFactoryBase(APIObject,IDisposable):
 
    Returns: If successful an array of new detail curve elements. Otherwise ll.
   """
-  pass
- def NewDimension(self,view,line,references,dimensionType=None):
-  """
+        pass
+
+    def NewDimension(self, view, line, references, dimensionType=None):
+        """
   NewDimension(self: ItemFactoryBase,view: View,line: Line,references: ReferenceArray) -> Dimension
 
   
@@ -1053,9 +1110,10 @@ class ItemFactoryBase(APIObject,IDisposable):
 
    Returns: If successful a new dimension object,otherwise ll.
   """
-  pass
- def NewFamilyInstance(self,*__args):
-  """
+        pass
+
+    def NewFamilyInstance(self, *__args):
+        """
   NewFamilyInstance(self: ItemFactoryBase,location: XYZ,symbol: FamilySymbol,structuralType: StructuralType) -> FamilyInstance
 
   
@@ -1366,15 +1424,18 @@ class ItemFactoryBase(APIObject,IDisposable):
 
    Returns: An instance of the new object if creation was successful,otherwise ll.
   """
-  pass
- def NewFamilyInstances2(self,dataList):
-  """ NewFamilyInstances2(self: ItemFactoryBase,dataList: List[FamilyInstanceCreationData]) -> ICollection[ElementId] """
-  pass
- def NewGroup(self,elementIds):
-  """ NewGroup(self: ItemFactoryBase,elementIds: ICollection[ElementId]) -> Group """
-  pass
- def NewModelCurve(self,geometryCurve,sketchPlane):
-  """
+        pass
+
+    def NewFamilyInstances2(self, dataList):
+        """ NewFamilyInstances2(self: ItemFactoryBase,dataList: List[FamilyInstanceCreationData]) -> ICollection[ElementId] """
+        pass
+
+    def NewGroup(self, elementIds):
+        """ NewGroup(self: ItemFactoryBase,elementIds: ICollection[ElementId]) -> Group """
+        pass
+
+    def NewModelCurve(self, geometryCurve, sketchPlane):
+        """
   NewModelCurve(self: ItemFactoryBase,geometryCurve: Curve,sketchPlane: SketchPlane) -> ModelCurve
 
   
@@ -1389,9 +1450,10 @@ class ItemFactoryBase(APIObject,IDisposable):
 
    Returns: If successful a new model line element. Otherwise ll.
   """
-  pass
- def NewModelCurveArray(self,geometryCurveArray,sketchPlane):
-  """
+        pass
+
+    def NewModelCurveArray(self, geometryCurveArray, sketchPlane):
+        """
   NewModelCurveArray(self: ItemFactoryBase,geometryCurveArray: CurveArray,sketchPlane: SketchPlane) -> ModelCurveArray
 
   
@@ -1404,9 +1466,10 @@ class ItemFactoryBase(APIObject,IDisposable):
 
    Returns: If successful an array of new model line elements. Otherwise ll.
   """
-  pass
- def NewReferencePlane(self,bubbleEnd,freeEnd,cutVec,pView):
-  """
+        pass
+
+    def NewReferencePlane(self, bubbleEnd, freeEnd, cutVec, pView):
+        """
   NewReferencePlane(self: ItemFactoryBase,bubbleEnd: XYZ,freeEnd: XYZ,cutVec: XYZ,pView: View) -> ReferencePlane
 
   
@@ -1431,9 +1494,10 @@ class ItemFactoryBase(APIObject,IDisposable):
 
    Returns: The newly created reference plane.
   """
-  pass
- def NewReferencePlane2(self,bubbleEnd,freeEnd,thirdPnt,pView):
-  """
+        pass
+
+    def NewReferencePlane2(self, bubbleEnd, freeEnd, thirdPnt, pView):
+        """
   NewReferencePlane2(self: ItemFactoryBase,bubbleEnd: XYZ,freeEnd: XYZ,thirdPnt: XYZ,pView: View) -> ReferencePlane
 
   
@@ -1452,9 +1516,10 @@ class ItemFactoryBase(APIObject,IDisposable):
 
    Returns: The newly created reference plane.
   """
-  pass
- def PlaceGroup(self,location,groupType):
-  """
+        pass
+
+    def PlaceGroup(self, location, groupType):
+        """
   PlaceGroup(self: ItemFactoryBase,location: XYZ,groupType: GroupType) -> Group
 
   
@@ -1477,34 +1542,42 @@ class ItemFactoryBase(APIObject,IDisposable):
 
     otherwise ll.
   """
-  pass
- def ReleaseManagedResources(self,*args):
-  """ ReleaseManagedResources(self: APIObject) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: APIObject) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
 
-class Document(ItemFactoryBase,IDisposable):
- """
+    def ReleaseManagedResources(self, *args):
+        """ ReleaseManagedResources(self: APIObject) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: APIObject) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+
+class Document(ItemFactoryBase, IDisposable):
+    """
  The Document Creation object is used to create new instances of elements within the
 
  Autodesk Revit project.
  """
- def Dispose(self):
-  """ Dispose(self: APIObject,A_0: bool) """
-  pass
- def NewArea(self,areaView,point):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: APIObject,A_0: bool) """
+        pass
+
+    def NewArea(self, areaView, point):
+        """
   NewArea(self: Document,areaView: ViewPlan,point: UV) -> Area
 
   
@@ -1519,9 +1592,10 @@ class Document(ItemFactoryBase,IDisposable):
 
     created Area
   """
-  pass
- def NewAreaBoundaryConditions(self,*__args):
-  """
+        pass
+
+    def NewAreaBoundaryConditions(self, *__args):
+        """
   NewAreaBoundaryConditions(self: Document,reference: Reference,X_Translation: TranslationRotationValue,X_TranslationSpringModulus: float,Y_Translation: TranslationRotationValue,Y_TranslationSpringModulus: float,Z_Translation: TranslationRotationValue,Z_TranslationSpringModulus: float) -> BoundaryConditions
 
   
@@ -1586,9 +1660,10 @@ class Document(ItemFactoryBase,IDisposable):
 
     if the operation fails.
   """
-  pass
- def NewAreaBoundaryLine(self,sketchPlane,geometryCurve,areaView):
-  """
+        pass
+
+    def NewAreaBoundaryLine(self, sketchPlane, geometryCurve, areaView):
+        """
   NewAreaBoundaryLine(self: Document,sketchPlane: SketchPlane,geometryCurve: Curve,areaView: ViewPlan) -> ModelCurve
 
   
@@ -1603,12 +1678,14 @@ class Document(ItemFactoryBase,IDisposable):
 
    areaView: The View for the new Area
   """
-  pass
- def NewAreas(self,dataList):
-  """ NewAreas(self: Document,dataList: List[AreaCreationData]) -> ElementSet """
-  pass
- def NewAreaTag(self,areaView,room,point):
-  """
+        pass
+
+    def NewAreas(self, dataList):
+        """ NewAreas(self: Document,dataList: List[AreaCreationData]) -> ElementSet """
+        pass
+
+    def NewAreaTag(self, areaView, room, point):
+        """
   NewAreaTag(self: Document,areaView: ViewPlan,room: Area,point: UV) -> AreaTag
 
   
@@ -1623,9 +1700,10 @@ class Document(ItemFactoryBase,IDisposable):
 
    point: The position of the area tag
   """
-  pass
- def NewCrossFitting(self,connector1,connector2,connector3,connector4):
-  """
+        pass
+
+    def NewCrossFitting(self, connector1, connector2, connector3, connector4):
+        """
   NewCrossFitting(self: Document,connector1: Connector,connector2: Connector,connector3: Connector,connector4: Connector) -> FamilyInstance
 
   
@@ -1658,9 +1736,10 @@ class Document(ItemFactoryBase,IDisposable):
 
   otherwise an exception with failure information will be thrown.
   """
-  pass
- def NewCurtainSystem(self,faces,curtainSystemType):
-  """
+        pass
+
+    def NewCurtainSystem(self, faces, curtainSystemType):
+        """
   NewCurtainSystem(self: Document,faces: FaceArray,curtainSystemType: CurtainSystemType) -> CurtainSystem
 
   
@@ -1675,9 +1754,10 @@ class Document(ItemFactoryBase,IDisposable):
 
    Returns: The CurtainSystem created will be returned when the operation succeeds.
   """
-  pass
- def NewCurtainSystem2(self,faces,curtainSystemType):
-  """
+        pass
+
+    def NewCurtainSystem2(self, faces, curtainSystemType):
+        """
   NewCurtainSystem2(self: Document,faces: ReferenceArray,curtainSystemType: CurtainSystemType) -> ICollection[ElementId]
 
   
@@ -1694,9 +1774,10 @@ class Document(ItemFactoryBase,IDisposable):
 
     succeeds.
   """
-  pass
- def NewDuct(self,*__args):
-  """
+        pass
+
+    def NewDuct(self, *__args):
+        """
   NewDuct(self: Document,point1: XYZ,point2: XYZ,ductType: DuctType) -> Duct
 
   
@@ -1767,9 +1848,10 @@ class Document(ItemFactoryBase,IDisposable):
 
     exception with failure information will be thrown.
   """
-  pass
- def NewElbowFitting(self,connector1,connector2):
-  """
+        pass
+
+    def NewElbowFitting(self, connector1, connector2):
+        """
   NewElbowFitting(self: Document,connector1: Connector,connector2: Connector) -> FamilyInstance
 
   
@@ -1794,9 +1876,10 @@ class Document(ItemFactoryBase,IDisposable):
 
   otherwise an exception with failure information will be thrown.
   """
-  pass
- def NewElectricalSystem(self,*__args):
-  """
+        pass
+
+    def NewElectricalSystem(self, *__args):
+        """
   NewElectricalSystem(self: Document,connector: Connector,elecSysType: ElectricalSystemType) -> ElectricalSystem
 
   
@@ -1817,9 +1900,12 @@ class Document(ItemFactoryBase,IDisposable):
 
   NewElectricalSystem(self: Document,electComponents: ICollection[ElementId],elecSysType: ElectricalSystemType) -> ElectricalSystem
   """
-  pass
- def NewExtrusionRoof(self,profile,refPlane,level,roofType,extrusionStart,extrusionEnd):
-  """
+        pass
+
+    def NewExtrusionRoof(
+        self, profile, refPlane, level, roofType, extrusionStart, extrusionEnd
+    ):
+        """
   NewExtrusionRoof(self: Document,profile: CurveArray,refPlane: ReferencePlane,level: Level,roofType: RoofType,extrusionStart: float,extrusionEnd: float) -> ExtrusionRoof
 
   
@@ -1840,9 +1926,10 @@ class Document(ItemFactoryBase,IDisposable):
 
    extrusionEnd: End the extrusion.
   """
-  pass
- def NewFamilyInstance(self,*__args):
-  """
+        pass
+
+    def NewFamilyInstance(self, *__args):
+        """
   NewFamilyInstance(self: Document,location: XYZ,symbol: FamilySymbol,host: Element,level: Level,structuralType: StructuralType) -> FamilyInstance
 
   
@@ -1939,9 +2026,10 @@ class Document(ItemFactoryBase,IDisposable):
 
     otherwise ll.
   """
-  pass
- def NewFascia(self,FasciaType,*__args):
-  """
+        pass
+
+    def NewFascia(self, FasciaType, *__args):
+        """
   NewFascia(self: Document,FasciaType: FasciaType,references: ReferenceArray) -> Fascia
 
   
@@ -1982,9 +2070,10 @@ class Document(ItemFactoryBase,IDisposable):
 
    Returns: If successful a new fascia object within the project,otherwise ll.
   """
-  pass
- def NewFlexDuct(self,*__args):
-  """
+        pass
+
+    def NewFlexDuct(self, *__args):
+        """
   NewFlexDuct(self: Document,points: IList[XYZ],ductType: FlexDuctType) -> FlexDuct
 
   NewFlexDuct(self: Document,connector: Connector,points: IList[XYZ],ductType: FlexDuctType) -> FlexDuct
@@ -2015,9 +2104,10 @@ class Document(ItemFactoryBase,IDisposable):
 
     exception with failure information will be thrown.
   """
-  pass
- def NewFlexPipe(self,*__args):
-  """
+        pass
+
+    def NewFlexPipe(self, *__args):
+        """
   NewFlexPipe(self: Document,points: IList[XYZ],pipeType: FlexPipeType) -> FlexPipe
 
   NewFlexPipe(self: Document,connector: Connector,points: IList[XYZ],pipeType: FlexPipeType) -> FlexPipe
@@ -2048,9 +2138,10 @@ class Document(ItemFactoryBase,IDisposable):
 
     exception with failure information will be thrown.
   """
-  pass
- def NewFloor(self,profile,*__args):
-  """
+        pass
+
+    def NewFloor(self, profile, *__args):
+        """
   NewFloor(self: Document,profile: CurveArray,structural: bool) -> Floor
 
   
@@ -2133,9 +2224,12 @@ class Document(ItemFactoryBase,IDisposable):
 
    Returns: if successful,a new floor object within the project,otherwise ll.
   """
-  pass
- def NewFootPrintRoof(self,footPrint,level,roofType,footPrintToModelCurvesMapping):
-  """
+        pass
+
+    def NewFootPrintRoof(
+        self, footPrint, level, roofType, footPrintToModelCurvesMapping
+    ):
+        """
   NewFootPrintRoof(self: Document,footPrint: CurveArray,level: Level,roofType: RoofType) -> (FootPrintRoof,ModelCurveArray)
 
   
@@ -2150,9 +2244,10 @@ class Document(ItemFactoryBase,IDisposable):
 
    roofType: Type of the FootPrintRoof.
   """
-  pass
- def NewFoundationSlab(self,profile,floorType,level,structural,normal):
-  """
+        pass
+
+    def NewFoundationSlab(self, profile, floorType, level, structural, normal):
+        """
   NewFoundationSlab(self: Document,profile: CurveArray,floorType: FloorType,level: Level,structural: bool,normal: XYZ) -> Floor
 
   
@@ -2187,9 +2282,10 @@ class Document(ItemFactoryBase,IDisposable):
 
    Returns: if successful,a new foundation slab object within the project,otherwise ll.
   """
-  pass
- def NewFoundationWall(self,wallFoundationType,wall):
-  """
+        pass
+
+    def NewFoundationWall(self, wallFoundationType, wall):
+        """
   NewFoundationWall(self: Document,wallFoundationType: WallFoundationType,wall: Wall) -> WallFoundation
 
   
@@ -2202,9 +2298,10 @@ class Document(ItemFactoryBase,IDisposable):
 
    wall: The Wall to append a WallFoundation.
   """
-  pass
- def NewGutter(self,GutterType,*__args):
-  """
+        pass
+
+    def NewGutter(self, GutterType, *__args):
+        """
   NewGutter(self: Document,GutterType: GutterType,references: ReferenceArray) -> Gutter
 
   
@@ -2245,9 +2342,10 @@ class Document(ItemFactoryBase,IDisposable):
 
    Returns: If successful a new gutter object within the project,otherwise ll.
   """
-  pass
- def NewLineBoundaryConditions(self,*__args):
-  """
+        pass
+
+    def NewLineBoundaryConditions(self, *__args):
+        """
   NewLineBoundaryConditions(self: Document,reference: Reference,X_Translation: TranslationRotationValue,X_TranslationSpringModulus: float,Y_Translation: TranslationRotationValue,Y_TranslationSpringModulus: float,Z_Translation: TranslationRotationValue,Z_TranslationSpringModulus: float,X_Rotation: TranslationRotationValue,X_RotationSpringModulus: float) -> BoundaryConditions
 
   
@@ -2324,9 +2422,10 @@ class Document(ItemFactoryBase,IDisposable):
 
     if the operation fails.
   """
-  pass
- def NewMechanicalSystem(self,baseEquipmentConnector,connectors,ductSystemType):
-  """
+        pass
+
+    def NewMechanicalSystem(self, baseEquipmentConnector, connectors, ductSystemType):
+        """
   NewMechanicalSystem(self: Document,baseEquipmentConnector: Connector,connectors: ConnectorSet,ductSystemType: DuctSystemType) -> MechanicalSystem
 
   
@@ -2363,9 +2462,10 @@ class Document(ItemFactoryBase,IDisposable):
 
     otherwise an exception with information will be thrown.
   """
-  pass
- def NewOpening(self,*__args):
-  """
+        pass
+
+    def NewOpening(self, *__args):
+        """
   NewOpening(self: Document,bottomLevel: Level,topLevel: Level,profile: CurveArray) -> Opening
 
   
@@ -2434,9 +2534,10 @@ class Document(ItemFactoryBase,IDisposable):
 
    Returns: If successful,an Opening object is returned.
   """
-  pass
- def NewPipingSystem(self,baseEquipmentConnector,connectors,pipingSystemType):
-  """
+        pass
+
+    def NewPipingSystem(self, baseEquipmentConnector, connectors, pipingSystemType):
+        """
   NewPipingSystem(self: Document,baseEquipmentConnector: Connector,connectors: ConnectorSet,pipingSystemType: PipeSystemType) -> PipingSystem
 
   
@@ -2473,9 +2574,25 @@ class Document(ItemFactoryBase,IDisposable):
 
     otherwise an exception with information will be thrown.
   """
-  pass
- def NewPointBoundaryConditions(self,reference,X_Translation,X_TranslationSpringModulus,Y_Translation,Y_TranslationSpringModulus,Z_Translation,Z_TranslationSpringModulus,X_Rotation,X_RotationSpringModulus,Y_Rotation,Y_RotationSpringModulus,Z_Rotation,Z_RotationSpringModulus):
-  """
+        pass
+
+    def NewPointBoundaryConditions(
+        self,
+        reference,
+        X_Translation,
+        X_TranslationSpringModulus,
+        Y_Translation,
+        Y_TranslationSpringModulus,
+        Z_Translation,
+        Z_TranslationSpringModulus,
+        X_Rotation,
+        X_RotationSpringModulus,
+        Y_Rotation,
+        Y_RotationSpringModulus,
+        Z_Rotation,
+        Z_RotationSpringModulus,
+    ):
+        """
   NewPointBoundaryConditions(self: Document,reference: Reference,X_Translation: TranslationRotationValue,X_TranslationSpringModulus: float,Y_Translation: TranslationRotationValue,Y_TranslationSpringModulus: float,Z_Translation: TranslationRotationValue,Z_TranslationSpringModulus: float,X_Rotation: TranslationRotationValue,X_RotationSpringModulus: float,Y_Rotation: TranslationRotationValue,Y_RotationSpringModulus: float,Z_Rotation: TranslationRotationValue,Z_RotationSpringModulus: float) -> BoundaryConditions
 
   
@@ -2518,9 +2635,10 @@ class Document(ItemFactoryBase,IDisposable):
 
     if the operation fails.
   """
-  pass
- def NewRoom(self,*__args):
-  """
+        pass
+
+    def NewRoom(self, *__args):
+        """
   NewRoom(self: Document,level: Level,point: UV) -> Room
 
   
@@ -2565,9 +2683,10 @@ class Document(ItemFactoryBase,IDisposable):
 
    Returns: If successful the room is returned,otherwise ll.
   """
-  pass
- def NewRoomBoundaryLines(self,sketchPlane,curves,view):
-  """
+        pass
+
+    def NewRoomBoundaryLines(self, sketchPlane, curves, view):
+        """
   NewRoomBoundaryLines(self: Document,sketchPlane: SketchPlane,curves: CurveArray,view: View) -> ModelCurveArray
 
   
@@ -2582,9 +2701,10 @@ class Document(ItemFactoryBase,IDisposable):
 
    view: The View for the new Room
   """
-  pass
- def NewRooms2(self,*__args):
-  """
+        pass
+
+    def NewRooms2(self, *__args):
+        """
   NewRooms2(self: Document,level: Level) -> ICollection[ElementId]
 
   
@@ -2643,9 +2763,10 @@ class Document(ItemFactoryBase,IDisposable):
 
     otherwise the exception will be thrown.
   """
-  pass
- def NewRoomTag(self,roomId,point,viewId):
-  """
+        pass
+
+    def NewRoomTag(self, roomId, point, viewId):
+        """
   NewRoomTag(self: Document,roomId: LinkElementId,point: UV,viewId: ElementId) -> RoomTag
 
   
@@ -2666,9 +2787,10 @@ class Document(ItemFactoryBase,IDisposable):
 
    Returns: If successful a RoomTag object will be returned,otherwise ll.
   """
-  pass
- def NewSlab(self,profile,level,slopedArrow,slope,isStructural):
-  """
+        pass
+
+    def NewSlab(self, profile, level, slopedArrow, slope, isStructural):
+        """
   NewSlab(self: Document,profile: CurveArray,level: Level,slopedArrow: Line,slope: float,isStructural: bool) -> Floor
 
   
@@ -2701,9 +2823,10 @@ class Document(ItemFactoryBase,IDisposable):
 
    Returns: If successful a new floor object within the project,otherwise ll.
   """
-  pass
- def NewSlabEdge(self,SlabEdgeType,*__args):
-  """
+        pass
+
+    def NewSlabEdge(self, SlabEdgeType, *__args):
+        """
   NewSlabEdge(self: Document,SlabEdgeType: SlabEdgeType,references: ReferenceArray) -> SlabEdge
 
   
@@ -2744,9 +2867,10 @@ class Document(ItemFactoryBase,IDisposable):
 
    Returns: If successful a new slab edge object within the project,otherwise ll.
   """
-  pass
- def NewSpace(self,*__args):
-  """
+        pass
+
+    def NewSpace(self, *__args):
+        """
   NewSpace(self: Document,phase: Phase) -> Space
 
   
@@ -2793,9 +2917,10 @@ class Document(ItemFactoryBase,IDisposable):
 
    Returns: If successful a new Space element within the project,otherwise ll.
   """
-  pass
- def NewSpaceBoundaryLines(self,sketchPlane,curves,view):
-  """
+        pass
+
+    def NewSpaceBoundaryLines(self, sketchPlane, curves, view):
+        """
   NewSpaceBoundaryLines(self: Document,sketchPlane: SketchPlane,curves: CurveArray,view: View) -> ModelCurveArray
 
   
@@ -2810,9 +2935,10 @@ class Document(ItemFactoryBase,IDisposable):
 
    view: The View for the new Space
   """
-  pass
- def NewSpaces2(self,*__args):
-  """
+        pass
+
+    def NewSpaces2(self, *__args):
+        """
   NewSpaces2(self: Document,level: Level,phase: Phase,view: View) -> ICollection[ElementId]
 
   
@@ -2847,9 +2973,10 @@ class Document(ItemFactoryBase,IDisposable):
 
     otherwise ll.
   """
-  pass
- def NewSpaceTag(self,space,point,view):
-  """
+        pass
+
+    def NewSpaceTag(self, space, point, view):
+        """
   NewSpaceTag(self: Document,space: Space,point: UV,view: View) -> SpaceTag
 
   
@@ -2870,9 +2997,10 @@ class Document(ItemFactoryBase,IDisposable):
 
     exceptions will be fired if the parameters are invalid.
   """
-  pass
- def NewSpotCoordinate(self,view,reference,origin,bend,end,refPt,hasLeader):
-  """
+        pass
+
+    def NewSpotCoordinate(self, view, reference, origin, bend, end, refPt, hasLeader):
+        """
   NewSpotCoordinate(self: Document,view: View,reference: Reference,origin: XYZ,bend: XYZ,end: XYZ,refPt: XYZ,hasLeader: bool) -> SpotDimension
 
   
@@ -2897,9 +3025,10 @@ class Document(ItemFactoryBase,IDisposable):
 
    Returns: If successful a new spot dimension object,otherwise ll.
   """
-  pass
- def NewSpotElevation(self,view,reference,origin,bend,end,refPt,hasLeader):
-  """
+        pass
+
+    def NewSpotElevation(self, view, reference, origin, bend, end, refPt, hasLeader):
+        """
   NewSpotElevation(self: Document,view: View,reference: Reference,origin: XYZ,bend: XYZ,end: XYZ,refPt: XYZ,hasLeader: bool) -> SpotDimension
 
   
@@ -2924,9 +3053,10 @@ class Document(ItemFactoryBase,IDisposable):
 
    Returns: If successful a new spot dimension object,otherwise ll.
   """
-  pass
- def NewTag(self,dbview,elemToTag,addLeader,tagMode,tagOrientation,pnt):
-  """
+        pass
+
+    def NewTag(self, dbview, elemToTag, addLeader, tagMode, tagOrientation, pnt):
+        """
   NewTag(self: Document,dbview: View,elemToTag: Element,addLeader: bool,tagMode: TagMode,tagOrientation: TagOrientation,pnt: XYZ) -> IndependentTag
 
   
@@ -2955,9 +3085,10 @@ class Document(ItemFactoryBase,IDisposable):
 
    Returns: If successful,an IndependentTag object is returned.
   """
-  pass
- def NewTakeoffFitting(self,connector,curve):
-  """
+        pass
+
+    def NewTakeoffFitting(self, connector, curve):
+        """
   NewTakeoffFitting(self: Document,connector: Connector,curve: MEPCurve) -> FamilyInstance
 
   
@@ -2982,9 +3113,10 @@ class Document(ItemFactoryBase,IDisposable):
 
   otherwise an exception with failure information will be thrown.
   """
-  pass
- def NewTeeFitting(self,connector1,connector2,connector3):
-  """
+        pass
+
+    def NewTeeFitting(self, connector1, connector2, connector3):
+        """
   NewTeeFitting(self: Document,connector1: Connector,connector2: Connector,connector3: Connector) -> FamilyInstance
 
   
@@ -3021,9 +3153,10 @@ class Document(ItemFactoryBase,IDisposable):
 
   otherwise an exception with failure information will be thrown.
   """
-  pass
- def NewTransitionFitting(self,connector1,connector2):
-  """
+        pass
+
+    def NewTransitionFitting(self, connector1, connector2):
+        """
   NewTransitionFitting(self: Document,connector1: Connector,connector2: Connector) -> FamilyInstance
 
   
@@ -3048,9 +3181,10 @@ class Document(ItemFactoryBase,IDisposable):
 
   otherwise an exception with failure information will be thrown.
   """
-  pass
- def NewUnionFitting(self,connector1,connector2):
-  """
+        pass
+
+    def NewUnionFitting(self, connector1, connector2):
+        """
   NewUnionFitting(self: Document,connector1: Connector,connector2: Connector) -> FamilyInstance
 
   
@@ -3075,9 +3209,10 @@ class Document(ItemFactoryBase,IDisposable):
 
   otherwise an exception with failure information will be thrown.
   """
-  pass
- def NewZone(self,level,phase):
-  """
+        pass
+
+    def NewZone(self, level, phase):
+        """
   NewZone(self: Document,level: Level,phase: Phase) -> Zone
 
   
@@ -3092,25 +3227,31 @@ class Document(ItemFactoryBase,IDisposable):
 
    Returns: If successful a new Zone element within the project,otherwise ll.
   """
-  pass
- def ReleaseManagedResources(self,*args):
-  """ ReleaseManagedResources(self: APIObject) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: APIObject) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
 
-class eRefFace(Enum,IComparable,IFormattable,IConvertible):
- """
+    def ReleaseManagedResources(self, *args):
+        """ ReleaseManagedResources(self: APIObject) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: APIObject) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+
+class eRefFace(Enum, IComparable, IFormattable, IConvertible):
+    """
  Indicates the reference face. The Opening will be created at the direction perpendicular to 
 
  the reference face.
@@ -3119,37 +3260,48 @@ class eRefFace(Enum,IComparable,IFormattable,IConvertible):
 
  enum eRefFace,values: CenterX (1),CenterY (4),CenterZ (7)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- CenterX=None
- CenterY=None
- CenterZ=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    CenterX = None
+    CenterY = None
+    CenterZ = None
+    value__ = None
 
 
 class FamilyInstanceCreationData(object):
- """
+    """
  A class which wraps the arguments of FamilyInstance for batch creation.
 
  
@@ -3174,9 +3326,10 @@ class FamilyInstanceCreationData(object):
 
  FamilyInstanceCreationData(location: XYZ,symbol: FamilySymbol,structuralType: StructuralType)
  """
- @staticmethod
- def __new__(self,*__args):
-  """
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,proxy: object)
 
   __new__(cls: type,symbol: FamilySymbol,adaptivePoints: IList[XYZ])
@@ -3197,9 +3350,10 @@ class FamilyInstanceCreationData(object):
 
   __new__(cls: type,location: XYZ,symbol: FamilySymbol,structuralType: StructuralType)
   """
-  pass
- Axis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get or set the axis of the FamilyInstance
+        pass
+
+    Axis = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get or set the axis of the FamilyInstance
 
 
 
@@ -3211,8 +3365,10 @@ Set: Axis(self: FamilyInstanceCreationData)=value
 
 """
 
- RotateAngle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get or set the rotate angle of the FamilyInstance
+    RotateAngle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get or set the rotate angle of the FamilyInstance
 
 
 
@@ -3225,18 +3381,19 @@ Set: RotateAngle(self: FamilyInstanceCreationData)=value
 """
 
 
-
-class FamilyItemFactory(ItemFactoryBase,IDisposable):
- """
+class FamilyItemFactory(ItemFactoryBase, IDisposable):
+    """
  The Family Item Factory object is used to create new instances of elements within the
 
  Autodesk Revit Family.
  """
- def Dispose(self):
-  """ Dispose(self: APIObject,A_0: bool) """
-  pass
- def NewAngularDimension(self,view,arc,firstRef,secondRef,dimensionType=None):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: APIObject,A_0: bool) """
+        pass
+
+    def NewAngularDimension(self, view, arc, firstRef, secondRef, dimensionType=None):
+        """
   NewAngularDimension(self: FamilyItemFactory,view: View,arc: Arc,firstRef: Reference,secondRef: Reference) -> Dimension
 
   
@@ -3309,9 +3466,12 @@ class FamilyItemFactory(ItemFactoryBase,IDisposable):
 
     an exception with failure information will be thrown.
   """
-  pass
- def NewArcLengthDimension(self,view,arc,arcRef,firstRef,secondRef,dimensionType=None):
-  """
+        pass
+
+    def NewArcLengthDimension(
+        self, view, arc, arcRef, firstRef, secondRef, dimensionType=None
+    ):
+        """
   NewArcLengthDimension(self: FamilyItemFactory,view: View,arc: Arc,arcRef: Reference,firstRef: Reference,secondRef: Reference) -> Dimension
 
   
@@ -3400,9 +3560,10 @@ class FamilyItemFactory(ItemFactoryBase,IDisposable):
 
     otherwise an exception with failure information will be thrown.
   """
-  pass
- def NewBlend(self,isSolid,topProfile,baseProfile,sketchPlane):
-  """
+        pass
+
+    def NewBlend(self, isSolid, topProfile, baseProfile, sketchPlane):
+        """
   NewBlend(self: FamilyItemFactory,isSolid: bool,topProfile: CurveArray,baseProfile: CurveArray,sketchPlane: SketchPlane) -> Blend
 
   
@@ -3447,9 +3608,10 @@ class FamilyItemFactory(ItemFactoryBase,IDisposable):
 
     with failure information will be thrown.
   """
-  pass
- def NewControl(self,controlShape,view,origin):
-  """
+        pass
+
+    def NewControl(self, controlShape, view, origin):
+        """
   NewControl(self: FamilyItemFactory,controlShape: ControlShape,view: View,origin: XYZ) -> Control
 
   
@@ -3476,9 +3638,10 @@ class FamilyItemFactory(ItemFactoryBase,IDisposable):
 
     with error information will be thrown.
   """
-  pass
- def NewCurveByPoints(self,points):
-  """
+        pass
+
+    def NewCurveByPoints(self, points):
+        """
   NewCurveByPoints(self: FamilyItemFactory,points: ReferencePointArray) -> CurveByPoints
 
   
@@ -3499,9 +3662,10 @@ class FamilyItemFactory(ItemFactoryBase,IDisposable):
 
    Returns: The newly created curve.
   """
-  pass
- def NewDiameterDimension(self,view,arcRef,origin):
-  """
+        pass
+
+    def NewDiameterDimension(self, view, arcRef, origin):
+        """
   NewDiameterDimension(self: FamilyItemFactory,view: View,arcRef: Reference,origin: XYZ) -> Dimension
 
   
@@ -3522,9 +3686,10 @@ class FamilyItemFactory(ItemFactoryBase,IDisposable):
 
     an exception with failure information will be thrown.
   """
-  pass
- def NewExtrusion(self,isSolid,profile,sketchPlane,end):
-  """
+        pass
+
+    def NewExtrusion(self, isSolid, profile, sketchPlane, end):
+        """
   NewExtrusion(self: FamilyItemFactory,isSolid: bool,profile: CurveArrArray,sketchPlane: SketchPlane,end: float) -> Extrusion
 
   
@@ -3575,9 +3740,10 @@ class FamilyItemFactory(ItemFactoryBase,IDisposable):
 
     exception with failure information will be thrown.
   """
-  pass
- def NewExtrusionForm(self,isSolid,profile,direction):
-  """
+        pass
+
+    def NewExtrusionForm(self, isSolid, profile, direction):
+        """
   NewExtrusionForm(self: FamilyItemFactory,isSolid: bool,profile: ReferenceArray,direction: XYZ) -> Form
 
   
@@ -3604,9 +3770,10 @@ class FamilyItemFactory(ItemFactoryBase,IDisposable):
 
    Returns: If creation was successful new form is returned.
   """
-  pass
- def NewFormByCap(self,isSolid,profile):
-  """
+        pass
+
+    def NewFormByCap(self, isSolid, profile):
+        """
   NewFormByCap(self: FamilyItemFactory,isSolid: bool,profile: ReferenceArray) -> Form
 
   
@@ -3625,9 +3792,10 @@ class FamilyItemFactory(ItemFactoryBase,IDisposable):
 
    Returns: If creation was successful new form is returned.
   """
-  pass
- def NewFormByThickenSingleSurface(self,isSolid,singleSurfaceForm,thickenDir):
-  """
+        pass
+
+    def NewFormByThickenSingleSurface(self, isSolid, singleSurfaceForm, thickenDir):
+        """
   NewFormByThickenSingleSurface(self: FamilyItemFactory,isSolid: bool,singleSurfaceForm: Form,thickenDir: XYZ) -> Form
 
   
@@ -3654,9 +3822,10 @@ class FamilyItemFactory(ItemFactoryBase,IDisposable):
 
     element.
   """
-  pass
- def NewLinearDimension(self,view,line,references,dimensionType=None):
-  """
+        pass
+
+    def NewLinearDimension(self, view, line, references, dimensionType=None):
+        """
   NewLinearDimension(self: FamilyItemFactory,view: View,line: Line,references: ReferenceArray) -> Dimension
 
   
@@ -3721,9 +3890,10 @@ class FamilyItemFactory(ItemFactoryBase,IDisposable):
 
     exception with failure information will be thrown.
   """
-  pass
- def NewLoftForm(self,isSolid,profiles):
-  """
+        pass
+
+    def NewLoftForm(self, isSolid, profiles):
+        """
   NewLoftForm(self: FamilyItemFactory,isSolid: bool,profiles: ReferenceArrayArray) -> Form
 
   
@@ -3746,9 +3916,12 @@ class FamilyItemFactory(ItemFactoryBase,IDisposable):
 
    Returns: If creation was successful form is are returned.
   """
-  pass
- def NewModelText(self,text,modelTextType,sketchPlane,position,horizontalAlign,depth):
-  """
+        pass
+
+    def NewModelText(
+        self, text, modelTextType, sketchPlane, position, horizontalAlign, depth
+    ):
+        """
   NewModelText(self: FamilyItemFactory,text: str,modelTextType: ModelTextType,sketchPlane: SketchPlane,position: XYZ,horizontalAlign: HorizontalAlign,depth: float) -> ModelText
 
   
@@ -3783,9 +3956,10 @@ class FamilyItemFactory(ItemFactoryBase,IDisposable):
 
     exception with error information will be thrown.
   """
-  pass
- def NewOpening(self,host,profile):
-  """
+        pass
+
+    def NewOpening(self, host, profile):
+        """
   NewOpening(self: FamilyItemFactory,host: Element,profile: CurveArray) -> Opening
 
   
@@ -3818,9 +3992,10 @@ class FamilyItemFactory(ItemFactoryBase,IDisposable):
 
     with error information will be thrown.
   """
-  pass
- def NewRadialDimension(self,view,arcRef,origin,dimensionType=None):
-  """
+        pass
+
+    def NewRadialDimension(self, view, arcRef, origin, dimensionType=None):
+        """
   NewRadialDimension(self: FamilyItemFactory,view: View,arcRef: Reference,origin: XYZ) -> Dimension
 
   
@@ -3865,9 +4040,10 @@ class FamilyItemFactory(ItemFactoryBase,IDisposable):
 
     otherwise an exception with failure information will be thrown.
   """
-  pass
- def NewReferencePoint(self,A_0):
-  """
+        pass
+
+    def NewReferencePoint(self, A_0):
+        """
   NewReferencePoint(self: FamilyItemFactory,A_0: XYZ) -> ReferencePoint
 
   
@@ -3910,9 +4086,10 @@ class FamilyItemFactory(ItemFactoryBase,IDisposable):
 
    Returns: The newly created ReferencePoint.
   """
-  pass
- def NewRevolution(self,isSolid,profile,sketchPlane,axis,startAngle,endAngle):
-  """
+        pass
+
+    def NewRevolution(self, isSolid, profile, sketchPlane, axis, startAngle, endAngle):
+        """
   NewRevolution(self: FamilyItemFactory,isSolid: bool,profile: CurveArrArray,sketchPlane: SketchPlane,axis: Line,startAngle: float,endAngle: float) -> Revolution
 
   
@@ -3963,9 +4140,10 @@ class FamilyItemFactory(ItemFactoryBase,IDisposable):
 
     exception with failure information will be thrown.
   """
-  pass
- def NewRevolveForms(self,isSolid,profile,axis,startAngle,endAngle):
-  """
+        pass
+
+    def NewRevolveForms(self, isSolid, profile, axis, startAngle, endAngle):
+        """
   NewRevolveForms(self: FamilyItemFactory,isSolid: bool,profile: ReferenceArray,axis: Reference,startAngle: float,endAngle: float) -> FormArray
 
   
@@ -4000,9 +4178,10 @@ class FamilyItemFactory(ItemFactoryBase,IDisposable):
 
    Returns: If creation was successful new forms are returned.
   """
-  pass
- def NewSweep(self,isSolid,path,*__args):
-  """
+        pass
+
+    def NewSweep(self, isSolid, path, *__args):
+        """
   NewSweep(self: FamilyItemFactory,isSolid: bool,path: CurveArray,pathPlane: SketchPlane,profile: SweepProfile,profileLocationCurveIndex: int,profilePlaneLocation: ProfilePlaneLocation) -> Sweep
 
   
@@ -4145,9 +4324,10 @@ class FamilyItemFactory(ItemFactoryBase,IDisposable):
 
     with failure information will be thrown.
   """
-  pass
- def NewSweptBlend(self,isSolid,path,*__args):
-  """
+        pass
+
+    def NewSweptBlend(self, isSolid, path, *__args):
+        """
   NewSweptBlend(self: FamilyItemFactory,isSolid: bool,path: Curve,pathPlane: SketchPlane,bottomProfile: SweepProfile,topProfile: SweepProfile) -> SweptBlend
 
   
@@ -4258,9 +4438,10 @@ class FamilyItemFactory(ItemFactoryBase,IDisposable):
 
     exception with failure information will be thrown.
   """
-  pass
- def NewSweptBlendForm(self,isSolid,path,profiles):
-  """
+        pass
+
+    def NewSweptBlendForm(self, isSolid, path, profiles):
+        """
   NewSweptBlendForm(self: FamilyItemFactory,isSolid: bool,path: ReferenceArray,profiles: ReferenceArrayArray) -> Form
 
   
@@ -4297,9 +4478,10 @@ class FamilyItemFactory(ItemFactoryBase,IDisposable):
 
    Returns: If creation was successful new form is returned.
   """
-  pass
- def NewSymbolicCurve(self,curve,sketchPlane):
-  """
+        pass
+
+    def NewSymbolicCurve(self, curve, sketchPlane):
+        """
   NewSymbolicCurve(self: FamilyItemFactory,curve: Curve,sketchPlane: SketchPlane) -> SymbolicCurve
 
   
@@ -4314,20 +4496,24 @@ class FamilyItemFactory(ItemFactoryBase,IDisposable):
 
    Returns: The newly created symbolic curve.
   """
-  pass
- def ReleaseManagedResources(self,*args):
-  """ ReleaseManagedResources(self: APIObject) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: APIObject) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
 
+    def ReleaseManagedResources(self, *args):
+        """ ReleaseManagedResources(self: APIObject) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: APIObject) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

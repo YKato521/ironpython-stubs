@@ -8,11 +8,14 @@
 # no functions
 # classes
 
+
 class Generic(object, ITransform, GH_ISerializable):
     """
-    Generic()
+    Generic()
+
     Generic(transform: Transform)
     """
+
     def Duplicate(self):
         """ Duplicate(self: Generic) -> ITransform """
         pass
@@ -37,40 +40,50 @@ class Generic(object, ITransform, GH_ISerializable):
         """ Write(self: Generic, writer: GH_IWriter) -> bool """
         pass
 
-    def __init__(self, *args): #cannot find CLR method
+    def __init__(self, *args):  # cannot find CLR method
         """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, transform=None):
         """
-        __new__(cls: type)
+        __new__(cls: type)
+
         __new__(cls: type, transform: Transform)
         """
         pass
 
-    def __repr__(self, *args): #cannot find CLR method
+    def __repr__(self, *args):  # cannot find CLR method
         """ __repr__(self: object) -> str """
         pass
 
-    def __str__(self, *args): #cannot find CLR method
+    def __str__(self, *args):  # cannot find CLR method
         pass
 
-    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Name(self: Generic) -> str
-
+    Name = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Name(self: Generic) -> str
+
+
+
 """
 
-    Transform = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Transform(self: Generic) -> Transform
-
-Set: Transform(self: Generic) = value
-"""
+    Transform = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Transform(self: Generic) -> Transform
 
+
+
+Set: Transform(self: Generic) = value
+
+"""
 
 
 class Identity(object, ITransform, GH_ISerializable):
     """ Identity() """
+
     def Duplicate(self):
         """ Duplicate(self: Identity) -> ITransform """
         pass
@@ -95,22 +108,25 @@ class Identity(object, ITransform, GH_ISerializable):
         """ Write(self: Identity, writer: GH_IWriter) -> bool """
         pass
 
-    def __init__(self, *args): #cannot find CLR method
+    def __init__(self, *args):  # cannot find CLR method
         """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
         pass
 
-    def __repr__(self, *args): #cannot find CLR method
+    def __repr__(self, *args):  # cannot find CLR method
         """ __repr__(self: object) -> str """
         pass
 
-    def __str__(self, *args): #cannot find CLR method
+    def __str__(self, *args):  # cannot find CLR method
         pass
 
-    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Name(self: Identity) -> str
-
-"""
+    Name = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Name(self: Identity) -> str
 
+
+
+"""
 
 
 class ITransform(GH_ISerializable):
@@ -131,25 +147,30 @@ class ITransform(GH_ISerializable):
         """ ToString(self: ITransform) -> str """
         pass
 
-    def __init__(self, *args): #cannot find CLR method
+    def __init__(self, *args):  # cannot find CLR method
         """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
         pass
 
-    def __str__(self, *args): #cannot find CLR method
+    def __str__(self, *args):  # cannot find CLR method
         pass
 
-    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Name(self: ITransform) -> str
-
-"""
+    Name = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Name(self: ITransform) -> str
 
+
+
+"""
 
 
 class Orientation(object, ITransform, GH_ISerializable):
     """
-    Orientation()
+    Orientation()
+
     Orientation(source: Plane, target: Plane)
     """
+
     def Duplicate(self):
         """ Duplicate(self: Orientation) -> ITransform """
         pass
@@ -174,49 +195,65 @@ class Orientation(object, ITransform, GH_ISerializable):
         """ Write(self: Orientation, writer: GH_IWriter) -> bool """
         pass
 
-    def __init__(self, *args): #cannot find CLR method
+    def __init__(self, *args):  # cannot find CLR method
         """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, source=None, target=None):
         """
-        __new__(cls: type)
+        __new__(cls: type)
+
         __new__(cls: type, source: Plane, target: Plane)
         """
         pass
 
-    def __repr__(self, *args): #cannot find CLR method
+    def __repr__(self, *args):  # cannot find CLR method
         """ __repr__(self: object) -> str """
         pass
 
-    def __str__(self, *args): #cannot find CLR method
+    def __str__(self, *args):  # cannot find CLR method
         pass
 
-    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Name(self: Orientation) -> str
-
+    Name = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Name(self: Orientation) -> str
+
+
+
 """
 
-    SourceFrame = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: SourceFrame(self: Orientation) -> Plane
-
-Set: SourceFrame(self: Orientation) = value
+    SourceFrame = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: SourceFrame(self: Orientation) -> Plane
+
+
+
+Set: SourceFrame(self: Orientation) = value
+
 """
 
-    TargetFrame = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: TargetFrame(self: Orientation) -> Plane
-
-Set: TargetFrame(self: Orientation) = value
-"""
+    TargetFrame = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: TargetFrame(self: Orientation) -> Plane
 
+
+
+Set: TargetFrame(self: Orientation) = value
+
+"""
 
 
 class Projection(object, ITransform, GH_ISerializable):
     """
-    Projection()
+    Projection()
+
     Projection(plane: Plane)
     """
+
     def Duplicate(self):
         """ Duplicate(self: Projection) -> ITransform """
         pass
@@ -241,44 +278,56 @@ class Projection(object, ITransform, GH_ISerializable):
         """ Write(self: Projection, writer: GH_IWriter) -> bool """
         pass
 
-    def __init__(self, *args): #cannot find CLR method
+    def __init__(self, *args):  # cannot find CLR method
         """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, plane=None):
         """
-        __new__(cls: type)
+        __new__(cls: type)
+
         __new__(cls: type, plane: Plane)
         """
         pass
 
-    def __repr__(self, *args): #cannot find CLR method
+    def __repr__(self, *args):  # cannot find CLR method
         """ __repr__(self: object) -> str """
         pass
 
-    def __str__(self, *args): #cannot find CLR method
+    def __str__(self, *args):  # cannot find CLR method
         pass
 
-    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Name(self: Projection) -> str
-
+    Name = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Name(self: Projection) -> str
+
+
+
 """
 
-    ProjectionPlane = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: ProjectionPlane(self: Projection) -> Plane
-
-Set: ProjectionPlane(self: Projection) = value
-"""
+    ProjectionPlane = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: ProjectionPlane(self: Projection) -> Plane
 
+
+
+Set: ProjectionPlane(self: Projection) = value
+
+"""
 
 
 class Rotation(object, ITransform, GH_ISerializable):
     """
-    Rotation()
-    Rotation(center: Point3d, axis: Vector3d, angle: float)
+    Rotation()
+
+    Rotation(center: Point3d, axis: Vector3d, angle: float)
+
     Rotation(center: Point3d, dir0: Vector3d, dir1: Vector3d)
     """
+
     def Duplicate(self):
         """ Duplicate(self: Rotation) -> ITransform """
         pass
@@ -303,58 +352,82 @@ class Rotation(object, ITransform, GH_ISerializable):
         """ Write(self: Rotation, writer: GH_IWriter) -> bool """
         pass
 
-    def __init__(self, *args): #cannot find CLR method
+    def __init__(self, *args):  # cannot find CLR method
         """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, center=None, *__args):
         """
-        __new__(cls: type)
-        __new__(cls: type, center: Point3d, axis: Vector3d, angle: float)
+        __new__(cls: type)
+
+        __new__(cls: type, center: Point3d, axis: Vector3d, angle: float)
+
         __new__(cls: type, center: Point3d, dir0: Vector3d, dir1: Vector3d)
         """
         pass
 
-    def __repr__(self, *args): #cannot find CLR method
+    def __repr__(self, *args):  # cannot find CLR method
         """ __repr__(self: object) -> str """
         pass
 
-    def __str__(self, *args): #cannot find CLR method
+    def __str__(self, *args):  # cannot find CLR method
         pass
 
-    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Name(self: Rotation) -> str
-
+    Name = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Name(self: Rotation) -> str
+
+
+
 """
 
-    RotationAngle = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: RotationAngle(self: Rotation) -> float
-
-Set: RotationAngle(self: Rotation) = value
+    RotationAngle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: RotationAngle(self: Rotation) -> float
+
+
+
+Set: RotationAngle(self: Rotation) = value
+
 """
 
-    RotationAxis = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: RotationAxis(self: Rotation) -> Vector3d
-
-Set: RotationAxis(self: Rotation) = value
+    RotationAxis = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: RotationAxis(self: Rotation) -> Vector3d
+
+
+
+Set: RotationAxis(self: Rotation) = value
+
 """
 
-    RotationCenter = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: RotationCenter(self: Rotation) -> Point3d
-
-Set: RotationCenter(self: Rotation) = value
-"""
+    RotationCenter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: RotationCenter(self: Rotation) -> Point3d
 
+
+
+Set: RotationCenter(self: Rotation) = value
+
+"""
 
 
 class Scale(object, ITransform, GH_ISerializable):
     """
-    Scale()
-    Scale(point: Point3d, scale: float)
-    Scale(frame: Plane, scale: float)
+    Scale()
+
+    Scale(point: Point3d, scale: float)
+
+    Scale(frame: Plane, scale: float)
+
     Scale(frame: Plane, xscale: float, yscale: float, zscale: float)
     """
+
     def Duplicate(self):
         """ Duplicate(self: Scale) -> ITransform """
         pass
@@ -379,63 +452,91 @@ class Scale(object, ITransform, GH_ISerializable):
         """ Write(self: Scale, writer: GH_IWriter) -> bool """
         pass
 
-    def __init__(self, *args): #cannot find CLR method
+    def __init__(self, *args):  # cannot find CLR method
         """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, *__args):
         """
-        __new__(cls: type)
-        __new__(cls: type, point: Point3d, scale: float)
-        __new__(cls: type, frame: Plane, scale: float)
+        __new__(cls: type)
+
+        __new__(cls: type, point: Point3d, scale: float)
+
+        __new__(cls: type, frame: Plane, scale: float)
+
         __new__(cls: type, frame: Plane, xscale: float, yscale: float, zscale: float)
         """
         pass
 
-    def __repr__(self, *args): #cannot find CLR method
+    def __repr__(self, *args):  # cannot find CLR method
         """ __repr__(self: object) -> str """
         pass
 
-    def __str__(self, *args): #cannot find CLR method
+    def __str__(self, *args):  # cannot find CLR method
         pass
 
-    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Name(self: Scale) -> str
-
+    Name = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Name(self: Scale) -> str
+
+
+
 """
 
-    ScaleXFactor = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: ScaleXFactor(self: Scale) -> float
-
-Set: ScaleXFactor(self: Scale) = value
+    ScaleXFactor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: ScaleXFactor(self: Scale) -> float
+
+
+
+Set: ScaleXFactor(self: Scale) = value
+
 """
 
-    ScaleYFactor = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: ScaleYFactor(self: Scale) -> float
-
-Set: ScaleYFactor(self: Scale) = value
+    ScaleYFactor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: ScaleYFactor(self: Scale) -> float
+
+
+
+Set: ScaleYFactor(self: Scale) = value
+
 """
 
-    ScaleZFactor = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: ScaleZFactor(self: Scale) -> float
-
-Set: ScaleZFactor(self: Scale) = value
+    ScaleZFactor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: ScaleZFactor(self: Scale) -> float
+
+
+
+Set: ScaleZFactor(self: Scale) = value
+
 """
 
-    ScalingFrame = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: ScalingFrame(self: Scale) -> Plane
-
-Set: ScalingFrame(self: Scale) = value
-"""
+    ScalingFrame = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: ScalingFrame(self: Scale) -> Plane
 
+
+
+Set: ScalingFrame(self: Scale) = value
+
+"""
 
 
 class Translation(object, ITransform, GH_ISerializable):
     """
-    Translation()
+    Translation()
+
     Translation(translation: Vector3d)
     """
+
     def Duplicate(self):
         """ Duplicate(self: Translation) -> ITransform """
         pass
@@ -460,35 +561,42 @@ class Translation(object, ITransform, GH_ISerializable):
         """ Write(self: Translation, writer: GH_IWriter) -> bool """
         pass
 
-    def __init__(self, *args): #cannot find CLR method
+    def __init__(self, *args):  # cannot find CLR method
         """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, translation=None):
         """
-        __new__(cls: type)
+        __new__(cls: type)
+
         __new__(cls: type, translation: Vector3d)
         """
         pass
 
-    def __repr__(self, *args): #cannot find CLR method
+    def __repr__(self, *args):  # cannot find CLR method
         """ __repr__(self: object) -> str """
         pass
 
-    def __str__(self, *args): #cannot find CLR method
+    def __str__(self, *args):  # cannot find CLR method
         pass
 
-    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Name(self: Translation) -> str
-
+    Name = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Name(self: Translation) -> str
+
+
+
 """
 
-    TranslationVector = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: TranslationVector(self: Translation) -> Vector3d
-
-Set: TranslationVector(self: Translation) = value
+    TranslationVector = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: TranslationVector(self: Translation) -> Vector3d
+
+
+
+Set: TranslationVector(self: Translation) = value
+
 """
-
-
-

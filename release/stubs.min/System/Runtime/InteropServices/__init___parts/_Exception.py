@@ -1,7 +1,8 @@
 class _Exception:
- """ Exposes the public members of the System.Exception class to unmanaged code. """
- def Equals(self,obj):
-  """
+    """ Exposes the public members of the System.Exception class to unmanaged code. """
+
+    def Equals(self, obj):
+        """
   Equals(self: _Exception,obj: object) -> bool
 
   
@@ -18,9 +19,10 @@ class _Exception:
 
    Returns: true if the specified System.Object is equal to the current System.Object; otherwise,false.
   """
-  pass
- def GetBaseException(self):
-  """
+        pass
+
+    def GetBaseException(self):
+        """
   GetBaseException(self: _Exception) -> Exception
 
   
@@ -37,9 +39,10 @@ class _Exception:
 
     returns the current exception.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: _Exception) -> int
 
   
@@ -48,9 +51,10 @@ class _Exception:
 
    Returns: The hash code for the current instance.
   """
-  pass
- def GetObjectData(self,info,context):
-  """
+        pass
+
+    def GetObjectData(self, info, context):
+        """
   GetObjectData(self: _Exception,info: SerializationInfo,context: StreamingContext)
 
    Provides COM objects with version-independent access to the 
@@ -73,9 +77,10 @@ class _Exception:
 
     about the source or destination.
   """
-  pass
- def GetType(self):
-  """
+        pass
+
+    def GetType(self):
+        """
   GetType(self: _Exception) -> Type
 
   
@@ -84,9 +89,10 @@ class _Exception:
 
    Returns: A System.Type object that represents the exact runtime type of the current instance.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: _Exception) -> str
 
   
@@ -95,17 +101,21 @@ class _Exception:
 
    Returns: A string that represents the current System.Exception object.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- HelpLink=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Exception.HelpLink property.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    HelpLink = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Exception.HelpLink property.
 
 
 
@@ -117,8 +127,10 @@ Set: HelpLink(self: _Exception)=value
 
 """
 
- InnerException=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Exception.InnerException property.
+    InnerException = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Exception.InnerException property.
 
 
 
@@ -128,8 +140,8 @@ Get: InnerException(self: _Exception) -> Exception
 
 """
 
- Message=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Exception.Message property.
+    Message = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Exception.Message property.
 
 
 
@@ -139,8 +151,8 @@ Get: Message(self: _Exception) -> str
 
 """
 
- Source=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Exception.Source property.
+    Source = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Exception.Source property.
 
 
 
@@ -152,8 +164,10 @@ Set: Source(self: _Exception)=value
 
 """
 
- StackTrace=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Exception.StackTrace property.
+    StackTrace = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Exception.StackTrace property.
 
 
 
@@ -163,8 +177,10 @@ Get: StackTrace(self: _Exception) -> str
 
 """
 
- TargetSite=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Exception.TargetSite property.
+    TargetSite = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Exception.TargetSite property.
 
 
 
@@ -173,5 +189,3 @@ Get: TargetSite(self: _Exception) -> MethodBase
 
 
 """
-
-

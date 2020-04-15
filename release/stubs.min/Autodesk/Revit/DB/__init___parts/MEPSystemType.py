@@ -1,28 +1,38 @@
-class MEPSystemType(ElementType,IDisposable):
- """ A system type in the Autodesk Revit MEP product. """
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Abbreviation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the abbreviation,the short name,for the system type
+class MEPSystemType(ElementType, IDisposable):
+    """ A system type in the Autodesk Revit MEP product. """
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Abbreviation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies the abbreviation,the short name,for the system type
 
 
 
@@ -34,8 +44,10 @@ Set: Abbreviation(self: MEPSystemType)=value
 
 """
 
- CalculationLevel=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the calculation level for the system type.
+    CalculationLevel = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies the calculation level for the system type.
 
 
 
@@ -47,8 +59,8 @@ Set: CalculationLevel(self: MEPSystemType)=value
 
 """
 
- LineColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates the color that should override the line color for all components in the system.
+    LineColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Indicates the color that should override the line color for all components in the system.
 
 
 
@@ -60,8 +72,10 @@ Set: LineColor(self: MEPSystemType)=value
 
 """
 
- LinePatternId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates the line pattern color that should override the line color for all components in the system.
+    LinePatternId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates the line pattern color that should override the line color for all components in the system.
 
 
 
@@ -73,8 +87,10 @@ Set: LinePatternId(self: MEPSystemType)=value
 
 """
 
- LineWeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates the weight that should override the line weight for all components in the system.
+    LineWeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates the weight that should override the line weight for all components in the system.
 
 
 
@@ -86,8 +102,10 @@ Set: LineWeight(self: MEPSystemType)=value
 
 """
 
- MaterialId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates the material id that should override the material for all components in the system.
+    MaterialId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates the material id that should override the material for all components in the system.
 
 
 
@@ -99,8 +117,10 @@ Set: MaterialId(self: MEPSystemType)=value
 
 """
 
- SystemClassification=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the classification for the system type
+    SystemClassification = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies the classification for the system type
 
 
 
@@ -109,5 +129,3 @@ Get: SystemClassification(self: MEPSystemType) -> MEPSystemClassification
 
 
 """
-
-

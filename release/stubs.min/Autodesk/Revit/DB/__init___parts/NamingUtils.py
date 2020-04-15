@@ -1,8 +1,9 @@
 class NamingUtils(object):
- """ A collection of utilities related to element naming. """
- @staticmethod
- def CompareNames(nameA,nameB):
-  """
+    """ A collection of utilities related to element naming. """
+
+    @staticmethod
+    def CompareNames(nameA, nameB):
+        """
   CompareNames(nameA: str,nameB: str) -> int
 
   
@@ -27,10 +28,11 @@ class NamingUtils(object):
 
     after nameB in the ordering.
   """
-  pass
- @staticmethod
- def IsValidName(string):
-  """
+        pass
+
+    @staticmethod
+    def IsValidName(string):
+        """
   IsValidName(string: str) -> bool
 
   
@@ -45,9 +47,9 @@ class NamingUtils(object):
 
     prohibited characters and is invalid.
   """
-  pass
- __all__=[
-  'CompareNames',
-  'IsValidName',
- ]
+        pass
 
+    __all__ = [
+        "CompareNames",
+        "IsValidName",
+    ]

@@ -1,8 +1,9 @@
-class MultiReferenceAnnotation(Element,IDisposable):
- """ Multi-reference annotations are annotations pointing to more than one reference,consisting of a dimension and associated tag. """
- @staticmethod
- def AreReferencesValidForLinearDimension(document,ownerViewId,options):
-  """
+class MultiReferenceAnnotation(Element, IDisposable):
+    """ Multi-reference annotations are annotations pointing to more than one reference,consisting of a dimension and associated tag. """
+
+    @staticmethod
+    def AreReferencesValidForLinearDimension(document, ownerViewId, options):
+        """
   AreReferencesValidForLinearDimension(document: Document,ownerViewId: ElementId,options: MultiReferenceAnnotationOptions) -> bool
 
   
@@ -29,10 +30,11 @@ class MultiReferenceAnnotation(Element,IDisposable):
 
     multi-reference annotation can be created from the references.
   """
-  pass
- @staticmethod
- def AreReferencesValidForLinearFixedDimension(document,ownerViewId,options):
-  """
+        pass
+
+    @staticmethod
+    def AreReferencesValidForLinearFixedDimension(document, ownerViewId, options):
+        """
   AreReferencesValidForLinearFixedDimension(document: Document,ownerViewId: ElementId,options: MultiReferenceAnnotationOptions) -> bool
 
   
@@ -59,10 +61,11 @@ class MultiReferenceAnnotation(Element,IDisposable):
 
     multi-reference annotation can be created from the references.
   """
-  pass
- @staticmethod
- def Create(document,ownerViewId,options):
-  """
+        pass
+
+    @staticmethod
+    def Create(document, ownerViewId, options):
+        """
   Create(document: Document,ownerViewId: ElementId,options: MultiReferenceAnnotationOptions) -> MultiReferenceAnnotation
 
   
@@ -79,16 +82,19 @@ class MultiReferenceAnnotation(Element,IDisposable):
 
    Returns: The new MultiReferenceAnnotation.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- @staticmethod
- def IsLinearFixedDimensionDirectionValid(document,viewId,options):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    @staticmethod
+    def IsLinearFixedDimensionDirectionValid(document, viewId, options):
+        """
   IsLinearFixedDimensionDirectionValid(document: Document,viewId: ElementId,options: MultiReferenceAnnotationOptions) -> bool
 
   
@@ -117,24 +123,32 @@ class MultiReferenceAnnotation(Element,IDisposable):
 
      True if the DimensionStyleType is not LinearFixed.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- DimensionId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The child dimension owned by this multi-reference annotation.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    DimensionId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The child dimension owned by this multi-reference annotation.
 
 
 
@@ -144,8 +158,8 @@ Get: DimensionId(self: MultiReferenceAnnotation) -> ElementId
 
 """
 
- TagId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The child IndependentTag owned by this multi-reference annotation.
+    TagId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The child IndependentTag owned by this multi-reference annotation.
 
 
 
@@ -154,5 +168,3 @@ Get: TagId(self: MultiReferenceAnnotation) -> ElementId
 
 
 """
-
-

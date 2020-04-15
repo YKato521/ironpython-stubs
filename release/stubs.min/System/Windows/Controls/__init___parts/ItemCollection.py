@@ -1,7 +1,21 @@
-class ItemCollection(CollectionView,ICollectionView,IEnumerable,INotifyCollectionChanged,INotifyPropertyChanged,IList,ICollection,IEditableCollectionViewAddNewItem,IEditableCollectionView,ICollectionViewLiveShaping,IItemProperties,IWeakEventListener):
- """ Holds the list of items that constitute the content of an System.Windows.Controls.ItemsControl. """
- def Add(self,newItem):
-  """
+class ItemCollection(
+    CollectionView,
+    ICollectionView,
+    IEnumerable,
+    INotifyCollectionChanged,
+    INotifyPropertyChanged,
+    IList,
+    ICollection,
+    IEditableCollectionViewAddNewItem,
+    IEditableCollectionView,
+    ICollectionViewLiveShaping,
+    IItemProperties,
+    IWeakEventListener,
+):
+    """ Holds the list of items that constitute the content of an System.Windows.Controls.ItemsControl. """
+
+    def Add(self, newItem):
+        """
   Add(self: ItemCollection,newItem: object) -> int
 
   
@@ -14,32 +28,38 @@ class ItemCollection(CollectionView,ICollectionView,IEnumerable,INotifyCollectio
 
    Returns: The zero-based index at which the object is added or -1 if the item cannot be added.
   """
-  pass
- def add_CollectionChanged(self,*args):
-  """ add_CollectionChanged(self: CollectionView,value: NotifyCollectionChangedEventHandler) """
-  pass
- def add_PropertyChanged(self,*args):
-  """ add_PropertyChanged(self: CollectionView,value: PropertyChangedEventHandler) """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def add_CollectionChanged(self, *args):
+        """ add_CollectionChanged(self: CollectionView,value: NotifyCollectionChangedEventHandler) """
+        pass
+
+    def add_PropertyChanged(self, *args):
+        """ add_PropertyChanged(self: CollectionView,value: PropertyChangedEventHandler) """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: ItemCollection)
 
    Clears the collection and releases the references on all items currently in the collection.
   """
-  pass
- def ClearChangeLog(self,*args):
-  """
+        pass
+
+    def ClearChangeLog(self, *args):
+        """
   ClearChangeLog(self: CollectionView)
 
    Clears any pending changes from the change log.
   """
-  pass
- def ClearPendingChanges(self,*args):
-  """ ClearPendingChanges(self: CollectionView) """
-  pass
- def Contains(self,containItem):
-  """
+        pass
+
+    def ClearPendingChanges(self, *args):
+        """ ClearPendingChanges(self: CollectionView) """
+        pass
+
+    def Contains(self, containItem):
+        """
   Contains(self: ItemCollection,containItem: object) -> bool
 
   
@@ -54,9 +74,10 @@ class ItemCollection(CollectionView,ICollectionView,IEnumerable,INotifyCollectio
 
     otherwise,false.
   """
-  pass
- def CopyTo(self,array,index):
-  """
+        pass
+
+    def CopyTo(self, array, index):
+        """
   CopyTo(self: ItemCollection,array: Array,index: int)
 
    Copies the elements of the collection to an array,starting at a particular array index.
@@ -67,9 +88,10 @@ class ItemCollection(CollectionView,ICollectionView,IEnumerable,INotifyCollectio
 
    index: The zero-based index in the destination array.
   """
-  pass
- def DeferRefresh(self):
-  """
+        pass
+
+    def DeferRefresh(self):
+        """
   DeferRefresh(self: ItemCollection) -> IDisposable
 
   
@@ -78,12 +100,14 @@ class ItemCollection(CollectionView,ICollectionView,IEnumerable,INotifyCollectio
 
    Returns: An System.IDisposable object that you can use to dispose of the calling object.
   """
-  pass
- def GetEnumerator(self,*args):
-  """ GetEnumerator(self: ItemCollection) -> IEnumerator """
-  pass
- def GetItemAt(self,index):
-  """
+        pass
+
+    def GetEnumerator(self, *args):
+        """ GetEnumerator(self: ItemCollection) -> IEnumerator """
+        pass
+
+    def GetItemAt(self, index):
+        """
   GetItemAt(self: ItemCollection,index: int) -> object
 
   
@@ -96,9 +120,10 @@ class ItemCollection(CollectionView,ICollectionView,IEnumerable,INotifyCollectio
 
    Returns: The item at the specified zero-based index in this view.
   """
-  pass
- def IndexOf(self,item):
-  """
+        pass
+
+    def IndexOf(self, item):
+        """
   IndexOf(self: ItemCollection,item: object) -> int
 
   
@@ -111,9 +136,10 @@ class ItemCollection(CollectionView,ICollectionView,IEnumerable,INotifyCollectio
 
    Returns: The index of the item in the collection,or -1 if the item does not exist in the collection.
   """
-  pass
- def Insert(self,insertIndex,insertItem):
-  """
+        pass
+
+    def Insert(self, insertIndex, insertItem):
+        """
   Insert(self: ItemCollection,insertIndex: int,insertItem: object)
 
    Inserts an element into the collection at the specified index.
@@ -124,9 +150,10 @@ class ItemCollection(CollectionView,ICollectionView,IEnumerable,INotifyCollectio
 
    insertItem: The item to insert.
   """
-  pass
- def MoveCurrentTo(self,item):
-  """
+        pass
+
+    def MoveCurrentTo(self, item):
+        """
   MoveCurrentTo(self: ItemCollection,item: object) -> bool
 
   
@@ -145,9 +172,10 @@ class ItemCollection(CollectionView,ICollectionView,IEnumerable,INotifyCollectio
 
     item within the view; otherwise,false.
   """
-  pass
- def MoveCurrentToFirst(self):
-  """
+        pass
+
+    def MoveCurrentToFirst(self):
+        """
   MoveCurrentToFirst(self: ItemCollection) -> bool
 
   
@@ -158,9 +186,10 @@ class ItemCollection(CollectionView,ICollectionView,IEnumerable,INotifyCollectio
 
     item within the view; otherwise,false.
   """
-  pass
- def MoveCurrentToLast(self):
-  """
+        pass
+
+    def MoveCurrentToLast(self):
+        """
   MoveCurrentToLast(self: ItemCollection) -> bool
 
   
@@ -171,9 +200,10 @@ class ItemCollection(CollectionView,ICollectionView,IEnumerable,INotifyCollectio
 
     item within the view; otherwise,false.
   """
-  pass
- def MoveCurrentToNext(self):
-  """
+        pass
+
+    def MoveCurrentToNext(self):
+        """
   MoveCurrentToNext(self: ItemCollection) -> bool
 
   
@@ -188,9 +218,10 @@ class ItemCollection(CollectionView,ICollectionView,IEnumerable,INotifyCollectio
 
     item within the view; otherwise,false.
   """
-  pass
- def MoveCurrentToPosition(self,position):
-  """
+        pass
+
+    def MoveCurrentToPosition(self, position):
+        """
   MoveCurrentToPosition(self: ItemCollection,position: int) -> bool
 
   
@@ -213,9 +244,10 @@ class ItemCollection(CollectionView,ICollectionView,IEnumerable,INotifyCollectio
 
     item within the view; otherwise,false.
   """
-  pass
- def MoveCurrentToPrevious(self):
-  """
+        pass
+
+    def MoveCurrentToPrevious(self):
+        """
   MoveCurrentToPrevious(self: ItemCollection) -> bool
 
   
@@ -230,9 +262,10 @@ class ItemCollection(CollectionView,ICollectionView,IEnumerable,INotifyCollectio
 
     item within the view; otherwise,false.
   """
-  pass
- def OKToChangeCurrent(self,*args):
-  """
+        pass
+
+    def OKToChangeCurrent(self, *args):
+        """
   OKToChangeCurrent(self: CollectionView) -> bool
 
   
@@ -245,12 +278,14 @@ class ItemCollection(CollectionView,ICollectionView,IEnumerable,INotifyCollectio
 
    Returns: false if a listener cancels the change; otherwise,true.
   """
-  pass
- def OnAllowsCrossThreadChangesChanged(self,*args):
-  """ OnAllowsCrossThreadChangesChanged(self: CollectionView) """
-  pass
- def OnBeginChangeLogging(self,*args):
-  """
+        pass
+
+    def OnAllowsCrossThreadChangesChanged(self, *args):
+        """ OnAllowsCrossThreadChangesChanged(self: CollectionView) """
+        pass
+
+    def OnBeginChangeLogging(self, *args):
+        """
   OnBeginChangeLogging(self: CollectionView,args: NotifyCollectionChangedEventArgs)
 
    Called by the base class to notify the derived class that an 
@@ -267,9 +302,10 @@ class ItemCollection(CollectionView,ICollectionView,IEnumerable,INotifyCollectio
 
     change log.
   """
-  pass
- def OnCollectionChanged(self,*args):
-  """
+        pass
+
+    def OnCollectionChanged(self, *args):
+        """
   OnCollectionChanged(self: CollectionView,sender: object,args: NotifyCollectionChangedEventArgs)
 
    Raises the System.Windows.Data.CollectionView.CollectionChanged event.
@@ -294,16 +330,18 @@ class ItemCollection(CollectionView,ICollectionView,IEnumerable,INotifyCollectio
 
     handler.
   """
-  pass
- def OnCurrentChanged(self,*args):
-  """
+        pass
+
+    def OnCurrentChanged(self, *args):
+        """
   OnCurrentChanged(self: CollectionView)
 
    Raises the System.Windows.Data.CollectionView.CurrentChanged event.
   """
-  pass
- def OnCurrentChanging(self,*args):
-  """
+        pass
+
+    def OnCurrentChanging(self, *args):
+        """
   OnCurrentChanging(self: CollectionView,args: CurrentChangingEventArgs)
 
    Raises the System.Windows.Data.CollectionView.CurrentChanging event with the specified arguments.
@@ -316,9 +354,10 @@ class ItemCollection(CollectionView,ICollectionView,IEnumerable,INotifyCollectio
 
    Raises a System.Windows.Data.CollectionView.CurrentChanging event that is not cancelable.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: CollectionView,e: PropertyChangedEventArgs)
 
    Raises the System.ComponentModel.INotifyPropertyChanged.PropertyChanged event using the 
@@ -331,9 +370,10 @@ class ItemCollection(CollectionView,ICollectionView,IEnumerable,INotifyCollectio
 
    e: Arguments of the event being raised.
   """
-  pass
- def PassesFilter(self,item):
-  """
+        pass
+
+    def PassesFilter(self, item):
+        """
   PassesFilter(self: ItemCollection,item: object) -> bool
 
   
@@ -348,9 +388,10 @@ class ItemCollection(CollectionView,ICollectionView,IEnumerable,INotifyCollectio
 
     collection view; otherwise,false.
   """
-  pass
- def ProcessCollectionChanged(self,*args):
-  """
+        pass
+
+    def ProcessCollectionChanged(self, *args):
+        """
   ProcessCollectionChanged(self: CollectionView,args: NotifyCollectionChangedEventArgs)
 
    When overridden in a derived class,processes a single change on the UI�thread.
@@ -359,24 +400,28 @@ class ItemCollection(CollectionView,ICollectionView,IEnumerable,INotifyCollectio
 
    args: The System.Collections.Specialized.NotifyCollectionChangedEventArgs object to process.
   """
-  pass
- def ProcessPendingChanges(self,*args):
-  """ ProcessPendingChanges(self: CollectionView) """
-  pass
- def RefreshOrDefer(self,*args):
-  """
+        pass
+
+    def ProcessPendingChanges(self, *args):
+        """ ProcessPendingChanges(self: CollectionView) """
+        pass
+
+    def RefreshOrDefer(self, *args):
+        """
   RefreshOrDefer(self: CollectionView)
 
    Refreshes the view or specifies that the view needs to be refreshed when the defer cycle 
 
     completes.
   """
-  pass
- def RefreshOverride(self,*args):
-  """ RefreshOverride(self: ItemCollection) """
-  pass
- def Remove(self,removeItem):
-  """
+        pass
+
+    def RefreshOverride(self, *args):
+        """ RefreshOverride(self: ItemCollection) """
+        pass
+
+    def Remove(self, removeItem):
+        """
   Remove(self: ItemCollection,removeItem: object)
 
    Removes the specified item reference from the collection or view.
@@ -385,9 +430,10 @@ class ItemCollection(CollectionView,ICollectionView,IEnumerable,INotifyCollectio
 
    removeItem: The object to remove.
   """
-  pass
- def RemoveAt(self,removeIndex):
-  """
+        pass
+
+    def RemoveAt(self, removeIndex):
+        """
   RemoveAt(self: ItemCollection,removeIndex: int)
 
    Removes the item at the specified index of the collection or view.
@@ -396,15 +442,18 @@ class ItemCollection(CollectionView,ICollectionView,IEnumerable,INotifyCollectio
 
    removeIndex: The zero-based index of the item to remove.
   """
-  pass
- def remove_CollectionChanged(self,*args):
-  """ remove_CollectionChanged(self: CollectionView,value: NotifyCollectionChangedEventHandler) """
-  pass
- def remove_PropertyChanged(self,*args):
-  """ remove_PropertyChanged(self: CollectionView,value: PropertyChangedEventHandler) """
-  pass
- def SetCurrent(self,*args):
-  """
+        pass
+
+    def remove_CollectionChanged(self, *args):
+        """ remove_CollectionChanged(self: CollectionView,value: NotifyCollectionChangedEventHandler) """
+        pass
+
+    def remove_PropertyChanged(self, *args):
+        """ remove_PropertyChanged(self: CollectionView,value: PropertyChangedEventHandler) """
+        pass
+
+    def SetCurrent(self, *args):
+        """
   SetCurrent(self: CollectionView,newItem: object,newPosition: int,count: int)
 
    Sets the specified item and index as the values of the 
@@ -441,12 +490,14 @@ class ItemCollection(CollectionView,ICollectionView,IEnumerable,INotifyCollectio
 
    newPosition: The value to set as the System.Windows.Data.CollectionView.CurrentPosition property value.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IList,value: object) -> bool
 
   
@@ -459,47 +510,61 @@ class ItemCollection(CollectionView,ICollectionView,IEnumerable,INotifyCollectio
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- AllowsCrossThreadChanges=property(lambda self: object(),lambda self,v: None,lambda self: None)
+        pass
 
- CanChangeLiveFiltering=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: CanChangeLiveFiltering(self: ItemCollection) -> bool
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
 
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
 
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
 
-"""
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
 
- CanChangeLiveGrouping=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: CanChangeLiveGrouping(self: ItemCollection) -> bool
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
 
+    AllowsCrossThreadChanges = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
-
-"""
-
- CanChangeLiveSorting=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: CanChangeLiveSorting(self: ItemCollection) -> bool
+    CanChangeLiveFiltering = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: CanChangeLiveFiltering(self: ItemCollection) -> bool
 
 
 
 """
 
- CanFilter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether this collection view supports filtering.
+    CanChangeLiveGrouping = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: CanChangeLiveGrouping(self: ItemCollection) -> bool
+
+
+
+"""
+
+    CanChangeLiveSorting = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: CanChangeLiveSorting(self: ItemCollection) -> bool
+
+
+
+"""
+
+    CanFilter = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether this collection view supports filtering.
 
 
 
@@ -509,8 +574,8 @@ Get: CanFilter(self: ItemCollection) -> bool
 
 """
 
- CanGroup=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether this collection view supports grouping.
+    CanGroup = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether this collection view supports grouping.
 
 
 
@@ -520,8 +585,8 @@ Get: CanGroup(self: ItemCollection) -> bool
 
 """
 
- CanSort=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether this collection view supports sorting.
+    CanSort = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether this collection view supports sorting.
 
 
 
@@ -531,8 +596,8 @@ Get: CanSort(self: ItemCollection) -> bool
 
 """
 
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of records in the collection.
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of records in the collection.
 
 
 
@@ -542,8 +607,10 @@ Get: Count(self: ItemCollection) -> int
 
 """
 
- CurrentItem=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the current item in the view.
+    CurrentItem = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the current item in the view.
 
 
 
@@ -553,8 +620,10 @@ Get: CurrentItem(self: ItemCollection) -> object
 
 """
 
- CurrentPosition=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the ordinal position of the current item within the view.
+    CurrentPosition = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the ordinal position of the current item within the view.
 
 
 
@@ -564,8 +633,8 @@ Get: CurrentPosition(self: ItemCollection) -> int
 
 """
 
- Filter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a callback used to determine if an item is suitable for inclusion in the view.
+    Filter = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a callback used to determine if an item is suitable for inclusion in the view.
 
 
 
@@ -577,8 +646,10 @@ Set: Filter(self: ItemCollection)=value
 
 """
 
- GroupDescriptions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of System.ComponentModel.GroupDescription objects that defines how to group the items.
+    GroupDescriptions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a collection of System.ComponentModel.GroupDescription objects that defines how to group the items.
 
 
 
@@ -588,8 +659,8 @@ Get: GroupDescriptions(self: ItemCollection) -> ObservableCollection[GroupDescri
 
 """
 
- Groups=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the top-level groups that are constructed according to the System.Windows.Controls.ItemCollection.GroupDescriptions.
+    Groups = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the top-level groups that are constructed according to the System.Windows.Controls.ItemCollection.GroupDescriptions.
 
 
 
@@ -599,8 +670,10 @@ Get: Groups(self: ItemCollection) -> ReadOnlyObservableCollection[object]
 
 """
 
- IsCurrentAfterLast=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the current item of the view is beyond the end of the collection.
+    IsCurrentAfterLast = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the current item of the view is beyond the end of the collection.
 
 
 
@@ -610,8 +683,10 @@ Get: IsCurrentAfterLast(self: ItemCollection) -> bool
 
 """
 
- IsCurrentBeforeFirst=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the current item of the view is beyond the beginning of the collection.
+    IsCurrentBeforeFirst = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the current item of the view is beyond the beginning of the collection.
 
 
 
@@ -621,22 +696,24 @@ Get: IsCurrentBeforeFirst(self: ItemCollection) -> bool
 
 """
 
- IsCurrentInSync=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.Windows.Data.CollectionView.CurrentItem is at the System.Windows.Data.CollectionView.CurrentPosition.
+    IsCurrentInSync = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.Windows.Data.CollectionView.CurrentItem is at the System.Windows.Data.CollectionView.CurrentPosition.
 
 
 
 """
 
- IsDynamic=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the underlying collection provides change notifications.
+    IsDynamic = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether the underlying collection provides change notifications.
 
 
 
 """
 
- IsEmpty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the resulting (filtered) view is empty.
+    IsEmpty = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether the resulting (filtered) view is empty.
 
 
 
@@ -646,8 +723,10 @@ Get: IsEmpty(self: ItemCollection) -> bool
 
 """
 
- IsLiveFiltering=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsLiveFiltering(self: ItemCollection) -> Nullable[bool]
+    IsLiveFiltering = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IsLiveFiltering(self: ItemCollection) -> Nullable[bool]
 
 
 
@@ -655,8 +734,10 @@ Set: IsLiveFiltering(self: ItemCollection)=value
 
 """
 
- IsLiveGrouping=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsLiveGrouping(self: ItemCollection) -> Nullable[bool]
+    IsLiveGrouping = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IsLiveGrouping(self: ItemCollection) -> Nullable[bool]
 
 
 
@@ -664,8 +745,10 @@ Set: IsLiveGrouping(self: ItemCollection)=value
 
 """
 
- IsLiveSorting=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsLiveSorting(self: ItemCollection) -> Nullable[bool]
+    IsLiveSorting = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IsLiveSorting(self: ItemCollection) -> Nullable[bool]
 
 
 
@@ -673,29 +756,37 @@ Set: IsLiveSorting(self: ItemCollection)=value
 
 """
 
- LiveFilteringProperties=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: LiveFilteringProperties(self: ItemCollection) -> ObservableCollection[str]
+    LiveFilteringProperties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: LiveFilteringProperties(self: ItemCollection) -> ObservableCollection[str]
 
 
 
 """
 
- LiveGroupingProperties=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: LiveGroupingProperties(self: ItemCollection) -> ObservableCollection[str]
+    LiveGroupingProperties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: LiveGroupingProperties(self: ItemCollection) -> ObservableCollection[str]
 
 
 
 """
 
- LiveSortingProperties=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: LiveSortingProperties(self: ItemCollection) -> ObservableCollection[str]
+    LiveSortingProperties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: LiveSortingProperties(self: ItemCollection) -> ObservableCollection[str]
 
 
 
 """
 
- NeedsRefresh=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the collection needs to be refreshed.
+    NeedsRefresh = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the collection needs to be refreshed.
 
 
 
@@ -705,8 +796,10 @@ Get: NeedsRefresh(self: ItemCollection) -> bool
 
 """
 
- SortDescriptions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of System.ComponentModel.SortDescription objects that describe how the items in the collection are sorted in the view.
+    SortDescriptions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a collection of System.ComponentModel.SortDescription objects that describe how the items in the collection are sorted in the view.
 
 
 
@@ -716,8 +809,10 @@ Get: SortDescriptions(self: ItemCollection) -> SortDescriptionCollection
 
 """
 
- SourceCollection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the unsorted and unfiltered collection that underlies this collection view.
+    SourceCollection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the unsorted and unfiltered collection that underlies this collection view.
 
 
 
@@ -727,11 +822,11 @@ Get: SourceCollection(self: ItemCollection) -> IEnumerable
 
 """
 
- UpdatedOutsideDispatcher=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether it has been necessary to update the change log because a System.Windows.Data.CollectionView.CollectionChanged notification has been received on a different thread without first entering the user interface (UI) thread dispatcher.
+    UpdatedOutsideDispatcher = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether it has been necessary to update the change log because a System.Windows.Data.CollectionView.CollectionChanged notification has been received on a different thread without first entering the user interface (UI) thread dispatcher.
 
 
 
 """
-
-

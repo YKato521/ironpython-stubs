@@ -1,7 +1,8 @@
-class FailuresAccessor(object,IDisposable):
- """ An interface class that provides access to failure information posted in a document and methods to resolve these failures. """
- def CanCommitPendingTransaction(self):
-  """
+class FailuresAccessor(object, IDisposable):
+    """ An interface class that provides access to failure information posted in a document and methods to resolve these failures. """
+
+    def CanCommitPendingTransaction(self):
+        """
   CanCommitPendingTransaction(self: FailuresAccessor) -> bool
 
   
@@ -16,9 +17,10 @@ class FailuresAccessor(object,IDisposable):
 
     committed.
   """
-  pass
- def CanRollBackPendingTransaction(self):
-  """
+        pass
+
+    def CanRollBackPendingTransaction(self):
+        """
   CanRollBackPendingTransaction(self: FailuresAccessor) -> bool
 
   
@@ -33,9 +35,10 @@ class FailuresAccessor(object,IDisposable):
 
     rolled back
   """
-  pass
- def CommitPendingTransaction(self):
-  """
+        pass
+
+    def CommitPendingTransaction(self):
+        """
   CommitPendingTransaction(self: FailuresAccessor) -> TransactionStatus
 
   
@@ -44,21 +47,24 @@ class FailuresAccessor(object,IDisposable):
 
    Returns: Result of attempt to commit the pending transaction.
   """
-  pass
- def DeleteAllWarnings(self):
-  """
+        pass
+
+    def DeleteAllWarnings(self):
+        """
   DeleteAllWarnings(self: FailuresAccessor)
 
    Deletes all FailureMessages of severity "Warning" currently posted in a 
 
     document.
   """
-  pass
- def DeleteElements(self,idsToDelete):
-  """ DeleteElements(self: FailuresAccessor,idsToDelete: IList[ElementId]) """
-  pass
- def DeleteWarning(self,failure):
-  """
+        pass
+
+    def DeleteElements(self, idsToDelete):
+        """ DeleteElements(self: FailuresAccessor,idsToDelete: IList[ElementId]) """
+        pass
+
+    def DeleteWarning(self, failure):
+        """
   DeleteWarning(self: FailuresAccessor,failure: FailureMessageAccessor)
 
    Deletes one specific failure message of severity "Warning".
@@ -67,12 +73,14 @@ class FailuresAccessor(object,IDisposable):
 
    failure: The accessor to the warning to be deleted.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: FailuresAccessor) """
-  pass
- def GetAttemptedResolutionTypes(self,failure):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: FailuresAccessor) """
+        pass
+
+    def GetAttemptedResolutionTypes(self, failure):
+        """
   GetAttemptedResolutionTypes(self: FailuresAccessor,failure: FailureMessageAccessor) -> IList[FailureResolutionType]
 
   
@@ -89,9 +97,10 @@ class FailuresAccessor(object,IDisposable):
 
    Returns: The list of the types of failure resolutions attempted for the failure.
   """
-  pass
- def GetDocument(self):
-  """
+        pass
+
+    def GetDocument(self):
+        """
   GetDocument(self: FailuresAccessor) -> Document
 
   
@@ -104,9 +113,10 @@ class FailuresAccessor(object,IDisposable):
 
    Returns: The document for which failures preprocessing or processing is being performed.
   """
-  pass
- def GetFailureHandlingOptions(self):
-  """
+        pass
+
+    def GetFailureHandlingOptions(self):
+        """
   GetFailureHandlingOptions(self: FailuresAccessor) -> FailureHandlingOptions
 
   
@@ -119,9 +129,10 @@ class FailuresAccessor(object,IDisposable):
 
    Returns: The failure handling options for transaction currently being finished.
   """
-  pass
- def GetFailureMessages(self,severity=None):
-  """
+        pass
+
+    def GetFailureMessages(self, severity=None):
+        """
   GetFailureMessages(self: FailuresAccessor) -> IList[FailureMessageAccessor]
 
   
@@ -158,9 +169,10 @@ class FailuresAccessor(object,IDisposable):
 
     document.
   """
-  pass
- def GetSeverity(self):
-  """
+        pass
+
+    def GetSeverity(self):
+        """
   GetSeverity(self: FailuresAccessor) -> FailureSeverity
 
   
@@ -169,9 +181,10 @@ class FailuresAccessor(object,IDisposable):
 
    Returns: The highest severity of a failure message currently posted in the document.
   """
-  pass
- def GetTransactionName(self):
-  """
+        pass
+
+    def GetTransactionName(self):
+        """
   GetTransactionName(self: FailuresAccessor) -> str
 
   
@@ -180,9 +193,10 @@ class FailuresAccessor(object,IDisposable):
 
    Returns: The name of the transaction for which failures are being processed.
   """
-  pass
- def IsActive(self):
-  """
+        pass
+
+    def IsActive(self):
+        """
   IsActive(self: FailuresAccessor) -> bool
 
   
@@ -191,9 +205,10 @@ class FailuresAccessor(object,IDisposable):
 
    Returns: True if this instance is currently active and can be used.
   """
-  pass
- def IsElementsDeletionPermitted(self,idsToDelete=None,reason=None):
-  """
+        pass
+
+    def IsElementsDeletionPermitted(self, idsToDelete=None, reason=None):
+        """
   IsElementsDeletionPermitted(self: FailuresAccessor) -> bool
 
   
@@ -206,9 +221,10 @@ class FailuresAccessor(object,IDisposable):
 
   IsElementsDeletionPermitted(self: FailuresAccessor,idsToDelete: IList[ElementId]) -> (bool,str)
   """
-  pass
- def IsFailureResolutionPermitted(self,failure=None,resolutionType=None):
-  """
+        pass
+
+    def IsFailureResolutionPermitted(self, failure=None, resolutionType=None):
+        """
   IsFailureResolutionPermitted(self: FailuresAccessor) -> bool
 
   
@@ -243,9 +259,10 @@ class FailuresAccessor(object,IDisposable):
 
    Returns: True if resolution of the failure using given resolution type is permitted.
   """
-  pass
- def IsPending(self):
-  """
+        pass
+
+    def IsPending(self):
+        """
   IsPending(self: FailuresAccessor) -> bool
 
   
@@ -254,9 +271,10 @@ class FailuresAccessor(object,IDisposable):
 
    Returns: True if the failures processing is in the pending state.
   """
-  pass
- def IsTransactionBeingCommitted(self):
-  """
+        pass
+
+    def IsTransactionBeingCommitted(self):
+        """
   IsTransactionBeingCommitted(self: FailuresAccessor) -> bool
 
   
@@ -271,12 +289,14 @@ class FailuresAccessor(object,IDisposable):
 
     being rolled back.
   """
-  pass
- def JournalFailures(self,failures):
-  """ JournalFailures(self: FailuresAccessor,failures: IList[FailureMessageAccessor]) """
-  pass
- def PostFailure(self,failure):
-  """
+        pass
+
+    def JournalFailures(self, failures):
+        """ JournalFailures(self: FailuresAccessor,failures: IList[FailureMessageAccessor]) """
+        pass
+
+    def PostFailure(self, failure):
+        """
   PostFailure(self: FailuresAccessor,failure: FailureMessage)
 
    Posts an additional failure message to be processed for the current transaction.
@@ -285,12 +305,14 @@ class FailuresAccessor(object,IDisposable):
 
    failure: Failure message to post.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: FailuresAccessor,disposing: bool) """
-  pass
- def ReplaceFailures(self,failure):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: FailuresAccessor,disposing: bool) """
+        pass
+
+    def ReplaceFailures(self, failure):
+        """
   ReplaceFailures(self: FailuresAccessor,failure: FailureMessage)
 
    Deletes all failure messages currently posted in a document and replaces them 
@@ -305,9 +327,10 @@ class FailuresAccessor(object,IDisposable):
 
     severity DocumentCorruption.
   """
-  pass
- def ResolveFailure(self,failure):
-  """
+        pass
+
+    def ResolveFailure(self, failure):
+        """
   ResolveFailure(self: FailuresAccessor,failure: FailureMessageAccessor)
 
    Resolves one failure using the failure resolution type last set for it.
@@ -316,12 +339,14 @@ class FailuresAccessor(object,IDisposable):
 
    failure: The accessor to the failure to be resolved.
   """
-  pass
- def ResolveFailures(self,failures):
-  """ ResolveFailures(self: FailuresAccessor,failures: IList[FailureMessageAccessor]) """
-  pass
- def RollBackPendingTransaction(self):
-  """
+        pass
+
+    def ResolveFailures(self, failures):
+        """ ResolveFailures(self: FailuresAccessor,failures: IList[FailureMessageAccessor]) """
+        pass
+
+    def RollBackPendingTransaction(self):
+        """
   RollBackPendingTransaction(self: FailuresAccessor) -> TransactionStatus
 
   
@@ -330,9 +355,10 @@ class FailuresAccessor(object,IDisposable):
 
    Returns: Result of attempt to roll back the pending transaction.
   """
-  pass
- def SetFailureHandlingOptions(self,options):
-  """
+        pass
+
+    def SetFailureHandlingOptions(self, options):
+        """
   SetFailureHandlingOptions(self: FailuresAccessor,options: FailureHandlingOptions)
 
    Sets failure handling options for the transaction currently being finished.
@@ -343,9 +369,10 @@ class FailuresAccessor(object,IDisposable):
 
     finished.
   """
-  pass
- def SetTransactionName(self,transactionName):
-  """
+        pass
+
+    def SetTransactionName(self, transactionName):
+        """
   SetTransactionName(self: FailuresAccessor,transactionName: str)
 
    Changes the name of the transaction for which failures are being processed.
@@ -354,21 +381,28 @@ class FailuresAccessor(object,IDisposable):
 
    transactionName: The name of the transaction to set.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -377,5 +411,3 @@ Get: IsValidObject(self: FailuresAccessor) -> bool
 
 
 """
-
-

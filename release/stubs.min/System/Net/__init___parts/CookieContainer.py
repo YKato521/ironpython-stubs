@@ -1,5 +1,5 @@
 class CookieContainer(object):
- """
+    """
  Provides a container for a collection of System.Net.CookieCollection objects.
 
  
@@ -10,8 +10,9 @@ class CookieContainer(object):
 
  CookieContainer(capacity: int,perDomainCapacity: int,maxCookieSize: int)
  """
- def Add(self,*__args):
-  """
+
+    def Add(self, *__args):
+        """
   Add(self: CookieContainer,uri: Uri,cookie: Cookie)
 
    Adds a System.Net.Cookie to the System.Net.CookieContainer for a particular URI.
@@ -56,9 +57,10 @@ class CookieContainer(object):
 
    cookies: The System.Net.CookieCollection to be added to the System.Net.CookieContainer.
   """
-  pass
- def GetCookieHeader(self,uri):
-  """
+        pass
+
+    def GetCookieHeader(self, uri):
+        """
   GetCookieHeader(self: CookieContainer,uri: Uri) -> str
 
   
@@ -77,9 +79,10 @@ class CookieContainer(object):
 
     semicolons.
   """
-  pass
- def GetCookies(self,uri):
-  """
+        pass
+
+    def GetCookies(self, uri):
+        """
   GetCookies(self: CookieContainer,uri: Uri) -> CookieCollection
 
   
@@ -98,9 +101,10 @@ class CookieContainer(object):
 
     with a specific URI.
   """
-  pass
- def SetCookies(self,uri,cookieHeader):
-  """
+        pass
+
+    def SetCookies(self, uri, cookieHeader):
+        """
   SetCookies(self: CookieContainer,uri: Uri,cookieHeader: str)
 
    Adds System.Net.Cookie instances for one or more cookies from an HTTP cookie header to the 
@@ -117,22 +121,25 @@ class CookieContainer(object):
 
     instances delimited by commas.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- @staticmethod
- def __new__(self,capacity=None,perDomainCapacity=None,maxCookieSize=None):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    @staticmethod
+    def __new__(self, capacity=None, perDomainCapacity=None, maxCookieSize=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,capacity: int)
 
   __new__(cls: type,capacity: int,perDomainCapacity: int,maxCookieSize: int)
   """
-  pass
- Capacity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets and sets the number of System.Net.Cookie instances that a System.Net.CookieContainer can hold.
+        pass
+
+    Capacity = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets and sets the number of System.Net.Cookie instances that a System.Net.CookieContainer can hold.
 
 
 
@@ -144,8 +151,8 @@ Set: Capacity(self: CookieContainer)=value
 
 """
 
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of System.Net.Cookie instances that a System.Net.CookieContainer currently holds.
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of System.Net.Cookie instances that a System.Net.CookieContainer currently holds.
 
 
 
@@ -155,8 +162,10 @@ Get: Count(self: CookieContainer) -> int
 
 """
 
- MaxCookieSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Represents the maximum allowed length of a System.Net.Cookie.
+    MaxCookieSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Represents the maximum allowed length of a System.Net.Cookie.
 
 
 
@@ -168,8 +177,10 @@ Set: MaxCookieSize(self: CookieContainer)=value
 
 """
 
- PerDomainCapacity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets and sets the number of System.Net.Cookie instances that a System.Net.CookieContainer can hold per domain.
+    PerDomainCapacity = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets and sets the number of System.Net.Cookie instances that a System.Net.CookieContainer can hold per domain.
 
 
 
@@ -181,8 +192,6 @@ Set: PerDomainCapacity(self: CookieContainer)=value
 
 """
 
-
- DefaultCookieLengthLimit=4096
- DefaultCookieLimit=300
- DefaultPerDomainCookieLimit=20
-
+    DefaultCookieLengthLimit = 4096
+    DefaultCookieLimit = 300
+    DefaultPerDomainCookieLimit = 20

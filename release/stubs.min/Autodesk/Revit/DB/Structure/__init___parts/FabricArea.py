@@ -1,7 +1,8 @@
-class FabricArea(Element,IDisposable):
- """ An object that represents an Fabric Area Distribution within the Autodesk Revit project. It is container for Fabric Sheet elements. """
- def CopyCurveLoopsInSketch(self):
-  """
+class FabricArea(Element, IDisposable):
+    """ An object that represents an Fabric Area Distribution within the Autodesk Revit project. It is container for Fabric Sheet elements. """
+
+    def CopyCurveLoopsInSketch(self):
+        """
   CopyCurveLoopsInSketch(self: FabricArea) -> IList[CurveLoop]
 
   
@@ -10,10 +11,11 @@ class FabricArea(Element,IDisposable):
 
    Returns: The copy of the curve loops.
   """
-  pass
- @staticmethod
- def Create(aDoc,hostElement,*__args):
-  """
+        pass
+
+    @staticmethod
+    def Create(aDoc, hostElement, *__args):
+        """
   Create(aDoc: Document,hostElement: Element,curveLoops: IList[CurveLoop],majorDirection: XYZ,majorDirectionOrigin: XYZ,fabricAreaTypeId: ElementId,fabricSheetTypeId: ElementId) -> FabricArea
 
   Create(aDoc: Document,hostElement: Element,majorDirection: XYZ,fabricAreaTypeId: ElementId,fabricSheetTypeId: ElementId) -> FabricArea
@@ -42,12 +44,14 @@ class FabricArea(Element,IDisposable):
 
    Returns: The newly created FabricArea.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def GetBoundaryCurveIds(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def GetBoundaryCurveIds(self):
+        """
   GetBoundaryCurveIds(self: FabricArea) -> IList[ElementId]
 
   
@@ -60,12 +64,14 @@ class FabricArea(Element,IDisposable):
 
    Returns: A collection of ElementIds of FabricAreaCurve elements.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetFabricSheetElementIds(self):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetFabricSheetElementIds(self):
+        """
   GetFabricSheetElementIds(self: FabricArea) -> IList[ElementId]
 
   
@@ -74,9 +80,10 @@ class FabricArea(Element,IDisposable):
 
    Returns: A collection of ElementIds of FabricSheet elements.
   """
-  pass
- def GetReinforcementRoundingManager(self):
-  """
+        pass
+
+    def GetReinforcementRoundingManager(self):
+        """
   GetReinforcementRoundingManager(self: FabricArea) -> FabricRoundingManager
 
   
@@ -85,9 +92,10 @@ class FabricArea(Element,IDisposable):
 
    Returns: The rounding manager.
   """
-  pass
- def GetTotalSheetMass(self):
-  """
+        pass
+
+    def GetTotalSheetMass(self):
+        """
   GetTotalSheetMass(self: FabricArea) -> float
 
   
@@ -96,9 +104,10 @@ class FabricArea(Element,IDisposable):
 
    Returns: The total sheet mass.
   """
-  pass
- def GetValidViewsForTags(self):
-  """
+        pass
+
+    def GetValidViewsForTags(self):
+        """
   GetValidViewsForTags(self: FabricArea) -> IList[ElementId]
 
   
@@ -111,9 +120,10 @@ class FabricArea(Element,IDisposable):
 
    Returns: The collection of View ElementIds.
   """
-  pass
- def IsCoverOffsetValid(self,coverOffset):
-  """
+        pass
+
+    def IsCoverOffsetValid(self, coverOffset):
+        """
   IsCoverOffsetValid(self: FabricArea,coverOffset: float) -> bool
 
   
@@ -126,9 +136,10 @@ class FabricArea(Element,IDisposable):
 
    Returns: True if the value is valid,false if the value is invalid.
   """
-  pass
- def IsValidMajorLapSplice(self,majorLapSplice):
-  """
+        pass
+
+    def IsValidMajorLapSplice(self, majorLapSplice):
+        """
   IsValidMajorLapSplice(self: FabricArea,majorLapSplice: float) -> bool
 
   
@@ -141,9 +152,10 @@ class FabricArea(Element,IDisposable):
 
    Returns: True if the value is valid,false if the value is invalid.
   """
-  pass
- def IsValidMinorLapSplice(self,minorLapSplice):
-  """
+        pass
+
+    def IsValidMinorLapSplice(self, minorLapSplice):
+        """
   IsValidMinorLapSplice(self: FabricArea,minorLapSplice: float) -> bool
 
   
@@ -156,13 +168,15 @@ class FabricArea(Element,IDisposable):
 
    Returns: True if the value is valid,false if the value is invalid.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- @staticmethod
- def RemoveFabricReinforcementSystem(doc,system):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    @staticmethod
+    def RemoveFabricReinforcementSystem(doc, system):
+        """
   RemoveFabricReinforcementSystem(doc: Document,system: FabricArea) -> IList[ElementId]
 
   
@@ -183,21 +197,28 @@ class FabricArea(Element,IDisposable):
 
    Returns: The ids of the newly created Single Fabric Sheet elements.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- CoverOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The additional cover offset of the fabric distribution.
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    CoverOffset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The additional cover offset of the fabric distribution.
 
 
 
@@ -209,8 +230,8 @@ Set: CoverOffset(self: FabricArea)=value
 
 """
 
- Direction=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Major Direction of the Fabric Area.
+    Direction = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The Major Direction of the Fabric Area.
 
 
 
@@ -220,8 +241,10 @@ Get: Direction(self: FabricArea) -> XYZ
 
 """
 
- DirectionOrigin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Origin Point of the Major Direction of the Fabric Area.
+    DirectionOrigin = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The Origin Point of the Major Direction of the Fabric Area.
 
 
 
@@ -231,8 +254,10 @@ Get: DirectionOrigin(self: FabricArea) -> XYZ
 
 """
 
- FabricAreaType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The type of the Fabric Area.
+    FabricAreaType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The type of the Fabric Area.
 
 
 
@@ -242,8 +267,10 @@ Get: FabricAreaType(self: FabricArea) -> FabricAreaType
 
 """
 
- FabricLocation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Fabric location in the host.
+    FabricLocation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The Fabric location in the host.
 
 
 
@@ -255,8 +282,10 @@ Set: FabricLocation(self: FabricArea)=value
 
 """
 
- FabricSheetTypeId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the Fabric Sheet Type for this element.
+    FabricSheetTypeId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The id of the Fabric Sheet Type for this element.
 
 
 
@@ -268,8 +297,8 @@ Set: FabricSheetTypeId(self: FabricArea)=value
 
 """
 
- HostId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the Host element for the fabric area.
+    HostId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The id of the Host element for the fabric area.
 
 
 
@@ -279,8 +308,10 @@ Get: HostId(self: FabricArea) -> ElementId
 
 """
 
- LapSplicePosition=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The fabric lap splice position in the fabric distribution.
+    LapSplicePosition = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The fabric lap splice position in the fabric distribution.
 
 
 
@@ -292,8 +323,10 @@ Set: LapSplicePosition(self: FabricArea)=value
 
 """
 
- MajorLapSpliceLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The fabric lap splice length in the fabric distribution in the major direction.
+    MajorLapSpliceLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The fabric lap splice length in the fabric distribution in the major direction.
 
 
 
@@ -305,8 +338,10 @@ Set: MajorLapSpliceLength(self: FabricArea)=value
 
 """
 
- MajorSheetAlignment=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The fabric sheet alignment in the fabric distribution in the major direction.
+    MajorSheetAlignment = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The fabric sheet alignment in the fabric distribution in the major direction.
 
 
 
@@ -318,8 +353,10 @@ Set: MajorSheetAlignment(self: FabricArea)=value
 
 """
 
- MinorLapSpliceLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The fabric lap splice length in the fabric distribution in the minor direction.
+    MinorLapSpliceLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The fabric lap splice length in the fabric distribution in the minor direction.
 
 
 
@@ -331,8 +368,10 @@ Set: MinorLapSpliceLength(self: FabricArea)=value
 
 """
 
- MinorSheetAlignment=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The fabric sheet alignment in the fabric distribution in the minor direction.
+    MinorSheetAlignment = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The fabric sheet alignment in the fabric distribution in the minor direction.
 
 
 
@@ -344,8 +383,8 @@ Set: MinorSheetAlignment(self: FabricArea)=value
 
 """
 
- SketchId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the Sketch element for this element.
+    SketchId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The id of the Sketch element for this element.
 
 
 
@@ -355,8 +394,8 @@ Get: SketchId(self: FabricArea) -> ElementId
 
 """
 
- TagViewId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element of the view in which to tag new members of this element.
+    TagViewId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The element of the view in which to tag new members of this element.
 
 
 
@@ -367,5 +406,3 @@ Get: TagViewId(self: FabricArea) -> ElementId
 Set: TagViewId(self: FabricArea)=value
 
 """
-
-

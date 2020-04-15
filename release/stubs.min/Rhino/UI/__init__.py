@@ -8,31 +8,36 @@
 # no functions
 # classes
 
+
 class Dialogs(object):
- # no doc
- @staticmethod
- def KillSplash():
-  """
+    # no doc
+    @staticmethod
+    def KillSplash():
+        """
   KillSplash()
 
    Destroy the splash screen if it is being displayed.
   """
-  pass
- @staticmethod
- def PushPickButton(form,pickFunction):
-  """ PushPickButton(form: Form,pickFunction: EventHandler[EventArgs]) """
-  pass
- @staticmethod
- def SetCustomColorDialog(handler):
-  """ SetCustomColorDialog(handler: EventHandler[GetColorEventArgs]) """
-  pass
- @staticmethod
- def ShowCheckListBox(title,message,items,checkState):
-  """ ShowCheckListBox(title: str,message: str,items: IList,checkState: IList[bool]) -> Array[bool] """
-  pass
- @staticmethod
- def ShowColorDialog(*__args):
-  """
+        pass
+
+    @staticmethod
+    def PushPickButton(form, pickFunction):
+        """ PushPickButton(form: Form,pickFunction: EventHandler[EventArgs]) """
+        pass
+
+    @staticmethod
+    def SetCustomColorDialog(handler):
+        """ SetCustomColorDialog(handler: EventHandler[GetColorEventArgs]) """
+        pass
+
+    @staticmethod
+    def ShowCheckListBox(title, message, items, checkState):
+        """ ShowCheckListBox(title: str,message: str,items: IList,checkState: IList[bool]) -> Array[bool] """
+        pass
+
+    @staticmethod
+    def ShowColorDialog(*__args):
+        """
   ShowColorDialog(parent: IWin32Window,color: Color4f,allowAlpha: bool) -> (bool,Color4f)
 
   
@@ -91,10 +96,11 @@ class Dialogs(object):
 
    Returns: true if the color changed. false if the color has not changed or the user pressed cancel.
   """
-  pass
- @staticmethod
- def ShowComboListBox(title,message,items):
-  """
+        pass
+
+    @staticmethod
+    def ShowComboListBox(title, message, items):
+        """
   ShowComboListBox(title: str,message: str,items: IList) -> object
 
   
@@ -111,26 +117,30 @@ class Dialogs(object):
 
    Returns: selected item.null if the user canceled.
   """
-  pass
- @staticmethod
- def ShowContextMenu(items,screenPoint,modes):
-  """ ShowContextMenu(items: IEnumerable[str],screenPoint: Point,modes: IEnumerable[int]) -> int """
-  pass
- @staticmethod
- def ShowEditBox(title,message,defaultText,multiline,text):
-  """ ShowEditBox(title: str,message: str,defaultText: str,multiline: bool) -> (DialogResult,str) """
-  pass
- @staticmethod
- def ShowListBox(title,message,items,selectedItem=None):
-  """
+        pass
+
+    @staticmethod
+    def ShowContextMenu(items, screenPoint, modes):
+        """ ShowContextMenu(items: IEnumerable[str],screenPoint: Point,modes: IEnumerable[int]) -> int """
+        pass
+
+    @staticmethod
+    def ShowEditBox(title, message, defaultText, multiline, text):
+        """ ShowEditBox(title: str,message: str,defaultText: str,multiline: bool) -> (DialogResult,str) """
+        pass
+
+    @staticmethod
+    def ShowListBox(title, message, items, selectedItem=None):
+        """
   ShowListBox(title: str,message: str,items: IList,selectedItem: object) -> object
 
   ShowListBox(title: str,message: str,items: IList) -> object
   """
-  pass
- @staticmethod
- def ShowMessageBox(message,title,buttons=None,icon=None,defaultButton=None):
-  """
+        pass
+
+    @staticmethod
+    def ShowMessageBox(message, title, buttons=None, icon=None, defaultButton=None):
+        """
   ShowMessageBox(message: str,title: str,buttons: MessageBoxButtons,icon: MessageBoxIcon,defaultButton: MessageBoxDefaultButton) -> DialogResult
 
   
@@ -203,26 +213,36 @@ class Dialogs(object):
 
    Returns: One of the System.Windows.Forms.DialogResult values.
   """
-  pass
- @staticmethod
- def ShowMultiListBox(title,message,items,defaults):
-  """ ShowMultiListBox(title: str,message: str,items: IList[str],defaults: IList[str]) -> Array[str] """
-  pass
- @staticmethod
- def ShowNumberBox(title,message,number,minimum=None,maximum=None):
-  """
+        pass
+
+    @staticmethod
+    def ShowMultiListBox(title, message, items, defaults):
+        """ ShowMultiListBox(title: str,message: str,items: IList[str],defaults: IList[str]) -> Array[str] """
+        pass
+
+    @staticmethod
+    def ShowNumberBox(title, message, number, minimum=None, maximum=None):
+        """
   ShowNumberBox(title: str,message: str,number: float,minimum: float,maximum: float) -> (DialogResult,float)
 
   ShowNumberBox(title: str,message: str,number: float) -> (DialogResult,float)
   """
-  pass
- @staticmethod
- def ShowPropertyListBox(title,message,items,values):
-  """ ShowPropertyListBox(title: str,message: str,items: IList,values: IList[str]) -> Array[str] """
-  pass
- @staticmethod
- def ShowSelectLayerDialog(layerIndex,dialogTitle,showNewLayerButton,showSetCurrentButton,initialSetCurrentState):
-  """
+        pass
+
+    @staticmethod
+    def ShowPropertyListBox(title, message, items, values):
+        """ ShowPropertyListBox(title: str,message: str,items: IList,values: IList[str]) -> Array[str] """
+        pass
+
+    @staticmethod
+    def ShowSelectLayerDialog(
+        layerIndex,
+        dialogTitle,
+        showNewLayerButton,
+        showSetCurrentButton,
+        initialSetCurrentState,
+    ):
+        """
   ShowSelectLayerDialog(layerIndex: int,dialogTitle: str,showNewLayerButton: bool,showSetCurrentButton: bool,initialSetCurrentState: bool) -> (DialogResult,int,bool)
 
   
@@ -249,14 +269,18 @@ class Dialogs(object):
 
    Returns: A dialog result based on user choice.
   """
-  pass
- @staticmethod
- def ShowSelectMultipleLayersDialog(defaultLayerIndices,dialogTitle,showNewLayerButton,layerIndices):
-  """ ShowSelectMultipleLayersDialog(defaultLayerIndices: IEnumerable[int],dialogTitle: str,showNewLayerButton: bool) -> (DialogResult,Array[int]) """
-  pass
- @staticmethod
- def ShowSemiModal(form):
-  """
+        pass
+
+    @staticmethod
+    def ShowSelectMultipleLayersDialog(
+        defaultLayerIndices, dialogTitle, showNewLayerButton, layerIndices
+    ):
+        """ ShowSelectMultipleLayersDialog(defaultLayerIndices: IEnumerable[int],dialogTitle: str,showNewLayerButton: bool) -> (DialogResult,Array[int]) """
+        pass
+
+    @staticmethod
+    def ShowSemiModal(form):
+        """
   ShowSemiModal(form: Form) -> DialogResult
 
   
@@ -279,10 +303,11 @@ class Dialogs(object):
 
    Returns: One of the System.Windows.Forms.DialogResult values.
   """
-  pass
- @staticmethod
- def ShowTextDialog(message,title):
-  """
+        pass
+
+    @staticmethod
+    def ShowTextDialog(message, title):
+        """
   ShowTextDialog(message: str,title: str) -> DialogResult
 
   
@@ -297,10 +322,11 @@ class Dialogs(object):
 
    Returns: One of the System.Windows.Forms.DialogResult values.
   """
-  pass
- @staticmethod
- def StringBoxRects():
-  """
+        pass
+
+    @staticmethod
+    def StringBoxRects():
+        """
   StringBoxRects() -> Array[Rectangle]
 
   
@@ -355,78 +381,96 @@ class Dialogs(object):
 
        {X=0,Y=0,Width=255,Height=16}
   """
-  pass
- __all__=[
-  'KillSplash',
-  'PushPickButton',
-  'SetCustomColorDialog',
-  'ShowCheckListBox',
-  'ShowColorDialog',
-  'ShowComboListBox',
-  'ShowContextMenu',
-  'ShowEditBox',
-  'ShowListBox',
-  'ShowMessageBox',
-  'ShowMultiListBox',
-  'ShowNumberBox',
-  'ShowPropertyListBox',
-  'ShowSelectLayerDialog',
-  'ShowSelectMultipleLayersDialog',
-  'ShowSemiModal',
-  'ShowTextDialog',
-  'StringBoxRects',
- ]
+        pass
+
+    __all__ = [
+        "KillSplash",
+        "PushPickButton",
+        "SetCustomColorDialog",
+        "ShowCheckListBox",
+        "ShowColorDialog",
+        "ShowComboListBox",
+        "ShowContextMenu",
+        "ShowEditBox",
+        "ShowListBox",
+        "ShowMessageBox",
+        "ShowMultiListBox",
+        "ShowNumberBox",
+        "ShowPropertyListBox",
+        "ShowSelectLayerDialog",
+        "ShowSelectMultipleLayersDialog",
+        "ShowSemiModal",
+        "ShowTextDialog",
+        "StringBoxRects",
+    ]
 
 
-class DistanceDisplayMode(Enum,IComparable,IFormattable,IConvertible):
- """ enum DistanceDisplayMode,values: Decimal (0),FeetInches (2),Fractional (1) """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Decimal=None
- FeetInches=None
- Fractional=None
- value__=None
+class DistanceDisplayMode(Enum, IComparable, IFormattable, IConvertible):
+    """ enum DistanceDisplayMode,values: Decimal (0),FeetInches (2),Fractional (1) """
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Decimal = None
+    FeetInches = None
+    Fractional = None
+    value__ = None
 
 
 class GetColorEventArgs(EventArgs):
- # no doc
- IncludeButtonColors=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IncludeButtonColors(self: GetColorEventArgs) -> bool
+    # no doc
+    IncludeButtonColors = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IncludeButtonColors(self: GetColorEventArgs) -> bool
 
 
 
 """
 
- InputColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: InputColor(self: GetColorEventArgs) -> Color
+    InputColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: InputColor(self: GetColorEventArgs) -> Color
 
 
 
 """
 
- SelectedColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: SelectedColor(self: GetColorEventArgs) -> Color
+    SelectedColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: SelectedColor(self: GetColorEventArgs) -> Color
 
 
 
@@ -434,24 +478,24 @@ Set: SelectedColor(self: GetColorEventArgs)=value
 
 """
 
- Title=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Title(self: GetColorEventArgs) -> str
+    Title = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Title(self: GetColorEventArgs) -> str
 
 
 
 """
 
 
-
 class LOC(object):
- """
+    """
  Used a placeholded which is used by LocalizationProcessor application to create contextId
 
     mapped localized strings.
  """
- @staticmethod
- def COMMANDNAME(english):
-  """
+
+    @staticmethod
+    def COMMANDNAME(english):
+        """
   COMMANDNAME(english: str) -> str
 
   
@@ -484,10 +528,11 @@ class LOC(object):
 
    english: [in] The English string to localize.
   """
-  pass
- @staticmethod
- def CON(english,assemblyFromObject=None):
-  """
+        pass
+
+    @staticmethod
+    def CON(english, assemblyFromObject=None):
+        """
   CON(english: str,assemblyFromObject: object) -> LocalizeStringPair
 
   
@@ -546,10 +591,11 @@ class LOC(object):
 
    Returns: Returns localized string pair with both the English and local names set to the English value.
   """
-  pass
- @staticmethod
- def COV(engilsh,assemblyFromObject=None):
-  """
+        pass
+
+    @staticmethod
+    def COV(engilsh, assemblyFromObject=None):
+        """
   COV(engilsh: str,assemblyFromObject: object) -> LocalizeStringPair
 
   
@@ -608,10 +654,11 @@ class LOC(object):
 
    Returns: Returns localized string pair with both the English and local names set to the English value.
   """
-  pass
- @staticmethod
- def STR(english,assemblyOrObject=None):
-  """
+        pass
+
+    @staticmethod
+    def STR(english, assemblyOrObject=None):
+        """
   STR(english: str,assemblyOrObject: object) -> str
 
   
@@ -652,20 +699,21 @@ class LOC(object):
 
    english: [in] The English string to localize.
   """
-  pass
- __all__=[
-  'COMMANDNAME',
-  'CON',
-  'COV',
-  'STR',
- ]
+        pass
+
+    __all__ = [
+        "COMMANDNAME",
+        "CON",
+        "COV",
+        "STR",
+    ]
 
 
 class Localization(object):
- # no doc
- @staticmethod
- def FormatNumber(x,units,mode,precision,appendUnitSystemName):
-  """
+    # no doc
+    @staticmethod
+    def FormatNumber(x, units, mode, precision, appendUnitSystemName):
+        """
   FormatNumber(x: float,units: UnitSystem,mode: DistanceDisplayMode,precision: int,appendUnitSystemName: bool) -> str
 
   
@@ -686,10 +734,11 @@ class Localization(object):
 
    Returns: The formatted number.
   """
-  pass
- @staticmethod
- def GetAssemblyFromObject(assemblyOrObject):
-  """
+        pass
+
+    @staticmethod
+    def GetAssemblyFromObject(assemblyOrObject):
+        """
   GetAssemblyFromObject(assemblyOrObject: object) -> Assembly
 
   
@@ -706,10 +755,11 @@ class Localization(object):
 
    Returns: The localized string.
   """
-  pass
- @staticmethod
- def LocalizeCommandName(english,assemblyOrObject=None):
-  """
+        pass
+
+    @staticmethod
+    def LocalizeCommandName(english, assemblyOrObject=None):
+        """
   LocalizeCommandName(english: str,assemblyOrObject: object) -> str
 
   LocalizeCommandName(english: str) -> str
@@ -722,26 +772,29 @@ class Localization(object):
 
    english: The localized command name.
   """
-  pass
- @staticmethod
- def LocalizeCommandOptionName(english,*__args):
-  """
+        pass
+
+    @staticmethod
+    def LocalizeCommandOptionName(english, *__args):
+        """
   LocalizeCommandOptionName(english: str,assemblyOrObject: object,contextId: int) -> LocalizeStringPair
 
   LocalizeCommandOptionName(english: str,contextId: int) -> LocalizeStringPair
   """
-  pass
- @staticmethod
- def LocalizeCommandOptionValue(english,*__args):
-  """
+        pass
+
+    @staticmethod
+    def LocalizeCommandOptionValue(english, *__args):
+        """
   LocalizeCommandOptionValue(english: str,assemblyOrObject: object,contextId: int) -> LocalizeStringPair
 
   LocalizeCommandOptionValue(english: str,contextId: int) -> LocalizeStringPair
   """
-  pass
- @staticmethod
- def LocalizeDialogItem(assemblyOrObject,key,english):
-  """
+        pass
+
+    @staticmethod
+    def LocalizeDialogItem(assemblyOrObject, key, english):
+        """
   LocalizeDialogItem(assemblyOrObject: object,key: str,english: str) -> str
 
   
@@ -766,10 +819,11 @@ class Localization(object):
 
     localized string if the key is found otherwise return the English string.
   """
-  pass
- @staticmethod
- def LocalizeForm(form):
-  """
+        pass
+
+    @staticmethod
+    def LocalizeForm(form):
+        """
   LocalizeForm(form: Control)
 
    A form or user control should call this in its constructor if it wants to be localized
@@ -798,10 +852,11 @@ class Localization(object):
 
     }
   """
-  pass
- @staticmethod
- def LocalizeString(english,*__args):
-  """
+        pass
+
+    @staticmethod
+    def LocalizeString(english, *__args):
+        """
   LocalizeString(english: str,assemblyOrObject: object,contextId: int) -> str
 
   
@@ -848,10 +903,11 @@ class Localization(object):
 
    Returns: The localized string.
   """
-  pass
- @staticmethod
- def LocalizeToolStripItemCollection(parent,collection):
-  """
+        pass
+
+    @staticmethod
+    def LocalizeToolStripItemCollection(parent, collection):
+        """
   LocalizeToolStripItemCollection(parent: Control,collection: ToolStripItemCollection)
 
    A form or user control should call this in its constructor if it wants to localize
@@ -882,10 +938,11 @@ class Localization(object):
 
     }
   """
-  pass
- @staticmethod
- def SetLanguageId(id):
-  """
+        pass
+
+    @staticmethod
+    def SetLanguageId(id):
+        """
   SetLanguageId(id: int) -> bool
 
   
@@ -900,10 +957,11 @@ class Localization(object):
 
    Returns: true if the language id could be set
   """
-  pass
- @staticmethod
- def UnitSystemName(units,capitalize,singular,abbreviate):
-  """
+        pass
+
+    @staticmethod
+    def UnitSystemName(units, capitalize, singular, abbreviate):
+        """
   UnitSystemName(units: UnitSystem,capitalize: bool,singular: bool,abbreviate: bool) -> str
 
   
@@ -922,75 +980,85 @@ class Localization(object):
 
    Returns: The unit system name.
   """
-  pass
- __all__=[
-  'FormatNumber',
-  'GetAssemblyFromObject',
-  'LocalizeCommandName',
-  'LocalizeCommandOptionName',
-  'LocalizeCommandOptionValue',
-  'LocalizeDialogItem',
-  'LocalizeForm',
-  'LocalizeString',
-  'LocalizeToolStripItemCollection',
-  'SetLanguageId',
-  'UnitSystemName',
- ]
+        pass
+
+    __all__ = [
+        "FormatNumber",
+        "GetAssemblyFromObject",
+        "LocalizeCommandName",
+        "LocalizeCommandOptionName",
+        "LocalizeCommandOptionValue",
+        "LocalizeDialogItem",
+        "LocalizeForm",
+        "LocalizeString",
+        "LocalizeToolStripItemCollection",
+        "SetLanguageId",
+        "UnitSystemName",
+    ]
 
 
 class LocalizeStringPair(object):
- """
+    """
  Pair of strings used for localization.
 
  
 
  LocalizeStringPair(english: str,local: str)
  """
- @staticmethod
- def __new__(self,english,local):
-  """ __new__(cls: type,english: str,local: str) """
-  pass
- English=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: English(self: LocalizeStringPair) -> str
+
+    @staticmethod
+    def __new__(self, english, local):
+        """ __new__(cls: type,english: str,local: str) """
+        pass
+
+    English = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: English(self: LocalizeStringPair) -> str
 
 
 
 """
 
- Local=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Local(self: LocalizeStringPair) -> str
+    Local = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Local(self: LocalizeStringPair) -> str
 
 
 
 """
-
 
 
 class MouseCallback(object):
- """ Used for intercepting mouse events in the Rhino viewports. """
- def OnMouseDoubleClick(self,*args):
-  """ OnMouseDoubleClick(self: MouseCallback,e: MouseCallbackEventArgs) """
-  pass
- def OnMouseDown(self,*args):
-  """ OnMouseDown(self: MouseCallback,e: MouseCallbackEventArgs) """
-  pass
- def OnMouseEnter(self,*args):
-  """ OnMouseEnter(self: MouseCallback,view: RhinoView) """
-  pass
- def OnMouseHover(self,*args):
-  """ OnMouseHover(self: MouseCallback,view: RhinoView) """
-  pass
- def OnMouseLeave(self,*args):
-  """ OnMouseLeave(self: MouseCallback,view: RhinoView) """
-  pass
- def OnMouseMove(self,*args):
-  """ OnMouseMove(self: MouseCallback,e: MouseCallbackEventArgs) """
-  pass
- def OnMouseUp(self,*args):
-  """ OnMouseUp(self: MouseCallback,e: MouseCallbackEventArgs) """
-  pass
- Enabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Enabled(self: MouseCallback) -> bool
+    """ Used for intercepting mouse events in the Rhino viewports. """
+
+    def OnMouseDoubleClick(self, *args):
+        """ OnMouseDoubleClick(self: MouseCallback,e: MouseCallbackEventArgs) """
+        pass
+
+    def OnMouseDown(self, *args):
+        """ OnMouseDown(self: MouseCallback,e: MouseCallbackEventArgs) """
+        pass
+
+    def OnMouseEnter(self, *args):
+        """ OnMouseEnter(self: MouseCallback,view: RhinoView) """
+        pass
+
+    def OnMouseHover(self, *args):
+        """ OnMouseHover(self: MouseCallback,view: RhinoView) """
+        pass
+
+    def OnMouseLeave(self, *args):
+        """ OnMouseLeave(self: MouseCallback,view: RhinoView) """
+        pass
+
+    def OnMouseMove(self, *args):
+        """ OnMouseMove(self: MouseCallback,e: MouseCallbackEventArgs) """
+        pass
+
+    def OnMouseUp(self, *args):
+        """ OnMouseUp(self: MouseCallback,e: MouseCallbackEventArgs) """
+        pass
+
+    Enabled = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Enabled(self: MouseCallback) -> bool
 
 
 
@@ -998,40 +1066,41 @@ Set: Enabled(self: MouseCallback)=value
 
 """
 
-
- MouseCallbackFromCPP=None
+    MouseCallbackFromCPP = None
 
 
 class MouseCallbackEventArgs(CancelEventArgs):
- # no doc
- Button=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Button(self: MouseCallbackEventArgs) -> MouseButtons
+    # no doc
+    Button = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Button(self: MouseCallbackEventArgs) -> MouseButtons
 
 
 
 """
 
- View=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: View(self: MouseCallbackEventArgs) -> RhinoView
+    View = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: View(self: MouseCallbackEventArgs) -> RhinoView
 
 
 
 """
 
- ViewportPoint=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: ViewportPoint(self: MouseCallbackEventArgs) -> Point
+    ViewportPoint = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: ViewportPoint(self: MouseCallbackEventArgs) -> Point
 
 
 
 """
-
 
 
 class MouseCursor(object):
- """ Contains static methods to control the mouse icon. """
- @staticmethod
- def SetToolTip(tooltip):
-  """
+    """ Contains static methods to control the mouse icon. """
+
+    @staticmethod
+    def SetToolTip(tooltip):
+        """
   SetToolTip(tooltip: str)
 
    Sets a cursor tooltip string shown next to the mouse cursor.
@@ -1046,20 +1115,22 @@ class MouseCursor(object):
 
    tooltip: The text to show.
   """
-  pass
- Location=None
- __all__=[
-  'SetToolTip',
- ]
+        pass
+
+    Location = None
+    __all__ = [
+        "SetToolTip",
+    ]
 
 
 class ObjectPropertiesPage(object):
- # no doc
- def InitializeControls(self,rhObj):
-  """ InitializeControls(self: ObjectPropertiesPage,rhObj: RhinoObject) """
-  pass
- def OnActivate(self,active):
-  """
+    # no doc
+    def InitializeControls(self, rhObj):
+        """ InitializeControls(self: ObjectPropertiesPage,rhObj: RhinoObject) """
+        pass
+
+    def OnActivate(self, active):
+        """
   OnActivate(self: ObjectPropertiesPage,active: bool) -> bool
 
   
@@ -1078,42 +1149,53 @@ class ObjectPropertiesPage(object):
 
      Default returns true
   """
-  pass
- def OnCreateParent(self,hwndParent):
-  """ OnCreateParent(self: ObjectPropertiesPage,hwndParent: IntPtr) """
-  pass
- def OnHelp(self):
-  """ OnHelp(self: ObjectPropertiesPage) """
-  pass
- def OnSizeParent(self,width,height):
-  """ OnSizeParent(self: ObjectPropertiesPage,width: int,height: int) """
-  pass
- def ShouldDisplay(self,rhObj):
-  """ ShouldDisplay(self: ObjectPropertiesPage,rhObj: RhinoObject) -> bool """
-  pass
- EnglishPageTitle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: EnglishPageTitle(self: ObjectPropertiesPage) -> str
+        pass
+
+    def OnCreateParent(self, hwndParent):
+        """ OnCreateParent(self: ObjectPropertiesPage,hwndParent: IntPtr) """
+        pass
+
+    def OnHelp(self):
+        """ OnHelp(self: ObjectPropertiesPage) """
+        pass
+
+    def OnSizeParent(self, width, height):
+        """ OnSizeParent(self: ObjectPropertiesPage,width: int,height: int) """
+        pass
+
+    def ShouldDisplay(self, rhObj):
+        """ ShouldDisplay(self: ObjectPropertiesPage,rhObj: RhinoObject) -> bool """
+        pass
+
+    EnglishPageTitle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: EnglishPageTitle(self: ObjectPropertiesPage) -> str
 
 
 
 """
 
- Icon=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Icon(self: ObjectPropertiesPage) -> Icon
+    Icon = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Icon(self: ObjectPropertiesPage) -> Icon
 
 
 
 """
 
- LocalPageTitle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: LocalPageTitle(self: ObjectPropertiesPage) -> str
+    LocalPageTitle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: LocalPageTitle(self: ObjectPropertiesPage) -> str
 
 
 
 """
 
- PageControl=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Return the control that represents this page. This will typically be a custom user control.
+    PageControl = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Return the control that represents this page. This will typically be a custom user control.
 
 
 
@@ -1123,15 +1205,17 @@ Get: PageControl(self: ObjectPropertiesPage) -> Control
 
 """
 
- PageType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: PageType(self: ObjectPropertiesPage) -> ProertyPageType
+    PageType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: PageType(self: ObjectPropertiesPage) -> ProertyPageType
 
 
 
 """
 
- SelectedObjects=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Return a list of Rhino objects to be processed by this object properties page
+    SelectedObjects = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Return a list of Rhino objects to be processed by this object properties page
 
 
 
@@ -1141,12 +1225,11 @@ Get: SelectedObjects(self: ObjectPropertiesPage) -> Array[RhinoObject]
 
 """
 
-
- ProertyPageType=None
+    ProertyPageType = None
 
 
 class OpenFileDialog(object):
- """
+    """
  Similar to the System.Windows.Forms.OpenFileDialog,but with customized
 
     Rhino user interface.
@@ -1155,17 +1238,19 @@ class OpenFileDialog(object):
 
  OpenFileDialog()
  """
- def ShowDialog(self):
-  """
+
+    def ShowDialog(self):
+        """
   ShowDialog(self: OpenFileDialog) -> DialogResult
 
   
 
    Show the actual dialog to allow the user to select a file.
   """
-  pass
- def ShowOpenDialog(self):
-  """
+        pass
+
+    def ShowOpenDialog(self):
+        """
   ShowOpenDialog(self: OpenFileDialog) -> bool
 
   
@@ -1174,9 +1259,12 @@ class OpenFileDialog(object):
 
    Returns: Returns false if the dialog was canceled otherwise returns true
   """
-  pass
- DefaultExt=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The default file name extension. The returned string does not include the period.
+        pass
+
+    DefaultExt = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The default file name extension. The returned string does not include the period.
 
 
 
@@ -1188,8 +1276,8 @@ Set: DefaultExt(self: OpenFileDialog)=value
 
 """
 
- FileName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a string containing the file name selected in the file dialog box.
+    FileName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a string containing the file name selected in the file dialog box.
 
 
 
@@ -1201,8 +1289,8 @@ Set: FileName(self: OpenFileDialog)=value
 
 """
 
- FileNames=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the names of all of the selected files in the dialog box
+    FileNames = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the names of all of the selected files in the dialog box
 
 
 
@@ -1212,8 +1300,8 @@ Get: FileNames(self: OpenFileDialog) -> Array[str]
 
 """
 
- Filter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the current file name filter string,which determines
+    Filter = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the current file name filter string,which determines
 
    the choices that appear in the "Save as file type" or "Files of type"
 
@@ -1229,8 +1317,10 @@ Set: Filter(self: OpenFileDialog)=value
 
 """
 
- InitialDirectory=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the initial directory displayed by the file dialog box.
+    InitialDirectory = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the initial directory displayed by the file dialog box.
 
 
 
@@ -1242,8 +1332,10 @@ Set: InitialDirectory(self: OpenFileDialog)=value
 
 """
 
- MultiSelect=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the dialog box allows multiple files to be selected
+    MultiSelect = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the dialog box allows multiple files to be selected
 
 
 
@@ -1255,8 +1347,8 @@ Set: MultiSelect(self: OpenFileDialog)=value
 
 """
 
- Title=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the file dialog box title.
+    Title = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the file dialog box title.
 
 
 
@@ -1269,11 +1361,11 @@ Set: Title(self: OpenFileDialog)=value
 """
 
 
-
 class StackedDialogPage(object):
- """ Provides a base class to inherit from for the addition of stacked dialog pages. """
- def OnActivate(self,active):
-  """
+    """ Provides a base class to inherit from for the addition of stacked dialog pages. """
+
+    def OnActivate(self, active):
+        """
   OnActivate(self: StackedDialogPage,active: bool) -> bool
 
   
@@ -1292,9 +1384,10 @@ class StackedDialogPage(object):
 
      Default returns true
   """
-  pass
- def OnApply(self):
-  """
+        pass
+
+    def OnApply(self):
+        """
   OnApply(self: StackedDialogPage) -> bool
 
   
@@ -1307,64 +1400,79 @@ class StackedDialogPage(object):
 
     there was an error and dialog remains open so page can be properly updated.
   """
-  pass
- def OnCancel(self):
-  """
+        pass
+
+    def OnCancel(self):
+        """
   OnCancel(self: StackedDialogPage)
 
    Called when stacked dialog Cancel button is pressed.
   """
-  pass
- def OnCreateParent(self,hwndParent):
-  """ OnCreateParent(self: StackedDialogPage,hwndParent: IntPtr) """
-  pass
- def OnDefaults(self):
-  """
+        pass
+
+    def OnCreateParent(self, hwndParent):
+        """ OnCreateParent(self: StackedDialogPage,hwndParent: IntPtr) """
+        pass
+
+    def OnDefaults(self):
+        """
   OnDefaults(self: StackedDialogPage)
 
    Called when stacked dialog Defaults button is pressed (see ShowDefaultsButton).
   """
-  pass
- def OnHelp(self):
-  """ OnHelp(self: StackedDialogPage) """
-  pass
- def OnSizeParent(self,width,height):
-  """ OnSizeParent(self: StackedDialogPage,width: int,height: int) """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """ __new__(cls: type,englishPageTitle: str) """
-  pass
- Children=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Children(self: StackedDialogPage) -> List[StackedDialogPage]
+        pass
+
+    def OnHelp(self):
+        """ OnHelp(self: StackedDialogPage) """
+        pass
+
+    def OnSizeParent(self, width, height):
+        """ OnSizeParent(self: StackedDialogPage,width: int,height: int) """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """ __new__(cls: type,englishPageTitle: str) """
+        pass
+
+    Children = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Children(self: StackedDialogPage) -> List[StackedDialogPage]
 
 
 
 """
 
- EnglishPageTitle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: EnglishPageTitle(self: StackedDialogPage) -> str
+    EnglishPageTitle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: EnglishPageTitle(self: StackedDialogPage) -> str
 
 
 
 """
 
- HasChildren=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: HasChildren(self: StackedDialogPage) -> bool
+    HasChildren = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: HasChildren(self: StackedDialogPage) -> bool
 
 
 
 """
 
- LocalPageTitle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: LocalPageTitle(self: StackedDialogPage) -> str
+    LocalPageTitle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: LocalPageTitle(self: StackedDialogPage) -> str
 
 
 
 """
 
- PageControl=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Return the control that represents this page. This will typically be a custom user control.
+    PageControl = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Return the control that represents this page. This will typically be a custom user control.
 
 
 
@@ -1374,8 +1482,10 @@ Get: PageControl(self: StackedDialogPage) -> Control
 
 """
 
- ShowDefaultsButton=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Called when this page is activated.
+    ShowDefaultsButton = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Called when this page is activated.
 
 
 
@@ -1386,81 +1496,89 @@ Get: ShowDefaultsButton(self: StackedDialogPage) -> bool
 """
 
 
-
 class OptionsDialogPage(StackedDialogPage):
- # no doc
- def RunScript(self,doc,mode):
-  """ RunScript(self: OptionsDialogPage,doc: RhinoDoc,mode: RunMode) -> Result """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """ __new__(cls: type,englishPageTitle: str) """
-  pass
+    # no doc
+    def RunScript(self, doc, mode):
+        """ RunScript(self: OptionsDialogPage,doc: RhinoDoc,mode: RunMode) -> Result """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """ __new__(cls: type,englishPageTitle: str) """
+        pass
+
 
 class PanelIds(object):
- # no doc
- ContextHelp=None
- Display=None
- Environment=None
- GroundPlane=None
- Layers=None
- Libraries=None
- LightManager=None
- Materials=None
- Notes=None
- ObjectProperties=None
- Sun=None
- Texture=None
- __all__=[]
+    # no doc
+    ContextHelp = None
+    Display = None
+    Environment = None
+    GroundPlane = None
+    Layers = None
+    Libraries = None
+    LightManager = None
+    Materials = None
+    Notes = None
+    ObjectProperties = None
+    Sun = None
+    Texture = None
+    __all__ = []
 
 
 class Panels(object):
- # no doc
- @staticmethod
- def ClosePanel(*__args):
-  """ ClosePanel(panelType: Type)ClosePanel(panelId: Guid) """
-  pass
- @staticmethod
- def GetOpenPanelIds():
-  """ GetOpenPanelIds() -> Array[Guid] """
-  pass
- @staticmethod
- def GetPanel(panelId):
-  """ GetPanel(panelId: Guid) -> object """
-  pass
- @staticmethod
- def IsPanelVisible(*__args):
-  """
+    # no doc
+    @staticmethod
+    def ClosePanel(*__args):
+        """ ClosePanel(panelType: Type)ClosePanel(panelId: Guid) """
+        pass
+
+    @staticmethod
+    def GetOpenPanelIds():
+        """ GetOpenPanelIds() -> Array[Guid] """
+        pass
+
+    @staticmethod
+    def GetPanel(panelId):
+        """ GetPanel(panelId: Guid) -> object """
+        pass
+
+    @staticmethod
+    def IsPanelVisible(*__args):
+        """
   IsPanelVisible(panelType: Type) -> bool
 
   IsPanelVisible(panelId: Guid) -> bool
   """
-  pass
- @staticmethod
- def OpenPanel(*__args):
-  """
+        pass
+
+    @staticmethod
+    def OpenPanel(*__args):
+        """
   OpenPanel(dockBarId: Guid,panelId: Guid) -> Guid
 
   OpenPanel(dockBarId: Guid,panelType: Type) -> Guid
 
   OpenPanel(panelId: Guid)OpenPanel(panelType: Type)
   """
-  pass
- @staticmethod
- def OpenPanelAsSibling(panelId,existingSiblingId):
-  """ OpenPanelAsSibling(panelId: Guid,existingSiblingId: Guid) -> bool """
-  pass
- @staticmethod
- def PanelDockBar(*__args):
-  """
+        pass
+
+    @staticmethod
+    def OpenPanelAsSibling(panelId, existingSiblingId):
+        """ OpenPanelAsSibling(panelId: Guid,existingSiblingId: Guid) -> bool """
+        pass
+
+    @staticmethod
+    def PanelDockBar(*__args):
+        """
   PanelDockBar(panelType: Type) -> Guid
 
   PanelDockBar(panelId: Guid) -> Guid
   """
-  pass
- @staticmethod
- def RegisterPanel(plugin,panelType,caption,icon):
-  """
+        pass
+
+    @staticmethod
+    def RegisterPanel(plugin, panelType, caption, icon):
+        """
   RegisterPanel(plugin: PlugIn,panelType: Type,caption: str,icon: Icon)
 
    You typically register your panel class in your plug-in's OnLoad function.
@@ -1493,31 +1611,33 @@ class Panels(object):
 
    icon: Use a 32bit depth icon in order to get proper transparency
   """
-  pass
- __all__=[
-  'ClosePanel',
-  'GetOpenPanelIds',
-  'GetPanel',
-  'IsPanelVisible',
-  'OpenPanel',
-  'OpenPanelAsSibling',
-  'PanelDockBar',
-  'RegisterPanel',
- ]
+        pass
+
+    __all__ = [
+        "ClosePanel",
+        "GetOpenPanelIds",
+        "GetPanel",
+        "IsPanelVisible",
+        "OpenPanel",
+        "OpenPanelAsSibling",
+        "PanelDockBar",
+        "RegisterPanel",
+    ]
 
 
 class RuiUpdateUi(EventArgs):
- # no doc
- @staticmethod
- def RegisterMenuItem(*__args):
-  """
+    # no doc
+    @staticmethod
+    def RegisterMenuItem(*__args):
+        """
   RegisterMenuItem(fileId: str,menuId: str,itemId: str,callBack: UpdateMenuItemEventHandler) -> bool
 
   RegisterMenuItem(file: Guid,menu: Guid,item: Guid,callBack: UpdateMenuItemEventHandler) -> bool
   """
-  pass
- Checked=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Set to true to enable menu item or false to check menu item
+        pass
+
+    Checked = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Set to true to enable menu item or false to check menu item
 
 
 
@@ -1529,8 +1649,8 @@ Set: Checked(self: RuiUpdateUi)=value
 
 """
 
- Enabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Set to true to enable menu item or false to disable menu item
+    Enabled = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Set to true to enable menu item or false to disable menu item
 
 
 
@@ -1542,8 +1662,8 @@ Set: Enabled(self: RuiUpdateUi)=value
 
 """
 
- FileId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Id of the RUI file that owns this menu item
+    FileId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Id of the RUI file that owns this menu item
 
 
 
@@ -1553,8 +1673,10 @@ Get: FileId(self: RuiUpdateUi) -> Guid
 
 """
 
- MenuHandle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Windows menu handle of menu that contains this item
+    MenuHandle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Windows menu handle of menu that contains this item
 
 
 
@@ -1564,8 +1686,8 @@ Get: MenuHandle(self: RuiUpdateUi) -> IntPtr
 
 """
 
- MenuId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Id of the menu that owns this menu item
+    MenuId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Id of the menu that owns this menu item
 
 
 
@@ -1575,8 +1697,8 @@ Get: MenuId(self: RuiUpdateUi) -> Guid
 
 """
 
- MenuIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Zero based index of item in the Windows menu
+    MenuIndex = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Zero based index of item in the Windows menu
 
 
 
@@ -1586,8 +1708,10 @@ Get: MenuIndex(self: RuiUpdateUi) -> int
 
 """
 
- MenuItemId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Id of the menu item that owns this menu item
+    MenuItemId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Id of the menu item that owns this menu item
 
 
 
@@ -1597,8 +1721,10 @@ Get: MenuItemId(self: RuiUpdateUi) -> Guid
 
 """
 
- RadioChecked=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Set to true to enable menu item or false to check menu item
+    RadioChecked = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Set to true to enable menu item or false to check menu item
 
 
 
@@ -1610,8 +1736,8 @@ Set: RadioChecked(self: RuiUpdateUi)=value
 
 """
 
- Text=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Menu item text
+    Text = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Menu item text
 
 
 
@@ -1623,8 +1749,10 @@ Set: Text(self: RuiUpdateUi)=value
 
 """
 
- WindowsMenuItemId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Windows menu item ID
+    WindowsMenuItemId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Windows menu item ID
 
 
 
@@ -1634,12 +1762,11 @@ Get: WindowsMenuItemId(self: RuiUpdateUi) -> UInt32
 
 """
 
-
- UpdateMenuItemEventHandler=None
+    UpdateMenuItemEventHandler = None
 
 
 class SaveFileDialog(object):
- """
+    """
  Similar to the System.Windows.Forms.SaveFileDialog,but with customized
 
     Rhino user interface.
@@ -1648,11 +1775,13 @@ class SaveFileDialog(object):
 
  SaveFileDialog()
  """
- def ShowDialog(self):
-  """ ShowDialog(self: SaveFileDialog) -> DialogResult """
-  pass
- def ShowSaveDialog(self):
-  """
+
+    def ShowDialog(self):
+        """ ShowDialog(self: SaveFileDialog) -> DialogResult """
+        pass
+
+    def ShowSaveDialog(self):
+        """
   ShowSaveDialog(self: SaveFileDialog) -> bool
 
   
@@ -1661,9 +1790,12 @@ class SaveFileDialog(object):
 
    Returns: Returns false if the dialog was canceled otherwise returns true
   """
-  pass
- DefaultExt=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The default file name extension. The returned string does not include the period.
+        pass
+
+    DefaultExt = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The default file name extension. The returned string does not include the period.
 
 
 
@@ -1675,8 +1807,8 @@ Set: DefaultExt(self: SaveFileDialog)=value
 
 """
 
- FileName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a string containing the file name selected in the file dialog box.
+    FileName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a string containing the file name selected in the file dialog box.
 
 
 
@@ -1688,8 +1820,8 @@ Set: FileName(self: SaveFileDialog)=value
 
 """
 
- Filter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the current file name filter string,which determines
+    Filter = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the current file name filter string,which determines
 
    the choices that appear in the "Save as file type" or "Files of type"
 
@@ -1705,8 +1837,10 @@ Set: Filter(self: SaveFileDialog)=value
 
 """
 
- InitialDirectory=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the initial directory displayed by the file dialog box.
+    InitialDirectory = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the initial directory displayed by the file dialog box.
 
 
 
@@ -1718,8 +1852,8 @@ Set: InitialDirectory(self: SaveFileDialog)=value
 
 """
 
- Title=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the file dialog box title.
+    Title = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the file dialog box title.
 
 
 
@@ -1732,28 +1866,30 @@ Set: Title(self: SaveFileDialog)=value
 """
 
 
-
 class StatusBar(object):
- """ Contains static methods to control the application status bar. """
- @staticmethod
- def ClearMessagePane():
-  """
+    """ Contains static methods to control the application status bar. """
+
+    @staticmethod
+    def ClearMessagePane():
+        """
   ClearMessagePane()
 
    Removes the message from the message pane.
   """
-  pass
- @staticmethod
- def HideProgressMeter():
-  """
+        pass
+
+    @staticmethod
+    def HideProgressMeter():
+        """
   HideProgressMeter()
 
    Ends,or hides,Rhino's status bar progress meter.
   """
-  pass
- @staticmethod
- def SetDistancePane(distance):
-  """
+        pass
+
+    @staticmethod
+    def SetDistancePane(distance):
+        """
   SetDistancePane(distance: float)
 
    Sets the distance pane to a distance value.
@@ -1762,10 +1898,11 @@ class StatusBar(object):
 
    distance: The distance value.
   """
-  pass
- @staticmethod
- def SetMessagePane(message):
-  """
+        pass
+
+    @staticmethod
+    def SetMessagePane(message):
+        """
   SetMessagePane(message: str)
 
    Sets the message pane to a message.
@@ -1774,10 +1911,11 @@ class StatusBar(object):
 
    message: The message value.
   """
-  pass
- @staticmethod
- def SetPointPane(point):
-  """
+        pass
+
+    @staticmethod
+    def SetPointPane(point):
+        """
   SetPointPane(point: Point3d)
 
    Sets the point pane to a point value.
@@ -1786,10 +1924,13 @@ class StatusBar(object):
 
    point: The point value.
   """
-  pass
- @staticmethod
- def ShowProgressMeter(lowerLimit,upperLimit,label,embedLabel,showPercentComplete):
-  """
+        pass
+
+    @staticmethod
+    def ShowProgressMeter(
+        lowerLimit, upperLimit, label, embedLabel, showPercentComplete
+    ):
+        """
   ShowProgressMeter(lowerLimit: int,upperLimit: int,label: str,embedLabel: bool,showPercentComplete: bool) -> int
 
   
@@ -1824,10 +1965,11 @@ class StatusBar(object):
 
     already created it.
   """
-  pass
- @staticmethod
- def UpdateProgressMeter(position,absolute):
-  """
+        pass
+
+    @staticmethod
+    def UpdateProgressMeter(position, absolute):
+        """
   UpdateProgressMeter(position: int,absolute: bool) -> int
 
   
@@ -1858,80 +2000,87 @@ class StatusBar(object):
 
    Returns: The previous position if successful.
   """
-  pass
- __all__=[
-  'ClearMessagePane',
-  'HideProgressMeter',
-  'SetDistancePane',
-  'SetMessagePane',
-  'SetPointPane',
-  'ShowProgressMeter',
-  'UpdateProgressMeter',
- ]
+        pass
+
+    __all__ = [
+        "ClearMessagePane",
+        "HideProgressMeter",
+        "SetDistancePane",
+        "SetMessagePane",
+        "SetPointPane",
+        "ShowProgressMeter",
+        "UpdateProgressMeter",
+    ]
 
 
 class Toolbar(object):
- # no doc
- Id=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Id(self: Toolbar) -> Guid
+    # no doc
+    Id = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Id(self: Toolbar) -> Guid
 
 
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Name(self: Toolbar) -> str
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Name(self: Toolbar) -> str
 
 
 
 """
-
 
 
 class ToolbarFile(object):
- # no doc
- def Close(self,prompt):
-  """ Close(self: ToolbarFile,prompt: bool) -> bool """
-  pass
- def GetGroup(self,*__args):
-  """
+    # no doc
+    def Close(self, prompt):
+        """ Close(self: ToolbarFile,prompt: bool) -> bool """
+        pass
+
+    def GetGroup(self, *__args):
+        """
   GetGroup(self: ToolbarFile,name: str) -> ToolbarGroup
 
   GetGroup(self: ToolbarFile,index: int) -> ToolbarGroup
   """
-  pass
- def GetToolbar(self,index):
-  """ GetToolbar(self: ToolbarFile,index: int) -> Toolbar """
-  pass
- def Save(self):
-  """ Save(self: ToolbarFile) -> bool """
-  pass
- def SaveAs(self,path):
-  """ SaveAs(self: ToolbarFile,path: str) -> bool """
-  pass
- GroupCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: GroupCount(self: ToolbarFile) -> int
+        pass
+
+    def GetToolbar(self, index):
+        """ GetToolbar(self: ToolbarFile,index: int) -> Toolbar """
+        pass
+
+    def Save(self):
+        """ Save(self: ToolbarFile) -> bool """
+        pass
+
+    def SaveAs(self, path):
+        """ SaveAs(self: ToolbarFile,path: str) -> bool """
+        pass
+
+    GroupCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: GroupCount(self: ToolbarFile) -> int
 
 
 
 """
 
- Id=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Id(self: ToolbarFile) -> Guid
+    Id = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Id(self: ToolbarFile) -> Guid
 
 
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Name(self: ToolbarFile) -> str
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Name(self: ToolbarFile) -> str
 
 
 
 """
 
- Path=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Full path to this file on disk
+    Path = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Full path to this file on disk
 
 
 
@@ -1941,46 +2090,56 @@ Get: Path(self: ToolbarFile) -> str
 
 """
 
- ToolbarCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: ToolbarCount(self: ToolbarFile) -> int
+    ToolbarCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: ToolbarCount(self: ToolbarFile) -> int
 
 
 
 """
 
 
+class ToolbarFileCollection(object, IEnumerable[ToolbarFile], IEnumerable):
+    # no doc
+    def FindByName(self, name, ignoreCase):
+        """ FindByName(self: ToolbarFileCollection,name: str,ignoreCase: bool) -> ToolbarFile """
+        pass
 
-class ToolbarFileCollection(object,IEnumerable[ToolbarFile],IEnumerable):
- # no doc
- def FindByName(self,name,ignoreCase):
-  """ FindByName(self: ToolbarFileCollection,name: str,ignoreCase: bool) -> ToolbarFile """
-  pass
- def FindByPath(self,path):
-  """ FindByPath(self: ToolbarFileCollection,path: str) -> ToolbarFile """
-  pass
- def GetEnumerator(self):
-  """ GetEnumerator(self: ToolbarFileCollection) -> IEnumerator[ToolbarFile] """
-  pass
- def Open(self,path):
-  """ Open(self: ToolbarFileCollection,path: str) -> ToolbarFile """
-  pass
- def __contains__(self,*args):
-  """ __contains__[ToolbarFile](enumerable: IEnumerable[ToolbarFile],value: ToolbarFile) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Number of open toolbar files
+    def FindByPath(self, path):
+        """ FindByPath(self: ToolbarFileCollection,path: str) -> ToolbarFile """
+        pass
+
+    def GetEnumerator(self):
+        """ GetEnumerator(self: ToolbarFileCollection) -> IEnumerator[ToolbarFile] """
+        pass
+
+    def Open(self, path):
+        """ Open(self: ToolbarFileCollection,path: str) -> ToolbarFile """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[ToolbarFile](enumerable: IEnumerable[ToolbarFile],value: ToolbarFile) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Number of open toolbar files
 
 
 
@@ -1991,32 +2150,31 @@ Get: Count(self: ToolbarFileCollection) -> int
 """
 
 
-
 class ToolbarGroup(object):
- # no doc
- Id=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Id(self: ToolbarGroup) -> Guid
+    # no doc
+    Id = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Id(self: ToolbarGroup) -> Guid
 
 
 
 """
 
- IsDocked=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsDocked(self: ToolbarGroup) -> bool
+    IsDocked = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: IsDocked(self: ToolbarGroup) -> bool
 
 
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Name(self: ToolbarGroup) -> str
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Name(self: ToolbarGroup) -> str
 
 
 
 """
 
- Visible=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Visible(self: ToolbarGroup) -> bool
+    Visible = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Visible(self: ToolbarGroup) -> bool
 
 
 
@@ -2025,40 +2183,46 @@ Set: Visible(self: ToolbarGroup)=value
 """
 
 
+class WaitCursor(object, IDisposable):
+    """ WaitCursor() """
 
-class WaitCursor(object,IDisposable):
- """ WaitCursor() """
- def Clear(self):
-  """ Clear(self: WaitCursor) """
-  pass
- def Dispose(self):
-  """ Dispose(self: WaitCursor) """
-  pass
- def Set(self):
-  """ Set(self: WaitCursor) """
-  pass
- def __enter__(self,*args):
-  """
+    def Clear(self):
+        """ Clear(self: WaitCursor) """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: WaitCursor) """
+        pass
+
+    def Set(self):
+        """ Set(self: WaitCursor) """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
 
 # variables with complex values
-

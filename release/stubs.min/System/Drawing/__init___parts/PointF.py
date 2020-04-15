@@ -1,14 +1,15 @@
 class PointF(object):
- """
+    """
  Represents an ordered pair of floating-point x- and y-coordinates that defines a point in a two-dimensional plane.
 
  
 
  PointF(x: Single,y: Single)
  """
- @staticmethod
- def Add(pt,sz):
-  """
+
+    @staticmethod
+    def Add(pt, sz):
+        """
   Add(pt: PointF,sz: SizeF) -> PointF
 
   
@@ -37,9 +38,10 @@ class PointF(object):
 
    Returns: The translated System.Drawing.PointF.
   """
-  pass
- def Equals(self,obj):
-  """
+        pass
+
+    def Equals(self, obj):
+        """
   Equals(self: PointF,obj: object) -> bool
 
   
@@ -58,9 +60,10 @@ class PointF(object):
 
     System.Drawing.Point.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: PointF) -> int
 
   
@@ -69,10 +72,11 @@ class PointF(object):
 
    Returns: An integer value that specifies a hash value for this System.Drawing.PointF structure.
   """
-  pass
- @staticmethod
- def Subtract(pt,sz):
-  """
+        pass
+
+    @staticmethod
+    def Subtract(pt, sz):
+        """
   Subtract(pt: PointF,sz: SizeF) -> PointF
 
   
@@ -101,9 +105,10 @@ class PointF(object):
 
    Returns: The translated System.Drawing.PointF.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: PointF) -> str
 
   
@@ -112,30 +117,36 @@ class PointF(object):
 
    Returns: A string that represents this System.Drawing.PointF.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- @staticmethod
- def __new__(self,x,y):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    @staticmethod
+    def __new__(self, x, y):
+        """
   __new__[PointF]() -> PointF
 
   
 
   __new__(cls: type,x: Single,y: Single)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __sub__(self,*args):
-  """ x.__sub__(y) <==> x-yx.__sub__(y) <==> x-y """
-  pass
- IsEmpty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether this System.Drawing.PointF is empty.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __sub__(self, *args):
+        """ x.__sub__(y) <==> x-yx.__sub__(y) <==> x-y """
+        pass
+
+    IsEmpty = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether this System.Drawing.PointF is empty.
 
 
 
@@ -145,8 +156,8 @@ Get: IsEmpty(self: PointF) -> bool
 
 """
 
- X=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the x-coordinate of this System.Drawing.PointF.
+    X = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the x-coordinate of this System.Drawing.PointF.
 
 
 
@@ -158,8 +169,8 @@ Set: X(self: PointF)=value
 
 """
 
- Y=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the y-coordinate of this System.Drawing.PointF.
+    Y = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the y-coordinate of this System.Drawing.PointF.
 
 
 
@@ -171,6 +182,4 @@ Set: Y(self: PointF)=value
 
 """
 
-
- Empty=None
-
+    Empty = None

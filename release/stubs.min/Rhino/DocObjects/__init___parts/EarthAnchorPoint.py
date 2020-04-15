@@ -1,5 +1,5 @@
-class EarthAnchorPoint(object,IDisposable):
- """
+class EarthAnchorPoint(object, IDisposable):
+    """
  Contains information about the model's position in latitude,longitude,
 
     and elevation for GIS mapping applications.
@@ -8,15 +8,17 @@ class EarthAnchorPoint(object,IDisposable):
 
  EarthAnchorPoint()
  """
- def Dispose(self):
-  """
+
+    def Dispose(self):
+        """
   Dispose(self: EarthAnchorPoint)
 
    Actively reclaims unmanaged resources that this instance uses.
   """
-  pass
- def GetModelCompass(self):
-  """
+        pass
+
+    def GetModelCompass(self):
+        """
   GetModelCompass(self: EarthAnchorPoint) -> Plane
 
   
@@ -33,9 +35,10 @@ class EarthAnchorPoint(object,IDisposable):
 
    Returns: A plane value. This might be invalid on error.
   """
-  pass
- def GetModelToEarthTransform(self,modelUnitSystem):
-  """
+        pass
+
+    def GetModelToEarthTransform(self, modelUnitSystem):
+        """
   GetModelToEarthTransform(self: EarthAnchorPoint,modelUnitSystem: UnitSystem) -> Transform
 
   
@@ -58,31 +61,38 @@ class EarthAnchorPoint(object,IDisposable):
 
    Returns: Transform on success. Inalid Transform on error.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Description=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the long form of the identifying information about this location.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Description = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the long form of the identifying information about this location.
 
 
 
@@ -94,8 +104,10 @@ Set: Description(self: EarthAnchorPoint)=value
 
 """
 
- EarthBasepointElevation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the point elevation on earth,in meters.
+    EarthBasepointElevation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the point elevation on earth,in meters.
 
 
 
@@ -107,8 +119,10 @@ Set: EarthBasepointElevation(self: EarthAnchorPoint)=value
 
 """
 
- EarthBasepointElevationZero=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating the zero level convention relating to a location on Earth.
+    EarthBasepointElevationZero = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating the zero level convention relating to a location on Earth.
 
 
 
@@ -120,8 +134,10 @@ Set: EarthBasepointElevationZero(self: EarthAnchorPoint)=value
 
 """
 
- EarthBasepointLatitude=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a point latitude on earth,in decimal degrees.
+    EarthBasepointLatitude = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a point latitude on earth,in decimal degrees.
 
    +90=north pole,0=equator,-90=south pole.
 
@@ -135,8 +151,10 @@ Set: EarthBasepointLatitude(self: EarthAnchorPoint)=value
 
 """
 
- EarthBasepointLongitude=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the point longitude on earth,in decimal degrees.
+    EarthBasepointLongitude = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the point longitude on earth,in decimal degrees.
 
    0=prime meridian (Greenwich meridian)Values increase towards West
 
@@ -150,8 +168,10 @@ Set: EarthBasepointLongitude(self: EarthAnchorPoint)=value
 
 """
 
- ModelBasePoint=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Corresponding model point in model coordinates.
+    ModelBasePoint = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Corresponding model point in model coordinates.
 
 
 
@@ -163,8 +183,8 @@ Set: ModelBasePoint(self: EarthAnchorPoint)=value
 
 """
 
- ModelEast=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Earth directions in model coordinates.
+    ModelEast = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Earth directions in model coordinates.
 
 
 
@@ -176,8 +196,10 @@ Set: ModelEast(self: EarthAnchorPoint)=value
 
 """
 
- ModelNorth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Earth directions in model coordinates.
+    ModelNorth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Earth directions in model coordinates.
 
 
 
@@ -189,8 +211,8 @@ Set: ModelNorth(self: EarthAnchorPoint)=value
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the short form of the identifying information about this location.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the short form of the identifying information about this location.
 
 
 
@@ -201,5 +223,3 @@ Get: Name(self: EarthAnchorPoint) -> str
 Set: Name(self: EarthAnchorPoint)=value
 
 """
-
-

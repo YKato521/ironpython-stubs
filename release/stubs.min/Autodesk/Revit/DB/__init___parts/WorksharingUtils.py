@@ -1,24 +1,27 @@
-class WorksharingUtils(object,IDisposable):
- """ A static class that contains utility functions related to worksharing. """
- @staticmethod
- def CheckoutElements(document,elementsToCheckout,options=None):
-  """
+class WorksharingUtils(object, IDisposable):
+    """ A static class that contains utility functions related to worksharing. """
+
+    @staticmethod
+    def CheckoutElements(document, elementsToCheckout, options=None):
+        """
   CheckoutElements(document: Document,elementsToCheckout: ICollection[ElementId]) -> ICollection[ElementId]
 
   CheckoutElements(document: Document,elementsToCheckout: ISet[ElementId],options: TransactWithCentralOptions) -> ISet[ElementId]
   """
-  pass
- @staticmethod
- def CheckoutWorksets(document,worksetsToCheckout,options=None):
-  """
+        pass
+
+    @staticmethod
+    def CheckoutWorksets(document, worksetsToCheckout, options=None):
+        """
   CheckoutWorksets(document: Document,worksetsToCheckout: ICollection[WorksetId]) -> ICollection[WorksetId]
 
   CheckoutWorksets(document: Document,worksetsToCheckout: ISet[WorksetId],options: TransactWithCentralOptions) -> ISet[WorksetId]
   """
-  pass
- @staticmethod
- def CreateNewLocal(sourcePath,targetPath):
-  """
+        pass
+
+    @staticmethod
+    def CreateNewLocal(sourcePath, targetPath):
+        """
   CreateNewLocal(sourcePath: ModelPath,targetPath: ModelPath)
 
    Takes a path to a central model and copies the model into a new local file for 
@@ -33,13 +36,15 @@ class WorksharingUtils(object,IDisposable):
 
    targetPath: The path to put the new local file.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: WorksharingUtils) """
-  pass
- @staticmethod
- def GetCheckoutStatus(document,elementId,owner=None):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: WorksharingUtils) """
+        pass
+
+    @staticmethod
+    def GetCheckoutStatus(document, elementId, owner=None):
+        """
   GetCheckoutStatus(document: Document,elementId: ElementId) -> (CheckoutStatus,str)
 
   
@@ -74,10 +79,11 @@ class WorksharingUtils(object,IDisposable):
 
     owned by another user.
   """
-  pass
- @staticmethod
- def GetModelUpdatesStatus(document,elementId):
-  """
+        pass
+
+    @staticmethod
+    def GetModelUpdatesStatus(document, elementId):
+        """
   GetModelUpdatesStatus(document: Document,elementId: ElementId) -> ModelUpdatesStatus
 
   
@@ -92,10 +98,11 @@ class WorksharingUtils(object,IDisposable):
 
    Returns: The status of the element in the local session versus the central model.
   """
-  pass
- @staticmethod
- def GetUserWorksetInfo(path):
-  """
+        pass
+
+    @staticmethod
+    def GetUserWorksetInfo(path):
+        """
   GetUserWorksetInfo(path: ModelPath) -> IList[WorksetPreview]
 
   
@@ -116,10 +123,11 @@ class WorksharingUtils(object,IDisposable):
 
     workset id.
   """
-  pass
- @staticmethod
- def GetWorksharingTooltipInfo(document,elementId):
-  """
+        pass
+
+    @staticmethod
+    def GetWorksharingTooltipInfo(document, elementId):
+        """
   GetWorksharingTooltipInfo(document: Document,elementId: ElementId) -> WorksharingTooltipInfo
 
   
@@ -138,13 +146,15 @@ class WorksharingUtils(object,IDisposable):
 
    Returns: Worksharing information about the specified element.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: WorksharingUtils,disposing: bool) """
-  pass
- @staticmethod
- def RelinquishOwnership(document,generalCategories,options):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: WorksharingUtils,disposing: bool) """
+        pass
+
+    @staticmethod
+    def RelinquishOwnership(document, generalCategories, options):
+        """
   RelinquishOwnership(document: Document,generalCategories: RelinquishOptions,options: TransactWithCentralOptions) -> RelinquishedItems
 
   
@@ -175,21 +185,28 @@ class WorksharingUtils(object,IDisposable):
 
    Returns: The elements and worksets that were relinquished.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -198,5 +215,3 @@ Get: IsValidObject(self: WorksharingUtils) -> bool
 
 
 """
-
-

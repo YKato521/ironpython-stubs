@@ -8,8 +8,10 @@
 # no functions
 # classes
 
+
 class RevitSchedulerThread(object, ISchedulerThread):
     """ RevitSchedulerThread(revitApplication: UIApplication) """
+
     def Initialize(self, owningScheduler):
         """ Initialize(self: RevitSchedulerThread, owningScheduler: IScheduler) """
         pass
@@ -18,17 +20,15 @@ class RevitSchedulerThread(object, ISchedulerThread):
         """ Shutdown(self: RevitSchedulerThread) """
         pass
 
-    def __init__(self, *args): #cannot find CLR method
+    def __init__(self, *args):  # cannot find CLR method
         """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, revitApplication):
         """ __new__(cls: type, revitApplication: UIApplication) """
         pass
 
-    def __repr__(self, *args): #cannot find CLR method
+    def __repr__(self, *args):  # cannot find CLR method
         """ __repr__(self: object) -> str """
         pass
-
-

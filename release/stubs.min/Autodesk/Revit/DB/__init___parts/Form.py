@@ -1,7 +1,8 @@
-class Form(GenericForm,IDisposable):
- """ An object that represents a Form within the Autodesk Revit Massing Family. """
- def AddEdge(self,*__args):
-  """
+class Form(GenericForm, IDisposable):
+    """ An object that represents a Form within the Autodesk Revit Massing Family. """
+
+    def AddEdge(self, *__args):
+        """
   AddEdge(self: Form,faceReference: Reference,point: XYZ)
 
    Add an edge to the form,connecting two edges on different profiles,by a 
@@ -48,9 +49,10 @@ class Form(GenericForm,IDisposable):
 
    endPointReference: The geometry reference of end point
   """
-  pass
- def AddProfile(self,edgeReference,param):
-  """
+        pass
+
+    def AddProfile(self, edgeReference, param):
+        """
   AddProfile(self: Form,edgeReference: Reference,param: float) -> int
 
   
@@ -65,9 +67,10 @@ class Form(GenericForm,IDisposable):
 
    Returns: Index of newly created profile.
   """
-  pass
- def CanManipulateProfile(self,profileIndex):
-  """
+        pass
+
+    def CanManipulateProfile(self, profileIndex):
+        """
   CanManipulateProfile(self: Form,profileIndex: int) -> bool
 
   
@@ -78,9 +81,10 @@ class Form(GenericForm,IDisposable):
 
    profileIndex: Index to specify the profile.
   """
-  pass
- def CanManipulateSubElement(self,subElementReference):
-  """
+        pass
+
+    def CanManipulateSubElement(self, subElementReference):
+        """
   CanManipulateSubElement(self: Form,subElementReference: Reference) -> bool
 
   
@@ -91,9 +95,10 @@ class Form(GenericForm,IDisposable):
 
    subElementReference: The geometry reference of face/edge/curve/vertex
   """
-  pass
- def ConstrainProfiles(self,masterProfileIndex):
-  """
+        pass
+
+    def ConstrainProfiles(self, masterProfileIndex):
+        """
   ConstrainProfiles(self: Form,masterProfileIndex: int)
 
    Constrain form profiles using the specified profile as master. This is an 
@@ -108,9 +113,10 @@ class Form(GenericForm,IDisposable):
 
    masterProfileIndex: Index to specify the profile used as master profile.
   """
-  pass
- def DeleteProfile(self,profileIndex):
-  """
+        pass
+
+    def DeleteProfile(self, profileIndex):
+        """
   DeleteProfile(self: Form,profileIndex: int)
 
    Delete a profile of the form.
@@ -119,9 +125,10 @@ class Form(GenericForm,IDisposable):
 
    profileIndex: Index to specify the profile.
   """
-  pass
- def DeleteSubElement(self,subElementReference):
-  """
+        pass
+
+    def DeleteSubElement(self, subElementReference):
+        """
   DeleteSubElement(self: Form,subElementReference: Reference)
 
    Delete a face/edge/curve/vertex of the form,specified by a reference.
@@ -130,15 +137,18 @@ class Form(GenericForm,IDisposable):
 
    subElementReference: The geometry reference of face/edge/curve/vertex
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetControlPoints(self,curveOrEdgeOrFaceReference):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetControlPoints(self, curveOrEdgeOrFaceReference):
+        """
   GetControlPoints(self: Form,curveOrEdgeOrFaceReference: Reference) -> ReferenceArray
 
   
@@ -155,9 +165,10 @@ class Form(GenericForm,IDisposable):
 
    Returns: Reference array containing all control points lying on it.
   """
-  pass
- def GetCurvesAndEdgesReference(self,pointReference):
-  """
+        pass
+
+    def GetCurvesAndEdgesReference(self, pointReference):
+        """
   GetCurvesAndEdgesReference(self: Form,pointReference: Reference) -> ReferenceArray
 
   
@@ -170,9 +181,10 @@ class Form(GenericForm,IDisposable):
 
    Returns: Reference array containing all edges and curves that the point is lying on.
   """
-  pass
- def GetPathCurveIndexByCurveReference(self,curveReference):
-  """
+        pass
+
+    def GetPathCurveIndexByCurveReference(self, curveReference):
+        """
   GetPathCurveIndexByCurveReference(self: Form,curveReference: Reference) -> int
 
   
@@ -183,9 +195,12 @@ class Form(GenericForm,IDisposable):
 
    curveReference: Reference to the curve in path
   """
-  pass
- def GetProfileAndCurveLoopIndexFromReference(self,curveOrEdgeReference,profileIndex,curveLoopIndex):
-  """
+        pass
+
+    def GetProfileAndCurveLoopIndexFromReference(
+        self, curveOrEdgeReference, profileIndex, curveLoopIndex
+    ):
+        """
   GetProfileAndCurveLoopIndexFromReference(self: Form,curveOrEdgeReference: Reference,profileIndex: int,curveLoopIndex: int) -> (int,int)
 
   
@@ -204,9 +219,10 @@ class Form(GenericForm,IDisposable):
 
    curveLoopIndex: Curve loop index for output
   """
-  pass
- def IsAutoCreaseEdge(self,edgeReference):
-  """
+        pass
+
+    def IsAutoCreaseEdge(self, edgeReference):
+        """
   IsAutoCreaseEdge(self: Form,edgeReference: Reference) -> bool
 
   
@@ -217,9 +233,10 @@ class Form(GenericForm,IDisposable):
 
    edgeReference: The reference of the edge to be checked.
   """
-  pass
- def IsBeginningFace(self,faceReference):
-  """
+        pass
+
+    def IsBeginningFace(self, faceReference):
+        """
   IsBeginningFace(self: Form,faceReference: Reference) -> bool
 
   
@@ -230,9 +247,10 @@ class Form(GenericForm,IDisposable):
 
    faceReference: The reference of the  face to be checked.
   """
-  pass
- def IsConnectingEdge(self,edgeReference):
-  """
+        pass
+
+    def IsConnectingEdge(self, edgeReference):
+        """
   IsConnectingEdge(self: Form,edgeReference: Reference) -> bool
 
   
@@ -247,9 +265,10 @@ class Form(GenericForm,IDisposable):
 
    edgeReference: The reference of the edge to be checked.
   """
-  pass
- def IsCurveReference(self,curveReference):
-  """
+        pass
+
+    def IsCurveReference(self, curveReference):
+        """
   IsCurveReference(self: Form,curveReference: Reference) -> bool
 
   
@@ -260,9 +279,10 @@ class Form(GenericForm,IDisposable):
 
    curveReference: Reference to be checked.
   """
-  pass
- def IsEdgeReference(self,edgeReference):
-  """
+        pass
+
+    def IsEdgeReference(self, edgeReference):
+        """
   IsEdgeReference(self: Form,edgeReference: Reference) -> bool
 
   
@@ -273,9 +293,10 @@ class Form(GenericForm,IDisposable):
 
    edgeReference: Reference to be checked.
   """
-  pass
- def IsEndFace(self,faceReference):
-  """
+        pass
+
+    def IsEndFace(self, faceReference):
+        """
   IsEndFace(self: Form,faceReference: Reference) -> bool
 
   
@@ -286,9 +307,10 @@ class Form(GenericForm,IDisposable):
 
    faceReference: The reference of the face to be checked.
   """
-  pass
- def IsFaceReference(self,faceReference):
-  """
+        pass
+
+    def IsFaceReference(self, faceReference):
+        """
   IsFaceReference(self: Form,faceReference: Reference) -> bool
 
   
@@ -299,9 +321,10 @@ class Form(GenericForm,IDisposable):
 
    faceReference: Reference to be checked.
   """
-  pass
- def IsProfileEdge(self,curveOrEdgeReference):
-  """
+        pass
+
+    def IsProfileEdge(self, curveOrEdgeReference):
+        """
   IsProfileEdge(self: Form,curveOrEdgeReference: Reference) -> bool
 
   
@@ -312,9 +335,10 @@ class Form(GenericForm,IDisposable):
 
    curveOrEdgeReference: The reference of the edge or curve to be checked.
   """
-  pass
- def IsReferenceOnlyProfile(self,profileIndex):
-  """
+        pass
+
+    def IsReferenceOnlyProfile(self, profileIndex):
+        """
   IsReferenceOnlyProfile(self: Form,profileIndex: int) -> bool
 
   
@@ -325,9 +349,10 @@ class Form(GenericForm,IDisposable):
 
    profileIndex: Index to specify the profile to be checked.
   """
-  pass
- def IsSideFace(self,faceReference):
-  """
+        pass
+
+    def IsSideFace(self, faceReference):
+        """
   IsSideFace(self: Form,faceReference: Reference) -> bool
 
   
@@ -338,9 +363,10 @@ class Form(GenericForm,IDisposable):
 
    faceReference: The reference of the  face to be checked.
   """
-  pass
- def IsVertexReference(self,vertexReference):
-  """
+        pass
+
+    def IsVertexReference(self, vertexReference):
+        """
   IsVertexReference(self: Form,vertexReference: Reference) -> bool
 
   
@@ -351,9 +377,10 @@ class Form(GenericForm,IDisposable):
 
    vertexReference: Reference to be checked.
   """
-  pass
- def MoveProfile(self,profileIndex,offset):
-  """
+        pass
+
+    def MoveProfile(self, profileIndex, offset):
+        """
   MoveProfile(self: Form,profileIndex: int,offset: XYZ)
 
    Move a profile of the form,specified by a reference,and an offset vector.
@@ -364,9 +391,10 @@ class Form(GenericForm,IDisposable):
 
    offset: The vector by which the element is to be moved.
   """
-  pass
- def MoveSubElement(self,subElementReference,offset):
-  """
+        pass
+
+    def MoveSubElement(self, subElementReference, offset):
+        """
   MoveSubElement(self: Form,subElementReference: Reference,offset: XYZ)
 
    Move a face/edge/curve/vertex of the form,specified by a reference,and an 
@@ -381,9 +409,10 @@ class Form(GenericForm,IDisposable):
 
    offset: The vector by which the element is to be moved.
   """
-  pass
- def Rehost(self,*__args):
-  """
+        pass
+
+    def Rehost(self, *__args):
+        """
   Rehost(self: Form,hostRef: Reference,location: XYZ)
 
    Rehost Form to edge,face or curve.
@@ -404,12 +433,14 @@ class Form(GenericForm,IDisposable):
 
    location: The location to which to Rehost the form.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def RotateProfile(self,profileIndex,axis,angle):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def RotateProfile(self, profileIndex, axis, angle):
+        """
   RotateProfile(self: Form,profileIndex: int,axis: Line,angle: float)
 
    Rotate a profile of the form,by a specified angle around a given axis.
@@ -424,9 +455,10 @@ class Form(GenericForm,IDisposable):
 
     specified axis.
   """
-  pass
- def RotateSubElement(self,subElementReference,axis,angle):
-  """
+        pass
+
+    def RotateSubElement(self, subElementReference, axis, angle):
+        """
   RotateSubElement(self: Form,subElementReference: Reference,axis: Line,angle: float)
 
    Rotate a face/edge/curve/vertex of the form,by a specified angle around a 
@@ -445,9 +477,10 @@ class Form(GenericForm,IDisposable):
 
     specified axis.
   """
-  pass
- def ScaleProfile(self,profileIndex,factor,origin):
-  """
+        pass
+
+    def ScaleProfile(self, profileIndex, factor, origin):
+        """
   ScaleProfile(self: Form,profileIndex: int,factor: float,origin: XYZ)
 
    Scale a profile of the form,by a specified origin and scale factor.
@@ -460,9 +493,10 @@ class Form(GenericForm,IDisposable):
 
    origin: The origin where scale happens.
   """
-  pass
- def ScaleSubElement(self,subElementReference,factor,origin):
-  """
+        pass
+
+    def ScaleSubElement(self, subElementReference, factor, origin):
+        """
   ScaleSubElement(self: Form,subElementReference: Reference,factor: float,origin: XYZ)
 
    Scale a face/edge/curve/vertex of the form,by a specified origin and scale 
@@ -479,21 +513,28 @@ class Form(GenericForm,IDisposable):
 
    origin: The origin where scale happens.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- AreProfilesConstrained=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get/set if the form's profiles are constrained.
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    AreProfilesConstrained = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get/set if the form's profiles are constrained.
 
 
 
@@ -505,8 +546,10 @@ Set: AreProfilesConstrained(self: Form)=value
 
 """
 
- BaseOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Retrieve/set the base offset of the form object. It is only valid for locked form.
+    BaseOffset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Retrieve/set the base offset of the form object. It is only valid for locked form.
 
 
 
@@ -518,8 +561,10 @@ Set: BaseOffset(self: Form)=value
 
 """
 
- HasOneOrMoreReferenceProfiles=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Tell if the form has any reference profile.
+    HasOneOrMoreReferenceProfiles = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Tell if the form has any reference profile.
 
 
 
@@ -529,8 +574,10 @@ Get: HasOneOrMoreReferenceProfiles(self: Form) -> bool
 
 """
 
- HasOpenGeometry=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Tell if the form has an open geometry.
+    HasOpenGeometry = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Tell if the form has an open geometry.
 
 
 
@@ -540,8 +587,10 @@ Get: HasOpenGeometry(self: Form) -> bool
 
 """
 
- IsInXRayMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get/set if the form is in X-Ray mode.
+    IsInXRayMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get/set if the form is in X-Ray mode.
 
 
 
@@ -553,8 +602,10 @@ Set: IsInXRayMode(self: Form)=value
 
 """
 
- PathCurveCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The number of curves in the form path.
+    PathCurveCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The number of curves in the form path.
 
 
 
@@ -564,8 +615,10 @@ Get: PathCurveCount(self: Form) -> int
 
 """
 
- ProfileCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The number of profiles in the form.
+    ProfileCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The number of profiles in the form.
 
 
 
@@ -575,8 +628,8 @@ Get: ProfileCount(self: Form) -> int
 
 """
 
- TopOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Retrieve/set the top offset of the form object. It is only valid for locked form.
+    TopOffset = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Retrieve/set the top offset of the form object. It is only valid for locked form.
 
 
 
@@ -587,5 +640,3 @@ Get: TopOffset(self: Form) -> float
 Set: TopOffset(self: Form)=value
 
 """
-
-

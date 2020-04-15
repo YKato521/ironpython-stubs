@@ -1,36 +1,50 @@
 class PartUtils(object):
- """ General Part utility methods """
- @staticmethod
- def AreElementsValidForCreateParts(document,elementIds):
-  """ AreElementsValidForCreateParts(document: Document,elementIds: ICollection[ElementId]) -> bool """
-  pass
- @staticmethod
- def ArePartsValidForDivide(document,elementIdsToDivide):
-  """ ArePartsValidForDivide(document: Document,elementIdsToDivide: ICollection[ElementId]) -> bool """
-  pass
- @staticmethod
- def ArePartsValidForMerge(document,partIds):
-  """ ArePartsValidForMerge(document: Document,partIds: ICollection[ElementId]) -> bool """
-  pass
- @staticmethod
- def CreateMergedPart(document,partIds):
-  """ CreateMergedPart(document: Document,partIds: ICollection[ElementId]) -> PartMaker """
-  pass
- @staticmethod
- def CreateParts(document,*__args):
-  """ CreateParts(document: Document,hostOrLinkElementIds: ICollection[LinkElementId])CreateParts(document: Document,elementIds: ICollection[ElementId]) """
-  pass
- @staticmethod
- def DivideParts(document,elementIdsToDivide,intersectingReferenceIds,curveArray,sketchPlaneId):
-  """ DivideParts(document: Document,elementIdsToDivide: ICollection[ElementId],intersectingReferenceIds: ICollection[ElementId],curveArray: IList[Curve],sketchPlaneId: ElementId) -> PartMaker """
-  pass
- @staticmethod
- def FindMergeableClusters(doc,partIds):
-  """ FindMergeableClusters(doc: Document,partIds: ICollection[ElementId]) -> IList[ICollection[ElementId]] """
-  pass
- @staticmethod
- def GetAssociatedPartMaker(hostDocument,*__args):
-  """
+    """ General Part utility methods """
+
+    @staticmethod
+    def AreElementsValidForCreateParts(document, elementIds):
+        """ AreElementsValidForCreateParts(document: Document,elementIds: ICollection[ElementId]) -> bool """
+        pass
+
+    @staticmethod
+    def ArePartsValidForDivide(document, elementIdsToDivide):
+        """ ArePartsValidForDivide(document: Document,elementIdsToDivide: ICollection[ElementId]) -> bool """
+        pass
+
+    @staticmethod
+    def ArePartsValidForMerge(document, partIds):
+        """ ArePartsValidForMerge(document: Document,partIds: ICollection[ElementId]) -> bool """
+        pass
+
+    @staticmethod
+    def CreateMergedPart(document, partIds):
+        """ CreateMergedPart(document: Document,partIds: ICollection[ElementId]) -> PartMaker """
+        pass
+
+    @staticmethod
+    def CreateParts(document, *__args):
+        """ CreateParts(document: Document,hostOrLinkElementIds: ICollection[LinkElementId])CreateParts(document: Document,elementIds: ICollection[ElementId]) """
+        pass
+
+    @staticmethod
+    def DivideParts(
+        document,
+        elementIdsToDivide,
+        intersectingReferenceIds,
+        curveArray,
+        sketchPlaneId,
+    ):
+        """ DivideParts(document: Document,elementIdsToDivide: ICollection[ElementId],intersectingReferenceIds: ICollection[ElementId],curveArray: IList[Curve],sketchPlaneId: ElementId) -> PartMaker """
+        pass
+
+    @staticmethod
+    def FindMergeableClusters(doc, partIds):
+        """ FindMergeableClusters(doc: Document,partIds: ICollection[ElementId]) -> IList[ICollection[ElementId]] """
+        pass
+
+    @staticmethod
+    def GetAssociatedPartMaker(hostDocument, *__args):
+        """
   GetAssociatedPartMaker(hostDocument: Document,hostOrLinkElementId: LinkElementId) -> PartMaker
 
   
@@ -69,10 +83,11 @@ class PartUtils(object):
 
     no associated PartMaker.
   """
-  pass
- @staticmethod
- def GetAssociatedParts(hostDocument,*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetAssociatedParts(hostDocument, *__args):
+        """
   GetAssociatedParts(hostDocument: Document,hostOrLinkElementId: LinkElementId,includePartsWithAssociatedParts: bool,includeAllChildren: bool) -> ICollection[ElementId]
 
   
@@ -121,10 +136,11 @@ class PartUtils(object):
 
    Returns: Parts that are associated to the element.
   """
-  pass
- @staticmethod
- def GetChainLengthToOriginal(part):
-  """
+        pass
+
+    @staticmethod
+    def GetChainLengthToOriginal(part):
+        """
   GetChainLengthToOriginal(part: Part) -> int
 
   
@@ -141,10 +157,11 @@ class PartUtils(object):
 
    Returns: The length of the longest chain.
   """
-  pass
- @staticmethod
- def GetMergedParts(part):
-  """
+        pass
+
+    @staticmethod
+    def GetMergedParts(part):
+        """
   GetMergedParts(part: Part) -> ICollection[ElementId]
 
   
@@ -159,10 +176,11 @@ class PartUtils(object):
 
     part.
   """
-  pass
- @staticmethod
- def GetPartMakerMethodToDivideVolumeFW(partMaker):
-  """
+        pass
+
+    @staticmethod
+    def GetPartMakerMethodToDivideVolumeFW(partMaker):
+        """
   GetPartMakerMethodToDivideVolumeFW(partMaker: PartMaker) -> PartMakerMethodToDivideVolumes
 
   
@@ -185,10 +203,11 @@ class PartUtils(object):
 
     volumes.
   """
-  pass
- @staticmethod
- def HasAssociatedParts(hostDocument,*__args):
-  """
+        pass
+
+    @staticmethod
+    def HasAssociatedParts(hostDocument, *__args):
+        """
   HasAssociatedParts(hostDocument: Document,hostOrLinkElementId: LinkElementId) -> bool
 
   
@@ -217,10 +236,11 @@ class PartUtils(object):
 
    Returns: True if the element has associated Parts.
   """
-  pass
- @staticmethod
- def IsMergedPart(part):
-  """
+        pass
+
+    @staticmethod
+    def IsMergedPart(part):
+        """
   IsMergedPart(part: Part) -> bool
 
   
@@ -229,20 +249,22 @@ class PartUtils(object):
 
    Returns: True if the Part is the result of a merge operation.
   """
-  pass
- @staticmethod
- def IsPartDerivedFromLink(dPart):
-  """
+        pass
+
+    @staticmethod
+    def IsPartDerivedFromLink(dPart):
+        """
   IsPartDerivedFromLink(dPart: Part) -> bool
 
   
 
    Is the Part derived from link geometry.
   """
-  pass
- @staticmethod
- def IsValidForCreateParts(document,hostOrLinkElementId):
-  """
+        pass
+
+    @staticmethod
+    def IsValidForCreateParts(document, hostOrLinkElementId):
+        """
   IsValidForCreateParts(document: Document,hostOrLinkElementId: LinkElementId) -> bool
 
   
@@ -257,23 +279,23 @@ class PartUtils(object):
 
    Returns: True if this id is valid,false otherwise.
   """
-  pass
- __all__=[
-  'AreElementsValidForCreateParts',
-  'ArePartsValidForDivide',
-  'ArePartsValidForMerge',
-  'CreateMergedPart',
-  'CreateParts',
-  'DivideParts',
-  'FindMergeableClusters',
-  'GetAssociatedPartMaker',
-  'GetAssociatedParts',
-  'GetChainLengthToOriginal',
-  'GetMergedParts',
-  'GetPartMakerMethodToDivideVolumeFW',
-  'HasAssociatedParts',
-  'IsMergedPart',
-  'IsPartDerivedFromLink',
-  'IsValidForCreateParts',
- ]
+        pass
 
+    __all__ = [
+        "AreElementsValidForCreateParts",
+        "ArePartsValidForDivide",
+        "ArePartsValidForMerge",
+        "CreateMergedPart",
+        "CreateParts",
+        "DivideParts",
+        "FindMergeableClusters",
+        "GetAssociatedPartMaker",
+        "GetAssociatedParts",
+        "GetChainLengthToOriginal",
+        "GetMergedParts",
+        "GetPartMakerMethodToDivideVolumeFW",
+        "HasAssociatedParts",
+        "IsMergedPart",
+        "IsPartDerivedFromLink",
+        "IsValidForCreateParts",
+    ]

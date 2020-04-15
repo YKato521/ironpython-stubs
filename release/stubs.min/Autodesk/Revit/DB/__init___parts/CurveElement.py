@@ -1,10 +1,12 @@
-class CurveElement(Element,IDisposable):
- """ Class representing curve elements. """
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def GetAdjoinedCurveElements(self,end):
-  """
+class CurveElement(Element, IDisposable):
+    """ Class representing curve elements. """
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def GetAdjoinedCurveElements(self, end):
+        """
   GetAdjoinedCurveElements(self: CurveElement,end: int) -> ISet[ElementId]
 
   
@@ -25,12 +27,14 @@ class CurveElement(Element,IDisposable):
 
    Returns: Collection of Ids of Curve Elements.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetLineStyleIds(self):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetLineStyleIds(self):
+        """
   GetLineStyleIds(self: CurveElement) -> ICollection[ElementId]
 
   
@@ -39,9 +43,10 @@ class CurveElement(Element,IDisposable):
 
    Returns: A collection of Ids of line style elements.
   """
-  pass
- def GetTangentLock(self,end,other):
-  """
+        pass
+
+    def GetTangentLock(self, end, other):
+        """
   GetTangentLock(self: CurveElement,end: int,other: ElementId) -> bool
 
   
@@ -66,9 +71,10 @@ class CurveElement(Element,IDisposable):
 
     element and the join is curently locked; returns False otherwise.
   """
-  pass
- def HasTangentJoin(self,end,other):
-  """
+        pass
+
+    def HasTangentJoin(self, end, other):
+        """
   HasTangentJoin(self: CurveElement,end: int,other: ElementId) -> bool
 
   
@@ -93,9 +99,10 @@ class CurveElement(Element,IDisposable):
 
     end-point.
   """
-  pass
- def HasTangentLocks(self,end):
-  """
+        pass
+
+    def HasTangentLocks(self, end):
+        """
   HasTangentLocks(self: CurveElement,end: int) -> bool
 
   
@@ -118,9 +125,10 @@ class CurveElement(Element,IDisposable):
 
     curve element at the given end-point; returns False otherwise.
   """
-  pass
- def IsAdjoinedCurveElement(self,end,other):
-  """
+        pass
+
+    def IsAdjoinedCurveElement(self, end, other):
+        """
   IsAdjoinedCurveElement(self: CurveElement,end: int,other: ElementId) -> bool
 
   
@@ -145,15 +153,18 @@ class CurveElement(Element,IDisposable):
 
     end-point; returns False otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetGeometryCurve(self,curve,overrideJoins):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetGeometryCurve(self, curve, overrideJoins):
+        """
   SetGeometryCurve(self: CurveElement,curve: Curve,overrideJoins: bool)
 
    Sets the geometry of the curve element.
@@ -178,9 +189,10 @@ class CurveElement(Element,IDisposable):
 
     property.
   """
-  pass
- def SetSketchPlaneAndCurve(self,sketchPlane,curve):
-  """
+        pass
+
+    def SetSketchPlaneAndCurve(self, sketchPlane, curve):
+        """
   SetSketchPlaneAndCurve(self: CurveElement,sketchPlane: SketchPlane,curve: Curve)
 
    Sets the sketch plane and the curve for this CurveElement.
@@ -191,9 +203,10 @@ class CurveElement(Element,IDisposable):
 
    curve: The new curve.
   """
-  pass
- def SetTangentLock(self,end,other,state):
-  """
+        pass
+
+    def SetTangentLock(self, end, other, state):
+        """
   SetTangentLock(self: CurveElement,end: int,other: ElementId,state: bool)
 
    Sets a new status for an existing tangent join with another curve element at 
@@ -214,18 +227,24 @@ class CurveElement(Element,IDisposable):
 
    state: Requested new state of the lock; True to lock it,False to unlock it.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- CenterPointReference=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Centerpoint reference of curve element.  Curves such as circles,arcs,ellipses,and partial ellipses support this property.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    CenterPointReference = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Centerpoint reference of curve element.  Curves such as circles,arcs,ellipses,and partial ellipses support this property.
 
 
 
@@ -235,8 +254,10 @@ Get: CenterPointReference(self: CurveElement) -> Reference
 
 """
 
- CurveElementType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Type of the curve element.
+    CurveElementType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Type of the curve element.
 
 
 
@@ -246,8 +267,10 @@ Get: CurveElementType(self: CurveElement) -> CurveElementType
 
 """
 
- GeometryCurve=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Geometry curve of the curve element.
+    GeometryCurve = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Geometry curve of the curve element.
 
 
 
@@ -259,8 +282,8 @@ Set: GeometryCurve(self: CurveElement)=value
 
 """
 
- LineStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The line style of this curve element.
+    LineStyle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The line style of this curve element.
 
 
 
@@ -272,8 +295,10 @@ Set: LineStyle(self: CurveElement)=value
 
 """
 
- SketchPlane=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The sketch plane the curve element lies in.
+    SketchPlane = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The sketch plane the curve element lies in.
 
 
 
@@ -285,8 +310,10 @@ Set: SketchPlane(self: CurveElement)=value
 
 """
 
- SupportsTangentLocks=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether or not this curve element can have a locked tangent
+    SupportsTangentLocks = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates whether or not this curve element can have a locked tangent
 
    join at either of its end-points shared with another curve element.
 
@@ -297,5 +324,3 @@ Get: SupportsTangentLocks(self: CurveElement) -> bool
 
 
 """
-
-

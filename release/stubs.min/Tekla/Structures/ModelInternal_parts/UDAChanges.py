@@ -1,6 +1,4 @@
 class UDAChanges(object):
- # no doc
- Changed=None
- Deleted=None
-
-
+    # no doc
+    Changed = None
+    Deleted = None

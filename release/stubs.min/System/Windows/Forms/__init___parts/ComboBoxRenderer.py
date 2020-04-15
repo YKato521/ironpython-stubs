@@ -1,8 +1,9 @@
 class ComboBoxRenderer(object):
- """ Provides methods used to render a combo box control with visual styles. This class cannot be inherited. """
- @staticmethod
- def DrawDropDownButton(g,bounds,state):
-  """
+    """ Provides methods used to render a combo box control with visual styles. This class cannot be inherited. """
+
+    @staticmethod
+    def DrawDropDownButton(g, bounds, state):
+        """
   DrawDropDownButton(g: Graphics,bounds: Rectangle,state: ComboBoxState)
 
    Draws a drop-down arrow with the current visual style of the operating system.
@@ -17,10 +18,11 @@ class ComboBoxRenderer(object):
 
     state of the drop-down arrow.
   """
-  pass
- @staticmethod
- def DrawTextBox(g,bounds,*__args):
-  """
+        pass
+
+    @staticmethod
+    def DrawTextBox(g, bounds, *__args):
+        """
   DrawTextBox(g: Graphics,bounds: Rectangle,comboBoxText: str,font: Font,flags: TextFormatFlags,state: ComboBoxState)
 
    Draws a text box in the specified state and bounds,with the specified text and text formatting.
@@ -127,6 +129,6 @@ class ComboBoxRenderer(object):
 
     state of the text box.
   """
-  pass
- IsSupported=True
+        pass
 
+    IsSupported = True

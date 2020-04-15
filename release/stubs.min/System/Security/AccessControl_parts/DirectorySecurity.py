@@ -1,5 +1,5 @@
 class DirectorySecurity(FileSystemSecurity):
- """
+    """
  Represents the access control and audit security for a directory. This class cannot be inherited.
 
  
@@ -8,8 +8,9 @@ class DirectorySecurity(FileSystemSecurity):
 
  DirectorySecurity(name: str,includeSections: AccessControlSections)
  """
- def AddAccessRule(self,rule):
-  """
+
+    def AddAccessRule(self, rule):
+        """
   AddAccessRule(self: CommonObjectSecurity,rule: AccessRule)
 
    Adds the specified access rule to the Discretionary Access Control List (DACL) associated with 
@@ -22,9 +23,10 @@ class DirectorySecurity(FileSystemSecurity):
 
    rule: The access rule to add.
   """
-  pass
- def AddAuditRule(self,rule):
-  """
+        pass
+
+    def AddAuditRule(self, rule):
+        """
   AddAuditRule(self: CommonObjectSecurity,rule: AuditRule)
 
    Adds the specified audit rule to the System Access Control List (SACL) associated with this 
@@ -37,9 +39,10 @@ class DirectorySecurity(FileSystemSecurity):
 
    rule: The audit rule to add.
   """
-  pass
- def RemoveAccessRule(self,rule):
-  """
+        pass
+
+    def RemoveAccessRule(self, rule):
+        """
   RemoveAccessRule(self: CommonObjectSecurity,rule: AccessRule) -> bool
 
   
@@ -58,9 +61,10 @@ class DirectorySecurity(FileSystemSecurity):
 
    Returns: true if the access rule was successfully removed; otherwise,false.
   """
-  pass
- def RemoveAccessRuleAll(self,rule):
-  """
+        pass
+
+    def RemoveAccessRuleAll(self, rule):
+        """
   RemoveAccessRuleAll(self: CommonObjectSecurity,rule: AccessRule)
 
    Removes all access rules that have the same security identifier as the specified access rule 
@@ -75,9 +79,10 @@ class DirectorySecurity(FileSystemSecurity):
 
    rule: The access rule to remove.
   """
-  pass
- def RemoveAccessRuleSpecific(self,rule):
-  """
+        pass
+
+    def RemoveAccessRuleSpecific(self, rule):
+        """
   RemoveAccessRuleSpecific(self: CommonObjectSecurity,rule: AccessRule)
 
    Removes all access rules that exactly match the specified access rule from the Discretionary 
@@ -92,9 +97,10 @@ class DirectorySecurity(FileSystemSecurity):
 
    rule: The access rule to remove.
   """
-  pass
- def RemoveAuditRule(self,rule):
-  """
+        pass
+
+    def RemoveAuditRule(self, rule):
+        """
   RemoveAuditRule(self: CommonObjectSecurity,rule: AuditRule) -> bool
 
   
@@ -113,9 +119,10 @@ class DirectorySecurity(FileSystemSecurity):
 
    Returns: true if the audit rule was successfully removed; otherwise,false.
   """
-  pass
- def RemoveAuditRuleAll(self,rule):
-  """
+        pass
+
+    def RemoveAuditRuleAll(self, rule):
+        """
   RemoveAuditRuleAll(self: CommonObjectSecurity,rule: AuditRule)
 
    Removes all audit rules that have the same security identifier as the specified audit rule from 
@@ -130,9 +137,10 @@ class DirectorySecurity(FileSystemSecurity):
 
    rule: The audit rule to remove.
   """
-  pass
- def RemoveAuditRuleSpecific(self,rule):
-  """
+        pass
+
+    def RemoveAuditRuleSpecific(self, rule):
+        """
   RemoveAuditRuleSpecific(self: CommonObjectSecurity,rule: AuditRule)
 
    Removes all audit rules that exactly match the specified audit rule from the System Access 
@@ -147,9 +155,10 @@ class DirectorySecurity(FileSystemSecurity):
 
    rule: The audit rule to remove.
   """
-  pass
- def ResetAccessRule(self,rule):
-  """
+        pass
+
+    def ResetAccessRule(self, rule):
+        """
   ResetAccessRule(self: CommonObjectSecurity,rule: AccessRule)
 
    Removes all access rules in the Discretionary Access Control List (DACL) associated with this 
@@ -164,9 +173,10 @@ class DirectorySecurity(FileSystemSecurity):
 
    rule: The access rule to reset.
   """
-  pass
- def SetAccessRule(self,rule):
-  """
+        pass
+
+    def SetAccessRule(self, rule):
+        """
   SetAccessRule(self: CommonObjectSecurity,rule: AccessRule)
 
    Removes all access rules that contain the same security identifier and qualifier as the 
@@ -183,9 +193,10 @@ class DirectorySecurity(FileSystemSecurity):
 
    rule: The access rule to set.
   """
-  pass
- def SetAuditRule(self,rule):
-  """
+        pass
+
+    def SetAuditRule(self, rule):
+        """
   SetAuditRule(self: CommonObjectSecurity,rule: AuditRule)
 
    Removes all audit rules that contain the same security identifier and qualifier as the specified 
@@ -202,55 +213,65 @@ class DirectorySecurity(FileSystemSecurity):
 
    rule: The audit rule to set.
   """
-  pass
- @staticmethod
- def __new__(self,name=None,includeSections=None):
-  """
+        pass
+
+    @staticmethod
+    def __new__(self, name=None, includeSections=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,name: str,includeSections: AccessControlSections)
   """
-  pass
- AccessRulesModified=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that specifies whether the access rules associated with this System.Security.AccessControl.ObjectSecurity object have been modified.
+        pass
+
+    AccessRulesModified = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that specifies whether the access rules associated with this System.Security.AccessControl.ObjectSecurity object have been modified.
 
 
 
 """
 
- AuditRulesModified=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that specifies whether the audit rules associated with this System.Security.AccessControl.ObjectSecurity object have been modified.
+    AuditRulesModified = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that specifies whether the audit rules associated with this System.Security.AccessControl.ObjectSecurity object have been modified.
 
 
 
 """
 
- GroupModified=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that specifies whether the group associated with the securable object has been modified.
+    GroupModified = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that specifies whether the group associated with the securable object has been modified.
 
 
 
 """
 
- IsContainer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a Boolean value that specifies whether this System.Security.AccessControl.ObjectSecurity object is a container object.
+    IsContainer = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a Boolean value that specifies whether this System.Security.AccessControl.ObjectSecurity object is a container object.
 
 
 
 """
 
- IsDS=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a Boolean value that specifies whether this System.Security.AccessControl.ObjectSecurity object is a directory object.
+    IsDS = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a Boolean value that specifies whether this System.Security.AccessControl.ObjectSecurity object is a directory object.
 
 
 
 """
 
- OwnerModified=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that specifies whether the owner of the securable object has been modified.
+    OwnerModified = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that specifies whether the owner of the securable object has been modified.
 
 
 
 """
-
-

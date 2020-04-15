@@ -1,16 +1,20 @@
-class AnalyticalModelSurface(AnalyticalModel,IDisposable):
- """ An element that represents a surface in the structural analytical model. """
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetHiddenOpenings(self,openingsIds):
-  """ GetHiddenOpenings(self: AnalyticalModelSurface) -> ICollection[ElementId] """
-  pass
- def GetLocalCoordinateSystem(self,point=None):
-  """
+class AnalyticalModelSurface(AnalyticalModel, IDisposable):
+    """ An element that represents a surface in the structural analytical model. """
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetHiddenOpenings(self, openingsIds):
+        """ GetHiddenOpenings(self: AnalyticalModelSurface) -> ICollection[ElementId] """
+        pass
+
+    def GetLocalCoordinateSystem(self, point=None):
+        """
   GetLocalCoordinateSystem(self: AnalyticalModelSurface,point: XYZ) -> Transform
 
   
@@ -33,9 +37,10 @@ class AnalyticalModelSurface(AnalyticalModel,IDisposable):
 
     - base point of LCS.
   """
-  pass
- def GetLoops(self,loopType):
-  """
+        pass
+
+    def GetLoops(self, loopType):
+        """
   GetLoops(self: AnalyticalModelSurface,loopType: AnalyticalLoopType) -> IList[CurveLoop]
 
   
@@ -44,9 +49,10 @@ class AnalyticalModelSurface(AnalyticalModel,IDisposable):
 
    Returns: Loops that satisfy loopType criteria are returned.
   """
-  pass
- def GetOpeningLoops(self,openingId):
-  """
+        pass
+
+    def GetOpeningLoops(self, openingId):
+        """
   GetOpeningLoops(self: AnalyticalModelSurface,openingId: ElementId) -> IList[CurveLoop]
 
   
@@ -65,12 +71,14 @@ class AnalyticalModelSurface(AnalyticalModel,IDisposable):
 
    Returns: Array of CurveLoops associated with Opening.
   """
-  pass
- def GetOpenings(self,openingsIds):
-  """ GetOpenings(self: AnalyticalModelSurface) -> ICollection[ElementId] """
-  pass
- def GetPlane(self):
-  """
+        pass
+
+    def GetOpenings(self, openingsIds):
+        """ GetOpenings(self: AnalyticalModelSurface) -> ICollection[ElementId] """
+        pass
+
+    def GetPlane(self):
+        """
   GetPlane(self: AnalyticalModelSurface) -> Plane
 
   
@@ -85,9 +93,10 @@ class AnalyticalModelSurface(AnalyticalModel,IDisposable):
 
    Returns: Plane object on which Analytical Model is projected.
   """
-  pass
- def HasOpenings(self):
-  """
+        pass
+
+    def HasOpenings(self):
+        """
   HasOpenings(self: AnalyticalModelSurface) -> bool
 
   
@@ -98,9 +107,10 @@ class AnalyticalModelSurface(AnalyticalModel,IDisposable):
 
     hide).
   """
-  pass
- def HideOpening(self,openingId):
-  """
+        pass
+
+    def HideOpening(self, openingId):
+        """
   HideOpening(self: AnalyticalModelSurface,openingId: ElementId) -> bool
 
   
@@ -113,9 +123,10 @@ class AnalyticalModelSurface(AnalyticalModel,IDisposable):
 
    Returns: True if given opening was hidden (operation was successful).
   """
-  pass
- def IsOpeningHidden(self,openingId):
-  """
+        pass
+
+    def IsOpeningHidden(self, openingId):
+        """
   IsOpeningHidden(self: AnalyticalModelSurface,openingId: ElementId) -> bool
 
   
@@ -128,9 +139,10 @@ class AnalyticalModelSurface(AnalyticalModel,IDisposable):
 
    Returns: True for openings which are hidden,false for all other Identifiers.
   """
-  pass
- def IsPlanar(self):
-  """
+        pass
+
+    def IsPlanar(self):
+        """
   IsPlanar(self: AnalyticalModelSurface) -> bool
 
   
@@ -139,9 +151,10 @@ class AnalyticalModelSurface(AnalyticalModel,IDisposable):
 
    Returns: True if Analytical Model Surface Element is planar,false otherwise.
   """
-  pass
- def IsValidOpeningForHide(self,openingId):
-  """
+        pass
+
+    def IsValidOpeningForHide(self, openingId):
+        """
   IsValidOpeningForHide(self: AnalyticalModelSurface,openingId: ElementId) -> bool
 
   
@@ -158,18 +171,22 @@ class AnalyticalModelSurface(AnalyticalModel,IDisposable):
 
    Returns: True for openings which are valid to be hidden,false for all other Identifiers.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetLoops(self,loopType,newLoops):
-  """ SetLoops(self: AnalyticalModelSurface,loopType: AnalyticalLoopType,newLoops: IList[CurveLoop]) -> bool """
-  pass
- def ShowOpening(self,openingId):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetLoops(self, loopType, newLoops):
+        """ SetLoops(self: AnalyticalModelSurface,loopType: AnalyticalLoopType,newLoops: IList[CurveLoop]) -> bool """
+        pass
+
+    def ShowOpening(self, openingId):
+        """
   ShowOpening(self: AnalyticalModelSurface,openingId: ElementId) -> bool
 
   
@@ -182,18 +199,24 @@ class AnalyticalModelSurface(AnalyticalModel,IDisposable):
 
    Returns: True if given opening was shown (operation was successful).
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- AlignmentMethod=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The alignment method option.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    AlignmentMethod = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The alignment method option.
 
 
 
@@ -205,8 +228,10 @@ Set: AlignmentMethod(self: AnalyticalModelSurface)=value
 
 """
 
- BottomExtension=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The bottom extension option.
+    BottomExtension = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The bottom extension option.
 
 
 
@@ -218,8 +243,10 @@ Set: BottomExtension(self: AnalyticalModelSurface)=value
 
 """
 
- BottomExtensionMethod=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The bottom extension method option.
+    BottomExtensionMethod = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The bottom extension method option.
 
 
 
@@ -231,8 +258,10 @@ Set: BottomExtensionMethod(self: AnalyticalModelSurface)=value
 
 """
 
- BottomExtensionPlaneId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The bottom extension plane ID option.
+    BottomExtensionPlaneId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The bottom extension plane ID option.
 
 
 
@@ -244,8 +273,10 @@ Set: BottomExtensionPlaneId(self: AnalyticalModelSurface)=value
 
 """
 
- HasExtension=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the element supports an extension option.
+    HasExtension = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the element supports an extension option.
 
 
 
@@ -255,8 +286,10 @@ Get: HasExtension(self: AnalyticalModelSurface) -> bool
 
 """
 
- ProjectionPlaneZ=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Z projection option.
+    ProjectionPlaneZ = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The Z projection option.
 
 
 
@@ -268,8 +301,10 @@ Set: ProjectionPlaneZ(self: AnalyticalModelSurface)=value
 
 """
 
- ProjectionZ=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Z projection option.
+    ProjectionZ = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The Z projection option.
 
 
 
@@ -281,8 +316,10 @@ Set: ProjectionZ(self: AnalyticalModelSurface)=value
 
 """
 
- TopExtension=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The top extension option.
+    TopExtension = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The top extension option.
 
 
 
@@ -294,8 +331,10 @@ Set: TopExtension(self: AnalyticalModelSurface)=value
 
 """
 
- TopExtensionMethod=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The top extension method option.
+    TopExtensionMethod = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The top extension method option.
 
 
 
@@ -307,8 +346,10 @@ Set: TopExtensionMethod(self: AnalyticalModelSurface)=value
 
 """
 
- TopExtensionPlaneId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The top extension plane ID option.
+    TopExtensionPlaneId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The top extension plane ID option.
 
 
 
@@ -319,5 +360,3 @@ Get: TopExtensionPlaneId(self: AnalyticalModelSurface) -> ElementId
 Set: TopExtensionPlaneId(self: AnalyticalModelSurface)=value
 
 """
-
-

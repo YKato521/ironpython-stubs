@@ -1,14 +1,16 @@
-class RebarConstrainedHandle(object,IDisposable):
- """
+class RebarConstrainedHandle(object, IDisposable):
+    """
  A class representing a handle on a Rebar that can be joined to a reference,such
 
     as a host Element's surface or cover,or another Rebar's handle.
  """
- def Dispose(self):
-  """ Dispose(self: RebarConstrainedHandle) """
-  pass
- def GetEdgeNumber(self):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: RebarConstrainedHandle) """
+        pass
+
+    def GetEdgeNumber(self):
+        """
   GetEdgeNumber(self: RebarConstrainedHandle) -> int
 
   
@@ -21,9 +23,10 @@ class RebarConstrainedHandle(object,IDisposable):
 
      driven by the handle.
   """
-  pass
- def GetHandleType(self):
-  """
+        pass
+
+    def GetHandleType(self):
+        """
   GetHandleType(self: RebarConstrainedHandle) -> RebarHandleType
 
   
@@ -32,18 +35,20 @@ class RebarConstrainedHandle(object,IDisposable):
 
    Returns: The RebarHandleType of the specified RebarConstrainedHandle.
   """
-  pass
- def IsEdgeHandle(self):
-  """
+        pass
+
+    def IsEdgeHandle(self):
+        """
   IsEdgeHandle(self: RebarConstrainedHandle) -> bool
 
   
 
    Returns true if the RebarHandleType of the RebarConstrainedHandle is 'Edge.'
   """
-  pass
- def IsValid(self):
-  """
+        pass
+
+    def IsValid(self):
+        """
   IsValid(self: RebarConstrainedHandle) -> bool
 
   
@@ -54,24 +59,32 @@ class RebarConstrainedHandle(object,IDisposable):
 
      and that its RebarConstraintsManager is still valid.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: RebarConstrainedHandle,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: RebarConstrainedHandle,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -80,5 +93,3 @@ Get: IsValidObject(self: RebarConstrainedHandle) -> bool
 
 
 """
-
-

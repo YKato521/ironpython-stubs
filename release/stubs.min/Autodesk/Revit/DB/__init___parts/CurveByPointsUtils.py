@@ -1,12 +1,14 @@
-class CurveByPointsUtils(object,IDisposable):
- """ A static class that contains methods for processing curves driven by points. """
- @staticmethod
- def AddCurvesToFaceRegion(document,curveElemIds):
-  """ AddCurvesToFaceRegion(document: Document,curveElemIds: IList[ElementId]) """
-  pass
- @staticmethod
- def CreateArcThroughPoints(document,startPoint,endPoint,interiorPoint):
-  """
+class CurveByPointsUtils(object, IDisposable):
+    """ A static class that contains methods for processing curves driven by points. """
+
+    @staticmethod
+    def AddCurvesToFaceRegion(document, curveElemIds):
+        """ AddCurvesToFaceRegion(document: Document,curveElemIds: IList[ElementId]) """
+        pass
+
+    @staticmethod
+    def CreateArcThroughPoints(document, startPoint, endPoint, interiorPoint):
+        """
   CreateArcThroughPoints(document: Document,startPoint: ReferencePoint,endPoint: ReferencePoint,interiorPoint: ReferencePoint) -> CurveElement
 
   
@@ -25,17 +27,29 @@ class CurveByPointsUtils(object,IDisposable):
 
    Returns: The CurveElement to be created.
   """
-  pass
- @staticmethod
- def CreateRectangle(document,startPoint,endPoint,projectionType,boundaryReferenceLines,boundaryCurvesFollowSurface,createdCurvesIds,createdCornersIds):
-  """ CreateRectangle(document: Document,startPoint: ReferencePoint,endPoint: ReferencePoint,projectionType: CurveProjectionType,boundaryReferenceLines: bool,boundaryCurvesFollowSurface: bool) -> (IList[ElementId],IList[ElementId]) """
-  pass
- def Dispose(self):
-  """ Dispose(self: CurveByPointsUtils) """
-  pass
- @staticmethod
- def GetFaceRegions(cda,referenceOfFace):
-  """
+        pass
+
+    @staticmethod
+    def CreateRectangle(
+        document,
+        startPoint,
+        endPoint,
+        projectionType,
+        boundaryReferenceLines,
+        boundaryCurvesFollowSurface,
+        createdCurvesIds,
+        createdCornersIds,
+    ):
+        """ CreateRectangle(document: Document,startPoint: ReferencePoint,endPoint: ReferencePoint,projectionType: CurveProjectionType,boundaryReferenceLines: bool,boundaryCurvesFollowSurface: bool) -> (IList[ElementId],IList[ElementId]) """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: CurveByPointsUtils) """
+        pass
+
+    @staticmethod
+    def GetFaceRegions(cda, referenceOfFace):
+        """
   GetFaceRegions(cda: Document,referenceOfFace: Reference) -> IList[Reference]
 
   
@@ -52,10 +66,11 @@ class CurveByPointsUtils(object,IDisposable):
 
     are found.
   """
-  pass
- @staticmethod
- def GetHostFace(curveElem):
-  """
+        pass
+
+    @staticmethod
+    def GetHostFace(curveElem):
+        """
   GetHostFace(curveElem: CurveElement) -> Reference
 
   
@@ -70,10 +85,11 @@ class CurveByPointsUtils(object,IDisposable):
 
     host is not a face.
   """
-  pass
- @staticmethod
- def GetProjectionType(curveElem):
-  """
+        pass
+
+    @staticmethod
+    def GetProjectionType(curveElem):
+        """
   GetProjectionType(curveElem: CurveElement) -> CurveProjectionType
 
   
@@ -86,10 +102,11 @@ class CurveByPointsUtils(object,IDisposable):
 
    Returns: The projection type.
   """
-  pass
- @staticmethod
- def GetSketchOnSurface(curveElem):
-  """
+        pass
+
+    @staticmethod
+    def GetSketchOnSurface(curveElem):
+        """
   GetSketchOnSurface(curveElem: CurveElement) -> bool
 
   
@@ -104,13 +121,15 @@ class CurveByPointsUtils(object,IDisposable):
 
     to the face.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: CurveByPointsUtils,disposing: bool) """
-  pass
- @staticmethod
- def SetProjectionType(curveElem,value):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: CurveByPointsUtils,disposing: bool) """
+        pass
+
+    @staticmethod
+    def SetProjectionType(curveElem, value):
+        """
   SetProjectionType(curveElem: CurveElement,value: CurveProjectionType)
 
    Sets the projection type of the CurveElement.
@@ -121,10 +140,11 @@ class CurveByPointsUtils(object,IDisposable):
 
    value: The input projection type.
   """
-  pass
- @staticmethod
- def SetSketchOnSurface(curveElem,sketchOnSurface):
-  """
+        pass
+
+    @staticmethod
+    def SetSketchOnSurface(curveElem, sketchOnSurface):
+        """
   SetSketchOnSurface(curveElem: CurveElement,sketchOnSurface: bool)
 
    Sets the relationship between the CurveElement and face.
@@ -137,25 +157,33 @@ class CurveByPointsUtils(object,IDisposable):
 
     to the face.
   """
-  pass
- @staticmethod
- def ValidateCurveElementIdArrayForFaceRegions(document,curveElemIds):
-  """ ValidateCurveElementIdArrayForFaceRegions(document: Document,curveElemIds: IList[ElementId]) -> bool """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    @staticmethod
+    def ValidateCurveElementIdArrayForFaceRegions(document, curveElemIds):
+        """ ValidateCurveElementIdArrayForFaceRegions(document: Document,curveElemIds: IList[ElementId]) -> bool """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -164,5 +192,3 @@ Get: IsValidObject(self: CurveByPointsUtils) -> bool
 
 
 """
-
-

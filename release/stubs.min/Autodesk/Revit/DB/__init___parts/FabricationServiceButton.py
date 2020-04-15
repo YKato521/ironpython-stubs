@@ -1,7 +1,8 @@
-class FabricationServiceButton(object,IDisposable):
- """ The object contains information about a fabricaton button. """
- def ContainsFabricationPartType(self,partType):
-  """
+class FabricationServiceButton(object, IDisposable):
+    """ The object contains information about a fabricaton button. """
+
+    def ContainsFabricationPartType(self, partType):
+        """
   ContainsFabricationPartType(self: FabricationServiceButton,partType: FabricationPartType) -> bool
 
   
@@ -20,12 +21,14 @@ class FabricationServiceButton(object,IDisposable):
 
     button.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: FabricationServiceButton) """
-  pass
- def GetConditionDescription(self,condition):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: FabricationServiceButton) """
+        pass
+
+    def GetConditionDescription(self, condition):
+        """
   GetConditionDescription(self: FabricationServiceButton,condition: int) -> str
 
   
@@ -44,12 +47,14 @@ class FabricationServiceButton(object,IDisposable):
 
     range or describe the type of fitting.
   """
-  pass
- def GetConditionImage(self,condition):
-  """ GetConditionImage(self: FabricationServiceButton,condition: int) -> Bitmap """
-  pass
- def GetConditionLowerValue(self,condition):
-  """
+        pass
+
+    def GetConditionImage(self, condition):
+        """ GetConditionImage(self: FabricationServiceButton,condition: int) -> Bitmap """
+        pass
+
+    def GetConditionLowerValue(self, condition):
+        """
   GetConditionLowerValue(self: FabricationServiceButton,condition: int) -> float
 
   
@@ -66,9 +71,10 @@ class FabricationServiceButton(object,IDisposable):
 
    Returns: The condition lower value.
   """
-  pass
- def GetConditionName(self,condition):
-  """
+        pass
+
+    def GetConditionName(self, condition):
+        """
   GetConditionName(self: FabricationServiceButton,condition: int) -> str
 
   
@@ -81,9 +87,10 @@ class FabricationServiceButton(object,IDisposable):
 
    Returns: The name of the specified condition on the fabrication service button.
   """
-  pass
- def GetConditionUpperValue(self,condition):
-  """
+        pass
+
+    def GetConditionUpperValue(self, condition):
+        """
   GetConditionUpperValue(self: FabricationServiceButton,condition: int) -> float
 
   
@@ -96,9 +103,10 @@ class FabricationServiceButton(object,IDisposable):
 
    Returns: The condition upper value.
   """
-  pass
- def GetImage(self):
-  """
+        pass
+
+    def GetImage(self):
+        """
   GetImage(self: FabricationServiceButton) -> Bitmap
 
   
@@ -109,9 +117,10 @@ class FabricationServiceButton(object,IDisposable):
 
     there is no preview image.
   """
-  pass
- def IsUnrestrictedCondition(self,condition):
-  """
+        pass
+
+    def IsUnrestrictedCondition(self, condition):
+        """
   IsUnrestrictedCondition(self: FabricationServiceButton,condition: int) -> bool
 
   
@@ -124,9 +133,10 @@ class FabricationServiceButton(object,IDisposable):
 
    Returns: True if the condition is unrestricted.
   """
-  pass
- def IsValid(self):
-  """
+        pass
+
+    def IsValid(self):
+        """
   IsValid(self: FabricationServiceButton) -> bool
 
   
@@ -135,10 +145,11 @@ class FabricationServiceButton(object,IDisposable):
 
    Returns: True if the button contains only valid fittings.
   """
-  pass
- @staticmethod
- def IsValidConditionIndex(button,condition):
-  """
+        pass
+
+    @staticmethod
+    def IsValidConditionIndex(button, condition):
+        """
   IsValidConditionIndex(button: FabricationServiceButton,condition: int) -> bool
 
   
@@ -153,24 +164,32 @@ class FabricationServiceButton(object,IDisposable):
 
    Returns: True if larger or equal to 0 and less than ConditionCount.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: FabricationServiceButton,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- ButtonIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The button index for this button.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: FabricationServiceButton,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    ButtonIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The button index for this button.
 
 
 
@@ -180,8 +199,8 @@ Get: ButtonIndex(self: FabricationServiceButton) -> int
 
 """
 
- Code=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The code of the button.
+    Code = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The code of the button.
 
 
 
@@ -191,8 +210,10 @@ Get: Code(self: FabricationServiceButton) -> str
 
 """
 
- ConditionCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The number of conditions.
+    ConditionCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The number of conditions.
 
 
 
@@ -202,8 +223,10 @@ Get: ConditionCount(self: FabricationServiceButton) -> int
 
 """
 
- GroupIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The group index for this button.
+    GroupIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The group index for this button.
 
 
 
@@ -213,8 +236,8 @@ Get: GroupIndex(self: FabricationServiceButton) -> int
 
 """
 
- IsAHanger=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks if the fabrication service button is hanger.
+    IsAHanger = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Checks if the fabrication service button is hanger.
 
 
 
@@ -224,8 +247,10 @@ Get: IsAHanger(self: FabricationServiceButton) -> bool
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -235,8 +260,8 @@ Get: IsValidObject(self: FabricationServiceButton) -> bool
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The name of the button.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The name of the button.
 
 
 
@@ -246,8 +271,8 @@ Get: Name(self: FabricationServiceButton) -> str
 
 """
 
- ServiceId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The fabrication service identifier for the fabrication service this button belongs to.
+    ServiceId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The fabrication service identifier for the fabrication service this button belongs to.
 
 
 
@@ -256,5 +281,3 @@ Get: ServiceId(self: FabricationServiceButton) -> int
 
 
 """
-
-

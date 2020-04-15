@@ -1,8 +1,9 @@
-class ExportDGNSettings(Element,IDisposable):
- """ This element contains DGN export settings which are saved in a Revit document. """
- @staticmethod
- def Create(document,name,options=None):
-  """
+class ExportDGNSettings(Element, IDisposable):
+    """ This element contains DGN export settings which are saved in a Revit document. """
+
+    @staticmethod
+    def Create(document, name, options=None):
+        """
   Create(document: Document,name: str) -> ExportDGNSettings
 
   
@@ -33,15 +34,18 @@ class ExportDGNSettings(Element,IDisposable):
 
    Returns: The new DGN export settings instance.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetDGNExportOptions(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetDGNExportOptions(self):
+        """
   GetDGNExportOptions(self: ExportDGNSettings) -> DGNExportOptions
 
   
@@ -50,10 +54,11 @@ class ExportDGNSettings(Element,IDisposable):
 
    Returns: The options.
   """
-  pass
- @staticmethod
- def ListNames(aDoc):
-  """
+        pass
+
+    @staticmethod
+    def ListNames(aDoc):
+        """
   ListNames(aDoc: Document) -> IList[str]
 
   
@@ -66,12 +71,14 @@ class ExportDGNSettings(Element,IDisposable):
 
    Returns: An array of strings representing names of predefined setups.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def SetDGNExportOptions(self,options):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def SetDGNExportOptions(self, options):
+        """
   SetDGNExportOptions(self: ExportDGNSettings,options: DGNExportOptions)
 
    Sets the options stored in these settings.
@@ -80,16 +87,20 @@ class ExportDGNSettings(Element,IDisposable):
 
    options: The options.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

@@ -1,13 +1,14 @@
-class DataGridViewAdvancedBorderStyle(object,ICloneable):
- """
+class DataGridViewAdvancedBorderStyle(object, ICloneable):
+    """
  Contains border styles for the cells in a System.Windows.Forms.DataGridView control.
 
  
 
  DataGridViewAdvancedBorderStyle()
  """
- def Equals(self,other):
-  """
+
+    def Equals(self, other):
+        """
   Equals(self: DataGridViewAdvancedBorderStyle,other: object) -> bool
 
   
@@ -36,12 +37,14 @@ class DataGridViewAdvancedBorderStyle(object,ICloneable):
 
     false.
   """
-  pass
- def GetHashCode(self):
-  """ GetHashCode(self: DataGridViewAdvancedBorderStyle) -> int """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """ GetHashCode(self: DataGridViewAdvancedBorderStyle) -> int """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: DataGridViewAdvancedBorderStyle) -> str
 
   
@@ -50,22 +53,28 @@ class DataGridViewAdvancedBorderStyle(object,ICloneable):
 
    Returns: A string that represents the System.Windows.Forms.DataGridViewAdvancedBorderStyle.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __ne__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- All=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the border style for all of the borders of a cell.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    All = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the border style for all of the borders of a cell.
 
 
 
@@ -77,8 +86,8 @@ Set: All(self: DataGridViewAdvancedBorderStyle)=value
 
 """
 
- Bottom=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the style for the bottom border of a cell.
+    Bottom = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the style for the bottom border of a cell.
 
 
 
@@ -90,8 +99,8 @@ Set: Bottom(self: DataGridViewAdvancedBorderStyle)=value
 
 """
 
- Left=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the style for the left border of a cell.
+    Left = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the style for the left border of a cell.
 
 
 
@@ -103,8 +112,8 @@ Set: Left(self: DataGridViewAdvancedBorderStyle)=value
 
 """
 
- Right=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the style for the right border of a cell.
+    Right = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the style for the right border of a cell.
 
 
 
@@ -116,8 +125,8 @@ Set: Right(self: DataGridViewAdvancedBorderStyle)=value
 
 """
 
- Top=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the style for the top border of a cell.
+    Top = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the style for the top border of a cell.
 
 
 
@@ -128,5 +137,3 @@ Get: Top(self: DataGridViewAdvancedBorderStyle) -> DataGridViewAdvancedCellBorde
 Set: Top(self: DataGridViewAdvancedBorderStyle)=value
 
 """
-
-

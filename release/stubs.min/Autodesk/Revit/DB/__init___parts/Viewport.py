@@ -1,8 +1,9 @@
-class Viewport(Element,IDisposable):
- """ An element that establishes the placement of a view on a sheet. """
- @staticmethod
- def CanAddViewToSheet(document,viewSheetId,viewId):
-  """
+class Viewport(Element, IDisposable):
+    """ An element that establishes the placement of a view on a sheet. """
+
+    @staticmethod
+    def CanAddViewToSheet(document, viewSheetId, viewId):
+        """
   CanAddViewToSheet(document: Document,viewSheetId: ElementId,viewId: ElementId) -> bool
 
   
@@ -19,10 +20,11 @@ class Viewport(Element,IDisposable):
 
    Returns: True if the view can be added to the ViewSheet,false otherwise.
   """
-  pass
- @staticmethod
- def Create(document,viewSheetId,viewId,point):
-  """
+        pass
+
+    @staticmethod
+    def Create(document, viewSheetId, viewId, point):
+        """
   Create(document: Document,viewSheetId: ElementId,viewId: ElementId,point: XYZ) -> Viewport
 
   
@@ -41,15 +43,18 @@ class Viewport(Element,IDisposable):
 
    Returns: The new Viewport.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetBoxCenter(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetBoxCenter(self):
+        """
   GetBoxCenter(self: Viewport) -> XYZ
 
   
@@ -62,9 +67,10 @@ class Viewport(Element,IDisposable):
 
    Returns: The center of the outline of the viewport on the sheet.
   """
-  pass
- def GetBoxOutline(self):
-  """
+        pass
+
+    def GetBoxOutline(self):
+        """
   GetBoxOutline(self: Viewport) -> Outline
 
   
@@ -73,9 +79,10 @@ class Viewport(Element,IDisposable):
 
    Returns: The outline of the viewport on the sheet.
   """
-  pass
- def GetLabelOutline(self):
-  """
+        pass
+
+    def GetLabelOutline(self):
+        """
   GetLabelOutline(self: Viewport) -> Outline
 
   
@@ -84,12 +91,14 @@ class Viewport(Element,IDisposable):
 
    Returns: The outline of the viewport's label on the sheet.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def SetBoxCenter(self,newCenterPoint):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def SetBoxCenter(self, newCenterPoint):
+        """
   SetBoxCenter(self: Viewport,newCenterPoint: XYZ)
 
    Moves this viewport so that the center of the box outline (excluding the 
@@ -102,21 +111,26 @@ class Viewport(Element,IDisposable):
 
    newCenterPoint: The desired center for the box outline.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Rotation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The rotation of the viewport on the sheet.
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Rotation = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The rotation of the viewport on the sheet.
 
 
 
@@ -128,8 +142,8 @@ Set: Rotation(self: Viewport)=value
 
 """
 
- SheetId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id of the ViewSheet on which the viewport appears,
+    SheetId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The element id of the ViewSheet on which the viewport appears,
 
    or InvalidElementId if this viewport does not associate a view
 
@@ -143,8 +157,8 @@ Get: SheetId(self: Viewport) -> ElementId
 
 """
 
- ViewId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id of the associated View.
+    ViewId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The element id of the associated View.
 
 
 
@@ -153,5 +167,3 @@ Get: ViewId(self: Viewport) -> ElementId
 
 
 """
-
-

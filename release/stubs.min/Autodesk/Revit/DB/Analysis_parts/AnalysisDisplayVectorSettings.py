@@ -1,5 +1,5 @@
-class AnalysisDisplayVectorSettings(object,IDisposable):
- """
+class AnalysisDisplayVectorSettings(object, IDisposable):
+    """
  Contains vector settings for analysis display style element.
 
  
@@ -8,11 +8,13 @@ class AnalysisDisplayVectorSettings(object,IDisposable):
 
  AnalysisDisplayVectorSettings(other: AnalysisDisplayVectorSettings)
  """
- def Dispose(self):
-  """ Dispose(self: AnalysisDisplayVectorSettings) """
-  pass
- def IsEqual(self,other):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: AnalysisDisplayVectorSettings) """
+        pass
+
+    def IsEqual(self, other):
+        """
   IsEqual(self: AnalysisDisplayVectorSettings,other: AnalysisDisplayVectorSettings) -> bool
 
   
@@ -25,32 +27,41 @@ class AnalysisDisplayVectorSettings(object,IDisposable):
 
    Returns: True if objects are equal,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: AnalysisDisplayVectorSettings,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,other=None):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: AnalysisDisplayVectorSettings,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, other=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,other: AnalysisDisplayVectorSettings)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- ArrowheadScale=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Type of arrow head scaling.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    ArrowheadScale = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Type of arrow head scaling.
 
 
 
@@ -62,8 +73,10 @@ Set: ArrowheadScale(self: AnalysisDisplayVectorSettings)=value
 
 """
 
- ArrowLineWeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Line weight assigned to arrow lines for vectors.
+    ArrowLineWeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Line weight assigned to arrow lines for vectors.
 
 
 
@@ -75,8 +88,10 @@ Set: ArrowLineWeight(self: AnalysisDisplayVectorSettings)=value
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -86,8 +101,8 @@ Get: IsValidObject(self: AnalysisDisplayVectorSettings) -> bool
 
 """
 
- Rounding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Increment to which numeric values of analysis results are rounded in vectors.
+    Rounding = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Increment to which numeric values of analysis results are rounded in vectors.
 
 
 
@@ -99,8 +114,10 @@ Set: Rounding(self: AnalysisDisplayVectorSettings)=value
 
 """
 
- TextTypeId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Element id of text associated with the settings.
+    TextTypeId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Element id of text associated with the settings.
 
 
 
@@ -112,8 +129,10 @@ Set: TextTypeId(self: AnalysisDisplayVectorSettings)=value
 
 """
 
- VectorOrientation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Vector orientation.
+    VectorOrientation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Vector orientation.
 
 
 
@@ -125,8 +144,10 @@ Set: VectorOrientation(self: AnalysisDisplayVectorSettings)=value
 
 """
 
- VectorPosition=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Vector position.
+    VectorPosition = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Vector position.
 
 
 
@@ -138,8 +159,10 @@ Set: VectorPosition(self: AnalysisDisplayVectorSettings)=value
 
 """
 
- VectorTextType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Type of vector text visualization.
+    VectorTextType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Type of vector text visualization.
 
 
 
@@ -150,5 +173,3 @@ Get: VectorTextType(self: AnalysisDisplayVectorSettings) -> AnalysisDisplayStyle
 Set: VectorTextType(self: AnalysisDisplayVectorSettings)=value
 
 """
-
-

@@ -1,5 +1,12 @@
-class Vector3d(object,ISerializable,IEquatable[Vector3d],IComparable[Vector3d],IComparable,IEpsilonComparable[Vector3d]):
- """
+class Vector3d(
+    object,
+    ISerializable,
+    IEquatable[Vector3d],
+    IComparable[Vector3d],
+    IComparable,
+    IEpsilonComparable[Vector3d],
+):
+    """
  Represents the three components of a vector in three-dimensional space,
 
     using System.Double-precision floating point numbers.
@@ -14,9 +21,10 @@ class Vector3d(object,ISerializable,IEquatable[Vector3d],IComparable[Vector3d],I
 
  Vector3d(vector: Vector3d)
  """
- @staticmethod
- def Add(vector1,vector2):
-  """
+
+    @staticmethod
+    def Add(vector1, vector2):
+        """
   Add(vector1: Vector3d,vector2: Vector3d) -> Vector3d
 
   
@@ -37,9 +45,10 @@ class Vector3d(object,ISerializable,IEquatable[Vector3d],IComparable[Vector3d],I
 
    Returns: A new vector that results from the componentwise addition of the two vectors.
   """
-  pass
- def CompareTo(self,other):
-  """
+        pass
+
+    def CompareTo(self, other):
+        """
   CompareTo(self: Vector3d,other: Vector3d) -> int
 
   
@@ -60,10 +69,11 @@ class Vector3d(object,ISerializable,IEquatable[Vector3d],IComparable[Vector3d],I
 
     other.Y-1: if this.X == other.X and this.Y == other.Y and this.Z < other.Z+1: otherwise.
   """
-  pass
- @staticmethod
- def CrossProduct(a,b):
-  """
+        pass
+
+    @staticmethod
+    def CrossProduct(a, b):
+        """
   CrossProduct(a: Vector3d,b: Vector3d) -> Vector3d
 
   
@@ -88,10 +98,11 @@ class Vector3d(object,ISerializable,IEquatable[Vector3d],IComparable[Vector3d],I
 
     b.Length andwith a result that is oriented following the right hand rule.
   """
-  pass
- @staticmethod
- def Divide(vector,t):
-  """
+        pass
+
+    @staticmethod
+    def Divide(vector, t):
+        """
   Divide(vector: Vector3d,t: float) -> Vector3d
 
   
@@ -114,18 +125,20 @@ class Vector3d(object,ISerializable,IEquatable[Vector3d],IComparable[Vector3d],I
 
    Returns: A new vector that is componentwise divided by t.
   """
-  pass
- def EpsilonEquals(self,other,epsilon):
-  """
+        pass
+
+    def EpsilonEquals(self, other, epsilon):
+        """
   EpsilonEquals(self: Vector3d,other: Vector3d,epsilon: float) -> bool
 
   
 
    Check that all values in other are within epsilon of the values in this
   """
-  pass
- def Equals(self,*__args):
-  """
+        pass
+
+    def Equals(self, *__args):
+        """
   Equals(self: Vector3d,vector: Vector3d) -> bool
 
   
@@ -154,9 +167,10 @@ class Vector3d(object,ISerializable,IEquatable[Vector3d],IComparable[Vector3d],I
 
    Returns: true if obj is a Vector3d and has the same coordinates as this; otherwise false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Vector3d) -> int
 
   
@@ -165,9 +179,10 @@ class Vector3d(object,ISerializable,IEquatable[Vector3d],IComparable[Vector3d],I
 
    Returns: A non-unique number that represents the components of this vector.
   """
-  pass
- def IsParallelTo(self,other,angleTolerance=None):
-  """
+        pass
+
+    def IsParallelTo(self, other, angleTolerance=None):
+        """
   IsParallelTo(self: Vector3d,other: Vector3d,angleTolerance: float) -> int
 
   
@@ -208,9 +223,10 @@ class Vector3d(object,ISerializable,IEquatable[Vector3d],IComparable[Vector3d],I
 
     at least one of the vectors is zero-1=vectors are anti-parallel.
   """
-  pass
- def IsPerpendicularTo(self,other,angleTolerance=None):
-  """
+        pass
+
+    def IsPerpendicularTo(self, other, angleTolerance=None):
+        """
   IsPerpendicularTo(self: Vector3d,other: Vector3d,angleTolerance: float) -> bool
 
   
@@ -241,9 +257,10 @@ class Vector3d(object,ISerializable,IEquatable[Vector3d],IComparable[Vector3d],I
 
    Returns: true if both vectors are perpendicular,false if otherwise.
   """
-  pass
- def IsTiny(self,tolerance=None):
-  """
+        pass
+
+    def IsTiny(self, tolerance=None):
+        """
   IsTiny(self: Vector3d) -> bool
 
   
@@ -266,10 +283,11 @@ class Vector3d(object,ISerializable,IEquatable[Vector3d],IComparable[Vector3d],I
 
    Returns: (Math.Abs(X) <= tiny_tol) AND (Math.Abs(Y) <= tiny_tol) AND (Math.Abs(Z) <= tiny_tol).
   """
-  pass
- @staticmethod
- def Multiply(*__args):
-  """
+        pass
+
+    @staticmethod
+    def Multiply(*__args):
+        """
   Multiply(vector1: Vector3d,vector2: Vector3d) -> float
 
   
@@ -340,10 +358,11 @@ class Vector3d(object,ISerializable,IEquatable[Vector3d],IComparable[Vector3d],I
 
    Returns: A new vector that is the original vector coordinatewise multiplied by t.
   """
-  pass
- @staticmethod
- def Negate(vector):
-  """
+        pass
+
+    @staticmethod
+    def Negate(vector):
+        """
   Negate(vector: Vector3d) -> Vector3d
 
   
@@ -362,9 +381,10 @@ class Vector3d(object,ISerializable,IEquatable[Vector3d],IComparable[Vector3d],I
 
    Returns: A new vector where all components were multiplied by -1.
   """
-  pass
- def PerpendicularTo(self,other):
-  """
+        pass
+
+    def PerpendicularTo(self, other):
+        """
   PerpendicularTo(self: Vector3d,other: Vector3d) -> bool
 
   
@@ -379,9 +399,10 @@ class Vector3d(object,ISerializable,IEquatable[Vector3d],IComparable[Vector3d],I
 
    Returns: true on success,false if input vector is zero or invalid.
   """
-  pass
- def Reverse(self):
-  """
+        pass
+
+    def Reverse(self):
+        """
   Reverse(self: Vector3d) -> bool
 
   
@@ -396,9 +417,10 @@ class Vector3d(object,ISerializable,IEquatable[Vector3d],IComparable[Vector3d],I
 
    Returns: true on success or false if the vector is invalid.
   """
-  pass
- def Rotate(self,angleRadians,rotationAxis):
-  """
+        pass
+
+    def Rotate(self, angleRadians, rotationAxis):
+        """
   Rotate(self: Vector3d,angleRadians: float,rotationAxis: Vector3d) -> bool
 
   
@@ -413,10 +435,11 @@ class Vector3d(object,ISerializable,IEquatable[Vector3d],IComparable[Vector3d],I
 
    Returns: true on success,false on failure.
   """
-  pass
- @staticmethod
- def Subtract(vector1,vector2):
-  """
+        pass
+
+    @staticmethod
+    def Subtract(vector1, vector2):
+        """
   Subtract(vector1: Vector3d,vector2: Vector3d) -> Vector3d
 
   
@@ -437,9 +460,10 @@ class Vector3d(object,ISerializable,IEquatable[Vector3d],IComparable[Vector3d],I
 
    Returns: A new vector that results from the componentwise difference of vector1 - vector2.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: Vector3d) -> str
 
   
@@ -448,9 +472,10 @@ class Vector3d(object,ISerializable,IEquatable[Vector3d],IComparable[Vector3d],I
 
    Returns: A string with the current location of the point.
   """
-  pass
- def Transform(self,transformation):
-  """
+        pass
+
+    def Transform(self, transformation):
+        """
   Transform(self: Vector3d,transformation: Transform)
 
    Transforms the vector in place.
@@ -465,9 +490,10 @@ class Vector3d(object,ISerializable,IEquatable[Vector3d],IComparable[Vector3d],I
 
    transformation: Transformation matrix to apply.
   """
-  pass
- def Unitize(self):
-  """
+        pass
+
+    def Unitize(self):
+        """
   Unitize(self: Vector3d) -> bool
 
   
@@ -482,10 +508,11 @@ class Vector3d(object,ISerializable,IEquatable[Vector3d],IComparable[Vector3d],I
 
    Returns: true on success or false on failure.
   """
-  pass
- @staticmethod
- def VectorAngle(a,b,plane=None):
-  """
+        pass
+
+    @staticmethod
+    def VectorAngle(a, b, plane=None):
+        """
   VectorAngle(a: Vector3d,b: Vector3d,plane: Plane) -> float
 
   
@@ -522,39 +549,51 @@ class Vector3d(object,ISerializable,IEquatable[Vector3d],IComparable[Vector3d],I
 
    Returns: If the input is valid,the angle (in radians) between a and b; RhinoMath.UnsetValue otherwise.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __div__(self,*args):
-  """ x.__div__(y) <==> x/y """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __mul__(self,*args):
-  """ x.__mul__(y) <==> x*yx.__mul__(y) <==> x*y """
-  pass
- def __neg__(self,*args):
-  """ x.__neg__() <==> -x """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __div__(self, *args):
+        """ x.__div__(y) <==> x/y """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __mul__(self, *args):
+        """ x.__mul__(y) <==> x*yx.__mul__(y) <==> x*y """
+        pass
+
+    def __neg__(self, *args):
+        """ x.__neg__() <==> -x """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__[Vector3d]() -> Vector3d
 
   
@@ -567,11 +606,13 @@ class Vector3d(object,ISerializable,IEquatable[Vector3d],IComparable[Vector3d],I
 
   __new__(cls: type,vector: Vector3d)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __radd__(self,*args):
-  """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __radd__(self, *args):
+        """
   __radd__(vector1: Vector3d,vector2: Vector3d) -> Vector3d
 
   
@@ -586,14 +627,17 @@ class Vector3d(object,ISerializable,IEquatable[Vector3d],IComparable[Vector3d],I
 
    Returns: A new vector that results from the componentwise addition of the two vectors.
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __rmul__(self,*args):
-  """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __rmul__(self, *args):
+        """
   __rmul__(vector1: Vector3d,vector2: Vector3d) -> float
 
   
@@ -634,9 +678,10 @@ class Vector3d(object,ISerializable,IEquatable[Vector3d],IComparable[Vector3d],I
 
    Returns: A new vector that is the original vector coordinatewise multiplied by t.
   """
-  pass
- def __rsub__(self,*args):
-  """
+        pass
+
+    def __rsub__(self, *args):
+        """
   __rsub__(vector1: Vector3d,vector2: Vector3d) -> Vector3d
 
   
@@ -651,17 +696,23 @@ class Vector3d(object,ISerializable,IEquatable[Vector3d],IComparable[Vector3d],I
 
    Returns: A new vector that results from the componentwise difference of vector1 - vector2.
   """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- def __str__(self,*args):
-  pass
- def __sub__(self,*args):
-  """ x.__sub__(y) <==> x-y """
-  pass
- IsUnitVector=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether or not this is a unit vector. 
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    def __sub__(self, *args):
+        """ x.__sub__(y) <==> x-y """
+        pass
+
+    IsUnitVector = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether or not this is a unit vector. 
 
    A unit vector has length 1.
 
@@ -673,8 +724,8 @@ Get: IsUnitVector(self: Vector3d) -> bool
 
 """
 
- IsValid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether this vector is valid. 
+    IsValid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether this vector is valid. 
 
    A valid vector must be formed of valid component values for x,y and z.
 
@@ -686,8 +737,8 @@ Get: IsValid(self: Vector3d) -> bool
 
 """
 
- IsZero=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the X,Y,and Z values are all equal to 0.0.
+    IsZero = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the X,Y,and Z values are all equal to 0.0.
 
 
 
@@ -697,8 +748,8 @@ Get: IsZero(self: Vector3d) -> bool
 
 """
 
- Length=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Computes the length (or magnitude,or size) of this vector.
+    Length = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Computes the length (or magnitude,or size) of this vector.
 
    This is an application of Pythagoras' theorem.
 
@@ -712,8 +763,10 @@ Get: Length(self: Vector3d) -> float
 
 """
 
- MaximumCoordinate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the largest (both positive and negative) component value in this vector.
+    MaximumCoordinate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the largest (both positive and negative) component value in this vector.
 
 
 
@@ -723,8 +776,10 @@ Get: MaximumCoordinate(self: Vector3d) -> float
 
 """
 
- MinimumCoordinate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the smallest (both positive and negative) component value in this vector.
+    MinimumCoordinate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the smallest (both positive and negative) component value in this vector.
 
 
 
@@ -734,8 +789,10 @@ Get: MinimumCoordinate(self: Vector3d) -> float
 
 """
 
- SquareLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Computes the squared length (or magnitude,or size) of this vector.
+    SquareLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Computes the squared length (or magnitude,or size) of this vector.
 
    This is an application of Pythagoras' theorem.
 
@@ -753,8 +810,8 @@ Get: SquareLength(self: Vector3d) -> float
 
 """
 
- X=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the X (first) component of the vector.
+    X = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the X (first) component of the vector.
 
 
 
@@ -766,8 +823,8 @@ Set: X(self: Vector3d)=value
 
 """
 
- Y=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Y (second) component of the vector.
+    Y = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Y (second) component of the vector.
 
 
 
@@ -779,8 +836,8 @@ Set: Y(self: Vector3d)=value
 
 """
 
- Z=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Z (third) component of the vector.
+    Z = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Z (third) component of the vector.
 
 
 
@@ -792,10 +849,8 @@ Set: Z(self: Vector3d)=value
 
 """
 
-
- Unset=None
- XAxis=None
- YAxis=None
- ZAxis=None
- Zero=None
-
+    Unset = None
+    XAxis = None
+    YAxis = None
+    ZAxis = None
+    Zero = None

@@ -1,5 +1,5 @@
 class LinkElementId(object):
- """
+    """
  LinkElementId represents an element in a linked document.
 
  
@@ -8,8 +8,9 @@ class LinkElementId(object):
 
  LinkElementId(elementId: ElementId)
  """
- def Equals(self,obj):
-  """
+
+    def Equals(self, obj):
+        """
   Equals(self: LinkElementId,obj: object) -> bool
 
   
@@ -24,22 +25,28 @@ class LinkElementId(object):
 
    obj: Another object.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,linkInstanceId: ElementId,elementId: ElementId)
 
   __new__(cls: type,elementId: ElementId)
   """
-  pass
- def __ne__(self,*args):
-  pass
- HostElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the element in the host,or invalidElementId if there is a link.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    HostElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The id of the element in the host,or invalidElementId if there is a link.
 
 
 
@@ -49,8 +56,10 @@ Get: HostElementId(self: LinkElementId) -> ElementId
 
 """
 
- LinkedElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the element in the link,or invalidElementId if no link.
+    LinkedElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The id of the element in the link,or invalidElementId if no link.
 
 
 
@@ -60,8 +69,10 @@ Get: LinkedElementId(self: LinkElementId) -> ElementId
 
 """
 
- LinkInstanceId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the link,or invalidElementId if no link.
+    LinkInstanceId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The id of the link,or invalidElementId if no link.
 
 
 
@@ -70,5 +81,3 @@ Get: LinkInstanceId(self: LinkElementId) -> ElementId
 
 
 """
-
-

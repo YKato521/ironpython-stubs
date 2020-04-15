@@ -1,5 +1,5 @@
-class TimeZoneNotFoundException(Exception,ISerializable,_Exception):
- """
+class TimeZoneNotFoundException(Exception, ISerializable, _Exception):
+    """
  The exception that is thrown when a time zone cannot be found.
 
  
@@ -10,18 +10,22 @@ class TimeZoneNotFoundException(Exception,ISerializable,_Exception):
 
  TimeZoneNotFoundException()
  """
- def add_SerializeObjectState(self,*args):
-  """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def remove_SerializeObjectState(self,*args):
-  """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,message=None,innerException=None):
-  """
+
+    def add_SerializeObjectState(self, *args):
+        """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def remove_SerializeObjectState(self, *args):
+        """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, message=None, innerException=None):
+        """
   __new__(cls: type,message: str)
 
   __new__(cls: type,message: str,innerException: Exception)
@@ -30,8 +34,10 @@ class TimeZoneNotFoundException(Exception,ISerializable,_Exception):
 
   __new__(cls: type)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass

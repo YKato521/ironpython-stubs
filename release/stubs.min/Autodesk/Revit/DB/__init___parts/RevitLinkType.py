@@ -1,12 +1,13 @@
-class RevitLinkType(ElementType,IDisposable):
- """
+class RevitLinkType(ElementType, IDisposable):
+    """
  This class represents another Revit Document ("link") brought into
 
     the current one ("host").
  """
- @staticmethod
- def Create(document,*__args):
-  """
+
+    @staticmethod
+    def Create(document, *__args):
+        """
   Create(document: Document,path: ModelPath,options: RevitLinkOptions) -> RevitLinkLoadResult
 
   
@@ -69,10 +70,13 @@ class RevitLinkType(ElementType,IDisposable):
 
     type. It contains the ElementId of the new link.
   """
-  pass
- @staticmethod
- def CreateFromIFC(document,ifcFilePath,revitLinkedFilePath,recreateLink,options):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromIFC(
+        document, ifcFilePath, revitLinkedFilePath, recreateLink, options
+    ):
+        """
   CreateFromIFC(document: Document,ifcFilePath: str,revitLinkedFilePath: str,recreateLink: bool,options: RevitLinkOptions) -> RevitLinkLoadResult
 
   
@@ -117,15 +121,18 @@ class RevitLinkType(ElementType,IDisposable):
 
     type. It contains the ElementId of the new link.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetChildIds(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetChildIds(self):
+        """
   GetChildIds(self: RevitLinkType) -> ICollection[ElementId]
 
   
@@ -138,9 +145,10 @@ class RevitLinkType(ElementType,IDisposable):
 
     (immediate children)
   """
-  pass
- def GetConversionData(self):
-  """
+        pass
+
+    def GetConversionData(self):
+        """
   GetConversionData(self: RevitLinkType) -> LinkConversionData
 
   
@@ -153,9 +161,10 @@ class RevitLinkType(ElementType,IDisposable):
 
    Returns: The RvtLinkConversionData containing the necessary information.
   """
-  pass
- def GetParentId(self):
-  """
+        pass
+
+    def GetParentId(self):
+        """
   GetParentId(self: RevitLinkType) -> ElementId
 
   
@@ -168,9 +177,10 @@ class RevitLinkType(ElementType,IDisposable):
 
     link is a top-level link.
   """
-  pass
- def GetRootId(self):
-  """
+        pass
+
+    def GetRootId(self):
+        """
   GetRootId(self: RevitLinkType) -> ElementId
 
   
@@ -183,10 +193,11 @@ class RevitLinkType(ElementType,IDisposable):
 
     invalidElementId if this link is a top-level link.
   """
-  pass
- @staticmethod
- def GetTopLevelLink(document,*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetTopLevelLink(document, *__args):
+        """
   GetTopLevelLink(document: Document,path: ModelPath) -> ElementId
 
   
@@ -233,9 +244,10 @@ class RevitLinkType(ElementType,IDisposable):
 
      there is no top-level link at that location.
   """
-  pass
- def HasSaveablePositions(self):
-  """
+        pass
+
+    def HasSaveablePositions(self):
+        """
   HasSaveablePositions(self: RevitLinkType) -> bool
 
   
@@ -258,9 +270,10 @@ class RevitLinkType(ElementType,IDisposable):
 
     saved.
   """
-  pass
- def IsFromLocalPath(self):
-  """
+        pass
+
+    def IsFromLocalPath(self):
+        """
   IsFromLocalPath(self: RevitLinkType) -> bool
 
   
@@ -269,9 +282,10 @@ class RevitLinkType(ElementType,IDisposable):
 
    Returns: Returns true if the Revit link is from a local drive.
   """
-  pass
- def IsFromRevitServer(self):
-  """
+        pass
+
+    def IsFromRevitServer(self):
+        """
   IsFromRevitServer(self: RevitLinkType) -> bool
 
   
@@ -280,10 +294,11 @@ class RevitLinkType(ElementType,IDisposable):
 
    Returns: Returns true if the Revit link is located on Revit Server.
   """
-  pass
- @staticmethod
- def IsLoaded(document,typeId):
-  """
+        pass
+
+    @staticmethod
+    def IsLoaded(document, typeId):
+        """
   IsLoaded(document: Document,typeId: ElementId) -> bool
 
   
@@ -306,9 +321,10 @@ class RevitLinkType(ElementType,IDisposable):
 
    Returns: True if typeId corresponds to a loaded RevitLinkType. False otherwise.
   """
-  pass
- def IsNotLoadedIntoMultipleOpenDocuments(self):
-  """
+        pass
+
+    def IsNotLoadedIntoMultipleOpenDocuments(self):
+        """
   IsNotLoadedIntoMultipleOpenDocuments(self: RevitLinkType) -> bool
 
   
@@ -331,9 +347,10 @@ class RevitLinkType(ElementType,IDisposable):
 
      is loaded into more than one open document.
   """
-  pass
- def Load(self):
-  """
+        pass
+
+    def Load(self):
+        """
   Load(self: RevitLinkType) -> RevitLinkLoadResult
 
   
@@ -368,9 +385,10 @@ class RevitLinkType(ElementType,IDisposable):
 
      success.
   """
-  pass
- def LoadFrom(self,*__args):
-  """
+        pass
+
+    def LoadFrom(self, *__args):
+        """
   LoadFrom(self: RevitLinkType,resourceReference: ExternalResourceReference,config: WorksetConfiguration) -> RevitLinkLoadResult
 
   
@@ -457,12 +475,14 @@ class RevitLinkType(ElementType,IDisposable):
 
      which occurred while trying to load.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def Reload(self):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def Reload(self):
+        """
   Reload(self: RevitLinkType) -> RevitLinkLoadResult
 
   
@@ -497,9 +517,10 @@ class RevitLinkType(ElementType,IDisposable):
 
      success.
   """
-  pass
- def RevertLocalUnloadStatus(self):
-  """
+        pass
+
+    def RevertLocalUnloadStatus(self):
+        """
   RevertLocalUnloadStatus(self: RevitLinkType) -> LinkedFileStatus
 
   
@@ -516,9 +537,10 @@ class RevitLinkType(ElementType,IDisposable):
 
     status.
   """
-  pass
- def SavePositions(self,callback):
-  """
+        pass
+
+    def SavePositions(self, callback):
+        """
   SavePositions(self: RevitLinkType,callback: ISaveSharedCoordinatesCallback) -> bool
 
   
@@ -541,12 +563,14 @@ class RevitLinkType(ElementType,IDisposable):
 
     operation failed.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def Unload(self,callback):
-  """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def Unload(self, callback):
+        """
   Unload(self: RevitLinkType,callback: ISaveSharedCoordinatesCallback)
 
    Unloads the Revit link.
@@ -565,9 +589,10 @@ class RevitLinkType(ElementType,IDisposable):
 
      changes to the link before unloading.
   """
-  pass
- def UnloadLocally(self,callback):
-  """
+        pass
+
+    def UnloadLocally(self, callback):
+        """
   UnloadLocally(self: RevitLinkType,callback: ISaveSharedCoordinatesCallbackForUnloadLocally) -> bool
 
   
@@ -596,9 +621,10 @@ class RevitLinkType(ElementType,IDisposable):
 
    Returns: Returns true if the attempt to unload the link locally was successful.
   """
-  pass
- def UpdateFromIFC(self,document,ifcFilePath,revitLinkedFilePath,recreateLink):
-  """
+        pass
+
+    def UpdateFromIFC(self, document, ifcFilePath, revitLinkedFilePath, recreateLink):
+        """
   UpdateFromIFC(self: RevitLinkType,document: Document,ifcFilePath: str,revitLinkedFilePath: str,recreateLink: bool) -> bool
 
   
@@ -625,18 +651,24 @@ class RevitLinkType(ElementType,IDisposable):
 
    Returns: Returns true if the update succeeded,false otherwise.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- AttachmentType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The attachment/overlay status of this link.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    AttachmentType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The attachment/overlay status of this link.
 
 
 
@@ -648,8 +680,10 @@ Set: AttachmentType(self: RevitLinkType)=value
 
 """
 
- IsNestedLink=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether this link is a nested or top-level link.
+    IsNestedLink = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates whether this link is a nested or top-level link.
 
 
 
@@ -659,8 +693,10 @@ Get: IsNestedLink(self: RevitLinkType) -> bool
 
 """
 
- LocallyUnloaded=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks whether a Revit link in a local model is unloaded
+    LocallyUnloaded = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Checks whether a Revit link in a local model is unloaded
 
    only for the current user.
 
@@ -672,8 +708,8 @@ Get: LocallyUnloaded(self: RevitLinkType) -> bool
 
 """
 
- PathType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The type of path the link uses.
+    PathType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The type of path the link uses.
 
 
 
@@ -684,5 +720,3 @@ Get: PathType(self: RevitLinkType) -> PathType
 Set: PathType(self: RevitLinkType)=value
 
 """
-
-

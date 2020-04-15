@@ -1,5 +1,5 @@
 class Lazy(object):
- """
+    """
  Lazy[T]()
 
  Lazy[T](valueFactory: Func[T])
@@ -12,8 +12,9 @@ class Lazy(object):
 
  Lazy[T](valueFactory: Func[T],mode: LazyThreadSafetyMode)
  """
- def ToString(self):
-  """
+
+    def ToString(self):
+        """
   ToString(self: Lazy[T]) -> str
 
   
@@ -26,10 +27,11 @@ class Lazy(object):
 
     Otherwise,a string indicating that the value has not been created.
   """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,valueFactory: Func[T])
@@ -42,9 +44,12 @@ class Lazy(object):
 
   __new__(cls: type,valueFactory: Func[T],mode: LazyThreadSafetyMode)
   """
-  pass
- IsValueCreated=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether a value has been created for this System.Lazy instance.
+        pass
+
+    IsValueCreated = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether a value has been created for this System.Lazy instance.
 
 
 
@@ -54,8 +59,8 @@ Get: IsValueCreated(self: Lazy[T]) -> bool
 
 """
 
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the lazily initialized value of the current System.Lazy instance.
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the lazily initialized value of the current System.Lazy instance.
 
 
 
@@ -64,5 +69,3 @@ Get: Value(self: Lazy[T]) -> T
 
 
 """
-
-

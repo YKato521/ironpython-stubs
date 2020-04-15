@@ -1,10 +1,12 @@
-class RevisionSettings(Element,IDisposable):
- """ Provides access to project-wide settings related to revisions. """
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def GetAlphanumericRevisionSettings(self):
-  """
+class RevisionSettings(Element, IDisposable):
+    """ Provides access to project-wide settings related to revisions. """
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def GetAlphanumericRevisionSettings(self):
+        """
   GetAlphanumericRevisionSettings(self: RevisionSettings) -> AlphanumericRevisionSettings
 
   
@@ -19,12 +21,14 @@ class RevisionSettings(Element,IDisposable):
 
     object.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetNumericRevisionSettings(self):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetNumericRevisionSettings(self):
+        """
   GetNumericRevisionSettings(self: RevisionSettings) -> NumericRevisionSettings
 
   
@@ -37,10 +41,11 @@ class RevisionSettings(Element,IDisposable):
 
    Returns: The copy of the NumericRevisionSettings owned by this RevisionSettings object.
   """
-  pass
- @staticmethod
- def GetRevisionSettings(ccda):
-  """
+        pass
+
+    @staticmethod
+    def GetRevisionSettings(ccda):
+        """
   GetRevisionSettings(ccda: Document) -> RevisionSettings
 
   
@@ -53,9 +58,10 @@ class RevisionSettings(Element,IDisposable):
 
    Returns: The RevisionSettings for the document.
   """
-  pass
- def IsAcceptableRevisionCloudSpacing(self,rawValue):
-  """
+        pass
+
+    def IsAcceptableRevisionCloudSpacing(self, rawValue):
+        """
   IsAcceptableRevisionCloudSpacing(self: RevisionSettings,rawValue: float) -> bool
 
   
@@ -76,13 +82,15 @@ class RevisionSettings(Element,IDisposable):
 
    Returns: True if the value will be acceptable after rounding,False otherwise
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- @staticmethod
- def RoundRevisionCloudSpacing(ccda,rawValue):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    @staticmethod
+    def RoundRevisionCloudSpacing(ccda, rawValue):
+        """
   RoundRevisionCloudSpacing(ccda: Document,rawValue: float) -> float
 
   
@@ -101,9 +109,10 @@ class RevisionSettings(Element,IDisposable):
 
    Returns: The rounded revision cloud spacing.
   """
-  pass
- def SetAlphanumericRevisionSettings(self,newSettings):
-  """
+        pass
+
+    def SetAlphanumericRevisionSettings(self, newSettings):
+        """
   SetAlphanumericRevisionSettings(self: RevisionSettings,newSettings: AlphanumericRevisionSettings)
 
    Replaces the current alphanumeric revision numbering settings with the 
@@ -118,12 +127,14 @@ class RevisionSettings(Element,IDisposable):
 
     revision numbering.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetNumericRevisionSettings(self,newSettings):
-  """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetNumericRevisionSettings(self, newSettings):
+        """
   SetNumericRevisionSettings(self: RevisionSettings,newSettings: NumericRevisionSettings)
 
    Replaces the current numeric revision numbering settings with the specified 
@@ -138,18 +149,24 @@ class RevisionSettings(Element,IDisposable):
 
     numbering.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- RevisionCloudSpacing=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determines the size in paper space of revision clouds drawn in a project.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    RevisionCloudSpacing = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Determines the size in paper space of revision clouds drawn in a project.
 
 
 
@@ -161,8 +178,10 @@ Set: RevisionCloudSpacing(self: RevisionSettings)=value
 
 """
 
- RevisionNumbering=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determines how the revision number values will display on sheets.
+    RevisionNumbering = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Determines how the revision number values will display on sheets.
 
 
 
@@ -173,5 +192,3 @@ Get: RevisionNumbering(self: RevisionSettings) -> RevisionNumbering
 Set: RevisionNumbering(self: RevisionSettings)=value
 
 """
-
-

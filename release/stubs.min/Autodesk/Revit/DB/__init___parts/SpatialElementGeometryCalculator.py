@@ -1,5 +1,5 @@
-class SpatialElementGeometryCalculator(object,IDisposable):
- """
+class SpatialElementGeometryCalculator(object, IDisposable):
+    """
  Use this class to calculate the geometry of a spatial element and obtain the relationships between the geometry and
 
     the element's boundary elements.
@@ -10,8 +10,9 @@ class SpatialElementGeometryCalculator(object,IDisposable):
 
  SpatialElementGeometryCalculator(aDoc: Document)
  """
- def CalculateSpatialElementGeometry(self,spatialElement):
-  """
+
+    def CalculateSpatialElementGeometry(self, spatialElement):
+        """
   CalculateSpatialElementGeometry(self: SpatialElementGeometryCalculator,spatialElement: SpatialElement) -> SpatialElementGeometryResults
 
   
@@ -24,10 +25,11 @@ class SpatialElementGeometryCalculator(object,IDisposable):
 
    Returns: Requested boundary face information.
   """
-  pass
- @staticmethod
- def CanCalculateGeometry(spatialElement):
-  """
+        pass
+
+    @staticmethod
+    def CanCalculateGeometry(spatialElement):
+        """
   CanCalculateGeometry(spatialElement: SpatialElement) -> bool
 
   
@@ -42,12 +44,14 @@ class SpatialElementGeometryCalculator(object,IDisposable):
 
     location,or the height is too small.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: SpatialElementGeometryCalculator) """
-  pass
- def GetOptions(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: SpatialElementGeometryCalculator) """
+        pass
+
+    def GetOptions(self):
+        """
   GetOptions(self: SpatialElementGeometryCalculator) -> SpatialElementBoundaryOptions
 
   
@@ -56,10 +60,11 @@ class SpatialElementGeometryCalculator(object,IDisposable):
 
    Returns: The options.
   """
-  pass
- @staticmethod
- def IsRoomOrSpace(spatialElement):
-  """
+        pass
+
+    @staticmethod
+    def IsRoomOrSpace(spatialElement):
+        """
   IsRoomOrSpace(spatialElement: SpatialElement) -> bool
 
   
@@ -72,32 +77,41 @@ class SpatialElementGeometryCalculator(object,IDisposable):
 
    Returns: True if the input spatial element is a room or a space,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: SpatialElementGeometryCalculator,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,aDoc,options=None):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: SpatialElementGeometryCalculator,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, aDoc, options=None):
+        """
   __new__(cls: type,aDoc: Document,options: SpatialElementBoundaryOptions)
 
   __new__(cls: type,aDoc: Document)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -106,5 +120,3 @@ Get: IsValidObject(self: SpatialElementGeometryCalculator) -> bool
 
 
 """
-
-

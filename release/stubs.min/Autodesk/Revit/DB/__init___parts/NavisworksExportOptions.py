@@ -1,43 +1,54 @@
-class NavisworksExportOptions(object,IDisposable):
- """
+class NavisworksExportOptions(object, IDisposable):
+    """
  Options which controls the Navisworks export.
 
  
 
  NavisworksExportOptions()
  """
- def Dispose(self):
-  """ Dispose(self: NavisworksExportOptions) """
-  pass
- def GetSelectedElementIds(self):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: NavisworksExportOptions) """
+        pass
+
+    def GetSelectedElementIds(self):
+        """
   GetSelectedElementIds(self: NavisworksExportOptions) -> ICollection[ElementId]
 
   
 
    Returns the element ids of the elements to export. Empty by default.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: NavisworksExportOptions,disposing: bool) """
-  pass
- def SetSelectedElementIds(self,ids):
-  """ SetSelectedElementIds(self: NavisworksExportOptions,ids: ICollection[ElementId]) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- ConvertElementProperties=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True to convert element properties,false otherwise.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: NavisworksExportOptions,disposing: bool) """
+        pass
+
+    def SetSelectedElementIds(self, ids):
+        """ SetSelectedElementIds(self: NavisworksExportOptions,ids: ICollection[ElementId]) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    ConvertElementProperties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """True to convert element properties,false otherwise.
 
    Default value is false.
 
@@ -51,8 +62,10 @@ Set: ConvertElementProperties(self: NavisworksExportOptions)=value
 
 """
 
- Coordinates=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Options which specifies the coordinates of Navisworks Exporter.
+    Coordinates = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Options which specifies the coordinates of Navisworks Exporter.
 
    Default value is Shared.
 
@@ -66,8 +79,10 @@ Set: Coordinates(self: NavisworksExportOptions)=value
 
 """
 
- DivideFileIntoLevels=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True to divide file into levels,false otherwise.
+    DivideFileIntoLevels = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """True to divide file into levels,false otherwise.
 
    Default value is true.
 
@@ -81,8 +96,10 @@ Set: DivideFileIntoLevels(self: NavisworksExportOptions)=value
 
 """
 
- ExportElementIds=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True to export Revit element ids,false to skip these values.
+    ExportElementIds = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """True to export Revit element ids,false to skip these values.
 
    Default value is true.
 
@@ -96,8 +113,10 @@ Set: ExportElementIds(self: NavisworksExportOptions)=value
 
 """
 
- ExportLinks=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True to export Revit links found in the main model,false to skip links.
+    ExportLinks = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """True to export Revit links found in the main model,false to skip links.
 
    Default value is false.
 
@@ -111,8 +130,10 @@ Set: ExportLinks(self: NavisworksExportOptions)=value
 
 """
 
- ExportParts=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True to export Revit part elements,false to export the original parent elements.
+    ExportParts = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """True to export Revit part elements,false to export the original parent elements.
 
    Default value is false.
 
@@ -126,8 +147,10 @@ Set: ExportParts(self: NavisworksExportOptions)=value
 
 """
 
- ExportRoomAsAttribute=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True to export data for each room converts into a single shared room attribute,false otherwise.
+    ExportRoomAsAttribute = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """True to export data for each room converts into a single shared room attribute,false otherwise.
 
    Default value is true.
 
@@ -141,8 +164,10 @@ Set: ExportRoomAsAttribute(self: NavisworksExportOptions)=value
 
 """
 
- ExportRoomGeometry=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True to export Revit room geometry,false otherwise.
+    ExportRoomGeometry = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """True to export Revit room geometry,false otherwise.
 
    Default value is true.
 
@@ -156,8 +181,10 @@ Set: ExportRoomGeometry(self: NavisworksExportOptions)=value
 
 """
 
- ExportScope=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Options which specifies the export scope of Navisworks Exporter.
+    ExportScope = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Options which specifies the export scope of Navisworks Exporter.
 
    Default value is Model.
 
@@ -171,8 +198,10 @@ Set: ExportScope(self: NavisworksExportOptions)=value
 
 """
 
- ExportUrls=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True to export URL parameters,false otherwise.
+    ExportUrls = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """True to export URL parameters,false otherwise.
 
    Default value is true.
 
@@ -186,8 +215,10 @@ Set: ExportUrls(self: NavisworksExportOptions)=value
 
 """
 
- FindMissingMaterials=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True if the file exporter looks for a match for the materials missing from the export,false otherwise.
+    FindMissingMaterials = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """True if the file exporter looks for a match for the materials missing from the export,false otherwise.
 
    Default value is true.
 
@@ -201,8 +232,10 @@ Set: FindMissingMaterials(self: NavisworksExportOptions)=value
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -212,8 +245,10 @@ Get: IsValidObject(self: NavisworksExportOptions) -> bool
 
 """
 
- Parameters=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Options which specifies the parameter conversion of Navisworks Exporter.
+    Parameters = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Options which specifies the parameter conversion of Navisworks Exporter.
 
    Default value is All.
 
@@ -227,8 +262,8 @@ Set: Parameters(self: NavisworksExportOptions)=value
 
 """
 
- ViewId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id of the view to export. InvalidElementId by default. Used only when ExportScope=View.
+    ViewId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The element id of the view to export. InvalidElementId by default. Used only when ExportScope=View.
 
 
 
@@ -239,5 +274,3 @@ Get: ViewId(self: NavisworksExportOptions) -> ElementId
 Set: ViewId(self: NavisworksExportOptions)=value
 
 """
-
-

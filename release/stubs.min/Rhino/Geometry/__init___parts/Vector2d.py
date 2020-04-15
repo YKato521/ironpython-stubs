@@ -1,5 +1,12 @@
-class Vector2d(object,ISerializable,IEquatable[Vector2d],IComparable[Vector2d],IComparable,IEpsilonComparable[Vector2d]):
- """
+class Vector2d(
+    object,
+    ISerializable,
+    IEquatable[Vector2d],
+    IComparable[Vector2d],
+    IComparable,
+    IEpsilonComparable[Vector2d],
+):
+    """
  Represents the two components of a vector in two-dimensional space,
 
     using System.Double-precision floating point numbers.
@@ -8,8 +15,9 @@ class Vector2d(object,ISerializable,IEquatable[Vector2d],IComparable[Vector2d],I
 
  Vector2d(x: float,y: float)
  """
- def CompareTo(self,other):
-  """
+
+    def CompareTo(self, other):
+        """
   CompareTo(self: Vector2d,other: Vector2d) -> int
 
   
@@ -30,18 +38,20 @@ class Vector2d(object,ISerializable,IEquatable[Vector2d],IComparable[Vector2d],I
 
     other.Y+1: otherwise.
   """
-  pass
- def EpsilonEquals(self,other,epsilon):
-  """
+        pass
+
+    def EpsilonEquals(self, other, epsilon):
+        """
   EpsilonEquals(self: Vector2d,other: Vector2d,epsilon: float) -> bool
 
   
 
    Check that all values in other are within epsilon of the values in this
   """
-  pass
- def Equals(self,*__args):
-  """
+        pass
+
+    def Equals(self, *__args):
+        """
   Equals(self: Vector2d,vector: Vector2d) -> bool
 
   
@@ -70,9 +80,10 @@ class Vector2d(object,ISerializable,IEquatable[Vector2d],IComparable[Vector2d],I
 
    Returns: true if obj is Vector2d and has the same components as this; otherwise false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Vector2d) -> int
 
   
@@ -81,9 +92,10 @@ class Vector2d(object,ISerializable,IEquatable[Vector2d],IComparable[Vector2d],I
 
    Returns: A non-unique number based on vector components.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: Vector2d) -> str
 
   
@@ -92,9 +104,10 @@ class Vector2d(object,ISerializable,IEquatable[Vector2d],IComparable[Vector2d],I
 
    Returns: A string in the form X,Y.
   """
-  pass
- def Unitize(self):
-  """
+        pass
+
+    def Unitize(self):
+        """
   Unitize(self: Vector2d) -> bool
 
   
@@ -109,42 +122,54 @@ class Vector2d(object,ISerializable,IEquatable[Vector2d],IComparable[Vector2d],I
 
    Returns: true on success or false on failure.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- @staticmethod
- def __new__(self,x,y):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    @staticmethod
+    def __new__(self, x, y):
+        """
   __new__[Vector2d]() -> Vector2d
 
   
 
   __new__(cls: type,x: float,y: float)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- IsValid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether this vector is valid. 
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    IsValid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether this vector is valid. 
 
    A valid vector must be formed of valid component values for x,y and z.
 
@@ -156,8 +181,8 @@ Get: IsValid(self: Vector2d) -> bool
 
 """
 
- Length=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Computes the length (or magnitude,or size) of this vector.
+    Length = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Computes the length (or magnitude,or size) of this vector.
 
    This is an application of Pythagoras' theorem.
 
@@ -169,8 +194,8 @@ Get: Length(self: Vector2d) -> float
 
 """
 
- X=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the X (first) component of this vector.
+    X = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the X (first) component of this vector.
 
 
 
@@ -182,8 +207,8 @@ Set: X(self: Vector2d)=value
 
 """
 
- Y=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Y (second) component of this vector.
+    Y = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Y (second) component of this vector.
 
 
 
@@ -195,7 +220,5 @@ Set: Y(self: Vector2d)=value
 
 """
 
-
- Unset=None
- Zero=None
-
+    Unset = None
+    Zero = None

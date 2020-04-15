@@ -1,7 +1,8 @@
 class _PropertyInfo:
- """ Exposes the public members of the System.Reflection.PropertyInfo class to unmanaged code. """
- def Equals(self,other):
-  """
+    """ Exposes the public members of the System.Reflection.PropertyInfo class to unmanaged code. """
+
+    def Equals(self, other):
+        """
   Equals(self: _PropertyInfo,other: object) -> bool
 
   
@@ -18,9 +19,10 @@ class _PropertyInfo:
 
    Returns: true if the specified System.Object is equal to the current System.Object; otherwise,false.
   """
-  pass
- def GetAccessors(self,nonPublic=None):
-  """
+        pass
+
+    def GetAccessors(self, nonPublic=None):
+        """
   GetAccessors(self: _PropertyInfo) -> Array[MethodInfo]
 
   
@@ -63,9 +65,10 @@ class _PropertyInfo:
 
     specified visibility are found,this method returns an array with zero (0) elements.
   """
-  pass
- def GetCustomAttributes(self,*__args):
-  """
+        pass
+
+    def GetCustomAttributes(self, *__args):
+        """
   GetCustomAttributes(self: _PropertyInfo,inherit: bool) -> Array[object]
 
   
@@ -110,9 +113,10 @@ class _PropertyInfo:
 
     attributes have been applied.
   """
-  pass
- def GetGetMethod(self,nonPublic=None):
-  """
+        pass
+
+    def GetGetMethod(self, nonPublic=None):
+        """
   GetGetMethod(self: _PropertyInfo) -> MethodInfo
 
   
@@ -149,9 +153,10 @@ class _PropertyInfo:
 
     or if nonPublic is true but no get accessors exist.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: _PropertyInfo) -> int
 
   
@@ -160,9 +165,10 @@ class _PropertyInfo:
 
    Returns: The hash code for the current instance.
   """
-  pass
- def GetIDsOfNames(self,riid,rgszNames,cNames,lcid,rgDispId):
-  """
+        pass
+
+    def GetIDsOfNames(self, riid, rgszNames, cNames, lcid, rgDispId):
+        """
   GetIDsOfNames(self: _PropertyInfo,riid: Guid,rgszNames: IntPtr,cNames: UInt32,lcid: UInt32,rgDispId: IntPtr) -> Guid
 
   
@@ -181,9 +187,10 @@ class _PropertyInfo:
 
    rgDispId: An array allocated by the caller that receives the identifiers corresponding to the names.
   """
-  pass
- def GetIndexParameters(self):
-  """
+        pass
+
+    def GetIndexParameters(self):
+        """
   GetIndexParameters(self: _PropertyInfo) -> Array[ParameterInfo]
 
   
@@ -196,9 +203,10 @@ class _PropertyInfo:
 
    Returns: An array of type System.Reflection.ParameterInfo containing the parameters for the indexes.
   """
-  pass
- def GetSetMethod(self,nonPublic=None):
-  """
+        pass
+
+    def GetSetMethod(self, nonPublic=None):
+        """
   GetSetMethod(self: _PropertyInfo) -> MethodInfo
 
   
@@ -239,9 +247,10 @@ class _PropertyInfo:
 
     non-public.-or- There is no set accessor.
   """
-  pass
- def GetType(self):
-  """
+        pass
+
+    def GetType(self):
+        """
   GetType(self: _PropertyInfo) -> Type
 
   
@@ -250,9 +259,10 @@ class _PropertyInfo:
 
    Returns: A System.Type object.
   """
-  pass
- def GetTypeInfo(self,iTInfo,lcid,ppTInfo):
-  """
+        pass
+
+    def GetTypeInfo(self, iTInfo, lcid, ppTInfo):
+        """
   GetTypeInfo(self: _PropertyInfo,iTInfo: UInt32,lcid: UInt32,ppTInfo: IntPtr)
 
    Retrieves the type information for an object,which can be used to get the type information for 
@@ -269,18 +279,20 @@ class _PropertyInfo:
 
    ppTInfo: A pointer to the requested type information object.
   """
-  pass
- def GetTypeInfoCount(self,pcTInfo):
-  """
+        pass
+
+    def GetTypeInfoCount(self, pcTInfo):
+        """
   GetTypeInfoCount(self: _PropertyInfo) -> UInt32
 
   
 
    Retrieves the number of type information interfaces that an object provides (either 0 or 1).
   """
-  pass
- def GetValue(self,obj,*__args):
-  """
+        pass
+
+    def GetValue(self, obj, *__args):
+        """
   GetValue(self: _PropertyInfo,obj: object,invokeAttr: BindingFlags,binder: Binder,index: Array[object],culture: CultureInfo) -> object
 
   
@@ -355,9 +367,20 @@ class _PropertyInfo:
 
    Returns: The property value for the obj parameter.
   """
-  pass
- def Invoke(self,dispIdMember,riid,lcid,wFlags,pDispParams,pVarResult,pExcepInfo,puArgErr):
-  """
+        pass
+
+    def Invoke(
+        self,
+        dispIdMember,
+        riid,
+        lcid,
+        wFlags,
+        pDispParams,
+        pVarResult,
+        pExcepInfo,
+        puArgErr,
+    ):
+        """
   Invoke(self: _PropertyInfo,dispIdMember: UInt32,riid: Guid,lcid: UInt32,wFlags: Int16,pDispParams: IntPtr,pVarResult: IntPtr,pExcepInfo: IntPtr,puArgErr: IntPtr) -> Guid
 
   
@@ -386,9 +409,10 @@ class _PropertyInfo:
 
    puArgErr: The index of the first argument that has an error.
   """
-  pass
- def IsDefined(self,attributeType,inherit):
-  """
+        pass
+
+    def IsDefined(self, attributeType, inherit):
+        """
   IsDefined(self: _PropertyInfo,attributeType: Type,inherit: bool) -> bool
 
   
@@ -409,9 +433,10 @@ class _PropertyInfo:
 
     otherwise,false.
   """
-  pass
- def SetValue(self,obj,value,*__args):
-  """
+        pass
+
+    def SetValue(self, obj, value, *__args):
+        """
   SetValue(self: _PropertyInfo,obj: object,value: object,invokeAttr: BindingFlags,binder: Binder,index: Array[object],culture: CultureInfo)
 
    Provides COM objects with version-independent access to the 
@@ -480,9 +505,10 @@ class _PropertyInfo:
 
     properties.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: _PropertyInfo) -> str
 
   
@@ -491,17 +517,23 @@ class _PropertyInfo:
 
    Returns: A string that represents the current System.Object.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- Attributes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.PropertyInfo.Attributes property.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Attributes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.PropertyInfo.Attributes property.
 
 
 
@@ -511,8 +543,8 @@ Get: Attributes(self: _PropertyInfo) -> PropertyAttributes
 
 """
 
- CanRead=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.PropertyInfo.CanRead property.
+    CanRead = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Reflection.PropertyInfo.CanRead property.
 
 
 
@@ -522,8 +554,8 @@ Get: CanRead(self: _PropertyInfo) -> bool
 
 """
 
- CanWrite=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.PropertyInfo.CanWrite property.
+    CanWrite = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Reflection.PropertyInfo.CanWrite property.
 
 
 
@@ -533,8 +565,10 @@ Get: CanWrite(self: _PropertyInfo) -> bool
 
 """
 
- DeclaringType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.MemberInfo.DeclaringType property.
+    DeclaringType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.MemberInfo.DeclaringType property.
 
 
 
@@ -544,8 +578,10 @@ Get: DeclaringType(self: _PropertyInfo) -> Type
 
 """
 
- IsSpecialName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.PropertyInfo.IsSpecialName property.
+    IsSpecialName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.PropertyInfo.IsSpecialName property.
 
 
 
@@ -555,8 +591,10 @@ Get: IsSpecialName(self: _PropertyInfo) -> bool
 
 """
 
- MemberType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.PropertyInfo.MemberType property.
+    MemberType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.PropertyInfo.MemberType property.
 
 
 
@@ -566,8 +604,8 @@ Get: MemberType(self: _PropertyInfo) -> MemberTypes
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.MemberInfo.Name property.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Reflection.MemberInfo.Name property.
 
 
 
@@ -577,8 +615,10 @@ Get: Name(self: _PropertyInfo) -> str
 
 """
 
- PropertyType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.PropertyInfo.PropertyType property.
+    PropertyType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.PropertyInfo.PropertyType property.
 
 
 
@@ -588,8 +628,10 @@ Get: PropertyType(self: _PropertyInfo) -> Type
 
 """
 
- ReflectedType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.MemberInfo.ReflectedType property.
+    ReflectedType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.MemberInfo.ReflectedType property.
 
 
 
@@ -598,5 +640,3 @@ Get: ReflectedType(self: _PropertyInfo) -> Type
 
 
 """
-
-

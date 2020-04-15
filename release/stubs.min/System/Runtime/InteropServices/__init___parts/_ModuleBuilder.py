@@ -1,7 +1,8 @@
 class _ModuleBuilder:
- """ Exposes the System.Reflection.Emit.ModuleBuilder class to unmanaged code. """
- def GetIDsOfNames(self,riid,rgszNames,cNames,lcid,rgDispId):
-  """
+    """ Exposes the System.Reflection.Emit.ModuleBuilder class to unmanaged code. """
+
+    def GetIDsOfNames(self, riid, rgszNames, cNames, lcid, rgDispId):
+        """
   GetIDsOfNames(self: _ModuleBuilder,riid: Guid,rgszNames: IntPtr,cNames: UInt32,lcid: UInt32,rgDispId: IntPtr) -> Guid
 
   
@@ -20,9 +21,10 @@ class _ModuleBuilder:
 
    rgDispId: An array allocated by the caller that receives the identifiers corresponding to the names.
   """
-  pass
- def GetTypeInfo(self,iTInfo,lcid,ppTInfo):
-  """
+        pass
+
+    def GetTypeInfo(self, iTInfo, lcid, ppTInfo):
+        """
   GetTypeInfo(self: _ModuleBuilder,iTInfo: UInt32,lcid: UInt32,ppTInfo: IntPtr)
 
    Retrieves the type information for an object,which can be used to get the type information for 
@@ -39,18 +41,30 @@ class _ModuleBuilder:
 
    ppTInfo: A pointer to the requested type information object.
   """
-  pass
- def GetTypeInfoCount(self,pcTInfo):
-  """
+        pass
+
+    def GetTypeInfoCount(self, pcTInfo):
+        """
   GetTypeInfoCount(self: _ModuleBuilder) -> UInt32
 
   
 
    Retrieves the number of type information interfaces that an object provides (either 0 or 1).
   """
-  pass
- def Invoke(self,dispIdMember,riid,lcid,wFlags,pDispParams,pVarResult,pExcepInfo,puArgErr):
-  """
+        pass
+
+    def Invoke(
+        self,
+        dispIdMember,
+        riid,
+        lcid,
+        wFlags,
+        pDispParams,
+        pVarResult,
+        pExcepInfo,
+        puArgErr,
+    ):
+        """
   Invoke(self: _ModuleBuilder,dispIdMember: UInt32,riid: Guid,lcid: UInt32,wFlags: Int16,pDispParams: IntPtr,pVarResult: IntPtr,pExcepInfo: IntPtr,puArgErr: IntPtr) -> Guid
 
   
@@ -79,7 +93,8 @@ class _ModuleBuilder:
 
    puArgErr: The index of the first argument that has an error.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

@@ -8,13 +8,13 @@
 # no functions
 # classes
 
+
 class GraphicsManager(object):
     """ GraphicsManager() """
+
     @staticmethod
     def PushMesh(mesh, package):
         """ PushMesh(mesh: Mesh, package: IRenderPackage) """
         pass
 
     TesselationLevelOfDetail = 1.0
-
-

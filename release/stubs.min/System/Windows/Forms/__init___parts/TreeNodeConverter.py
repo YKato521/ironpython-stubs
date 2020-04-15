@@ -1,13 +1,14 @@
 class TreeNodeConverter(TypeConverter):
- """
+    """
  Provides a type converter to convert System.Windows.Forms.TreeNode objects to and from various other representations.
 
  
 
  TreeNodeConverter()
  """
- def CanConvertTo(self,*__args):
-  """
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: TreeNodeConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -26,9 +27,10 @@ class TreeNodeConverter(TypeConverter):
 
    Returns: true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: TreeNodeConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -43,4 +45,4 @@ class TreeNodeConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
+        pass

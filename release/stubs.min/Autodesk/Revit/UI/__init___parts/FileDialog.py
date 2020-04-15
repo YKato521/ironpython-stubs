@@ -1,10 +1,12 @@
-class FileDialog(object,IDisposable):
- """ Base class supporting display of the dialog used to navigate to and select a file from Autodesk Revit. """
- def Dispose(self):
-  """ Dispose(self: FileDialog) """
-  pass
- def GetSelectedModelPath(self):
-  """
+class FileDialog(object, IDisposable):
+    """ Base class supporting display of the dialog used to navigate to and select a file from Autodesk Revit. """
+
+    def Dispose(self):
+        """ Dispose(self: FileDialog) """
+        pass
+
+    def GetSelectedModelPath(self):
+        """
   GetSelectedModelPath(self: FileDialog) -> ModelPath
 
   
@@ -15,10 +17,11 @@ class FileDialog(object,IDisposable):
 
     cancelled.
   """
-  pass
- @staticmethod
- def IsValidFilterString(filterString):
-  """
+        pass
+
+    @staticmethod
+    def IsValidFilterString(filterString):
+        """
   IsValidFilterString(filterString: str) -> bool
 
   
@@ -37,12 +40,14 @@ class FileDialog(object,IDisposable):
 
     string.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: FileDialog,disposing: bool) """
-  pass
- def Show(self):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: FileDialog,disposing: bool) """
+        pass
+
+    def Show(self):
+        """
   Show(self: FileDialog) -> ItemSelectionDialogResult
 
   
@@ -53,21 +58,28 @@ class FileDialog(object,IDisposable):
 
     dialog without making a selection.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- DefaultFilterEntry=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The default entry (from the filter) to be selected in the dialog.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    DefaultFilterEntry = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The default entry (from the filter) to be selected in the dialog.
 
 
 
@@ -79,8 +91,8 @@ Set: DefaultFilterEntry(self: FileDialog)=value
 
 """
 
- Filter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The filter string representing a collection of extensions allowed by the dialog.
+    Filter = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The filter string representing a collection of extensions allowed by the dialog.
 
 
 
@@ -92,8 +104,10 @@ Set: Filter(self: FileDialog)=value
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -103,8 +117,8 @@ Get: IsValidObject(self: FileDialog) -> bool
 
 """
 
- Title=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The title to show on the dialog.
+    Title = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The title to show on the dialog.
 
 
 
@@ -115,5 +129,3 @@ Get: Title(self: FileDialog) -> str
 Set: Title(self: FileDialog)=value
 
 """
-
-

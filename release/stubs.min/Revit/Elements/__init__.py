@@ -8,10 +8,12 @@
 # no functions
 # classes
 
-class Element(object,IDisposable,IGraphicItem,IFormattable):
- """ Superclass of all Revit element wrappers """
- def Dispose(self):
-  """
+
+class Element(object, IDisposable, IGraphicItem, IFormattable):
+    """ Superclass of all Revit element wrappers """
+
+    def Dispose(self):
+        """
   Dispose(self: Element)
 
    Default implementation of dispose that removes the element from the
@@ -20,36 +22,40 @@ class Element(object,IDisposable,IGraphicItem,IFormattable):
 
      document
   """
-  pass
- def Equals(self,obj):
-  """
+        pass
+
+    def Equals(self, obj):
+        """
   Equals(self: Element,obj: object) -> bool
 
   
 
    Implement Equals() method.
   """
-  pass
- def Geometry(self):
-  """
+        pass
+
+    def Geometry(self):
+        """
   Geometry(self: Element) -> Array[object]
 
   
 
    Get all of the Geometry associated with this object
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Element) -> int
 
   
 
    Get hash code.
   """
-  pass
- def GetLocation(self):
-  """
+        pass
+
+    def GetLocation(self):
+        """
   GetLocation(self: Element) -> Geometry
 
   
@@ -58,9 +64,10 @@ class Element(object,IDisposable,IGraphicItem,IFormattable):
 
    Returns: Location Geometry
   """
-  pass
- def GetMaterials(self,paintMaterials):
-  """
+        pass
+
+    def GetMaterials(self, paintMaterials):
+        """
   GetMaterials(self: Element,paintMaterials: bool) -> IEnumerable[Material]
 
   
@@ -73,9 +80,10 @@ class Element(object,IDisposable,IGraphicItem,IFormattable):
 
    Returns: List of Names
   """
-  pass
- def GetParameterValueByName(self,parameterName):
-  """
+        pass
+
+    def GetParameterValueByName(self, parameterName):
+        """
   GetParameterValueByName(self: Element,parameterName: str) -> object
 
   
@@ -86,9 +94,10 @@ class Element(object,IDisposable,IGraphicItem,IFormattable):
 
    parameterName: The name of the parameter whose value you want to obtain.
   """
-  pass
- def MoveByVector(self,vector):
-  """
+        pass
+
+    def MoveByVector(self, vector):
+        """
   MoveByVector(self: Element,vector: Vector)
 
    Move Revit Element by Vector
@@ -97,9 +106,10 @@ class Element(object,IDisposable,IGraphicItem,IFormattable):
 
    vector: Translation Vector
   """
-  pass
- def OverrideColorInView(self,color):
-  """
+        pass
+
+    def OverrideColorInView(self, color):
+        """
   OverrideColorInView(self: Element,color: Color) -> Element
 
   
@@ -110,16 +120,18 @@ class Element(object,IDisposable,IGraphicItem,IFormattable):
 
    color: The color to apply to a solid fill on the element.
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def SetLocation(self,geometry):
-  """
+        pass
+
+    def SetLocation(self, geometry):
+        """
   SetLocation(self: Element,geometry: Geometry)
 
    Update an existing element's location
@@ -128,9 +140,10 @@ class Element(object,IDisposable,IGraphicItem,IFormattable):
 
    geometry: New Location Point or Curve
   """
-  pass
- def SetParameterByName(self,parameterName,value):
-  """
+        pass
+
+    def SetParameterByName(self, parameterName, value):
+        """
   SetParameterByName(self: Element,parameterName: str,value: object) -> Element
 
   
@@ -143,12 +156,14 @@ class Element(object,IDisposable,IGraphicItem,IFormattable):
 
    value: The value.
   """
-  pass
- def Tessellate(self,package,parameters):
-  """ Tessellate(self: Element,package: IRenderPackage,parameters: TessellationParameters) """
-  pass
- def ToString(self,format=None,formatProvider=None):
-  """
+        pass
+
+    def Tessellate(self, package, parameters):
+        """ Tessellate(self: Element,package: IRenderPackage,parameters: TessellationParameters) """
+        pass
+
+    def ToString(self, format=None, formatProvider=None):
+        """
   ToString(self: Element,format: str,formatProvider: IFormatProvider) -> str
 
   ToString(self: Element) -> str
@@ -157,31 +172,42 @@ class Element(object,IDisposable,IGraphicItem,IFormattable):
 
    A basic implementation of ToString for Elements
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __ne__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- BoundingBox=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get an Axis-aligned BoundingBox of the Element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    BoundingBox = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get an Axis-aligned BoundingBox of the Element
 
 
 
@@ -191,8 +217,8 @@ Get: BoundingBox(self: Element) -> BoundingBox
 
 """
 
- Curves=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Curves in this Element
+    Curves = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The Curves in this Element
 
 
 
@@ -202,8 +228,10 @@ Get: Curves(self: Element) -> Array[Curve]
 
 """
 
- ElementCurveReferences=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The ElementCurveReference's in this Element.  Useful for downstream
+    ElementCurveReferences = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The ElementCurveReference's in this Element.  Useful for downstream
 
    Element creation.
 
@@ -215,8 +243,10 @@ Get: ElementCurveReferences(self: Element) -> Array[ElementCurveReference]
 
 """
 
- ElementFaceReferences=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The ElementFaceReference's in this Element.  Useful for downstream
+    ElementFaceReferences = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The ElementFaceReference's in this Element.  Useful for downstream
 
    Element creation.
 
@@ -228,8 +258,8 @@ Get: ElementFaceReferences(self: Element) -> Array[ElementFaceReference]
 
 """
 
- Faces=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Faces in this Element
+    Faces = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The Faces in this Element
 
 
 
@@ -239,8 +269,10 @@ Get: Faces(self: Element) -> Array[Surface]
 
 """
 
- GetCategory=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Element Category
+    GetCategory = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get Element Category
 
 
 
@@ -250,8 +282,8 @@ Get: GetCategory(self: Element) -> Category
 
 """
 
- Id=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the Element Id for this element
+    Id = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get the Element Id for this element
 
 
 
@@ -261,8 +293,10 @@ Get: Id(self: Element) -> int
 
 """
 
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """A reference to the element
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """A reference to the element
 
 
 
@@ -272,22 +306,24 @@ Get: InternalElement(self: Element) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the Name of the Element
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get the Name of the Element
 
 
 
@@ -297,8 +333,10 @@ Get: Name(self: Element) -> str
 
 """
 
- Parameters=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Obtain all of the Parameters from an Element
+    Parameters = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Obtain all of the Parameters from an Element
 
 
 
@@ -308,8 +346,8 @@ Get: Parameters(self: Element) -> Array[Parameter]
 
 """
 
- Solids=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Solids in this Element
+    Solids = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The Solids in this Element
 
 
 
@@ -319,8 +357,8 @@ Get: Solids(self: Element) -> Array[Solid]
 
 """
 
- UniqueId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the Element Unique Id for this element
+    UniqueId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get the Element Unique Id for this element
 
 
 
@@ -330,45 +368,56 @@ Get: UniqueId(self: Element) -> str
 
 """
 
+    InternalUniqueId = None
+    IsFrozen = None
 
- InternalUniqueId=None
- IsFrozen=None
 
+class AbstractFamilyInstance(Element, IDisposable, IGraphicItem, IFormattable):
+    """ An abstract Revit FamilyInstance - implementors include FamilyInstance,AdaptiveComponent,StructuralFraming """
 
-class AbstractFamilyInstance(Element,IDisposable,IGraphicItem,IFormattable):
- """ An abstract Revit FamilyInstance - implementors include FamilyInstance,AdaptiveComponent,StructuralFraming """
- def InternalSetFamilyInstance(self,*args):
-  """ InternalSetFamilyInstance(self: AbstractFamilyInstance,fi: FamilyInstance) """
-  pass
- def InternalSetFamilySymbol(self,*args):
-  """ InternalSetFamilySymbol(self: AbstractFamilyInstance,fs: FamilySymbol) """
-  pass
- def SafeInit(self,*args):
-  """
+    def InternalSetFamilyInstance(self, *args):
+        """ InternalSetFamilyInstance(self: AbstractFamilyInstance,fi: FamilyInstance) """
+        pass
+
+    def InternalSetFamilySymbol(self, *args):
+        """ InternalSetFamilySymbol(self: AbstractFamilyInstance,fs: FamilySymbol) """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def ToString(self,format=None,formatProvider=None):
-  """ ToString(self: AbstractFamilyInstance) -> str """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+        pass
+
+    def ToString(self, format=None, formatProvider=None):
+        """ ToString(self: AbstractFamilyInstance) -> str """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -378,43 +427,47 @@ Get: InternalElement(self: AbstractFamilyInstance) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- Location=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Location(self: AbstractFamilyInstance) -> Point
+    Location = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Location(self: AbstractFamilyInstance) -> Point
 
 
 
 """
 
- Type=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Type(self: AbstractFamilyInstance) -> FamilyType
+    Type = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Type(self: AbstractFamilyInstance) -> FamilyType
 
 
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class AdaptiveComponent(
+    AbstractFamilyInstance, IDisposable, IGraphicItem, IFormattable
+):
+    """ A Revit Adaptive Component """
 
-class AdaptiveComponent(AbstractFamilyInstance,IDisposable,IGraphicItem,IFormattable):
- """ A Revit Adaptive Component """
- @staticmethod
- def ByParametersOnCurveReference(parameters,*__args):
-  """
+    @staticmethod
+    def ByParametersOnCurveReference(parameters, *__args):
+        """
   ByParametersOnCurveReference(parameters: Array[Array[float]],revitCurve: ElementCurveReference,familyType: FamilyType) -> Array[AdaptiveComponent]
 
   ByParametersOnCurveReference(parameters: Array[float],curve: Curve,familyType: FamilyType) -> AdaptiveComponent
@@ -439,10 +492,11 @@ class AdaptiveComponent(AbstractFamilyInstance,IDisposable,IGraphicItem,IFormatt
 
   ByParametersOnCurveReference(parameters: Array[float],revitCurve: ElementCurveReference,familyType: FamilyType) -> AdaptiveComponent
   """
-  pass
- @staticmethod
- def ByParametersOnFace(uvs,*__args):
-  """
+        pass
+
+    @staticmethod
+    def ByParametersOnFace(uvs, *__args):
+        """
   ByParametersOnFace(uvs: Array[Array[Array[float]]],surface: Surface,familyType: FamilyType) -> Array[AdaptiveComponent]
 
   ByParametersOnFace(uvs: Array[Array[float]],surface: Surface,familyType: FamilyType) -> AdaptiveComponent
@@ -469,10 +523,11 @@ class AdaptiveComponent(AbstractFamilyInstance,IDisposable,IGraphicItem,IFormatt
 
   ByParametersOnFace(uvs: Array[UV],faceReference: ElementFaceReference,familyType: FamilyType) -> AdaptiveComponent
   """
-  pass
- @staticmethod
- def ByPoints(points,familyType):
-  """
+        pass
+
+    @staticmethod
+    def ByPoints(points, familyType):
+        """
   ByPoints(points: Array[Array[Point]],familyType: FamilyType) -> Array[AdaptiveComponent]
 
   
@@ -485,101 +540,111 @@ class AdaptiveComponent(AbstractFamilyInstance,IDisposable,IGraphicItem,IFormatt
 
    familyType: a family type to use to create the adaptive components
   """
-  pass
- def InternalSetFamilyInstance(self,*args):
-  """ InternalSetFamilyInstance(self: AbstractFamilyInstance,fi: FamilyInstance) """
-  pass
- def InternalSetFamilySymbol(self,*args):
-  """ InternalSetFamilySymbol(self: AbstractFamilyInstance,fs: FamilySymbol) """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def InternalSetFamilyInstance(self, *args):
+        """ InternalSetFamilyInstance(self: AbstractFamilyInstance,fi: FamilyInstance) """
+        pass
+
+    def InternalSetFamilySymbol(self, *args):
+        """ InternalSetFamilySymbol(self: AbstractFamilyInstance,fs: FamilySymbol) """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- Locations=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Locations(self: AdaptiveComponent) -> List[Point]
+    Locations = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Locations(self: AdaptiveComponent) -> List[Point]
 
 
 
 """
 
- Type=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Type(self: AdaptiveComponent) -> FamilyType
+    Type = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Type(self: AdaptiveComponent) -> FamilyType
 
 
 
 """
 
-
- InternalUniqueId=None
+    InternalUniqueId = None
 
 
 class BuiltinNodeCategories(object):
- # no doc
- ANALYZE='Analyze'
- REVIT='Revit'
- REVIT_API='Revit.API'
- REVIT_BAKE='Revit.Bake'
- REVIT_DATUMS='Revit.Datums'
- REVIT_DOCUMENT='Revit.Document'
- REVIT_ELEMENTS_DIVIDEDPATH_ACTION='Revit.Elements.DividedPath.Actions'
- REVIT_FAMILIES='Revit.Families'
- REVIT_PARAMETERS='Revit.Parameters'
- REVIT_REFERENCE='Revit.Reference'
- REVIT_SELECTION='Revit.Selection'
- REVIT_VIEW='Revit.View'
- __all__=[
-  'ANALYZE',
-  'REVIT',
-  'REVIT_API',
-  'REVIT_BAKE',
-  'REVIT_DATUMS',
-  'REVIT_DOCUMENT',
-  'REVIT_ELEMENTS_DIVIDEDPATH_ACTION',
-  'REVIT_FAMILIES',
-  'REVIT_PARAMETERS',
-  'REVIT_REFERENCE',
-  'REVIT_SELECTION',
-  'REVIT_VIEW',
- ]
+    # no doc
+    ANALYZE = "Analyze"
+    REVIT = "Revit"
+    REVIT_API = "Revit.API"
+    REVIT_BAKE = "Revit.Bake"
+    REVIT_DATUMS = "Revit.Datums"
+    REVIT_DOCUMENT = "Revit.Document"
+    REVIT_ELEMENTS_DIVIDEDPATH_ACTION = "Revit.Elements.DividedPath.Actions"
+    REVIT_FAMILIES = "Revit.Families"
+    REVIT_PARAMETERS = "Revit.Parameters"
+    REVIT_REFERENCE = "Revit.Reference"
+    REVIT_SELECTION = "Revit.Selection"
+    REVIT_VIEW = "Revit.View"
+    __all__ = [
+        "ANALYZE",
+        "REVIT",
+        "REVIT_API",
+        "REVIT_BAKE",
+        "REVIT_DATUMS",
+        "REVIT_DOCUMENT",
+        "REVIT_ELEMENTS_DIVIDEDPATH_ACTION",
+        "REVIT_FAMILIES",
+        "REVIT_PARAMETERS",
+        "REVIT_REFERENCE",
+        "REVIT_SELECTION",
+        "REVIT_VIEW",
+    ]
 
 
 class Category(object):
- # no doc
- @staticmethod
- def ById(id):
-  """
+    # no doc
+    @staticmethod
+    def ById(id):
+        """
   ById(id: int) -> Category
 
   
@@ -592,10 +657,11 @@ class Category(object):
 
    Returns: Category if present in current document.
   """
-  pass
- @staticmethod
- def ByName(name):
-  """
+        pass
+
+    @staticmethod
+    def ByName(name):
+        """
   ByName(name: str) -> Category
 
   
@@ -606,12 +672,14 @@ class Category(object):
 
    name: The built in category name.
   """
-  pass
- def ToString(self):
-  """ ToString(self: Category) -> str """
-  pass
- Id=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Id of the category.
+        pass
+
+    def ToString(self):
+        """ ToString(self: Category) -> str """
+        pass
+
+    Id = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The Id of the category.
 
 
 
@@ -621,8 +689,8 @@ Get: Id(self: Category) -> int
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The name of the Category.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The name of the Category.
 
 
 
@@ -633,12 +701,12 @@ Get: Name(self: Category) -> str
 """
 
 
-
 class Coordinates(object):
- """ Nodes exposing Revit Document Base and Survey Point """
- @staticmethod
- def BasePoint():
-  """
+    """ Nodes exposing Revit Document Base and Survey Point """
+
+    @staticmethod
+    def BasePoint():
+        """
   BasePoint() -> Point
 
   
@@ -647,10 +715,11 @@ class Coordinates(object):
 
    Returns: Project Base Point
   """
-  pass
- @staticmethod
- def ProjectRotation():
-  """
+        pass
+
+    @staticmethod
+    def ProjectRotation():
+        """
   ProjectRotation() -> float
 
   
@@ -659,10 +728,11 @@ class Coordinates(object):
 
    Returns: Rotation in degrees
   """
-  pass
- @staticmethod
- def SurveyPoint():
-  """
+        pass
+
+    @staticmethod
+    def SurveyPoint():
+        """
   SurveyPoint() -> Point
 
   
@@ -671,80 +741,97 @@ class Coordinates(object):
 
    Returns: Survey Point
   """
-  pass
- __all__=[
-  'BasePoint',
-  'ProjectRotation',
-  'SurveyPoint',
- ]
+        pass
+
+    __all__ = [
+        "BasePoint",
+        "ProjectRotation",
+        "SurveyPoint",
+    ]
 
 
-class CurtainPanel(AbstractFamilyInstance,IDisposable,IGraphicItem,IFormattable):
- """ A Revit CurtainPanel """
- def AsFamilyInstance(self):
-  """
+class CurtainPanel(AbstractFamilyInstance, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit CurtainPanel """
+
+    def AsFamilyInstance(self):
+        """
   AsFamilyInstance(self: CurtainPanel) -> FamilyInstance
 
   
 
    Gets family instance from curtain Panel
   """
-  pass
- @staticmethod
- def ByElement(hostingElement):
-  """
+        pass
+
+    @staticmethod
+    def ByElement(hostingElement):
+        """
   ByElement(hostingElement: Element) -> Array[CurtainPanel]
 
   
 
    get all panels of curtain wall,system or slope glazing roof
   """
-  pass
- def InternalSetFamilyInstance(self,*args):
-  """ InternalSetFamilyInstance(self: AbstractFamilyInstance,fi: FamilyInstance) """
-  pass
- def InternalSetFamilySymbol(self,*args):
-  """ InternalSetFamilySymbol(self: AbstractFamilyInstance,fs: FamilySymbol) """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def InternalSetFamilyInstance(self, *args):
+        """ InternalSetFamilyInstance(self: AbstractFamilyInstance,fi: FamilyInstance) """
+        pass
+
+    def InternalSetFamilySymbol(self, *args):
+        """ InternalSetFamilySymbol(self: AbstractFamilyInstance,fs: FamilySymbol) """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def SupportingMullions(self):
-  """
+        pass
+
+    def SupportingMullions(self):
+        """
   SupportingMullions(self: CurtainPanel) -> Array[Mullion]
 
   
 
    Gets Mullions hosting the specified curtain panel
   """
-  pass
- def ToString(self,format=None,formatProvider=None):
-  """ ToString(self: CurtainPanel) -> str """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """ __new__(cls: type,panelElement: Panel) """
-  pass
- def __str__(self,*args):
-  pass
- Boundaries=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets curtain panel boundaries
+        pass
+
+    def ToString(self, format=None, formatProvider=None):
+        """ ToString(self: CurtainPanel) -> str """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """ __new__(cls: type,panelElement: Panel) """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Boundaries = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets curtain panel boundaries
 
 
 
@@ -754,8 +841,8 @@ Get: Boundaries(self: CurtainPanel) -> Array[PolyCurve]
 
 """
 
- HasPlane=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks if the specific curtain panel is planar
+    HasPlane = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Checks if the specific curtain panel is planar
 
 
 
@@ -765,8 +852,8 @@ Get: HasPlane(self: CurtainPanel) -> bool
 
 """
 
- Height=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the height of the specific curtain panel,if it's rectangular
+    Height = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the height of the specific curtain panel,if it's rectangular
 
 
 
@@ -776,22 +863,26 @@ Get: Height(self: CurtainPanel) -> float
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- IsRectangular=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks whether the specific curtain panel is rectangular. Returns 
+    IsRectangular = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Checks whether the specific curtain panel is rectangular. Returns 
 
    true if the curtain panel is rectangular. Otherwise returns false
 
@@ -803,8 +894,8 @@ Get: IsRectangular(self: CurtainPanel) -> bool
 
 """
 
- Length=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the length of the specific curtain panel boundaries
+    Length = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the length of the specific curtain panel boundaries
 
 
 
@@ -814,10 +905,14 @@ Get: Length(self: CurtainPanel) -> float
 
 """
 
- PanelBoundaries=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    PanelBoundaries = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- PanelPlane=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a plane of the given curtain panel,if it is planar
+    PanelPlane = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a plane of the given curtain panel,if it is planar
 
 
 
@@ -827,8 +922,8 @@ Get: PanelPlane(self: CurtainPanel) -> Plane
 
 """
 
- Width=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the width of the specific curtain panel,if it's rectangular
+    Width = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the width of the specific curtain panel,if it's rectangular
 
 
 
@@ -838,55 +933,64 @@ Get: Width(self: CurtainPanel) -> float
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
-
-class CurveElement(Element,IDisposable,IGraphicItem,IFormattable):
- # no doc
- def InternalSetCurve(self,*args):
-  """
+class CurveElement(Element, IDisposable, IGraphicItem, IFormattable):
+    # no doc
+    def InternalSetCurve(self, *args):
+        """
   InternalSetCurve(self: CurveElement,c: Curve)
 
    Set the geometry curve used by the ModelCurve
   """
-  pass
- def InternalSetCurveElement(self,*args):
-  """
+        pass
+
+    def InternalSetCurveElement(self, *args):
+        """
   InternalSetCurveElement(self: CurveElement,curveElement: CurveElement)
 
    Set the internal model curve along with its id's
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def setCurveMethod(self,*args):
-  """ setCurveMethod(ce: CurveElement,c: Curve) """
-  pass
- def Tessellate(self,package,parameters):
-  """ Tessellate(self: CurveElement,package: IRenderPackage,parameters: TessellationParameters) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- Curve=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Obtain the geometry curve for this geometry curve
+        pass
+
+    def setCurveMethod(self, *args):
+        """ setCurveMethod(ce: CurveElement,c: Curve) """
+        pass
+
+    def Tessellate(self, package, parameters):
+        """ Tessellate(self: CurveElement,package: IRenderPackage,parameters: TessellationParameters) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Curve = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Obtain the geometry curve for this geometry curve
 
 
 
@@ -896,8 +1000,10 @@ Get: Curve(self: CurveElement) -> Curve
 
 """
 
- ElementCurveReference=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Obtain the reference curve for this ModelCurve
+    ElementCurveReference = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Obtain the reference curve for this ModelCurve
 
 
 
@@ -907,37 +1013,41 @@ Get: ElementCurveReference(self: CurveElement) -> ElementCurveReference
 
 """
 
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: InternalElement(self: CurveElement) -> Element
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: InternalElement(self: CurveElement) -> Element
 
 
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
+    hasMethodSetCurve = True
+    InternalUniqueId = None
 
- hasMethodSetCurve=True
- InternalUniqueId=None
 
+class CurveByPoints(CurveElement, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit Curve By Points """
 
-class CurveByPoints(CurveElement,IDisposable,IGraphicItem,IFormattable):
- """ A Revit Curve By Points """
- @staticmethod
- def ByReferencePoints(points,isReferenceLine):
-  """
+    @staticmethod
+    def ByReferencePoints(points, isReferenceLine):
+        """
   ByReferencePoints(points: Array[ReferencePoint],isReferenceLine: bool) -> CurveByPoints
 
   
@@ -946,68 +1056,80 @@ class CurveByPoints(CurveElement,IDisposable,IGraphicItem,IFormattable):
 
     ReferencePoint's
   """
-  pass
- def InternalSetCurve(self,*args):
-  """
+        pass
+
+    def InternalSetCurve(self, *args):
+        """
   InternalSetCurve(self: CurveElement,c: Curve)
 
    Set the geometry curve used by the ModelCurve
   """
-  pass
- def InternalSetCurveElement(self,*args):
-  """
+        pass
+
+    def InternalSetCurveElement(self, *args):
+        """
   InternalSetCurveElement(self: CurveElement,curveElement: CurveElement)
 
    Set the internal model curve along with its id's
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def ToString(self,format=None,formatProvider=None):
-  """ ToString(self: CurveByPoints) -> str """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+        pass
+
+    def ToString(self, format=None, formatProvider=None):
+        """ ToString(self: CurveByPoints) -> str """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class DetailCurve(CurveElement, IDisposable, IGraphicItem, IFormattable):
+    """ Revit Detail Curve """
 
-class DetailCurve(CurveElement,IDisposable,IGraphicItem,IFormattable):
- """ Revit Detail Curve """
- @staticmethod
- def ByCurve(view,curve):
-  """
+    @staticmethod
+    def ByCurve(view, curve):
+        """
   ByCurve(view: View,curve: Curve) -> DetailCurve
 
   
@@ -1020,54 +1142,65 @@ class DetailCurve(CurveElement,IDisposable,IGraphicItem,IFormattable):
 
    curve: Curve to create detailcurve from
   """
-  pass
- def InternalSetCurve(self,*args):
-  """
+        pass
+
+    def InternalSetCurve(self, *args):
+        """
   InternalSetCurve(self: CurveElement,c: Curve)
 
    Set the geometry curve used by the ModelCurve
   """
-  pass
- def InternalSetCurveElement(self,*args):
-  """
+        pass
+
+    def InternalSetCurveElement(self, *args):
+        """
   InternalSetCurveElement(self: CurveElement,curveElement: CurveElement)
 
    Set the internal model curve along with its id's
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def SetCurve(self,curve):
-  """
+        pass
+
+    def SetCurve(self, curve):
+        """
   SetCurve(self: DetailCurve,curve: Curve)
 
    Set Geometry Curve
   """
-  pass
- def ToString(self,format=None,formatProvider=None):
-  """ ToString(self: DetailCurve) -> str """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- Curve=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Geometry Curve
+        pass
+
+    def ToString(self, format=None, formatProvider=None):
+        """ ToString(self: DetailCurve) -> str """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Curve = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get Geometry Curve
 
 
 
@@ -1077,62 +1210,76 @@ Get: Curve(self: DetailCurve) -> Curve
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class Dimension(Element, IDisposable, IGraphicItem, IFormattable):
+    """ Dimension element """
 
-class Dimension(Element,IDisposable,IGraphicItem,IFormattable):
- """ Dimension element """
- @staticmethod
- def ByElements(view,referenceElements,line,suffix,prefix):
-  """ ByElements(view: View,referenceElements: IEnumerable[Element],line: Line,suffix: str,prefix: str) -> Dimension """
-  pass
- def SafeInit(self,*args):
-  """
+    @staticmethod
+    def ByElements(view, referenceElements, line, suffix, prefix):
+        """ ByElements(view: View,referenceElements: IEnumerable[Element],line: Line,suffix: str,prefix: str) -> Dimension """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def SetPrefix(self,values):
-  """ SetPrefix(self: Dimension,values: IEnumerable[str]) """
-  pass
- def SetSuffix(self,values):
-  """ SetSuffix(self: Dimension,values: IEnumerable[str]) """
-  pass
- def SetValueOverride(self,values):
-  """ SetValueOverride(self: Dimension,values: IEnumerable[str]) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+        pass
+
+    def SetPrefix(self, values):
+        """ SetPrefix(self: Dimension,values: IEnumerable[str]) """
+        pass
+
+    def SetSuffix(self, values):
+        """ SetSuffix(self: Dimension,values: IEnumerable[str]) """
+        pass
+
+    def SetValueOverride(self, values):
+        """ SetValueOverride(self: Dimension,values: IEnumerable[str]) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -1142,22 +1289,24 @@ Get: InternalElement(self: Dimension) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- Prefix=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Prefix
+    Prefix = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get Prefix
 
 
 
@@ -1167,8 +1316,8 @@ Get: Prefix(self: Dimension) -> IEnumerable[str]
 
 """
 
- Suffix=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Suffix
+    Suffix = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get Suffix
 
 
 
@@ -1178,8 +1327,8 @@ Get: Suffix(self: Dimension) -> IEnumerable[str]
 
 """
 
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Dimension Value
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get Dimension Value
 
 
 
@@ -1189,8 +1338,10 @@ Get: Value(self: Dimension) -> IEnumerable[float]
 
 """
 
- ValueOverride=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Value override
+    ValueOverride = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get Value override
 
 
 
@@ -1200,15 +1351,15 @@ Get: ValueOverride(self: Dimension) -> IEnumerable[str]
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class DirectShape(Element, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit DirectShape,which is a wrapper for some other geometrical entities """
 
-class DirectShape(Element,IDisposable,IGraphicItem,IFormattable):
- """ A Revit DirectShape,which is a wrapper for some other geometrical entities """
- @staticmethod
- def ByGeometry(geometry,category,material,name):
-  """
+    @staticmethod
+    def ByGeometry(geometry, category, material, name):
+        """
   ByGeometry(geometry: Geometry,category: Category,material: Material,name: str) -> DirectShape
 
   
@@ -1247,10 +1398,11 @@ class DirectShape(Element,IDisposable,IGraphicItem,IFormattable):
 
    Returns: A DirectShape Element
   """
-  pass
- @staticmethod
- def ByMesh(mesh,category,material,name):
-  """
+        pass
+
+    @staticmethod
+    def ByMesh(mesh, category, material, name):
+        """
   ByMesh(mesh: Mesh,category: Category,material: Material,name: str) -> DirectShape
 
   
@@ -1285,47 +1437,58 @@ class DirectShape(Element,IDisposable,IGraphicItem,IFormattable):
 
    Returns: A DirectShape Element
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def ToString(self,format=None,formatProvider=None):
-  """
+        pass
+
+    def ToString(self, format=None, formatProvider=None):
+        """
   ToString(self: DirectShape) -> str
 
   
 
    Please see InternalSetName method
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """
   __new__(cls: type,shape: DirectShape)
 
   __new__(cls: type,shapeReference: DesignScriptEntity,shapename: str,category: Category,material: Material)
   """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -1335,26 +1498,27 @@ Get: InternalElement(self: DirectShape) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
-
-class DirectShapeState(SerializableId,ISerializable):
- """
+class DirectShapeState(SerializableId, ISerializable):
+    """
  This class acts as a representation of a directShape state,we can store it in trace
 
     and on protogeometry types (in their tags dictionary) to keep track of the state of
@@ -1369,24 +1533,31 @@ class DirectShapeState(SerializableId,ISerializable):
 
  DirectShapeState(info: SerializationInfo,context: StreamingContext)
  """
- def GetObjectData(self,info,context):
-  """ GetObjectData(self: DirectShapeState,info: SerializationInfo,context: StreamingContext) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+
+    def GetObjectData(self, info, context):
+        """ GetObjectData(self: DirectShapeState,info: SerializationInfo,context: StreamingContext) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,ds: DirectShape,syncId: str,materialId: ElementId)
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- materialId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: materialId(self: DirectShapeState) -> int
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    materialId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: materialId(self: DirectShapeState) -> int
 
 
 
@@ -1394,8 +1565,8 @@ Set: materialId(self: DirectShapeState)=value
 
 """
 
- syncId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: syncId(self: DirectShapeState) -> str
+    syncId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: syncId(self: DirectShapeState) -> str
 
 
 
@@ -1404,12 +1575,12 @@ Set: syncId(self: DirectShapeState)=value
 """
 
 
+class DividedPath(Element, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit DividedPath """
 
-class DividedPath(Element,IDisposable,IGraphicItem,IFormattable):
- """ A Revit DividedPath """
- @staticmethod
- def ByCurveAndDivisions(*__args):
-  """
+    @staticmethod
+    def ByCurveAndDivisions(*__args):
+        """
   ByCurveAndDivisions(curve: Curve,divisions: int) -> DividedPath
 
   
@@ -1424,10 +1595,11 @@ class DividedPath(Element,IDisposable,IGraphicItem,IFormattable):
 
   ByCurveAndDivisions(element: ElementCurveReference,divisions: int) -> DividedPath
   """
-  pass
- @staticmethod
- def ByCurvesAndDivisions(*__args):
-  """
+        pass
+
+    @staticmethod
+    def ByCurvesAndDivisions(*__args):
+        """
   ByCurvesAndDivisions(curve: Array[Curve],divisions: int) -> DividedPath
 
   
@@ -1442,30 +1614,39 @@ class DividedPath(Element,IDisposable,IGraphicItem,IFormattable):
 
   ByCurvesAndDivisions(curveReferences: Array[ElementCurveReference],divisions: int) -> DividedPath
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -1475,22 +1656,24 @@ Get: InternalElement(self: DividedPath) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- Points=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """All points along the DividedPath.
+    Points = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """All points along the DividedPath.
 
 
 
@@ -1500,15 +1683,15 @@ Get: Points(self: DividedPath) -> IEnumerable[Point]
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class DividedSurface(Element, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit DividedSurface """
 
-class DividedSurface(Element,IDisposable,IGraphicItem,IFormattable):
- """ A Revit DividedSurface """
- @staticmethod
- def ByFaceAndUVDivisions(elementFace,uDivs,vDivs):
-  """
+    @staticmethod
+    def ByFaceAndUVDivisions(elementFace, uDivs, vDivs):
+        """
   ByFaceAndUVDivisions(elementFace: Surface,uDivs: int,vDivs: int) -> DividedSurface
 
   
@@ -1521,10 +1704,11 @@ class DividedSurface(Element,IDisposable,IGraphicItem,IFormattable):
 
   ByFaceAndUVDivisions(elementFace: ElementFaceReference,uDivs: int,vDivs: int) -> DividedSurface
   """
-  pass
- @staticmethod
- def ByFaceUVDivisionsAndRotation(*__args):
-  """
+        pass
+
+    @staticmethod
+    def ByFaceUVDivisionsAndRotation(*__args):
+        """
   ByFaceUVDivisionsAndRotation(surface: Surface,uDivs: int,vDivs: int,gridRotation: float) -> DividedSurface
 
   
@@ -1541,30 +1725,39 @@ class DividedSurface(Element,IDisposable,IGraphicItem,IFormattable):
 
   ByFaceUVDivisionsAndRotation(faceReference: ElementFaceReference,uDivs: int,vDivs: int,gridRotation: float) -> DividedSurface
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -1574,22 +1767,24 @@ Get: InternalElement(self: DividedSurface) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- Rotation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Rotation of the grid lines with respect to the UV parameterization
+    Rotation = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Rotation of the grid lines with respect to the UV parameterization
 
    of the face
 
@@ -1601,8 +1796,10 @@ Get: Rotation(self: DividedSurface) -> float
 
 """
 
- UDivisions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Number of divisions in U direction
+    UDivisions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Number of divisions in U direction
 
 
 
@@ -1612,8 +1809,10 @@ Get: UDivisions(self: DividedSurface) -> int
 
 """
 
- VDivisions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Number of divisions in V direction
+    VDivisions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Number of divisions in V direction
 
 
 
@@ -1623,15 +1822,15 @@ Get: VDivisions(self: DividedSurface) -> int
 
 """
 
-
- InternalUniqueId=None
+    InternalUniqueId = None
 
 
 class ElementSelector(object):
- """ ElementSelector() """
- @staticmethod
- def ByElementId(elementId,isRevitOwned=None):
-  """
+    """ ElementSelector() """
+
+    @staticmethod
+    def ByElementId(elementId, isRevitOwned=None):
+        """
   ByElementId(elementId: int) -> Element
 
   ByElementId(elementId: int,isRevitOwned: bool) -> Element
@@ -1652,10 +1851,11 @@ class ElementSelector(object):
 
    isRevitOwned: Whether the returned object should be revit owned or not
   """
-  pass
- @staticmethod
- def ByUniqueId(uniqueId,isRevitOwned):
-  """
+        pass
+
+    @staticmethod
+    def ByUniqueId(uniqueId, isRevitOwned):
+        """
   ByUniqueId(uniqueId: str,isRevitOwned: bool) -> Element
 
   
@@ -1674,17 +1874,19 @@ class ElementSelector(object):
 
    isRevitOwned: Whether the returned object should be revit owned or not
   """
-  pass
+        pass
+
 
 class ElementWrapper(object):
- """
+    """
  Element wrapper supplies tools for wrapping Autodesk.Revit.DB.Element types
 
     in their associated Revit.Elements.Element wrapper
  """
- @staticmethod
- def ToDSType(ele,isRevitOwned):
-  """
+
+    @staticmethod
+    def ToDSType(ele, isRevitOwned):
+        """
   ToDSType(ele: Element,isRevitOwned: bool) -> Element
 
   
@@ -1695,10 +1897,11 @@ class ElementWrapper(object):
 
    isRevitOwned: Whether the returned object should be revit owned or not
   """
-  pass
- @staticmethod
- def Wrap(*__args):
-  """
+        pass
+
+    @staticmethod
+    def Wrap(*__args):
+        """
   Wrap(topoSurface: TopographySurface,isRevitOwned: bool) -> Topography
 
   Wrap(view: ViewDrafting,isRevitOwned: bool) -> DraftingView
@@ -1781,18 +1984,20 @@ class ElementWrapper(object):
 
   Wrap(ele: ModelCurve,isRevitOwned: bool) -> ModelCurve
   """
-  pass
- __all__=[
-  'ToDSType',
-  'Wrap',
- ]
+        pass
+
+    __all__ = [
+        "ToDSType",
+        "Wrap",
+    ]
 
 
-class Family(Element,IDisposable,IGraphicItem,IFormattable):
- """ A Revit Family """
- @staticmethod
- def ByName(name):
-  """
+class Family(Element, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit Family """
+
+    @staticmethod
+    def ByName(name):
+        """
   ByName(name: str) -> Family
 
   
@@ -1803,33 +2008,43 @@ class Family(Element,IDisposable,IGraphicItem,IFormattable):
 
    name: The name of the family in the current document
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def ToString(self,format=None,formatProvider=None):
-  """ ToString(self: Family) -> str """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+        pass
+
+    def ToString(self, format=None, formatProvider=None):
+        """ ToString(self: Family) -> str """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -1839,22 +2054,24 @@ Get: InternalElement(self: Family) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The name of this family
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The name of this family
 
 
 
@@ -1864,8 +2081,8 @@ Get: Name(self: Family) -> str
 
 """
 
- Types=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Obtain the FamilyTypes from this Family
+    Types = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Obtain the FamilyTypes from this Family
 
 
 
@@ -1875,15 +2092,15 @@ Get: Types(self: Family) -> Array[FamilyType]
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class FamilyInstance(AbstractFamilyInstance, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit FamilyInstance """
 
-class FamilyInstance(AbstractFamilyInstance,IDisposable,IGraphicItem,IFormattable):
- """ A Revit FamilyInstance """
- @staticmethod
- def ByCoordinates(familyType,x,y,z):
-  """
+    @staticmethod
+    def ByCoordinates(familyType, x, y, z):
+        """
   ByCoordinates(familyType: FamilyType,x: float,y: float,z: float) -> FamilyInstance
 
   
@@ -1902,10 +2119,11 @@ class FamilyInstance(AbstractFamilyInstance,IDisposable,IGraphicItem,IFormattabl
 
    z: Z coordinate in meters
   """
-  pass
- @staticmethod
- def ByFace(familyType,face,*__args):
-  """
+        pass
+
+    @staticmethod
+    def ByFace(familyType, face, *__args):
+        """
   ByFace(familyType: FamilyType,face: Surface,location: Point,referenceDirection: Vector) -> FamilyInstance
 
   
@@ -1972,10 +2190,11 @@ class FamilyInstance(AbstractFamilyInstance,IDisposable,IGraphicItem,IFormattabl
 
    Returns: FamilyInstance
   """
-  pass
- @staticmethod
- def ByFamilyType(familyType):
-  """
+        pass
+
+    @staticmethod
+    def ByFamilyType(familyType):
+        """
   ByFamilyType(familyType: FamilyType) -> Array[FamilyInstance]
 
   
@@ -1984,10 +2203,11 @@ class FamilyInstance(AbstractFamilyInstance,IDisposable,IGraphicItem,IFormattabl
 
     the Dynamo graph
   """
-  pass
- @staticmethod
- def ByPoint(familyType,point):
-  """
+        pass
+
+    @staticmethod
+    def ByPoint(familyType, point):
+        """
   ByPoint(familyType: FamilyType,point: Point) -> FamilyInstance
 
   
@@ -1996,10 +2216,11 @@ class FamilyInstance(AbstractFamilyInstance,IDisposable,IGraphicItem,IFormattabl
 
     FamilySymbol in the Revit API) and its coordinates in world space
   """
-  pass
- @staticmethod
- def ByPointAndLevel(familyType,point,level):
-  """
+        pass
+
+    @staticmethod
+    def ByPointAndLevel(familyType, point, level):
+        """
   ByPointAndLevel(familyType: FamilyType,point: Point,level: Level) -> FamilyInstance
 
   
@@ -2014,22 +2235,26 @@ class FamilyInstance(AbstractFamilyInstance,IDisposable,IGraphicItem,IFormattabl
 
    point: Point in meters
   """
-  pass
- def InternalSetFamilyInstance(self,*args):
-  """ InternalSetFamilyInstance(self: AbstractFamilyInstance,fi: FamilyInstance) """
-  pass
- def InternalSetFamilySymbol(self,*args):
-  """ InternalSetFamilySymbol(self: AbstractFamilyInstance,fs: FamilySymbol) """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def InternalSetFamilyInstance(self, *args):
+        """ InternalSetFamilyInstance(self: AbstractFamilyInstance,fi: FamilyInstance) """
+        pass
+
+    def InternalSetFamilySymbol(self, *args):
+        """ InternalSetFamilySymbol(self: AbstractFamilyInstance,fs: FamilySymbol) """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def SetRotation(self,degree):
-  """
+        pass
+
+    def SetRotation(self, degree):
+        """
   SetRotation(self: FamilyInstance,degree: float) -> FamilyInstance
 
   
@@ -2042,30 +2267,40 @@ class FamilyInstance(AbstractFamilyInstance,IDisposable,IGraphicItem,IFormattabl
 
    Returns: The result family instance.
   """
-  pass
- def ToString(self,format=None,formatProvider=None):
-  """ ToString(self: FamilyInstance) -> str """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """ __new__(cls: type,instance: FamilyInstance) """
-  pass
- def __str__(self,*args):
-  pass
- FacingOrientation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the FacingOrientation of the family instance
+        pass
+
+    def ToString(self, format=None, formatProvider=None):
+        """ ToString(self: FamilyInstance) -> str """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """ __new__(cls: type,instance: FamilyInstance) """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    FacingOrientation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the FacingOrientation of the family instance
 
 
 
@@ -2075,8 +2310,8 @@ Get: FacingOrientation(self: FamilyInstance) -> Vector
 
 """
 
- GetFamily=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the family of this family instance
+    GetFamily = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the family of this family instance
 
 
 
@@ -2086,8 +2321,8 @@ Get: GetFamily(self: FamilyInstance) -> Family
 
 """
 
- GetHost=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the host of this fmaily instance (if any). Eg. returns the wall of a window or door family instance.
+    GetHost = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the host of this fmaily instance (if any). Eg. returns the wall of a window or door family instance.
 
 
 
@@ -2097,8 +2332,8 @@ Get: GetHost(self: FamilyInstance) -> Element
 
 """
 
- GetType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the family type of this family instance
+    GetType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the family type of this family instance
 
 
 
@@ -2108,22 +2343,24 @@ Get: GetType(self: FamilyInstance) -> FamilyType
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- Location=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the location of the specific family instance
+    Location = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the location of the specific family instance
 
 
 
@@ -2133,8 +2370,8 @@ Get: Location(self: FamilyInstance) -> Point
 
 """
 
- Type=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets family type of the specific family instance
+    Type = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets family type of the specific family instance
 
 
 
@@ -2144,15 +2381,15 @@ Get: Type(self: FamilyInstance) -> FamilyType
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class FamilyType(Element, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit FamilyType,the Revit API refers to this as a FamilySymbol """
 
-class FamilyType(Element,IDisposable,IGraphicItem,IFormattable):
- """ A Revit FamilyType,the Revit API refers to this as a FamilySymbol """
- @staticmethod
- def ByFamilyAndName(family,name):
-  """
+    @staticmethod
+    def ByFamilyAndName(family, name):
+        """
   ByFamilyAndName(family: Family,name: str) -> FamilyType
 
   
@@ -2165,10 +2402,11 @@ class FamilyType(Element,IDisposable,IGraphicItem,IFormattable):
 
    name: The name of the FamilyType
   """
-  pass
- @staticmethod
- def ByFamilyNameAndTypeName(familyName,typeName):
-  """
+        pass
+
+    @staticmethod
+    def ByFamilyNameAndTypeName(familyName, typeName):
+        """
   ByFamilyNameAndTypeName(familyName: str,typeName: str) -> FamilyType
 
   
@@ -2181,10 +2419,11 @@ class FamilyType(Element,IDisposable,IGraphicItem,IFormattable):
 
    typeName: The name of the FamilyType.
   """
-  pass
- @staticmethod
- def ByName(name):
-  """
+        pass
+
+    @staticmethod
+    def ByName(name):
+        """
   ByName(name: str) -> FamilyType
 
   
@@ -2203,33 +2442,41 @@ class FamilyType(Element,IDisposable,IGraphicItem,IFormattable):
 
    name: The name of the FamilyType
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def ToString(self,format=None,formatProvider=None):
-  """ ToString(self: FamilyType) -> str """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- Family=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the parent family of this FamilyType
+        pass
+
+    def ToString(self, format=None, formatProvider=None):
+        """ ToString(self: FamilyType) -> str """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Family = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get the parent family of this FamilyType
 
 
 
@@ -2239,8 +2486,10 @@ Get: Family(self: FamilyType) -> Family
 
 """
 
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -2250,22 +2499,24 @@ Get: InternalElement(self: FamilyType) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the name of this Family Type
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get the name of this Family Type
 
 
 
@@ -2275,39 +2526,48 @@ Get: Name(self: FamilyType) -> str
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class FilledRegion(Element, IDisposable, IGraphicItem, IFormattable):
+    """ Revit filled Region """
 
-class FilledRegion(Element,IDisposable,IGraphicItem,IFormattable):
- """ Revit filled Region """
- @staticmethod
- def ByCurves(view,boundary,regionType):
-  """ ByCurves(view: View,boundary: IEnumerable[Curve],regionType: FilledRegionType) -> FilledRegion """
-  pass
- def SafeInit(self,*args):
-  """
+    @staticmethod
+    def ByCurves(view, boundary, regionType):
+        """ ByCurves(view: View,boundary: IEnumerable[Curve],regionType: FilledRegionType) -> FilledRegion """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -2317,59 +2577,68 @@ Get: InternalElement(self: FilledRegion) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class FilledRegionType(Element, IDisposable, IGraphicItem, IFormattable):
+    """ Revit filled Region Type """
 
-class FilledRegionType(Element,IDisposable,IGraphicItem,IFormattable):
- """ Revit filled Region Type """
- @staticmethod
- def ByName(name):
-  """
+    @staticmethod
+    def ByName(name):
+        """
   ByName(name: str) -> FilledRegionType
 
   
 
    Select a FilledRegionType from the current document by name
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- Color=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Color
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Color = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get Color
 
 
 
@@ -2379,8 +2648,10 @@ Get: Color(self: FilledRegionType) -> Color
 
 """
 
- FillPatternId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get FillPatternId
+    FillPatternId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get FillPatternId
 
 
 
@@ -2390,8 +2661,10 @@ Get: FillPatternId(self: FilledRegionType) -> ElementId
 
 """
 
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -2401,22 +2674,24 @@ Get: InternalElement(self: FilledRegionType) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Name
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get Name
 
 
 
@@ -2426,15 +2701,15 @@ Get: Name(self: FilledRegionType) -> str
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class Floor(Element, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit Floor """
 
-class Floor(Element,IDisposable,IGraphicItem,IFormattable):
- """ A Revit Floor """
- @staticmethod
- def ByOutlineTypeAndLevel(*__args):
-  """
+    @staticmethod
+    def ByOutlineTypeAndLevel(*__args):
+        """
   ByOutlineTypeAndLevel(outline: PolyCurve,floorType: FloorType,level: Level) -> Floor
 
   
@@ -2451,30 +2726,39 @@ class Floor(Element,IDisposable,IGraphicItem,IFormattable):
 
    Returns: The floor
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -2484,62 +2768,74 @@ Get: InternalElement(self: Floor) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class FloorType(Element, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit FloorType """
 
-class FloorType(Element,IDisposable,IGraphicItem,IFormattable):
- """ A Revit FloorType """
- @staticmethod
- def ByName(name):
-  """
+    @staticmethod
+    def ByName(name):
+        """
   ByName(name: str) -> FloorType
 
   
 
    Select a FloorType from the document given
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def ToString(self,format=None,formatProvider=None):
-  """ ToString(self: FloorType) -> str """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+        pass
+
+    def ToString(self, format=None, formatProvider=None):
+        """ ToString(self: FloorType) -> str """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -2549,22 +2845,24 @@ Get: InternalElement(self: FloorType) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The name of the FloorType
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The name of the FloorType
 
 
 
@@ -2574,15 +2872,14 @@ Get: Name(self: FloorType) -> str
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
-
-class Form(Element,IDisposable,IGraphicItem,IFormattable):
- # no doc
- @staticmethod
- def ByLoftCrossSections(curves,isSolid):
-  """
+class Form(Element, IDisposable, IGraphicItem, IFormattable):
+    # no doc
+    @staticmethod
+    def ByLoftCrossSections(curves, isSolid):
+        """
   ByLoftCrossSections(curves: Array[Array[Element]],isSolid: bool) -> Form
 
   ByLoftCrossSections(curves: Array[Curve],isSolid: bool) -> Form
@@ -2603,30 +2900,39 @@ class Form(Element,IDisposable,IGraphicItem,IFormattable):
 
   ByLoftCrossSections(curves: Array[Element],isSolid: bool) -> Form
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -2636,49 +2942,59 @@ Get: InternalElement(self: Form) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class FreeForm(Element, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit FreeForm element """
 
-class FreeForm(Element,IDisposable,IGraphicItem,IFormattable):
- """ A Revit FreeForm element """
- def SafeInit(self,*args):
-  """
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -2688,79 +3004,90 @@ Get: InternalElement(self: FreeForm) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class Grid(Element, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit Grid Element """
 
-class Grid(Element,IDisposable,IGraphicItem,IFormattable):
- """ A Revit Grid Element """
- @staticmethod
- def ByArc(arc):
-  """
+    @staticmethod
+    def ByArc(arc):
+        """
   ByArc(arc: Arc) -> Grid
 
   
 
    Create a Revit Grid Element in a project along an Arc
   """
-  pass
- @staticmethod
- def ByLine(line):
-  """
+        pass
+
+    @staticmethod
+    def ByLine(line):
+        """
   ByLine(line: Line) -> Grid
 
   
 
    Create a Revit Grid Element in a Project along a Line.
   """
-  pass
- @staticmethod
- def ByStartPointEndPoint(start,end):
-  """
+        pass
+
+    @staticmethod
+    def ByStartPointEndPoint(start, end):
+        """
   ByStartPointEndPoint(start: Point,end: Point) -> Grid
 
   
 
    Create a Revit Grid Element in a project between two end points
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- Curve=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the underlying Curve geometry from this Element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Curve = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get the underlying Curve geometry from this Element
 
 
 
@@ -2770,8 +3097,10 @@ Get: Curve(self: Grid) -> Curve
 
 """
 
- ElementCurveReference=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get a Reference to the underlying Curve Geometry of this Element
+    ElementCurveReference = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get a Reference to the underlying Curve Geometry of this Element
 
 
 
@@ -2781,8 +3110,10 @@ Get: ElementCurveReference(self: Grid) -> ElementCurveReference
 
 """
 
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -2792,29 +3123,31 @@ Get: InternalElement(self: Grid) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class ImportInstance(Element, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit ImportInstance Element """
 
-class ImportInstance(Element,IDisposable,IGraphicItem,IFormattable):
- """ A Revit ImportInstance Element """
- @staticmethod
- def ByGeometries(geometries):
-  """
+    @staticmethod
+    def ByGeometries(geometries):
+        """
   ByGeometries(geometries: Array[Geometry]) -> ImportInstance
 
   
@@ -2833,10 +3166,11 @@ class ImportInstance(Element,IDisposable,IGraphicItem,IFormattable):
 
    geometries: A collection of Geometry
   """
-  pass
- @staticmethod
- def ByGeometry(geometry):
-  """
+        pass
+
+    @staticmethod
+    def ByGeometry(geometry):
+        """
   ByGeometry(geometry: Geometry) -> ImportInstance
 
   
@@ -2851,10 +3185,11 @@ class ImportInstance(Element,IDisposable,IGraphicItem,IFormattable):
 
    geometry: A single piece of geometry
   """
-  pass
- @staticmethod
- def BySATFile(pathToFile):
-  """
+        pass
+
+    @staticmethod
+    def BySATFile(pathToFile):
+        """
   BySATFile(pathToFile: str) -> ImportInstance
 
   
@@ -2865,51 +3200,62 @@ class ImportInstance(Element,IDisposable,IGraphicItem,IFormattable):
 
    pathToFile: The path to the SAT file
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: InternalElement(self: ImportInstance) -> Element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: InternalElement(self: ImportInstance) -> Element
 
 
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- Path=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets file path of the sat file that represents the geometry of the specified ImportInstance Element
+    Path = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets file path of the sat file that represents the geometry of the specified ImportInstance Element
 
 
 
@@ -2919,15 +3265,15 @@ Get: Path(self: ImportInstance) -> str
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class Level(Element, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit Level """
 
-class Level(Element,IDisposable,IGraphicItem,IFormattable):
- """ A Revit Level """
- @staticmethod
- def ByElevation(elevation):
-  """
+    @staticmethod
+    def ByElevation(elevation):
+        """
   ByElevation(elevation: float) -> Level
 
   
@@ -2938,30 +3284,33 @@ class Level(Element,IDisposable,IGraphicItem,IFormattable):
 
     Revit gives it.
   """
-  pass
- @staticmethod
- def ByElevationAndName(elevation,name):
-  """
+        pass
+
+    @staticmethod
+    def ByElevationAndName(elevation, name):
+        """
   ByElevationAndName(elevation: float,name: str) -> Level
 
   
 
    Create a Revit Level given it's elevation and name in the project
   """
-  pass
- @staticmethod
- def ByLevelAndOffset(level,offset):
-  """
+        pass
+
+    @staticmethod
+    def ByLevelAndOffset(level, offset):
+        """
   ByLevelAndOffset(level: Level,offset: float) -> Level
 
   
 
    Create a Revit Level given it's length offset from an existing level
   """
-  pass
- @staticmethod
- def ByLevelOffsetAndName(level,offset,name):
-  """
+        pass
+
+    @staticmethod
+    def ByLevelOffsetAndName(level, offset, name):
+        """
   ByLevelOffsetAndName(level: Level,offset: float,name: str) -> Level
 
   
@@ -2972,33 +3321,41 @@ class Level(Element,IDisposable,IGraphicItem,IFormattable):
 
     level and a name for the new level
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def ToString(self,format=None,formatProvider=None):
-  """ ToString(self: Level) -> str """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- Elevation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The elevation of the level above ground level
+        pass
+
+    def ToString(self, format=None, formatProvider=None):
+        """ ToString(self: Level) -> str """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Elevation = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The elevation of the level above ground level
 
 
 
@@ -3008,8 +3365,10 @@ Get: Elevation(self: Level) -> float
 
 """
 
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -3019,22 +3378,24 @@ Get: InternalElement(self: Level) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The name of the level
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The name of the level
 
 
 
@@ -3044,8 +3405,10 @@ Get: Name(self: Level) -> str
 
 """
 
- ProjectElevation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Elevation relative to the Project origin
+    ProjectElevation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Elevation relative to the Project origin
 
 
 
@@ -3055,34 +3418,38 @@ Get: ProjectElevation(self: Level) -> float
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
-
-class LevelTraceData(SerializableId,ISerializable):
- """
+class LevelTraceData(SerializableId, ISerializable):
+    """
  LevelTraceData(lev: Level,inputName: str)
 
  LevelTraceData(info: SerializationInfo,context: StreamingContext)
  """
- def GetObjectData(self,info,context):
-  """ GetObjectData(self: LevelTraceData,info: SerializationInfo,context: StreamingContext) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+
+    def GetObjectData(self, info, context):
+        """ GetObjectData(self: LevelTraceData,info: SerializationInfo,context: StreamingContext) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,lev: Level,inputName: str)
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- InputName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: InputName(self: LevelTraceData) -> str
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    InputName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: InputName(self: LevelTraceData) -> str
 
 
 
@@ -3091,12 +3458,11 @@ Set: InputName(self: LevelTraceData)=value
 """
 
 
-
-class Material(Element,IDisposable,IGraphicItem,IFormattable):
- # no doc
- @staticmethod
- def ByName(name):
-  """
+class Material(Element, IDisposable, IGraphicItem, IFormattable):
+    # no doc
+    @staticmethod
+    def ByName(name):
+        """
   ByName(name: str) -> Material
 
   
@@ -3107,30 +3473,39 @@ class Material(Element,IDisposable,IGraphicItem,IFormattable):
 
    name: The name of the material
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- AppearanceParameters=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get all apperance parameters
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AppearanceParameters = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get all apperance parameters
 
 
 
@@ -3140,8 +3515,8 @@ Get: AppearanceParameters(self: Material) -> IEnumerable[Parameter]
 
 """
 
- Color=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get color
+    Color = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get color
 
 
 
@@ -3151,8 +3526,10 @@ Get: Color(self: Material) -> Color
 
 """
 
- CutPatternColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get cut pattern color
+    CutPatternColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get cut pattern color
 
 
 
@@ -3162,8 +3539,10 @@ Get: CutPatternColor(self: Material) -> Color
 
 """
 
- CutPatternId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get cut pattern id
+    CutPatternId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get cut pattern id
 
 
 
@@ -3173,8 +3552,10 @@ Get: CutPatternId(self: Material) -> int
 
 """
 
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -3184,22 +3565,26 @@ Get: InternalElement(self: Material) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- MaterialCategory=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Material category
+    MaterialCategory = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get Material category
 
 
 
@@ -3209,8 +3594,10 @@ Get: MaterialCategory(self: Material) -> str
 
 """
 
- MaterialClass=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Material Class
+    MaterialClass = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get Material Class
 
 
 
@@ -3220,8 +3607,8 @@ Get: MaterialClass(self: Material) -> str
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Material Name
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get Material Name
 
 
 
@@ -3231,8 +3618,8 @@ Get: Name(self: Material) -> str
 
 """
 
- Shininess=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Shininess
+    Shininess = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get Shininess
 
 
 
@@ -3242,8 +3629,10 @@ Get: Shininess(self: Material) -> int
 
 """
 
- Smoothness=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Smoothness
+    Smoothness = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get Smoothness
 
 
 
@@ -3253,8 +3642,10 @@ Get: Smoothness(self: Material) -> int
 
 """
 
- StructuralParameters=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get all structural parameters
+    StructuralParameters = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get all structural parameters
 
 
 
@@ -3264,8 +3655,10 @@ Get: StructuralParameters(self: Material) -> IEnumerable[Parameter]
 
 """
 
- SurfacePatternColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get SurfacePatternColor
+    SurfacePatternColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get SurfacePatternColor
 
 
 
@@ -3275,8 +3668,10 @@ Get: SurfacePatternColor(self: Material) -> Color
 
 """
 
- ThermalParameters=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get all thermal parameters
+    ThermalParameters = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get all thermal parameters
 
 
 
@@ -3286,8 +3681,10 @@ Get: ThermalParameters(self: Material) -> IEnumerable[Parameter]
 
 """
 
- Transparency=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Transparency
+    Transparency = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get Transparency
 
 
 
@@ -3297,93 +3694,113 @@ Get: Transparency(self: Material) -> int
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class ModelCurve(CurveElement, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit ModelCurve """
 
-class ModelCurve(CurveElement,IDisposable,IGraphicItem,IFormattable):
- """ A Revit ModelCurve """
- @staticmethod
- def ByCurve(curve):
-  """
+    @staticmethod
+    def ByCurve(curve):
+        """
   ByCurve(curve: Curve) -> ModelCurve
 
   
 
    Construct a Revit ModelCurve element from a Curve
   """
-  pass
- def InternalSetCurve(self,*args):
-  """
+        pass
+
+    def InternalSetCurve(self, *args):
+        """
   InternalSetCurve(self: CurveElement,c: Curve)
 
    Set the geometry curve used by the ModelCurve
   """
-  pass
- def InternalSetCurveElement(self,*args):
-  """
+        pass
+
+    def InternalSetCurveElement(self, *args):
+        """
   InternalSetCurveElement(self: CurveElement,curveElement: CurveElement)
 
    Set the internal model curve along with its id's
   """
-  pass
- @staticmethod
- def ReferenceCurveByCurve(curve):
-  """
+        pass
+
+    @staticmethod
+    def ReferenceCurveByCurve(curve):
+        """
   ReferenceCurveByCurve(curve: Curve) -> ModelCurve
 
   
 
    Construct a Revit ModelCurve element from a Curve
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def ToString(self,format=None,formatProvider=None):
-  """ ToString(self: ModelCurve) -> str """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+        pass
+
+    def ToString(self, format=None, formatProvider=None):
+        """ ToString(self: ModelCurve) -> str """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class ModelText(Element, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit ModelText Element Point """
 
-class ModelText(Element,IDisposable,IGraphicItem,IFormattable):
- """ A Revit ModelText Element Point """
- @staticmethod
- def ByTextSketchPlaneAndPosition(text,sketchPlane,xCoordinateInPlane,yCoordinateInPlane,textDepth,modelTextType):
-  """
+    @staticmethod
+    def ByTextSketchPlaneAndPosition(
+        text,
+        sketchPlane,
+        xCoordinateInPlane,
+        yCoordinateInPlane,
+        textDepth,
+        modelTextType,
+    ):
+        """
   ByTextSketchPlaneAndPosition(text: str,sketchPlane: SketchPlane,xCoordinateInPlane: float,yCoordinateInPlane: float,textDepth: float,modelTextType: ModelTextType) -> ModelText
 
   
@@ -3396,30 +3813,37 @@ class ModelText(Element,IDisposable,IGraphicItem,IFormattable):
 
         the depth of the text,and the text type name
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- Depth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Depth of the ModelText Element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Depth = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The Depth of the ModelText Element
 
 
 
@@ -3429,8 +3853,10 @@ Get: Depth(self: ModelText) -> float
 
 """
 
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -3440,22 +3866,24 @@ Get: InternalElement(self: ModelText) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- Position=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Position of the ModelText Element
+    Position = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The Position of the ModelText Element
 
 
 
@@ -3465,8 +3893,8 @@ Get: Position(self: ModelText) -> Point
 
 """
 
- Text=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Text of the ModelText Element
+    Text = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The Text of the ModelText Element
 
 
 
@@ -3476,45 +3904,54 @@ Get: Text(self: ModelText) -> str
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class ModelTextType(Element, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit ModelTextType """
 
-class ModelTextType(Element,IDisposable,IGraphicItem,IFormattable):
- """ A Revit ModelTextType """
- @staticmethod
- def ByName(name):
-  """
+    @staticmethod
+    def ByName(name):
+        """
   ByName(name: str) -> ModelTextType
 
   
 
    Select a ModelTextType from the current document by name
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -3524,111 +3961,131 @@ Get: InternalElement(self: ModelTextType) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class Mullion(AbstractFamilyInstance, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit Mullion """
 
-class Mullion(AbstractFamilyInstance,IDisposable,IGraphicItem,IFormattable):
- """ A Revit Mullion """
- def AsFamilyInstance(self):
-  """
+    def AsFamilyInstance(self):
+        """
   AsFamilyInstance(self: Mullion) -> FamilyInstance
 
   
 
    Returns FamilyInstance object as represented by the specified mullion
   """
-  pass
- @staticmethod
- def ByElement(hostingElement):
-  """
+        pass
+
+    @staticmethod
+    def ByElement(hostingElement):
+        """
   ByElement(hostingElement: Element) -> Array[Mullion]
 
   
 
    get all mullions of curtain wall,system or slope glazing roof
   """
-  pass
- def InitMullion(self,*args):
-  """
+        pass
+
+    def InitMullion(self, *args):
+        """
   InitMullion(self: Mullion,mullionElement: Mullion)
 
    Initialize a Mullion element
   """
-  pass
- def InternalSetFamilyInstance(self,*args):
-  """ InternalSetFamilyInstance(self: AbstractFamilyInstance,fi: FamilyInstance) """
-  pass
- def InternalSetFamilySymbol(self,*args):
-  """ InternalSetFamilySymbol(self: AbstractFamilyInstance,fs: FamilySymbol) """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def InternalSetFamilyInstance(self, *args):
+        """ InternalSetFamilyInstance(self: AbstractFamilyInstance,fi: FamilyInstance) """
+        pass
+
+    def InternalSetFamilySymbol(self, *args):
+        """ InternalSetFamilySymbol(self: AbstractFamilyInstance,fs: FamilySymbol) """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def SupportedPanels(self):
-  """
+        pass
+
+    def SupportedPanels(self):
+        """
   SupportedPanels(self: Mullion) -> Array[CurtainPanel]
 
   
 
    Returns curtain panels supported by the specified Mullion Element
   """
-  pass
- def ToString(self,format=None,formatProvider=None):
-  """ ToString(self: Mullion) -> str """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """ __new__(cls: type,mullionElement: Mullion) """
-  pass
- def __str__(self,*args):
-  pass
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+        pass
+
+    def ToString(self, format=None, formatProvider=None):
+        """ ToString(self: Mullion) -> str """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """ __new__(cls: type,mullionElement: Mullion) """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- LocationCurve=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets curve geometry from the specified Mullion Element
+    LocationCurve = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets curve geometry from the specified Mullion Element
 
 
 
@@ -3638,19 +4095,23 @@ Get: LocationCurve(self: Mullion) -> Curve
 
 """
 
-
- InternalUniqueId=None
+    InternalUniqueId = None
 
 
 class Parameter(object):
- # no doc
- @staticmethod
- def CreateProjectParameter(parameterName,groupName,type,group,instance,categoryList):
-  """ CreateProjectParameter(parameterName: str,groupName: str,type: str,group: str,instance: bool,categoryList: IEnumerable[Category]) """
-  pass
- @staticmethod
- def CreateProjectParameterForAllCategories(parameterName,groupName,type,group,instance):
-  """
+    # no doc
+    @staticmethod
+    def CreateProjectParameter(
+        parameterName, groupName, type, group, instance, categoryList
+    ):
+        """ CreateProjectParameter(parameterName: str,groupName: str,type: str,group: str,instance: bool,categoryList: IEnumerable[Category]) """
+        pass
+
+    @staticmethod
+    def CreateProjectParameterForAllCategories(
+        parameterName, groupName, type, group, instance
+    ):
+        """
   CreateProjectParameterForAllCategories(parameterName: str,groupName: str,type: str,group: str,instance: bool)
 
    Create a new Project Parameter in this current Revit document for all 
@@ -3671,14 +4132,20 @@ class Parameter(object):
 
    instance: Is instance parameter,otherwise its a type parameter
   """
-  pass
- @staticmethod
- def CreateSharedParameter(parameterName,groupName,type,group,instance,categoryList):
-  """ CreateSharedParameter(parameterName: str,groupName: str,type: str,group: str,instance: bool,categoryList: IEnumerable[Category]) """
-  pass
- @staticmethod
- def CreateSharedParameterForAllCategories(parameterName,groupName,type,group,instance):
-  """
+        pass
+
+    @staticmethod
+    def CreateSharedParameter(
+        parameterName, groupName, type, group, instance, categoryList
+    ):
+        """ CreateSharedParameter(parameterName: str,groupName: str,type: str,group: str,instance: bool,categoryList: IEnumerable[Category]) """
+        pass
+
+    @staticmethod
+    def CreateSharedParameterForAllCategories(
+        parameterName, groupName, type, group, instance
+    ):
+        """
   CreateSharedParameterForAllCategories(parameterName: str,groupName: str,type: str,group: str,instance: bool)
 
    Create a new Shared Parameter in the current Revit document for all applicable 
@@ -3699,10 +4166,11 @@ class Parameter(object):
 
    instance: Is instance parameter,otherwise its a type parameter
   """
-  pass
- @staticmethod
- def ParameterByName(element,name):
-  """
+        pass
+
+    @staticmethod
+    def ParameterByName(element, name):
+        """
   ParameterByName(element: Element,name: str) -> Parameter
 
   
@@ -3717,30 +4185,34 @@ class Parameter(object):
 
    Returns: Parameter
   """
-  pass
- @staticmethod
- def SetValue(parameter,value):
-  """
+        pass
+
+    @staticmethod
+    def SetValue(parameter, value):
+        """
   SetValue(parameter: Parameter,value: object)
 
    Set the value of the parameter
   """
-  pass
- @staticmethod
- def SharedParameterFile():
-  """
+        pass
+
+    @staticmethod
+    def SharedParameterFile():
+        """
   SharedParameterFile() -> str
 
   
 
    Gets the path to the shared parameter file of this document
   """
-  pass
- def ToString(self):
-  """ ToString(self: Parameter) -> str """
-  pass
- Group=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the parameter's group
+        pass
+
+    def ToString(self):
+        """ ToString(self: Parameter) -> str """
+        pass
+
+    Group = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get the parameter's group
 
 
 
@@ -3750,8 +4222,8 @@ Get: Group(self: Parameter) -> str
 
 """
 
- HasValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Check if the Parameter has a value
+    HasValue = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Check if the Parameter has a value
 
 
 
@@ -3761,8 +4233,8 @@ Get: HasValue(self: Parameter) -> bool
 
 """
 
- Id=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the parameter's element Id
+    Id = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get the parameter's element Id
 
 
 
@@ -3772,8 +4244,10 @@ Get: Id(self: Parameter) -> int
 
 """
 
- IsReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Check if the Parameter is read only
+    IsReadOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Check if the Parameter is read only
 
 
 
@@ -3783,8 +4257,8 @@ Get: IsReadOnly(self: Parameter) -> bool
 
 """
 
- IsShared=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Check if the Parameter is shared
+    IsShared = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Check if the Parameter is shared
 
 
 
@@ -3794,8 +4268,8 @@ Get: IsShared(self: Parameter) -> bool
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The name of the parameter.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The name of the parameter.
 
 
 
@@ -3805,8 +4279,10 @@ Get: Name(self: Parameter) -> str
 
 """
 
- ParameterType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the parameter type
+    ParameterType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get the parameter type
 
 
 
@@ -3816,8 +4292,10 @@ Get: ParameterType(self: Parameter) -> str
 
 """
 
- StorageType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Parameter Storage Type
+    StorageType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get Parameter Storage Type
 
 
 
@@ -3827,8 +4305,8 @@ Get: StorageType(self: Parameter) -> str
 
 """
 
- UnitType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the parameter's unit type
+    UnitType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get the parameter's unit type
 
 
 
@@ -3838,8 +4316,8 @@ Get: UnitType(self: Parameter) -> str
 
 """
 
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the value of the parameter
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get the value of the parameter
 
 
 
@@ -3850,18 +4328,18 @@ Get: Value(self: Parameter) -> object
 """
 
 
-
 class ParseEnum(object):
- """
+    """
  Parse Revit Enum
 
  
 
  ParseEnum()
  """
- @staticmethod
- def ByString(value,typeName):
-  """
+
+    @staticmethod
+    def ByString(value, typeName):
+        """
   ByString(value: str,typeName: str) -> object
 
   
@@ -3874,49 +4352,61 @@ class ParseEnum(object):
 
    typeName: full type name
   """
-  pass
+        pass
 
-class PlanView(View,IDisposable,IGraphicItem,IFormattable):
- """
+
+class PlanView(View, IDisposable, IGraphicItem, IFormattable):
+    """
  Base class for Revit Plan views
 
  
 
  PlanView()
  """
- def CreatePlanView(self,*args):
-  """ CreatePlanView(level: Level,planType: ViewFamily) -> ViewPlan """
-  pass
- def InternalSetPlanView(self,*args):
-  """
+
+    def CreatePlanView(self, *args):
+        """ CreatePlanView(level: Level,planType: ViewFamily) -> ViewPlan """
+        pass
+
+    def InternalSetPlanView(self, *args):
+        """
   InternalSetPlanView(self: PlanView,plan: ViewPlan)
 
    Set the InternalViewPlan property and the associated element id and unique id
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -3926,29 +4416,31 @@ Get: InternalElement(self: PlanView) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class ReferencePlane(Element, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit ReferencePlane """
 
-class ReferencePlane(Element,IDisposable,IGraphicItem,IFormattable):
- """ A Revit ReferencePlane """
- @staticmethod
- def ByLine(line):
-  """
+    @staticmethod
+    def ByLine(line):
+        """
   ByLine(line: Line) -> ReferencePlane
 
   
@@ -3963,10 +4455,11 @@ class ReferencePlane(Element,IDisposable,IGraphicItem,IFormattable):
 
    line: The line where the bubble wil be located at the start
   """
-  pass
- @staticmethod
- def ByStartPointEndPoint(start,end):
-  """
+        pass
+
+    @staticmethod
+    def ByStartPointEndPoint(start, end):
+        """
   ByStartPointEndPoint(start: Point,end: Point) -> ReferencePlane
 
   
@@ -3983,30 +4476,39 @@ class ReferencePlane(Element,IDisposable,IGraphicItem,IFormattable):
 
    end: The other end
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- ElementPlaneReference=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get a reference to this plane for downstream Elements requiring it
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    ElementPlaneReference = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get a reference to this plane for downstream Elements requiring it
 
 
 
@@ -4016,8 +4518,10 @@ Get: ElementPlaneReference(self: ReferencePlane) -> ElementPlaneReference
 
 """
 
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -4027,22 +4531,24 @@ Get: InternalElement(self: ReferencePlane) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- Plane=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the internal Geometric Plane
+    Plane = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get the internal Geometric Plane
 
 
 
@@ -4052,25 +4558,26 @@ Get: Plane(self: ReferencePlane) -> Plane
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class ReferencePoint(Element, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit Reference Point """
 
-class ReferencePoint(Element,IDisposable,IGraphicItem,IFormattable):
- """ A Revit Reference Point """
- @staticmethod
- def ByCoordinates(x,y,z):
-  """
+    @staticmethod
+    def ByCoordinates(x, y, z):
+        """
   ByCoordinates(x: float,y: float,z: float) -> ReferencePoint
 
   
 
    Create a Reference Point by x,y,and z coordinates.
   """
-  pass
- @staticmethod
- def ByLengthOnCurveReference(elementCurveReference,length):
-  """
+        pass
+
+    @staticmethod
+    def ByLengthOnCurveReference(elementCurveReference, length):
+        """
   ByLengthOnCurveReference(elementCurveReference: object,length: float) -> ReferencePoint
 
   
@@ -4081,10 +4588,11 @@ class ReferencePoint(Element,IDisposable,IGraphicItem,IFormattable):
 
    length: Distance in meters along the curve
   """
-  pass
- @staticmethod
- def ByParameterOnCurveReference(elementCurveReference,parameter):
-  """
+        pass
+
+    @staticmethod
+    def ByParameterOnCurveReference(elementCurveReference, parameter):
+        """
   ByParameterOnCurveReference(elementCurveReference: object,parameter: float) -> ReferencePoint
 
   
@@ -4095,10 +4603,11 @@ class ReferencePoint(Element,IDisposable,IGraphicItem,IFormattable):
 
      Elements in the Revit document.
   """
-  pass
- @staticmethod
- def ByParametersOnFaceReference(elementFaceReference,u,v):
-  """
+        pass
+
+    @staticmethod
+    def ByParametersOnFaceReference(elementFaceReference, u, v):
+        """
   ByParametersOnFaceReference(elementFaceReference: object,u: float,v: float) -> ReferencePoint
 
   
@@ -4109,57 +4618,69 @@ class ReferencePoint(Element,IDisposable,IGraphicItem,IFormattable):
 
      Elements in the Revit document.
   """
-  pass
- @staticmethod
- def ByPoint(pt):
-  """
+        pass
+
+    @staticmethod
+    def ByPoint(pt):
+        """
   ByPoint(pt: Point) -> ReferencePoint
 
   
 
    Create a Reference Point from a point.
   """
-  pass
- @staticmethod
- def ByPointVectorDistance(basePoint,direction,distance):
-  """
+        pass
+
+    @staticmethod
+    def ByPointVectorDistance(basePoint, direction, distance):
+        """
   ByPointVectorDistance(basePoint: Point,direction: Vector,distance: float) -> ReferencePoint
 
   
 
    Create a Reference Point Element offset from a point along a vector
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def ToString(self,format=None,formatProvider=None):
-  """
+        pass
+
+    def ToString(self, format=None, formatProvider=None):
+        """
   ToString(self: ReferencePoint,format: str,formatProvider: IFormatProvider) -> str
 
   ToString(self: ReferencePoint) -> str
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -4169,22 +4690,24 @@ Get: InternalElement(self: ReferencePoint) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- Point=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets point geometry from the specified ReferencePoint
+    Point = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets point geometry from the specified ReferencePoint
 
 
 
@@ -4194,8 +4717,8 @@ Get: Point(self: ReferencePoint) -> Point
 
 """
 
- X=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets 'X' coordinate of the specified ReferencePoint
+    X = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets 'X' coordinate of the specified ReferencePoint
 
 
 
@@ -4207,8 +4730,8 @@ Set: X(self: ReferencePoint)=value
 
 """
 
- XYPlane=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets XY plane of the specified ReferencePoint
+    XYPlane = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets XY plane of the specified ReferencePoint
 
 
 
@@ -4218,8 +4741,8 @@ Get: XYPlane(self: ReferencePoint) -> Plane
 
 """
 
- XZPlane=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets XZ plane of the specified ReferencePoint
+    XZPlane = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets XZ plane of the specified ReferencePoint
 
 
 
@@ -4229,8 +4752,8 @@ Get: XZPlane(self: ReferencePoint) -> Plane
 
 """
 
- Y=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets 'Y' coordinate of the specified ReferencePoint
+    Y = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets 'Y' coordinate of the specified ReferencePoint
 
 
 
@@ -4242,8 +4765,8 @@ Set: Y(self: ReferencePoint)=value
 
 """
 
- YZPlane=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets YZ plane of the specified ReferencePoint
+    YZPlane = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets YZ plane of the specified ReferencePoint
 
 
 
@@ -4253,8 +4776,8 @@ Get: YZPlane(self: ReferencePoint) -> Plane
 
 """
 
- Z=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets 'Z' coordinate of the specified ReferencePoint
+    Z = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets 'Z' coordinate of the specified ReferencePoint
 
 
 
@@ -4266,15 +4789,17 @@ Set: Z(self: ReferencePoint)=value
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class Revision(Element, IDisposable, IGraphicItem, IFormattable):
+    """ Revit Revision """
 
-class Revision(Element,IDisposable,IGraphicItem,IFormattable):
- """ Revit Revision """
- @staticmethod
- def ByName(name,revDate,description,issued,issuedBy,issuedTo,visibility,numberType):
-  """
+    @staticmethod
+    def ByName(
+        name, revDate, description, issued, issuedBy, issuedTo, visibility, numberType
+    ):
+        """
   ByName(name: str,revDate: str,description: str,issued: bool,issuedBy: str,issuedTo: str,visibility: str,numberType: str) -> Revision
 
   
@@ -4299,16 +4824,18 @@ class Revision(Element,IDisposable,IGraphicItem,IFormattable):
 
    numberType: Number type
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def SetIssued(self,value):
-  """
+        pass
+
+    def SetIssued(self, value):
+        """
   SetIssued(self: Revision,value: bool)
 
    Set Issued
@@ -4317,9 +4844,10 @@ class Revision(Element,IDisposable,IGraphicItem,IFormattable):
 
    value: Issued
   """
-  pass
- def SetIssuedBy(self,value):
-  """
+        pass
+
+    def SetIssuedBy(self, value):
+        """
   SetIssuedBy(self: Revision,value: str)
 
    Set IssuedBy
@@ -4328,9 +4856,10 @@ class Revision(Element,IDisposable,IGraphicItem,IFormattable):
 
    value: IssuedBy
   """
-  pass
- def SetIssuedTo(self,value):
-  """
+        pass
+
+    def SetIssuedTo(self, value):
+        """
   SetIssuedTo(self: Revision,value: str)
 
    Set IssuedTo
@@ -4339,9 +4868,10 @@ class Revision(Element,IDisposable,IGraphicItem,IFormattable):
 
    value: IssuedTo
   """
-  pass
- def SetRevisionDate(self,value):
-  """
+        pass
+
+    def SetRevisionDate(self, value):
+        """
   SetRevisionDate(self: Revision,value: str)
 
    Set Revision Date
@@ -4350,23 +4880,31 @@ class Revision(Element,IDisposable,IGraphicItem,IFormattable):
 
    value: Revision Date
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -4376,22 +4914,24 @@ Get: InternalElement(self: Revision) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- Issued=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Issued
+    Issued = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get Issued
 
 
 
@@ -4401,8 +4941,8 @@ Get: Issued(self: Revision) -> bool
 
 """
 
- IssuedBy=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get IssuedBy
+    IssuedBy = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get IssuedBy
 
 
 
@@ -4412,8 +4952,8 @@ Get: IssuedBy(self: Revision) -> str
 
 """
 
- IssuedTo=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get IssuedTo
+    IssuedTo = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get IssuedTo
 
 
 
@@ -4423,8 +4963,10 @@ Get: IssuedTo(self: Revision) -> str
 
 """
 
- RevisionDate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Revision Date
+    RevisionDate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get Revision Date
 
 
 
@@ -4434,39 +4976,46 @@ Get: RevisionDate(self: Revision) -> str
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class RevisionCloud(Element, IDisposable, IGraphicItem, IFormattable):
+    """ Revit Revision Cloud """
 
-class RevisionCloud(Element,IDisposable,IGraphicItem,IFormattable):
- """ Revit Revision Cloud """
- @staticmethod
- def ByCurve(view,curves,revision):
-  """ ByCurve(view: View,curves: IEnumerable[Curve],revision: Element) -> RevisionCloud """
-  pass
- def SafeInit(self,*args):
-  """
+    @staticmethod
+    def ByCurve(view, curves, revision):
+        """ ByCurve(view: View,curves: IEnumerable[Curve],revision: Element) -> RevisionCloud """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- Curves=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Revision cloud's curves
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Curves = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get Revision cloud's curves
 
 
 
@@ -4476,8 +5025,10 @@ Get: Curves(self: RevisionCloud) -> IEnumerable[Curve]
 
 """
 
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -4487,22 +5038,24 @@ Get: InternalElement(self: RevisionCloud) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- Revision=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Revision cloud's revision
+    Revision = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get Revision cloud's revision
 
 
 
@@ -4512,15 +5065,15 @@ Get: Revision(self: RevisionCloud) -> Revision
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class Room(Element, IDisposable, IGraphicItem, IFormattable):
+    """ Room Element """
 
-class Room(Element,IDisposable,IGraphicItem,IFormattable):
- """ Room Element """
- @staticmethod
- def ByLocation(level,location,name,number):
-  """
+    @staticmethod
+    def ByLocation(level, location, name, number):
+        """
   ByLocation(level: Level,location: Point,name: str,number: str) -> Room
 
   
@@ -4537,25 +5090,28 @@ class Room(Element,IDisposable,IGraphicItem,IFormattable):
 
    number: Room number
   """
-  pass
- def IsInsideRoom(self,point):
-  """
+        pass
+
+    def IsInsideRoom(self, point):
+        """
   IsInsideRoom(self: Room,point: Point) -> bool
 
   
 
    Check if a point is inside of a room
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def SetName(self,value):
-  """
+        pass
+
+    def SetName(self, value):
+        """
   SetName(self: Room,value: str)
 
    Set name
@@ -4564,9 +5120,10 @@ class Room(Element,IDisposable,IGraphicItem,IFormattable):
 
    value: Name
   """
-  pass
- def SetNumber(self,value):
-  """
+        pass
+
+    def SetNumber(self, value):
+        """
   SetNumber(self: Room,value: str)
 
    Set number
@@ -4575,23 +5132,29 @@ class Room(Element,IDisposable,IGraphicItem,IFormattable):
 
    value: Number
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- Area=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get room area
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Area = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get room area
 
 
 
@@ -4601,8 +5164,10 @@ Get: Area(self: Room) -> float
 
 """
 
- CenterBoundary=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Centerline boundary
+    CenterBoundary = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Centerline boundary
 
 
 
@@ -4612,8 +5177,10 @@ Get: CenterBoundary(self: Room) -> IEnumerable[IEnumerable[Curve]]
 
 """
 
- CoreBoundary=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Core boundary
+    CoreBoundary = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Core boundary
 
 
 
@@ -4623,8 +5190,10 @@ Get: CoreBoundary(self: Room) -> IEnumerable[IEnumerable[Curve]]
 
 """
 
- CoreCenterBoundary=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Core center boundary
+    CoreCenterBoundary = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Core center boundary
 
 
 
@@ -4634,8 +5203,10 @@ Get: CoreCenterBoundary(self: Room) -> IEnumerable[IEnumerable[Curve]]
 
 """
 
- FinishBoundary=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Finish boundary
+    FinishBoundary = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Finish boundary
 
 
 
@@ -4645,8 +5216,8 @@ Get: FinishBoundary(self: Room) -> IEnumerable[IEnumerable[Curve]]
 
 """
 
- Height=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get room height
+    Height = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get room height
 
 
 
@@ -4656,8 +5227,10 @@ Get: Height(self: Room) -> float
 
 """
 
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -4667,22 +5240,24 @@ Get: InternalElement(self: Room) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- Location=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Room Location
+    Location = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get Room Location
 
 
 
@@ -4692,8 +5267,8 @@ Get: Location(self: Room) -> Point
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get room name
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get room name
 
 
 
@@ -4703,8 +5278,8 @@ Get: Name(self: Room) -> str
 
 """
 
- Number=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get room number
+    Number = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get room number
 
 
 
@@ -4714,45 +5289,54 @@ Get: Number(self: Room) -> str
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class SketchPlane(Element, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit SketchPlane """
 
-class SketchPlane(Element,IDisposable,IGraphicItem,IFormattable):
- """ A Revit SketchPlane """
- @staticmethod
- def ByPlane(plane):
-  """
+    @staticmethod
+    def ByPlane(plane):
+        """
   ByPlane(plane: Plane) -> SketchPlane
 
   
 
    Make a Revit SketchPlane given a plane
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- ElementPlaneReference=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get an element plane reference from a specified sketch plane
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    ElementPlaneReference = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get an element plane reference from a specified sketch plane
 
 
 
@@ -4762,8 +5346,10 @@ Get: ElementPlaneReference(self: SketchPlane) -> ElementPlaneReference
 
 """
 
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -4773,22 +5359,24 @@ Get: InternalElement(self: SketchPlane) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- Plane=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the plane geometry of the specified sketch plane
+    Plane = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the plane geometry of the specified sketch plane
 
 
 
@@ -4798,15 +5386,17 @@ Get: Plane(self: SketchPlane) -> Plane
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class StructuralFraming(
+    AbstractFamilyInstance, IDisposable, IGraphicItem, IFormattable
+):
+    """ A Revit FamilyInstance """
 
-class StructuralFraming(AbstractFamilyInstance,IDisposable,IGraphicItem,IFormattable):
- """ A Revit FamilyInstance """
- @staticmethod
- def BeamByCurve(curve,level,structuralFramingType):
-  """
+    @staticmethod
+    def BeamByCurve(curve, level, structuralFramingType):
+        """
   BeamByCurve(curve: Curve,level: Level,structuralFramingType: FamilyType) -> StructuralFraming
 
   
@@ -4821,10 +5411,11 @@ class StructuralFraming(AbstractFamilyInstance,IDisposable,IGraphicItem,IFormatt
 
    structuralFramingType: The structural framing type representing the beam.
   """
-  pass
- @staticmethod
- def BraceByCurve(curve,level,structuralFramingType):
-  """
+        pass
+
+    @staticmethod
+    def BraceByCurve(curve, level, structuralFramingType):
+        """
   BraceByCurve(curve: Curve,level: Level,structuralFramingType: FamilyType) -> StructuralFraming
 
   
@@ -4839,10 +5430,13 @@ class StructuralFraming(AbstractFamilyInstance,IDisposable,IGraphicItem,IFormatt
 
    structuralFramingType: The structural framing type representing the brace.
   """
-  pass
- @staticmethod
- def ByCurveLevelUpVectorAndType(curve,level,upVector,structuralType,structuralFramingType):
-  """
+        pass
+
+    @staticmethod
+    def ByCurveLevelUpVectorAndType(
+        curve, level, upVector, structuralType, structuralFramingType
+    ):
+        """
   ByCurveLevelUpVectorAndType(curve: Curve,level: Level,upVector: Vector,structuralType: StructuralType,structuralFramingType: FamilyType) -> StructuralFraming
 
   
@@ -4865,10 +5459,11 @@ class StructuralFraming(AbstractFamilyInstance,IDisposable,IGraphicItem,IFormatt
 
    structuralFramingType: The structural framing type representing the structural type
   """
-  pass
- @staticmethod
- def ColumnByCurve(curve,level,structuralColumnType):
-  """
+        pass
+
+    @staticmethod
+    def ColumnByCurve(curve, level, structuralColumnType):
+        """
   ColumnByCurve(curve: Curve,level: Level,structuralColumnType: FamilyType) -> StructuralFraming
 
   
@@ -4883,50 +5478,61 @@ class StructuralFraming(AbstractFamilyInstance,IDisposable,IGraphicItem,IFormatt
 
    structuralColumnType: The structural column type representing the column.
   """
-  pass
- def InternalSetFamilyInstance(self,*args):
-  """ InternalSetFamilyInstance(self: AbstractFamilyInstance,fi: FamilyInstance) """
-  pass
- def InternalSetFamilySymbol(self,*args):
-  """ InternalSetFamilySymbol(self: AbstractFamilyInstance,fs: FamilySymbol) """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def InternalSetFamilyInstance(self, *args):
+        """ InternalSetFamilyInstance(self: AbstractFamilyInstance,fi: FamilyInstance) """
+        pass
+
+    def InternalSetFamilySymbol(self, *args):
+        """ InternalSetFamilySymbol(self: AbstractFamilyInstance,fs: FamilySymbol) """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- Location=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets curve geometry from location of the specified structural element
+    Location = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets curve geometry from location of the specified structural element
 
 
 
@@ -4936,8 +5542,8 @@ Get: Location(self: StructuralFraming) -> Curve
 
 """
 
- Type=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets family type from the specified structural element
+    Type = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets family type from the specified structural element
 
 
 
@@ -4947,75 +5553,93 @@ Get: Type(self: StructuralFraming) -> FamilyType
 
 """
 
-
- InternalUniqueId=None
-
-
-class StructuralType(Enum,IComparable,IFormattable,IConvertible):
- """ enum StructuralType,values: Beam (0),Brace (1),Column (2),Footing (3),NonStructural (4) """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Beam=None
- Brace=None
- Column=None
- Footing=None
- NonStructural=None
- value__=None
+    InternalUniqueId = None
 
 
-class SunSettings(Element,IDisposable,IGraphicItem,IFormattable):
- # no doc
- @staticmethod
- def Current():
-  """ Current() -> SunSettings """
-  pass
- def SafeInit(self,*args):
-  """
+class StructuralType(Enum, IComparable, IFormattable, IConvertible):
+    """ enum StructuralType,values: Beam (0),Brace (1),Column (2),Footing (3),NonStructural (4) """
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Beam = None
+    Brace = None
+    Column = None
+    Footing = None
+    NonStructural = None
+    value__ = None
+
+
+class SunSettings(Element, IDisposable, IGraphicItem, IFormattable):
+    # no doc
+    @staticmethod
+    def Current():
+        """ Current() -> SunSettings """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def ToString(self,format=None,formatProvider=None):
-  """ ToString(self: SunSettings) -> str """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- Altitude=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Extracts the Altitude.
+        pass
+
+    def ToString(self, format=None, formatProvider=None):
+        """ ToString(self: SunSettings) -> str """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Altitude = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Extracts the Altitude.
 
 
 
@@ -5025,8 +5649,8 @@ Get: Altitude(self: SunSettings) -> float
 
 """
 
- Azimuth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Extracts the Azimuth.
+    Azimuth = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Extracts the Azimuth.
 
 
 
@@ -5036,8 +5660,10 @@ Get: Azimuth(self: SunSettings) -> float
 
 """
 
- CurrentDateTime=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the Date and Time for the current frame of the solar study given in the local time of the solar study location.
+    CurrentDateTime = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the Date and Time for the current frame of the solar study given in the local time of the solar study location.
 
 
 
@@ -5047,8 +5673,10 @@ Get: CurrentDateTime(self: SunSettings) -> DateTime
 
 """
 
- EndDateTime=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the End Date and Time of the solar study given in the local time of the solar study location.
+    EndDateTime = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the End Date and Time of the solar study given in the local time of the solar study location.
 
 
 
@@ -5058,29 +5686,35 @@ Get: EndDateTime(self: SunSettings) -> DateTime
 
 """
 
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: InternalElement(self: SunSettings) -> Element
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: InternalElement(self: SunSettings) -> Element
 
 
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- StartDateTime=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the Start Date and Time of the solar study given in the local time of the solar study location.
+    StartDateTime = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the Start Date and Time of the solar study given in the local time of the solar study location.
 
 
 
@@ -5090,8 +5724,10 @@ Get: StartDateTime(self: SunSettings) -> DateTime
 
 """
 
- SunDirection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Calculates the direction of the sun.
+    SunDirection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Calculates the direction of the sun.
 
 
 
@@ -5101,42 +5737,50 @@ Get: SunDirection(self: SunSettings) -> Vector
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
-
-class TextElement(Element,IDisposable,IGraphicItem,IFormattable):
- # no doc
- def SafeInit(self,*args):
-  """
+class TextElement(Element, IDisposable, IGraphicItem, IFormattable):
+    # no doc
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def Tessellate(self,package,parameters):
-  """
+        pass
+
+    def Tessellate(self, package, parameters):
+        """
   Tessellate(self: TextElement,package: IRenderPackage,parameters: TessellationParameters)
 
    Text Tesselation
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Internal Revit Element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Internal Revit Element
 
 
 
@@ -5146,29 +5790,40 @@ Get: InternalElement(self: TextElement) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class Tag(TextElement, IDisposable, IGraphicItem, IFormattable):
+    """ Revit Tag Element """
 
-class Tag(TextElement,IDisposable,IGraphicItem,IFormattable):
- """ Revit Tag Element """
- @staticmethod
- def ByElement(view,element,horizontal,addLeader,horizontalAlignment,verticalAlignment,offset,isOffset):
-  """
+    @staticmethod
+    def ByElement(
+        view,
+        element,
+        horizontal,
+        addLeader,
+        horizontalAlignment,
+        verticalAlignment,
+        offset,
+        isOffset,
+    ):
+        """
   ByElement(view: View,element: Element,horizontal: bool,addLeader: bool,horizontalAlignment: str,verticalAlignment: str,offset: Vector,isOffset: bool) -> Tag
 
   
@@ -5195,44 +5850,55 @@ class Tag(TextElement,IDisposable,IGraphicItem,IFormattable):
 
     tags location
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- TaggedElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Tagged Element
+    TaggedElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get Tagged Element
 
 
 
@@ -5242,8 +5908,8 @@ Get: TaggedElement(self: Tag) -> Element
 
 """
 
- TagText=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Tag's Text
+    TagText = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get Tag's Text
 
 
 
@@ -5253,15 +5919,17 @@ Get: TagText(self: Tag) -> str
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class TextNote(TextElement, IDisposable, IGraphicItem, IFormattable):
+    """ Revit Text Note Element """
 
-class TextNote(TextElement,IDisposable,IGraphicItem,IFormattable):
- """ Revit Text Note Element """
- @staticmethod
- def ByLocation(view,location,text,alignment,type,keepRotatedTextReadable,rotation):
-  """
+    @staticmethod
+    def ByLocation(
+        view, location, text, alignment, type, keepRotatedTextReadable, rotation
+    ):
+        """
   ByLocation(view: View,location: Point,text: str,alignment: str,type: TextNoteType,keepRotatedTextReadable: bool,rotation: float) -> TextNote
 
   
@@ -5284,51 +5952,61 @@ class TextNote(TextElement,IDisposable,IGraphicItem,IFormattable):
 
    rotation: Rotation in degrees
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def SetHorizontalAlignment(self,value):
-  """
+        pass
+
+    def SetHorizontalAlignment(self, value):
+        """
   SetHorizontalAlignment(self: TextNote,value: str)
 
    Set Horizontal Text Alignment
   """
-  pass
- def SetKeepRotatedTextReadable(self,value):
-  """
+        pass
+
+    def SetKeepRotatedTextReadable(self, value):
+        """
   SetKeepRotatedTextReadable(self: TextNote,value: bool)
 
    Set Keep Rotated Text Readable
   """
-  pass
- def SetText(self,value):
-  """
+        pass
+
+    def SetText(self, value):
+        """
   SetText(self: TextNote,value: str)
 
    Set Text
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- Height=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Height
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Height = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get Height
 
 
 
@@ -5338,8 +6016,10 @@ Get: Height(self: TextNote) -> float
 
 """
 
- HorizontalAlignment=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Horizontal Alignment
+    HorizontalAlignment = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get Horizontal Alignment
 
 
 
@@ -5349,22 +6029,24 @@ Get: HorizontalAlignment(self: TextNote) -> str
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- Text=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Text
+    Text = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get Text
 
 
 
@@ -5374,8 +6056,8 @@ Get: Text(self: TextNote) -> str
 
 """
 
- Typename=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Typename
+    Typename = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get Typename
 
 
 
@@ -5385,8 +6067,10 @@ Get: Typename(self: TextNote) -> str
 
 """
 
- VerticalAlignment=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Vertical Alignment
+    VerticalAlignment = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get Vertical Alignment
 
 
 
@@ -5396,55 +6080,65 @@ Get: VerticalAlignment(self: TextNote) -> str
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class TextNoteType(Element, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit TextNoteType """
 
-class TextNoteType(Element,IDisposable,IGraphicItem,IFormattable):
- """ A Revit TextNoteType """
- @staticmethod
- def ByName(name):
-  """
+    @staticmethod
+    def ByName(name):
+        """
   ByName(name: str) -> TextNoteType
 
   
 
    Select a ModelTextType from the current document by name
   """
-  pass
- @staticmethod
- def Default():
-  """
+        pass
+
+    @staticmethod
+    def Default():
+        """
   Default() -> TextNoteType
 
   
 
    Return a default TextNoteType
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -5454,77 +6148,90 @@ Get: InternalElement(self: TextNoteType) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class Topography(Element, IDisposable, IGraphicItem, IFormattable):
+    # no doc
+    @staticmethod
+    def ByPoints(points):
+        """ ByPoints(points: IEnumerable[Point]) -> Topography """
+        pass
 
-class Topography(Element,IDisposable,IGraphicItem,IFormattable):
- # no doc
- @staticmethod
- def ByPoints(points):
-  """ ByPoints(points: IEnumerable[Point]) -> Topography """
-  pass
- def SafeInit(self,*args):
-  """
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def ToString(self,format=None,formatProvider=None):
-  """ ToString(self: Topography) -> str """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: InternalElement(self: Topography) -> Element
+        pass
+
+    def ToString(self, format=None, formatProvider=None):
+        """ ToString(self: Topography) -> str """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: InternalElement(self: Topography) -> Element
 
 
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- Mesh=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the underlying triangular Mesh from the Topography
+    Mesh = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get the underlying triangular Mesh from the Topography
 
 
 
@@ -5534,8 +6241,8 @@ Get: Mesh(self: Topography) -> Mesh
 
 """
 
- Points=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The set of points from which this TopographySurface is constructed.
+    Points = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The set of points from which this TopographySurface is constructed.
 
 
 
@@ -5545,110 +6252,130 @@ Get: Points(self: Topography) -> List[Point]
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
-
-class UnknownElement(Element,IDisposable,IGraphicItem,IFormattable):
- """
+class UnknownElement(Element, IDisposable, IGraphicItem, IFormattable):
+    """
  A Revit Element of an unknown type.  This allows an arbitrary element
 
     to be passed around in the graph.
  """
- def SafeInit(self,*args):
-  """
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def ToString(self,format=None,formatProvider=None):
-  """ ToString(self: UnknownElement) -> str """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: InternalElement(self: UnknownElement) -> Element
+        pass
+
+    def ToString(self, format=None, formatProvider=None):
+        """ ToString(self: UnknownElement) -> str """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: InternalElement(self: UnknownElement) -> Element
 
 
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
-
-class Wall(Element,IDisposable,IGraphicItem,IFormattable):
- # no doc
- @staticmethod
- def ByCurveAndHeight(curve,height,level,wallType):
-  """
+class Wall(Element, IDisposable, IGraphicItem, IFormattable):
+    # no doc
+    @staticmethod
+    def ByCurveAndHeight(curve, height, level, wallType):
+        """
   ByCurveAndHeight(curve: Curve,height: float,level: Level,wallType: WallType) -> Wall
 
   
 
    Create a Revit Wall from a guiding Curve,height,Level,and WallType
   """
-  pass
- @staticmethod
- def ByCurveAndLevels(c,startLevel,endLevel,wallType):
-  """
+        pass
+
+    @staticmethod
+    def ByCurveAndLevels(c, startLevel, endLevel, wallType):
+        """
   ByCurveAndLevels(c: Curve,startLevel: Level,endLevel: Level,wallType: WallType) -> Wall
 
   
 
    Create a Revit Wall from a guiding Curve,start Level,end Level,and WallType
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -5658,62 +6385,74 @@ Get: InternalElement(self: Wall) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
+    InternalUniqueId = None
 
- InternalUniqueId=None
 
+class WallType(Element, IDisposable, IGraphicItem, IFormattable):
+    """ A Revit WallType """
 
-class WallType(Element,IDisposable,IGraphicItem,IFormattable):
- """ A Revit WallType """
- @staticmethod
- def ByName(name):
-  """
+    @staticmethod
+    def ByName(name):
+        """
   ByName(name: str) -> WallType
 
   
 
    Select a walltype from the current document by name
   """
-  pass
- def SafeInit(self,*args):
-  """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def ToString(self,format=None,formatProvider=None):
-  """ ToString(self: WallType) -> str """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+        pass
+
+    def ToString(self, format=None, formatProvider=None):
+        """ ToString(self: WallType) -> str """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -5723,22 +6462,24 @@ Get: InternalElement(self: WallType) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name of the specified wall type
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the name of the specified wall type
 
 
 
@@ -5748,9 +6489,7 @@ Get: Name(self: WallType) -> str
 
 """
 
-
- InternalUniqueId=None
+    InternalUniqueId = None
 
 
 # variables with complex values
-

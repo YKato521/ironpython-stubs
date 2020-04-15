@@ -1,13 +1,16 @@
 class DataGridTemplateColumn(DataGridColumn):
- """
+    """
  Represents a System.Windows.Controls.DataGrid column that hosts template-specified content in its cells.
 
  
 
  DataGridTemplateColumn()
  """
- CellEditingTemplate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the template to use to display the contents of a cell that is in editing mode.
+
+    CellEditingTemplate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the template to use to display the contents of a cell that is in editing mode.
 
 
 
@@ -19,8 +22,10 @@ Set: CellEditingTemplate(self: DataGridTemplateColumn)=value
 
 """
 
- CellEditingTemplateSelector=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the object that determines which template to use to display the contents of a cell that is in editing mode.
+    CellEditingTemplateSelector = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the object that determines which template to use to display the contents of a cell that is in editing mode.
 
 
 
@@ -32,8 +37,10 @@ Set: CellEditingTemplateSelector(self: DataGridTemplateColumn)=value
 
 """
 
- CellTemplate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the template to use to display the contents of a cell that is not in editing mode.
+    CellTemplate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the template to use to display the contents of a cell that is not in editing mode.
 
 
 
@@ -45,8 +52,10 @@ Set: CellTemplate(self: DataGridTemplateColumn)=value
 
 """
 
- CellTemplateSelector=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the object that determines which template to use to display the contents of a cell that is not in editing mode.
+    CellTemplateSelector = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the object that determines which template to use to display the contents of a cell that is not in editing mode.
 
 
 
@@ -58,16 +67,16 @@ Set: CellTemplateSelector(self: DataGridTemplateColumn)=value
 
 """
 
- DataGridOwner=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Controls.DataGrid control that contains this column.
+    DataGridOwner = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Windows.Controls.DataGrid control that contains this column.
 
 
 
 """
 
-
- CellEditingTemplateProperty=None
- CellEditingTemplateSelectorProperty=None
- CellTemplateProperty=None
- CellTemplateSelectorProperty=None
-
+    CellEditingTemplateProperty = None
+    CellEditingTemplateSelectorProperty = None
+    CellTemplateProperty = None
+    CellTemplateSelectorProperty = None

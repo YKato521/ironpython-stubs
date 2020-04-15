@@ -1,10 +1,11 @@
 class MeshObject(RhinoObject):
- # no doc
- def DuplicateMeshGeometry(self):
-  """ DuplicateMeshGeometry(self: MeshObject) -> Mesh """
-  pass
- def SetMesh(self,*args):
-  """
+    # no doc
+    def DuplicateMeshGeometry(self):
+        """ DuplicateMeshGeometry(self: MeshObject) -> Mesh """
+        pass
+
+    def SetMesh(self, *args):
+        """
   SetMesh(self: MeshObject,mesh: Mesh) -> Mesh
 
   
@@ -23,12 +24,13 @@ class MeshObject(RhinoObject):
 
    Returns: The old mesh geometry that was set for this object
   """
-  pass
- MeshGeometry=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: MeshGeometry(self: MeshObject) -> Mesh
+        pass
+
+    MeshGeometry = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: MeshGeometry(self: MeshObject) -> Mesh
 
 
 
 """
-
-

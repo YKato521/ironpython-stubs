@@ -1,5 +1,5 @@
-class DGNExportOptions(BaseExportOptions,IDisposable):
- """
+class DGNExportOptions(BaseExportOptions, IDisposable):
+    """
  The export options used by exporting DGN format file.
 
  
@@ -8,11 +8,13 @@ class DGNExportOptions(BaseExportOptions,IDisposable):
 
  DGNExportOptions()
  """
- def Dispose(self):
-  """ Dispose(self: BaseExportOptions,A_0: bool) """
-  pass
- def GetExportLineweightTable(self):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: BaseExportOptions,A_0: bool) """
+        pass
+
+    def GetExportLineweightTable(self):
+        """
   GetExportLineweightTable(self: DGNExportOptions) -> ExportLineweightTable
 
   
@@ -21,10 +23,11 @@ class DGNExportOptions(BaseExportOptions,IDisposable):
 
    Returns: The line weight table.
   """
-  pass
- @staticmethod
- def GetPredefinedOptions(document,setup):
-  """
+        pass
+
+    @staticmethod
+    def GetPredefinedOptions(document, setup):
+        """
   GetPredefinedOptions(document: Document,setup: str) -> DGNExportOptions
 
   
@@ -43,10 +46,11 @@ class DGNExportOptions(BaseExportOptions,IDisposable):
 
    Returns: An instance of predefined DGNExportOptions,or ll if the name was not found.
   """
-  pass
- @staticmethod
- def GetPredefinedSetupNames(document):
-  """
+        pass
+
+    @staticmethod
+    def GetPredefinedSetupNames(document):
+        """
   GetPredefinedSetupNames(document: Document) -> IList[str]
 
   
@@ -59,12 +63,14 @@ class DGNExportOptions(BaseExportOptions,IDisposable):
 
    Returns: An array of strings representing names of predefined setups.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: BaseExportOptions,disposing: bool) """
-  pass
- def SetExportLineweightTable(self,lineweightTable):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: BaseExportOptions,disposing: bool) """
+        pass
+
+    def SetExportLineweightTable(self, lineweightTable):
+        """
   SetExportLineweightTable(self: DGNExportOptions,lineweightTable: ExportLineweightTable)
 
    Sets the line weight table to use during export.
@@ -73,26 +79,33 @@ class DGNExportOptions(BaseExportOptions,IDisposable):
 
    lineweightTable: The line weight table to be set.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,option=None):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, option=None):
+        """
   __new__(cls: type,option: DGNExportOptions)
 
   __new__(cls: type)
   """
-  pass
- FileVersion=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The DGN file version.
+        pass
+
+    FileVersion = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The DGN file version.
 
    Default value of fileVersion is DGNFileFormat.Default.
 
@@ -106,8 +119,10 @@ Set: FileVersion(self: DGNExportOptions)=value
 
 """
 
- MasterUnits=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The master units.
+    MasterUnits = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The master units.
 
    Default value of masterUnits is true.
 
@@ -121,8 +136,10 @@ Set: MasterUnits(self: DGNExportOptions)=value
 
 """
 
- MergedViews=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether to merge all views in one file (via XRefs).
+    MergedViews = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether to merge all views in one file (via XRefs).
 
    Default value of mergedViews is false.
 
@@ -136,8 +153,8 @@ Set: MergedViews(self: DGNExportOptions)=value
 
 """
 
- SeedName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The name of the DGN seed.
+    SeedName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The name of the DGN seed.
 
    Default value of seedName is empty.
 
@@ -150,5 +167,3 @@ Get: SeedName(self: DGNExportOptions) -> str
 Set: SeedName(self: DGNExportOptions)=value
 
 """
-
-

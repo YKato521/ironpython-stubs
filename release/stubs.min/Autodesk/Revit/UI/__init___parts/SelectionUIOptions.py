@@ -1,11 +1,13 @@
-class SelectionUIOptions(object,IDisposable):
- """ Provides access to user settings related to how selection will behave in Revit's UI. """
- def Dispose(self):
-  """ Dispose(self: SelectionUIOptions) """
-  pass
- @staticmethod
- def ElementSelectsAsPinned(document,element):
-  """
+class SelectionUIOptions(object, IDisposable):
+    """ Provides access to user settings related to how selection will behave in Revit's UI. """
+
+    def Dispose(self):
+        """ Dispose(self: SelectionUIOptions) """
+        pass
+
+    @staticmethod
+    def ElementSelectsAsPinned(document, element):
+        """
   ElementSelectsAsPinned(document: Document,element: Element) -> bool
 
   
@@ -26,10 +28,11 @@ class SelectionUIOptions(object,IDisposable):
 
     purposes,false otherwise.
   """
-  pass
- @staticmethod
- def GetSelectionUIOptions():
-  """
+        pass
+
+    @staticmethod
+    def GetSelectionUIOptions():
+        """
   GetSelectionUIOptions() -> SelectionUIOptions
 
   
@@ -38,24 +41,32 @@ class SelectionUIOptions(object,IDisposable):
 
    Returns: The SelectionOptions for the current user.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: SelectionUIOptions,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- DragOnSelection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether elements can be dragged immediately when they are selected.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: SelectionUIOptions,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    DragOnSelection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates whether elements can be dragged immediately when they are selected.
 
 
 
@@ -67,8 +78,10 @@ Set: DragOnSelection(self: SelectionUIOptions)=value
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -78,8 +91,10 @@ Get: IsValidObject(self: SelectionUIOptions) -> bool
 
 """
 
- SelectFaces=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether elements can be selected by clicking on the interior of a face.
+    SelectFaces = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates whether elements can be selected by clicking on the interior of a face.
 
 
 
@@ -91,8 +106,10 @@ Set: SelectFaces(self: SelectionUIOptions)=value
 
 """
 
- SelectLinks=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether Revit and CAD link instances can be selected.
+    SelectLinks = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates whether Revit and CAD link instances can be selected.
 
 
 
@@ -104,8 +121,10 @@ Set: SelectLinks(self: SelectionUIOptions)=value
 
 """
 
- SelectPinned=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether pinned elements can be selected.
+    SelectPinned = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates whether pinned elements can be selected.
 
 
 
@@ -117,8 +136,10 @@ Set: SelectPinned(self: SelectionUIOptions)=value
 
 """
 
- SelectUnderlay=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether elements that are displayed as underlay can be selected.
+    SelectUnderlay = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates whether elements that are displayed as underlay can be selected.
 
 
 
@@ -129,5 +150,3 @@ Get: SelectUnderlay(self: SelectionUIOptions) -> bool
 Set: SelectUnderlay(self: SelectionUIOptions)=value
 
 """
-
-

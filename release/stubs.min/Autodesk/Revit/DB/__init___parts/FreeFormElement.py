@@ -1,7 +1,8 @@
-class FreeFormElement(GenericForm,IDisposable):
- """ A Free Form Element that contains non-parametric geometry created from an input solid outline. """
- def CanOffsetFace(self,face):
-  """
+class FreeFormElement(GenericForm, IDisposable):
+    """ A Free Form Element that contains non-parametric geometry created from an input solid outline. """
+
+    def CanOffsetFace(self, face):
+        """
   CanOffsetFace(self: FreeFormElement,face: Face) -> bool
 
   
@@ -14,10 +15,11 @@ class FreeFormElement(GenericForm,IDisposable):
 
    Returns: True if the face can be offset,false otherwise.
   """
-  pass
- @staticmethod
- def Create(document,geometry):
-  """
+        pass
+
+    @staticmethod
+    def Create(document, geometry):
+        """
   Create(document: Document,geometry: Solid) -> FreeFormElement
 
   
@@ -32,21 +34,26 @@ class FreeFormElement(GenericForm,IDisposable):
 
    Returns: returns a new FreeFormElement
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetFaceOffset(self,face,offset):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetFaceOffset(self, face, offset):
+        """
   SetFaceOffset(self: FreeFormElement,face: Face,offset: float)
 
    Offsets a planar face of the free form element a certain distance in the normal 
@@ -63,9 +70,10 @@ class FreeFormElement(GenericForm,IDisposable):
 
     negative value offsets into the solid shape.
   """
-  pass
- def UpdateSolidGeometry(self,newGeometry):
-  """
+        pass
+
+    def UpdateSolidGeometry(self, newGeometry):
+        """
   UpdateSolidGeometry(self: FreeFormElement,newGeometry: Solid)
 
    Updates the geometry of the FreeForm element to the given shape preserving 
@@ -78,13 +86,16 @@ class FreeFormElement(GenericForm,IDisposable):
 
    newGeometry: The new geometry to set in the FreeForm element.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

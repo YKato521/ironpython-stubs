@@ -1,13 +1,14 @@
-class NativeWindow(MarshalByRefObject,IWin32Window):
- """
+class NativeWindow(MarshalByRefObject, IWin32Window):
+    """
  Provides a low-level encapsulation of a window handle and a window procedure.
 
  
 
  NativeWindow()
  """
- def AssignHandle(self,handle):
-  """
+
+    def AssignHandle(self, handle):
+        """
   AssignHandle(self: NativeWindow,handle: IntPtr)
 
    Assigns a handle to this window.
@@ -16,9 +17,10 @@ class NativeWindow(MarshalByRefObject,IWin32Window):
 
    handle: The handle to assign to this window.
   """
-  pass
- def CreateHandle(self,cp):
-  """
+        pass
+
+    def CreateHandle(self, cp):
+        """
   CreateHandle(self: NativeWindow,cp: CreateParams)
 
    Creates a window and its handle with the specified creation parameters.
@@ -27,9 +29,10 @@ class NativeWindow(MarshalByRefObject,IWin32Window):
 
    cp: A System.Windows.Forms.CreateParams that specifies the creation parameters for this window.
   """
-  pass
- def DefWndProc(self,m):
-  """
+        pass
+
+    def DefWndProc(self, m):
+        """
   DefWndProc(self: NativeWindow,m: Message) -> Message
 
   
@@ -40,17 +43,19 @@ class NativeWindow(MarshalByRefObject,IWin32Window):
 
    m: The message that is currently being processed.
   """
-  pass
- def DestroyHandle(self):
-  """
+        pass
+
+    def DestroyHandle(self):
+        """
   DestroyHandle(self: NativeWindow)
 
    Destroys the window and its handle.
   """
-  pass
- @staticmethod
- def FromHandle(handle):
-  """
+        pass
+
+    @staticmethod
+    def FromHandle(handle):
+        """
   FromHandle(handle: IntPtr) -> NativeWindow
 
   
@@ -65,9 +70,10 @@ class NativeWindow(MarshalByRefObject,IWin32Window):
 
     null when the handle does not have an associated window.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -98,16 +104,18 @@ class NativeWindow(MarshalByRefObject,IWin32Window):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def OnHandleChange(self,*args):
-  """
+        pass
+
+    def OnHandleChange(self, *args):
+        """
   OnHandleChange(self: NativeWindow)
 
    Specifies a notification method that is called when the handle for a window is changed.
   """
-  pass
- def OnThreadException(self,*args):
-  """
+        pass
+
+    def OnThreadException(self, *args):
+        """
   OnThreadException(self: NativeWindow,e: Exception)
 
    When overridden in a derived class,manages an unhandled thread exception.
@@ -116,16 +124,18 @@ class NativeWindow(MarshalByRefObject,IWin32Window):
 
    e: An System.Exception that specifies the unhandled thread exception.
   """
-  pass
- def ReleaseHandle(self):
-  """
+        pass
+
+    def ReleaseHandle(self):
+        """
   ReleaseHandle(self: NativeWindow)
 
    Releases the handle associated with this window.
   """
-  pass
- def WndProc(self,*args):
-  """
+        pass
+
+    def WndProc(self, *args):
+        """
   WndProc(self: NativeWindow,m: Message) -> Message
 
   
@@ -136,12 +146,14 @@ class NativeWindow(MarshalByRefObject,IWin32Window):
 
    m: A System.Windows.Forms.Message that is associated with the current Windows message.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Handle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the handle for this window.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Handle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the handle for this window.
 
 
 
@@ -150,5 +162,3 @@ Get: Handle(self: NativeWindow) -> IntPtr
 
 
 """
-
-

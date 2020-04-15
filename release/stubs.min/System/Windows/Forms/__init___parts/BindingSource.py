@@ -1,5 +1,19 @@
-class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingList,IList,ICollection,IEnumerable,ITypedList,ICancelAddNew,ISupportInitializeNotification,ISupportInitialize,ICurrencyManagerProvider):
- """
+class BindingSource(
+    Component,
+    IComponent,
+    IDisposable,
+    IBindingListView,
+    IBindingList,
+    IList,
+    ICollection,
+    IEnumerable,
+    ITypedList,
+    ICancelAddNew,
+    ISupportInitializeNotification,
+    ISupportInitialize,
+    ICurrencyManagerProvider,
+):
+    """
  Encapsulates the data source for a form.
 
  
@@ -10,8 +24,9 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
  BindingSource(container: IContainer)
  """
- def Add(self,value):
-  """
+
+    def Add(self, value):
+        """
   Add(self: BindingSource,value: object) -> int
 
   
@@ -26,9 +41,10 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
     System.Windows.Forms.BindingSource.List property.
   """
-  pass
- def AddNew(self):
-  """
+        pass
+
+    def AddNew(self):
+        """
   AddNew(self: BindingSource) -> object
 
   
@@ -37,9 +53,10 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
    Returns: The System.Object that was created and added to the list.
   """
-  pass
- def ApplySort(self,*__args):
-  """
+        pass
+
+    def ApplySort(self, *__args):
+        """
   ApplySort(self: BindingSource,sorts: ListSortDescriptionCollection)
 
    Sorts the data source with the specified sort descriptions.
@@ -66,23 +83,26 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
    sort: A System.ComponentModel.ListSortDirection indicating how the list should be sorted.
   """
-  pass
- def CancelEdit(self):
-  """
+        pass
+
+    def CancelEdit(self):
+        """
   CancelEdit(self: BindingSource)
 
    Cancels the current edit operation.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: BindingSource)
 
    Removes all elements from the list.
   """
-  pass
- def Contains(self,value):
-  """
+        pass
+
+    def Contains(self, value):
+        """
   Contains(self: BindingSource,value: object) -> bool
 
   
@@ -101,9 +121,10 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
     false.
   """
-  pass
- def CopyTo(self,arr,index):
-  """
+        pass
+
+    def CopyTo(self, arr, index):
+        """
   CopyTo(self: BindingSource,arr: Array,index: int)
 
    Copies the contents of the System.Windows.Forms.BindingSource.List to the specified array,
@@ -118,9 +139,10 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
    index: The index in the destination array at which to start the copy operation.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: BindingSource,disposing: bool)
 
    Releases the unmanaged resources used by the System.Windows.Forms.BindingSource and optionally 
@@ -133,16 +155,18 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def EndEdit(self):
-  """
+        pass
+
+    def EndEdit(self):
+        """
   EndEdit(self: BindingSource)
 
    Applies pending changes to the underlying data source.
   """
-  pass
- def Find(self,*__args):
-  """
+        pass
+
+    def Find(self, *__args):
+        """
   Find(self: BindingSource,prop: PropertyDescriptor,key: object) -> int
 
   
@@ -175,9 +199,10 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
    Returns: The zero-based index of the item with the specified property name and value.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: BindingSource) -> IEnumerator
 
   
@@ -186,9 +211,10 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
    Returns: An System.Collections.IEnumerator for the System.Windows.Forms.BindingSource.List.
   """
-  pass
- def GetItemProperties(self,listAccessors):
-  """
+        pass
+
+    def GetItemProperties(self, listAccessors):
+        """
   GetItemProperties(self: BindingSource,listAccessors: Array[PropertyDescriptor]) -> PropertyDescriptorCollection
 
   
@@ -207,9 +233,10 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
     this list type used to bind data.
   """
-  pass
- def GetListName(self,listAccessors):
-  """
+        pass
+
+    def GetListName(self, listAccessors):
+        """
   GetListName(self: BindingSource,listAccessors: Array[PropertyDescriptor]) -> str
 
   
@@ -222,9 +249,10 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
    Returns: The name of the list supplying the data for binding.
   """
-  pass
- def GetRelatedCurrencyManager(self,dataMember):
-  """
+        pass
+
+    def GetRelatedCurrencyManager(self, dataMember):
+        """
   GetRelatedCurrencyManager(self: BindingSource,dataMember: str) -> CurrencyManager
 
   
@@ -237,9 +265,10 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
    Returns: The related System.Windows.Forms.CurrencyManager for the specified data member.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -258,9 +287,10 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def IndexOf(self,value):
-  """
+        pass
+
+    def IndexOf(self, value):
+        """
   IndexOf(self: BindingSource,value: object) -> int
 
   
@@ -283,9 +313,10 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
     not in the list.
   """
-  pass
- def Insert(self,index,value):
-  """
+        pass
+
+    def Insert(self, index, value):
+        """
   Insert(self: BindingSource,index: int,value: object)
 
    Inserts an item into the list at the specified index.
@@ -296,9 +327,10 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
    value: The System.Object to insert. The value can be null.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -329,37 +361,42 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def MoveFirst(self):
-  """
+        pass
+
+    def MoveFirst(self):
+        """
   MoveFirst(self: BindingSource)
 
    Moves to the first item in the list.
   """
-  pass
- def MoveLast(self):
-  """
+        pass
+
+    def MoveLast(self):
+        """
   MoveLast(self: BindingSource)
 
    Moves to the last item in the list.
   """
-  pass
- def MoveNext(self):
-  """
+        pass
+
+    def MoveNext(self):
+        """
   MoveNext(self: BindingSource)
 
    Moves to the next item in the list.
   """
-  pass
- def MovePrevious(self):
-  """
+        pass
+
+    def MovePrevious(self):
+        """
   MovePrevious(self: BindingSource)
 
    Moves to the previous item in the list.
   """
-  pass
- def OnAddingNew(self,*args):
-  """
+        pass
+
+    def OnAddingNew(self, *args):
+        """
   OnAddingNew(self: BindingSource,e: AddingNewEventArgs)
 
    Raises the System.Windows.Forms.BindingSource.AddingNew event.
@@ -368,9 +405,10 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBindingComplete(self,*args):
-  """
+        pass
+
+    def OnBindingComplete(self, *args):
+        """
   OnBindingComplete(self: BindingSource,e: BindingCompleteEventArgs)
 
    Raises the System.Windows.Forms.BindingSource.BindingComplete event.
@@ -379,9 +417,10 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
    e: A System.Windows.Forms.BindingCompleteEventArgs  that contains the event data.
   """
-  pass
- def OnCurrentChanged(self,*args):
-  """
+        pass
+
+    def OnCurrentChanged(self, *args):
+        """
   OnCurrentChanged(self: BindingSource,e: EventArgs)
 
    Raises the System.Windows.Forms.BindingSource.CurrentChanged event.
@@ -390,9 +429,10 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnCurrentItemChanged(self,*args):
-  """
+        pass
+
+    def OnCurrentItemChanged(self, *args):
+        """
   OnCurrentItemChanged(self: BindingSource,e: EventArgs)
 
    Raises the System.Windows.Forms.BindingSource.CurrentItemChanged event.
@@ -401,9 +441,10 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDataError(self,*args):
-  """
+        pass
+
+    def OnDataError(self, *args):
+        """
   OnDataError(self: BindingSource,e: BindingManagerDataErrorEventArgs)
 
    Raises the System.Windows.Forms.BindingSource.DataError event.
@@ -412,9 +453,10 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
    e: A System.Windows.Forms.BindingManagerDataErrorEventArgs that contains the event data.
   """
-  pass
- def OnDataMemberChanged(self,*args):
-  """
+        pass
+
+    def OnDataMemberChanged(self, *args):
+        """
   OnDataMemberChanged(self: BindingSource,e: EventArgs)
 
    Raises the System.Windows.Forms.BindingSource.DataMemberChanged event.
@@ -423,9 +465,10 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDataSourceChanged(self,*args):
-  """
+        pass
+
+    def OnDataSourceChanged(self, *args):
+        """
   OnDataSourceChanged(self: BindingSource,e: EventArgs)
 
    Raises the System.Windows.Forms.BindingSource.DataSourceChanged event.
@@ -434,9 +477,10 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnListChanged(self,*args):
-  """
+        pass
+
+    def OnListChanged(self, *args):
+        """
   OnListChanged(self: BindingSource,e: ListChangedEventArgs)
 
    Raises the System.Windows.Forms.BindingSource.ListChanged event.
@@ -445,9 +489,10 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnPositionChanged(self,*args):
-  """
+        pass
+
+    def OnPositionChanged(self, *args):
+        """
   OnPositionChanged(self: BindingSource,e: EventArgs)
 
    Raises the System.Windows.Forms.BindingSource.PositionChanged event.
@@ -456,9 +501,10 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
    e: A System.ComponentModel.ListChangedEventArgs that contains the event data.
   """
-  pass
- def Remove(self,value):
-  """
+        pass
+
+    def Remove(self, value):
+        """
   Remove(self: BindingSource,value: object)
 
    Removes the specified item from the list.
@@ -469,9 +515,10 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
     System.Windows.Forms.BindingSource.List property.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: BindingSource,index: int)
 
    Removes the item at the specified index in the list.
@@ -480,37 +527,42 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
    index: The zero-based index of the item to remove.
   """
-  pass
- def RemoveCurrent(self):
-  """
+        pass
+
+    def RemoveCurrent(self):
+        """
   RemoveCurrent(self: BindingSource)
 
    Removes the current item from the list.
   """
-  pass
- def RemoveFilter(self):
-  """
+        pass
+
+    def RemoveFilter(self):
+        """
   RemoveFilter(self: BindingSource)
 
    Removes the filter associated with the System.Windows.Forms.BindingSource.
   """
-  pass
- def RemoveSort(self):
-  """
+        pass
+
+    def RemoveSort(self):
+        """
   RemoveSort(self: BindingSource)
 
    Removes the sort associated with the System.Windows.Forms.BindingSource.
   """
-  pass
- def ResetAllowNew(self):
-  """
+        pass
+
+    def ResetAllowNew(self):
+        """
   ResetAllowNew(self: BindingSource)
 
    Reinitializes the System.Windows.Forms.BindingSource.AllowNew property.
   """
-  pass
- def ResetBindings(self,metadataChanged):
-  """
+        pass
+
+    def ResetBindings(self, metadataChanged):
+        """
   ResetBindings(self: BindingSource,metadataChanged: bool)
 
    Causes a control bound to the System.Windows.Forms.BindingSource to reread all the items in the 
@@ -523,18 +575,20 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
    metadataChanged: true if the data schema has changed; false if only values have changed.
   """
-  pass
- def ResetCurrentItem(self):
-  """
+        pass
+
+    def ResetCurrentItem(self):
+        """
   ResetCurrentItem(self: BindingSource)
 
    Causes a control bound to the System.Windows.Forms.BindingSource to reread the currently 
 
     selected item and refresh its displayed value.
   """
-  pass
- def ResetItem(self,itemIndex):
-  """
+        pass
+
+    def ResetItem(self, itemIndex):
+        """
   ResetItem(self: BindingSource,itemIndex: int)
 
    Causes a control bound to the System.Windows.Forms.BindingSource to reread the item at the 
@@ -547,26 +601,30 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
    itemIndex: The zero-based index of the item that has changed.
   """
-  pass
- def ResumeBinding(self):
-  """
+        pass
+
+    def ResumeBinding(self):
+        """
   ResumeBinding(self: BindingSource)
 
    Resumes data binding.
   """
-  pass
- def SuspendBinding(self):
-  """
+        pass
+
+    def SuspendBinding(self):
+        """
   SuspendBinding(self: BindingSource)
 
    Suspends data binding to prevent changes from updating the bound data source.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IList,value: object) -> bool
 
   
@@ -579,52 +637,62 @@ class BindingSource(Component,IComponent,IDisposable,IBindingListView,IBindingLi
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,dataSource: object,dataMember: str)
 
   __new__(cls: type,container: IContainer)
   """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- def __str__(self,*args):
-  pass
- AllowEdit=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether items in the underlying list can be edited.
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AllowEdit = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether items in the underlying list can be edited.
 
 
 
@@ -634,8 +702,8 @@ Get: AllowEdit(self: BindingSource) -> bool
 
 """
 
- AllowNew=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the System.Windows.Forms.BindingSource.AddNew method can be used to add items to the list.
+    AllowNew = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the System.Windows.Forms.BindingSource.AddNew method can be used to add items to the list.
 
 
 
@@ -647,8 +715,10 @@ Set: AllowNew(self: BindingSource)=value
 
 """
 
- AllowRemove=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether items can be removed from the underlying list.
+    AllowRemove = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether items can be removed from the underlying list.
 
 
 
@@ -658,15 +728,17 @@ Get: AllowRemove(self: BindingSource) -> bool
 
 """
 
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the total number of items in the underlying list,taking the current System.Windows.Forms.BindingSource.Filter value into consideration.
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the total number of items in the underlying list,taking the current System.Windows.Forms.BindingSource.Filter value into consideration.
 
 
 
@@ -676,8 +748,10 @@ Get: Count(self: BindingSource) -> int
 
 """
 
- CurrencyManager=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the currency manager associated with this System.Windows.Forms.BindingSource.
+    CurrencyManager = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the currency manager associated with this System.Windows.Forms.BindingSource.
 
 
 
@@ -687,8 +761,8 @@ Get: CurrencyManager(self: BindingSource) -> CurrencyManager
 
 """
 
- Current=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the current item in the list.
+    Current = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the current item in the list.
 
 
 
@@ -698,8 +772,10 @@ Get: Current(self: BindingSource) -> object
 
 """
 
- DataMember=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the specific list in the data source to which the connector currently binds to.
+    DataMember = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the specific list in the data source to which the connector currently binds to.
 
 
 
@@ -711,8 +787,10 @@ Set: DataMember(self: BindingSource)=value
 
 """
 
- DataSource=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the data source that the connector binds to.
+    DataSource = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the data source that the connector binds to.
 
 
 
@@ -724,22 +802,24 @@ Set: DataSource(self: BindingSource)=value
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- Filter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the expression used to filter which rows are viewed.
+    Filter = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the expression used to filter which rows are viewed.
 
 
 
@@ -751,8 +831,10 @@ Set: Filter(self: BindingSource)=value
 
 """
 
- IsBindingSuspended=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the list binding is suspended.
+    IsBindingSuspended = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the list binding is suspended.
 
 
 
@@ -762,8 +844,10 @@ Get: IsBindingSuspended(self: BindingSource) -> bool
 
 """
 
- IsFixedSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the underlying list has a fixed size.
+    IsFixedSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the underlying list has a fixed size.
 
 
 
@@ -773,8 +857,10 @@ Get: IsFixedSize(self: BindingSource) -> bool
 
 """
 
- IsReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the underlying list is read-only.
+    IsReadOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the underlying list is read-only.
 
 
 
@@ -784,8 +870,8 @@ Get: IsReadOnly(self: BindingSource) -> bool
 
 """
 
- IsSorted=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the items in the underlying list are sorted.
+    IsSorted = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the items in the underlying list are sorted.
 
 
 
@@ -795,8 +881,10 @@ Get: IsSorted(self: BindingSource) -> bool
 
 """
 
- IsSynchronized=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether access to the collection is synchronized (thread safe).
+    IsSynchronized = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether access to the collection is synchronized (thread safe).
 
 
 
@@ -806,8 +894,8 @@ Get: IsSynchronized(self: BindingSource) -> bool
 
 """
 
- List=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list that the connector is bound to.
+    List = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list that the connector is bound to.
 
 
 
@@ -817,8 +905,8 @@ Get: List(self: BindingSource) -> IList
 
 """
 
- Position=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the index of the current item in the underlying list.
+    Position = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the index of the current item in the underlying list.
 
 
 
@@ -830,8 +918,10 @@ Set: Position(self: BindingSource)=value
 
 """
 
- RaiseListChangedEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether System.Windows.Forms.BindingSource.ListChanged events should be raised.
+    RaiseListChangedEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether System.Windows.Forms.BindingSource.ListChanged events should be raised.
 
 
 
@@ -843,8 +933,8 @@ Set: RaiseListChangedEvents(self: BindingSource)=value
 
 """
 
- Sort=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the column names used for sorting,and the sort order for viewing the rows in the data source.
+    Sort = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the column names used for sorting,and the sort order for viewing the rows in the data source.
 
 
 
@@ -856,8 +946,10 @@ Set: Sort(self: BindingSource)=value
 
 """
 
- SortDescriptions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of sort descriptions applied to the data source.
+    SortDescriptions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the collection of sort descriptions applied to the data source.
 
 
 
@@ -867,8 +959,10 @@ Get: SortDescriptions(self: BindingSource) -> ListSortDescriptionCollection
 
 """
 
- SortDirection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the direction the items in the list are sorted.
+    SortDirection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the direction the items in the list are sorted.
 
 
 
@@ -878,8 +972,10 @@ Get: SortDirection(self: BindingSource) -> ListSortDirection
 
 """
 
- SortProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.ComponentModel.PropertyDescriptor that is being used for sorting the list.
+    SortProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.ComponentModel.PropertyDescriptor that is being used for sorting the list.
 
 
 
@@ -889,8 +985,10 @@ Get: SortProperty(self: BindingSource) -> PropertyDescriptor
 
 """
 
- SupportsAdvancedSorting=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the data source supports multi-column sorting.
+    SupportsAdvancedSorting = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the data source supports multi-column sorting.
 
 
 
@@ -900,8 +998,10 @@ Get: SupportsAdvancedSorting(self: BindingSource) -> bool
 
 """
 
- SupportsChangeNotification=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the data source supports change notification.
+    SupportsChangeNotification = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the data source supports change notification.
 
 
 
@@ -911,8 +1011,10 @@ Get: SupportsChangeNotification(self: BindingSource) -> bool
 
 """
 
- SupportsFiltering=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the data source supports filtering.
+    SupportsFiltering = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the data source supports filtering.
 
 
 
@@ -922,8 +1024,10 @@ Get: SupportsFiltering(self: BindingSource) -> bool
 
 """
 
- SupportsSearching=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the data source supports searching with the System.Windows.Forms.BindingSource.Find(System.ComponentModel.PropertyDescriptor,System.Object) method.
+    SupportsSearching = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the data source supports searching with the System.Windows.Forms.BindingSource.Find(System.ComponentModel.PropertyDescriptor,System.Object) method.
 
 
 
@@ -933,8 +1037,10 @@ Get: SupportsSearching(self: BindingSource) -> bool
 
 """
 
- SupportsSorting=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the data source supports sorting.
+    SupportsSorting = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the data source supports sorting.
 
 
 
@@ -944,8 +1050,8 @@ Get: SupportsSorting(self: BindingSource) -> bool
 
 """
 
- SyncRoot=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an object that can be used to synchronize access to the underlying list.
+    SyncRoot = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an object that can be used to synchronize access to the underlying list.
 
 
 
@@ -955,14 +1061,12 @@ Get: SyncRoot(self: BindingSource) -> object
 
 """
 
-
- AddingNew=None
- BindingComplete=None
- CurrentChanged=None
- CurrentItemChanged=None
- DataError=None
- DataMemberChanged=None
- DataSourceChanged=None
- ListChanged=None
- PositionChanged=None
-
+    AddingNew = None
+    BindingComplete = None
+    CurrentChanged = None
+    CurrentItemChanged = None
+    DataError = None
+    DataMemberChanged = None
+    DataSourceChanged = None
+    ListChanged = None
+    PositionChanged = None

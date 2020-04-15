@@ -1,12 +1,13 @@
 class FacetingUtils(object):
- """
+    """
  This class is used to convertTrianglesToQuads a triangulated structure into a structure in which some of the triangles
 
     have been consolidated into quadrilaterals.
  """
- @staticmethod
- def ConvertTrianglesToQuads(triangulation):
-  """
+
+    @staticmethod
+    def ConvertTrianglesToQuads(triangulation):
+        """
   ConvertTrianglesToQuads(triangulation: TriangulationInterface) -> IList[TriOrQuadFacet]
 
   
@@ -21,8 +22,8 @@ class FacetingUtils(object):
 
     triangulated object.
   """
-  pass
- __all__=[
-  'ConvertTrianglesToQuads',
- ]
+        pass
 
+    __all__ = [
+        "ConvertTrianglesToQuads",
+    ]

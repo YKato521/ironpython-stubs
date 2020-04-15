@@ -1,16 +1,18 @@
-class FilteredWorksetCollector(object,IEnumerable[Workset],IEnumerable,IDisposable):
- """
+class FilteredWorksetCollector(object, IEnumerable[Workset], IEnumerable, IDisposable):
+    """
  This class is used to search,filter and iterate through a set of worksets.
 
  
 
  FilteredWorksetCollector(document: Document)
  """
- def Dispose(self):
-  """ Dispose(self: FilteredWorksetCollector) """
-  pass
- def FirstWorkset(self):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: FilteredWorksetCollector) """
+        pass
+
+    def FirstWorkset(self):
+        """
   FirstWorkset(self: FilteredWorksetCollector) -> Workset
 
   
@@ -19,9 +21,10 @@ class FilteredWorksetCollector(object,IEnumerable[Workset],IEnumerable,IDisposab
 
    Returns: The first workset.
   """
-  pass
- def FirstWorksetId(self):
-  """
+        pass
+
+    def FirstWorksetId(self):
+        """
   FirstWorksetId(self: FilteredWorksetCollector) -> WorksetId
 
   
@@ -30,9 +33,10 @@ class FilteredWorksetCollector(object,IEnumerable[Workset],IEnumerable,IDisposab
 
    Returns: The first workset id.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: FilteredWorksetCollector) -> IEnumerator[Workset]
 
   
@@ -41,27 +45,30 @@ class FilteredWorksetCollector(object,IEnumerable[Workset],IEnumerable,IDisposab
 
    Returns: An IEnumerator object that can be used to iterate through the collection.
   """
-  pass
- def GetWorksetIdIterator(self):
-  """
+        pass
+
+    def GetWorksetIdIterator(self):
+        """
   GetWorksetIdIterator(self: FilteredWorksetCollector) -> FilteredWorksetIdIterator
 
   
 
    Returns a FilteredWorksetIdIterator to the worksets passing the current filter.
   """
-  pass
- def GetWorksetIterator(self):
-  """
+        pass
+
+    def GetWorksetIterator(self):
+        """
   GetWorksetIterator(self: FilteredWorksetCollector) -> FilteredWorksetIterator
 
   
 
    Returns a FilteredWorksetIterator to the worksets passing the current filter.
   """
-  pass
- def OfKind(self,worksetKind):
-  """
+        pass
+
+    def OfKind(self, worksetKind):
+        """
   OfKind(self: FilteredWorksetCollector,worksetKind: WorksetKind) -> FilteredWorksetCollector
 
   
@@ -78,12 +85,14 @@ class FilteredWorksetCollector(object,IEnumerable[Workset],IEnumerable,IDisposab
 
      so you can chain multiple calls together in one line.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: FilteredWorksetCollector,disposing: bool) """
-  pass
- def ToWorksetIds(self):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: FilteredWorksetCollector,disposing: bool) """
+        pass
+
+    def ToWorksetIds(self):
+        """
   ToWorksetIds(self: FilteredWorksetCollector) -> ICollection[WorksetId]
 
   
@@ -92,9 +101,10 @@ class FilteredWorksetCollector(object,IEnumerable[Workset],IEnumerable,IDisposab
 
    Returns: The complete set of workset ids.
   """
-  pass
- def ToWorksets(self):
-  """
+        pass
+
+    def ToWorksets(self):
+        """
   ToWorksets(self: FilteredWorksetCollector) -> IList[Workset]
 
   
@@ -103,9 +113,10 @@ class FilteredWorksetCollector(object,IEnumerable[Workset],IEnumerable,IDisposab
 
    Returns: The complete array of worksets.
   """
-  pass
- def WherePasses(self,filter):
-  """
+        pass
+
+    def WherePasses(self, filter):
+        """
   WherePasses(self: FilteredWorksetCollector,filter: WorksetFilter) -> FilteredWorksetCollector
 
   
@@ -122,31 +133,41 @@ class FilteredWorksetCollector(object,IEnumerable[Workset],IEnumerable,IDisposab
 
      so you can chain multiple calls together in one line.
   """
-  pass
- def __contains__(self,*args):
-  """ __contains__[Workset](enumerable: IEnumerable[Workset],value: Workset) -> bool """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- @staticmethod
- def __new__(self,document):
-  """ __new__(cls: type,document: Document) """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[Workset](enumerable: IEnumerable[Workset],value: Workset) -> bool """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    @staticmethod
+    def __new__(self, document):
+        """ __new__(cls: type,document: Document) """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -155,5 +176,3 @@ Get: IsValidObject(self: FilteredWorksetCollector) -> bool
 
 
 """
-
-

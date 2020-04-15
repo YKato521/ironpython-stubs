@@ -1,17 +1,19 @@
 class SpaceMorph(object):
- """ Represents a spacial,Euclidean morph. """
- @staticmethod
- def IsMorphable(geometry):
-  """
+    """ Represents a spacial,Euclidean morph. """
+
+    @staticmethod
+    def IsMorphable(geometry):
+        """
   IsMorphable(geometry: GeometryBase) -> bool
 
   
 
    true if the geometry can be morphed by calling SpaceMorph.Morph(geometry)
   """
-  pass
- def Morph(self,geometry):
-  """
+        pass
+
+    def Morph(self, geometry):
+        """
   Morph(self: SpaceMorph,geometry: GeometryBase) -> bool
 
   
@@ -24,9 +26,10 @@ class SpaceMorph(object):
 
    Returns: true on success,false on failure.
   """
-  pass
- def MorphPoint(self,point):
-  """
+        pass
+
+    def MorphPoint(self, point):
+        """
   MorphPoint(self: SpaceMorph,point: Point3d) -> Point3d
 
   
@@ -39,9 +42,12 @@ class SpaceMorph(object):
 
    Returns: Resulting morphed point.
   """
-  pass
- PreserveStructure=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """true if the morph should be done in a way that preserves the structure of the geometry.
+        pass
+
+    PreserveStructure = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """true if the morph should be done in a way that preserves the structure of the geometry.
 
    In particular,for NURBS objects,true means that only the control points are moved.
 
@@ -59,8 +65,10 @@ Set: PreserveStructure(self: SpaceMorph)=value
 
 """
 
- QuickPreview=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """true if the morph should be done as quickly as possible because the result
+    QuickPreview = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """true if the morph should be done as quickly as possible because the result
 
    is being used for some type of dynamic preview. If QuickPreview is true,
 
@@ -80,8 +88,8 @@ Set: QuickPreview(self: SpaceMorph)=value
 
 """
 
- Tolerance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The desired accuracy of the morph. This value is primarily used for deforming
+    Tolerance = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The desired accuracy of the morph. This value is primarily used for deforming
 
    surfaces and breps. The default is 0.0 and any value <= 0.0 is ignored by
 
@@ -98,5 +106,3 @@ Get: Tolerance(self: SpaceMorph) -> float
 Set: Tolerance(self: SpaceMorph)=value
 
 """
-
-

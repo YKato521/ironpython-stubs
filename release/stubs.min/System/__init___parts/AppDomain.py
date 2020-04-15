@@ -1,7 +1,8 @@
-class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
- """ Represents an application domain,which is an isolated environment where applications execute. This class cannot be inherited. """
- def AppendPrivatePath(self,path):
-  """
+class AppDomain(MarshalByRefObject, _AppDomain, IEvidenceFactory):
+    """ Represents an application domain,which is an isolated environment where applications execute. This class cannot be inherited. """
+
+    def AppendPrivatePath(self, path):
+        """
   AppendPrivatePath(self: AppDomain,path: str)
 
    Appends the specified directory name to the private path list.
@@ -10,9 +11,10 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
    path: The name of the directory to be appended to the private path.
   """
-  pass
- def ApplyPolicy(self,assemblyName):
-  """
+        pass
+
+    def ApplyPolicy(self, assemblyName):
+        """
   ApplyPolicy(self: AppDomain,assemblyName: str) -> str
 
   
@@ -29,23 +31,26 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
    Returns: A string containing the assembly display name after policy has been applied.
   """
-  pass
- def ClearPrivatePath(self):
-  """
+        pass
+
+    def ClearPrivatePath(self):
+        """
   ClearPrivatePath(self: AppDomain)
 
    Resets the path that specifies the location of private assemblies to the empty string ("").
   """
-  pass
- def ClearShadowCopyPath(self):
-  """
+        pass
+
+    def ClearShadowCopyPath(self):
+        """
   ClearShadowCopyPath(self: AppDomain)
 
    Resets the list of directories containing shadow copied assemblies to the empty string ("").
   """
-  pass
- def CreateComInstanceFrom(self,*__args):
-  """
+        pass
+
+    def CreateComInstanceFrom(self, *__args):
+        """
   CreateComInstanceFrom(self: AppDomain,assemblyFile: str,typeName: str,hashValue: Array[Byte],hashAlgorithm: AssemblyHashAlgorithm) -> ObjectHandle
 
   
@@ -92,10 +97,11 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
     to be unwrapped to access the real object.
   """
-  pass
- @staticmethod
- def CreateDomain(friendlyName,securityInfo=None,*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateDomain(friendlyName, securityInfo=None, *__args):
+        """
   CreateDomain(friendlyName: str,securityInfo: Evidence,info: AppDomainSetup) -> AppDomain
 
   
@@ -296,9 +302,10 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
    Returns: The newly created application domain.
   """
-  pass
- def CreateInstance(self,assemblyName,typeName,*__args):
-  """
+        pass
+
+    def CreateInstance(self, assemblyName, typeName, *__args):
+        """
   CreateInstance(self: AppDomain,assemblyName: str,typeName: str,ignoreCase: bool,bindingAttr: BindingFlags,binder: Binder,args: Array[object],culture: CultureInfo,activationAttributes: Array[object],securityAttributes: Evidence) -> ObjectHandle
 
   
@@ -497,9 +504,10 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
     to be unwrapped to access the real object.
   """
-  pass
- def CreateInstanceAndUnwrap(self,assemblyName,typeName,*__args):
-  """
+        pass
+
+    def CreateInstanceAndUnwrap(self, assemblyName, typeName, *__args):
+        """
   CreateInstanceAndUnwrap(self: AppDomain,assemblyName: str,typeName: str,ignoreCase: bool,bindingAttr: BindingFlags,binder: Binder,args: Array[object],culture: CultureInfo,activationAttributes: Array[object],securityAttributes: Evidence) -> object
 
   
@@ -684,9 +692,10 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
    Returns: An instance of the object specified by typeName.
   """
-  pass
- def CreateInstanceFrom(self,assemblyFile,typeName,*__args):
-  """
+        pass
+
+    def CreateInstanceFrom(self, assemblyFile, typeName, *__args):
+        """
   CreateInstanceFrom(self: AppDomain,assemblyFile: str,typeName: str,ignoreCase: bool,bindingAttr: BindingFlags,binder: Binder,args: Array[object],culture: CultureInfo,activationAttributes: Array[object],securityAttributes: Evidence) -> ObjectHandle
 
   
@@ -893,9 +902,10 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
     value needs to be unwrapped to access the real object.
   """
-  pass
- def CreateInstanceFromAndUnwrap(self,*__args):
-  """
+        pass
+
+    def CreateInstanceFromAndUnwrap(self, *__args):
+        """
   CreateInstanceFromAndUnwrap(self: AppDomain,assemblyName: str,typeName: str,ignoreCase: bool,bindingAttr: BindingFlags,binder: Binder,args: Array[object],culture: CultureInfo,activationAttributes: Array[object],securityAttributes: Evidence) -> object
 
   
@@ -1072,9 +1082,10 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
    Returns: The requested object,or null if typeName is not found.
   """
-  pass
- def DefineDynamicAssembly(self,name,access,*__args):
-  """
+        pass
+
+    def DefineDynamicAssembly(self, name, access, *__args):
+        """
   DefineDynamicAssembly(self: AppDomain,name: AssemblyName,access: AssemblyBuilderAccess,dir: str,evidence: Evidence,requiredPermissions: PermissionSet,optionalPermissions: PermissionSet,refusedPermissions: PermissionSet) -> AssemblyBuilder
 
   
@@ -1325,9 +1336,10 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
    Returns: A dynamic assembly with the specified name and features.
   """
-  pass
- def DoCallBack(self,callBackDelegate):
-  """
+        pass
+
+    def DoCallBack(self, callBackDelegate):
+        """
   DoCallBack(self: AppDomain,callBackDelegate: CrossAppDomainDelegate)
 
    Executes the code in another application domain that is identified by the specified delegate.
@@ -1336,9 +1348,10 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
    callBackDelegate: A delegate that specifies a method to call.
   """
-  pass
- def ExecuteAssembly(self,assemblyFile,*__args):
-  """
+        pass
+
+    def ExecuteAssembly(self, assemblyFile, *__args):
+        """
   ExecuteAssembly(self: AppDomain,assemblyFile: str,args: Array[str]) -> int
 
   
@@ -1445,9 +1458,10 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
    Returns: The value returned by the entry point of the assembly.
   """
-  pass
- def ExecuteAssemblyByName(self,assemblyName,*__args):
-  """
+        pass
+
+    def ExecuteAssemblyByName(self, assemblyName, *__args):
+        """
   ExecuteAssemblyByName(self: AppDomain,assemblyName: str,*args: Array[str]) -> int
 
   
@@ -1538,9 +1552,10 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
    Returns: The value returned by the entry point of the assembly.
   """
-  pass
- def GetAssemblies(self):
-  """
+        pass
+
+    def GetAssemblies(self):
+        """
   GetAssemblies(self: AppDomain) -> Array[Assembly]
 
   
@@ -1549,10 +1564,11 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
    Returns: An array of assemblies in this application domain.
   """
-  pass
- @staticmethod
- def GetCurrentThreadId():
-  """
+        pass
+
+    @staticmethod
+    def GetCurrentThreadId():
+        """
   GetCurrentThreadId() -> int
 
   
@@ -1561,9 +1577,10 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
    Returns: A 32-bit signed integer that is the identifier of the current thread.
   """
-  pass
- def GetData(self,name):
-  """
+        pass
+
+    def GetData(self, name):
+        """
   GetData(self: AppDomain,name: str) -> object
 
   
@@ -1580,9 +1597,10 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
    Returns: The value of the name property,or null if the property does not exist.
   """
-  pass
- def GetType(self):
-  """
+        pass
+
+    def GetType(self):
+        """
   GetType(self: AppDomain) -> Type
 
   
@@ -1591,9 +1609,10 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
    Returns: The type of the current instance.
   """
-  pass
- def InitializeLifetimeService(self):
-  """
+        pass
+
+    def InitializeLifetimeService(self):
+        """
   InitializeLifetimeService(self: AppDomain) -> object
 
   
@@ -1602,9 +1621,10 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
    Returns: Always null.
   """
-  pass
- def IsCompatibilitySwitchSet(self,value):
-  """
+        pass
+
+    def IsCompatibilitySwitchSet(self, value):
+        """
   IsCompatibilitySwitchSet(self: AppDomain,value: str) -> Nullable[bool]
 
   
@@ -1623,9 +1643,10 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
     Boolean value that indicates whether the compatibility switch that is specified by value is set.
   """
-  pass
- def IsDefaultAppDomain(self):
-  """
+        pass
+
+    def IsDefaultAppDomain(self):
+        """
   IsDefaultAppDomain(self: AppDomain) -> bool
 
   
@@ -1640,9 +1661,10 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
     process; otherwise,false.
   """
-  pass
- def IsFinalizingForUnload(self):
-  """
+        pass
+
+    def IsFinalizingForUnload(self):
+        """
   IsFinalizingForUnload(self: AppDomain) -> bool
 
   
@@ -1657,9 +1679,10 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
     invoking finalizers; otherwise,false.
   """
-  pass
- def Load(self,*__args):
-  """
+        pass
+
+    def Load(self, *__args):
+        """
   Load(self: AppDomain,rawAssembly: Array[Byte],rawSymbolStore: Array[Byte],securityEvidence: Evidence) -> Assembly
 
   
@@ -1770,9 +1793,10 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
    Returns: The loaded assembly.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -1803,9 +1827,10 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def ReflectionOnlyGetAssemblies(self):
-  """
+        pass
+
+    def ReflectionOnlyGetAssemblies(self):
+        """
   ReflectionOnlyGetAssemblies(self: AppDomain) -> Array[Assembly]
 
   
@@ -1820,9 +1845,10 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
     reflection-only context of the application domain.
   """
-  pass
- def SetAppDomainPolicy(self,domainPolicy):
-  """
+        pass
+
+    def SetAppDomainPolicy(self, domainPolicy):
+        """
   SetAppDomainPolicy(self: AppDomain,domainPolicy: PolicyLevel)
 
    Establishes the security policy level for this application domain.
@@ -1831,9 +1857,10 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
    domainPolicy: The security policy level.
   """
-  pass
- def SetCachePath(self,path):
-  """
+        pass
+
+    def SetCachePath(self, path):
+        """
   SetCachePath(self: AppDomain,path: str)
 
    Establishes the specified directory path as the location where assemblies are shadow copied.
@@ -1842,9 +1869,10 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
    path: The fully qualified path to the shadow copy location.
   """
-  pass
- def SetData(self,name,data,permission=None):
-  """
+        pass
+
+    def SetData(self, name, data, permission=None):
+        """
   SetData(self: AppDomain,name: str,data: object,permission: IPermission)
 
    Assigns the specified value to the specified application domain property,with a specified 
@@ -1871,9 +1899,10 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
    data: The value of the property.
   """
-  pass
- def SetDynamicBase(self,path):
-  """
+        pass
+
+    def SetDynamicBase(self, path):
+        """
   SetDynamicBase(self: AppDomain,path: str)
 
    Establishes the specified directory path as the base directory for subdirectories where 
@@ -1888,9 +1917,10 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
     are stored.
   """
-  pass
- def SetPrincipalPolicy(self,policy):
-  """
+        pass
+
+    def SetPrincipalPolicy(self, policy):
+        """
   SetPrincipalPolicy(self: AppDomain,policy: PrincipalPolicy)
 
    Specifies how principal and identity objects should be attached to a thread if the thread 
@@ -1905,16 +1935,18 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
     principal object to attach to threads.
   """
-  pass
- def SetShadowCopyFiles(self):
-  """
+        pass
+
+    def SetShadowCopyFiles(self):
+        """
   SetShadowCopyFiles(self: AppDomain)
 
    Turns on shadow copying.
   """
-  pass
- def SetShadowCopyPath(self,path):
-  """
+        pass
+
+    def SetShadowCopyPath(self, path):
+        """
   SetShadowCopyPath(self: AppDomain,path: str)
 
    Establishes the specified directory path as the location of assemblies to be shadow copied.
@@ -1923,9 +1955,10 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
    path: A list of directory names,where each name is separated by a semicolon.
   """
-  pass
- def SetThreadPrincipal(self,principal):
-  """
+        pass
+
+    def SetThreadPrincipal(self, principal):
+        """
   SetThreadPrincipal(self: AppDomain,principal: IPrincipal)
 
    Sets the default principal object to be attached to threads if they attempt to bind to a 
@@ -1938,9 +1971,10 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
    principal: The principal object to attach to threads.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: AppDomain) -> str
 
   
@@ -1957,10 +1991,11 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
     "There are no context policies."
   """
-  pass
- @staticmethod
- def Unload(domain):
-  """
+        pass
+
+    @staticmethod
+    def Unload(domain):
+        """
   Unload(domain: AppDomain)
 
    Unloads the specified application domain.
@@ -1969,14 +2004,19 @@ class AppDomain(MarshalByRefObject,_AppDomain,IEvidenceFactory):
 
    domain: An application domain to unload.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- ActivationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the activation context for the current application domain.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    ActivationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the activation context for the current application domain.
 
 
 
@@ -1986,8 +2026,10 @@ Get: ActivationContext(self: AppDomain) -> ActivationContext
 
 """
 
- ApplicationIdentity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the identity of the application in the application domain.
+    ApplicationIdentity = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the identity of the application in the application domain.
 
 
 
@@ -1997,8 +2039,10 @@ Get: ApplicationIdentity(self: AppDomain) -> ApplicationIdentity
 
 """
 
- ApplicationTrust=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets information describing permissions granted to an application and whether the application has a trust level that allows it to run.
+    ApplicationTrust = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets information describing permissions granted to an application and whether the application has a trust level that allows it to run.
 
 
 
@@ -2008,8 +2052,10 @@ Get: ApplicationTrust(self: AppDomain) -> ApplicationTrust
 
 """
 
- BaseDirectory=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the base directory that the assembly resolver uses to probe for assemblies.
+    BaseDirectory = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the base directory that the assembly resolver uses to probe for assemblies.
 
 
 
@@ -2019,8 +2065,10 @@ Get: BaseDirectory(self: AppDomain) -> str
 
 """
 
- DomainManager=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the domain manager that was provided by the host when the application domain was initialized.
+    DomainManager = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the domain manager that was provided by the host when the application domain was initialized.
 
 
 
@@ -2030,8 +2078,10 @@ Get: DomainManager(self: AppDomain) -> AppDomainManager
 
 """
 
- DynamicDirectory=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the directory that the assembly resolver uses to probe for dynamically created assemblies.
+    DynamicDirectory = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the directory that the assembly resolver uses to probe for dynamically created assemblies.
 
 
 
@@ -2041,8 +2091,8 @@ Get: DynamicDirectory(self: AppDomain) -> str
 
 """
 
- Evidence=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Security.Policy.Evidence associated with this application domain.
+    Evidence = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the System.Security.Policy.Evidence associated with this application domain.
 
 
 
@@ -2052,8 +2102,10 @@ Get: Evidence(self: AppDomain) -> Evidence
 
 """
 
- FriendlyName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the friendly name of this application domain.
+    FriendlyName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the friendly name of this application domain.
 
 
 
@@ -2063,8 +2115,8 @@ Get: FriendlyName(self: AppDomain) -> str
 
 """
 
- Id=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an integer that uniquely identifies the application domain within the process.
+    Id = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an integer that uniquely identifies the application domain within the process.
 
 
 
@@ -2074,8 +2126,10 @@ Get: Id(self: AppDomain) -> int
 
 """
 
- IsFullyTrusted=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether assemblies that are loaded into the current application domain execute with full trust.
+    IsFullyTrusted = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether assemblies that are loaded into the current application domain execute with full trust.
 
 
 
@@ -2085,8 +2139,10 @@ Get: IsFullyTrusted(self: AppDomain) -> bool
 
 """
 
- IsHomogenous=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the current application domain has a set of permissions that is granted to all assemblies that are loaded into the application domain.
+    IsHomogenous = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the current application domain has a set of permissions that is granted to all assemblies that are loaded into the application domain.
 
 
 
@@ -2096,8 +2152,10 @@ Get: IsHomogenous(self: AppDomain) -> bool
 
 """
 
- MonitoringSurvivedMemorySize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of bytes that survived the last full,blocking collection and that are known to be referenced by the current application domain.
+    MonitoringSurvivedMemorySize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the number of bytes that survived the last full,blocking collection and that are known to be referenced by the current application domain.
 
 
 
@@ -2107,8 +2165,10 @@ Get: MonitoringSurvivedMemorySize(self: AppDomain) -> Int64
 
 """
 
- MonitoringTotalAllocatedMemorySize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the total size,in bytes,of all memory allocations that have been made by the application domain since it was created,without subtracting memory that has been collected.
+    MonitoringTotalAllocatedMemorySize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the total size,in bytes,of all memory allocations that have been made by the application domain since it was created,without subtracting memory that has been collected.
 
 
 
@@ -2118,8 +2178,10 @@ Get: MonitoringTotalAllocatedMemorySize(self: AppDomain) -> Int64
 
 """
 
- MonitoringTotalProcessorTime=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the total processor time that has been used by all threads while executing in the current application domain,since the process started.
+    MonitoringTotalProcessorTime = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the total processor time that has been used by all threads while executing in the current application domain,since the process started.
 
 
 
@@ -2129,8 +2191,10 @@ Get: MonitoringTotalProcessorTime(self: AppDomain) -> TimeSpan
 
 """
 
- PermissionSet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the permission set of a sandboxed application domain.
+    PermissionSet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the permission set of a sandboxed application domain.
 
 
 
@@ -2140,8 +2204,10 @@ Get: PermissionSet(self: AppDomain) -> PermissionSet
 
 """
 
- RelativeSearchPath=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the path under the base directory where the assembly resolver should probe for private assemblies.
+    RelativeSearchPath = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the path under the base directory where the assembly resolver should probe for private assemblies.
 
 
 
@@ -2151,8 +2217,10 @@ Get: RelativeSearchPath(self: AppDomain) -> str
 
 """
 
- SetupInformation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the application domain configuration information for this instance.
+    SetupInformation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the application domain configuration information for this instance.
 
 
 
@@ -2162,8 +2230,10 @@ Get: SetupInformation(self: AppDomain) -> AppDomainSetup
 
 """
 
- ShadowCopyFiles=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an indication whether the application domain is configured to shadow copy files.
+    ShadowCopyFiles = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets an indication whether the application domain is configured to shadow copy files.
 
 
 
@@ -2173,16 +2243,14 @@ Get: ShadowCopyFiles(self: AppDomain) -> bool
 
 """
 
-
- AssemblyLoad=None
- AssemblyResolve=None
- CurrentDomain=None
- DomainUnload=None
- FirstChanceException=None
- MonitoringIsEnabled=False
- ProcessExit=None
- ReflectionOnlyAssemblyResolve=None
- ResourceResolve=None
- TypeResolve=None
- UnhandledException=None
-
+    AssemblyLoad = None
+    AssemblyResolve = None
+    CurrentDomain = None
+    DomainUnload = None
+    FirstChanceException = None
+    MonitoringIsEnabled = False
+    ProcessExit = None
+    ReflectionOnlyAssemblyResolve = None
+    ResourceResolve = None
+    TypeResolve = None
+    UnhandledException = None

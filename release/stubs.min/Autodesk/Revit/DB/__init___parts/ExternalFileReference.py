@@ -1,10 +1,12 @@
-class ExternalFileReference(object,IDisposable):
- """ A class that contains the details of a reference to a file outside of a given document. """
- def Dispose(self):
-  """ Dispose(self: ExternalFileReference) """
-  pass
- def GetAbsolutePath(self):
-  """
+class ExternalFileReference(object, IDisposable):
+    """ A class that contains the details of a reference to a file outside of a given document. """
+
+    def Dispose(self):
+        """ Dispose(self: ExternalFileReference) """
+        pass
+
+    def GetAbsolutePath(self):
+        """
   GetAbsolutePath(self: ExternalFileReference) -> ModelPath
 
   
@@ -19,9 +21,10 @@ class ExternalFileReference(object,IDisposable):
 
    Returns: A full path to the linked model.
   """
-  pass
- def GetLinkedFileStatus(self):
-  """
+        pass
+
+    def GetLinkedFileStatus(self):
+        """
   GetLinkedFileStatus(self: ExternalFileReference) -> LinkedFileStatus
 
   
@@ -32,9 +35,10 @@ class ExternalFileReference(object,IDisposable):
 
     referenced file.
   """
-  pass
- def GetPath(self):
-  """
+        pass
+
+    def GetPath(self):
+        """
   GetPath(self: ExternalFileReference) -> ModelPath
 
   
@@ -53,9 +57,10 @@ class ExternalFileReference(object,IDisposable):
 
     links.
   """
-  pass
- def GetReferencingId(self):
-  """
+        pass
+
+    def GetReferencingId(self):
+        """
   GetReferencingId(self: ExternalFileReference) -> ElementId
 
   
@@ -66,10 +71,11 @@ class ExternalFileReference(object,IDisposable):
 
     ExternalFileReference is associated with.
   """
-  pass
- @staticmethod
- def IsValidExternalFileReference(data):
-  """
+        pass
+
+    @staticmethod
+    def IsValidExternalFileReference(data):
+        """
   IsValidExternalFileReference(data: ExternalFileReference) -> bool
 
   
@@ -82,9 +88,10 @@ class ExternalFileReference(object,IDisposable):
 
    data: The ExternalFileReference to be checked
   """
-  pass
- def IsValidPathTypeForExternalFileReference(self,pathType):
-  """
+        pass
+
+    def IsValidPathTypeForExternalFileReference(self, pathType):
+        """
   IsValidPathTypeForExternalFileReference(self: ExternalFileReference,pathType: PathType) -> bool
 
   
@@ -95,24 +102,32 @@ class ExternalFileReference(object,IDisposable):
 
     ExternalFileReference.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: ExternalFileReference,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- ExternalFileReferenceType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The type of external file which this object
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: ExternalFileReference,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    ExternalFileReferenceType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The type of external file which this object
 
    references.
 
@@ -124,8 +139,10 @@ Get: ExternalFileReferenceType(self: ExternalFileReference) -> ExternalFileRefer
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -135,8 +152,8 @@ Get: IsValidObject(self: ExternalFileReference) -> bool
 
 """
 
- PathType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The path type of the link (relative,absolute,or server).
+    PathType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The path type of the link (relative,absolute,or server).
 
 
 
@@ -145,5 +162,3 @@ Get: PathType(self: ExternalFileReference) -> PathType
 
 
 """
-
-

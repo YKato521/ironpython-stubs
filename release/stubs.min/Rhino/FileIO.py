@@ -8,8 +8,9 @@
 # no functions
 # classes
 
-class BinaryArchiveException(IOException,ISerializable,_Exception):
- """
+
+class BinaryArchiveException(IOException, ISerializable, _Exception):
+    """
  Thrown by BinaryArchiveReader and BinaryArchiveWriter classes when
 
     an IO error has occured.
@@ -18,130 +19,157 @@ class BinaryArchiveException(IOException,ISerializable,_Exception):
 
  BinaryArchiveException(message: str)
  """
- def add_SerializeObjectState(self,*args):
-  """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def remove_SerializeObjectState(self,*args):
-  """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,message):
-  """ __new__(cls: type,message: str) """
-  pass
- def __str__(self,*args):
-  pass
 
-class BinaryArchiveFile(object,IDisposable):
- """ BinaryArchiveFile(filename: str,mode: BinaryArchiveMode) """
- def Close(self):
-  """ Close(self: BinaryArchiveFile) """
-  pass
- def Dispose(self):
-  """
+    def add_SerializeObjectState(self, *args):
+        """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def remove_SerializeObjectState(self, *args):
+        """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, message):
+        """ __new__(cls: type,message: str) """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+
+class BinaryArchiveFile(object, IDisposable):
+    """ BinaryArchiveFile(filename: str,mode: BinaryArchiveMode) """
+
+    def Close(self):
+        """ Close(self: BinaryArchiveFile) """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: BinaryArchiveFile)
 
    Actively reclaims unmanaged resources that this instance uses.
   """
-  pass
- def Open(self):
-  """ Open(self: BinaryArchiveFile) -> bool """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def Open(self):
+        """ Open(self: BinaryArchiveFile) -> bool """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,filename,mode):
-  """ __new__(cls: type,filename: str,mode: BinaryArchiveMode) """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Reader=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Reader(self: BinaryArchiveFile) -> BinaryArchiveReader
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, filename, mode):
+        """ __new__(cls: type,filename: str,mode: BinaryArchiveMode) """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Reader = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Reader(self: BinaryArchiveFile) -> BinaryArchiveReader
 
 
 
 """
 
- Writer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Writer(self: BinaryArchiveFile) -> BinaryArchiveWriter
+    Writer = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Writer(self: BinaryArchiveFile) -> BinaryArchiveWriter
 
 
 
 """
 
 
+class BinaryArchiveMode(Enum, IComparable, IFormattable, IConvertible):
+    """ enum BinaryArchiveMode,values: Read (1),Read3dm (5),ReadWrite (3),Unknown (0),Write (2),Write3dm (6) """
 
-class BinaryArchiveMode(Enum,IComparable,IFormattable,IConvertible):
- """ enum BinaryArchiveMode,values: Read (1),Read3dm (5),ReadWrite (3),Unknown (0),Write (2),Write3dm (6) """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Read=None
- Read3dm=None
- ReadWrite=None
- Unknown=None
- value__=None
- Write=None
- Write3dm=None
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Read = None
+    Read3dm = None
+    ReadWrite = None
+    Unknown = None
+    value__ = None
+    Write = None
+    Write3dm = None
 
 
 class BinaryArchiveReader(object):
- """
+    """
  Represents an entity that is capable of reading a binary archive and
 
     instantiating strongly-typed objects.
  """
- def AtEnd(self):
-  """
+
+    def AtEnd(self):
+        """
   AtEnd(self: BinaryArchiveReader) -> bool
 
   
 
    true if at end of a file
   """
-  pass
- def Dump3dmChunk(self,log):
-  """
+        pass
+
+    def Dump3dmChunk(self, log):
+        """
   Dump3dmChunk(self: BinaryArchiveReader,log: TextLog) -> UInt32
 
   
@@ -170,9 +198,10 @@ class BinaryArchiveReader(object):
 
     studied.
   """
-  pass
- def Read3dmChunkVersion(self,major,minor):
-  """
+        pass
+
+    def Read3dmChunkVersion(self, major, minor):
+        """
   Read3dmChunkVersion(self: BinaryArchiveReader) -> (int,int)
 
   
@@ -201,16 +230,18 @@ class BinaryArchiveReader(object):
 
    Returns: true on successful read.
   """
-  pass
- def Read3dmStartSection(self,version,comment):
-  """
+        pass
+
+    def Read3dmStartSection(self, version, comment):
+        """
   Read3dmStartSection(self: BinaryArchiveReader) -> (bool,int,str)
 
    Returns: true on success
   """
-  pass
- def ReadBool(self):
-  """
+        pass
+
+    def ReadBool(self):
+        """
   ReadBool(self: BinaryArchiveReader) -> bool
 
   
@@ -219,9 +250,10 @@ class BinaryArchiveReader(object):
 
    Returns: The value that was read.
   """
-  pass
- def ReadBoolArray(self):
-  """
+        pass
+
+    def ReadBoolArray(self):
+        """
   ReadBoolArray(self: BinaryArchiveReader) -> Array[bool]
 
   
@@ -236,9 +268,10 @@ class BinaryArchiveReader(object):
 
    Returns: The array that was read.
   """
-  pass
- def ReadBoundingBox(self):
-  """
+        pass
+
+    def ReadBoundingBox(self):
+        """
   ReadBoundingBox(self: BinaryArchiveReader) -> BoundingBox
 
   
@@ -247,9 +280,10 @@ class BinaryArchiveReader(object):
 
    Returns: The element that was read.
   """
-  pass
- def ReadByte(self):
-  """
+        pass
+
+    def ReadByte(self):
+        """
   ReadByte(self: BinaryArchiveReader) -> Byte
 
   
@@ -258,9 +292,10 @@ class BinaryArchiveReader(object):
 
    Returns: The value that was read.
   """
-  pass
- def ReadByteArray(self):
-  """
+        pass
+
+    def ReadByteArray(self):
+        """
   ReadByteArray(self: BinaryArchiveReader) -> Array[Byte]
 
   
@@ -275,9 +310,10 @@ class BinaryArchiveReader(object):
 
    Returns: The array that was read.
   """
-  pass
- def ReadColor(self):
-  """
+        pass
+
+    def ReadColor(self):
+        """
   ReadColor(self: BinaryArchiveReader) -> Color
 
   
@@ -286,9 +322,10 @@ class BinaryArchiveReader(object):
 
    Returns: The element that was read.
   """
-  pass
- def ReadCompressedBuffer(self):
-  """
+        pass
+
+    def ReadCompressedBuffer(self):
+        """
   ReadCompressedBuffer(self: BinaryArchiveReader) -> Array[Byte]
 
   
@@ -303,9 +340,10 @@ class BinaryArchiveReader(object):
 
    Returns: The array that was read.
   """
-  pass
- def ReadDictionary(self):
-  """
+        pass
+
+    def ReadDictionary(self):
+        """
   ReadDictionary(self: BinaryArchiveReader) -> ArchivableDictionary
 
   
@@ -314,9 +352,10 @@ class BinaryArchiveReader(object):
 
    Returns: The newly instantiated object.
   """
-  pass
- def ReadDouble(self):
-  """
+        pass
+
+    def ReadDouble(self):
+        """
   ReadDouble(self: BinaryArchiveReader) -> float
 
   
@@ -325,9 +364,10 @@ class BinaryArchiveReader(object):
 
    Returns: The value that was read.
   """
-  pass
- def ReadDoubleArray(self):
-  """
+        pass
+
+    def ReadDoubleArray(self):
+        """
   ReadDoubleArray(self: BinaryArchiveReader) -> Array[float]
 
   
@@ -342,9 +382,10 @@ class BinaryArchiveReader(object):
 
    Returns: The array that was read.
   """
-  pass
- def ReadFont(self):
-  """
+        pass
+
+    def ReadFont(self):
+        """
   ReadFont(self: BinaryArchiveReader) -> Font
 
   
@@ -353,9 +394,10 @@ class BinaryArchiveReader(object):
 
    Returns: The element that was read.
   """
-  pass
- def ReadGeometry(self):
-  """
+        pass
+
+    def ReadGeometry(self):
+        """
   ReadGeometry(self: BinaryArchiveReader) -> GeometryBase
 
   
@@ -370,9 +412,10 @@ class BinaryArchiveReader(object):
 
    Returns: The element that was read.
   """
-  pass
- def ReadGuid(self):
-  """
+        pass
+
+    def ReadGuid(self):
+        """
   ReadGuid(self: BinaryArchiveReader) -> Guid
 
   
@@ -381,9 +424,10 @@ class BinaryArchiveReader(object):
 
    Returns: The value that was read.
   """
-  pass
- def ReadGuidArray(self):
-  """
+        pass
+
+    def ReadGuidArray(self):
+        """
   ReadGuidArray(self: BinaryArchiveReader) -> Array[Guid]
 
   
@@ -398,9 +442,10 @@ class BinaryArchiveReader(object):
 
    Returns: The array that was read.
   """
-  pass
- def ReadInt(self):
-  """
+        pass
+
+    def ReadInt(self):
+        """
   ReadInt(self: BinaryArchiveReader) -> int
 
   
@@ -409,9 +454,10 @@ class BinaryArchiveReader(object):
 
    Returns: The value that was read.
   """
-  pass
- def ReadInt64(self):
-  """
+        pass
+
+    def ReadInt64(self):
+        """
   ReadInt64(self: BinaryArchiveReader) -> Int64
 
   
@@ -420,9 +466,10 @@ class BinaryArchiveReader(object):
 
    Returns: The value that was read.
   """
-  pass
- def ReadIntArray(self):
-  """
+        pass
+
+    def ReadIntArray(self):
+        """
   ReadIntArray(self: BinaryArchiveReader) -> Array[int]
 
   
@@ -437,9 +484,10 @@ class BinaryArchiveReader(object):
 
    Returns: The array that was read.
   """
-  pass
- def ReadInterval(self):
-  """
+        pass
+
+    def ReadInterval(self):
+        """
   ReadInterval(self: BinaryArchiveReader) -> Interval
 
   
@@ -448,9 +496,10 @@ class BinaryArchiveReader(object):
 
    Returns: The element that was read.
   """
-  pass
- def ReadLine(self):
-  """
+        pass
+
+    def ReadLine(self):
+        """
   ReadLine(self: BinaryArchiveReader) -> Line
 
   
@@ -459,9 +508,10 @@ class BinaryArchiveReader(object):
 
    Returns: The element that was read.
   """
-  pass
- def ReadMeshingParameters(self):
-  """
+        pass
+
+    def ReadMeshingParameters(self):
+        """
   ReadMeshingParameters(self: BinaryArchiveReader) -> MeshingParameters
 
   
@@ -470,9 +520,10 @@ class BinaryArchiveReader(object):
 
    Returns: The element that was read.
   """
-  pass
- def ReadObjRef(self):
-  """
+        pass
+
+    def ReadObjRef(self):
+        """
   ReadObjRef(self: BinaryArchiveReader) -> ObjRef
 
   
@@ -481,9 +532,10 @@ class BinaryArchiveReader(object):
 
    Returns: the element that was read
   """
-  pass
- def ReadObjRefArray(self):
-  """
+        pass
+
+    def ReadObjRefArray(self):
+        """
   ReadObjRefArray(self: BinaryArchiveReader) -> Array[ObjRef]
 
   
@@ -498,9 +550,10 @@ class BinaryArchiveReader(object):
 
    Returns: The array that was read.
   """
-  pass
- def ReadPlane(self):
-  """
+        pass
+
+    def ReadPlane(self):
+        """
   ReadPlane(self: BinaryArchiveReader) -> Plane
 
   
@@ -509,9 +562,10 @@ class BinaryArchiveReader(object):
 
    Returns: The element that was read.
   """
-  pass
- def ReadPoint(self):
-  """
+        pass
+
+    def ReadPoint(self):
+        """
   ReadPoint(self: BinaryArchiveReader) -> Point
 
   
@@ -520,9 +574,10 @@ class BinaryArchiveReader(object):
 
    Returns: The element that was read.
   """
-  pass
- def ReadPoint2d(self):
-  """
+        pass
+
+    def ReadPoint2d(self):
+        """
   ReadPoint2d(self: BinaryArchiveReader) -> Point2d
 
   
@@ -531,9 +586,10 @@ class BinaryArchiveReader(object):
 
    Returns: The element that was read.
   """
-  pass
- def ReadPoint3d(self):
-  """
+        pass
+
+    def ReadPoint3d(self):
+        """
   ReadPoint3d(self: BinaryArchiveReader) -> Point3d
 
   
@@ -542,9 +598,10 @@ class BinaryArchiveReader(object):
 
    Returns: The element that was read.
   """
-  pass
- def ReadPoint3f(self):
-  """
+        pass
+
+    def ReadPoint3f(self):
+        """
   ReadPoint3f(self: BinaryArchiveReader) -> Point3f
 
   
@@ -553,9 +610,10 @@ class BinaryArchiveReader(object):
 
    Returns: The element that was read.
   """
-  pass
- def ReadPoint4d(self):
-  """
+        pass
+
+    def ReadPoint4d(self):
+        """
   ReadPoint4d(self: BinaryArchiveReader) -> Point4d
 
   
@@ -564,9 +622,10 @@ class BinaryArchiveReader(object):
 
    Returns: The element that was read.
   """
-  pass
- def ReadPointF(self):
-  """
+        pass
+
+    def ReadPointF(self):
+        """
   ReadPointF(self: BinaryArchiveReader) -> PointF
 
   
@@ -575,9 +634,10 @@ class BinaryArchiveReader(object):
 
    Returns: The element that was read.
   """
-  pass
- def ReadRay3d(self):
-  """
+        pass
+
+    def ReadRay3d(self):
+        """
   ReadRay3d(self: BinaryArchiveReader) -> Ray3d
 
   
@@ -586,9 +646,10 @@ class BinaryArchiveReader(object):
 
    Returns: The element that was read.
   """
-  pass
- def ReadRectangle(self):
-  """
+        pass
+
+    def ReadRectangle(self):
+        """
   ReadRectangle(self: BinaryArchiveReader) -> Rectangle
 
   
@@ -597,9 +658,10 @@ class BinaryArchiveReader(object):
 
    Returns: The element that was read.
   """
-  pass
- def ReadRectangleF(self):
-  """
+        pass
+
+    def ReadRectangleF(self):
+        """
   ReadRectangleF(self: BinaryArchiveReader) -> RectangleF
 
   
@@ -608,9 +670,10 @@ class BinaryArchiveReader(object):
 
    Returns: The element that was read.
   """
-  pass
- def ReadSByte(self):
-  """
+        pass
+
+    def ReadSByte(self):
+        """
   ReadSByte(self: BinaryArchiveReader) -> SByte
 
   
@@ -619,9 +682,10 @@ class BinaryArchiveReader(object):
 
    Returns: The value that was read.
   """
-  pass
- def ReadSByteArray(self):
-  """
+        pass
+
+    def ReadSByteArray(self):
+        """
   ReadSByteArray(self: BinaryArchiveReader) -> Array[SByte]
 
   
@@ -636,9 +700,10 @@ class BinaryArchiveReader(object):
 
    Returns: The array that was read.
   """
-  pass
- def ReadShort(self):
-  """
+        pass
+
+    def ReadShort(self):
+        """
   ReadShort(self: BinaryArchiveReader) -> Int16
 
   
@@ -647,9 +712,10 @@ class BinaryArchiveReader(object):
 
    Returns: The value that was read.
   """
-  pass
- def ReadShortArray(self):
-  """
+        pass
+
+    def ReadShortArray(self):
+        """
   ReadShortArray(self: BinaryArchiveReader) -> Array[Int16]
 
   
@@ -664,9 +730,10 @@ class BinaryArchiveReader(object):
 
    Returns: The array that was read.
   """
-  pass
- def ReadSingle(self):
-  """
+        pass
+
+    def ReadSingle(self):
+        """
   ReadSingle(self: BinaryArchiveReader) -> Single
 
   
@@ -675,9 +742,10 @@ class BinaryArchiveReader(object):
 
    Returns: The value that was read.
   """
-  pass
- def ReadSingleArray(self):
-  """
+        pass
+
+    def ReadSingleArray(self):
+        """
   ReadSingleArray(self: BinaryArchiveReader) -> Array[Single]
 
   
@@ -692,9 +760,10 @@ class BinaryArchiveReader(object):
 
    Returns: The array that was read.
   """
-  pass
- def ReadSize(self):
-  """
+        pass
+
+    def ReadSize(self):
+        """
   ReadSize(self: BinaryArchiveReader) -> Size
 
   
@@ -703,9 +772,10 @@ class BinaryArchiveReader(object):
 
    Returns: The element that was read.
   """
-  pass
- def ReadSizeF(self):
-  """
+        pass
+
+    def ReadSizeF(self):
+        """
   ReadSizeF(self: BinaryArchiveReader) -> SizeF
 
   
@@ -714,9 +784,10 @@ class BinaryArchiveReader(object):
 
    Returns: The element that was read.
   """
-  pass
- def ReadString(self):
-  """
+        pass
+
+    def ReadString(self):
+        """
   ReadString(self: BinaryArchiveReader) -> str
 
   
@@ -725,9 +796,10 @@ class BinaryArchiveReader(object):
 
    Returns: The value that was read.
   """
-  pass
- def ReadStringArray(self):
-  """
+        pass
+
+    def ReadStringArray(self):
+        """
   ReadStringArray(self: BinaryArchiveReader) -> Array[str]
 
   
@@ -742,9 +814,10 @@ class BinaryArchiveReader(object):
 
    Returns: The array that was read.
   """
-  pass
- def ReadTransform(self):
-  """
+        pass
+
+    def ReadTransform(self):
+        """
   ReadTransform(self: BinaryArchiveReader) -> Transform
 
   
@@ -753,9 +826,10 @@ class BinaryArchiveReader(object):
 
    Returns: The element that was read.
   """
-  pass
- def ReadUInt(self):
-  """
+        pass
+
+    def ReadUInt(self):
+        """
   ReadUInt(self: BinaryArchiveReader) -> UInt32
 
   
@@ -764,9 +838,10 @@ class BinaryArchiveReader(object):
 
    Returns: The value that was read.
   """
-  pass
- def ReadUShort(self):
-  """
+        pass
+
+    def ReadUShort(self):
+        """
   ReadUShort(self: BinaryArchiveReader) -> UInt16
 
   
@@ -775,9 +850,10 @@ class BinaryArchiveReader(object):
 
    Returns: The value that was read.
   """
-  pass
- def ReadVector2d(self):
-  """
+        pass
+
+    def ReadVector2d(self):
+        """
   ReadVector2d(self: BinaryArchiveReader) -> Vector2d
 
   
@@ -786,9 +862,10 @@ class BinaryArchiveReader(object):
 
    Returns: The element that was read.
   """
-  pass
- def ReadVector3d(self):
-  """
+        pass
+
+    def ReadVector3d(self):
+        """
   ReadVector3d(self: BinaryArchiveReader) -> Vector3d
 
   
@@ -797,9 +874,10 @@ class BinaryArchiveReader(object):
 
    Returns: The element that was read.
   """
-  pass
- def ReadVector3f(self):
-  """
+        pass
+
+    def ReadVector3f(self):
+        """
   ReadVector3f(self: BinaryArchiveReader) -> Vector3f
 
   
@@ -808,9 +886,12 @@ class BinaryArchiveReader(object):
 
    Returns: The element that was read.
   """
-  pass
- Archive3dmVersion=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If a 3dm archive is being read or written,then this is the
+        pass
+
+    Archive3dmVersion = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """If a 3dm archive is being read or written,then this is the
 
    version of the 3dm archive format (1,2,3,4 or 5).
 
@@ -836,8 +917,10 @@ Get: Archive3dmVersion(self: BinaryArchiveReader) -> int
 
 """
 
- ReadErrorOccured=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets whether en error occurred during reading.
+    ReadErrorOccured = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets whether en error occurred during reading.
 
 
 
@@ -850,11 +933,11 @@ Set: ReadErrorOccured(self: BinaryArchiveReader)=value
 """
 
 
-
 class BinaryArchiveWriter(object):
- """ Represents an entity that is able to write data to an archive. """
- def Write3dmChunkVersion(self,major,minor):
-  """
+    """ Represents an entity that is able to write data to an archive. """
+
+    def Write3dmChunkVersion(self, major, minor):
+        """
   Write3dmChunkVersion(self: BinaryArchiveWriter,major: int,minor: int)
 
    A chunk version is a single byte that encodes a major.minor
@@ -887,9 +970,10 @@ class BinaryArchiveWriter(object):
 
    Returns: true on successful read.
   """
-  pass
- def WriteBool(self,value):
-  """
+        pass
+
+    def WriteBool(self, value):
+        """
   WriteBool(self: BinaryArchiveWriter,value: bool)
 
    Writes a System.Boolean value to the archive.
@@ -898,12 +982,14 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteBoolArray(self,value):
-  """ WriteBoolArray(self: BinaryArchiveWriter,value: IEnumerable[bool]) """
-  pass
- def WriteBoundingBox(self,value):
-  """
+        pass
+
+    def WriteBoolArray(self, value):
+        """ WriteBoolArray(self: BinaryArchiveWriter,value: IEnumerable[bool]) """
+        pass
+
+    def WriteBoundingBox(self, value):
+        """
   WriteBoundingBox(self: BinaryArchiveWriter,value: BoundingBox)
 
    Writes a Rhino.Geometry.BoundingBox value to the archive.
@@ -912,9 +998,10 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteByte(self,value):
-  """
+        pass
+
+    def WriteByte(self, value):
+        """
   WriteByte(self: BinaryArchiveWriter,value: Byte)
 
    Writes a System.Byte value to the archive.
@@ -923,12 +1010,14 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteByteArray(self,value):
-  """ WriteByteArray(self: BinaryArchiveWriter,value: IEnumerable[Byte]) """
-  pass
- def WriteColor(self,value):
-  """
+        pass
+
+    def WriteByteArray(self, value):
+        """ WriteByteArray(self: BinaryArchiveWriter,value: IEnumerable[Byte]) """
+        pass
+
+    def WriteColor(self, value):
+        """
   WriteColor(self: BinaryArchiveWriter,value: Color)
 
    Writes a System.Drawing.Color value to the archive.
@@ -937,12 +1026,14 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteCompressedBuffer(self,value):
-  """ WriteCompressedBuffer(self: BinaryArchiveWriter,value: IEnumerable[Byte]) """
-  pass
- def WriteDictionary(self,dictionary):
-  """
+        pass
+
+    def WriteCompressedBuffer(self, value):
+        """ WriteCompressedBuffer(self: BinaryArchiveWriter,value: IEnumerable[Byte]) """
+        pass
+
+    def WriteDictionary(self, dictionary):
+        """
   WriteDictionary(self: BinaryArchiveWriter,dictionary: ArchivableDictionary)
 
    Delivers the complete content of a dictionary to the archive.
@@ -951,9 +1042,10 @@ class BinaryArchiveWriter(object):
 
    dictionary: A dictionary to archive.
   """
-  pass
- def WriteDouble(self,value):
-  """
+        pass
+
+    def WriteDouble(self, value):
+        """
   WriteDouble(self: BinaryArchiveWriter,value: float)
 
    Writes a System.Double value to the archive.
@@ -962,12 +1054,14 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteDoubleArray(self,value):
-  """ WriteDoubleArray(self: BinaryArchiveWriter,value: IEnumerable[float]) """
-  pass
- def WriteFont(self,value):
-  """
+        pass
+
+    def WriteDoubleArray(self, value):
+        """ WriteDoubleArray(self: BinaryArchiveWriter,value: IEnumerable[float]) """
+        pass
+
+    def WriteFont(self, value):
+        """
   WriteFont(self: BinaryArchiveWriter,value: Font)
 
    Writes a System.Drawing.Font value to the archive.
@@ -976,9 +1070,10 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteGeometry(self,value):
-  """
+        pass
+
+    def WriteGeometry(self, value):
+        """
   WriteGeometry(self: BinaryArchiveWriter,value: GeometryBase)
 
    Writes a Rhino.Geometry.GeometryBase value to the archive.
@@ -987,9 +1082,10 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteGuid(self,value):
-  """
+        pass
+
+    def WriteGuid(self, value):
+        """
   WriteGuid(self: BinaryArchiveWriter,value: Guid)
 
    Writes a System.Guid value to the archive.
@@ -998,12 +1094,14 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteGuidArray(self,value):
-  """ WriteGuidArray(self: BinaryArchiveWriter,value: IEnumerable[Guid]) """
-  pass
- def WriteInt(self,value):
-  """
+        pass
+
+    def WriteGuidArray(self, value):
+        """ WriteGuidArray(self: BinaryArchiveWriter,value: IEnumerable[Guid]) """
+        pass
+
+    def WriteInt(self, value):
+        """
   WriteInt(self: BinaryArchiveWriter,value: int)
 
    Writes a System.Int32 value to the archive.
@@ -1012,9 +1110,10 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteInt64(self,value):
-  """
+        pass
+
+    def WriteInt64(self, value):
+        """
   WriteInt64(self: BinaryArchiveWriter,value: Int64)
 
    Writes a System.Int64 value to the archive.
@@ -1023,12 +1122,14 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteIntArray(self,value):
-  """ WriteIntArray(self: BinaryArchiveWriter,value: IEnumerable[int]) """
-  pass
- def WriteInterval(self,value):
-  """
+        pass
+
+    def WriteIntArray(self, value):
+        """ WriteIntArray(self: BinaryArchiveWriter,value: IEnumerable[int]) """
+        pass
+
+    def WriteInterval(self, value):
+        """
   WriteInterval(self: BinaryArchiveWriter,value: Interval)
 
    Writes a Rhino.Geometry.Interval value to the archive.
@@ -1037,9 +1138,10 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteLine(self,value):
-  """
+        pass
+
+    def WriteLine(self, value):
+        """
   WriteLine(self: BinaryArchiveWriter,value: Line)
 
    Writes a Rhino.Geometry.Line value to the archive.
@@ -1048,9 +1150,10 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteMeshingParameters(self,value):
-  """
+        pass
+
+    def WriteMeshingParameters(self, value):
+        """
   WriteMeshingParameters(self: BinaryArchiveWriter,value: MeshingParameters)
 
    Writes a Rhino.Geometry.MeshingParameters value to the archive.
@@ -1059,21 +1162,24 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteObjRef(self,objref):
-  """
+        pass
+
+    def WriteObjRef(self, objref):
+        """
   WriteObjRef(self: BinaryArchiveWriter,objref: ObjRef)
 
    Writes a Rhino.DocObjects.ObjRef to the archive
 
    Returns: the element that was read
   """
-  pass
- def WriteObjRefArray(self,objrefs):
-  """ WriteObjRefArray(self: BinaryArchiveWriter,objrefs: IEnumerable[ObjRef]) """
-  pass
- def WritePlane(self,value):
-  """
+        pass
+
+    def WriteObjRefArray(self, objrefs):
+        """ WriteObjRefArray(self: BinaryArchiveWriter,objrefs: IEnumerable[ObjRef]) """
+        pass
+
+    def WritePlane(self, value):
+        """
   WritePlane(self: BinaryArchiveWriter,value: Plane)
 
    Writes a Rhino.Geometry.Plane value to the archive.
@@ -1082,9 +1188,10 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WritePoint(self,value):
-  """
+        pass
+
+    def WritePoint(self, value):
+        """
   WritePoint(self: BinaryArchiveWriter,value: Point)
 
    Writes a System.Drawing.Point value to the archive.
@@ -1093,9 +1200,10 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WritePoint2d(self,value):
-  """
+        pass
+
+    def WritePoint2d(self, value):
+        """
   WritePoint2d(self: BinaryArchiveWriter,value: Point2d)
 
    Writes a Rhino.Geometry.Point2d value to the archive.
@@ -1104,9 +1212,10 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WritePoint3d(self,value):
-  """
+        pass
+
+    def WritePoint3d(self, value):
+        """
   WritePoint3d(self: BinaryArchiveWriter,value: Point3d)
 
    Writes a Rhino.Geometry.Point3d value to the archive.
@@ -1115,9 +1224,10 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WritePoint3f(self,value):
-  """
+        pass
+
+    def WritePoint3f(self, value):
+        """
   WritePoint3f(self: BinaryArchiveWriter,value: Point3f)
 
    Writes a Rhino.Geometry.Point3f value to the archive.
@@ -1126,9 +1236,10 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WritePoint4d(self,value):
-  """
+        pass
+
+    def WritePoint4d(self, value):
+        """
   WritePoint4d(self: BinaryArchiveWriter,value: Point4d)
 
    Writes a Rhino.Geometry.Point4d value to the archive.
@@ -1137,9 +1248,10 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WritePointF(self,value):
-  """
+        pass
+
+    def WritePointF(self, value):
+        """
   WritePointF(self: BinaryArchiveWriter,value: PointF)
 
    Writes a System.Drawing.PointF value to the archive.
@@ -1148,9 +1260,10 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteRay3d(self,value):
-  """
+        pass
+
+    def WriteRay3d(self, value):
+        """
   WriteRay3d(self: BinaryArchiveWriter,value: Ray3d)
 
    Writes a Rhino.Geometry.Ray3d value to the archive.
@@ -1159,9 +1272,10 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteRectangle(self,value):
-  """
+        pass
+
+    def WriteRectangle(self, value):
+        """
   WriteRectangle(self: BinaryArchiveWriter,value: Rectangle)
 
    Writes a System.Drawing.Rectangle value to the archive.
@@ -1170,9 +1284,10 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteRectangleF(self,value):
-  """
+        pass
+
+    def WriteRectangleF(self, value):
+        """
   WriteRectangleF(self: BinaryArchiveWriter,value: RectangleF)
 
    Writes a System.Drawing.RectangleF value to the archive.
@@ -1181,9 +1296,10 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteSByte(self,value):
-  """
+        pass
+
+    def WriteSByte(self, value):
+        """
   WriteSByte(self: BinaryArchiveWriter,value: SByte)
 
    Writes a System.SByte value to the archive.
@@ -1192,12 +1308,14 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteSByteArray(self,value):
-  """ WriteSByteArray(self: BinaryArchiveWriter,value: IEnumerable[SByte]) """
-  pass
- def WriteShort(self,value):
-  """
+        pass
+
+    def WriteSByteArray(self, value):
+        """ WriteSByteArray(self: BinaryArchiveWriter,value: IEnumerable[SByte]) """
+        pass
+
+    def WriteShort(self, value):
+        """
   WriteShort(self: BinaryArchiveWriter,value: Int16)
 
    Writes a System.Int16 value to the archive.
@@ -1206,12 +1324,14 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteShortArray(self,value):
-  """ WriteShortArray(self: BinaryArchiveWriter,value: IEnumerable[Int16]) """
-  pass
- def WriteSingle(self,value):
-  """
+        pass
+
+    def WriteShortArray(self, value):
+        """ WriteShortArray(self: BinaryArchiveWriter,value: IEnumerable[Int16]) """
+        pass
+
+    def WriteSingle(self, value):
+        """
   WriteSingle(self: BinaryArchiveWriter,value: Single)
 
    Writes a System.Single value to the archive.
@@ -1220,12 +1340,14 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteSingleArray(self,value):
-  """ WriteSingleArray(self: BinaryArchiveWriter,value: IEnumerable[Single]) """
-  pass
- def WriteSize(self,value):
-  """
+        pass
+
+    def WriteSingleArray(self, value):
+        """ WriteSingleArray(self: BinaryArchiveWriter,value: IEnumerable[Single]) """
+        pass
+
+    def WriteSize(self, value):
+        """
   WriteSize(self: BinaryArchiveWriter,value: Size)
 
    Writes a System.Drawing.Size value to the archive.
@@ -1234,9 +1356,10 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteSizeF(self,value):
-  """
+        pass
+
+    def WriteSizeF(self, value):
+        """
   WriteSizeF(self: BinaryArchiveWriter,value: SizeF)
 
    Writes a System.Drawing.SizeF value to the archive.
@@ -1245,9 +1368,10 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteString(self,value):
-  """
+        pass
+
+    def WriteString(self, value):
+        """
   WriteString(self: BinaryArchiveWriter,value: str)
 
    Writes a System.String value to the archive.
@@ -1256,12 +1380,14 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteStringArray(self,value):
-  """ WriteStringArray(self: BinaryArchiveWriter,value: IEnumerable[str]) """
-  pass
- def WriteTransform(self,value):
-  """
+        pass
+
+    def WriteStringArray(self, value):
+        """ WriteStringArray(self: BinaryArchiveWriter,value: IEnumerable[str]) """
+        pass
+
+    def WriteTransform(self, value):
+        """
   WriteTransform(self: BinaryArchiveWriter,value: Transform)
 
    Writes a Rhino.Geometry.Transform value to the archive.
@@ -1270,9 +1396,10 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteUInt(self,value):
-  """
+        pass
+
+    def WriteUInt(self, value):
+        """
   WriteUInt(self: BinaryArchiveWriter,value: UInt32)
 
    Writes a System.UInt32 value to the archive.
@@ -1281,9 +1408,10 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteUShort(self,value):
-  """
+        pass
+
+    def WriteUShort(self, value):
+        """
   WriteUShort(self: BinaryArchiveWriter,value: UInt16)
 
    Writes a System.UInt16 value to the archive.
@@ -1292,9 +1420,10 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteVector2d(self,value):
-  """
+        pass
+
+    def WriteVector2d(self, value):
+        """
   WriteVector2d(self: BinaryArchiveWriter,value: Vector2d)
 
    Writes a Rhino.Geometry.Vector2d value to the archive.
@@ -1303,9 +1432,10 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteVector3d(self,value):
-  """
+        pass
+
+    def WriteVector3d(self, value):
+        """
   WriteVector3d(self: BinaryArchiveWriter,value: Vector3d)
 
    Writes a Rhino.Geometry.Vector3d value to the archive.
@@ -1314,9 +1444,10 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- def WriteVector3f(self,value):
-  """
+        pass
+
+    def WriteVector3f(self, value):
+        """
   WriteVector3f(self: BinaryArchiveWriter,value: Vector3f)
 
    Writes a Rhino.Geometry.Vector3f value to the archive.
@@ -1325,9 +1456,12 @@ class BinaryArchiveWriter(object):
 
    value: A value to write.
   """
-  pass
- Archive3dmVersion=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If a 3dm archive is being read or written,then this is the
+        pass
+
+    Archive3dmVersion = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """If a 3dm archive is being read or written,then this is the
 
    version of the 3dm archive format (1,2,3,4 or 5).
 
@@ -1353,8 +1487,10 @@ Get: Archive3dmVersion(self: BinaryArchiveWriter) -> int
 
 """
 
- WriteErrorOccured=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets whether an error occurred.
+    WriteErrorOccured = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets whether an error occurred.
 
 
 
@@ -1367,9 +1503,8 @@ Set: WriteErrorOccured(self: BinaryArchiveWriter)=value
 """
 
 
-
-class File3dm(object,IDisposable):
- """
+class File3dm(object, IDisposable):
+    """
  Represents a 3dm file,which is stored using the OpenNURBS file standard.
 
     The 3dm format is the main Rhinoceros storage format.Visit http://www.opennurbs.com/ for more details.
@@ -1378,8 +1513,9 @@ class File3dm(object,IDisposable):
 
  File3dm()
  """
- def Audit(self,attemptRepair,repairCount,errors,warnings):
-  """
+
+    def Audit(self, attemptRepair, repairCount, errors, warnings):
+        """
   Audit(self: File3dm,attemptRepair: bool) -> (int,int,str,Array[int])
 
   
@@ -1404,16 +1540,18 @@ class File3dm(object,IDisposable):
 
     that were found)
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: File3dm)
 
    Actively reclaims unmanaged resources that this instance uses.
   """
-  pass
- def Dump(self):
-  """
+        pass
+
+    def Dump(self):
+        """
   Dump(self: File3dm) -> str
 
   
@@ -1422,9 +1560,10 @@ class File3dm(object,IDisposable):
 
    Returns: The text dump.
   """
-  pass
- def DumpSummary(self):
-  """
+        pass
+
+    def DumpSummary(self):
+        """
   DumpSummary(self: File3dm) -> str
 
   
@@ -1433,16 +1572,18 @@ class File3dm(object,IDisposable):
 
    Returns: The text dump.
   """
-  pass
- def DumpToTextLog(self,log):
-  """
+        pass
+
+    def DumpToTextLog(self, log):
+        """
   DumpToTextLog(self: File3dm,log: TextLog)
 
    Prepares a text dump of the entire model.
   """
-  pass
- def IsValid(self,errors):
-  """
+        pass
+
+    def IsValid(self, errors):
+        """
   IsValid(self: File3dm,errors: TextLog) -> bool
 
   
@@ -1463,9 +1604,10 @@ class File3dm(object,IDisposable):
 
    Returns: true if the model is valid.
   """
-  pass
- def Polish(self):
-  """
+        pass
+
+    def Polish(self):
+        """
   Polish(self: File3dm)
 
    Quickly fills in the little details,like making sure there is at least
@@ -1476,10 +1618,11 @@ class File3dm(object,IDisposable):
 
      call Audit(true).
   """
-  pass
- @staticmethod
- def Read(path,tableTypeFilterFilter=None,objectTypeFilter=None):
-  """
+        pass
+
+    @staticmethod
+    def Read(path, tableTypeFilterFilter=None, objectTypeFilter=None):
+        """
   Read(path: str,tableTypeFilterFilter: TableTypeFilter,objectTypeFilter: ObjectTypeFilter) -> File3dm
 
   Read(path: str) -> File3dm
@@ -1494,10 +1637,11 @@ class File3dm(object,IDisposable):
 
    Returns: new File3dm on success,null on error.
   """
-  pass
- @staticmethod
- def ReadApplicationData(path,applicationName,applicationUrl,applicationDetails):
-  """
+        pass
+
+    @staticmethod
+    def ReadApplicationData(path, applicationName, applicationUrl, applicationDetails):
+        """
   ReadApplicationData(path: str) -> (str,str,str)
 
   
@@ -1508,10 +1652,11 @@ class File3dm(object,IDisposable):
 
    path: A location on disk or network.
   """
-  pass
- @staticmethod
- def ReadArchiveVersion(path):
-  """
+        pass
+
+    @staticmethod
+    def ReadArchiveVersion(path):
+        """
   ReadArchiveVersion(path: str) -> int
 
   
@@ -1524,10 +1669,11 @@ class File3dm(object,IDisposable):
 
    Returns: The 3dm file archive version.
   """
-  pass
- @staticmethod
- def ReadNotes(path):
-  """
+        pass
+
+    @staticmethod
+    def ReadNotes(path):
+        """
   ReadNotes(path: str) -> str
 
   
@@ -1540,10 +1686,11 @@ class File3dm(object,IDisposable):
 
    Returns: The 3dm file notes.
   """
-  pass
- @staticmethod
- def ReadPreviewImage(path):
-  """
+        pass
+
+    @staticmethod
+    def ReadPreviewImage(path):
+        """
   ReadPreviewImage(path: str) -> Bitmap
 
   
@@ -1556,10 +1703,13 @@ class File3dm(object,IDisposable):
 
    Returns: A bitmap,or null on failure.
   """
-  pass
- @staticmethod
- def ReadRevisionHistory(path,createdBy,lastEditedBy,revision,createdOn,lastEditedOn):
-  """
+        pass
+
+    @staticmethod
+    def ReadRevisionHistory(
+        path, createdBy, lastEditedBy, revision, createdOn, lastEditedOn
+    ):
+        """
   ReadRevisionHistory(path: str) -> (bool,str,str,int,DateTime,DateTime)
 
   
@@ -1578,10 +1728,11 @@ class File3dm(object,IDisposable):
 
    Returns: true on success
   """
-  pass
- @staticmethod
- def ReadWithLog(path,*__args):
-  """
+        pass
+
+    @staticmethod
+    def ReadWithLog(path, *__args):
+        """
   ReadWithLog(path: str) -> (File3dm,str)
 
   
@@ -1598,9 +1749,10 @@ class File3dm(object,IDisposable):
 
   ReadWithLog(path: str,tableTypeFilterFilter: TableTypeFilter,objectTypeFilter: ObjectTypeFilter) -> (File3dm,str)
   """
-  pass
- def Write(self,path,*__args):
-  """
+        pass
+
+    def Write(self, path, *__args):
+        """
   Write(self: File3dm,path: str,options: File3dmWriteOptions) -> bool
 
   
@@ -1673,9 +1825,10 @@ class File3dm(object,IDisposable):
 
      false if errors occur.
   """
-  pass
- def WriteWithLog(self,path,version,errorLog):
-  """
+        pass
+
+    def WriteWithLog(self, path, version, errorLog):
+        """
   WriteWithLog(self: File3dm,path: str,version: int) -> (bool,str)
 
   
@@ -1722,31 +1875,38 @@ class File3dm(object,IDisposable):
 
      false if errors occur.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- ApplicationDetails=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets details for the application that wrote this file.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    ApplicationDetails = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets details for the application that wrote this file.
 
 
 
@@ -1758,8 +1918,10 @@ Set: ApplicationDetails(self: File3dm)=value
 
 """
 
- ApplicationName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the application that wrote this file.
+    ApplicationName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the application that wrote this file.
 
 
 
@@ -1771,8 +1933,10 @@ Set: ApplicationName(self: File3dm)=value
 
 """
 
- ApplicationUrl=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a URL for the application that wrote this file.
+    ApplicationUrl = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a URL for the application that wrote this file.
 
 
 
@@ -1784,8 +1948,8 @@ Set: ApplicationUrl(self: File3dm)=value
 
 """
 
- Created=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the DateTime that this file was originally created. If the
+    Created = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get the DateTime that this file was originally created. If the
 
    value is not set in the 3dm file,then DateTime.MinValue is returned
 
@@ -1797,8 +1961,8 @@ Get: Created(self: File3dm) -> DateTime
 
 """
 
- CreatedBy=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a string that names the user who created the file.
+    CreatedBy = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a string that names the user who created the file.
 
 
 
@@ -1808,8 +1972,8 @@ Get: CreatedBy(self: File3dm) -> str
 
 """
 
- DimStyles=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Dimension Styles in this file
+    DimStyles = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Dimension Styles in this file
 
 
 
@@ -1819,8 +1983,10 @@ Get: DimStyles(self: File3dm) -> IList[DimensionStyle]
 
 """
 
- HatchPatterns=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Hatch patterns in this file
+    HatchPatterns = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Hatch patterns in this file
 
 
 
@@ -1830,8 +1996,10 @@ Get: HatchPatterns(self: File3dm) -> IList[HatchPattern]
 
 """
 
- HistoryRecords=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """History records stored in this file
+    HistoryRecords = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """History records stored in this file
 
 
 
@@ -1841,8 +2009,10 @@ Get: HistoryRecords(self: File3dm) -> File3dmHistoryRecordTable
 
 """
 
- InstanceDefinitions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Instance definitions in this file
+    InstanceDefinitions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Instance definitions in this file
 
 
 
@@ -1852,8 +2022,10 @@ Get: InstanceDefinitions(self: File3dm) -> IList[InstanceDefinitionGeometry]
 
 """
 
- LastEdited=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the DateTime that this file was last edited. If the
+    LastEdited = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get the DateTime that this file was last edited. If the
 
    value is not set in the 3dm file,then DateTime.MinValue is returned
 
@@ -1865,8 +2037,10 @@ Get: LastEdited(self: File3dm) -> DateTime
 
 """
 
- LastEditedBy=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a string that names the user who last edited the file.
+    LastEditedBy = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a string that names the user who last edited the file.
 
 
 
@@ -1876,8 +2050,8 @@ Get: LastEditedBy(self: File3dm) -> str
 
 """
 
- Layers=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Layers in this file.
+    Layers = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Layers in this file.
 
 
 
@@ -1887,8 +2061,8 @@ Get: Layers(self: File3dm) -> IList[Layer]
 
 """
 
- Linetypes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Linetypes in this file.
+    Linetypes = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Linetypes in this file.
 
 
 
@@ -1898,8 +2072,8 @@ Get: Linetypes(self: File3dm) -> IList[Linetype]
 
 """
 
- Materials=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Materials in this file.
+    Materials = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Materials in this file.
 
 
 
@@ -1909,8 +2083,10 @@ Get: Materials(self: File3dm) -> IList[Material]
 
 """
 
- NamedViews=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Named view list
+    NamedViews = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Named view list
 
 
 
@@ -1920,8 +2096,8 @@ Get: NamedViews(self: File3dm) -> IList[ViewInfo]
 
 """
 
- Notes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the model notes.
+    Notes = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the model notes.
 
 
 
@@ -1933,8 +2109,8 @@ Set: Notes(self: File3dm)=value
 
 """
 
- Objects=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets access to the Rhino.FileIO.File3dmObjectTable class associated with this file,
+    Objects = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets access to the Rhino.FileIO.File3dmObjectTable class associated with this file,
 
    which contains all objects.
 
@@ -1946,8 +2122,10 @@ Get: Objects(self: File3dm) -> File3dmObjectTable
 
 """
 
- PlugInData=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Custom plug-in data in this file.  This data is not attached to any geometry or attributes
+    PlugInData = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Custom plug-in data in this file.  This data is not attached to any geometry or attributes
 
 
 
@@ -1957,8 +2135,8 @@ Get: PlugInData(self: File3dm) -> File3dmPlugInDataTable
 
 """
 
- Revision=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the revision number.
+    Revision = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the revision number.
 
 
 
@@ -1970,8 +2148,8 @@ Set: Revision(self: File3dm)=value
 
 """
 
- Settings=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Settings include tolerance,and unit system,and defaults used
+    Settings = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Settings include tolerance,and unit system,and defaults used
 
    for creating views and objects.
 
@@ -1983,8 +2161,10 @@ Get: Settings(self: File3dm) -> File3dmSettings
 
 """
 
- StartSectionComments=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the start section comments,which are the comments with which the 3dm file begins.
+    StartSectionComments = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the start section comments,which are the comments with which the 3dm file begins.
 
 
 
@@ -1996,8 +2176,8 @@ Set: StartSectionComments(self: File3dm)=value
 
 """
 
- Views=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Views that represent the RhinoViews which are displayed when Rhino loads this file
+    Views = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Views that represent the RhinoViews which are displayed when Rhino loads this file
 
 
 
@@ -2007,22 +2187,23 @@ Get: Views(self: File3dm) -> IList[ViewInfo]
 
 """
 
-
- ObjectTypeFilter=None
- TableTypeFilter=None
+    ObjectTypeFilter = None
+    TableTypeFilter = None
 
 
 class File3dmHistoryRecordTable(object):
- """ Table of custom data provided by plug-ins """
- def Clear(self):
-  """
+    """ Table of custom data provided by plug-ins """
+
+    def Clear(self):
+        """
   Clear(self: File3dmHistoryRecordTable)
 
    Remove all entries from this table
   """
-  pass
- def Dump(self):
-  """
+        pass
+
+    def Dump(self):
+        """
   Dump(self: File3dmHistoryRecordTable) -> str
 
   
@@ -2031,9 +2212,10 @@ class File3dmHistoryRecordTable(object):
 
    Returns: A string containing the dump.
   """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of history records in this table.
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of history records in this table.
 
 
 
@@ -2044,17 +2226,17 @@ Get: Count(self: File3dmHistoryRecordTable) -> int
 """
 
 
-
 class File3dmNotes(object):
- """
+    """
  Represents the notes information stored in a 3dm file.
 
  
 
  File3dmNotes()
  """
- IsHtml=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the text format. If the format is HTML,true; false otherwise.
+
+    IsHtml = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the text format. If the format is HTML,true; false otherwise.
 
 
 
@@ -2066,8 +2248,8 @@ Set: IsHtml(self: File3dmNotes)=value
 
 """
 
- IsVisible=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the notes visibility. If the notes are visible,true; false otherwise.
+    IsVisible = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the notes visibility. If the notes are visible,true; false otherwise.
 
 
 
@@ -2079,8 +2261,8 @@ Set: IsVisible(self: File3dmNotes)=value
 
 """
 
- Notes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the text content of the notes.
+    Notes = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the text content of the notes.
 
 
 
@@ -2092,8 +2274,10 @@ Set: Notes(self: File3dmNotes)=value
 
 """
 
- WindowRectangle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the position of the Notes when they were saved.
+    WindowRectangle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the position of the Notes when they were saved.
 
 
 
@@ -2106,11 +2290,13 @@ Set: WindowRectangle(self: File3dmNotes)=value
 """
 
 
-
 class File3dmObject(object):
- """ Used to store geometry table object definition and attributes in a File3dm. """
- Attributes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the attributes that are linked with this document object.
+    """ Used to store geometry table object definition and attributes in a File3dm. """
+
+    Attributes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the attributes that are linked with this document object.
 
 
 
@@ -2120,8 +2306,8 @@ Get: Attributes(self: File3dmObject) -> ObjectAttributes
 
 """
 
- Geometry=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the geometry that is linked with this document object.
+    Geometry = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the geometry that is linked with this document object.
 
 
 
@@ -2131,8 +2317,8 @@ Get: Geometry(self: File3dmObject) -> GeometryBase
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Name of the object. Equivalent to this.Attributes.Name.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Name of the object. Equivalent to this.Attributes.Name.
 
 
 
@@ -2145,15 +2331,17 @@ Set: Name(self: File3dmObject)=value
 """
 
 
-
-class File3dmObjectTable(object,IEnumerable[File3dmObject],IEnumerable,IRhinoTable[File3dmObject]):
- """
+class File3dmObjectTable(
+    object, IEnumerable[File3dmObject], IEnumerable, IRhinoTable[File3dmObject]
+):
+    """
  Represents a simple object table for a file that is open externally.
 
     This class mimics Rhino.DocObjects.Tables.ObjectTable while providing external eccess to the file.
  """
- def AddArc(self,arc,attributes=None):
-  """
+
+    def AddArc(self, arc, attributes=None):
+        """
   AddArc(self: File3dmObjectTable,arc: Arc,attributes: ObjectAttributes) -> Guid
 
   
@@ -2180,9 +2368,10 @@ class File3dmObjectTable(object,IEnumerable[File3dmObject],IEnumerable,IRhinoTab
 
    Returns: A unique identifier for the object.
   """
-  pass
- def AddBrep(self,brep,attributes=None):
-  """
+        pass
+
+    def AddBrep(self, brep, attributes=None):
+        """
   AddBrep(self: File3dmObjectTable,brep: Brep,attributes: ObjectAttributes) -> Guid
 
   
@@ -2209,9 +2398,10 @@ class File3dmObjectTable(object,IEnumerable[File3dmObject],IEnumerable,IRhinoTab
 
    Returns: A unique identifier for the object.
   """
-  pass
- def AddCircle(self,circle,attributes=None):
-  """
+        pass
+
+    def AddCircle(self, circle, attributes=None):
+        """
   AddCircle(self: File3dmObjectTable,circle: Circle,attributes: ObjectAttributes) -> Guid
 
   
@@ -2238,9 +2428,10 @@ class File3dmObjectTable(object,IEnumerable[File3dmObject],IEnumerable,IRhinoTab
 
    Returns: A unique identifier for the object.
   """
-  pass
- def AddClippingPlane(self,plane,uMagnitude,vMagnitude,*__args):
-  """
+        pass
+
+    def AddClippingPlane(self, plane, uMagnitude, vMagnitude, *__args):
+        """
   AddClippingPlane(self: File3dmObjectTable,plane: Plane,uMagnitude: float,vMagnitude: float,clippedViewportIds: IEnumerable[Guid],attributes: ObjectAttributes) -> Guid
 
   AddClippingPlane(self: File3dmObjectTable,plane: Plane,uMagnitude: float,vMagnitude: float,clippedViewportIds: IEnumerable[Guid]) -> Guid
@@ -2263,9 +2454,10 @@ class File3dmObjectTable(object,IEnumerable[File3dmObject],IEnumerable,IRhinoTab
 
    Returns: A unique identifier for the object.
   """
-  pass
- def AddCurve(self,curve,attributes=None):
-  """
+        pass
+
+    def AddCurve(self, curve, attributes=None):
+        """
   AddCurve(self: File3dmObjectTable,curve: Curve,attributes: ObjectAttributes) -> Guid
 
   
@@ -2292,9 +2484,10 @@ class File3dmObjectTable(object,IEnumerable[File3dmObject],IEnumerable,IRhinoTab
 
    Returns: A unique identifier for the object.
   """
-  pass
- def AddEllipse(self,ellipse,attributes=None):
-  """
+        pass
+
+    def AddEllipse(self, ellipse, attributes=None):
+        """
   AddEllipse(self: File3dmObjectTable,ellipse: Ellipse,attributes: ObjectAttributes) -> Guid
 
   
@@ -2321,9 +2514,10 @@ class File3dmObjectTable(object,IEnumerable[File3dmObject],IEnumerable,IRhinoTab
 
    Returns: A unique identifier for the object.
   """
-  pass
- def AddExtrusion(self,extrusion,attributes=None):
-  """
+        pass
+
+    def AddExtrusion(self, extrusion, attributes=None):
+        """
   AddExtrusion(self: File3dmObjectTable,extrusion: Extrusion,attributes: ObjectAttributes) -> Guid
 
   
@@ -2350,9 +2544,10 @@ class File3dmObjectTable(object,IEnumerable[File3dmObject],IEnumerable,IRhinoTab
 
    Returns: A unique identifier for the object.
   """
-  pass
- def AddHatch(self,hatch,attributes=None):
-  """
+        pass
+
+    def AddHatch(self, hatch, attributes=None):
+        """
   AddHatch(self: File3dmObjectTable,hatch: Hatch,attributes: ObjectAttributes) -> Guid
 
   
@@ -2379,9 +2574,10 @@ class File3dmObjectTable(object,IEnumerable[File3dmObject],IEnumerable,IRhinoTab
 
    Returns: A unique identifier for the hatch,or System.Guid.Empty on failure.
   """
-  pass
- def AddLeader(self,*__args):
-  """
+        pass
+
+    def AddLeader(self, *__args):
+        """
   AddLeader(self: File3dmObjectTable,text: str,plane: Plane,points: IEnumerable[Point2d]) -> Guid
 
   AddLeader(self: File3dmObjectTable,text: str,points: IEnumerable[Point3d]) -> Guid
@@ -2394,9 +2590,10 @@ class File3dmObjectTable(object,IEnumerable[File3dmObject],IEnumerable,IRhinoTab
 
   AddLeader(self: File3dmObjectTable,text: str,plane: Plane,points: IEnumerable[Point2d],attributes: ObjectAttributes) -> Guid
   """
-  pass
- def AddLine(self,*__args):
-  """
+        pass
+
+    def AddLine(self, *__args):
+        """
   AddLine(self: File3dmObjectTable,line: Line) -> Guid
 
   
@@ -2449,9 +2646,10 @@ class File3dmObjectTable(object,IEnumerable[File3dmObject],IEnumerable,IRhinoTab
 
    Returns: A unique identifier for the object.
   """
-  pass
- def AddLinearDimension(self,dimension,attributes=None):
-  """
+        pass
+
+    def AddLinearDimension(self, dimension, attributes=None):
+        """
   AddLinearDimension(self: File3dmObjectTable,dimension: LinearDimension,attributes: ObjectAttributes) -> Guid
 
   
@@ -2478,9 +2676,10 @@ class File3dmObjectTable(object,IEnumerable[File3dmObject],IEnumerable,IRhinoTab
 
    Returns: A unique identifier for the object.
   """
-  pass
- def AddMesh(self,mesh,attributes=None):
-  """
+        pass
+
+    def AddMesh(self, mesh, attributes=None):
+        """
   AddMesh(self: File3dmObjectTable,mesh: Mesh,attributes: ObjectAttributes) -> Guid
 
   
@@ -2507,9 +2706,10 @@ class File3dmObjectTable(object,IEnumerable[File3dmObject],IEnumerable,IRhinoTab
 
    Returns: A unique identifier for the object.
   """
-  pass
- def AddPoint(self,*__args):
-  """
+        pass
+
+    def AddPoint(self, *__args):
+        """
   AddPoint(self: File3dmObjectTable,point: Point3f) -> Guid
 
   
@@ -2578,9 +2778,10 @@ class File3dmObjectTable(object,IEnumerable[File3dmObject],IEnumerable,IRhinoTab
 
    Returns: Id of new object.
   """
-  pass
- def AddPointCloud(self,*__args):
-  """
+        pass
+
+    def AddPointCloud(self, *__args):
+        """
   AddPointCloud(self: File3dmObjectTable,points: IEnumerable[Point3d]) -> Guid
 
   AddPointCloud(self: File3dmObjectTable,points: IEnumerable[Point3d],attributes: ObjectAttributes) -> Guid
@@ -2611,9 +2812,10 @@ class File3dmObjectTable(object,IEnumerable[File3dmObject],IEnumerable,IRhinoTab
 
    Returns: A unique identifier for the object.
   """
-  pass
- def AddPoints(self,points,attributes=None):
-  """
+        pass
+
+    def AddPoints(self, points, attributes=None):
+        """
   AddPoints(self: File3dmObjectTable,points: IEnumerable[Point3f]) -> Array[Guid]
 
   AddPoints(self: File3dmObjectTable,points: IEnumerable[Point3f],attributes: ObjectAttributes) -> Array[Guid]
@@ -2622,16 +2824,18 @@ class File3dmObjectTable(object,IEnumerable[File3dmObject],IEnumerable,IRhinoTab
 
   AddPoints(self: File3dmObjectTable,points: IEnumerable[Point3d],attributes: ObjectAttributes) -> Array[Guid]
   """
-  pass
- def AddPolyline(self,points,attributes=None):
-  """
+        pass
+
+    def AddPolyline(self, points, attributes=None):
+        """
   AddPolyline(self: File3dmObjectTable,points: IEnumerable[Point3d],attributes: ObjectAttributes) -> Guid
 
   AddPolyline(self: File3dmObjectTable,points: IEnumerable[Point3d]) -> Guid
   """
-  pass
- def AddSphere(self,sphere,attributes=None):
-  """
+        pass
+
+    def AddSphere(self, sphere, attributes=None):
+        """
   AddSphere(self: File3dmObjectTable,sphere: Sphere,attributes: ObjectAttributes) -> Guid
 
   
@@ -2658,9 +2862,10 @@ class File3dmObjectTable(object,IEnumerable[File3dmObject],IEnumerable,IRhinoTab
 
    Returns: A unique identifier for the object.
   """
-  pass
- def AddSurface(self,surface,attributes=None):
-  """
+        pass
+
+    def AddSurface(self, surface, attributes=None):
+        """
   AddSurface(self: File3dmObjectTable,surface: Surface,attributes: ObjectAttributes) -> Guid
 
   
@@ -2687,9 +2892,10 @@ class File3dmObjectTable(object,IEnumerable[File3dmObject],IEnumerable,IRhinoTab
 
    Returns: A unique identifier for the object.
   """
-  pass
- def AddText(self,*__args):
-  """
+        pass
+
+    def AddText(self, *__args):
+        """
   AddText(self: File3dmObjectTable,text: str,plane: Plane,height: float,fontName: str,bold: bool,italic: bool,justification: TextJustification) -> Guid
 
   
@@ -2812,9 +3018,10 @@ class File3dmObjectTable(object,IEnumerable[File3dmObject],IEnumerable,IRhinoTab
 
    Returns: The Guid of the newly added object or Guid.Empty on failure.
   """
-  pass
- def AddTextDot(self,*__args):
-  """
+        pass
+
+    def AddTextDot(self, *__args):
+        """
   AddTextDot(self: File3dmObjectTable,dot: TextDot) -> Guid
 
   
@@ -2871,9 +3078,10 @@ class File3dmObjectTable(object,IEnumerable[File3dmObject],IEnumerable,IRhinoTab
 
    Returns: A unique identifier for the object.
   """
-  pass
- def Delete(self,*__args):
-  """
+        pass
+
+    def Delete(self, *__args):
+        """
   Delete(self: File3dmObjectTable,objectIds: IEnumerable[Guid]) -> int
 
   Delete(self: File3dmObjectTable,objectId: Guid) -> bool
@@ -2900,9 +3108,10 @@ class File3dmObjectTable(object,IEnumerable[File3dmObject],IEnumerable,IRhinoTab
 
    Returns: true on success,false on failure.
   """
-  pass
- def Dump(self):
-  """
+        pass
+
+    def Dump(self):
+        """
   Dump(self: File3dmObjectTable) -> str
 
   
@@ -2911,9 +3120,10 @@ class File3dmObjectTable(object,IEnumerable[File3dmObject],IEnumerable,IRhinoTab
 
    Returns: A string containing the dump.
   """
-  pass
- def FindByLayer(self,layer):
-  """
+        pass
+
+    def FindByLayer(self, layer):
+        """
   FindByLayer(self: File3dmObjectTable,layer: str) -> Array[File3dmObject]
 
   
@@ -2926,9 +3136,10 @@ class File3dmObjectTable(object,IEnumerable[File3dmObject],IEnumerable,IRhinoTab
 
    Returns: Array of objects that belong to the specified group or null if no objects could be found.
   """
-  pass
- def GetBoundingBox(self):
-  """
+        pass
+
+    def GetBoundingBox(self):
+        """
   GetBoundingBox(self: File3dmObjectTable) -> BoundingBox
 
   
@@ -2937,9 +3148,10 @@ class File3dmObjectTable(object,IEnumerable[File3dmObject],IEnumerable,IRhinoTab
 
    Returns: The computed bounding box.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: File3dmObjectTable) -> IEnumerator[File3dmObject]
 
   
@@ -2948,24 +3160,30 @@ class File3dmObjectTable(object,IEnumerable[File3dmObject],IEnumerable,IRhinoTab
 
    Returns: The enumerator.
   """
-  pass
- def __contains__(self,*args):
-  """ __contains__[File3dmObject](enumerable: IEnumerable[File3dmObject],value: File3dmObject) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of File3dmObjects in this table.
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[File3dmObject](enumerable: IEnumerable[File3dmObject],value: File3dmObject) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of File3dmObjects in this table.
 
 
 
@@ -2976,11 +3194,11 @@ Get: Count(self: File3dmObjectTable) -> int
 """
 
 
-
 class File3dmPlugInData(object):
- """ Custom data in the file supplied by a plug-in """
- PlugInId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Plug-in this data is associated with
+    """ Custom data in the file supplied by a plug-in """
+
+    PlugInId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Plug-in this data is associated with
 
 
 
@@ -2991,18 +3209,21 @@ Get: PlugInId(self: File3dmPlugInData) -> Guid
 """
 
 
+class File3dmPlugInDataTable(
+    object, IEnumerable[File3dmPlugInData], IEnumerable, IRhinoTable[File3dmPlugInData]
+):
+    """ Table of custom data provided by plug-ins """
 
-class File3dmPlugInDataTable(object,IEnumerable[File3dmPlugInData],IEnumerable,IRhinoTable[File3dmPlugInData]):
- """ Table of custom data provided by plug-ins """
- def Clear(self):
-  """
+    def Clear(self):
+        """
   Clear(self: File3dmPlugInDataTable)
 
    Remove all entries from this table
   """
-  pass
- def Dump(self):
-  """
+        pass
+
+    def Dump(self):
+        """
   Dump(self: File3dmPlugInDataTable) -> str
 
   
@@ -3011,9 +3232,10 @@ class File3dmPlugInDataTable(object,IEnumerable[File3dmPlugInData],IEnumerable,I
 
    Returns: A string containing the dump.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: File3dmPlugInDataTable) -> IEnumerator[File3dmPlugInData]
 
   
@@ -3022,24 +3244,30 @@ class File3dmPlugInDataTable(object,IEnumerable[File3dmPlugInData],IEnumerable,I
 
    Returns: The enumerator.
   """
-  pass
- def __contains__(self,*args):
-  """ __contains__[File3dmPlugInData](enumerable: IEnumerable[File3dmPlugInData],value: File3dmPlugInData) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of File3dmPlugInData in this table.
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[File3dmPlugInData](enumerable: IEnumerable[File3dmPlugInData],value: File3dmPlugInData) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of File3dmPlugInData in this table.
 
 
 
@@ -3050,11 +3278,13 @@ Get: Count(self: File3dmPlugInDataTable) -> int
 """
 
 
-
 class File3dmSettings(object):
- """ Contains settings used within the whole 3dm file. """
- ModelAbsoluteTolerance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the model space absolute tolerance.
+    """ Contains settings used within the whole 3dm file. """
+
+    ModelAbsoluteTolerance = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the model space absolute tolerance.
 
 
 
@@ -3066,8 +3296,10 @@ Set: ModelAbsoluteTolerance(self: File3dmSettings)=value
 
 """
 
- ModelAngleToleranceDegrees=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the model space angle tolerance.
+    ModelAngleToleranceDegrees = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the model space angle tolerance.
 
 
 
@@ -3079,8 +3311,10 @@ Set: ModelAngleToleranceDegrees(self: File3dmSettings)=value
 
 """
 
- ModelAngleToleranceRadians=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the model space angle tolerance.
+    ModelAngleToleranceRadians = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the model space angle tolerance.
 
 
 
@@ -3092,8 +3326,10 @@ Set: ModelAngleToleranceRadians(self: File3dmSettings)=value
 
 """
 
- ModelBasepoint=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the model basepoint that is used when the file is read as an instance definition.
+    ModelBasepoint = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the model basepoint that is used when the file is read as an instance definition.
 
    This point is mapped to the origin in the instance definition.
 
@@ -3107,8 +3343,10 @@ Set: ModelBasepoint(self: File3dmSettings)=value
 
 """
 
- ModelRelativeTolerance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the model space relative tolerance.
+    ModelRelativeTolerance = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the model space relative tolerance.
 
 
 
@@ -3120,8 +3358,10 @@ Set: ModelRelativeTolerance(self: File3dmSettings)=value
 
 """
 
- ModelUnitSystem=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the model unit system,using Rhino.UnitSystem enumeration.
+    ModelUnitSystem = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the model unit system,using Rhino.UnitSystem enumeration.
 
 
 
@@ -3133,8 +3373,8 @@ Set: ModelUnitSystem(self: File3dmSettings)=value
 
 """
 
- ModelUrl=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Uniform Resource Locator (URL) direction for the model.
+    ModelUrl = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a Uniform Resource Locator (URL) direction for the model.
 
 
 
@@ -3146,8 +3386,10 @@ Set: ModelUrl(self: File3dmSettings)=value
 
 """
 
- PageAbsoluteTolerance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the page space absolute tolerance.
+    PageAbsoluteTolerance = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the page space absolute tolerance.
 
 
 
@@ -3159,8 +3401,10 @@ Set: PageAbsoluteTolerance(self: File3dmSettings)=value
 
 """
 
- PageAngleToleranceDegrees=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the page space angle tolerance.
+    PageAngleToleranceDegrees = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the page space angle tolerance.
 
 
 
@@ -3172,8 +3416,10 @@ Set: PageAngleToleranceDegrees(self: File3dmSettings)=value
 
 """
 
- PageAngleToleranceRadians=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the page space angle tolerance.
+    PageAngleToleranceRadians = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the page space angle tolerance.
 
 
 
@@ -3185,8 +3431,10 @@ Set: PageAngleToleranceRadians(self: File3dmSettings)=value
 
 """
 
- PageRelativeTolerance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the page space relative tolerance.
+    PageRelativeTolerance = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the page space relative tolerance.
 
 
 
@@ -3198,8 +3446,10 @@ Set: PageRelativeTolerance(self: File3dmSettings)=value
 
 """
 
- PageUnitSystem=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the page unit system,using Rhino.UnitSystem enumeration.
+    PageUnitSystem = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the page unit system,using Rhino.UnitSystem enumeration.
 
 
 
@@ -3212,9 +3462,8 @@ Set: PageUnitSystem(self: File3dmSettings)=value
 """
 
 
-
 class File3dmTypeCodes(object):
- """
+    """
  Typecode format 4 bytes long
 
     
@@ -3273,428 +3522,432 @@ class File3dmTypeCodes(object):
 
        1 - data in header - no data block follows
  """
- TCODE_ANALYSIS_MESH=None
- TCODE_ANGULAR_DIMENSION=None
- TCODE_ANNOTATION=None
- TCODE_ANNOTATION_LEADER=None
- TCODE_ANNOTATION_SETTINGS=None
- TCODE_ANONYMOUS_CHUNK=None
- TCODE_BITMAPPREVIEW=None
- TCODE_BITMAP_RECORD=None
- TCODE_BITMAP_TABLE=None
- TCODE_BUMPMAP=None
- TCODE_COMMENTBLOCK=None
- TCODE_COMPRESSED_MESH_GEOMETRY=None
- TCODE_CPLANE=None
- TCODE_CRC=None
- TCODE_CURRENTLAYER=None
- TCODE_DICTIONARY=None
- TCODE_DICTIONARY_END=None
- TCODE_DICTIONARY_ENTRY=None
- TCODE_DICTIONARY_ID=None
- TCODE_DIMSTYLE_RECORD=None
- TCODE_DIMSTYLE_TABLE=None
- TCODE_DISPLAY=None
- TCODE_DISP_AM_RESOLUTION=None
- TCODE_DISP_CPLINES=None
- TCODE_DISP_MAXLENGTH=None
- TCODE_ENDOFFILE=None
- TCODE_ENDOFFILE_GOO=None
- TCODE_ENDOFTABLE=None
- TCODE_FONT_RECORD=None
- TCODE_FONT_TABLE=None
- TCODE_GEOMETRY=None
- TCODE_GROUP_RECORD=None
- TCODE_GROUP_TABLE=None
- TCODE_HATCHPATTERN_RECORD=None
- TCODE_HATCHPATTERN_TABLE=None
- TCODE_HIDE_TRACE=None
- TCODE_HISTORYRECORD_RECORD=None
- TCODE_HISTORYRECORD_TABLE=None
- TCODE_INSTANCE_DEFINITION_RECORD=None
- TCODE_INSTANCE_DEFINITION_TABLE=None
- TCODE_INTERFACE=None
- TCODE_LAYER=None
- TCODE_LAYERINDEX=None
- TCODE_LAYERLOCKED=None
- TCODE_LAYERMATERIALINDEX=None
- TCODE_LAYERNAME=None
- TCODE_LAYERON=None
- TCODE_LAYERPICKABLE=None
- TCODE_LAYERREF=None
- TCODE_LAYERRENDERABLE=None
- TCODE_LAYERSNAPABLE=None
- TCODE_LAYERSTATE=None
- TCODE_LAYERTABLE=None
- TCODE_LAYERTHAWED=None
- TCODE_LAYERVISIBLE=None
- TCODE_LAYER_OBSELETE_1=None
- TCODE_LAYER_OBSELETE_2=None
- TCODE_LAYER_OBSELETE_3=None
- TCODE_LAYER_RECORD=None
- TCODE_LAYER_TABLE=None
- TCODE_LEGACY_ASM=None
- TCODE_LEGACY_ASMSTUFF=None
- TCODE_LEGACY_BND=None
- TCODE_LEGACY_BNDSTUFF=None
- TCODE_LEGACY_CRV=None
- TCODE_LEGACY_CRVSTUFF=None
- TCODE_LEGACY_FAC=None
- TCODE_LEGACY_FACSTUFF=None
- TCODE_LEGACY_GEOMETRY=None
- TCODE_LEGACY_PNT=None
- TCODE_LEGACY_PNTSTUFF=None
- TCODE_LEGACY_PRT=None
- TCODE_LEGACY_PRTSTUFF=None
- TCODE_LEGACY_SHL=None
- TCODE_LEGACY_SHLSTUFF=None
- TCODE_LEGACY_SPL=None
- TCODE_LEGACY_SPLSTUFF=None
- TCODE_LEGACY_SRF=None
- TCODE_LEGACY_SRFSTUFF=None
- TCODE_LEGACY_TOL_ANGLE=None
- TCODE_LEGACY_TOL_FIT=None
- TCODE_LEGACY_TRM=None
- TCODE_LEGACY_TRMSTUFF=None
- TCODE_LIGHT_RECORD=None
- TCODE_LIGHT_RECORD_ATTRIBUTES=None
- TCODE_LIGHT_RECORD_ATTRIBUTES_USERDATA=None
- TCODE_LIGHT_RECORD_END=None
- TCODE_LIGHT_TABLE=None
- TCODE_LINEAR_DIMENSION=None
- TCODE_LINETYPE_RECORD=None
- TCODE_LINETYPE_TABLE=None
- TCODE_MATERIAL_RECORD=None
- TCODE_MATERIAL_TABLE=None
- TCODE_MAXIMIZED_VIEWPORT=None
- TCODE_MESH_OBJECT=None
- TCODE_NAME=None
- TCODE_NAMED_CPLANE=None
- TCODE_NAMED_VIEW=None
- TCODE_NEAR_CLIP_PLANE=None
- TCODE_NOTES=None
- TCODE_OBJECT_RECORD=None
- TCODE_OBJECT_RECORD_ATTRIBUTES=None
- TCODE_OBJECT_RECORD_ATTRIBUTES_USERDATA=None
- TCODE_OBJECT_RECORD_END=None
- TCODE_OBJECT_RECORD_HISTORY=None
- TCODE_OBJECT_RECORD_HISTORY_DATA=None
- TCODE_OBJECT_RECORD_HISTORY_HEADER=None
- TCODE_OBJECT_RECORD_TYPE=None
- TCODE_OBJECT_TABLE=None
- TCODE_OBSOLETE_LAYERSET_RECORD=None
- TCODE_OBSOLETE_LAYERSET_TABLE=None
- TCODE_OLD_FULLMESH=None
- TCODE_OLD_MESH_UV=None
- TCODE_OLD_MESH_VERTEX_NORMALS=None
- TCODE_OLD_RH_TRIMESH=None
- TCODE_OPENNURBS_CLASS=None
- TCODE_OPENNURBS_CLASS_DATA=None
- TCODE_OPENNURBS_CLASS_END=None
- TCODE_OPENNURBS_CLASS_USERDATA=None
- TCODE_OPENNURBS_CLASS_USERDATA_HEADER=None
- TCODE_OPENNURBS_CLASS_UUID=None
- TCODE_OPENNURBS_OBJECT=None
- TCODE_PROPERTIES_APPLICATION=None
- TCODE_PROPERTIES_COMPRESSED_PREVIEWIMAGE=None
- TCODE_PROPERTIES_NOTES=None
- TCODE_PROPERTIES_OPENNURBS_VERSION=None
- TCODE_PROPERTIES_PREVIEWIMAGE=None
- TCODE_PROPERTIES_REVISIONHISTORY=None
- TCODE_PROPERTIES_TABLE=None
- TCODE_RADIAL_DIMENSION=None
- TCODE_RENDER=None
- TCODE_RENDERMESHPARAMS=None
- TCODE_RENDER_MATERIAL_ID=None
- TCODE_RGB=None
- TCODE_RGBDISPLAY=None
- TCODE_RHINOIO_OBJECT_BREP=None
- TCODE_RHINOIO_OBJECT_DATA=None
- TCODE_RHINOIO_OBJECT_END=None
- TCODE_RHINOIO_OBJECT_NURBS_CURVE=None
- TCODE_RHINOIO_OBJECT_NURBS_SURFACE=None
- TCODE_RH_POINT=None
- TCODE_RH_SPOTLIGHT=None
- TCODE_SETTINGS_ANALYSISMESH=None
- TCODE_SETTINGS_ANNOTATION=None
- TCODE_SETTINGS_ATTRIBUTES=None
- TCODE_SETTINGS_CURRENT_COLOR=None
- TCODE_SETTINGS_CURRENT_DIMSTYLE_INDEX=None
- TCODE_SETTINGS_CURRENT_FONT_INDEX=None
- TCODE_SETTINGS_CURRENT_LAYER_INDEX=None
- TCODE_SETTINGS_CURRENT_MATERIAL_INDEX=None
- TCODE_SETTINGS_CURRENT_WIRE_DENSITY=None
- TCODE_SETTINGS_GRID_DEFAULTS=None
- TCODE_SETTINGS_MODEL_URL=None
- TCODE_SETTINGS_NAMED_CPLANE_LIST=None
- TCODE_SETTINGS_NAMED_VIEW_LIST=None
- TCODE_SETTINGS_PLUGINLIST=None
- TCODE_SETTINGS_RENDER=None
- TCODE_SETTINGS_RENDERMESH=None
- TCODE_SETTINGS_TABLE=None
- TCODE_SETTINGS_UNITSANDTOLS=None
- TCODE_SETTINGS_VIEW_LIST=None
- TCODE_SETTINGS__NEVER__USE__THIS=None
- TCODE_SHORT=None
- TCODE_SHOWGRID=None
- TCODE_SHOWGRIDAXES=None
- TCODE_SHOWWORLDAXES=None
- TCODE_SNAPSIZE=None
- TCODE_STUFF=None
- TCODE_SUMMARY=None
- TCODE_TABLE=None
- TCODE_TABLEREC=None
- TCODE_TEXTUREMAP=None
- TCODE_TEXTURE_MAPPING_RECORD=None
- TCODE_TEXTURE_MAPPING_TABLE=None
- TCODE_TEXT_BLOCK=None
- TCODE_TOLERANCE=None
- TCODE_TRANSPARENCY=None
- TCODE_UNIT_AND_TOLERANCES=None
- TCODE_USER=None
- TCODE_USER_RECORD=None
- TCODE_USER_TABLE=None
- TCODE_USER_TABLE_UUID=None
- TCODE_VIEW=None
- TCODE_VIEWPORT=None
- TCODE_VIEWPORT_DISPLAY_MODE=None
- TCODE_VIEWPORT_POSITION=None
- TCODE_VIEWPORT_TRACEINFO=None
- TCODE_VIEWPORT_WALLPAPER=None
- TCODE_VIEW_ATTRIBUTES=None
- TCODE_VIEW_CPLANE=None
- TCODE_VIEW_DISPLAYMODE=None
- TCODE_VIEW_NAME=None
- TCODE_VIEW_POSITION=None
- TCODE_VIEW_RECORD=None
- TCODE_VIEW_SHOWCONAXES=None
- TCODE_VIEW_SHOWCONGRID=None
- TCODE_VIEW_SHOWWORLDAXES=None
- TCODE_VIEW_TARGET=None
- TCODE_VIEW_TRACEIMAGE=None
- TCODE_VIEW_VIEWPORT=None
- TCODE_VIEW_VIEWPORT_USERDATA=None
- TCODE_VIEW_WALLPAPER=None
- TCODE_VIEW_WALLPAPER_V3=None
- TCODE_XDATA=None
- __all__=[
-  'TCODE_ANALYSIS_MESH',
-  'TCODE_ANGULAR_DIMENSION',
-  'TCODE_ANNOTATION',
-  'TCODE_ANNOTATION_LEADER',
-  'TCODE_ANNOTATION_SETTINGS',
-  'TCODE_ANONYMOUS_CHUNK',
-  'TCODE_BITMAP_RECORD',
-  'TCODE_BITMAP_TABLE',
-  'TCODE_BITMAPPREVIEW',
-  'TCODE_BUMPMAP',
-  'TCODE_COMMENTBLOCK',
-  'TCODE_COMPRESSED_MESH_GEOMETRY',
-  'TCODE_CPLANE',
-  'TCODE_CRC',
-  'TCODE_CURRENTLAYER',
-  'TCODE_DICTIONARY',
-  'TCODE_DICTIONARY_END',
-  'TCODE_DICTIONARY_ENTRY',
-  'TCODE_DICTIONARY_ID',
-  'TCODE_DIMSTYLE_RECORD',
-  'TCODE_DIMSTYLE_TABLE',
-  'TCODE_DISP_AM_RESOLUTION',
-  'TCODE_DISP_CPLINES',
-  'TCODE_DISP_MAXLENGTH',
-  'TCODE_DISPLAY',
-  'TCODE_ENDOFFILE',
-  'TCODE_ENDOFFILE_GOO',
-  'TCODE_ENDOFTABLE',
-  'TCODE_FONT_RECORD',
-  'TCODE_FONT_TABLE',
-  'TCODE_GEOMETRY',
-  'TCODE_GROUP_RECORD',
-  'TCODE_GROUP_TABLE',
-  'TCODE_HATCHPATTERN_RECORD',
-  'TCODE_HATCHPATTERN_TABLE',
-  'TCODE_HIDE_TRACE',
-  'TCODE_HISTORYRECORD_RECORD',
-  'TCODE_HISTORYRECORD_TABLE',
-  'TCODE_INSTANCE_DEFINITION_RECORD',
-  'TCODE_INSTANCE_DEFINITION_TABLE',
-  'TCODE_INTERFACE',
-  'TCODE_LAYER',
-  'TCODE_LAYER_OBSELETE_1',
-  'TCODE_LAYER_OBSELETE_2',
-  'TCODE_LAYER_OBSELETE_3',
-  'TCODE_LAYER_RECORD',
-  'TCODE_LAYER_TABLE',
-  'TCODE_LAYERINDEX',
-  'TCODE_LAYERLOCKED',
-  'TCODE_LAYERMATERIALINDEX',
-  'TCODE_LAYERNAME',
-  'TCODE_LAYERON',
-  'TCODE_LAYERPICKABLE',
-  'TCODE_LAYERREF',
-  'TCODE_LAYERRENDERABLE',
-  'TCODE_LAYERSNAPABLE',
-  'TCODE_LAYERSTATE',
-  'TCODE_LAYERTABLE',
-  'TCODE_LAYERTHAWED',
-  'TCODE_LAYERVISIBLE',
-  'TCODE_LEGACY_ASM',
-  'TCODE_LEGACY_ASMSTUFF',
-  'TCODE_LEGACY_BND',
-  'TCODE_LEGACY_BNDSTUFF',
-  'TCODE_LEGACY_CRV',
-  'TCODE_LEGACY_CRVSTUFF',
-  'TCODE_LEGACY_FAC',
-  'TCODE_LEGACY_FACSTUFF',
-  'TCODE_LEGACY_GEOMETRY',
-  'TCODE_LEGACY_PNT',
-  'TCODE_LEGACY_PNTSTUFF',
-  'TCODE_LEGACY_PRT',
-  'TCODE_LEGACY_PRTSTUFF',
-  'TCODE_LEGACY_SHL',
-  'TCODE_LEGACY_SHLSTUFF',
-  'TCODE_LEGACY_SPL',
-  'TCODE_LEGACY_SPLSTUFF',
-  'TCODE_LEGACY_SRF',
-  'TCODE_LEGACY_SRFSTUFF',
-  'TCODE_LEGACY_TOL_ANGLE',
-  'TCODE_LEGACY_TOL_FIT',
-  'TCODE_LEGACY_TRM',
-  'TCODE_LEGACY_TRMSTUFF',
-  'TCODE_LIGHT_RECORD',
-  'TCODE_LIGHT_RECORD_ATTRIBUTES',
-  'TCODE_LIGHT_RECORD_ATTRIBUTES_USERDATA',
-  'TCODE_LIGHT_RECORD_END',
-  'TCODE_LIGHT_TABLE',
-  'TCODE_LINEAR_DIMENSION',
-  'TCODE_LINETYPE_RECORD',
-  'TCODE_LINETYPE_TABLE',
-  'TCODE_MATERIAL_RECORD',
-  'TCODE_MATERIAL_TABLE',
-  'TCODE_MAXIMIZED_VIEWPORT',
-  'TCODE_MESH_OBJECT',
-  'TCODE_NAME',
-  'TCODE_NAMED_CPLANE',
-  'TCODE_NAMED_VIEW',
-  'TCODE_NEAR_CLIP_PLANE',
-  'TCODE_NOTES',
-  'TCODE_OBJECT_RECORD',
-  'TCODE_OBJECT_RECORD_ATTRIBUTES',
-  'TCODE_OBJECT_RECORD_ATTRIBUTES_USERDATA',
-  'TCODE_OBJECT_RECORD_END',
-  'TCODE_OBJECT_RECORD_HISTORY',
-  'TCODE_OBJECT_RECORD_HISTORY_DATA',
-  'TCODE_OBJECT_RECORD_HISTORY_HEADER',
-  'TCODE_OBJECT_RECORD_TYPE',
-  'TCODE_OBJECT_TABLE',
-  'TCODE_OBSOLETE_LAYERSET_RECORD',
-  'TCODE_OBSOLETE_LAYERSET_TABLE',
-  'TCODE_OLD_FULLMESH',
-  'TCODE_OLD_MESH_UV',
-  'TCODE_OLD_MESH_VERTEX_NORMALS',
-  'TCODE_OLD_RH_TRIMESH',
-  'TCODE_OPENNURBS_CLASS',
-  'TCODE_OPENNURBS_CLASS_DATA',
-  'TCODE_OPENNURBS_CLASS_END',
-  'TCODE_OPENNURBS_CLASS_USERDATA',
-  'TCODE_OPENNURBS_CLASS_USERDATA_HEADER',
-  'TCODE_OPENNURBS_CLASS_UUID',
-  'TCODE_OPENNURBS_OBJECT',
-  'TCODE_PROPERTIES_APPLICATION',
-  'TCODE_PROPERTIES_COMPRESSED_PREVIEWIMAGE',
-  'TCODE_PROPERTIES_NOTES',
-  'TCODE_PROPERTIES_OPENNURBS_VERSION',
-  'TCODE_PROPERTIES_PREVIEWIMAGE',
-  'TCODE_PROPERTIES_REVISIONHISTORY',
-  'TCODE_PROPERTIES_TABLE',
-  'TCODE_RADIAL_DIMENSION',
-  'TCODE_RENDER',
-  'TCODE_RENDER_MATERIAL_ID',
-  'TCODE_RENDERMESHPARAMS',
-  'TCODE_RGB',
-  'TCODE_RGBDISPLAY',
-  'TCODE_RH_POINT',
-  'TCODE_RH_SPOTLIGHT',
-  'TCODE_RHINOIO_OBJECT_BREP',
-  'TCODE_RHINOIO_OBJECT_DATA',
-  'TCODE_RHINOIO_OBJECT_END',
-  'TCODE_RHINOIO_OBJECT_NURBS_CURVE',
-  'TCODE_RHINOIO_OBJECT_NURBS_SURFACE',
-  'TCODE_SETTINGS__NEVER__USE__THIS',
-  'TCODE_SETTINGS_ANALYSISMESH',
-  'TCODE_SETTINGS_ANNOTATION',
-  'TCODE_SETTINGS_ATTRIBUTES',
-  'TCODE_SETTINGS_CURRENT_COLOR',
-  'TCODE_SETTINGS_CURRENT_DIMSTYLE_INDEX',
-  'TCODE_SETTINGS_CURRENT_FONT_INDEX',
-  'TCODE_SETTINGS_CURRENT_LAYER_INDEX',
-  'TCODE_SETTINGS_CURRENT_MATERIAL_INDEX',
-  'TCODE_SETTINGS_CURRENT_WIRE_DENSITY',
-  'TCODE_SETTINGS_GRID_DEFAULTS',
-  'TCODE_SETTINGS_MODEL_URL',
-  'TCODE_SETTINGS_NAMED_CPLANE_LIST',
-  'TCODE_SETTINGS_NAMED_VIEW_LIST',
-  'TCODE_SETTINGS_PLUGINLIST',
-  'TCODE_SETTINGS_RENDER',
-  'TCODE_SETTINGS_RENDERMESH',
-  'TCODE_SETTINGS_TABLE',
-  'TCODE_SETTINGS_UNITSANDTOLS',
-  'TCODE_SETTINGS_VIEW_LIST',
-  'TCODE_SHORT',
-  'TCODE_SHOWGRID',
-  'TCODE_SHOWGRIDAXES',
-  'TCODE_SHOWWORLDAXES',
-  'TCODE_SNAPSIZE',
-  'TCODE_STUFF',
-  'TCODE_SUMMARY',
-  'TCODE_TABLE',
-  'TCODE_TABLEREC',
-  'TCODE_TEXT_BLOCK',
-  'TCODE_TEXTURE_MAPPING_RECORD',
-  'TCODE_TEXTURE_MAPPING_TABLE',
-  'TCODE_TEXTUREMAP',
-  'TCODE_TOLERANCE',
-  'TCODE_TRANSPARENCY',
-  'TCODE_UNIT_AND_TOLERANCES',
-  'TCODE_USER',
-  'TCODE_USER_RECORD',
-  'TCODE_USER_TABLE',
-  'TCODE_USER_TABLE_UUID',
-  'TCODE_VIEW',
-  'TCODE_VIEW_ATTRIBUTES',
-  'TCODE_VIEW_CPLANE',
-  'TCODE_VIEW_DISPLAYMODE',
-  'TCODE_VIEW_NAME',
-  'TCODE_VIEW_POSITION',
-  'TCODE_VIEW_RECORD',
-  'TCODE_VIEW_SHOWCONAXES',
-  'TCODE_VIEW_SHOWCONGRID',
-  'TCODE_VIEW_SHOWWORLDAXES',
-  'TCODE_VIEW_TARGET',
-  'TCODE_VIEW_TRACEIMAGE',
-  'TCODE_VIEW_VIEWPORT',
-  'TCODE_VIEW_VIEWPORT_USERDATA',
-  'TCODE_VIEW_WALLPAPER',
-  'TCODE_VIEW_WALLPAPER_V3',
-  'TCODE_VIEWPORT',
-  'TCODE_VIEWPORT_DISPLAY_MODE',
-  'TCODE_VIEWPORT_POSITION',
-  'TCODE_VIEWPORT_TRACEINFO',
-  'TCODE_VIEWPORT_WALLPAPER',
-  'TCODE_XDATA',
- ]
+
+    TCODE_ANALYSIS_MESH = None
+    TCODE_ANGULAR_DIMENSION = None
+    TCODE_ANNOTATION = None
+    TCODE_ANNOTATION_LEADER = None
+    TCODE_ANNOTATION_SETTINGS = None
+    TCODE_ANONYMOUS_CHUNK = None
+    TCODE_BITMAPPREVIEW = None
+    TCODE_BITMAP_RECORD = None
+    TCODE_BITMAP_TABLE = None
+    TCODE_BUMPMAP = None
+    TCODE_COMMENTBLOCK = None
+    TCODE_COMPRESSED_MESH_GEOMETRY = None
+    TCODE_CPLANE = None
+    TCODE_CRC = None
+    TCODE_CURRENTLAYER = None
+    TCODE_DICTIONARY = None
+    TCODE_DICTIONARY_END = None
+    TCODE_DICTIONARY_ENTRY = None
+    TCODE_DICTIONARY_ID = None
+    TCODE_DIMSTYLE_RECORD = None
+    TCODE_DIMSTYLE_TABLE = None
+    TCODE_DISPLAY = None
+    TCODE_DISP_AM_RESOLUTION = None
+    TCODE_DISP_CPLINES = None
+    TCODE_DISP_MAXLENGTH = None
+    TCODE_ENDOFFILE = None
+    TCODE_ENDOFFILE_GOO = None
+    TCODE_ENDOFTABLE = None
+    TCODE_FONT_RECORD = None
+    TCODE_FONT_TABLE = None
+    TCODE_GEOMETRY = None
+    TCODE_GROUP_RECORD = None
+    TCODE_GROUP_TABLE = None
+    TCODE_HATCHPATTERN_RECORD = None
+    TCODE_HATCHPATTERN_TABLE = None
+    TCODE_HIDE_TRACE = None
+    TCODE_HISTORYRECORD_RECORD = None
+    TCODE_HISTORYRECORD_TABLE = None
+    TCODE_INSTANCE_DEFINITION_RECORD = None
+    TCODE_INSTANCE_DEFINITION_TABLE = None
+    TCODE_INTERFACE = None
+    TCODE_LAYER = None
+    TCODE_LAYERINDEX = None
+    TCODE_LAYERLOCKED = None
+    TCODE_LAYERMATERIALINDEX = None
+    TCODE_LAYERNAME = None
+    TCODE_LAYERON = None
+    TCODE_LAYERPICKABLE = None
+    TCODE_LAYERREF = None
+    TCODE_LAYERRENDERABLE = None
+    TCODE_LAYERSNAPABLE = None
+    TCODE_LAYERSTATE = None
+    TCODE_LAYERTABLE = None
+    TCODE_LAYERTHAWED = None
+    TCODE_LAYERVISIBLE = None
+    TCODE_LAYER_OBSELETE_1 = None
+    TCODE_LAYER_OBSELETE_2 = None
+    TCODE_LAYER_OBSELETE_3 = None
+    TCODE_LAYER_RECORD = None
+    TCODE_LAYER_TABLE = None
+    TCODE_LEGACY_ASM = None
+    TCODE_LEGACY_ASMSTUFF = None
+    TCODE_LEGACY_BND = None
+    TCODE_LEGACY_BNDSTUFF = None
+    TCODE_LEGACY_CRV = None
+    TCODE_LEGACY_CRVSTUFF = None
+    TCODE_LEGACY_FAC = None
+    TCODE_LEGACY_FACSTUFF = None
+    TCODE_LEGACY_GEOMETRY = None
+    TCODE_LEGACY_PNT = None
+    TCODE_LEGACY_PNTSTUFF = None
+    TCODE_LEGACY_PRT = None
+    TCODE_LEGACY_PRTSTUFF = None
+    TCODE_LEGACY_SHL = None
+    TCODE_LEGACY_SHLSTUFF = None
+    TCODE_LEGACY_SPL = None
+    TCODE_LEGACY_SPLSTUFF = None
+    TCODE_LEGACY_SRF = None
+    TCODE_LEGACY_SRFSTUFF = None
+    TCODE_LEGACY_TOL_ANGLE = None
+    TCODE_LEGACY_TOL_FIT = None
+    TCODE_LEGACY_TRM = None
+    TCODE_LEGACY_TRMSTUFF = None
+    TCODE_LIGHT_RECORD = None
+    TCODE_LIGHT_RECORD_ATTRIBUTES = None
+    TCODE_LIGHT_RECORD_ATTRIBUTES_USERDATA = None
+    TCODE_LIGHT_RECORD_END = None
+    TCODE_LIGHT_TABLE = None
+    TCODE_LINEAR_DIMENSION = None
+    TCODE_LINETYPE_RECORD = None
+    TCODE_LINETYPE_TABLE = None
+    TCODE_MATERIAL_RECORD = None
+    TCODE_MATERIAL_TABLE = None
+    TCODE_MAXIMIZED_VIEWPORT = None
+    TCODE_MESH_OBJECT = None
+    TCODE_NAME = None
+    TCODE_NAMED_CPLANE = None
+    TCODE_NAMED_VIEW = None
+    TCODE_NEAR_CLIP_PLANE = None
+    TCODE_NOTES = None
+    TCODE_OBJECT_RECORD = None
+    TCODE_OBJECT_RECORD_ATTRIBUTES = None
+    TCODE_OBJECT_RECORD_ATTRIBUTES_USERDATA = None
+    TCODE_OBJECT_RECORD_END = None
+    TCODE_OBJECT_RECORD_HISTORY = None
+    TCODE_OBJECT_RECORD_HISTORY_DATA = None
+    TCODE_OBJECT_RECORD_HISTORY_HEADER = None
+    TCODE_OBJECT_RECORD_TYPE = None
+    TCODE_OBJECT_TABLE = None
+    TCODE_OBSOLETE_LAYERSET_RECORD = None
+    TCODE_OBSOLETE_LAYERSET_TABLE = None
+    TCODE_OLD_FULLMESH = None
+    TCODE_OLD_MESH_UV = None
+    TCODE_OLD_MESH_VERTEX_NORMALS = None
+    TCODE_OLD_RH_TRIMESH = None
+    TCODE_OPENNURBS_CLASS = None
+    TCODE_OPENNURBS_CLASS_DATA = None
+    TCODE_OPENNURBS_CLASS_END = None
+    TCODE_OPENNURBS_CLASS_USERDATA = None
+    TCODE_OPENNURBS_CLASS_USERDATA_HEADER = None
+    TCODE_OPENNURBS_CLASS_UUID = None
+    TCODE_OPENNURBS_OBJECT = None
+    TCODE_PROPERTIES_APPLICATION = None
+    TCODE_PROPERTIES_COMPRESSED_PREVIEWIMAGE = None
+    TCODE_PROPERTIES_NOTES = None
+    TCODE_PROPERTIES_OPENNURBS_VERSION = None
+    TCODE_PROPERTIES_PREVIEWIMAGE = None
+    TCODE_PROPERTIES_REVISIONHISTORY = None
+    TCODE_PROPERTIES_TABLE = None
+    TCODE_RADIAL_DIMENSION = None
+    TCODE_RENDER = None
+    TCODE_RENDERMESHPARAMS = None
+    TCODE_RENDER_MATERIAL_ID = None
+    TCODE_RGB = None
+    TCODE_RGBDISPLAY = None
+    TCODE_RHINOIO_OBJECT_BREP = None
+    TCODE_RHINOIO_OBJECT_DATA = None
+    TCODE_RHINOIO_OBJECT_END = None
+    TCODE_RHINOIO_OBJECT_NURBS_CURVE = None
+    TCODE_RHINOIO_OBJECT_NURBS_SURFACE = None
+    TCODE_RH_POINT = None
+    TCODE_RH_SPOTLIGHT = None
+    TCODE_SETTINGS_ANALYSISMESH = None
+    TCODE_SETTINGS_ANNOTATION = None
+    TCODE_SETTINGS_ATTRIBUTES = None
+    TCODE_SETTINGS_CURRENT_COLOR = None
+    TCODE_SETTINGS_CURRENT_DIMSTYLE_INDEX = None
+    TCODE_SETTINGS_CURRENT_FONT_INDEX = None
+    TCODE_SETTINGS_CURRENT_LAYER_INDEX = None
+    TCODE_SETTINGS_CURRENT_MATERIAL_INDEX = None
+    TCODE_SETTINGS_CURRENT_WIRE_DENSITY = None
+    TCODE_SETTINGS_GRID_DEFAULTS = None
+    TCODE_SETTINGS_MODEL_URL = None
+    TCODE_SETTINGS_NAMED_CPLANE_LIST = None
+    TCODE_SETTINGS_NAMED_VIEW_LIST = None
+    TCODE_SETTINGS_PLUGINLIST = None
+    TCODE_SETTINGS_RENDER = None
+    TCODE_SETTINGS_RENDERMESH = None
+    TCODE_SETTINGS_TABLE = None
+    TCODE_SETTINGS_UNITSANDTOLS = None
+    TCODE_SETTINGS_VIEW_LIST = None
+    TCODE_SETTINGS__NEVER__USE__THIS = None
+    TCODE_SHORT = None
+    TCODE_SHOWGRID = None
+    TCODE_SHOWGRIDAXES = None
+    TCODE_SHOWWORLDAXES = None
+    TCODE_SNAPSIZE = None
+    TCODE_STUFF = None
+    TCODE_SUMMARY = None
+    TCODE_TABLE = None
+    TCODE_TABLEREC = None
+    TCODE_TEXTUREMAP = None
+    TCODE_TEXTURE_MAPPING_RECORD = None
+    TCODE_TEXTURE_MAPPING_TABLE = None
+    TCODE_TEXT_BLOCK = None
+    TCODE_TOLERANCE = None
+    TCODE_TRANSPARENCY = None
+    TCODE_UNIT_AND_TOLERANCES = None
+    TCODE_USER = None
+    TCODE_USER_RECORD = None
+    TCODE_USER_TABLE = None
+    TCODE_USER_TABLE_UUID = None
+    TCODE_VIEW = None
+    TCODE_VIEWPORT = None
+    TCODE_VIEWPORT_DISPLAY_MODE = None
+    TCODE_VIEWPORT_POSITION = None
+    TCODE_VIEWPORT_TRACEINFO = None
+    TCODE_VIEWPORT_WALLPAPER = None
+    TCODE_VIEW_ATTRIBUTES = None
+    TCODE_VIEW_CPLANE = None
+    TCODE_VIEW_DISPLAYMODE = None
+    TCODE_VIEW_NAME = None
+    TCODE_VIEW_POSITION = None
+    TCODE_VIEW_RECORD = None
+    TCODE_VIEW_SHOWCONAXES = None
+    TCODE_VIEW_SHOWCONGRID = None
+    TCODE_VIEW_SHOWWORLDAXES = None
+    TCODE_VIEW_TARGET = None
+    TCODE_VIEW_TRACEIMAGE = None
+    TCODE_VIEW_VIEWPORT = None
+    TCODE_VIEW_VIEWPORT_USERDATA = None
+    TCODE_VIEW_WALLPAPER = None
+    TCODE_VIEW_WALLPAPER_V3 = None
+    TCODE_XDATA = None
+    __all__ = [
+        "TCODE_ANALYSIS_MESH",
+        "TCODE_ANGULAR_DIMENSION",
+        "TCODE_ANNOTATION",
+        "TCODE_ANNOTATION_LEADER",
+        "TCODE_ANNOTATION_SETTINGS",
+        "TCODE_ANONYMOUS_CHUNK",
+        "TCODE_BITMAP_RECORD",
+        "TCODE_BITMAP_TABLE",
+        "TCODE_BITMAPPREVIEW",
+        "TCODE_BUMPMAP",
+        "TCODE_COMMENTBLOCK",
+        "TCODE_COMPRESSED_MESH_GEOMETRY",
+        "TCODE_CPLANE",
+        "TCODE_CRC",
+        "TCODE_CURRENTLAYER",
+        "TCODE_DICTIONARY",
+        "TCODE_DICTIONARY_END",
+        "TCODE_DICTIONARY_ENTRY",
+        "TCODE_DICTIONARY_ID",
+        "TCODE_DIMSTYLE_RECORD",
+        "TCODE_DIMSTYLE_TABLE",
+        "TCODE_DISP_AM_RESOLUTION",
+        "TCODE_DISP_CPLINES",
+        "TCODE_DISP_MAXLENGTH",
+        "TCODE_DISPLAY",
+        "TCODE_ENDOFFILE",
+        "TCODE_ENDOFFILE_GOO",
+        "TCODE_ENDOFTABLE",
+        "TCODE_FONT_RECORD",
+        "TCODE_FONT_TABLE",
+        "TCODE_GEOMETRY",
+        "TCODE_GROUP_RECORD",
+        "TCODE_GROUP_TABLE",
+        "TCODE_HATCHPATTERN_RECORD",
+        "TCODE_HATCHPATTERN_TABLE",
+        "TCODE_HIDE_TRACE",
+        "TCODE_HISTORYRECORD_RECORD",
+        "TCODE_HISTORYRECORD_TABLE",
+        "TCODE_INSTANCE_DEFINITION_RECORD",
+        "TCODE_INSTANCE_DEFINITION_TABLE",
+        "TCODE_INTERFACE",
+        "TCODE_LAYER",
+        "TCODE_LAYER_OBSELETE_1",
+        "TCODE_LAYER_OBSELETE_2",
+        "TCODE_LAYER_OBSELETE_3",
+        "TCODE_LAYER_RECORD",
+        "TCODE_LAYER_TABLE",
+        "TCODE_LAYERINDEX",
+        "TCODE_LAYERLOCKED",
+        "TCODE_LAYERMATERIALINDEX",
+        "TCODE_LAYERNAME",
+        "TCODE_LAYERON",
+        "TCODE_LAYERPICKABLE",
+        "TCODE_LAYERREF",
+        "TCODE_LAYERRENDERABLE",
+        "TCODE_LAYERSNAPABLE",
+        "TCODE_LAYERSTATE",
+        "TCODE_LAYERTABLE",
+        "TCODE_LAYERTHAWED",
+        "TCODE_LAYERVISIBLE",
+        "TCODE_LEGACY_ASM",
+        "TCODE_LEGACY_ASMSTUFF",
+        "TCODE_LEGACY_BND",
+        "TCODE_LEGACY_BNDSTUFF",
+        "TCODE_LEGACY_CRV",
+        "TCODE_LEGACY_CRVSTUFF",
+        "TCODE_LEGACY_FAC",
+        "TCODE_LEGACY_FACSTUFF",
+        "TCODE_LEGACY_GEOMETRY",
+        "TCODE_LEGACY_PNT",
+        "TCODE_LEGACY_PNTSTUFF",
+        "TCODE_LEGACY_PRT",
+        "TCODE_LEGACY_PRTSTUFF",
+        "TCODE_LEGACY_SHL",
+        "TCODE_LEGACY_SHLSTUFF",
+        "TCODE_LEGACY_SPL",
+        "TCODE_LEGACY_SPLSTUFF",
+        "TCODE_LEGACY_SRF",
+        "TCODE_LEGACY_SRFSTUFF",
+        "TCODE_LEGACY_TOL_ANGLE",
+        "TCODE_LEGACY_TOL_FIT",
+        "TCODE_LEGACY_TRM",
+        "TCODE_LEGACY_TRMSTUFF",
+        "TCODE_LIGHT_RECORD",
+        "TCODE_LIGHT_RECORD_ATTRIBUTES",
+        "TCODE_LIGHT_RECORD_ATTRIBUTES_USERDATA",
+        "TCODE_LIGHT_RECORD_END",
+        "TCODE_LIGHT_TABLE",
+        "TCODE_LINEAR_DIMENSION",
+        "TCODE_LINETYPE_RECORD",
+        "TCODE_LINETYPE_TABLE",
+        "TCODE_MATERIAL_RECORD",
+        "TCODE_MATERIAL_TABLE",
+        "TCODE_MAXIMIZED_VIEWPORT",
+        "TCODE_MESH_OBJECT",
+        "TCODE_NAME",
+        "TCODE_NAMED_CPLANE",
+        "TCODE_NAMED_VIEW",
+        "TCODE_NEAR_CLIP_PLANE",
+        "TCODE_NOTES",
+        "TCODE_OBJECT_RECORD",
+        "TCODE_OBJECT_RECORD_ATTRIBUTES",
+        "TCODE_OBJECT_RECORD_ATTRIBUTES_USERDATA",
+        "TCODE_OBJECT_RECORD_END",
+        "TCODE_OBJECT_RECORD_HISTORY",
+        "TCODE_OBJECT_RECORD_HISTORY_DATA",
+        "TCODE_OBJECT_RECORD_HISTORY_HEADER",
+        "TCODE_OBJECT_RECORD_TYPE",
+        "TCODE_OBJECT_TABLE",
+        "TCODE_OBSOLETE_LAYERSET_RECORD",
+        "TCODE_OBSOLETE_LAYERSET_TABLE",
+        "TCODE_OLD_FULLMESH",
+        "TCODE_OLD_MESH_UV",
+        "TCODE_OLD_MESH_VERTEX_NORMALS",
+        "TCODE_OLD_RH_TRIMESH",
+        "TCODE_OPENNURBS_CLASS",
+        "TCODE_OPENNURBS_CLASS_DATA",
+        "TCODE_OPENNURBS_CLASS_END",
+        "TCODE_OPENNURBS_CLASS_USERDATA",
+        "TCODE_OPENNURBS_CLASS_USERDATA_HEADER",
+        "TCODE_OPENNURBS_CLASS_UUID",
+        "TCODE_OPENNURBS_OBJECT",
+        "TCODE_PROPERTIES_APPLICATION",
+        "TCODE_PROPERTIES_COMPRESSED_PREVIEWIMAGE",
+        "TCODE_PROPERTIES_NOTES",
+        "TCODE_PROPERTIES_OPENNURBS_VERSION",
+        "TCODE_PROPERTIES_PREVIEWIMAGE",
+        "TCODE_PROPERTIES_REVISIONHISTORY",
+        "TCODE_PROPERTIES_TABLE",
+        "TCODE_RADIAL_DIMENSION",
+        "TCODE_RENDER",
+        "TCODE_RENDER_MATERIAL_ID",
+        "TCODE_RENDERMESHPARAMS",
+        "TCODE_RGB",
+        "TCODE_RGBDISPLAY",
+        "TCODE_RH_POINT",
+        "TCODE_RH_SPOTLIGHT",
+        "TCODE_RHINOIO_OBJECT_BREP",
+        "TCODE_RHINOIO_OBJECT_DATA",
+        "TCODE_RHINOIO_OBJECT_END",
+        "TCODE_RHINOIO_OBJECT_NURBS_CURVE",
+        "TCODE_RHINOIO_OBJECT_NURBS_SURFACE",
+        "TCODE_SETTINGS__NEVER__USE__THIS",
+        "TCODE_SETTINGS_ANALYSISMESH",
+        "TCODE_SETTINGS_ANNOTATION",
+        "TCODE_SETTINGS_ATTRIBUTES",
+        "TCODE_SETTINGS_CURRENT_COLOR",
+        "TCODE_SETTINGS_CURRENT_DIMSTYLE_INDEX",
+        "TCODE_SETTINGS_CURRENT_FONT_INDEX",
+        "TCODE_SETTINGS_CURRENT_LAYER_INDEX",
+        "TCODE_SETTINGS_CURRENT_MATERIAL_INDEX",
+        "TCODE_SETTINGS_CURRENT_WIRE_DENSITY",
+        "TCODE_SETTINGS_GRID_DEFAULTS",
+        "TCODE_SETTINGS_MODEL_URL",
+        "TCODE_SETTINGS_NAMED_CPLANE_LIST",
+        "TCODE_SETTINGS_NAMED_VIEW_LIST",
+        "TCODE_SETTINGS_PLUGINLIST",
+        "TCODE_SETTINGS_RENDER",
+        "TCODE_SETTINGS_RENDERMESH",
+        "TCODE_SETTINGS_TABLE",
+        "TCODE_SETTINGS_UNITSANDTOLS",
+        "TCODE_SETTINGS_VIEW_LIST",
+        "TCODE_SHORT",
+        "TCODE_SHOWGRID",
+        "TCODE_SHOWGRIDAXES",
+        "TCODE_SHOWWORLDAXES",
+        "TCODE_SNAPSIZE",
+        "TCODE_STUFF",
+        "TCODE_SUMMARY",
+        "TCODE_TABLE",
+        "TCODE_TABLEREC",
+        "TCODE_TEXT_BLOCK",
+        "TCODE_TEXTURE_MAPPING_RECORD",
+        "TCODE_TEXTURE_MAPPING_TABLE",
+        "TCODE_TEXTUREMAP",
+        "TCODE_TOLERANCE",
+        "TCODE_TRANSPARENCY",
+        "TCODE_UNIT_AND_TOLERANCES",
+        "TCODE_USER",
+        "TCODE_USER_RECORD",
+        "TCODE_USER_TABLE",
+        "TCODE_USER_TABLE_UUID",
+        "TCODE_VIEW",
+        "TCODE_VIEW_ATTRIBUTES",
+        "TCODE_VIEW_CPLANE",
+        "TCODE_VIEW_DISPLAYMODE",
+        "TCODE_VIEW_NAME",
+        "TCODE_VIEW_POSITION",
+        "TCODE_VIEW_RECORD",
+        "TCODE_VIEW_SHOWCONAXES",
+        "TCODE_VIEW_SHOWCONGRID",
+        "TCODE_VIEW_SHOWWORLDAXES",
+        "TCODE_VIEW_TARGET",
+        "TCODE_VIEW_TRACEIMAGE",
+        "TCODE_VIEW_VIEWPORT",
+        "TCODE_VIEW_VIEWPORT_USERDATA",
+        "TCODE_VIEW_WALLPAPER",
+        "TCODE_VIEW_WALLPAPER_V3",
+        "TCODE_VIEWPORT",
+        "TCODE_VIEWPORT_DISPLAY_MODE",
+        "TCODE_VIEWPORT_POSITION",
+        "TCODE_VIEWPORT_TRACEINFO",
+        "TCODE_VIEWPORT_WALLPAPER",
+        "TCODE_XDATA",
+    ]
 
 
 class File3dmWriteOptions(object):
- """
+    """
  Options used by File3dm.Write
 
  
 
  File3dmWriteOptions()
  """
- SaveAnalysisMeshes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Include analysis meshes in the file. Default is true
+
+    SaveAnalysisMeshes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Include analysis meshes in the file. Default is true
 
 
 
@@ -3706,8 +3959,10 @@ Set: SaveAnalysisMeshes(self: File3dmWriteOptions)=value
 
 """
 
- SaveRenderMeshes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Include Render meshes in the file. Default is true
+    SaveRenderMeshes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Include Render meshes in the file. Default is true
 
 
 
@@ -3719,8 +3974,10 @@ Set: SaveRenderMeshes(self: File3dmWriteOptions)=value
 
 """
 
- SaveUserData=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Include custom user data in the file. Default is true
+    SaveUserData = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Include custom user data in the file. Default is true
 
 
 
@@ -3732,8 +3989,8 @@ Set: SaveUserData(self: File3dmWriteOptions)=value
 
 """
 
- Version=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """File version. Default is 5
+    Version = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """File version. Default is 5
 
 
 
@@ -3746,36 +4003,41 @@ Set: Version(self: File3dmWriteOptions)=value
 """
 
 
+class FileReadOptions(object, IDisposable):
+    """ FileReadOptions() """
 
-class FileReadOptions(object,IDisposable):
- """ FileReadOptions() """
- def Dispose(self):
-  """ Dispose(self: FileReadOptions) """
-  pass
- def __enter__(self,*args):
-  """
+    def Dispose(self):
+        """ Dispose(self: FileReadOptions) """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- BatchMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """true means you cannot ask questions during reading. (no dialogs,no "getters",etc.)
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    BatchMode = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """true means you cannot ask questions during reading. (no dialogs,no "getters",etc.)
 
 
 
@@ -3787,8 +4049,10 @@ Set: BatchMode(self: FileReadOptions)=value
 
 """
 
- ImportMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """true means we are merging whatever is being read into an existing document.
+    ImportMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """true means we are merging whatever is being read into an existing document.
 
     This means you need to consider things like:
 
@@ -3814,8 +4078,10 @@ Set: ImportMode(self: FileReadOptions)=value
 
 """
 
- ImportReferenceMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """true means we are reading information for a work session reference model
+    ImportReferenceMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """true means we are reading information for a work session reference model
 
    or a linked instance definition.
 
@@ -3829,8 +4095,10 @@ Set: ImportReferenceMode(self: FileReadOptions)=value
 
 """
 
- InsertMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """true means we are reading information that will be used to create an
+    InsertMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """true means we are reading information that will be used to create an
 
    instance definition or some other type of "inserting" that is supported
 
@@ -3846,8 +4114,8 @@ Set: InsertMode(self: FileReadOptions)=value
 
 """
 
- NewMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """true means we are reading template information in something like
+    NewMode = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """true means we are reading template information in something like
 
    a OnFileNew event.
 
@@ -3861,8 +4129,8 @@ Set: NewMode(self: FileReadOptions)=value
 
 """
 
- OpenMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """true means we are reading the information into an empty document.  This
+    OpenMode = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """true means we are reading the information into an empty document.  This
 
    means you need to consider things like:
 
@@ -3878,8 +4146,10 @@ Set: OpenMode(self: FileReadOptions)=value
 
 """
 
- ScaleGeometry=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """true: If ImportMode is true and the geometry in the file being read has
+    ScaleGeometry = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """true: If ImportMode is true and the geometry in the file being read has
 
    a unit system different from the model's unit system,then apply the unit
 
@@ -3907,8 +4177,10 @@ Set: ScaleGeometry(self: FileReadOptions)=value
 
 """
 
- UseScaleGeometry=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If this parameter is true,then no questions are asked when unit conversion
+    UseScaleGeometry = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """If this parameter is true,then no questions are asked when unit conversion
 
    scaling is optional and the setting specified by ScaleGeometry is used.
 
@@ -3923,58 +4195,68 @@ Set: UseScaleGeometry(self: FileReadOptions)=value
 """
 
 
-
 class FileType(object):
- """ FileType(extension: str,description: str) """
- @staticmethod
- def __new__(self,extension,description):
-  """ __new__(cls: type,extension: str,description: str) """
-  pass
- Description=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Description(self: FileType) -> str
+    """ FileType(extension: str,description: str) """
+
+    @staticmethod
+    def __new__(self, extension, description):
+        """ __new__(cls: type,extension: str,description: str) """
+        pass
+
+    Description = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: Description(self: FileType) -> str
 
 
 
 """
 
- Extension=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Extension(self: FileType) -> str
+    Extension = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Extension(self: FileType) -> str
 
 
 
 """
 
 
+class FileWriteOptions(object, IDisposable):
+    """ FileWriteOptions() """
 
-class FileWriteOptions(object,IDisposable):
- """ FileWriteOptions() """
- def Dispose(self):
-  """ Dispose(self: FileWriteOptions) """
-  pass
- def __enter__(self,*args):
-  """
+    def Dispose(self):
+        """ Dispose(self: FileWriteOptions) """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- ApplyTransform=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: ApplyTransform(self: FileWriteOptions) -> bool
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    ApplyTransform = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: ApplyTransform(self: FileWriteOptions) -> bool
 
 
 
@@ -3982,8 +4264,10 @@ Set: ApplyTransform(self: FileWriteOptions)=value
 
 """
 
- FileVersion=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: FileVersion(self: FileWriteOptions) -> int
+    FileVersion = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: FileVersion(self: FileWriteOptions) -> int
 
 
 
@@ -3991,8 +4275,10 @@ Set: FileVersion(self: FileWriteOptions)=value
 
 """
 
- IncludeBitmapTable=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IncludeBitmapTable(self: FileWriteOptions) -> bool
+    IncludeBitmapTable = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IncludeBitmapTable(self: FileWriteOptions) -> bool
 
 
 
@@ -4000,8 +4286,10 @@ Set: IncludeBitmapTable(self: FileWriteOptions)=value
 
 """
 
- IncludeHistory=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IncludeHistory(self: FileWriteOptions) -> bool
+    IncludeHistory = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IncludeHistory(self: FileWriteOptions) -> bool
 
 
 
@@ -4009,8 +4297,10 @@ Set: IncludeHistory(self: FileWriteOptions)=value
 
 """
 
- IncludePreviewImage=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IncludePreviewImage(self: FileWriteOptions) -> bool
+    IncludePreviewImage = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IncludePreviewImage(self: FileWriteOptions) -> bool
 
 
 
@@ -4018,8 +4308,10 @@ Set: IncludePreviewImage(self: FileWriteOptions)=value
 
 """
 
- IncludeRenderMeshes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IncludeRenderMeshes(self: FileWriteOptions) -> bool
+    IncludeRenderMeshes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IncludeRenderMeshes(self: FileWriteOptions) -> bool
 
 
 
@@ -4027,8 +4319,10 @@ Set: IncludeRenderMeshes(self: FileWriteOptions)=value
 
 """
 
- SuppressDialogBoxes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: SuppressDialogBoxes(self: FileWriteOptions) -> bool
+    SuppressDialogBoxes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: SuppressDialogBoxes(self: FileWriteOptions) -> bool
 
 
 
@@ -4036,8 +4330,10 @@ Set: SuppressDialogBoxes(self: FileWriteOptions)=value
 
 """
 
- WriteAsTemplate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: WriteAsTemplate(self: FileWriteOptions) -> bool
+    WriteAsTemplate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: WriteAsTemplate(self: FileWriteOptions) -> bool
 
 
 
@@ -4045,8 +4341,10 @@ Set: WriteAsTemplate(self: FileWriteOptions)=value
 
 """
 
- WriteGeometryOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: WriteGeometryOnly(self: FileWriteOptions) -> bool
+    WriteGeometryOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: WriteGeometryOnly(self: FileWriteOptions) -> bool
 
 
 
@@ -4054,8 +4352,10 @@ Set: WriteGeometryOnly(self: FileWriteOptions)=value
 
 """
 
- WriteSelectedObjectsOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: WriteSelectedObjectsOnly(self: FileWriteOptions) -> bool
+    WriteSelectedObjectsOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: WriteSelectedObjectsOnly(self: FileWriteOptions) -> bool
 
 
 
@@ -4063,8 +4363,10 @@ Set: WriteSelectedObjectsOnly(self: FileWriteOptions)=value
 
 """
 
- WriteUserData=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: WriteUserData(self: FileWriteOptions) -> bool
+    WriteUserData = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: WriteUserData(self: FileWriteOptions) -> bool
 
 
 
@@ -4072,8 +4374,8 @@ Set: WriteUserData(self: FileWriteOptions)=value
 
 """
 
- Xform=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Xform(self: FileWriteOptions) -> Transform
+    Xform = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Xform(self: FileWriteOptions) -> Transform
 
 
 
@@ -4082,9 +4384,8 @@ Set: Xform(self: FileWriteOptions)=value
 """
 
 
-
 class SerializationOptions(object):
- """
+    """
  Contains options for serializing -or storing- data,
 
     such as Rhino version and user data.
@@ -4093,8 +4394,11 @@ class SerializationOptions(object):
 
  SerializationOptions()
  """
- RhinoVersion=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating the Rhino version.
+
+    RhinoVersion = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating the Rhino version.
 
 
 
@@ -4106,8 +4410,10 @@ Set: RhinoVersion(self: SerializationOptions)=value
 
 """
 
- WriteUserData=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether to write user data.
+    WriteUserData = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether to write user data.
 
 
 
@@ -4120,9 +4426,8 @@ Set: WriteUserData(self: SerializationOptions)=value
 """
 
 
-
-class TextLog(object,IDisposable):
- """
+class TextLog(object, IDisposable):
+    """
  Used for collecting text data
 
  
@@ -4131,22 +4436,25 @@ class TextLog(object,IDisposable):
 
  TextLog(filename: str)
  """
- def Dispose(self):
-  """
+
+    def Dispose(self):
+        """
   Dispose(self: TextLog)
 
    Actively reclaims unmanaged resources that this instance uses.
   """
-  pass
- def PopIndent(self):
-  """
+        pass
+
+    def PopIndent(self):
+        """
   PopIndent(self: TextLog)
 
    Decrease the indentation level
   """
-  pass
- def Print(self,*__args):
-  """
+        pass
+
+    def Print(self, *__args):
+        """
   Print(self: TextLog,format: str,arg0: object,arg1: object)
 
    Send formatted text to the textlog
@@ -4159,23 +4467,26 @@ class TextLog(object,IDisposable):
 
    Send text to the textlog
   """
-  pass
- def PrintWrappedText(self,text,lineLength):
-  """
+        pass
+
+    def PrintWrappedText(self, text, lineLength):
+        """
   PrintWrappedText(self: TextLog,text: str,lineLength: int)
 
    Send text wrapped at a set line length
   """
-  pass
- def PushIndent(self):
-  """
+        pass
+
+    def PushIndent(self):
+        """
   PushIndent(self: TextLog)
 
    Increase the indentation level
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: TextLog) -> str
 
   
@@ -4190,41 +4501,50 @@ class TextLog(object,IDisposable):
 
     retrieved using ToString for this case
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,filename=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, filename=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,filename: str)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- IndentSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """0: one tab per indent. >0: number of spaces per indent
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    IndentSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """0: one tab per indent. >0: number of spaces per indent
 
 
 
@@ -4235,6 +4555,3 @@ Get: IndentSize(self: TextLog) -> int
 Set: IndentSize(self: TextLog)=value
 
 """
-
-
-

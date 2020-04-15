@@ -1,5 +1,5 @@
 class StackFrame(object):
- """
+    """
  Provides information about a System.Diagnostics.StackFrame,which represents a function call on the call stack for the current thread.
 
  
@@ -16,8 +16,9 @@ class StackFrame(object):
 
  StackFrame(fileName: str,lineNumber: int,colNumber: int)
  """
- def GetFileColumnNumber(self):
-  """
+
+    def GetFileColumnNumber(self):
+        """
   GetFileColumnNumber(self: StackFrame) -> int
 
   
@@ -30,9 +31,10 @@ class StackFrame(object):
 
    Returns: The file column number,or 0 (zero) if the file column number cannot be determined.
   """
-  pass
- def GetFileLineNumber(self):
-  """
+        pass
+
+    def GetFileLineNumber(self):
+        """
   GetFileLineNumber(self: StackFrame) -> int
 
   
@@ -45,9 +47,10 @@ class StackFrame(object):
 
    Returns: The file line number,or 0 (zero) if the file line number cannot be determined.
   """
-  pass
- def GetFileName(self):
-  """
+        pass
+
+    def GetFileName(self):
+        """
   GetFileName(self: StackFrame) -> str
 
   
@@ -60,9 +63,10 @@ class StackFrame(object):
 
    Returns: The file name,or null if the file name cannot be determined.
   """
-  pass
- def GetILOffset(self):
-  """
+        pass
+
+    def GetILOffset(self):
+        """
   GetILOffset(self: StackFrame) -> int
 
   
@@ -79,9 +83,10 @@ class StackFrame(object):
 
    Returns: The offset from the start of the MSIL code for the method that is executing.
   """
-  pass
- def GetMethod(self):
-  """
+        pass
+
+    def GetMethod(self):
+        """
   GetMethod(self: StackFrame) -> MethodBase
 
   
@@ -90,9 +95,10 @@ class StackFrame(object):
 
    Returns: The method in which the frame is executing.
   """
-  pass
- def GetNativeOffset(self):
-  """
+        pass
+
+    def GetNativeOffset(self):
+        """
   GetNativeOffset(self: StackFrame) -> int
 
   
@@ -107,9 +113,10 @@ class StackFrame(object):
 
    Returns: The offset from the start of the JIT-compiled code for the method that is being executed.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: StackFrame) -> str
 
   
@@ -118,10 +125,11 @@ class StackFrame(object):
 
    Returns: A readable representation of the stack trace.
   """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,fNeedFileInfo: bool)
@@ -134,6 +142,6 @@ class StackFrame(object):
 
   __new__(cls: type,fileName: str,lineNumber: int,colNumber: int)
   """
-  pass
- OFFSET_UNKNOWN=-1
+        pass
 
+    OFFSET_UNKNOWN = -1

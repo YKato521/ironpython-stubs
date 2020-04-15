@@ -1,19 +1,22 @@
-class MultiReferenceAnnotationOptions(object,IDisposable):
- """
+class MultiReferenceAnnotationOptions(object, IDisposable):
+    """
  Options which control the creation of MultiReferenceAnnotations.
 
  
 
  MultiReferenceAnnotationOptions(multiReferenceAnnotationType: MultiReferenceAnnotationType)
  """
- def Dispose(self):
-  """ Dispose(self: MultiReferenceAnnotationOptions) """
-  pass
- def ElementsMatchReferenceCategory(self,elements):
-  """ ElementsMatchReferenceCategory(self: MultiReferenceAnnotationOptions,elements: ICollection[ElementId]) -> bool """
-  pass
- def GetElementsToDimension(self):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: MultiReferenceAnnotationOptions) """
+        pass
+
+    def ElementsMatchReferenceCategory(self, elements):
+        """ ElementsMatchReferenceCategory(self: MultiReferenceAnnotationOptions,elements: ICollection[ElementId]) -> bool """
+        pass
+
+    def GetElementsToDimension(self):
+        """
   GetElementsToDimension(self: MultiReferenceAnnotationOptions) -> ICollection[ElementId]
 
   
@@ -22,9 +25,10 @@ class MultiReferenceAnnotationOptions(object,IDisposable):
 
    Returns: The elements which the dimension will witness.
   """
-  pass
- def IsAllowedDimensionStyleType(self,dimensionStyleType):
-  """
+        pass
+
+    def IsAllowedDimensionStyleType(self, dimensionStyleType):
+        """
   IsAllowedDimensionStyleType(self: MultiReferenceAnnotationOptions,dimensionStyleType: DimensionStyleType) -> bool
 
   
@@ -41,31 +45,41 @@ class MultiReferenceAnnotationOptions(object,IDisposable):
 
    Returns: True if the type is allowed.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: MultiReferenceAnnotationOptions,disposing: bool) """
-  pass
- def SetElementsToDimension(self,elementsToDimension):
-  """ SetElementsToDimension(self: MultiReferenceAnnotationOptions,elementsToDimension: ICollection[ElementId]) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,multiReferenceAnnotationType):
-  """ __new__(cls: type,multiReferenceAnnotationType: MultiReferenceAnnotationType) """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- DimensionLineDirection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The direction vector of the dimension line.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: MultiReferenceAnnotationOptions,disposing: bool) """
+        pass
+
+    def SetElementsToDimension(self, elementsToDimension):
+        """ SetElementsToDimension(self: MultiReferenceAnnotationOptions,elementsToDimension: ICollection[ElementId]) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, multiReferenceAnnotationType):
+        """ __new__(cls: type,multiReferenceAnnotationType: MultiReferenceAnnotationType) """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    DimensionLineDirection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The direction vector of the dimension line.
 
 
 
@@ -77,8 +91,10 @@ Set: DimensionLineDirection(self: MultiReferenceAnnotationOptions)=value
 
 """
 
- DimensionLineOrigin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The origin point for the dimension line.
+    DimensionLineOrigin = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The origin point for the dimension line.
 
 
 
@@ -90,8 +106,10 @@ Set: DimensionLineOrigin(self: MultiReferenceAnnotationOptions)=value
 
 """
 
- DimensionPlaneNormal=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The normal vector to the dimension plane.
+    DimensionPlaneNormal = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The normal vector to the dimension plane.
 
 
 
@@ -103,8 +121,10 @@ Set: DimensionPlaneNormal(self: MultiReferenceAnnotationOptions)=value
 
 """
 
- DimensionStyleType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The dimension style type to be used by the new MultiReferenceAnnotation.
+    DimensionStyleType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The dimension style type to be used by the new MultiReferenceAnnotation.
 
 
 
@@ -116,8 +136,10 @@ Set: DimensionStyleType(self: MultiReferenceAnnotationOptions)=value
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -127,8 +149,10 @@ Get: IsValidObject(self: MultiReferenceAnnotationOptions) -> bool
 
 """
 
- MultiReferenceAnnotationType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The MultiReferenceAnnotationType to be used by the new MultiReferenceAnnotation.
+    MultiReferenceAnnotationType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The MultiReferenceAnnotationType to be used by the new MultiReferenceAnnotation.
 
 
 
@@ -138,8 +162,10 @@ Get: MultiReferenceAnnotationType(self: MultiReferenceAnnotationOptions) -> Mult
 
 """
 
- TagHasLeader=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When true the tag will be created with an attached leader.
+    TagHasLeader = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """When true the tag will be created with an attached leader.
 
    When false the tag will be created without a leader.
 
@@ -153,8 +179,10 @@ Set: TagHasLeader(self: MultiReferenceAnnotationOptions)=value
 
 """
 
- TagHeadPosition=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The position for the tag's head.
+    TagHeadPosition = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The position for the tag's head.
 
 
 
@@ -165,5 +193,3 @@ Get: TagHeadPosition(self: MultiReferenceAnnotationOptions) -> XYZ
 Set: TagHeadPosition(self: MultiReferenceAnnotationOptions)=value
 
 """
-
-

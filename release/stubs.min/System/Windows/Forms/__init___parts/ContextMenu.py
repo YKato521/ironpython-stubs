@@ -1,5 +1,5 @@
-class ContextMenu(Menu,IComponent,IDisposable):
- """
+class ContextMenu(Menu, IComponent, IDisposable):
+    """
  Represents a shortcut menu. Although System.Windows.Forms.ContextMenuStrip replaces and adds functionality to the System.Windows.Forms.ContextMenu control of previous versions,System.Windows.Forms.ContextMenu is retained for both backward compatibility and future use if you choose.
 
  
@@ -8,8 +8,9 @@ class ContextMenu(Menu,IComponent,IDisposable):
 
  ContextMenu(menuItems: Array[MenuItem])
  """
- def CloneMenu(self,*args):
-  """
+
+    def CloneMenu(self, *args):
+        """
   CloneMenu(self: Menu,menuSrc: Menu)
 
    Copies the System.Windows.Forms.Menu that is passed as a parameter to the current 
@@ -22,9 +23,10 @@ class ContextMenu(Menu,IComponent,IDisposable):
 
    menuSrc: The System.Windows.Forms.Menu to copy.
   """
-  pass
- def CreateMenuHandle(self,*args):
-  """
+        pass
+
+    def CreateMenuHandle(self, *args):
+        """
   CreateMenuHandle(self: Menu) -> IntPtr
 
   
@@ -33,9 +35,10 @@ class ContextMenu(Menu,IComponent,IDisposable):
 
    Returns: A handle to the menu if the method succeeds; otherwise,null.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: Menu,disposing: bool)
 
    Disposes of the resources,other than memory,used by the System.Windows.Forms.Menu.
@@ -44,9 +47,10 @@ class ContextMenu(Menu,IComponent,IDisposable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def FindMergePosition(self,*args):
-  """
+        pass
+
+    def FindMergePosition(self, *args):
+        """
   FindMergePosition(self: Menu,mergeOrder: int) -> int
 
   
@@ -59,9 +63,10 @@ class ContextMenu(Menu,IComponent,IDisposable):
 
    Returns: The position at which a menu item should be inserted into the menu.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -80,9 +85,10 @@ class ContextMenu(Menu,IComponent,IDisposable):
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -113,9 +119,10 @@ class ContextMenu(Menu,IComponent,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def OnCollapse(self,*args):
-  """
+        pass
+
+    def OnCollapse(self, *args):
+        """
   OnCollapse(self: ContextMenu,e: EventArgs)
 
    Raises the System.Windows.Forms.ContextMenu.Collapse event.
@@ -124,9 +131,10 @@ class ContextMenu(Menu,IComponent,IDisposable):
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnPopup(self,*args):
-  """
+        pass
+
+    def OnPopup(self, *args):
+        """
   OnPopup(self: ContextMenu,e: EventArgs)
 
    Raises the System.Windows.Forms.ContextMenu.Popup event
@@ -135,9 +143,10 @@ class ContextMenu(Menu,IComponent,IDisposable):
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def ProcessCmdKey(self,*args):
-  """
+        pass
+
+    def ProcessCmdKey(self, *args):
+        """
   ProcessCmdKey(self: ContextMenu,msg: Message,keyData: Keys,control: Control) -> (bool,Message)
 
   
@@ -176,9 +185,10 @@ class ContextMenu(Menu,IComponent,IDisposable):
 
    Returns: true if the character was processed by the control; otherwise,false.
   """
-  pass
- def Show(self,control,pos,alignment=None):
-  """
+        pass
+
+    def Show(self, control, pos, alignment=None):
+        """
   Show(self: ContextMenu,control: Control,pos: Point,alignment: LeftRightAlignment)
 
    Displays the shortcut menu at the specified position and with the specified alignment.
@@ -223,59 +233,71 @@ class ContextMenu(Menu,IComponent,IDisposable):
 
     control parameter.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,menuItems=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, menuItems=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,menuItems: Array[MenuItem])
   """
-  pass
- def __str__(self,*args):
-  pass
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- RightToLeft=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether text displayed by the control is displayed from right to left.
+    RightToLeft = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether text displayed by the control is displayed from right to left.
 
 
 
@@ -287,8 +309,10 @@ Set: RightToLeft(self: ContextMenu)=value
 
 """
 
- SourceControl=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the control that is displaying the shortcut menu.
+    SourceControl = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the control that is displaying the shortcut menu.
 
 
 
@@ -298,7 +322,5 @@ Get: SourceControl(self: ContextMenu) -> Control
 
 """
 
-
- Collapse=None
- Popup=None
-
+    Collapse = None
+    Popup = None

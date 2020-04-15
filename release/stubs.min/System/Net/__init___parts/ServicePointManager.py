@@ -1,8 +1,9 @@
 class ServicePointManager(object):
- """ Manages the collection of System.Net.ServicePoint objects. """
- @staticmethod
- def FindServicePoint(*__args):
-  """
+    """ Manages the collection of System.Net.ServicePoint objects. """
+
+    @staticmethod
+    def FindServicePoint(*__args):
+        """
   FindServicePoint(address: Uri,proxy: IWebProxy) -> ServicePoint
 
   
@@ -55,10 +56,11 @@ class ServicePointManager(object):
 
    Returns: The System.Net.ServicePoint object that manages communications for the request.
   """
-  pass
- @staticmethod
- def SetTcpKeepAlive(enabled,keepAliveTime,keepAliveInterval):
-  """
+        pass
+
+    @staticmethod
+    def SetTcpKeepAlive(enabled, keepAliveTime, keepAliveInterval):
+        """
   SetTcpKeepAlive(enabled: bool,keepAliveTime: int,keepAliveInterval: int)
 
    Enables or disables the keep-alive option on a TCP connection.
@@ -87,20 +89,20 @@ class ServicePointManager(object):
 
     equal to zero is passed an System.ArgumentOutOfRangeException is thrown.
   """
-  pass
- CertificatePolicy=None
- CheckCertificateRevocationList=False
- DefaultConnectionLimit=2
- DefaultNonPersistentConnectionLimit=4
- DefaultPersistentConnectionLimit=2
- DnsRefreshTimeout=120000
- EnableDnsRoundRobin=False
- EncryptionPolicy=None
- Expect100Continue=True
- MaxServicePointIdleTime=100000
- MaxServicePoints=0
- ReusePort=False
- SecurityProtocol=None
- ServerCertificateValidationCallback=None
- UseNagleAlgorithm=True
+        pass
 
+    CertificatePolicy = None
+    CheckCertificateRevocationList = False
+    DefaultConnectionLimit = 2
+    DefaultNonPersistentConnectionLimit = 4
+    DefaultPersistentConnectionLimit = 2
+    DnsRefreshTimeout = 120000
+    EnableDnsRoundRobin = False
+    EncryptionPolicy = None
+    Expect100Continue = True
+    MaxServicePointIdleTime = 100000
+    MaxServicePoints = 0
+    ReusePort = False
+    SecurityProtocol = None
+    ServerCertificateValidationCallback = None
+    UseNagleAlgorithm = True

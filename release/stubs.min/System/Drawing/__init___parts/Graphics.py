@@ -1,7 +1,8 @@
-class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
- """ Encapsulates a GDI+ drawing surface. This class cannot be inherited. """
- def AddMetafileComment(self,data):
-  """
+class Graphics(MarshalByRefObject, IDisposable, IDeviceContext):
+    """ Encapsulates a GDI+ drawing surface. This class cannot be inherited. """
+
+    def AddMetafileComment(self, data):
+        """
   AddMetafileComment(self: Graphics,data: Array[Byte])
 
    Adds a comment to the current System.Drawing.Imaging.Metafile.
@@ -10,9 +11,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    data: Array of bytes that contains the comment.
   """
-  pass
- def BeginContainer(self,dstrect=None,srcrect=None,unit=None):
-  """
+        pass
+
+    def BeginContainer(self, dstrect=None, srcrect=None, unit=None):
+        """
   BeginContainer(self: Graphics,dstrect: Rectangle,srcrect: Rectangle,unit: GraphicsUnit) -> GraphicsContainer
 
   
@@ -99,9 +101,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
     this System.Drawing.Graphics at the time of the method call.
   """
-  pass
- def Clear(self,color):
-  """
+        pass
+
+    def Clear(self, color):
+        """
   Clear(self: Graphics,color: Color)
 
    Clears the entire drawing surface and fills it with the specified background color.
@@ -110,9 +113,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    color: System.Drawing.Color structure that represents the background color of the drawing surface.
   """
-  pass
- def CopyFromScreen(self,*__args):
-  """
+        pass
+
+    def CopyFromScreen(self, *__args):
+        """
   CopyFromScreen(self: Graphics,upperLeftSource: Point,upperLeftDestination: Point,blockRegionSize: Size,copyPixelOperation: CopyPixelOperation)
 
    Performs a bit-block transfer of color data,corresponding to a rectangle of pixels,from the 
@@ -189,16 +193,18 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    blockRegionSize: The size of the area to be transferred.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: Graphics)
 
    Releases all resources used by this System.Drawing.Graphics.
   """
-  pass
- def DrawArc(self,pen,*__args):
-  """
+        pass
+
+    def DrawArc(self, pen, *__args):
+        """
   DrawArc(self: Graphics,pen: Pen,x: int,y: int,width: int,height: int,startAngle: int,sweepAngle: int)
 
    Draws an arc representing a portion of an ellipse specified by a pair of coordinates,a width,
@@ -283,9 +289,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    sweepAngle: Angle in degrees measured clockwise from the startAngle parameter to ending point of the arc.
   """
-  pass
- def DrawBezier(self,pen,*__args):
-  """
+        pass
+
+    def DrawBezier(self, pen, *__args):
+        """
   DrawBezier(self: Graphics,pen: Pen,pt1: Point,pt2: Point,pt3: Point,pt4: Point)
 
    Draws a B�zier spline defined by four System.Drawing.Point structures.
@@ -342,9 +349,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    y4: The y-coordinate of the ending point of the curve.
   """
-  pass
- def DrawBeziers(self,pen,points):
-  """
+        pass
+
+    def DrawBeziers(self, pen, points):
+        """
   DrawBeziers(self: Graphics,pen: Pen,points: Array[Point])
 
    Draws a series of B�zier splines from an array of System.Drawing.Point structures.
@@ -371,9 +379,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
     The number of points in the array should be a multiple of 3 plus 1,such as 4,7,or 10.
   """
-  pass
- def DrawClosedCurve(self,pen,points,tension=None,fillmode=None):
-  """
+        pass
+
+    def DrawClosedCurve(self, pen, points, tension=None, fillmode=None):
+        """
   DrawClosedCurve(self: Graphics,pen: Pen,points: Array[Point])
 
    Draws a closed cardinal spline defined by an array of System.Drawing.Point structures.
@@ -436,9 +445,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
     filled. This parameter is required but is ignored.
   """
-  pass
- def DrawCurve(self,pen,points,*__args):
-  """
+        pass
+
+    def DrawCurve(self, pen, points, *__args):
+        """
   DrawCurve(self: Graphics,pen: Pen,points: Array[Point])
 
    Draws a cardinal spline through a specified array of System.Drawing.Point structures.
@@ -561,9 +571,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    numberOfSegments: Number of segments after the starting point to include in the curve.
   """
-  pass
- def DrawEllipse(self,pen,*__args):
-  """
+        pass
+
+    def DrawEllipse(self, pen, *__args):
+        """
   DrawEllipse(self: Graphics,pen: Pen,rect: Rectangle)
 
    Draws an ellipse specified by a bounding System.Drawing.Rectangle structure.
@@ -624,9 +635,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    height: Height of the bounding rectangle that defines the ellipse.
   """
-  pass
- def DrawIcon(self,icon,*__args):
-  """
+        pass
+
+    def DrawIcon(self, icon, *__args):
+        """
   DrawIcon(self: Graphics,icon: Icon,targetRect: Rectangle)
 
    Draws the image represented by the specified System.Drawing.Icon within the area specified by a 
@@ -659,9 +671,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    y: The y-coordinate of the upper-left corner of the drawn image.
   """
-  pass
- def DrawIconUnstretched(self,icon,targetRect):
-  """
+        pass
+
+    def DrawIconUnstretched(self, icon, targetRect):
+        """
   DrawIconUnstretched(self: Graphics,icon: Icon,targetRect: Rectangle)
 
    Draws the image represented by the specified System.Drawing.Icon without scaling the image.
@@ -676,9 +689,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
     larger than the rectangle,it is clipped to fit inside it.
   """
-  pass
- def DrawImage(self,image,*__args):
-  """
+        pass
+
+    def DrawImage(self, image, *__args):
+        """
   DrawImage(self: Graphics,image: Image,destPoints: Array[PointF],srcRect: RectangleF,srcUnit: GraphicsUnit,imageAttr: ImageAttributes,callback: DrawImageAbort,callbackData: int)DrawImage(self: Graphics,image: Image,destPoints: Array[Point],srcRect: Rectangle,srcUnit: GraphicsUnit)
 
    Draws the specified portion of the specified System.Drawing.Image at the specified location and 
@@ -1153,9 +1167,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
     drawn image.
   """
-  pass
- def DrawImageUnscaled(self,image,*__args):
-  """
+        pass
+
+    def DrawImageUnscaled(self, image, *__args):
+        """
   DrawImageUnscaled(self: Graphics,image: Image,rect: Rectangle)
 
    Draws a specified image using its original physical size at a specified location.
@@ -1214,9 +1229,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    y: The y-coordinate of the upper-left corner of the drawn image.
   """
-  pass
- def DrawImageUnscaledAndClipped(self,image,rect):
-  """
+        pass
+
+    def DrawImageUnscaledAndClipped(self, image, rect):
+        """
   DrawImageUnscaledAndClipped(self: Graphics,image: Image,rect: Rectangle)
 
    Draws the specified image without scaling and clips it,if necessary,to fit in the specified 
@@ -1231,9 +1247,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    rect: The System.Drawing.Rectangle in which to draw the image.
   """
-  pass
- def DrawLine(self,pen,*__args):
-  """
+        pass
+
+    def DrawLine(self, pen, *__args):
+        """
   DrawLine(self: Graphics,pen: Pen,pt1: PointF,pt2: PointF)
 
    Draws a line connecting two System.Drawing.PointF structures.
@@ -1290,9 +1307,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    y2: The y-coordinate of the second point.
   """
-  pass
- def DrawLines(self,pen,points):
-  """
+        pass
+
+    def DrawLines(self, pen, points):
+        """
   DrawLines(self: Graphics,pen: Pen,points: Array[Point])
 
    Draws a series of line segments that connect an array of System.Drawing.Point structures.
@@ -1313,9 +1331,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    points: Array of System.Drawing.PointF structures that represent the points to connect.
   """
-  pass
- def DrawPath(self,pen,path):
-  """
+        pass
+
+    def DrawPath(self, pen, path):
+        """
   DrawPath(self: Graphics,pen: Pen,path: GraphicsPath)
 
    Draws a System.Drawing.Drawing2D.GraphicsPath.
@@ -1326,9 +1345,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    path: System.Drawing.Drawing2D.GraphicsPath to draw.
   """
-  pass
- def DrawPie(self,pen,*__args):
-  """
+        pass
+
+    def DrawPie(self, pen, *__args):
+        """
   DrawPie(self: Graphics,pen: Pen,rect: Rectangle,startAngle: Single,sweepAngle: Single)
 
    Draws a pie shape defined by an ellipse specified by a System.Drawing.Rectangle structure and 
@@ -1451,9 +1471,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
     shape.
   """
-  pass
- def DrawPolygon(self,pen,points):
-  """
+        pass
+
+    def DrawPolygon(self, pen, points):
+        """
   DrawPolygon(self: Graphics,pen: Pen,points: Array[Point])
 
    Draws a polygon defined by an array of System.Drawing.Point structures.
@@ -1474,9 +1495,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    points: Array of System.Drawing.PointF structures that represent the vertices of the polygon.
   """
-  pass
- def DrawRectangle(self,pen,*__args):
-  """
+        pass
+
+    def DrawRectangle(self, pen, *__args):
+        """
   DrawRectangle(self: Graphics,pen: Pen,x: int,y: int,width: int,height: int)
 
    Draws a rectangle specified by a coordinate pair,a width,and a height.
@@ -1519,9 +1541,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    rect: A System.Drawing.Rectangle structure that represents the rectangle to draw.
   """
-  pass
- def DrawRectangles(self,pen,rects):
-  """
+        pass
+
+    def DrawRectangles(self, pen, rects):
+        """
   DrawRectangles(self: Graphics,pen: Pen,rects: Array[Rectangle])
 
    Draws a series of rectangles specified by System.Drawing.Rectangle structures.
@@ -1542,9 +1565,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    rects: Array of System.Drawing.RectangleF structures that represent the rectangles to draw.
   """
-  pass
- def DrawString(self,s,font,brush,*__args):
-  """
+        pass
+
+    def DrawString(self, s, font, brush, *__args):
+        """
   DrawString(self: Graphics,s: str,font: Font,brush: Brush,point: PointF)
 
    Draws the specified text string at the specified location with the specified 
@@ -1679,9 +1703,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
     alignment,that are applied to the drawn text.
   """
-  pass
- def EndContainer(self,container):
-  """
+        pass
+
+    def EndContainer(self, container):
+        """
   EndContainer(self: Graphics,container: GraphicsContainer)
 
    Closes the current graphics container and restores the state of this System.Drawing.Graphics to 
@@ -1694,12 +1719,14 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    container: System.Drawing.Drawing2D.GraphicsContainer that represents the container this method restores.
   """
-  pass
- def EnumerateMetafile(self,metafile,*__args):
-  """ EnumerateMetafile(self: Graphics,metafile: Metafile,destRect: RectangleF,srcRect: RectangleF,srcUnit: GraphicsUnit,callback: EnumerateMetafileProc)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoint: Point,srcRect: Rectangle,unit: GraphicsUnit,callback: EnumerateMetafileProc,callbackData: IntPtr,imageAttr: ImageAttributes)EnumerateMetafile(self: Graphics,metafile: Metafile,destRect: RectangleF,srcRect: RectangleF,unit: GraphicsUnit,callback: EnumerateMetafileProc,callbackData: IntPtr,imageAttr: ImageAttributes)EnumerateMetafile(self: Graphics,metafile: Metafile,destRect: RectangleF,srcRect: RectangleF,srcUnit: GraphicsUnit,callback: EnumerateMetafileProc,callbackData: IntPtr)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoint: Point,srcRect: Rectangle,srcUnit: GraphicsUnit,callback: EnumerateMetafileProc,callbackData: IntPtr)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoint: PointF,srcRect: RectangleF,srcUnit: GraphicsUnit,callback: EnumerateMetafileProc,callbackData: IntPtr)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoint: PointF,srcRect: RectangleF,srcUnit: GraphicsUnit,callback: EnumerateMetafileProc)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoint: Point,srcRect: Rectangle,srcUnit: GraphicsUnit,callback: EnumerateMetafileProc)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoint: PointF,srcRect: RectangleF,unit: GraphicsUnit,callback: EnumerateMetafileProc,callbackData: IntPtr,imageAttr: ImageAttributes)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoints: Array[Point],srcRect: Rectangle,srcUnit: GraphicsUnit,callback: EnumerateMetafileProc)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoints: Array[PointF],srcRect: RectangleF,unit: GraphicsUnit,callback: EnumerateMetafileProc,callbackData: IntPtr,imageAttr: ImageAttributes)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoints: Array[Point],srcRect: Rectangle,unit: GraphicsUnit,callback: EnumerateMetafileProc,callbackData: IntPtr,imageAttr: ImageAttributes)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoints: Array[Point],srcRect: Rectangle,srcUnit: GraphicsUnit,callback: EnumerateMetafileProc,callbackData: IntPtr)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoints: Array[PointF],srcRect: RectangleF,srcUnit: GraphicsUnit,callback: EnumerateMetafileProc,callbackData: IntPtr)EnumerateMetafile(self: Graphics,metafile: Metafile,destRect: Rectangle,srcRect: Rectangle,srcUnit: GraphicsUnit,callback: EnumerateMetafileProc,callbackData: IntPtr)EnumerateMetafile(self: Graphics,metafile: Metafile,destRect: Rectangle,srcRect: Rectangle,srcUnit: GraphicsUnit,callback: EnumerateMetafileProc)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoints: Array[PointF],srcRect: RectangleF,srcUnit: GraphicsUnit,callback: EnumerateMetafileProc)EnumerateMetafile(self: Graphics,metafile: Metafile,destRect: Rectangle,srcRect: Rectangle,unit: GraphicsUnit,callback: EnumerateMetafileProc,callbackData: IntPtr,imageAttr: ImageAttributes)EnumerateMetafile(self: Graphics,metafile: Metafile,destRect: RectangleF,callback: EnumerateMetafileProc)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoint: Point,callback: EnumerateMetafileProc,callbackData: IntPtr,imageAttr: ImageAttributes)EnumerateMetafile(self: Graphics,metafile: Metafile,destRect: RectangleF,callback: EnumerateMetafileProc,callbackData: IntPtr,imageAttr: ImageAttributes)EnumerateMetafile(self: Graphics,metafile: Metafile,destRect: RectangleF,callback: EnumerateMetafileProc,callbackData: IntPtr)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoint: Point,callback: EnumerateMetafileProc,callbackData: IntPtr)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoint: PointF,callback: EnumerateMetafileProc,callbackData: IntPtr)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoint: PointF,callback: EnumerateMetafileProc)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoint: Point,callback: EnumerateMetafileProc)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoint: PointF,callback: EnumerateMetafileProc,callbackData: IntPtr,imageAttr: ImageAttributes)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoints: Array[Point],callback: EnumerateMetafileProc)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoints: Array[PointF],callback: EnumerateMetafileProc,callbackData: IntPtr,imageAttr: ImageAttributes)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoints: Array[Point],callback: EnumerateMetafileProc,callbackData: IntPtr,imageAttr: ImageAttributes)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoints: Array[Point],callback: EnumerateMetafileProc,callbackData: IntPtr)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoints: Array[PointF],callback: EnumerateMetafileProc,callbackData: IntPtr)EnumerateMetafile(self: Graphics,metafile: Metafile,destRect: Rectangle,callback: EnumerateMetafileProc,callbackData: IntPtr)EnumerateMetafile(self: Graphics,metafile: Metafile,destRect: Rectangle,callback: EnumerateMetafileProc)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoints: Array[PointF],callback: EnumerateMetafileProc)EnumerateMetafile(self: Graphics,metafile: Metafile,destRect: Rectangle,callback: EnumerateMetafileProc,callbackData: IntPtr,imageAttr: ImageAttributes) """
-  pass
- def ExcludeClip(self,*__args):
-  """
+        pass
+
+    def EnumerateMetafile(self, metafile, *__args):
+        """ EnumerateMetafile(self: Graphics,metafile: Metafile,destRect: RectangleF,srcRect: RectangleF,srcUnit: GraphicsUnit,callback: EnumerateMetafileProc)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoint: Point,srcRect: Rectangle,unit: GraphicsUnit,callback: EnumerateMetafileProc,callbackData: IntPtr,imageAttr: ImageAttributes)EnumerateMetafile(self: Graphics,metafile: Metafile,destRect: RectangleF,srcRect: RectangleF,unit: GraphicsUnit,callback: EnumerateMetafileProc,callbackData: IntPtr,imageAttr: ImageAttributes)EnumerateMetafile(self: Graphics,metafile: Metafile,destRect: RectangleF,srcRect: RectangleF,srcUnit: GraphicsUnit,callback: EnumerateMetafileProc,callbackData: IntPtr)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoint: Point,srcRect: Rectangle,srcUnit: GraphicsUnit,callback: EnumerateMetafileProc,callbackData: IntPtr)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoint: PointF,srcRect: RectangleF,srcUnit: GraphicsUnit,callback: EnumerateMetafileProc,callbackData: IntPtr)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoint: PointF,srcRect: RectangleF,srcUnit: GraphicsUnit,callback: EnumerateMetafileProc)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoint: Point,srcRect: Rectangle,srcUnit: GraphicsUnit,callback: EnumerateMetafileProc)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoint: PointF,srcRect: RectangleF,unit: GraphicsUnit,callback: EnumerateMetafileProc,callbackData: IntPtr,imageAttr: ImageAttributes)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoints: Array[Point],srcRect: Rectangle,srcUnit: GraphicsUnit,callback: EnumerateMetafileProc)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoints: Array[PointF],srcRect: RectangleF,unit: GraphicsUnit,callback: EnumerateMetafileProc,callbackData: IntPtr,imageAttr: ImageAttributes)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoints: Array[Point],srcRect: Rectangle,unit: GraphicsUnit,callback: EnumerateMetafileProc,callbackData: IntPtr,imageAttr: ImageAttributes)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoints: Array[Point],srcRect: Rectangle,srcUnit: GraphicsUnit,callback: EnumerateMetafileProc,callbackData: IntPtr)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoints: Array[PointF],srcRect: RectangleF,srcUnit: GraphicsUnit,callback: EnumerateMetafileProc,callbackData: IntPtr)EnumerateMetafile(self: Graphics,metafile: Metafile,destRect: Rectangle,srcRect: Rectangle,srcUnit: GraphicsUnit,callback: EnumerateMetafileProc,callbackData: IntPtr)EnumerateMetafile(self: Graphics,metafile: Metafile,destRect: Rectangle,srcRect: Rectangle,srcUnit: GraphicsUnit,callback: EnumerateMetafileProc)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoints: Array[PointF],srcRect: RectangleF,srcUnit: GraphicsUnit,callback: EnumerateMetafileProc)EnumerateMetafile(self: Graphics,metafile: Metafile,destRect: Rectangle,srcRect: Rectangle,unit: GraphicsUnit,callback: EnumerateMetafileProc,callbackData: IntPtr,imageAttr: ImageAttributes)EnumerateMetafile(self: Graphics,metafile: Metafile,destRect: RectangleF,callback: EnumerateMetafileProc)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoint: Point,callback: EnumerateMetafileProc,callbackData: IntPtr,imageAttr: ImageAttributes)EnumerateMetafile(self: Graphics,metafile: Metafile,destRect: RectangleF,callback: EnumerateMetafileProc,callbackData: IntPtr,imageAttr: ImageAttributes)EnumerateMetafile(self: Graphics,metafile: Metafile,destRect: RectangleF,callback: EnumerateMetafileProc,callbackData: IntPtr)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoint: Point,callback: EnumerateMetafileProc,callbackData: IntPtr)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoint: PointF,callback: EnumerateMetafileProc,callbackData: IntPtr)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoint: PointF,callback: EnumerateMetafileProc)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoint: Point,callback: EnumerateMetafileProc)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoint: PointF,callback: EnumerateMetafileProc,callbackData: IntPtr,imageAttr: ImageAttributes)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoints: Array[Point],callback: EnumerateMetafileProc)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoints: Array[PointF],callback: EnumerateMetafileProc,callbackData: IntPtr,imageAttr: ImageAttributes)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoints: Array[Point],callback: EnumerateMetafileProc,callbackData: IntPtr,imageAttr: ImageAttributes)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoints: Array[Point],callback: EnumerateMetafileProc,callbackData: IntPtr)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoints: Array[PointF],callback: EnumerateMetafileProc,callbackData: IntPtr)EnumerateMetafile(self: Graphics,metafile: Metafile,destRect: Rectangle,callback: EnumerateMetafileProc,callbackData: IntPtr)EnumerateMetafile(self: Graphics,metafile: Metafile,destRect: Rectangle,callback: EnumerateMetafileProc)EnumerateMetafile(self: Graphics,metafile: Metafile,destPoints: Array[PointF],callback: EnumerateMetafileProc)EnumerateMetafile(self: Graphics,metafile: Metafile,destRect: Rectangle,callback: EnumerateMetafileProc,callbackData: IntPtr,imageAttr: ImageAttributes) """
+        pass
+
+    def ExcludeClip(self, *__args):
+        """
   ExcludeClip(self: Graphics,rect: Rectangle)
 
    Updates the clip region of this System.Drawing.Graphics to exclude the area specified by a 
@@ -1724,9 +1751,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    region: System.Drawing.Region that specifies the region to exclude from the clip region.
   """
-  pass
- def FillClosedCurve(self,brush,points,fillmode=None,tension=None):
-  """
+        pass
+
+    def FillClosedCurve(self, brush, points, fillmode=None, tension=None):
+        """
   FillClosedCurve(self: Graphics,brush: Brush,points: Array[Point])
 
    Fills the interior of a closed cardinal spline curve defined by an array of System.Drawing.Point 
@@ -1839,9 +1867,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    tension: Value greater than or equal to 0.0F that specifies the tension of the curve.
   """
-  pass
- def FillEllipse(self,brush,*__args):
-  """
+        pass
+
+    def FillEllipse(self, brush, *__args):
+        """
   FillEllipse(self: Graphics,brush: Brush,rect: Rectangle)
 
    Fills the interior of an ellipse defined by a bounding rectangle specified by a 
@@ -1916,9 +1945,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
     ellipse.
   """
-  pass
- def FillPath(self,brush,path):
-  """
+        pass
+
+    def FillPath(self, brush, path):
+        """
   FillPath(self: Graphics,brush: Brush,path: GraphicsPath)
 
    Fills the interior of a System.Drawing.Drawing2D.GraphicsPath.
@@ -1929,9 +1959,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    path: System.Drawing.Drawing2D.GraphicsPath that represents the path to fill.
   """
-  pass
- def FillPie(self,brush,*__args):
-  """
+        pass
+
+    def FillPie(self, brush, *__args):
+        """
   FillPie(self: Graphics,brush: Brush,x: int,y: int,width: int,height: int,startAngle: int,sweepAngle: int)
 
    Fills the interior of a pie section defined by an ellipse specified by a pair of coordinates,a 
@@ -2028,9 +2059,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
     section.
   """
-  pass
- def FillPolygon(self,brush,points,fillMode=None):
-  """
+        pass
+
+    def FillPolygon(self, brush, points, fillMode=None):
+        """
   FillPolygon(self: Graphics,brush: Brush,points: Array[PointF],fillMode: FillMode)
 
    Fills the interior of a polygon defined by an array of points specified by System.Drawing.PointF 
@@ -2099,9 +2131,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    points: Array of System.Drawing.PointF structures that represent the vertices of the polygon to fill.
   """
-  pass
- def FillRectangle(self,brush,*__args):
-  """
+        pass
+
+    def FillRectangle(self, brush, *__args):
+        """
   FillRectangle(self: Graphics,brush: Brush,x: int,y: int,width: int,height: int)
 
    Fills the interior of a rectangle specified by a pair of coordinates,a width,and a height.
@@ -2154,9 +2187,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    rect: System.Drawing.Rectangle structure that represents the rectangle to fill.
   """
-  pass
- def FillRectangles(self,brush,rects):
-  """
+        pass
+
+    def FillRectangles(self, brush, rects):
+        """
   FillRectangles(self: Graphics,brush: Brush,rects: Array[RectangleF])
 
    Fills the interiors of a series of rectangles specified by System.Drawing.RectangleF structures.
@@ -2177,9 +2211,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    rects: Array of System.Drawing.Rectangle structures that represent the rectangles to fill.
   """
-  pass
- def FillRegion(self,brush,region):
-  """
+        pass
+
+    def FillRegion(self, brush, region):
+        """
   FillRegion(self: Graphics,brush: Brush,region: Region)
 
    Fills the interior of a System.Drawing.Region.
@@ -2190,9 +2225,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    region: System.Drawing.Region that represents the area to fill.
   """
-  pass
- def Flush(self,intention=None):
-  """
+        pass
+
+    def Flush(self, intention=None):
+        """
   Flush(self: Graphics,intention: FlushIntention)
 
    Forces execution of all pending graphics operations with the method waiting or not waiting,as 
@@ -2215,10 +2251,11 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
     the operations to finish.
   """
-  pass
- @staticmethod
- def FromHdc(hdc,hdevice=None):
-  """
+        pass
+
+    @staticmethod
+    def FromHdc(hdc, hdevice=None):
+        """
   FromHdc(hdc: IntPtr,hdevice: IntPtr) -> Graphics
 
   
@@ -2249,10 +2286,11 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    Returns: This method returns a new System.Drawing.Graphics for the specified device context.
   """
-  pass
- @staticmethod
- def FromHdcInternal(hdc):
-  """
+        pass
+
+    @staticmethod
+    def FromHdcInternal(hdc):
+        """
   FromHdcInternal(hdc: IntPtr) -> Graphics
 
   
@@ -2265,10 +2303,11 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    Returns: A System.Drawing.Graphics for the specified device context.
   """
-  pass
- @staticmethod
- def FromHwnd(hwnd):
-  """
+        pass
+
+    @staticmethod
+    def FromHwnd(hwnd):
+        """
   FromHwnd(hwnd: IntPtr) -> Graphics
 
   
@@ -2281,10 +2320,11 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    Returns: This method returns a new System.Drawing.Graphics for the specified window handle.
   """
-  pass
- @staticmethod
- def FromHwndInternal(hwnd):
-  """
+        pass
+
+    @staticmethod
+    def FromHwndInternal(hwnd):
+        """
   FromHwndInternal(hwnd: IntPtr) -> Graphics
 
   
@@ -2297,10 +2337,11 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    Returns: A System.Drawing.Graphics for the specified window handle.
   """
-  pass
- @staticmethod
- def FromImage(image):
-  """
+        pass
+
+    @staticmethod
+    def FromImage(image):
+        """
   FromImage(image: Image) -> Graphics
 
   
@@ -2313,9 +2354,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    Returns: This method returns a new System.Drawing.Graphics for the specified System.Drawing.Image.
   """
-  pass
- def GetContextInfo(self):
-  """
+        pass
+
+    def GetContextInfo(self):
+        """
   GetContextInfo(self: Graphics) -> object
 
   
@@ -2324,10 +2366,11 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    Returns: An System.Object representing the cumulative graphics context.
   """
-  pass
- @staticmethod
- def GetHalftonePalette():
-  """
+        pass
+
+    @staticmethod
+    def GetHalftonePalette():
+        """
   GetHalftonePalette() -> IntPtr
 
   
@@ -2336,9 +2379,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    Returns: Internal pointer that specifies the handle to the palette.
   """
-  pass
- def GetHdc(self):
-  """
+        pass
+
+    def GetHdc(self):
+        """
   GetHdc(self: Graphics) -> IntPtr
 
   
@@ -2347,9 +2391,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    Returns: Handle to the device context associated with this System.Drawing.Graphics.
   """
-  pass
- def GetNearestColor(self,color):
-  """
+        pass
+
+    def GetNearestColor(self, color):
+        """
   GetNearestColor(self: Graphics,color: Color) -> Color
 
   
@@ -2364,9 +2409,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
     color parameter.
   """
-  pass
- def IntersectClip(self,*__args):
-  """
+        pass
+
+    def IntersectClip(self, *__args):
+        """
   IntersectClip(self: Graphics,region: Region)
 
    Updates the clip region of this System.Drawing.Graphics to the intersection of the current clip 
@@ -2403,9 +2449,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    rect: System.Drawing.Rectangle structure to intersect with the current clip region.
   """
-  pass
- def IsVisible(self,*__args):
-  """
+        pass
+
+    def IsVisible(self, *__args):
+        """
   IsVisible(self: Graphics,x: int,y: int,width: int,height: int) -> bool
 
   
@@ -2580,9 +2627,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
     of this System.Drawing.Graphics; otherwise,false.
   """
-  pass
- def MeasureCharacterRanges(self,text,font,layoutRect,stringFormat):
-  """
+        pass
+
+    def MeasureCharacterRanges(self, text, font, layoutRect, stringFormat):
+        """
   MeasureCharacterRanges(self: Graphics,text: str,font: Font,layoutRect: RectangleF,stringFormat: StringFormat) -> Array[Region]
 
   
@@ -2611,9 +2659,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
     character positions within the specified string.
   """
-  pass
- def MeasureString(self,text,font,*__args):
-  """
+        pass
+
+    def MeasureString(self, text, font, *__args):
+        """
   MeasureString(self: Graphics,text: str,font: Font,origin: PointF,stringFormat: StringFormat) -> SizeF
 
   
@@ -2808,9 +2857,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
     parameter as drawn with the font parameter and the stringFormat parameter.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -2841,9 +2891,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def MultiplyTransform(self,matrix,order=None):
-  """
+        pass
+
+    def MultiplyTransform(self, matrix, order=None):
+        """
   MultiplyTransform(self: Graphics,matrix: Matrix,order: MatrixOrder)
 
    Multiplies the world transformation of this System.Drawing.Graphics and specified the 
@@ -2874,9 +2925,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    matrix: 4x4 System.Drawing.Drawing2D.Matrix that multiplies the world transformation.
   """
-  pass
- def ReleaseHdc(self,hdc=None):
-  """
+        pass
+
+    def ReleaseHdc(self, hdc=None):
+        """
   ReleaseHdc(self: Graphics)
 
    Releases a device context handle obtained by a previous call to the 
@@ -2899,9 +2951,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
     method of this System.Drawing.Graphics.
   """
-  pass
- def ReleaseHdcInternal(self,hdc):
-  """
+        pass
+
+    def ReleaseHdcInternal(self, hdc):
+        """
   ReleaseHdcInternal(self: Graphics,hdc: IntPtr)
 
    Releases a handle to a device context.
@@ -2910,23 +2963,26 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    hdc: Handle to a device context.
   """
-  pass
- def ResetClip(self):
-  """
+        pass
+
+    def ResetClip(self):
+        """
   ResetClip(self: Graphics)
 
    Resets the clip region of this System.Drawing.Graphics to an infinite region.
   """
-  pass
- def ResetTransform(self):
-  """
+        pass
+
+    def ResetTransform(self):
+        """
   ResetTransform(self: Graphics)
 
    Resets the world transformation matrix of this System.Drawing.Graphics to the identity matrix.
   """
-  pass
- def Restore(self,gstate):
-  """
+        pass
+
+    def Restore(self, gstate):
+        """
   Restore(self: Graphics,gstate: GraphicsState)
 
    Restores the state of this System.Drawing.Graphics to the state represented by a 
@@ -2941,9 +2997,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
     System.Drawing.Graphics.
   """
-  pass
- def RotateTransform(self,angle,order=None):
-  """
+        pass
+
+    def RotateTransform(self, angle, order=None):
+        """
   RotateTransform(self: Graphics,angle: Single,order: MatrixOrder)
 
    Applies the specified rotation to the transformation matrix of this System.Drawing.Graphics in 
@@ -2970,9 +3027,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    angle: Angle of rotation in degrees.
   """
-  pass
- def Save(self):
-  """
+        pass
+
+    def Save(self):
+        """
   Save(self: Graphics) -> GraphicsState
 
   
@@ -2987,9 +3045,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
     this System.Drawing.Graphics.
   """
-  pass
- def ScaleTransform(self,sx,sy,order=None):
-  """
+        pass
+
+    def ScaleTransform(self, sx, sy, order=None):
+        """
   ScaleTransform(self: Graphics,sx: Single,sy: Single,order: MatrixOrder)
 
    Applies the specified scaling operation to the transformation matrix of this 
@@ -3024,9 +3083,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    sy: Scale factor in the y direction.
   """
-  pass
- def SetClip(self,*__args):
-  """
+        pass
+
+    def SetClip(self, *__args):
+        """
   SetClip(self: Graphics,rect: RectangleF,combineMode: CombineMode)
 
    Sets the clipping region of this System.Drawing.Graphics to the result of the specified 
@@ -3173,9 +3233,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    g: System.Drawing.Graphics from which to take the new clip region.
   """
-  pass
- def TransformPoints(self,destSpace,srcSpace,pts):
-  """
+        pass
+
+    def TransformPoints(self, destSpace, srcSpace, pts):
+        """
   TransformPoints(self: Graphics,destSpace: CoordinateSpace,srcSpace: CoordinateSpace,pts: Array[Point])
 
    Transforms an array of points from one coordinate space to another using the current world and 
@@ -3224,9 +3285,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    pts: Array of System.Drawing.PointF structures that represent the points to transform.
   """
-  pass
- def TranslateClip(self,dx,dy):
-  """
+        pass
+
+    def TranslateClip(self, dx, dy):
+        """
   TranslateClip(self: Graphics,dx: Single,dy: Single)
 
    Translates the clipping region of this System.Drawing.Graphics by specified amounts in the 
@@ -3255,9 +3317,10 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    dy: The y-coordinate of the translation.
   """
-  pass
- def TranslateTransform(self,dx,dy,order=None):
-  """
+        pass
+
+    def TranslateTransform(self, dx, dy, order=None):
+        """
   TranslateTransform(self: Graphics,dx: Single,dy: Single,order: MatrixOrder)
 
    Changes the origin of the coordinate system by applying the specified translation to the 
@@ -3292,28 +3355,32 @@ class Graphics(MarshalByRefObject,IDisposable,IDeviceContext):
 
    dy: The y-coordinate of the translation.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Clip=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a System.Drawing.Region that limits the drawing region of this System.Drawing.Graphics.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Clip = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a System.Drawing.Region that limits the drawing region of this System.Drawing.Graphics.
 
 
 
@@ -3325,8 +3392,10 @@ Set: Clip(self: Graphics)=value
 
 """
 
- ClipBounds=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a System.Drawing.RectangleF structure that bounds the clipping region of this System.Drawing.Graphics.
+    ClipBounds = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a System.Drawing.RectangleF structure that bounds the clipping region of this System.Drawing.Graphics.
 
 
 
@@ -3336,8 +3405,10 @@ Get: ClipBounds(self: Graphics) -> RectangleF
 
 """
 
- CompositingMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that specifies how composited images are drawn to this System.Drawing.Graphics.
+    CompositingMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that specifies how composited images are drawn to this System.Drawing.Graphics.
 
 
 
@@ -3349,8 +3420,10 @@ Set: CompositingMode(self: Graphics)=value
 
 """
 
- CompositingQuality=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the rendering quality of composited images drawn to this System.Drawing.Graphics.
+    CompositingQuality = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the rendering quality of composited images drawn to this System.Drawing.Graphics.
 
 
 
@@ -3362,8 +3435,8 @@ Set: CompositingQuality(self: Graphics)=value
 
 """
 
- DpiX=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the horizontal resolution of this System.Drawing.Graphics.
+    DpiX = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the horizontal resolution of this System.Drawing.Graphics.
 
 
 
@@ -3373,8 +3446,8 @@ Get: DpiX(self: Graphics) -> Single
 
 """
 
- DpiY=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the vertical resolution of this System.Drawing.Graphics.
+    DpiY = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the vertical resolution of this System.Drawing.Graphics.
 
 
 
@@ -3384,8 +3457,10 @@ Get: DpiY(self: Graphics) -> Single
 
 """
 
- InterpolationMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the interpolation mode associated with this System.Drawing.Graphics.
+    InterpolationMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the interpolation mode associated with this System.Drawing.Graphics.
 
 
 
@@ -3397,8 +3472,10 @@ Set: InterpolationMode(self: Graphics)=value
 
 """
 
- IsClipEmpty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the clipping region of this System.Drawing.Graphics is empty.
+    IsClipEmpty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the clipping region of this System.Drawing.Graphics is empty.
 
 
 
@@ -3408,8 +3485,10 @@ Get: IsClipEmpty(self: Graphics) -> bool
 
 """
 
- IsVisibleClipEmpty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the visible clipping region of this System.Drawing.Graphics is empty.
+    IsVisibleClipEmpty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the visible clipping region of this System.Drawing.Graphics is empty.
 
 
 
@@ -3419,8 +3498,8 @@ Get: IsVisibleClipEmpty(self: Graphics) -> bool
 
 """
 
- PageScale=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the scaling between world units and page units for this System.Drawing.Graphics.
+    PageScale = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the scaling between world units and page units for this System.Drawing.Graphics.
 
 
 
@@ -3432,8 +3511,8 @@ Set: PageScale(self: Graphics)=value
 
 """
 
- PageUnit=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the unit of measure used for page coordinates in this System.Drawing.Graphics.
+    PageUnit = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the unit of measure used for page coordinates in this System.Drawing.Graphics.
 
 
 
@@ -3445,8 +3524,10 @@ Set: PageUnit(self: Graphics)=value
 
 """
 
- PixelOffsetMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or set a value specifying how pixels are offset during rendering of this System.Drawing.Graphics.
+    PixelOffsetMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or set a value specifying how pixels are offset during rendering of this System.Drawing.Graphics.
 
 
 
@@ -3458,8 +3539,10 @@ Set: PixelOffsetMode(self: Graphics)=value
 
 """
 
- RenderingOrigin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the rendering origin of this System.Drawing.Graphics for dithering and for hatch brushes.
+    RenderingOrigin = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the rendering origin of this System.Drawing.Graphics for dithering and for hatch brushes.
 
 
 
@@ -3471,8 +3554,10 @@ Set: RenderingOrigin(self: Graphics)=value
 
 """
 
- SmoothingMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the rendering quality for this System.Drawing.Graphics.
+    SmoothingMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the rendering quality for this System.Drawing.Graphics.
 
 
 
@@ -3484,8 +3569,10 @@ Set: SmoothingMode(self: Graphics)=value
 
 """
 
- TextContrast=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the gamma correction value for rendering text.
+    TextContrast = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the gamma correction value for rendering text.
 
 
 
@@ -3497,8 +3584,10 @@ Set: TextContrast(self: Graphics)=value
 
 """
 
- TextRenderingHint=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the rendering mode for text associated with this System.Drawing.Graphics.
+    TextRenderingHint = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the rendering mode for text associated with this System.Drawing.Graphics.
 
 
 
@@ -3510,8 +3599,8 @@ Set: TextRenderingHint(self: Graphics)=value
 
 """
 
- Transform=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a copy of the geometric world transformation for this System.Drawing.Graphics.
+    Transform = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a copy of the geometric world transformation for this System.Drawing.Graphics.
 
 
 
@@ -3523,8 +3612,10 @@ Set: Transform(self: Graphics)=value
 
 """
 
- VisibleClipBounds=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the bounding rectangle of the visible clipping region of this System.Drawing.Graphics.
+    VisibleClipBounds = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the bounding rectangle of the visible clipping region of this System.Drawing.Graphics.
 
 
 
@@ -3534,7 +3625,5 @@ Get: VisibleClipBounds(self: Graphics) -> RectangleF
 
 """
 
-
- DrawImageAbort=None
- EnumerateMetafileProc=None
-
+    DrawImageAbort = None
+    EnumerateMetafileProc = None

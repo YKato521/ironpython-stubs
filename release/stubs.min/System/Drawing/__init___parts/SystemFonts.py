@@ -1,8 +1,9 @@
 class SystemFonts(object):
- """ Specifies the fonts used to display text in Windows display elements. """
- @staticmethod
- def GetFontByName(systemFontName):
-  """
+    """ Specifies the fonts used to display text in Windows display elements. """
+
+    @staticmethod
+    def GetFontByName(systemFontName):
+        """
   GetFontByName(systemFontName: str) -> Font
 
   
@@ -17,13 +18,13 @@ class SystemFonts(object):
 
     otherwise,null.
   """
-  pass
- CaptionFont=None
- DefaultFont=None
- DialogFont=None
- IconTitleFont=None
- MenuFont=None
- MessageBoxFont=None
- SmallCaptionFont=None
- StatusFont=None
+        pass
 
+    CaptionFont = None
+    DefaultFont = None
+    DialogFont = None
+    IconTitleFont = None
+    MenuFont = None
+    MessageBoxFont = None
+    SmallCaptionFont = None
+    StatusFont = None

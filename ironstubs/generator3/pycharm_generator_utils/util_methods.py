@@ -6,7 +6,8 @@ try:
 except ImportError:
     inspect = None
 
-def create_named_tuple():   #TODO: user-skeleton
+
+def create_named_tuple():  # TODO: user-skeleton
     return """
 class __namedtuple(tuple):
     '''A mock base class for named tuples.'''
@@ -38,6 +39,7 @@ class __namedtuple(tuple):
         return tuple(self)
 """
 
+
 def create_generator():
     # Fake <type 'generator'>
     if version[0] < 3:
@@ -59,7 +61,9 @@ class __generator(object):
     def %s(self):
         '''Return the next item from the container.'''
         pass
-""" % (next_name,)
+""" % (
+        next_name,
+    )
     if version[0] >= 3 or (version[0] == 2 and version[1] >= 5):
         txt += """
     def close(self):
@@ -75,6 +79,7 @@ class __generator(object):
         pass
 """
     return txt
+
 
 def create_async_generator():
     # Fake <type 'asyncgenerator'>
@@ -111,6 +116,7 @@ class __asyncgenerator(object):
         pass
 """
     return txt
+
 
 def create_function():
     txt = """
@@ -151,6 +157,7 @@ class __function(object):
         self.__qualname__ = ''
 """
     return txt
+
 
 def create_method():
     txt = """
@@ -223,7 +230,7 @@ def get_mro(a_class):
         return tuple()
 
 
-def get_bases(a_class): # TODO: test for classes that don't fit this scheme
+def get_bases(a_class):  # TODO: test for classes that don't fit this scheme
     """Returns a sequence of class's bases."""
     if hasattr(a_class, "__bases__"):
         return a_class.__bases__
@@ -232,7 +239,7 @@ def get_bases(a_class): # TODO: test for classes that don't fit this scheme
 
 
 def is_callable(x):
-    return hasattr(x, '__call__')
+    return hasattr(x, "__call__")
 
 
 def sorted_no_case(p_array):
@@ -250,12 +257,12 @@ def cleanup(value):
     while i < length:
         char = value[i]
         replacement = None
-        if char == '\n':
-            replacement = '\\n'
-        elif char == '\r':
-            replacement = '\\r'
-        elif char < ' ' or char > last_ascii:
-            replacement = '?' # NOTE: such chars are rare; long swaths could be precessed differently
+        if char == "\n":
+            replacement = "\\n"
+        elif char == "\r":
+            replacement = "\\r"
+        elif char < " " or char > last_ascii:
+            replacement = "?"  # NOTE: such chars are rare; long swaths could be precessed differently
         if replacement:
             result.append(value[prev:i])
             result.append(replacement)
@@ -264,13 +271,13 @@ def cleanup(value):
 
 
 _prop_types = [type(property())]
-#noinspection PyBroadException
+# noinspection PyBroadException
 try:
     _prop_types.append(types.GetSetDescriptorType)
 except:
     pass
 
-#noinspection PyBroadException
+# noinspection PyBroadException
 try:
     _prop_types.append(types.MemberDescriptorType)
 except:
@@ -285,7 +292,17 @@ def is_property(x):
 
 def sanitize_ident(x, is_clr=False):
     """Takes an identifier and returns it sanitized"""
-    if x in ("class", "object", "def", "list", "tuple", "int", "float", "str", "unicode" "None"):
+    if x in (
+        "class",
+        "object",
+        "def",
+        "list",
+        "tuple",
+        "int",
+        "float",
+        "str",
+        "unicode" "None",
+    ):
         return "p_" + x
     else:
         if is_clr:
@@ -293,7 +310,9 @@ def sanitize_ident(x, is_clr=False):
             xs = x.split(" ")
             if len(xs) == 2:
                 return sanitize_ident(xs[1])
-        return x.replace("-", "_").replace(" ", "_").replace(".", "_") # for things like "list-or-tuple" or "list or tuple"
+        return (
+            x.replace("-", "_").replace(" ", "_").replace(".", "_")
+        )  # for things like "list-or-tuple" or "list or tuple"
 
 
 def reliable_repr(value):
@@ -314,16 +333,20 @@ def sanitize_value(p_value):
         if match:
             return match.groups()[match.lastindex - 1]
         else:
-            return 'None'
+            return "None"
     elif isinstance(p_value, NUM_TYPES):
         return reliable_repr(p_value)
     elif p_value is None:
-        return 'None'
+        return "None"
     else:
-        if hasattr(p_value, "__name__") and hasattr(p_value, "__module__") and p_value.__module__ == BUILTIN_MOD_NAME:
-            return p_value.__name__ # float -> "float"
+        if (
+            hasattr(p_value, "__name__")
+            and hasattr(p_value, "__module__")
+            and p_value.__module__ == BUILTIN_MOD_NAME
+        ):
+            return p_value.__name__  # float -> "float"
         else:
-            return repr(repr(p_value)) # function -> "<function ...>", etc
+            return repr(repr(p_value))  # function -> "<function ...>", etc
 
 
 def extract_alpha_prefix(p_string, default_prefix="some"):
@@ -348,35 +371,41 @@ def say(msg, *data):
 def transform_seq(results, toplevel=True):
     """Transforms a tree of ParseResults into a param spec string."""
     is_clr = sys.platform == "cli"
-    ret = [] # add here token to join
+    ret = []  # add here token to join
     for token in results:
         token_type = token[0]
         if token_type is T_SIMPLE:
             token_name = token[1]
-            if len(token) == 3: # name with value
+            if len(token) == 3:  # name with value
                 if toplevel:
-                    ret.append(sanitize_ident(token_name, is_clr) + "=" + sanitize_value(token[2]))
+                    ret.append(
+                        sanitize_ident(token_name, is_clr)
+                        + "="
+                        + sanitize_value(token[2])
+                    )
                 else:
                     # smth like "a, (b1=1, b2=2)", make it "a, p_b"
-                    return ["p_" + results[0][1]] # NOTE: for each item of tuple, return the same name of its 1st item.
+                    return [
+                        "p_" + results[0][1]
+                    ]  # NOTE: for each item of tuple, return the same name of its 1st item.
             elif token_name == TRIPLE_DOT:
                 if toplevel and not has_item_starting_with(ret, "*"):
                     ret.append("*more")
                 else:
                     # we're in a "foo, (bar1, bar2, ...)"; make it "foo, bar_tuple"
                     return extract_alpha_prefix(results[0][1]) + "_tuple"
-            else: # just name
+            else:  # just name
                 ret.append(sanitize_ident(token_name, is_clr))
         elif token_type is T_NESTED:
             inner = transform_seq(token[1:], False)
             if len(inner) != 1:
                 ret.append(inner)
             else:
-                ret.append(inner[0]) # [foo] -> foo
+                ret.append(inner[0])  # [foo] -> foo
         elif token_type is T_OPTIONAL:
             ret.extend(transform_optional_seq(token))
         elif token_type is T_RETURN:
-            pass # this is handled elsewhere
+            pass  # this is handled elsewhere
         else:
             raise Exception("This cannot be a token type: " + repr(token_type))
     return ret
@@ -387,21 +416,27 @@ def transform_optional_seq(results):
     Produces a string that describes the optional part of parameters.
     @param results must start from T_OPTIONAL.
     """
-    assert results[0] is T_OPTIONAL, "transform_optional_seq expects a T_OPTIONAL node, sees " + \
-                                     repr(results[0])
+    assert (
+        results[0] is T_OPTIONAL
+    ), "transform_optional_seq expects a T_OPTIONAL node, sees " + repr(results[0])
     is_clr = sys.platform == "cli"
     ret = []
     for token in results[1:]:
         token_type = token[0]
         if token_type is T_SIMPLE:
             token_name = token[1]
-            if len(token) == 3: # name with value; little sense, but can happen in a deeply nested optional
-                ret.append(sanitize_ident(token_name, is_clr) + "=" + sanitize_value(token[2]))
-            elif token_name == '...':
+            if (
+                len(token) == 3
+            ):  # name with value; little sense, but can happen in a deeply nested optional
+                ret.append(
+                    sanitize_ident(token_name, is_clr) + "=" + sanitize_value(token[2])
+                )
+            elif token_name == "...":
                 # we're in a "foo, [bar, ...]"; make it "foo, *bar"
-                return ["*" + extract_alpha_prefix(
-                    results[1][1])] # we must return a seq; [1] is first simple, [1][1] is its name
-            else: # just name
+                return [
+                    "*" + extract_alpha_prefix(results[1][1])
+                ]  # we must return a seq; [1] is first simple, [1][1] is its name
+            else:  # just name
                 ret.append(sanitize_ident(token_name, is_clr) + "=None")
         elif token_type is T_OPTIONAL:
             ret.extend(transform_optional_seq(token))
@@ -436,7 +471,7 @@ def make_names_unique(seq, name_map=None):
         else:
             if keyword.iskeyword(one):
                 one += "_"
-            one_key = lstrip(one, "*") # starred parameters are unique sans stars
+            one_key = lstrip(one, "*")  # starred parameters are unique sans stars
             if one_key in name_map:
                 old_one = one_key
                 one = one + "_" + str(name_map[old_one])
@@ -455,7 +490,8 @@ def has_item_starting_with(p_seq, p_start):
 
 
 def out_docstring(out_func, docstring, indent):
-    if not isinstance(docstring, str): return
+    if not isinstance(docstring, str):
+        return
     lines = docstring.strip().split("\n")
     if lines:
         if len(lines) == 1:
@@ -469,15 +505,24 @@ def out_docstring(out_func, docstring, indent):
                     continue
             out_func(indent, '"""')
 
+
 def out_doc_attr(out_func, p_object, indent, p_class=None):
     the_doc = getattr(p_object, "__doc__", None)
     if the_doc:
-        if p_class and the_doc == object.__init__.__doc__ and p_object is not object.__init__ and p_class.__doc__:
-            the_doc = str(p_class.__doc__) # replace stock init's doc with class's; make it a certain string.
+        if (
+            p_class
+            and the_doc == object.__init__.__doc__
+            and p_object is not object.__init__
+            and p_class.__doc__
+        ):
+            the_doc = str(
+                p_class.__doc__
+            )  # replace stock init's doc with class's; make it a certain string.
             the_doc += "\n# (copied from class doc)"
         out_docstring(out_func, the_doc, indent)
     else:
         out_func(indent, "# no doc")
+
 
 def is_skipped_in_module(p_module, p_value):
     """
@@ -491,10 +536,14 @@ def is_skipped_in_module(p_module, p_value):
         return True
     return False
 
+
 def restore_predefined_builtin(class_name, func_name):
     spec = func_name + PREDEFINED_BUILTIN_SIGS[(class_name, func_name)]
-    note = "known special case of " + (class_name and class_name + "." or "") + func_name
+    note = (
+        "known special case of " + (class_name and class_name + "." or "") + func_name
+    )
     return (spec, note)
+
 
 def restore_by_inspect(p_func):
     """
@@ -507,7 +556,7 @@ def restore_by_inspect(p_func):
     else:
         dcnt = -1
     args = args or []
-    args.reverse() # backwards, for easier defaults handling
+    args.reverse()  # backwards, for easier defaults handling
     for arg in args:
         if dcnt >= 0:
             arg += "=" + sanitize_value(defaults[dcnt])
@@ -518,6 +567,7 @@ def restore_by_inspect(p_func):
     if kwarg:
         spec.append("**" + kwarg)
     return flatten(spec)
+
 
 def restore_parameters_for_overloads(parameter_lists):
     param_index = 0
@@ -537,9 +587,10 @@ def restore_parameters_for_overloads(parameter_lists):
             if pl[param_index] != name:
                 star_args = True
                 break
-        if star_args: break
-        if optional and not '=' in name:
-            params.append(name + '=None')
+        if star_args:
+            break
+        if optional and not "=" in name:
+            params.append(name + "=None")
         else:
             params.append(name)
         param_index += 1
@@ -547,8 +598,9 @@ def restore_parameters_for_overloads(parameter_lists):
         params.append("*__args")
     return params
 
+
 def build_signature(p_name, params):
-    return p_name + '(' + ', '.join(params) + ')'
+    return p_name + "(" + ", ".join(params) + ")"
 
 
 def propose_first_param(deco):
@@ -560,11 +612,13 @@ def propose_first_param(deco):
         # if deco == "staticmethod":
     return None
 
+
 def qualifier_of(cls, qualifiers_to_skip):
     m = getattr(cls, "__module__", None)
     if m in qualifiers_to_skip:
         return ""
     return m
+
 
 def handle_error_func(item_name, out):
     exctype, value = sys.exc_info()[:2]
@@ -574,11 +628,16 @@ def handle_error_func(item_name, out):
     out(0, "# " + msg % args)
     out(0, "")
 
+
 def format_accessors(accessor_line, getter, setter, deleter):
     """Nicely format accessors, like 'getter, fdel=deleter'"""
     ret = []
     consecutive = True
-    for key, arg, par in (('r', 'fget', getter), ('w', 'fset', setter), ('d', 'fdel', deleter)):
+    for key, arg, par in (
+        ("r", "fget", getter),
+        ("w", "fset", setter),
+        ("d", "fdel", deleter),
+    ):
         if key in accessor_line:
             if consecutive:
                 ret.append(par)
@@ -605,15 +664,18 @@ def detect_constructor(p_class):
     else:
         return None
 
+
 ##############  notes, actions #################################################################
-_is_verbose = False # controlled by -v
+_is_verbose = False  # controlled by -v
 
 CURRENT_ACTION = "nothing yet"
+
 
 def action(msg, *data):
     global CURRENT_ACTION
     CURRENT_ACTION = msg % data
     note(msg, *data)
+
 
 def note(msg, *data):
     """Say something at debug info level (stderr)"""
@@ -625,8 +687,9 @@ def note(msg, *data):
 
 ##############  plaform-specific methods    #######################################################
 import sys
-if sys.platform == 'cli':
-    #noinspection PyUnresolvedReferences
+
+if sys.platform == "cli":
+    # noinspection PyUnresolvedReferences
     import clr
 
 # http://blogs.msdn.com/curth/archive/2009/03/29/an-ironpython-profiler.aspx
@@ -636,15 +699,18 @@ def print_profile():
     data.sort(lambda x, y: -cmp(x.ExclusiveTime, y.ExclusiveTime))
 
     for pd in data:
-        say('%s\t%d\t%d\t%d', pd.Name, pd.InclusiveTime, pd.ExclusiveTime, pd.Calls)
+        say("%s\t%d\t%d\t%d", pd.Name, pd.InclusiveTime, pd.ExclusiveTime, pd.Calls)
+
 
 def is_clr_type(clr_type):
-    if not clr_type: return False
+    if not clr_type:
+        return False
     try:
         clr.GetClrType(clr_type)
         return True
     except TypeError:
         return False
+
 
 def restore_clr(p_name, p_class):
     """
@@ -652,10 +718,14 @@ def restore_clr(p_name, p_class):
     :return (is_static, spec, sig_note)
     """
     clr_type = clr.GetClrType(p_class)
-    if p_name == '__new__':
+    if p_name == "__new__":
         methods = [c for c in clr_type.GetConstructors()]
         if not methods:
-            return False, p_name + '(self, *args)', 'cannot find CLR constructor' # "self" is always first argument of any non-static method
+            return (
+                False,
+                p_name + "(self, *args)",
+                "cannot find CLR constructor",
+            )  # "self" is always first argument of any non-static method
     else:
         methods = [m for m in clr_type.GetMethods() if m.Name == p_name]
         if not methods:
@@ -663,7 +733,7 @@ def restore_clr(p_name, p_class):
             if len(bases) == 1 and p_name in dir(bases[0]):
                 # skip inherited methods
                 return False, None, None
-            return False, p_name + '(self, *args)', 'cannot find CLR method'
+            return False, p_name + "(self, *args)", "cannot find CLR method"
             # "self" is always first argument of any non-static method
 
     parameter_lists = []
@@ -672,17 +742,20 @@ def restore_clr(p_name, p_class):
     params = restore_parameters_for_overloads(parameter_lists)
     is_static = False
     if not methods[0].IsStatic:
-        params = ['self'] + params
+        params = ["self"] + params
     else:
         is_static = True
     return is_static, build_signature(p_name, params), None
 
+
 def build_output_name(dirname, qualified_name):
     qualifiers = qualified_name.split(".")
     if dirname and not dirname.endswith("/") and not dirname.endswith("\\"):
-        dirname += os.path.sep # "a -> a/"
-    for pathindex in range(len(qualifiers) - 1): # create dirs for all qualifiers but last
-        subdirname = dirname + os.path.sep.join(qualifiers[0: pathindex + 1])
+        dirname += os.path.sep  # "a -> a/"
+    for pathindex in range(
+        len(qualifiers) - 1
+    ):  # create dirs for all qualifiers but last
+        subdirname = dirname + os.path.sep.join(qualifiers[0 : pathindex + 1])
         if not os.path.isdir(subdirname):
             action("creating subdir %r", subdirname)
             os.makedirs(subdirname)

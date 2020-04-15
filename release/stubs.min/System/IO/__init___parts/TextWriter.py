@@ -1,33 +1,38 @@
-class TextWriter(MarshalByRefObject,IDisposable):
- """ Represents a writer that can write a sequential series of characters. This class is abstract. """
- def Close(self):
-  """
+class TextWriter(MarshalByRefObject, IDisposable):
+    """ Represents a writer that can write a sequential series of characters. This class is abstract. """
+
+    def Close(self):
+        """
   Close(self: TextWriter)
 
    Closes the current writer and releases any system resources associated with the writer.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: TextWriter)
 
    Releases all resources used by the System.IO.TextWriter object.
   """
-  pass
- def Flush(self):
-  """
+        pass
+
+    def Flush(self):
+        """
   Flush(self: TextWriter)
 
    Clears all buffers for the current writer and causes any buffered data to be written to the 
 
     underlying device.
   """
-  pass
- def FlushAsync(self):
-  """ FlushAsync(self: TextWriter) -> Task """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def FlushAsync(self):
+        """ FlushAsync(self: TextWriter) -> Task """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -58,10 +63,11 @@ class TextWriter(MarshalByRefObject,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- @staticmethod
- def Synchronized(writer):
-  """
+        pass
+
+    @staticmethod
+    def Synchronized(writer):
+        """
   Synchronized(writer: TextWriter) -> TextWriter
 
   
@@ -74,9 +80,10 @@ class TextWriter(MarshalByRefObject,IDisposable):
 
    Returns: A thread-safe wrapper.
   """
-  pass
- def Write(self,*__args):
-  """
+        pass
+
+    def Write(self, *__args):
+        """
   Write(self: TextWriter,value: str)
 
    Writes a string to the text stream.
@@ -251,9 +258,10 @@ class TextWriter(MarshalByRefObject,IDisposable):
 
    value: The 4-byte unsigned integer to write.
   """
-  pass
- def WriteAsync(self,*__args):
-  """
+        pass
+
+    def WriteAsync(self, *__args):
+        """
   WriteAsync(self: TextWriter,buffer: Array[Char]) -> Task
 
   WriteAsync(self: TextWriter,buffer: Array[Char],index: int,count: int) -> Task
@@ -262,9 +270,10 @@ class TextWriter(MarshalByRefObject,IDisposable):
 
   WriteAsync(self: TextWriter,value: str) -> Task
   """
-  pass
- def WriteLine(self,*__args):
-  """
+        pass
+
+    def WriteLine(self, *__args):
+        """
   WriteLine(self: TextWriter,value: Decimal)
 
    Writes the text representation of a decimal value followed by a line terminator to the text 
@@ -471,9 +480,10 @@ class TextWriter(MarshalByRefObject,IDisposable):
 
    value: The 4-byte unsigned integer to write.
   """
-  pass
- def WriteLineAsync(self,*__args):
-  """
+        pass
+
+    def WriteLineAsync(self, *__args):
+        """
   WriteLineAsync(self: TextWriter,buffer: Array[Char],index: int,count: int) -> Task
 
   WriteLineAsync(self: TextWriter) -> Task
@@ -484,38 +494,44 @@ class TextWriter(MarshalByRefObject,IDisposable):
 
   WriteLineAsync(self: TextWriter,value: str) -> Task
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """
   __new__(cls: type)
 
   __new__(cls: type,formatProvider: IFormatProvider)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- Encoding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,returns the System.Text.Encoding in which the output is written.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    Encoding = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """When overridden in a derived class,returns the System.Text.Encoding in which the output is written.
 
 
 
@@ -525,8 +541,10 @@ Get: Encoding(self: TextWriter) -> Encoding
 
 """
 
- FormatProvider=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an object that controls formatting.
+    FormatProvider = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets an object that controls formatting.
 
 
 
@@ -536,8 +554,8 @@ Get: FormatProvider(self: TextWriter) -> IFormatProvider
 
 """
 
- NewLine=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the line terminator string used by the current TextWriter.
+    NewLine = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the line terminator string used by the current TextWriter.
 
 
 
@@ -549,7 +567,5 @@ Set: NewLine(self: TextWriter)=value
 
 """
 
-
- CoreNewLine=None
- Null=None
-
+    CoreNewLine = None
+    Null = None

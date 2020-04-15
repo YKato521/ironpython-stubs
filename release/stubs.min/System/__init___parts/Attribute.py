@@ -1,7 +1,8 @@
-class Attribute(object,_Attribute):
- """ Represents the base class for custom attributes. """
- def Equals(self,obj):
-  """
+class Attribute(object, _Attribute):
+    """ Represents the base class for custom attributes. """
+
+    def Equals(self, obj):
+        """
   Equals(self: Attribute,obj: object) -> bool
 
   
@@ -14,10 +15,11 @@ class Attribute(object,_Attribute):
 
    Returns: true if obj equals the type and value of this instance; otherwise,false.
   """
-  pass
- @staticmethod
- def GetCustomAttribute(element,attributeType,inherit=None):
-  """
+        pass
+
+    @staticmethod
+    def GetCustomAttribute(element, attributeType, inherit=None):
+        """
   GetCustomAttribute(element: Module,attributeType: Type,inherit: bool) -> Attribute
 
   
@@ -234,10 +236,11 @@ class Attribute(object,_Attribute):
 
     null if there is no such attribute.
   """
-  pass
- @staticmethod
- def GetCustomAttributes(element,*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetCustomAttributes(element, *__args):
+        """
   GetCustomAttributes(element: Module,inherit: bool) -> Array[Attribute]
 
   
@@ -658,9 +661,10 @@ class Attribute(object,_Attribute):
 
     element,or an empty array if no such custom attributes exist.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Attribute) -> int
 
   
@@ -669,9 +673,10 @@ class Attribute(object,_Attribute):
 
    Returns: A 32-bit signed integer hash code.
   """
-  pass
- def IsDefaultAttribute(self):
-  """
+        pass
+
+    def IsDefaultAttribute(self):
+        """
   IsDefaultAttribute(self: Attribute) -> bool
 
   
@@ -684,10 +689,11 @@ class Attribute(object,_Attribute):
 
    Returns: true if this instance is the default attribute for the class; otherwise,false.
   """
-  pass
- @staticmethod
- def IsDefined(element,attributeType,inherit=None):
-  """
+        pass
+
+    @staticmethod
+    def IsDefined(element, attributeType, inherit=None):
+        """
   IsDefined(element: Module,attributeType: Type,inherit: bool) -> bool
 
   
@@ -876,9 +882,10 @@ class Attribute(object,_Attribute):
 
    Returns: true if a custom attribute of type attributeType is applied to element; otherwise,false.
   """
-  pass
- def Match(self,obj):
-  """
+        pass
+
+    def Match(self, obj):
+        """
   Match(self: Attribute,obj: object) -> bool
 
   
@@ -895,22 +902,28 @@ class Attribute(object,_Attribute):
 
    Returns: true if this instance equals obj; otherwise,false.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- TypeId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When implemented in a derived class,gets a unique identifier for this System.Attribute.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    TypeId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """When implemented in a derived class,gets a unique identifier for this System.Attribute.
 
 
 
@@ -919,5 +932,3 @@ Get: TypeId(self: Attribute) -> object
 
 
 """
-
-

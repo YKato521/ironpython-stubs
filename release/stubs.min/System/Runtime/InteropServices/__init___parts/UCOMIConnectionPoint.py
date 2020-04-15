@@ -1,7 +1,8 @@
 class UCOMIConnectionPoint:
- """ Use System.Runtime.InteropServices.ComTypes.IConnectionPoint instead. """
- def Advise(self,pUnkSink,pdwCookie):
-  """
+    """ Use System.Runtime.InteropServices.ComTypes.IConnectionPoint instead. """
+
+    def Advise(self, pUnkSink, pdwCookie):
+        """
   Advise(self: UCOMIConnectionPoint,pUnkSink: object) -> int
 
   
@@ -14,9 +15,10 @@ class UCOMIConnectionPoint:
 
     point.
   """
-  pass
- def EnumConnections(self,ppEnum):
-  """
+        pass
+
+    def EnumConnections(self, ppEnum):
+        """
   EnumConnections(self: UCOMIConnectionPoint) -> UCOMIEnumConnections
 
   
@@ -25,18 +27,20 @@ class UCOMIConnectionPoint:
 
     point.
   """
-  pass
- def GetConnectionInterface(self,pIID):
-  """
+        pass
+
+    def GetConnectionInterface(self, pIID):
+        """
   GetConnectionInterface(self: UCOMIConnectionPoint) -> Guid
 
   
 
    Returns the IID of the outgoing interface managed by this connection point.
   """
-  pass
- def GetConnectionPointContainer(self,ppCPC):
-  """
+        pass
+
+    def GetConnectionPointContainer(self, ppCPC):
+        """
   GetConnectionPointContainer(self: UCOMIConnectionPoint) -> UCOMIConnectionPointContainer
 
   
@@ -45,9 +49,10 @@ class UCOMIConnectionPoint:
 
     conceptually owns this connection point.
   """
-  pass
- def Unadvise(self,dwCookie):
-  """
+        pass
+
+    def Unadvise(self, dwCookie):
+        """
   Unadvise(self: UCOMIConnectionPoint,dwCookie: int)
 
    Terminates an advisory connection previously established through 
@@ -62,7 +67,8 @@ class UCOMIConnectionPoint:
 
     System.Runtime.InteropServices.UCOMIConnectionPoint.Advise(System.Object,System.Int32@).
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

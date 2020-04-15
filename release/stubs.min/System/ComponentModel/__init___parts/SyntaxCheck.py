@@ -1,8 +1,9 @@
 class SyntaxCheck(object):
- """ Provides methods to verify the machine name and path conform to a specific syntax. This class cannot be inherited. """
- @staticmethod
- def CheckMachineName(value):
-  """
+    """ Provides methods to verify the machine name and path conform to a specific syntax. This class cannot be inherited. """
+
+    @staticmethod
+    def CheckMachineName(value):
+        """
   CheckMachineName(value: str) -> bool
 
   
@@ -15,10 +16,11 @@ class SyntaxCheck(object):
 
    Returns: true if value matches the proper machine name format; otherwise,false.
   """
-  pass
- @staticmethod
- def CheckPath(value):
-  """
+        pass
+
+    @staticmethod
+    def CheckPath(value):
+        """
   CheckPath(value: str) -> bool
 
   
@@ -31,10 +33,11 @@ class SyntaxCheck(object):
 
    Returns: true if value matches the proper path format; otherwise,false.
   """
-  pass
- @staticmethod
- def CheckRootedPath(value):
-  """
+        pass
+
+    @staticmethod
+    def CheckRootedPath(value):
+        """
   CheckRootedPath(value: str) -> bool
 
   
@@ -47,10 +50,10 @@ class SyntaxCheck(object):
 
    Returns: true if value matches the proper path format; otherwise,false.
   """
-  pass
- __all__=[
-  'CheckMachineName',
-  'CheckPath',
-  'CheckRootedPath',
- ]
+        pass
 
+    __all__ = [
+        "CheckMachineName",
+        "CheckPath",
+        "CheckRootedPath",
+    ]

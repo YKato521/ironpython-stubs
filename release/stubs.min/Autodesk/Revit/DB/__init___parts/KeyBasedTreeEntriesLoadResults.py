@@ -1,16 +1,18 @@
-class KeyBasedTreeEntriesLoadResults(object,IDisposable):
- """
+class KeyBasedTreeEntriesLoadResults(object, IDisposable):
+    """
  This class contains the results and status information regarding an attempt to load the KeyBasedTreeEntries from an External Resource.
 
  
 
  KeyBasedTreeEntriesLoadResults()
  """
- def Dispose(self):
-  """ Dispose(self: KeyBasedTreeEntriesLoadResults) """
-  pass
- def GetFailureMessages(self):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: KeyBasedTreeEntriesLoadResults) """
+        pass
+
+    def GetFailureMessages(self):
+        """
   GetFailureMessages(self: KeyBasedTreeEntriesLoadResults) -> IList[FailureMessage]
 
   
@@ -23,9 +25,10 @@ class KeyBasedTreeEntriesLoadResults(object,IDisposable):
 
      loading and building the KeyBasedTreeEntries.
   """
-  pass
- def GetFileReadErrors(self):
-  """
+        pass
+
+    def GetFileReadErrors(self):
+        """
   GetFileReadErrors(self: KeyBasedTreeEntriesLoadResults) -> IList[str]
 
   
@@ -34,9 +37,10 @@ class KeyBasedTreeEntriesLoadResults(object,IDisposable):
 
    Returns: An array of strings containing the filenames of files which could not be read.
   """
-  pass
- def GetFileSyntaxErrors(self):
-  """
+        pass
+
+    def GetFileSyntaxErrors(self):
+        """
   GetFileSyntaxErrors(self: KeyBasedTreeEntriesLoadResults) -> IList[str]
 
   
@@ -51,9 +55,10 @@ class KeyBasedTreeEntriesLoadResults(object,IDisposable):
 
     not be parsed.
   """
-  pass
- def GetKeyBasedTreeEntryErrors(self,type=None):
-  """
+        pass
+
+    def GetKeyBasedTreeEntryErrors(self, type=None):
+        """
   GetKeyBasedTreeEntryErrors(self: KeyBasedTreeEntriesLoadResults) -> IList[KeyBasedTreeEntryError]
 
   
@@ -90,24 +95,32 @@ class KeyBasedTreeEntriesLoadResults(object,IDisposable):
 
     matching the type specified.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: KeyBasedTreeEntriesLoadResults,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: KeyBasedTreeEntriesLoadResults,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -116,5 +129,3 @@ Get: IsValidObject(self: KeyBasedTreeEntriesLoadResults) -> bool
 
 
 """
-
-

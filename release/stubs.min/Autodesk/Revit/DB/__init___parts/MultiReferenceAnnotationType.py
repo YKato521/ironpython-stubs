@@ -1,8 +1,9 @@
-class MultiReferenceAnnotationType(ElementType,IDisposable):
- """ The type for MultiReferenceAnnotation. """
- @staticmethod
- def CreateDefault(document):
-  """
+class MultiReferenceAnnotationType(ElementType, IDisposable):
+    """ The type for MultiReferenceAnnotation. """
+
+    @staticmethod
+    def CreateDefault(document):
+        """
   CreateDefault(document: Document) -> MultiReferenceAnnotationType
 
   
@@ -19,12 +20,14 @@ class MultiReferenceAnnotationType(ElementType,IDisposable):
 
    Returns: The new MultiReferenceAnnotationType element.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def GetAllowedTagCategory(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def GetAllowedTagCategory(self):
+        """
   GetAllowedTagCategory(self: MultiReferenceAnnotationType) -> ElementId
 
   
@@ -37,12 +40,14 @@ class MultiReferenceAnnotationType(ElementType,IDisposable):
 
    Returns: The allowed tag category ID.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def IsAllowedDimensionStyle(self,dimensionStyleId):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def IsAllowedDimensionStyle(self, dimensionStyleId):
+        """
   IsAllowedDimensionStyle(self: MultiReferenceAnnotationType,dimensionStyleId: ElementId) -> bool
 
   
@@ -55,9 +60,10 @@ class MultiReferenceAnnotationType(ElementType,IDisposable):
 
    Returns: True if the dimension style can be used by multi-reference annotations.
   """
-  pass
- def IsAllowedReferenceCategory(self,referenceCategoryId):
-  """
+        pass
+
+    def IsAllowedReferenceCategory(self, referenceCategoryId):
+        """
   IsAllowedReferenceCategory(self: MultiReferenceAnnotationType,referenceCategoryId: ElementId) -> bool
 
   
@@ -70,10 +76,11 @@ class MultiReferenceAnnotationType(ElementType,IDisposable):
 
    Returns: True when the reference category can be used by multi-reference annotations.
   """
-  pass
- @staticmethod
- def IsAllowedTagCategory(tagCategoryId):
-  """
+        pass
+
+    @staticmethod
+    def IsAllowedTagCategory(tagCategoryId):
+        """
   IsAllowedTagCategory(tagCategoryId: ElementId) -> bool
 
   
@@ -88,9 +95,10 @@ class MultiReferenceAnnotationType(ElementType,IDisposable):
 
    tagCategoryId: The tag category to test.
   """
-  pass
- def IsAllowedTagType(self,tagTypeId):
-  """
+        pass
+
+    def IsAllowedTagType(self, tagTypeId):
+        """
   IsAllowedTagType(self: MultiReferenceAnnotationType,tagTypeId: ElementId) -> bool
 
   
@@ -105,24 +113,32 @@ class MultiReferenceAnnotationType(ElementType,IDisposable):
 
     annotation's reference category.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- DimensionStyleId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The dimension style which will be used by the child dimension of the multi-reference annotation.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    DimensionStyleId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The dimension style which will be used by the child dimension of the multi-reference annotation.
 
 
 
@@ -134,8 +150,10 @@ Set: DimensionStyleId(self: MultiReferenceAnnotationType)=value
 
 """
 
- GroupTagHeads=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Controls if parameter values for the annotation's references will be reported in one grouped tag head
+    GroupTagHeads = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Controls if parameter values for the annotation's references will be reported in one grouped tag head
 
    or if every reference will get its own tag head.
 
@@ -149,8 +167,10 @@ Set: GroupTagHeads(self: MultiReferenceAnnotationType)=value
 
 """
 
- ReferenceCategoryId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The category of elements to which this annotation applies.
+    ReferenceCategoryId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The category of elements to which this annotation applies.
 
 
 
@@ -160,8 +180,10 @@ Get: ReferenceCategoryId(self: MultiReferenceAnnotationType) -> ElementId
 
 """
 
- ShowDimensionText=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Controls if text from the multi-reference annotation's dimension will be shown.
+    ShowDimensionText = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Controls if text from the multi-reference annotation's dimension will be shown.
 
 
 
@@ -173,8 +195,8 @@ Set: ShowDimensionText(self: MultiReferenceAnnotationType)=value
 
 """
 
- TagTypeId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The tag type which will be used by the child tag the multi-reference annotation.
+    TagTypeId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The tag type which will be used by the child tag the multi-reference annotation.
 
 
 
@@ -185,5 +207,3 @@ Get: TagTypeId(self: MultiReferenceAnnotationType) -> ElementId
 Set: TagTypeId(self: MultiReferenceAnnotationType)=value
 
 """
-
-

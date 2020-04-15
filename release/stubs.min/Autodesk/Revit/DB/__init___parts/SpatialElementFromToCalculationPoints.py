@@ -1,26 +1,32 @@
-class SpatialElementFromToCalculationPoints(SpatialElementCalculationLocation,IDisposable):
- """
+class SpatialElementFromToCalculationPoints(
+    SpatialElementCalculationLocation, IDisposable
+):
+    """
  SpatialElementFromToCalculationPoints is used to specify the search points for a family instance which connects
 
     two rooms or spaces,such as a door or window. The points determine which room or space is considered the "from"
 
     and which is considered the "to".
  """
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def Flip(self):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def Flip(self):
+        """
   Flip(self: SpatialElementFromToCalculationPoints)
 
    flip the direction of the "from" and "to" points
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def IsAcceptableFromPosition(self,fromPosition):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def IsAcceptableFromPosition(self, fromPosition):
+        """
   IsAcceptableFromPosition(self: SpatialElementFromToCalculationPoints,fromPosition: XYZ) -> bool
 
   
@@ -29,9 +35,10 @@ class SpatialElementFromToCalculationPoints(SpatialElementCalculationLocation,ID
 
    Returns: True if the input is an acceptable "from" position and False otherwise.
   """
-  pass
- def IsAcceptableToPosition(self,toPosition):
-  """
+        pass
+
+    def IsAcceptableToPosition(self, toPosition):
+        """
   IsAcceptableToPosition(self: SpatialElementFromToCalculationPoints,toPosition: XYZ) -> bool
 
   
@@ -40,9 +47,10 @@ class SpatialElementFromToCalculationPoints(SpatialElementCalculationLocation,ID
 
    Returns: True if the input is an acceptable "to" position and False otherwise.
   """
-  pass
- def MakeFromPositionAcceptable(self,newFromLocation):
-  """
+        pass
+
+    def MakeFromPositionAcceptable(self, newFromLocation):
+        """
   MakeFromPositionAcceptable(self: SpatialElementFromToCalculationPoints,newFromLocation: XYZ) -> XYZ
 
   
@@ -63,9 +71,10 @@ class SpatialElementFromToCalculationPoints(SpatialElementCalculationLocation,ID
 
    Returns: The valid "from" location.
   """
-  pass
- def MakeToPositionAcceptable(self,newToLocation):
-  """
+        pass
+
+    def MakeToPositionAcceptable(self, newToLocation):
+        """
   MakeToPositionAcceptable(self: SpatialElementFromToCalculationPoints,newToLocation: XYZ) -> XYZ
 
   
@@ -86,24 +95,32 @@ class SpatialElementFromToCalculationPoints(SpatialElementCalculationLocation,ID
 
    Returns: The valid "to" location.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- FromPosition=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The "from" position of spatial element connecting calculation point.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    FromPosition = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The "from" position of spatial element connecting calculation point.
 
 
 
@@ -115,8 +132,10 @@ Set: FromPosition(self: SpatialElementFromToCalculationPoints)=value
 
 """
 
- ToPosition=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The "to" position of spatial element connecting calculation point.
+    ToPosition = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The "to" position of spatial element connecting calculation point.
 
 
 
@@ -127,5 +146,3 @@ Get: ToPosition(self: SpatialElementFromToCalculationPoints) -> XYZ
 Set: ToPosition(self: SpatialElementFromToCalculationPoints)=value
 
 """
-
-

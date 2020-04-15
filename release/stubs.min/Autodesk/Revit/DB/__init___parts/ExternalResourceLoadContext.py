@@ -1,11 +1,12 @@
-class ExternalResourceLoadContext(object,IDisposable):
- """
+class ExternalResourceLoadContext(object, IDisposable):
+    """
  This class contains data describing the context related
 
     to an external resource load operation.
  """
- def CallingDocumentHasModelPath(self):
-  """
+
+    def CallingDocumentHasModelPath(self):
+        """
   CallingDocumentHasModelPath(self: ExternalResourceLoadContext) -> bool
 
   
@@ -20,12 +21,14 @@ class ExternalResourceLoadContext(object,IDisposable):
 
    Returns: True if the document has a defined ModelPath.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: ExternalResourceLoadContext) """
-  pass
- def GetCallingDocumentModelPath(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: ExternalResourceLoadContext) """
+        pass
+
+    def GetCallingDocumentModelPath(self):
+        """
   GetCallingDocumentModelPath(self: ExternalResourceLoadContext) -> ModelPath
 
   
@@ -44,9 +47,10 @@ class ExternalResourceLoadContext(object,IDisposable):
 
     resource.
   """
-  pass
- def GetCurrentlyLoadedReference(self):
-  """
+        pass
+
+    def GetCurrentlyLoadedReference(self):
+        """
   GetCurrentlyLoadedReference(self: ExternalResourceLoadContext) -> ExternalResourceReference
 
   
@@ -65,24 +69,32 @@ class ExternalResourceLoadContext(object,IDisposable):
 
     element.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: ExternalResourceLoadContext,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: ExternalResourceLoadContext,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -92,8 +104,10 @@ Get: IsValidObject(self: ExternalResourceLoadContext) -> bool
 
 """
 
- LoadOperationType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """An enum value indicating whether the resource load was triggered by an
+    LoadOperationType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """An enum value indicating whether the resource load was triggered by an
 
    automatic event (such as file open) or an explicit user action.
 
@@ -104,5 +118,3 @@ Get: LoadOperationType(self: ExternalResourceLoadContext) -> LoadOperationType
 
 
 """
-
-

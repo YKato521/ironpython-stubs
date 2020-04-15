@@ -1,13 +1,14 @@
 class RepeatBehaviorConverter(TypeConverter):
- """
+    """
  Converts instances of System.Windows.Media.Animation.RepeatBehavior to and from other data types.
 
  
 
  RepeatBehaviorConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: RepeatBehaviorConverter,td: ITypeDescriptorContext,t: Type) -> bool
 
   
@@ -22,9 +23,10 @@ class RepeatBehaviorConverter(TypeConverter):
 
    Returns: true if conversion is supported; otherwise,false.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: RepeatBehaviorConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -39,9 +41,10 @@ class RepeatBehaviorConverter(TypeConverter):
 
    Returns: true if conversion is possible; otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: RepeatBehaviorConverter,td: ITypeDescriptorContext,cultureInfo: CultureInfo,value: object) -> object
 
   
@@ -62,9 +65,10 @@ class RepeatBehaviorConverter(TypeConverter):
 
    Returns: A new System.Windows.Media.Animation.RepeatBehavior object based on value.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: RepeatBehaviorConverter,context: ITypeDescriptorContext,cultureInfo: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -89,4 +93,4 @@ class RepeatBehaviorConverter(TypeConverter):
 
     System.ComponentModel.Design.Serialization.InstanceDescriptor.
   """
-  pass
+        pass

@@ -1,13 +1,14 @@
 class DataTemplateSelector(object):
- """
+    """
  Provides a way to choose a System.Windows.DataTemplate based on the data object and the data-bound element.
 
  
 
  DataTemplateSelector()
  """
- def SelectTemplate(self,item,container):
-  """
+
+    def SelectTemplate(self, item, container):
+        """
   SelectTemplate(self: DataTemplateSelector,item: object,container: DependencyObject) -> DataTemplate
 
   
@@ -22,4 +23,4 @@ class DataTemplateSelector(object):
 
    Returns: Returns a System.Windows.DataTemplate or null. The default value is null.
   """
-  pass
+        pass

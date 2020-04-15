@@ -8,6 +8,7 @@
 # no functions
 # classes
 
+
 class ElementQueries(object):
     # no doc
     @staticmethod
@@ -31,15 +32,16 @@ class ElementQueries(object):
         pass
 
     __all__ = [
-        'AtLevel',
-        'OfCategory',
-        'OfElementType',
-        'OfFamilyType',
+        "AtLevel",
+        "OfCategory",
+        "OfElementType",
+        "OfFamilyType",
     ]
 
 
 class ElementUtils(object):
     """ ElementUtils() """
+
     @staticmethod
     def GetConvertedParameterValue(param, value):
         """ GetConvertedParameterValue(param: Parameter, value: float) -> float """
@@ -48,10 +50,14 @@ class ElementUtils(object):
     @staticmethod
     def GetParameterValue(param):
         """
-        GetParameterValue(param: Parameter) -> object
-        
-            Get a revit parameters value
-        
+        GetParameterValue(param: Parameter) -> object
+
+        
+
+            Get a revit parameters value
+
+        
+
             param: Revit parameter
         """
         pass
@@ -64,17 +70,28 @@ class ElementUtils(object):
     @staticmethod
     def UpdateLevelName(name):
         """
-        UpdateLevelName(name: str) -> str
-        
-            This function checks if the name ends with "(num)". Here num is a integer.
-            
-                     If yes, it will replace "(num)" with "(num+1)". Here num+1 is the form 
-             of the
-                    evaluated integer. Otherwise, it will append "(1)" at the 
-             end of the name.
-                    For example:
-                    This function will 
-             change the name from "abc(2)" to "abc(3)",
+        UpdateLevelName(name: str) -> str
+
+        
+
+            This function checks if the name ends with "(num)". Here num is a integer.
+
+            
+
+                     If yes, it will replace "(num)" with "(num+1)". Here num+1 is the form 
+
+             of the
+
+                    evaluated integer. Otherwise, it will append "(1)" at the 
+
+             end of the name.
+
+                    For example:
+
+                    This function will 
+
+             change the name from "abc(2)" to "abc(3)",
+
                     from "abc" to "abc(1)".
         """
         pass
@@ -82,9 +99,8 @@ class ElementUtils(object):
 
 class TransformUtils(object):
     """ TransformUtils() """
+
     @staticmethod
     def ExtractEularAnglesFromTransform(transform, angles):
         """ ExtractEularAnglesFromTransform(transform: Transform) -> Array[float] """
         pass
-
-

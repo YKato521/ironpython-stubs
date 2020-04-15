@@ -1,7 +1,8 @@
 class ICustomMarshaler:
- """ Provides custom wrappers for handling method calls. """
- def CleanUpManagedData(self,ManagedObj):
-  """
+    """ Provides custom wrappers for handling method calls. """
+
+    def CleanUpManagedData(self, ManagedObj):
+        """
   CleanUpManagedData(self: ICustomMarshaler,ManagedObj: object)
 
    Performs necessary cleanup of the managed data when it is no longer needed.
@@ -10,9 +11,10 @@ class ICustomMarshaler:
 
    ManagedObj: The managed object to be destroyed.
   """
-  pass
- def CleanUpNativeData(self,pNativeData):
-  """
+        pass
+
+    def CleanUpNativeData(self, pNativeData):
+        """
   CleanUpNativeData(self: ICustomMarshaler,pNativeData: IntPtr)
 
    Performs necessary cleanup of the unmanaged data when it is no longer needed.
@@ -21,9 +23,10 @@ class ICustomMarshaler:
 
    pNativeData: A pointer to the unmanaged data to be destroyed.
   """
-  pass
- def GetNativeDataSize(self):
-  """
+        pass
+
+    def GetNativeDataSize(self):
+        """
   GetNativeDataSize(self: ICustomMarshaler) -> int
 
   
@@ -32,9 +35,10 @@ class ICustomMarshaler:
 
    Returns: The size,in bytes,of the native data.
   """
-  pass
- def MarshalManagedToNative(self,ManagedObj):
-  """
+        pass
+
+    def MarshalManagedToNative(self, ManagedObj):
+        """
   MarshalManagedToNative(self: ICustomMarshaler,ManagedObj: object) -> IntPtr
 
   
@@ -47,9 +51,10 @@ class ICustomMarshaler:
 
    Returns: A pointer to the COM view of the managed object.
   """
-  pass
- def MarshalNativeToManaged(self,pNativeData):
-  """
+        pass
+
+    def MarshalNativeToManaged(self, pNativeData):
+        """
   MarshalNativeToManaged(self: ICustomMarshaler,pNativeData: IntPtr) -> object
 
   
@@ -62,7 +67,8 @@ class ICustomMarshaler:
 
    Returns: An object that represents the managed view of the COM data.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

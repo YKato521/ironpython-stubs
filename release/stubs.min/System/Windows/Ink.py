@@ -8,114 +8,128 @@
 # no functions
 # classes
 
-class ApplicationGesture(Enum,IComparable,IFormattable,IConvertible):
- """
+
+class ApplicationGesture(Enum, IComparable, IFormattable, IConvertible):
+    """
  Specifies the available application-specific gesture.
 
  
 
  enum ApplicationGesture,values: AllGestures (0),ArrowDown (61497),ArrowLeft (61498),ArrowRight (61499),ArrowUp (61496),Check (61445),ChevronDown (61489),ChevronLeft (61490),ChevronRight (61491),ChevronUp (61488),Circle (61472),Curlicue (61456),DoubleCircle (61473),DoubleCurlicue (61457),DoubleTap (61681),Down (61529),DownLeft (61546),DownLeftLong (61542),DownRight (61547),DownRightLong (61543),DownUp (61537),Exclamation (61604),Left (61530),LeftDown (61549),LeftRight (61538),LeftUp (61548),NoGesture (61440),Right (61531),RightDown (61551),RightLeft (61539),RightUp (61550),ScratchOut (61441),SemicircleLeft (61480),SemicircleRight (61481),Square (61443),Star (61444),Tap (61680),Triangle (61442),Up (61528),UpDown (61536),UpLeft (61544),UpLeftLong (61540),UpRight (61545),UpRightLong (61541)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- AllGestures=None
- ArrowDown=None
- ArrowLeft=None
- ArrowRight=None
- ArrowUp=None
- Check=None
- ChevronDown=None
- ChevronLeft=None
- ChevronRight=None
- ChevronUp=None
- Circle=None
- Curlicue=None
- DoubleCircle=None
- DoubleCurlicue=None
- DoubleTap=None
- Down=None
- DownLeft=None
- DownLeftLong=None
- DownRight=None
- DownRightLong=None
- DownUp=None
- Exclamation=None
- Left=None
- LeftDown=None
- LeftRight=None
- LeftUp=None
- NoGesture=None
- Right=None
- RightDown=None
- RightLeft=None
- RightUp=None
- ScratchOut=None
- SemicircleLeft=None
- SemicircleRight=None
- Square=None
- Star=None
- Tap=None
- Triangle=None
- Up=None
- UpDown=None
- UpLeft=None
- UpLeftLong=None
- UpRight=None
- UpRightLong=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AllGestures = None
+    ArrowDown = None
+    ArrowLeft = None
+    ArrowRight = None
+    ArrowUp = None
+    Check = None
+    ChevronDown = None
+    ChevronLeft = None
+    ChevronRight = None
+    ChevronUp = None
+    Circle = None
+    Curlicue = None
+    DoubleCircle = None
+    DoubleCurlicue = None
+    DoubleTap = None
+    Down = None
+    DownLeft = None
+    DownLeftLong = None
+    DownRight = None
+    DownRightLong = None
+    DownUp = None
+    Exclamation = None
+    Left = None
+    LeftDown = None
+    LeftRight = None
+    LeftUp = None
+    NoGesture = None
+    Right = None
+    RightDown = None
+    RightLeft = None
+    RightUp = None
+    ScratchOut = None
+    SemicircleLeft = None
+    SemicircleRight = None
+    Square = None
+    Star = None
+    Tap = None
+    Triangle = None
+    Up = None
+    UpDown = None
+    UpLeft = None
+    UpLeftLong = None
+    UpRight = None
+    UpRightLong = None
+    value__ = None
 
 
 class DrawingAttributeIds(object):
- """ Contains a set of GUIDs that identify the properties in the System.Windows.Ink.DrawingAttributes class. """
- Color=None
- DrawingFlags=None
- IsHighlighter=None
- StylusHeight=None
- StylusTip=None
- StylusTipTransform=None
- StylusWidth=None
- __all__=[
-  'Color',
-  'DrawingFlags',
-  'IsHighlighter',
-  'StylusHeight',
-  'StylusTip',
-  'StylusTipTransform',
-  'StylusWidth',
- ]
+    """ Contains a set of GUIDs that identify the properties in the System.Windows.Ink.DrawingAttributes class. """
+
+    Color = None
+    DrawingFlags = None
+    IsHighlighter = None
+    StylusHeight = None
+    StylusTip = None
+    StylusTipTransform = None
+    StylusWidth = None
+    __all__ = [
+        "Color",
+        "DrawingFlags",
+        "IsHighlighter",
+        "StylusHeight",
+        "StylusTip",
+        "StylusTipTransform",
+        "StylusWidth",
+    ]
 
 
-class DrawingAttributes(object,INotifyPropertyChanged):
- """
+class DrawingAttributes(object, INotifyPropertyChanged):
+    """
  Specifies the appearance of a System.Windows.Ink.Stroke
 
  
 
  DrawingAttributes()
  """
- def AddPropertyData(self,propertyDataId,propertyData):
-  """
+
+    def AddPropertyData(self, propertyDataId, propertyData):
+        """
   AddPropertyData(self: DrawingAttributes,propertyDataId: Guid,propertyData: object)
 
    Adds a custom property to the System.Windows.Ink.DrawingAttributes object.
@@ -132,9 +146,10 @@ class DrawingAttributes(object,INotifyPropertyChanged):
 
     an array of these data types; however it cannot be an array of type System.String.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: DrawingAttributes) -> DrawingAttributes
 
   
@@ -143,9 +158,10 @@ class DrawingAttributes(object,INotifyPropertyChanged):
 
    Returns: A copy of the System.Windows.Ink.DrawingAttributes object.
   """
-  pass
- def ContainsPropertyData(self,propertyDataId):
-  """
+        pass
+
+    def ContainsPropertyData(self, propertyDataId):
+        """
   ContainsPropertyData(self: DrawingAttributes,propertyDataId: Guid) -> bool
 
   
@@ -164,9 +180,10 @@ class DrawingAttributes(object,INotifyPropertyChanged):
 
     object; otherwise,false.
   """
-  pass
- def Equals(self,o):
-  """
+        pass
+
+    def Equals(self, o):
+        """
   Equals(self: DrawingAttributes,o: object) -> bool
 
   
@@ -187,12 +204,14 @@ class DrawingAttributes(object,INotifyPropertyChanged):
 
    Returns: true if the objects are equal; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """ GetHashCode(self: DrawingAttributes) -> int """
-  pass
- def GetPropertyData(self,propertyDataId):
-  """
+        pass
+
+    def GetHashCode(self):
+        """ GetHashCode(self: DrawingAttributes) -> int """
+        pass
+
+    def GetPropertyData(self, propertyDataId):
+        """
   GetPropertyData(self: DrawingAttributes,propertyDataId: Guid) -> object
 
   
@@ -205,9 +224,10 @@ class DrawingAttributes(object,INotifyPropertyChanged):
 
    Returns: The value of the custom property associated with the specified System.Guid.
   """
-  pass
- def GetPropertyDataIds(self):
-  """
+        pass
+
+    def GetPropertyDataIds(self):
+        """
   GetPropertyDataIds(self: DrawingAttributes) -> Array[Guid]
 
   
@@ -220,9 +240,10 @@ class DrawingAttributes(object,INotifyPropertyChanged):
 
    Returns: An array of type System.Guid that represents the property data identifiers.
   """
-  pass
- def OnAttributeChanged(self,*args):
-  """
+        pass
+
+    def OnAttributeChanged(self, *args):
+        """
   OnAttributeChanged(self: DrawingAttributes,e: PropertyDataChangedEventArgs)
 
    Raises the System.Windows.Ink.DrawingAttributes.AttributeChanged event.
@@ -231,9 +252,10 @@ class DrawingAttributes(object,INotifyPropertyChanged):
 
    e: A System.Windows.Ink.PropertyDataChangedEventArgs that contains the event data.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: DrawingAttributes,e: PropertyChangedEventArgs)
 
    Occurs when any System.Windows.Ink.DrawingAttributes property changes.
@@ -242,9 +264,10 @@ class DrawingAttributes(object,INotifyPropertyChanged):
 
    e: EventArgs
   """
-  pass
- def OnPropertyDataChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyDataChanged(self, *args):
+        """
   OnPropertyDataChanged(self: DrawingAttributes,e: PropertyDataChangedEventArgs)
 
    Raises the System.Windows.Ink.DrawingAttributes.PropertyDataChanged event.
@@ -253,9 +276,10 @@ class DrawingAttributes(object,INotifyPropertyChanged):
 
    e: A System.Windows.Ink.PropertyDataChangedEventArgs that contains the event data.
   """
-  pass
- def RemovePropertyData(self,propertyDataId):
-  """
+        pass
+
+    def RemovePropertyData(self, propertyDataId):
+        """
   RemovePropertyData(self: DrawingAttributes,propertyDataId: Guid)
 
    Removes the custom property associated with the specified System.Guid.
@@ -264,20 +288,25 @@ class DrawingAttributes(object,INotifyPropertyChanged):
 
    propertyDataId: The System.Guid associated with the custom property to remove.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __ne__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Color=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the color of a System.Windows.Ink.Stroke.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Color = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the color of a System.Windows.Ink.Stroke.
 
 
 
@@ -289,8 +318,10 @@ Set: Color(self: DrawingAttributes)=value
 
 """
 
- FitToCurve=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether Bezier smoothing is used to render the System.Windows.Ink.Stroke.
+    FitToCurve = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether Bezier smoothing is used to render the System.Windows.Ink.Stroke.
 
 
 
@@ -302,8 +333,8 @@ Set: FitToCurve(self: DrawingAttributes)=value
 
 """
 
- Height=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the height of the stylus used to draw the System.Windows.Ink.Stroke.
+    Height = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the height of the stylus used to draw the System.Windows.Ink.Stroke.
 
 
 
@@ -315,8 +346,10 @@ Set: Height(self: DrawingAttributes)=value
 
 """
 
- IgnorePressure=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether the thickness of a rendered System.Windows.Ink.Stroke changes according the amount of pressure applied.
+    IgnorePressure = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether the thickness of a rendered System.Windows.Ink.Stroke changes according the amount of pressure applied.
 
 
 
@@ -328,8 +361,10 @@ Set: IgnorePressure(self: DrawingAttributes)=value
 
 """
 
- IsHighlighter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether the System.Windows.Ink.Stroke looks like a highlighter.
+    IsHighlighter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether the System.Windows.Ink.Stroke looks like a highlighter.
 
 
 
@@ -341,8 +376,8 @@ Set: IsHighlighter(self: DrawingAttributes)=value
 
 """
 
- StylusTip=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the shape of the stylus used to draw the System.Windows.Ink.Stroke.
+    StylusTip = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the shape of the stylus used to draw the System.Windows.Ink.Stroke.
 
 
 
@@ -354,8 +389,10 @@ Set: StylusTip(self: DrawingAttributes)=value
 
 """
 
- StylusTipTransform=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Windows.Media.Matrix that specifies the transformation to perform on the stylus' tip.
+    StylusTipTransform = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Windows.Media.Matrix that specifies the transformation to perform on the stylus' tip.
 
 
 
@@ -367,8 +404,8 @@ Set: StylusTipTransform(self: DrawingAttributes)=value
 
 """
 
- Width=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the width of the stylus used to draw the System.Windows.Ink.Stroke.
+    Width = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the width of the stylus used to draw the System.Windows.Ink.Stroke.
 
 
 
@@ -380,29 +417,32 @@ Set: Width(self: DrawingAttributes)=value
 
 """
 
-
- AttributeChanged=None
- MaxHeight=162329.46141732301
- MaxWidth=162329.46141732301
- MinHeight=3.77952755905512e-05
- MinWidth=3.77952755905512e-05
- PropertyDataChanged=None
+    AttributeChanged = None
+    MaxHeight = 162329.46141732301
+    MaxWidth = 162329.46141732301
+    MinHeight = 3.77952755905512e-05
+    MinWidth = 3.77952755905512e-05
+    PropertyDataChanged = None
 
 
 class DrawingAttributesReplacedEventArgs(EventArgs):
- """
+    """
  Provides data for the System.Windows.Controls.InkCanvas.DefaultDrawingAttributesReplaced event.
 
  
 
  DrawingAttributesReplacedEventArgs(newDrawingAttributes: DrawingAttributes,previousDrawingAttributes: DrawingAttributes)
  """
- @staticmethod
- def __new__(self,newDrawingAttributes,previousDrawingAttributes):
-  """ __new__(cls: type,newDrawingAttributes: DrawingAttributes,previousDrawingAttributes: DrawingAttributes) """
-  pass
- NewDrawingAttributes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the new System.Windows.Ink.DrawingAttributes.
+
+    @staticmethod
+    def __new__(self, newDrawingAttributes, previousDrawingAttributes):
+        """ __new__(cls: type,newDrawingAttributes: DrawingAttributes,previousDrawingAttributes: DrawingAttributes) """
+        pass
+
+    NewDrawingAttributes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the new System.Windows.Ink.DrawingAttributes.
 
 
 
@@ -412,8 +452,10 @@ Get: NewDrawingAttributes(self: DrawingAttributesReplacedEventArgs) -> DrawingAt
 
 """
 
- PreviousDrawingAttributes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the old System.Windows.Ink.DrawingAttributes.
+    PreviousDrawingAttributes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the old System.Windows.Ink.DrawingAttributes.
 
 
 
@@ -424,20 +466,23 @@ Get: PreviousDrawingAttributes(self: DrawingAttributesReplacedEventArgs) -> Draw
 """
 
 
-
-class DrawingAttributesReplacedEventHandler(MulticastDelegate,ICloneable,ISerializable):
- """
+class DrawingAttributesReplacedEventHandler(
+    MulticastDelegate, ICloneable, ISerializable
+):
+    """
  Represents the method that handles the System.Windows.Controls.InkCanvas.DefaultDrawingAttributesReplaced event of an System.Windows.Controls.InkCanvas.
 
  
 
  DrawingAttributesReplacedEventHandler(object: object,method: IntPtr)
  """
- def BeginInvoke(self,sender,e,callback,object):
-  """ BeginInvoke(self: DrawingAttributesReplacedEventHandler,sender: object,e: DrawingAttributesReplacedEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+
+    def BeginInvoke(self, sender, e, callback, object):
+        """ BeginInvoke(self: DrawingAttributesReplacedEventHandler,sender: object,e: DrawingAttributesReplacedEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -450,9 +495,10 @@ class DrawingAttributesReplacedEventHandler(MulticastDelegate,ICloneable,ISerial
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -471,12 +517,14 @@ class DrawingAttributesReplacedEventHandler(MulticastDelegate,ICloneable,ISerial
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: DrawingAttributesReplacedEventHandler,result: IAsyncResult) """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: DrawingAttributesReplacedEventHandler,result: IAsyncResult) """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -485,12 +533,14 @@ class DrawingAttributesReplacedEventHandler(MulticastDelegate,ICloneable,ISerial
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,sender,e):
-  """ Invoke(self: DrawingAttributesReplacedEventHandler,sender: object,e: DrawingAttributesReplacedEventArgs) """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, sender, e):
+        """ Invoke(self: DrawingAttributesReplacedEventHandler,sender: object,e: DrawingAttributesReplacedEventArgs) """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -509,21 +559,26 @@ class DrawingAttributesReplacedEventHandler(MulticastDelegate,ICloneable,ISerial
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
 
 class StylusShape(object):
- """ Represents the tip of a stylus. """
- Height=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the height of the stylus.
+    """ Represents the tip of a stylus. """
+
+    Height = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the height of the stylus.
 
 
 
@@ -533,8 +588,8 @@ Get: Height(self: StylusShape) -> float
 
 """
 
- Rotation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the angle of the stylus.
+    Rotation = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the angle of the stylus.
 
 
 
@@ -544,8 +599,8 @@ Get: Rotation(self: StylusShape) -> float
 
 """
 
- Width=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the width of the stylus.
+    Width = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the width of the stylus.
 
 
 
@@ -556,9 +611,8 @@ Get: Width(self: StylusShape) -> float
 """
 
 
-
 class EllipseStylusShape(StylusShape):
- """
+    """
  Represents a stylus tip shaped like an ellipse.
 
  
@@ -567,19 +621,24 @@ class EllipseStylusShape(StylusShape):
 
  EllipseStylusShape(width: float,height: float,rotation: float)
  """
- @staticmethod
- def __new__(self,width,height,rotation=None):
-  """
+
+    @staticmethod
+    def __new__(self, width, height, rotation=None):
+        """
   __new__(cls: type,width: float,height: float)
 
   __new__(cls: type,width: float,height: float,rotation: float)
   """
-  pass
+        pass
+
 
 class GestureRecognitionResult(object):
- """ Contains information about an ink gesture. """
- ApplicationGesture=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the recognized ink gesture.
+    """ Contains information about an ink gesture. """
+
+    ApplicationGesture = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the recognized ink gesture.
 
 
 
@@ -589,8 +648,10 @@ Get: ApplicationGesture(self: GestureRecognitionResult) -> ApplicationGesture
 
 """
 
- RecognitionConfidence=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the level of confidence that the System.Windows.Ink.GestureRecognizer has in the recognition of the gesture.
+    RecognitionConfidence = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the level of confidence that the System.Windows.Ink.GestureRecognizer has in the recognition of the gesture.
 
 
 
@@ -601,9 +662,8 @@ Get: RecognitionConfidence(self: GestureRecognitionResult) -> RecognitionConfide
 """
 
 
-
-class GestureRecognizer(DependencyObject,IDisposable):
- """
+class GestureRecognizer(DependencyObject, IDisposable):
+    """
  Recognizes ink gestures.
 
  
@@ -612,15 +672,17 @@ class GestureRecognizer(DependencyObject,IDisposable):
 
  GestureRecognizer(enabledApplicationGestures: IEnumerable[ApplicationGesture])
  """
- def Dispose(self):
-  """
+
+    def Dispose(self):
+        """
   Dispose(self: GestureRecognizer)
 
    Releases all resources used by the System.Windows.Ink.GestureRecognizer.
   """
-  pass
- def GetEnabledGestures(self):
-  """
+        pass
+
+    def GetEnabledGestures(self):
+        """
   GetEnabledGestures(self: GestureRecognizer) -> ReadOnlyCollection[ApplicationGesture]
 
   
@@ -631,9 +693,10 @@ class GestureRecognizer(DependencyObject,IDisposable):
 
     System.Windows.Ink.GestureRecognizer is set to recognize.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: DependencyObject,e: DependencyPropertyChangedEventArgs)
 
    Invoked whenever the effective value of any dependency property on this 
@@ -650,9 +713,10 @@ class GestureRecognizer(DependencyObject,IDisposable):
 
     metadata for the type,and old and new values.
   """
-  pass
- def Recognize(self,strokes):
-  """
+        pass
+
+    def Recognize(self, strokes):
+        """
   Recognize(self: GestureRecognizer,strokes: StrokeCollection) -> ReadOnlyCollection[GestureRecognitionResult]
 
   
@@ -667,12 +731,14 @@ class GestureRecognizer(DependencyObject,IDisposable):
 
     that the System.Windows.Ink.GestureRecognizer recognized.
   """
-  pass
- def SetEnabledGestures(self,applicationGestures):
-  """ SetEnabledGestures(self: GestureRecognizer,applicationGestures: IEnumerable[ApplicationGesture]) """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def SetEnabledGestures(self, applicationGestures):
+        """ SetEnabledGestures(self: GestureRecognizer,applicationGestures: IEnumerable[ApplicationGesture]) """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -689,36 +755,43 @@ class GestureRecognizer(DependencyObject,IDisposable):
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,enabledApplicationGestures=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, enabledApplicationGestures=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,enabledApplicationGestures: IEnumerable[ApplicationGesture])
   """
-  pass
- IsRecognizerAvailable=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a Boolean that indicates whether the gesture recognizer is available on the user's system.
+        pass
+
+    IsRecognizerAvailable = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a Boolean that indicates whether the gesture recognizer is available on the user's system.
 
 
 
@@ -729,11 +802,11 @@ Get: IsRecognizerAvailable(self: GestureRecognizer) -> bool
 """
 
 
-
 class IncrementalHitTester(object):
- """ Dynamically performs hit testing on a System.Windows.Ink.Stroke. """
- def AddPoint(self,point):
-  """
+    """ Dynamically performs hit testing on a System.Windows.Ink.Stroke. """
+
+    def AddPoint(self, point):
+        """
   AddPoint(self: IncrementalHitTester,point: Point)
 
    Adds a System.Windows.Point to the System.Windows.Ink.IncrementalHitTester.
@@ -742,9 +815,10 @@ class IncrementalHitTester(object):
 
    point: The System.Windows.Point to add to the System.Windows.Ink.IncrementalHitTester.
   """
-  pass
- def AddPoints(self,*__args):
-  """
+        pass
+
+    def AddPoints(self, *__args):
+        """
   AddPoints(self: IncrementalHitTester,stylusPoints: StylusPointCollection)
 
    Adds the specified System.Windows.Input.StylusPoint objects to the 
@@ -763,19 +837,22 @@ class IncrementalHitTester(object):
 
   AddPoints(self: IncrementalHitTester,points: IEnumerable[Point])
   """
-  pass
- def AddPointsCore(self,*args):
-  """ AddPointsCore(self: IncrementalHitTester,points: IEnumerable[Point]) """
-  pass
- def EndHitTesting(self):
-  """
+        pass
+
+    def AddPointsCore(self, *args):
+        """ AddPointsCore(self: IncrementalHitTester,points: IEnumerable[Point]) """
+        pass
+
+    def EndHitTesting(self):
+        """
   EndHitTesting(self: IncrementalHitTester)
 
    Releases resources used by the System.Windows.Ink.IncrementalHitTester.
   """
-  pass
- IsValid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets whether the System.Windows.Ink.IncrementalHitTester is hit testing.
+        pass
+
+    IsValid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets whether the System.Windows.Ink.IncrementalHitTester is hit testing.
 
 
 
@@ -786,11 +863,11 @@ Get: IsValid(self: IncrementalHitTester) -> bool
 """
 
 
-
 class IncrementalLassoHitTester(IncrementalHitTester):
- """ Dynamically hit tests a System.Windows.Ink.Stroke with a lasso. """
- def OnSelectionChanged(self,*args):
-  """
+    """ Dynamically hit tests a System.Windows.Ink.Stroke with a lasso. """
+
+    def OnSelectionChanged(self, *args):
+        """
   OnSelectionChanged(self: IncrementalLassoHitTester,eventArgs: LassoSelectionChangedEventArgs)
 
    Raises the System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged event.
@@ -799,14 +876,16 @@ class IncrementalLassoHitTester(IncrementalHitTester):
 
    eventArgs: Event data.
   """
-  pass
- SelectionChanged=None
+        pass
+
+    SelectionChanged = None
 
 
 class IncrementalStrokeHitTester(IncrementalHitTester):
- """ Dynamically hit tests a stroke with an eraser path. """
- def OnStrokeHit(self,*args):
-  """
+    """ Dynamically hit tests a stroke with an eraser path. """
+
+    def OnStrokeHit(self, *args):
+        """
   OnStrokeHit(self: IncrementalStrokeHitTester,eventArgs: StrokeHitEventArgs)
 
    Raises the System.Windows.Ink.IncrementalStrokeHitTester.StrokeHit event.
@@ -815,14 +894,18 @@ class IncrementalStrokeHitTester(IncrementalHitTester):
 
    eventArgs: Event data.
   """
-  pass
- StrokeHit=None
+        pass
+
+    StrokeHit = None
 
 
 class LassoSelectionChangedEventArgs(EventArgs):
- """ Provides data for the System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged event. """
- DeselectedStrokes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the strokes that have been removed from lasso path since the last time the System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged event was raised.
+    """ Provides data for the System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged event. """
+
+    DeselectedStrokes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the strokes that have been removed from lasso path since the last time the System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged event was raised.
 
 
 
@@ -832,8 +915,10 @@ Get: DeselectedStrokes(self: LassoSelectionChangedEventArgs) -> StrokeCollection
 
 """
 
- SelectedStrokes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the strokes that have been surrounded by the lasso path since the last time the System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged event was raised.
+    SelectedStrokes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the strokes that have been surrounded by the lasso path since the last time the System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged event was raised.
 
 
 
@@ -844,20 +929,21 @@ Get: SelectedStrokes(self: LassoSelectionChangedEventArgs) -> StrokeCollection
 """
 
 
-
-class LassoSelectionChangedEventHandler(MulticastDelegate,ICloneable,ISerializable):
- """
+class LassoSelectionChangedEventHandler(MulticastDelegate, ICloneable, ISerializable):
+    """
  Represents the method that handles the System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged event of a System.Windows.Ink.IncrementalLassoHitTester.
 
  
 
  LassoSelectionChangedEventHandler(object: object,method: IntPtr)
  """
- def BeginInvoke(self,sender,e,callback,object):
-  """ BeginInvoke(self: LassoSelectionChangedEventHandler,sender: object,e: LassoSelectionChangedEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+
+    def BeginInvoke(self, sender, e, callback, object):
+        """ BeginInvoke(self: LassoSelectionChangedEventHandler,sender: object,e: LassoSelectionChangedEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -870,9 +956,10 @@ class LassoSelectionChangedEventHandler(MulticastDelegate,ICloneable,ISerializab
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -891,12 +978,14 @@ class LassoSelectionChangedEventHandler(MulticastDelegate,ICloneable,ISerializab
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: LassoSelectionChangedEventHandler,result: IAsyncResult) """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: LassoSelectionChangedEventHandler,result: IAsyncResult) """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -905,12 +994,14 @@ class LassoSelectionChangedEventHandler(MulticastDelegate,ICloneable,ISerializab
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,sender,e):
-  """ Invoke(self: LassoSelectionChangedEventHandler,sender: object,e: LassoSelectionChangedEventArgs) """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, sender, e):
+        """ Invoke(self: LassoSelectionChangedEventHandler,sender: object,e: LassoSelectionChangedEventArgs) """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -929,31 +1020,37 @@ class LassoSelectionChangedEventHandler(MulticastDelegate,ICloneable,ISerializab
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
 
 class PropertyDataChangedEventArgs(EventArgs):
- """
+    """
  Provides data for the PropertyDataChanged event.
 
  
 
  PropertyDataChangedEventArgs(propertyGuid: Guid,newValue: object,previousValue: object)
  """
- @staticmethod
- def __new__(self,propertyGuid,newValue,previousValue):
-  """ __new__(cls: type,propertyGuid: Guid,newValue: object,previousValue: object) """
-  pass
- NewValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the new custom property object.
+
+    @staticmethod
+    def __new__(self, propertyGuid, newValue, previousValue):
+        """ __new__(cls: type,propertyGuid: Guid,newValue: object,previousValue: object) """
+        pass
+
+    NewValue = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the new custom property object.
 
 
 
@@ -963,8 +1060,10 @@ Get: NewValue(self: PropertyDataChangedEventArgs) -> object
 
 """
 
- PreviousValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the previous custom property object.
+    PreviousValue = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the previous custom property object.
 
 
 
@@ -974,8 +1073,10 @@ Get: PreviousValue(self: PropertyDataChangedEventArgs) -> object
 
 """
 
- PropertyGuid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Guid of the custom property which changed.
+    PropertyGuid = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Guid of the custom property which changed.
 
 
 
@@ -986,20 +1087,21 @@ Get: PropertyGuid(self: PropertyDataChangedEventArgs) -> Guid
 """
 
 
-
-class PropertyDataChangedEventHandler(MulticastDelegate,ICloneable,ISerializable):
- """
+class PropertyDataChangedEventHandler(MulticastDelegate, ICloneable, ISerializable):
+    """
  Represents the method that handles the PropertyDataChanged event.
 
  
 
  PropertyDataChangedEventHandler(object: object,method: IntPtr)
  """
- def BeginInvoke(self,sender,e,callback,object):
-  """ BeginInvoke(self: PropertyDataChangedEventHandler,sender: object,e: PropertyDataChangedEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+
+    def BeginInvoke(self, sender, e, callback, object):
+        """ BeginInvoke(self: PropertyDataChangedEventHandler,sender: object,e: PropertyDataChangedEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -1012,9 +1114,10 @@ class PropertyDataChangedEventHandler(MulticastDelegate,ICloneable,ISerializable
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -1033,12 +1136,14 @@ class PropertyDataChangedEventHandler(MulticastDelegate,ICloneable,ISerializable
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: PropertyDataChangedEventHandler,result: IAsyncResult) """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: PropertyDataChangedEventHandler,result: IAsyncResult) """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -1047,12 +1152,14 @@ class PropertyDataChangedEventHandler(MulticastDelegate,ICloneable,ISerializable
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,sender,e):
-  """ Invoke(self: PropertyDataChangedEventHandler,sender: object,e: PropertyDataChangedEventArgs) """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, sender, e):
+        """ Invoke(self: PropertyDataChangedEventHandler,sender: object,e: PropertyDataChangedEventArgs) """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -1071,56 +1178,71 @@ class PropertyDataChangedEventHandler(MulticastDelegate,ICloneable,ISerializable
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
 
-class RecognitionConfidence(Enum,IComparable,IFormattable,IConvertible):
- """
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+
+class RecognitionConfidence(Enum, IComparable, IFormattable, IConvertible):
+    """
  Specifies the confidence level that the System.Windows.Ink.GestureRecognizer determines for a particular ink gesture.
 
  
 
  enum RecognitionConfidence,values: Intermediate (1),Poor (2),Strong (0)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Intermediate=None
- Poor=None
- Strong=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Intermediate = None
+    Poor = None
+    Strong = None
+    value__ = None
 
 
 class RectangleStylusShape(StylusShape):
- """
+    """
  Represents a rectangular stylus tip.
 
  
@@ -1129,17 +1251,19 @@ class RectangleStylusShape(StylusShape):
 
  RectangleStylusShape(width: float,height: float,rotation: float)
  """
- @staticmethod
- def __new__(self,width,height,rotation=None):
-  """
+
+    @staticmethod
+    def __new__(self, width, height, rotation=None):
+        """
   __new__(cls: type,width: float,height: float)
 
   __new__(cls: type,width: float,height: float,rotation: float)
   """
-  pass
+        pass
 
-class Stroke(object,INotifyPropertyChanged):
- """
+
+class Stroke(object, INotifyPropertyChanged):
+    """
  Represents a single ink stroke.
 
  
@@ -1148,8 +1272,9 @@ class Stroke(object,INotifyPropertyChanged):
 
  Stroke(stylusPoints: StylusPointCollection,drawingAttributes: DrawingAttributes)
  """
- def AddPropertyData(self,propertyDataId,propertyData):
-  """
+
+    def AddPropertyData(self, propertyDataId, propertyData):
+        """
   AddPropertyData(self: Stroke,propertyDataId: Guid,propertyData: object)
 
    Adds a custom property to the System.Windows.Ink.Stroke object.
@@ -1166,9 +1291,10 @@ class Stroke(object,INotifyPropertyChanged):
 
     System.Decimal  or an array of these data types,except System.String,which is not allowed.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: Stroke) -> Stroke
 
   
@@ -1177,9 +1303,10 @@ class Stroke(object,INotifyPropertyChanged):
 
    Returns: The new System.Windows.Ink.Stroke object.
   """
-  pass
- def ContainsPropertyData(self,propertyDataId):
-  """
+        pass
+
+    def ContainsPropertyData(self, propertyDataId):
+        """
   ContainsPropertyData(self: Stroke,propertyDataId: Guid) -> bool
 
   
@@ -1196,9 +1323,10 @@ class Stroke(object,INotifyPropertyChanged):
 
    Returns: Returns true if the custom property exists; otherwise,returns false.
   """
-  pass
- def Draw(self,*__args):
-  """
+        pass
+
+    def Draw(self, *__args):
+        """
   Draw(self: Stroke,drawingContext: DrawingContext,drawingAttributes: DrawingAttributes)
 
    Renders the System.Windows.Ink.Stroke object based upon the specified 
@@ -1219,9 +1347,10 @@ class Stroke(object,INotifyPropertyChanged):
 
     System.Windows.Media.DrawingContext.
   """
-  pass
- def DrawCore(self,*args):
-  """
+        pass
+
+    def DrawCore(self, *args):
+        """
   DrawCore(self: Stroke,drawingContext: DrawingContext,drawingAttributes: DrawingAttributes)
 
    Renders the System.Windows.Ink.Stroke on the specified System.Windows.Media.DrawingContext using 
@@ -1236,9 +1365,10 @@ class Stroke(object,INotifyPropertyChanged):
 
    drawingAttributes: The Microsoft.Ink.DrawingAttributes object defining the attributes of the stroke that is drawn.
   """
-  pass
- def GetBezierStylusPoints(self):
-  """
+        pass
+
+    def GetBezierStylusPoints(self):
+        """
   GetBezierStylusPoints(self: Stroke) -> StylusPointCollection
 
   
@@ -1253,9 +1383,10 @@ class Stroke(object,INotifyPropertyChanged):
 
     a System.Windows.Ink.Stroke when System.Windows.Ink.DrawingAttributes.FitToCurve is true
   """
-  pass
- def GetBounds(self):
-  """
+        pass
+
+    def GetBounds(self):
+        """
   GetBounds(self: Stroke) -> Rect
 
   
@@ -1266,9 +1397,10 @@ class Stroke(object,INotifyPropertyChanged):
 
     object.
   """
-  pass
- def GetClipResult(self,*__args):
-  """
+        pass
+
+    def GetClipResult(self, *__args):
+        """
   GetClipResult(self: Stroke,lassoPoints: IEnumerable[Point]) -> StrokeCollection
 
   GetClipResult(self: Stroke,bounds: Rect) -> StrokeCollection
@@ -1289,9 +1421,10 @@ class Stroke(object,INotifyPropertyChanged):
 
     System.Windows.Ink.Stroke that are within the bounds of bounds.
   """
-  pass
- def GetEraseResult(self,*__args):
-  """
+        pass
+
+    def GetEraseResult(self, *__args):
+        """
   GetEraseResult(self: Stroke,eraserPath: IEnumerable[Point],eraserShape: StylusShape) -> StrokeCollection
 
   GetEraseResult(self: Stroke,lassoPoints: IEnumerable[Point]) -> StrokeCollection
@@ -1314,9 +1447,10 @@ class Stroke(object,INotifyPropertyChanged):
 
     System.Windows.Ink.Stroke that are outside the bounds of the specified System.Windows.Rect.
   """
-  pass
- def GetGeometry(self,drawingAttributes=None):
-  """
+        pass
+
+    def GetGeometry(self, drawingAttributes=None):
+        """
   GetGeometry(self: Stroke,drawingAttributes: DrawingAttributes) -> Geometry
 
   
@@ -1345,9 +1479,10 @@ class Stroke(object,INotifyPropertyChanged):
 
    Returns: A System.Windows.Media.Geometry that represents the System.Windows.Ink.Stroke.
   """
-  pass
- def GetPropertyData(self,propertyDataId):
-  """
+        pass
+
+    def GetPropertyData(self, propertyDataId):
+        """
   GetPropertyData(self: Stroke,propertyDataId: Guid) -> object
 
   
@@ -1360,9 +1495,10 @@ class Stroke(object,INotifyPropertyChanged):
 
    Returns: An object containing the property data.
   """
-  pass
- def GetPropertyDataIds(self):
-  """
+        pass
+
+    def GetPropertyDataIds(self):
+        """
   GetPropertyDataIds(self: Stroke) -> Array[Guid]
 
   
@@ -1375,9 +1511,10 @@ class Stroke(object,INotifyPropertyChanged):
 
    Returns: An array of System.Guid objects.
   """
-  pass
- def HitTest(self,*__args):
-  """
+        pass
+
+    def HitTest(self, *__args):
+        """
   HitTest(self: Stroke,lassoPoints: IEnumerable[Point],percentageWithinLasso: int) -> bool
 
   HitTest(self: Stroke,path: IEnumerable[Point],stylusShape: StylusShape) -> bool
@@ -1436,9 +1573,10 @@ class Stroke(object,INotifyPropertyChanged):
 
    Returns: true if the specified area intersects the current stroke; otherwise,false.
   """
-  pass
- def OnDrawingAttributesChanged(self,*args):
-  """
+        pass
+
+    def OnDrawingAttributesChanged(self, *args):
+        """
   OnDrawingAttributesChanged(self: Stroke,e: PropertyDataChangedEventArgs)
 
    Allows derived classes to modify the default behavior of the 
@@ -1451,9 +1589,10 @@ class Stroke(object,INotifyPropertyChanged):
 
    e: The System.Windows.Ink.PropertyDataChangedEventArgs object that contains the event data.
   """
-  pass
- def OnDrawingAttributesReplaced(self,*args):
-  """
+        pass
+
+    def OnDrawingAttributesReplaced(self, *args):
+        """
   OnDrawingAttributesReplaced(self: Stroke,e: DrawingAttributesReplacedEventArgs)
 
    Allows derived classes to modify the default behavior of the 
@@ -1466,9 +1605,10 @@ class Stroke(object,INotifyPropertyChanged):
 
    e: The System.Windows.Ink.DrawingAttributesReplacedEventArgs object that contains the event data.
   """
-  pass
- def OnInvalidated(self,*args):
-  """
+        pass
+
+    def OnInvalidated(self, *args):
+        """
   OnInvalidated(self: Stroke,e: EventArgs)
 
    Raises the System.Windows.Ink.Stroke.Invalidated event.
@@ -1477,16 +1617,18 @@ class Stroke(object,INotifyPropertyChanged):
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Stroke,e: PropertyChangedEventArgs)
 
    Occurs when any System.Windows.Ink.Stroke property changes.
   """
-  pass
- def OnPropertyDataChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyDataChanged(self, *args):
+        """
   OnPropertyDataChanged(self: Stroke,e: PropertyDataChangedEventArgs)
 
    Allows derived classes to modify the default behavior of the 
@@ -1499,9 +1641,10 @@ class Stroke(object,INotifyPropertyChanged):
 
    e: The System.Windows.Ink.PropertyDataChangedEventArgs object that contains the event data.
   """
-  pass
- def OnStylusPointsChanged(self,*args):
-  """
+        pass
+
+    def OnStylusPointsChanged(self, *args):
+        """
   OnStylusPointsChanged(self: Stroke,e: EventArgs)
 
    Raises the System.Windows.Ink.Stroke.StylusPointsChanged event.
@@ -1510,9 +1653,10 @@ class Stroke(object,INotifyPropertyChanged):
 
    e: A System.EventArgs that contains the event data.
   """
-  pass
- def OnStylusPointsReplaced(self,*args):
-  """
+        pass
+
+    def OnStylusPointsReplaced(self, *args):
+        """
   OnStylusPointsReplaced(self: Stroke,e: StylusPointsReplacedEventArgs)
 
    Raises the System.Windows.Ink.Stroke.StylusPointsReplaced event.
@@ -1521,9 +1665,10 @@ class Stroke(object,INotifyPropertyChanged):
 
    e: A System.Windows.Ink.StylusPointsReplacedEventArgs that contains the event data.
   """
-  pass
- def RemovePropertyData(self,propertyDataId):
-  """
+        pass
+
+    def RemovePropertyData(self, propertyDataId):
+        """
   RemovePropertyData(self: Stroke,propertyDataId: Guid)
 
    Deletes a custom property from the System.Windows.Ink.Stroke object.
@@ -1532,9 +1677,10 @@ class Stroke(object,INotifyPropertyChanged):
 
    propertyDataId: The unique identifier for the property.
   """
-  pass
- def Transform(self,transformMatrix,applyToStylusTip):
-  """
+        pass
+
+    def Transform(self, transformMatrix, applyToStylusTip):
+        """
   Transform(self: Stroke,transformMatrix: Matrix,applyToStylusTip: bool)
 
    Performs a transformation based upon the specified System.Windows.Media.Matrix object.
@@ -1545,23 +1691,29 @@ class Stroke(object,INotifyPropertyChanged):
 
    applyToStylusTip: true to apply the transformation to the tip of the stylus; otherwise,false.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,stylusPoints,drawingAttributes=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, stylusPoints, drawingAttributes=None):
+        """
   __new__(cls: type,stylusPoints: StylusPointCollection)
 
   __new__(cls: type,stylusPoints: StylusPointCollection,drawingAttributes: DrawingAttributes)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- DrawingAttributes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Windows.Ink.DrawingAttributes for the System.Windows.Ink.Stroke object.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    DrawingAttributes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Windows.Ink.DrawingAttributes for the System.Windows.Ink.Stroke object.
 
 
 
@@ -1573,8 +1725,10 @@ Set: DrawingAttributes(self: Stroke)=value
 
 """
 
- StylusPoints=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the stylus points of the System.Windows.Ink.Stroke.
+    StylusPoints = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the stylus points of the System.Windows.Ink.Stroke.
 
 
 
@@ -1586,17 +1740,28 @@ Set: StylusPoints(self: Stroke)=value
 
 """
 
+    DrawingAttributesChanged = None
+    DrawingAttributesReplaced = None
+    Invalidated = None
+    PropertyDataChanged = None
+    StylusPointsChanged = None
+    StylusPointsReplaced = None
 
- DrawingAttributesChanged=None
- DrawingAttributesReplaced=None
- Invalidated=None
- PropertyDataChanged=None
- StylusPointsChanged=None
- StylusPointsReplaced=None
 
-
-class StrokeCollection(Collection[Stroke],IList[Stroke],ICollection[Stroke],IEnumerable[Stroke],IEnumerable,IList,ICollection,IReadOnlyList[Stroke],IReadOnlyCollection[Stroke],INotifyPropertyChanged,INotifyCollectionChanged):
- """
+class StrokeCollection(
+    Collection[Stroke],
+    IList[Stroke],
+    ICollection[Stroke],
+    IEnumerable[Stroke],
+    IEnumerable,
+    IList,
+    ICollection,
+    IReadOnlyList[Stroke],
+    IReadOnlyCollection[Stroke],
+    INotifyPropertyChanged,
+    INotifyCollectionChanged,
+):
+    """
  Represents a collection of System.Windows.Ink.Stroke objects.
 
  
@@ -1607,8 +1772,9 @@ class StrokeCollection(Collection[Stroke],IList[Stroke],ICollection[Stroke],IEnu
 
  StrokeCollection(stream: Stream)
  """
- def Add(self,*__args):
-  """
+
+    def Add(self, *__args):
+        """
   Add(self: StrokeCollection,strokes: StrokeCollection)
 
    Adds the specified strokes to the System.Windows.Ink.StrokeCollection.
@@ -1617,9 +1783,10 @@ class StrokeCollection(Collection[Stroke],IList[Stroke],ICollection[Stroke],IEnu
 
    strokes: The System.Windows.Ink.StrokeCollection to add to the collection.
   """
-  pass
- def AddPropertyData(self,propertyDataId,propertyData):
-  """
+        pass
+
+    def AddPropertyData(self, propertyDataId, propertyData):
+        """
   AddPropertyData(self: StrokeCollection,propertyDataId: Guid,propertyData: object)
 
    Adds a custom property to the System.Windows.Ink.StrokeCollection.
@@ -1636,16 +1803,18 @@ class StrokeCollection(Collection[Stroke],IList[Stroke],ICollection[Stroke],IEnu
 
     System.Decimal or an array of these data types,except System.String,which is not allowed.
   """
-  pass
- def ClearItems(self,*args):
-  """
+        pass
+
+    def ClearItems(self, *args):
+        """
   ClearItems(self: StrokeCollection)
 
    Clears all strokes from the System.Windows.Ink.StrokeCollection.
   """
-  pass
- def Clip(self,*__args):
-  """
+        pass
+
+    def Clip(self, *__args):
+        """
   Clip(self: StrokeCollection,bounds: Rect)
 
    Replaces all strokes that are clipped by the specified rectangle with new strokes that do not 
@@ -1660,9 +1829,10 @@ class StrokeCollection(Collection[Stroke],IList[Stroke],ICollection[Stroke],IEnu
 
   Clip(self: StrokeCollection,lassoPoints: IEnumerable[Point])
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: StrokeCollection) -> StrokeCollection
 
   
@@ -1671,9 +1841,10 @@ class StrokeCollection(Collection[Stroke],IList[Stroke],ICollection[Stroke],IEnu
 
    Returns: A copy of the System.Windows.Ink.StrokeCollection.
   """
-  pass
- def ContainsPropertyData(self,propertyDataId):
-  """
+        pass
+
+    def ContainsPropertyData(self, propertyDataId):
+        """
   ContainsPropertyData(self: StrokeCollection,propertyDataId: Guid) -> bool
 
   
@@ -1692,9 +1863,10 @@ class StrokeCollection(Collection[Stroke],IList[Stroke],ICollection[Stroke],IEnu
 
     otherwise,false.
   """
-  pass
- def Draw(self,context):
-  """
+        pass
+
+    def Draw(self, context):
+        """
   Draw(self: StrokeCollection,context: DrawingContext)
 
    Draws the strokes in the System.Windows.Ink.StrokeCollection.
@@ -1703,9 +1875,10 @@ class StrokeCollection(Collection[Stroke],IList[Stroke],ICollection[Stroke],IEnu
 
    context: The System.Windows.Media.DrawingContext on which to draw the System.Windows.Ink.StrokeCollection.
   """
-  pass
- def Erase(self,*__args):
-  """
+        pass
+
+    def Erase(self, *__args):
+        """
   Erase(self: StrokeCollection,eraserPath: IEnumerable[Point],eraserShape: StylusShape)Erase(self: StrokeCollection,bounds: Rect)
 
    Replaces all strokes that are clipped by the specified rectangle with new strokes that do not 
@@ -1716,9 +1889,10 @@ class StrokeCollection(Collection[Stroke],IList[Stroke],ICollection[Stroke],IEnu
 
   Erase(self: StrokeCollection,lassoPoints: IEnumerable[Point])
   """
-  pass
- def GetBounds(self):
-  """
+        pass
+
+    def GetBounds(self):
+        """
   GetBounds(self: StrokeCollection) -> Rect
 
   
@@ -1729,9 +1903,10 @@ class StrokeCollection(Collection[Stroke],IList[Stroke],ICollection[Stroke],IEnu
 
     System.Windows.Ink.StrokeCollection.
   """
-  pass
- def GetIncrementalLassoHitTester(self,percentageWithinLasso):
-  """
+        pass
+
+    def GetIncrementalLassoHitTester(self, percentageWithinLasso):
+        """
   GetIncrementalLassoHitTester(self: StrokeCollection,percentageWithinLasso: int) -> IncrementalLassoHitTester
 
   
@@ -1754,9 +1929,10 @@ class StrokeCollection(Collection[Stroke],IList[Stroke],ICollection[Stroke],IEnu
 
     System.Windows.Ink.StrokeCollection.
   """
-  pass
- def GetIncrementalStrokeHitTester(self,eraserShape):
-  """
+        pass
+
+    def GetIncrementalStrokeHitTester(self, eraserShape):
+        """
   GetIncrementalStrokeHitTester(self: StrokeCollection,eraserShape: StylusShape) -> IncrementalStrokeHitTester
 
   
@@ -1775,9 +1951,10 @@ class StrokeCollection(Collection[Stroke],IList[Stroke],ICollection[Stroke],IEnu
 
     System.Windows.Ink.StrokeCollection.
   """
-  pass
- def GetPropertyData(self,propertyDataId):
-  """
+        pass
+
+    def GetPropertyData(self, propertyDataId):
+        """
   GetPropertyData(self: StrokeCollection,propertyDataId: Guid) -> object
 
   
@@ -1790,9 +1967,10 @@ class StrokeCollection(Collection[Stroke],IList[Stroke],ICollection[Stroke],IEnu
 
    Returns: The value of the custom property associated with the specified System.Guid.
   """
-  pass
- def GetPropertyDataIds(self):
-  """
+        pass
+
+    def GetPropertyDataIds(self):
+        """
   GetPropertyDataIds(self: StrokeCollection) -> Array[Guid]
 
   
@@ -1805,9 +1983,10 @@ class StrokeCollection(Collection[Stroke],IList[Stroke],ICollection[Stroke],IEnu
 
    Returns: An array of type System.Guid that represent the custom property identifiers.
   """
-  pass
- def HitTest(self,*__args):
-  """
+        pass
+
+    def HitTest(self, *__args):
+        """
   HitTest(self: StrokeCollection,bounds: Rect,percentageWithinBounds: int) -> StrokeCollection
 
   
@@ -1864,9 +2043,10 @@ class StrokeCollection(Collection[Stroke],IList[Stroke],ICollection[Stroke],IEnu
 
    Returns: A collection of System.Windows.Ink.Stroke objects that intersect the specified point.
   """
-  pass
- def IndexOf(self,*__args):
-  """
+        pass
+
+    def IndexOf(self, *__args):
+        """
   IndexOf(self: StrokeCollection,stroke: Stroke) -> int
 
   
@@ -1883,16 +2063,18 @@ class StrokeCollection(Collection[Stroke],IList[Stroke],ICollection[Stroke],IEnu
 
    Returns: The index of the stroke.
   """
-  pass
- def InsertItem(self,*args):
-  """
+        pass
+
+    def InsertItem(self, *args):
+        """
   InsertItem(self: StrokeCollection,index: int,stroke: Stroke)
 
    Inserts a stroke into the System.Windows.Ink.StrokeCollection at the specified index.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: StrokeCollection,e: PropertyChangedEventArgs)
 
    Occurs when any System.Windows.Ink.StrokeCollection property changes.
@@ -1901,16 +2083,18 @@ class StrokeCollection(Collection[Stroke],IList[Stroke],ICollection[Stroke],IEnu
 
    e: Event data.
   """
-  pass
- def OnPropertyDataChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyDataChanged(self, *args):
+        """
   OnPropertyDataChanged(self: StrokeCollection,e: PropertyDataChangedEventArgs)
 
    Raises the System.Windows.Ink.StrokeCollection.PropertyDataChanged event.
   """
-  pass
- def OnStrokesChanged(self,*args):
-  """
+        pass
+
+    def OnStrokesChanged(self, *args):
+        """
   OnStrokesChanged(self: StrokeCollection,e: StrokeCollectionChangedEventArgs)
 
    Raises the System.Windows.Ink.StrokeCollection.StrokesChanged event.
@@ -1919,16 +2103,18 @@ class StrokeCollection(Collection[Stroke],IList[Stroke],ICollection[Stroke],IEnu
 
    e: A System.Windows.Ink.StrokeCollectionChangedEventArgs that contains the event data.
   """
-  pass
- def Remove(self,*__args):
-  """
+        pass
+
+    def Remove(self, *__args):
+        """
   Remove(self: StrokeCollection,strokes: StrokeCollection)
 
    Removes the specified strokes from the collection.
   """
-  pass
- def RemoveItem(self,*args):
-  """
+        pass
+
+    def RemoveItem(self, *args):
+        """
   RemoveItem(self: StrokeCollection,index: int)
 
    Removes the stroke at the specified index from the System.Windows.Ink.StrokeCollection.
@@ -1937,9 +2123,10 @@ class StrokeCollection(Collection[Stroke],IList[Stroke],ICollection[Stroke],IEnu
 
    index: The specified index.
   """
-  pass
- def RemovePropertyData(self,propertyDataId):
-  """
+        pass
+
+    def RemovePropertyData(self, propertyDataId):
+        """
   RemovePropertyData(self: StrokeCollection,propertyDataId: Guid)
 
    Removes the custom property associated with the specified System.Guid.
@@ -1948,9 +2135,10 @@ class StrokeCollection(Collection[Stroke],IList[Stroke],ICollection[Stroke],IEnu
 
    propertyDataId: The System.Guid associated with the custom property to remove.
   """
-  pass
- def Replace(self,*__args):
-  """
+        pass
+
+    def Replace(self, *__args):
+        """
   Replace(self: StrokeCollection,strokesToReplace: StrokeCollection,strokesToReplaceWith: StrokeCollection)
 
    Replaces the specified System.Windows.Ink.StrokeCollection with a new 
@@ -1979,9 +2167,10 @@ class StrokeCollection(Collection[Stroke],IList[Stroke],ICollection[Stroke],IEnu
 
    strokesToReplaceWith: The source System.Windows.Ink.StrokeCollection.
   """
-  pass
- def Save(self,stream,compress=None):
-  """
+        pass
+
+    def Save(self, stream, compress=None):
+        """
   Save(self: StrokeCollection,stream: Stream)
 
    Saves the System.Windows.Ink.StrokeCollection to the specified System.IO.Stream.
@@ -2004,16 +2193,18 @@ class StrokeCollection(Collection[Stroke],IList[Stroke],ICollection[Stroke],IEnu
 
    compress: true to compress the System.Windows.Ink.StrokeCollection; otherwise,false.
   """
-  pass
- def SetItem(self,*args):
-  """
+        pass
+
+    def SetItem(self, *args):
+        """
   SetItem(self: StrokeCollection,index: int,stroke: Stroke)
 
    Replaces the stroke at the specified index.
   """
-  pass
- def Transform(self,transformMatrix,applyToStylusTip):
-  """
+        pass
+
+    def Transform(self, transformMatrix, applyToStylusTip):
+        """
   Transform(self: StrokeCollection,transformMatrix: Matrix,applyToStylusTip: bool)
 
    Modifies each of the System.Windows.Ink.Stroke.StylusPoints and optionally the 
@@ -2034,59 +2225,67 @@ class StrokeCollection(Collection[Stroke],IList[Stroke],ICollection[Stroke],IEnu
 
    applyToStylusTip: true to apply the transformation to the tip of the stylus; otherwise,false.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,strokes: IEnumerable[Stroke])
 
   __new__(cls: type,stream: Stream)
   """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Items=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a System.Collections.Generic.IList wrapper around the System.Collections.ObjectModel.Collection.
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Items = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a System.Collections.Generic.IList wrapper around the System.Collections.ObjectModel.Collection.
 
 
 
 """
 
-
- InkSerializedFormat='Ink Serialized Format'
- PropertyDataChanged=None
- StrokesChanged=None
+    InkSerializedFormat = "Ink Serialized Format"
+    PropertyDataChanged = None
+    StrokesChanged = None
 
 
 class StrokeCollectionChangedEventArgs(EventArgs):
- """
+    """
  Provides data for the System.Windows.Ink.StrokeCollection.StrokesChanged event.
 
  
 
  StrokeCollectionChangedEventArgs(added: StrokeCollection,removed: StrokeCollection)
  """
- @staticmethod
- def __new__(self,added,removed):
-  """ __new__(cls: type,added: StrokeCollection,removed: StrokeCollection) """
-  pass
- Added=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the strokes that have been added to the System.Windows.Ink.StrokeCollection.
+
+    @staticmethod
+    def __new__(self, added, removed):
+        """ __new__(cls: type,added: StrokeCollection,removed: StrokeCollection) """
+        pass
+
+    Added = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the strokes that have been added to the System.Windows.Ink.StrokeCollection.
 
 
 
@@ -2096,8 +2295,8 @@ Get: Added(self: StrokeCollectionChangedEventArgs) -> StrokeCollection
 
 """
 
- Removed=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the strokes that have been removed from the System.Windows.Ink.StrokeCollection.
+    Removed = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the strokes that have been removed from the System.Windows.Ink.StrokeCollection.
 
 
 
@@ -2108,20 +2307,21 @@ Get: Removed(self: StrokeCollectionChangedEventArgs) -> StrokeCollection
 """
 
 
-
-class StrokeCollectionChangedEventHandler(MulticastDelegate,ICloneable,ISerializable):
- """
+class StrokeCollectionChangedEventHandler(MulticastDelegate, ICloneable, ISerializable):
+    """
  Represents the method that handles the System.Windows.Ink.StrokeCollection.StrokesChanged event of a System.Windows.Ink.StrokeCollection.
 
  
 
  StrokeCollectionChangedEventHandler(object: object,method: IntPtr)
  """
- def BeginInvoke(self,sender,e,callback,object):
-  """ BeginInvoke(self: StrokeCollectionChangedEventHandler,sender: object,e: StrokeCollectionChangedEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+
+    def BeginInvoke(self, sender, e, callback, object):
+        """ BeginInvoke(self: StrokeCollectionChangedEventHandler,sender: object,e: StrokeCollectionChangedEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -2134,9 +2334,10 @@ class StrokeCollectionChangedEventHandler(MulticastDelegate,ICloneable,ISerializ
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -2155,12 +2356,14 @@ class StrokeCollectionChangedEventHandler(MulticastDelegate,ICloneable,ISerializ
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: StrokeCollectionChangedEventHandler,result: IAsyncResult) """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: StrokeCollectionChangedEventHandler,result: IAsyncResult) """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -2169,12 +2372,14 @@ class StrokeCollectionChangedEventHandler(MulticastDelegate,ICloneable,ISerializ
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,sender,e):
-  """ Invoke(self: StrokeCollectionChangedEventHandler,sender: object,e: StrokeCollectionChangedEventArgs) """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, sender, e):
+        """ Invoke(self: StrokeCollectionChangedEventHandler,sender: object,e: StrokeCollectionChangedEventArgs) """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -2193,21 +2398,26 @@ class StrokeCollectionChangedEventHandler(MulticastDelegate,ICloneable,ISerializ
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
 
 class StrokeHitEventArgs(EventArgs):
- """ Represents the method that will handle the System.Windows.Ink.IncrementalStrokeHitTester.StrokeHit event of a System.Windows.Ink.IncrementalStrokeHitTester. """
- def GetPointEraseResults(self):
-  """
+    """ Represents the method that will handle the System.Windows.Ink.IncrementalStrokeHitTester.StrokeHit event of a System.Windows.Ink.IncrementalStrokeHitTester. """
+
+    def GetPointEraseResults(self):
+        """
   GetPointEraseResults(self: StrokeHitEventArgs) -> StrokeCollection
 
   
@@ -2218,9 +2428,10 @@ class StrokeHitEventArgs(EventArgs):
 
     eraser path erases part of System.Windows.Ink.StrokeHitEventArgs.HitStroke.
   """
-  pass
- HitStroke=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Ink.Stroke that is intersected by the eraser path.
+        pass
+
+    HitStroke = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the System.Windows.Ink.Stroke that is intersected by the eraser path.
 
 
 
@@ -2231,20 +2442,21 @@ Get: HitStroke(self: StrokeHitEventArgs) -> Stroke
 """
 
 
-
-class StrokeHitEventHandler(MulticastDelegate,ICloneable,ISerializable):
- """
+class StrokeHitEventHandler(MulticastDelegate, ICloneable, ISerializable):
+    """
  Represents the method that will handle the System.Windows.Ink.IncrementalStrokeHitTester.StrokeHit event of a System.Windows.Ink.IncrementalStrokeHitTester.
 
  
 
  StrokeHitEventHandler(object: object,method: IntPtr)
  """
- def BeginInvoke(self,sender,e,callback,object):
-  """ BeginInvoke(self: StrokeHitEventHandler,sender: object,e: StrokeHitEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+
+    def BeginInvoke(self, sender, e, callback, object):
+        """ BeginInvoke(self: StrokeHitEventHandler,sender: object,e: StrokeHitEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -2257,9 +2469,10 @@ class StrokeHitEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -2278,12 +2491,14 @@ class StrokeHitEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: StrokeHitEventHandler,result: IAsyncResult) """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: StrokeHitEventHandler,result: IAsyncResult) """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -2292,12 +2507,14 @@ class StrokeHitEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,sender,e):
-  """ Invoke(self: StrokeHitEventHandler,sender: object,e: StrokeHitEventArgs) """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, sender, e):
+        """ Invoke(self: StrokeHitEventHandler,sender: object,e: StrokeHitEventArgs) """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -2316,31 +2533,39 @@ class StrokeHitEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
 
 class StylusPointsReplacedEventArgs(EventArgs):
- """
+    """
  Provides data for the System.Windows.Ink.Stroke.StylusPointsReplaced event.
 
  
 
  StylusPointsReplacedEventArgs(newStylusPoints: StylusPointCollection,previousStylusPoints: StylusPointCollection)
  """
- @staticmethod
- def __new__(self,newStylusPoints,previousStylusPoints):
-  """ __new__(cls: type,newStylusPoints: StylusPointCollection,previousStylusPoints: StylusPointCollection) """
-  pass
- NewStylusPoints=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the new System.Windows.Input.StylusPointCollection for the System.Windows.Ink.Stroke.
+
+    @staticmethod
+    def __new__(self, newStylusPoints, previousStylusPoints):
+        """ __new__(cls: type,newStylusPoints: StylusPointCollection,previousStylusPoints: StylusPointCollection) """
+        pass
+
+    NewStylusPoints = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the new System.Windows.Input.StylusPointCollection for the System.Windows.Ink.Stroke.
 
 
 
@@ -2350,8 +2575,10 @@ Get: NewStylusPoints(self: StylusPointsReplacedEventArgs) -> StylusPointCollecti
 
 """
 
- PreviousStylusPoints=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the replaced System.Windows.Input.StylusPointCollection.
+    PreviousStylusPoints = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the replaced System.Windows.Input.StylusPointCollection.
 
 
 
@@ -2362,20 +2589,21 @@ Get: PreviousStylusPoints(self: StylusPointsReplacedEventArgs) -> StylusPointCol
 """
 
 
-
-class StylusPointsReplacedEventHandler(MulticastDelegate,ICloneable,ISerializable):
- """
+class StylusPointsReplacedEventHandler(MulticastDelegate, ICloneable, ISerializable):
+    """
  Represents the method that will handle the System.Windows.Ink.Stroke.StylusPointsReplaced event of a System.Windows.Ink.Stroke.
 
  
 
  StylusPointsReplacedEventHandler(object: object,method: IntPtr)
  """
- def BeginInvoke(self,sender,e,callback,object):
-  """ BeginInvoke(self: StylusPointsReplacedEventHandler,sender: object,e: StylusPointsReplacedEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+
+    def BeginInvoke(self, sender, e, callback, object):
+        """ BeginInvoke(self: StylusPointsReplacedEventHandler,sender: object,e: StylusPointsReplacedEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -2388,9 +2616,10 @@ class StylusPointsReplacedEventHandler(MulticastDelegate,ICloneable,ISerializabl
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -2409,12 +2638,14 @@ class StylusPointsReplacedEventHandler(MulticastDelegate,ICloneable,ISerializabl
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: StylusPointsReplacedEventHandler,result: IAsyncResult) """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: StylusPointsReplacedEventHandler,result: IAsyncResult) """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -2423,12 +2654,14 @@ class StylusPointsReplacedEventHandler(MulticastDelegate,ICloneable,ISerializabl
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,sender,e):
-  """ Invoke(self: StylusPointsReplacedEventHandler,sender: object,e: StylusPointsReplacedEventArgs) """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, sender, e):
+        """ Invoke(self: StylusPointsReplacedEventHandler,sender: object,e: StylusPointsReplacedEventArgs) """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -2447,50 +2680,63 @@ class StylusPointsReplacedEventHandler(MulticastDelegate,ICloneable,ISerializabl
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
 
-class StylusTip(Enum,IComparable,IFormattable,IConvertible):
- """
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+
+class StylusTip(Enum, IComparable, IFormattable, IConvertible):
+    """
  Specifies the tip to be used to draw a System.Windows.Ink.Stroke.
 
  
 
  enum StylusTip,values: Ellipse (1),Rectangle (0)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Ellipse=None
- Rectangle=None
- value__=None
 
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
 
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Ellipse = None
+    Rectangle = None
+    value__ = None

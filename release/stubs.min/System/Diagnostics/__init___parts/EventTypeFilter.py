@@ -1,13 +1,16 @@
 class EventTypeFilter(TraceFilter):
- """
+    """
  Indicates whether a listener should trace based on the event type.
 
  
 
  EventTypeFilter(level: SourceLevels)
  """
- def ShouldTrace(self,cache,source,eventType,id,formatOrMessage,args,data1,data):
-  """
+
+    def ShouldTrace(
+        self, cache, source, eventType, id, formatOrMessage, args, data1, data
+    ):
+        """
   ShouldTrace(self: EventTypeFilter,cache: TraceEventCache,source: str,eventType: TraceEventType,id: int,formatOrMessage: str,args: Array[object],data1: object,data: Array[object]) -> bool
 
   
@@ -34,13 +37,15 @@ class EventTypeFilter(TraceFilter):
 
    Returns: trueif the trace should be produced; otherwise,false.
   """
-  pass
- @staticmethod
- def __new__(self,level):
-  """ __new__(cls: type,level: SourceLevels) """
-  pass
- EventType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the event type of the messages to trace.
+        pass
+
+    @staticmethod
+    def __new__(self, level):
+        """ __new__(cls: type,level: SourceLevels) """
+        pass
+
+    EventType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the event type of the messages to trace.
 
 
 
@@ -51,5 +56,3 @@ Get: EventType(self: EventTypeFilter) -> SourceLevels
 Set: EventType(self: EventTypeFilter)=value
 
 """
-
-

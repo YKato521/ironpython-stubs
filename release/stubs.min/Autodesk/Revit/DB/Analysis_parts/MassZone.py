@@ -1,13 +1,16 @@
-class MassZone(Element,IDisposable):
- """ MassZones are created from the MassEnergyAnalyticalModel.  They are conceptual representations of individually heated and cooled sub-volumes of a building. """
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetCoincidentReferenceFromAdjacentZone(self,referenceToZoneFace):
-  """
+class MassZone(Element, IDisposable):
+    """ MassZones are created from the MassEnergyAnalyticalModel.  They are conceptual representations of individually heated and cooled sub-volumes of a building. """
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetCoincidentReferenceFromAdjacentZone(self, referenceToZoneFace):
+        """
   GetCoincidentReferenceFromAdjacentZone(self: MassZone,referenceToZoneFace: Reference) -> Reference
 
   
@@ -26,9 +29,10 @@ class MassZone(Element,IDisposable):
 
     MassZone face Reference.
   """
-  pass
- def GetEquivalentReferenceFromMassOrLevel(self,referenceToZoneFace):
-  """
+        pass
+
+    def GetEquivalentReferenceFromMassOrLevel(self, referenceToZoneFace):
+        """
   GetEquivalentReferenceFromMassOrLevel(self: MassZone,referenceToZoneFace: Reference) -> Reference
 
   
@@ -57,9 +61,10 @@ class MassZone(Element,IDisposable):
 
     a
   """
-  pass
- def GetMassDataElementIdForZoneFaceReference(self,referenceOfZone):
-  """
+        pass
+
+    def GetMassDataElementIdForZoneFaceReference(self, referenceOfZone):
+        """
   GetMassDataElementIdForZoneFaceReference(self: MassZone,referenceOfZone: Reference) -> ElementId
 
   
@@ -78,9 +83,10 @@ class MassZone(Element,IDisposable):
 
    Returns: Id of MassSurfaceData or MassLevelData element.
   """
-  pass
- def GetReferencesToEnergyAnalysisFaces(self):
-  """
+        pass
+
+    def GetReferencesToEnergyAnalysisFaces(self):
+        """
   GetReferencesToEnergyAnalysisFaces(self: MassZone) -> IList[Reference]
 
   
@@ -93,9 +99,10 @@ class MassZone(Element,IDisposable):
 
    Returns: Array of References to faces of MassZone.
   """
-  pass
- def IsEmpty(self):
-  """
+        pass
+
+    def IsEmpty(self):
+        """
   IsEmpty(self: MassZone) -> bool
 
   
@@ -108,24 +115,32 @@ class MassZone(Element,IDisposable):
 
    Returns: Returns True if MassZone has no geometry.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- ConditionType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The gbXMLConditionType of the MassZone.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    ConditionType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The gbXMLConditionType of the MassZone.
 
 
 
@@ -137,8 +152,10 @@ Set: ConditionType(self: MassZone)=value
 
 """
 
- CutByLowerLevel=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates the relationship between the MassZone and its lower level.
+    CutByLowerLevel = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates the relationship between the MassZone and its lower level.
 
 
 
@@ -148,8 +165,10 @@ Get: CutByLowerLevel(self: MassZone) -> MassZoneLevelCutState
 
 """
 
- CutByUpperLevel=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates the relationship between the MassZone and its upper level.
+    CutByUpperLevel = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates the relationship between the MassZone and its upper level.
 
 
 
@@ -159,8 +178,8 @@ Get: CutByUpperLevel(self: MassZone) -> MassZoneLevelCutState
 
 """
 
- FloorArea=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The floor area of the MassZone.
+    FloorArea = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The floor area of the MassZone.
 
 
 
@@ -170,8 +189,10 @@ Get: FloorArea(self: MassZone) -> float
 
 """
 
- IsZoneOccupiable=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """A MassZone must have a level as its bottom to be occupiable;
+    IsZoneOccupiable = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """A MassZone must have a level as its bottom to be occupiable;
 
    If it does not,it is still a MassZone,but it is not occupiable
 
@@ -183,8 +204,10 @@ Get: IsZoneOccupiable(self: MassZone) -> bool
 
 """
 
- LowerLevelId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The bottom level defining the MassZone.
+    LowerLevelId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The bottom level defining the MassZone.
 
 
 
@@ -194,8 +217,10 @@ Get: LowerLevelId(self: MassZone) -> ElementId
 
 """
 
- MassEnergyAnalyticalModelId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The ElementId of the MassEnergyAnalyticalModel that the MassZone is derived from.
+    MassEnergyAnalyticalModelId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The ElementId of the MassEnergyAnalyticalModel that the MassZone is derived from.
 
 
 
@@ -205,8 +230,10 @@ Get: MassEnergyAnalyticalModelId(self: MassZone) -> ElementId
 
 """
 
- MaterialId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The visualization material for the MassZone.
+    MaterialId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The visualization material for the MassZone.
 
    Will be InvalidElementId if material is by category or the material type is by MassZoneMaterialTypeMaterialBySurfaceType.
 
@@ -220,8 +247,10 @@ Set: MaterialId(self: MassZone)=value
 
 """
 
- MaterialType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates how the material of MassZone faces is determined.
+    MaterialType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates how the material of MassZone faces is determined.
 
 
 
@@ -233,8 +262,8 @@ Set: MaterialType(self: MassZone)=value
 
 """
 
- SpaceType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The gbXMLSpaceType of the MassZone.
+    SpaceType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The gbXMLSpaceType of the MassZone.
 
 
 
@@ -246,8 +275,10 @@ Set: SpaceType(self: MassZone)=value
 
 """
 
- UpperLevelId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The upper level defining the MassZone.
+    UpperLevelId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The upper level defining the MassZone.
 
 
 
@@ -257,8 +288,8 @@ Get: UpperLevelId(self: MassZone) -> ElementId
 
 """
 
- Volume=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The volume of the MassZone.
+    Volume = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The volume of the MassZone.
 
 
 
@@ -267,5 +298,3 @@ Get: Volume(self: MassZone) -> float
 
 
 """
-
-

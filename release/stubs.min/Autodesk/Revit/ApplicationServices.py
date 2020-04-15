@@ -8,10 +8,12 @@
 # no functions
 # classes
 
-class Application(object,IDisposable):
- """ Represents the Autodesk Revit Application,providing access to documents,options and other application wide data and settings. """
- def CopyModel(self,sourceModelPath,destFilePath,overwrite):
-  """
+
+class Application(object, IDisposable):
+    """ Represents the Autodesk Revit Application,providing access to documents,options and other application wide data and settings. """
+
+    def CopyModel(self, sourceModelPath, destFilePath, overwrite):
+        """
   CopyModel(self: Application,sourceModelPath: ModelPath,destFilePath: str,overwrite: bool)
 
    Copies an existing model to a new file. Overwriting a file of the same name is 
@@ -28,12 +30,14 @@ class Application(object,IDisposable):
 
    overwrite: True if the destination file can be overwritten; otherwise,false.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Application) """
-  pass
- def ExtractPartAtomFromFamilyFile(self,familyFilePath,xmlFilePath):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Application) """
+        pass
+
+    def ExtractPartAtomFromFamilyFile(self, familyFilePath, xmlFilePath):
+        """
   ExtractPartAtomFromFamilyFile(self: Application,familyFilePath: str,xmlFilePath: str)
 
    Writes a PartAtom XML from the contents of a family file.
@@ -44,10 +48,11 @@ class Application(object,IDisposable):
 
    xmlFilePath: The xml file to be saved.
   """
-  pass
- @staticmethod
- def GetFailureDefinitionRegistry():
-  """
+        pass
+
+    @staticmethod
+    def GetFailureDefinitionRegistry():
+        """
   GetFailureDefinitionRegistry() -> FailureDefinitionRegistry
 
   
@@ -56,9 +61,10 @@ class Application(object,IDisposable):
 
    Returns: The instance of FailureDefinitionRegistry.
   """
-  pass
- def GetLibraryPaths(self):
-  """
+        pass
+
+    def GetLibraryPaths(self):
+        """
   GetLibraryPaths(self: Application) -> IDictionary[str,str]
 
   
@@ -67,9 +73,10 @@ class Application(object,IDisposable):
 
    Returns: The map of library paths.
   """
-  pass
- def GetRevitServerNetworkHosts(self):
-  """
+        pass
+
+    def GetRevitServerNetworkHosts(self):
+        """
   GetRevitServerNetworkHosts(self: Application) -> IList[str]
 
   
@@ -78,9 +85,10 @@ class Application(object,IDisposable):
 
    Returns: An array of names of all Revit Server Network hosts in current session.
   """
-  pass
- def GetWorksharingCentralGUID(self,serverModelPath):
-  """
+        pass
+
+    def GetWorksharingCentralGUID(self, serverModelPath):
+        """
   GetWorksharingCentralGUID(self: Application,serverModelPath: ServerPath) -> Guid
 
   
@@ -93,10 +101,11 @@ class Application(object,IDisposable):
 
    Returns: The worksharing central GUID.
   """
-  pass
- @staticmethod
- def IsValidThickness(thickness):
-  """
+        pass
+
+    @staticmethod
+    def IsValidThickness(thickness):
+        """
   IsValidThickness(thickness: float) -> bool
 
   
@@ -113,9 +122,10 @@ class Application(object,IDisposable):
 
    Returns: True if the input value is valid for thickness; false otherwise.
   """
-  pass
- def NewFamilyDocument(self,templateFileName):
-  """
+        pass
+
+    def NewFamilyDocument(self, templateFileName):
+        """
   NewFamilyDocument(self: Application,templateFileName: str) -> Document
 
   
@@ -126,9 +136,10 @@ class Application(object,IDisposable):
 
    templateFileName: The template file name.
   """
-  pass
- def NewProjectDocument(self,*__args):
-  """
+        pass
+
+    def NewProjectDocument(self, *__args):
+        """
   NewProjectDocument(self: Application,templateFileName: str) -> Document
 
   
@@ -151,9 +162,10 @@ class Application(object,IDisposable):
 
    Returns: The newly created document.
   """
-  pass
- def NewProjectTemplateDocument(self,templateFilename):
-  """
+        pass
+
+    def NewProjectTemplateDocument(self, templateFilename):
+        """
   NewProjectTemplateDocument(self: Application,templateFilename: str) -> Document
 
   
@@ -164,9 +176,10 @@ class Application(object,IDisposable):
 
    templateFilename: The template file name.
   """
-  pass
- def OpenBuildingComponentDocument(self,fileName):
-  """
+        pass
+
+    def OpenBuildingComponentDocument(self, fileName):
+        """
   OpenBuildingComponentDocument(self: Application,fileName: str) -> Document
 
   
@@ -177,9 +190,10 @@ class Application(object,IDisposable):
 
    fileName: The Building Component file to be opened.
   """
-  pass
- def OpenDocumentFile(self,*__args):
-  """
+        pass
+
+    def OpenDocumentFile(self, *__args):
+        """
   OpenDocumentFile(self: Application,modelPath: ModelPath,openOptions: OpenOptions) -> Document
 
   
@@ -206,9 +220,10 @@ class Application(object,IDisposable):
 
    Returns: The opened document.
   """
-  pass
- def OpenIFCDocument(self,fileName,importOptions=None):
-  """
+        pass
+
+    def OpenIFCDocument(self, fileName, importOptions=None):
+        """
   OpenIFCDocument(self: Application,fileName: str) -> Document
 
   
@@ -235,9 +250,10 @@ class Application(object,IDisposable):
 
    Returns: The newly created document containing the IFC file.
   """
-  pass
- def OpenSharedParameterFile(self):
-  """
+        pass
+
+    def OpenSharedParameterFile(self):
+        """
   OpenSharedParameterFile(self: Application) -> DefinitionFile
 
   
@@ -252,19 +268,21 @@ class Application(object,IDisposable):
 
     ll if the file does not exist.
   """
-  pass
- def PurgeReleasedAPIObjects(self):
-  """
+        pass
+
+    def PurgeReleasedAPIObjects(self):
+        """
   PurgeReleasedAPIObjects(self: Application)
 
    Explicitly purges all API objects that have been released but are still 
 
     awaiting to be finalized
   """
-  pass
- @staticmethod
- def RegisterFailuresProcessor(processor):
-  """
+        pass
+
+    @staticmethod
+    def RegisterFailuresProcessor(processor):
+        """
   RegisterFailuresProcessor(processor: IFailuresProcessor)
 
    Registers Revit application-wide instance of Failures Processor.
@@ -273,24 +291,28 @@ class Application(object,IDisposable):
 
    processor: Instance of Failures Processor to be used by the Revit Application.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Application,disposing: bool) """
-  pass
- def SetLibraryPaths(self,paths):
-  """ SetLibraryPaths(self: Application,paths: IDictionary[str,str]) """
-  pass
- def UpdateRenderAppearanceLibrary(self):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Application,disposing: bool) """
+        pass
+
+    def SetLibraryPaths(self, paths):
+        """ SetLibraryPaths(self: Application,paths: IDictionary[str,str]) """
+        pass
+
+    def UpdateRenderAppearanceLibrary(self):
+        """
   UpdateRenderAppearanceLibrary(self: Application)
 
    Updates the stored render appearance library,giving the Revit session access 
 
     to any new RPC content.
   """
-  pass
- def WriteJournalComment(self,comment,timeStamp):
-  """
+        pass
+
+    def WriteJournalComment(self, comment, timeStamp):
+        """
   WriteJournalComment(self: Application,comment: str,timeStamp: bool)
 
    Writes a comment to the Revit journal file.
@@ -301,21 +323,28 @@ class Application(object,IDisposable):
 
    timeStamp: If a time stamp should be included in the journal comment.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- ActiveAddInId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Retrieves the Id of the currently running external application.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    ActiveAddInId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Retrieves the Id of the currently running external application.
 
 
 
@@ -325,8 +354,10 @@ Get: ActiveAddInId(self: Application) -> AddInId
 
 """
 
- AllowNavigationDuringRedraw=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks whether or not the navigation during redraw is enabled,and enable or disable it.
+    AllowNavigationDuringRedraw = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Checks whether or not the navigation during redraw is enabled,and enable or disable it.
 
 
 
@@ -338,8 +369,10 @@ Set: AllowNavigationDuringRedraw(self: Application)=value
 
 """
 
- AllUsersAddinsLocation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The folder location for .addin files for all users.
+    AllUsersAddinsLocation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The folder location for .addin files for all users.
 
 
 
@@ -349,8 +382,10 @@ Get: AllUsersAddinsLocation(self: Application) -> str
 
 """
 
- AngleTolerance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Angle tolerance.
+    AngleTolerance = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Angle tolerance.
 
 
 
@@ -360,8 +395,10 @@ Get: AngleTolerance(self: Application) -> float
 
 """
 
- BackgroundColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The background color to use for model views in this session.
+    BackgroundColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The background color to use for model views in this session.
 
 
 
@@ -373,8 +410,8 @@ Set: BackgroundColor(self: Application)=value
 
 """
 
- Cities=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns a set of all the known city locations within Revit.
+    Cities = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns a set of all the known city locations within Revit.
 
 
 
@@ -384,8 +421,8 @@ Get: Cities(self: Application) -> CitySet
 
 """
 
- Create=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides an object that can be used to create new instances of Autodesk Revit API objects.
+    Create = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides an object that can be used to create new instances of Autodesk Revit API objects.
 
 
 
@@ -395,8 +432,10 @@ Get: Create(self: Application) -> Application
 
 """
 
- CurrentRevitServerAccelerator=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Current Revit Server accelerator.
+    CurrentRevitServerAccelerator = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Current Revit Server accelerator.
 
 
 
@@ -408,8 +447,10 @@ Set: CurrentRevitServerAccelerator(self: Application)=value
 
 """
 
- CurrentUserAddinsLocation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The folder location for .addin files for the current user.
+    CurrentUserAddinsLocation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The folder location for .addin files for the current user.
 
 
 
@@ -419,8 +460,10 @@ Get: CurrentUserAddinsLocation(self: Application) -> str
 
 """
 
- DefaultIFCProjectTemplate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Full path to the default template file for new IFC project documents.
+    DefaultIFCProjectTemplate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Full path to the default template file for new IFC project documents.
 
    It may be empty,in which case the DefaultProjectTemplate should be used.
 
@@ -432,8 +475,10 @@ Get: DefaultIFCProjectTemplate(self: Application) -> str
 
 """
 
- DefaultProjectTemplate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Full path to the default template file for new project documents.
+    DefaultProjectTemplate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Full path to the default template file for new project documents.
 
 
 
@@ -443,8 +488,10 @@ Get: DefaultProjectTemplate(self: Application) -> str
 
 """
 
- DefaultViewDiscipline=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The view discipline that will be applied to new views by default.
+    DefaultViewDiscipline = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The view discipline that will be applied to new views by default.
 
 
 
@@ -456,8 +503,8 @@ Set: DefaultViewDiscipline(self: Application)=value
 
 """
 
- Documents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns a set of documents within Revit.
+    Documents = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns a set of documents within Revit.
 
 
 
@@ -467,8 +514,10 @@ Get: Documents(self: Application) -> DocumentSet
 
 """
 
- ExportIFCCategoryTable=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Full path to the file that defines Revit category to IFC entity mappings for IFC export.
+    ExportIFCCategoryTable = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Full path to the file that defines Revit category to IFC entity mappings for IFC export.
 
 
 
@@ -478,8 +527,10 @@ Get: ExportIFCCategoryTable(self: Application) -> str
 
 """
 
- FamilyTemplatePath=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Default path for family template files.
+    FamilyTemplatePath = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Default path for family template files.
 
 
 
@@ -489,8 +540,10 @@ Get: FamilyTemplatePath(self: Application) -> str
 
 """
 
- ImportIFCCategoryTable=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Full path to the file that defines IFC entity to Revit category mappings for IFC import.
+    ImportIFCCategoryTable = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Full path to the file that defines IFC entity to Revit category mappings for IFC import.
 
 
 
@@ -500,8 +553,10 @@ Get: ImportIFCCategoryTable(self: Application) -> str
 
 """
 
- IsArchitectureEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks whether or not the architecture discipline is enabled,and enable or disable it.
+    IsArchitectureEnabled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Checks whether or not the architecture discipline is enabled,and enable or disable it.
 
 
 
@@ -513,8 +568,10 @@ Set: IsArchitectureEnabled(self: Application)=value
 
 """
 
- IsElectricalAnalysisEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks whether or not electrical analysis is enabled,and enable or disable it.
+    IsElectricalAnalysisEnabled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Checks whether or not electrical analysis is enabled,and enable or disable it.
 
 
 
@@ -526,8 +583,10 @@ Set: IsElectricalAnalysisEnabled(self: Application)=value
 
 """
 
- IsElectricalEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks whether or not the electrical discipline is enabled,and enable or disable it.
+    IsElectricalEnabled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Checks whether or not the electrical discipline is enabled,and enable or disable it.
 
 
 
@@ -539,8 +598,10 @@ Set: IsElectricalEnabled(self: Application)=value
 
 """
 
- IsEnergyAnalysisEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks whether or not energy analysis is enabled,and enable or disable it.
+    IsEnergyAnalysisEnabled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Checks whether or not energy analysis is enabled,and enable or disable it.
 
 
 
@@ -552,8 +613,10 @@ Set: IsEnergyAnalysisEnabled(self: Application)=value
 
 """
 
- IsMassingEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks whether or not the massing and site tools are enabled,and enable or disable them.
+    IsMassingEnabled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Checks whether or not the massing and site tools are enabled,and enable or disable them.
 
 
 
@@ -565,8 +628,10 @@ Set: IsMassingEnabled(self: Application)=value
 
 """
 
- IsMechanicalAnalysisEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks whether or not mechanical analysis is enabled,and enable or disable it.
+    IsMechanicalAnalysisEnabled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Checks whether or not mechanical analysis is enabled,and enable or disable it.
 
 
 
@@ -578,8 +643,10 @@ Set: IsMechanicalAnalysisEnabled(self: Application)=value
 
 """
 
- IsMechanicalEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks whether or not the mechanical discipline is enabled,and enable or disable it.
+    IsMechanicalEnabled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Checks whether or not the mechanical discipline is enabled,and enable or disable it.
 
 
 
@@ -591,8 +658,10 @@ Set: IsMechanicalEnabled(self: Application)=value
 
 """
 
- IsPipingAnalysisEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks whether or not piping analysis is enabled,and enable or disable it.
+    IsPipingAnalysisEnabled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Checks whether or not piping analysis is enabled,and enable or disable it.
 
 
 
@@ -604,8 +673,10 @@ Set: IsPipingAnalysisEnabled(self: Application)=value
 
 """
 
- IsPipingEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks whether or not the piping discipline is enabled,and enable or disable it.
+    IsPipingEnabled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Checks whether or not the piping discipline is enabled,and enable or disable it.
 
 
 
@@ -617,8 +688,10 @@ Set: IsPipingEnabled(self: Application)=value
 
 """
 
- IsStructuralAnalysisEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks whether or not the structural analysis is enabled,and enable or disable it.
+    IsStructuralAnalysisEnabled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Checks whether or not the structural analysis is enabled,and enable or disable it.
 
 
 
@@ -630,8 +703,10 @@ Set: IsStructuralAnalysisEnabled(self: Application)=value
 
 """
 
- IsStructureEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks whether or not the structure discipline is enabled,and enable or disable it.
+    IsStructureEnabled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Checks whether or not the structure discipline is enabled,and enable or disable it.
 
 
 
@@ -643,8 +718,10 @@ Set: IsStructureEnabled(self: Application)=value
 
 """
 
- IsSubscriptionUpdate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True if this version of Revit is a subscription update.
+    IsSubscriptionUpdate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """True if this version of Revit is a subscription update.
 
 
 
@@ -654,8 +731,10 @@ Get: IsSubscriptionUpdate(self: Application) -> bool
 
 """
 
- IsSystemsEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks whether or not any systems disciplines (mechanical,electrical,or piping) are enabled.
+    IsSystemsEnabled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Checks whether or not any systems disciplines (mechanical,electrical,or piping) are enabled.
 
 
 
@@ -665,8 +744,10 @@ Get: IsSystemsEnabled(self: Application) -> bool
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -676,8 +757,8 @@ Get: IsValidObject(self: Application) -> bool
 
 """
 
- Language=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The language used in the current session of Revit.
+    Language = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The language used in the current session of Revit.
 
 
 
@@ -687,8 +768,10 @@ Get: Language(self: Application) -> LanguageType
 
 """
 
- LoginUserId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The user id of the user currently logged in. The user id will be empty
+    LoginUserId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The user id of the user currently logged in. The user id will be empty
 
    if the user is not logged in.
 
@@ -700,8 +783,10 @@ Get: LoginUserId(self: Application) -> str
 
 """
 
- PointCloudsRootPath=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Root path for point cloud files.
+    PointCloudsRootPath = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Root path for point cloud files.
 
 
 
@@ -711,8 +796,8 @@ Get: PointCloudsRootPath(self: Application) -> str
 
 """
 
- Product=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The product type for the current session of Revit.
+    Product = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The product type for the current session of Revit.
 
 
 
@@ -722,8 +807,10 @@ Get: Product(self: Application) -> ProductType
 
 """
 
- RecordingJournalFilename=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Retrieve the name of the journal file the Revit is currently recording to.
+    RecordingJournalFilename = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Retrieve the name of the journal file the Revit is currently recording to.
 
 
 
@@ -733,8 +820,10 @@ Get: RecordingJournalFilename(self: Application) -> str
 
 """
 
- SharedParametersFilename=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Contains the fully qualified path to a shared parameters file.
+    SharedParametersFilename = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Contains the fully qualified path to a shared parameters file.
 
 
 
@@ -746,8 +835,10 @@ Set: SharedParametersFilename(self: Application)=value
 
 """
 
- ShortCurveTolerance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The enforced minimum length for any curve created by Revit.
+    ShortCurveTolerance = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The enforced minimum length for any curve created by Revit.
 
 
 
@@ -757,8 +848,10 @@ Get: ShortCurveTolerance(self: Application) -> float
 
 """
 
- ShowGraphicalWarningCableTrayConduitDisconnects=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether or not to show the graphical warnings for CTC disconnects.
+    ShowGraphicalWarningCableTrayConduitDisconnects = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether or not to show the graphical warnings for CTC disconnects.
 
 
 
@@ -770,8 +863,10 @@ Set: ShowGraphicalWarningCableTrayConduitDisconnects(self: Application)=value
 
 """
 
- ShowGraphicalWarningDuctDisconnects=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether or not to show the graphical warnings for duct disconnects.
+    ShowGraphicalWarningDuctDisconnects = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether or not to show the graphical warnings for duct disconnects.
 
 
 
@@ -783,8 +878,10 @@ Set: ShowGraphicalWarningDuctDisconnects(self: Application)=value
 
 """
 
- ShowGraphicalWarningElectricalDisconnects=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether or not to show the graphical warnings for Electrical disconnects.
+    ShowGraphicalWarningElectricalDisconnects = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether or not to show the graphical warnings for Electrical disconnects.
 
 
 
@@ -796,8 +893,10 @@ Set: ShowGraphicalWarningElectricalDisconnects(self: Application)=value
 
 """
 
- ShowGraphicalWarningHangerDisconnects=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether or not to show the graphical warnings for Fabrication Hanger disconnects.
+    ShowGraphicalWarningHangerDisconnects = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether or not to show the graphical warnings for Fabrication Hanger disconnects.
 
 
 
@@ -809,8 +908,10 @@ Set: ShowGraphicalWarningHangerDisconnects(self: Application)=value
 
 """
 
- ShowGraphicalWarningPipeDisconnects=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether or not to show the graphical warnings for Pipe disconnects.
+    ShowGraphicalWarningPipeDisconnects = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether or not to show the graphical warnings for Pipe disconnects.
 
 
 
@@ -822,8 +923,8 @@ Set: ShowGraphicalWarningPipeDisconnects(self: Application)=value
 
 """
 
- Username=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the user name for the current Revit session.
+    Username = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the user name for the current Revit session.
 
 
 
@@ -833,8 +934,10 @@ Get: Username(self: Application) -> str
 
 """
 
- VersionBuild=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the internal build number of the Autodesk Revit application.
+    VersionBuild = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the internal build number of the Autodesk Revit application.
 
 
 
@@ -844,8 +947,10 @@ Get: VersionBuild(self: Application) -> str
 
 """
 
- VersionName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the name of the Revit application.
+    VersionName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the name of the Revit application.
 
 
 
@@ -855,8 +960,10 @@ Get: VersionName(self: Application) -> str
 
 """
 
- VersionNumber=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Return the primary version of the Revit application.
+    VersionNumber = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Return the primary version of the Revit application.
 
 
 
@@ -866,8 +973,10 @@ Get: VersionNumber(self: Application) -> str
 
 """
 
- VertexTolerance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Vertex tolerance.
+    VertexTolerance = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Vertex tolerance.
 
 
 
@@ -877,49 +986,49 @@ Get: VertexTolerance(self: Application) -> float
 
 """
 
-
- ApplicationInitialized=None
- DocumentChanged=None
- DocumentClosed=None
- DocumentClosing=None
- DocumentCreated=None
- DocumentCreating=None
- DocumentOpened=None
- DocumentOpening=None
- DocumentPrinted=None
- DocumentPrinting=None
- DocumentSaved=None
- DocumentSavedAs=None
- DocumentSaving=None
- DocumentSavingAs=None
- DocumentSynchronizedWithCentral=None
- DocumentSynchronizingWithCentral=None
- DocumentWorksharingEnabled=None
- ElementTypeDuplicated=None
- ElementTypeDuplicating=None
- FailuresProcessing=None
- FamilyLoadedIntoDocument=None
- FamilyLoadingIntoDocument=None
- FileExported=None
- FileExporting=None
- FileImported=None
- FileImporting=None
- IsLoggedIn=False
- MinimumThickness=0.0026041666666666665
- ProgressChanged=None
- ViewPrinted=None
- ViewPrinting=None
+    ApplicationInitialized = None
+    DocumentChanged = None
+    DocumentClosed = None
+    DocumentClosing = None
+    DocumentCreated = None
+    DocumentCreating = None
+    DocumentOpened = None
+    DocumentOpening = None
+    DocumentPrinted = None
+    DocumentPrinting = None
+    DocumentSaved = None
+    DocumentSavedAs = None
+    DocumentSaving = None
+    DocumentSavingAs = None
+    DocumentSynchronizedWithCentral = None
+    DocumentSynchronizingWithCentral = None
+    DocumentWorksharingEnabled = None
+    ElementTypeDuplicated = None
+    ElementTypeDuplicating = None
+    FailuresProcessing = None
+    FamilyLoadedIntoDocument = None
+    FamilyLoadingIntoDocument = None
+    FileExported = None
+    FileExporting = None
+    FileImported = None
+    FileImporting = None
+    IsLoggedIn = False
+    MinimumThickness = 0.0026041666666666665
+    ProgressChanged = None
+    ViewPrinted = None
+    ViewPrinting = None
 
 
 class ControlledApplication(object):
- """
+    """
  Represents the Autodesk Revit Application with no access to documents. It provides options
 
  and other application wide data and settings for external applications OnStartup/OnShutdown.
  """
- @staticmethod
- def GetFailureDefinitionRegistry():
-  """
+
+    @staticmethod
+    def GetFailureDefinitionRegistry():
+        """
   GetFailureDefinitionRegistry() -> FailureDefinitionRegistry
 
   
@@ -928,9 +1037,10 @@ class ControlledApplication(object):
 
    Returns: The instance of FailureDefinitionRegistry.
   """
-  pass
- def GetLibraryPaths(self):
-  """
+        pass
+
+    def GetLibraryPaths(self):
+        """
   GetLibraryPaths(self: ControlledApplication) -> IDictionary[str,str]
 
   
@@ -939,9 +1049,10 @@ class ControlledApplication(object):
 
    Returns: The map of library paths.
   """
-  pass
- def OpenSharedParameterFile(self):
-  """
+        pass
+
+    def OpenSharedParameterFile(self):
+        """
   OpenSharedParameterFile(self: ControlledApplication) -> DefinitionFile
 
   
@@ -956,10 +1067,11 @@ class ControlledApplication(object):
 
     ll if the file does not exist.
   """
-  pass
- @staticmethod
- def RegisterFailuresProcessor(processor):
-  """
+        pass
+
+    @staticmethod
+    def RegisterFailuresProcessor(processor):
+        """
   RegisterFailuresProcessor(processor: IFailuresProcessor)
 
    Registers Revit application-wide instance of Failures Processor.
@@ -968,12 +1080,14 @@ class ControlledApplication(object):
 
    processor: Instance of Failures Processor to be used by the Revit Application.
   """
-  pass
- def SetLibraryPaths(self,paths):
-  """ SetLibraryPaths(self: ControlledApplication,paths: IDictionary[str,str]) """
-  pass
- def WriteJournalComment(self,comment,timeStamp):
-  """
+        pass
+
+    def SetLibraryPaths(self, paths):
+        """ SetLibraryPaths(self: ControlledApplication,paths: IDictionary[str,str]) """
+        pass
+
+    def WriteJournalComment(self, comment, timeStamp):
+        """
   WriteJournalComment(self: ControlledApplication,comment: str,timeStamp: bool)
 
    Writes a comment to the Revit journal file.
@@ -984,9 +1098,12 @@ class ControlledApplication(object):
 
    timeStamp: If a time stamp should be included in the journal comment
   """
-  pass
- ActiveAddInId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Retrieves the Id of the currently running external application.
+        pass
+
+    ActiveAddInId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Retrieves the Id of the currently running external application.
 
 
 
@@ -996,8 +1113,10 @@ Get: ActiveAddInId(self: ControlledApplication) -> AddInId
 
 """
 
- AllUsersAddinsLocation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The folder location for .addin files for all users.
+    AllUsersAddinsLocation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The folder location for .addin files for all users.
 
 
 
@@ -1007,8 +1126,8 @@ Get: AllUsersAddinsLocation(self: ControlledApplication) -> str
 
 """
 
- Cities=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns a set of all the known city locations within Revit.
+    Cities = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns a set of all the known city locations within Revit.
 
 
 
@@ -1018,8 +1137,8 @@ Get: Cities(self: ControlledApplication) -> CitySet
 
 """
 
- Create=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides an object that can be used to create new instances of Autodesk Revit API objects.
+    Create = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides an object that can be used to create new instances of Autodesk Revit API objects.
 
 
 
@@ -1029,8 +1148,10 @@ Get: Create(self: ControlledApplication) -> Application
 
 """
 
- CurrentUserAddinsLocation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The folder location for .addin files for the current user.
+    CurrentUserAddinsLocation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The folder location for .addin files for the current user.
 
 
 
@@ -1040,8 +1161,10 @@ Get: CurrentUserAddinsLocation(self: ControlledApplication) -> str
 
 """
 
- IsLateAddinLoading=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether this add-in is loaded on the fly or not. If it is loaded when is Revit starting up,it
+    IsLateAddinLoading = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates whether this add-in is loaded on the fly or not. If it is loaded when is Revit starting up,it
 
 is false,otherwise it should be true.
 
@@ -1053,8 +1176,8 @@ Get: IsLateAddinLoading(self: ControlledApplication) -> bool
 
 """
 
- Language=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The language used in the current session of Revit.
+    Language = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The language used in the current session of Revit.
 
 
 
@@ -1064,8 +1187,8 @@ Get: Language(self: ControlledApplication) -> LanguageType
 
 """
 
- Product=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The product type for the current session of Revit.
+    Product = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The product type for the current session of Revit.
 
 
 
@@ -1075,8 +1198,10 @@ Get: Product(self: ControlledApplication) -> ProductType
 
 """
 
- RecordingJournalFilename=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Retrieve the name of the journal file the Revit is currently recording to.
+    RecordingJournalFilename = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Retrieve the name of the journal file the Revit is currently recording to.
 
 
 
@@ -1086,8 +1211,10 @@ Get: RecordingJournalFilename(self: ControlledApplication) -> str
 
 """
 
- SharedParametersFilename=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Contains the fully qualified path to a shared parameters file.
+    SharedParametersFilename = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Contains the fully qualified path to a shared parameters file.
 
 
 
@@ -1099,8 +1226,10 @@ Set: SharedParametersFilename(self: ControlledApplication)=value
 
 """
 
- VersionBuild=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the internal build number of the Autodesk Revit application.
+    VersionBuild = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the internal build number of the Autodesk Revit application.
 
 
 
@@ -1110,8 +1239,10 @@ Get: VersionBuild(self: ControlledApplication) -> str
 
 """
 
- VersionName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the name of the Revit application.
+    VersionName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the name of the Revit application.
 
 
 
@@ -1121,8 +1252,10 @@ Get: VersionName(self: ControlledApplication) -> str
 
 """
 
- VersionNumber=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Return the primary version of the Revit application.
+    VersionNumber = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Return the primary version of the Revit application.
 
 
 
@@ -1132,124 +1265,143 @@ Get: VersionNumber(self: ControlledApplication) -> str
 
 """
 
+    ApplicationInitialized = None
+    DocumentChanged = None
+    DocumentClosed = None
+    DocumentClosing = None
+    DocumentCreated = None
+    DocumentCreating = None
+    DocumentOpened = None
+    DocumentOpening = None
+    DocumentPrinted = None
+    DocumentPrinting = None
+    DocumentSaved = None
+    DocumentSavedAs = None
+    DocumentSaving = None
+    DocumentSavingAs = None
+    DocumentSynchronizedWithCentral = None
+    DocumentSynchronizingWithCentral = None
+    ElementTypeDuplicated = None
+    ElementTypeDuplicating = None
+    FailuresProcessing = None
+    FamilyLoadedIntoDocument = None
+    FamilyLoadingIntoDocument = None
+    FileExported = None
+    FileExporting = None
+    FileImported = None
+    FileImporting = None
+    ProgressChanged = None
+    ViewPrinted = None
+    ViewPrinting = None
 
- ApplicationInitialized=None
- DocumentChanged=None
- DocumentClosed=None
- DocumentClosing=None
- DocumentCreated=None
- DocumentCreating=None
- DocumentOpened=None
- DocumentOpening=None
- DocumentPrinted=None
- DocumentPrinting=None
- DocumentSaved=None
- DocumentSavedAs=None
- DocumentSaving=None
- DocumentSavingAs=None
- DocumentSynchronizedWithCentral=None
- DocumentSynchronizingWithCentral=None
- ElementTypeDuplicated=None
- ElementTypeDuplicating=None
- FailuresProcessing=None
- FamilyLoadedIntoDocument=None
- FamilyLoadingIntoDocument=None
- FileExported=None
- FileExporting=None
- FileImported=None
- FileImporting=None
- ProgressChanged=None
- ViewPrinted=None
- ViewPrinting=None
 
-
-class LanguageType(Enum,IComparable,IFormattable,IConvertible):
- """
+class LanguageType(Enum, IComparable, IFormattable, IConvertible):
+    """
  An enumerated type containing the supported Revit product languages.
 
  
 
  enum LanguageType,values: Brazilian_Portuguese (14),Chinese_Simplified (6),Chinese_Traditional (7),Czech (11),Dutch (5),English_USA (0),French (3),German (1),Hungarian (13),Italian (4),Japanese (8),Korean (9),Polish (12),Russian (10),Spanish (2),Unknown (-1)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Brazilian_Portuguese=None
- Chinese_Simplified=None
- Chinese_Traditional=None
- Czech=None
- Dutch=None
- English_USA=None
- French=None
- German=None
- Hungarian=None
- Italian=None
- Japanese=None
- Korean=None
- Polish=None
- Russian=None
- Spanish=None
- Unknown=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Brazilian_Portuguese = None
+    Chinese_Simplified = None
+    Chinese_Traditional = None
+    Czech = None
+    Dutch = None
+    English_USA = None
+    French = None
+    German = None
+    Hungarian = None
+    Italian = None
+    Japanese = None
+    Korean = None
+    Polish = None
+    Russian = None
+    Spanish = None
+    Unknown = None
+    value__ = None
 
 
-class ProductType(Enum,IComparable,IFormattable,IConvertible):
- """
+class ProductType(Enum, IComparable, IFormattable, IConvertible):
+    """
  An enumerated type containing the possible Revit product types.
 
  
 
  enum ProductType,values: Architecture (0),LT (4),MEP (2),Revit (3),Structure (1),Unknown (5)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Architecture=None
- LT=None
- MEP=None
- Revit=None
- Structure=None
- Unknown=None
- value__=None
 
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
 
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Architecture = None
+    LT = None
+    MEP = None
+    Revit = None
+    Structure = None
+    Unknown = None
+    value__ = None

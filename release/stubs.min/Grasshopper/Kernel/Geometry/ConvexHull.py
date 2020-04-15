@@ -8,20 +8,21 @@
 # no functions
 # classes
 
+
 class Solver(object):
- # no doc
- @staticmethod
- def Compute(nodes,hull):
-  """ Compute(nodes: Node2List,hull: List[int]) -> bool """
-  pass
- @staticmethod
- def ComputeHull(*__args):
-  """
+    # no doc
+    @staticmethod
+    def Compute(nodes, hull):
+        """ Compute(nodes: Node2List,hull: List[int]) -> bool """
+        pass
+
+    @staticmethod
+    def ComputeHull(*__args):
+        """
   ComputeHull(pts: Node2List) -> Polyline
 
   ComputeHull(GH_pts: IEnumerable[GH_Point],plane: Plane) -> (Polyline,Plane)
 
   ComputeHull(GH_pts: IEnumerable[GH_Point]) -> Polyline
   """
-  pass
-
+        pass

@@ -7,41 +7,77 @@
 
 # no functions
 # classes
-from Analysis_parts.AnalysisDisplayColoredSurfaceSettings import AnalysisDisplayColoredSurfaceSettings
+from Analysis_parts.AnalysisDisplayColoredSurfaceSettings import (
+    AnalysisDisplayColoredSurfaceSettings,
+)
 from Analysis_parts.AnalysisDisplayColorEntry import AnalysisDisplayColorEntry
 from Analysis_parts.AnalysisDisplayColorSettings import AnalysisDisplayColorSettings
-from Analysis_parts.AnalysisDisplayDeformedShapeSettings import AnalysisDisplayDeformedShapeSettings
+from Analysis_parts.AnalysisDisplayDeformedShapeSettings import (
+    AnalysisDisplayDeformedShapeSettings,
+)
 from Analysis_parts.AnalysisDisplayDiagramSettings import AnalysisDisplayDiagramSettings
 from Analysis_parts.AnalysisDisplayLegend import AnalysisDisplayLegend
 from Analysis_parts.AnalysisDisplayLegendSettings import AnalysisDisplayLegendSettings
-from Analysis_parts.AnalysisDisplayMarkersAndTextSettings import AnalysisDisplayMarkersAndTextSettings
+from Analysis_parts.AnalysisDisplayMarkersAndTextSettings import (
+    AnalysisDisplayMarkersAndTextSettings,
+)
 from Analysis_parts.AnalysisDisplayStyle import AnalysisDisplayStyle
-from Analysis_parts.AnalysisDisplayStyleColorSettingsType import AnalysisDisplayStyleColorSettingsType
-from Analysis_parts.AnalysisDisplayStyleDeformedShapeTextLabelType import AnalysisDisplayStyleDeformedShapeTextLabelType
-from Analysis_parts.AnalysisDisplayStyleDiagramFenceType import AnalysisDisplayStyleDiagramFenceType
-from Analysis_parts.AnalysisDisplayStyleDiagramTextLabelType import AnalysisDisplayStyleDiagramTextLabelType
-from Analysis_parts.AnalysisDisplayStyleMarkerTextLabelType import AnalysisDisplayStyleMarkerTextLabelType
+from Analysis_parts.AnalysisDisplayStyleColorSettingsType import (
+    AnalysisDisplayStyleColorSettingsType,
+)
+from Analysis_parts.AnalysisDisplayStyleDeformedShapeTextLabelType import (
+    AnalysisDisplayStyleDeformedShapeTextLabelType,
+)
+from Analysis_parts.AnalysisDisplayStyleDiagramFenceType import (
+    AnalysisDisplayStyleDiagramFenceType,
+)
+from Analysis_parts.AnalysisDisplayStyleDiagramTextLabelType import (
+    AnalysisDisplayStyleDiagramTextLabelType,
+)
+from Analysis_parts.AnalysisDisplayStyleMarkerTextLabelType import (
+    AnalysisDisplayStyleMarkerTextLabelType,
+)
 from Analysis_parts.AnalysisDisplayStyleMarkerType import AnalysisDisplayStyleMarkerType
-from Analysis_parts.AnalysisDisplayStyleVectorArrowheadScale import AnalysisDisplayStyleVectorArrowheadScale
-from Analysis_parts.AnalysisDisplayStyleVectorOrientation import AnalysisDisplayStyleVectorOrientation
-from Analysis_parts.AnalysisDisplayStyleVectorPosition import AnalysisDisplayStyleVectorPosition
-from Analysis_parts.AnalysisDisplayStyleVectorTextType import AnalysisDisplayStyleVectorTextType
+from Analysis_parts.AnalysisDisplayStyleVectorArrowheadScale import (
+    AnalysisDisplayStyleVectorArrowheadScale,
+)
+from Analysis_parts.AnalysisDisplayStyleVectorOrientation import (
+    AnalysisDisplayStyleVectorOrientation,
+)
+from Analysis_parts.AnalysisDisplayStyleVectorPosition import (
+    AnalysisDisplayStyleVectorPosition,
+)
+from Analysis_parts.AnalysisDisplayStyleVectorTextType import (
+    AnalysisDisplayStyleVectorTextType,
+)
 from Analysis_parts.AnalysisDisplayVectorSettings import AnalysisDisplayVectorSettings
 from Analysis_parts.AnalysisMode import AnalysisMode
 from Analysis_parts.AnalysisResultSchema import AnalysisResultSchema
 from Analysis_parts.BuildingEnvelopeAnalyzer import BuildingEnvelopeAnalyzer
-from Analysis_parts.BuildingEnvelopeAnalyzerOptions import BuildingEnvelopeAnalyzerOptions
-from Analysis_parts.ConceptualConstructionFloorSlabType import ConceptualConstructionFloorSlabType
-from Analysis_parts.ConceptualConstructionOpeningType import ConceptualConstructionOpeningType
+from Analysis_parts.BuildingEnvelopeAnalyzerOptions import (
+    BuildingEnvelopeAnalyzerOptions,
+)
+from Analysis_parts.ConceptualConstructionFloorSlabType import (
+    ConceptualConstructionFloorSlabType,
+)
+from Analysis_parts.ConceptualConstructionOpeningType import (
+    ConceptualConstructionOpeningType,
+)
 from Analysis_parts.ConceptualConstructionRoofType import ConceptualConstructionRoofType
-from Analysis_parts.ConceptualConstructionShadeType import ConceptualConstructionShadeType
+from Analysis_parts.ConceptualConstructionShadeType import (
+    ConceptualConstructionShadeType,
+)
 from Analysis_parts.ConceptualConstructionType import ConceptualConstructionType
 from Analysis_parts.ConceptualConstructionWallType import ConceptualConstructionWallType
-from Analysis_parts.ConceptualConstructionWindowSkylightType import ConceptualConstructionWindowSkylightType
+from Analysis_parts.ConceptualConstructionWindowSkylightType import (
+    ConceptualConstructionWindowSkylightType,
+)
 from Analysis_parts.ConceptualSurfaceType import ConceptualSurfaceType
 from Analysis_parts.ConstructionType import ConstructionType
 from Analysis_parts.EnergyAnalysisDetailModel import EnergyAnalysisDetailModel
-from Analysis_parts.EnergyAnalysisDetailModelOptions import EnergyAnalysisDetailModelOptions
+from Analysis_parts.EnergyAnalysisDetailModelOptions import (
+    EnergyAnalysisDetailModelOptions,
+)
 from Analysis_parts.EnergyAnalysisDetailModelTier import EnergyAnalysisDetailModelTier
 from Analysis_parts.EnergyAnalysisOpening import EnergyAnalysisOpening
 from Analysis_parts.EnergyAnalysisOpeningType import EnergyAnalysisOpeningType

@@ -1,13 +1,16 @@
-class MassSurfaceData(Element,IDisposable):
- """ Holds properties and other data about a face in the MassEnergyAnalyticalModel element. """
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetFaceReferences(self):
-  """
+class MassSurfaceData(Element, IDisposable):
+    """ Holds properties and other data about a face in the MassEnergyAnalyticalModel element. """
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetFaceReferences(self):
+        """
   GetFaceReferences(self: MassSurfaceData) -> IList[Reference]
 
   
@@ -18,24 +21,30 @@ class MassSurfaceData(Element,IDisposable):
 
     properties for.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Area=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Area of the references that the MassSurfaceData provides properties for.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Area = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Area of the references that the MassSurfaceData provides properties for.
 
 
 
@@ -45,8 +54,10 @@ Get: Area(self: MassSurfaceData) -> float
 
 """
 
- CategoryIdForConceptualSurfaceType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the mass subcategory ElementId used for ConceptualSurfaceType for this MassSurfaceData.
+    CategoryIdForConceptualSurfaceType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the mass subcategory ElementId used for ConceptualSurfaceType for this MassSurfaceData.
 
 
 
@@ -56,8 +67,10 @@ Get: CategoryIdForConceptualSurfaceType(self: MassSurfaceData) -> ElementId
 
 """
 
- ConceptualConstructionId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the conceptual construction associated with the reference surface.
+    ConceptualConstructionId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The id of the conceptual construction associated with the reference surface.
 
 
 
@@ -69,8 +82,10 @@ Set: ConceptualConstructionId(self: MassSurfaceData)=value
 
 """
 
- IsConceptualConstructionByEnergyData=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True when the ConceptualConstructionType id is synchronized to the EnergyDataSettings.
+    IsConceptualConstructionByEnergyData = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """True when the ConceptualConstructionType id is synchronized to the EnergyDataSettings.
 
    False when the ConceptualConstructionType id is overridden for this MassSurfaceData.
 
@@ -84,8 +99,10 @@ Set: IsConceptualConstructionByEnergyData(self: MassSurfaceData)=value
 
 """
 
- IsGlazingShaded=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if shade geometry is auto-generated on the top edge of auto-generated glazing.
+    IsGlazingShaded = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if shade geometry is auto-generated on the top edge of auto-generated glazing.
 
 
 
@@ -97,8 +114,8 @@ Set: IsGlazingShaded(self: MassSurfaceData)=value
 
 """
 
- IsSlab=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if a floor is a slab.
+    IsSlab = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Indicates if a floor is a slab.
 
 
 
@@ -108,8 +125,10 @@ Get: IsSlab(self: MassSurfaceData) -> bool
 
 """
 
- IsUnderground=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the roof,floor,slab,or wall surface reference is underground.
+    IsUnderground = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the roof,floor,slab,or wall surface reference is underground.
 
 
 
@@ -121,8 +140,10 @@ Set: IsUnderground(self: MassSurfaceData)=value
 
 """
 
- MassLevelDataId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The MassLevelData used when the surface is horizontal,planar,and at the same height as a MassLevelData
+    MassLevelDataId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The MassLevelData used when the surface is horizontal,planar,and at the same height as a MassLevelData
 
    related to the same mass as the referenced face.
 
@@ -134,8 +155,10 @@ Get: MassLevelDataId(self: MassSurfaceData) -> ElementId
 
 """
 
- MaterialId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The visualization material used for the surface for displaying the energy analytical model.
+    MaterialId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The visualization material used for the surface for displaying the energy analytical model.
 
 
 
@@ -147,8 +170,10 @@ Set: MaterialId(self: MassSurfaceData)=value
 
 """
 
- MaterialType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """material type of mass zone
+    MaterialType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """material type of mass zone
 
 
 
@@ -160,8 +185,10 @@ Set: MaterialType(self: MassSurfaceData)=value
 
 """
 
- PercentageGlazing=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The target percentage of the reference wall surface that is to
+    PercentageGlazing = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The target percentage of the reference wall surface that is to
 
    be covered with automatically generated windows. Revit will use this number when
 
@@ -177,8 +204,10 @@ Set: PercentageGlazing(self: MassSurfaceData)=value
 
 """
 
- PercentageSkylights=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The target percentage of the reference roof surface that is to
+    PercentageSkylights = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The target percentage of the reference roof surface that is to
 
    be covered with automatically generated skylights.  Revit will use this number when
 
@@ -194,8 +223,10 @@ Set: PercentageSkylights(self: MassSurfaceData)=value
 
 """
 
- ReferenceElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The ElementId of the element whose face the MassSurfaceData primarily refers to.
+    ReferenceElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The ElementId of the element whose face the MassSurfaceData primarily refers to.
 
 
 
@@ -205,8 +236,10 @@ Get: ReferenceElementId(self: MassSurfaceData) -> ElementId
 
 """
 
- ShadeDepth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """How far any auto-generated shades should extend from the wall surface.
+    ShadeDepth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """How far any auto-generated shades should extend from the wall surface.
 
 
 
@@ -218,8 +251,10 @@ Set: ShadeDepth(self: MassSurfaceData)=value
 
 """
 
- SillHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The height above the level where the bottoms of auto-generated windows will be located.
+    SillHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The height above the level where the bottoms of auto-generated windows will be located.
 
 
 
@@ -231,8 +266,10 @@ Set: SillHeight(self: MassSurfaceData)=value
 
 """
 
- SkylightWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The length dimension to be used for the sides of each individual square skylight
+    SkylightWidth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The length dimension to be used for the sides of each individual square skylight
 
    produced in the grid of auto-generated skylights.
 
@@ -246,8 +283,10 @@ Set: SkylightWidth(self: MassSurfaceData)=value
 
 """
 
- SurfaceDataSource=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether the MassSurfaceData properties are driven by the EnergyDataSettings
+    SurfaceDataSource = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates whether the MassSurfaceData properties are driven by the EnergyDataSettings
 
    of the Document or are overridden for the surface.
 
@@ -260,5 +299,3 @@ Get: SurfaceDataSource(self: MassSurfaceData) -> MassSurfaceDataSource
 Set: SurfaceDataSource(self: MassSurfaceData)=value
 
 """
-
-

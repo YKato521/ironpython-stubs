@@ -1,5 +1,11 @@
-class WebPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStackWalk,IUnrestrictedPermission):
- """
+class WebPermission(
+    CodeAccessPermission,
+    IPermission,
+    ISecurityEncodable,
+    IStackWalk,
+    IUnrestrictedPermission,
+):
+    """
  Controls rights to access HTTP Internet resources.
 
  
@@ -12,8 +18,9 @@ class WebPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStackWa
 
  WebPermission(access: NetworkAccess,uriString: str)
  """
- def AddPermission(self,access,*__args):
-  """
+
+    def AddPermission(self, access, *__args):
+        """
   AddPermission(self: WebPermission,access: NetworkAccess,uriRegex: Regex)
 
    Adds the specified URI with the specified access rights to the current System.Net.WebPermission.
@@ -38,9 +45,10 @@ class WebPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStackWa
 
    uriString: A string that describes the URI to which access rights are granted.
   """
-  pass
- def Copy(self):
-  """
+        pass
+
+    def Copy(self):
+        """
   Copy(self: WebPermission) -> IPermission
 
   
@@ -49,9 +57,10 @@ class WebPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStackWa
 
    Returns: A new instance of the System.Net.WebPermission class that has the same values as the original.
   """
-  pass
- def FromXml(self,securityElement):
-  """
+        pass
+
+    def FromXml(self, securityElement):
+        """
   FromXml(self: WebPermission,securityElement: SecurityElement)
 
    Reconstructs a System.Net.WebPermission from an XML encoding.
@@ -60,9 +69,10 @@ class WebPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStackWa
 
    securityElement: The XML encoding from which to reconstruct the System.Net.WebPermission.
   """
-  pass
- def Intersect(self,target):
-  """
+        pass
+
+    def Intersect(self, target):
+        """
   Intersect(self: WebPermission,target: IPermission) -> IPermission
 
   
@@ -77,9 +87,10 @@ class WebPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStackWa
 
     target parameter. If the intersection is empty,the method returns null.
   """
-  pass
- def IsSubsetOf(self,target):
-  """
+        pass
+
+    def IsSubsetOf(self, target):
+        """
   IsSubsetOf(self: WebPermission,target: IPermission) -> bool
 
   
@@ -96,9 +107,10 @@ class WebPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStackWa
 
     and false otherwise.
   """
-  pass
- def IsUnrestricted(self):
-  """
+        pass
+
+    def IsUnrestricted(self):
+        """
   IsUnrestricted(self: WebPermission) -> bool
 
   
@@ -111,9 +123,10 @@ class WebPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStackWa
 
     te; otherwise,false.
   """
-  pass
- def ToXml(self):
-  """
+        pass
+
+    def ToXml(self):
+        """
   ToXml(self: WebPermission) -> SecurityElement
 
   
@@ -124,9 +137,10 @@ class WebPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStackWa
 
     System.Net.WebPermission,including state information.
   """
-  pass
- def Union(self,target):
-  """
+        pass
+
+    def Union(self, target):
+        """
   Union(self: WebPermission,target: IPermission) -> IPermission
 
   
@@ -147,13 +161,15 @@ class WebPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStackWa
 
     returns a copy of the current System.Net.WebPermission.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,state: PermissionState)
 
   __new__(cls: type)
@@ -162,13 +178,18 @@ class WebPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStackWa
 
   __new__(cls: type,access: NetworkAccess,uriString: str)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- AcceptList=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property returns an enumeration of a single accept permissions held by this System.Net.WebPermission. The possible objects types contained in the returned enumeration are System.String and System.Text.RegularExpressions.Regex.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AcceptList = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property returns an enumeration of a single accept permissions held by this System.Net.WebPermission. The possible objects types contained in the returned enumeration are System.String and System.Text.RegularExpressions.Regex.
 
 
 
@@ -178,8 +199,10 @@ Get: AcceptList(self: WebPermission) -> IEnumerator
 
 """
 
- ConnectList=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property returns an enumeration of a single connect permissions held by this System.Net.WebPermission. The possible objects types contained in the returned enumeration are System.String and System.Text.RegularExpressions.Regex.
+    ConnectList = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property returns an enumeration of a single connect permissions held by this System.Net.WebPermission. The possible objects types contained in the returned enumeration are System.String and System.Text.RegularExpressions.Regex.
 
 
 
@@ -188,5 +211,3 @@ Get: ConnectList(self: WebPermission) -> IEnumerator
 
 
 """
-
-

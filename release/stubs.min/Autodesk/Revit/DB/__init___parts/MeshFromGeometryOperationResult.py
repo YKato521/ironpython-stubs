@@ -1,14 +1,16 @@
-class MeshFromGeometryOperationResult(object,IDisposable):
- """
+class MeshFromGeometryOperationResult(object, IDisposable):
+    """
  Describes what TessellatedShapeBuilder has
 
     built.
  """
- def Dispose(self):
-  """ Dispose(self: MeshFromGeometryOperationResult) """
-  pass
- def GetIssues(self):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: MeshFromGeometryOperationResult) """
+        pass
+
+    def GetIssues(self):
+        """
   GetIssues(self: MeshFromGeometryOperationResult) -> IList[MeshFromGeometryOperationIssue]
 
   
@@ -17,9 +19,10 @@ class MeshFromGeometryOperationResult(object,IDisposable):
 
    Returns: Array of issues encountered while building a mesh.
   """
-  pass
- def GetMesh(self):
-  """
+        pass
+
+    def GetMesh(self):
+        """
   GetMesh(self: MeshFromGeometryOperationResult) -> Mesh
 
   
@@ -34,24 +37,32 @@ class MeshFromGeometryOperationResult(object,IDisposable):
 
    Returns: Mesh which built.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: MeshFromGeometryOperationResult,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- HasInvalidData=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether the provided data for which this result was
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: MeshFromGeometryOperationResult,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    HasInvalidData = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether the provided data for which this result was
 
    obtained were internally inconsistent and could not be
 
@@ -71,8 +82,10 @@ Get: HasInvalidData(self: MeshFromGeometryOperationResult) -> bool
 
 """
 
- IsMeshAvailable=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Shows whether the result still contains the mesh
+    IsMeshAvailable = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Shows whether the result still contains the mesh
 
    which was constructed,if any,or whether it has been
 
@@ -88,8 +101,10 @@ Get: IsMeshAvailable(self: MeshFromGeometryOperationResult) -> bool
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -99,8 +114,10 @@ Get: IsValidObject(self: MeshFromGeometryOperationResult) -> bool
 
 """
 
- Tessellated=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether while constructing a mesh,it was necessary
+    Tessellated = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether while constructing a mesh,it was necessary
 
    to extrude polylines instead of non-linear curves
 
@@ -113,5 +130,3 @@ Get: Tessellated(self: MeshFromGeometryOperationResult) -> bool
 
 
 """
-
-

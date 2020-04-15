@@ -1,5 +1,5 @@
-class Circle(object,IEpsilonComparable[Circle]):
- """
+class Circle(object, IEpsilonComparable[Circle]):
+    """
  Represents a circle in 3D.
 
     The values used are a radius and an orthonormal frame	of the plane containing the circle,
@@ -22,8 +22,9 @@ class Circle(object,IEpsilonComparable[Circle]):
 
  Circle(startPoint: Point3d,tangentAtP: Vector3d,pointOnCircle: Point3d)
  """
- def ClosestParameter(self,testPoint,t):
-  """
+
+    def ClosestParameter(self, testPoint, t):
+        """
   ClosestParameter(self: Circle,testPoint: Point3d) -> (bool,float)
 
   
@@ -36,9 +37,10 @@ class Circle(object,IEpsilonComparable[Circle]):
 
    Returns: true on success,false on failure.
   """
-  pass
- def ClosestPoint(self,testPoint):
-  """
+        pass
+
+    def ClosestPoint(self, testPoint):
+        """
   ClosestPoint(self: Circle,testPoint: Point3d) -> Point3d
 
   
@@ -53,9 +55,10 @@ class Circle(object,IEpsilonComparable[Circle]):
 
      Point3d.Unset on failure.
   """
-  pass
- def DerivativeAt(self,derivative,t):
-  """
+        pass
+
+    def DerivativeAt(self, derivative, t):
+        """
   DerivativeAt(self: Circle,derivative: int,t: float) -> Vector3d
 
   
@@ -70,18 +73,20 @@ class Circle(object,IEpsilonComparable[Circle]):
 
    Returns: The derivative of the circle at the given parameter.
   """
-  pass
- def EpsilonEquals(self,other,epsilon):
-  """
+        pass
+
+    def EpsilonEquals(self, other, epsilon):
+        """
   EpsilonEquals(self: Circle,other: Circle,epsilon: float) -> bool
 
   
 
    Check that all values in other are within epsilon of the values in this
   """
-  pass
- def IsInPlane(self,plane,tolerance):
-  """
+        pass
+
+    def IsInPlane(self, plane, tolerance):
+        """
   IsInPlane(self: Circle,plane: Plane,tolerance: float) -> bool
 
   
@@ -96,9 +101,10 @@ class Circle(object,IEpsilonComparable[Circle]):
 
    Returns: true if the circle plane is co-planar with the given plane within tolerance.
   """
-  pass
- def PointAt(self,t):
-  """
+        pass
+
+    def PointAt(self, t):
+        """
   PointAt(self: Circle,t: float) -> Point3d
 
   
@@ -117,18 +123,20 @@ class Circle(object,IEpsilonComparable[Circle]):
 
    Returns: The point on the circle at the given parameter.
   """
-  pass
- def Reverse(self):
-  """
+        pass
+
+    def Reverse(self):
+        """
   Reverse(self: Circle)
 
    Reverse the orientation of the circle. Changes the domain from [a,b]
 
      to [-b,-a].
   """
-  pass
- def Rotate(self,*__args):
-  """
+        pass
+
+    def Rotate(self, *__args):
+        """
   Rotate(self: Circle,angle: float,axis: Vector3d) -> bool
 
   
@@ -193,9 +201,10 @@ class Circle(object,IEpsilonComparable[Circle]):
 
    Returns: true on success,false on failure.
   """
-  pass
- def TangentAt(self,t):
-  """
+        pass
+
+    def TangentAt(self, t):
+        """
   TangentAt(self: Circle,t: float) -> Vector3d
 
   
@@ -214,9 +223,10 @@ class Circle(object,IEpsilonComparable[Circle]):
 
    Returns: The tangent at the circle at the given parameter.
   """
-  pass
- def ToNurbsCurve(self):
-  """
+        pass
+
+    def ToNurbsCurve(self):
+        """
   ToNurbsCurve(self: Circle) -> NurbsCurve
 
   
@@ -231,9 +241,10 @@ class Circle(object,IEpsilonComparable[Circle]):
 
    Returns: A nurbs curve representation of this circle or null if no such representation could be made.
   """
-  pass
- def Transform(self,xform):
-  """
+        pass
+
+    def Transform(self, xform):
+        """
   Transform(self: Circle,xform: Transform) -> bool
 
   
@@ -246,9 +257,10 @@ class Circle(object,IEpsilonComparable[Circle]):
 
    Returns: true on success,false on failure.
   """
-  pass
- def Translate(self,delta):
-  """
+        pass
+
+    def Translate(self, delta):
+        """
   Translate(self: Circle,delta: Vector3d) -> bool
 
   
@@ -261,10 +273,11 @@ class Circle(object,IEpsilonComparable[Circle]):
 
    Returns: true on success,false on failure.
   """
-  pass
- @staticmethod
- def TryFitCircleTT(c1,c2,t1,t2):
-  """
+        pass
+
+    @staticmethod
+    def TryFitCircleTT(c1, c2, t1, t2):
+        """
   TryFitCircleTT(c1: Curve,c2: Curve,t1: float,t2: float) -> Circle
 
   
@@ -283,10 +296,11 @@ class Circle(object,IEpsilonComparable[Circle]):
 
    Returns: Valid circle on success,Circle.Unset on failure.
   """
-  pass
- @staticmethod
- def TryFitCircleTTT(c1,c2,c3,t1,t2,t3):
-  """
+        pass
+
+    @staticmethod
+    def TryFitCircleTTT(c1, c2, c3, t1, t2, t3):
+        """
   TryFitCircleTTT(c1: Curve,c2: Curve,c3: Curve,t1: float,t2: float,t3: float) -> Circle
 
   
@@ -309,13 +323,15 @@ class Circle(object,IEpsilonComparable[Circle]):
 
    Returns: Valid circle on success,Circle.Unset on failure.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__[Circle]() -> Circle
 
   
@@ -334,16 +350,22 @@ class Circle(object,IEpsilonComparable[Circle]):
 
   __new__(cls: type,startPoint: Point3d,tangentAtP: Vector3d,pointOnCircle: Point3d)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- BoundingBox=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the circle's 3d axis aligned bounding box.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    BoundingBox = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the circle's 3d axis aligned bounding box.
 
 
 
@@ -353,8 +375,8 @@ Get: BoundingBox(self: Circle) -> BoundingBox
 
 """
 
- Center=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the center point of this circle.
+    Center = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the center point of this circle.
 
 
 
@@ -366,8 +388,10 @@ Set: Center(self: Circle)=value
 
 """
 
- Circumference=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the circumference of this circle.
+    Circumference = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the circumference of this circle.
 
 
 
@@ -379,8 +403,8 @@ Set: Circumference(self: Circle)=value
 
 """
 
- Diameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the diameter (radius * 2.0) of this circle. 
+    Diameter = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the diameter (radius * 2.0) of this circle. 
 
    Diameters should be positive values.
 
@@ -394,8 +418,8 @@ Set: Diameter(self: Circle)=value
 
 """
 
- IsValid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """A valid circle has radius larger than 0.0 and a base plane which is must also be valid.
+    IsValid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """A valid circle has radius larger than 0.0 and a base plane which is must also be valid.
 
 
 
@@ -405,8 +429,8 @@ Get: IsValid(self: Circle) -> bool
 
 """
 
- Normal=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the normal vector for this circle.
+    Normal = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the normal vector for this circle.
 
 
 
@@ -416,8 +440,8 @@ Get: Normal(self: Circle) -> Vector3d
 
 """
 
- Plane=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the plane of the circle.
+    Plane = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the plane of the circle.
 
 
 
@@ -429,8 +453,8 @@ Set: Plane(self: Circle)=value
 
 """
 
- Radius=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the radius of this circle. 
+    Radius = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the radius of this circle. 
 
    Radii should be positive values.
 
@@ -444,6 +468,4 @@ Set: Radius(self: Circle)=value
 
 """
 
-
- Unset=None
-
+    Unset = None

@@ -1,8 +1,9 @@
 class ImeContext(object):
- """ Contains static methods that interact directly with the IME API. """
- @staticmethod
- def Disable(handle):
-  """
+    """ Contains static methods that interact directly with the IME API. """
+
+    @staticmethod
+    def Disable(handle):
+        """
   Disable(handle: IntPtr)
 
    Disables the specified IME.
@@ -11,10 +12,11 @@ class ImeContext(object):
 
    handle: A pointer to the IME to disable.
   """
-  pass
- @staticmethod
- def Enable(handle):
-  """
+        pass
+
+    @staticmethod
+    def Enable(handle):
+        """
   Enable(handle: IntPtr)
 
    Enables the specified IME.
@@ -23,10 +25,11 @@ class ImeContext(object):
 
    handle: A pointer to the IME to enable.
   """
-  pass
- @staticmethod
- def GetImeMode(handle):
-  """
+        pass
+
+    @staticmethod
+    def GetImeMode(handle):
+        """
   GetImeMode(handle: IntPtr) -> ImeMode
 
   
@@ -39,10 +42,11 @@ class ImeContext(object):
 
    Returns: The System.Windows.Forms.ImeMode of the specified IME.
   """
-  pass
- @staticmethod
- def IsOpen(handle):
-  """
+        pass
+
+    @staticmethod
+    def IsOpen(handle):
+        """
   IsOpen(handle: IntPtr) -> bool
 
   
@@ -55,10 +59,11 @@ class ImeContext(object):
 
    Returns: true if the specified IME is open; otherwise,false.
   """
-  pass
- @staticmethod
- def SetImeStatus(imeMode,handle):
-  """
+        pass
+
+    @staticmethod
+    def SetImeStatus(imeMode, handle):
+        """
   SetImeStatus(imeMode: ImeMode,handle: IntPtr)
 
    Sets the status of the specified IME.
@@ -69,10 +74,11 @@ class ImeContext(object):
 
    handle: A pointer to the IME to set status of.
   """
-  pass
- @staticmethod
- def SetOpenStatus(open,handle):
-  """
+        pass
+
+    @staticmethod
+    def SetOpenStatus(open, handle):
+        """
   SetOpenStatus(open: bool,handle: IntPtr)
 
    Opens or closes the IME context.
@@ -83,13 +89,13 @@ class ImeContext(object):
 
    handle: A pointer to the IME to open or close.
   """
-  pass
- __all__=[
-  'Disable',
-  'Enable',
-  'GetImeMode',
-  'IsOpen',
-  'SetImeStatus',
-  'SetOpenStatus',
- ]
+        pass
 
+    __all__ = [
+        "Disable",
+        "Enable",
+        "GetImeMode",
+        "IsOpen",
+        "SetImeStatus",
+        "SetOpenStatus",
+    ]

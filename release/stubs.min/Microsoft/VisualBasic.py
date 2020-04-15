@@ -8,8 +8,9 @@
 # no functions
 # classes
 
-class VBCodeProvider(CodeDomProvider,IComponent,IDisposable):
- """
+
+class VBCodeProvider(CodeDomProvider, IComponent, IDisposable):
+    """
  Provides access to instances of the Visual Basic code generator and code compiler.
 
  
@@ -18,8 +19,9 @@ class VBCodeProvider(CodeDomProvider,IComponent,IDisposable):
 
  VBCodeProvider(providerOptions: IDictionary[str,str])
  """
- def CreateCompiler(self):
-  """
+
+    def CreateCompiler(self):
+        """
   CreateCompiler(self: VBCodeProvider) -> ICodeCompiler
 
   
@@ -28,9 +30,10 @@ class VBCodeProvider(CodeDomProvider,IComponent,IDisposable):
 
    Returns: An instance of the Visual Basic System.CodeDom.Compiler.ICodeCompiler implementation.
   """
-  pass
- def CreateGenerator(self,*__args):
-  """
+        pass
+
+    def CreateGenerator(self, *__args):
+        """
   CreateGenerator(self: VBCodeProvider) -> ICodeGenerator
 
   
@@ -39,9 +42,10 @@ class VBCodeProvider(CodeDomProvider,IComponent,IDisposable):
 
    Returns: An instance of the Visual Basic System.CodeDom.Compiler.ICodeGenerator implementation.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: Component,disposing: bool)
 
    Releases the unmanaged resources used by the System.ComponentModel.Component and optionally 
@@ -54,9 +58,10 @@ class VBCodeProvider(CodeDomProvider,IComponent,IDisposable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def GenerateCodeFromMember(self,member,writer,options):
-  """
+        pass
+
+    def GenerateCodeFromMember(self, member, writer, options):
+        """
   GenerateCodeFromMember(self: VBCodeProvider,member: CodeTypeMember,writer: TextWriter,options: CodeGeneratorOptions)
 
    Generates code for the specified class member using the specified text writer and code generator 
@@ -73,9 +78,10 @@ class VBCodeProvider(CodeDomProvider,IComponent,IDisposable):
 
    options: The System.CodeDom.Compiler.CodeGeneratorOptions to use when generating the code.
   """
-  pass
- def GetConverter(self,type):
-  """
+        pass
+
+    def GetConverter(self, type):
+        """
   GetConverter(self: VBCodeProvider,type: Type) -> TypeConverter
 
   
@@ -88,9 +94,10 @@ class VBCodeProvider(CodeDomProvider,IComponent,IDisposable):
 
    Returns: A System.ComponentModel.TypeConverter for the specified type.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -109,9 +116,10 @@ class VBCodeProvider(CodeDomProvider,IComponent,IDisposable):
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -142,59 +150,71 @@ class VBCodeProvider(CodeDomProvider,IComponent,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,providerOptions=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, providerOptions=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,providerOptions: IDictionary[str,str])
   """
-  pass
- def __str__(self,*args):
-  pass
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- FileExtension=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the file name extension to use when creating source code files.
+    FileExtension = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the file name extension to use when creating source code files.
 
 
 
@@ -204,8 +224,10 @@ Get: FileExtension(self: VBCodeProvider) -> str
 
 """
 
- LanguageOptions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a language features identifier.
+    LanguageOptions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a language features identifier.
 
 
 
@@ -214,6 +236,3 @@ Get: LanguageOptions(self: VBCodeProvider) -> LanguageOptions
 
 
 """
-
-
-

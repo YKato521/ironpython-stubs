@@ -8,10 +8,12 @@
 # no functions
 # classes
 
-class AnnotationStore(object,IDisposable):
- """ When overridden in a derived class,represents a data store for writing and reading user annotations. """
- def AddAnnotation(self,newAnnotation):
-  """
+
+class AnnotationStore(object, IDisposable):
+    """ When overridden in a derived class,represents a data store for writing and reading user annotations. """
+
+    def AddAnnotation(self, newAnnotation):
+        """
   AddAnnotation(self: AnnotationStore,newAnnotation: Annotation)
 
    Adds a new System.Windows.Annotations.Annotation to the store.
@@ -20,9 +22,10 @@ class AnnotationStore(object,IDisposable):
 
    newAnnotation: The annotation to add to the store.
   """
-  pass
- def DeleteAnnotation(self,annotationId):
-  """
+        pass
+
+    def DeleteAnnotation(self, annotationId):
+        """
   DeleteAnnotation(self: AnnotationStore,annotationId: Guid) -> Annotation
 
   
@@ -45,25 +48,28 @@ class AnnotationStore(object,IDisposable):
 
     annotationId was not found in the store.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: AnnotationStore)
 
    Releases all managed and unmanaged resources used by the store.
   """
-  pass
- def Flush(self):
-  """
+        pass
+
+    def Flush(self):
+        """
   Flush(self: AnnotationStore)
 
    Forces any annotation data retained in internal buffers to be written to the underlying storage 
 
     device.
   """
-  pass
- def GetAnnotation(self,annotationId):
-  """
+        pass
+
+    def GetAnnotation(self, annotationId):
+        """
   GetAnnotation(self: AnnotationStore,annotationId: Guid) -> Annotation
 
   
@@ -86,9 +92,10 @@ class AnnotationStore(object,IDisposable):
 
     annotationId was not found in the store.
   """
-  pass
- def GetAnnotations(self,anchorLocator=None):
-  """
+        pass
+
+    def GetAnnotations(self, anchorLocator=None):
+        """
   GetAnnotations(self: AnnotationStore) -> IList[Annotation]
 
   
@@ -121,9 +128,10 @@ class AnnotationStore(object,IDisposable):
 
     found.
   """
-  pass
- def OnAnchorChanged(self,*args):
-  """
+        pass
+
+    def OnAnchorChanged(self, *args):
+        """
   OnAnchorChanged(self: AnnotationStore,args: AnnotationResourceChangedEventArgs)
 
    Raises the System.Windows.Annotations.Storage.AnnotationStore.AnchorChanged event.
@@ -132,9 +140,10 @@ class AnnotationStore(object,IDisposable):
 
    args: The event data.
   """
-  pass
- def OnAuthorChanged(self,*args):
-  """
+        pass
+
+    def OnAuthorChanged(self, *args):
+        """
   OnAuthorChanged(self: AnnotationStore,args: AnnotationAuthorChangedEventArgs)
 
    Raises the System.Windows.Annotations.Storage.AnnotationStore.AuthorChanged event.
@@ -143,9 +152,10 @@ class AnnotationStore(object,IDisposable):
 
    args: The event data.
   """
-  pass
- def OnCargoChanged(self,*args):
-  """
+        pass
+
+    def OnCargoChanged(self, *args):
+        """
   OnCargoChanged(self: AnnotationStore,args: AnnotationResourceChangedEventArgs)
 
    Raises the System.Windows.Annotations.Storage.AnnotationStore.CargoChanged event.
@@ -154,9 +164,10 @@ class AnnotationStore(object,IDisposable):
 
    args: The event data.
   """
-  pass
- def OnStoreContentChanged(self,*args):
-  """
+        pass
+
+    def OnStoreContentChanged(self, *args):
+        """
   OnStoreContentChanged(self: AnnotationStore,e: StoreContentChangedEventArgs)
 
    Raises the System.Windows.Annotations.Storage.AnnotationStore.StoreContentChanged event.
@@ -165,31 +176,36 @@ class AnnotationStore(object,IDisposable):
 
    e: The event data.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- AutoFlush=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether data in annotation buffers is to be written immediately to the physical data store.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    AutoFlush = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value that indicates whether data in annotation buffers is to be written immediately to the physical data store.
 
 
 
@@ -201,77 +217,91 @@ Set: AutoFlush(self: AnnotationStore)=value
 
 """
 
- IsDisposed=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether erload:System.Windows.Annotations.Storage.AnnotationStore.Dispose has been called.
+    IsDisposed = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether erload:System.Windows.Annotations.Storage.AnnotationStore.Dispose has been called.
 
 
 
 """
 
- SyncRoot=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the object to use as a synchronization lock for System.Windows.Annotations.Storage.AnnotationStore critical sections.
+    SyncRoot = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the object to use as a synchronization lock for System.Windows.Annotations.Storage.AnnotationStore critical sections.
 
 
 
 """
 
+    AnchorChanged = None
+    AuthorChanged = None
+    CargoChanged = None
+    StoreContentChanged = None
 
- AnchorChanged=None
- AuthorChanged=None
- CargoChanged=None
- StoreContentChanged=None
 
-
-class StoreContentAction(Enum,IComparable,IFormattable,IConvertible):
- """
+class StoreContentAction(Enum, IComparable, IFormattable, IConvertible):
+    """
  Specifies the actions performed on an System.Windows.Annotations.Annotation in an System.Windows.Annotations.Storage.AnnotationStore.
 
  
 
  enum StoreContentAction,values: Added (0),Deleted (1)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Added=None
- Deleted=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Added = None
+    Deleted = None
+    value__ = None
 
 
 class StoreContentChangedEventArgs(EventArgs):
- """
+    """
  Provides data for the System.Windows.Annotations.Storage.AnnotationStore.StoreContentChanged event.
 
  
 
  StoreContentChangedEventArgs(action: StoreContentAction,annotation: Annotation)
  """
- @staticmethod
- def __new__(self,action,annotation):
-  """ __new__(cls: type,action: StoreContentAction,annotation: Annotation) """
-  pass
- Action=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the action performed.
+
+    @staticmethod
+    def __new__(self, action, annotation):
+        """ __new__(cls: type,action: StoreContentAction,annotation: Annotation) """
+        pass
+
+    Action = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the action performed.
 
 
 
@@ -281,8 +311,10 @@ Get: Action(self: StoreContentChangedEventArgs) -> StoreContentAction
 
 """
 
- Annotation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Annotations.Annotation that changed in the store.
+    Annotation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Windows.Annotations.Annotation that changed in the store.
 
 
 
@@ -293,20 +325,21 @@ Get: Annotation(self: StoreContentChangedEventArgs) -> Annotation
 """
 
 
-
-class StoreContentChangedEventHandler(MulticastDelegate,ICloneable,ISerializable):
- """
+class StoreContentChangedEventHandler(MulticastDelegate, ICloneable, ISerializable):
+    """
  Represents the method that handles the System.Windows.Annotations.Storage.AnnotationStore.StoreContentChanged event raised by the System.Windows.Annotations.Storage.AnnotationStore class.
 
  
 
  StoreContentChangedEventHandler(object: object,method: IntPtr)
  """
- def BeginInvoke(self,sender,e,callback,object):
-  """ BeginInvoke(self: StoreContentChangedEventHandler,sender: object,e: StoreContentChangedEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+
+    def BeginInvoke(self, sender, e, callback, object):
+        """ BeginInvoke(self: StoreContentChangedEventHandler,sender: object,e: StoreContentChangedEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -319,9 +352,10 @@ class StoreContentChangedEventHandler(MulticastDelegate,ICloneable,ISerializable
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -340,12 +374,14 @@ class StoreContentChangedEventHandler(MulticastDelegate,ICloneable,ISerializable
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: StoreContentChangedEventHandler,result: IAsyncResult) """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: StoreContentChangedEventHandler,result: IAsyncResult) """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -354,12 +390,14 @@ class StoreContentChangedEventHandler(MulticastDelegate,ICloneable,ISerializable
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,sender,e):
-  """ Invoke(self: StoreContentChangedEventHandler,sender: object,e: StoreContentChangedEventArgs) """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, sender, e):
+        """ Invoke(self: StoreContentChangedEventHandler,sender: object,e: StoreContentChangedEventArgs) """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -378,19 +416,23 @@ class StoreContentChangedEventHandler(MulticastDelegate,ICloneable,ISerializable
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
 
-class XmlStreamStore(AnnotationStore,IDisposable):
- """
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+
+class XmlStreamStore(AnnotationStore, IDisposable):
+    """
  Represents an XML data store for writing and reading user annotations.
 
  
@@ -399,8 +441,9 @@ class XmlStreamStore(AnnotationStore,IDisposable):
 
  XmlStreamStore(stream: Stream,knownNamespaces: IDictionary[Uri,IList[Uri]])
  """
- def AddAnnotation(self,newAnnotation):
-  """
+
+    def AddAnnotation(self, newAnnotation):
+        """
   AddAnnotation(self: XmlStreamStore,newAnnotation: Annotation)
 
    Adds a new System.Windows.Annotations.Annotation to the store.
@@ -409,9 +452,10 @@ class XmlStreamStore(AnnotationStore,IDisposable):
 
    newAnnotation: The annotation to add to the store.
   """
-  pass
- def DeleteAnnotation(self,annotationId):
-  """
+        pass
+
+    def DeleteAnnotation(self, annotationId):
+        """
   DeleteAnnotation(self: XmlStreamStore,annotationId: Guid) -> Annotation
 
   
@@ -434,21 +478,24 @@ class XmlStreamStore(AnnotationStore,IDisposable):
 
     annotationId was not found in the store.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: XmlStreamStore,disposing: bool) """
-  pass
- def Flush(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: XmlStreamStore,disposing: bool) """
+        pass
+
+    def Flush(self):
+        """
   Flush(self: XmlStreamStore)
 
    Forces any annotation data retained in internal buffers to be written to the underlying storage 
 
     device.
   """
-  pass
- def GetAnnotation(self,annotationId):
-  """
+        pass
+
+    def GetAnnotation(self, annotationId):
+        """
   GetAnnotation(self: XmlStreamStore,annotationId: Guid) -> Annotation
 
   
@@ -471,9 +518,10 @@ class XmlStreamStore(AnnotationStore,IDisposable):
 
     annotationId was not found in the store.
   """
-  pass
- def GetAnnotations(self,anchorLocator=None):
-  """
+        pass
+
+    def GetAnnotations(self, anchorLocator=None):
+        """
   GetAnnotations(self: XmlStreamStore) -> IList[Annotation]
 
   
@@ -506,10 +554,11 @@ class XmlStreamStore(AnnotationStore,IDisposable):
 
     found.
   """
-  pass
- @staticmethod
- def GetWellKnownCompatibleNamespaces(name):
-  """
+        pass
+
+    @staticmethod
+    def GetWellKnownCompatibleNamespaces(name):
+        """
   GetWellKnownCompatibleNamespaces(name: Uri) -> IList[Uri]
 
   
@@ -524,9 +573,10 @@ class XmlStreamStore(AnnotationStore,IDisposable):
 
     namespaces found.
   """
-  pass
- def OnAnchorChanged(self,*args):
-  """
+        pass
+
+    def OnAnchorChanged(self, *args):
+        """
   OnAnchorChanged(self: AnnotationStore,args: AnnotationResourceChangedEventArgs)
 
    Raises the System.Windows.Annotations.Storage.AnnotationStore.AnchorChanged event.
@@ -535,9 +585,10 @@ class XmlStreamStore(AnnotationStore,IDisposable):
 
    args: The event data.
   """
-  pass
- def OnAuthorChanged(self,*args):
-  """
+        pass
+
+    def OnAuthorChanged(self, *args):
+        """
   OnAuthorChanged(self: AnnotationStore,args: AnnotationAuthorChangedEventArgs)
 
    Raises the System.Windows.Annotations.Storage.AnnotationStore.AuthorChanged event.
@@ -546,9 +597,10 @@ class XmlStreamStore(AnnotationStore,IDisposable):
 
    args: The event data.
   """
-  pass
- def OnCargoChanged(self,*args):
-  """
+        pass
+
+    def OnCargoChanged(self, *args):
+        """
   OnCargoChanged(self: AnnotationStore,args: AnnotationResourceChangedEventArgs)
 
    Raises the System.Windows.Annotations.Storage.AnnotationStore.CargoChanged event.
@@ -557,39 +609,45 @@ class XmlStreamStore(AnnotationStore,IDisposable):
 
    args: The event data.
   """
-  pass
- def OnStoreContentChanged(self,*args):
-  """ OnStoreContentChanged(self: XmlStreamStore,e: StoreContentChangedEventArgs) """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def OnStoreContentChanged(self, *args):
+        """ OnStoreContentChanged(self: XmlStreamStore,e: StoreContentChangedEventArgs) """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,stream,knownNamespaces=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, stream, knownNamespaces=None):
+        """
   __new__(cls: type,stream: Stream)
 
   __new__(cls: type,stream: Stream,knownNamespaces: IDictionary[Uri,IList[Uri]])
   """
-  pass
- AutoFlush=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether data in annotation buffers is to be written immediately to the physical data store.
+        pass
+
+    AutoFlush = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value that indicates whether data in annotation buffers is to be written immediately to the physical data store.
 
 
 
@@ -601,8 +659,10 @@ Set: AutoFlush(self: XmlStreamStore)=value
 
 """
 
- IgnoredNamespaces=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a list of the namespaces that were ignored when the XML stream was loaded.
+    IgnoredNamespaces = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a list of the namespaces that were ignored when the XML stream was loaded.
 
 
 
@@ -612,21 +672,20 @@ Get: IgnoredNamespaces(self: XmlStreamStore) -> IList[Uri]
 
 """
 
- IsDisposed=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether erload:System.Windows.Annotations.Storage.AnnotationStore.Dispose has been called.
+    IsDisposed = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether erload:System.Windows.Annotations.Storage.AnnotationStore.Dispose has been called.
 
 
 
 """
 
- SyncRoot=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the object to use as a synchronization lock for System.Windows.Annotations.Storage.AnnotationStore critical sections.
+    SyncRoot = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the object to use as a synchronization lock for System.Windows.Annotations.Storage.AnnotationStore critical sections.
 
 
 
 """
 
-
- WellKnownNamespaces=None
-
-
+    WellKnownNamespaces = None

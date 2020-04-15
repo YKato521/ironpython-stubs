@@ -1,5 +1,5 @@
-class ParenthesizePropertyNameAttribute(Attribute,_Attribute):
- """
+class ParenthesizePropertyNameAttribute(Attribute, _Attribute):
+    """
  Indicates whether the name of the associated property is displayed with parentheses in the Properties window. This class cannot be inherited.
 
  
@@ -8,8 +8,9 @@ class ParenthesizePropertyNameAttribute(Attribute,_Attribute):
 
  ParenthesizePropertyNameAttribute(needParenthesis: bool)
  """
- def Equals(self,o):
-  """
+
+    def Equals(self, o):
+        """
   Equals(self: ParenthesizePropertyNameAttribute,o: object) -> bool
 
   
@@ -22,9 +23,10 @@ class ParenthesizePropertyNameAttribute(Attribute,_Attribute):
 
    Returns: true if equal; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: ParenthesizePropertyNameAttribute) -> int
 
   
@@ -33,9 +35,10 @@ class ParenthesizePropertyNameAttribute(Attribute,_Attribute):
 
    Returns: The hash code for the object the attribute belongs to.
   """
-  pass
- def IsDefaultAttribute(self):
-  """
+        pass
+
+    def IsDefaultAttribute(self):
+        """
   IsDefaultAttribute(self: ParenthesizePropertyNameAttribute) -> bool
 
   
@@ -50,25 +53,32 @@ class ParenthesizePropertyNameAttribute(Attribute,_Attribute):
 
     false.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,needParenthesis=None):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, needParenthesis=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,needParenthesis: bool)
   """
-  pass
- def __ne__(self,*args):
-  pass
- NeedParenthesis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the Properties window displays the name of the property in parentheses in the Properties window.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    NeedParenthesis = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the Properties window displays the name of the property in parentheses in the Properties window.
 
 
 
@@ -78,6 +88,4 @@ Get: NeedParenthesis(self: ParenthesizePropertyNameAttribute) -> bool
 
 """
 
-
- Default=None
-
+    Default = None

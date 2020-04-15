@@ -8,10 +8,14 @@
 # no functions
 # classes
 
+
 class Document(object):
- """ A Revit Document """
- ActiveView=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the active view for the document
+    """ A Revit Document """
+
+    ActiveView = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get the active view for the document
 
 
 
@@ -21,8 +25,8 @@ Get: ActiveView(self: Document) -> View
 
 """
 
- FilePath=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The full path of the Document.
+    FilePath = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The full path of the Document.
 
 
 
@@ -32,8 +36,10 @@ Get: FilePath(self: Document) -> str
 
 """
 
- IsFamilyDocument=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is the Document a Family?
+    IsFamilyDocument = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Is the Document a Family?
 
 
 
@@ -43,8 +49,8 @@ Get: IsFamilyDocument(self: Document) -> bool
 
 """
 
- Location=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Extracts Latitude and Longitude from Revit
+    Location = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Extracts Latitude and Longitude from Revit
 
 
 
@@ -54,7 +60,4 @@ Get: Location(self: Document) -> Location
 
 """
 
-
- Current=None
-
-
+    Current = None

@@ -1,7 +1,8 @@
-class FailureMessageAccessor(object,IDisposable):
- """ Restricted accessor for FailureMessage. """
- def CloneFailureMessage(self):
-  """
+class FailureMessageAccessor(object, IDisposable):
+    """ Restricted accessor for FailureMessage. """
+
+    def CloneFailureMessage(self):
+        """
   CloneFailureMessage(self: FailureMessageAccessor) -> FailureMessage
 
   
@@ -10,12 +11,14 @@ class FailureMessageAccessor(object,IDisposable):
 
    Returns: Copy of the FailureMesassge.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: FailureMessageAccessor) """
-  pass
- def GetAdditionalElementIds(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: FailureMessageAccessor) """
+        pass
+
+    def GetAdditionalElementIds(self):
+        """
   GetAdditionalElementIds(self: FailureMessageAccessor) -> ICollection[ElementId]
 
   
@@ -30,9 +33,10 @@ class FailureMessageAccessor(object,IDisposable):
 
    Returns: Ids of Elements related to the failure
   """
-  pass
- def GetCurrentResolutionType(self):
-  """
+        pass
+
+    def GetCurrentResolutionType(self):
+        """
   GetCurrentResolutionType(self: FailureMessageAccessor) -> FailureResolutionType
 
   
@@ -41,9 +45,10 @@ class FailureMessageAccessor(object,IDisposable):
 
    Returns: The type of failure resolution to be used to resolve the failure.
   """
-  pass
- def GetDefaultResolutionCaption(self):
-  """
+        pass
+
+    def GetDefaultResolutionCaption(self):
+        """
   GetDefaultResolutionCaption(self: FailureMessageAccessor) -> str
 
   
@@ -52,9 +57,10 @@ class FailureMessageAccessor(object,IDisposable):
 
    Returns: The caption of default resolution of the failure.
   """
-  pass
- def GetDescriptionText(self):
-  """
+        pass
+
+    def GetDescriptionText(self):
+        """
   GetDescriptionText(self: FailureMessageAccessor) -> str
 
   
@@ -63,9 +69,10 @@ class FailureMessageAccessor(object,IDisposable):
 
    Returns: The description text.
   """
-  pass
- def GetFailingElementIds(self):
-  """
+        pass
+
+    def GetFailingElementIds(self):
+        """
   GetFailingElementIds(self: FailureMessageAccessor) -> ICollection[ElementId]
 
   
@@ -74,9 +81,10 @@ class FailureMessageAccessor(object,IDisposable):
 
    Returns: Ids of Elements that have caused the failure.
   """
-  pass
- def GetFailureDefinitionId(self):
-  """
+        pass
+
+    def GetFailureDefinitionId(self):
+        """
   GetFailureDefinitionId(self: FailureMessageAccessor) -> FailureDefinitionId
 
   
@@ -85,9 +93,10 @@ class FailureMessageAccessor(object,IDisposable):
 
    Returns: The Id of the FailureDefinition of the failure.
   """
-  pass
- def GetNumberOfResolutions(self):
-  """
+        pass
+
+    def GetNumberOfResolutions(self):
+        """
   GetNumberOfResolutions(self: FailureMessageAccessor) -> int
 
   
@@ -96,9 +105,10 @@ class FailureMessageAccessor(object,IDisposable):
 
    Returns: Number of resolutions that can be used to resolve failure
   """
-  pass
- def GetSeverity(self):
-  """
+        pass
+
+    def GetSeverity(self):
+        """
   GetSeverity(self: FailureMessageAccessor) -> FailureSeverity
 
   
@@ -107,9 +117,10 @@ class FailureMessageAccessor(object,IDisposable):
 
    Returns: The severity of the failure.
   """
-  pass
- def HasResolutionOfType(self,type):
-  """
+        pass
+
+    def HasResolutionOfType(self, type):
+        """
   HasResolutionOfType(self: FailureMessageAccessor,type: FailureResolutionType) -> bool
 
   
@@ -122,9 +133,10 @@ class FailureMessageAccessor(object,IDisposable):
 
    Returns: True if failure has a resolution of a given type,false otherwise.
   """
-  pass
- def HasResolutions(self):
-  """
+        pass
+
+    def HasResolutions(self):
+        """
   HasResolutions(self: FailureMessageAccessor) -> bool
 
   
@@ -133,12 +145,14 @@ class FailureMessageAccessor(object,IDisposable):
 
    Returns: True if the failure has any resolutions,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: FailureMessageAccessor,disposing: bool) """
-  pass
- def SetCurrentResolutionType(self,resolutionType):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: FailureMessageAccessor,disposing: bool) """
+        pass
+
+    def SetCurrentResolutionType(self, resolutionType):
+        """
   SetCurrentResolutionType(self: FailureMessageAccessor,resolutionType: FailureResolutionType)
 
    Sets the type of a resolution to be used to resolve the failure.
@@ -147,9 +161,10 @@ class FailureMessageAccessor(object,IDisposable):
 
    resolutionType: The type of failure resolution to be used to resolve the failure.
   """
-  pass
- def ShouldMergeWithMessage(self,messageToMergeWith):
-  """
+        pass
+
+    def ShouldMergeWithMessage(self, messageToMergeWith):
+        """
   ShouldMergeWithMessage(self: FailureMessageAccessor,messageToMergeWith: FailureMessageAccessor) -> bool
 
   
@@ -162,21 +177,28 @@ class FailureMessageAccessor(object,IDisposable):
 
    Returns: True if messages should be merged
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -185,5 +207,3 @@ Get: IsValidObject(self: FailureMessageAccessor) -> bool
 
 
 """
-
-

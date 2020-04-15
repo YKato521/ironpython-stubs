@@ -1,5 +1,12 @@
-class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportOleDropSource,IArrangedElement):
- """
+class ToolStripControlHost(
+    ToolStripItem,
+    IComponent,
+    IDisposable,
+    IDropTarget,
+    ISupportOleDropSource,
+    IArrangedElement,
+):
+    """
  Hosts custom controls or Windows Forms controls.
 
  
@@ -8,11 +15,13 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
  ToolStripControlHost(c: Control,name: str)
  """
- def CreateAccessibilityInstance(self,*args):
-  """ CreateAccessibilityInstance(self: ToolStripControlHost) -> AccessibleObject """
-  pass
- def Dispose(self):
-  """
+
+    def CreateAccessibilityInstance(self, *args):
+        """ CreateAccessibilityInstance(self: ToolStripControlHost) -> AccessibleObject """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: ToolStripControlHost,disposing: bool)
 
    Releases the unmanaged resources used by the System.Windows.Forms.ToolStripControlHost and 
@@ -25,16 +34,18 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def Focus(self):
-  """
+        pass
+
+    def Focus(self):
+        """
   Focus(self: ToolStripControlHost)
 
    Gives the focus to a control.
   """
-  pass
- def GetPreferredSize(self,constrainingSize):
-  """
+        pass
+
+    def GetPreferredSize(self, constrainingSize):
+        """
   GetPreferredSize(self: ToolStripControlHost,constrainingSize: Size) -> Size
 
   
@@ -47,9 +58,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    Returns: An ordered pair of type System.Drawing.Size representing the width and height of a rectangle.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -68,9 +80,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def IsInputChar(self,*args):
-  """
+        pass
+
+    def IsInputChar(self, *args):
+        """
   IsInputChar(self: ToolStripItem,charCode: Char) -> bool
 
   
@@ -83,9 +96,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    Returns: true if the character should be sent directly to the item and not preprocessed; otherwise,false.
   """
-  pass
- def IsInputKey(self,*args):
-  """
+        pass
+
+    def IsInputKey(self, *args):
+        """
   IsInputKey(self: ToolStripItem,keyData: Keys) -> bool
 
   
@@ -102,9 +116,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    Returns: true if the specified key is a regular input key; otherwise,false.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -135,9 +150,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def OnAvailableChanged(self,*args):
-  """
+        pass
+
+    def OnAvailableChanged(self, *args):
+        """
   OnAvailableChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the AvailableChanged event.
@@ -146,9 +162,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBackColorChanged(self,*args):
-  """
+        pass
+
+    def OnBackColorChanged(self, *args):
+        """
   OnBackColorChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.BackColorChanged event.
@@ -157,16 +174,18 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBoundsChanged(self,*args):
-  """
+        pass
+
+    def OnBoundsChanged(self, *args):
+        """
   OnBoundsChanged(self: ToolStripControlHost)
 
    Occurs when the System.Windows.Forms.ToolStripItem.Bounds property changes.
   """
-  pass
- def OnClick(self,*args):
-  """
+        pass
+
+    def OnClick(self, *args):
+        """
   OnClick(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.Click event.
@@ -175,9 +194,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDisplayStyleChanged(self,*args):
-  """
+        pass
+
+    def OnDisplayStyleChanged(self, *args):
+        """
   OnDisplayStyleChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DisplayStyleChanged event.
@@ -186,9 +206,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDoubleClick(self,*args):
-  """
+        pass
+
+    def OnDoubleClick(self, *args):
+        """
   OnDoubleClick(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DoubleClick event.
@@ -197,9 +218,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDragDrop(self,*args):
-  """
+        pass
+
+    def OnDragDrop(self, *args):
+        """
   OnDragDrop(self: ToolStripItem,dragEvent: DragEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DragDrop event.
@@ -208,9 +230,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    dragEvent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnDragEnter(self,*args):
-  """
+        pass
+
+    def OnDragEnter(self, *args):
+        """
   OnDragEnter(self: ToolStripItem,dragEvent: DragEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DragEnter event.
@@ -219,9 +242,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    dragEvent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnDragLeave(self,*args):
-  """
+        pass
+
+    def OnDragLeave(self, *args):
+        """
   OnDragLeave(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DragLeave event.
@@ -230,9 +254,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDragOver(self,*args):
-  """
+        pass
+
+    def OnDragOver(self, *args):
+        """
   OnDragOver(self: ToolStripItem,dragEvent: DragEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DragOver event.
@@ -241,9 +266,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    dragEvent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnEnabledChanged(self,*args):
-  """
+        pass
+
+    def OnEnabledChanged(self, *args):
+        """
   OnEnabledChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.EnabledChanged event.
@@ -252,9 +278,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnEnter(self,*args):
-  """
+        pass
+
+    def OnEnter(self, *args):
+        """
   OnEnter(self: ToolStripControlHost,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.Enter event.
@@ -263,9 +290,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnFontChanged(self,*args):
-  """
+        pass
+
+    def OnFontChanged(self, *args):
+        """
   OnFontChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.FontChanged event.
@@ -274,9 +302,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnForeColorChanged(self,*args):
-  """
+        pass
+
+    def OnForeColorChanged(self, *args):
+        """
   OnForeColorChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.ForeColorChanged event.
@@ -285,9 +314,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnGiveFeedback(self,*args):
-  """
+        pass
+
+    def OnGiveFeedback(self, *args):
+        """
   OnGiveFeedback(self: ToolStripItem,giveFeedbackEvent: GiveFeedbackEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.GiveFeedback event.
@@ -296,9 +326,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    giveFeedbackEvent: A System.Windows.Forms.GiveFeedbackEventArgs that contains the event data.
   """
-  pass
- def OnGotFocus(self,*args):
-  """
+        pass
+
+    def OnGotFocus(self, *args):
+        """
   OnGotFocus(self: ToolStripControlHost,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.GotFocus event.
@@ -307,9 +338,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnHostedControlResize(self,*args):
-  """
+        pass
+
+    def OnHostedControlResize(self, *args):
+        """
   OnHostedControlResize(self: ToolStripControlHost,e: EventArgs)
 
    Synchronizes the resizing of the control host with the resizing of the hosted control.
@@ -318,9 +350,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnKeyDown(self,*args):
-  """
+        pass
+
+    def OnKeyDown(self, *args):
+        """
   OnKeyDown(self: ToolStripControlHost,e: KeyEventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.KeyDown event.
@@ -329,9 +362,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: A System.Windows.Forms.KeyEventArgs that contains the event data.
   """
-  pass
- def OnKeyPress(self,*args):
-  """
+        pass
+
+    def OnKeyPress(self, *args):
+        """
   OnKeyPress(self: ToolStripControlHost,e: KeyPressEventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.KeyPress event.
@@ -340,9 +374,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: A System.Windows.Forms.KeyPressEventArgs that contains the event data.
   """
-  pass
- def OnKeyUp(self,*args):
-  """
+        pass
+
+    def OnKeyUp(self, *args):
+        """
   OnKeyUp(self: ToolStripControlHost,e: KeyEventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.KeyUp event.
@@ -351,16 +386,18 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: A System.Windows.Forms.KeyEventArgs that contains the event data.
   """
-  pass
- def OnLayout(self,*args):
-  """
+        pass
+
+    def OnLayout(self, *args):
+        """
   OnLayout(self: ToolStripControlHost,e: LayoutEventArgs)
 
    e: A System.Windows.Forms.LayoutEventArgs that contains the event data.
   """
-  pass
- def OnLeave(self,*args):
-  """
+        pass
+
+    def OnLeave(self, *args):
+        """
   OnLeave(self: ToolStripControlHost,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.Leave event.
@@ -369,9 +406,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: A System.EventArgs that contains the event data.
   """
-  pass
- def OnLocationChanged(self,*args):
-  """
+        pass
+
+    def OnLocationChanged(self, *args):
+        """
   OnLocationChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.LocationChanged event.
@@ -380,9 +418,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnLostFocus(self,*args):
-  """
+        pass
+
+    def OnLostFocus(self, *args):
+        """
   OnLostFocus(self: ToolStripControlHost,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.LostFocus event.
@@ -391,9 +430,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: A System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseDown(self,*args):
-  """
+        pass
+
+    def OnMouseDown(self, *args):
+        """
   OnMouseDown(self: ToolStripItem,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseDown event.
@@ -402,9 +442,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseEnter(self,*args):
-  """
+        pass
+
+    def OnMouseEnter(self, *args):
+        """
   OnMouseEnter(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseEnter event.
@@ -413,9 +454,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseHover(self,*args):
-  """
+        pass
+
+    def OnMouseHover(self, *args):
+        """
   OnMouseHover(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseHover event.
@@ -424,9 +466,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseLeave(self,*args):
-  """
+        pass
+
+    def OnMouseLeave(self, *args):
+        """
   OnMouseLeave(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseLeave event.
@@ -435,9 +478,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseMove(self,*args):
-  """
+        pass
+
+    def OnMouseMove(self, *args):
+        """
   OnMouseMove(self: ToolStripItem,mea: MouseEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseMove event.
@@ -446,9 +490,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    mea: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseUp(self,*args):
-  """
+        pass
+
+    def OnMouseUp(self, *args):
+        """
   OnMouseUp(self: ToolStripItem,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseUp event.
@@ -457,9 +502,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnOwnerChanged(self,*args):
-  """
+        pass
+
+    def OnOwnerChanged(self, *args):
+        """
   OnOwnerChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.OwnerChanged event.
@@ -468,9 +514,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnOwnerFontChanged(self,*args):
-  """
+        pass
+
+    def OnOwnerFontChanged(self, *args):
+        """
   OnOwnerFontChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.FontChanged event when the 
@@ -485,16 +532,18 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: A System.EventArgs that contains the event data.
   """
-  pass
- def OnPaint(self,*args):
-  """
+        pass
+
+    def OnPaint(self, *args):
+        """
   OnPaint(self: ToolStripControlHost,e: PaintEventArgs)
 
    e: A System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def OnParentBackColorChanged(self,*args):
-  """
+        pass
+
+    def OnParentBackColorChanged(self, *args):
+        """
   OnParentBackColorChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.BackColorChanged event.
@@ -503,18 +552,20 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentChanged(self,*args):
-  """
+        pass
+
+    def OnParentChanged(self, *args):
+        """
   OnParentChanged(self: ToolStripControlHost,oldParent: ToolStrip,newParent: ToolStrip)
 
    oldParent: The original parent of the item.
 
    newParent: The new parent of the item.
   """
-  pass
- def OnParentEnabledChanged(self,*args):
-  """
+        pass
+
+    def OnParentEnabledChanged(self, *args):
+        """
   OnParentEnabledChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.EnabledChanged event when the 
@@ -527,9 +578,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentForeColorChanged(self,*args):
-  """
+        pass
+
+    def OnParentForeColorChanged(self, *args):
+        """
   OnParentForeColorChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.ForeColorChanged event.
@@ -538,9 +590,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentRightToLeftChanged(self,*args):
-  """
+        pass
+
+    def OnParentRightToLeftChanged(self, *args):
+        """
   OnParentRightToLeftChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.RightToLeftChanged event.
@@ -549,9 +602,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnQueryContinueDrag(self,*args):
-  """
+        pass
+
+    def OnQueryContinueDrag(self, *args):
+        """
   OnQueryContinueDrag(self: ToolStripItem,queryContinueDragEvent: QueryContinueDragEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.QueryContinueDrag event.
@@ -560,9 +614,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    queryContinueDragEvent: A System.Windows.Forms.QueryContinueDragEventArgs that contains the event data.
   """
-  pass
- def OnRightToLeftChanged(self,*args):
-  """
+        pass
+
+    def OnRightToLeftChanged(self, *args):
+        """
   OnRightToLeftChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.RightToLeftChanged event.
@@ -571,9 +626,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnSubscribeControlEvents(self,*args):
-  """
+        pass
+
+    def OnSubscribeControlEvents(self, *args):
+        """
   OnSubscribeControlEvents(self: ToolStripControlHost,control: Control)
 
    Subscribes events from the hosted control.
@@ -582,9 +638,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    control: The control from which to subscribe events.
   """
-  pass
- def OnTextChanged(self,*args):
-  """
+        pass
+
+    def OnTextChanged(self, *args):
+        """
   OnTextChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.TextChanged event.
@@ -593,9 +650,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnUnsubscribeControlEvents(self,*args):
-  """
+        pass
+
+    def OnUnsubscribeControlEvents(self, *args):
+        """
   OnUnsubscribeControlEvents(self: ToolStripControlHost,control: Control)
 
    Unsubscribes events from the hosted control.
@@ -604,9 +662,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    control: The control from which to unsubscribe events.
   """
-  pass
- def OnValidated(self,*args):
-  """
+        pass
+
+    def OnValidated(self, *args):
+        """
   OnValidated(self: ToolStripControlHost,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.Validated event.
@@ -615,9 +674,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: A System.EventArgs that contains the event data.
   """
-  pass
- def OnValidating(self,*args):
-  """
+        pass
+
+    def OnValidating(self, *args):
+        """
   OnValidating(self: ToolStripControlHost,e: CancelEventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.Validating event.
@@ -626,9 +686,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: A System.ComponentModel.CancelEventArgs that contains the event data.
   """
-  pass
- def OnVisibleChanged(self,*args):
-  """
+        pass
+
+    def OnVisibleChanged(self, *args):
+        """
   OnVisibleChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.VisibleChanged event.
@@ -637,9 +698,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def ProcessCmdKey(self,*args):
-  """
+        pass
+
+    def ProcessCmdKey(self, *args):
+        """
   ProcessCmdKey(self: ToolStripControlHost,m: Message,keyData: Keys) -> (bool,Message)
 
   
@@ -658,9 +720,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    Returns: false in all cases.
   """
-  pass
- def ProcessDialogKey(self,*args):
-  """
+        pass
+
+    def ProcessDialogKey(self, *args):
+        """
   ProcessDialogKey(self: ToolStripControlHost,keyData: Keys) -> bool
 
   
@@ -673,9 +736,10 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    Returns: true if the key was processed by the item; otherwise,false.
   """
-  pass
- def ProcessMnemonic(self,*args):
-  """
+        pass
+
+    def ProcessMnemonic(self, *args):
+        """
   ProcessMnemonic(self: ToolStripControlHost,charCode: Char) -> bool
 
   
@@ -688,23 +752,26 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
    Returns: true if the character was processed as a mnemonic by the control; otherwise,false.
   """
-  pass
- def ResetBackColor(self):
-  """
+        pass
+
+    def ResetBackColor(self):
+        """
   ResetBackColor(self: ToolStripControlHost)
 
    This method is not relevant to this class.
   """
-  pass
- def ResetForeColor(self):
-  """
+        pass
+
+    def ResetForeColor(self):
+        """
   ResetForeColor(self: ToolStripControlHost)
 
    This method is not relevant to this class.
   """
-  pass
- def SetBounds(self,*args):
-  """
+        pass
+
+    def SetBounds(self, *args):
+        """
   SetBounds(self: ToolStripItem,bounds: Rectangle)
 
    Sets the size and location of the item.
@@ -715,45 +782,52 @@ class ToolStripControlHost(ToolStripItem,IComponent,IDisposable,IDropTarget,ISup
 
     System.Windows.Forms.ToolStripItem
   """
-  pass
- def SetVisibleCore(self,*args):
-  """
+        pass
+
+    def SetVisibleCore(self, *args):
+        """
   SetVisibleCore(self: ToolStripControlHost,visible: bool)
 
    visible: true to make the System.Windows.Forms.ToolStripItem visible; otherwise,false.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,c,name=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, c, name=None):
+        """
   __new__(cls: type,c: Control)
 
   __new__(cls: type,c: Control,name: str)
   """
-  pass
- def __str__(self,*args):
-  pass
- BackColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: BackColor(self: ToolStripControlHost) -> Color
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    BackColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: BackColor(self: ToolStripControlHost) -> Color
 
 
 
@@ -761,8 +835,10 @@ Set: BackColor(self: ToolStripControlHost)=value
 
 """
 
- BackgroundImage=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the background image displayed in the control.
+    BackgroundImage = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the background image displayed in the control.
 
 
 
@@ -774,8 +850,10 @@ Set: BackgroundImage(self: ToolStripControlHost)=value
 
 """
 
- BackgroundImageLayout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the background image layout as defined in the ImageLayout enumeration.
+    BackgroundImageLayout = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the background image layout as defined in the ImageLayout enumeration.
 
 
 
@@ -787,15 +865,17 @@ Set: BackgroundImageLayout(self: ToolStripControlHost)=value
 
 """
 
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- CanSelect=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the control can be selected.
+    CanSelect = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the control can be selected.
 
 
 
@@ -805,8 +885,10 @@ Get: CanSelect(self: ToolStripControlHost) -> bool
 
 """
 
- CausesValidation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the hosted control causes and raises validation events on other controls when the hosted control receives focus.
+    CausesValidation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the hosted control causes and raises validation events on other controls when the hosted control receives focus.
 
 
 
@@ -818,8 +900,8 @@ Set: CausesValidation(self: ToolStripControlHost)=value
 
 """
 
- Control=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Forms.Control that this System.Windows.Forms.ToolStripControlHost is hosting.
+    Control = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the System.Windows.Forms.Control that this System.Windows.Forms.ToolStripControlHost is hosting.
 
 
 
@@ -829,8 +911,10 @@ Get: Control(self: ToolStripControlHost) -> Control
 
 """
 
- ControlAlign=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the alignment of the control on the form.
+    ControlAlign = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the alignment of the control on the form.
 
 
 
@@ -842,57 +926,73 @@ Set: ControlAlign(self: ToolStripControlHost)=value
 
 """
 
- DefaultAutoToolTip=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether to display the System.Windows.Forms.ToolTip that is defined as the default.
+    DefaultAutoToolTip = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether to display the System.Windows.Forms.ToolTip that is defined as the default.
 
 
 
 """
 
- DefaultDisplayStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating what is displayed on the System.Windows.Forms.ToolStripItem.
+    DefaultDisplayStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating what is displayed on the System.Windows.Forms.ToolStripItem.
 
 
 
 """
 
- DefaultMargin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the default margin of an item.
+    DefaultMargin = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the default margin of an item.
 
 
 
 """
 
- DefaultPadding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the internal spacing characteristics of the item.
+    DefaultPadding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the internal spacing characteristics of the item.
 
 
 
 """
 
- DefaultSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the default size of the control.
+    DefaultSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the default size of the control.
 
 
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- DismissWhenClicked=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether items on a System.Windows.Forms.ToolStripDropDown are hidden after they are clicked.
+    DismissWhenClicked = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether items on a System.Windows.Forms.ToolStripDropDown are hidden after they are clicked.
 
 
 
 """
 
- DisplayStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+    DisplayStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property is not relevant to this class.
 
 
 
@@ -904,8 +1004,10 @@ Set: DisplayStyle(self: ToolStripControlHost)=value
 
 """
 
- DoubleClickEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+    DoubleClickEnabled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property is not relevant to this class.
 
 
 
@@ -917,8 +1019,8 @@ Set: DoubleClickEnabled(self: ToolStripControlHost)=value
 
 """
 
- Enabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the parent control of the System.Windows.Forms.ToolStripItem is enabled.
+    Enabled = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the parent control of the System.Windows.Forms.ToolStripItem is enabled.
 
 
 
@@ -930,15 +1032,15 @@ Set: Enabled(self: ToolStripControlHost)=value
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- Focused=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the control has input focus.
+    Focused = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the control has input focus.
 
 
 
@@ -948,8 +1050,8 @@ Get: Focused(self: ToolStripControlHost) -> bool
 
 """
 
- Font=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the font to be used on the hosted control.
+    Font = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the font to be used on the hosted control.
 
 
 
@@ -961,8 +1063,8 @@ Set: Font(self: ToolStripControlHost)=value
 
 """
 
- ForeColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the foreground color of the hosted control.
+    ForeColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the foreground color of the hosted control.
 
 
 
@@ -974,8 +1076,8 @@ Set: ForeColor(self: ToolStripControlHost)=value
 
 """
 
- Image=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+    Image = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """This property is not relevant to this class.
 
 
 
@@ -987,8 +1089,10 @@ Set: Image(self: ToolStripControlHost)=value
 
 """
 
- ImageAlign=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+    ImageAlign = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property is not relevant to this class.
 
 
 
@@ -1000,8 +1104,10 @@ Set: ImageAlign(self: ToolStripControlHost)=value
 
 """
 
- ImageScaling=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+    ImageScaling = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property is not relevant to this class.
 
 
 
@@ -1013,8 +1119,10 @@ Set: ImageScaling(self: ToolStripControlHost)=value
 
 """
 
- ImageTransparentColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+    ImageTransparentColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property is not relevant to this class.
 
 
 
@@ -1026,15 +1134,17 @@ Set: ImageTransparentColor(self: ToolStripControlHost)=value
 
 """
 
- Parent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the parent container of the System.Windows.Forms.ToolStripItem.
+    Parent = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the parent container of the System.Windows.Forms.ToolStripItem.
 
 
 
 """
 
- RightToLeft=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: RightToLeft(self: ToolStripControlHost) -> RightToLeft
+    RightToLeft = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: RightToLeft(self: ToolStripControlHost) -> RightToLeft
 
 
 
@@ -1042,8 +1152,10 @@ Set: RightToLeft(self: ToolStripControlHost)=value
 
 """
 
- RightToLeftAutoMirrorImage=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+    RightToLeftAutoMirrorImage = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property is not relevant to this class.
 
 
 
@@ -1055,8 +1167,8 @@ Set: RightToLeftAutoMirrorImage(self: ToolStripControlHost)=value
 
 """
 
- Selected=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the item is selected.
+    Selected = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the item is selected.
 
 
 
@@ -1066,15 +1178,17 @@ Get: Selected(self: ToolStripControlHost) -> bool
 
 """
 
- ShowKeyboardCues=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether to show or hide shortcut keys.
+    ShowKeyboardCues = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether to show or hide shortcut keys.
 
 
 
 """
 
- Site=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the site of the hosted control.
+    Site = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the site of the hosted control.
 
 
 
@@ -1086,8 +1200,8 @@ Set: Site(self: ToolStripControlHost)=value
 
 """
 
- Size=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the size of the System.Windows.Forms.ToolStripItem.
+    Size = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the size of the System.Windows.Forms.ToolStripItem.
 
 
 
@@ -1099,8 +1213,8 @@ Set: Size(self: ToolStripControlHost)=value
 
 """
 
- Text=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the text to be displayed on the hosted control.
+    Text = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the text to be displayed on the hosted control.
 
 
 
@@ -1112,8 +1226,8 @@ Set: Text(self: ToolStripControlHost)=value
 
 """
 
- TextAlign=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+    TextAlign = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """This property is not relevant to this class.
 
 
 
@@ -1125,8 +1239,10 @@ Set: TextAlign(self: ToolStripControlHost)=value
 
 """
 
- TextDirection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+    TextDirection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property is not relevant to this class.
 
 
 
@@ -1138,8 +1254,10 @@ Set: TextDirection(self: ToolStripControlHost)=value
 
 """
 
- TextImageRelation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+    TextImageRelation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property is not relevant to this class.
 
 
 
@@ -1151,15 +1269,13 @@ Set: TextImageRelation(self: ToolStripControlHost)=value
 
 """
 
-
- DisplayStyleChanged=None
- Enter=None
- GotFocus=None
- KeyDown=None
- KeyPress=None
- KeyUp=None
- Leave=None
- LostFocus=None
- Validated=None
- Validating=None
-
+    DisplayStyleChanged = None
+    Enter = None
+    GotFocus = None
+    KeyDown = None
+    KeyPress = None
+    KeyUp = None
+    Leave = None
+    LostFocus = None
+    Validated = None
+    Validating = None

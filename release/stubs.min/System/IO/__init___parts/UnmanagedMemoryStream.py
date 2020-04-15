@@ -1,5 +1,5 @@
-class UnmanagedMemoryStream(Stream,IDisposable):
- """
+class UnmanagedMemoryStream(Stream, IDisposable):
+    """
  Provides access to unmanaged blocks of memory from managed code.
 
  
@@ -12,8 +12,9 @@ class UnmanagedMemoryStream(Stream,IDisposable):
 
  UnmanagedMemoryStream(pointer: Byte*,length: Int64,capacity: Int64,access: FileAccess)
  """
- def CreateWaitHandle(self,*args):
-  """
+
+    def CreateWaitHandle(self, *args):
+        """
   CreateWaitHandle(self: Stream) -> WaitHandle
 
   
@@ -22,9 +23,10 @@ class UnmanagedMemoryStream(Stream,IDisposable):
 
    Returns: A reference to the allocated WaitHandle.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: UnmanagedMemoryStream,disposing: bool)
 
    Releases the unmanaged resources used by the System.IO.UnmanagedMemoryStream and optionally 
@@ -37,19 +39,22 @@ class UnmanagedMemoryStream(Stream,IDisposable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def Flush(self):
-  """
+        pass
+
+    def Flush(self):
+        """
   Flush(self: UnmanagedMemoryStream)
 
    Overrides the System.IO.Stream.Flush method so that no action is performed.
   """
-  pass
- def FlushAsync(self,cancellationToken=None):
-  """ FlushAsync(self: UnmanagedMemoryStream,cancellationToken: CancellationToken) -> Task """
-  pass
- def Initialize(self,*args):
-  """
+        pass
+
+    def FlushAsync(self, cancellationToken=None):
+        """ FlushAsync(self: UnmanagedMemoryStream,cancellationToken: CancellationToken) -> Task """
+        pass
+
+    def Initialize(self, *args):
+        """
   Initialize(self: UnmanagedMemoryStream,buffer: SafeBuffer,offset: Int64,length: Int64,access: FileAccess)
 
    Initializes a new instance of the System.IO.UnmanagedMemoryStream class in a safe buffer with a 
@@ -86,9 +91,10 @@ class UnmanagedMemoryStream(Stream,IDisposable):
 
    access: One of the System.IO.FileAccess values.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -119,16 +125,18 @@ class UnmanagedMemoryStream(Stream,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def ObjectInvariant(self,*args):
-  """
+        pass
+
+    def ObjectInvariant(self, *args):
+        """
   ObjectInvariant(self: Stream)
 
    Provides support for a System.Diagnostics.Contracts.Contract.
   """
-  pass
- def Read(self,buffer,offset,count):
-  """
+        pass
+
+    def Read(self, buffer, offset, count):
+        """
   Read(self: UnmanagedMemoryStream,offset: int,count: int) -> (int,Array[Byte])
 
   
@@ -151,12 +159,14 @@ class UnmanagedMemoryStream(Stream,IDisposable):
 
     has been reached.
   """
-  pass
- def ReadAsync(self,buffer,offset,count,cancellationToken=None):
-  """ ReadAsync(self: UnmanagedMemoryStream,buffer: Array[Byte],offset: int,count: int,cancellationToken: CancellationToken) -> Task[int] """
-  pass
- def ReadByte(self):
-  """
+        pass
+
+    def ReadAsync(self, buffer, offset, count, cancellationToken=None):
+        """ ReadAsync(self: UnmanagedMemoryStream,buffer: Array[Byte],offset: int,count: int,cancellationToken: CancellationToken) -> Task[int] """
+        pass
+
+    def ReadByte(self):
+        """
   ReadByte(self: UnmanagedMemoryStream) -> int
 
   
@@ -169,9 +179,10 @@ class UnmanagedMemoryStream(Stream,IDisposable):
 
    Returns: The unsigned byte cast to an System.Int32 object,or -1 if at the end of the stream.
   """
-  pass
- def Seek(self,offset,loc):
-  """
+        pass
+
+    def Seek(self, offset, loc):
+        """
   Seek(self: UnmanagedMemoryStream,offset: Int64,loc: SeekOrigin) -> Int64
 
   
@@ -190,9 +201,10 @@ class UnmanagedMemoryStream(Stream,IDisposable):
 
    Returns: The new position in the stream.
   """
-  pass
- def SetLength(self,value):
-  """
+        pass
+
+    def SetLength(self, value):
+        """
   SetLength(self: UnmanagedMemoryStream,value: Int64)
 
    Sets the length of a stream to a specified value.
@@ -201,9 +213,10 @@ class UnmanagedMemoryStream(Stream,IDisposable):
 
    value: The length of the stream.
   """
-  pass
- def Write(self,buffer,offset,count):
-  """
+        pass
+
+    def Write(self, buffer, offset, count):
+        """
   Write(self: UnmanagedMemoryStream,buffer: Array[Byte],offset: int,count: int)
 
    Writes a block of bytes to the current stream using data from a buffer.
@@ -216,12 +229,14 @@ class UnmanagedMemoryStream(Stream,IDisposable):
 
    count: The number of bytes to write to the current stream.
   """
-  pass
- def WriteAsync(self,buffer,offset,count,cancellationToken=None):
-  """ WriteAsync(self: UnmanagedMemoryStream,buffer: Array[Byte],offset: int,count: int,cancellationToken: CancellationToken) -> Task """
-  pass
- def WriteByte(self,value):
-  """
+        pass
+
+    def WriteAsync(self, buffer, offset, count, cancellationToken=None):
+        """ WriteAsync(self: UnmanagedMemoryStream,buffer: Array[Byte],offset: int,count: int,cancellationToken: CancellationToken) -> Task """
+        pass
+
+    def WriteByte(self, value):
+        """
   WriteByte(self: UnmanagedMemoryStream,value: Byte)
 
    Writes a byte to the current position in the file stream.
@@ -230,29 +245,33 @@ class UnmanagedMemoryStream(Stream,IDisposable):
 
    value: A byte value written to the stream.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,buffer: SafeBuffer,offset: Int64,length: Int64)
@@ -263,9 +282,10 @@ class UnmanagedMemoryStream(Stream,IDisposable):
 
   __new__(cls: type,pointer: Byte*,length: Int64,capacity: Int64,access: FileAccess)
   """
-  pass
- CanRead=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether a stream supports reading.
+        pass
+
+    CanRead = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether a stream supports reading.
 
 
 
@@ -275,8 +295,8 @@ Get: CanRead(self: UnmanagedMemoryStream) -> bool
 
 """
 
- CanSeek=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether a stream supports seeking.
+    CanSeek = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether a stream supports seeking.
 
 
 
@@ -286,8 +306,8 @@ Get: CanSeek(self: UnmanagedMemoryStream) -> bool
 
 """
 
- CanWrite=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether a stream supports writing.
+    CanWrite = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether a stream supports writing.
 
 
 
@@ -297,8 +317,8 @@ Get: CanWrite(self: UnmanagedMemoryStream) -> bool
 
 """
 
- Capacity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the stream length (size) or the total amount of memory assigned to a stream (capacity).
+    Capacity = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the stream length (size) or the total amount of memory assigned to a stream (capacity).
 
 
 
@@ -308,8 +328,8 @@ Get: Capacity(self: UnmanagedMemoryStream) -> Int64
 
 """
 
- Length=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the length of the data in a stream.
+    Length = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the length of the data in a stream.
 
 
 
@@ -319,8 +339,8 @@ Get: Length(self: UnmanagedMemoryStream) -> Int64
 
 """
 
- Position=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the current position in a stream.
+    Position = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the current position in a stream.
 
 
 
@@ -332,8 +352,10 @@ Set: Position(self: UnmanagedMemoryStream)=value
 
 """
 
- PositionPointer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a byte pointer to a stream based on the current position in the stream.
+    PositionPointer = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a byte pointer to a stream based on the current position in the stream.
 
 
 
@@ -344,5 +366,3 @@ Get: PositionPointer(self: UnmanagedMemoryStream) -> Byte*
 Set: PositionPointer(self: UnmanagedMemoryStream)=value
 
 """
-
-

@@ -8,28 +8,38 @@
 # no functions
 # classes
 
-class StructuralSection(object,IDisposable):
- """ The base class for StructuralSection specific classes,designed to provide common parameters and ability to differentiate between different structural section shapes. """
- def Dispose(self):
-  """ Dispose(self: StructuralSection) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+
+class StructuralSection(object, IDisposable):
+    """ The base class for StructuralSection specific classes,designed to provide common parameters and ability to differentiate between different structural section shapes. """
+
+    def Dispose(self):
+        """ Dispose(self: StructuralSection) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -39,8 +49,10 @@ Get: IsValidObject(self: StructuralSection) -> bool
 
 """
 
- SectionNameKey=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """A parameter in structural families which allows for family type identification.
+    SectionNameKey = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """A parameter in structural families which allows for family type identification.
 
    This will be used for data mapping during model exchange with another program,namely Advance Steel.
 
@@ -54,8 +66,10 @@ Set: SectionNameKey(self: StructuralSection)=value
 
 """
 
- StructuralSectionShape=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The type of structural section shape.
+    StructuralSectionShape = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The type of structural section shape.
 
 
 
@@ -65,8 +79,10 @@ Get: StructuralSectionShape(self: StructuralSection) -> StructuralSectionShape
 
 """
 
- StructuralSectionShapeName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """A human readable string representing the structural section shape.
+    StructuralSectionShapeName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """A human readable string representing the structural section shape.
 
 
 
@@ -77,26 +93,33 @@ Get: StructuralSectionShapeName(self: StructuralSection) -> str
 """
 
 
+class StructuralSectionRectangular(StructuralSection, IDisposable):
+    """ Defines common set of parameters for structural section rectangular contour. """
 
-class StructuralSectionRectangular(StructuralSection,IDisposable):
- """ Defines common set of parameters for structural section rectangular contour. """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- CentroidHorizontal=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Distance from centroid to the left extremites along horizontal axis.
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    CentroidHorizontal = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Distance from centroid to the left extremites along horizontal axis.
 
 
 
@@ -108,8 +131,10 @@ Set: CentroidHorizontal(self: StructuralSectionRectangular)=value
 
 """
 
- CentroidVertical=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Distance from centroid to the upper extremites along vertical axis.
+    CentroidVertical = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Distance from centroid to the upper extremites along vertical axis.
 
 
 
@@ -121,8 +146,10 @@ Set: CentroidVertical(self: StructuralSectionRectangular)=value
 
 """
 
- ElasticModulusStrongAxis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Elastic section modulus about main strong axis for calculation of bending stresses.
+    ElasticModulusStrongAxis = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Elastic section modulus about main strong axis for calculation of bending stresses.
 
 
 
@@ -134,8 +161,10 @@ Set: ElasticModulusStrongAxis(self: StructuralSectionRectangular)=value
 
 """
 
- ElasticModulusWeakAxis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Elastic section modulus about main weak axis for calculation of bending stresses.
+    ElasticModulusWeakAxis = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Elastic section modulus about main weak axis for calculation of bending stresses.
 
 
 
@@ -147,8 +176,8 @@ Set: ElasticModulusWeakAxis(self: StructuralSectionRectangular)=value
 
 """
 
- Height=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Section height,depth.
+    Height = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Section height,depth.
 
 
 
@@ -160,8 +189,10 @@ Set: Height(self: StructuralSectionRectangular)=value
 
 """
 
- MomentOfInertiaStrongAxis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Moment of Inertia about main strong axis (I).
+    MomentOfInertiaStrongAxis = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Moment of Inertia about main strong axis (I).
 
 
 
@@ -173,8 +204,10 @@ Set: MomentOfInertiaStrongAxis(self: StructuralSectionRectangular)=value
 
 """
 
- MomentOfInertiaWeakAxis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Moment of Inertia about main weak axis (I).
+    MomentOfInertiaWeakAxis = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Moment of Inertia about main weak axis (I).
 
 
 
@@ -186,8 +219,8 @@ Set: MomentOfInertiaWeakAxis(self: StructuralSectionRectangular)=value
 
 """
 
- NameKey=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Name Key
+    NameKey = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Name Key
 
 
 
@@ -199,8 +232,10 @@ Set: NameKey(self: StructuralSectionRectangular)=value
 
 """
 
- NominalWeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Unit weight (not mass) per unit length,for self-weight calculation or quantity survey.
+    NominalWeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Unit weight (not mass) per unit length,for self-weight calculation or quantity survey.
 
 
 
@@ -212,8 +247,8 @@ Set: NominalWeight(self: StructuralSectionRectangular)=value
 
 """
 
- Perimeter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Painting surface of the unit length.
+    Perimeter = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Painting surface of the unit length.
 
 
 
@@ -225,8 +260,10 @@ Set: Perimeter(self: StructuralSectionRectangular)=value
 
 """
 
- PlasticModulusStrongAxis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Plastic section modulus in bending about main strong axis (Z,Wpl)
+    PlasticModulusStrongAxis = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Plastic section modulus in bending about main strong axis (Z,Wpl)
 
 
 
@@ -238,8 +275,10 @@ Set: PlasticModulusStrongAxis(self: StructuralSectionRectangular)=value
 
 """
 
- PlasticModulusWeakAxis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Plastic section modulus in bending about main weak axis.
+    PlasticModulusWeakAxis = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Plastic section modulus in bending about main weak axis.
 
 
 
@@ -251,8 +290,10 @@ Set: PlasticModulusWeakAxis(self: StructuralSectionRectangular)=value
 
 """
 
- PrincipalAxesAngle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Rotation angle between the principal axes and cross section reference planes.
+    PrincipalAxesAngle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Rotation angle between the principal axes and cross section reference planes.
 
 
 
@@ -264,8 +305,10 @@ Set: PrincipalAxesAngle(self: StructuralSectionRectangular)=value
 
 """
 
- SectionArea=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Cross section area.
+    SectionArea = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Cross section area.
 
 
 
@@ -277,8 +320,10 @@ Set: SectionArea(self: StructuralSectionRectangular)=value
 
 """
 
- ShearAreaStrongAxis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Shear area (reduced extreme shear stress coefficient) in the direction of strong axis (Wq).
+    ShearAreaStrongAxis = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Shear area (reduced extreme shear stress coefficient) in the direction of strong axis (Wq).
 
 
 
@@ -290,8 +335,10 @@ Set: ShearAreaStrongAxis(self: StructuralSectionRectangular)=value
 
 """
 
- ShearAreaWeakAxis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Shear area (reduced extreme shear stress coefficient) in the direction of weak axis (Wq).
+    ShearAreaWeakAxis = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Shear area (reduced extreme shear stress coefficient) in the direction of weak axis (Wq).
 
 
 
@@ -303,8 +350,10 @@ Set: ShearAreaWeakAxis(self: StructuralSectionRectangular)=value
 
 """
 
- TorsionalModulus=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Section modulus for calculations of torsion stresses (Ct)
+    TorsionalModulus = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Section modulus for calculations of torsion stresses (Ct)
 
 
 
@@ -316,8 +365,10 @@ Set: TorsionalModulus(self: StructuralSectionRectangular)=value
 
 """
 
- TorsionalMomentOfInertia=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Torsional Moment of inertia (J,IT,K),for calculation of torsional deformation
+    TorsionalMomentOfInertia = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Torsional Moment of inertia (J,IT,K),for calculation of torsional deformation
 
 
 
@@ -329,8 +380,10 @@ Set: TorsionalMomentOfInertia(self: StructuralSectionRectangular)=value
 
 """
 
- WarpingConstant=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Warping constant (Cw,Iomega,H)
+    WarpingConstant = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Warping constant (Cw,Iomega,H)
 
 
 
@@ -342,8 +395,8 @@ Set: WarpingConstant(self: StructuralSectionRectangular)=value
 
 """
 
- Width=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Section width.
+    Width = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Section width.
 
 
 
@@ -356,26 +409,33 @@ Set: Width(self: StructuralSectionRectangular)=value
 """
 
 
+class StructuralSectionColdFormed(StructuralSectionRectangular, IDisposable):
+    """ Defines parameters for Hot Formed structural section. """
 
-class StructuralSectionColdFormed(StructuralSectionRectangular,IDisposable):
- """ Defines parameters for Hot Formed structural section. """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- InnerFillet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Inner Fillet - Corner fillet inner radius.
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    InnerFillet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Inner Fillet - Corner fillet inner radius.
 
 
 
@@ -387,8 +447,10 @@ Set: InnerFillet(self: StructuralSectionColdFormed)=value
 
 """
 
- WallDesignThickness=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Represents wall design thickness of rectangle.
+    WallDesignThickness = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Represents wall design thickness of rectangle.
 
 
 
@@ -400,8 +462,10 @@ Set: WallDesignThickness(self: StructuralSectionColdFormed)=value
 
 """
 
- WallNominalThickness=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Represents wall nominal thickness of rectangle.
+    WallNominalThickness = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Represents wall nominal thickness of rectangle.
 
 
 
@@ -414,36 +478,67 @@ Set: WallNominalThickness(self: StructuralSectionColdFormed)=value
 """
 
 
-
-class StructuralSectionConcreteCross(StructuralSectionRectangular,IDisposable):
- """
+class StructuralSectionConcreteCross(StructuralSectionRectangular, IDisposable):
+    """
  Defines parameters for parameterized concrete cross structural section.
 
  
 
  StructuralSectionConcreteCross(width: float,height: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,cantileverLength: float,cantileverHeight: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis,cantileverLength,cantileverHeight):
-  """ __new__(cls: type,width: float,height: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,cantileverLength: float,cantileverHeight: float) """
-  pass
- CantileverHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Flange cantilever thickness.
+
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+        cantileverLength,
+        cantileverHeight,
+    ):
+        """ __new__(cls: type,width: float,height: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,cantileverLength: float,cantileverHeight: float) """
+        pass
+
+    CantileverHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Flange cantilever thickness.
 
 
 
@@ -455,8 +550,10 @@ Set: CantileverHeight(self: StructuralSectionConcreteCross)=value
 
 """
 
- CantileverLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Flange cantilever length.
+    CantileverLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Flange cantilever length.
 
 
 
@@ -469,64 +566,125 @@ Set: CantileverLength(self: StructuralSectionConcreteCross)=value
 """
 
 
-
-class StructuralSectionConcreteRectangle(StructuralSectionRectangular,IDisposable):
- """
+class StructuralSectionConcreteRectangle(StructuralSectionRectangular, IDisposable):
+    """
  Defines parameters for parameterized concrete rectangle structural section.
 
  
 
  StructuralSectionConcreteRectangle(width: float,height: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis):
-  """ __new__(cls: type,width: float,height: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float) """
-  pass
 
-class StructuralSectionConcreteRectangleCut(StructuralSectionRectangular,IDisposable):
- """
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+    ):
+        """ __new__(cls: type,width: float,height: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float) """
+        pass
+
+
+class StructuralSectionConcreteRectangleCut(StructuralSectionRectangular, IDisposable):
+    """
  Defines parameters for parameterized concrete rectangle cut structural section.
 
  
 
  StructuralSectionConcreteRectangleCut(width: float,height: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,topCutWidth: float,topCutHeight: float,bottomCutWidth: float,bottomCutHeight: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis,topCutWidth,topCutHeight,bottomCutWidth,bottomCutHeight):
-  """ __new__(cls: type,width: float,height: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,topCutWidth: float,topCutHeight: float,bottomCutWidth: float,bottomCutHeight: float) """
-  pass
- BottomCutHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Section height left Cut.
+
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+        topCutWidth,
+        topCutHeight,
+        bottomCutWidth,
+        bottomCutHeight,
+    ):
+        """ __new__(cls: type,width: float,height: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,topCutWidth: float,topCutHeight: float,bottomCutWidth: float,bottomCutHeight: float) """
+        pass
+
+    BottomCutHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Section height left Cut.
 
 
 
@@ -538,8 +696,10 @@ Set: BottomCutHeight(self: StructuralSectionConcreteRectangleCut)=value
 
 """
 
- BottomCutWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Section width left Cut.
+    BottomCutWidth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Section width left Cut.
 
 
 
@@ -551,8 +711,10 @@ Set: BottomCutWidth(self: StructuralSectionConcreteRectangleCut)=value
 
 """
 
- TopCutHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Section height right Cut.
+    TopCutHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Section height right Cut.
 
 
 
@@ -564,8 +726,10 @@ Set: TopCutHeight(self: StructuralSectionConcreteRectangleCut)=value
 
 """
 
- TopCutWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Section width right Cut.
+    TopCutWidth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Section width right Cut.
 
 
 
@@ -578,26 +742,33 @@ Set: TopCutWidth(self: StructuralSectionConcreteRectangleCut)=value
 """
 
 
+class StructuralSectionRound(StructuralSection, IDisposable):
+    """ Defines common set of  parameters for structural section round contour. """
 
-class StructuralSectionRound(StructuralSection,IDisposable):
- """ Defines common set of  parameters for structural section round contour. """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- CentroidHorizontal=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Distance from centroid to the left extremites along horizontal axis.
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    CentroidHorizontal = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Distance from centroid to the left extremites along horizontal axis.
 
 
 
@@ -609,8 +780,10 @@ Set: CentroidHorizontal(self: StructuralSectionRound)=value
 
 """
 
- CentroidVertical=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Distance from centroid to the upper extremites along vertical axis.
+    CentroidVertical = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Distance from centroid to the upper extremites along vertical axis.
 
 
 
@@ -622,8 +795,8 @@ Set: CentroidVertical(self: StructuralSectionRound)=value
 
 """
 
- Diameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Pipe Diameter.
+    Diameter = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Pipe Diameter.
 
 
 
@@ -635,8 +808,10 @@ Set: Diameter(self: StructuralSectionRound)=value
 
 """
 
- ElasticModulusStrongAxis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Elastic section modulus about main strong axis for calculation of bending stresses.
+    ElasticModulusStrongAxis = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Elastic section modulus about main strong axis for calculation of bending stresses.
 
 
 
@@ -648,8 +823,10 @@ Set: ElasticModulusStrongAxis(self: StructuralSectionRound)=value
 
 """
 
- ElasticModulusWeakAxis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Elastic section modulus about main weak axis for calculation of bending stresses.
+    ElasticModulusWeakAxis = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Elastic section modulus about main weak axis for calculation of bending stresses.
 
 
 
@@ -661,8 +838,10 @@ Set: ElasticModulusWeakAxis(self: StructuralSectionRound)=value
 
 """
 
- MomentOfInertiaStrongAxis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Moment of Inertia about main strong axis (I).
+    MomentOfInertiaStrongAxis = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Moment of Inertia about main strong axis (I).
 
 
 
@@ -674,8 +853,10 @@ Set: MomentOfInertiaStrongAxis(self: StructuralSectionRound)=value
 
 """
 
- MomentOfInertiaWeakAxis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Moment of Inertia about main weak axis (I).
+    MomentOfInertiaWeakAxis = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Moment of Inertia about main weak axis (I).
 
 
 
@@ -687,8 +868,8 @@ Set: MomentOfInertiaWeakAxis(self: StructuralSectionRound)=value
 
 """
 
- NameKey=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Name Key
+    NameKey = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Name Key
 
 
 
@@ -700,8 +881,10 @@ Set: NameKey(self: StructuralSectionRound)=value
 
 """
 
- NominalWeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Unit weight (not mass) per unit length,for self-weight calculation or quantity survey.
+    NominalWeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Unit weight (not mass) per unit length,for self-weight calculation or quantity survey.
 
 
 
@@ -713,8 +896,8 @@ Set: NominalWeight(self: StructuralSectionRound)=value
 
 """
 
- Perimeter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Painting surface of the unit length.
+    Perimeter = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Painting surface of the unit length.
 
 
 
@@ -726,8 +909,10 @@ Set: Perimeter(self: StructuralSectionRound)=value
 
 """
 
- PlasticModulusStrongAxis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Plastic section modulus in bending about main strong axis (Z,Wpl)
+    PlasticModulusStrongAxis = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Plastic section modulus in bending about main strong axis (Z,Wpl)
 
 
 
@@ -739,8 +924,10 @@ Set: PlasticModulusStrongAxis(self: StructuralSectionRound)=value
 
 """
 
- PlasticModulusWeakAxis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Plastic section modulus in bending about main weak axis.
+    PlasticModulusWeakAxis = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Plastic section modulus in bending about main weak axis.
 
 
 
@@ -752,8 +939,10 @@ Set: PlasticModulusWeakAxis(self: StructuralSectionRound)=value
 
 """
 
- PrincipalAxesAngle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Rotation angle between the principal axes and cross section reference planes.
+    PrincipalAxesAngle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Rotation angle between the principal axes and cross section reference planes.
 
 
 
@@ -765,8 +954,10 @@ Set: PrincipalAxesAngle(self: StructuralSectionRound)=value
 
 """
 
- SectionArea=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Cross section area.
+    SectionArea = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Cross section area.
 
 
 
@@ -778,8 +969,10 @@ Set: SectionArea(self: StructuralSectionRound)=value
 
 """
 
- ShearAreaStrongAxis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Shear area (reduced extreme shear stress coefficient) in the direction of strong axis (Wq).
+    ShearAreaStrongAxis = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Shear area (reduced extreme shear stress coefficient) in the direction of strong axis (Wq).
 
 
 
@@ -791,8 +984,10 @@ Set: ShearAreaStrongAxis(self: StructuralSectionRound)=value
 
 """
 
- ShearAreaWeakAxis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Shear area (reduced extreme shear stress coefficient) in the direction of weak axis (Wq).
+    ShearAreaWeakAxis = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Shear area (reduced extreme shear stress coefficient) in the direction of weak axis (Wq).
 
 
 
@@ -804,8 +999,10 @@ Set: ShearAreaWeakAxis(self: StructuralSectionRound)=value
 
 """
 
- TorsionalModulus=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Section modulus for calculations of torsion stresses (Ct)
+    TorsionalModulus = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Section modulus for calculations of torsion stresses (Ct)
 
 
 
@@ -817,8 +1014,10 @@ Set: TorsionalModulus(self: StructuralSectionRound)=value
 
 """
 
- TorsionalMomentOfInertia=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Torsional Moment of inertia (J,IT,K),for calculation of torsional deformation
+    TorsionalMomentOfInertia = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Torsional Moment of inertia (J,IT,K),for calculation of torsional deformation
 
 
 
@@ -830,8 +1029,10 @@ Set: TorsionalMomentOfInertia(self: StructuralSectionRound)=value
 
 """
 
- WarpingConstant=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Warping constant (Cw,Iomega,H)
+    WarpingConstant = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Warping constant (Cw,Iomega,H)
 
 
 
@@ -844,9 +1045,8 @@ Set: WarpingConstant(self: StructuralSectionRound)=value
 """
 
 
-
-class StructuralSectionConcreteRound(StructuralSectionRound,IDisposable):
- """
+class StructuralSectionConcreteRound(StructuralSectionRound, IDisposable):
+    """
  Creates a new instance of Structural Section Concrete Round shape with the associated set of parameters,
 
     used to attach to structural element.
@@ -855,55 +1055,114 @@ class StructuralSectionConcreteRound(StructuralSectionRound,IDisposable):
 
  StructuralSectionConcreteRound(diameter: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,diameter,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis):
-  """ __new__(cls: type,diameter: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float) """
-  pass
 
-class StructuralSectionConcreteT(StructuralSectionRectangular,IDisposable):
- """
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        diameter,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+    ):
+        """ __new__(cls: type,diameter: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float) """
+        pass
+
+
+class StructuralSectionConcreteT(StructuralSectionRectangular, IDisposable):
+    """
  Defines parameters for parameterized concrete T structural section.
 
  
 
  StructuralSectionConcreteT(width: float,height: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,cantileverLength: float,cantileverHeight: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis,cantileverLength,cantileverHeight):
-  """ __new__(cls: type,width: float,height: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,cantileverLength: float,cantileverHeight: float) """
-  pass
- CantileverHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Flange cantilever thickness.
+
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+        cantileverLength,
+        cantileverHeight,
+    ):
+        """ __new__(cls: type,width: float,height: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,cantileverLength: float,cantileverHeight: float) """
+        pass
+
+    CantileverHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Flange cantilever thickness.
 
 
 
@@ -915,8 +1174,10 @@ Set: CantileverHeight(self: StructuralSectionConcreteT)=value
 
 """
 
- CantileverLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Flange cantilever length.
+    CantileverLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Flange cantilever length.
 
 
 
@@ -929,26 +1190,33 @@ Set: CantileverLength(self: StructuralSectionConcreteT)=value
 """
 
 
+class StructuralSectionHotRolled(StructuralSectionRectangular, IDisposable):
+    """ Defines parameters for hot rolled structural sections. """
 
-class StructuralSectionHotRolled(StructuralSectionRectangular,IDisposable):
- """ Defines parameters for hot rolled structural sections. """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- FlangeThickness=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Flange Thickness.
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    FlangeThickness = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Flange Thickness.
 
 
 
@@ -960,8 +1228,8 @@ Set: FlangeThickness(self: StructuralSectionHotRolled)=value
 
 """
 
- WebFillet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Web Fillet - fillet radius between web and flange.
+    WebFillet = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Web Fillet - fillet radius between web and flange.
 
 
 
@@ -973,8 +1241,10 @@ Set: WebFillet(self: StructuralSectionHotRolled)=value
 
 """
 
- WebThickness=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Web Thickness.
+    WebThickness = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Web Thickness.
 
 
 
@@ -987,36 +1257,73 @@ Set: WebThickness(self: StructuralSectionHotRolled)=value
 """
 
 
-
-class StructuralSectionCParallelFlange(StructuralSectionHotRolled,IDisposable):
- """
+class StructuralSectionCParallelFlange(StructuralSectionHotRolled, IDisposable):
+    """
  Defines parameters for C-channel Parallel Flange structural section.
 
  
 
  StructuralSectionCParallelFlange(width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,clearWebHeight: float,flangeToeOfFillet: float,webToeOfFillet: float,boltSpacing: float,boltDiameter: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,flangeThickness,webThickness,webFillet,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis,clearWebHeight,flangeToeOfFillet,webToeOfFillet,boltSpacing,boltDiameter):
-  """ __new__(cls: type,width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,clearWebHeight: float,flangeToeOfFillet: float,webToeOfFillet: float,boltSpacing: float,boltDiameter: float) """
-  pass
- BoltDiameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Maximum bolt hole diameter,in. (mm)
+
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        flangeThickness,
+        webThickness,
+        webFillet,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+        clearWebHeight,
+        flangeToeOfFillet,
+        webToeOfFillet,
+        boltSpacing,
+        boltDiameter,
+    ):
+        """ __new__(cls: type,width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,clearWebHeight: float,flangeToeOfFillet: float,webToeOfFillet: float,boltSpacing: float,boltDiameter: float) """
+        pass
+
+    BoltDiameter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Maximum bolt hole diameter,in. (mm)
 
 
 
@@ -1028,8 +1335,10 @@ Set: BoltDiameter(self: StructuralSectionCParallelFlange)=value
 
 """
 
- BoltSpacing=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Standard bolt spacing,in. (mm)
+    BoltSpacing = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Standard bolt spacing,in. (mm)
 
 
 
@@ -1041,8 +1350,10 @@ Set: BoltSpacing(self: StructuralSectionCParallelFlange)=value
 
 """
 
- ClearWebHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Detailing depth between the web toes of the fillets,in.(mm)
+    ClearWebHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Detailing depth between the web toes of the fillets,in.(mm)
 
 
 
@@ -1054,8 +1365,10 @@ Set: ClearWebHeight(self: StructuralSectionCParallelFlange)=value
 
 """
 
- FlangeToeOfFillet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Detailing distance from center of web to flange toe of fillet,in. (mm)
+    FlangeToeOfFillet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Detailing distance from center of web to flange toe of fillet,in. (mm)
 
 
 
@@ -1067,8 +1380,10 @@ Set: FlangeToeOfFillet(self: StructuralSectionCParallelFlange)=value
 
 """
 
- WebToeOfFillet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Detailing distance from outer face of flange to web toe of fillet,in. (mm)
+    WebToeOfFillet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Detailing distance from outer face of flange to web toe of fillet,in. (mm)
 
 
 
@@ -1081,64 +1396,129 @@ Set: WebToeOfFillet(self: StructuralSectionCParallelFlange)=value
 """
 
 
-
-class StructuralSectionCProfile(StructuralSectionColdFormed,IDisposable):
- """
+class StructuralSectionCProfile(StructuralSectionColdFormed, IDisposable):
+    """
  Defines parameters for C Profile structural section.
 
  
 
  StructuralSectionCProfile(width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,wallNominalThickness,wallDesignThickness,innerFillet,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis):
-  """ __new__(cls: type,width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float) """
-  pass
 
-class StructuralSectionCProfileWithFold(StructuralSectionColdFormed,IDisposable):
- """
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        wallNominalThickness,
+        wallDesignThickness,
+        innerFillet,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+    ):
+        """ __new__(cls: type,width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float) """
+        pass
+
+
+class StructuralSectionCProfileWithFold(StructuralSectionColdFormed, IDisposable):
+    """
  Defines parameters for C Profile with fold structural section.
 
  
 
  StructuralSectionCProfileWithFold(width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,lipLength: float,foldLength: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,wallNominalThickness,wallDesignThickness,innerFillet,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis,lipLength,foldLength):
-  """ __new__(cls: type,width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,lipLength: float,foldLength: float) """
-  pass
- FoldLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Fold segment length.
+
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        wallNominalThickness,
+        wallDesignThickness,
+        innerFillet,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+        lipLength,
+        foldLength,
+    ):
+        """ __new__(cls: type,width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,lipLength: float,foldLength: float) """
+        pass
+
+    FoldLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Fold segment length.
 
 
 
@@ -1150,8 +1530,8 @@ Set: FoldLength(self: StructuralSectionCProfileWithFold)=value
 
 """
 
- LipLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Lip segment length.
+    LipLength = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Lip segment length.
 
 
 
@@ -1164,36 +1544,67 @@ Set: LipLength(self: StructuralSectionCProfileWithFold)=value
 """
 
 
-
-class StructuralSectionCProfileWithLips(StructuralSectionColdFormed,IDisposable):
- """
+class StructuralSectionCProfileWithLips(StructuralSectionColdFormed, IDisposable):
+    """
  Defines parameters for C Profile with lips structural section.
 
  
 
  StructuralSectionCProfileWithLips(width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,lipLength: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,wallNominalThickness,wallDesignThickness,innerFillet,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis,lipLength):
-  """ __new__(cls: type,width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,lipLength: float) """
-  pass
- LipLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Lip segment length.
+
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        wallNominalThickness,
+        wallDesignThickness,
+        innerFillet,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+        lipLength,
+    ):
+        """ __new__(cls: type,width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,lipLength: float) """
+        pass
+
+    LipLength = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Lip segment length.
 
 
 
@@ -1206,36 +1617,73 @@ Set: LipLength(self: StructuralSectionCProfileWithLips)=value
 """
 
 
-
-class StructuralSectionCSlopedFlange(StructuralSectionHotRolled,IDisposable):
- """
+class StructuralSectionCSlopedFlange(StructuralSectionHotRolled, IDisposable):
+    """
  Defines parameters for C-channel Sloped Flange structural section.
 
  
 
  StructuralSectionCSlopedFlange(width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,flangeFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,clearWebHeight: float,webToeOfFillet: float,boltSpacing: float,boltDiameter: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,flangeThickness,webThickness,webFillet,flangeFillet,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis,clearWebHeight,webToeOfFillet,boltSpacing,boltDiameter):
-  """ __new__(cls: type,width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,flangeFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,clearWebHeight: float,webToeOfFillet: float,boltSpacing: float,boltDiameter: float) """
-  pass
- BoltDiameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Maximum bolt hole diameter,in. (mm)
+
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        flangeThickness,
+        webThickness,
+        webFillet,
+        flangeFillet,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+        clearWebHeight,
+        webToeOfFillet,
+        boltSpacing,
+        boltDiameter,
+    ):
+        """ __new__(cls: type,width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,flangeFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,clearWebHeight: float,webToeOfFillet: float,boltSpacing: float,boltDiameter: float) """
+        pass
+
+    BoltDiameter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Maximum bolt hole diameter,in. (mm)
 
 
 
@@ -1247,8 +1695,10 @@ Set: BoltDiameter(self: StructuralSectionCSlopedFlange)=value
 
 """
 
- BoltSpacing=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Standard bolt spacing,in. (mm)
+    BoltSpacing = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Standard bolt spacing,in. (mm)
 
 
 
@@ -1260,8 +1710,10 @@ Set: BoltSpacing(self: StructuralSectionCSlopedFlange)=value
 
 """
 
- ClearWebHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Detailing depth between the web toes of the fillets,in.(mm)
+    ClearWebHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Detailing depth between the web toes of the fillets,in.(mm)
 
 
 
@@ -1273,8 +1725,10 @@ Set: ClearWebHeight(self: StructuralSectionCSlopedFlange)=value
 
 """
 
- FlangeFillet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Flange Fillet - fillet radius at the flange end.
+    FlangeFillet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Flange Fillet - fillet radius at the flange end.
 
 
 
@@ -1286,8 +1740,10 @@ Set: FlangeFillet(self: StructuralSectionCSlopedFlange)=value
 
 """
 
- WebToeOfFillet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Detailing distance from outer face of flange to web toe of fillet,in. (mm)
+    WebToeOfFillet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Detailing distance from outer face of flange to web toe of fillet,in. (mm)
 
 
 
@@ -1300,36 +1756,73 @@ Set: WebToeOfFillet(self: StructuralSectionCSlopedFlange)=value
 """
 
 
-
-class StructuralSectionIParallelFlange(StructuralSectionHotRolled,IDisposable):
- """
+class StructuralSectionIParallelFlange(StructuralSectionHotRolled, IDisposable):
+    """
  Defines parameters for I-shape Parallel Flange structural section.
 
  
 
  StructuralSectionIParallelFlange(width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,clearWebHeight: float,flangeToeOfFillet: float,webToeOfFillet: float,boltSpacing: float,boltDiameter: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,flangeThickness,webThickness,webFillet,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis,clearWebHeight,flangeToeOfFillet,webToeOfFillet,boltSpacing,boltDiameter):
-  """ __new__(cls: type,width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,clearWebHeight: float,flangeToeOfFillet: float,webToeOfFillet: float,boltSpacing: float,boltDiameter: float) """
-  pass
- BoltDiameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Maximum bolt hole diameter,in. (mm)
+
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        flangeThickness,
+        webThickness,
+        webFillet,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+        clearWebHeight,
+        flangeToeOfFillet,
+        webToeOfFillet,
+        boltSpacing,
+        boltDiameter,
+    ):
+        """ __new__(cls: type,width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,clearWebHeight: float,flangeToeOfFillet: float,webToeOfFillet: float,boltSpacing: float,boltDiameter: float) """
+        pass
+
+    BoltDiameter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Maximum bolt hole diameter,in. (mm)
 
 
 
@@ -1341,8 +1834,10 @@ Set: BoltDiameter(self: StructuralSectionIParallelFlange)=value
 
 """
 
- BoltSpacing=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Standard bolt spacing,in. (mm)
+    BoltSpacing = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Standard bolt spacing,in. (mm)
 
 
 
@@ -1354,8 +1849,10 @@ Set: BoltSpacing(self: StructuralSectionIParallelFlange)=value
 
 """
 
- ClearWebHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Detailing depth between the web toes of the fillets,in.(mm)
+    ClearWebHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Detailing depth between the web toes of the fillets,in.(mm)
 
 
 
@@ -1367,8 +1864,10 @@ Set: ClearWebHeight(self: StructuralSectionIParallelFlange)=value
 
 """
 
- FlangeToeOfFillet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Detailing distance from center of web to flange toe of fillet,in. (mm)
+    FlangeToeOfFillet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Detailing distance from center of web to flange toe of fillet,in. (mm)
 
 
 
@@ -1380,8 +1879,10 @@ Set: FlangeToeOfFillet(self: StructuralSectionIParallelFlange)=value
 
 """
 
- WebToeOfFillet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Detailing distance from outer face of flange to web toe of fillet,in. (mm)
+    WebToeOfFillet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Detailing distance from outer face of flange to web toe of fillet,in. (mm)
 
 
 
@@ -1394,36 +1895,73 @@ Set: WebToeOfFillet(self: StructuralSectionIParallelFlange)=value
 """
 
 
-
-class StructuralSectionISlopedFlange(StructuralSectionHotRolled,IDisposable):
- """
+class StructuralSectionISlopedFlange(StructuralSectionHotRolled, IDisposable):
+    """
  Defines parameters for I-shape Sloped Flange structural section.
 
  
 
  StructuralSectionISlopedFlange(width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,flangeFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,clearWebHeight: float,webToeOfFillet: float,boltSpacing: float,boltDiameter: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,flangeThickness,webThickness,webFillet,flangeFillet,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis,clearWebHeight,webToeOfFillet,boltSpacing,boltDiameter):
-  """ __new__(cls: type,width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,flangeFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,clearWebHeight: float,webToeOfFillet: float,boltSpacing: float,boltDiameter: float) """
-  pass
- BoltDiameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Maximum bolt hole diameter,in. (mm)
+
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        flangeThickness,
+        webThickness,
+        webFillet,
+        flangeFillet,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+        clearWebHeight,
+        webToeOfFillet,
+        boltSpacing,
+        boltDiameter,
+    ):
+        """ __new__(cls: type,width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,flangeFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,clearWebHeight: float,webToeOfFillet: float,boltSpacing: float,boltDiameter: float) """
+        pass
+
+    BoltDiameter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Maximum bolt hole diameter,in. (mm)
 
 
 
@@ -1435,8 +1973,10 @@ Set: BoltDiameter(self: StructuralSectionISlopedFlange)=value
 
 """
 
- BoltSpacing=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Standard bolt spacing,in. (mm)
+    BoltSpacing = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Standard bolt spacing,in. (mm)
 
 
 
@@ -1448,8 +1988,10 @@ Set: BoltSpacing(self: StructuralSectionISlopedFlange)=value
 
 """
 
- ClearWebHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Detailing depth between the web toes of the fillets,in.(mm)
+    ClearWebHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Detailing depth between the web toes of the fillets,in.(mm)
 
 
 
@@ -1461,8 +2003,10 @@ Set: ClearWebHeight(self: StructuralSectionISlopedFlange)=value
 
 """
 
- FlangeFillet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Flange Fillet - fillet radius at the flange end.
+    FlangeFillet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Flange Fillet - fillet radius at the flange end.
 
 
 
@@ -1474,8 +2018,10 @@ Set: FlangeFillet(self: StructuralSectionISlopedFlange)=value
 
 """
 
- WebToeOfFillet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Detailing distance from outer face of flange to web toe of fillet,in. (mm)
+    WebToeOfFillet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Detailing distance from outer face of flange to web toe of fillet,in. (mm)
 
 
 
@@ -1488,36 +2034,73 @@ Set: WebToeOfFillet(self: StructuralSectionISlopedFlange)=value
 """
 
 
-
-class StructuralSectionISplitParallelFlange(StructuralSectionHotRolled,IDisposable):
- """
+class StructuralSectionISplitParallelFlange(StructuralSectionHotRolled, IDisposable):
+    """
  Defines parameters for I-split Parallel Flange structural section.
 
  
 
  StructuralSectionISplitParallelFlange(width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,clearWebHeight: float,flangeToeOfFillet: float,webToeOfFillet: float,boltSpacing: float,boltDiameter: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,flangeThickness,webThickness,webFillet,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis,clearWebHeight,flangeToeOfFillet,webToeOfFillet,boltSpacing,boltDiameter):
-  """ __new__(cls: type,width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,clearWebHeight: float,flangeToeOfFillet: float,webToeOfFillet: float,boltSpacing: float,boltDiameter: float) """
-  pass
- BoltDiameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Maximum bolt hole diameter,in. (mm)
+
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        flangeThickness,
+        webThickness,
+        webFillet,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+        clearWebHeight,
+        flangeToeOfFillet,
+        webToeOfFillet,
+        boltSpacing,
+        boltDiameter,
+    ):
+        """ __new__(cls: type,width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,clearWebHeight: float,flangeToeOfFillet: float,webToeOfFillet: float,boltSpacing: float,boltDiameter: float) """
+        pass
+
+    BoltDiameter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Maximum bolt hole diameter,in. (mm)
 
 
 
@@ -1529,8 +2112,10 @@ Set: BoltDiameter(self: StructuralSectionISplitParallelFlange)=value
 
 """
 
- BoltSpacing=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Standard bolt spacing,in. (mm)
+    BoltSpacing = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Standard bolt spacing,in. (mm)
 
 
 
@@ -1542,8 +2127,10 @@ Set: BoltSpacing(self: StructuralSectionISplitParallelFlange)=value
 
 """
 
- ClearWebHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Detailing depth between the web toes of the fillets,in.(mm)
+    ClearWebHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Detailing depth between the web toes of the fillets,in.(mm)
 
 
 
@@ -1555,8 +2142,10 @@ Set: ClearWebHeight(self: StructuralSectionISplitParallelFlange)=value
 
 """
 
- FlangeToeOfFillet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Detailing distance from center of web to flange toe of fillet,in. (mm)
+    FlangeToeOfFillet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Detailing distance from center of web to flange toe of fillet,in. (mm)
 
 
 
@@ -1568,8 +2157,10 @@ Set: FlangeToeOfFillet(self: StructuralSectionISplitParallelFlange)=value
 
 """
 
- WebToeOfFillet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Detailing distance from outer face of flange to web toe of fillet,in. (mm)
+    WebToeOfFillet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Detailing distance from outer face of flange to web toe of fillet,in. (mm)
 
 
 
@@ -1582,36 +2173,73 @@ Set: WebToeOfFillet(self: StructuralSectionISplitParallelFlange)=value
 """
 
 
-
-class StructuralSectionISplitSlopedFlange(StructuralSectionHotRolled,IDisposable):
- """
+class StructuralSectionISplitSlopedFlange(StructuralSectionHotRolled, IDisposable):
+    """
  Defines parameters for I-split Sloped Flange structural section.
 
  
 
  StructuralSectionISplitSlopedFlange(width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,flangeFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,clearWebHeight: float,webToeOfFillet: float,boltSpacing: float,boltDiameter: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,flangeThickness,webThickness,webFillet,flangeFillet,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis,clearWebHeight,webToeOfFillet,boltSpacing,boltDiameter):
-  """ __new__(cls: type,width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,flangeFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,clearWebHeight: float,webToeOfFillet: float,boltSpacing: float,boltDiameter: float) """
-  pass
- BoltDiameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Maximum bolt hole diameter,in. (mm)
+
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        flangeThickness,
+        webThickness,
+        webFillet,
+        flangeFillet,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+        clearWebHeight,
+        webToeOfFillet,
+        boltSpacing,
+        boltDiameter,
+    ):
+        """ __new__(cls: type,width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,flangeFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,clearWebHeight: float,webToeOfFillet: float,boltSpacing: float,boltDiameter: float) """
+        pass
+
+    BoltDiameter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Maximum bolt hole diameter,in. (mm)
 
 
 
@@ -1623,8 +2251,10 @@ Set: BoltDiameter(self: StructuralSectionISplitSlopedFlange)=value
 
 """
 
- BoltSpacing=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Standard bolt spacing,in. (mm)
+    BoltSpacing = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Standard bolt spacing,in. (mm)
 
 
 
@@ -1636,8 +2266,10 @@ Set: BoltSpacing(self: StructuralSectionISplitSlopedFlange)=value
 
 """
 
- ClearWebHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Detailing depth between the web toes of the fillets,in.(mm)
+    ClearWebHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Detailing depth between the web toes of the fillets,in.(mm)
 
 
 
@@ -1649,8 +2281,10 @@ Set: ClearWebHeight(self: StructuralSectionISplitSlopedFlange)=value
 
 """
 
- FlangeFillet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Flange Fillet - fillet radius at the flange end.
+    FlangeFillet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Flange Fillet - fillet radius at the flange end.
 
 
 
@@ -1662,8 +2296,10 @@ Set: FlangeFillet(self: StructuralSectionISplitSlopedFlange)=value
 
 """
 
- WebToeOfFillet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Detailing distance from outer face of flange to web toe of fillet,in. (mm)
+    WebToeOfFillet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Detailing distance from outer face of flange to web toe of fillet,in. (mm)
 
 
 
@@ -1676,36 +2312,71 @@ Set: WebToeOfFillet(self: StructuralSectionISplitSlopedFlange)=value
 """
 
 
-
-class StructuralSectionIWelded(StructuralSectionRectangular,IDisposable):
- """
+class StructuralSectionIWelded(StructuralSectionRectangular, IDisposable):
+    """
  Defines parameters for I-shape Welded structural section.
 
  
 
  StructuralSectionIWelded(width: float,height: float,topFlangeThickness: float,topFlangeWidth: float,bottomFlangeThickness: float,bottomFlangeWidth: float,webThickness: float,webHeight: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,topFlangeThickness,topFlangeWidth,bottomFlangeThickness,bottomFlangeWidth,webThickness,webHeight,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis):
-  """ __new__(cls: type,width: float,height: float,topFlangeThickness: float,topFlangeWidth: float,bottomFlangeThickness: float,bottomFlangeWidth: float,webThickness: float,webHeight: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float) """
-  pass
- BottomFlangeThickness=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Bottom Flange Thickness.
+
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        topFlangeThickness,
+        topFlangeWidth,
+        bottomFlangeThickness,
+        bottomFlangeWidth,
+        webThickness,
+        webHeight,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+    ):
+        """ __new__(cls: type,width: float,height: float,topFlangeThickness: float,topFlangeWidth: float,bottomFlangeThickness: float,bottomFlangeWidth: float,webThickness: float,webHeight: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float) """
+        pass
+
+    BottomFlangeThickness = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Bottom Flange Thickness.
 
 
 
@@ -1717,8 +2388,10 @@ Set: BottomFlangeThickness(self: StructuralSectionIWelded)=value
 
 """
 
- BottomFlangeWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Bottom Flange Width.
+    BottomFlangeWidth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Bottom Flange Width.
 
 
 
@@ -1730,8 +2403,10 @@ Set: BottomFlangeWidth(self: StructuralSectionIWelded)=value
 
 """
 
- TopFlangeThickness=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Top Flange Thickness.
+    TopFlangeThickness = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Top Flange Thickness.
 
 
 
@@ -1743,8 +2418,10 @@ Set: TopFlangeThickness(self: StructuralSectionIWelded)=value
 
 """
 
- TopFlangeWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Top Flange Width.
+    TopFlangeWidth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Top Flange Width.
 
 
 
@@ -1756,8 +2433,8 @@ Set: TopFlangeWidth(self: StructuralSectionIWelded)=value
 
 """
 
- WebHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Web Height.
+    WebHeight = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Web Height.
 
 
 
@@ -1769,8 +2446,10 @@ Set: WebHeight(self: StructuralSectionIWelded)=value
 
 """
 
- WebThickness=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Web Thickness.
+    WebThickness = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Web Thickness.
 
 
 
@@ -1783,36 +2462,75 @@ Set: WebThickness(self: StructuralSectionIWelded)=value
 """
 
 
-
-class StructuralSectionIWideFlange(StructuralSectionHotRolled,IDisposable):
- """
+class StructuralSectionIWideFlange(StructuralSectionHotRolled, IDisposable):
+    """
  Defines parameters for I-shape Wide Flange structural section.
 
  
 
  StructuralSectionIWideFlange(width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,clearWebHeight: float,flangeToeOfFillet: float,webToeOfFillet: float,boltSpacing: float,boltSpacingTwoRows: float,boltSpacingBetweenRows: float,boltDiameter: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,flangeThickness,webThickness,webFillet,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis,clearWebHeight,flangeToeOfFillet,webToeOfFillet,boltSpacing,boltSpacingTwoRows,boltSpacingBetweenRows,boltDiameter):
-  """ __new__(cls: type,width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,clearWebHeight: float,flangeToeOfFillet: float,webToeOfFillet: float,boltSpacing: float,boltSpacingTwoRows: float,boltSpacingBetweenRows: float,boltDiameter: float) """
-  pass
- BoltDiameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Maximum bolt hole diameter,in. (mm)
+
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        flangeThickness,
+        webThickness,
+        webFillet,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+        clearWebHeight,
+        flangeToeOfFillet,
+        webToeOfFillet,
+        boltSpacing,
+        boltSpacingTwoRows,
+        boltSpacingBetweenRows,
+        boltDiameter,
+    ):
+        """ __new__(cls: type,width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,clearWebHeight: float,flangeToeOfFillet: float,webToeOfFillet: float,boltSpacing: float,boltSpacingTwoRows: float,boltSpacingBetweenRows: float,boltDiameter: float) """
+        pass
+
+    BoltDiameter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Maximum bolt hole diameter,in. (mm)
 
 
 
@@ -1824,8 +2542,10 @@ Set: BoltDiameter(self: StructuralSectionIWideFlange)=value
 
 """
 
- BoltSpacing=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Standard bolt spacing,in. (mm)
+    BoltSpacing = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Standard bolt spacing,in. (mm)
 
 
 
@@ -1837,8 +2557,10 @@ Set: BoltSpacing(self: StructuralSectionIWideFlange)=value
 
 """
 
- BoltSpacingBetweenRows=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Standard bolt spacing between rows,in. (mm)
+    BoltSpacingBetweenRows = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Standard bolt spacing between rows,in. (mm)
 
 
 
@@ -1850,8 +2572,10 @@ Set: BoltSpacingBetweenRows(self: StructuralSectionIWideFlange)=value
 
 """
 
- BoltSpacingTwoRows=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Standard bolt spacing for two rows ,in. (mm)
+    BoltSpacingTwoRows = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Standard bolt spacing for two rows ,in. (mm)
 
 
 
@@ -1863,8 +2587,10 @@ Set: BoltSpacingTwoRows(self: StructuralSectionIWideFlange)=value
 
 """
 
- ClearWebHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Detailing depth between the web toes of the fillets,in.(mm)
+    ClearWebHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Detailing depth between the web toes of the fillets,in.(mm)
 
 
 
@@ -1876,8 +2602,10 @@ Set: ClearWebHeight(self: StructuralSectionIWideFlange)=value
 
 """
 
- FlangeToeOfFillet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Detailing distance from center of web to flange toe of fillet,in. (mm)
+    FlangeToeOfFillet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Detailing distance from center of web to flange toe of fillet,in. (mm)
 
 
 
@@ -1889,8 +2617,10 @@ Set: FlangeToeOfFillet(self: StructuralSectionIWideFlange)=value
 
 """
 
- WebToeOfFillet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Detailing distance from outer face of flange to web toe of fillet,in. (mm)
+    WebToeOfFillet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Detailing distance from outer face of flange to web toe of fillet,in. (mm)
 
 
 
@@ -1903,36 +2633,74 @@ Set: WebToeOfFillet(self: StructuralSectionIWideFlange)=value
 """
 
 
-
-class StructuralSectionLAngle(StructuralSectionHotRolled,IDisposable):
- """
+class StructuralSectionLAngle(StructuralSectionHotRolled, IDisposable):
+    """
  Defines parameters for L-angle Flange structural section.
 
  
 
  StructuralSectionLAngle(width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,flangeFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,boltSpacing1LongerFlange: float,boltSpacing2LongerFlange: float,boltSpacingShorterFlange: float,boltDiameterLongerFlange: float,boltDiameterShorterFlange: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,flangeThickness,webThickness,webFillet,flangeFillet,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis,boltSpacing1LongerFlange,boltSpacing2LongerFlange,boltSpacingShorterFlange,boltDiameterLongerFlange,boltDiameterShorterFlange):
-  """ __new__(cls: type,width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,flangeFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,boltSpacing1LongerFlange: float,boltSpacing2LongerFlange: float,boltSpacingShorterFlange: float,boltDiameterLongerFlange: float,boltDiameterShorterFlange: float) """
-  pass
- BoltDiameterLongerFlange=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Maximum bolt hole diameter in the longer flange,in. (mm)
+
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        flangeThickness,
+        webThickness,
+        webFillet,
+        flangeFillet,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+        boltSpacing1LongerFlange,
+        boltSpacing2LongerFlange,
+        boltSpacingShorterFlange,
+        boltDiameterLongerFlange,
+        boltDiameterShorterFlange,
+    ):
+        """ __new__(cls: type,width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,flangeFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,boltSpacing1LongerFlange: float,boltSpacing2LongerFlange: float,boltSpacingShorterFlange: float,boltDiameterLongerFlange: float,boltDiameterShorterFlange: float) """
+        pass
+
+    BoltDiameterLongerFlange = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Maximum bolt hole diameter in the longer flange,in. (mm)
 
 
 
@@ -1944,8 +2712,10 @@ Set: BoltDiameterLongerFlange(self: StructuralSectionLAngle)=value
 
 """
 
- BoltDiameterShorterFlange=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Maximum bolt hole diameter in the shorter flange,in. (mm)
+    BoltDiameterShorterFlange = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Maximum bolt hole diameter in the shorter flange,in. (mm)
 
 
 
@@ -1957,8 +2727,10 @@ Set: BoltDiameterShorterFlange(self: StructuralSectionLAngle)=value
 
 """
 
- BoltSpacing1LongerFlange=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Standard bolt spacing first row in the longer flange,in. (mm)
+    BoltSpacing1LongerFlange = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Standard bolt spacing first row in the longer flange,in. (mm)
 
 
 
@@ -1970,8 +2742,10 @@ Set: BoltSpacing1LongerFlange(self: StructuralSectionLAngle)=value
 
 """
 
- BoltSpacing2LongerFlange=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Standard bolt spacing second row in the longer flange,in. (mm)
+    BoltSpacing2LongerFlange = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Standard bolt spacing second row in the longer flange,in. (mm)
 
 
 
@@ -1983,8 +2757,10 @@ Set: BoltSpacing2LongerFlange(self: StructuralSectionLAngle)=value
 
 """
 
- BoltSpacingShorterFlange=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Standard bolt spacing in the shorter flange,in. (mm)
+    BoltSpacingShorterFlange = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Standard bolt spacing in the shorter flange,in. (mm)
 
 
 
@@ -1996,8 +2772,10 @@ Set: BoltSpacingShorterFlange(self: StructuralSectionLAngle)=value
 
 """
 
- FlangeFillet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Flange Fillet - fillet radius at the flange end.
+    FlangeFillet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Flange Fillet - fillet radius at the flange end.
 
 
 
@@ -2010,64 +2788,126 @@ Set: FlangeFillet(self: StructuralSectionLAngle)=value
 """
 
 
-
-class StructuralSectionLProfile(StructuralSectionColdFormed,IDisposable):
- """
+class StructuralSectionLProfile(StructuralSectionColdFormed, IDisposable):
+    """
  Defines parameters for L profile structural section.
 
  
 
  StructuralSectionLProfile(width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,wallNominalThickness,wallDesignThickness,innerFillet,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis):
-  """ __new__(cls: type,width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float) """
-  pass
 
-class StructuralSectionLProfileWithLips(StructuralSectionColdFormed,IDisposable):
- """
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        wallNominalThickness,
+        wallDesignThickness,
+        innerFillet,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+    ):
+        """ __new__(cls: type,width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float) """
+        pass
+
+
+class StructuralSectionLProfileWithLips(StructuralSectionColdFormed, IDisposable):
+    """
  Defines parameters for L Profile with lips structural section.
 
  
 
  StructuralSectionLProfileWithLips(width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,lipLength: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,wallNominalThickness,wallDesignThickness,innerFillet,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis,lipLength):
-  """ __new__(cls: type,width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,lipLength: float) """
-  pass
- LipLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Lip segment length.
+
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        wallNominalThickness,
+        wallDesignThickness,
+        innerFillet,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+        lipLength,
+    ):
+        """ __new__(cls: type,width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,lipLength: float) """
+        pass
+
+    LipLength = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Lip segment length.
 
 
 
@@ -2080,36 +2920,66 @@ Set: LipLength(self: StructuralSectionLProfileWithLips)=value
 """
 
 
-
-class StructuralSectionPipeStandard(StructuralSectionRound,IDisposable):
- """
+class StructuralSectionPipeStandard(StructuralSectionRound, IDisposable):
+    """
  Defines parameters for pipes also known as RoundHSS or HollowStructuralSection (HSS).
 
  
 
  StructuralSectionPipeStandard(diameter: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,wallNominalThickness: float,wallDesignThickness: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,diameter,centroidHorizontal,centroidVertical,principalAxesAngle,wallNominalThickness,wallDesignThickness,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis):
-  """ __new__(cls: type,diameter: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,wallNominalThickness: float,wallDesignThickness: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float) """
-  pass
- WallDesignThickness=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Represents wall design thickness of rectangle.
+
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        diameter,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        wallNominalThickness,
+        wallDesignThickness,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+    ):
+        """ __new__(cls: type,diameter: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,wallNominalThickness: float,wallDesignThickness: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float) """
+        pass
+
+    WallDesignThickness = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Represents wall design thickness of rectangle.
 
 
 
@@ -2121,8 +2991,10 @@ Set: WallDesignThickness(self: StructuralSectionPipeStandard)=value
 
 """
 
- WallNominalThickness=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Represents wall nominal thickness of rectangle.
+    WallNominalThickness = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Represents wall nominal thickness of rectangle.
 
 
 
@@ -2135,36 +3007,69 @@ Set: WallNominalThickness(self: StructuralSectionPipeStandard)=value
 """
 
 
-
-class StructuralSectionRectangleHSS(StructuralSectionRectangular,IDisposable):
- """
+class StructuralSectionRectangleHSS(StructuralSectionRectangular, IDisposable):
+    """
  Defines parameters for parameterized rectangle HSS structural section.
 
  
 
  StructuralSectionRectangleHSS(width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,outerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,wallNominalThickness,wallDesignThickness,innerFillet,outerFillet,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis):
-  """ __new__(cls: type,width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,outerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float) """
-  pass
- InnerFillet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Inner Fillet - Corner fillet inner radius.
+
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        wallNominalThickness,
+        wallDesignThickness,
+        innerFillet,
+        outerFillet,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+    ):
+        """ __new__(cls: type,width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,outerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float) """
+        pass
+
+    InnerFillet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Inner Fillet - Corner fillet inner radius.
 
 
 
@@ -2176,8 +3081,10 @@ Set: InnerFillet(self: StructuralSectionRectangleHSS)=value
 
 """
 
- OuterFillet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Outer Fillet - Corner fillet outer radius.
+    OuterFillet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Outer Fillet - Corner fillet outer radius.
 
 
 
@@ -2189,8 +3096,10 @@ Set: OuterFillet(self: StructuralSectionRectangleHSS)=value
 
 """
 
- WallDesignThickness=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Represents wall design thickness of rectangle.
+    WallDesignThickness = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Represents wall design thickness of rectangle.
 
 
 
@@ -2202,8 +3111,10 @@ Set: WallDesignThickness(self: StructuralSectionRectangleHSS)=value
 
 """
 
- WallNominalThickness=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Represents wall nominal thickness of rectangle.
+    WallNominalThickness = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Represents wall nominal thickness of rectangle.
 
 
 
@@ -2216,120 +3127,235 @@ Set: WallNominalThickness(self: StructuralSectionRectangleHSS)=value
 """
 
 
-
-class StructuralSectionRectangleParameterized(StructuralSectionRectangular,IDisposable):
- """
+class StructuralSectionRectangleParameterized(
+    StructuralSectionRectangular, IDisposable
+):
+    """
  Defines parameters for parameterized rectangle structural section.
 
  
 
  StructuralSectionRectangleParameterized(width: float,height: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis):
-  """ __new__(cls: type,width: float,height: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float) """
-  pass
 
-class StructuralSectionRectangularBar(StructuralSectionRectangular,IDisposable):
- """
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+    ):
+        """ __new__(cls: type,width: float,height: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float) """
+        pass
+
+
+class StructuralSectionRectangularBar(StructuralSectionRectangular, IDisposable):
+    """
  Defines parameters for Rectangular Bar structural section.
 
  
 
  StructuralSectionRectangularBar(width: float,height: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis):
-  """ __new__(cls: type,width: float,height: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float) """
-  pass
 
-class StructuralSectionRoundBar(StructuralSectionRound,IDisposable):
- """
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+    ):
+        """ __new__(cls: type,width: float,height: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float) """
+        pass
+
+
+class StructuralSectionRoundBar(StructuralSectionRound, IDisposable):
+    """
  Defines parameters for Round Bar structural section.
 
  
 
  StructuralSectionRoundBar(diameter: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,diameter,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis):
-  """ __new__(cls: type,diameter: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float) """
-  pass
 
-class StructuralSectionRoundHSS(StructuralSectionRound,IDisposable):
- """
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        diameter,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+    ):
+        """ __new__(cls: type,diameter: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float) """
+        pass
+
+
+class StructuralSectionRoundHSS(StructuralSectionRound, IDisposable):
+    """
  Defines parameters for pipes known as Round HSS (HollowStructuralSection).
 
  
 
  StructuralSectionRoundHSS(diameter: float,wallNominalThickness: float,wallDesignThickness: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,diameter,wallNominalThickness,wallDesignThickness,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis):
-  """ __new__(cls: type,diameter: float,wallNominalThickness: float,wallDesignThickness: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float) """
-  pass
- WallDesignThickness=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Represents wall design thickness of pipe.
+
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        diameter,
+        wallNominalThickness,
+        wallDesignThickness,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+    ):
+        """ __new__(cls: type,diameter: float,wallNominalThickness: float,wallDesignThickness: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float) """
+        pass
+
+    WallDesignThickness = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Represents wall design thickness of pipe.
 
 
 
@@ -2341,8 +3367,10 @@ Set: WallDesignThickness(self: StructuralSectionRoundHSS)=value
 
 """
 
- WallNominalThickness=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Represents wall nominal thickness of pipe.
+    WallNominalThickness = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Represents wall nominal thickness of pipe.
 
 
 
@@ -2355,104 +3383,148 @@ Set: WallNominalThickness(self: StructuralSectionRoundHSS)=value
 """
 
 
-
-class StructuralSectionShape(Enum,IComparable,IFormattable,IConvertible):
- """
+class StructuralSectionShape(Enum, IComparable, IFormattable, IConvertible):
+    """
  Shapes for structural sections.
 
  
 
  enum StructuralSectionShape,values: ConcreteCross (34),ConcreteRectangle (31),ConcreteRectangleCut (32),ConcreteRound (35),ConcreteT (33),CParallelFlange (9),CProfile (20),CProfileWithFold (22),CProfileWithLips (21),CSlopedFlange (10),Invalid (-1),IParallelFlange (6),ISlopedFlange (7),ISplitParallelFlange (17),ISplitSlopedFlange (18),IWelded (16),IWideFlange (8),LAngle (11),LProfile (23),LProfileWithLips (24),NotDefined (0),PipeStandard (5),RectangleHSS (14),RectangleParameterized (2),RectangularBar (12),RoundBar (13),RoundHSS (15),SigmaProfile (27),SigmaProfileWithFold (29),SigmaProfileWithLips (28),StructuralTees (19),UserDefined (30),ZProfile (25),ZProfileWithLips (26)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- ConcreteCross=None
- ConcreteRectangle=None
- ConcreteRectangleCut=None
- ConcreteRound=None
- ConcreteT=None
- CParallelFlange=None
- CProfile=None
- CProfileWithFold=None
- CProfileWithLips=None
- CSlopedFlange=None
- Invalid=None
- IParallelFlange=None
- ISlopedFlange=None
- ISplitParallelFlange=None
- ISplitSlopedFlange=None
- IWelded=None
- IWideFlange=None
- LAngle=None
- LProfile=None
- LProfileWithLips=None
- NotDefined=None
- PipeStandard=None
- RectangleHSS=None
- RectangleParameterized=None
- RectangularBar=None
- RoundBar=None
- RoundHSS=None
- SigmaProfile=None
- SigmaProfileWithFold=None
- SigmaProfileWithLips=None
- StructuralTees=None
- UserDefined=None
- value__=None
- ZProfile=None
- ZProfileWithLips=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    ConcreteCross = None
+    ConcreteRectangle = None
+    ConcreteRectangleCut = None
+    ConcreteRound = None
+    ConcreteT = None
+    CParallelFlange = None
+    CProfile = None
+    CProfileWithFold = None
+    CProfileWithLips = None
+    CSlopedFlange = None
+    Invalid = None
+    IParallelFlange = None
+    ISlopedFlange = None
+    ISplitParallelFlange = None
+    ISplitSlopedFlange = None
+    IWelded = None
+    IWideFlange = None
+    LAngle = None
+    LProfile = None
+    LProfileWithLips = None
+    NotDefined = None
+    PipeStandard = None
+    RectangleHSS = None
+    RectangleParameterized = None
+    RectangularBar = None
+    RoundBar = None
+    RoundHSS = None
+    SigmaProfile = None
+    SigmaProfileWithFold = None
+    SigmaProfileWithLips = None
+    StructuralTees = None
+    UserDefined = None
+    value__ = None
+    ZProfile = None
+    ZProfileWithLips = None
 
 
-class StructuralSectionSigmaProfile(StructuralSectionColdFormed,IDisposable):
- """
+class StructuralSectionSigmaProfile(StructuralSectionColdFormed, IDisposable):
+    """
  Defines parameters for Sigma Profile structural section.
 
  
 
  StructuralSectionSigmaProfile(width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,bendWidth: float,middleBendLength: float,topBendLength: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,wallNominalThickness,wallDesignThickness,innerFillet,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis,bendWidth,middleBendLength,topBendLength):
-  """ __new__(cls: type,width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,bendWidth: float,middleBendLength: float,topBendLength: float) """
-  pass
- BendWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Bend segment width.
+
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        wallNominalThickness,
+        wallDesignThickness,
+        innerFillet,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+        bendWidth,
+        middleBendLength,
+        topBendLength,
+    ):
+        """ __new__(cls: type,width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,bendWidth: float,middleBendLength: float,topBendLength: float) """
+        pass
+
+    BendWidth = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Bend segment width.
 
 
 
@@ -2464,8 +3536,10 @@ Set: BendWidth(self: StructuralSectionSigmaProfile)=value
 
 """
 
- MiddleBendLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Middle Bend segment length.
+    MiddleBendLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Middle Bend segment length.
 
 
 
@@ -2477,8 +3551,10 @@ Set: MiddleBendLength(self: StructuralSectionSigmaProfile)=value
 
 """
 
- TopBendLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Top Bend segment length.
+    TopBendLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Top Bend segment length.
 
 
 
@@ -2491,36 +3567,71 @@ Set: TopBendLength(self: StructuralSectionSigmaProfile)=value
 """
 
 
-
-class StructuralSectionSigmaProfileWithFold(StructuralSectionColdFormed,IDisposable):
- """
+class StructuralSectionSigmaProfileWithFold(StructuralSectionColdFormed, IDisposable):
+    """
  Defines parameters for structural Sigma profile section with fold.
 
  
 
  StructuralSectionSigmaProfileWithFold(width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,foldWidth: float,lipLength: float,bendWidth: float,middleBendLength: float,topBendLength: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,wallNominalThickness,wallDesignThickness,innerFillet,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis,foldWidth,lipLength,bendWidth,middleBendLength,topBendLength):
-  """ __new__(cls: type,width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,foldWidth: float,lipLength: float,bendWidth: float,middleBendLength: float,topBendLength: float) """
-  pass
- BendWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Bend segment width.
+
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        wallNominalThickness,
+        wallDesignThickness,
+        innerFillet,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+        foldWidth,
+        lipLength,
+        bendWidth,
+        middleBendLength,
+        topBendLength,
+    ):
+        """ __new__(cls: type,width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,foldWidth: float,lipLength: float,bendWidth: float,middleBendLength: float,topBendLength: float) """
+        pass
+
+    BendWidth = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Bend segment width.
 
 
 
@@ -2532,8 +3643,8 @@ Set: BendWidth(self: StructuralSectionSigmaProfileWithFold)=value
 
 """
 
- FoldWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Fold segment width.
+    FoldWidth = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Fold segment width.
 
 
 
@@ -2545,8 +3656,8 @@ Set: FoldWidth(self: StructuralSectionSigmaProfileWithFold)=value
 
 """
 
- LipLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Lip segment length.
+    LipLength = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Lip segment length.
 
 
 
@@ -2558,8 +3669,10 @@ Set: LipLength(self: StructuralSectionSigmaProfileWithFold)=value
 
 """
 
- MiddleBendLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Middle Bend segment length.
+    MiddleBendLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Middle Bend segment length.
 
 
 
@@ -2571,8 +3684,10 @@ Set: MiddleBendLength(self: StructuralSectionSigmaProfileWithFold)=value
 
 """
 
- TopBendLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Top Bend segment length.
+    TopBendLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Top Bend segment length.
 
 
 
@@ -2585,36 +3700,70 @@ Set: TopBendLength(self: StructuralSectionSigmaProfileWithFold)=value
 """
 
 
-
-class StructuralSectionSigmaProfileWithLips(StructuralSectionColdFormed,IDisposable):
- """
+class StructuralSectionSigmaProfileWithLips(StructuralSectionColdFormed, IDisposable):
+    """
  Defines parameters for structural Sigma Profile section with lips.
 
  
 
  StructuralSectionSigmaProfileWithLips(width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,lipLength: float,bendWidth: float,middleBendLength: float,topBendLength: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,wallNominalThickness,wallDesignThickness,innerFillet,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis,lipLength,bendWidth,middleBendLength,topBendLength):
-  """ __new__(cls: type,width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,lipLength: float,bendWidth: float,middleBendLength: float,topBendLength: float) """
-  pass
- BendWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Bend segment width.
+
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        wallNominalThickness,
+        wallDesignThickness,
+        innerFillet,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+        lipLength,
+        bendWidth,
+        middleBendLength,
+        topBendLength,
+    ):
+        """ __new__(cls: type,width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,lipLength: float,bendWidth: float,middleBendLength: float,topBendLength: float) """
+        pass
+
+    BendWidth = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Bend segment width.
 
 
 
@@ -2626,8 +3775,8 @@ Set: BendWidth(self: StructuralSectionSigmaProfileWithLips)=value
 
 """
 
- LipLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Lip segment length.
+    LipLength = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Lip segment length.
 
 
 
@@ -2639,8 +3788,10 @@ Set: LipLength(self: StructuralSectionSigmaProfileWithLips)=value
 
 """
 
- MiddleBendLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Middle Bend segment length.
+    MiddleBendLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Middle Bend segment length.
 
 
 
@@ -2652,8 +3803,10 @@ Set: MiddleBendLength(self: StructuralSectionSigmaProfileWithLips)=value
 
 """
 
- TopBendLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Top Bend segment length.
+    TopBendLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Top Bend segment length.
 
 
 
@@ -2666,36 +3819,72 @@ Set: TopBendLength(self: StructuralSectionSigmaProfileWithLips)=value
 """
 
 
-
-class StructuralSectionStructuralTees(StructuralSectionHotRolled,IDisposable):
- """
+class StructuralSectionStructuralTees(StructuralSectionHotRolled, IDisposable):
+    """
  Defines parameters for Structural Tees structural section.
 
  
 
  StructuralSectionStructuralTees(width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,flangeFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,boltSpacing: float,boltSpacingWeb: float,boltDiameter: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,flangeThickness,webThickness,webFillet,flangeFillet,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis,boltSpacing,boltSpacingWeb,boltDiameter):
-  """ __new__(cls: type,width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,flangeFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,boltSpacing: float,boltSpacingWeb: float,boltDiameter: float) """
-  pass
- BoltDiameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Maximum bolt hole diameter,in. (mm)
+
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        flangeThickness,
+        webThickness,
+        webFillet,
+        flangeFillet,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+        boltSpacing,
+        boltSpacingWeb,
+        boltDiameter,
+    ):
+        """ __new__(cls: type,width: float,height: float,flangeThickness: float,webThickness: float,webFillet: float,flangeFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,boltSpacing: float,boltSpacingWeb: float,boltDiameter: float) """
+        pass
+
+    BoltDiameter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Maximum bolt hole diameter,in. (mm)
 
 
 
@@ -2707,8 +3896,10 @@ Set: BoltDiameter(self: StructuralSectionStructuralTees)=value
 
 """
 
- BoltSpacing=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Standard bolt spacing in the flange,in. (mm)
+    BoltSpacing = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Standard bolt spacing in the flange,in. (mm)
 
 
 
@@ -2720,8 +3911,10 @@ Set: BoltSpacing(self: StructuralSectionStructuralTees)=value
 
 """
 
- BoltSpacingWeb=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Standard bolt spacing in the web,in. (mm)
+    BoltSpacingWeb = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Standard bolt spacing in the web,in. (mm)
 
 
 
@@ -2733,8 +3926,10 @@ Set: BoltSpacingWeb(self: StructuralSectionStructuralTees)=value
 
 """
 
- FlangeFillet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Flange Fillet - fillet radius at the flange end.
+    FlangeFillet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Flange Fillet - fillet radius at the flange end.
 
 
 
@@ -2747,40 +3942,68 @@ Set: FlangeFillet(self: StructuralSectionStructuralTees)=value
 """
 
 
-
-class StructuralSectionUserDefined(StructuralSectionRectangular,IDisposable):
- """
+class StructuralSectionUserDefined(StructuralSectionRectangular, IDisposable):
+    """
  Defines parameters for parameterized user defined structural section.
 
  
 
  StructuralSectionUserDefined(width: float,height: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis):
-  """ __new__(cls: type,width: float,height: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float) """
-  pass
+
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+    ):
+        """ __new__(cls: type,width: float,height: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float) """
+        pass
+
 
 class StructuralSectionUtils(object):
- """ This class provides utilities related to Structural Section Properties. """
- @staticmethod
- def GetStructuralSection(document,familySymbolId):
-  """
+    """ This class provides utilities related to Structural Section Properties. """
+
+    @staticmethod
+    def GetStructuralSection(document, familySymbolId):
+        """
   GetStructuralSection(document: Document,familySymbolId: ElementId) -> StructuralSection
 
   
@@ -2799,10 +4022,11 @@ class StructuralSectionUtils(object):
 
     have structural section or can not have structural section ll will be returned.
   """
-  pass
- @staticmethod
- def SetStructuralSection(document,familySymbolId,structuralSection):
-  """
+        pass
+
+    @staticmethod
+    def SetStructuralSection(document, familySymbolId, structuralSection):
+        """
   SetStructuralSection(document: Document,familySymbolId: ElementId,structuralSection: StructuralSection) -> bool
 
   
@@ -2821,42 +4045,77 @@ class StructuralSectionUtils(object):
 
     false otherwise.
   """
-  pass
- __all__=[
-  'GetStructuralSection',
-  'SetStructuralSection',
- ]
+        pass
+
+    __all__ = [
+        "GetStructuralSection",
+        "SetStructuralSection",
+    ]
 
 
-class StructuralSectionZProfile(StructuralSectionColdFormed,IDisposable):
- """
+class StructuralSectionZProfile(StructuralSectionColdFormed, IDisposable):
+    """
  Defines parameters for Z Profile structural section.
 
  
 
  StructuralSectionZProfile(width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,bottomFlangeLength: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,wallNominalThickness,wallDesignThickness,innerFillet,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis,bottomFlangeLength):
-  """ __new__(cls: type,width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,bottomFlangeLength: float) """
-  pass
- BottomFlangeLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Bottom Flange segment length.
+
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        wallNominalThickness,
+        wallDesignThickness,
+        innerFillet,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+        bottomFlangeLength,
+    ):
+        """ __new__(cls: type,width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,bottomFlangeLength: float) """
+        pass
+
+    BottomFlangeLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Bottom Flange segment length.
 
 
 
@@ -2869,36 +4128,70 @@ Set: BottomFlangeLength(self: StructuralSectionZProfile)=value
 """
 
 
-
-class StructuralSectionZProfileWithLips(StructuralSectionColdFormed,IDisposable):
- """
+class StructuralSectionZProfileWithLips(StructuralSectionColdFormed, IDisposable):
+    """
  Defines parameters for Z Profile with lips structural section.
 
  
 
  StructuralSectionZProfileWithLips(width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,bottomFlangeLength: float,lipLength: float)
  """
- def Dispose(self):
-  """ Dispose(self: StructuralSection,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,width,height,wallNominalThickness,wallDesignThickness,innerFillet,centroidHorizontal,centroidVertical,principalAxesAngle,sectionArea,perimeter,nominalWeight,momentOfInertiaStrongAxis,momentOfInertiaWeakAxis,elasticModulusStrongAxis,elasticModulusWeakAxis,plasticModulusStrongAxis,plasticModulusWeakAxis,torsionalMomentOfInertia,torsionalModulus,warpingConstant,shearAreaStrongAxis,shearAreaWeakAxis,bottomFlangeLength,lipLength):
-  """ __new__(cls: type,width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,bottomFlangeLength: float,lipLength: float) """
-  pass
- BottomFlangeLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Bottom Flange segment length.
+
+    def Dispose(self):
+        """ Dispose(self: StructuralSection,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: StructuralSection,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self,
+        width,
+        height,
+        wallNominalThickness,
+        wallDesignThickness,
+        innerFillet,
+        centroidHorizontal,
+        centroidVertical,
+        principalAxesAngle,
+        sectionArea,
+        perimeter,
+        nominalWeight,
+        momentOfInertiaStrongAxis,
+        momentOfInertiaWeakAxis,
+        elasticModulusStrongAxis,
+        elasticModulusWeakAxis,
+        plasticModulusStrongAxis,
+        plasticModulusWeakAxis,
+        torsionalMomentOfInertia,
+        torsionalModulus,
+        warpingConstant,
+        shearAreaStrongAxis,
+        shearAreaWeakAxis,
+        bottomFlangeLength,
+        lipLength,
+    ):
+        """ __new__(cls: type,width: float,height: float,wallNominalThickness: float,wallDesignThickness: float,innerFillet: float,centroidHorizontal: float,centroidVertical: float,principalAxesAngle: float,sectionArea: float,perimeter: float,nominalWeight: float,momentOfInertiaStrongAxis: float,momentOfInertiaWeakAxis: float,elasticModulusStrongAxis: float,elasticModulusWeakAxis: float,plasticModulusStrongAxis: float,plasticModulusWeakAxis: float,torsionalMomentOfInertia: float,torsionalModulus: float,warpingConstant: float,shearAreaStrongAxis: float,shearAreaWeakAxis: float,bottomFlangeLength: float,lipLength: float) """
+        pass
+
+    BottomFlangeLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Bottom Flange segment length.
 
 
 
@@ -2910,8 +4203,8 @@ Set: BottomFlangeLength(self: StructuralSectionZProfileWithLips)=value
 
 """
 
- LipLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Lip segment length.
+    LipLength = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Lip segment length.
 
 
 
@@ -2922,6 +4215,3 @@ Get: LipLength(self: StructuralSectionZProfileWithLips) -> float
 Set: LipLength(self: StructuralSectionZProfileWithLips)=value
 
 """
-
-
-

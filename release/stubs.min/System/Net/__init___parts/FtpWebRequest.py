@@ -1,14 +1,16 @@
-class FtpWebRequest(WebRequest,ISerializable):
- """ Implements a File Transfer Protocol (FTP) client. """
- def Abort(self):
-  """
+class FtpWebRequest(WebRequest, ISerializable):
+    """ Implements a File Transfer Protocol (FTP) client. """
+
+    def Abort(self):
+        """
   Abort(self: FtpWebRequest)
 
    Terminates an asynchronous FTP operation.
   """
-  pass
- def BeginGetRequestStream(self,callback,state):
-  """
+        pass
+
+    def BeginGetRequestStream(self, callback, state):
+        """
   BeginGetRequestStream(self: FtpWebRequest,callback: AsyncCallback,state: object) -> IAsyncResult
 
   
@@ -31,9 +33,10 @@ class FtpWebRequest(WebRequest,ISerializable):
 
    Returns: An System.IAsyncResult instance that indicates the status of the operation.
   """
-  pass
- def BeginGetResponse(self,callback,state):
-  """
+        pass
+
+    def BeginGetResponse(self, callback, state):
+        """
   BeginGetResponse(self: FtpWebRequest,callback: AsyncCallback,state: object) -> IAsyncResult
 
   
@@ -56,9 +59,10 @@ class FtpWebRequest(WebRequest,ISerializable):
 
    Returns: An System.IAsyncResult instance that indicates the status of the operation.
   """
-  pass
- def EndGetRequestStream(self,asyncResult):
-  """
+        pass
+
+    def EndGetRequestStream(self, asyncResult):
+        """
   EndGetRequestStream(self: FtpWebRequest,asyncResult: IAsyncResult) -> Stream
 
   
@@ -75,9 +79,10 @@ class FtpWebRequest(WebRequest,ISerializable):
 
    Returns: A writable System.IO.Stream instance associated with this instance.
   """
-  pass
- def EndGetResponse(self,asyncResult):
-  """
+        pass
+
+    def EndGetResponse(self, asyncResult):
+        """
   EndGetResponse(self: FtpWebRequest,asyncResult: IAsyncResult) -> WebResponse
 
   
@@ -96,9 +101,10 @@ class FtpWebRequest(WebRequest,ISerializable):
 
     object contains the FTP server's response to the request.
   """
-  pass
- def GetObjectData(self,*args):
-  """
+        pass
+
+    def GetObjectData(self, *args):
+        """
   GetObjectData(self: WebRequest,serializationInfo: SerializationInfo,streamingContext: StreamingContext)
 
    Populates a System.Runtime.Serialization.SerializationInfo with the data needed to serialize the 
@@ -115,9 +121,10 @@ class FtpWebRequest(WebRequest,ISerializable):
 
     serialization.
   """
-  pass
- def GetRequestStream(self):
-  """
+        pass
+
+    def GetRequestStream(self):
+        """
   GetRequestStream(self: FtpWebRequest) -> Stream
 
   
@@ -128,9 +135,10 @@ class FtpWebRequest(WebRequest,ISerializable):
 
     request.
   """
-  pass
- def GetResponse(self):
-  """
+        pass
+
+    def GetResponse(self):
+        """
   GetResponse(self: FtpWebRequest) -> WebResponse
 
   
@@ -141,9 +149,10 @@ class FtpWebRequest(WebRequest,ISerializable):
 
     object contains the FTP server's response to the request.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -174,12 +183,16 @@ class FtpWebRequest(WebRequest,ISerializable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- ClientCertificates=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the certificates used for establishing an encrypted connection to the FTP server.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    ClientCertificates = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the certificates used for establishing an encrypted connection to the FTP server.
 
 
 
@@ -191,8 +204,10 @@ Set: ClientCertificates(self: FtpWebRequest)=value
 
 """
 
- ConnectionGroupName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the connection group that contains the service point used to send the current request.
+    ConnectionGroupName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the connection group that contains the service point used to send the current request.
 
 
 
@@ -204,8 +219,10 @@ Set: ConnectionGroupName(self: FtpWebRequest)=value
 
 """
 
- ContentLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that is ignored by the System.Net.FtpWebRequest class.
+    ContentLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that is ignored by the System.Net.FtpWebRequest class.
 
 
 
@@ -217,8 +234,10 @@ Set: ContentLength(self: FtpWebRequest)=value
 
 """
 
- ContentOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a byte offset into the file being downloaded by this request.
+    ContentOffset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a byte offset into the file being downloaded by this request.
 
 
 
@@ -230,8 +249,10 @@ Set: ContentOffset(self: FtpWebRequest)=value
 
 """
 
- ContentType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Always throws a System.NotSupportedException.
+    ContentType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Always throws a System.NotSupportedException.
 
 
 
@@ -243,8 +264,10 @@ Set: ContentType(self: FtpWebRequest)=value
 
 """
 
- Credentials=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the credentials used to communicate with the FTP server.
+    Credentials = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the credentials used to communicate with the FTP server.
 
 
 
@@ -256,8 +279,8 @@ Set: Credentials(self: FtpWebRequest)=value
 
 """
 
- EnableSsl=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a System.Boolean that specifies that an SSL connection should be used.
+    EnableSsl = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a System.Boolean that specifies that an SSL connection should be used.
 
 
 
@@ -269,8 +292,8 @@ Set: EnableSsl(self: FtpWebRequest)=value
 
 """
 
- Headers=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an empty System.Net.WebHeaderCollection object.
+    Headers = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an empty System.Net.WebHeaderCollection object.
 
 
 
@@ -282,8 +305,8 @@ Set: Headers(self: FtpWebRequest)=value
 
 """
 
- KeepAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a System.Boolean value that specifies whether the control connection to the FTP server is closed after the request completes.
+    KeepAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a System.Boolean value that specifies whether the control connection to the FTP server is closed after the request completes.
 
 
 
@@ -295,8 +318,8 @@ Set: KeepAlive(self: FtpWebRequest)=value
 
 """
 
- Method=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the command to send to the FTP server.
+    Method = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the command to send to the FTP server.
 
 
 
@@ -308,8 +331,10 @@ Set: Method(self: FtpWebRequest)=value
 
 """
 
- PreAuthenticate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Always throws a System.NotSupportedException.
+    PreAuthenticate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Always throws a System.NotSupportedException.
 
 
 
@@ -321,8 +346,8 @@ Set: PreAuthenticate(self: FtpWebRequest)=value
 
 """
 
- Proxy=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the proxy used to communicate with the FTP server.
+    Proxy = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the proxy used to communicate with the FTP server.
 
 
 
@@ -334,8 +359,10 @@ Set: Proxy(self: FtpWebRequest)=value
 
 """
 
- ReadWriteTimeout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a time-out when reading from or writing to a stream.
+    ReadWriteTimeout = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a time-out when reading from or writing to a stream.
 
 
 
@@ -347,8 +374,8 @@ Set: ReadWriteTimeout(self: FtpWebRequest)=value
 
 """
 
- RenameTo=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the new name of a file being renamed.
+    RenameTo = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the new name of a file being renamed.
 
 
 
@@ -360,8 +387,10 @@ Set: RenameTo(self: FtpWebRequest)=value
 
 """
 
- RequestUri=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the URI requested by this instance.
+    RequestUri = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the URI requested by this instance.
 
 
 
@@ -371,8 +400,10 @@ Get: RequestUri(self: FtpWebRequest) -> Uri
 
 """
 
- ServicePoint=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Net.ServicePoint object used to connect to the FTP server.
+    ServicePoint = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Net.ServicePoint object used to connect to the FTP server.
 
 
 
@@ -382,8 +413,8 @@ Get: ServicePoint(self: FtpWebRequest) -> ServicePoint
 
 """
 
- Timeout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the number of milliseconds to wait for a request.
+    Timeout = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the number of milliseconds to wait for a request.
 
 
 
@@ -395,8 +426,8 @@ Set: Timeout(self: FtpWebRequest)=value
 
 """
 
- UseBinary=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a System.Boolean value that specifies the data type for file transfers.
+    UseBinary = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a System.Boolean value that specifies the data type for file transfers.
 
 
 
@@ -408,8 +439,10 @@ Set: UseBinary(self: FtpWebRequest)=value
 
 """
 
- UseDefaultCredentials=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Always throws a System.NotSupportedException.
+    UseDefaultCredentials = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Always throws a System.NotSupportedException.
 
 
 
@@ -421,8 +454,10 @@ Set: UseDefaultCredentials(self: FtpWebRequest)=value
 
 """
 
- UsePassive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the behavior of a client application's data transfer process.
+    UsePassive = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the behavior of a client application's data transfer process.
 
 
 
@@ -434,6 +469,4 @@ Set: UsePassive(self: FtpWebRequest)=value
 
 """
 
-
- DefaultCachePolicy=None
-
+    DefaultCachePolicy = None

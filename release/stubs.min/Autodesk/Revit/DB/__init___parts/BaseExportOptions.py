@@ -1,19 +1,22 @@
-class BaseExportOptions(object,IDisposable):
- """ The base class for options used to export DWG,DXF and DGN format files. """
- def Dispose(self):
-  """ Dispose(self: BaseExportOptions) """
-  pass
- def GetExportFontTable(self):
-  """
+class BaseExportOptions(object, IDisposable):
+    """ The base class for options used to export DWG,DXF and DGN format files. """
+
+    def Dispose(self):
+        """ Dispose(self: BaseExportOptions) """
+        pass
+
+    def GetExportFontTable(self):
+        """
   GetExportFontTable(self: BaseExportOptions) -> ExportFontTable
 
   
 
    Gets font table.
   """
-  pass
- def GetExportLayerTable(self):
-  """
+        pass
+
+    def GetExportLayerTable(self):
+        """
   GetExportLayerTable(self: BaseExportOptions) -> ExportLayerTable
 
   
@@ -22,9 +25,10 @@ class BaseExportOptions(object,IDisposable):
 
    Returns: The layer table.
   """
-  pass
- def GetExportLinetypeTable(self):
-  """
+        pass
+
+    def GetExportLinetypeTable(self):
+        """
   GetExportLinetypeTable(self: BaseExportOptions) -> ExportLinetypeTable
 
   
@@ -33,9 +37,10 @@ class BaseExportOptions(object,IDisposable):
 
    Returns: The line type table.
   """
-  pass
- def GetExportPatternTable(self):
-  """
+        pass
+
+    def GetExportPatternTable(self):
+        """
   GetExportPatternTable(self: BaseExportOptions) -> ExportPatternTable
 
   
@@ -44,10 +49,11 @@ class BaseExportOptions(object,IDisposable):
 
    Returns: The pattern table.
   """
-  pass
- @staticmethod
- def GetPredefinedSetupNames(document):
-  """
+        pass
+
+    @staticmethod
+    def GetPredefinedSetupNames(document):
+        """
   GetPredefinedSetupNames(document: Document) -> IList[str]
 
   
@@ -60,12 +66,14 @@ class BaseExportOptions(object,IDisposable):
 
    Returns: An array of strings representing names of predefined setups.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: BaseExportOptions,disposing: bool) """
-  pass
- def SetExportFontTable(self,fontTable):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: BaseExportOptions,disposing: bool) """
+        pass
+
+    def SetExportFontTable(self, fontTable):
+        """
   SetExportFontTable(self: BaseExportOptions,fontTable: ExportFontTable)
 
    Sets font table to option.
@@ -74,9 +82,10 @@ class BaseExportOptions(object,IDisposable):
 
    fontTable: The font table to be set.
   """
-  pass
- def SetExportLayerTable(self,layerTable):
-  """
+        pass
+
+    def SetExportLayerTable(self, layerTable):
+        """
   SetExportLayerTable(self: BaseExportOptions,layerTable: ExportLayerTable)
 
    Sets layer table back to option
@@ -85,9 +94,10 @@ class BaseExportOptions(object,IDisposable):
 
    layerTable: The layer table to be set
   """
-  pass
- def SetExportLinetypeTable(self,linetypeTable):
-  """
+        pass
+
+    def SetExportLinetypeTable(self, linetypeTable):
+        """
   SetExportLinetypeTable(self: BaseExportOptions,linetypeTable: ExportLinetypeTable)
 
    Sets the line type table to use during export.
@@ -96,9 +106,10 @@ class BaseExportOptions(object,IDisposable):
 
    linetypeTable: The line type table to be set.
   """
-  pass
- def SetExportPatternTable(self,patternTable):
-  """
+        pass
+
+    def SetExportPatternTable(self, patternTable):
+        """
   SetExportPatternTable(self: BaseExportOptions,patternTable: ExportPatternTable)
 
    Sets the pattern table to use during export.
@@ -107,21 +118,26 @@ class BaseExportOptions(object,IDisposable):
 
    patternTable: The pattern table to be set.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Colors=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Export color mode.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Colors = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Export color mode.
 
    Default value is ExportColorMode.IndexColors.
 
@@ -135,8 +151,10 @@ Set: Colors(self: BaseExportOptions)=value
 
 """
 
- HatchPatternsFileName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Custom hatch patterns (pat) file name.
+    HatchPatternsFileName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Custom hatch patterns (pat) file name.
 
 
 
@@ -148,8 +166,10 @@ Set: HatchPatternsFileName(self: BaseExportOptions)=value
 
 """
 
- HideReferencePlane=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether or not to hide reference planes.
+    HideReferencePlane = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether or not to hide reference planes.
 
    Default value is false.
 
@@ -163,8 +183,10 @@ Set: HideReferencePlane(self: BaseExportOptions)=value
 
 """
 
- HideScopeBox=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether or not to hide the scope box.
+    HideScopeBox = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether or not to hide the scope box.
 
    Default value is false.
 
@@ -178,8 +200,10 @@ Set: HideScopeBox(self: BaseExportOptions)=value
 
 """
 
- HideUnreferenceViewTags=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether or not to hide unreference view tags.
+    HideUnreferenceViewTags = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether or not to hide unreference view tags.
 
    Default value is false.
 
@@ -193,8 +217,10 @@ Set: HideUnreferenceViewTags(self: BaseExportOptions)=value
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -204,8 +230,10 @@ Get: IsValidObject(self: BaseExportOptions) -> bool
 
 """
 
- LayerMapping=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Name of a layer settings standard or filename (with custom layer settings).
+    LayerMapping = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Name of a layer settings standard or filename (with custom layer settings).
 
    Valid standards are: DGNV7 (only for DGN),AIA,CP83,BS1192,and ISO13567.
 
@@ -223,8 +251,10 @@ Set: LayerMapping(self: BaseExportOptions)=value
 
 """
 
- PreserveCoincidentLines=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether or not to preserve coincident lines.
+    PreserveCoincidentLines = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether or not to preserve coincident lines.
 
    Default value is false.
 
@@ -238,8 +268,10 @@ Set: PreserveCoincidentLines(self: BaseExportOptions)=value
 
 """
 
- PropOverrides=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """How to export overridden object styles.
+    PropOverrides = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """How to export overridden object styles.
 
    Default value is PropOverrideMode.ByEntity.
 
@@ -252,5 +284,3 @@ Get: PropOverrides(self: BaseExportOptions) -> PropOverrideMode
 Set: PropOverrides(self: BaseExportOptions)=value
 
 """
-
-

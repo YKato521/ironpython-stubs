@@ -1,7 +1,8 @@
 class IExternalCommandAvailability:
- """ An interface that should be implemented to provide the implementation for a accessibility check for a Revit add-in External Command. """
- def IsCommandAvailable(self,applicationData,selectedCategories):
-  """
+    """ An interface that should be implemented to provide the implementation for a accessibility check for a Revit add-in External Command. """
+
+    def IsCommandAvailable(self, applicationData, selectedCategories):
+        """
   IsCommandAvailable(self: IExternalCommandAvailability,applicationData: UIApplication,selectedCategories: CategorySet) -> bool
 
   
@@ -36,7 +37,8 @@ class IExternalCommandAvailability:
 
     command.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

@@ -1,5 +1,11 @@
-class SocketPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStackWalk,IUnrestrictedPermission):
- """
+class SocketPermission(
+    CodeAccessPermission,
+    IPermission,
+    ISecurityEncodable,
+    IStackWalk,
+    IUnrestrictedPermission,
+):
+    """
  Controls rights to make or accept connections on a transport address.
 
  
@@ -8,8 +14,9 @@ class SocketPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStac
 
  SocketPermission(access: NetworkAccess,transport: TransportType,hostName: str,portNumber: int)
  """
- def AddPermission(self,access,transport,hostName,portNumber):
-  """
+
+    def AddPermission(self, access, transport, hostName, portNumber):
+        """
   AddPermission(self: SocketPermission,access: NetworkAccess,transport: TransportType,hostName: str,portNumber: int)
 
    Adds a permission to the set of permissions for a transport address.
@@ -24,9 +31,10 @@ class SocketPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStac
 
    portNumber: The port number for the transport address.
   """
-  pass
- def Copy(self):
-  """
+        pass
+
+    def Copy(self):
+        """
   Copy(self: SocketPermission) -> IPermission
 
   
@@ -35,9 +43,10 @@ class SocketPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStac
 
    Returns: A new instance of the System.Net.SocketPermission class that is a copy of the current instance.
   """
-  pass
- def FromXml(self,securityElement):
-  """
+        pass
+
+    def FromXml(self, securityElement):
+        """
   FromXml(self: SocketPermission,securityElement: SecurityElement)
 
    Reconstructs a System.Net.SocketPermission instance for an XML encoding.
@@ -46,9 +55,10 @@ class SocketPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStac
 
    securityElement: The XML encoding used to reconstruct the System.Net.SocketPermission instance.
   """
-  pass
- def Intersect(self,target):
-  """
+        pass
+
+    def Intersect(self, target):
+        """
   Intersect(self: SocketPermission,target: IPermission) -> IPermission
 
   
@@ -65,9 +75,10 @@ class SocketPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStac
 
     the target parameter is a null reference,the method returns null.
   """
-  pass
- def IsSubsetOf(self,target):
-  """
+        pass
+
+    def IsSubsetOf(self, target):
+        """
   IsSubsetOf(self: SocketPermission,target: IPermission) -> bool
 
   
@@ -84,9 +95,10 @@ class SocketPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStac
 
     defines a subset of target permissions; otherwise,false.
   """
-  pass
- def IsUnrestricted(self):
-  """
+        pass
+
+    def IsUnrestricted(self):
+        """
   IsUnrestricted(self: SocketPermission) -> bool
 
   
@@ -97,9 +109,10 @@ class SocketPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStac
 
     System.Security.Permissions.PermissionState; otherwise,false.
   """
-  pass
- def ToXml(self):
-  """
+        pass
+
+    def ToXml(self):
+        """
   ToXml(self: SocketPermission) -> SecurityElement
 
   
@@ -110,9 +123,10 @@ class SocketPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStac
 
     System.Net.SocketPermission instance,including state information.
   """
-  pass
- def Union(self,target):
-  """
+        pass
+
+    def Union(self, target):
+        """
   Union(self: SocketPermission,target: IPermission) -> IPermission
 
   
@@ -129,24 +143,31 @@ class SocketPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStac
 
     current instance.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,state: PermissionState)
 
   __new__(cls: type,access: NetworkAccess,transport: TransportType,hostName: str,portNumber: int)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- AcceptList=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a list of System.Net.EndpointPermission instances that identifies the endpoints that can be accepted under this permission instance.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AcceptList = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a list of System.Net.EndpointPermission instances that identifies the endpoints that can be accepted under this permission instance.
 
 
 
@@ -156,8 +177,10 @@ Get: AcceptList(self: SocketPermission) -> IEnumerator
 
 """
 
- ConnectList=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a list of System.Net.EndpointPermission instances that identifies the endpoints that can be connected to under this permission instance.
+    ConnectList = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a list of System.Net.EndpointPermission instances that identifies the endpoints that can be connected to under this permission instance.
 
 
 
@@ -167,6 +190,4 @@ Get: ConnectList(self: SocketPermission) -> IEnumerator
 
 """
 
-
- AllPorts=-1
-
+    AllPorts = -1

@@ -1,5 +1,5 @@
-class ElectricalDemandFactorDefinition(Element,IDisposable):
- """
+class ElectricalDemandFactorDefinition(Element, IDisposable):
+    """
  The ElectricalDemandFactorDef class represents a serialized version of an instance of
 
     demand factor definition.  It has a name,rule type,and values for the rules that are serialized.
@@ -8,8 +8,9 @@ class ElectricalDemandFactorDefinition(Element,IDisposable):
 
  ElectricalDemandFactorDefinition()
  """
- def AddValue(self,dfValue):
-  """
+
+    def AddValue(self, dfValue):
+        """
   AddValue(self: ElectricalDemandFactorDefinition,dfValue: ElectricalDemandFactorValue)
 
    Adds a value to the value set for this demand factor definition
@@ -18,17 +19,19 @@ class ElectricalDemandFactorDefinition(Element,IDisposable):
 
    dfValue: Value to add to the set
   """
-  pass
- def ClearValues(self):
-  """
+        pass
+
+    def ClearValues(self):
+        """
   ClearValues(self: ElectricalDemandFactorDefinition)
 
    Clears all the values stored for this demand factor definition.
   """
-  pass
- @staticmethod
- def Create(ADoc,strName):
-  """
+        pass
+
+    @staticmethod
+    def Create(ADoc, strName):
+        """
   Create(ADoc: Document,strName: str) -> ElectricalDemandFactorDefinition
 
   
@@ -43,12 +46,14 @@ class ElectricalDemandFactorDefinition(Element,IDisposable):
 
    Returns: The newly created demand factor definition element.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def GetApplicableDemandFactor(self,numberOrLoad):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def GetApplicableDemandFactor(self, numberOrLoad):
+        """
   GetApplicableDemandFactor(self: ElectricalDemandFactorDefinition,numberOrLoad: float) -> float
 
   
@@ -67,33 +72,38 @@ class ElectricalDemandFactorDefinition(Element,IDisposable):
 
    Returns: The applicable demand factor.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetValues(self):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetValues(self):
+        """
   GetValues(self: ElectricalDemandFactorDefinition) -> ICollection[ElectricalDemandFactorValue]
 
   
 
    Provides access to the value set stored with this demand factor definition
   """
-  pass
- def GetValuesCount(self):
-  """
+        pass
+
+    def GetValuesCount(self):
+        """
   GetValuesCount(self: ElectricalDemandFactorDefinition) -> int
 
   
 
    Returns the number of values in the set.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def RemoveValue(self,dfValue):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def RemoveValue(self, dfValue):
+        """
   RemoveValue(self: ElectricalDemandFactorDefinition,dfValue: ElectricalDemandFactorValue)
 
    Removes a value to the value set for this demand factor definition
@@ -102,24 +112,32 @@ class ElectricalDemandFactorDefinition(Element,IDisposable):
 
    dfValue: Value to remove from the set
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetValues(self,values):
-  """ SetValues(self: ElectricalDemandFactorDefinition,values: ICollection[ElectricalDemandFactorValue]) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- AdditionalLoad=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Additional load to be included during demand load calculation.
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetValues(self, values):
+        """ SetValues(self: ElectricalDemandFactorDefinition,values: ICollection[ElectricalDemandFactorValue]) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    AdditionalLoad = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Additional load to be included during demand load calculation.
 
 
 
@@ -131,8 +149,10 @@ Set: AdditionalLoad(self: ElectricalDemandFactorDefinition)=value
 
 """
 
- IncludeAdditionalLoad=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Should the additional load (if set) be included in demand load calculations.
+    IncludeAdditionalLoad = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Should the additional load (if set) be included in demand load calculations.
 
 
 
@@ -144,8 +164,8 @@ Set: IncludeAdditionalLoad(self: ElectricalDemandFactorDefinition)=value
 
 """
 
- RuleType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The rule type for this demand factor definition.
+    RuleType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The rule type for this demand factor definition.
 
 
 
@@ -156,5 +176,3 @@ Get: RuleType(self: ElectricalDemandFactorDefinition) -> ElectricalDemandFactorR
 Set: RuleType(self: ElectricalDemandFactorDefinition)=value
 
 """
-
-

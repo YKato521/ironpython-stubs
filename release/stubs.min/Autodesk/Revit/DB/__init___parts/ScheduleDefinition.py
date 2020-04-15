@@ -1,7 +1,8 @@
-class ScheduleDefinition(object,IDisposable):
- """ Settings that define the contents of a schedule. """
- def AddEmbeddedSchedule(self,categoryId):
-  """
+class ScheduleDefinition(object, IDisposable):
+    """ Settings that define the contents of a schedule. """
+
+    def AddEmbeddedSchedule(self, categoryId):
+        """
   AddEmbeddedSchedule(self: ScheduleDefinition,categoryId: ElementId)
 
    Adds an embedded ScheduleDefinition.
@@ -10,9 +11,10 @@ class ScheduleDefinition(object,IDisposable):
 
    categoryId: The category ID of elements to display in the embedded schedule.
   """
-  pass
- def AddField(self,*__args):
-  """
+        pass
+
+    def AddField(self, *__args):
+        """
   AddField(self: ScheduleDefinition,schedulableField: SchedulableField) -> ScheduleField
 
   
@@ -51,9 +53,10 @@ class ScheduleDefinition(object,IDisposable):
 
    Returns: The new field.
   """
-  pass
- def AddFilter(self,filter):
-  """
+        pass
+
+    def AddFilter(self, filter):
+        """
   AddFilter(self: ScheduleDefinition,filter: ScheduleFilter)
 
    Adds a new filter at the end of the list.
@@ -62,9 +65,10 @@ class ScheduleDefinition(object,IDisposable):
 
    filter: The filter to add.
   """
-  pass
- def AddSortGroupField(self,sortGroupField):
-  """
+        pass
+
+    def AddSortGroupField(self, sortGroupField):
+        """
   AddSortGroupField(self: ScheduleDefinition,sortGroupField: ScheduleSortGroupField)
 
    Adds a new sorting/grouping field at the end of the list.
@@ -73,9 +77,10 @@ class ScheduleDefinition(object,IDisposable):
 
    sortGroupField: The sorting/grouping field to add.
   """
-  pass
- def CanFilter(self):
-  """
+        pass
+
+    def CanFilter(self):
+        """
   CanFilter(self: ScheduleDefinition) -> bool
 
   
@@ -84,9 +89,10 @@ class ScheduleDefinition(object,IDisposable):
 
    Returns: True if this ScheduleDefinition supports filters,false otherwise.
   """
-  pass
- def CanFilterByGlobalParameters(self,fieldId):
-  """
+        pass
+
+    def CanFilterByGlobalParameters(self, fieldId):
+        """
   CanFilterByGlobalParameters(self: ScheduleDefinition,fieldId: ScheduleFieldId) -> bool
 
   
@@ -101,9 +107,10 @@ class ScheduleDefinition(object,IDisposable):
 
     otherwise.
   """
-  pass
- def CanFilterByParameterExistence(self,fieldId):
-  """
+        pass
+
+    def CanFilterByParameterExistence(self, fieldId):
+        """
   CanFilterByParameterExistence(self: ScheduleDefinition,fieldId: ScheduleFieldId) -> bool
 
   
@@ -116,9 +123,10 @@ class ScheduleDefinition(object,IDisposable):
 
    Returns: True if the field can be used with a HasParameter filter,false otherwise.
   """
-  pass
- def CanFilterBySubstring(self,fieldId):
-  """
+        pass
+
+    def CanFilterBySubstring(self, fieldId):
+        """
   CanFilterBySubstring(self: ScheduleDefinition,fieldId: ScheduleFieldId) -> bool
 
   
@@ -131,9 +139,10 @@ class ScheduleDefinition(object,IDisposable):
 
    Returns: True if the field can be used with a substring-based filter,false otherwise.
   """
-  pass
- def CanFilterByValue(self,fieldId):
-  """
+        pass
+
+    def CanFilterByValue(self, fieldId):
+        """
   CanFilterByValue(self: ScheduleDefinition,fieldId: ScheduleFieldId) -> bool
 
   
@@ -146,9 +155,10 @@ class ScheduleDefinition(object,IDisposable):
 
    Returns: True if the field can be used with a value based filter,false otherwise.
   """
-  pass
- def CanHaveEmbeddedSchedule(self):
-  """
+        pass
+
+    def CanHaveEmbeddedSchedule(self):
+        """
   CanHaveEmbeddedSchedule(self: ScheduleDefinition) -> bool
 
   
@@ -167,9 +177,10 @@ class ScheduleDefinition(object,IDisposable):
 
     false otherwise.
   """
-  pass
- def CanIncludeLinkedFiles(self):
-  """
+        pass
+
+    def CanIncludeLinkedFiles(self):
+        """
   CanIncludeLinkedFiles(self: ScheduleDefinition) -> bool
 
   
@@ -184,9 +195,10 @@ class ScheduleDefinition(object,IDisposable):
 
    Returns: True if elements from linked files can be included,false otherwise.
   """
-  pass
- def CanSortByField(self,fieldId):
-  """
+        pass
+
+    def CanSortByField(self, fieldId):
+        """
   CanSortByField(self: ScheduleDefinition,fieldId: ScheduleFieldId) -> bool
 
   
@@ -199,33 +211,38 @@ class ScheduleDefinition(object,IDisposable):
 
    Returns: True if the field can be used for sorting/grouping,false otherwise.
   """
-  pass
- def ClearFields(self):
-  """
+        pass
+
+    def ClearFields(self):
+        """
   ClearFields(self: ScheduleDefinition)
 
    Removes all fields.
   """
-  pass
- def ClearFilters(self):
-  """
+        pass
+
+    def ClearFilters(self):
+        """
   ClearFilters(self: ScheduleDefinition)
 
    Removes all filters.
   """
-  pass
- def ClearSortGroupFields(self):
-  """
+        pass
+
+    def ClearSortGroupFields(self):
+        """
   ClearSortGroupFields(self: ScheduleDefinition)
 
    Removes all sorting/grouping fields.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: ScheduleDefinition) """
-  pass
- def GetField(self,*__args):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: ScheduleDefinition) """
+        pass
+
+    def GetField(self, *__args):
+        """
   GetField(self: ScheduleDefinition,index: int) -> ScheduleField
 
   
@@ -250,9 +267,10 @@ class ScheduleDefinition(object,IDisposable):
 
    Returns: The field.
   """
-  pass
- def GetFieldCount(self):
-  """
+        pass
+
+    def GetFieldCount(self):
+        """
   GetFieldCount(self: ScheduleDefinition) -> int
 
   
@@ -261,9 +279,10 @@ class ScheduleDefinition(object,IDisposable):
 
    Returns: The number of fields.
   """
-  pass
- def GetFieldId(self,index):
-  """
+        pass
+
+    def GetFieldId(self, index):
+        """
   GetFieldId(self: ScheduleDefinition,index: int) -> ScheduleFieldId
 
   
@@ -276,9 +295,10 @@ class ScheduleDefinition(object,IDisposable):
 
    Returns: The field ID.
   """
-  pass
- def GetFieldIndex(self,fieldId):
-  """
+        pass
+
+    def GetFieldIndex(self, fieldId):
+        """
   GetFieldIndex(self: ScheduleDefinition,fieldId: ScheduleFieldId) -> int
 
   
@@ -291,9 +311,10 @@ class ScheduleDefinition(object,IDisposable):
 
    Returns: The field index.
   """
-  pass
- def GetFieldOrder(self):
-  """
+        pass
+
+    def GetFieldOrder(self):
+        """
   GetFieldOrder(self: ScheduleDefinition) -> IList[ScheduleFieldId]
 
   
@@ -302,9 +323,10 @@ class ScheduleDefinition(object,IDisposable):
 
    Returns: The IDs of the current list of fields.
   """
-  pass
- def GetFilter(self,index):
-  """
+        pass
+
+    def GetFilter(self, index):
+        """
   GetFilter(self: ScheduleDefinition,index: int) -> ScheduleFilter
 
   
@@ -317,9 +339,10 @@ class ScheduleDefinition(object,IDisposable):
 
    Returns: A copy of the filter.
   """
-  pass
- def GetFilterCount(self):
-  """
+        pass
+
+    def GetFilterCount(self):
+        """
   GetFilterCount(self: ScheduleDefinition) -> int
 
   
@@ -328,9 +351,10 @@ class ScheduleDefinition(object,IDisposable):
 
    Returns: The number of filters.
   """
-  pass
- def GetFilters(self):
-  """
+        pass
+
+    def GetFilters(self):
+        """
   GetFilters(self: ScheduleDefinition) -> IList[ScheduleFilter]
 
   
@@ -339,9 +363,10 @@ class ScheduleDefinition(object,IDisposable):
 
    Returns: A list of all filters.
   """
-  pass
- def GetSchedulableFields(self):
-  """
+        pass
+
+    def GetSchedulableFields(self):
+        """
   GetSchedulableFields(self: ScheduleDefinition) -> IList[SchedulableField]
 
   
@@ -360,9 +385,10 @@ class ScheduleDefinition(object,IDisposable):
     
      fields that may be included in the schedule.
   """
-  pass
- def GetSortGroupField(self,index):
-  """
+        pass
+
+    def GetSortGroupField(self, index):
+        """
   GetSortGroupField(self: ScheduleDefinition,index: int) -> ScheduleSortGroupField
 
   
@@ -375,9 +401,10 @@ class ScheduleDefinition(object,IDisposable):
 
    Returns: A copy of the sorting/grouping field.
   """
-  pass
- def GetSortGroupFieldCount(self):
-  """
+        pass
+
+    def GetSortGroupFieldCount(self):
+        """
   GetSortGroupFieldCount(self: ScheduleDefinition) -> int
 
   
@@ -386,9 +413,10 @@ class ScheduleDefinition(object,IDisposable):
 
    Returns: The number of sorting/grouping fields.
   """
-  pass
- def GetSortGroupFields(self):
-  """
+        pass
+
+    def GetSortGroupFields(self):
+        """
   GetSortGroupFields(self: ScheduleDefinition) -> IList[ScheduleSortGroupField]
 
   
@@ -397,9 +425,10 @@ class ScheduleDefinition(object,IDisposable):
 
    Returns: A list of all sorting/grouping fields.
   """
-  pass
- def GetValidCategoriesForEmbeddedSchedule(self):
-  """
+        pass
+
+    def GetValidCategoriesForEmbeddedSchedule(self):
+        """
   GetValidCategoriesForEmbeddedSchedule(self: ScheduleDefinition) -> ICollection[ElementId]
 
   
@@ -414,12 +443,14 @@ class ScheduleDefinition(object,IDisposable):
 
    Returns: The IDs of all valid categories.
   """
-  pass
- def InsertCombinedParameterField(self,data,fieldName,index):
-  """ InsertCombinedParameterField(self: ScheduleDefinition,data: IList[TableCellCombinedParameterData],fieldName: str,index: int) -> ScheduleField """
-  pass
- def InsertField(self,*__args):
-  """
+        pass
+
+    def InsertCombinedParameterField(self, data, fieldName, index):
+        """ InsertCombinedParameterField(self: ScheduleDefinition,data: IList[TableCellCombinedParameterData],fieldName: str,index: int) -> ScheduleField """
+        pass
+
+    def InsertField(self, *__args):
+        """
   InsertField(self: ScheduleDefinition,schedulableField: SchedulableField,index: int) -> ScheduleField
 
   
@@ -464,9 +495,10 @@ class ScheduleDefinition(object,IDisposable):
 
    Returns: The new field.
   """
-  pass
- def InsertFilter(self,filter,index):
-  """
+        pass
+
+    def InsertFilter(self, filter, index):
+        """
   InsertFilter(self: ScheduleDefinition,filter: ScheduleFilter,index: int)
 
    Adds a new filter at the specified position in the list.
@@ -477,9 +509,10 @@ class ScheduleDefinition(object,IDisposable):
 
    index: The index in the list of filters.
   """
-  pass
- def InsertSortGroupField(self,sortGroupField,index):
-  """
+        pass
+
+    def InsertSortGroupField(self, sortGroupField, index):
+        """
   InsertSortGroupField(self: ScheduleDefinition,sortGroupField: ScheduleSortGroupField,index: int)
 
    Adds a new sorting/grouping field at the specified position in the list.
@@ -490,9 +523,10 @@ class ScheduleDefinition(object,IDisposable):
 
    index: The index in the list of sorting/grouping fields.
   """
-  pass
- def IsSchedulableField(self,schedulableField):
-  """
+        pass
+
+    def IsSchedulableField(self, schedulableField):
+        """
   IsSchedulableField(self: ScheduleDefinition,schedulableField: SchedulableField) -> bool
 
   
@@ -511,9 +545,10 @@ class ScheduleDefinition(object,IDisposable):
 
    Returns: True if the field may be included in the schedule,false otherwise.
   """
-  pass
- def IsValidCategoryForEmbeddedSchedule(self,categoryId):
-  """
+        pass
+
+    def IsValidCategoryForEmbeddedSchedule(self, categoryId):
+        """
   IsValidCategoryForEmbeddedSchedule(self: ScheduleDefinition,categoryId: ElementId) -> bool
 
   
@@ -536,12 +571,14 @@ class ScheduleDefinition(object,IDisposable):
 
     otherwise.
   """
-  pass
- def IsValidCombinedParameters(self,data):
-  """ IsValidCombinedParameters(self: ScheduleDefinition,data: IList[TableCellCombinedParameterData]) -> bool """
-  pass
- def IsValidFieldId(self,fieldId):
-  """
+        pass
+
+    def IsValidCombinedParameters(self, data):
+        """ IsValidCombinedParameters(self: ScheduleDefinition,data: IList[TableCellCombinedParameterData]) -> bool """
+        pass
+
+    def IsValidFieldId(self, fieldId):
+        """
   IsValidFieldId(self: ScheduleDefinition,fieldId: ScheduleFieldId) -> bool
 
   
@@ -558,9 +595,10 @@ class ScheduleDefinition(object,IDisposable):
 
    Returns: True if the field ID is valid,false otherwise.
   """
-  pass
- def IsValidFieldIndex(self,index):
-  """
+        pass
+
+    def IsValidFieldIndex(self, index):
+        """
   IsValidFieldIndex(self: ScheduleDefinition,index: int) -> bool
 
   
@@ -577,19 +615,22 @@ class ScheduleDefinition(object,IDisposable):
 
    Returns: True if the field index is valid,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: ScheduleDefinition,disposing: bool) """
-  pass
- def RemoveEmbeddedSchedule(self):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: ScheduleDefinition,disposing: bool) """
+        pass
+
+    def RemoveEmbeddedSchedule(self):
+        """
   RemoveEmbeddedSchedule(self: ScheduleDefinition)
 
    Removes the embedded ScheduleDefinition.
   """
-  pass
- def RemoveField(self,*__args):
-  """
+        pass
+
+    def RemoveField(self, *__args):
+        """
   RemoveField(self: ScheduleDefinition,index: int)
 
    Removes a field.
@@ -606,9 +647,10 @@ class ScheduleDefinition(object,IDisposable):
 
    fieldId: The ID of the field to remove.
   """
-  pass
- def RemoveFilter(self,index):
-  """
+        pass
+
+    def RemoveFilter(self, index):
+        """
   RemoveFilter(self: ScheduleDefinition,index: int)
 
    Removes a filter.
@@ -617,9 +659,10 @@ class ScheduleDefinition(object,IDisposable):
 
    index: The index of the filter to remove.
   """
-  pass
- def RemoveSortGroupField(self,index):
-  """
+        pass
+
+    def RemoveSortGroupField(self, index):
+        """
   RemoveSortGroupField(self: ScheduleDefinition,index: int)
 
    Removes a sorting/grouping field.
@@ -628,12 +671,14 @@ class ScheduleDefinition(object,IDisposable):
 
    index: The index of the sorting/grouping field to remove.
   """
-  pass
- def SetFieldOrder(self,fieldIds):
-  """ SetFieldOrder(self: ScheduleDefinition,fieldIds: IList[ScheduleFieldId]) """
-  pass
- def SetFilter(self,index,filter):
-  """
+        pass
+
+    def SetFieldOrder(self, fieldIds):
+        """ SetFieldOrder(self: ScheduleDefinition,fieldIds: IList[ScheduleFieldId]) """
+        pass
+
+    def SetFilter(self, index, filter):
+        """
   SetFilter(self: ScheduleDefinition,index: int,filter: ScheduleFilter)
 
    Replaces a filter.
@@ -644,12 +689,14 @@ class ScheduleDefinition(object,IDisposable):
 
    filter: The new filter.
   """
-  pass
- def SetFilters(self,filters):
-  """ SetFilters(self: ScheduleDefinition,filters: IList[ScheduleFilter]) """
-  pass
- def SetSortGroupField(self,index,sortGroupField):
-  """
+        pass
+
+    def SetFilters(self, filters):
+        """ SetFilters(self: ScheduleDefinition,filters: IList[ScheduleFilter]) """
+        pass
+
+    def SetSortGroupField(self, index, sortGroupField):
+        """
   SetSortGroupField(self: ScheduleDefinition,index: int,sortGroupField: ScheduleSortGroupField)
 
    Replaces a sorting/grouping field.
@@ -660,24 +707,32 @@ class ScheduleDefinition(object,IDisposable):
 
    sortGroupField: The new sorting/grouping field.
   """
-  pass
- def SetSortGroupFields(self,sortGroupFields):
-  """ SetSortGroupFields(self: ScheduleDefinition,sortGroupFields: IList[ScheduleSortGroupField]) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- AreaSchemeId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """In an area schedule,the ID of the area scheme to display.
+        pass
+
+    def SetSortGroupFields(self, sortGroupFields):
+        """ SetSortGroupFields(self: ScheduleDefinition,sortGroupFields: IList[ScheduleSortGroupField]) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    AreaSchemeId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """In an area schedule,the ID of the area scheme to display.
 
 
 
@@ -687,8 +742,10 @@ Get: AreaSchemeId(self: ScheduleDefinition) -> ElementId
 
 """
 
- CategoryId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The category ID of elements appearing in the schedule.
+    CategoryId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The category ID of elements appearing in the schedule.
 
 
 
@@ -698,8 +755,10 @@ Get: CategoryId(self: ScheduleDefinition) -> ElementId
 
 """
 
- EmbeddedDefinition=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The embedded ScheduleDefinition.
+    EmbeddedDefinition = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The embedded ScheduleDefinition.
 
 
 
@@ -709,8 +768,8 @@ Get: EmbeddedDefinition(self: ScheduleDefinition) -> ScheduleDefinition
 
 """
 
- FamilyId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """In a note block schedule,the ID of the Generic Annotation family
+    FamilyId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """In a note block schedule,the ID of the Generic Annotation family
 
    displayed by the schedule.
 
@@ -722,8 +781,10 @@ Get: FamilyId(self: ScheduleDefinition) -> ElementId
 
 """
 
- GrandTotalTitle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The title name is used to display at the grand total row. The name is "Grand total",expressed in the Revit session language,by default.
+    GrandTotalTitle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The title name is used to display at the grand total row. The name is "Grand total",expressed in the Revit session language,by default.
 
 
 
@@ -735,8 +796,10 @@ Set: GrandTotalTitle(self: ScheduleDefinition)=value
 
 """
 
- HasEmbeddedSchedule=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if this ScheduleDefinition has an embedded ScheduleDefinition.
+    HasEmbeddedSchedule = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if this ScheduleDefinition has an embedded ScheduleDefinition.
 
 
 
@@ -746,8 +809,10 @@ Get: HasEmbeddedSchedule(self: ScheduleDefinition) -> bool
 
 """
 
- IncludeLinkedFiles=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the schedule includes elements from linked files.
+    IncludeLinkedFiles = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the schedule includes elements from linked files.
 
 
 
@@ -759,8 +824,10 @@ Set: IncludeLinkedFiles(self: ScheduleDefinition)=value
 
 """
 
- IsEmbedded=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if this is an embedded ScheduleDefinition.
+    IsEmbedded = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if this is an embedded ScheduleDefinition.
 
 
 
@@ -770,8 +837,10 @@ Get: IsEmbedded(self: ScheduleDefinition) -> bool
 
 """
 
- IsItemized=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the schedule displays each element on a separate row or
+    IsItemized = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the schedule displays each element on a separate row or
 
    combines multiple grouped elements onto the same row.
 
@@ -785,8 +854,10 @@ Set: IsItemized(self: ScheduleDefinition)=value
 
 """
 
- IsKeySchedule=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the schedule is a key schedule.
+    IsKeySchedule = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the schedule is a key schedule.
 
 
 
@@ -796,8 +867,10 @@ Get: IsKeySchedule(self: ScheduleDefinition) -> bool
 
 """
 
- IsMaterialTakeoff=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the schedule is a material takeoff.
+    IsMaterialTakeoff = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the schedule is a material takeoff.
 
 
 
@@ -807,8 +880,10 @@ Get: IsMaterialTakeoff(self: ScheduleDefinition) -> bool
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -818,8 +893,10 @@ Get: IsValidObject(self: ScheduleDefinition) -> bool
 
 """
 
- ShowGrandTotal=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if a grand total row should be displayed at the bottom of
+    ShowGrandTotal = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if a grand total row should be displayed at the bottom of
 
    the schedule.
 
@@ -833,8 +910,10 @@ Set: ShowGrandTotal(self: ScheduleDefinition)=value
 
 """
 
- ShowGrandTotalCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the grand total row should display a count of elements
+    ShowGrandTotalCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the grand total row should display a count of elements
 
    in the schedule.
 
@@ -848,8 +927,10 @@ Set: ShowGrandTotalCount(self: ScheduleDefinition)=value
 
 """
 
- ShowGrandTotalTitle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the grand total row should display a title.
+    ShowGrandTotalTitle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the grand total row should display a title.
 
 
 
@@ -861,8 +942,10 @@ Set: ShowGrandTotalTitle(self: ScheduleDefinition)=value
 
 """
 
- ShowHeaders=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the headers will be displayed in the schedule.
+    ShowHeaders = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the headers will be displayed in the schedule.
 
 
 
@@ -874,8 +957,8 @@ Set: ShowHeaders(self: ScheduleDefinition)=value
 
 """
 
- ShowTitle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the title will be displayed in the schedule.
+    ShowTitle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Indicates if the title will be displayed in the schedule.
 
 
 
@@ -886,5 +969,3 @@ Get: ShowTitle(self: ScheduleDefinition) -> bool
 Set: ShowTitle(self: ScheduleDefinition)=value
 
 """
-
-

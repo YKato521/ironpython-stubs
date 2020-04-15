@@ -1,13 +1,21 @@
-class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputElement,ISupportInitialize,IQueryAmbient):
- """
+class ColumnDefinition(
+    DefinitionBase,
+    IInputElement,
+    IAnimatable,
+    IFrameworkInputElement,
+    ISupportInitialize,
+    IQueryAmbient,
+):
+    """
  Defines column-specific properties that apply to System.Windows.Controls.Grid elements.
 
  
 
  ColumnDefinition()
  """
- def AddLogicalChild(self,*args):
-  """
+
+    def AddLogicalChild(self, *args):
+        """
   AddLogicalChild(self: FrameworkContentElement,child: object)
 
    Adds the provided element as a child of this element.
@@ -16,9 +24,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    child: The child element to be added.
   """
-  pass
- def GetUIParentCore(self,*args):
-  """
+        pass
+
+    def GetUIParentCore(self, *args):
+        """
   GetUIParentCore(self: FrameworkContentElement) -> DependencyObject
 
   
@@ -35,9 +44,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
     has a non-visual parent connection.
   """
-  pass
- def OnContextMenuClosing(self,*args):
-  """
+        pass
+
+    def OnContextMenuClosing(self, *args):
+        """
   OnContextMenuClosing(self: FrameworkContentElement,e: ContextMenuEventArgs)
 
    Invoked whenever the System.Windows.FrameworkContentElement.ContextMenuClosing routed event 
@@ -50,9 +60,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: Provides data about the event.
   """
-  pass
- def OnContextMenuOpening(self,*args):
-  """
+        pass
+
+    def OnContextMenuOpening(self, *args):
+        """
   OnContextMenuOpening(self: FrameworkContentElement,e: ContextMenuEventArgs)
 
    Invoked whenever the System.Windows.FrameworkContentElement.ContextMenuOpening routed event 
@@ -65,9 +76,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: Event data for the event.
   """
-  pass
- def OnCreateAutomationPeer(self,*args):
-  """
+        pass
+
+    def OnCreateAutomationPeer(self, *args):
+        """
   OnCreateAutomationPeer(self: ContentElement) -> AutomationPeer
 
   
@@ -80,9 +92,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    Returns: The type-specific System.Windows.Automation.Peers.AutomationPeer implementation.
   """
-  pass
- def OnDragEnter(self,*args):
-  """
+        pass
+
+    def OnDragEnter(self, *args):
+        """
   OnDragEnter(self: ContentElement,e: DragEventArgs)
 
    Invoked when an unhandled System.Windows.DragDrop.DragEnter�attached event reaches an element in 
@@ -97,9 +110,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.DragEventArgs that contains the event data.
   """
-  pass
- def OnDragLeave(self,*args):
-  """
+        pass
+
+    def OnDragLeave(self, *args):
+        """
   OnDragLeave(self: ContentElement,e: DragEventArgs)
 
    Invoked when an unhandled System.Windows.DragDrop.DragLeave�attached event reaches an element in 
@@ -114,9 +128,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.DragEventArgs that contains the event data.
   """
-  pass
- def OnDragOver(self,*args):
-  """
+        pass
+
+    def OnDragOver(self, *args):
+        """
   OnDragOver(self: ContentElement,e: DragEventArgs)
 
    Invoked when an unhandled System.Windows.DragDrop.DragOver�attached event reaches an element in 
@@ -131,9 +146,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.DragEventArgs that contains the event data.
   """
-  pass
- def OnDrop(self,*args):
-  """
+        pass
+
+    def OnDrop(self, *args):
+        """
   OnDrop(self: ContentElement,e: DragEventArgs)
 
    Invoked when an unhandled System.Windows.DragDrop.DragEnter�attached event reaches an element in 
@@ -148,9 +164,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.DragEventArgs that contains the event data.
   """
-  pass
- def OnGiveFeedback(self,*args):
-  """
+        pass
+
+    def OnGiveFeedback(self, *args):
+        """
   OnGiveFeedback(self: ContentElement,e: GiveFeedbackEventArgs)
 
    Invoked when an unhandled System.Windows.DragDrop.GiveFeedback�attached event reaches an element 
@@ -165,9 +182,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.GiveFeedbackEventArgs that contains the event data.
   """
-  pass
- def OnGotFocus(self,*args):
-  """
+        pass
+
+    def OnGotFocus(self, *args):
+        """
   OnGotFocus(self: FrameworkContentElement,e: RoutedEventArgs)
 
    Class handler for the System.Windows.ContentElement.GotFocus event.
@@ -176,9 +194,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: Event data for the event.
   """
-  pass
- def OnGotKeyboardFocus(self,*args):
-  """
+        pass
+
+    def OnGotKeyboardFocus(self, *args):
+        """
   OnGotKeyboardFocus(self: ContentElement,e: KeyboardFocusChangedEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Keyboard.GotKeyboardFocus�attached event reaches 
@@ -193,9 +212,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.KeyboardFocusChangedEventArgs that contains the event data.
   """
-  pass
- def OnGotMouseCapture(self,*args):
-  """
+        pass
+
+    def OnGotMouseCapture(self, *args):
+        """
   OnGotMouseCapture(self: ContentElement,e: MouseEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Mouse.GotMouseCapture�attached event reaches an 
@@ -210,9 +230,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.MouseEventArgs that contains the event data.
   """
-  pass
- def OnGotStylusCapture(self,*args):
-  """
+        pass
+
+    def OnGotStylusCapture(self, *args):
+        """
   OnGotStylusCapture(self: ContentElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.GotStylusCapture�attached event reaches an 
@@ -227,9 +248,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.StylusEventArgs that contains the event data.
   """
-  pass
- def OnGotTouchCapture(self,*args):
-  """
+        pass
+
+    def OnGotTouchCapture(self, *args):
+        """
   OnGotTouchCapture(self: ContentElement,e: TouchEventArgs)
 
    Provides class handling for the System.Windows.ContentElement.GotTouchCapture routed event that 
@@ -242,9 +264,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: A System.Windows.Input.TouchEventArgs that contains the event data.
   """
-  pass
- def OnInitialized(self,*args):
-  """
+        pass
+
+    def OnInitialized(self, *args):
+        """
   OnInitialized(self: FrameworkContentElement,e: EventArgs)
 
    Raises the System.Windows.FrameworkContentElement.Initialized event. This method is invoked 
@@ -257,9 +280,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: Event data for the event.
   """
-  pass
- def OnIsKeyboardFocusedChanged(self,*args):
-  """
+        pass
+
+    def OnIsKeyboardFocusedChanged(self, *args):
+        """
   OnIsKeyboardFocusedChanged(self: ContentElement,e: DependencyPropertyChangedEventArgs)
 
    Invoked when an unhandled System.Windows.ContentElement.IsKeyboardFocusedChanged event is raised 
@@ -272,9 +296,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.DependencyPropertyChangedEventArgs that contains the event data.
   """
-  pass
- def OnIsKeyboardFocusWithinChanged(self,*args):
-  """
+        pass
+
+    def OnIsKeyboardFocusWithinChanged(self, *args):
+        """
   OnIsKeyboardFocusWithinChanged(self: ContentElement,e: DependencyPropertyChangedEventArgs)
 
    Invoked just before the System.Windows.ContentElement.IsKeyboardFocusWithinChanged event is 
@@ -287,9 +312,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: A System.Windows.DependencyPropertyChangedEventArgs that contains the event data.
   """
-  pass
- def OnIsMouseCapturedChanged(self,*args):
-  """
+        pass
+
+    def OnIsMouseCapturedChanged(self, *args):
+        """
   OnIsMouseCapturedChanged(self: ContentElement,e: DependencyPropertyChangedEventArgs)
 
    Invoked when an unhandled System.Windows.ContentElement.IsMouseCapturedChanged event is raised 
@@ -302,9 +328,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.DependencyPropertyChangedEventArgs that contains the event data.
   """
-  pass
- def OnIsMouseCaptureWithinChanged(self,*args):
-  """
+        pass
+
+    def OnIsMouseCaptureWithinChanged(self, *args):
+        """
   OnIsMouseCaptureWithinChanged(self: ContentElement,e: DependencyPropertyChangedEventArgs)
 
    Invoked when an unhandled System.Windows.ContentElement.IsMouseCaptureWithinChanged event is 
@@ -317,9 +344,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: A System.Windows.DependencyPropertyChangedEventArgs that contains the event data.
   """
-  pass
- def OnIsMouseDirectlyOverChanged(self,*args):
-  """
+        pass
+
+    def OnIsMouseDirectlyOverChanged(self, *args):
+        """
   OnIsMouseDirectlyOverChanged(self: ContentElement,e: DependencyPropertyChangedEventArgs)
 
    Invoked when an unhandled System.Windows.ContentElement.IsMouseDirectlyOverChanged event is 
@@ -332,9 +360,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.DependencyPropertyChangedEventArgs that contains the event data.
   """
-  pass
- def OnIsStylusCapturedChanged(self,*args):
-  """
+        pass
+
+    def OnIsStylusCapturedChanged(self, *args):
+        """
   OnIsStylusCapturedChanged(self: ContentElement,e: DependencyPropertyChangedEventArgs)
 
    Invoked when an unhandled System.Windows.ContentElement.IsStylusCapturedChanged event is raised 
@@ -347,9 +376,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: A System.Windows.DependencyPropertyChangedEventArgs that contains the event data.
   """
-  pass
- def OnIsStylusCaptureWithinChanged(self,*args):
-  """
+        pass
+
+    def OnIsStylusCaptureWithinChanged(self, *args):
+        """
   OnIsStylusCaptureWithinChanged(self: ContentElement,e: DependencyPropertyChangedEventArgs)
 
    Invoked when an unhandled System.Windows.ContentElement.IsStylusCaptureWithinChanged event is 
@@ -362,9 +392,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.DependencyPropertyChangedEventArgs that contains the event data.
   """
-  pass
- def OnIsStylusDirectlyOverChanged(self,*args):
-  """
+        pass
+
+    def OnIsStylusDirectlyOverChanged(self, *args):
+        """
   OnIsStylusDirectlyOverChanged(self: ContentElement,e: DependencyPropertyChangedEventArgs)
 
    Invoked when an unhandled System.Windows.ContentElement.IsStylusDirectlyOverChanged event is 
@@ -377,9 +408,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.DependencyPropertyChangedEventArgs that contains the event data.
   """
-  pass
- def OnKeyDown(self,*args):
-  """
+        pass
+
+    def OnKeyDown(self, *args):
+        """
   OnKeyDown(self: ContentElement,e: KeyEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Keyboard.KeyDown�attached event reaches an 
@@ -394,9 +426,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.KeyEventArgs that contains the event data.
   """
-  pass
- def OnKeyUp(self,*args):
-  """
+        pass
+
+    def OnKeyUp(self, *args):
+        """
   OnKeyUp(self: ContentElement,e: KeyEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Keyboard.KeyUp�attached event reaches an element 
@@ -411,9 +444,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.KeyEventArgs that contains the event data.
   """
-  pass
- def OnLostFocus(self,*args):
-  """
+        pass
+
+    def OnLostFocus(self, *args):
+        """
   OnLostFocus(self: ContentElement,e: RoutedEventArgs)
 
    Raises the System.Windows.ContentElement.LostFocus�routed event by using the event data that is 
@@ -428,9 +462,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
     identifier for the System.Windows.ContentElement.LostFocus event.
   """
-  pass
- def OnLostKeyboardFocus(self,*args):
-  """
+        pass
+
+    def OnLostKeyboardFocus(self, *args):
+        """
   OnLostKeyboardFocus(self: ContentElement,e: KeyboardFocusChangedEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Keyboard.LostKeyboardFocus�attached event reaches 
@@ -445,9 +480,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.KeyboardFocusChangedEventArgs that contains event data.
   """
-  pass
- def OnLostMouseCapture(self,*args):
-  """
+        pass
+
+    def OnLostMouseCapture(self, *args):
+        """
   OnLostMouseCapture(self: ContentElement,e: MouseEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Mouse.LostMouseCapture�attached event reaches an 
@@ -462,9 +498,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.MouseEventArgs that contains event data.
   """
-  pass
- def OnLostStylusCapture(self,*args):
-  """
+        pass
+
+    def OnLostStylusCapture(self, *args):
+        """
   OnLostStylusCapture(self: ContentElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.LostStylusCapture�attached event reaches 
@@ -479,9 +516,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.StylusEventArgs that contains event data.
   """
-  pass
- def OnLostTouchCapture(self,*args):
-  """
+        pass
+
+    def OnLostTouchCapture(self, *args):
+        """
   OnLostTouchCapture(self: ContentElement,e: TouchEventArgs)
 
    Provides class handling for the System.Windows.ContentElement.LostTouchCapture routed event that 
@@ -494,9 +532,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: A System.Windows.Input.TouchEventArgs that contains the event data.
   """
-  pass
- def OnMouseDown(self,*args):
-  """
+        pass
+
+    def OnMouseDown(self, *args):
+        """
   OnMouseDown(self: ContentElement,e: MouseButtonEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Mouse.MouseDown�attached event reaches an element 
@@ -513,9 +552,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
     reports details about the mouse button that was pressed and the handled state.
   """
-  pass
- def OnMouseEnter(self,*args):
-  """
+        pass
+
+    def OnMouseEnter(self, *args):
+        """
   OnMouseEnter(self: ContentElement,e: MouseEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Mouse.MouseEnter�attached event is raised on this 
@@ -528,9 +568,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseLeave(self,*args):
-  """
+        pass
+
+    def OnMouseLeave(self, *args):
+        """
   OnMouseLeave(self: ContentElement,e: MouseEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Mouse.MouseLeave�attached event is raised on this 
@@ -543,9 +584,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseLeftButtonDown(self,*args):
-  """
+        pass
+
+    def OnMouseLeftButtonDown(self, *args):
+        """
   OnMouseLeftButtonDown(self: ContentElement,e: MouseButtonEventArgs)
 
    Invoked when an unhandled System.Windows.ContentElement.MouseLeftButtonDown�routed event is 
@@ -560,9 +602,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
     reports that the left mouse button was pressed.
   """
-  pass
- def OnMouseLeftButtonUp(self,*args):
-  """
+        pass
+
+    def OnMouseLeftButtonUp(self, *args):
+        """
   OnMouseLeftButtonUp(self: ContentElement,e: MouseButtonEventArgs)
 
    Invoked when an unhandled System.Windows.ContentElement.MouseLeftButtonUp�routed event reaches 
@@ -579,9 +622,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
     reports that the left mouse button was released.
   """
-  pass
- def OnMouseMove(self,*args):
-  """
+        pass
+
+    def OnMouseMove(self, *args):
+        """
   OnMouseMove(self: ContentElement,e: MouseEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Mouse.MouseMove�attached event reaches an element 
@@ -596,9 +640,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseRightButtonDown(self,*args):
-  """
+        pass
+
+    def OnMouseRightButtonDown(self, *args):
+        """
   OnMouseRightButtonDown(self: ContentElement,e: MouseButtonEventArgs)
 
    Invoked when an unhandled System.Windows.ContentElement.MouseRightButtonDown�routed event 
@@ -615,9 +660,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
     reports that the right mouse button was pressed.
   """
-  pass
- def OnMouseRightButtonUp(self,*args):
-  """
+        pass
+
+    def OnMouseRightButtonUp(self, *args):
+        """
   OnMouseRightButtonUp(self: ContentElement,e: MouseButtonEventArgs)
 
    Invoked when an unhandled System.Windows.ContentElement.MouseRightButtonUp�routed event reaches 
@@ -634,9 +680,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
     reports that the right mouse button was released.
   """
-  pass
- def OnMouseUp(self,*args):
-  """
+        pass
+
+    def OnMouseUp(self, *args):
+        """
   OnMouseUp(self: ContentElement,e: MouseButtonEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Mouse.MouseUp�routed event reaches an element in 
@@ -653,9 +700,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
     reports that the mouse button was released.
   """
-  pass
- def OnMouseWheel(self,*args):
-  """
+        pass
+
+    def OnMouseWheel(self, *args):
+        """
   OnMouseWheel(self: ContentElement,e: MouseWheelEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Mouse.MouseWheel�attached event reaches an 
@@ -670,9 +718,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.MouseWheelEventArgs that contains the event data.
   """
-  pass
- def OnPreviewDragEnter(self,*args):
-  """
+        pass
+
+    def OnPreviewDragEnter(self, *args):
+        """
   OnPreviewDragEnter(self: ContentElement,e: DragEventArgs)
 
    Invoked when an unhandled System.Windows.DragDrop.PreviewDragEnter�attached event reaches an 
@@ -687,9 +736,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.DragEventArgs that contains the event data.
   """
-  pass
- def OnPreviewDragLeave(self,*args):
-  """
+        pass
+
+    def OnPreviewDragLeave(self, *args):
+        """
   OnPreviewDragLeave(self: ContentElement,e: DragEventArgs)
 
    Invoked when an unhandled System.Windows.DragDrop.PreviewDragLeave�attached event reaches an 
@@ -704,9 +754,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.DragEventArgs that contains the event data.
   """
-  pass
- def OnPreviewDragOver(self,*args):
-  """
+        pass
+
+    def OnPreviewDragOver(self, *args):
+        """
   OnPreviewDragOver(self: ContentElement,e: DragEventArgs)
 
    Invoked when an unhandled System.Windows.DragDrop.PreviewDragOver�attached event reaches an 
@@ -721,9 +772,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.DragEventArgs that contains the event data.
   """
-  pass
- def OnPreviewDrop(self,*args):
-  """
+        pass
+
+    def OnPreviewDrop(self, *args):
+        """
   OnPreviewDrop(self: ContentElement,e: DragEventArgs)
 
    Invoked when an unhandled System.Windows.DragDrop.PreviewDrop�attached event reaches an element 
@@ -738,9 +790,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.DragEventArgs that contains the event data.
   """
-  pass
- def OnPreviewGiveFeedback(self,*args):
-  """
+        pass
+
+    def OnPreviewGiveFeedback(self, *args):
+        """
   OnPreviewGiveFeedback(self: ContentElement,e: GiveFeedbackEventArgs)
 
    Invoked when an unhandled System.Windows.DragDrop.PreviewGiveFeedback�attached event reaches an 
@@ -755,9 +808,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.GiveFeedbackEventArgs that contains the event data.
   """
-  pass
- def OnPreviewGotKeyboardFocus(self,*args):
-  """
+        pass
+
+    def OnPreviewGotKeyboardFocus(self, *args):
+        """
   OnPreviewGotKeyboardFocus(self: ContentElement,e: KeyboardFocusChangedEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Keyboard.PreviewGotKeyboardFocus�attached event 
@@ -772,9 +826,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.KeyboardFocusChangedEventArgs that contains the event data.
   """
-  pass
- def OnPreviewKeyDown(self,*args):
-  """
+        pass
+
+    def OnPreviewKeyDown(self, *args):
+        """
   OnPreviewKeyDown(self: ContentElement,e: KeyEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Keyboard.PreviewKeyDown�attached event reaches an 
@@ -789,9 +844,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.KeyEventArgs that contains the event data.
   """
-  pass
- def OnPreviewKeyUp(self,*args):
-  """
+        pass
+
+    def OnPreviewKeyUp(self, *args):
+        """
   OnPreviewKeyUp(self: ContentElement,e: KeyEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Keyboard.PreviewKeyUp�attached event reaches an 
@@ -806,9 +862,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.KeyEventArgs that contains the event data.
   """
-  pass
- def OnPreviewLostKeyboardFocus(self,*args):
-  """
+        pass
+
+    def OnPreviewLostKeyboardFocus(self, *args):
+        """
   OnPreviewLostKeyboardFocus(self: ContentElement,e: KeyboardFocusChangedEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Keyboard.PreviewKeyDown�attached event reaches an 
@@ -823,9 +880,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.KeyboardFocusChangedEventArgs that contains the event data.
   """
-  pass
- def OnPreviewMouseDown(self,*args):
-  """
+        pass
+
+    def OnPreviewMouseDown(self, *args):
+        """
   OnPreviewMouseDown(self: ContentElement,e: MouseButtonEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Mouse.PreviewMouseDown attached�routed event 
@@ -842,9 +900,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
     reports that one or more mouse buttons were pressed.
   """
-  pass
- def OnPreviewMouseLeftButtonDown(self,*args):
-  """
+        pass
+
+    def OnPreviewMouseLeftButtonDown(self, *args):
+        """
   OnPreviewMouseLeftButtonDown(self: ContentElement,e: MouseButtonEventArgs)
 
    Invoked when an unhandled System.Windows.ContentElement.PreviewMouseLeftButtonDown�routed event 
@@ -861,9 +920,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
     reports that the left mouse button was pressed.
   """
-  pass
- def OnPreviewMouseLeftButtonUp(self,*args):
-  """
+        pass
+
+    def OnPreviewMouseLeftButtonUp(self, *args):
+        """
   OnPreviewMouseLeftButtonUp(self: ContentElement,e: MouseButtonEventArgs)
 
    Invoked when an unhandled System.Windows.ContentElement.PreviewMouseLeftButtonUp�routed event 
@@ -880,9 +940,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
     reports that the left mouse button was released.
   """
-  pass
- def OnPreviewMouseMove(self,*args):
-  """
+        pass
+
+    def OnPreviewMouseMove(self, *args):
+        """
   OnPreviewMouseMove(self: ContentElement,e: MouseEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Mouse.PreviewMouseMove�attached event reaches an 
@@ -897,9 +958,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.MouseEventArgs that contains the event data.
   """
-  pass
- def OnPreviewMouseRightButtonDown(self,*args):
-  """
+        pass
+
+    def OnPreviewMouseRightButtonDown(self, *args):
+        """
   OnPreviewMouseRightButtonDown(self: ContentElement,e: MouseButtonEventArgs)
 
    Invoked when an unhandled System.Windows.ContentElement.PreviewMouseRightButtonDown�routed event 
@@ -916,9 +978,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
     reports that the right mouse button was pressed.
   """
-  pass
- def OnPreviewMouseRightButtonUp(self,*args):
-  """
+        pass
+
+    def OnPreviewMouseRightButtonUp(self, *args):
+        """
   OnPreviewMouseRightButtonUp(self: ContentElement,e: MouseButtonEventArgs)
 
    Invoked when an unhandled System.Windows.ContentElement.PreviewMouseRightButtonUp�routed event 
@@ -935,9 +998,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
     reports that the right mouse button was released.
   """
-  pass
- def OnPreviewMouseUp(self,*args):
-  """
+        pass
+
+    def OnPreviewMouseUp(self, *args):
+        """
   OnPreviewMouseUp(self: ContentElement,e: MouseButtonEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Mouse.PreviewMouseUp�attached event reaches an 
@@ -954,9 +1018,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
     reports that one or more mouse buttons were released.
   """
-  pass
- def OnPreviewMouseWheel(self,*args):
-  """
+        pass
+
+    def OnPreviewMouseWheel(self, *args):
+        """
   OnPreviewMouseWheel(self: ContentElement,e: MouseWheelEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Mouse.PreviewMouseWheel�attached event reaches an 
@@ -971,9 +1036,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.MouseWheelEventArgs that contains the event data.
   """
-  pass
- def OnPreviewQueryContinueDrag(self,*args):
-  """
+        pass
+
+    def OnPreviewQueryContinueDrag(self, *args):
+        """
   OnPreviewQueryContinueDrag(self: ContentElement,e: QueryContinueDragEventArgs)
 
    Invoked when an unhandled System.Windows.DragDrop.PreviewQueryContinueDrag�attached event 
@@ -988,9 +1054,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.QueryContinueDragEventArgs that contains the event data.
   """
-  pass
- def OnPreviewStylusButtonDown(self,*args):
-  """
+        pass
+
+    def OnPreviewStylusButtonDown(self, *args):
+        """
   OnPreviewStylusButtonDown(self: ContentElement,e: StylusButtonEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.PreviewStylusButtonDown�attached event 
@@ -1005,9 +1072,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.StylusButtonEventArgs that contains the event data.
   """
-  pass
- def OnPreviewStylusButtonUp(self,*args):
-  """
+        pass
+
+    def OnPreviewStylusButtonUp(self, *args):
+        """
   OnPreviewStylusButtonUp(self: ContentElement,e: StylusButtonEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.PreviewStylusButtonUp�attached event 
@@ -1022,9 +1090,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.StylusButtonEventArgs that contains the event data.
   """
-  pass
- def OnPreviewStylusDown(self,*args):
-  """
+        pass
+
+    def OnPreviewStylusDown(self, *args):
+        """
   OnPreviewStylusDown(self: ContentElement,e: StylusDownEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.PreviewStylusDown�attached event reaches 
@@ -1039,9 +1108,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.StylusDownEventArgs that contains the event data.
   """
-  pass
- def OnPreviewStylusInAirMove(self,*args):
-  """
+        pass
+
+    def OnPreviewStylusInAirMove(self, *args):
+        """
   OnPreviewStylusInAirMove(self: ContentElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.PreviewStylusInAirMove�attached event 
@@ -1056,9 +1126,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.StylusEventArgs that contains the event data.
   """
-  pass
- def OnPreviewStylusInRange(self,*args):
-  """
+        pass
+
+    def OnPreviewStylusInRange(self, *args):
+        """
   OnPreviewStylusInRange(self: ContentElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.PreviewStylusInRange�attached event 
@@ -1073,9 +1144,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.StylusEventArgs that contains the event data.
   """
-  pass
- def OnPreviewStylusMove(self,*args):
-  """
+        pass
+
+    def OnPreviewStylusMove(self, *args):
+        """
   OnPreviewStylusMove(self: ContentElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.PreviewStylusMove�attached event reaches 
@@ -1090,9 +1162,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.StylusEventArgs that contains the event data.
   """
-  pass
- def OnPreviewStylusOutOfRange(self,*args):
-  """
+        pass
+
+    def OnPreviewStylusOutOfRange(self, *args):
+        """
   OnPreviewStylusOutOfRange(self: ContentElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.PreviewStylusOutOfRange�attached event 
@@ -1107,9 +1180,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.StylusEventArgs that contains the event data.
   """
-  pass
- def OnPreviewStylusSystemGesture(self,*args):
-  """
+        pass
+
+    def OnPreviewStylusSystemGesture(self, *args):
+        """
   OnPreviewStylusSystemGesture(self: ContentElement,e: StylusSystemGestureEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.PreviewStylusSystemGesture�attached event 
@@ -1124,9 +1198,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.StylusSystemGestureEventArgs that contains the event data.
   """
-  pass
- def OnPreviewStylusUp(self,*args):
-  """
+        pass
+
+    def OnPreviewStylusUp(self, *args):
+        """
   OnPreviewStylusUp(self: ContentElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.PreviewStylusUp�attached event reaches an 
@@ -1141,9 +1216,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.StylusEventArgs that contains the event data.
   """
-  pass
- def OnPreviewTextInput(self,*args):
-  """
+        pass
+
+    def OnPreviewTextInput(self, *args):
+        """
   OnPreviewTextInput(self: ContentElement,e: TextCompositionEventArgs)
 
    Invoked when an unhandled System.Windows.Input.TextCompositionManager.PreviewTextInput�attached 
@@ -1158,9 +1234,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.TextCompositionEventArgs that contains the event data.
   """
-  pass
- def OnPreviewTouchDown(self,*args):
-  """
+        pass
+
+    def OnPreviewTouchDown(self, *args):
+        """
   OnPreviewTouchDown(self: ContentElement,e: TouchEventArgs)
 
    Provides class handling for the System.Windows.ContentElement.PreviewTouchDown routed event that 
@@ -1173,9 +1250,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: A System.Windows.Input.TouchEventArgs that contains the event data.
   """
-  pass
- def OnPreviewTouchMove(self,*args):
-  """
+        pass
+
+    def OnPreviewTouchMove(self, *args):
+        """
   OnPreviewTouchMove(self: ContentElement,e: TouchEventArgs)
 
    Provides class handling for the System.Windows.ContentElement.PreviewTouchMove routed event that 
@@ -1188,9 +1266,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: A System.Windows.Input.TouchEventArgs that contains the event data.
   """
-  pass
- def OnPreviewTouchUp(self,*args):
-  """
+        pass
+
+    def OnPreviewTouchUp(self, *args):
+        """
   OnPreviewTouchUp(self: ContentElement,e: TouchEventArgs)
 
    Provides class handling for the System.Windows.ContentElement.PreviewTouchUp routed event that 
@@ -1203,9 +1282,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: A System.Windows.Input.TouchEventArgs that contains the event data.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: FrameworkContentElement,e: DependencyPropertyChangedEventArgs)
 
    Invoked whenever the effective value of any dependency property on this 
@@ -1224,9 +1304,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The event data that describes the property that changed,including the old and new values.
   """
-  pass
- def OnQueryContinueDrag(self,*args):
-  """
+        pass
+
+    def OnQueryContinueDrag(self, *args):
+        """
   OnQueryContinueDrag(self: ContentElement,e: QueryContinueDragEventArgs)
 
    Invoked when an unhandled System.Windows.DragDrop.QueryContinueDrag�attached event reaches an 
@@ -1241,9 +1322,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.QueryContinueDragEventArgs that contains the event data.
   """
-  pass
- def OnQueryCursor(self,*args):
-  """
+        pass
+
+    def OnQueryCursor(self, *args):
+        """
   OnQueryCursor(self: ContentElement,e: QueryCursorEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Mouse.QueryCursor�attached event reaches an 
@@ -1258,9 +1340,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.QueryCursorEventArgs that contains the event data.
   """
-  pass
- def OnStyleChanged(self,*args):
-  """
+        pass
+
+    def OnStyleChanged(self, *args):
+        """
   OnStyleChanged(self: FrameworkContentElement,oldStyle: Style,newStyle: Style)
 
    Invoked when the style that is in use on this element changes.
@@ -1271,9 +1354,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    newStyle: The new style.
   """
-  pass
- def OnStylusButtonDown(self,*args):
-  """
+        pass
+
+    def OnStylusButtonDown(self, *args):
+        """
   OnStylusButtonDown(self: ContentElement,e: StylusButtonEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.StylusButtonDown�attached event reaches an 
@@ -1288,9 +1372,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.StylusButtonEventArgs that contains the event data.
   """
-  pass
- def OnStylusButtonUp(self,*args):
-  """
+        pass
+
+    def OnStylusButtonUp(self, *args):
+        """
   OnStylusButtonUp(self: ContentElement,e: StylusButtonEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.StylusButtonUp�attached event reaches an 
@@ -1305,9 +1390,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.StylusButtonEventArgs that contains the event data.
   """
-  pass
- def OnStylusDown(self,*args):
-  """
+        pass
+
+    def OnStylusDown(self, *args):
+        """
   OnStylusDown(self: ContentElement,e: StylusDownEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.StylusDown�attached event reaches an 
@@ -1322,9 +1408,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.StylusDownEventArgs that contains the event data.
   """
-  pass
- def OnStylusEnter(self,*args):
-  """
+        pass
+
+    def OnStylusEnter(self, *args):
+        """
   OnStylusEnter(self: ContentElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.StylusEnter�attached event is raised by 
@@ -1337,9 +1424,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.StylusEventArgs that contains the event data.
   """
-  pass
- def OnStylusInAirMove(self,*args):
-  """
+        pass
+
+    def OnStylusInAirMove(self, *args):
+        """
   OnStylusInAirMove(self: ContentElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.StylusInAirMove�attached event reaches an 
@@ -1354,9 +1442,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.StylusEventArgs that contains the event data.
   """
-  pass
- def OnStylusInRange(self,*args):
-  """
+        pass
+
+    def OnStylusInRange(self, *args):
+        """
   OnStylusInRange(self: ContentElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.StylusInRange�attached event reaches an 
@@ -1371,9 +1460,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.StylusEventArgs that contains the event data.
   """
-  pass
- def OnStylusLeave(self,*args):
-  """
+        pass
+
+    def OnStylusLeave(self, *args):
+        """
   OnStylusLeave(self: ContentElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.StylusLeave�attached event is raised by 
@@ -1386,9 +1476,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.StylusEventArgs that contains the event data.
   """
-  pass
- def OnStylusMove(self,*args):
-  """
+        pass
+
+    def OnStylusMove(self, *args):
+        """
   OnStylusMove(self: ContentElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.StylusMove�attached event reaches an 
@@ -1403,9 +1494,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.StylusEventArgs that contains the event data.
   """
-  pass
- def OnStylusOutOfRange(self,*args):
-  """
+        pass
+
+    def OnStylusOutOfRange(self, *args):
+        """
   OnStylusOutOfRange(self: ContentElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.StylusOutOfRange�attached event reaches an 
@@ -1420,9 +1512,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.StylusEventArgs that contains the event data.
   """
-  pass
- def OnStylusSystemGesture(self,*args):
-  """
+        pass
+
+    def OnStylusSystemGesture(self, *args):
+        """
   OnStylusSystemGesture(self: ContentElement,e: StylusSystemGestureEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.StylusSystemGesture�attached event reaches 
@@ -1437,9 +1530,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.StylusSystemGestureEventArgs that contains the event data.
   """
-  pass
- def OnStylusUp(self,*args):
-  """
+        pass
+
+    def OnStylusUp(self, *args):
+        """
   OnStylusUp(self: ContentElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.StylusUp�attached event reaches an element 
@@ -1454,9 +1548,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.StylusEventArgs that contains the event data.
   """
-  pass
- def OnTextInput(self,*args):
-  """
+        pass
+
+    def OnTextInput(self, *args):
+        """
   OnTextInput(self: ContentElement,e: TextCompositionEventArgs)
 
    Invoked when an unhandled System.Windows.Input.TextCompositionManager.TextInput�attached event 
@@ -1471,9 +1566,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: The System.Windows.Input.TextCompositionEventArgs that contains the event data.
   """
-  pass
- def OnToolTipClosing(self,*args):
-  """
+        pass
+
+    def OnToolTipClosing(self, *args):
+        """
   OnToolTipClosing(self: FrameworkContentElement,e: ToolTipEventArgs)
 
    Invoked whenever the System.Windows.FrameworkContentElement.ToolTipClosing routed event reaches 
@@ -1486,9 +1582,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: Provides data about the event.
   """
-  pass
- def OnToolTipOpening(self,*args):
-  """
+        pass
+
+    def OnToolTipOpening(self, *args):
+        """
   OnToolTipOpening(self: FrameworkContentElement,e: ToolTipEventArgs)
 
    Invoked whenever the System.Windows.FrameworkContentElement.ToolTipOpening routed event reaches 
@@ -1501,9 +1598,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: Provides data about the event.
   """
-  pass
- def OnTouchDown(self,*args):
-  """
+        pass
+
+    def OnTouchDown(self, *args):
+        """
   OnTouchDown(self: ContentElement,e: TouchEventArgs)
 
    Provides class handling for the System.Windows.ContentElement.TouchDown routed event that occurs 
@@ -1516,9 +1614,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: A System.Windows.Input.TouchEventArgs that contains the event data.
   """
-  pass
- def OnTouchEnter(self,*args):
-  """
+        pass
+
+    def OnTouchEnter(self, *args):
+        """
   OnTouchEnter(self: ContentElement,e: TouchEventArgs)
 
    Provides class handling for the System.Windows.ContentElement.TouchEnter routed event that 
@@ -1531,9 +1630,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: A System.Windows.Input.TouchEventArgs that contains the event data.
   """
-  pass
- def OnTouchLeave(self,*args):
-  """
+        pass
+
+    def OnTouchLeave(self, *args):
+        """
   OnTouchLeave(self: ContentElement,e: TouchEventArgs)
 
    Provides class handling for the System.Windows.ContentElement.TouchLeave routed event that 
@@ -1546,9 +1646,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: A System.Windows.Input.TouchEventArgs that contains the event data.
   """
-  pass
- def OnTouchMove(self,*args):
-  """
+        pass
+
+    def OnTouchMove(self, *args):
+        """
   OnTouchMove(self: ContentElement,e: TouchEventArgs)
 
    Provides class handling for the System.Windows.ContentElement.TouchMove routed event that occurs 
@@ -1561,9 +1662,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: A System.Windows.Input.TouchEventArgs that contains the event data.
   """
-  pass
- def OnTouchUp(self,*args):
-  """
+        pass
+
+    def OnTouchUp(self, *args):
+        """
   OnTouchUp(self: ContentElement,e: TouchEventArgs)
 
    Provides class handling for the System.Windows.ContentElement.TouchUp routed event that occurs 
@@ -1576,9 +1678,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    e: A System.Windows.Input.TouchEventArgs that contains the event data.
   """
-  pass
- def RemoveLogicalChild(self,*args):
-  """
+        pass
+
+    def RemoveLogicalChild(self, *args):
+        """
   RemoveLogicalChild(self: FrameworkContentElement,child: object)
 
    Removes the specified element from the logical tree for this element.
@@ -1587,9 +1690,10 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    child: The element to remove.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -1606,12 +1710,16 @@ class ColumnDefinition(DefinitionBase,IInputElement,IAnimatable,IFrameworkInputE
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- ActualWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that represents the actual calculated width of a System.Windows.Controls.ColumnDefinition.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    ActualWidth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that represents the actual calculated width of a System.Windows.Controls.ColumnDefinition.
 
 
 
@@ -1621,29 +1729,35 @@ Get: ActualWidth(self: ColumnDefinition) -> float
 
 """
 
- DefaultStyleKey=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the key to use to find the style template for this control in themes.
+    DefaultStyleKey = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the key to use to find the style template for this control in themes.
 
 
 
 """
 
- IsEnabledCore=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that becomes the return value of System.Windows.ContentElement.IsEnabled in derived classes.
+    IsEnabledCore = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that becomes the return value of System.Windows.ContentElement.IsEnabled in derived classes.
 
 
 
 """
 
- LogicalChildren=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an enumerator for the logical child elements of this element.
+    LogicalChildren = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets an enumerator for the logical child elements of this element.
 
 
 
 """
 
- MaxWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that represents the maximum width of a System.Windows.Controls.ColumnDefinition.
+    MaxWidth = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value that represents the maximum width of a System.Windows.Controls.ColumnDefinition.
 
 
 
@@ -1655,8 +1769,8 @@ Set: MaxWidth(self: ColumnDefinition)=value
 
 """
 
- MinWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that represents the minimum width of a System.Windows.Controls.ColumnDefinition.
+    MinWidth = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value that represents the minimum width of a System.Windows.Controls.ColumnDefinition.
 
 
 
@@ -1668,8 +1782,8 @@ Set: MinWidth(self: ColumnDefinition)=value
 
 """
 
- Offset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that represents the offset value of this System.Windows.Controls.ColumnDefinition.
+    Offset = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that represents the offset value of this System.Windows.Controls.ColumnDefinition.
 
 
 
@@ -1679,8 +1793,8 @@ Get: Offset(self: ColumnDefinition) -> float
 
 """
 
- Width=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the calculated width of a System.Windows.Controls.ColumnDefinition element,or sets the System.Windows.GridLength value of a column that is defined by the System.Windows.Controls.ColumnDefinition.
+    Width = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the calculated width of a System.Windows.Controls.ColumnDefinition element,or sets the System.Windows.GridLength value of a column that is defined by the System.Windows.Controls.ColumnDefinition.
 
 
 
@@ -1692,8 +1806,6 @@ Set: Width(self: ColumnDefinition)=value
 
 """
 
-
- MaxWidthProperty=None
- MinWidthProperty=None
- WidthProperty=None
-
+    MaxWidthProperty = None
+    MinWidthProperty = None
+    WidthProperty = None

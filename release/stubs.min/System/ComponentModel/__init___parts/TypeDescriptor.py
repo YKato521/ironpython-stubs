@@ -1,8 +1,9 @@
 class TypeDescriptor(object):
- """ Provides information about the characteristics for a component,such as its attributes,properties,and events. This class cannot be inherited. """
- @staticmethod
- def AddAttributes(*__args):
-  """
+    """ Provides information about the characteristics for a component,such as its attributes,properties,and events. This class cannot be inherited. """
+
+    @staticmethod
+    def AddAttributes(*__args):
+        """
   AddAttributes(instance: object,*attributes: Array[Attribute]) -> TypeDescriptionProvider
 
   
@@ -37,10 +38,11 @@ class TypeDescriptor(object):
 
     specified attributes.
   """
-  pass
- @staticmethod
- def AddEditorTable(editorBaseType,table):
-  """
+        pass
+
+    @staticmethod
+    def AddEditorTable(editorBaseType, table):
+        """
   AddEditorTable(editorBaseType: Type,table: Hashtable)
 
    Adds an editor table for the given editor base type.
@@ -55,10 +57,11 @@ class TypeDescriptor(object):
 
    table: The System.Collections.Hashtable to add.
   """
-  pass
- @staticmethod
- def AddProvider(provider,*__args):
-  """
+        pass
+
+    @staticmethod
+    def AddProvider(provider, *__args):
+        """
   AddProvider(provider: TypeDescriptionProvider,instance: object)
 
    Adds a type description provider for a single instance of a component.
@@ -79,10 +82,11 @@ class TypeDescriptor(object):
 
    type: The System.Type of the target component.
   """
-  pass
- @staticmethod
- def AddProviderTransparent(provider,*__args):
-  """
+        pass
+
+    @staticmethod
+    def AddProviderTransparent(provider, *__args):
+        """
   AddProviderTransparent(provider: TypeDescriptionProvider,instance: object)
 
    Adds a type description provider for a single instance of a component.
@@ -103,10 +107,11 @@ class TypeDescriptor(object):
 
    type: The System.Type of the target component.
   """
-  pass
- @staticmethod
- def CreateAssociation(primary,secondary):
-  """
+        pass
+
+    @staticmethod
+    def CreateAssociation(primary, secondary):
+        """
   CreateAssociation(primary: object,secondary: object)
 
    Creates a primary-secondary association between two objects.
@@ -117,10 +122,11 @@ class TypeDescriptor(object):
 
    secondary: The secondary System.Object.
   """
-  pass
- @staticmethod
- def CreateDesigner(component,designerBaseType):
-  """
+        pass
+
+    @staticmethod
+    def CreateDesigner(component, designerBaseType):
+        """
   CreateDesigner(component: IComponent,designerBaseType: Type) -> IDesigner
 
   
@@ -141,10 +147,11 @@ class TypeDescriptor(object):
 
     or null if no designer can be found.
   """
-  pass
- @staticmethod
- def CreateEvent(componentType,*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateEvent(componentType, *__args):
+        """
   CreateEvent(componentType: Type,oldEventDescriptor: EventDescriptor,*attributes: Array[Attribute]) -> EventDescriptor
 
   
@@ -191,10 +198,11 @@ class TypeDescriptor(object):
 
    Returns: An System.ComponentModel.EventDescriptor that is bound to a type.
   """
-  pass
- @staticmethod
- def CreateInstance(provider,objectType,argTypes,args):
-  """
+        pass
+
+    @staticmethod
+    def CreateInstance(provider, objectType, argTypes, args):
+        """
   CreateInstance(provider: IServiceProvider,objectType: Type,argTypes: Array[Type],args: Array[object]) -> object
 
   
@@ -227,10 +235,11 @@ class TypeDescriptor(object):
 
     System.ComponentModel.TypeDescriptionProvider is found; otherwise,null.
   """
-  pass
- @staticmethod
- def CreateProperty(componentType,*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateProperty(componentType, *__args):
+        """
   CreateProperty(componentType: Type,oldPropertyDescriptor: PropertyDescriptor,*attributes: Array[Attribute]) -> PropertyDescriptor
 
   
@@ -279,10 +288,11 @@ class TypeDescriptor(object):
 
     specified metadata attributes merged with the existing metadata attributes.
   """
-  pass
- @staticmethod
- def GetAssociation(type,primary):
-  """
+        pass
+
+    @staticmethod
+    def GetAssociation(type, primary):
+        """
   GetAssociation(type: Type,primary: object) -> object
 
   
@@ -299,10 +309,11 @@ class TypeDescriptor(object):
 
     association exists; otherwise,primary if no specified association exists.
   """
-  pass
- @staticmethod
- def GetAttributes(*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetAttributes(*__args):
+        """
   GetAttributes(component: object,noCustomTypeDesc: bool) -> AttributeCollection
 
   
@@ -359,10 +370,11 @@ class TypeDescriptor(object):
 
     If the component is null,this method returns an empty collection.
   """
-  pass
- @staticmethod
- def GetClassName(*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetClassName(*__args):
+        """
   GetClassName(componentType: Type) -> str
 
   
@@ -401,10 +413,11 @@ class TypeDescriptor(object):
 
    Returns: A System.String containing the name of the class for the specified component.
   """
-  pass
- @staticmethod
- def GetComponentName(component,noCustomTypeDesc=None):
-  """
+        pass
+
+    @staticmethod
+    def GetComponentName(component, noCustomTypeDesc=None):
+        """
   GetComponentName(component: object,noCustomTypeDesc: bool) -> str
 
   
@@ -433,10 +446,11 @@ class TypeDescriptor(object):
 
     name.
   """
-  pass
- @staticmethod
- def GetConverter(*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetConverter(*__args):
+        """
   GetConverter(type: Type) -> TypeConverter
 
   
@@ -475,10 +489,11 @@ class TypeDescriptor(object):
 
    Returns: A System.ComponentModel.TypeConverter for the specified component.
   """
-  pass
- @staticmethod
- def GetDefaultEvent(*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetDefaultEvent(*__args):
+        """
   GetDefaultEvent(component: object,noCustomTypeDesc: bool) -> EventDescriptor
 
   
@@ -517,10 +532,11 @@ class TypeDescriptor(object):
 
    Returns: An System.ComponentModel.EventDescriptor with the default event,or null if there are no events.
   """
-  pass
- @staticmethod
- def GetDefaultProperty(*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetDefaultProperty(*__args):
+        """
   GetDefaultProperty(component: object,noCustomTypeDesc: bool) -> PropertyDescriptor
 
   
@@ -569,10 +585,11 @@ class TypeDescriptor(object):
 
     properties.
   """
-  pass
- @staticmethod
- def GetEditor(*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetEditor(*__args):
+        """
   GetEditor(type: Type,editorBaseType: Type) -> object
 
   
@@ -631,10 +648,11 @@ class TypeDescriptor(object):
 
     the requested type can be found.
   """
-  pass
- @staticmethod
- def GetEvents(*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetEvents(*__args):
+        """
   GetEvents(component: object,noCustomTypeDesc: bool) -> EventDescriptorCollection
 
   
@@ -741,10 +759,11 @@ class TypeDescriptor(object):
 
    Returns: An System.ComponentModel.EventDescriptorCollection with the events for this component.
   """
-  pass
- @staticmethod
- def GetFullComponentName(component):
-  """
+        pass
+
+    @staticmethod
+    def GetFullComponentName(component):
+        """
   GetFullComponentName(component: object) -> str
 
   
@@ -757,10 +776,11 @@ class TypeDescriptor(object):
 
    Returns: The fully qualified name of the specified component,or null if the component has no name.
   """
-  pass
- @staticmethod
- def GetProperties(*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetProperties(*__args):
+        """
   GetProperties(component: object,noCustomTypeDesc: bool) -> PropertyDescriptorCollection
 
   
@@ -877,10 +897,11 @@ class TypeDescriptor(object):
 
     component.
   """
-  pass
- @staticmethod
- def GetProvider(*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetProvider(*__args):
+        """
   GetProvider(instance: object) -> TypeDescriptionProvider
 
   
@@ -905,10 +926,11 @@ class TypeDescriptor(object):
 
    Returns: A System.ComponentModel.TypeDescriptionProvider associated with the specified type.
   """
-  pass
- @staticmethod
- def GetReflectionType(*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetReflectionType(*__args):
+        """
   GetReflectionType(instance: object) -> Type
 
   
@@ -933,10 +955,11 @@ class TypeDescriptor(object):
 
    Returns: A System.Type of the specified class.
   """
-  pass
- @staticmethod
- def Refresh(*__args):
-  """
+        pass
+
+    @staticmethod
+    def Refresh(*__args):
+        """
   Refresh(module: Module)
 
    Clears the properties and events for the specified module from the cache.
@@ -977,10 +1000,11 @@ class TypeDescriptor(object):
 
    type: The System.Type of the target component.
   """
-  pass
- @staticmethod
- def RemoveAssociation(primary,secondary):
-  """
+        pass
+
+    @staticmethod
+    def RemoveAssociation(primary, secondary):
+        """
   RemoveAssociation(primary: object,secondary: object)
 
    Removes an association between two objects.
@@ -991,10 +1015,11 @@ class TypeDescriptor(object):
 
    secondary: The secondary System.Object.
   """
-  pass
- @staticmethod
- def RemoveAssociations(primary):
-  """
+        pass
+
+    @staticmethod
+    def RemoveAssociations(primary):
+        """
   RemoveAssociations(primary: object)
 
    Removes all associations for a primary object.
@@ -1003,10 +1028,11 @@ class TypeDescriptor(object):
 
    primary: The primary System.Object in an association.
   """
-  pass
- @staticmethod
- def RemoveProvider(provider,*__args):
-  """
+        pass
+
+    @staticmethod
+    def RemoveProvider(provider, *__args):
+        """
   RemoveProvider(provider: TypeDescriptionProvider,instance: object)
 
    Removes a previously added type description provider that is associated with the specified 
@@ -1031,10 +1057,11 @@ class TypeDescriptor(object):
 
    type: The System.Type of the target component.
   """
-  pass
- @staticmethod
- def RemoveProviderTransparent(provider,*__args):
-  """
+        pass
+
+    @staticmethod
+    def RemoveProviderTransparent(provider, *__args):
+        """
   RemoveProviderTransparent(provider: TypeDescriptionProvider,instance: object)
 
    Removes a previously added type description provider that is associated with the specified 
@@ -1059,10 +1086,11 @@ class TypeDescriptor(object):
 
    type: The System.Type of the target component.
   """
-  pass
- @staticmethod
- def SortDescriptorArray(infos):
-  """
+        pass
+
+    @staticmethod
+    def SortDescriptorArray(infos):
+        """
   SortDescriptorArray(infos: IList)
 
    Sorts descriptors using the name of the descriptor.
@@ -1071,9 +1099,9 @@ class TypeDescriptor(object):
 
    infos: An System.Collections.IList that contains the descriptors to sort.
   """
-  pass
- ComNativeDescriptorHandler=None
- ComObjectType=None
- InterfaceType=None
- Refreshed=None
+        pass
 
+    ComNativeDescriptorHandler = None
+    ComObjectType = None
+    InterfaceType = None
+    Refreshed = None

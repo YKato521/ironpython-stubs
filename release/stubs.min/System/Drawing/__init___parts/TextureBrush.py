@@ -1,5 +1,5 @@
-class TextureBrush(Brush,ICloneable,IDisposable):
- """
+class TextureBrush(Brush, ICloneable, IDisposable):
+    """
  Each property of the System.Drawing.TextureBrush class is a System.Drawing.Brush object that uses an image to fill the interior of a shape. This class cannot be inherited.
 
  
@@ -20,8 +20,9 @@ class TextureBrush(Brush,ICloneable,IDisposable):
 
  TextureBrush(image: Image,dstRect: Rectangle,imageAttr: ImageAttributes)
  """
- def Clone(self):
-  """
+
+    def Clone(self):
+        """
   Clone(self: TextureBrush) -> object
 
   
@@ -30,9 +31,10 @@ class TextureBrush(Brush,ICloneable,IDisposable):
 
    Returns: The System.Drawing.TextureBrush object this method creates,cast as an System.Object object.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: Brush,disposing: bool)
 
    Releases the unmanaged resources used by the System.Drawing.Brush and optionally releases the 
@@ -45,9 +47,10 @@ class TextureBrush(Brush,ICloneable,IDisposable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -78,9 +81,10 @@ class TextureBrush(Brush,ICloneable,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def MultiplyTransform(self,matrix,order=None):
-  """
+        pass
+
+    def MultiplyTransform(self, matrix, order=None):
+        """
   MultiplyTransform(self: TextureBrush,matrix: Matrix,order: MatrixOrder)
 
    Multiplies the System.Drawing.Drawing2D.Matrix object that represents the local geometric 
@@ -117,16 +121,18 @@ class TextureBrush(Brush,ICloneable,IDisposable):
 
    matrix: The System.Drawing.Drawing2D.Matrix object by which to multiply the geometric transformation.
   """
-  pass
- def ResetTransform(self):
-  """
+        pass
+
+    def ResetTransform(self):
+        """
   ResetTransform(self: TextureBrush)
 
    Resets the Transform property of this System.Drawing.TextureBrush object to identity.
   """
-  pass
- def RotateTransform(self,angle,order=None):
-  """
+        pass
+
+    def RotateTransform(self, angle, order=None):
+        """
   RotateTransform(self: TextureBrush,angle: Single,order: MatrixOrder)
 
    Rotates the local geometric transformation of this System.Drawing.TextureBrush object by the 
@@ -157,9 +163,10 @@ class TextureBrush(Brush,ICloneable,IDisposable):
 
    angle: The angle of rotation.
   """
-  pass
- def ScaleTransform(self,sx,sy,order=None):
-  """
+        pass
+
+    def ScaleTransform(self, sx, sy, order=None):
+        """
   ScaleTransform(self: TextureBrush,sx: Single,sy: Single,order: MatrixOrder)
 
    Scales the local geometric transformation of this System.Drawing.TextureBrush object by the 
@@ -194,9 +201,10 @@ class TextureBrush(Brush,ICloneable,IDisposable):
 
    sy: The amount by which to scale the transformation in the y direction.
   """
-  pass
- def SetNativeBrush(self,*args):
-  """
+        pass
+
+    def SetNativeBrush(self, *args):
+        """
   SetNativeBrush(self: Brush,brush: IntPtr)
 
    In a derived class,sets a reference to a GDI+ brush object.
@@ -205,9 +213,10 @@ class TextureBrush(Brush,ICloneable,IDisposable):
 
    brush: A pointer to the GDI+ brush object.
   """
-  pass
- def TranslateTransform(self,dx,dy,order=None):
-  """
+        pass
+
+    def TranslateTransform(self, dx, dy, order=None):
+        """
   TranslateTransform(self: TextureBrush,dx: Single,dy: Single,order: MatrixOrder)
 
    Translates the local geometric transformation of this System.Drawing.TextureBrush object by the 
@@ -238,29 +247,33 @@ class TextureBrush(Brush,ICloneable,IDisposable):
 
    dy: The dimension by which to translate the transformation in the y direction.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,bitmap: Image)
 
   __new__(cls: type,image: Image,wrapMode: WrapMode)
@@ -277,9 +290,10 @@ class TextureBrush(Brush,ICloneable,IDisposable):
 
   __new__(cls: type,image: Image,dstRect: Rectangle,imageAttr: ImageAttributes)
   """
-  pass
- Image=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Drawing.Image object associated with this System.Drawing.TextureBrush object.
+        pass
+
+    Image = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the System.Drawing.Image object associated with this System.Drawing.TextureBrush object.
 
 
 
@@ -289,8 +303,8 @@ Get: Image(self: TextureBrush) -> Image
 
 """
 
- Transform=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a copy of the System.Drawing.Drawing2D.Matrix object that defines a local geometric transformation for the image associated with this System.Drawing.TextureBrush object.
+    Transform = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a copy of the System.Drawing.Drawing2D.Matrix object that defines a local geometric transformation for the image associated with this System.Drawing.TextureBrush object.
 
 
 
@@ -302,8 +316,8 @@ Set: Transform(self: TextureBrush)=value
 
 """
 
- WrapMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a System.Drawing.Drawing2D.WrapMode enumeration that indicates the wrap mode for this System.Drawing.TextureBrush object.
+    WrapMode = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a System.Drawing.Drawing2D.WrapMode enumeration that indicates the wrap mode for this System.Drawing.TextureBrush object.
 
 
 
@@ -314,5 +328,3 @@ Get: WrapMode(self: TextureBrush) -> WrapMode
 Set: WrapMode(self: TextureBrush)=value
 
 """
-
-

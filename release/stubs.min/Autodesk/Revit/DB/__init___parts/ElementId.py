@@ -1,5 +1,5 @@
 class ElementId(object):
- """
+    """
  The ElementId object is used as a unique identification for an element within a
 
  single project.
@@ -12,8 +12,9 @@ class ElementId(object):
 
  ElementId(id: int)
  """
- def Compare(self,id):
-  """
+
+    def Compare(self, id):
+        """
   Compare(self: ElementId,id: ElementId) -> int
 
   
@@ -26,9 +27,10 @@ class ElementId(object):
 
    Returns: -1 if this element id is less than id,0 if equal,1 if greater.
   """
-  pass
- def Equals(self,obj):
-  """
+        pass
+
+    def Equals(self, obj):
+        """
   Equals(self: ElementId,obj: object) -> bool
 
   
@@ -43,53 +45,66 @@ class ElementId(object):
 
    obj: Another object.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: ElementId) -> int
 
   
 
    Gets the integer value of the id as hash code
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: ElementId) -> str
 
   
 
    Gets a String representation of the integer value of the id.
   """
-  pass
- def __cmp__(self,*args):
-  """ x.__cmp__(y) <==> cmp(x,y) """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __cmp__(self, *args):
+        """ x.__cmp__(y) <==> cmp(x,y) """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,parameterId: BuiltInParameter)
 
   __new__(cls: type,categoryId: BuiltInCategory)
 
   __new__(cls: type,id: int)
   """
-  pass
- def __ne__(self,*args):
-  pass
- IntegerValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides the value of the element id as an integer.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    IntegerValue = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides the value of the element id as an integer.
 
 
 
@@ -99,6 +114,4 @@ Get: IntegerValue(self: ElementId) -> int
 
 """
 
-
- InvalidElementId=None
-
+    InvalidElementId = None

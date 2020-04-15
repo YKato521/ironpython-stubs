@@ -1,13 +1,14 @@
 class PaddingConverter(TypeConverter):
- """
+    """
  Provides a type converter to convert System.Windows.Forms.Padding values to and from various other representations.
 
  
 
  PaddingConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: PaddingConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -22,9 +23,10 @@ class PaddingConverter(TypeConverter):
 
    Returns: true if this object can perform the conversion; otherwise,false.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: PaddingConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -41,9 +43,10 @@ class PaddingConverter(TypeConverter):
 
    Returns: true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: PaddingConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -54,9 +57,10 @@ class PaddingConverter(TypeConverter):
 
    value: The System.Object to convert.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: PaddingConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -69,9 +73,10 @@ class PaddingConverter(TypeConverter):
 
    destinationType: The System.Type to convert the value parameter to.
   """
-  pass
- def CreateInstance(self,*__args):
-  """
+        pass
+
+    def CreateInstance(self, *__args):
+        """
   CreateInstance(self: PaddingConverter,context: ITypeDescriptorContext,propertyValues: IDictionary) -> object
 
   
@@ -92,18 +97,20 @@ class PaddingConverter(TypeConverter):
 
     cannot be created. This method always returns null.
   """
-  pass
- def GetCreateInstanceSupported(self,context=None):
-  """
+        pass
+
+    def GetCreateInstanceSupported(self, context=None):
+        """
   GetCreateInstanceSupported(self: PaddingConverter,context: ITypeDescriptorContext) -> bool
 
   
 
    context: An System.ComponentModel.ITypeDescriptorContext that provides a format context.
   """
-  pass
- def GetProperties(self,*__args):
-  """
+        pass
+
+    def GetProperties(self, *__args):
+        """
   GetProperties(self: PaddingConverter,context: ITypeDescriptorContext,value: object,attributes: Array[Attribute]) -> PropertyDescriptorCollection
 
   
@@ -114,13 +121,14 @@ class PaddingConverter(TypeConverter):
 
    attributes: An array of type System.Attribute that is used as a filter.
   """
-  pass
- def GetPropertiesSupported(self,context=None):
-  """
+        pass
+
+    def GetPropertiesSupported(self, context=None):
+        """
   GetPropertiesSupported(self: PaddingConverter,context: ITypeDescriptorContext) -> bool
 
   
 
    context: An System.ComponentModel.ITypeDescriptorContext that provides a format context.
   """
-  pass
+        pass

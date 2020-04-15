@@ -1,10 +1,12 @@
-class ViewCropRegionShapeManager(object,IDisposable):
- """ A class that provides access to settings related to the crop assigned to a view or a reference callout. """
- def Dispose(self):
-  """ Dispose(self: ViewCropRegionShapeManager) """
-  pass
- def GetAnnotationCropShape(self):
-  """
+class ViewCropRegionShapeManager(object, IDisposable):
+    """ A class that provides access to settings related to the crop assigned to a view or a reference callout. """
+
+    def Dispose(self):
+        """ Dispose(self: ViewCropRegionShapeManager) """
+        pass
+
+    def GetAnnotationCropShape(self):
+        """
   GetAnnotationCropShape(self: ViewCropRegionShapeManager) -> CurveLoop
 
   
@@ -13,9 +15,10 @@ class ViewCropRegionShapeManager(object,IDisposable):
 
    Returns: The annotation crop boundary.
   """
-  pass
- def GetCropShape(self):
-  """
+        pass
+
+    def GetCropShape(self):
+        """
   GetCropShape(self: ViewCropRegionShapeManager) -> IList[CurveLoop]
 
   
@@ -24,9 +27,10 @@ class ViewCropRegionShapeManager(object,IDisposable):
 
    Returns: The crop boundaries.
   """
-  pass
- def GetSplitRegionMaximum(self,regionIndex):
-  """
+        pass
+
+    def GetSplitRegionMaximum(self, regionIndex):
+        """
   GetSplitRegionMaximum(self: ViewCropRegionShapeManager,regionIndex: int) -> float
 
   
@@ -49,9 +53,10 @@ class ViewCropRegionShapeManager(object,IDisposable):
 
     non-split rectangular crop.
   """
-  pass
- def GetSplitRegionMinimum(self,regionIndex):
-  """
+        pass
+
+    def GetSplitRegionMinimum(self, regionIndex):
+        """
   GetSplitRegionMinimum(self: ViewCropRegionShapeManager,regionIndex: int) -> float
 
   
@@ -74,9 +79,10 @@ class ViewCropRegionShapeManager(object,IDisposable):
 
     non-split rectangular crop.
   """
-  pass
- def IsCropRegionShapeValid(self,boundary):
-  """
+        pass
+
+    def IsCropRegionShapeValid(self, boundary):
+        """
   IsCropRegionShapeValid(self: ViewCropRegionShapeManager,boundary: CurveLoop) -> bool
 
   
@@ -103,26 +109,30 @@ class ViewCropRegionShapeManager(object,IDisposable):
 
     parallel to the view plane.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: ViewCropRegionShapeManager,disposing: bool) """
-  pass
- def RemoveCropRegionShape(self):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: ViewCropRegionShapeManager,disposing: bool) """
+        pass
+
+    def RemoveCropRegionShape(self):
+        """
   RemoveCropRegionShape(self: ViewCropRegionShapeManager)
 
    Removes any non-rectangular boundary of the view's crop.
   """
-  pass
- def RemoveSplit(self):
-  """
+        pass
+
+    def RemoveSplit(self):
+        """
   RemoveSplit(self: ViewCropRegionShapeManager)
 
    Removes any split applied to the view's crop.
   """
-  pass
- def RemoveSplitRegion(self,regionIndex):
-  """
+        pass
+
+    def RemoveSplitRegion(self, regionIndex):
+        """
   RemoveSplitRegion(self: ViewCropRegionShapeManager,regionIndex: int)
 
    Removes one region in split crop.
@@ -131,9 +141,10 @@ class ViewCropRegionShapeManager(object,IDisposable):
 
    regionIndex: Index of region to be deleted (numbering starts with 0).
   """
-  pass
- def SetCropShape(self,boundary):
-  """
+        pass
+
+    def SetCropShape(self, boundary):
+        """
   SetCropShape(self: ViewCropRegionShapeManager,boundary: CurveLoop)
 
    Sets the boundary of the view's crop to the specified shape.
@@ -142,9 +153,10 @@ class ViewCropRegionShapeManager(object,IDisposable):
 
    boundary: The crop boundary.
   """
-  pass
- def SplitRegionHorizontally(self,regionIndex,leftPart,rightPart):
-  """
+        pass
+
+    def SplitRegionHorizontally(self, regionIndex, leftPart, rightPart):
+        """
   SplitRegionHorizontally(self: ViewCropRegionShapeManager,regionIndex: int,leftPart: float,rightPart: float)
 
    Splits horizontally one region in split crop.
@@ -157,9 +169,10 @@ class ViewCropRegionShapeManager(object,IDisposable):
 
    rightPart: Relative portion of the original region to become the new right region (0 to 1).
   """
-  pass
- def SplitRegionVertically(self,regionIndex,topPart,bottomPart):
-  """
+        pass
+
+    def SplitRegionVertically(self, regionIndex, topPart, bottomPart):
+        """
   SplitRegionVertically(self: ViewCropRegionShapeManager,regionIndex: int,topPart: float,bottomPart: float)
 
    Splits vertically one region in split crop.
@@ -174,21 +187,28 @@ class ViewCropRegionShapeManager(object,IDisposable):
 
     1).
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- BottomAnnotationCropOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The offset from the bottom of the view crop that determines the location of the annotation crop bottom boundary.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    BottomAnnotationCropOffset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The offset from the bottom of the view crop that determines the location of the annotation crop bottom boundary.
 
 
 
@@ -200,8 +220,10 @@ Set: BottomAnnotationCropOffset(self: ViewCropRegionShapeManager)=value
 
 """
 
- CanBeSplit=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Verifies that the crop of the associated view is permitted to have multiple regions.
+    CanBeSplit = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Verifies that the crop of the associated view is permitted to have multiple regions.
 
 
 
@@ -211,8 +233,10 @@ Get: CanBeSplit(self: ViewCropRegionShapeManager) -> bool
 
 """
 
- CanHaveAnnotationCrop=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Verifies that the view is allowed to have an annotation crop.
+    CanHaveAnnotationCrop = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Verifies that the view is allowed to have an annotation crop.
 
 
 
@@ -222,8 +246,10 @@ Get: CanHaveAnnotationCrop(self: ViewCropRegionShapeManager) -> bool
 
 """
 
- CanHaveShape=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Verifies that the crop of the associated view is permitted to have a non-rectangular shape.
+    CanHaveShape = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Verifies that the crop of the associated view is permitted to have a non-rectangular shape.
 
 
 
@@ -233,8 +259,10 @@ Get: CanHaveShape(self: ViewCropRegionShapeManager) -> bool
 
 """
 
- IsSplitHorizontally=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether or not the view's crop is split (and the split is horizontal).
+    IsSplitHorizontally = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether or not the view's crop is split (and the split is horizontal).
 
 
 
@@ -244,8 +272,10 @@ Get: IsSplitHorizontally(self: ViewCropRegionShapeManager) -> bool
 
 """
 
- IsSplitVertically=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether or not the view's crop is split (and the split is vertical).
+    IsSplitVertically = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether or not the view's crop is split (and the split is vertical).
 
 
 
@@ -255,8 +285,10 @@ Get: IsSplitVertically(self: ViewCropRegionShapeManager) -> bool
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -266,8 +298,10 @@ Get: IsValidObject(self: ViewCropRegionShapeManager) -> bool
 
 """
 
- LeftAnnotationCropOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The offset from the left of the view crop that determines the location of the annotation crop left boundary.
+    LeftAnnotationCropOffset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The offset from the left of the view crop that determines the location of the annotation crop left boundary.
 
 
 
@@ -279,8 +313,10 @@ Set: LeftAnnotationCropOffset(self: ViewCropRegionShapeManager)=value
 
 """
 
- NumberOfSplitRegions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The number of split crop regions (1 if the crop is not currently split).
+    NumberOfSplitRegions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The number of split crop regions (1 if the crop is not currently split).
 
 
 
@@ -290,8 +326,10 @@ Get: NumberOfSplitRegions(self: ViewCropRegionShapeManager) -> int
 
 """
 
- RightAnnotationCropOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The offset from the right of the view crop that determines the location of the annotation crop right boundary.
+    RightAnnotationCropOffset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The offset from the right of the view crop that determines the location of the annotation crop right boundary.
 
 
 
@@ -303,8 +341,8 @@ Set: RightAnnotationCropOffset(self: ViewCropRegionShapeManager)=value
 
 """
 
- ShapeSet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether or not the view crop has a non-rectangular shape set.
+    ShapeSet = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Whether or not the view crop has a non-rectangular shape set.
 
 
 
@@ -314,8 +352,8 @@ Get: ShapeSet(self: ViewCropRegionShapeManager) -> bool
 
 """
 
- Split=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether or not the view crop is split.
+    Split = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Whether or not the view crop is split.
 
 
 
@@ -325,8 +363,10 @@ Get: Split(self: ViewCropRegionShapeManager) -> bool
 
 """
 
- TopAnnotationCropOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The offset from the top of the view crop that determines the location of the annotation crop top boundary.
+    TopAnnotationCropOffset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The offset from the top of the view crop that determines the location of the annotation crop top boundary.
 
 
 
@@ -337,5 +377,3 @@ Get: TopAnnotationCropOffset(self: ViewCropRegionShapeManager) -> float
 Set: TopAnnotationCropOffset(self: ViewCropRegionShapeManager)=value
 
 """
-
-

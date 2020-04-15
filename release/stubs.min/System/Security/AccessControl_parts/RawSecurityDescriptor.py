@@ -1,5 +1,5 @@
 class RawSecurityDescriptor(GenericSecurityDescriptor):
- """
+    """
  Represents a security descriptor. A security descriptor includes an owner,a primary group,a Discretionary Access Control List (DACL),and a System Access Control List (SACL).
 
  
@@ -10,8 +10,9 @@ class RawSecurityDescriptor(GenericSecurityDescriptor):
 
  RawSecurityDescriptor(binaryForm: Array[Byte],offset: int)
  """
- def SetFlags(self,flags):
-  """
+
+    def SetFlags(self, flags):
+        """
   SetFlags(self: RawSecurityDescriptor,flags: ControlFlags)
 
    Sets the System.Security.AccessControl.RawSecurityDescriptor.ControlFlags property of this 
@@ -26,19 +27,23 @@ class RawSecurityDescriptor(GenericSecurityDescriptor):
 
     logical OR operation.
   """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,flags: ControlFlags,owner: SecurityIdentifier,group: SecurityIdentifier,systemAcl: RawAcl,discretionaryAcl: RawAcl)
 
   __new__(cls: type,sddlForm: str)
 
   __new__(cls: type,binaryForm: Array[Byte],offset: int)
   """
-  pass
- ControlFlags=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets values that specify behavior of the System.Security.AccessControl.RawSecurityDescriptor object.
+        pass
+
+    ControlFlags = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets values that specify behavior of the System.Security.AccessControl.RawSecurityDescriptor object.
 
 
 
@@ -48,8 +53,10 @@ Get: ControlFlags(self: RawSecurityDescriptor) -> ControlFlags
 
 """
 
- DiscretionaryAcl=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Discretionary Access Control List (DACL) for this System.Security.AccessControl.RawSecurityDescriptor object. The DACL contains access rules.
+    DiscretionaryAcl = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the Discretionary Access Control List (DACL) for this System.Security.AccessControl.RawSecurityDescriptor object. The DACL contains access rules.
 
 
 
@@ -61,8 +68,8 @@ Set: DiscretionaryAcl(self: RawSecurityDescriptor)=value
 
 """
 
- Group=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the primary group for this System.Security.AccessControl.RawSecurityDescriptor object.
+    Group = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the primary group for this System.Security.AccessControl.RawSecurityDescriptor object.
 
 
 
@@ -74,8 +81,8 @@ Set: Group(self: RawSecurityDescriptor)=value
 
 """
 
- Owner=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the owner of the object associated with this System.Security.AccessControl.RawSecurityDescriptor object.
+    Owner = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the owner of the object associated with this System.Security.AccessControl.RawSecurityDescriptor object.
 
 
 
@@ -87,8 +94,10 @@ Set: Owner(self: RawSecurityDescriptor)=value
 
 """
 
- ResourceManagerControl=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a byte value that represents the resource manager control bits associated with this System.Security.AccessControl.RawSecurityDescriptor object.
+    ResourceManagerControl = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a byte value that represents the resource manager control bits associated with this System.Security.AccessControl.RawSecurityDescriptor object.
 
 
 
@@ -100,8 +109,8 @@ Set: ResourceManagerControl(self: RawSecurityDescriptor)=value
 
 """
 
- SystemAcl=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System Access Control List (SACL) for this System.Security.AccessControl.RawSecurityDescriptor object. The SACL contains audit rules.
+    SystemAcl = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the System Access Control List (SACL) for this System.Security.AccessControl.RawSecurityDescriptor object. The SACL contains audit rules.
 
 
 
@@ -112,5 +121,3 @@ Get: SystemAcl(self: RawSecurityDescriptor) -> RawAcl
 Set: SystemAcl(self: RawSecurityDescriptor)=value
 
 """
-
-

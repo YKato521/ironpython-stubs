@@ -1,7 +1,8 @@
-class Curve(GeometryObject,IDisposable):
- """ A parametric curve. """
- def Clone(self):
-  """
+class Curve(GeometryObject, IDisposable):
+    """ A parametric curve. """
+
+    def Clone(self):
+        """
   Clone(self: Curve) -> Curve
 
   
@@ -10,9 +11,10 @@ class Curve(GeometryObject,IDisposable):
 
    Returns: A copy of this curve.
   """
-  pass
- def ComputeDerivatives(self,parameter,normalized):
-  """
+        pass
+
+    def ComputeDerivatives(self, parameter, normalized):
+        """
   ComputeDerivatives(self: Curve,parameter: float,normalized: bool) -> Transform
 
   
@@ -37,9 +39,10 @@ class Curve(GeometryObject,IDisposable):
 
     derivative of tangent vector,and bi-normal vector.
   """
-  pass
- def ComputeNormalizedParameter(self,rawParameter):
-  """
+        pass
+
+    def ComputeNormalizedParameter(self, rawParameter):
+        """
   ComputeNormalizedParameter(self: Curve,rawParameter: float) -> float
 
   
@@ -52,9 +55,10 @@ class Curve(GeometryObject,IDisposable):
 
    Returns: The real number equal to the normalized curve parameter.
   """
-  pass
- def ComputeRawParameter(self,normalizedParameter):
-  """
+        pass
+
+    def ComputeRawParameter(self, normalizedParameter):
+        """
   ComputeRawParameter(self: Curve,normalizedParameter: float) -> float
 
   
@@ -67,9 +71,10 @@ class Curve(GeometryObject,IDisposable):
 
    Returns: The real number equal to the raw curve parameter.
   """
-  pass
- def CreateOffset(self,offsetDist,referenceVector):
-  """
+        pass
+
+    def CreateOffset(self, offsetDist, referenceVector):
+        """
   CreateOffset(self: Curve,offsetDist: float,referenceVector: XYZ) -> Curve
 
   
@@ -84,9 +89,10 @@ class Curve(GeometryObject,IDisposable):
 
    Returns: The new curve.
   """
-  pass
- def CreateReversed(self):
-  """
+        pass
+
+    def CreateReversed(self):
+        """
   CreateReversed(self: Curve) -> Curve
 
   
@@ -95,9 +101,10 @@ class Curve(GeometryObject,IDisposable):
 
    Returns: The new curve.
   """
-  pass
- def CreateTransformed(self,transform):
-  """
+        pass
+
+    def CreateTransformed(self, transform):
+        """
   CreateTransformed(self: Curve,transform: Transform) -> Curve
 
   
@@ -110,12 +117,14 @@ class Curve(GeometryObject,IDisposable):
 
    Returns: The new curve.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: APIObject,A_0: bool) """
-  pass
- def Distance(self,point):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: APIObject,A_0: bool) """
+        pass
+
+    def Distance(self, point):
+        """
   Distance(self: Curve,point: XYZ) -> float
 
   
@@ -128,9 +137,10 @@ class Curve(GeometryObject,IDisposable):
 
    Returns: The real number equal to the shortest distance.
   """
-  pass
- def Evaluate(self,parameter,normalized):
-  """
+        pass
+
+    def Evaluate(self, parameter, normalized):
+        """
   Evaluate(self: Curve,parameter: float,normalized: bool) -> XYZ
 
   
@@ -153,9 +163,10 @@ class Curve(GeometryObject,IDisposable):
 
    Returns: The point evaluated along the curve.
   """
-  pass
- def GetEndParameter(self,index):
-  """
+        pass
+
+    def GetEndParameter(self, index):
+        """
   GetEndParameter(self: Curve,index: int) -> float
 
   
@@ -168,9 +179,10 @@ class Curve(GeometryObject,IDisposable):
 
    Returns: The parameter.
   """
-  pass
- def GetEndPoint(self,index):
-  """
+        pass
+
+    def GetEndPoint(self, index):
+        """
   GetEndPoint(self: Curve,index: int) -> XYZ
 
   
@@ -183,9 +195,10 @@ class Curve(GeometryObject,IDisposable):
 
    Returns: The curve endpoint.
   """
-  pass
- def GetEndPointReference(self,index):
-  """
+        pass
+
+    def GetEndPointReference(self, index):
+        """
   GetEndPointReference(self: Curve,index: int) -> Reference
 
   
@@ -198,9 +211,10 @@ class Curve(GeometryObject,IDisposable):
 
    Returns: Reference to the point or ll if reference cannot be obtained.
   """
-  pass
- def Intersect(self,curve,resultArray=None):
-  """
+        pass
+
+    def Intersect(self, curve, resultArray=None):
+        """
   Intersect(self: Curve,curve: Curve) -> SetComparisonResult
 
   
@@ -267,9 +281,10 @@ class Curve(GeometryObject,IDisposable):
 
     two curves.SetComparisonResult.Equal - The two curves are identical.
   """
-  pass
- def IsInside(self,parameter,end=None):
-  """
+        pass
+
+    def IsInside(self, parameter, end=None):
+        """
   IsInside(self: Curve,parameter: float) -> bool
 
   
@@ -298,9 +313,10 @@ class Curve(GeometryObject,IDisposable):
 
    Returns: True if the parameter is within the curve's bounds,otherwise false.
   """
-  pass
- def MakeBound(self,startParameter,endParameter):
-  """
+        pass
+
+    def MakeBound(self, startParameter, endParameter):
+        """
   MakeBound(self: Curve,startParameter: float,endParameter: float)
 
    Changes the bounds of this curve to the specified values.
@@ -311,16 +327,18 @@ class Curve(GeometryObject,IDisposable):
 
    endParameter: The new parameter of the end point.
   """
-  pass
- def MakeUnbound(self):
-  """
+        pass
+
+    def MakeUnbound(self):
+        """
   MakeUnbound(self: Curve)
 
    Makes this curve unbound.
   """
-  pass
- def Project(self,point):
-  """
+        pass
+
+    def Project(self, point):
+        """
   Project(self: Curve,point: XYZ) -> IntersectionResult
 
   
@@ -333,15 +351,18 @@ class Curve(GeometryObject,IDisposable):
 
    Returns: Geometric information if projection is successful.
   """
-  pass
- def ReleaseManagedResources(self,*args):
-  """ ReleaseManagedResources(self: APIObject) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: GeometryObject) """
-  pass
- def SetGraphicsStyleId(self,id):
-  """
+        pass
+
+    def ReleaseManagedResources(self, *args):
+        """ ReleaseManagedResources(self: APIObject) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: GeometryObject) """
+        pass
+
+    def SetGraphicsStyleId(self, id):
+        """
   SetGraphicsStyleId(self: Curve,id: ElementId)
 
    Sets the graphics style id for this curve.
@@ -350,27 +371,34 @@ class Curve(GeometryObject,IDisposable):
 
    id: The id of the GraphicsStyle element from which to apply the curve properties.
   """
-  pass
- def Tessellate(self):
-  """
+        pass
+
+    def Tessellate(self):
+        """
   Tessellate(self: Curve) -> IList[XYZ]
 
   
 
    Valid only if the curve is bound. Returns a polyline approximation to the curve.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- ApproximateLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The approximate length of the curve.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    ApproximateLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The approximate length of the curve.
 
 
 
@@ -380,8 +408,8 @@ Get: ApproximateLength(self: Curve) -> float
 
 """
 
- IsBound=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Describes whether the parameter of the curve is restricted to a particular interval.
+    IsBound = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Describes whether the parameter of the curve is restricted to a particular interval.
 
 
 
@@ -391,8 +419,8 @@ Get: IsBound(self: Curve) -> bool
 
 """
 
- IsCyclic=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The boolean value that indicates whether this curve is cyclic.
+    IsCyclic = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The boolean value that indicates whether this curve is cyclic.
 
 
 
@@ -402,8 +430,8 @@ Get: IsCyclic(self: Curve) -> bool
 
 """
 
- Length=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The exact length of the curve.
+    Length = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The exact length of the curve.
 
 
 
@@ -413,8 +441,8 @@ Get: Length(self: Curve) -> float
 
 """
 
- Period=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The period of this curve.
+    Period = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The period of this curve.
 
 
 
@@ -424,8 +452,8 @@ Get: Period(self: Curve) -> float
 
 """
 
- Reference=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns a stable reference to the curve.
+    Reference = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns a stable reference to the curve.
 
 
 
@@ -434,5 +462,3 @@ Get: Reference(self: Curve) -> Reference
 
 
 """
-
-

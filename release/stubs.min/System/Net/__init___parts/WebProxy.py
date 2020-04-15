@@ -1,5 +1,5 @@
-class WebProxy(object,IAutoWebProxy,IWebProxy,ISerializable):
- """
+class WebProxy(object, IAutoWebProxy, IWebProxy, ISerializable):
+    """
  Contains HTTP proxy settings for the System.Net.WebRequest class.
 
  
@@ -24,9 +24,10 @@ class WebProxy(object,IAutoWebProxy,IWebProxy,ISerializable):
 
  WebProxy(Address: str,BypassOnLocal: bool,BypassList: Array[str],Credentials: ICredentials)
  """
- @staticmethod
- def GetDefaultProxy():
-  """
+
+    @staticmethod
+    def GetDefaultProxy():
+        """
   GetDefaultProxy() -> WebProxy
 
   
@@ -37,9 +38,10 @@ class WebProxy(object,IAutoWebProxy,IWebProxy,ISerializable):
 
     Explorer 5.5 and later.
   """
-  pass
- def GetObjectData(self,*args):
-  """
+        pass
+
+    def GetObjectData(self, *args):
+        """
   GetObjectData(self: WebProxy,serializationInfo: SerializationInfo,streamingContext: StreamingContext)
 
    Populates a System.Runtime.Serialization.SerializationInfo with the data that is needed to 
@@ -56,9 +58,10 @@ class WebProxy(object,IAutoWebProxy,IWebProxy,ISerializable):
 
     serialization.
   """
-  pass
- def GetProxy(self,destination):
-  """
+        pass
+
+    def GetProxy(self, destination):
+        """
   GetProxy(self: WebProxy,destination: Uri) -> Uri
 
   
@@ -73,9 +76,10 @@ class WebProxy(object,IAutoWebProxy,IWebProxy,ISerializable):
 
     otherwise,the System.Uri instance of the proxy.
   """
-  pass
- def IsBypassed(self,host):
-  """
+        pass
+
+    def IsBypassed(self, host):
+        """
   IsBypassed(self: WebProxy,host: Uri) -> bool
 
   
@@ -88,13 +92,15 @@ class WebProxy(object,IAutoWebProxy,IWebProxy,ISerializable):
 
    Returns: true if the proxy server should not be used for host; otherwise,false.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,Address: Uri)
@@ -117,14 +123,17 @@ class WebProxy(object,IAutoWebProxy,IWebProxy,ISerializable):
 
   __new__(cls: type,serializationInfo: SerializationInfo,streamingContext: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Address=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the address of the proxy server.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Address = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the address of the proxy server.
 
 
 
@@ -136,8 +145,10 @@ Set: Address(self: WebProxy)=value
 
 """
 
- BypassArrayList=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a list of addresses that do not use the proxy server.
+    BypassArrayList = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a list of addresses that do not use the proxy server.
 
 
 
@@ -147,8 +158,10 @@ Get: BypassArrayList(self: WebProxy) -> ArrayList
 
 """
 
- BypassList=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets an array of addresses that do not use the proxy server.
+    BypassList = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets an array of addresses that do not use the proxy server.
 
 
 
@@ -160,8 +173,10 @@ Set: BypassList(self: WebProxy)=value
 
 """
 
- BypassProxyOnLocal=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether to bypass the proxy server for local addresses.
+    BypassProxyOnLocal = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether to bypass the proxy server for local addresses.
 
 
 
@@ -173,8 +188,10 @@ Set: BypassProxyOnLocal(self: WebProxy)=value
 
 """
 
- Credentials=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the credentials to submit to the proxy server for authentication.
+    Credentials = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the credentials to submit to the proxy server for authentication.
 
 
 
@@ -186,8 +203,10 @@ Set: Credentials(self: WebProxy)=value
 
 """
 
- UseDefaultCredentials=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a System.Boolean value that controls whether the System.Net.CredentialCache.DefaultCredentials are sent with requests.
+    UseDefaultCredentials = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a System.Boolean value that controls whether the System.Net.CredentialCache.DefaultCredentials are sent with requests.
 
 
 
@@ -198,5 +217,3 @@ Get: UseDefaultCredentials(self: WebProxy) -> bool
 Set: UseDefaultCredentials(self: WebProxy)=value
 
 """
-
-

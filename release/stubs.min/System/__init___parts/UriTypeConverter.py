@@ -1,13 +1,14 @@
 class UriTypeConverter(TypeConverter):
- """
+    """
  Converts a System.String type to a System.Uri type,and vice versa.
 
  
 
  UriTypeConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: UriTypeConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -28,9 +29,10 @@ class UriTypeConverter(TypeConverter):
 
     otherwise,false.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: UriTypeConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -53,9 +55,10 @@ class UriTypeConverter(TypeConverter):
 
     otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: UriTypeConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -76,9 +79,10 @@ class UriTypeConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: UriTypeConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -101,9 +105,10 @@ class UriTypeConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def IsValid(self,*__args):
-  """
+        pass
+
+    def IsValid(self, *__args):
+        """
   IsValid(self: UriTypeConverter,context: ITypeDescriptorContext,value: object) -> bool
 
   
@@ -120,4 +125,4 @@ class UriTypeConverter(TypeConverter):
 
     otherwise,false.
   """
-  pass
+        pass

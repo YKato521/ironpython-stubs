@@ -1,11 +1,12 @@
-class BrepLoop(GeometryBase,IDisposable,ISerializable):
- """
+class BrepLoop(GeometryBase, IDisposable, ISerializable):
+    """
  Represent a single loop in a Brep object. A loop is composed
 
     of a list of trim curves.
  """
- def ConstructConstObject(self,*args):
-  """
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -16,9 +17,10 @@ class BrepLoop(GeometryBase,IDisposable,ISerializable):
 
    subobject_index: The subobject index.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: CommonObject,disposing: bool)
 
    For derived class implementers.
@@ -43,9 +45,10 @@ class BrepLoop(GeometryBase,IDisposable,ISerializable):
 
     finalizer.
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: CommonObject)
 
    For derived classes implementers.
@@ -54,25 +57,28 @@ class BrepLoop(GeometryBase,IDisposable,ISerializable):
 
     instance from being const.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: GeometryBase)
 
    Is called when a non-const operation occurs.
   """
-  pass
- def To2dCurve(self):
-  """
+        pass
+
+    def To2dCurve(self):
+        """
   To2dCurve(self: BrepLoop) -> Curve
 
   
 
    Create a 2d curve that traces the entire loop
   """
-  pass
- def To3dCurve(self):
-  """
+        pass
+
+    def To3dCurve(self):
+        """
   To3dCurve(self: BrepLoop) -> Curve
 
   
@@ -81,28 +87,32 @@ class BrepLoop(GeometryBase,IDisposable,ISerializable):
 
    Returns: A 3D curve that approximates the loop or null on failure.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Brep=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the Brep that owns this loop.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Brep = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the Brep that owns this loop.
 
 
 
@@ -112,8 +122,8 @@ Get: Brep(self: BrepLoop) -> Brep
 
 """
 
- Face=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """BrepFace this loop belongs to.
+    Face = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """BrepFace this loop belongs to.
 
 
 
@@ -123,8 +133,8 @@ Get: Face(self: BrepLoop) -> BrepFace
 
 """
 
- LoopIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the index of this loop in the Brep.Loops collection.
+    LoopIndex = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the index of this loop in the Brep.Loops collection.
 
 
 
@@ -134,8 +144,8 @@ Get: LoopIndex(self: BrepLoop) -> int
 
 """
 
- LoopType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """type of loop.
+    LoopType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """type of loop.
 
 
 
@@ -145,8 +155,8 @@ Get: LoopType(self: BrepLoop) -> BrepLoopType
 
 """
 
- Trims=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """List of trims for this loop
+    Trims = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """List of trims for this loop
 
 
 
@@ -155,5 +165,3 @@ Get: Trims(self: BrepLoop) -> BrepTrimList
 
 
 """
-
-

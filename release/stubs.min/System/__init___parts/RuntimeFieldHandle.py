@@ -1,7 +1,8 @@
-class RuntimeFieldHandle(object,ISerializable):
- """ Represents a field using an internal metadata token. """
- def Equals(self,*__args):
-  """
+class RuntimeFieldHandle(object, ISerializable):
+    """ Represents a field using an internal metadata token. """
+
+    def Equals(self, *__args):
+        """
   Equals(self: RuntimeFieldHandle,handle: RuntimeFieldHandle) -> bool
 
   
@@ -28,12 +29,14 @@ class RuntimeFieldHandle(object,ISerializable):
 
     otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """ GetHashCode(self: RuntimeFieldHandle) -> int """
-  pass
- def GetObjectData(self,info,context):
-  """
+        pass
+
+    def GetHashCode(self):
+        """ GetHashCode(self: RuntimeFieldHandle) -> int """
+        pass
+
+    def GetObjectData(self, info, context):
+        """
   GetObjectData(self: RuntimeFieldHandle,info: SerializationInfo,context: StreamingContext)
 
    Populates a System.Runtime.Serialization.SerializationInfo with the data necessary to 
@@ -52,24 +55,31 @@ class RuntimeFieldHandle(object,ISerializable):
 
    context: (Reserved) The place to store and retrieve serialized data.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a handle to the field represented by the current instance.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a handle to the field represented by the current instance.
 
 
 
@@ -78,5 +88,3 @@ Get: Value(self: RuntimeFieldHandle) -> IntPtr
 
 
 """
-
-

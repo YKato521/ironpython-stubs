@@ -8,28 +8,38 @@
 # no functions
 # classes
 
-class ApplicationClosingEventArgs(RevitAPIPreEventArgs,IDisposable):
- """ The event arguments used by the ApplicationClosing event. """
- def Dispose(self):
-  """ Dispose(self: RevitAPIEventArgs,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: RevitAPIEventArgs,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+
+class ApplicationClosingEventArgs(RevitAPIPreEventArgs, IDisposable):
+    """ The event arguments used by the ApplicationClosing event. """
+
+    def Dispose(self):
+        """ Dispose(self: RevitAPIEventArgs,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: RevitAPIEventArgs,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
 
 class CommandEventArgs(RevitEventArgs):
- """ The base class of the command Executed and CanExecute event arguments. """
- ActiveDocument=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The active document.
+    """ The base class of the command Executed and CanExecute event arguments. """
+
+    ActiveDocument = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The active document.
 
 
 
@@ -39,8 +49,8 @@ Get: ActiveDocument(self: CommandEventArgs) -> Document
 
 """
 
- CommandId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The command id.
+    CommandId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The command id.
 
 
 
@@ -51,11 +61,13 @@ Get: CommandId(self: CommandEventArgs) -> RevitCommandId
 """
 
 
-
 class BeforeExecutedEventArgs(CommandEventArgs):
- """ The event arguments used by AddInCommandBinding's BeforeExecuted event. """
- UsingCommandData=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether or not the Revit journal will include custom data populated by the application associated with this command.
+    """ The event arguments used by AddInCommandBinding's BeforeExecuted event. """
+
+    UsingCommandData = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates whether or not the Revit journal will include custom data populated by the application associated with this command.
 
 
 
@@ -68,20 +80,23 @@ Set: UsingCommandData(self: BeforeExecutedEventArgs)=value
 """
 
 
-
 class CanExecuteEventArgs(CommandEventArgs):
- """ The event arguments used by AddInCommandBinding's CanExecute event. """
- def GetSelectedCategoryIds(self):
-  """
+    """ The event arguments used by AddInCommandBinding's CanExecute event. """
+
+    def GetSelectedCategoryIds(self):
+        """
   GetSelectedCategoryIds(self: CanExecuteEventArgs) -> ICollection[ElementId]
 
   
 
    Gets the category ids of selected elements.
   """
-  pass
- CanExecute=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The value that indicates whether the Command associated with this event can be executed.
+        pass
+
+    CanExecute = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The value that indicates whether the Command associated with this event can be executed.
 
 
 
@@ -94,17 +109,19 @@ Set: CanExecute(self: CanExecuteEventArgs)=value
 """
 
 
-
 class RibbonItemEventArgs(EventArgs):
- """
+    """
  The base class of the RibbonItem event arguments which have UIApplication property.
 
  
 
  RibbonItemEventArgs()
  """
- Application=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The current UIApplication.
+
+    Application = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The current UIApplication.
 
 
 
@@ -115,11 +132,11 @@ Get: Application(self: RibbonItemEventArgs) -> UIApplication
 """
 
 
-
 class ComboBoxCurrentChangedEventArgs(RibbonItemEventArgs):
- """ The event arguments used by ComboBox's CurrentChanged event. """
- NewValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The current item for the ComboBox after the change.
+    """ The event arguments used by ComboBox's CurrentChanged event. """
+
+    NewValue = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The current item for the ComboBox after the change.
 
 
 
@@ -129,8 +146,8 @@ Get: NewValue(self: ComboBoxCurrentChangedEventArgs) -> ComboBoxMember
 
 """
 
- OldValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The current item for the ComboBox before the change.
+    OldValue = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The current item for the ComboBox before the change.
 
 
 
@@ -141,9 +158,8 @@ Get: OldValue(self: ComboBoxCurrentChangedEventArgs) -> ComboBoxMember
 """
 
 
-
 class ComboBoxDropDownClosedEventArgs(RibbonItemEventArgs):
- """
+    """
  The event arguments used by ComboBox's DropDownClosed event.
 
  
@@ -151,8 +167,9 @@ class ComboBoxDropDownClosedEventArgs(RibbonItemEventArgs):
  ComboBoxDropDownClosedEventArgs()
  """
 
+
 class ComboBoxDropDownOpenedEventArgs(RibbonItemEventArgs):
- """
+    """
  The event arguments used by ComboBox's DropDownOpened event.
 
  
@@ -160,13 +177,16 @@ class ComboBoxDropDownOpenedEventArgs(RibbonItemEventArgs):
  ComboBoxDropDownOpenedEventArgs()
  """
 
-class DialogBoxData(APIObject,IDisposable):
- """ An object that is passed to your application when a dialog is displayed in Revit. """
- def Dispose(self):
-  """ Dispose(self: APIObject,A_0: bool) """
-  pass
- def OverrideResult(self,result):
-  """
+
+class DialogBoxData(APIObject, IDisposable):
+    """ An object that is passed to your application when a dialog is displayed in Revit. """
+
+    def Dispose(self):
+        """ Dispose(self: APIObject,A_0: bool) """
+        pass
+
+    def OverrideResult(self, result):
+        """
   OverrideResult(self: DialogBoxData,result: int) -> bool
 
   
@@ -183,24 +203,30 @@ class DialogBoxData(APIObject,IDisposable):
 
    Returns: Returns true if the result code was accepted.
   """
-  pass
- def ReleaseManagedResources(self,*args):
-  """ ReleaseManagedResources(self: APIObject) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: APIObject) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- HelpId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """An ID that represents the dialog that has been displayed.
+        pass
+
+    def ReleaseManagedResources(self, *args):
+        """ ReleaseManagedResources(self: APIObject) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: APIObject) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    HelpId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """An ID that represents the dialog that has been displayed.
 
 
 
@@ -211,14 +237,15 @@ Get: HelpId(self: DialogBoxData) -> int
 """
 
 
+class DialogBoxShowingEventArgs(RevitAPIPreEventArgs, IDisposable):
+    """ The base class for the event arguments used by the DialogBoxShowing event. """
 
-class DialogBoxShowingEventArgs(RevitAPIPreEventArgs,IDisposable):
- """ The base class for the event arguments used by the DialogBoxShowing event. """
- def Dispose(self):
-  """ Dispose(self: RevitAPIEventArgs,A_0: bool) """
-  pass
- def OverrideResult(self,resultCode):
-  """
+    def Dispose(self):
+        """ Dispose(self: RevitAPIEventArgs,A_0: bool) """
+        pass
+
+    def OverrideResult(self, resultCode):
+        """
   OverrideResult(self: DialogBoxShowingEventArgs,resultCode: int) -> bool
 
   
@@ -235,21 +262,26 @@ class DialogBoxShowingEventArgs(RevitAPIPreEventArgs,IDisposable):
 
    Returns: True if the result code was accepted.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: RevitAPIEventArgs,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- DialogId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """A unique string identifier for DialogBox and TaskDialog type dialogs in Revit.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: RevitAPIEventArgs,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    DialogId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """A unique string identifier for DialogBox and TaskDialog type dialogs in Revit.
 
 
 
@@ -259,8 +291,8 @@ Get: DialogId(self: DialogBoxShowingEventArgs) -> str
 
 """
 
- HelpId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """An ID that represents the dialog that has been displayed.
+    HelpId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """An ID that represents the dialog that has been displayed.
 
 
 
@@ -271,11 +303,11 @@ Get: HelpId(self: DialogBoxShowingEventArgs) -> int
 """
 
 
+class DisplayingOptionsDialogEventArgs(RevitAPIPreEventArgs, IDisposable):
+    """ The event arguments used by DisplayingOptionDialog event. """
 
-class DisplayingOptionsDialogEventArgs(RevitAPIPreEventArgs,IDisposable):
- """ The event arguments used by DisplayingOptionDialog event. """
- def AddTab(self,newTabName,tabbedDialogExtension):
-  """
+    def AddTab(self, newTabName, tabbedDialogExtension):
+        """
   AddTab(self: DisplayingOptionsDialogEventArgs,newTabName: str,tabbedDialogExtension: TabbedDialogExtension)
 
    Add tab to option dialog with tab name and handler information.
@@ -286,24 +318,32 @@ class DisplayingOptionsDialogEventArgs(RevitAPIPreEventArgs,IDisposable):
 
    tabbedDialogExtension: The handlers information for the new tab page.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: RevitAPIEventArgs,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: RevitAPIEventArgs,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- PagesCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The count of pages in the options dialog (include the default pages added by Revit).
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: RevitAPIEventArgs,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: RevitAPIEventArgs,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    PagesCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The count of pages in the options dialog (include the default pages added by Revit).
 
 
 
@@ -314,26 +354,33 @@ Get: PagesCount(self: DisplayingOptionsDialogEventArgs) -> int
 """
 
 
+class DockableFrameFocusChangedEventArgs(RevitAPISingleEventArgs, IDisposable):
+    """ The event arguments used by the DockableFrameActivatedChanged event. """
 
-class DockableFrameFocusChangedEventArgs(RevitAPISingleEventArgs,IDisposable):
- """ The event arguments used by the DockableFrameActivatedChanged event. """
- def Dispose(self):
-  """ Dispose(self: RevitAPIEventArgs,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: RevitAPIEventArgs,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- FocusGained=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True if the pane is being activated,false if it is being inactivated.
+    def Dispose(self):
+        """ Dispose(self: RevitAPIEventArgs,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: RevitAPIEventArgs,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    FocusGained = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """True if the pane is being activated,false if it is being inactivated.
 
 
 
@@ -343,8 +390,8 @@ Get: FocusGained(self: DockableFrameFocusChangedEventArgs) -> bool
 
 """
 
- PaneId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The identifier for dockable pane.
+    PaneId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The identifier for dockable pane.
 
 
 
@@ -355,26 +402,33 @@ Get: PaneId(self: DockableFrameFocusChangedEventArgs) -> DockablePaneId
 """
 
 
+class DockableFrameVisibilityChangedEventArgs(RevitAPISingleEventArgs, IDisposable):
+    """ The event arguments used by the DockableFrameVisibilityChanged event. """
 
-class DockableFrameVisibilityChangedEventArgs(RevitAPISingleEventArgs,IDisposable):
- """ The event arguments used by the DockableFrameVisibilityChanged event. """
- def Dispose(self):
-  """ Dispose(self: RevitAPIEventArgs,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: RevitAPIEventArgs,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- DockableFrameShown=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True if the pane is being shown,false if it is being hidden.
+    def Dispose(self):
+        """ Dispose(self: RevitAPIEventArgs,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: RevitAPIEventArgs,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    DockableFrameShown = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """True if the pane is being shown,false if it is being hidden.
 
 
 
@@ -384,8 +438,8 @@ Get: DockableFrameShown(self: DockableFrameVisibilityChangedEventArgs) -> bool
 
 """
 
- PaneId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The identifier for dockable pane.
+    PaneId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The identifier for dockable pane.
 
 
 
@@ -396,38 +450,43 @@ Get: PaneId(self: DockableFrameVisibilityChangedEventArgs) -> DockablePaneId
 """
 
 
-
 class ExecutedEventArgs(CommandEventArgs):
- """ The event arguments used by AddInCommandBinding's Executed event. """
- def GetJournalData(self):
-  """
+    """ The event arguments used by AddInCommandBinding's Executed event. """
+
+    def GetJournalData(self):
+        """
   GetJournalData(self: ExecutedEventArgs) -> IDictionary[str,str]
 
   
 
    Gets the journal data associated to this command (on journal playback).
   """
-  pass
- def SetJournalData(self,data):
-  """ SetJournalData(self: ExecutedEventArgs,data: IDictionary[str,str]) """
-  pass
+        pass
 
-class FabricationPartBrowserChangedEventArgs(RevitAPISingleEventArgs,IDisposable):
- """ The event arguments used by the FabricationPartBrowserChangedEventArgs event. """
- def Dispose(self):
-  """ Dispose(self: RevitAPIEventArgs,A_0: bool) """
-  pass
- def GetAllSolutionsPartsTypeCounts(self):
-  """
+    def SetJournalData(self, data):
+        """ SetJournalData(self: ExecutedEventArgs,data: IDictionary[str,str]) """
+        pass
+
+
+class FabricationPartBrowserChangedEventArgs(RevitAPISingleEventArgs, IDisposable):
+    """ The event arguments used by the FabricationPartBrowserChangedEventArgs event. """
+
+    def Dispose(self):
+        """ Dispose(self: RevitAPIEventArgs,A_0: bool) """
+        pass
+
+    def GetAllSolutionsPartsTypeCounts(self):
+        """
   GetAllSolutionsPartsTypeCounts(self: FabricationPartBrowserChangedEventArgs) -> IDictionary[ElementId,int]
 
   
 
    Returns the total fabrication part type usage count in all routing solutions.
   """
-  pass
- def GetCurrentSolutionPartTypeIds(self):
-  """
+        pass
+
+    def GetCurrentSolutionPartTypeIds(self):
+        """
   GetCurrentSolutionPartTypeIds(self: FabricationPartBrowserChangedEventArgs) -> ISet[ElementId]
 
   
@@ -440,9 +499,10 @@ class FabricationPartBrowserChangedEventArgs(RevitAPISingleEventArgs,IDisposable
 
    Returns: The set of ElementIds.
   """
-  pass
- def GetFabricationPartTypeIds(self):
-  """
+        pass
+
+    def GetFabricationPartTypeIds(self):
+        """
   GetFabricationPartTypeIds(self: FabricationPartBrowserChangedEventArgs) -> ISet[ElementId]
 
   
@@ -453,9 +513,10 @@ class FabricationPartBrowserChangedEventArgs(RevitAPISingleEventArgs,IDisposable
 
     solution mode.
   """
-  pass
- def GetFilteredSolutionsPartsTypeCounts(self):
-  """
+        pass
+
+    def GetFilteredSolutionsPartsTypeCounts(self):
+        """
   GetFilteredSolutionsPartsTypeCounts(self: FabricationPartBrowserChangedEventArgs) -> IDictionary[ElementId,int]
 
   
@@ -464,9 +525,10 @@ class FabricationPartBrowserChangedEventArgs(RevitAPISingleEventArgs,IDisposable
 
     solutions.
   """
-  pass
- def GetRequiredFabricationPartTypeIds(self):
-  """
+        pass
+
+    def GetRequiredFabricationPartTypeIds(self):
+        """
   GetRequiredFabricationPartTypeIds(self: FabricationPartBrowserChangedEventArgs) -> ISet[ElementId]
 
   
@@ -477,21 +539,28 @@ class FabricationPartBrowserChangedEventArgs(RevitAPISingleEventArgs,IDisposable
 
     routing solution mode.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: RevitAPIEventArgs,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- NumberOfSolutions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The number of active solutions in routing solution mode.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: RevitAPIEventArgs,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    NumberOfSolutions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The number of active solutions in routing solution mode.
 
 
 
@@ -501,8 +570,8 @@ Get: NumberOfSolutions(self: FabricationPartBrowserChangedEventArgs) -> int
 
 """
 
- Operation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The operation associated with this event
+    Operation = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The operation associated with this event
 
 
 
@@ -512,8 +581,8 @@ Get: Operation(self: FabricationPartBrowserChangedEventArgs) -> FabricationPartB
 
 """
 
- ServiceId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The identifier for the fabrication service.
+    ServiceId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The identifier for the fabrication service.
 
 
 
@@ -524,59 +593,72 @@ Get: ServiceId(self: FabricationPartBrowserChangedEventArgs) -> int
 """
 
 
-
-class FabricationPartBrowserOperation(Enum,IComparable,IFormattable,IConvertible):
- """
+class FabricationPartBrowserOperation(Enum, IComparable, IFormattable, IConvertible):
+    """
  Operations for the FabricationPartBrowserChangedEventArgs Event
 
  
 
  enum FabricationPartBrowserOperation,values: CreatedRoutingSolutions (4),FinishRoutingSolutionMode (6),HideBrowser (1),RoutingSolutionChanged (5),ShowBrowser (0),ShowService (2),StartRoutingSolutionMode (3),UnknownOperation (-1)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- CreatedRoutingSolutions=None
- FinishRoutingSolutionMode=None
- HideBrowser=None
- RoutingSolutionChanged=None
- ShowBrowser=None
- ShowService=None
- StartRoutingSolutionMode=None
- UnknownOperation=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    CreatedRoutingSolutions = None
+    FinishRoutingSolutionMode = None
+    HideBrowser = None
+    RoutingSolutionChanged = None
+    ShowBrowser = None
+    ShowService = None
+    StartRoutingSolutionMode = None
+    UnknownOperation = None
+    value__ = None
 
 
-class IdlingEventArgs(RevitAPIPreEventArgs,IDisposable):
- """ The event arguments used by the Idling event. """
- def Dispose(self):
-  """ Dispose(self: RevitAPIEventArgs,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: RevitAPIEventArgs,disposing: bool) """
-  pass
- def SetRaiseWithoutDelay(self):
-  """
+class IdlingEventArgs(RevitAPIPreEventArgs, IDisposable):
+    """ The event arguments used by the Idling event. """
+
+    def Dispose(self):
+        """ Dispose(self: RevitAPIEventArgs,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: RevitAPIEventArgs,disposing: bool) """
+        pass
+
+    def SetRaiseWithoutDelay(self):
+        """
   SetRaiseWithoutDelay(self: IdlingEventArgs)
 
    Sets the next invocation of the idling event to be called promptly,
@@ -589,43 +671,56 @@ class IdlingEventArgs(RevitAPIPreEventArgs,IDisposable):
 
      details see the remarks describing the Idling event.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
 
-class MessageBoxData(DialogBoxData,IDisposable):
- """
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+
+class MessageBoxData(DialogBoxData, IDisposable):
+    """
  An object that represents a simple message box that prompts the user
 
  for some action.
  """
- def Dispose(self):
-  """ Dispose(self: MessageBoxData,A_0: bool) """
-  pass
- def ReleaseManagedResources(self,*args):
-  """ ReleaseManagedResources(self: APIObject) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: APIObject) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- DialogType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """An integer that describes the standard windows type of the dialog box.
+
+    def Dispose(self):
+        """ Dispose(self: MessageBoxData,A_0: bool) """
+        pass
+
+    def ReleaseManagedResources(self, *args):
+        """ ReleaseManagedResources(self: APIObject) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: APIObject) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    DialogType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """An integer that describes the standard windows type of the dialog box.
 
 
 
@@ -635,8 +730,8 @@ Get: DialogType(self: MessageBoxData) -> int
 
 """
 
- Message=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The message that has been displayed in the dialog box.
+    Message = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The message that has been displayed in the dialog box.
 
 
 
@@ -647,26 +742,33 @@ Get: Message(self: MessageBoxData) -> str
 """
 
 
+class MessageBoxShowingEventArgs(DialogBoxShowingEventArgs, IDisposable):
+    """ The event arguments used by the DialogBoxShowing event when a Windows message box is about to be displayed in Revit. """
 
-class MessageBoxShowingEventArgs(DialogBoxShowingEventArgs,IDisposable):
- """ The event arguments used by the DialogBoxShowing event when a Windows message box is about to be displayed in Revit. """
- def Dispose(self):
-  """ Dispose(self: RevitAPIEventArgs,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: RevitAPIEventArgs,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- DialogType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """An integer that describes the standard Windows type of the dialog box.
+    def Dispose(self):
+        """ Dispose(self: RevitAPIEventArgs,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: RevitAPIEventArgs,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    DialogType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """An integer that describes the standard Windows type of the dialog box.
 
 
 
@@ -676,8 +778,8 @@ Get: DialogType(self: MessageBoxShowingEventArgs) -> int
 
 """
 
- Message=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The message that has been displayed in the dialog box.
+    Message = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The message that has been displayed in the dialog box.
 
 
 
@@ -688,26 +790,31 @@ Get: Message(self: MessageBoxShowingEventArgs) -> str
 """
 
 
+class TaskDialogShowingEventArgs(DialogBoxShowingEventArgs, IDisposable):
+    """ The event arguments used by the DialogBoxShowing event when a Revit task dialog that prompts the user for some action is shown. """
 
-class TaskDialogShowingEventArgs(DialogBoxShowingEventArgs,IDisposable):
- """ The event arguments used by the DialogBoxShowing event when a Revit task dialog that prompts the user for some action is shown. """
- def Dispose(self):
-  """ Dispose(self: RevitAPIEventArgs,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: RevitAPIEventArgs,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Message=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The message that has been displayed in the dialog box.
+    def Dispose(self):
+        """ Dispose(self: RevitAPIEventArgs,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: RevitAPIEventArgs,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Message = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The message that has been displayed in the dialog box.
 
 
 
@@ -718,9 +825,8 @@ Get: Message(self: TaskDialogShowingEventArgs) -> str
 """
 
 
-
 class TextBoxEnterPressedEventArgs(RibbonItemEventArgs):
- """
+    """
  The event arguments used by TextBox's EnterPressed event.
 
  
@@ -728,25 +834,34 @@ class TextBoxEnterPressedEventArgs(RibbonItemEventArgs):
  TextBoxEnterPressedEventArgs()
  """
 
-class ViewActivatedEventArgs(RevitAPIPostDocEventArgs,IDisposable):
- """ The event arguments used by the ViewActivated event. """
- def Dispose(self):
-  """ Dispose(self: RevitAPIEventArgs,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: RevitAPIEventArgs,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- CurrentActiveView=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The view that has just become active.
+
+class ViewActivatedEventArgs(RevitAPIPostDocEventArgs, IDisposable):
+    """ The event arguments used by the ViewActivated event. """
+
+    def Dispose(self):
+        """ Dispose(self: RevitAPIEventArgs,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: RevitAPIEventArgs,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    CurrentActiveView = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The view that has just become active.
 
 
 
@@ -756,8 +871,10 @@ Get: CurrentActiveView(self: ViewActivatedEventArgs) -> View
 
 """
 
- PreviousActiveView=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The previously active view.
+    PreviousActiveView = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The previously active view.
 
 
 
@@ -768,26 +885,33 @@ Get: PreviousActiveView(self: ViewActivatedEventArgs) -> View
 """
 
 
+class ViewActivatingEventArgs(RevitAPIPreDocEventArgs, IDisposable):
+    """ The event arguments used by the ViewActivating event. """
 
-class ViewActivatingEventArgs(RevitAPIPreDocEventArgs,IDisposable):
- """ The event arguments used by the ViewActivating event. """
- def Dispose(self):
-  """ Dispose(self: RevitAPIEventArgs,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: RevitAPIEventArgs,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- CurrentActiveView=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The view that is currently active.
+    def Dispose(self):
+        """ Dispose(self: RevitAPIEventArgs,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: RevitAPIEventArgs,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    CurrentActiveView = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The view that is currently active.
 
 
 
@@ -797,8 +921,10 @@ Get: CurrentActiveView(self: ViewActivatingEventArgs) -> View
 
 """
 
- NewActiveView=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The view that is going to become active.
+    NewActiveView = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The view that is going to become active.
 
 
 
@@ -807,6 +933,3 @@ Get: NewActiveView(self: ViewActivatingEventArgs) -> View
 
 
 """
-
-
-

@@ -8,13 +8,15 @@
 # no functions
 # classes
 
+
 class ContentPosition(object):
- """ Abstract class that represents the position of content. This position is content specific. """
- Missing=None
+    """ Abstract class that represents the position of content. This position is content specific. """
+
+    Missing = None
 
 
-class DocumentPage(object,IDisposable):
- """
+class DocumentPage(object, IDisposable):
+    """
  Represents a document page produced by a paginator.
 
  
@@ -23,15 +25,17 @@ class DocumentPage(object,IDisposable):
 
  DocumentPage(visual: Visual,pageSize: Size,bleedBox: Rect,contentBox: Rect)
  """
- def Dispose(self):
-  """
+
+    def Dispose(self):
+        """
   Dispose(self: DocumentPage)
 
    Releases all resources used by the System.Windows.Documents.DocumentPage.
   """
-  pass
- def OnPageDestroyed(self,*args):
-  """
+        pass
+
+    def OnPageDestroyed(self, *args):
+        """
   OnPageDestroyed(self: DocumentPage,e: EventArgs)
 
    Raises the System.Windows.Documents.DocumentPage.PageDestroyed event.
@@ -40,9 +44,10 @@ class DocumentPage(object,IDisposable):
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def SetBleedBox(self,*args):
-  """
+        pass
+
+    def SetBleedBox(self, *args):
+        """
   SetBleedBox(self: DocumentPage,bleedBox: Rect)
 
    Sets the dimensions and location of the System.Windows.Documents.DocumentPage.BleedBox.
@@ -51,9 +56,10 @@ class DocumentPage(object,IDisposable):
 
    bleedBox: An object that specifies the size and location of a rectangle.
   """
-  pass
- def SetContentBox(self,*args):
-  """
+        pass
+
+    def SetContentBox(self, *args):
+        """
   SetContentBox(self: DocumentPage,contentBox: Rect)
 
    Sets the dimension and location of the System.Windows.Documents.DocumentPage.ContentBox.
@@ -62,9 +68,10 @@ class DocumentPage(object,IDisposable):
 
    contentBox: An object that specifies the size and location of a rectangle.
   """
-  pass
- def SetSize(self,*args):
-  """
+        pass
+
+    def SetSize(self, *args):
+        """
   SetSize(self: DocumentPage,size: Size)
 
    Sets the System.Windows.Documents.DocumentPage.Size of the physical page as it will be after any 
@@ -77,9 +84,10 @@ class DocumentPage(object,IDisposable):
 
    size: The size of the page.
   """
-  pass
- def SetVisual(self,*args):
-  """
+        pass
+
+    def SetVisual(self, *args):
+        """
   SetVisual(self: DocumentPage,visual: Visual)
 
    Sets the System.Windows.Documents.DocumentPage.Visual that depicts the page.
@@ -88,39 +96,45 @@ class DocumentPage(object,IDisposable):
 
    visual: The visual representation of the page.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,visual,pageSize=None,bleedBox=None,contentBox=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, visual, pageSize=None, bleedBox=None, contentBox=None):
+        """
   __new__(cls: type,visual: Visual)
 
   __new__(cls: type,visual: Visual,pageSize: Size,bleedBox: Rect,contentBox: Rect)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- BleedBox=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets the area for print production-related bleeds,registration marks,and crop marks that may appear on the physical sheet outside the logical page boundaries.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    BleedBox = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """When overridden in a derived class,gets the area for print production-related bleeds,registration marks,and crop marks that may appear on the physical sheet outside the logical page boundaries.
 
 
 
@@ -130,8 +144,10 @@ Get: BleedBox(self: DocumentPage) -> Rect
 
 """
 
- ContentBox=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets the area of the page within the margins.
+    ContentBox = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """When overridden in a derived class,gets the area of the page within the margins.
 
 
 
@@ -141,8 +157,8 @@ Get: ContentBox(self: DocumentPage) -> Rect
 
 """
 
- Size=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets the actual size of a page as it will be following any cropping.
+    Size = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """When overridden in a derived class,gets the actual size of a page as it will be following any cropping.
 
 
 
@@ -152,8 +168,8 @@ Get: Size(self: DocumentPage) -> Size
 
 """
 
- Visual=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets the visual representation of the page.
+    Visual = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """When overridden in a derived class,gets the visual representation of the page.
 
 
 
@@ -163,15 +179,15 @@ Get: Visual(self: DocumentPage) -> Visual
 
 """
 
-
- Missing=None
- PageDestroyed=None
+    Missing = None
+    PageDestroyed = None
 
 
 class DocumentPaginator(object):
- """ Provides an abstract base class that supports creation of multiple-page elements from a single document. """
- def CancelAsync(self,userState):
-  """
+    """ Provides an abstract base class that supports creation of multiple-page elements from a single document. """
+
+    def CancelAsync(self, userState):
+        """
   CancelAsync(self: DocumentPaginator,userState: object)
 
    Cancels a previous erload:System.Windows.Documents.DocumentPaginator.GetPageAsync or 
@@ -190,9 +206,10 @@ class DocumentPaginator(object):
 
     asynchronous task to cancel.
   """
-  pass
- def ComputePageCount(self):
-  """
+        pass
+
+    def ComputePageCount(self):
+        """
   ComputePageCount(self: DocumentPaginator)
 
    Forces a pagination of the content,updates System.Windows.Documents.DocumentPaginator.PageCount 
@@ -201,9 +218,10 @@ class DocumentPaginator(object):
 
     true.
   """
-  pass
- def ComputePageCountAsync(self,userState=None):
-  """
+        pass
+
+    def ComputePageCountAsync(self, userState=None):
+        """
   ComputePageCountAsync(self: DocumentPaginator,userState: object)
 
    Asynchronously,forces a pagination of the content,updates 
@@ -226,9 +244,10 @@ class DocumentPaginator(object):
 
     System.Windows.Documents.DocumentPaginator.IsPageCountValid to true.
   """
-  pass
- def GetPage(self,pageNumber):
-  """
+        pass
+
+    def GetPage(self, pageNumber):
+        """
   GetPage(self: DocumentPaginator,pageNumber: int) -> DocumentPage
 
   
@@ -247,9 +266,10 @@ class DocumentPaginator(object):
 
     System.Windows.Documents.DocumentPage.Missing if the page does not exist.
   """
-  pass
- def GetPageAsync(self,pageNumber,userState=None):
-  """
+        pass
+
+    def GetPageAsync(self, pageNumber, userState=None):
+        """
   GetPageAsync(self: DocumentPaginator,pageNumber: int,userState: object)
 
    Asynchronously returns (through the System.Windows.Documents.DocumentPaginator.GetPageCompleted 
@@ -278,9 +298,10 @@ class DocumentPaginator(object):
 
    pageNumber: The zero-based page number of the document page that is needed.
   """
-  pass
- def OnComputePageCountCompleted(self,*args):
-  """
+        pass
+
+    def OnComputePageCountCompleted(self, *args):
+        """
   OnComputePageCountCompleted(self: DocumentPaginator,e: AsyncCompletedEventArgs)
 
    Raises the System.Windows.Documents.DocumentPaginator.ComputePageCountCompleted event.
@@ -289,9 +310,10 @@ class DocumentPaginator(object):
 
    e: An System.ComponentModel.AsyncCompletedEventArgs that contains the event data.
   """
-  pass
- def OnGetPageCompleted(self,*args):
-  """
+        pass
+
+    def OnGetPageCompleted(self, *args):
+        """
   OnGetPageCompleted(self: DocumentPaginator,e: GetPageCompletedEventArgs)
 
    Raises the System.Windows.Documents.DocumentPaginator.GetPageCompleted event.
@@ -300,9 +322,10 @@ class DocumentPaginator(object):
 
    e: A System.Windows.Documents.GetPageCompletedEventArgs that contains the event data.
   """
-  pass
- def OnPagesChanged(self,*args):
-  """
+        pass
+
+    def OnPagesChanged(self, *args):
+        """
   OnPagesChanged(self: DocumentPaginator,e: PagesChangedEventArgs)
 
    Raises the System.Windows.Documents.DocumentPaginator.PagesChanged event.
@@ -311,9 +334,12 @@ class DocumentPaginator(object):
 
    e: A System.Windows.Documents.PagesChangedEventArgs that contains the event data.
   """
-  pass
- IsPageCountValid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets a value indicating whether System.Windows.Documents.DocumentPaginator.PageCount is the total number of pages.
+        pass
+
+    IsPageCountValid = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """When overridden in a derived class,gets a value indicating whether System.Windows.Documents.DocumentPaginator.PageCount is the total number of pages.
 
 
 
@@ -323,8 +349,8 @@ Get: IsPageCountValid(self: DocumentPaginator) -> bool
 
 """
 
- PageCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets a count of the number of pages currently formatted
+    PageCount = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """When overridden in a derived class,gets a count of the number of pages currently formatted
 
 
 
@@ -334,8 +360,8 @@ Get: PageCount(self: DocumentPaginator) -> int
 
 """
 
- PageSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets or sets the suggested width and height of each page.
+    PageSize = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """When overridden in a derived class,gets or sets the suggested width and height of each page.
 
 
 
@@ -347,8 +373,8 @@ Set: PageSize(self: DocumentPaginator)=value
 
 """
 
- Source=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,returns the element being paginated.
+    Source = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """When overridden in a derived class,returns the element being paginated.
 
 
 
@@ -358,16 +384,16 @@ Get: Source(self: DocumentPaginator) -> IDocumentPaginatorSource
 
 """
 
-
- ComputePageCountCompleted=None
- GetPageCompleted=None
- PagesChanged=None
+    ComputePageCountCompleted = None
+    GetPageCompleted = None
+    PagesChanged = None
 
 
 class DynamicDocumentPaginator(DocumentPaginator):
- """ Provides an abstract base class that supports automatic background pagination and tracking content positions across repaginations in addition to the methods and properties of its own base class. """
- def GetObjectPosition(self,value):
-  """
+    """ Provides an abstract base class that supports automatic background pagination and tracking content positions across repaginations in addition to the methods and properties of its own base class. """
+
+    def GetObjectPosition(self, value):
+        """
   GetObjectPosition(self: DynamicDocumentPaginator,value: object) -> ContentPosition
 
   
@@ -384,9 +410,10 @@ class DynamicDocumentPaginator(DocumentPaginator):
 
    Returns: The System.Windows.Documents.ContentPosition of the given object.
   """
-  pass
- def GetPageNumber(self,contentPosition):
-  """
+        pass
+
+    def GetPageNumber(self, contentPosition):
+        """
   GetPageNumber(self: DynamicDocumentPaginator,contentPosition: ContentPosition) -> int
 
   
@@ -403,9 +430,10 @@ class DynamicDocumentPaginator(DocumentPaginator):
 
    Returns: An System.Int32 representing zero-based page number where the specified contentPosition appears.
   """
-  pass
- def GetPageNumberAsync(self,contentPosition,userState=None):
-  """
+        pass
+
+    def GetPageNumberAsync(self, contentPosition, userState=None):
+        """
   GetPageNumberAsync(self: DynamicDocumentPaginator,contentPosition: ContentPosition,userState: object)
 
    Asynchronously,returns (through the This method raises the 
@@ -436,9 +464,10 @@ class DynamicDocumentPaginator(DocumentPaginator):
 
    contentPosition: The content position whose page number is needed.
   """
-  pass
- def GetPagePosition(self,page):
-  """
+        pass
+
+    def GetPagePosition(self, page):
+        """
   GetPagePosition(self: DynamicDocumentPaginator,page: DocumentPage) -> ContentPosition
 
   
@@ -455,9 +484,10 @@ class DynamicDocumentPaginator(DocumentPaginator):
 
    Returns: A System.Windows.Documents.ContentPosition representing the position of page.
   """
-  pass
- def OnGetPageNumberCompleted(self,*args):
-  """
+        pass
+
+    def OnGetPageNumberCompleted(self, *args):
+        """
   OnGetPageNumberCompleted(self: DynamicDocumentPaginator,e: GetPageNumberCompletedEventArgs)
 
    Raises the System.Windows.Documents.DynamicDocumentPaginator.GetPageNumberCompleted event.
@@ -466,9 +496,10 @@ class DynamicDocumentPaginator(DocumentPaginator):
 
    e: A System.Windows.Documents.GetPageNumberCompletedEventArgs that contains the event data.
   """
-  pass
- def OnPaginationCompleted(self,*args):
-  """
+        pass
+
+    def OnPaginationCompleted(self, *args):
+        """
   OnPaginationCompleted(self: DynamicDocumentPaginator,e: EventArgs)
 
    Raises the System.Windows.Documents.DynamicDocumentPaginator.PaginationCompleted event.
@@ -477,9 +508,10 @@ class DynamicDocumentPaginator(DocumentPaginator):
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnPaginationProgress(self,*args):
-  """
+        pass
+
+    def OnPaginationProgress(self, *args):
+        """
   OnPaginationProgress(self: DynamicDocumentPaginator,e: PaginationProgressEventArgs)
 
    Raises the System.Windows.Documents.DynamicDocumentPaginator.PaginationProgress event.
@@ -488,9 +520,12 @@ class DynamicDocumentPaginator(DocumentPaginator):
 
    e: A System.Windows.Documents.PaginationProgressEventArgs that contains the event data.
   """
-  pass
- IsBackgroundPaginationEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether pagination is performed automatically in the background in response to certain events,such as a change in page size.
+        pass
+
+    IsBackgroundPaginationEnabled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether pagination is performed automatically in the background in response to certain events,such as a change in page size.
 
 
 
@@ -502,26 +537,29 @@ Set: IsBackgroundPaginationEnabled(self: DynamicDocumentPaginator)=value
 
 """
 
-
- GetPageNumberCompleted=None
- PaginationCompleted=None
- PaginationProgress=None
+    GetPageNumberCompleted = None
+    PaginationCompleted = None
+    PaginationProgress = None
 
 
 class GetPageCompletedEventArgs(AsyncCompletedEventArgs):
- """
+    """
  Provides data for the System.Windows.Documents.DocumentPaginator.GetPageCompleted event.
 
  
 
  GetPageCompletedEventArgs(page: DocumentPage,pageNumber: int,error: Exception,cancelled: bool,userState: object)
  """
- @staticmethod
- def __new__(self,page,pageNumber,error,cancelled,userState):
-  """ __new__(cls: type,page: DocumentPage,pageNumber: int,error: Exception,cancelled: bool,userState: object) """
-  pass
- DocumentPage=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Documents.DocumentPage for the page specified in the call to System.Windows.Documents.DocumentPaginator.GetPageAsync(System.Int32,System.Object).
+
+    @staticmethod
+    def __new__(self, page, pageNumber, error, cancelled, userState):
+        """ __new__(cls: type,page: DocumentPage,pageNumber: int,error: Exception,cancelled: bool,userState: object) """
+        pass
+
+    DocumentPage = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Windows.Documents.DocumentPage for the page specified in the call to System.Windows.Documents.DocumentPaginator.GetPageAsync(System.Int32,System.Object).
 
 
 
@@ -531,8 +569,10 @@ Get: DocumentPage(self: GetPageCompletedEventArgs) -> DocumentPage
 
 """
 
- PageNumber=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the page number passed to System.Windows.Documents.DocumentPaginator.GetPageAsync(System.Int32,System.Object).
+    PageNumber = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the page number passed to System.Windows.Documents.DocumentPaginator.GetPageAsync(System.Int32,System.Object).
 
 
 
@@ -543,20 +583,21 @@ Get: PageNumber(self: GetPageCompletedEventArgs) -> int
 """
 
 
-
-class GetPageCompletedEventHandler(MulticastDelegate,ICloneable,ISerializable):
- """
+class GetPageCompletedEventHandler(MulticastDelegate, ICloneable, ISerializable):
+    """
  Represents the method that will handle the System.Windows.Documents.DocumentPaginator.GetPageCompleted event of a System.Windows.Documents.FixedDocument or other classes implementing System.Windows.Documents.DocumentPaginator.
 
  
 
  GetPageCompletedEventHandler(object: object,method: IntPtr)
  """
- def BeginInvoke(self,sender,e,callback,object):
-  """ BeginInvoke(self: GetPageCompletedEventHandler,sender: object,e: GetPageCompletedEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+
+    def BeginInvoke(self, sender, e, callback, object):
+        """ BeginInvoke(self: GetPageCompletedEventHandler,sender: object,e: GetPageCompletedEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -569,9 +610,10 @@ class GetPageCompletedEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -590,12 +632,14 @@ class GetPageCompletedEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: GetPageCompletedEventHandler,result: IAsyncResult) """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: GetPageCompletedEventHandler,result: IAsyncResult) """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -604,12 +648,14 @@ class GetPageCompletedEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,sender,e):
-  """ Invoke(self: GetPageCompletedEventHandler,sender: object,e: GetPageCompletedEventArgs) """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, sender, e):
+        """ Invoke(self: GetPageCompletedEventHandler,sender: object,e: GetPageCompletedEventArgs) """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -628,31 +674,39 @@ class GetPageCompletedEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
 
 class GetPageNumberCompletedEventArgs(AsyncCompletedEventArgs):
- """
+    """
  Provides data for the System.Windows.Documents.DynamicDocumentPaginator.GetPageNumberCompleted event.
 
  
 
  GetPageNumberCompletedEventArgs(contentPosition: ContentPosition,pageNumber: int,error: Exception,cancelled: bool,userState: object)
  """
- @staticmethod
- def __new__(self,contentPosition,pageNumber,error,cancelled,userState):
-  """ __new__(cls: type,contentPosition: ContentPosition,pageNumber: int,error: Exception,cancelled: bool,userState: object) """
-  pass
- ContentPosition=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Documents.ContentPosition passed to System.Windows.Documents.DynamicDocumentPaginator.GetPageNumberAsync(System.Windows.Documents.ContentPosition).
+
+    @staticmethod
+    def __new__(self, contentPosition, pageNumber, error, cancelled, userState):
+        """ __new__(cls: type,contentPosition: ContentPosition,pageNumber: int,error: Exception,cancelled: bool,userState: object) """
+        pass
+
+    ContentPosition = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Windows.Documents.ContentPosition passed to System.Windows.Documents.DynamicDocumentPaginator.GetPageNumberAsync(System.Windows.Documents.ContentPosition).
 
 
 
@@ -662,8 +716,10 @@ Get: ContentPosition(self: GetPageNumberCompletedEventArgs) -> ContentPosition
 
 """
 
- PageNumber=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the page number for the System.Windows.Documents.ContentPosition passed to System.Windows.Documents.DynamicDocumentPaginator.GetPageNumberAsync(System.Windows.Documents.ContentPosition).
+    PageNumber = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the page number for the System.Windows.Documents.ContentPosition passed to System.Windows.Documents.DynamicDocumentPaginator.GetPageNumberAsync(System.Windows.Documents.ContentPosition).
 
 
 
@@ -674,20 +730,21 @@ Get: PageNumber(self: GetPageNumberCompletedEventArgs) -> int
 """
 
 
-
-class GetPageNumberCompletedEventHandler(MulticastDelegate,ICloneable,ISerializable):
- """
+class GetPageNumberCompletedEventHandler(MulticastDelegate, ICloneable, ISerializable):
+    """
  Represents the method that will handle the System.Windows.Documents.DynamicDocumentPaginator.GetPageNumberCompleted event of a System.Windows.Documents.FixedDocument,or System.Windows.Documents.FlowDocument.
 
  
 
  GetPageNumberCompletedEventHandler(object: object,method: IntPtr)
  """
- def BeginInvoke(self,sender,e,callback,object):
-  """ BeginInvoke(self: GetPageNumberCompletedEventHandler,sender: object,e: GetPageNumberCompletedEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+
+    def BeginInvoke(self, sender, e, callback, object):
+        """ BeginInvoke(self: GetPageNumberCompletedEventHandler,sender: object,e: GetPageNumberCompletedEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -700,9 +757,10 @@ class GetPageNumberCompletedEventHandler(MulticastDelegate,ICloneable,ISerializa
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -721,12 +779,14 @@ class GetPageNumberCompletedEventHandler(MulticastDelegate,ICloneable,ISerializa
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: GetPageNumberCompletedEventHandler,result: IAsyncResult) """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: GetPageNumberCompletedEventHandler,result: IAsyncResult) """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -735,12 +795,14 @@ class GetPageNumberCompletedEventHandler(MulticastDelegate,ICloneable,ISerializa
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,sender,e):
-  """ Invoke(self: GetPageNumberCompletedEventHandler,sender: object,e: GetPageNumberCompletedEventArgs) """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, sender, e):
+        """ Invoke(self: GetPageNumberCompletedEventHandler,sender: object,e: GetPageNumberCompletedEventArgs) """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -759,24 +821,32 @@ class GetPageNumberCompletedEventHandler(MulticastDelegate,ICloneable,ISerializa
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
 
 class IDocumentPaginatorSource:
- """ Defines the source object that performs actual content pagination. """
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- DocumentPaginator=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When implemented in a derived class,gets the object that performs content pagination.
+    """ Defines the source object that performs actual content pagination. """
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    DocumentPaginator = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """When implemented in a derived class,gets the object that performs content pagination.
 
 
 
@@ -787,21 +857,22 @@ Get: DocumentPaginator(self: IDocumentPaginatorSource) -> DocumentPaginator
 """
 
 
-
 class PagesChangedEventArgs(EventArgs):
- """
+    """
  Provides data for the System.Windows.Documents.DocumentPaginator.PagesChanged event.
 
  
 
  PagesChangedEventArgs(start: int,count: int)
  """
- @staticmethod
- def __new__(self,start,count):
-  """ __new__(cls: type,start: int,count: int) """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of continuous pages that changed.
+
+    @staticmethod
+    def __new__(self, start, count):
+        """ __new__(cls: type,start: int,count: int) """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of continuous pages that changed.
 
 
 
@@ -811,8 +882,8 @@ Get: Count(self: PagesChangedEventArgs) -> int
 
 """
 
- Start=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the page number of the first page that changed.
+    Start = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the page number of the first page that changed.
 
 
 
@@ -823,20 +894,21 @@ Get: Start(self: PagesChangedEventArgs) -> int
 """
 
 
-
-class PagesChangedEventHandler(MulticastDelegate,ICloneable,ISerializable):
- """
+class PagesChangedEventHandler(MulticastDelegate, ICloneable, ISerializable):
+    """
  Represents the method that will handle the System.Windows.Documents.DocumentPaginator.PagesChanged event.
 
  
 
  PagesChangedEventHandler(object: object,method: IntPtr)
  """
- def BeginInvoke(self,sender,e,callback,object):
-  """ BeginInvoke(self: PagesChangedEventHandler,sender: object,e: PagesChangedEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+
+    def BeginInvoke(self, sender, e, callback, object):
+        """ BeginInvoke(self: PagesChangedEventHandler,sender: object,e: PagesChangedEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -849,9 +921,10 @@ class PagesChangedEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -870,12 +943,14 @@ class PagesChangedEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: PagesChangedEventHandler,result: IAsyncResult) """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: PagesChangedEventHandler,result: IAsyncResult) """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -884,12 +959,14 @@ class PagesChangedEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,sender,e):
-  """ Invoke(self: PagesChangedEventHandler,sender: object,e: PagesChangedEventArgs) """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, sender, e):
+        """ Invoke(self: PagesChangedEventHandler,sender: object,e: PagesChangedEventArgs) """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -908,31 +985,37 @@ class PagesChangedEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
 
 class PaginationProgressEventArgs(EventArgs):
- """
+    """
  Provides data for the System.Windows.Documents.DynamicDocumentPaginator.PaginationProgress event.
 
  
 
  PaginationProgressEventArgs(start: int,count: int)
  """
- @staticmethod
- def __new__(self,start,count):
-  """ __new__(cls: type,start: int,count: int) """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of continuous pages that were paginated.
+
+    @staticmethod
+    def __new__(self, start, count):
+        """ __new__(cls: type,start: int,count: int) """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of continuous pages that were paginated.
 
 
 
@@ -942,8 +1025,8 @@ Get: Count(self: PaginationProgressEventArgs) -> int
 
 """
 
- Start=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the page number of the first page that was paginated.
+    Start = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the page number of the first page that was paginated.
 
 
 
@@ -954,20 +1037,21 @@ Get: Start(self: PaginationProgressEventArgs) -> int
 """
 
 
-
-class PaginationProgressEventHandler(MulticastDelegate,ICloneable,ISerializable):
- """
+class PaginationProgressEventHandler(MulticastDelegate, ICloneable, ISerializable):
+    """
  Represents the method that will handle the System.Windows.Documents.DynamicDocumentPaginator.PaginationProgress event.
 
  
 
  PaginationProgressEventHandler(object: object,method: IntPtr)
  """
- def BeginInvoke(self,sender,e,callback,object):
-  """ BeginInvoke(self: PaginationProgressEventHandler,sender: object,e: PaginationProgressEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+
+    def BeginInvoke(self, sender, e, callback, object):
+        """ BeginInvoke(self: PaginationProgressEventHandler,sender: object,e: PaginationProgressEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -980,9 +1064,10 @@ class PaginationProgressEventHandler(MulticastDelegate,ICloneable,ISerializable)
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -1001,12 +1086,14 @@ class PaginationProgressEventHandler(MulticastDelegate,ICloneable,ISerializable)
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: PaginationProgressEventHandler,result: IAsyncResult) """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: PaginationProgressEventHandler,result: IAsyncResult) """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -1015,12 +1102,14 @@ class PaginationProgressEventHandler(MulticastDelegate,ICloneable,ISerializable)
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,sender,e):
-  """ Invoke(self: PaginationProgressEventHandler,sender: object,e: PaginationProgressEventArgs) """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, sender, e):
+        """ Invoke(self: PaginationProgressEventHandler,sender: object,e: PaginationProgressEventArgs) """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -1039,14 +1128,16 @@ class PaginationProgressEventHandler(MulticastDelegate,ICloneable,ISerializable)
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
 
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass

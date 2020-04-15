@@ -1,14 +1,17 @@
-class StructuralSettings(Element,IDisposable):
- """ Provides access to project-wide structural settings. """
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- @staticmethod
- def GetStructuralSettings(doc):
-  """
+class StructuralSettings(Element, IDisposable):
+    """ Provides access to project-wide structural settings. """
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    @staticmethod
+    def GetStructuralSettings(doc):
+        """
   GetStructuralSettings(doc: Document) -> StructuralSettings
 
   
@@ -21,24 +24,32 @@ class StructuralSettings(Element,IDisposable):
 
    Returns: The StructuralSettings object.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- AnalyticalLinkAutofixTolerance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Tolerance for the analytical link distance.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    AnalyticalLinkAutofixTolerance = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Tolerance for the analytical link distance.
 
 
 
@@ -50,8 +61,10 @@ Set: AnalyticalLinkAutofixTolerance(self: StructuralSettings)=value
 
 """
 
- AnalyticalModelAutoCheckConsistency=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether to check automatically for consistency between the analytical
+    AnalyticalModelAutoCheckConsistency = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether to check automatically for consistency between the analytical
 
    and physical models.
 
@@ -65,8 +78,10 @@ Set: AnalyticalModelAutoCheckConsistency(self: StructuralSettings)=value
 
 """
 
- AnalyticalModelAutoCheckMemberSupports=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether to check automatically for member supports.
+    AnalyticalModelAutoCheckMemberSupports = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether to check automatically for member supports.
 
 
 
@@ -78,8 +93,10 @@ Set: AnalyticalModelAutoCheckMemberSupports(self: StructuralSettings)=value
 
 """
 
- AnalyticalModelCheckAdjustment=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether to check for analytical model distance from default location is
+    AnalyticalModelCheckAdjustment = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether to check for analytical model distance from default location is
 
    larger than the tolerance defined by the property
 
@@ -95,8 +112,10 @@ Set: AnalyticalModelCheckAdjustment(self: StructuralSettings)=value
 
 """
 
- AnalyticalModelCheckBeamSlabDistance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether to check the analytical model distance between beam and slab for a level.
+    AnalyticalModelCheckBeamSlabDistance = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether to check the analytical model distance between beam and slab for a level.
 
 
 
@@ -108,8 +127,10 @@ Set: AnalyticalModelCheckBeamSlabDistance(self: StructuralSettings)=value
 
 """
 
- AnalyticalModelCheckCircularReferences=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether to check member supports for circular references.
+    AnalyticalModelCheckCircularReferences = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether to check member supports for circular references.
 
 
 
@@ -121,8 +142,10 @@ Set: AnalyticalModelCheckCircularReferences(self: StructuralSettings)=value
 
 """
 
- AnalyticalModelCheckDiscrepancy=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether to check for distance between analytical and physical models
+    AnalyticalModelCheckDiscrepancy = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether to check for distance between analytical and physical models
 
    greater than a tolerance defined by
 
@@ -138,8 +161,10 @@ Set: AnalyticalModelCheckDiscrepancy(self: StructuralSettings)=value
 
 """
 
- AnalyticalModelCheckInstability=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether to check for possible instability based on release conditions.
+    AnalyticalModelCheckInstability = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether to check for possible instability based on release conditions.
 
 
 
@@ -151,8 +176,10 @@ Set: AnalyticalModelCheckInstability(self: StructuralSettings)=value
 
 """
 
- AnalyticalModelCheckSupportDistance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Check that joins in the physical model are consistent
+    AnalyticalModelCheckSupportDistance = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Check that joins in the physical model are consistent
 
    with proximity in the analytical model.
 
@@ -166,8 +193,10 @@ Set: AnalyticalModelCheckSupportDistance(self: StructuralSettings)=value
 
 """
 
- AnalyticalModelDiscrepancyTolerance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Tolerance for the analytical-to-physical model distance.
+    AnalyticalModelDiscrepancyTolerance = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Tolerance for the analytical-to-physical model distance.
 
 
 
@@ -179,8 +208,10 @@ Set: AnalyticalModelDiscrepancyTolerance(self: StructuralSettings)=value
 
 """
 
- AnalyticalModelHorizontalAutofixTolerance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Tolerance for horizontal auto-detect for the analytical model.
+    AnalyticalModelHorizontalAutofixTolerance = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Tolerance for horizontal auto-detect for the analytical model.
 
 
 
@@ -192,8 +223,10 @@ Set: AnalyticalModelHorizontalAutofixTolerance(self: StructuralSettings)=value
 
 """
 
- AnalyticalModelSupportDistanceTolerance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The maximum distance between two structural elements,
+    AnalyticalModelSupportDistanceTolerance = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The maximum distance between two structural elements,
 
    where analytical model support rules still apply.
 
@@ -207,8 +240,10 @@ Set: AnalyticalModelSupportDistanceTolerance(self: StructuralSettings)=value
 
 """
 
- AnalyticalModelVerticalAutofixTolerance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Tolerance for vertical auto-detect for the analytical model.
+    AnalyticalModelVerticalAutofixTolerance = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Tolerance for vertical auto-detect for the analytical model.
 
 
 
@@ -220,8 +255,10 @@ Set: AnalyticalModelVerticalAutofixTolerance(self: StructuralSettings)=value
 
 """
 
- BoundaryConditionAreaAndLineSymbolSpacing=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Symbol spacing for boundary conditions.
+    BoundaryConditionAreaAndLineSymbolSpacing = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Symbol spacing for boundary conditions.
 
 
 
@@ -233,8 +270,10 @@ Set: BoundaryConditionAreaAndLineSymbolSpacing(self: StructuralSettings)=value
 
 """
 
- BoundaryConditionFamilySymbolFixed=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the FamilySymbol to represent a fixed boundary condition.
+    BoundaryConditionFamilySymbolFixed = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The id of the FamilySymbol to represent a fixed boundary condition.
 
 
 
@@ -246,8 +285,10 @@ Set: BoundaryConditionFamilySymbolFixed(self: StructuralSettings)=value
 
 """
 
- BoundaryConditionFamilySymbolPinned=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the FamilySymbol to represent a pinned boundary condition.
+    BoundaryConditionFamilySymbolPinned = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The id of the FamilySymbol to represent a pinned boundary condition.
 
 
 
@@ -259,8 +300,10 @@ Set: BoundaryConditionFamilySymbolPinned(self: StructuralSettings)=value
 
 """
 
- BoundaryConditionFamilySymbolRoller=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the FamilySymbol to represent a roller boundary condition.
+    BoundaryConditionFamilySymbolRoller = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The id of the FamilySymbol to represent a roller boundary condition.
 
 
 
@@ -272,8 +315,10 @@ Set: BoundaryConditionFamilySymbolRoller(self: StructuralSettings)=value
 
 """
 
- BoundaryConditionFamilySymbolUserDefined=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the FamilySymbol to represent a user-defined boundary condition.
+    BoundaryConditionFamilySymbolUserDefined = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The id of the FamilySymbol to represent a user-defined boundary condition.
 
 
 
@@ -285,8 +330,10 @@ Set: BoundaryConditionFamilySymbolUserDefined(self: StructuralSettings)=value
 
 """
 
- BraceAboveSymbol=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the ElementType to represent a brace above a beam in plan view.
+    BraceAboveSymbol = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The id of the ElementType to represent a brace above a beam in plan view.
 
 
 
@@ -298,8 +345,10 @@ Set: BraceAboveSymbol(self: StructuralSettings)=value
 
 """
 
- BraceBelowSymbol=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the ElementType to represent a brace below a beam in plan view.
+    BraceBelowSymbol = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The id of the ElementType to represent a brace below a beam in plan view.
 
 
 
@@ -311,8 +360,10 @@ Set: BraceBelowSymbol(self: StructuralSettings)=value
 
 """
 
- BraceParallelLineOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The distance by which brace symbols in plan
+    BraceParallelLineOffset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The distance by which brace symbols in plan
 
    views will be offset.
 
@@ -326,8 +377,10 @@ Set: BraceParallelLineOffset(self: StructuralSettings)=value
 
 """
 
- CheckAnalyticalModelAsset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether to check for valid Asset within the Material of associated Physical Element.
+    CheckAnalyticalModelAsset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether to check for valid Asset within the Material of associated Physical Element.
 
 
 
@@ -339,8 +392,10 @@ Set: CheckAnalyticalModelAsset(self: StructuralSettings)=value
 
 """
 
- DifferentiateAnalyticalEnds=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether to use a subcategory for the ends of a linear analytical model,rather than
+    DifferentiateAnalyticalEnds = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether to use a subcategory for the ends of a linear analytical model,rather than
 
    the main category.
 
@@ -354,8 +409,10 @@ Set: DifferentiateAnalyticalEnds(self: StructuralSettings)=value
 
 """
 
- KickerBraceSymbol=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the ElementType to represent a kicker brace.
+    KickerBraceSymbol = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The id of the ElementType to represent a kicker brace.
 
 
 
@@ -367,8 +424,10 @@ Set: KickerBraceSymbol(self: StructuralSettings)=value
 
 """
 
- ShowBraceAbove=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether to show brace symbols above beams in plan views.
+    ShowBraceAbove = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether to show brace symbols above beams in plan views.
 
 
 
@@ -380,8 +439,10 @@ Set: ShowBraceAbove(self: StructuralSettings)=value
 
 """
 
- ShowBraceBelow=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether to show brace symbols below beams in plan views.
+    ShowBraceBelow = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether to show brace symbols below beams in plan views.
 
 
 
@@ -393,8 +454,10 @@ Set: ShowBraceBelow(self: StructuralSettings)=value
 
 """
 
- SymbolicCutbackForBeamAndTruss=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Symbolic cutback distance to be applied to all beams and trusses.
+    SymbolicCutbackForBeamAndTruss = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Symbolic cutback distance to be applied to all beams and trusses.
 
 
 
@@ -406,8 +469,10 @@ Set: SymbolicCutbackForBeamAndTruss(self: StructuralSettings)=value
 
 """
 
- SymbolicCutbackForBrace=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Symbolic cutback distance to be applied to all braces.
+    SymbolicCutbackForBrace = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Symbolic cutback distance to be applied to all braces.
 
 
 
@@ -419,8 +484,10 @@ Set: SymbolicCutbackForBrace(self: StructuralSettings)=value
 
 """
 
- SymbolicCutbackForColumn=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Symbolic cutback distance to be applied to all columns.
+    SymbolicCutbackForColumn = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Symbolic cutback distance to be applied to all columns.
 
 
 
@@ -431,5 +498,3 @@ Get: SymbolicCutbackForColumn(self: StructuralSettings) -> float
 Set: SymbolicCutbackForColumn(self: StructuralSettings)=value
 
 """
-
-

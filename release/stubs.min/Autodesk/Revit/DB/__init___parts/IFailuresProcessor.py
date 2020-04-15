@@ -1,7 +1,8 @@
 class IFailuresProcessor:
- """ To create your own UI or fully automated tool to process Revit Failures,derive a class from this interface. """
- def Dismiss(self,document):
-  """
+    """ To create your own UI or fully automated tool to process Revit Failures,derive a class from this interface. """
+
+    def Dismiss(self, document):
+        """
   Dismiss(self: IFailuresProcessor,document: Document)
 
    This method is being called in case of exception or document destruction to 
@@ -16,9 +17,10 @@ class IFailuresProcessor:
 
    document: Document for which pending failures processing UI should be dismissed
   """
-  pass
- def ProcessFailures(self,data):
-  """
+        pass
+
+    def ProcessFailures(self, data):
+        """
   ProcessFailures(self: IFailuresProcessor,data: FailuresAccessor) -> FailureProcessingResult
 
   
@@ -69,7 +71,8 @@ class IFailuresProcessor:
 
      (typically user input) to complete failures processing.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

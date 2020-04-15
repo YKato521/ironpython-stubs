@@ -1,7 +1,8 @@
 class Color(object):
- """ Represents an ARGB (alpha,red,green,blue) color. """
- def Equals(self,obj):
-  """
+    """ Represents an ARGB (alpha,red,green,blue) color. """
+
+    def Equals(self, obj):
+        """
   Equals(self: Color,obj: object) -> bool
 
   
@@ -20,10 +21,11 @@ class Color(object):
 
     structure; otherwise,false.
   """
-  pass
- @staticmethod
- def FromArgb(*__args):
-  """
+        pass
+
+    @staticmethod
+    def FromArgb(*__args):
+        """
   FromArgb(alpha: int,baseColor: Color) -> Color
 
   
@@ -102,10 +104,11 @@ class Color(object):
 
    Returns: The System.Drawing.Color that this method creates.
   """
-  pass
- @staticmethod
- def FromKnownColor(color):
-  """
+        pass
+
+    @staticmethod
+    def FromKnownColor(color):
+        """
   FromKnownColor(color: KnownColor) -> Color
 
   
@@ -118,10 +121,11 @@ class Color(object):
 
    Returns: The System.Drawing.Color that this method creates.
   """
-  pass
- @staticmethod
- def FromName(name):
-  """
+        pass
+
+    @staticmethod
+    def FromName(name):
+        """
   FromName(name: str) -> Color
 
   
@@ -138,9 +142,10 @@ class Color(object):
 
    Returns: The System.Drawing.Color that this method creates.
   """
-  pass
- def GetBrightness(self):
-  """
+        pass
+
+    def GetBrightness(self):
+        """
   GetBrightness(self: Color) -> Single
 
   
@@ -155,9 +160,10 @@ class Color(object):
 
     0.0 represents black and 1.0 represents white.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Color) -> int
 
   
@@ -166,9 +172,10 @@ class Color(object):
 
    Returns: An integer value that specifies the hash code for this System.Drawing.Color.
   """
-  pass
- def GetHue(self):
-  """
+        pass
+
+    def GetHue(self):
+        """
   GetHue(self: Color) -> Single
 
   
@@ -183,9 +190,10 @@ class Color(object):
 
     0.0 through 360.0,in HSB color space.
   """
-  pass
- def GetSaturation(self):
-  """
+        pass
+
+    def GetSaturation(self):
+        """
   GetSaturation(self: Color) -> Single
 
   
@@ -200,9 +208,10 @@ class Color(object):
 
     0.0 is grayscale and 1.0 is the most saturated.
   """
-  pass
- def ToArgb(self):
-  """
+        pass
+
+    def ToArgb(self):
+        """
   ToArgb(self: Color) -> int
 
   
@@ -211,9 +220,10 @@ class Color(object):
 
    Returns: The 32-bit ARGB value of this System.Drawing.Color.
   """
-  pass
- def ToKnownColor(self):
-  """
+        pass
+
+    def ToKnownColor(self):
+        """
   ToKnownColor(self: Color) -> KnownColor
 
   
@@ -226,9 +236,10 @@ class Color(object):
 
     or the System.Drawing.Color.FromKnownColor(System.Drawing.KnownColor) method; otherwise,0.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: Color) -> str
 
   
@@ -243,14 +254,17 @@ class Color(object):
 
     string that consists of the ARGB component names and their values.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __ne__(self,*args):
-  pass
- A=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the alpha component value of this System.Drawing.Color structure.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    A = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the alpha component value of this System.Drawing.Color structure.
 
 
 
@@ -260,8 +274,8 @@ Get: A(self: Color) -> Byte
 
 """
 
- B=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the blue component value of this System.Drawing.Color structure.
+    B = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the blue component value of this System.Drawing.Color structure.
 
 
 
@@ -271,8 +285,8 @@ Get: B(self: Color) -> Byte
 
 """
 
- G=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the green component value of this System.Drawing.Color structure.
+    G = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the green component value of this System.Drawing.Color structure.
 
 
 
@@ -282,8 +296,8 @@ Get: G(self: Color) -> Byte
 
 """
 
- IsEmpty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether this System.Drawing.Color structure is uninitialized.
+    IsEmpty = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Specifies whether this System.Drawing.Color structure is uninitialized.
 
 
 
@@ -293,8 +307,10 @@ Get: IsEmpty(self: Color) -> bool
 
 """
 
- IsKnownColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether this System.Drawing.Color structure is a predefined color. Predefined colors are represented by the elements of the System.Drawing.KnownColor enumeration.
+    IsKnownColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether this System.Drawing.Color structure is a predefined color. Predefined colors are represented by the elements of the System.Drawing.KnownColor enumeration.
 
 
 
@@ -304,8 +320,10 @@ Get: IsKnownColor(self: Color) -> bool
 
 """
 
- IsNamedColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether this System.Drawing.Color structure is a named color or a member of the System.Drawing.KnownColor enumeration.
+    IsNamedColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether this System.Drawing.Color structure is a named color or a member of the System.Drawing.KnownColor enumeration.
 
 
 
@@ -315,8 +333,10 @@ Get: IsNamedColor(self: Color) -> bool
 
 """
 
- IsSystemColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether this System.Drawing.Color structure is a system color. A system color is a color that is used in a Windows display element. System colors are represented by elements of the System.Drawing.KnownColor enumeration.
+    IsSystemColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether this System.Drawing.Color structure is a system color. A system color is a color that is used in a Windows display element. System colors are represented by elements of the System.Drawing.KnownColor enumeration.
 
 
 
@@ -326,8 +346,8 @@ Get: IsSystemColor(self: Color) -> bool
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name of this System.Drawing.Color.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the name of this System.Drawing.Color.
 
 
 
@@ -337,8 +357,8 @@ Get: Name(self: Color) -> str
 
 """
 
- R=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the red component value of this System.Drawing.Color structure.
+    R = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the red component value of this System.Drawing.Color structure.
 
 
 
@@ -348,147 +368,145 @@ Get: R(self: Color) -> Byte
 
 """
 
-
- AliceBlue=None
- AntiqueWhite=None
- Aqua=None
- Aquamarine=None
- Azure=None
- Beige=None
- Bisque=None
- Black=None
- BlanchedAlmond=None
- Blue=None
- BlueViolet=None
- Brown=None
- BurlyWood=None
- CadetBlue=None
- Chartreuse=None
- Chocolate=None
- Coral=None
- CornflowerBlue=None
- Cornsilk=None
- Crimson=None
- Cyan=None
- DarkBlue=None
- DarkCyan=None
- DarkGoldenrod=None
- DarkGray=None
- DarkGreen=None
- DarkKhaki=None
- DarkMagenta=None
- DarkOliveGreen=None
- DarkOrange=None
- DarkOrchid=None
- DarkRed=None
- DarkSalmon=None
- DarkSeaGreen=None
- DarkSlateBlue=None
- DarkSlateGray=None
- DarkTurquoise=None
- DarkViolet=None
- DeepPink=None
- DeepSkyBlue=None
- DimGray=None
- DodgerBlue=None
- Empty=None
- Firebrick=None
- FloralWhite=None
- ForestGreen=None
- Fuchsia=None
- Gainsboro=None
- GhostWhite=None
- Gold=None
- Goldenrod=None
- Gray=None
- Green=None
- GreenYellow=None
- Honeydew=None
- HotPink=None
- IndianRed=None
- Indigo=None
- Ivory=None
- Khaki=None
- Lavender=None
- LavenderBlush=None
- LawnGreen=None
- LemonChiffon=None
- LightBlue=None
- LightCoral=None
- LightCyan=None
- LightGoldenrodYellow=None
- LightGray=None
- LightGreen=None
- LightPink=None
- LightSalmon=None
- LightSeaGreen=None
- LightSkyBlue=None
- LightSlateGray=None
- LightSteelBlue=None
- LightYellow=None
- Lime=None
- LimeGreen=None
- Linen=None
- Magenta=None
- Maroon=None
- MediumAquamarine=None
- MediumBlue=None
- MediumOrchid=None
- MediumPurple=None
- MediumSeaGreen=None
- MediumSlateBlue=None
- MediumSpringGreen=None
- MediumTurquoise=None
- MediumVioletRed=None
- MidnightBlue=None
- MintCream=None
- MistyRose=None
- Moccasin=None
- NavajoWhite=None
- Navy=None
- OldLace=None
- Olive=None
- OliveDrab=None
- Orange=None
- OrangeRed=None
- Orchid=None
- PaleGoldenrod=None
- PaleGreen=None
- PaleTurquoise=None
- PaleVioletRed=None
- PapayaWhip=None
- PeachPuff=None
- Peru=None
- Pink=None
- Plum=None
- PowderBlue=None
- Purple=None
- Red=None
- RosyBrown=None
- RoyalBlue=None
- SaddleBrown=None
- Salmon=None
- SandyBrown=None
- SeaGreen=None
- SeaShell=None
- Sienna=None
- Silver=None
- SkyBlue=None
- SlateBlue=None
- SlateGray=None
- Snow=None
- SpringGreen=None
- SteelBlue=None
- Tan=None
- Teal=None
- Thistle=None
- Tomato=None
- Transparent=None
- Turquoise=None
- Violet=None
- Wheat=None
- White=None
- WhiteSmoke=None
- Yellow=None
- YellowGreen=None
-
+    AliceBlue = None
+    AntiqueWhite = None
+    Aqua = None
+    Aquamarine = None
+    Azure = None
+    Beige = None
+    Bisque = None
+    Black = None
+    BlanchedAlmond = None
+    Blue = None
+    BlueViolet = None
+    Brown = None
+    BurlyWood = None
+    CadetBlue = None
+    Chartreuse = None
+    Chocolate = None
+    Coral = None
+    CornflowerBlue = None
+    Cornsilk = None
+    Crimson = None
+    Cyan = None
+    DarkBlue = None
+    DarkCyan = None
+    DarkGoldenrod = None
+    DarkGray = None
+    DarkGreen = None
+    DarkKhaki = None
+    DarkMagenta = None
+    DarkOliveGreen = None
+    DarkOrange = None
+    DarkOrchid = None
+    DarkRed = None
+    DarkSalmon = None
+    DarkSeaGreen = None
+    DarkSlateBlue = None
+    DarkSlateGray = None
+    DarkTurquoise = None
+    DarkViolet = None
+    DeepPink = None
+    DeepSkyBlue = None
+    DimGray = None
+    DodgerBlue = None
+    Empty = None
+    Firebrick = None
+    FloralWhite = None
+    ForestGreen = None
+    Fuchsia = None
+    Gainsboro = None
+    GhostWhite = None
+    Gold = None
+    Goldenrod = None
+    Gray = None
+    Green = None
+    GreenYellow = None
+    Honeydew = None
+    HotPink = None
+    IndianRed = None
+    Indigo = None
+    Ivory = None
+    Khaki = None
+    Lavender = None
+    LavenderBlush = None
+    LawnGreen = None
+    LemonChiffon = None
+    LightBlue = None
+    LightCoral = None
+    LightCyan = None
+    LightGoldenrodYellow = None
+    LightGray = None
+    LightGreen = None
+    LightPink = None
+    LightSalmon = None
+    LightSeaGreen = None
+    LightSkyBlue = None
+    LightSlateGray = None
+    LightSteelBlue = None
+    LightYellow = None
+    Lime = None
+    LimeGreen = None
+    Linen = None
+    Magenta = None
+    Maroon = None
+    MediumAquamarine = None
+    MediumBlue = None
+    MediumOrchid = None
+    MediumPurple = None
+    MediumSeaGreen = None
+    MediumSlateBlue = None
+    MediumSpringGreen = None
+    MediumTurquoise = None
+    MediumVioletRed = None
+    MidnightBlue = None
+    MintCream = None
+    MistyRose = None
+    Moccasin = None
+    NavajoWhite = None
+    Navy = None
+    OldLace = None
+    Olive = None
+    OliveDrab = None
+    Orange = None
+    OrangeRed = None
+    Orchid = None
+    PaleGoldenrod = None
+    PaleGreen = None
+    PaleTurquoise = None
+    PaleVioletRed = None
+    PapayaWhip = None
+    PeachPuff = None
+    Peru = None
+    Pink = None
+    Plum = None
+    PowderBlue = None
+    Purple = None
+    Red = None
+    RosyBrown = None
+    RoyalBlue = None
+    SaddleBrown = None
+    Salmon = None
+    SandyBrown = None
+    SeaGreen = None
+    SeaShell = None
+    Sienna = None
+    Silver = None
+    SkyBlue = None
+    SlateBlue = None
+    SlateGray = None
+    Snow = None
+    SpringGreen = None
+    SteelBlue = None
+    Tan = None
+    Teal = None
+    Thistle = None
+    Tomato = None
+    Transparent = None
+    Turquoise = None
+    Violet = None
+    Wheat = None
+    White = None
+    WhiteSmoke = None
+    Yellow = None
+    YellowGreen = None

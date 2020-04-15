@@ -1,14 +1,16 @@
-class FailureHandlingOptions(object,IDisposable):
- """
+class FailureHandlingOptions(object, IDisposable):
+    """
  Options to control how failures (if any occurred during the transaction)
 
     should be handled at the time the transaction is being ended.
  """
- def Dispose(self):
-  """ Dispose(self: FailureHandlingOptions) """
-  pass
- def GetClearAfterRollback(self):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: FailureHandlingOptions) """
+        pass
+
+    def GetClearAfterRollback(self):
+        """
   GetClearAfterRollback(self: FailureHandlingOptions) -> bool
 
   
@@ -23,9 +25,10 @@ class FailureHandlingOptions(object,IDisposable):
 
     false to keep these failures in place (they may be displayed to the user).
   """
-  pass
- def GetDelayedMiniWarnings(self):
-  """
+        pass
+
+    def GetDelayedMiniWarnings(self):
+        """
   GetDelayedMiniWarnings(self: FailureHandlingOptions) -> bool
 
   
@@ -40,9 +43,10 @@ class FailureHandlingOptions(object,IDisposable):
 
     transation,false to display them as this transaction is completed.
   """
-  pass
- def GetFailuresPreprocessor(self):
-  """
+        pass
+
+    def GetFailuresPreprocessor(self):
+        """
   GetFailuresPreprocessor(self: FailureHandlingOptions) -> IFailuresPreprocessor
 
   
@@ -51,9 +55,10 @@ class FailureHandlingOptions(object,IDisposable):
 
    Returns: The callback to be invoked in the beginning of failure processing.
   """
-  pass
- def GetForcedModalHandling(self):
-  """
+        pass
+
+    def GetForcedModalHandling(self):
+        """
   GetForcedModalHandling(self: FailureHandlingOptions) -> bool
 
   
@@ -68,9 +73,10 @@ class FailureHandlingOptions(object,IDisposable):
 
     use of a non-blocking dialog for warnings resulting from this transaction.
   """
-  pass
- def GetTransactionFinalizer(self):
-  """
+        pass
+
+    def GetTransactionFinalizer(self):
+        """
   GetTransactionFinalizer(self: FailureHandlingOptions) -> ITransactionFinalizer
 
   
@@ -79,12 +85,14 @@ class FailureHandlingOptions(object,IDisposable):
 
    Returns: The callback to be executed after transaction is completed.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: FailureHandlingOptions,disposing: bool) """
-  pass
- def SetClearAfterRollback(self,bFlag):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: FailureHandlingOptions,disposing: bool) """
+        pass
+
+    def SetClearAfterRollback(self, bFlag):
+        """
   SetClearAfterRollback(self: FailureHandlingOptions,bFlag: bool) -> FailureHandlingOptions
 
   
@@ -109,9 +117,10 @@ class FailureHandlingOptions(object,IDisposable):
 
    Returns: This FailureHandlingOptions object.
   """
-  pass
- def SetDelayedMiniWarnings(self,bFlag):
-  """
+        pass
+
+    def SetDelayedMiniWarnings(self, bFlag):
+        """
   SetDelayedMiniWarnings(self: FailureHandlingOptions,bFlag: bool) -> FailureHandlingOptions
 
   
@@ -136,9 +145,10 @@ class FailureHandlingOptions(object,IDisposable):
 
    Returns: This FailureHandlingOptions object.
   """
-  pass
- def SetFailuresPreprocessor(self,preprocessor):
-  """
+        pass
+
+    def SetFailuresPreprocessor(self, preprocessor):
+        """
   SetFailuresPreprocessor(self: FailureHandlingOptions,preprocessor: IFailuresPreprocessor) -> FailureHandlingOptions
 
   
@@ -151,9 +161,10 @@ class FailureHandlingOptions(object,IDisposable):
 
    Returns: This FailureHandlingOptions object.
   """
-  pass
- def SetForcedModalHandling(self,bFlag):
-  """
+        pass
+
+    def SetForcedModalHandling(self, bFlag):
+        """
   SetForcedModalHandling(self: FailureHandlingOptions,bFlag: bool) -> FailureHandlingOptions
 
   
@@ -174,9 +185,10 @@ class FailureHandlingOptions(object,IDisposable):
 
    Returns: This FailureHandlingOptions object.
   """
-  pass
- def SetTransactionFinalizer(self,finalizer):
-  """
+        pass
+
+    def SetTransactionFinalizer(self, finalizer):
+        """
   SetTransactionFinalizer(self: FailureHandlingOptions,finalizer: ITransactionFinalizer) -> FailureHandlingOptions
 
   
@@ -189,21 +201,28 @@ class FailureHandlingOptions(object,IDisposable):
 
    Returns: This FailureHandlingOptions object.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -212,5 +231,3 @@ Get: IsValidObject(self: FailureHandlingOptions) -> bool
 
 
 """
-
-

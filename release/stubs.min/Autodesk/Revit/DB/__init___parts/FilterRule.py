@@ -1,10 +1,12 @@
-class FilterRule(object,IDisposable):
- """ Defines a boolean operation that can be used to cull elements from a document. """
- def Dispose(self):
-  """ Dispose(self: FilterRule) """
-  pass
- def ElementPasses(self,element):
-  """
+class FilterRule(object, IDisposable):
+    """ Defines a boolean operation that can be used to cull elements from a document. """
+
+    def Dispose(self):
+        """ Dispose(self: FilterRule) """
+        pass
+
+    def ElementPasses(self, element):
+        """
   ElementPasses(self: FilterRule,element: Element) -> bool
 
   
@@ -23,24 +25,32 @@ class FilterRule(object,IDisposable):
 
    Returns: True if the element satisfies the rule,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: FilterRule,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: FilterRule,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -49,5 +59,3 @@ Get: IsValidObject(self: FilterRule) -> bool
 
 
 """
-
-

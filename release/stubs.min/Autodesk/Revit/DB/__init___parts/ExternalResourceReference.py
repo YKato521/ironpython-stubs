@@ -1,5 +1,5 @@
-class ExternalResourceReference(object,IDisposable):
- """
+class ExternalResourceReference(object, IDisposable):
+    """
  This class identifies an external resource provided by an IExternalResourceServer.
 
  
@@ -8,9 +8,10 @@ class ExternalResourceReference(object,IDisposable):
 
  ExternalResourceReference(serverId: Guid,referenceInformation: IDictionary[str,str],version: str,inSessionPath: str)
  """
- @staticmethod
- def CreateLocalResource(doc,resourceType,path,pathType):
-  """
+
+    @staticmethod
+    def CreateLocalResource(doc, resourceType, path, pathType):
+        """
   CreateLocalResource(doc: Document,resourceType: ExternalResourceType,path: ModelPath,pathType: PathType) -> ExternalResourceReference
 
   
@@ -75,12 +76,14 @@ class ExternalResourceReference(object,IDisposable):
 
    Returns: The newly-created ExternalResourceReference.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: ExternalResourceReference) """
-  pass
- def GetReferenceInformation(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: ExternalResourceReference) """
+        pass
+
+    def GetReferenceInformation(self):
+        """
   GetReferenceInformation(self: ExternalResourceReference) -> IDictionary[str,str]
 
   
@@ -99,9 +102,10 @@ class ExternalResourceReference(object,IDisposable):
 
     lookup information.
   """
-  pass
- def GetResourceShortDisplayName(self):
-  """
+        pass
+
+    def GetResourceShortDisplayName(self):
+        """
   GetResourceShortDisplayName(self: ExternalResourceReference) -> str
 
   
@@ -110,9 +114,10 @@ class ExternalResourceReference(object,IDisposable):
 
    Returns: The short display name of the external resource.
   """
-  pass
- def GetResourceVersionStatus(self):
-  """
+        pass
+
+    def GetResourceVersionStatus(self):
+        """
   GetResourceVersionStatus(self: ExternalResourceReference) -> ResourceVersionStatus
 
   
@@ -129,9 +134,10 @@ class ExternalResourceReference(object,IDisposable):
 
      of the resource.
   """
-  pass
- def HasValidDisplayPath(self):
-  """
+        pass
+
+    def HasValidDisplayPath(self):
+        """
   HasValidDisplayPath(self: ExternalResourceReference) -> bool
 
   
@@ -140,9 +146,10 @@ class ExternalResourceReference(object,IDisposable):
 
    Returns: True if the this external Resource has a valid display path. False otherwise.
   """
-  pass
- def IsValidReference(self,resourceType):
-  """
+        pass
+
+    def IsValidReference(self, resourceType):
+        """
   IsValidReference(self: ExternalResourceReference,resourceType: ExternalResourceType) -> bool
 
   
@@ -161,32 +168,41 @@ class ExternalResourceReference(object,IDisposable):
 
    Returns: True if this is a valid ExternalResourceReference. False otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: ExternalResourceReference,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: ExternalResourceReference,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,other: ExternalResourceReference)
 
   __new__(cls: type,serverId: Guid,referenceInformation: IDictionary[str,str],version: str,inSessionPath: str)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- InSessionPath=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The path stores the full display path which includes the server name plus the path provided by ExternalResourceServer.The path that Revit will present for user recognizing and browsing to this resource during one session of Revit.This property allows ExternalResourceServers to handle cases where the path to a resource may vary between Revit sessions.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    InSessionPath = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The path stores the full display path which includes the server name plus the path provided by ExternalResourceServer.The path that Revit will present for user recognizing and browsing to this resource during one session of Revit.This property allows ExternalResourceServers to handle cases where the path to a resource may vary between Revit sessions.
 
    For example,if this ExternalResourceReference refers to a resource in a folder,
 
@@ -206,8 +222,10 @@ Get: InSessionPath(self: ExternalResourceReference) -> str
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -217,8 +235,8 @@ Get: IsValidObject(self: ExternalResourceReference) -> bool
 
 """
 
- ServerId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the server that Revit is expecting to provide the external resource.
+    ServerId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The id of the server that Revit is expecting to provide the external resource.
 
 
 
@@ -228,8 +246,8 @@ Get: ServerId(self: ExternalResourceReference) -> Guid
 
 """
 
- Version=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The version of the external data that was most recently loaded in Revit.
+    Version = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The version of the external data that was most recently loaded in Revit.
 
 
 
@@ -238,5 +256,3 @@ Get: Version(self: ExternalResourceReference) -> str
 
 
 """
-
-

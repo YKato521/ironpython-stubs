@@ -1,7 +1,8 @@
 class HtmlWindow(object):
- """ Represents the logical window that contains one or more instances of System.Windows.Forms.HtmlDocument. """
- def Alert(self,message):
-  """
+    """ Represents the logical window that contains one or more instances of System.Windows.Forms.HtmlDocument. """
+
+    def Alert(self, message):
+        """
   Alert(self: HtmlWindow,message: str)
 
    Displays a message box.
@@ -10,9 +11,10 @@ class HtmlWindow(object):
 
    message: The System.String to display in the message box.
   """
-  pass
- def AttachEventHandler(self,eventName,eventHandler):
-  """
+        pass
+
+    def AttachEventHandler(self, eventName, eventHandler):
+        """
   AttachEventHandler(self: HtmlWindow,eventName: str,eventHandler: EventHandler)
 
    Adds an event handler for the named HTML DOM event.
@@ -23,16 +25,18 @@ class HtmlWindow(object):
 
    eventHandler: A reference to the managed code that handles the event.
   """
-  pass
- def Close(self):
-  """
+        pass
+
+    def Close(self):
+        """
   Close(self: HtmlWindow)
 
    Closes the window.
   """
-  pass
- def Confirm(self,message):
-  """
+        pass
+
+    def Confirm(self, message):
+        """
   Confirm(self: HtmlWindow,message: str) -> bool
 
   
@@ -45,9 +49,10 @@ class HtmlWindow(object):
 
    Returns: true if the user clicked Yes; false if the user clicked No or closed the dialog box.
   """
-  pass
- def DetachEventHandler(self,eventName,eventHandler):
-  """
+        pass
+
+    def DetachEventHandler(self, eventName, eventHandler):
+        """
   DetachEventHandler(self: HtmlWindow,eventName: str,eventHandler: EventHandler)
 
    Removes the named event handler.
@@ -58,9 +63,10 @@ class HtmlWindow(object):
 
    eventHandler: A reference to the managed code that handles the event.
   """
-  pass
- def Equals(self,obj):
-  """
+        pass
+
+    def Equals(self, obj):
+        """
   Equals(self: HtmlWindow,obj: object) -> bool
 
   
@@ -73,23 +79,26 @@ class HtmlWindow(object):
 
    Returns: true if the objects are equal; otherwise,false.
   """
-  pass
- def Focus(self):
-  """
+        pass
+
+    def Focus(self):
+        """
   Focus(self: HtmlWindow)
 
    Puts the focus on the current window.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: HtmlWindow) -> int
 
    Returns: System.Int32
   """
-  pass
- def MoveTo(self,*__args):
-  """
+        pass
+
+    def MoveTo(self, *__args):
+        """
   MoveTo(self: HtmlWindow,point: Point)
 
    Moves the window to the specified coordinates on the screen.
@@ -108,9 +117,10 @@ class HtmlWindow(object):
 
    y: The y-coordinate of the window's upper-left corner.
   """
-  pass
- def Navigate(self,*__args):
-  """
+        pass
+
+    def Navigate(self, *__args):
+        """
   Navigate(self: HtmlWindow,urlString: str)
 
    Displays or downloads the new content located at the specified URL.
@@ -129,9 +139,10 @@ class HtmlWindow(object):
 
     window.
   """
-  pass
- def Open(self,*__args):
-  """
+        pass
+
+    def Open(self, *__args):
+        """
   Open(self: HtmlWindow,url: Uri,target: str,windowOptions: str,replaceEntry: bool) -> HtmlWindow
 
   
@@ -290,9 +301,10 @@ class HtmlWindow(object):
 
     named by the target parameter.
   """
-  pass
- def OpenNew(self,*__args):
-  """
+        pass
+
+    def OpenNew(self, *__args):
+        """
   OpenNew(self: HtmlWindow,url: Uri,windowOptions: str) -> HtmlWindow
 
   
@@ -337,9 +349,10 @@ class HtmlWindow(object):
 
    Returns: An System.Windows.Forms.HtmlWindow representing the new window.
   """
-  pass
- def Prompt(self,message,defaultInputValue):
-  """
+        pass
+
+    def Prompt(self, message, defaultInputValue):
+        """
   Prompt(self: HtmlWindow,message: str,defaultInputValue: str) -> str
 
   
@@ -354,16 +367,18 @@ class HtmlWindow(object):
 
    Returns: A System.String representing the text entered by the user.
   """
-  pass
- def RemoveFocus(self):
-  """
+        pass
+
+    def RemoveFocus(self):
+        """
   RemoveFocus(self: HtmlWindow)
 
    Takes focus off of the current window.
   """
-  pass
- def ResizeTo(self,*__args):
-  """
+        pass
+
+    def ResizeTo(self, *__args):
+        """
   ResizeTo(self: HtmlWindow,size: Size)
 
    Changes the size of the window to the specified dimensions.
@@ -386,9 +401,10 @@ class HtmlWindow(object):
 
    height: Describes the desired height of the window,in pixels. Must be 100 pixels or more.
   """
-  pass
- def ScrollTo(self,*__args):
-  """
+        pass
+
+    def ScrollTo(self, *__args):
+        """
   ScrollTo(self: HtmlWindow,point: Point)
 
    Moves the window to the specified coordinates.
@@ -417,14 +433,17 @@ class HtmlWindow(object):
 
     should scroll.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __ne__(self,*args):
-  pass
- Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the HTML document contained within the window.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    Document = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the HTML document contained within the window.
 
 
 
@@ -434,8 +453,8 @@ Get: Document(self: HtmlWindow) -> HtmlDocument
 
 """
 
- DomWindow=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the unmanaged interface wrapped by this class.
+    DomWindow = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the unmanaged interface wrapped by this class.
 
 
 
@@ -445,8 +464,8 @@ Get: DomWindow(self: HtmlWindow) -> object
 
 """
 
- Frames=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a reference to each of the FRAME elements defined within the Web page.
+    Frames = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a reference to each of the FRAME elements defined within the Web page.
 
 
 
@@ -456,8 +475,8 @@ Get: Frames(self: HtmlWindow) -> HtmlWindowCollection
 
 """
 
- History=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an object containing the user's most recently visited URLs.
+    History = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an object containing the user's most recently visited URLs.
 
 
 
@@ -467,8 +486,8 @@ Get: History(self: HtmlWindow) -> HtmlHistory
 
 """
 
- IsClosed=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether this window is open or closed.
+    IsClosed = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether this window is open or closed.
 
 
 
@@ -478,8 +497,8 @@ Get: IsClosed(self: HtmlWindow) -> bool
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the window.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the name of the window.
 
 
 
@@ -491,8 +510,8 @@ Set: Name(self: HtmlWindow)=value
 
 """
 
- Opener=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a reference to the window that opened the current window.
+    Opener = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a reference to the window that opened the current window.
 
 
 
@@ -502,8 +521,8 @@ Get: Opener(self: HtmlWindow) -> HtmlWindow
 
 """
 
- Parent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the window which resides above the current one in a page containing frames.
+    Parent = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the window which resides above the current one in a page containing frames.
 
 
 
@@ -513,8 +532,8 @@ Get: Parent(self: HtmlWindow) -> HtmlWindow
 
 """
 
- Position=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the position of the window's client area on the screen.
+    Position = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the position of the window's client area on the screen.
 
 
 
@@ -524,8 +543,8 @@ Get: Position(self: HtmlWindow) -> Point
 
 """
 
- Size=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the size of the current window.
+    Size = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the size of the current window.
 
 
 
@@ -537,8 +556,10 @@ Set: Size(self: HtmlWindow)=value
 
 """
 
- StatusBarText=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the text displayed in the status bar of a window.
+    StatusBarText = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the text displayed in the status bar of a window.
 
 
 
@@ -550,8 +571,8 @@ Set: StatusBarText(self: HtmlWindow)=value
 
 """
 
- Url=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the URL corresponding to the current item displayed in the window.
+    Url = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the URL corresponding to the current item displayed in the window.
 
 
 
@@ -561,8 +582,10 @@ Get: Url(self: HtmlWindow) -> Uri
 
 """
 
- WindowFrameElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the frame element corresponding to this window.
+    WindowFrameElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the frame element corresponding to this window.
 
 
 
@@ -572,12 +595,10 @@ Get: WindowFrameElement(self: HtmlWindow) -> HtmlElement
 
 """
 
-
- Error=None
- GotFocus=None
- Load=None
- LostFocus=None
- Resize=None
- Scroll=None
- Unload=None
-
+    Error = None
+    GotFocus = None
+    Load = None
+    LostFocus = None
+    Resize = None
+    Scroll = None
+    Unload = None

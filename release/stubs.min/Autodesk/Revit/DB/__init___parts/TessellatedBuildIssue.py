@@ -1,14 +1,16 @@
-class TessellatedBuildIssue(object,IDisposable):
- """
+class TessellatedBuildIssue(object, IDisposable):
+    """
  Types of issues encountered while constructing geometrical objects
 
     from the tessellated face sets.
  """
- def Dispose(self):
-  """ Dispose(self: TessellatedBuildIssue) """
-  pass
- def GetIssueDescription(self):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: TessellatedBuildIssue) """
+        pass
+
+    def GetIssueDescription(self):
+        """
   GetIssueDescription(self: TessellatedBuildIssue) -> str
 
   
@@ -23,9 +25,10 @@ class TessellatedBuildIssue(object,IDisposable):
 
    Returns: Description of the issue.
   """
-  pass
- def IsValidIssue(self):
-  """
+        pass
+
+    def IsValidIssue(self):
+        """
   IsValidIssue(self: TessellatedBuildIssue) -> bool
 
   
@@ -40,9 +43,10 @@ class TessellatedBuildIssue(object,IDisposable):
 
    Returns: Whether the issue is well formed and does describe a real problem.
   """
-  pass
- def MakesDataUnusable(self):
-  """
+        pass
+
+    def MakesDataUnusable(self):
+        """
   MakesDataUnusable(self: TessellatedBuildIssue) -> bool
 
   
@@ -57,12 +61,14 @@ class TessellatedBuildIssue(object,IDisposable):
 
     usable (false).
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: TessellatedBuildIssue,disposing: bool) """
-  pass
- def ReportIssueToDataSource(self):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: TessellatedBuildIssue,disposing: bool) """
+        pass
+
+    def ReportIssueToDataSource(self):
+        """
   ReportIssueToDataSource(self: TessellatedBuildIssue) -> bool
 
   
@@ -77,21 +83,28 @@ class TessellatedBuildIssue(object,IDisposable):
 
     (false).
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -101,8 +114,10 @@ Get: IsValidObject(self: TessellatedBuildIssue) -> bool
 
 """
 
- NumberEncountered=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """How many times this issue was encountered in its face set
+    NumberEncountered = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """How many times this issue was encountered in its face set
 
    during the face set processing. This number can be less
 
@@ -119,5 +134,3 @@ Get: NumberEncountered(self: TessellatedBuildIssue) -> int
 
 
 """
-
-

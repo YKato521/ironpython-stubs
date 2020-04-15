@@ -1,13 +1,16 @@
-class NurbsSurface(Surface,IDisposable,ISerializable,IEpsilonComparable[NurbsSurface]):
- """
+class NurbsSurface(
+    Surface, IDisposable, ISerializable, IEpsilonComparable[NurbsSurface]
+):
+    """
  Represents a Non Uniform Rational B-Splines (NURBS) surface.
 
  
 
  NurbsSurface(other: NurbsSurface)
  """
- def ConstructConstObject(self,*args):
-  """
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -18,9 +21,10 @@ class NurbsSurface(Surface,IDisposable,ISerializable,IEpsilonComparable[NurbsSur
 
    subobject_index: The subobject index.
   """
-  pass
- def CopyFrom(self,other):
-  """
+        pass
+
+    def CopyFrom(self, other):
+        """
   CopyFrom(self: NurbsSurface,other: NurbsSurface)
 
    Copies this NURBS surface from another NURBS surface.
@@ -29,10 +33,13 @@ class NurbsSurface(Surface,IDisposable,ISerializable,IEpsilonComparable[NurbsSur
 
    other: The other NURBS surface to use as source.
   """
-  pass
- @staticmethod
- def Create(dimension,isRational,order0,order1,controlPointCount0,controlPointCount1):
-  """
+        pass
+
+    @staticmethod
+    def Create(
+        dimension, isRational, order0, order1, controlPointCount0, controlPointCount1
+    ):
+        """
   Create(dimension: int,isRational: bool,order0: int,order1: int,controlPointCount0: int,controlPointCount1: int) -> NurbsSurface
 
   
@@ -55,10 +62,11 @@ class NurbsSurface(Surface,IDisposable,ISerializable,IEpsilonComparable[NurbsSur
 
    Returns: A new NURBS surface,or null on error.
   """
-  pass
- @staticmethod
- def CreateFromCone(cone):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromCone(cone):
+        """
   CreateFromCone(cone: Cone) -> NurbsSurface
 
   
@@ -71,10 +79,11 @@ class NurbsSurface(Surface,IDisposable,ISerializable,IEpsilonComparable[NurbsSur
 
    Returns: A new NURBS surface,or null on error.
   """
-  pass
- @staticmethod
- def CreateFromCorners(corner1,corner2,corner3,corner4=None,tolerance=None):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromCorners(corner1, corner2, corner3, corner4=None, tolerance=None):
+        """
   CreateFromCorners(corner1: Point3d,corner2: Point3d,corner3: Point3d) -> NurbsSurface
 
   
@@ -137,10 +146,11 @@ class NurbsSurface(Surface,IDisposable,ISerializable,IEpsilonComparable[NurbsSur
 
    Returns: the resulting surface or null on error.
   """
-  pass
- @staticmethod
- def CreateFromCylinder(cylinder):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromCylinder(cylinder):
+        """
   CreateFromCylinder(cylinder: Cylinder) -> NurbsSurface
 
   
@@ -153,14 +163,16 @@ class NurbsSurface(Surface,IDisposable,ISerializable,IEpsilonComparable[NurbsSur
 
    Returns: A new NURBS surface,or null on error.
   """
-  pass
- @staticmethod
- def CreateFromPoints(points,uCount,vCount,uDegree,vDegree):
-  """ CreateFromPoints(points: IEnumerable[Point3d],uCount: int,vCount: int,uDegree: int,vDegree: int) -> NurbsSurface """
-  pass
- @staticmethod
- def CreateFromSphere(sphere):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromPoints(points, uCount, vCount, uDegree, vDegree):
+        """ CreateFromPoints(points: IEnumerable[Point3d],uCount: int,vCount: int,uDegree: int,vDegree: int) -> NurbsSurface """
+        pass
+
+    @staticmethod
+    def CreateFromSphere(sphere):
+        """
   CreateFromSphere(sphere: Sphere) -> NurbsSurface
 
   
@@ -173,10 +185,11 @@ class NurbsSurface(Surface,IDisposable,ISerializable,IEpsilonComparable[NurbsSur
 
    Returns: A new NURBS surface,or null on error.
   """
-  pass
- @staticmethod
- def CreateFromTorus(torus):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromTorus(torus):
+        """
   CreateFromTorus(torus: Torus) -> NurbsSurface
 
   
@@ -189,18 +202,20 @@ class NurbsSurface(Surface,IDisposable,ISerializable,IEpsilonComparable[NurbsSur
 
    Returns: A new NURBS surface,or null on error.
   """
-  pass
- @staticmethod
- def CreateNetworkSurface(*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateNetworkSurface(*__args):
+        """
   CreateNetworkSurface(curves: IEnumerable[Curve],continuity: int,edgeTolerance: float,interiorTolerance: float,angleTolerance: float) -> (NurbsSurface,int)
 
   CreateNetworkSurface(uCurves: IEnumerable[Curve],uContinuityStart: int,uContinuityEnd: int,vCurves: IEnumerable[Curve],vContinuityStart: int,vContinuityEnd: int,edgeTolerance: float,interiorTolerance: float,angleTolerance: float) -> (NurbsSurface,int)
   """
-  pass
- @staticmethod
- def CreateRailRevolvedSurface(profile,rail,axis,scaleHeight):
-  """
+        pass
+
+    @staticmethod
+    def CreateRailRevolvedSurface(profile, rail, axis, scaleHeight):
+        """
   CreateRailRevolvedSurface(profile: Curve,rail: Curve,axis: Line,scaleHeight: bool) -> NurbsSurface
 
   
@@ -219,10 +234,11 @@ class NurbsSurface(Surface,IDisposable,ISerializable,IEpsilonComparable[NurbsSur
 
    Returns: A NurbsSurface or null on failure.
   """
-  pass
- @staticmethod
- def CreateRuledSurface(curveA,curveB):
-  """
+        pass
+
+    @staticmethod
+    def CreateRuledSurface(curveA, curveB):
+        """
   CreateRuledSurface(curveA: Curve,curveB: Curve) -> NurbsSurface
 
   
@@ -237,13 +253,15 @@ class NurbsSurface(Surface,IDisposable,ISerializable,IEpsilonComparable[NurbsSur
 
    Returns: A ruled surface on success or null on failure.
   """
-  pass
- @staticmethod
- def CreateThroughPoints(points,uCount,vCount,uDegree,vDegree,uClosed,vClosed):
-  """ CreateThroughPoints(points: IEnumerable[Point3d],uCount: int,vCount: int,uDegree: int,vDegree: int,uClosed: bool,vClosed: bool) -> NurbsSurface """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    @staticmethod
+    def CreateThroughPoints(points, uCount, vCount, uDegree, vDegree, uClosed, vClosed):
+        """ CreateThroughPoints(points: IEnumerable[Point3d],uCount: int,vCount: int,uDegree: int,vDegree: int,uClosed: bool,vClosed: bool) -> NurbsSurface """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: CommonObject,disposing: bool)
 
    For derived class implementers.
@@ -268,18 +286,20 @@ class NurbsSurface(Surface,IDisposable,ISerializable,IEpsilonComparable[NurbsSur
 
     finalizer.
   """
-  pass
- def EpsilonEquals(self,other,epsilon):
-  """
+        pass
+
+    def EpsilonEquals(self, other, epsilon):
+        """
   EpsilonEquals(self: NurbsSurface,other: NurbsSurface,epsilon: float) -> bool
 
   
 
    Check that all values in other are within epsilon of the values in this
   """
-  pass
- def IncreaseDegreeU(self,desiredDegree):
-  """
+        pass
+
+    def IncreaseDegreeU(self, desiredDegree):
+        """
   IncreaseDegreeU(self: NurbsSurface,desiredDegree: int) -> bool
 
   
@@ -294,9 +314,10 @@ class NurbsSurface(Surface,IDisposable,ISerializable,IEpsilonComparable[NurbsSur
 
    Returns: true on success,false on failure.
   """
-  pass
- def IncreaseDegreeV(self,desiredDegree):
-  """
+        pass
+
+    def IncreaseDegreeV(self, desiredDegree):
+        """
   IncreaseDegreeV(self: NurbsSurface,desiredDegree: int) -> bool
 
   
@@ -311,9 +332,10 @@ class NurbsSurface(Surface,IDisposable,ISerializable,IEpsilonComparable[NurbsSur
 
    Returns: true on success,false on failure.
   """
-  pass
- def MakeNonRational(self):
-  """
+        pass
+
+    def MakeNonRational(self):
+        """
   MakeNonRational(self: NurbsSurface) -> bool
 
   
@@ -322,9 +344,10 @@ class NurbsSurface(Surface,IDisposable,ISerializable,IEpsilonComparable[NurbsSur
 
    Returns: true if the operation succeeded; otherwise,false.
   """
-  pass
- def MakeRational(self):
-  """
+        pass
+
+    def MakeRational(self):
+        """
   MakeRational(self: NurbsSurface) -> bool
 
   
@@ -333,9 +356,10 @@ class NurbsSurface(Surface,IDisposable,ISerializable,IEpsilonComparable[NurbsSur
 
    Returns: true if the operation succeeded; otherwise,false.
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: CommonObject)
 
    For derived classes implementers.
@@ -344,45 +368,54 @@ class NurbsSurface(Surface,IDisposable,ISerializable,IEpsilonComparable[NurbsSur
 
     instance from being const.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: GeometryBase)
 
    Is called when a non-const operation occurs.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,other):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, other):
+        """
   __new__(cls: type,other: NurbsSurface)
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- IsRational=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether or not the nurbs surface is rational.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    IsRational = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether or not the nurbs surface is rational.
 
 
 
@@ -392,8 +425,8 @@ Get: IsRational(self: NurbsSurface) -> bool
 
 """
 
- KnotsU=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The U direction knot vector.
+    KnotsU = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The U direction knot vector.
 
 
 
@@ -403,8 +436,8 @@ Get: KnotsU(self: NurbsSurface) -> NurbsSurfaceKnotList
 
 """
 
- KnotsV=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The V direction knot vector.
+    KnotsV = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The V direction knot vector.
 
 
 
@@ -414,8 +447,8 @@ Get: KnotsV(self: NurbsSurface) -> NurbsSurfaceKnotList
 
 """
 
- OrderU=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the order in the U direction.
+    OrderU = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the order in the U direction.
 
 
 
@@ -425,8 +458,8 @@ Get: OrderU(self: NurbsSurface) -> int
 
 """
 
- OrderV=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the order in the V direction.
+    OrderV = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the order in the V direction.
 
 
 
@@ -436,8 +469,8 @@ Get: OrderV(self: NurbsSurface) -> int
 
 """
 
- Points=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of surface control points that form this surface.
+    Points = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a collection of surface control points that form this surface.
 
 
 
@@ -446,5 +479,3 @@ Get: Points(self: NurbsSurface) -> NurbsSurfacePointList
 
 
 """
-
-

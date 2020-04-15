@@ -1,5 +1,5 @@
-class InstallerTypeAttribute(Attribute,_Attribute):
- """
+class InstallerTypeAttribute(Attribute, _Attribute):
+    """
  Specifies the installer for a type that installs components.
 
  
@@ -8,8 +8,9 @@ class InstallerTypeAttribute(Attribute,_Attribute):
 
  InstallerTypeAttribute(typeName: str)
  """
- def Equals(self,obj):
-  """
+
+    def Equals(self, obj):
+        """
   Equals(self: InstallerTypeAttribute,obj: object) -> bool
 
   
@@ -26,9 +27,10 @@ class InstallerTypeAttribute(Attribute,_Attribute):
 
    Returns: true if the value of the given object is equal to that of the current; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: InstallerTypeAttribute) -> int
 
   
@@ -37,25 +39,32 @@ class InstallerTypeAttribute(Attribute,_Attribute):
 
    Returns: A hash code for the current System.ComponentModel.InstallerTypeAttribute.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,installerType: Type)
 
   __new__(cls: type,typeName: str)
   """
-  pass
- def __ne__(self,*args):
-  pass
- InstallerType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the type of installer associated with this attribute.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    InstallerType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the type of installer associated with this attribute.
 
 
 
@@ -64,5 +73,3 @@ Get: InstallerType(self: InstallerTypeAttribute) -> Type
 
 
 """
-
-

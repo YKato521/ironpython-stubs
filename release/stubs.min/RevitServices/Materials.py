@@ -8,37 +8,43 @@
 # no functions
 # classes
 
+
 class MaterialsManager(object):
- # no doc
- def InitializeForActiveDocumentOnIdle(self):
-  """ InitializeForActiveDocumentOnIdle(self: MaterialsManager) """
-  pass
- @staticmethod
- def Reset():
-  """ Reset() """
-  pass
- DynamoErrorMaterialId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: DynamoErrorMaterialId(self: MaterialsManager) -> ElementId
+    # no doc
+    def InitializeForActiveDocumentOnIdle(self):
+        """ InitializeForActiveDocumentOnIdle(self: MaterialsManager) """
+        pass
+
+    @staticmethod
+    def Reset():
+        """ Reset() """
+        pass
+
+    DynamoErrorMaterialId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: DynamoErrorMaterialId(self: MaterialsManager) -> ElementId
 
 
 
 """
 
- DynamoGStyleId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: DynamoGStyleId(self: MaterialsManager) -> ElementId
+    DynamoGStyleId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: DynamoGStyleId(self: MaterialsManager) -> ElementId
 
 
 
 """
 
- DynamoMaterialId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: DynamoMaterialId(self: MaterialsManager) -> ElementId
+    DynamoMaterialId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: DynamoMaterialId(self: MaterialsManager) -> ElementId
 
 
 
 """
 
-
- Instance=None
-
-
+    Instance = None

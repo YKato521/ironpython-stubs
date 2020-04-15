@@ -1,13 +1,14 @@
 class ComponentConverter(ReferenceConverter):
- """
+    """
  Provides a type converter to convert components to and from various other representations.
 
  
 
  ComponentConverter(type: Type)
  """
- def GetProperties(self,*__args):
-  """
+
+    def GetProperties(self, *__args):
+        """
   GetProperties(self: ComponentConverter,context: ITypeDescriptorContext,value: object,attributes: Array[Attribute]) -> PropertyDescriptorCollection
 
   
@@ -26,9 +27,10 @@ class ComponentConverter(ReferenceConverter):
 
     the component,or null if there are no properties.
   """
-  pass
- def GetPropertiesSupported(self,context=None):
-  """
+        pass
+
+    def GetPropertiesSupported(self, context=None):
+        """
   GetPropertiesSupported(self: ComponentConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -43,8 +45,9 @@ class ComponentConverter(ReferenceConverter):
 
     to find the properties of this object. This method never returns false.
   """
-  pass
- @staticmethod
- def __new__(self,type):
-  """ __new__(cls: type,type: Type) """
-  pass
+        pass
+
+    @staticmethod
+    def __new__(self, type):
+        """ __new__(cls: type,type: Type) """
+        pass

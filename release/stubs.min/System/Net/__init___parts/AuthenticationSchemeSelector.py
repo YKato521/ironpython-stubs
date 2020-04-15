@@ -1,16 +1,18 @@
-class AuthenticationSchemeSelector(MulticastDelegate,ICloneable,ISerializable):
- """
+class AuthenticationSchemeSelector(MulticastDelegate, ICloneable, ISerializable):
+    """
  Selects the authentication scheme for an System.Net.HttpListener instance.
 
  
 
  AuthenticationSchemeSelector(object: object,method: IntPtr)
  """
- def BeginInvoke(self,httpRequest,callback,object):
-  """ BeginInvoke(self: AuthenticationSchemeSelector,httpRequest: HttpListenerRequest,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+
+    def BeginInvoke(self, httpRequest, callback, object):
+        """ BeginInvoke(self: AuthenticationSchemeSelector,httpRequest: HttpListenerRequest,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -23,9 +25,10 @@ class AuthenticationSchemeSelector(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -44,12 +47,14 @@ class AuthenticationSchemeSelector(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: AuthenticationSchemeSelector,result: IAsyncResult) -> AuthenticationSchemes """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: AuthenticationSchemeSelector,result: IAsyncResult) -> AuthenticationSchemes """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -58,12 +63,14 @@ class AuthenticationSchemeSelector(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,httpRequest):
-  """ Invoke(self: AuthenticationSchemeSelector,httpRequest: HttpListenerRequest) -> AuthenticationSchemes """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, httpRequest):
+        """ Invoke(self: AuthenticationSchemeSelector,httpRequest: HttpListenerRequest) -> AuthenticationSchemes """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -82,13 +89,16 @@ class AuthenticationSchemeSelector(MulticastDelegate,ICloneable,ISerializable):
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass

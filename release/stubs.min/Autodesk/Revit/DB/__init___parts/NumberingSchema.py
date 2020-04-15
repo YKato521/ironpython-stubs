@@ -1,7 +1,8 @@
-class NumberingSchema(Element,IDisposable):
- """ A class to support assigning numbers to elements of a particular kind for the purpose of tagging and scheduling them. """
- def AppendSequence(self,fromPartition,toPartition):
-  """
+class NumberingSchema(Element, IDisposable):
+    """ A class to support assigning numbers to elements of a particular kind for the purpose of tagging and scheduling them. """
+
+    def AppendSequence(self, fromPartition, toPartition):
+        """
   AppendSequence(self: NumberingSchema,fromPartition: str,toPartition: str)
 
    Appends all elements of one numbering sequence to the end of another sequence.
@@ -22,12 +23,14 @@ class NumberingSchema(Element,IDisposable):
 
     The sequence must exist already,otherwise an exception will be thrown.
   """
-  pass
- def AssignElementsToSequence(self,elementIds,partitionName):
-  """ AssignElementsToSequence(self: NumberingSchema,elementIds: ISet[ElementId],partitionName: str) """
-  pass
- def ChangeNumber(self,partition,fromNumber,toNumber):
-  """
+        pass
+
+    def AssignElementsToSequence(self, elementIds, partitionName):
+        """ AssignElementsToSequence(self: NumberingSchema,elementIds: ISet[ElementId],partitionName: str) """
+        pass
+
+    def ChangeNumber(self, partition, fromNumber, toNumber):
+        """
   ChangeNumber(self: NumberingSchema,partition: str,fromNumber: int,toNumber: int) -> IList[ElementId]
 
   
@@ -52,16 +55,19 @@ class NumberingSchema(Element,IDisposable):
 
    Returns: A collection of elements affected by the change of the number
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- @staticmethod
- def GetMinimumNumberOfDigits(document):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    @staticmethod
+    def GetMinimumNumberOfDigits(document):
+        """
   GetMinimumNumberOfDigits(document: Document) -> int
 
   
@@ -80,10 +86,11 @@ class NumberingSchema(Element,IDisposable):
 
    Returns: The current number of formatting digits
   """
-  pass
- @staticmethod
- def GetNumberingSchema(document,schemaType):
-  """
+        pass
+
+    @staticmethod
+    def GetNumberingSchema(document, schemaType):
+        """
   GetNumberingSchema(document: Document,schemaType: NumberingSchemaType) -> NumberingSchema
 
   
@@ -98,9 +105,10 @@ class NumberingSchema(Element,IDisposable):
 
    Returns: Instance of the specified schema.
   """
-  pass
- def GetNumberingSequences(self):
-  """
+        pass
+
+    def GetNumberingSequences(self):
+        """
   GetNumberingSequences(self: NumberingSchema) -> IList[str]
 
   
@@ -111,9 +119,10 @@ class NumberingSchema(Element,IDisposable):
 
     this schema.
   """
-  pass
- def GetNumbers(self,partition):
-  """
+        pass
+
+    def GetNumbers(self, partition):
+        """
   GetNumbers(self: NumberingSchema,partition: str) -> IList[IntegerRange]
 
   
@@ -126,10 +135,11 @@ class NumberingSchema(Element,IDisposable):
 
    Returns: A collection of integer ranges
   """
-  pass
- @staticmethod
- def GetSchemasInDocument(document):
-  """
+        pass
+
+    @staticmethod
+    def GetSchemasInDocument(document):
+        """
   GetSchemasInDocument(document: Document) -> ISet[ElementId]
 
   
@@ -144,10 +154,11 @@ class NumberingSchema(Element,IDisposable):
 
     given document.
   """
-  pass
- @staticmethod
- def IsValidPartitionName(name,message):
-  """
+        pass
+
+    @staticmethod
+    def IsValidPartitionName(name, message):
+        """
   IsValidPartitionName(name: str) -> (bool,str)
 
   
@@ -162,12 +173,14 @@ class NumberingSchema(Element,IDisposable):
 
     characters.
   """
-  pass
- def MergeSequences(self,sourcePartitions,newPartition):
-  """ MergeSequences(self: NumberingSchema,sourcePartitions: IList[str],newPartition: str) """
-  pass
- def MoveSequence(self,fromPartition,newPartition):
-  """
+        pass
+
+    def MergeSequences(self, sourcePartitions, newPartition):
+        """ MergeSequences(self: NumberingSchema,sourcePartitions: IList[str],newPartition: str) """
+        pass
+
+    def MoveSequence(self, fromPartition, newPartition):
+        """
   MoveSequence(self: NumberingSchema,fromPartition: str,newPartition: str)
 
    Moves all elements of a numbering sequence from one partition to another.
@@ -200,12 +213,14 @@ class NumberingSchema(Element,IDisposable):
 
     automatically.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def RemoveGaps(self,partition):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def RemoveGaps(self, partition):
+        """
   RemoveGaps(self: NumberingSchema,partition: str)
 
    Removes gaps,if any,in a numbering sequence
@@ -214,13 +229,15 @@ class NumberingSchema(Element,IDisposable):
 
    partition: Name of the partition that identifies the sequence. The sequence must exist.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- @staticmethod
- def SetMinimumNumberOfDigits(document,value):
-  """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    @staticmethod
+    def SetMinimumNumberOfDigits(document, value):
+        """
   SetMinimumNumberOfDigits(document: Document,value: int)
 
    Sets a new value for the minimum number of digits to be used for formating
@@ -237,9 +254,10 @@ class NumberingSchema(Element,IDisposable):
 
    value: New value for the minimum number of digits.
   """
-  pass
- def ShiftNumbers(self,partition,firstNumber):
-  """
+        pass
+
+    def ShiftNumbers(self, partition, firstNumber):
+        """
   ShiftNumbers(self: NumberingSchema,partition: str,firstNumber: int)
 
    Shifts all numbers in the sequence so the starting number has the given value.
@@ -250,18 +268,24 @@ class NumberingSchema(Element,IDisposable):
 
    firstNumber: Value for the new first (lowest) number of the sequence.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- NumberingParameterId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Id of the parameter that stores values of the numbers on enumerated elements.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    NumberingParameterId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Id of the parameter that stores values of the numbers on enumerated elements.
 
 
 
@@ -271,8 +295,10 @@ Get: NumberingParameterId(self: NumberingSchema) -> ElementId
 
 """
 
- SchemaType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the kind of elements/objects this numbering schema is used for.
+    SchemaType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies the kind of elements/objects this numbering schema is used for.
 
 
 
@@ -282,6 +308,4 @@ Get: SchemaType(self: NumberingSchema) -> NumberingSchemaType
 
 """
 
-
- MaximumStartingNumber=1073741822
-
+    MaximumStartingNumber = 1073741822

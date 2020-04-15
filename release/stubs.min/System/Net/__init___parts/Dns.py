@@ -1,8 +1,9 @@
 class Dns(object):
- """ Provides simple domain name resolution functionality. """
- @staticmethod
- def BeginGetHostAddresses(hostNameOrAddress,requestCallback,state):
-  """
+    """ Provides simple domain name resolution functionality. """
+
+    @staticmethod
+    def BeginGetHostAddresses(hostNameOrAddress, requestCallback, state):
+        """
   BeginGetHostAddresses(hostNameOrAddress: str,requestCallback: AsyncCallback,state: object) -> IAsyncResult
 
   
@@ -27,10 +28,11 @@ class Dns(object):
 
    Returns: An System.IAsyncResult instance that references the asynchronous request.
   """
-  pass
- @staticmethod
- def BeginGetHostByName(hostName,requestCallback,stateObject):
-  """
+        pass
+
+    @staticmethod
+    def BeginGetHostByName(hostName, requestCallback, stateObject):
+        """
   BeginGetHostByName(hostName: str,requestCallback: AsyncCallback,stateObject: object) -> IAsyncResult
 
   
@@ -59,10 +61,11 @@ class Dns(object):
 
    Returns: An System.IAsyncResult instance that references the asynchronous request.
   """
-  pass
- @staticmethod
- def BeginGetHostEntry(*__args):
-  """
+        pass
+
+    @staticmethod
+    def BeginGetHostEntry(*__args):
+        """
   BeginGetHostEntry(address: IPAddress,requestCallback: AsyncCallback,stateObject: object) -> IAsyncResult
 
   
@@ -111,10 +114,11 @@ class Dns(object):
 
    Returns: An System.IAsyncResult instance that references the asynchronous request.
   """
-  pass
- @staticmethod
- def BeginResolve(hostName,requestCallback,stateObject):
-  """
+        pass
+
+    @staticmethod
+    def BeginResolve(hostName, requestCallback, stateObject):
+        """
   BeginResolve(hostName: str,requestCallback: AsyncCallback,stateObject: object) -> IAsyncResult
 
   
@@ -143,10 +147,11 @@ class Dns(object):
 
    Returns: An System.IAsyncResult instance that references the asynchronous request.
   """
-  pass
- @staticmethod
- def EndGetHostAddresses(asyncResult):
-  """
+        pass
+
+    @staticmethod
+    def EndGetHostAddresses(asyncResult):
+        """
   EndGetHostAddresses(asyncResult: IAsyncResult) -> Array[IPAddress]
 
   
@@ -167,10 +172,11 @@ class Dns(object):
 
     System.Net.Dns.BeginGetHostAddresses(System.String,System.AsyncCallback,System.Object).
   """
-  pass
- @staticmethod
- def EndGetHostByName(asyncResult):
-  """
+        pass
+
+    @staticmethod
+    def EndGetHostByName(asyncResult):
+        """
   EndGetHostByName(asyncResult: IAsyncResult) -> IPHostEntry
 
   
@@ -187,10 +193,11 @@ class Dns(object):
 
    Returns: An System.Net.IPHostEntry object that contains DNS information about a host.
   """
-  pass
- @staticmethod
- def EndGetHostEntry(asyncResult):
-  """
+        pass
+
+    @staticmethod
+    def EndGetHostEntry(asyncResult):
+        """
   EndGetHostEntry(asyncResult: IAsyncResult) -> IPHostEntry
 
   
@@ -207,10 +214,11 @@ class Dns(object):
 
    Returns: An System.Net.IPHostEntry instance that contains address information about the host.
   """
-  pass
- @staticmethod
- def EndResolve(asyncResult):
-  """
+        pass
+
+    @staticmethod
+    def EndResolve(asyncResult):
+        """
   EndResolve(asyncResult: IAsyncResult) -> IPHostEntry
 
   
@@ -227,10 +235,11 @@ class Dns(object):
 
    Returns: An System.Net.IPHostEntry object that contains DNS information about a host.
   """
-  pass
- @staticmethod
- def GetHostAddresses(hostNameOrAddress):
-  """
+        pass
+
+    @staticmethod
+    def GetHostAddresses(hostNameOrAddress):
+        """
   GetHostAddresses(hostNameOrAddress: str) -> Array[IPAddress]
 
   
@@ -245,14 +254,16 @@ class Dns(object):
 
     by the hostNameOrAddress parameter.
   """
-  pass
- @staticmethod
- def GetHostAddressesAsync(hostNameOrAddress):
-  """ GetHostAddressesAsync(hostNameOrAddress: str) -> Task[Array[IPAddress]] """
-  pass
- @staticmethod
- def GetHostByAddress(address):
-  """
+        pass
+
+    @staticmethod
+    def GetHostAddressesAsync(hostNameOrAddress):
+        """ GetHostAddressesAsync(hostNameOrAddress: str) -> Task[Array[IPAddress]] """
+        pass
+
+    @staticmethod
+    def GetHostByAddress(address):
+        """
   GetHostByAddress(address: IPAddress) -> IPHostEntry
 
   
@@ -277,10 +288,11 @@ class Dns(object):
 
    Returns: An System.Net.IPHostEntry instance.
   """
-  pass
- @staticmethod
- def GetHostByName(hostName):
-  """
+        pass
+
+    @staticmethod
+    def GetHostByName(hostName):
+        """
   GetHostByName(hostName: str) -> IPHostEntry
 
   
@@ -295,10 +307,11 @@ class Dns(object):
 
     hostName.
   """
-  pass
- @staticmethod
- def GetHostEntry(*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetHostEntry(*__args):
+        """
   GetHostEntry(address: IPAddress) -> IPHostEntry
 
   
@@ -329,18 +342,20 @@ class Dns(object):
 
     hostNameOrAddress.
   """
-  pass
- @staticmethod
- def GetHostEntryAsync(*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetHostEntryAsync(*__args):
+        """
   GetHostEntryAsync(hostNameOrAddress: str) -> Task[IPHostEntry]
 
   GetHostEntryAsync(address: IPAddress) -> Task[IPHostEntry]
   """
-  pass
- @staticmethod
- def GetHostName():
-  """
+        pass
+
+    @staticmethod
+    def GetHostName():
+        """
   GetHostName() -> str
 
   
@@ -349,10 +364,11 @@ class Dns(object):
 
    Returns: A string that contains the DNS host name of the local computer.
   """
-  pass
- @staticmethod
- def Resolve(hostName):
-  """
+        pass
+
+    @staticmethod
+    def Resolve(hostName):
+        """
   Resolve(hostName: str) -> IPHostEntry
 
   
@@ -367,23 +383,23 @@ class Dns(object):
 
     hostName.
   """
-  pass
- __all__=[
-  'BeginGetHostAddresses',
-  'BeginGetHostByName',
-  'BeginGetHostEntry',
-  'BeginResolve',
-  'EndGetHostAddresses',
-  'EndGetHostByName',
-  'EndGetHostEntry',
-  'EndResolve',
-  'GetHostAddresses',
-  'GetHostAddressesAsync',
-  'GetHostByAddress',
-  'GetHostByName',
-  'GetHostEntry',
-  'GetHostEntryAsync',
-  'GetHostName',
-  'Resolve',
- ]
+        pass
 
+    __all__ = [
+        "BeginGetHostAddresses",
+        "BeginGetHostByName",
+        "BeginGetHostEntry",
+        "BeginResolve",
+        "EndGetHostAddresses",
+        "EndGetHostByName",
+        "EndGetHostEntry",
+        "EndResolve",
+        "GetHostAddresses",
+        "GetHostAddressesAsync",
+        "GetHostByAddress",
+        "GetHostByName",
+        "GetHostEntry",
+        "GetHostEntryAsync",
+        "GetHostName",
+        "Resolve",
+    ]

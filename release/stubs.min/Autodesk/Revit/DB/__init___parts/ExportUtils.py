@@ -1,8 +1,9 @@
 class ExportUtils(object):
- """ This class provides utilities related to document export. """
- @staticmethod
- def GetExportId(document,elementId):
-  """
+    """ This class provides utilities related to document export. """
+
+    @staticmethod
+    def GetExportId(document, elementId):
+        """
   GetExportId(document: Document,elementId: ElementId) -> Guid
 
   
@@ -17,10 +18,11 @@ class ExportUtils(object):
 
    Returns: The value of the GUID representing the element in the export context.
   """
-  pass
- @staticmethod
- def GetGBXMLDocumentId(document):
-  """
+        pass
+
+    @staticmethod
+    def GetGBXMLDocumentId(document):
+        """
   GetGBXMLDocumentId(document: Document) -> Guid
 
   
@@ -33,10 +35,11 @@ class ExportUtils(object):
 
    Returns: The value of the GUID representing this document in gbXML export.
   """
-  pass
- @staticmethod
- def GetNurbsSurfaceDataForFace(face):
-  """
+        pass
+
+    @staticmethod
+    def GetNurbsSurfaceDataForFace(face):
+        """
   GetNurbsSurfaceDataForFace(face: Face) -> NurbsSurfaceData
 
   
@@ -53,10 +56,10 @@ class ExportUtils(object):
 
    Returns: A class containing the necessary data to define a NURBS surface.
   """
-  pass
- __all__=[
-  'GetExportId',
-  'GetGBXMLDocumentId',
-  'GetNurbsSurfaceDataForFace',
- ]
+        pass
 
+    __all__ = [
+        "GetExportId",
+        "GetGBXMLDocumentId",
+        "GetNurbsSurfaceDataForFace",
+    ]

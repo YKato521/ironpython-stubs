@@ -1,13 +1,14 @@
-class BorderGapMaskConverter(object,IMultiValueConverter):
- """
+class BorderGapMaskConverter(object, IMultiValueConverter):
+    """
  Represents a converter that converts the dimensions of a System.Windows.Controls.GroupBox control into a System.Windows.Media.VisualBrush.
 
  
 
  BorderGapMaskConverter()
  """
- def Convert(self,values,targetType,parameter,culture):
-  """
+
+    def Convert(self, values, targetType, parameter, culture):
+        """
   Convert(self: BorderGapMaskConverter,values: Array[object],targetType: Type,parameter: object,culture: CultureInfo) -> object
 
   
@@ -42,9 +43,10 @@ class BorderGapMaskConverter(object,IMultiValueConverter):
 
     System.Windows.Controls.HeaderedContentControl.Header content.
   """
-  pass
- def ConvertBack(self,value,targetTypes,parameter,culture):
-  """
+        pass
+
+    def ConvertBack(self, value, targetTypes, parameter, culture):
+        """
   ConvertBack(self: BorderGapMaskConverter,value: object,targetTypes: Array[Type],parameter: object,culture: CultureInfo) -> Array[object]
 
   
@@ -63,10 +65,12 @@ class BorderGapMaskConverter(object,IMultiValueConverter):
 
    Returns: System.Windows.Data.Binding.DoNothing in all cases.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass

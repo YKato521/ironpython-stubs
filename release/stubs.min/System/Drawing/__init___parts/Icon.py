@@ -1,5 +1,5 @@
-class Icon(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
- """
+class Icon(MarshalByRefObject, ISerializable, ICloneable, IDisposable):
+    """
  Represents a Windows icon,which is a small bitmap image that is used to represent an object. Icons can be thought of as transparent bitmaps,although their size is determined by the system.
 
  
@@ -22,8 +22,9 @@ class Icon(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
  Icon(stream: Stream,size: Size)
  """
- def Clone(self):
-  """
+
+    def Clone(self):
+        """
   Clone(self: Icon) -> object
 
   
@@ -32,17 +33,19 @@ class Icon(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
    Returns: An object that can be cast to an System.Drawing.Icon.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: Icon)
 
    Releases all resources used by this System.Drawing.Icon.
   """
-  pass
- @staticmethod
- def ExtractAssociatedIcon(filePath):
-  """
+        pass
+
+    @staticmethod
+    def ExtractAssociatedIcon(filePath):
+        """
   ExtractAssociatedIcon(filePath: str) -> Icon
 
   
@@ -55,10 +58,11 @@ class Icon(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
    Returns: The System.Drawing.Icon representation of the image that is contained in the specified file.
   """
-  pass
- @staticmethod
- def FromHandle(handle):
-  """
+        pass
+
+    @staticmethod
+    def FromHandle(handle):
+        """
   FromHandle(handle: IntPtr) -> Icon
 
   
@@ -71,9 +75,10 @@ class Icon(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
    Returns: The System.Drawing.Icon this method creates.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -104,9 +109,10 @@ class Icon(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def Save(self,outputStream):
-  """
+        pass
+
+    def Save(self, outputStream):
+        """
   Save(self: Icon,outputStream: Stream)
 
    Saves this System.Drawing.Icon to the specified output System.IO.Stream.
@@ -115,9 +121,10 @@ class Icon(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
    outputStream: The System.IO.Stream to save to.
   """
-  pass
- def ToBitmap(self):
-  """
+        pass
+
+    def ToBitmap(self):
+        """
   ToBitmap(self: Icon) -> Bitmap
 
   
@@ -126,9 +133,10 @@ class Icon(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
    Returns: A System.Drawing.Bitmap that represents the converted System.Drawing.Icon.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: Icon) -> str
 
   
@@ -137,29 +145,33 @@ class Icon(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
    Returns: A string that describes the System.Drawing.Icon.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,fileName: str)
 
   __new__(cls: type,fileName: str,size: Size)
@@ -178,13 +190,16 @@ class Icon(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
   __new__(cls: type,stream: Stream,width: int,height: int)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Handle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the Windows handle for this System.Drawing.Icon. This is not a copy of the handle; do not free it.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Handle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the Windows handle for this System.Drawing.Icon. This is not a copy of the handle; do not free it.
 
 
 
@@ -194,8 +209,8 @@ Get: Handle(self: Icon) -> IntPtr
 
 """
 
- Height=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the height of this System.Drawing.Icon.
+    Height = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the height of this System.Drawing.Icon.
 
 
 
@@ -205,8 +220,8 @@ Get: Height(self: Icon) -> int
 
 """
 
- Size=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the size of this System.Drawing.Icon.
+    Size = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the size of this System.Drawing.Icon.
 
 
 
@@ -216,8 +231,8 @@ Get: Size(self: Icon) -> Size
 
 """
 
- Width=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the width of this System.Drawing.Icon.
+    Width = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the width of this System.Drawing.Icon.
 
 
 
@@ -226,5 +241,3 @@ Get: Width(self: Icon) -> int
 
 
 """
-
-

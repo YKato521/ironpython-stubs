@@ -1,11 +1,12 @@
-class DividedSurface(Element,IDisposable):
- """
+class DividedSurface(Element, IDisposable):
+    """
  An element that represents a mesh on the surface of another element,a family instance,an import instance or a geometry combination,
 
     and a tile pattern built on that mesh.
  """
- def AddIntersectionElement(self,newIntersectionElemId):
-  """
+
+    def AddIntersectionElement(self, newIntersectionElemId):
+        """
   AddIntersectionElement(self: DividedSurface,newIntersectionElemId: ElementId)
 
    Adds an intersection element to the divided surface.
@@ -14,10 +15,11 @@ class DividedSurface(Element,IDisposable):
 
    newIntersectionElemId: The intersection element to be added.
   """
-  pass
- @staticmethod
- def CanBeDivided(document,reference):
-  """
+        pass
+
+    @staticmethod
+    def CanBeDivided(document, reference):
+        """
   CanBeDivided(document: Document,reference: Reference) -> bool
 
   
@@ -36,9 +38,10 @@ class DividedSurface(Element,IDisposable):
 
    Returns: True if the reference can be used to create a divided surface,false otherwise.
   """
-  pass
- def CanBeIntersectionElement(self,id):
-  """
+        pass
+
+    def CanBeIntersectionElement(self, id):
+        """
   CanBeIntersectionElement(self: DividedSurface,id: ElementId) -> bool
 
   
@@ -51,10 +54,11 @@ class DividedSurface(Element,IDisposable):
 
    Returns: True if the element can be an intersection reference.,false otherwise.
   """
-  pass
- @staticmethod
- def Create(document,faceReference):
-  """
+        pass
+
+    @staticmethod
+    def Create(document, faceReference):
+        """
   Create(document: Document,faceReference: Reference) -> DividedSurface
 
   
@@ -69,12 +73,14 @@ class DividedSurface(Element,IDisposable):
 
    Returns: The newly created divided surface.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def GetAllIntersectionElements(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def GetAllIntersectionElements(self):
+        """
   GetAllIntersectionElements(self: DividedSurface) -> ICollection[ElementId]
 
   
@@ -83,13 +89,15 @@ class DividedSurface(Element,IDisposable):
 
    Returns: The intersection elements.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- @staticmethod
- def GetDividedSurfaceForReference(document,faceReference):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    @staticmethod
+    def GetDividedSurfaceForReference(document, faceReference):
+        """
   GetDividedSurfaceForReference(document: Document,faceReference: Reference) -> DividedSurface
 
   
@@ -108,9 +116,10 @@ class DividedSurface(Element,IDisposable):
 
    Returns: The newly created divided surface.
   """
-  pass
- def GetGridNodeLocation(self,gridNode):
-  """
+        pass
+
+    def GetGridNodeLocation(self, gridNode):
+        """
   GetGridNodeLocation(self: DividedSurface,gridNode: GridNode) -> GridNodeLocation
 
   
@@ -123,9 +132,10 @@ class DividedSurface(Element,IDisposable):
 
   the boundary.
   """
-  pass
- def GetGridNodeReference(self,gridNode):
-  """
+        pass
+
+    def GetGridNodeReference(self, gridNode):
+        """
   GetGridNodeReference(self: DividedSurface,gridNode: GridNode) -> Reference
 
   
@@ -134,9 +144,10 @@ class DividedSurface(Element,IDisposable):
 
   associated with a grid node.
   """
-  pass
- def GetGridNodeUV(self,gridNode):
-  """
+        pass
+
+    def GetGridNodeUV(self, gridNode):
+        """
   GetGridNodeUV(self: DividedSurface,gridNode: GridNode) -> UV
 
   
@@ -145,9 +156,10 @@ class DividedSurface(Element,IDisposable):
 
   coordinates in the surface.
   """
-  pass
- def GetGridSegmentReference(self,gridNode,gridSegmentDirection):
-  """
+        pass
+
+    def GetGridSegmentReference(self, gridNode, gridSegmentDirection):
+        """
   GetGridSegmentReference(self: DividedSurface,gridNode: GridNode,gridSegmentDirection: GridSegmentDirection) -> Reference
 
   
@@ -156,10 +168,11 @@ class DividedSurface(Element,IDisposable):
 
   two adjacent grid nodes.
   """
-  pass
- @staticmethod
- def GetReferencesWithDividedSurfaces(host):
-  """
+        pass
+
+    @staticmethod
+    def GetReferencesWithDividedSurfaces(host):
+        """
   GetReferencesWithDividedSurfaces(host: Element) -> IList[Reference]
 
   
@@ -176,9 +189,10 @@ class DividedSurface(Element,IDisposable):
 
    Returns: References that host a divided surface
   """
-  pass
- def GetTileFamilyInstance(self,gridNode,tileIndex):
-  """
+        pass
+
+    def GetTileFamilyInstance(self, gridNode, tileIndex):
+        """
   GetTileFamilyInstance(self: DividedSurface,gridNode: GridNode,tileIndex: int) -> FamilyInstance
 
   
@@ -201,9 +215,10 @@ class DividedSurface(Element,IDisposable):
 
     tile is omitted due to boundary conditions.
   """
-  pass
- def GetTileReference(self,gridNode,tileIndex):
-  """
+        pass
+
+    def GetTileReference(self, gridNode, tileIndex):
+        """
   GetTileReference(self: DividedSurface,gridNode: GridNode,tileIndex: int) -> Reference
 
   
@@ -230,9 +245,10 @@ class DividedSurface(Element,IDisposable):
 
   if the tile is omitted due to boundary conditions.
   """
-  pass
- def IsSeedNode(self,gridNode):
-  """
+        pass
+
+    def IsSeedNode(self, gridNode):
+        """
   IsSeedNode(self: DividedSurface,gridNode: GridNode) -> bool
 
   
@@ -243,19 +259,22 @@ class DividedSurface(Element,IDisposable):
 
     one or more tiles.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def RemoveAllIntersectionElements(self):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def RemoveAllIntersectionElements(self):
+        """
   RemoveAllIntersectionElements(self: DividedSurface)
 
    Removes all the intersection elements from a divided surface.
   """
-  pass
- def RemoveIntersectionElement(self,referenceElemIdToRemove):
-  """
+        pass
+
+    def RemoveIntersectionElement(self, referenceElemIdToRemove):
+        """
   RemoveIntersectionElement(self: DividedSurface,referenceElemIdToRemove: ElementId)
 
    Removes an intersection element from a divided surface.
@@ -264,21 +283,28 @@ class DividedSurface(Element,IDisposable):
 
    referenceElemIdToRemove: The intersection element to be removed.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- AllGridRotation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Angle of rotation applied to the U- and V- directions together.
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    AllGridRotation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Angle of rotation applied to the U- and V- directions together.
 
 
 
@@ -290,8 +316,10 @@ Set: AllGridRotation(self: DividedSurface)=value
 
 """
 
- BorderTile=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determines the handling of tiles that overlap the surface's
+    BorderTile = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Determines the handling of tiles that overlap the surface's
 
 boundary.
 
@@ -305,8 +333,10 @@ Set: BorderTile(self: DividedSurface)=value
 
 """
 
- ComponentRotation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The rotation of the pattern by a multiple
+    ComponentRotation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The rotation of the pattern by a multiple
 
 of 90 degrees.
 
@@ -320,8 +350,8 @@ Set: ComponentRotation(self: DividedSurface)=value
 
 """
 
- Host=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element whose surface has been divided.
+    Host = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The element whose surface has been divided.
 
 
 
@@ -331,8 +361,10 @@ Get: Host(self: DividedSurface) -> Element
 
 """
 
- HostReference=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """A reference to the divided face on the host.
+    HostReference = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """A reference to the divided face on the host.
 
 
 
@@ -342,8 +374,10 @@ Get: HostReference(self: DividedSurface) -> Reference
 
 """
 
- IsComponentFlipped=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether the pattern is flipped.
+    IsComponentFlipped = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether the pattern is flipped.
 
 
 
@@ -355,8 +389,10 @@ Set: IsComponentFlipped(self: DividedSurface)=value
 
 """
 
- IsComponentMirrored=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether the pattern is mirror-imaged.
+    IsComponentMirrored = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether the pattern is mirror-imaged.
 
 
 
@@ -368,8 +404,10 @@ Set: IsComponentMirrored(self: DividedSurface)=value
 
 """
 
- NumberOfUGridlines=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the number of U-gridlines used on the
+    NumberOfUGridlines = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get the number of U-gridlines used on the
 
 surface.
 
@@ -381,8 +419,10 @@ Get: NumberOfUGridlines(self: DividedSurface) -> int
 
 """
 
- NumberOfVGridlines=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the number of V-gridlines used on the
+    NumberOfVGridlines = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get the number of V-gridlines used on the
 
 surface.
 
@@ -394,8 +434,10 @@ Get: NumberOfVGridlines(self: DividedSurface) -> int
 
 """
 
- UPatternIndent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The offset applied to the pattern by an
+    UPatternIndent = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The offset applied to the pattern by an
 
 integral number of grid nodes in the U-direction.
 
@@ -409,8 +451,10 @@ Set: UPatternIndent(self: DividedSurface)=value
 
 """
 
- USpacingRule=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Access to the rule for laying out the first series of equidistant
+    USpacingRule = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Access to the rule for laying out the first series of equidistant
 
 parallel lines on the surface.
 
@@ -422,8 +466,10 @@ Get: USpacingRule(self: DividedSurface) -> SpacingRule
 
 """
 
- VPatternIndent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The offset applied to the pattern by an 
+    VPatternIndent = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The offset applied to the pattern by an 
 
 integral number of grid nodes in the V-direction.
 
@@ -437,8 +483,10 @@ Set: VPatternIndent(self: DividedSurface)=value
 
 """
 
- VSpacingRule=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Access to the rule for laying out the second series of equidistant
+    VSpacingRule = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Access to the rule for laying out the second series of equidistant
 
 parallel lines on the surface.
 
@@ -449,5 +497,3 @@ Get: VSpacingRule(self: DividedSurface) -> SpacingRule
 
 
 """
-
-

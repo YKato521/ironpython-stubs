@@ -1,5 +1,5 @@
-class ViewShapeBuilder(ShapeBuilder,IDisposable):
- """
+class ViewShapeBuilder(ShapeBuilder, IDisposable):
+    """
  Builds and verifies a view-specific shape representation that would typically be stored in a DirectShape object.
 
     Currently limited to curve-based representations for plan and elevation views.
@@ -10,8 +10,9 @@ class ViewShapeBuilder(ShapeBuilder,IDisposable):
 
  ViewShapeBuilder()
  """
- def AddCurve(self,GCurve):
-  """
+
+    def AddCurve(self, GCurve):
+        """
   AddCurve(self: ViewShapeBuilder,GCurve: Curve)
 
    Add a curve to the GRep associated to this ViewShapeBuilder.
@@ -20,25 +21,29 @@ class ViewShapeBuilder(ShapeBuilder,IDisposable):
 
    GCurve: The curve to be added.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: ShapeBuilder,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: ShapeBuilder,disposing: bool) """
-  pass
- def Reset(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: ShapeBuilder,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: ShapeBuilder,disposing: bool) """
+        pass
+
+    def Reset(self):
+        """
   Reset(self: ViewShapeBuilder)
 
    Clears the accumulated geometry and resets other ViewShapeBuilder parameters to 
 
     invalid values.
   """
-  pass
- @staticmethod
- def ValidateCurve(GCurve,targetViewType=None):
-  """
+        pass
+
+    @staticmethod
+    def ValidateCurve(GCurve, targetViewType=None):
+        """
   ValidateCurve(self: ViewShapeBuilder,GCurve: Curve) -> bool
 
   
@@ -85,14 +90,16 @@ class ViewShapeBuilder(ShapeBuilder,IDisposable):
 
    Returns: True is %GCurve% is acceptable as a part of view-specific shape representation.
   """
-  pass
- @staticmethod
- def ValidateShape(shape,targetViewType):
-  """ ValidateShape(shape: IList[GeometryObject],targetViewType: DirectShapeTargetViewType) -> bool """
-  pass
- @staticmethod
- def ValidateViewType(targetViewType):
-  """
+        pass
+
+    @staticmethod
+    def ValidateShape(shape, targetViewType):
+        """ ValidateShape(shape: IList[GeometryObject],targetViewType: DirectShapeTargetViewType) -> bool """
+        pass
+
+    @staticmethod
+    def ValidateViewType(targetViewType):
+        """
   ValidateViewType(targetViewType: DirectShapeTargetViewType) -> bool
 
   
@@ -105,26 +112,33 @@ class ViewShapeBuilder(ShapeBuilder,IDisposable):
 
    Returns: True if %targetViewType% is DirectShapeTargetViewType::Plan
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,targetViewType=None):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, targetViewType=None):
+        """
   __new__(cls: type,targetViewType: DirectShapeTargetViewType)
 
   __new__(cls: type)
   """
-  pass
- ViewNormal=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Normal of the view that will display the shape being built. Must be set explicitly before adding any geometry. Must be a unit vector.
+        pass
+
+    ViewNormal = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Normal of the view that will display the shape being built. Must be set explicitly before adding any geometry. Must be a unit vector.
 
    This is used to validate incoming geometry - it must be orthogonal to the viewNormal.
 
@@ -138,8 +152,8 @@ Set: ViewNormal(self: ViewShapeBuilder)=value
 
 """
 
- ViewType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """View type where the view-specific shape currently being built will be used
+    ViewType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """View type where the view-specific shape currently being built will be used
 
 
 
@@ -150,5 +164,3 @@ Get: ViewType(self: ViewShapeBuilder) -> DirectShapeTargetViewType
 Set: ViewType(self: ViewShapeBuilder)=value
 
 """
-
-

@@ -1,5 +1,5 @@
-class IntPtr(object,ISerializable):
- """
+class IntPtr(object, ISerializable):
+    """
  A platform-specific type that is used to represent a pointer or a handle.
 
  
@@ -10,9 +10,10 @@ class IntPtr(object,ISerializable):
 
  IntPtr(value: Void*)
  """
- @staticmethod
- def Add(pointer,offset):
-  """
+
+    @staticmethod
+    def Add(pointer, offset):
+        """
   Add(pointer: IntPtr,offset: int) -> IntPtr
 
   
@@ -27,9 +28,10 @@ class IntPtr(object,ISerializable):
 
    Returns: A new pointer that reflects the addition of offset to pointer.
   """
-  pass
- def Equals(self,obj):
-  """
+        pass
+
+    def Equals(self, obj):
+        """
   Equals(self: IntPtr,obj: object) -> bool
 
   
@@ -44,9 +46,10 @@ class IntPtr(object,ISerializable):
 
     false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: IntPtr) -> int
 
   
@@ -55,10 +58,11 @@ class IntPtr(object,ISerializable):
 
    Returns: A 32-bit signed integer hash code.
   """
-  pass
- @staticmethod
- def Subtract(pointer,offset):
-  """
+        pass
+
+    @staticmethod
+    def Subtract(pointer, offset):
+        """
   Subtract(pointer: IntPtr,offset: int) -> IntPtr
 
   
@@ -73,9 +77,10 @@ class IntPtr(object,ISerializable):
 
    Returns: A new pointer that reflects the subtraction of offset from pointer.
   """
-  pass
- def ToInt32(self):
-  """
+        pass
+
+    def ToInt32(self):
+        """
   ToInt32(self: IntPtr) -> int
 
   
@@ -84,9 +89,10 @@ class IntPtr(object,ISerializable):
 
    Returns: A 32-bit signed integer equal to the value of this instance.
   """
-  pass
- def ToInt64(self):
-  """
+        pass
+
+    def ToInt64(self):
+        """
   ToInt64(self: IntPtr) -> Int64
 
   
@@ -95,9 +101,10 @@ class IntPtr(object,ISerializable):
 
    Returns: A 64-bit signed integer equal to the value of this instance.
   """
-  pass
- def ToPointer(self):
-  """
+        pass
+
+    def ToPointer(self):
+        """
   ToPointer(self: IntPtr) -> Void*
 
   
@@ -106,9 +113,10 @@ class IntPtr(object,ISerializable):
 
    Returns: A pointer to System.Void; that is,a pointer to memory containing data of an unspecified type.
   """
-  pass
- def ToString(self,format=None):
-  """
+        pass
+
+    def ToString(self, format=None):
+        """
   ToString(self: IntPtr,format: str) -> str
 
   
@@ -137,25 +145,31 @@ class IntPtr(object,ISerializable):
 
    Returns: The string representation of the value of this instance.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __int__(self,*args):
-  """ __int__(value: IntPtr) -> int """
-  pass
- def __long__(self,*args):
-  """ __int__(value: IntPtr) -> int """
-  pass
- @staticmethod
- def __new__(self,value):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __int__(self, *args):
+        """ __int__(value: IntPtr) -> int """
+        pass
+
+    def __long__(self, *args):
+        """ __int__(value: IntPtr) -> int """
+        pass
+
+    @staticmethod
+    def __new__(self, value):
+        """
   __new__(cls: type,value: int)
 
   __new__(cls: type,value: Int64)
@@ -164,19 +178,24 @@ class IntPtr(object,ISerializable):
 
   __new__[IntPtr]() -> IntPtr
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- def __sub__(self,*args):
-  """ x.__sub__(y) <==> x-y """
-  pass
- Size=4
- Zero=None
+        pass
 
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    def __sub__(self, *args):
+        """ x.__sub__(y) <==> x-y """
+        pass
+
+    Size = 4
+    Zero = None

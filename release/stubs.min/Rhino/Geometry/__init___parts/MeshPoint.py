@@ -1,7 +1,8 @@
 class MeshPoint(object):
- """ Represents a point that is found on a mesh. """
- def GetTriangle(self,a,b,c):
-  """
+    """ Represents a point that is found on a mesh. """
+
+    def GetTriangle(self, a, b, c):
+        """
   GetTriangle(self: MeshPoint) -> (bool,int,int,int)
 
   
@@ -14,9 +15,12 @@ class MeshPoint(object):
 
      the way the quad was split during the intersection.
   """
-  pass
- ComponentIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the component index of the intersecting element in the mesh.
+        pass
+
+    ComponentIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the component index of the intersecting element in the mesh.
 
 
 
@@ -26,8 +30,8 @@ Get: ComponentIndex(self: MeshPoint) -> ComponentIndex
 
 """
 
- EdgeIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When set,EdgeIndex is an index of an edge in the mesh's edge list.
+    EdgeIndex = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """When set,EdgeIndex is an index of an edge in the mesh's edge list.
 
 
 
@@ -37,8 +41,10 @@ Get: EdgeIndex(self: MeshPoint) -> int
 
 """
 
- EdgeParameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Edge parameter when found.
+    EdgeParameter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Edge parameter when found.
 
 
 
@@ -48,8 +54,8 @@ Get: EdgeParameter(self: MeshPoint) -> float
 
 """
 
- FaceIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """FaceIndex is an index of a face in mesh.Faces.
+    FaceIndex = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """FaceIndex is an index of a face in mesh.Faces.
 
    When ComponentIndex refers to a vertex,any face that uses the vertex
 
@@ -65,8 +71,8 @@ Get: FaceIndex(self: MeshPoint) -> int
 
 """
 
- Mesh=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The mesh that is ralated to this point.
+    Mesh = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The mesh that is ralated to this point.
 
 
 
@@ -76,8 +82,8 @@ Get: Mesh(self: MeshPoint) -> Mesh
 
 """
 
- Point=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the location (position) of this point.
+    Point = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the location (position) of this point.
 
 
 
@@ -87,8 +93,8 @@ Get: Point(self: MeshPoint) -> Point3d
 
 """
 
- T=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Barycentric quad coordinates for the point on the mesh
+    T = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Barycentric quad coordinates for the point on the mesh
 
    face mesh.Faces[FaceIndex].  If the face is a triangle
 
@@ -118,8 +124,8 @@ Get: T(self: MeshPoint) -> Array[float]
 
 """
 
- Triangle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Face triangle where the intersection takes place:
+    Triangle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Face triangle where the intersection takes place:
 
    0 is unsetA is 0,1,2B is 0,2,3C is 0,1,3D is 1,2,3
 
@@ -130,5 +136,3 @@ Get: Triangle(self: MeshPoint) -> Char
 
 
 """
-
-

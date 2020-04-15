@@ -1,11 +1,13 @@
-class RebarShapeParameters(object,IDisposable):
- """ Class containing functions that create and retrieve shared parameters for RebarShapes. """
- def Dispose(self):
-  """ Dispose(self: RebarShapeParameters) """
-  pass
- @staticmethod
- def GetAllRebarShapeParameters(doc):
-  """
+class RebarShapeParameters(object, IDisposable):
+    """ Class containing functions that create and retrieve shared parameters for RebarShapes. """
+
+    def Dispose(self):
+        """ Dispose(self: RebarShapeParameters) """
+        pass
+
+    @staticmethod
+    def GetAllRebarShapeParameters(doc):
+        """
   GetAllRebarShapeParameters(doc: Document) -> IList[ElementId]
 
   
@@ -22,10 +24,11 @@ class RebarShapeParameters(object,IDisposable):
 
    Returns: ElementIds corresponding to the external parameters.
   """
-  pass
- @staticmethod
- def GetElementIdForExternalDefinition(doc,externalDefinition):
-  """
+        pass
+
+    @staticmethod
+    def GetElementIdForExternalDefinition(doc, externalDefinition):
+        """
   GetElementIdForExternalDefinition(doc: Document,externalDefinition: ExternalDefinition) -> ElementId
 
   
@@ -50,10 +53,11 @@ class RebarShapeParameters(object,IDisposable):
 
     InvalidElementId if the parameter is not stored in the document.
   """
-  pass
- @staticmethod
- def GetExternalDefinitionForElementId(doc,paramId,definitionFile):
-  """
+        pass
+
+    @staticmethod
+    def GetExternalDefinitionForElementId(doc, paramId, definitionFile):
+        """
   GetExternalDefinitionForElementId(doc: Document,paramId: ElementId,definitionFile: DefinitionFile) -> ExternalDefinition
 
   
@@ -84,10 +88,11 @@ class RebarShapeParameters(object,IDisposable):
 
     not in the definition file.
   """
-  pass
- @staticmethod
- def GetOrCreateElementIdForExternalDefinition(doc,externalDefinition):
-  """
+        pass
+
+    @staticmethod
+    def GetOrCreateElementIdForExternalDefinition(doc, externalDefinition):
+        """
   GetOrCreateElementIdForExternalDefinition(doc: Document,externalDefinition: ExternalDefinition) -> ElementId
 
   
@@ -112,10 +117,11 @@ class RebarShapeParameters(object,IDisposable):
 
    Returns: An ElementId representing the shared parameter stored in the document.
   """
-  pass
- @staticmethod
- def IsValidExternalDefinition(param):
-  """
+        pass
+
+    @staticmethod
+    def IsValidExternalDefinition(param):
+        """
   IsValidExternalDefinition(param: ExternalDefinition) -> bool
 
   
@@ -132,24 +138,32 @@ class RebarShapeParameters(object,IDisposable):
 
    Returns: True if the definition is of type Length,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: RebarShapeParameters,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: RebarShapeParameters,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -158,5 +172,3 @@ Get: IsValidObject(self: RebarShapeParameters) -> bool
 
 
 """
-
-

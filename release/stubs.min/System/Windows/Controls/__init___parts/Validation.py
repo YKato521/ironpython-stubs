@@ -1,12 +1,14 @@
 class Validation(object):
- """ Provides methods and attached properties that support data validation. """
- @staticmethod
- def AddErrorHandler(element,handler):
-  """ AddErrorHandler(element: DependencyObject,handler: EventHandler[ValidationErrorEventArgs]) """
-  pass
- @staticmethod
- def ClearInvalid(bindingExpression):
-  """
+    """ Provides methods and attached properties that support data validation. """
+
+    @staticmethod
+    def AddErrorHandler(element, handler):
+        """ AddErrorHandler(element: DependencyObject,handler: EventHandler[ValidationErrorEventArgs]) """
+        pass
+
+    @staticmethod
+    def ClearInvalid(bindingExpression):
+        """
   ClearInvalid(bindingExpression: BindingExpressionBase)
 
    Removes all System.Windows.Controls.ValidationError objects from the specified 
@@ -19,10 +21,11 @@ class Validation(object):
 
    bindingExpression: The object to turn valid.
   """
-  pass
- @staticmethod
- def GetErrors(element):
-  """
+        pass
+
+    @staticmethod
+    def GetErrors(element):
+        """
   GetErrors(element: DependencyObject) -> ReadOnlyObservableCollection[ValidationError]
 
   
@@ -41,10 +44,11 @@ class Validation(object):
 
     System.Windows.Controls.ValidationError objects.
   """
-  pass
- @staticmethod
- def GetErrorTemplate(element):
-  """
+        pass
+
+    @staticmethod
+    def GetErrorTemplate(element):
+        """
   GetErrorTemplate(element: DependencyObject) -> ControlTemplate
 
   
@@ -63,10 +67,11 @@ class Validation(object):
 
     adorner layer.
   """
-  pass
- @staticmethod
- def GetHasError(element):
-  """
+        pass
+
+    @staticmethod
+    def GetHasError(element):
+        """
   GetHasError(element: DependencyObject) -> bool
 
   
@@ -85,10 +90,11 @@ class Validation(object):
 
     element.
   """
-  pass
- @staticmethod
- def GetValidationAdornerSite(element):
-  """
+        pass
+
+    @staticmethod
+    def GetValidationAdornerSite(element):
+        """
   GetValidationAdornerSite(element: DependencyObject) -> DependencyObject
 
   
@@ -105,10 +111,11 @@ class Validation(object):
 
    Returns: The value of the System.Windows.Controls.Validation.ValidationAdornerSite.
   """
-  pass
- @staticmethod
- def GetValidationAdornerSiteFor(element):
-  """
+        pass
+
+    @staticmethod
+    def GetValidationAdornerSiteFor(element):
+        """
   GetValidationAdornerSiteFor(element: DependencyObject) -> DependencyObject
 
   
@@ -125,10 +132,11 @@ class Validation(object):
 
    Returns: The value of the System.Windows.Controls.Validation.ValidationAdornerSiteFor.
   """
-  pass
- @staticmethod
- def MarkInvalid(bindingExpression,validationError):
-  """
+        pass
+
+    @staticmethod
+    def MarkInvalid(bindingExpression, validationError):
+        """
   MarkInvalid(bindingExpression: BindingExpressionBase,validationError: ValidationError)
 
    Marks the specified System.Windows.Data.BindingExpression object as invalid with the specified 
@@ -143,14 +151,16 @@ class Validation(object):
 
    validationError: The System.Windows.Controls.ValidationError object to use.
   """
-  pass
- @staticmethod
- def RemoveErrorHandler(element,handler):
-  """ RemoveErrorHandler(element: DependencyObject,handler: EventHandler[ValidationErrorEventArgs]) """
-  pass
- @staticmethod
- def SetErrorTemplate(element,value):
-  """
+        pass
+
+    @staticmethod
+    def RemoveErrorHandler(element, handler):
+        """ RemoveErrorHandler(element: DependencyObject,handler: EventHandler[ValidationErrorEventArgs]) """
+        pass
+
+    @staticmethod
+    def SetErrorTemplate(element, value):
+        """
   SetErrorTemplate(element: DependencyObject,value: ControlTemplate)
 
    Sets the value of the System.Windows.Controls.Validation.ErrorTemplate�attached property to the 
@@ -167,10 +177,11 @@ class Validation(object):
 
     adorner layer.
   """
-  pass
- @staticmethod
- def SetValidationAdornerSite(element,value):
-  """
+        pass
+
+    @staticmethod
+    def SetValidationAdornerSite(element, value):
+        """
   SetValidationAdornerSite(element: DependencyObject,value: DependencyObject)
 
    Sets the System.Windows.Controls.Validation.ValidationAdornerSite attached property to the 
@@ -185,10 +196,11 @@ class Validation(object):
 
    value: The System.Windows.Controls.Validation.ValidationAdornerSite of the specified element.
   """
-  pass
- @staticmethod
- def SetValidationAdornerSiteFor(element,value):
-  """
+        pass
+
+    @staticmethod
+    def SetValidationAdornerSiteFor(element, value):
+        """
   SetValidationAdornerSiteFor(element: DependencyObject,value: DependencyObject)
 
    Sets the System.Windows.Controls.Validation.ValidationAdornerSiteFor attached property to the 
@@ -203,31 +215,31 @@ class Validation(object):
 
    value: The System.Windows.Controls.Validation.ValidationAdornerSiteFor of the specified element.
   """
-  pass
- ErrorEvent=None
- ErrorsProperty=None
- ErrorTemplateProperty=None
- HasErrorProperty=None
- ValidationAdornerSiteForProperty=None
- ValidationAdornerSiteProperty=None
- __all__=[
-  'AddErrorHandler',
-  'ClearInvalid',
-  'ErrorEvent',
-  'ErrorsProperty',
-  'ErrorTemplateProperty',
-  'GetErrors',
-  'GetErrorTemplate',
-  'GetHasError',
-  'GetValidationAdornerSite',
-  'GetValidationAdornerSiteFor',
-  'HasErrorProperty',
-  'MarkInvalid',
-  'RemoveErrorHandler',
-  'SetErrorTemplate',
-  'SetValidationAdornerSite',
-  'SetValidationAdornerSiteFor',
-  'ValidationAdornerSiteForProperty',
-  'ValidationAdornerSiteProperty',
- ]
+        pass
 
+    ErrorEvent = None
+    ErrorsProperty = None
+    ErrorTemplateProperty = None
+    HasErrorProperty = None
+    ValidationAdornerSiteForProperty = None
+    ValidationAdornerSiteProperty = None
+    __all__ = [
+        "AddErrorHandler",
+        "ClearInvalid",
+        "ErrorEvent",
+        "ErrorsProperty",
+        "ErrorTemplateProperty",
+        "GetErrors",
+        "GetErrorTemplate",
+        "GetHasError",
+        "GetValidationAdornerSite",
+        "GetValidationAdornerSiteFor",
+        "HasErrorProperty",
+        "MarkInvalid",
+        "RemoveErrorHandler",
+        "SetErrorTemplate",
+        "SetValidationAdornerSite",
+        "SetValidationAdornerSiteFor",
+        "ValidationAdornerSiteForProperty",
+        "ValidationAdornerSiteProperty",
+    ]

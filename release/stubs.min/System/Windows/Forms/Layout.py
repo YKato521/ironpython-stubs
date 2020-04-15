@@ -8,10 +8,12 @@
 # no functions
 # classes
 
-class ArrangedElementCollection(object,IList,ICollection,IEnumerable):
- """ Represents a collection of objects. """
- def CopyTo(self,array,index):
-  """
+
+class ArrangedElementCollection(object, IList, ICollection, IEnumerable):
+    """ Represents a collection of objects. """
+
+    def CopyTo(self, array, index):
+        """
   CopyTo(self: ArrangedElementCollection,array: Array,index: int)
 
    Copies the entire contents of this collection to a compatible one-dimensional System.Array,
@@ -30,9 +32,10 @@ class ArrangedElementCollection(object,IList,ICollection,IEnumerable):
 
    index: The zero-based index in array at which copying begins.
   """
-  pass
- def Equals(self,obj):
-  """
+        pass
+
+    def Equals(self, obj):
+        """
   Equals(self: ArrangedElementCollection,obj: object) -> bool
 
   
@@ -51,9 +54,10 @@ class ArrangedElementCollection(object,IList,ICollection,IEnumerable):
 
     current System.Windows.Forms.Layout.ArrangedElementCollection; otherwise,false.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: ArrangedElementCollection) -> IEnumerator
 
   
@@ -62,9 +66,10 @@ class ArrangedElementCollection(object,IList,ICollection,IEnumerable):
 
    Returns: An System.Collections.IEnumerator for the entire collection.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: ArrangedElementCollection) -> int
 
   
@@ -73,9 +78,10 @@ class ArrangedElementCollection(object,IList,ICollection,IEnumerable):
 
    Returns: A hash code for the current System.Windows.Forms.Layout.ArrangedElementCollection.
   """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IList,value: object) -> bool
 
   
@@ -88,26 +94,33 @@ class ArrangedElementCollection(object,IList,ICollection,IEnumerable):
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- def __ne__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of elements in the collection.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of elements in the collection.
 
 
 
@@ -117,8 +130,10 @@ Get: Count(self: ArrangedElementCollection) -> int
 
 """
 
- IsReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the collection is read-only.
+    IsReadOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the collection is read-only.
 
 
 
@@ -129,11 +144,11 @@ Get: IsReadOnly(self: ArrangedElementCollection) -> bool
 """
 
 
-
 class LayoutEngine(object):
- """ Provides the base class for implementing layout engines. """
- def InitLayout(self,child,specified):
-  """
+    """ Provides the base class for implementing layout engines. """
+
+    def InitLayout(self, child, specified):
+        """
   InitLayout(self: LayoutEngine,child: object,specified: BoundsSpecified)
 
    Initializes the layout engine.
@@ -144,9 +159,10 @@ class LayoutEngine(object):
 
    specified: The bounds defining the container's size and position.
   """
-  pass
- def Layout(self,container,layoutEventArgs):
-  """
+        pass
+
+    def Layout(self, container, layoutEventArgs):
+        """
   Layout(self: LayoutEngine,container: object,layoutEventArgs: LayoutEventArgs) -> bool
 
   
@@ -161,18 +177,20 @@ class LayoutEngine(object):
 
    Returns: true if layout should be performed again by the parent of container; otherwise,false.
   """
-  pass
+        pass
+
 
 class TableLayoutSettingsTypeConverter(TypeConverter):
- """
+    """
  Provides a unified way of converting types of values to other types,as well as for accessing standard values and subproperties.
 
  
 
  TableLayoutSettingsTypeConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: TableLayoutSettingsTypeConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -191,9 +209,10 @@ class TableLayoutSettingsTypeConverter(TypeConverter):
 
    Returns: true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: TableLayoutSettingsTypeConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -212,9 +231,10 @@ class TableLayoutSettingsTypeConverter(TypeConverter):
 
    Returns: true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: TableLayoutSettingsTypeConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -235,9 +255,10 @@ class TableLayoutSettingsTypeConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: TableLayoutSettingsTypeConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -260,5 +281,4 @@ class TableLayoutSettingsTypeConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
-
+        pass

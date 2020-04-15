@@ -1,13 +1,14 @@
-class DataGridViewLinkColumn(DataGridViewColumn,ICloneable,IDisposable,IComponent):
- """
+class DataGridViewLinkColumn(DataGridViewColumn, ICloneable, IDisposable, IComponent):
+    """
  Represents a column of cells that contain links in a System.Windows.Forms.DataGridView control.
 
  
 
  DataGridViewLinkColumn()
  """
- def Clone(self):
-  """
+
+    def Clone(self):
+        """
   Clone(self: DataGridViewLinkColumn) -> object
 
   
@@ -16,23 +17,26 @@ class DataGridViewLinkColumn(DataGridViewColumn,ICloneable,IDisposable,IComponen
 
    Returns: An System.Object that represents the cloned System.Windows.Forms.DataGridViewLinkColumn.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: DataGridViewColumn,disposing: bool)
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def OnDataGridViewChanged(self,*args):
-  """
+        pass
+
+    def OnDataGridViewChanged(self, *args):
+        """
   OnDataGridViewChanged(self: DataGridViewBand)
 
    Called when the band is associated with a different System.Windows.Forms.DataGridView.
   """
-  pass
- def RaiseCellClick(self,*args):
-  """
+        pass
+
+    def RaiseCellClick(self, *args):
+        """
   RaiseCellClick(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellClick event.
@@ -41,9 +45,10 @@ class DataGridViewLinkColumn(DataGridViewColumn,ICloneable,IDisposable,IComponen
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseCellContentClick(self,*args):
-  """
+        pass
+
+    def RaiseCellContentClick(self, *args):
+        """
   RaiseCellContentClick(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellContentClick event.
@@ -52,9 +57,10 @@ class DataGridViewLinkColumn(DataGridViewColumn,ICloneable,IDisposable,IComponen
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseCellContentDoubleClick(self,*args):
-  """
+        pass
+
+    def RaiseCellContentDoubleClick(self, *args):
+        """
   RaiseCellContentDoubleClick(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellContentDoubleClick event.
@@ -63,9 +69,10 @@ class DataGridViewLinkColumn(DataGridViewColumn,ICloneable,IDisposable,IComponen
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseCellValueChanged(self,*args):
-  """
+        pass
+
+    def RaiseCellValueChanged(self, *args):
+        """
   RaiseCellValueChanged(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellValueChanged event.
@@ -74,9 +81,10 @@ class DataGridViewLinkColumn(DataGridViewColumn,ICloneable,IDisposable,IComponen
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseDataError(self,*args):
-  """
+        pass
+
+    def RaiseDataError(self, *args):
+        """
   RaiseDataError(self: DataGridViewElement,e: DataGridViewDataErrorEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.DataError event.
@@ -85,9 +93,10 @@ class DataGridViewLinkColumn(DataGridViewColumn,ICloneable,IDisposable,IComponen
 
    e: A System.Windows.Forms.DataGridViewDataErrorEventArgs that contains the event data.
   """
-  pass
- def RaiseMouseWheel(self,*args):
-  """
+        pass
+
+    def RaiseMouseWheel(self, *args):
+        """
   RaiseMouseWheel(self: DataGridViewElement,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseWheel event.
@@ -96,37 +105,45 @@ class DataGridViewLinkColumn(DataGridViewColumn,ICloneable,IDisposable,IComponen
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: DataGridViewLinkColumn) -> str
 
    Returns: A System.String that describes the column.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- ActiveLinkColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the color used to display an active link within cells in the column.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    ActiveLinkColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the color used to display an active link within cells in the column.
 
 
 
@@ -138,8 +155,10 @@ Set: ActiveLinkColor(self: DataGridViewLinkColumn)=value
 
 """
 
- CellTemplate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the template used to create new cells.
+    CellTemplate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the template used to create new cells.
 
 
 
@@ -151,22 +170,26 @@ Set: CellTemplate(self: DataGridViewLinkColumn)=value
 
 """
 
- HeaderCellCore=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the header cell of the System.Windows.Forms.DataGridViewBand.
+    HeaderCellCore = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the header cell of the System.Windows.Forms.DataGridViewBand.
 
 
 
 """
 
- IsRow=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the band represents a row.
+    IsRow = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the band represents a row.
 
 
 
 """
 
- LinkBehavior=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that represents the behavior of links within cells in the column.
+    LinkBehavior = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that represents the behavior of links within cells in the column.
 
 
 
@@ -178,8 +201,8 @@ Set: LinkBehavior(self: DataGridViewLinkColumn)=value
 
 """
 
- LinkColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the color used to display an unselected link within cells in the column.
+    LinkColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the color used to display an unselected link within cells in the column.
 
 
 
@@ -191,8 +214,8 @@ Set: LinkColor(self: DataGridViewLinkColumn)=value
 
 """
 
- Text=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the link text displayed in a column's cells if System.Windows.Forms.DataGridViewLinkColumn.UseColumnTextForLinkValue is true.
+    Text = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the link text displayed in a column's cells if System.Windows.Forms.DataGridViewLinkColumn.UseColumnTextForLinkValue is true.
 
 
 
@@ -204,8 +227,10 @@ Set: Text(self: DataGridViewLinkColumn)=value
 
 """
 
- TrackVisitedState=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the link changes color if it has been visited.
+    TrackVisitedState = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the link changes color if it has been visited.
 
 
 
@@ -217,8 +242,10 @@ Set: TrackVisitedState(self: DataGridViewLinkColumn)=value
 
 """
 
- UseColumnTextForLinkValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the System.Windows.Forms.DataGridViewLinkColumn.Text property value is displayed as the link text.
+    UseColumnTextForLinkValue = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the System.Windows.Forms.DataGridViewLinkColumn.Text property value is displayed as the link text.
 
 
 
@@ -230,8 +257,10 @@ Set: UseColumnTextForLinkValue(self: DataGridViewLinkColumn)=value
 
 """
 
- VisitedLinkColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the color used to display a link that has been previously visited.
+    VisitedLinkColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the color used to display a link that has been previously visited.
 
 
 
@@ -242,5 +271,3 @@ Get: VisitedLinkColor(self: DataGridViewLinkColumn) -> Color
 Set: VisitedLinkColor(self: DataGridViewLinkColumn)=value
 
 """
-
-

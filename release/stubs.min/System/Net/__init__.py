@@ -24,11 +24,21 @@ from __init___parts.DnsEndPoint import DnsEndPoint
 from __init___parts.DnsPermission import DnsPermission
 from __init___parts.DnsPermissionAttribute import DnsPermissionAttribute
 from __init___parts.DownloadDataCompletedEventArgs import DownloadDataCompletedEventArgs
-from __init___parts.DownloadDataCompletedEventHandler import DownloadDataCompletedEventHandler
-from __init___parts.DownloadProgressChangedEventArgs import DownloadProgressChangedEventArgs
-from __init___parts.DownloadProgressChangedEventHandler import DownloadProgressChangedEventHandler
-from __init___parts.DownloadStringCompletedEventArgs import DownloadStringCompletedEventArgs
-from __init___parts.DownloadStringCompletedEventHandler import DownloadStringCompletedEventHandler
+from __init___parts.DownloadDataCompletedEventHandler import (
+    DownloadDataCompletedEventHandler,
+)
+from __init___parts.DownloadProgressChangedEventArgs import (
+    DownloadProgressChangedEventArgs,
+)
+from __init___parts.DownloadProgressChangedEventHandler import (
+    DownloadProgressChangedEventHandler,
+)
+from __init___parts.DownloadStringCompletedEventArgs import (
+    DownloadStringCompletedEventArgs,
+)
+from __init___parts.DownloadStringCompletedEventHandler import (
+    DownloadStringCompletedEventHandler,
+)
 from __init___parts.EndpointPermission import EndpointPermission
 from __init___parts.WebRequest import WebRequest
 from __init___parts.FileWebRequest import FileWebRequest
@@ -80,15 +90,25 @@ from __init___parts.SocketPermissionAttribute import SocketPermissionAttribute
 from __init___parts.TransportContext import TransportContext
 from __init___parts.TransportType import TransportType
 from __init___parts.UploadDataCompletedEventArgs import UploadDataCompletedEventArgs
-from __init___parts.UploadDataCompletedEventHandler import UploadDataCompletedEventHandler
+from __init___parts.UploadDataCompletedEventHandler import (
+    UploadDataCompletedEventHandler,
+)
 from __init___parts.UploadFileCompletedEventArgs import UploadFileCompletedEventArgs
-from __init___parts.UploadFileCompletedEventHandler import UploadFileCompletedEventHandler
+from __init___parts.UploadFileCompletedEventHandler import (
+    UploadFileCompletedEventHandler,
+)
 from __init___parts.UploadProgressChangedEventArgs import UploadProgressChangedEventArgs
-from __init___parts.UploadProgressChangedEventHandler import UploadProgressChangedEventHandler
+from __init___parts.UploadProgressChangedEventHandler import (
+    UploadProgressChangedEventHandler,
+)
 from __init___parts.UploadStringCompletedEventArgs import UploadStringCompletedEventArgs
-from __init___parts.UploadStringCompletedEventHandler import UploadStringCompletedEventHandler
+from __init___parts.UploadStringCompletedEventHandler import (
+    UploadStringCompletedEventHandler,
+)
 from __init___parts.UploadValuesCompletedEventArgs import UploadValuesCompletedEventArgs
-from __init___parts.UploadValuesCompletedEventHandler import UploadValuesCompletedEventHandler
+from __init___parts.UploadValuesCompletedEventHandler import (
+    UploadValuesCompletedEventHandler,
+)
 from __init___parts.WebClient import WebClient
 from __init___parts.WebException import WebException
 from __init___parts.WebExceptionStatus import WebExceptionStatus

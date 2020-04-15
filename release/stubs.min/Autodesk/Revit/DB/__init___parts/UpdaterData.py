@@ -1,10 +1,12 @@
-class UpdaterData(object,IDisposable):
- """ Service class that is passed to an Updater to prove access to update execution context """
- def Dispose(self):
-  """ Dispose(self: UpdaterData) """
-  pass
- def GetAddedElementIds(self):
-  """
+class UpdaterData(object, IDisposable):
+    """ Service class that is passed to an Updater to prove access to update execution context """
+
+    def Dispose(self):
+        """ Dispose(self: UpdaterData) """
+        pass
+
+    def GetAddedElementIds(self):
+        """
   GetAddedElementIds(self: UpdaterData) -> ICollection[ElementId]
 
   
@@ -31,9 +33,10 @@ class UpdaterData(object,IDisposable):
 
     Element::getChangeTypeElementAddition()
   """
-  pass
- def GetDeletedElementIds(self):
-  """
+        pass
+
+    def GetDeletedElementIds(self):
+        """
   GetDeletedElementIds(self: UpdaterData) -> ICollection[ElementId]
 
   
@@ -60,18 +63,20 @@ class UpdaterData(object,IDisposable):
 
     Element::getChangeTypeElementDeletion()
   """
-  pass
- def GetDocument(self):
-  """
+        pass
+
+    def GetDocument(self):
+        """
   GetDocument(self: UpdaterData) -> Document
 
   
 
    Returns document associated with this UpdaterData
   """
-  pass
- def GetModifiedElementIds(self):
-  """
+        pass
+
+    def GetModifiedElementIds(self):
+        """
   GetModifiedElementIds(self: UpdaterData) -> ICollection[ElementId]
 
   
@@ -126,9 +131,10 @@ class UpdaterData(object,IDisposable):
 
     getModifiedElementIds()
   """
-  pass
- def IsChangeTriggered(self,id,type):
-  """
+        pass
+
+    def IsChangeTriggered(self, id, type):
+        """
   IsChangeTriggered(self: UpdaterData,id: ElementId,type: ChangeType) -> bool
 
   
@@ -171,24 +177,32 @@ class UpdaterData(object,IDisposable):
 
    Returns: True if ChangeType happened to specified element
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: UpdaterData,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: UpdaterData,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -197,5 +211,3 @@ Get: IsValidObject(self: UpdaterData) -> bool
 
 
 """
-
-

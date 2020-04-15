@@ -1,12 +1,14 @@
 class File(object):
- """ Provides static methods for the creation,copying,deletion,moving,and opening of files,and aids in the creation of System.IO.FileStream objects. """
- @staticmethod
- def AppendAllLines(path,contents,encoding=None):
-  """ AppendAllLines(path: str,contents: IEnumerable[str],encoding: Encoding)AppendAllLines(path: str,contents: IEnumerable[str]) """
-  pass
- @staticmethod
- def AppendAllText(path,contents,encoding=None):
-  """
+    """ Provides static methods for the creation,copying,deletion,moving,and opening of files,and aids in the creation of System.IO.FileStream objects. """
+
+    @staticmethod
+    def AppendAllLines(path, contents, encoding=None):
+        """ AppendAllLines(path: str,contents: IEnumerable[str],encoding: Encoding)AppendAllLines(path: str,contents: IEnumerable[str]) """
+        pass
+
+    @staticmethod
+    def AppendAllText(path, contents, encoding=None):
+        """
   AppendAllText(path: str,contents: str,encoding: Encoding)
 
    Appends the specified string to the file,creating the file if it does not already exist.
@@ -35,10 +37,11 @@ class File(object):
 
    contents: The string to append to the file.
   """
-  pass
- @staticmethod
- def AppendText(path):
-  """
+        pass
+
+    @staticmethod
+    def AppendText(path):
+        """
   AppendText(path: str) -> StreamWriter
 
   
@@ -51,10 +54,11 @@ class File(object):
 
    Returns: A StreamWriter that appends UTF-8 encoded text to an existing file.
   """
-  pass
- @staticmethod
- def Copy(sourceFileName,destFileName,overwrite=None):
-  """
+        pass
+
+    @staticmethod
+    def Copy(sourceFileName, destFileName, overwrite=None):
+        """
   Copy(sourceFileName: str,destFileName: str,overwrite: bool)
 
    Copies an existing file to a new file. Overwriting a file of the same name is allowed.
@@ -77,10 +81,11 @@ class File(object):
 
    destFileName: The name of the destination file. This cannot be a directory or an existing file.
   """
-  pass
- @staticmethod
- def Create(path,bufferSize=None,options=None,fileSecurity=None):
-  """
+        pass
+
+    @staticmethod
+    def Create(path, bufferSize=None, options=None, fileSecurity=None):
+        """
   Create(path: str,bufferSize: int,options: FileOptions) -> FileStream
 
   
@@ -155,10 +160,11 @@ class File(object):
 
     file specified in path.
   """
-  pass
- @staticmethod
- def CreateText(path):
-  """
+        pass
+
+    @staticmethod
+    def CreateText(path):
+        """
   CreateText(path: str) -> StreamWriter
 
   
@@ -171,10 +177,11 @@ class File(object):
 
    Returns: A System.IO.StreamWriter that writes to the specified file using UTF-8 encoding.
   """
-  pass
- @staticmethod
- def Decrypt(path):
-  """
+        pass
+
+    @staticmethod
+    def Decrypt(path):
+        """
   Decrypt(path: str)
 
    Decrypts a file that was encrypted by the current account using the 
@@ -187,10 +194,11 @@ class File(object):
 
    path: A path that describes a file to decrypt.
   """
-  pass
- @staticmethod
- def Delete(path):
-  """
+        pass
+
+    @staticmethod
+    def Delete(path):
+        """
   Delete(path: str)
 
    Deletes the specified file.
@@ -199,10 +207,11 @@ class File(object):
 
    path: The name of the file to be deleted. Wildcard characters are not supported.
   """
-  pass
- @staticmethod
- def Encrypt(path):
-  """
+        pass
+
+    @staticmethod
+    def Encrypt(path):
+        """
   Encrypt(path: str)
 
    Encrypts a file so that only the account used to encrypt the file can decrypt it.
@@ -211,10 +220,11 @@ class File(object):
 
    path: A path that describes a file to encrypt.
   """
-  pass
- @staticmethod
- def Exists(path):
-  """
+        pass
+
+    @staticmethod
+    def Exists(path):
+        """
   Exists(path: str) -> bool
 
   
@@ -233,10 +243,11 @@ class File(object):
 
     file,no exception is thrown and the method returns false regardless of the existence of path.
   """
-  pass
- @staticmethod
- def GetAccessControl(path,includeSections=None):
-  """
+        pass
+
+    @staticmethod
+    def GetAccessControl(path, includeSections=None):
+        """
   GetAccessControl(path: str,includeSections: AccessControlSections) -> FileSecurity
 
   
@@ -289,10 +300,11 @@ class File(object):
 
     for the file described by the path parameter.
   """
-  pass
- @staticmethod
- def GetAttributes(path):
-  """
+        pass
+
+    @staticmethod
+    def GetAttributes(path):
+        """
   GetAttributes(path: str) -> FileAttributes
 
   
@@ -305,10 +317,11 @@ class File(object):
 
    Returns: The System.IO.FileAttributes of the file on the path.
   """
-  pass
- @staticmethod
- def GetCreationTime(path):
-  """
+        pass
+
+    @staticmethod
+    def GetCreationTime(path):
+        """
   GetCreationTime(path: str) -> DateTime
 
   
@@ -323,10 +336,11 @@ class File(object):
 
     directory. This value is expressed in local time.
   """
-  pass
- @staticmethod
- def GetCreationTimeUtc(path):
-  """
+        pass
+
+    @staticmethod
+    def GetCreationTimeUtc(path):
+        """
   GetCreationTimeUtc(path: str) -> DateTime
 
   
@@ -345,10 +359,11 @@ class File(object):
 
     directory. This value is expressed in UTC time.
   """
-  pass
- @staticmethod
- def GetLastAccessTime(path):
-  """
+        pass
+
+    @staticmethod
+    def GetLastAccessTime(path):
+        """
   GetLastAccessTime(path: str) -> DateTime
 
   
@@ -363,10 +378,11 @@ class File(object):
 
     last accessed. This value is expressed in local time.
   """
-  pass
- @staticmethod
- def GetLastAccessTimeUtc(path):
-  """
+        pass
+
+    @staticmethod
+    def GetLastAccessTimeUtc(path):
+        """
   GetLastAccessTimeUtc(path: str) -> DateTime
 
   
@@ -385,10 +401,11 @@ class File(object):
 
     last accessed. This value is expressed in UTC time.
   """
-  pass
- @staticmethod
- def GetLastWriteTime(path):
-  """
+        pass
+
+    @staticmethod
+    def GetLastWriteTime(path):
+        """
   GetLastWriteTime(path: str) -> DateTime
 
   
@@ -403,10 +420,11 @@ class File(object):
 
     last written to. This value is expressed in local time.
   """
-  pass
- @staticmethod
- def GetLastWriteTimeUtc(path):
-  """
+        pass
+
+    @staticmethod
+    def GetLastWriteTimeUtc(path):
+        """
   GetLastWriteTimeUtc(path: str) -> DateTime
 
   
@@ -425,10 +443,11 @@ class File(object):
 
     last written to. This value is expressed in UTC time.
   """
-  pass
- @staticmethod
- def Move(sourceFileName,destFileName):
-  """
+        pass
+
+    @staticmethod
+    def Move(sourceFileName, destFileName):
+        """
   Move(sourceFileName: str,destFileName: str)
 
    Moves a specified file to a new location,providing the option to specify a new file name.
@@ -439,10 +458,11 @@ class File(object):
 
    destFileName: The new path for the file.
   """
-  pass
- @staticmethod
- def Open(path,mode,access=None,share=None):
-  """
+        pass
+
+    @staticmethod
+    def Open(path, mode, access=None, share=None):
+        """
   Open(path: str,mode: FileMode,access: FileAccess,share: FileShare) -> FileStream
 
   
@@ -517,10 +537,11 @@ class File(object):
 
     shared.
   """
-  pass
- @staticmethod
- def OpenRead(path):
-  """
+        pass
+
+    @staticmethod
+    def OpenRead(path):
+        """
   OpenRead(path: str) -> FileStream
 
   
@@ -533,10 +554,11 @@ class File(object):
 
    Returns: A read-only System.IO.FileStream on the specified path.
   """
-  pass
- @staticmethod
- def OpenText(path):
-  """
+        pass
+
+    @staticmethod
+    def OpenText(path):
+        """
   OpenText(path: str) -> StreamReader
 
   
@@ -549,10 +571,11 @@ class File(object):
 
    Returns: A System.IO.StreamReader on the specified path.
   """
-  pass
- @staticmethod
- def OpenWrite(path):
-  """
+        pass
+
+    @staticmethod
+    def OpenWrite(path):
+        """
   OpenWrite(path: str) -> FileStream
 
   
@@ -567,10 +590,11 @@ class File(object):
 
     access.
   """
-  pass
- @staticmethod
- def ReadAllBytes(path):
-  """
+        pass
+
+    @staticmethod
+    def ReadAllBytes(path):
+        """
   ReadAllBytes(path: str) -> Array[Byte]
 
   
@@ -583,10 +607,11 @@ class File(object):
 
    Returns: A byte array containing the contents of the file.
   """
-  pass
- @staticmethod
- def ReadAllLines(path,encoding=None):
-  """
+        pass
+
+    @staticmethod
+    def ReadAllLines(path, encoding=None):
+        """
   ReadAllLines(path: str,encoding: Encoding) -> Array[str]
 
   
@@ -613,10 +638,11 @@ class File(object):
 
    Returns: A string array containing all lines of the file.
   """
-  pass
- @staticmethod
- def ReadAllText(path,encoding=None):
-  """
+        pass
+
+    @staticmethod
+    def ReadAllText(path, encoding=None):
+        """
   ReadAllText(path: str,encoding: Encoding) -> str
 
   
@@ -643,10 +669,11 @@ class File(object):
 
    Returns: A string containing all lines of the file.
   """
-  pass
- @staticmethod
- def ReadLines(path,encoding=None):
-  """
+        pass
+
+    @staticmethod
+    def ReadLines(path, encoding=None):
+        """
   ReadLines(path: str,encoding: Encoding) -> IEnumerable[str]
 
   
@@ -673,10 +700,16 @@ class File(object):
 
    Returns: All the lines of the file,or the lines that are the result of a query.
   """
-  pass
- @staticmethod
- def Replace(sourceFileName,destinationFileName,destinationBackupFileName,ignoreMetadataErrors=None):
-  """
+        pass
+
+    @staticmethod
+    def Replace(
+        sourceFileName,
+        destinationFileName,
+        destinationBackupFileName,
+        ignoreMetadataErrors=None,
+    ):
+        """
   Replace(sourceFileName: str,destinationFileName: str,destinationBackupFileName: str,ignoreMetadataErrors: bool)
 
    Replaces the contents of a specified file with the contents of another file,deleting the 
@@ -715,10 +748,11 @@ class File(object):
 
    destinationBackupFileName: The name of the backup file.
   """
-  pass
- @staticmethod
- def SetAccessControl(path,fileSecurity):
-  """
+        pass
+
+    @staticmethod
+    def SetAccessControl(path, fileSecurity):
+        """
   SetAccessControl(path: str,fileSecurity: FileSecurity)
 
    Applies access control list (ACL) entries described by a 
@@ -735,10 +769,11 @@ class File(object):
 
     file described by the path parameter.
   """
-  pass
- @staticmethod
- def SetAttributes(path,fileAttributes):
-  """
+        pass
+
+    @staticmethod
+    def SetAttributes(path, fileAttributes):
+        """
   SetAttributes(path: str,fileAttributes: FileAttributes)
 
    Sets the specified System.IO.FileAttributes of the file on the specified path.
@@ -749,10 +784,11 @@ class File(object):
 
    fileAttributes: A bitwise combination of the enumeration values.
   """
-  pass
- @staticmethod
- def SetCreationTime(path,creationTime):
-  """
+        pass
+
+    @staticmethod
+    def SetCreationTime(path, creationTime):
+        """
   SetCreationTime(path: str,creationTime: DateTime)
 
    Sets the date and time the file was created.
@@ -765,10 +801,11 @@ class File(object):
 
     is expressed in local time.
   """
-  pass
- @staticmethod
- def SetCreationTimeUtc(path,creationTimeUtc):
-  """
+        pass
+
+    @staticmethod
+    def SetCreationTimeUtc(path, creationTimeUtc):
+        """
   SetCreationTimeUtc(path: str,creationTimeUtc: DateTime)
 
    Sets the date and time,in coordinated universal time (UTC),that the file was created.
@@ -781,10 +818,11 @@ class File(object):
 
     is expressed in UTC time.
   """
-  pass
- @staticmethod
- def SetLastAccessTime(path,lastAccessTime):
-  """
+        pass
+
+    @staticmethod
+    def SetLastAccessTime(path, lastAccessTime):
+        """
   SetLastAccessTime(path: str,lastAccessTime: DateTime)
 
    Sets the date and time the specified file was last accessed.
@@ -797,10 +835,11 @@ class File(object):
 
     value is expressed in local time.
   """
-  pass
- @staticmethod
- def SetLastAccessTimeUtc(path,lastAccessTimeUtc):
-  """
+        pass
+
+    @staticmethod
+    def SetLastAccessTimeUtc(path, lastAccessTimeUtc):
+        """
   SetLastAccessTimeUtc(path: str,lastAccessTimeUtc: DateTime)
 
    Sets the date and time,in coordinated universal time (UTC),that the specified file was last 
@@ -817,10 +856,11 @@ class File(object):
 
     value is expressed in UTC time.
   """
-  pass
- @staticmethod
- def SetLastWriteTime(path,lastWriteTime):
-  """
+        pass
+
+    @staticmethod
+    def SetLastWriteTime(path, lastWriteTime):
+        """
   SetLastWriteTime(path: str,lastWriteTime: DateTime)
 
    Sets the date and time that the specified file was last written to.
@@ -833,10 +873,11 @@ class File(object):
 
     value is expressed in local time.
   """
-  pass
- @staticmethod
- def SetLastWriteTimeUtc(path,lastWriteTimeUtc):
-  """
+        pass
+
+    @staticmethod
+    def SetLastWriteTimeUtc(path, lastWriteTimeUtc):
+        """
   SetLastWriteTimeUtc(path: str,lastWriteTimeUtc: DateTime)
 
    Sets the date and time,in coordinated universal time (UTC),that the specified file was last 
@@ -853,10 +894,11 @@ class File(object):
 
     value is expressed in UTC time.
   """
-  pass
- @staticmethod
- def WriteAllBytes(path,bytes):
-  """
+        pass
+
+    @staticmethod
+    def WriteAllBytes(path, bytes):
+        """
   WriteAllBytes(path: str,bytes: Array[Byte])
 
    Creates a new file,writes the specified byte array to the file,and then closes the file. If 
@@ -871,10 +913,11 @@ class File(object):
 
    bytes: The bytes to write to the file.
   """
-  pass
- @staticmethod
- def WriteAllLines(path,contents,encoding=None):
-  """
+        pass
+
+    @staticmethod
+    def WriteAllLines(path, contents, encoding=None):
+        """
   WriteAllLines(path: str,contents: IEnumerable[str])WriteAllLines(path: str,contents: IEnumerable[str],encoding: Encoding)WriteAllLines(path: str,contents: Array[str])
 
    Creates a new file,write the specified string array to the file,and then closes the file.
@@ -903,10 +946,11 @@ class File(object):
 
     array.
   """
-  pass
- @staticmethod
- def WriteAllText(path,contents,encoding=None):
-  """
+        pass
+
+    @staticmethod
+    def WriteAllText(path, contents, encoding=None):
+        """
   WriteAllText(path: str,contents: str,encoding: Encoding)
 
    Creates a new file,writes the specified string to the file using the specified encoding,and 
@@ -937,46 +981,46 @@ class File(object):
 
    contents: The string to write to the file.
   """
-  pass
- __all__=[
-  'AppendAllLines',
-  'AppendAllText',
-  'AppendText',
-  'Copy',
-  'Create',
-  'CreateText',
-  'Decrypt',
-  'Delete',
-  'Encrypt',
-  'Exists',
-  'GetAccessControl',
-  'GetAttributes',
-  'GetCreationTime',
-  'GetCreationTimeUtc',
-  'GetLastAccessTime',
-  'GetLastAccessTimeUtc',
-  'GetLastWriteTime',
-  'GetLastWriteTimeUtc',
-  'Move',
-  'Open',
-  'OpenRead',
-  'OpenText',
-  'OpenWrite',
-  'ReadAllBytes',
-  'ReadAllLines',
-  'ReadAllText',
-  'ReadLines',
-  'Replace',
-  'SetAccessControl',
-  'SetAttributes',
-  'SetCreationTime',
-  'SetCreationTimeUtc',
-  'SetLastAccessTime',
-  'SetLastAccessTimeUtc',
-  'SetLastWriteTime',
-  'SetLastWriteTimeUtc',
-  'WriteAllBytes',
-  'WriteAllLines',
-  'WriteAllText',
- ]
+        pass
 
+    __all__ = [
+        "AppendAllLines",
+        "AppendAllText",
+        "AppendText",
+        "Copy",
+        "Create",
+        "CreateText",
+        "Decrypt",
+        "Delete",
+        "Encrypt",
+        "Exists",
+        "GetAccessControl",
+        "GetAttributes",
+        "GetCreationTime",
+        "GetCreationTimeUtc",
+        "GetLastAccessTime",
+        "GetLastAccessTimeUtc",
+        "GetLastWriteTime",
+        "GetLastWriteTimeUtc",
+        "Move",
+        "Open",
+        "OpenRead",
+        "OpenText",
+        "OpenWrite",
+        "ReadAllBytes",
+        "ReadAllLines",
+        "ReadAllText",
+        "ReadLines",
+        "Replace",
+        "SetAccessControl",
+        "SetAttributes",
+        "SetCreationTime",
+        "SetCreationTimeUtc",
+        "SetLastAccessTime",
+        "SetLastAccessTimeUtc",
+        "SetLastWriteTime",
+        "SetLastWriteTimeUtc",
+        "WriteAllBytes",
+        "WriteAllLines",
+        "WriteAllText",
+    ]

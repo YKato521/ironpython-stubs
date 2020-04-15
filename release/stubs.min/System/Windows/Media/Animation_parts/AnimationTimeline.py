@@ -1,7 +1,8 @@
-class AnimationTimeline(Timeline,ISealable,IAnimatable,IResource):
- """ Defines a segment of time over which output values are produced. These values are used to animate a target property. """
- def AllocateClock(self,*args):
-  """
+class AnimationTimeline(Timeline, ISealable, IAnimatable, IResource):
+    """ Defines a segment of time over which output values are produced. These values are used to animate a target property. """
+
+    def AllocateClock(self, *args):
+        """
   AllocateClock(self: AnimationTimeline) -> Clock
 
   
@@ -14,9 +15,10 @@ class AnimationTimeline(Timeline,ISealable,IAnimatable,IResource):
 
    Returns: A clock for this System.Windows.Media.Animation.AnimationTimeline.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: AnimationTimeline) -> AnimationTimeline
 
   
@@ -35,9 +37,10 @@ class AnimationTimeline(Timeline,ISealable,IAnimatable,IResource):
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCore(self,*args):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """
   CloneCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a clone (deep copy) of the specified System.Windows.Freezable using base 
@@ -50,9 +53,10 @@ class AnimationTimeline(Timeline,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The object to clone.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """
   CloneCurrentValueCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a modifiable clone (deep copy) of the specified System.Windows.Freezable 
@@ -65,9 +69,10 @@ class AnimationTimeline(Timeline,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Freezable to be cloned.
   """
-  pass
- def CreateClock(self,hasControllableRoot=None):
-  """
+        pass
+
+    def CreateClock(self, hasControllableRoot=None):
+        """
   CreateClock(self: AnimationTimeline) -> AnimationClock
 
   
@@ -80,9 +85,10 @@ class AnimationTimeline(Timeline,ISealable,IAnimatable,IResource):
 
    Returns: A new clock,created from this System.Windows.Media.Animation.AnimationTimeline.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -91,9 +97,10 @@ class AnimationTimeline(Timeline,ISealable,IAnimatable,IResource):
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """
   CreateInstanceCore(self: Freezable) -> Freezable
 
   
@@ -106,9 +113,10 @@ class AnimationTimeline(Timeline,ISealable,IAnimatable,IResource):
 
    Returns: The new instance.
   """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: Timeline,isChecking: bool) -> bool
 
   
@@ -131,9 +139,10 @@ class AnimationTimeline(Timeline,ISealable,IAnimatable,IResource):
 
     having begun to change the frozen status of this object.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """
   GetAsFrozenCore(self: Timeline,sourceFreezable: Freezable)
 
    Makes this instance a clone of the specified System.Windows.Media.Animation.Timeline object.
@@ -142,9 +151,12 @@ class AnimationTimeline(Timeline,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Media.Animation.Timeline instance to clone.
   """
-  pass
- def GetCurrentValue(self,defaultOriginValue,defaultDestinationValue,animationClock):
-  """
+        pass
+
+    def GetCurrentValue(
+        self, defaultOriginValue, defaultDestinationValue, animationClock
+    ):
+        """
   GetCurrentValue(self: AnimationTimeline,defaultOriginValue: object,defaultDestinationValue: object,animationClock: AnimationClock) -> object
 
   
@@ -179,9 +191,10 @@ class AnimationTimeline(Timeline,ISealable,IAnimatable,IResource):
 
    Returns: The value this animation believes should be the current value for the property.
   """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """
   GetCurrentValueAsFrozenCore(self: Timeline,sourceFreezable: Freezable)
 
    Makes this instance a frozen clone of the specified System.Windows.Media.Animation.Timeline. 
@@ -194,9 +207,10 @@ class AnimationTimeline(Timeline,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Media.Animation.Timeline to copy and freeze.
   """
-  pass
- def GetNaturalDuration(self,*args):
-  """
+        pass
+
+    def GetNaturalDuration(self, *args):
+        """
   GetNaturalDuration(self: Timeline,clock: Clock) -> Duration
 
   
@@ -215,9 +229,10 @@ class AnimationTimeline(Timeline,ISealable,IAnimatable,IResource):
 
     System.Windows.Duration.Automatic if the natural duration is unknown.
   """
-  pass
- def GetNaturalDurationCore(self,*args):
-  """
+        pass
+
+    def GetNaturalDurationCore(self, *args):
+        """
   GetNaturalDurationCore(self: AnimationTimeline,clock: Clock) -> Duration
 
   
@@ -236,16 +251,18 @@ class AnimationTimeline(Timeline,ISealable,IAnimatable,IResource):
 
     second.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: Freezable)
 
    Called when the current System.Windows.Freezable object is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -276,9 +293,10 @@ class AnimationTimeline(Timeline,ISealable,IAnimatable,IResource):
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -295,9 +313,10 @@ class AnimationTimeline(Timeline,ISealable,IAnimatable,IResource):
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -306,9 +325,10 @@ class AnimationTimeline(Timeline,ISealable,IAnimatable,IResource):
 
     members that are not dependency properties.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -325,9 +345,10 @@ class AnimationTimeline(Timeline,ISealable,IAnimatable,IResource):
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -338,9 +359,10 @@ class AnimationTimeline(Timeline,ISealable,IAnimatable,IResource):
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -349,12 +371,16 @@ class AnimationTimeline(Timeline,ISealable,IAnimatable,IResource):
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- IsDestinationDefault=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether this animation uses the defaultDestinationValue parameter of the System.Windows.Media.Animation.AnimationTimeline.GetCurrentValue(System.Object,System.Object,System.Windows.Media.Animation.AnimationClock) method as its destination value.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    IsDestinationDefault = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether this animation uses the defaultDestinationValue parameter of the System.Windows.Media.Animation.AnimationTimeline.GetCurrentValue(System.Object,System.Object,System.Windows.Media.Animation.AnimationClock) method as its destination value.
 
 
 
@@ -364,8 +390,10 @@ Get: IsDestinationDefault(self: AnimationTimeline) -> bool
 
 """
 
- TargetPropertyType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets the System.Type of property that can be animated.
+    TargetPropertyType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """When overridden in a derived class,gets the System.Type of property that can be animated.
 
 
 
@@ -375,7 +403,5 @@ Get: TargetPropertyType(self: AnimationTimeline) -> Type
 
 """
 
-
- IsAdditiveProperty=None
- IsCumulativeProperty=None
-
+    IsAdditiveProperty = None
+    IsCumulativeProperty = None

@@ -1,13 +1,14 @@
 class EnumConverter(TypeConverter):
- """
+    """
  Provides a type converter to convert System.Enum objects to and from various other representations.
 
  
 
  EnumConverter(type: Type)
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: EnumConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -26,9 +27,10 @@ class EnumConverter(TypeConverter):
 
    Returns: true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: EnumConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -47,9 +49,10 @@ class EnumConverter(TypeConverter):
 
    Returns: true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: EnumConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -66,9 +69,10 @@ class EnumConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: EnumConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -87,9 +91,10 @@ class EnumConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def GetStandardValues(self,context=None):
-  """
+        pass
+
+    def GetStandardValues(self, context=None):
+        """
   GetStandardValues(self: EnumConverter,context: ITypeDescriptorContext) -> StandardValuesCollection
 
   
@@ -104,9 +109,10 @@ class EnumConverter(TypeConverter):
 
     valid values,or null if the data type does not support a standard set of values.
   """
-  pass
- def GetStandardValuesExclusive(self,context=None):
-  """
+        pass
+
+    def GetStandardValuesExclusive(self, context=None):
+        """
   GetStandardValuesExclusive(self: EnumConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -129,9 +135,10 @@ class EnumConverter(TypeConverter):
 
     false if other values are possible.
   """
-  pass
- def GetStandardValuesSupported(self,context=None):
-  """
+        pass
+
+    def GetStandardValuesSupported(self, context=None):
+        """
   GetStandardValuesSupported(self: EnumConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -150,9 +157,10 @@ class EnumConverter(TypeConverter):
 
     common set of values the object supports. This method never returns false.
   """
-  pass
- def IsValid(self,*__args):
-  """
+        pass
+
+    def IsValid(self, *__args):
+        """
   IsValid(self: EnumConverter,context: ITypeDescriptorContext,value: object) -> bool
 
   
@@ -167,30 +175,30 @@ class EnumConverter(TypeConverter):
 
    Returns: true if the specified value is valid for this object; otherwise,false.
   """
-  pass
- @staticmethod
- def __new__(self,type):
-  """ __new__(cls: type,type: Type) """
-  pass
- Comparer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an System.Collections.IComparer that can be used to sort the values of the enumeration.
+        pass
+
+    @staticmethod
+    def __new__(self, type):
+        """ __new__(cls: type,type: Type) """
+        pass
+
+    Comparer = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an System.Collections.IComparer that can be used to sort the values of the enumeration.
 
 
 
 """
 
- EnumType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies the type of the enumerator this converter is associated with.
+    EnumType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Specifies the type of the enumerator this converter is associated with.
 
 
 
 """
 
- Values=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a System.ComponentModel.TypeConverter.StandardValuesCollection that specifies the possible values for the enumeration.
+    Values = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a System.ComponentModel.TypeConverter.StandardValuesCollection that specifies the possible values for the enumeration.
 
 
 
 """
-
-

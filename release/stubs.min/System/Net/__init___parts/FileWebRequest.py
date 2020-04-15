@@ -1,14 +1,16 @@
-class FileWebRequest(WebRequest,ISerializable):
- """ Provides a file system implementation of the System.Net.WebRequest class. """
- def Abort(self):
-  """
+class FileWebRequest(WebRequest, ISerializable):
+    """ Provides a file system implementation of the System.Net.WebRequest class. """
+
+    def Abort(self):
+        """
   Abort(self: FileWebRequest)
 
    Cancels a request to an Internet resource.
   """
-  pass
- def BeginGetRequestStream(self,callback,state):
-  """
+        pass
+
+    def BeginGetRequestStream(self, callback, state):
+        """
   BeginGetRequestStream(self: FileWebRequest,callback: AsyncCallback,state: object) -> IAsyncResult
 
   
@@ -23,9 +25,10 @@ class FileWebRequest(WebRequest,ISerializable):
 
    Returns: An System.IAsyncResult that references the asynchronous request.
   """
-  pass
- def BeginGetResponse(self,callback,state):
-  """
+        pass
+
+    def BeginGetResponse(self, callback, state):
+        """
   BeginGetResponse(self: FileWebRequest,callback: AsyncCallback,state: object) -> IAsyncResult
 
   
@@ -40,9 +43,10 @@ class FileWebRequest(WebRequest,ISerializable):
 
    Returns: An System.IAsyncResult that references the asynchronous request.
   """
-  pass
- def EndGetRequestStream(self,asyncResult):
-  """
+        pass
+
+    def EndGetRequestStream(self, asyncResult):
+        """
   EndGetRequestStream(self: FileWebRequest,asyncResult: IAsyncResult) -> Stream
 
   
@@ -59,9 +63,10 @@ class FileWebRequest(WebRequest,ISerializable):
 
    Returns: A System.IO.Stream object that the application uses to write data.
   """
-  pass
- def EndGetResponse(self,asyncResult):
-  """
+        pass
+
+    def EndGetResponse(self, asyncResult):
+        """
   EndGetResponse(self: FileWebRequest,asyncResult: IAsyncResult) -> WebResponse
 
   
@@ -74,9 +79,10 @@ class FileWebRequest(WebRequest,ISerializable):
 
    Returns: A System.Net.WebResponse that contains the response from the file system resource.
   """
-  pass
- def GetObjectData(self,*args):
-  """
+        pass
+
+    def GetObjectData(self, *args):
+        """
   GetObjectData(self: FileWebRequest,serializationInfo: SerializationInfo,streamingContext: StreamingContext)
 
    Populates a System.Runtime.Serialization.SerializationInfo with the data needed to serialize the 
@@ -93,9 +99,10 @@ class FileWebRequest(WebRequest,ISerializable):
 
     serialization.
   """
-  pass
- def GetRequestStream(self):
-  """
+        pass
+
+    def GetRequestStream(self):
+        """
   GetRequestStream(self: FileWebRequest) -> Stream
 
   
@@ -104,9 +111,10 @@ class FileWebRequest(WebRequest,ISerializable):
 
    Returns: A System.IO.Stream for writing data to the file system resource.
   """
-  pass
- def GetResponse(self):
-  """
+        pass
+
+    def GetResponse(self):
+        """
   GetResponse(self: FileWebRequest) -> WebResponse
 
   
@@ -115,9 +123,10 @@ class FileWebRequest(WebRequest,ISerializable):
 
    Returns: A System.Net.WebResponse that contains the response from the file system resource.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -148,18 +157,24 @@ class FileWebRequest(WebRequest,ISerializable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """ __new__(cls: type,serializationInfo: SerializationInfo,streamingContext: StreamingContext) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- ConnectionGroupName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the connection group for the request. This property is reserved for future use.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """ __new__(cls: type,serializationInfo: SerializationInfo,streamingContext: StreamingContext) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    ConnectionGroupName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the connection group for the request. This property is reserved for future use.
 
 
 
@@ -171,8 +186,10 @@ Set: ConnectionGroupName(self: FileWebRequest)=value
 
 """
 
- ContentLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the content length of the data being sent.
+    ContentLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the content length of the data being sent.
 
 
 
@@ -184,8 +201,10 @@ Set: ContentLength(self: FileWebRequest)=value
 
 """
 
- ContentType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the content type of the data being sent. This property is reserved for future use.
+    ContentType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the content type of the data being sent. This property is reserved for future use.
 
 
 
@@ -197,8 +216,10 @@ Set: ContentType(self: FileWebRequest)=value
 
 """
 
- Credentials=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the credentials that are associated with this request. This property is reserved for future use.
+    Credentials = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the credentials that are associated with this request. This property is reserved for future use.
 
 
 
@@ -210,8 +231,8 @@ Set: Credentials(self: FileWebRequest)=value
 
 """
 
- Headers=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of the name/value pairs that are associated with the request. This property is reserved for future use.
+    Headers = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a collection of the name/value pairs that are associated with the request. This property is reserved for future use.
 
 
 
@@ -221,8 +242,8 @@ Get: Headers(self: FileWebRequest) -> WebHeaderCollection
 
 """
 
- Method=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the protocol method used for the request. This property is reserved for future use.
+    Method = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the protocol method used for the request. This property is reserved for future use.
 
 
 
@@ -234,8 +255,10 @@ Set: Method(self: FileWebRequest)=value
 
 """
 
- PreAuthenticate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether to preauthenticate a request. This property is reserved for future use.
+    PreAuthenticate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether to preauthenticate a request. This property is reserved for future use.
 
 
 
@@ -247,8 +270,8 @@ Set: PreAuthenticate(self: FileWebRequest)=value
 
 """
 
- Proxy=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the network proxy to use for this request. This property is reserved for future use.
+    Proxy = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the network proxy to use for this request. This property is reserved for future use.
 
 
 
@@ -260,8 +283,10 @@ Set: Proxy(self: FileWebRequest)=value
 
 """
 
- RequestUri=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the Uniform Resource Identifier (URI) of the request.
+    RequestUri = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the Uniform Resource Identifier (URI) of the request.
 
 
 
@@ -271,8 +296,8 @@ Get: RequestUri(self: FileWebRequest) -> Uri
 
 """
 
- Timeout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the length of time until the request times out.
+    Timeout = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the length of time until the request times out.
 
 
 
@@ -284,8 +309,10 @@ Set: Timeout(self: FileWebRequest)=value
 
 """
 
- UseDefaultCredentials=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Always throws a System.NotSupportedException.
+    UseDefaultCredentials = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Always throws a System.NotSupportedException.
 
 
 
@@ -296,5 +323,3 @@ Get: UseDefaultCredentials(self: FileWebRequest) -> bool
 Set: UseDefaultCredentials(self: FileWebRequest)=value
 
 """
-
-

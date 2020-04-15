@@ -1,7 +1,8 @@
 class UCOMIMoniker:
- """ Use System.Runtime.InteropServices.ComTypes.IMoniker instead. """
- def BindToObject(self,pbc,pmkToLeft,riidResult,ppvResult):
-  """
+    """ Use System.Runtime.InteropServices.ComTypes.IMoniker instead. """
+
+    def BindToObject(self, pbc, pmkToLeft, riidResult, ppvResult):
+        """
   BindToObject(self: UCOMIMoniker,pbc: UCOMIBindCtx,pmkToLeft: UCOMIMoniker,riidResult: Guid) -> (Guid,object)
 
   
@@ -22,9 +23,10 @@ class UCOMIMoniker:
 
     the object that the moniker identifies.
   """
-  pass
- def BindToStorage(self,pbc,pmkToLeft,riid,ppvObj):
-  """
+        pass
+
+    def BindToStorage(self, pbc, pmkToLeft, riid, ppvObj):
+        """
   BindToStorage(self: UCOMIMoniker,pbc: UCOMIBindCtx,pmkToLeft: UCOMIMoniker,riid: Guid) -> (Guid,object)
 
   
@@ -47,9 +49,10 @@ class UCOMIMoniker:
 
    riid: The interface identifier (IID) of the storage interface requested.
   """
-  pass
- def CommonPrefixWith(self,pmkOther,ppmkPrefix):
-  """
+        pass
+
+    def CommonPrefixWith(self, pmkOther, ppmkPrefix):
+        """
   CommonPrefixWith(self: UCOMIMoniker,pmkOther: UCOMIMoniker) -> UCOMIMoniker
 
   
@@ -62,9 +65,10 @@ class UCOMIMoniker:
 
     prefix.
   """
-  pass
- def ComposeWith(self,pmkRight,fOnlyIfNotGeneric,ppmkComposite):
-  """
+        pass
+
+    def ComposeWith(self, pmkRight, fOnlyIfNotGeneric, ppmkComposite):
+        """
   ComposeWith(self: UCOMIMoniker,pmkRight: UCOMIMoniker,fOnlyIfNotGeneric: bool) -> UCOMIMoniker
 
   
@@ -81,9 +85,10 @@ class UCOMIMoniker:
 
     generic composite. If false,the method can create a generic composite if necessary.
   """
-  pass
- def Enum(self,fForward,ppenumMoniker):
-  """
+        pass
+
+    def Enum(self, fForward, ppenumMoniker):
+        """
   Enum(self: UCOMIMoniker,fForward: bool) -> UCOMIEnumMoniker
 
   
@@ -94,18 +99,20 @@ class UCOMIMoniker:
 
    fForward: If true,enumerates the monikers from left to right. If false,enumerates from right to left.
   """
-  pass
- def GetClassID(self,pClassID):
-  """
+        pass
+
+    def GetClassID(self, pClassID):
+        """
   GetClassID(self: UCOMIMoniker) -> Guid
 
   
 
    Retrieves the class identifier (CLSID) of an object.
   """
-  pass
- def GetDisplayName(self,pbc,pmkToLeft,ppszDisplayName):
-  """
+        pass
+
+    def GetDisplayName(self, pbc, pmkToLeft, ppszDisplayName):
+        """
   GetDisplayName(self: UCOMIMoniker,pbc: UCOMIBindCtx,pmkToLeft: UCOMIMoniker) -> str
 
   
@@ -120,18 +127,20 @@ class UCOMIMoniker:
 
     moniker.
   """
-  pass
- def GetSizeMax(self,pcbSize):
-  """
+        pass
+
+    def GetSizeMax(self, pcbSize):
+        """
   GetSizeMax(self: UCOMIMoniker) -> Int64
 
   
 
    Returns the size in bytes of the stream needed to save the object.
   """
-  pass
- def GetTimeOfLastChange(self,pbc,pmkToLeft,pFileTime):
-  """
+        pass
+
+    def GetTimeOfLastChange(self, pbc, pmkToLeft, pFileTime):
+        """
   GetTimeOfLastChange(self: UCOMIMoniker,pbc: UCOMIBindCtx,pmkToLeft: UCOMIMoniker) -> FILETIME
 
   
@@ -146,18 +155,20 @@ class UCOMIMoniker:
 
     moniker.
   """
-  pass
- def Hash(self,pdwHash):
-  """
+        pass
+
+    def Hash(self, pdwHash):
+        """
   Hash(self: UCOMIMoniker) -> int
 
   
 
    Calculates a 32-bit integer using the internal state of the moniker.
   """
-  pass
- def Inverse(self,ppmk):
-  """
+        pass
+
+    def Inverse(self, ppmk):
+        """
   Inverse(self: UCOMIMoniker) -> UCOMIMoniker
 
   
@@ -166,9 +177,10 @@ class UCOMIMoniker:
 
     composes to nothing.
   """
-  pass
- def IsDirty(self):
-  """
+        pass
+
+    def IsDirty(self):
+        """
   IsDirty(self: UCOMIMoniker) -> int
 
   
@@ -177,9 +189,10 @@ class UCOMIMoniker:
 
    Returns: An S_OKHRESULT value if the object has changed; otherwise,an S_FALSEHRESULT value.
   """
-  pass
- def IsEqual(self,pmkOtherMoniker):
-  """
+        pass
+
+    def IsEqual(self, pmkOtherMoniker):
+        """
   IsEqual(self: UCOMIMoniker,pmkOtherMoniker: UCOMIMoniker)
 
    Compares this moniker with a specified moniker and indicates whether they are identical.
@@ -188,9 +201,10 @@ class UCOMIMoniker:
 
    pmkOtherMoniker: A reference to the moniker to be used for comparison.
   """
-  pass
- def IsRunning(self,pbc,pmkToLeft,pmkNewlyRunning):
-  """
+        pass
+
+    def IsRunning(self, pbc, pmkToLeft, pmkNewlyRunning):
+        """
   IsRunning(self: UCOMIMoniker,pbc: UCOMIBindCtx,pmkToLeft: UCOMIMoniker,pmkNewlyRunning: UCOMIMoniker)
 
    Determines whether the object that is identified by this moniker is currently loaded and running.
@@ -203,18 +217,20 @@ class UCOMIMoniker:
 
    pmkNewlyRunning: A reference to the moniker most recently added to the Running Object Table.
   """
-  pass
- def IsSystemMoniker(self,pdwMksys):
-  """
+        pass
+
+    def IsSystemMoniker(self, pdwMksys):
+        """
   IsSystemMoniker(self: UCOMIMoniker) -> int
 
   
 
    Indicates whether this moniker is of one of the system-supplied moniker classes.
   """
-  pass
- def Load(self,pStm):
-  """
+        pass
+
+    def Load(self, pStm):
+        """
   Load(self: UCOMIMoniker,pStm: UCOMIStream)
 
    Initializes an object from the stream where it was previously saved.
@@ -223,9 +239,10 @@ class UCOMIMoniker:
 
    pStm: Stream from which the object is loaded.
   """
-  pass
- def ParseDisplayName(self,pbc,pmkToLeft,pszDisplayName,pchEaten,ppmkOut):
-  """
+        pass
+
+    def ParseDisplayName(self, pbc, pmkToLeft, pszDisplayName, pchEaten, ppmkOut):
+        """
   ParseDisplayName(self: UCOMIMoniker,pbc: UCOMIBindCtx,pmkToLeft: UCOMIMoniker,pszDisplayName: str) -> (int,UCOMIMoniker)
 
   
@@ -244,9 +261,10 @@ class UCOMIMoniker:
 
    pszDisplayName: A reference to the string containing the remaining display name to parse.
   """
-  pass
- def Reduce(self,pbc,dwReduceHowFar,ppmkToLeft,ppmkReduced):
-  """
+        pass
+
+    def Reduce(self, pbc, dwReduceHowFar, ppmkToLeft, ppmkReduced):
+        """
   Reduce(self: UCOMIMoniker,pbc: UCOMIBindCtx,dwReduceHowFar: int,ppmkToLeft: UCOMIMoniker) -> (UCOMIMoniker,UCOMIMoniker)
 
   
@@ -265,9 +283,10 @@ class UCOMIMoniker:
 
    ppmkToLeft: A reference to the moniker to the left of this moniker.
   """
-  pass
- def RelativePathTo(self,pmkOther,ppmkRelPath):
-  """
+        pass
+
+    def RelativePathTo(self, pmkOther, ppmkRelPath):
+        """
   RelativePathTo(self: UCOMIMoniker,pmkOther: UCOMIMoniker) -> UCOMIMoniker
 
   
@@ -282,9 +301,10 @@ class UCOMIMoniker:
 
    pmkOther: A reference to the moniker to which a relative path should be taken.
   """
-  pass
- def Save(self,pStm,fClearDirty):
-  """
+        pass
+
+    def Save(self, pStm, fClearDirty):
+        """
   Save(self: UCOMIMoniker,pStm: UCOMIStream,fClearDirty: bool)
 
    Saves an object to the specified stream.
@@ -295,7 +315,8 @@ class UCOMIMoniker:
 
    fClearDirty: Indicates whether to clear the modified flag after the save is complete.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

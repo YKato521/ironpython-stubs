@@ -1,12 +1,13 @@
-class RuledSurface(Surface,IDisposable):
- """
+class RuledSurface(Surface, IDisposable):
+    """
  A ruled surface is created by sweeping a line between two profile curves or between a curve and a point (a point and a curve).
 
     Input curve(s) must be bounded or have natural bounds.
  """
- @staticmethod
- def Create(*__args):
-  """
+
+    @staticmethod
+    def Create(*__args):
+        """
   Create(profileCurve1: Curve,profileCurve2: Curve) -> Surface
 
   
@@ -47,12 +48,14 @@ class RuledSurface(Surface,IDisposable):
 
    Returns: The created surface. Note that this surface may not be of type RuledSurf.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Surface,A_0: bool) """
-  pass
- def GetFirstProfileCurve(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Surface,A_0: bool) """
+        pass
+
+    def GetFirstProfileCurve(self):
+        """
   GetFirstProfileCurve(self: RuledSurface) -> Curve
 
   
@@ -65,9 +68,10 @@ class RuledSurface(Surface,IDisposable):
 
    Returns: A copy of the first profile curve,if it exists.
   """
-  pass
- def GetFirstProfilePoint(self):
-  """
+        pass
+
+    def GetFirstProfilePoint(self):
+        """
   GetFirstProfilePoint(self: RuledSurface) -> XYZ
 
   
@@ -80,9 +84,10 @@ class RuledSurface(Surface,IDisposable):
 
    Returns: The first profile point if it was set,NULL otherwise.
   """
-  pass
- def GetSecondProfileCurve(self):
-  """
+        pass
+
+    def GetSecondProfileCurve(self):
+        """
   GetSecondProfileCurve(self: RuledSurface) -> Curve
 
   
@@ -95,9 +100,10 @@ class RuledSurface(Surface,IDisposable):
 
    Returns: A copy of the second profile curve,if it exists.
   """
-  pass
- def GetSecondProfilePoint(self):
-  """
+        pass
+
+    def GetSecondProfilePoint(self):
+        """
   GetSecondProfilePoint(self: RuledSurface) -> XYZ
 
   
@@ -110,16 +116,20 @@ class RuledSurface(Surface,IDisposable):
 
    Returns: The second profile point if it was set,NULL otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Surface,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Surface,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

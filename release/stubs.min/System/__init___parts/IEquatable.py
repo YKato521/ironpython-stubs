@@ -1,7 +1,7 @@
 class IEquatable:
- # no doc
- def Equals(self,other):
-  """
+    # no doc
+    def Equals(self, other):
+        """
   Equals(self: IEquatable[T],other: T) -> bool
 
   
@@ -14,10 +14,12 @@ class IEquatable:
 
    Returns: true if the current object is equal to the other parameter; otherwise,false.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

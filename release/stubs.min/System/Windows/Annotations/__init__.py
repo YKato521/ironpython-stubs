@@ -8,8 +8,9 @@
 # no functions
 # classes
 
-class Annotation(object,IXmlSerializable):
- """
+
+class Annotation(object, IXmlSerializable):
+    """
  Represents a user annotation in the Microsoft Annotations Framework.
 
  
@@ -20,8 +21,9 @@ class Annotation(object,IXmlSerializable):
 
  Annotation(annotationType: XmlQualifiedName,id: Guid,creationTime: DateTime,lastModificationTime: DateTime)
  """
- def GetSchema(self):
-  """
+
+    def GetSchema(self):
+        """
   GetSchema(self: Annotation) -> XmlSchema
 
   
@@ -30,9 +32,10 @@ class Annotation(object,IXmlSerializable):
 
    Returns: Always null.  See Annotations Schema for schema details.
   """
-  pass
- def ReadXml(self,reader):
-  """
+        pass
+
+    def ReadXml(self, reader):
+        """
   ReadXml(self: Annotation,reader: XmlReader)
 
    Deserializes the System.Windows.Annotations.Annotation from a specified System.Xml.XmlReader.
@@ -41,9 +44,10 @@ class Annotation(object,IXmlSerializable):
 
    reader: The XML reader to use to deserialize the annotation.
   """
-  pass
- def WriteXml(self,writer):
-  """
+        pass
+
+    def WriteXml(self, writer):
+        """
   WriteXml(self: Annotation,writer: XmlWriter)
 
    Serializes the annotation to a specified System.Xml.XmlWriter.
@@ -52,25 +56,31 @@ class Annotation(object,IXmlSerializable):
 
    writer: The XML writer to use to serialize the annotation.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,annotationType=None,id=None,creationTime=None,lastModificationTime=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self, annotationType=None, id=None, creationTime=None, lastModificationTime=None
+    ):
+        """
   __new__(cls: type)
 
   __new__(cls: type,annotationType: XmlQualifiedName)
 
   __new__(cls: type,annotationType: XmlQualifiedName,id: Guid,creationTime: DateTime,lastModificationTime: DateTime)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Anchors=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of zero or more System.Windows.Annotations.AnnotationResource anchor elements that define the data selection(s) being annotated.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Anchors = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a collection of zero or more System.Windows.Annotations.AnnotationResource anchor elements that define the data selection(s) being annotated.
 
 
 
@@ -80,8 +90,10 @@ Get: Anchors(self: Annotation) -> Collection[AnnotationResource]
 
 """
 
- AnnotationType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Xml.XmlQualifiedName of the annotation type.
+    AnnotationType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Xml.XmlQualifiedName of the annotation type.
 
 
 
@@ -91,8 +103,8 @@ Get: AnnotationType(self: Annotation) -> XmlQualifiedName
 
 """
 
- Authors=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of zero or more author strings that identify who created the System.Windows.Annotations.Annotation.
+    Authors = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a collection of zero or more author strings that identify who created the System.Windows.Annotations.Annotation.
 
 
 
@@ -102,8 +114,8 @@ Get: Authors(self: Annotation) -> Collection[str]
 
 """
 
- Cargos=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of zero or more System.Windows.Annotations.AnnotationResource cargo elements that contain data for the annotation.
+    Cargos = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a collection of zero or more System.Windows.Annotations.AnnotationResource cargo elements that contain data for the annotation.
 
 
 
@@ -113,8 +125,10 @@ Get: Cargos(self: Annotation) -> Collection[AnnotationResource]
 
 """
 
- CreationTime=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the date and the time that the annotation was created.
+    CreationTime = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the date and the time that the annotation was created.
 
 
 
@@ -124,8 +138,8 @@ Get: CreationTime(self: Annotation) -> DateTime
 
 """
 
- Id=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the globally unique identifier (GUID) of the System.Windows.Annotations.Annotation.
+    Id = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the globally unique identifier (GUID) of the System.Windows.Annotations.Annotation.
 
 
 
@@ -135,8 +149,10 @@ Get: Id(self: Annotation) -> Guid
 
 """
 
- LastModificationTime=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the date and the time that the annotation was last modified.
+    LastModificationTime = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the date and the time that the annotation was last modified.
 
 
 
@@ -146,63 +162,75 @@ Get: LastModificationTime(self: Annotation) -> DateTime
 
 """
 
+    AnchorChanged = None
+    AuthorChanged = None
+    CargoChanged = None
 
- AnchorChanged=None
- AuthorChanged=None
- CargoChanged=None
 
-
-class AnnotationAction(Enum,IComparable,IFormattable,IConvertible):
- """
+class AnnotationAction(Enum, IComparable, IFormattable, IConvertible):
+    """
  Specifies the actions that occur with System.Windows.Annotations.Annotation author,anchor,and cargo resources.
 
  
 
  enum AnnotationAction,values: Added (0),Modified (2),Removed (1)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Added=None
- Modified=None
- Removed=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Added = None
+    Modified = None
+    Removed = None
+    value__ = None
 
 
 class AnnotationAuthorChangedEventArgs(EventArgs):
- """
+    """
  Provides data for the System.Windows.Annotations.Annotation.AuthorChanged event.
 
  
 
  AnnotationAuthorChangedEventArgs(annotation: Annotation,action: AnnotationAction,author: object)
  """
- @staticmethod
- def __new__(self,annotation,action,author):
-  """ __new__(cls: type,annotation: Annotation,action: AnnotationAction,author: object) """
-  pass
- Action=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the author change operation for the event.
+
+    @staticmethod
+    def __new__(self, annotation, action, author):
+        """ __new__(cls: type,annotation: Annotation,action: AnnotationAction,author: object) """
+        pass
+
+    Action = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the author change operation for the event.
 
 
 
@@ -212,8 +240,10 @@ Get: Action(self: AnnotationAuthorChangedEventArgs) -> AnnotationAction
 
 """
 
- Annotation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the annotation that raised the event.
+    Annotation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the annotation that raised the event.
 
 
 
@@ -223,8 +253,8 @@ Get: Annotation(self: AnnotationAuthorChangedEventArgs) -> Annotation
 
 """
 
- Author=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the author object that is the target of the event.
+    Author = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the author object that is the target of the event.
 
 
 
@@ -235,20 +265,21 @@ Get: Author(self: AnnotationAuthorChangedEventArgs) -> object
 """
 
 
-
-class AnnotationAuthorChangedEventHandler(MulticastDelegate,ICloneable,ISerializable):
- """
+class AnnotationAuthorChangedEventHandler(MulticastDelegate, ICloneable, ISerializable):
+    """
  Represents the method that handles the System.Windows.Annotations.Annotation.AuthorChanged event raised by the System.Windows.Annotations.Annotation class.
 
  
 
  AnnotationAuthorChangedEventHandler(object: object,method: IntPtr)
  """
- def BeginInvoke(self,sender,e,callback,object):
-  """ BeginInvoke(self: AnnotationAuthorChangedEventHandler,sender: object,e: AnnotationAuthorChangedEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+
+    def BeginInvoke(self, sender, e, callback, object):
+        """ BeginInvoke(self: AnnotationAuthorChangedEventHandler,sender: object,e: AnnotationAuthorChangedEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -261,9 +292,10 @@ class AnnotationAuthorChangedEventHandler(MulticastDelegate,ICloneable,ISerializ
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -282,12 +314,14 @@ class AnnotationAuthorChangedEventHandler(MulticastDelegate,ICloneable,ISerializ
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: AnnotationAuthorChangedEventHandler,result: IAsyncResult) """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: AnnotationAuthorChangedEventHandler,result: IAsyncResult) """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -296,12 +330,14 @@ class AnnotationAuthorChangedEventHandler(MulticastDelegate,ICloneable,ISerializ
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,sender,e):
-  """ Invoke(self: AnnotationAuthorChangedEventHandler,sender: object,e: AnnotationAuthorChangedEventArgs) """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, sender, e):
+        """ Invoke(self: AnnotationAuthorChangedEventHandler,sender: object,e: AnnotationAuthorChangedEventArgs) """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -320,19 +356,23 @@ class AnnotationAuthorChangedEventHandler(MulticastDelegate,ICloneable,ISerializ
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
 
 class AnnotationDocumentPaginator(DocumentPaginator):
- """
+    """
  Provides a System.Windows.Documents.DocumentPaginator for printing a document together with its associated annotations.
 
  
@@ -345,8 +385,9 @@ class AnnotationDocumentPaginator(DocumentPaginator):
 
  AnnotationDocumentPaginator(originalPaginator: DocumentPaginator,annotationStore: AnnotationStore,flowDirection: FlowDirection)
  """
- def CancelAsync(self,userState):
-  """
+
+    def CancelAsync(self, userState):
+        """
   CancelAsync(self: AnnotationDocumentPaginator,userState: object)
 
    Cancels all asynchronous operations initiated with a given userState object.
@@ -355,9 +396,10 @@ class AnnotationDocumentPaginator(DocumentPaginator):
 
    userState: The unique application-defined identifier passed in the call to start the asynchronous operation.
   """
-  pass
- def ComputePageCount(self):
-  """
+        pass
+
+    def ComputePageCount(self):
+        """
   ComputePageCount(self: AnnotationDocumentPaginator)
 
    Forces a pagination of the content,updates 
@@ -366,9 +408,10 @@ class AnnotationDocumentPaginator(DocumentPaginator):
 
     System.Windows.Annotations.AnnotationDocumentPaginator.IsPageCountValid to true.
   """
-  pass
- def ComputePageCountAsync(self,userState=None):
-  """
+        pass
+
+    def ComputePageCountAsync(self, userState=None):
+        """
   ComputePageCountAsync(self: AnnotationDocumentPaginator,userState: object)
 
    Starts an asynchronous pagination of the content,updates 
@@ -385,9 +428,10 @@ class AnnotationDocumentPaginator(DocumentPaginator):
 
    userState: An application-defined object for identifying the asynchronous operation.
   """
-  pass
- def GetPage(self,pageNumber):
-  """
+        pass
+
+    def GetPage(self, pageNumber):
+        """
   GetPage(self: AnnotationDocumentPaginator,pageNumber: int) -> DocumentPage
 
   
@@ -406,9 +450,10 @@ class AnnotationDocumentPaginator(DocumentPaginator):
 
     System.Windows.Documents.DocumentPage.Missing,if the specified pageNumber does not exist.
   """
-  pass
- def GetPageAsync(self,pageNumber,userState=None):
-  """
+        pass
+
+    def GetPageAsync(self, pageNumber, userState=None):
+        """
   GetPageAsync(self: AnnotationDocumentPaginator,pageNumber: int,userState: object)
 
    asynchronously returns a System.Windows.Documents.DocumentPage together with associated 
@@ -423,10 +468,11 @@ class AnnotationDocumentPaginator(DocumentPaginator):
 
    userState: An application-defined object that is used to identify the asynchronous operation.
   """
-  pass
- @staticmethod
- def __new__(self,originalPaginator,annotationStore,flowDirection=None):
-  """
+        pass
+
+    @staticmethod
+    def __new__(self, originalPaginator, annotationStore, flowDirection=None):
+        """
   __new__(cls: type,originalPaginator: DocumentPaginator,annotationStore: Stream)
 
   __new__(cls: type,originalPaginator: DocumentPaginator,annotationStore: Stream,flowDirection: FlowDirection)
@@ -435,9 +481,12 @@ class AnnotationDocumentPaginator(DocumentPaginator):
 
   __new__(cls: type,originalPaginator: DocumentPaginator,annotationStore: AnnotationStore,flowDirection: FlowDirection)
   """
-  pass
- IsPageCountValid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether System.Windows.Annotations.AnnotationDocumentPaginator.PageCount is the total number of pages.
+        pass
+
+    IsPageCountValid = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether System.Windows.Annotations.AnnotationDocumentPaginator.PageCount is the total number of pages.
 
 
 
@@ -447,8 +496,8 @@ Get: IsPageCountValid(self: AnnotationDocumentPaginator) -> bool
 
 """
 
- PageCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates the number of pages currently formatted.
+    PageCount = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates the number of pages currently formatted.
 
 
 
@@ -458,8 +507,8 @@ Get: PageCount(self: AnnotationDocumentPaginator) -> int
 
 """
 
- PageSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the suggested width and height of each page.
+    PageSize = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the suggested width and height of each page.
 
 
 
@@ -471,8 +520,8 @@ Set: PageSize(self: AnnotationDocumentPaginator)=value
 
 """
 
- Source=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the source document that is being paginated.
+    Source = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the source document that is being paginated.
 
 
 
@@ -483,12 +532,12 @@ Get: Source(self: AnnotationDocumentPaginator) -> IDocumentPaginatorSource
 """
 
 
-
 class AnnotationHelper(object):
- """ Provides utility methods and commands to create and delete highlight,ink sticky note,and text sticky note annotations. """
- @staticmethod
- def ClearHighlightsForSelection(service):
-  """
+    """ Provides utility methods and commands to create and delete highlight,ink sticky note,and text sticky note annotations. """
+
+    @staticmethod
+    def ClearHighlightsForSelection(service):
+        """
   ClearHighlightsForSelection(service: AnnotationService)
 
    Clears all highlight annotations from the current selection of the viewer control associated 
@@ -501,10 +550,11 @@ class AnnotationHelper(object):
 
    service: The annotation service from which to remove highlight annotations.
   """
-  pass
- @staticmethod
- def CreateHighlightForSelection(service,author,highlightBrush):
-  """
+        pass
+
+    @staticmethod
+    def CreateHighlightForSelection(service, author, highlightBrush):
+        """
   CreateHighlightForSelection(service: AnnotationService,author: str,highlightBrush: Brush) -> Annotation
 
   
@@ -525,10 +575,11 @@ class AnnotationHelper(object):
 
    Returns: The highlight annotation; or null,if there is no selected content to highlight.
   """
-  pass
- @staticmethod
- def CreateInkStickyNoteForSelection(service,author):
-  """
+        pass
+
+    @staticmethod
+    def CreateInkStickyNoteForSelection(service, author):
+        """
   CreateInkStickyNoteForSelection(service: AnnotationService,author: str) -> Annotation
 
   
@@ -547,10 +598,11 @@ class AnnotationHelper(object):
 
    Returns: The ink sticky note annotation; or null,if there is no selected content to annotate.
   """
-  pass
- @staticmethod
- def CreateTextStickyNoteForSelection(service,author):
-  """
+        pass
+
+    @staticmethod
+    def CreateTextStickyNoteForSelection(service, author):
+        """
   CreateTextStickyNoteForSelection(service: AnnotationService,author: str) -> Annotation
 
   
@@ -569,10 +621,11 @@ class AnnotationHelper(object):
 
    Returns: The text sticky note annotation; or null,if there is no selected content to annotate.
   """
-  pass
- @staticmethod
- def DeleteInkStickyNotesForSelection(service):
-  """
+        pass
+
+    @staticmethod
+    def DeleteInkStickyNotesForSelection(service):
+        """
   DeleteInkStickyNotesForSelection(service: AnnotationService)
 
    Deletes ink sticky note annotations that are wholly contained within the current selection of 
@@ -585,10 +638,11 @@ class AnnotationHelper(object):
 
    service: The annotation service from which to delete ink sticky note annotations.
   """
-  pass
- @staticmethod
- def DeleteTextStickyNotesForSelection(service):
-  """
+        pass
+
+    @staticmethod
+    def DeleteTextStickyNotesForSelection(service):
+        """
   DeleteTextStickyNotesForSelection(service: AnnotationService)
 
    Deletes text sticky note annotations that are wholly contained within the current selection of 
@@ -601,10 +655,11 @@ class AnnotationHelper(object):
 
    service: The annotation service from which to delete text sticky note annotations.
   """
-  pass
- @staticmethod
- def GetAnchorInfo(service,annotation):
-  """
+        pass
+
+    @staticmethod
+    def GetAnchorInfo(service, annotation):
+        """
   GetAnchorInfo(service: AnnotationService,annotation: Annotation) -> IAnchorInfo
 
   
@@ -625,20 +680,27 @@ class AnnotationHelper(object):
 
     specified annotation,or null if it cannot be resolved.
   """
-  pass
- __all__=[
-  'ClearHighlightsForSelection',
-  'CreateHighlightForSelection',
-  'CreateInkStickyNoteForSelection',
-  'CreateTextStickyNoteForSelection',
-  'DeleteInkStickyNotesForSelection',
-  'DeleteTextStickyNotesForSelection',
-  'GetAnchorInfo',
- ]
+        pass
+
+    __all__ = [
+        "ClearHighlightsForSelection",
+        "CreateHighlightForSelection",
+        "CreateInkStickyNoteForSelection",
+        "CreateTextStickyNoteForSelection",
+        "DeleteInkStickyNotesForSelection",
+        "DeleteTextStickyNotesForSelection",
+        "GetAnchorInfo",
+    ]
 
 
-class AnnotationResource(object,IXmlSerializable,INotifyPropertyChanged2,INotifyPropertyChanged,IOwnedObject):
- """
+class AnnotationResource(
+    object,
+    IXmlSerializable,
+    INotifyPropertyChanged2,
+    INotifyPropertyChanged,
+    IOwnedObject,
+):
+    """
  Represents a content anchor or cargo resource for an System.Windows.Annotations.Annotation.
 
  
@@ -649,8 +711,9 @@ class AnnotationResource(object,IXmlSerializable,INotifyPropertyChanged2,INotify
 
  AnnotationResource(id: Guid)
  """
- def GetSchema(self):
-  """
+
+    def GetSchema(self):
+        """
   GetSchema(self: AnnotationResource) -> XmlSchema
 
   
@@ -659,9 +722,10 @@ class AnnotationResource(object,IXmlSerializable,INotifyPropertyChanged2,INotify
 
    Returns: Always null.  See Annotations Schema for schema details.
   """
-  pass
- def ReadXml(self,reader):
-  """
+        pass
+
+    def ReadXml(self, reader):
+        """
   ReadXml(self: AnnotationResource,reader: XmlReader)
 
    Deserializes the System.Windows.Annotations.AnnotationResource from a specified 
@@ -674,9 +738,10 @@ class AnnotationResource(object,IXmlSerializable,INotifyPropertyChanged2,INotify
 
    reader: The XML reader to deserialize the System.Windows.Annotations.AnnotationResource from.
   """
-  pass
- def WriteXml(self,writer):
-  """
+        pass
+
+    def WriteXml(self, writer):
+        """
   WriteXml(self: AnnotationResource,writer: XmlWriter)
 
    Serializes the System.Windows.Annotations.AnnotationResource to a specified System.Xml.XmlWriter.
@@ -685,25 +750,31 @@ class AnnotationResource(object,IXmlSerializable,INotifyPropertyChanged2,INotify
 
    writer: The XML writer to serialize the System.Windows.Annotations.AnnotationResource.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,name: str)
 
   __new__(cls: type,id: Guid)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- ContentLocators=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of System.Windows.Annotations.ContentLocatorBase elements contained in this resource.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    ContentLocators = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the collection of System.Windows.Annotations.ContentLocatorBase elements contained in this resource.
 
 
 
@@ -713,8 +784,8 @@ Get: ContentLocators(self: AnnotationResource) -> Collection[ContentLocatorBase]
 
 """
 
- Contents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of the System.Xml.XmlElement objects that define the content of this resource.
+    Contents = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a collection of the System.Xml.XmlElement objects that define the content of this resource.
 
 
 
@@ -724,8 +795,8 @@ Get: Contents(self: AnnotationResource) -> Collection[XmlElement]
 
 """
 
- Id=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the GUID of this resource.
+    Id = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the GUID of this resource.
 
 
 
@@ -735,8 +806,8 @@ Get: Id(self: AnnotationResource) -> Guid
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a name for this System.Windows.Annotations.AnnotationResource.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a name for this System.Windows.Annotations.AnnotationResource.
 
 
 
@@ -749,21 +820,22 @@ Set: Name(self: AnnotationResource)=value
 """
 
 
-
 class AnnotationResourceChangedEventArgs(EventArgs):
- """
+    """
  Provides data for the System.Windows.Annotations.Annotation.AnchorChanged and System.Windows.Annotations.Annotation.CargoChanged events.
 
  
 
  AnnotationResourceChangedEventArgs(annotation: Annotation,action: AnnotationAction,resource: AnnotationResource)
  """
- @staticmethod
- def __new__(self,annotation,action,resource):
-  """ __new__(cls: type,annotation: Annotation,action: AnnotationAction,resource: AnnotationResource) """
-  pass
- Action=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the action of the annotation System.Windows.Annotations.AnnotationResourceChangedEventArgs.Resource.
+
+    @staticmethod
+    def __new__(self, annotation, action, resource):
+        """ __new__(cls: type,annotation: Annotation,action: AnnotationAction,resource: AnnotationResource) """
+        pass
+
+    Action = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the action of the annotation System.Windows.Annotations.AnnotationResourceChangedEventArgs.Resource.
 
 
 
@@ -773,8 +845,10 @@ Get: Action(self: AnnotationResourceChangedEventArgs) -> AnnotationAction
 
 """
 
- Annotation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Annotations.Annotation that raised the event.
+    Annotation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Windows.Annotations.Annotation that raised the event.
 
 
 
@@ -784,8 +858,8 @@ Get: Annotation(self: AnnotationResourceChangedEventArgs) -> Annotation
 
 """
 
- Resource=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Annotations.Annotation.Anchors or System.Windows.Annotations.Annotation.Cargos resource associated with the event.
+    Resource = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the System.Windows.Annotations.Annotation.Anchors or System.Windows.Annotations.Annotation.Cargos resource associated with the event.
 
 
 
@@ -796,20 +870,23 @@ Get: Resource(self: AnnotationResourceChangedEventArgs) -> AnnotationResource
 """
 
 
-
-class AnnotationResourceChangedEventHandler(MulticastDelegate,ICloneable,ISerializable):
- """
+class AnnotationResourceChangedEventHandler(
+    MulticastDelegate, ICloneable, ISerializable
+):
+    """
  Represents the method that handles the System.Windows.Annotations.Annotation.AnchorChanged or System.Windows.Annotations.Annotation.CargoChanged events raised by the System.Windows.Annotations.Annotation class.
 
  
 
  AnnotationResourceChangedEventHandler(object: object,method: IntPtr)
  """
- def BeginInvoke(self,sender,e,callback,object):
-  """ BeginInvoke(self: AnnotationResourceChangedEventHandler,sender: object,e: AnnotationResourceChangedEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+
+    def BeginInvoke(self, sender, e, callback, object):
+        """ BeginInvoke(self: AnnotationResourceChangedEventHandler,sender: object,e: AnnotationResourceChangedEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -822,9 +899,10 @@ class AnnotationResourceChangedEventHandler(MulticastDelegate,ICloneable,ISerial
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -843,12 +921,14 @@ class AnnotationResourceChangedEventHandler(MulticastDelegate,ICloneable,ISerial
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: AnnotationResourceChangedEventHandler,result: IAsyncResult) """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: AnnotationResourceChangedEventHandler,result: IAsyncResult) """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -857,12 +937,14 @@ class AnnotationResourceChangedEventHandler(MulticastDelegate,ICloneable,ISerial
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,sender,e):
-  """ Invoke(self: AnnotationResourceChangedEventHandler,sender: object,e: AnnotationResourceChangedEventArgs) """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, sender, e):
+        """ Invoke(self: AnnotationResourceChangedEventHandler,sender: object,e: AnnotationResourceChangedEventArgs) """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -881,19 +963,23 @@ class AnnotationResourceChangedEventHandler(MulticastDelegate,ICloneable,ISerial
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
 
 class AnnotationService(DispatcherObject):
- """
+    """
  Provides core services of the Microsoft Annotations Framework�to manage and display user annotations.
 
  
@@ -904,15 +990,17 @@ class AnnotationService(DispatcherObject):
 
  AnnotationService(viewer: FlowDocumentReader)
  """
- def Disable(self):
-  """
+
+    def Disable(self):
+        """
   Disable(self: AnnotationService)
 
    Disables annotations processing and hides all visible annotations.
   """
-  pass
- def Enable(self,annotationStore):
-  """
+        pass
+
+    def Enable(self, annotationStore):
+        """
   Enable(self: AnnotationService,annotationStore: AnnotationStore)
 
    Enables the System.Windows.Annotations.AnnotationService for use with a given 
@@ -925,10 +1013,11 @@ class AnnotationService(DispatcherObject):
 
    annotationStore: The annotation store to use for reading,writing,and displaying annotations.
   """
-  pass
- @staticmethod
- def GetService(*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetService(*__args):
+        """
   GetService(viewer: FlowDocumentScrollViewer) -> AnnotationService
 
   
@@ -1005,19 +1094,21 @@ class AnnotationService(DispatcherObject):
 
     System.Windows.Annotations.AnnotationService.
   """
-  pass
- @staticmethod
- def __new__(self,viewer):
-  """
+        pass
+
+    @staticmethod
+    def __new__(self, viewer):
+        """
   __new__(cls: type,viewer: DocumentViewerBase)
 
   __new__(cls: type,viewer: FlowDocumentScrollViewer)
 
   __new__(cls: type,viewer: FlowDocumentReader)
   """
-  pass
- IsEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.Windows.Annotations.AnnotationService is enabled.
+        pass
+
+    IsEnabled = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether the System.Windows.Annotations.AnnotationService is enabled.
 
 
 
@@ -1027,8 +1118,8 @@ Get: IsEnabled(self: AnnotationService) -> bool
 
 """
 
- Store=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Annotations.Storage.AnnotationStore used by this System.Windows.Annotations.AnnotationService.
+    Store = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the System.Windows.Annotations.Storage.AnnotationStore used by this System.Windows.Annotations.AnnotationService.
 
 
 
@@ -1038,19 +1129,21 @@ Get: Store(self: AnnotationService) -> AnnotationStore
 
 """
 
+    ClearHighlightsCommand = None
+    CreateHighlightCommand = None
+    CreateInkStickyNoteCommand = None
+    CreateTextStickyNoteCommand = None
+    DeleteAnnotationsCommand = None
+    DeleteStickyNotesCommand = None
 
- ClearHighlightsCommand=None
- CreateHighlightCommand=None
- CreateInkStickyNoteCommand=None
- CreateTextStickyNoteCommand=None
- DeleteAnnotationsCommand=None
- DeleteStickyNotesCommand=None
 
+class ContentLocatorBase(
+    object, INotifyPropertyChanged2, INotifyPropertyChanged, IOwnedObject
+):
+    """ Represents an object that identifies an item of content. """
 
-class ContentLocatorBase(object,INotifyPropertyChanged2,INotifyPropertyChanged,IOwnedObject):
- """ Represents an object that identifies an item of content. """
- def Clone(self):
-  """
+    def Clone(self):
+        """
   Clone(self: ContentLocatorBase) -> object
 
   
@@ -1059,24 +1152,34 @@ class ContentLocatorBase(object,INotifyPropertyChanged2,INotifyPropertyChanged,I
 
    Returns: A modifiable deep copy clone of this System.Windows.Annotations.ContentLocatorBase.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
+        pass
 
-class ContentLocator(ContentLocatorBase,INotifyPropertyChanged2,INotifyPropertyChanged,IOwnedObject,IXmlSerializable):
- """
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+
+class ContentLocator(
+    ContentLocatorBase,
+    INotifyPropertyChanged2,
+    INotifyPropertyChanged,
+    IOwnedObject,
+    IXmlSerializable,
+):
+    """
  Represents an ordered set of System.Windows.Annotations.ContentLocatorPart elements that identify an item of content.
 
  
 
  ContentLocator()
  """
- def Clone(self):
-  """
+
+    def Clone(self):
+        """
   Clone(self: ContentLocator) -> object
 
   
@@ -1085,9 +1188,10 @@ class ContentLocator(ContentLocatorBase,INotifyPropertyChanged2,INotifyPropertyC
 
    Returns: A modifiable deep copy clone of this System.Windows.Annotations.ContentLocator.
   """
-  pass
- def GetSchema(self):
-  """
+        pass
+
+    def GetSchema(self):
+        """
   GetSchema(self: ContentLocator) -> XmlSchema
 
   
@@ -1096,9 +1200,10 @@ class ContentLocator(ContentLocatorBase,INotifyPropertyChanged2,INotifyPropertyC
 
    Returns: Always null.  See Annotations Schema for schema details
   """
-  pass
- def ReadXml(self,reader):
-  """
+        pass
+
+    def ReadXml(self, reader):
+        """
   ReadXml(self: ContentLocator,reader: XmlReader)
 
    Deserializes the System.Windows.Annotations.ContentLocator from a specified System.Xml.XmlReader.
@@ -1107,9 +1212,10 @@ class ContentLocator(ContentLocatorBase,INotifyPropertyChanged2,INotifyPropertyC
 
    reader: The XML reader to use to deserialize the System.Windows.Annotations.ContentLocator.
   """
-  pass
- def StartsWith(self,locator):
-  """
+        pass
+
+    def StartsWith(self, locator):
+        """
   StartsWith(self: ContentLocator,locator: ContentLocator) -> bool
 
   
@@ -1140,9 +1246,10 @@ class ContentLocator(ContentLocatorBase,INotifyPropertyChanged2,INotifyPropertyC
 
     false.
   """
-  pass
- def WriteXml(self,writer):
-  """
+        pass
+
+    def WriteXml(self, writer):
+        """
   WriteXml(self: ContentLocator,writer: XmlWriter)
 
    Serializes the System.Windows.Annotations.ContentLocator to a specified System.Xml.XmlWriter.
@@ -1151,12 +1258,14 @@ class ContentLocator(ContentLocatorBase,INotifyPropertyChanged2,INotifyPropertyC
 
    writer: The XML writer to use to serialize the System.Windows.Annotations.ContentLocator.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Parts=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of System.Windows.Annotations.ContentLocatorPart elements that make up this System.Windows.Annotations.ContentLocator.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Parts = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the collection of System.Windows.Annotations.ContentLocatorPart elements that make up this System.Windows.Annotations.ContentLocator.
 
 
 
@@ -1167,17 +1276,23 @@ Get: Parts(self: ContentLocator) -> Collection[ContentLocatorPart]
 """
 
 
-
-class ContentLocatorGroup(ContentLocatorBase,INotifyPropertyChanged2,INotifyPropertyChanged,IOwnedObject,IXmlSerializable):
- """
+class ContentLocatorGroup(
+    ContentLocatorBase,
+    INotifyPropertyChanged2,
+    INotifyPropertyChanged,
+    IOwnedObject,
+    IXmlSerializable,
+):
+    """
  Represents an ordered set of System.Windows.Annotations.ContentLocator elements that identify an item of content.
 
  
 
  ContentLocatorGroup()
  """
- def Clone(self):
-  """
+
+    def Clone(self):
+        """
   Clone(self: ContentLocatorGroup) -> object
 
   
@@ -1186,9 +1301,10 @@ class ContentLocatorGroup(ContentLocatorBase,INotifyPropertyChanged2,INotifyProp
 
    Returns: A modifiable deep copy clone of this System.Windows.Annotations.ContentLocatorGroup.
   """
-  pass
- def GetSchema(self):
-  """
+        pass
+
+    def GetSchema(self):
+        """
   GetSchema(self: ContentLocatorGroup) -> XmlSchema
 
   
@@ -1197,9 +1313,10 @@ class ContentLocatorGroup(ContentLocatorBase,INotifyPropertyChanged2,INotifyProp
 
    Returns: Always null.  See Annotations Schema for schema details.
   """
-  pass
- def ReadXml(self,reader):
-  """
+        pass
+
+    def ReadXml(self, reader):
+        """
   ReadXml(self: ContentLocatorGroup,reader: XmlReader)
 
    Deserializes the System.Windows.Annotations.ContentLocatorGroup from a specified 
@@ -1212,9 +1329,10 @@ class ContentLocatorGroup(ContentLocatorBase,INotifyPropertyChanged2,INotifyProp
 
    reader: The XML reader to use to deserialize the System.Windows.Annotations.ContentLocatorGroup.
   """
-  pass
- def WriteXml(self,writer):
-  """
+        pass
+
+    def WriteXml(self, writer):
+        """
   WriteXml(self: ContentLocatorGroup,writer: XmlWriter)
 
    Serializes the System.Windows.Annotations.ContentLocatorGroup to a specified 
@@ -1227,12 +1345,14 @@ class ContentLocatorGroup(ContentLocatorBase,INotifyPropertyChanged2,INotifyProp
 
    writer: The XML writer to use to serialize the System.Windows.Annotations.ContentLocatorGroup.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Locators=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of the System.Windows.Annotations.ContentLocator elements that make up this System.Windows.Annotations.ContentLocatorGroup.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Locators = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the collection of the System.Windows.Annotations.ContentLocator elements that make up this System.Windows.Annotations.ContentLocatorGroup.
 
 
 
@@ -1243,17 +1363,19 @@ Get: Locators(self: ContentLocatorGroup) -> Collection[ContentLocator]
 """
 
 
-
-class ContentLocatorPart(object,INotifyPropertyChanged2,INotifyPropertyChanged,IOwnedObject):
- """
+class ContentLocatorPart(
+    object, INotifyPropertyChanged2, INotifyPropertyChanged, IOwnedObject
+):
+    """
  Represents a set of name/value pairs that identify an item of content.
 
  
 
  ContentLocatorPart(partType: XmlQualifiedName)
  """
- def Clone(self):
-  """
+
+    def Clone(self):
+        """
   Clone(self: ContentLocatorPart) -> object
 
   
@@ -1262,9 +1384,10 @@ class ContentLocatorPart(object,INotifyPropertyChanged2,INotifyPropertyChanged,I
 
    Returns: A modifiable deep copy clone of this System.Windows.Annotations.ContentLocatorPart.
   """
-  pass
- def Equals(self,obj):
-  """
+        pass
+
+    def Equals(self, obj):
+        """
   Equals(self: ContentLocatorPart,obj: object) -> bool
 
   
@@ -1283,9 +1406,10 @@ class ContentLocatorPart(object,INotifyPropertyChanged2,INotifyPropertyChanged,I
 
     identical; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: ContentLocatorPart) -> int
 
   
@@ -1294,24 +1418,32 @@ class ContentLocatorPart(object,INotifyPropertyChanged2,INotifyPropertyChanged,I
 
    Returns: The hash code for this part.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,partType):
-  """ __new__(cls: type,partType: XmlQualifiedName) """
-  pass
- def __ne__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- NameValuePairs=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of the name/value pairs that define this part.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, partType):
+        """ __new__(cls: type,partType: XmlQualifiedName) """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    NameValuePairs = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a collection of the name/value pairs that define this part.
 
 
 
@@ -1321,8 +1453,8 @@ Get: NameValuePairs(self: ContentLocatorPart) -> IDictionary[str,str]
 
 """
 
- PartType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the type name and namespace of the part.
+    PartType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the type name and namespace of the part.
 
 
 
@@ -1333,14 +1465,15 @@ Get: PartType(self: ContentLocatorPart) -> XmlQualifiedName
 """
 
 
-
 class IAnchorInfo:
- """ Provides the capabilities for matching annotations with the corresponding annotated objects. """
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Anchor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the anchor of the annotation.
+    """ Provides the capabilities for matching annotations with the corresponding annotated objects. """
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Anchor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the anchor of the annotation.
 
 
 
@@ -1350,8 +1483,10 @@ Get: Anchor(self: IAnchorInfo) -> AnnotationResource
 
 """
 
- Annotation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the annotation object.
+    Annotation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the annotation object.
 
 
 
@@ -1361,8 +1496,10 @@ Get: Annotation(self: IAnchorInfo) -> Annotation
 
 """
 
- ResolvedAnchor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the object that represents the location on the tree where the System.Windows.Annotations.IAnchorInfo.Anchor is resolved.
+    ResolvedAnchor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the object that represents the location on the tree where the System.Windows.Annotations.IAnchorInfo.Anchor is resolved.
 
 
 
@@ -1373,11 +1510,11 @@ Get: ResolvedAnchor(self: IAnchorInfo) -> object
 """
 
 
-
 class TextAnchor(object):
- """ Represents a selection of content that an annotation is anchored to. """
- def Equals(self,obj):
-  """
+    """ Represents a selection of content that an annotation is anchored to. """
+
+    def Equals(self, obj):
+        """
   Equals(self: TextAnchor,obj: object) -> bool
 
   
@@ -1390,9 +1527,10 @@ class TextAnchor(object):
 
    Returns: true if the two instances are equal; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: TextAnchor) -> int
 
   
@@ -1401,14 +1539,19 @@ class TextAnchor(object):
 
    Returns: The hash code of the text anchor instance.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __ne__(self,*args):
-  pass
- BoundingEnd=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the end position of the text anchor.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    BoundingEnd = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the end position of the text anchor.
 
 
 
@@ -1418,8 +1561,10 @@ Get: BoundingEnd(self: TextAnchor) -> ContentPosition
 
 """
 
- BoundingStart=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the beginning position of the text anchor.
+    BoundingStart = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the beginning position of the text anchor.
 
 
 
@@ -1430,6 +1575,4 @@ Get: BoundingStart(self: TextAnchor) -> ContentPosition
 """
 
 
-
 # variables with complex values
-

@@ -1,13 +1,36 @@
-class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlaceObject,IOleInPlaceActiveObject,IOleWindow,IViewObject,IViewObject2,IPersist,IPersistStreamInit,IPersistPropertyBag,IPersistStorage,IQuickActivate,ISupportOleDropSource,IDropTarget,ISynchronizeInvoke,IWin32Window,IArrangedElement,IBindableComponent):
- """
+class ListView(
+    Control,
+    IComponent,
+    IDisposable,
+    IOleControl,
+    IOleObject,
+    IOleInPlaceObject,
+    IOleInPlaceActiveObject,
+    IOleWindow,
+    IViewObject,
+    IViewObject2,
+    IPersist,
+    IPersistStreamInit,
+    IPersistPropertyBag,
+    IPersistStorage,
+    IQuickActivate,
+    ISupportOleDropSource,
+    IDropTarget,
+    ISynchronizeInvoke,
+    IWin32Window,
+    IArrangedElement,
+    IBindableComponent,
+):
+    """
  Represents a Windows list view control,which displays a collection of items that can be displayed using one of four different views.
 
  
 
  ListView()
  """
- def AccessibilityNotifyClients(self,*args):
-  """
+
+    def AccessibilityNotifyClients(self, *args):
+        """
   AccessibilityNotifyClients(self: Control,accEvent: AccessibleEvents,objectID: int,childID: int)
 
    Notifies the accessibility client applications of the specified 
@@ -38,9 +61,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    childID: The child System.Windows.Forms.Control to notify of the accessible event.
   """
-  pass
- def ArrangeIcons(self,value=None):
-  """
+        pass
+
+    def ArrangeIcons(self, value=None):
+        """
   ArrangeIcons(self: ListView)
 
    Arranges items in the control when they are displayed as icons based on the value of the 
@@ -61,9 +85,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    value: One of the System.Windows.Forms.ListViewAlignment values.
   """
-  pass
- def AutoResizeColumn(self,columnIndex,headerAutoResize):
-  """
+        pass
+
+    def AutoResizeColumn(self, columnIndex, headerAutoResize):
+        """
   AutoResizeColumn(self: ListView,columnIndex: int,headerAutoResize: ColumnHeaderAutoResizeStyle)
 
    Resizes the width of the given column as indicated by the resize style.
@@ -74,9 +99,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    headerAutoResize: One of the System.Windows.Forms.ColumnHeaderAutoResizeStyle values.
   """
-  pass
- def AutoResizeColumns(self,headerAutoResize):
-  """
+        pass
+
+    def AutoResizeColumns(self, headerAutoResize):
+        """
   AutoResizeColumns(self: ListView,headerAutoResize: ColumnHeaderAutoResizeStyle)
 
    Resizes the width of the columns as indicated by the resize style.
@@ -85,25 +111,28 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    headerAutoResize: One of the System.Windows.Forms.ColumnHeaderAutoResizeStyle values.
   """
-  pass
- def BeginUpdate(self):
-  """
+        pass
+
+    def BeginUpdate(self):
+        """
   BeginUpdate(self: ListView)
 
    Prevents the control from drawing until the System.Windows.Forms.ListView.EndUpdate method is 
 
     called.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: ListView)
 
    Removes all items and columns from the control.
   """
-  pass
- def CreateAccessibilityInstance(self,*args):
-  """
+        pass
+
+    def CreateAccessibilityInstance(self, *args):
+        """
   CreateAccessibilityInstance(self: Control) -> AccessibleObject
 
   
@@ -112,9 +141,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    Returns: A new System.Windows.Forms.AccessibleObject for the control.
   """
-  pass
- def CreateControlsInstance(self,*args):
-  """
+        pass
+
+    def CreateControlsInstance(self, *args):
+        """
   CreateControlsInstance(self: Control) -> ControlCollection
 
   
@@ -123,12 +153,14 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    Returns: A new instance of System.Windows.Forms.Control.ControlCollection assigned to the control.
   """
-  pass
- def CreateHandle(self,*args):
-  """ CreateHandle(self: ListView) """
-  pass
- def DefWndProc(self,*args):
-  """
+        pass
+
+    def CreateHandle(self, *args):
+        """ CreateHandle(self: ListView) """
+        pass
+
+    def DefWndProc(self, *args):
+        """
   DefWndProc(self: Control,m: Message) -> Message
 
   
@@ -139,16 +171,18 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    m: The Windows System.Windows.Forms.Message to process.
   """
-  pass
- def DestroyHandle(self,*args):
-  """
+        pass
+
+    def DestroyHandle(self, *args):
+        """
   DestroyHandle(self: Control)
 
    Destroys the handle associated with the control.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: ListView,disposing: bool)
 
    Releases the unmanaged resources used by the System.Windows.Forms.ListView and optionally 
@@ -161,18 +195,20 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def EndUpdate(self):
-  """
+        pass
+
+    def EndUpdate(self):
+        """
   EndUpdate(self: ListView)
 
    Resumes drawing of the list view control after drawing is suspended by the 
 
     System.Windows.Forms.ListView.BeginUpdate method.
   """
-  pass
- def EnsureVisible(self,index):
-  """
+        pass
+
+    def EnsureVisible(self, index):
+        """
   EnsureVisible(self: ListView,index: int)
 
    Ensures that the specified item is visible within the control,scrolling the contents of the 
@@ -185,9 +221,12 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    index: The zero-based index of the item to scroll into view.
   """
-  pass
- def FindItemWithText(self,text,includeSubItemsInSearch=None,startIndex=None,isPrefixSearch=None):
-  """
+        pass
+
+    def FindItemWithText(
+        self, text, includeSubItemsInSearch=None, startIndex=None, isPrefixSearch=None
+    ):
+        """
   FindItemWithText(self: ListView,text: str,includeSubItemsInSearch: bool,startIndex: int,isPrefixSearch: bool) -> ListViewItem
 
   
@@ -246,9 +285,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    Returns: The first System.Windows.Forms.ListViewItem that begins with the specified text value.
   """
-  pass
- def FindNearestItem(self,*__args):
-  """
+        pass
+
+    def FindNearestItem(self, *__args):
+        """
   FindNearestItem(self: ListView,searchDirection: SearchDirectionHint,x: int,y: int) -> ListViewItem
 
   
@@ -285,9 +325,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
     specified direction.
   """
-  pass
- def GetAccessibilityObjectById(self,*args):
-  """
+        pass
+
+    def GetAccessibilityObjectById(self, *args):
+        """
   GetAccessibilityObjectById(self: Control,objectId: int) -> AccessibleObject
 
   
@@ -300,9 +341,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    Returns: An System.Windows.Forms.AccessibleObject.
   """
-  pass
- def GetAutoSizeMode(self,*args):
-  """
+        pass
+
+    def GetAutoSizeMode(self, *args):
+        """
   GetAutoSizeMode(self: Control) -> AutoSizeMode
 
   
@@ -315,9 +357,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    Returns: One of the System.Windows.Forms.AutoSizeMode values.
   """
-  pass
- def GetItemAt(self,x,y):
-  """
+        pass
+
+    def GetItemAt(self, x, y):
+        """
   GetItemAt(self: ListView,x: int,y: int) -> ListViewItem
 
   
@@ -334,9 +377,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
     is no item at the specified location,the method returns null.
   """
-  pass
- def GetItemRect(self,index,portion=None):
-  """
+        pass
+
+    def GetItemRect(self, index, portion=None):
+        """
   GetItemRect(self: ListView,index: int,portion: ItemBoundsPortion) -> Rectangle
 
   
@@ -385,9 +429,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
     System.Windows.Forms.ListViewItem.
   """
-  pass
- def GetScaledBounds(self,*args):
-  """
+        pass
+
+    def GetScaledBounds(self, *args):
+        """
   GetScaledBounds(self: Control,bounds: Rectangle,factor: SizeF,specified: BoundsSpecified) -> Rectangle
 
   
@@ -408,9 +453,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    Returns: A System.Drawing.Rectangle representing the bounds within which the control is scaled.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -429,9 +475,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def GetStyle(self,*args):
-  """
+        pass
+
+    def GetStyle(self, *args):
+        """
   GetStyle(self: Control,flag: ControlStyles) -> bool
 
   
@@ -444,9 +491,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    Returns: true if the specified control style bit is set to true; otherwise,false.
   """
-  pass
- def GetTopLevel(self,*args):
-  """
+        pass
+
+    def GetTopLevel(self, *args):
+        """
   GetTopLevel(self: Control) -> bool
 
   
@@ -455,9 +503,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    Returns: true if the control is a top-level control; otherwise,false.
   """
-  pass
- def HitTest(self,*__args):
-  """
+        pass
+
+    def HitTest(self, *__args):
+        """
   HitTest(self: ListView,x: int,y: int) -> ListViewHitTestInfo
 
   
@@ -496,16 +545,18 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    Returns: A System.Windows.Forms.ListViewHitTestInfo.
   """
-  pass
- def InitLayout(self,*args):
-  """
+        pass
+
+    def InitLayout(self, *args):
+        """
   InitLayout(self: Control)
 
    Called after the control has been added to another container.
   """
-  pass
- def InvokeGotFocus(self,*args):
-  """
+        pass
+
+    def InvokeGotFocus(self, *args):
+        """
   InvokeGotFocus(self: Control,toInvoke: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.GotFocus event for the specified control.
@@ -516,9 +567,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def InvokeLostFocus(self,*args):
-  """
+        pass
+
+    def InvokeLostFocus(self, *args):
+        """
   InvokeLostFocus(self: Control,toInvoke: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.LostFocus event for the specified control.
@@ -529,9 +581,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def InvokeOnClick(self,*args):
-  """
+        pass
+
+    def InvokeOnClick(self, *args):
+        """
   InvokeOnClick(self: Control,toInvoke: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Click event for the specified control.
@@ -542,9 +595,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def InvokePaint(self,*args):
-  """
+        pass
+
+    def InvokePaint(self, *args):
+        """
   InvokePaint(self: Control,c: Control,e: PaintEventArgs)
 
    Raises the System.Windows.Forms.Control.Paint event for the specified control.
@@ -555,9 +609,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def InvokePaintBackground(self,*args):
-  """
+        pass
+
+    def InvokePaintBackground(self, *args):
+        """
   InvokePaintBackground(self: Control,c: Control,e: PaintEventArgs)
 
    Raises the PaintBackground event for the specified control.
@@ -568,9 +623,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def IsInputChar(self,*args):
-  """
+        pass
+
+    def IsInputChar(self, *args):
+        """
   IsInputChar(self: Control,charCode: Char) -> bool
 
   
@@ -585,9 +641,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
     false.
   """
-  pass
- def IsInputKey(self,*args):
-  """
+        pass
+
+    def IsInputKey(self, *args):
+        """
   IsInputKey(self: ListView,keyData: Keys) -> bool
 
   
@@ -596,9 +653,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    Returns: true if the specified key is a regular input key; otherwise,false.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -629,9 +687,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def NotifyInvalidate(self,*args):
-  """
+        pass
+
+    def NotifyInvalidate(self, *args):
+        """
   NotifyInvalidate(self: Control,invalidatedArea: Rectangle)
 
    Raises the System.Windows.Forms.Control.Invalidated event with a specified region of the control 
@@ -644,9 +703,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    invalidatedArea: A System.Drawing.Rectangle representing the area to invalidate.
   """
-  pass
- def OnAfterLabelEdit(self,*args):
-  """
+        pass
+
+    def OnAfterLabelEdit(self, *args):
+        """
   OnAfterLabelEdit(self: ListView,e: LabelEditEventArgs)
 
    Raises the System.Windows.Forms.ListView.AfterLabelEdit event.
@@ -655,9 +715,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.LabelEditEventArgs that contains the event data.
   """
-  pass
- def OnAutoSizeChanged(self,*args):
-  """
+        pass
+
+    def OnAutoSizeChanged(self, *args):
+        """
   OnAutoSizeChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.AutoSizeChanged event.
@@ -666,9 +727,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBackColorChanged(self,*args):
-  """
+        pass
+
+    def OnBackColorChanged(self, *args):
+        """
   OnBackColorChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BackColorChanged event.
@@ -677,9 +739,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBackgroundImageChanged(self,*args):
-  """
+        pass
+
+    def OnBackgroundImageChanged(self, *args):
+        """
   OnBackgroundImageChanged(self: ListView,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BackgroundImageChanged event.
@@ -688,9 +751,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBackgroundImageLayoutChanged(self,*args):
-  """
+        pass
+
+    def OnBackgroundImageLayoutChanged(self, *args):
+        """
   OnBackgroundImageLayoutChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BackgroundImageLayoutChanged event.
@@ -699,9 +763,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBeforeLabelEdit(self,*args):
-  """
+        pass
+
+    def OnBeforeLabelEdit(self, *args):
+        """
   OnBeforeLabelEdit(self: ListView,e: LabelEditEventArgs)
 
    Raises the System.Windows.Forms.ListView.BeforeLabelEdit event.
@@ -710,9 +775,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.LabelEditEventArgs that contains the event data.
   """
-  pass
- def OnBindingContextChanged(self,*args):
-  """
+        pass
+
+    def OnBindingContextChanged(self, *args):
+        """
   OnBindingContextChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BindingContextChanged event.
@@ -721,9 +787,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnCacheVirtualItems(self,*args):
-  """
+        pass
+
+    def OnCacheVirtualItems(self, *args):
+        """
   OnCacheVirtualItems(self: ListView,e: CacheVirtualItemsEventArgs)
 
    Raises the System.Windows.Forms.ListView.CacheVirtualItems event.
@@ -732,9 +799,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.CacheVirtualItemsEventArgs that contains the event data.
   """
-  pass
- def OnCausesValidationChanged(self,*args):
-  """
+        pass
+
+    def OnCausesValidationChanged(self, *args):
+        """
   OnCausesValidationChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.CausesValidationChanged event.
@@ -743,9 +811,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnChangeUICues(self,*args):
-  """
+        pass
+
+    def OnChangeUICues(self, *args):
+        """
   OnChangeUICues(self: Control,e: UICuesEventArgs)
 
    Raises the System.Windows.Forms.Control.ChangeUICues event.
@@ -754,9 +823,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.UICuesEventArgs that contains the event data.
   """
-  pass
- def OnClick(self,*args):
-  """
+        pass
+
+    def OnClick(self, *args):
+        """
   OnClick(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Click event.
@@ -765,9 +835,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnClientSizeChanged(self,*args):
-  """
+        pass
+
+    def OnClientSizeChanged(self, *args):
+        """
   OnClientSizeChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ClientSizeChanged event.
@@ -776,9 +847,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnColumnClick(self,*args):
-  """
+        pass
+
+    def OnColumnClick(self, *args):
+        """
   OnColumnClick(self: ListView,e: ColumnClickEventArgs)
 
    Raises the System.Windows.Forms.ListView.ColumnClick event.
@@ -787,9 +859,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.ColumnClickEventArgs that contains the event data.
   """
-  pass
- def OnColumnReordered(self,*args):
-  """
+        pass
+
+    def OnColumnReordered(self, *args):
+        """
   OnColumnReordered(self: ListView,e: ColumnReorderedEventArgs)
 
    Raises the System.Windows.Forms.ListView.ColumnReordered event.
@@ -798,9 +871,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: The System.Windows.Forms.ColumnReorderedEventArgs that contains the event data.
   """
-  pass
- def OnColumnWidthChanged(self,*args):
-  """
+        pass
+
+    def OnColumnWidthChanged(self, *args):
+        """
   OnColumnWidthChanged(self: ListView,e: ColumnWidthChangedEventArgs)
 
    Raises the System.Windows.Forms.ListView.ColumnWidthChanged event.
@@ -809,9 +883,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.ColumnWidthChangedEventArgs that contains the event data.
   """
-  pass
- def OnColumnWidthChanging(self,*args):
-  """
+        pass
+
+    def OnColumnWidthChanging(self, *args):
+        """
   OnColumnWidthChanging(self: ListView,e: ColumnWidthChangingEventArgs)
 
    Raises the System.Windows.Forms.ListView.ColumnWidthChanging event.
@@ -820,9 +895,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.ColumnWidthChangingEventArgs  that contains the event data.
   """
-  pass
- def OnContextMenuChanged(self,*args):
-  """
+        pass
+
+    def OnContextMenuChanged(self, *args):
+        """
   OnContextMenuChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ContextMenuChanged event.
@@ -831,9 +907,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnContextMenuStripChanged(self,*args):
-  """
+        pass
+
+    def OnContextMenuStripChanged(self, *args):
+        """
   OnContextMenuStripChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ContextMenuStripChanged event.
@@ -842,9 +919,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnControlAdded(self,*args):
-  """
+        pass
+
+    def OnControlAdded(self, *args):
+        """
   OnControlAdded(self: Control,e: ControlEventArgs)
 
    Raises the System.Windows.Forms.Control.ControlAdded event.
@@ -853,9 +931,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.ControlEventArgs that contains the event data.
   """
-  pass
- def OnControlRemoved(self,*args):
-  """
+        pass
+
+    def OnControlRemoved(self, *args):
+        """
   OnControlRemoved(self: Control,e: ControlEventArgs)
 
    Raises the System.Windows.Forms.Control.ControlRemoved event.
@@ -864,16 +943,18 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.ControlEventArgs that contains the event data.
   """
-  pass
- def OnCreateControl(self,*args):
-  """
+        pass
+
+    def OnCreateControl(self, *args):
+        """
   OnCreateControl(self: Control)
 
    Raises the System.Windows.Forms.Control.CreateControl method.
   """
-  pass
- def OnCursorChanged(self,*args):
-  """
+        pass
+
+    def OnCursorChanged(self, *args):
+        """
   OnCursorChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.CursorChanged event.
@@ -882,9 +963,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDockChanged(self,*args):
-  """
+        pass
+
+    def OnDockChanged(self, *args):
+        """
   OnDockChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.DockChanged event.
@@ -893,9 +975,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDoubleClick(self,*args):
-  """
+        pass
+
+    def OnDoubleClick(self, *args):
+        """
   OnDoubleClick(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.DoubleClick event.
@@ -904,15 +987,18 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDpiChangedAfterParent(self,*args):
-  """ OnDpiChangedAfterParent(self: Control,e: EventArgs) """
-  pass
- def OnDpiChangedBeforeParent(self,*args):
-  """ OnDpiChangedBeforeParent(self: Control,e: EventArgs) """
-  pass
- def OnDragDrop(self,*args):
-  """
+        pass
+
+    def OnDpiChangedAfterParent(self, *args):
+        """ OnDpiChangedAfterParent(self: Control,e: EventArgs) """
+        pass
+
+    def OnDpiChangedBeforeParent(self, *args):
+        """ OnDpiChangedBeforeParent(self: Control,e: EventArgs) """
+        pass
+
+    def OnDragDrop(self, *args):
+        """
   OnDragDrop(self: Control,drgevent: DragEventArgs)
 
    Raises the System.Windows.Forms.Control.DragDrop event.
@@ -921,9 +1007,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    drgevent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnDragEnter(self,*args):
-  """
+        pass
+
+    def OnDragEnter(self, *args):
+        """
   OnDragEnter(self: Control,drgevent: DragEventArgs)
 
    Raises the System.Windows.Forms.Control.DragEnter event.
@@ -932,9 +1019,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    drgevent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnDragLeave(self,*args):
-  """
+        pass
+
+    def OnDragLeave(self, *args):
+        """
   OnDragLeave(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.DragLeave event.
@@ -943,9 +1031,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDragOver(self,*args):
-  """
+        pass
+
+    def OnDragOver(self, *args):
+        """
   OnDragOver(self: Control,drgevent: DragEventArgs)
 
    Raises the System.Windows.Forms.Control.DragOver event.
@@ -954,9 +1043,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    drgevent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnDrawColumnHeader(self,*args):
-  """
+        pass
+
+    def OnDrawColumnHeader(self, *args):
+        """
   OnDrawColumnHeader(self: ListView,e: DrawListViewColumnHeaderEventArgs)
 
    Raises the System.Windows.Forms.ListView.DrawColumnHeader event.
@@ -965,9 +1055,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.DrawListViewColumnHeaderEventArgs that contains the event data.
   """
-  pass
- def OnDrawItem(self,*args):
-  """
+        pass
+
+    def OnDrawItem(self, *args):
+        """
   OnDrawItem(self: ListView,e: DrawListViewItemEventArgs)
 
    Raises the System.Windows.Forms.ListView.DrawItem event.
@@ -976,9 +1067,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.DrawListViewItemEventArgs that contains the event data.
   """
-  pass
- def OnDrawSubItem(self,*args):
-  """
+        pass
+
+    def OnDrawSubItem(self, *args):
+        """
   OnDrawSubItem(self: ListView,e: DrawListViewSubItemEventArgs)
 
    Raises the System.Windows.Forms.ListView.DrawSubItem event.
@@ -987,9 +1079,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.DrawListViewSubItemEventArgs that contains the event data.
   """
-  pass
- def OnEnabledChanged(self,*args):
-  """
+        pass
+
+    def OnEnabledChanged(self, *args):
+        """
   OnEnabledChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.EnabledChanged event.
@@ -998,9 +1091,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnEnter(self,*args):
-  """
+        pass
+
+    def OnEnter(self, *args):
+        """
   OnEnter(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Enter event.
@@ -1009,9 +1103,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnFontChanged(self,*args):
-  """
+        pass
+
+    def OnFontChanged(self, *args):
+        """
   OnFontChanged(self: ListView,e: EventArgs)
 
    Raises the FontChanged event.
@@ -1020,9 +1115,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: The System.EventArgs that contains the event data.
   """
-  pass
- def OnForeColorChanged(self,*args):
-  """
+        pass
+
+    def OnForeColorChanged(self, *args):
+        """
   OnForeColorChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ForeColorChanged event.
@@ -1031,9 +1127,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnGiveFeedback(self,*args):
-  """
+        pass
+
+    def OnGiveFeedback(self, *args):
+        """
   OnGiveFeedback(self: Control,gfbevent: GiveFeedbackEventArgs)
 
    Raises the System.Windows.Forms.Control.GiveFeedback event.
@@ -1042,9 +1139,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    gfbevent: A System.Windows.Forms.GiveFeedbackEventArgs that contains the event data.
   """
-  pass
- def OnGotFocus(self,*args):
-  """
+        pass
+
+    def OnGotFocus(self, *args):
+        """
   OnGotFocus(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.GotFocus event.
@@ -1053,23 +1151,26 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnHandleCreated(self,*args):
-  """
+        pass
+
+    def OnHandleCreated(self, *args):
+        """
   OnHandleCreated(self: ListView,e: EventArgs)
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnHandleDestroyed(self,*args):
-  """
+        pass
+
+    def OnHandleDestroyed(self, *args):
+        """
   OnHandleDestroyed(self: ListView,e: EventArgs)
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnHelpRequested(self,*args):
-  """
+        pass
+
+    def OnHelpRequested(self, *args):
+        """
   OnHelpRequested(self: Control,hevent: HelpEventArgs)
 
    Raises the System.Windows.Forms.Control.HelpRequested event.
@@ -1078,9 +1179,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    hevent: A System.Windows.Forms.HelpEventArgs that contains the event data.
   """
-  pass
- def OnImeModeChanged(self,*args):
-  """
+        pass
+
+    def OnImeModeChanged(self, *args):
+        """
   OnImeModeChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ImeModeChanged event.
@@ -1089,9 +1191,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnInvalidated(self,*args):
-  """
+        pass
+
+    def OnInvalidated(self, *args):
+        """
   OnInvalidated(self: Control,e: InvalidateEventArgs)
 
    Raises the System.Windows.Forms.Control.Invalidated event.
@@ -1100,9 +1203,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.Windows.Forms.InvalidateEventArgs that contains the event data.
   """
-  pass
- def OnItemActivate(self,*args):
-  """
+        pass
+
+    def OnItemActivate(self, *args):
+        """
   OnItemActivate(self: ListView,e: EventArgs)
 
    Raises the System.Windows.Forms.ListView.ItemActivate event.
@@ -1111,9 +1215,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnItemCheck(self,*args):
-  """
+        pass
+
+    def OnItemCheck(self, *args):
+        """
   OnItemCheck(self: ListView,ice: ItemCheckEventArgs)
 
    Raises the System.Windows.Forms.ListView.ItemCheck event.
@@ -1122,9 +1227,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    ice: An System.Windows.Forms.ItemCheckEventArgs that contains the event data.
   """
-  pass
- def OnItemChecked(self,*args):
-  """
+        pass
+
+    def OnItemChecked(self, *args):
+        """
   OnItemChecked(self: ListView,e: ItemCheckedEventArgs)
 
    Raises the System.Windows.Forms.ListView.ItemChecked event.
@@ -1133,9 +1239,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.Windows.Forms.ItemCheckedEventArgs that contains the event data.
   """
-  pass
- def OnItemDrag(self,*args):
-  """
+        pass
+
+    def OnItemDrag(self, *args):
+        """
   OnItemDrag(self: ListView,e: ItemDragEventArgs)
 
    Raises the System.Windows.Forms.ListView.ItemDrag event.
@@ -1144,9 +1251,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.Windows.Forms.ItemDragEventArgs that contains the event data.
   """
-  pass
- def OnItemMouseHover(self,*args):
-  """
+        pass
+
+    def OnItemMouseHover(self, *args):
+        """
   OnItemMouseHover(self: ListView,e: ListViewItemMouseHoverEventArgs)
 
    Raises the System.Windows.Forms.ListView.ItemMouseHover event.
@@ -1155,9 +1263,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.ListViewItemMouseHoverEventArgs that contains the event data.
   """
-  pass
- def OnItemSelectionChanged(self,*args):
-  """
+        pass
+
+    def OnItemSelectionChanged(self, *args):
+        """
   OnItemSelectionChanged(self: ListView,e: ListViewItemSelectionChangedEventArgs)
 
    Raises the System.Windows.Forms.ListView.ItemSelectionChanged event.
@@ -1166,9 +1275,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.ListViewItemSelectionChangedEventArgs that contains the event data.
   """
-  pass
- def OnKeyDown(self,*args):
-  """
+        pass
+
+    def OnKeyDown(self, *args):
+        """
   OnKeyDown(self: Control,e: KeyEventArgs)
 
    Raises the System.Windows.Forms.Control.KeyDown event.
@@ -1177,9 +1287,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.KeyEventArgs that contains the event data.
   """
-  pass
- def OnKeyPress(self,*args):
-  """
+        pass
+
+    def OnKeyPress(self, *args):
+        """
   OnKeyPress(self: Control,e: KeyPressEventArgs)
 
    Raises the System.Windows.Forms.Control.KeyPress event.
@@ -1188,9 +1299,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.KeyPressEventArgs that contains the event data.
   """
-  pass
- def OnKeyUp(self,*args):
-  """
+        pass
+
+    def OnKeyUp(self, *args):
+        """
   OnKeyUp(self: Control,e: KeyEventArgs)
 
    Raises the System.Windows.Forms.Control.KeyUp event.
@@ -1199,9 +1311,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.KeyEventArgs that contains the event data.
   """
-  pass
- def OnLayout(self,*args):
-  """
+        pass
+
+    def OnLayout(self, *args):
+        """
   OnLayout(self: Control,levent: LayoutEventArgs)
 
    Raises the System.Windows.Forms.Control.Layout event.
@@ -1210,9 +1323,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    levent: A System.Windows.Forms.LayoutEventArgs that contains the event data.
   """
-  pass
- def OnLeave(self,*args):
-  """
+        pass
+
+    def OnLeave(self, *args):
+        """
   OnLeave(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Leave event.
@@ -1221,9 +1335,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnLocationChanged(self,*args):
-  """
+        pass
+
+    def OnLocationChanged(self, *args):
+        """
   OnLocationChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.LocationChanged event.
@@ -1232,9 +1347,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnLostFocus(self,*args):
-  """
+        pass
+
+    def OnLostFocus(self, *args):
+        """
   OnLostFocus(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.LostFocus event.
@@ -1243,9 +1359,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMarginChanged(self,*args):
-  """
+        pass
+
+    def OnMarginChanged(self, *args):
+        """
   OnMarginChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.MarginChanged event.
@@ -1254,9 +1371,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseCaptureChanged(self,*args):
-  """
+        pass
+
+    def OnMouseCaptureChanged(self, *args):
+        """
   OnMouseCaptureChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.MouseCaptureChanged event.
@@ -1265,9 +1383,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseClick(self,*args):
-  """
+        pass
+
+    def OnMouseClick(self, *args):
+        """
   OnMouseClick(self: Control,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseClick event.
@@ -1276,9 +1395,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseDoubleClick(self,*args):
-  """
+        pass
+
+    def OnMouseDoubleClick(self, *args):
+        """
   OnMouseDoubleClick(self: Control,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseDoubleClick event.
@@ -1287,9 +1407,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseDown(self,*args):
-  """
+        pass
+
+    def OnMouseDown(self, *args):
+        """
   OnMouseDown(self: Control,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseDown event.
@@ -1298,9 +1419,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseEnter(self,*args):
-  """
+        pass
+
+    def OnMouseEnter(self, *args):
+        """
   OnMouseEnter(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.MouseEnter event.
@@ -1309,9 +1431,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseHover(self,*args):
-  """
+        pass
+
+    def OnMouseHover(self, *args):
+        """
   OnMouseHover(self: ListView,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.MouseHover event.
@@ -1320,16 +1443,18 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseLeave(self,*args):
-  """
+        pass
+
+    def OnMouseLeave(self, *args):
+        """
   OnMouseLeave(self: ListView,e: EventArgs)
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseMove(self,*args):
-  """
+        pass
+
+    def OnMouseMove(self, *args):
+        """
   OnMouseMove(self: Control,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseMove event.
@@ -1338,9 +1463,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseUp(self,*args):
-  """
+        pass
+
+    def OnMouseUp(self, *args):
+        """
   OnMouseUp(self: Control,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseUp event.
@@ -1349,9 +1475,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseWheel(self,*args):
-  """
+        pass
+
+    def OnMouseWheel(self, *args):
+        """
   OnMouseWheel(self: Control,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseWheel event.
@@ -1360,9 +1487,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMove(self,*args):
-  """
+        pass
+
+    def OnMove(self, *args):
+        """
   OnMove(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Move event.
@@ -1371,9 +1499,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnNotifyMessage(self,*args):
-  """
+        pass
+
+    def OnNotifyMessage(self, *args):
+        """
   OnNotifyMessage(self: Control,m: Message)
 
    Notifies the control of Windows messages.
@@ -1382,9 +1511,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    m: A System.Windows.Forms.Message that represents the Windows message.
   """
-  pass
- def OnPaddingChanged(self,*args):
-  """
+        pass
+
+    def OnPaddingChanged(self, *args):
+        """
   OnPaddingChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.PaddingChanged event.
@@ -1393,9 +1523,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.EventArgs that contains the event data.
   """
-  pass
- def OnPaint(self,*args):
-  """
+        pass
+
+    def OnPaint(self, *args):
+        """
   OnPaint(self: Control,e: PaintEventArgs)
 
    Raises the System.Windows.Forms.Control.Paint event.
@@ -1404,9 +1535,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def OnPaintBackground(self,*args):
-  """
+        pass
+
+    def OnPaintBackground(self, *args):
+        """
   OnPaintBackground(self: Control,pevent: PaintEventArgs)
 
    Paints the background of the control.
@@ -1415,9 +1547,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    pevent: A System.Windows.Forms.PaintEventArgs that contains information about the control to paint.
   """
-  pass
- def OnParentBackColorChanged(self,*args):
-  """
+        pass
+
+    def OnParentBackColorChanged(self, *args):
+        """
   OnParentBackColorChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BackColorChanged event when the 
@@ -1430,9 +1563,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentBackgroundImageChanged(self,*args):
-  """
+        pass
+
+    def OnParentBackgroundImageChanged(self, *args):
+        """
   OnParentBackgroundImageChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BackgroundImageChanged event when the 
@@ -1445,9 +1579,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentBindingContextChanged(self,*args):
-  """
+        pass
+
+    def OnParentBindingContextChanged(self, *args):
+        """
   OnParentBindingContextChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BindingContextChanged event when the 
@@ -1460,16 +1595,18 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentChanged(self,*args):
-  """
+        pass
+
+    def OnParentChanged(self, *args):
+        """
   OnParentChanged(self: ListView,e: EventArgs)
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentCursorChanged(self,*args):
-  """
+        pass
+
+    def OnParentCursorChanged(self, *args):
+        """
   OnParentCursorChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.CursorChanged event.
@@ -1478,9 +1615,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentEnabledChanged(self,*args):
-  """
+        pass
+
+    def OnParentEnabledChanged(self, *args):
+        """
   OnParentEnabledChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.EnabledChanged event when the 
@@ -1493,9 +1631,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentFontChanged(self,*args):
-  """
+        pass
+
+    def OnParentFontChanged(self, *args):
+        """
   OnParentFontChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.FontChanged event when the 
@@ -1508,9 +1647,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentForeColorChanged(self,*args):
-  """
+        pass
+
+    def OnParentForeColorChanged(self, *args):
+        """
   OnParentForeColorChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ForeColorChanged event when the 
@@ -1523,9 +1663,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentRightToLeftChanged(self,*args):
-  """
+        pass
+
+    def OnParentRightToLeftChanged(self, *args):
+        """
   OnParentRightToLeftChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.RightToLeftChanged event when the 
@@ -1538,9 +1679,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentVisibleChanged(self,*args):
-  """
+        pass
+
+    def OnParentVisibleChanged(self, *args):
+        """
   OnParentVisibleChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.VisibleChanged event when the 
@@ -1553,9 +1695,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnPreviewKeyDown(self,*args):
-  """
+        pass
+
+    def OnPreviewKeyDown(self, *args):
+        """
   OnPreviewKeyDown(self: Control,e: PreviewKeyDownEventArgs)
 
    Raises the System.Windows.Forms.Control.PreviewKeyDown event.
@@ -1564,9 +1707,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.PreviewKeyDownEventArgs that contains the event data.
   """
-  pass
- def OnPrint(self,*args):
-  """
+        pass
+
+    def OnPrint(self, *args):
+        """
   OnPrint(self: Control,e: PaintEventArgs)
 
    Raises the System.Windows.Forms.Control.Paint event.
@@ -1575,9 +1719,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def OnQueryContinueDrag(self,*args):
-  """
+        pass
+
+    def OnQueryContinueDrag(self, *args):
+        """
   OnQueryContinueDrag(self: Control,qcdevent: QueryContinueDragEventArgs)
 
    Raises the System.Windows.Forms.Control.QueryContinueDrag event.
@@ -1586,9 +1731,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    qcdevent: A System.Windows.Forms.QueryContinueDragEventArgs that contains the event data.
   """
-  pass
- def OnRegionChanged(self,*args):
-  """
+        pass
+
+    def OnRegionChanged(self, *args):
+        """
   OnRegionChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.RegionChanged event.
@@ -1597,16 +1743,18 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnResize(self,*args):
-  """
+        pass
+
+    def OnResize(self, *args):
+        """
   OnResize(self: ListView,e: EventArgs)
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnRetrieveVirtualItem(self,*args):
-  """
+        pass
+
+    def OnRetrieveVirtualItem(self, *args):
+        """
   OnRetrieveVirtualItem(self: ListView,e: RetrieveVirtualItemEventArgs)
 
    Raises the System.Windows.Forms.ListView.RetrieveVirtualItem event.
@@ -1615,9 +1763,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.RetrieveVirtualItemEventArgs that contains the event data.
   """
-  pass
- def OnRightToLeftChanged(self,*args):
-  """
+        pass
+
+    def OnRightToLeftChanged(self, *args):
+        """
   OnRightToLeftChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.RightToLeftChanged event.
@@ -1626,9 +1775,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnRightToLeftLayoutChanged(self,*args):
-  """
+        pass
+
+    def OnRightToLeftLayoutChanged(self, *args):
+        """
   OnRightToLeftLayoutChanged(self: ListView,e: EventArgs)
 
    Raises the System.Windows.Forms.ListView.RightToLeftLayoutChanged event.
@@ -1637,9 +1787,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnSearchForVirtualItem(self,*args):
-  """
+        pass
+
+    def OnSearchForVirtualItem(self, *args):
+        """
   OnSearchForVirtualItem(self: ListView,e: SearchForVirtualItemEventArgs)
 
    Raises the System.Windows.Forms.ListView.SearchForVirtualItem event.
@@ -1648,9 +1799,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.SearchForVirtualItemEventArgs that contains the event data.
   """
-  pass
- def OnSelectedIndexChanged(self,*args):
-  """
+        pass
+
+    def OnSelectedIndexChanged(self, *args):
+        """
   OnSelectedIndexChanged(self: ListView,e: EventArgs)
 
    Raises the System.Windows.Forms.ListView.SelectedIndexChanged event.
@@ -1659,9 +1811,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnSizeChanged(self,*args):
-  """
+        pass
+
+    def OnSizeChanged(self, *args):
+        """
   OnSizeChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.SizeChanged event.
@@ -1670,9 +1823,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnStyleChanged(self,*args):
-  """
+        pass
+
+    def OnStyleChanged(self, *args):
+        """
   OnStyleChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.StyleChanged event.
@@ -1681,16 +1835,18 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnSystemColorsChanged(self,*args):
-  """
+        pass
+
+    def OnSystemColorsChanged(self, *args):
+        """
   OnSystemColorsChanged(self: ListView,e: EventArgs)
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnTabIndexChanged(self,*args):
-  """
+        pass
+
+    def OnTabIndexChanged(self, *args):
+        """
   OnTabIndexChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.TabIndexChanged event.
@@ -1699,9 +1855,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnTabStopChanged(self,*args):
-  """
+        pass
+
+    def OnTabStopChanged(self, *args):
+        """
   OnTabStopChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.TabStopChanged event.
@@ -1710,9 +1867,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnTextChanged(self,*args):
-  """
+        pass
+
+    def OnTextChanged(self, *args):
+        """
   OnTextChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.TextChanged event.
@@ -1721,9 +1879,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnValidated(self,*args):
-  """
+        pass
+
+    def OnValidated(self, *args):
+        """
   OnValidated(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Validated event.
@@ -1732,9 +1891,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnValidating(self,*args):
-  """
+        pass
+
+    def OnValidating(self, *args):
+        """
   OnValidating(self: Control,e: CancelEventArgs)
 
    Raises the System.Windows.Forms.Control.Validating event.
@@ -1743,9 +1903,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.ComponentModel.CancelEventArgs that contains the event data.
   """
-  pass
- def OnVirtualItemsSelectionRangeChanged(self,*args):
-  """
+        pass
+
+    def OnVirtualItemsSelectionRangeChanged(self, *args):
+        """
   OnVirtualItemsSelectionRangeChanged(self: ListView,e: ListViewVirtualItemsSelectionRangeChangedEventArgs)
 
    Raises the System.Windows.Forms.ListView.VirtualItemsSelectionRangeChanged event.
@@ -1756,9 +1917,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
     event data.
   """
-  pass
- def OnVisibleChanged(self,*args):
-  """
+        pass
+
+    def OnVisibleChanged(self, *args):
+        """
   OnVisibleChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.VisibleChanged event.
@@ -1767,9 +1929,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def ProcessCmdKey(self,*args):
-  """
+        pass
+
+    def ProcessCmdKey(self, *args):
+        """
   ProcessCmdKey(self: Control,msg: Message,keyData: Keys) -> (bool,Message)
 
   
@@ -1788,9 +1951,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    Returns: true if the character was processed by the control; otherwise,false.
   """
-  pass
- def ProcessDialogChar(self,*args):
-  """
+        pass
+
+    def ProcessDialogChar(self, *args):
+        """
   ProcessDialogChar(self: Control,charCode: Char) -> bool
 
   
@@ -1803,9 +1967,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    Returns: true if the character was processed by the control; otherwise,false.
   """
-  pass
- def ProcessDialogKey(self,*args):
-  """
+        pass
+
+    def ProcessDialogKey(self, *args):
+        """
   ProcessDialogKey(self: Control,keyData: Keys) -> bool
 
   
@@ -1818,9 +1983,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    Returns: true if the key was processed by the control; otherwise,false.
   """
-  pass
- def ProcessKeyEventArgs(self,*args):
-  """
+        pass
+
+    def ProcessKeyEventArgs(self, *args):
+        """
   ProcessKeyEventArgs(self: Control,m: Message) -> (bool,Message)
 
   
@@ -1837,9 +2003,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    Returns: true if the message was processed by the control; otherwise,false.
   """
-  pass
- def ProcessKeyMessage(self,*args):
-  """
+        pass
+
+    def ProcessKeyMessage(self, *args):
+        """
   ProcessKeyMessage(self: Control,m: Message) -> (bool,Message)
 
   
@@ -1856,9 +2023,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    Returns: true if the message was processed by the control; otherwise,false.
   """
-  pass
- def ProcessKeyPreview(self,*args):
-  """
+        pass
+
+    def ProcessKeyPreview(self, *args):
+        """
   ProcessKeyPreview(self: Control,m: Message) -> (bool,Message)
 
   
@@ -1875,9 +2043,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    Returns: true if the message was processed by the control; otherwise,false.
   """
-  pass
- def ProcessMnemonic(self,*args):
-  """
+        pass
+
+    def ProcessMnemonic(self, *args):
+        """
   ProcessMnemonic(self: Control,charCode: Char) -> bool
 
   
@@ -1890,9 +2059,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    Returns: true if the character was processed as a mnemonic by the control; otherwise,false.
   """
-  pass
- def RaiseDragEvent(self,*args):
-  """
+        pass
+
+    def RaiseDragEvent(self, *args):
+        """
   RaiseDragEvent(self: Control,key: object,e: DragEventArgs)
 
    Raises the appropriate drag event.
@@ -1903,9 +2073,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def RaiseKeyEvent(self,*args):
-  """
+        pass
+
+    def RaiseKeyEvent(self, *args):
+        """
   RaiseKeyEvent(self: Control,key: object,e: KeyEventArgs)
 
    Raises the appropriate key event.
@@ -1916,9 +2087,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.KeyEventArgs that contains the event data.
   """
-  pass
- def RaiseMouseEvent(self,*args):
-  """
+        pass
+
+    def RaiseMouseEvent(self, *args):
+        """
   RaiseMouseEvent(self: Control,key: object,e: MouseEventArgs)
 
    Raises the appropriate mouse event.
@@ -1929,9 +2101,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def RaisePaintEvent(self,*args):
-  """
+        pass
+
+    def RaisePaintEvent(self, *args):
+        """
   RaisePaintEvent(self: Control,key: object,e: PaintEventArgs)
 
    Raises the appropriate paint event.
@@ -1942,25 +2115,28 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    e: A System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def RealizeProperties(self,*args):
-  """
+        pass
+
+    def RealizeProperties(self, *args):
+        """
   RealizeProperties(self: ListView)
 
    Initializes the properties of the System.Windows.Forms.ListView control that manage the 
 
     appearance of the control.
   """
-  pass
- def RecreateHandle(self,*args):
-  """
+        pass
+
+    def RecreateHandle(self, *args):
+        """
   RecreateHandle(self: Control)
 
    Forces the re-creation of the handle for the control.
   """
-  pass
- def RedrawItems(self,startIndex,endIndex,invalidateOnly):
-  """
+        pass
+
+    def RedrawItems(self, startIndex, endIndex, invalidateOnly):
+        """
   RedrawItems(self: ListView,startIndex: int,endIndex: int,invalidateOnly: bool)
 
    Forces a range of System.Windows.Forms.ListViewItem objects to be redrawn.
@@ -1973,19 +2149,22 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    invalidateOnly: true to invalidate the range of items; false to invalidate and repaint the items.
   """
-  pass
- def RescaleConstantsForDpi(self,*args):
-  """ RescaleConstantsForDpi(self: Control,deviceDpiOld: int,deviceDpiNew: int) """
-  pass
- def ResetMouseEventArgs(self,*args):
-  """
+        pass
+
+    def RescaleConstantsForDpi(self, *args):
+        """ RescaleConstantsForDpi(self: Control,deviceDpiOld: int,deviceDpiNew: int) """
+        pass
+
+    def ResetMouseEventArgs(self, *args):
+        """
   ResetMouseEventArgs(self: Control)
 
    Resets the control to handle the System.Windows.Forms.Control.MouseLeave event.
   """
-  pass
- def RtlTranslateAlignment(self,*args):
-  """
+        pass
+
+    def RtlTranslateAlignment(self, *args):
+        """
   RtlTranslateAlignment(self: Control,align: ContentAlignment) -> ContentAlignment
 
   
@@ -2034,9 +2213,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    Returns: One of the System.Windows.Forms.HorizontalAlignment values.
   """
-  pass
- def RtlTranslateContent(self,*args):
-  """
+        pass
+
+    def RtlTranslateContent(self, *args):
+        """
   RtlTranslateContent(self: Control,align: ContentAlignment) -> ContentAlignment
 
   
@@ -2053,9 +2233,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    Returns: One of the System.Drawing.ContentAlignment values.
   """
-  pass
- def RtlTranslateHorizontal(self,*args):
-  """
+        pass
+
+    def RtlTranslateHorizontal(self, *args):
+        """
   RtlTranslateHorizontal(self: Control,align: HorizontalAlignment) -> HorizontalAlignment
 
   
@@ -2072,9 +2253,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    Returns: One of the System.Windows.Forms.HorizontalAlignment values.
   """
-  pass
- def RtlTranslateLeftRight(self,*args):
-  """
+        pass
+
+    def RtlTranslateLeftRight(self, *args):
+        """
   RtlTranslateLeftRight(self: Control,align: LeftRightAlignment) -> LeftRightAlignment
 
   
@@ -2091,9 +2273,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    Returns: One of the System.Windows.Forms.LeftRightAlignment values.
   """
-  pass
- def ScaleControl(self,*args):
-  """
+        pass
+
+    def ScaleControl(self, *args):
+        """
   ScaleControl(self: Control,factor: SizeF,specified: BoundsSpecified)
 
    Scales a control's location,size,padding and margin.
@@ -2106,9 +2289,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
     when defining its size and position.
   """
-  pass
- def ScaleCore(self,*args):
-  """
+        pass
+
+    def ScaleCore(self, *args):
+        """
   ScaleCore(self: Control,dx: Single,dy: Single)
 
    This method is not relevant for this class.
@@ -2119,9 +2303,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    dy: The vertical scaling factor.
   """
-  pass
- def Select(self):
-  """
+        pass
+
+    def Select(self):
+        """
   Select(self: Control,directed: bool,forward: bool)
 
    Activates a child control. Optionally specifies the direction in the tab order to select the 
@@ -2136,9 +2321,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    forward: true to move forward in the tab order; false to move backward in the tab order.
   """
-  pass
- def SetAutoSizeMode(self,*args):
-  """
+        pass
+
+    def SetAutoSizeMode(self, *args):
+        """
   SetAutoSizeMode(self: Control,mode: AutoSizeMode)
 
    Sets a value indicating how a control will behave when its System.Windows.Forms.Control.AutoSize 
@@ -2151,9 +2337,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    mode: One of the System.Windows.Forms.AutoSizeMode values.
   """
-  pass
- def SetBoundsCore(self,*args):
-  """
+        pass
+
+    def SetBoundsCore(self, *args):
+        """
   SetBoundsCore(self: Control,x: int,y: int,width: int,height: int,specified: BoundsSpecified)
 
    Performs the work of setting the specified bounds of this control.
@@ -2170,9 +2357,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    specified: A bitwise combination of the System.Windows.Forms.BoundsSpecified values.
   """
-  pass
- def SetClientSizeCore(self,*args):
-  """
+        pass
+
+    def SetClientSizeCore(self, *args):
+        """
   SetClientSizeCore(self: Control,x: int,y: int)
 
    Sets the size of the client area of the control.
@@ -2183,9 +2371,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    y: The client area height,in pixels.
   """
-  pass
- def SetStyle(self,*args):
-  """
+        pass
+
+    def SetStyle(self, *args):
+        """
   SetStyle(self: Control,flag: ControlStyles,value: bool)
 
    Sets a specified System.Windows.Forms.ControlStyles flag to either true or false.
@@ -2196,9 +2385,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    value: true to apply the specified style to the control; otherwise,false.
   """
-  pass
- def SetTopLevel(self,*args):
-  """
+        pass
+
+    def SetTopLevel(self, *args):
+        """
   SetTopLevel(self: Control,value: bool)
 
    Sets the control as the top-level control.
@@ -2207,9 +2397,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    value: true to set the control as the top-level control; otherwise,false.
   """
-  pass
- def SetVisibleCore(self,*args):
-  """
+        pass
+
+    def SetVisibleCore(self, *args):
+        """
   SetVisibleCore(self: Control,value: bool)
 
    Sets the control to the specified visible state.
@@ -2218,9 +2409,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    value: true to make the control visible; otherwise,false.
   """
-  pass
- def SizeFromClientSize(self,*args):
-  """
+        pass
+
+    def SizeFromClientSize(self, *args):
+        """
   SizeFromClientSize(self: Control,clientSize: Size) -> Size
 
   
@@ -2233,16 +2425,18 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    Returns: A System.Drawing.Size value representing the height and width of the entire control.
   """
-  pass
- def Sort(self):
-  """
+        pass
+
+    def Sort(self):
+        """
   Sort(self: ListView)
 
    Sorts the items of the list view.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: ListView) -> str
 
   
@@ -2255,9 +2449,10 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
     not 0.
   """
-  pass
- def UpdateBounds(self,*args):
-  """
+        pass
+
+    def UpdateBounds(self, *args):
+        """
   UpdateBounds(self: Control,x: int,y: int,width: int,height: int,clientWidth: int,clientHeight: int)
 
    Updates the bounds of the control with the specified size,location,and client size.
@@ -2294,30 +2489,34 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    Updates the bounds of the control with the current size and location.
   """
-  pass
- def UpdateExtendedStyles(self,*args):
-  """
+        pass
+
+    def UpdateExtendedStyles(self, *args):
+        """
   UpdateExtendedStyles(self: ListView)
 
    Updates the extended styles applied to the list view control.
   """
-  pass
- def UpdateStyles(self,*args):
-  """
+        pass
+
+    def UpdateStyles(self, *args):
+        """
   UpdateStyles(self: Control)
 
    Forces the assigned styles to be reapplied to the control.
   """
-  pass
- def UpdateZOrder(self,*args):
-  """
+        pass
+
+    def UpdateZOrder(self, *args):
+        """
   UpdateZOrder(self: Control)
 
    Updates the control in its parent's z-order.
   """
-  pass
- def WndProc(self,*args):
-  """
+        pass
+
+    def WndProc(self, *args):
+        """
   WndProc(self: ListView,m: Message) -> Message
 
   
@@ -2328,30 +2527,37 @@ class ListView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlace
 
    m: The Windows System.Windows.Forms.Message to process.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- Activation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the type of action the user must take to activate an item.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Activation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the type of action the user must take to activate an item.
 
 
 
@@ -2363,8 +2569,8 @@ Set: Activation(self: ListView)=value
 
 """
 
- Alignment=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the alignment of items in the control.
+    Alignment = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the alignment of items in the control.
 
 
 
@@ -2376,8 +2582,10 @@ Set: Alignment(self: ListView)=value
 
 """
 
- AllowColumnReorder=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the user can drag column headers to reorder columns in the control.
+    AllowColumnReorder = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the user can drag column headers to reorder columns in the control.
 
 
 
@@ -2389,8 +2597,10 @@ Set: AllowColumnReorder(self: ListView)=value
 
 """
 
- AutoArrange=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets whether icons are automatically kept arranged.
+    AutoArrange = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets whether icons are automatically kept arranged.
 
 
 
@@ -2402,8 +2612,8 @@ Set: AutoArrange(self: ListView)=value
 
 """
 
- BackColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the background color.
+    BackColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the background color.
 
 
 
@@ -2415,8 +2625,10 @@ Set: BackColor(self: ListView)=value
 
 """
 
- BackgroundImageLayout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets an System.Windows.Forms.ImageLayout value.
+    BackgroundImageLayout = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets an System.Windows.Forms.ImageLayout value.
 
 
 
@@ -2428,8 +2640,10 @@ Set: BackgroundImageLayout(self: ListView)=value
 
 """
 
- BackgroundImageTiled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the background image of the System.Windows.Forms.ListView should be tiled.
+    BackgroundImageTiled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the background image of the System.Windows.Forms.ListView should be tiled.
 
 
 
@@ -2441,8 +2655,10 @@ Set: BackgroundImageTiled(self: ListView)=value
 
 """
 
- BorderStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the border style of the control.
+    BorderStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the border style of the control.
 
 
 
@@ -2454,22 +2670,28 @@ Set: BorderStyle(self: ListView)=value
 
 """
 
- CanEnableIme=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Windows.Forms.Control.ImeMode property can be set to an active value,to enable IME support.
+    CanEnableIme = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Windows.Forms.Control.ImeMode property can be set to an active value,to enable IME support.
 
 
 
 """
 
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determines if events can be raised on the control.
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Determines if events can be raised on the control.
 
 
 
 """
 
- CheckBoxes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether a check box appears next to each item in the control.
+    CheckBoxes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether a check box appears next to each item in the control.
 
 
 
@@ -2481,8 +2703,10 @@ Set: CheckBoxes(self: ListView)=value
 
 """
 
- CheckedIndices=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the indexes of the currently checked items in the control.
+    CheckedIndices = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the indexes of the currently checked items in the control.
 
 
 
@@ -2492,8 +2716,10 @@ Get: CheckedIndices(self: ListView) -> CheckedIndexCollection
 
 """
 
- CheckedItems=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the currently checked items in the control.
+    CheckedItems = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the currently checked items in the control.
 
 
 
@@ -2503,8 +2729,8 @@ Get: CheckedItems(self: ListView) -> CheckedListViewItemCollection
 
 """
 
- Columns=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of all column headers that appear in the control.
+    Columns = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the collection of all column headers that appear in the control.
 
 
 
@@ -2514,75 +2740,97 @@ Get: Columns(self: ListView) -> ColumnHeaderCollection
 
 """
 
- CreateParams=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant for this class.
+    CreateParams = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property is not relevant for this class.
 
 
 
 """
 
- DefaultCursor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the default cursor for the control.
+    DefaultCursor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the default cursor for the control.
 
 
 
 """
 
- DefaultImeMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the default Input Method Editor (IME) mode supported by the control.
+    DefaultImeMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the default Input Method Editor (IME) mode supported by the control.
 
 
 
 """
 
- DefaultMargin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the space,in pixels,that is specified by default between controls.
+    DefaultMargin = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the space,in pixels,that is specified by default between controls.
 
 
 
 """
 
- DefaultMaximumSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the length and height,in pixels,that is specified as the default maximum size of a control.
+    DefaultMaximumSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the length and height,in pixels,that is specified as the default maximum size of a control.
 
 
 
 """
 
- DefaultMinimumSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the length and height,in pixels,that is specified as the default minimum size of a control.
+    DefaultMinimumSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the length and height,in pixels,that is specified as the default minimum size of a control.
 
 
 
 """
 
- DefaultPadding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the internal spacing,in pixels,of the contents of a control.
+    DefaultPadding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the internal spacing,in pixels,of the contents of a control.
 
 
 
 """
 
- DefaultSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    DefaultSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
-
-
-
-"""
-
- DoubleBuffered=property(lambda self: object(),lambda self,v: None,lambda self: None)
-
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- FocusedItem=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the item in the control that currently has focus.
+    DoubleBuffered = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+
+
+
+"""
+
+    FocusedItem = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the item in the control that currently has focus.
 
 
 
@@ -2594,15 +2842,17 @@ Set: FocusedItem(self: ListView)=value
 
 """
 
- FontHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the height of the font of the control.
+    FontHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the height of the font of the control.
 
 
 
 """
 
- ForeColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the foreground color.
+    ForeColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the foreground color.
 
 
 
@@ -2614,8 +2864,10 @@ Set: ForeColor(self: ListView)=value
 
 """
 
- FullRowSelect=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether clicking an item selects all its subitems.
+    FullRowSelect = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether clicking an item selects all its subitems.
 
 
 
@@ -2627,8 +2879,8 @@ Set: FullRowSelect(self: ListView)=value
 
 """
 
- GridLines=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether grid lines appear between the rows and columns containing the items and subitems in the control.
+    GridLines = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether grid lines appear between the rows and columns containing the items and subitems in the control.
 
 
 
@@ -2640,8 +2892,8 @@ Set: GridLines(self: ListView)=value
 
 """
 
- Groups=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of System.Windows.Forms.ListViewGroup objects assigned to the control.
+    Groups = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the collection of System.Windows.Forms.ListViewGroup objects assigned to the control.
 
 
 
@@ -2651,8 +2903,10 @@ Get: Groups(self: ListView) -> ListViewGroupCollection
 
 """
 
- HeaderStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the column header style.
+    HeaderStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the column header style.
 
 
 
@@ -2664,8 +2918,10 @@ Set: HeaderStyle(self: ListView)=value
 
 """
 
- HideSelection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the selected item in the control remains highlighted when the control loses focus.
+    HideSelection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the selected item in the control remains highlighted when the control loses focus.
 
 
 
@@ -2677,8 +2933,10 @@ Set: HideSelection(self: ListView)=value
 
 """
 
- HotTracking=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the text of an item or subitem has the appearance of a hyperlink when the mouse pointer passes over it.
+    HotTracking = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the text of an item or subitem has the appearance of a hyperlink when the mouse pointer passes over it.
 
 
 
@@ -2690,8 +2948,10 @@ Set: HotTracking(self: ListView)=value
 
 """
 
- HoverSelection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether an item is automatically selected when the mouse pointer remains over the item for a few seconds.
+    HoverSelection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether an item is automatically selected when the mouse pointer remains over the item for a few seconds.
 
 
 
@@ -2703,15 +2963,19 @@ Set: HoverSelection(self: ListView)=value
 
 """
 
- ImeModeBase=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the IME mode of a control.
+    ImeModeBase = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the IME mode of a control.
 
 
 
 """
 
- InsertionMark=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an object used to indicate the expected drop location when an item is dragged within a System.Windows.Forms.ListView control.
+    InsertionMark = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets an object used to indicate the expected drop location when an item is dragged within a System.Windows.Forms.ListView control.
 
 
 
@@ -2721,8 +2985,8 @@ Get: InsertionMark(self: ListView) -> ListViewInsertionMark
 
 """
 
- Items=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection containing all items in the control.
+    Items = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a collection containing all items in the control.
 
 
 
@@ -2732,8 +2996,8 @@ Get: Items(self: ListView) -> ListViewItemCollection
 
 """
 
- LabelEdit=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the user can edit the labels of items in the control.
+    LabelEdit = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the user can edit the labels of items in the control.
 
 
 
@@ -2745,8 +3009,8 @@ Set: LabelEdit(self: ListView)=value
 
 """
 
- LabelWrap=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether item labels wrap when items are displayed in the control as icons.
+    LabelWrap = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether item labels wrap when items are displayed in the control as icons.
 
 
 
@@ -2758,8 +3022,10 @@ Set: LabelWrap(self: ListView)=value
 
 """
 
- LargeImageList=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Windows.Forms.ImageList to use when displaying items as large icons in the control.
+    LargeImageList = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Windows.Forms.ImageList to use when displaying items as large icons in the control.
 
 
 
@@ -2771,8 +3037,10 @@ Set: LargeImageList(self: ListView)=value
 
 """
 
- ListViewItemSorter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the sorting comparer for the control.
+    ListViewItemSorter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the sorting comparer for the control.
 
 
 
@@ -2784,8 +3052,10 @@ Set: ListViewItemSorter(self: ListView)=value
 
 """
 
- MultiSelect=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether multiple items can be selected.
+    MultiSelect = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether multiple items can be selected.
 
 
 
@@ -2797,8 +3067,8 @@ Set: MultiSelect(self: ListView)=value
 
 """
 
- OwnerDraw=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the System.Windows.Forms.ListView control is drawn by the operating system or by code that you provide.
+    OwnerDraw = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the System.Windows.Forms.ListView control is drawn by the operating system or by code that you provide.
 
 
 
@@ -2810,8 +3080,8 @@ Set: OwnerDraw(self: ListView)=value
 
 """
 
- Padding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the space between the System.Windows.Forms.ListView control and its contents.
+    Padding = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the space between the System.Windows.Forms.ListView control and its contents.
 
 
 
@@ -2823,22 +3093,28 @@ Set: Padding(self: ListView)=value
 
 """
 
- RenderRightToLeft=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is now obsolete.
+    RenderRightToLeft = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property is now obsolete.
 
 
 
 """
 
- ResizeRedraw=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the control redraws itself when resized.
+    ResizeRedraw = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the control redraws itself when resized.
 
 
 
 """
 
- RightToLeftLayout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the control is laid out from right to left.
+    RightToLeftLayout = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the control is laid out from right to left.
 
 
 
@@ -2850,15 +3126,19 @@ Set: RightToLeftLayout(self: ListView)=value
 
 """
 
- ScaleChildren=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that determines the scaling of child controls.
+    ScaleChildren = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that determines the scaling of child controls.
 
 
 
 """
 
- Scrollable=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether a scroll bar is added to the control when there is not enough room to display all items.
+    Scrollable = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether a scroll bar is added to the control when there is not enough room to display all items.
 
 
 
@@ -2870,8 +3150,10 @@ Set: Scrollable(self: ListView)=value
 
 """
 
- SelectedIndices=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the indexes of the selected items in the control.
+    SelectedIndices = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the indexes of the selected items in the control.
 
 
 
@@ -2881,8 +3163,10 @@ Get: SelectedIndices(self: ListView) -> SelectedIndexCollection
 
 """
 
- SelectedItems=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the items that are selected in the control.
+    SelectedItems = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the items that are selected in the control.
 
 
 
@@ -2892,15 +3176,19 @@ Get: SelectedItems(self: ListView) -> SelectedListViewItemCollection
 
 """
 
- ShowFocusCues=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the control should display focus rectangles.
+    ShowFocusCues = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the control should display focus rectangles.
 
 
 
 """
 
- ShowGroups=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether items are displayed in groups.
+    ShowGroups = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether items are displayed in groups.
 
 
 
@@ -2912,8 +3200,10 @@ Set: ShowGroups(self: ListView)=value
 
 """
 
- ShowItemToolTips=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether ToolTips are shown for the System.Windows.Forms.ListViewItem objects contained in the System.Windows.Forms.ListView.
+    ShowItemToolTips = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether ToolTips are shown for the System.Windows.Forms.ListViewItem objects contained in the System.Windows.Forms.ListView.
 
 
 
@@ -2925,15 +3215,19 @@ Set: ShowItemToolTips(self: ListView)=value
 
 """
 
- ShowKeyboardCues=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the user interface is in the appropriate state to show or hide keyboard accelerators.
+    ShowKeyboardCues = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the user interface is in the appropriate state to show or hide keyboard accelerators.
 
 
 
 """
 
- SmallImageList=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Windows.Forms.ImageList to use when displaying items as small icons in the control.
+    SmallImageList = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Windows.Forms.ImageList to use when displaying items as small icons in the control.
 
 
 
@@ -2945,8 +3239,8 @@ Set: SmallImageList(self: ListView)=value
 
 """
 
- Sorting=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the sort order for items in the control.
+    Sorting = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the sort order for items in the control.
 
 
 
@@ -2958,8 +3252,10 @@ Set: Sorting(self: ListView)=value
 
 """
 
- StateImageList=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Windows.Forms.ImageList associated with application-defined states in the control.
+    StateImageList = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Windows.Forms.ImageList associated with application-defined states in the control.
 
 
 
@@ -2971,8 +3267,8 @@ Set: StateImageList(self: ListView)=value
 
 """
 
- Text=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant for this class.
+    Text = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """This property is not relevant for this class.
 
 
 
@@ -2984,8 +3280,8 @@ Set: Text(self: ListView)=value
 
 """
 
- TileSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the size of the tiles shown in tile view.
+    TileSize = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the size of the tiles shown in tile view.
 
 
 
@@ -2997,8 +3293,8 @@ Set: TileSize(self: ListView)=value
 
 """
 
- TopItem=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the first visible item in the control.
+    TopItem = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the first visible item in the control.
 
 
 
@@ -3010,8 +3306,10 @@ Set: TopItem(self: ListView)=value
 
 """
 
- UseCompatibleStateImageBehavior=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the System.Windows.Forms.ListView uses state image behavior that is compatible with the .NET Framework 1.1 or the .NET Framework 2.0.
+    UseCompatibleStateImageBehavior = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the System.Windows.Forms.ListView uses state image behavior that is compatible with the .NET Framework 1.1 or the .NET Framework 2.0.
 
 
 
@@ -3023,8 +3321,8 @@ Set: UseCompatibleStateImageBehavior(self: ListView)=value
 
 """
 
- View=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets how items are displayed in the control.
+    View = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets how items are displayed in the control.
 
 
 
@@ -3036,8 +3334,10 @@ Set: View(self: ListView)=value
 
 """
 
- VirtualListSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the number of System.Windows.Forms.ListViewItem objects contained in the list when in virtual mode.
+    VirtualListSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the number of System.Windows.Forms.ListViewItem objects contained in the list when in virtual mode.
 
 
 
@@ -3049,8 +3349,10 @@ Set: VirtualListSize(self: ListView)=value
 
 """
 
- VirtualMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether you have provided your own data-management operations for the System.Windows.Forms.ListView control.
+    VirtualMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether you have provided your own data-management operations for the System.Windows.Forms.ListView control.
 
 
 
@@ -3062,36 +3364,34 @@ Set: VirtualMode(self: ListView)=value
 
 """
 
-
- AfterLabelEdit=None
- BackgroundImageLayoutChanged=None
- BeforeLabelEdit=None
- CacheVirtualItems=None
- CheckedIndexCollection=None
- CheckedListViewItemCollection=None
- ColumnClick=None
- ColumnHeaderCollection=None
- ColumnReordered=None
- ColumnWidthChanged=None
- ColumnWidthChanging=None
- DrawColumnHeader=None
- DrawItem=None
- DrawSubItem=None
- ItemActivate=None
- ItemCheck=None
- ItemChecked=None
- ItemDrag=None
- ItemMouseHover=None
- ItemSelectionChanged=None
- ListViewItemCollection=None
- PaddingChanged=None
- Paint=None
- RetrieveVirtualItem=None
- RightToLeftLayoutChanged=None
- SearchForVirtualItem=None
- SelectedIndexChanged=None
- SelectedIndexCollection=None
- SelectedListViewItemCollection=None
- TextChanged=None
- VirtualItemsSelectionRangeChanged=None
-
+    AfterLabelEdit = None
+    BackgroundImageLayoutChanged = None
+    BeforeLabelEdit = None
+    CacheVirtualItems = None
+    CheckedIndexCollection = None
+    CheckedListViewItemCollection = None
+    ColumnClick = None
+    ColumnHeaderCollection = None
+    ColumnReordered = None
+    ColumnWidthChanged = None
+    ColumnWidthChanging = None
+    DrawColumnHeader = None
+    DrawItem = None
+    DrawSubItem = None
+    ItemActivate = None
+    ItemCheck = None
+    ItemChecked = None
+    ItemDrag = None
+    ItemMouseHover = None
+    ItemSelectionChanged = None
+    ListViewItemCollection = None
+    PaddingChanged = None
+    Paint = None
+    RetrieveVirtualItem = None
+    RightToLeftLayoutChanged = None
+    SearchForVirtualItem = None
+    SelectedIndexChanged = None
+    SelectedIndexCollection = None
+    SelectedListViewItemCollection = None
+    TextChanged = None
+    VirtualItemsSelectionRangeChanged = None

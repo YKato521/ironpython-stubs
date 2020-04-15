@@ -1,5 +1,12 @@
-class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,ISupportOleDropSource,IArrangedElement):
- """
+class ToolStripComboBox(
+    ToolStripControlHost,
+    IComponent,
+    IDisposable,
+    IDropTarget,
+    ISupportOleDropSource,
+    IArrangedElement,
+):
+    """
  Represents a System.Windows.Forms.ToolStripComboBox that is properly rendered in a System.Windows.Forms.ToolStrip.
 
  
@@ -10,20 +17,23 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
  ToolStripComboBox(c: Control)
  """
- def BeginUpdate(self):
-  """
+
+    def BeginUpdate(self):
+        """
   BeginUpdate(self: ToolStripComboBox)
 
    Maintains performance when items are added to the System.Windows.Forms.ToolStripComboBox one at 
 
     a time.
   """
-  pass
- def CreateAccessibilityInstance(self,*args):
-  """ CreateAccessibilityInstance(self: ToolStripControlHost) -> AccessibleObject """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def CreateAccessibilityInstance(self, *args):
+        """ CreateAccessibilityInstance(self: ToolStripControlHost) -> AccessibleObject """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: ToolStripControlHost,disposing: bool)
 
    Releases the unmanaged resources used by the System.Windows.Forms.ToolStripControlHost and 
@@ -36,18 +46,20 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def EndUpdate(self):
-  """
+        pass
+
+    def EndUpdate(self):
+        """
   EndUpdate(self: ToolStripComboBox)
 
    Resumes painting the System.Windows.Forms.ToolStripComboBox control after painting is suspended 
 
     by the System.Windows.Forms.ToolStripComboBox.BeginUpdate method.
   """
-  pass
- def FindString(self,s,startIndex=None):
-  """
+        pass
+
+    def FindString(self, s, startIndex=None):
+        """
   FindString(self: ToolStripComboBox,s: str,startIndex: int) -> int
 
   
@@ -82,9 +94,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    Returns: The zero-based index of the first item found; returns -1 if no match is found.
   """
-  pass
- def FindStringExact(self,s,startIndex=None):
-  """
+        pass
+
+    def FindStringExact(self, s, startIndex=None):
+        """
   FindStringExact(self: ToolStripComboBox,s: str,startIndex: int) -> int
 
   
@@ -119,9 +132,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    Returns: The zero-based index of the first item found; -1 if no match is found.
   """
-  pass
- def GetItemHeight(self,index):
-  """
+        pass
+
+    def GetItemHeight(self, index):
+        """
   GetItemHeight(self: ToolStripComboBox,index: int) -> int
 
   
@@ -134,9 +148,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    Returns: The height,in pixels,of the item at the specified index.
   """
-  pass
- def GetPreferredSize(self,constrainingSize):
-  """
+        pass
+
+    def GetPreferredSize(self, constrainingSize):
+        """
   GetPreferredSize(self: ToolStripComboBox,constrainingSize: Size) -> Size
 
   
@@ -149,9 +164,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    Returns: An ordered pair of type System.Drawing.Size representing the width and height of a rectangle.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -170,9 +186,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def IsInputChar(self,*args):
-  """
+        pass
+
+    def IsInputChar(self, *args):
+        """
   IsInputChar(self: ToolStripItem,charCode: Char) -> bool
 
   
@@ -185,9 +202,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    Returns: true if the character should be sent directly to the item and not preprocessed; otherwise,false.
   """
-  pass
- def IsInputKey(self,*args):
-  """
+        pass
+
+    def IsInputKey(self, *args):
+        """
   IsInputKey(self: ToolStripItem,keyData: Keys) -> bool
 
   
@@ -204,9 +222,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    Returns: true if the specified key is a regular input key; otherwise,false.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -237,9 +256,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def OnAvailableChanged(self,*args):
-  """
+        pass
+
+    def OnAvailableChanged(self, *args):
+        """
   OnAvailableChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the AvailableChanged event.
@@ -248,9 +268,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBackColorChanged(self,*args):
-  """
+        pass
+
+    def OnBackColorChanged(self, *args):
+        """
   OnBackColorChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.BackColorChanged event.
@@ -259,16 +280,18 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBoundsChanged(self,*args):
-  """
+        pass
+
+    def OnBoundsChanged(self, *args):
+        """
   OnBoundsChanged(self: ToolStripControlHost)
 
    Occurs when the System.Windows.Forms.ToolStripItem.Bounds property changes.
   """
-  pass
- def OnClick(self,*args):
-  """
+        pass
+
+    def OnClick(self, *args):
+        """
   OnClick(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.Click event.
@@ -277,9 +300,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDisplayStyleChanged(self,*args):
-  """
+        pass
+
+    def OnDisplayStyleChanged(self, *args):
+        """
   OnDisplayStyleChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DisplayStyleChanged event.
@@ -288,9 +312,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDoubleClick(self,*args):
-  """
+        pass
+
+    def OnDoubleClick(self, *args):
+        """
   OnDoubleClick(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DoubleClick event.
@@ -299,9 +324,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDragDrop(self,*args):
-  """
+        pass
+
+    def OnDragDrop(self, *args):
+        """
   OnDragDrop(self: ToolStripItem,dragEvent: DragEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DragDrop event.
@@ -310,9 +336,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    dragEvent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnDragEnter(self,*args):
-  """
+        pass
+
+    def OnDragEnter(self, *args):
+        """
   OnDragEnter(self: ToolStripItem,dragEvent: DragEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DragEnter event.
@@ -321,9 +348,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    dragEvent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnDragLeave(self,*args):
-  """
+        pass
+
+    def OnDragLeave(self, *args):
+        """
   OnDragLeave(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DragLeave event.
@@ -332,9 +360,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDragOver(self,*args):
-  """
+        pass
+
+    def OnDragOver(self, *args):
+        """
   OnDragOver(self: ToolStripItem,dragEvent: DragEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DragOver event.
@@ -343,9 +372,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    dragEvent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnDropDown(self,*args):
-  """
+        pass
+
+    def OnDropDown(self, *args):
+        """
   OnDropDown(self: ToolStripComboBox,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripComboBox.DropDown event.
@@ -354,9 +384,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDropDownClosed(self,*args):
-  """
+        pass
+
+    def OnDropDownClosed(self, *args):
+        """
   OnDropDownClosed(self: ToolStripComboBox,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripComboBox.DropDownClosed event.
@@ -365,9 +396,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDropDownStyleChanged(self,*args):
-  """
+        pass
+
+    def OnDropDownStyleChanged(self, *args):
+        """
   OnDropDownStyleChanged(self: ToolStripComboBox,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripComboBox.DropDownStyleChanged event.
@@ -376,9 +408,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnEnabledChanged(self,*args):
-  """
+        pass
+
+    def OnEnabledChanged(self, *args):
+        """
   OnEnabledChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.EnabledChanged event.
@@ -387,9 +420,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnEnter(self,*args):
-  """
+        pass
+
+    def OnEnter(self, *args):
+        """
   OnEnter(self: ToolStripControlHost,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.Enter event.
@@ -398,9 +432,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnFontChanged(self,*args):
-  """
+        pass
+
+    def OnFontChanged(self, *args):
+        """
   OnFontChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.FontChanged event.
@@ -409,9 +444,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnForeColorChanged(self,*args):
-  """
+        pass
+
+    def OnForeColorChanged(self, *args):
+        """
   OnForeColorChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.ForeColorChanged event.
@@ -420,9 +456,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnGiveFeedback(self,*args):
-  """
+        pass
+
+    def OnGiveFeedback(self, *args):
+        """
   OnGiveFeedback(self: ToolStripItem,giveFeedbackEvent: GiveFeedbackEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.GiveFeedback event.
@@ -431,9 +468,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    giveFeedbackEvent: A System.Windows.Forms.GiveFeedbackEventArgs that contains the event data.
   """
-  pass
- def OnGotFocus(self,*args):
-  """
+        pass
+
+    def OnGotFocus(self, *args):
+        """
   OnGotFocus(self: ToolStripControlHost,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.GotFocus event.
@@ -442,9 +480,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnHostedControlResize(self,*args):
-  """
+        pass
+
+    def OnHostedControlResize(self, *args):
+        """
   OnHostedControlResize(self: ToolStripControlHost,e: EventArgs)
 
    Synchronizes the resizing of the control host with the resizing of the hosted control.
@@ -453,9 +492,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnKeyDown(self,*args):
-  """
+        pass
+
+    def OnKeyDown(self, *args):
+        """
   OnKeyDown(self: ToolStripControlHost,e: KeyEventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.KeyDown event.
@@ -464,9 +504,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: A System.Windows.Forms.KeyEventArgs that contains the event data.
   """
-  pass
- def OnKeyPress(self,*args):
-  """
+        pass
+
+    def OnKeyPress(self, *args):
+        """
   OnKeyPress(self: ToolStripControlHost,e: KeyPressEventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.KeyPress event.
@@ -475,9 +516,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: A System.Windows.Forms.KeyPressEventArgs that contains the event data.
   """
-  pass
- def OnKeyUp(self,*args):
-  """
+        pass
+
+    def OnKeyUp(self, *args):
+        """
   OnKeyUp(self: ToolStripControlHost,e: KeyEventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.KeyUp event.
@@ -486,16 +528,18 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: A System.Windows.Forms.KeyEventArgs that contains the event data.
   """
-  pass
- def OnLayout(self,*args):
-  """
+        pass
+
+    def OnLayout(self, *args):
+        """
   OnLayout(self: ToolStripControlHost,e: LayoutEventArgs)
 
    e: A System.Windows.Forms.LayoutEventArgs that contains the event data.
   """
-  pass
- def OnLeave(self,*args):
-  """
+        pass
+
+    def OnLeave(self, *args):
+        """
   OnLeave(self: ToolStripControlHost,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.Leave event.
@@ -504,9 +548,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: A System.EventArgs that contains the event data.
   """
-  pass
- def OnLocationChanged(self,*args):
-  """
+        pass
+
+    def OnLocationChanged(self, *args):
+        """
   OnLocationChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.LocationChanged event.
@@ -515,9 +560,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnLostFocus(self,*args):
-  """
+        pass
+
+    def OnLostFocus(self, *args):
+        """
   OnLostFocus(self: ToolStripControlHost,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.LostFocus event.
@@ -526,9 +572,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: A System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseDown(self,*args):
-  """
+        pass
+
+    def OnMouseDown(self, *args):
+        """
   OnMouseDown(self: ToolStripItem,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseDown event.
@@ -537,9 +584,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseEnter(self,*args):
-  """
+        pass
+
+    def OnMouseEnter(self, *args):
+        """
   OnMouseEnter(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseEnter event.
@@ -548,9 +596,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseHover(self,*args):
-  """
+        pass
+
+    def OnMouseHover(self, *args):
+        """
   OnMouseHover(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseHover event.
@@ -559,9 +608,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseLeave(self,*args):
-  """
+        pass
+
+    def OnMouseLeave(self, *args):
+        """
   OnMouseLeave(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseLeave event.
@@ -570,9 +620,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseMove(self,*args):
-  """
+        pass
+
+    def OnMouseMove(self, *args):
+        """
   OnMouseMove(self: ToolStripItem,mea: MouseEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseMove event.
@@ -581,9 +632,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    mea: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseUp(self,*args):
-  """
+        pass
+
+    def OnMouseUp(self, *args):
+        """
   OnMouseUp(self: ToolStripItem,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseUp event.
@@ -592,9 +644,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnOwnerChanged(self,*args):
-  """
+        pass
+
+    def OnOwnerChanged(self, *args):
+        """
   OnOwnerChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.OwnerChanged event.
@@ -603,9 +656,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnOwnerFontChanged(self,*args):
-  """
+        pass
+
+    def OnOwnerFontChanged(self, *args):
+        """
   OnOwnerFontChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.FontChanged event when the 
@@ -620,16 +674,18 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: A System.EventArgs that contains the event data.
   """
-  pass
- def OnPaint(self,*args):
-  """
+        pass
+
+    def OnPaint(self, *args):
+        """
   OnPaint(self: ToolStripControlHost,e: PaintEventArgs)
 
    e: A System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def OnParentBackColorChanged(self,*args):
-  """
+        pass
+
+    def OnParentBackColorChanged(self, *args):
+        """
   OnParentBackColorChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.BackColorChanged event.
@@ -638,18 +694,20 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentChanged(self,*args):
-  """
+        pass
+
+    def OnParentChanged(self, *args):
+        """
   OnParentChanged(self: ToolStripControlHost,oldParent: ToolStrip,newParent: ToolStrip)
 
    oldParent: The original parent of the item.
 
    newParent: The new parent of the item.
   """
-  pass
- def OnParentEnabledChanged(self,*args):
-  """
+        pass
+
+    def OnParentEnabledChanged(self, *args):
+        """
   OnParentEnabledChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.EnabledChanged event when the 
@@ -662,9 +720,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentForeColorChanged(self,*args):
-  """
+        pass
+
+    def OnParentForeColorChanged(self, *args):
+        """
   OnParentForeColorChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.ForeColorChanged event.
@@ -673,9 +732,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentRightToLeftChanged(self,*args):
-  """
+        pass
+
+    def OnParentRightToLeftChanged(self, *args):
+        """
   OnParentRightToLeftChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.RightToLeftChanged event.
@@ -684,9 +744,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnQueryContinueDrag(self,*args):
-  """
+        pass
+
+    def OnQueryContinueDrag(self, *args):
+        """
   OnQueryContinueDrag(self: ToolStripItem,queryContinueDragEvent: QueryContinueDragEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.QueryContinueDrag event.
@@ -695,9 +756,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    queryContinueDragEvent: A System.Windows.Forms.QueryContinueDragEventArgs that contains the event data.
   """
-  pass
- def OnRightToLeftChanged(self,*args):
-  """
+        pass
+
+    def OnRightToLeftChanged(self, *args):
+        """
   OnRightToLeftChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.RightToLeftChanged event.
@@ -706,9 +768,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnSelectedIndexChanged(self,*args):
-  """
+        pass
+
+    def OnSelectedIndexChanged(self, *args):
+        """
   OnSelectedIndexChanged(self: ToolStripComboBox,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripComboBox.SelectedIndexChanged event.
@@ -717,9 +780,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnSelectionChangeCommitted(self,*args):
-  """
+        pass
+
+    def OnSelectionChangeCommitted(self, *args):
+        """
   OnSelectionChangeCommitted(self: ToolStripComboBox,e: EventArgs)
 
    Raises the System.Windows.Forms.ComboBox.SelectionChangeCommitted event.
@@ -728,9 +792,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnSubscribeControlEvents(self,*args):
-  """
+        pass
+
+    def OnSubscribeControlEvents(self, *args):
+        """
   OnSubscribeControlEvents(self: ToolStripComboBox,control: Control)
 
    Subscribes events from the specified control.
@@ -739,9 +804,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    control: The control from which to subscribe events.
   """
-  pass
- def OnTextChanged(self,*args):
-  """
+        pass
+
+    def OnTextChanged(self, *args):
+        """
   OnTextChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.TextChanged event.
@@ -750,9 +816,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnTextUpdate(self,*args):
-  """
+        pass
+
+    def OnTextUpdate(self, *args):
+        """
   OnTextUpdate(self: ToolStripComboBox,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripComboBox.TextUpdate event.
@@ -761,9 +828,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnUnsubscribeControlEvents(self,*args):
-  """
+        pass
+
+    def OnUnsubscribeControlEvents(self, *args):
+        """
   OnUnsubscribeControlEvents(self: ToolStripComboBox,control: Control)
 
    Unsubscribes events from the specified control.
@@ -772,9 +840,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    control: The control from which to unsubscribe events.
   """
-  pass
- def OnValidated(self,*args):
-  """
+        pass
+
+    def OnValidated(self, *args):
+        """
   OnValidated(self: ToolStripControlHost,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.Validated event.
@@ -783,9 +852,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: A System.EventArgs that contains the event data.
   """
-  pass
- def OnValidating(self,*args):
-  """
+        pass
+
+    def OnValidating(self, *args):
+        """
   OnValidating(self: ToolStripControlHost,e: CancelEventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.Validating event.
@@ -794,9 +864,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: A System.ComponentModel.CancelEventArgs that contains the event data.
   """
-  pass
- def OnVisibleChanged(self,*args):
-  """
+        pass
+
+    def OnVisibleChanged(self, *args):
+        """
   OnVisibleChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.VisibleChanged event.
@@ -805,9 +876,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def ProcessCmdKey(self,*args):
-  """
+        pass
+
+    def ProcessCmdKey(self, *args):
+        """
   ProcessCmdKey(self: ToolStripControlHost,m: Message,keyData: Keys) -> (bool,Message)
 
   
@@ -826,9 +898,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    Returns: false in all cases.
   """
-  pass
- def ProcessDialogKey(self,*args):
-  """
+        pass
+
+    def ProcessDialogKey(self, *args):
+        """
   ProcessDialogKey(self: ToolStripControlHost,keyData: Keys) -> bool
 
   
@@ -841,9 +914,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    Returns: true if the key was processed by the item; otherwise,false.
   """
-  pass
- def ProcessMnemonic(self,*args):
-  """
+        pass
+
+    def ProcessMnemonic(self, *args):
+        """
   ProcessMnemonic(self: ToolStripControlHost,charCode: Char) -> bool
 
   
@@ -856,9 +930,10 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    Returns: true if the character was processed as a mnemonic by the control; otherwise,false.
   """
-  pass
- def Select(self,start=None,length=None):
-  """
+        pass
+
+    def Select(self, start=None, length=None):
+        """
   Select(self: ToolStripComboBox,start: int,length: int)
 
    Selects a range of text in the editable portion of the System.Windows.Forms.ToolStripComboBox.
@@ -869,16 +944,18 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    length: The number of characters to select.
   """
-  pass
- def SelectAll(self):
-  """
+        pass
+
+    def SelectAll(self):
+        """
   SelectAll(self: ToolStripComboBox)
 
    Selects all the text in the editable portion of the System.Windows.Forms.ToolStripComboBox.
   """
-  pass
- def SetBounds(self,*args):
-  """
+        pass
+
+    def SetBounds(self, *args):
+        """
   SetBounds(self: ToolStripItem,bounds: Rectangle)
 
    Sets the size and location of the item.
@@ -889,16 +966,18 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
     System.Windows.Forms.ToolStripItem
   """
-  pass
- def SetVisibleCore(self,*args):
-  """
+        pass
+
+    def SetVisibleCore(self, *args):
+        """
   SetVisibleCore(self: ToolStripControlHost,visible: bool)
 
    visible: true to make the System.Windows.Forms.ToolStripItem visible; otherwise,false.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: ToolStripComboBox) -> str
 
   
@@ -907,40 +986,48 @@ class ToolStripComboBox(ToolStripControlHost,IComponent,IDisposable,IDropTarget,
 
    Returns: A string that represents the System.Windows.Forms.ToolStripComboBox.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,name: str)
 
   __new__(cls: type,c: Control)
   """
-  pass
- def __str__(self,*args):
-  pass
- AutoCompleteCustomSource=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the custom string collection to use when the System.Windows.Forms.ToolStripComboBox.AutoCompleteSource property is set to System.Windows.Forms.AutoCompleteSource.CustomSource.
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AutoCompleteCustomSource = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the custom string collection to use when the System.Windows.Forms.ToolStripComboBox.AutoCompleteSource property is set to System.Windows.Forms.AutoCompleteSource.CustomSource.
 
 
 
@@ -952,8 +1039,10 @@ Set: AutoCompleteCustomSource(self: ToolStripComboBox)=value
 
 """
 
- AutoCompleteMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates the text completion behavior of the System.Windows.Forms.ToolStripComboBox.
+    AutoCompleteMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates the text completion behavior of the System.Windows.Forms.ToolStripComboBox.
 
 
 
@@ -965,8 +1054,10 @@ Set: AutoCompleteMode(self: ToolStripComboBox)=value
 
 """
 
- AutoCompleteSource=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the source of complete strings used for automatic completion.
+    AutoCompleteSource = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the source of complete strings used for automatic completion.
 
 
 
@@ -978,8 +1069,10 @@ Set: AutoCompleteSource(self: ToolStripComboBox)=value
 
 """
 
- BackgroundImage=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+    BackgroundImage = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property is not relevant to this class.
 
 
 
@@ -991,8 +1084,10 @@ Set: BackgroundImage(self: ToolStripComboBox)=value
 
 """
 
- BackgroundImageLayout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+    BackgroundImageLayout = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property is not relevant to this class.
 
 
 
@@ -1004,15 +1099,17 @@ Set: BackgroundImageLayout(self: ToolStripComboBox)=value
 
 """
 
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- ComboBox=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a System.Windows.Forms.ComboBox in which the user can enter text,along with a list from which the user can select.
+    ComboBox = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a System.Windows.Forms.ComboBox in which the user can enter text,along with a list from which the user can select.
 
 
 
@@ -1022,57 +1119,73 @@ Get: ComboBox(self: ToolStripComboBox) -> ComboBox
 
 """
 
- DefaultAutoToolTip=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether to display the System.Windows.Forms.ToolTip that is defined as the default.
+    DefaultAutoToolTip = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether to display the System.Windows.Forms.ToolTip that is defined as the default.
 
 
 
 """
 
- DefaultDisplayStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating what is displayed on the System.Windows.Forms.ToolStripItem.
+    DefaultDisplayStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating what is displayed on the System.Windows.Forms.ToolStripItem.
 
 
 
 """
 
- DefaultMargin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the default spacing,in pixels,between the System.Windows.Forms.ToolStripComboBox and an adjacent item.
+    DefaultMargin = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the default spacing,in pixels,between the System.Windows.Forms.ToolStripComboBox and an adjacent item.
 
 
 
 """
 
- DefaultPadding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the internal spacing characteristics of the item.
+    DefaultPadding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the internal spacing characteristics of the item.
 
 
 
 """
 
- DefaultSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the default size of the System.Windows.Forms.ToolStripComboBox.
+    DefaultSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the default size of the System.Windows.Forms.ToolStripComboBox.
 
 
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- DismissWhenClicked=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether items on a System.Windows.Forms.ToolStripDropDown are hidden after they are clicked.
+    DismissWhenClicked = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether items on a System.Windows.Forms.ToolStripDropDown are hidden after they are clicked.
 
 
 
 """
 
- DropDownHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the height,in pixels,of the drop-down portion box of a System.Windows.Forms.ToolStripComboBox.
+    DropDownHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the height,in pixels,of the drop-down portion box of a System.Windows.Forms.ToolStripComboBox.
 
 
 
@@ -1084,8 +1197,10 @@ Set: DropDownHeight(self: ToolStripComboBox)=value
 
 """
 
- DropDownStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value specifying the style of the System.Windows.Forms.ToolStripComboBox.
+    DropDownStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value specifying the style of the System.Windows.Forms.ToolStripComboBox.
 
 
 
@@ -1097,8 +1212,10 @@ Set: DropDownStyle(self: ToolStripComboBox)=value
 
 """
 
- DropDownWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the width,in pixels,of the drop-down portion of a System.Windows.Forms.ToolStripComboBox.
+    DropDownWidth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the width,in pixels,of the drop-down portion of a System.Windows.Forms.ToolStripComboBox.
 
 
 
@@ -1110,8 +1227,10 @@ Set: DropDownWidth(self: ToolStripComboBox)=value
 
 """
 
- DroppedDown=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the System.Windows.Forms.ToolStripComboBox currently displays its drop-down portion.
+    DroppedDown = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the System.Windows.Forms.ToolStripComboBox currently displays its drop-down portion.
 
 
 
@@ -1123,15 +1242,15 @@ Set: DroppedDown(self: ToolStripComboBox)=value
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- FlatStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the appearance of the System.Windows.Forms.ToolStripComboBox.
+    FlatStyle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the appearance of the System.Windows.Forms.ToolStripComboBox.
 
 
 
@@ -1143,8 +1262,10 @@ Set: FlatStyle(self: ToolStripComboBox)=value
 
 """
 
- IntegralHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the System.Windows.Forms.ToolStripComboBox should resize to avoid showing partial items.
+    IntegralHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the System.Windows.Forms.ToolStripComboBox should resize to avoid showing partial items.
 
 
 
@@ -1156,8 +1277,8 @@ Set: IntegralHeight(self: ToolStripComboBox)=value
 
 """
 
- Items=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of the items contained in this System.Windows.Forms.ToolStripComboBox.
+    Items = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a collection of the items contained in this System.Windows.Forms.ToolStripComboBox.
 
 
 
@@ -1167,8 +1288,10 @@ Get: Items(self: ToolStripComboBox) -> ObjectCollection
 
 """
 
- MaxDropDownItems=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the maximum number of items to be shown in the drop-down portion of the System.Windows.Forms.ToolStripComboBox.
+    MaxDropDownItems = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the maximum number of items to be shown in the drop-down portion of the System.Windows.Forms.ToolStripComboBox.
 
 
 
@@ -1180,8 +1303,8 @@ Set: MaxDropDownItems(self: ToolStripComboBox)=value
 
 """
 
- MaxLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the maximum number of characters allowed in the editable portion of a combo box.
+    MaxLength = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the maximum number of characters allowed in the editable portion of a combo box.
 
 
 
@@ -1193,15 +1316,17 @@ Set: MaxLength(self: ToolStripComboBox)=value
 
 """
 
- Parent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the parent container of the System.Windows.Forms.ToolStripItem.
+    Parent = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the parent container of the System.Windows.Forms.ToolStripItem.
 
 
 
 """
 
- SelectedIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the index specifying the currently selected item.
+    SelectedIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the index specifying the currently selected item.
 
 
 
@@ -1213,8 +1338,10 @@ Set: SelectedIndex(self: ToolStripComboBox)=value
 
 """
 
- SelectedItem=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets currently selected item in the System.Windows.Forms.ToolStripComboBox.
+    SelectedItem = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets currently selected item in the System.Windows.Forms.ToolStripComboBox.
 
 
 
@@ -1226,8 +1353,10 @@ Set: SelectedItem(self: ToolStripComboBox)=value
 
 """
 
- SelectedText=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the text that is selected in the editable portion of a System.Windows.Forms.ToolStripComboBox.
+    SelectedText = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the text that is selected in the editable portion of a System.Windows.Forms.ToolStripComboBox.
 
 
 
@@ -1239,8 +1368,10 @@ Set: SelectedText(self: ToolStripComboBox)=value
 
 """
 
- SelectionLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the number of characters selected in the editable portion of the System.Windows.Forms.ToolStripComboBox.
+    SelectionLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the number of characters selected in the editable portion of the System.Windows.Forms.ToolStripComboBox.
 
 
 
@@ -1252,8 +1383,10 @@ Set: SelectionLength(self: ToolStripComboBox)=value
 
 """
 
- SelectionStart=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the starting index of text selected in the System.Windows.Forms.ToolStripComboBox.
+    SelectionStart = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the starting index of text selected in the System.Windows.Forms.ToolStripComboBox.
 
 
 
@@ -1265,15 +1398,17 @@ Set: SelectionStart(self: ToolStripComboBox)=value
 
 """
 
- ShowKeyboardCues=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether to show or hide shortcut keys.
+    ShowKeyboardCues = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether to show or hide shortcut keys.
 
 
 
 """
 
- Sorted=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the items in the System.Windows.Forms.ToolStripComboBox are sorted.
+    Sorted = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the items in the System.Windows.Forms.ToolStripComboBox are sorted.
 
 
 
@@ -1285,11 +1420,9 @@ Set: Sorted(self: ToolStripComboBox)=value
 
 """
 
-
- DoubleClick=None
- DropDown=None
- DropDownClosed=None
- DropDownStyleChanged=None
- SelectedIndexChanged=None
- TextUpdate=None
-
+    DoubleClick = None
+    DropDown = None
+    DropDownClosed = None
+    DropDownStyleChanged = None
+    SelectedIndexChanged = None
+    TextUpdate = None

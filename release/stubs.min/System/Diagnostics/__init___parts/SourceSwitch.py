@@ -1,5 +1,5 @@
 class SourceSwitch(Switch):
- """
+    """
  Provides a multilevel switch to control tracing and debug output without recompiling your code.
 
  
@@ -8,8 +8,9 @@ class SourceSwitch(Switch):
 
  SourceSwitch(displayName: str,defaultSwitchValue: str)
  """
- def ShouldTrace(self,eventType):
-  """
+
+    def ShouldTrace(self, eventType):
+        """
   ShouldTrace(self: SourceSwitch,eventType: TraceEventType) -> bool
 
   
@@ -22,17 +23,19 @@ class SourceSwitch(Switch):
 
    Returns: True if the trace listeners should be called; otherwise,false.
   """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,name: str)
 
   __new__(cls: type,displayName: str,defaultSwitchValue: str)
   """
-  pass
- Level=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the level of the switch.
+        pass
+
+    Level = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the level of the switch.
 
 
 
@@ -44,18 +47,18 @@ Set: Level(self: SourceSwitch)=value
 
 """
 
- SwitchSetting=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the current setting for this switch.
+    SwitchSetting = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the current setting for this switch.
 
 
 
 """
 
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the value of the switch.
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the value of the switch.
 
 
 
 """
-
-

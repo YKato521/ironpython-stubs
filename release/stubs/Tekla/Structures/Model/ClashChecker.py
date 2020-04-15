@@ -8,6 +8,7 @@
 # no functions
 # classes
 
+
 class ClashChekerEvent(object):
     # no doc
     @staticmethod
@@ -18,10 +19,8 @@ class ClashChekerEvent(object):
     ClashCheckDoneDelegate = None
     ClashDetectedDelegate = None
     __all__ = [
-        '__reduce_ex__',
-        'ClashCheckDoneDelegate',
-        'ClashDetectedDelegate',
-        'GetClashCheckHandler',
+        "__reduce_ex__",
+        "ClashCheckDoneDelegate",
+        "ClashDetectedDelegate",
+        "GetClashCheckHandler",
     ]
-
-

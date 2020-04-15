@@ -1,7 +1,17 @@
 class _Assembly:
- """ Exposes the public members of the System.Reflection.Assembly class to unmanaged code. """
- def CreateInstance(self,typeName,ignoreCase=None,bindingAttr=None,binder=None,args=None,culture=None,activationAttributes=None):
-  """
+    """ Exposes the public members of the System.Reflection.Assembly class to unmanaged code. """
+
+    def CreateInstance(
+        self,
+        typeName,
+        ignoreCase=None,
+        bindingAttr=None,
+        binder=None,
+        args=None,
+        culture=None,
+        activationAttributes=None,
+    ):
+        """
   CreateInstance(self: _Assembly,typeName: str,ignoreCase: bool,bindingAttr: BindingFlags,binder: Binder,args: Array[object],culture: CultureInfo,activationAttributes: Array[object]) -> object
 
   
@@ -110,9 +120,10 @@ class _Assembly:
 
     or null if typeName is not found.
   """
-  pass
- def Equals(self,other):
-  """
+        pass
+
+    def Equals(self, other):
+        """
   Equals(self: _Assembly,other: object) -> bool
 
   
@@ -129,9 +140,10 @@ class _Assembly:
 
    Returns: true if the specified System.Object is equal to the current System.Object; otherwise,false.
   """
-  pass
- def GetCustomAttributes(self,*__args):
-  """
+        pass
+
+    def GetCustomAttributes(self, *__args):
+        """
   GetCustomAttributes(self: _Assembly,inherit: bool) -> Array[object]
 
   
@@ -168,9 +180,10 @@ class _Assembly:
 
     by attributeType.
   """
-  pass
- def GetExportedTypes(self):
-  """
+        pass
+
+    def GetExportedTypes(self):
+        """
   GetExportedTypes(self: _Assembly) -> Array[Type]
 
   
@@ -185,9 +198,10 @@ class _Assembly:
 
     visible outside the assembly.
   """
-  pass
- def GetFile(self,name):
-  """
+        pass
+
+    def GetFile(self, name):
+        """
   GetFile(self: _Assembly,name: str) -> FileStream
 
   
@@ -204,9 +218,10 @@ class _Assembly:
 
    Returns: A System.IO.FileStream for the specified file,or null if the file is not found.
   """
-  pass
- def GetFiles(self,getResourceModules=None):
-  """
+        pass
+
+    def GetFiles(self, getResourceModules=None):
+        """
   GetFiles(self: _Assembly,getResourceModules: bool) -> Array[FileStream]
 
   
@@ -235,9 +250,10 @@ class _Assembly:
 
    Returns: An array of System.IO.FileStream objects.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: _Assembly) -> int
 
   
@@ -246,9 +262,10 @@ class _Assembly:
 
    Returns: A hash code for the current System.Object.
   """
-  pass
- def GetLoadedModules(self,getResourceModules=None):
-  """
+        pass
+
+    def GetLoadedModules(self, getResourceModules=None):
+        """
   GetLoadedModules(self: _Assembly,getResourceModules: bool) -> Array[Module]
 
   
@@ -277,9 +294,10 @@ class _Assembly:
 
    Returns: An array of modules.
   """
-  pass
- def GetManifestResourceInfo(self,resourceName):
-  """
+        pass
+
+    def GetManifestResourceInfo(self, resourceName):
+        """
   GetManifestResourceInfo(self: _Assembly,resourceName: str) -> ManifestResourceInfo
 
   
@@ -298,9 +316,10 @@ class _Assembly:
 
     topology,or null if the resource is not found.
   """
-  pass
- def GetManifestResourceNames(self):
-  """
+        pass
+
+    def GetManifestResourceNames(self):
+        """
   GetManifestResourceNames(self: _Assembly) -> Array[str]
 
   
@@ -313,9 +332,10 @@ class _Assembly:
 
    Returns: An array of type String containing the names of all the resources.
   """
-  pass
- def GetManifestResourceStream(self,*__args):
-  """
+        pass
+
+    def GetManifestResourceStream(self, *__args):
+        """
   GetManifestResourceStream(self: _Assembly,name: str) -> Stream
 
   
@@ -350,9 +370,10 @@ class _Assembly:
 
    Returns: A System.IO.Stream representing this manifest resource.
   """
-  pass
- def GetModule(self,name):
-  """
+        pass
+
+    def GetModule(self, name):
+        """
   GetModule(self: _Assembly,name: str) -> Module
 
   
@@ -369,9 +390,10 @@ class _Assembly:
 
    Returns: The module being requested,or null if the module is not found.
   """
-  pass
- def GetModules(self,getResourceModules=None):
-  """
+        pass
+
+    def GetModules(self, getResourceModules=None):
+        """
   GetModules(self: _Assembly,getResourceModules: bool) -> Array[Module]
 
   
@@ -400,9 +422,10 @@ class _Assembly:
 
    Returns: An array of modules.
   """
-  pass
- def GetName(self,copiedName=None):
-  """
+        pass
+
+    def GetName(self, copiedName=None):
+        """
   GetName(self: _Assembly,copiedName: bool) -> AssemblyName
 
   
@@ -435,9 +458,10 @@ class _Assembly:
 
    Returns: An System.Reflection.AssemblyName for this assembly.
   """
-  pass
- def GetObjectData(self,info,context):
-  """
+        pass
+
+    def GetObjectData(self, info, context):
+        """
   GetObjectData(self: _Assembly,info: SerializationInfo,context: StreamingContext)
 
    Provides COM objects with version-independent access to the 
@@ -454,9 +478,10 @@ class _Assembly:
 
    context: The destination context of the serialization.
   """
-  pass
- def GetReferencedAssemblies(self):
-  """
+        pass
+
+    def GetReferencedAssemblies(self):
+        """
   GetReferencedAssemblies(self: _Assembly) -> Array[AssemblyName]
 
   
@@ -471,9 +496,10 @@ class _Assembly:
 
     assembly.
   """
-  pass
- def GetSatelliteAssembly(self,culture,version=None):
-  """
+        pass
+
+    def GetSatelliteAssembly(self, culture, version=None):
+        """
   GetSatelliteAssembly(self: _Assembly,culture: CultureInfo,version: Version) -> Assembly
 
   
@@ -510,9 +536,10 @@ class _Assembly:
 
    Returns: The specified satellite assembly.
   """
-  pass
- def GetType(self,name=None,throwOnError=None,ignoreCase=None):
-  """
+        pass
+
+    def GetType(self, name=None, throwOnError=None, ignoreCase=None):
+        """
   GetType(self: _Assembly,name: str,throwOnError: bool) -> Type
 
   
@@ -575,9 +602,10 @@ class _Assembly:
 
    Returns: A System.Type object that represents the specified class,or null if the class is not found.
   """
-  pass
- def GetTypes(self):
-  """
+        pass
+
+    def GetTypes(self):
+        """
   GetTypes(self: _Assembly) -> Array[Type]
 
   
@@ -590,9 +618,10 @@ class _Assembly:
 
    Returns: An array of type System.Type containing objects for all the types defined in this assembly.
   """
-  pass
- def IsDefined(self,attributeType,inherit):
-  """
+        pass
+
+    def IsDefined(self, attributeType, inherit):
+        """
   IsDefined(self: _Assembly,attributeType: Type,inherit: bool) -> bool
 
   
@@ -611,9 +640,10 @@ class _Assembly:
 
    Returns: true if a custom attribute identified by the specified System.Type is defined; otherwise,false.
   """
-  pass
- def LoadModule(self,moduleName,rawModule,rawSymbolStore=None):
-  """
+        pass
+
+    def LoadModule(self, moduleName, rawModule, rawSymbolStore=None):
+        """
   LoadModule(self: _Assembly,moduleName: str,rawModule: Array[Byte],rawSymbolStore: Array[Byte]) -> Module
 
   
@@ -656,9 +686,10 @@ class _Assembly:
 
    Returns: The loaded Module.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: _Assembly) -> str
 
   
@@ -673,17 +704,21 @@ class _Assembly:
 
     determined.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- CodeBase=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.Assembly.CodeBase property.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    CodeBase = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Reflection.Assembly.CodeBase property.
 
 
 
@@ -693,8 +728,10 @@ Get: CodeBase(self: _Assembly) -> str
 
 """
 
- EntryPoint=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.Assembly.EntryPoint property.
+    EntryPoint = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.Assembly.EntryPoint property.
 
 
 
@@ -704,8 +741,10 @@ Get: EntryPoint(self: _Assembly) -> MethodInfo
 
 """
 
- EscapedCodeBase=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.Assembly.EscapedCodeBase property.
+    EscapedCodeBase = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.Assembly.EscapedCodeBase property.
 
 
 
@@ -715,8 +754,8 @@ Get: EscapedCodeBase(self: _Assembly) -> str
 
 """
 
- Evidence=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.Assembly.Evidence property.
+    Evidence = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Reflection.Assembly.Evidence property.
 
 
 
@@ -726,8 +765,8 @@ Get: Evidence(self: _Assembly) -> Evidence
 
 """
 
- FullName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.Assembly.FullName property.
+    FullName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Reflection.Assembly.FullName property.
 
 
 
@@ -737,8 +776,10 @@ Get: FullName(self: _Assembly) -> str
 
 """
 
- GlobalAssemblyCache=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.Assembly.GlobalAssemblyCache property.
+    GlobalAssemblyCache = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.Assembly.GlobalAssemblyCache property.
 
 
 
@@ -748,8 +789,8 @@ Get: GlobalAssemblyCache(self: _Assembly) -> bool
 
 """
 
- Location=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.Assembly.Location property.
+    Location = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Reflection.Assembly.Location property.
 
 
 
@@ -759,6 +800,4 @@ Get: Location(self: _Assembly) -> str
 
 """
 
-
- ModuleResolve=None
-
+    ModuleResolve = None

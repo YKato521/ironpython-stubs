@@ -1,7 +1,10 @@
-class StringComparer(object,IComparer,IEqualityComparer,IComparer[str],IEqualityComparer[str]):
- """ Represents a string comparison operation that uses specific case and culture-based or ordinal comparison rules. """
- def Compare(self,x,y):
-  """
+class StringComparer(
+    object, IComparer, IEqualityComparer, IComparer[str], IEqualityComparer[str]
+):
+    """ Represents a string comparison operation that uses specific case and culture-based or ordinal comparison rules. """
+
+    def Compare(self, x, y):
+        """
   Compare(self: StringComparer,x: str,y: str) -> int
 
   
@@ -48,10 +51,11 @@ class StringComparer(object,IComparer,IEqualityComparer,IComparer[str],IEquality
 
     zerox is greater than y.-or-y is null.
   """
-  pass
- @staticmethod
- def Create(culture,ignoreCase):
-  """
+        pass
+
+    @staticmethod
+    def Create(culture, ignoreCase):
+        """
   Create(culture: CultureInfo,ignoreCase: bool) -> StringComparer
 
   
@@ -76,9 +80,10 @@ class StringComparer(object,IComparer,IEqualityComparer,IComparer[str],IEquality
 
     rules used by the culture parameter and the case rule specified by the ignoreCase parameter.
   """
-  pass
- def Equals(self,*__args):
-  """
+        pass
+
+    def Equals(self, *__args):
+        """
   Equals(self: StringComparer,x: str,y: str) -> bool
 
   
@@ -109,9 +114,10 @@ class StringComparer(object,IComparer,IEqualityComparer,IComparer[str],IEquality
 
     objects are equal; otherwise,false.
   """
-  pass
- def GetHashCode(self,obj=None):
-  """
+        pass
+
+    def GetHashCode(self, obj=None):
+        """
   GetHashCode(self: StringComparer,obj: str) -> int
 
   
@@ -136,25 +142,30 @@ class StringComparer(object,IComparer,IEqualityComparer,IComparer[str],IEquality
 
    Returns: A 32-bit signed hash code calculated from the value of the obj parameter.
   """
-  pass
- def __cmp__(self,*args):
-  """ x.__cmp__(y) <==> cmp(x,y)x.__cmp__(y) <==> cmp(x,y) """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- CurrentCulture=None
- CurrentCultureIgnoreCase=None
- InvariantCulture=None
- InvariantCultureIgnoreCase=None
- Ordinal=None
- OrdinalIgnoreCase=None
+        pass
 
+    def __cmp__(self, *args):
+        """ x.__cmp__(y) <==> cmp(x,y)x.__cmp__(y) <==> cmp(x,y) """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    CurrentCulture = None
+    CurrentCultureIgnoreCase = None
+    InvariantCulture = None
+    InvariantCultureIgnoreCase = None
+    Ordinal = None
+    OrdinalIgnoreCase = None

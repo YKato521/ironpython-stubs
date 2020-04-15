@@ -1,14 +1,16 @@
-class FilterableValueProvider(object,IDisposable):
- """
+class FilterableValueProvider(object, IDisposable):
+    """
  Defines the interface for classes that extract values from elements
 
     in a Revit project for testing against filter rules.
  """
- def Dispose(self):
-  """ Dispose(self: FilterableValueProvider) """
-  pass
- def GetAssociatedGlobalParameterValue(self,element):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: FilterableValueProvider) """
+        pass
+
+    def GetAssociatedGlobalParameterValue(self, element):
+        """
   GetAssociatedGlobalParameterValue(self: FilterableValueProvider,element: Element) -> ElementId
 
   
@@ -25,9 +27,10 @@ class FilterableValueProvider(object,IDisposable):
 
    Returns: The associated global parameter.
   """
-  pass
- def GetDoubleValue(self,element):
-  """
+        pass
+
+    def GetDoubleValue(self, element):
+        """
   GetDoubleValue(self: FilterableValueProvider,element: Element) -> float
 
   
@@ -40,9 +43,10 @@ class FilterableValueProvider(object,IDisposable):
 
    Returns: The double-precision numeric value from the element.
   """
-  pass
- def GetElementIdValue(self,element):
-  """
+        pass
+
+    def GetElementIdValue(self, element):
+        """
   GetElementIdValue(self: FilterableValueProvider,element: Element) -> ElementId
 
   
@@ -55,9 +59,10 @@ class FilterableValueProvider(object,IDisposable):
 
    Returns: The ElementId value from the element.
   """
-  pass
- def GetIntegerValue(self,element):
-  """
+        pass
+
+    def GetIntegerValue(self, element):
+        """
   GetIntegerValue(self: FilterableValueProvider,element: Element) -> int
 
   
@@ -70,9 +75,10 @@ class FilterableValueProvider(object,IDisposable):
 
    Returns: The integer value from the element.
   """
-  pass
- def GetStringValue(self,element):
-  """
+        pass
+
+    def GetStringValue(self, element):
+        """
   GetStringValue(self: FilterableValueProvider,element: Element) -> str
 
   
@@ -85,9 +91,10 @@ class FilterableValueProvider(object,IDisposable):
 
    Returns: The string value from the element.
   """
-  pass
- def IsDoubleValueSupported(self,element):
-  """
+        pass
+
+    def IsDoubleValueSupported(self, element):
+        """
   IsDoubleValueSupported(self: FilterableValueProvider,element: Element) -> bool
 
   
@@ -106,9 +113,10 @@ class FilterableValueProvider(object,IDisposable):
 
     element,false otherwise.
   """
-  pass
- def IsElementIdValueSupported(self,element):
-  """
+        pass
+
+    def IsElementIdValueSupported(self, element):
+        """
   IsElementIdValueSupported(self: FilterableValueProvider,element: Element) -> bool
 
   
@@ -127,9 +135,10 @@ class FilterableValueProvider(object,IDisposable):
 
     otherwise.
   """
-  pass
- def IsIntegerValueSupported(self,element):
-  """
+        pass
+
+    def IsIntegerValueSupported(self, element):
+        """
   IsIntegerValueSupported(self: FilterableValueProvider,element: Element) -> bool
 
   
@@ -148,9 +157,10 @@ class FilterableValueProvider(object,IDisposable):
 
     otherwise.
   """
-  pass
- def IsStringValueSupported(self,element):
-  """
+        pass
+
+    def IsStringValueSupported(self, element):
+        """
   IsStringValueSupported(self: FilterableValueProvider,element: Element) -> bool
 
   
@@ -165,24 +175,32 @@ class FilterableValueProvider(object,IDisposable):
 
     otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: FilterableValueProvider,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: FilterableValueProvider,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -191,5 +209,3 @@ Get: IsValidObject(self: FilterableValueProvider) -> bool
 
 
 """
-
-

@@ -1,7 +1,8 @@
-class PointCloudInstance(Instance,IDisposable):
- """ Represents a single instance of a point cloud in the Revit document. """
- def ContainsScan(self,scanName):
-  """
+class PointCloudInstance(Instance, IDisposable):
+    """ Represents a single instance of a point cloud in the Revit document. """
+
+    def ContainsScan(self, scanName):
+        """
   ContainsScan(self: PointCloudInstance,scanName: str) -> bool
 
   
@@ -12,10 +13,11 @@ class PointCloudInstance(Instance,IDisposable):
 
    scanName: Name of the scan.
   """
-  pass
- @staticmethod
- def Create(document,typeId,transform):
-  """
+        pass
+
+    @staticmethod
+    def Create(document, typeId, transform):
+        """
   Create(document: Document,typeId: ElementId,transform: Transform) -> PointCloudInstance
 
   
@@ -40,15 +42,18 @@ class PointCloudInstance(Instance,IDisposable):
 
    Returns: The newly created point cloud instance.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetPoints(self,filter,averageDistance,numPoints):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetPoints(self, filter, averageDistance, numPoints):
+        """
   GetPoints(self: PointCloudInstance,filter: PointCloudFilter,averageDistance: float,numPoints: int) -> PointCollection
 
   
@@ -89,9 +94,10 @@ class PointCloudInstance(Instance,IDisposable):
 
     the maximum number requested.
   """
-  pass
- def GetRegions(self):
-  """
+        pass
+
+    def GetRegions(self):
+        """
   GetRegions(self: PointCloudInstance) -> IList[str]
 
   
@@ -100,9 +106,10 @@ class PointCloudInstance(Instance,IDisposable):
 
    Returns: Resulting array of region names.
   """
-  pass
- def GetScanOrigin(self,scanName):
-  """
+        pass
+
+    def GetScanOrigin(self, scanName):
+        """
   GetScanOrigin(self: PointCloudInstance,scanName: str) -> XYZ
 
   
@@ -115,9 +122,10 @@ class PointCloudInstance(Instance,IDisposable):
 
    Returns: Resulting origin point of the scan.
   """
-  pass
- def GetScans(self):
-  """
+        pass
+
+    def GetScans(self):
+        """
   GetScans(self: PointCloudInstance) -> IList[str]
 
   
@@ -126,9 +134,10 @@ class PointCloudInstance(Instance,IDisposable):
 
    Returns: Resulting array of scan names.
   """
-  pass
- def GetSelectionFilter(self):
-  """
+        pass
+
+    def GetSelectionFilter(self):
+        """
   GetSelectionFilter(self: PointCloudInstance) -> PointCloudFilter
 
   
@@ -137,9 +146,10 @@ class PointCloudInstance(Instance,IDisposable):
 
    Returns: Currently active selection filter or ll if none is active.
   """
-  pass
- def HasColor(self):
-  """
+        pass
+
+    def HasColor(self):
+        """
   HasColor(self: PointCloudInstance) -> bool
 
   
@@ -148,15 +158,18 @@ class PointCloudInstance(Instance,IDisposable):
 
    Returns: True if at least one scan of the element have color,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetSelectionFilter(self,pFilter):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetSelectionFilter(self, pFilter):
+        """
   SetSelectionFilter(self: PointCloudInstance,pFilter: PointCloudFilter)
 
    Sets active selection filter by cloning of the one passed to it.
@@ -169,18 +182,24 @@ class PointCloudInstance(Instance,IDisposable):
 
     is removed.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- FilterAction=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The action taken based on the results of the selection filter applied to this point cloud.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    FilterAction = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The action taken based on the results of the selection filter applied to this point cloud.
 
 
 
@@ -192,8 +211,10 @@ Set: FilterAction(self: PointCloudInstance)=value
 
 """
 
- SupportsOverrides=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies whether the instance can have graphic overrides.
+    SupportsOverrides = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies whether the instance can have graphic overrides.
 
 
 
@@ -202,5 +223,3 @@ Get: SupportsOverrides(self: PointCloudInstance) -> bool
 
 
 """
-
-

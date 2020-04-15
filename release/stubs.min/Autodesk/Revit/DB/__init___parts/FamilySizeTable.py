@@ -1,7 +1,8 @@
-class FamilySizeTable(object,IDisposable):
- """ Contains size information for a family. """
- def AsValueString(self,row,column):
-  """
+class FamilySizeTable(object, IDisposable):
+    """ Contains size information for a family. """
+
+    def AsValueString(self, row, column):
+        """
   AsValueString(self: FamilySizeTable,row: int,column: int) -> str
 
   
@@ -16,12 +17,14 @@ class FamilySizeTable(object,IDisposable):
 
    Returns: The table cell value as a string.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: FamilySizeTable) """
-  pass
- def GetColumnHeader(self,index):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: FamilySizeTable) """
+        pass
+
+    def GetColumnHeader(self, index):
+        """
   GetColumnHeader(self: FamilySizeTable,index: int) -> FamilySizeTableColumn
 
   
@@ -34,9 +37,10 @@ class FamilySizeTable(object,IDisposable):
 
    Returns: The column at the given index.
   """
-  pass
- def IsValidColumnIndex(self,index):
-  """
+        pass
+
+    def IsValidColumnIndex(self, index):
+        """
   IsValidColumnIndex(self: FamilySizeTable,index: int) -> bool
 
   
@@ -49,24 +53,32 @@ class FamilySizeTable(object,IDisposable):
 
    Returns: True if the column index is valid,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: FamilySizeTable,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: FamilySizeTable,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -76,8 +88,10 @@ Get: IsValidObject(self: FamilySizeTable) -> bool
 
 """
 
- NumberOfColumns=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Number of columns in the table.
+    NumberOfColumns = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Number of columns in the table.
 
 
 
@@ -87,8 +101,10 @@ Get: NumberOfColumns(self: FamilySizeTable) -> int
 
 """
 
- NumberOfRows=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Number of rows in the table.
+    NumberOfRows = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Number of rows in the table.
 
 
 
@@ -97,5 +113,3 @@ Get: NumberOfRows(self: FamilySizeTable) -> int
 
 
 """
-
-

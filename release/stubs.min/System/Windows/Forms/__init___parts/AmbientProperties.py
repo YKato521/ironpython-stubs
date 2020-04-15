@@ -1,13 +1,14 @@
 class AmbientProperties(object):
- """
+    """
  Provides ambient property values to top-level controls.
 
  
 
  AmbientProperties()
  """
- BackColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the ambient background color of an object.
+
+    BackColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the ambient background color of an object.
 
 
 
@@ -19,8 +20,8 @@ Set: BackColor(self: AmbientProperties)=value
 
 """
 
- Cursor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the ambient cursor of an object.
+    Cursor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the ambient cursor of an object.
 
 
 
@@ -32,8 +33,8 @@ Set: Cursor(self: AmbientProperties)=value
 
 """
 
- Font=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the ambient font of an object.
+    Font = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the ambient font of an object.
 
 
 
@@ -45,8 +46,8 @@ Set: Font(self: AmbientProperties)=value
 
 """
 
- ForeColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the ambient foreground color of an object.
+    ForeColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the ambient foreground color of an object.
 
 
 
@@ -57,5 +58,3 @@ Get: ForeColor(self: AmbientProperties) -> Color
 Set: ForeColor(self: AmbientProperties)=value
 
 """
-
-

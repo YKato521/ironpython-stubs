@@ -1,13 +1,14 @@
 class CollectionConverter(TypeConverter):
- """
+    """
  Provides a type converter to convert collection objects to and from various other representations.
 
  
 
  CollectionConverter()
  """
- def ConvertTo(self,*__args):
-  """
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: CollectionConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -26,9 +27,10 @@ class CollectionConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def GetProperties(self,*__args):
-  """
+        pass
+
+    def GetProperties(self, *__args):
+        """
   GetProperties(self: CollectionConverter,context: ITypeDescriptorContext,value: object,attributes: Array[Attribute]) -> PropertyDescriptorCollection
 
   
@@ -51,9 +53,10 @@ class CollectionConverter(TypeConverter):
 
     this data type,or null if there are no properties. This method always returns null.
   """
-  pass
- def GetPropertiesSupported(self,context=None):
-  """
+        pass
+
+    def GetPropertiesSupported(self, context=None):
+        """
   GetPropertiesSupported(self: CollectionConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -72,4 +75,4 @@ class CollectionConverter(TypeConverter):
 
     object. This method never returns true.
   """
-  pass
+        pass

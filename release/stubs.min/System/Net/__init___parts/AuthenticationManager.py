@@ -1,8 +1,9 @@
 class AuthenticationManager(object):
- """ Manages the authentication modules called during the client authentication process. """
- @staticmethod
- def Authenticate(challenge,request,credentials):
-  """
+    """ Manages the authentication modules called during the client authentication process. """
+
+    @staticmethod
+    def Authenticate(challenge, request, credentials):
+        """
   Authenticate(challenge: str,request: WebRequest,credentials: ICredentials) -> Authorization
 
   
@@ -27,10 +28,11 @@ class AuthenticationManager(object):
 
     null.
   """
-  pass
- @staticmethod
- def PreAuthenticate(request,credentials):
-  """
+        pass
+
+    @staticmethod
+    def PreAuthenticate(request, credentials):
+        """
   PreAuthenticate(request: WebRequest,credentials: ICredentials) -> Authorization
 
   
@@ -47,10 +49,11 @@ class AuthenticationManager(object):
 
     otherwise,null. If credentials is null,this method returns null.
   """
-  pass
- @staticmethod
- def Register(authenticationModule):
-  """
+        pass
+
+    @staticmethod
+    def Register(authenticationModule):
+        """
   Register(authenticationModule: IAuthenticationModule)
 
    Registers an authentication module with the authentication manager.
@@ -59,10 +62,11 @@ class AuthenticationManager(object):
 
    authenticationModule: The System.Net.IAuthenticationModule to register with the authentication manager.
   """
-  pass
- @staticmethod
- def Unregister(*__args):
-  """
+        pass
+
+    @staticmethod
+    def Unregister(*__args):
+        """
   Unregister(authenticationScheme: str)
 
    Removes authentication modules with the specified authentication scheme from the list of 
@@ -83,8 +87,8 @@ class AuthenticationManager(object):
 
    authenticationModule: The System.Net.IAuthenticationModule to remove from the list of registered modules.
   """
-  pass
- CredentialPolicy=None
- CustomTargetNameDictionary=None
- RegisteredModules=None
+        pass
 
+    CredentialPolicy = None
+    CustomTargetNameDictionary = None
+    RegisteredModules = None

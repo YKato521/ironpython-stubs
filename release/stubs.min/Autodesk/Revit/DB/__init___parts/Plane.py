@@ -1,5 +1,5 @@
-class Plane(Surface,IDisposable):
- """
+class Plane(Surface, IDisposable):
+    """
  A Planar surface.
 
  
@@ -10,9 +10,10 @@ class Plane(Surface,IDisposable):
 
  Plane()
  """
- @staticmethod
- def Create(frameOfReference):
-  """
+
+    @staticmethod
+    def Create(frameOfReference):
+        """
   Create(frameOfReference: Frame) -> Plane
 
   
@@ -33,10 +34,11 @@ class Plane(Surface,IDisposable):
 
     right-handed (see Frame.IsRightHanded).
   """
-  pass
- @staticmethod
- def CreateByNormalAndOrigin(normal,origin):
-  """
+        pass
+
+    @staticmethod
+    def CreateByNormalAndOrigin(normal, origin):
+        """
   CreateByNormalAndOrigin(normal: XYZ,origin: XYZ) -> Plane
 
   
@@ -65,10 +67,11 @@ class Plane(Surface,IDisposable):
 
     Autodesk.Revit.DB.XYZ.IsWithinLengthLimits(Autodesk.Revit.DB.XYZ).
   """
-  pass
- @staticmethod
- def CreateByOriginAndBasis(origin,basisX,basisY):
-  """
+        pass
+
+    @staticmethod
+    def CreateByOriginAndBasis(origin, basisX, basisY):
+        """
   CreateByOriginAndBasis(origin: XYZ,basisX: XYZ,basisY: XYZ) -> Plane
 
   
@@ -97,10 +100,11 @@ class Plane(Surface,IDisposable):
 
     first one.
   """
-  pass
- @staticmethod
- def CreateByThreePoints(point1,point2,point3):
-  """
+        pass
+
+    @staticmethod
+    def CreateByThreePoints(point1, point2, point3):
+        """
   CreateByThreePoints(point1: XYZ,point2: XYZ,point3: XYZ) -> Plane
 
   
@@ -119,34 +123,41 @@ class Plane(Surface,IDisposable):
 
    point3: Third of the three points that define a unique plane.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Surface,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Surface,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Surface,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Surface,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,norm: XYZ,origin: XYZ)
 
   __new__(cls: type,xVec: XYZ,yVec: XYZ,origin: XYZ)
 
   __new__(cls: type)
   """
-  pass
- Normal=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Plane normal.
+        pass
+
+    Normal = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Plane normal.
 
 
 
@@ -156,8 +167,8 @@ Get: Normal(self: Plane) -> XYZ
 
 """
 
- Origin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Plane origin.
+    Origin = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Plane origin.
 
 
 
@@ -167,8 +178,8 @@ Get: Origin(self: Plane) -> XYZ
 
 """
 
- XVec=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Axis defining the first parametric direction of the plane.
+    XVec = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Axis defining the first parametric direction of the plane.
 
 
 
@@ -178,8 +189,8 @@ Get: XVec(self: Plane) -> XYZ
 
 """
 
- YVec=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Axis defining the second parametric direction of the plane.
+    YVec = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Axis defining the second parametric direction of the plane.
 
 
 
@@ -188,5 +199,3 @@ Get: YVec(self: Plane) -> XYZ
 
 
 """
-
-

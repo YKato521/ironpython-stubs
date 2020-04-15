@@ -1,13 +1,14 @@
 class ColorConverter(TypeConverter):
- """
+    """
  Converts colors from one data type to another. Access this class through the System.ComponentModel.TypeDescriptor.
 
  
 
  ColorConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: ColorConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -32,9 +33,10 @@ class ColorConverter(TypeConverter):
 
    Returns: true if this object can perform the conversion; otherwise,false.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: ColorConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -53,9 +55,10 @@ class ColorConverter(TypeConverter):
 
    Returns: true if this converter can perform the operation; otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: ColorConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -76,9 +79,10 @@ class ColorConverter(TypeConverter):
 
    Returns: An System.Object representing the converted value.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: ColorConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -103,9 +107,10 @@ class ColorConverter(TypeConverter):
 
    Returns: An System.Object representing the converted value.
   """
-  pass
- def GetStandardValues(self,context=None):
-  """
+        pass
+
+    def GetStandardValues(self, context=None):
+        """
   GetStandardValues(self: ColorConverter,context: ITypeDescriptorContext) -> StandardValuesCollection
 
   
@@ -132,9 +137,10 @@ class ColorConverter(TypeConverter):
 
     always returns null.
   """
-  pass
- def GetStandardValuesSupported(self,context=None):
-  """
+        pass
+
+    def GetStandardValuesSupported(self, context=None):
+        """
   GetStandardValuesSupported(self: ColorConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -149,4 +155,4 @@ class ColorConverter(TypeConverter):
 
     set of values the object supports; otherwise,false.
   """
-  pass
+        pass

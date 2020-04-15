@@ -1,5 +1,5 @@
-class MemoryStream(Stream,IDisposable):
- """
+class MemoryStream(Stream, IDisposable):
+    """
  Creates a stream whose backing store is memory.
 
  
@@ -18,11 +18,13 @@ class MemoryStream(Stream,IDisposable):
 
  MemoryStream(buffer: Array[Byte],index: int,count: int,writable: bool,publiclyVisible: bool)
  """
- def CopyToAsync(self,destination,bufferSize=None,cancellationToken=None):
-  """ CopyToAsync(self: MemoryStream,destination: Stream,bufferSize: int,cancellationToken: CancellationToken) -> Task """
-  pass
- def CreateWaitHandle(self,*args):
-  """
+
+    def CopyToAsync(self, destination, bufferSize=None, cancellationToken=None):
+        """ CopyToAsync(self: MemoryStream,destination: Stream,bufferSize: int,cancellationToken: CancellationToken) -> Task """
+        pass
+
+    def CreateWaitHandle(self, *args):
+        """
   CreateWaitHandle(self: Stream) -> WaitHandle
 
   
@@ -31,9 +33,10 @@ class MemoryStream(Stream,IDisposable):
 
    Returns: A reference to the allocated WaitHandle.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: MemoryStream,disposing: bool)
 
    Releases the unmanaged resources used by the System.IO.MemoryStream class and optionally 
@@ -46,19 +49,22 @@ class MemoryStream(Stream,IDisposable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def Flush(self):
-  """
+        pass
+
+    def Flush(self):
+        """
   Flush(self: MemoryStream)
 
    Overrides System.IO.Stream.Flush so that no action is performed.
   """
-  pass
- def FlushAsync(self,cancellationToken=None):
-  """ FlushAsync(self: MemoryStream,cancellationToken: CancellationToken) -> Task """
-  pass
- def GetBuffer(self):
-  """
+        pass
+
+    def FlushAsync(self, cancellationToken=None):
+        """ FlushAsync(self: MemoryStream,cancellationToken: CancellationToken) -> Task """
+        pass
+
+    def GetBuffer(self):
+        """
   GetBuffer(self: MemoryStream) -> Array[Byte]
 
   
@@ -71,9 +77,10 @@ class MemoryStream(Stream,IDisposable):
 
     instance.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -104,16 +111,18 @@ class MemoryStream(Stream,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def ObjectInvariant(self,*args):
-  """
+        pass
+
+    def ObjectInvariant(self, *args):
+        """
   ObjectInvariant(self: Stream)
 
    Provides support for a System.Diagnostics.Contracts.Contract.
   """
-  pass
- def Read(self,buffer,offset,count):
-  """
+        pass
+
+    def Read(self, buffer, offset, count):
+        """
   Read(self: MemoryStream,offset: int,count: int) -> (int,Array[Byte])
 
   
@@ -132,12 +141,14 @@ class MemoryStream(Stream,IDisposable):
 
     is reached before any bytes are read.
   """
-  pass
- def ReadAsync(self,buffer,offset,count,cancellationToken=None):
-  """ ReadAsync(self: MemoryStream,buffer: Array[Byte],offset: int,count: int,cancellationToken: CancellationToken) -> Task[int] """
-  pass
- def ReadByte(self):
-  """
+        pass
+
+    def ReadAsync(self, buffer, offset, count, cancellationToken=None):
+        """ ReadAsync(self: MemoryStream,buffer: Array[Byte],offset: int,count: int,cancellationToken: CancellationToken) -> Task[int] """
+        pass
+
+    def ReadByte(self):
+        """
   ReadByte(self: MemoryStream) -> int
 
   
@@ -146,9 +157,10 @@ class MemoryStream(Stream,IDisposable):
 
    Returns: The byte cast to a System.Int32,or -1 if the end of the stream has been reached.
   """
-  pass
- def Seek(self,offset,loc):
-  """
+        pass
+
+    def Seek(self, offset, loc):
+        """
   Seek(self: MemoryStream,offset: Int64,loc: SeekOrigin) -> Int64
 
   
@@ -169,9 +181,10 @@ class MemoryStream(Stream,IDisposable):
 
     offset.
   """
-  pass
- def SetLength(self,value):
-  """
+        pass
+
+    def SetLength(self, value):
+        """
   SetLength(self: MemoryStream,value: Int64)
 
    Sets the length of the current stream to the specified value.
@@ -180,9 +193,10 @@ class MemoryStream(Stream,IDisposable):
 
    value: The value at which to set the length.
   """
-  pass
- def ToArray(self):
-  """
+        pass
+
+    def ToArray(self):
+        """
   ToArray(self: MemoryStream) -> Array[Byte]
 
   
@@ -195,12 +209,14 @@ class MemoryStream(Stream,IDisposable):
 
    Returns: A new byte array.
   """
-  pass
- def TryGetBuffer(self,buffer):
-  """ TryGetBuffer(self: MemoryStream) -> (bool,ArraySegment[Byte]) """
-  pass
- def Write(self,buffer,offset,count):
-  """
+        pass
+
+    def TryGetBuffer(self, buffer):
+        """ TryGetBuffer(self: MemoryStream) -> (bool,ArraySegment[Byte]) """
+        pass
+
+    def Write(self, buffer, offset, count):
+        """
   Write(self: MemoryStream,buffer: Array[Byte],offset: int,count: int)
 
    Writes a block of bytes to the current stream using data read from a buffer.
@@ -213,12 +229,14 @@ class MemoryStream(Stream,IDisposable):
 
    count: The maximum number of bytes to write.
   """
-  pass
- def WriteAsync(self,buffer,offset,count,cancellationToken=None):
-  """ WriteAsync(self: MemoryStream,buffer: Array[Byte],offset: int,count: int,cancellationToken: CancellationToken) -> Task """
-  pass
- def WriteByte(self,value):
-  """
+        pass
+
+    def WriteAsync(self, buffer, offset, count, cancellationToken=None):
+        """ WriteAsync(self: MemoryStream,buffer: Array[Byte],offset: int,count: int,cancellationToken: CancellationToken) -> Task """
+        pass
+
+    def WriteByte(self, value):
+        """
   WriteByte(self: MemoryStream,value: Byte)
 
    Writes a byte to the current stream at the current position.
@@ -227,9 +245,10 @@ class MemoryStream(Stream,IDisposable):
 
    value: The byte to write.
   """
-  pass
- def WriteTo(self,stream):
-  """
+        pass
+
+    def WriteTo(self, stream):
+        """
   WriteTo(self: MemoryStream,stream: Stream)
 
    Writes the entire contents of this memory stream to another stream.
@@ -238,29 +257,33 @@ class MemoryStream(Stream,IDisposable):
 
    stream: The stream to write this memory stream to.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,capacity: int)
@@ -275,11 +298,13 @@ class MemoryStream(Stream,IDisposable):
 
   __new__(cls: type,buffer: Array[Byte],index: int,count: int,writable: bool,publiclyVisible: bool)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- CanRead=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the current stream supports reading.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    CanRead = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the current stream supports reading.
 
 
 
@@ -289,8 +314,8 @@ Get: CanRead(self: MemoryStream) -> bool
 
 """
 
- CanSeek=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the current stream supports seeking.
+    CanSeek = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the current stream supports seeking.
 
 
 
@@ -300,8 +325,8 @@ Get: CanSeek(self: MemoryStream) -> bool
 
 """
 
- CanWrite=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the current stream supports writing.
+    CanWrite = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the current stream supports writing.
 
 
 
@@ -311,8 +336,8 @@ Get: CanWrite(self: MemoryStream) -> bool
 
 """
 
- Capacity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the number of bytes allocated for this stream.
+    Capacity = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the number of bytes allocated for this stream.
 
 
 
@@ -324,8 +349,8 @@ Set: Capacity(self: MemoryStream)=value
 
 """
 
- Length=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the length of the stream in bytes.
+    Length = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the length of the stream in bytes.
 
 
 
@@ -335,8 +360,8 @@ Get: Length(self: MemoryStream) -> Int64
 
 """
 
- Position=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the current position within the stream.
+    Position = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the current position within the stream.
 
 
 
@@ -347,5 +372,3 @@ Get: Position(self: MemoryStream) -> Int64
 Set: Position(self: MemoryStream)=value
 
 """
-
-

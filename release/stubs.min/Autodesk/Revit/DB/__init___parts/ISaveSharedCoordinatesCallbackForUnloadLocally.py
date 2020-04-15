@@ -1,11 +1,12 @@
 class ISaveSharedCoordinatesCallbackForUnloadLocally:
- """
+    """
  An interface that is used to control Revit when trying to unload
 
     locally a Revit link with changes in shared coordinates.
  """
- def GetSaveModifiedLinksOptionForUnloadLocally(self,link):
-  """
+
+    def GetSaveModifiedLinksOptionForUnloadLocally(self, link):
+        """
   GetSaveModifiedLinksOptionForUnloadLocally(self: ISaveSharedCoordinatesCallbackForUnloadLocally,link: RevitLinkType) -> SaveModifiedLinksOptionsForUnloadLocally
 
   
@@ -28,7 +29,8 @@ class ISaveSharedCoordinatesCallbackForUnloadLocally:
 
     in-memory by shared coordinates operations.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

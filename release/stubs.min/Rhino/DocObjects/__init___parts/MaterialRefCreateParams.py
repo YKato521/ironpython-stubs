@@ -1,13 +1,16 @@
 class MaterialRefCreateParams(object):
- """
+    """
  Options passed to MaterialRefs.Create
 
  
 
  MaterialRefCreateParams()
  """
- BackFaceMaterialId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Id of the Material used to render the back of an object.
+
+    BackFaceMaterialId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The Id of the Material used to render the back of an object.
 
 
 
@@ -19,8 +22,10 @@ Set: BackFaceMaterialId(self: MaterialRefCreateParams)=value
 
 """
 
- BackFaceMaterialIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The index of the material used to render the back of an object
+    BackFaceMaterialIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The index of the material used to render the back of an object
 
 
 
@@ -32,8 +37,10 @@ Set: BackFaceMaterialIndex(self: MaterialRefCreateParams)=value
 
 """
 
- FrontFaceMaterialId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Id of the Material used to render the front of an object.
+    FrontFaceMaterialId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The Id of the Material used to render the front of an object.
 
 
 
@@ -45,8 +52,10 @@ Set: FrontFaceMaterialId(self: MaterialRefCreateParams)=value
 
 """
 
- FrontFaceMaterialIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The index of the material used to render the front of an object
+    FrontFaceMaterialIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The index of the material used to render the front of an object
 
 
 
@@ -58,8 +67,10 @@ Set: FrontFaceMaterialIndex(self: MaterialRefCreateParams)=value
 
 """
 
- MaterialSource=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determines if the simple material should come from the object or from
+    MaterialSource = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Determines if the simple material should come from the object or from
 
    it's layer.
 
@@ -73,8 +84,8 @@ Set: MaterialSource(self: MaterialRefCreateParams)=value
 
 """
 
- PlugInId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies a rendering plug-in
+    PlugInId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Identifies a rendering plug-in
 
 
 
@@ -85,5 +96,3 @@ Get: PlugInId(self: MaterialRefCreateParams) -> Guid
 Set: PlugInId(self: MaterialRefCreateParams)=value
 
 """
-
-

@@ -1,13 +1,14 @@
-class CurveLoop(object,IEnumerable[Curve],IEnumerable,IDisposable):
- """
+class CurveLoop(object, IEnumerable[Curve], IEnumerable, IDisposable):
+    """
  A class that represents a chain of curves.
 
  
 
  CurveLoop()
  """
- def Append(self,curve):
-  """
+
+    def Append(self, curve):
+        """
   Append(self: CurveLoop,curve: Curve)
 
    Append the curve to this loop.
@@ -16,14 +17,16 @@ class CurveLoop(object,IEnumerable[Curve],IEnumerable,IDisposable):
 
    curve: The curve.
   """
-  pass
- @staticmethod
- def Create(curves):
-  """ Create(curves: IList[Curve]) -> CurveLoop """
-  pass
- @staticmethod
- def CreateViaCopy(original):
-  """
+        pass
+
+    @staticmethod
+    def Create(curves):
+        """ Create(curves: IList[Curve]) -> CurveLoop """
+        pass
+
+    @staticmethod
+    def CreateViaCopy(original):
+        """
   CreateViaCopy(original: CurveLoop) -> CurveLoop
 
   
@@ -36,10 +39,11 @@ class CurveLoop(object,IEnumerable[Curve],IEnumerable,IDisposable):
 
    Returns: The copied curve loop.
   """
-  pass
- @staticmethod
- def CreateViaOffset(original,offsetDist,normal):
-  """
+        pass
+
+    @staticmethod
+    def CreateViaOffset(original, offsetDist, normal):
+        """
   CreateViaOffset(original: CurveLoop,offsetDist: float,normal: XYZ) -> CurveLoop
 
   
@@ -56,10 +60,11 @@ class CurveLoop(object,IEnumerable[Curve],IEnumerable,IDisposable):
 
    Returns: The offset curve loop.
   """
-  pass
- @staticmethod
- def CreateViaThicken(*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateViaThicken(*__args):
+        """
   CreateViaThicken(pCurve: Curve,thickness: float,normal: XYZ) -> CurveLoop
 
   
@@ -108,10 +113,11 @@ class CurveLoop(object,IEnumerable[Curve],IEnumerable,IDisposable):
 
    Returns: The new curve loop.
   """
-  pass
- @staticmethod
- def CreateViaTransform(curveLoop,transform):
-  """
+        pass
+
+    @staticmethod
+    def CreateViaTransform(curveLoop, transform):
+        """
   CreateViaTransform(curveLoop: CurveLoop,transform: Transform) -> CurveLoop
 
   
@@ -126,19 +132,22 @@ class CurveLoop(object,IEnumerable[Curve],IEnumerable,IDisposable):
 
    Returns: The new curve loop.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: CurveLoop) """
-  pass
- def Flip(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: CurveLoop) """
+        pass
+
+    def Flip(self):
+        """
   Flip(self: CurveLoop)
 
    Reverses the orientation of the curve loop.
   """
-  pass
- def GetCurveLoopIterator(self):
-  """
+        pass
+
+    def GetCurveLoopIterator(self):
+        """
   GetCurveLoopIterator(self: CurveLoop) -> CurveLoopIterator
 
   
@@ -149,9 +158,10 @@ class CurveLoop(object,IEnumerable[Curve],IEnumerable,IDisposable):
 
     pairs in the collection.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: CurveLoop) -> IEnumerator[Curve]
 
   
@@ -160,9 +170,10 @@ class CurveLoop(object,IEnumerable[Curve],IEnumerable,IDisposable):
 
    Returns: An IEnumerator object that can be used to iterate through the collection.
   """
-  pass
- def GetExactLength(self):
-  """
+        pass
+
+    def GetExactLength(self):
+        """
   GetExactLength(self: CurveLoop) -> float
 
   
@@ -171,9 +182,10 @@ class CurveLoop(object,IEnumerable[Curve],IEnumerable,IDisposable):
 
    Returns: The total length of the curves in the loop.
   """
-  pass
- def GetPlane(self):
-  """
+        pass
+
+    def GetPlane(self):
+        """
   GetPlane(self: CurveLoop) -> Plane
 
   
@@ -182,9 +194,10 @@ class CurveLoop(object,IEnumerable[Curve],IEnumerable,IDisposable):
 
    Returns: The plane of the curve loop.
   """
-  pass
- def GetRectangularHeight(self,plane):
-  """
+        pass
+
+    def GetRectangularHeight(self, plane):
+        """
   GetRectangularHeight(self: CurveLoop,plane: Plane) -> float
 
   
@@ -201,9 +214,10 @@ class CurveLoop(object,IEnumerable[Curve],IEnumerable,IDisposable):
 
    Returns: The height.
   """
-  pass
- def GetRectangularWidth(self,plane):
-  """
+        pass
+
+    def GetRectangularWidth(self, plane):
+        """
   GetRectangularWidth(self: CurveLoop,plane: Plane) -> float
 
   
@@ -220,9 +234,10 @@ class CurveLoop(object,IEnumerable[Curve],IEnumerable,IDisposable):
 
    Returns: The width.
   """
-  pass
- def HasPlane(self):
-  """
+        pass
+
+    def HasPlane(self):
+        """
   HasPlane(self: CurveLoop) -> bool
 
   
@@ -231,9 +246,10 @@ class CurveLoop(object,IEnumerable[Curve],IEnumerable,IDisposable):
 
    Returns: True if the curve loop is planar,false otherwise.
   """
-  pass
- def IsCounterclockwise(self,normal):
-  """
+        pass
+
+    def IsCounterclockwise(self, normal):
+        """
   IsCounterclockwise(self: CurveLoop,normal: XYZ) -> bool
 
   
@@ -256,9 +272,10 @@ class CurveLoop(object,IEnumerable[Curve],IEnumerable,IDisposable):
 
      false if the loop is oriented clockwise.
   """
-  pass
- def IsOpen(self):
-  """
+        pass
+
+    def IsOpen(self):
+        """
   IsOpen(self: CurveLoop) -> bool
 
   
@@ -271,9 +288,10 @@ class CurveLoop(object,IEnumerable[Curve],IEnumerable,IDisposable):
 
    Returns: True if the CurveLoop is marked open,false if marked closed.
   """
-  pass
- def IsRectangular(self,plane):
-  """
+        pass
+
+    def IsRectangular(self, plane):
+        """
   IsRectangular(self: CurveLoop,plane: Plane) -> bool
 
   
@@ -294,12 +312,14 @@ class CurveLoop(object,IEnumerable[Curve],IEnumerable,IDisposable):
 
    Returns: True if the curve loop is rectangular,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: CurveLoop,disposing: bool) """
-  pass
- def Transform(self,transform):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: CurveLoop,disposing: bool) """
+        pass
+
+    def Transform(self, transform):
+        """
   Transform(self: CurveLoop,transform: Transform)
 
    Transforms this curve loop and all of its component curves by the supplied 
@@ -312,27 +332,36 @@ class CurveLoop(object,IEnumerable[Curve],IEnumerable,IDisposable):
 
    transform: The transformation.
   """
-  pass
- def __contains__(self,*args):
-  """ __contains__[Curve](enumerable: IEnumerable[Curve],value: Curve) -> bool """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[Curve](enumerable: IEnumerable[Curve],value: Curve) -> bool """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -341,5 +370,3 @@ Get: IsValidObject(self: CurveLoop) -> bool
 
 
 """
-
-

@@ -1,5 +1,5 @@
-class DiscretionaryAcl(CommonAcl,ICollection,IEnumerable):
- """
+class DiscretionaryAcl(CommonAcl, ICollection, IEnumerable):
+    """
  Represents a Discretionary Access Control List (DACL).
 
  
@@ -10,8 +10,9 @@ class DiscretionaryAcl(CommonAcl,ICollection,IEnumerable):
 
  DiscretionaryAcl(isContainer: bool,isDS: bool,rawAcl: RawAcl)
  """
- def AddAccess(self,accessType,sid,*__args):
-  """
+
+    def AddAccess(self, accessType, sid, *__args):
+        """
   AddAccess(self: DiscretionaryAcl,accessType: AccessControlType,sid: SecurityIdentifier,accessMask: int,inheritanceFlags: InheritanceFlags,propagationFlags: PropagationFlags,objectFlags: ObjectAceFlags,objectType: Guid,inheritedObjectType: Guid)
 
    Adds an Access Control Entry (ACE) with the specified settings to the current 
@@ -62,9 +63,10 @@ class DiscretionaryAcl(CommonAcl,ICollection,IEnumerable):
 
    propagationFlags: Flags that specify the inheritance propagation properties for the new ACE.
   """
-  pass
- def RemoveAccess(self,accessType,sid,*__args):
-  """
+        pass
+
+    def RemoveAccess(self, accessType, sid, *__args):
+        """
   RemoveAccess(self: DiscretionaryAcl,accessType: AccessControlType,sid: SecurityIdentifier,accessMask: int,inheritanceFlags: InheritanceFlags,propagationFlags: PropagationFlags,objectFlags: ObjectAceFlags,objectType: Guid,inheritedObjectType: Guid) -> bool
 
   
@@ -127,9 +129,10 @@ class DiscretionaryAcl(CommonAcl,ICollection,IEnumerable):
 
    Returns: true if this method successfully removes the specified access; otherwise,false.
   """
-  pass
- def RemoveAccessSpecific(self,accessType,sid,*__args):
-  """
+        pass
+
+    def RemoveAccessSpecific(self, accessType, sid, *__args):
+        """
   RemoveAccessSpecific(self: DiscretionaryAcl,accessType: AccessControlType,sid: SecurityIdentifier,accessMask: int,inheritanceFlags: InheritanceFlags,propagationFlags: PropagationFlags,objectFlags: ObjectAceFlags,objectType: Guid,inheritedObjectType: Guid)
 
    Removes the specified Access Control Entry (ACE) from the current 
@@ -180,9 +183,10 @@ class DiscretionaryAcl(CommonAcl,ICollection,IEnumerable):
 
    propagationFlags: Flags that specify the inheritance propagation properties for the ACE to be removed.
   """
-  pass
- def SetAccess(self,accessType,sid,*__args):
-  """
+        pass
+
+    def SetAccess(self, accessType, sid, *__args):
+        """
   SetAccess(self: DiscretionaryAcl,accessType: AccessControlType,sid: SecurityIdentifier,accessMask: int,inheritanceFlags: InheritanceFlags,propagationFlags: PropagationFlags,objectFlags: ObjectAceFlags,objectType: Guid,inheritedObjectType: Guid)
 
    Sets the specified access control for the specified System.Security.Principal.SecurityIdentifier 
@@ -229,26 +233,31 @@ class DiscretionaryAcl(CommonAcl,ICollection,IEnumerable):
 
    propagationFlags: Flags that specify the inheritance propagation properties for the new ACE.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- @staticmethod
- def __new__(self,isContainer,isDS,*__args):
-  """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    @staticmethod
+    def __new__(self, isContainer, isDS, *__args):
+        """
   __new__(cls: type,isContainer: bool,isDS: bool,capacity: int)
 
   __new__(cls: type,isContainer: bool,isDS: bool,revision: Byte,capacity: int)
 
   __new__(cls: type,isContainer: bool,isDS: bool,rawAcl: RawAcl)
   """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass

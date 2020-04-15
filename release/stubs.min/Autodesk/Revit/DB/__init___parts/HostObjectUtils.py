@@ -1,8 +1,9 @@
 class HostObjectUtils(object):
- """ These are generic host object utilities. """
- @staticmethod
- def GetBottomFaces(hostObject):
-  """
+    """ These are generic host object utilities. """
+
+    @staticmethod
+    def GetBottomFaces(hostObject):
+        """
   GetBottomFaces(hostObject: HostObject) -> IList[Reference]
 
   
@@ -15,10 +16,11 @@ class HostObjectUtils(object):
 
    Returns: An array of references to the faces which are at the bottom of this element.
   """
-  pass
- @staticmethod
- def GetSideFaces(hostObject,side):
-  """
+        pass
+
+    @staticmethod
+    def GetSideFaces(hostObject, side):
+        """
   GetSideFaces(hostObject: HostObject,side: ShellLayerType) -> IList[Reference]
 
   
@@ -33,10 +35,11 @@ class HostObjectUtils(object):
 
    Returns: An array of references to the faces which are on the given side of this element.
   """
-  pass
- @staticmethod
- def GetTopFaces(hostObject):
-  """
+        pass
+
+    @staticmethod
+    def GetTopFaces(hostObject):
+        """
   GetTopFaces(hostObject: HostObject) -> IList[Reference]
 
   
@@ -49,10 +52,10 @@ class HostObjectUtils(object):
 
    Returns: An array of references to the faces which are at the top of this element.
   """
-  pass
- __all__=[
-  'GetBottomFaces',
-  'GetSideFaces',
-  'GetTopFaces',
- ]
+        pass
 
+    __all__ = [
+        "GetBottomFaces",
+        "GetSideFaces",
+        "GetTopFaces",
+    ]

@@ -1,7 +1,8 @@
 class TimeZone(object):
- """ Represents a time zone. """
- def GetDaylightChanges(self,year):
-  """
+    """ Represents a time zone. """
+
+    def GetDaylightChanges(self, year):
+        """
   GetDaylightChanges(self: TimeZone,year: int) -> DaylightTime
 
   
@@ -16,9 +17,10 @@ class TimeZone(object):
 
     saving time in year.
   """
-  pass
- def GetUtcOffset(self,time):
-  """
+        pass
+
+    def GetUtcOffset(self, time):
+        """
   GetUtcOffset(self: TimeZone,time: DateTime) -> TimeSpan
 
   
@@ -31,9 +33,10 @@ class TimeZone(object):
 
    Returns: The Coordinated Universal Time (UTC) offset from Time.
   """
-  pass
- def IsDaylightSavingTime(self,time,daylightTimes=None):
-  """
+        pass
+
+    def IsDaylightSavingTime(self, time, daylightTimes=None):
+        """
   IsDaylightSavingTime(time: DateTime,daylightTimes: DaylightTime) -> bool
 
   
@@ -68,9 +71,10 @@ class TimeZone(object):
 
    Returns: true if time is in a daylight saving time period; otherwise,false.
   """
-  pass
- def ToLocalTime(self,time):
-  """
+        pass
+
+    def ToLocalTime(self, time):
+        """
   ToLocalTime(self: TimeZone,time: DateTime) -> DateTime
 
   
@@ -83,9 +87,10 @@ class TimeZone(object):
 
    Returns: A System.DateTime object whose value is the local time that corresponds to time.
   """
-  pass
- def ToUniversalTime(self,time):
-  """
+        pass
+
+    def ToUniversalTime(self, time):
+        """
   ToUniversalTime(self: TimeZone,time: DateTime) -> DateTime
 
   
@@ -100,9 +105,12 @@ class TimeZone(object):
 
     time.
   """
-  pass
- DaylightName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the daylight saving time zone name.
+        pass
+
+    DaylightName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the daylight saving time zone name.
 
 
 
@@ -112,8 +120,10 @@ Get: DaylightName(self: TimeZone) -> str
 
 """
 
- StandardName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the standard time zone name.
+    StandardName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the standard time zone name.
 
 
 
@@ -123,6 +133,4 @@ Get: StandardName(self: TimeZone) -> str
 
 """
 
-
- CurrentTimeZone=None
-
+    CurrentTimeZone = None

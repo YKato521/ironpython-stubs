@@ -1,8 +1,9 @@
 class AsyncOperationManager(object):
- """ Provides concurrency management for classes that support asynchronous method calls. This class cannot be inherited. """
- @staticmethod
- def CreateOperation(userSuppliedState):
-  """
+    """ Provides concurrency management for classes that support asynchronous method calls. This class cannot be inherited. """
+
+    @staticmethod
+    def CreateOperation(userSuppliedState):
+        """
   CreateOperation(userSuppliedState: object) -> AsyncOperation
 
   
@@ -25,9 +26,9 @@ class AsyncOperationManager(object):
 
     asynchronous method invocation.
   """
-  pass
- SynchronizationContext=None
- __all__=[
-  'CreateOperation',
- ]
+        pass
 
+    SynchronizationContext = None
+    __all__ = [
+        "CreateOperation",
+    ]

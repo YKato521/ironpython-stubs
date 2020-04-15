@@ -1,5 +1,5 @@
-class StringFormat(MarshalByRefObject,ICloneable,IDisposable):
- """
+class StringFormat(MarshalByRefObject, ICloneable, IDisposable):
+    """
  Encapsulates text layout information (such as alignment,orientation and tab stops) display manipulations (such as ellipsis insertion and national digit substitution) and OpenType features. This class cannot be inherited.
 
  
@@ -12,8 +12,9 @@ class StringFormat(MarshalByRefObject,ICloneable,IDisposable):
 
  StringFormat(format: StringFormat)
  """
- def Clone(self):
-  """
+
+    def Clone(self):
+        """
   Clone(self: StringFormat) -> object
 
   
@@ -22,16 +23,18 @@ class StringFormat(MarshalByRefObject,ICloneable,IDisposable):
 
    Returns: The System.Drawing.StringFormat object this method creates.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: StringFormat)
 
    Releases all resources used by this System.Drawing.StringFormat object.
   """
-  pass
- def GetTabStops(self,firstTabOffset):
-  """
+        pass
+
+    def GetTabStops(self, firstTabOffset):
+        """
   GetTabStops(self: StringFormat) -> (Array[Single],Single)
 
   
@@ -40,9 +43,10 @@ class StringFormat(MarshalByRefObject,ICloneable,IDisposable):
 
    Returns: An array of distances (in number of spaces) between tab stops.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -73,9 +77,10 @@ class StringFormat(MarshalByRefObject,ICloneable,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def SetDigitSubstitution(self,language,substitute):
-  """
+        pass
+
+    def SetDigitSubstitution(self, language, substitute):
+        """
   SetDigitSubstitution(self: StringFormat,language: int,substitute: StringDigitSubstitute)
 
    Specifies the language and method to be used when local digits are substituted for western 
@@ -110,9 +115,10 @@ class StringFormat(MarshalByRefObject,ICloneable,IDisposable):
 
     displayed.
   """
-  pass
- def SetMeasurableCharacterRanges(self,ranges):
-  """
+        pass
+
+    def SetMeasurableCharacterRanges(self, ranges):
+        """
   SetMeasurableCharacterRanges(self: StringFormat,ranges: Array[CharacterRange])
 
    Specifies an array of System.Drawing.CharacterRange structures that represent the ranges of 
@@ -135,9 +141,10 @@ class StringFormat(MarshalByRefObject,ICloneable,IDisposable):
 
     ectangleF,System.Drawing.StringFormat) method.
   """
-  pass
- def SetTabStops(self,firstTabOffset,tabStops):
-  """
+        pass
+
+    def SetTabStops(self, firstTabOffset, tabStops):
+        """
   SetTabStops(self: StringFormat,firstTabOffset: Single,tabStops: Array[Single])
 
    Sets tab stops for this System.Drawing.StringFormat object.
@@ -150,9 +157,10 @@ class StringFormat(MarshalByRefObject,ICloneable,IDisposable):
 
     System.Drawing.Graphics.PageUnit property.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: StringFormat) -> str
 
   
@@ -161,29 +169,33 @@ class StringFormat(MarshalByRefObject,ICloneable,IDisposable):
 
    Returns: A string representation of this System.Drawing.StringFormat object.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,options: StringFormatFlags)
@@ -192,11 +204,13 @@ class StringFormat(MarshalByRefObject,ICloneable,IDisposable):
 
   __new__(cls: type,format: StringFormat)
   """
-  pass
- def __str__(self,*args):
-  pass
- Alignment=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets horizontal alignment of the string..
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Alignment = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets horizontal alignment of the string..
 
 
 
@@ -208,8 +222,10 @@ Set: Alignment(self: StringFormat)=value
 
 """
 
- DigitSubstitutionLanguage=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the language that is used when local digits are substituted for western digits.
+    DigitSubstitutionLanguage = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the language that is used when local digits are substituted for western digits.
 
 
 
@@ -219,8 +235,10 @@ Get: DigitSubstitutionLanguage(self: StringFormat) -> int
 
 """
 
- DigitSubstitutionMethod=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the method to be used for digit substitution.
+    DigitSubstitutionMethod = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the method to be used for digit substitution.
 
 
 
@@ -230,8 +248,10 @@ Get: DigitSubstitutionMethod(self: StringFormat) -> StringDigitSubstitute
 
 """
 
- FormatFlags=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a System.Drawing.StringFormatFlags enumeration that contains formatting information.
+    FormatFlags = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a System.Drawing.StringFormatFlags enumeration that contains formatting information.
 
 
 
@@ -243,8 +263,10 @@ Set: FormatFlags(self: StringFormat)=value
 
 """
 
- HotkeyPrefix=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Drawing.Text.HotkeyPrefix object for this System.Drawing.StringFormat object.
+    HotkeyPrefix = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Drawing.Text.HotkeyPrefix object for this System.Drawing.StringFormat object.
 
 
 
@@ -256,8 +278,10 @@ Set: HotkeyPrefix(self: StringFormat)=value
 
 """
 
- LineAlignment=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the vertical alignment of the string.
+    LineAlignment = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the vertical alignment of the string.
 
 
 
@@ -269,8 +293,8 @@ Set: LineAlignment(self: StringFormat)=value
 
 """
 
- Trimming=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Drawing.StringTrimming enumeration for this System.Drawing.StringFormat object.
+    Trimming = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the System.Drawing.StringTrimming enumeration for this System.Drawing.StringFormat object.
 
 
 
@@ -282,7 +306,5 @@ Set: Trimming(self: StringFormat)=value
 
 """
 
-
- GenericDefault=None
- GenericTypographic=None
-
+    GenericDefault = None
+    GenericTypographic = None

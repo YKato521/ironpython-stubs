@@ -1,11 +1,12 @@
 class ISaveSharedCoordinatesCallback:
- """
+    """
  An interface that may be used to control Revit when trying to unload
 
     or reload a Revit link with changes in shared coordinates.
  """
- def GetSaveModifiedLinksOption(self,link):
-  """
+
+    def GetSaveModifiedLinksOption(self, link):
+        """
   GetSaveModifiedLinksOption(self: ISaveSharedCoordinatesCallback,link: RevitLinkType) -> SaveModifiedLinksOptions
 
   
@@ -28,7 +29,8 @@ class ISaveSharedCoordinatesCallback:
 
     shared coordinates operations.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

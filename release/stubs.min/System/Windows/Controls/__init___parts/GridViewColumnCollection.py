@@ -1,16 +1,30 @@
-class GridViewColumnCollection(ObservableCollection[GridViewColumn],IList[GridViewColumn],ICollection[GridViewColumn],IEnumerable[GridViewColumn],IEnumerable,IList,ICollection,IReadOnlyList[GridViewColumn],IReadOnlyCollection[GridViewColumn],INotifyCollectionChanged,INotifyPropertyChanged):
- """
+class GridViewColumnCollection(
+    ObservableCollection[GridViewColumn],
+    IList[GridViewColumn],
+    ICollection[GridViewColumn],
+    IEnumerable[GridViewColumn],
+    IEnumerable,
+    IList,
+    ICollection,
+    IReadOnlyList[GridViewColumn],
+    IReadOnlyCollection[GridViewColumn],
+    INotifyCollectionChanged,
+    INotifyPropertyChanged,
+):
+    """
  Represents a collection of System.Windows.Controls.GridViewColumn objects.
 
  
 
  GridViewColumnCollection()
  """
- def add_PropertyChanged(self,*args):
-  """ add_PropertyChanged(self: ObservableCollection[GridViewColumn],value: PropertyChangedEventHandler) """
-  pass
- def BlockReentrancy(self,*args):
-  """
+
+    def add_PropertyChanged(self, *args):
+        """ add_PropertyChanged(self: ObservableCollection[GridViewColumn],value: PropertyChangedEventHandler) """
+        pass
+
+    def BlockReentrancy(self, *args):
+        """
   BlockReentrancy(self: ObservableCollection[GridViewColumn]) -> IDisposable
 
   
@@ -19,25 +33,28 @@ class GridViewColumnCollection(ObservableCollection[GridViewColumn],IList[GridVi
 
    Returns: An System.IDisposable object that can be used to dispose of the object.
   """
-  pass
- def CheckReentrancy(self,*args):
-  """
+        pass
+
+    def CheckReentrancy(self, *args):
+        """
   CheckReentrancy(self: ObservableCollection[GridViewColumn])
 
    Checks for reentrant attempts to change this collection.
   """
-  pass
- def ClearItems(self,*args):
-  """
+        pass
+
+    def ClearItems(self, *args):
+        """
   ClearItems(self: GridViewColumnCollection)
 
    Removes all of the System.Windows.Controls.GridViewColumn objects from the 
 
     System.Windows.Controls.GridViewColumnCollection.
   """
-  pass
- def InsertItem(self,*args):
-  """
+        pass
+
+    def InsertItem(self, *args):
+        """
   InsertItem(self: GridViewColumnCollection,index: int,column: GridViewColumn)
 
    Adds a System.Windows.Controls.GridViewColumn to the collection at the specified index.
@@ -48,9 +65,10 @@ class GridViewColumnCollection(ObservableCollection[GridViewColumn],IList[GridVi
 
    column: The System.Windows.Controls.GridViewColumn to insert.
   """
-  pass
- def MoveItem(self,*args):
-  """
+        pass
+
+    def MoveItem(self, *args):
+        """
   MoveItem(self: GridViewColumnCollection,oldIndex: int,newIndex: int)
 
    Changes the position of a System.Windows.Controls.GridViewColumn in the collection.
@@ -61,9 +79,10 @@ class GridViewColumnCollection(ObservableCollection[GridViewColumn],IList[GridVi
 
    newIndex: The new position of the System.Windows.Controls.GridViewColumn.
   """
-  pass
- def OnCollectionChanged(self,*args):
-  """
+        pass
+
+    def OnCollectionChanged(self, *args):
+        """
   OnCollectionChanged(self: GridViewColumnCollection,e: NotifyCollectionChangedEventArgs)
 
    Raises the System.Collections.ObjectModel.ObservableCollection event when the 
@@ -76,9 +95,10 @@ class GridViewColumnCollection(ObservableCollection[GridViewColumn],IList[GridVi
 
    e: The event arguments.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: ObservableCollection[GridViewColumn],e: PropertyChangedEventArgs)
 
    Raises the System.Collections.ObjectModel.ObservableCollection event with the provided arguments.
@@ -87,9 +107,10 @@ class GridViewColumnCollection(ObservableCollection[GridViewColumn],IList[GridVi
 
    e: Arguments of the event being raised.
   """
-  pass
- def RemoveItem(self,*args):
-  """
+        pass
+
+    def RemoveItem(self, *args):
+        """
   RemoveItem(self: GridViewColumnCollection,index: int)
 
    Removes a System.Windows.Controls.GridViewColumn from the 
@@ -102,12 +123,14 @@ class GridViewColumnCollection(ObservableCollection[GridViewColumn],IList[GridVi
 
    index: The position of the System.Windows.Controls.GridViewColumn to remove.
   """
-  pass
- def remove_PropertyChanged(self,*args):
-  """ remove_PropertyChanged(self: ObservableCollection[GridViewColumn],value: PropertyChangedEventHandler) """
-  pass
- def SetItem(self,*args):
-  """
+        pass
+
+    def remove_PropertyChanged(self, *args):
+        """ remove_PropertyChanged(self: ObservableCollection[GridViewColumn],value: PropertyChangedEventHandler) """
+        pass
+
+    def SetItem(self, *args):
+        """
   SetItem(self: GridViewColumnCollection,index: int,column: GridViewColumn)
 
    Replaces the System.Windows.Controls.GridViewColumn that is at the specified index with another 
@@ -126,26 +149,30 @@ class GridViewColumnCollection(ObservableCollection[GridViewColumn],IList[GridVi
 
    column: The System.Windows.Controls.GridViewColumn to place at the specified position.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Items=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a System.Collections.Generic.IList wrapper around the System.Collections.ObjectModel.Collection.
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Items = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a System.Collections.Generic.IList wrapper around the System.Collections.ObjectModel.Collection.
 
 
 
 """
-
-

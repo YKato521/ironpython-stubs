@@ -1,5 +1,5 @@
-class EventLogTraceListener(TraceListener,IDisposable):
- """
+class EventLogTraceListener(TraceListener, IDisposable):
+    """
  Provides a simple listener that directs tracing or debugging output to an System.Diagnostics.EventLog.
 
  
@@ -10,18 +10,21 @@ class EventLogTraceListener(TraceListener,IDisposable):
 
  EventLogTraceListener(source: str)
  """
- def Close(self):
-  """
+
+    def Close(self):
+        """
   Close(self: EventLogTraceListener)
 
    Closes the event log so that it no longer receives tracing or debugging output.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: EventLogTraceListener,disposing: bool) """
-  pass
- def GetSupportedAttributes(self,*args):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: EventLogTraceListener,disposing: bool) """
+        pass
+
+    def GetSupportedAttributes(self, *args):
+        """
   GetSupportedAttributes(self: TraceListener) -> Array[str]
 
   
@@ -32,9 +35,10 @@ class EventLogTraceListener(TraceListener,IDisposable):
 
     are no custom attributes.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -65,9 +69,10 @@ class EventLogTraceListener(TraceListener,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def TraceData(self,eventCache,source,severity,id,data):
-  """
+        pass
+
+    def TraceData(self, eventCache, source, severity, id, data):
+        """
   TraceData(self: EventLogTraceListener,eventCache: TraceEventCache,source: str,severity: TraceEventType,id: int,*data: Array[object])
 
    Writes trace information,an array of data objects,and event information to the event log.
@@ -116,9 +121,10 @@ class EventLogTraceListener(TraceListener,IDisposable):
 
    data: A data object to write to the output file or stream.
   """
-  pass
- def TraceEvent(self,eventCache,source,*__args):
-  """
+        pass
+
+    def TraceEvent(self, eventCache, source, *__args):
+        """
   TraceEvent(self: EventLogTraceListener,eventCache: TraceEventCache,source: str,severity: TraceEventType,id: int,message: str)
 
    Writes trace information,a message,and event information to the event log.
@@ -173,9 +179,10 @@ class EventLogTraceListener(TraceListener,IDisposable):
 
    args: An object array containing zero or more objects to format.
   """
-  pass
- def Write(self,*__args):
-  """
+        pass
+
+    def Write(self, *__args):
+        """
   Write(self: EventLogTraceListener,message: str)
 
    Writes a message to the event log for this instance.
@@ -184,18 +191,20 @@ class EventLogTraceListener(TraceListener,IDisposable):
 
    message: The message to write.
   """
-  pass
- def WriteIndent(self,*args):
-  """
+        pass
+
+    def WriteIndent(self, *args):
+        """
   WriteIndent(self: TraceListener)
 
    Writes the indent to the listener you create when you implement this class,and resets the 
 
     System.Diagnostics.TraceListener.NeedIndent property to false.
   """
-  pass
- def WriteLine(self,*__args):
-  """
+        pass
+
+    def WriteLine(self, *__args):
+        """
   WriteLine(self: EventLogTraceListener,message: str)
 
    Writes a message to the event log for this instance.
@@ -204,38 +213,43 @@ class EventLogTraceListener(TraceListener,IDisposable):
 
    message: The message to write.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,eventLog: EventLog)
 
   __new__(cls: type,source: str)
   """
-  pass
- EventLog=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the event log to write to.
+        pass
+
+    EventLog = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the event log to write to.
 
 
 
@@ -247,8 +261,8 @@ Set: EventLog(self: EventLogTraceListener)=value
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of this System.Diagnostics.EventLogTraceListener.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the name of this System.Diagnostics.EventLogTraceListener.
 
 
 
@@ -260,11 +274,11 @@ Set: Name(self: EventLogTraceListener)=value
 
 """
 
- NeedIndent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether to indent the output.
+    NeedIndent = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether to indent the output.
 
 
 
 """
-
-

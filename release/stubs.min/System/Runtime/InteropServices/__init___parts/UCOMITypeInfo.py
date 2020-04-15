@@ -1,7 +1,8 @@
 class UCOMITypeInfo:
- """ Use System.Runtime.InteropServices.ComTypes.ITypeInfo instead. """
- def AddressOfMember(self,memid,invKind,ppv):
-  """
+    """ Use System.Runtime.InteropServices.ComTypes.ITypeInfo instead. """
+
+    def AddressOfMember(self, memid, invKind, ppv):
+        """
   AddressOfMember(self: UCOMITypeInfo,memid: int,invKind: INVOKEKIND) -> IntPtr
 
   
@@ -14,9 +15,10 @@ class UCOMITypeInfo:
 
    invKind: Specifies whether the member is a property,and if so,what kind.
   """
-  pass
- def CreateInstance(self,pUnkOuter,riid,ppvObj):
-  """
+        pass
+
+    def CreateInstance(self, pUnkOuter, riid, ppvObj):
+        """
   CreateInstance(self: UCOMITypeInfo,pUnkOuter: object,riid: Guid) -> (Guid,object)
 
   
@@ -29,9 +31,10 @@ class UCOMITypeInfo:
 
    riid: The IID of the interface that the caller will use to communicate with the resulting object.
   """
-  pass
- def GetContainingTypeLib(self,ppTLB,pIndex):
-  """
+        pass
+
+    def GetContainingTypeLib(self, ppTLB, pIndex):
+        """
   GetContainingTypeLib(self: UCOMITypeInfo) -> (UCOMITypeLib,int)
 
   
@@ -40,9 +43,10 @@ class UCOMITypeInfo:
 
     library.
   """
-  pass
- def GetDllEntry(self,memid,invKind,pBstrDllName,pBstrName,pwOrdinal):
-  """
+        pass
+
+    def GetDllEntry(self, memid, invKind, pBstrDllName, pBstrName, pwOrdinal):
+        """
   GetDllEntry(self: UCOMITypeInfo,memid: int,invKind: INVOKEKIND) -> (str,str,Int16)
 
   
@@ -55,9 +59,12 @@ class UCOMITypeInfo:
 
    invKind: Specifies the kind of member identified by memid.
   """
-  pass
- def GetDocumentation(self,index,strName,strDocString,dwHelpContext,strHelpFile):
-  """
+        pass
+
+    def GetDocumentation(
+        self, index, strName, strDocString, dwHelpContext, strHelpFile
+    ):
+        """
   GetDocumentation(self: UCOMITypeInfo,index: int) -> (str,str,int,str)
 
   
@@ -72,9 +79,10 @@ class UCOMITypeInfo:
 
    index: ID of the member whose documentation is to be returned.
   """
-  pass
- def GetFuncDesc(self,index,ppFuncDesc):
-  """
+        pass
+
+    def GetFuncDesc(self, index, ppFuncDesc):
+        """
   GetFuncDesc(self: UCOMITypeInfo,index: int) -> IntPtr
 
   
@@ -89,9 +97,10 @@ class UCOMITypeInfo:
 
    index: Index of the function description to return.
   """
-  pass
- def GetIDsOfNames(self,rgszNames,cNames,pMemId):
-  """
+        pass
+
+    def GetIDsOfNames(self, rgszNames, cNames, pMemId):
+        """
   GetIDsOfNames(self: UCOMITypeInfo,rgszNames: Array[str],cNames: int) -> Array[int]
 
   
@@ -104,9 +113,10 @@ class UCOMITypeInfo:
 
    cNames: Count of names to map.
   """
-  pass
- def GetImplTypeFlags(self,index,pImplTypeFlags):
-  """
+        pass
+
+    def GetImplTypeFlags(self, index, pImplTypeFlags):
+        """
   GetImplTypeFlags(self: UCOMITypeInfo,index: int) -> int
 
   
@@ -121,9 +131,10 @@ class UCOMITypeInfo:
 
    index: Index of the implemented interface or base interface.
   """
-  pass
- def GetMops(self,memid,pBstrMops):
-  """
+        pass
+
+    def GetMops(self, memid, pBstrMops):
+        """
   GetMops(self: UCOMITypeInfo,memid: int) -> str
 
   
@@ -134,9 +145,10 @@ class UCOMITypeInfo:
 
    memid: The member ID that indicates which marshaling information is needed.
   """
-  pass
- def GetNames(self,memid,rgBstrNames,cMaxNames,pcNames):
-  """
+        pass
+
+    def GetNames(self, memid, rgBstrNames, cMaxNames, pcNames):
+        """
   GetNames(self: UCOMITypeInfo,memid: int,cMaxNames: int) -> (Array[str],int)
 
   
@@ -153,9 +165,10 @@ class UCOMITypeInfo:
 
    cMaxNames: Length of the rgBstrNames array.
   """
-  pass
- def GetRefTypeInfo(self,hRef,ppTI):
-  """
+        pass
+
+    def GetRefTypeInfo(self, hRef, ppTI):
+        """
   GetRefTypeInfo(self: UCOMITypeInfo,hRef: int) -> UCOMITypeInfo
 
   
@@ -170,9 +183,10 @@ class UCOMITypeInfo:
 
    hRef: Handle to the referenced type description to return.
   """
-  pass
- def GetRefTypeOfImplType(self,index,href):
-  """
+        pass
+
+    def GetRefTypeOfImplType(self, index, href):
+        """
   GetRefTypeOfImplType(self: UCOMITypeInfo,index: int) -> int
 
   
@@ -187,9 +201,10 @@ class UCOMITypeInfo:
 
    index: Index of the implemented type whose handle is returned.
   """
-  pass
- def GetTypeAttr(self,ppTypeAttr):
-  """
+        pass
+
+    def GetTypeAttr(self, ppTypeAttr):
+        """
   GetTypeAttr(self: UCOMITypeInfo) -> IntPtr
 
   
@@ -198,9 +213,10 @@ class UCOMITypeInfo:
 
     the type description.
   """
-  pass
- def GetTypeComp(self,ppTComp):
-  """
+        pass
+
+    def GetTypeComp(self, ppTComp):
+        """
   GetTypeComp(self: UCOMITypeInfo) -> UCOMITypeComp
 
   
@@ -209,9 +225,10 @@ class UCOMITypeInfo:
 
     bind to the type description's members.
   """
-  pass
- def GetVarDesc(self,index,ppVarDesc):
-  """
+        pass
+
+    def GetVarDesc(self, index, ppVarDesc):
+        """
   GetVarDesc(self: UCOMITypeInfo,index: int) -> IntPtr
 
   
@@ -222,9 +239,12 @@ class UCOMITypeInfo:
 
    index: Index of the variable description to return.
   """
-  pass
- def Invoke(self,pvInstance,memid,wFlags,pDispParams,pVarResult,pExcepInfo,puArgErr):
-  """
+        pass
+
+    def Invoke(
+        self, pvInstance, memid, wFlags, pDispParams, pVarResult, pExcepInfo, puArgErr
+    ):
+        """
   Invoke(self: UCOMITypeInfo,pvInstance: object,memid: int,wFlags: Int16,pDispParams: DISPPARAMS) -> (DISPPARAMS,object,EXCEPINFO,int)
 
   
@@ -247,9 +267,10 @@ class UCOMITypeInfo:
 
     arguments,and counts of the number of elements in each array.
   """
-  pass
- def ReleaseFuncDesc(self,pFuncDesc):
-  """
+        pass
+
+    def ReleaseFuncDesc(self, pFuncDesc):
+        """
   ReleaseFuncDesc(self: UCOMITypeInfo,pFuncDesc: IntPtr)
 
    Releases a System.Runtime.InteropServices.FUNCDESC previously returned by 
@@ -262,9 +283,10 @@ class UCOMITypeInfo:
 
    pFuncDesc: Reference to the FUNCDESC to release.
   """
-  pass
- def ReleaseTypeAttr(self,pTypeAttr):
-  """
+        pass
+
+    def ReleaseTypeAttr(self, pTypeAttr):
+        """
   ReleaseTypeAttr(self: UCOMITypeInfo,pTypeAttr: IntPtr)
 
    Releases a System.Runtime.InteropServices.TYPEATTR previously returned by 
@@ -277,9 +299,10 @@ class UCOMITypeInfo:
 
    pTypeAttr: Reference to the TYPEATTR to release.
   """
-  pass
- def ReleaseVarDesc(self,pVarDesc):
-  """
+        pass
+
+    def ReleaseVarDesc(self, pVarDesc):
+        """
   ReleaseVarDesc(self: UCOMITypeInfo,pVarDesc: IntPtr)
 
    Releases a VARDESC previously returned by 
@@ -292,7 +315,8 @@ class UCOMITypeInfo:
 
    pVarDesc: Reference to the VARDESC to release.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

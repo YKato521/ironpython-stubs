@@ -1,5 +1,13 @@
-class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallback,IComparable[Decimal],IEquatable[Decimal]):
- """
+class Decimal(
+    object,
+    IFormattable,
+    IComparable,
+    IConvertible,
+    IDeserializationCallback,
+    IComparable[Decimal],
+    IEquatable[Decimal],
+):
+    """
  Represents a decimal number.
 
  
@@ -20,9 +28,10 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
  Decimal(lo: int,mid: int,hi: int,isNegative: bool,scale: Byte)
  """
- @staticmethod
- def Add(d1,d2):
-  """
+
+    @staticmethod
+    def Add(d1, d2):
+        """
   Add(d1: Decimal,d2: Decimal) -> Decimal
 
   
@@ -37,10 +46,11 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: The sum of d1 and d2.
   """
-  pass
- @staticmethod
- def Ceiling(d):
-  """
+        pass
+
+    @staticmethod
+    def Ceiling(d):
+        """
   Ceiling(d: Decimal) -> Decimal
 
   
@@ -59,10 +69,11 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
     method returns a System.Decimal instead of an integral type.
   """
-  pass
- @staticmethod
- def Compare(d1,d2):
-  """
+        pass
+
+    @staticmethod
+    def Compare(d1, d2):
+        """
   Compare(d1: Decimal,d2: Decimal) -> int
 
   
@@ -79,9 +90,10 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
     d1 is less than d2. Zero d1 and d2 are equal. Greater than zero d1 is greater than d2.
   """
-  pass
- def CompareTo(self,value):
-  """
+        pass
+
+    def CompareTo(self, value):
+        """
   CompareTo(self: Decimal,value: Decimal) -> int
 
   
@@ -116,10 +128,11 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
     than zero This instance is greater than value.-or- value is null.
   """
-  pass
- @staticmethod
- def Divide(d1,d2):
-  """
+        pass
+
+    @staticmethod
+    def Divide(d1, d2):
+        """
   Divide(d1: Decimal,d2: Decimal) -> Decimal
 
   
@@ -134,9 +147,10 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: The result of dividing d1 by d2.
   """
-  pass
- def Equals(self,*__args):
-  """
+        pass
+
+    def Equals(self, *__args):
+        """
   Equals(d1: Decimal,d2: Decimal) -> bool
 
   
@@ -187,10 +201,11 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: true if value is a System.Decimal and equal to this instance; otherwise,false.
   """
-  pass
- @staticmethod
- def Floor(d):
-  """
+        pass
+
+    @staticmethod
+    def Floor(d):
+        """
   Floor(d: Decimal) -> Decimal
 
   
@@ -205,10 +220,11 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
     is less than d.-or- If d doesn't have a fractional part,d is returned unchanged.
   """
-  pass
- @staticmethod
- def FromOACurrency(cy):
-  """
+        pass
+
+    @staticmethod
+    def FromOACurrency(cy):
+        """
   FromOACurrency(cy: Int64) -> Decimal
 
   
@@ -225,10 +241,11 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: A System.Decimal that contains the equivalent of cy.
   """
-  pass
- @staticmethod
- def GetBits(d):
-  """
+        pass
+
+    @staticmethod
+    def GetBits(d):
+        """
   GetBits(d: Decimal) -> Array[int]
 
   
@@ -245,9 +262,10 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: A 32-bit signed integer array with four elements that contain the binary representation of d.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Decimal) -> int
 
   
@@ -256,9 +274,10 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: A 32-bit signed integer hash code.
   """
-  pass
- def GetTypeCode(self):
-  """
+        pass
+
+    def GetTypeCode(self):
+        """
   GetTypeCode(self: Decimal) -> TypeCode
 
   
@@ -267,10 +286,11 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: The enumerated constant System.TypeCode.Decimal.
   """
-  pass
- @staticmethod
- def Multiply(d1,d2):
-  """
+        pass
+
+    @staticmethod
+    def Multiply(d1, d2):
+        """
   Multiply(d1: Decimal,d2: Decimal) -> Decimal
 
   
@@ -285,10 +305,11 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: The result of multiplying d1 and d2.
   """
-  pass
- @staticmethod
- def Negate(d):
-  """
+        pass
+
+    @staticmethod
+    def Negate(d):
+        """
   Negate(d: Decimal) -> Decimal
 
   
@@ -301,10 +322,11 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: A decimal number with the value of d,but the opposite sign.-or- Zero,if d is zero.
   """
-  pass
- @staticmethod
- def Parse(s,*__args):
-  """
+        pass
+
+    @staticmethod
+    def Parse(s, *__args):
+        """
   Parse(s: str,provider: IFormatProvider) -> Decimal
 
   
@@ -393,10 +415,11 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: The System.Decimal number equivalent to the number contained in s as specified by style.
   """
-  pass
- @staticmethod
- def Remainder(d1,d2):
-  """
+        pass
+
+    @staticmethod
+    def Remainder(d1, d2):
+        """
   Remainder(d1: Decimal,d2: Decimal) -> Decimal
 
   
@@ -411,10 +434,11 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: The remainder after dividing d1 by d2.
   """
-  pass
- @staticmethod
- def Round(d,*__args):
-  """
+        pass
+
+    @staticmethod
+    def Round(d, *__args):
+        """
   Round(d: Decimal,mode: MidpointRounding) -> Decimal
 
   
@@ -497,10 +521,11 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: The decimal number equivalent to d rounded to decimals number of decimal places.
   """
-  pass
- @staticmethod
- def Subtract(d1,d2):
-  """
+        pass
+
+    @staticmethod
+    def Subtract(d1, d2):
+        """
   Subtract(d1: Decimal,d2: Decimal) -> Decimal
 
   
@@ -515,10 +540,11 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: The result of subtracting d2 from d1.
   """
-  pass
- @staticmethod
- def ToByte(value):
-  """
+        pass
+
+    @staticmethod
+    def ToByte(value):
+        """
   ToByte(value: Decimal) -> Byte
 
   
@@ -531,10 +557,11 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: An 8-bit unsigned integer equivalent to value.
   """
-  pass
- @staticmethod
- def ToDouble(d):
-  """
+        pass
+
+    @staticmethod
+    def ToDouble(d):
+        """
   ToDouble(d: Decimal) -> float
 
   
@@ -551,10 +578,11 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: A double-precision floating-point number equivalent to d.
   """
-  pass
- @staticmethod
- def ToInt16(value):
-  """
+        pass
+
+    @staticmethod
+    def ToInt16(value):
+        """
   ToInt16(value: Decimal) -> Int16
 
   
@@ -567,10 +595,11 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: A 16-bit signed integer equivalent to value.
   """
-  pass
- @staticmethod
- def ToInt32(d):
-  """
+        pass
+
+    @staticmethod
+    def ToInt32(d):
+        """
   ToInt32(d: Decimal) -> int
 
   
@@ -583,10 +612,11 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: A 32-bit signed integer equivalent to the value of d.
   """
-  pass
- @staticmethod
- def ToInt64(d):
-  """
+        pass
+
+    @staticmethod
+    def ToInt64(d):
+        """
   ToInt64(d: Decimal) -> Int64
 
   
@@ -599,10 +629,11 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: A 64-bit signed integer equivalent to the value of d.
   """
-  pass
- @staticmethod
- def ToOACurrency(value):
-  """
+        pass
+
+    @staticmethod
+    def ToOACurrency(value):
+        """
   ToOACurrency(value: Decimal) -> Int64
 
   
@@ -619,10 +650,11 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: A 64-bit signed integer that contains the OLE Automation equivalent of value.
   """
-  pass
- @staticmethod
- def ToSByte(value):
-  """
+        pass
+
+    @staticmethod
+    def ToSByte(value):
+        """
   ToSByte(value: Decimal) -> SByte
 
   
@@ -635,10 +667,11 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: An 8-bit signed integer equivalent to value.
   """
-  pass
- @staticmethod
- def ToSingle(d):
-  """
+        pass
+
+    @staticmethod
+    def ToSingle(d):
+        """
   ToSingle(d: Decimal) -> Single
 
   
@@ -655,9 +688,10 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: A single-precision floating-point number equivalent to the value of d.
   """
-  pass
- def ToString(self,*__args):
-  """
+        pass
+
+    def ToString(self, *__args):
+        """
   ToString(self: Decimal,provider: IFormatProvider) -> str
 
   
@@ -716,10 +750,11 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: The string representation of the value of this instance as specified by format.
   """
-  pass
- @staticmethod
- def ToUInt16(value):
-  """
+        pass
+
+    @staticmethod
+    def ToUInt16(value):
+        """
   ToUInt16(value: Decimal) -> UInt16
 
   
@@ -732,10 +767,11 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: A 16-bit unsigned integer equivalent to the value of value.
   """
-  pass
- @staticmethod
- def ToUInt32(d):
-  """
+        pass
+
+    @staticmethod
+    def ToUInt32(d):
+        """
   ToUInt32(d: Decimal) -> UInt32
 
   
@@ -748,10 +784,11 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: A 32-bit unsigned integer equivalent to the value of d.
   """
-  pass
- @staticmethod
- def ToUInt64(d):
-  """
+        pass
+
+    @staticmethod
+    def ToUInt64(d):
+        """
   ToUInt64(d: Decimal) -> UInt64
 
   
@@ -764,10 +801,11 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: A 64-bit unsigned integer equivalent to the value of d.
   """
-  pass
- @staticmethod
- def Truncate(d):
-  """
+        pass
+
+    @staticmethod
+    def Truncate(d):
+        """
   Truncate(d: Decimal) -> Decimal
 
   
@@ -780,10 +818,11 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: The result of d rounded toward zero,to the nearest whole number.
   """
-  pass
- @staticmethod
- def TryParse(s,*__args):
-  """
+        pass
+
+    @staticmethod
+    def TryParse(s, *__args):
+        """
   TryParse(s: str,style: NumberStyles,provider: IFormatProvider) -> (bool,Decimal)
 
   
@@ -826,49 +865,63 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: true if s was converted successfully; otherwise,false.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __cmp__(self,*args):
-  """ x.__cmp__(y) <==> cmp(x,y) """
-  pass
- def __complex__(self,*args):
-  """ __complex__(value: Decimal) -> float """
-  pass
- def __div__(self,*args):
-  """ x.__div__(y) <==> x/y """
-  pass
- def __float__(self,*args):
-  """ __complex__(value: Decimal) -> float """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __hash__(self,*args):
-  """ x.__hash__() <==> hash(x) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __int__(self,*args):
-  """ __int__(value: Decimal) -> int """
-  pass
- def __long__(self,*args):
-  """ __int__(value: Decimal) -> int """
-  pass
- def __mod__(self,*args):
-  """ x.__mod__(y) <==> x%y """
-  pass
- def __mul__(self,*args):
-  """ x.__mul__(y) <==> x*y """
-  pass
- def __neg__(self,*args):
-  """ x.__neg__() <==> -x """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __cmp__(self, *args):
+        """ x.__cmp__(y) <==> cmp(x,y) """
+        pass
+
+    def __complex__(self, *args):
+        """ __complex__(value: Decimal) -> float """
+        pass
+
+    def __div__(self, *args):
+        """ x.__div__(y) <==> x/y """
+        pass
+
+    def __float__(self, *args):
+        """ __complex__(value: Decimal) -> float """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __hash__(self, *args):
+        """ x.__hash__() <==> hash(x) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __int__(self, *args):
+        """ __int__(value: Decimal) -> int """
+        pass
+
+    def __long__(self, *args):
+        """ __int__(value: Decimal) -> int """
+        pass
+
+    def __mod__(self, *args):
+        """ x.__mod__(y) <==> x%y """
+        pass
+
+    def __mul__(self, *args):
+        """ x.__mul__(y) <==> x*y """
+        pass
+
+    def __neg__(self, *args):
+        """ x.__neg__() <==> -x """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,value: int)
 
   __new__(cls: type,value: UInt32)
@@ -887,12 +940,14 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
   __new__[Decimal]() -> Decimal
   """
-  pass
- def __nonzero__(self,*args):
-  """ __nonzero__(x: Decimal) -> bool """
-  pass
- def __pos__(self,*args):
-  """
+        pass
+
+    def __nonzero__(self, *args):
+        """ __nonzero__(x: Decimal) -> bool """
+        pass
+
+    def __pos__(self, *args):
+        """
   __pos__(d: Decimal) -> Decimal
 
   
@@ -905,9 +960,10 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: The value of the operand,d.
   """
-  pass
- def __radd__(self,*args):
-  """
+        pass
+
+    def __radd__(self, *args):
+        """
   __radd__(d1: Decimal,d2: Decimal) -> Decimal
 
   
@@ -922,9 +978,10 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: The result of adding d1 and d2.
   """
-  pass
- def __rdiv__(self,*args):
-  """
+        pass
+
+    def __rdiv__(self, *args):
+        """
   __rdiv__(d1: Decimal,d2: Decimal) -> Decimal
 
   
@@ -939,14 +996,17 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: The result of dividing d1 by d2.
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(x: Decimal) -> str """
-  pass
- def __rmod__(self,*args):
-  """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(x: Decimal) -> str """
+        pass
+
+    def __rmod__(self, *args):
+        """
   __rmod__(d1: Decimal,d2: Decimal) -> Decimal
 
   
@@ -961,9 +1021,10 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: The remainder resulting from dividing d1 by d2.
   """
-  pass
- def __rmul__(self,*args):
-  """
+        pass
+
+    def __rmul__(self, *args):
+        """
   __rmul__(d1: Decimal,d2: Decimal) -> Decimal
 
   
@@ -978,9 +1039,10 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: The result of multiplying d1 by d2.
   """
-  pass
- def __rsub__(self,*args):
-  """
+        pass
+
+    def __rsub__(self, *args):
+        """
   __rsub__(d1: Decimal,d2: Decimal) -> Decimal
 
   
@@ -995,15 +1057,17 @@ class Decimal(object,IFormattable,IComparable,IConvertible,IDeserializationCallb
 
    Returns: The result of subtracting d2 from d1.
   """
-  pass
- def __str__(self,*args):
-  pass
- def __sub__(self,*args):
-  """ x.__sub__(y) <==> x-y """
-  pass
- MaxValue=None
- MinusOne=None
- MinValue=None
- One=None
- Zero=None
+        pass
 
+    def __str__(self, *args):
+        pass
+
+    def __sub__(self, *args):
+        """ x.__sub__(y) <==> x-y """
+        pass
+
+    MaxValue = None
+    MinusOne = None
+    MinValue = None
+    One = None
+    Zero = None

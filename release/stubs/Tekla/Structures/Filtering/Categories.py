@@ -8,6 +8,7 @@
 # no functions
 # classes
 
+
 class AssemblyFilterExpressions(object):
     # no doc
     CustomBoolean = None
@@ -185,5 +186,3 @@ class WeldFilterExpressions(object):
     TypeAboveLine = None
     TypeBelowLine = None
     WeldingSite = None
-
-

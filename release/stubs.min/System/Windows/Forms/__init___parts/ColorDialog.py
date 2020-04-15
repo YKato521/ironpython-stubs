@@ -1,13 +1,14 @@
-class ColorDialog(CommonDialog,IComponent,IDisposable):
- """
+class ColorDialog(CommonDialog, IComponent, IDisposable):
+    """
  Represents a common dialog box that displays available colors along with controls that enable the user to define custom colors.
 
  
 
  ColorDialog()
  """
- def Dispose(self):
-  """
+
+    def Dispose(self):
+        """
   Dispose(self: Component,disposing: bool)
 
    Releases the unmanaged resources used by the System.ComponentModel.Component and optionally 
@@ -20,9 +21,10 @@ class ColorDialog(CommonDialog,IComponent,IDisposable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -41,9 +43,10 @@ class ColorDialog(CommonDialog,IComponent,IDisposable):
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def HookProc(self,*args):
-  """
+        pass
+
+    def HookProc(self, *args):
+        """
   HookProc(self: CommonDialog,hWnd: IntPtr,msg: int,wparam: IntPtr,lparam: IntPtr) -> IntPtr
 
   
@@ -68,9 +71,10 @@ class ColorDialog(CommonDialog,IComponent,IDisposable):
 
     default dialog box procedure ignores the message.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -101,9 +105,10 @@ class ColorDialog(CommonDialog,IComponent,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def OnHelpRequest(self,*args):
-  """
+        pass
+
+    def OnHelpRequest(self, *args):
+        """
   OnHelpRequest(self: CommonDialog,e: EventArgs)
 
    Raises the System.Windows.Forms.CommonDialog.HelpRequest event.
@@ -112,9 +117,10 @@ class ColorDialog(CommonDialog,IComponent,IDisposable):
 
    e: An System.Windows.Forms.HelpEventArgs that provides the event data.
   """
-  pass
- def OwnerWndProc(self,*args):
-  """
+        pass
+
+    def OwnerWndProc(self, *args):
+        """
   OwnerWndProc(self: CommonDialog,hWnd: IntPtr,msg: int,wparam: IntPtr,lparam: IntPtr) -> IntPtr
 
   
@@ -137,18 +143,20 @@ class ColorDialog(CommonDialog,IComponent,IDisposable):
 
    Returns: The result of the message processing,which is dependent on the message sent.
   """
-  pass
- def Reset(self):
-  """
+        pass
+
+    def Reset(self):
+        """
   Reset(self: ColorDialog)
 
    Resets all options to their default values,the last selected color to black,and the custom 
 
     colors to their default values.
   """
-  pass
- def RunDialog(self,*args):
-  """
+        pass
+
+    def RunDialog(self, *args):
+        """
   RunDialog(self: ColorDialog,hwndOwner: IntPtr) -> bool
 
   
@@ -157,9 +165,10 @@ class ColorDialog(CommonDialog,IComponent,IDisposable):
 
    Returns: true if the dialog box was successfully run; otherwise,false.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: ColorDialog) -> str
 
   
@@ -168,30 +177,37 @@ class ColorDialog(CommonDialog,IComponent,IDisposable):
 
    Returns: A System.String that represents the current System.Windows.Forms.ColorDialog.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- AllowFullOpen=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the user can use the dialog box to define custom colors.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AllowFullOpen = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the user can use the dialog box to define custom colors.
 
 
 
@@ -203,8 +219,8 @@ Set: AllowFullOpen(self: ColorDialog)=value
 
 """
 
- AnyColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the dialog box displays all available colors in the set of basic colors.
+    AnyColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the dialog box displays all available colors in the set of basic colors.
 
 
 
@@ -216,15 +232,17 @@ Set: AnyColor(self: ColorDialog)=value
 
 """
 
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- Color=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the color selected by the user.
+    Color = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the color selected by the user.
 
 
 
@@ -236,8 +254,10 @@ Set: Color(self: ColorDialog)=value
 
 """
 
- CustomColors=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the set of custom colors shown in the dialog box.
+    CustomColors = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the set of custom colors shown in the dialog box.
 
 
 
@@ -249,22 +269,24 @@ Set: CustomColors(self: ColorDialog)=value
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- FullOpen=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the controls used to create custom colors are visible when the dialog box is opened
+    FullOpen = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the controls used to create custom colors are visible when the dialog box is opened
 
 
 
@@ -276,22 +298,22 @@ Set: FullOpen(self: ColorDialog)=value
 
 """
 
- Instance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the underlying window instance handle (HINSTANCE).
+    Instance = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the underlying window instance handle (HINSTANCE).
 
 
 
 """
 
- Options=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets values to initialize the System.Windows.Forms.ColorDialog.
+    Options = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets values to initialize the System.Windows.Forms.ColorDialog.
 
 
 
 """
 
- ShowHelp=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether a Help button appears in the color dialog box.
+    ShowHelp = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether a Help button appears in the color dialog box.
 
 
 
@@ -303,8 +325,10 @@ Set: ShowHelp(self: ColorDialog)=value
 
 """
 
- SolidColorOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the dialog box will restrict users to selecting solid colors only.
+    SolidColorOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the dialog box will restrict users to selecting solid colors only.
 
 
 
@@ -315,5 +339,3 @@ Get: SolidColorOnly(self: ColorDialog) -> bool
 Set: SolidColorOnly(self: ColorDialog)=value
 
 """
-
-

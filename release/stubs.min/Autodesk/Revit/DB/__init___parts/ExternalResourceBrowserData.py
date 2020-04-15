@@ -1,5 +1,5 @@
-class ExternalResourceBrowserData(object,IDisposable):
- """
+class ExternalResourceBrowserData(object, IDisposable):
+    """
  Represents a collection of external resources and external resource folders to be presented as
 
     the content of a folder in the file browser in Revit.
@@ -8,8 +8,9 @@ class ExternalResourceBrowserData(object,IDisposable):
 
  ExternalResourceBrowserData(document: Document,serverId: Guid,folderPath: str,matchOptions: ExternalResourceMatchOptions)
  """
- def AddResource(self,resourceName,*__args):
-  """
+
+    def AddResource(self, resourceName, *__args):
+        """
   AddResource(self: ExternalResourceBrowserData,resourceName: str,referenceInformation: IDictionary[str,str])AddResource(self: ExternalResourceBrowserData,resourceName: str)
 
    Adds an external resource to the folder path by supplying the resource name.
@@ -32,9 +33,10 @@ class ExternalResourceBrowserData(object,IDisposable):
 
    version: The version of external resource.
   """
-  pass
- def AddSubFolder(self,folderName):
-  """
+        pass
+
+    def AddSubFolder(self, folderName):
+        """
   AddSubFolder(self: ExternalResourceBrowserData,folderName: str)
 
    Adds a sub folder to the folder path with the given name.
@@ -43,9 +45,10 @@ class ExternalResourceBrowserData(object,IDisposable):
 
    folderName: The name of the folder.
   """
-  pass
- def CallingDocumentHasModelPath(self):
-  """
+        pass
+
+    def CallingDocumentHasModelPath(self):
+        """
   CallingDocumentHasModelPath(self: ExternalResourceBrowserData) -> bool
 
   
@@ -58,12 +61,14 @@ class ExternalResourceBrowserData(object,IDisposable):
 
    Returns: True if the document has a defined ModelPath.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: ExternalResourceBrowserData) """
-  pass
- def GetCallingDocumentModelPath(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: ExternalResourceBrowserData) """
+        pass
+
+    def GetCallingDocumentModelPath(self):
+        """
   GetCallingDocumentModelPath(self: ExternalResourceBrowserData) -> ModelPath
 
   
@@ -78,9 +83,10 @@ class ExternalResourceBrowserData(object,IDisposable):
 
     resource browser data.
   """
-  pass
- def GetMatchOptions(self):
-  """
+        pass
+
+    def GetMatchOptions(self):
+        """
   GetMatchOptions(self: ExternalResourceBrowserData) -> ExternalResourceMatchOptions
 
   
@@ -89,9 +95,10 @@ class ExternalResourceBrowserData(object,IDisposable):
 
    Returns: The external resource match options.
   """
-  pass
- def GetResources(self):
-  """
+        pass
+
+    def GetResources(self):
+        """
   GetResources(self: ExternalResourceBrowserData) -> IList[ExternalResourceReference]
 
   
@@ -100,9 +107,10 @@ class ExternalResourceBrowserData(object,IDisposable):
 
    Returns: The external resources under current folder of the browser data.
   """
-  pass
- def GetSubFolders(self):
-  """
+        pass
+
+    def GetSubFolders(self):
+        """
   GetSubFolders(self: ExternalResourceBrowserData) -> IList[str]
 
   
@@ -111,9 +119,10 @@ class ExternalResourceBrowserData(object,IDisposable):
 
    Returns: The sub folders under folder path of the browser data.
   """
-  pass
- def IsValidFolderName(self,folderName):
-  """
+        pass
+
+    def IsValidFolderName(self, folderName):
+        """
   IsValidFolderName(self: ExternalResourceBrowserData,folderName: str) -> bool
 
   
@@ -126,9 +135,10 @@ class ExternalResourceBrowserData(object,IDisposable):
 
    Returns: True if the name is a valid folder name,false otherwise.
   """
-  pass
- def IsValidResouceName(self,resourceName):
-  """
+        pass
+
+    def IsValidResouceName(self, resourceName):
+        """
   IsValidResouceName(self: ExternalResourceBrowserData,resourceName: str) -> bool
 
   
@@ -141,28 +151,37 @@ class ExternalResourceBrowserData(object,IDisposable):
 
    Returns: True if the name is a valid resource name,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: ExternalResourceBrowserData,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,document,serverId,folderPath,matchOptions):
-  """ __new__(cls: type,document: Document,serverId: Guid,folderPath: str,matchOptions: ExternalResourceMatchOptions) """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- FolderPath=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The current folder path to which the new resources and sub folder belong.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: ExternalResourceBrowserData,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, document, serverId, folderPath, matchOptions):
+        """ __new__(cls: type,document: Document,serverId: Guid,folderPath: str,matchOptions: ExternalResourceMatchOptions) """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    FolderPath = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The current folder path to which the new resources and sub folder belong.
 
 
 
@@ -172,8 +191,10 @@ Get: FolderPath(self: ExternalResourceBrowserData) -> str
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -183,8 +204,8 @@ Get: IsValidObject(self: ExternalResourceBrowserData) -> bool
 
 """
 
- ServerId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Id of IExternalResourceServer which handles the external resource load.
+    ServerId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The Id of IExternalResourceServer which handles the external resource load.
 
 
 
@@ -193,5 +214,3 @@ Get: ServerId(self: ExternalResourceBrowserData) -> Guid
 
 
 """
-
-

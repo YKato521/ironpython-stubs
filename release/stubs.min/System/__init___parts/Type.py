@@ -1,7 +1,8 @@
-class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
- """ Represents type declarations: class types,interface types,array types,value types,enumeration types,type parameters,generic type definitions,and open or closed constructed generic types. """
- def Equals(self,o):
-  """
+class Type(MemberInfo, ICustomAttributeProvider, _MemberInfo, _Type, IReflect):
+    """ Represents type declarations: class types,interface types,array types,value types,enumeration types,type parameters,generic type definitions,and open or closed constructed generic types. """
+
+    def Equals(self, o):
+        """
   Equals(self: Type,o: Type) -> bool
 
   
@@ -50,36 +51,40 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     parameter is not a Type.
   """
-  pass
- def FilterAttribute(self,*args):
-  """
+        pass
+
+    def FilterAttribute(self, *args):
+        """
   Represents a delegate that is used to filter a list of members represented in an array of System.Reflection.MemberInfo objects.
 
   
 
   MemberFilter(object: object,method: IntPtr)
   """
-  pass
- def FilterName(self,*args):
-  """
+        pass
+
+    def FilterName(self, *args):
+        """
   Represents a delegate that is used to filter a list of members represented in an array of System.Reflection.MemberInfo objects.
 
   
 
   MemberFilter(object: object,method: IntPtr)
   """
-  pass
- def FilterNameIgnoreCase(self,*args):
-  """
+        pass
+
+    def FilterNameIgnoreCase(self, *args):
+        """
   Represents a delegate that is used to filter a list of members represented in an array of System.Reflection.MemberInfo objects.
 
   
 
   MemberFilter(object: object,method: IntPtr)
   """
-  pass
- def FindInterfaces(self,filter,filterCriteria):
-  """
+        pass
+
+    def FindInterfaces(self, filter, filterCriteria):
+        """
   FindInterfaces(self: Type,filter: TypeFilter,filterCriteria: object) -> Array[Type]
 
   
@@ -106,9 +111,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     matching the filter are implemented or inherited by the current System.Type.
   """
-  pass
- def FindMembers(self,memberType,bindingAttr,filter,filterCriteria):
-  """
+        pass
+
+    def FindMembers(self, memberType, bindingAttr, filter, filterCriteria):
+        """
   FindMembers(self: Type,memberType: MemberTypes,bindingAttr: BindingFlags,filter: MemberFilter,filterCriteria: object) -> Array[MemberInfo]
 
   
@@ -151,9 +157,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     members of type memberType that match the filter criteria.
   """
-  pass
- def GetArrayRank(self):
-  """
+        pass
+
+    def GetArrayRank(self):
+        """
   GetArrayRank(self: Type) -> int
 
   
@@ -162,9 +169,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: An System.Int32 containing the number of dimensions in the current Type.
   """
-  pass
- def GetAttributeFlagsImpl(self,*args):
-  """
+        pass
+
+    def GetAttributeFlagsImpl(self, *args):
+        """
   GetAttributeFlagsImpl(self: Type) -> TypeAttributes
 
   
@@ -177,9 +185,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: A System.Reflection.TypeAttributes object representing the attribute set of the System.Type.
   """
-  pass
- def GetConstructor(self,*__args):
-  """
+        pass
+
+    def GetConstructor(self, *__args):
+        """
   GetConstructor(self: Type,types: Array[Type]) -> ConstructorInfo
 
   
@@ -312,9 +321,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     otherwise,null.
   """
-  pass
- def GetConstructorImpl(self,*args):
-  """
+        pass
+
+    def GetConstructorImpl(self, *args):
+        """
   GetConstructorImpl(self: Type,bindingAttr: BindingFlags,binder: Binder,callConvention: CallingConventions,types: Array[Type],modifiers: Array[ParameterModifier]) -> ConstructorInfo
 
   
@@ -373,9 +383,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     specified requirements,if found; otherwise,null.
   """
-  pass
- def GetConstructors(self,bindingAttr=None):
-  """
+        pass
+
+    def GetConstructors(self, bindingAttr=None):
+        """
   GetConstructors(self: Type) -> Array[ConstructorInfo]
 
   
@@ -424,9 +435,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     definition of a generic type or generic method.
   """
-  pass
- def GetDefaultMembers(self):
-  """
+        pass
+
+    def GetDefaultMembers(self):
+        """
   GetDefaultMembers(self: Type) -> Array[MemberInfo]
 
   
@@ -443,9 +455,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     does not have default members.
   """
-  pass
- def GetElementType(self):
-  """
+        pass
+
+    def GetElementType(self):
+        """
   GetElementType(self: Type) -> Type
 
   
@@ -464,9 +477,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     generic type or generic method.
   """
-  pass
- def GetEnumName(self,value):
-  """
+        pass
+
+    def GetEnumName(self, value):
+        """
   GetEnumName(self: Type,value: object) -> str
 
   
@@ -481,9 +495,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     no such constant is found.
   """
-  pass
- def GetEnumNames(self):
-  """
+        pass
+
+    def GetEnumNames(self):
+        """
   GetEnumNames(self: Type) -> Array[str]
 
   
@@ -492,9 +507,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: An array that contains the names of the members of the enumeration.
   """
-  pass
- def GetEnumUnderlyingType(self):
-  """
+        pass
+
+    def GetEnumUnderlyingType(self):
+        """
   GetEnumUnderlyingType(self: Type) -> Type
 
   
@@ -503,9 +519,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: The underlying type of the current enumeration.
   """
-  pass
- def GetEnumValues(self):
-  """
+        pass
+
+    def GetEnumValues(self):
+        """
   GetEnumValues(self: Type) -> Array
 
   
@@ -516,9 +533,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     (that is,the unsigned values) of the enumeration constants.
   """
-  pass
- def GetEvent(self,name,bindingAttr=None):
-  """
+        pass
+
+    def GetEvent(self, name, bindingAttr=None):
+        """
   GetEvent(self: Type,name: str,bindingAttr: BindingFlags) -> EventInfo
 
   
@@ -567,9 +585,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     System.Type,if found; otherwise,null.
   """
-  pass
- def GetEvents(self,bindingAttr=None):
-  """
+        pass
+
+    def GetEvents(self, bindingAttr=None):
+        """
   GetEvents(self: Type,bindingAttr: BindingFlags) -> Array[EventInfo]
 
   
@@ -610,9 +629,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     System.Reflection.EventInfo,if the current System.Type does not have public events.
   """
-  pass
- def GetField(self,name,bindingAttr=None):
-  """
+        pass
+
+    def GetField(self, name, bindingAttr=None):
+        """
   GetField(self: Type,name: str) -> FieldInfo
 
   
@@ -645,9 +665,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     null.
   """
-  pass
- def GetFields(self,bindingAttr=None):
-  """
+        pass
+
+    def GetFields(self, bindingAttr=None):
+        """
   GetFields(self: Type,bindingAttr: BindingFlags) -> Array[FieldInfo]
 
   
@@ -688,9 +709,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     fields are defined for the current System.Type.
   """
-  pass
- def GetGenericArguments(self):
-  """
+        pass
+
+    def GetGenericArguments(self):
+        """
   GetGenericArguments(self: Type) -> Array[Type]
 
   
@@ -705,9 +727,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     empty array if the current type is not a generic type.
   """
-  pass
- def GetGenericParameterConstraints(self):
-  """
+        pass
+
+    def GetGenericParameterConstraints(self):
+        """
   GetGenericParameterConstraints(self: Type) -> Array[Type]
 
   
@@ -722,9 +745,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     parameter.
   """
-  pass
- def GetGenericTypeDefinition(self):
-  """
+        pass
+
+    def GetGenericTypeDefinition(self):
+        """
   GetGenericTypeDefinition(self: Type) -> Type
 
   
@@ -737,9 +761,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: A System.Type object representing a generic type from which the current type can be constructed.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Type) -> int
 
   
@@ -748,9 +773,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: The hash code for this instance.
   """
-  pass
- def GetInterface(self,name,ignoreCase=None):
-  """
+        pass
+
+    def GetInterface(self, name, ignoreCase=None):
+        """
   GetInterface(self: Type,name: str,ignoreCase: bool) -> Type
 
   
@@ -801,9 +827,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     current System.Type,if found; otherwise,null.
   """
-  pass
- def GetInterfaceMap(self,interfaceType):
-  """
+        pass
+
+    def GetInterfaceMap(self, interfaceType):
+        """
   GetInterfaceMap(self: Type,interfaceType: Type) -> InterfaceMapping
 
   
@@ -816,9 +843,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: An object that represents the interface mapping for interfaceType.
   """
-  pass
- def GetInterfaces(self):
-  """
+        pass
+
+    def GetInterfaces(self):
+        """
   GetInterfaces(self: Type) -> Array[Type]
 
   
@@ -835,9 +863,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     inherited by the current System.Type.
   """
-  pass
- def GetMember(self,name,*__args):
-  """
+        pass
+
+    def GetMember(self, name, *__args):
+        """
   GetMember(self: Type,name: str,type: MemberTypes,bindingAttr: BindingFlags) -> Array[MemberInfo]
 
   
@@ -902,9 +931,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     specified name,if found; otherwise,an empty array.
   """
-  pass
- def GetMembers(self,bindingAttr=None):
-  """
+        pass
+
+    def GetMembers(self, bindingAttr=None):
+        """
   GetMembers(self: Type,bindingAttr: BindingFlags) -> Array[MemberInfo]
 
   
@@ -945,9 +975,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     System.Type does not have public members.
   """
-  pass
- def GetMethod(self,name,*__args):
-  """
+        pass
+
+    def GetMethod(self, name, *__args):
+        """
   GetMethod(self: Type,name: str,types: Array[Type]) -> MethodInfo
 
   
@@ -1158,9 +1189,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     otherwise,null.
   """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: Type,name: str,bindingAttr: BindingFlags,binder: Binder,callConvention: CallingConventions,types: Array[Type],modifiers: Array[ParameterModifier]) -> MethodInfo
 
   
@@ -1223,9 +1255,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     null.
   """
-  pass
- def GetMethods(self,bindingAttr=None):
-  """
+        pass
+
+    def GetMethods(self, bindingAttr=None):
+        """
   GetMethods(self: Type) -> Array[MethodInfo]
 
   
@@ -1266,9 +1299,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     of the defined methods match the binding constraints.
   """
-  pass
- def GetNestedType(self,name,bindingAttr=None):
-  """
+        pass
+
+    def GetNestedType(self, name, bindingAttr=None):
+        """
   GetNestedType(self: Type,name: str,bindingAttr: BindingFlags) -> Type
 
   
@@ -1307,9 +1341,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: An object representing the public nested type with the specified name,if found; otherwise,null.
   """
-  pass
- def GetNestedTypes(self,bindingAttr=None):
-  """
+        pass
+
+    def GetNestedTypes(self, bindingAttr=None):
+        """
   GetNestedTypes(self: Type,bindingAttr: BindingFlags) -> Array[Type]
 
   
@@ -1348,9 +1383,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     nested in the current System.Type.
   """
-  pass
- def GetProperties(self,bindingAttr=None):
-  """
+        pass
+
+    def GetProperties(self, bindingAttr=None):
+        """
   GetProperties(self: Type) -> Array[PropertyInfo]
 
   
@@ -1391,9 +1427,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     of the properties match the binding constraints.
   """
-  pass
- def GetProperty(self,name,*__args):
-  """
+        pass
+
+    def GetProperty(self, name, *__args):
+        """
   GetProperty(self: Type,name: str,types: Array[Type]) -> PropertyInfo
 
   
@@ -1582,9 +1619,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     otherwise,null.
   """
-  pass
- def GetPropertyImpl(self,*args):
-  """
+        pass
+
+    def GetPropertyImpl(self, *args):
+        """
   GetPropertyImpl(self: Type,name: str,bindingAttr: BindingFlags,binder: Binder,returnType: Type,types: Array[Type],modifiers: Array[ParameterModifier]) -> PropertyInfo
 
   
@@ -1637,9 +1675,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     otherwise,null.
   """
-  pass
- def GetType(self,typeName=None,*__args):
-  """
+        pass
+
+    def GetType(self, typeName=None, *__args):
+        """
   GetType(typeName: str,assemblyResolver: Func[AssemblyName,Assembly],typeResolver: Func[Assembly,str,bool,Type],throwOnError: bool) -> Type
 
   GetType(typeName: str,assemblyResolver: Func[AssemblyName,Assembly],typeResolver: Func[Assembly,str,bool,Type],throwOnError: bool,ignoreCase: bool) -> Type
@@ -1750,10 +1789,11 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: The type with the specified name,if found; otherwise,null.
   """
-  pass
- @staticmethod
- def GetTypeArray(args):
-  """
+        pass
+
+    @staticmethod
+    def GetTypeArray(args):
+        """
   GetTypeArray(args: Array[object]) -> Array[Type]
 
   
@@ -1766,10 +1806,11 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: An array of System.Type objects representing the types of the corresponding elements in args.
   """
-  pass
- @staticmethod
- def GetTypeCode(type):
-  """
+        pass
+
+    @staticmethod
+    def GetTypeCode(type):
+        """
   GetTypeCode(type: Type) -> TypeCode
 
   
@@ -1782,9 +1823,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: The code of the underlying type.
   """
-  pass
- def GetTypeCodeImpl(self,*args):
-  """
+        pass
+
+    def GetTypeCodeImpl(self, *args):
+        """
   GetTypeCodeImpl(self: Type) -> TypeCode
 
   
@@ -1793,10 +1835,11 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: The code of the underlying type.
   """
-  pass
- @staticmethod
- def GetTypeFromCLSID(clsid,*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetTypeFromCLSID(clsid, *__args):
+        """
   GetTypeFromCLSID(clsid: Guid,server: str) -> Type
 
   
@@ -1869,10 +1912,11 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: System.__ComObject regardless of whether the CLSID is valid.
   """
-  pass
- @staticmethod
- def GetTypeFromHandle(handle):
-  """
+        pass
+
+    @staticmethod
+    def GetTypeFromHandle(handle):
+        """
   GetTypeFromHandle(handle: RuntimeTypeHandle) -> Type
 
   
@@ -1887,10 +1931,11 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     System.RuntimeTypeHandle.Value property of handle is null.
   """
-  pass
- @staticmethod
- def GetTypeFromProgID(progID,*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetTypeFromProgID(progID, *__args):
+        """
   GetTypeFromProgID(progID: str,server: str) -> Type
 
   
@@ -1985,10 +2030,11 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     in the registry and a type is associated with it; otherwise,null.
   """
-  pass
- @staticmethod
- def GetTypeHandle(o):
-  """
+        pass
+
+    @staticmethod
+    def GetTypeHandle(o):
+        """
   GetTypeHandle(o: object) -> RuntimeTypeHandle
 
   
@@ -2001,9 +2047,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: The handle for the System.Type of the specified System.Object.
   """
-  pass
- def HasElementTypeImpl(self,*args):
-  """
+        pass
+
+    def HasElementTypeImpl(self, *args):
+        """
   HasElementTypeImpl(self: Type) -> bool
 
   
@@ -2018,9 +2065,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: true if the System.Type is an array,a pointer,or is passed by reference; otherwise,false.
   """
-  pass
- def InvokeMember(self,name,invokeAttr,binder,target,args,*__args):
-  """
+        pass
+
+    def InvokeMember(self, name, invokeAttr, binder, target, args, *__args):
+        """
   InvokeMember(self: Type,name: str,invokeAttr: BindingFlags,binder: Binder,target: object,args: Array[object]) -> object
 
   
@@ -2197,9 +2245,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: An object representing the return value of the invoked member.
   """
-  pass
- def IsArrayImpl(self,*args):
-  """
+        pass
+
+    def IsArrayImpl(self, *args):
+        """
   IsArrayImpl(self: Type) -> bool
 
   
@@ -2212,9 +2261,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: true if the System.Type is an array; otherwise,false.
   """
-  pass
- def IsAssignableFrom(self,c):
-  """
+        pass
+
+    def IsAssignableFrom(self, c):
+        """
   IsAssignableFrom(self: Type,c: Type) -> bool
 
   
@@ -2237,9 +2287,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     none of these conditions are true,or if c is null.
   """
-  pass
- def IsByRefImpl(self,*args):
-  """
+        pass
+
+    def IsByRefImpl(self, *args):
+        """
   IsByRefImpl(self: Type) -> bool
 
   
@@ -2252,9 +2303,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: true if the System.Type is passed by reference; otherwise,false.
   """
-  pass
- def IsCOMObjectImpl(self,*args):
-  """
+        pass
+
+    def IsCOMObjectImpl(self, *args):
+        """
   IsCOMObjectImpl(self: Type) -> bool
 
   
@@ -2267,9 +2319,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: true if the System.Type is a COM object; otherwise,false.
   """
-  pass
- def IsContextfulImpl(self,*args):
-  """
+        pass
+
+    def IsContextfulImpl(self, *args):
+        """
   IsContextfulImpl(self: Type) -> bool
 
   
@@ -2282,9 +2335,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: true if the System.Type can be hosted in a context; otherwise,false.
   """
-  pass
- def IsEnumDefined(self,value):
-  """
+        pass
+
+    def IsEnumDefined(self, value):
+        """
   IsEnumDefined(self: Type,value: object) -> bool
 
   
@@ -2301,9 +2355,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: true if the specified value is a member of the current enumeration type; otherwise,false.
   """
-  pass
- def IsEquivalentTo(self,other):
-  """
+        pass
+
+    def IsEquivalentTo(self, other):
+        """
   IsEquivalentTo(self: Type,other: Type) -> bool
 
   
@@ -2320,9 +2375,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     loaded into the reflection-only context.
   """
-  pass
- def IsInstanceOfType(self,o):
-  """
+        pass
+
+    def IsInstanceOfType(self, o):
+        """
   IsInstanceOfType(self: Type,o: object) -> bool
 
   
@@ -2341,9 +2397,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     System.Type.ContainsGenericParameters returns true).
   """
-  pass
- def IsMarshalByRefImpl(self,*args):
-  """
+        pass
+
+    def IsMarshalByRefImpl(self, *args):
+        """
   IsMarshalByRefImpl(self: Type) -> bool
 
   
@@ -2356,9 +2413,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: true if the System.Type is marshaled by reference; otherwise,false.
   """
-  pass
- def IsPointerImpl(self,*args):
-  """
+        pass
+
+    def IsPointerImpl(self, *args):
+        """
   IsPointerImpl(self: Type) -> bool
 
   
@@ -2371,9 +2429,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: true if the System.Type is a pointer; otherwise,false.
   """
-  pass
- def IsPrimitiveImpl(self,*args):
-  """
+        pass
+
+    def IsPrimitiveImpl(self, *args):
+        """
   IsPrimitiveImpl(self: Type) -> bool
 
   
@@ -2386,9 +2445,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: true if the System.Type is one of the primitive types; otherwise,false.
   """
-  pass
- def IsSubclassOf(self,c):
-  """
+        pass
+
+    def IsSubclassOf(self, c):
+        """
   IsSubclassOf(self: Type,c: Type) -> bool
 
   
@@ -2409,9 +2469,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     This method also returns false if c and the current Type represent the same class.
   """
-  pass
- def IsValueTypeImpl(self,*args):
-  """
+        pass
+
+    def IsValueTypeImpl(self, *args):
+        """
   IsValueTypeImpl(self: Type) -> bool
 
   
@@ -2424,9 +2485,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: true if the System.Type is a value type; otherwise,false.
   """
-  pass
- def MakeArrayType(self,rank=None):
-  """
+        pass
+
+    def MakeArrayType(self, rank=None):
+        """
   MakeArrayType(self: Type,rank: int) -> Type
 
   
@@ -2457,9 +2519,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     bound of zero.
   """
-  pass
- def MakeByRefType(self):
-  """
+        pass
+
+    def MakeByRefType(self):
+        """
   MakeByRefType(self: Type) -> Type
 
   
@@ -2474,9 +2537,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     parameter in Visual Basic).
   """
-  pass
- def MakeGenericType(self,typeArguments):
-  """
+        pass
+
+    def MakeGenericType(self, typeArguments):
+        """
   MakeGenericType(self: Type,*typeArguments: Array[Type]) -> Type
 
   
@@ -2495,9 +2559,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     typeArguments for the type parameters of the current generic type.
   """
-  pass
- def MakePointerType(self):
-  """
+        pass
+
+    def MakePointerType(self):
+        """
   MakePointerType(self: Type) -> Type
 
   
@@ -2506,10 +2571,11 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: A System.Type object that represents a pointer to the current type.
   """
-  pass
- @staticmethod
- def ReflectionOnlyGetType(typeName,throwIfNotFound,ignoreCase):
-  """
+        pass
+
+    @staticmethod
+    def ReflectionOnlyGetType(typeName, throwIfNotFound, ignoreCase):
+        """
   ReflectionOnlyGetType(typeName: str,throwIfNotFound: bool,ignoreCase: bool) -> Type
 
   
@@ -2548,9 +2614,10 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
     section.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: Type) -> str
 
   
@@ -2559,21 +2626,27 @@ class Type(MemberInfo,ICustomAttributeProvider,_MemberInfo,_Type,IReflect):
 
    Returns: A System.String representing the name of the current System.Type.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Assembly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Reflection.Assembly in which the type is declared. For generic types,gets the System.Reflection.Assembly in which the generic type is defined.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Assembly = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the System.Reflection.Assembly in which the type is declared. For generic types,gets the System.Reflection.Assembly in which the generic type is defined.
 
 
 
@@ -2583,8 +2656,10 @@ Get: Assembly(self: Type) -> Assembly
 
 """
 
- AssemblyQualifiedName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the assembly-qualified name of the System.Type,which includes the name of the assembly from which the System.Type was loaded.
+    AssemblyQualifiedName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the assembly-qualified name of the System.Type,which includes the name of the assembly from which the System.Type was loaded.
 
 
 
@@ -2594,8 +2669,10 @@ Get: AssemblyQualifiedName(self: Type) -> str
 
 """
 
- Attributes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the attributes associated with the System.Type.
+    Attributes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the attributes associated with the System.Type.
 
 
 
@@ -2605,8 +2682,8 @@ Get: Attributes(self: Type) -> TypeAttributes
 
 """
 
- BaseType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the type from which the current System.Type directly inherits.
+    BaseType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the type from which the current System.Type directly inherits.
 
 
 
@@ -2616,8 +2693,10 @@ Get: BaseType(self: Type) -> Type
 
 """
 
- ContainsGenericParameters=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the current System.Type object has type parameters that have not been replaced by specific types.
+    ContainsGenericParameters = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the current System.Type object has type parameters that have not been replaced by specific types.
 
 
 
@@ -2627,8 +2706,10 @@ Get: ContainsGenericParameters(self: Type) -> bool
 
 """
 
- DeclaringMethod=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a System.Reflection.MethodBase that represents the declaring method,if the current System.Type represents a type parameter of a generic method.
+    DeclaringMethod = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a System.Reflection.MethodBase that represents the declaring method,if the current System.Type represents a type parameter of a generic method.
 
 
 
@@ -2638,8 +2719,10 @@ Get: DeclaringMethod(self: Type) -> MethodBase
 
 """
 
- DeclaringType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the type that declares the current nested type or generic type parameter.
+    DeclaringType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the type that declares the current nested type or generic type parameter.
 
 
 
@@ -2649,8 +2732,8 @@ Get: DeclaringType(self: Type) -> Type
 
 """
 
- FullName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the fully qualified name of the System.Type,including the namespace of the System.Type but not the assembly.
+    FullName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the fully qualified name of the System.Type,including the namespace of the System.Type but not the assembly.
 
 
 
@@ -2660,8 +2743,10 @@ Get: FullName(self: Type) -> str
 
 """
 
- GenericParameterAttributes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a combination of System.Reflection.GenericParameterAttributes flags that describe the covariance and special constraints of the current generic type parameter.
+    GenericParameterAttributes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a combination of System.Reflection.GenericParameterAttributes flags that describe the covariance and special constraints of the current generic type parameter.
 
 
 
@@ -2671,8 +2756,10 @@ Get: GenericParameterAttributes(self: Type) -> GenericParameterAttributes
 
 """
 
- GenericParameterPosition=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the position of the type parameter in the type parameter list of the generic type or method that declared the parameter,when the System.Type object represents a type parameter of a generic type or a generic method.
+    GenericParameterPosition = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the position of the type parameter in the type parameter list of the generic type or method that declared the parameter,when the System.Type object represents a type parameter of a generic type or a generic method.
 
 
 
@@ -2682,15 +2769,17 @@ Get: GenericParameterPosition(self: Type) -> int
 
 """
 
- GenericTypeArguments=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: GenericTypeArguments(self: Type) -> Array[Type]
+    GenericTypeArguments = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: GenericTypeArguments(self: Type) -> Array[Type]
 
 
 
 """
 
- GUID=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the GUID associated with the System.Type.
+    GUID = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the GUID associated with the System.Type.
 
 
 
@@ -2700,8 +2789,10 @@ Get: GUID(self: Type) -> Guid
 
 """
 
- HasElementType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the current System.Type encompasses or refers to another type; that is,whether the current System.Type is an array,a pointer,or is passed by reference.
+    HasElementType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the current System.Type encompasses or refers to another type; that is,whether the current System.Type is an array,a pointer,or is passed by reference.
 
 
 
@@ -2711,8 +2802,10 @@ Get: HasElementType(self: Type) -> bool
 
 """
 
- IsAbstract=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Type is abstract and must be overridden.
+    IsAbstract = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Type is abstract and must be overridden.
 
 
 
@@ -2722,8 +2815,10 @@ Get: IsAbstract(self: Type) -> bool
 
 """
 
- IsAnsiClass=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the string format attribute AnsiClass is selected for the System.Type.
+    IsAnsiClass = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the string format attribute AnsiClass is selected for the System.Type.
 
 
 
@@ -2733,8 +2828,8 @@ Get: IsAnsiClass(self: Type) -> bool
 
 """
 
- IsArray=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Type is an array.
+    IsArray = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the System.Type is an array.
 
 
 
@@ -2744,8 +2839,10 @@ Get: IsArray(self: Type) -> bool
 
 """
 
- IsAutoClass=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the string format attribute AutoClass is selected for the System.Type.
+    IsAutoClass = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the string format attribute AutoClass is selected for the System.Type.
 
 
 
@@ -2755,8 +2852,10 @@ Get: IsAutoClass(self: Type) -> bool
 
 """
 
- IsAutoLayout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the class layout attribute AutoLayout is selected for the System.Type.
+    IsAutoLayout = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the class layout attribute AutoLayout is selected for the System.Type.
 
 
 
@@ -2766,8 +2865,8 @@ Get: IsAutoLayout(self: Type) -> bool
 
 """
 
- IsByRef=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Type is passed by reference.
+    IsByRef = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the System.Type is passed by reference.
 
 
 
@@ -2777,8 +2876,8 @@ Get: IsByRef(self: Type) -> bool
 
 """
 
- IsClass=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Type is a class; that is,not a value type or interface.
+    IsClass = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the System.Type is a class; that is,not a value type or interface.
 
 
 
@@ -2788,8 +2887,10 @@ Get: IsClass(self: Type) -> bool
 
 """
 
- IsCOMObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Type is a COM object.
+    IsCOMObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Type is a COM object.
 
 
 
@@ -2799,15 +2900,19 @@ Get: IsCOMObject(self: Type) -> bool
 
 """
 
- IsConstructedGenericType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsConstructedGenericType(self: Type) -> bool
+    IsConstructedGenericType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IsConstructedGenericType(self: Type) -> bool
 
 
 
 """
 
- IsContextful=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Type can be hosted in a context.
+    IsContextful = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Type can be hosted in a context.
 
 
 
@@ -2817,8 +2922,8 @@ Get: IsContextful(self: Type) -> bool
 
 """
 
- IsEnum=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the current System.Type represents an enumeration.
+    IsEnum = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the current System.Type represents an enumeration.
 
 
 
@@ -2828,8 +2933,10 @@ Get: IsEnum(self: Type) -> bool
 
 """
 
- IsExplicitLayout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the class layout attribute ExplicitLayout is selected for the System.Type.
+    IsExplicitLayout = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the class layout attribute ExplicitLayout is selected for the System.Type.
 
 
 
@@ -2839,8 +2946,10 @@ Get: IsExplicitLayout(self: Type) -> bool
 
 """
 
- IsGenericParameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the current System.Type represents a type parameter in the definition of a generic type or method.
+    IsGenericParameter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the current System.Type represents a type parameter in the definition of a generic type or method.
 
 
 
@@ -2850,8 +2959,10 @@ Get: IsGenericParameter(self: Type) -> bool
 
 """
 
- IsGenericType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the current type is a generic type.
+    IsGenericType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the current type is a generic type.
 
 
 
@@ -2861,8 +2972,10 @@ Get: IsGenericType(self: Type) -> bool
 
 """
 
- IsGenericTypeDefinition=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the current System.Type represents a generic type definition,from which other generic types can be constructed.
+    IsGenericTypeDefinition = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the current System.Type represents a generic type definition,from which other generic types can be constructed.
 
 
 
@@ -2872,8 +2985,8 @@ Get: IsGenericTypeDefinition(self: Type) -> bool
 
 """
 
- IsImport=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Type has a System.Runtime.InteropServices.ComImportAttribute attribute applied,indicating that it was imported from a COM type library.
+    IsImport = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the System.Type has a System.Runtime.InteropServices.ComImportAttribute attribute applied,indicating that it was imported from a COM type library.
 
 
 
@@ -2883,8 +2996,10 @@ Get: IsImport(self: Type) -> bool
 
 """
 
- IsInterface=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Type is an interface; that is,not a class or a value type.
+    IsInterface = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Type is an interface; that is,not a class or a value type.
 
 
 
@@ -2894,8 +3009,10 @@ Get: IsInterface(self: Type) -> bool
 
 """
 
- IsLayoutSequential=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the class layout attribute SequentialLayout is selected for the System.Type.
+    IsLayoutSequential = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the class layout attribute SequentialLayout is selected for the System.Type.
 
 
 
@@ -2905,8 +3022,10 @@ Get: IsLayoutSequential(self: Type) -> bool
 
 """
 
- IsMarshalByRef=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Type is marshaled by reference.
+    IsMarshalByRef = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Type is marshaled by reference.
 
 
 
@@ -2916,8 +3035,8 @@ Get: IsMarshalByRef(self: Type) -> bool
 
 """
 
- IsNested=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the current System.Type object represents a type whose definition is nested inside the definition of another type.
+    IsNested = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the current System.Type object represents a type whose definition is nested inside the definition of another type.
 
 
 
@@ -2927,8 +3046,10 @@ Get: IsNested(self: Type) -> bool
 
 """
 
- IsNestedAssembly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Type is nested and visible only within its own assembly.
+    IsNestedAssembly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Type is nested and visible only within its own assembly.
 
 
 
@@ -2938,8 +3059,10 @@ Get: IsNestedAssembly(self: Type) -> bool
 
 """
 
- IsNestedFamANDAssem=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Type is nested and visible only to classes that belong to both its own family and its own assembly.
+    IsNestedFamANDAssem = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Type is nested and visible only to classes that belong to both its own family and its own assembly.
 
 
 
@@ -2949,8 +3072,10 @@ Get: IsNestedFamANDAssem(self: Type) -> bool
 
 """
 
- IsNestedFamily=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Type is nested and visible only within its own family.
+    IsNestedFamily = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Type is nested and visible only within its own family.
 
 
 
@@ -2960,8 +3085,10 @@ Get: IsNestedFamily(self: Type) -> bool
 
 """
 
- IsNestedFamORAssem=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Type is nested and visible only to classes that belong to either its own family or to its own assembly.
+    IsNestedFamORAssem = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Type is nested and visible only to classes that belong to either its own family or to its own assembly.
 
 
 
@@ -2971,8 +3098,10 @@ Get: IsNestedFamORAssem(self: Type) -> bool
 
 """
 
- IsNestedPrivate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Type is nested and declared private.
+    IsNestedPrivate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Type is nested and declared private.
 
 
 
@@ -2982,8 +3111,10 @@ Get: IsNestedPrivate(self: Type) -> bool
 
 """
 
- IsNestedPublic=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether a class is nested and declared public.
+    IsNestedPublic = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether a class is nested and declared public.
 
 
 
@@ -2993,8 +3124,10 @@ Get: IsNestedPublic(self: Type) -> bool
 
 """
 
- IsNotPublic=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Type is not declared public.
+    IsNotPublic = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Type is not declared public.
 
 
 
@@ -3004,8 +3137,8 @@ Get: IsNotPublic(self: Type) -> bool
 
 """
 
- IsPointer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Type is a pointer.
+    IsPointer = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the System.Type is a pointer.
 
 
 
@@ -3015,8 +3148,10 @@ Get: IsPointer(self: Type) -> bool
 
 """
 
- IsPrimitive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Type is one of the primitive types.
+    IsPrimitive = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Type is one of the primitive types.
 
 
 
@@ -3026,8 +3161,8 @@ Get: IsPrimitive(self: Type) -> bool
 
 """
 
- IsPublic=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Type is declared public.
+    IsPublic = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the System.Type is declared public.
 
 
 
@@ -3037,8 +3172,8 @@ Get: IsPublic(self: Type) -> bool
 
 """
 
- IsSealed=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Type is declared sealed.
+    IsSealed = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the System.Type is declared sealed.
 
 
 
@@ -3048,8 +3183,10 @@ Get: IsSealed(self: Type) -> bool
 
 """
 
- IsSecurityCritical=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the current type is security-critical or security-safe-critical at the current trust level,and therefore can perform critical operations.
+    IsSecurityCritical = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the current type is security-critical or security-safe-critical at the current trust level,and therefore can perform critical operations.
 
 
 
@@ -3059,8 +3196,10 @@ Get: IsSecurityCritical(self: Type) -> bool
 
 """
 
- IsSecuritySafeCritical=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the current type is security-safe-critical at the current trust level; that is,whether it can perform critical operations and can be accessed by transparent code.
+    IsSecuritySafeCritical = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the current type is security-safe-critical at the current trust level; that is,whether it can perform critical operations and can be accessed by transparent code.
 
 
 
@@ -3070,8 +3209,10 @@ Get: IsSecuritySafeCritical(self: Type) -> bool
 
 """
 
- IsSecurityTransparent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the current type is transparent at the current trust level,and therefore cannot perform critical operations.
+    IsSecurityTransparent = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the current type is transparent at the current trust level,and therefore cannot perform critical operations.
 
 
 
@@ -3081,8 +3222,10 @@ Get: IsSecurityTransparent(self: Type) -> bool
 
 """
 
- IsSerializable=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Type is serializable.
+    IsSerializable = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Type is serializable.
 
 
 
@@ -3092,8 +3235,10 @@ Get: IsSerializable(self: Type) -> bool
 
 """
 
- IsSpecialName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Type has a name that requires special handling.
+    IsSpecialName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Type has a name that requires special handling.
 
 
 
@@ -3103,8 +3248,10 @@ Get: IsSpecialName(self: Type) -> bool
 
 """
 
- IsUnicodeClass=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the string format attribute UnicodeClass is selected for the System.Type.
+    IsUnicodeClass = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the string format attribute UnicodeClass is selected for the System.Type.
 
 
 
@@ -3114,8 +3261,10 @@ Get: IsUnicodeClass(self: Type) -> bool
 
 """
 
- IsValueType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Type is a value type.
+    IsValueType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Type is a value type.
 
 
 
@@ -3125,8 +3274,8 @@ Get: IsValueType(self: Type) -> bool
 
 """
 
- IsVisible=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Type can be accessed by code outside the assembly.
+    IsVisible = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the System.Type can be accessed by code outside the assembly.
 
 
 
@@ -3136,8 +3285,10 @@ Get: IsVisible(self: Type) -> bool
 
 """
 
- MemberType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a System.Reflection.MemberTypes value indicating that this member is a type or a nested type.
+    MemberType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a System.Reflection.MemberTypes value indicating that this member is a type or a nested type.
 
 
 
@@ -3147,8 +3298,8 @@ Get: MemberType(self: Type) -> MemberTypes
 
 """
 
- Module=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the module (the DLL) in which the current System.Type is defined.
+    Module = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the module (the DLL) in which the current System.Type is defined.
 
 
 
@@ -3158,8 +3309,8 @@ Get: Module(self: Type) -> Module
 
 """
 
- Namespace=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the namespace of the System.Type.
+    Namespace = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the namespace of the System.Type.
 
 
 
@@ -3169,8 +3320,10 @@ Get: Namespace(self: Type) -> str
 
 """
 
- ReflectedType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the class object that was used to obtain this member.
+    ReflectedType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the class object that was used to obtain this member.
 
 
 
@@ -3180,8 +3333,10 @@ Get: ReflectedType(self: Type) -> Type
 
 """
 
- StructLayoutAttribute=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a System.Runtime.InteropServices.StructLayoutAttribute that describes the layout of the current type.
+    StructLayoutAttribute = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a System.Runtime.InteropServices.StructLayoutAttribute that describes the layout of the current type.
 
 
 
@@ -3191,8 +3346,10 @@ Get: StructLayoutAttribute(self: Type) -> StructLayoutAttribute
 
 """
 
- TypeHandle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the handle for the current System.Type.
+    TypeHandle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the handle for the current System.Type.
 
 
 
@@ -3202,8 +3359,10 @@ Get: TypeHandle(self: Type) -> RuntimeTypeHandle
 
 """
 
- TypeInitializer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the initializer for the System.Type.
+    TypeInitializer = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the initializer for the System.Type.
 
 
 
@@ -3213,8 +3372,10 @@ Get: TypeInitializer(self: Type) -> ConstructorInfo
 
 """
 
- UnderlyingSystemType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates the type provided by the common language runtime that represents this type.
+    UnderlyingSystemType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates the type provided by the common language runtime that represents this type.
 
 
 
@@ -3224,9 +3385,7 @@ Get: UnderlyingSystemType(self: Type) -> Type
 
 """
 
-
- DefaultBinder=None
- Delimiter=None
- EmptyTypes=None
- Missing=None
-
+    DefaultBinder = None
+    Delimiter = None
+    EmptyTypes = None
+    Missing = None

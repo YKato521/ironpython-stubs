@@ -1,8 +1,11 @@
-class Activator(object,_Activator):
- """ Contains methods to create types of objects locally or remotely,or obtain references to existing remote objects. This class cannot be inherited. """
- @staticmethod
- def CreateComInstanceFrom(assemblyName,typeName,hashValue=None,hashAlgorithm=None):
-  """
+class Activator(object, _Activator):
+    """ Contains methods to create types of objects locally or remotely,or obtain references to existing remote objects. This class cannot be inherited. """
+
+    @staticmethod
+    def CreateComInstanceFrom(
+        assemblyName, typeName, hashValue=None, hashAlgorithm=None
+    ):
+        """
   CreateComInstanceFrom(assemblyName: str,typeName: str,hashValue: Array[Byte],hashAlgorithm: AssemblyHashAlgorithm) -> ObjectHandle
 
   
@@ -43,10 +46,11 @@ class Activator(object,_Activator):
 
    Returns: A handle that must be unwrapped to access the newly created instance.
   """
-  pass
- @staticmethod
- def CreateInstance(*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateInstance(*__args):
+        """
   CreateInstance(assemblyName: str,typeName: str,ignoreCase: bool,bindingAttr: BindingFlags,binder: Binder,args: Array[object],culture: CultureInfo,activationAttributes: Array[object]) -> ObjectHandle
 
   
@@ -615,10 +619,11 @@ class Activator(object,_Activator):
 
    Returns: A handle that must be unwrapped to access the newly created instance.
   """
-  pass
- @staticmethod
- def CreateInstanceFrom(*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateInstanceFrom(*__args):
+        """
   CreateInstanceFrom(domain: AppDomain,assemblyFile: str,typeName: str) -> ObjectHandle
 
   
@@ -941,10 +946,11 @@ class Activator(object,_Activator):
 
    Returns: A handle that must be unwrapped to access the newly created instance.
   """
-  pass
- @staticmethod
- def GetObject(type,url,state=None):
-  """
+        pass
+
+    @staticmethod
+    def GetObject(type, url, state=None):
+        """
   GetObject(type: Type,url: str,state: object) -> object
 
   
@@ -975,10 +981,12 @@ class Activator(object,_Activator):
 
    Returns: A proxy that points to an endpoint served by the requested well-known object.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass

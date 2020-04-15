@@ -34,14 +34,22 @@ from Electrical_parts.CorrectionFactorSet import CorrectionFactorSet
 from Electrical_parts.CorrectionFactorSetIterator import CorrectionFactorSetIterator
 from Electrical_parts.DistributionSysType import DistributionSysType
 from Electrical_parts.DistributionSysTypeSet import DistributionSysTypeSet
-from Electrical_parts.DistributionSysTypeSetIterator import DistributionSysTypeSetIterator
-from Electrical_parts.ElectricalDemandFactorDefinition import ElectricalDemandFactorDefinition
+from Electrical_parts.DistributionSysTypeSetIterator import (
+    DistributionSysTypeSetIterator,
+)
+from Electrical_parts.ElectricalDemandFactorDefinition import (
+    ElectricalDemandFactorDefinition,
+)
 from Electrical_parts.ElectricalDemandFactorRule import ElectricalDemandFactorRule
 from Electrical_parts.ElectricalDemandFactorValue import ElectricalDemandFactorValue
 from Electrical_parts.ElectricalEquipment import ElectricalEquipment
 from Electrical_parts.ElectricalLoadClassification import ElectricalLoadClassification
-from Electrical_parts.ElectricalLoadClassificationData import ElectricalLoadClassificationData
-from Electrical_parts.ElectricalLoadClassificationSpace import ElectricalLoadClassificationSpace
+from Electrical_parts.ElectricalLoadClassificationData import (
+    ElectricalLoadClassificationData,
+)
+from Electrical_parts.ElectricalLoadClassificationSpace import (
+    ElectricalLoadClassificationSpace,
+)
 from Electrical_parts.ElectricalPhase import ElectricalPhase
 from Electrical_parts.ElectricalPhaseConfiguration import ElectricalPhaseConfiguration
 from Electrical_parts.ElectricalSetting import ElectricalSetting
@@ -51,7 +59,9 @@ from Electrical_parts.ElectricalSystemSetIterator import ElectricalSystemSetIter
 from Electrical_parts.ElectricalSystemType import ElectricalSystemType
 from Electrical_parts.GroundConductorSize import GroundConductorSize
 from Electrical_parts.GroundConductorSizeSet import GroundConductorSizeSet
-from Electrical_parts.GroundConductorSizeSetIterator import GroundConductorSizeSetIterator
+from Electrical_parts.GroundConductorSizeSetIterator import (
+    GroundConductorSizeSetIterator,
+)
 from Electrical_parts.InsulationType import InsulationType
 from Electrical_parts.InsulationTypeSet import InsulationTypeSet
 from Electrical_parts.InsulationTypeSetIterator import InsulationTypeSetIterator
@@ -70,7 +80,9 @@ from Electrical_parts.PanelScheduleView import PanelScheduleView
 from Electrical_parts.PowerFactorStateType import PowerFactorStateType
 from Electrical_parts.TemperatureRatingType import TemperatureRatingType
 from Electrical_parts.TemperatureRatingTypeSet import TemperatureRatingTypeSet
-from Electrical_parts.TemperatureRatingTypeSetIterator import TemperatureRatingTypeSetIterator
+from Electrical_parts.TemperatureRatingTypeSetIterator import (
+    TemperatureRatingTypeSetIterator,
+)
 from Electrical_parts.VoltageType import VoltageType
 from Electrical_parts.VoltageTypeSet import VoltageTypeSet
 from Electrical_parts.VoltageTypeSetIterator import VoltageTypeSetIterator

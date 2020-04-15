@@ -8,10 +8,11 @@
 # no functions
 # classes
 
-class Comparer(object,IComparer,IComparer[T]):
- # no doc
- def Compare(self,x,y):
-  """
+
+class Comparer(object, IComparer, IComparer[T]):
+    # no doc
+    def Compare(self, x, y):
+        """
   Compare(self: Comparer[T],x: T,y: T) -> int
 
   
@@ -34,25 +35,43 @@ class Comparer(object,IComparer,IComparer[T]):
 
     greater than y.
   """
-  pass
- @staticmethod
- def Create(comparison):
-  """ Create(comparison: Comparison[T]) -> Comparer[T] """
-  pass
- def __cmp__(self,*args):
-  """ x.__cmp__(y) <==> cmp(x,y) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
+        pass
 
-class Dictionary(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[TKey,TValue]],IEnumerable[KeyValuePair[TKey,TValue]],IEnumerable,IDictionary,ICollection,IReadOnlyDictionary[TKey,TValue],IReadOnlyCollection[KeyValuePair[TKey,TValue]],ISerializable,IDeserializationCallback):
- """
+    @staticmethod
+    def Create(comparison):
+        """ Create(comparison: Comparison[T]) -> Comparer[T] """
+        pass
+
+    def __cmp__(self, *args):
+        """ x.__cmp__(y) <==> cmp(x,y) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+
+class Dictionary(
+    object,
+    IDictionary[TKey, TValue],
+    ICollection[KeyValuePair[TKey, TValue]],
+    IEnumerable[KeyValuePair[TKey, TValue]],
+    IEnumerable,
+    IDictionary,
+    ICollection,
+    IReadOnlyDictionary[TKey, TValue],
+    IReadOnlyCollection[KeyValuePair[TKey, TValue]],
+    ISerializable,
+    IDeserializationCallback,
+):
+    """
  Dictionary[TKey,TValue]()
 
  Dictionary[TKey,TValue](capacity: int)
@@ -65,8 +84,9 @@ class Dictionary(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[TKey,T
 
  Dictionary[TKey,TValue](dictionary: IDictionary[TKey,TValue],comparer: IEqualityComparer[TKey])
  """
- def Add(self,key,value):
-  """
+
+    def Add(self, key, value):
+        """
   Add(self: Dictionary[TKey,TValue],key: TKey,value: TValue)
 
    Adds the specified key and value to the dictionary.
@@ -77,16 +97,18 @@ class Dictionary(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[TKey,T
 
    value: The value of the element to add. The value can be null for reference types.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: Dictionary[TKey,TValue])
 
    Removes all keys and values from the System.Collections.Generic.Dictionary.
   """
-  pass
- def ContainsKey(self,key):
-  """
+        pass
+
+    def ContainsKey(self, key):
+        """
   ContainsKey(self: Dictionary[TKey,TValue],key: TKey) -> bool
 
   
@@ -101,9 +123,10 @@ class Dictionary(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[TKey,T
 
     otherwise,false.
   """
-  pass
- def ContainsValue(self,value):
-  """
+        pass
+
+    def ContainsValue(self, value):
+        """
   ContainsValue(self: Dictionary[TKey,TValue],value: TValue) -> bool
 
   
@@ -122,9 +145,10 @@ class Dictionary(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[TKey,T
 
     otherwise,false.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: Dictionary[TKey,TValue]) -> Enumerator
 
   
@@ -133,9 +157,10 @@ class Dictionary(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[TKey,T
 
    Returns: A System.Collections.Generic.Dictionary structure for the System.Collections.Generic.Dictionary.
   """
-  pass
- def GetObjectData(self,info,context):
-  """
+        pass
+
+    def GetObjectData(self, info, context):
+        """
   GetObjectData(self: Dictionary[TKey,TValue],info: SerializationInfo,context: StreamingContext)
 
    Implements the System.Runtime.Serialization.ISerializable interface and returns the data needed 
@@ -158,9 +183,10 @@ class Dictionary(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[TKey,T
 
     instance.
   """
-  pass
- def OnDeserialization(self,sender):
-  """
+        pass
+
+    def OnDeserialization(self, sender):
+        """
   OnDeserialization(self: Dictionary[TKey,TValue],sender: object)
 
    Implements the System.Runtime.Serialization.ISerializable interface and raises the 
@@ -173,9 +199,10 @@ class Dictionary(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[TKey,T
 
    sender: The source of the deserialization event.
   """
-  pass
- def Remove(self,key):
-  """
+        pass
+
+    def Remove(self, key):
+        """
   Remove(self: Dictionary[TKey,TValue],key: TKey) -> bool
 
   
@@ -190,15 +217,18 @@ class Dictionary(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[TKey,T
 
     false if key is not found in the System.Collections.Generic.Dictionary.
   """
-  pass
- def TryGetValue(self,key,value):
-  """ TryGetValue(self: Dictionary[TKey,TValue],key: TKey) -> (bool,TValue) """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def TryGetValue(self, key, value):
+        """ TryGetValue(self: Dictionary[TKey,TValue],key: TKey) -> (bool,TValue) """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IDictionary[TKey,TValue],key: TKey) -> bool
 
   
@@ -235,22 +265,27 @@ class Dictionary(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[TKey,T
 
    Returns: true if the System.Collections.IDictionary contains an element with the key; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,capacity: int)
@@ -265,21 +300,25 @@ class Dictionary(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[TKey,T
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """
   __repr__(self: Dictionary[TKey,TValue]) -> str
 
   __repr__(self: Dictionary[K,V]) -> str
   """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Comparer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Collections.Generic.IEqualityComparer that is used to determine equality of keys for the dictionary.
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Comparer = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the System.Collections.Generic.IEqualityComparer that is used to determine equality of keys for the dictionary.
 
 
 
@@ -289,8 +328,8 @@ Get: Comparer(self: Dictionary[TKey,TValue]) -> IEqualityComparer[TKey]
 
 """
 
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of key/value pairs contained in the System.Collections.Generic.Dictionary.
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of key/value pairs contained in the System.Collections.Generic.Dictionary.
 
 
 
@@ -300,8 +339,8 @@ Get: Count(self: Dictionary[TKey,TValue]) -> int
 
 """
 
- Keys=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection containing the keys in the System.Collections.Generic.Dictionary.
+    Keys = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a collection containing the keys in the System.Collections.Generic.Dictionary.
 
 
 
@@ -311,8 +350,8 @@ Get: Keys(self: Dictionary[TKey,TValue]) -> KeyCollection
 
 """
 
- Values=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection containing the values in the System.Collections.Generic.Dictionary.
+    Values = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a collection containing the values in the System.Collections.Generic.Dictionary.
 
 
 
@@ -322,16 +361,15 @@ Get: Values(self: Dictionary[TKey,TValue]) -> ValueCollection
 
 """
 
+    Enumerator = None
+    KeyCollection = None
+    ValueCollection = None
 
- Enumerator=None
- KeyCollection=None
- ValueCollection=None
 
-
-class EqualityComparer(object,IEqualityComparer,IEqualityComparer[T]):
- # no doc
- def Equals(self,*__args):
-  """
+class EqualityComparer(object, IEqualityComparer, IEqualityComparer[T]):
+    # no doc
+    def Equals(self, *__args):
+        """
   Equals(self: EqualityComparer[T],x: T,y: T) -> bool
 
   
@@ -346,9 +384,10 @@ class EqualityComparer(object,IEqualityComparer,IEqualityComparer[T]):
 
    Returns: true if the specified objects are equal; otherwise,false.
   """
-  pass
- def GetHashCode(self,obj=None):
-  """
+        pass
+
+    def GetHashCode(self, obj=None):
+        """
   GetHashCode(self: EqualityComparer[T],obj: T) -> int
 
   
@@ -365,23 +404,28 @@ class EqualityComparer(object,IEqualityComparer,IEqualityComparer[T]):
 
    Returns: A hash code for the specified object.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
+        pass
 
-class ICollection(IEnumerable[T],IEnumerable):
- # no doc
- def Add(self,item):
-  """
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+
+class ICollection(IEnumerable[T], IEnumerable):
+    # no doc
+    def Add(self, item):
+        """
   Add(self: ICollection[T],item: T)
 
    Adds an item to the System.Collections.Generic.ICollection.
@@ -390,16 +434,18 @@ class ICollection(IEnumerable[T],IEnumerable):
 
    item: The object to add to the System.Collections.Generic.ICollection.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: ICollection[T])
 
    Removes all items from the System.Collections.Generic.ICollection.
   """
-  pass
- def Contains(self,item):
-  """
+        pass
+
+    def Contains(self, item):
+        """
   Contains(self: ICollection[T],item: T) -> bool
 
   
@@ -412,12 +458,14 @@ class ICollection(IEnumerable[T],IEnumerable):
 
    Returns: true if item is found in the System.Collections.Generic.ICollection; otherwise,false.
   """
-  pass
- def CopyTo(self,array,arrayIndex):
-  """ CopyTo(self: ICollection[T],array: Array[T],arrayIndex: int) """
-  pass
- def Remove(self,item):
-  """
+        pass
+
+    def CopyTo(self, array, arrayIndex):
+        """ CopyTo(self: ICollection[T],array: Array[T],arrayIndex: int) """
+        pass
+
+    def Remove(self, item):
+        """
   Remove(self: ICollection[T],item: T) -> bool
 
   
@@ -438,21 +486,26 @@ class ICollection(IEnumerable[T],IEnumerable):
 
     System.Collections.Generic.ICollection.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__[T](enumerable: IEnumerable[T],value: T) -> bool """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of elements contained in the System.Collections.Generic.ICollection.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[T](enumerable: IEnumerable[T],value: T) -> bool """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of elements contained in the System.Collections.Generic.ICollection.
 
 
 
@@ -462,8 +515,10 @@ Get: Count(self: ICollection[T]) -> int
 
 """
 
- IsReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Collections.Generic.ICollection is read-only.
+    IsReadOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Collections.Generic.ICollection is read-only.
 
 
 
@@ -474,11 +529,10 @@ Get: IsReadOnly(self: ICollection[T]) -> bool
 """
 
 
-
 class IComparer:
- # no doc
- def Compare(self,x,y):
-  """
+    # no doc
+    def Compare(self, x, y):
+        """
   Compare(self: IComparer[T],x: T,y: T) -> int
 
   
@@ -501,18 +555,25 @@ class IComparer:
 
     than y.
   """
-  pass
- def __cmp__(self,*args):
-  """ x.__cmp__(y) <==> cmp(x,y) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
 
-class IDictionary(ICollection[KeyValuePair[TKey,TValue]],IEnumerable[KeyValuePair[TKey,TValue]],IEnumerable):
- # no doc
- def Add(self,key,value):
-  """
+    def __cmp__(self, *args):
+        """ x.__cmp__(y) <==> cmp(x,y) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+
+class IDictionary(
+    ICollection[KeyValuePair[TKey, TValue]],
+    IEnumerable[KeyValuePair[TKey, TValue]],
+    IEnumerable,
+):
+    # no doc
+    def Add(self, key, value):
+        """
   Add(self: IDictionary[TKey,TValue],key: TKey,value: TValue)
 
    Adds an element with the provided key and value to the System.Collections.Generic.IDictionary.
@@ -523,9 +584,10 @@ class IDictionary(ICollection[KeyValuePair[TKey,TValue]],IEnumerable[KeyValuePai
 
    value: The object to use as the value of the element to add.
   """
-  pass
- def ContainsKey(self,key):
-  """
+        pass
+
+    def ContainsKey(self, key):
+        """
   ContainsKey(self: IDictionary[TKey,TValue],key: TKey) -> bool
 
   
@@ -544,9 +606,10 @@ class IDictionary(ICollection[KeyValuePair[TKey,TValue]],IEnumerable[KeyValuePai
 
     false.
   """
-  pass
- def Remove(self,key):
-  """
+        pass
+
+    def Remove(self, key):
+        """
   Remove(self: IDictionary[TKey,TValue],key: TKey) -> bool
 
   
@@ -561,33 +624,42 @@ class IDictionary(ICollection[KeyValuePair[TKey,TValue]],IEnumerable[KeyValuePai
 
     if key was not found in the original System.Collections.Generic.IDictionary.
   """
-  pass
- def TryGetValue(self,key,value):
-  """ TryGetValue(self: IDictionary[TKey,TValue],key: TKey) -> (bool,TValue) """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__(self: ICollection[KeyValuePair[TKey,TValue]],item: KeyValuePair[TKey,TValue]) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Keys=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an System.Collections.Generic.ICollection containing the keys of the System.Collections.Generic.IDictionary.
+        pass
+
+    def TryGetValue(self, key, value):
+        """ TryGetValue(self: IDictionary[TKey,TValue],key: TKey) -> (bool,TValue) """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__(self: ICollection[KeyValuePair[TKey,TValue]],item: KeyValuePair[TKey,TValue]) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Keys = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an System.Collections.Generic.ICollection containing the keys of the System.Collections.Generic.IDictionary.
 
 
 
@@ -597,8 +669,8 @@ Get: Keys(self: IDictionary[TKey,TValue]) -> ICollection[TKey]
 
 """
 
- Values=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an System.Collections.Generic.ICollection containing the values in the System.Collections.Generic.IDictionary.
+    Values = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an System.Collections.Generic.ICollection containing the values in the System.Collections.Generic.IDictionary.
 
 
 
@@ -609,11 +681,10 @@ Get: Values(self: IDictionary[TKey,TValue]) -> ICollection[TValue]
 """
 
 
-
 class IEnumerable(IEnumerable):
- # no doc
- def GetEnumerator(self):
-  """
+    # no doc
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: IEnumerable[T]) -> IEnumerator[T]
 
   
@@ -622,40 +693,47 @@ class IEnumerable(IEnumerable):
 
    Returns: A System.Collections.Generic.IEnumerator that can be used to iterate through the collection.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
 
-class IEnumerator(IDisposable,IEnumerator):
- # no doc
- def next(self,*args):
-  """ next(self: object) -> object """
-  pass
- def __enter__(self,*args):
-  """
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+
+class IEnumerator(IDisposable, IEnumerator):
+    # no doc
+    def next(self, *args):
+        """ next(self: object) -> object """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__[T](self: IEnumerator[T]) -> object """
-  pass
- Current=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the element in the collection at the current position of the enumerator.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__[T](self: IEnumerator[T]) -> object """
+        pass
+
+    Current = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the element in the collection at the current position of the enumerator.
 
 
 
@@ -666,11 +744,10 @@ Get: Current(self: IEnumerator[T]) -> T
 """
 
 
-
 class IEqualityComparer:
- # no doc
- def Equals(self,x,y):
-  """
+    # no doc
+    def Equals(self, x, y):
+        """
   Equals(self: IEqualityComparer[T],x: T,y: T) -> bool
 
   
@@ -685,9 +762,10 @@ class IEqualityComparer:
 
    Returns: true if the specified objects are equal; otherwise,false.
   """
-  pass
- def GetHashCode(self,obj):
-  """
+        pass
+
+    def GetHashCode(self, obj):
+        """
   GetHashCode(self: IEqualityComparer[T],obj: T) -> int
 
   
@@ -700,18 +778,21 @@ class IEqualityComparer:
 
    Returns: A hash code for the specified object.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
 
-class IList(ICollection[T],IEnumerable[T],IEnumerable):
- # no doc
- def IndexOf(self,item):
-  """
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+
+class IList(ICollection[T], IEnumerable[T], IEnumerable):
+    # no doc
+    def IndexOf(self, item):
+        """
   IndexOf(self: IList[T],item: T) -> int
 
   
@@ -724,9 +805,10 @@ class IList(ICollection[T],IEnumerable[T],IEnumerable):
 
    Returns: The index of item if found in the list; otherwise,-1.
   """
-  pass
- def Insert(self,index,item):
-  """
+        pass
+
+    def Insert(self, index, item):
+        """
   Insert(self: IList[T],index: int,item: T)
 
    Inserts an item to the System.Collections.Generic.IList at the specified index.
@@ -737,9 +819,10 @@ class IList(ICollection[T],IEnumerable[T],IEnumerable):
 
    item: The object to insert into the System.Collections.Generic.IList.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: IList[T],index: int)
 
    Removes the System.Collections.Generic.IList item at the specified index.
@@ -748,9 +831,10 @@ class IList(ICollection[T],IEnumerable[T],IEnumerable):
 
    index: The zero-based index of the item to remove.
   """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: ICollection[T],item: T) -> bool
 
   
@@ -763,98 +847,119 @@ class IList(ICollection[T],IEnumerable[T],IEnumerable):
 
    Returns: true if item is found in the System.Collections.Generic.ICollection; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
+        pass
 
-class IReadOnlyCollection(IEnumerable[T],IEnumerable):
- # no doc
- def __contains__(self,*args):
-  """ __contains__[T](enumerable: IEnumerable[T],value: T) -> bool """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Count(self: IReadOnlyCollection[T]) -> int
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
 
 
+class IReadOnlyCollection(IEnumerable[T], IEnumerable):
+    # no doc
+    def __contains__(self, *args):
+        """ __contains__[T](enumerable: IEnumerable[T],value: T) -> bool """
+        pass
 
-"""
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
 
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
 
-
-class IReadOnlyDictionary(IReadOnlyCollection[KeyValuePair[TKey,TValue]],IEnumerable[KeyValuePair[TKey,TValue]],IEnumerable):
- # no doc
- def ContainsKey(self,key):
-  """ ContainsKey(self: IReadOnlyDictionary[TKey,TValue],key: TKey) -> bool """
-  pass
- def TryGetValue(self,key,value):
-  """ TryGetValue(self: IReadOnlyDictionary[TKey,TValue],key: TKey) -> (bool,TValue) """
-  pass
- def __contains__(self,*args):
-  """ __contains__[KeyValuePair`2](enumerable: IEnumerable[KeyValuePair[TKey,TValue]],value: KeyValuePair[TKey,TValue]) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- Keys=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Keys(self: IReadOnlyDictionary[TKey,TValue]) -> IEnumerable[TKey]
-
-
-
-"""
-
- Values=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Values(self: IReadOnlyDictionary[TKey,TValue]) -> IEnumerable[TValue]
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Count(self: IReadOnlyCollection[T]) -> int
 
 
 
 """
 
 
+class IReadOnlyDictionary(
+    IReadOnlyCollection[KeyValuePair[TKey, TValue]],
+    IEnumerable[KeyValuePair[TKey, TValue]],
+    IEnumerable,
+):
+    # no doc
+    def ContainsKey(self, key):
+        """ ContainsKey(self: IReadOnlyDictionary[TKey,TValue],key: TKey) -> bool """
+        pass
 
-class IReadOnlyList(IReadOnlyCollection[T],IEnumerable[T],IEnumerable):
- # no doc
- def __contains__(self,*args):
-  """ __contains__[T](enumerable: IEnumerable[T],value: T) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
+    def TryGetValue(self, key, value):
+        """ TryGetValue(self: IReadOnlyDictionary[TKey,TValue],key: TKey) -> (bool,TValue) """
+        pass
 
-class ISet(ICollection[T],IEnumerable[T],IEnumerable):
- # no doc
- def Add(self,item):
-  """
+    def __contains__(self, *args):
+        """ __contains__[KeyValuePair`2](enumerable: IEnumerable[KeyValuePair[TKey,TValue]],value: KeyValuePair[TKey,TValue]) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    Keys = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Keys(self: IReadOnlyDictionary[TKey,TValue]) -> IEnumerable[TKey]
+
+
+
+"""
+
+    Values = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Values(self: IReadOnlyDictionary[TKey,TValue]) -> IEnumerable[TValue]
+
+
+
+"""
+
+
+class IReadOnlyList(IReadOnlyCollection[T], IEnumerable[T], IEnumerable):
+    # no doc
+    def __contains__(self, *args):
+        """ __contains__[T](enumerable: IEnumerable[T],value: T) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+
+class ISet(ICollection[T], IEnumerable[T], IEnumerable):
+    # no doc
+    def Add(self, item):
+        """
   Add(self: ISet[T],item: T) -> bool
 
   
@@ -871,9 +976,10 @@ class ISet(ICollection[T],IEnumerable[T],IEnumerable):
 
    Returns: true if the element is added to the set; false if the element is already in the set.
   """
-  pass
- def ExceptWith(self,other):
-  """
+        pass
+
+    def ExceptWith(self, other):
+        """
   ExceptWith(self: ISet[T],other: IEnumerable[T])
 
    Removes all elements in the specified collection from the current set.
@@ -882,9 +988,10 @@ class ISet(ICollection[T],IEnumerable[T],IEnumerable):
 
    other: The collection of items to remove from the set.
   """
-  pass
- def IntersectWith(self,other):
-  """
+        pass
+
+    def IntersectWith(self, other):
+        """
   IntersectWith(self: ISet[T],other: IEnumerable[T])
 
    Modifies the current set so that it contains only elements that are also in a specified 
@@ -897,9 +1004,10 @@ class ISet(ICollection[T],IEnumerable[T],IEnumerable):
 
    other: The collection to compare to the current set.
   """
-  pass
- def IsProperSubsetOf(self,other):
-  """
+        pass
+
+    def IsProperSubsetOf(self, other):
+        """
   IsProperSubsetOf(self: ISet[T],other: IEnumerable[T]) -> bool
 
   
@@ -912,9 +1020,10 @@ class ISet(ICollection[T],IEnumerable[T],IEnumerable):
 
    Returns: true if the current set is a proper subset of other; otherwise,false.
   """
-  pass
- def IsProperSupersetOf(self,other):
-  """
+        pass
+
+    def IsProperSupersetOf(self, other):
+        """
   IsProperSupersetOf(self: ISet[T],other: IEnumerable[T]) -> bool
 
   
@@ -927,9 +1036,10 @@ class ISet(ICollection[T],IEnumerable[T],IEnumerable):
 
    Returns: true if the current set is a proper superset of other; otherwise,false.
   """
-  pass
- def IsSubsetOf(self,other):
-  """
+        pass
+
+    def IsSubsetOf(self, other):
+        """
   IsSubsetOf(self: ISet[T],other: IEnumerable[T]) -> bool
 
   
@@ -942,9 +1052,10 @@ class ISet(ICollection[T],IEnumerable[T],IEnumerable):
 
    Returns: true if the current set is a subset of other; otherwise,false.
   """
-  pass
- def IsSupersetOf(self,other):
-  """
+        pass
+
+    def IsSupersetOf(self, other):
+        """
   IsSupersetOf(self: ISet[T],other: IEnumerable[T]) -> bool
 
   
@@ -957,9 +1068,10 @@ class ISet(ICollection[T],IEnumerable[T],IEnumerable):
 
    Returns: true if the current set is a superset of other; otherwise,false.
   """
-  pass
- def Overlaps(self,other):
-  """
+        pass
+
+    def Overlaps(self, other):
+        """
   Overlaps(self: ISet[T],other: IEnumerable[T]) -> bool
 
   
@@ -972,9 +1084,10 @@ class ISet(ICollection[T],IEnumerable[T],IEnumerable):
 
    Returns: true if the current set and other share at least one common element; otherwise,false.
   """
-  pass
- def SetEquals(self,other):
-  """
+        pass
+
+    def SetEquals(self, other):
+        """
   SetEquals(self: ISet[T],other: IEnumerable[T]) -> bool
 
   
@@ -987,9 +1100,10 @@ class ISet(ICollection[T],IEnumerable[T],IEnumerable):
 
    Returns: true if the current set is equal to other; otherwise,false.
   """
-  pass
- def SymmetricExceptWith(self,other):
-  """
+        pass
+
+    def SymmetricExceptWith(self, other):
+        """
   SymmetricExceptWith(self: ISet[T],other: IEnumerable[T])
 
    Modifies the current set so that it contains only elements that are present either in the 
@@ -1002,9 +1116,10 @@ class ISet(ICollection[T],IEnumerable[T],IEnumerable):
 
    other: The collection to compare to the current set.
   """
-  pass
- def UnionWith(self,other):
-  """
+        pass
+
+    def UnionWith(self, other):
+        """
   UnionWith(self: ISet[T],other: IEnumerable[T])
 
    Modifies the current set so that it contains all elements that are present in both the current 
@@ -1017,12 +1132,14 @@ class ISet(ICollection[T],IEnumerable[T],IEnumerable):
 
    other: The collection to compare to the current set.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: ICollection[T],item: T) -> bool
 
   
@@ -1035,19 +1152,23 @@ class ISet(ICollection[T],IEnumerable[T],IEnumerable):
 
    Returns: true if item is found in the System.Collections.Generic.ICollection; otherwise,false.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
+        pass
 
-class KeyNotFoundException(SystemException,ISerializable,_Exception):
- """
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+
+class KeyNotFoundException(SystemException, ISerializable, _Exception):
+    """
  The exception that is thrown when the key specified for accessing an element in a collection does not match any key in the collection.
 
  
@@ -1058,18 +1179,22 @@ class KeyNotFoundException(SystemException,ISerializable,_Exception):
 
  KeyNotFoundException(message: str,innerException: Exception)
  """
- def add_SerializeObjectState(self,*args):
-  """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def remove_SerializeObjectState(self,*args):
-  """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,message=None,innerException=None):
-  """
+
+    def add_SerializeObjectState(self, *args):
+        """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def remove_SerializeObjectState(self, *args):
+        """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, message=None, innerException=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,message: str)
@@ -1078,16 +1203,20 @@ class KeyNotFoundException(SystemException,ISerializable,_Exception):
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
 
 class KeyValuePair(object):
- """ KeyValuePair[TKey,TValue](key: TKey,value: TValue) """
- def ToString(self):
-  """
+    """ KeyValuePair[TKey,TValue](key: TKey,value: TValue) """
+
+    def ToString(self):
+        """
   ToString(self: KeyValuePair[TKey,TValue]) -> str
 
   
@@ -1102,17 +1231,19 @@ class KeyValuePair(object):
 
     string representations of the key and value.
   """
-  pass
- @staticmethod
- def __new__(self,key,value):
-  """
+        pass
+
+    @staticmethod
+    def __new__(self, key, value):
+        """
   __new__(cls: type,key: TKey,value: TValue)
 
   __new__[KeyValuePair`2]() -> KeyValuePair[TKey,TValue]
   """
-  pass
- Key=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the key in the key/value pair.
+        pass
+
+    Key = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the key in the key/value pair.
 
 
 
@@ -1122,8 +1253,8 @@ Get: Key(self: KeyValuePair[TKey,TValue]) -> TKey
 
 """
 
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the value in the key/value pair.
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the value in the key/value pair.
 
 
 
@@ -1134,15 +1265,24 @@ Get: Value(self: KeyValuePair[TKey,TValue]) -> TValue
 """
 
 
-
-class LinkedList(object,ICollection[T],IEnumerable[T],IEnumerable,ICollection,IReadOnlyCollection[T],ISerializable,IDeserializationCallback):
- """
+class LinkedList(
+    object,
+    ICollection[T],
+    IEnumerable[T],
+    IEnumerable,
+    ICollection,
+    IReadOnlyCollection[T],
+    ISerializable,
+    IDeserializationCallback,
+):
+    """
  LinkedList[T]()
 
  LinkedList[T](collection: IEnumerable[T])
  """
- def AddAfter(self,node,*__args):
-  """
+
+    def AddAfter(self, node, *__args):
+        """
   AddAfter(self: LinkedList[T],node: LinkedListNode[T],value: T) -> LinkedListNode[T]
 
   
@@ -1181,9 +1321,10 @@ class LinkedList(object,ICollection[T],IEnumerable[T],IEnumerable,ICollection,IR
 
     System.Collections.Generic.LinkedList.
   """
-  pass
- def AddBefore(self,node,*__args):
-  """
+        pass
+
+    def AddBefore(self, node, *__args):
+        """
   AddBefore(self: LinkedList[T],node: LinkedListNode[T],newNode: LinkedListNode[T])
 
    Adds the specified new node before the specified existing node in the 
@@ -1224,9 +1365,10 @@ class LinkedList(object,ICollection[T],IEnumerable[T],IEnumerable,ICollection,IR
 
    Returns: The new System.Collections.Generic.LinkedListNode containing value.
   """
-  pass
- def AddFirst(self,*__args):
-  """
+        pass
+
+    def AddFirst(self, *__args):
+        """
   AddFirst(self: LinkedList[T],node: LinkedListNode[T])
 
    Adds the specified new node at the start of the System.Collections.Generic.LinkedList.
@@ -1255,9 +1397,10 @@ class LinkedList(object,ICollection[T],IEnumerable[T],IEnumerable,ICollection,IR
 
    Returns: The new System.Collections.Generic.LinkedListNode containing value.
   """
-  pass
- def AddLast(self,*__args):
-  """
+        pass
+
+    def AddLast(self, *__args):
+        """
   AddLast(self: LinkedList[T],node: LinkedListNode[T])
 
    Adds the specified new node at the end of the System.Collections.Generic.LinkedList.
@@ -1286,16 +1429,18 @@ class LinkedList(object,ICollection[T],IEnumerable[T],IEnumerable,ICollection,IR
 
    Returns: The new System.Collections.Generic.LinkedListNode containing value.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: LinkedList[T])
 
    Removes all nodes from the System.Collections.Generic.LinkedList.
   """
-  pass
- def Contains(self,value):
-  """
+        pass
+
+    def Contains(self, value):
+        """
   Contains(self: LinkedList[T],value: T) -> bool
 
   
@@ -1312,12 +1457,14 @@ class LinkedList(object,ICollection[T],IEnumerable[T],IEnumerable,ICollection,IR
 
    Returns: true if value is found in the System.Collections.Generic.LinkedList; otherwise,false.
   """
-  pass
- def CopyTo(self,array,index):
-  """ CopyTo(self: LinkedList[T],array: Array[T],index: int) """
-  pass
- def Find(self,value):
-  """
+        pass
+
+    def CopyTo(self, array, index):
+        """ CopyTo(self: LinkedList[T],array: Array[T],index: int) """
+        pass
+
+    def Find(self, value):
+        """
   Find(self: LinkedList[T],value: T) -> LinkedListNode[T]
 
   
@@ -1332,9 +1479,10 @@ class LinkedList(object,ICollection[T],IEnumerable[T],IEnumerable,ICollection,IR
 
     otherwise,null.
   """
-  pass
- def FindLast(self,value):
-  """
+        pass
+
+    def FindLast(self, value):
+        """
   FindLast(self: LinkedList[T],value: T) -> LinkedListNode[T]
 
   
@@ -1349,9 +1497,10 @@ class LinkedList(object,ICollection[T],IEnumerable[T],IEnumerable,ICollection,IR
 
     otherwise,null.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: LinkedList[T]) -> Enumerator
 
   
@@ -1360,9 +1509,10 @@ class LinkedList(object,ICollection[T],IEnumerable[T],IEnumerable,ICollection,IR
 
    Returns: An System.Collections.Generic.LinkedList for the System.Collections.Generic.LinkedList.
   """
-  pass
- def GetObjectData(self,info,context):
-  """
+        pass
+
+    def GetObjectData(self, info, context):
+        """
   GetObjectData(self: LinkedList[T],info: SerializationInfo,context: StreamingContext)
 
    Implements the System.Runtime.Serialization.ISerializable interface and returns the data needed 
@@ -1383,9 +1533,10 @@ class LinkedList(object,ICollection[T],IEnumerable[T],IEnumerable,ICollection,IR
 
     of the serialized stream associated with the System.Collections.Generic.LinkedList instance.
   """
-  pass
- def OnDeserialization(self,sender):
-  """
+        pass
+
+    def OnDeserialization(self, sender):
+        """
   OnDeserialization(self: LinkedList[T],sender: object)
 
    Implements the System.Runtime.Serialization.ISerializable interface and raises the 
@@ -1398,9 +1549,10 @@ class LinkedList(object,ICollection[T],IEnumerable[T],IEnumerable,ICollection,IR
 
    sender: The source of the deserialization event.
   """
-  pass
- def Remove(self,*__args):
-  """
+        pass
+
+    def Remove(self, *__args):
+        """
   Remove(self: LinkedList[T],node: LinkedListNode[T])
 
    Removes the specified node from the System.Collections.Generic.LinkedList.
@@ -1431,23 +1583,26 @@ class LinkedList(object,ICollection[T],IEnumerable[T],IEnumerable,ICollection,IR
 
     also returns false if value was not found in the original System.Collections.Generic.LinkedList.
   """
-  pass
- def RemoveFirst(self):
-  """
+        pass
+
+    def RemoveFirst(self):
+        """
   RemoveFirst(self: LinkedList[T])
 
    Removes the node at the start of the System.Collections.Generic.LinkedList.
   """
-  pass
- def RemoveLast(self):
-  """
+        pass
+
+    def RemoveLast(self):
+        """
   RemoveLast(self: LinkedList[T])
 
    Removes the node at the end of the System.Collections.Generic.LinkedList.
   """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: ICollection[T],item: T) -> bool
 
   
@@ -1460,33 +1615,40 @@ class LinkedList(object,ICollection[T],IEnumerable[T],IEnumerable,ICollection,IR
 
    Returns: true if item is found in the System.Collections.Generic.ICollection; otherwise,false.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,collection=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, collection=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,collection: IEnumerable[T])
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of nodes actually contained in the System.Collections.Generic.LinkedList.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of nodes actually contained in the System.Collections.Generic.LinkedList.
 
 
 
@@ -1496,8 +1658,8 @@ Get: Count(self: LinkedList[T]) -> int
 
 """
 
- First=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the first node of the System.Collections.Generic.LinkedList.
+    First = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the first node of the System.Collections.Generic.LinkedList.
 
 
 
@@ -1507,8 +1669,8 @@ Get: First(self: LinkedList[T]) -> LinkedListNode[T]
 
 """
 
- Last=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the last node of the System.Collections.Generic.LinkedList.
+    Last = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the last node of the System.Collections.Generic.LinkedList.
 
 
 
@@ -1518,18 +1680,19 @@ Get: Last(self: LinkedList[T]) -> LinkedListNode[T]
 
 """
 
-
- Enumerator=None
+    Enumerator = None
 
 
 class LinkedListNode(object):
- """ LinkedListNode[T](value: T) """
- @staticmethod
- def __new__(self,value):
-  """ __new__(cls: type,value: T) """
-  pass
- List=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Collections.Generic.LinkedList that the System.Collections.Generic.LinkedListNode belongs to.
+    """ LinkedListNode[T](value: T) """
+
+    @staticmethod
+    def __new__(self, value):
+        """ __new__(cls: type,value: T) """
+        pass
+
+    List = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the System.Collections.Generic.LinkedList that the System.Collections.Generic.LinkedListNode belongs to.
 
 
 
@@ -1539,8 +1702,8 @@ Get: List(self: LinkedListNode[T]) -> LinkedList[T]
 
 """
 
- Next=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the next node in the System.Collections.Generic.LinkedList.
+    Next = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the next node in the System.Collections.Generic.LinkedList.
 
 
 
@@ -1550,8 +1713,8 @@ Get: Next(self: LinkedListNode[T]) -> LinkedListNode[T]
 
 """
 
- Previous=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the previous node in the System.Collections.Generic.LinkedList.
+    Previous = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the previous node in the System.Collections.Generic.LinkedList.
 
 
 
@@ -1561,8 +1724,8 @@ Get: Previous(self: LinkedListNode[T]) -> LinkedListNode[T]
 
 """
 
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the value contained in the node.
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the value contained in the node.
 
 
 
@@ -1575,17 +1738,27 @@ Set: Value(self: LinkedListNode[T])=value
 """
 
 
-
-class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,ICollection,IReadOnlyList[T],IReadOnlyCollection[T]):
- """
+class List(
+    object,
+    IList[T],
+    ICollection[T],
+    IEnumerable[T],
+    IEnumerable,
+    IList,
+    ICollection,
+    IReadOnlyList[T],
+    IReadOnlyCollection[T],
+):
+    """
  List[T]()
 
  List[T](capacity: int)
 
  List[T](collection: IEnumerable[T])
  """
- def Add(self,item):
-  """
+
+    def Add(self, item):
+        """
   Add(self: List[T],item: T)
 
    Adds an object to the end of the System.Collections.Generic.List.
@@ -1596,9 +1769,10 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
 
     for reference types.
   """
-  pass
- def AddRange(self,collection):
-  """
+        pass
+
+    def AddRange(self, collection):
+        """
   AddRange(self: List[T],collection: IEnumerable[T])
 
    Adds the elements of the specified collection to the end of the System.Collections.Generic.List.
@@ -1611,9 +1785,10 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
 
     reference type.
   """
-  pass
- def AsReadOnly(self):
-  """
+        pass
+
+    def AsReadOnly(self):
+        """
   AsReadOnly(self: List[T]) -> ReadOnlyCollection[T]
 
   
@@ -1624,9 +1799,10 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
 
     current System.Collections.Generic.List.
   """
-  pass
- def BinarySearch(self,*__args):
-  """
+        pass
+
+    def BinarySearch(self, *__args):
+        """
   BinarySearch(self: List[T],item: T,comparer: IComparer[T]) -> int
 
   
@@ -1713,16 +1889,18 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
 
     System.Collections.Generic.List.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: List[T])
 
    Removes all elements from the System.Collections.Generic.List.
   """
-  pass
- def Contains(self,item):
-  """
+        pass
+
+    def Contains(self, item):
+        """
   Contains(self: List[T],item: T) -> bool
 
   
@@ -1739,15 +1917,18 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
 
    Returns: true if item is found in the System.Collections.Generic.List; otherwise,false.
   """
-  pass
- def ConvertAll(self,converter):
-  """ ConvertAll[TOutput](self: List[T],converter: Converter[T,TOutput]) -> List[TOutput] """
-  pass
- def CopyTo(self,*__args):
-  """ CopyTo(self: List[T],index: int,array: Array[T],arrayIndex: int,count: int)CopyTo(self: List[T],array: Array[T],arrayIndex: int)CopyTo(self: List[T],array: Array[T]) """
-  pass
- def Exists(self,match):
-  """
+        pass
+
+    def ConvertAll(self, converter):
+        """ ConvertAll[TOutput](self: List[T],converter: Converter[T,TOutput]) -> List[TOutput] """
+        pass
+
+    def CopyTo(self, *__args):
+        """ CopyTo(self: List[T],index: int,array: Array[T],arrayIndex: int,count: int)CopyTo(self: List[T],array: Array[T],arrayIndex: int)CopyTo(self: List[T],array: Array[T]) """
+        pass
+
+    def Exists(self, match):
+        """
   Exists(self: List[T],match: Predicate[T]) -> bool
 
   
@@ -1766,9 +1947,10 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
 
     conditions defined by the specified predicate; otherwise,false.
   """
-  pass
- def Find(self,match):
-  """
+        pass
+
+    def Find(self, match):
+        """
   Find(self: List[T],match: Predicate[T]) -> T
 
   
@@ -1787,9 +1969,10 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
 
     otherwise,the default value for type T.
   """
-  pass
- def FindAll(self,match):
-  """
+        pass
+
+    def FindAll(self, match):
+        """
   FindAll(self: List[T],match: Predicate[T]) -> List[T]
 
   
@@ -1804,9 +1987,10 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
 
     by the specified predicate,if found; otherwise,an empty System.Collections.Generic.List.
   """
-  pass
- def FindIndex(self,*__args):
-  """
+        pass
+
+    def FindIndex(self, *__args):
+        """
   FindIndex(self: List[T],startIndex: int,match: Predicate[T]) -> int
 
   
@@ -1874,9 +2058,10 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
    Returns: The zero-based index of the first occurrence of an element that matches the conditions defined 
 
     """
-  pass
- def FindLast(self,match):
-  """
+        pass
+
+    def FindLast(self, match):
+        """
   FindLast(self: List[T],match: Predicate[T]) -> T
 
   
@@ -1895,9 +2080,10 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
 
     otherwise,the default value for type T.
   """
-  pass
- def FindLastIndex(self,*__args):
-  """
+        pass
+
+    def FindLastIndex(self, *__args):
+        """
   FindLastIndex(self: List[T],startIndex: int,count: int,match: Predicate[T]) -> int
 
   
@@ -1965,9 +2151,10 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
    Returns: The zero-based index of the last occurrence of an element that matches the conditions defined by 
 
     """
-  pass
- def ForEach(self,action):
-  """
+        pass
+
+    def ForEach(self, action):
+        """
   ForEach(self: List[T],action: Action[T])
 
    Performs the specified action on each element of the System.Collections.Generic.List.
@@ -1976,9 +2163,10 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
 
    action: The System.Action delegate to perform on each element of the System.Collections.Generic.List.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: List[T]) -> Enumerator
 
   
@@ -1987,9 +2175,10 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
 
    Returns: A System.Collections.Generic.List for the System.Collections.Generic.List.
   """
-  pass
- def GetRange(self,index,count):
-  """
+        pass
+
+    def GetRange(self, index, count):
+        """
   GetRange(self: List[T],index: int,count: int) -> List[T]
 
   
@@ -2004,9 +2193,10 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
 
    Returns: A shallow copy of a range of elements in the source System.Collections.Generic.List.
   """
-  pass
- def IndexOf(self,item,index=None,count=None):
-  """
+        pass
+
+    def IndexOf(self, item, index=None, count=None):
+        """
   IndexOf(self: List[T],item: T,index: int,count: int) -> int
 
   
@@ -2086,9 +2276,10 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
    Returns: The zero-based index of the first occurrence of item within the entire 
 
     """
-  pass
- def Insert(self,index,item):
-  """
+        pass
+
+    def Insert(self, index, item):
+        """
   Insert(self: List[T],index: int,item: T)
 
    Inserts an element into the System.Collections.Generic.List at the specified index.
@@ -2099,9 +2290,10 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
 
    item: The object to insert. The value can be null for reference types.
   """
-  pass
- def InsertRange(self,index,collection):
-  """
+        pass
+
+    def InsertRange(self, index, collection):
+        """
   InsertRange(self: List[T],index: int,collection: IEnumerable[T])
 
    Inserts the elements of a collection into the System.Collections.Generic.List at the specified 
@@ -2120,9 +2312,10 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
 
     reference type.
   """
-  pass
- def LastIndexOf(self,item,index=None,count=None):
-  """
+        pass
+
+    def LastIndexOf(self, item, index=None, count=None):
+        """
   LastIndexOf(self: List[T],item: T,index: int) -> int
 
   
@@ -2202,9 +2395,10 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
     System.Collections.Generic.List that contains count number of elements and ends at index,if 
 
     """
-  pass
- def Remove(self,item):
-  """
+        pass
+
+    def Remove(self, item):
+        """
   Remove(self: List[T],item: T) -> bool
 
   
@@ -2223,9 +2417,10 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
 
     was not found in the System.Collections.Generic.List.
   """
-  pass
- def RemoveAll(self,match):
-  """
+        pass
+
+    def RemoveAll(self, match):
+        """
   RemoveAll(self: List[T],match: Predicate[T]) -> int
 
   
@@ -2238,9 +2433,10 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
 
    Returns: The number of elements removed from the System.Collections.Generic.List .
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: List[T],index: int)
 
    Removes the element at the specified index of the System.Collections.Generic.List.
@@ -2249,9 +2445,10 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
 
    index: The zero-based index of the element to remove.
   """
-  pass
- def RemoveRange(self,index,count):
-  """
+        pass
+
+    def RemoveRange(self, index, count):
+        """
   RemoveRange(self: List[T],index: int,count: int)
 
    Removes a range of elements from the System.Collections.Generic.List.
@@ -2262,9 +2459,10 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
 
    count: The number of elements to remove.
   """
-  pass
- def Reverse(self,index=None,count=None):
-  """
+        pass
+
+    def Reverse(self, index=None, count=None):
+        """
   Reverse(self: List[T],index: int,count: int)
 
    Reverses the order of the elements in the specified range.
@@ -2279,9 +2477,10 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
 
    Reverses the order of the elements in the entire System.Collections.Generic.List.
   """
-  pass
- def Sort(self,*__args):
-  """
+        pass
+
+    def Sort(self, *__args):
+        """
   Sort(self: List[T],index: int,count: int,comparer: IComparer[T])
 
    Sorts the elements in a range of elements in System.Collections.Generic.List using the specified 
@@ -2328,9 +2527,10 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
 
     to use the default comparer System.Collections.Generic.Comparer.
   """
-  pass
- def ToArray(self):
-  """
+        pass
+
+    def ToArray(self):
+        """
   ToArray(self: List[T]) -> Array[T]
 
   
@@ -2339,18 +2539,20 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
 
    Returns: An array containing copies of the elements of the System.Collections.Generic.List.
   """
-  pass
- def TrimExcess(self):
-  """
+        pass
+
+    def TrimExcess(self):
+        """
   TrimExcess(self: List[T])
 
    Sets the capacity to the actual number of elements in the System.Collections.Generic.List,if 
 
     that number is less than a threshold value.
   """
-  pass
- def TrueForAll(self,match):
-  """
+        pass
+
+    def TrueForAll(self, match):
+        """
   TrueForAll(self: List[T],match: Predicate[T]) -> bool
 
   
@@ -2371,12 +2573,14 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
 
     true.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: ICollection[T],item: T) -> bool
 
   
@@ -2401,43 +2605,52 @@ class List(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,IColl
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,capacity: int)
 
   __new__(cls: type,collection: IEnumerable[T])
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """
   __repr__(self: List[T]) -> str
 
   __repr__(self: List[T]) -> str
   """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Capacity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the total number of elements the internal data structure can hold without resizing.
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Capacity = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the total number of elements the internal data structure can hold without resizing.
 
 
 
@@ -2449,8 +2662,8 @@ Set: Capacity(self: List[T])=value
 
 """
 
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of elements actually contained in the System.Collections.Generic.List.
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of elements actually contained in the System.Collections.Generic.List.
 
 
 
@@ -2460,27 +2673,28 @@ Get: Count(self: List[T]) -> int
 
 """
 
+    Enumerator = None
 
- Enumerator=None
 
-
-class Queue(object,IEnumerable[T],IEnumerable,ICollection,IReadOnlyCollection[T]):
- """
+class Queue(object, IEnumerable[T], IEnumerable, ICollection, IReadOnlyCollection[T]):
+    """
  Queue[T]()
 
  Queue[T](capacity: int)
 
  Queue[T](collection: IEnumerable[T])
  """
- def Clear(self):
-  """
+
+    def Clear(self):
+        """
   Clear(self: Queue[T])
 
    Removes all objects from the System.Collections.Generic.Queue.
   """
-  pass
- def Contains(self,item):
-  """
+        pass
+
+    def Contains(self, item):
+        """
   Contains(self: Queue[T],item: T) -> bool
 
   
@@ -2497,12 +2711,14 @@ class Queue(object,IEnumerable[T],IEnumerable,ICollection,IReadOnlyCollection[T]
 
    Returns: true if item is found in the System.Collections.Generic.Queue; otherwise,false.
   """
-  pass
- def CopyTo(self,array,arrayIndex):
-  """ CopyTo(self: Queue[T],array: Array[T],arrayIndex: int) """
-  pass
- def Dequeue(self):
-  """
+        pass
+
+    def CopyTo(self, array, arrayIndex):
+        """ CopyTo(self: Queue[T],array: Array[T],arrayIndex: int) """
+        pass
+
+    def Dequeue(self):
+        """
   Dequeue(self: Queue[T]) -> T
 
   
@@ -2511,9 +2727,10 @@ class Queue(object,IEnumerable[T],IEnumerable,ICollection,IReadOnlyCollection[T]
 
    Returns: The object that is removed from the beginning of the System.Collections.Generic.Queue.
   """
-  pass
- def Enqueue(self,item):
-  """
+        pass
+
+    def Enqueue(self, item):
+        """
   Enqueue(self: Queue[T],item: T)
 
    Adds an object to the end of the System.Collections.Generic.Queue.
@@ -2524,9 +2741,10 @@ class Queue(object,IEnumerable[T],IEnumerable,ICollection,IReadOnlyCollection[T]
 
     types.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: Queue[T]) -> Enumerator
 
   
@@ -2535,9 +2753,10 @@ class Queue(object,IEnumerable[T],IEnumerable,ICollection,IReadOnlyCollection[T]
 
    Returns: An System.Collections.Generic.Queue for the System.Collections.Generic.Queue.
   """
-  pass
- def Peek(self):
-  """
+        pass
+
+    def Peek(self):
+        """
   Peek(self: Queue[T]) -> T
 
   
@@ -2546,9 +2765,10 @@ class Queue(object,IEnumerable[T],IEnumerable,ICollection,IReadOnlyCollection[T]
 
    Returns: The object at the beginning of the System.Collections.Generic.Queue.
   """
-  pass
- def ToArray(self):
-  """
+        pass
+
+    def ToArray(self):
+        """
   ToArray(self: Queue[T]) -> Array[T]
 
   
@@ -2557,45 +2777,54 @@ class Queue(object,IEnumerable[T],IEnumerable,ICollection,IReadOnlyCollection[T]
 
    Returns: A new array containing elements copied from the System.Collections.Generic.Queue.
   """
-  pass
- def TrimExcess(self):
-  """
+        pass
+
+    def TrimExcess(self):
+        """
   TrimExcess(self: Queue[T])
 
    Sets the capacity to the actual number of elements in the System.Collections.Generic.Queue,if 
 
     that number is less than 90 percent of current capacity.
   """
-  pass
- def __contains__(self,*args):
-  """ __contains__[T](enumerable: IEnumerable[T],value: T) -> bool """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[T](enumerable: IEnumerable[T],value: T) -> bool """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,capacity: int)
 
   __new__(cls: type,collection: IEnumerable[T])
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of elements contained in the System.Collections.Generic.Queue.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of elements contained in the System.Collections.Generic.Queue.
 
 
 
@@ -2605,12 +2834,21 @@ Get: Count(self: Queue[T]) -> int
 
 """
 
+    Enumerator = None
 
- Enumerator=None
 
-
-class SortedDictionary(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[TKey,TValue]],IEnumerable[KeyValuePair[TKey,TValue]],IEnumerable,IDictionary,ICollection,IReadOnlyDictionary[TKey,TValue],IReadOnlyCollection[KeyValuePair[TKey,TValue]]):
- """
+class SortedDictionary(
+    object,
+    IDictionary[TKey, TValue],
+    ICollection[KeyValuePair[TKey, TValue]],
+    IEnumerable[KeyValuePair[TKey, TValue]],
+    IEnumerable,
+    IDictionary,
+    ICollection,
+    IReadOnlyDictionary[TKey, TValue],
+    IReadOnlyCollection[KeyValuePair[TKey, TValue]],
+):
+    """
  SortedDictionary[TKey,TValue]()
 
  SortedDictionary[TKey,TValue](comparer: IComparer[TKey])
@@ -2619,8 +2857,9 @@ class SortedDictionary(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[
 
  SortedDictionary[TKey,TValue](dictionary: IDictionary[TKey,TValue],comparer: IComparer[TKey])
  """
- def Add(self,key,value):
-  """
+
+    def Add(self, key, value):
+        """
   Add(self: SortedDictionary[TKey,TValue],key: TKey,value: TValue)
 
    Adds an element with the specified key and value into the 
@@ -2635,16 +2874,18 @@ class SortedDictionary(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[
 
    value: The value of the element to add. The value can be null for reference types.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: SortedDictionary[TKey,TValue])
 
    Removes all elements from the System.Collections.Generic.SortedDictionary.
   """
-  pass
- def ContainsKey(self,key):
-  """
+        pass
+
+    def ContainsKey(self, key):
+        """
   ContainsKey(self: SortedDictionary[TKey,TValue],key: TKey) -> bool
 
   
@@ -2663,9 +2904,10 @@ class SortedDictionary(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[
 
     key; otherwise,false.
   """
-  pass
- def ContainsValue(self,value):
-  """
+        pass
+
+    def ContainsValue(self, value):
+        """
   ContainsValue(self: SortedDictionary[TKey,TValue],value: TValue) -> bool
 
   
@@ -2688,12 +2930,14 @@ class SortedDictionary(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[
 
     value; otherwise,false.
   """
-  pass
- def CopyTo(self,array,index):
-  """ CopyTo(self: SortedDictionary[TKey,TValue],array: Array[KeyValuePair[TKey,TValue]],index: int) """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def CopyTo(self, array, index):
+        """ CopyTo(self: SortedDictionary[TKey,TValue],array: Array[KeyValuePair[TKey,TValue]],index: int) """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: SortedDictionary[TKey,TValue]) -> Enumerator
 
   
@@ -2704,9 +2948,10 @@ class SortedDictionary(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[
 
     System.Collections.Generic.SortedDictionary.
   """
-  pass
- def Remove(self,key):
-  """
+        pass
+
+    def Remove(self, key):
+        """
   Remove(self: SortedDictionary[TKey,TValue],key: TKey) -> bool
 
   
@@ -2721,15 +2966,18 @@ class SortedDictionary(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[
 
     if key is not found in the System.Collections.Generic.SortedDictionary.
   """
-  pass
- def TryGetValue(self,key,value):
-  """ TryGetValue(self: SortedDictionary[TKey,TValue],key: TKey) -> (bool,TValue) """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def TryGetValue(self, key, value):
+        """ TryGetValue(self: SortedDictionary[TKey,TValue],key: TKey) -> (bool,TValue) """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IDictionary[TKey,TValue],key: TKey) -> bool
 
   
@@ -2766,22 +3014,27 @@ class SortedDictionary(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[
 
    Returns: true if the System.Collections.IDictionary contains an element with the key; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,dictionary: IDictionary[TKey,TValue])
@@ -2790,17 +3043,21 @@ class SortedDictionary(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[
 
   __new__(cls: type,comparer: IComparer[TKey])
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Comparer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Collections.Generic.IComparer used to order the elements of the System.Collections.Generic.SortedDictionary.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Comparer = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the System.Collections.Generic.IComparer used to order the elements of the System.Collections.Generic.SortedDictionary.
 
 
 
@@ -2810,8 +3067,8 @@ Get: Comparer(self: SortedDictionary[TKey,TValue]) -> IComparer[TKey]
 
 """
 
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of key/value pairs contained in the System.Collections.Generic.SortedDictionary.
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of key/value pairs contained in the System.Collections.Generic.SortedDictionary.
 
 
 
@@ -2821,8 +3078,8 @@ Get: Count(self: SortedDictionary[TKey,TValue]) -> int
 
 """
 
- Keys=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection containing the keys in the System.Collections.Generic.SortedDictionary.
+    Keys = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a collection containing the keys in the System.Collections.Generic.SortedDictionary.
 
 
 
@@ -2832,8 +3089,8 @@ Get: Keys(self: SortedDictionary[TKey,TValue]) -> KeyCollection
 
 """
 
- Values=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection containing the values in the System.Collections.Generic.SortedDictionary.
+    Values = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a collection containing the values in the System.Collections.Generic.SortedDictionary.
 
 
 
@@ -2843,14 +3100,23 @@ Get: Values(self: SortedDictionary[TKey,TValue]) -> ValueCollection
 
 """
 
+    Enumerator = None
+    KeyCollection = None
+    ValueCollection = None
 
- Enumerator=None
- KeyCollection=None
- ValueCollection=None
 
-
-class SortedList(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[TKey,TValue]],IEnumerable[KeyValuePair[TKey,TValue]],IEnumerable,IDictionary,ICollection,IReadOnlyDictionary[TKey,TValue],IReadOnlyCollection[KeyValuePair[TKey,TValue]]):
- """
+class SortedList(
+    object,
+    IDictionary[TKey, TValue],
+    ICollection[KeyValuePair[TKey, TValue]],
+    IEnumerable[KeyValuePair[TKey, TValue]],
+    IEnumerable,
+    IDictionary,
+    ICollection,
+    IReadOnlyDictionary[TKey, TValue],
+    IReadOnlyCollection[KeyValuePair[TKey, TValue]],
+):
+    """
  SortedList[TKey,TValue]()
 
  SortedList[TKey,TValue](capacity: int)
@@ -2863,8 +3129,9 @@ class SortedList(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[TKey,T
 
  SortedList[TKey,TValue](dictionary: IDictionary[TKey,TValue],comparer: IComparer[TKey])
  """
- def Add(self,key,value):
-  """
+
+    def Add(self, key, value):
+        """
   Add(self: SortedList[TKey,TValue],key: TKey,value: TValue)
 
    Adds an element with the specified key and value into the System.Collections.Generic.SortedList.
@@ -2875,16 +3142,18 @@ class SortedList(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[TKey,T
 
    value: The value of the element to add. The value can be null for reference types.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: SortedList[TKey,TValue])
 
    Removes all elements from the System.Collections.Generic.SortedList.
   """
-  pass
- def ContainsKey(self,key):
-  """
+        pass
+
+    def ContainsKey(self, key):
+        """
   ContainsKey(self: SortedList[TKey,TValue],key: TKey) -> bool
 
   
@@ -2899,9 +3168,10 @@ class SortedList(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[TKey,T
 
     otherwise,false.
   """
-  pass
- def ContainsValue(self,value):
-  """
+        pass
+
+    def ContainsValue(self, value):
+        """
   ContainsValue(self: SortedList[TKey,TValue],value: TValue) -> bool
 
   
@@ -2920,9 +3190,10 @@ class SortedList(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[TKey,T
 
     otherwise,false.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: SortedList[TKey,TValue]) -> IEnumerator[KeyValuePair[TKey,TValue]]
 
   
@@ -2933,9 +3204,10 @@ class SortedList(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[TKey,T
 
     the System.Collections.Generic.SortedList.
   """
-  pass
- def IndexOfKey(self,key):
-  """
+        pass
+
+    def IndexOfKey(self, key):
+        """
   IndexOfKey(self: SortedList[TKey,TValue],key: TKey) -> int
 
   
@@ -2954,9 +3226,10 @@ class SortedList(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[TKey,T
 
     otherwise,-1.
   """
-  pass
- def IndexOfValue(self,value):
-  """
+        pass
+
+    def IndexOfValue(self, value):
+        """
   IndexOfValue(self: SortedList[TKey,TValue],value: TValue) -> int
 
   
@@ -2979,9 +3252,10 @@ class SortedList(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[TKey,T
 
     System.Collections.Generic.SortedList,if found; otherwise,-1.
   """
-  pass
- def Remove(self,key):
-  """
+        pass
+
+    def Remove(self, key):
+        """
   Remove(self: SortedList[TKey,TValue],key: TKey) -> bool
 
   
@@ -2996,9 +3270,10 @@ class SortedList(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[TKey,T
 
     if key was not found in the original System.Collections.Generic.SortedList.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: SortedList[TKey,TValue],index: int)
 
    Removes the element at the specified index of the System.Collections.Generic.SortedList.
@@ -3007,24 +3282,28 @@ class SortedList(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[TKey,T
 
    index: The zero-based index of the element to remove.
   """
-  pass
- def TrimExcess(self):
-  """
+        pass
+
+    def TrimExcess(self):
+        """
   TrimExcess(self: SortedList[TKey,TValue])
 
    Sets the capacity to the actual number of elements in the System.Collections.Generic.SortedList,
 
     if that number is less than 90 percent of current capacity.
   """
-  pass
- def TryGetValue(self,key,value):
-  """ TryGetValue(self: SortedList[TKey,TValue],key: TKey) -> (bool,TValue) """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def TryGetValue(self, key, value):
+        """ TryGetValue(self: SortedList[TKey,TValue],key: TKey) -> (bool,TValue) """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IDictionary[TKey,TValue],key: TKey) -> bool
 
   
@@ -3061,22 +3340,27 @@ class SortedList(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[TKey,T
 
    Returns: true if the System.Collections.IDictionary contains an element with the key; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,capacity: int)
@@ -3089,17 +3373,21 @@ class SortedList(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[TKey,T
 
   __new__(cls: type,dictionary: IDictionary[TKey,TValue],comparer: IComparer[TKey])
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Capacity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the number of elements that the System.Collections.Generic.SortedList can contain.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Capacity = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the number of elements that the System.Collections.Generic.SortedList can contain.
 
 
 
@@ -3111,8 +3399,8 @@ Set: Capacity(self: SortedList[TKey,TValue])=value
 
 """
 
- Comparer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Collections.Generic.IComparer for the sorted list.
+    Comparer = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the System.Collections.Generic.IComparer for the sorted list.
 
 
 
@@ -3122,8 +3410,8 @@ Get: Comparer(self: SortedList[TKey,TValue]) -> IComparer[TKey]
 
 """
 
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of key/value pairs contained in the System.Collections.Generic.SortedList.
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of key/value pairs contained in the System.Collections.Generic.SortedList.
 
 
 
@@ -3133,8 +3421,8 @@ Get: Count(self: SortedList[TKey,TValue]) -> int
 
 """
 
- Keys=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection containing the keys in the System.Collections.Generic.SortedList.
+    Keys = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a collection containing the keys in the System.Collections.Generic.SortedList.
 
 
 
@@ -3144,8 +3432,8 @@ Get: Keys(self: SortedList[TKey,TValue]) -> IList[TKey]
 
 """
 
- Values=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection containing the values in the System.Collections.Generic.SortedList.
+    Values = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a collection containing the values in the System.Collections.Generic.SortedList.
 
 
 
@@ -3156,9 +3444,18 @@ Get: Values(self: SortedList[TKey,TValue]) -> IList[TValue]
 """
 
 
-
-class SortedSet(object,ISet[T],ICollection[T],IEnumerable[T],IEnumerable,ICollection,ISerializable,IDeserializationCallback,IReadOnlyCollection[T]):
- """
+class SortedSet(
+    object,
+    ISet[T],
+    ICollection[T],
+    IEnumerable[T],
+    IEnumerable,
+    ICollection,
+    ISerializable,
+    IDeserializationCallback,
+    IReadOnlyCollection[T],
+):
+    """
  SortedSet[T]()
 
  SortedSet[T](collection: IEnumerable[T])
@@ -3167,8 +3464,9 @@ class SortedSet(object,ISet[T],ICollection[T],IEnumerable[T],IEnumerable,ICollec
 
  SortedSet[T](comparer: IComparer[T])
  """
- def Add(self,item):
-  """
+
+    def Add(self, item):
+        """
   Add(self: SortedSet[T],item: T) -> bool
 
   
@@ -3181,16 +3479,18 @@ class SortedSet(object,ISet[T],ICollection[T],IEnumerable[T],IEnumerable,ICollec
 
    Returns: true if item is added to the set; otherwise,false.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: SortedSet[T])
 
    Removes all elements from the set.
   """
-  pass
- def Contains(self,item):
-  """
+        pass
+
+    def Contains(self, item):
+        """
   Contains(self: SortedSet[T],item: T) -> bool
 
   
@@ -3203,13 +3503,15 @@ class SortedSet(object,ISet[T],ICollection[T],IEnumerable[T],IEnumerable,ICollec
 
    Returns: true if the set contains item; otherwise,false.
   """
-  pass
- def CopyTo(self,array,index=None,count=None):
-  """ CopyTo(self: SortedSet[T],array: Array[T],index: int,count: int)CopyTo(self: SortedSet[T],array: Array[T],index: int)CopyTo(self: SortedSet[T],array: Array[T]) """
-  pass
- @staticmethod
- def CreateSetComparer(memberEqualityComparer=None):
-  """
+        pass
+
+    def CopyTo(self, array, index=None, count=None):
+        """ CopyTo(self: SortedSet[T],array: Array[T],index: int,count: int)CopyTo(self: SortedSet[T],array: Array[T],index: int)CopyTo(self: SortedSet[T],array: Array[T]) """
+        pass
+
+    @staticmethod
+    def CreateSetComparer(memberEqualityComparer=None):
+        """
   CreateSetComparer(memberEqualityComparer: IEqualityComparer[T]) -> IEqualityComparer[SortedSet[T]]
 
   
@@ -3238,9 +3540,10 @@ class SortedSet(object,ISet[T],ICollection[T],IEnumerable[T],IEnumerable,ICollec
 
    Returns: A comparer for creating a collection of sets.
   """
-  pass
- def ExceptWith(self,other):
-  """
+        pass
+
+    def ExceptWith(self, other):
+        """
   ExceptWith(self: SortedSet[T],other: IEnumerable[T])
 
    Removes all elements that are in a specified collection from the current 
@@ -3253,9 +3556,10 @@ class SortedSet(object,ISet[T],ICollection[T],IEnumerable[T],IEnumerable,ICollec
 
    other: The collection of items to remove from the System.Collections.Generic.SortedSet object.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: SortedSet[T]) -> Enumerator
 
   
@@ -3264,9 +3568,10 @@ class SortedSet(object,ISet[T],ICollection[T],IEnumerable[T],IEnumerable,ICollec
 
    Returns: An enumerator that iterates through the System.Collections.Generic.SortedSet.
   """
-  pass
- def GetObjectData(self,*args):
-  """
+        pass
+
+    def GetObjectData(self, *args):
+        """
   GetObjectData(self: SortedSet[T],info: SerializationInfo,context: StreamingContext)
 
    Implements the System.Runtime.Serialization.ISerializable interface and returns the data that 
@@ -3289,9 +3594,10 @@ class SortedSet(object,ISet[T],ICollection[T],IEnumerable[T],IEnumerable,ICollec
 
     object.
   """
-  pass
- def GetViewBetween(self,lowerValue,upperValue):
-  """
+        pass
+
+    def GetViewBetween(self, lowerValue, upperValue):
+        """
   GetViewBetween(self: SortedSet[T],lowerValue: T,upperValue: T) -> SortedSet[T]
 
   
@@ -3306,9 +3612,10 @@ class SortedSet(object,ISet[T],ICollection[T],IEnumerable[T],IEnumerable,ICollec
 
    Returns: A subset view that contains only the values in the specified range.
   """
-  pass
- def IntersectWith(self,other):
-  """
+        pass
+
+    def IntersectWith(self, other):
+        """
   IntersectWith(self: SortedSet[T],other: IEnumerable[T])
 
    Modifies the current System.Collections.Generic.SortedSet object so that it contains only 
@@ -3321,9 +3628,10 @@ class SortedSet(object,ISet[T],ICollection[T],IEnumerable[T],IEnumerable,ICollec
 
    other: The collection to compare to the current System.Collections.Generic.SortedSet object.
   """
-  pass
- def IsProperSubsetOf(self,other):
-  """
+        pass
+
+    def IsProperSubsetOf(self, other):
+        """
   IsProperSubsetOf(self: SortedSet[T],other: IEnumerable[T]) -> bool
 
   
@@ -3342,9 +3650,10 @@ class SortedSet(object,ISet[T],ICollection[T],IEnumerable[T],IEnumerable,ICollec
 
     false.
   """
-  pass
- def IsProperSupersetOf(self,other):
-  """
+        pass
+
+    def IsProperSupersetOf(self, other):
+        """
   IsProperSupersetOf(self: SortedSet[T],other: IEnumerable[T]) -> bool
 
   
@@ -3363,9 +3672,10 @@ class SortedSet(object,ISet[T],ICollection[T],IEnumerable[T],IEnumerable,ICollec
 
     otherwise,false.
   """
-  pass
- def IsSubsetOf(self,other):
-  """
+        pass
+
+    def IsSubsetOf(self, other):
+        """
   IsSubsetOf(self: SortedSet[T],other: IEnumerable[T]) -> bool
 
   
@@ -3384,9 +3694,10 @@ class SortedSet(object,ISet[T],ICollection[T],IEnumerable[T],IEnumerable,ICollec
 
     false.
   """
-  pass
- def IsSupersetOf(self,other):
-  """
+        pass
+
+    def IsSupersetOf(self, other):
+        """
   IsSupersetOf(self: SortedSet[T],other: IEnumerable[T]) -> bool
 
   
@@ -3403,9 +3714,10 @@ class SortedSet(object,ISet[T],ICollection[T],IEnumerable[T],IEnumerable,ICollec
 
    Returns: true if the System.Collections.Generic.SortedSet object is a superset of other; otherwise,false.
   """
-  pass
- def OnDeserialization(self,*args):
-  """
+        pass
+
+    def OnDeserialization(self, *args):
+        """
   OnDeserialization(self: SortedSet[T],sender: object)
 
    Implements the System.Runtime.Serialization.ISerializable interface,and raises the 
@@ -3418,9 +3730,10 @@ class SortedSet(object,ISet[T],ICollection[T],IEnumerable[T],IEnumerable,ICollec
 
    sender: The source of the deserialization event.
   """
-  pass
- def Overlaps(self,other):
-  """
+        pass
+
+    def Overlaps(self, other):
+        """
   Overlaps(self: SortedSet[T],other: IEnumerable[T]) -> bool
 
   
@@ -3439,9 +3752,10 @@ class SortedSet(object,ISet[T],ICollection[T],IEnumerable[T],IEnumerable,ICollec
 
     element; otherwise,false.
   """
-  pass
- def Remove(self,item):
-  """
+        pass
+
+    def Remove(self, item):
+        """
   Remove(self: SortedSet[T],item: T) -> bool
 
   
@@ -3454,9 +3768,10 @@ class SortedSet(object,ISet[T],ICollection[T],IEnumerable[T],IEnumerable,ICollec
 
    Returns: true if the element is found and successfully removed; otherwise,false.
   """
-  pass
- def RemoveWhere(self,match):
-  """
+        pass
+
+    def RemoveWhere(self, match):
+        """
   RemoveWhere(self: SortedSet[T],match: Predicate[T]) -> int
 
   
@@ -3475,9 +3790,10 @@ class SortedSet(object,ISet[T],ICollection[T],IEnumerable[T],IEnumerable,ICollec
 
     collection..
   """
-  pass
- def Reverse(self):
-  """
+        pass
+
+    def Reverse(self):
+        """
   Reverse(self: SortedSet[T]) -> IEnumerable[T]
 
   
@@ -3490,9 +3806,10 @@ class SortedSet(object,ISet[T],ICollection[T],IEnumerable[T],IEnumerable,ICollec
 
    Returns: An enumerator that iterates over the System.Collections.Generic.SortedSet in reverse order.
   """
-  pass
- def SetEquals(self,other):
-  """
+        pass
+
+    def SetEquals(self, other):
+        """
   SetEquals(self: SortedSet[T],other: IEnumerable[T]) -> bool
 
   
@@ -3511,9 +3828,10 @@ class SortedSet(object,ISet[T],ICollection[T],IEnumerable[T],IEnumerable,ICollec
 
     false.
   """
-  pass
- def SymmetricExceptWith(self,other):
-  """
+        pass
+
+    def SymmetricExceptWith(self, other):
+        """
   SymmetricExceptWith(self: SortedSet[T],other: IEnumerable[T])
 
    Modifies the current System.Collections.Generic.SortedSet object so that it contains only 
@@ -3528,9 +3846,10 @@ class SortedSet(object,ISet[T],ICollection[T],IEnumerable[T],IEnumerable,ICollec
 
    other: The collection to compare to the current System.Collections.Generic.SortedSet object.
   """
-  pass
- def UnionWith(self,other):
-  """
+        pass
+
+    def UnionWith(self, other):
+        """
   UnionWith(self: SortedSet[T],other: IEnumerable[T])
 
    Modifies the current System.Collections.Generic.SortedSet object so that it contains all 
@@ -3543,12 +3862,14 @@ class SortedSet(object,ISet[T],ICollection[T],IEnumerable[T],IEnumerable,ICollec
 
    other: The collection to compare to the current System.Collections.Generic.SortedSet object.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: ICollection[T],item: T) -> bool
 
   
@@ -3561,19 +3882,23 @@ class SortedSet(object,ISet[T],ICollection[T],IEnumerable[T],IEnumerable,ICollec
 
    Returns: true if item is found in the System.Collections.Generic.ICollection; otherwise,false.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,comparer: IComparer[T])
@@ -3584,14 +3909,17 @@ class SortedSet(object,ISet[T],ICollection[T],IEnumerable[T],IEnumerable,ICollec
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Comparer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Collections.Generic.IEqualityComparer object that is used to determine equality for the values in the System.Collections.Generic.SortedSet.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Comparer = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the System.Collections.Generic.IEqualityComparer object that is used to determine equality for the values in the System.Collections.Generic.SortedSet.
 
 
 
@@ -3601,8 +3929,8 @@ Get: Comparer(self: SortedSet[T]) -> IComparer[T]
 
 """
 
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of elements in the System.Collections.Generic.SortedSet.
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of elements in the System.Collections.Generic.SortedSet.
 
 
 
@@ -3612,8 +3940,8 @@ Get: Count(self: SortedSet[T]) -> int
 
 """
 
- Max=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the maximum value in the System.Collections.Generic.SortedSet,as defined by the comparer.
+    Max = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the maximum value in the System.Collections.Generic.SortedSet,as defined by the comparer.
 
 
 
@@ -3623,8 +3951,8 @@ Get: Max(self: SortedSet[T]) -> T
 
 """
 
- Min=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the minimum value in the System.Collections.Generic.SortedSet,as defined by the comparer.
+    Min = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the minimum value in the System.Collections.Generic.SortedSet,as defined by the comparer.
 
 
 
@@ -3634,27 +3962,28 @@ Get: Min(self: SortedSet[T]) -> T
 
 """
 
+    Enumerator = None
 
- Enumerator=None
 
-
-class Stack(object,IEnumerable[T],IEnumerable,ICollection,IReadOnlyCollection[T]):
- """
+class Stack(object, IEnumerable[T], IEnumerable, ICollection, IReadOnlyCollection[T]):
+    """
  Stack[T]()
 
  Stack[T](capacity: int)
 
  Stack[T](collection: IEnumerable[T])
  """
- def Clear(self):
-  """
+
+    def Clear(self):
+        """
   Clear(self: Stack[T])
 
    Removes all objects from the System.Collections.Generic.Stack.
   """
-  pass
- def Contains(self,item):
-  """
+        pass
+
+    def Contains(self, item):
+        """
   Contains(self: Stack[T],item: T) -> bool
 
   
@@ -3671,12 +4000,14 @@ class Stack(object,IEnumerable[T],IEnumerable,ICollection,IReadOnlyCollection[T]
 
    Returns: true if item is found in the System.Collections.Generic.Stack; otherwise,false.
   """
-  pass
- def CopyTo(self,array,arrayIndex):
-  """ CopyTo(self: Stack[T],array: Array[T],arrayIndex: int) """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def CopyTo(self, array, arrayIndex):
+        """ CopyTo(self: Stack[T],array: Array[T],arrayIndex: int) """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: Stack[T]) -> Enumerator
 
   
@@ -3685,9 +4016,10 @@ class Stack(object,IEnumerable[T],IEnumerable,ICollection,IReadOnlyCollection[T]
 
    Returns: An System.Collections.Generic.Stack for the System.Collections.Generic.Stack.
   """
-  pass
- def Peek(self):
-  """
+        pass
+
+    def Peek(self):
+        """
   Peek(self: Stack[T]) -> T
 
   
@@ -3696,9 +4028,10 @@ class Stack(object,IEnumerable[T],IEnumerable,ICollection,IReadOnlyCollection[T]
 
    Returns: The object at the top of the System.Collections.Generic.Stack.
   """
-  pass
- def Pop(self):
-  """
+        pass
+
+    def Pop(self):
+        """
   Pop(self: Stack[T]) -> T
 
   
@@ -3707,9 +4040,10 @@ class Stack(object,IEnumerable[T],IEnumerable,ICollection,IReadOnlyCollection[T]
 
    Returns: The object removed from the top of the System.Collections.Generic.Stack.
   """
-  pass
- def Push(self,item):
-  """
+        pass
+
+    def Push(self, item):
+        """
   Push(self: Stack[T],item: T)
 
    Inserts an object at the top of the System.Collections.Generic.Stack.
@@ -3720,9 +4054,10 @@ class Stack(object,IEnumerable[T],IEnumerable,ICollection,IReadOnlyCollection[T]
 
     reference types.
   """
-  pass
- def ToArray(self):
-  """
+        pass
+
+    def ToArray(self):
+        """
   ToArray(self: Stack[T]) -> Array[T]
 
   
@@ -3731,45 +4066,54 @@ class Stack(object,IEnumerable[T],IEnumerable,ICollection,IReadOnlyCollection[T]
 
    Returns: A new array containing copies of the elements of the System.Collections.Generic.Stack.
   """
-  pass
- def TrimExcess(self):
-  """
+        pass
+
+    def TrimExcess(self):
+        """
   TrimExcess(self: Stack[T])
 
    Sets the capacity to the actual number of elements in the System.Collections.Generic.Stack,if 
 
     that number is less than 90 percent of current capacity.
   """
-  pass
- def __contains__(self,*args):
-  """ __contains__[T](enumerable: IEnumerable[T],value: T) -> bool """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[T](enumerable: IEnumerable[T],value: T) -> bool """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,capacity: int)
 
   __new__(cls: type,collection: IEnumerable[T])
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of elements contained in the System.Collections.Generic.Stack.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of elements contained in the System.Collections.Generic.Stack.
 
 
 
@@ -3779,7 +4123,4 @@ Get: Count(self: Stack[T]) -> int
 
 """
 
-
- Enumerator=None
-
-
+    Enumerator = None

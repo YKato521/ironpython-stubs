@@ -1,4 +1,3 @@
 class dotProfile_t(object):
- # no doc
- aProfileString=None
-
+    # no doc
+    aProfileString = None

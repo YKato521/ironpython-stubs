@@ -1,7 +1,8 @@
-class ViewSheet(View,IDisposable):
- """ Class for ViewSheet """
- def ConvertToRealSheet(self,titleBlockTypeId):
-  """
+class ViewSheet(View, IDisposable):
+    """ Class for ViewSheet """
+
+    def ConvertToRealSheet(self, titleBlockTypeId):
+        """
   ConvertToRealSheet(self: ViewSheet,titleBlockTypeId: ElementId)
 
    Converts a placeholder sheet to a real one with an optional titleblock.
@@ -12,10 +13,11 @@ class ViewSheet(View,IDisposable):
 
     added.
   """
-  pass
- @staticmethod
- def Create(document,titleBlockTypeId):
-  """
+        pass
+
+    @staticmethod
+    def Create(document, titleBlockTypeId):
+        """
   Create(document: Document,titleBlockTypeId: ElementId) -> ViewSheet
 
   
@@ -36,10 +38,11 @@ class ViewSheet(View,IDisposable):
 
    Returns: The new ViewSheet.
   """
-  pass
- @staticmethod
- def CreatePlaceholder(aDoc):
-  """
+        pass
+
+    @staticmethod
+    def CreatePlaceholder(aDoc):
+        """
   CreatePlaceholder(aDoc: Document) -> ViewSheet
 
   
@@ -52,9 +55,10 @@ class ViewSheet(View,IDisposable):
 
    Returns: The placeholder sheet.
   """
-  pass
- def DeleteViewport(self,viewport):
-  """
+        pass
+
+    def DeleteViewport(self, viewport):
+        """
   DeleteViewport(self: ViewSheet,viewport: Viewport)
 
    Removes a viewport from the sheet by deleting it from the document.
@@ -63,12 +67,14 @@ class ViewSheet(View,IDisposable):
 
    viewport: The viewport that will be deleted and removed from the sheet.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def GetAdditionalRevisionIds(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def GetAdditionalRevisionIds(self):
+        """
   GetAdditionalRevisionIds(self: ViewSheet) -> ICollection[ElementId]
 
   
@@ -81,9 +87,10 @@ class ViewSheet(View,IDisposable):
 
    Returns: The additionally included Revisions for the sheet's revision schedules.
   """
-  pass
- def GetAllPlacedViews(self):
-  """
+        pass
+
+    def GetAllPlacedViews(self):
+        """
   GetAllPlacedViews(self: ViewSheet) -> ISet[ElementId]
 
   
@@ -92,9 +99,10 @@ class ViewSheet(View,IDisposable):
 
    Returns: The ids of the views on this sheet.
   """
-  pass
- def GetAllRevisionIds(self):
-  """
+        pass
+
+    def GetAllRevisionIds(self):
+        """
   GetAllRevisionIds(self: ViewSheet) -> IList[ElementId]
 
   
@@ -109,9 +117,10 @@ class ViewSheet(View,IDisposable):
 
     schedules.
   """
-  pass
- def GetAllViewports(self):
-  """
+        pass
+
+    def GetAllViewports(self):
+        """
   GetAllViewports(self: ViewSheet) -> ICollection[ElementId]
 
   
@@ -120,12 +129,14 @@ class ViewSheet(View,IDisposable):
 
    Returns: The Viewports on this sheet.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: View,view: View) -> BoundingBoxXYZ """
-  pass
- def GetCurrentRevision(self):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: View,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetCurrentRevision(self):
+        """
   GetCurrentRevision(self: ViewSheet) -> ElementId
 
   
@@ -136,9 +147,10 @@ class ViewSheet(View,IDisposable):
 
     InvalidElementId if none are shown.
   """
-  pass
- def GetRevisionCloudNumberOnSheet(self,revisionCloudId):
-  """
+        pass
+
+    def GetRevisionCloudNumberOnSheet(self, revisionCloudId):
+        """
   GetRevisionCloudNumberOnSheet(self: ViewSheet,revisionCloudId: ElementId) -> str
 
   
@@ -153,9 +165,10 @@ class ViewSheet(View,IDisposable):
 
     no Revision Number assigned on this sheet.
   """
-  pass
- def GetRevisionNumberOnSheet(self,revisionId):
-  """
+        pass
+
+    def GetRevisionNumberOnSheet(self, revisionId):
+        """
   GetRevisionNumberOnSheet(self: ViewSheet,revisionId: ElementId) -> str
 
   
@@ -174,27 +187,36 @@ class ViewSheet(View,IDisposable):
 
     Revision does not appear on this sheet.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def SetAdditionalRevisionIds(self,projectRevisionIds):
-  """ SetAdditionalRevisionIds(self: ViewSheet,projectRevisionIds: ICollection[ElementId]) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- IsPlaceholder=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies whether or not the view sheet represents a placeholder sheet.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def SetAdditionalRevisionIds(self, projectRevisionIds):
+        """ SetAdditionalRevisionIds(self: ViewSheet,projectRevisionIds: ICollection[ElementId]) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    IsPlaceholder = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies whether or not the view sheet represents a placeholder sheet.
 
 
 
@@ -204,8 +226,10 @@ Get: IsPlaceholder(self: ViewSheet) -> bool
 
 """
 
- SheetNumber=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The sheet number of the document.
+    SheetNumber = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The sheet number of the document.
 
 
 
@@ -216,5 +240,3 @@ Get: SheetNumber(self: ViewSheet) -> str
 Set: SheetNumber(self: ViewSheet)=value
 
 """
-
-

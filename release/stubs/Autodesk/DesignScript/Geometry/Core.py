@@ -8,8 +8,10 @@
 # no functions
 # classes
 
+
 class EntityTags(object):
     """ EntityTags(tags: Dictionary[str, object], parent: DesignScriptEntity) """
+
     def AddTag(self, tag, data):
         """ AddTag(self: EntityTags, tag: str, data: object) """
         pass
@@ -18,16 +20,18 @@ class EntityTags(object):
         """ LookupTag(self: EntityTags, name: str) -> object """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, tags, parent):
         """ __new__(cls: type, tags: Dictionary[str, object], parent: DesignScriptEntity) """
         pass
 
-    Parent = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Parent(self: EntityTags) -> DesignScriptEntity
-
-Set: Parent(self: EntityTags) = value
+    Parent = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Parent(self: EntityTags) -> DesignScriptEntity
+
+
+
+Set: Parent(self: EntityTags) = value
+
 """
-
-
-

@@ -1,8 +1,9 @@
 class ExternalResourceServiceUtils(object):
- """ Contains utilities related to external resource service. """
- @staticmethod
- def GetServersByType(type):
-  """
+    """ Contains utilities related to external resource service. """
+
+    @staticmethod
+    def GetServersByType(type):
+        """
   GetServersByType(type: ExternalResourceType) -> IList[IExternalResourceServer]
 
   
@@ -19,8 +20,8 @@ class ExternalResourceServiceUtils(object):
 
    Returns: A list of matched external resource servers
   """
-  pass
- __all__=[
-  'GetServersByType',
- ]
+        pass
 
+    __all__ = [
+        "GetServersByType",
+    ]

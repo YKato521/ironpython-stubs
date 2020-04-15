@@ -1,7 +1,8 @@
 class DataGridBoundColumn(DataGridColumn):
- """ Serves as the base class for columns that can bind to a property in the data source of a System.Windows.Controls.DataGrid. """
- def OnBindingChanged(self,*args):
-  """
+    """ Serves as the base class for columns that can bind to a property in the data source of a System.Windows.Controls.DataGrid. """
+
+    def OnBindingChanged(self, *args):
+        """
   OnBindingChanged(self: DataGridBoundColumn,oldBinding: BindingBase,newBinding: BindingBase)
 
    Notifies the System.Windows.Controls.DataGrid when the value of the 
@@ -16,9 +17,10 @@ class DataGridBoundColumn(DataGridColumn):
 
    newBinding: The binding that the column has been changed to.
   """
-  pass
- Binding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the binding that associates the column with a property in the data source.
+        pass
+
+    Binding = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the binding that associates the column with a property in the data source.
 
 
 
@@ -30,8 +32,10 @@ Set: Binding(self: DataGridBoundColumn)=value
 
 """
 
- ClipboardContentBinding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the binding object to use when getting or setting cell content for the clipboard.
+    ClipboardContentBinding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the binding object to use when getting or setting cell content for the clipboard.
 
 
 
@@ -43,15 +47,19 @@ Set: ClipboardContentBinding(self: DataGridBoundColumn)=value
 
 """
 
- DataGridOwner=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Controls.DataGrid control that contains this column.
+    DataGridOwner = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Windows.Controls.DataGrid control that contains this column.
 
 
 
 """
 
- EditingElementStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the style that is used when rendering the element that the column displays for a cell in editing mode.
+    EditingElementStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the style that is used when rendering the element that the column displays for a cell in editing mode.
 
 
 
@@ -63,8 +71,10 @@ Set: EditingElementStyle(self: DataGridBoundColumn)=value
 
 """
 
- ElementStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the style that is used when rendering the element that the column displays for a cell that is not in editing mode.
+    ElementStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the style that is used when rendering the element that the column displays for a cell that is not in editing mode.
 
 
 
@@ -76,7 +86,5 @@ Set: ElementStyle(self: DataGridBoundColumn)=value
 
 """
 
-
- EditingElementStyleProperty=None
- ElementStyleProperty=None
-
+    EditingElementStyleProperty = None
+    ElementStyleProperty = None

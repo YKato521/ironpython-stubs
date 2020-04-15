@@ -1,5 +1,10 @@
-class ExportLineweightTable(object,IEnumerable[KeyValuePair[ExportLineweightKey,ExportLineweightInfo]],IEnumerable,IDisposable):
- """
+class ExportLineweightTable(
+    object,
+    IEnumerable[KeyValuePair[ExportLineweightKey, ExportLineweightInfo]],
+    IEnumerable,
+    IDisposable,
+):
+    """
  A table supporting a mapping of line weights in Revit to line weight names that will be set
 
     in the target export format.
@@ -8,8 +13,9 @@ class ExportLineweightTable(object,IEnumerable[KeyValuePair[ExportLineweightKey,
 
  ExportLineweightTable()
  """
- def Add(self,exportLineweightKey,exportLineweightInfo):
-  """
+
+    def Add(self, exportLineweightKey, exportLineweightInfo):
+        """
   Add(self: ExportLineweightTable,exportLineweightKey: ExportLineweightKey,exportLineweightInfo: ExportLineweightInfo)
 
    Inserts a (key,info) pair into Export line weight table.
@@ -20,16 +26,18 @@ class ExportLineweightTable(object,IEnumerable[KeyValuePair[ExportLineweightKey,
 
    exportLineweightInfo: The export line weight info to be added.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: ExportLineweightTable)
 
    Removes all contents stored in Export line weight table.
   """
-  pass
- def ContainsKey(self,exportLineweightKey):
-  """
+        pass
+
+    def ContainsKey(self, exportLineweightKey):
+        """
   ContainsKey(self: ExportLineweightTable,exportLineweightKey: ExportLineweightKey) -> bool
 
   
@@ -42,12 +50,14 @@ class ExportLineweightTable(object,IEnumerable[KeyValuePair[ExportLineweightKey,
 
    Returns: True if the line weight exists in the table.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: ExportLineweightTable) """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: ExportLineweightTable) """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: ExportLineweightTable) -> IEnumerator[KeyValuePair[ExportLineweightKey,ExportLineweightInfo]]
 
   
@@ -56,9 +66,10 @@ class ExportLineweightTable(object,IEnumerable[KeyValuePair[ExportLineweightKey,
 
    Returns: An IEnumerator object that can be used to iterate through the collection.
   """
-  pass
- def GetExportLineweightInfo(self,exportLineweightKey):
-  """
+        pass
+
+    def GetExportLineweightInfo(self, exportLineweightKey):
+        """
   GetExportLineweightInfo(self: ExportLineweightTable,exportLineweightKey: ExportLineweightKey) -> ExportLineweightInfo
 
   
@@ -75,9 +86,10 @@ class ExportLineweightTable(object,IEnumerable[KeyValuePair[ExportLineweightKey,
 
    Returns: Returns the line weight info for this key.
   """
-  pass
- def GetKeys(self):
-  """
+        pass
+
+    def GetKeys(self):
+        """
   GetKeys(self: ExportLineweightTable) -> IList[ExportLineweightKey]
 
   
@@ -86,9 +98,10 @@ class ExportLineweightTable(object,IEnumerable[KeyValuePair[ExportLineweightKey,
 
    Returns: The keys.
   """
-  pass
- def GetLineweightTableIterator(self):
-  """
+        pass
+
+    def GetLineweightTableIterator(self):
+        """
   GetLineweightTableIterator(self: ExportLineweightTable) -> ExportLineweightTableIterator
 
   
@@ -99,9 +112,10 @@ class ExportLineweightTable(object,IEnumerable[KeyValuePair[ExportLineweightKey,
 
     key-value pairs in the collection.
   """
-  pass
- def GetValues(self):
-  """
+        pass
+
+    def GetValues(self):
+        """
   GetValues(self: ExportLineweightTable) -> IList[ExportLineweightInfo]
 
   
@@ -110,12 +124,14 @@ class ExportLineweightTable(object,IEnumerable[KeyValuePair[ExportLineweightKey,
 
    Returns: The info.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: ExportLineweightTable,disposing: bool) """
-  pass
- def Remove(self,exportLineweightKey):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: ExportLineweightTable,disposing: bool) """
+        pass
+
+    def Remove(self, exportLineweightKey):
+        """
   Remove(self: ExportLineweightTable,exportLineweightKey: ExportLineweightKey)
 
    Removes the pair (key,info) corresponding to the given ExportLineweightKey.
@@ -124,36 +140,46 @@ class ExportLineweightTable(object,IEnumerable[KeyValuePair[ExportLineweightKey,
 
    exportLineweightKey: The export line weight key
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__[KeyValuePair[ExportLineweightKey,ExportLineweightInfo]](enumerable: IEnumerable[KeyValuePair[ExportLineweightKey,ExportLineweightInfo]],value: KeyValuePair[ExportLineweightKey,ExportLineweightInfo]) -> bool """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Count of the items contained in the collection.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[KeyValuePair[ExportLineweightKey,ExportLineweightInfo]](enumerable: IEnumerable[KeyValuePair[ExportLineweightKey,ExportLineweightInfo]],value: KeyValuePair[ExportLineweightKey,ExportLineweightInfo]) -> bool """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Count of the items contained in the collection.
 
 
 
@@ -163,8 +189,10 @@ Get: Count(self: ExportLineweightTable) -> int
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -173,5 +201,3 @@ Get: IsValidObject(self: ExportLineweightTable) -> bool
 
 
 """
-
-

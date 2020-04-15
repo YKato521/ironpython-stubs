@@ -1,13 +1,14 @@
-class FontDialog(CommonDialog,IComponent,IDisposable):
- """
+class FontDialog(CommonDialog, IComponent, IDisposable):
+    """
  Prompts the user to choose a font from among those installed on the local computer.
 
  
 
  FontDialog()
  """
- def Dispose(self):
-  """
+
+    def Dispose(self):
+        """
   Dispose(self: Component,disposing: bool)
 
    Releases the unmanaged resources used by the System.ComponentModel.Component and optionally 
@@ -20,9 +21,10 @@ class FontDialog(CommonDialog,IComponent,IDisposable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -41,9 +43,10 @@ class FontDialog(CommonDialog,IComponent,IDisposable):
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def HookProc(self,*args):
-  """
+        pass
+
+    def HookProc(self, *args):
+        """
   HookProc(self: FontDialog,hWnd: IntPtr,msg: int,wparam: IntPtr,lparam: IntPtr) -> IntPtr
 
   
@@ -68,9 +71,10 @@ class FontDialog(CommonDialog,IComponent,IDisposable):
 
     default dialog box procedure ignores the message.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -101,9 +105,10 @@ class FontDialog(CommonDialog,IComponent,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def OnApply(self,*args):
-  """
+        pass
+
+    def OnApply(self, *args):
+        """
   OnApply(self: FontDialog,e: EventArgs)
 
    Raises the System.Windows.Forms.FontDialog.Apply event.
@@ -112,9 +117,10 @@ class FontDialog(CommonDialog,IComponent,IDisposable):
 
    e: An System.EventArgs that contains the data.
   """
-  pass
- def OnHelpRequest(self,*args):
-  """
+        pass
+
+    def OnHelpRequest(self, *args):
+        """
   OnHelpRequest(self: CommonDialog,e: EventArgs)
 
    Raises the System.Windows.Forms.CommonDialog.HelpRequest event.
@@ -123,9 +129,10 @@ class FontDialog(CommonDialog,IComponent,IDisposable):
 
    e: An System.Windows.Forms.HelpEventArgs that provides the event data.
   """
-  pass
- def OwnerWndProc(self,*args):
-  """
+        pass
+
+    def OwnerWndProc(self, *args):
+        """
   OwnerWndProc(self: CommonDialog,hWnd: IntPtr,msg: int,wparam: IntPtr,lparam: IntPtr) -> IntPtr
 
   
@@ -148,16 +155,18 @@ class FontDialog(CommonDialog,IComponent,IDisposable):
 
    Returns: The result of the message processing,which is dependent on the message sent.
   """
-  pass
- def Reset(self):
-  """
+        pass
+
+    def Reset(self):
+        """
   Reset(self: FontDialog)
 
    Resets all dialog box options to their default values.
   """
-  pass
- def RunDialog(self,*args):
-  """
+        pass
+
+    def RunDialog(self, *args):
+        """
   RunDialog(self: FontDialog,hWndOwner: IntPtr) -> bool
 
   
@@ -170,9 +179,10 @@ class FontDialog(CommonDialog,IComponent,IDisposable):
 
    Returns: true if the dialog box was successfully run; otherwise,false.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: FontDialog) -> str
 
   
@@ -181,30 +191,37 @@ class FontDialog(CommonDialog,IComponent,IDisposable):
 
    Returns: A string that includes the name of the currently selected font.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- AllowScriptChange=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the user can change the character set specified in the Script combo box to display a character set other than the one currently displayed.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AllowScriptChange = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the user can change the character set specified in the Script combo box to display a character set other than the one currently displayed.
 
 
 
@@ -216,8 +233,10 @@ Set: AllowScriptChange(self: FontDialog)=value
 
 """
 
- AllowSimulations=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the dialog box allows graphics device interface (GDI) font simulations.
+    AllowSimulations = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the dialog box allows graphics device interface (GDI) font simulations.
 
 
 
@@ -229,8 +248,10 @@ Set: AllowSimulations(self: FontDialog)=value
 
 """
 
- AllowVectorFonts=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the dialog box allows vector font selections.
+    AllowVectorFonts = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the dialog box allows vector font selections.
 
 
 
@@ -242,8 +263,10 @@ Set: AllowVectorFonts(self: FontDialog)=value
 
 """
 
- AllowVerticalFonts=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the dialog box displays both vertical and horizontal fonts or only horizontal fonts.
+    AllowVerticalFonts = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the dialog box displays both vertical and horizontal fonts or only horizontal fonts.
 
 
 
@@ -255,15 +278,17 @@ Set: AllowVerticalFonts(self: FontDialog)=value
 
 """
 
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- Color=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the selected font color.
+    Color = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the selected font color.
 
 
 
@@ -275,22 +300,26 @@ Set: Color(self: FontDialog)=value
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- FixedPitchOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the dialog box allows only the selection of fixed-pitch fonts.
+    FixedPitchOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the dialog box allows only the selection of fixed-pitch fonts.
 
 
 
@@ -302,8 +331,8 @@ Set: FixedPitchOnly(self: FontDialog)=value
 
 """
 
- Font=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the selected font.
+    Font = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the selected font.
 
 
 
@@ -315,8 +344,10 @@ Set: Font(self: FontDialog)=value
 
 """
 
- FontMustExist=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the dialog box specifies an error condition if the user attempts to select a font or style that does not exist.
+    FontMustExist = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the dialog box specifies an error condition if the user attempts to select a font or style that does not exist.
 
 
 
@@ -328,8 +359,8 @@ Set: FontMustExist(self: FontDialog)=value
 
 """
 
- MaxSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the maximum point size a user can select.
+    MaxSize = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the maximum point size a user can select.
 
 
 
@@ -341,8 +372,8 @@ Set: MaxSize(self: FontDialog)=value
 
 """
 
- MinSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the minimum point size a user can select.
+    MinSize = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the minimum point size a user can select.
 
 
 
@@ -354,15 +385,17 @@ Set: MinSize(self: FontDialog)=value
 
 """
 
- Options=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets values to initialize the System.Windows.Forms.FontDialog.
+    Options = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets values to initialize the System.Windows.Forms.FontDialog.
 
 
 
 """
 
- ScriptsOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the dialog box allows selection of fonts for all non-OEM and Symbol character sets,as well as the ANSI character set.
+    ScriptsOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the dialog box allows selection of fonts for all non-OEM and Symbol character sets,as well as the ANSI character set.
 
 
 
@@ -374,8 +407,8 @@ Set: ScriptsOnly(self: FontDialog)=value
 
 """
 
- ShowApply=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the dialog box contains an Apply button.
+    ShowApply = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the dialog box contains an Apply button.
 
 
 
@@ -387,8 +420,8 @@ Set: ShowApply(self: FontDialog)=value
 
 """
 
- ShowColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the dialog box displays the color choice.
+    ShowColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the dialog box displays the color choice.
 
 
 
@@ -400,8 +433,10 @@ Set: ShowColor(self: FontDialog)=value
 
 """
 
- ShowEffects=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the dialog box contains controls that allow the user to specify strikethrough,underline,and text color options.
+    ShowEffects = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the dialog box contains controls that allow the user to specify strikethrough,underline,and text color options.
 
 
 
@@ -413,8 +448,8 @@ Set: ShowEffects(self: FontDialog)=value
 
 """
 
- ShowHelp=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the dialog box displays a Help button.
+    ShowHelp = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the dialog box displays a Help button.
 
 
 
@@ -426,7 +461,5 @@ Set: ShowHelp(self: FontDialog)=value
 
 """
 
-
- Apply=None
- EventApply=None
-
+    Apply = None
+    EventApply = None

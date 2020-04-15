@@ -1,8 +1,9 @@
-class PropertySetElement(Element,IDisposable):
- """ An element that groups together a set of related parameters. """
- @staticmethod
- def Create(document,*__args):
-  """
+class PropertySetElement(Element, IDisposable):
+    """ An element that groups together a set of related parameters. """
+
+    @staticmethod
+    def Create(document, *__args):
+        """
   Create(document: Document,structuralAsset: StructuralAsset) -> PropertySetElement
 
   
@@ -39,12 +40,14 @@ class PropertySetElement(Element,IDisposable):
 
    Returns: The new PropertySetElement.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def Duplicate(self,document,name):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def Duplicate(self, document, name):
+        """
   Duplicate(self: PropertySetElement,document: Document,name: str) -> PropertySetElement
 
   
@@ -59,54 +62,64 @@ class PropertySetElement(Element,IDisposable):
 
    Returns: The new PropertySetElement.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetStructuralAsset(self):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetStructuralAsset(self):
+        """
   GetStructuralAsset(self: PropertySetElement) -> StructuralAsset
 
   
 
    Gets a copy of the StructuralAsset.
   """
-  pass
- def GetThermalAsset(self):
-  """
+        pass
+
+    def GetThermalAsset(self):
+        """
   GetThermalAsset(self: PropertySetElement) -> ThermalAsset
 
   
 
    Gets a copy of the ThermalAsset.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetStructuralAsset(self,structuralAsset):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetStructuralAsset(self, structuralAsset):
+        """
   SetStructuralAsset(self: PropertySetElement,structuralAsset: StructuralAsset)
 
    Sets a copy of the given StucturalAsset to be used in the PropertySetElement.
   """
-  pass
- def SetThermalAsset(self,thermalAsset):
-  """
+        pass
+
+    def SetThermalAsset(self, thermalAsset):
+        """
   SetThermalAsset(self: PropertySetElement,thermalAsset: ThermalAsset)
 
    Sets a copy of the given ThermalAsset to be used in the PropertySetElement.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

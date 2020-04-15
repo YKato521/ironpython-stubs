@@ -1,8 +1,11 @@
 class SolidSolidCutUtils(object):
- """ Exposes utilities which can cause one solid to cut another. """
- @staticmethod
- def AddCutBetweenSolids(document,solidToBeCut,cuttingSolid,splitFacesOfCuttingSolid=None):
-  """
+    """ Exposes utilities which can cause one solid to cut another. """
+
+    @staticmethod
+    def AddCutBetweenSolids(
+        document, solidToBeCut, cuttingSolid, splitFacesOfCuttingSolid=None
+    ):
+        """
   AddCutBetweenSolids(document: Document,solidToBeCut: Element,cuttingSolid: Element)
 
    Adds a solid-solid cut for the two elements.
@@ -35,10 +38,11 @@ class SolidSolidCutUtils(object):
 
     false otherwise.
   """
-  pass
- @staticmethod
- def CanElementCutElement(cuttingElement,cutElement,reason):
-  """
+        pass
+
+    @staticmethod
+    def CanElementCutElement(cuttingElement, cutElement, reason):
+        """
   CanElementCutElement(cuttingElement: Element,cutElement: Element) -> (bool,CutFailureReason)
 
   
@@ -55,10 +59,11 @@ class SolidSolidCutUtils(object):
 
     otherwise.
   """
-  pass
- @staticmethod
- def CutExistsBetweenElements(first,second,firstCutsSecond):
-  """
+        pass
+
+    @staticmethod
+    def CutExistsBetweenElements(first, second, firstCutsSecond):
+        """
   CutExistsBetweenElements(first: Element,second: Element) -> (bool,bool)
 
   
@@ -73,10 +78,11 @@ class SolidSolidCutUtils(object):
 
    Returns: True if there is a solid-solid cut between the input elements,false otherwise.
   """
-  pass
- @staticmethod
- def GetCuttingSolids(element):
-  """
+        pass
+
+    @staticmethod
+    def GetCuttingSolids(element):
+        """
   GetCuttingSolids(element: Element) -> ICollection[ElementId]
 
   
@@ -89,10 +95,11 @@ class SolidSolidCutUtils(object):
 
    Returns: The ids of the solids which cut the input element.
   """
-  pass
- @staticmethod
- def GetSolidsBeingCut(element):
-  """
+        pass
+
+    @staticmethod
+    def GetSolidsBeingCut(element):
+        """
   GetSolidsBeingCut(element: Element) -> ICollection[ElementId]
 
   
@@ -105,10 +112,11 @@ class SolidSolidCutUtils(object):
 
    Returns: The ids of the solids which are cut by the input element.
   """
-  pass
- @staticmethod
- def IsAllowedForSolidCut(element):
-  """
+        pass
+
+    @staticmethod
+    def IsAllowedForSolidCut(element):
+        """
   IsAllowedForSolidCut(element: Element) -> bool
 
   
@@ -123,10 +131,11 @@ class SolidSolidCutUtils(object):
 
     otherwise.
   """
-  pass
- @staticmethod
- def IsElementFromAppropriateContext(element):
-  """
+        pass
+
+    @staticmethod
+    def IsElementFromAppropriateContext(element):
+        """
   IsElementFromAppropriateContext(element: Element) -> bool
 
   
@@ -141,10 +150,11 @@ class SolidSolidCutUtils(object):
 
     otherwise.
   """
-  pass
- @staticmethod
- def RemoveCutBetweenSolids(document,first,second):
-  """
+        pass
+
+    @staticmethod
+    def RemoveCutBetweenSolids(document, first, second):
+        """
   RemoveCutBetweenSolids(document: Document,first: Element,second: Element)
 
    Removes the solid-solid cut between the two elements if it exists.
@@ -157,10 +167,11 @@ class SolidSolidCutUtils(object):
 
    second: The solid being cut or the cutting solid.
   """
-  pass
- @staticmethod
- def SplitFacesOfCuttingSolid(first,second,split):
-  """
+        pass
+
+    @staticmethod
+    def SplitFacesOfCuttingSolid(first, second, split):
+        """
   SplitFacesOfCuttingSolid(first: Element,second: Element,split: bool)
 
    Causes the faces of the cutting element where it intersects the element it is 
@@ -177,16 +188,16 @@ class SolidSolidCutUtils(object):
 
    split: True to split the faces of intersection,false to unsplit them.
   """
-  pass
- __all__=[
-  'AddCutBetweenSolids',
-  'CanElementCutElement',
-  'CutExistsBetweenElements',
-  'GetCuttingSolids',
-  'GetSolidsBeingCut',
-  'IsAllowedForSolidCut',
-  'IsElementFromAppropriateContext',
-  'RemoveCutBetweenSolids',
-  'SplitFacesOfCuttingSolid',
- ]
+        pass
 
+    __all__ = [
+        "AddCutBetweenSolids",
+        "CanElementCutElement",
+        "CutExistsBetweenElements",
+        "GetCuttingSolids",
+        "GetSolidsBeingCut",
+        "IsAllowedForSolidCut",
+        "IsElementFromAppropriateContext",
+        "RemoveCutBetweenSolids",
+        "SplitFacesOfCuttingSolid",
+    ]

@@ -1,13 +1,37 @@
-class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlaceObject,IOleInPlaceActiveObject,IOleWindow,IViewObject,IViewObject2,IPersist,IPersistStreamInit,IPersistPropertyBag,IPersistStorage,IQuickActivate,ISupportOleDropSource,IDropTarget,ISynchronizeInvoke,IWin32Window,IArrangedElement,IBindableComponent,ISupportToolStripPanel):
- """
+class ToolStripDropDown(
+    ToolStrip,
+    IComponent,
+    IDisposable,
+    IOleControl,
+    IOleObject,
+    IOleInPlaceObject,
+    IOleInPlaceActiveObject,
+    IOleWindow,
+    IViewObject,
+    IViewObject2,
+    IPersist,
+    IPersistStreamInit,
+    IPersistPropertyBag,
+    IPersistStorage,
+    IQuickActivate,
+    ISupportOleDropSource,
+    IDropTarget,
+    ISynchronizeInvoke,
+    IWin32Window,
+    IArrangedElement,
+    IBindableComponent,
+    ISupportToolStripPanel,
+):
+    """
  Represents a control that allows the user to select a single item from a list that is displayed when the user clicks a System.Windows.Forms.ToolStripDropDownButton. Although System.Windows.Forms.ToolStripDropDownMenu and System.Windows.Forms.ToolStripDropDown replace and add functionality to the System.Windows.Forms.Menu control of previous versions,System.Windows.Forms.Menu is retained for both backward compatibility and future use if you choose.
 
  
 
  ToolStripDropDown()
  """
- def AccessibilityNotifyClients(self,*args):
-  """
+
+    def AccessibilityNotifyClients(self, *args):
+        """
   AccessibilityNotifyClients(self: Control,accEvent: AccessibleEvents,objectID: int,childID: int)
 
    Notifies the accessibility client applications of the specified 
@@ -38,9 +62,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    childID: The child System.Windows.Forms.Control to notify of the accessible event.
   """
-  pass
- def AdjustFormScrollbars(self,*args):
-  """
+        pass
+
+    def AdjustFormScrollbars(self, *args):
+        """
   AdjustFormScrollbars(self: ScrollableControl,displayScrollbars: bool)
 
    Adjusts the scroll bars on the container based on the current control positions and the control 
@@ -53,9 +78,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    displayScrollbars: true to show the scroll bars; otherwise,false.
   """
-  pass
- def Close(self,reason=None):
-  """
+        pass
+
+    def Close(self, reason=None):
+        """
   Close(self: ToolStripDropDown,reason: ToolStripDropDownCloseReason)
 
    Closes the System.Windows.Forms.ToolStripDropDown control for the specified reason.
@@ -68,9 +94,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    Closes the System.Windows.Forms.ToolStripDropDown control.
   """
-  pass
- def CreateAccessibilityInstance(self,*args):
-  """
+        pass
+
+    def CreateAccessibilityInstance(self, *args):
+        """
   CreateAccessibilityInstance(self: ToolStripDropDown) -> AccessibleObject
 
   
@@ -79,12 +106,14 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    Returns: A new System.Windows.Forms.AccessibleObject for the control.
   """
-  pass
- def CreateControlsInstance(self,*args):
-  """ CreateControlsInstance(self: ToolStrip) -> ControlCollection """
-  pass
- def CreateDefaultItem(self,*args):
-  """
+        pass
+
+    def CreateControlsInstance(self, *args):
+        """ CreateControlsInstance(self: ToolStrip) -> ControlCollection """
+        pass
+
+    def CreateDefaultItem(self, *args):
+        """
   CreateDefaultItem(self: ToolStrip,text: str,image: Image,onClick: EventHandler) -> ToolStripItem
 
   
@@ -117,12 +146,14 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
     ),or a System.Windows.Forms.ToolStripSeparator if the text parameter is a hyphen (-).
   """
-  pass
- def CreateHandle(self,*args):
-  """ CreateHandle(self: ToolStripDropDown) """
-  pass
- def CreateLayoutSettings(self,*args):
-  """
+        pass
+
+    def CreateHandle(self, *args):
+        """ CreateHandle(self: ToolStripDropDown) """
+        pass
+
+    def CreateLayoutSettings(self, *args):
+        """
   CreateLayoutSettings(self: ToolStripDropDown,style: ToolStripLayoutStyle) -> LayoutSettings
 
   
@@ -147,9 +178,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    Returns: The System.Windows.Forms.LayoutSettings for this System.Windows.Forms.ToolStripDropDown.
   """
-  pass
- def DefWndProc(self,*args):
-  """
+        pass
+
+    def DefWndProc(self, *args):
+        """
   DefWndProc(self: Control,m: Message) -> Message
 
   
@@ -160,16 +192,18 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    m: The Windows System.Windows.Forms.Message to process.
   """
-  pass
- def DestroyHandle(self,*args):
-  """
+        pass
+
+    def DestroyHandle(self, *args):
+        """
   DestroyHandle(self: Control)
 
    Destroys the handle associated with the control.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: ToolStripDropDown,disposing: bool)
 
    Releases the unmanaged resources used by the System.Windows.Forms.ToolStripDropDown and 
@@ -182,9 +216,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def GetAccessibilityObjectById(self,*args):
-  """
+        pass
+
+    def GetAccessibilityObjectById(self, *args):
+        """
   GetAccessibilityObjectById(self: Control,objectId: int) -> AccessibleObject
 
   
@@ -197,9 +232,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    Returns: An System.Windows.Forms.AccessibleObject.
   """
-  pass
- def GetAutoSizeMode(self,*args):
-  """
+        pass
+
+    def GetAutoSizeMode(self, *args):
+        """
   GetAutoSizeMode(self: Control) -> AutoSizeMode
 
   
@@ -212,9 +248,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    Returns: One of the System.Windows.Forms.AutoSizeMode values.
   """
-  pass
- def GetScaledBounds(self,*args):
-  """
+        pass
+
+    def GetScaledBounds(self, *args):
+        """
   GetScaledBounds(self: Control,bounds: Rectangle,factor: SizeF,specified: BoundsSpecified) -> Rectangle
 
   
@@ -235,9 +272,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    Returns: A System.Drawing.Rectangle representing the bounds within which the control is scaled.
   """
-  pass
- def GetScrollState(self,*args):
-  """
+        pass
+
+    def GetScrollState(self, *args):
+        """
   GetScrollState(self: ScrollableControl,bit: int) -> bool
 
   
@@ -250,9 +288,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    Returns: true if the specified flag has been set; otherwise,false.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -271,9 +310,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def GetStyle(self,*args):
-  """
+        pass
+
+    def GetStyle(self, *args):
+        """
   GetStyle(self: Control,flag: ControlStyles) -> bool
 
   
@@ -286,9 +326,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    Returns: true if the specified control style bit is set to true; otherwise,false.
   """
-  pass
- def GetTopLevel(self,*args):
-  """
+        pass
+
+    def GetTopLevel(self, *args):
+        """
   GetTopLevel(self: Control) -> bool
 
   
@@ -297,16 +338,18 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    Returns: true if the control is a top-level control; otherwise,false.
   """
-  pass
- def InitLayout(self,*args):
-  """
+        pass
+
+    def InitLayout(self, *args):
+        """
   InitLayout(self: Control)
 
    Called after the control has been added to another container.
   """
-  pass
- def InvokeGotFocus(self,*args):
-  """
+        pass
+
+    def InvokeGotFocus(self, *args):
+        """
   InvokeGotFocus(self: Control,toInvoke: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.GotFocus event for the specified control.
@@ -317,9 +360,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def InvokeLostFocus(self,*args):
-  """
+        pass
+
+    def InvokeLostFocus(self, *args):
+        """
   InvokeLostFocus(self: Control,toInvoke: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.LostFocus event for the specified control.
@@ -330,9 +374,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def InvokeOnClick(self,*args):
-  """
+        pass
+
+    def InvokeOnClick(self, *args):
+        """
   InvokeOnClick(self: Control,toInvoke: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Click event for the specified control.
@@ -343,9 +388,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def InvokePaint(self,*args):
-  """
+        pass
+
+    def InvokePaint(self, *args):
+        """
   InvokePaint(self: Control,c: Control,e: PaintEventArgs)
 
    Raises the System.Windows.Forms.Control.Paint event for the specified control.
@@ -356,9 +402,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def InvokePaintBackground(self,*args):
-  """
+        pass
+
+    def InvokePaintBackground(self, *args):
+        """
   InvokePaintBackground(self: Control,c: Control,e: PaintEventArgs)
 
    Raises the PaintBackground event for the specified control.
@@ -369,9 +416,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def IsInputChar(self,*args):
-  """
+        pass
+
+    def IsInputChar(self, *args):
+        """
   IsInputChar(self: ToolStrip,charCode: Char) -> bool
 
   
@@ -384,9 +432,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    Returns: true if the character should be sent directly to the item and not preprocessed; otherwise,false.
   """
-  pass
- def IsInputKey(self,*args):
-  """
+        pass
+
+    def IsInputKey(self, *args):
+        """
   IsInputKey(self: ToolStrip,keyData: Keys) -> bool
 
   
@@ -403,9 +452,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    Returns: true if the specified key is a regular input key; otherwise,false.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -436,9 +486,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def NotifyInvalidate(self,*args):
-  """
+        pass
+
+    def NotifyInvalidate(self, *args):
+        """
   NotifyInvalidate(self: Control,invalidatedArea: Rectangle)
 
    Raises the System.Windows.Forms.Control.Invalidated event with a specified region of the control 
@@ -451,9 +502,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    invalidatedArea: A System.Drawing.Rectangle representing the area to invalidate.
   """
-  pass
- def OnAutoSizeChanged(self,*args):
-  """
+        pass
+
+    def OnAutoSizeChanged(self, *args):
+        """
   OnAutoSizeChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.AutoSizeChanged event.
@@ -462,9 +514,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBackColorChanged(self,*args):
-  """
+        pass
+
+    def OnBackColorChanged(self, *args):
+        """
   OnBackColorChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BackColorChanged event.
@@ -473,9 +526,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBackgroundImageChanged(self,*args):
-  """
+        pass
+
+    def OnBackgroundImageChanged(self, *args):
+        """
   OnBackgroundImageChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BackgroundImageChanged event.
@@ -484,9 +538,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBackgroundImageLayoutChanged(self,*args):
-  """
+        pass
+
+    def OnBackgroundImageLayoutChanged(self, *args):
+        """
   OnBackgroundImageLayoutChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BackgroundImageLayoutChanged event.
@@ -495,9 +550,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBeginDrag(self,*args):
-  """
+        pass
+
+    def OnBeginDrag(self, *args):
+        """
   OnBeginDrag(self: ToolStrip,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStrip.BeginDrag event.
@@ -506,9 +562,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBindingContextChanged(self,*args):
-  """
+        pass
+
+    def OnBindingContextChanged(self, *args):
+        """
   OnBindingContextChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BindingContextChanged event.
@@ -517,9 +574,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnCausesValidationChanged(self,*args):
-  """
+        pass
+
+    def OnCausesValidationChanged(self, *args):
+        """
   OnCausesValidationChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.CausesValidationChanged event.
@@ -528,9 +586,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnChangeUICues(self,*args):
-  """
+        pass
+
+    def OnChangeUICues(self, *args):
+        """
   OnChangeUICues(self: Control,e: UICuesEventArgs)
 
    Raises the System.Windows.Forms.Control.ChangeUICues event.
@@ -539,9 +598,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: A System.Windows.Forms.UICuesEventArgs that contains the event data.
   """
-  pass
- def OnClick(self,*args):
-  """
+        pass
+
+    def OnClick(self, *args):
+        """
   OnClick(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Click event.
@@ -550,9 +610,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnClientSizeChanged(self,*args):
-  """
+        pass
+
+    def OnClientSizeChanged(self, *args):
+        """
   OnClientSizeChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ClientSizeChanged event.
@@ -561,9 +622,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnClosed(self,*args):
-  """
+        pass
+
+    def OnClosed(self, *args):
+        """
   OnClosed(self: ToolStripDropDown,e: ToolStripDropDownClosedEventArgs)
 
    Raises the System.Windows.Forms.ToolStripDropDown.Closed event.
@@ -572,9 +634,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: A System.Windows.Forms.ToolStripDropDownClosedEventArgs that contains the event data.
   """
-  pass
- def OnClosing(self,*args):
-  """
+        pass
+
+    def OnClosing(self, *args):
+        """
   OnClosing(self: ToolStripDropDown,e: ToolStripDropDownClosingEventArgs)
 
    Raises the System.Windows.Forms.ToolStripDropDown.Closing event.
@@ -583,9 +646,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: A System.Windows.Forms.ToolStripDropDownClosingEventArgs that contains the event data.
   """
-  pass
- def OnContextMenuChanged(self,*args):
-  """
+        pass
+
+    def OnContextMenuChanged(self, *args):
+        """
   OnContextMenuChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ContextMenuChanged event.
@@ -594,9 +658,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnContextMenuStripChanged(self,*args):
-  """
+        pass
+
+    def OnContextMenuStripChanged(self, *args):
+        """
   OnContextMenuStripChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ContextMenuStripChanged event.
@@ -605,9 +670,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnControlAdded(self,*args):
-  """
+        pass
+
+    def OnControlAdded(self, *args):
+        """
   OnControlAdded(self: Control,e: ControlEventArgs)
 
    Raises the System.Windows.Forms.Control.ControlAdded event.
@@ -616,9 +682,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: A System.Windows.Forms.ControlEventArgs that contains the event data.
   """
-  pass
- def OnControlRemoved(self,*args):
-  """
+        pass
+
+    def OnControlRemoved(self, *args):
+        """
   OnControlRemoved(self: Control,e: ControlEventArgs)
 
    Raises the System.Windows.Forms.Control.ControlRemoved event.
@@ -627,16 +694,18 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: A System.Windows.Forms.ControlEventArgs that contains the event data.
   """
-  pass
- def OnCreateControl(self,*args):
-  """
+        pass
+
+    def OnCreateControl(self, *args):
+        """
   OnCreateControl(self: Control)
 
    Raises the System.Windows.Forms.Control.CreateControl method.
   """
-  pass
- def OnCursorChanged(self,*args):
-  """
+        pass
+
+    def OnCursorChanged(self, *args):
+        """
   OnCursorChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.CursorChanged event.
@@ -645,9 +714,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDockChanged(self,*args):
-  """
+        pass
+
+    def OnDockChanged(self, *args):
+        """
   OnDockChanged(self: ToolStrip,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.DockChanged event.
@@ -656,9 +726,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDoubleClick(self,*args):
-  """
+        pass
+
+    def OnDoubleClick(self, *args):
+        """
   OnDoubleClick(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.DoubleClick event.
@@ -667,15 +738,18 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDpiChangedAfterParent(self,*args):
-  """ OnDpiChangedAfterParent(self: Control,e: EventArgs) """
-  pass
- def OnDpiChangedBeforeParent(self,*args):
-  """ OnDpiChangedBeforeParent(self: Control,e: EventArgs) """
-  pass
- def OnDragDrop(self,*args):
-  """
+        pass
+
+    def OnDpiChangedAfterParent(self, *args):
+        """ OnDpiChangedAfterParent(self: Control,e: EventArgs) """
+        pass
+
+    def OnDpiChangedBeforeParent(self, *args):
+        """ OnDpiChangedBeforeParent(self: Control,e: EventArgs) """
+        pass
+
+    def OnDragDrop(self, *args):
+        """
   OnDragDrop(self: Control,drgevent: DragEventArgs)
 
    Raises the System.Windows.Forms.Control.DragDrop event.
@@ -684,9 +758,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    drgevent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnDragEnter(self,*args):
-  """
+        pass
+
+    def OnDragEnter(self, *args):
+        """
   OnDragEnter(self: Control,drgevent: DragEventArgs)
 
    Raises the System.Windows.Forms.Control.DragEnter event.
@@ -695,9 +770,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    drgevent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnDragLeave(self,*args):
-  """
+        pass
+
+    def OnDragLeave(self, *args):
+        """
   OnDragLeave(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.DragLeave event.
@@ -706,9 +782,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDragOver(self,*args):
-  """
+        pass
+
+    def OnDragOver(self, *args):
+        """
   OnDragOver(self: Control,drgevent: DragEventArgs)
 
    Raises the System.Windows.Forms.Control.DragOver event.
@@ -717,9 +794,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    drgevent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnEnabledChanged(self,*args):
-  """
+        pass
+
+    def OnEnabledChanged(self, *args):
+        """
   OnEnabledChanged(self: ToolStrip,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Enabled event.
@@ -728,9 +806,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnEndDrag(self,*args):
-  """
+        pass
+
+    def OnEndDrag(self, *args):
+        """
   OnEndDrag(self: ToolStrip,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStrip.EndDrag event.
@@ -739,9 +818,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnEnter(self,*args):
-  """
+        pass
+
+    def OnEnter(self, *args):
+        """
   OnEnter(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Enter event.
@@ -750,16 +830,18 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnFontChanged(self,*args):
-  """
+        pass
+
+    def OnFontChanged(self, *args):
+        """
   OnFontChanged(self: ToolStrip,e: EventArgs)
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnForeColorChanged(self,*args):
-  """
+        pass
+
+    def OnForeColorChanged(self, *args):
+        """
   OnForeColorChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ForeColorChanged event.
@@ -768,9 +850,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnGiveFeedback(self,*args):
-  """
+        pass
+
+    def OnGiveFeedback(self, *args):
+        """
   OnGiveFeedback(self: Control,gfbevent: GiveFeedbackEventArgs)
 
    Raises the System.Windows.Forms.Control.GiveFeedback event.
@@ -779,9 +862,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    gfbevent: A System.Windows.Forms.GiveFeedbackEventArgs that contains the event data.
   """
-  pass
- def OnGotFocus(self,*args):
-  """
+        pass
+
+    def OnGotFocus(self, *args):
+        """
   OnGotFocus(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.GotFocus event.
@@ -790,9 +874,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnHandleCreated(self,*args):
-  """
+        pass
+
+    def OnHandleCreated(self, *args):
+        """
   OnHandleCreated(self: ToolStripDropDown,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.HandleCreated event.
@@ -801,9 +886,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnHandleDestroyed(self,*args):
-  """
+        pass
+
+    def OnHandleDestroyed(self, *args):
+        """
   OnHandleDestroyed(self: ToolStrip,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.HandleDestroyed event.
@@ -812,9 +898,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnHelpRequested(self,*args):
-  """
+        pass
+
+    def OnHelpRequested(self, *args):
+        """
   OnHelpRequested(self: Control,hevent: HelpEventArgs)
 
    Raises the System.Windows.Forms.Control.HelpRequested event.
@@ -823,9 +910,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    hevent: A System.Windows.Forms.HelpEventArgs that contains the event data.
   """
-  pass
- def OnImeModeChanged(self,*args):
-  """
+        pass
+
+    def OnImeModeChanged(self, *args):
+        """
   OnImeModeChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ImeModeChanged event.
@@ -834,16 +922,18 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnInvalidated(self,*args):
-  """
+        pass
+
+    def OnInvalidated(self, *args):
+        """
   OnInvalidated(self: ToolStrip,e: InvalidateEventArgs)
 
    e: An System.Windows.Forms.InvalidateEventArgs that contains the event data.
   """
-  pass
- def OnItemAdded(self,*args):
-  """
+        pass
+
+    def OnItemAdded(self, *args):
+        """
   OnItemAdded(self: ToolStrip,e: ToolStripItemEventArgs)
 
    Raises the System.Windows.Forms.ToolStrip.ItemAdded event.
@@ -852,9 +942,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: A System.Windows.Forms.ToolStripItemEventArgs that contains the event data.
   """
-  pass
- def OnItemClicked(self,*args):
-  """
+        pass
+
+    def OnItemClicked(self, *args):
+        """
   OnItemClicked(self: ToolStripDropDown,e: ToolStripItemClickedEventArgs)
 
    Raises the System.Windows.Forms.ToolStrip.ItemClicked event.
@@ -863,9 +954,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: A System.Windows.Forms.ToolStripItemClickedEventArgs that contains the event data.
   """
-  pass
- def OnItemRemoved(self,*args):
-  """
+        pass
+
+    def OnItemRemoved(self, *args):
+        """
   OnItemRemoved(self: ToolStrip,e: ToolStripItemEventArgs)
 
    Raises the System.Windows.Forms.ToolStrip.ItemRemoved event.
@@ -874,9 +966,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: A System.Windows.Forms.ToolStripItemEventArgs that contains the event data.
   """
-  pass
- def OnKeyDown(self,*args):
-  """
+        pass
+
+    def OnKeyDown(self, *args):
+        """
   OnKeyDown(self: Control,e: KeyEventArgs)
 
    Raises the System.Windows.Forms.Control.KeyDown event.
@@ -885,9 +978,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: A System.Windows.Forms.KeyEventArgs that contains the event data.
   """
-  pass
- def OnKeyPress(self,*args):
-  """
+        pass
+
+    def OnKeyPress(self, *args):
+        """
   OnKeyPress(self: Control,e: KeyPressEventArgs)
 
    Raises the System.Windows.Forms.Control.KeyPress event.
@@ -896,9 +990,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: A System.Windows.Forms.KeyPressEventArgs that contains the event data.
   """
-  pass
- def OnKeyUp(self,*args):
-  """
+        pass
+
+    def OnKeyUp(self, *args):
+        """
   OnKeyUp(self: Control,e: KeyEventArgs)
 
    Raises the System.Windows.Forms.Control.KeyUp event.
@@ -907,9 +1002,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: A System.Windows.Forms.KeyEventArgs that contains the event data.
   """
-  pass
- def OnLayout(self,*args):
-  """
+        pass
+
+    def OnLayout(self, *args):
+        """
   OnLayout(self: ToolStripDropDown,e: LayoutEventArgs)
 
    Raises the System.Windows.Forms.Control.Layout event.
@@ -918,9 +1014,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: A System.Windows.Forms.LayoutEventArgs that contains the event data.
   """
-  pass
- def OnLayoutCompleted(self,*args):
-  """
+        pass
+
+    def OnLayoutCompleted(self, *args):
+        """
   OnLayoutCompleted(self: ToolStrip,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStrip.LayoutCompleted event.
@@ -929,9 +1026,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnLayoutStyleChanged(self,*args):
-  """
+        pass
+
+    def OnLayoutStyleChanged(self, *args):
+        """
   OnLayoutStyleChanged(self: ToolStrip,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStrip.LayoutStyleChanged event.
@@ -940,9 +1038,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnLeave(self,*args):
-  """
+        pass
+
+    def OnLeave(self, *args):
+        """
   OnLeave(self: ToolStrip,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Leave event.
@@ -951,9 +1050,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnLocationChanged(self,*args):
-  """
+        pass
+
+    def OnLocationChanged(self, *args):
+        """
   OnLocationChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.LocationChanged event.
@@ -962,9 +1062,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnLostFocus(self,*args):
-  """
+        pass
+
+    def OnLostFocus(self, *args):
+        """
   OnLostFocus(self: ToolStrip,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.LostFocus event.
@@ -973,9 +1074,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMarginChanged(self,*args):
-  """
+        pass
+
+    def OnMarginChanged(self, *args):
+        """
   OnMarginChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.MarginChanged event.
@@ -984,16 +1086,18 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: A System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseCaptureChanged(self,*args):
-  """
+        pass
+
+    def OnMouseCaptureChanged(self, *args):
+        """
   OnMouseCaptureChanged(self: ToolStrip,e: EventArgs)
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseClick(self,*args):
-  """
+        pass
+
+    def OnMouseClick(self, *args):
+        """
   OnMouseClick(self: Control,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseClick event.
@@ -1002,9 +1106,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseDoubleClick(self,*args):
-  """
+        pass
+
+    def OnMouseDoubleClick(self, *args):
+        """
   OnMouseDoubleClick(self: Control,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseDoubleClick event.
@@ -1013,9 +1118,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseDown(self,*args):
-  """
+        pass
+
+    def OnMouseDown(self, *args):
+        """
   OnMouseDown(self: ToolStrip,mea: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseDown event.
@@ -1024,9 +1130,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    mea: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseEnter(self,*args):
-  """
+        pass
+
+    def OnMouseEnter(self, *args):
+        """
   OnMouseEnter(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.MouseEnter event.
@@ -1035,9 +1142,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseHover(self,*args):
-  """
+        pass
+
+    def OnMouseHover(self, *args):
+        """
   OnMouseHover(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.MouseHover event.
@@ -1046,9 +1154,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseLeave(self,*args):
-  """
+        pass
+
+    def OnMouseLeave(self, *args):
+        """
   OnMouseLeave(self: ToolStrip,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.MouseLeave event.
@@ -1057,9 +1166,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseMove(self,*args):
-  """
+        pass
+
+    def OnMouseMove(self, *args):
+        """
   OnMouseMove(self: ToolStrip,mea: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseMove event.
@@ -1068,9 +1178,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    mea: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseUp(self,*args):
-  """
+        pass
+
+    def OnMouseUp(self, *args):
+        """
   OnMouseUp(self: ToolStripDropDown,mea: MouseEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseUp event.
@@ -1079,9 +1190,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    mea: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseWheel(self,*args):
-  """
+        pass
+
+    def OnMouseWheel(self, *args):
+        """
   OnMouseWheel(self: ScrollableControl,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseWheel event.
@@ -1090,9 +1202,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMove(self,*args):
-  """
+        pass
+
+    def OnMove(self, *args):
+        """
   OnMove(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Move event.
@@ -1101,9 +1214,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnNotifyMessage(self,*args):
-  """
+        pass
+
+    def OnNotifyMessage(self, *args):
+        """
   OnNotifyMessage(self: Control,m: Message)
 
    Notifies the control of Windows messages.
@@ -1112,9 +1226,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    m: A System.Windows.Forms.Message that represents the Windows message.
   """
-  pass
- def OnOpened(self,*args):
-  """
+        pass
+
+    def OnOpened(self, *args):
+        """
   OnOpened(self: ToolStripDropDown,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripDropDown.Opened event.
@@ -1123,9 +1238,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnOpening(self,*args):
-  """
+        pass
+
+    def OnOpening(self, *args):
+        """
   OnOpening(self: ToolStripDropDown,e: CancelEventArgs)
 
    Raises the System.Windows.Forms.ToolStripDropDown.Opening event.
@@ -1134,9 +1250,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: A System.ComponentModel.CancelEventArgs that contains the event data.
   """
-  pass
- def OnPaddingChanged(self,*args):
-  """
+        pass
+
+    def OnPaddingChanged(self, *args):
+        """
   OnPaddingChanged(self: ScrollableControl,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.PaddingChanged event.
@@ -1145,9 +1262,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnPaint(self,*args):
-  """
+        pass
+
+    def OnPaint(self, *args):
+        """
   OnPaint(self: ToolStrip,e: PaintEventArgs)
 
    Raises the System.Windows.Forms.Control.Paint event.
@@ -1156,9 +1274,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: A System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def OnPaintBackground(self,*args):
-  """
+        pass
+
+    def OnPaintBackground(self, *args):
+        """
   OnPaintBackground(self: ToolStrip,e: PaintEventArgs)
 
    Raises the System.Windows.Forms.Control.Paint event for the System.Windows.Forms.ToolStrip 
@@ -1171,9 +1290,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: A System.Windows.Forms.PaintEventArgs that contains information about the control to paint.
   """
-  pass
- def OnPaintGrip(self,*args):
-  """
+        pass
+
+    def OnPaintGrip(self, *args):
+        """
   OnPaintGrip(self: ToolStrip,e: PaintEventArgs)
 
    Raises the System.Windows.Forms.ToolStrip.PaintGrip event.
@@ -1182,9 +1302,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: A System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def OnParentBackColorChanged(self,*args):
-  """
+        pass
+
+    def OnParentBackColorChanged(self, *args):
+        """
   OnParentBackColorChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BackColorChanged event when the 
@@ -1197,9 +1318,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentBackgroundImageChanged(self,*args):
-  """
+        pass
+
+    def OnParentBackgroundImageChanged(self, *args):
+        """
   OnParentBackgroundImageChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BackgroundImageChanged event when the 
@@ -1212,9 +1334,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentBindingContextChanged(self,*args):
-  """
+        pass
+
+    def OnParentBindingContextChanged(self, *args):
+        """
   OnParentBindingContextChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BindingContextChanged event when the 
@@ -1227,9 +1350,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentChanged(self,*args):
-  """
+        pass
+
+    def OnParentChanged(self, *args):
+        """
   OnParentChanged(self: ToolStripDropDown,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ParentChanged event.
@@ -1238,9 +1362,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentCursorChanged(self,*args):
-  """
+        pass
+
+    def OnParentCursorChanged(self, *args):
+        """
   OnParentCursorChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.CursorChanged event.
@@ -1249,9 +1374,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentEnabledChanged(self,*args):
-  """
+        pass
+
+    def OnParentEnabledChanged(self, *args):
+        """
   OnParentEnabledChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.EnabledChanged event when the 
@@ -1264,9 +1390,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentFontChanged(self,*args):
-  """
+        pass
+
+    def OnParentFontChanged(self, *args):
+        """
   OnParentFontChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.FontChanged event when the 
@@ -1279,9 +1406,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentForeColorChanged(self,*args):
-  """
+        pass
+
+    def OnParentForeColorChanged(self, *args):
+        """
   OnParentForeColorChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ForeColorChanged event when the 
@@ -1294,9 +1422,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentRightToLeftChanged(self,*args):
-  """
+        pass
+
+    def OnParentRightToLeftChanged(self, *args):
+        """
   OnParentRightToLeftChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.RightToLeftChanged event when the 
@@ -1309,9 +1438,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentVisibleChanged(self,*args):
-  """
+        pass
+
+    def OnParentVisibleChanged(self, *args):
+        """
   OnParentVisibleChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.VisibleChanged event when the 
@@ -1324,9 +1454,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnPreviewKeyDown(self,*args):
-  """
+        pass
+
+    def OnPreviewKeyDown(self, *args):
+        """
   OnPreviewKeyDown(self: Control,e: PreviewKeyDownEventArgs)
 
    Raises the System.Windows.Forms.Control.PreviewKeyDown event.
@@ -1335,9 +1466,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: A System.Windows.Forms.PreviewKeyDownEventArgs that contains the event data.
   """
-  pass
- def OnPrint(self,*args):
-  """
+        pass
+
+    def OnPrint(self, *args):
+        """
   OnPrint(self: Control,e: PaintEventArgs)
 
    Raises the System.Windows.Forms.Control.Paint event.
@@ -1346,9 +1478,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: A System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def OnQueryContinueDrag(self,*args):
-  """
+        pass
+
+    def OnQueryContinueDrag(self, *args):
+        """
   OnQueryContinueDrag(self: Control,qcdevent: QueryContinueDragEventArgs)
 
    Raises the System.Windows.Forms.Control.QueryContinueDrag event.
@@ -1357,9 +1490,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    qcdevent: A System.Windows.Forms.QueryContinueDragEventArgs that contains the event data.
   """
-  pass
- def OnRegionChanged(self,*args):
-  """
+        pass
+
+    def OnRegionChanged(self, *args):
+        """
   OnRegionChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.RegionChanged event.
@@ -1368,9 +1502,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnRendererChanged(self,*args):
-  """
+        pass
+
+    def OnRendererChanged(self, *args):
+        """
   OnRendererChanged(self: ToolStrip,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStrip.RendererChanged event.
@@ -1379,9 +1514,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnResize(self,*args):
-  """
+        pass
+
+    def OnResize(self, *args):
+        """
   OnResize(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Resize event.
@@ -1390,9 +1526,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnRightToLeftChanged(self,*args):
-  """
+        pass
+
+    def OnRightToLeftChanged(self, *args):
+        """
   OnRightToLeftChanged(self: ToolStrip,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.RightToLeftChanged event.
@@ -1401,16 +1538,18 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnScroll(self,*args):
-  """
+        pass
+
+    def OnScroll(self, *args):
+        """
   OnScroll(self: ToolStrip,se: ScrollEventArgs)
 
    se: A System.Windows.Forms.ScrollEventArgs that contains the event data.
   """
-  pass
- def OnSizeChanged(self,*args):
-  """
+        pass
+
+    def OnSizeChanged(self, *args):
+        """
   OnSizeChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.SizeChanged event.
@@ -1419,9 +1558,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnStyleChanged(self,*args):
-  """
+        pass
+
+    def OnStyleChanged(self, *args):
+        """
   OnStyleChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.StyleChanged event.
@@ -1430,9 +1570,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnSystemColorsChanged(self,*args):
-  """
+        pass
+
+    def OnSystemColorsChanged(self, *args):
+        """
   OnSystemColorsChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.SystemColorsChanged event.
@@ -1441,9 +1582,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnTabIndexChanged(self,*args):
-  """
+        pass
+
+    def OnTabIndexChanged(self, *args):
+        """
   OnTabIndexChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.TabIndexChanged event.
@@ -1452,9 +1594,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnTabStopChanged(self,*args):
-  """
+        pass
+
+    def OnTabStopChanged(self, *args):
+        """
   OnTabStopChanged(self: ToolStrip,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.TabStopChanged event.
@@ -1463,9 +1606,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnTextChanged(self,*args):
-  """
+        pass
+
+    def OnTextChanged(self, *args):
+        """
   OnTextChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.TextChanged event.
@@ -1474,9 +1618,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnValidated(self,*args):
-  """
+        pass
+
+    def OnValidated(self, *args):
+        """
   OnValidated(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Validated event.
@@ -1485,9 +1630,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnValidating(self,*args):
-  """
+        pass
+
+    def OnValidating(self, *args):
+        """
   OnValidating(self: Control,e: CancelEventArgs)
 
    Raises the System.Windows.Forms.Control.Validating event.
@@ -1496,9 +1642,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: A System.ComponentModel.CancelEventArgs that contains the event data.
   """
-  pass
- def OnVisibleChanged(self,*args):
-  """
+        pass
+
+    def OnVisibleChanged(self, *args):
+        """
   OnVisibleChanged(self: ToolStripDropDown,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.VisibleChanged event.
@@ -1507,9 +1654,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def ProcessCmdKey(self,*args):
-  """
+        pass
+
+    def ProcessCmdKey(self, *args):
+        """
   ProcessCmdKey(self: ToolStrip,m: Message,keyData: Keys) -> (bool,Message)
 
   
@@ -1528,9 +1676,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    Returns: true if the character was processed by the control; otherwise,false.
   """
-  pass
- def ProcessDialogChar(self,*args):
-  """
+        pass
+
+    def ProcessDialogChar(self, *args):
+        """
   ProcessDialogChar(self: ToolStripDropDown,charCode: Char) -> bool
 
   
@@ -1543,9 +1692,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    Returns: true if the character was processed by the control; otherwise,false.
   """
-  pass
- def ProcessDialogKey(self,*args):
-  """
+        pass
+
+    def ProcessDialogKey(self, *args):
+        """
   ProcessDialogKey(self: ToolStripDropDown,keyData: Keys) -> bool
 
   
@@ -1558,9 +1708,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    Returns: true if the key was processed by the control; otherwise,false.
   """
-  pass
- def ProcessKeyEventArgs(self,*args):
-  """
+        pass
+
+    def ProcessKeyEventArgs(self, *args):
+        """
   ProcessKeyEventArgs(self: Control,m: Message) -> (bool,Message)
 
   
@@ -1577,9 +1728,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    Returns: true if the message was processed by the control; otherwise,false.
   """
-  pass
- def ProcessKeyMessage(self,*args):
-  """
+        pass
+
+    def ProcessKeyMessage(self, *args):
+        """
   ProcessKeyMessage(self: Control,m: Message) -> (bool,Message)
 
   
@@ -1596,9 +1748,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    Returns: true if the message was processed by the control; otherwise,false.
   """
-  pass
- def ProcessKeyPreview(self,*args):
-  """
+        pass
+
+    def ProcessKeyPreview(self, *args):
+        """
   ProcessKeyPreview(self: Control,m: Message) -> (bool,Message)
 
   
@@ -1615,9 +1768,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    Returns: true if the message was processed by the control; otherwise,false.
   """
-  pass
- def ProcessMnemonic(self,*args):
-  """
+        pass
+
+    def ProcessMnemonic(self, *args):
+        """
   ProcessMnemonic(self: ToolStripDropDown,charCode: Char) -> bool
 
   
@@ -1630,9 +1784,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    Returns: true if the character was processed as a mnemonic by the control; otherwise,false.
   """
-  pass
- def RaiseDragEvent(self,*args):
-  """
+        pass
+
+    def RaiseDragEvent(self, *args):
+        """
   RaiseDragEvent(self: Control,key: object,e: DragEventArgs)
 
    Raises the appropriate drag event.
@@ -1643,9 +1798,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def RaiseKeyEvent(self,*args):
-  """
+        pass
+
+    def RaiseKeyEvent(self, *args):
+        """
   RaiseKeyEvent(self: Control,key: object,e: KeyEventArgs)
 
    Raises the appropriate key event.
@@ -1656,9 +1812,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: A System.Windows.Forms.KeyEventArgs that contains the event data.
   """
-  pass
- def RaiseMouseEvent(self,*args):
-  """
+        pass
+
+    def RaiseMouseEvent(self, *args):
+        """
   RaiseMouseEvent(self: Control,key: object,e: MouseEventArgs)
 
    Raises the appropriate mouse event.
@@ -1669,9 +1826,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def RaisePaintEvent(self,*args):
-  """
+        pass
+
+    def RaisePaintEvent(self, *args):
+        """
   RaisePaintEvent(self: Control,key: object,e: PaintEventArgs)
 
    Raises the appropriate paint event.
@@ -1682,33 +1840,38 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    e: A System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def RecreateHandle(self,*args):
-  """
+        pass
+
+    def RecreateHandle(self, *args):
+        """
   RecreateHandle(self: Control)
 
    Forces the re-creation of the handle for the control.
   """
-  pass
- def RescaleConstantsForDpi(self,*args):
-  """ RescaleConstantsForDpi(self: Control,deviceDpiOld: int,deviceDpiNew: int) """
-  pass
- def ResetMouseEventArgs(self,*args):
-  """
+        pass
+
+    def RescaleConstantsForDpi(self, *args):
+        """ RescaleConstantsForDpi(self: Control,deviceDpiOld: int,deviceDpiNew: int) """
+        pass
+
+    def ResetMouseEventArgs(self, *args):
+        """
   ResetMouseEventArgs(self: Control)
 
    Resets the control to handle the System.Windows.Forms.Control.MouseLeave event.
   """
-  pass
- def RestoreFocus(self,*args):
-  """
+        pass
+
+    def RestoreFocus(self, *args):
+        """
   RestoreFocus(self: ToolStrip)
 
    Controls the return location of the focus.
   """
-  pass
- def RtlTranslateAlignment(self,*args):
-  """
+        pass
+
+    def RtlTranslateAlignment(self, *args):
+        """
   RtlTranslateAlignment(self: Control,align: ContentAlignment) -> ContentAlignment
 
   
@@ -1757,9 +1920,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    Returns: One of the System.Windows.Forms.HorizontalAlignment values.
   """
-  pass
- def RtlTranslateContent(self,*args):
-  """
+        pass
+
+    def RtlTranslateContent(self, *args):
+        """
   RtlTranslateContent(self: Control,align: ContentAlignment) -> ContentAlignment
 
   
@@ -1776,9 +1940,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    Returns: One of the System.Drawing.ContentAlignment values.
   """
-  pass
- def RtlTranslateHorizontal(self,*args):
-  """
+        pass
+
+    def RtlTranslateHorizontal(self, *args):
+        """
   RtlTranslateHorizontal(self: Control,align: HorizontalAlignment) -> HorizontalAlignment
 
   
@@ -1795,9 +1960,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    Returns: One of the System.Windows.Forms.HorizontalAlignment values.
   """
-  pass
- def RtlTranslateLeftRight(self,*args):
-  """
+        pass
+
+    def RtlTranslateLeftRight(self, *args):
+        """
   RtlTranslateLeftRight(self: Control,align: LeftRightAlignment) -> LeftRightAlignment
 
   
@@ -1814,9 +1980,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    Returns: One of the System.Windows.Forms.LeftRightAlignment values.
   """
-  pass
- def ScaleControl(self,*args):
-  """
+        pass
+
+    def ScaleControl(self, *args):
+        """
   ScaleControl(self: ToolStripDropDown,factor: SizeF,specified: BoundsSpecified)
 
    Scales a control's location,size,padding and margin.
@@ -1827,9 +1994,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    specified: A value that specifies the bounds of the control to use when defining its size and position.
   """
-  pass
- def ScaleCore(self,*args):
-  """
+        pass
+
+    def ScaleCore(self, *args):
+        """
   ScaleCore(self: ToolStripDropDown,dx: Single,dy: Single)
 
    This method is not relevant to this class.
@@ -1840,9 +2008,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    dy: The vertical scaling factor.
   """
-  pass
- def ScrollToControl(self,*args):
-  """
+        pass
+
+    def ScrollToControl(self, *args):
+        """
   ScrollToControl(self: ScrollableControl,activeControl: Control) -> Point
 
   
@@ -1857,9 +2026,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
     required to scroll the control into view.
   """
-  pass
- def Select(self):
-  """
+        pass
+
+    def Select(self):
+        """
   Select(self: ToolStrip,directed: bool,forward: bool)
 
    Activates a child control. Optionally specifies the direction in the tab order to select the 
@@ -1874,9 +2044,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    forward: true to move forward in the tab order; false to move backward in the tab order.
   """
-  pass
- def SetAutoSizeMode(self,*args):
-  """
+        pass
+
+    def SetAutoSizeMode(self, *args):
+        """
   SetAutoSizeMode(self: Control,mode: AutoSizeMode)
 
    Sets a value indicating how a control will behave when its System.Windows.Forms.Control.AutoSize 
@@ -1889,9 +2060,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    mode: One of the System.Windows.Forms.AutoSizeMode values.
   """
-  pass
- def SetBoundsCore(self,*args):
-  """
+        pass
+
+    def SetBoundsCore(self, *args):
+        """
   SetBoundsCore(self: ToolStripDropDown,x: int,y: int,width: int,height: int,specified: BoundsSpecified)
 
    Performs the work of setting the specified bounds of this control.
@@ -1908,9 +2080,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    specified: A bitwise combination of the System.Windows.Forms.BoundsSpecified values.
   """
-  pass
- def SetClientSizeCore(self,*args):
-  """
+        pass
+
+    def SetClientSizeCore(self, *args):
+        """
   SetClientSizeCore(self: Control,x: int,y: int)
 
    Sets the size of the client area of the control.
@@ -1921,16 +2094,18 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    y: The client area height,in pixels.
   """
-  pass
- def SetDisplayedItems(self,*args):
-  """
+        pass
+
+    def SetDisplayedItems(self, *args):
+        """
   SetDisplayedItems(self: ToolStrip)
 
    Resets the collection of displayed and overflow items after a layout is done.
   """
-  pass
- def SetDisplayRectLocation(self,*args):
-  """
+        pass
+
+    def SetDisplayRectLocation(self, *args):
+        """
   SetDisplayRectLocation(self: ScrollableControl,x: int,y: int)
 
    Positions the display window to the specified value.
@@ -1941,9 +2116,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    y: The vertical offset at which to position the System.Windows.Forms.ScrollableControl.
   """
-  pass
- def SetItemLocation(self,*args):
-  """
+        pass
+
+    def SetItemLocation(self, *args):
+        """
   SetItemLocation(self: ToolStrip,item: ToolStripItem,location: Point)
 
    Anchors a System.Windows.Forms.ToolStripItem to a particular place on a 
@@ -1960,9 +2136,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
     System.Windows.Forms.ToolStripItem location,in pixels.
   """
-  pass
- def SetScrollState(self,*args):
-  """
+        pass
+
+    def SetScrollState(self, *args):
+        """
   SetScrollState(self: ScrollableControl,bit: int,value: bool)
 
    Sets the specified scroll state flag.
@@ -1973,9 +2150,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    value: The value to set the flag.
   """
-  pass
- def SetStyle(self,*args):
-  """
+        pass
+
+    def SetStyle(self, *args):
+        """
   SetStyle(self: Control,flag: ControlStyles,value: bool)
 
    Sets a specified System.Windows.Forms.ControlStyles flag to either true or false.
@@ -1986,9 +2164,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    value: true to apply the specified style to the control; otherwise,false.
   """
-  pass
- def SetTopLevel(self,*args):
-  """
+        pass
+
+    def SetTopLevel(self, *args):
+        """
   SetTopLevel(self: Control,value: bool)
 
    Sets the control as the top-level control.
@@ -1997,9 +2176,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    value: true to set the control as the top-level control; otherwise,false.
   """
-  pass
- def SetVisibleCore(self,*args):
-  """
+        pass
+
+    def SetVisibleCore(self, *args):
+        """
   SetVisibleCore(self: ToolStripDropDown,visible: bool)
 
    Adjusts the size of the owner System.Windows.Forms.ToolStrip to accommodate the 
@@ -2018,9 +2198,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    visible: true if the owner System.Windows.Forms.ToolStrip is currently displayed; otherwise,false.
   """
-  pass
- def Show(self,*__args):
-  """
+        pass
+
+    def Show(self, *__args):
+        """
   Show(self: ToolStripDropDown,screenLocation: Point)
 
    Positions the System.Windows.Forms.ToolStripDropDown relative to the specified screen location.
@@ -2115,9 +2296,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    direction: One of the System.Windows.Forms.ToolStripDropDownDirection values.
   """
-  pass
- def SizeFromClientSize(self,*args):
-  """
+        pass
+
+    def SizeFromClientSize(self, *args):
+        """
   SizeFromClientSize(self: Control,clientSize: Size) -> Size
 
   
@@ -2130,9 +2312,10 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    Returns: A System.Drawing.Size value representing the height and width of the entire control.
   """
-  pass
- def UpdateBounds(self,*args):
-  """
+        pass
+
+    def UpdateBounds(self, *args):
+        """
   UpdateBounds(self: Control,x: int,y: int,width: int,height: int,clientWidth: int,clientHeight: int)
 
    Updates the bounds of the control with the specified size,location,and client size.
@@ -2169,53 +2352,63 @@ class ToolStripDropDown(ToolStrip,IComponent,IDisposable,IOleControl,IOleObject,
 
    Updates the bounds of the control with the current size and location.
   """
-  pass
- def UpdateStyles(self,*args):
-  """
+        pass
+
+    def UpdateStyles(self, *args):
+        """
   UpdateStyles(self: Control)
 
    Forces the assigned styles to be reapplied to the control.
   """
-  pass
- def UpdateZOrder(self,*args):
-  """
+        pass
+
+    def UpdateZOrder(self, *args):
+        """
   UpdateZOrder(self: Control)
 
    Updates the control in its parent's z-order.
   """
-  pass
- def WndProc(self,*args):
-  """
+        pass
+
+    def WndProc(self, *args):
+        """
   WndProc(self: ToolStripDropDown,m: Message) -> Message
 
   
 
    m: The Windows System.Windows.Forms.Message to process.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- AllowItemReorder=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AllowItemReorder = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property is not relevant to this class.
 
 
 
@@ -2227,8 +2420,10 @@ Set: AllowItemReorder(self: ToolStripDropDown)=value
 
 """
 
- AllowTransparency=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the System.Windows.Forms.ToolStripDropDown.Opacity of the form can be adjusted.
+    AllowTransparency = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the System.Windows.Forms.ToolStripDropDown.Opacity of the form can be adjusted.
 
 
 
@@ -2240,8 +2435,8 @@ Set: AllowTransparency(self: ToolStripDropDown)=value
 
 """
 
- Anchor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+    Anchor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """This property is not relevant to this class.
 
 
 
@@ -2253,8 +2448,8 @@ Set: Anchor(self: ToolStripDropDown)=value
 
 """
 
- AutoClose=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the System.Windows.Forms.ToolStripDropDown control should automatically close when it has lost activation.
+    AutoClose = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the System.Windows.Forms.ToolStripDropDown control should automatically close when it has lost activation.
 
 
 
@@ -2266,8 +2461,8 @@ Set: AutoClose(self: ToolStripDropDown)=value
 
 """
 
- AutoSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the System.Windows.Forms.ToolStripDropDown automatically adjusts its size when the form is resized.
+    AutoSize = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the System.Windows.Forms.ToolStripDropDown automatically adjusts its size when the form is resized.
 
 
 
@@ -2279,15 +2474,19 @@ Set: AutoSize(self: ToolStripDropDown)=value
 
 """
 
- CanEnableIme=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Windows.Forms.Control.ImeMode property can be set to an active value,to enable IME support.
+    CanEnableIme = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Windows.Forms.Control.ImeMode property can be set to an active value,to enable IME support.
 
 
 
 """
 
- CanOverflow=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the items in a System.Windows.Forms.ToolStripDropDown can be sent to an overflow menu.
+    CanOverflow = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the items in a System.Windows.Forms.ToolStripDropDown can be sent to an overflow menu.
 
 
 
@@ -2299,15 +2498,19 @@ Set: CanOverflow(self: ToolStripDropDown)=value
 
 """
 
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determines if events can be raised on the control.
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Determines if events can be raised on the control.
 
 
 
 """
 
- ContextMenu=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+    ContextMenu = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property is not relevant to this class.
 
 
 
@@ -2319,8 +2522,10 @@ Set: ContextMenu(self: ToolStripDropDown)=value
 
 """
 
- ContextMenuStrip=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+    ContextMenuStrip = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property is not relevant to this class.
 
 
 
@@ -2332,24 +2537,32 @@ Set: ContextMenuStrip(self: ToolStripDropDown)=value
 
 """
 
- CreateParams=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets parameters of a new window.
+    CreateParams = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets parameters of a new window.
 
 
 
 """
 
- DefaultCursor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the default cursor for the control.
+    DefaultCursor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the default cursor for the control.
 
 
 
 """
 
- DefaultDock=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    DefaultDock = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- DefaultDropDownDirection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the direction in which the System.Windows.Forms.ToolStripDropDown is displayed relative to the System.Windows.Forms.ToolStrip.
+    DefaultDropDownDirection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the direction in which the System.Windows.Forms.ToolStripDropDown is displayed relative to the System.Windows.Forms.ToolStrip.
 
 
 
@@ -2361,68 +2574,88 @@ Set: DefaultDropDownDirection(self: ToolStripDropDown)=value
 
 """
 
- DefaultGripMargin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the default spacing,in pixels,between the sizing grip and the edges of the System.Windows.Forms.ToolStrip.
+    DefaultGripMargin = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the default spacing,in pixels,between the sizing grip and the edges of the System.Windows.Forms.ToolStrip.
 
 
 
 """
 
- DefaultImeMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the default Input Method Editor (IME) mode supported by the control.
+    DefaultImeMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the default Input Method Editor (IME) mode supported by the control.
 
 
 
 """
 
- DefaultMargin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the spacing,in pixels,between the System.Windows.Forms.ToolStrip and the System.Windows.Forms.ToolStripContainer.
+    DefaultMargin = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the spacing,in pixels,between the System.Windows.Forms.ToolStrip and the System.Windows.Forms.ToolStripContainer.
 
 
 
 """
 
- DefaultMaximumSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the length and height,in pixels,that is specified as the default maximum size of a control.
+    DefaultMaximumSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the length and height,in pixels,that is specified as the default maximum size of a control.
 
 
 
 """
 
- DefaultMinimumSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the length and height,in pixels,that is specified as the default minimum size of a control.
+    DefaultMinimumSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the length and height,in pixels,that is specified as the default minimum size of a control.
 
 
 
 """
 
- DefaultPadding=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    DefaultPadding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- DefaultShowItemToolTips=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    DefaultShowItemToolTips = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- DefaultSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the default size of the System.Windows.Forms.ToolStrip.
-
-
-
-"""
-
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
-
-
-
-"""
-
- DisplayedItems=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the subset of items that are currently displayed on the System.Windows.Forms.ToolStrip,including items that are automatically added into the System.Windows.Forms.ToolStrip.
+    DefaultSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the default size of the System.Windows.Forms.ToolStrip.
 
 
 
 """
 
- Dock=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+
+
+
+"""
+
+    DisplayedItems = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the subset of items that are currently displayed on the System.Windows.Forms.ToolStrip,including items that are automatically added into the System.Windows.Forms.ToolStrip.
+
+
+
+"""
+
+    Dock = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """This property is not relevant to this class.
 
 
 
@@ -2434,15 +2667,19 @@ Set: Dock(self: ToolStripDropDown)=value
 
 """
 
- DoubleBuffered=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether this control should redraw its surface using a secondary buffer to reduce or prevent flicker.
+    DoubleBuffered = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether this control should redraw its surface using a secondary buffer to reduce or prevent flicker.
 
 
 
 """
 
- DropShadowEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether a three-dimensional shadow effect appears when the System.Windows.Forms.ToolStripDropDown is displayed.
+    DropShadowEnabled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether a three-dimensional shadow effect appears when the System.Windows.Forms.ToolStripDropDown is displayed.
 
 
 
@@ -2454,15 +2691,15 @@ Set: DropShadowEnabled(self: ToolStripDropDown)=value
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- Font=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the font of the text displayed on the System.Windows.Forms.ToolStripDropDown.
+    Font = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the font of the text displayed on the System.Windows.Forms.ToolStripDropDown.
 
 
 
@@ -2474,15 +2711,19 @@ Set: Font(self: ToolStripDropDown)=value
 
 """
 
- FontHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the height of the font of the control.
+    FontHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the height of the font of the control.
 
 
 
 """
 
- GripDisplayStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+    GripDisplayStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property is not relevant to this class.
 
 
 
@@ -2492,8 +2733,10 @@ Get: GripDisplayStyle(self: ToolStripDropDown) -> ToolStripGripDisplayStyle
 
 """
 
- GripMargin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+    GripMargin = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property is not relevant to this class.
 
 
 
@@ -2505,8 +2748,10 @@ Set: GripMargin(self: ToolStripDropDown)=value
 
 """
 
- GripRectangle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+    GripRectangle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property is not relevant to this class.
 
 
 
@@ -2516,8 +2761,8 @@ Get: GripRectangle(self: ToolStripDropDown) -> Rectangle
 
 """
 
- GripStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+    GripStyle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """This property is not relevant to this class.
 
 
 
@@ -2529,22 +2774,26 @@ Set: GripStyle(self: ToolStripDropDown)=value
 
 """
 
- HScroll=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the horizontal scroll bar is visible.
+    HScroll = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the horizontal scroll bar is visible.
 
 
 
 """
 
- ImeModeBase=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the IME mode of a control.
+    ImeModeBase = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the IME mode of a control.
 
 
 
 """
 
- IsAutoGenerated=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether this System.Windows.Forms.ToolStripDropDown was automatically generated.
+    IsAutoGenerated = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether this System.Windows.Forms.ToolStripDropDown was automatically generated.
 
 
 
@@ -2554,8 +2803,8 @@ Get: IsAutoGenerated(self: ToolStripDropDown) -> bool
 
 """
 
- Location=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+    Location = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """This property is not relevant to this class.
 
 
 
@@ -2567,15 +2816,17 @@ Set: Location(self: ToolStripDropDown)=value
 
 """
 
- MaxItemSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the maximum height and width,in pixels,of the System.Windows.Forms.ToolStripDropDown.
+    MaxItemSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the maximum height and width,in pixels,of the System.Windows.Forms.ToolStripDropDown.
 
 
 
 """
 
- Opacity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determines the opacity of the form.
+    Opacity = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Determines the opacity of the form.
 
 
 
@@ -2587,8 +2838,10 @@ Set: Opacity(self: ToolStripDropDown)=value
 
 """
 
- OverflowButton=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+    OverflowButton = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property is not relevant to this class.
 
 
 
@@ -2598,8 +2851,8 @@ Get: OverflowButton(self: ToolStripDropDown) -> ToolStripOverflowButton
 
 """
 
- OwnerItem=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Windows.Forms.ToolStripItem that is the owner of this System.Windows.Forms.ToolStripDropDown.
+    OwnerItem = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the System.Windows.Forms.ToolStripItem that is the owner of this System.Windows.Forms.ToolStripDropDown.
 
 
 
@@ -2611,8 +2864,8 @@ Set: OwnerItem(self: ToolStripDropDown)=value
 
 """
 
- Region=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the window region associated with the System.Windows.Forms.ToolStripDropDown.
+    Region = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the window region associated with the System.Windows.Forms.ToolStripDropDown.
 
 
 
@@ -2624,22 +2877,28 @@ Set: Region(self: ToolStripDropDown)=value
 
 """
 
- RenderRightToLeft=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is now obsolete.
+    RenderRightToLeft = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property is now obsolete.
 
 
 
 """
 
- ResizeRedraw=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the control redraws itself when resized.
+    ResizeRedraw = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the control redraws itself when resized.
 
 
 
 """
 
- RightToLeft=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: RightToLeft(self: ToolStripDropDown) -> RightToLeft
+    RightToLeft = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: RightToLeft(self: ToolStripDropDown) -> RightToLeft
 
 
 
@@ -2647,29 +2906,35 @@ Set: RightToLeft(self: ToolStripDropDown)=value
 
 """
 
- ScaleChildren=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that determines the scaling of child controls.
+    ScaleChildren = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that determines the scaling of child controls.
 
 
 
 """
 
- ShowFocusCues=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the control should display focus rectangles.
+    ShowFocusCues = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the control should display focus rectangles.
 
 
 
 """
 
- ShowKeyboardCues=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the user interface is in the appropriate state to show or hide keyboard accelerators.
+    ShowKeyboardCues = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the user interface is in the appropriate state to show or hide keyboard accelerators.
 
 
 
 """
 
- Stretch=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+    Stretch = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """This property is not relevant to this class.
 
 
 
@@ -2681,8 +2946,8 @@ Set: Stretch(self: ToolStripDropDown)=value
 
 """
 
- TabIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+    TabIndex = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """This property is not relevant to this class.
 
 
 
@@ -2694,8 +2959,10 @@ Set: TabIndex(self: ToolStripDropDown)=value
 
 """
 
- TextDirection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies the direction in which to draw the text on the item.
+    TextDirection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies the direction in which to draw the text on the item.
 
 
 
@@ -2707,8 +2974,8 @@ Set: TextDirection(self: ToolStripDropDown)=value
 
 """
 
- TopLevel=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the System.Windows.Forms.ToolStripDropDown is a top-level control.
+    TopLevel = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the System.Windows.Forms.ToolStripDropDown is a top-level control.
 
 
 
@@ -2720,15 +2987,15 @@ Set: TopLevel(self: ToolStripDropDown)=value
 
 """
 
- TopMost=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the form should be displayed as a topmost form.
+    TopMost = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the form should be displayed as a topmost form.
 
 
 
 """
 
- Visible=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the System.Windows.Forms.ToolStripDropDown is visible or hidden.
+    Visible = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the System.Windows.Forms.ToolStripDropDown is visible or hidden.
 
 
 
@@ -2740,42 +3007,40 @@ Set: Visible(self: ToolStripDropDown)=value
 
 """
 
- VScroll=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the vertical scroll bar is visible.
+    VScroll = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the vertical scroll bar is visible.
 
 
 
 """
 
-
- BackgroundImageChanged=None
- BackgroundImageLayoutChanged=None
- BindingContextChanged=None
- ChangeUICues=None
- Closed=None
- Closing=None
- ContextMenuChanged=None
- ContextMenuStripChanged=None
- DockChanged=None
- Enter=None
- FontChanged=None
- ForeColorChanged=None
- GiveFeedback=None
- HelpRequested=None
- ImeModeChanged=None
- KeyDown=None
- KeyPress=None
- KeyUp=None
- Leave=None
- Opened=None
- Opening=None
- RegionChanged=None
- Scroll=None
- StyleChanged=None
- TabIndexChanged=None
- TabStopChanged=None
- TextChanged=None
- ToolStripDropDownAccessibleObject=None
- Validated=None
- Validating=None
-
+    BackgroundImageChanged = None
+    BackgroundImageLayoutChanged = None
+    BindingContextChanged = None
+    ChangeUICues = None
+    Closed = None
+    Closing = None
+    ContextMenuChanged = None
+    ContextMenuStripChanged = None
+    DockChanged = None
+    Enter = None
+    FontChanged = None
+    ForeColorChanged = None
+    GiveFeedback = None
+    HelpRequested = None
+    ImeModeChanged = None
+    KeyDown = None
+    KeyPress = None
+    KeyUp = None
+    Leave = None
+    Opened = None
+    Opening = None
+    RegionChanged = None
+    Scroll = None
+    StyleChanged = None
+    TabIndexChanged = None
+    TabStopChanged = None
+    TextChanged = None
+    ToolStripDropDownAccessibleObject = None
+    Validated = None
+    Validating = None

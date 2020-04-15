@@ -1,8 +1,9 @@
-class BooleanOperationsUtils(object,IDisposable):
- """ These utilities are applicable for the geometry created by GeometryCreationUtilities and the geometry of Revit model. """
- @staticmethod
- def CutWithHalfSpace(solid,plane):
-  """
+class BooleanOperationsUtils(object, IDisposable):
+    """ These utilities are applicable for the geometry created by GeometryCreationUtilities and the geometry of Revit model. """
+
+    @staticmethod
+    def CutWithHalfSpace(solid, plane):
+        """
   CutWithHalfSpace(solid: Solid,plane: Plane) -> Solid
 
   
@@ -27,10 +28,11 @@ class BooleanOperationsUtils(object,IDisposable):
 
    Returns: The newly created Solid.
   """
-  pass
- @staticmethod
- def CutWithHalfSpaceModifyingOriginalSolid(solid,plane):
-  """
+        pass
+
+    @staticmethod
+    def CutWithHalfSpaceModifyingOriginalSolid(solid, plane):
+        """
   CutWithHalfSpaceModifyingOriginalSolid(solid: Solid,plane: Plane)
 
    Modifies the input Solid preserving only the volume on the positive side of the 
@@ -57,13 +59,15 @@ class BooleanOperationsUtils(object,IDisposable):
 
     be intersected with the input Solid.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: BooleanOperationsUtils) """
-  pass
- @staticmethod
- def ExecuteBooleanOperation(solid0,solid1,booleanType):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: BooleanOperationsUtils) """
+        pass
+
+    @staticmethod
+    def ExecuteBooleanOperation(solid0, solid1, booleanType):
+        """
   ExecuteBooleanOperation(solid0: Solid,solid1: Solid,booleanType: BooleanOperationsType) -> Solid
 
   
@@ -92,10 +96,11 @@ class BooleanOperationsUtils(object,IDisposable):
 
    Returns: The result geometry.
   """
-  pass
- @staticmethod
- def ExecuteBooleanOperationModifyingOriginalSolid(solid0,solid1,booleanType):
-  """
+        pass
+
+    @staticmethod
+    def ExecuteBooleanOperationModifyingOriginalSolid(solid0, solid1, booleanType):
+        """
   ExecuteBooleanOperationModifyingOriginalSolid(solid0: Solid,solid1: Solid,booleanType: BooleanOperationsType)
 
    Perform a boolean geometric operation between two solids,and modify the 
@@ -124,24 +129,32 @@ class BooleanOperationsUtils(object,IDisposable):
 
    booleanType: boolean operation type.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: BooleanOperationsUtils,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: BooleanOperationsUtils,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -150,5 +163,3 @@ Get: IsValidObject(self: BooleanOperationsUtils) -> bool
 
 
 """
-
-

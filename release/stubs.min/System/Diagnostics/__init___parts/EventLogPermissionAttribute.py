@@ -1,13 +1,14 @@
-class EventLogPermissionAttribute(CodeAccessSecurityAttribute,_Attribute):
- """
+class EventLogPermissionAttribute(CodeAccessSecurityAttribute, _Attribute):
+    """
  Allows declaritive permission checks for event logging.
 
  
 
  EventLogPermissionAttribute(action: SecurityAction)
  """
- def CreatePermission(self):
-  """
+
+    def CreatePermission(self):
+        """
   CreatePermission(self: EventLogPermissionAttribute) -> IPermission
 
   
@@ -22,18 +23,24 @@ class EventLogPermissionAttribute(CodeAccessSecurityAttribute,_Attribute):
 
    Returns: An System.Security.IPermission that represents the created permission.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,action):
-  """ __new__(cls: type,action: SecurityAction) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- MachineName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the computer on which events might be read.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, action):
+        """ __new__(cls: type,action: SecurityAction) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    MachineName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the computer on which events might be read.
 
 
 
@@ -45,8 +52,10 @@ Set: MachineName(self: EventLogPermissionAttribute)=value
 
 """
 
- PermissionAccess=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the access levels used in the permissions request.
+    PermissionAccess = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the access levels used in the permissions request.
 
 
 
@@ -57,5 +66,3 @@ Get: PermissionAccess(self: EventLogPermissionAttribute) -> EventLogPermissionAc
 Set: PermissionAccess(self: EventLogPermissionAttribute)=value
 
 """
-
-

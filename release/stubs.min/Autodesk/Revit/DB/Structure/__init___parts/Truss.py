@@ -1,7 +1,8 @@
-class Truss(Element,IDisposable):
- """ Represents all kinds of Trusses. """
- def AttachChord(self,attachToElement,location,forceRemoveSketch):
-  """
+class Truss(Element, IDisposable):
+    """ Represents all kinds of Trusses. """
+
+    def AttachChord(self, attachToElement, location, forceRemoveSketch):
+        """
   AttachChord(self: Truss,attachToElement: Element,location: TrussChordLocation,forceRemoveSketch: bool)
 
    Attach a truss's specific chord to a specified element,the element should be a 
@@ -22,10 +23,11 @@ class Truss(Element,IDisposable):
 
    forceRemoveSketch: Whether to detach the original sketch if there is one.
   """
-  pass
- @staticmethod
- def Create(document,trussTypeId,sketchPlaneId,curve):
-  """
+        pass
+
+    @staticmethod
+    def Create(document, trussTypeId, sketchPlaneId, curve):
+        """
   Create(document: Document,trussTypeId: ElementId,sketchPlaneId: ElementId,curve: Curve) -> Truss
 
   
@@ -46,9 +48,10 @@ class Truss(Element,IDisposable):
 
     line,and must be within the sketch plane.
   """
-  pass
- def DetachChord(self,location):
-  """
+        pass
+
+    def DetachChord(self, location):
+        """
   DetachChord(self: Truss,location: TrussChordLocation)
 
    Detach a truss's specific chord from the element to which it is attached.
@@ -57,13 +60,15 @@ class Truss(Element,IDisposable):
 
    location: The chord.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- @staticmethod
- def DropTruss(truss):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    @staticmethod
+    def DropTruss(truss):
+        """
   DropTruss(truss: Truss)
 
    Drop truss Family,it will disassociate all members from the truss and delete 
@@ -76,12 +81,14 @@ class Truss(Element,IDisposable):
 
    truss: The truss to be dropped.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetTrussMemberInfo(self,elemId):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetTrussMemberInfo(self, elemId):
+        """
   GetTrussMemberInfo(self: Truss,elemId: ElementId) -> TrussMemberInfo
 
   
@@ -100,22 +107,26 @@ class Truss(Element,IDisposable):
 
     whether to lock to the truss,usage type,etc.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def RemoveProfile(self):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def RemoveProfile(self):
+        """
   RemoveProfile(self: Truss)
 
    Remove the profile of a truss.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetProfile(self,topChords,bottomChords):
-  """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetProfile(self, topChords, bottomChords):
+        """
   SetProfile(self: Truss,topChords: CurveArray,bottomChords: CurveArray)
 
    Add or modify the profile of a truss.
@@ -126,9 +137,10 @@ class Truss(Element,IDisposable):
 
    bottomChords: The curves serving as bottom chords of the truss.
   """
-  pass
- def TogglePinMember(self,elemId):
-  """
+        pass
+
+    def TogglePinMember(self, elemId):
+        """
   TogglePinMember(self: Truss,elemId: ElementId)
 
    Pin/Unpin a truss member.
@@ -137,18 +149,22 @@ class Truss(Element,IDisposable):
 
    elemId: The member element is going to pin/unpin.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Curves=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get all the truss curves.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Curves = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get all the truss curves.
 
 
 
@@ -158,8 +174,8 @@ Get: Curves(self: Truss) -> CurveArray
 
 """
 
- Members=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get all the members of truss.
+    Members = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get all the members of truss.
 
 
 
@@ -169,8 +185,8 @@ Get: Members(self: Truss) -> ICollection[ElementId]
 
 """
 
- TrussType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Retrieve/set an object that represents the type of the truss.
+    TrussType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Retrieve/set an object that represents the type of the truss.
 
 
 
@@ -181,5 +197,3 @@ Get: TrussType(self: Truss) -> TrussType
 Set: TrussType(self: Truss)=value
 
 """
-
-

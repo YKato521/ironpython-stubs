@@ -1,5 +1,5 @@
 class XYZ(object):
- """
+    """
  Object representing coordinates in 3-dimensional space.
 
  
@@ -8,8 +8,9 @@ class XYZ(object):
 
  XYZ()
  """
- def Add(self,source):
-  """
+
+    def Add(self, source):
+        """
   Add(self: XYZ,source: XYZ) -> XYZ
 
   
@@ -22,9 +23,10 @@ class XYZ(object):
 
    Returns: The vector equal to the sum of the two vectors.
   """
-  pass
- def AngleOnPlaneTo(self,right,normal):
-  """
+        pass
+
+    def AngleOnPlaneTo(self, right, normal):
+        """
   AngleOnPlaneTo(self: XYZ,right: XYZ,normal: XYZ) -> float
 
   
@@ -45,9 +47,10 @@ class XYZ(object):
 
     vectors.
   """
-  pass
- def AngleTo(self,source):
-  """
+        pass
+
+    def AngleTo(self, source):
+        """
   AngleTo(self: XYZ,source: XYZ) -> float
 
   
@@ -62,9 +65,10 @@ class XYZ(object):
 
     radians..
   """
-  pass
- def CrossProduct(self,source):
-  """
+        pass
+
+    def CrossProduct(self, source):
+        """
   CrossProduct(self: XYZ,source: XYZ) -> XYZ
 
   
@@ -77,9 +81,10 @@ class XYZ(object):
 
    Returns: The vector equal to the cross product.
   """
-  pass
- def DistanceTo(self,source):
-  """
+        pass
+
+    def DistanceTo(self, source):
+        """
   DistanceTo(self: XYZ,source: XYZ) -> float
 
   
@@ -92,9 +97,10 @@ class XYZ(object):
 
    Returns: The real number equal to the distance between the two points.
   """
-  pass
- def Divide(self,value):
-  """
+        pass
+
+    def Divide(self, value):
+        """
   Divide(self: XYZ,value: float) -> XYZ
 
   
@@ -107,9 +113,10 @@ class XYZ(object):
 
    Returns: The divided vector.
   """
-  pass
- def DotProduct(self,source):
-  """
+        pass
+
+    def DotProduct(self, source):
+        """
   DotProduct(self: XYZ,source: XYZ) -> float
 
   
@@ -122,18 +129,20 @@ class XYZ(object):
 
    Returns: The real number equal to the dot product.
   """
-  pass
- def GetLength(self):
-  """
+        pass
+
+    def GetLength(self):
+        """
   GetLength(self: XYZ) -> float
 
   
 
    Gets the length of this vector.
   """
-  pass
- def IsAlmostEqualTo(self,source,tolerance=None):
-  """
+        pass
+
+    def IsAlmostEqualTo(self, source, tolerance=None):
+        """
   IsAlmostEqualTo(self: XYZ,source: XYZ) -> bool
 
   
@@ -164,19 +173,21 @@ class XYZ(object):
 
    Returns: True if the vectors are the same; otherwise,false.
   """
-  pass
- def IsUnitLength(self):
-  """
+        pass
+
+    def IsUnitLength(self):
+        """
   IsUnitLength(self: XYZ) -> bool
 
   
 
    The boolean value that indicates whether this vector is of unit length.
   """
-  pass
- @staticmethod
- def IsWithinLengthLimits(point):
-  """
+        pass
+
+    @staticmethod
+    def IsWithinLengthLimits(point):
+        """
   IsWithinLengthLimits(point: XYZ) -> bool
 
   
@@ -189,18 +200,20 @@ class XYZ(object):
 
    Returns: True if the input point is within Revit design limits,false otherwise.
   """
-  pass
- def IsZeroLength(self):
-  """
+        pass
+
+    def IsZeroLength(self):
+        """
   IsZeroLength(self: XYZ) -> bool
 
   
 
    The boolean value that indicates whether this vector is a zero vector.
   """
-  pass
- def Multiply(self,value):
-  """
+        pass
+
+    def Multiply(self, value):
+        """
   Multiply(self: XYZ,value: float) -> XYZ
 
   
@@ -213,9 +226,10 @@ class XYZ(object):
 
    Returns: The multiplied vector.
   """
-  pass
- def Negate(self):
-  """
+        pass
+
+    def Negate(self):
+        """
   Negate(self: XYZ) -> XYZ
 
   
@@ -224,9 +238,10 @@ class XYZ(object):
 
    Returns: The vector opposite to this vector.
   """
-  pass
- def Normalize(self):
-  """
+        pass
+
+    def Normalize(self):
+        """
   Normalize(self: XYZ) -> XYZ
 
   
@@ -235,9 +250,10 @@ class XYZ(object):
 
    Returns: The normalized XYZ or zero if the vector is almost Zero.
   """
-  pass
- def Subtract(self,source):
-  """
+        pass
+
+    def Subtract(self, source):
+        """
   Subtract(self: XYZ,source: XYZ) -> XYZ
 
   
@@ -250,9 +266,10 @@ class XYZ(object):
 
    Returns: The vector equal to the difference between the two vectors.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: XYZ) -> str
 
   
@@ -261,9 +278,10 @@ class XYZ(object):
 
     places.
   """
-  pass
- def TripleProduct(self,middle,right):
-  """
+        pass
+
+    def TripleProduct(self, middle, right):
+        """
   TripleProduct(self: XYZ,middle: XYZ,right: XYZ) -> float
 
   
@@ -278,32 +296,39 @@ class XYZ(object):
 
    Returns: The real number equal to the triple product.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __div__(self,*args):
-  """ x.__div__(y) <==> x/y """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __mul__(self,*args):
-  """ x.__mul__(y) <==> x*y """
-  pass
- def __neg__(self,*args):
-  """ x.__neg__() <==> -x """
-  pass
- @staticmethod
- def __new__(self,x=None,y=None,z=None):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __div__(self, *args):
+        """ x.__div__(y) <==> x/y """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __mul__(self, *args):
+        """ x.__mul__(y) <==> x*y """
+        pass
+
+    def __neg__(self, *args):
+        """ x.__neg__() <==> -x """
+        pass
+
+    @staticmethod
+    def __new__(self, x=None, y=None, z=None):
+        """
   __new__(cls: type,x: float,y: float,z: float)
 
   __new__(cls: type)
   """
-  pass
- def __radd__(self,*args):
-  """
+        pass
+
+    def __radd__(self, *args):
+        """
   __radd__(left: XYZ,right: XYZ) -> XYZ
 
   
@@ -318,9 +343,10 @@ class XYZ(object):
 
    Returns: The vector equal to the sum of the two source vectors.
   """
-  pass
- def __rmul__(self,*args):
-  """
+        pass
+
+    def __rmul__(self, *args):
+        """
   __rmul__(value: float,right: XYZ) -> XYZ
 
   
@@ -335,9 +361,10 @@ class XYZ(object):
 
    Returns: The multiplied vector.
   """
-  pass
- def __rsub__(self,*args):
-  """
+        pass
+
+    def __rsub__(self, *args):
+        """
   __rsub__(left: XYZ,right: XYZ) -> XYZ
 
   
@@ -352,12 +379,14 @@ class XYZ(object):
 
    Returns: The vector equal to the difference between the two source vectors.
   """
-  pass
- def __sub__(self,*args):
-  """ x.__sub__(y) <==> x-y """
-  pass
- X=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the first coordinate.
+        pass
+
+    def __sub__(self, *args):
+        """ x.__sub__(y) <==> x-y """
+        pass
+
+    X = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the first coordinate.
 
 
 
@@ -367,8 +396,8 @@ Get: X(self: XYZ) -> float
 
 """
 
- Y=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the second coordinate.
+    Y = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the second coordinate.
 
 
 
@@ -378,8 +407,8 @@ Get: Y(self: XYZ) -> float
 
 """
 
- Z=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the third coordinate.
+    Z = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the third coordinate.
 
 
 
@@ -389,9 +418,7 @@ Get: Z(self: XYZ) -> float
 
 """
 
-
- BasisX=None
- BasisY=None
- BasisZ=None
- Zero=None
-
+    BasisX = None
+    BasisY = None
+    BasisZ = None
+    Zero = None

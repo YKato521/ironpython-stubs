@@ -8,10 +8,12 @@
 # no functions
 # classes
 
+
 class IPipeFittingAndAccessoryPressureDropUIServer(IExternalServer):
- """ Interface for external servers providing optional UI for pipe fitting and pipe accessory coefficient calculation. """
- def GetDBServerId(self):
-  """
+    """ Interface for external servers providing optional UI for pipe fitting and pipe accessory coefficient calculation. """
+
+    def GetDBServerId(self):
+        """
   GetDBServerId(self: IPipeFittingAndAccessoryPressureDropUIServer) -> Guid
 
   
@@ -24,9 +26,10 @@ class IPipeFittingAndAccessoryPressureDropUIServer(IExternalServer):
 
    Returns: The Id of the DB server.
   """
-  pass
- def ShowSettings(self,data):
-  """
+        pass
+
+    def ShowSettings(self, data):
+        """
   ShowSettings(self: IPipeFittingAndAccessoryPressureDropUIServer,data: PipeFittingAndAccessoryPressureDropUIData) -> bool
 
   
@@ -39,18 +42,22 @@ class IPipeFittingAndAccessoryPressureDropUIServer(IExternalServer):
 
    Returns: True if the user makes any changes in the UI,false otherwise.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
 
-class PipeFittingAndAccessoryPressureDropUIData(object,IDisposable):
- """ The input and output data used by external UI servers for storing UI settings. """
- def Dispose(self):
-  """ Dispose(self: PipeFittingAndAccessoryPressureDropUIData) """
-  pass
- def GetUIDataItems(self):
-  """
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+
+class PipeFittingAndAccessoryPressureDropUIData(object, IDisposable):
+    """ The input and output data used by external UI servers for storing UI settings. """
+
+    def Dispose(self):
+        """ Dispose(self: PipeFittingAndAccessoryPressureDropUIData) """
+        pass
+
+    def GetUIDataItems(self):
+        """
   GetUIDataItems(self: PipeFittingAndAccessoryPressureDropUIData) -> IList[PipeFittingAndAccessoryPressureDropUIDataItem]
 
   
@@ -59,9 +66,10 @@ class PipeFittingAndAccessoryPressureDropUIData(object,IDisposable):
 
    Returns: An array of UI data items.
   """
-  pass
- def GetUnits(self):
-  """
+        pass
+
+    def GetUnits(self):
+        """
   GetUnits(self: PipeFittingAndAccessoryPressureDropUIData) -> Units
 
   
@@ -70,24 +78,32 @@ class PipeFittingAndAccessoryPressureDropUIData(object,IDisposable):
 
    Returns: The Units object.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: PipeFittingAndAccessoryPressureDropUIData,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: PipeFittingAndAccessoryPressureDropUIData,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -98,14 +114,15 @@ Get: IsValidObject(self: PipeFittingAndAccessoryPressureDropUIData) -> bool
 """
 
 
+class PipeFittingAndAccessoryPressureDropUIDataItem(object, IDisposable):
+    """ The input and output data used by external UI servers for initializing and storing the UI settings. """
 
-class PipeFittingAndAccessoryPressureDropUIDataItem(object,IDisposable):
- """ The input and output data used by external UI servers for initializing and storing the UI settings. """
- def Dispose(self):
-  """ Dispose(self: PipeFittingAndAccessoryPressureDropUIDataItem) """
-  pass
- def GetEntity(self):
-  """
+    def Dispose(self):
+        """ Dispose(self: PipeFittingAndAccessoryPressureDropUIDataItem) """
+        pass
+
+    def GetEntity(self):
+        """
   GetEntity(self: PipeFittingAndAccessoryPressureDropUIDataItem) -> Entity
 
   
@@ -116,9 +133,10 @@ class PipeFittingAndAccessoryPressureDropUIDataItem(object,IDisposable):
 
    Returns: The returned Entity.
   """
-  pass
- def GetPipeFittingAndAccessoryData(self):
-  """
+        pass
+
+    def GetPipeFittingAndAccessoryData(self):
+        """
   GetPipeFittingAndAccessoryData(self: PipeFittingAndAccessoryPressureDropUIDataItem) -> PipeFittingAndAccessoryData
 
   
@@ -127,12 +145,14 @@ class PipeFittingAndAccessoryPressureDropUIDataItem(object,IDisposable):
 
    Returns: The fitting data stored in the UI data item.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: PipeFittingAndAccessoryPressureDropUIDataItem,disposing: bool) """
-  pass
- def SetEntity(self,entity):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: PipeFittingAndAccessoryPressureDropUIDataItem,disposing: bool) """
+        pass
+
+    def SetEntity(self, entity):
+        """
   SetEntity(self: PipeFittingAndAccessoryPressureDropUIDataItem,entity: Entity)
 
    Stores the entity in the UI data item.
@@ -141,21 +161,28 @@ class PipeFittingAndAccessoryPressureDropUIDataItem(object,IDisposable):
 
    entity: The Entity to be stored.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -164,6 +191,3 @@ Get: IsValidObject(self: PipeFittingAndAccessoryPressureDropUIDataItem) -> bool
 
 
 """
-
-
-

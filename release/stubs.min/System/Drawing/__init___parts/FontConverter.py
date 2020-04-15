@@ -1,13 +1,14 @@
 class FontConverter(TypeConverter):
- """
+    """
  Converts System.Drawing.Font objects from one data type to another.
 
  
 
  FontConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: FontConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -32,9 +33,10 @@ class FontConverter(TypeConverter):
 
    Returns: This method returns true if this object can perform the conversion.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: FontConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -53,9 +55,10 @@ class FontConverter(TypeConverter):
 
    Returns: This method returns true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: FontConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -78,9 +81,10 @@ class FontConverter(TypeConverter):
 
    Returns: The converted object.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: FontConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -109,9 +113,10 @@ class FontConverter(TypeConverter):
 
    Returns: The converted object.
   """
-  pass
- def CreateInstance(self,*__args):
-  """
+        pass
+
+    def CreateInstance(self, *__args):
+        """
   CreateInstance(self: FontConverter,context: ITypeDescriptorContext,propertyValues: IDictionary) -> object
 
   
@@ -138,9 +143,10 @@ class FontConverter(TypeConverter):
 
     properties.
   """
-  pass
- def GetCreateInstanceSupported(self,context=None):
-  """
+        pass
+
+    def GetCreateInstanceSupported(self, context=None):
+        """
   GetCreateInstanceSupported(self: FontConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -159,9 +165,10 @@ class FontConverter(TypeConverter):
 
     one or more properties of this object; otherwise,false.
   """
-  pass
- def GetProperties(self,*__args):
-  """
+        pass
+
+    def GetProperties(self, *__args):
+        """
   GetProperties(self: FontConverter,context: ITypeDescriptorContext,value: object,attributes: Array[Attribute]) -> PropertyDescriptorCollection
 
   
@@ -188,9 +195,10 @@ class FontConverter(TypeConverter):
 
     erload:System.ComponentModel.TypeConverter.GetProperties method for the correct data type.
   """
-  pass
- def GetPropertiesSupported(self,context=None):
-  """
+        pass
+
+    def GetPropertiesSupported(self, context=None):
+        """
   GetPropertiesSupported(self: FontConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -207,7 +215,7 @@ class FontConverter(TypeConverter):
 
      method should be called to find the properties of this object; otherwise,false.
   """
-  pass
- FontNameConverter=None
- FontUnitConverter=None
+        pass
 
+    FontNameConverter = None
+    FontUnitConverter = None

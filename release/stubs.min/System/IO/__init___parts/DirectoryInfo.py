@@ -1,13 +1,14 @@
-class DirectoryInfo(FileSystemInfo,ISerializable):
- """
+class DirectoryInfo(FileSystemInfo, ISerializable):
+    """
  Exposes instance methods for creating,moving,and enumerating through directories and subdirectories. This class cannot be inherited.
 
  
 
  DirectoryInfo(path: str)
  """
- def Create(self,directorySecurity=None):
-  """
+
+    def Create(self, directorySecurity=None):
+        """
   Create(self: DirectoryInfo,directorySecurity: DirectorySecurity)
 
    Creates a directory using a System.Security.AccessControl.DirectorySecurity object.
@@ -20,9 +21,10 @@ class DirectoryInfo(FileSystemInfo,ISerializable):
 
    Creates a directory.
   """
-  pass
- def CreateSubdirectory(self,path,directorySecurity=None):
-  """
+        pass
+
+    def CreateSubdirectory(self, path, directorySecurity=None):
+        """
   CreateSubdirectory(self: DirectoryInfo,path: str,directorySecurity: DirectorySecurity) -> DirectoryInfo
 
   
@@ -65,9 +67,10 @@ class DirectoryInfo(FileSystemInfo,ISerializable):
 
    Returns: The last directory specified in path.
   """
-  pass
- def Delete(self,recursive=None):
-  """
+        pass
+
+    def Delete(self, recursive=None):
+        """
   Delete(self: DirectoryInfo,recursive: bool)
 
    Deletes this instance of a System.IO.DirectoryInfo,specifying whether to delete subdirectories 
@@ -84,9 +87,10 @@ class DirectoryInfo(FileSystemInfo,ISerializable):
 
    Deletes this System.IO.DirectoryInfo if it is empty.
   """
-  pass
- def EnumerateDirectories(self,searchPattern=None,searchOption=None):
-  """
+        pass
+
+    def EnumerateDirectories(self, searchPattern=None, searchOption=None):
+        """
   EnumerateDirectories(self: DirectoryInfo,searchPattern: str,searchOption: SearchOption) -> IEnumerable[DirectoryInfo]
 
   
@@ -135,9 +139,10 @@ class DirectoryInfo(FileSystemInfo,ISerializable):
 
    Returns: An enumerable collection of directories in the current directory.
   """
-  pass
- def EnumerateFiles(self,searchPattern=None,searchOption=None):
-  """
+        pass
+
+    def EnumerateFiles(self, searchPattern=None, searchOption=None):
+        """
   EnumerateFiles(self: DirectoryInfo,searchPattern: str,searchOption: SearchOption) -> IEnumerable[FileInfo]
 
   
@@ -182,9 +187,10 @@ class DirectoryInfo(FileSystemInfo,ISerializable):
 
    Returns: An enumerable collection of the files in the current directory.
   """
-  pass
- def EnumerateFileSystemInfos(self,searchPattern=None,searchOption=None):
-  """
+        pass
+
+    def EnumerateFileSystemInfos(self, searchPattern=None, searchOption=None):
+        """
   EnumerateFileSystemInfos(self: DirectoryInfo,searchPattern: str,searchOption: SearchOption) -> IEnumerable[FileSystemInfo]
 
   
@@ -237,9 +243,10 @@ class DirectoryInfo(FileSystemInfo,ISerializable):
 
    Returns: An enumerable collection of file system information in the current directory.
   """
-  pass
- def GetAccessControl(self,includeSections=None):
-  """
+        pass
+
+    def GetAccessControl(self, includeSections=None):
+        """
   GetAccessControl(self: DirectoryInfo,includeSections: AccessControlSections) -> DirectorySecurity
 
   
@@ -296,9 +303,10 @@ class DirectoryInfo(FileSystemInfo,ISerializable):
 
     rules for the directory.
   """
-  pass
- def GetDirectories(self,searchPattern=None,searchOption=None):
-  """
+        pass
+
+    def GetDirectories(self, searchPattern=None, searchOption=None):
+        """
   GetDirectories(self: DirectoryInfo,searchPattern: str,searchOption: SearchOption) -> Array[DirectoryInfo]
 
   
@@ -353,9 +361,10 @@ class DirectoryInfo(FileSystemInfo,ISerializable):
 
    Returns: An array of System.IO.DirectoryInfo objects.
   """
-  pass
- def GetFiles(self,searchPattern=None,searchOption=None):
-  """
+        pass
+
+    def GetFiles(self, searchPattern=None, searchOption=None):
+        """
   GetFiles(self: DirectoryInfo) -> Array[FileInfo]
 
   
@@ -402,9 +411,10 @@ class DirectoryInfo(FileSystemInfo,ISerializable):
 
    Returns: An array of type System.IO.FileInfo.
   """
-  pass
- def GetFileSystemInfos(self,searchPattern=None,searchOption=None):
-  """
+        pass
+
+    def GetFileSystemInfos(self, searchPattern=None, searchOption=None):
+        """
   GetFileSystemInfos(self: DirectoryInfo) -> Array[FileSystemInfo]
 
   
@@ -461,9 +471,10 @@ class DirectoryInfo(FileSystemInfo,ISerializable):
 
    Returns: An array of strongly typed FileSystemInfo objects matching the search criteria.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -494,9 +505,10 @@ class DirectoryInfo(FileSystemInfo,ISerializable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def MoveTo(self,destDirName):
-  """
+        pass
+
+    def MoveTo(self, destDirName):
+        """
   MoveTo(self: DirectoryInfo,destDirName: str)
 
    Moves a System.IO.DirectoryInfo instance and its contents to a new path.
@@ -509,9 +521,10 @@ class DirectoryInfo(FileSystemInfo,ISerializable):
 
     this directory as a subdirectory.
   """
-  pass
- def SetAccessControl(self,directorySecurity):
-  """
+        pass
+
+    def SetAccessControl(self, directorySecurity):
+        """
   SetAccessControl(self: DirectoryInfo,directorySecurity: DirectorySecurity)
 
    Applies access control list (ACL) entries described by a 
@@ -526,9 +539,10 @@ class DirectoryInfo(FileSystemInfo,ISerializable):
 
    directorySecurity: An object that describes an ACL entry to apply to the directory described by the path parameter.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: DirectoryInfo) -> str
 
   
@@ -537,20 +551,25 @@ class DirectoryInfo(FileSystemInfo,ISerializable):
 
    Returns: Returns the original path that was passed by the user.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,path):
-  """ __new__(cls: type,path: str) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Exists=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the directory exists.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, path):
+        """ __new__(cls: type,path: str) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Exists = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the directory exists.
 
 
 
@@ -560,15 +579,15 @@ Get: Exists(self: DirectoryInfo) -> bool
 
 """
 
- FullName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: FullName(self: DirectoryInfo) -> str
+    FullName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: FullName(self: DirectoryInfo) -> str
 
 
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name of this System.IO.DirectoryInfo instance.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the name of this System.IO.DirectoryInfo instance.
 
 
 
@@ -578,8 +597,8 @@ Get: Name(self: DirectoryInfo) -> str
 
 """
 
- Parent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the parent directory of a specified subdirectory.
+    Parent = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the parent directory of a specified subdirectory.
 
 
 
@@ -589,8 +608,8 @@ Get: Parent(self: DirectoryInfo) -> DirectoryInfo
 
 """
 
- Root=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the root portion of a path.
+    Root = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the root portion of a path.
 
 
 
@@ -600,7 +619,5 @@ Get: Root(self: DirectoryInfo) -> DirectoryInfo
 
 """
 
-
- FullPath=None
- OriginalPath=None
-
+    FullPath = None
+    OriginalPath = None

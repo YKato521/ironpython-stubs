@@ -1,5 +1,5 @@
 class PageRange(object):
- """
+    """
  Specifies a range of pages.
 
  
@@ -8,8 +8,9 @@ class PageRange(object):
 
  PageRange(pageFrom: int,pageTo: int)
  """
- def Equals(self,*__args):
-  """
+
+    def Equals(self, *__args):
+        """
   Equals(self: PageRange,pageRange: PageRange) -> bool
 
   
@@ -40,9 +41,10 @@ class PageRange(object):
 
     System.Windows.Controls.PageRange; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: PageRange) -> int
 
   
@@ -51,9 +53,10 @@ class PageRange(object):
 
    Returns: The hash code value for the System.Windows.Controls.PageRange.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: PageRange) -> str
 
   
@@ -64,24 +67,28 @@ class PageRange(object):
 
     "System.Windows.Controls.PageRange.PageFrom-System.Windows.Controls.PageRange.PageTo".
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,page: int)
 
   __new__(cls: type,pageFrom: int,pageTo: int)
 
   __new__[PageRange]() -> PageRange
   """
-  pass
- def __ne__(self,*args):
-  pass
- PageFrom=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the page number of the first page in the range.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    PageFrom = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the page number of the first page in the range.
 
 
 
@@ -93,8 +100,8 @@ Set: PageFrom(self: PageRange)=value
 
 """
 
- PageTo=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the page number of the last page in the range.
+    PageTo = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the page number of the last page in the range.
 
 
 
@@ -105,5 +112,3 @@ Get: PageTo(self: PageRange) -> int
 Set: PageTo(self: PageRange)=value
 
 """
-
-

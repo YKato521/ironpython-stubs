@@ -1,13 +1,14 @@
 class TypeConverter(object):
- """
+    """
  Provides a unified way of converting types of values to other types,as well as for accessing standard values and subproperties.
 
  
 
  TypeConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: TypeConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -42,9 +43,10 @@ class TypeConverter(object):
 
    Returns: true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: TypeConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -75,9 +77,10 @@ class TypeConverter(object):
 
    Returns: true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: TypeConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -110,9 +113,10 @@ class TypeConverter(object):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def ConvertFromInvariantString(self,*__args):
-  """
+        pass
+
+    def ConvertFromInvariantString(self, *__args):
+        """
   ConvertFromInvariantString(self: TypeConverter,context: ITypeDescriptorContext,text: str) -> object
 
   
@@ -143,9 +147,10 @@ class TypeConverter(object):
 
    Returns: An System.Object that represents the converted text.
   """
-  pass
- def ConvertFromString(self,*__args):
-  """
+        pass
+
+    def ConvertFromString(self, *__args):
+        """
   ConvertFromString(self: TypeConverter,context: ITypeDescriptorContext,culture: CultureInfo,text: str) -> object
 
   
@@ -188,9 +193,10 @@ class TypeConverter(object):
 
    Returns: An System.Object that represents the converted text.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: TypeConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -227,9 +233,10 @@ class TypeConverter(object):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def ConvertToInvariantString(self,*__args):
-  """
+        pass
+
+    def ConvertToInvariantString(self, *__args):
+        """
   ConvertToInvariantString(self: TypeConverter,context: ITypeDescriptorContext,value: object) -> str
 
   
@@ -260,9 +267,10 @@ class TypeConverter(object):
 
    Returns: A System.String that represents the converted value.
   """
-  pass
- def ConvertToString(self,*__args):
-  """
+        pass
+
+    def ConvertToString(self, *__args):
+        """
   ConvertToString(self: TypeConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> str
 
   
@@ -309,9 +317,10 @@ class TypeConverter(object):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def CreateInstance(self,*__args):
-  """
+        pass
+
+    def CreateInstance(self, *__args):
+        """
   CreateInstance(self: TypeConverter,context: ITypeDescriptorContext,propertyValues: IDictionary) -> object
 
   
@@ -348,9 +357,10 @@ class TypeConverter(object):
 
     cannot be created. This method always returns null.
   """
-  pass
- def GetConvertFromException(self,*args):
-  """
+        pass
+
+    def GetConvertFromException(self, *args):
+        """
   GetConvertFromException(self: TypeConverter,value: object) -> Exception
 
   
@@ -363,9 +373,10 @@ class TypeConverter(object):
 
    Returns: An System.Exception that represents the exception to throw when a conversion cannot be performed.
   """
-  pass
- def GetConvertToException(self,*args):
-  """
+        pass
+
+    def GetConvertToException(self, *args):
+        """
   GetConvertToException(self: TypeConverter,value: object,destinationType: Type) -> Exception
 
   
@@ -380,9 +391,10 @@ class TypeConverter(object):
 
    Returns: An System.Exception that represents the exception to throw when a conversion cannot be performed.
   """
-  pass
- def GetCreateInstanceSupported(self,context=None):
-  """
+        pass
+
+    def GetCreateInstanceSupported(self, context=None):
+        """
   GetCreateInstanceSupported(self: TypeConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -425,9 +437,10 @@ class TypeConverter(object):
 
     new value; otherwise,false.
   """
-  pass
- def GetProperties(self,*__args):
-  """
+        pass
+
+    def GetProperties(self, *__args):
+        """
   GetProperties(self: TypeConverter,context: ITypeDescriptorContext,value: object,attributes: Array[Attribute]) -> PropertyDescriptorCollection
 
   
@@ -488,9 +501,10 @@ class TypeConverter(object):
 
     this data type,or null if there are no properties.
   """
-  pass
- def GetPropertiesSupported(self,context=None):
-  """
+        pass
+
+    def GetPropertiesSupported(self, context=None):
+        """
   GetPropertiesSupported(self: TypeConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -517,9 +531,10 @@ class TypeConverter(object):
 
     find the properties of this object; otherwise,false.
   """
-  pass
- def GetStandardValues(self,context=None):
-  """
+        pass
+
+    def GetStandardValues(self, context=None):
+        """
   GetStandardValues(self: TypeConverter,context: ITypeDescriptorContext) -> StandardValuesCollection
 
   
@@ -560,9 +575,10 @@ class TypeConverter(object):
 
     valid values,or null if the data type does not support a standard set of values.
   """
-  pass
- def GetStandardValuesExclusive(self,context=None):
-  """
+        pass
+
+    def GetStandardValuesExclusive(self, context=None):
+        """
   GetStandardValuesExclusive(self: TypeConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -603,9 +619,10 @@ class TypeConverter(object):
 
     false if other values are possible.
   """
-  pass
- def GetStandardValuesSupported(self,context=None):
-  """
+        pass
+
+    def GetStandardValuesSupported(self, context=None):
+        """
   GetStandardValuesSupported(self: TypeConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -636,9 +653,10 @@ class TypeConverter(object):
 
     set of values the object supports; otherwise,false.
   """
-  pass
- def IsValid(self,*__args):
-  """
+        pass
+
+    def IsValid(self, *__args):
+        """
   IsValid(self: TypeConverter,context: ITypeDescriptorContext,value: object) -> bool
 
   
@@ -665,9 +683,10 @@ class TypeConverter(object):
 
    Returns: true if the specified value is valid for this object; otherwise,false.
   """
-  pass
- def SortProperties(self,*args):
-  """
+        pass
+
+    def SortProperties(self, *args):
+        """
   SortProperties(self: TypeConverter,props: PropertyDescriptorCollection,names: Array[str]) -> PropertyDescriptorCollection
 
   
@@ -682,7 +701,7 @@ class TypeConverter(object):
 
    Returns: A System.ComponentModel.PropertyDescriptorCollection that contains the sorted properties.
   """
-  pass
- SimplePropertyDescriptor=None
- StandardValuesCollection=None
+        pass
 
+    SimplePropertyDescriptor = None
+    StandardValuesCollection = None

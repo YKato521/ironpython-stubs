@@ -8,10 +8,12 @@
 # no functions
 # classes
 
-class ChannelBinding(SafeHandleZeroOrMinusOneIsInvalid,IDisposable):
- """ The System.Security.Authentication.ExtendedProtection.ChannelBinding class encapsulates a pointer to the opaque data used to bind an authenticated transaction to a secure channel. """
- def Dispose(self):
-  """
+
+class ChannelBinding(SafeHandleZeroOrMinusOneIsInvalid, IDisposable):
+    """ The System.Security.Authentication.ExtendedProtection.ChannelBinding class encapsulates a pointer to the opaque data used to bind an authenticated transaction to a secure channel. """
+
+    def Dispose(self):
+        """
   Dispose(self: SafeHandle,disposing: bool)
 
    Releases the unmanaged resources used by the System.Runtime.InteropServices.SafeHandle class 
@@ -24,9 +26,10 @@ class ChannelBinding(SafeHandleZeroOrMinusOneIsInvalid,IDisposable):
 
    disposing: true for a normal dispose operation; false to finalize the handle.
   """
-  pass
- def ReleaseHandle(self,*args):
-  """
+        pass
+
+    def ReleaseHandle(self, *args):
+        """
   ReleaseHandle(self: SafeHandle) -> bool
 
   
@@ -37,9 +40,10 @@ class ChannelBinding(SafeHandleZeroOrMinusOneIsInvalid,IDisposable):
 
     false. In this case,it generates a releaseHandleFailed MDA Managed Debugging Assistant.
   """
-  pass
- def SetHandle(self,*args):
-  """
+        pass
+
+    def SetHandle(self, *args):
+        """
   SetHandle(self: SafeHandle,handle: IntPtr)
 
    Sets the handle to the specified pre-existing handle.
@@ -48,36 +52,41 @@ class ChannelBinding(SafeHandleZeroOrMinusOneIsInvalid,IDisposable):
 
    handle: The pre-existing handle to use.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """
   __new__(cls: type)
 
   __new__(cls: type,ownsHandle: bool)
   """
-  pass
- Size=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The System.Security.Authentication.ExtendedProtection.ChannelBinding.Size property gets the size,in bytes,of the channel binding token associated with the System.Security.Authentication.ExtendedProtection.ChannelBinding instance.
+        pass
+
+    Size = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The System.Security.Authentication.ExtendedProtection.ChannelBinding.Size property gets the size,in bytes,of the channel binding token associated with the System.Security.Authentication.ExtendedProtection.ChannelBinding instance.
 
 
 
@@ -87,49 +96,59 @@ Get: Size(self: ChannelBinding) -> int
 
 """
 
+    handle = None
 
- handle=None
 
-
-class ChannelBindingKind(Enum,IComparable,IFormattable,IConvertible):
- """
+class ChannelBindingKind(Enum, IComparable, IFormattable, IConvertible):
+    """
  The System.Security.Authentication.ExtendedProtection.ChannelBindingKind enumeration represents the kinds of channel bindings that can be queried from secure channels.
 
  
 
  enum ChannelBindingKind,values: Endpoint (26),Unique (25),Unknown (0)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Endpoint=None
- Unique=None
- Unknown=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Endpoint = None
+    Unique = None
+    Unknown = None
+    value__ = None
 
 
-class ExtendedProtectionPolicy(object,ISerializable):
- """
+class ExtendedProtectionPolicy(object, ISerializable):
+    """
  The System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy class represents the extended protection policy used by the server to validate incoming client connections.
 
  
@@ -142,8 +161,9 @@ class ExtendedProtectionPolicy(object,ISerializable):
 
  ExtendedProtectionPolicy(policyEnforcement: PolicyEnforcement)
  """
- def ToString(self):
-  """
+
+    def ToString(self):
+        """
   ToString(self: ExtendedProtectionPolicy) -> str
 
   
@@ -154,13 +174,15 @@ class ExtendedProtectionPolicy(object,ISerializable):
 
     System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy instance.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,policyEnforcement,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, policyEnforcement, *__args):
+        """
   __new__(cls: type,policyEnforcement: PolicyEnforcement,protectionScenario: ProtectionScenario,customServiceNames: ServiceNameCollection)
 
   __new__(cls: type,policyEnforcement: PolicyEnforcement,protectionScenario: ProtectionScenario,customServiceNames: ICollection)
@@ -171,16 +193,22 @@ class ExtendedProtectionPolicy(object,ISerializable):
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- CustomChannelBinding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a custom channel binding token (CBT) to use for validation.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    CustomChannelBinding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a custom channel binding token (CBT) to use for validation.
 
 
 
@@ -190,8 +218,10 @@ Get: CustomChannelBinding(self: ExtendedProtectionPolicy) -> ChannelBinding
 
 """
 
- CustomServiceNames=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the custom Service Provider Name (SPN) list used to match against a client's SPN.
+    CustomServiceNames = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the custom Service Provider Name (SPN) list used to match against a client's SPN.
 
 
 
@@ -201,8 +231,10 @@ Get: CustomServiceNames(self: ExtendedProtectionPolicy) -> ServiceNameCollection
 
 """
 
- PolicyEnforcement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets when the extended protection policy should be enforced.
+    PolicyEnforcement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets when the extended protection policy should be enforced.
 
 
 
@@ -212,8 +244,10 @@ Get: PolicyEnforcement(self: ExtendedProtectionPolicy) -> PolicyEnforcement
 
 """
 
- ProtectionScenario=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the kind of protection enforced by the extended protection policy.
+    ProtectionScenario = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the kind of protection enforced by the extended protection policy.
 
 
 
@@ -223,20 +257,20 @@ Get: ProtectionScenario(self: ExtendedProtectionPolicy) -> ProtectionScenario
 
 """
 
-
- OSSupportsExtendedProtection=True
+    OSSupportsExtendedProtection = True
 
 
 class ExtendedProtectionPolicyTypeConverter(TypeConverter):
- """
+    """
  The System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicyTypeConverter class represents the type converter for extended protection policy used by the server to validate incoming client connections.
 
  
 
  ExtendedProtectionPolicyTypeConverter()
  """
- def CanConvertTo(self,*__args):
-  """
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: ExtendedProtectionPolicyTypeConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -251,9 +285,10 @@ class ExtendedProtectionPolicyTypeConverter(TypeConverter):
 
    Returns: true if this converter can perform the conversion; otherwise false.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: ExtendedProtectionPolicyTypeConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -276,94 +311,119 @@ class ExtendedProtectionPolicyTypeConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value parameter.
   """
-  pass
+        pass
 
-class PolicyEnforcement(Enum,IComparable,IFormattable,IConvertible):
- """
+
+class PolicyEnforcement(Enum, IComparable, IFormattable, IConvertible):
+    """
  The System.Security.Authentication.ExtendedProtection.PolicyEnforcement enumeration specifies when the System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy should be enforced.
 
  
 
  enum PolicyEnforcement,values: Always (2),Never (0),WhenSupported (1)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Always=None
- Never=None
- value__=None
- WhenSupported=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Always = None
+    Never = None
+    value__ = None
+    WhenSupported = None
 
 
-class ProtectionScenario(Enum,IComparable,IFormattable,IConvertible):
- """
+class ProtectionScenario(Enum, IComparable, IFormattable, IConvertible):
+    """
  The System.Security.Authentication.ExtendedProtection.ProtectionScenario enumeration specifies the protection scenario enforced by the policy.
 
  
 
  enum ProtectionScenario,values: TransportSelected (0),TrustedProxy (1)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- TransportSelected=None
- TrustedProxy=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    TransportSelected = None
+    TrustedProxy = None
+    value__ = None
 
 
-class ServiceNameCollection(ReadOnlyCollectionBase,ICollection,IEnumerable):
- """
+class ServiceNameCollection(ReadOnlyCollectionBase, ICollection, IEnumerable):
+    """
  The System.Security.Authentication.ExtendedProtection.ServiceNameCollection class is a read-only collection of service principal names.
 
  
 
  ServiceNameCollection(items: ICollection)
  """
- def Contains(self,searchServiceName):
-  """ Contains(self: ServiceNameCollection,searchServiceName: str) -> bool """
-  pass
- def Merge(self,*__args):
-  """
+
+    def Contains(self, searchServiceName):
+        """ Contains(self: ServiceNameCollection,searchServiceName: str) -> bool """
+        pass
+
+    def Merge(self, *__args):
+        """
   Merge(self: ServiceNameCollection,serviceNames: IEnumerable) -> ServiceNameCollection
 
   
@@ -418,71 +478,87 @@ class ServiceNameCollection(ReadOnlyCollectionBase,ICollection,IEnumerable):
 
     specified values.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- @staticmethod
- def __new__(self,items):
-  """ __new__(cls: type,items: ICollection) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- InnerList=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of elements contained in the System.Collections.ReadOnlyCollectionBase instance.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    @staticmethod
+    def __new__(self, items):
+        """ __new__(cls: type,items: ICollection) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    InnerList = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of elements contained in the System.Collections.ReadOnlyCollectionBase instance.
 
 
 
 """
-
 
 
 class TokenBinding(object):
- # no doc
- def GetRawTokenBindingId(self):
-  """ GetRawTokenBindingId(self: TokenBinding) -> Array[Byte] """
-  pass
- BindingType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: BindingType(self: TokenBinding) -> TokenBindingType
+    # no doc
+    def GetRawTokenBindingId(self):
+        """ GetRawTokenBindingId(self: TokenBinding) -> Array[Byte] """
+        pass
+
+    BindingType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: BindingType(self: TokenBinding) -> TokenBindingType
 
 
 
 """
 
 
+class TokenBindingType(Enum, IComparable, IFormattable, IConvertible):
+    """ enum TokenBindingType,values: Provided (0),Referred (1) """
 
-class TokenBindingType(Enum,IComparable,IFormattable,IConvertible):
- """ enum TokenBindingType,values: Provided (0),Referred (1) """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Provided=None
- Referred=None
- value__=None
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Provided = None
+    Referred = None
+    value__ = None
 
 
 # variables with complex values
-

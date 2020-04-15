@@ -1,21 +1,35 @@
-class PathReinforcement(Element,IDisposable):
- """ An object that represents an Path Reinforcement within the Autodesk Revit project. """
- @staticmethod
- def Create(document,hostElement,curveArray,flip,pathReinforcementTypeId,rebarBarTypeId,startRebarHookTypeId,endRebarHookTypeId,rebarShapeId=None):
-  """
+class PathReinforcement(Element, IDisposable):
+    """ An object that represents an Path Reinforcement within the Autodesk Revit project. """
+
+    @staticmethod
+    def Create(
+        document,
+        hostElement,
+        curveArray,
+        flip,
+        pathReinforcementTypeId,
+        rebarBarTypeId,
+        startRebarHookTypeId,
+        endRebarHookTypeId,
+        rebarShapeId=None,
+    ):
+        """
   Create(document: Document,hostElement: Element,curveArray: IList[Curve],flip: bool,pathReinforcementTypeId: ElementId,rebarBarTypeId: ElementId,startRebarHookTypeId: ElementId,endRebarHookTypeId: ElementId) -> PathReinforcement
 
   Create(document: Document,hostElement: Element,curveArray: IList[Curve],flip: bool,pathReinforcementTypeId: ElementId,rebarBarTypeId: ElementId,startRebarHookTypeId: ElementId,endRebarHookTypeId: ElementId,rebarShapeId: ElementId) -> PathReinforcement
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetCurveElementIds(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetCurveElementIds(self):
+        """
   GetCurveElementIds(self: PathReinforcement) -> IList[ElementId]
 
   
@@ -28,9 +42,10 @@ class PathReinforcement(Element,IDisposable):
 
    Returns: A collection of ElementIds of ModelCurve elements.
   """
-  pass
- def GetHostId(self):
-  """
+        pass
+
+    def GetHostId(self):
+        """
   GetHostId(self: PathReinforcement) -> ElementId
 
   
@@ -43,10 +58,13 @@ class PathReinforcement(Element,IDisposable):
     
      wall,floor or foundation.
   """
-  pass
- @staticmethod
- def GetOrCreateDefaultRebarShape(document,rebarBarTypeId,startRebarHookTypeId,endRebarHookTypeId):
-  """
+        pass
+
+    @staticmethod
+    def GetOrCreateDefaultRebarShape(
+        document, rebarBarTypeId, startRebarHookTypeId, endRebarHookTypeId
+    ):
+        """
   GetOrCreateDefaultRebarShape(document: Document,rebarBarTypeId: ElementId,startRebarHookTypeId: ElementId,endRebarHookTypeId: ElementId) -> ElementId
 
   
@@ -83,9 +101,10 @@ class PathReinforcement(Element,IDisposable):
 
    Returns: Rebar Shape id.
   """
-  pass
- def GetRebarInSystemIds(self):
-  """
+        pass
+
+    def GetRebarInSystemIds(self):
+        """
   GetRebarInSystemIds(self: PathReinforcement) -> IList[ElementId]
 
   
@@ -96,9 +115,10 @@ class PathReinforcement(Element,IDisposable):
 
      element.
   """
-  pass
- def IsAlternatingLayerEnabled(self):
-  """
+        pass
+
+    def IsAlternatingLayerEnabled(self):
+        """
   IsAlternatingLayerEnabled(self: PathReinforcement) -> bool
 
   
@@ -107,9 +127,10 @@ class PathReinforcement(Element,IDisposable):
 
    Returns: True if the alternating bars exist in Path Reinforcement instance.
   """
-  pass
- def IsSolidInView(self,view):
-  """
+        pass
+
+    def IsSolidInView(self, view):
+        """
   IsSolidInView(self: PathReinforcement,view: View3D) -> bool
 
   
@@ -122,9 +143,10 @@ class PathReinforcement(Element,IDisposable):
 
    Returns: True if Path Reinforcement is shown solidly,false otherwise.
   """
-  pass
- def IsUnobscuredInView(self,view):
-  """
+        pass
+
+    def IsUnobscuredInView(self, view):
+        """
   IsUnobscuredInView(self: PathReinforcement,view: View) -> bool
 
   
@@ -137,9 +159,10 @@ class PathReinforcement(Element,IDisposable):
 
    Returns: True if Path Reinforcement is shown unobscured,false otherwise.
   """
-  pass
- def IsValidAlternatingBarOrientation(self,orientation):
-  """
+        pass
+
+    def IsValidAlternatingBarOrientation(self, orientation):
+        """
   IsValidAlternatingBarOrientation(self: PathReinforcement,orientation: ReinforcementBarOrientation) -> bool
 
   
@@ -152,9 +175,10 @@ class PathReinforcement(Element,IDisposable):
 
    Returns: True if orientation for alternating bars are valid.
   """
-  pass
- def IsValidPrimaryBarOrientation(self,orientation):
-  """
+        pass
+
+    def IsValidPrimaryBarOrientation(self, orientation):
+        """
   IsValidPrimaryBarOrientation(self: PathReinforcement,orientation: ReinforcementBarOrientation) -> bool
 
   
@@ -167,10 +191,11 @@ class PathReinforcement(Element,IDisposable):
 
    Returns: True if orientation for primary bars are valid.
   """
-  pass
- @staticmethod
- def IsValidRebarShapeId(aDoc,elementId):
-  """
+        pass
+
+    @staticmethod
+    def IsValidRebarShapeId(aDoc, elementId):
+        """
   IsValidRebarShapeId(aDoc: Document,elementId: ElementId) -> bool
 
   
@@ -189,13 +214,15 @@ class PathReinforcement(Element,IDisposable):
 
    Returns: True if the specified element id corresponds to a Rebar Shape element.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- @staticmethod
- def RemovePathReinforcementSystem(doc,system):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    @staticmethod
+    def RemovePathReinforcementSystem(doc, system):
+        """
   RemovePathReinforcementSystem(doc: Document,system: PathReinforcement) -> IList[ElementId]
 
   
@@ -216,12 +243,14 @@ class PathReinforcement(Element,IDisposable):
 
    Returns: The ids of the newly created Rebar elements.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetSolidInView(self,view,solid):
-  """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetSolidInView(self, view, solid):
+        """
   SetSolidInView(self: PathReinforcement,view: View3D,solid: bool)
 
    Sets this Path Reinforcement to be shown solidly in a 3D view.
@@ -232,9 +261,10 @@ class PathReinforcement(Element,IDisposable):
 
    solid: True if Path Reinforcement is shown solidly,false otherwise.
   """
-  pass
- def SetUnobscuredInView(self,view,unobscured):
-  """
+        pass
+
+    def SetUnobscuredInView(self, view, unobscured):
+        """
   SetUnobscuredInView(self: PathReinforcement,view: View,unobscured: bool)
 
    Sets Path Reinforcement to be shown unobscured in a view.
@@ -245,18 +275,24 @@ class PathReinforcement(Element,IDisposable):
 
    unobscured: True if Path Reinforcement is shown unobscured,false otherwise.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- AdditionalOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Additional offset of rebars in the Path Reinforcement.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    AdditionalOffset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Additional offset of rebars in the Path Reinforcement.
 
 
 
@@ -268,8 +304,10 @@ Set: AdditionalOffset(self: PathReinforcement)=value
 
 """
 
- AlternatingBarOrientation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Orientation of alternating bars of Path Reinforcement.
+    AlternatingBarOrientation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Orientation of alternating bars of Path Reinforcement.
 
 
 
@@ -281,8 +319,10 @@ Set: AlternatingBarOrientation(self: PathReinforcement)=value
 
 """
 
- AlternatingBarShapeId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The RebarShape element that defines the shape of the alternating bars of the Path Reinforcement.
+    AlternatingBarShapeId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The RebarShape element that defines the shape of the alternating bars of the Path Reinforcement.
 
 
 
@@ -294,8 +334,10 @@ Set: AlternatingBarShapeId(self: PathReinforcement)=value
 
 """
 
- PathReinforcementType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Retrieves the type of the Path Reinforcement.
+    PathReinforcementType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Retrieves the type of the Path Reinforcement.
 
 
 
@@ -305,8 +347,10 @@ Get: PathReinforcementType(self: PathReinforcement) -> PathReinforcementType
 
 """
 
- PrimaryBarOrientation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Orientation of primary bars of Path Reinforcement.
+    PrimaryBarOrientation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Orientation of primary bars of Path Reinforcement.
 
 
 
@@ -318,8 +362,10 @@ Set: PrimaryBarOrientation(self: PathReinforcement)=value
 
 """
 
- PrimaryBarShapeId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The RebarShape element that defines the shape of the primary bars of the Path Reinforcement.
+    PrimaryBarShapeId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The RebarShape element that defines the shape of the primary bars of the Path Reinforcement.
 
 
 
@@ -330,5 +376,3 @@ Get: PrimaryBarShapeId(self: PathReinforcement) -> ElementId
 Set: PrimaryBarShapeId(self: PathReinforcement)=value
 
 """
-
-

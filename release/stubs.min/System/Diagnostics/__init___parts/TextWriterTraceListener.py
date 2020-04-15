@@ -1,5 +1,5 @@
-class TextWriterTraceListener(TraceListener,IDisposable):
- """
+class TextWriterTraceListener(TraceListener, IDisposable):
+    """
  Directs tracing or debugging output to a System.IO.TextWriter or to a System.IO.Stream,such as System.IO.FileStream.
 
  
@@ -18,17 +18,19 @@ class TextWriterTraceListener(TraceListener,IDisposable):
 
  TextWriterTraceListener(fileName: str,name: str)
  """
- def Close(self):
-  """
+
+    def Close(self):
+        """
   Close(self: TextWriterTraceListener)
 
    Closes the System.Diagnostics.TextWriterTraceListener.Writer so that it no longer receives 
 
     tracing or debugging output.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: TextWriterTraceListener,disposing: bool)
 
    Disposes this System.Diagnostics.TextWriterTraceListener object.
@@ -39,16 +41,18 @@ class TextWriterTraceListener(TraceListener,IDisposable):
 
     System.Diagnostics.TextWriterTraceListener.Dispose(System.Boolean) has no effect.
   """
-  pass
- def Flush(self):
-  """
+        pass
+
+    def Flush(self):
+        """
   Flush(self: TextWriterTraceListener)
 
    Flushes the output buffer for the System.Diagnostics.TextWriterTraceListener.Writer.
   """
-  pass
- def GetSupportedAttributes(self,*args):
-  """
+        pass
+
+    def GetSupportedAttributes(self, *args):
+        """
   GetSupportedAttributes(self: TraceListener) -> Array[str]
 
   
@@ -59,9 +63,10 @@ class TextWriterTraceListener(TraceListener,IDisposable):
 
     are no custom attributes.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -92,9 +97,10 @@ class TextWriterTraceListener(TraceListener,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def Write(self,*__args):
-  """
+        pass
+
+    def Write(self, *__args):
+        """
   Write(self: TextWriterTraceListener,message: str)
 
    Writes a message to this instance's System.Diagnostics.TextWriterTraceListener.Writer.
@@ -103,18 +109,20 @@ class TextWriterTraceListener(TraceListener,IDisposable):
 
    message: A message to write.
   """
-  pass
- def WriteIndent(self,*args):
-  """
+        pass
+
+    def WriteIndent(self, *args):
+        """
   WriteIndent(self: TraceListener)
 
    Writes the indent to the listener you create when you implement this class,and resets the 
 
     System.Diagnostics.TraceListener.NeedIndent property to false.
   """
-  pass
- def WriteLine(self,*__args):
-  """
+        pass
+
+    def WriteLine(self, *__args):
+        """
   WriteLine(self: TextWriterTraceListener,message: str)
 
    Writes a message to this instance's System.Diagnostics.TextWriterTraceListener.Writer followed 
@@ -129,29 +137,33 @@ class TextWriterTraceListener(TraceListener,IDisposable):
 
    message: A message to write.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,stream: Stream)
@@ -166,16 +178,19 @@ class TextWriterTraceListener(TraceListener,IDisposable):
 
   __new__(cls: type,fileName: str,name: str)
   """
-  pass
- NeedIndent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether to indent the output.
+        pass
+
+    NeedIndent = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether to indent the output.
 
 
 
 """
 
- Writer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the text writer that receives the tracing or debugging output.
+    Writer = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the text writer that receives the tracing or debugging output.
 
 
 
@@ -186,5 +201,3 @@ Get: Writer(self: TextWriterTraceListener) -> TextWriter
 Set: Writer(self: TextWriterTraceListener)=value
 
 """
-
-

@@ -1,10 +1,12 @@
-class RebarConstraint(object,IDisposable):
- """ A class representing a constraint on a handle of a rebar element. """
- def Dispose(self):
-  """ Dispose(self: RebarConstraint) """
-  pass
- def GetConstraintType(self):
-  """
+class RebarConstraint(object, IDisposable):
+    """ A class representing a constraint on a handle of a rebar element. """
+
+    def Dispose(self):
+        """ Dispose(self: RebarConstraint) """
+        pass
+
+    def GetConstraintType(self):
+        """
   GetConstraintType(self: RebarConstraint) -> RebarConstraintType
 
   
@@ -13,9 +15,10 @@ class RebarConstraint(object,IDisposable):
 
    Returns: The RebarConstraintType of the specified RebarConstraint.
   """
-  pass
- def GetDistanceToTargetCover(self):
-  """
+        pass
+
+    def GetDistanceToTargetCover(self):
+        """
   GetDistanceToTargetCover(self: RebarConstraint) -> float
 
   
@@ -28,9 +31,10 @@ class RebarConstraint(object,IDisposable):
 
     'ToCover.'
   """
-  pass
- def GetDistanceToTargetHostFace(self):
-  """
+        pass
+
+    def GetDistanceToTargetHostFace(self):
+        """
   GetDistanceToTargetHostFace(self: RebarConstraint) -> float
 
   
@@ -43,9 +47,10 @@ class RebarConstraint(object,IDisposable):
 
     'FixedDistanceToHostFace.'
   """
-  pass
- def GetRebarConstraintTargetHostFaceType(self):
-  """
+        pass
+
+    def GetRebarConstraintTargetHostFaceType(self):
+        """
   GetRebarConstraintTargetHostFaceType(self: RebarConstraint) -> RebarConstraintTargetHostFaceType
 
   
@@ -60,18 +65,20 @@ class RebarConstraint(object,IDisposable):
 
      must be 'FixedDistanceToHostFace' or 'ToCover.'
   """
-  pass
- def GetTargetElement(self):
-  """
+        pass
+
+    def GetTargetElement(self):
+        """
   GetTargetElement(self: RebarConstraint) -> Element
 
   
 
    Returns the Element object (either Host or Rebar) which provides the constraint.
   """
-  pass
- def GetTargetHostFaceReference(self):
-  """
+        pass
+
+    def GetTargetHostFaceReference(self):
+        """
   GetTargetHostFaceReference(self: RebarConstraint) -> Reference
 
   
@@ -88,9 +95,10 @@ class RebarConstraint(object,IDisposable):
 
    Returns: Requested reference.
   """
-  pass
- def GetTargetRebarAngleOnBarOrHookBend(self):
-  """
+        pass
+
+    def GetTargetRebarAngleOnBarOrHookBend(self):
+        """
   GetTargetRebarAngleOnBarOrHookBend(self: RebarConstraint) -> int
 
   
@@ -103,9 +111,10 @@ class RebarConstraint(object,IDisposable):
 
    Returns: The angular increment relative to the reference bar edge.
   """
-  pass
- def GetTargetRebarBendNumber(self):
-  """
+        pass
+
+    def GetTargetRebarBendNumber(self):
+        """
   GetTargetRebarBendNumber(self: RebarConstraint) -> int
 
   
@@ -122,9 +131,10 @@ class RebarConstraint(object,IDisposable):
 
     be 'BarBend.'
   """
-  pass
- def GetTargetRebarConstraintType(self):
-  """
+        pass
+
+    def GetTargetRebarConstraintType(self):
+        """
   GetTargetRebarConstraintType(self: RebarConstraint) -> TargetRebarConstraintType
 
   
@@ -139,9 +149,10 @@ class RebarConstraint(object,IDisposable):
 
      RebarConstraint must be 'ToOtherRebar.'
   """
-  pass
- def GetTargetRebarEdgeNumber(self):
-  """
+        pass
+
+    def GetTargetRebarEdgeNumber(self):
+        """
   GetTargetRebarEdgeNumber(self: RebarConstraint) -> int
 
   
@@ -158,9 +169,10 @@ class RebarConstraint(object,IDisposable):
 
     be 'Edge.'
   """
-  pass
- def GetTargetRebarHookBarEnd(self):
-  """
+        pass
+
+    def GetTargetRebarHookBarEnd(self):
+        """
   GetTargetRebarHookBarEnd(self: RebarConstraint) -> int
 
   
@@ -177,9 +189,10 @@ class RebarConstraint(object,IDisposable):
 
     be 'HookBend.'
   """
-  pass
- def HasAnEdgeNumber(self):
-  """
+        pass
+
+    def HasAnEdgeNumber(self):
+        """
   HasAnEdgeNumber(self: RebarConstraint) -> bool
 
   
@@ -188,9 +201,10 @@ class RebarConstraint(object,IDisposable):
 
     RebarConstraint.
   """
-  pass
- def IsEqual(self,other):
-  """
+        pass
+
+    def IsEqual(self, other):
+        """
   IsEqual(self: RebarConstraint,other: RebarConstraint) -> bool
 
   
@@ -205,9 +219,10 @@ class RebarConstraint(object,IDisposable):
 
      RebarConstraintsManager is currently active.
   """
-  pass
- def IsFixedDistanceToHostFace(self):
-  """
+        pass
+
+    def IsFixedDistanceToHostFace(self):
+        """
   IsFixedDistanceToHostFace(self: RebarConstraint) -> bool
 
   
@@ -216,18 +231,20 @@ class RebarConstraint(object,IDisposable):
 
     'FixedDistanceToHostFace.'
   """
-  pass
- def IsToCover(self):
-  """
+        pass
+
+    def IsToCover(self):
+        """
   IsToCover(self: RebarConstraint) -> bool
 
   
 
    Returns true if the RebarConstraintType of the RebarConstraint is 'ToCover.'
   """
-  pass
- def IsToHostFaceOrCover(self):
-  """
+        pass
+
+    def IsToHostFaceOrCover(self):
+        """
   IsToHostFaceOrCover(self: RebarConstraint) -> bool
 
   
@@ -236,9 +253,10 @@ class RebarConstraint(object,IDisposable):
 
     'FixedDistanceToHostFace' or 'ToCover.'
   """
-  pass
- def IsToOtherRebar(self):
-  """
+        pass
+
+    def IsToOtherRebar(self):
+        """
   IsToOtherRebar(self: RebarConstraint) -> bool
 
   
@@ -247,9 +265,10 @@ class RebarConstraint(object,IDisposable):
 
     'ToOtherRebar.'
   """
-  pass
- def IsValid(self):
-  """
+        pass
+
+    def IsValid(self):
+        """
   IsValid(self: RebarConstraint) -> bool
 
   
@@ -260,12 +279,14 @@ class RebarConstraint(object,IDisposable):
     
      and that its RebarConstraintsManager is still valid.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: RebarConstraint,disposing: bool) """
-  pass
- def SetDistanceToTargetCover(self,distanceToTargetCover):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: RebarConstraint,disposing: bool) """
+        pass
+
+    def SetDistanceToTargetCover(self, distanceToTargetCover):
+        """
   SetDistanceToTargetCover(self: RebarConstraint,distanceToTargetCover: float)
 
    Sets the distance from the RebarConstrainedHandle to the target Host Cover 
@@ -284,9 +305,10 @@ class RebarConstraint(object,IDisposable):
 
     Cover direction.
   """
-  pass
- def SetDistanceToTargetHostFace(self,offset):
-  """
+        pass
+
+    def SetDistanceToTargetHostFace(self, offset):
+        """
   SetDistanceToTargetHostFace(self: RebarConstraint,offset: float)
 
    Sets the distance from the RebarConstrainedHandle to the target Host Element 
@@ -305,9 +327,10 @@ class RebarConstraint(object,IDisposable):
 
     Face direction.
   """
-  pass
- def TargetIsBarBend(self):
-  """
+        pass
+
+    def TargetIsBarBend(self):
+        """
   TargetIsBarBend(self: RebarConstraint) -> bool
 
   
@@ -316,9 +339,10 @@ class RebarConstraint(object,IDisposable):
 
     'BarBend'
   """
-  pass
- def TargetIsHookBend(self):
-  """
+        pass
+
+    def TargetIsHookBend(self):
+        """
   TargetIsHookBend(self: RebarConstraint) -> bool
 
   
@@ -327,9 +351,10 @@ class RebarConstraint(object,IDisposable):
 
     'HookBend'
   """
-  pass
- def TargetRebarConstraintTypeIsEdge(self):
-  """
+        pass
+
+    def TargetRebarConstraintTypeIsEdge(self):
+        """
   TargetRebarConstraintTypeIsEdge(self: RebarConstraint) -> bool
 
   
@@ -342,21 +367,28 @@ class RebarConstraint(object,IDisposable):
 
     Rebar Element.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -365,5 +397,3 @@ Get: IsValidObject(self: RebarConstraint) -> bool
 
 
 """
-
-

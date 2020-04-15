@@ -1,13 +1,14 @@
 class ImageIndexConverter(Int32Converter):
- """
+    """
  Provides a type converter to convert data for an image index to and from a string.
 
  
 
  ImageIndexConverter()
  """
- def ConvertFrom(self,*__args):
-  """
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: ImageIndexConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -24,9 +25,10 @@ class ImageIndexConverter(Int32Converter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: ImageIndexConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -51,9 +53,10 @@ class ImageIndexConverter(Int32Converter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def GetStandardValues(self,context=None):
-  """
+        pass
+
+    def GetStandardValues(self, context=None):
+        """
   GetStandardValues(self: ImageIndexConverter,context: ITypeDescriptorContext) -> StandardValuesCollection
 
   
@@ -80,9 +83,10 @@ class ImageIndexConverter(Int32Converter):
 
     a value of -1.
   """
-  pass
- def GetStandardValuesExclusive(self,context=None):
-  """
+        pass
+
+    def GetStandardValuesExclusive(self, context=None):
+        """
   GetStandardValuesExclusive(self: ImageIndexConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -101,9 +105,10 @@ class ImageIndexConverter(Int32Converter):
 
     exclusive list of valid values; otherwise,false. This implementation always returns false.
   """
-  pass
- def GetStandardValuesSupported(self,context=None):
-  """
+        pass
+
+    def GetStandardValuesSupported(self, context=None):
+        """
   GetStandardValuesSupported(self: ImageIndexConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -128,12 +133,13 @@ class ImageIndexConverter(Int32Converter):
 
     standard set of values; otherwise,false. Always returns true.
   """
-  pass
- IncludeNoneAsStandardValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether a none or null value is valid in the System.ComponentModel.TypeConverter.StandardValuesCollection collection.
+        pass
+
+    IncludeNoneAsStandardValue = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether a none or null value is valid in the System.ComponentModel.TypeConverter.StandardValuesCollection collection.
 
 
 
 """
-
-

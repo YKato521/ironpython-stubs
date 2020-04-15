@@ -19,7 +19,9 @@ from Animation_parts.EasingFunctionBase import EasingFunctionBase
 from Animation_parts.BackEase import BackEase
 from Animation_parts.BooleanAnimationBase import BooleanAnimationBase
 from Animation_parts.IKeyFrameAnimation import IKeyFrameAnimation
-from Animation_parts.BooleanAnimationUsingKeyFrames import BooleanAnimationUsingKeyFrames
+from Animation_parts.BooleanAnimationUsingKeyFrames import (
+    BooleanAnimationUsingKeyFrames,
+)
 from Animation_parts.IKeyFrame import IKeyFrame
 from Animation_parts.BooleanKeyFrame import BooleanKeyFrame
 from Animation_parts.BooleanKeyFrameCollection import BooleanKeyFrameCollection
@@ -46,7 +48,9 @@ from Animation_parts.ColorKeyFrameCollection import ColorKeyFrameCollection
 from Animation_parts.CubicEase import CubicEase
 from Animation_parts.DecimalAnimationBase import DecimalAnimationBase
 from Animation_parts.DecimalAnimation import DecimalAnimation
-from Animation_parts.DecimalAnimationUsingKeyFrames import DecimalAnimationUsingKeyFrames
+from Animation_parts.DecimalAnimationUsingKeyFrames import (
+    DecimalAnimationUsingKeyFrames,
+)
 from Animation_parts.DecimalKeyFrame import DecimalKeyFrame
 from Animation_parts.DecimalKeyFrameCollection import DecimalKeyFrameCollection
 from Animation_parts.DiscreteBooleanKeyFrame import DiscreteBooleanKeyFrame
@@ -155,7 +159,9 @@ from Animation_parts.ParallelTimeline import ParallelTimeline
 from Animation_parts.PathAnimationSource import PathAnimationSource
 from Animation_parts.Point3DAnimationBase import Point3DAnimationBase
 from Animation_parts.Point3DAnimation import Point3DAnimation
-from Animation_parts.Point3DAnimationUsingKeyFrames import Point3DAnimationUsingKeyFrames
+from Animation_parts.Point3DAnimationUsingKeyFrames import (
+    Point3DAnimationUsingKeyFrames,
+)
 from Animation_parts.Point3DKeyFrameCollection import Point3DKeyFrameCollection
 from Animation_parts.PointAnimationBase import PointAnimationBase
 from Animation_parts.PointAnimation import PointAnimation
@@ -167,7 +173,9 @@ from Animation_parts.QuadraticEase import QuadraticEase
 from Animation_parts.QuarticEase import QuarticEase
 from Animation_parts.QuaternionAnimationBase import QuaternionAnimationBase
 from Animation_parts.QuaternionAnimation import QuaternionAnimation
-from Animation_parts.QuaternionAnimationUsingKeyFrames import QuaternionAnimationUsingKeyFrames
+from Animation_parts.QuaternionAnimationUsingKeyFrames import (
+    QuaternionAnimationUsingKeyFrames,
+)
 from Animation_parts.QuaternionKeyFrameCollection import QuaternionKeyFrameCollection
 from Animation_parts.QuinticEase import QuinticEase
 from Animation_parts.RectAnimationBase import RectAnimationBase
@@ -178,7 +186,9 @@ from Animation_parts.RepeatBehavior import RepeatBehavior
 from Animation_parts.RepeatBehaviorConverter import RepeatBehaviorConverter
 from Animation_parts.Rotation3DAnimationBase import Rotation3DAnimationBase
 from Animation_parts.Rotation3DAnimation import Rotation3DAnimation
-from Animation_parts.Rotation3DAnimationUsingKeyFrames import Rotation3DAnimationUsingKeyFrames
+from Animation_parts.Rotation3DAnimationUsingKeyFrames import (
+    Rotation3DAnimationUsingKeyFrames,
+)
 from Animation_parts.Rotation3DKeyFrameCollection import Rotation3DKeyFrameCollection
 from Animation_parts.SineEase import SineEase
 from Animation_parts.SingleAnimationBase import SingleAnimationBase
@@ -213,7 +223,9 @@ from Animation_parts.TimelineCollection import TimelineCollection
 from Animation_parts.TimeSeekOrigin import TimeSeekOrigin
 from Animation_parts.Vector3DAnimationBase import Vector3DAnimationBase
 from Animation_parts.Vector3DAnimation import Vector3DAnimation
-from Animation_parts.Vector3DAnimationUsingKeyFrames import Vector3DAnimationUsingKeyFrames
+from Animation_parts.Vector3DAnimationUsingKeyFrames import (
+    Vector3DAnimationUsingKeyFrames,
+)
 from Animation_parts.Vector3DKeyFrameCollection import Vector3DKeyFrameCollection
 from Animation_parts.VectorAnimationBase import VectorAnimationBase
 from Animation_parts.VectorAnimation import VectorAnimation

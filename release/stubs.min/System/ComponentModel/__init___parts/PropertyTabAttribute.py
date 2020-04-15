@@ -1,5 +1,5 @@
-class PropertyTabAttribute(Attribute,_Attribute):
- """
+class PropertyTabAttribute(Attribute, _Attribute):
+    """
  Identifies the property tab or tabs to display for the specified class or classes.
 
  
@@ -14,8 +14,9 @@ class PropertyTabAttribute(Attribute,_Attribute):
 
  PropertyTabAttribute(tabClassName: str,tabScope: PropertyTabScope)
  """
- def Equals(self,other):
-  """
+
+    def Equals(self, other):
+        """
   Equals(self: PropertyTabAttribute,other: PropertyTabAttribute) -> bool
 
   
@@ -42,9 +43,10 @@ class PropertyTabAttribute(Attribute,_Attribute):
 
     false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: PropertyTabAttribute) -> int
 
   
@@ -53,9 +55,10 @@ class PropertyTabAttribute(Attribute,_Attribute):
 
    Returns: The hash code for the object the attribute belongs to.
   """
-  pass
- def InitializeArrays(self,*args):
-  """
+        pass
+
+    def InitializeArrays(self, *args):
+        """
   InitializeArrays(self: PropertyTabAttribute,tabClasses: Array[Type],tabScopes: Array[PropertyTabScope])
 
    Initializes the attribute using the specified names of tab classes and array of tab scopes.
@@ -90,16 +93,19 @@ class PropertyTabAttribute(Attribute,_Attribute):
 
     document.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,tabClass: Type)
@@ -110,11 +116,15 @@ class PropertyTabAttribute(Attribute,_Attribute):
 
   __new__(cls: type,tabClassName: str,tabScope: PropertyTabScope)
   """
-  pass
- def __ne__(self,*args):
-  pass
- TabClasses=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the types of tabs that this attribute uses.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    TabClasses = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the types of tabs that this attribute uses.
 
 
 
@@ -124,15 +134,17 @@ Get: TabClasses(self: PropertyTabAttribute) -> Array[Type]
 
 """
 
- TabClassNames=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the names of the tab classes that this attribute uses.
+    TabClassNames = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the names of the tab classes that this attribute uses.
 
 
 
 """
 
- TabScopes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an array of tab scopes of each tab of this System.ComponentModel.PropertyTabAttribute.
+    TabScopes = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an array of tab scopes of each tab of this System.ComponentModel.PropertyTabAttribute.
 
 
 
@@ -141,5 +153,3 @@ Get: TabScopes(self: PropertyTabAttribute) -> Array[PropertyTabScope]
 
 
 """
-
-

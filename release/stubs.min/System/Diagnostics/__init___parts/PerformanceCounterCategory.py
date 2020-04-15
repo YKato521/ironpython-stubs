@@ -1,5 +1,5 @@
 class PerformanceCounterCategory(object):
- """
+    """
  Represents a performance object,which defines a category of performance counters.
 
  
@@ -10,8 +10,9 @@ class PerformanceCounterCategory(object):
 
  PerformanceCounterCategory(categoryName: str,machineName: str)
  """
- def CounterExists(self,counterName,categoryName=None,machineName=None):
-  """
+
+    def CounterExists(self, counterName, categoryName=None, machineName=None):
+        """
   CounterExists(counterName: str,categoryName: str,machineName: str) -> bool
 
   
@@ -92,10 +93,11 @@ class PerformanceCounterCategory(object):
 
     System.Diagnostics.PerformanceCounterCategory.MachineName properties; otherwise,false.
   """
-  pass
- @staticmethod
- def Create(categoryName,categoryHelp,*__args):
-  """
+        pass
+
+    @staticmethod
+    def Create(categoryName, categoryHelp, *__args):
+        """
   Create(categoryName: str,categoryHelp: str,counterData: CounterCreationDataCollection) -> PerformanceCounterCategory
 
   
@@ -214,10 +216,11 @@ class PerformanceCounterCategory(object):
 
     or performance object.
   """
-  pass
- @staticmethod
- def Delete(categoryName):
-  """
+        pass
+
+    @staticmethod
+    def Delete(categoryName):
+        """
   Delete(categoryName: str)
 
    Removes the category and its associated counters from the local computer.
@@ -226,10 +229,11 @@ class PerformanceCounterCategory(object):
 
    categoryName: The name of the custom performance counter category to delete.
   """
-  pass
- @staticmethod
- def Exists(categoryName,machineName=None):
-  """
+        pass
+
+    @staticmethod
+    def Exists(categoryName, machineName=None):
+        """
   Exists(categoryName: str,machineName: str) -> bool
 
   
@@ -256,10 +260,11 @@ class PerformanceCounterCategory(object):
 
    Returns: true if the category is registered; otherwise,false.
   """
-  pass
- @staticmethod
- def GetCategories(machineName=None):
-  """
+        pass
+
+    @staticmethod
+    def GetCategories(machineName=None):
+        """
   GetCategories(machineName: str) -> Array[PerformanceCounterCategory]
 
   
@@ -290,9 +295,10 @@ class PerformanceCounterCategory(object):
 
     are registered on the local computer.
   """
-  pass
- def GetCounters(self,instanceName=None):
-  """
+        pass
+
+    def GetCounters(self, instanceName=None):
+        """
   GetCounters(self: PerformanceCounterCategory,instanceName: str) -> Array[PerformanceCounter]
 
   
@@ -327,9 +333,10 @@ class PerformanceCounterCategory(object):
 
     associated with this single-instance performance counter category.
   """
-  pass
- def GetInstanceNames(self):
-  """
+        pass
+
+    def GetInstanceNames(self):
+        """
   GetInstanceNames(self: PerformanceCounterCategory) -> Array[str]
 
   
@@ -342,9 +349,10 @@ class PerformanceCounterCategory(object):
 
     array that contains an empty string ("").
   """
-  pass
- def InstanceExists(self,instanceName,categoryName=None,machineName=None):
-  """
+        pass
+
+    def InstanceExists(self, instanceName, categoryName=None, machineName=None):
+        """
   InstanceExists(instanceName: str,categoryName: str,machineName: str) -> bool
 
   
@@ -401,9 +409,10 @@ class PerformanceCounterCategory(object):
 
    Returns: true if the category contains the specified performance object instance; otherwise,false.
   """
-  pass
- def ReadCategory(self):
-  """
+        pass
+
+    def ReadCategory(self):
+        """
   ReadCategory(self: PerformanceCounterCategory) -> InstanceDataCollectionCollection
 
   
@@ -418,19 +427,23 @@ class PerformanceCounterCategory(object):
 
     object instance data for the category.
   """
-  pass
- @staticmethod
- def __new__(self,categoryName=None,machineName=None):
-  """
+        pass
+
+    @staticmethod
+    def __new__(self, categoryName=None, machineName=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,categoryName: str)
 
   __new__(cls: type,categoryName: str,machineName: str)
   """
-  pass
- CategoryHelp=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the category's help text.
+        pass
+
+    CategoryHelp = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the category's help text.
 
 
 
@@ -440,8 +453,10 @@ Get: CategoryHelp(self: PerformanceCounterCategory) -> str
 
 """
 
- CategoryName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the performance object that defines this category.
+    CategoryName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the performance object that defines this category.
 
 
 
@@ -453,8 +468,10 @@ Set: CategoryName(self: PerformanceCounterCategory)=value
 
 """
 
- CategoryType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the performance counter category type.
+    CategoryType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the performance counter category type.
 
 
 
@@ -464,8 +481,10 @@ Get: CategoryType(self: PerformanceCounterCategory) -> PerformanceCounterCategor
 
 """
 
- MachineName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the computer on which this category exists.
+    MachineName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the computer on which this category exists.
 
 
 
@@ -476,5 +495,3 @@ Get: MachineName(self: PerformanceCounterCategory) -> str
 Set: MachineName(self: PerformanceCounterCategory)=value
 
 """
-
-

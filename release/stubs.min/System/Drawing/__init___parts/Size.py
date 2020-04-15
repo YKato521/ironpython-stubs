@@ -1,5 +1,5 @@
 class Size(object):
- """
+    """
  Stores an ordered pair of integers,which specify a System.Drawing.Size.Height and System.Drawing.Size.Width.
 
  
@@ -8,9 +8,10 @@ class Size(object):
 
  Size(width: int,height: int)
  """
- @staticmethod
- def Add(sz1,sz2):
-  """
+
+    @staticmethod
+    def Add(sz1, sz2):
+        """
   Add(sz1: Size,sz2: Size) -> Size
 
   
@@ -29,10 +30,11 @@ class Size(object):
 
    Returns: A System.Drawing.Size structure that is the result of the addition operation.
   """
-  pass
- @staticmethod
- def Ceiling(value):
-  """
+        pass
+
+    @staticmethod
+    def Ceiling(value):
+        """
   Ceiling(value: SizeF) -> Size
 
   
@@ -49,9 +51,10 @@ class Size(object):
 
    Returns: The System.Drawing.Size structure this method converts to.
   """
-  pass
- def Equals(self,obj):
-  """
+        pass
+
+    def Equals(self, obj):
+        """
   Equals(self: Size,obj: object) -> bool
 
   
@@ -70,9 +73,10 @@ class Size(object):
 
     System.Drawing.Size; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Size) -> int
 
   
@@ -81,10 +85,11 @@ class Size(object):
 
    Returns: An integer value that specifies a hash value for this System.Drawing.Size structure.
   """
-  pass
- @staticmethod
- def Round(value):
-  """
+        pass
+
+    @staticmethod
+    def Round(value):
+        """
   Round(value: SizeF) -> Size
 
   
@@ -101,10 +106,11 @@ class Size(object):
 
    Returns: The System.Drawing.Size structure this method converts to.
   """
-  pass
- @staticmethod
- def Subtract(sz1,sz2):
-  """
+        pass
+
+    @staticmethod
+    def Subtract(sz1, sz2):
+        """
   Subtract(sz1: Size,sz2: Size) -> Size
 
   
@@ -123,9 +129,10 @@ class Size(object):
 
    Returns: A System.Drawing.Size structure that is a result of the subtraction operation.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: Size) -> str
 
   
@@ -134,10 +141,11 @@ class Size(object):
 
    Returns: A string that represents this System.Drawing.Size.
   """
-  pass
- @staticmethod
- def Truncate(value):
-  """
+        pass
+
+    @staticmethod
+    def Truncate(value):
+        """
   Truncate(value: SizeF) -> Size
 
   
@@ -154,16 +162,19 @@ class Size(object):
 
    Returns: The System.Drawing.Size structure this method converts to.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__[Size]() -> Size
 
   
@@ -172,11 +183,13 @@ class Size(object):
 
   __new__(cls: type,width: int,height: int)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __radd__(self,*args):
-  """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __radd__(self, *args):
+        """
   __radd__(sz1: Size,sz2: Size) -> Size
 
   
@@ -195,9 +208,10 @@ class Size(object):
 
    Returns: A System.Drawing.Size structure that is the result of the addition operation.
   """
-  pass
- def __rsub__(self,*args):
-  """
+        pass
+
+    def __rsub__(self, *args):
+        """
   __rsub__(sz1: Size,sz2: Size) -> Size
 
   
@@ -216,12 +230,14 @@ class Size(object):
 
    Returns: A System.Drawing.Size structure that is the result of the subtraction operation.
   """
-  pass
- def __sub__(self,*args):
-  """ x.__sub__(y) <==> x-y """
-  pass
- Height=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the vertical component of this System.Drawing.Size structure.
+        pass
+
+    def __sub__(self, *args):
+        """ x.__sub__(y) <==> x-y """
+        pass
+
+    Height = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the vertical component of this System.Drawing.Size structure.
 
 
 
@@ -233,8 +249,8 @@ Set: Height(self: Size)=value
 
 """
 
- IsEmpty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Tests whether this System.Drawing.Size structure has width and height of 0.
+    IsEmpty = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Tests whether this System.Drawing.Size structure has width and height of 0.
 
 
 
@@ -244,8 +260,8 @@ Get: IsEmpty(self: Size) -> bool
 
 """
 
- Width=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the horizontal component of this System.Drawing.Size structure.
+    Width = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the horizontal component of this System.Drawing.Size structure.
 
 
 
@@ -257,6 +273,4 @@ Set: Width(self: Size)=value
 
 """
 
-
- Empty=None
-
+    Empty = None

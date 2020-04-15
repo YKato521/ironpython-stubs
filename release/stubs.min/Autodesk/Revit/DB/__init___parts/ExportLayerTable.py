@@ -1,5 +1,10 @@
-class ExportLayerTable(object,IEnumerable[KeyValuePair[ExportLayerKey,ExportLayerInfo]],IEnumerable,IDisposable):
- """
+class ExportLayerTable(
+    object,
+    IEnumerable[KeyValuePair[ExportLayerKey, ExportLayerInfo]],
+    IEnumerable,
+    IDisposable,
+):
+    """
  A table supporting a mapping of category and subcategory to layer name and other layer properties that will be set
 
     in the target export format.
@@ -8,8 +13,9 @@ class ExportLayerTable(object,IEnumerable[KeyValuePair[ExportLayerKey,ExportLaye
 
  ExportLayerTable()
  """
- def Add(self,exportLayerKey,exportLayerInfo):
-  """
+
+    def Add(self, exportLayerKey, exportLayerInfo):
+        """
   Add(self: ExportLayerTable,exportLayerKey: ExportLayerKey,exportLayerInfo: ExportLayerInfo)
 
    Inserts a (key,info) pair into Export layer table.
@@ -20,16 +26,18 @@ class ExportLayerTable(object,IEnumerable[KeyValuePair[ExportLayerKey,ExportLaye
 
    exportLayerInfo: The export layer info to be added.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: ExportLayerTable)
 
    Removes all contents stored in the table.
   """
-  pass
- def ContainsKey(self,exportlayerKey):
-  """
+        pass
+
+    def ContainsKey(self, exportlayerKey):
+        """
   ContainsKey(self: ExportLayerTable,exportlayerKey: ExportLayerKey) -> bool
 
   
@@ -42,13 +50,15 @@ class ExportLayerTable(object,IEnumerable[KeyValuePair[ExportLayerKey,ExportLaye
 
    Returns: True if the layer key exists in the table.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: ExportLayerTable) """
-  pass
- @staticmethod
- def GetAvaliableLayerModifierTypes(document,exportLayerKey):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: ExportLayerTable) """
+        pass
+
+    @staticmethod
+    def GetAvaliableLayerModifierTypes(document, exportLayerKey):
+        """
   GetAvaliableLayerModifierTypes(document: Document,exportLayerKey: ExportLayerKey) -> IList[ModifierType]
 
   
@@ -67,9 +77,10 @@ class ExportLayerTable(object,IEnumerable[KeyValuePair[ExportLayerKey,ExportLaye
 
    Returns: The layer modifier types.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: ExportLayerTable) -> IEnumerator[KeyValuePair[ExportLayerKey,ExportLayerInfo]]
 
   
@@ -78,9 +89,10 @@ class ExportLayerTable(object,IEnumerable[KeyValuePair[ExportLayerKey,ExportLaye
 
    Returns: An IEnumerator object that can be used to iterate through the collection.
   """
-  pass
- def GetExportLayerInfo(self,exportLayerKey):
-  """
+        pass
+
+    def GetExportLayerInfo(self, exportLayerKey):
+        """
   GetExportLayerInfo(self: ExportLayerTable,exportLayerKey: ExportLayerKey) -> ExportLayerInfo
 
   
@@ -93,9 +105,10 @@ class ExportLayerTable(object,IEnumerable[KeyValuePair[ExportLayerKey,ExportLaye
 
    Returns: Return the layerInfo for this key.
   """
-  pass
- def GetKeys(self):
-  """
+        pass
+
+    def GetKeys(self):
+        """
   GetKeys(self: ExportLayerTable) -> IList[ExportLayerKey]
 
   
@@ -104,9 +117,10 @@ class ExportLayerTable(object,IEnumerable[KeyValuePair[ExportLayerKey,ExportLaye
 
    Returns: Return the key array.
   """
-  pass
- def GetLayerTableIterator(self):
-  """
+        pass
+
+    def GetLayerTableIterator(self):
+        """
   GetLayerTableIterator(self: ExportLayerTable) -> ExportLayerTableIterator
 
   
@@ -117,9 +131,10 @@ class ExportLayerTable(object,IEnumerable[KeyValuePair[ExportLayerKey,ExportLaye
 
     in the collection.
   """
-  pass
- def GetValues(self):
-  """
+        pass
+
+    def GetValues(self):
+        """
   GetValues(self: ExportLayerTable) -> IList[ExportLayerInfo]
 
   
@@ -128,12 +143,14 @@ class ExportLayerTable(object,IEnumerable[KeyValuePair[ExportLayerKey,ExportLaye
 
    Returns: Return the info array.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: ExportLayerTable,disposing: bool) """
-  pass
- def Remove(self,exportLayerKey):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: ExportLayerTable,disposing: bool) """
+        pass
+
+    def Remove(self, exportLayerKey):
+        """
   Remove(self: ExportLayerTable,exportLayerKey: ExportLayerKey)
 
    Removes the pair (key,info) by pattern key.
@@ -142,36 +159,46 @@ class ExportLayerTable(object,IEnumerable[KeyValuePair[ExportLayerKey,ExportLaye
 
    exportLayerKey: The export pattern key.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__[KeyValuePair[ExportLayerKey,ExportLayerInfo]](enumerable: IEnumerable[KeyValuePair[ExportLayerKey,ExportLayerInfo]],value: KeyValuePair[ExportLayerKey,ExportLayerInfo]) -> bool """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Count of the items contained in the collection.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[KeyValuePair[ExportLayerKey,ExportLayerInfo]](enumerable: IEnumerable[KeyValuePair[ExportLayerKey,ExportLayerInfo]],value: KeyValuePair[ExportLayerKey,ExportLayerInfo]) -> bool """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Count of the items contained in the collection.
 
 
 
@@ -181,8 +208,10 @@ Get: Count(self: ExportLayerTable) -> int
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -191,5 +220,3 @@ Get: IsValidObject(self: ExportLayerTable) -> bool
 
 
 """
-
-

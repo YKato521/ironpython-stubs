@@ -1,13 +1,14 @@
-class Light(GeometryBase,IDisposable,ISerializable):
- """
+class Light(GeometryBase, IDisposable, ISerializable):
+    """
  Represents a light that shines in the modeling space.
 
  
 
  Light()
  """
- def ConstructConstObject(self,*args):
-  """
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -18,10 +19,11 @@ class Light(GeometryBase,IDisposable,ISerializable):
 
    subobject_index: The subobject index.
   """
-  pass
- @staticmethod
- def CreateSunLight(*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateSunLight(*__args):
+        """
   CreateSunLight(sun: Sun) -> Light
 
   
@@ -84,9 +86,10 @@ class Light(GeometryBase,IDisposable,ISerializable):
 
    Returns: A new sun light.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: CommonObject,disposing: bool)
 
    For derived class implementers.
@@ -111,9 +114,10 @@ class Light(GeometryBase,IDisposable,ISerializable):
 
     finalizer.
   """
-  pass
- def GetAttenuation(self,d):
-  """
+        pass
+
+    def GetAttenuation(self, d):
+        """
   GetAttenuation(self: Light,d: float) -> float
 
   
@@ -132,9 +136,10 @@ class Light(GeometryBase,IDisposable,ISerializable):
 
    Returns: 0 if a0 + d*a1 + d^2*a2 <= 0.
   """
-  pass
- def GetSpotLightRadii(self,innerRadius,outerRadius):
-  """
+        pass
+
+    def GetSpotLightRadii(self, innerRadius, outerRadius):
+        """
   GetSpotLightRadii(self: Light) -> (bool,float,float)
 
   
@@ -143,9 +148,10 @@ class Light(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if operation succeeded; otherwise,false.
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: CommonObject)
 
    For derived classes implementers.
@@ -154,16 +160,18 @@ class Light(GeometryBase,IDisposable,ISerializable):
 
     instance from being const.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: GeometryBase)
 
    Is called when a non-const operation occurs.
   """
-  pass
- def SetAttenuation(self,a0,a1,a2):
-  """
+        pass
+
+    def SetAttenuation(self, a0, a1, a2):
+        """
   SetAttenuation(self: Light,a0: float,a1: float,a2: float)
 
    Sets the attenuation settings (ignored for "directional" and "ambient" lights).
@@ -182,38 +190,44 @@ class Light(GeometryBase,IDisposable,ISerializable):
 
    a2: The new reverse quadratic attenuation divisor term.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self):
+        """
   __new__(cls: type)
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- Ambient=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the ambient color.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    Ambient = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the ambient color.
 
 
 
@@ -225,8 +239,10 @@ Set: Ambient(self: Light)=value
 
 """
 
- AttenuationVector=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or Sets the attenuation vector.
+    AttenuationVector = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or Sets the attenuation vector.
 
 
 
@@ -238,8 +254,10 @@ Set: AttenuationVector(self: Light)=value
 
 """
 
- CoordinateSystem=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value,determined by LightStyle,that explains whether
+    CoordinateSystem = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value,determined by LightStyle,that explains whether
 
    the camera diretions are relative to World or Camera spaces.
 
@@ -251,8 +269,8 @@ Get: CoordinateSystem(self: Light) -> CoordinateSystem
 
 """
 
- Diffuse=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the diffuse color.
+    Diffuse = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the diffuse color.
 
 
 
@@ -264,8 +282,8 @@ Set: Diffuse(self: Light)=value
 
 """
 
- Direction=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the vector direction of the camera.
+    Direction = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the vector direction of the camera.
 
 
 
@@ -277,8 +295,8 @@ Set: Direction(self: Light)=value
 
 """
 
- HotSpot=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The hot spot setting runs from 0.0 to 1.0 and is used to
+    HotSpot = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The hot spot setting runs from 0.0 to 1.0 and is used to
 
    provides a linear interface for controling the focus or 
 
@@ -298,8 +316,8 @@ Set: HotSpot(self: Light)=value
 
 """
 
- Intensity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the light intensity.
+    Intensity = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the light intensity.
 
 
 
@@ -311,8 +329,10 @@ Set: Intensity(self: Light)=value
 
 """
 
- IsDirectionalLight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the light style
+    IsDirectionalLight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the light style
 
    is Rhino.Geometry.Light.LightStyle CameraDirectional or WorldDirectional.
 
@@ -324,8 +344,8 @@ Get: IsDirectionalLight(self: Light) -> bool
 
 """
 
- IsEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that defines if the light is turned on (true) or off (false).
+    IsEnabled = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value that defines if the light is turned on (true) or off (false).
 
 
 
@@ -337,8 +357,10 @@ Set: IsEnabled(self: Light)=value
 
 """
 
- IsLinearLight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the light style
+    IsLinearLight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the light style
 
    is Rhino.Geometry.Light.LightStyle WorldLinear.
 
@@ -350,8 +372,10 @@ Get: IsLinearLight(self: Light) -> bool
 
 """
 
- IsPointLight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the light style
+    IsPointLight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the light style
 
    is Rhino.Geometry.Light.LightStyle CameraPoint or WorldPoint.
 
@@ -363,8 +387,10 @@ Get: IsPointLight(self: Light) -> bool
 
 """
 
- IsRectangularLight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the light style
+    IsRectangularLight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the light style
 
    is Rhino.Geometry.Light.LightStyle WorldRectangular.
 
@@ -376,8 +402,10 @@ Get: IsRectangularLight(self: Light) -> bool
 
 """
 
- IsSpotLight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the light style
+    IsSpotLight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the light style
 
    is Rhino.Geometry.Light.LightStyle CameraSpot or WorldSpot.
 
@@ -389,8 +417,10 @@ Get: IsSpotLight(self: Light) -> bool
 
 """
 
- IsSunLight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether this object is a Sun light.
+    IsSunLight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether this object is a Sun light.
 
 
 
@@ -400,8 +430,8 @@ Get: IsSunLight(self: Light) -> bool
 
 """
 
- Length=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the height in linear and rectangular lights.
+    Length = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the height in linear and rectangular lights.
 
    (ignored for non-linear/rectangular lights.)
 
@@ -415,8 +445,10 @@ Set: Length(self: Light)=value
 
 """
 
- LightStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a light style on this camera.
+    LightStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a light style on this camera.
 
 
 
@@ -428,8 +460,8 @@ Set: LightStyle(self: Light)=value
 
 """
 
- Location=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the light or 3D position or location.
+    Location = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the light or 3D position or location.
 
 
 
@@ -441,8 +473,8 @@ Set: Location(self: Light)=value
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the spot light name.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the spot light name.
 
 
 
@@ -454,8 +486,10 @@ Set: Name(self: Light)=value
 
 """
 
- PerpendicularDirection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a perpendicular vector to the camera direction.
+    PerpendicularDirection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a perpendicular vector to the camera direction.
 
 
 
@@ -465,8 +499,10 @@ Get: PerpendicularDirection(self: Light) -> Vector3d
 
 """
 
- PowerCandela=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the light power in candelas (cd).
+    PowerCandela = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the light power in candelas (cd).
 
 
 
@@ -478,8 +514,10 @@ Set: PowerCandela(self: Light)=value
 
 """
 
- PowerLumens=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the light power in lumens (lm).
+    PowerLumens = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the light power in lumens (lm).
 
 
 
@@ -491,8 +529,10 @@ Set: PowerLumens(self: Light)=value
 
 """
 
- PowerWatts=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the light power in watts (W).
+    PowerWatts = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the light power in watts (W).
 
 
 
@@ -504,8 +544,8 @@ Set: PowerWatts(self: Light)=value
 
 """
 
- Specular=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the specular color.
+    Specular = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the specular color.
 
 
 
@@ -517,8 +557,10 @@ Set: Specular(self: Light)=value
 
 """
 
- SpotAngleRadians=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the spot angle in radians.
+    SpotAngleRadians = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the spot angle in radians.
 
    Ignored for non-spot lights.angle=0 to pi/2  (0 to 90 degrees).
 
@@ -532,8 +574,10 @@ Set: SpotAngleRadians(self: Light)=value
 
 """
 
- SpotExponent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The spot exponent varies from 0.0 to 128.0 and provides
+    SpotExponent = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The spot exponent varies from 0.0 to 128.0 and provides
 
    an exponential interface for controling the focus or 
 
@@ -559,8 +603,10 @@ Set: SpotExponent(self: Light)=value
 
 """
 
- SpotLightShadowIntensity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the spot light shadow intensity.
+    SpotLightShadowIntensity = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the spot light shadow intensity.
 
    (ignored for non-spot lights.)
 
@@ -574,8 +620,8 @@ Set: SpotLightShadowIntensity(self: Light)=value
 
 """
 
- Width=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the width in linear and rectangular lights.
+    Width = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the width in linear and rectangular lights.
 
    (ignored for non-linear/rectangular lights.)
 
@@ -588,5 +634,3 @@ Get: Width(self: Light) -> Vector3d
 Set: Width(self: Light)=value
 
 """
-
-

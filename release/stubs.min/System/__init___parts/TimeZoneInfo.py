@@ -1,16 +1,20 @@
-class TimeZoneInfo(object,IEquatable[TimeZoneInfo],ISerializable,IDeserializationCallback):
- """ Represents any time zone in the world. """
- @staticmethod
- def ClearCachedData():
-  """
+class TimeZoneInfo(
+    object, IEquatable[TimeZoneInfo], ISerializable, IDeserializationCallback
+):
+    """ Represents any time zone in the world. """
+
+    @staticmethod
+    def ClearCachedData():
+        """
   ClearCachedData()
 
    Clears cached time zone data.
   """
-  pass
- @staticmethod
- def ConvertTime(*__args):
-  """
+        pass
+
+    @staticmethod
+    def ConvertTime(*__args):
+        """
   ConvertTime(dateTime: DateTime,sourceTimeZone: TimeZoneInfo,destinationTimeZone: TimeZoneInfo) -> DateTime
 
   
@@ -59,10 +63,11 @@ class TimeZoneInfo(object,IEquatable[TimeZoneInfo],ISerializable,IDeserializatio
 
    Returns: The date and time in the destination time zone.
   """
-  pass
- @staticmethod
- def ConvertTimeBySystemTimeZoneId(*__args):
-  """
+        pass
+
+    @staticmethod
+    def ConvertTimeBySystemTimeZoneId(*__args):
+        """
   ConvertTimeBySystemTimeZoneId(dateTime: DateTime,sourceTimeZoneId: str,destinationTimeZoneId: str) -> DateTime
 
   
@@ -111,10 +116,11 @@ class TimeZoneInfo(object,IEquatable[TimeZoneInfo],ISerializable,IDeserializatio
 
    Returns: The date and time in the destination time zone.
   """
-  pass
- @staticmethod
- def ConvertTimeFromUtc(dateTime,destinationTimeZone):
-  """
+        pass
+
+    @staticmethod
+    def ConvertTimeFromUtc(dateTime, destinationTimeZone):
+        """
   ConvertTimeFromUtc(dateTime: DateTime,destinationTimeZone: TimeZoneInfo) -> DateTime
 
   
@@ -133,10 +139,11 @@ class TimeZoneInfo(object,IEquatable[TimeZoneInfo],ISerializable,IDeserializatio
 
     System.DateTime.Kind property is System.DateTimeKind.Unspecified.
   """
-  pass
- @staticmethod
- def ConvertTimeToUtc(dateTime,sourceTimeZone=None):
-  """
+        pass
+
+    @staticmethod
+    def ConvertTimeToUtc(dateTime, sourceTimeZone=None):
+        """
   ConvertTimeToUtc(dateTime: DateTime,sourceTimeZone: TimeZoneInfo) -> DateTime
 
   
@@ -169,10 +176,19 @@ class TimeZoneInfo(object,IEquatable[TimeZoneInfo],ISerializable,IDeserializatio
 
     System.DateTime value's System.DateTime.Kind property is always set to System.DateTimeKind.Utc.
   """
-  pass
- @staticmethod
- def CreateCustomTimeZone(id,baseUtcOffset,displayName,standardDisplayName,daylightDisplayName=None,adjustmentRules=None,disableDaylightSavingTime=None):
-  """
+        pass
+
+    @staticmethod
+    def CreateCustomTimeZone(
+        id,
+        baseUtcOffset,
+        displayName,
+        standardDisplayName,
+        daylightDisplayName=None,
+        adjustmentRules=None,
+        disableDaylightSavingTime=None,
+    ):
+        """
   CreateCustomTimeZone(id: str,baseUtcOffset: TimeSpan,displayName: str,standardDisplayName: str,daylightDisplayName: str,adjustmentRules: Array[AdjustmentRule],disableDaylightSavingTime: bool) -> TimeZoneInfo
 
   CreateCustomTimeZone(id: str,baseUtcOffset: TimeSpan,displayName: str,standardDisplayName: str,daylightDisplayName: str,adjustmentRules: Array[AdjustmentRule]) -> TimeZoneInfo
@@ -203,9 +219,10 @@ class TimeZoneInfo(object,IEquatable[TimeZoneInfo],ISerializable,IDeserializatio
 
    Returns: The new time zone.
   """
-  pass
- def Equals(self,*__args):
-  """
+        pass
+
+    def Equals(self, *__args):
+        """
   Equals(self: TimeZoneInfo,obj: object) -> bool
 
   Equals(self: TimeZoneInfo,other: TimeZoneInfo) -> bool
@@ -224,10 +241,11 @@ class TimeZoneInfo(object,IEquatable[TimeZoneInfo],ISerializable,IDeserializatio
 
    Returns: true if the two System.TimeZoneInfo objects are equal; otherwise,false.
   """
-  pass
- @staticmethod
- def FindSystemTimeZoneById(id):
-  """
+        pass
+
+    @staticmethod
+    def FindSystemTimeZoneById(id):
+        """
   FindSystemTimeZoneById(id: str) -> TimeZoneInfo
 
   
@@ -240,10 +258,11 @@ class TimeZoneInfo(object,IEquatable[TimeZoneInfo],ISerializable,IDeserializatio
 
    Returns: An object whose identifier is the value of the id parameter.
   """
-  pass
- @staticmethod
- def FromSerializedString(source):
-  """
+        pass
+
+    @staticmethod
+    def FromSerializedString(source):
+        """
   FromSerializedString(source: str) -> TimeZoneInfo
 
   
@@ -256,9 +275,10 @@ class TimeZoneInfo(object,IEquatable[TimeZoneInfo],ISerializable,IDeserializatio
 
    Returns: The original serialized object.
   """
-  pass
- def GetAdjustmentRules(self):
-  """
+        pass
+
+    def GetAdjustmentRules(self):
+        """
   GetAdjustmentRules(self: TimeZoneInfo) -> Array[AdjustmentRule]
 
   
@@ -271,9 +291,10 @@ class TimeZoneInfo(object,IEquatable[TimeZoneInfo],ISerializable,IDeserializatio
 
    Returns: An array of objects for this time zone.
   """
-  pass
- def GetAmbiguousTimeOffsets(self,*__args):
-  """
+        pass
+
+    def GetAmbiguousTimeOffsets(self, *__args):
+        """
   GetAmbiguousTimeOffsets(self: TimeZoneInfo,dateTime: DateTime) -> Array[TimeSpan]
 
   
@@ -312,9 +333,10 @@ class TimeZoneInfo(object,IEquatable[TimeZoneInfo],ISerializable,IDeserializatio
 
     particular date and time can be mapped to.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: TimeZoneInfo) -> int
 
   
@@ -323,10 +345,11 @@ class TimeZoneInfo(object,IEquatable[TimeZoneInfo],ISerializable,IDeserializatio
 
    Returns: A 32-bit signed integer that serves as the hash code for this System.TimeZoneInfo object.
   """
-  pass
- @staticmethod
- def GetSystemTimeZones():
-  """
+        pass
+
+    @staticmethod
+    def GetSystemTimeZones():
+        """
   GetSystemTimeZones() -> ReadOnlyCollection[TimeZoneInfo]
 
   
@@ -339,9 +362,10 @@ class TimeZoneInfo(object,IEquatable[TimeZoneInfo],ISerializable,IDeserializatio
 
    Returns: A read-only collection of System.TimeZoneInfo objects.
   """
-  pass
- def GetUtcOffset(self,*__args):
-  """
+        pass
+
+    def GetUtcOffset(self, *__args):
+        """
   GetUtcOffset(self: TimeZoneInfo,dateTime: DateTime) -> TimeSpan
 
   
@@ -376,9 +400,10 @@ class TimeZoneInfo(object,IEquatable[TimeZoneInfo],ISerializable,IDeserializatio
 
     current time zone.
   """
-  pass
- def HasSameRules(self,other):
-  """
+        pass
+
+    def HasSameRules(self, other):
+        """
   HasSameRules(self: TimeZoneInfo,other: TimeZoneInfo) -> bool
 
   
@@ -397,9 +422,10 @@ class TimeZoneInfo(object,IEquatable[TimeZoneInfo],ISerializable,IDeserializatio
 
     otherwise,false.
   """
-  pass
- def IsAmbiguousTime(self,*__args):
-  """
+        pass
+
+    def IsAmbiguousTime(self, *__args):
+        """
   IsAmbiguousTime(self: TimeZoneInfo,dateTime: DateTime) -> bool
 
   
@@ -432,9 +458,10 @@ class TimeZoneInfo(object,IEquatable[TimeZoneInfo],ISerializable,IDeserializatio
 
    Returns: true if the dateTimeOffset parameter is ambiguous in the current time zone; otherwise,false.
   """
-  pass
- def IsDaylightSavingTime(self,*__args):
-  """
+        pass
+
+    def IsDaylightSavingTime(self, *__args):
+        """
   IsDaylightSavingTime(self: TimeZoneInfo,dateTime: DateTime) -> bool
 
   
@@ -467,9 +494,10 @@ class TimeZoneInfo(object,IEquatable[TimeZoneInfo],ISerializable,IDeserializatio
 
    Returns: true if the dateTimeOffset parameter is a daylight saving time; otherwise,false.
   """
-  pass
- def IsInvalidTime(self,dateTime):
-  """
+        pass
+
+    def IsInvalidTime(self, dateTime):
+        """
   IsInvalidTime(self: TimeZoneInfo,dateTime: DateTime) -> bool
 
   
@@ -482,9 +510,10 @@ class TimeZoneInfo(object,IEquatable[TimeZoneInfo],ISerializable,IDeserializatio
 
    Returns: true if dateTime is invalid; otherwise,false.
   """
-  pass
- def ToSerializedString(self):
-  """
+        pass
+
+    def ToSerializedString(self):
+        """
   ToSerializedString(self: TimeZoneInfo) -> str
 
   
@@ -493,9 +522,10 @@ class TimeZoneInfo(object,IEquatable[TimeZoneInfo],ISerializable,IDeserializatio
 
    Returns: A string that represents the current System.TimeZoneInfo object.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: TimeZoneInfo) -> str
 
   
@@ -506,24 +536,33 @@ class TimeZoneInfo(object,IEquatable[TimeZoneInfo],ISerializable,IDeserializatio
 
     object.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- BaseUtcOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the time difference between the current time zone's standard time and Coordinated Universal Time (UTC).
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    BaseUtcOffset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the time difference between the current time zone's standard time and Coordinated Universal Time (UTC).
 
 
 
@@ -533,8 +572,10 @@ Get: BaseUtcOffset(self: TimeZoneInfo) -> TimeSpan
 
 """
 
- DaylightName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the localized display name for the current time zone's daylight saving time.
+    DaylightName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the localized display name for the current time zone's daylight saving time.
 
 
 
@@ -544,8 +585,10 @@ Get: DaylightName(self: TimeZoneInfo) -> str
 
 """
 
- DisplayName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the localized general display name that represents the time zone.
+    DisplayName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the localized general display name that represents the time zone.
 
 
 
@@ -555,8 +598,8 @@ Get: DisplayName(self: TimeZoneInfo) -> str
 
 """
 
- Id=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the time zone identifier.
+    Id = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the time zone identifier.
 
 
 
@@ -566,8 +609,10 @@ Get: Id(self: TimeZoneInfo) -> str
 
 """
 
- StandardName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the localized display name for the time zone's standard time.
+    StandardName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the localized display name for the time zone's standard time.
 
 
 
@@ -577,8 +622,10 @@ Get: StandardName(self: TimeZoneInfo) -> str
 
 """
 
- SupportsDaylightSavingTime=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the time zone has any daylight saving time rules.
+    SupportsDaylightSavingTime = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the time zone has any daylight saving time rules.
 
 
 
@@ -588,9 +635,7 @@ Get: SupportsDaylightSavingTime(self: TimeZoneInfo) -> bool
 
 """
 
-
- AdjustmentRule=None
- Local=None
- TransitionTime=None
- Utc=None
-
+    AdjustmentRule = None
+    Local = None
+    TransitionTime = None
+    Utc = None

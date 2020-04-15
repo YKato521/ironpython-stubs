@@ -1,13 +1,14 @@
-class TypeLibConverter(object,ITypeLibConverter):
- """
+class TypeLibConverter(object, ITypeLibConverter):
+    """
  Provides a set of services that convert a managed assembly to a COM type library and vice versa.
 
  
 
  TypeLibConverter()
  """
- def ConvertAssemblyToTypeLib(self,assembly,strTypeLibName,flags,notifySink):
-  """
+
+    def ConvertAssemblyToTypeLib(self, assembly, strTypeLibName, flags, notifySink):
+        """
   ConvertAssemblyToTypeLib(self: TypeLibConverter,assembly: Assembly,strTypeLibName: str,flags: TypeLibExporterFlags,notifySink: ITypeLibExporterNotifySink) -> object
 
   
@@ -30,9 +31,12 @@ class TypeLibConverter(object,ITypeLibConverter):
 
    Returns: An object that implements the ITypeLib interface.
   """
-  pass
- def ConvertTypeLibToAssembly(self,typeLib,asmFileName,flags,notifySink,publicKey,keyPair,*__args):
-  """
+        pass
+
+    def ConvertTypeLibToAssembly(
+        self, typeLib, asmFileName, flags, notifySink, publicKey, keyPair, *__args
+    ):
+        """
   ConvertTypeLibToAssembly(self: TypeLibConverter,typeLib: object,asmFileName: str,flags: TypeLibImporterFlags,notifySink: ITypeLibImporterNotifySink,publicKey: Array[Byte],keyPair: StrongNameKeyPair,asmNamespace: str,asmVersion: Version) -> AssemblyBuilder
 
   
@@ -99,9 +103,10 @@ class TypeLibConverter(object,ITypeLibConverter):
 
    Returns: An System.Reflection.Emit.AssemblyBuilder object containing the converted type library.
   """
-  pass
- def GetPrimaryInteropAssembly(self,g,major,minor,lcid,asmName,asmCodeBase):
-  """
+        pass
+
+    def GetPrimaryInteropAssembly(self, g, major, minor, lcid, asmName, asmCodeBase):
+        """
   GetPrimaryInteropAssembly(self: TypeLibConverter,g: Guid,major: int,minor: int,lcid: int) -> (bool,str,str)
 
   
@@ -120,10 +125,12 @@ class TypeLibConverter(object,ITypeLibConverter):
 
    Returns: true if the primary interop assembly was found in the registry; otherwise false.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass

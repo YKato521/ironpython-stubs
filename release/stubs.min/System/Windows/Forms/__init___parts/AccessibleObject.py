@@ -1,20 +1,24 @@
-class AccessibleObject(StandardOleMarshalObject,IMarshal,IReflect,IAccessible,IEnumVariant,IOleWindow):
- """
+class AccessibleObject(
+    StandardOleMarshalObject, IMarshal, IReflect, IAccessible, IEnumVariant, IOleWindow
+):
+    """
  Provides information that accessibility applications use to adjust an application's user interface (UI) for users with impairments.
 
  
 
  AccessibleObject()
  """
- def DoDefaultAction(self):
-  """
+
+    def DoDefaultAction(self):
+        """
   DoDefaultAction(self: AccessibleObject)
 
    Performs the default action associated with this accessible object.
   """
-  pass
- def GetChild(self,index):
-  """
+        pass
+
+    def GetChild(self, index):
+        """
   GetChild(self: AccessibleObject,index: int) -> AccessibleObject
 
   
@@ -29,9 +33,10 @@ class AccessibleObject(StandardOleMarshalObject,IMarshal,IReflect,IAccessible,IE
 
     the specified index.
   """
-  pass
- def GetChildCount(self):
-  """
+        pass
+
+    def GetChildCount(self):
+        """
   GetChildCount(self: AccessibleObject) -> int
 
   
@@ -40,9 +45,10 @@ class AccessibleObject(StandardOleMarshalObject,IMarshal,IReflect,IAccessible,IE
 
    Returns: The number of children belonging to an accessible object.
   """
-  pass
- def GetFocused(self):
-  """
+        pass
+
+    def GetFocused(self):
+        """
   GetFocused(self: AccessibleObject) -> AccessibleObject
 
   
@@ -53,9 +59,10 @@ class AccessibleObject(StandardOleMarshalObject,IMarshal,IReflect,IAccessible,IE
 
     returns the calling object if the object itself is focused. Returns null if no object has focus.
   """
-  pass
- def GetHelpTopic(self,fileName):
-  """
+        pass
+
+    def GetHelpTopic(self, fileName):
+        """
   GetHelpTopic(self: AccessibleObject) -> (int,str)
 
   
@@ -70,9 +77,10 @@ class AccessibleObject(StandardOleMarshalObject,IMarshal,IReflect,IAccessible,IE
 
     parameter contains the path to the Help file associated with this accessible object.
   """
-  pass
- def GetSelected(self):
-  """
+        pass
+
+    def GetSelected(self):
+        """
   GetSelected(self: AccessibleObject) -> AccessibleObject
 
   
@@ -85,9 +93,10 @@ class AccessibleObject(StandardOleMarshalObject,IMarshal,IReflect,IAccessible,IE
 
     is currently selected and the object itself does not have focus.
   """
-  pass
- def HitTest(self,x,y):
-  """
+        pass
+
+    def HitTest(self, x, y):
+        """
   HitTest(self: AccessibleObject,x: int,y: int) -> AccessibleObject
 
   
@@ -106,9 +115,10 @@ class AccessibleObject(StandardOleMarshalObject,IMarshal,IReflect,IAccessible,IE
 
     specified. Returns null if no object is at the tested location.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -139,9 +149,10 @@ class AccessibleObject(StandardOleMarshalObject,IMarshal,IReflect,IAccessible,IE
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def Navigate(self,navdir):
-  """
+        pass
+
+    def Navigate(self, navdir):
+        """
   Navigate(self: AccessibleObject,navdir: AccessibleNavigation) -> AccessibleObject
 
   
@@ -156,9 +167,10 @@ class AccessibleObject(StandardOleMarshalObject,IMarshal,IReflect,IAccessible,IE
 
     System.Windows.Forms.AccessibleNavigation values.
   """
-  pass
- def Select(self,flags):
-  """
+        pass
+
+    def Select(self, flags):
+        """
   Select(self: AccessibleObject,flags: AccessibleSelection)
 
    Modifies the selection or moves the keyboard focus of the accessible object.
@@ -167,9 +179,10 @@ class AccessibleObject(StandardOleMarshalObject,IMarshal,IReflect,IAccessible,IE
 
    flags: One of the System.Windows.Forms.AccessibleSelection values.
   """
-  pass
- def UseStdAccessibleObjects(self,*args):
-  """
+        pass
+
+    def UseStdAccessibleObjects(self, *args):
+        """
   UseStdAccessibleObjects(self: AccessibleObject,handle: IntPtr,objid: int)
 
    Associates an object with an instance of an System.Windows.Forms.AccessibleObject based on the 
@@ -196,12 +209,14 @@ class AccessibleObject(StandardOleMarshalObject,IMarshal,IReflect,IAccessible,IE
 
    handle: An System.IntPtr that contains the handle of the object.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Bounds=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the location and size of the accessible object.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Bounds = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the location and size of the accessible object.
 
 
 
@@ -211,8 +226,10 @@ Get: Bounds(self: AccessibleObject) -> Rectangle
 
 """
 
- DefaultAction=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a string that describes the default action of the object. Not all objects have a default action.
+    DefaultAction = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a string that describes the default action of the object. Not all objects have a default action.
 
 
 
@@ -222,8 +239,10 @@ Get: DefaultAction(self: AccessibleObject) -> str
 
 """
 
- Description=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a string that describes the visual appearance of the specified object. Not all objects have a description.
+    Description = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a string that describes the visual appearance of the specified object. Not all objects have a description.
 
 
 
@@ -233,8 +252,8 @@ Get: Description(self: AccessibleObject) -> str
 
 """
 
- Help=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a description of what the object does or how the object is used.
+    Help = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a description of what the object does or how the object is used.
 
 
 
@@ -244,8 +263,10 @@ Get: Help(self: AccessibleObject) -> str
 
 """
 
- KeyboardShortcut=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the shortcut key or access key for the accessible object.
+    KeyboardShortcut = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the shortcut key or access key for the accessible object.
 
 
 
@@ -255,8 +276,8 @@ Get: KeyboardShortcut(self: AccessibleObject) -> str
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the object name.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the object name.
 
 
 
@@ -268,8 +289,8 @@ Set: Name(self: AccessibleObject)=value
 
 """
 
- Parent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the parent of an accessible object.
+    Parent = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the parent of an accessible object.
 
 
 
@@ -279,8 +300,8 @@ Get: Parent(self: AccessibleObject) -> AccessibleObject
 
 """
 
- Role=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the role of this accessible object.
+    Role = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the role of this accessible object.
 
 
 
@@ -290,8 +311,8 @@ Get: Role(self: AccessibleObject) -> AccessibleRole
 
 """
 
- State=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the state of this accessible object.
+    State = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the state of this accessible object.
 
 
 
@@ -301,8 +322,8 @@ Get: State(self: AccessibleObject) -> AccessibleStates
 
 """
 
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the value of an accessible object.
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the value of an accessible object.
 
 
 
@@ -313,5 +334,3 @@ Get: Value(self: AccessibleObject) -> str
 Set: Value(self: AccessibleObject)=value
 
 """
-
-

@@ -1,13 +1,22 @@
-class DataGridViewRow(DataGridViewBand,ICloneable,IDisposable):
- """
+class DataGridViewRow(DataGridViewBand, ICloneable, IDisposable):
+    """
  Represents a row in a System.Windows.Forms.DataGridView control.
 
  
 
  DataGridViewRow()
  """
- def AdjustRowHeaderBorderStyle(self,dataGridViewAdvancedBorderStyleInput,dataGridViewAdvancedBorderStylePlaceholder,singleVerticalBorderAdded,singleHorizontalBorderAdded,isFirstDisplayedRow,isLastVisibleRow):
-  """
+
+    def AdjustRowHeaderBorderStyle(
+        self,
+        dataGridViewAdvancedBorderStyleInput,
+        dataGridViewAdvancedBorderStylePlaceholder,
+        singleVerticalBorderAdded,
+        singleHorizontalBorderAdded,
+        isFirstDisplayedRow,
+        isLastVisibleRow,
+    ):
+        """
   AdjustRowHeaderBorderStyle(self: DataGridViewRow,dataGridViewAdvancedBorderStyleInput: DataGridViewAdvancedBorderStyle,dataGridViewAdvancedBorderStylePlaceholder: DataGridViewAdvancedBorderStyle,singleVerticalBorderAdded: bool,singleHorizontalBorderAdded: bool,isFirstDisplayedRow: bool,isLastVisibleRow: bool) -> DataGridViewAdvancedBorderStyle
 
   
@@ -46,9 +55,10 @@ class DataGridViewRow(DataGridViewBand,ICloneable,IDisposable):
 
    Returns: A System.Windows.Forms.DataGridViewAdvancedBorderStyle that represents the new border style used.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: DataGridViewRow) -> object
 
   
@@ -57,9 +67,10 @@ class DataGridViewRow(DataGridViewBand,ICloneable,IDisposable):
 
    Returns: An System.Object that represents the cloned System.Windows.Forms.DataGridViewRow.
   """
-  pass
- def CreateAccessibilityInstance(self,*args):
-  """
+        pass
+
+    def CreateAccessibilityInstance(self, *args):
+        """
   CreateAccessibilityInstance(self: DataGridViewRow) -> AccessibleObject
 
   
@@ -70,9 +81,10 @@ class DataGridViewRow(DataGridViewBand,ICloneable,IDisposable):
 
     System.Windows.Forms.DataGridViewRow.
   """
-  pass
- def CreateCells(self,dataGridView,values=None):
-  """
+        pass
+
+    def CreateCells(self, dataGridView, values=None):
+        """
   CreateCells(self: DataGridViewRow,dataGridView: DataGridView,*values: Array[object])
 
    Clears the existing cells and sets their template and values.
@@ -95,9 +107,10 @@ class DataGridViewRow(DataGridViewBand,ICloneable,IDisposable):
 
    dataGridView: A System.Windows.Forms.DataGridView that acts as a template for cell styles.
   """
-  pass
- def CreateCellsInstance(self,*args):
-  """
+        pass
+
+    def CreateCellsInstance(self, *args):
+        """
   CreateCellsInstance(self: DataGridViewRow) -> DataGridViewCellCollection
 
   
@@ -106,9 +119,10 @@ class DataGridViewRow(DataGridViewBand,ICloneable,IDisposable):
 
    Returns: The newly created System.Windows.Forms.DataGridViewCellCollection.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: DataGridViewBand,disposing: bool)
 
    Releases the unmanaged resources used by the System.Windows.Forms.DataGridViewBand and 
@@ -121,9 +135,10 @@ class DataGridViewRow(DataGridViewBand,ICloneable,IDisposable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def DrawFocus(self,*args):
-  """
+        pass
+
+    def DrawFocus(self, *args):
+        """
   DrawFocus(self: DataGridViewRow,graphics: Graphics,clipBounds: Rectangle,bounds: Rectangle,rowIndex: int,rowState: DataGridViewElementStates,cellStyle: DataGridViewCellStyle,cellsPaintSelectionBackground: bool)
 
    Draws a focus rectangle around the specified bounds.
@@ -162,9 +177,10 @@ class DataGridViewRow(DataGridViewBand,ICloneable,IDisposable):
 
     focus rectangle.
   """
-  pass
- def GetContextMenuStrip(self,rowIndex):
-  """
+        pass
+
+    def GetContextMenuStrip(self, rowIndex):
+        """
   GetContextMenuStrip(self: DataGridViewRow,rowIndex: int) -> ContextMenuStrip
 
   
@@ -179,9 +195,10 @@ class DataGridViewRow(DataGridViewBand,ICloneable,IDisposable):
 
     at the specified index.
   """
-  pass
- def GetErrorText(self,rowIndex):
-  """
+        pass
+
+    def GetErrorText(self, rowIndex):
+        """
   GetErrorText(self: DataGridViewRow,rowIndex: int) -> str
 
   
@@ -194,9 +211,10 @@ class DataGridViewRow(DataGridViewBand,ICloneable,IDisposable):
 
    Returns: A string that describes the error of the row at the specified index.
   """
-  pass
- def GetPreferredHeight(self,rowIndex,autoSizeRowMode,fixedWidth):
-  """
+        pass
+
+    def GetPreferredHeight(self, rowIndex, autoSizeRowMode, fixedWidth):
+        """
   GetPreferredHeight(self: DataGridViewRow,rowIndex: int,autoSizeRowMode: DataGridViewAutoSizeRowMode,fixedWidth: bool) -> int
 
   
@@ -213,9 +231,10 @@ class DataGridViewRow(DataGridViewBand,ICloneable,IDisposable):
 
    Returns: The ideal height of the row,in pixels.
   """
-  pass
- def GetState(self,rowIndex):
-  """
+        pass
+
+    def GetState(self, rowIndex):
+        """
   GetState(self: DataGridViewRow,rowIndex: int) -> DataGridViewElementStates
 
   
@@ -230,16 +249,18 @@ class DataGridViewRow(DataGridViewBand,ICloneable,IDisposable):
 
     row state.
   """
-  pass
- def OnDataGridViewChanged(self,*args):
-  """
+        pass
+
+    def OnDataGridViewChanged(self, *args):
+        """
   OnDataGridViewChanged(self: DataGridViewBand)
 
    Called when the band is associated with a different System.Windows.Forms.DataGridView.
   """
-  pass
- def Paint(self,*args):
-  """
+        pass
+
+    def Paint(self, *args):
+        """
   Paint(self: DataGridViewRow,graphics: Graphics,clipBounds: Rectangle,rowBounds: Rectangle,rowIndex: int,rowState: DataGridViewElementStates,isFirstDisplayedRow: bool,isLastVisibleRow: bool)
 
    Paints the current row.
@@ -280,9 +301,10 @@ class DataGridViewRow(DataGridViewBand,ICloneable,IDisposable):
 
     property set to true; otherwise,false.
   """
-  pass
- def PaintCells(self,*args):
-  """
+        pass
+
+    def PaintCells(self, *args):
+        """
   PaintCells(self: DataGridViewRow,graphics: Graphics,clipBounds: Rectangle,rowBounds: Rectangle,rowIndex: int,rowState: DataGridViewElementStates,isFirstDisplayedRow: bool,isLastVisibleRow: bool,paintParts: DataGridViewPaintParts)
 
    Paints the cells in the current row.
@@ -329,9 +351,10 @@ class DataGridViewRow(DataGridViewBand,ICloneable,IDisposable):
 
     of the cells to paint.
   """
-  pass
- def PaintHeader(self,*args):
-  """
+        pass
+
+    def PaintHeader(self, *args):
+        """
   PaintHeader(self: DataGridViewRow,graphics: Graphics,clipBounds: Rectangle,rowBounds: Rectangle,rowIndex: int,rowState: DataGridViewElementStates,isFirstDisplayedRow: bool,isLastVisibleRow: bool,paintParts: DataGridViewPaintParts)
 
    Paints the header cell of the current row.
@@ -378,9 +401,10 @@ class DataGridViewRow(DataGridViewBand,ICloneable,IDisposable):
 
     of the cells to paint.
   """
-  pass
- def RaiseCellClick(self,*args):
-  """
+        pass
+
+    def RaiseCellClick(self, *args):
+        """
   RaiseCellClick(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellClick event.
@@ -389,9 +413,10 @@ class DataGridViewRow(DataGridViewBand,ICloneable,IDisposable):
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseCellContentClick(self,*args):
-  """
+        pass
+
+    def RaiseCellContentClick(self, *args):
+        """
   RaiseCellContentClick(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellContentClick event.
@@ -400,9 +425,10 @@ class DataGridViewRow(DataGridViewBand,ICloneable,IDisposable):
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseCellContentDoubleClick(self,*args):
-  """
+        pass
+
+    def RaiseCellContentDoubleClick(self, *args):
+        """
   RaiseCellContentDoubleClick(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellContentDoubleClick event.
@@ -411,9 +437,10 @@ class DataGridViewRow(DataGridViewBand,ICloneable,IDisposable):
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseCellValueChanged(self,*args):
-  """
+        pass
+
+    def RaiseCellValueChanged(self, *args):
+        """
   RaiseCellValueChanged(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellValueChanged event.
@@ -422,9 +449,10 @@ class DataGridViewRow(DataGridViewBand,ICloneable,IDisposable):
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseDataError(self,*args):
-  """
+        pass
+
+    def RaiseDataError(self, *args):
+        """
   RaiseDataError(self: DataGridViewElement,e: DataGridViewDataErrorEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.DataError event.
@@ -433,9 +461,10 @@ class DataGridViewRow(DataGridViewBand,ICloneable,IDisposable):
 
    e: A System.Windows.Forms.DataGridViewDataErrorEventArgs that contains the event data.
   """
-  pass
- def RaiseMouseWheel(self,*args):
-  """
+        pass
+
+    def RaiseMouseWheel(self, *args):
+        """
   RaiseMouseWheel(self: DataGridViewElement,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseWheel event.
@@ -444,9 +473,10 @@ class DataGridViewRow(DataGridViewBand,ICloneable,IDisposable):
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def SetValues(self,values):
-  """
+        pass
+
+    def SetValues(self, values):
+        """
   SetValues(self: DataGridViewRow,*values: Array[object]) -> bool
 
   
@@ -463,9 +493,10 @@ class DataGridViewRow(DataGridViewBand,ICloneable,IDisposable):
 
    Returns: true if all values have been set; otherwise,false.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: DataGridViewRow) -> str
 
   
@@ -474,30 +505,37 @@ class DataGridViewRow(DataGridViewBand,ICloneable,IDisposable):
 
    Returns: A System.String that describes this row.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- AccessibilityObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject assigned to the System.Windows.Forms.DataGridViewRow.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AccessibilityObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject assigned to the System.Windows.Forms.DataGridViewRow.
 
 
 
@@ -507,8 +545,8 @@ Get: AccessibilityObject(self: DataGridViewRow) -> AccessibleObject
 
 """
 
- Cells=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of cells that populate the row.
+    Cells = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the collection of cells that populate the row.
 
 
 
@@ -518,8 +556,10 @@ Get: Cells(self: DataGridViewRow) -> DataGridViewCellCollection
 
 """
 
- ContextMenuStrip=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the shortcut menu for the row.
+    ContextMenuStrip = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the shortcut menu for the row.
 
 
 
@@ -531,8 +571,10 @@ Set: ContextMenuStrip(self: DataGridViewRow)=value
 
 """
 
- DataBoundItem=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the data-bound object that populated the row.
+    DataBoundItem = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the data-bound object that populated the row.
 
 
 
@@ -542,8 +584,10 @@ Get: DataBoundItem(self: DataGridViewRow) -> object
 
 """
 
- DefaultCellStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the default styles for the row,which are used to render cells in the row unless the styles are overridden.
+    DefaultCellStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the default styles for the row,which are used to render cells in the row unless the styles are overridden.
 
 
 
@@ -555,8 +599,8 @@ Set: DefaultCellStyle(self: DataGridViewRow)=value
 
 """
 
- Displayed=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether this row is displayed on the screen.
+    Displayed = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether this row is displayed on the screen.
 
 
 
@@ -566,8 +610,10 @@ Get: Displayed(self: DataGridViewRow) -> bool
 
 """
 
- DividerHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the height,in pixels,of the row divider.
+    DividerHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the height,in pixels,of the row divider.
 
 
 
@@ -579,8 +625,8 @@ Set: DividerHeight(self: DataGridViewRow)=value
 
 """
 
- ErrorText=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the error message text for row-level errors.
+    ErrorText = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the error message text for row-level errors.
 
 
 
@@ -592,8 +638,8 @@ Set: ErrorText(self: DataGridViewRow)=value
 
 """
 
- Frozen=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the row is frozen.
+    Frozen = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the row is frozen.
 
 
 
@@ -605,8 +651,10 @@ Set: Frozen(self: DataGridViewRow)=value
 
 """
 
- HeaderCell=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the row's header cell.
+    HeaderCell = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the row's header cell.
 
 
 
@@ -618,15 +666,17 @@ Set: HeaderCell(self: DataGridViewRow)=value
 
 """
 
- HeaderCellCore=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the header cell of the System.Windows.Forms.DataGridViewBand.
+    HeaderCellCore = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the header cell of the System.Windows.Forms.DataGridViewBand.
 
 
 
 """
 
- Height=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the current height of the row.
+    Height = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the current height of the row.
 
 
 
@@ -638,8 +688,10 @@ Set: Height(self: DataGridViewRow)=value
 
 """
 
- InheritedStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the cell style in effect for the row.
+    InheritedStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the cell style in effect for the row.
 
 
 
@@ -649,8 +701,8 @@ Get: InheritedStyle(self: DataGridViewRow) -> DataGridViewCellStyle
 
 """
 
- IsNewRow=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the row is the row for new records.
+    IsNewRow = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the row is the row for new records.
 
 
 
@@ -660,15 +712,17 @@ Get: IsNewRow(self: DataGridViewRow) -> bool
 
 """
 
- IsRow=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the band represents a row.
+    IsRow = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the band represents a row.
 
 
 
 """
 
- MinimumHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the minimum height of the row.
+    MinimumHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the minimum height of the row.
 
 
 
@@ -680,8 +734,8 @@ Set: MinimumHeight(self: DataGridViewRow)=value
 
 """
 
- ReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the row is read-only.
+    ReadOnly = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the row is read-only.
 
 
 
@@ -693,8 +747,8 @@ Set: ReadOnly(self: DataGridViewRow)=value
 
 """
 
- Resizable=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether users can resize the row or indicating that the behavior is inherited from the System.Windows.Forms.DataGridView.AllowUserToResizeRows property.
+    Resizable = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether users can resize the row or indicating that the behavior is inherited from the System.Windows.Forms.DataGridView.AllowUserToResizeRows property.
 
 
 
@@ -706,8 +760,8 @@ Set: Resizable(self: DataGridViewRow)=value
 
 """
 
- Selected=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the row is selected.
+    Selected = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the row is selected.
 
 
 
@@ -719,8 +773,8 @@ Set: Selected(self: DataGridViewRow)=value
 
 """
 
- State=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the current state of the row.
+    State = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the current state of the row.
 
 
 
@@ -730,8 +784,8 @@ Get: State(self: DataGridViewRow) -> DataGridViewElementStates
 
 """
 
- Visible=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the row is visible.
+    Visible = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the row is visible.
 
 
 
@@ -743,6 +797,4 @@ Set: Visible(self: DataGridViewRow)=value
 
 """
 
-
- DataGridViewRowAccessibleObject=None
-
+    DataGridViewRowAccessibleObject = None

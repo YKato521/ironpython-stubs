@@ -1,5 +1,11 @@
-class Point2f(object,IEquatable[Point2f],IComparable[Point2f],IComparable,IEpsilonFComparable[Point2f]):
- """
+class Point2f(
+    object,
+    IEquatable[Point2f],
+    IComparable[Point2f],
+    IComparable,
+    IEpsilonFComparable[Point2f],
+):
+    """
  Represents the two coordinates of a point in two-dimensional space,
 
     using System.Single-precision floating point numbers.
@@ -10,8 +16,9 @@ class Point2f(object,IEquatable[Point2f],IComparable[Point2f],IComparable,IEpsil
 
  Point2f(x: float,y: float)
  """
- def CompareTo(self,other):
-  """
+
+    def CompareTo(self, other):
+        """
   CompareTo(self: Point2f,other: Point2f) -> int
 
   
@@ -32,18 +39,20 @@ class Point2f(object,IEquatable[Point2f],IComparable[Point2f],IComparable,IEpsil
 
     other.Y+1: otherwise.
   """
-  pass
- def EpsilonEquals(self,other,epsilon):
-  """
+        pass
+
+    def EpsilonEquals(self, other, epsilon):
+        """
   EpsilonEquals(self: Point2f,other: Point2f,epsilon: Single) -> bool
 
   
 
    Check that all values in other are within epsilon of the values in this
   """
-  pass
- def Equals(self,*__args):
-  """
+        pass
+
+    def Equals(self, *__args):
+        """
   Equals(self: Point2f,point: Point2f) -> bool
 
   
@@ -72,9 +81,10 @@ class Point2f(object,IEquatable[Point2f],IComparable[Point2f],IComparable,IEpsil
 
    Returns: true if obj is Point2f and has the same coordinates as this; otherwise false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Point2f) -> int
 
   
@@ -83,9 +93,10 @@ class Point2f(object,IEquatable[Point2f],IComparable[Point2f],IComparable,IEpsil
 
    Returns: A hash code that is not unique for each point.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: Point2f) -> str
 
   
@@ -94,24 +105,31 @@ class Point2f(object,IEquatable[Point2f],IComparable[Point2f],IComparable,IEpsil
 
    Returns: The point representation in the form X,Y.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- @staticmethod
- def __new__(self,x,y):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    @staticmethod
+    def __new__(self, x, y):
+        """
   __new__[Point2f]() -> Point2f
 
   
@@ -120,18 +138,23 @@ class Point2f(object,IEquatable[Point2f],IComparable[Point2f],IComparable,IEpsil
 
   __new__(cls: type,x: float,y: float)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- IsValid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether this point is considered valid.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    IsValid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether this point is considered valid.
 
 
 
@@ -141,8 +164,8 @@ Get: IsValid(self: Point2f) -> bool
 
 """
 
- X=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the X (first) component of the vector.
+    X = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the X (first) component of the vector.
 
 
 
@@ -154,8 +177,8 @@ Set: X(self: Point2f)=value
 
 """
 
- Y=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Y (second) component of the vector.
+    Y = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Y (second) component of the vector.
 
 
 
@@ -167,6 +190,4 @@ Set: Y(self: Point2f)=value
 
 """
 
-
- Unset=None
-
+    Unset = None

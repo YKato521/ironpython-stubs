@@ -1,42 +1,49 @@
-class DividedPath(Element,IDisposable):
- """ An element that consists of a set of points distributed along a path which consists of a connected set of curves and edges. """
- @staticmethod
- def AreCurveReferencesConnected(document,curveReferences):
-  """ AreCurveReferencesConnected(document: Document,curveReferences: IList[Reference]) -> bool """
-  pass
- @staticmethod
- def Create(document,curveReferences,intersectors=None):
-  """
+class DividedPath(Element, IDisposable):
+    """ An element that consists of a set of points distributed along a path which consists of a connected set of curves and edges. """
+
+    @staticmethod
+    def AreCurveReferencesConnected(document, curveReferences):
+        """ AreCurveReferencesConnected(document: Document,curveReferences: IList[Reference]) -> bool """
+        pass
+
+    @staticmethod
+    def Create(document, curveReferences, intersectors=None):
+        """
   Create(document: Document,curveReferences: IList[Reference]) -> DividedPath
 
   Create(document: Document,curveReferences: IList[Reference],intersectors: ICollection[ElementId]) -> DividedPath
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def Flip(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def Flip(self):
+        """
   Flip(self: DividedPath)
 
    Toggle the flipped value
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetIntersectingElements(self):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetIntersectingElements(self):
+        """
   GetIntersectingElements(self: DividedPath) -> ICollection[ElementId]
 
   
 
    Get the elements whose intersection with path produces points.
   """
-  pass
- @staticmethod
- def IsCurveReferenceValid(document,curveReference):
-  """
+        pass
+
+    @staticmethod
+    def IsCurveReferenceValid(document, curveReference):
+        """
   IsCurveReferenceValid(document: Document,curveReference: Reference) -> bool
 
   
@@ -55,10 +62,11 @@ class DividedPath(Element,IDisposable):
 
    Returns: True if the reference can be used to create a divided path,false otherwise.
   """
-  pass
- @staticmethod
- def IsIntersectorValidForCreation(document,intersector):
-  """
+        pass
+
+    @staticmethod
+    def IsIntersectorValidForCreation(document, intersector):
+        """
   IsIntersectorValidForCreation(document: Document,intersector: ElementId) -> bool
 
   
@@ -77,9 +85,10 @@ class DividedPath(Element,IDisposable):
 
    Returns: True if the reference can be used to create a divided path,false otherwise.
   """
-  pass
- def IsIntersectorValidForDividedPath(self,intersector):
-  """
+        pass
+
+    def IsIntersectorValidForDividedPath(self, intersector):
+        """
   IsIntersectorValidForDividedPath(self: DividedPath,intersector: ElementId) -> bool
 
   
@@ -96,9 +105,10 @@ class DividedPath(Element,IDisposable):
 
    Returns: True if the reference can be used to create a divided path,false otherwise.
   """
-  pass
- def IsValidBeginningIndent(self,beginningIndent):
-  """
+        pass
+
+    def IsValidBeginningIndent(self, beginningIndent):
+        """
   IsValidBeginningIndent(self: DividedPath,beginningIndent: float) -> bool
 
   
@@ -107,9 +117,10 @@ class DividedPath(Element,IDisposable):
 
     to overlop
   """
-  pass
- def IsValidEndIndent(self,endIndent):
-  """
+        pass
+
+    def IsValidEndIndent(self, endIndent):
+        """
   IsValidEndIndent(self: DividedPath,endIndent: float) -> bool
 
   
@@ -118,10 +129,11 @@ class DividedPath(Element,IDisposable):
 
     to overlop
   """
-  pass
- @staticmethod
- def IsValidFixedNumberOfPoints(fixedNumberOfPoints):
-  """
+        pass
+
+    @staticmethod
+    def IsValidFixedNumberOfPoints(fixedNumberOfPoints):
+        """
   IsValidFixedNumberOfPoints(fixedNumberOfPoints: int) -> bool
 
   
@@ -132,58 +144,71 @@ class DividedPath(Element,IDisposable):
 
     DividedPath with a layout type 'FixedNumber'.
   """
-  pass
- def IsValidMeasurementType(self,measurementType):
-  """
+        pass
+
+    def IsValidMeasurementType(self, measurementType):
+        """
   IsValidMeasurementType(self: DividedPath,measurementType: DividedPathMeasurementType) -> bool
 
   
 
    Checks that the measurement type enumeration value is valid
   """
-  pass
- def IsValidSpacingRuleJustification(self,justification):
-  """
+        pass
+
+    def IsValidSpacingRuleJustification(self, justification):
+        """
   IsValidSpacingRuleJustification(self: DividedPath,justification: SpacingRuleJustification) -> bool
 
   
 
    Checks that the justification enumeration value is valid
   """
-  pass
- def IsValidSpacingRuleLayout(self,layout):
-  """
+        pass
+
+    def IsValidSpacingRuleLayout(self, layout):
+        """
   IsValidSpacingRuleLayout(self: DividedPath,layout: SpacingRuleLayout) -> bool
 
   
 
    Checks that the spacing rule layout enumeration value is valid
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- @staticmethod
- def SeparateReferencesIntoConnectedReferences(document,curveReferences):
-  """ SeparateReferencesIntoConnectedReferences(document: Document,curveReferences: IList[Reference]) -> IList[IList[Reference]] """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetIntersectingElements(self,intersectors):
-  """ SetIntersectingElements(self: DividedPath,intersectors: ICollection[ElementId]) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- BeginningIndent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The beginningIndent is an offset distance from the beginning of the
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    @staticmethod
+    def SeparateReferencesIntoConnectedReferences(document, curveReferences):
+        """ SeparateReferencesIntoConnectedReferences(document: Document,curveReferences: IList[Reference]) -> IList[IList[Reference]] """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetIntersectingElements(self, intersectors):
+        """ SetIntersectingElements(self: DividedPath,intersectors: ICollection[ElementId]) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    BeginningIndent = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The beginningIndent is an offset distance from the beginning of the
 
    first curve that determines the beginning of the range over which
 
@@ -201,8 +226,10 @@ Set: BeginningIndent(self: DividedPath)=value
 
 """
 
- DisplayNodeNumbers=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Controls whether the node numbers are shown when the divided path is selected
+    DisplayNodeNumbers = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Controls whether the node numbers are shown when the divided path is selected
 
 
 
@@ -214,8 +241,10 @@ Set: DisplayNodeNumbers(self: DividedPath)=value
 
 """
 
- DisplayNodes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Controls whether the points of the divided path are visible
+    DisplayNodes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Controls whether the points of the divided path are visible
 
 
 
@@ -227,8 +256,10 @@ Set: DisplayNodes(self: DividedPath)=value
 
 """
 
- DisplayReferenceCurves=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Controls whether the curves in the path are visible
+    DisplayReferenceCurves = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Controls whether the curves in the path are visible
 
 
 
@@ -240,8 +271,8 @@ Set: DisplayReferenceCurves(self: DividedPath)=value
 
 """
 
- Distance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The distance between points that are distributed along the path according to the selected layout.
+    Distance = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The distance between points that are distributed along the path according to the selected layout.
 
    When the layout is set to 'FixedDistance' this value can be set to desired distance.
 
@@ -257,8 +288,8 @@ Set: Distance(self: DividedPath)=value
 
 """
 
- EndIndent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The endIndent is an offset distance from the end of the
+    EndIndent = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The endIndent is an offset distance from the end of the
 
    last curve that determines the end of the range over which
 
@@ -276,8 +307,10 @@ Set: EndIndent(self: DividedPath)=value
 
 """
 
- FixedNumberOfPoints=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The number of points used when the layout is set to 'FixedNumber'.
+    FixedNumberOfPoints = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The number of points used when the layout is set to 'FixedNumber'.
 
 
 
@@ -289,8 +322,8 @@ Set: FixedNumberOfPoints(self: DividedPath)=value
 
 """
 
- Flipped=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If the divided path is flipped the nodes are numbered in the reverse order.
+    Flipped = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """If the divided path is flipped the nodes are numbered in the reverse order.
 
    It also switches the ends from which beginningIndent and endIndent are measured from.
 
@@ -302,8 +335,10 @@ Get: Flipped(self: DividedPath) -> bool
 
 """
 
- IsClosedLoop=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether or not the path forms a closed loop.
+    IsClosedLoop = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether or not the path forms a closed loop.
 
 
 
@@ -313,8 +348,10 @@ Get: IsClosedLoop(self: DividedPath) -> bool
 
 """
 
- IsCyclical=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True if the first and last point coincide
+    IsCyclical = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """True if the first and last point coincide
 
    False otherwise.
 
@@ -326,8 +363,10 @@ Get: IsCyclical(self: DividedPath) -> bool
 
 """
 
- MaximumDistance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The maximum distance is used when the layout is set to 'MaximumSpacing'.
+    MaximumDistance = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The maximum distance is used when the layout is set to 'MaximumSpacing'.
 
    When that layout rule is used the distance between points will not exceed this value.
 
@@ -343,8 +382,10 @@ Set: MaximumDistance(self: DividedPath)=value
 
 """
 
- MeasurementType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The measurement type determines how distances are calculated.
+    MeasurementType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The measurement type determines how distances are calculated.
 
    Either along a straight line between two points ('ChordLength')
 
@@ -360,8 +401,10 @@ Set: MeasurementType(self: DividedPath)=value
 
 """
 
- MinimumDistance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The minimum distance is used when the layout is set to 'MinimumSpacing'.
+    MinimumDistance = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The minimum distance is used when the layout is set to 'MinimumSpacing'.
 
    When that layout rule is used the distance between points will not fall below this value.
 
@@ -377,8 +420,10 @@ Set: MinimumDistance(self: DividedPath)=value
 
 """
 
- NumberOfPoints=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The total number of points of the divided surface.
+    NumberOfPoints = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The total number of points of the divided surface.
 
    This combines the layout points and the intersection points.
 
@@ -390,8 +435,10 @@ Get: NumberOfPoints(self: DividedPath) -> int
 
 """
 
- SpacingRuleJustification=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When the layout is set to 'FixedDistance' the points may not cover the
+    SpacingRuleJustification = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """When the layout is set to 'FixedDistance' the points may not cover the
 
    entire range of the path.  The justification determines whether
 
@@ -407,8 +454,10 @@ Set: SpacingRuleJustification(self: DividedPath)=value
 
 """
 
- SpacingRuleLayout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The layout determines how points are distributed along the path.
+    SpacingRuleLayout = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The layout determines how points are distributed along the path.
 
 
 
@@ -420,8 +469,10 @@ Set: SpacingRuleLayout(self: DividedPath)=value
 
 """
 
- TotalPathLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The sum of the curve lengths.
+    TotalPathLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The sum of the curve lengths.
 
 
 
@@ -430,5 +481,3 @@ Get: TotalPathLength(self: DividedPath) -> float
 
 
 """
-
-

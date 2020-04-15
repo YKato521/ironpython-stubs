@@ -1,13 +1,14 @@
 class SelectionRangeConverter(TypeConverter):
- """
+    """
  Provides a type converter to convert System.Windows.Forms.SelectionRange objects to and from various other types.
 
  
 
  SelectionRangeConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: SelectionRangeConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -26,9 +27,10 @@ class SelectionRangeConverter(TypeConverter):
 
    Returns: true if the converter can perform the specified conversion; otherwise,false.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: SelectionRangeConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -47,9 +49,10 @@ class SelectionRangeConverter(TypeConverter):
 
    Returns: true if this converter can perform the specified conversion; otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: SelectionRangeConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -66,9 +69,10 @@ class SelectionRangeConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: SelectionRangeConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -91,9 +95,10 @@ class SelectionRangeConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def CreateInstance(self,*__args):
-  """
+        pass
+
+    def CreateInstance(self, *__args):
+        """
   CreateInstance(self: SelectionRangeConverter,context: ITypeDescriptorContext,propertyValues: IDictionary) -> object
 
   
@@ -114,9 +119,10 @@ class SelectionRangeConverter(TypeConverter):
 
     throws an exception.
   """
-  pass
- def GetCreateInstanceSupported(self,context=None):
-  """
+        pass
+
+    def GetCreateInstanceSupported(self, context=None):
+        """
   GetCreateInstanceSupported(self: SelectionRangeConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -135,9 +141,10 @@ class SelectionRangeConverter(TypeConverter):
 
     make a change to one or more properties; otherwise false.
   """
-  pass
- def GetProperties(self,*__args):
-  """
+        pass
+
+    def GetProperties(self, *__args):
+        """
   GetProperties(self: SelectionRangeConverter,context: ITypeDescriptorContext,value: object,attributes: Array[Attribute]) -> PropertyDescriptorCollection
 
   
@@ -156,9 +163,10 @@ class SelectionRangeConverter(TypeConverter):
 
     System.Windows.Forms.SelectionRange type; otherwise,null.
   """
-  pass
- def GetPropertiesSupported(self,context=None):
-  """
+        pass
+
+    def GetPropertiesSupported(self, context=None):
+        """
   GetPropertiesSupported(self: SelectionRangeConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -177,4 +185,4 @@ class SelectionRangeConverter(TypeConverter):
 
     the properties of a System.Windows.Forms.SelectionRange object; otherwise,false.
   """
-  pass
+        pass

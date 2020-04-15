@@ -1,7 +1,8 @@
-class View3D(View,IDisposable):
- """ Class for 3D views """
- def CanResetCameraTarget(self):
-  """
+class View3D(View, IDisposable):
+    """ Class for 3D views """
+
+    def CanResetCameraTarget(self):
+        """
   CanResetCameraTarget(self: View3D) -> bool
 
   
@@ -10,9 +11,10 @@ class View3D(View,IDisposable):
 
    Returns: True if camera target can be reset for this view,false otherwise.
   """
-  pass
- def CanSaveOrientation(self):
-  """
+        pass
+
+    def CanSaveOrientation(self):
+        """
   CanSaveOrientation(self: View3D) -> bool
 
   
@@ -21,9 +23,10 @@ class View3D(View,IDisposable):
 
    Returns: True if the View3D's orientation can be saved,false otherwise.
   """
-  pass
- def CanToggleBetweenPerspectiveAndIsometric(self):
-  """
+        pass
+
+    def CanToggleBetweenPerspectiveAndIsometric(self):
+        """
   CanToggleBetweenPerspectiveAndIsometric(self: View3D) -> bool
 
   
@@ -32,10 +35,11 @@ class View3D(View,IDisposable):
 
    Returns: True if this view can be toggled,false otherwise.
   """
-  pass
- @staticmethod
- def CreateIsometric(document,viewFamilyTypeId):
-  """
+        pass
+
+    @staticmethod
+    def CreateIsometric(document, viewFamilyTypeId):
+        """
   CreateIsometric(document: Document,viewFamilyTypeId: ElementId) -> View3D
 
   
@@ -54,10 +58,11 @@ class View3D(View,IDisposable):
 
    Returns: The new isometric View3D.
   """
-  pass
- @staticmethod
- def CreatePerspective(document,viewFamilyTypeId):
-  """
+        pass
+
+    @staticmethod
+    def CreatePerspective(document, viewFamilyTypeId):
+        """
   CreatePerspective(document: Document,viewFamilyTypeId: ElementId) -> View3D
 
   
@@ -76,15 +81,18 @@ class View3D(View,IDisposable):
 
    Returns: The new perspective View3D.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: View,view: View) -> BoundingBoxXYZ """
-  pass
- def GetOrientation(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: View,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetOrientation(self):
+        """
   GetOrientation(self: View3D) -> ViewOrientation3D
 
   
@@ -93,9 +101,10 @@ class View3D(View,IDisposable):
 
    Returns: The current non-saved orientation of the View3D.
   """
-  pass
- def GetRenderingSettings(self):
-  """
+        pass
+
+    def GetRenderingSettings(self):
+        """
   GetRenderingSettings(self: View3D) -> RenderingSettings
 
   
@@ -110,9 +119,10 @@ class View3D(View,IDisposable):
 
     new settings back to Revit.
   """
-  pass
- def GetSavedOrientation(self):
-  """
+        pass
+
+    def GetSavedOrientation(self):
+        """
   GetSavedOrientation(self: View3D) -> ViewOrientation3D
 
   
@@ -121,9 +131,10 @@ class View3D(View,IDisposable):
 
    Returns: The saved orientation of the View3D.
   """
-  pass
- def GetSectionBox(self):
-  """
+        pass
+
+    def GetSectionBox(self):
+        """
   GetSectionBox(self: View3D) -> BoundingBoxXYZ
 
   
@@ -142,18 +153,20 @@ class View3D(View,IDisposable):
 
     coordinates.
   """
-  pass
- def HasBeenLocked(self):
-  """
+        pass
+
+    def HasBeenLocked(self):
+        """
   HasBeenLocked(self: View3D) -> bool
 
   
 
    Identifies if the view has ever been locked.
   """
-  pass
- def OrientTo(self,forwardDirection):
-  """
+        pass
+
+    def OrientTo(self, forwardDirection):
+        """
   OrientTo(self: View3D,forwardDirection: XYZ)
 
    Reorients the view to align with the forward direction.
@@ -162,43 +175,50 @@ class View3D(View,IDisposable):
 
    forwardDirection: The forward direction.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def ResetCameraTarget(self):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def ResetCameraTarget(self):
+        """
   ResetCameraTarget(self: View3D)
 
    Resets the camera target to the center of the field of view.
   """
-  pass
- def RestoreOrientationAndLock(self):
-  """
+        pass
+
+    def RestoreOrientationAndLock(self):
+        """
   RestoreOrientationAndLock(self: View3D)
 
    Locks the view and restores its orientation.
   """
-  pass
- def SaveOrientation(self):
-  """
+        pass
+
+    def SaveOrientation(self):
+        """
   SaveOrientation(self: View3D)
 
    Converts the temporary orientation of the View3D into its saved orientation.
   """
-  pass
- def SaveOrientationAndLock(self):
-  """
+        pass
+
+    def SaveOrientationAndLock(self):
+        """
   SaveOrientationAndLock(self: View3D)
 
    Locks the view and saves its orientation
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetOrientation(self,newViewOrientation3D):
-  """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetOrientation(self, newViewOrientation3D):
+        """
   SetOrientation(self: View3D,newViewOrientation3D: ViewOrientation3D)
 
    Sets the temporary orientation of the View3D.  The new orientation is not saved 
@@ -211,9 +231,10 @@ class View3D(View,IDisposable):
 
    newViewOrientation3D: The new orientation to set.
   """
-  pass
- def SetRenderingSettings(self,settings):
-  """
+        pass
+
+    def SetRenderingSettings(self, settings):
+        """
   SetRenderingSettings(self: View3D,settings: RenderingSettings)
 
    Changes the rendering settings for this 3d view.
@@ -222,9 +243,10 @@ class View3D(View,IDisposable):
 
    settings: The new rendering settings to be applied to this view.
   """
-  pass
- def SetSectionBox(self,boundingBoxXYZ):
-  """
+        pass
+
+    def SetSectionBox(self, boundingBoxXYZ):
+        """
   SetSectionBox(self: View3D,boundingBoxXYZ: BoundingBoxXYZ)
 
    Sets the section box for this 3D view.
@@ -239,39 +261,46 @@ class View3D(View,IDisposable):
 
     enabled flags in the input box are ignored.
   """
-  pass
- def ToggleToIsometric(self):
-  """
+        pass
+
+    def ToggleToIsometric(self):
+        """
   ToggleToIsometric(self: View3D)
 
    Toggles this view to isometric.
   """
-  pass
- def ToggleToPerspective(self):
-  """
+        pass
+
+    def ToggleToPerspective(self):
+        """
   ToggleToPerspective(self: View3D)
 
    Toggles this view to perspective.
   """
-  pass
- def Unlock(self):
-  """
+        pass
+
+    def Unlock(self):
+        """
   Unlock(self: View3D)
 
    Unlocks the view. Has no effect if the view is already unlocked.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- IsLocked=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the view is locked.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    IsLocked = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Indicates if the view is locked.
 
 
 
@@ -281,8 +310,10 @@ Get: IsLocked(self: View3D) -> bool
 
 """
 
- IsPerspective=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies whether this is a perspective view.
+    IsPerspective = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies whether this is a perspective view.
 
 
 
@@ -292,8 +323,10 @@ Get: IsPerspective(self: View3D) -> bool
 
 """
 
- IsSectionBoxActive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies whether or not the section box is active in this 3D view.
+    IsSectionBoxActive = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies whether or not the section box is active in this 3D view.
 
 
 
@@ -304,5 +337,3 @@ Get: IsSectionBoxActive(self: View3D) -> bool
 Set: IsSectionBoxActive(self: View3D)=value
 
 """
-
-

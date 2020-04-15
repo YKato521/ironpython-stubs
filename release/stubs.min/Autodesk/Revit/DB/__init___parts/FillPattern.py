@@ -1,5 +1,5 @@
-class FillPattern(object,IDisposable):
- """
+class FillPattern(object, IDisposable):
+    """
  Represents a fill pattern object.
 
  
@@ -14,11 +14,13 @@ class FillPattern(object,IDisposable):
 
  FillPattern(other: FillPattern)
  """
- def Dispose(self):
-  """ Dispose(self: FillPattern) """
-  pass
- def ExpandDots(self):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: FillPattern) """
+        pass
+
+    def ExpandDots(self):
+        """
   ExpandDots(self: FillPattern) -> bool
 
   
@@ -27,9 +29,10 @@ class FillPattern(object,IDisposable):
 
    Returns: Indicates whether any dots were in fact expanded.
   """
-  pass
- def GetFillGrid(self,gridIdx):
-  """
+        pass
+
+    def GetFillGrid(self, gridIdx):
+        """
   GetFillGrid(self: FillPattern,gridIdx: int) -> FillGrid
 
   
@@ -42,9 +45,10 @@ class FillPattern(object,IDisposable):
 
    Returns: The fill grid.
   """
-  pass
- def GetFillGrids(self):
-  """
+        pass
+
+    def GetFillGrids(self):
+        """
   GetFillGrids(self: FillPattern) -> IList[FillGrid]
 
   
@@ -53,9 +57,10 @@ class FillPattern(object,IDisposable):
 
    Returns: The fill grids.
   """
-  pass
- def IsEqual(self,other):
-  """
+        pass
+
+    def IsEqual(self, other):
+        """
   IsEqual(self: FillPattern,other: FillPattern) -> bool
 
   
@@ -68,12 +73,14 @@ class FillPattern(object,IDisposable):
 
    Returns: True for equal,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: FillPattern,disposing: bool) """
-  pass
- def SetFillGrid(self,gridIdx,fillGrid):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: FillPattern,disposing: bool) """
+        pass
+
+    def SetFillGrid(self, gridIdx, fillGrid):
+        """
   SetFillGrid(self: FillPattern,gridIdx: int,fillGrid: FillGrid)
 
    Sets the fill grid.
@@ -84,22 +91,27 @@ class FillPattern(object,IDisposable):
 
    fillGrid: The fill grid to be used.
   """
-  pass
- def SetFillGrids(self,fillGrids):
-  """ SetFillGrids(self: FillPattern,fillGrids: IList[FillGrid]) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def SetFillGrids(self, fillGrids):
+        """ SetFillGrids(self: FillPattern,fillGrids: IList[FillGrid]) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,name: str,target: FillPatternTarget,orientation: FillPatternHostOrientation,angle: float,spacing1: float,spacing2: float)
 
   __new__(cls: type,name: str,target: FillPatternTarget,orientation: FillPatternHostOrientation,angle: float,spacing1: float)
@@ -110,12 +122,14 @@ class FillPattern(object,IDisposable):
 
   __new__(cls: type,other: FillPattern)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- GridCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the count of the fill grids in this fill pattern.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    GridCount = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the count of the fill grids in this fill pattern.
 
 
 
@@ -125,8 +139,10 @@ Get: GridCount(self: FillPattern) -> int
 
 """
 
- HostOrientation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Orientation to host layer.
+    HostOrientation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Orientation to host layer.
 
 
 
@@ -138,8 +154,10 @@ Set: HostOrientation(self: FillPattern)=value
 
 """
 
- IsSolidFill=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Check if the fill pattern is a solid fill pattern.
+    IsSolidFill = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Check if the fill pattern is a solid fill pattern.
 
 
 
@@ -149,8 +167,10 @@ Get: IsSolidFill(self: FillPattern) -> bool
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -160,8 +180,10 @@ Get: IsValidObject(self: FillPattern) -> bool
 
 """
 
- LengthPerArea=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets length of all lines that placed on unit area.
+    LengthPerArea = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets length of all lines that placed on unit area.
 
 
 
@@ -171,8 +193,10 @@ Get: LengthPerArea(self: FillPattern) -> float
 
 """
 
- LinesPerLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of solid lines that placed in unit length.
+    LinesPerLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the number of solid lines that placed in unit length.
 
 
 
@@ -182,8 +206,8 @@ Get: LinesPerLength(self: FillPattern) -> float
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The name of the fill pattern.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The name of the fill pattern.
 
 
 
@@ -195,8 +219,10 @@ Set: Name(self: FillPattern)=value
 
 """
 
- StrokesPerArea=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of strokes that placed on unit area.
+    StrokesPerArea = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the number of strokes that placed on unit area.
 
 
 
@@ -206,8 +232,8 @@ Get: StrokesPerArea(self: FillPattern) -> float
 
 """
 
- Target=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Target of this fill pattern applied to.
+    Target = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Target of this fill pattern applied to.
 
 
 
@@ -218,5 +244,3 @@ Get: Target(self: FillPattern) -> FillPatternTarget
 Set: Target(self: FillPattern)=value
 
 """
-
-

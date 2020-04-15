@@ -1,14 +1,16 @@
-class FileSystemInfo(MarshalByRefObject,ISerializable):
- """ Provides the base class for both System.IO.FileInfo and System.IO.DirectoryInfo objects. """
- def Delete(self):
-  """
+class FileSystemInfo(MarshalByRefObject, ISerializable):
+    """ Provides the base class for both System.IO.FileInfo and System.IO.DirectoryInfo objects. """
+
+    def Delete(self):
+        """
   Delete(self: FileSystemInfo)
 
    Deletes a file or directory.
   """
-  pass
- def GetObjectData(self,info,context):
-  """
+        pass
+
+    def GetObjectData(self, info, context):
+        """
   GetObjectData(self: FileSystemInfo,info: SerializationInfo,context: StreamingContext)
 
    Sets the System.Runtime.Serialization.SerializationInfo object with the file name and additional 
@@ -29,9 +31,10 @@ class FileSystemInfo(MarshalByRefObject,ISerializable):
 
     source or destination.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -62,29 +65,36 @@ class FileSystemInfo(MarshalByRefObject,ISerializable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def Refresh(self):
-  """
+        pass
+
+    def Refresh(self):
+        """
   Refresh(self: FileSystemInfo)
 
    Refreshes the state of the object.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """
   __new__(cls: type)
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- Attributes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the attributes for the current file or directory.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    Attributes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the attributes for the current file or directory.
 
 
 
@@ -96,8 +106,10 @@ Set: Attributes(self: FileSystemInfo)=value
 
 """
 
- CreationTime=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the creation time of the current file or directory.
+    CreationTime = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the creation time of the current file or directory.
 
 
 
@@ -109,8 +121,10 @@ Set: CreationTime(self: FileSystemInfo)=value
 
 """
 
- CreationTimeUtc=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the creation time,in coordinated universal time (UTC),of the current file or directory.
+    CreationTimeUtc = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the creation time,in coordinated universal time (UTC),of the current file or directory.
 
 
 
@@ -122,8 +136,8 @@ Set: CreationTimeUtc(self: FileSystemInfo)=value
 
 """
 
- Exists=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the file or directory exists.
+    Exists = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the file or directory exists.
 
 
 
@@ -133,8 +147,8 @@ Get: Exists(self: FileSystemInfo) -> bool
 
 """
 
- Extension=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the string representing the extension part of the file.
+    Extension = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the string representing the extension part of the file.
 
 
 
@@ -144,8 +158,8 @@ Get: Extension(self: FileSystemInfo) -> str
 
 """
 
- FullName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the full path of the directory or file.
+    FullName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the full path of the directory or file.
 
 
 
@@ -155,8 +169,10 @@ Get: FullName(self: FileSystemInfo) -> str
 
 """
 
- LastAccessTime=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the time the current file or directory was last accessed.
+    LastAccessTime = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the time the current file or directory was last accessed.
 
 
 
@@ -168,8 +184,10 @@ Set: LastAccessTime(self: FileSystemInfo)=value
 
 """
 
- LastAccessTimeUtc=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the time,in coordinated universal time (UTC),that the current file or directory was last accessed.
+    LastAccessTimeUtc = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the time,in coordinated universal time (UTC),that the current file or directory was last accessed.
 
 
 
@@ -181,8 +199,10 @@ Set: LastAccessTimeUtc(self: FileSystemInfo)=value
 
 """
 
- LastWriteTime=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the time when the current file or directory was last written to.
+    LastWriteTime = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the time when the current file or directory was last written to.
 
 
 
@@ -194,8 +214,10 @@ Set: LastWriteTime(self: FileSystemInfo)=value
 
 """
 
- LastWriteTimeUtc=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the time,in coordinated universal time (UTC),when the current file or directory was last written to.
+    LastWriteTimeUtc = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the time,in coordinated universal time (UTC),when the current file or directory was last written to.
 
 
 
@@ -207,8 +229,8 @@ Set: LastWriteTimeUtc(self: FileSystemInfo)=value
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """For files,gets the name of the file. For directories,gets the name of the last directory in the hierarchy if a hierarchy exists. Otherwise,the Name property gets the name of the directory.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """For files,gets the name of the file. For directories,gets the name of the last directory in the hierarchy if a hierarchy exists. Otherwise,the Name property gets the name of the directory.
 
 
 
@@ -218,7 +240,5 @@ Get: Name(self: FileSystemInfo) -> str
 
 """
 
-
- FullPath=None
- OriginalPath=None
-
+    FullPath = None
+    OriginalPath = None

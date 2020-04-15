@@ -1,13 +1,14 @@
-class ControlBindingsCollection(BindingsCollection,ICollection,IEnumerable):
- """
+class ControlBindingsCollection(BindingsCollection, ICollection, IEnumerable):
+    """
  Represents the collection of data bindings for a control.
 
  
 
  ControlBindingsCollection(control: IBindableComponent)
  """
- def Add(self,*__args):
-  """
+
+    def Add(self, *__args):
+        """
   Add(self: ControlBindingsCollection,propertyName: str,dataSource: object,dataMember: str,formattingEnabled: bool,updateMode: DataSourceUpdateMode,nullValue: object) -> Binding
 
   
@@ -196,9 +197,10 @@ class ControlBindingsCollection(BindingsCollection,ICollection,IEnumerable):
 
    Returns: The newly created System.Windows.Forms.Binding.
   """
-  pass
- def AddCore(self,*args):
-  """
+        pass
+
+    def AddCore(self, *args):
+        """
   AddCore(self: ControlBindingsCollection,dataBinding: Binding)
 
    Adds a binding to the collection.
@@ -207,23 +209,26 @@ class ControlBindingsCollection(BindingsCollection,ICollection,IEnumerable):
 
    dataBinding: The System.Windows.Forms.Binding to add.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: ControlBindingsCollection)
 
    Clears the collection of any bindings.
   """
-  pass
- def ClearCore(self,*args):
-  """
+        pass
+
+    def ClearCore(self, *args):
+        """
   ClearCore(self: ControlBindingsCollection)
 
    Clears the bindings in the collection.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -254,9 +259,10 @@ class ControlBindingsCollection(BindingsCollection,ICollection,IEnumerable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def OnCollectionChanged(self,*args):
-  """
+        pass
+
+    def OnCollectionChanged(self, *args):
+        """
   OnCollectionChanged(self: BindingsCollection,ccevent: CollectionChangeEventArgs)
 
    Raises the System.Windows.Forms.BindingsCollection.CollectionChanged event.
@@ -265,9 +271,10 @@ class ControlBindingsCollection(BindingsCollection,ICollection,IEnumerable):
 
    ccevent: A System.ComponentModel.CollectionChangeEventArgs that contains the event data.
   """
-  pass
- def OnCollectionChanging(self,*args):
-  """
+        pass
+
+    def OnCollectionChanging(self, *args):
+        """
   OnCollectionChanging(self: BindingsCollection,e: CollectionChangeEventArgs)
 
    Raises the System.Windows.Forms.BindingsCollection.CollectionChanging event.
@@ -276,9 +283,10 @@ class ControlBindingsCollection(BindingsCollection,ICollection,IEnumerable):
 
    e: A System.ComponentModel.CollectionChangeEventArgs that contains event data.
   """
-  pass
- def Remove(self,binding):
-  """
+        pass
+
+    def Remove(self, binding):
+        """
   Remove(self: ControlBindingsCollection,binding: Binding)
 
    Deletes the specified System.Windows.Forms.Binding from the collection.
@@ -287,9 +295,10 @@ class ControlBindingsCollection(BindingsCollection,ICollection,IEnumerable):
 
    binding: The System.Windows.Forms.Binding to remove.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: ControlBindingsCollection,index: int)
 
    Deletes the System.Windows.Forms.Binding at the specified index.
@@ -298,9 +307,10 @@ class ControlBindingsCollection(BindingsCollection,ICollection,IEnumerable):
 
    index: The zero-based index of the item to remove.
   """
-  pass
- def RemoveCore(self,*args):
-  """
+        pass
+
+    def RemoveCore(self, *args):
+        """
   RemoveCore(self: ControlBindingsCollection,dataBinding: Binding)
 
    Removes the specified binding from the collection.
@@ -309,9 +319,10 @@ class ControlBindingsCollection(BindingsCollection,ICollection,IEnumerable):
 
    dataBinding: The System.Windows.Forms.Binding to remove from the collection.
   """
-  pass
- def ShouldSerializeMyAll(self,*args):
-  """
+        pass
+
+    def ShouldSerializeMyAll(self, *args):
+        """
   ShouldSerializeMyAll(self: BindingsCollection) -> bool
 
   
@@ -320,25 +331,33 @@ class ControlBindingsCollection(BindingsCollection,ICollection,IEnumerable):
 
    Returns: true if the collection count is greater than zero; otherwise,false.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- @staticmethod
- def __new__(self,control):
-  """ __new__(cls: type,control: IBindableComponent) """
-  pass
- BindableComponent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Forms.IBindableComponent the binding collection belongs to.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    @staticmethod
+    def __new__(self, control):
+        """ __new__(cls: type,control: IBindableComponent) """
+        pass
+
+    BindableComponent = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Windows.Forms.IBindableComponent the binding collection belongs to.
 
 
 
@@ -348,8 +367,8 @@ Get: BindableComponent(self: ControlBindingsCollection) -> IBindableComponent
 
 """
 
- Control=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the control that the collection belongs to.
+    Control = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the control that the collection belongs to.
 
 
 
@@ -359,8 +378,10 @@ Get: Control(self: ControlBindingsCollection) -> Control
 
 """
 
- DefaultDataSourceUpdateMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the default System.Windows.Forms.Binding.DataSourceUpdateMode for a System.Windows.Forms.Binding in the collection.
+    DefaultDataSourceUpdateMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the default System.Windows.Forms.Binding.DataSourceUpdateMode for a System.Windows.Forms.Binding in the collection.
 
 
 
@@ -372,11 +393,9 @@ Set: DefaultDataSourceUpdateMode(self: ControlBindingsCollection)=value
 
 """
 
- List=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the bindings in the collection as an object.
+    List = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the bindings in the collection as an object.
 
 
 
 """
-
-

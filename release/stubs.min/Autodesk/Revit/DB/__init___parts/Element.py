@@ -1,7 +1,8 @@
-class Element(object,IDisposable):
- """ Base class for most persistent data within a Revit document. """
- def ArePhasesModifiable(self):
-  """
+class Element(object, IDisposable):
+    """ Base class for most persistent data within a Revit document. """
+
+    def ArePhasesModifiable(self):
+        """
   ArePhasesModifiable(self: Element) -> bool
 
   
@@ -16,9 +17,10 @@ class Element(object,IDisposable):
 
     this Element,false otherwise.
   """
-  pass
- def CanBeHidden(self,pView):
-  """
+        pass
+
+    def CanBeHidden(self, pView):
+        """
   CanBeHidden(self: Element,pView: View) -> bool
 
   
@@ -27,9 +29,10 @@ class Element(object,IDisposable):
 
    Returns: If the element is not permitted to be hidden,false is returned.
   """
-  pass
- def CanBeLocked(self):
-  """
+        pass
+
+    def CanBeLocked(self):
+        """
   CanBeLocked(self: Element) -> bool
 
   
@@ -38,9 +41,10 @@ class Element(object,IDisposable):
 
    Returns: True if the element can be locked,false otherwise.
   """
-  pass
- def CanHaveAnalyticalModel(self):
-  """
+        pass
+
+    def CanHaveAnalyticalModel(self):
+        """
   CanHaveAnalyticalModel(self: Element) -> bool
 
   
@@ -49,10 +53,11 @@ class Element(object,IDisposable):
 
    Returns: True if the Element can have an Analytical Model,false otherwise.
   """
-  pass
- @staticmethod
- def CanHaveTypeAssigned(document=None,elementIds=None):
-  """
+        pass
+
+    @staticmethod
+    def CanHaveTypeAssigned(document=None, elementIds=None):
+        """
   CanHaveTypeAssigned(self: Element) -> bool
 
   
@@ -63,10 +68,11 @@ class Element(object,IDisposable):
 
   CanHaveTypeAssigned(document: Document,elementIds: ICollection[ElementId]) -> bool
   """
-  pass
- @staticmethod
- def ChangeTypeId(*__args):
-  """
+        pass
+
+    @staticmethod
+    def ChangeTypeId(*__args):
+        """
   ChangeTypeId(self: Element,typeId: ElementId) -> ElementId
 
   
@@ -85,9 +91,10 @@ class Element(object,IDisposable):
 
   ChangeTypeId(document: Document,elementIds: ICollection[ElementId],typeId: ElementId) -> IDictionary[ElementId,ElementId]
   """
-  pass
- def DeleteEntity(self,schema):
-  """
+        pass
+
+    def DeleteEntity(self, schema):
+        """
   DeleteEntity(self: Element,schema: Schema) -> bool
 
   
@@ -100,12 +107,14 @@ class Element(object,IDisposable):
 
    Returns: True if entity was deleted,false if entity didn't exist
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element) """
-  pass
- def GetAnalyticalModel(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element) """
+        pass
+
+    def GetAnalyticalModel(self):
+        """
   GetAnalyticalModel(self: Element) -> AnalyticalModel
 
   
@@ -114,9 +123,10 @@ class Element(object,IDisposable):
 
    Returns: Writeable Analytical Model.
   """
-  pass
- def GetAnalyticalModelId(self):
-  """
+        pass
+
+    def GetAnalyticalModelId(self):
+        """
   GetAnalyticalModelId(self: Element) -> ElementId
 
   
@@ -125,13 +135,15 @@ class Element(object,IDisposable):
 
    Returns: Element Id.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- @staticmethod
- def GetChangeTypeAny():
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    @staticmethod
+    def GetChangeTypeAny():
+        """
   GetChangeTypeAny() -> ChangeType
 
   
@@ -144,10 +156,11 @@ class Element(object,IDisposable):
 
     on any change in an element.
   """
-  pass
- @staticmethod
- def GetChangeTypeElementAddition():
-  """
+        pass
+
+    @staticmethod
+    def GetChangeTypeElementAddition():
+        """
   GetChangeTypeElementAddition() -> ChangeType
 
   
@@ -160,10 +173,11 @@ class Element(object,IDisposable):
 
     on element addition.
   """
-  pass
- @staticmethod
- def GetChangeTypeElementDeletion():
-  """
+        pass
+
+    @staticmethod
+    def GetChangeTypeElementDeletion():
+        """
   GetChangeTypeElementDeletion() -> ChangeType
 
   
@@ -176,10 +190,11 @@ class Element(object,IDisposable):
 
     on element deletion.
   """
-  pass
- @staticmethod
- def GetChangeTypeGeometry():
-  """
+        pass
+
+    @staticmethod
+    def GetChangeTypeGeometry():
+        """
   GetChangeTypeGeometry() -> ChangeType
 
   
@@ -192,10 +207,11 @@ class Element(object,IDisposable):
 
     on a geometry change in an element
   """
-  pass
- @staticmethod
- def GetChangeTypeParameter(*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetChangeTypeParameter(*__args):
+        """
   GetChangeTypeParameter(param: Parameter) -> ChangeType
 
   
@@ -230,9 +246,10 @@ class Element(object,IDisposable):
 
     on parameter value change.
   """
-  pass
- def GetEntity(self,schema):
-  """
+        pass
+
+    def GetEntity(self, schema):
+        """
   GetEntity(self: Element,schema: Schema) -> Entity
 
   
@@ -251,9 +268,10 @@ class Element(object,IDisposable):
 
    Returns: The returned Entity.
   """
-  pass
- def GetEntitySchemaGuids(self):
-  """
+        pass
+
+    def GetEntitySchemaGuids(self):
+        """
   GetEntitySchemaGuids(self: Element) -> IList[Guid]
 
   
@@ -262,9 +280,10 @@ class Element(object,IDisposable):
 
    Returns: The schema Entity guids.
   """
-  pass
- def GetExternalFileReference(self):
-  """
+        pass
+
+    def GetExternalFileReference(self):
+        """
   GetExternalFileReference(self: Element) -> ExternalFileReference
 
   
@@ -279,9 +298,10 @@ class Element(object,IDisposable):
 
     referenced by the element.
   """
-  pass
- def GetExternalResourceReference(self,resourceType):
-  """
+        pass
+
+    def GetExternalResourceReference(self, resourceType):
+        """
   GetExternalResourceReference(self: Element,resourceType: ExternalResourceType) -> ExternalResourceReference
 
   
@@ -300,9 +320,10 @@ class Element(object,IDisposable):
 
     resource type.
   """
-  pass
- def GetExternalResourceReferences(self):
-  """
+        pass
+
+    def GetExternalResourceReferences(self):
+        """
   GetExternalResourceReferences(self: Element) -> IDictionary[ExternalResourceType,ExternalResourceReference]
 
   
@@ -317,9 +338,10 @@ class Element(object,IDisposable):
 
    Returns: The full map of the external resource references referenced by the element.
   """
-  pass
- def GetGeneratingElementIds(self,geometryObject):
-  """
+        pass
+
+    def GetGeneratingElementIds(self, geometryObject):
+        """
   GetGeneratingElementIds(self: Element,geometryObject: GeometryObject) -> ICollection[ElementId]
 
   
@@ -338,9 +360,10 @@ class Element(object,IDisposable):
 
     object.
   """
-  pass
- def GetGeometryObjectFromReference(self,reference):
-  """
+        pass
+
+    def GetGeometryObjectFromReference(self, reference):
+        """
   GetGeometryObjectFromReference(self: Element,reference: Reference) -> GeometryObject
 
   
@@ -357,9 +380,10 @@ class Element(object,IDisposable):
 
    Returns: The geometric object referenced by the input reference.
   """
-  pass
- def GetMaterialArea(self,materialId,usePaintMaterial):
-  """
+        pass
+
+    def GetMaterialArea(self, materialId, usePaintMaterial):
+        """
   GetMaterialArea(self: Element,materialId: ElementId,usePaintMaterial: bool) -> float
 
   
@@ -394,9 +418,10 @@ class Element(object,IDisposable):
 
     not a part of this element.
   """
-  pass
- def GetMaterialIds(self,returnPaintMaterials):
-  """
+        pass
+
+    def GetMaterialIds(self, returnPaintMaterials):
+        """
   GetMaterialIds(self: Element,returnPaintMaterials: bool) -> ICollection[ElementId]
 
   
@@ -417,9 +442,10 @@ class Element(object,IDisposable):
 
    Returns: The set of material ids.
   """
-  pass
- def GetMaterialVolume(self,materialId):
-  """
+        pass
+
+    def GetMaterialVolume(self, materialId):
+        """
   GetMaterialVolume(self: Element,materialId: ElementId) -> float
 
   
@@ -438,9 +464,10 @@ class Element(object,IDisposable):
 
     not a part of this element.
   """
-  pass
- def GetMonitoredLinkElementIds(self):
-  """
+        pass
+
+    def GetMonitoredLinkElementIds(self):
+        """
   GetMonitoredLinkElementIds(self: Element) -> IList[ElementId]
 
   
@@ -449,9 +476,10 @@ class Element(object,IDisposable):
 
    Returns: The IDs of linked instances.
   """
-  pass
- def GetMonitoredLocalElementIds(self):
-  """
+        pass
+
+    def GetMonitoredLocalElementIds(self):
+        """
   GetMonitoredLocalElementIds(self: Element) -> IList[ElementId]
 
   
@@ -460,9 +488,10 @@ class Element(object,IDisposable):
 
    Returns: The IDs of local element IDs being monitored by this element.
   """
-  pass
- def GetOrderedParameters(self):
-  """
+        pass
+
+    def GetOrderedParameters(self):
+        """
   GetOrderedParameters(self: Element) -> IList[Parameter]
 
   
@@ -471,9 +500,10 @@ class Element(object,IDisposable):
 
    Returns: A collection containing all parameters.
   """
-  pass
- def GetParameterFormatOptions(self,parameterId):
-  """
+        pass
+
+    def GetParameterFormatOptions(self, parameterId):
+        """
   GetParameterFormatOptions(self: Element,parameterId: ElementId) -> FormatOptions
 
   
@@ -496,9 +526,10 @@ class Element(object,IDisposable):
 
     Unit object,which can be obtained from the Document.
   """
-  pass
- def GetParameters(self,name):
-  """
+        pass
+
+    def GetParameters(self, name):
+        """
   GetParameters(self: Element,name: str) -> IList[Parameter]
 
   
@@ -511,9 +542,10 @@ class Element(object,IDisposable):
 
    Returns: A collection containing the parameters having the same given parameter name.
   """
-  pass
- def GetPhaseStatus(self,phaseId):
-  """
+        pass
+
+    def GetPhaseStatus(self, phaseId):
+        """
   GetPhaseStatus(self: Element,phaseId: ElementId) -> ElementOnPhaseStatus
 
   
@@ -526,9 +558,10 @@ class Element(object,IDisposable):
 
    Returns: The status of the element in the phase.
   """
-  pass
- def GetTypeId(self):
-  """
+        pass
+
+    def GetTypeId(self):
+        """
   GetTypeId(self: Element) -> ElementId
 
   
@@ -539,10 +572,11 @@ class Element(object,IDisposable):
 
     type assigned.
   """
-  pass
- @staticmethod
- def GetValidTypes(document=None,elementIds=None):
-  """
+        pass
+
+    @staticmethod
+    def GetValidTypes(document=None, elementIds=None):
+        """
   GetValidTypes(self: Element) -> ICollection[ElementId]
 
   
@@ -557,9 +591,10 @@ class Element(object,IDisposable):
 
   GetValidTypes(document: Document,elementIds: ICollection[ElementId]) -> ICollection[ElementId]
   """
-  pass
- def HasPhases(self):
-  """
+        pass
+
+    def HasPhases(self):
+        """
   HasPhases(self: Element) -> bool
 
   
@@ -574,9 +609,10 @@ class Element(object,IDisposable):
 
     false otherwise.
   """
-  pass
- def IsExternalFileReference(self):
-  """
+        pass
+
+    def IsExternalFileReference(self):
+        """
   IsExternalFileReference(self: Element) -> bool
 
   
@@ -591,18 +627,20 @@ class Element(object,IDisposable):
 
     if it does not.
   """
-  pass
- def IsHidden(self,pView):
-  """
+        pass
+
+    def IsHidden(self, pView):
+        """
   IsHidden(self: Element,pView: View) -> bool
 
   
 
    Identifies if the element has been permanently hidden in the view.
   """
-  pass
- def IsMonitoringLinkElement(self):
-  """
+        pass
+
+    def IsMonitoringLinkElement(self):
+        """
   IsMonitoringLinkElement(self: Element) -> bool
 
   
@@ -613,9 +651,10 @@ class Element(object,IDisposable):
 
     false will be returned.
   """
-  pass
- def IsMonitoringLocalElement(self):
-  """
+        pass
+
+    def IsMonitoringLocalElement(self):
+        """
   IsMonitoringLocalElement(self: Element) -> bool
 
   
@@ -626,9 +665,10 @@ class Element(object,IDisposable):
 
     false will be returned.
   """
-  pass
- def IsPhaseCreatedValid(self,createdPhaseId):
-  """
+        pass
+
+    def IsPhaseCreatedValid(self, createdPhaseId):
+        """
   IsPhaseCreatedValid(self: Element,createdPhaseId: ElementId) -> bool
 
   
@@ -647,9 +687,10 @@ class Element(object,IDisposable):
 
     this Element,false otherwise.
   """
-  pass
- def IsPhaseDemolishedValid(self,demolishedPhaseId):
-  """
+        pass
+
+    def IsPhaseDemolishedValid(self, demolishedPhaseId):
+        """
   IsPhaseDemolishedValid(self: Element,demolishedPhaseId: ElementId) -> bool
 
   
@@ -668,10 +709,11 @@ class Element(object,IDisposable):
 
     DemolishedPhaseId in this Element,false otherwise.
   """
-  pass
- @staticmethod
- def IsValidType(*__args):
-  """
+        pass
+
+    @staticmethod
+    def IsValidType(*__args):
+        """
   IsValidType(self: Element,typeId: ElementId) -> bool
 
   
@@ -690,9 +732,10 @@ class Element(object,IDisposable):
 
   IsValidType(document: Document,elementIds: ICollection[ElementId],typeId: ElementId) -> bool
   """
-  pass
- def LookupParameter(self,name):
-  """
+        pass
+
+    def LookupParameter(self, name):
+        """
   LookupParameter(self: Element,name: str) -> Parameter
 
   
@@ -709,9 +752,10 @@ class Element(object,IDisposable):
 
     returned.
   """
-  pass
- def RefersToExternalResourceReference(self,resourceType):
-  """
+        pass
+
+    def RefersToExternalResourceReference(self, resourceType):
+        """
   RefersToExternalResourceReference(self: Element,resourceType: ExternalResourceType) -> bool
 
   
@@ -734,9 +778,10 @@ class Element(object,IDisposable):
 
     specified external resource type; otherwise,false.
   """
-  pass
- def RefersToExternalResourceReferences(self):
-  """
+        pass
+
+    def RefersToExternalResourceReferences(self):
+        """
   RefersToExternalResourceReferences(self: Element) -> bool
 
   
@@ -745,15 +790,18 @@ class Element(object,IDisposable):
 
    Returns: True if this element uses external resources,false if it does not.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetEntity(self,entity):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetEntity(self, entity):
+        """
   SetEntity(self: Element,entity: Entity)
 
    Stores the entity in the element. If an Entity described by the same Schema 
@@ -768,21 +816,28 @@ class Element(object,IDisposable):
 
    entity: The Entity to be stored.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- AssemblyInstanceId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the assembly instance to which the element belongs.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    AssemblyInstanceId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The id of the assembly instance to which the element belongs.
 
 
 
@@ -792,8 +847,8 @@ Get: AssemblyInstanceId(self: Element) -> ElementId
 
 """
 
- Category=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Retrieves a Category object that represents the category or sub category in which the
+    Category = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Retrieves a Category object that represents the category or sub category in which the
 
 element resides.
 
@@ -805,8 +860,10 @@ Get: Category(self: Element) -> Category
 
 """
 
- CreatedPhaseId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Id of a Phase at which the Element was created.
+    CreatedPhaseId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Id of a Phase at which the Element was created.
 
 
 
@@ -818,8 +875,10 @@ Set: CreatedPhaseId(self: Element)=value
 
 """
 
- DemolishedPhaseId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Id of a Phase at which the Element was demolished.
+    DemolishedPhaseId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Id of a Phase at which the Element was demolished.
 
 
 
@@ -831,8 +890,10 @@ Set: DemolishedPhaseId(self: Element)=value
 
 """
 
- DesignOption=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the design option to which the element belongs.
+    DesignOption = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the design option to which the element belongs.
 
 
 
@@ -842,8 +903,8 @@ Get: DesignOption(self: Element) -> DesignOption
 
 """
 
- Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the Document in which the Element resides.
+    Document = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns the Document in which the Element resides.
 
 
 
@@ -853,8 +914,8 @@ Get: Document(self: Element) -> Document
 
 """
 
- GroupId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the group to which an element belongs.
+    GroupId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The id of the group to which an element belongs.
 
 
 
@@ -864,8 +925,8 @@ Get: GroupId(self: Element) -> ElementId
 
 """
 
- Id=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """A unique identifier for an Element in an Autodesk Revit project.
+    Id = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """A unique identifier for an Element in an Autodesk Revit project.
 
 
 
@@ -875,8 +936,10 @@ Get: Id(self: Element) -> ElementId
 
 """
 
- IsTransient=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether an element is transient or permanent.
+    IsTransient = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates whether an element is transient or permanent.
 
 
 
@@ -886,8 +949,10 @@ Get: IsTransient(self: Element) -> bool
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -897,8 +962,8 @@ Get: IsValidObject(self: Element) -> bool
 
 """
 
- LevelId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the level associated with the element.
+    LevelId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The id of the level associated with the element.
 
 
 
@@ -908,8 +973,8 @@ Get: LevelId(self: Element) -> ElementId
 
 """
 
- Location=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is used to find the physical location of an element within a project.
+    Location = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """This property is used to find the physical location of an element within a project.
 
 
 
@@ -919,8 +984,8 @@ Get: Location(self: Element) -> Location
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """A human readable name for the Element.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """A human readable name for the Element.
 
 
 
@@ -932,8 +997,10 @@ Set: Name(self: Element)=value
 
 """
 
- OwnerViewId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the view that owns the element.
+    OwnerViewId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The id of the view that owns the element.
 
 
 
@@ -943,8 +1010,10 @@ Get: OwnerViewId(self: Element) -> ElementId
 
 """
 
- Parameters=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Retrieves a set containing all of the parameters that are contained within the element.
+    Parameters = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Retrieves a set containing all of the parameters that are contained within the element.
 
 
 
@@ -954,8 +1023,10 @@ Get: Parameters(self: Element) -> ParameterSet
 
 """
 
- ParametersMap=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Retrieves a map containing all of the parameters that are contained within the element.
+    ParametersMap = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Retrieves a map containing all of the parameters that are contained within the element.
 
 
 
@@ -965,8 +1036,8 @@ Get: ParametersMap(self: Element) -> ParameterMap
 
 """
 
- Pinned=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies if the element has been pinned to prevent changes.
+    Pinned = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Identifies if the element has been pinned to prevent changes.
 
 
 
@@ -978,8 +1049,8 @@ Set: Pinned(self: Element)=value
 
 """
 
- UniqueId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """A stable unique identifier for an element within the document.
+    UniqueId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """A stable unique identifier for an element within the document.
 
 
 
@@ -989,8 +1060,10 @@ Get: UniqueId(self: Element) -> str
 
 """
 
- ViewSpecific=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies if the element is owned by a view.
+    ViewSpecific = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies if the element is owned by a view.
 
 
 
@@ -1000,8 +1073,8 @@ Get: ViewSpecific(self: Element) -> bool
 
 """
 
- WorksetId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get Id of the Workset which owns the element.
+    WorksetId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get Id of the Workset which owns the element.
 
 
 
@@ -1010,5 +1083,3 @@ Get: WorksetId(self: Element) -> WorksetId
 
 
 """
-
-

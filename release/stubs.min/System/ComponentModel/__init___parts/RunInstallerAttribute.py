@@ -1,13 +1,14 @@
-class RunInstallerAttribute(Attribute,_Attribute):
- """
+class RunInstallerAttribute(Attribute, _Attribute):
+    """
  Specifies whether the Visual Studio Custom Action Installer or the Installutil.exe (Installer Tool) should be invoked when the assembly is installed.
 
  
 
  RunInstallerAttribute(runInstaller: bool)
  """
- def Equals(self,obj):
-  """
+
+    def Equals(self, obj):
+        """
   Equals(self: RunInstallerAttribute,obj: object) -> bool
 
   
@@ -26,9 +27,10 @@ class RunInstallerAttribute(Attribute,_Attribute):
 
     System.ComponentModel.RunInstallerAttribute; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: RunInstallerAttribute) -> int
 
   
@@ -37,9 +39,10 @@ class RunInstallerAttribute(Attribute,_Attribute):
 
    Returns: A hash code for the current System.ComponentModel.RunInstallerAttribute.
   """
-  pass
- def IsDefaultAttribute(self):
-  """
+        pass
+
+    def IsDefaultAttribute(self):
+        """
   IsDefaultAttribute(self: RunInstallerAttribute) -> bool
 
   
@@ -48,21 +51,28 @@ class RunInstallerAttribute(Attribute,_Attribute):
 
    Returns: true if the attribute is the default value for this attribute class; otherwise,false.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,runInstaller):
-  """ __new__(cls: type,runInstaller: bool) """
-  pass
- def __ne__(self,*args):
-  pass
- RunInstaller=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether an installer should be invoked during installation of an assembly.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, runInstaller):
+        """ __new__(cls: type,runInstaller: bool) """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    RunInstaller = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether an installer should be invoked during installation of an assembly.
 
 
 
@@ -72,8 +82,6 @@ Get: RunInstaller(self: RunInstallerAttribute) -> bool
 
 """
 
-
- Default=None
- No=None
- Yes=None
-
+    Default = None
+    No = None
+    Yes = None

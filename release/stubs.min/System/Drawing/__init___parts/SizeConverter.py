@@ -1,13 +1,14 @@
 class SizeConverter(TypeConverter):
- """
+    """
  The System.Drawing.SizeConverter class is used to convert from one data type to another. Access this class through the System.ComponentModel.TypeDescriptor object.
 
  
 
  SizeConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: SizeConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -32,9 +33,10 @@ class SizeConverter(TypeConverter):
 
    Returns: This method returns true if this object can perform the conversion.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: SizeConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -59,9 +61,10 @@ class SizeConverter(TypeConverter):
 
    Returns: This method returns true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: SizeConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -90,9 +93,10 @@ class SizeConverter(TypeConverter):
 
    Returns: The converted object.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: SizeConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -123,9 +127,10 @@ class SizeConverter(TypeConverter):
 
    Returns: The converted object.
   """
-  pass
- def CreateInstance(self,*__args):
-  """
+        pass
+
+    def CreateInstance(self, *__args):
+        """
   CreateInstance(self: SizeConverter,context: ITypeDescriptorContext,propertyValues: IDictionary) -> object
 
   
@@ -154,9 +159,10 @@ class SizeConverter(TypeConverter):
 
     returns null.
   """
-  pass
- def GetCreateInstanceSupported(self,context=None):
-  """
+        pass
+
+    def GetCreateInstanceSupported(self, context=None):
+        """
   GetCreateInstanceSupported(self: SizeConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -181,9 +187,10 @@ class SizeConverter(TypeConverter):
 
     of this object.
   """
-  pass
- def GetProperties(self,*__args):
-  """
+        pass
+
+    def GetProperties(self, *__args):
+        """
   GetProperties(self: SizeConverter,context: ITypeDescriptorContext,value: object,attributes: Array[Attribute]) -> PropertyDescriptorCollection
 
   
@@ -206,9 +213,10 @@ class SizeConverter(TypeConverter):
 
     exposed,this may return null. The default implementation always returns null.
   """
-  pass
- def GetPropertiesSupported(self,context=None):
-  """
+        pass
+
+    def GetPropertiesSupported(self, context=None):
+        """
   GetPropertiesSupported(self: SizeConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -225,4 +233,4 @@ class SizeConverter(TypeConverter):
 
     ject,System.Attribute[]) method should be called to find the properties of this object.
   """
-  pass
+        pass

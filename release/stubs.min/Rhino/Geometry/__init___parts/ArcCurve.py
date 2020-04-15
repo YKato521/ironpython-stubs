@@ -1,5 +1,5 @@
-class ArcCurve(Curve,IDisposable,ISerializable):
- """
+class ArcCurve(Curve, IDisposable, ISerializable):
+    """
  Represent arcs and circles.
 
     ArcCurve.IsCircle returns true if the curve is a complete circle.
@@ -18,8 +18,9 @@ class ArcCurve(Curve,IDisposable,ISerializable):
 
  ArcCurve(circle: Circle,t0: float,t1: float)
  """
- def ConstructConstObject(self,*args):
-  """
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -30,9 +31,10 @@ class ArcCurve(Curve,IDisposable,ISerializable):
 
    subobject_index: The subobject index.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: Curve,disposing: bool)
 
    For derived class implementers.
@@ -57,9 +59,10 @@ class ArcCurve(Curve,IDisposable,ISerializable):
 
     finalizer.
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: Curve)
 
    For derived classes implementers.
@@ -68,36 +71,41 @@ class ArcCurve(Curve,IDisposable,ISerializable):
 
     instance from being const.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: GeometryBase)
 
    Is called when a non-const operation occurs.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,other: ArcCurve)
@@ -112,11 +120,15 @@ class ArcCurve(Curve,IDisposable,ISerializable):
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- AngleDegrees=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the angles of this arc in degrees.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    AngleDegrees = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the angles of this arc in degrees.
 
 
 
@@ -126,8 +138,10 @@ Get: AngleDegrees(self: ArcCurve) -> float
 
 """
 
- AngleRadians=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the angles of this arc in radians.
+    AngleRadians = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the angles of this arc in radians.
 
 
 
@@ -137,8 +151,8 @@ Get: AngleRadians(self: ArcCurve) -> float
 
 """
 
- Arc=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the arc that is contained within this ArcCurve.
+    Arc = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the arc that is contained within this ArcCurve.
 
 
 
@@ -148,8 +162,10 @@ Get: Arc(self: ArcCurve) -> Arc
 
 """
 
- IsCompleteCircle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether or not this curve can be represented by a complete circle.
+    IsCompleteCircle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether or not this curve can be represented by a complete circle.
 
 
 
@@ -159,8 +175,8 @@ Get: IsCompleteCircle(self: ArcCurve) -> bool
 
 """
 
- Radius=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the radius of this ArcCurve.
+    Radius = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the radius of this ArcCurve.
 
 
 
@@ -169,5 +185,3 @@ Get: Radius(self: ArcCurve) -> float
 
 
 """
-
-

@@ -1,7 +1,18 @@
 class DirectoryObjectSecurity(ObjectSecurity):
- """ Provides the ability to control access to directory objects without direct manipulation of Access Control Lists (ACLs). """
- def AccessRuleFactory(self,identityReference,accessMask,isInherited,inheritanceFlags,propagationFlags,type,objectType=None,inheritedObjectType=None):
-  """
+    """ Provides the ability to control access to directory objects without direct manipulation of Access Control Lists (ACLs). """
+
+    def AccessRuleFactory(
+        self,
+        identityReference,
+        accessMask,
+        isInherited,
+        inheritanceFlags,
+        propagationFlags,
+        type,
+        objectType=None,
+        inheritedObjectType=None,
+    ):
+        """
   AccessRuleFactory(self: DirectoryObjectSecurity,identityReference: IdentityReference,accessMask: int,isInherited: bool,inheritanceFlags: InheritanceFlags,propagationFlags: PropagationFlags,type: AccessControlType,objectType: Guid,inheritedObjectType: Guid) -> AccessRule
 
   
@@ -44,9 +55,10 @@ class DirectoryObjectSecurity(ObjectSecurity):
 
    Returns: The System.Security.AccessControl.AccessRule object that this method creates.
   """
-  pass
- def AddAccessRule(self,*args):
-  """
+        pass
+
+    def AddAccessRule(self, *args):
+        """
   AddAccessRule(self: DirectoryObjectSecurity,rule: ObjectAccessRule)
 
    Adds the specified access rule to the Discretionary Access Control List (DACL) associated with 
@@ -59,9 +71,10 @@ class DirectoryObjectSecurity(ObjectSecurity):
 
    rule: The access rule to add.
   """
-  pass
- def AddAuditRule(self,*args):
-  """
+        pass
+
+    def AddAuditRule(self, *args):
+        """
   AddAuditRule(self: DirectoryObjectSecurity,rule: ObjectAuditRule)
 
    Adds the specified audit rule to the System Access Control List (SACL) associated with this 
@@ -74,9 +87,20 @@ class DirectoryObjectSecurity(ObjectSecurity):
 
    rule: The audit rule to add.
   """
-  pass
- def AuditRuleFactory(self,identityReference,accessMask,isInherited,inheritanceFlags,propagationFlags,flags,objectType=None,inheritedObjectType=None):
-  """
+        pass
+
+    def AuditRuleFactory(
+        self,
+        identityReference,
+        accessMask,
+        isInherited,
+        inheritanceFlags,
+        propagationFlags,
+        flags,
+        objectType=None,
+        inheritedObjectType=None,
+    ):
+        """
   AuditRuleFactory(self: DirectoryObjectSecurity,identityReference: IdentityReference,accessMask: int,isInherited: bool,inheritanceFlags: InheritanceFlags,propagationFlags: PropagationFlags,flags: AuditFlags,objectType: Guid,inheritedObjectType: Guid) -> AuditRule
 
   
@@ -119,9 +143,10 @@ class DirectoryObjectSecurity(ObjectSecurity):
 
    Returns: The System.Security.AccessControl.AuditRule object that this method creates.
   """
-  pass
- def GetAccessRules(self,includeExplicit,includeInherited,targetType):
-  """
+        pass
+
+    def GetAccessRules(self, includeExplicit, includeInherited, targetType):
+        """
   GetAccessRules(self: DirectoryObjectSecurity,includeExplicit: bool,includeInherited: bool,targetType: Type) -> AuthorizationRuleCollection
 
   
@@ -144,9 +169,10 @@ class DirectoryObjectSecurity(ObjectSecurity):
 
     System.Security.Principal.SecurityIdentifier object.
   """
-  pass
- def GetAuditRules(self,includeExplicit,includeInherited,targetType):
-  """
+        pass
+
+    def GetAuditRules(self, includeExplicit, includeInherited, targetType):
+        """
   GetAuditRules(self: DirectoryObjectSecurity,includeExplicit: bool,includeInherited: bool,targetType: Type) -> AuthorizationRuleCollection
 
   
@@ -169,9 +195,10 @@ class DirectoryObjectSecurity(ObjectSecurity):
 
     System.Security.Principal.SecurityIdentifier object.
   """
-  pass
- def RemoveAccessRule(self,*args):
-  """
+        pass
+
+    def RemoveAccessRule(self, *args):
+        """
   RemoveAccessRule(self: DirectoryObjectSecurity,rule: ObjectAccessRule) -> bool
 
   
@@ -190,9 +217,10 @@ class DirectoryObjectSecurity(ObjectSecurity):
 
    Returns: true if the access rule was successfully removed; otherwise,false.
   """
-  pass
- def RemoveAccessRuleAll(self,*args):
-  """
+        pass
+
+    def RemoveAccessRuleAll(self, *args):
+        """
   RemoveAccessRuleAll(self: DirectoryObjectSecurity,rule: ObjectAccessRule)
 
    Removes all access rules that have the same security identifier as the specified access rule 
@@ -207,9 +235,10 @@ class DirectoryObjectSecurity(ObjectSecurity):
 
    rule: The access rule to remove.
   """
-  pass
- def RemoveAccessRuleSpecific(self,*args):
-  """
+        pass
+
+    def RemoveAccessRuleSpecific(self, *args):
+        """
   RemoveAccessRuleSpecific(self: DirectoryObjectSecurity,rule: ObjectAccessRule)
 
    Removes all access rules that exactly match the specified access rule from the Discretionary 
@@ -224,9 +253,10 @@ class DirectoryObjectSecurity(ObjectSecurity):
 
    rule: The access rule to remove.
   """
-  pass
- def RemoveAuditRule(self,*args):
-  """
+        pass
+
+    def RemoveAuditRule(self, *args):
+        """
   RemoveAuditRule(self: DirectoryObjectSecurity,rule: ObjectAuditRule) -> bool
 
   
@@ -245,9 +275,10 @@ class DirectoryObjectSecurity(ObjectSecurity):
 
    Returns: true if the audit rule was successfully removed; otherwise,false.
   """
-  pass
- def RemoveAuditRuleAll(self,*args):
-  """
+        pass
+
+    def RemoveAuditRuleAll(self, *args):
+        """
   RemoveAuditRuleAll(self: DirectoryObjectSecurity,rule: ObjectAuditRule)
 
    Removes all audit rules that have the same security identifier as the specified audit rule from 
@@ -262,9 +293,10 @@ class DirectoryObjectSecurity(ObjectSecurity):
 
    rule: The audit rule to remove.
   """
-  pass
- def RemoveAuditRuleSpecific(self,*args):
-  """
+        pass
+
+    def RemoveAuditRuleSpecific(self, *args):
+        """
   RemoveAuditRuleSpecific(self: DirectoryObjectSecurity,rule: ObjectAuditRule)
 
    Removes all audit rules that exactly match the specified audit rule from the System Access 
@@ -279,9 +311,10 @@ class DirectoryObjectSecurity(ObjectSecurity):
 
    rule: The audit rule to remove.
   """
-  pass
- def ResetAccessRule(self,*args):
-  """
+        pass
+
+    def ResetAccessRule(self, *args):
+        """
   ResetAccessRule(self: DirectoryObjectSecurity,rule: ObjectAccessRule)
 
    Removes all access rules in the Discretionary Access Control List (DACL) associated with this 
@@ -296,9 +329,10 @@ class DirectoryObjectSecurity(ObjectSecurity):
 
    rule: The access rule to reset.
   """
-  pass
- def SetAccessRule(self,*args):
-  """
+        pass
+
+    def SetAccessRule(self, *args):
+        """
   SetAccessRule(self: DirectoryObjectSecurity,rule: ObjectAccessRule)
 
    Removes all access rules that contain the same security identifier and qualifier as the 
@@ -315,9 +349,10 @@ class DirectoryObjectSecurity(ObjectSecurity):
 
    rule: The access rule to set.
   """
-  pass
- def SetAuditRule(self,*args):
-  """
+        pass
+
+    def SetAuditRule(self, *args):
+        """
   SetAuditRule(self: DirectoryObjectSecurity,rule: ObjectAuditRule)
 
    Removes all audit rules that contain the same security identifier and qualifier as the specified 
@@ -334,55 +369,65 @@ class DirectoryObjectSecurity(ObjectSecurity):
 
    rule: The audit rule to set.
   """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """
   __new__(cls: type)
 
   __new__(cls: type,securityDescriptor: CommonSecurityDescriptor)
   """
-  pass
- AccessRulesModified=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that specifies whether the access rules associated with this System.Security.AccessControl.ObjectSecurity object have been modified.
+        pass
+
+    AccessRulesModified = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that specifies whether the access rules associated with this System.Security.AccessControl.ObjectSecurity object have been modified.
 
 
 
 """
 
- AuditRulesModified=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that specifies whether the audit rules associated with this System.Security.AccessControl.ObjectSecurity object have been modified.
+    AuditRulesModified = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that specifies whether the audit rules associated with this System.Security.AccessControl.ObjectSecurity object have been modified.
 
 
 
 """
 
- GroupModified=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that specifies whether the group associated with the securable object has been modified.
+    GroupModified = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that specifies whether the group associated with the securable object has been modified.
 
 
 
 """
 
- IsContainer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a Boolean value that specifies whether this System.Security.AccessControl.ObjectSecurity object is a container object.
+    IsContainer = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a Boolean value that specifies whether this System.Security.AccessControl.ObjectSecurity object is a container object.
 
 
 
 """
 
- IsDS=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a Boolean value that specifies whether this System.Security.AccessControl.ObjectSecurity object is a directory object.
+    IsDS = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a Boolean value that specifies whether this System.Security.AccessControl.ObjectSecurity object is a directory object.
 
 
 
 """
 
- OwnerModified=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that specifies whether the owner of the securable object has been modified.
+    OwnerModified = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that specifies whether the owner of the securable object has been modified.
 
 
 
 """
-
-

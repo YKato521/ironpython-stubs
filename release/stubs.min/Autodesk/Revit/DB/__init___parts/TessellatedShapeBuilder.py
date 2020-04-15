@@ -1,5 +1,5 @@
-class TessellatedShapeBuilder(ShapeBuilder,IDisposable):
- """
+class TessellatedShapeBuilder(ShapeBuilder, IDisposable):
+    """
  A class that permits structured building of geometry or
 
     a mesh from a collection of connected faces.
@@ -10,8 +10,9 @@ class TessellatedShapeBuilder(ShapeBuilder,IDisposable):
 
  TessellatedShapeBuilder()
  """
- def AddFace(self,face):
-  """
+
+    def AddFace(self, face):
+        """
   AddFace(self: TessellatedShapeBuilder,face: TessellatedFace)
 
    Adds a face to the currently open connected face set.
@@ -24,9 +25,10 @@ class TessellatedShapeBuilder(ShapeBuilder,IDisposable):
 
     loops will be cleared while adding and 'face' will become unusable.
   """
-  pass
- def AreTargetAndFallbackCompatible(self,target,fallback):
-  """
+        pass
+
+    def AreTargetAndFallbackCompatible(self, target, fallback):
+        """
   AreTargetAndFallbackCompatible(self: TessellatedShapeBuilder,target: TessellatedShapeBuilderTarget,fallback: TessellatedShapeBuilderFallback) -> bool
 
   
@@ -57,18 +59,20 @@ class TessellatedShapeBuilder(ShapeBuilder,IDisposable):
 
       otherwise.
   """
-  pass
- def Build(self):
-  """
+        pass
+
+    def Build(self):
+        """
   Build(self: TessellatedShapeBuilder)
 
    Builds the designated geometrical objects from the stored face sets. Stores the 
 
     result in this TessellatedShapeBuilder object.
   """
-  pass
- def CancelConnectedFaceSet(self):
-  """
+        pass
+
+    def CancelConnectedFaceSet(self):
+        """
   CancelConnectedFaceSet(self: TessellatedShapeBuilder)
 
    Cancels the current face set - i.e.,all data from it will be lost
@@ -77,30 +81,37 @@ class TessellatedShapeBuilder(ShapeBuilder,IDisposable):
 
     builder will have no open connected face set anymore.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: TessellatedShapeBuilder)
 
    Erases all face set and clears the logs,if any.
   """
-  pass
- def CloseConnectedFaceSet(self):
-  """
+        pass
+
+    def CloseConnectedFaceSet(self):
+        """
   CloseConnectedFaceSet(self: TessellatedShapeBuilder)
 
    Closes the currently open connected face set.
   """
-  pass
- @staticmethod
- def CreateMeshByExtrusion(profileLoops,extrusionDirection,extrusionDistance,materialId):
-  """ CreateMeshByExtrusion(profileLoops: IList[CurveLoop],extrusionDirection: XYZ,extrusionDistance: float,materialId: ElementId) -> MeshFromGeometryOperationResult """
-  pass
- def Dispose(self):
-  """ Dispose(self: ShapeBuilder,A_0: bool) """
-  pass
- def DoesFaceHaveEnoughLoopsAndVertices(self,face):
-  """
+        pass
+
+    @staticmethod
+    def CreateMeshByExtrusion(
+        profileLoops, extrusionDirection, extrusionDistance, materialId
+    ):
+        """ CreateMeshByExtrusion(profileLoops: IList[CurveLoop],extrusionDirection: XYZ,extrusionDistance: float,materialId: ElementId) -> MeshFromGeometryOperationResult """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: ShapeBuilder,A_0: bool) """
+        pass
+
+    def DoesFaceHaveEnoughLoopsAndVertices(self, face):
+        """
   DoesFaceHaveEnoughLoopsAndVertices(self: TessellatedShapeBuilder,face: TessellatedFace) -> bool
 
   
@@ -111,9 +122,10 @@ class TessellatedShapeBuilder(ShapeBuilder,IDisposable):
 
    face: The face to check.
   """
-  pass
- def GetBuildResult(self):
-  """
+        pass
+
+    def GetBuildResult(self):
+        """
   GetBuildResult(self: TessellatedShapeBuilder) -> TessellatedShapeBuilderResult
 
   
@@ -122,9 +134,10 @@ class TessellatedShapeBuilder(ShapeBuilder,IDisposable):
 
     TessellatedShapeBuilderResult. Clears the stored data.
   """
-  pass
- def OpenConnectedFaceSet(self,isSolid):
-  """
+        pass
+
+    def OpenConnectedFaceSet(self, isSolid):
+        """
   OpenConnectedFaceSet(self: TessellatedShapeBuilder,isSolid: bool)
 
    Opens a new connected face set.
@@ -135,21 +148,26 @@ class TessellatedShapeBuilder(ShapeBuilder,IDisposable):
 
     void.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: ShapeBuilder,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Fallback=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Defines acceptable fallback if the desired type of geometry can't be built.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: ShapeBuilder,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Fallback = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Defines acceptable fallback if the desired type of geometry can't be built.
 
 
 
@@ -161,8 +179,10 @@ Set: Fallback(self: TessellatedShapeBuilder)=value
 
 """
 
- GraphicsStyleId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Optional - if set,the built geometry will use that graphics style.
+    GraphicsStyleId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Optional - if set,the built geometry will use that graphics style.
 
 
 
@@ -174,8 +194,10 @@ Set: GraphicsStyleId(self: TessellatedShapeBuilder)=value
 
 """
 
- IsFaceSetOpen=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Flag whether the current set of connected faces is open and
+    IsFaceSetOpen = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Flag whether the current set of connected faces is open and
 
    additional tessellation faces can be added to it.
 
@@ -187,8 +209,10 @@ Get: IsFaceSetOpen(self: TessellatedShapeBuilder) -> bool
 
 """
 
- LogInteger=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Integer value used for logging,if it is performed. Usually
+    LogInteger = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Integer value used for logging,if it is performed. Usually
 
    the number of the face set(s) in the IFC file,from which they
 
@@ -204,8 +228,8 @@ Set: LogInteger(self: TessellatedShapeBuilder)=value
 
 """
 
- LogString=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """String used for logging,if any. Usually the name of the file from which
+    LogString = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """String used for logging,if any. Usually the name of the file from which
 
    face sets were imported.
 
@@ -219,8 +243,10 @@ Set: LogString(self: TessellatedShapeBuilder)=value
 
 """
 
- NumberOfCompletedFaceSets=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Number of completed face sets.
+    NumberOfCompletedFaceSets = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Number of completed face sets.
 
 
 
@@ -230,8 +256,8 @@ Get: NumberOfCompletedFaceSets(self: TessellatedShapeBuilder) -> int
 
 """
 
- OwnerInfo=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """String used for logging,if any. Usually describes the element or object,which
+    OwnerInfo = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """String used for logging,if any. Usually describes the element or object,which
 
    either defined or will own the geoemtrical objects to be built.
 
@@ -245,8 +271,8 @@ Set: OwnerInfo(self: TessellatedShapeBuilder)=value
 
 """
 
- Target=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Requests the type of geometry to be built.
+    Target = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Requests the type of geometry to be built.
 
 
 
@@ -257,5 +283,3 @@ Get: Target(self: TessellatedShapeBuilder) -> TessellatedShapeBuilderTarget
 Set: Target(self: TessellatedShapeBuilder)=value
 
 """
-
-

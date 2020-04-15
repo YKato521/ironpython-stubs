@@ -1,7 +1,8 @@
-class CurtainGrid(APIObject,IDisposable):
- """ Represents a curtain grid element within Autodesk Revit. """
- def AddGridLine(self,isUGridLine,position,oneSegmentOnly):
-  """
+class CurtainGrid(APIObject, IDisposable):
+    """ Represents a curtain grid element within Autodesk Revit. """
+
+    def AddGridLine(self, isUGridLine, position, oneSegmentOnly):
+        """
   AddGridLine(self: CurtainGrid,isUGridLine: bool,position: XYZ,oneSegmentOnly: bool) -> CurtainGridLine
 
   
@@ -28,9 +29,10 @@ class CurtainGrid(APIObject,IDisposable):
 
     is returned.
   """
-  pass
- def ChangePanelType(self,panel,newSymbol):
-  """
+        pass
+
+    def ChangePanelType(self, panel, newSymbol):
+        """
   ChangePanelType(self: CurtainGrid,panel: Element,newSymbol: ElementType) -> Element
 
   
@@ -59,12 +61,14 @@ class CurtainGrid(APIObject,IDisposable):
 
    Returns: If operation succeeds,the modified panel element is returned.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: APIObject,A_0: bool) """
-  pass
- def GetCell(self,uGridLineId,vGridLineId):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: APIObject,A_0: bool) """
+        pass
+
+    def GetCell(self, uGridLineId, vGridLineId):
+        """
   GetCell(self: CurtainGrid,uGridLineId: ElementId,vGridLineId: ElementId) -> CurtainCell
 
   
@@ -79,9 +83,10 @@ class CurtainGrid(APIObject,IDisposable):
 
    Returns: The cell.
   """
-  pass
- def GetCurtainCells(self):
-  """
+        pass
+
+    def GetCurtainCells(self):
+        """
   GetCurtainCells(self: CurtainGrid) -> ICollection[CurtainCell]
 
   
@@ -90,9 +95,10 @@ class CurtainGrid(APIObject,IDisposable):
 
    Returns: The CurtainCells owned by this curtain grid.
   """
-  pass
- def GetMullionIds(self):
-  """
+        pass
+
+    def GetMullionIds(self):
+        """
   GetMullionIds(self: CurtainGrid) -> ICollection[ElementId]
 
   
@@ -101,9 +107,10 @@ class CurtainGrid(APIObject,IDisposable):
 
    Returns: The mullion ElementIds
   """
-  pass
- def GetPanel(self,uGridLineId,vGridLineId):
-  """
+        pass
+
+    def GetPanel(self, uGridLineId, vGridLineId):
+        """
   GetPanel(self: CurtainGrid,uGridLineId: ElementId,vGridLineId: ElementId) -> Panel
 
   
@@ -118,9 +125,10 @@ class CurtainGrid(APIObject,IDisposable):
 
    Returns: The panel,or ll if the panel cannot be found at this intersection.
   """
-  pass
- def GetPanelIds(self):
-  """
+        pass
+
+    def GetPanelIds(self):
+        """
   GetPanelIds(self: CurtainGrid) -> ICollection[ElementId]
 
   
@@ -129,9 +137,10 @@ class CurtainGrid(APIObject,IDisposable):
 
    Returns: The panel ElementIds
   """
-  pass
- def GetUGridLineIds(self):
-  """
+        pass
+
+    def GetUGridLineIds(self):
+        """
   GetUGridLineIds(self: CurtainGrid) -> ICollection[ElementId]
 
   
@@ -140,9 +149,10 @@ class CurtainGrid(APIObject,IDisposable):
 
    Returns: The U grid line ElementIds
   """
-  pass
- def GetUnlockedMullionIds(self):
-  """
+        pass
+
+    def GetUnlockedMullionIds(self):
+        """
   GetUnlockedMullionIds(self: CurtainGrid) -> ICollection[ElementId]
 
   
@@ -151,9 +161,10 @@ class CurtainGrid(APIObject,IDisposable):
 
    Returns: The unlocked mullion ElementIds
   """
-  pass
- def GetUnlockedPanelIds(self):
-  """
+        pass
+
+    def GetUnlockedPanelIds(self):
+        """
   GetUnlockedPanelIds(self: CurtainGrid) -> ICollection[ElementId]
 
   
@@ -162,9 +173,10 @@ class CurtainGrid(APIObject,IDisposable):
 
    Returns: The unlocked panel ElementIds
   """
-  pass
- def GetVGridLineIds(self):
-  """
+        pass
+
+    def GetVGridLineIds(self):
+        """
   GetVGridLineIds(self: CurtainGrid) -> ICollection[ElementId]
 
   
@@ -173,24 +185,32 @@ class CurtainGrid(APIObject,IDisposable):
 
    Returns: The V grid line ElementIds
   """
-  pass
- def ReleaseManagedResources(self,*args):
-  """ ReleaseManagedResources(self: APIObject) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: CurtainGrid) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Grid1Angle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The angle for the U grid line pattern of the curtain grid.
+        pass
+
+    def ReleaseManagedResources(self, *args):
+        """ ReleaseManagedResources(self: APIObject) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: CurtainGrid) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Grid1Angle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The angle for the U grid line pattern of the curtain grid.
 
 
 
@@ -202,8 +222,10 @@ Set: Grid1Angle(self: CurtainGrid)=value
 
 """
 
- Grid1Justification=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The justification for the U grid line pattern of the curtain grid.
+    Grid1Justification = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The justification for the U grid line pattern of the curtain grid.
 
 
 
@@ -215,8 +237,10 @@ Set: Grid1Justification(self: CurtainGrid)=value
 
 """
 
- Grid1Offset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The offset for the U grid line pattern of the curtain grid.
+    Grid1Offset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The offset for the U grid line pattern of the curtain grid.
 
 
 
@@ -228,8 +252,10 @@ Set: Grid1Offset(self: CurtainGrid)=value
 
 """
 
- Grid2Angle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The angle for V grid line pattern of the curtain grid.
+    Grid2Angle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The angle for V grid line pattern of the curtain grid.
 
 
 
@@ -241,8 +267,10 @@ Set: Grid2Angle(self: CurtainGrid)=value
 
 """
 
- Grid2Justification=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The justification for the V grid line pattern of the curtain grid.
+    Grid2Justification = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The justification for the V grid line pattern of the curtain grid.
 
 
 
@@ -254,8 +282,10 @@ Set: Grid2Justification(self: CurtainGrid)=value
 
 """
 
- Grid2Offset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The offset for V grid line pattern of the curtain grid.
+    Grid2Offset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The offset for V grid line pattern of the curtain grid.
 
 
 
@@ -267,8 +297,8 @@ Set: Grid2Offset(self: CurtainGrid)=value
 
 """
 
- NumPanels=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The number of panels.
+    NumPanels = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The number of panels.
 
 
 
@@ -278,8 +308,8 @@ Get: NumPanels(self: CurtainGrid) -> int
 
 """
 
- NumULines=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the number of grid lines in the U direction.
+    NumULines = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get the number of grid lines in the U direction.
 
 
 
@@ -289,8 +319,8 @@ Get: NumULines(self: CurtainGrid) -> int
 
 """
 
- NumVLines=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the number of grid lines in the V direction.
+    NumVLines = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get the number of grid lines in the V direction.
 
 
 
@@ -299,5 +329,3 @@ Get: NumVLines(self: CurtainGrid) -> int
 
 
 """
-
-

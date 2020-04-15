@@ -1,13 +1,14 @@
-class VectorKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerable):
- """
+class VectorKeyFrameCollection(Freezable, ISealable, IList, ICollection, IEnumerable):
+    """
  Represents a collection of System.Windows.Media.Animation.VectorKeyFrame objects.
 
  
 
  VectorKeyFrameCollection()
  """
- def Add(self,keyFrame):
-  """
+
+    def Add(self, keyFrame):
+        """
   Add(self: VectorKeyFrameCollection,keyFrame: VectorKeyFrame) -> int
 
   
@@ -20,16 +21,18 @@ class VectorKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerable
 
    Returns: The index at which the keyFrame was added.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: VectorKeyFrameCollection)
 
    Removes all System.Windows.Media.Animation.VectorKeyFrame objects from the collection.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: VectorKeyFrameCollection) -> VectorKeyFrameCollection
 
   
@@ -48,9 +51,10 @@ class VectorKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerable
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCore(self,*args):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """
   CloneCore(self: VectorKeyFrameCollection,sourceFreezable: Freezable)
 
    Makes this instance a deep copy of the specified 
@@ -67,9 +71,10 @@ class VectorKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerable
 
    sourceFreezable: The System.Windows.Media.Animation.VectorKeyFrameCollection to clone.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """
   CloneCurrentValueCore(self: VectorKeyFrameCollection,sourceFreezable: Freezable)
 
    Makes this instance a modifiable deep copy of the specified 
@@ -84,9 +89,10 @@ class VectorKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerable
 
    sourceFreezable: The System.Windows.Media.Animation.VectorKeyFrameCollection to clone.
   """
-  pass
- def Contains(self,keyFrame):
-  """
+        pass
+
+    def Contains(self, keyFrame):
+        """
   Contains(self: VectorKeyFrameCollection,keyFrame: VectorKeyFrame) -> bool
 
   
@@ -103,9 +109,10 @@ class VectorKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerable
 
    Returns: true if the collection contains keyFrame; otherwise,false.
   """
-  pass
- def CopyTo(self,array,index):
-  """
+        pass
+
+    def CopyTo(self, array, index):
+        """
   CopyTo(self: VectorKeyFrameCollection,array: Array[VectorKeyFrame],index: int)
 
    Copies all of the System.Windows.Media.Animation.VectorKeyFrame objects in a collection to a 
@@ -120,9 +127,10 @@ class VectorKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerable
 
    index: Index position in the array to which the contents of the collection are copied.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -131,9 +139,10 @@ class VectorKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerable
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """
   CreateInstanceCore(self: VectorKeyFrameCollection) -> Freezable
 
   
@@ -142,9 +151,10 @@ class VectorKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerable
 
    Returns: A frozen instance of System.Windows.Media.Animation.VectorKeyFrameCollection.
   """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: VectorKeyFrameCollection,isChecking: bool) -> bool
 
   
@@ -167,9 +177,10 @@ class VectorKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerable
 
     having begun to change the frozen status of this object.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """
   GetAsFrozenCore(self: VectorKeyFrameCollection,sourceFreezable: Freezable)
 
    Makes this instance a clone of the specified 
@@ -182,9 +193,10 @@ class VectorKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerable
 
    sourceFreezable: The System.Windows.Media.Animation.VectorKeyFrameCollection object to clone.
   """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """
   GetCurrentValueAsFrozenCore(self: VectorKeyFrameCollection,sourceFreezable: Freezable)
 
    Makes this instance a frozen clone of the specified 
@@ -199,9 +211,10 @@ class VectorKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerable
 
    sourceFreezable: The System.Windows.Media.Animation.VectorKeyFrameCollection to copy and freeze.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: VectorKeyFrameCollection) -> IEnumerator
 
   
@@ -210,9 +223,10 @@ class VectorKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerable
 
    Returns: An System.Collections.IEnumerator that can iterate through the collection.
   """
-  pass
- def IndexOf(self,keyFrame):
-  """
+        pass
+
+    def IndexOf(self, keyFrame):
+        """
   IndexOf(self: VectorKeyFrameCollection,keyFrame: VectorKeyFrame) -> int
 
   
@@ -231,9 +245,10 @@ class VectorKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerable
 
     otherwise,-1.
   """
-  pass
- def Insert(self,index,keyFrame):
-  """
+        pass
+
+    def Insert(self, index, keyFrame):
+        """
   Insert(self: VectorKeyFrameCollection,index: int,keyFrame: VectorKeyFrame)
 
    Inserts a System.Windows.Media.Animation.VectorKeyFrame into a specific location within the 
@@ -248,16 +263,18 @@ class VectorKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerable
 
    keyFrame: The System.Windows.Media.Animation.VectorKeyFrame object to insert in the collection.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: Freezable)
 
    Called when the current System.Windows.Freezable object is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -288,9 +305,10 @@ class VectorKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerable
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -307,9 +325,10 @@ class VectorKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerable
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -318,9 +337,10 @@ class VectorKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerable
 
     members that are not dependency properties.
   """
-  pass
- def Remove(self,keyFrame):
-  """
+        pass
+
+    def Remove(self, keyFrame):
+        """
   Remove(self: VectorKeyFrameCollection,keyFrame: VectorKeyFrame)
 
    Removes a System.Windows.Media.Animation.VectorKeyFrame object from the collection.
@@ -329,9 +349,10 @@ class VectorKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerable
 
    keyFrame: Identifies the System.Windows.Media.Animation.VectorKeyFrame to remove from the collection.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: VectorKeyFrameCollection,index: int)
 
    Removes the System.Windows.Media.Animation.VectorKeyFrame at the specified index position from 
@@ -344,9 +365,10 @@ class VectorKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerable
 
    index: Index position of the System.Windows.Media.Animation.VectorKeyFrame to be removed.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -363,9 +385,10 @@ class VectorKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerable
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -376,9 +399,10 @@ class VectorKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerable
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -387,12 +411,14 @@ class VectorKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerable
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IList,value: object) -> bool
 
   
@@ -405,24 +431,30 @@ class VectorKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerable
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of key frames contained in the System.Windows.Media.Animation.VectorKeyFrameCollection.
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of key frames contained in the System.Windows.Media.Animation.VectorKeyFrameCollection.
 
 
 
@@ -432,8 +464,10 @@ Get: Count(self: VectorKeyFrameCollection) -> int
 
 """
 
- IsFixedSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates if the collection size can ever change.
+    IsFixedSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates if the collection size can ever change.
 
 
 
@@ -443,8 +477,10 @@ Get: IsFixedSize(self: VectorKeyFrameCollection) -> bool
 
 """
 
- IsReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates if the collection is read-only.
+    IsReadOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates if the collection is read-only.
 
 
 
@@ -454,8 +490,10 @@ Get: IsReadOnly(self: VectorKeyFrameCollection) -> bool
 
 """
 
- IsSynchronized=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether access to the collection is synchronized (thread-safe).
+    IsSynchronized = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether access to the collection is synchronized (thread-safe).
 
 
 
@@ -465,8 +503,8 @@ Get: IsSynchronized(self: VectorKeyFrameCollection) -> bool
 
 """
 
- SyncRoot=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an object that can be used to synchronize access to the collection.
+    SyncRoot = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an object that can be used to synchronize access to the collection.
 
 
 
@@ -476,7 +514,4 @@ Get: SyncRoot(self: VectorKeyFrameCollection) -> object
 
 """
 
-
- Empty=None
-
-
+    Empty = None

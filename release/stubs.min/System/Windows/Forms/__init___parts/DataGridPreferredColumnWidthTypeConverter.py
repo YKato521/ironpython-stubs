@@ -1,13 +1,14 @@
 class DataGridPreferredColumnWidthTypeConverter(TypeConverter):
- """
+    """
  Converts the value of an object to a different data type.
 
  
 
  DataGridPreferredColumnWidthTypeConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: DataGridPreferredColumnWidthTypeConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -26,9 +27,10 @@ class DataGridPreferredColumnWidthTypeConverter(TypeConverter):
 
    Returns: true,if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: DataGridPreferredColumnWidthTypeConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -45,9 +47,10 @@ class DataGridPreferredColumnWidthTypeConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: DataGridPreferredColumnWidthTypeConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -66,4 +69,4 @@ class DataGridPreferredColumnWidthTypeConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
+        pass

@@ -1,13 +1,14 @@
 class TreeViewImageKeyConverter(ImageKeyConverter):
- """
+    """
  Provides a type converter to convert data for an image key to and from another data type.
 
  
 
  TreeViewImageKeyConverter()
  """
- def ConvertTo(self,*__args):
-  """
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: TreeViewImageKeyConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -36,12 +37,13 @@ class TreeViewImageKeyConverter(ImageKeyConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- IncludeNoneAsStandardValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether null is valid in the System.ComponentModel.TypeConverter.StandardValuesCollection collection.
+        pass
+
+    IncludeNoneAsStandardValue = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether null is valid in the System.ComponentModel.TypeConverter.StandardValuesCollection collection.
 
 
 
 """
-
-

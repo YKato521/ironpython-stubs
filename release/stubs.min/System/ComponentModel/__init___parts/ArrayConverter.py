@@ -1,13 +1,14 @@
 class ArrayConverter(CollectionConverter):
- """
+    """
  Provides a type converter to convert System.Array objects to and from various other representations.
 
  
 
  ArrayConverter()
  """
- def ConvertTo(self,*__args):
-  """
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: ArrayConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -26,9 +27,10 @@ class ArrayConverter(CollectionConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def GetProperties(self,*__args):
-  """
+        pass
+
+    def GetProperties(self, *__args):
+        """
   GetProperties(self: ArrayConverter,context: ITypeDescriptorContext,value: object,attributes: Array[Attribute]) -> PropertyDescriptorCollection
 
   
@@ -47,9 +49,10 @@ class ArrayConverter(CollectionConverter):
 
     array,or null if there are no properties.
   """
-  pass
- def GetPropertiesSupported(self,context=None):
-  """
+        pass
+
+    def GetPropertiesSupported(self, context=None):
+        """
   GetPropertiesSupported(self: ArrayConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -68,4 +71,4 @@ class ArrayConverter(CollectionConverter):
 
     method never returns false.
   """
-  pass
+        pass

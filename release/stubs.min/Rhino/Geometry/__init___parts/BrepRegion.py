@@ -1,7 +1,8 @@
 class BrepRegion(object):
- """ Represents a brep topological region that has sides. """
- def BoundaryBrep(self):
-  """
+    """ Represents a brep topological region that has sides. """
+
+    def BoundaryBrep(self):
+        """
   BoundaryBrep(self: BrepRegion) -> Brep
 
   
@@ -20,9 +21,10 @@ class BrepRegion(object):
 
    Returns: A brep or null on error.
   """
-  pass
- def GetFaceSides(self):
-  """
+        pass
+
+    def GetFaceSides(self):
+        """
   GetFaceSides(self: BrepRegion) -> Array[BrepRegionFaceSide]
 
   
@@ -31,9 +33,12 @@ class BrepRegion(object):
 
    Returns: An array of region face sides. This array might be empty on failure.
   """
-  pass
- BoundingBox=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the region bounding box.
+        pass
+
+    BoundingBox = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the region bounding box.
 
 
 
@@ -43,8 +48,8 @@ Get: BoundingBox(self: BrepRegion) -> BoundingBox
 
 """
 
- Brep=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a reference to the Brep this region belongs to.
+    Brep = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a reference to the Brep this region belongs to.
 
 
 
@@ -54,8 +59,8 @@ Get: Brep(self: BrepRegion) -> Brep
 
 """
 
- Index=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the index of region in the RegionTopology array.
+    Index = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the index of region in the RegionTopology array.
 
 
 
@@ -65,8 +70,8 @@ Get: Index(self: BrepRegion) -> int
 
 """
 
- IsFinite=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether this region is finite.
+    IsFinite = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether this region is finite.
 
 
 
@@ -75,5 +80,3 @@ Get: IsFinite(self: BrepRegion) -> bool
 
 
 """
-
-

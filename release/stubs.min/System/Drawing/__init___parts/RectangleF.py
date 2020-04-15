@@ -1,5 +1,5 @@
 class RectangleF(object):
- """
+    """
  Stores a set of four floating-point numbers that represent the location and size of a rectangle. For more advanced region functions,use a System.Drawing.Region object.
 
  
@@ -8,8 +8,9 @@ class RectangleF(object):
 
  RectangleF(location: PointF,size: SizeF)
  """
- def Contains(self,*__args):
-  """
+
+    def Contains(self, *__args):
+        """
   Contains(self: RectangleF,rect: RectangleF) -> bool
 
   
@@ -62,9 +63,10 @@ class RectangleF(object):
 
     System.Drawing.RectangleF structure; otherwise false.
   """
-  pass
- def Equals(self,obj):
-  """
+        pass
+
+    def Equals(self, obj):
+        """
   Equals(self: RectangleF,obj: object) -> bool
 
   
@@ -85,10 +87,11 @@ class RectangleF(object):
 
     otherwise,false.
   """
-  pass
- @staticmethod
- def FromLTRB(left,top,right,bottom):
-  """
+        pass
+
+    @staticmethod
+    def FromLTRB(left, top, right, bottom):
+        """
   FromLTRB(left: Single,top: Single,right: Single,bottom: Single) -> RectangleF
 
   
@@ -111,9 +114,10 @@ class RectangleF(object):
 
    Returns: The new System.Drawing.RectangleF that this method creates.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: RectangleF) -> int
 
   
@@ -126,9 +130,10 @@ class RectangleF(object):
 
    Returns: The hash code for this System.Drawing.RectangleF.
   """
-  pass
- def Inflate(self,*__args):
-  """
+        pass
+
+    def Inflate(self, *__args):
+        """
   Inflate(rect: RectangleF,x: Single,y: Single) -> RectangleF
 
   
@@ -167,9 +172,10 @@ class RectangleF(object):
 
    y: The amount to inflate this System.Drawing.RectangleF structure vertically.
   """
-  pass
- def Intersect(self,*__args):
-  """
+        pass
+
+    def Intersect(self, *__args):
+        """
   Intersect(a: RectangleF,b: RectangleF) -> RectangleF
 
   
@@ -204,9 +210,10 @@ class RectangleF(object):
 
    rect: The rectangle to intersect.
   """
-  pass
- def IntersectsWith(self,rect):
-  """
+        pass
+
+    def IntersectsWith(self, rect):
+        """
   IntersectsWith(self: RectangleF,rect: RectangleF) -> bool
 
   
@@ -219,9 +226,10 @@ class RectangleF(object):
 
    Returns: This method returns true if there is any intersection.
   """
-  pass
- def Offset(self,*__args):
-  """
+        pass
+
+    def Offset(self, *__args):
+        """
   Offset(self: RectangleF,x: Single,y: Single)
 
    Adjusts the location of this rectangle by the specified amount.
@@ -240,9 +248,10 @@ class RectangleF(object):
 
    pos: The amount to offset the location.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: RectangleF) -> str
 
   
@@ -257,10 +266,11 @@ class RectangleF(object):
 
     structure. For example,"{X=20,Y=20,Width=100,Height=50}".
   """
-  pass
- @staticmethod
- def Union(a,b):
-  """
+        pass
+
+    @staticmethod
+    def Union(a, b):
+        """
   Union(a: RectangleF,b: RectangleF) -> RectangleF
 
   
@@ -281,13 +291,15 @@ class RectangleF(object):
 
     the union.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__[RectangleF]() -> RectangleF
 
   
@@ -296,11 +308,13 @@ class RectangleF(object):
 
   __new__(cls: type,location: PointF,size: SizeF)
   """
-  pass
- def __ne__(self,*args):
-  pass
- Bottom=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the y-coordinate that is the sum of System.Drawing.RectangleF.Y and System.Drawing.RectangleF.Height of this System.Drawing.RectangleF structure.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    Bottom = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the y-coordinate that is the sum of System.Drawing.RectangleF.Y and System.Drawing.RectangleF.Height of this System.Drawing.RectangleF structure.
 
 
 
@@ -310,8 +324,8 @@ Get: Bottom(self: RectangleF) -> Single
 
 """
 
- Height=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the height of this System.Drawing.RectangleF structure.
+    Height = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the height of this System.Drawing.RectangleF structure.
 
 
 
@@ -323,8 +337,8 @@ Set: Height(self: RectangleF)=value
 
 """
 
- IsEmpty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Tests whether the System.Drawing.RectangleF.Width or System.Drawing.RectangleF.Height property of this System.Drawing.RectangleF has a value of zero.
+    IsEmpty = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Tests whether the System.Drawing.RectangleF.Width or System.Drawing.RectangleF.Height property of this System.Drawing.RectangleF has a value of zero.
 
 
 
@@ -334,8 +348,8 @@ Get: IsEmpty(self: RectangleF) -> bool
 
 """
 
- Left=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the x-coordinate of the left edge of this System.Drawing.RectangleF structure.
+    Left = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the x-coordinate of the left edge of this System.Drawing.RectangleF structure.
 
 
 
@@ -345,8 +359,8 @@ Get: Left(self: RectangleF) -> Single
 
 """
 
- Location=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the coordinates of the upper-left corner of this System.Drawing.RectangleF structure.
+    Location = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the coordinates of the upper-left corner of this System.Drawing.RectangleF structure.
 
 
 
@@ -358,8 +372,8 @@ Set: Location(self: RectangleF)=value
 
 """
 
- Right=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the x-coordinate that is the sum of System.Drawing.RectangleF.X and System.Drawing.RectangleF.Width of this System.Drawing.RectangleF structure.
+    Right = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the x-coordinate that is the sum of System.Drawing.RectangleF.X and System.Drawing.RectangleF.Width of this System.Drawing.RectangleF structure.
 
 
 
@@ -369,8 +383,8 @@ Get: Right(self: RectangleF) -> Single
 
 """
 
- Size=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the size of this System.Drawing.RectangleF.
+    Size = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the size of this System.Drawing.RectangleF.
 
 
 
@@ -382,8 +396,8 @@ Set: Size(self: RectangleF)=value
 
 """
 
- Top=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the y-coordinate of the top edge of this System.Drawing.RectangleF structure.
+    Top = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the y-coordinate of the top edge of this System.Drawing.RectangleF structure.
 
 
 
@@ -393,8 +407,8 @@ Get: Top(self: RectangleF) -> Single
 
 """
 
- Width=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the width of this System.Drawing.RectangleF structure.
+    Width = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the width of this System.Drawing.RectangleF structure.
 
 
 
@@ -406,8 +420,8 @@ Set: Width(self: RectangleF)=value
 
 """
 
- X=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the x-coordinate of the upper-left corner of this System.Drawing.RectangleF structure.
+    X = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the x-coordinate of the upper-left corner of this System.Drawing.RectangleF structure.
 
 
 
@@ -419,8 +433,8 @@ Set: X(self: RectangleF)=value
 
 """
 
- Y=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the y-coordinate of the upper-left corner of this System.Drawing.RectangleF structure.
+    Y = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the y-coordinate of the upper-left corner of this System.Drawing.RectangleF structure.
 
 
 
@@ -432,6 +446,4 @@ Set: Y(self: RectangleF)=value
 
 """
 
-
- Empty=None
-
+    Empty = None

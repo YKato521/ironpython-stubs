@@ -1,5 +1,5 @@
 class Rectangle(object):
- """
+    """
  Stores a set of four integers that represent the location and size of a rectangle
 
  
@@ -8,9 +8,10 @@ class Rectangle(object):
 
  Rectangle(location: Point,size: Size)
  """
- @staticmethod
- def Ceiling(value):
-  """
+
+    @staticmethod
+    def Ceiling(value):
+        """
   Ceiling(value: RectangleF) -> Rectangle
 
   
@@ -27,9 +28,10 @@ class Rectangle(object):
 
    Returns: Returns a System.Drawing.Rectangle.
   """
-  pass
- def Contains(self,*__args):
-  """
+        pass
+
+    def Contains(self, *__args):
+        """
   Contains(self: Rectangle,rect: Rectangle) -> bool
 
   
@@ -82,9 +84,10 @@ class Rectangle(object):
 
     System.Drawing.Rectangle structure; otherwise false.
   """
-  pass
- def Equals(self,obj):
-  """
+        pass
+
+    def Equals(self, obj):
+        """
   Equals(self: Rectangle,obj: object) -> bool
 
   
@@ -107,10 +110,11 @@ class Rectangle(object):
 
     System.Drawing.Rectangle structure; otherwise,false.
   """
-  pass
- @staticmethod
- def FromLTRB(left,top,right,bottom):
-  """
+        pass
+
+    @staticmethod
+    def FromLTRB(left, top, right, bottom):
+        """
   FromLTRB(left: int,top: int,right: int,bottom: int) -> Rectangle
 
   
@@ -129,9 +133,10 @@ class Rectangle(object):
 
    Returns: The new System.Drawing.Rectangle that this method creates.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Rectangle) -> int
 
   
@@ -144,9 +149,10 @@ class Rectangle(object):
 
    Returns: An integer that represents the hash code for this rectangle.
   """
-  pass
- def Inflate(self,*__args):
-  """
+        pass
+
+    def Inflate(self, *__args):
+        """
   Inflate(rect: Rectangle,x: int,y: int) -> Rectangle
 
   
@@ -187,9 +193,10 @@ class Rectangle(object):
 
    height: The amount to inflate this System.Drawing.Rectangle vertically.
   """
-  pass
- def Intersect(self,*__args):
-  """
+        pass
+
+    def Intersect(self, *__args):
+        """
   Intersect(a: Rectangle,b: Rectangle) -> Rectangle
 
   
@@ -222,9 +229,10 @@ class Rectangle(object):
 
    rect: The System.Drawing.Rectangle with which to intersect.
   """
-  pass
- def IntersectsWith(self,rect):
-  """
+        pass
+
+    def IntersectsWith(self, rect):
+        """
   IntersectsWith(self: Rectangle,rect: Rectangle) -> bool
 
   
@@ -237,9 +245,10 @@ class Rectangle(object):
 
    Returns: This method returns true if there is any intersection,otherwise false.
   """
-  pass
- def Offset(self,*__args):
-  """
+        pass
+
+    def Offset(self, *__args):
+        """
   Offset(self: Rectangle,x: int,y: int)
 
    Adjusts the location of this rectangle by the specified amount.
@@ -258,10 +267,11 @@ class Rectangle(object):
 
    pos: Amount to offset the location.
   """
-  pass
- @staticmethod
- def Round(value):
-  """
+        pass
+
+    @staticmethod
+    def Round(value):
+        """
   Round(value: RectangleF) -> Rectangle
 
   
@@ -278,9 +288,10 @@ class Rectangle(object):
 
    Returns: A System.Drawing.Rectangle.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: Rectangle) -> str
 
   
@@ -291,10 +302,11 @@ class Rectangle(object):
 
     structure � for example,{X=20,Y=20,Width=100,Height=50}
   """
-  pass
- @staticmethod
- def Truncate(value):
-  """
+        pass
+
+    @staticmethod
+    def Truncate(value):
+        """
   Truncate(value: RectangleF) -> Rectangle
 
   
@@ -311,10 +323,11 @@ class Rectangle(object):
 
    Returns: A System.Drawing.Rectangle.
   """
-  pass
- @staticmethod
- def Union(a,b):
-  """
+        pass
+
+    @staticmethod
+    def Union(a, b):
+        """
   Union(a: Rectangle,b: Rectangle) -> Rectangle
 
   
@@ -335,13 +348,15 @@ class Rectangle(object):
 
     structures.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__[Rectangle]() -> Rectangle
 
   
@@ -350,11 +365,13 @@ class Rectangle(object):
 
   __new__(cls: type,location: Point,size: Size)
   """
-  pass
- def __ne__(self,*args):
-  pass
- Bottom=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the y-coordinate that is the sum of the System.Drawing.Rectangle.Y and System.Drawing.Rectangle.Height property values of this System.Drawing.Rectangle structure.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    Bottom = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the y-coordinate that is the sum of the System.Drawing.Rectangle.Y and System.Drawing.Rectangle.Height property values of this System.Drawing.Rectangle structure.
 
 
 
@@ -364,8 +381,8 @@ Get: Bottom(self: Rectangle) -> int
 
 """
 
- Height=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the height of this System.Drawing.Rectangle structure.
+    Height = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the height of this System.Drawing.Rectangle structure.
 
 
 
@@ -377,8 +394,8 @@ Set: Height(self: Rectangle)=value
 
 """
 
- IsEmpty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Tests whether all numeric properties of this System.Drawing.Rectangle have values of zero.
+    IsEmpty = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Tests whether all numeric properties of this System.Drawing.Rectangle have values of zero.
 
 
 
@@ -388,8 +405,8 @@ Get: IsEmpty(self: Rectangle) -> bool
 
 """
 
- Left=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the x-coordinate of the left edge of this System.Drawing.Rectangle structure.
+    Left = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the x-coordinate of the left edge of this System.Drawing.Rectangle structure.
 
 
 
@@ -399,8 +416,8 @@ Get: Left(self: Rectangle) -> int
 
 """
 
- Location=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the coordinates of the upper-left corner of this System.Drawing.Rectangle structure.
+    Location = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the coordinates of the upper-left corner of this System.Drawing.Rectangle structure.
 
 
 
@@ -412,8 +429,8 @@ Set: Location(self: Rectangle)=value
 
 """
 
- Right=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the x-coordinate that is the sum of System.Drawing.Rectangle.X and System.Drawing.Rectangle.Width property values of this System.Drawing.Rectangle structure.
+    Right = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the x-coordinate that is the sum of System.Drawing.Rectangle.X and System.Drawing.Rectangle.Width property values of this System.Drawing.Rectangle structure.
 
 
 
@@ -423,8 +440,8 @@ Get: Right(self: Rectangle) -> int
 
 """
 
- Size=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the size of this System.Drawing.Rectangle.
+    Size = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the size of this System.Drawing.Rectangle.
 
 
 
@@ -436,8 +453,8 @@ Set: Size(self: Rectangle)=value
 
 """
 
- Top=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the y-coordinate of the top edge of this System.Drawing.Rectangle structure.
+    Top = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the y-coordinate of the top edge of this System.Drawing.Rectangle structure.
 
 
 
@@ -447,8 +464,8 @@ Get: Top(self: Rectangle) -> int
 
 """
 
- Width=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the width of this System.Drawing.Rectangle structure.
+    Width = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the width of this System.Drawing.Rectangle structure.
 
 
 
@@ -460,8 +477,8 @@ Set: Width(self: Rectangle)=value
 
 """
 
- X=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the x-coordinate of the upper-left corner of this System.Drawing.Rectangle structure.
+    X = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the x-coordinate of the upper-left corner of this System.Drawing.Rectangle structure.
 
 
 
@@ -473,8 +490,8 @@ Set: X(self: Rectangle)=value
 
 """
 
- Y=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the y-coordinate of the upper-left corner of this System.Drawing.Rectangle structure.
+    Y = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the y-coordinate of the upper-left corner of this System.Drawing.Rectangle structure.
 
 
 
@@ -486,6 +503,4 @@ Set: Y(self: Rectangle)=value
 
 """
 
-
- Empty=None
-
+    Empty = None

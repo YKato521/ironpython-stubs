@@ -1,11 +1,12 @@
-class ExtrusionAnalyzer(object,IDisposable):
- """
+class ExtrusionAnalyzer(object, IDisposable):
+    """
  This geometry utility allows you to attempt to "fit" a given piece of geometry into
 
     the shape of an extrusion.
  """
- def CalculateFaceAlignment(self):
-  """
+
+    def CalculateFaceAlignment(self):
+        """
   CalculateFaceAlignment(self: ExtrusionAnalyzer) -> IDictionary[Face,ExtrusionAnalyzerFaceAlignment]
 
   
@@ -14,10 +15,11 @@ class ExtrusionAnalyzer(object,IDisposable):
 
    Returns: Maps each face of the solid to its alignment status.
   """
-  pass
- @staticmethod
- def Create(solidGeometry,plane,direction):
-  """
+        pass
+
+    @staticmethod
+    def Create(solidGeometry, plane, direction):
+        """
   Create(solidGeometry: Solid,plane: Plane,direction: XYZ) -> ExtrusionAnalyzer
 
   
@@ -40,12 +42,14 @@ class ExtrusionAnalyzer(object,IDisposable):
 
    Returns: The newly created ExtrusionAnalyzer object.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: ExtrusionAnalyzer) """
-  pass
- def GetExtrusionBase(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: ExtrusionAnalyzer) """
+        pass
+
+    def GetExtrusionBase(self):
+        """
   GetExtrusionBase(self: ExtrusionAnalyzer) -> Face
 
   
@@ -54,24 +58,32 @@ class ExtrusionAnalyzer(object,IDisposable):
 
    Returns: The face that represents the base contour.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: ExtrusionAnalyzer,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- EndParameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The end parameter (distance along the extrusion direction from the input plane) calculated by the extrusion analysis.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: ExtrusionAnalyzer,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    EndParameter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The end parameter (distance along the extrusion direction from the input plane) calculated by the extrusion analysis.
 
 
 
@@ -81,8 +93,10 @@ Get: EndParameter(self: ExtrusionAnalyzer) -> float
 
 """
 
- ExtrusionDirection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The direction of extrusion specified for the extrusion analysis.
+    ExtrusionDirection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The direction of extrusion specified for the extrusion analysis.
 
 
 
@@ -92,8 +106,10 @@ Get: ExtrusionDirection(self: ExtrusionAnalyzer) -> XYZ
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -103,8 +119,10 @@ Get: IsValidObject(self: ExtrusionAnalyzer) -> bool
 
 """
 
- StartParameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The start parameter (distance along the extrusion direction from the input plane) calculated by the extrusion analysis.
+    StartParameter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The start parameter (distance along the extrusion direction from the input plane) calculated by the extrusion analysis.
 
 
 
@@ -113,5 +131,3 @@ Get: StartParameter(self: ExtrusionAnalyzer) -> float
 
 
 """
-
-

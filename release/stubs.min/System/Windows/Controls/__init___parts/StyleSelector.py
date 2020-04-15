@@ -1,13 +1,14 @@
 class StyleSelector(object):
- """
+    """
  Provides a way to apply styles based on custom logic.
 
  
 
  StyleSelector()
  """
- def SelectStyle(self,item,container):
-  """
+
+    def SelectStyle(self, item, container):
+        """
   SelectStyle(self: StyleSelector,item: object,container: DependencyObject) -> Style
 
   
@@ -22,4 +23,4 @@ class StyleSelector(object):
 
    Returns: Returns an application-specific style to apply; otherwise,null.
   """
-  pass
+        pass

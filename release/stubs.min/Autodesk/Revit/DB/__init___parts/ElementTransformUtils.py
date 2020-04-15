@@ -1,8 +1,9 @@
 class ElementTransformUtils(object):
- """ A collection of utilities allowing transformation of elements (e.g. move,rotate,mirror and copy). """
- @staticmethod
- def CanMirrorElement(ADoc,elemId):
-  """
+    """ A collection of utilities allowing transformation of elements (e.g. move,rotate,mirror and copy). """
+
+    @staticmethod
+    def CanMirrorElement(ADoc, elemId):
+        """
   CanMirrorElement(ADoc: Document,elemId: ElementId) -> bool
 
   
@@ -17,14 +18,16 @@ class ElementTransformUtils(object):
 
    Returns: True if the element can be mirrored.
   """
-  pass
- @staticmethod
- def CanMirrorElements(ADoc,elemIds):
-  """ CanMirrorElements(ADoc: Document,elemIds: ICollection[ElementId]) -> bool """
-  pass
- @staticmethod
- def CopyElement(document,elementToCopy,translation):
-  """
+        pass
+
+    @staticmethod
+    def CanMirrorElements(ADoc, elemIds):
+        """ CanMirrorElements(ADoc: Document,elemIds: ICollection[ElementId]) -> bool """
+        pass
+
+    @staticmethod
+    def CopyElement(document, elementToCopy, translation):
+        """
   CopyElement(document: Document,elementToCopy: ElementId,translation: XYZ) -> ICollection[ElementId]
 
   
@@ -47,20 +50,22 @@ class ElementTransformUtils(object):
 
     created due to dependencies.
   """
-  pass
- @staticmethod
- def CopyElements(*__args):
-  """
+        pass
+
+    @staticmethod
+    def CopyElements(*__args):
+        """
   CopyElements(document: Document,elementsToCopy: ICollection[ElementId],translation: XYZ) -> ICollection[ElementId]
 
   CopyElements(sourceDocument: Document,elementsToCopy: ICollection[ElementId],destinationDocument: Document,transform: Transform,options: CopyPasteOptions) -> ICollection[ElementId]
 
   CopyElements(sourceView: View,elementsToCopy: ICollection[ElementId],destinationView: View,additionalTransform: Transform,options: CopyPasteOptions) -> ICollection[ElementId]
   """
-  pass
- @staticmethod
- def GetTransformFromViewToView(sourceView,destinationView):
-  """
+        pass
+
+    @staticmethod
+    def GetTransformFromViewToView(sourceView, destinationView):
+        """
   GetTransformFromViewToView(sourceView: View,destinationView: View) -> Transform
 
   
@@ -79,10 +84,11 @@ class ElementTransformUtils(object):
 
    Returns: The transformation from source view to destination view.
   """
-  pass
- @staticmethod
- def MirrorElement(document,elementToMirror,plane):
-  """
+        pass
+
+    @staticmethod
+    def MirrorElement(document, elementToMirror, plane):
+        """
   MirrorElement(document: Document,elementToMirror: ElementId,plane: Plane)
 
    Creates a mirrored copy of an element about a given plane.
@@ -95,14 +101,16 @@ class ElementTransformUtils(object):
 
    plane: The mirror plane.
   """
-  pass
- @staticmethod
- def MirrorElements(document,elementsToMirror,plane,mirrorCopies):
-  """ MirrorElements(document: Document,elementsToMirror: ICollection[ElementId],plane: Plane,mirrorCopies: bool) -> IList[ElementId] """
-  pass
- @staticmethod
- def MoveElement(document,elementToMove,translation):
-  """
+        pass
+
+    @staticmethod
+    def MirrorElements(document, elementsToMirror, plane, mirrorCopies):
+        """ MirrorElements(document: Document,elementsToMirror: ICollection[ElementId],plane: Plane,mirrorCopies: bool) -> IList[ElementId] """
+        pass
+
+    @staticmethod
+    def MoveElement(document, elementToMove, translation):
+        """
   MoveElement(document: Document,elementToMove: ElementId,translation: XYZ)
 
    Moves one element by a given transformation.
@@ -115,14 +123,16 @@ class ElementTransformUtils(object):
 
    translation: The translation vector for the elements.
   """
-  pass
- @staticmethod
- def MoveElements(document,elementsToMove,translation):
-  """ MoveElements(document: Document,elementsToMove: ICollection[ElementId],translation: XYZ) """
-  pass
- @staticmethod
- def RotateElement(document,elementToRotate,axis,angle):
-  """
+        pass
+
+    @staticmethod
+    def MoveElements(document, elementsToMove, translation):
+        """ MoveElements(document: Document,elementsToMove: ICollection[ElementId],translation: XYZ) """
+        pass
+
+    @staticmethod
+    def RotateElement(document, elementToRotate, axis, angle):
+        """
   RotateElement(document: Document,elementToRotate: ElementId,axis: Line,angle: float)
 
    Rotates an element about the given axis and angle.
@@ -137,22 +147,23 @@ class ElementTransformUtils(object):
 
    angle: The angle of rotation in radians.
   """
-  pass
- @staticmethod
- def RotateElements(document,elementsToRotate,axis,angle):
-  """ RotateElements(document: Document,elementsToRotate: ICollection[ElementId],axis: Line,angle: float) """
-  pass
- __all__=[
-  'CanMirrorElement',
-  'CanMirrorElements',
-  'CopyElement',
-  'CopyElements',
-  'GetTransformFromViewToView',
-  'MirrorElement',
-  'MirrorElements',
-  'MoveElement',
-  'MoveElements',
-  'RotateElement',
-  'RotateElements',
- ]
+        pass
 
+    @staticmethod
+    def RotateElements(document, elementsToRotate, axis, angle):
+        """ RotateElements(document: Document,elementsToRotate: ICollection[ElementId],axis: Line,angle: float) """
+        pass
+
+    __all__ = [
+        "CanMirrorElement",
+        "CanMirrorElements",
+        "CopyElement",
+        "CopyElements",
+        "GetTransformFromViewToView",
+        "MirrorElement",
+        "MirrorElements",
+        "MoveElement",
+        "MoveElements",
+        "RotateElement",
+        "RotateElements",
+    ]

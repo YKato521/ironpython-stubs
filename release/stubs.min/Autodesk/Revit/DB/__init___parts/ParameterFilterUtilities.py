@@ -1,12 +1,13 @@
 class ParameterFilterUtilities(object):
- """
+    """
  Contains static utility functions for enumerating the categories and parameters that
 
     are available for use by ParameterFilterElement objects.
  """
- @staticmethod
- def GetAllFilterableCategories():
-  """
+
+    @staticmethod
+    def GetAllFilterableCategories():
+        """
   GetAllFilterableCategories() -> ICollection[ElementId]
 
   
@@ -15,18 +16,21 @@ class ParameterFilterUtilities(object):
 
    Returns: The set of all filterable categories.
   """
-  pass
- @staticmethod
- def GetFilterableParametersInCommon(aDoc,categories):
-  """ GetFilterableParametersInCommon(aDoc: Document,categories: ICollection[ElementId]) -> ICollection[ElementId] """
-  pass
- @staticmethod
- def GetInapplicableParameters(aDoc,categories,parameters):
-  """ GetInapplicableParameters(aDoc: Document,categories: ICollection[ElementId],parameters: IList[ElementId]) -> IList[ElementId] """
-  pass
- @staticmethod
- def IsParameterApplicable(element,parameter):
-  """
+        pass
+
+    @staticmethod
+    def GetFilterableParametersInCommon(aDoc, categories):
+        """ GetFilterableParametersInCommon(aDoc: Document,categories: ICollection[ElementId]) -> ICollection[ElementId] """
+        pass
+
+    @staticmethod
+    def GetInapplicableParameters(aDoc, categories, parameters):
+        """ GetInapplicableParameters(aDoc: Document,categories: ICollection[ElementId],parameters: IList[ElementId]) -> IList[ElementId] """
+        pass
+
+    @staticmethod
+    def IsParameterApplicable(element, parameter):
+        """
   IsParameterApplicable(element: Element,parameter: ElementId) -> bool
 
   
@@ -41,16 +45,17 @@ class ParameterFilterUtilities(object):
 
    Returns: True if the element supports the given parameter,false otherwise.
   """
-  pass
- @staticmethod
- def RemoveUnfilterableCategories(categories):
-  """ RemoveUnfilterableCategories(categories: ICollection[ElementId]) -> ICollection[ElementId] """
-  pass
- __all__=[
-  'GetAllFilterableCategories',
-  'GetFilterableParametersInCommon',
-  'GetInapplicableParameters',
-  'IsParameterApplicable',
-  'RemoveUnfilterableCategories',
- ]
+        pass
 
+    @staticmethod
+    def RemoveUnfilterableCategories(categories):
+        """ RemoveUnfilterableCategories(categories: ICollection[ElementId]) -> ICollection[ElementId] """
+        pass
+
+    __all__ = [
+        "GetAllFilterableCategories",
+        "GetFilterableParametersInCommon",
+        "GetInapplicableParameters",
+        "IsParameterApplicable",
+        "RemoveUnfilterableCategories",
+    ]

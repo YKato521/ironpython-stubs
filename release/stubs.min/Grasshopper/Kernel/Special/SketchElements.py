@@ -8,45 +8,58 @@
 # no functions
 # classes
 
+
 class GH_SketchBox(object):
- """ GH_SketchBox() """
+    """ GH_SketchBox() """
+
 
 class GH_SketchCloud(object):
- """ GH_SketchCloud() """
+    """ GH_SketchCloud() """
 
-class GH_SketchElement(object,IGH_SketchElement,IGH_InstanceDescription,GH_ISerializable):
- # no doc
- def IsPickPoint(self,*__args):
-  """
+
+class GH_SketchElement(
+    object, IGH_SketchElement, IGH_InstanceDescription, GH_ISerializable
+):
+    # no doc
+    def IsPickPoint(self, *__args):
+        """
   IsPickPoint(self: GH_SketchElement,box: RectangleF,bCrossingBox: GH_PickBox) -> bool
 
   IsPickPoint(self: GH_SketchElement,pt: PointF) -> bool
   """
-  pass
- def NewInstanceGuid(self,UUID=None):
-  """ NewInstanceGuid(self: GH_SketchElement,UUID: Guid)NewInstanceGuid(self: GH_SketchElement) """
-  pass
- def Read(self,reader):
-  """ Read(self: GH_SketchElement,reader: GH_IReader) -> bool """
-  pass
- def Write(self,writer):
-  """ Write(self: GH_SketchElement,writer: GH_IWriter) -> bool """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- BoundingBox=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: BoundingBox(self: GH_SketchElement) -> RectangleF
+        pass
+
+    def NewInstanceGuid(self, UUID=None):
+        """ NewInstanceGuid(self: GH_SketchElement,UUID: Guid)NewInstanceGuid(self: GH_SketchElement) """
+        pass
+
+    def Read(self, reader):
+        """ Read(self: GH_SketchElement,reader: GH_IReader) -> bool """
+        pass
+
+    def Write(self, writer):
+        """ Write(self: GH_SketchElement,writer: GH_IWriter) -> bool """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    BoundingBox = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: BoundingBox(self: GH_SketchElement) -> RectangleF
 
 
 
 """
 
- Category=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Category(self: GH_SketchElement) -> str
+    Category = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Category(self: GH_SketchElement) -> str
 
 
 
@@ -54,8 +67,10 @@ Set: Category(self: GH_SketchElement)=value
 
 """
 
- Description=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Description(self: GH_SketchElement) -> str
+    Description = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: Description(self: GH_SketchElement) -> str
 
 
 
@@ -63,57 +78,69 @@ Set: Description(self: GH_SketchElement)=value
 
 """
 
- GraphicsPath=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: GraphicsPath(self: GH_SketchElement) -> GraphicsPath
+    GraphicsPath = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: GraphicsPath(self: GH_SketchElement) -> GraphicsPath
 
 
 
 """
 
- HasCategory=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: HasCategory(self: GH_SketchElement) -> bool
+    HasCategory = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: HasCategory(self: GH_SketchElement) -> bool
 
 
 
 """
 
- HasSubCategory=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: HasSubCategory(self: GH_SketchElement) -> bool
+    HasSubCategory = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: HasSubCategory(self: GH_SketchElement) -> bool
 
 
 
 """
 
- Icon_24x24=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Icon_24x24(self: GH_SketchElement) -> Image
+    Icon_24x24 = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: Icon_24x24(self: GH_SketchElement) -> Image
 
 
 
 """
 
- InstanceDescription=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: InstanceDescription(self: GH_SketchElement) -> str
+    InstanceDescription = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: InstanceDescription(self: GH_SketchElement) -> str
 
 
 
 """
 
- InstanceGuid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: InstanceGuid(self: GH_SketchElement) -> Guid
+    InstanceGuid = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: InstanceGuid(self: GH_SketchElement) -> Guid
 
 
 
 """
 
- Keywords=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Keywords(self: GH_SketchElement) -> IEnumerable[str]
+    Keywords = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Keywords(self: GH_SketchElement) -> IEnumerable[str]
 
 
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Name(self: GH_SketchElement) -> str
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Name(self: GH_SketchElement) -> str
 
 
 
@@ -121,8 +148,8 @@ Set: Name(self: GH_SketchElement)=value
 
 """
 
- NickName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: NickName(self: GH_SketchElement) -> str
+    NickName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: NickName(self: GH_SketchElement) -> str
 
 
 
@@ -130,8 +157,10 @@ Set: NickName(self: GH_SketchElement)=value
 
 """
 
- SubCategory=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: SubCategory(self: GH_SketchElement) -> str
+    SubCategory = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: SubCategory(self: GH_SketchElement) -> str
 
 
 
@@ -140,48 +169,55 @@ Set: SubCategory(self: GH_SketchElement)=value
 """
 
 
-
 class GH_SketchEllipse(object):
- """ GH_SketchEllipse() """
+    """ GH_SketchEllipse() """
+
 
 class GH_SketchFreehandStroke(object):
- """ GH_SketchFreehandStroke() """
+    """ GH_SketchFreehandStroke() """
+
 
 class GH_SketchLine(object):
- """ GH_SketchLine() """
+    """ GH_SketchLine() """
 
-class IGH_SketchElement(IGH_InstanceDescription,GH_ISerializable):
- # no doc
- def IsPickPoint(self,*__args):
-  """
+
+class IGH_SketchElement(IGH_InstanceDescription, GH_ISerializable):
+    # no doc
+    def IsPickPoint(self, *__args):
+        """
   IsPickPoint(self: IGH_SketchElement,box: RectangleF,bCrossingBox: GH_PickBox) -> bool
 
   IsPickPoint(self: IGH_SketchElement,pt: PointF) -> bool
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- BoundingBox=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: BoundingBox(self: IGH_SketchElement) -> RectangleF
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    BoundingBox = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: BoundingBox(self: IGH_SketchElement) -> RectangleF
 
 
 
 """
 
- GraphicsPath=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: GraphicsPath(self: IGH_SketchElement) -> GraphicsPath
+    GraphicsPath = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: GraphicsPath(self: IGH_SketchElement) -> GraphicsPath
 
 
 
 """
 
- Icon_24x24=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Icon_24x24(self: IGH_SketchElement) -> Image
+    Icon_24x24 = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: Icon_24x24(self: IGH_SketchElement) -> Image
 
 
 
 """
-
-
-

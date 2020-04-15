@@ -1,5 +1,7 @@
-class Version(object,ICloneable,IComparable,IComparable[Version],IEquatable[Version]):
- """
+class Version(
+    object, ICloneable, IComparable, IComparable[Version], IEquatable[Version]
+):
+    """
  Represents the version number of an assembly,operating system,or the common language runtime. This class cannot be inherited.
 
  
@@ -14,8 +16,9 @@ class Version(object,ICloneable,IComparable,IComparable[Version],IEquatable[Vers
 
  Version()
  """
- def Clone(self):
-  """
+
+    def Clone(self):
+        """
   Clone(self: Version) -> object
 
   
@@ -24,9 +27,10 @@ class Version(object,ICloneable,IComparable,IComparable[Version],IEquatable[Vers
 
    Returns: A new System.Object whose values are a copy of the current System.Version object.
   """
-  pass
- def CompareTo(self,*__args):
-  """
+        pass
+
+    def CompareTo(self, *__args):
+        """
   CompareTo(self: Version,value: Version) -> int
 
   
@@ -77,9 +81,10 @@ class Version(object,ICloneable,IComparable,IComparable[Version],IEquatable[Vers
 
     version is null.
   """
-  pass
- def Equals(self,obj):
-  """
+        pass
+
+    def Equals(self, obj):
+        """
   Equals(self: Version,obj: Version) -> bool
 
   
@@ -120,9 +125,10 @@ class Version(object,ICloneable,IComparable,IComparable[Version],IEquatable[Vers
 
     otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Version) -> int
 
   
@@ -131,10 +137,11 @@ class Version(object,ICloneable,IComparable,IComparable[Version],IEquatable[Vers
 
    Returns: A 32-bit signed integer hash code.
   """
-  pass
- @staticmethod
- def Parse(input):
-  """
+        pass
+
+    @staticmethod
+    def Parse(input):
+        """
   Parse(input: str) -> Version
 
   
@@ -147,9 +154,10 @@ class Version(object,ICloneable,IComparable,IComparable[Version],IEquatable[Vers
 
    Returns: An object that is equivalent to the version number specified in the input parameter.
   """
-  pass
- def ToString(self,fieldCount=None):
-  """
+        pass
+
+    def ToString(self, fieldCount=None):
+        """
   ToString(self: Version,fieldCount: int) -> str
 
   
@@ -202,10 +210,11 @@ class Version(object,ICloneable,IComparable,IComparable[Version],IEquatable[Vers
 
     using the constructor Version(1,3,4,2),the returned string is "1.3.4.2".
   """
-  pass
- @staticmethod
- def TryParse(input,result):
-  """
+        pass
+
+    @staticmethod
+    def TryParse(input, result):
+        """
   TryParse(input: str) -> (bool,Version)
 
   
@@ -222,24 +231,31 @@ class Version(object,ICloneable,IComparable,IComparable[Version],IEquatable[Vers
 
    Returns: true if the input parameter was converted successfully; otherwise,false.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,major: int,minor: int,build: int,revision: int)
 
   __new__(cls: type,major: int,minor: int,build: int)
@@ -250,18 +266,23 @@ class Version(object,ICloneable,IComparable,IComparable[Version],IEquatable[Vers
 
   __new__(cls: type)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- Build=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the value of the build component of the version number for the current System.Version object.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Build = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the value of the build component of the version number for the current System.Version object.
 
 
 
@@ -271,8 +292,8 @@ Get: Build(self: Version) -> int
 
 """
 
- Major=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the value of the major component of the version number for the current System.Version object.
+    Major = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the value of the major component of the version number for the current System.Version object.
 
 
 
@@ -282,8 +303,10 @@ Get: Major(self: Version) -> int
 
 """
 
- MajorRevision=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the high 16 bits of the revision number.
+    MajorRevision = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the high 16 bits of the revision number.
 
 
 
@@ -293,8 +316,8 @@ Get: MajorRevision(self: Version) -> Int16
 
 """
 
- Minor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the value of the minor component of the version number for the current System.Version object.
+    Minor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the value of the minor component of the version number for the current System.Version object.
 
 
 
@@ -304,8 +327,10 @@ Get: Minor(self: Version) -> int
 
 """
 
- MinorRevision=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the low 16 bits of the revision number.
+    MinorRevision = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the low 16 bits of the revision number.
 
 
 
@@ -315,8 +340,8 @@ Get: MinorRevision(self: Version) -> Int16
 
 """
 
- Revision=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the value of the revision component of the version number for the current System.Version object.
+    Revision = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the value of the revision component of the version number for the current System.Version object.
 
 
 
@@ -325,5 +350,3 @@ Get: Revision(self: Version) -> int
 
 
 """
-
-

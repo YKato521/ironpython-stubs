@@ -1,25 +1,32 @@
-class FamilySymbolProfile(SweepProfile,IDisposable):
- """ Represents a family symbol based profile for sweep or swept blend elements. """
- def Dispose(self):
-  """ Dispose(self: APIObject,A_0: bool) """
-  pass
- def ReleaseManagedResources(self,*args):
-  """ ReleaseManagedResources(self: APIObject) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: APIObject) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Angle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The angle of the rotation of the profile in radians.
+class FamilySymbolProfile(SweepProfile, IDisposable):
+    """ Represents a family symbol based profile for sweep or swept blend elements. """
+
+    def Dispose(self):
+        """ Dispose(self: APIObject,A_0: bool) """
+        pass
+
+    def ReleaseManagedResources(self, *args):
+        """ ReleaseManagedResources(self: APIObject) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: APIObject) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Angle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The angle of the rotation of the profile in radians.
 
 
 
@@ -31,8 +38,8 @@ Set: Angle(self: FamilySymbolProfile)=value
 
 """
 
- IsFlipped=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the symbol profile is flipped or not.
+    IsFlipped = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Indicates if the symbol profile is flipped or not.
 
 
 
@@ -44,8 +51,8 @@ Set: IsFlipped(self: FamilySymbolProfile)=value
 
 """
 
- Profile=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the family symbol of the profile.
+    Profile = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns the family symbol of the profile.
 
 
 
@@ -57,8 +64,8 @@ Set: Profile(self: FamilySymbolProfile)=value
 
 """
 
- XOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The offset of the profile to the origin of the sketch plane in the X direction.
+    XOffset = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The offset of the profile to the origin of the sketch plane in the X direction.
 
 
 
@@ -70,8 +77,8 @@ Set: XOffset(self: FamilySymbolProfile)=value
 
 """
 
- YOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The offset of the profile to the origin of the sketch plane in the Y direction.
+    YOffset = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The offset of the profile to the origin of the sketch plane in the Y direction.
 
 
 
@@ -82,5 +89,3 @@ Get: YOffset(self: FamilySymbolProfile) -> float
 Set: YOffset(self: FamilySymbolProfile)=value
 
 """
-
-

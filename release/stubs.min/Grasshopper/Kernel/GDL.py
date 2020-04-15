@@ -8,10 +8,10 @@
 # no functions
 # classes
 
-class GH_GDLParser(object):
- # no doc
- @staticmethod
- def ParseGDL(lines,messages):
-  """ ParseGDL(lines: Array[str]) -> (GH_Document,Array[str]) """
-  pass
 
+class GH_GDLParser(object):
+    # no doc
+    @staticmethod
+    def ParseGDL(lines, messages):
+        """ ParseGDL(lines: Array[str]) -> (GH_Document,Array[str]) """
+        pass

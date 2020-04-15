@@ -7,26 +7,31 @@
 
 # functions
 
-def Action(p_object,method): # real signature unknown; restored from __doc__
- """
+
+def Action(p_object, method):  # real signature unknown; restored from __doc__
+    """
  Encapsulates a method that has no parameters and does not return a value.
 
  
 
  Action(object: object,method: IntPtr)
  """
- pass
-def EventHandler(p_object,method): # real signature unknown; restored from __doc__
- """
+    pass
+
+
+def EventHandler(p_object, method):  # real signature unknown; restored from __doc__
+    """
  Represents the method that will handle an event that has no event data.
 
  
 
  EventHandler(object: object,method: IntPtr)
  """
- pass
-def Func(*args,**kwargs): # real signature unknown
- """
+    pass
+
+
+def Func(*args, **kwargs):  # real signature unknown
+    """
  A TypeCollision is used when we have a collision between
 
     two types with the same name.  Currently this is only possible w/ generic
@@ -53,21 +58,31 @@ def Func(*args,**kwargs): # real signature unknown
 
     information to get the generic version.
  """
- pass
-def IComparable(*args,**kwargs): # real signature unknown
- """ Defines a generalized type-specific comparison method that a value type or class implements to order or sort its instances. """
- pass
-def Nullable(*args,**kwargs): # real signature unknown
- """ Supports a value type that can be assigned null like a reference type. This class cannot be inherited. """
- pass
-def Tuple(*args,**kwargs): # real signature unknown
- """ Provides static methods for creating tuple objects. """
- pass
-def ValueTuple(*args,**kwargs): # real signature unknown
- """  """
- pass
-def WeakReference(target): # real signature unknown; restored from __doc__
- """
+    pass
+
+
+def IComparable(*args, **kwargs):  # real signature unknown
+    """ Defines a generalized type-specific comparison method that a value type or class implements to order or sort its instances. """
+    pass
+
+
+def Nullable(*args, **kwargs):  # real signature unknown
+    """ Supports a value type that can be assigned null like a reference type. This class cannot be inherited. """
+    pass
+
+
+def Tuple(*args, **kwargs):  # real signature unknown
+    """ Provides static methods for creating tuple objects. """
+    pass
+
+
+def ValueTuple(*args, **kwargs):  # real signature unknown
+    """  """
+    pass
+
+
+def WeakReference(target):  # real signature unknown; restored from __doc__
+    """
  Represents a weak reference,which references an object while still allowing that object to be reclaimed by garbage collection.
 
  
@@ -76,7 +91,9 @@ def WeakReference(target): # real signature unknown; restored from __doc__
 
  WeakReference(target: object,trackResurrection: bool)
  """
- pass
+    pass
+
+
 # classes
 from __init___parts.Object import Object
 from __init___parts.Exception import Exception
@@ -97,7 +114,9 @@ from __init___parts.AppDomainManager import AppDomainManager
 from __init___parts.IConvertible import IConvertible
 from __init___parts.IFormattable import IFormattable
 from __init___parts.Enum import Enum
-from __init___parts.AppDomainManagerInitializationOptions import AppDomainManagerInitializationOptions
+from __init___parts.AppDomainManagerInitializationOptions import (
+    AppDomainManagerInitializationOptions,
+)
 from __init___parts.AppDomainSetup import AppDomainSetup
 from __init___parts.AppDomainUnloadedException import AppDomainUnloadedException
 from __init___parts.ApplicationException import ApplicationException
@@ -183,7 +202,9 @@ from __init___parts.ICustomFormatter import ICustomFormatter
 from __init___parts.IEquatable import IEquatable
 from __init___parts.IFormatProvider import IFormatProvider
 from __init___parts.IndexOutOfRangeException import IndexOutOfRangeException
-from __init___parts.InsufficientExecutionStackException import InsufficientExecutionStackException
+from __init___parts.InsufficientExecutionStackException import (
+    InsufficientExecutionStackException,
+)
 from __init___parts.OutOfMemoryException import OutOfMemoryException
 from __init___parts.InsufficientMemoryException import InsufficientMemoryException
 from __init___parts.Int16 import Int16

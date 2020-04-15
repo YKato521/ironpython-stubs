@@ -1,20 +1,29 @@
-class ToolStripDropDownItemAccessibleObject(ToolStripItemAccessibleObject,IMarshal,IReflect,IAccessible,IEnumVariant,IOleWindow):
- """
+class ToolStripDropDownItemAccessibleObject(
+    ToolStripItemAccessibleObject,
+    IMarshal,
+    IReflect,
+    IAccessible,
+    IEnumVariant,
+    IOleWindow,
+):
+    """
  Provides information that accessibility applications use to adjust the user interface of a System.Windows.Forms.ToolStripDropDown for users with impairments.
 
  
 
  ToolStripDropDownItemAccessibleObject(item: ToolStripDropDownItem)
  """
- def DoDefaultAction(self):
-  """
+
+    def DoDefaultAction(self):
+        """
   DoDefaultAction(self: ToolStripDropDownItemAccessibleObject)
 
    Performs the default action associated with this accessible object.
   """
-  pass
- def GetChild(self,index):
-  """
+        pass
+
+    def GetChild(self, index):
+        """
   GetChild(self: ToolStripDropDownItemAccessibleObject,index: int) -> AccessibleObject
 
   
@@ -29,9 +38,10 @@ class ToolStripDropDownItemAccessibleObject(ToolStripItemAccessibleObject,IMarsh
 
     corresponding to the specified index.
   """
-  pass
- def GetChildCount(self):
-  """
+        pass
+
+    def GetChildCount(self):
+        """
   GetChildCount(self: ToolStripDropDownItemAccessibleObject) -> int
 
   
@@ -40,9 +50,10 @@ class ToolStripDropDownItemAccessibleObject(ToolStripItemAccessibleObject,IMarsh
 
    Returns: The number of children belonging to an accessible object.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -73,9 +84,10 @@ class ToolStripDropDownItemAccessibleObject(ToolStripItemAccessibleObject,IMarsh
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def UseStdAccessibleObjects(self,*args):
-  """
+        pass
+
+    def UseStdAccessibleObjects(self, *args):
+        """
   UseStdAccessibleObjects(self: AccessibleObject,handle: IntPtr,objid: int)
 
    Associates an object with an instance of an System.Windows.Forms.AccessibleObject based on the 
@@ -102,18 +114,22 @@ class ToolStripDropDownItemAccessibleObject(ToolStripItemAccessibleObject,IMarsh
 
    handle: An System.IntPtr that contains the handle of the object.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,item):
-  """ __new__(cls: type,item: ToolStripDropDownItem) """
-  pass
- def __str__(self,*args):
-  pass
- Role=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the role of this accessible object.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, item):
+        """ __new__(cls: type,item: ToolStripDropDownItem) """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Role = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the role of this accessible object.
 
 
 
@@ -122,5 +138,3 @@ Get: Role(self: ToolStripDropDownItemAccessibleObject) -> AccessibleRole
 
 
 """
-
-

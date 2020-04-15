@@ -1,7 +1,8 @@
 class CorrelationManager(object):
- """ Correlates traces that are part of a logical transaction. """
- def StartLogicalOperation(self,operationId=None):
-  """
+    """ Correlates traces that are part of a logical transaction. """
+
+    def StartLogicalOperation(self, operationId=None):
+        """
   StartLogicalOperation(self: CorrelationManager)
 
    Starts a logical operation on a thread.
@@ -14,16 +15,20 @@ class CorrelationManager(object):
 
    operationId: An object identifying the operation.
   """
-  pass
- def StopLogicalOperation(self):
-  """
+        pass
+
+    def StopLogicalOperation(self):
+        """
   StopLogicalOperation(self: CorrelationManager)
 
    Stops the current logical operation.
   """
-  pass
- ActivityId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the identity for a global activity.
+        pass
+
+    ActivityId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the identity for a global activity.
 
 
 
@@ -35,8 +40,10 @@ Set: ActivityId(self: CorrelationManager)=value
 
 """
 
- LogicalOperationStack=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the logical operation stack from the call context.
+    LogicalOperationStack = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the logical operation stack from the call context.
 
 
 
@@ -45,5 +52,3 @@ Get: LogicalOperationStack(self: CorrelationManager) -> Stack
 
 
 """
-
-

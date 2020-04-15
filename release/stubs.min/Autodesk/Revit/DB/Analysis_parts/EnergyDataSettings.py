@@ -1,14 +1,15 @@
-class EnergyDataSettings(Element,IDisposable):
- """
+class EnergyDataSettings(Element, IDisposable):
+    """
  This element contains settings for gbXML Export and Heating and Cooling Load Calculations
 
     and project level settings for Conceptual Energy Analysis.
 
     for serialization
  """
- @staticmethod
- def CheckAnalysisType(analysisType):
-  """
+
+    @staticmethod
+    def CheckAnalysisType(analysisType):
+        """
   CheckAnalysisType(analysisType: AnalysisMode) -> bool
 
   
@@ -21,10 +22,11 @@ class EnergyDataSettings(Element,IDisposable):
 
    Returns: True if the analysis type falls within an appropriate range,false otherwise.
   """
-  pass
- @staticmethod
- def CheckBuildingConstructionClass(buildingConstructionClass):
-  """
+        pass
+
+    @staticmethod
+    def CheckBuildingConstructionClass(buildingConstructionClass):
+        """
   CheckBuildingConstructionClass(buildingConstructionClass: HVACLoadConstructionClass) -> bool
 
   
@@ -39,10 +41,11 @@ class EnergyDataSettings(Element,IDisposable):
 
     false otherwise.
   """
-  pass
- @staticmethod
- def CheckBuildingEnvelope(determinationMethod):
-  """
+        pass
+
+    @staticmethod
+    def CheckBuildingEnvelope(determinationMethod):
+        """
   CheckBuildingEnvelope(determinationMethod: gbXMLExportBuildingEnvelope) -> bool
 
   
@@ -61,10 +64,11 @@ class EnergyDataSettings(Element,IDisposable):
 
     range,false otherwise.
   """
-  pass
- @staticmethod
- def CheckBuildingHVACSystem(buildingHVACSystem):
-  """
+        pass
+
+    @staticmethod
+    def CheckBuildingHVACSystem(buildingHVACSystem):
+        """
   CheckBuildingHVACSystem(buildingHVACSystem: gbXMLBuildingHVACSystem) -> bool
 
   
@@ -79,10 +83,11 @@ class EnergyDataSettings(Element,IDisposable):
 
     otherwise.
   """
-  pass
- @staticmethod
- def CheckBuildingOperatingSchedule(buildingOperatingSchedule):
-  """
+        pass
+
+    @staticmethod
+    def CheckBuildingOperatingSchedule(buildingOperatingSchedule):
+        """
   CheckBuildingOperatingSchedule(buildingOperatingSchedule: gbXMLBuildingOperatingSchedule) -> bool
 
   
@@ -97,10 +102,11 @@ class EnergyDataSettings(Element,IDisposable):
 
     false otherwise.
   """
-  pass
- @staticmethod
- def CheckBuildingType(buildingType):
-  """
+        pass
+
+    @staticmethod
+    def CheckBuildingType(buildingType):
+        """
   CheckBuildingType(buildingType: gbXMLBuildingType) -> bool
 
   
@@ -113,9 +119,10 @@ class EnergyDataSettings(Element,IDisposable):
 
    Returns: True if the building type falls within an appropriate range,false otherwise.
   """
-  pass
- def CheckConstructionSetElement(self,constructionSetElementId):
-  """
+        pass
+
+    def CheckConstructionSetElement(self, constructionSetElementId):
+        """
   CheckConstructionSetElement(self: EnergyDataSettings,constructionSetElementId: ElementId) -> bool
 
   
@@ -130,10 +137,11 @@ class EnergyDataSettings(Element,IDisposable):
 
     false otherwise.
   """
-  pass
- @staticmethod
- def CheckExportCategory(exportCategoryId):
-  """
+        pass
+
+    @staticmethod
+    def CheckExportCategory(exportCategoryId):
+        """
   CheckExportCategory(exportCategoryId: ElementId) -> bool
 
   
@@ -152,10 +160,11 @@ class EnergyDataSettings(Element,IDisposable):
 
    Returns: True if the export category falls within the list,false otherwise.
   """
-  pass
- @staticmethod
- def CheckExportComplexity(exportComplexity):
-  """
+        pass
+
+    @staticmethod
+    def CheckExportComplexity(exportComplexity):
+        """
   CheckExportComplexity(exportComplexity: gbXMLExportComplexity) -> bool
 
   
@@ -170,10 +179,11 @@ class EnergyDataSettings(Element,IDisposable):
 
     otherwise.
   """
-  pass
- @staticmethod
- def CheckGroundPlane(*__args):
-  """
+        pass
+
+    @staticmethod
+    def CheckGroundPlane(*__args):
+        """
   CheckGroundPlane(self: EnergyDataSettings,groundPlaneId: ElementId) -> bool
 
   
@@ -224,9 +234,10 @@ class EnergyDataSettings(Element,IDisposable):
 
    Returns: True if the input element is a level or invalidElementId,false otherwise.
   """
-  pass
- def CheckProjectPhase(self,projectPhaseId):
-  """
+        pass
+
+    def CheckProjectPhase(self, projectPhaseId):
+        """
   CheckProjectPhase(self: EnergyDataSettings,projectPhaseId: ElementId) -> bool
 
   
@@ -239,10 +250,11 @@ class EnergyDataSettings(Element,IDisposable):
 
    Returns: True if the input element is a project phase,false otherwise.
   """
-  pass
- @staticmethod
- def CheckProjectReportType(projectReportType):
-  """
+        pass
+
+    @staticmethod
+    def CheckProjectReportType(projectReportType):
+        """
   CheckProjectReportType(projectReportType: HVACLoadLoadsReportType) -> bool
 
   
@@ -257,10 +269,11 @@ class EnergyDataSettings(Element,IDisposable):
 
     otherwise.
   """
-  pass
- @staticmethod
- def CheckRangeOfMassZoneCoreOffset(massZoneCoreOffset):
-  """
+        pass
+
+    @staticmethod
+    def CheckRangeOfMassZoneCoreOffset(massZoneCoreOffset):
+        """
   CheckRangeOfMassZoneCoreOffset(massZoneCoreOffset: float) -> bool
 
   
@@ -279,10 +292,11 @@ class EnergyDataSettings(Element,IDisposable):
 
     otherwise.
   """
-  pass
- @staticmethod
- def CheckRangeOfPercentageGlazing(percentageGlazing):
-  """
+        pass
+
+    @staticmethod
+    def CheckRangeOfPercentageGlazing(percentageGlazing):
+        """
   CheckRangeOfPercentageGlazing(percentageGlazing: float) -> bool
 
   
@@ -295,10 +309,11 @@ class EnergyDataSettings(Element,IDisposable):
 
    Returns: True if the percentage glazing value is between 0.00 and 0.95,false otherwise.
   """
-  pass
- @staticmethod
- def CheckRangeOfPercentageSkylights(percentageSkylights):
-  """
+        pass
+
+    @staticmethod
+    def CheckRangeOfPercentageSkylights(percentageSkylights):
+        """
   CheckRangeOfPercentageSkylights(percentageSkylights: float) -> bool
 
   
@@ -313,10 +328,11 @@ class EnergyDataSettings(Element,IDisposable):
 
     otherwise.
   """
-  pass
- @staticmethod
- def CheckRangeOfShadeDepth(shadeDepth):
-  """
+        pass
+
+    @staticmethod
+    def CheckRangeOfShadeDepth(shadeDepth):
+        """
   CheckRangeOfShadeDepth(shadeDepth: float) -> bool
 
   
@@ -329,10 +345,11 @@ class EnergyDataSettings(Element,IDisposable):
 
    Returns: True if the shade depth is greater than or equal to zero,false otherwise.
   """
-  pass
- @staticmethod
- def CheckRangeOfSillHeight(sillHeight):
-  """
+        pass
+
+    @staticmethod
+    def CheckRangeOfSillHeight(sillHeight):
+        """
   CheckRangeOfSillHeight(sillHeight: float) -> bool
 
   
@@ -345,10 +362,11 @@ class EnergyDataSettings(Element,IDisposable):
 
    Returns: True if the sill height falls is greater than or equal to zero,false otherwise.
   """
-  pass
- @staticmethod
- def CheckRangeOfSkylightWidth(skylightWidth):
-  """
+        pass
+
+    @staticmethod
+    def CheckRangeOfSkylightWidth(skylightWidth):
+        """
   CheckRangeOfSkylightWidth(skylightWidth: float) -> bool
 
   
@@ -367,10 +385,11 @@ class EnergyDataSettings(Element,IDisposable):
 
     otherwise.
   """
-  pass
- @staticmethod
- def CheckRangeOfSliverSpaceTolerance(silverSpaceTolerance):
-  """
+        pass
+
+    @staticmethod
+    def CheckRangeOfSliverSpaceTolerance(silverSpaceTolerance):
+        """
   CheckRangeOfSliverSpaceTolerance(silverSpaceTolerance: float) -> bool
 
   
@@ -385,10 +404,11 @@ class EnergyDataSettings(Element,IDisposable):
 
     false otherwise.
   """
-  pass
- @staticmethod
- def CheckServiceType(serviceType):
-  """
+        pass
+
+    @staticmethod
+    def CheckServiceType(serviceType):
+        """
   CheckServiceType(serviceType: gbXMLServiceType) -> bool
 
   
@@ -401,13 +421,15 @@ class EnergyDataSettings(Element,IDisposable):
 
    Returns: True if the service type falls within an appropriate range,false otherwise.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- @staticmethod
- def EnableConceptualEnergyAnalyticalModel():
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    @staticmethod
+    def EnableConceptualEnergyAnalyticalModel():
+        """
   EnableConceptualEnergyAnalyticalModel() -> bool
 
   
@@ -418,13 +440,15 @@ class EnergyDataSettings(Element,IDisposable):
 
     otherwise.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- @staticmethod
- def GetBuildingConstructionSetElementId(ccda):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    @staticmethod
+    def GetBuildingConstructionSetElementId(ccda):
+        """
   GetBuildingConstructionSetElementId(ccda: Document) -> ElementId
 
   
@@ -433,10 +457,11 @@ class EnergyDataSettings(Element,IDisposable):
 
    Returns: Returns the id of the building construction set.
   """
-  pass
- @staticmethod
- def GetFromDocument(cda):
-  """
+        pass
+
+    @staticmethod
+    def GetFromDocument(cda):
+        """
   GetFromDocument(cda: Document) -> EnergyDataSettings
 
   
@@ -455,10 +480,11 @@ class EnergyDataSettings(Element,IDisposable):
 
    Returns: Returns the EnergyDataSettings element or NULL.
   """
-  pass
- @staticmethod
- def IsDocumentUsingEnergyDataAnalyticalModel(ccda):
-  """
+        pass
+
+    @staticmethod
+    def IsDocumentUsingEnergyDataAnalyticalModel(ccda):
+        """
   IsDocumentUsingEnergyDataAnalyticalModel(ccda: Document) -> bool
 
   
@@ -477,12 +503,14 @@ class EnergyDataSettings(Element,IDisposable):
 
     otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def SetCreateAnalyticalModel(self,createAnalyticalModel):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def SetCreateAnalyticalModel(self, createAnalyticalModel):
+        """
   SetCreateAnalyticalModel(self: EnergyDataSettings,createAnalyticalModel: bool)
 
    If this is true,data,features,and geometry related to the Energy Analytical 
@@ -499,21 +527,28 @@ class EnergyDataSettings(Element,IDisposable):
 
    createAnalyticalModel: True to enable the Energy Analytical Model otherwise.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- AnalysisType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The type of analysis mode.
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    AnalysisType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The type of analysis mode.
 
 
 
@@ -525,8 +560,10 @@ Set: AnalysisType(self: EnergyDataSettings)=value
 
 """
 
- AnalyticalGridCellSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The cell size for the uniform cubical grid used when computing the building envelope
+    AnalyticalGridCellSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The cell size for the uniform cubical grid used when computing the building envelope
 
 
 
@@ -538,8 +575,10 @@ Set: AnalyticalGridCellSize(self: EnergyDataSettings)=value
 
 """
 
- BuildingConstructionClass=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Used for both the detailed and conceptual energy model
+    BuildingConstructionClass = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Used for both the detailed and conceptual energy model
 
    Construction class of building as defined by:
 
@@ -555,8 +594,10 @@ Set: BuildingConstructionClass(self: EnergyDataSettings)=value
 
 """
 
- BuildingEnvelopeDeterminationMethod=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if an analysis should be perform to find the model elements that are part of the building envelope
+    BuildingEnvelopeDeterminationMethod = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if an analysis should be perform to find the model elements that are part of the building envelope
 
 
 
@@ -568,8 +609,10 @@ Set: BuildingEnvelopeDeterminationMethod(self: EnergyDataSettings)=value
 
 """
 
- BuildingHVACSystem=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The type of HVAC system used by the building for conceptual model energy calculations.
+    BuildingHVACSystem = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The type of HVAC system used by the building for conceptual model energy calculations.
 
 
 
@@ -581,8 +624,10 @@ Set: BuildingHVACSystem(self: EnergyDataSettings)=value
 
 """
 
- BuildingOperatingSchedule=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The operating schedule of the building used for conceptual model energy calculations.
+    BuildingOperatingSchedule = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The operating schedule of the building used for conceptual model energy calculations.
 
 
 
@@ -594,8 +639,10 @@ Set: BuildingOperatingSchedule(self: EnergyDataSettings)=value
 
 """
 
- BuildingType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The type of building.
+    BuildingType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The type of building.
 
 
 
@@ -607,8 +654,10 @@ Set: BuildingType(self: EnergyDataSettings)=value
 
 """
 
- CoreOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The default offset used to determine the outer perimeter to be divided into zones.
+    CoreOffset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The default offset used to determine the outer perimeter to be divided into zones.
 
 
 
@@ -620,8 +669,10 @@ Set: CoreOffset(self: EnergyDataSettings)=value
 
 """
 
- CreateAnalyticalModel=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If this is true,data,features,and geometry related to the Energy Analytical Model
+    CreateAnalyticalModel = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """If this is true,data,features,and geometry related to the Energy Analytical Model
 
    will be created,allowing the energy performance to be analyzed through GreenBuilidingXML.
 
@@ -633,8 +684,10 @@ Get: CreateAnalyticalModel(self: EnergyDataSettings) -> bool
 
 """
 
- DividePerimeter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If this is true,zones with exterior boundaries on each floor of the building will be divided based on geometric criteria.
+    DividePerimeter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """If this is true,zones with exterior boundaries on each floor of the building will be divided based on geometric criteria.
 
 
 
@@ -646,8 +699,10 @@ Set: DividePerimeter(self: EnergyDataSettings)=value
 
 """
 
- EnergyModel=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """if this is on there should be an energy model dependent on the current AnalysisType
+    EnergyModel = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """if this is on there should be an energy model dependent on the current AnalysisType
 
    if it is off the conceptual energy model should be turned off
 
@@ -663,8 +718,10 @@ Set: EnergyModel(self: EnergyDataSettings)=value
 
 """
 
- ExportCategory=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Value is a category indicating which discipline model will be used for GreenBuildingXML export.
+    ExportCategory = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Value is a category indicating which discipline model will be used for GreenBuildingXML export.
 
 
 
@@ -676,8 +733,10 @@ Set: ExportCategory(self: EnergyDataSettings)=value
 
 """
 
- ExportComplexity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Value determines Export Complexity for GreenBuildingXML detailed model export.
+    ExportComplexity = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Value determines Export Complexity for GreenBuildingXML detailed model export.
 
 
 
@@ -689,8 +748,10 @@ Set: ExportComplexity(self: EnergyDataSettings)=value
 
 """
 
- ExportDefaults=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Use for detailed model GreenBuildingXML export.
+    ExportDefaults = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Use for detailed model GreenBuildingXML export.
 
    When this setting is true,all building and space defaults,schedules,and constructions will be exported to GreenBuildingXML.
 
@@ -706,8 +767,10 @@ Set: ExportDefaults(self: EnergyDataSettings)=value
 
 """
 
- GroundPlane=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Id of level which represents ground level.
+    GroundPlane = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Id of level which represents ground level.
 
 
 
@@ -719,8 +782,10 @@ Set: GroundPlane(self: EnergyDataSettings)=value
 
 """
 
- IncludeThermalProperties=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if thermal information from model assemblies and components is included in GreenBuildingXML export of the detailed model.
+    IncludeThermalProperties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if thermal information from model assemblies and components is included in GreenBuildingXML export of the detailed model.
 
 
 
@@ -732,8 +797,10 @@ Set: IncludeThermalProperties(self: EnergyDataSettings)=value
 
 """
 
- IsExportMullionsEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if mullions are included in GreenBuildingXML export of the detailed model.
+    IsExportMullionsEnabled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if mullions are included in GreenBuildingXML export of the detailed model.
 
 
 
@@ -743,8 +810,10 @@ Get: IsExportMullionsEnabled(self: EnergyDataSettings) -> bool
 
 """
 
- IsExportShadingSurfacesEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if "shading surfaces" are included in GreenBuildingXML export of the detailed model.
+    IsExportShadingSurfacesEnabled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if "shading surfaces" are included in GreenBuildingXML export of the detailed model.
 
 
 
@@ -754,8 +823,10 @@ Get: IsExportShadingSurfacesEnabled(self: EnergyDataSettings) -> bool
 
 """
 
- IsExportSimplifiedCurtainSystemsEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if curtain system geometry is being simplified for GreenBuildingXML export of the detailed model.
+    IsExportSimplifiedCurtainSystemsEnabled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if curtain system geometry is being simplified for GreenBuildingXML export of the detailed model.
 
 
 
@@ -765,8 +836,10 @@ Get: IsExportSimplifiedCurtainSystemsEnabled(self: EnergyDataSettings) -> bool
 
 """
 
- IsGlazingShaded=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If this is true,glazing/windows that are auto-created on exterior walls will automatically
+    IsGlazingShaded = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """If this is true,glazing/windows that are auto-created on exterior walls will automatically
 
    have a shading device created on their top edge.
 
@@ -780,8 +853,10 @@ Set: IsGlazingShaded(self: EnergyDataSettings)=value
 
 """
 
- MassZoneCoreOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """It defines the default behavior for the automatic generation of Mass Zones
+    MassZoneCoreOffset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """It defines the default behavior for the automatic generation of Mass Zones
 
    for each Mass Floor in the Project.  Specifying a value here will offset the
 
@@ -797,8 +872,10 @@ Set: MassZoneCoreOffset(self: EnergyDataSettings)=value
 
 """
 
- MassZoneDividePerimeter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If this is true,outward facing zones on each floor of the building will be divided based on the four compass directions.
+    MassZoneDividePerimeter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """If this is true,outward facing zones on each floor of the building will be divided based on the four compass directions.
 
 
 
@@ -810,8 +887,10 @@ Set: MassZoneDividePerimeter(self: EnergyDataSettings)=value
 
 """
 
- OutsideAirChangesRatePerHour=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The number of times the volume of air interchanges in the room in one hour.
+    OutsideAirChangesRatePerHour = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The number of times the volume of air interchanges in the room in one hour.
 
 
 
@@ -823,8 +902,10 @@ Set: OutsideAirChangesRatePerHour(self: EnergyDataSettings)=value
 
 """
 
- OutsideAirPerArea=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The rate of flow of outside air available per unit area.
+    OutsideAirPerArea = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The rate of flow of outside air available per unit area.
 
 
 
@@ -836,8 +917,10 @@ Set: OutsideAirPerArea(self: EnergyDataSettings)=value
 
 """
 
- OutsideAirPerPerson=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The rate of flow of outside air available per person.
+    OutsideAirPerPerson = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The rate of flow of outside air available per person.
 
 
 
@@ -849,8 +932,10 @@ Set: OutsideAirPerPerson(self: EnergyDataSettings)=value
 
 """
 
- PercentageGlazing=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Used for the conceptual energy model.
+    PercentageGlazing = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Used for the conceptual energy model.
 
    The approximate percentage of the building exterior wall surfaces
 
@@ -866,8 +951,10 @@ Set: PercentageGlazing(self: EnergyDataSettings)=value
 
 """
 
- PercentageSkylights=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Used for the conceptual energy model.
+    PercentageSkylights = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Used for the conceptual energy model.
 
    The approximate percentage of the building roof surfaces in
 
@@ -883,8 +970,10 @@ Set: PercentageSkylights(self: EnergyDataSettings)=value
 
 """
 
- ProjectPhase=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The project phase of the EnergyData information.
+    ProjectPhase = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The project phase of the EnergyData information.
 
 
 
@@ -896,8 +985,10 @@ Set: ProjectPhase(self: EnergyDataSettings)=value
 
 """
 
- ProjectReportType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Report type: None,simple,standard,detailed
+    ProjectReportType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Report type: None,simple,standard,detailed
 
 
 
@@ -909,8 +1000,10 @@ Set: ProjectReportType(self: EnergyDataSettings)=value
 
 """
 
- ServiceType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The type of heating or cooling system.
+    ServiceType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The type of heating or cooling system.
 
 
 
@@ -922,8 +1015,10 @@ Set: ServiceType(self: EnergyDataSettings)=value
 
 """
 
- ShadeDepth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Used for the conceptual energy model.
+    ShadeDepth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Used for the conceptual energy model.
 
    Amount that auto-generated shading will extend from auto-generated windows.
 
@@ -937,8 +1032,10 @@ Set: ShadeDepth(self: EnergyDataSettings)=value
 
 """
 
- SillHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Used for the conceptual energy model.
+    SillHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Used for the conceptual energy model.
 
    The height from the nearest lower level used for auto-glazing created
 
@@ -954,8 +1051,10 @@ Set: SillHeight(self: EnergyDataSettings)=value
 
 """
 
- SkylightWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Used for the conceptual energy model.  The approximate width used for the skylights in
+    SkylightWidth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Used for the conceptual energy model.  The approximate width used for the skylights in
 
    massing instances when the Energy Analytical model is being created.
 
@@ -969,8 +1068,10 @@ Set: SkylightWidth(self: EnergyDataSettings)=value
 
 """
 
- SliverSpaceTolerance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Used for Detailed GreenBuildingXML export.
+    SliverSpaceTolerance = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Used for Detailed GreenBuildingXML export.
 
    This value is used to identify sliver spaces,i.e. spaces bounded by parallel surfaces belonging to different rooms.
 
@@ -984,8 +1085,10 @@ Set: SliverSpaceTolerance(self: EnergyDataSettings)=value
 
 """
 
- UseAirChangesPerHour=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True if user is specifying air changes per hour,false otherwise.
+    UseAirChangesPerHour = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """True if user is specifying air changes per hour,false otherwise.
 
 
 
@@ -997,8 +1100,10 @@ Set: UseAirChangesPerHour(self: EnergyDataSettings)=value
 
 """
 
- UseHeatingCredits=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If true,Revit will use heating credits in the final load sum calculations.
+    UseHeatingCredits = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """If true,Revit will use heating credits in the final load sum calculations.
 
    If false,Revit will ignore heating credits in the final load sum calculations.
 
@@ -1012,8 +1117,10 @@ Set: UseHeatingCredits(self: EnergyDataSettings)=value
 
 """
 
- UseOutsideAirPerArea=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True is user is specifying outside air per area,false otherwise.
+    UseOutsideAirPerArea = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """True is user is specifying outside air per area,false otherwise.
 
 
 
@@ -1025,8 +1132,10 @@ Set: UseOutsideAirPerArea(self: EnergyDataSettings)=value
 
 """
 
- UseOutsideAirPerPerson=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True if user is specifying outside air per person,false otherwise.
+    UseOutsideAirPerPerson = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """True if user is specifying outside air per person,false otherwise.
 
 
 
@@ -1037,5 +1146,3 @@ Get: UseOutsideAirPerPerson(self: EnergyDataSettings) -> bool
 Set: UseOutsideAirPerPerson(self: EnergyDataSettings)=value
 
 """
-
-

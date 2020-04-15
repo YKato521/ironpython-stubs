@@ -1,7 +1,8 @@
-class Parameter(APIObject,IDisposable):
- """ The parameter object contains the value data assigned to that parameter. """
- def AsDouble(self):
-  """
+class Parameter(APIObject, IDisposable):
+    """ The parameter object contains the value data assigned to that parameter. """
+
+    def AsDouble(self):
+        """
   AsDouble(self: Parameter) -> float
 
   
@@ -10,9 +11,10 @@ class Parameter(APIObject,IDisposable):
 
    Returns: The double value contained in the parameter.
   """
-  pass
- def AsElementId(self):
-  """
+        pass
+
+    def AsElementId(self):
+        """
   AsElementId(self: Parameter) -> ElementId
 
   
@@ -25,9 +27,10 @@ class Parameter(APIObject,IDisposable):
 
    Returns: The Autodesk::Revit::DB::ElementId^ contained in the parameter.
   """
-  pass
- def AsInteger(self):
-  """
+        pass
+
+    def AsInteger(self):
+        """
   AsInteger(self: Parameter) -> int
 
   
@@ -36,9 +39,10 @@ class Parameter(APIObject,IDisposable):
 
    Returns: The integer value contained in the parameter.
   """
-  pass
- def AssociateWithGlobalParameter(self,gpId):
-  """
+        pass
+
+    def AssociateWithGlobalParameter(self, gpId):
+        """
   AssociateWithGlobalParameter(self: Parameter,gpId: ElementId)
 
    Associates this parameter with a global parameter in the same document.
@@ -47,9 +51,10 @@ class Parameter(APIObject,IDisposable):
 
    gpId: Id of a global parameter contained in this parameter's document
   """
-  pass
- def AsString(self):
-  """
+        pass
+
+    def AsString(self):
+        """
   AsString(self: Parameter) -> str
 
   
@@ -58,9 +63,10 @@ class Parameter(APIObject,IDisposable):
 
    Returns: The string contained in the parameter.
   """
-  pass
- def AsValueString(self,formatOptions=None):
-  """
+        pass
+
+    def AsValueString(self, formatOptions=None):
+        """
   AsValueString(self: Parameter) -> str
 
   
@@ -81,9 +87,10 @@ class Parameter(APIObject,IDisposable):
 
    Returns: The string that represents the parameter value.
   """
-  pass
- def CanBeAssociatedWithGlobalParameter(self,gpId):
-  """
+        pass
+
+    def CanBeAssociatedWithGlobalParameter(self, gpId):
+        """
   CanBeAssociatedWithGlobalParameter(self: Parameter,gpId: ElementId) -> bool
 
   
@@ -98,9 +105,10 @@ class Parameter(APIObject,IDisposable):
 
     otherwise.
   """
-  pass
- def CanBeAssociatedWithGlobalParameters(self):
-  """
+        pass
+
+    def CanBeAssociatedWithGlobalParameters(self):
+        """
   CanBeAssociatedWithGlobalParameters(self: Parameter) -> bool
 
   
@@ -111,19 +119,22 @@ class Parameter(APIObject,IDisposable):
 
     otherwise.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: APIObject,A_0: bool) """
-  pass
- def DissociateFromGlobalParameter(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: APIObject,A_0: bool) """
+        pass
+
+    def DissociateFromGlobalParameter(self):
+        """
   DissociateFromGlobalParameter(self: Parameter)
 
    Dissociates this parameter from a global parameter.
   """
-  pass
- def GetAssociatedGlobalParameter(self):
-  """
+        pass
+
+    def GetAssociatedGlobalParameter(self):
+        """
   GetAssociatedGlobalParameter(self: Parameter) -> ElementId
 
   
@@ -132,15 +143,18 @@ class Parameter(APIObject,IDisposable):
 
    Returns: Id of a global parameter or InvalidElemetnId.
   """
-  pass
- def ReleaseManagedResources(self,*args):
-  """ ReleaseManagedResources(self: APIObject) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: APIObject) """
-  pass
- def Set(self,value):
-  """
+        pass
+
+    def ReleaseManagedResources(self, *args):
+        """ ReleaseManagedResources(self: APIObject) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: APIObject) """
+        pass
+
+    def Set(self, value):
+        """
   Set(self: Parameter,value: int) -> bool
 
   
@@ -203,9 +217,10 @@ class Parameter(APIObject,IDisposable):
 
     new value,otherwise false.
   """
-  pass
- def SetValueString(self,valueString):
-  """
+        pass
+
+    def SetValueString(self, valueString):
+        """
   SetValueString(self: Parameter,valueString: str) -> bool
 
   
@@ -218,18 +233,24 @@ class Parameter(APIObject,IDisposable):
 
    Returns: Indicates whether the parameter value is successfully set.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Definition=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the Definition object that describes the data type,name and other details of the
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Definition = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the Definition object that describes the data type,name and other details of the
 
 parameter.
 
@@ -241,8 +262,10 @@ Get: Definition(self: Parameter) -> Definition
 
 """
 
- DisplayUnitType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the display unit type of the parameter object.
+    DisplayUnitType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get the display unit type of the parameter object.
 
 
 
@@ -252,8 +275,8 @@ Get: DisplayUnitType(self: Parameter) -> DisplayUnitType
 
 """
 
- Element=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element to which this parameter belongs.
+    Element = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The element to which this parameter belongs.
 
 
 
@@ -263,8 +286,8 @@ Get: Element(self: Parameter) -> Element
 
 """
 
- GUID=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Guid for a shared parameter.
+    GUID = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The Guid for a shared parameter.
 
 
 
@@ -274,8 +297,8 @@ Get: GUID(self: Parameter) -> Guid
 
 """
 
- HasValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies if the parameter has an assigned value.
+    HasValue = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Identifies if the parameter has an assigned value.
 
 
 
@@ -285,8 +308,8 @@ Get: HasValue(self: Parameter) -> bool
 
 """
 
- Id=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the parameter.
+    Id = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The id of the parameter.
 
 
 
@@ -296,8 +319,10 @@ Get: Id(self: Parameter) -> ElementId
 
 """
 
- IsReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the readonly property of the parameter.
+    IsReadOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get the readonly property of the parameter.
 
 
 
@@ -307,8 +332,8 @@ Get: IsReadOnly(self: Parameter) -> bool
 
 """
 
- IsShared=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies if the parameter is a shared parameter.
+    IsShared = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Identifies if the parameter is a shared parameter.
 
 
 
@@ -318,8 +343,10 @@ Get: IsShared(self: Parameter) -> bool
 
 """
 
- StorageType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Describes the type that is used internally within the parameter to store its value.
+    StorageType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Describes the type that is used internally within the parameter to store its value.
 
 
 
@@ -329,8 +356,10 @@ Get: StorageType(self: Parameter) -> StorageType
 
 """
 
- UserModifiable=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether the interactive user can modify the value of this parameter.
+    UserModifiable = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates whether the interactive user can modify the value of this parameter.
 
 
 
@@ -339,5 +368,3 @@ Get: UserModifiable(self: Parameter) -> bool
 
 
 """
-
-

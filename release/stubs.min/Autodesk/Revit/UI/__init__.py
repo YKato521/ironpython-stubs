@@ -30,7 +30,9 @@ from __init___parts.DoubleClickTarget import DoubleClickTarget
 from __init___parts.EditorInteraction import EditorInteraction
 from __init___parts.EditorInteractionType import EditorInteractionType
 from __init___parts.ExternalApplicationArray import ExternalApplicationArray
-from __init___parts.ExternalApplicationArrayIterator import ExternalApplicationArrayIterator
+from __init___parts.ExternalApplicationArrayIterator import (
+    ExternalApplicationArrayIterator,
+)
 from __init___parts.ExternalCommandData import ExternalCommandData
 from __init___parts.ExternalEvent import ExternalEvent
 from __init___parts.ExternalEventRequest import ExternalEventRequest
@@ -51,7 +53,9 @@ from __init___parts.IExternalResourceUIServer import IExternalResourceUIServer
 from __init___parts.ItemSelectionDialogResult import ItemSelectionDialogResult
 from __init___parts.PostableCommand import PostableCommand
 from __init___parts.PreviewControl import PreviewControl
-from __init___parts.PromptForFamilyInstancePlacementOptions import PromptForFamilyInstancePlacementOptions
+from __init___parts.PromptForFamilyInstancePlacementOptions import (
+    PromptForFamilyInstancePlacementOptions,
+)
 from __init___parts.RibbonButton import RibbonButton
 from __init___parts.PulldownButton import PulldownButton
 from __init___parts.PulldownButtonData import PulldownButtonData
@@ -67,7 +71,9 @@ from __init___parts.RibbonPanel import RibbonPanel
 from __init___parts.ScrollbarVisibility import ScrollbarVisibility
 from __init___parts.SelectionUIOptions import SelectionUIOptions
 from __init___parts.SetupEnergySimulationDialog import SetupEnergySimulationDialog
-from __init___parts.SetupEnergySimulationDialogResult import SetupEnergySimulationDialogResult
+from __init___parts.SetupEnergySimulationDialogResult import (
+    SetupEnergySimulationDialogResult,
+)
 from __init___parts.SketchGalleryOptions import SketchGalleryOptions
 from __init___parts.SplitButton import SplitButton
 from __init___parts.SplitButtonData import SplitButtonData

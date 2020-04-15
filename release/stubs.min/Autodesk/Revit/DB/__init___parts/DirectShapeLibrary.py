@@ -1,5 +1,5 @@
-class DirectShapeLibrary(object,IDisposable):
- """
+class DirectShapeLibrary(object, IDisposable):
+    """
  DirectShapeLibrary is used to store pre-created geometry for further referencing via the definition/instance mechanism.
 
     It is not persistent: the scope of a library object is usually a single data creation session.
@@ -12,8 +12,9 @@ class DirectShapeLibrary(object,IDisposable):
 
     end class DirectShapeDefinition
  """
- def AddDefinition(self,id,*__args):
-  """
+
+    def AddDefinition(self, id, *__args):
+        """
   AddDefinition(self: DirectShapeLibrary,id: str,GNode: GeometryObject)
 
    Add a definition to be reused by instances. A definition is a single geometry 
@@ -30,9 +31,10 @@ class DirectShapeLibrary(object,IDisposable):
 
   AddDefinition(self: DirectShapeLibrary,id: str,GNodes: IList[GeometryObject])
   """
-  pass
- def AddDefinitionType(self,id,typeId):
-  """
+        pass
+
+    def AddDefinitionType(self, id, typeId):
+        """
   AddDefinitionType(self: DirectShapeLibrary,id: str,typeId: ElementId)
 
    Add a definition to be reused by instances. Adding a definition type will 
@@ -63,9 +65,10 @@ class DirectShapeLibrary(object,IDisposable):
 
    typeId: Element id of the DirectShapeType element that will be used as a definition.
   """
-  pass
- def Contains(self,id):
-  """
+        pass
+
+    def Contains(self, id):
+        """
   Contains(self: DirectShapeLibrary,id: str) -> bool
 
   
@@ -82,9 +85,10 @@ class DirectShapeLibrary(object,IDisposable):
 
    Returns: True if a geometry definition exists,false otherwise.
   """
-  pass
- def ContainsType(self,name):
-  """
+        pass
+
+    def ContainsType(self, name):
+        """
   ContainsType(self: DirectShapeLibrary,name: str) -> bool
 
   
@@ -101,12 +105,14 @@ class DirectShapeLibrary(object,IDisposable):
 
    Returns: True if a geometry definition exists,false otherwise.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: DirectShapeLibrary) """
-  pass
- def FindDefinition(self,id):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: DirectShapeLibrary) """
+        pass
+
+    def FindDefinition(self, id):
+        """
   FindDefinition(self: DirectShapeLibrary,id: str) -> IList[GeometryObject]
 
   
@@ -119,9 +125,10 @@ class DirectShapeLibrary(object,IDisposable):
 
    Returns: List of geometry objects that together define a shape
   """
-  pass
- def FindDefinitionType(self,id):
-  """
+        pass
+
+    def FindDefinitionType(self, id):
+        """
   FindDefinitionType(self: DirectShapeLibrary,id: str) -> ElementId
 
   
@@ -138,22 +145,25 @@ class DirectShapeLibrary(object,IDisposable):
 
    Returns: Element id of a DirectShapeTypeElement
   """
-  pass
- @staticmethod
- def GetDirectShapeLibrary(ADoc):
-  """
+        pass
+
+    @staticmethod
+    def GetDirectShapeLibrary(ADoc):
+        """
   GetDirectShapeLibrary(ADoc: Document) -> DirectShapeLibrary
 
   
 
    Get the currently active Library object
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: DirectShapeLibrary,disposing: bool) """
-  pass
- def Reset(self):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: DirectShapeLibrary,disposing: bool) """
+        pass
+
+    def Reset(self):
+        """
   Reset(self: DirectShapeLibrary)
 
    Removes all definitions from library. This is useful when importing several 
@@ -164,21 +174,28 @@ class DirectShapeLibrary(object,IDisposable):
 
     keeping the definitions specific to that data set will slow down the searches.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -187,5 +204,3 @@ Get: IsValidObject(self: DirectShapeLibrary) -> bool
 
 
 """
-
-

@@ -1,5 +1,5 @@
-class StreamReader(TextReader,IDisposable):
- """
+class StreamReader(TextReader, IDisposable):
+    """
  Implements a System.IO.TextReader that reads characters from a byte stream in a particular encoding.
 
  
@@ -26,24 +26,27 @@ class StreamReader(TextReader,IDisposable):
 
  StreamReader(path: str,encoding: Encoding,detectEncodingFromByteOrderMarks: bool,bufferSize: int)
  """
- def Close(self):
-  """
+
+    def Close(self):
+        """
   Close(self: StreamReader)
 
    Closes the System.IO.StreamReader object and the underlying stream,and releases any system 
 
     resources associated with the reader.
   """
-  pass
- def DiscardBufferedData(self):
-  """
+        pass
+
+    def DiscardBufferedData(self):
+        """
   DiscardBufferedData(self: StreamReader)
 
    Clears the internal buffer.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: StreamReader,disposing: bool)
 
    Closes the underlying stream,releases the unmanaged resources used by the 
@@ -56,9 +59,10 @@ class StreamReader(TextReader,IDisposable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -89,9 +93,10 @@ class StreamReader(TextReader,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def Peek(self):
-  """
+        pass
+
+    def Peek(self):
+        """
   Peek(self: StreamReader) -> int
 
   
@@ -102,9 +107,10 @@ class StreamReader(TextReader,IDisposable):
 
     read or if the stream does not support seeking.
   """
-  pass
- def Read(self,buffer=None,index=None,count=None):
-  """
+        pass
+
+    def Read(self, buffer=None, index=None, count=None):
+        """
   Read(self: StreamReader,index: int,count: int) -> (int,Array[Char])
 
   
@@ -143,18 +149,22 @@ class StreamReader(TextReader,IDisposable):
 
     characters are available.
   """
-  pass
- def ReadAsync(self,buffer,index,count):
-  """ ReadAsync(self: StreamReader,buffer: Array[Char],index: int,count: int) -> Task[int] """
-  pass
- def ReadBlock(self,buffer,index,count):
-  """ ReadBlock(self: StreamReader,index: int,count: int) -> (int,Array[Char]) """
-  pass
- def ReadBlockAsync(self,buffer,index,count):
-  """ ReadBlockAsync(self: StreamReader,buffer: Array[Char],index: int,count: int) -> Task[int] """
-  pass
- def ReadLine(self):
-  """
+        pass
+
+    def ReadAsync(self, buffer, index, count):
+        """ ReadAsync(self: StreamReader,buffer: Array[Char],index: int,count: int) -> Task[int] """
+        pass
+
+    def ReadBlock(self, buffer, index, count):
+        """ ReadBlock(self: StreamReader,index: int,count: int) -> (int,Array[Char]) """
+        pass
+
+    def ReadBlockAsync(self, buffer, index, count):
+        """ ReadBlockAsync(self: StreamReader,buffer: Array[Char],index: int,count: int) -> Task[int] """
+        pass
+
+    def ReadLine(self):
+        """
   ReadLine(self: StreamReader) -> str
 
   
@@ -163,12 +173,14 @@ class StreamReader(TextReader,IDisposable):
 
    Returns: The next line from the input stream,or null if the end of the input stream is reached.
   """
-  pass
- def ReadLineAsync(self):
-  """ ReadLineAsync(self: StreamReader) -> Task[str] """
-  pass
- def ReadToEnd(self):
-  """
+        pass
+
+    def ReadLineAsync(self):
+        """ ReadLineAsync(self: StreamReader) -> Task[str] """
+        pass
+
+    def ReadToEnd(self):
+        """
   ReadToEnd(self: StreamReader) -> str
 
   
@@ -179,32 +191,37 @@ class StreamReader(TextReader,IDisposable):
 
     position is at the end of the stream,returns an empty string ("").
   """
-  pass
- def ReadToEndAsync(self):
-  """ ReadToEndAsync(self: StreamReader) -> Task[str] """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def ReadToEndAsync(self):
+        """ ReadToEndAsync(self: StreamReader) -> Task[str] """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,stream: Stream)
 
   __new__(cls: type,stream: Stream,detectEncodingFromByteOrderMarks: bool)
@@ -227,11 +244,15 @@ class StreamReader(TextReader,IDisposable):
 
   __new__(cls: type,path: str,encoding: Encoding,detectEncodingFromByteOrderMarks: bool,bufferSize: int)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- BaseStream=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the underlying stream.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    BaseStream = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the underlying stream.
 
 
 
@@ -241,8 +262,10 @@ Get: BaseStream(self: StreamReader) -> Stream
 
 """
 
- CurrentEncoding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the current character encoding that the current System.IO.StreamReader object is using.
+    CurrentEncoding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the current character encoding that the current System.IO.StreamReader object is using.
 
 
 
@@ -252,8 +275,10 @@ Get: CurrentEncoding(self: StreamReader) -> Encoding
 
 """
 
- EndOfStream=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the current stream position is at the end of the stream.
+    EndOfStream = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the current stream position is at the end of the stream.
 
 
 
@@ -263,6 +288,4 @@ Get: EndOfStream(self: StreamReader) -> bool
 
 """
 
-
- Null=None
-
+    Null = None

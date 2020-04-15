@@ -1,20 +1,22 @@
-class StringReader(TextReader,IDisposable):
- """
+class StringReader(TextReader, IDisposable):
+    """
  Implements a System.IO.TextReader that reads from a string.
 
  
 
  StringReader(s: str)
  """
- def Close(self):
-  """
+
+    def Close(self):
+        """
   Close(self: StringReader)
 
    Closes the System.IO.StringReader.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: StringReader,disposing: bool)
 
    Releases the unmanaged resources used by the System.IO.StringReader and optionally releases the 
@@ -27,9 +29,10 @@ class StringReader(TextReader,IDisposable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -60,9 +63,10 @@ class StringReader(TextReader,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def Peek(self):
-  """
+        pass
+
+    def Peek(self):
+        """
   Peek(self: StringReader) -> int
 
   
@@ -73,9 +77,10 @@ class StringReader(TextReader,IDisposable):
 
     or the stream does not support seeking.
   """
-  pass
- def Read(self,buffer=None,index=None,count=None):
-  """
+        pass
+
+    def Read(self, buffer=None, index=None, count=None):
+        """
   Read(self: StringReader,index: int,count: int) -> (int,Array[Char])
 
   
@@ -108,15 +113,18 @@ class StringReader(TextReader,IDisposable):
 
    Returns: The next character from the underlying string,or -1 if no more characters are available.
   """
-  pass
- def ReadAsync(self,buffer,index,count):
-  """ ReadAsync(self: StringReader,buffer: Array[Char],index: int,count: int) -> Task[int] """
-  pass
- def ReadBlockAsync(self,buffer,index,count):
-  """ ReadBlockAsync(self: StringReader,buffer: Array[Char],index: int,count: int) -> Task[int] """
-  pass
- def ReadLine(self):
-  """
+        pass
+
+    def ReadAsync(self, buffer, index, count):
+        """ ReadAsync(self: StringReader,buffer: Array[Char],index: int,count: int) -> Task[int] """
+        pass
+
+    def ReadBlockAsync(self, buffer, index, count):
+        """ ReadBlockAsync(self: StringReader,buffer: Array[Char],index: int,count: int) -> Task[int] """
+        pass
+
+    def ReadLine(self):
+        """
   ReadLine(self: StringReader) -> str
 
   
@@ -125,12 +133,14 @@ class StringReader(TextReader,IDisposable):
 
    Returns: The next line from the underlying string,or null if the end of the underlying string is reached.
   """
-  pass
- def ReadLineAsync(self):
-  """ ReadLineAsync(self: StringReader) -> Task[str] """
-  pass
- def ReadToEnd(self):
-  """
+        pass
+
+    def ReadLineAsync(self):
+        """ ReadLineAsync(self: StringReader) -> Task[str] """
+        pass
+
+    def ReadToEnd(self):
+        """
   ReadToEnd(self: StringReader) -> str
 
   
@@ -143,32 +153,38 @@ class StringReader(TextReader,IDisposable):
 
    Returns: The content from the current position to the end of the underlying string.
   """
-  pass
- def ReadToEndAsync(self):
-  """ ReadToEndAsync(self: StringReader) -> Task[str] """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def ReadToEndAsync(self):
+        """ ReadToEndAsync(self: StringReader) -> Task[str] """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,s):
-  """ __new__(cls: type,s: str) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, s):
+        """ __new__(cls: type,s: str) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass

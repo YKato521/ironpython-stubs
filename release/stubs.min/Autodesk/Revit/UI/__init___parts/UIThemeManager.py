@@ -1,8 +1,9 @@
 class UIThemeManager(object):
- """ Manager object for the UITheme class. """
- @staticmethod
- def GetThemeName(frameTheme):
-  """
+    """ Manager object for the UITheme class. """
+
+    @staticmethod
+    def GetThemeName(frameTheme):
+        """
   GetThemeName(frameTheme: UITheme) -> str
 
   
@@ -15,10 +16,10 @@ class UIThemeManager(object):
 
    Returns: The name of the theme.
   """
-  pass
- CurrentTheme=None
- DefaultTheme=None
- __all__=[
-  'GetThemeName',
- ]
+        pass
 
+    CurrentTheme = None
+    DefaultTheme = None
+    __all__ = [
+        "GetThemeName",
+    ]

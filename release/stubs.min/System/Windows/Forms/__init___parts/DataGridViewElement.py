@@ -1,20 +1,22 @@
 class DataGridViewElement(object):
- """
+    """
  Provides the base class for elements of a System.Windows.Forms.DataGridView control.
 
  
 
  DataGridViewElement()
  """
- def OnDataGridViewChanged(self,*args):
-  """
+
+    def OnDataGridViewChanged(self, *args):
+        """
   OnDataGridViewChanged(self: DataGridViewElement)
 
    Called when the element is associated with a different System.Windows.Forms.DataGridView.
   """
-  pass
- def RaiseCellClick(self,*args):
-  """
+        pass
+
+    def RaiseCellClick(self, *args):
+        """
   RaiseCellClick(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellClick event.
@@ -23,9 +25,10 @@ class DataGridViewElement(object):
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseCellContentClick(self,*args):
-  """
+        pass
+
+    def RaiseCellContentClick(self, *args):
+        """
   RaiseCellContentClick(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellContentClick event.
@@ -34,9 +37,10 @@ class DataGridViewElement(object):
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseCellContentDoubleClick(self,*args):
-  """
+        pass
+
+    def RaiseCellContentDoubleClick(self, *args):
+        """
   RaiseCellContentDoubleClick(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellContentDoubleClick event.
@@ -45,9 +49,10 @@ class DataGridViewElement(object):
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseCellValueChanged(self,*args):
-  """
+        pass
+
+    def RaiseCellValueChanged(self, *args):
+        """
   RaiseCellValueChanged(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellValueChanged event.
@@ -56,9 +61,10 @@ class DataGridViewElement(object):
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseDataError(self,*args):
-  """
+        pass
+
+    def RaiseDataError(self, *args):
+        """
   RaiseDataError(self: DataGridViewElement,e: DataGridViewDataErrorEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.DataError event.
@@ -67,9 +73,10 @@ class DataGridViewElement(object):
 
    e: A System.Windows.Forms.DataGridViewDataErrorEventArgs that contains the event data.
   """
-  pass
- def RaiseMouseWheel(self,*args):
-  """
+        pass
+
+    def RaiseMouseWheel(self, *args):
+        """
   RaiseMouseWheel(self: DataGridViewElement,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseWheel event.
@@ -78,9 +85,12 @@ class DataGridViewElement(object):
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- DataGridView=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Forms.DataGridView control associated with this element.
+        pass
+
+    DataGridView = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Windows.Forms.DataGridView control associated with this element.
 
 
 
@@ -90,8 +100,8 @@ Get: DataGridView(self: DataGridViewElement) -> DataGridView
 
 """
 
- State=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the user interface (UI) state of the element.
+    State = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the user interface (UI) state of the element.
 
 
 
@@ -100,5 +110,3 @@ Get: State(self: DataGridViewElement) -> DataGridViewElementStates
 
 
 """
-
-

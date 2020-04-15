@@ -1,13 +1,14 @@
-class RegistrationServices(object,IRegistrationServices):
- """
+class RegistrationServices(object, IRegistrationServices):
+    """
  Provides a set of services for registering and unregistering managed assemblies for use from COM.
 
  
 
  RegistrationServices()
  """
- def GetManagedCategoryGuid(self):
-  """
+
+    def GetManagedCategoryGuid(self):
+        """
   GetManagedCategoryGuid(self: RegistrationServices) -> Guid
 
   
@@ -16,9 +17,10 @@ class RegistrationServices(object,IRegistrationServices):
 
    Returns: The GUID of the COM category that contains the managed classes.
   """
-  pass
- def GetProgIdForType(self,type):
-  """
+        pass
+
+    def GetProgIdForType(self, type):
+        """
   GetProgIdForType(self: RegistrationServices,type: Type) -> str
 
   
@@ -31,9 +33,10 @@ class RegistrationServices(object,IRegistrationServices):
 
    Returns: The ProgID for the specified type.
   """
-  pass
- def GetRegistrableTypesInAssembly(self,assembly):
-  """
+        pass
+
+    def GetRegistrableTypesInAssembly(self, assembly):
+        """
   GetRegistrableTypesInAssembly(self: RegistrationServices,assembly: Assembly) -> Array[Type]
 
   
@@ -52,9 +55,10 @@ class RegistrationServices(object,IRegistrationServices):
 
    Returns: A System.Type array containing a list of classes in assembly.
   """
-  pass
- def RegisterAssembly(self,assembly,flags):
-  """
+        pass
+
+    def RegisterAssembly(self, assembly, flags):
+        """
   RegisterAssembly(self: RegistrationServices,assembly: Assembly,flags: AssemblyRegistrationFlags) -> bool
 
   
@@ -75,9 +79,10 @@ class RegistrationServices(object,IRegistrationServices):
 
     assembly contains no eligible types.
   """
-  pass
- def RegisterTypeForComClients(self,type,*__args):
-  """
+        pass
+
+    def RegisterTypeForComClients(self, type, *__args):
+        """
   RegisterTypeForComClients(self: RegistrationServices,type: Type,classContext: RegistrationClassContext,flags: RegistrationConnectionType) -> int
 
   
@@ -114,9 +119,10 @@ class RegistrationServices(object,IRegistrationServices):
 
    g: The System.Guid used to register the specified type.
   """
-  pass
- def TypeRepresentsComType(self,type):
-  """
+        pass
+
+    def TypeRepresentsComType(self, type):
+        """
   TypeRepresentsComType(self: RegistrationServices,type: Type) -> bool
 
   
@@ -139,9 +145,10 @@ class RegistrationServices(object,IRegistrationServices):
 
     same GUID as the parent; otherwise false.
   """
-  pass
- def TypeRequiresRegistration(self,type):
-  """
+        pass
+
+    def TypeRequiresRegistration(self, type):
+        """
   TypeRequiresRegistration(self: RegistrationServices,type: Type) -> bool
 
   
@@ -154,9 +161,10 @@ class RegistrationServices(object,IRegistrationServices):
 
    Returns: true if the type must be registered for use from COM; otherwise false.
   """
-  pass
- def UnregisterAssembly(self,assembly):
-  """
+        pass
+
+    def UnregisterAssembly(self, assembly):
+        """
   UnregisterAssembly(self: RegistrationServices,assembly: Assembly) -> bool
 
   
@@ -171,9 +179,10 @@ class RegistrationServices(object,IRegistrationServices):
 
     assembly contains no eligible types.
   """
-  pass
- def UnregisterTypeForComClients(self,cookie):
-  """
+        pass
+
+    def UnregisterTypeForComClients(self, cookie):
+        """
   UnregisterTypeForComClients(self: RegistrationServices,cookie: int)
 
    Removes references to a type registered with the 
@@ -196,10 +205,12 @@ class RegistrationServices(object,IRegistrationServices):
 
     ctionType) method overload.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass

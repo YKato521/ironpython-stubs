@@ -8,113 +8,139 @@
 # no functions
 # classes
 
+
 class ModelHistory(object):
- # no doc
- @staticmethod
- def GetCurrentModificationStamp():
-  """ GetCurrentModificationStamp() -> ModificationStamp """
-  pass
- @staticmethod
- def GetDeletedObjects(ModStamp):
-  """ GetDeletedObjects(ModStamp: ModificationStamp) -> ModelObjectEnumerator """
-  pass
- @staticmethod
- def GetDeletedObjectsWithType(ModStamp,Enum):
-  """ GetDeletedObjectsWithType(ModStamp: ModificationStamp,Enum: ModelObjectEnum) -> ModelObjectEnumerator """
-  pass
- @staticmethod
- def GetLocalChanges():
-  """ GetLocalChanges() -> ModificationInfo """
-  pass
- @staticmethod
- def GetModifications(Name,*__args):
-  """
-  GetModifications(Name: str,ObjectTypes: IEnumerable[ModelObjectEnum],PrevStamp: ModificationStamp) -> ModificationInfo
+    # no doc
+    @staticmethod
+    def GetCurrentModificationStamp():
+        """ GetCurrentModificationStamp() -> ModificationStamp """
+        pass
+
+    @staticmethod
+    def GetDeletedObjects(ModStamp):
+        """ GetDeletedObjects(ModStamp: ModificationStamp) -> ModelObjectEnumerator """
+        pass
+
+    @staticmethod
+    def GetDeletedObjectsWithType(ModStamp, Enum):
+        """ GetDeletedObjectsWithType(ModStamp: ModificationStamp,Enum: ModelObjectEnum) -> ModelObjectEnumerator """
+        pass
+
+    @staticmethod
+    def GetLocalChanges():
+        """ GetLocalChanges() -> ModificationInfo """
+        pass
+
+    @staticmethod
+    def GetModifications(Name, *__args):
+        """
+  GetModifications(Name: str,ObjectTypes: IEnumerable[ModelObjectEnum],PrevStamp: ModificationStamp) -> ModificationInfo
+
   GetModifications(Name: str,PrevStamp: ModificationStamp) -> ModificationInfo
   """
-  pass
- @staticmethod
- def GetModifiedObjects(ModStamp):
-  """ GetModifiedObjects(ModStamp: ModificationStamp) -> ModelObjectEnumerator """
-  pass
- @staticmethod
- def GetModifiedObjectsWithType(ModStamp,Enum):
-  """ GetModifiedObjectsWithType(ModStamp: ModificationStamp,Enum: ModelObjectEnum) -> ModelObjectEnumerator """
-  pass
- @staticmethod
- def GetNotSharedObjects():
-  """ GetNotSharedObjects() -> ModelObjectEnumerator """
-  pass
- @staticmethod
- def TakeModifications(Name,*__args):
-  """
-  TakeModifications(Name: str,ObjectTypes: IEnumerable[ModelObjectEnum],PrevStamp: ModificationStamp) -> ModificationInfo
+        pass
+
+    @staticmethod
+    def GetModifiedObjects(ModStamp):
+        """ GetModifiedObjects(ModStamp: ModificationStamp) -> ModelObjectEnumerator """
+        pass
+
+    @staticmethod
+    def GetModifiedObjectsWithType(ModStamp, Enum):
+        """ GetModifiedObjectsWithType(ModStamp: ModificationStamp,Enum: ModelObjectEnum) -> ModelObjectEnumerator """
+        pass
+
+    @staticmethod
+    def GetNotSharedObjects():
+        """ GetNotSharedObjects() -> ModelObjectEnumerator """
+        pass
+
+    @staticmethod
+    def TakeModifications(Name, *__args):
+        """
+  TakeModifications(Name: str,ObjectTypes: IEnumerable[ModelObjectEnum],PrevStamp: ModificationStamp) -> ModificationInfo
+
   TakeModifications(Name: str,PrevStamp: ModificationStamp) -> ModificationInfo
   """
-  pass
- @staticmethod
- def UpdateModificationStampToLatest(modificationStampKey):
-  """ UpdateModificationStampToLatest(modificationStampKey: str) """
-  pass
- __all__=[
-  '__reduce_ex__',
-  'GetCurrentModificationStamp',
-  'GetDeletedObjects',
-  'GetDeletedObjectsWithType',
-  'GetLocalChanges',
-  'GetModifications',
-  'GetModifiedObjects',
-  'GetModifiedObjectsWithType',
-  'GetNotSharedObjects',
-  'TakeModifications',
-  'UpdateModificationStampToLatest',
- ]
+        pass
+
+    @staticmethod
+    def UpdateModificationStampToLatest(modificationStampKey):
+        """ UpdateModificationStampToLatest(modificationStampKey: str) """
+        pass
+
+    __all__ = [
+        "__reduce_ex__",
+        "GetCurrentModificationStamp",
+        "GetDeletedObjects",
+        "GetDeletedObjectsWithType",
+        "GetLocalChanges",
+        "GetModifications",
+        "GetModifiedObjects",
+        "GetModifiedObjectsWithType",
+        "GetNotSharedObjects",
+        "TakeModifications",
+        "UpdateModificationStampToLatest",
+    ]
 
 
 class ModificationInfo(object):
- # no doc
- Deleted=None
- Modified=None
- ModifiedWithInfo=None
+    # no doc
+    Deleted = None
+    Modified = None
+    ModifiedWithInfo = None
 
 
 class ModificationStamp(object):
- """
- ModificationStamp()
+    """
+ ModificationStamp()
+
  ModificationStamp(LocalStamp: int,ServerStamp: int)
  """
- @staticmethod
- def __new__(self,LocalStamp=None,ServerStamp=None):
-  """
-  __new__(cls: type)
+
+    @staticmethod
+    def __new__(self, LocalStamp=None, ServerStamp=None):
+        """
+  __new__(cls: type)
+
   __new__(cls: type,LocalStamp: int,ServerStamp: int)
   """
-  pass
- Guid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Guid(self: ModificationStamp) -> str
-
+        pass
+
+    Guid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Guid(self: ModificationStamp) -> str
+
+
+
 """
 
- LocalStamp=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: LocalStamp(self: ModificationStamp) -> int
-
-Set: LocalStamp(self: ModificationStamp)=value
+    LocalStamp = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: LocalStamp(self: ModificationStamp) -> int
+
+
+
+Set: LocalStamp(self: ModificationStamp)=value
+
 """
 
- ServerStamp=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: ServerStamp(self: ModificationStamp) -> int
-
-Set: ServerStamp(self: ModificationStamp)=value
-"""
+    ServerStamp = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: ServerStamp(self: ModificationStamp) -> int
 
+
+
+Set: ServerStamp(self: ModificationStamp)=value
+
+"""
 
 
 class ModifiedObjectInfo(object):
- # no doc
- IsAttributeChanged=None
- IsCreated=None
- IsModified=None
- IsNumberingChanged=None
- ModelObject=None
-
-
+    # no doc
+    IsAttributeChanged = None
+    IsCreated = None
+    IsModified = None
+    IsNumberingChanged = None
+    ModelObject = None

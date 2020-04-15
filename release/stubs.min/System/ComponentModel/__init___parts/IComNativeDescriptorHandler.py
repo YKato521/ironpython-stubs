@@ -1,7 +1,8 @@
 class IComNativeDescriptorHandler:
- """ Provides a top-level mapping layer between a COM object and a System.ComponentModel.TypeDescriptor. """
- def GetAttributes(self,component):
-  """
+    """ Provides a top-level mapping layer between a COM object and a System.ComponentModel.TypeDescriptor. """
+
+    def GetAttributes(self, component):
+        """
   GetAttributes(self: IComNativeDescriptorHandler,component: object) -> AttributeCollection
 
   
@@ -14,9 +15,10 @@ class IComNativeDescriptorHandler:
 
    Returns: A collection of attributes for component.
   """
-  pass
- def GetClassName(self,component):
-  """
+        pass
+
+    def GetClassName(self, component):
+        """
   GetClassName(self: IComNativeDescriptorHandler,component: object) -> str
 
   
@@ -29,9 +31,10 @@ class IComNativeDescriptorHandler:
 
    Returns: The name of the class that corresponds with component.
   """
-  pass
- def GetConverter(self,component):
-  """
+        pass
+
+    def GetConverter(self, component):
+        """
   GetConverter(self: IComNativeDescriptorHandler,component: object) -> TypeConverter
 
   
@@ -44,9 +47,10 @@ class IComNativeDescriptorHandler:
 
    Returns: The System.ComponentModel.TypeConverter for component.
   """
-  pass
- def GetDefaultEvent(self,component):
-  """
+        pass
+
+    def GetDefaultEvent(self, component):
+        """
   GetDefaultEvent(self: IComNativeDescriptorHandler,component: object) -> EventDescriptor
 
   
@@ -59,9 +63,10 @@ class IComNativeDescriptorHandler:
 
    Returns: An System.ComponentModel.EventDescriptor that represents component's default event.
   """
-  pass
- def GetDefaultProperty(self,component):
-  """
+        pass
+
+    def GetDefaultProperty(self, component):
+        """
   GetDefaultProperty(self: IComNativeDescriptorHandler,component: object) -> PropertyDescriptor
 
   
@@ -74,9 +79,10 @@ class IComNativeDescriptorHandler:
 
    Returns: A System.ComponentModel.PropertyDescriptor that represents component's default property.
   """
-  pass
- def GetEditor(self,component,baseEditorType):
-  """
+        pass
+
+    def GetEditor(self, component, baseEditorType):
+        """
   GetEditor(self: IComNativeDescriptorHandler,component: object,baseEditorType: Type) -> object
 
   
@@ -91,9 +97,10 @@ class IComNativeDescriptorHandler:
 
    Returns: The editor for component.
   """
-  pass
- def GetEvents(self,component,attributes=None):
-  """
+        pass
+
+    def GetEvents(self, component, attributes=None):
+        """
   GetEvents(self: IComNativeDescriptorHandler,component: object,attributes: Array[Attribute]) -> EventDescriptorCollection
 
   
@@ -120,9 +127,10 @@ class IComNativeDescriptorHandler:
 
    Returns: A collection of event descriptors for component.
   """
-  pass
- def GetName(self,component):
-  """
+        pass
+
+    def GetName(self, component):
+        """
   GetName(self: IComNativeDescriptorHandler,component: object) -> str
 
   
@@ -135,9 +143,10 @@ class IComNativeDescriptorHandler:
 
    Returns: The name of component.
   """
-  pass
- def GetProperties(self,component,attributes):
-  """
+        pass
+
+    def GetProperties(self, component, attributes):
+        """
   GetProperties(self: IComNativeDescriptorHandler,component: object,attributes: Array[Attribute]) -> PropertyDescriptorCollection
 
   
@@ -152,9 +161,10 @@ class IComNativeDescriptorHandler:
 
    Returns: A collection of property descriptors for component.
   """
-  pass
- def GetPropertyValue(self,component,*__args):
-  """
+        pass
+
+    def GetPropertyValue(self, component, *__args):
+        """
   GetPropertyValue(self: IComNativeDescriptorHandler,component: object,dispid: int,success: bool) -> (object,bool)
 
   
@@ -187,7 +197,8 @@ class IComNativeDescriptorHandler:
 
    Returns: The value of the property that has the specified name.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

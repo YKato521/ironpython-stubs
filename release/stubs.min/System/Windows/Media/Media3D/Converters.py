@@ -8,16 +8,18 @@
 # no functions
 # classes
 
+
 class Matrix3DValueSerializer(ValueSerializer):
- """
+    """
  Converts instances of System.String to and from instances of System.Windows.Media.Media3D.Matrix3D.
 
  
 
  Matrix3DValueSerializer()
  """
- def CanConvertFromString(self,value,context):
-  """
+
+    def CanConvertFromString(self, value, context):
+        """
   CanConvertFromString(self: Matrix3DValueSerializer,value: str,context: IValueSerializerContext) -> bool
 
   
@@ -36,9 +38,10 @@ class Matrix3DValueSerializer(ValueSerializer):
 
    Returns: true if the value can be converted; otherwise,false.
   """
-  pass
- def CanConvertToString(self,value,context):
-  """
+        pass
+
+    def CanConvertToString(self, value, context):
+        """
   CanConvertToString(self: Matrix3DValueSerializer,value: object,context: IValueSerializerContext) -> bool
 
   
@@ -57,9 +60,10 @@ class Matrix3DValueSerializer(ValueSerializer):
 
    Returns: true if value can be converted into a System.String; otherwise,false.
   """
-  pass
- def ConvertFromString(self,value,context):
-  """
+        pass
+
+    def ConvertFromString(self, value, context):
+        """
   ConvertFromString(self: Matrix3DValueSerializer,value: str,context: IValueSerializerContext) -> object
 
   
@@ -74,9 +78,10 @@ class Matrix3DValueSerializer(ValueSerializer):
 
    Returns: A new instance of System.Windows.Media.Media3D.Matrix3D based on the supplied value.
   """
-  pass
- def ConvertToString(self,value,context):
-  """
+        pass
+
+    def ConvertToString(self, value, context):
+        """
   ConvertToString(self: Matrix3DValueSerializer,value: object,context: IValueSerializerContext) -> str
 
   
@@ -91,18 +96,20 @@ class Matrix3DValueSerializer(ValueSerializer):
 
    Returns: A System.String representation of the supplied System.Windows.Media.Media3D.Matrix3D object.
   """
-  pass
+        pass
+
 
 class Point3DCollectionValueSerializer(ValueSerializer):
- """
+    """
  Converts instances of System.String to and from instances of System.Windows.Media.Media3D.Point3DCollection.
 
  
 
  Point3DCollectionValueSerializer()
  """
- def CanConvertFromString(self,value,context):
-  """
+
+    def CanConvertFromString(self, value, context):
+        """
   CanConvertFromString(self: Point3DCollectionValueSerializer,value: str,context: IValueSerializerContext) -> bool
 
   
@@ -121,9 +128,10 @@ class Point3DCollectionValueSerializer(ValueSerializer):
 
    Returns: true if the value can be converted; otherwise,false.
   """
-  pass
- def CanConvertToString(self,value,context):
-  """
+        pass
+
+    def CanConvertToString(self, value, context):
+        """
   CanConvertToString(self: Point3DCollectionValueSerializer,value: object,context: IValueSerializerContext) -> bool
 
   
@@ -142,9 +150,10 @@ class Point3DCollectionValueSerializer(ValueSerializer):
 
    Returns: true if value can be converted into a System.String; otherwise,false.
   """
-  pass
- def ConvertFromString(self,value,context):
-  """
+        pass
+
+    def ConvertFromString(self, value, context):
+        """
   ConvertFromString(self: Point3DCollectionValueSerializer,value: str,context: IValueSerializerContext) -> object
 
   
@@ -159,9 +168,10 @@ class Point3DCollectionValueSerializer(ValueSerializer):
 
    Returns: A new instance of System.Windows.Media.Media3D.Point3DCollection based on the supplied value.
   """
-  pass
- def ConvertToString(self,value,context):
-  """
+        pass
+
+    def ConvertToString(self, value, context):
+        """
   ConvertToString(self: Point3DCollectionValueSerializer,value: object,context: IValueSerializerContext) -> str
 
   
@@ -178,18 +188,20 @@ class Point3DCollectionValueSerializer(ValueSerializer):
 
     object.
   """
-  pass
+        pass
+
 
 class Point3DValueSerializer(ValueSerializer):
- """
+    """
  Converts instances of System.String to and from instances of System.Windows.Media.Media3D.Point3D.
 
  
 
  Point3DValueSerializer()
  """
- def CanConvertFromString(self,value,context):
-  """
+
+    def CanConvertFromString(self, value, context):
+        """
   CanConvertFromString(self: Point3DValueSerializer,value: str,context: IValueSerializerContext) -> bool
 
   
@@ -208,9 +220,10 @@ class Point3DValueSerializer(ValueSerializer):
 
    Returns: true if the value can be converted; otherwise,false.
   """
-  pass
- def CanConvertToString(self,value,context):
-  """
+        pass
+
+    def CanConvertToString(self, value, context):
+        """
   CanConvertToString(self: Point3DValueSerializer,value: object,context: IValueSerializerContext) -> bool
 
   
@@ -229,9 +242,10 @@ class Point3DValueSerializer(ValueSerializer):
 
    Returns: true if value can be converted into a System.String; otherwise,false.
   """
-  pass
- def ConvertFromString(self,value,context):
-  """
+        pass
+
+    def ConvertFromString(self, value, context):
+        """
   ConvertFromString(self: Point3DValueSerializer,value: str,context: IValueSerializerContext) -> object
 
   
@@ -246,9 +260,10 @@ class Point3DValueSerializer(ValueSerializer):
 
    Returns: A new instance of System.Windows.Media.Media3D.Point3D based on the supplied value.
   """
-  pass
- def ConvertToString(self,value,context):
-  """
+        pass
+
+    def ConvertToString(self, value, context):
+        """
   ConvertToString(self: Point3DValueSerializer,value: object,context: IValueSerializerContext) -> str
 
   
@@ -263,18 +278,20 @@ class Point3DValueSerializer(ValueSerializer):
 
    Returns: A System.String representation of the supplied System.Windows.Media.Media3D.Point3D object.
   """
-  pass
+        pass
+
 
 class Point4DValueSerializer(ValueSerializer):
- """
+    """
  Converts instances of System.String to and from instances of System.Windows.Media.Media3D.Point4D.
 
  
 
  Point4DValueSerializer()
  """
- def CanConvertFromString(self,value,context):
-  """
+
+    def CanConvertFromString(self, value, context):
+        """
   CanConvertFromString(self: Point4DValueSerializer,value: str,context: IValueSerializerContext) -> bool
 
   
@@ -293,9 +310,10 @@ class Point4DValueSerializer(ValueSerializer):
 
    Returns: true if the value can be converted; otherwise,false.
   """
-  pass
- def CanConvertToString(self,value,context):
-  """
+        pass
+
+    def CanConvertToString(self, value, context):
+        """
   CanConvertToString(self: Point4DValueSerializer,value: object,context: IValueSerializerContext) -> bool
 
   
@@ -314,9 +332,10 @@ class Point4DValueSerializer(ValueSerializer):
 
    Returns: true if value can be converted into a System.String; otherwise,false.
   """
-  pass
- def ConvertFromString(self,value,context):
-  """
+        pass
+
+    def ConvertFromString(self, value, context):
+        """
   ConvertFromString(self: Point4DValueSerializer,value: str,context: IValueSerializerContext) -> object
 
   
@@ -331,9 +350,10 @@ class Point4DValueSerializer(ValueSerializer):
 
    Returns: A new instance of System.Windows.Media.Media3D.Point4D based on the supplied value.
   """
-  pass
- def ConvertToString(self,value,context):
-  """
+        pass
+
+    def ConvertToString(self, value, context):
+        """
   ConvertToString(self: Point4DValueSerializer,value: object,context: IValueSerializerContext) -> str
 
   
@@ -348,18 +368,20 @@ class Point4DValueSerializer(ValueSerializer):
 
    Returns: A System.String representation of the supplied System.Windows.Media.Media3D.Point4D object.
   """
-  pass
+        pass
+
 
 class QuaternionValueSerializer(ValueSerializer):
- """
+    """
  Converts instances of System.String to and from instances of System.Windows.Media.Media3D.Quaternion.
 
  
 
  QuaternionValueSerializer()
  """
- def CanConvertFromString(self,value,context):
-  """
+
+    def CanConvertFromString(self, value, context):
+        """
   CanConvertFromString(self: QuaternionValueSerializer,value: str,context: IValueSerializerContext) -> bool
 
   
@@ -378,9 +400,10 @@ class QuaternionValueSerializer(ValueSerializer):
 
    Returns: true if the value can be converted; otherwise,false.
   """
-  pass
- def CanConvertToString(self,value,context):
-  """
+        pass
+
+    def CanConvertToString(self, value, context):
+        """
   CanConvertToString(self: QuaternionValueSerializer,value: object,context: IValueSerializerContext) -> bool
 
   
@@ -399,9 +422,10 @@ class QuaternionValueSerializer(ValueSerializer):
 
    Returns: true if value can be converted into a System.String; otherwise,false.
   """
-  pass
- def ConvertFromString(self,value,context):
-  """
+        pass
+
+    def ConvertFromString(self, value, context):
+        """
   ConvertFromString(self: QuaternionValueSerializer,value: str,context: IValueSerializerContext) -> object
 
   
@@ -416,9 +440,10 @@ class QuaternionValueSerializer(ValueSerializer):
 
    Returns: A new instance of System.Windows.Media.Media3D.Quaternion based on the supplied value.
   """
-  pass
- def ConvertToString(self,value,context):
-  """
+        pass
+
+    def ConvertToString(self, value, context):
+        """
   ConvertToString(self: QuaternionValueSerializer,value: object,context: IValueSerializerContext) -> str
 
   
@@ -433,18 +458,20 @@ class QuaternionValueSerializer(ValueSerializer):
 
    Returns: A System.String representation of the supplied System.Windows.Media.Media3D.Quaternion object.
   """
-  pass
+        pass
+
 
 class Rect3DValueSerializer(ValueSerializer):
- """
+    """
  Converts instances of System.String to and from instances of System.Windows.Media.Media3D.Rect3D.
 
  
 
  Rect3DValueSerializer()
  """
- def CanConvertFromString(self,value,context):
-  """
+
+    def CanConvertFromString(self, value, context):
+        """
   CanConvertFromString(self: Rect3DValueSerializer,value: str,context: IValueSerializerContext) -> bool
 
   
@@ -463,9 +490,10 @@ class Rect3DValueSerializer(ValueSerializer):
 
    Returns: true if the value can be converted; otherwise,false.
   """
-  pass
- def CanConvertToString(self,value,context):
-  """
+        pass
+
+    def CanConvertToString(self, value, context):
+        """
   CanConvertToString(self: Rect3DValueSerializer,value: object,context: IValueSerializerContext) -> bool
 
   
@@ -484,9 +512,10 @@ class Rect3DValueSerializer(ValueSerializer):
 
    Returns: true if value can be converted into a System.String; otherwise,false.
   """
-  pass
- def ConvertFromString(self,value,context):
-  """
+        pass
+
+    def ConvertFromString(self, value, context):
+        """
   ConvertFromString(self: Rect3DValueSerializer,value: str,context: IValueSerializerContext) -> object
 
   
@@ -501,9 +530,10 @@ class Rect3DValueSerializer(ValueSerializer):
 
    Returns: A new instance of System.Windows.Media.Media3D.Rect3D based on the supplied value.
   """
-  pass
- def ConvertToString(self,value,context):
-  """
+        pass
+
+    def ConvertToString(self, value, context):
+        """
   ConvertToString(self: Rect3DValueSerializer,value: object,context: IValueSerializerContext) -> str
 
   
@@ -518,18 +548,20 @@ class Rect3DValueSerializer(ValueSerializer):
 
    Returns: A System.String representation of the supplied System.Windows.Media.Media3D.Rect3D object.
   """
-  pass
+        pass
+
 
 class Size3DValueSerializer(ValueSerializer):
- """
+    """
  Converts instances of System.String to and from instances of System.Windows.Media.Media3D.Size3D.
 
  
 
  Size3DValueSerializer()
  """
- def CanConvertFromString(self,value,context):
-  """
+
+    def CanConvertFromString(self, value, context):
+        """
   CanConvertFromString(self: Size3DValueSerializer,value: str,context: IValueSerializerContext) -> bool
 
   
@@ -548,9 +580,10 @@ class Size3DValueSerializer(ValueSerializer):
 
    Returns: true if the value can be converted; otherwise,false.
   """
-  pass
- def CanConvertToString(self,value,context):
-  """
+        pass
+
+    def CanConvertToString(self, value, context):
+        """
   CanConvertToString(self: Size3DValueSerializer,value: object,context: IValueSerializerContext) -> bool
 
   
@@ -569,9 +602,10 @@ class Size3DValueSerializer(ValueSerializer):
 
    Returns: true if value can be converted into a System.String; otherwise,false.
   """
-  pass
- def ConvertFromString(self,value,context):
-  """
+        pass
+
+    def ConvertFromString(self, value, context):
+        """
   ConvertFromString(self: Size3DValueSerializer,value: str,context: IValueSerializerContext) -> object
 
   
@@ -586,9 +620,10 @@ class Size3DValueSerializer(ValueSerializer):
 
    Returns: A new instance of System.Windows.Media.Media3D.Size3D based on the supplied value.
   """
-  pass
- def ConvertToString(self,value,context):
-  """
+        pass
+
+    def ConvertToString(self, value, context):
+        """
   ConvertToString(self: Size3DValueSerializer,value: object,context: IValueSerializerContext) -> str
 
   
@@ -603,18 +638,20 @@ class Size3DValueSerializer(ValueSerializer):
 
    Returns: A System.String representation of the supplied System.Windows.Media.Media3D.Size3D object.
   """
-  pass
+        pass
+
 
 class Vector3DCollectionValueSerializer(ValueSerializer):
- """
+    """
  Converts instances of System.String to and from instances of System.Windows.Media.Media3D.Vector3DCollection.
 
  
 
  Vector3DCollectionValueSerializer()
  """
- def CanConvertFromString(self,value,context):
-  """
+
+    def CanConvertFromString(self, value, context):
+        """
   CanConvertFromString(self: Vector3DCollectionValueSerializer,value: str,context: IValueSerializerContext) -> bool
 
   
@@ -633,9 +670,10 @@ class Vector3DCollectionValueSerializer(ValueSerializer):
 
    Returns: true if the value can be converted; otherwise,false.
   """
-  pass
- def CanConvertToString(self,value,context):
-  """
+        pass
+
+    def CanConvertToString(self, value, context):
+        """
   CanConvertToString(self: Vector3DCollectionValueSerializer,value: object,context: IValueSerializerContext) -> bool
 
   
@@ -654,9 +692,10 @@ class Vector3DCollectionValueSerializer(ValueSerializer):
 
    Returns: true if value can be converted into a System.String; otherwise,false.
   """
-  pass
- def ConvertFromString(self,value,context):
-  """
+        pass
+
+    def ConvertFromString(self, value, context):
+        """
   ConvertFromString(self: Vector3DCollectionValueSerializer,value: str,context: IValueSerializerContext) -> object
 
   
@@ -671,9 +710,10 @@ class Vector3DCollectionValueSerializer(ValueSerializer):
 
    Returns: A new instance of System.Windows.Media.Media3D.Vector3DCollection based on the supplied value.
   """
-  pass
- def ConvertToString(self,value,context):
-  """
+        pass
+
+    def ConvertToString(self, value, context):
+        """
   ConvertToString(self: Vector3DCollectionValueSerializer,value: object,context: IValueSerializerContext) -> str
 
   
@@ -690,18 +730,20 @@ class Vector3DCollectionValueSerializer(ValueSerializer):
 
     object.
   """
-  pass
+        pass
+
 
 class Vector3DValueSerializer(ValueSerializer):
- """
+    """
  Converts instances of System.String to and from instances of System.Windows.Media.Media3D.Vector3D.
 
  
 
  Vector3DValueSerializer()
  """
- def CanConvertFromString(self,value,context):
-  """
+
+    def CanConvertFromString(self, value, context):
+        """
   CanConvertFromString(self: Vector3DValueSerializer,value: str,context: IValueSerializerContext) -> bool
 
   
@@ -720,9 +762,10 @@ class Vector3DValueSerializer(ValueSerializer):
 
    Returns: true if the value can be converted; otherwise,false.
   """
-  pass
- def CanConvertToString(self,value,context):
-  """
+        pass
+
+    def CanConvertToString(self, value, context):
+        """
   CanConvertToString(self: Vector3DValueSerializer,value: object,context: IValueSerializerContext) -> bool
 
   
@@ -741,9 +784,10 @@ class Vector3DValueSerializer(ValueSerializer):
 
    Returns: true if value can be converted into a System.String; otherwise,false.
   """
-  pass
- def ConvertFromString(self,value,context):
-  """
+        pass
+
+    def ConvertFromString(self, value, context):
+        """
   ConvertFromString(self: Vector3DValueSerializer,value: str,context: IValueSerializerContext) -> object
 
   
@@ -758,9 +802,10 @@ class Vector3DValueSerializer(ValueSerializer):
 
    Returns: A new instance of System.Windows.Media.Media3D.Vector3D based on the supplied value.
   """
-  pass
- def ConvertToString(self,value,context):
-  """
+        pass
+
+    def ConvertToString(self, value, context):
+        """
   ConvertToString(self: Vector3DValueSerializer,value: object,context: IValueSerializerContext) -> str
 
   
@@ -775,5 +820,4 @@ class Vector3DValueSerializer(ValueSerializer):
 
    Returns: A System.String representation of the supplied System.Windows.Media.Media3D.Vector3D object.
   """
-  pass
-
+        pass

@@ -1,7 +1,8 @@
 class IDataObject:
- """ Provides a format-independent mechanism for transferring data. """
- def GetData(self,format,autoConvert=None):
-  """
+    """ Provides a format-independent mechanism for transferring data. """
+
+    def GetData(self, format, autoConvert=None):
+        """
   GetData(self: IDataObject,format: Type) -> object
 
   
@@ -48,9 +49,10 @@ class IDataObject:
 
    Returns: The data associated with the specified format,or null.
   """
-  pass
- def GetDataPresent(self,format,autoConvert=None):
-  """
+        pass
+
+    def GetDataPresent(self, format, autoConvert=None):
+        """
   GetDataPresent(self: IDataObject,format: Type) -> bool
 
   
@@ -117,9 +119,10 @@ class IDataObject:
 
    Returns: true if the data is in,or can be converted to,the specified format; otherwise,false.
   """
-  pass
- def GetFormats(self,autoConvert=None):
-  """
+        pass
+
+    def GetFormats(self, autoConvert=None):
+        """
   GetFormats(self: IDataObject) -> Array[str]
 
   
@@ -160,9 +163,10 @@ class IDataObject:
 
     stored in this object.
   """
-  pass
- def SetData(self,*__args):
-  """
+        pass
+
+    def SetData(self, *__args):
+        """
   SetData(self: IDataObject,format: Type,data: object)
 
    Stores the specified data and its associated class type in this instance.
@@ -211,7 +215,8 @@ class IDataObject:
 
    data: The data to store.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

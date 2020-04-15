@@ -8,38 +8,42 @@
 # no functions
 # classes
 
+
 class CloudPoint(object):
- """
+    """
  Represents a point obtained from a Point cloud.
 
  
 
  CloudPoint(x: Single,y: Single,z: Single,color: int)
  """
- @staticmethod
- def __new__(self,x,y,z,color):
-  """
+
+    @staticmethod
+    def __new__(self, x, y, z, color):
+        """
   __new__[CloudPoint]() -> CloudPoint
 
   
 
   __new__(cls: type,x: Single,y: Single,z: Single,color: int)
   """
-  pass
- Color=None
- X=None
- Y=None
- Z=None
+        pass
+
+    Color = None
+    X = None
+    Y = None
+    Z = None
 
 
 class IPointCloudAccess:
- """
+    """
  An interface that provides functionality for working with an individual
 
     Point Cloud.
  """
- def CreatePointSetIterator(self,rFilter,*__args):
-  """
+
+    def CreatePointSetIterator(self, rFilter, *__args):
+        """
   CreatePointSetIterator(self: IPointCloudAccess,rFilter: PointCloudFilter,viewId: ElementId) -> IPointSetIterator
 
   
@@ -118,16 +122,18 @@ class IPointCloudAccess:
 
    Returns: The newly created iterator.
   """
-  pass
- def Free(self):
-  """
+        pass
+
+    def Free(self):
+        """
   Free(self: IPointCloudAccess)
 
    Completes the lifetime of the object providing this interface.
   """
-  pass
- def GetColorEncoding(self):
-  """
+        pass
+
+    def GetColorEncoding(self):
+        """
   GetColorEncoding(self: IPointCloudAccess) -> PointCloudColorEncoding
 
   
@@ -136,9 +142,10 @@ class IPointCloudAccess:
 
    Returns: The encoding.
   """
-  pass
- def GetExtent(self):
-  """
+        pass
+
+    def GetExtent(self):
+        """
   GetExtent(self: IPointCloudAccess) -> Outline
 
   
@@ -153,9 +160,10 @@ class IPointCloudAccess:
 
    Returns: The bounding box of the point cloud.
   """
-  pass
- def GetName(self):
-  """
+        pass
+
+    def GetName(self):
+        """
   GetName(self: IPointCloudAccess) -> str
 
   
@@ -174,9 +182,10 @@ class IPointCloudAccess:
 
    Returns: The name of the point cloud for Revit's user interface.
   """
-  pass
- def GetOffset(self):
-  """
+        pass
+
+    def GetOffset(self):
+        """
   GetOffset(self: IPointCloudAccess) -> XYZ
 
   
@@ -185,9 +194,10 @@ class IPointCloudAccess:
 
    Returns: The offset vector of this point cloud's coordinate system.
   """
-  pass
- def GetUnitsToFeetConversionFactor(self):
-  """
+        pass
+
+    def GetUnitsToFeetConversionFactor(self):
+        """
   GetUnitsToFeetConversionFactor(self: IPointCloudAccess) -> float
 
   
@@ -202,9 +212,10 @@ class IPointCloudAccess:
 
     feet.
   """
-  pass
- def ReadPoints(self,rFilter,viewId,buffer,nBufferSize):
-  """
+        pass
+
+    def ReadPoints(self, rFilter, viewId, buffer, nBufferSize):
+        """
   ReadPoints(self: IPointCloudAccess,rFilter: PointCloudFilter,viewId: ElementId,buffer: IntPtr,nBufferSize: int) -> int
 
   
@@ -255,15 +266,18 @@ class IPointCloudAccess:
 
     filter criteria,return 0.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
 
 class IPointCloudEngine:
- """ An interface that controls the behavior of the link from Revit to a custom Point Cloud Engine. """
- def CreatePointCloudAccess(self,identifier):
-  """
+    """ An interface that controls the behavior of the link from Revit to a custom Point Cloud Engine. """
+
+    def CreatePointCloudAccess(self, identifier):
+        """
   CreatePointCloudAccess(self: IPointCloudEngine,identifier: str) -> IPointCloudAccess
 
   
@@ -296,31 +310,36 @@ class IPointCloudEngine:
 
     cloud for its features.
   """
-  pass
- def Free(self):
-  """
+        pass
+
+    def Free(self):
+        """
   Free(self: IPointCloudEngine)
 
    Revit will call this method when done using the engine.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
 
 class IPointSetIterator:
- """ An interface that Revit will call when iterating through sets of points on the engine. """
- def Free(self):
-  """
+    """ An interface that Revit will call when iterating through sets of points on the engine. """
+
+    def Free(self):
+        """
   Free(self: IPointSetIterator)
 
    Use this method to discard any resources consumed by the iterator.  Revit will 
 
     call it when done using the iterator.
   """
-  pass
- def ReadPoints(self,buffer,bufferSize):
-  """
+        pass
+
+    def ReadPoints(self, buffer, bufferSize):
+        """
   ReadPoints(self: IPointSetIterator,buffer: IntPtr,bufferSize: int) -> int
 
   
@@ -353,49 +372,62 @@ class IPointSetIterator:
 
     0.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
 
-class PointCloudColorEncoding(Enum,IComparable,IFormattable,IConvertible):
- """
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+
+class PointCloudColorEncoding(Enum, IComparable, IFormattable, IConvertible):
+    """
  The color encodings supported by Revit point clouds.
 
  
 
  enum PointCloudColorEncoding,values: ABGR (1),ARGB (0)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- ABGR=None
- ARGB=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    ABGR = None
+    ARGB = None
+    value__ = None
 
 
-class PointCloudColorSettings(object,IDisposable):
- """
+class PointCloudColorSettings(object, IDisposable):
+    """
  The color settings which are applied to a PointCloudInstance element,or one of its scans.
 
  
@@ -408,8 +440,9 @@ class PointCloudColorSettings(object,IDisposable):
 
  PointCloudColorSettings()
  """
- def Assign(self,other):
-  """
+
+    def Assign(self, other):
+        """
   Assign(self: PointCloudColorSettings,other: PointCloudColorSettings)
 
    Assigns values of the source settings to this object.
@@ -418,12 +451,14 @@ class PointCloudColorSettings(object,IDisposable):
 
    other: The source settings.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: PointCloudColorSettings) """
-  pass
- def IsEqual(self,other):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: PointCloudColorSettings) """
+        pass
+
+    def IsEqual(self, other):
+        """
   IsEqual(self: PointCloudColorSettings,other: PointCloudColorSettings) -> bool
 
   
@@ -436,22 +471,27 @@ class PointCloudColorSettings(object,IDisposable):
 
    Returns: True for equal,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: PointCloudColorSettings,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: PointCloudColorSettings,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,other: PointCloudColorSettings)
 
   __new__(cls: type,color1: Color,color2: Color)
@@ -460,12 +500,14 @@ class PointCloudColorSettings(object,IDisposable):
 
   __new__(cls: type)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Color1=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Color 1
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Color1 = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Color 1
 
 
 
@@ -475,8 +517,8 @@ Get: Color1(self: PointCloudColorSettings) -> Color
 
 """
 
- Color2=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Color 2
+    Color2 = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Color 2
 
 
 
@@ -486,8 +528,10 @@ Get: Color2(self: PointCloudColorSettings) -> Color
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -498,12 +542,12 @@ Get: IsValidObject(self: PointCloudColorSettings) -> bool
 """
 
 
-
 class PointCloudEngineRegistry(object):
- """ This class supports registration of custom Point Cloud Engines in a Revit session. """
- @staticmethod
- def GetSupportedEngines():
-  """
+    """ This class supports registration of custom Point Cloud Engines in a Revit session. """
+
+    @staticmethod
+    def GetSupportedEngines():
+        """
   GetSupportedEngines() -> IList[str]
 
   
@@ -516,10 +560,11 @@ class PointCloudEngineRegistry(object):
 
    Returns: The list of identifiers.
   """
-  pass
- @staticmethod
- def IsEngineFileBased(identifier):
-  """
+        pass
+
+    @staticmethod
+    def IsEngineFileBased(identifier):
+        """
   IsEngineFileBased(identifier: str) -> bool
 
   
@@ -532,10 +577,11 @@ class PointCloudEngineRegistry(object):
 
    Returns: True if the engine is file-based,false otherwise.
   """
-  pass
- @staticmethod
- def RegisterPointCloudEngine(identifier,engine,isFileBased):
-  """
+        pass
+
+    @staticmethod
+    def RegisterPointCloudEngine(identifier, engine, isFileBased):
+        """
   RegisterPointCloudEngine(identifier: str,engine: IPointCloudEngine,isFileBased: bool)
 
    Registers a new point cloud engine and associates it to a particular file 
@@ -562,10 +608,11 @@ class PointCloudEngineRegistry(object):
 
    isFileBased: Indicates to Revit if a single Point Cloud corresponds to a single file on disk.
   """
-  pass
- @staticmethod
- def UnregisterPointCloudEngine(identifier):
-  """
+        pass
+
+    @staticmethod
+    def UnregisterPointCloudEngine(identifier):
+        """
   UnregisterPointCloudEngine(identifier: str)
 
    Unregisters the point cloud engine associated to a particular identifier.
@@ -574,19 +621,21 @@ class PointCloudEngineRegistry(object):
 
    identifier: The identifier of the engine to be unregistered.
   """
-  pass
- __all__=[
-  'GetSupportedEngines',
-  'IsEngineFileBased',
-  'RegisterPointCloudEngine',
-  'UnregisterPointCloudEngine',
- ]
+        pass
+
+    __all__ = [
+        "GetSupportedEngines",
+        "IsEngineFileBased",
+        "RegisterPointCloudEngine",
+        "UnregisterPointCloudEngine",
+    ]
 
 
-class PointCloudFilter(object,IDisposable):
- """ A class used to describe the criteria an application desires when obtaining members of a point cloud. """
- def Clone(self):
-  """
+class PointCloudFilter(object, IDisposable):
+    """ A class used to describe the criteria an application desires when obtaining members of a point cloud. """
+
+    def Clone(self):
+        """
   Clone(self: PointCloudFilter) -> PointCloudFilter
 
   
@@ -599,12 +648,14 @@ class PointCloudFilter(object,IDisposable):
 
    Returns: A copy of the original filter.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: PointCloudFilter) """
-  pass
- def PrepareForCell(self,min,max,numTests):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: PointCloudFilter) """
+        pass
+
+    def PrepareForCell(self, min, max, numTests):
+        """
   PrepareForCell(self: PointCloudFilter,min: XYZ,max: XYZ,numTests: int)
 
    Informs the filter that a series of points within a given cell is about to be 
@@ -623,12 +674,14 @@ class PointCloudFilter(object,IDisposable):
 
     for this cell.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: PointCloudFilter,disposing: bool) """
-  pass
- def TestCell(self,min,max):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: PointCloudFilter,disposing: bool) """
+        pass
+
+    def TestCell(self, min, max):
+        """
   TestCell(self: PointCloudFilter,min: XYZ,max: XYZ) -> int
 
   
@@ -655,9 +708,10 @@ class PointCloudFilter(object,IDisposable):
 
     individual points. 1 -- The cell is fully accepted.
   """
-  pass
- def TestPoint(self,point):
-  """
+        pass
+
+    def TestPoint(self, point):
+        """
   TestPoint(self: PointCloudFilter,point: CloudPoint) -> bool
 
   
@@ -670,21 +724,28 @@ class PointCloudFilter(object,IDisposable):
 
    Returns: If true,the point is accepted,if false,the point is not accepted.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -695,27 +756,29 @@ Get: IsValidObject(self: PointCloudFilter) -> bool
 """
 
 
-
 class PointCloudFilterFactory(object):
- """ A factory class for creating point cloud filters. """
- @staticmethod
- def CreateMultiPlaneFilter(planes,exactPlaneCount=None):
-  """
+    """ A factory class for creating point cloud filters. """
+
+    @staticmethod
+    def CreateMultiPlaneFilter(planes, exactPlaneCount=None):
+        """
   CreateMultiPlaneFilter(planes: IList[Plane],exactPlaneCount: int) -> PointCloudFilter
 
   CreateMultiPlaneFilter(planes: IList[Plane]) -> PointCloudFilter
   """
-  pass
- __all__=[
-  'CreateMultiPlaneFilter',
- ]
+        pass
+
+    __all__ = [
+        "CreateMultiPlaneFilter",
+    ]
 
 
 class PointCloudFilterUtils(object):
- """ Utilities specific to point cloud filters. """
- @staticmethod
- def GetFilteredOutline(filter,box):
-  """
+    """ Utilities specific to point cloud filters. """
+
+    @staticmethod
+    def GetFilteredOutline(filter, box):
+        """
   GetFilteredOutline(filter: PointCloudFilter,box: Outline) -> Outline
 
   
@@ -740,23 +803,25 @@ class PointCloudFilterUtils(object):
 
     the filter is guaranteed to be within the resulting outline.
   """
-  pass
- __all__=[
-  'GetFilteredOutline',
- ]
+        pass
+
+    __all__ = [
+        "GetFilteredOutline",
+    ]
 
 
-class PointCloudOverrides(object,IDisposable):
- """
+class PointCloudOverrides(object, IDisposable):
+    """
  Graphic overrides that are stored by a view to be applied to a PointCloudInstance element,or a scan within the element.
 
  
 
  PointCloudOverrides()
  """
- @staticmethod
- def ArePointCloudOverrideSettingsValid(tag,settings):
-  """
+
+    @staticmethod
+    def ArePointCloudOverrideSettingsValid(tag, settings):
+        """
   ArePointCloudOverrideSettingsValid(tag: str,settings: PointCloudOverrideSettings) -> bool
 
   
@@ -777,9 +842,10 @@ class PointCloudOverrides(object,IDisposable):
 
    settings: Override settings to be checked.
   """
-  pass
- def Assign(self,other):
-  """
+        pass
+
+    def Assign(self, other):
+        """
   Assign(self: PointCloudOverrides,other: PointCloudOverrides)
 
    Assigns values of the source overrides to this object.
@@ -788,12 +854,14 @@ class PointCloudOverrides(object,IDisposable):
 
    other: The source overrides.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: PointCloudOverrides) """
-  pass
- def GetPointCloudOverrideSettings(self,elementId,scanTag=None,doc=None):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: PointCloudOverrides) """
+        pass
+
+    def GetPointCloudOverrideSettings(self, elementId, scanTag=None, doc=None):
+        """
   GetPointCloudOverrideSettings(self: PointCloudOverrides,elementId: ElementId) -> PointCloudOverrideSettings
 
   
@@ -838,9 +906,10 @@ class PointCloudOverrides(object,IDisposable):
 
     settings if nothing was found.
   """
-  pass
- def GetPointCloudRegionOverrideSettings(self,elementId,regionTag=None,doc=None):
-  """
+        pass
+
+    def GetPointCloudRegionOverrideSettings(self, elementId, regionTag=None, doc=None):
+        """
   GetPointCloudRegionOverrideSettings(self: PointCloudOverrides,elementId: ElementId) -> PointCloudOverrideSettings
 
   
@@ -887,9 +956,10 @@ class PointCloudOverrides(object,IDisposable):
 
     settings if nothing was found.
   """
-  pass
- def GetPointCloudScanOverrideSettings(self,elementId,scanTag=None,doc=None):
-  """
+        pass
+
+    def GetPointCloudScanOverrideSettings(self, elementId, scanTag=None, doc=None):
+        """
   GetPointCloudScanOverrideSettings(self: PointCloudOverrides,elementId: ElementId) -> PointCloudOverrideSettings
 
   
@@ -934,9 +1004,10 @@ class PointCloudOverrides(object,IDisposable):
 
     settings if nothing was found.
   """
-  pass
- def IsEqual(self,other):
-  """
+        pass
+
+    def IsEqual(self, other):
+        """
   IsEqual(self: PointCloudOverrides,other: PointCloudOverrides) -> bool
 
   
@@ -949,12 +1020,16 @@ class PointCloudOverrides(object,IDisposable):
 
    Returns: True for equal,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: PointCloudOverrides,disposing: bool) """
-  pass
- def SetPointCloudOverrideSettings(self,elementId,newSettings,scanTag=None,doc=None):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: PointCloudOverrides,disposing: bool) """
+        pass
+
+    def SetPointCloudOverrideSettings(
+        self, elementId, newSettings, scanTag=None, doc=None
+    ):
+        """
   SetPointCloudOverrideSettings(self: PointCloudOverrides,elementId: ElementId,newSettings: PointCloudOverrideSettings)
 
    Assigns override settings to the whole PointCloudInstance element.
@@ -989,9 +1064,12 @@ class PointCloudOverrides(object,IDisposable):
 
    doc: Document containing the element to be overridden.
   """
-  pass
- def SetPointCloudRegionOverrideSettings(self,elementId,newSettings,regionTag=None,doc=None):
-  """
+        pass
+
+    def SetPointCloudRegionOverrideSettings(
+        self, elementId, newSettings, regionTag=None, doc=None
+    ):
+        """
   SetPointCloudRegionOverrideSettings(self: PointCloudOverrides,elementId: ElementId,newSettings: PointCloudOverrideSettings)
 
    Assigns region override settings to the whole PointCloudInstance element.
@@ -1028,9 +1106,12 @@ class PointCloudOverrides(object,IDisposable):
 
    doc: Document containing the element to be overridden.
   """
-  pass
- def SetPointCloudScanOverrideSettings(self,elementId,newSettings,scanTag=None,doc=None):
-  """
+        pass
+
+    def SetPointCloudScanOverrideSettings(
+        self, elementId, newSettings, scanTag=None, doc=None
+    ):
+        """
   SetPointCloudScanOverrideSettings(self: PointCloudOverrides,elementId: ElementId,newSettings: PointCloudOverrideSettings)
 
    Assigns scan override settings to the whole PointCloudInstance element.
@@ -1065,21 +1146,28 @@ class PointCloudOverrides(object,IDisposable):
 
    doc: Document containing the element to be overridden.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -1090,9 +1178,8 @@ Get: IsValidObject(self: PointCloudOverrides) -> bool
 """
 
 
-
-class PointCloudOverrideSettings(object,IDisposable):
- """
+class PointCloudOverrideSettings(object, IDisposable):
+    """
  The graphic override settings for one PointCloudInstance element or one of its scans.
 
  
@@ -1101,8 +1188,9 @@ class PointCloudOverrideSettings(object,IDisposable):
 
  PointCloudOverrideSettings()
  """
- def Assign(self,other):
-  """
+
+    def Assign(self, other):
+        """
   Assign(self: PointCloudOverrideSettings,other: PointCloudOverrideSettings)
 
    Assigns values of the source settings to this object.
@@ -1111,12 +1199,14 @@ class PointCloudOverrideSettings(object,IDisposable):
 
    other: The source settings.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: PointCloudOverrideSettings) """
-  pass
- def GetModeOverride(self,mode):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: PointCloudOverrideSettings) """
+        pass
+
+    def GetModeOverride(self, mode):
+        """
   GetModeOverride(self: PointCloudOverrideSettings,mode: PointCloudColorMode) -> PointCloudColorSettings
 
   
@@ -1131,9 +1221,10 @@ class PointCloudOverrideSettings(object,IDisposable):
 
     nothing is stored for the given color mode.
   """
-  pass
- def IsEqual(self,other):
-  """
+        pass
+
+    def IsEqual(self, other):
+        """
   IsEqual(self: PointCloudOverrideSettings,other: PointCloudOverrideSettings) -> bool
 
   
@@ -1146,12 +1237,14 @@ class PointCloudOverrideSettings(object,IDisposable):
 
    Returns: True for equal,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: PointCloudOverrideSettings,disposing: bool) """
-  pass
- def SetModeOverride(self,mode,colorSettings):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: PointCloudOverrideSettings,disposing: bool) """
+        pass
+
+    def SetModeOverride(self, mode, colorSettings):
+        """
   SetModeOverride(self: PointCloudOverrideSettings,mode: PointCloudColorMode,colorSettings: PointCloudColorSettings)
 
    Sets color settings for the given color mode.
@@ -1162,29 +1255,35 @@ class PointCloudOverrideSettings(object,IDisposable):
 
    colorSettings: Color settings to be set for the given color mode.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,other=None):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, other=None):
+        """
   __new__(cls: type,other: PointCloudOverrideSettings)
 
   __new__(cls: type)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- ColorMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The current color mode for the PointCloudInstance element or its scan.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    ColorMode = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The current color mode for the PointCloudInstance element or its scan.
 
 
 
@@ -1196,8 +1295,10 @@ Set: ColorMode(self: PointCloudOverrideSettings)=value
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -1207,8 +1308,8 @@ Get: IsValidObject(self: PointCloudOverrideSettings) -> bool
 
 """
 
- Visible=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Visibility flag for point cloud scans.
+    Visible = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Visibility flag for point cloud scans.
 
 
 
@@ -1221,14 +1322,15 @@ Set: Visible(self: PointCloudOverrideSettings)=value
 """
 
 
+class PointCollection(object, IEnumerable[CloudPoint], IEnumerable, IDisposable):
+    """ A class that represents a set of points created and returned by Revit in response to a query. """
 
-class PointCollection(object,IEnumerable[CloudPoint],IEnumerable,IDisposable):
- """ A class that represents a set of points created and returned by Revit in response to a query. """
- def Dispose(self):
-  """ Dispose(self: PointCollection) """
-  pass
- def GetEnumerator(self):
-  """
+    def Dispose(self):
+        """ Dispose(self: PointCollection) """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: PointCollection) -> IEnumerator[CloudPoint]
 
   
@@ -1237,9 +1339,10 @@ class PointCollection(object,IEnumerable[CloudPoint],IEnumerable,IDisposable):
 
    Returns: An IEnumerator object that can be used to iterate through the collection.
   """
-  pass
- def GetPointBufferPointer(self):
-  """
+        pass
+
+    def GetPointBufferPointer(self):
+        """
   GetPointBufferPointer(self: PointCollection) -> IntPtr
 
   
@@ -1252,9 +1355,10 @@ class PointCollection(object,IEnumerable[CloudPoint],IEnumerable,IDisposable):
 
    Returns: The pointer to the collection's storage.
   """
-  pass
- def GetPointIterator(self):
-  """
+        pass
+
+    def GetPointIterator(self):
+        """
   GetPointIterator(self: PointCollection) -> PointIterator
 
   
@@ -1263,30 +1367,38 @@ class PointCollection(object,IEnumerable[CloudPoint],IEnumerable,IDisposable):
 
    Returns: New iterator created,make sure to call 'free' on it when finished using it.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: PointCollection,disposing: bool) """
-  pass
- def __contains__(self,*args):
-  """ __contains__[CloudPoint](enumerable: IEnumerable[CloudPoint],value: CloudPoint) -> bool """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The number of points in this collection.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: PointCollection,disposing: bool) """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[CloudPoint](enumerable: IEnumerable[CloudPoint],value: CloudPoint) -> bool """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The number of points in this collection.
 
 
 
@@ -1296,8 +1408,10 @@ Get: Count(self: PointCollection) -> int
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -1308,21 +1422,23 @@ Get: IsValidObject(self: PointCollection) -> bool
 """
 
 
+class PointIterator(object, IEnumerator[CloudPoint], IDisposable, IEnumerator):
+    """ A class used to iterate individual points in a PointCollection. """
 
-class PointIterator(object,IEnumerator[CloudPoint],IDisposable,IEnumerator):
- """ A class used to iterate individual points in a PointCollection. """
- def Dispose(self):
-  """ Dispose(self: PointIterator) """
-  pass
- def Free(self):
-  """
+    def Dispose(self):
+        """ Dispose(self: PointIterator) """
+        pass
+
+    def Free(self):
+        """
   Free(self: PointIterator)
 
    Completes lifetime of the iterator.  Call it when done using the iterator.
   """
-  pass
- def IsDone(self):
-  """
+        pass
+
+    def IsDone(self):
+        """
   IsDone(self: PointIterator) -> bool
 
   
@@ -1331,9 +1447,10 @@ class PointIterator(object,IEnumerator[CloudPoint],IDisposable,IEnumerator):
 
    Returns: True if the iteration has reached the end,false otherwise.
   """
-  pass
- def MoveNext(self):
-  """
+        pass
+
+    def MoveNext(self):
+        """
   MoveNext(self: PointIterator) -> bool
 
   
@@ -1346,54 +1463,68 @@ class PointIterator(object,IEnumerator[CloudPoint],IDisposable,IEnumerator):
 
     iterator has completed all available points.
   """
-  pass
- def next(self,*args):
-  """ next(self: object) -> object """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: PointIterator,disposing: bool) """
-  pass
- def Reset(self):
-  """
+        pass
+
+    def next(self, *args):
+        """ next(self: object) -> object """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: PointIterator,disposing: bool) """
+        pass
+
+    def Reset(self):
+        """
   Reset(self: PointIterator)
 
    Resets the iterator to the beginning of the collection.
   """
-  pass
- def __contains__(self,*args):
-  """ __contains__[CloudPoint](enumerator: IEnumerator[CloudPoint],value: CloudPoint) -> bool """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerator) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Current=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Current(self: PointIterator) -> CloudPoint
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[CloudPoint](enumerator: IEnumerator[CloudPoint],value: CloudPoint) -> bool """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerator) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Current = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Current(self: PointIterator) -> CloudPoint
 
 
 
 """
 
- CurrentObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: CurrentObject(self: PointIterator) -> object
+    CurrentObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: CurrentObject(self: PointIterator) -> object
 
 
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -1402,6 +1533,3 @@ Get: IsValidObject(self: PointIterator) -> bool
 
 
 """
-
-
-

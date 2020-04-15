@@ -1,17 +1,19 @@
-class ImageExportOptions(object,IDisposable):
- """
+class ImageExportOptions(object, IDisposable):
+    """
  This class defines options for exporting views and sheets as an image.
 
  
 
  ImageExportOptions()
  """
- def Dispose(self):
-  """ Dispose(self: ImageExportOptions) """
-  pass
- @staticmethod
- def GetFileName(aDoc,dbViewId):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: ImageExportOptions) """
+        pass
+
+    @staticmethod
+    def GetFileName(aDoc, dbViewId):
+        """
   GetFileName(aDoc: Document,dbViewId: ElementId) -> str
 
   
@@ -26,9 +28,10 @@ class ImageExportOptions(object,IDisposable):
 
    Returns: The generated exported image file name.
   """
-  pass
- def GetViewsAndSheets(self):
-  """
+        pass
+
+    def GetViewsAndSheets(self):
+        """
   GetViewsAndSheets(self: ImageExportOptions) -> IList[ElementId]
 
   
@@ -41,10 +44,11 @@ class ImageExportOptions(object,IDisposable):
 
    Returns: The ids of the views and sheets.
   """
-  pass
- @staticmethod
- def IsValidFileName(filePath):
-  """
+        pass
+
+    @staticmethod
+    def IsValidFileName(filePath):
+        """
   IsValidFileName(filePath: str) -> bool
 
   
@@ -57,10 +61,11 @@ class ImageExportOptions(object,IDisposable):
 
    Returns: True if File name is valid; false otherwise
   """
-  pass
- @staticmethod
- def IsValidForSaveToProjectAsImage(options,doc):
-  """
+        pass
+
+    @staticmethod
+    def IsValidForSaveToProjectAsImage(options, doc):
+        """
   IsValidForSaveToProjectAsImage(options: ImageExportOptions,doc: Document) -> bool
 
   
@@ -77,27 +82,36 @@ class ImageExportOptions(object,IDisposable):
 
     false otherwise
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: ImageExportOptions,disposing: bool) """
-  pass
- def SetViewsAndSheets(self,viewsAndSheets):
-  """ SetViewsAndSheets(self: ImageExportOptions,viewsAndSheets: IList[ElementId]) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- ExportRange=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The export range defining which view(s) will be exported.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: ImageExportOptions,disposing: bool) """
+        pass
+
+    def SetViewsAndSheets(self, viewsAndSheets):
+        """ SetViewsAndSheets(self: ImageExportOptions,viewsAndSheets: IList[ElementId]) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    ExportRange = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The export range defining which view(s) will be exported.
 
 
 
@@ -109,8 +123,8 @@ Set: ExportRange(self: ImageExportOptions)=value
 
 """
 
- FilePath=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The file name and path for the exported file.
+    FilePath = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The file name and path for the exported file.
 
 
 
@@ -122,8 +136,10 @@ Set: FilePath(self: ImageExportOptions)=value
 
 """
 
- FitDirection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The fit direction.  Used only if ZoomType is FitToPage.
+    FitDirection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The fit direction.  Used only if ZoomType is FitToPage.
 
 
 
@@ -135,8 +151,10 @@ Set: FitDirection(self: ImageExportOptions)=value
 
 """
 
- HLRandWFViewsFileType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """File type for exported HLR and wireframe views.
+    HLRandWFViewsFileType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """File type for exported HLR and wireframe views.
 
 
 
@@ -148,8 +166,10 @@ Set: HLRandWFViewsFileType(self: ImageExportOptions)=value
 
 """
 
- ImageResolution=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The image resolution in dots per inch.
+    ImageResolution = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The image resolution in dots per inch.
 
 
 
@@ -161,8 +181,10 @@ Set: ImageResolution(self: ImageExportOptions)=value
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -172,8 +194,8 @@ Get: IsValidObject(self: ImageExportOptions) -> bool
 
 """
 
- PixelSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The pixel size of an image in one direction.  Used only if ZoomType is FitToPage.
+    PixelSize = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The pixel size of an image in one direction.  Used only if ZoomType is FitToPage.
 
 
 
@@ -185,8 +207,10 @@ Set: PixelSize(self: ImageExportOptions)=value
 
 """
 
- ShadowViewsFileType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The file type for exported shadow views.
+    ShadowViewsFileType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The file type for exported shadow views.
 
 
 
@@ -198,8 +222,10 @@ Set: ShadowViewsFileType(self: ImageExportOptions)=value
 
 """
 
- ShouldCreateWebSite=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether or not to create a web site with a page for each export.  Used only when ExportRange is SetOfViews.
+    ShouldCreateWebSite = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether or not to create a web site with a page for each export.  Used only when ExportRange is SetOfViews.
 
 
 
@@ -211,8 +237,8 @@ Set: ShouldCreateWebSite(self: ImageExportOptions)=value
 
 """
 
- ViewName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The name of the view to be created.
+    ViewName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The name of the view to be created.
 
 
 
@@ -224,8 +250,8 @@ Set: ViewName(self: ImageExportOptions)=value
 
 """
 
- Zoom=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The value for Zoom (as a percentage).   Used only when ZoomType is Zoom.
+    Zoom = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The value for Zoom (as a percentage).   Used only when ZoomType is Zoom.
 
 
 
@@ -237,8 +263,8 @@ Set: Zoom(self: ImageExportOptions)=value
 
 """
 
- ZoomType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The zoom type,which defines how the image size is determined.
+    ZoomType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The zoom type,which defines how the image size is determined.
 
 
 
@@ -249,5 +275,3 @@ Get: ZoomType(self: ImageExportOptions) -> ZoomFitType
 Set: ZoomType(self: ImageExportOptions)=value
 
 """
-
-

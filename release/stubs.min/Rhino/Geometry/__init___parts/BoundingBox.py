@@ -1,5 +1,5 @@
 class BoundingBox(object):
- """
+    """
  Represents the value of two points in a bounding box 
 
     defined by the two extreme corner points.
@@ -14,8 +14,9 @@ class BoundingBox(object):
 
  BoundingBox(points: IEnumerable[Point3d])
  """
- def ClosestPoint(self,point,includeInterior=None):
-  """
+
+    def ClosestPoint(self, point, includeInterior=None):
+        """
   ClosestPoint(self: BoundingBox,point: Point3d,includeInterior: bool) -> Point3d
 
   
@@ -48,9 +49,10 @@ class BoundingBox(object):
 
    Returns: The point on or in the box that is closest to the sample point.
   """
-  pass
- def Contains(self,*__args):
-  """
+        pass
+
+    def Contains(self, *__args):
+        """
   Contains(self: BoundingBox,box: BoundingBox) -> bool
 
   
@@ -131,9 +133,10 @@ class BoundingBox(object):
 
     of the boundingbox; otherwise false.
   """
-  pass
- def Corner(self,minX,minY,minZ):
-  """
+        pass
+
+    def Corner(self, minX, minY, minZ):
+        """
   Corner(self: BoundingBox,minX: bool,minY: bool,minZ: bool) -> Point3d
 
   
@@ -150,9 +153,10 @@ class BoundingBox(object):
 
    Returns: The requested point.
   """
-  pass
- def FurthestPoint(self,point):
-  """
+        pass
+
+    def FurthestPoint(self, point):
+        """
   FurthestPoint(self: BoundingBox,point: Point3d) -> Point3d
 
   
@@ -165,9 +169,10 @@ class BoundingBox(object):
 
    Returns: The point on the box that is furthest from the sample point.
   """
-  pass
- def GetCorners(self):
-  """
+        pass
+
+    def GetCorners(self):
+        """
   GetCorners(self: BoundingBox) -> Array[Point3d]
 
   
@@ -182,9 +187,10 @@ class BoundingBox(object):
 
    Returns: An array of 8 corners.
   """
-  pass
- def GetEdges(self):
-  """
+        pass
+
+    def GetEdges(self):
+        """
   GetEdges(self: BoundingBox) -> Array[Line]
 
   
@@ -193,9 +199,10 @@ class BoundingBox(object):
 
    Returns: If the boundingbox IsValid,the 12 edges; otherwise,null.
   """
-  pass
- def Inflate(self,*__args):
-  """
+        pass
+
+    def Inflate(self, *__args):
+        """
   Inflate(self: BoundingBox,xAmount: float,yAmount: float,zAmount: float)
 
    Inflate the box with custom amounts in all directions. 
@@ -232,10 +239,11 @@ class BoundingBox(object):
 
    amount: Amount (in model units) to inflate this box in all directions.
   """
-  pass
- @staticmethod
- def Intersection(a,b):
-  """
+        pass
+
+    @staticmethod
+    def Intersection(a, b):
+        """
   Intersection(a: BoundingBox,b: BoundingBox) -> BoundingBox
 
   
@@ -250,9 +258,10 @@ class BoundingBox(object):
 
    Returns: The intersection bounding box.
   """
-  pass
- def IsDegenerate(self,tolerance):
-  """
+        pass
+
+    def IsDegenerate(self, tolerance):
+        """
   IsDegenerate(self: BoundingBox,tolerance: float) -> int
 
   
@@ -283,9 +292,10 @@ class BoundingBox(object):
 
      4=box is not valid.
   """
-  pass
- def MakeValid(self):
-  """
+        pass
+
+    def MakeValid(self):
+        """
   MakeValid(self: BoundingBox) -> bool
 
   
@@ -300,9 +310,10 @@ class BoundingBox(object):
 
    Returns: true if the box was made valid,false if the box could not be made valid.
   """
-  pass
- def PointAt(self,tx,ty,tz):
-  """
+        pass
+
+    def PointAt(self, tx, ty, tz):
+        """
   PointAt(self: BoundingBox,tx: float,ty: float,tz: float) -> Point3d
 
   
@@ -325,9 +336,10 @@ class BoundingBox(object):
 
    Returns: The point at the {tx,ty,tz} parameters.
   """
-  pass
- def ToBrep(self):
-  """
+        pass
+
+    def ToBrep(self):
+        """
   ToBrep(self: BoundingBox) -> Brep
 
   
@@ -336,9 +348,10 @@ class BoundingBox(object):
 
    Returns: If this operation is sucessfull,a Brep representation of this box; otherwise null.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: BoundingBox) -> str
 
   
@@ -347,9 +360,10 @@ class BoundingBox(object):
 
    Returns: Text.
   """
-  pass
- def Transform(self,xform):
-  """
+        pass
+
+    def Transform(self, xform):
+        """
   Transform(self: BoundingBox,xform: Transform) -> bool
 
   
@@ -370,9 +384,10 @@ class BoundingBox(object):
 
    Returns: true if this operation is sucessfull; otherwise false.
   """
-  pass
- def Union(self,*__args):
-  """
+        pass
+
+    def Union(self, *__args):
+        """
   Union(a: BoundingBox,b: BoundingBox) -> BoundingBox
 
   
@@ -417,10 +432,11 @@ class BoundingBox(object):
 
    point: Point to include in the union.
   """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__[BoundingBox]() -> BoundingBox
 
   
@@ -431,9 +447,10 @@ class BoundingBox(object):
 
   __new__(cls: type,points: IEnumerable[Point3d])
   """
-  pass
- Center=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the point in the center of the boundingbox.
+        pass
+
+    Center = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the point in the center of the boundingbox.
 
 
 
@@ -443,8 +460,8 @@ Get: Center(self: BoundingBox) -> Point3d
 
 """
 
- Diagonal=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the diagonal vector of this BoundingBox. 
+    Diagonal = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the diagonal vector of this BoundingBox. 
 
    The diagonal connects the Min and Max points.
 
@@ -456,8 +473,8 @@ Get: Diagonal(self: BoundingBox) -> Vector3d
 
 """
 
- IsValid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether or not this boundingbox is valid. 
+    IsValid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether or not this boundingbox is valid. 
 
    Empty boxes are not valid,and neither are boxes with unset points.
 
@@ -469,8 +486,8 @@ Get: IsValid(self: BoundingBox) -> bool
 
 """
 
- Max=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the point in the maximal corner.
+    Max = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the point in the maximal corner.
 
 
 
@@ -482,8 +499,8 @@ Set: Max(self: BoundingBox)=value
 
 """
 
- Min=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the point in the minimal corner.
+    Min = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the point in the minimal corner.
 
 
 
@@ -495,7 +512,5 @@ Set: Min(self: BoundingBox)=value
 
 """
 
-
- Empty=None
- Unset=None
-
+    Empty = None
+    Unset = None

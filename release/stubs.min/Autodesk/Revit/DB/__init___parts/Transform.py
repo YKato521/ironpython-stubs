@@ -1,13 +1,14 @@
-class Transform(APIObject,IDisposable):
- """
+class Transform(APIObject, IDisposable):
+    """
  A transformation of the affine 3-space.
 
  
 
  Transform(source: Transform)
  """
- def AlmostEqual(self,right):
-  """
+
+    def AlmostEqual(self, right):
+        """
   AlmostEqual(self: Transform,right: Transform) -> bool
 
   
@@ -24,10 +25,11 @@ class Transform(APIObject,IDisposable):
 
    Returns: True if the two transformations are equal; otherwise,false.
   """
-  pass
- @staticmethod
- def CreateReflection(plane):
-  """
+        pass
+
+    @staticmethod
+    def CreateReflection(plane):
+        """
   CreateReflection(plane: Plane) -> Transform
 
   
@@ -40,10 +42,11 @@ class Transform(APIObject,IDisposable):
 
    Returns: The new transform.
   """
-  pass
- @staticmethod
- def CreateRotation(axis,angle):
-  """
+        pass
+
+    @staticmethod
+    def CreateRotation(axis, angle):
+        """
   CreateRotation(axis: XYZ,angle: float) -> Transform
 
   
@@ -62,10 +65,11 @@ class Transform(APIObject,IDisposable):
 
    Returns: The new transform.
   """
-  pass
- @staticmethod
- def CreateRotationAtPoint(axis,angle,origin):
-  """
+        pass
+
+    @staticmethod
+    def CreateRotationAtPoint(axis, angle, origin):
+        """
   CreateRotationAtPoint(axis: XYZ,angle: float,origin: XYZ) -> Transform
 
   
@@ -86,10 +90,11 @@ class Transform(APIObject,IDisposable):
 
    Returns: The new transform.
   """
-  pass
- @staticmethod
- def CreateTranslation(vector):
-  """
+        pass
+
+    @staticmethod
+    def CreateTranslation(vector):
+        """
   CreateTranslation(vector: XYZ) -> Transform
 
   
@@ -102,12 +107,14 @@ class Transform(APIObject,IDisposable):
 
    Returns: The new transform.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: APIObject,A_0: bool) """
-  pass
- def Multiply(self,right):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: APIObject,A_0: bool) """
+        pass
+
+    def Multiply(self, right):
+        """
   Multiply(self: Transform,right: Transform) -> Transform
 
   
@@ -124,9 +131,10 @@ class Transform(APIObject,IDisposable):
 
    Returns: The transformation equal to the composition of the two transformations.
   """
-  pass
- def OfPoint(self,point):
-  """
+        pass
+
+    def OfPoint(self, point):
+        """
   OfPoint(self: Transform,point: XYZ) -> XYZ
 
   
@@ -139,9 +147,10 @@ class Transform(APIObject,IDisposable):
 
    Returns: The transformed point.
   """
-  pass
- def OfVector(self,vec):
-  """
+        pass
+
+    def OfVector(self, vec):
+        """
   OfVector(self: Transform,vec: XYZ) -> XYZ
 
   
@@ -154,15 +163,18 @@ class Transform(APIObject,IDisposable):
 
    Returns: The new vector after transform
   """
-  pass
- def ReleaseManagedResources(self,*args):
-  """ ReleaseManagedResources(self: APIObject) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Transform) """
-  pass
- def ScaleBasis(self,scale):
-  """
+        pass
+
+    def ReleaseManagedResources(self, *args):
+        """ ReleaseManagedResources(self: APIObject) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Transform) """
+        pass
+
+    def ScaleBasis(self, scale):
+        """
   ScaleBasis(self: Transform,scale: float) -> Transform
 
   
@@ -175,9 +187,10 @@ class Transform(APIObject,IDisposable):
 
    Returns: The transformation equal to the composition of the two transformations.
   """
-  pass
- def ScaleBasisAndOrigin(self,scale):
-  """
+        pass
+
+    def ScaleBasisAndOrigin(self, scale):
+        """
   ScaleBasisAndOrigin(self: Transform,scale: float) -> Transform
 
   
@@ -194,25 +207,31 @@ class Transform(APIObject,IDisposable):
 
    Returns: The transformation equal to the composition of the two transformations.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __mul__(self,*args):
-  """ x.__mul__(y) <==> x*y """
-  pass
- @staticmethod
- def __new__(self,source):
-  """ __new__(cls: type,source: Transform) """
-  pass
- def __rmul__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __mul__(self, *args):
+        """ x.__mul__(y) <==> x*y """
+        pass
+
+    @staticmethod
+    def __new__(self, source):
+        """ __new__(cls: type,source: Transform) """
+        pass
+
+    def __rmul__(self, *args):
+        """
   __rmul__(left: Transform,right: Transform) -> Transform
 
   
@@ -227,9 +246,10 @@ class Transform(APIObject,IDisposable):
 
    Returns: The transformation equal to the composition of the two transformations.
   """
-  pass
- BasisX=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The basis of the X axis of this transformation.
+        pass
+
+    BasisX = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The basis of the X axis of this transformation.
 
 
 
@@ -241,8 +261,8 @@ Set: BasisX(self: Transform)=value
 
 """
 
- BasisY=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The basis of the Y axis of this transformation.
+    BasisY = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The basis of the Y axis of this transformation.
 
 
 
@@ -254,8 +274,8 @@ Set: BasisY(self: Transform)=value
 
 """
 
- BasisZ=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The basis of the Z axis of this transformation.
+    BasisZ = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The basis of the Z axis of this transformation.
 
 
 
@@ -267,8 +287,10 @@ Set: BasisZ(self: Transform)=value
 
 """
 
- Determinant=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The determinant of this transformation.
+    Determinant = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The determinant of this transformation.
 
 
 
@@ -278,8 +300,10 @@ Get: Determinant(self: Transform) -> float
 
 """
 
- HasReflection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The boolean value that indicates whether this transformation produces reflection.
+    HasReflection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The boolean value that indicates whether this transformation produces reflection.
 
 
 
@@ -289,8 +313,8 @@ Get: HasReflection(self: Transform) -> bool
 
 """
 
- Inverse=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The inverse transformation of this transformation.
+    Inverse = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The inverse transformation of this transformation.
 
 
 
@@ -300,8 +324,10 @@ Get: Inverse(self: Transform) -> Transform
 
 """
 
- IsConformal=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The boolean value that indicates whether this transformation is conformal.
+    IsConformal = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The boolean value that indicates whether this transformation is conformal.
 
 
 
@@ -311,8 +337,10 @@ Get: IsConformal(self: Transform) -> bool
 
 """
 
- IsIdentity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The boolean value that indicates whether this transformation is an identity.
+    IsIdentity = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The boolean value that indicates whether this transformation is an identity.
 
 
 
@@ -322,8 +350,10 @@ Get: IsIdentity(self: Transform) -> bool
 
 """
 
- IsTranslation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The boolean value that indicates whether this transformation is a translation.
+    IsTranslation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The boolean value that indicates whether this transformation is a translation.
 
 
 
@@ -333,8 +363,8 @@ Get: IsTranslation(self: Transform) -> bool
 
 """
 
- Origin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Defines the origin of the old coordinate system in the new coordinate system.
+    Origin = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Defines the origin of the old coordinate system in the new coordinate system.
 
 
 
@@ -346,8 +376,8 @@ Set: Origin(self: Transform)=value
 
 """
 
- Scale=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The real number that represents the scale of the transformation.
+    Scale = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The real number that represents the scale of the transformation.
 
 
 
@@ -357,6 +387,4 @@ Get: Scale(self: Transform) -> float
 
 """
 
-
- Identity=None
-
+    Identity = None

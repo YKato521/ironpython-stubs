@@ -1,13 +1,14 @@
-class Brep(GeometryBase,IDisposable,ISerializable):
- """
+class Brep(GeometryBase, IDisposable, ISerializable):
+    """
  Boundary Representation. A surface or polysurface along with trim curve information.
 
  
 
  Brep()
  """
- def AddEdgeCurve(self,curve):
-  """
+
+    def AddEdgeCurve(self, curve):
+        """
   AddEdgeCurve(self: Brep,curve: Curve) -> int
 
   
@@ -16,9 +17,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: Index used to reference this geometry in the edge curve list
   """
-  pass
- def AddSurface(self,surface):
-  """
+        pass
+
+    def AddSurface(self, surface):
+        """
   AddSurface(self: Brep,surface: Surface) -> int
 
   
@@ -35,9 +37,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
     not acceptable.
   """
-  pass
- def AddTrimCurve(self,curve):
-  """
+        pass
+
+    def AddTrimCurve(self, curve):
+        """
   AddTrimCurve(self: Brep,curve: Curve) -> int
 
   
@@ -46,9 +49,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: Index used to reference this geometry in the trimming curve list
   """
-  pass
- def Append(self,other):
-  """
+        pass
+
+    def Append(self, other):
+        """
   Append(self: Brep,other: Brep)
 
    Appends a copy of another brep to this and updates indices of appended
@@ -57,9 +61,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
     Duplicates are not removed
   """
-  pass
- def CapPlanarHoles(self,tolerance):
-  """
+        pass
+
+    def CapPlanarHoles(self, tolerance):
+        """
   CapPlanarHoles(self: Brep,tolerance: float) -> Brep
 
   
@@ -72,9 +77,19 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: New brep on success. null on error.
   """
-  pass
- def ClosestPoint(self,testPoint,closestPoint=None,ci=None,s=None,t=None,maximumDistance=None,normal=None):
-  """
+        pass
+
+    def ClosestPoint(
+        self,
+        testPoint,
+        closestPoint=None,
+        ci=None,
+        s=None,
+        t=None,
+        maximumDistance=None,
+        normal=None,
+    ):
+        """
   ClosestPoint(self: Brep,testPoint: Point3d,maximumDistance: float) -> (bool,Point3d,ComponentIndex,float,float,Vector3d)
 
   
@@ -111,9 +126,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: The point on the Brep closest to testPoint or Point3d.Unset if the operation failed.
   """
-  pass
- def Compact(self):
-  """
+        pass
+
+    def Compact(self):
+        """
   Compact(self: Brep)
 
    Deletes any unreferenced objects from arrays,reindexes as needed,and
@@ -126,9 +142,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
     unreferenced objects from arrays.
   """
-  pass
- def ConstructConstObject(self,*args):
-  """
+        pass
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -139,10 +156,11 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    subobject_index: The subobject index.
   """
-  pass
- @staticmethod
- def CopyTrimCurves(trimSource,surfaceSource,tolerance):
-  """
+        pass
+
+    @staticmethod
+    def CopyTrimCurves(trimSource, surfaceSource, tolerance):
+        """
   CopyTrimCurves(trimSource: BrepFace,surfaceSource: Surface,tolerance: float) -> Brep
 
   
@@ -159,10 +177,11 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: A brep with the shape of surfaceSource and the trims of trimSource or null on failure.
   """
-  pass
- @staticmethod
- def CreateBooleanDifference(*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateBooleanDifference(*__args):
+        """
   CreateBooleanDifference(firstBrep: Brep,secondBrep: Brep,tolerance: float) -> Array[Brep]
 
   
@@ -181,10 +200,11 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
   CreateBooleanDifference(firstSet: IEnumerable[Brep],secondSet: IEnumerable[Brep],tolerance: float) -> Array[Brep]
   """
-  pass
- @staticmethod
- def CreateBooleanIntersection(*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateBooleanIntersection(*__args):
+        """
   CreateBooleanIntersection(firstBrep: Brep,secondBrep: Brep,tolerance: float) -> Array[Brep]
 
   
@@ -203,14 +223,16 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
   CreateBooleanIntersection(firstSet: IEnumerable[Brep],secondSet: IEnumerable[Brep],tolerance: float) -> Array[Brep]
   """
-  pass
- @staticmethod
- def CreateBooleanUnion(breps,tolerance):
-  """ CreateBooleanUnion(breps: IEnumerable[Brep],tolerance: float) -> Array[Brep] """
-  pass
- @staticmethod
- def CreateContourCurves(brepToContour,*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateBooleanUnion(breps, tolerance):
+        """ CreateBooleanUnion(breps: IEnumerable[Brep],tolerance: float) -> Array[Brep] """
+        pass
+
+    @staticmethod
+    def CreateContourCurves(brepToContour, *__args):
+        """
   CreateContourCurves(brepToContour: Brep,sectionPlane: Plane) -> Array[Curve]
 
   
@@ -243,14 +265,16 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: An array with intersected curves. This array can be empty.
   """
-  pass
- @staticmethod
- def CreateEdgeSurface(curves):
-  """ CreateEdgeSurface(curves: IEnumerable[Curve]) -> Brep """
-  pass
- @staticmethod
- def CreateFromBox(*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateEdgeSurface(curves):
+        """ CreateEdgeSurface(curves: IEnumerable[Curve]) -> Brep """
+        pass
+
+    @staticmethod
+    def CreateFromBox(*__args):
+        """
   CreateFromBox(corners: IEnumerable[Point3d]) -> Brep
 
   CreateFromBox(box: Box) -> Brep
@@ -277,10 +301,11 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: A new brep; or null on failure.
   """
-  pass
- @staticmethod
- def CreateFromCone(cone,capBottom):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromCone(cone, capBottom):
+        """
   CreateFromCone(cone: Cone,capBottom: bool) -> Brep
 
   
@@ -311,10 +336,11 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: A new brep,on null on error.
   """
-  pass
- @staticmethod
- def CreateFromCornerPoints(corner1,corner2,corner3,*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromCornerPoints(corner1, corner2, corner3, *__args):
+        """
   CreateFromCornerPoints(corner1: Point3d,corner2: Point3d,corner3: Point3d,corner4: Point3d,tolerance: float) -> Brep
 
   
@@ -353,10 +379,11 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: A boundary representation,or null on error.
   """
-  pass
- @staticmethod
- def CreateFromCylinder(cylinder,capBottom,capTop):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromCylinder(cylinder, capBottom, capTop):
+        """
   CreateFromCylinder(cylinder: Cylinder,capBottom: bool,capTop: bool) -> Brep
 
   
@@ -385,22 +412,26 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
     ending at the bottom/top vertex.
   """
-  pass
- @staticmethod
- def CreateFromLoft(curves,start,end,loftType,closed):
-  """ CreateFromLoft(curves: IEnumerable[Curve],start: Point3d,end: Point3d,loftType: LoftType,closed: bool) -> Array[Brep] """
-  pass
- @staticmethod
- def CreateFromLoftRebuild(curves,start,end,loftType,closed,rebuildPointCount):
-  """ CreateFromLoftRebuild(curves: IEnumerable[Curve],start: Point3d,end: Point3d,loftType: LoftType,closed: bool,rebuildPointCount: int) -> Array[Brep] """
-  pass
- @staticmethod
- def CreateFromLoftRefit(curves,start,end,loftType,closed,refitTolerance):
-  """ CreateFromLoftRefit(curves: IEnumerable[Curve],start: Point3d,end: Point3d,loftType: LoftType,closed: bool,refitTolerance: float) -> Array[Brep] """
-  pass
- @staticmethod
- def CreateFromMesh(mesh,trimmedTriangles):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromLoft(curves, start, end, loftType, closed):
+        """ CreateFromLoft(curves: IEnumerable[Curve],start: Point3d,end: Point3d,loftType: LoftType,closed: bool) -> Array[Brep] """
+        pass
+
+    @staticmethod
+    def CreateFromLoftRebuild(curves, start, end, loftType, closed, rebuildPointCount):
+        """ CreateFromLoftRebuild(curves: IEnumerable[Curve],start: Point3d,end: Point3d,loftType: LoftType,closed: bool,rebuildPointCount: int) -> Array[Brep] """
+        pass
+
+    @staticmethod
+    def CreateFromLoftRefit(curves, start, end, loftType, closed, refitTolerance):
+        """ CreateFromLoftRefit(curves: IEnumerable[Curve],start: Point3d,end: Point3d,loftType: LoftType,closed: bool,refitTolerance: float) -> Array[Brep] """
+        pass
+
+    @staticmethod
+    def CreateFromMesh(mesh, trimmedTriangles):
+        """
   CreateFromMesh(mesh: Mesh,trimmedTriangles: bool) -> Brep
 
   
@@ -419,10 +450,13 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
     NURBS surfaces in the brep.
   """
-  pass
- @staticmethod
- def CreateFromOffsetFace(face,offsetDistance,offsetTolerance,bothSides,createSolid):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromOffsetFace(
+        face, offsetDistance, offsetTolerance, bothSides, createSolid
+    ):
+        """
   CreateFromOffsetFace(face: BrepFace,offsetDistance: float,offsetTolerance: float,bothSides: bool,createSolid: bool) -> Brep
 
   
@@ -455,10 +489,11 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
      null if unsuccessful.
   """
-  pass
- @staticmethod
- def CreateFromRevSurface(surface,capStart,capEnd):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromRevSurface(surface, capStart, capEnd):
+        """
   CreateFromRevSurface(surface: RevSurface,capStart: bool,capEnd: bool) -> Brep
 
   
@@ -495,20 +530,22 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: A new brep,on null on error.
   """
-  pass
- @staticmethod
- def CreateFromSphere(sphere):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromSphere(sphere):
+        """
   CreateFromSphere(sphere: Sphere) -> Brep
 
   
 
    Constructs a Brep definition of a sphere.
   """
-  pass
- @staticmethod
- def CreateFromSurface(surface):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromSurface(surface):
+        """
   CreateFromSurface(surface: Surface) -> Brep
 
   
@@ -531,10 +568,11 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: Resulting brep or null on failure.
   """
-  pass
- @staticmethod
- def CreateFromSweep(*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromSweep(*__args):
+        """
   CreateFromSweep(rail1: Curve,rail2: Curve,shape: Curve,closed: bool,tolerance: float) -> Array[Brep]
 
   
@@ -589,10 +627,13 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
   CreateFromSweep(rail: Curve,shapes: IEnumerable[Curve],closed: bool,tolerance: float) -> Array[Brep]
   """
-  pass
- @staticmethod
- def CreateFromTaperedExtrude(curveToExtrude,distance,direction,basePoint,draftAngleRadians,cornerType):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromTaperedExtrude(
+        curveToExtrude, distance, direction, basePoint, draftAngleRadians, cornerType
+    ):
+        """
   CreateFromTaperedExtrude(curveToExtrude: Curve,distance: float,direction: Vector3d,basePoint: Point3d,draftAngleRadians: float,cornerType: ExtrudeCornerType) -> Array[Brep]
 
   
@@ -613,20 +654,22 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: array of breps on success
   """
-  pass
- @staticmethod
- def CreatePatch(geometry,*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreatePatch(geometry, *__args):
+        """
   CreatePatch(geometry: IEnumerable[GeometryBase],startingSurface: Surface,uSpans: int,vSpans: int,trim: bool,tangency: bool,pointSpacing: float,flexibility: float,surfacePull: float,fixEdges: Array[bool],tolerance: float) -> Brep
 
   CreatePatch(geometry: IEnumerable[GeometryBase],uSpans: int,vSpans: int,tolerance: float) -> Brep
 
   CreatePatch(geometry: IEnumerable[GeometryBase],startingSurface: Surface,tolerance: float) -> Brep
   """
-  pass
- @staticmethod
- def CreatePipe(rail,*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreatePipe(rail, *__args):
+        """
   CreatePipe(rail: Curve,railRadiiParameters: IEnumerable[float],radii: IEnumerable[float],localBlending: bool,cap: PipeCapMode,fitRail: bool,absoluteTolerance: float,angleToleranceRadians: float) -> Array[Brep]
 
   CreatePipe(rail: Curve,radius: float,localBlending: bool,cap: PipeCapMode,fitRail: bool,absoluteTolerance: float,angleToleranceRadians: float) -> Array[Brep]
@@ -677,10 +720,11 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: Array of created pipes on success
   """
-  pass
- @staticmethod
- def CreatePlanarBreps(*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreatePlanarBreps(*__args):
+        """
   CreatePlanarBreps(inputLoops: CurveList) -> Array[Brep]
 
   
@@ -707,18 +751,21 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
   CreatePlanarBreps(inputLoops: IEnumerable[Curve]) -> Array[Brep]
   """
-  pass
- @staticmethod
- def CreateShell(brep,facesToRemove,distance,tolerance):
-  """ CreateShell(brep: Brep,facesToRemove: IEnumerable[int],distance: float,tolerance: float) -> Array[Brep] """
-  pass
- @staticmethod
- def CreateSolid(breps,tolerance):
-  """ CreateSolid(breps: IEnumerable[Brep],tolerance: float) -> Array[Brep] """
-  pass
- @staticmethod
- def CreateTrimmedSurface(trimSource,surfaceSource):
-  """
+        pass
+
+    @staticmethod
+    def CreateShell(brep, facesToRemove, distance, tolerance):
+        """ CreateShell(brep: Brep,facesToRemove: IEnumerable[int],distance: float,tolerance: float) -> Array[Brep] """
+        pass
+
+    @staticmethod
+    def CreateSolid(breps, tolerance):
+        """ CreateSolid(breps: IEnumerable[Brep],tolerance: float) -> Array[Brep] """
+        pass
+
+    @staticmethod
+    def CreateTrimmedSurface(trimSource, surfaceSource):
+        """
   CreateTrimmedSurface(trimSource: BrepFace,surfaceSource: Surface) -> Brep
 
   
@@ -739,9 +786,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: A brep with the shape of surfaceSource and the trims of trimSource or null on failure.
   """
-  pass
- def CullUnused2dCurves(self):
-  """
+        pass
+
+    def CullUnused2dCurves(self):
+        """
   CullUnused2dCurves(self: Brep) -> bool
 
   
@@ -750,9 +798,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if operation succeeded; false otherwise.
   """
-  pass
- def CullUnused3dCurves(self):
-  """
+        pass
+
+    def CullUnused3dCurves(self):
+        """
   CullUnused3dCurves(self: Brep) -> bool
 
   
@@ -761,9 +810,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if operation succeeded; false otherwise.
   """
-  pass
- def CullUnusedEdges(self):
-  """
+        pass
+
+    def CullUnusedEdges(self):
+        """
   CullUnusedEdges(self: Brep) -> bool
 
   
@@ -772,9 +822,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if operation succeeded; false otherwise.
   """
-  pass
- def CullUnusedFaces(self):
-  """
+        pass
+
+    def CullUnusedFaces(self):
+        """
   CullUnusedFaces(self: Brep) -> bool
 
   
@@ -783,9 +834,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if operation succeeded; false otherwise.
   """
-  pass
- def CullUnusedLoops(self):
-  """
+        pass
+
+    def CullUnusedLoops(self):
+        """
   CullUnusedLoops(self: Brep) -> bool
 
   
@@ -794,9 +846,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if operation succeeded; false otherwise.
   """
-  pass
- def CullUnusedSurfaces(self):
-  """
+        pass
+
+    def CullUnusedSurfaces(self):
+        """
   CullUnusedSurfaces(self: Brep) -> bool
 
   
@@ -805,9 +858,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if operation succeeded; false otherwise.
   """
-  pass
- def CullUnusedTrims(self):
-  """
+        pass
+
+    def CullUnusedTrims(self):
+        """
   CullUnusedTrims(self: Brep) -> bool
 
   
@@ -816,9 +870,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if operation succeeded; false otherwise.
   """
-  pass
- def CullUnusedVertices(self):
-  """
+        pass
+
+    def CullUnusedVertices(self):
+        """
   CullUnusedVertices(self: Brep) -> bool
 
   
@@ -827,9 +882,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if operation succeeded; false otherwise.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: CommonObject,disposing: bool)
 
    For derived class implementers.
@@ -854,9 +910,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
     finalizer.
   """
-  pass
- def Duplicate(self):
-  """
+        pass
+
+    def Duplicate(self):
+        """
   Duplicate(self: Brep) -> GeometryBase
 
   
@@ -865,9 +922,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: A brep.
   """
-  pass
- def DuplicateBrep(self):
-  """
+        pass
+
+    def DuplicateBrep(self):
+        """
   DuplicateBrep(self: Brep) -> Brep
 
   
@@ -882,9 +940,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: A brep.
   """
-  pass
- def DuplicateEdgeCurves(self,nakedOnly=None):
-  """
+        pass
+
+    def DuplicateEdgeCurves(self, nakedOnly=None):
+        """
   DuplicateEdgeCurves(self: Brep,nakedOnly: bool) -> Array[Curve]
 
   
@@ -911,21 +970,24 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: An array of edge curves.
   """
-  pass
- def DuplicateNakedEdgeCurves(self,outer,inner):
-  """
+        pass
+
+    def DuplicateNakedEdgeCurves(self, outer, inner):
+        """
   DuplicateNakedEdgeCurves(self: Brep,outer: bool,inner: bool) -> Array[Curve]
 
   
 
    Duplicate naked edges of this Brep
   """
-  pass
- def DuplicateSubBrep(self,faceIndices):
-  """ DuplicateSubBrep(self: Brep,faceIndices: IEnumerable[int]) -> Brep """
-  pass
- def DuplicateVertices(self):
-  """
+        pass
+
+    def DuplicateSubBrep(self, faceIndices):
+        """ DuplicateSubBrep(self: Brep,faceIndices: IEnumerable[int]) -> Brep """
+        pass
+
+    def DuplicateVertices(self):
+        """
   DuplicateVertices(self: Brep) -> Array[Point3d]
 
   
@@ -934,16 +996,18 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: An array or corner vertices.
   """
-  pass
- def Flip(self):
-  """
+        pass
+
+    def Flip(self):
+        """
   Flip(self: Brep)
 
    Reverses entire brep orientation of all faces.
   """
-  pass
- def GetArea(self,relativeTolerance=None,absoluteTolerance=None):
-  """
+        pass
+
+    def GetArea(self, relativeTolerance=None, absoluteTolerance=None):
+        """
   GetArea(self: Brep) -> float
 
   
@@ -978,9 +1042,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: The area of the Brep.
   """
-  pass
- def GetRegions(self):
-  """
+        pass
+
+    def GetRegions(self):
+        """
   GetRegions(self: Brep) -> Array[BrepRegion]
 
   
@@ -989,9 +1054,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: An array of regions in this brep. This array can be empty,but not null.
   """
-  pass
- def GetVolume(self,relativeTolerance=None,absoluteTolerance=None):
-  """
+        pass
+
+    def GetVolume(self, relativeTolerance=None, absoluteTolerance=None):
+        """
   GetVolume(self: Brep,relativeTolerance: float,absoluteTolerance: float) -> float
 
   
@@ -1026,9 +1092,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: The volume of the Brep.
   """
-  pass
- def GetWireframe(self,density):
-  """
+        pass
+
+    def GetWireframe(self, density):
+        """
   GetWireframe(self: Brep,density: int) -> Array[Curve]
 
   
@@ -1041,9 +1108,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: An array of Wireframe curves or null on failure.
   """
-  pass
- def IsDuplicate(self,other,tolerance):
-  """
+        pass
+
+    def IsDuplicate(self, other, tolerance):
+        """
   IsDuplicate(self: Brep,other: Brep,tolerance: float) -> bool
 
   
@@ -1058,9 +1126,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if breps are the same.
   """
-  pass
- def IsPointInside(self,point,tolerance,strictlyIn):
-  """
+        pass
+
+    def IsPointInside(self, point, tolerance, strictlyIn):
+        """
   IsPointInside(self: Brep,point: Point3d,tolerance: float,strictlyIn: bool) -> bool
 
   
@@ -1111,9 +1180,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if point is in,false if not.
   """
-  pass
- def IsValidGeometry(self,log):
-  """
+        pass
+
+    def IsValidGeometry(self, log):
+        """
   IsValidGeometry(self: Brep) -> (bool,str)
 
   
@@ -1132,9 +1202,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: A value that indicates whether the geometry is valid.
   """
-  pass
- def IsValidTolerancesAndFlags(self,log):
-  """
+        pass
+
+    def IsValidTolerancesAndFlags(self, log):
+        """
   IsValidTolerancesAndFlags(self: Brep) -> (bool,str)
 
   
@@ -1155,9 +1226,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: A value that indicates
   """
-  pass
- def IsValidTopology(self,log):
-  """
+        pass
+
+    def IsValidTopology(self, log):
+        """
   IsValidTopology(self: Brep) -> (bool,str)
 
   
@@ -1166,9 +1238,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if the topology is valid; false otherwise.
   """
-  pass
- def Join(self,otherBrep,tolerance,compact):
-  """
+        pass
+
+    def Join(self, otherBrep, tolerance, compact):
+        """
   Join(self: Brep,otherBrep: Brep,tolerance: float,compact: bool) -> bool
 
   
@@ -1191,13 +1264,15 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if any edges were joined.
   """
-  pass
- @staticmethod
- def JoinBreps(brepsToJoin,tolerance):
-  """ JoinBreps(brepsToJoin: IEnumerable[Brep],tolerance: float) -> Array[Brep] """
-  pass
- def JoinNakedEdges(self,tolerance):
-  """
+        pass
+
+    @staticmethod
+    def JoinBreps(brepsToJoin, tolerance):
+        """ JoinBreps(brepsToJoin: IEnumerable[Brep],tolerance: float) -> Array[Brep] """
+        pass
+
+    def JoinNakedEdges(self, tolerance):
+        """
   JoinNakedEdges(self: Brep,tolerance: float) -> int
 
   
@@ -1210,13 +1285,15 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: number of joins made.
   """
-  pass
- @staticmethod
- def MergeBreps(brepsToMerge,tolerance):
-  """ MergeBreps(brepsToMerge: IEnumerable[Brep],tolerance: float) -> Brep """
-  pass
- def MergeCoplanarFaces(self,tolerance):
-  """
+        pass
+
+    @staticmethod
+    def MergeBreps(brepsToMerge, tolerance):
+        """ MergeBreps(brepsToMerge: IEnumerable[Brep],tolerance: float) -> Brep """
+        pass
+
+    def MergeCoplanarFaces(self, tolerance):
+        """
   MergeCoplanarFaces(self: Brep,tolerance: float) -> bool
 
   
@@ -1229,9 +1306,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if faces were merged.  false if no faces were merged.
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: CommonObject)
 
    For derived classes implementers.
@@ -1240,16 +1318,18 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
     instance from being const.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: GeometryBase)
 
    Is called when a non-const operation occurs.
   """
-  pass
- def RebuildTrimsForV2(self,face,nurbsSurface):
-  """
+        pass
+
+    def RebuildTrimsForV2(self, face, nurbsSurface):
+        """
   RebuildTrimsForV2(self: Brep,face: BrepFace,nurbsSurface: NurbsSurface)
 
    No support is available for this function.
@@ -1280,9 +1360,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    nurbsSurface: NURBS form of the face's underlying surface.
   """
-  pass
- def SetTrimIsoFlags(self):
-  """
+        pass
+
+    def SetTrimIsoFlags(self):
+        """
   SetTrimIsoFlags(self: Brep)
 
    This function can be used to set the BrepTrim::m_iso
@@ -1297,9 +1378,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
      type information.
   """
-  pass
- def SetVertices(self):
-  """
+        pass
+
+    def SetVertices(self):
+        """
   SetVertices(self: Brep)
 
    This function can be used to compute vertex information for a
@@ -1316,9 +1398,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
     information.
   """
-  pass
- def Split(self,splitter,intersectionTolerance,toleranceWasRaised=None):
-  """
+        pass
+
+    def Split(self, splitter, intersectionTolerance, toleranceWasRaised=None):
+        """
   Split(self: Brep,splitter: Brep,intersectionTolerance: float) -> (Array[Brep],bool)
 
   
@@ -1347,9 +1430,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: A new array of breps. This array can be empty.
   """
-  pass
- def Standardize(self):
-  """
+        pass
+
+    def Standardize(self):
+        """
   Standardize(self: Brep)
 
    Standardizes all trims,edges,and faces in the brep.
@@ -1362,9 +1446,10 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
     unused curves and surfaces.
   """
-  pass
- def Trim(self,cutter,intersectionTolerance):
-  """
+        pass
+
+    def Trim(self, cutter, intersectionTolerance):
+        """
   Trim(self: Brep,cutter: Plane,intersectionTolerance: float) -> Array[Brep]
 
   
@@ -1443,10 +1528,11 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
    Returns: This Brep is not modified,the trim results are returned in an array.
   """
-  pass
- @staticmethod
- def TryConvertBrep(geometry):
-  """
+        pass
+
+    @staticmethod
+    def TryConvertBrep(geometry):
+        """
   TryConvertBrep(geometry: GeometryBase) -> Brep
 
   
@@ -1463,38 +1549,44 @@ class Brep(GeometryBase,IDisposable,ISerializable):
 
      begin with,the same object is returned,i.e. it is not duplicated.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self):
+        """
   __new__(cls: type)
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- Curves2D=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Parameter space trimming curves (used by trims)
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    Curves2D = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Parameter space trimming curves (used by trims)
 
 
 
@@ -1504,8 +1596,8 @@ Get: Curves2D(self: Brep) -> BrepCurveList
 
 """
 
- Curves3D=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Pointers to 3d curves (used by edges)
+    Curves3D = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Pointers to 3d curves (used by edges)
 
 
 
@@ -1515,8 +1607,8 @@ Get: Curves3D(self: Brep) -> BrepCurveList
 
 """
 
- Edges=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the brep edges list accessor.
+    Edges = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the brep edges list accessor.
 
 
 
@@ -1526,8 +1618,8 @@ Get: Edges(self: Brep) -> BrepEdgeList
 
 """
 
- Faces=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the brep faces list accessor.
+    Faces = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the brep faces list accessor.
 
 
 
@@ -1537,8 +1629,10 @@ Get: Faces(self: Brep) -> BrepFaceList
 
 """
 
- IsManifold=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether or not the Brep is manifold. 
+    IsManifold = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether or not the Brep is manifold. 
 
    Non-Manifold breps have at least one edge that is shared among three or more faces.
 
@@ -1550,8 +1644,8 @@ Get: IsManifold(self: Brep) -> bool
 
 """
 
- IsSolid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determines whether this brep is a solid,or a closed oriented manifold.
+    IsSolid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Determines whether this brep is a solid,or a closed oriented manifold.
 
 
 
@@ -1561,8 +1655,8 @@ Get: IsSolid(self: Brep) -> bool
 
 """
 
- IsSurface=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns true if the Brep has a single face and that face is geometrically the same
+    IsSurface = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns true if the Brep has a single face and that face is geometrically the same
 
    as the underlying surface.  I.e.,the face has trivial trimming.
 
@@ -1582,8 +1676,8 @@ Get: IsSurface(self: Brep) -> bool
 
 """
 
- Loops=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the brep loop list accessor.
+    Loops = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the brep loop list accessor.
 
 
 
@@ -1593,8 +1687,10 @@ Get: Loops(self: Brep) -> BrepLoopList
 
 """
 
- SolidOrientation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the solid orientation state of this Brep.
+    SolidOrientation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the solid orientation state of this Brep.
 
 
 
@@ -1604,8 +1700,8 @@ Get: SolidOrientation(self: Brep) -> BrepSolidOrientation
 
 """
 
- Surfaces=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Parametric surfaces used by faces
+    Surfaces = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Parametric surfaces used by faces
 
 
 
@@ -1615,8 +1711,8 @@ Get: Surfaces(self: Brep) -> BrepSurfaceList
 
 """
 
- Trims=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the brep trims list accessor.
+    Trims = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the brep trims list accessor.
 
 
 
@@ -1626,8 +1722,8 @@ Get: Trims(self: Brep) -> BrepTrimList
 
 """
 
- Vertices=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """
+    Vertices = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """
 
 
 
@@ -1636,5 +1732,3 @@ Get: Vertices(self: Brep) -> BrepVertexList
 
 
 """
-
-

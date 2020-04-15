@@ -1,7 +1,8 @@
 class IGetLocalPathForOpenCallback:
- """ The interface used to provide custom support for the "Open (and Unload)" command for Revit Links obtained as external resources. """
- def GetLocalPathForOpen(self,desiredResource):
-  """
+    """ The interface used to provide custom support for the "Open (and Unload)" command for Revit Links obtained as external resources. """
+
+    def GetLocalPathForOpen(self, desiredResource):
+        """
   GetLocalPathForOpen(self: IGetLocalPathForOpenCallback,desiredResource: ExternalResourceReference) -> str
 
   
@@ -24,7 +25,8 @@ class IGetLocalPathForOpenCallback:
 
     document.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

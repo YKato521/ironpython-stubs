@@ -8,8 +8,9 @@
 # no functions
 # classes
 
-class ClassArrayObjRef(object,IDisposable):
- """
+
+class ClassArrayObjRef(object, IDisposable):
+    """
  Represents a wrapper to an unmanaged "array" (list) of CRhinoObjRef instances.
 
     Wrapper for a C++ ON_ClassArray of CRhinoObjRef
@@ -20,8 +21,9 @@ class ClassArrayObjRef(object,IDisposable):
 
  ClassArrayObjRef(objrefs: IEnumerable[ObjRef])
  """
- def Add(self,objref):
-  """
+
+    def Add(self, objref):
+        """
   Add(self: ClassArrayObjRef,objref: ObjRef)
 
    Adds an ObjRef to the list.
@@ -30,9 +32,10 @@ class ClassArrayObjRef(object,IDisposable):
 
    objref: An ObjRef to add.
   """
-  pass
- def ConstPointer(self):
-  """
+        pass
+
+    def ConstPointer(self):
+        """
   ConstPointer(self: ClassArrayObjRef) -> IntPtr
 
   
@@ -41,16 +44,18 @@ class ClassArrayObjRef(object,IDisposable):
 
    Returns: The const pointer.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: ClassArrayObjRef)
 
    Actively reclaims unmanaged resources that this instance uses.
   """
-  pass
- def NonConstPointer(self):
-  """
+        pass
+
+    def NonConstPointer(self):
+        """
   NonConstPointer(self: ClassArrayObjRef) -> IntPtr
 
   
@@ -59,9 +64,10 @@ class ClassArrayObjRef(object,IDisposable):
 
    Returns: The non-const pointer.
   """
-  pass
- def ToNonConstArray(self):
-  """
+        pass
+
+    def ToNonConstArray(self):
+        """
   ToNonConstArray(self: ClassArrayObjRef) -> Array[ObjRef]
 
   
@@ -70,42 +76,49 @@ class ClassArrayObjRef(object,IDisposable):
 
    Returns: The managed array.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,objrefs=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, objrefs=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,objrefs: IEnumerable[ObjRef])
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of CRhinoObjRef instances in this array.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of CRhinoObjRef instances in this array.
 
 
 
@@ -116,9 +129,8 @@ Get: Count(self: ClassArrayObjRef) -> int
 """
 
 
-
-class ClassArrayOnObjRef(object,IDisposable):
- """
+class ClassArrayOnObjRef(object, IDisposable):
+    """
  Represents a wrapper to an unmanaged "array" (list) of ON_ObjRef instances.
 
     Wrapper for a C++ ON_ClassArray of ON_ObjRef
@@ -129,8 +141,9 @@ class ClassArrayOnObjRef(object,IDisposable):
 
  ClassArrayOnObjRef(objrefs: IEnumerable[ObjRef])
  """
- def Add(self,objref):
-  """
+
+    def Add(self, objref):
+        """
   Add(self: ClassArrayOnObjRef,objref: ObjRef)
 
    Adds an ObjRef to the list.
@@ -139,9 +152,10 @@ class ClassArrayOnObjRef(object,IDisposable):
 
    objref: An ObjRef to add.
   """
-  pass
- def ConstPointer(self):
-  """
+        pass
+
+    def ConstPointer(self):
+        """
   ConstPointer(self: ClassArrayOnObjRef) -> IntPtr
 
   
@@ -150,16 +164,18 @@ class ClassArrayOnObjRef(object,IDisposable):
 
    Returns: The const pointer.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: ClassArrayOnObjRef)
 
    Actively reclaims unmanaged resources that this instance uses.
   """
-  pass
- def NonConstPointer(self):
-  """
+        pass
+
+    def NonConstPointer(self):
+        """
   NonConstPointer(self: ClassArrayOnObjRef) -> IntPtr
 
   
@@ -168,9 +184,10 @@ class ClassArrayOnObjRef(object,IDisposable):
 
    Returns: The non-const pointer.
   """
-  pass
- def ToNonConstArray(self):
-  """
+        pass
+
+    def ToNonConstArray(self):
+        """
   ToNonConstArray(self: ClassArrayOnObjRef) -> Array[ObjRef]
 
   
@@ -179,42 +196,49 @@ class ClassArrayOnObjRef(object,IDisposable):
 
    Returns: The managed array.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,objrefs=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, objrefs=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,objrefs: IEnumerable[ObjRef])
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of ObjRef instances in this array.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of ObjRef instances in this array.
 
 
 
@@ -225,30 +249,30 @@ Get: Count(self: ClassArrayOnObjRef) -> int
 """
 
 
-
 class MeshPointDataStruct(object):
- """
+    """
  This is only needed when passing values to the Rhino C++ core,ignore
 
     for .NET plug-ins.
  """
- m_ci_index=None
- m_ci_type=None
- m_edge_index=None
- m_et=None
- m_face_index=None
- m_Px=None
- m_Py=None
- m_Pz=None
- m_t0=None
- m_t1=None
- m_t2=None
- m_t3=None
- m_Triangle=None
+
+    m_ci_index = None
+    m_ci_type = None
+    m_edge_index = None
+    m_et = None
+    m_face_index = None
+    m_Px = None
+    m_Py = None
+    m_Pz = None
+    m_t0 = None
+    m_t1 = None
+    m_t2 = None
+    m_t3 = None
+    m_Triangle = None
 
 
-class SimpleArrayBrepPointer(object,IDisposable):
- """
+class SimpleArrayBrepPointer(object, IDisposable):
+    """
  Wrapper for a C++ ON_SimpleArray<ON_Brep*> or ON_SimpleArray<const ON_Brep*>
 
     If you are not writing C++ code then this class is not for you.
@@ -257,8 +281,9 @@ class SimpleArrayBrepPointer(object,IDisposable):
 
  SimpleArrayBrepPointer()
  """
- def Add(self,brep,asConst):
-  """
+
+    def Add(self, brep, asConst):
+        """
   Add(self: SimpleArrayBrepPointer,brep: Brep,asConst: bool)
 
    Adds a brep to the list.
@@ -269,9 +294,10 @@ class SimpleArrayBrepPointer(object,IDisposable):
 
    asConst: Whether this brep should be treated as non-modifiable.
   """
-  pass
- def ConstPointer(self):
-  """
+        pass
+
+    def ConstPointer(self):
+        """
   ConstPointer(self: SimpleArrayBrepPointer) -> IntPtr
 
   
@@ -280,16 +306,18 @@ class SimpleArrayBrepPointer(object,IDisposable):
 
    Returns: The const pointer.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: SimpleArrayBrepPointer)
 
    Actively reclaims unmanaged resources that this instance uses.
   """
-  pass
- def NonConstPointer(self):
-  """
+        pass
+
+    def NonConstPointer(self):
+        """
   NonConstPointer(self: SimpleArrayBrepPointer) -> IntPtr
 
   
@@ -298,9 +326,10 @@ class SimpleArrayBrepPointer(object,IDisposable):
 
    Returns: The non-const pointer.
   """
-  pass
- def ToNonConstArray(self):
-  """
+        pass
+
+    def ToNonConstArray(self):
+        """
   ToNonConstArray(self: SimpleArrayBrepPointer) -> Array[Brep]
 
   
@@ -309,34 +338,40 @@ class SimpleArrayBrepPointer(object,IDisposable):
 
    Returns: The managed array.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the amount of breps in this array.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the amount of breps in this array.
 
 
 
@@ -347,9 +382,8 @@ Get: Count(self: SimpleArrayBrepPointer) -> int
 """
 
 
-
-class SimpleArrayCurvePointer(object,IDisposable):
- """
+class SimpleArrayCurvePointer(object, IDisposable):
+    """
  Wrapper for a C++ ON_SimpleArray of ON_Curve* or const ON_Curve*.  If you are not
 
     writing C++ code,then you can ignore this class.
@@ -360,8 +394,9 @@ class SimpleArrayCurvePointer(object,IDisposable):
 
  SimpleArrayCurvePointer(curves: IEnumerable[Curve])
  """
- def ConstPointer(self):
-  """
+
+    def ConstPointer(self):
+        """
   ConstPointer(self: SimpleArrayCurvePointer) -> IntPtr
 
   
@@ -370,16 +405,18 @@ class SimpleArrayCurvePointer(object,IDisposable):
 
    Returns: The const pointer.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: SimpleArrayCurvePointer)
 
    Actively reclaims unmanaged resources that this instance uses.
   """
-  pass
- def NonConstPointer(self):
-  """
+        pass
+
+    def NonConstPointer(self):
+        """
   NonConstPointer(self: SimpleArrayCurvePointer) -> IntPtr
 
   
@@ -388,9 +425,10 @@ class SimpleArrayCurvePointer(object,IDisposable):
 
    Returns: The non-const pointer.
   """
-  pass
- def ToNonConstArray(self):
-  """
+        pass
+
+    def ToNonConstArray(self):
+        """
   ToNonConstArray(self: SimpleArrayCurvePointer) -> Array[Curve]
 
   
@@ -399,40 +437,46 @@ class SimpleArrayCurvePointer(object,IDisposable):
 
    Returns: The managed array.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,curves=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, curves=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,curves: IEnumerable[Curve])
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
+        pass
 
-class SimpleArrayDouble(object,IDisposable):
- """
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+
+class SimpleArrayDouble(object, IDisposable):
+    """
  Wrapper for ON_SimpleArray<double>. If you are not writing C++ code,
 
     then this class is not for you.
@@ -443,8 +487,9 @@ class SimpleArrayDouble(object,IDisposable):
 
  SimpleArrayDouble(items: IEnumerable[float])
  """
- def ConstPointer(self):
-  """
+
+    def ConstPointer(self):
+        """
   ConstPointer(self: SimpleArrayDouble) -> IntPtr
 
   
@@ -453,16 +498,18 @@ class SimpleArrayDouble(object,IDisposable):
 
    Returns: The const pointer.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: SimpleArrayDouble)
 
    Actively reclaims unmanaged resources that this instance uses.
   """
-  pass
- def NonConstPointer(self):
-  """
+        pass
+
+    def NonConstPointer(self):
+        """
   NonConstPointer(self: SimpleArrayDouble) -> IntPtr
 
   
@@ -471,9 +518,10 @@ class SimpleArrayDouble(object,IDisposable):
 
    Returns: The non-const pointer.
   """
-  pass
- def ToArray(self):
-  """
+        pass
+
+    def ToArray(self):
+        """
   ToArray(self: SimpleArrayDouble) -> Array[float]
 
   
@@ -482,39 +530,45 @@ class SimpleArrayDouble(object,IDisposable):
 
    Returns: The managed array.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,items=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, items=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,items: IEnumerable[float])
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the amount of elements in this array.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the amount of elements in this array.
 
 
 
@@ -525,9 +579,8 @@ Get: Count(self: SimpleArrayDouble) -> int
 """
 
 
-
-class SimpleArrayGeometryPointer(object,IDisposable):
- """
+class SimpleArrayGeometryPointer(object, IDisposable):
+    """
  Wrapper for a C++ ON_SimpleArray<ON_Geometry*>* or ON_SimpleArray<const ON_Geometry*>.
 
     If you are not writing C++ code,then this class is not for you.
@@ -540,8 +593,9 @@ class SimpleArrayGeometryPointer(object,IDisposable):
 
  SimpleArrayGeometryPointer(geometry: IEnumerable)
  """
- def ConstPointer(self):
-  """
+
+    def ConstPointer(self):
+        """
   ConstPointer(self: SimpleArrayGeometryPointer) -> IntPtr
 
   
@@ -550,16 +604,18 @@ class SimpleArrayGeometryPointer(object,IDisposable):
 
    Returns: The const pointer.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: SimpleArrayGeometryPointer)
 
    Actively reclaims unmanaged resources that this instance uses.
   """
-  pass
- def NonConstPointer(self):
-  """
+        pass
+
+    def NonConstPointer(self):
+        """
   NonConstPointer(self: SimpleArrayGeometryPointer) -> IntPtr
 
   
@@ -568,9 +624,10 @@ class SimpleArrayGeometryPointer(object,IDisposable):
 
    Returns: The non-const pointer.
   """
-  pass
- def ToNonConstArray(self):
-  """
+        pass
+
+    def ToNonConstArray(self):
+        """
   ToNonConstArray(self: SimpleArrayGeometryPointer) -> Array[GeometryBase]
 
   
@@ -579,42 +636,48 @@ class SimpleArrayGeometryPointer(object,IDisposable):
 
    Returns: The managed array.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,geometry=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, geometry=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,geometry: IEnumerable[GeometryBase])
 
   __new__(cls: type,geometry: IEnumerable)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
+        pass
 
-class SimpleArrayGuid(object,IDisposable):
- """
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+
+class SimpleArrayGuid(object, IDisposable):
+    """
  Wrapper for ON_SimpleArray<ON_UUID>. If you are not writing C++ code
 
     then this class is not for you.
@@ -623,8 +686,9 @@ class SimpleArrayGuid(object,IDisposable):
 
  SimpleArrayGuid()
  """
- def ConstPointer(self):
-  """
+
+    def ConstPointer(self):
+        """
   ConstPointer(self: SimpleArrayGuid) -> IntPtr
 
   
@@ -633,16 +697,18 @@ class SimpleArrayGuid(object,IDisposable):
 
    Returns: The const pointer.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: SimpleArrayGuid)
 
    Actively reclaims unmanaged resources that this instance uses.
   """
-  pass
- def NonConstPointer(self):
-  """
+        pass
+
+    def NonConstPointer(self):
+        """
   NonConstPointer(self: SimpleArrayGuid) -> IntPtr
 
   
@@ -651,9 +717,10 @@ class SimpleArrayGuid(object,IDisposable):
 
    Returns: The non-const pointer.
   """
-  pass
- def ToArray(self):
-  """
+        pass
+
+    def ToArray(self):
+        """
   ToArray(self: SimpleArrayGuid) -> Array[Guid]
 
   
@@ -662,31 +729,36 @@ class SimpleArrayGuid(object,IDisposable):
 
    Returns: The managed array.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the amount of elements in this array.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the amount of elements in this array.
 
 
 
@@ -697,9 +769,8 @@ Get: Count(self: SimpleArrayGuid) -> int
 """
 
 
-
-class SimpleArrayInt(object,IDisposable):
- """
+class SimpleArrayInt(object, IDisposable):
+    """
  Wrapper for ON_SimpleArray<int>. If you are not writing C++ code
 
     then this class is not for you.
@@ -710,8 +781,9 @@ class SimpleArrayInt(object,IDisposable):
 
  SimpleArrayInt(values: IEnumerable[int])
  """
- def ConstPointer(self):
-  """
+
+    def ConstPointer(self):
+        """
   ConstPointer(self: SimpleArrayInt) -> IntPtr
 
   
@@ -720,16 +792,18 @@ class SimpleArrayInt(object,IDisposable):
 
    Returns: The const pointer.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: SimpleArrayInt)
 
    Actively reclaims unmanaged resources that this instance uses.
   """
-  pass
- def NonConstPointer(self):
-  """
+        pass
+
+    def NonConstPointer(self):
+        """
   NonConstPointer(self: SimpleArrayInt) -> IntPtr
 
   
@@ -738,9 +812,10 @@ class SimpleArrayInt(object,IDisposable):
 
    Returns: The non-const pointer.
   """
-  pass
- def ToArray(self):
-  """
+        pass
+
+    def ToArray(self):
+        """
   ToArray(self: SimpleArrayInt) -> Array[int]
 
   
@@ -749,39 +824,45 @@ class SimpleArrayInt(object,IDisposable):
 
    Returns: The managed array.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,values=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, values=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,values: IEnumerable[int])
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the amount of elements in this array.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the amount of elements in this array.
 
 
 
@@ -792,9 +873,8 @@ Get: Count(self: SimpleArrayInt) -> int
 """
 
 
-
-class SimpleArrayInterval(object,IDisposable):
- """
+class SimpleArrayInterval(object, IDisposable):
+    """
  Wrapper for ON_SimpleArray<ON_Imterval>. If you are not writing C++ code
 
     then this class is not for you.
@@ -803,8 +883,9 @@ class SimpleArrayInterval(object,IDisposable):
 
  SimpleArrayInterval()
  """
- def ConstPointer(self):
-  """
+
+    def ConstPointer(self):
+        """
   ConstPointer(self: SimpleArrayInterval) -> IntPtr
 
   
@@ -813,16 +894,18 @@ class SimpleArrayInterval(object,IDisposable):
 
    Returns: The const pointer.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: SimpleArrayInterval)
 
    Actively reclaims unmanaged resources that this instance uses.
   """
-  pass
- def NonConstPointer(self):
-  """
+        pass
+
+    def NonConstPointer(self):
+        """
   NonConstPointer(self: SimpleArrayInterval) -> IntPtr
 
   
@@ -831,9 +914,10 @@ class SimpleArrayInterval(object,IDisposable):
 
    Returns: The non-const pointer.
   """
-  pass
- def ToArray(self):
-  """
+        pass
+
+    def ToArray(self):
+        """
   ToArray(self: SimpleArrayInterval) -> Array[Interval]
 
   
@@ -842,31 +926,36 @@ class SimpleArrayInterval(object,IDisposable):
 
    Returns: The managed array.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the amount of elements in this array.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the amount of elements in this array.
 
 
 
@@ -877,9 +966,8 @@ Get: Count(self: SimpleArrayInterval) -> int
 """
 
 
-
-class SimpleArrayLine(object,IDisposable):
- """
+class SimpleArrayLine(object, IDisposable):
+    """
  Wrapper for ON_SimpleArray<ON_Line>. If you are not writing C++ code
 
     then this class is not for you.
@@ -888,8 +976,9 @@ class SimpleArrayLine(object,IDisposable):
 
  SimpleArrayLine()
  """
- def ConstPointer(self):
-  """
+
+    def ConstPointer(self):
+        """
   ConstPointer(self: SimpleArrayLine) -> IntPtr
 
   
@@ -898,16 +987,18 @@ class SimpleArrayLine(object,IDisposable):
 
    Returns: The const pointer.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: SimpleArrayLine)
 
    Actively reclaims unmanaged resources that this instance uses.
   """
-  pass
- def NonConstPointer(self):
-  """
+        pass
+
+    def NonConstPointer(self):
+        """
   NonConstPointer(self: SimpleArrayLine) -> IntPtr
 
   
@@ -916,9 +1007,10 @@ class SimpleArrayLine(object,IDisposable):
 
    Returns: The non-const pointer.
   """
-  pass
- def ToArray(self):
-  """
+        pass
+
+    def ToArray(self):
+        """
   ToArray(self: SimpleArrayLine) -> Array[Line]
 
   
@@ -927,31 +1019,36 @@ class SimpleArrayLine(object,IDisposable):
 
    Returns: The managed array.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the amount of lines in this array.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the amount of lines in this array.
 
 
 
@@ -962,9 +1059,8 @@ Get: Count(self: SimpleArrayLine) -> int
 """
 
 
-
-class SimpleArrayMeshPointer(object,IDisposable):
- """
+class SimpleArrayMeshPointer(object, IDisposable):
+    """
  Represents a wrapper to an unmanaged array of mesh pointers.
 
     Wrapper for a C++ ON_SimpleArray of ON_Mesh* or const ON_Mesh*. If you are not
@@ -975,8 +1071,9 @@ class SimpleArrayMeshPointer(object,IDisposable):
 
  SimpleArrayMeshPointer()
  """
- def Add(self,mesh,asConst):
-  """
+
+    def Add(self, mesh, asConst):
+        """
   Add(self: SimpleArrayMeshPointer,mesh: Mesh,asConst: bool)
 
    Adds a mesh to the list.
@@ -987,9 +1084,10 @@ class SimpleArrayMeshPointer(object,IDisposable):
 
    asConst: Whether this mesh should be treated as non-modifiable.
   """
-  pass
- def ConstPointer(self):
-  """
+        pass
+
+    def ConstPointer(self):
+        """
   ConstPointer(self: SimpleArrayMeshPointer) -> IntPtr
 
   
@@ -998,16 +1096,18 @@ class SimpleArrayMeshPointer(object,IDisposable):
 
    Returns: The const pointer.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: SimpleArrayMeshPointer)
 
    Actively reclaims unmanaged resources that this instance uses.
   """
-  pass
- def NonConstPointer(self):
-  """
+        pass
+
+    def NonConstPointer(self):
+        """
   NonConstPointer(self: SimpleArrayMeshPointer) -> IntPtr
 
   
@@ -1016,9 +1116,10 @@ class SimpleArrayMeshPointer(object,IDisposable):
 
    Returns: The non-const pointer.
   """
-  pass
- def ToNonConstArray(self):
-  """
+        pass
+
+    def ToNonConstArray(self):
+        """
   ToNonConstArray(self: SimpleArrayMeshPointer) -> Array[Mesh]
 
   
@@ -1027,34 +1128,40 @@ class SimpleArrayMeshPointer(object,IDisposable):
 
    Returns: The managed array.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the amount of meshes in this array.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the amount of meshes in this array.
 
 
 
@@ -1065,9 +1172,8 @@ Get: Count(self: SimpleArrayMeshPointer) -> int
 """
 
 
-
-class SimpleArrayPoint2d(object,IDisposable):
- """
+class SimpleArrayPoint2d(object, IDisposable):
+    """
  ON_SimpleArray<ON_2dPoint> class wrapper.  If you are not writing
 
     C++ code then this class is not for you.
@@ -1076,8 +1182,9 @@ class SimpleArrayPoint2d(object,IDisposable):
 
  SimpleArrayPoint2d()
  """
- def ConstPointer(self):
-  """
+
+    def ConstPointer(self):
+        """
   ConstPointer(self: SimpleArrayPoint2d) -> IntPtr
 
   
@@ -1086,16 +1193,18 @@ class SimpleArrayPoint2d(object,IDisposable):
 
    Returns: The const pointer.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: SimpleArrayPoint2d)
 
    Actively reclaims unmanaged resources that this instance uses.
   """
-  pass
- def NonConstPointer(self):
-  """
+        pass
+
+    def NonConstPointer(self):
+        """
   NonConstPointer(self: SimpleArrayPoint2d) -> IntPtr
 
   
@@ -1104,9 +1213,10 @@ class SimpleArrayPoint2d(object,IDisposable):
 
    Returns: The non-const pointer.
   """
-  pass
- def ToArray(self):
-  """
+        pass
+
+    def ToArray(self):
+        """
   ToArray(self: SimpleArrayPoint2d) -> Array[Point2d]
 
   
@@ -1115,31 +1225,36 @@ class SimpleArrayPoint2d(object,IDisposable):
 
    Returns: The managed array.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the amount of points in this array.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the amount of points in this array.
 
 
 
@@ -1150,9 +1265,8 @@ Get: Count(self: SimpleArrayPoint2d) -> int
 """
 
 
-
-class SimpleArrayPoint3d(object,IDisposable):
- """
+class SimpleArrayPoint3d(object, IDisposable):
+    """
  ON_SimpleArray<ON_3dPoint>,ON_3dPointArray,ON_PolyLine all have the same size
 
     This class wraps all of these C++ versions.  If you are not writing C++ code then this
@@ -1163,8 +1277,9 @@ class SimpleArrayPoint3d(object,IDisposable):
 
  SimpleArrayPoint3d()
  """
- def ConstPointer(self):
-  """
+
+    def ConstPointer(self):
+        """
   ConstPointer(self: SimpleArrayPoint3d) -> IntPtr
 
   
@@ -1173,16 +1288,18 @@ class SimpleArrayPoint3d(object,IDisposable):
 
    Returns: The const pointer.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: SimpleArrayPoint3d)
 
    Actively reclaims unmanaged resources that this instance uses.
   """
-  pass
- def NonConstPointer(self):
-  """
+        pass
+
+    def NonConstPointer(self):
+        """
   NonConstPointer(self: SimpleArrayPoint3d) -> IntPtr
 
   
@@ -1191,9 +1308,10 @@ class SimpleArrayPoint3d(object,IDisposable):
 
    Returns: The non-const pointer.
   """
-  pass
- def ToArray(self):
-  """
+        pass
+
+    def ToArray(self):
+        """
   ToArray(self: SimpleArrayPoint3d) -> Array[Point3d]
 
   
@@ -1202,31 +1320,36 @@ class SimpleArrayPoint3d(object,IDisposable):
 
    Returns: The managed array.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the amount of points in this array.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the amount of points in this array.
 
 
 
@@ -1237,9 +1360,8 @@ Get: Count(self: SimpleArrayPoint3d) -> int
 """
 
 
-
-class SimpleArraySurfacePointer(object,IDisposable):
- """
+class SimpleArraySurfacePointer(object, IDisposable):
+    """
  Wrapper for a C++ ON_SimpleArray of ON_Surface* or const ON_Surface*.  If
 
     you are not writing C++ code then this class is not for you.
@@ -1248,8 +1370,9 @@ class SimpleArraySurfacePointer(object,IDisposable):
 
  SimpleArraySurfacePointer()
  """
- def ConstPointer(self):
-  """
+
+    def ConstPointer(self):
+        """
   ConstPointer(self: SimpleArraySurfacePointer) -> IntPtr
 
   
@@ -1258,16 +1381,18 @@ class SimpleArraySurfacePointer(object,IDisposable):
 
    Returns: The const pointer.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: SimpleArraySurfacePointer)
 
    Actively reclaims unmanaged resources that this instance uses.
   """
-  pass
- def NonConstPointer(self):
-  """
+        pass
+
+    def NonConstPointer(self):
+        """
   NonConstPointer(self: SimpleArraySurfacePointer) -> IntPtr
 
   
@@ -1276,9 +1401,10 @@ class SimpleArraySurfacePointer(object,IDisposable):
 
    Returns: The non-const pointer.
   """
-  pass
- def ToNonConstArray(self):
-  """
+        pass
+
+    def ToNonConstArray(self):
+        """
   ToNonConstArray(self: SimpleArraySurfacePointer) -> Array[Surface]
 
   
@@ -1289,32 +1415,37 @@ class SimpleArraySurfacePointer(object,IDisposable):
 
    Returns: The managed array.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
+        pass
 
-class StringHolder(object,IDisposable):
- """
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+
+class StringHolder(object, IDisposable):
+    """
  This class is used to pass strings back and forth between managed
 
     and unmanaged code.  This should not be be needed by plug-ins.
@@ -1323,8 +1454,9 @@ class StringHolder(object,IDisposable):
 
  StringHolder()
  """
- def ConstPointer(self):
-  """
+
+    def ConstPointer(self):
+        """
   ConstPointer(self: StringHolder) -> IntPtr
 
   
@@ -1333,26 +1465,29 @@ class StringHolder(object,IDisposable):
 
      never need this.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: StringHolder)
 
    IDispose implementation
   """
-  pass
- @staticmethod
- def GetString(pStringHolder):
-  """
+        pass
+
+    @staticmethod
+    def GetString(pStringHolder):
+        """
   GetString(pStringHolder: IntPtr) -> str
 
   
 
    Get managed string from unmanaged ON_wString pointer.
   """
-  pass
- def NonConstPointer(self):
-  """
+        pass
+
+    def NonConstPointer(self):
+        """
   NonConstPointer(self: StringHolder) -> IntPtr
 
   
@@ -1361,43 +1496,50 @@ class StringHolder(object,IDisposable):
 
      never need this.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: StringHolder) -> str
 
   
 
    Marshal unmanaged ON_wString to a managed .NET string
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
+        pass
 
-class StringWrapper(object,IDisposable):
- """
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+
+class StringWrapper(object, IDisposable):
+    """
  Represents a wrapper to an unmanaged OpenNurbs string.
 
     Wraps a C++ ON_wString*.
@@ -1408,25 +1550,28 @@ class StringWrapper(object,IDisposable):
 
  StringWrapper(s: str)
  """
- def Dispose(self):
-  """
+
+    def Dispose(self):
+        """
   Dispose(self: StringWrapper)
 
    Actively reclaims unmanaged resources that this instance uses.
   """
-  pass
- @staticmethod
- def GetStringFromPointer(pConstON_wString):
-  """
+        pass
+
+    @staticmethod
+    def GetStringFromPointer(pConstON_wString):
+        """
   GetStringFromPointer(pConstON_wString: IntPtr) -> str
 
   
 
    Get string from an ON_wString*
   """
-  pass
- def SetString(self,s):
-  """
+        pass
+
+    def SetString(self, s):
+        """
   SetString(self: StringWrapper,s: str)
 
    Set contents of this string.
@@ -1435,17 +1580,19 @@ class StringWrapper(object,IDisposable):
 
    s: The new string.
   """
-  pass
- @staticmethod
- def SetStringOnPointer(pON_wString,s):
-  """
+        pass
+
+    @staticmethod
+    def SetStringOnPointer(pON_wString, s):
+        """
   SetStringOnPointer(pON_wString: IntPtr,s: str)
 
    Set contents of an ON_wString*
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: StringWrapper) -> str
 
   
@@ -1454,41 +1601,50 @@ class StringWrapper(object,IDisposable):
 
    Returns: A managed string.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,s=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, s=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,s: str)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- ConstPointer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the const pointer (const ON_wString*).
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    ConstPointer = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the const pointer (const ON_wString*).
 
 
 
@@ -1498,8 +1654,10 @@ Get: ConstPointer(self: StringWrapper) -> IntPtr
 
 """
 
- NonConstPointer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the non-const pointer (ON_wString*).
+    NonConstPointer = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the non-const pointer (ON_wString*).
 
 
 
@@ -1508,6 +1666,3 @@ Get: NonConstPointer(self: StringWrapper) -> IntPtr
 
 
 """
-
-
-

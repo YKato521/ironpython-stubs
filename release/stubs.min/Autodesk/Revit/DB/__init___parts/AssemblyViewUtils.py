@@ -1,8 +1,11 @@
 class AssemblyViewUtils(object):
- """ Utilities that provide capabilities related to assembly view creation and validation. """
- @staticmethod
- def AcquireAssemblyViews(document,sourceAssemblyInstanceId,targetAssemblyInstanceId):
-  """
+    """ Utilities that provide capabilities related to assembly view creation and validation. """
+
+    @staticmethod
+    def AcquireAssemblyViews(
+        document, sourceAssemblyInstanceId, targetAssemblyInstanceId
+    ):
+        """
   AcquireAssemblyViews(document: Document,sourceAssemblyInstanceId: ElementId,targetAssemblyInstanceId: ElementId)
 
    Transfers the assembly views owned by a source assembly instance to a target 
@@ -21,10 +24,13 @@ class AssemblyViewUtils(object):
 
     views.
   """
-  pass
- @staticmethod
- def Create3DOrthographic(document,assemblyInstanceId,viewTemplateId=None,isAssigned=None):
-  """
+        pass
+
+    @staticmethod
+    def Create3DOrthographic(
+        document, assemblyInstanceId, viewTemplateId=None, isAssigned=None
+    ):
+        """
   Create3DOrthographic(document: Document,assemblyInstanceId: ElementId) -> View3D
 
   
@@ -73,10 +79,13 @@ class AssemblyViewUtils(object):
 
    Returns: A new orthographic 3D assembly view.
   """
-  pass
- @staticmethod
- def CreateDetailSection(document,assemblyInstanceId,direction,viewTemplateId=None,isAssigned=None):
-  """
+        pass
+
+    @staticmethod
+    def CreateDetailSection(
+        document, assemblyInstanceId, direction, viewTemplateId=None, isAssigned=None
+    ):
+        """
   CreateDetailSection(document: Document,assemblyInstanceId: ElementId,direction: AssemblyDetailViewOrientation) -> ViewSection
 
   
@@ -117,10 +126,13 @@ class AssemblyViewUtils(object):
 
    Returns: A new detail section assembly view.
   """
-  pass
- @staticmethod
- def CreateMaterialTakeoff(document,assemblyInstanceId,viewTemplateId=None,isAssigned=None):
-  """
+        pass
+
+    @staticmethod
+    def CreateMaterialTakeoff(
+        document, assemblyInstanceId, viewTemplateId=None, isAssigned=None
+    ):
+        """
   CreateMaterialTakeoff(document: Document,assemblyInstanceId: ElementId) -> ViewSchedule
 
   
@@ -167,10 +179,13 @@ class AssemblyViewUtils(object):
 
    Returns: A new material takeoff multicategory schedule assembly view.
   """
-  pass
- @staticmethod
- def CreatePartList(document,assemblyInstanceId,viewTemplateId=None,isAssigned=None):
-  """
+        pass
+
+    @staticmethod
+    def CreatePartList(
+        document, assemblyInstanceId, viewTemplateId=None, isAssigned=None
+    ):
+        """
   CreatePartList(document: Document,assemblyInstanceId: ElementId) -> ViewSchedule
 
   
@@ -217,10 +232,11 @@ class AssemblyViewUtils(object):
 
    Returns: A new part list multicategory schedule assembly view.
   """
-  pass
- @staticmethod
- def CreateSheet(document,assemblyInstanceId,titleBlockId):
-  """
+        pass
+
+    @staticmethod
+    def CreateSheet(document, assemblyInstanceId, titleBlockId):
+        """
   CreateSheet(document: Document,assemblyInstanceId: ElementId,titleBlockId: ElementId) -> ViewSheet
 
   
@@ -237,10 +253,17 @@ class AssemblyViewUtils(object):
 
    Returns: A new sheet assembly view.
   """
-  pass
- @staticmethod
- def CreateSingleCategorySchedule(document,assemblyInstanceId,scheduleCategoryId,viewTemplateId=None,isAssigned=None):
-  """
+        pass
+
+    @staticmethod
+    def CreateSingleCategorySchedule(
+        document,
+        assemblyInstanceId,
+        scheduleCategoryId,
+        viewTemplateId=None,
+        isAssigned=None,
+    ):
+        """
   CreateSingleCategorySchedule(document: Document,assemblyInstanceId: ElementId,scheduleCategoryId: ElementId) -> ViewSchedule
 
   
@@ -299,14 +322,14 @@ class AssemblyViewUtils(object):
 
    Returns: A new single-category schedule assembly view.
   """
-  pass
- __all__=[
-  'AcquireAssemblyViews',
-  'Create3DOrthographic',
-  'CreateDetailSection',
-  'CreateMaterialTakeoff',
-  'CreatePartList',
-  'CreateSheet',
-  'CreateSingleCategorySchedule',
- ]
+        pass
 
+    __all__ = [
+        "AcquireAssemblyViews",
+        "Create3DOrthographic",
+        "CreateDetailSection",
+        "CreateMaterialTakeoff",
+        "CreatePartList",
+        "CreateSheet",
+        "CreateSingleCategorySchedule",
+    ]

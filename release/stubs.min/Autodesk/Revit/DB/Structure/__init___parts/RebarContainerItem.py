@@ -1,7 +1,8 @@
-class RebarContainerItem(object,IDisposable):
- """ Provides implementation for Rebar stored in RebarContainer. """
- def CanApplyPresentationMode(self,dBView):
-  """
+class RebarContainerItem(object, IDisposable):
+    """ Provides implementation for Rebar stored in RebarContainer. """
+
+    def CanApplyPresentationMode(self, dBView):
+        """
   CanApplyPresentationMode(self: RebarContainerItem,dBView: View) -> bool
 
   
@@ -14,9 +15,10 @@ class RebarContainerItem(object,IDisposable):
 
    Returns: True if presentation mode can be applied for this view,false otherwise.
   """
-  pass
- def CanUseHookType(self,proposedHookId):
-  """
+        pass
+
+    def CanUseHookType(self, proposedHookId):
+        """
   CanUseHookType(self: RebarContainerItem,proposedHookId: ElementId) -> bool
 
   
@@ -33,9 +35,10 @@ class RebarContainerItem(object,IDisposable):
 
    Returns: Returns true if the id is of a valid RebarHookType for the Rebar element.
   """
-  pass
- def ClearPresentationMode(self,dBView):
-  """
+        pass
+
+    def ClearPresentationMode(self, dBView):
+        """
   ClearPresentationMode(self: RebarContainerItem,dBView: View)
 
    Sets the presentation mode for this rebar set to the default (either for a 
@@ -48,9 +51,10 @@ class RebarContainerItem(object,IDisposable):
 
    dBView: The view where the presentation mode will be cleared. NULL for all views
   """
-  pass
- def ComputeDrivingCurves(self):
-  """
+        pass
+
+    def ComputeDrivingCurves(self):
+        """
   ComputeDrivingCurves(self: RebarContainerItem) -> IList[Curve]
 
   
@@ -59,12 +63,14 @@ class RebarContainerItem(object,IDisposable):
 
    Returns: Returns an empty array if an error is encountered.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: RebarContainerItem) """
-  pass
- def DoesBarExistAtPosition(self,barPosition):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: RebarContainerItem) """
+        pass
+
+    def DoesBarExistAtPosition(self, barPosition):
+        """
   DoesBarExistAtPosition(self: RebarContainerItem,barPosition: int) -> bool
 
   
@@ -75,9 +81,10 @@ class RebarContainerItem(object,IDisposable):
 
    barPosition: A bar position index between 0 and NumberOfBarPositions-1.
   """
-  pass
- def FindMatchingPredefinedPresentationMode(self,dBView):
-  """
+        pass
+
+    def FindMatchingPredefinedPresentationMode(self, dBView):
+        """
   FindMatchingPredefinedPresentationMode(self: RebarContainerItem,dBView: View) -> RebarPresentationMode
 
   
@@ -100,9 +107,10 @@ class RebarContainerItem(object,IDisposable):
 
     RebarPresentationMode.Select.
   """
-  pass
- def GetBarPositionTransform(self,barPositionIndex):
-  """
+        pass
+
+    def GetBarPositionTransform(self, barPositionIndex):
+        """
   GetBarPositionTransform(self: RebarContainerItem,barPositionIndex: int) -> Transform
 
   
@@ -121,18 +129,26 @@ class RebarContainerItem(object,IDisposable):
 
    Returns: The position of a bar in the set relative to the first position.
   """
-  pass
- def GetBendData(self):
-  """
+        pass
+
+    def GetBendData(self):
+        """
   GetBendData(self: RebarContainerItem) -> RebarBendData
 
   
 
    Gets the RebarBendData,containing bar and hook information,of the instance.
   """
-  pass
- def GetCenterlineCurves(self,adjustForSelfIntersection,suppressHooks,suppressBendRadius,multiplanarOption=None):
-  """
+        pass
+
+    def GetCenterlineCurves(
+        self,
+        adjustForSelfIntersection,
+        suppressHooks,
+        suppressBendRadius,
+        multiplanarOption=None,
+    ):
+        """
   GetCenterlineCurves(self: RebarContainerItem,adjustForSelfIntersection: bool,suppressHooks: bool,suppressBendRadius: bool) -> IList[Curve]
 
   
@@ -223,9 +239,10 @@ class RebarContainerItem(object,IDisposable):
 
     RebarShape definition.
   """
-  pass
- def GetDistributionPath(self):
-  """
+        pass
+
+    def GetDistributionPath(self):
+        """
   GetDistributionPath(self: RebarContainerItem) -> Line
 
   
@@ -238,9 +255,10 @@ class RebarContainerItem(object,IDisposable):
 
     the set.
   """
-  pass
- def GetHookOrientation(self,iEnd):
-  """
+        pass
+
+    def GetHookOrientation(self, iEnd):
+        """
   GetHookOrientation(self: RebarContainerItem,iEnd: int) -> RebarHookOrientation
 
   
@@ -271,9 +289,10 @@ class RebarContainerItem(object,IDisposable):
 
     behind you,taking the bar's normal as "up."
   """
-  pass
- def GetHookTypeId(self,end):
-  """
+        pass
+
+    def GetHookTypeId(self, end):
+        """
   GetHookTypeId(self: RebarContainerItem,end: int) -> ElementId
 
   
@@ -290,9 +309,10 @@ class RebarContainerItem(object,IDisposable):
 
     the specified end.
   """
-  pass
- def GetPresentationMode(self,dBView):
-  """
+        pass
+
+    def GetPresentationMode(self, dBView):
+        """
   GetPresentationMode(self: RebarContainerItem,dBView: View) -> RebarPresentationMode
 
   
@@ -305,9 +325,10 @@ class RebarContainerItem(object,IDisposable):
 
    Returns: The presentation mode.
   """
-  pass
- def HasPresentationOverrides(self,dBView):
-  """
+        pass
+
+    def HasPresentationOverrides(self, dBView):
+        """
   HasPresentationOverrides(self: RebarContainerItem,dBView: View) -> bool
 
   
@@ -326,9 +347,10 @@ class RebarContainerItem(object,IDisposable):
 
     otherwise.
   """
-  pass
- def IsBarHidden(self,view,barIndex):
-  """
+        pass
+
+    def IsBarHidden(self, view, barIndex):
+        """
   IsBarHidden(self: RebarContainerItem,view: View,barIndex: int) -> bool
 
   
@@ -343,9 +365,10 @@ class RebarContainerItem(object,IDisposable):
 
    Returns: True if the bar is hidden in this view,false otherwise.
   """
-  pass
- def IsRebarInSection(self,dBView):
-  """
+        pass
+
+    def IsRebarInSection(self, dBView):
+        """
   IsRebarInSection(self: RebarContainerItem,dBView: View) -> bool
 
   
@@ -358,12 +381,14 @@ class RebarContainerItem(object,IDisposable):
 
    Returns: True if this rebar set is shown as a cross-section,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: RebarContainerItem,disposing: bool) """
-  pass
- def SetBarHiddenStatus(self,view,barIndex,hide):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: RebarContainerItem,disposing: bool) """
+        pass
+
+    def SetBarHiddenStatus(self, view, barIndex, hide):
+        """
   SetBarHiddenStatus(self: RebarContainerItem,view: View,barIndex: int,hide: bool)
 
    Sets the bar in this rebar set to be hidden or unhidden in the given view.
@@ -376,15 +401,40 @@ class RebarContainerItem(object,IDisposable):
 
    hide: True to hide this bar in the view,false to unhide the bar.
   """
-  pass
- def SetFromCurves(self,style,barType,startHook,endHook,norm,curves,startHookOrient,endHookOrient,useExistingShapeIfPossible,createNewShape):
-  """ SetFromCurves(self: RebarContainerItem,style: RebarStyle,barType: RebarBarType,startHook: RebarHookType,endHook: RebarHookType,norm: XYZ,curves: IList[Curve],startHookOrient: RebarHookOrientation,endHookOrient: RebarHookOrientation,useExistingShapeIfPossible: bool,createNewShape: bool) """
-  pass
- def SetFromCurvesAndShape(self,rebarShape,barType,startHook,endHook,norm,curves,startHookOrient,endHookOrient):
-  """ SetFromCurvesAndShape(self: RebarContainerItem,rebarShape: RebarShape,barType: RebarBarType,startHook: RebarHookType,endHook: RebarHookType,norm: XYZ,curves: IList[Curve],startHookOrient: RebarHookOrientation,endHookOrient: RebarHookOrientation) """
-  pass
- def SetFromRebar(self,rebar):
-  """
+        pass
+
+    def SetFromCurves(
+        self,
+        style,
+        barType,
+        startHook,
+        endHook,
+        norm,
+        curves,
+        startHookOrient,
+        endHookOrient,
+        useExistingShapeIfPossible,
+        createNewShape,
+    ):
+        """ SetFromCurves(self: RebarContainerItem,style: RebarStyle,barType: RebarBarType,startHook: RebarHookType,endHook: RebarHookType,norm: XYZ,curves: IList[Curve],startHookOrient: RebarHookOrientation,endHookOrient: RebarHookOrientation,useExistingShapeIfPossible: bool,createNewShape: bool) """
+        pass
+
+    def SetFromCurvesAndShape(
+        self,
+        rebarShape,
+        barType,
+        startHook,
+        endHook,
+        norm,
+        curves,
+        startHookOrient,
+        endHookOrient,
+    ):
+        """ SetFromCurvesAndShape(self: RebarContainerItem,rebarShape: RebarShape,barType: RebarBarType,startHook: RebarHookType,endHook: RebarHookType,norm: XYZ,curves: IList[Curve],startHookOrient: RebarHookOrientation,endHookOrient: RebarHookOrientation) """
+        pass
+
+    def SetFromRebar(self, rebar):
+        """
   SetFromRebar(self: RebarContainerItem,rebar: Rebar)
 
    Set an instance of a RebarContainerItem element according to a Rebar parameters.
@@ -393,9 +443,10 @@ class RebarContainerItem(object,IDisposable):
 
    rebar: The Rebar.
   """
-  pass
- def SetFromRebarShape(self,rebarShape,barType,origin,xVec,yVec):
-  """
+        pass
+
+    def SetFromRebarShape(self, rebarShape, barType, origin, xVec, yVec):
+        """
   SetFromRebarShape(self: RebarContainerItem,rebarShape: RebarShape,barType: RebarBarType,origin: XYZ,xVec: XYZ,yVec: XYZ)
 
    Set an instance of a RebarContainerItem element,as an instance of a 
@@ -446,9 +497,10 @@ class RebarContainerItem(object,IDisposable):
 
     project.
   """
-  pass
- def SetHookOrientation(self,iEnd,hookOrientation):
-  """
+        pass
+
+    def SetHookOrientation(self, iEnd, hookOrientation):
+        """
   SetHookOrientation(self: RebarContainerItem,iEnd: int,hookOrientation: RebarHookOrientation)
 
    Defines the orientation of the hook plane at the start or at the end of the 
@@ -479,9 +531,10 @@ class RebarContainerItem(object,IDisposable):
 
      with the bar behind you,taking the bar's normal as "up."
   """
-  pass
- def SetHookTypeId(self,end,hookTypeId):
-  """
+        pass
+
+    def SetHookTypeId(self, end, hookTypeId):
+        """
   SetHookTypeId(self: RebarContainerItem,end: int,hookTypeId: ElementId)
 
    Set the id of the RebarHookType to be applied to the rebar.
@@ -496,9 +549,17 @@ class RebarContainerItem(object,IDisposable):
 
     have no hook at the specified end.
   """
-  pass
- def SetLayoutAsFixedNumber(self,numberOfBarPositions,arrayLength,barsOnNormalSide,includeFirstBar,includeLastBar):
-  """
+        pass
+
+    def SetLayoutAsFixedNumber(
+        self,
+        numberOfBarPositions,
+        arrayLength,
+        barsOnNormalSide,
+        includeFirstBar,
+        includeLastBar,
+    ):
+        """
   SetLayoutAsFixedNumber(self: RebarContainerItem,numberOfBarPositions: int,arrayLength: float,barsOnNormalSide: bool,includeFirstBar: bool,includeLastBar: bool)
 
    Sets the Layout Rule property of rebar set to FixedNumber.
@@ -519,9 +580,12 @@ class RebarContainerItem(object,IDisposable):
 
    includeLastBar: Identifies if the last bar in rebar set is shown
   """
-  pass
- def SetLayoutAsMaximumSpacing(self,spacing,arrayLength,barsOnNormalSide,includeFirstBar,includeLastBar):
-  """
+        pass
+
+    def SetLayoutAsMaximumSpacing(
+        self, spacing, arrayLength, barsOnNormalSide, includeFirstBar, includeLastBar
+    ):
+        """
   SetLayoutAsMaximumSpacing(self: RebarContainerItem,spacing: float,arrayLength: float,barsOnNormalSide: bool,includeFirstBar: bool,includeLastBar: bool)
 
    Sets the Layout Rule property of rebar set to MaximumSpacing
@@ -542,9 +606,12 @@ class RebarContainerItem(object,IDisposable):
 
    includeLastBar: Identifies if the last bar in rebar set is shown
   """
-  pass
- def SetLayoutAsMinimumClearSpacing(self,spacing,arrayLength,barsOnNormalSide,includeFirstBar,includeLastBar):
-  """
+        pass
+
+    def SetLayoutAsMinimumClearSpacing(
+        self, spacing, arrayLength, barsOnNormalSide, includeFirstBar, includeLastBar
+    ):
+        """
   SetLayoutAsMinimumClearSpacing(self: RebarContainerItem,spacing: float,arrayLength: float,barsOnNormalSide: bool,includeFirstBar: bool,includeLastBar: bool)
 
    Sets the Layout Rule property of rebar set to MinimumClearSpacing
@@ -565,9 +632,17 @@ class RebarContainerItem(object,IDisposable):
 
    includeLastBar: Identifies if the last bar in rebar set is shown
   """
-  pass
- def SetLayoutAsNumberWithSpacing(self,numberOfBarPositions,spacing,barsOnNormalSide,includeFirstBar,includeLastBar):
-  """
+        pass
+
+    def SetLayoutAsNumberWithSpacing(
+        self,
+        numberOfBarPositions,
+        spacing,
+        barsOnNormalSide,
+        includeFirstBar,
+        includeLastBar,
+    ):
+        """
   SetLayoutAsNumberWithSpacing(self: RebarContainerItem,numberOfBarPositions: int,spacing: float,barsOnNormalSide: bool,includeFirstBar: bool,includeLastBar: bool)
 
    Sets the Layout Rule property of rebar set to NumberWithSpacing
@@ -588,16 +663,18 @@ class RebarContainerItem(object,IDisposable):
 
    includeLastBar: Identifies if the last bar in rebar set is shown
   """
-  pass
- def SetLayoutAsSingle(self):
-  """
+        pass
+
+    def SetLayoutAsSingle(self):
+        """
   SetLayoutAsSingle(self: RebarContainerItem)
 
    Sets the Layout Rule property of rebar set to Single.
   """
-  pass
- def SetPresentationMode(self,dBView,presentationMode):
-  """
+        pass
+
+    def SetPresentationMode(self, dBView, presentationMode):
+        """
   SetPresentationMode(self: RebarContainerItem,dBView: View,presentationMode: RebarPresentationMode)
 
    Sets the presentation mode for this rebar set when displayed in the given view.
@@ -608,21 +685,28 @@ class RebarContainerItem(object,IDisposable):
 
    presentationMode: The presentation mode.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- ArrayLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the distribution path length of rebar set.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    ArrayLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies the distribution path length of rebar set.
 
 
 
@@ -634,8 +718,10 @@ Set: ArrayLength(self: RebarContainerItem)=value
 
 """
 
- BarsOnNormalSide=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies if the bars of the rebar set are on the same side of the rebar plane indicated by the normal.
+    BarsOnNormalSide = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies if the bars of the rebar set are on the same side of the rebar plane indicated by the normal.
 
 
 
@@ -647,8 +733,8 @@ Set: BarsOnNormalSide(self: RebarContainerItem)=value
 
 """
 
- BarTypeId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The identifier of the rebar bar type.
+    BarTypeId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The identifier of the rebar bar type.
 
 
 
@@ -658,8 +744,10 @@ Get: BarTypeId(self: RebarContainerItem) -> ElementId
 
 """
 
- BaseFinishingTurns=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """For a spiral,the number of finishing turns at the lower end of the spiral.
+    BaseFinishingTurns = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """For a spiral,the number of finishing turns at the lower end of the spiral.
 
 
 
@@ -671,8 +759,8 @@ Set: BaseFinishingTurns(self: RebarContainerItem)=value
 
 """
 
- Height=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """For a spiral,the overall height.
+    Height = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """For a spiral,the overall height.
 
 
 
@@ -684,8 +772,10 @@ Set: Height(self: RebarContainerItem)=value
 
 """
 
- IncludeFirstBar=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies if the first bar in rebar set is shown.
+    IncludeFirstBar = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies if the first bar in rebar set is shown.
 
 
 
@@ -697,8 +787,10 @@ Set: IncludeFirstBar(self: RebarContainerItem)=value
 
 """
 
- IncludeLastBar=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies if the last bar in rebar set is shown.
+    IncludeLastBar = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies if the last bar in rebar set is shown.
 
 
 
@@ -710,8 +802,10 @@ Set: IncludeLastBar(self: RebarContainerItem)=value
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -721,8 +815,8 @@ Get: IsValidObject(self: RebarContainerItem) -> bool
 
 """
 
- ItemIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The index of this item in its associated RebarContainer.
+    ItemIndex = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The index of this item in its associated RebarContainer.
 
 
 
@@ -732,8 +826,10 @@ Get: ItemIndex(self: RebarContainerItem) -> int
 
 """
 
- LayoutRule=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the layout rule of rebar set.
+    LayoutRule = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies the layout rule of rebar set.
 
 
 
@@ -743,8 +839,10 @@ Get: LayoutRule(self: RebarContainerItem) -> RebarLayoutRule
 
 """
 
- MaxSpacing=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the maximum spacing between rebar in rebar set.
+    MaxSpacing = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies the maximum spacing between rebar in rebar set.
 
 
 
@@ -756,8 +854,10 @@ Set: MaxSpacing(self: RebarContainerItem)=value
 
 """
 
- MultiplanarDepth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """For a multiplanar rebar,the depth of the instance.
+    MultiplanarDepth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """For a multiplanar rebar,the depth of the instance.
 
 
 
@@ -769,8 +869,8 @@ Set: MultiplanarDepth(self: RebarContainerItem)=value
 
 """
 
- Normal=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """A unit-length vector normal to the plane of the rebar
+    Normal = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """A unit-length vector normal to the plane of the rebar
 
 
 
@@ -780,8 +880,10 @@ Get: Normal(self: RebarContainerItem) -> XYZ
 
 """
 
- NumberOfBarPositions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The number of potential bars in the set.
+    NumberOfBarPositions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The number of potential bars in the set.
 
 
 
@@ -793,8 +895,8 @@ Set: NumberOfBarPositions(self: RebarContainerItem)=value
 
 """
 
- Pitch=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """For a spiral,the pitch,or vertical distance traveled in one rotation.
+    Pitch = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """For a spiral,the pitch,or vertical distance traveled in one rotation.
 
 
 
@@ -806,8 +908,8 @@ Set: Pitch(self: RebarContainerItem)=value
 
 """
 
- Quantity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the number of bars in rebar set.
+    Quantity = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Identifies the number of bars in rebar set.
 
 
 
@@ -817,8 +919,10 @@ Get: Quantity(self: RebarContainerItem) -> int
 
 """
 
- RebarShapeId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The RebarShape element that defines the shape of the rebar.
+    RebarShapeId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The RebarShape element that defines the shape of the rebar.
 
 
 
@@ -830,8 +934,10 @@ Set: RebarShapeId(self: RebarContainerItem)=value
 
 """
 
- TopFinishingTurns=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """For a spiral,the number of finishing turns at the upper end of the spiral.
+    TopFinishingTurns = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """For a spiral,the number of finishing turns at the upper end of the spiral.
 
 
 
@@ -843,8 +949,10 @@ Set: TopFinishingTurns(self: RebarContainerItem)=value
 
 """
 
- TotalLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The length of an individual bar multiplied by Quantity.
+    TotalLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The length of an individual bar multiplied by Quantity.
 
 
 
@@ -854,8 +962,8 @@ Get: TotalLength(self: RebarContainerItem) -> float
 
 """
 
- Volume=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The volume of an individual bar multiplied by Quantity.
+    Volume = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The volume of an individual bar multiplied by Quantity.
 
 
 
@@ -864,5 +972,3 @@ Get: Volume(self: RebarContainerItem) -> float
 
 
 """
-
-

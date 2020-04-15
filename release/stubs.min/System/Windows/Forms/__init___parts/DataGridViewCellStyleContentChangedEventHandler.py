@@ -1,16 +1,20 @@
-class DataGridViewCellStyleContentChangedEventHandler(MulticastDelegate,ICloneable,ISerializable):
- """
+class DataGridViewCellStyleContentChangedEventHandler(
+    MulticastDelegate, ICloneable, ISerializable
+):
+    """
  Represents the method that will handle the System.Windows.Forms.DataGridView.CellStyleContentChanged event of a System.Windows.Forms.DataGridView.
 
  
 
  DataGridViewCellStyleContentChangedEventHandler(object: object,method: IntPtr)
  """
- def BeginInvoke(self,sender,e,callback,object):
-  """ BeginInvoke(self: DataGridViewCellStyleContentChangedEventHandler,sender: object,e: DataGridViewCellStyleContentChangedEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+
+    def BeginInvoke(self, sender, e, callback, object):
+        """ BeginInvoke(self: DataGridViewCellStyleContentChangedEventHandler,sender: object,e: DataGridViewCellStyleContentChangedEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -23,9 +27,10 @@ class DataGridViewCellStyleContentChangedEventHandler(MulticastDelegate,ICloneab
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -44,12 +49,14 @@ class DataGridViewCellStyleContentChangedEventHandler(MulticastDelegate,ICloneab
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: DataGridViewCellStyleContentChangedEventHandler,result: IAsyncResult) """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: DataGridViewCellStyleContentChangedEventHandler,result: IAsyncResult) """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -58,12 +65,14 @@ class DataGridViewCellStyleContentChangedEventHandler(MulticastDelegate,ICloneab
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,sender,e):
-  """ Invoke(self: DataGridViewCellStyleContentChangedEventHandler,sender: object,e: DataGridViewCellStyleContentChangedEventArgs) """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, sender, e):
+        """ Invoke(self: DataGridViewCellStyleContentChangedEventHandler,sender: object,e: DataGridViewCellStyleContentChangedEventArgs) """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -82,13 +91,16 @@ class DataGridViewCellStyleContentChangedEventHandler(MulticastDelegate,ICloneab
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass

@@ -1,5 +1,5 @@
-class TreeNode(MarshalByRefObject,ICloneable,ISerializable):
- """
+class TreeNode(MarshalByRefObject, ICloneable, ISerializable):
+    """
  Represents a node of a System.Windows.Forms.TreeView.
 
  
@@ -14,15 +14,17 @@ class TreeNode(MarshalByRefObject,ICloneable,ISerializable):
 
  TreeNode(text: str,imageIndex: int,selectedImageIndex: int,children: Array[TreeNode])
  """
- def BeginEdit(self):
-  """
+
+    def BeginEdit(self):
+        """
   BeginEdit(self: TreeNode)
 
    Initiates the editing of the tree node label.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: TreeNode) -> object
 
   
@@ -31,9 +33,10 @@ class TreeNode(MarshalByRefObject,ICloneable,ISerializable):
 
    Returns: The System.Object that represents the cloned System.Windows.Forms.TreeNode.
   """
-  pass
- def Collapse(self,ignoreChildren=None):
-  """
+        pass
+
+    def Collapse(self, ignoreChildren=None):
+        """
   Collapse(self: TreeNode)
 
    Collapses the tree node.
@@ -46,9 +49,10 @@ class TreeNode(MarshalByRefObject,ICloneable,ISerializable):
 
    ignoreChildren: true to leave the child nodes in their current state; false to collapse the child nodes.
   """
-  pass
- def Deserialize(self,*args):
-  """
+        pass
+
+    def Deserialize(self, *args):
+        """
   Deserialize(self: TreeNode,serializationInfo: SerializationInfo,context: StreamingContext)
 
    Loads the state of the System.Windows.Forms.TreeNode from the specified 
@@ -69,9 +73,10 @@ class TreeNode(MarshalByRefObject,ICloneable,ISerializable):
 
     deserialization.
   """
-  pass
- def EndEdit(self,cancel):
-  """
+        pass
+
+    def EndEdit(self, cancel):
+        """
   EndEdit(self: TreeNode,cancel: bool)
 
    Ends the editing of the tree node label.
@@ -82,33 +87,37 @@ class TreeNode(MarshalByRefObject,ICloneable,ISerializable):
 
     false.
   """
-  pass
- def EnsureVisible(self):
-  """
+        pass
+
+    def EnsureVisible(self):
+        """
   EnsureVisible(self: TreeNode)
 
    Ensures that the tree node is visible,expanding tree nodes and scrolling the tree view control 
 
     as necessary.
   """
-  pass
- def Expand(self):
-  """
+        pass
+
+    def Expand(self):
+        """
   Expand(self: TreeNode)
 
    Expands the tree node.
   """
-  pass
- def ExpandAll(self):
-  """
+        pass
+
+    def ExpandAll(self):
+        """
   ExpandAll(self: TreeNode)
 
    Expands all the child tree nodes.
   """
-  pass
- @staticmethod
- def FromHandle(tree,handle):
-  """
+        pass
+
+    @staticmethod
+    def FromHandle(tree, handle):
+        """
   FromHandle(tree: TreeView,handle: IntPtr) -> TreeNode
 
   
@@ -125,9 +134,10 @@ class TreeNode(MarshalByRefObject,ICloneable,ISerializable):
 
     System.Windows.Forms.TreeView control with the specified handle.
   """
-  pass
- def GetNodeCount(self,includeSubTrees):
-  """
+        pass
+
+    def GetNodeCount(self, includeSubTrees):
+        """
   GetNodeCount(self: TreeNode,includeSubTrees: bool) -> int
 
   
@@ -144,9 +154,10 @@ class TreeNode(MarshalByRefObject,ICloneable,ISerializable):
 
    Returns: The number of child tree nodes assigned to the System.Windows.Forms.TreeNode.Nodes collection.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -177,16 +188,18 @@ class TreeNode(MarshalByRefObject,ICloneable,ISerializable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def Remove(self):
-  """
+        pass
+
+    def Remove(self):
+        """
   Remove(self: TreeNode)
 
    Removes the current tree node from the tree view control.
   """
-  pass
- def Serialize(self,*args):
-  """
+        pass
+
+    def Serialize(self, *args):
+        """
   Serialize(self: TreeNode,si: SerializationInfo,context: StreamingContext)
 
    Saves the state of the System.Windows.Forms.TreeNode to the specified 
@@ -207,27 +220,31 @@ class TreeNode(MarshalByRefObject,ICloneable,ISerializable):
 
     serialization
   """
-  pass
- def Toggle(self):
-  """
+        pass
+
+    def Toggle(self):
+        """
   Toggle(self: TreeNode)
 
    Toggles the tree node to either the expanded or collapsed state.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: TreeNode) -> str
 
    Returns: A string that represents the current object.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,text=None,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, text=None, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,text: str)
@@ -240,13 +257,16 @@ class TreeNode(MarshalByRefObject,ICloneable,ISerializable):
 
   __new__(cls: type,serializationInfo: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- BackColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the background color of the tree node.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    BackColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the background color of the tree node.
 
 
 
@@ -258,8 +278,8 @@ Set: BackColor(self: TreeNode)=value
 
 """
 
- Bounds=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the bounds of the tree node.
+    Bounds = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the bounds of the tree node.
 
 
 
@@ -269,8 +289,8 @@ Get: Bounds(self: TreeNode) -> Rectangle
 
 """
 
- Checked=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the tree node is in a checked state.
+    Checked = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the tree node is in a checked state.
 
 
 
@@ -282,8 +302,10 @@ Set: Checked(self: TreeNode)=value
 
 """
 
- ContextMenu=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the shortcut menu that is associated with this tree node.
+    ContextMenu = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the shortcut menu that is associated with this tree node.
 
 
 
@@ -295,8 +317,10 @@ Set: ContextMenu(self: TreeNode)=value
 
 """
 
- ContextMenuStrip=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the shortcut menu associated with this tree node.
+    ContextMenuStrip = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the shortcut menu associated with this tree node.
 
 
 
@@ -308,8 +332,8 @@ Set: ContextMenuStrip(self: TreeNode)=value
 
 """
 
- FirstNode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the first child tree node in the tree node collection.
+    FirstNode = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the first child tree node in the tree node collection.
 
 
 
@@ -319,8 +343,8 @@ Get: FirstNode(self: TreeNode) -> TreeNode
 
 """
 
- ForeColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the foreground color of the tree node.
+    ForeColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the foreground color of the tree node.
 
 
 
@@ -332,8 +356,8 @@ Set: ForeColor(self: TreeNode)=value
 
 """
 
- FullPath=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the path from the root tree node to the current tree node.
+    FullPath = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the path from the root tree node to the current tree node.
 
 
 
@@ -343,8 +367,8 @@ Get: FullPath(self: TreeNode) -> str
 
 """
 
- Handle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the handle of the tree node.
+    Handle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the handle of the tree node.
 
 
 
@@ -354,8 +378,10 @@ Get: Handle(self: TreeNode) -> IntPtr
 
 """
 
- ImageIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the image list index value of the image displayed when the tree node is in the unselected state.
+    ImageIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the image list index value of the image displayed when the tree node is in the unselected state.
 
 
 
@@ -367,8 +393,8 @@ Set: ImageIndex(self: TreeNode)=value
 
 """
 
- ImageKey=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the key for the image associated with this tree node when the node is in an unselected state.
+    ImageKey = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the key for the image associated with this tree node when the node is in an unselected state.
 
 
 
@@ -380,8 +406,8 @@ Set: ImageKey(self: TreeNode)=value
 
 """
 
- Index=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the position of the tree node in the tree node collection.
+    Index = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the position of the tree node in the tree node collection.
 
 
 
@@ -391,8 +417,8 @@ Get: Index(self: TreeNode) -> int
 
 """
 
- IsEditing=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the tree node is in an editable state.
+    IsEditing = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the tree node is in an editable state.
 
 
 
@@ -402,8 +428,10 @@ Get: IsEditing(self: TreeNode) -> bool
 
 """
 
- IsExpanded=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the tree node is in the expanded state.
+    IsExpanded = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the tree node is in the expanded state.
 
 
 
@@ -413,8 +441,10 @@ Get: IsExpanded(self: TreeNode) -> bool
 
 """
 
- IsSelected=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the tree node is in the selected state.
+    IsSelected = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the tree node is in the selected state.
 
 
 
@@ -424,8 +454,8 @@ Get: IsSelected(self: TreeNode) -> bool
 
 """
 
- IsVisible=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the tree node is visible or partially visible.
+    IsVisible = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the tree node is visible or partially visible.
 
 
 
@@ -435,8 +465,8 @@ Get: IsVisible(self: TreeNode) -> bool
 
 """
 
- LastNode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the last child tree node.
+    LastNode = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the last child tree node.
 
 
 
@@ -446,8 +476,8 @@ Get: LastNode(self: TreeNode) -> TreeNode
 
 """
 
- Level=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the zero-based depth of the tree node in the System.Windows.Forms.TreeView control.
+    Level = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the zero-based depth of the tree node in the System.Windows.Forms.TreeView control.
 
 
 
@@ -457,8 +487,8 @@ Get: Level(self: TreeNode) -> int
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the tree node.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the name of the tree node.
 
 
 
@@ -470,8 +500,8 @@ Set: Name(self: TreeNode)=value
 
 """
 
- NextNode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the next sibling tree node.
+    NextNode = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the next sibling tree node.
 
 
 
@@ -481,8 +511,10 @@ Get: NextNode(self: TreeNode) -> TreeNode
 
 """
 
- NextVisibleNode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the next visible tree node.
+    NextVisibleNode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the next visible tree node.
 
 
 
@@ -492,8 +524,8 @@ Get: NextVisibleNode(self: TreeNode) -> TreeNode
 
 """
 
- NodeFont=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the font that is used to display the text on the tree node label.
+    NodeFont = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the font that is used to display the text on the tree node label.
 
 
 
@@ -505,8 +537,8 @@ Set: NodeFont(self: TreeNode)=value
 
 """
 
- Nodes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of System.Windows.Forms.TreeNode objects assigned to the current tree node.
+    Nodes = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the collection of System.Windows.Forms.TreeNode objects assigned to the current tree node.
 
 
 
@@ -516,8 +548,8 @@ Get: Nodes(self: TreeNode) -> TreeNodeCollection
 
 """
 
- Parent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the parent tree node of the current tree node.
+    Parent = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the parent tree node of the current tree node.
 
 
 
@@ -527,8 +559,8 @@ Get: Parent(self: TreeNode) -> TreeNode
 
 """
 
- PrevNode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the previous sibling tree node.
+    PrevNode = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the previous sibling tree node.
 
 
 
@@ -538,8 +570,10 @@ Get: PrevNode(self: TreeNode) -> TreeNode
 
 """
 
- PrevVisibleNode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the previous visible tree node.
+    PrevVisibleNode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the previous visible tree node.
 
 
 
@@ -549,8 +583,10 @@ Get: PrevVisibleNode(self: TreeNode) -> TreeNode
 
 """
 
- SelectedImageIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the image list index value of the image that is displayed when the tree node is in the selected state.
+    SelectedImageIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the image list index value of the image that is displayed when the tree node is in the selected state.
 
 
 
@@ -562,8 +598,10 @@ Set: SelectedImageIndex(self: TreeNode)=value
 
 """
 
- SelectedImageKey=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the key of the image displayed in the tree node when it is in a selected state.
+    SelectedImageKey = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the key of the image displayed in the tree node when it is in a selected state.
 
 
 
@@ -575,8 +613,10 @@ Set: SelectedImageKey(self: TreeNode)=value
 
 """
 
- StateImageIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the index of the image that is used to indicate the state of the System.Windows.Forms.TreeNode when the parent System.Windows.Forms.TreeView has its System.Windows.Forms.TreeView.CheckBoxes property set to false.
+    StateImageIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the index of the image that is used to indicate the state of the System.Windows.Forms.TreeNode when the parent System.Windows.Forms.TreeView has its System.Windows.Forms.TreeView.CheckBoxes property set to false.
 
 
 
@@ -588,8 +628,10 @@ Set: StateImageIndex(self: TreeNode)=value
 
 """
 
- StateImageKey=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the key of the image that is used to indicate the state of the System.Windows.Forms.TreeNode when the parent System.Windows.Forms.TreeView has its System.Windows.Forms.TreeView.CheckBoxes property set to false.
+    StateImageKey = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the key of the image that is used to indicate the state of the System.Windows.Forms.TreeNode when the parent System.Windows.Forms.TreeView has its System.Windows.Forms.TreeView.CheckBoxes property set to false.
 
 
 
@@ -601,8 +643,8 @@ Set: StateImageKey(self: TreeNode)=value
 
 """
 
- Tag=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the object that contains data about the tree node.
+    Tag = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the object that contains data about the tree node.
 
 
 
@@ -614,8 +656,8 @@ Set: Tag(self: TreeNode)=value
 
 """
 
- Text=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the text displayed in the label of the tree node.
+    Text = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the text displayed in the label of the tree node.
 
 
 
@@ -627,8 +669,10 @@ Set: Text(self: TreeNode)=value
 
 """
 
- ToolTipText=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the text that appears when the mouse pointer hovers over a System.Windows.Forms.TreeNode.
+    ToolTipText = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the text that appears when the mouse pointer hovers over a System.Windows.Forms.TreeNode.
 
 
 
@@ -640,8 +684,8 @@ Set: ToolTipText(self: TreeNode)=value
 
 """
 
- TreeView=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the parent tree view that the tree node is assigned to.
+    TreeView = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the parent tree view that the tree node is assigned to.
 
 
 
@@ -650,5 +694,3 @@ Get: TreeView(self: TreeNode) -> TreeView
 
 
 """
-
-

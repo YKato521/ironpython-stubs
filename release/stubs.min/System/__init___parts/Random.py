@@ -1,5 +1,5 @@
 class Random(object):
- """
+    """
  Represents a pseudo-random number generator,a device that produces a sequence of numbers that meet certain statistical requirements for randomness.
 
  
@@ -8,8 +8,9 @@ class Random(object):
 
  Random(Seed: int)
  """
- def Next(self,*__args):
-  """
+
+    def Next(self, *__args):
+        """
   Next(self: Random,maxValue: int) -> int
 
   
@@ -64,9 +65,10 @@ class Random(object):
 
    Returns: A 32-bit signed integer greater than or equal to zero and less than System.Int32.MaxValue.
   """
-  pass
- def NextBytes(self,buffer):
-  """
+        pass
+
+    def NextBytes(self, buffer):
+        """
   NextBytes(self: Random,buffer: Array[Byte])
 
    Fills the elements of a specified array of bytes with random numbers.
@@ -75,9 +77,10 @@ class Random(object):
 
    buffer: An array of bytes to contain random numbers.
   """
-  pass
- def NextDouble(self):
-  """
+        pass
+
+    def NextDouble(self):
+        """
   NextDouble(self: Random) -> float
 
   
@@ -86,9 +89,10 @@ class Random(object):
 
    Returns: A double-precision floating point number greater than or equal to 0.0,and less than 1.0.
   """
-  pass
- def Sample(self,*args):
-  """
+        pass
+
+    def Sample(self, *args):
+        """
   Sample(self: Random) -> float
 
   
@@ -97,12 +101,13 @@ class Random(object):
 
    Returns: A double-precision floating point number greater than or equal to 0.0,and less than 1.0.
   """
-  pass
- @staticmethod
- def __new__(self,Seed=None):
-  """
+        pass
+
+    @staticmethod
+    def __new__(self, Seed=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,Seed: int)
   """
-  pass
+        pass

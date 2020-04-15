@@ -8,6 +8,7 @@
 # no functions
 # classes
 
+
 class Commands(object):
     # no doc
     @staticmethod
@@ -56,16 +57,23 @@ class Commands(object):
 
 class GH_LatestVersionInfo(object):
     # no doc
-    IsUpToDate = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: IsUpToDate(self: GH_LatestVersionInfo) -> bool
-
+    IsUpToDate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: IsUpToDate(self: GH_LatestVersionInfo) -> bool
+
+
+
 """
 
-    IsValid = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: IsValid(self: GH_LatestVersionInfo) -> bool
-
-"""
+    IsValid = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: IsValid(self: GH_LatestVersionInfo) -> bool
 
+
+
+"""
 
     CurrentVersion = None
     DataAge = None
@@ -151,6 +159,7 @@ class GH_ResourceGate(object):
 
 class GH_RhinoScriptInterface(object):
     """ GH_RhinoScriptInterface() """
+
     def AssignDataToParameter(self, parameterID, data):
         """ AssignDataToParameter(self: GH_RhinoScriptInterface, parameterID: str, data: object) -> bool """
         pass
@@ -230,5 +239,3 @@ class GH_RhinoScriptInterface(object):
     def ShowEditor(self):
         """ ShowEditor(self: GH_RhinoScriptInterface) """
         pass
-
-

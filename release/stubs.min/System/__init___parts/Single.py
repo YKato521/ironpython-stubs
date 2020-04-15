@@ -1,7 +1,15 @@
-class Single(object,IComparable,IFormattable,IConvertible,IComparable[Single],IEquatable[Single]):
- """ Represents a single-precision floating-point number. """
- def CompareTo(self,value):
-  """
+class Single(
+    object,
+    IComparable,
+    IFormattable,
+    IConvertible,
+    IComparable[Single],
+    IEquatable[Single],
+):
+    """ Represents a single-precision floating-point number. """
+
+    def CompareTo(self, value):
+        """
   CompareTo(self: Single,value: Single) -> int
 
   
@@ -60,12 +68,14 @@ class Single(object,IComparable,IFormattable,IConvertible,IComparable[Single],IE
 
     instance is a number and value is not a number (System.Single.NaN).-or- value is null.
   """
-  pass
- def conjugate(self,*args):
-  """ conjugate(x: Single) -> Single """
-  pass
- def Equals(self,obj):
-  """
+        pass
+
+    def conjugate(self, *args):
+        """ conjugate(x: Single) -> Single """
+        pass
+
+    def Equals(self, obj):
+        """
   Equals(self: Single,obj: Single) -> bool
 
   
@@ -96,9 +106,10 @@ class Single(object,IComparable,IFormattable,IConvertible,IComparable[Single],IE
 
     false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Single) -> int
 
   
@@ -107,9 +118,10 @@ class Single(object,IComparable,IFormattable,IConvertible,IComparable[Single],IE
 
    Returns: A 32-bit signed integer hash code.
   """
-  pass
- def GetTypeCode(self):
-  """
+        pass
+
+    def GetTypeCode(self):
+        """
   GetTypeCode(self: Single) -> TypeCode
 
   
@@ -118,10 +130,11 @@ class Single(object,IComparable,IFormattable,IConvertible,IComparable[Single],IE
 
    Returns: The enumerated constant,System.TypeCode.Single.
   """
-  pass
- @staticmethod
- def IsInfinity(f):
-  """
+        pass
+
+    @staticmethod
+    def IsInfinity(f):
+        """
   IsInfinity(f: Single) -> bool
 
   
@@ -140,10 +153,11 @@ class Single(object,IComparable,IFormattable,IConvertible,IComparable[Single],IE
 
     otherwise,false.
   """
-  pass
- @staticmethod
- def IsNaN(f):
-  """
+        pass
+
+    @staticmethod
+    def IsNaN(f):
+        """
   IsNaN(f: Single) -> bool
 
   
@@ -160,10 +174,11 @@ class Single(object,IComparable,IFormattable,IConvertible,IComparable[Single],IE
 
    Returns: true if f evaluates to not a number (System.Single.NaN); otherwise,false.
   """
-  pass
- @staticmethod
- def IsNegativeInfinity(f):
-  """
+        pass
+
+    @staticmethod
+    def IsNegativeInfinity(f):
+        """
   IsNegativeInfinity(f: Single) -> bool
 
   
@@ -176,10 +191,11 @@ class Single(object,IComparable,IFormattable,IConvertible,IComparable[Single],IE
 
    Returns: true if f evaluates to System.Single.NegativeInfinity; otherwise,false.
   """
-  pass
- @staticmethod
- def IsPositiveInfinity(f):
-  """
+        pass
+
+    @staticmethod
+    def IsPositiveInfinity(f):
+        """
   IsPositiveInfinity(f: Single) -> bool
 
   
@@ -192,10 +208,11 @@ class Single(object,IComparable,IFormattable,IConvertible,IComparable[Single],IE
 
    Returns: true if f evaluates to System.Single.PositiveInfinity; otherwise,false.
   """
-  pass
- @staticmethod
- def Parse(s,*__args):
-  """
+        pass
+
+    @staticmethod
+    def Parse(s, *__args):
+        """
   Parse(s: str,provider: IFormatProvider) -> Single
 
   
@@ -294,9 +311,10 @@ class Single(object,IComparable,IFormattable,IConvertible,IComparable[Single],IE
 
     specified in s.
   """
-  pass
- def ToString(self,*__args):
-  """
+        pass
+
+    def ToString(self, *__args):
+        """
   ToString(self: Single,format: str) -> str
 
   
@@ -355,10 +373,11 @@ class Single(object,IComparable,IFormattable,IConvertible,IComparable[Single],IE
 
    Returns: The string representation of the value of this instance as specified by provider.
   """
-  pass
- @staticmethod
- def TryParse(s,*__args):
-  """
+        pass
+
+    @staticmethod
+    def TryParse(s, *__args):
+        """
   TryParse(s: str,style: NumberStyles,provider: IFormatProvider) -> (bool,Single)
 
   
@@ -403,121 +422,157 @@ class Single(object,IComparable,IFormattable,IConvertible,IComparable[Single],IE
 
    Returns: true if s was converted successfully; otherwise,false.
   """
-  pass
- def __abs__(self,*args):
-  """ x.__abs__() <==> abs(x) """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __div__(self,*args):
-  """ x.__div__(y) <==> x/y """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __float__(self,*args):
-  """ __float__(x: Single) -> float """
-  pass
- def __floordiv__(self,*args):
-  """ x.__floordiv__(y) <==> x//y """
-  pass
- def __format__(self,*args):
-  """ __format__(self: Single,formatSpec: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __hash__(self,*args):
-  """ x.__hash__() <==> hash(x) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __int__(self,*args):
-  """ __int__(x: Single) -> int """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __mod__(self,*args):
-  """ x.__mod__(y) <==> x%y """
-  pass
- def __mul__(self,*args):
-  """ x.__mul__(y) <==> x*y """
-  pass
- def __neg__(self,*args):
-  """ x.__neg__() <==> -x """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """
+        pass
+
+    def __abs__(self, *args):
+        """ x.__abs__() <==> abs(x) """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __div__(self, *args):
+        """ x.__div__(y) <==> x/y """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __float__(self, *args):
+        """ __float__(x: Single) -> float """
+        pass
+
+    def __floordiv__(self, *args):
+        """ x.__floordiv__(y) <==> x//y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(self: Single,formatSpec: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __hash__(self, *args):
+        """ x.__hash__() <==> hash(x) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __int__(self, *args):
+        """ __int__(x: Single) -> int """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __mod__(self, *args):
+        """ x.__mod__(y) <==> x%y """
+        pass
+
+    def __mul__(self, *args):
+        """ x.__mul__(y) <==> x*y """
+        pass
+
+    def __neg__(self, *args):
+        """ x.__neg__() <==> -x """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """
   __new__(cls: type,s: IList[Byte]) -> object
 
   __new__(cls: type,x: object) -> object
 
   __new__(cls: type) -> object
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __nonzero__(self,*args):
-  """ __nonzero__(x: Single) -> bool """
-  pass
- def __pos__(self,*args):
-  """ __pos__(x: Single) -> Single """
-  pass
- def __pow__(self,*args):
-  """ x.__pow__(y[,z]) <==> pow(x,y[,z]) """
-  pass
- def __radd__(self,*args):
-  """ __radd__(x: Single,y: Single) -> Single """
-  pass
- def __rdiv__(self,*args):
-  """ __rdiv__(x: Single,y: Single) -> Single """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: Single) -> str """
-  pass
- def __rfloordiv__(self,*args):
-  """ __rfloordiv__(x: Single,y: Single) -> Single """
-  pass
- def __rmod__(self,*args):
-  """ __rmod__(x: Single,y: Single) -> Single """
-  pass
- def __rmul__(self,*args):
-  """ __rmul__(x: Single,y: Single) -> Single """
-  pass
- def __rpow__(self,*args):
-  """ __rpow__(x: Single,y: Single) -> Single """
-  pass
- def __rsub__(self,*args):
-  """ __rsub__(x: Single,y: Single) -> Single """
-  pass
- def __rtruediv__(self,*args):
-  """ __rtruediv__(x: Single,y: Single) -> Single """
-  pass
- def __str__(self,*args):
-  pass
- def __sub__(self,*args):
-  """ x.__sub__(y) <==> x-y """
-  pass
- def __truediv__(self,*args):
-  """ x.__truediv__(y) <==> x/y """
-  pass
- def __trunc__(self,*args):
-  """ __trunc__(x: Single) -> object """
-  pass
- Epsilon=None
- imag=None
- MaxValue=None
- MinValue=None
- NaN=None
- NegativeInfinity=None
- PositiveInfinity=None
- real=None
+        pass
 
+    def __ne__(self, *args):
+        pass
+
+    def __nonzero__(self, *args):
+        """ __nonzero__(x: Single) -> bool """
+        pass
+
+    def __pos__(self, *args):
+        """ __pos__(x: Single) -> Single """
+        pass
+
+    def __pow__(self, *args):
+        """ x.__pow__(y[,z]) <==> pow(x,y[,z]) """
+        pass
+
+    def __radd__(self, *args):
+        """ __radd__(x: Single,y: Single) -> Single """
+        pass
+
+    def __rdiv__(self, *args):
+        """ __rdiv__(x: Single,y: Single) -> Single """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: Single) -> str """
+        pass
+
+    def __rfloordiv__(self, *args):
+        """ __rfloordiv__(x: Single,y: Single) -> Single """
+        pass
+
+    def __rmod__(self, *args):
+        """ __rmod__(x: Single,y: Single) -> Single """
+        pass
+
+    def __rmul__(self, *args):
+        """ __rmul__(x: Single,y: Single) -> Single """
+        pass
+
+    def __rpow__(self, *args):
+        """ __rpow__(x: Single,y: Single) -> Single """
+        pass
+
+    def __rsub__(self, *args):
+        """ __rsub__(x: Single,y: Single) -> Single """
+        pass
+
+    def __rtruediv__(self, *args):
+        """ __rtruediv__(x: Single,y: Single) -> Single """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    def __sub__(self, *args):
+        """ x.__sub__(y) <==> x-y """
+        pass
+
+    def __truediv__(self, *args):
+        """ x.__truediv__(y) <==> x/y """
+        pass
+
+    def __trunc__(self, *args):
+        """ __trunc__(x: Single) -> object """
+        pass
+
+    Epsilon = None
+    imag = None
+    MaxValue = None
+    MinValue = None
+    NaN = None
+    NegativeInfinity = None
+    PositiveInfinity = None
+    real = None

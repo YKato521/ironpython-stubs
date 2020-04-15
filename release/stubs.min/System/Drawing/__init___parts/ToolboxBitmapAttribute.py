@@ -1,5 +1,5 @@
-class ToolboxBitmapAttribute(Attribute,_Attribute):
- """
+class ToolboxBitmapAttribute(Attribute, _Attribute):
+    """
  Allows you to specify an icon to represent a control in a container,such as the Microsoft Visual Studio Form Designer.
 
  
@@ -10,8 +10,9 @@ class ToolboxBitmapAttribute(Attribute,_Attribute):
 
  ToolboxBitmapAttribute(t: Type,name: str)
  """
- def Equals(self,value):
-  """
+
+    def Equals(self, value):
+        """
   Equals(self: ToolboxBitmapAttribute,value: object) -> bool
 
   
@@ -30,9 +31,10 @@ class ToolboxBitmapAttribute(Attribute,_Attribute):
 
     identical to this System.Drawing.ToolboxBitmapAttribute object.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: ToolboxBitmapAttribute) -> int
 
   
@@ -41,9 +43,10 @@ class ToolboxBitmapAttribute(Attribute,_Attribute):
 
    Returns: The hash code for this System.Drawing.ToolboxBitmapAttribute object.
   """
-  pass
- def GetImage(self,*__args):
-  """
+        pass
+
+    def GetImage(self, *__args):
+        """
   GetImage(self: ToolboxBitmapAttribute,type: Type,large: bool) -> Image
 
   
@@ -184,10 +187,11 @@ class ToolboxBitmapAttribute(Attribute,_Attribute):
 
    Returns: An System.Drawing.Image object associated with this System.Drawing.ToolboxBitmapAttribute object.
   """
-  pass
- @staticmethod
- def GetImageFromResource(t,imageName,large):
-  """
+        pass
+
+    @staticmethod
+    def GetImageFromResource(t, imageName, large):
+        """
   GetImageFromResource(t: Type,imageName: str,large: bool) -> Image
 
   
@@ -218,27 +222,31 @@ class ToolboxBitmapAttribute(Attribute,_Attribute):
 
    Returns: An System.Drawing.Image object based on the retrieved bitmap.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,imageFile: str)
 
   __new__(cls: type,t: Type)
 
   __new__(cls: type,t: Type,name: str)
   """
-  pass
- def __ne__(self,*args):
-  pass
- Default=None
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    Default = None
 
 
 # variables with complex values
-

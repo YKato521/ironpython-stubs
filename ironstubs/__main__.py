@@ -33,7 +33,7 @@ from utils.helper import Timer
 from default_settings import PATHS, BUILTINS, ASSEMBLIES
 from make_stubs import make, dump_json_log
 
-__version__ = '1.0.0'
+__version__ = "1.0.0"
 __doc__ = """
     IronPython-Stubs | {version}
 
@@ -58,30 +58,32 @@ __doc__ = """
         --debug                 Enables Debug Messages
         -h, --help              Show this screen.
 
-    """.format(out_dir='stubs', version=__version__)
+    """.format(
+    out_dir="stubs", version=__version__
+)
 
 arguments = docopt(__doc__, version=__version__)
 
 # OPTIONS
-option_assembly_name = arguments['<assembly-name>']
-option_all = arguments['--all']
+option_assembly_name = arguments["<assembly-name>"]
+option_all = arguments["--all"]
 
-option_output_dir = arguments['--output']
-option_path_dir = arguments['--path']
-option_json = not arguments['--no-json']
-option_overwrite = arguments['--overwrite']
+option_output_dir = arguments["--output"]
+option_path_dir = arguments["--path"]
+option_json = not arguments["--no-json"]
+option_overwrite = arguments["--overwrite"]
 
-if arguments['--debug']:
+if arguments["--debug"]:
     logger.enable_debug()
 
 # PROJECT_DIR = os.getcwd()  # Must execute from project dir
 PKG_DIR = os.path.dirname(__file__)
 PROJECT_DIR = os.path.dirname(PKG_DIR)
-release_dir = os.path.join(PROJECT_DIR, 'release', option_output_dir)
+release_dir = os.path.join(PROJECT_DIR, "release", option_output_dir)
 os.chdir(PROJECT_DIR)
 
 # Add Paths
-PATHS.append(os.path.join(PROJECT_DIR, 'bin'))
+PATHS.append(os.path.join(PROJECT_DIR, "bin"))
 [sys.path.append(p) for p in PATHS]
 
 # Additional Paths from Options
@@ -91,14 +93,15 @@ if option_path_dir:
 logger.debug(sys.path)
 logger.debug(arguments)
 logger.debug(ASSEMBLIES)
-if arguments['make']:
+if arguments["make"]:
     timer = Timer()
     if not option_all:
         ASSEMBLIES = [option_assembly_name]
 
     for assembly_name in ASSEMBLIES:
-        assembly_dict = make(release_dir, assembly_name,
-                             overwrite=option_overwrite, quiet=option_all)
+        assembly_dict = make(
+            release_dir, assembly_name, overwrite=option_overwrite, quiet=option_all
+        )
         if option_json:
             dump_json_log(assembly_dict)
-    logger.info('Done: {} seconds'.format(timer.stop()))
+    logger.info("Done: {} seconds".format(timer.stop()))

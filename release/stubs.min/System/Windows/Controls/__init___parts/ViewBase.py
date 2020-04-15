@@ -1,7 +1,8 @@
 class ViewBase(DependencyObject):
- """ Represents the base class for views that define the appearance of data in a System.Windows.Controls.ListView control. """
- def ClearItem(self,*args):
-  """
+    """ Represents the base class for views that define the appearance of data in a System.Windows.Controls.ListView control. """
+
+    def ClearItem(self, *args):
+        """
   ClearItem(self: ViewBase,item: ListViewItem)
 
    Removes all bindings and styling that are set for an item.
@@ -10,9 +11,10 @@ class ViewBase(DependencyObject):
 
    item: The System.Windows.Controls.ListViewItem to remove settings from.
   """
-  pass
- def GetAutomationPeer(self,*args):
-  """
+        pass
+
+    def GetAutomationPeer(self, *args):
+        """
   GetAutomationPeer(self: ViewBase,parent: ListView) -> IViewAutomationPeer
 
   
@@ -39,9 +41,10 @@ class ViewBase(DependencyObject):
 
     System.Windows.Controls.ListView.View.
   """
-  pass
- def PrepareItem(self,*args):
-  """
+        pass
+
+    def PrepareItem(self, *args):
+        """
   PrepareItem(self: ViewBase,item: ListViewItem)
 
    Prepares an item in the view for display,by setting bindings and styles.
@@ -50,19 +53,22 @@ class ViewBase(DependencyObject):
 
    item: The item to prepare for display.
   """
-  pass
- DefaultStyleKey=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the object that is associated with the style for the view mode.
+        pass
+
+    DefaultStyleKey = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the object that is associated with the style for the view mode.
 
 
 
 """
 
- ItemContainerDefaultStyleKey=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the style to use for the items in the view mode.
+    ItemContainerDefaultStyleKey = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the style to use for the items in the view mode.
 
 
 
 """
-
-

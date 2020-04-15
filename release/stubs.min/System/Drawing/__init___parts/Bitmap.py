@@ -1,5 +1,5 @@
-class Bitmap(Image,ISerializable,ICloneable,IDisposable):
- """
+class Bitmap(Image, ISerializable, ICloneable, IDisposable):
+    """
  Encapsulates a GDI+ bitmap,which consists of the pixel data for a graphics image and its attributes. A System.Drawing.Bitmap is an object used to work with images defined by pixel data.
 
  
@@ -28,8 +28,9 @@ class Bitmap(Image,ISerializable,ICloneable,IDisposable):
 
  Bitmap(original: Image,newSize: Size)
  """
- def Clone(self,rect=None,format=None):
-  """
+
+    def Clone(self, rect=None, format=None):
+        """
   Clone(self: Bitmap,rect: RectangleF,format: PixelFormat) -> Bitmap
 
   
@@ -78,9 +79,10 @@ class Bitmap(Image,ISerializable,ICloneable,IDisposable):
 
    Returns: The new System.Drawing.Bitmap that this method creates.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: Image,disposing: bool)
 
    Releases the unmanaged resources used by the System.Drawing.Image and optionally releases the 
@@ -93,10 +95,11 @@ class Bitmap(Image,ISerializable,ICloneable,IDisposable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- @staticmethod
- def FromHicon(hicon):
-  """
+        pass
+
+    @staticmethod
+    def FromHicon(hicon):
+        """
   FromHicon(hicon: IntPtr) -> Bitmap
 
   
@@ -109,10 +112,11 @@ class Bitmap(Image,ISerializable,ICloneable,IDisposable):
 
    Returns: The System.Drawing.Bitmap that this method creates.
   """
-  pass
- @staticmethod
- def FromResource(hinstance,bitmapName):
-  """
+        pass
+
+    @staticmethod
+    def FromResource(hinstance, bitmapName):
+        """
   FromResource(hinstance: IntPtr,bitmapName: str) -> Bitmap
 
   
@@ -127,9 +131,10 @@ class Bitmap(Image,ISerializable,ICloneable,IDisposable):
 
    Returns: The System.Drawing.Bitmap that this method creates.
   """
-  pass
- def GetHbitmap(self,background=None):
-  """
+        pass
+
+    def GetHbitmap(self, background=None):
+        """
   GetHbitmap(self: Bitmap,background: Color) -> IntPtr
 
   
@@ -154,9 +159,10 @@ class Bitmap(Image,ISerializable,ICloneable,IDisposable):
 
    Returns: A handle to the GDI bitmap object that this method creates.
   """
-  pass
- def GetHicon(self):
-  """
+        pass
+
+    def GetHicon(self):
+        """
   GetHicon(self: Bitmap) -> IntPtr
 
   
@@ -165,9 +171,10 @@ class Bitmap(Image,ISerializable,ICloneable,IDisposable):
 
    Returns: A Windows handle to an icon with the same image as the System.Drawing.Bitmap.
   """
-  pass
- def GetPixel(self,x,y):
-  """
+        pass
+
+    def GetPixel(self, x, y):
+        """
   GetPixel(self: Bitmap,x: int,y: int) -> Color
 
   
@@ -182,9 +189,10 @@ class Bitmap(Image,ISerializable,ICloneable,IDisposable):
 
    Returns: A System.Drawing.Color structure that represents the color of the specified pixel.
   """
-  pass
- def LockBits(self,rect,flags,format,bitmapData=None):
-  """
+        pass
+
+    def LockBits(self, rect, flags, format, bitmapData=None):
+        """
   LockBits(self: Bitmap,rect: Rectangle,flags: ImageLockMode,format: PixelFormat,bitmapData: BitmapData) -> BitmapData
 
   
@@ -239,9 +247,10 @@ class Bitmap(Image,ISerializable,ICloneable,IDisposable):
 
    Returns: A System.Drawing.Imaging.BitmapData that contains information about this lock operation.
   """
-  pass
- def MakeTransparent(self,transparentColor=None):
-  """
+        pass
+
+    def MakeTransparent(self, transparentColor=None):
+        """
   MakeTransparent(self: Bitmap,transparentColor: Color)
 
    Makes the specified color transparent for this System.Drawing.Bitmap.
@@ -254,9 +263,10 @@ class Bitmap(Image,ISerializable,ICloneable,IDisposable):
 
    Makes the default transparent color transparent for this System.Drawing.Bitmap.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -287,9 +297,10 @@ class Bitmap(Image,ISerializable,ICloneable,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def SetPixel(self,x,y,color):
-  """
+        pass
+
+    def SetPixel(self, x, y, color):
+        """
   SetPixel(self: Bitmap,x: int,y: int,color: Color)
 
    Sets the color of the specified pixel in this System.Drawing.Bitmap.
@@ -302,9 +313,10 @@ class Bitmap(Image,ISerializable,ICloneable,IDisposable):
 
    color: A System.Drawing.Color structure that represents the color to assign to the specified pixel.
   """
-  pass
- def SetResolution(self,xDpi,yDpi):
-  """
+        pass
+
+    def SetResolution(self, xDpi, yDpi):
+        """
   SetResolution(self: Bitmap,xDpi: Single,yDpi: Single)
 
    Sets the resolution for this System.Drawing.Bitmap.
@@ -315,9 +327,10 @@ class Bitmap(Image,ISerializable,ICloneable,IDisposable):
 
    yDpi: The vertical resolution,in dots per inch,of the System.Drawing.Bitmap.
   """
-  pass
- def UnlockBits(self,bitmapdata):
-  """
+        pass
+
+    def UnlockBits(self, bitmapdata):
+        """
   UnlockBits(self: Bitmap,bitmapdata: BitmapData)
 
    Unlocks this System.Drawing.Bitmap from system memory.
@@ -326,29 +339,33 @@ class Bitmap(Image,ISerializable,ICloneable,IDisposable):
 
    bitmapdata: A System.Drawing.Imaging.BitmapData that specifies information about the lock operation.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,filename: str)
 
   __new__(cls: type,filename: str,useIcm: bool)
@@ -373,6 +390,7 @@ class Bitmap(Image,ISerializable,ICloneable,IDisposable):
 
   __new__(cls: type,original: Image,newSize: Size)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass

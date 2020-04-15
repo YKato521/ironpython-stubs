@@ -1,5 +1,5 @@
-class TransmissionData(object,IDisposable):
- """
+class TransmissionData(object, IDisposable):
+    """
  A class representing information on all external file references
 
     in a document.
@@ -8,12 +8,14 @@ class TransmissionData(object,IDisposable):
 
  TransmissionData(other: TransmissionData)
  """
- def Dispose(self):
-  """ Dispose(self: TransmissionData) """
-  pass
- @staticmethod
- def DocumentIsNotTransmitted(filePath):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: TransmissionData) """
+        pass
+
+    @staticmethod
+    def DocumentIsNotTransmitted(filePath):
+        """
   DocumentIsNotTransmitted(filePath: ModelPath) -> bool
 
   
@@ -28,9 +30,10 @@ class TransmissionData(object,IDisposable):
 
    Returns: False if the document is a transmitted file,true otherwise.
   """
-  pass
- def GetAllExternalFileReferenceIds(self):
-  """
+        pass
+
+    def GetAllExternalFileReferenceIds(self):
+        """
   GetAllExternalFileReferenceIds(self: TransmissionData) -> ICollection[ElementId]
 
   
@@ -39,9 +42,10 @@ class TransmissionData(object,IDisposable):
 
    Returns: The ids of all ExternalFileReferences.
   """
-  pass
- def GetDesiredReferenceData(self,elemId):
-  """
+        pass
+
+    def GetDesiredReferenceData(self, elemId):
+        """
   GetDesiredReferenceData(self: TransmissionData,elemId: ElementId) -> ExternalFileReference
 
   
@@ -74,9 +78,10 @@ class TransmissionData(object,IDisposable):
 
     information for an external file
   """
-  pass
- def GetLastSavedReferenceData(self,elemId):
-  """
+        pass
+
+    def GetLastSavedReferenceData(self, elemId):
+        """
   GetLastSavedReferenceData(self: TransmissionData,elemId: ElementId) -> ExternalFileReference
 
   
@@ -109,10 +114,11 @@ class TransmissionData(object,IDisposable):
 
     information for an external file
   """
-  pass
- @staticmethod
- def IsDocumentTransmitted(filePath):
-  """
+        pass
+
+    @staticmethod
+    def IsDocumentTransmitted(filePath):
+        """
   IsDocumentTransmitted(filePath: ModelPath) -> bool
 
   
@@ -127,10 +133,11 @@ class TransmissionData(object,IDisposable):
 
    Returns: True if the document is a transmitted file,false otherwise.
   """
-  pass
- @staticmethod
- def ReadTransmissionData(path):
-  """
+        pass
+
+    @staticmethod
+    def ReadTransmissionData(path):
+        """
   ReadTransmissionData(path: ModelPath) -> TransmissionData
 
   
@@ -157,12 +164,14 @@ class TransmissionData(object,IDisposable):
 
     the given location.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: TransmissionData,disposing: bool) """
-  pass
- def SetDesiredReferenceData(self,elemId,path,pathType,shouldLoad):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: TransmissionData,disposing: bool) """
+        pass
+
+    def SetDesiredReferenceData(self, elemId, path, pathType, shouldLoad):
+        """
   SetDesiredReferenceData(self: TransmissionData,elemId: ElementId,path: ModelPath,pathType: PathType,shouldLoad: bool)
 
    Sets the ExternalFileReference information which
@@ -195,10 +204,11 @@ class TransmissionData(object,IDisposable):
 
     document. False if it should be unloaded.
   """
-  pass
- @staticmethod
- def WriteTransmissionData(path,data):
-  """
+        pass
+
+    @staticmethod
+    def WriteTransmissionData(path, data):
+        """
   WriteTransmissionData(path: ModelPath,data: TransmissionData)
 
    Writes the given TransmissionData into the Revit file at the
@@ -227,25 +237,33 @@ class TransmissionData(object,IDisposable):
 
     Elements.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,other):
-  """ __new__(cls: type,other: TransmissionData) """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsTransmitted=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determines whether this file has been transmitted or not.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, other):
+        """ __new__(cls: type,other: TransmissionData) """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsTransmitted = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Determines whether this file has been transmitted or not.
 
 
 
@@ -257,8 +275,10 @@ Set: IsTransmitted(self: TransmissionData)=value
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -268,8 +288,8 @@ Get: IsValidObject(self: TransmissionData) -> bool
 
 """
 
- UserData=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """A string which users can store notes in.
+    UserData = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """A string which users can store notes in.
 
 
 
@@ -281,8 +301,8 @@ Set: UserData(self: TransmissionData)=value
 
 """
 
- Version=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The format version for TransmissionData
+    Version = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The format version for TransmissionData
 
 
 
@@ -291,5 +311,3 @@ Get: Version(self: TransmissionData) -> int
 
 
 """
-
-

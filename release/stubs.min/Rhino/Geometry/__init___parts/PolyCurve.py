@@ -1,5 +1,5 @@
-class PolyCurve(Curve,IDisposable,ISerializable):
- """
+class PolyCurve(Curve, IDisposable, ISerializable):
+    """
  Represents a curve that is the result of joining several (possibly different)
 
     types of curves.
@@ -8,8 +8,9 @@ class PolyCurve(Curve,IDisposable,ISerializable):
 
  PolyCurve()
  """
- def Append(self,*__args):
-  """
+
+    def Append(self, *__args):
+        """
   Append(self: PolyCurve,curve: Curve) -> bool
 
   
@@ -64,9 +65,10 @@ class PolyCurve(Curve,IDisposable,ISerializable):
 
    Returns: true on success,false on failure.
   """
-  pass
- def ConstructConstObject(self,*args):
-  """
+        pass
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -77,9 +79,10 @@ class PolyCurve(Curve,IDisposable,ISerializable):
 
    subobject_index: The subobject index.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: Curve,disposing: bool)
 
    For derived class implementers.
@@ -104,9 +107,10 @@ class PolyCurve(Curve,IDisposable,ISerializable):
 
     finalizer.
   """
-  pass
- def Duplicate(self):
-  """
+        pass
+
+    def Duplicate(self):
+        """
   Duplicate(self: PolyCurve) -> GeometryBase
 
   
@@ -121,9 +125,10 @@ class PolyCurve(Curve,IDisposable,ISerializable):
 
    Returns: An exact duplicate of this curve.
   """
-  pass
- def DuplicatePolyCurve(self):
-  """
+        pass
+
+    def DuplicatePolyCurve(self):
+        """
   DuplicatePolyCurve(self: PolyCurve) -> PolyCurve
 
   
@@ -134,9 +139,10 @@ class PolyCurve(Curve,IDisposable,ISerializable):
 
    Returns: An exact duplicate of this curve.
   """
-  pass
- def Explode(self):
-  """
+        pass
+
+    def Explode(self):
+        """
   Explode(self: PolyCurve) -> Array[Curve]
 
   
@@ -153,9 +159,10 @@ class PolyCurve(Curve,IDisposable,ISerializable):
 
    Returns: An array of polycurve segments.
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: Curve)
 
    For derived classes implementers.
@@ -164,16 +171,18 @@ class PolyCurve(Curve,IDisposable,ISerializable):
 
     instance from being const.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: GeometryBase)
 
    Is called when a non-const operation occurs.
   """
-  pass
- def PolyCurveParameter(self,segmentIndex,segmentCurveParameter):
-  """
+        pass
+
+    def PolyCurveParameter(self, segmentIndex, segmentCurveParameter):
+        """
   PolyCurveParameter(self: PolyCurve,segmentIndex: int,segmentCurveParameter: float) -> float
 
   
@@ -190,9 +199,10 @@ class PolyCurve(Curve,IDisposable,ISerializable):
 
     computed.
   """
-  pass
- def RemoveNesting(self):
-  """
+        pass
+
+    def RemoveNesting(self):
+        """
   RemoveNesting(self: PolyCurve) -> bool
 
   
@@ -213,9 +223,10 @@ class PolyCurve(Curve,IDisposable,ISerializable):
 
     found.
   """
-  pass
- def SegmentCurve(self,index):
-  """
+        pass
+
+    def SegmentCurve(self, index):
+        """
   SegmentCurve(self: PolyCurve,index: int) -> Curve
 
   
@@ -228,9 +239,10 @@ class PolyCurve(Curve,IDisposable,ISerializable):
 
    Returns: The segment at the given index or null on failure.
   """
-  pass
- def SegmentCurveParameter(self,polycurveParameter):
-  """
+        pass
+
+    def SegmentCurveParameter(self, polycurveParameter):
+        """
   SegmentCurveParameter(self: PolyCurve,polycurveParameter: float) -> float
 
   
@@ -247,9 +259,10 @@ class PolyCurve(Curve,IDisposable,ISerializable):
 
     could not be computed.
   """
-  pass
- def SegmentDomain(self,segmentIndex):
-  """
+        pass
+
+    def SegmentDomain(self, segmentIndex):
+        """
   SegmentDomain(self: PolyCurve,segmentIndex: int) -> Interval
 
   
@@ -266,9 +279,10 @@ class PolyCurve(Curve,IDisposable,ISerializable):
 
     segment_index < 0 or segment_index >= Count().
   """
-  pass
- def SegmentIndex(self,polycurveParameter):
-  """
+        pass
+
+    def SegmentIndex(self, polycurveParameter):
+        """
   SegmentIndex(self: PolyCurve,polycurveParameter: float) -> int
 
   
@@ -289,9 +303,10 @@ class PolyCurve(Curve,IDisposable,ISerializable):
 
     Domain.Max(),then Count()-1 is returned.
   """
-  pass
- def SegmentIndexes(self,subdomain,segmentIndex0,segmentIndex1):
-  """
+        pass
+
+    def SegmentIndexes(self, subdomain, segmentIndex0, segmentIndex1):
+        """
   SegmentIndexes(self: PolyCurve,subdomain: Interval) -> (int,int,int)
 
   
@@ -304,38 +319,44 @@ class PolyCurve(Curve,IDisposable,ISerializable):
 
    Returns: Number of segments that overlap the subdomain.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self):
+        """
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
 
   __new__(cls: type)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- HasGap=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This is a quick way to see if the curve has gaps between the sub curve segments.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    HasGap = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """This is a quick way to see if the curve has gaps between the sub curve segments.
 
 
 
@@ -345,8 +366,8 @@ Get: HasGap(self: PolyCurve) -> bool
 
 """
 
- IsNested=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether or not a PolyCurve contains nested PolyCurves.
+    IsNested = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether or not a PolyCurve contains nested PolyCurves.
 
 
 
@@ -356,8 +377,10 @@ Get: IsNested(self: PolyCurve) -> bool
 
 """
 
- SegmentCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of segments that make up this Polycurve.
+    SegmentCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the number of segments that make up this Polycurve.
 
 
 
@@ -366,5 +389,3 @@ Get: SegmentCount(self: PolyCurve) -> int
 
 
 """
-
-

@@ -1,7 +1,8 @@
 class PointOnPlane(PointElementReference):
- """ Define a ReferencePoint relative to a planar reference. """
- def GetPlaneReference(self):
-  """
+    """ Define a ReferencePoint relative to a planar reference. """
+
+    def GetPlaneReference(self):
+        """
   GetPlaneReference(self: PointOnPlane) -> Reference
 
   
@@ -10,10 +11,11 @@ class PointOnPlane(PointElementReference):
 
    Returns: A copy of the reference stored in the PointOnPlane object.
   """
-  pass
- @staticmethod
- def IsValidPlaneReference(doc,planeReference):
-  """
+        pass
+
+    @staticmethod
+    def IsValidPlaneReference(doc, planeReference):
+        """
   IsValidPlaneReference(doc: Document,planeReference: Reference) -> bool
 
   
@@ -22,10 +24,11 @@ class PointOnPlane(PointElementReference):
 
   corresponds to a referenceable plane.
   """
-  pass
- @staticmethod
- def NewPointOnPlane(doc,planeReference,position,xvec):
-  """
+        pass
+
+    @staticmethod
+    def NewPointOnPlane(doc, planeReference, position, xvec):
+        """
   NewPointOnPlane(doc: Document,planeReference: Reference,position: XYZ,xvec: XYZ) -> PointOnPlane
 
   
@@ -56,9 +59,10 @@ class PointOnPlane(PointElementReference):
 
     properties set to match the given 3-dimensional arguments.
   """
-  pass
- def SetPlaneReference(self,planeReference):
-  """
+        pass
+
+    def SetPlaneReference(self, planeReference):
+        """
   SetPlaneReference(self: PointOnPlane,planeReference: Reference)
 
    Change the geometric plane reference.
@@ -79,9 +83,10 @@ class PointOnPlane(PointElementReference):
 
   is assigned to a ReferencePoint.)
   """
-  pass
- Offset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Signed offset from the plane.
+        pass
+
+    Offset = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Signed offset from the plane.
 
 
 
@@ -93,8 +98,8 @@ Set: Offset(self: PointOnPlane)=value
 
 """
 
- Position=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The coordinates of the point (or its projection)
+    Position = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The coordinates of the point (or its projection)
 
 on the plane.
 
@@ -108,8 +113,8 @@ Set: Position(self: PointOnPlane)=value
 
 """
 
- XVec=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The X-coordinate vector of the point,in the
+    XVec = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The X-coordinate vector of the point,in the
 
 plane's coordinate system.
 
@@ -122,5 +127,3 @@ Get: XVec(self: PointOnPlane) -> UV
 Set: XVec(self: PointOnPlane)=value
 
 """
-
-

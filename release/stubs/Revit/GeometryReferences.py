@@ -8,19 +8,22 @@
 # no functions
 # classes
 
+
 class ElementGeometryReference(object):
     """ A base class for revit Reference objects """
 
+
 class ElementCurveReference(ElementGeometryReference):
     """ A stable reference to a Revit curve derived from a Revit Element """
-    DefaultTag = 'RevitCurveReference'
+
+    DefaultTag = "RevitCurveReference"
 
 
 class ElementFaceReference(ElementGeometryReference):
     """ A stable reference to a Revit Face, usually derived from a Revit Element """
-    DefaultTag = 'RevitFaceReference'
+
+    DefaultTag = "RevitFaceReference"
 
 
 class ElementPlaneReference(ElementGeometryReference):
     """ A Reference to a plane extracted from a Revit ELement """
-

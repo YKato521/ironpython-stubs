@@ -1,13 +1,16 @@
-class ReinforcementSettings(Element,IDisposable):
- """ Provides access to project-wide reinforcement settings. """
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetFabricRoundingManager(self):
-  """
+class ReinforcementSettings(Element, IDisposable):
+    """ Provides access to project-wide reinforcement settings. """
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetFabricRoundingManager(self):
+        """
   GetFabricRoundingManager(self: ReinforcementSettings) -> FabricRoundingManager
 
   
@@ -20,9 +23,10 @@ class ReinforcementSettings(Element,IDisposable):
 
    Returns: The rounding manager.
   """
-  pass
- def GetRebarRoundingManager(self):
-  """
+        pass
+
+    def GetRebarRoundingManager(self):
+        """
   GetRebarRoundingManager(self: ReinforcementSettings) -> RebarRoundingManager
 
   
@@ -35,9 +39,10 @@ class ReinforcementSettings(Element,IDisposable):
 
    Returns: The rounding manager.
   """
-  pass
- def GetReinforcementAbbreviationTag(self,tagType):
-  """
+        pass
+
+    def GetReinforcementAbbreviationTag(self, tagType):
+        """
   GetReinforcementAbbreviationTag(self: ReinforcementSettings,tagType: ReinforcementAbbreviationTagType) -> str
 
   
@@ -50,9 +55,10 @@ class ReinforcementSettings(Element,IDisposable):
 
    Returns: Abbreviation tag value
   """
-  pass
- def GetReinforcementAbbreviationTags(self,objectType):
-  """
+        pass
+
+    def GetReinforcementAbbreviationTags(self, objectType):
+        """
   GetReinforcementAbbreviationTags(self: ReinforcementSettings,objectType: ReinforcementAbbreviationObjectType) -> IList[ReinforcementAbbreviationTag]
 
   
@@ -67,10 +73,11 @@ class ReinforcementSettings(Element,IDisposable):
 
     given reinforcement object.
   """
-  pass
- @staticmethod
- def GetReinforcementSettings(cda):
-  """
+        pass
+
+    @staticmethod
+    def GetReinforcementSettings(cda):
+        """
   GetReinforcementSettings(cda: Document) -> ReinforcementSettings
 
   
@@ -83,24 +90,28 @@ class ReinforcementSettings(Element,IDisposable):
 
    Returns: The ReinforcementSettings object.
   """
-  pass
- def IsEqual(self,other):
-  """
+        pass
+
+    def IsEqual(self, other):
+        """
   IsEqual(self: ReinforcementSettings,other: ReinforcementSettings) -> bool
 
   
 
    Checks if Reinforcement Settings is equal to other
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetReinforcementAbbreviationTag(self,tagType,abbreviationTag):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetReinforcementAbbreviationTag(self, tagType, abbreviationTag):
+        """
   SetReinforcementAbbreviationTag(self: ReinforcementSettings,tagType: ReinforcementAbbreviationTagType,abbreviationTag: str)
 
    Sets one abbreviation tag for desired ReinforcementAbbreviationTagType.
@@ -111,18 +122,24 @@ class ReinforcementSettings(Element,IDisposable):
 
    abbreviationTag: Abbreviation tag value to set.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- HostStructuralRebar=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Host Structural Rebar within Area and Path Reinforcement with touching AtomHostStructuralRebar.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    HostStructuralRebar = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Host Structural Rebar within Area and Path Reinforcement with touching AtomHostStructuralRebar.
 
 
 
@@ -134,8 +151,10 @@ Set: HostStructuralRebar(self: ReinforcementSettings)=value
 
 """
 
- NumberVaryingLengthRebarsIndividually=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Use this option to modify the way varying length bars are numbered (individually or as a whole).
+    NumberVaryingLengthRebarsIndividually = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Use this option to modify the way varying length bars are numbered (individually or as a whole).
 
 
 
@@ -147,8 +166,10 @@ Set: NumberVaryingLengthRebarsIndividually(self: ReinforcementSettings)=value
 
 """
 
- RebarPresentationInSection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The default presentation mode for rebar sets,when:
+    RebarPresentationInSection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The default presentation mode for rebar sets,when:
 
    The view direction is perpendicular to the rebar normal and the rebar set is cut.The view direction is not perpendicular to the rebar normal and the view direction is not parallel to the rebar normal.
 
@@ -162,8 +183,10 @@ Set: RebarPresentationInSection(self: ReinforcementSettings)=value
 
 """
 
- RebarPresentationInView=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The default presentation mode for rebar sets,when the view direction is perpendicular to the rebar normal and the rebar set is not cut.
+    RebarPresentationInView = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The default presentation mode for rebar sets,when the view direction is perpendicular to the rebar normal and the rebar set is not cut.
 
 
 
@@ -175,8 +198,10 @@ Set: RebarPresentationInView(self: ReinforcementSettings)=value
 
 """
 
- RebarShapeDefinesEndTreatments=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """End Treatments are defined by Rebar Shape of Rebar element. Can be changed if document contains no rebars,area reinforcements and path reinforcements.
+    RebarShapeDefinesEndTreatments = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """End Treatments are defined by Rebar Shape of Rebar element. Can be changed if document contains no rebars,area reinforcements and path reinforcements.
 
 
 
@@ -188,8 +213,10 @@ Set: RebarShapeDefinesEndTreatments(self: ReinforcementSettings)=value
 
 """
 
- RebarShapeDefinesHooks=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Hooks are defined by Rebar Shape of Rebar element. Can be changed if document contains no rebars,area reinforcements and path reinforcements.
+    RebarShapeDefinesHooks = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Hooks are defined by Rebar Shape of Rebar element. Can be changed if document contains no rebars,area reinforcements and path reinforcements.
 
 
 
@@ -201,8 +228,10 @@ Set: RebarShapeDefinesHooks(self: ReinforcementSettings)=value
 
 """
 
- RebarVaryingLengthNumberSuffix=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """A unique identifier used for a bar within a variable length rebar set.
+    RebarVaryingLengthNumberSuffix = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """A unique identifier used for a bar within a variable length rebar set.
 
 
 
@@ -213,5 +242,3 @@ Get: RebarVaryingLengthNumberSuffix(self: ReinforcementSettings) -> str
 Set: RebarVaryingLengthNumberSuffix(self: ReinforcementSettings)=value
 
 """
-
-

@@ -1,5 +1,12 @@
-class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportOleDropSource,IArrangedElement):
- """
+class ToolStripButton(
+    ToolStripItem,
+    IComponent,
+    IDisposable,
+    IDropTarget,
+    ISupportOleDropSource,
+    IArrangedElement,
+):
+    """
  Represents a selectable System.Windows.Forms.ToolStripItem that can contain text and images.
 
  
@@ -16,8 +23,9 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
  ToolStripButton(text: str,image: Image,onClick: EventHandler,name: str)
  """
- def CreateAccessibilityInstance(self,*args):
-  """
+
+    def CreateAccessibilityInstance(self, *args):
+        """
   CreateAccessibilityInstance(self: ToolStripButton) -> AccessibleObject
 
   
@@ -26,9 +34,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    Returns: A new System.Windows.Forms.AccessibleObject for the System.Windows.Forms.ToolStripButton.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: ToolStripItem,disposing: bool)
 
    Releases the unmanaged resources used by the System.Windows.Forms.ToolStripItem and optionally 
@@ -41,9 +50,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def GetPreferredSize(self,constrainingSize):
-  """
+        pass
+
+    def GetPreferredSize(self, constrainingSize):
+        """
   GetPreferredSize(self: ToolStripButton,constrainingSize: Size) -> Size
 
   
@@ -60,9 +70,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    Returns: An ordered pair of type System.Drawing.Size representing the width and height of a rectangle.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -81,9 +92,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def IsInputChar(self,*args):
-  """
+        pass
+
+    def IsInputChar(self, *args):
+        """
   IsInputChar(self: ToolStripItem,charCode: Char) -> bool
 
   
@@ -96,9 +108,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    Returns: true if the character should be sent directly to the item and not preprocessed; otherwise,false.
   """
-  pass
- def IsInputKey(self,*args):
-  """
+        pass
+
+    def IsInputKey(self, *args):
+        """
   IsInputKey(self: ToolStripItem,keyData: Keys) -> bool
 
   
@@ -115,9 +128,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    Returns: true if the specified key is a regular input key; otherwise,false.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -148,9 +162,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def OnAvailableChanged(self,*args):
-  """
+        pass
+
+    def OnAvailableChanged(self, *args):
+        """
   OnAvailableChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the AvailableChanged event.
@@ -159,9 +174,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBackColorChanged(self,*args):
-  """
+        pass
+
+    def OnBackColorChanged(self, *args):
+        """
   OnBackColorChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.BackColorChanged event.
@@ -170,16 +186,18 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBoundsChanged(self,*args):
-  """
+        pass
+
+    def OnBoundsChanged(self, *args):
+        """
   OnBoundsChanged(self: ToolStripItem)
 
    Occurs when the System.Windows.Forms.ToolStripItem.Bounds property changes.
   """
-  pass
- def OnCheckedChanged(self,*args):
-  """
+        pass
+
+    def OnCheckedChanged(self, *args):
+        """
   OnCheckedChanged(self: ToolStripButton,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripButton.CheckedChanged event.
@@ -188,9 +206,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnCheckStateChanged(self,*args):
-  """
+        pass
+
+    def OnCheckStateChanged(self, *args):
+        """
   OnCheckStateChanged(self: ToolStripButton,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripButton.CheckStateChanged event.
@@ -199,9 +218,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnClick(self,*args):
-  """
+        pass
+
+    def OnClick(self, *args):
+        """
   OnClick(self: ToolStripButton,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Click event.
@@ -210,9 +230,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDisplayStyleChanged(self,*args):
-  """
+        pass
+
+    def OnDisplayStyleChanged(self, *args):
+        """
   OnDisplayStyleChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DisplayStyleChanged event.
@@ -221,9 +242,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDoubleClick(self,*args):
-  """
+        pass
+
+    def OnDoubleClick(self, *args):
+        """
   OnDoubleClick(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DoubleClick event.
@@ -232,9 +254,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDragDrop(self,*args):
-  """
+        pass
+
+    def OnDragDrop(self, *args):
+        """
   OnDragDrop(self: ToolStripItem,dragEvent: DragEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DragDrop event.
@@ -243,9 +266,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    dragEvent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnDragEnter(self,*args):
-  """
+        pass
+
+    def OnDragEnter(self, *args):
+        """
   OnDragEnter(self: ToolStripItem,dragEvent: DragEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DragEnter event.
@@ -254,9 +278,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    dragEvent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnDragLeave(self,*args):
-  """
+        pass
+
+    def OnDragLeave(self, *args):
+        """
   OnDragLeave(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DragLeave event.
@@ -265,9 +290,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDragOver(self,*args):
-  """
+        pass
+
+    def OnDragOver(self, *args):
+        """
   OnDragOver(self: ToolStripItem,dragEvent: DragEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DragOver event.
@@ -276,9 +302,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    dragEvent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnEnabledChanged(self,*args):
-  """
+        pass
+
+    def OnEnabledChanged(self, *args):
+        """
   OnEnabledChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.EnabledChanged event.
@@ -287,9 +314,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnFontChanged(self,*args):
-  """
+        pass
+
+    def OnFontChanged(self, *args):
+        """
   OnFontChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.FontChanged event.
@@ -298,9 +326,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnForeColorChanged(self,*args):
-  """
+        pass
+
+    def OnForeColorChanged(self, *args):
+        """
   OnForeColorChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.ForeColorChanged event.
@@ -309,9 +338,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnGiveFeedback(self,*args):
-  """
+        pass
+
+    def OnGiveFeedback(self, *args):
+        """
   OnGiveFeedback(self: ToolStripItem,giveFeedbackEvent: GiveFeedbackEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.GiveFeedback event.
@@ -320,9 +350,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    giveFeedbackEvent: A System.Windows.Forms.GiveFeedbackEventArgs that contains the event data.
   """
-  pass
- def OnLayout(self,*args):
-  """
+        pass
+
+    def OnLayout(self, *args):
+        """
   OnLayout(self: ToolStripItem,e: LayoutEventArgs)
 
    Raises the System.Windows.Forms.Control.Layout event.
@@ -331,9 +362,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: A System.Windows.Forms.LayoutEventArgs that contains the event data.
   """
-  pass
- def OnLocationChanged(self,*args):
-  """
+        pass
+
+    def OnLocationChanged(self, *args):
+        """
   OnLocationChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.LocationChanged event.
@@ -342,9 +374,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseDown(self,*args):
-  """
+        pass
+
+    def OnMouseDown(self, *args):
+        """
   OnMouseDown(self: ToolStripItem,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseDown event.
@@ -353,9 +386,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseEnter(self,*args):
-  """
+        pass
+
+    def OnMouseEnter(self, *args):
+        """
   OnMouseEnter(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseEnter event.
@@ -364,9 +398,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseHover(self,*args):
-  """
+        pass
+
+    def OnMouseHover(self, *args):
+        """
   OnMouseHover(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseHover event.
@@ -375,9 +410,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseLeave(self,*args):
-  """
+        pass
+
+    def OnMouseLeave(self, *args):
+        """
   OnMouseLeave(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseLeave event.
@@ -386,9 +422,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseMove(self,*args):
-  """
+        pass
+
+    def OnMouseMove(self, *args):
+        """
   OnMouseMove(self: ToolStripItem,mea: MouseEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseMove event.
@@ -397,9 +434,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    mea: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseUp(self,*args):
-  """
+        pass
+
+    def OnMouseUp(self, *args):
+        """
   OnMouseUp(self: ToolStripItem,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseUp event.
@@ -408,9 +446,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnOwnerChanged(self,*args):
-  """
+        pass
+
+    def OnOwnerChanged(self, *args):
+        """
   OnOwnerChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.OwnerChanged event.
@@ -419,9 +458,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnOwnerFontChanged(self,*args):
-  """
+        pass
+
+    def OnOwnerFontChanged(self, *args):
+        """
   OnOwnerFontChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.FontChanged event when the 
@@ -436,9 +476,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: A System.EventArgs that contains the event data.
   """
-  pass
- def OnPaint(self,*args):
-  """
+        pass
+
+    def OnPaint(self, *args):
+        """
   OnPaint(self: ToolStripButton,e: PaintEventArgs)
 
    Raises the System.Windows.Forms.Control.Paint event.
@@ -447,9 +488,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: A System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def OnParentBackColorChanged(self,*args):
-  """
+        pass
+
+    def OnParentBackColorChanged(self, *args):
+        """
   OnParentBackColorChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.BackColorChanged event.
@@ -458,9 +500,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentChanged(self,*args):
-  """
+        pass
+
+    def OnParentChanged(self, *args):
+        """
   OnParentChanged(self: ToolStripItem,oldParent: ToolStrip,newParent: ToolStrip)
 
    Raises the System.Windows.Forms.Control.ParentChanged event.
@@ -471,9 +514,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    newParent: The new parent of the item.
   """
-  pass
- def OnParentEnabledChanged(self,*args):
-  """
+        pass
+
+    def OnParentEnabledChanged(self, *args):
+        """
   OnParentEnabledChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.EnabledChanged event when the 
@@ -486,9 +530,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentForeColorChanged(self,*args):
-  """
+        pass
+
+    def OnParentForeColorChanged(self, *args):
+        """
   OnParentForeColorChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.ForeColorChanged event.
@@ -497,9 +542,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentRightToLeftChanged(self,*args):
-  """
+        pass
+
+    def OnParentRightToLeftChanged(self, *args):
+        """
   OnParentRightToLeftChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.RightToLeftChanged event.
@@ -508,9 +554,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnQueryContinueDrag(self,*args):
-  """
+        pass
+
+    def OnQueryContinueDrag(self, *args):
+        """
   OnQueryContinueDrag(self: ToolStripItem,queryContinueDragEvent: QueryContinueDragEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.QueryContinueDrag event.
@@ -519,9 +566,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    queryContinueDragEvent: A System.Windows.Forms.QueryContinueDragEventArgs that contains the event data.
   """
-  pass
- def OnRightToLeftChanged(self,*args):
-  """
+        pass
+
+    def OnRightToLeftChanged(self, *args):
+        """
   OnRightToLeftChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.RightToLeftChanged event.
@@ -530,9 +578,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnTextChanged(self,*args):
-  """
+        pass
+
+    def OnTextChanged(self, *args):
+        """
   OnTextChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.TextChanged event.
@@ -541,9 +590,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnVisibleChanged(self,*args):
-  """
+        pass
+
+    def OnVisibleChanged(self, *args):
+        """
   OnVisibleChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.VisibleChanged event.
@@ -552,9 +602,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def ProcessCmdKey(self,*args):
-  """
+        pass
+
+    def ProcessCmdKey(self, *args):
+        """
   ProcessCmdKey(self: ToolStripItem,m: Message,keyData: Keys) -> (bool,Message)
 
   
@@ -573,9 +624,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    Returns: false in all cases.
   """
-  pass
- def ProcessDialogKey(self,*args):
-  """
+        pass
+
+    def ProcessDialogKey(self, *args):
+        """
   ProcessDialogKey(self: ToolStripItem,keyData: Keys) -> bool
 
   
@@ -588,9 +640,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    Returns: true if the key was processed by the item; otherwise,false.
   """
-  pass
- def ProcessMnemonic(self,*args):
-  """
+        pass
+
+    def ProcessMnemonic(self, *args):
+        """
   ProcessMnemonic(self: ToolStripItem,charCode: Char) -> bool
 
   
@@ -603,9 +656,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    Returns: true in all cases.
   """
-  pass
- def SetBounds(self,*args):
-  """
+        pass
+
+    def SetBounds(self, *args):
+        """
   SetBounds(self: ToolStripItem,bounds: Rectangle)
 
    Sets the size and location of the item.
@@ -616,9 +670,10 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
     System.Windows.Forms.ToolStripItem
   """
-  pass
- def SetVisibleCore(self,*args):
-  """
+        pass
+
+    def SetVisibleCore(self, *args):
+        """
   SetVisibleCore(self: ToolStripItem,visible: bool)
 
    Sets the System.Windows.Forms.ToolStripItem to the specified visible state.
@@ -627,29 +682,33 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
    visible: true to make the System.Windows.Forms.ToolStripItem visible; otherwise,false.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,text: str)
@@ -662,11 +721,15 @@ class ToolStripButton(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportO
 
   __new__(cls: type,text: str,image: Image,onClick: EventHandler,name: str)
   """
-  pass
- def __str__(self,*args):
-  pass
- AutoToolTip=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether default or custom System.Windows.Forms.ToolTip text is displayed on the System.Windows.Forms.ToolStripButton.
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AutoToolTip = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether default or custom System.Windows.Forms.ToolTip text is displayed on the System.Windows.Forms.ToolStripButton.
 
 
 
@@ -678,15 +741,17 @@ Set: AutoToolTip(self: ToolStripButton)=value
 
 """
 
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- CanSelect=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Windows.Forms.ToolStripButton can be selected.
+    CanSelect = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the System.Windows.Forms.ToolStripButton can be selected.
 
 
 
@@ -696,8 +761,8 @@ Get: CanSelect(self: ToolStripButton) -> bool
 
 """
 
- Checked=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the System.Windows.Forms.ToolStripButton is pressed or not pressed.
+    Checked = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the System.Windows.Forms.ToolStripButton is pressed or not pressed.
 
 
 
@@ -709,8 +774,10 @@ Set: Checked(self: ToolStripButton)=value
 
 """
 
- CheckOnClick=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the System.Windows.Forms.ToolStripButton should automatically appear pressed in and not pressed in when clicked.
+    CheckOnClick = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the System.Windows.Forms.ToolStripButton should automatically appear pressed in and not pressed in when clicked.
 
 
 
@@ -722,8 +789,10 @@ Set: CheckOnClick(self: ToolStripButton)=value
 
 """
 
- CheckState=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the System.Windows.Forms.ToolStripButton is in the pressed or not pressed state by default,or is in an indeterminate state.
+    CheckState = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the System.Windows.Forms.ToolStripButton is in the pressed or not pressed state by default,or is in an indeterminate state.
 
 
 
@@ -735,77 +804,91 @@ Set: CheckState(self: ToolStripButton)=value
 
 """
 
- DefaultAutoToolTip=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether to display the ToolTip that is defined as the default.
+    DefaultAutoToolTip = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether to display the ToolTip that is defined as the default.
 
 
 
 """
 
- DefaultDisplayStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating what is displayed on the System.Windows.Forms.ToolStripItem.
+    DefaultDisplayStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating what is displayed on the System.Windows.Forms.ToolStripItem.
 
 
 
 """
 
- DefaultMargin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the default margin of an item.
+    DefaultMargin = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the default margin of an item.
 
 
 
 """
 
- DefaultPadding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the internal spacing characteristics of the item.
+    DefaultPadding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the internal spacing characteristics of the item.
 
 
 
 """
 
- DefaultSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the default size of the item.
+    DefaultSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the default size of the item.
 
 
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- DismissWhenClicked=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether items on a System.Windows.Forms.ToolStripDropDown are hidden after they are clicked.
+    DismissWhenClicked = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether items on a System.Windows.Forms.ToolStripDropDown are hidden after they are clicked.
 
 
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- Parent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the parent container of the System.Windows.Forms.ToolStripItem.
+    Parent = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the parent container of the System.Windows.Forms.ToolStripItem.
 
 
 
 """
 
- ShowKeyboardCues=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether to show or hide shortcut keys.
+    ShowKeyboardCues = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether to show or hide shortcut keys.
 
 
 
 """
 
-
- CheckedChanged=None
- CheckStateChanged=None
-
+    CheckedChanged = None
+    CheckStateChanged = None

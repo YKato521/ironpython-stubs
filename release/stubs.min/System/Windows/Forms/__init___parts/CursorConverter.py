@@ -1,13 +1,14 @@
 class CursorConverter(TypeConverter):
- """
+    """
  Provides a type converter to convert System.Windows.Forms.Cursor objects to and from various other representations.
 
  
 
  CursorConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: CursorConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -32,9 +33,10 @@ class CursorConverter(TypeConverter):
 
    Returns: true if this object can perform the conversion.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: CursorConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -53,9 +55,10 @@ class CursorConverter(TypeConverter):
 
    Returns: true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: CursorConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -68,9 +71,10 @@ class CursorConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: CursorConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -85,9 +89,10 @@ class CursorConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def GetStandardValues(self,context=None):
-  """
+        pass
+
+    def GetStandardValues(self, context=None):
+        """
   GetStandardValues(self: CursorConverter,context: ITypeDescriptorContext) -> StandardValuesCollection
 
   
@@ -112,9 +117,10 @@ class CursorConverter(TypeConverter):
 
     always returns null.
   """
-  pass
- def GetStandardValuesSupported(self,context=None):
-  """
+        pass
+
+    def GetStandardValuesSupported(self, context=None):
+        """
   GetStandardValuesSupported(self: CursorConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -129,4 +135,4 @@ class CursorConverter(TypeConverter):
 
     supports.
   """
-  pass
+        pass

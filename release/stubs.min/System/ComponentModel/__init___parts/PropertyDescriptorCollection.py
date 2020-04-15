@@ -1,5 +1,7 @@
-class PropertyDescriptorCollection(object,ICollection,IEnumerable,IList,IDictionary):
- """
+class PropertyDescriptorCollection(
+    object, ICollection, IEnumerable, IList, IDictionary
+):
+    """
  Represents a collection of System.ComponentModel.PropertyDescriptor objects.
 
  
@@ -8,8 +10,9 @@ class PropertyDescriptorCollection(object,ICollection,IEnumerable,IList,IDiction
 
  PropertyDescriptorCollection(properties: Array[PropertyDescriptor],readOnly: bool)
  """
- def Add(self,value):
-  """
+
+    def Add(self, value):
+        """
   Add(self: PropertyDescriptorCollection,value: PropertyDescriptor) -> int
 
   
@@ -22,16 +25,18 @@ class PropertyDescriptorCollection(object,ICollection,IEnumerable,IList,IDiction
 
    Returns: The index of the System.ComponentModel.PropertyDescriptor that was added to the collection.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: PropertyDescriptorCollection)
 
    Removes all System.ComponentModel.PropertyDescriptor objects from the collection.
   """
-  pass
- def Contains(self,value):
-  """
+        pass
+
+    def Contains(self, value):
+        """
   Contains(self: PropertyDescriptorCollection,value: PropertyDescriptor) -> bool
 
   
@@ -46,9 +51,10 @@ class PropertyDescriptorCollection(object,ICollection,IEnumerable,IList,IDiction
 
     false.
   """
-  pass
- def CopyTo(self,array,index):
-  """
+        pass
+
+    def CopyTo(self, array, index):
+        """
   CopyTo(self: PropertyDescriptorCollection,array: Array,index: int)
 
    Copies the entire collection to an array,starting at the specified index number.
@@ -63,9 +69,10 @@ class PropertyDescriptorCollection(object,ICollection,IEnumerable,IList,IDiction
 
    index: The index of the array parameter at which copying begins.
   """
-  pass
- def Find(self,name,ignoreCase):
-  """
+        pass
+
+    def Find(self, name, ignoreCase):
+        """
   Find(self: PropertyDescriptorCollection,name: str,ignoreCase: bool) -> PropertyDescriptor
 
   
@@ -86,9 +93,10 @@ class PropertyDescriptorCollection(object,ICollection,IEnumerable,IList,IDiction
 
     not exist.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: PropertyDescriptorCollection) -> IEnumerator
 
   
@@ -97,9 +105,10 @@ class PropertyDescriptorCollection(object,ICollection,IEnumerable,IList,IDiction
 
    Returns: An enumerator of type System.Collections.IEnumerator.
   """
-  pass
- def IndexOf(self,value):
-  """
+        pass
+
+    def IndexOf(self, value):
+        """
   IndexOf(self: PropertyDescriptorCollection,value: PropertyDescriptor) -> int
 
   
@@ -112,9 +121,10 @@ class PropertyDescriptorCollection(object,ICollection,IEnumerable,IList,IDiction
 
    Returns: The index of the given System.ComponentModel.PropertyDescriptor.
   """
-  pass
- def Insert(self,index,value):
-  """
+        pass
+
+    def Insert(self, index, value):
+        """
   Insert(self: PropertyDescriptorCollection,index: int,value: PropertyDescriptor)
 
    Adds the System.ComponentModel.PropertyDescriptor to the collection at the specified index 
@@ -129,9 +139,10 @@ class PropertyDescriptorCollection(object,ICollection,IEnumerable,IList,IDiction
 
    value: The System.ComponentModel.PropertyDescriptor to add to the collection.
   """
-  pass
- def InternalSort(self,*args):
-  """
+        pass
+
+    def InternalSort(self, *args):
+        """
   InternalSort(self: PropertyDescriptorCollection,sorter: IComparer)
 
    Sorts the members of this collection,using the specified System.Collections.IComparer.
@@ -158,9 +169,10 @@ class PropertyDescriptorCollection(object,ICollection,IEnumerable,IList,IDiction
 
     System.ComponentModel.PropertyDescriptor objects in this collection.
   """
-  pass
- def Remove(self,value):
-  """
+        pass
+
+    def Remove(self, value):
+        """
   Remove(self: PropertyDescriptorCollection,value: PropertyDescriptor)
 
    Removes the specified System.ComponentModel.PropertyDescriptor from the collection.
@@ -169,9 +181,10 @@ class PropertyDescriptorCollection(object,ICollection,IEnumerable,IList,IDiction
 
    value: The System.ComponentModel.PropertyDescriptor to remove from the collection.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: PropertyDescriptorCollection,index: int)
 
    Removes the System.ComponentModel.PropertyDescriptor at the specified index from the collection.
@@ -180,9 +193,10 @@ class PropertyDescriptorCollection(object,ICollection,IEnumerable,IList,IDiction
 
    index: The index of the System.ComponentModel.PropertyDescriptor to remove from the collection.
   """
-  pass
- def Sort(self,*__args):
-  """
+        pass
+
+    def Sort(self, *__args):
+        """
   Sort(self: PropertyDescriptorCollection,names: Array[str],comparer: IComparer) -> PropertyDescriptorCollection
 
   
@@ -271,12 +285,14 @@ class PropertyDescriptorCollection(object,ICollection,IEnumerable,IList,IDiction
 
     System.ComponentModel.PropertyDescriptor objects.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IList,value: object) -> bool
 
   
@@ -289,32 +305,39 @@ class PropertyDescriptorCollection(object,ICollection,IEnumerable,IList,IDiction
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,properties,readOnly=None):
-  """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, properties, readOnly=None):
+        """
   __new__(cls: type,properties: Array[PropertyDescriptor])
 
   __new__(cls: type,properties: Array[PropertyDescriptor],readOnly: bool)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of property descriptors in the collection.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of property descriptors in the collection.
 
 
 
@@ -324,6 +347,4 @@ Get: Count(self: PropertyDescriptorCollection) -> int
 
 """
 
-
- Empty=None
-
+    Empty = None

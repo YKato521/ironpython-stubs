@@ -1,5 +1,5 @@
-class Guid(object,IFormattable,IComparable,IComparable[Guid],IEquatable[Guid]):
- """
+class Guid(object, IFormattable, IComparable, IComparable[Guid], IEquatable[Guid]):
+    """
  Represents a globally unique identifier (GUID).
 
  
@@ -14,8 +14,9 @@ class Guid(object,IFormattable,IComparable,IComparable[Guid],IEquatable[Guid]):
 
  Guid(g: str)
  """
- def CompareTo(self,value):
-  """
+
+    def CompareTo(self, value):
+        """
   CompareTo(self: Guid,value: Guid) -> int
 
   
@@ -54,9 +55,10 @@ class Guid(object,IFormattable,IComparable,IComparable[Guid],IEquatable[Guid]):
 
     value. A positive integer This instance is greater than value,or value is null.
   """
-  pass
- def Equals(self,*__args):
-  """
+        pass
+
+    def Equals(self, *__args):
+        """
   Equals(self: Guid,g: Guid) -> bool
 
   
@@ -85,9 +87,10 @@ class Guid(object,IFormattable,IComparable,IComparable[Guid],IEquatable[Guid]):
 
    Returns: true if o is a System.Guid that has the same value as this instance; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Guid) -> int
 
   
@@ -96,10 +99,11 @@ class Guid(object,IFormattable,IComparable,IComparable[Guid],IEquatable[Guid]):
 
    Returns: The hash code for this instance.
   """
-  pass
- @staticmethod
- def NewGuid():
-  """
+        pass
+
+    @staticmethod
+    def NewGuid():
+        """
   NewGuid() -> Guid
 
   
@@ -108,10 +112,11 @@ class Guid(object,IFormattable,IComparable,IComparable[Guid],IEquatable[Guid]):
 
    Returns: A new GUID object.
   """
-  pass
- @staticmethod
- def Parse(input):
-  """
+        pass
+
+    @staticmethod
+    def Parse(input):
+        """
   Parse(input: str) -> Guid
 
   
@@ -124,10 +129,11 @@ class Guid(object,IFormattable,IComparable,IComparable[Guid],IEquatable[Guid]):
 
    Returns: A structure that contains the value that was parsed.
   """
-  pass
- @staticmethod
- def ParseExact(input,format):
-  """
+        pass
+
+    @staticmethod
+    def ParseExact(input, format):
+        """
   ParseExact(input: str,format: str) -> Guid
 
   
@@ -150,9 +156,10 @@ class Guid(object,IFormattable,IComparable,IComparable[Guid],IEquatable[Guid]):
 
    Returns: A structure that contains the value that was parsed.
   """
-  pass
- def ToByteArray(self):
-  """
+        pass
+
+    def ToByteArray(self):
+        """
   ToByteArray(self: Guid) -> Array[Byte]
 
   
@@ -161,9 +168,10 @@ class Guid(object,IFormattable,IComparable,IComparable[Guid],IEquatable[Guid]):
 
    Returns: A 16-element byte array.
   """
-  pass
- def ToString(self,format=None,provider=None):
-  """
+        pass
+
+    def ToString(self, format=None, provider=None):
+        """
   ToString(self: Guid,format: str,provider: IFormatProvider) -> str
 
   
@@ -232,10 +240,11 @@ class Guid(object,IFormattable,IComparable,IComparable[Guid],IEquatable[Guid]):
 
     example of a return value is "382c74c3-721d-4f34-80e5-57657b6cbc27".
   """
-  pass
- @staticmethod
- def TryParse(input,result):
-  """
+        pass
+
+    @staticmethod
+    def TryParse(input, result):
+        """
   TryParse(input: str) -> (bool,Guid)
 
   
@@ -248,10 +257,11 @@ class Guid(object,IFormattable,IComparable,IComparable[Guid],IEquatable[Guid]):
 
    Returns: true if the parse operation was successful; otherwise,false.
   """
-  pass
- @staticmethod
- def TryParseExact(input,format,result):
-  """
+        pass
+
+    @staticmethod
+    def TryParseExact(input, format, result):
+        """
   TryParseExact(input: str,format: str) -> (bool,Guid)
 
   
@@ -274,27 +284,35 @@ class Guid(object,IFormattable,IComparable,IComparable[Guid],IEquatable[Guid]):
 
    Returns: true if the parse operation was successful; otherwise,false.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,b: Array[Byte])
 
   __new__(cls: type,a: UInt32,b: UInt16,c: UInt16,d: Byte,e: Byte,f: Byte,g: Byte,h: Byte,i: Byte,j: Byte,k: Byte)
@@ -307,15 +325,19 @@ class Guid(object,IFormattable,IComparable,IComparable[Guid],IEquatable[Guid]):
 
   __new__[Guid]() -> Guid
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- Empty=None
+        pass
 
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Empty = None

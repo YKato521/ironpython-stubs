@@ -1,7 +1,8 @@
-class InputLanguageCollection(ReadOnlyCollectionBase,ICollection,IEnumerable):
- """ Stores System.Windows.Forms.InputLanguage objects. """
- def Contains(self,value):
-  """
+class InputLanguageCollection(ReadOnlyCollectionBase, ICollection, IEnumerable):
+    """ Stores System.Windows.Forms.InputLanguage objects. """
+
+    def Contains(self, value):
+        """
   Contains(self: InputLanguageCollection,value: InputLanguage) -> bool
 
   
@@ -18,9 +19,10 @@ class InputLanguageCollection(ReadOnlyCollectionBase,ICollection,IEnumerable):
 
    Returns: true if the System.Windows.Forms.InputLanguage is contained in the collection; otherwise,false.
   """
-  pass
- def CopyTo(self,array,index):
-  """
+        pass
+
+    def CopyTo(self, array, index):
+        """
   CopyTo(self: InputLanguageCollection,array: Array[InputLanguage],index: int)
 
    Copies the System.Windows.Forms.InputLanguageCollection values to a one-dimensional System.Array 
@@ -39,9 +41,10 @@ class InputLanguageCollection(ReadOnlyCollectionBase,ICollection,IEnumerable):
 
    index: The index in array where copying begins.
   """
-  pass
- def IndexOf(self,value):
-  """
+        pass
+
+    def IndexOf(self, value):
+        """
   IndexOf(self: InputLanguageCollection,value: InputLanguage) -> int
 
   
@@ -60,21 +63,23 @@ class InputLanguageCollection(ReadOnlyCollectionBase,ICollection,IEnumerable):
 
     System.Windows.Forms.InputLanguageCollection,if found; otherwise,-1.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- InnerList=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of elements contained in the System.Collections.ReadOnlyCollectionBase instance.
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    InnerList = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of elements contained in the System.Collections.ReadOnlyCollectionBase instance.
 
 
 
 """
-
-

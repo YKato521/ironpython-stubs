@@ -1,8 +1,9 @@
 class InstanceVoidCutUtils(object):
- """ Utilities for cutting elements by unattached voids in family instances. """
- @staticmethod
- def AddInstanceVoidCut(document,element,cuttingInstance):
-  """
+    """ Utilities for cutting elements by unattached voids in family instances. """
+
+    @staticmethod
+    def AddInstanceVoidCut(document, element, cuttingInstance):
+        """
   AddInstanceVoidCut(document: Document,element: Element,cuttingInstance: Element)
 
    Add a cut to an element using the unattached voids inside a cutting instance.
@@ -15,10 +16,11 @@ class InstanceVoidCutUtils(object):
 
    cuttingInstance: The cutting family instance
   """
-  pass
- @staticmethod
- def CanBeCutWithVoid(element):
-  """
+        pass
+
+    @staticmethod
+    def CanBeCutWithVoid(element):
+        """
   CanBeCutWithVoid(element: Element) -> bool
 
   
@@ -31,10 +33,11 @@ class InstanceVoidCutUtils(object):
 
    Returns: Returns true if the element can be cut by an instance with unattached voids.
   """
-  pass
- @staticmethod
- def GetCuttingVoidInstances(element):
-  """
+        pass
+
+    @staticmethod
+    def GetCuttingVoidInstances(element):
+        """
   GetCuttingVoidInstances(element: Element) -> ICollection[ElementId]
 
   
@@ -47,10 +50,11 @@ class InstanceVoidCutUtils(object):
 
    Returns: Ids of instances with unattached voids that cut this element
   """
-  pass
- @staticmethod
- def GetElementsBeingCut(cuttingInstance):
-  """
+        pass
+
+    @staticmethod
+    def GetElementsBeingCut(cuttingInstance):
+        """
   GetElementsBeingCut(cuttingInstance: Element) -> ICollection[ElementId]
 
   
@@ -63,10 +67,11 @@ class InstanceVoidCutUtils(object):
 
    Returns: Ids of elements being cut by cuttingInstance
   """
-  pass
- @staticmethod
- def InstanceVoidCutExists(element,cuttingInstance):
-  """
+        pass
+
+    @staticmethod
+    def InstanceVoidCutExists(element, cuttingInstance):
+        """
   InstanceVoidCutExists(element: Element,cuttingInstance: Element) -> bool
 
   
@@ -81,10 +86,11 @@ class InstanceVoidCutUtils(object):
 
    Returns: Returns true if the instance is cutting the element.
   """
-  pass
- @staticmethod
- def IsVoidInstanceCuttingElement(element):
-  """
+        pass
+
+    @staticmethod
+    def IsVoidInstanceCuttingElement(element):
+        """
   IsVoidInstanceCuttingElement(element: Element) -> bool
 
   
@@ -103,10 +109,11 @@ class InstanceVoidCutUtils(object):
 
     cut other elements.
   """
-  pass
- @staticmethod
- def RemoveInstanceVoidCut(document,element,cuttingInstance):
-  """
+        pass
+
+    @staticmethod
+    def RemoveInstanceVoidCut(document, element, cuttingInstance):
+        """
   RemoveInstanceVoidCut(document: Document,element: Element,cuttingInstance: Element)
 
    Remove a cut applied to the element by a cutting instance with unattached voids.
@@ -119,14 +126,14 @@ class InstanceVoidCutUtils(object):
 
    cuttingInstance: The cutting family instance
   """
-  pass
- __all__=[
-  'AddInstanceVoidCut',
-  'CanBeCutWithVoid',
-  'GetCuttingVoidInstances',
-  'GetElementsBeingCut',
-  'InstanceVoidCutExists',
-  'IsVoidInstanceCuttingElement',
-  'RemoveInstanceVoidCut',
- ]
+        pass
 
+    __all__ = [
+        "AddInstanceVoidCut",
+        "CanBeCutWithVoid",
+        "GetCuttingVoidInstances",
+        "GetElementsBeingCut",
+        "InstanceVoidCutExists",
+        "IsVoidInstanceCuttingElement",
+        "RemoveInstanceVoidCut",
+    ]

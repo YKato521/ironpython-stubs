@@ -1,5 +1,5 @@
-class Region(MarshalByRefObject,IDisposable):
- """
+class Region(MarshalByRefObject, IDisposable):
+    """
  Describes the interior of a graphics shape composed of rectangles and paths. This class cannot be inherited.
 
  
@@ -14,8 +14,9 @@ class Region(MarshalByRefObject,IDisposable):
 
  Region(rgnData: RegionData)
  """
- def Clone(self):
-  """
+
+    def Clone(self):
+        """
   Clone(self: Region) -> Region
 
   
@@ -24,9 +25,10 @@ class Region(MarshalByRefObject,IDisposable):
 
    Returns: The System.Drawing.Region that this method creates.
   """
-  pass
- def Complement(self,*__args):
-  """
+        pass
+
+    def Complement(self, *__args):
+        """
   Complement(self: Region,path: GraphicsPath)
 
    Updates this System.Drawing.Region to contain the portion of the specified 
@@ -75,16 +77,18 @@ class Region(MarshalByRefObject,IDisposable):
 
    rect: The System.Drawing.Rectangle structure to complement this System.Drawing.Region.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: Region)
 
    Releases all resources used by this System.Drawing.Region.
   """
-  pass
- def Equals(self,*__args):
-  """
+        pass
+
+    def Equals(self, *__args):
+        """
   Equals(self: Region,region: Region,g: Graphics) -> bool
 
   
@@ -105,9 +109,10 @@ class Region(MarshalByRefObject,IDisposable):
 
     transformation associated with the g parameter is applied; otherwise,false.
   """
-  pass
- def Exclude(self,*__args):
-  """
+        pass
+
+    def Exclude(self, *__args):
+        """
   Exclude(self: Region,path: GraphicsPath)
 
    Updates this System.Drawing.Region to contain only the portion of its interior that does not 
@@ -156,10 +161,11 @@ class Region(MarshalByRefObject,IDisposable):
 
    rect: The System.Drawing.RectangleF structure to exclude from this System.Drawing.Region.
   """
-  pass
- @staticmethod
- def FromHrgn(hrgn):
-  """
+        pass
+
+    @staticmethod
+    def FromHrgn(hrgn):
+        """
   FromHrgn(hrgn: IntPtr) -> Region
 
   
@@ -172,9 +178,10 @@ class Region(MarshalByRefObject,IDisposable):
 
    Returns: The new System.Drawing.Region.
   """
-  pass
- def GetBounds(self,g):
-  """
+        pass
+
+    def GetBounds(self, g):
+        """
   GetBounds(self: Region,g: Graphics) -> RectangleF
 
   
@@ -193,9 +200,10 @@ class Region(MarshalByRefObject,IDisposable):
 
     System.Drawing.Region on the specified drawing surface.
   """
-  pass
- def GetHrgn(self,g):
-  """
+        pass
+
+    def GetHrgn(self, g):
+        """
   GetHrgn(self: Region,g: Graphics) -> IntPtr
 
   
@@ -208,9 +216,10 @@ class Region(MarshalByRefObject,IDisposable):
 
    Returns: A Windows handle to this System.Drawing.Region.
   """
-  pass
- def GetRegionData(self):
-  """
+        pass
+
+    def GetRegionData(self):
+        """
   GetRegionData(self: Region) -> RegionData
 
   
@@ -225,9 +234,10 @@ class Region(MarshalByRefObject,IDisposable):
 
     System.Drawing.Region.
   """
-  pass
- def GetRegionScans(self,matrix):
-  """
+        pass
+
+    def GetRegionScans(self, matrix):
+        """
   GetRegionScans(self: Region,matrix: Matrix) -> Array[RectangleF]
 
   
@@ -250,9 +260,10 @@ class Region(MarshalByRefObject,IDisposable):
 
     after the specified matrix transformation is applied.
   """
-  pass
- def Intersect(self,*__args):
-  """
+        pass
+
+    def Intersect(self, *__args):
+        """
   Intersect(self: Region,rect: Rectangle)
 
    Updates this System.Drawing.Region to the intersection of itself with the specified 
@@ -301,9 +312,10 @@ class Region(MarshalByRefObject,IDisposable):
 
    rect: The System.Drawing.RectangleF structure to intersect with this System.Drawing.Region.
   """
-  pass
- def IsEmpty(self,g):
-  """
+        pass
+
+    def IsEmpty(self, g):
+        """
   IsEmpty(self: Region,g: Graphics) -> bool
 
   
@@ -318,9 +330,10 @@ class Region(MarshalByRefObject,IDisposable):
 
     with g is applied; otherwise,false.
   """
-  pass
- def IsInfinite(self,g):
-  """
+        pass
+
+    def IsInfinite(self, g):
+        """
   IsInfinite(self: Region,g: Graphics) -> bool
 
   
@@ -339,9 +352,10 @@ class Region(MarshalByRefObject,IDisposable):
 
     associated with g is applied; otherwise,false.
   """
-  pass
- def IsVisible(self,*__args):
-  """
+        pass
+
+    def IsVisible(self, *__args):
+        """
   IsVisible(self: Region,point: Point,g: Graphics) -> bool
 
   
@@ -646,23 +660,26 @@ class Region(MarshalByRefObject,IDisposable):
 
     object; otherwise,false.
   """
-  pass
- def MakeEmpty(self):
-  """
+        pass
+
+    def MakeEmpty(self):
+        """
   MakeEmpty(self: Region)
 
    Initializes this System.Drawing.Region to an empty interior.
   """
-  pass
- def MakeInfinite(self):
-  """
+        pass
+
+    def MakeInfinite(self):
+        """
   MakeInfinite(self: Region)
 
    Initializes this System.Drawing.Region object to an infinite interior.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -693,9 +710,10 @@ class Region(MarshalByRefObject,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def ReleaseHrgn(self,regionHandle):
-  """
+        pass
+
+    def ReleaseHrgn(self, regionHandle):
+        """
   ReleaseHrgn(self: Region,regionHandle: IntPtr)
 
    Releases the handle of the System.Drawing.Region.
@@ -704,9 +722,10 @@ class Region(MarshalByRefObject,IDisposable):
 
    regionHandle: The handle to the System.Drawing.Region.
   """
-  pass
- def Transform(self,matrix):
-  """
+        pass
+
+    def Transform(self, matrix):
+        """
   Transform(self: Region,matrix: Matrix)
 
    Transforms this System.Drawing.Region by the specified System.Drawing.Drawing2D.Matrix.
@@ -715,9 +734,10 @@ class Region(MarshalByRefObject,IDisposable):
 
    matrix: The System.Drawing.Drawing2D.Matrix by which to transform this System.Drawing.Region.
   """
-  pass
- def Translate(self,dx,dy):
-  """
+        pass
+
+    def Translate(self, dx, dy):
+        """
   Translate(self: Region,dx: int,dy: int)
 
    Offsets the coordinates of this System.Drawing.Region by the specified amount.
@@ -738,9 +758,10 @@ class Region(MarshalByRefObject,IDisposable):
 
    dy: The amount to offset this System.Drawing.Region vertically.
   """
-  pass
- def Union(self,*__args):
-  """
+        pass
+
+    def Union(self, *__args):
+        """
   Union(self: Region,path: GraphicsPath)
 
    Updates this System.Drawing.Region to the union of itself and the specified 
@@ -789,9 +810,10 @@ class Region(MarshalByRefObject,IDisposable):
 
    rect: The System.Drawing.RectangleF structure to unite with this System.Drawing.Region.
   """
-  pass
- def Xor(self,*__args):
-  """
+        pass
+
+    def Xor(self, *__args):
+        """
   Xor(self: Region,path: GraphicsPath)
 
    Updates this System.Drawing.Region to the union minus the intersection of itself with the 
@@ -852,32 +874,37 @@ class Region(MarshalByRefObject,IDisposable):
 
     System.Drawing.Region.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,rect: RectangleF)
@@ -888,4 +915,4 @@ class Region(MarshalByRefObject,IDisposable):
 
   __new__(cls: type,rgnData: RegionData)
   """
-  pass
+        pass

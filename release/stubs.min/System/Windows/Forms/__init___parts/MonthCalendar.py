@@ -1,13 +1,36 @@
-class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlaceObject,IOleInPlaceActiveObject,IOleWindow,IViewObject,IViewObject2,IPersist,IPersistStreamInit,IPersistPropertyBag,IPersistStorage,IQuickActivate,ISupportOleDropSource,IDropTarget,ISynchronizeInvoke,IWin32Window,IArrangedElement,IBindableComponent):
- """
+class MonthCalendar(
+    Control,
+    IComponent,
+    IDisposable,
+    IOleControl,
+    IOleObject,
+    IOleInPlaceObject,
+    IOleInPlaceActiveObject,
+    IOleWindow,
+    IViewObject,
+    IViewObject2,
+    IPersist,
+    IPersistStreamInit,
+    IPersistPropertyBag,
+    IPersistStorage,
+    IQuickActivate,
+    ISupportOleDropSource,
+    IDropTarget,
+    ISynchronizeInvoke,
+    IWin32Window,
+    IArrangedElement,
+    IBindableComponent,
+):
+    """
  Represents a Windows control that enables the user to select a date using a visual monthly calendar display.
 
  
 
  MonthCalendar()
  """
- def AccessibilityNotifyClients(self,*args):
-  """
+
+    def AccessibilityNotifyClients(self, *args):
+        """
   AccessibilityNotifyClients(self: Control,accEvent: AccessibleEvents,objectID: int,childID: int)
 
    Notifies the accessibility client applications of the specified 
@@ -38,9 +61,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    childID: The child System.Windows.Forms.Control to notify of the accessible event.
   """
-  pass
- def AddAnnuallyBoldedDate(self,date):
-  """
+        pass
+
+    def AddAnnuallyBoldedDate(self, date):
+        """
   AddAnnuallyBoldedDate(self: MonthCalendar,date: DateTime)
 
    Adds a day that is displayed in bold on an annual basis in the month calendar.
@@ -49,9 +73,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    date: The date to be displayed in bold.
   """
-  pass
- def AddBoldedDate(self,date):
-  """
+        pass
+
+    def AddBoldedDate(self, date):
+        """
   AddBoldedDate(self: MonthCalendar,date: DateTime)
 
    Adds a day to be displayed in bold in the month calendar.
@@ -60,9 +85,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    date: The date to be displayed in bold.
   """
-  pass
- def AddMonthlyBoldedDate(self,date):
-  """
+        pass
+
+    def AddMonthlyBoldedDate(self, date):
+        """
   AddMonthlyBoldedDate(self: MonthCalendar,date: DateTime)
 
    Adds a day that is displayed in bold on a monthly basis in the month calendar.
@@ -71,9 +97,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    date: The date to be displayed in bold.
   """
-  pass
- def CreateAccessibilityInstance(self,*args):
-  """
+        pass
+
+    def CreateAccessibilityInstance(self, *args):
+        """
   CreateAccessibilityInstance(self: Control) -> AccessibleObject
 
   
@@ -82,9 +109,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    Returns: A new System.Windows.Forms.AccessibleObject for the control.
   """
-  pass
- def CreateControlsInstance(self,*args):
-  """
+        pass
+
+    def CreateControlsInstance(self, *args):
+        """
   CreateControlsInstance(self: Control) -> ControlCollection
 
   
@@ -93,26 +121,30 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    Returns: A new instance of System.Windows.Forms.Control.ControlCollection assigned to the control.
   """
-  pass
- def CreateHandle(self,*args):
-  """
+        pass
+
+    def CreateHandle(self, *args):
+        """
   CreateHandle(self: MonthCalendar)
 
    Overrides the System.Windows.Forms.Control.CreateHandle method.
   """
-  pass
- def DefWndProc(self,*args):
-  """ DefWndProc(self: MonthCalendar,m: Message) -> Message """
-  pass
- def DestroyHandle(self,*args):
-  """
+        pass
+
+    def DefWndProc(self, *args):
+        """ DefWndProc(self: MonthCalendar,m: Message) -> Message """
+        pass
+
+    def DestroyHandle(self, *args):
+        """
   DestroyHandle(self: Control)
 
    Destroys the handle associated with the control.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: MonthCalendar,disposing: bool)
 
    Releases all resources used by the System.Windows.Forms.MonthCalendar.
@@ -121,9 +153,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def GetAccessibilityObjectById(self,*args):
-  """
+        pass
+
+    def GetAccessibilityObjectById(self, *args):
+        """
   GetAccessibilityObjectById(self: Control,objectId: int) -> AccessibleObject
 
   
@@ -136,9 +169,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    Returns: An System.Windows.Forms.AccessibleObject.
   """
-  pass
- def GetAutoSizeMode(self,*args):
-  """
+        pass
+
+    def GetAutoSizeMode(self, *args):
+        """
   GetAutoSizeMode(self: Control) -> AutoSizeMode
 
   
@@ -151,9 +185,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    Returns: One of the System.Windows.Forms.AutoSizeMode values.
   """
-  pass
- def GetDisplayRange(self,visible):
-  """
+        pass
+
+    def GetDisplayRange(self, visible):
+        """
   GetDisplayRange(self: MonthCalendar,visible: bool) -> SelectionRange
 
   
@@ -170,9 +205,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    Returns: The begin and end dates of the displayed calendar.
   """
-  pass
- def GetScaledBounds(self,*args):
-  """
+        pass
+
+    def GetScaledBounds(self, *args):
+        """
   GetScaledBounds(self: Control,bounds: Rectangle,factor: SizeF,specified: BoundsSpecified) -> Rectangle
 
   
@@ -193,9 +229,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    Returns: A System.Drawing.Rectangle representing the bounds within which the control is scaled.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -214,9 +251,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def GetStyle(self,*args):
-  """
+        pass
+
+    def GetStyle(self, *args):
+        """
   GetStyle(self: Control,flag: ControlStyles) -> bool
 
   
@@ -229,9 +267,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    Returns: true if the specified control style bit is set to true; otherwise,false.
   """
-  pass
- def GetTopLevel(self,*args):
-  """
+        pass
+
+    def GetTopLevel(self, *args):
+        """
   GetTopLevel(self: Control) -> bool
 
   
@@ -240,9 +279,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    Returns: true if the control is a top-level control; otherwise,false.
   """
-  pass
- def HitTest(self,*__args):
-  """
+        pass
+
+    def HitTest(self, *__args):
+        """
   HitTest(self: MonthCalendar,point: Point) -> HitTestInfo
 
   
@@ -287,16 +327,18 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
     point on the System.Windows.Forms.MonthCalendar.
   """
-  pass
- def InitLayout(self,*args):
-  """
+        pass
+
+    def InitLayout(self, *args):
+        """
   InitLayout(self: Control)
 
    Called after the control has been added to another container.
   """
-  pass
- def InvokeGotFocus(self,*args):
-  """
+        pass
+
+    def InvokeGotFocus(self, *args):
+        """
   InvokeGotFocus(self: Control,toInvoke: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.GotFocus event for the specified control.
@@ -307,9 +349,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def InvokeLostFocus(self,*args):
-  """
+        pass
+
+    def InvokeLostFocus(self, *args):
+        """
   InvokeLostFocus(self: Control,toInvoke: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.LostFocus event for the specified control.
@@ -320,9 +363,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def InvokeOnClick(self,*args):
-  """
+        pass
+
+    def InvokeOnClick(self, *args):
+        """
   InvokeOnClick(self: Control,toInvoke: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Click event for the specified control.
@@ -333,9 +377,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def InvokePaint(self,*args):
-  """
+        pass
+
+    def InvokePaint(self, *args):
+        """
   InvokePaint(self: Control,c: Control,e: PaintEventArgs)
 
    Raises the System.Windows.Forms.Control.Paint event for the specified control.
@@ -346,9 +391,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def InvokePaintBackground(self,*args):
-  """
+        pass
+
+    def InvokePaintBackground(self, *args):
+        """
   InvokePaintBackground(self: Control,c: Control,e: PaintEventArgs)
 
    Raises the PaintBackground event for the specified control.
@@ -359,9 +405,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def IsInputChar(self,*args):
-  """
+        pass
+
+    def IsInputChar(self, *args):
+        """
   IsInputChar(self: Control,charCode: Char) -> bool
 
   
@@ -376,9 +423,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
     false.
   """
-  pass
- def IsInputKey(self,*args):
-  """
+        pass
+
+    def IsInputKey(self, *args):
+        """
   IsInputKey(self: MonthCalendar,keyData: Keys) -> bool
 
   
@@ -387,9 +435,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    Returns: true if the specified key is a regular input key; otherwise,false.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -420,9 +469,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def NotifyInvalidate(self,*args):
-  """
+        pass
+
+    def NotifyInvalidate(self, *args):
+        """
   NotifyInvalidate(self: Control,invalidatedArea: Rectangle)
 
    Raises the System.Windows.Forms.Control.Invalidated event with a specified region of the control 
@@ -435,9 +485,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    invalidatedArea: A System.Drawing.Rectangle representing the area to invalidate.
   """
-  pass
- def OnAutoSizeChanged(self,*args):
-  """
+        pass
+
+    def OnAutoSizeChanged(self, *args):
+        """
   OnAutoSizeChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.AutoSizeChanged event.
@@ -446,16 +497,18 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBackColorChanged(self,*args):
-  """
+        pass
+
+    def OnBackColorChanged(self, *args):
+        """
   OnBackColorChanged(self: MonthCalendar,e: EventArgs)
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBackgroundImageChanged(self,*args):
-  """
+        pass
+
+    def OnBackgroundImageChanged(self, *args):
+        """
   OnBackgroundImageChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BackgroundImageChanged event.
@@ -464,9 +517,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBackgroundImageLayoutChanged(self,*args):
-  """
+        pass
+
+    def OnBackgroundImageLayoutChanged(self, *args):
+        """
   OnBackgroundImageLayoutChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BackgroundImageLayoutChanged event.
@@ -475,9 +529,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBindingContextChanged(self,*args):
-  """
+        pass
+
+    def OnBindingContextChanged(self, *args):
+        """
   OnBindingContextChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BindingContextChanged event.
@@ -486,9 +541,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnCausesValidationChanged(self,*args):
-  """
+        pass
+
+    def OnCausesValidationChanged(self, *args):
+        """
   OnCausesValidationChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.CausesValidationChanged event.
@@ -497,9 +553,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnChangeUICues(self,*args):
-  """
+        pass
+
+    def OnChangeUICues(self, *args):
+        """
   OnChangeUICues(self: Control,e: UICuesEventArgs)
 
    Raises the System.Windows.Forms.Control.ChangeUICues event.
@@ -508,9 +565,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: A System.Windows.Forms.UICuesEventArgs that contains the event data.
   """
-  pass
- def OnClick(self,*args):
-  """
+        pass
+
+    def OnClick(self, *args):
+        """
   OnClick(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Click event.
@@ -519,9 +577,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnClientSizeChanged(self,*args):
-  """
+        pass
+
+    def OnClientSizeChanged(self, *args):
+        """
   OnClientSizeChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ClientSizeChanged event.
@@ -530,9 +589,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnContextMenuChanged(self,*args):
-  """
+        pass
+
+    def OnContextMenuChanged(self, *args):
+        """
   OnContextMenuChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ContextMenuChanged event.
@@ -541,9 +601,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnContextMenuStripChanged(self,*args):
-  """
+        pass
+
+    def OnContextMenuStripChanged(self, *args):
+        """
   OnContextMenuStripChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ContextMenuStripChanged event.
@@ -552,9 +613,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnControlAdded(self,*args):
-  """
+        pass
+
+    def OnControlAdded(self, *args):
+        """
   OnControlAdded(self: Control,e: ControlEventArgs)
 
    Raises the System.Windows.Forms.Control.ControlAdded event.
@@ -563,9 +625,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: A System.Windows.Forms.ControlEventArgs that contains the event data.
   """
-  pass
- def OnControlRemoved(self,*args):
-  """
+        pass
+
+    def OnControlRemoved(self, *args):
+        """
   OnControlRemoved(self: Control,e: ControlEventArgs)
 
    Raises the System.Windows.Forms.Control.ControlRemoved event.
@@ -574,16 +637,18 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: A System.Windows.Forms.ControlEventArgs that contains the event data.
   """
-  pass
- def OnCreateControl(self,*args):
-  """
+        pass
+
+    def OnCreateControl(self, *args):
+        """
   OnCreateControl(self: Control)
 
    Raises the System.Windows.Forms.Control.CreateControl method.
   """
-  pass
- def OnCursorChanged(self,*args):
-  """
+        pass
+
+    def OnCursorChanged(self, *args):
+        """
   OnCursorChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.CursorChanged event.
@@ -592,9 +657,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDateChanged(self,*args):
-  """
+        pass
+
+    def OnDateChanged(self, *args):
+        """
   OnDateChanged(self: MonthCalendar,drevent: DateRangeEventArgs)
 
    Raises the System.Windows.Forms.MonthCalendar.DateChanged event.
@@ -603,9 +669,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    drevent: A System.Windows.Forms.DateRangeEventArgs that contains the event data.
   """
-  pass
- def OnDateSelected(self,*args):
-  """
+        pass
+
+    def OnDateSelected(self, *args):
+        """
   OnDateSelected(self: MonthCalendar,drevent: DateRangeEventArgs)
 
    Raises the System.Windows.Forms.MonthCalendar.DateSelected event.
@@ -614,9 +681,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    drevent: A System.Windows.Forms.DateRangeEventArgs that contains the event data.
   """
-  pass
- def OnDockChanged(self,*args):
-  """
+        pass
+
+    def OnDockChanged(self, *args):
+        """
   OnDockChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.DockChanged event.
@@ -625,9 +693,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDoubleClick(self,*args):
-  """
+        pass
+
+    def OnDoubleClick(self, *args):
+        """
   OnDoubleClick(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.DoubleClick event.
@@ -636,15 +705,18 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDpiChangedAfterParent(self,*args):
-  """ OnDpiChangedAfterParent(self: Control,e: EventArgs) """
-  pass
- def OnDpiChangedBeforeParent(self,*args):
-  """ OnDpiChangedBeforeParent(self: Control,e: EventArgs) """
-  pass
- def OnDragDrop(self,*args):
-  """
+        pass
+
+    def OnDpiChangedAfterParent(self, *args):
+        """ OnDpiChangedAfterParent(self: Control,e: EventArgs) """
+        pass
+
+    def OnDpiChangedBeforeParent(self, *args):
+        """ OnDpiChangedBeforeParent(self: Control,e: EventArgs) """
+        pass
+
+    def OnDragDrop(self, *args):
+        """
   OnDragDrop(self: Control,drgevent: DragEventArgs)
 
    Raises the System.Windows.Forms.Control.DragDrop event.
@@ -653,9 +725,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    drgevent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnDragEnter(self,*args):
-  """
+        pass
+
+    def OnDragEnter(self, *args):
+        """
   OnDragEnter(self: Control,drgevent: DragEventArgs)
 
    Raises the System.Windows.Forms.Control.DragEnter event.
@@ -664,9 +737,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    drgevent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnDragLeave(self,*args):
-  """
+        pass
+
+    def OnDragLeave(self, *args):
+        """
   OnDragLeave(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.DragLeave event.
@@ -675,9 +749,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDragOver(self,*args):
-  """
+        pass
+
+    def OnDragOver(self, *args):
+        """
   OnDragOver(self: Control,drgevent: DragEventArgs)
 
    Raises the System.Windows.Forms.Control.DragOver event.
@@ -686,9 +761,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    drgevent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnEnabledChanged(self,*args):
-  """
+        pass
+
+    def OnEnabledChanged(self, *args):
+        """
   OnEnabledChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.EnabledChanged event.
@@ -697,9 +773,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnEnter(self,*args):
-  """
+        pass
+
+    def OnEnter(self, *args):
+        """
   OnEnter(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Enter event.
@@ -708,9 +785,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnFontChanged(self,*args):
-  """
+        pass
+
+    def OnFontChanged(self, *args):
+        """
   OnFontChanged(self: MonthCalendar,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.FontChanged event.
@@ -719,16 +797,18 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnForeColorChanged(self,*args):
-  """
+        pass
+
+    def OnForeColorChanged(self, *args):
+        """
   OnForeColorChanged(self: MonthCalendar,e: EventArgs)
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnGiveFeedback(self,*args):
-  """
+        pass
+
+    def OnGiveFeedback(self, *args):
+        """
   OnGiveFeedback(self: Control,gfbevent: GiveFeedbackEventArgs)
 
    Raises the System.Windows.Forms.Control.GiveFeedback event.
@@ -737,9 +817,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    gfbevent: A System.Windows.Forms.GiveFeedbackEventArgs that contains the event data.
   """
-  pass
- def OnGotFocus(self,*args):
-  """
+        pass
+
+    def OnGotFocus(self, *args):
+        """
   OnGotFocus(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.GotFocus event.
@@ -748,9 +829,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnHandleCreated(self,*args):
-  """
+        pass
+
+    def OnHandleCreated(self, *args):
+        """
   OnHandleCreated(self: MonthCalendar,e: EventArgs)
 
    Overrides the System.Windows.Forms.Control.OnHandleCreated(System.EventArgs) method.
@@ -759,9 +841,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnHandleDestroyed(self,*args):
-  """
+        pass
+
+    def OnHandleDestroyed(self, *args):
+        """
   OnHandleDestroyed(self: MonthCalendar,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.HandleDestroyed event.
@@ -770,9 +853,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnHelpRequested(self,*args):
-  """
+        pass
+
+    def OnHelpRequested(self, *args):
+        """
   OnHelpRequested(self: Control,hevent: HelpEventArgs)
 
    Raises the System.Windows.Forms.Control.HelpRequested event.
@@ -781,9 +865,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    hevent: A System.Windows.Forms.HelpEventArgs that contains the event data.
   """
-  pass
- def OnImeModeChanged(self,*args):
-  """
+        pass
+
+    def OnImeModeChanged(self, *args):
+        """
   OnImeModeChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ImeModeChanged event.
@@ -792,9 +877,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnInvalidated(self,*args):
-  """
+        pass
+
+    def OnInvalidated(self, *args):
+        """
   OnInvalidated(self: Control,e: InvalidateEventArgs)
 
    Raises the System.Windows.Forms.Control.Invalidated event.
@@ -803,9 +889,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.Windows.Forms.InvalidateEventArgs that contains the event data.
   """
-  pass
- def OnKeyDown(self,*args):
-  """
+        pass
+
+    def OnKeyDown(self, *args):
+        """
   OnKeyDown(self: Control,e: KeyEventArgs)
 
    Raises the System.Windows.Forms.Control.KeyDown event.
@@ -814,9 +901,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: A System.Windows.Forms.KeyEventArgs that contains the event data.
   """
-  pass
- def OnKeyPress(self,*args):
-  """
+        pass
+
+    def OnKeyPress(self, *args):
+        """
   OnKeyPress(self: Control,e: KeyPressEventArgs)
 
    Raises the System.Windows.Forms.Control.KeyPress event.
@@ -825,9 +913,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: A System.Windows.Forms.KeyPressEventArgs that contains the event data.
   """
-  pass
- def OnKeyUp(self,*args):
-  """
+        pass
+
+    def OnKeyUp(self, *args):
+        """
   OnKeyUp(self: Control,e: KeyEventArgs)
 
    Raises the System.Windows.Forms.Control.KeyUp event.
@@ -836,9 +925,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: A System.Windows.Forms.KeyEventArgs that contains the event data.
   """
-  pass
- def OnLayout(self,*args):
-  """
+        pass
+
+    def OnLayout(self, *args):
+        """
   OnLayout(self: Control,levent: LayoutEventArgs)
 
    Raises the System.Windows.Forms.Control.Layout event.
@@ -847,9 +937,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    levent: A System.Windows.Forms.LayoutEventArgs that contains the event data.
   """
-  pass
- def OnLeave(self,*args):
-  """
+        pass
+
+    def OnLeave(self, *args):
+        """
   OnLeave(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Leave event.
@@ -858,9 +949,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnLocationChanged(self,*args):
-  """
+        pass
+
+    def OnLocationChanged(self, *args):
+        """
   OnLocationChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.LocationChanged event.
@@ -869,9 +961,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnLostFocus(self,*args):
-  """
+        pass
+
+    def OnLostFocus(self, *args):
+        """
   OnLostFocus(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.LostFocus event.
@@ -880,9 +973,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMarginChanged(self,*args):
-  """
+        pass
+
+    def OnMarginChanged(self, *args):
+        """
   OnMarginChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.MarginChanged event.
@@ -891,9 +985,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: A System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseCaptureChanged(self,*args):
-  """
+        pass
+
+    def OnMouseCaptureChanged(self, *args):
+        """
   OnMouseCaptureChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.MouseCaptureChanged event.
@@ -902,9 +997,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseClick(self,*args):
-  """
+        pass
+
+    def OnMouseClick(self, *args):
+        """
   OnMouseClick(self: Control,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseClick event.
@@ -913,9 +1009,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseDoubleClick(self,*args):
-  """
+        pass
+
+    def OnMouseDoubleClick(self, *args):
+        """
   OnMouseDoubleClick(self: Control,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseDoubleClick event.
@@ -924,9 +1021,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseDown(self,*args):
-  """
+        pass
+
+    def OnMouseDown(self, *args):
+        """
   OnMouseDown(self: Control,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseDown event.
@@ -935,9 +1033,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseEnter(self,*args):
-  """
+        pass
+
+    def OnMouseEnter(self, *args):
+        """
   OnMouseEnter(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.MouseEnter event.
@@ -946,9 +1045,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseHover(self,*args):
-  """
+        pass
+
+    def OnMouseHover(self, *args):
+        """
   OnMouseHover(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.MouseHover event.
@@ -957,9 +1057,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseLeave(self,*args):
-  """
+        pass
+
+    def OnMouseLeave(self, *args):
+        """
   OnMouseLeave(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.MouseLeave event.
@@ -968,9 +1069,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseMove(self,*args):
-  """
+        pass
+
+    def OnMouseMove(self, *args):
+        """
   OnMouseMove(self: Control,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseMove event.
@@ -979,9 +1081,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseUp(self,*args):
-  """
+        pass
+
+    def OnMouseUp(self, *args):
+        """
   OnMouseUp(self: Control,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseUp event.
@@ -990,9 +1093,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseWheel(self,*args):
-  """
+        pass
+
+    def OnMouseWheel(self, *args):
+        """
   OnMouseWheel(self: Control,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseWheel event.
@@ -1001,9 +1105,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMove(self,*args):
-  """
+        pass
+
+    def OnMove(self, *args):
+        """
   OnMove(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Move event.
@@ -1012,9 +1117,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnNotifyMessage(self,*args):
-  """
+        pass
+
+    def OnNotifyMessage(self, *args):
+        """
   OnNotifyMessage(self: Control,m: Message)
 
    Notifies the control of Windows messages.
@@ -1023,9 +1129,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    m: A System.Windows.Forms.Message that represents the Windows message.
   """
-  pass
- def OnPaddingChanged(self,*args):
-  """
+        pass
+
+    def OnPaddingChanged(self, *args):
+        """
   OnPaddingChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.PaddingChanged event.
@@ -1034,9 +1141,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: A System.EventArgs that contains the event data.
   """
-  pass
- def OnPaint(self,*args):
-  """
+        pass
+
+    def OnPaint(self, *args):
+        """
   OnPaint(self: Control,e: PaintEventArgs)
 
    Raises the System.Windows.Forms.Control.Paint event.
@@ -1045,9 +1153,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: A System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def OnPaintBackground(self,*args):
-  """
+        pass
+
+    def OnPaintBackground(self, *args):
+        """
   OnPaintBackground(self: Control,pevent: PaintEventArgs)
 
    Paints the background of the control.
@@ -1056,9 +1165,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    pevent: A System.Windows.Forms.PaintEventArgs that contains information about the control to paint.
   """
-  pass
- def OnParentBackColorChanged(self,*args):
-  """
+        pass
+
+    def OnParentBackColorChanged(self, *args):
+        """
   OnParentBackColorChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BackColorChanged event when the 
@@ -1071,9 +1181,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentBackgroundImageChanged(self,*args):
-  """
+        pass
+
+    def OnParentBackgroundImageChanged(self, *args):
+        """
   OnParentBackgroundImageChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BackgroundImageChanged event when the 
@@ -1086,9 +1197,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentBindingContextChanged(self,*args):
-  """
+        pass
+
+    def OnParentBindingContextChanged(self, *args):
+        """
   OnParentBindingContextChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BindingContextChanged event when the 
@@ -1101,9 +1213,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentChanged(self,*args):
-  """
+        pass
+
+    def OnParentChanged(self, *args):
+        """
   OnParentChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ParentChanged event.
@@ -1112,9 +1225,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentCursorChanged(self,*args):
-  """
+        pass
+
+    def OnParentCursorChanged(self, *args):
+        """
   OnParentCursorChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.CursorChanged event.
@@ -1123,9 +1237,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentEnabledChanged(self,*args):
-  """
+        pass
+
+    def OnParentEnabledChanged(self, *args):
+        """
   OnParentEnabledChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.EnabledChanged event when the 
@@ -1138,9 +1253,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentFontChanged(self,*args):
-  """
+        pass
+
+    def OnParentFontChanged(self, *args):
+        """
   OnParentFontChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.FontChanged event when the 
@@ -1153,9 +1269,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentForeColorChanged(self,*args):
-  """
+        pass
+
+    def OnParentForeColorChanged(self, *args):
+        """
   OnParentForeColorChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ForeColorChanged event when the 
@@ -1168,9 +1285,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentRightToLeftChanged(self,*args):
-  """
+        pass
+
+    def OnParentRightToLeftChanged(self, *args):
+        """
   OnParentRightToLeftChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.RightToLeftChanged event when the 
@@ -1183,9 +1301,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentVisibleChanged(self,*args):
-  """
+        pass
+
+    def OnParentVisibleChanged(self, *args):
+        """
   OnParentVisibleChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.VisibleChanged event when the 
@@ -1198,9 +1317,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnPreviewKeyDown(self,*args):
-  """
+        pass
+
+    def OnPreviewKeyDown(self, *args):
+        """
   OnPreviewKeyDown(self: Control,e: PreviewKeyDownEventArgs)
 
    Raises the System.Windows.Forms.Control.PreviewKeyDown event.
@@ -1209,9 +1329,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: A System.Windows.Forms.PreviewKeyDownEventArgs that contains the event data.
   """
-  pass
- def OnPrint(self,*args):
-  """
+        pass
+
+    def OnPrint(self, *args):
+        """
   OnPrint(self: Control,e: PaintEventArgs)
 
    Raises the System.Windows.Forms.Control.Paint event.
@@ -1220,9 +1341,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: A System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def OnQueryContinueDrag(self,*args):
-  """
+        pass
+
+    def OnQueryContinueDrag(self, *args):
+        """
   OnQueryContinueDrag(self: Control,qcdevent: QueryContinueDragEventArgs)
 
    Raises the System.Windows.Forms.Control.QueryContinueDrag event.
@@ -1231,9 +1353,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    qcdevent: A System.Windows.Forms.QueryContinueDragEventArgs that contains the event data.
   """
-  pass
- def OnRegionChanged(self,*args):
-  """
+        pass
+
+    def OnRegionChanged(self, *args):
+        """
   OnRegionChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.RegionChanged event.
@@ -1242,9 +1365,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnResize(self,*args):
-  """
+        pass
+
+    def OnResize(self, *args):
+        """
   OnResize(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Resize event.
@@ -1253,9 +1377,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnRightToLeftChanged(self,*args):
-  """
+        pass
+
+    def OnRightToLeftChanged(self, *args):
+        """
   OnRightToLeftChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.RightToLeftChanged event.
@@ -1264,9 +1389,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnRightToLeftLayoutChanged(self,*args):
-  """
+        pass
+
+    def OnRightToLeftLayoutChanged(self, *args):
+        """
   OnRightToLeftLayoutChanged(self: MonthCalendar,e: EventArgs)
 
    Raises the System.Windows.Forms.MonthCalendar.RightToLeftLayoutChanged event.
@@ -1275,9 +1401,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnSizeChanged(self,*args):
-  """
+        pass
+
+    def OnSizeChanged(self, *args):
+        """
   OnSizeChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.SizeChanged event.
@@ -1286,9 +1413,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnStyleChanged(self,*args):
-  """
+        pass
+
+    def OnStyleChanged(self, *args):
+        """
   OnStyleChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.StyleChanged event.
@@ -1297,9 +1425,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnSystemColorsChanged(self,*args):
-  """
+        pass
+
+    def OnSystemColorsChanged(self, *args):
+        """
   OnSystemColorsChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.SystemColorsChanged event.
@@ -1308,9 +1437,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnTabIndexChanged(self,*args):
-  """
+        pass
+
+    def OnTabIndexChanged(self, *args):
+        """
   OnTabIndexChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.TabIndexChanged event.
@@ -1319,9 +1449,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnTabStopChanged(self,*args):
-  """
+        pass
+
+    def OnTabStopChanged(self, *args):
+        """
   OnTabStopChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.TabStopChanged event.
@@ -1330,9 +1461,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnTextChanged(self,*args):
-  """
+        pass
+
+    def OnTextChanged(self, *args):
+        """
   OnTextChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.TextChanged event.
@@ -1341,9 +1473,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnValidated(self,*args):
-  """
+        pass
+
+    def OnValidated(self, *args):
+        """
   OnValidated(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Validated event.
@@ -1352,9 +1485,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnValidating(self,*args):
-  """
+        pass
+
+    def OnValidating(self, *args):
+        """
   OnValidating(self: Control,e: CancelEventArgs)
 
    Raises the System.Windows.Forms.Control.Validating event.
@@ -1363,9 +1497,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: A System.ComponentModel.CancelEventArgs that contains the event data.
   """
-  pass
- def OnVisibleChanged(self,*args):
-  """
+        pass
+
+    def OnVisibleChanged(self, *args):
+        """
   OnVisibleChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.VisibleChanged event.
@@ -1374,9 +1509,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def ProcessCmdKey(self,*args):
-  """
+        pass
+
+    def ProcessCmdKey(self, *args):
+        """
   ProcessCmdKey(self: Control,msg: Message,keyData: Keys) -> (bool,Message)
 
   
@@ -1395,9 +1531,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    Returns: true if the character was processed by the control; otherwise,false.
   """
-  pass
- def ProcessDialogChar(self,*args):
-  """
+        pass
+
+    def ProcessDialogChar(self, *args):
+        """
   ProcessDialogChar(self: Control,charCode: Char) -> bool
 
   
@@ -1410,9 +1547,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    Returns: true if the character was processed by the control; otherwise,false.
   """
-  pass
- def ProcessDialogKey(self,*args):
-  """
+        pass
+
+    def ProcessDialogKey(self, *args):
+        """
   ProcessDialogKey(self: Control,keyData: Keys) -> bool
 
   
@@ -1425,9 +1563,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    Returns: true if the key was processed by the control; otherwise,false.
   """
-  pass
- def ProcessKeyEventArgs(self,*args):
-  """
+        pass
+
+    def ProcessKeyEventArgs(self, *args):
+        """
   ProcessKeyEventArgs(self: Control,m: Message) -> (bool,Message)
 
   
@@ -1444,9 +1583,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    Returns: true if the message was processed by the control; otherwise,false.
   """
-  pass
- def ProcessKeyMessage(self,*args):
-  """
+        pass
+
+    def ProcessKeyMessage(self, *args):
+        """
   ProcessKeyMessage(self: Control,m: Message) -> (bool,Message)
 
   
@@ -1463,9 +1603,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    Returns: true if the message was processed by the control; otherwise,false.
   """
-  pass
- def ProcessKeyPreview(self,*args):
-  """
+        pass
+
+    def ProcessKeyPreview(self, *args):
+        """
   ProcessKeyPreview(self: Control,m: Message) -> (bool,Message)
 
   
@@ -1482,9 +1623,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    Returns: true if the message was processed by the control; otherwise,false.
   """
-  pass
- def ProcessMnemonic(self,*args):
-  """
+        pass
+
+    def ProcessMnemonic(self, *args):
+        """
   ProcessMnemonic(self: Control,charCode: Char) -> bool
 
   
@@ -1497,9 +1639,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    Returns: true if the character was processed as a mnemonic by the control; otherwise,false.
   """
-  pass
- def RaiseDragEvent(self,*args):
-  """
+        pass
+
+    def RaiseDragEvent(self, *args):
+        """
   RaiseDragEvent(self: Control,key: object,e: DragEventArgs)
 
    Raises the appropriate drag event.
@@ -1510,9 +1653,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def RaiseKeyEvent(self,*args):
-  """
+        pass
+
+    def RaiseKeyEvent(self, *args):
+        """
   RaiseKeyEvent(self: Control,key: object,e: KeyEventArgs)
 
    Raises the appropriate key event.
@@ -1523,9 +1667,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: A System.Windows.Forms.KeyEventArgs that contains the event data.
   """
-  pass
- def RaiseMouseEvent(self,*args):
-  """
+        pass
+
+    def RaiseMouseEvent(self, *args):
+        """
   RaiseMouseEvent(self: Control,key: object,e: MouseEventArgs)
 
    Raises the appropriate mouse event.
@@ -1536,9 +1681,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def RaisePaintEvent(self,*args):
-  """
+        pass
+
+    def RaisePaintEvent(self, *args):
+        """
   RaisePaintEvent(self: Control,key: object,e: PaintEventArgs)
 
    Raises the appropriate paint event.
@@ -1549,37 +1695,42 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    e: A System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def RecreateHandle(self,*args):
-  """
+        pass
+
+    def RecreateHandle(self, *args):
+        """
   RecreateHandle(self: Control)
 
    Forces the re-creation of the handle for the control.
   """
-  pass
- def RemoveAllAnnuallyBoldedDates(self):
-  """
+        pass
+
+    def RemoveAllAnnuallyBoldedDates(self):
+        """
   RemoveAllAnnuallyBoldedDates(self: MonthCalendar)
 
    Removes all the annually bold dates.
   """
-  pass
- def RemoveAllBoldedDates(self):
-  """
+        pass
+
+    def RemoveAllBoldedDates(self):
+        """
   RemoveAllBoldedDates(self: MonthCalendar)
 
    Removes all the nonrecurring bold dates.
   """
-  pass
- def RemoveAllMonthlyBoldedDates(self):
-  """
+        pass
+
+    def RemoveAllMonthlyBoldedDates(self):
+        """
   RemoveAllMonthlyBoldedDates(self: MonthCalendar)
 
    Removes all the monthly bold dates.
   """
-  pass
- def RemoveAnnuallyBoldedDate(self,date):
-  """
+        pass
+
+    def RemoveAnnuallyBoldedDate(self, date):
+        """
   RemoveAnnuallyBoldedDate(self: MonthCalendar,date: DateTime)
 
    Removes the specified date from the list of annually bold dates.
@@ -1588,9 +1739,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    date: The date to remove from the date list.
   """
-  pass
- def RemoveBoldedDate(self,date):
-  """
+        pass
+
+    def RemoveBoldedDate(self, date):
+        """
   RemoveBoldedDate(self: MonthCalendar,date: DateTime)
 
    Removes the specified date from the list of nonrecurring bold dates.
@@ -1599,9 +1751,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    date: The date to remove from the date list.
   """
-  pass
- def RemoveMonthlyBoldedDate(self,date):
-  """
+        pass
+
+    def RemoveMonthlyBoldedDate(self, date):
+        """
   RemoveMonthlyBoldedDate(self: MonthCalendar,date: DateTime)
 
    Removes the specified date from the list of monthly bolded dates.
@@ -1610,19 +1763,22 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    date: The date to remove from the date list.
   """
-  pass
- def RescaleConstantsForDpi(self,*args):
-  """ RescaleConstantsForDpi(self: MonthCalendar,deviceDpiOld: int,deviceDpiNew: int) """
-  pass
- def ResetMouseEventArgs(self,*args):
-  """
+        pass
+
+    def RescaleConstantsForDpi(self, *args):
+        """ RescaleConstantsForDpi(self: MonthCalendar,deviceDpiOld: int,deviceDpiNew: int) """
+        pass
+
+    def ResetMouseEventArgs(self, *args):
+        """
   ResetMouseEventArgs(self: Control)
 
    Resets the control to handle the System.Windows.Forms.Control.MouseLeave event.
   """
-  pass
- def RtlTranslateAlignment(self,*args):
-  """
+        pass
+
+    def RtlTranslateAlignment(self, *args):
+        """
   RtlTranslateAlignment(self: Control,align: ContentAlignment) -> ContentAlignment
 
   
@@ -1671,9 +1827,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    Returns: One of the System.Windows.Forms.HorizontalAlignment values.
   """
-  pass
- def RtlTranslateContent(self,*args):
-  """
+        pass
+
+    def RtlTranslateContent(self, *args):
+        """
   RtlTranslateContent(self: Control,align: ContentAlignment) -> ContentAlignment
 
   
@@ -1690,9 +1847,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    Returns: One of the System.Drawing.ContentAlignment values.
   """
-  pass
- def RtlTranslateHorizontal(self,*args):
-  """
+        pass
+
+    def RtlTranslateHorizontal(self, *args):
+        """
   RtlTranslateHorizontal(self: Control,align: HorizontalAlignment) -> HorizontalAlignment
 
   
@@ -1709,9 +1867,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    Returns: One of the System.Windows.Forms.HorizontalAlignment values.
   """
-  pass
- def RtlTranslateLeftRight(self,*args):
-  """
+        pass
+
+    def RtlTranslateLeftRight(self, *args):
+        """
   RtlTranslateLeftRight(self: Control,align: LeftRightAlignment) -> LeftRightAlignment
 
   
@@ -1728,9 +1887,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    Returns: One of the System.Windows.Forms.LeftRightAlignment values.
   """
-  pass
- def ScaleControl(self,*args):
-  """
+        pass
+
+    def ScaleControl(self, *args):
+        """
   ScaleControl(self: Control,factor: SizeF,specified: BoundsSpecified)
 
    Scales a control's location,size,padding and margin.
@@ -1743,9 +1903,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
     when defining its size and position.
   """
-  pass
- def ScaleCore(self,*args):
-  """
+        pass
+
+    def ScaleCore(self, *args):
+        """
   ScaleCore(self: Control,dx: Single,dy: Single)
 
    This method is not relevant for this class.
@@ -1756,9 +1917,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    dy: The vertical scaling factor.
   """
-  pass
- def Select(self):
-  """
+        pass
+
+    def Select(self):
+        """
   Select(self: Control,directed: bool,forward: bool)
 
    Activates a child control. Optionally specifies the direction in the tab order to select the 
@@ -1773,9 +1935,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    forward: true to move forward in the tab order; false to move backward in the tab order.
   """
-  pass
- def SetAutoSizeMode(self,*args):
-  """
+        pass
+
+    def SetAutoSizeMode(self, *args):
+        """
   SetAutoSizeMode(self: Control,mode: AutoSizeMode)
 
    Sets a value indicating how a control will behave when its System.Windows.Forms.Control.AutoSize 
@@ -1788,9 +1951,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    mode: One of the System.Windows.Forms.AutoSizeMode values.
   """
-  pass
- def SetBoundsCore(self,*args):
-  """
+        pass
+
+    def SetBoundsCore(self, *args):
+        """
   SetBoundsCore(self: MonthCalendar,x: int,y: int,width: int,height: int,specified: BoundsSpecified)
 
    Overrides the 
@@ -1813,9 +1977,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    specified: A bitwise combination of the System.Windows.Forms.BoundsSpecified values.
   """
-  pass
- def SetCalendarDimensions(self,x,y):
-  """
+        pass
+
+    def SetCalendarDimensions(self, x, y):
+        """
   SetCalendarDimensions(self: MonthCalendar,x: int,y: int)
 
    Sets the number of columns and rows of months to display.
@@ -1826,9 +1991,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    y: The number of rows.
   """
-  pass
- def SetClientSizeCore(self,*args):
-  """
+        pass
+
+    def SetClientSizeCore(self, *args):
+        """
   SetClientSizeCore(self: Control,x: int,y: int)
 
    Sets the size of the client area of the control.
@@ -1839,9 +2005,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    y: The client area height,in pixels.
   """
-  pass
- def SetDate(self,date):
-  """
+        pass
+
+    def SetDate(self, date):
+        """
   SetDate(self: MonthCalendar,date: DateTime)
 
    Sets a date as the currently selected date.
@@ -1850,9 +2017,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    date: The date to be selected.
   """
-  pass
- def SetSelectionRange(self,date1,date2):
-  """
+        pass
+
+    def SetSelectionRange(self, date1, date2):
+        """
   SetSelectionRange(self: MonthCalendar,date1: DateTime,date2: DateTime)
 
    Sets the selected dates in a month calendar control to the specified date range.
@@ -1863,9 +2031,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    date2: The end date of the selection range.
   """
-  pass
- def SetStyle(self,*args):
-  """
+        pass
+
+    def SetStyle(self, *args):
+        """
   SetStyle(self: Control,flag: ControlStyles,value: bool)
 
    Sets a specified System.Windows.Forms.ControlStyles flag to either true or false.
@@ -1876,9 +2045,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    value: true to apply the specified style to the control; otherwise,false.
   """
-  pass
- def SetTopLevel(self,*args):
-  """
+        pass
+
+    def SetTopLevel(self, *args):
+        """
   SetTopLevel(self: Control,value: bool)
 
    Sets the control as the top-level control.
@@ -1887,9 +2057,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    value: true to set the control as the top-level control; otherwise,false.
   """
-  pass
- def SetVisibleCore(self,*args):
-  """
+        pass
+
+    def SetVisibleCore(self, *args):
+        """
   SetVisibleCore(self: Control,value: bool)
 
    Sets the control to the specified visible state.
@@ -1898,9 +2069,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    value: true to make the control visible; otherwise,false.
   """
-  pass
- def SizeFromClientSize(self,*args):
-  """
+        pass
+
+    def SizeFromClientSize(self, *args):
+        """
   SizeFromClientSize(self: Control,clientSize: Size) -> Size
 
   
@@ -1913,9 +2085,10 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    Returns: A System.Drawing.Size value representing the height and width of the entire control.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: MonthCalendar) -> str
 
   
@@ -1924,16 +2097,18 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    Returns: A string that represents the current System.Windows.Forms.MonthCalendar.
   """
-  pass
- def UpdateBoldedDates(self):
-  """
+        pass
+
+    def UpdateBoldedDates(self):
+        """
   UpdateBoldedDates(self: MonthCalendar)
 
    Repaints the bold dates to reflect the dates set in the lists of bold dates.
   """
-  pass
- def UpdateBounds(self,*args):
-  """
+        pass
+
+    def UpdateBounds(self, *args):
+        """
   UpdateBounds(self: Control,x: int,y: int,width: int,height: int,clientWidth: int,clientHeight: int)
 
    Updates the bounds of the control with the specified size,location,and client size.
@@ -1970,23 +2145,26 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    Updates the bounds of the control with the current size and location.
   """
-  pass
- def UpdateStyles(self,*args):
-  """
+        pass
+
+    def UpdateStyles(self, *args):
+        """
   UpdateStyles(self: Control)
 
    Forces the assigned styles to be reapplied to the control.
   """
-  pass
- def UpdateZOrder(self,*args):
-  """
+        pass
+
+    def UpdateZOrder(self, *args):
+        """
   UpdateZOrder(self: Control)
 
    Updates the control in its parent's z-order.
   """
-  pass
- def WndProc(self,*args):
-  """
+        pass
+
+    def WndProc(self, *args):
+        """
   WndProc(self: MonthCalendar,m: Message) -> Message
 
   
@@ -1997,30 +2175,37 @@ class MonthCalendar(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleIn
 
    m: The Windows System.Windows.Forms.Message to process.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- AnnuallyBoldedDates=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the array of System.DateTime objects that determines which annual days are displayed in bold.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AnnuallyBoldedDates = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the array of System.DateTime objects that determines which annual days are displayed in bold.
 
 
 
@@ -2032,8 +2217,8 @@ Set: AnnuallyBoldedDates(self: MonthCalendar)=value
 
 """
 
- BackColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the background color for the control.
+    BackColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the background color for the control.
 
 
 
@@ -2045,8 +2230,10 @@ Set: BackColor(self: MonthCalendar)=value
 
 """
 
- BackgroundImage=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the background image for the System.Windows.Forms.MonthCalendar
+    BackgroundImage = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the background image for the System.Windows.Forms.MonthCalendar
 
 
 
@@ -2058,8 +2245,10 @@ Set: BackgroundImage(self: MonthCalendar)=value
 
 """
 
- BackgroundImageLayout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating the layout for the System.Windows.Forms.MonthCalendar.BackgroundImage.
+    BackgroundImageLayout = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating the layout for the System.Windows.Forms.MonthCalendar.BackgroundImage.
 
 
 
@@ -2071,8 +2260,10 @@ Set: BackgroundImageLayout(self: MonthCalendar)=value
 
 """
 
- BoldedDates=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the array of System.DateTime objects that determines which nonrecurring dates are displayed in bold.
+    BoldedDates = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the array of System.DateTime objects that determines which nonrecurring dates are displayed in bold.
 
 
 
@@ -2084,8 +2275,10 @@ Set: BoldedDates(self: MonthCalendar)=value
 
 """
 
- CalendarDimensions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the number of columns and rows of months displayed.
+    CalendarDimensions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the number of columns and rows of months displayed.
 
 
 
@@ -2097,99 +2290,125 @@ Set: CalendarDimensions(self: MonthCalendar)=value
 
 """
 
- CanEnableIme=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Windows.Forms.Control.ImeMode property can be set to an active value,to enable IME support.
+    CanEnableIme = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Windows.Forms.Control.ImeMode property can be set to an active value,to enable IME support.
 
 
 
 """
 
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determines if events can be raised on the control.
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Determines if events can be raised on the control.
 
 
 
 """
 
- CreateParams=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a System.Windows.Forms.CreateParams for creating a System.Windows.Forms.MonthCalendar control.
+    CreateParams = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a System.Windows.Forms.CreateParams for creating a System.Windows.Forms.MonthCalendar control.
 
 
 
 """
 
- DefaultCursor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the default cursor for the control.
+    DefaultCursor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the default cursor for the control.
 
 
 
 """
 
- DefaultImeMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating the input method editor for the System.Windows.Forms.MonthCalendar.
+    DefaultImeMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating the input method editor for the System.Windows.Forms.MonthCalendar.
 
 
 
 """
 
- DefaultMargin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the default margin settings for the System.Windows.Forms.MonthCalendar control.
+    DefaultMargin = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the default margin settings for the System.Windows.Forms.MonthCalendar control.
 
 
 
 """
 
- DefaultMaximumSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the length and height,in pixels,that is specified as the default maximum size of a control.
+    DefaultMaximumSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the length and height,in pixels,that is specified as the default maximum size of a control.
 
 
 
 """
 
- DefaultMinimumSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the length and height,in pixels,that is specified as the default minimum size of a control.
+    DefaultMinimumSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the length and height,in pixels,that is specified as the default minimum size of a control.
 
 
 
 """
 
- DefaultPadding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the internal spacing,in pixels,of the contents of a control.
+    DefaultPadding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the internal spacing,in pixels,of the contents of a control.
 
 
 
 """
 
- DefaultSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the default size of the calendar.
+    DefaultSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the default size of the calendar.
 
 
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- DoubleBuffered=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the control should redraw its surface using a secondary buffer.
+    DoubleBuffered = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the control should redraw its surface using a secondary buffer.
 
 
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- FirstDayOfWeek=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the first day of the week as displayed in the month calendar.
+    FirstDayOfWeek = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the first day of the week as displayed in the month calendar.
 
 
 
@@ -2201,15 +2420,17 @@ Set: FirstDayOfWeek(self: MonthCalendar)=value
 
 """
 
- FontHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the height of the font of the control.
+    FontHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the height of the font of the control.
 
 
 
 """
 
- ForeColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the foreground color of the control.
+    ForeColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the foreground color of the control.
 
 
 
@@ -2221,8 +2442,8 @@ Set: ForeColor(self: MonthCalendar)=value
 
 """
 
- ImeMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Input Method Editor (IME) mode supported by this control.
+    ImeMode = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Input Method Editor (IME) mode supported by this control.
 
 
 
@@ -2234,15 +2455,17 @@ Set: ImeMode(self: MonthCalendar)=value
 
 """
 
- ImeModeBase=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the IME mode of a control.
+    ImeModeBase = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the IME mode of a control.
 
 
 
 """
 
- MaxDate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the maximum allowable date.
+    MaxDate = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the maximum allowable date.
 
 
 
@@ -2254,8 +2477,10 @@ Set: MaxDate(self: MonthCalendar)=value
 
 """
 
- MaxSelectionCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the maximum number of days that can be selected in a month calendar control.
+    MaxSelectionCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the maximum number of days that can be selected in a month calendar control.
 
 
 
@@ -2267,8 +2492,8 @@ Set: MaxSelectionCount(self: MonthCalendar)=value
 
 """
 
- MinDate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the minimum allowable date.
+    MinDate = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the minimum allowable date.
 
 
 
@@ -2280,8 +2505,10 @@ Set: MinDate(self: MonthCalendar)=value
 
 """
 
- MonthlyBoldedDates=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the array of System.DateTime objects that determine which monthly days to bold.
+    MonthlyBoldedDates = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the array of System.DateTime objects that determine which monthly days to bold.
 
 
 
@@ -2293,8 +2520,8 @@ Set: MonthlyBoldedDates(self: MonthCalendar)=value
 
 """
 
- Padding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the space between the edges of a System.Windows.Forms.MonthCalendar control and its contents.
+    Padding = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the space between the edges of a System.Windows.Forms.MonthCalendar control and its contents.
 
 
 
@@ -2306,22 +2533,28 @@ Set: Padding(self: MonthCalendar)=value
 
 """
 
- RenderRightToLeft=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is now obsolete.
+    RenderRightToLeft = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property is now obsolete.
 
 
 
 """
 
- ResizeRedraw=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the control redraws itself when resized.
+    ResizeRedraw = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the control redraws itself when resized.
 
 
 
 """
 
- RightToLeftLayout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the control is laid out from right to left.
+    RightToLeftLayout = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the control is laid out from right to left.
 
 
 
@@ -2333,15 +2566,19 @@ Set: RightToLeftLayout(self: MonthCalendar)=value
 
 """
 
- ScaleChildren=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that determines the scaling of child controls.
+    ScaleChildren = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that determines the scaling of child controls.
 
 
 
 """
 
- ScrollChange=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the scroll rate for a month calendar control.
+    ScrollChange = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the scroll rate for a month calendar control.
 
 
 
@@ -2353,8 +2590,10 @@ Set: ScrollChange(self: MonthCalendar)=value
 
 """
 
- SelectionEnd=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the end date of the selected range of dates.
+    SelectionEnd = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the end date of the selected range of dates.
 
 
 
@@ -2366,8 +2605,10 @@ Set: SelectionEnd(self: MonthCalendar)=value
 
 """
 
- SelectionRange=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the selected range of dates for a month calendar control.
+    SelectionRange = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the selected range of dates for a month calendar control.
 
 
 
@@ -2379,8 +2620,10 @@ Set: SelectionRange(self: MonthCalendar)=value
 
 """
 
- SelectionStart=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the start date of the selected range of dates.
+    SelectionStart = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the start date of the selected range of dates.
 
 
 
@@ -2392,22 +2635,26 @@ Set: SelectionStart(self: MonthCalendar)=value
 
 """
 
- ShowFocusCues=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the control should display focus rectangles.
+    ShowFocusCues = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the control should display focus rectangles.
 
 
 
 """
 
- ShowKeyboardCues=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the user interface is in the appropriate state to show or hide keyboard accelerators.
+    ShowKeyboardCues = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the user interface is in the appropriate state to show or hide keyboard accelerators.
 
 
 
 """
 
- ShowToday=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the date represented by the System.Windows.Forms.MonthCalendar.TodayDate property is displayed at the bottom of the control.
+    ShowToday = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the date represented by the System.Windows.Forms.MonthCalendar.TodayDate property is displayed at the bottom of the control.
 
 
 
@@ -2419,8 +2666,10 @@ Set: ShowToday(self: MonthCalendar)=value
 
 """
 
- ShowTodayCircle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether today's date is identified with a circle or a square.
+    ShowTodayCircle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether today's date is identified with a circle or a square.
 
 
 
@@ -2432,8 +2681,10 @@ Set: ShowTodayCircle(self: MonthCalendar)=value
 
 """
 
- ShowWeekNumbers=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the month calendar control displays week numbers (1-52) to the left of each row of days.
+    ShowWeekNumbers = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the month calendar control displays week numbers (1-52) to the left of each row of days.
 
 
 
@@ -2445,8 +2696,10 @@ Set: ShowWeekNumbers(self: MonthCalendar)=value
 
 """
 
- SingleMonthSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the minimum size to display one month of the calendar.
+    SingleMonthSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the minimum size to display one month of the calendar.
 
 
 
@@ -2456,8 +2709,8 @@ Get: SingleMonthSize(self: MonthCalendar) -> Size
 
 """
 
- Size=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the size of the System.Windows.Forms.MonthCalendar control.
+    Size = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the size of the System.Windows.Forms.MonthCalendar control.
 
 
 
@@ -2469,8 +2722,8 @@ Set: Size(self: MonthCalendar)=value
 
 """
 
- Text=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the text to display on the System.Windows.Forms.MonthCalendar.
+    Text = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the text to display on the System.Windows.Forms.MonthCalendar.
 
 
 
@@ -2482,8 +2735,10 @@ Set: Text(self: MonthCalendar)=value
 
 """
 
- TitleBackColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating the background color of the title area of the calendar.
+    TitleBackColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating the background color of the title area of the calendar.
 
 
 
@@ -2495,8 +2750,10 @@ Set: TitleBackColor(self: MonthCalendar)=value
 
 """
 
- TitleForeColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating the foreground color of the title area of the calendar.
+    TitleForeColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating the foreground color of the title area of the calendar.
 
 
 
@@ -2508,8 +2765,8 @@ Set: TitleForeColor(self: MonthCalendar)=value
 
 """
 
- TodayDate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the value that is used by System.Windows.Forms.MonthCalendar as today's date.
+    TodayDate = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the value that is used by System.Windows.Forms.MonthCalendar as today's date.
 
 
 
@@ -2521,8 +2778,10 @@ Set: TodayDate(self: MonthCalendar)=value
 
 """
 
- TodayDateSet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Windows.Forms.MonthCalendar.TodayDate property has been explicitly set.
+    TodayDateSet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Windows.Forms.MonthCalendar.TodayDate property has been explicitly set.
 
 
 
@@ -2532,8 +2791,10 @@ Get: TodayDateSet(self: MonthCalendar) -> bool
 
 """
 
- TrailingForeColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating the color of days in months that are not fully displayed in the control.
+    TrailingForeColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating the color of days in months that are not fully displayed in the control.
 
 
 
@@ -2545,20 +2806,18 @@ Set: TrailingForeColor(self: MonthCalendar)=value
 
 """
 
-
- BackgroundImageChanged=None
- BackgroundImageLayoutChanged=None
- Click=None
- DateChanged=None
- DateSelected=None
- DoubleClick=None
- HitArea=None
- HitTestInfo=None
- ImeModeChanged=None
- MouseClick=None
- MouseDoubleClick=None
- PaddingChanged=None
- Paint=None
- RightToLeftLayoutChanged=None
- TextChanged=None
-
+    BackgroundImageChanged = None
+    BackgroundImageLayoutChanged = None
+    Click = None
+    DateChanged = None
+    DateSelected = None
+    DoubleClick = None
+    HitArea = None
+    HitTestInfo = None
+    ImeModeChanged = None
+    MouseClick = None
+    MouseDoubleClick = None
+    PaddingChanged = None
+    Paint = None
+    RightToLeftLayoutChanged = None
+    TextChanged = None

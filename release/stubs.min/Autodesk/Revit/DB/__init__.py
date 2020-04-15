@@ -53,21 +53,35 @@ from __init___parts.KeyBasedTreeEntryTable import KeyBasedTreeEntryTable
 from __init___parts.AssemblyCodeTable import AssemblyCodeTable
 from __init___parts.AssemblyDetailViewOrientation import AssemblyDetailViewOrientation
 from __init___parts.AssemblyDifference import AssemblyDifference
-from __init___parts.AssemblyDifferenceConfiguration import AssemblyDifferenceConfiguration
+from __init___parts.AssemblyDifferenceConfiguration import (
+    AssemblyDifferenceConfiguration,
+)
 from __init___parts.AssemblyDifferenceMemberCount import AssemblyDifferenceMemberCount
-from __init___parts.AssemblyDifferenceMemberDifference import AssemblyDifferenceMemberDifference
-from __init___parts.AssemblyDifferenceNamingCategory import AssemblyDifferenceNamingCategory
+from __init___parts.AssemblyDifferenceMemberDifference import (
+    AssemblyDifferenceMemberDifference,
+)
+from __init___parts.AssemblyDifferenceNamingCategory import (
+    AssemblyDifferenceNamingCategory,
+)
 from __init___parts.AssemblyDifferenceNone import AssemblyDifferenceNone
 from __init___parts.AssemblyInstance import AssemblyInstance
 from __init___parts.AssemblyMemberDifference import AssemblyMemberDifference
-from __init___parts.AssemblyMemberDifferentCategory import AssemblyMemberDifferentCategory
-from __init___parts.AssemblyMemberDifferentGeometry import AssemblyMemberDifferentGeometry
-from __init___parts.AssemblyMemberDifferentParameters import AssemblyMemberDifferentParameters
+from __init___parts.AssemblyMemberDifferentCategory import (
+    AssemblyMemberDifferentCategory,
+)
+from __init___parts.AssemblyMemberDifferentGeometry import (
+    AssemblyMemberDifferentGeometry,
+)
+from __init___parts.AssemblyMemberDifferentParameters import (
+    AssemblyMemberDifferentParameters,
+)
 from __init___parts.AssemblyMemberDifferentType import AssemblyMemberDifferentType
 from __init___parts.AssemblyType import AssemblyType
 from __init___parts.AssemblyViewUtils import AssemblyViewUtils
 from __init___parts.AttachmentType import AttachmentType
-from __init___parts.AutomaticConnectionBehaviorType import AutomaticConnectionBehaviorType
+from __init___parts.AutomaticConnectionBehaviorType import (
+    AutomaticConnectionBehaviorType,
+)
 from __init___parts.BackgroundImageFit import BackgroundImageFit
 from __init___parts.BackgroundSettings import BackgroundSettings
 from __init___parts.BackgroundStyle import BackgroundStyle
@@ -367,7 +381,9 @@ from __init___parts.ExportUnit import ExportUnit
 from __init___parts.ExportUtils import ExportUtils
 from __init___parts.ExternalDBApplicationResult import ExternalDBApplicationResult
 from __init___parts.ExternalDefinition import ExternalDefinition
-from __init___parts.ExternalDefinitionCreationOptions import ExternalDefinitionCreationOptions
+from __init___parts.ExternalDefinitionCreationOptions import (
+    ExternalDefinitionCreationOptions,
+)
 from __init___parts.ExternalDefinitions import ExternalDefinitions
 from __init___parts.ExternalFileReference import ExternalFileReference
 from __init___parts.ExternalFileReferenceType import ExternalFileReferenceType
@@ -379,13 +395,17 @@ from __init___parts.ExternalResourceLoadData import ExternalResourceLoadData
 from __init___parts.ExternalResourceLoadStatus import ExternalResourceLoadStatus
 from __init___parts.ExternalResourceMatchOptions import ExternalResourceMatchOptions
 from __init___parts.ExternalResourceReference import ExternalResourceReference
-from __init___parts.ExternalResourceServerExtensions import ExternalResourceServerExtensions
+from __init___parts.ExternalResourceServerExtensions import (
+    ExternalResourceServerExtensions,
+)
 from __init___parts.ExternalResourceServerUtils import ExternalResourceServerUtils
 from __init___parts.ExternalResourceServiceUtils import ExternalResourceServiceUtils
 from __init___parts.GuidEnum import GuidEnum
 from __init___parts.ExternalResourceType import ExternalResourceType
 from __init___parts.ExternalResourceTypes import ExternalResourceTypes
-from __init___parts.ExternalResourceUIBrowseResultType import ExternalResourceUIBrowseResultType
+from __init___parts.ExternalResourceUIBrowseResultType import (
+    ExternalResourceUIBrowseResultType,
+)
 from __init___parts.ExternalResourceUtils import ExternalResourceUtils
 from __init___parts.Extrusion import Extrusion
 from __init___parts.ExtrusionAnalyzer import ExtrusionAnalyzer
@@ -475,7 +495,9 @@ from __init___parts.FilteredWorksetIdIterator import FilteredWorksetIdIterator
 from __init___parts.FilteredWorksetIterator import FilteredWorksetIterator
 from __init___parts.FilterElement import FilterElement
 from __init___parts.FilterElementIdRule import FilterElementIdRule
-from __init___parts.FilterGlobalParameterAssociationRule import FilterGlobalParameterAssociationRule
+from __init___parts.FilterGlobalParameterAssociationRule import (
+    FilterGlobalParameterAssociationRule,
+)
 from __init___parts.FilterIntegerRule import FilterIntegerRule
 from __init___parts.FilterInverseRule import FilterInverseRule
 from __init___parts.FilterNumericRuleEvaluator import FilterNumericRuleEvaluator
@@ -496,7 +518,9 @@ from __init___parts.FilterStringLessOrEqual import FilterStringLessOrEqual
 from __init___parts.FilterStringRule import FilterStringRule
 from __init___parts.FindReferenceTarget import FindReferenceTarget
 from __init___parts.FitDirectionType import FitDirectionType
-from __init___parts.FittingAndAccessoryCalculationType import FittingAndAccessoryCalculationType
+from __init___parts.FittingAndAccessoryCalculationType import (
+    FittingAndAccessoryCalculationType,
+)
 from __init___parts.FittingAngleUsage import FittingAngleUsage
 from __init___parts.Floor import Floor
 from __init___parts.FloorFace import FloorFace
@@ -597,13 +621,19 @@ from __init___parts.InternalDefinition import InternalDefinition
 from __init___parts.InternalDefinitions import InternalDefinitions
 from __init___parts.IntersectionResult import IntersectionResult
 from __init___parts.IntersectionResultArray import IntersectionResultArray
-from __init___parts.IntersectionResultArrayIterator import IntersectionResultArrayIterator
-from __init___parts.IOnLocalLinkSharedCoordinatesSavedCallback import IOnLocalLinkSharedCoordinatesSavedCallback
+from __init___parts.IntersectionResultArrayIterator import (
+    IntersectionResultArrayIterator,
+)
+from __init___parts.IOnLocalLinkSharedCoordinatesSavedCallback import (
+    IOnLocalLinkSharedCoordinatesSavedCallback,
+)
 from __init___parts.IPerformanceAdviserRule import IPerformanceAdviserRule
 from __init___parts.IPhotoRenderContext import IPhotoRenderContext
 from __init___parts.IPrintSetting import IPrintSetting
 from __init___parts.ISaveSharedCoordinatesCallback import ISaveSharedCoordinatesCallback
-from __init___parts.ISaveSharedCoordinatesCallbackForUnloadLocally import ISaveSharedCoordinatesCallbackForUnloadLocally
+from __init___parts.ISaveSharedCoordinatesCallbackForUnloadLocally import (
+    ISaveSharedCoordinatesCallbackForUnloadLocally,
+)
 from __init___parts.ITransactionFinalizer import ITransactionFinalizer
 from __init___parts.ITransientElementMaker import ITransientElementMaker
 from __init___parts.IUpdater import IUpdater
@@ -660,7 +690,9 @@ from __init___parts.LocationPoint import LocationPoint
 from __init___parts.LogicalAndFilter import LogicalAndFilter
 from __init___parts.LogicalOrFilter import LogicalOrFilter
 from __init___parts.MarginType import MarginType
-from __init___parts.MassDisplayTemporaryOverrideType import MassDisplayTemporaryOverrideType
+from __init___parts.MassDisplayTemporaryOverrideType import (
+    MassDisplayTemporaryOverrideType,
+)
 from __init___parts.MassInstanceUtils import MassInstanceUtils
 from __init___parts.Material import Material
 from __init___parts.MaterialAspect import MaterialAspect
@@ -678,7 +710,9 @@ from __init___parts.MEPSystemClassification import MEPSystemClassification
 from __init___parts.MEPSystemType import MEPSystemType
 from __init___parts.Mesh import Mesh
 from __init___parts.MeshFromGeometryOperationIssue import MeshFromGeometryOperationIssue
-from __init___parts.MeshFromGeometryOperationResult import MeshFromGeometryOperationResult
+from __init___parts.MeshFromGeometryOperationResult import (
+    MeshFromGeometryOperationResult,
+)
 from __init___parts.MeshTriangle import MeshTriangle
 from __init___parts.ModelCurve import ModelCurve
 from __init___parts.ModelArc import ModelArc
@@ -700,7 +734,9 @@ from __init___parts.MullionType import MullionType
 from __init___parts.MullionTypeSet import MullionTypeSet
 from __init___parts.MullionTypeSetIterator import MullionTypeSetIterator
 from __init___parts.MultiReferenceAnnotation import MultiReferenceAnnotation
-from __init___parts.MultiReferenceAnnotationOptions import MultiReferenceAnnotationOptions
+from __init___parts.MultiReferenceAnnotationOptions import (
+    MultiReferenceAnnotationOptions,
+)
 from __init___parts.MultiReferenceAnnotationType import MultiReferenceAnnotationType
 from __init___parts.MultiSegmentGrid import MultiSegmentGrid
 from __init___parts.NamingUtils import NamingUtils
@@ -804,7 +840,9 @@ from __init___parts.PolymeshFacet import PolymeshFacet
 from __init___parts.PolymeshTopology import PolymeshTopology
 from __init___parts.PreferredJunctionType import PreferredJunctionType
 from __init___parts.PreviewFamilyVisibilityMode import PreviewFamilyVisibilityMode
-from __init___parts.PrimaryDesignOptionMemberFilter import PrimaryDesignOptionMemberFilter
+from __init___parts.PrimaryDesignOptionMemberFilter import (
+    PrimaryDesignOptionMemberFilter,
+)
 from __init___parts.RoutingCriterionBase import RoutingCriterionBase
 from __init___parts.PrimarySizeCriterion import PrimarySizeCriterion
 from __init___parts.PrinterResolution import PrinterResolution
@@ -828,7 +866,9 @@ from __init___parts.PropOverrideMode import PropOverrideMode
 from __init___parts.RadialArray import RadialArray
 from __init___parts.RasterQualityType import RasterQualityType
 from __init___parts.Rectangle import Rectangle
-from __init___parts.RectangularGridSegmentOrientation import RectangularGridSegmentOrientation
+from __init___parts.RectangularGridSegmentOrientation import (
+    RectangularGridSegmentOrientation,
+)
 from __init___parts.Reference import Reference
 from __init___parts.ReferenceableViewUtils import ReferenceableViewUtils
 from __init___parts.ReferenceArray import ReferenceArray
@@ -886,7 +926,9 @@ from __init___parts.SATExportOptions import SATExportOptions
 from __init___parts.SATImportOptions import SATImportOptions
 from __init___parts.SaveAsOptions import SaveAsOptions
 from __init___parts.SaveModifiedLinksOptions import SaveModifiedLinksOptions
-from __init___parts.SaveModifiedLinksOptionsForUnloadLocally import SaveModifiedLinksOptionsForUnloadLocally
+from __init___parts.SaveModifiedLinksOptionsForUnloadLocally import (
+    SaveModifiedLinksOptionsForUnloadLocally,
+)
 from __init___parts.SaveOptions import SaveOptions
 from __init___parts.SchedulableField import SchedulableField
 from __init___parts.ScheduleDefinition import ScheduleDefinition
@@ -940,7 +982,9 @@ from __init___parts.SolidCurveIntersectionMode import SolidCurveIntersectionMode
 from __init___parts.SolidCurveIntersectionOptions import SolidCurveIntersectionOptions
 from __init___parts.SolidGeometry import SolidGeometry
 from __init___parts.SolidOptions import SolidOptions
-from __init___parts.SolidOrShellTessellationControls import SolidOrShellTessellationControls
+from __init___parts.SolidOrShellTessellationControls import (
+    SolidOrShellTessellationControls,
+)
 from __init___parts.SolidSolidCutUtils import SolidSolidCutUtils
 from __init___parts.SolidUtils import SolidUtils
 from __init___parts.SortingOrder import SortingOrder
@@ -950,10 +994,16 @@ from __init___parts.SpacingRuleLayout import SpacingRuleLayout
 from __init___parts.SpatialElementBoundaryLocation import SpatialElementBoundaryLocation
 from __init___parts.SpatialElementBoundaryOptions import SpatialElementBoundaryOptions
 from __init___parts.SpatialElementBoundarySubface import SpatialElementBoundarySubface
-from __init___parts.SpatialElementCalculationLocation import SpatialElementCalculationLocation
+from __init___parts.SpatialElementCalculationLocation import (
+    SpatialElementCalculationLocation,
+)
 from __init___parts.SpatialElementCalculationPoint import SpatialElementCalculationPoint
-from __init___parts.SpatialElementFromToCalculationPoints import SpatialElementFromToCalculationPoints
-from __init___parts.SpatialElementGeometryCalculator import SpatialElementGeometryCalculator
+from __init___parts.SpatialElementFromToCalculationPoints import (
+    SpatialElementFromToCalculationPoints,
+)
+from __init___parts.SpatialElementGeometryCalculator import (
+    SpatialElementGeometryCalculator,
+)
 from __init___parts.SpatialElementGeometryResults import SpatialElementGeometryResults
 from __init___parts.SpatialElementTagOrientation import SpatialElementTagOrientation
 from __init___parts.SpatialElementType import SpatialElementType
@@ -998,7 +1048,9 @@ from __init___parts.TessellatedBuildIssue import TessellatedBuildIssue
 from __init___parts.TessellatedBuildIssueType import TessellatedBuildIssueType
 from __init___parts.TessellatedFace import TessellatedFace
 from __init___parts.TessellatedShapeBuilder import TessellatedShapeBuilder
-from __init___parts.TessellatedShapeBuilderFallback import TessellatedShapeBuilderFallback
+from __init___parts.TessellatedShapeBuilderFallback import (
+    TessellatedShapeBuilderFallback,
+)
 from __init___parts.TessellatedShapeBuilderOutcome import TessellatedShapeBuilderOutcome
 from __init___parts.TessellatedShapeBuilderResult import TessellatedShapeBuilderResult
 from __init___parts.TessellatedShapeBuilderTarget import TessellatedShapeBuilderTarget
@@ -1034,8 +1086,12 @@ from __init___parts.TriangleInShellComponent import TriangleInShellComponent
 from __init___parts.TriangulatedShellComponent import TriangulatedShellComponent
 from __init___parts.TriangulatedSolidOrShell import TriangulatedSolidOrShell
 from __init___parts.TriangulationInterface import TriangulationInterface
-from __init___parts.TriangulationInterfaceForTriangulatedShellComponent import TriangulationInterfaceForTriangulatedShellComponent
-from __init___parts.TriangulationInterfaceForTriangulatedSolidOrShell import TriangulationInterfaceForTriangulatedSolidOrShell
+from __init___parts.TriangulationInterfaceForTriangulatedShellComponent import (
+    TriangulationInterfaceForTriangulatedShellComponent,
+)
+from __init___parts.TriangulationInterfaceForTriangulatedSolidOrShell import (
+    TriangulationInterfaceForTriangulatedSolidOrShell,
+)
 from __init___parts.TriOrQuadFacet import TriOrQuadFacet
 from __init___parts.TypeBinding import TypeBinding
 from __init___parts.UnderlayOrientation import UnderlayOrientation
@@ -1066,7 +1122,9 @@ from __init___parts.ViewCropRegionShapeManager import ViewCropRegionShapeManager
 from __init___parts.ViewDetailLevel import ViewDetailLevel
 from __init___parts.ViewDiscipline import ViewDiscipline
 from __init___parts.ViewDisplayBackground import ViewDisplayBackground
-from __init___parts.ViewDisplayBackgroundImageFlags import ViewDisplayBackgroundImageFlags
+from __init___parts.ViewDisplayBackgroundImageFlags import (
+    ViewDisplayBackgroundImageFlags,
+)
 from __init___parts.ViewDisplayBackgroundType import ViewDisplayBackgroundType
 from __init___parts.ViewDisplayDepthCueing import ViewDisplayDepthCueing
 from __init___parts.ViewDisplayEdges import ViewDisplayEdges
@@ -1112,14 +1170,18 @@ from __init___parts.WorksetPreview import WorksetPreview
 from __init___parts.Workset import Workset
 from __init___parts.WorksetConfiguration import WorksetConfiguration
 from __init___parts.WorksetConfigurationOption import WorksetConfigurationOption
-from __init___parts.WorksetDefaultVisibilitySettings import WorksetDefaultVisibilitySettings
+from __init___parts.WorksetDefaultVisibilitySettings import (
+    WorksetDefaultVisibilitySettings,
+)
 from __init___parts.WorksetFilter import WorksetFilter
 from __init___parts.WorksetId import WorksetId
 from __init___parts.WorksetKind import WorksetKind
 from __init___parts.WorksetKindFilter import WorksetKindFilter
 from __init___parts.WorksetTable import WorksetTable
 from __init___parts.WorksetVisibility import WorksetVisibility
-from __init___parts.WorksharingDisplayGraphicSettings import WorksharingDisplayGraphicSettings
+from __init___parts.WorksharingDisplayGraphicSettings import (
+    WorksharingDisplayGraphicSettings,
+)
 from __init___parts.WorksharingDisplayMode import WorksharingDisplayMode
 from __init___parts.WorksharingDisplaySettings import WorksharingDisplaySettings
 from __init___parts.WorksharingSaveAsOptions import WorksharingSaveAsOptions

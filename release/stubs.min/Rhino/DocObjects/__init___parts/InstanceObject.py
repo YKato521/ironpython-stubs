@@ -1,7 +1,7 @@
 class InstanceObject(RhinoObject):
- # no doc
- def Explode(self,explodeNestedInstances,pieces,pieceAttributes,pieceTransforms):
-  """
+    # no doc
+    def Explode(self, explodeNestedInstances, pieces, pieceAttributes, pieceTransforms):
+        """
   Explode(self: InstanceObject,explodeNestedInstances: bool) -> (Array[RhinoObject],Array[ObjectAttributes],Array[Transform])
 
   
@@ -20,9 +20,10 @@ class InstanceObject(RhinoObject):
 
     parameter when this InstanceObject has nested references.
   """
-  pass
- def UsesDefinition(self,definitionIndex,nestingLevel):
-  """
+        pass
+
+    def UsesDefinition(self, definitionIndex, nestingLevel):
+        """
   UsesDefinition(self: InstanceObject,definitionIndex: int) -> (bool,int)
 
   
@@ -31,9 +32,12 @@ class InstanceObject(RhinoObject):
 
    Returns: true or false depending on if the deifinition is used
   """
-  pass
- InsertionPoint=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Basepoint coordinates of a block.
+        pass
+
+    InsertionPoint = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Basepoint coordinates of a block.
 
 
 
@@ -43,8 +47,10 @@ Get: InsertionPoint(self: InstanceObject) -> Point3d
 
 """
 
- InstanceDefinition=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """instance definition that this object uses.
+    InstanceDefinition = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """instance definition that this object uses.
 
 
 
@@ -54,8 +60,10 @@ Get: InstanceDefinition(self: InstanceObject) -> InstanceDefinition
 
 """
 
- InstanceXform=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """transformation applied to an instance definition for this object.
+    InstanceXform = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """transformation applied to an instance definition for this object.
 
 
 
@@ -64,5 +72,3 @@ Get: InstanceXform(self: InstanceObject) -> Transform
 
 
 """
-
-

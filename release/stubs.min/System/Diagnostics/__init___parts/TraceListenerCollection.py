@@ -1,7 +1,8 @@
-class TraceListenerCollection(object,IList,ICollection,IEnumerable):
- """ Provides a thread-safe list of System.Diagnostics.TraceListener objects. """
- def Add(self,listener):
-  """
+class TraceListenerCollection(object, IList, ICollection, IEnumerable):
+    """ Provides a thread-safe list of System.Diagnostics.TraceListener objects. """
+
+    def Add(self, listener):
+        """
   Add(self: TraceListenerCollection,listener: TraceListener) -> int
 
   
@@ -14,9 +15,10 @@ class TraceListenerCollection(object,IList,ICollection,IEnumerable):
 
    Returns: The position at which the new listener was inserted.
   """
-  pass
- def AddRange(self,value):
-  """
+        pass
+
+    def AddRange(self, value):
+        """
   AddRange(self: TraceListenerCollection,value: TraceListenerCollection)
 
    Adds the contents of another System.Diagnostics.TraceListenerCollection to the list.
@@ -33,16 +35,18 @@ class TraceListenerCollection(object,IList,ICollection,IEnumerable):
 
    value: An array of System.Diagnostics.TraceListener objects to add to the list.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: TraceListenerCollection)
 
    Clears all the listeners from the list.
   """
-  pass
- def Contains(self,listener):
-  """
+        pass
+
+    def Contains(self, listener):
+        """
   Contains(self: TraceListenerCollection,listener: TraceListener) -> bool
 
   
@@ -55,9 +59,10 @@ class TraceListenerCollection(object,IList,ICollection,IEnumerable):
 
    Returns: true if the listener is in the list; otherwise,false.
   """
-  pass
- def CopyTo(self,listeners,index):
-  """
+        pass
+
+    def CopyTo(self, listeners, index):
+        """
   CopyTo(self: TraceListenerCollection,listeners: Array[TraceListener],index: int)
 
    Copies a section of the current System.Diagnostics.TraceListenerCollection list to the specified 
@@ -72,9 +77,10 @@ class TraceListenerCollection(object,IList,ICollection,IEnumerable):
 
    index: The starting index number in the current list to copy from.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: TraceListenerCollection) -> IEnumerator
 
   
@@ -83,9 +89,10 @@ class TraceListenerCollection(object,IList,ICollection,IEnumerable):
 
    Returns: An enumerator of type System.Collections.IEnumerator.
   """
-  pass
- def IndexOf(self,listener):
-  """
+        pass
+
+    def IndexOf(self, listener):
+        """
   IndexOf(self: TraceListenerCollection,listener: TraceListener) -> int
 
   
@@ -98,9 +105,10 @@ class TraceListenerCollection(object,IList,ICollection,IEnumerable):
 
    Returns: The index of the listener,if it can be found in the list; otherwise,-1.
   """
-  pass
- def Insert(self,index,listener):
-  """
+        pass
+
+    def Insert(self, index, listener):
+        """
   Insert(self: TraceListenerCollection,index: int,listener: TraceListener)
 
    Inserts the listener at the specified index.
@@ -111,9 +119,10 @@ class TraceListenerCollection(object,IList,ICollection,IEnumerable):
 
    listener: A System.Diagnostics.TraceListener to insert in the list.
   """
-  pass
- def Remove(self,*__args):
-  """
+        pass
+
+    def Remove(self, *__args):
+        """
   Remove(self: TraceListenerCollection,name: str)
 
    Removes from the collection the first System.Diagnostics.TraceListener with the specified name.
@@ -130,9 +139,10 @@ class TraceListenerCollection(object,IList,ICollection,IEnumerable):
 
    listener: A System.Diagnostics.TraceListener to remove from the list.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: TraceListenerCollection,index: int)
 
    Removes from the collection the System.Diagnostics.TraceListener at the specified index.
@@ -141,12 +151,14 @@ class TraceListenerCollection(object,IList,ICollection,IEnumerable):
 
    index: The zero-based index of the System.Diagnostics.TraceListener to remove from the list.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IList,value: object) -> bool
 
   
@@ -159,27 +171,34 @@ class TraceListenerCollection(object,IList,ICollection,IEnumerable):
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of listeners in the list.
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of listeners in the list.
 
 
 
@@ -188,5 +207,3 @@ Get: Count(self: TraceListenerCollection) -> int
 
 
 """
-
-

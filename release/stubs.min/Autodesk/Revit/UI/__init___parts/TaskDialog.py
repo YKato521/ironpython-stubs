@@ -1,5 +1,5 @@
-class TaskDialog(APIObject,IDisposable):
- """
+class TaskDialog(APIObject, IDisposable):
+    """
  A task dialog is a dialog box that can be used to display information and receive simple input from the user. It has a common set of controls  
 
  that are arranged in a standard order to assure consistent look and feel.
@@ -8,8 +8,9 @@ class TaskDialog(APIObject,IDisposable):
 
  TaskDialog(title: str)
  """
- def AddCommandLink(self,id,mainContent,supportingContent=None):
-  """
+
+    def AddCommandLink(self, id, mainContent, supportingContent=None):
+        """
   AddCommandLink(self: TaskDialog,id: TaskDialogCommandLinkId,mainContent: str,supportingContent: str)
 
    Adds a CommandLink associated to the given id,displaying the indicating main 
@@ -48,19 +49,23 @@ class TaskDialog(APIObject,IDisposable):
 
    mainContent: The main content of the CommandLink.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: APIObject,A_0: bool) """
-  pass
- def ReleaseManagedResources(self,*args):
-  """ ReleaseManagedResources(self: APIObject) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: APIObject) """
-  pass
- @staticmethod
- def Show(title=None,mainInstruction=None,buttons=None,defaultButton=None):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: APIObject,A_0: bool) """
+        pass
+
+    def ReleaseManagedResources(self, *args):
+        """ ReleaseManagedResources(self: APIObject) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: APIObject) """
+        pass
+
+    @staticmethod
+    def Show(title=None, mainInstruction=None, buttons=None, defaultButton=None):
+        """
   Show(title: str,mainInstruction: str) -> TaskDialogResult
 
   
@@ -121,9 +126,10 @@ class TaskDialog(APIObject,IDisposable):
 
    Returns: The user's response to the task dialog.
   """
-  pass
- def WasExtraCheckBoxChecked(self):
-  """
+        pass
+
+    def WasExtraCheckBoxChecked(self):
+        """
   WasExtraCheckBoxChecked(self: TaskDialog) -> bool
 
   
@@ -132,9 +138,10 @@ class TaskDialog(APIObject,IDisposable):
 
    Returns: Whether the extra checkbox is checked.
   """
-  pass
- def WasVerificationChecked(self):
-  """
+        pass
+
+    def WasVerificationChecked(self):
+        """
   WasVerificationChecked(self: TaskDialog) -> bool
 
   
@@ -143,22 +150,29 @@ class TaskDialog(APIObject,IDisposable):
 
    Returns: Whether the verification checkbox is checked.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,title):
-  """ __new__(cls: type,title: str) """
-  pass
- AllowCancellation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether the task dialog can be cancelled if no cancel button is specified.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, title):
+        """ __new__(cls: type,title: str) """
+        pass
+
+    AllowCancellation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether the task dialog can be cancelled if no cancel button is specified.
 
 
 
@@ -170,8 +184,10 @@ Set: AllowCancellation(self: TaskDialog)=value
 
 """
 
- CommonButtons=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The push buttons displayed in the task dialog.
+    CommonButtons = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The push buttons displayed in the task dialog.
 
 
 
@@ -183,8 +199,10 @@ Set: CommonButtons(self: TaskDialog)=value
 
 """
 
- DefaultButton=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The default button for the dialog.
+    DefaultButton = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The default button for the dialog.
 
 
 
@@ -196,8 +214,10 @@ Set: DefaultButton(self: TaskDialog)=value
 
 """
 
- ExpandedContent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """ExpandedContent is hidden by default and will display at the bottom of the task dialog when the "Show details" button is pressed.
+    ExpandedContent = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """ExpandedContent is hidden by default and will display at the bottom of the task dialog when the "Show details" button is pressed.
 
 
 
@@ -209,8 +229,10 @@ Set: ExpandedContent(self: TaskDialog)=value
 
 """
 
- ExtraCheckBoxText=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """ExtraCheckBoxText is used to label the extra checkbox.
+    ExtraCheckBoxText = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """ExtraCheckBoxText is used to label the extra checkbox.
 
 
 
@@ -222,8 +244,10 @@ Set: ExtraCheckBoxText(self: TaskDialog)=value
 
 """
 
- FooterText=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """FooterText is used in the footer area of the task dialog.
+    FooterText = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """FooterText is used in the footer area of the task dialog.
 
 
 
@@ -235,8 +259,8 @@ Set: FooterText(self: TaskDialog)=value
 
 """
 
- Id=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Id of the task dialog.
+    Id = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The Id of the task dialog.
 
 
 
@@ -248,8 +272,10 @@ Set: Id(self: TaskDialog)=value
 
 """
 
- MainContent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """MainContent is the smaller text that appears just below the main instructions.
+    MainContent = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """MainContent is the smaller text that appears just below the main instructions.
 
 
 
@@ -261,8 +287,8 @@ Set: MainContent(self: TaskDialog)=value
 
 """
 
- MainIcon=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The icon shown in the task dialog.
+    MainIcon = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The icon shown in the task dialog.
 
 
 
@@ -274,8 +300,10 @@ Set: MainIcon(self: TaskDialog)=value
 
 """
 
- MainInstruction=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The large primary text that appears at the top of a task dialog.
+    MainInstruction = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The large primary text that appears at the top of a task dialog.
 
 
 
@@ -287,8 +315,8 @@ Set: MainInstruction(self: TaskDialog)=value
 
 """
 
- Title=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Title of the task dialog.
+    Title = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Title of the task dialog.
 
 
 
@@ -300,8 +328,10 @@ Set: Title(self: TaskDialog)=value
 
 """
 
- TitleAutoPrefix=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether the TaskDialog's title will automatically have the add-in name added as a prefix.
+    TitleAutoPrefix = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether the TaskDialog's title will automatically have the add-in name added as a prefix.
 
 
 
@@ -313,8 +343,10 @@ Set: TitleAutoPrefix(self: TaskDialog)=value
 
 """
 
- VerificationText=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """VerificationText is used to label the verification checkbox.
+    VerificationText = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """VerificationText is used to label the verification checkbox.
 
 
 
@@ -325,5 +357,3 @@ Get: VerificationText(self: TaskDialog) -> str
 Set: VerificationText(self: TaskDialog)=value
 
 """
-
-

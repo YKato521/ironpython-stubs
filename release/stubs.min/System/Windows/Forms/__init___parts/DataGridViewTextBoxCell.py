@@ -1,13 +1,14 @@
-class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
- """
+class DataGridViewTextBoxCell(DataGridViewCell, ICloneable, IDisposable):
+    """
  Displays editable text information in a System.Windows.Forms.DataGridView control.
 
  
 
  DataGridViewTextBoxCell()
  """
- def BorderWidths(self,*args):
-  """
+
+    def BorderWidths(self, *args):
+        """
   BorderWidths(self: DataGridViewCell,advancedBorderStyle: DataGridViewAdvancedBorderStyle) -> Rectangle
 
   
@@ -20,9 +21,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    Returns: A System.Drawing.Rectangle that represents the widths of all the cell margins.
   """
-  pass
- def ClickUnsharesRow(self,*args):
-  """
+        pass
+
+    def ClickUnsharesRow(self, *args):
+        """
   ClickUnsharesRow(self: DataGridViewCell,e: DataGridViewCellEventArgs) -> bool
 
   
@@ -43,9 +45,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: DataGridViewTextBoxCell) -> object
 
   
@@ -54,9 +57,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    Returns: An System.Object that represents the cloned System.Windows.Forms.DataGridViewTextBoxCell.
   """
-  pass
- def ContentClickUnsharesRow(self,*args):
-  """
+        pass
+
+    def ContentClickUnsharesRow(self, *args):
+        """
   ContentClickUnsharesRow(self: DataGridViewCell,e: DataGridViewCellEventArgs) -> bool
 
   
@@ -77,9 +81,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def ContentDoubleClickUnsharesRow(self,*args):
-  """
+        pass
+
+    def ContentDoubleClickUnsharesRow(self, *args):
+        """
   ContentDoubleClickUnsharesRow(self: DataGridViewCell,e: DataGridViewCellEventArgs) -> bool
 
   
@@ -100,9 +105,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def CreateAccessibilityInstance(self,*args):
-  """
+        pass
+
+    def CreateAccessibilityInstance(self, *args):
+        """
   CreateAccessibilityInstance(self: DataGridViewCell) -> AccessibleObject
 
   
@@ -113,12 +119,14 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
     System.Windows.Forms.DataGridViewCell.
   """
-  pass
- def DetachEditingControl(self):
-  """ DetachEditingControl(self: DataGridViewTextBoxCell) """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def DetachEditingControl(self):
+        """ DetachEditingControl(self: DataGridViewTextBoxCell) """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: DataGridViewCell,disposing: bool)
 
    Releases the unmanaged resources used by the System.Windows.Forms.DataGridViewCell and 
@@ -131,9 +139,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def DoubleClickUnsharesRow(self,*args):
-  """
+        pass
+
+    def DoubleClickUnsharesRow(self, *args):
+        """
   DoubleClickUnsharesRow(self: DataGridViewCell,e: DataGridViewCellEventArgs) -> bool
 
   
@@ -154,9 +163,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def EnterUnsharesRow(self,*args):
-  """
+        pass
+
+    def EnterUnsharesRow(self, *args):
+        """
   EnterUnsharesRow(self: DataGridViewCell,rowIndex: int,throughMouseClick: bool) -> bool
 
   
@@ -177,9 +187,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def GetClipboardContent(self,*args):
-  """
+        pass
+
+    def GetClipboardContent(self, *args):
+        """
   GetClipboardContent(self: DataGridViewCell,rowIndex: int,firstCell: bool,lastCell: bool,inFirstRow: bool,inLastRow: bool,format: str) -> object
 
   
@@ -220,9 +231,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
     System.Windows.Forms.Clipboard.
   """
-  pass
- def GetContentBounds(self,rowIndex):
-  """
+        pass
+
+    def GetContentBounds(self, rowIndex):
+        """
   GetContentBounds(self: DataGridViewTextBoxCell,graphics: Graphics,cellStyle: DataGridViewCellStyle,rowIndex: int) -> Rectangle
 
   
@@ -235,9 +247,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    Returns: The System.Drawing.Rectangle that bounds the cell's contents.
   """
-  pass
- def GetErrorIconBounds(self,*args):
-  """
+        pass
+
+    def GetErrorIconBounds(self, *args):
+        """
   GetErrorIconBounds(self: DataGridViewTextBoxCell,graphics: Graphics,cellStyle: DataGridViewCellStyle,rowIndex: int) -> Rectangle
 
   
@@ -252,9 +265,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
     System.Drawing.Rectangle.Empty.
   """
-  pass
- def GetErrorText(self,*args):
-  """
+        pass
+
+    def GetErrorText(self, *args):
+        """
   GetErrorText(self: DataGridViewCell,rowIndex: int) -> str
 
   
@@ -267,9 +281,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    Returns: A string that describes the error for the current System.Windows.Forms.DataGridViewCell.
   """
-  pass
- def GetFormattedValue(self,*args):
-  """
+        pass
+
+    def GetFormattedValue(self, *args):
+        """
   GetFormattedValue(self: DataGridViewCell,value: object,rowIndex: int,cellStyle: DataGridViewCellStyle,valueTypeConverter: TypeConverter,formattedValueTypeConverter: TypeConverter,context: DataGridViewDataErrorContexts) -> (object,DataGridViewCellStyle)
 
   
@@ -306,9 +321,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
     System.Windows.Forms.DataGridView control.
   """
-  pass
- def GetPreferredSize(self,*args):
-  """
+        pass
+
+    def GetPreferredSize(self, *args):
+        """
   GetPreferredSize(self: DataGridViewTextBoxCell,graphics: Graphics,cellStyle: DataGridViewCellStyle,rowIndex: int,constraintSize: Size) -> Size
 
   
@@ -323,9 +339,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    Returns: A System.Drawing.Size that represents the preferred size,in pixels,of the cell.
   """
-  pass
- def GetSize(self,*args):
-  """
+        pass
+
+    def GetSize(self, *args):
+        """
   GetSize(self: DataGridViewCell,rowIndex: int) -> Size
 
   
@@ -338,9 +355,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    Returns: A System.Drawing.Size representing the cell's dimensions.
   """
-  pass
- def GetValue(self,*args):
-  """
+        pass
+
+    def GetValue(self, *args):
+        """
   GetValue(self: DataGridViewCell,rowIndex: int) -> object
 
   
@@ -353,9 +371,12 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    Returns: The value contained in the System.Windows.Forms.DataGridViewCell.
   """
-  pass
- def InitializeEditingControl(self,rowIndex,initialFormattedValue,dataGridViewCellStyle):
-  """
+        pass
+
+    def InitializeEditingControl(
+        self, rowIndex, initialFormattedValue, dataGridViewCellStyle
+    ):
+        """
   InitializeEditingControl(self: DataGridViewTextBoxCell,rowIndex: int,initialFormattedValue: object,dataGridViewCellStyle: DataGridViewCellStyle)
 
    Attaches and initializes the hosted editing control.
@@ -368,9 +389,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    dataGridViewCellStyle: A cell style that is used to determine the appearance of the hosted control.
   """
-  pass
- def KeyDownUnsharesRow(self,*args):
-  """
+        pass
+
+    def KeyDownUnsharesRow(self, *args):
+        """
   KeyDownUnsharesRow(self: DataGridViewCell,e: KeyEventArgs,rowIndex: int) -> bool
 
   
@@ -391,9 +413,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def KeyEntersEditMode(self,e):
-  """
+        pass
+
+    def KeyEntersEditMode(self, e):
+        """
   KeyEntersEditMode(self: DataGridViewTextBoxCell,e: KeyEventArgs) -> bool
 
   
@@ -406,9 +429,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    Returns: true if edit mode should be started; otherwise,false.
   """
-  pass
- def KeyPressUnsharesRow(self,*args):
-  """
+        pass
+
+    def KeyPressUnsharesRow(self, *args):
+        """
   KeyPressUnsharesRow(self: DataGridViewCell,e: KeyPressEventArgs,rowIndex: int) -> bool
 
   
@@ -425,9 +449,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def KeyUpUnsharesRow(self,*args):
-  """
+        pass
+
+    def KeyUpUnsharesRow(self, *args):
+        """
   KeyUpUnsharesRow(self: DataGridViewCell,e: KeyEventArgs,rowIndex: int) -> bool
 
   
@@ -448,9 +473,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def LeaveUnsharesRow(self,*args):
-  """
+        pass
+
+    def LeaveUnsharesRow(self, *args):
+        """
   LeaveUnsharesRow(self: DataGridViewCell,rowIndex: int,throughMouseClick: bool) -> bool
 
   
@@ -471,9 +497,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def MouseClickUnsharesRow(self,*args):
-  """
+        pass
+
+    def MouseClickUnsharesRow(self, *args):
+        """
   MouseClickUnsharesRow(self: DataGridViewCell,e: DataGridViewCellMouseEventArgs) -> bool
 
   
@@ -492,9 +519,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def MouseDoubleClickUnsharesRow(self,*args):
-  """
+        pass
+
+    def MouseDoubleClickUnsharesRow(self, *args):
+        """
   MouseDoubleClickUnsharesRow(self: DataGridViewCell,e: DataGridViewCellMouseEventArgs) -> bool
 
   
@@ -509,9 +537,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def MouseDownUnsharesRow(self,*args):
-  """
+        pass
+
+    def MouseDownUnsharesRow(self, *args):
+        """
   MouseDownUnsharesRow(self: DataGridViewCell,e: DataGridViewCellMouseEventArgs) -> bool
 
   
@@ -530,9 +559,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def MouseEnterUnsharesRow(self,*args):
-  """
+        pass
+
+    def MouseEnterUnsharesRow(self, *args):
+        """
   MouseEnterUnsharesRow(self: DataGridViewCell,rowIndex: int) -> bool
 
   
@@ -547,9 +577,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def MouseLeaveUnsharesRow(self,*args):
-  """
+        pass
+
+    def MouseLeaveUnsharesRow(self, *args):
+        """
   MouseLeaveUnsharesRow(self: DataGridViewCell,rowIndex: int) -> bool
 
   
@@ -564,9 +595,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def MouseMoveUnsharesRow(self,*args):
-  """
+        pass
+
+    def MouseMoveUnsharesRow(self, *args):
+        """
   MouseMoveUnsharesRow(self: DataGridViewCell,e: DataGridViewCellMouseEventArgs) -> bool
 
   
@@ -581,9 +613,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def MouseUpUnsharesRow(self,*args):
-  """
+        pass
+
+    def MouseUpUnsharesRow(self, *args):
+        """
   MouseUpUnsharesRow(self: DataGridViewCell,e: DataGridViewCellMouseEventArgs) -> bool
 
   
@@ -602,9 +635,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def OnClick(self,*args):
-  """
+        pass
+
+    def OnClick(self, *args):
+        """
   OnClick(self: DataGridViewCell,e: DataGridViewCellEventArgs)
 
    Called when the cell is clicked.
@@ -613,9 +647,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnContentClick(self,*args):
-  """
+        pass
+
+    def OnContentClick(self, *args):
+        """
   OnContentClick(self: DataGridViewCell,e: DataGridViewCellEventArgs)
 
    Called when the cell's contents are clicked.
@@ -624,9 +659,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnContentDoubleClick(self,*args):
-  """
+        pass
+
+    def OnContentDoubleClick(self, *args):
+        """
   OnContentDoubleClick(self: DataGridViewCell,e: DataGridViewCellEventArgs)
 
    Called when the cell's contents are double-clicked.
@@ -635,18 +671,20 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnDataGridViewChanged(self,*args):
-  """
+        pass
+
+    def OnDataGridViewChanged(self, *args):
+        """
   OnDataGridViewChanged(self: DataGridViewCell)
 
    Called when the System.Windows.Forms.DataGridViewElement.DataGridView property of the cell 
 
     changes.
   """
-  pass
- def OnDoubleClick(self,*args):
-  """
+        pass
+
+    def OnDoubleClick(self, *args):
+        """
   OnDoubleClick(self: DataGridViewCell,e: DataGridViewCellEventArgs)
 
    Called when the cell is double-clicked.
@@ -655,9 +693,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnEnter(self,*args):
-  """
+        pass
+
+    def OnEnter(self, *args):
+        """
   OnEnter(self: DataGridViewTextBoxCell,rowIndex: int,throughMouseClick: bool)
 
    Called by System.Windows.Forms.DataGridView when the selection cursor moves onto a cell.
@@ -668,9 +707,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    throughMouseClick: true if the cell was entered as a result of a mouse click; otherwise,false.
   """
-  pass
- def OnKeyDown(self,*args):
-  """
+        pass
+
+    def OnKeyDown(self, *args):
+        """
   OnKeyDown(self: DataGridViewCell,e: KeyEventArgs,rowIndex: int)
 
    Called when a character key is pressed while the focus is on a cell.
@@ -681,9 +721,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    rowIndex: The index of the cell's parent row.
   """
-  pass
- def OnKeyPress(self,*args):
-  """
+        pass
+
+    def OnKeyPress(self, *args):
+        """
   OnKeyPress(self: DataGridViewCell,e: KeyPressEventArgs,rowIndex: int)
 
    Called when a key is pressed while the focus is on a cell.
@@ -694,9 +735,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    rowIndex: The index of the cell's parent row.
   """
-  pass
- def OnKeyUp(self,*args):
-  """
+        pass
+
+    def OnKeyUp(self, *args):
+        """
   OnKeyUp(self: DataGridViewCell,e: KeyEventArgs,rowIndex: int)
 
    Called when a character key is released while the focus is on a cell.
@@ -707,9 +749,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    rowIndex: The index of the cell's parent row.
   """
-  pass
- def OnLeave(self,*args):
-  """
+        pass
+
+    def OnLeave(self, *args):
+        """
   OnLeave(self: DataGridViewTextBoxCell,rowIndex: int,throughMouseClick: bool)
 
    Called by the System.Windows.Forms.DataGridView when the mouse leaves a cell.
@@ -720,9 +763,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    throughMouseClick: true if the cell was left as a result of a mouse click; otherwise,false.
   """
-  pass
- def OnMouseClick(self,*args):
-  """
+        pass
+
+    def OnMouseClick(self, *args):
+        """
   OnMouseClick(self: DataGridViewTextBoxCell,e: DataGridViewCellMouseEventArgs)
 
    Called by System.Windows.Forms.DataGridView when the mouse leaves a cell.
@@ -731,9 +775,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    e: An System.Windows.Forms.DataGridViewCellMouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseDoubleClick(self,*args):
-  """
+        pass
+
+    def OnMouseDoubleClick(self, *args):
+        """
   OnMouseDoubleClick(self: DataGridViewCell,e: DataGridViewCellMouseEventArgs)
 
    Called when the user double-clicks a mouse button while the pointer is on a cell.
@@ -742,9 +787,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    e: A System.Windows.Forms.DataGridViewCellMouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseDown(self,*args):
-  """
+        pass
+
+    def OnMouseDown(self, *args):
+        """
   OnMouseDown(self: DataGridViewCell,e: DataGridViewCellMouseEventArgs)
 
    Called when the user holds down a mouse button while the pointer is on a cell.
@@ -753,9 +799,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    e: A System.Windows.Forms.DataGridViewCellMouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseEnter(self,*args):
-  """
+        pass
+
+    def OnMouseEnter(self, *args):
+        """
   OnMouseEnter(self: DataGridViewCell,rowIndex: int)
 
    Called when the mouse pointer moves over a cell.
@@ -764,9 +811,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    rowIndex: The index of the cell's parent row.
   """
-  pass
- def OnMouseLeave(self,*args):
-  """
+        pass
+
+    def OnMouseLeave(self, *args):
+        """
   OnMouseLeave(self: DataGridViewCell,rowIndex: int)
 
    Called when the mouse pointer leaves the cell.
@@ -775,9 +823,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    rowIndex: The index of the cell's parent row.
   """
-  pass
- def OnMouseMove(self,*args):
-  """
+        pass
+
+    def OnMouseMove(self, *args):
+        """
   OnMouseMove(self: DataGridViewCell,e: DataGridViewCellMouseEventArgs)
 
    Called when the mouse pointer moves within a cell.
@@ -786,9 +835,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    e: A System.Windows.Forms.DataGridViewCellMouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseUp(self,*args):
-  """
+        pass
+
+    def OnMouseUp(self, *args):
+        """
   OnMouseUp(self: DataGridViewCell,e: DataGridViewCellMouseEventArgs)
 
    Called when the user releases a mouse button while the pointer is on a cell.
@@ -797,9 +847,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    e: A System.Windows.Forms.DataGridViewCellMouseEventArgs that contains the event data.
   """
-  pass
- def Paint(self,*args):
-  """
+        pass
+
+    def Paint(self, *args):
+        """
   Paint(self: DataGridViewTextBoxCell,graphics: Graphics,clipBounds: Rectangle,cellBounds: Rectangle,rowIndex: int,cellState: DataGridViewElementStates,value: object,formattedValue: object,errorText: str,cellStyle: DataGridViewCellStyle,advancedBorderStyle: DataGridViewAdvancedBorderStyle,paintParts: DataGridViewPaintParts)
 
    graphics: The System.Drawing.Graphics used to paint the System.Windows.Forms.DataGridViewCell.
@@ -846,9 +897,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
     which parts of the cell need to be painted.
   """
-  pass
- def PaintBorder(self,*args):
-  """
+        pass
+
+    def PaintBorder(self, *args):
+        """
   PaintBorder(self: DataGridViewCell,graphics: Graphics,clipBounds: Rectangle,bounds: Rectangle,cellStyle: DataGridViewCellStyle,advancedBorderStyle: DataGridViewAdvancedBorderStyle)
 
    Paints the border of the current System.Windows.Forms.DataGridViewCell.
@@ -875,9 +927,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
     that is being painted.
   """
-  pass
- def PaintErrorIcon(self,*args):
-  """
+        pass
+
+    def PaintErrorIcon(self, *args):
+        """
   PaintErrorIcon(self: DataGridViewCell,graphics: Graphics,clipBounds: Rectangle,cellValueBounds: Rectangle,errorText: str)
 
    Paints the error icon of the current System.Windows.Forms.DataGridViewCell.
@@ -896,9 +949,21 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    errorText: An error message that is associated with the cell.
   """
-  pass
- def PositionEditingControl(self,setLocation,setSize,cellBounds,cellClip,cellStyle,singleVerticalBorderAdded,singleHorizontalBorderAdded,isFirstDisplayedColumn,isFirstDisplayedRow):
-  """
+        pass
+
+    def PositionEditingControl(
+        self,
+        setLocation,
+        setSize,
+        cellBounds,
+        cellClip,
+        cellStyle,
+        singleVerticalBorderAdded,
+        singleHorizontalBorderAdded,
+        isFirstDisplayedColumn,
+        isFirstDisplayedRow,
+    ):
+        """
   PositionEditingControl(self: DataGridViewTextBoxCell,setLocation: bool,setSize: bool,cellBounds: Rectangle,cellClip: Rectangle,cellStyle: DataGridViewCellStyle,singleVerticalBorderAdded: bool,singleHorizontalBorderAdded: bool,isFirstDisplayedColumn: bool,isFirstDisplayedRow: bool)
 
    setLocation: true to have the control placed as specified by the other arguments; false to allow the control 
@@ -923,9 +988,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    isFirstDisplayedRow: true if the hosting cell is in the first visible row; otherwise,false.
   """
-  pass
- def RaiseCellClick(self,*args):
-  """
+        pass
+
+    def RaiseCellClick(self, *args):
+        """
   RaiseCellClick(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellClick event.
@@ -934,9 +1000,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseCellContentClick(self,*args):
-  """
+        pass
+
+    def RaiseCellContentClick(self, *args):
+        """
   RaiseCellContentClick(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellContentClick event.
@@ -945,9 +1012,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseCellContentDoubleClick(self,*args):
-  """
+        pass
+
+    def RaiseCellContentDoubleClick(self, *args):
+        """
   RaiseCellContentDoubleClick(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellContentDoubleClick event.
@@ -956,9 +1024,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseCellValueChanged(self,*args):
-  """
+        pass
+
+    def RaiseCellValueChanged(self, *args):
+        """
   RaiseCellValueChanged(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellValueChanged event.
@@ -967,9 +1036,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseDataError(self,*args):
-  """
+        pass
+
+    def RaiseDataError(self, *args):
+        """
   RaiseDataError(self: DataGridViewElement,e: DataGridViewDataErrorEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.DataError event.
@@ -978,9 +1048,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    e: A System.Windows.Forms.DataGridViewDataErrorEventArgs that contains the event data.
   """
-  pass
- def RaiseMouseWheel(self,*args):
-  """
+        pass
+
+    def RaiseMouseWheel(self, *args):
+        """
   RaiseMouseWheel(self: DataGridViewElement,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseWheel event.
@@ -989,9 +1060,10 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def SetValue(self,*args):
-  """
+        pass
+
+    def SetValue(self, *args):
+        """
   SetValue(self: DataGridViewCell,rowIndex: int,value: object) -> bool
 
   
@@ -1006,37 +1078,45 @@ class DataGridViewTextBoxCell(DataGridViewCell,ICloneable,IDisposable):
 
    Returns: true if the value has been set; otherwise,false.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: DataGridViewTextBoxCell) -> str
 
    Returns: A string that represents the current object.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- FormattedValueType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the type of the formatted value associated with the cell.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    FormattedValueType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the type of the formatted value associated with the cell.
 
 
 
@@ -1046,8 +1126,10 @@ Get: FormattedValueType(self: DataGridViewTextBoxCell) -> Type
 
 """
 
- MaxInputLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the maximum number of characters that can be entered into the text box.
+    MaxInputLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the maximum number of characters that can be entered into the text box.
 
 
 
@@ -1059,11 +1141,9 @@ Set: MaxInputLength(self: DataGridViewTextBoxCell)=value
 
 """
 
- ValueType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: ValueType(self: DataGridViewTextBoxCell) -> Type
+    ValueType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: ValueType(self: DataGridViewTextBoxCell) -> Type
 
 
 
 """
-
-

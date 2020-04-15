@@ -8,25 +8,30 @@
 # no functions
 # classes
 
-class FlexPipe(MEPCurve,IDisposable):
- """ A flex pipe in the Autodesk Revit MEP product. """
- @staticmethod
- def Create(document,systemTypeId,pipeTypeId,levelId,*__args):
-  """
+
+class FlexPipe(MEPCurve, IDisposable):
+    """ A flex pipe in the Autodesk Revit MEP product. """
+
+    @staticmethod
+    def Create(document, systemTypeId, pipeTypeId, levelId, *__args):
+        """
   Create(document: Document,systemTypeId: ElementId,pipeTypeId: ElementId,levelId: ElementId,points: IList[XYZ]) -> FlexPipe
 
   Create(document: Document,systemTypeId: ElementId,pipeTypeId: ElementId,levelId: ElementId,startTangent: XYZ,endTangent: XYZ,points: IList[XYZ]) -> FlexPipe
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- @staticmethod
- def IsFlexPipeTypeId(document,pipeTypeId):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    @staticmethod
+    def IsFlexPipeTypeId(document, pipeTypeId):
+        """
   IsFlexPipeTypeId(document: Document,pipeTypeId: ElementId) -> bool
 
   
@@ -41,10 +46,11 @@ class FlexPipe(MEPCurve,IDisposable):
 
    Returns: True if flexible pipe type can used for this pipe,false otherwise.
   """
-  pass
- @staticmethod
- def IsLevelId(document,levelId):
-  """
+        pass
+
+    @staticmethod
+    def IsLevelId(document, levelId):
+        """
   IsLevelId(document: Document,levelId: ElementId) -> bool
 
   
@@ -59,10 +65,11 @@ class FlexPipe(MEPCurve,IDisposable):
 
    Returns: True if the given level id is valid,false otherwise.
   """
-  pass
- @staticmethod
- def IsPipingSystemTypeId(document,systemTypeId):
-  """
+        pass
+
+    @staticmethod
+    def IsPipingSystemTypeId(document, systemTypeId):
+        """
   IsPipingSystemTypeId(document: Document,systemTypeId: ElementId) -> bool
 
   
@@ -77,24 +84,32 @@ class FlexPipe(MEPCurve,IDisposable):
 
    Returns: True if the given systemTypeId is the piping system type,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- EndTangent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the tangent vector at the end of the curve. The invalid or zero vector is ignored when setting the tangent.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    EndTangent = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the tangent vector at the end of the curve. The invalid or zero vector is ignored when setting the tangent.
 
 
 
@@ -106,8 +121,10 @@ Set: EndTangent(self: FlexPipe)=value
 
 """
 
- FlexPipeType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The flex pipe type of this flex pipe.
+    FlexPipeType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The flex pipe type of this flex pipe.
 
 
 
@@ -119,8 +136,8 @@ Set: FlexPipeType(self: FlexPipe)=value
 
 """
 
- FlowState=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The flow state of the pipe.
+    FlowState = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The flow state of the pipe.
 
 
 
@@ -130,8 +147,8 @@ Get: FlowState(self: FlexPipe) -> PipeFlowState
 
 """
 
- Points=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The points of the flex pipe.
+    Points = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The points of the flex pipe.
 
 
 
@@ -143,8 +160,10 @@ Set: Points(self: FlexPipe)=value
 
 """
 
- StartTangent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the tangent vector at the start of the curve. The invalid or zero vector is ignored when setting the tangent.
+    StartTangent = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the tangent vector at the start of the curve. The invalid or zero vector is ignored when setting the tangent.
 
 
 
@@ -157,100 +176,126 @@ Set: StartTangent(self: FlexPipe)=value
 """
 
 
+class FlexPipeType(MEPCurveType, IDisposable):
+    """ A flex pipe type in the Autodesk Revit MEP product. """
 
-class FlexPipeType(MEPCurveType,IDisposable):
- """ A flex pipe type in the Autodesk Revit MEP product. """
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
 
-class FlowConversionMode(Enum,IComparable,IFormattable,IConvertible):
- """
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+
+class FlowConversionMode(Enum, IComparable, IFormattable, IConvertible):
+    """
  Enumerated type listing possible flow conversion modes for piping calculations.
 
  
 
  enum FlowConversionMode,values: Invalid (-1),Tanks (1),Valves (0)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Invalid=None
- Tanks=None
- value__=None
- Valves=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Invalid = None
+    Tanks = None
+    value__ = None
+    Valves = None
 
 
-class FluidTemperature(object,IDisposable):
- """
+class FluidTemperature(object, IDisposable):
+    """
  Represents the dynamic viscosity and density properties as defined at a certain temperature.
 
  
 
  FluidTemperature(temperature: float,viscosity: float,density: float)
  """
- def Dispose(self):
-  """ Dispose(self: FluidTemperature) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: FluidTemperature,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,temperature,viscosity,density):
-  """ __new__(cls: type,temperature: float,viscosity: float,density: float) """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Density=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The density value
+
+    def Dispose(self):
+        """ Dispose(self: FluidTemperature) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: FluidTemperature,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, temperature, viscosity, density):
+        """ __new__(cls: type,temperature: float,viscosity: float,density: float) """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Density = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The density value
 
 
 
@@ -262,8 +307,10 @@ Set: Density(self: FluidTemperature)=value
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -273,8 +320,10 @@ Get: IsValidObject(self: FluidTemperature) -> bool
 
 """
 
- Temperature=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The temperature value
+    Temperature = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The temperature value
 
 
 
@@ -286,8 +335,8 @@ Set: Temperature(self: FluidTemperature)=value
 
 """
 
- Viscosity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The dynamic viscosity value
+    Viscosity = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The dynamic viscosity value
 
 
 
@@ -300,14 +349,17 @@ Set: Viscosity(self: FluidTemperature)=value
 """
 
 
+class FluidTemperatureSetIterator(
+    object, IEnumerator[FluidTemperature], IDisposable, IEnumerator
+):
+    """ An iterator to a set of FluidTemperature from FluidType. """
 
-class FluidTemperatureSetIterator(object,IEnumerator[FluidTemperature],IDisposable,IEnumerator):
- """ An iterator to a set of FluidTemperature from FluidType. """
- def Dispose(self):
-  """ Dispose(self: FluidTemperatureSetIterator) """
-  pass
- def GetCurrent(self):
-  """
+    def Dispose(self):
+        """ Dispose(self: FluidTemperatureSetIterator) """
+        pass
+
+    def GetCurrent(self):
+        """
   GetCurrent(self: FluidTemperatureSetIterator) -> FluidTemperature
 
   
@@ -316,9 +368,10 @@ class FluidTemperatureSetIterator(object,IEnumerator[FluidTemperature],IDisposab
 
    Returns: The current FluidTemperature.
   """
-  pass
- def IsDone(self):
-  """
+        pass
+
+    def IsDone(self):
+        """
   IsDone(self: FluidTemperatureSetIterator) -> bool
 
   
@@ -329,9 +382,10 @@ class FluidTemperatureSetIterator(object,IEnumerator[FluidTemperature],IDisposab
 
     iterated.
   """
-  pass
- def MoveNext(self):
-  """
+        pass
+
+    def MoveNext(self):
+        """
   MoveNext(self: FluidTemperatureSetIterator) -> bool
 
   
@@ -344,40 +398,50 @@ class FluidTemperatureSetIterator(object,IEnumerator[FluidTemperature],IDisposab
 
     iterator has completed all available items.
   """
-  pass
- def next(self,*args):
-  """ next(self: object) -> object """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: FluidTemperatureSetIterator,disposing: bool) """
-  pass
- def Reset(self):
-  """
+        pass
+
+    def next(self, *args):
+        """ next(self: object) -> object """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: FluidTemperatureSetIterator,disposing: bool) """
+        pass
+
+    def Reset(self):
+        """
   Reset(self: FluidTemperatureSetIterator)
 
    Resets the iterator to the initial state.
   """
-  pass
- def __contains__(self,*args):
-  """ __contains__[FluidTemperature](enumerator: IEnumerator[FluidTemperature],value: FluidTemperature) -> bool """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerator) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Current=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the item at the current position of the iterator.
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[FluidTemperature](enumerator: IEnumerator[FluidTemperature],value: FluidTemperature) -> bool """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerator) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Current = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the item at the current position of the iterator.
 
 
 
@@ -387,8 +451,10 @@ Get: Current(self: FluidTemperatureSetIterator) -> FluidTemperature
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -399,11 +465,11 @@ Get: IsValidObject(self: FluidTemperatureSetIterator) -> bool
 """
 
 
+class FluidType(ElementType, IDisposable, IEnumerable[FluidTemperature], IEnumerable):
+    """ Has been extended to provide read and write access to a collection of FluidTemperature objects which represent the fluid's properties at various temperatures. """
 
-class FluidType(ElementType,IDisposable,IEnumerable[FluidTemperature],IEnumerable):
- """ Has been extended to provide read and write access to a collection of FluidTemperature objects which represent the fluid's properties at various temperatures. """
- def AddTemperature(self,fluidTemperature):
-  """
+    def AddTemperature(self, fluidTemperature):
+        """
   AddTemperature(self: FluidType,fluidTemperature: FluidTemperature)
 
    Adds a fluid temperature to the set.
@@ -412,17 +478,19 @@ class FluidType(ElementType,IDisposable,IEnumerable[FluidTemperature],IEnumerabl
 
    fluidTemperature: The fluid temperature being inserted.
   """
-  pass
- def ClearAllTemperatures(self):
-  """
+        pass
+
+    def ClearAllTemperatures(self):
+        """
   ClearAllTemperatures(self: FluidType)
 
    Clears all fluid temperatures in the set.
   """
-  pass
- @staticmethod
- def Create(document,fluidTypeName,basedOnFluidType=None):
-  """
+        pass
+
+    @staticmethod
+    def Create(document, fluidTypeName, basedOnFluidType=None):
+        """
   Create(document: Document,fluidTypeName: str) -> FluidType
 
   
@@ -453,15 +521,18 @@ class FluidType(ElementType,IDisposable,IEnumerable[FluidTemperature],IEnumerabl
 
    Returns: The newly created fluid type.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: FluidType) -> IEnumerator[FluidTemperature]
 
   
@@ -470,9 +541,10 @@ class FluidType(ElementType,IDisposable,IEnumerable[FluidTemperature],IEnumerabl
 
    Returns: An IEnumerator object that can be used to iterate through the collection.
   """
-  pass
- def GetFluidTemperatureSetIterator(self):
-  """
+        pass
+
+    def GetFluidTemperatureSetIterator(self):
+        """
   GetFluidTemperatureSetIterator(self: FluidType) -> FluidTemperatureSetIterator
 
   
@@ -483,10 +555,11 @@ class FluidType(ElementType,IDisposable,IEnumerable[FluidTemperature],IEnumerabl
 
     key-value pairs in the collection.
   """
-  pass
- @staticmethod
- def GetFluidType(document,fluidTypeName):
-  """
+        pass
+
+    @staticmethod
+    def GetFluidType(document, fluidTypeName):
+        """
   GetFluidType(document: Document,fluidTypeName: str) -> FluidType
 
   
@@ -501,9 +574,10 @@ class FluidType(ElementType,IDisposable,IEnumerable[FluidTemperature],IEnumerabl
 
    Returns: The fluid type. ll if the fluid type was not found.
   """
-  pass
- def GetTemperature(self,temperature):
-  """
+        pass
+
+    def GetTemperature(self, temperature):
+        """
   GetTemperature(self: FluidType,temperature: float) -> FluidTemperature
 
   
@@ -516,10 +590,11 @@ class FluidType(ElementType,IDisposable,IEnumerable[FluidTemperature],IEnumerabl
 
    Returns: The fluid temperature. ll if not found.
   """
-  pass
- @staticmethod
- def IsFluidInUse(document,fluidId):
-  """
+        pass
+
+    @staticmethod
+    def IsFluidInUse(document, fluidId):
+        """
   IsFluidInUse(document: Document,fluidId: ElementId) -> bool
 
   
@@ -536,12 +611,14 @@ class FluidType(ElementType,IDisposable,IEnumerable[FluidTemperature],IEnumerabl
 
      False if the fluid type is not in use.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def RemoveTemperature(self,temperature):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def RemoveTemperature(self, temperature):
+        """
   RemoveTemperature(self: FluidType,temperature: float)
 
    Removes a fluid temperature via the temperature value from the set.
@@ -550,30 +627,38 @@ class FluidType(ElementType,IDisposable,IEnumerable[FluidTemperature],IEnumerabl
 
    temperature: The temperature value.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __contains__(self,*args):
-  """ __contains__[FluidTemperature](enumerable: IEnumerable[FluidTemperature],value: FluidTemperature) -> bool """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[FluidTemperature](enumerable: IEnumerable[FluidTemperature],value: FluidTemperature) -> bool """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
 
 class IPipeFittingAndAccessoryPressureDropServer(IExternalServer):
- """ Interface class for external servers implementing pipe fitting and pipe accessory coefficient calculation. """
- def Calculate(self,data):
-  """
+    """ Interface class for external servers implementing pipe fitting and pipe accessory coefficient calculation. """
+
+    def Calculate(self, data):
+        """
   Calculate(self: IPipeFittingAndAccessoryPressureDropServer,data: PipeFittingAndAccessoryPressureDropData) -> bool
 
   
@@ -588,9 +673,10 @@ class IPipeFittingAndAccessoryPressureDropServer(IExternalServer):
 
      False if calculation fails.
   """
-  pass
- def GetDataSchema(self):
-  """
+        pass
+
+    def GetDataSchema(self):
+        """
   GetDataSchema(self: IPipeFittingAndAccessoryPressureDropServer) -> Schema
 
   
@@ -599,9 +685,10 @@ class IPipeFittingAndAccessoryPressureDropServer(IExternalServer):
 
    Returns: Null if the server has no data.
   """
-  pass
- def IsApplicable(self,data):
-  """
+        pass
+
+    def IsApplicable(self, data):
+        """
   IsApplicable(self: IPipeFittingAndAccessoryPressureDropServer,data: PipeFittingAndAccessoryPressureDropData) -> bool
 
   
@@ -612,15 +699,18 @@ class IPipeFittingAndAccessoryPressureDropServer(IExternalServer):
 
    data: The input data of the calculation.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
 
 class IPipePlumbingFixtureFlowServer(IExternalServer):
- """ Interface class for external servers implementing Pipe plumbing fixture flow calculation. """
- def Calculate(self,data):
-  """
+    """ Interface class for external servers implementing Pipe plumbing fixture flow calculation. """
+
+    def Calculate(self, data):
+        """
   Calculate(self: IPipePlumbingFixtureFlowServer,data: PipePlumbingFixtureFlowData)
 
    Calculate the pipe plumbing fixture flow.
@@ -629,9 +719,10 @@ class IPipePlumbingFixtureFlowServer(IExternalServer):
 
    data: The input and output data of the calculation.
   """
-  pass
- def GetHtmlDescription(self):
-  """
+        pass
+
+    def GetHtmlDescription(self):
+        """
   GetHtmlDescription(self: IPipePlumbingFixtureFlowServer) -> str
 
   
@@ -644,9 +735,10 @@ class IPipePlumbingFixtureFlowServer(IExternalServer):
 
    Returns: The HTML format description of the server.
   """
-  pass
- def GetInformationLink(self):
-  """
+        pass
+
+    def GetInformationLink(self):
+        """
   GetInformationLink(self: IPipePlumbingFixtureFlowServer) -> str
 
   
@@ -659,15 +751,18 @@ class IPipePlumbingFixtureFlowServer(IExternalServer):
 
    Returns: The URL providing server information.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
 
 class IPipePressureDropServer(IExternalServer):
- """ Interface for external servers implementing pipe pressure drop calculation. """
- def Calculate(self,data):
-  """
+    """ Interface for external servers implementing pipe pressure drop calculation. """
+
+    def Calculate(self, data):
+        """
   Calculate(self: IPipePressureDropServer,data: PipePressureDropData)
 
    Calculate the pipe pressure drop.
@@ -676,9 +771,10 @@ class IPipePressureDropServer(IExternalServer):
 
    data: The input and output data of the calculation.
   """
-  pass
- def GetHtmlDescription(self):
-  """
+        pass
+
+    def GetHtmlDescription(self):
+        """
   GetHtmlDescription(self: IPipePressureDropServer) -> str
 
   
@@ -691,9 +787,10 @@ class IPipePressureDropServer(IExternalServer):
 
    Returns: The HTML format description of the server.
   """
-  pass
- def GetInformationLink(self):
-  """
+        pass
+
+    def GetInformationLink(self):
+        """
   GetInformationLink(self: IPipePressureDropServer) -> str
 
   
@@ -706,16 +803,19 @@ class IPipePressureDropServer(IExternalServer):
 
    Returns: The URL providing server information.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
 
-class Pipe(MEPCurve,IDisposable):
- """ A pipe in the Autodesk Revit MEP product. """
- @staticmethod
- def Create(document,*__args):
-  """
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+
+class Pipe(MEPCurve, IDisposable):
+    """ A pipe in the Autodesk Revit MEP product. """
+
+    @staticmethod
+    def Create(document, *__args):
+        """
   Create(document: Document,systemTypeId: ElementId,pipeTypeId: ElementId,levelId: ElementId,startPoint: XYZ,endPoint: XYZ) -> Pipe
 
   
@@ -778,10 +878,13 @@ class Pipe(MEPCurve,IDisposable):
 
    Returns: The pipe.
   """
-  pass
- @staticmethod
- def CreatePlaceholder(document,systemTypeId,pipeTypeId,levelId,startPoint,endPoint):
-  """
+        pass
+
+    @staticmethod
+    def CreatePlaceholder(
+        document, systemTypeId, pipeTypeId, levelId, startPoint, endPoint
+    ):
+        """
   CreatePlaceholder(document: Document,systemTypeId: ElementId,pipeTypeId: ElementId,levelId: ElementId,startPoint: XYZ,endPoint: XYZ) -> Pipe
 
   
@@ -804,16 +907,19 @@ class Pipe(MEPCurve,IDisposable):
 
    Returns: The placeholder pipe.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- @staticmethod
- def IsLevelId(document,levelId):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    @staticmethod
+    def IsLevelId(document, levelId):
+        """
   IsLevelId(document: Document,levelId: ElementId) -> bool
 
   
@@ -828,10 +934,11 @@ class Pipe(MEPCurve,IDisposable):
 
    Returns: True if the given level id is valid,false otherwise.
   """
-  pass
- @staticmethod
- def IsPipeTypeId(document,pipeTypeId):
-  """
+        pass
+
+    @staticmethod
+    def IsPipeTypeId(document, pipeTypeId):
+        """
   IsPipeTypeId(document: Document,pipeTypeId: ElementId) -> bool
 
   
@@ -846,10 +953,11 @@ class Pipe(MEPCurve,IDisposable):
 
    Returns: True if pipe type can used for this pipe,false otherwise.
   """
-  pass
- @staticmethod
- def IsPipingConnector(connector):
-  """
+        pass
+
+    @staticmethod
+    def IsPipingConnector(connector):
+        """
   IsPipingConnector(connector: Connector) -> bool
 
   
@@ -862,10 +970,11 @@ class Pipe(MEPCurve,IDisposable):
 
    Returns: True if the connector has the Piping domain type.
   """
-  pass
- @staticmethod
- def IsPipingSystemTypeId(document,systemTypeId):
-  """
+        pass
+
+    @staticmethod
+    def IsPipingSystemTypeId(document, systemTypeId):
+        """
   IsPipingSystemTypeId(document: Document,systemTypeId: ElementId) -> bool
 
   
@@ -880,15 +989,18 @@ class Pipe(MEPCurve,IDisposable):
 
    Returns: True if the given systemTypeId is the piping system type,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetSystemType(self,systemTypeId):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetSystemType(self, systemTypeId):
+        """
   SetSystemType(self: Pipe,systemTypeId: ElementId)
 
    Updates the associated system type for the pipe.
@@ -897,18 +1009,22 @@ class Pipe(MEPCurve,IDisposable):
 
    systemTypeId: The ElementId of the piping system type.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- FlowState=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The flow state of the pipe.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    FlowState = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The flow state of the pipe.
 
 
 
@@ -918,8 +1034,10 @@ Get: FlowState(self: Pipe) -> PipeFlowState
 
 """
 
- IsPlaceholder=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies if the pipe is a placeholder or not.
+    IsPlaceholder = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies if the pipe is a placeholder or not.
 
 
 
@@ -929,8 +1047,10 @@ Get: IsPlaceholder(self: Pipe) -> bool
 
 """
 
- PipeSegment=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The pipe segment that was assigned to this pipe according to the routing preference.
+    PipeSegment = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The pipe segment that was assigned to this pipe according to the routing preference.
 
 
 
@@ -940,8 +1060,8 @@ Get: PipeSegment(self: Pipe) -> PipeSegment
 
 """
 
- PipeType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The pipe type of this pipe.
+    PipeType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The pipe type of this pipe.
 
 
 
@@ -954,14 +1074,15 @@ Set: PipeType(self: Pipe)=value
 """
 
 
+class PipeFittingAndAccessoryConnectorData(object, IDisposable):
+    """ The input data used by external servers for calculation of the pipe fitting and pipe accessory coefficient. """
 
-class PipeFittingAndAccessoryConnectorData(object,IDisposable):
- """ The input data used by external servers for calculation of the pipe fitting and pipe accessory coefficient. """
- def Dispose(self):
-  """ Dispose(self: PipeFittingAndAccessoryConnectorData) """
-  pass
- def GetCoordination(self):
-  """
+    def Dispose(self):
+        """ Dispose(self: PipeFittingAndAccessoryConnectorData) """
+        pass
+
+    def GetCoordination(self):
+        """
   GetCoordination(self: PipeFittingAndAccessoryConnectorData) -> Transform
 
   
@@ -970,24 +1091,30 @@ class PipeFittingAndAccessoryConnectorData(object,IDisposable):
 
    Returns: The coordination of the connector
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: PipeFittingAndAccessoryConnectorData,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Angle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The angle of the fitting,Units:(rad).
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: PipeFittingAndAccessoryConnectorData,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Angle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The angle of the fitting,Units:(rad).
 
 
 
@@ -997,8 +1124,10 @@ Get: Angle(self: PipeFittingAndAccessoryConnectorData) -> float
 
 """
 
- Coordination=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """the coordination of the connector
+    Coordination = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """the coordination of the connector
 
 
 
@@ -1008,8 +1137,8 @@ Get: Coordination(self: PipeFittingAndAccessoryConnectorData) -> Transform
 
 """
 
- Diameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The connector diameter,Units:(ft).
+    Diameter = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The connector diameter,Units:(ft).
 
 
 
@@ -1019,8 +1148,8 @@ Get: Diameter(self: PipeFittingAndAccessoryConnectorData) -> float
 
 """
 
- Flow=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The connector flow,Units:(ft³/s)
+    Flow = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The connector flow,Units:(ft³/s)
 
 
 
@@ -1030,8 +1159,10 @@ Get: Flow(self: PipeFittingAndAccessoryConnectorData) -> float
 
 """
 
- FlowDirection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The flow direction of this connector,In or Out.
+    FlowDirection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The flow direction of this connector,In or Out.
 
 
 
@@ -1041,8 +1172,8 @@ Get: FlowDirection(self: PipeFittingAndAccessoryConnectorData) -> FlowDirectionT
 
 """
 
- Height=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The connector height,Units:(ft).
+    Height = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The connector height,Units:(ft).
 
 
 
@@ -1052,8 +1183,8 @@ Get: Height(self: PipeFittingAndAccessoryConnectorData) -> float
 
 """
 
- Index=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Return the index of this connector
+    Index = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Return the index of this connector
 
 
 
@@ -1063,8 +1194,10 @@ Get: Index(self: PipeFittingAndAccessoryConnectorData) -> int
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -1074,8 +1207,8 @@ Get: IsValidObject(self: PipeFittingAndAccessoryConnectorData) -> bool
 
 """
 
- LinkIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The index of the connector which is linked with this connector
+    LinkIndex = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The index of the connector which is linked with this connector
 
 
 
@@ -1085,8 +1218,8 @@ Get: LinkIndex(self: PipeFittingAndAccessoryConnectorData) -> int
 
 """
 
- Profile=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The connector profile.
+    Profile = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The connector profile.
 
 
 
@@ -1096,8 +1229,10 @@ Get: Profile(self: PipeFittingAndAccessoryConnectorData) -> ConnectorProfileType
 
 """
 
- VelocityPressure=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The connector velocity pressure. Units: (kg/(ft·s²)).
+    VelocityPressure = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The connector velocity pressure. Units: (kg/(ft·s²)).
 
 
 
@@ -1107,8 +1242,8 @@ Get: VelocityPressure(self: PipeFittingAndAccessoryConnectorData) -> float
 
 """
 
- Width=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The connector width,Units:(ft).
+    Width = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The connector width,Units:(ft).
 
 
 
@@ -1119,14 +1254,15 @@ Get: Width(self: PipeFittingAndAccessoryConnectorData) -> float
 """
 
 
+class PipeFittingAndAccessoryData(object, IDisposable):
+    """ The input data used by external servers for calculation of the pipe fitting and pipe accessory coefficient. """
 
-class PipeFittingAndAccessoryData(object,IDisposable):
- """ The input data used by external servers for calculation of the pipe fitting and pipe accessory coefficient. """
- def Dispose(self):
-  """ Dispose(self: PipeFittingAndAccessoryData) """
-  pass
- def GetAllConnectorData(self):
-  """
+    def Dispose(self):
+        """ Dispose(self: PipeFittingAndAccessoryData) """
+        pass
+
+    def GetAllConnectorData(self):
+        """
   GetAllConnectorData(self: PipeFittingAndAccessoryData) -> IList[PipeFittingAndAccessoryConnectorData]
 
   
@@ -1135,9 +1271,10 @@ class PipeFittingAndAccessoryData(object,IDisposable):
 
    Returns: All connector data.
   """
-  pass
- def GetEntity(self):
-  """
+        pass
+
+    def GetEntity(self):
+        """
   GetEntity(self: PipeFittingAndAccessoryData) -> Entity
 
   
@@ -1146,9 +1283,10 @@ class PipeFittingAndAccessoryData(object,IDisposable):
 
    Returns: The Entity.
   """
-  pass
- def GetFamilyInstanceId(self):
-  """
+        pass
+
+    def GetFamilyInstanceId(self):
+        """
   GetFamilyInstanceId(self: PipeFittingAndAccessoryData) -> ElementId
 
   
@@ -1157,24 +1295,32 @@ class PipeFittingAndAccessoryData(object,IDisposable):
 
    Returns: The element Id of the fiting or accessory instance.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: PipeFittingAndAccessoryData,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- BehaviorType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The behavior type of the pipe fitting or pipe accessory.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: PipeFittingAndAccessoryData,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    BehaviorType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The behavior type of the pipe fitting or pipe accessory.
 
 
 
@@ -1184,8 +1330,10 @@ Get: BehaviorType(self: PipeFittingAndAccessoryData) -> int
 
 """
 
- FluidDensity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The fluid density of the pipe fitting or pipe accessory,Units: (kg/ft³).
+    FluidDensity = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The fluid density of the pipe fitting or pipe accessory,Units: (kg/ft³).
 
 
 
@@ -1195,8 +1343,10 @@ Get: FluidDensity(self: PipeFittingAndAccessoryData) -> float
 
 """
 
- FluidViscosity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The fluid dynamic viscosity of the pipe fitting or pipe accessory,Units: (kg/(ft·s)).
+    FluidViscosity = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The fluid dynamic viscosity of the pipe fitting or pipe accessory,Units: (kg/(ft·s)).
 
 
 
@@ -1206,8 +1356,10 @@ Get: FluidViscosity(self: PipeFittingAndAccessoryData) -> float
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -1217,8 +1369,8 @@ Get: IsValidObject(self: PipeFittingAndAccessoryData) -> bool
 
 """
 
- Origin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The origin position of the pipe fitting or pipe accessory.
+    Origin = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The origin position of the pipe fitting or pipe accessory.
 
 
 
@@ -1228,8 +1380,8 @@ Get: Origin(self: PipeFittingAndAccessoryData) -> XYZ
 
 """
 
- PartType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The part type of the pipe fitting or pipe accessory.
+    PartType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The part type of the pipe fitting or pipe accessory.
 
 
 
@@ -1239,8 +1391,10 @@ Get: PartType(self: PipeFittingAndAccessoryData) -> PartType
 
 """
 
- ServerGUID=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The GUID of the pipe fitting or pipe accessory.
+    ServerGUID = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The GUID of the pipe fitting or pipe accessory.
 
 
 
@@ -1250,8 +1404,10 @@ Get: ServerGUID(self: PipeFittingAndAccessoryData) -> Guid
 
 """
 
- SystemClassification=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The system classification of the pipe fitting or pipe accessory.
+    SystemClassification = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The system classification of the pipe fitting or pipe accessory.
 
 
 
@@ -1262,35 +1418,39 @@ Get: SystemClassification(self: PipeFittingAndAccessoryData) -> MEPSystemClassif
 """
 
 
+class PipeFittingAndAccessoryPressureDropData(object, IDisposable):
+    """ The input and output data used by external servers for calculation of the pipe fitting and pipe accessory pressure drop. """
 
-class PipeFittingAndAccessoryPressureDropData(object,IDisposable):
- """ The input and output data used by external servers for calculation of the pipe fitting and pipe accessory pressure drop. """
- def Dispose(self):
-  """ Dispose(self: PipeFittingAndAccessoryPressureDropData) """
-  pass
- def GetPipeFittingAndAccessoryData(self):
-  """
+    def Dispose(self):
+        """ Dispose(self: PipeFittingAndAccessoryPressureDropData) """
+        pass
+
+    def GetPipeFittingAndAccessoryData(self):
+        """
   GetPipeFittingAndAccessoryData(self: PipeFittingAndAccessoryPressureDropData) -> PipeFittingAndAccessoryData
 
   
 
    Returns the fitting and accessory information
   """
-  pass
- def GetPresureDropItems(self):
-  """
+        pass
+
+    def GetPresureDropItems(self):
+        """
   GetPresureDropItems(self: PipeFittingAndAccessoryPressureDropData) -> IList[PipeFittingAndAccessoryPressureDropItem]
 
   
 
    Returns the pressure drop items
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: PipeFittingAndAccessoryPressureDropData,disposing: bool) """
-  pass
- def SetDefaultEntity(self,defaultEntity):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: PipeFittingAndAccessoryPressureDropData,disposing: bool) """
+        pass
+
+    def SetDefaultEntity(self, defaultEntity):
+        """
   SetDefaultEntity(self: PipeFittingAndAccessoryPressureDropData,defaultEntity: Entity)
 
    Stores the default entity in the data.
@@ -1299,21 +1459,28 @@ class PipeFittingAndAccessoryPressureDropData(object,IDisposable):
 
    defaultEntity: The Entity to be stored.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- CalculationType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The calculation type,a bitmask of FittingAndAccessoryCalculationType.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    CalculationType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The calculation type,a bitmask of FittingAndAccessoryCalculationType.
 
 
 
@@ -1323,8 +1490,10 @@ Get: CalculationType(self: PipeFittingAndAccessoryPressureDropData) -> int
 
 """
 
- IsCurrentEntityValid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True if the current settings stored in the entity is valid.
+    IsCurrentEntityValid = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """True if the current settings stored in the entity is valid.
 
 
 
@@ -1336,8 +1505,10 @@ Set: IsCurrentEntityValid(self: PipeFittingAndAccessoryPressureDropData)=value
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -1348,29 +1519,37 @@ Get: IsValidObject(self: PipeFittingAndAccessoryPressureDropData) -> bool
 """
 
 
+class PipeFittingAndAccessoryPressureDropItem(object, IDisposable):
+    """ A flow path of the pipe/pipe fitting and accessory. It is defined by the begin connector and end connector """
 
-class PipeFittingAndAccessoryPressureDropItem(object,IDisposable):
- """ A flow path of the pipe/pipe fitting and accessory. It is defined by the begin connector and end connector """
- def Dispose(self):
-  """ Dispose(self: PipeFittingAndAccessoryPressureDropItem) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: PipeFittingAndAccessoryPressureDropItem,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- BeginConnectorIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The index of the begin connector of the flow path
+    def Dispose(self):
+        """ Dispose(self: PipeFittingAndAccessoryPressureDropItem) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: PipeFittingAndAccessoryPressureDropItem,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    BeginConnectorIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The index of the begin connector of the flow path
 
 
 
@@ -1380,8 +1559,10 @@ Get: BeginConnectorIndex(self: PipeFittingAndAccessoryPressureDropItem) -> int
 
 """
 
- Coefficient=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The coefficient between the begin connector and end connector,Units: (kg/(ft·s²)).
+    Coefficient = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The coefficient between the begin connector and end connector,Units: (kg/(ft·s²)).
 
 
 
@@ -1393,8 +1574,10 @@ Set: Coefficient(self: PipeFittingAndAccessoryPressureDropItem)=value
 
 """
 
- EndConnectorIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The index of the end conector of the flow path
+    EndConnectorIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The index of the end conector of the flow path
 
 
 
@@ -1404,8 +1587,10 @@ Get: EndConnectorIndex(self: PipeFittingAndAccessoryPressureDropItem) -> int
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -1415,8 +1600,10 @@ Get: IsValidObject(self: PipeFittingAndAccessoryPressureDropItem) -> bool
 
 """
 
- VelocityPressure=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The velocity pressure,for converting between coefficient and pressure drop on this flow path. Units: (kg/(ft·s²)).
+    VelocityPressure = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The velocity pressure,for converting between coefficient and pressure drop on this flow path. Units: (kg/(ft·s²)).
 
 
 
@@ -1427,88 +1614,110 @@ Get: VelocityPressure(self: PipeFittingAndAccessoryPressureDropItem) -> float
 """
 
 
-
-class PipeFlowConfigurationType(Enum,IComparable,IFormattable,IConvertible):
- """
+class PipeFlowConfigurationType(Enum, IComparable, IFormattable, IConvertible):
+    """
  An enumerated type listing all connector flow configuration
 
  
 
  enum PipeFlowConfigurationType,values: Calculated (0),Demand (3),Preset (1),System (2)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Calculated=None
- Demand=None
- Preset=None
- System=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Calculated = None
+    Demand = None
+    Preset = None
+    System = None
+    value__ = None
 
 
-class PipeFlowState(Enum,IComparable,IFormattable,IConvertible):
- """
+class PipeFlowState(Enum, IComparable, IFormattable, IConvertible):
+    """
  An enumerated type listing all the pipe flow states for a pipe
 
  
 
  enum PipeFlowState,values: LaminarState (0),MultiValues (-1),TransitionState (1),TurbulentState (2)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- LaminarState=None
- MultiValues=None
- TransitionState=None
- TurbulentState=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    LaminarState = None
+    MultiValues = None
+    TransitionState = None
+    TurbulentState = None
+    value__ = None
 
 
-class PipeInsulation(InsulationLiningBase,IDisposable):
- """ Represents insulation applied to the outside of a given pipe,fitting or content. """
- @staticmethod
- def Create(document,pipeOrContentElementId,pipeInsulationTypeId,Thickness):
-  """
+class PipeInsulation(InsulationLiningBase, IDisposable):
+    """ Represents insulation applied to the outside of a given pipe,fitting or content. """
+
+    @staticmethod
+    def Create(document, pipeOrContentElementId, pipeInsulationTypeId, Thickness):
+        """
   Create(document: Document,pipeOrContentElementId: ElementId,pipeInsulationTypeId: ElementId,Thickness: float) -> PipeInsulation
 
   
@@ -1533,113 +1742,149 @@ class PipeInsulation(InsulationLiningBase,IDisposable):
 
    Returns: The newly created pipe insulation.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
 
-class PipeInsulationType(ElementType,IDisposable):
- """ This class represents a pipe insulation type in Autodesk Revit. """
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
 
-class PipeLossMethodType(Enum,IComparable,IFormattable,IConvertible):
- """
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+
+class PipeInsulationType(ElementType, IDisposable):
+    """ This class represents a pipe insulation type in Autodesk Revit. """
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+
+class PipeLossMethodType(Enum, IComparable, IFormattable, IConvertible):
+    """
  An enumerated type listing all pipe loss method types for a connector
 
  
 
  enum PipeLossMethodType,values: Coefficient (6),NotDefined (0),SpecificLoss (4),Table (1)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Coefficient=None
- NotDefined=None
- SpecificLoss=None
- Table=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Coefficient = None
+    NotDefined = None
+    SpecificLoss = None
+    Table = None
+    value__ = None
 
 
-class PipePlumbingFixtureFlowData(object,IDisposable):
- """ The input and output data used by external servers for calculation of the pipe plumbing fixture flow. """
- def Dispose(self):
-  """ Dispose(self: PipePlumbingFixtureFlowData) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: PipePlumbingFixtureFlowData,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- DimensionFlow=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The dimension flow which is used to calculate flow of the pipe. Units: (gal/min).
+class PipePlumbingFixtureFlowData(object, IDisposable):
+    """ The input and output data used by external servers for calculation of the pipe plumbing fixture flow. """
+
+    def Dispose(self):
+        """ Dispose(self: PipePlumbingFixtureFlowData) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: PipePlumbingFixtureFlowData,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    DimensionFlow = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The dimension flow which is used to calculate flow of the pipe. Units: (gal/min).
 
 
 
@@ -1649,8 +1894,10 @@ Get: DimensionFlow(self: PipePlumbingFixtureFlowData) -> float
 
 """
 
- FixtureUnits=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The fixture units of the pipe.
+    FixtureUnits = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The fixture units of the pipe.
 
 
 
@@ -1660,8 +1907,8 @@ Get: FixtureUnits(self: PipePlumbingFixtureFlowData) -> float
 
 """
 
- Flow=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The actual flow of the plumbing fixture converted from dimension flow or fixture unit. Units: (gal/min).
+    Flow = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The actual flow of the plumbing fixture converted from dimension flow or fixture unit. Units: (gal/min).
 
 
 
@@ -1673,8 +1920,10 @@ Set: Flow(self: PipePlumbingFixtureFlowData)=value
 
 """
 
- FlowConfiguration=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The flow configuration mode of the pipe.
+    FlowConfiguration = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The flow configuration mode of the pipe.
 
 
 
@@ -1684,8 +1933,10 @@ Get: FlowConfiguration(self: PipePlumbingFixtureFlowData) -> PipeFlowConfigurati
 
 """
 
- FlowConversionMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The flow conversion mode of the pipe.
+    FlowConversionMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The flow conversion mode of the pipe.
 
 
 
@@ -1695,8 +1946,10 @@ Get: FlowConversionMode(self: PipePlumbingFixtureFlowData) -> FlowConversionMode
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -1707,29 +1960,37 @@ Get: IsValidObject(self: PipePlumbingFixtureFlowData) -> bool
 """
 
 
+class PipePressureDropData(object, IDisposable):
+    """ The input and output data used by external servers for calculation of the pipe  pressure drop. """
 
-class PipePressureDropData(object,IDisposable):
- """ The input and output data used by external servers for calculation of the pipe  pressure drop. """
- def Dispose(self):
-  """ Dispose(self: PipePressureDropData) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: PipePressureDropData,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- CategoryId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The category id of pipe curves. It will be OST_PipeCurves,OST_FlexPipeCurves,or OST_PlaceHolderPipes.
+    def Dispose(self):
+        """ Dispose(self: PipePressureDropData) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: PipePressureDropData,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    CategoryId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The category id of pipe curves. It will be OST_PipeCurves,OST_FlexPipeCurves,or OST_PlaceHolderPipes.
 
 
 
@@ -1739,8 +2000,10 @@ Get: CategoryId(self: PipePressureDropData) -> ElementId
 
 """
 
- Coefficient=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The coefficient of the pipe.
+    Coefficient = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The coefficient of the pipe.
 
 
 
@@ -1752,8 +2015,8 @@ Set: Coefficient(self: PipePressureDropData)=value
 
 """
 
- Density=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The density of the pipe. Units: (kg/ft³).
+    Density = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The density of the pipe. Units: (kg/ft³).
 
 
 
@@ -1763,8 +2026,8 @@ Get: Density(self: PipePressureDropData) -> float
 
 """
 
- Flow=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The flow of the pipe. Units: (ft³/s).
+    Flow = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The flow of the pipe. Units: (ft³/s).
 
 
 
@@ -1774,8 +2037,8 @@ Get: Flow(self: PipePressureDropData) -> float
 
 """
 
- FlowState=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The flowState of the pipe.
+    FlowState = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The flowState of the pipe.
 
 
 
@@ -1787,8 +2050,8 @@ Set: FlowState(self: PipePressureDropData)=value
 
 """
 
- Friction=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The friction of the pipe. Units: (kg/(ft²·s²)).
+    Friction = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The friction of the pipe. Units: (kg/(ft²·s²)).
 
 
 
@@ -1800,8 +2063,10 @@ Set: Friction(self: PipePressureDropData)=value
 
 """
 
- FrictionFactor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The friction factor of the pipe.
+    FrictionFactor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The friction factor of the pipe.
 
 
 
@@ -1813,8 +2078,10 @@ Set: FrictionFactor(self: PipePressureDropData)=value
 
 """
 
- InsideDiameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The inside diameter of the pipe. Units: (ft).
+    InsideDiameter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The inside diameter of the pipe. Units: (ft).
 
 
 
@@ -1824,8 +2091,10 @@ Get: InsideDiameter(self: PipePressureDropData) -> float
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -1835,8 +2104,8 @@ Get: IsValidObject(self: PipePressureDropData) -> bool
 
 """
 
- KLevel=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The system calculation level.
+    KLevel = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The system calculation level.
 
 
 
@@ -1846,8 +2115,8 @@ Get: KLevel(self: PipePressureDropData) -> SystemCalculationLevel
 
 """
 
- Length=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The length of the pipe. Units: (ft).
+    Length = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The length of the pipe. Units: (ft).
 
 
 
@@ -1857,8 +2126,10 @@ Get: Length(self: PipePressureDropData) -> float
 
 """
 
- NominalDiameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The nominal diameter of the pipe. Units: (ft).
+    NominalDiameter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The nominal diameter of the pipe. Units: (ft).
 
 
 
@@ -1868,8 +2139,10 @@ Get: NominalDiameter(self: PipePressureDropData) -> float
 
 """
 
- OutsideDiameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The outside diameter of the pipe. Units: (ft).
+    OutsideDiameter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The outside diameter of the pipe. Units: (ft).
 
 
 
@@ -1879,8 +2152,10 @@ Get: OutsideDiameter(self: PipePressureDropData) -> float
 
 """
 
- PressureDrop=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The pressure drop of the pipe. Units: (kg/(ft·s²)).
+    PressureDrop = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The pressure drop of the pipe. Units: (kg/(ft·s²)).
 
 
 
@@ -1892,8 +2167,10 @@ Set: PressureDrop(self: PipePressureDropData)=value
 
 """
 
- RelativeRoughness=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The relative roughness of the pipe.
+    RelativeRoughness = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The relative roughness of the pipe.
 
 
 
@@ -1905,8 +2182,10 @@ Set: RelativeRoughness(self: PipePressureDropData)=value
 
 """
 
- ReynoldsNumber=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The reynolds number of the pipe.
+    ReynoldsNumber = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The reynolds number of the pipe.
 
 
 
@@ -1918,8 +2197,8 @@ Set: ReynoldsNumber(self: PipePressureDropData)=value
 
 """
 
- Roughness=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The roughness of the pipe. Units: (ft).
+    Roughness = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The roughness of the pipe. Units: (ft).
 
 
 
@@ -1929,8 +2208,8 @@ Get: Roughness(self: PipePressureDropData) -> float
 
 """
 
- Velocity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The velocity of the pipe. Units: (ft/s) .
+    Velocity = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The velocity of the pipe. Units: (ft/s) .
 
 
 
@@ -1942,8 +2221,10 @@ Set: Velocity(self: PipePressureDropData)=value
 
 """
 
- VelocityPressure=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The velocity pressure of the pipe. Units: (kg/(ft·s²))
+    VelocityPressure = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The velocity pressure of the pipe. Units: (kg/(ft·s²))
 
 
 
@@ -1955,8 +2236,8 @@ Set: VelocityPressure(self: PipePressureDropData)=value
 
 """
 
- Viscosity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The viscosity of the pipe. Units: (kg/(ft·s)).
+    Viscosity = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The viscosity of the pipe. Units: (kg/(ft·s)).
 
 
 
@@ -1967,12 +2248,12 @@ Get: Viscosity(self: PipePressureDropData) -> float
 """
 
 
+class PipeScheduleType(ElementType, IDisposable):
+    """ Represents a pipe schedule type in the Autodesk Revit MEP product. """
 
-class PipeScheduleType(ElementType,IDisposable):
- """ Represents a pipe schedule type in the Autodesk Revit MEP product. """
- @staticmethod
- def Create(doc,name):
-  """
+    @staticmethod
+    def Create(doc, name):
+        """
   Create(doc: Document,name: str) -> PipeScheduleType
 
   
@@ -1987,16 +2268,19 @@ class PipeScheduleType(ElementType,IDisposable):
 
    Returns: Returns the newly created schedule type.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- @staticmethod
- def GetPipeScheduleId(doc,name):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    @staticmethod
+    def GetPipeScheduleId(doc, name):
+        """
   GetPipeScheduleId(doc: Document,name: str) -> ElementId
 
   
@@ -2013,56 +2297,73 @@ class PipeScheduleType(ElementType,IDisposable):
 
     name is not found.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
 
-class PipeSegment(Segment,IDisposable):
- """
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+
+class PipeSegment(Segment, IDisposable):
+    """
  The PipeSegment class represents an instance of pipe segment which has the design
 
     data for routing preference.
  """
- @staticmethod
- def Create(ADocument,MaterialId,ScheduleId,sizeSet):
-  """ Create(ADocument: Document,MaterialId: ElementId,ScheduleId: ElementId,sizeSet: ICollection[MEPSize]) -> PipeSegment """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- ScheduleTypeId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The ElementId of the PipeScheduleType.
+
+    @staticmethod
+    def Create(ADocument, MaterialId, ScheduleId, sizeSet):
+        """ Create(ADocument: Document,MaterialId: ElementId,ScheduleId: ElementId,sizeSet: ICollection[MEPSize]) -> PipeSegment """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    ScheduleTypeId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The ElementId of the PipeScheduleType.
 
 
 
@@ -2073,11 +2374,11 @@ Get: ScheduleTypeId(self: PipeSegment) -> ElementId
 """
 
 
+class PipeSettings(Element, IDisposable):
+    """ The pipe setting class. """
 
-class PipeSettings(Element,IDisposable):
- """ The pipe setting class. """
- def AddPipeSlope(self,slope):
-  """
+    def AddPipeSlope(self, slope):
+        """
   AddPipeSlope(self: PipeSettings,slope: float)
 
    Add a pipe slope value.
@@ -2086,15 +2387,18 @@ class PipeSettings(Element,IDisposable):
 
    slope: The pipe slope value. Revit stores the slope value as a percentage (0-100).
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetFlowConvertionServerInfo(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetFlowConvertionServerInfo(self):
+        """
   GetFlowConvertionServerInfo(self: PipeSettings) -> MEPCalculationServerInfo
 
   
@@ -2103,10 +2407,11 @@ class PipeSettings(Element,IDisposable):
 
    Returns: The MEPServerInfo of the current plumbing flow convertion server.
   """
-  pass
- @staticmethod
- def GetPipeSettings(document):
-  """
+        pass
+
+    @staticmethod
+    def GetPipeSettings(document):
+        """
   GetPipeSettings(document: Document) -> PipeSettings
 
   
@@ -2119,9 +2424,10 @@ class PipeSettings(Element,IDisposable):
 
    Returns: The pipe settings of the project.
   """
-  pass
- def GetPipeSlopes(self):
-  """
+        pass
+
+    def GetPipeSlopes(self):
+        """
   GetPipeSlopes(self: PipeSettings) -> IList[float]
 
   
@@ -2130,9 +2436,10 @@ class PipeSettings(Element,IDisposable):
 
    Returns: Pipe slope values. Revit stores the slope value as a percentage (0-100).
   """
-  pass
- def GetPressLossCalculationServerInfo(self):
-  """
+        pass
+
+    def GetPressLossCalculationServerInfo(self):
+        """
   GetPressLossCalculationServerInfo(self: PipeSettings) -> MEPCalculationServerInfo
 
   
@@ -2141,9 +2448,10 @@ class PipeSettings(Element,IDisposable):
 
    Returns: The MEPServerInfo of the current pipe pressure loss calculation server
   """
-  pass
- def GetSpecificFittingAngles(self):
-  """
+        pass
+
+    def GetSpecificFittingAngles(self):
+        """
   GetSpecificFittingAngles(self: PipeSettings) -> IList[float]
 
   
@@ -2152,9 +2460,10 @@ class PipeSettings(Element,IDisposable):
 
    Returns: Angles (in degrees).
   """
-  pass
- def GetSpecificFittingAngleStatus(self,angle):
-  """
+        pass
+
+    def GetSpecificFittingAngleStatus(self, angle):
+        """
   GetSpecificFittingAngleStatus(self: PipeSettings,angle: float) -> bool
 
   
@@ -2167,9 +2476,10 @@ class PipeSettings(Element,IDisposable):
 
     or 11.25 degrees.
   """
-  pass
- def IsValidSpecificFittingAngle(self,angle):
-  """
+        pass
+
+    def IsValidSpecificFittingAngle(self, angle):
+        """
   IsValidSpecificFittingAngle(self: PipeSettings,angle: float) -> bool
 
   
@@ -2186,32 +2496,38 @@ class PipeSettings(Element,IDisposable):
 
    Returns: True if the given value is a valid specific fitting angle.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetFlowConvertionServerInfo(self,serverInfo):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetFlowConvertionServerInfo(self, serverInfo):
+        """
   SetFlowConvertionServerInfo(self: PipeSettings,serverInfo: MEPCalculationServerInfo)
 
    Set the MEPServerInfo of the current plumbing flow convertion server.
   """
-  pass
- def SetPipeSlopes(self,slopes):
-  """ SetPipeSlopes(self: PipeSettings,slopes: IList[float]) """
-  pass
- def SetPressLossCalculationServerInfo(self,serverInfo):
-  """
+        pass
+
+    def SetPipeSlopes(self, slopes):
+        """ SetPipeSlopes(self: PipeSettings,slopes: IList[float]) """
+        pass
+
+    def SetPressLossCalculationServerInfo(self, serverInfo):
+        """
   SetPressLossCalculationServerInfo(self: PipeSettings,serverInfo: MEPCalculationServerInfo)
 
    Set the MEPServerInfo of the current pipe pressure loss calculation server.
   """
-  pass
- def SetSpecificFittingAngleStatus(self,angle,bStatus):
-  """
+        pass
+
+    def SetSpecificFittingAngleStatus(self, angle, bStatus):
+        """
   SetSpecificFittingAngleStatus(self: PipeSettings,angle: float,bStatus: bool)
 
    Sets the status of given specific angle.
@@ -2226,18 +2542,24 @@ class PipeSettings(Element,IDisposable):
 
    bStatus: Status,true - using the given angle during the pipe layout.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Centerline=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The abbreviation of the Centerline (=) string.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Centerline = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The abbreviation of the Centerline (=) string.
 
 
 
@@ -2249,8 +2571,10 @@ Set: Centerline(self: PipeSettings)=value
 
 """
 
- ConnectorSeparator=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The connector separator string.
+    ConnectorSeparator = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The connector separator string.
 
 
 
@@ -2262,8 +2586,10 @@ Set: ConnectorSeparator(self: PipeSettings)=value
 
 """
 
- ConnectorTolerance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The connector tolerance value.
+    ConnectorTolerance = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The connector tolerance value.
 
 
 
@@ -2275,8 +2601,10 @@ Set: ConnectorTolerance(self: PipeSettings)=value
 
 """
 
- FittingAngleUsage=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determine how to use fitting angle during pipe layout or modifying layout.
+    FittingAngleUsage = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Determine how to use fitting angle during pipe layout or modifying layout.
 
 
 
@@ -2288,8 +2616,10 @@ Set: FittingAngleUsage(self: PipeSettings)=value
 
 """
 
- FittingAnnotationSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The value of fitting annotation size.
+    FittingAnnotationSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The value of fitting annotation size.
 
 
 
@@ -2301,8 +2631,10 @@ Set: FittingAnnotationSize(self: PipeSettings)=value
 
 """
 
- FlatOnBottom=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The abbreviation of the Flat On Bottom (FOB) string.
+    FlatOnBottom = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The abbreviation of the Flat On Bottom (FOB) string.
 
 
 
@@ -2314,8 +2646,8 @@ Set: FlatOnBottom(self: PipeSettings)=value
 
 """
 
- FlatOnTop=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The abbreviation of the Flat On Top (FOT) string.
+    FlatOnTop = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The abbreviation of the Flat On Top (FOT) string.
 
 
 
@@ -2327,8 +2659,8 @@ Set: FlatOnTop(self: PipeSettings)=value
 
 """
 
- SetDown=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The abbreviation of the Set Down (SD) string.
+    SetDown = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The abbreviation of the Set Down (SD) string.
 
 
 
@@ -2340,8 +2672,8 @@ Set: SetDown(self: PipeSettings)=value
 
 """
 
- SetUp=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The abbreviation of the Set Up (SU) string.
+    SetUp = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The abbreviation of the Set Up (SU) string.
 
 
 
@@ -2353,8 +2685,10 @@ Set: SetUp(self: PipeSettings)=value
 
 """
 
- SizePrefix=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The size prefix string.
+    SizePrefix = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The size prefix string.
 
 
 
@@ -2366,8 +2700,10 @@ Set: SizePrefix(self: PipeSettings)=value
 
 """
 
- SizeSuffix=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The size suffix string.
+    SizeSuffix = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The size suffix string.
 
 
 
@@ -2379,8 +2715,10 @@ Set: SizeSuffix(self: PipeSettings)=value
 
 """
 
- UseAnnotationScaleForSingleLineFittings=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether use annotation scale for single line fittings or not.
+    UseAnnotationScaleForSingleLineFittings = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates whether use annotation scale for single line fittings or not.
 
 
 
@@ -2393,80 +2731,98 @@ Set: UseAnnotationScaleForSingleLineFittings(self: PipeSettings)=value
 """
 
 
-
-class PipeSystemType(Enum,IComparable,IFormattable,IConvertible):
- """
+class PipeSystemType(Enum, IComparable, IFormattable, IConvertible):
+    """
  An enumerated type listing all the possible pipe system types for a connector object.
 
  
 
  enum PipeSystemType,values: DomesticColdWater (20),DomesticHotWater (19),FireProtectDry (24),FireProtectOther (26),FireProtectPreaction (25),FireProtectWet (23),Fitting (28),Global (29),OtherPipe (22),ReturnHydronic (8),Sanitary (16),SupplyHydronic (7),UndefinedSystemType (0),Vent (17)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- DomesticColdWater=None
- DomesticHotWater=None
- FireProtectDry=None
- FireProtectOther=None
- FireProtectPreaction=None
- FireProtectWet=None
- Fitting=None
- Global=None
- OtherPipe=None
- ReturnHydronic=None
- Sanitary=None
- SupplyHydronic=None
- UndefinedSystemType=None
- value__=None
- Vent=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    DomesticColdWater = None
+    DomesticHotWater = None
+    FireProtectDry = None
+    FireProtectOther = None
+    FireProtectPreaction = None
+    FireProtectWet = None
+    Fitting = None
+    Global = None
+    OtherPipe = None
+    ReturnHydronic = None
+    Sanitary = None
+    SupplyHydronic = None
+    UndefinedSystemType = None
+    value__ = None
+    Vent = None
 
 
-class PipeType(MEPCurveType,IDisposable):
- """ A pipe type element. """
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Class=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The schedule type of the pipe type.
+class PipeType(MEPCurveType, IDisposable):
+    """ A pipe type element. """
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Class = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The schedule type of the pipe type.
 
 
 
@@ -2477,12 +2833,12 @@ Get: Class(self: PipeType) -> PipeScheduleType
 """
 
 
+class PipingSystem(MEPSystem, IDisposable):
+    """ A piping system element. """
 
-class PipingSystem(MEPSystem,IDisposable):
- """ A piping system element. """
- @staticmethod
- def Create(ADocument,typeId,name=None):
-  """
+    @staticmethod
+    def Create(ADocument, typeId, name=None):
+        """
   Create(ADocument: Document,typeId: ElementId) -> PipingSystem
 
   
@@ -2513,60 +2869,70 @@ class PipingSystem(MEPSystem,IDisposable):
 
    Returns: The newly created piping system element.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def getElementsInNetwork(self,*args):
-  """ getElementsInNetwork(self: MEPSystem) -> ElementSet """
-  pass
- def GetFixtureUnits(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def getElementsInNetwork(self, *args):
+        """ getElementsInNetwork(self: MEPSystem) -> ElementSet """
+        pass
+
+    def GetFixtureUnits(self):
+        """
   GetFixtureUnits(self: PipingSystem) -> float
 
   
 
    Gets the fixture units of this piping system.
   """
-  pass
- def GetFlow(self):
-  """
+        pass
+
+    def GetFlow(self):
+        """
   GetFlow(self: PipingSystem) -> float
 
   
 
    Gets the flow of this piping system.
   """
-  pass
- def getFlow(self,*args):
-  """ getFlow(self: MEPSystem,param: BuiltInParameter) -> float """
-  pass
- def GetStaticPressure(self):
-  """
+        pass
+
+    def getFlow(self, *args):
+        """ getFlow(self: MEPSystem,param: BuiltInParameter) -> float """
+        pass
+
+    def GetStaticPressure(self):
+        """
   GetStaticPressure(self: PipingSystem) -> float
 
   
 
    Gets the static pressure of this piping system.
   """
-  pass
- def getStaticPressure(self,*args):
-  """ getStaticPressure(self: MEPSystem,param: BuiltInParameter) -> float """
-  pass
- def GetVolume(self):
-  """
+        pass
+
+    def getStaticPressure(self, *args):
+        """ getStaticPressure(self: MEPSystem,param: BuiltInParameter) -> float """
+        pass
+
+    def GetVolume(self):
+        """
   GetVolume(self: PipingSystem) -> float
 
   
 
    Gets the volume of this piping system.
   """
-  pass
- def IsFlowServerMissing(self):
-  """
+        pass
+
+    def IsFlowServerMissing(self):
+        """
   IsFlowServerMissing(self: PipingSystem) -> bool
 
   
@@ -2579,9 +2945,10 @@ class PipingSystem(MEPSystem,IDisposable):
 
    Returns: True if there is any flow server not available,false otherwise.
   """
-  pass
- def IsPressureDropServerMissing(self):
-  """
+        pass
+
+    def IsPressureDropServerMissing(self):
+        """
   IsPressureDropServerMissing(self: PipingSystem) -> bool
 
   
@@ -2594,24 +2961,32 @@ class PipingSystem(MEPSystem,IDisposable):
 
    Returns: True if there is any pressure drop server not available,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- BaseEquipmentConnector=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The connector within base equipment which is used to connect with system.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    BaseEquipmentConnector = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The connector within base equipment which is used to connect with system.
 
 
 
@@ -2623,8 +2998,10 @@ Set: BaseEquipmentConnector(self: PipingSystem)=value
 
 """
 
- FixtureUnits=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The fixture units of this piping system
+    FixtureUnits = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The fixture units of this piping system
 
 
 
@@ -2634,8 +3011,8 @@ Get: FixtureUnits(self: PipingSystem) -> float
 
 """
 
- Flow=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The flow of this piping system
+    Flow = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The flow of this piping system
 
 
 
@@ -2645,8 +3022,10 @@ Get: Flow(self: PipingSystem) -> float
 
 """
 
- IsWellConnected=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the system is well connected or not.
+    IsWellConnected = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the system is well connected or not.
 
 
 
@@ -2656,8 +3035,10 @@ Get: IsWellConnected(self: PipingSystem) -> bool
 
 """
 
- PipingNetwork=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Pipes and fittings which are contained in this system.
+    PipingNetwork = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Pipes and fittings which are contained in this system.
 
 
 
@@ -2667,8 +3048,10 @@ Get: PipingNetwork(self: PipingSystem) -> ElementSet
 
 """
 
- StaticPressure=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The static pressure of this piping system
+    StaticPressure = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The static pressure of this piping system
 
 
 
@@ -2678,8 +3061,10 @@ Get: StaticPressure(self: PipingSystem) -> float
 
 """
 
- SystemType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The type of this piping system.
+    SystemType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The type of this piping system.
 
 
 
@@ -2690,12 +3075,12 @@ Get: SystemType(self: PipingSystem) -> PipeSystemType
 """
 
 
+class PipingSystemType(MEPSystemType, IDisposable):
+    """ Base class for piping system types """
 
-class PipingSystemType(MEPSystemType,IDisposable):
- """ Base class for piping system types """
- @staticmethod
- def Create(ADoc,systemClassification,name):
-  """
+    @staticmethod
+    def Create(ADoc, systemClassification, name):
+        """
   Create(ADoc: Document,systemClassification: MEPSystemClassification,name: str) -> PipingSystemType
 
   
@@ -2712,21 +3097,26 @@ class PipingSystemType(MEPSystemType,IDisposable):
 
    Returns: The newly created piping system type element.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def ValidateRiseDropSymbolType(self,risedropType):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def ValidateRiseDropSymbolType(self, risedropType):
+        """
   ValidateRiseDropSymbolType(self: PipingSystemType,risedropType: RiseDropSymbol) -> bool
 
   
@@ -2739,18 +3129,24 @@ class PipingSystemType(MEPSystemType,IDisposable):
 
    Returns: True if the input is a valid piping rise/drop symbol type,false otherwise.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- FlowConversionMethod=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The flow conversion method for the piping system type.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    FlowConversionMethod = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The flow conversion method for the piping system type.
 
 
 
@@ -2762,8 +3158,10 @@ Set: FlowConversionMethod(self: PipingSystemType)=value
 
 """
 
- FluidTemperature=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Fluid Temperature
+    FluidTemperature = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Fluid Temperature
 
 
 
@@ -2775,8 +3173,8 @@ Set: FluidTemperature(self: PipingSystemType)=value
 
 """
 
- FluidType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Fluid Type
+    FluidType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Fluid Type
 
 
 
@@ -2788,8 +3186,10 @@ Set: FluidType(self: PipingSystemType)=value
 
 """
 
- SingleLineBendDropType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Symbol for a 1 line drop
+    SingleLineBendDropType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Symbol for a 1 line drop
 
 
 
@@ -2801,8 +3201,10 @@ Set: SingleLineBendDropType(self: PipingSystemType)=value
 
 """
 
- SingleLineBendRiseType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Symbol for a 1 line rise
+    SingleLineBendRiseType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Symbol for a 1 line rise
 
 
 
@@ -2814,8 +3216,10 @@ Set: SingleLineBendRiseType(self: PipingSystemType)=value
 
 """
 
- SingleLineJunctionDropType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Symbol for a 1 line junction drop
+    SingleLineJunctionDropType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Symbol for a 1 line junction drop
 
 
 
@@ -2827,8 +3231,10 @@ Set: SingleLineJunctionDropType(self: PipingSystemType)=value
 
 """
 
- SingleLineJunctionRiseType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Symbol for a 1 line junction rise
+    SingleLineJunctionRiseType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Symbol for a 1 line junction rise
 
 
 
@@ -2840,8 +3246,10 @@ Set: SingleLineJunctionRiseType(self: PipingSystemType)=value
 
 """
 
- TwoLineDropType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Symbol for a 2 line drop
+    TwoLineDropType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Symbol for a 2 line drop
 
 
 
@@ -2853,8 +3261,10 @@ Set: TwoLineDropType(self: PipingSystemType)=value
 
 """
 
- TwoLineRiseType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Symbol for a 2 line rise
+    TwoLineRiseType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Symbol for a 2 line rise
 
 
 
@@ -2867,12 +3277,12 @@ Set: TwoLineRiseType(self: PipingSystemType)=value
 """
 
 
-
 class PlumbingUtils(object):
- """ General utility methods in the Autodesk Revit MEP product. """
- @staticmethod
- def BreakCurve(document,pipeId,ptBreak):
-  """
+    """ General utility methods in the Autodesk Revit MEP product. """
+
+    @staticmethod
+    def BreakCurve(document, pipeId, ptBreak):
+        """
   BreakCurve(document: Document,pipeId: ElementId,ptBreak: XYZ) -> ElementId
 
   
@@ -2891,10 +3301,11 @@ class PlumbingUtils(object):
 
     invalidElementId is returned.
   """
-  pass
- @staticmethod
- def ConnectPipePlaceholdersAtCross(document,*__args):
-  """
+        pass
+
+    @staticmethod
+    def ConnectPipePlaceholdersAtCross(document, *__args):
+        """
   ConnectPipePlaceholdersAtCross(document: Document,placeholder1Id: ElementId,placeholder2Id: ElementId) -> bool
 
   
@@ -2949,10 +3360,11 @@ class PlumbingUtils(object):
 
    Returns: True if connection succeeds,false otherwise.
   """
-  pass
- @staticmethod
- def ConnectPipePlaceholdersAtElbow(document,*__args):
-  """
+        pass
+
+    @staticmethod
+    def ConnectPipePlaceholdersAtElbow(document, *__args):
+        """
   ConnectPipePlaceholdersAtElbow(document: Document,placeholder1Id: ElementId,placeholder2Id: ElementId) -> bool
 
   
@@ -2985,10 +3397,11 @@ class PlumbingUtils(object):
 
    Returns: True if connection succeeds,false otherwise.
   """
-  pass
- @staticmethod
- def ConnectPipePlaceholdersAtTee(document,*__args):
-  """
+        pass
+
+    @staticmethod
+    def ConnectPipePlaceholdersAtTee(document, *__args):
+        """
   ConnectPipePlaceholdersAtTee(document: Document,placeholder1Id: ElementId,placeholder2Id: ElementId) -> bool
 
   
@@ -3023,14 +3436,16 @@ class PlumbingUtils(object):
 
    Returns: True if connection succeeds,false otherwise.
   """
-  pass
- @staticmethod
- def ConvertPipePlaceholders(document,placeholderIds):
-  """ ConvertPipePlaceholders(document: Document,placeholderIds: ICollection[ElementId]) -> ICollection[ElementId] """
-  pass
- @staticmethod
- def HasOpenConnector(document,elemId):
-  """
+        pass
+
+    @staticmethod
+    def ConvertPipePlaceholders(document, placeholderIds):
+        """ ConvertPipePlaceholders(document: Document,placeholderIds: ICollection[ElementId]) -> ICollection[ElementId] """
+        pass
+
+    @staticmethod
+    def HasOpenConnector(document, elemId):
+        """
   HasOpenConnector(document: Document,elemId: ElementId) -> bool
 
   
@@ -3049,10 +3464,11 @@ class PlumbingUtils(object):
 
    Returns: True if given element has open piping connector,false otherwise.
   """
-  pass
- @staticmethod
- def PlaceCapOnOpenEnds(document,elemId,typeId):
-  """
+        pass
+
+    @staticmethod
+    def PlaceCapOnOpenEnds(document, elemId, typeId):
+        """
   PlaceCapOnOpenEnds(document: Document,elemId: ElementId,typeId: ElementId)
 
    Places caps on the open connectors of the pipe curve,pipe fitting or pipe 
@@ -3071,15 +3487,14 @@ class PlumbingUtils(object):
 
      Default is invalidElementId.
   """
-  pass
- __all__=[
-  'BreakCurve',
-  'ConnectPipePlaceholdersAtCross',
-  'ConnectPipePlaceholdersAtElbow',
-  'ConnectPipePlaceholdersAtTee',
-  'ConvertPipePlaceholders',
-  'HasOpenConnector',
-  'PlaceCapOnOpenEnds',
- ]
+        pass
 
-
+    __all__ = [
+        "BreakCurve",
+        "ConnectPipePlaceholdersAtCross",
+        "ConnectPipePlaceholdersAtElbow",
+        "ConnectPipePlaceholdersAtTee",
+        "ConvertPipePlaceholders",
+        "HasOpenConnector",
+        "PlaceCapOnOpenEnds",
+    ]

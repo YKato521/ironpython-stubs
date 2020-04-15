@@ -1,5 +1,5 @@
 class TabbedDialogExtension(object):
- """
+    """
  Contains the information required to create and implement the behavior for the new tab inside 
 
  the Revit options dialog.
@@ -8,8 +8,9 @@ class TabbedDialogExtension(object):
 
  TabbedDialogExtension(userControl: UserControl,onOK: TabbedDialogAction)
  """
- def GetContextualHelp(self):
-  """
+
+    def GetContextualHelp(self):
+        """
   GetContextualHelp(self: TabbedDialogExtension) -> ContextualHelp
 
   
@@ -20,9 +21,10 @@ class TabbedDialogExtension(object):
 
     ll if there is no binding assigned.
   """
-  pass
- def SetContextualHelp(self,contextualHelp):
-  """
+        pass
+
+    def SetContextualHelp(self, contextualHelp):
+        """
   SetContextualHelp(self: TabbedDialogExtension,contextualHelp: ContextualHelp)
 
    Sets the contextual help.
@@ -31,13 +33,15 @@ class TabbedDialogExtension(object):
 
    contextualHelp: The contextual help.
   """
-  pass
- @staticmethod
- def __new__(self,userControl,onOK):
-  """ __new__(cls: type,userControl: UserControl,onOK: TabbedDialogAction) """
-  pass
- Control=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The control.
+        pass
+
+    @staticmethod
+    def __new__(self, userControl, onOK):
+        """ __new__(cls: type,userControl: UserControl,onOK: TabbedDialogAction) """
+        pass
+
+    Control = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The control.
 
 
 
@@ -47,8 +51,10 @@ Get: Control(self: TabbedDialogExtension) -> UserControl
 
 """
 
- OnCancelAction=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The cancel handler.
+    OnCancelAction = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The cancel handler.
 
 
 
@@ -60,8 +66,10 @@ Set: OnCancelAction(self: TabbedDialogExtension)=value
 
 """
 
- OnOKAction=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The ok handler.
+    OnOKAction = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The ok handler.
 
 
 
@@ -71,8 +79,10 @@ Get: OnOKAction(self: TabbedDialogExtension) -> TabbedDialogAction
 
 """
 
- OnRestoreDefaultsAction=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The restore defaults handler.
+    OnRestoreDefaultsAction = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The restore defaults handler.
 
 
 
@@ -83,5 +93,3 @@ Get: OnRestoreDefaultsAction(self: TabbedDialogExtension) -> TabbedDialogAction
 Set: OnRestoreDefaultsAction(self: TabbedDialogExtension)=value
 
 """
-
-

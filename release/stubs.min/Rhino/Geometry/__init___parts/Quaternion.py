@@ -1,5 +1,5 @@
-class Quaternion(object,IEquatable[Quaternion],IEpsilonComparable[Quaternion]):
- """
+class Quaternion(object, IEquatable[Quaternion], IEpsilonComparable[Quaternion]):
+    """
  Represents the four coefficient values in a quaternion.
 
     The first value a is the real part,
@@ -10,9 +10,10 @@ class Quaternion(object,IEquatable[Quaternion],IEpsilonComparable[Quaternion]):
 
  Quaternion(a: float,b: float,c: float,d: float)
  """
- @staticmethod
- def CrossProduct(p,q):
-  """
+
+    @staticmethod
+    def CrossProduct(p, q):
+        """
   CrossProduct(p: Quaternion,q: Quaternion) -> Quaternion
 
   
@@ -37,10 +38,11 @@ class Quaternion(object,IEquatable[Quaternion],IEpsilonComparable[Quaternion]):
 
    Returns: A new quaternion.
   """
-  pass
- @staticmethod
- def Distance(p,q):
-  """
+        pass
+
+    @staticmethod
+    def Distance(p, q):
+        """
   Distance(p: Quaternion,q: Quaternion) -> float
 
   
@@ -55,9 +57,10 @@ class Quaternion(object,IEquatable[Quaternion],IEpsilonComparable[Quaternion]):
 
    Returns: (p - q).Length()
   """
-  pass
- def DistanceTo(self,q):
-  """
+        pass
+
+    def DistanceTo(self, q):
+        """
   DistanceTo(self: Quaternion,q: Quaternion) -> float
 
   
@@ -70,18 +73,20 @@ class Quaternion(object,IEquatable[Quaternion],IEpsilonComparable[Quaternion]):
 
    Returns: (this - q).Length.
   """
-  pass
- def EpsilonEquals(self,other,epsilon):
-  """
+        pass
+
+    def EpsilonEquals(self, other, epsilon):
+        """
   EpsilonEquals(self: Quaternion,other: Quaternion,epsilon: float) -> bool
 
   
 
    Check that all values in other are within epsilon of the values in this
   """
-  pass
- def Equals(self,*__args):
-  """
+        pass
+
+    def Equals(self, *__args):
+        """
   Equals(self: Quaternion,obj: object) -> bool
 
   
@@ -106,9 +111,10 @@ class Quaternion(object,IEquatable[Quaternion],IEpsilonComparable[Quaternion]):
 
    Returns: true if the quaternions have exactly equal coefficients; otherwise false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Quaternion) -> int
 
   
@@ -117,9 +123,10 @@ class Quaternion(object,IEquatable[Quaternion],IEpsilonComparable[Quaternion]):
 
    Returns: A signed number.
   """
-  pass
- def GetRotation(self,*__args):
-  """
+        pass
+
+    def GetRotation(self, *__args):
+        """
   GetRotation(self: Quaternion) -> (bool,Plane)
 
   
@@ -142,9 +149,10 @@ class Quaternion(object,IEquatable[Quaternion],IEpsilonComparable[Quaternion]):
 
    Returns: True if the operation succeeded; otherwise,false.
   """
-  pass
- def Invert(self):
-  """
+        pass
+
+    def Invert(self):
+        """
   Invert(self: Quaternion) -> bool
 
   
@@ -163,9 +171,10 @@ class Quaternion(object,IEquatable[Quaternion],IEpsilonComparable[Quaternion]):
 
    Returns: true if successful. false if the quaternion is zero and cannot be inverted.
   """
-  pass
- def MatrixForm(self):
-  """
+        pass
+
+    def MatrixForm(self):
+        """
   MatrixForm(self: Quaternion) -> Transform
 
   
@@ -190,10 +199,11 @@ class Quaternion(object,IEquatable[Quaternion],IEpsilonComparable[Quaternion]):
 
    Returns: A transform value.
   """
-  pass
- @staticmethod
- def Product(p,q):
-  """
+        pass
+
+    @staticmethod
+    def Product(p, q):
+        """
   Product(p: Quaternion,q: Quaternion) -> Quaternion
 
   
@@ -208,9 +218,10 @@ class Quaternion(object,IEquatable[Quaternion],IEpsilonComparable[Quaternion]):
 
    Returns: A transform value.
   """
-  pass
- def Rotate(self,v):
-  """
+        pass
+
+    def Rotate(self, v):
+        """
   Rotate(self: Quaternion,v: Vector3d) -> Vector3d
 
   
@@ -243,10 +254,11 @@ class Quaternion(object,IEquatable[Quaternion],IEpsilonComparable[Quaternion]):
 
      (q.Conjugate()*(0,x,y,x)*q/q.LengthSquared).Vector.
   """
-  pass
- @staticmethod
- def Rotation(*__args):
-  """
+        pass
+
+    @staticmethod
+    def Rotation(*__args):
+        """
   Rotation(plane0: Plane,plane1: Plane) -> Quaternion
 
   
@@ -295,16 +307,18 @@ class Quaternion(object,IEquatable[Quaternion],IEpsilonComparable[Quaternion]):
 
    Returns: A new quaternion.
   """
-  pass
- def Set(self,a,b,c,d):
-  """
+        pass
+
+    def Set(self, a, b, c, d):
+        """
   Set(self: Quaternion,a: float,b: float,c: float,d: float)
 
    Sets all coefficients of the quaternion.
   """
-  pass
- def SetRotation(self,*__args):
-  """
+        pass
+
+    def SetRotation(self, *__args):
+        """
   SetRotation(self: Quaternion,plane0: Plane,plane1: Plane)
 
    Sets the quaternion to the unit quaternion which rotates
@@ -343,9 +357,10 @@ class Quaternion(object,IEquatable[Quaternion],IEpsilonComparable[Quaternion]):
 
    axisOfRotation: The direction of the axis of rotation.
   """
-  pass
- def Unitize(self):
-  """
+        pass
+
+    def Unitize(self):
+        """
   Unitize(self: Quaternion) -> bool
 
   
@@ -354,36 +369,44 @@ class Quaternion(object,IEquatable[Quaternion],IEpsilonComparable[Quaternion]):
 
    Returns: true if successful.  false if the quaternion is zero and cannot be unitized.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __div__(self,*args):
-  """ x.__div__(y) <==> x/y """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __mul__(self,*args):
-  """ x.__mul__(y) <==> x*yx.__mul__(y) <==> x*yx.__mul__(y) <==> x*yx.__mul__(y) <==> x*y """
-  pass
- @staticmethod
- def __new__(self,a,b,c,d):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __div__(self, *args):
+        """ x.__div__(y) <==> x/y """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __mul__(self, *args):
+        """ x.__mul__(y) <==> x*yx.__mul__(y) <==> x*yx.__mul__(y) <==> x*yx.__mul__(y) <==> x*y """
+        pass
+
+    @staticmethod
+    def __new__(self, a, b, c, d):
+        """
   __new__[Quaternion]() -> Quaternion
 
   
 
   __new__(cls: type,a: float,b: float,c: float,d: float)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __radd__(self,*args):
-  """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __radd__(self, *args):
+        """
   __radd__(a: Quaternion,b: Quaternion) -> Quaternion
 
   
@@ -406,14 +429,17 @@ class Quaternion(object,IEquatable[Quaternion],IEpsilonComparable[Quaternion]):
 
    Returns: A new quaternion.
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __rmul__(self,*args):
-  """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __rmul__(self, *args):
+        """
   __rmul__(a: Quaternion,b: Quaternion) -> Quaternion
 
   
@@ -434,9 +460,10 @@ class Quaternion(object,IEquatable[Quaternion],IEpsilonComparable[Quaternion]):
 
    Returns: A new quaternion.
   """
-  pass
- def __rsub__(self,*args):
-  """
+        pass
+
+    def __rsub__(self, *args):
+        """
   __rsub__(a: Quaternion,b: Quaternion) -> Quaternion
 
   
@@ -459,14 +486,17 @@ class Quaternion(object,IEquatable[Quaternion],IEpsilonComparable[Quaternion]):
 
    Returns: A new quaternion.
   """
-  pass
- def __str__(self,*args):
-  pass
- def __sub__(self,*args):
-  """ x.__sub__(y) <==> x-y """
-  pass
- A=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the real part of the quaternion.
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    def __sub__(self, *args):
+        """ x.__sub__(y) <==> x-y """
+        pass
+
+    A = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the real part of the quaternion.
 
 
 
@@ -478,8 +508,8 @@ Set: A(self: Quaternion)=value
 
 """
 
- B=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the first imaginary coefficient of the quaternion.
+    B = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the first imaginary coefficient of the quaternion.
 
 
 
@@ -491,8 +521,8 @@ Set: B(self: Quaternion)=value
 
 """
 
- C=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the second imaginary coefficient of the quaternion.
+    C = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the second imaginary coefficient of the quaternion.
 
 
 
@@ -504,8 +534,8 @@ Set: C(self: Quaternion)=value
 
 """
 
- Conjugate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a new quaternion that is the conjugate of this quaternion.
+    Conjugate = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a new quaternion that is the conjugate of this quaternion.
 
    This is (a,-b,-c,-d)
 
@@ -517,8 +547,8 @@ Get: Conjugate(self: Quaternion) -> Quaternion
 
 """
 
- D=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the third imaginary coefficient of the quaternion.
+    D = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the third imaginary coefficient of the quaternion.
 
 
 
@@ -530,8 +560,8 @@ Set: D(self: Quaternion)=value
 
 """
 
- Inverse=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Computes a new inverted quaternion,
+    Inverse = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Computes a new inverted quaternion,
 
    (a/L2,-b/L2,-c/L2,-d/L2),where L2=length squared=(a*a + b*b + c*c + d*d).
 
@@ -549,8 +579,8 @@ Get: Inverse(self: Quaternion) -> Quaternion
 
 """
 
- IsScalar=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """true if b,c,and d are all zero.
+    IsScalar = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """true if b,c,and d are all zero.
 
 
 
@@ -560,8 +590,8 @@ Get: IsScalar(self: Quaternion) -> bool
 
 """
 
- IsValid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determines if the four coefficients are valid numbers within RhinoCommon.
+    IsValid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Determines if the four coefficients are valid numbers within RhinoCommon.
 
    See Rhino.RhinoMath.IsValidDouble(System.Double).
 
@@ -573,8 +603,8 @@ Get: IsValid(self: Quaternion) -> bool
 
 """
 
- IsVector=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """true if a=0 and at least one of b,c,or d is not zero.
+    IsVector = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """true if a=0 and at least one of b,c,or d is not zero.
 
 
 
@@ -584,8 +614,8 @@ Get: IsVector(self: Quaternion) -> bool
 
 """
 
- IsZero=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """true if a,b,c,and d are all zero.
+    IsZero = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """true if a,b,c,and d are all zero.
 
 
 
@@ -595,8 +625,8 @@ Get: IsZero(self: Quaternion) -> bool
 
 """
 
- Length=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the length or norm of the quaternion.
+    Length = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns the length or norm of the quaternion.
 
 
 
@@ -606,8 +636,10 @@ Get: Length(self: Quaternion) -> float
 
 """
 
- LengthSquared=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the result of (a^2 + b^2 + c^2 + d^2).
+    LengthSquared = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the result of (a^2 + b^2 + c^2 + d^2).
 
 
 
@@ -617,8 +649,8 @@ Get: LengthSquared(self: Quaternion) -> float
 
 """
 
- Scalar=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The real (scalar) part of the quaternion
+    Scalar = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The real (scalar) part of the quaternion
 
    This is Rhino.Geometry.Quaternion.A.
 
@@ -630,8 +662,8 @@ Get: Scalar(self: Quaternion) -> float
 
 """
 
- Vector=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The imaginary part of the quaternion
+    Vector = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The imaginary part of the quaternion
 
    (B,C,D)
 
@@ -643,10 +675,8 @@ Get: Vector(self: Quaternion) -> Vector3d
 
 """
 
-
- I=None
- Identity=None
- J=None
- K=None
- Zero=None
-
+    I = None
+    Identity = None
+    J = None
+    K = None
+    Zero = None

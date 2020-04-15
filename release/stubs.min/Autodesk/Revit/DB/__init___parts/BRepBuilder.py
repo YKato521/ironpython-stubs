@@ -1,13 +1,14 @@
-class BRepBuilder(ShapeBuilder,IDisposable):
- """
+class BRepBuilder(ShapeBuilder, IDisposable):
+    """
  A class that allows direct construction of geometry objects (solids,open shells,etc.).
 
  
 
  BRepBuilder(geomType: BRepType)
  """
- def AddCoEdge(self,loopId,edgeId,bCoEdgeIsReversed):
-  """
+
+    def AddCoEdge(self, loopId, edgeId, bCoEdgeIsReversed):
+        """
   AddCoEdge(self: BRepBuilder,loopId: BRepBuilderGeometryId,edgeId: BRepBuilderGeometryId,bCoEdgeIsReversed: bool) -> BRepBuilderGeometryId
 
   
@@ -60,9 +61,10 @@ class BRepBuilder(ShapeBuilder,IDisposable):
 
     AddCoEdge().
   """
-  pass
- def AddEdge(self,edgeGeom):
-  """
+        pass
+
+    def AddEdge(self, edgeGeom):
+        """
   AddEdge(self: BRepBuilder,edgeGeom: BRepBuilderEdgeGeometry) -> BRepBuilderGeometryId
 
   
@@ -83,9 +85,10 @@ class BRepBuilder(ShapeBuilder,IDisposable):
 
     AddCoEdge().
   """
-  pass
- def AddFace(self,surfaceGeom,bFaceIsReversed):
-  """
+        pass
+
+    def AddFace(self, surfaceGeom, bFaceIsReversed):
+        """
   AddFace(self: BRepBuilder,surfaceGeom: BRepBuilderSurfaceGeometry,bFaceIsReversed: bool) -> BRepBuilderGeometryId
 
   
@@ -128,9 +131,10 @@ class BRepBuilder(ShapeBuilder,IDisposable):
 
     building geometry (e.g.,to add a loop to a face).
   """
-  pass
- def AddLoop(self,faceId):
-  """
+        pass
+
+    def AddLoop(self, faceId):
+        """
   AddLoop(self: BRepBuilder,faceId: BRepBuilderGeometryId) -> BRepBuilderGeometryId
 
   
@@ -153,9 +157,10 @@ class BRepBuilder(ShapeBuilder,IDisposable):
 
     building geometry (e.g.,to add co-edges to the loop).
   """
-  pass
- def CanAddGeometry(self):
-  """
+        pass
+
+    def CanAddGeometry(self):
+        """
   CanAddGeometry(self: BRepBuilder) -> bool
 
   
@@ -168,12 +173,14 @@ class BRepBuilder(ShapeBuilder,IDisposable):
 
    Returns: True if this BRepBuilder object is accepting b-rep data,false otherwise.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: ShapeBuilder,A_0: bool) """
-  pass
- def Finish(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: ShapeBuilder,A_0: bool) """
+        pass
+
+    def Finish(self):
+        """
   Finish(self: BRepBuilder) -> BRepBuilderOutcome
 
   
@@ -186,9 +193,10 @@ class BRepBuilder(ShapeBuilder,IDisposable):
 
    Returns: BRepBuilderOutcome.Success if successful,BRepBuilderOutcome.Failure otherwise.
   """
-  pass
- def FinishFace(self,faceId):
-  """
+        pass
+
+    def FinishFace(self, faceId):
+        """
   FinishFace(self: BRepBuilder,faceId: BRepBuilderGeometryId)
 
    Indicates that the caller has finished defining the given face.
@@ -197,9 +205,10 @@ class BRepBuilder(ShapeBuilder,IDisposable):
 
    faceId: Id of the face.
   """
-  pass
- def FinishLoop(self,loopId):
-  """
+        pass
+
+    def FinishLoop(self, loopId):
+        """
   FinishLoop(self: BRepBuilder,loopId: BRepBuilderGeometryId)
 
    Indicates that the caller has finished defining the given loop.
@@ -208,9 +217,10 @@ class BRepBuilder(ShapeBuilder,IDisposable):
 
    loopId: Id of the loop.
   """
-  pass
- def GetResult(self):
-  """
+        pass
+
+    def GetResult(self):
+        """
   GetResult(self: BRepBuilder) -> Solid
 
   
@@ -231,10 +241,11 @@ class BRepBuilder(ShapeBuilder,IDisposable):
 
     Geometry stored in the BRepBuilder.
   """
-  pass
- @staticmethod
- def IsPermittedSurfaceType(surface):
-  """
+        pass
+
+    @staticmethod
+    def IsPermittedSurfaceType(surface):
+        """
   IsPermittedSurfaceType(surface: Surface) -> bool
 
   
@@ -251,9 +262,10 @@ class BRepBuilder(ShapeBuilder,IDisposable):
 
    Returns: True if surface of this type may be used as a face surface,false otherwise.
   """
-  pass
- def IsResultAvailable(self):
-  """
+        pass
+
+    def IsResultAvailable(self):
+        """
   IsResultAvailable(self: BRepBuilder) -> bool
 
   
@@ -266,9 +278,10 @@ class BRepBuilder(ShapeBuilder,IDisposable):
 
    Returns: True if this BRepBuilder object has successfully built a b-rep.
   """
-  pass
- def IsValidEdgeId(self,edgeId):
-  """
+        pass
+
+    def IsValidEdgeId(self, edgeId):
+        """
   IsValidEdgeId(self: BRepBuilder,edgeId: BRepBuilderGeometryId) -> bool
 
   
@@ -287,9 +300,10 @@ class BRepBuilder(ShapeBuilder,IDisposable):
 
     false otherwise.
   """
-  pass
- def IsValidFaceId(self,faceId):
-  """
+        pass
+
+    def IsValidFaceId(self, faceId):
+        """
   IsValidFaceId(self: BRepBuilder,faceId: BRepBuilderGeometryId) -> bool
 
   
@@ -308,9 +322,10 @@ class BRepBuilder(ShapeBuilder,IDisposable):
 
     false otherwise.
   """
-  pass
- def IsValidLoopId(self,loopId):
-  """
+        pass
+
+    def IsValidLoopId(self, loopId):
+        """
   IsValidLoopId(self: BRepBuilder,loopId: BRepBuilderGeometryId) -> bool
 
   
@@ -329,12 +344,14 @@ class BRepBuilder(ShapeBuilder,IDisposable):
 
     false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: ShapeBuilder,disposing: bool) """
-  pass
- def SetFaceMaterialId(self,faceId,materialId):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: ShapeBuilder,disposing: bool) """
+        pass
+
+    def SetFaceMaterialId(self, faceId, materialId):
+        """
   SetFaceMaterialId(self: BRepBuilder,faceId: BRepBuilderGeometryId,materialId: ElementId)
 
    Sets material id to a face.
@@ -353,17 +370,21 @@ class BRepBuilder(ShapeBuilder,IDisposable):
 
     is not verified that materialId corresponds to a valid Material element.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,geomType):
-  """ __new__(cls: type,geomType: BRepType) """
-  pass
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, geomType):
+        """ __new__(cls: type,geomType: BRepType) """
+        pass

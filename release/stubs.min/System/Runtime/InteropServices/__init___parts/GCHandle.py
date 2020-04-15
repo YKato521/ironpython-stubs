@@ -1,7 +1,8 @@
 class GCHandle(object):
- """ Provides a way to access a managed object from unmanaged memory. """
- def AddrOfPinnedObject(self):
-  """
+    """ Provides a way to access a managed object from unmanaged memory. """
+
+    def AddrOfPinnedObject(self):
+        """
   AddrOfPinnedObject(self: GCHandle) -> IntPtr
 
   
@@ -14,10 +15,11 @@ class GCHandle(object):
 
    Returns: The address of the of the Pinned object as an System.IntPtr.
   """
-  pass
- @staticmethod
- def Alloc(value,type=None):
-  """
+        pass
+
+    @staticmethod
+    def Alloc(value, type=None):
+        """
   Alloc(value: object,type: GCHandleType) -> GCHandle
 
   
@@ -58,9 +60,10 @@ class GCHandle(object):
 
     System.Runtime.InteropServices.GCHandle.Free when it is no longer needed.
   """
-  pass
- def Equals(self,o):
-  """
+        pass
+
+    def Equals(self, o):
+        """
   Equals(self: GCHandle,o: object) -> bool
 
   
@@ -83,17 +86,19 @@ class GCHandle(object):
 
     System.Runtime.InteropServices.GCHandle object; otherwise,false.
   """
-  pass
- def Free(self):
-  """
+        pass
+
+    def Free(self):
+        """
   Free(self: GCHandle)
 
    Releases a System.Runtime.InteropServices.GCHandle.
   """
-  pass
- @staticmethod
- def FromIntPtr(value):
-  """
+        pass
+
+    @staticmethod
+    def FromIntPtr(value):
+        """
   FromIntPtr(value: IntPtr) -> GCHandle
 
   
@@ -114,9 +119,10 @@ class GCHandle(object):
 
    Returns: A new System.Runtime.InteropServices.GCHandle object that corresponds to the value parameter.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: GCHandle) -> int
 
   
@@ -125,10 +131,11 @@ class GCHandle(object):
 
    Returns: An identifier for the current System.Runtime.InteropServices.GCHandle object.
   """
-  pass
- @staticmethod
- def ToIntPtr(value):
-  """
+        pass
+
+    @staticmethod
+    def ToIntPtr(value):
+        """
   ToIntPtr(value: GCHandle) -> IntPtr
 
   
@@ -145,14 +152,19 @@ class GCHandle(object):
 
    Returns: An System.IntPtr object that represents a System.Runtime.InteropServices.GCHandle object.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __ne__(self,*args):
-  pass
- IsAllocated=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the handle is allocated.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    IsAllocated = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the handle is allocated.
 
 
 
@@ -162,8 +174,8 @@ Get: IsAllocated(self: GCHandle) -> bool
 
 """
 
- Target=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the object this handle represents.
+    Target = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the object this handle represents.
 
 
 
@@ -174,5 +186,3 @@ Get: Target(self: GCHandle) -> object
 Set: Target(self: GCHandle)=value
 
 """
-
-

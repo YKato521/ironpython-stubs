@@ -1,8 +1,9 @@
 class GroupBoxRenderer(object):
- """ Provides methods used to render a group box control with or without visual styles. This class cannot be inherited. """
- @staticmethod
- def DrawGroupBox(g,bounds,*__args):
-  """
+    """ Provides methods used to render a group box control with or without visual styles. This class cannot be inherited. """
+
+    @staticmethod
+    def DrawGroupBox(g, bounds, *__args):
+        """
   DrawGroupBox(g: Graphics,bounds: Rectangle,groupBoxText: str,font: Font,flags: TextFormatFlags,state: GroupBoxState)
 
    Draws a group box control in the specified state and bounds,with the specified text,font,and 
@@ -117,10 +118,11 @@ class GroupBoxRenderer(object):
 
     state of the group box.
   """
-  pass
- @staticmethod
- def DrawParentBackground(g,bounds,childControl):
-  """
+        pass
+
+    @staticmethod
+    def DrawParentBackground(g, bounds, childControl):
+        """
   DrawParentBackground(g: Graphics,bounds: Rectangle,childControl: Control)
 
    Draws the background of a control's parent in the specified area.
@@ -135,10 +137,11 @@ class GroupBoxRenderer(object):
 
    childControl: The control whose parent's background will be drawn.
   """
-  pass
- @staticmethod
- def IsBackgroundPartiallyTransparent(state):
-  """
+        pass
+
+    @staticmethod
+    def IsBackgroundPartiallyTransparent(state):
+        """
   IsBackgroundPartiallyTransparent(state: GroupBoxState) -> bool
 
   
@@ -161,6 +164,6 @@ class GroupBoxRenderer(object):
 
     false.
   """
-  pass
- RenderMatchingApplicationState=True
+        pass
 
+    RenderMatchingApplicationState = True

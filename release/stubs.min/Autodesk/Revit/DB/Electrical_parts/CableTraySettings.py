@@ -1,14 +1,17 @@
-class CableTraySettings(Element,IDisposable):
- """ The cable tray settings. """
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- @staticmethod
- def GetCableTraySettings(document):
-  """
+class CableTraySettings(Element, IDisposable):
+    """ The cable tray settings. """
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    @staticmethod
+    def GetCableTraySettings(document):
+        """
   GetCableTraySettings(document: Document) -> CableTraySettings
 
   
@@ -21,24 +24,32 @@ class CableTraySettings(Element,IDisposable):
 
    Returns: The cable tray settings of the project.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- ConnectorSeparator=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The cable tray connector separator string.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    ConnectorSeparator = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The cable tray connector separator string.
 
 
 
@@ -50,8 +61,10 @@ Set: ConnectorSeparator(self: CableTraySettings)=value
 
 """
 
- FittingAnnotationSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The value of fitting annotation size.
+    FittingAnnotationSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The value of fitting annotation size.
 
 
 
@@ -63,8 +76,10 @@ Set: FittingAnnotationSize(self: CableTraySettings)=value
 
 """
 
- RiseDropAnnotationSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The rise drop annotation size.
+    RiseDropAnnotationSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The rise drop annotation size.
 
 
 
@@ -76,8 +91,10 @@ Set: RiseDropAnnotationSize(self: CableTraySettings)=value
 
 """
 
- SizeSeparator=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The cable tray size separator string.
+    SizeSeparator = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The cable tray size separator string.
 
 
 
@@ -89,8 +106,10 @@ Set: SizeSeparator(self: CableTraySettings)=value
 
 """
 
- SizeSuffix=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The cable tray size suffix string.
+    SizeSuffix = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The cable tray size suffix string.
 
 
 
@@ -102,8 +121,10 @@ Set: SizeSuffix(self: CableTraySettings)=value
 
 """
 
- UseAnnotationScaleForSingleLineFittings=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether use annotation scale for single line fittings or not.
+    UseAnnotationScaleForSingleLineFittings = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates whether use annotation scale for single line fittings or not.
 
 
 
@@ -114,5 +135,3 @@ Get: UseAnnotationScaleForSingleLineFittings(self: CableTraySettings) -> bool
 Set: UseAnnotationScaleForSingleLineFittings(self: CableTraySettings)=value
 
 """
-
-

@@ -1,13 +1,14 @@
-class PointAnimationUsingPath(PointAnimationBase,ISealable,IAnimatable,IResource):
- """
+class PointAnimationUsingPath(PointAnimationBase, ISealable, IAnimatable, IResource):
+    """
  Animates the value of a System.Windows.Point property between two or more target values using a System.Windows.Media.PathGeometry to specify those values. This animation can be used to move a visual object along a path.
 
  
 
  PointAnimationUsingPath()
  """
- def AllocateClock(self,*args):
-  """
+
+    def AllocateClock(self, *args):
+        """
   AllocateClock(self: AnimationTimeline) -> Clock
 
   
@@ -20,9 +21,10 @@ class PointAnimationUsingPath(PointAnimationBase,ISealable,IAnimatable,IResource
 
    Returns: A clock for this System.Windows.Media.Animation.AnimationTimeline.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: PointAnimationUsingPath) -> PointAnimationUsingPath
 
   
@@ -41,9 +43,10 @@ class PointAnimationUsingPath(PointAnimationBase,ISealable,IAnimatable,IResource
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCore(self,*args):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """
   CloneCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a clone (deep copy) of the specified System.Windows.Freezable using base 
@@ -56,9 +59,10 @@ class PointAnimationUsingPath(PointAnimationBase,ISealable,IAnimatable,IResource
 
    sourceFreezable: The object to clone.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """
   CloneCurrentValueCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a modifiable clone (deep copy) of the specified System.Windows.Freezable 
@@ -71,9 +75,10 @@ class PointAnimationUsingPath(PointAnimationBase,ISealable,IAnimatable,IResource
 
    sourceFreezable: The System.Windows.Freezable to be cloned.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -82,9 +87,10 @@ class PointAnimationUsingPath(PointAnimationBase,ISealable,IAnimatable,IResource
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """
   CreateInstanceCore(self: PointAnimationUsingPath) -> Freezable
 
   
@@ -93,9 +99,10 @@ class PointAnimationUsingPath(PointAnimationBase,ISealable,IAnimatable,IResource
 
    Returns: The new instance.
   """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: Timeline,isChecking: bool) -> bool
 
   
@@ -118,9 +125,10 @@ class PointAnimationUsingPath(PointAnimationBase,ISealable,IAnimatable,IResource
 
     having begun to change the frozen status of this object.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """
   GetAsFrozenCore(self: Timeline,sourceFreezable: Freezable)
 
    Makes this instance a clone of the specified System.Windows.Media.Animation.Timeline object.
@@ -129,9 +137,10 @@ class PointAnimationUsingPath(PointAnimationBase,ISealable,IAnimatable,IResource
 
    sourceFreezable: The System.Windows.Media.Animation.Timeline instance to clone.
   """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """
   GetCurrentValueAsFrozenCore(self: Timeline,sourceFreezable: Freezable)
 
    Makes this instance a frozen clone of the specified System.Windows.Media.Animation.Timeline. 
@@ -144,9 +153,10 @@ class PointAnimationUsingPath(PointAnimationBase,ISealable,IAnimatable,IResource
 
    sourceFreezable: The System.Windows.Media.Animation.Timeline to copy and freeze.
   """
-  pass
- def GetCurrentValueCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueCore(self, *args):
+        """
   GetCurrentValueCore(self: PointAnimationUsingPath,defaultOriginValue: Point,defaultDestinationValue: Point,animationClock: AnimationClock) -> Point
 
   
@@ -181,9 +191,10 @@ class PointAnimationUsingPath(PointAnimationBase,ISealable,IAnimatable,IResource
 
    Returns: The calculated value of the property,as determined by the current animation.
   """
-  pass
- def GetNaturalDuration(self,*args):
-  """
+        pass
+
+    def GetNaturalDuration(self, *args):
+        """
   GetNaturalDuration(self: Timeline,clock: Clock) -> Duration
 
   
@@ -202,9 +213,10 @@ class PointAnimationUsingPath(PointAnimationBase,ISealable,IAnimatable,IResource
 
     System.Windows.Duration.Automatic if the natural duration is unknown.
   """
-  pass
- def GetNaturalDurationCore(self,*args):
-  """
+        pass
+
+    def GetNaturalDurationCore(self, *args):
+        """
   GetNaturalDurationCore(self: AnimationTimeline,clock: Clock) -> Duration
 
   
@@ -223,16 +235,18 @@ class PointAnimationUsingPath(PointAnimationBase,ISealable,IAnimatable,IResource
 
     second.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: PointAnimationUsingPath)
 
    Called when this System.Windows.Media.Animation.PointAnimationUsingPath is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -263,9 +277,10 @@ class PointAnimationUsingPath(PointAnimationBase,ISealable,IAnimatable,IResource
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -282,9 +297,10 @@ class PointAnimationUsingPath(PointAnimationBase,ISealable,IAnimatable,IResource
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -293,9 +309,10 @@ class PointAnimationUsingPath(PointAnimationBase,ISealable,IAnimatable,IResource
 
     members that are not dependency properties.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -312,9 +329,10 @@ class PointAnimationUsingPath(PointAnimationBase,ISealable,IAnimatable,IResource
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -325,9 +343,10 @@ class PointAnimationUsingPath(PointAnimationBase,ISealable,IAnimatable,IResource
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -336,12 +355,16 @@ class PointAnimationUsingPath(PointAnimationBase,ISealable,IAnimatable,IResource
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- IsAdditive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that specifies whether the animation's output value is added to the base value of the property being animated.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    IsAdditive = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that specifies whether the animation's output value is added to the base value of the property being animated.
 
 
 
@@ -353,8 +376,10 @@ Set: IsAdditive(self: PointAnimationUsingPath)=value
 
 """
 
- IsCumulative=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that specifies whether the animation's value accumulates when it repeats.
+    IsCumulative = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that specifies whether the animation's value accumulates when it repeats.
 
 
 
@@ -366,8 +391,10 @@ Set: IsCumulative(self: PointAnimationUsingPath)=value
 
 """
 
- PathGeometry=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies the geometry used to generate this animation's output values.
+    PathGeometry = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies the geometry used to generate this animation's output values.
 
 
 
@@ -379,6 +406,4 @@ Set: PathGeometry(self: PointAnimationUsingPath)=value
 
 """
 
-
- PathGeometryProperty=None
-
+    PathGeometryProperty = None

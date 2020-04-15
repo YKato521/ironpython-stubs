@@ -1,13 +1,14 @@
 class NullableConverter(TypeConverter):
- """
+    """
  Provides automatic conversion between a nullable type and its underlying primitive type.
 
  
 
  NullableConverter(type: Type)
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: NullableConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -26,9 +27,10 @@ class NullableConverter(TypeConverter):
 
    Returns: true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: NullableConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -47,9 +49,10 @@ class NullableConverter(TypeConverter):
 
    Returns: true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: NullableConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -70,9 +73,10 @@ class NullableConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: NullableConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -95,9 +99,10 @@ class NullableConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def CreateInstance(self,*__args):
-  """
+        pass
+
+    def CreateInstance(self, *__args):
+        """
   CreateInstance(self: NullableConverter,context: ITypeDescriptorContext,propertyValues: IDictionary) -> object
 
   
@@ -110,9 +115,10 @@ class NullableConverter(TypeConverter):
 
     cannot be created. This method always returns null.
   """
-  pass
- def GetCreateInstanceSupported(self,context=None):
-  """
+        pass
+
+    def GetCreateInstanceSupported(self, context=None):
+        """
   GetCreateInstanceSupported(self: NullableConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -125,9 +131,10 @@ class NullableConverter(TypeConverter):
 
     new value; otherwise,false.
   """
-  pass
- def GetProperties(self,*__args):
-  """
+        pass
+
+    def GetProperties(self, *__args):
+        """
   GetProperties(self: NullableConverter,context: ITypeDescriptorContext,value: object,attributes: Array[Attribute]) -> PropertyDescriptorCollection
 
   
@@ -142,9 +149,10 @@ class NullableConverter(TypeConverter):
 
     this data type,or null if there are no properties.
   """
-  pass
- def GetPropertiesSupported(self,context=None):
-  """
+        pass
+
+    def GetPropertiesSupported(self, context=None):
+        """
   GetPropertiesSupported(self: NullableConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -155,9 +163,10 @@ class NullableConverter(TypeConverter):
 
     find the properties of this object; otherwise,false.
   """
-  pass
- def GetStandardValues(self,context=None):
-  """
+        pass
+
+    def GetStandardValues(self, context=None):
+        """
   GetStandardValues(self: NullableConverter,context: ITypeDescriptorContext) -> StandardValuesCollection
 
   
@@ -174,9 +183,10 @@ class NullableConverter(TypeConverter):
 
     valid values,or null if the data type does not support a standard set of values.
   """
-  pass
- def GetStandardValuesExclusive(self,context=None):
-  """
+        pass
+
+    def GetStandardValuesExclusive(self, context=None):
+        """
   GetStandardValuesExclusive(self: NullableConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -189,9 +199,10 @@ class NullableConverter(TypeConverter):
 
     false if other values are possible.
   """
-  pass
- def GetStandardValuesSupported(self,context=None):
-  """
+        pass
+
+    def GetStandardValuesSupported(self, context=None):
+        """
   GetStandardValuesSupported(self: NullableConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -202,9 +213,10 @@ class NullableConverter(TypeConverter):
 
     set of values the object supports; otherwise,false.
   """
-  pass
- def IsValid(self,*__args):
-  """
+        pass
+
+    def IsValid(self, *__args):
+        """
   IsValid(self: NullableConverter,context: ITypeDescriptorContext,value: object) -> bool
 
   
@@ -213,13 +225,17 @@ class NullableConverter(TypeConverter):
 
    value: The System.Object to test for validity.
   """
-  pass
- @staticmethod
- def __new__(self,type):
-  """ __new__(cls: type,type: Type) """
-  pass
- NullableType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the nullable type.
+        pass
+
+    @staticmethod
+    def __new__(self, type):
+        """ __new__(cls: type,type: Type) """
+        pass
+
+    NullableType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the nullable type.
 
 
 
@@ -229,8 +245,10 @@ Get: NullableType(self: NullableConverter) -> Type
 
 """
 
- UnderlyingType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the underlying type.
+    UnderlyingType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the underlying type.
 
 
 
@@ -240,8 +258,10 @@ Get: UnderlyingType(self: NullableConverter) -> Type
 
 """
 
- UnderlyingTypeConverter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the underlying type converter.
+    UnderlyingTypeConverter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the underlying type converter.
 
 
 
@@ -250,5 +270,3 @@ Get: UnderlyingTypeConverter(self: NullableConverter) -> TypeConverter
 
 
 """
-
-

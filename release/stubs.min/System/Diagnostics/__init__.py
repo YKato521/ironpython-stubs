@@ -28,13 +28,17 @@ from __init___parts.DebuggerBrowsableState import DebuggerBrowsableState
 from __init___parts.DebuggerDisplayAttribute import DebuggerDisplayAttribute
 from __init___parts.DebuggerHiddenAttribute import DebuggerHiddenAttribute
 from __init___parts.DebuggerNonUserCodeAttribute import DebuggerNonUserCodeAttribute
-from __init___parts.DebuggerStepperBoundaryAttribute import DebuggerStepperBoundaryAttribute
+from __init___parts.DebuggerStepperBoundaryAttribute import (
+    DebuggerStepperBoundaryAttribute,
+)
 from __init___parts.DebuggerStepThroughAttribute import DebuggerStepThroughAttribute
 from __init___parts.DebuggerTypeProxyAttribute import DebuggerTypeProxyAttribute
 from __init___parts.DebuggerVisualizerAttribute import DebuggerVisualizerAttribute
 from __init___parts.DefaultTraceListener import DefaultTraceListener
 from __init___parts.DelimitedListTraceListener import DelimitedListTraceListener
-from __init___parts.DiagnosticsConfigurationHandler import DiagnosticsConfigurationHandler
+from __init___parts.DiagnosticsConfigurationHandler import (
+    DiagnosticsConfigurationHandler,
+)
 from __init___parts.EntryWrittenEventArgs import EntryWrittenEventArgs
 from __init___parts.EntryWrittenEventHandler import EntryWrittenEventHandler
 from __init___parts.EventInstance import EventInstance
@@ -46,7 +50,9 @@ from __init___parts.EventLogPermission import EventLogPermission
 from __init___parts.EventLogPermissionAccess import EventLogPermissionAccess
 from __init___parts.EventLogPermissionAttribute import EventLogPermissionAttribute
 from __init___parts.EventLogPermissionEntry import EventLogPermissionEntry
-from __init___parts.EventLogPermissionEntryCollection import EventLogPermissionEntryCollection
+from __init___parts.EventLogPermissionEntryCollection import (
+    EventLogPermissionEntryCollection,
+)
 from __init___parts.EventLogTraceListener import EventLogTraceListener
 from __init___parts.EventSourceCreationData import EventSourceCreationData
 from __init___parts.TraceFilter import TraceFilter
@@ -55,19 +61,31 @@ from __init___parts.FileVersionInfo import FileVersionInfo
 from __init___parts.ICollectData import ICollectData
 from __init___parts.InstanceData import InstanceData
 from __init___parts.InstanceDataCollection import InstanceDataCollection
-from __init___parts.InstanceDataCollectionCollection import InstanceDataCollectionCollection
+from __init___parts.InstanceDataCollectionCollection import (
+    InstanceDataCollectionCollection,
+)
 from __init___parts.MonitoringDescriptionAttribute import MonitoringDescriptionAttribute
 from __init___parts.OverflowAction import OverflowAction
 from __init___parts.PerformanceCounter import PerformanceCounter
 from __init___parts.PerformanceCounterCategory import PerformanceCounterCategory
 from __init___parts.PerformanceCounterCategoryType import PerformanceCounterCategoryType
-from __init___parts.PerformanceCounterInstanceLifetime import PerformanceCounterInstanceLifetime
+from __init___parts.PerformanceCounterInstanceLifetime import (
+    PerformanceCounterInstanceLifetime,
+)
 from __init___parts.PerformanceCounterManager import PerformanceCounterManager
 from __init___parts.PerformanceCounterPermission import PerformanceCounterPermission
-from __init___parts.PerformanceCounterPermissionAccess import PerformanceCounterPermissionAccess
-from __init___parts.PerformanceCounterPermissionAttribute import PerformanceCounterPermissionAttribute
-from __init___parts.PerformanceCounterPermissionEntry import PerformanceCounterPermissionEntry
-from __init___parts.PerformanceCounterPermissionEntryCollection import PerformanceCounterPermissionEntryCollection
+from __init___parts.PerformanceCounterPermissionAccess import (
+    PerformanceCounterPermissionAccess,
+)
+from __init___parts.PerformanceCounterPermissionAttribute import (
+    PerformanceCounterPermissionAttribute,
+)
+from __init___parts.PerformanceCounterPermissionEntry import (
+    PerformanceCounterPermissionEntry,
+)
+from __init___parts.PerformanceCounterPermissionEntryCollection import (
+    PerformanceCounterPermissionEntryCollection,
+)
 from __init___parts.PerformanceCounterType import PerformanceCounterType
 from __init___parts.Process import Process
 from __init___parts.ProcessModule import ProcessModule

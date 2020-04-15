@@ -1,5 +1,5 @@
-class Int32Animation(Int32AnimationBase,ISealable,IAnimatable,IResource):
- """
+class Int32Animation(Int32AnimationBase, ISealable, IAnimatable, IResource):
+    """
  Animates the value of an  System.Int32 property between two target values using   linear interpolation over a specified System.Windows.Media.Animation.Timeline.Duration.
 
  
@@ -14,8 +14,9 @@ class Int32Animation(Int32AnimationBase,ISealable,IAnimatable,IResource):
 
  Int32Animation(fromValue: int,toValue: int,duration: Duration,fillBehavior: FillBehavior)
  """
- def AllocateClock(self,*args):
-  """
+
+    def AllocateClock(self, *args):
+        """
   AllocateClock(self: AnimationTimeline) -> Clock
 
   
@@ -28,9 +29,10 @@ class Int32Animation(Int32AnimationBase,ISealable,IAnimatable,IResource):
 
    Returns: A clock for this System.Windows.Media.Animation.AnimationTimeline.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: Int32Animation) -> Int32Animation
 
   
@@ -49,9 +51,10 @@ class Int32Animation(Int32AnimationBase,ISealable,IAnimatable,IResource):
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCore(self,*args):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """
   CloneCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a clone (deep copy) of the specified System.Windows.Freezable using base 
@@ -64,9 +67,10 @@ class Int32Animation(Int32AnimationBase,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The object to clone.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """
   CloneCurrentValueCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a modifiable clone (deep copy) of the specified System.Windows.Freezable 
@@ -79,9 +83,10 @@ class Int32Animation(Int32AnimationBase,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Freezable to be cloned.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -90,9 +95,10 @@ class Int32Animation(Int32AnimationBase,ISealable,IAnimatable,IResource):
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """
   CreateInstanceCore(self: Int32Animation) -> Freezable
 
   
@@ -101,9 +107,10 @@ class Int32Animation(Int32AnimationBase,ISealable,IAnimatable,IResource):
 
    Returns: The new instance.
   """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: Timeline,isChecking: bool) -> bool
 
   
@@ -126,9 +133,10 @@ class Int32Animation(Int32AnimationBase,ISealable,IAnimatable,IResource):
 
     having begun to change the frozen status of this object.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """
   GetAsFrozenCore(self: Timeline,sourceFreezable: Freezable)
 
    Makes this instance a clone of the specified System.Windows.Media.Animation.Timeline object.
@@ -137,9 +145,10 @@ class Int32Animation(Int32AnimationBase,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Media.Animation.Timeline instance to clone.
   """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """
   GetCurrentValueAsFrozenCore(self: Timeline,sourceFreezable: Freezable)
 
    Makes this instance a frozen clone of the specified System.Windows.Media.Animation.Timeline. 
@@ -152,9 +161,10 @@ class Int32Animation(Int32AnimationBase,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Media.Animation.Timeline to copy and freeze.
   """
-  pass
- def GetCurrentValueCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueCore(self, *args):
+        """
   GetCurrentValueCore(self: Int32Animation,defaultOriginValue: int,defaultDestinationValue: int,animationClock: AnimationClock) -> int
 
   
@@ -189,9 +199,10 @@ class Int32Animation(Int32AnimationBase,ISealable,IAnimatable,IResource):
 
    Returns: The calculated value of the property,as determined by the current animation.
   """
-  pass
- def GetNaturalDuration(self,*args):
-  """
+        pass
+
+    def GetNaturalDuration(self, *args):
+        """
   GetNaturalDuration(self: Timeline,clock: Clock) -> Duration
 
   
@@ -210,9 +221,10 @@ class Int32Animation(Int32AnimationBase,ISealable,IAnimatable,IResource):
 
     System.Windows.Duration.Automatic if the natural duration is unknown.
   """
-  pass
- def GetNaturalDurationCore(self,*args):
-  """
+        pass
+
+    def GetNaturalDurationCore(self, *args):
+        """
   GetNaturalDurationCore(self: AnimationTimeline,clock: Clock) -> Duration
 
   
@@ -231,16 +243,18 @@ class Int32Animation(Int32AnimationBase,ISealable,IAnimatable,IResource):
 
     second.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: Freezable)
 
    Called when the current System.Windows.Freezable object is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -271,9 +285,10 @@ class Int32Animation(Int32AnimationBase,ISealable,IAnimatable,IResource):
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -290,9 +305,10 @@ class Int32Animation(Int32AnimationBase,ISealable,IAnimatable,IResource):
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -301,9 +317,10 @@ class Int32Animation(Int32AnimationBase,ISealable,IAnimatable,IResource):
 
     members that are not dependency properties.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -320,9 +337,10 @@ class Int32Animation(Int32AnimationBase,ISealable,IAnimatable,IResource):
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -333,9 +351,10 @@ class Int32Animation(Int32AnimationBase,ISealable,IAnimatable,IResource):
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -344,13 +363,15 @@ class Int32Animation(Int32AnimationBase,ISealable,IAnimatable,IResource):
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,toValue: int,duration: Duration)
@@ -361,9 +382,10 @@ class Int32Animation(Int32AnimationBase,ISealable,IAnimatable,IResource):
 
   __new__(cls: type,fromValue: int,toValue: int,duration: Duration,fillBehavior: FillBehavior)
   """
-  pass
- By=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the total amount by which the animation changes its starting value.
+        pass
+
+    By = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the total amount by which the animation changes its starting value.
 
 
 
@@ -375,8 +397,10 @@ Set: By(self: Int32Animation)=value
 
 """
 
- EasingFunction=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the easing function applied to this animation.
+    EasingFunction = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the easing function applied to this animation.
 
 
 
@@ -388,8 +412,8 @@ Set: EasingFunction(self: Int32Animation)=value
 
 """
 
- From=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the animation's starting value.
+    From = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the animation's starting value.
 
 
 
@@ -401,8 +425,10 @@ Set: From(self: Int32Animation)=value
 
 """
 
- IsAdditive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether the target property's current value should be added to this animation's starting value.
+    IsAdditive = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether the target property's current value should be added to this animation's starting value.
 
 
 
@@ -414,8 +440,10 @@ Set: IsAdditive(self: Int32Animation)=value
 
 """
 
- IsCumulative=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that specifies whether the animation's value accumulates when it repeats.
+    IsCumulative = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that specifies whether the animation's value accumulates when it repeats.
 
 
 
@@ -427,8 +455,8 @@ Set: IsCumulative(self: Int32Animation)=value
 
 """
 
- To=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the animation's ending value.
+    To = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the animation's ending value.
 
 
 
@@ -440,9 +468,7 @@ Set: To(self: Int32Animation)=value
 
 """
 
-
- ByProperty=None
- EasingFunctionProperty=None
- FromProperty=None
- ToProperty=None
-
+    ByProperty = None
+    EasingFunctionProperty = None
+    FromProperty = None
+    ToProperty = None

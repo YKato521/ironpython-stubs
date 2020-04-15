@@ -8,8 +8,10 @@
 # no functions
 # classes
 
+
 class EventHandlerProxy(object):
     """ EventHandlerProxy() """
+
     def OnApplicationDocumentClosed(self, sender, args):
         """ OnApplicationDocumentClosed(self: EventHandlerProxy, sender: object, args: DocumentClosedEventArgs) """
         pass
@@ -35,5 +37,3 @@ class EventHandlerProxy(object):
     DocumentOpened = None
     ViewActivated = None
     ViewActivating = None
-
-

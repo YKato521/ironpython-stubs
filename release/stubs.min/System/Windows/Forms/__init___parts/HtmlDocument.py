@@ -1,7 +1,8 @@
 class HtmlDocument(object):
- """ Provides top-level programmatic access to an HTML document hosted by the System.Windows.Forms.WebBrowser control. """
- def AttachEventHandler(self,eventName,eventHandler):
-  """
+    """ Provides top-level programmatic access to an HTML document hosted by the System.Windows.Forms.WebBrowser control. """
+
+    def AttachEventHandler(self, eventName, eventHandler):
+        """
   AttachEventHandler(self: HtmlDocument,eventName: str,eventHandler: EventHandler)
 
    Adds an event handler for the named HTML DOM event.
@@ -12,9 +13,10 @@ class HtmlDocument(object):
 
    eventHandler: The managed code that handles the event.
   """
-  pass
- def CreateElement(self,elementTag):
-  """
+        pass
+
+    def CreateElement(self, elementTag):
+        """
   CreateElement(self: HtmlDocument,elementTag: str) -> HtmlElement
 
   
@@ -27,9 +29,10 @@ class HtmlDocument(object):
 
    Returns: A new element of the specified tag type.
   """
-  pass
- def DetachEventHandler(self,eventName,eventHandler):
-  """
+        pass
+
+    def DetachEventHandler(self, eventName, eventHandler):
+        """
   DetachEventHandler(self: HtmlDocument,eventName: str,eventHandler: EventHandler)
 
    Removes an event handler from a named event on the HTML DOM.
@@ -40,9 +43,10 @@ class HtmlDocument(object):
 
    eventHandler: The managed code that handles the event.
   """
-  pass
- def Equals(self,obj):
-  """
+        pass
+
+    def Equals(self, obj):
+        """
   Equals(self: HtmlDocument,obj: object) -> bool
 
   
@@ -51,9 +55,10 @@ class HtmlDocument(object):
 
    Returns: true if the specified System.Object is equal to the current System.Object; otherwise,false.
   """
-  pass
- def ExecCommand(self,command,showUI,value):
-  """
+        pass
+
+    def ExecCommand(self, command, showUI, value):
+        """
   ExecCommand(self: HtmlDocument,command: str,showUI: bool,value: object)
 
    Executes the specified command against the document.
@@ -66,16 +71,18 @@ class HtmlDocument(object):
 
    value: The value to assign using the command. Not applicable for all commands.
   """
-  pass
- def Focus(self):
-  """
+        pass
+
+    def Focus(self):
+        """
   Focus(self: HtmlDocument)
 
    Sets user input focus on the current document.
   """
-  pass
- def GetElementById(self,id):
-  """
+        pass
+
+    def GetElementById(self, id):
+        """
   GetElementById(self: HtmlDocument,id: str) -> HtmlElement
 
   
@@ -94,9 +101,10 @@ class HtmlDocument(object):
 
     cannot be found.
   """
-  pass
- def GetElementFromPoint(self,point):
-  """
+        pass
+
+    def GetElementFromPoint(self, point):
+        """
   GetElementFromPoint(self: HtmlDocument,point: Point) -> HtmlElement
 
   
@@ -109,9 +117,10 @@ class HtmlDocument(object):
 
    Returns: The System.Windows.Forms.HtmlElement at the specified screen location in the document.
   """
-  pass
- def GetElementsByTagName(self,tagName):
-  """
+        pass
+
+    def GetElementsByTagName(self, tagName):
+        """
   GetElementsByTagName(self: HtmlDocument,tagName: str) -> HtmlElementCollection
 
   
@@ -124,16 +133,18 @@ class HtmlDocument(object):
 
    Returns: The collection of elements who tag name is equal to the tagName argument.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: HtmlDocument) -> int
 
    Returns: A hash code for the current System.Object.
   """
-  pass
- def InvokeScript(self,scriptName,args=None):
-  """
+        pass
+
+    def InvokeScript(self, scriptName, args=None):
+        """
   InvokeScript(self: HtmlDocument,scriptName: str) -> object
 
   
@@ -160,9 +171,10 @@ class HtmlDocument(object):
 
    Returns: The object returned by the Active Scripting call.
   """
-  pass
- def OpenNew(self,replaceInHistory):
-  """
+        pass
+
+    def OpenNew(self, replaceInHistory):
+        """
   OpenNew(self: HtmlDocument,replaceInHistory: bool) -> HtmlDocument
 
   
@@ -183,9 +195,10 @@ class HtmlDocument(object):
 
    Returns: A new document for writing.
   """
-  pass
- def Write(self,text):
-  """
+        pass
+
+    def Write(self, text):
+        """
   Write(self: HtmlDocument,text: str)
 
    Writes a new HTML page.
@@ -194,14 +207,19 @@ class HtmlDocument(object):
 
    text: The HTML text to write into the document.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __ne__(self,*args):
-  pass
- ActiveElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides the System.Windows.Forms.HtmlElement which currently has user input focus.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    ActiveElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides the System.Windows.Forms.HtmlElement which currently has user input focus.
 
 
 
@@ -211,8 +229,10 @@ Get: ActiveElement(self: HtmlDocument) -> HtmlElement
 
 """
 
- ActiveLinkColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Drawing.Color of a hyperlink when clicked by a user.
+    ActiveLinkColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Drawing.Color of a hyperlink when clicked by a user.
 
 
 
@@ -224,8 +244,8 @@ Set: ActiveLinkColor(self: HtmlDocument)=value
 
 """
 
- All=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an instance of System.Windows.Forms.HtmlElementCollection,which stores all System.Windows.Forms.HtmlElement objects for the document.
+    All = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an instance of System.Windows.Forms.HtmlElementCollection,which stores all System.Windows.Forms.HtmlElement objects for the document.
 
 
 
@@ -235,8 +255,8 @@ Get: All(self: HtmlDocument) -> HtmlElementCollection
 
 """
 
- BackColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the background color of the HTML document.
+    BackColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the background color of the HTML document.
 
 
 
@@ -248,8 +268,8 @@ Set: BackColor(self: HtmlDocument)=value
 
 """
 
- Body=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Forms.HtmlElement for the BODY tag.
+    Body = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the System.Windows.Forms.HtmlElement for the BODY tag.
 
 
 
@@ -259,8 +279,8 @@ Get: Body(self: HtmlDocument) -> HtmlElement
 
 """
 
- Cookie=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the HTTP cookies associated with this document.
+    Cookie = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the HTTP cookies associated with this document.
 
 
 
@@ -272,8 +292,10 @@ Set: Cookie(self: HtmlDocument)=value
 
 """
 
- DefaultEncoding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the encoding used by default for the current document.
+    DefaultEncoding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the encoding used by default for the current document.
 
 
 
@@ -283,8 +305,8 @@ Get: DefaultEncoding(self: HtmlDocument) -> str
 
 """
 
- Domain=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the string describing the domain of this document for security purposes.
+    Domain = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the string describing the domain of this document for security purposes.
 
 
 
@@ -296,8 +318,10 @@ Set: Domain(self: HtmlDocument)=value
 
 """
 
- DomDocument=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the unmanaged interface pointer for this System.Windows.Forms.HtmlDocument.
+    DomDocument = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the unmanaged interface pointer for this System.Windows.Forms.HtmlDocument.
 
 
 
@@ -307,8 +331,8 @@ Get: DomDocument(self: HtmlDocument) -> object
 
 """
 
- Encoding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the character encoding for this document.
+    Encoding = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the character encoding for this document.
 
 
 
@@ -320,8 +344,8 @@ Set: Encoding(self: HtmlDocument)=value
 
 """
 
- Focused=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the document has user input focus.
+    Focused = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the document has user input focus.
 
 
 
@@ -331,8 +355,8 @@ Get: Focused(self: HtmlDocument) -> bool
 
 """
 
- ForeColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the text color for the document.
+    ForeColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the text color for the document.
 
 
 
@@ -344,8 +368,8 @@ Set: ForeColor(self: HtmlDocument)=value
 
 """
 
- Forms=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of all of the <FORM> elements in the document.
+    Forms = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a collection of all of the <FORM> elements in the document.
 
 
 
@@ -355,8 +379,8 @@ Get: Forms(self: HtmlDocument) -> HtmlElementCollection
 
 """
 
- Images=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of all image tags in the document.
+    Images = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a collection of all image tags in the document.
 
 
 
@@ -366,8 +390,8 @@ Get: Images(self: HtmlDocument) -> HtmlElementCollection
 
 """
 
- LinkColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the color of hyperlinks.
+    LinkColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the color of hyperlinks.
 
 
 
@@ -379,8 +403,8 @@ Set: LinkColor(self: HtmlDocument)=value
 
 """
 
- Links=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a list of all the hyperlinks within this HTML document.
+    Links = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a list of all the hyperlinks within this HTML document.
 
 
 
@@ -390,8 +414,10 @@ Get: Links(self: HtmlDocument) -> HtmlElementCollection
 
 """
 
- RightToLeft=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the direction of text in the current document.
+    RightToLeft = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the direction of text in the current document.
 
 
 
@@ -403,8 +429,8 @@ Set: RightToLeft(self: HtmlDocument)=value
 
 """
 
- Title=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the text value of the <TITLE> tag in the current HTML document.
+    Title = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the text value of the <TITLE> tag in the current HTML document.
 
 
 
@@ -416,8 +442,8 @@ Set: Title(self: HtmlDocument)=value
 
 """
 
- Url=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the URL describing the location of this document.
+    Url = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the URL describing the location of this document.
 
 
 
@@ -427,8 +453,10 @@ Get: Url(self: HtmlDocument) -> Uri
 
 """
 
- VisitedLinkColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Color of links to HTML pages that the user has already visited.
+    VisitedLinkColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the Color of links to HTML pages that the user has already visited.
 
 
 
@@ -440,8 +468,8 @@ Set: VisitedLinkColor(self: HtmlDocument)=value
 
 """
 
- Window=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Forms.HtmlWindow associated with this document.
+    Window = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the System.Windows.Forms.HtmlWindow associated with this document.
 
 
 
@@ -451,15 +479,13 @@ Get: Window(self: HtmlDocument) -> HtmlWindow
 
 """
 
-
- Click=None
- ContextMenuShowing=None
- Focusing=None
- LosingFocus=None
- MouseDown=None
- MouseLeave=None
- MouseMove=None
- MouseOver=None
- MouseUp=None
- Stop=None
-
+    Click = None
+    ContextMenuShowing = None
+    Focusing = None
+    LosingFocus = None
+    MouseDown = None
+    MouseLeave = None
+    MouseMove = None
+    MouseOver = None
+    MouseUp = None
+    Stop = None

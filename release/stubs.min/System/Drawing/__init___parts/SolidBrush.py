@@ -1,13 +1,14 @@
-class SolidBrush(Brush,ICloneable,IDisposable,ISystemColorTracker):
- """
+class SolidBrush(Brush, ICloneable, IDisposable, ISystemColorTracker):
+    """
  Defines a brush of a single color. Brushes are used to fill graphics shapes,such as rectangles,ellipses,pies,polygons,and paths. This class cannot be inherited.
 
  
 
  SolidBrush(color: Color)
  """
- def Clone(self):
-  """
+
+    def Clone(self):
+        """
   Clone(self: SolidBrush) -> object
 
   
@@ -16,12 +17,14 @@ class SolidBrush(Brush,ICloneable,IDisposable,ISystemColorTracker):
 
    Returns: The System.Drawing.SolidBrush object that this method creates.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: SolidBrush,disposing: bool) """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: SolidBrush,disposing: bool) """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -52,9 +55,10 @@ class SolidBrush(Brush,ICloneable,IDisposable,ISystemColorTracker):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def SetNativeBrush(self,*args):
-  """
+        pass
+
+    def SetNativeBrush(self, *args):
+        """
   SetNativeBrush(self: Brush,brush: IntPtr)
 
    In a derived class,sets a reference to a GDI+ brush object.
@@ -63,32 +67,37 @@ class SolidBrush(Brush,ICloneable,IDisposable,ISystemColorTracker):
 
    brush: A pointer to the GDI+ brush object.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,color):
-  """ __new__(cls: type,color: Color) """
-  pass
- Color=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the color of this System.Drawing.SolidBrush object.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, color):
+        """ __new__(cls: type,color: Color) """
+        pass
+
+    Color = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the color of this System.Drawing.SolidBrush object.
 
 
 
@@ -99,5 +108,3 @@ Get: Color(self: SolidBrush) -> Color
 Set: Color(self: SolidBrush)=value
 
 """
-
-

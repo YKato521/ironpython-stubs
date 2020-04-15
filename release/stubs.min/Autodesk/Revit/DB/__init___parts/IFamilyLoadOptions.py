@@ -1,7 +1,8 @@
 class IFamilyLoadOptions:
- """ An interface class which provide the callback for family load options. """
- def OnFamilyFound(self,familyInUse,overwriteParameterValues):
-  """
+    """ An interface class which provide the callback for family load options. """
+
+    def OnFamilyFound(self, familyInUse, overwriteParameterValues):
+        """
   OnFamilyFound(self: IFamilyLoadOptions,familyInUse: bool) -> (bool,bool)
 
   
@@ -14,9 +15,12 @@ class IFamilyLoadOptions:
 
    Returns: Return true to continue loading the family,false to cancel.
   """
-  pass
- def OnSharedFamilyFound(self,sharedFamily,familyInUse,source,overwriteParameterValues):
-  """
+        pass
+
+    def OnSharedFamilyFound(
+        self, sharedFamily, familyInUse, source, overwriteParameterValues
+    ):
+        """
   OnSharedFamilyFound(self: IFamilyLoadOptions,sharedFamily: Family,familyInUse: bool) -> (bool,FamilySource,bool)
 
   
@@ -31,7 +35,8 @@ class IFamilyLoadOptions:
 
    Returns: Return true to continue loading the family,false to cancel.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

@@ -1,20 +1,22 @@
-class Component(MarshalByRefObject,IComponent,IDisposable):
- """
+class Component(MarshalByRefObject, IComponent, IDisposable):
+    """
  Provides the base implementation for the System.ComponentModel.IComponent interface and enables object sharing between applications.
 
  
 
  Component()
  """
- def Dispose(self):
-  """
+
+    def Dispose(self):
+        """
   Dispose(self: Component)
 
    Releases all resources used by the System.ComponentModel.Component.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -33,9 +35,10 @@ class Component(MarshalByRefObject,IComponent,IDisposable):
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -66,9 +69,10 @@ class Component(MarshalByRefObject,IComponent,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: Component) -> str
 
   
@@ -83,37 +87,44 @@ class Component(MarshalByRefObject,IComponent,IDisposable):
 
     the System.ComponentModel.Component is unnamed.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- Container=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.ComponentModel.IContainer that contains the System.ComponentModel.Component.
+    Container = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the System.ComponentModel.IContainer that contains the System.ComponentModel.Component.
 
 
 
@@ -123,22 +134,24 @@ Get: Container(self: Component) -> IContainer
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- Site=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.ComponentModel.ISite of the System.ComponentModel.Component.
+    Site = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the System.ComponentModel.ISite of the System.ComponentModel.Component.
 
 
 
@@ -150,6 +163,4 @@ Set: Site(self: Component)=value
 
 """
 
-
- Disposed=None
-
+    Disposed = None

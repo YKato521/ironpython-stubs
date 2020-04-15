@@ -1,12 +1,18 @@
-class RadialArray(BaseArray,IDisposable):
- """ An object that represents an Array created along a circle arc within the Revit project. """
- @staticmethod
- def ArrayElementsWithoutAssociation(aDoc,dBView,ids,count,axis,angle,anchorMember):
-  """ ArrayElementsWithoutAssociation(aDoc: Document,dBView: View,ids: ICollection[ElementId],count: int,axis: Line,angle: float,anchorMember: ArrayAnchorMember) -> ICollection[ElementId] """
-  pass
- @staticmethod
- def ArrayElementWithoutAssociation(aDoc,dBView,id,count,axis,angle,anchorMember):
-  """
+class RadialArray(BaseArray, IDisposable):
+    """ An object that represents an Array created along a circle arc within the Revit project. """
+
+    @staticmethod
+    def ArrayElementsWithoutAssociation(
+        aDoc, dBView, ids, count, axis, angle, anchorMember
+    ):
+        """ ArrayElementsWithoutAssociation(aDoc: Document,dBView: View,ids: ICollection[ElementId],count: int,axis: Line,angle: float,anchorMember: ArrayAnchorMember) -> ICollection[ElementId] """
+        pass
+
+    @staticmethod
+    def ArrayElementWithoutAssociation(
+        aDoc, dBView, id, count, axis, angle, anchorMember
+    ):
+        """
   ArrayElementWithoutAssociation(aDoc: Document,dBView: View,id: ElementId,count: int,axis: Line,angle: float,anchorMember: ArrayAnchorMember) -> ICollection[ElementId]
 
   
@@ -53,10 +59,11 @@ class RadialArray(BaseArray,IDisposable):
 
    Returns: The elements created by the operation.
   """
-  pass
- @staticmethod
- def Create(aDoc,dBView,*__args):
-  """
+        pass
+
+    @staticmethod
+    def Create(aDoc, dBView, *__args):
+        """
   Create(aDoc: Document,dBView: View,ids: ICollection[ElementId],count: int,axis: Line,angle: float,anchorMember: ArrayAnchorMember) -> RadialArray
 
   Create(aDoc: Document,dBView: View,id: ElementId,count: int,axis: Line,angle: float,anchorMember: ArrayAnchorMember) -> RadialArray
@@ -105,15 +112,18 @@ class RadialArray(BaseArray,IDisposable):
 
    Returns: The new radial array element.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetCopiedMemberIds(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetCopiedMemberIds(self):
+        """
   GetCopiedMemberIds(self: RadialArray) -> ICollection[ElementId]
 
   
@@ -122,9 +132,10 @@ class RadialArray(BaseArray,IDisposable):
 
    Returns: The copied member Ids of the Array
   """
-  pass
- def GetOriginalMemberIds(self):
-  """
+        pass
+
+    def GetOriginalMemberIds(self):
+        """
   GetOriginalMemberIds(self: RadialArray) -> ICollection[ElementId]
 
   
@@ -133,10 +144,11 @@ class RadialArray(BaseArray,IDisposable):
 
    Returns: The original member Ids of the Array
   """
-  pass
- @staticmethod
- def IsValidArraySize(count):
-  """
+        pass
+
+    @staticmethod
+    def IsValidArraySize(count):
+        """
   IsValidArraySize(count: int) -> bool
 
   
@@ -149,24 +161,32 @@ class RadialArray(BaseArray,IDisposable):
 
    Returns: True if the input count is between 3 and 200,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- NumMembers=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Retrieves or changes the number of the arrayed members.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    NumMembers = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Retrieves or changes the number of the arrayed members.
 
 
 
@@ -177,5 +197,3 @@ Get: NumMembers(self: RadialArray) -> int
 Set: NumMembers(self: RadialArray)=value
 
 """
-
-

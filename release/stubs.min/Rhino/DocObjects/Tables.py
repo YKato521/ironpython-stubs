@@ -8,10 +8,14 @@
 # no functions
 # classes
 
-class BitmapTable(object,IEnumerable[BitmapEntry],IEnumerable,IRhinoTable[BitmapEntry]):
- """ Stores the list of bitmaps in a Rhino document. """
- def AddBitmap(self,bitmapFilename,replaceExisting):
-  """
+
+class BitmapTable(
+    object, IEnumerable[BitmapEntry], IEnumerable, IRhinoTable[BitmapEntry]
+):
+    """ Stores the list of bitmaps in a Rhino document. """
+
+    def AddBitmap(self, bitmapFilename, replaceExisting):
+        """
   AddBitmap(self: BitmapTable,bitmapFilename: str,replaceExisting: bool) -> int
 
   
@@ -34,9 +38,10 @@ class BitmapTable(object,IEnumerable[BitmapEntry],IEnumerable,IRhinoTable[Bitmap
 
    Returns: index of new bitmap in table on success. -1 on error.
   """
-  pass
- def DeleteBitmap(self,bitmapFilename):
-  """
+        pass
+
+    def DeleteBitmap(self, bitmapFilename):
+        """
   DeleteBitmap(self: BitmapTable,bitmapFilename: str) -> bool
 
   
@@ -53,9 +58,10 @@ class BitmapTable(object,IEnumerable[BitmapEntry],IEnumerable,IRhinoTable[Bitmap
 
     bitmap or because it bitmap contains active geometry.
   """
-  pass
- def ExportToFile(self,index,path):
-  """
+        pass
+
+    def ExportToFile(self, index, path):
+        """
   ExportToFile(self: BitmapTable,index: int,path: str) -> bool
 
   
@@ -70,9 +76,10 @@ class BitmapTable(object,IEnumerable[BitmapEntry],IEnumerable,IRhinoTable[Bitmap
 
    Returns: true if successful.
   """
-  pass
- def ExportToFiles(self,directoryPath,overwrite):
-  """
+        pass
+
+    def ExportToFiles(self, directoryPath, overwrite):
+        """
   ExportToFiles(self: BitmapTable,directoryPath: str,overwrite: int) -> int
 
   
@@ -93,9 +100,10 @@ class BitmapTable(object,IEnumerable[BitmapEntry],IEnumerable,IRhinoTable[Bitmap
 
    Returns: Number of bitmaps written.
   """
-  pass
- def Find(self,name,createFile,fileName):
-  """
+        pass
+
+    def Find(self, name, createFile, fileName):
+        """
   Find(self: BitmapTable,name: str,createFile: bool) -> (BitmapEntry,str)
 
   
@@ -160,33 +168,40 @@ class BitmapTable(object,IEnumerable[BitmapEntry],IEnumerable,IRhinoTable[Bitmap
 
     and null if it was not found in the bitmap table.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: BitmapTable) -> IEnumerator[BitmapEntry]
 
   
 
    BitmapTable enumerator
   """
-  pass
- def __contains__(self,*args):
-  """ __contains__[BitmapEntry](enumerable: IEnumerable[BitmapEntry],value: BitmapEntry) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of bitmaps in the table.
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[BitmapEntry](enumerable: IEnumerable[BitmapEntry],value: BitmapEntry) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of bitmaps in the table.
 
 
 
@@ -196,8 +211,8 @@ Get: Count(self: BitmapTable) -> int
 
 """
 
- Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the document that owns this bitmap table.
+    Document = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the document that owns this bitmap table.
 
 
 
@@ -208,11 +223,12 @@ Get: Document(self: BitmapTable) -> RhinoDoc
 """
 
 
-
-class DimStyleTable(object,IEnumerable[DimensionStyle],IEnumerable,IRhinoTable[DimensionStyle]):
- # no doc
- def Add(self,name,reference=None):
-  """
+class DimStyleTable(
+    object, IEnumerable[DimensionStyle], IEnumerable, IRhinoTable[DimensionStyle]
+):
+    # no doc
+    def Add(self, name, reference=None):
+        """
   Add(self: DimStyleTable,name: str,reference: bool) -> int
 
   
@@ -251,42 +267,54 @@ class DimStyleTable(object,IEnumerable[DimensionStyle],IEnumerable,IRhinoTable[D
 
    Returns: index of new dimension style.
   """
-  pass
- def DeleteDimensionStyle(self,index,quiet):
-  """ DeleteDimensionStyle(self: DimStyleTable,index: int,quiet: bool) -> bool """
-  pass
- def Find(self,name,ignoreDeletedDimensionStyles):
-  """ Find(self: DimStyleTable,name: str,ignoreDeletedDimensionStyles: bool) -> DimensionStyle """
-  pass
- def GetEnumerator(self):
-  """ GetEnumerator(self: DimStyleTable) -> IEnumerator[DimensionStyle] """
-  pass
- def GetUnusedDimensionStyleName(self):
-  """ GetUnusedDimensionStyleName(self: DimStyleTable) -> str """
-  pass
- def SetCurrentDimensionStyleIndex(self,index,quiet):
-  """ SetCurrentDimensionStyleIndex(self: DimStyleTable,index: int,quiet: bool) -> bool """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__[DimensionStyle](enumerable: IEnumerable[DimensionStyle],value: DimensionStyle) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Number of dimstyles in the table.
+        pass
+
+    def DeleteDimensionStyle(self, index, quiet):
+        """ DeleteDimensionStyle(self: DimStyleTable,index: int,quiet: bool) -> bool """
+        pass
+
+    def Find(self, name, ignoreDeletedDimensionStyles):
+        """ Find(self: DimStyleTable,name: str,ignoreDeletedDimensionStyles: bool) -> DimensionStyle """
+        pass
+
+    def GetEnumerator(self):
+        """ GetEnumerator(self: DimStyleTable) -> IEnumerator[DimensionStyle] """
+        pass
+
+    def GetUnusedDimensionStyleName(self):
+        """ GetUnusedDimensionStyleName(self: DimStyleTable) -> str """
+        pass
+
+    def SetCurrentDimensionStyleIndex(self, index, quiet):
+        """ SetCurrentDimensionStyleIndex(self: DimStyleTable,index: int,quiet: bool) -> bool """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[DimensionStyle](enumerable: IEnumerable[DimensionStyle],value: DimensionStyle) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Number of dimstyles in the table.
 
 
 
@@ -296,22 +324,26 @@ Get: Count(self: DimStyleTable) -> int
 
 """
 
- CurrentDimensionStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: CurrentDimensionStyle(self: DimStyleTable) -> DimensionStyle
+    CurrentDimensionStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: CurrentDimensionStyle(self: DimStyleTable) -> DimensionStyle
 
 
 
 """
 
- CurrentDimensionStyleIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: CurrentDimensionStyleIndex(self: DimStyleTable) -> int
+    CurrentDimensionStyleIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: CurrentDimensionStyleIndex(self: DimStyleTable) -> int
 
 
 
 """
 
- Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Document that owns this dimstyle table.
+    Document = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Document that owns this dimstyle table.
 
 
 
@@ -322,32 +354,39 @@ Get: Document(self: DimStyleTable) -> RhinoDoc
 """
 
 
+class FontTable(object, IEnumerable[Font], IEnumerable, IRhinoTable[Font]):
+    """ Font tables store the list of fonts in a Rhino document. """
 
-class FontTable(object,IEnumerable[Font],IEnumerable,IRhinoTable[Font]):
- """ Font tables store the list of fonts in a Rhino document. """
- def FindOrCreate(self,face,bold,italic):
-  """ FindOrCreate(self: FontTable,face: str,bold: bool,italic: bool) -> int """
-  pass
- def GetEnumerator(self):
-  """ GetEnumerator(self: FontTable) -> IEnumerator[Font] """
-  pass
- def __contains__(self,*args):
-  """ __contains__[Font](enumerable: IEnumerable[Font],value: Font) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Number of fonts in the table.
+    def FindOrCreate(self, face, bold, italic):
+        """ FindOrCreate(self: FontTable,face: str,bold: bool,italic: bool) -> int """
+        pass
+
+    def GetEnumerator(self):
+        """ GetEnumerator(self: FontTable) -> IEnumerator[Font] """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[Font](enumerable: IEnumerable[Font],value: Font) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Number of fonts in the table.
 
 
 
@@ -357,8 +396,10 @@ Get: Count(self: FontTable) -> int
 
 """
 
- CurrentIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """At all times,there is a "current" font.  Unless otherwise specified,
+    CurrentIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """At all times,there is a "current" font.  Unless otherwise specified,
 
    new dimension objects are assigned to the current font. The current
 
@@ -374,8 +415,8 @@ Get: CurrentIndex(self: FontTable) -> int
 
 """
 
- Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Document that owns this table.
+    Document = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Document that owns this table.
 
 
 
@@ -386,11 +427,11 @@ Get: Document(self: FontTable) -> RhinoDoc
 """
 
 
-
 class GroupTable(object):
- """ Group tables store the list of groups in a Rhino document. """
- def Add(self,*__args):
-  """
+    """ Group tables store the list of groups in a Rhino document. """
+
+    def Add(self, *__args):
+        """
   Add(self: GroupTable,groupName: str,objectIds: IEnumerable[Guid]) -> int
 
   Add(self: GroupTable,objectIds: IEnumerable[Guid]) -> int
@@ -425,9 +466,10 @@ class GroupTable(object):
 
     exists.
   """
-  pass
- def AddToGroup(self,groupIndex,*__args):
-  """
+        pass
+
+    def AddToGroup(self, groupIndex, *__args):
+        """
   AddToGroup(self: GroupTable,groupIndex: int,objectIds: IEnumerable[Guid]) -> bool
 
   AddToGroup(self: GroupTable,groupIndex: int,objectId: Guid) -> bool
@@ -444,12 +486,14 @@ class GroupTable(object):
 
    Returns: true if the operation was successful.
   """
-  pass
- def ChangeGroupName(self,groupIndex,newName):
-  """ ChangeGroupName(self: GroupTable,groupIndex: int,newName: str) -> bool """
-  pass
- def Delete(self,groupIndex):
-  """
+        pass
+
+    def ChangeGroupName(self, groupIndex, newName):
+        """ ChangeGroupName(self: GroupTable,groupIndex: int,newName: str) -> bool """
+        pass
+
+    def Delete(self, groupIndex):
+        """
   Delete(self: GroupTable,groupIndex: int) -> bool
 
   
@@ -472,9 +516,10 @@ class GroupTable(object):
 
    Returns: true if the operation was successful.
   """
-  pass
- def Find(self,groupName,ignoreDeletedGroups):
-  """
+        pass
+
+    def Find(self, groupName, ignoreDeletedGroups):
+        """
   Find(self: GroupTable,groupName: str,ignoreDeletedGroups: bool) -> int
 
   
@@ -491,9 +536,10 @@ class GroupTable(object):
 
      -1 no group found with the given name.
   """
-  pass
- def GroupMembers(self,groupIndex):
-  """
+        pass
+
+    def GroupMembers(self, groupIndex):
+        """
   GroupMembers(self: GroupTable,groupIndex: int) -> Array[RhinoObject]
 
   
@@ -506,39 +552,50 @@ class GroupTable(object):
 
    Returns: An array with all the objects in the specified group.
   """
-  pass
- def GroupName(self,groupIndex):
-  """ GroupName(self: GroupTable,groupIndex: int) -> str """
-  pass
- def GroupNames(self,ignoreDeletedGroups):
-  """ GroupNames(self: GroupTable,ignoreDeletedGroups: bool) -> Array[str] """
-  pass
- def GroupObjectCount(self,groupIndex):
-  """ GroupObjectCount(self: GroupTable,groupIndex: int) -> int """
-  pass
- def Hide(self,groupIndex):
-  """ Hide(self: GroupTable,groupIndex: int) -> int """
-  pass
- def IsDeleted(self,groupIndex):
-  """ IsDeleted(self: GroupTable,groupIndex: int) -> bool """
-  pass
- def Lock(self,groupIndex):
-  """ Lock(self: GroupTable,groupIndex: int) -> int """
-  pass
- def Show(self,groupIndex):
-  """ Show(self: GroupTable,groupIndex: int) -> int """
-  pass
- def Undelete(self,groupIndex):
-  """ Undelete(self: GroupTable,groupIndex: int) -> bool """
-  pass
- def Unlock(self,groupIndex):
-  """ Unlock(self: GroupTable,groupIndex: int) -> int """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Number of groups in the group table.
+        pass
+
+    def GroupName(self, groupIndex):
+        """ GroupName(self: GroupTable,groupIndex: int) -> str """
+        pass
+
+    def GroupNames(self, ignoreDeletedGroups):
+        """ GroupNames(self: GroupTable,ignoreDeletedGroups: bool) -> Array[str] """
+        pass
+
+    def GroupObjectCount(self, groupIndex):
+        """ GroupObjectCount(self: GroupTable,groupIndex: int) -> int """
+        pass
+
+    def Hide(self, groupIndex):
+        """ Hide(self: GroupTable,groupIndex: int) -> int """
+        pass
+
+    def IsDeleted(self, groupIndex):
+        """ IsDeleted(self: GroupTable,groupIndex: int) -> bool """
+        pass
+
+    def Lock(self, groupIndex):
+        """ Lock(self: GroupTable,groupIndex: int) -> int """
+        pass
+
+    def Show(self, groupIndex):
+        """ Show(self: GroupTable,groupIndex: int) -> int """
+        pass
+
+    def Undelete(self, groupIndex):
+        """ Undelete(self: GroupTable,groupIndex: int) -> bool """
+        pass
+
+    def Unlock(self, groupIndex):
+        """ Unlock(self: GroupTable,groupIndex: int) -> int """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Number of groups in the group table.
 
 
 
@@ -548,8 +605,8 @@ Get: Count(self: GroupTable) -> int
 
 """
 
- Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Document that owns this group table.
+    Document = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Document that owns this group table.
 
 
 
@@ -560,62 +617,74 @@ Get: Document(self: GroupTable) -> RhinoDoc
 """
 
 
-
 class GroupTableEventArgs(EventArgs):
- # no doc
- Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Document(self: GroupTableEventArgs) -> RhinoDoc
+    # no doc
+    Document = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Document(self: GroupTableEventArgs) -> RhinoDoc
 
 
 
 """
 
- EventType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: EventType(self: GroupTableEventArgs) -> GroupTableEventType
+    EventType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: EventType(self: GroupTableEventArgs) -> GroupTableEventType
 
 
 
 """
 
 
+class GroupTableEventType(Enum, IComparable, IFormattable, IConvertible):
+    """ enum GroupTableEventType,values: Added (0),Deleted (1),Modified (3),Sorted (4),Undeleted (2) """
 
-class GroupTableEventType(Enum,IComparable,IFormattable,IConvertible):
- """ enum GroupTableEventType,values: Added (0),Deleted (1),Modified (3),Sorted (4),Undeleted (2) """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Added=None
- Deleted=None
- Modified=None
- Sorted=None
- Undeleted=None
- value__=None
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Added = None
+    Deleted = None
+    Modified = None
+    Sorted = None
+    Undeleted = None
+    value__ = None
 
 
-class HatchPatternTable(object,IEnumerable[HatchPattern],IEnumerable,IRhinoTable[HatchPattern]):
- """ All of the hatch pattern definitions contained in a rhino document. """
- def Add(self,pattern):
-  """
+class HatchPatternTable(
+    object, IEnumerable[HatchPattern], IEnumerable, IRhinoTable[HatchPattern]
+):
+    """ All of the hatch pattern definitions contained in a rhino document. """
+
+    def Add(self, pattern):
+        """
   Add(self: HatchPatternTable,pattern: HatchPattern) -> int
 
   
@@ -644,9 +713,10 @@ class HatchPatternTable(object,IEnumerable[HatchPattern],IEnumerable,IRhinoTable
 
      some other problem occured.
   """
-  pass
- def Find(self,name,ignoreDeleted):
-  """
+        pass
+
+    def Find(self, name, ignoreDeleted):
+        """
   Find(self: HatchPatternTable,name: str,ignoreDeleted: bool) -> int
 
   
@@ -661,30 +731,38 @@ class HatchPatternTable(object,IEnumerable[HatchPattern],IEnumerable,IRhinoTable
 
    Returns: Index of the hatch pattern with the given name. -1 if no hatch pattern found.
   """
-  pass
- def GetEnumerator(self):
-  """ GetEnumerator(self: HatchPatternTable) -> IEnumerator[HatchPattern] """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__[HatchPattern](enumerable: IEnumerable[HatchPattern],value: HatchPattern) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Number of patterns in the table.
+        pass
+
+    def GetEnumerator(self):
+        """ GetEnumerator(self: HatchPatternTable) -> IEnumerator[HatchPattern] """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[HatchPattern](enumerable: IEnumerable[HatchPattern],value: HatchPattern) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Number of patterns in the table.
 
 
 
@@ -694,8 +772,10 @@ Get: Count(self: HatchPatternTable) -> int
 
 """
 
- CurrentHatchPatternIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """At all times,there is a "current" hatch pattern.  Unless otherwise
+    CurrentHatchPatternIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """At all times,there is a "current" hatch pattern.  Unless otherwise
 
    specified,new objects are assigned to the current hatch pattern.
 
@@ -711,8 +791,8 @@ Set: CurrentHatchPatternIndex(self: HatchPatternTable)=value
 
 """
 
- Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Document that owns this table.
+    Document = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Document that owns this table.
 
 
 
@@ -723,11 +803,15 @@ Get: Document(self: HatchPatternTable) -> RhinoDoc
 """
 
 
-
-class InstanceDefinitionTable(object,IEnumerable[InstanceDefinition],IEnumerable,IRhinoTable[InstanceDefinition]):
- # no doc
- def Add(self,name,description,basePoint,geometry,attributes=None):
-  """
+class InstanceDefinitionTable(
+    object,
+    IEnumerable[InstanceDefinition],
+    IEnumerable,
+    IRhinoTable[InstanceDefinition],
+):
+    # no doc
+    def Add(self, name, description, basePoint, geometry, attributes=None):
+        """
   Add(self: InstanceDefinitionTable,name: str,description: str,basePoint: Point3d,geometry: GeometryBase,attributes: ObjectAttributes) -> int
 
   
@@ -752,9 +836,10 @@ class InstanceDefinitionTable(object,IEnumerable[InstanceDefinition],IEnumerable
 
   Add(self: InstanceDefinitionTable,name: str,description: str,basePoint: Point3d,geometry: IEnumerable[GeometryBase],attributes: IEnumerable[ObjectAttributes]) -> int
   """
-  pass
- def Compact(self,ignoreUndoReferences):
-  """
+        pass
+
+    def Compact(self, ignoreUndoReferences):
+        """
   Compact(self: InstanceDefinitionTable,ignoreUndoReferences: bool)
 
    Purge deleted instance definition information that is not in use.
@@ -777,9 +862,10 @@ class InstanceDefinitionTable(object,IEnumerable[InstanceDefinition],IEnumerable
 
     instance definition information is deleted.
   """
-  pass
- def Delete(self,idefIndex,deleteReferences,quiet):
-  """
+        pass
+
+    def Delete(self, idefIndex, deleteReferences, quiet):
+        """
   Delete(self: InstanceDefinitionTable,idefIndex: int,deleteReferences: bool,quiet: bool) -> bool
 
   
@@ -816,9 +902,10 @@ class InstanceDefinitionTable(object,IEnumerable[InstanceDefinition],IEnumerable
 
     is false.
   """
-  pass
- def Find(self,*__args):
-  """
+        pass
+
+    def Find(self, *__args):
+        """
   Find(self: InstanceDefinitionTable,instanceId: Guid,ignoreDeletedInstanceDefinitions: bool) -> InstanceDefinition
 
   
@@ -847,12 +934,14 @@ class InstanceDefinitionTable(object,IEnumerable[InstanceDefinition],IEnumerable
 
    Returns: The specified instance definition,or null if nothing matching was found.
   """
-  pass
- def GetEnumerator(self):
-  """ GetEnumerator(self: InstanceDefinitionTable) -> IEnumerator[InstanceDefinition] """
-  pass
- def GetList(self,ignoreDeleted):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """ GetEnumerator(self: InstanceDefinitionTable) -> IEnumerator[InstanceDefinition] """
+        pass
+
+    def GetList(self, ignoreDeleted):
+        """
   GetList(self: InstanceDefinitionTable,ignoreDeleted: bool) -> Array[InstanceDefinition]
 
   
@@ -865,9 +954,10 @@ class InstanceDefinitionTable(object,IEnumerable[InstanceDefinition],IEnumerable
 
    Returns: An array of instance definitions. This can be empty,but not null.
   """
-  pass
- def GetUnusedInstanceDefinitionName(self,root=None,defaultSuffix=None):
-  """
+        pass
+
+    def GetUnusedInstanceDefinitionName(self, root=None, defaultSuffix=None):
+        """
   GetUnusedInstanceDefinitionName(self: InstanceDefinitionTable,root: str,defaultSuffix: UInt32) -> str
 
   
@@ -932,9 +1022,10 @@ class InstanceDefinitionTable(object,IEnumerable[InstanceDefinition],IEnumerable
 
    Returns: An unused instance definition name string.
   """
-  pass
- def MakeSourcePathRelative(self,idef,relative,quiet):
-  """
+        pass
+
+    def MakeSourcePathRelative(self, idef, relative, quiet):
+        """
   MakeSourcePathRelative(self: InstanceDefinitionTable,idef: InstanceDefinition,relative: bool,quiet: bool) -> bool
 
   
@@ -955,9 +1046,10 @@ class InstanceDefinitionTable(object,IEnumerable[InstanceDefinition],IEnumerable
 
    Returns: true if the instance defintion could be modified.
   """
-  pass
- def Modify(self,*__args):
-  """
+        pass
+
+    def Modify(self, *__args):
+        """
   Modify(self: InstanceDefinitionTable,idefIndex: int,newName: str,newDescription: str,quiet: bool) -> bool
 
   
@@ -1006,18 +1098,20 @@ class InstanceDefinitionTable(object,IEnumerable[InstanceDefinition],IEnumerable
 
    Returns: true if successful.
   """
-  pass
- def ModifyGeometry(self,idefIndex,newGeometry,newAttributes=None):
-  """
+        pass
+
+    def ModifyGeometry(self, idefIndex, newGeometry, newAttributes=None):
+        """
   ModifyGeometry(self: InstanceDefinitionTable,idefIndex: int,newGeometry: GeometryBase,newAttributes: ObjectAttributes) -> bool
 
   ModifyGeometry(self: InstanceDefinitionTable,idefIndex: int,newGeometry: IEnumerable[GeometryBase]) -> bool
 
   ModifyGeometry(self: InstanceDefinitionTable,idefIndex: int,newGeometry: IEnumerable[GeometryBase],newAttributes: IEnumerable[ObjectAttributes]) -> bool
   """
-  pass
- def Purge(self,idefIndex):
-  """
+        pass
+
+    def Purge(self, idefIndex):
+        """
   Purge(self: InstanceDefinitionTable,idefIndex: int) -> bool
 
   
@@ -1040,9 +1134,10 @@ class InstanceDefinitionTable(object,IEnumerable[InstanceDefinition],IEnumerable
 
     in use by reference objects or undo information.
   """
-  pass
- def Undelete(self,idefIndex):
-  """
+        pass
+
+    def Undelete(self, idefIndex):
+        """
   Undelete(self: InstanceDefinitionTable,idefIndex: int) -> bool
 
   
@@ -1061,9 +1156,10 @@ class InstanceDefinitionTable(object,IEnumerable[InstanceDefinition],IEnumerable
 
    Returns: true if successful
   """
-  pass
- def UndoModify(self,idefIndex):
-  """
+        pass
+
+    def UndoModify(self, idefIndex):
+        """
   UndoModify(self: InstanceDefinitionTable,idefIndex: int) -> bool
 
   
@@ -1082,9 +1178,12 @@ class InstanceDefinitionTable(object,IEnumerable[InstanceDefinition],IEnumerable
 
    Returns: true if operation succeeded.
   """
-  pass
- def UpdateLinkedInstanceDefinition(self,idefIndex,filename,updateNestedLinks,quiet):
-  """
+        pass
+
+    def UpdateLinkedInstanceDefinition(
+        self, idefIndex, filename, updateNestedLinks, quiet
+    ):
+        """
   UpdateLinkedInstanceDefinition(self: InstanceDefinitionTable,idefIndex: int,filename: str,updateNestedLinks: bool,quiet: bool) -> bool
 
   
@@ -1113,27 +1212,36 @@ class InstanceDefinitionTable(object,IEnumerable[InstanceDefinition],IEnumerable
 
     updates are skipped.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__[InstanceDefinition](enumerable: IEnumerable[InstanceDefinition],value: InstanceDefinition) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- ActiveCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Number of items in the instance definitions table,excluding deleted definitions.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[InstanceDefinition](enumerable: IEnumerable[InstanceDefinition],value: InstanceDefinition) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    ActiveCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Number of items in the instance definitions table,excluding deleted definitions.
 
 
 
@@ -1143,8 +1251,8 @@ Get: ActiveCount(self: InstanceDefinitionTable) -> int
 
 """
 
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Number of items in the instance definitions table.
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Number of items in the instance definitions table.
 
 
 
@@ -1154,8 +1262,8 @@ Get: Count(self: InstanceDefinitionTable) -> int
 
 """
 
- Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Document that owns this table.
+    Document = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Document that owns this table.
 
 
 
@@ -1166,83 +1274,94 @@ Get: Document(self: InstanceDefinitionTable) -> RhinoDoc
 """
 
 
-
 class InstanceDefinitionTableEventArgs(EventArgs):
- # no doc
- Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Document(self: InstanceDefinitionTableEventArgs) -> RhinoDoc
+    # no doc
+    Document = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Document(self: InstanceDefinitionTableEventArgs) -> RhinoDoc
 
 
 
 """
 
- EventType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: EventType(self: InstanceDefinitionTableEventArgs) -> InstanceDefinitionTableEventType
+    EventType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: EventType(self: InstanceDefinitionTableEventArgs) -> InstanceDefinitionTableEventType
 
 
 
 """
 
- InstanceDefinitionIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: InstanceDefinitionIndex(self: InstanceDefinitionTableEventArgs) -> int
+    InstanceDefinitionIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: InstanceDefinitionIndex(self: InstanceDefinitionTableEventArgs) -> int
 
 
 
 """
 
- NewState=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: NewState(self: InstanceDefinitionTableEventArgs) -> InstanceDefinition
+    NewState = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: NewState(self: InstanceDefinitionTableEventArgs) -> InstanceDefinition
 
 
 
 """
 
- OldState=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: OldState(self: InstanceDefinitionTableEventArgs) -> InstanceDefinitionGeometry
+    OldState = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: OldState(self: InstanceDefinitionTableEventArgs) -> InstanceDefinitionGeometry
 
 
 
 """
 
 
+class InstanceDefinitionTableEventType(Enum, IComparable, IFormattable, IConvertible):
+    """ enum InstanceDefinitionTableEventType,values: Added (0),Deleted (1),Modified (3),Sorted (4),Undeleted (2) """
 
-class InstanceDefinitionTableEventType(Enum,IComparable,IFormattable,IConvertible):
- """ enum InstanceDefinitionTableEventType,values: Added (0),Deleted (1),Modified (3),Sorted (4),Undeleted (2) """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Added=None
- Deleted=None
- Modified=None
- Sorted=None
- Undeleted=None
- value__=None
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Added = None
+    Deleted = None
+    Modified = None
+    Sorted = None
+    Undeleted = None
+    value__ = None
 
 
-class LayerTable(object,IEnumerable[Layer],IEnumerable,IRhinoTable[Layer]):
- # no doc
- def Add(self,*__args):
-  """
+class LayerTable(object, IEnumerable[Layer], IEnumerable, IRhinoTable[Layer]):
+    # no doc
+    def Add(self, *__args):
+        """
   Add(self: LayerTable) -> int
 
   
@@ -1293,9 +1412,10 @@ class LayerTable(object,IEnumerable[Layer],IEnumerable,IRhinoTable[Layer]):
 
     exists.
   """
-  pass
- def AddReferenceLayer(self,layer=None):
-  """
+        pass
+
+    def AddReferenceLayer(self, layer=None):
+        """
   AddReferenceLayer(self: LayerTable) -> int
 
   
@@ -1338,9 +1458,10 @@ class LayerTable(object,IEnumerable[Layer],IEnumerable,IRhinoTable[Layer]):
 
     exists.
   """
-  pass
- def Delete(self,layerIndex,quiet):
-  """
+        pass
+
+    def Delete(self, layerIndex, quiet):
+        """
   Delete(self: LayerTable,layerIndex: int,quiet: bool) -> bool
 
   
@@ -1369,9 +1490,10 @@ class LayerTable(object,IEnumerable[Layer],IEnumerable,IRhinoTable[Layer]):
 
     deleted because it is the current layer or because it layer contains active geometry.
   """
-  pass
- def Find(self,*__args):
-  """
+        pass
+
+    def Find(self, *__args):
+        """
   Find(self: LayerTable,layerId: Guid,ignoreDeletedLayers: bool) -> int
 
   
@@ -1410,15 +1532,18 @@ class LayerTable(object,IEnumerable[Layer],IEnumerable,IRhinoTable[Layer]):
 
      -1  no layer has the given name.
   """
-  pass
- def FindByFullPath(self,layerPath,ignoreDeletedLayers):
-  """ FindByFullPath(self: LayerTable,layerPath: str,ignoreDeletedLayers: bool) -> int """
-  pass
- def FindNext(self,index,layerName,ignoreDeletedLayers):
-  """ FindNext(self: LayerTable,index: int,layerName: str,ignoreDeletedLayers: bool) -> int """
-  pass
- def ForceLayerVisible(self,*__args):
-  """
+        pass
+
+    def FindByFullPath(self, layerPath, ignoreDeletedLayers):
+        """ FindByFullPath(self: LayerTable,layerPath: str,ignoreDeletedLayers: bool) -> int """
+        pass
+
+    def FindNext(self, index, layerName, ignoreDeletedLayers):
+        """ FindNext(self: LayerTable,index: int,layerName: str,ignoreDeletedLayers: bool) -> int """
+        pass
+
+    def ForceLayerVisible(self, *__args):
+        """
   ForceLayerVisible(self: LayerTable,layerIndex: int) -> bool
 
   
@@ -1443,12 +1568,14 @@ class LayerTable(object,IEnumerable[Layer],IEnumerable,IRhinoTable[Layer]):
 
    Returns: true if the operation succeeded.
   """
-  pass
- def GetEnumerator(self):
-  """ GetEnumerator(self: LayerTable) -> IEnumerator[Layer] """
-  pass
- def GetUnusedLayerName(self,ignoreDeleted):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """ GetEnumerator(self: LayerTable) -> IEnumerator[Layer] """
+        pass
+
+    def GetUnusedLayerName(self, ignoreDeleted):
+        """
   GetUnusedLayerName(self: LayerTable,ignoreDeleted: bool) -> str
 
   
@@ -1461,9 +1588,10 @@ class LayerTable(object,IEnumerable[Layer],IEnumerable,IRhinoTable[Layer]):
 
    Returns: An unused layer name string.
   """
-  pass
- def Modify(self,newSettings,layerIndex,quiet):
-  """
+        pass
+
+    def Modify(self, newSettings, layerIndex, quiet):
+        """
   Modify(self: LayerTable,newSettings: Layer,layerIndex: int,quiet: bool) -> bool
 
   
@@ -1484,9 +1612,10 @@ class LayerTable(object,IEnumerable[Layer],IEnumerable,IRhinoTable[Layer]):
 
     lock or hide the current layer.
   """
-  pass
- def Purge(self,layerIndex,quiet):
-  """
+        pass
+
+    def Purge(self, layerIndex, quiet):
+        """
   Purge(self: LayerTable,layerIndex: int,quiet: bool) -> bool
 
   
@@ -1515,9 +1644,10 @@ class LayerTable(object,IEnumerable[Layer],IEnumerable,IRhinoTable[Layer]):
 
     deleted because it is the current layer.
   """
-  pass
- def SetCurrentLayerIndex(self,layerIndex,quiet):
-  """
+        pass
+
+    def SetCurrentLayerIndex(self, layerIndex, quiet):
+        """
   SetCurrentLayerIndex(self: LayerTable,layerIndex: int,quiet: bool) -> bool
 
   
@@ -1544,9 +1674,10 @@ class LayerTable(object,IEnumerable[Layer],IEnumerable,IRhinoTable[Layer]):
 
    Returns: true if current layer index successfully set.
   """
-  pass
- def Undelete(self,layerIndex):
-  """
+        pass
+
+    def Undelete(self, layerIndex):
+        """
   Undelete(self: LayerTable,layerIndex: int) -> bool
 
   
@@ -1565,9 +1696,10 @@ class LayerTable(object,IEnumerable[Layer],IEnumerable,IRhinoTable[Layer]):
 
    Returns: true if successful.
   """
-  pass
- def UndoModify(self,layerIndex,undoRecordSerialNumber=None):
-  """
+        pass
+
+    def UndoModify(self, layerIndex, undoRecordSerialNumber=None):
+        """
   UndoModify(self: LayerTable,layerIndex: int) -> bool
 
   UndoModify(self: LayerTable,layerIndex: int,undoRecordSerialNumber: UInt32) -> bool
@@ -1590,27 +1722,36 @@ class LayerTable(object,IEnumerable[Layer],IEnumerable,IRhinoTable[Layer]):
 
    Returns: true if this layer had been modified and the modifications were undone.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__[Layer](enumerable: IEnumerable[Layer],value: Layer) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- ActiveCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns number of layers in the layer table,excluding deleted layers.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[Layer](enumerable: IEnumerable[Layer],value: Layer) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    ActiveCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns number of layers in the layer table,excluding deleted layers.
 
 
 
@@ -1620,8 +1761,8 @@ Get: ActiveCount(self: LayerTable) -> int
 
 """
 
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns number of layers in the layer table,including deleted layers.
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns number of layers in the layer table,including deleted layers.
 
 
 
@@ -1631,8 +1772,10 @@ Get: Count(self: LayerTable) -> int
 
 """
 
- CurrentLayer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """At all times,there is a "current" layer. Unless otherwise specified,
+    CurrentLayer = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """At all times,there is a "current" layer. Unless otherwise specified,
 
    new objects are assigned to the current layer. The current layer is
 
@@ -1652,8 +1795,10 @@ Get: CurrentLayer(self: LayerTable) -> Layer
 
 """
 
- CurrentLayerIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """At all times,there is a "current" layer.  Unless otherwise specified,new objects
+    CurrentLayerIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """At all times,there is a "current" layer.  Unless otherwise specified,new objects
 
    are assigned to the current layer. The current layer is never locked,hidden,or deleted.
 
@@ -1667,8 +1812,8 @@ Get: CurrentLayerIndex(self: LayerTable) -> int
 
 """
 
- Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Document that owns this table.
+    Document = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Document that owns this table.
 
 
 
@@ -1679,122 +1824,145 @@ Get: Document(self: LayerTable) -> RhinoDoc
 """
 
 
-
 class LayerTableEventArgs(EventArgs):
- # no doc
- Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Document(self: LayerTableEventArgs) -> RhinoDoc
+    # no doc
+    Document = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Document(self: LayerTableEventArgs) -> RhinoDoc
 
 
 
 """
 
- EventType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: EventType(self: LayerTableEventArgs) -> LayerTableEventType
+    EventType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: EventType(self: LayerTableEventArgs) -> LayerTableEventType
 
 
 
 """
 
- LayerIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: LayerIndex(self: LayerTableEventArgs) -> int
+    LayerIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: LayerIndex(self: LayerTableEventArgs) -> int
 
 
 
 """
 
- NewState=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: NewState(self: LayerTableEventArgs) -> Layer
+    NewState = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: NewState(self: LayerTableEventArgs) -> Layer
 
 
 
 """
 
- OldState=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: OldState(self: LayerTableEventArgs) -> Layer
+    OldState = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: OldState(self: LayerTableEventArgs) -> Layer
 
 
 
 """
 
 
+class LayerTableEventType(Enum, IComparable, IFormattable, IConvertible):
+    """ enum LayerTableEventType,values: Added (0),Current (5),Deleted (1),Modified (3),Sorted (4),Undeleted (2) """
 
-class LayerTableEventType(Enum,IComparable,IFormattable,IConvertible):
- """ enum LayerTableEventType,values: Added (0),Current (5),Deleted (1),Modified (3),Sorted (4),Undeleted (2) """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Added=None
- Current=None
- Deleted=None
- Modified=None
- Sorted=None
- Undeleted=None
- value__=None
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Added = None
+    Current = None
+    Deleted = None
+    Modified = None
+    Sorted = None
+    Undeleted = None
+    value__ = None
 
 
-class LightTable(object,IEnumerable[LightObject],IEnumerable,IRhinoTable[LightObject]):
- # no doc
- def Add(self,light,attributes=None):
-  """
+class LightTable(
+    object, IEnumerable[LightObject], IEnumerable, IRhinoTable[LightObject]
+):
+    # no doc
+    def Add(self, light, attributes=None):
+        """
   Add(self: LightTable,light: Light,attributes: ObjectAttributes) -> int
 
   Add(self: LightTable,light: Light) -> int
   """
-  pass
- def Find(self,id,ignoreDeleted):
-  """ Find(self: LightTable,id: Guid,ignoreDeleted: bool) -> int """
-  pass
- def GetEnumerator(self):
-  """ GetEnumerator(self: LightTable) -> IEnumerator[LightObject] """
-  pass
- def Modify(self,*__args):
-  """
+        pass
+
+    def Find(self, id, ignoreDeleted):
+        """ Find(self: LightTable,id: Guid,ignoreDeleted: bool) -> int """
+        pass
+
+    def GetEnumerator(self):
+        """ GetEnumerator(self: LightTable) -> IEnumerator[LightObject] """
+        pass
+
+    def Modify(self, *__args):
+        """
   Modify(self: LightTable,index: int,light: Light) -> bool
 
   Modify(self: LightTable,id: Guid,light: Light) -> bool
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__[LightObject](enumerable: IEnumerable[LightObject],value: LightObject) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Number of lights in the light table.  Does not include Sun or Skylight.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[LightObject](enumerable: IEnumerable[LightObject],value: LightObject) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Number of lights in the light table.  Does not include Sun or Skylight.
 
 
 
@@ -1804,8 +1972,8 @@ Get: Count(self: LightTable) -> int
 
 """
 
- Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Document that owns this light table.
+    Document = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Document that owns this light table.
 
 
 
@@ -1815,8 +1983,8 @@ Get: Document(self: LightTable) -> RhinoDoc
 
 """
 
- Sun=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the Sun instance that is applied to the document.
+    Sun = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the Sun instance that is applied to the document.
 
    If the RDK is loaded,an instance is always returned.
 
@@ -1829,83 +1997,94 @@ Get: Sun(self: LightTable) -> Sun
 """
 
 
-
 class LightTableEventArgs(EventArgs):
- # no doc
- Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Document(self: LightTableEventArgs) -> RhinoDoc
+    # no doc
+    Document = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Document(self: LightTableEventArgs) -> RhinoDoc
 
 
 
 """
 
- EventType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: EventType(self: LightTableEventArgs) -> LightTableEventType
+    EventType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: EventType(self: LightTableEventArgs) -> LightTableEventType
 
 
 
 """
 
- LightIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: LightIndex(self: LightTableEventArgs) -> int
+    LightIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: LightIndex(self: LightTableEventArgs) -> int
 
 
 
 """
 
- NewState=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: NewState(self: LightTableEventArgs) -> LightObject
+    NewState = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: NewState(self: LightTableEventArgs) -> LightObject
 
 
 
 """
 
- OldState=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: OldState(self: LightTableEventArgs) -> Light
+    OldState = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: OldState(self: LightTableEventArgs) -> Light
 
 
 
 """
 
 
+class LightTableEventType(Enum, IComparable, IFormattable, IConvertible):
+    """ enum LightTableEventType,values: Added (0),Deleted (1),Modified (3),Sorted (4),Undeleted (2) """
 
-class LightTableEventType(Enum,IComparable,IFormattable,IConvertible):
- """ enum LightTableEventType,values: Added (0),Deleted (1),Modified (3),Sorted (4),Undeleted (2) """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Added=None
- Deleted=None
- Modified=None
- Sorted=None
- Undeleted=None
- value__=None
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Added = None
+    Deleted = None
+    Modified = None
+    Sorted = None
+    Undeleted = None
+    value__ = None
 
 
-class LinetypeTable(object,IEnumerable[Linetype],IEnumerable,IRhinoTable[Linetype]):
- # no doc
- def Add(self,*__args):
-  """
+class LinetypeTable(object, IEnumerable[Linetype], IEnumerable, IRhinoTable[Linetype]):
+    # no doc
+    def Add(self, *__args):
+        """
   Add(self: LinetypeTable,name: str,segmentLengths: IEnumerable[float]) -> int
 
   Add(self: LinetypeTable,linetype: Linetype) -> int
@@ -1930,9 +2109,10 @@ class LinetypeTable(object,IEnumerable[Linetype],IEnumerable,IRhinoTable[Linetyp
 
    Returns: Index of newline type or -1 on error.
   """
-  pass
- def AddReferenceLinetype(self,linetype):
-  """
+        pass
+
+    def AddReferenceLinetype(self, linetype):
+        """
   AddReferenceLinetype(self: LinetypeTable,linetype: Linetype) -> int
 
   
@@ -1955,9 +2135,10 @@ class LinetypeTable(object,IEnumerable[Linetype],IEnumerable,IRhinoTable[Linetyp
 
    Returns: Index of new linetype or -1 on error.
   """
-  pass
- def Delete(self,*__args):
-  """
+        pass
+
+    def Delete(self, *__args):
+        """
   Delete(self: LinetypeTable,indices: IEnumerable[int],quiet: bool) -> bool
 
   Delete(self: LinetypeTable,index: int,quiet: bool) -> bool
@@ -1990,9 +2171,10 @@ class LinetypeTable(object,IEnumerable[Linetype],IEnumerable,IRhinoTable[Linetyp
 
     by active geometry.
   """
-  pass
- def Find(self,*__args):
-  """
+        pass
+
+    def Find(self, *__args):
+        """
   Find(self: LinetypeTable,id: Guid,ignoreDeletedLinetypes: bool) -> int
 
   
@@ -2029,12 +2211,14 @@ class LinetypeTable(object,IEnumerable[Linetype],IEnumerable,IRhinoTable[Linetyp
 
      -1  no linetype has the given name.
   """
-  pass
- def GetEnumerator(self):
-  """ GetEnumerator(self: LinetypeTable) -> IEnumerator[Linetype] """
-  pass
- def GetUnusedLinetypeName(self,ignoreDeleted):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """ GetEnumerator(self: LinetypeTable) -> IEnumerator[Linetype] """
+        pass
+
+    def GetUnusedLinetypeName(self, ignoreDeleted):
+        """
   GetUnusedLinetypeName(self: LinetypeTable,ignoreDeleted: bool) -> str
 
   
@@ -2047,9 +2231,10 @@ class LinetypeTable(object,IEnumerable[Linetype],IEnumerable,IRhinoTable[Linetyp
 
    Returns: The unused linetype name.
   """
-  pass
- def LinetypeIndexForObject(self,rhinoObject):
-  """
+        pass
+
+    def LinetypeIndexForObject(self, rhinoObject):
+        """
   LinetypeIndexForObject(self: LinetypeTable,rhinoObject: RhinoObject) -> int
 
   
@@ -2078,9 +2263,10 @@ class LinetypeTable(object,IEnumerable[Linetype],IEnumerable,IRhinoTable[Linetyp
 
    Returns: The effective linetype index.
   """
-  pass
- def Modify(self,linetype,index,quiet):
-  """
+        pass
+
+    def Modify(self, linetype, index, quiet):
+        """
   Modify(self: LinetypeTable,linetype: Linetype,index: int,quiet: bool) -> bool
 
   
@@ -2101,9 +2287,10 @@ class LinetypeTable(object,IEnumerable[Linetype],IEnumerable,IRhinoTable[Linetyp
 
     to lock or hide the current linetype.
   """
-  pass
- def SetCurrentLinetypeIndex(self,linetypeIndex,quiet):
-  """
+        pass
+
+    def SetCurrentLinetypeIndex(self, linetypeIndex, quiet):
+        """
   SetCurrentLinetypeIndex(self: LinetypeTable,linetypeIndex: int,quiet: bool) -> bool
 
   
@@ -2124,9 +2311,10 @@ class LinetypeTable(object,IEnumerable[Linetype],IEnumerable,IRhinoTable[Linetyp
 
    Returns: true if current linetype index successfully set.
   """
-  pass
- def Undelete(self,index):
-  """
+        pass
+
+    def Undelete(self, index):
+        """
   Undelete(self: LinetypeTable,index: int) -> bool
 
   
@@ -2139,9 +2327,10 @@ class LinetypeTable(object,IEnumerable[Linetype],IEnumerable,IRhinoTable[Linetyp
 
    Returns: true if successful.
   """
-  pass
- def UndoModify(self,index):
-  """
+        pass
+
+    def UndoModify(self, index):
+        """
   UndoModify(self: LinetypeTable,index: int) -> bool
 
   
@@ -2160,27 +2349,36 @@ class LinetypeTable(object,IEnumerable[Linetype],IEnumerable,IRhinoTable[Linetyp
 
    Returns: true if this linetype had been modified and the modifications were undone.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__[Linetype](enumerable: IEnumerable[Linetype],value: Linetype) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- ActiveCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns number of linetypes in the linetypes table,excluding deleted linetypes.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[Linetype](enumerable: IEnumerable[Linetype],value: Linetype) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    ActiveCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns number of linetypes in the linetypes table,excluding deleted linetypes.
 
 
 
@@ -2190,8 +2388,10 @@ Get: ActiveCount(self: LinetypeTable) -> int
 
 """
 
- ByLayerLinetypeName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the text name of the bylayer linetype.
+    ByLayerLinetypeName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the text name of the bylayer linetype.
 
 
 
@@ -2201,8 +2401,10 @@ Get: ByLayerLinetypeName(self: LinetypeTable) -> str
 
 """
 
- ContinuousLinetypeName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the text name of the continuous linetype.
+    ContinuousLinetypeName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the text name of the continuous linetype.
 
 
 
@@ -2212,8 +2414,8 @@ Get: ContinuousLinetypeName(self: LinetypeTable) -> str
 
 """
 
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns number of linetypes in the linetypes table,including deleted linetypes.
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns number of linetypes in the linetypes table,including deleted linetypes.
 
 
 
@@ -2223,8 +2425,10 @@ Get: Count(self: LinetypeTable) -> int
 
 """
 
- CurrentLinetype=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns reference to the current linetype. Note that this reference may
+    CurrentLinetype = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns reference to the current linetype. Note that this reference may
 
    become invalid after a call to AddLinetype().
 
@@ -2236,8 +2440,10 @@ Get: CurrentLinetype(self: LinetypeTable) -> Linetype
 
 """
 
- CurrentLinetypeIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """At all times,there is a "current" linetype.  Unless otherwise specified,
+    CurrentLinetypeIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """At all times,there is a "current" linetype.  Unless otherwise specified,
 
    new objects are assigned to the current linetype. If the current linetype
 
@@ -2251,8 +2457,10 @@ Get: CurrentLinetypeIndex(self: LinetypeTable) -> int
 
 """
 
- CurrentLinetypeSource=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Source used by an object to determine its current linetype to be used by new objects.
+    CurrentLinetypeSource = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Source used by an object to determine its current linetype to be used by new objects.
 
 
 
@@ -2264,8 +2472,8 @@ Set: CurrentLinetypeSource(self: LinetypeTable)=value
 
 """
 
- Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Document that owns this table.
+    Document = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Document that owns this table.
 
 
 
@@ -2275,8 +2483,10 @@ Get: Document(self: LinetypeTable) -> RhinoDoc
 
 """
 
- LinetypeScale=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """For display in Rhino viewports,the linetypes are scaled by a single scale
+    LinetypeScale = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """For display in Rhino viewports,the linetypes are scaled by a single scale
 
    factor for all viewports. This is not used for printing,where all linetype
 
@@ -2293,11 +2503,10 @@ Set: LinetypeScale(self: LinetypeTable)=value
 """
 
 
-
-class MaterialTable(object,IEnumerable[Material],IEnumerable,IRhinoTable[Material]):
- # no doc
- def Add(self,material=None,reference=None):
-  """
+class MaterialTable(object, IEnumerable[Material], IEnumerable, IRhinoTable[Material]):
+    # no doc
+    def Add(self, material=None, reference=None):
+        """
   Add(self: MaterialTable,material: Material,reference: bool) -> int
 
   
@@ -2338,9 +2547,10 @@ class MaterialTable(object,IEnumerable[Material],IEnumerable,IRhinoTable[Materia
 
    Returns: The position of the new material in the table.
   """
-  pass
- def DeleteAt(self,materialIndex):
-  """
+        pass
+
+    def DeleteAt(self, materialIndex):
+        """
   DeleteAt(self: MaterialTable,materialIndex: int) -> bool
 
   
@@ -2361,9 +2571,10 @@ class MaterialTable(object,IEnumerable[Material],IEnumerable,IRhinoTable[Materia
 
     active geometry.
   """
-  pass
- def Find(self,*__args):
-  """
+        pass
+
+    def Find(self, *__args):
+        """
   Find(self: MaterialTable,materialId: Guid,ignoreDeletedMaterials: bool) -> int
 
   
@@ -2396,12 +2607,14 @@ class MaterialTable(object,IEnumerable[Material],IEnumerable,IRhinoTable[Materia
 
      -1  no material has the given name.
   """
-  pass
- def GetEnumerator(self):
-  """ GetEnumerator(self: MaterialTable) -> IEnumerator[Material] """
-  pass
- def Modify(self,newSettings,materialIndex,quiet):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """ GetEnumerator(self: MaterialTable) -> IEnumerator[Material] """
+        pass
+
+    def Modify(self, newSettings, materialIndex, quiet):
+        """
   Modify(self: MaterialTable,newSettings: Material,materialIndex: int,quiet: bool) -> bool
 
   
@@ -2426,30 +2639,38 @@ class MaterialTable(object,IEnumerable[Material],IEnumerable,IRhinoTable[Materia
 
     to lock or hide the current material.
   """
-  pass
- def ResetMaterial(self,materialIndex):
-  """ ResetMaterial(self: MaterialTable,materialIndex: int) -> bool """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__[Material](enumerable: IEnumerable[Material],value: Material) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns number of materials in the material table,including deleted materials.
+        pass
+
+    def ResetMaterial(self, materialIndex):
+        """ ResetMaterial(self: MaterialTable,materialIndex: int) -> bool """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[Material](enumerable: IEnumerable[Material],value: Material) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns number of materials in the material table,including deleted materials.
 
 
 
@@ -2459,8 +2680,10 @@ Get: Count(self: MaterialTable) -> int
 
 """
 
- CurrentMaterialIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """At all times,there is a "current" material.  Unless otherwise
+    CurrentMaterialIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """At all times,there is a "current" material.  Unless otherwise
 
    specified,new objects are assigned to the current material.
 
@@ -2476,8 +2699,10 @@ Set: CurrentMaterialIndex(self: MaterialTable)=value
 
 """
 
- CurrentMaterialSource=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the current material source.
+    CurrentMaterialSource = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the current material source.
 
 
 
@@ -2489,8 +2714,8 @@ Set: CurrentMaterialSource(self: MaterialTable)=value
 
 """
 
- Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Document that owns this table.
+    Document = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Document that owns this table.
 
 
 
@@ -2501,81 +2726,95 @@ Get: Document(self: MaterialTable) -> RhinoDoc
 """
 
 
-
 class MaterialTableEventArgs(EventArgs):
- # no doc
- Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Document(self: MaterialTableEventArgs) -> RhinoDoc
+    # no doc
+    Document = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Document(self: MaterialTableEventArgs) -> RhinoDoc
 
 
 
 """
 
- EventType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: EventType(self: MaterialTableEventArgs) -> MaterialTableEventType
+    EventType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: EventType(self: MaterialTableEventArgs) -> MaterialTableEventType
 
 
 
 """
 
- Index=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Index(self: MaterialTableEventArgs) -> int
+    Index = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Index(self: MaterialTableEventArgs) -> int
 
 
 
 """
 
- OldSettings=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: OldSettings(self: MaterialTableEventArgs) -> Material
+    OldSettings = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: OldSettings(self: MaterialTableEventArgs) -> Material
 
 
 
 """
 
 
+class MaterialTableEventType(Enum, IComparable, IFormattable, IConvertible):
+    """ enum MaterialTableEventType,values: Added (0),Current (5),Deleted (1),Modified (3),Sorted (4),Undeleted (2) """
 
-class MaterialTableEventType(Enum,IComparable,IFormattable,IConvertible):
- """ enum MaterialTableEventType,values: Added (0),Current (5),Deleted (1),Modified (3),Sorted (4),Undeleted (2) """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Added=None
- Current=None
- Deleted=None
- Modified=None
- Sorted=None
- Undeleted=None
- value__=None
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Added = None
+    Current = None
+    Deleted = None
+    Modified = None
+    Sorted = None
+    Undeleted = None
+    value__ = None
 
 
-class NamedConstructionPlaneTable(object,IEnumerable[ConstructionPlane],IEnumerable,IRhinoTable[ConstructionPlane]):
- """
+class NamedConstructionPlaneTable(
+    object, IEnumerable[ConstructionPlane], IEnumerable, IRhinoTable[ConstructionPlane]
+):
+    """
  Contains all named construction planes in a rhino document.
 
     This class cannot be inherited.
  """
- def Add(self,name,plane):
-  """
+
+    def Add(self, name, plane):
+        """
   Add(self: NamedConstructionPlaneTable,name: str,plane: Plane) -> int
 
   
@@ -2600,9 +2839,10 @@ class NamedConstructionPlaneTable(object,IEnumerable[ConstructionPlane],IEnumera
 
      -1 on failure.
   """
-  pass
- def Delete(self,*__args):
-  """
+        pass
+
+    def Delete(self, *__args):
+        """
   Delete(self: NamedConstructionPlaneTable,name: str) -> bool
 
   
@@ -2627,9 +2867,10 @@ class NamedConstructionPlaneTable(object,IEnumerable[ConstructionPlane],IEnumera
 
    Returns: true if successful.
   """
-  pass
- def Find(self,name):
-  """
+        pass
+
+    def Find(self, name):
+        """
   Find(self: NamedConstructionPlaneTable,name: str) -> int
 
   
@@ -2646,30 +2887,38 @@ class NamedConstructionPlaneTable(object,IEnumerable[ConstructionPlane],IEnumera
 
     found with the given name.
   """
-  pass
- def GetEnumerator(self):
-  """ GetEnumerator(self: NamedConstructionPlaneTable) -> IEnumerator[ConstructionPlane] """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__[ConstructionPlane](enumerable: IEnumerable[ConstructionPlane],value: ConstructionPlane) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Number of construction planes in the table.
+        pass
+
+    def GetEnumerator(self):
+        """ GetEnumerator(self: NamedConstructionPlaneTable) -> IEnumerator[ConstructionPlane] """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[ConstructionPlane](enumerable: IEnumerable[ConstructionPlane],value: ConstructionPlane) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Number of construction planes in the table.
 
 
 
@@ -2679,8 +2928,8 @@ Get: Count(self: NamedConstructionPlaneTable) -> int
 
 """
 
- Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the document that owns this table.
+    Document = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the document that owns this table.
 
 
 
@@ -2691,11 +2940,11 @@ Get: Document(self: NamedConstructionPlaneTable) -> RhinoDoc
 """
 
 
+class NamedViewTable(object, IEnumerable[ViewInfo], IEnumerable, IRhinoTable[ViewInfo]):
+    """ All named views in a rhino document. """
 
-class NamedViewTable(object,IEnumerable[ViewInfo],IEnumerable,IRhinoTable[ViewInfo]):
- """ All named views in a rhino document. """
- def Add(self,*__args):
-  """
+    def Add(self, *__args):
+        """
   Add(self: NamedViewTable,view: ViewInfo) -> int
 
   Add(self: NamedViewTable,name: str,viewportId: Guid) -> int
@@ -2720,9 +2969,10 @@ class NamedViewTable(object,IEnumerable[ViewInfo],IEnumerable,IRhinoTable[ViewIn
 
      -1 on failure.
   """
-  pass
- def Delete(self,*__args):
-  """
+        pass
+
+    def Delete(self, *__args):
+        """
   Delete(self: NamedViewTable,name: str) -> bool
 
   
@@ -2747,9 +2997,10 @@ class NamedViewTable(object,IEnumerable[ViewInfo],IEnumerable,IRhinoTable[ViewIn
 
    Returns: true if successful.
   """
-  pass
- def FindByName(self,name):
-  """
+        pass
+
+    def FindByName(self, name):
+        """
   FindByName(self: NamedViewTable,name: str) -> int
 
   
@@ -2764,12 +3015,14 @@ class NamedViewTable(object,IEnumerable[ViewInfo],IEnumerable,IRhinoTable[ViewIn
 
      -1 no named view found.
   """
-  pass
- def GetEnumerator(self):
-  """ GetEnumerator(self: NamedViewTable) -> IEnumerator[ViewInfo] """
-  pass
- def Restore(self,index,*__args):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """ GetEnumerator(self: NamedViewTable) -> IEnumerator[ViewInfo] """
+        pass
+
+    def Restore(self, index, *__args):
+        """
   Restore(self: NamedViewTable,index: int,viewport: RhinoViewport,backgroundBitmap: bool) -> bool
 
   Restore(self: NamedViewTable,index: int,view: RhinoView,backgroundBitmap: bool) -> bool
@@ -2778,9 +3031,10 @@ class NamedViewTable(object,IEnumerable[ViewInfo],IEnumerable,IRhinoTable[ViewIn
 
    Sets the MainViewport of a standard RhinoView to a named views settings
   """
-  pass
- def RestoreAnimated(self,index,*__args):
-  """
+        pass
+
+    def RestoreAnimated(self, index, *__args):
+        """
   RestoreAnimated(self: NamedViewTable,index: int,viewport: RhinoViewport,backgroundBitmap: bool) -> bool
 
   RestoreAnimated(self: NamedViewTable,index: int,viewport: RhinoViewport,backgroundBitmap: bool,frames: int,frameRate: int) -> bool
@@ -2789,27 +3043,34 @@ class NamedViewTable(object,IEnumerable[ViewInfo],IEnumerable,IRhinoTable[ViewIn
 
   RestoreAnimated(self: NamedViewTable,index: int,view: RhinoView,backgroundBitmap: bool,frames: int,frameRate: int) -> bool
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__[ViewInfo](enumerable: IEnumerable[ViewInfo],value: ViewInfo) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Number of named views in the table.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[ViewInfo](enumerable: IEnumerable[ViewInfo],value: ViewInfo) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Number of named views in the table.
 
 
 
@@ -2819,8 +3080,8 @@ Get: Count(self: NamedViewTable) -> int
 
 """
 
- Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Document that owns this table.
+    Document = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Document that owns this table.
 
 
 
@@ -2831,11 +3092,10 @@ Get: Document(self: NamedViewTable) -> RhinoDoc
 """
 
 
-
-class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
- # no doc
- def Add(self,geometry,attributes=None):
-  """
+class ObjectTable(object, IEnumerable[RhinoObject], IEnumerable):
+    # no doc
+    def Add(self, geometry, attributes=None):
+        """
   Add(self: ObjectTable,geometry: GeometryBase,attributes: ObjectAttributes) -> Guid
 
   
@@ -2874,18 +3134,22 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: The new object ID on success.
   """
-  pass
- def AddAngularDimension(self,dimension,attributes=None,history=None,reference=None):
-  """
+        pass
+
+    def AddAngularDimension(
+        self, dimension, attributes=None, history=None, reference=None
+    ):
+        """
   AddAngularDimension(self: ObjectTable,dimension: AngularDimension,attributes: ObjectAttributes,history: HistoryRecord,reference: bool) -> Guid
 
   AddAngularDimension(self: ObjectTable,dimension: AngularDimension,attributes: ObjectAttributes) -> Guid
 
   AddAngularDimension(self: ObjectTable,dimension: AngularDimension) -> Guid
   """
-  pass
- def AddArc(self,arc,attributes=None,history=None,reference=None):
-  """
+        pass
+
+    def AddArc(self, arc, attributes=None, history=None, reference=None):
+        """
   AddArc(self: ObjectTable,arc: Arc,attributes: ObjectAttributes,history: HistoryRecord,reference: bool) -> Guid
 
   AddArc(self: ObjectTable,arc: Arc,attributes: ObjectAttributes) -> Guid
@@ -2914,9 +3178,17 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: A unique identifier for the object.
   """
-  pass
- def AddBrep(self,brep,attributes=None,history=None,reference=None,splitKinkySurfaces=None):
-  """
+        pass
+
+    def AddBrep(
+        self,
+        brep,
+        attributes=None,
+        history=None,
+        reference=None,
+        splitKinkySurfaces=None,
+    ):
+        """
   AddBrep(self: ObjectTable,brep: Brep,attributes: ObjectAttributes,history: HistoryRecord,reference: bool) -> Guid
 
   AddBrep(self: ObjectTable,brep: Brep,attributes: ObjectAttributes,history: HistoryRecord,reference: bool,splitKinkySurfaces: bool) -> Guid
@@ -2947,9 +3219,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: A unique identifier for the object.
   """
-  pass
- def AddCircle(self,circle,attributes=None,history=None,reference=None):
-  """
+        pass
+
+    def AddCircle(self, circle, attributes=None, history=None, reference=None):
+        """
   AddCircle(self: ObjectTable,circle: Circle,attributes: ObjectAttributes,history: HistoryRecord,reference: bool) -> Guid
 
   AddCircle(self: ObjectTable,circle: Circle,attributes: ObjectAttributes) -> Guid
@@ -2978,9 +3251,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: A unique identifier for the object.
   """
-  pass
- def AddClippingPlane(self,plane,uMagnitude,vMagnitude,*__args):
-  """
+        pass
+
+    def AddClippingPlane(self, plane, uMagnitude, vMagnitude, *__args):
+        """
   AddClippingPlane(self: ObjectTable,plane: Plane,uMagnitude: float,vMagnitude: float,clippedViewportId: Guid,attributes: ObjectAttributes,history: HistoryRecord,reference: bool) -> Guid
 
   AddClippingPlane(self: ObjectTable,plane: Plane,uMagnitude: float,vMagnitude: float,clippedViewportIds: IEnumerable[Guid],attributes: ObjectAttributes,history: HistoryRecord,reference: bool) -> Guid
@@ -3007,9 +3281,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
   AddClippingPlane(self: ObjectTable,plane: Plane,uMagnitude: float,vMagnitude: float,clippedViewportIds: IEnumerable[Guid]) -> Guid
   """
-  pass
- def AddCurve(self,curve,attributes=None,history=None,reference=None):
-  """
+        pass
+
+    def AddCurve(self, curve, attributes=None, history=None, reference=None):
+        """
   AddCurve(self: ObjectTable,curve: Curve,attributes: ObjectAttributes,history: HistoryRecord,reference: bool) -> Guid
 
   AddCurve(self: ObjectTable,curve: Curve,attributes: ObjectAttributes) -> Guid
@@ -3038,9 +3313,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: A unique identifier for the object.
   """
-  pass
- def AddEllipse(self,ellipse,attributes=None,history=None,reference=None):
-  """
+        pass
+
+    def AddEllipse(self, ellipse, attributes=None, history=None, reference=None):
+        """
   AddEllipse(self: ObjectTable,ellipse: Ellipse,attributes: ObjectAttributes,history: HistoryRecord,reference: bool) -> Guid
 
   AddEllipse(self: ObjectTable,ellipse: Ellipse,attributes: ObjectAttributes) -> Guid
@@ -3069,12 +3345,16 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: A unique identifier for the object.
   """
-  pass
- def AddExplodedInstancePieces(self,instance,explodeNestedInstances,deleteInstance):
-  """ AddExplodedInstancePieces(self: ObjectTable,instance: InstanceObject,explodeNestedInstances: bool,deleteInstance: bool) -> Array[Guid] """
-  pass
- def AddExtrusion(self,extrusion,attributes=None,history=None,reference=None):
-  """
+        pass
+
+    def AddExplodedInstancePieces(
+        self, instance, explodeNestedInstances, deleteInstance
+    ):
+        """ AddExplodedInstancePieces(self: ObjectTable,instance: InstanceObject,explodeNestedInstances: bool,deleteInstance: bool) -> Array[Guid] """
+        pass
+
+    def AddExtrusion(self, extrusion, attributes=None, history=None, reference=None):
+        """
   AddExtrusion(self: ObjectTable,extrusion: Extrusion,attributes: ObjectAttributes,history: HistoryRecord,reference: bool) -> Guid
 
   AddExtrusion(self: ObjectTable,extrusion: Extrusion,attributes: ObjectAttributes) -> Guid
@@ -3103,25 +3383,30 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: A unique identifier for the object.
   """
-  pass
- def AddHatch(self,hatch,attributes=None,history=None,reference=None):
-  """
+        pass
+
+    def AddHatch(self, hatch, attributes=None, history=None, reference=None):
+        """
   AddHatch(self: ObjectTable,hatch: Hatch,attributes: ObjectAttributes,history: HistoryRecord,reference: bool) -> Guid
 
   AddHatch(self: ObjectTable,hatch: Hatch,attributes: ObjectAttributes) -> Guid
 
   AddHatch(self: ObjectTable,hatch: Hatch) -> Guid
   """
-  pass
- def AddInstanceObject(self,instanceDefinitionIndex,instanceXform,attributes=None):
-  """
+        pass
+
+    def AddInstanceObject(
+        self, instanceDefinitionIndex, instanceXform, attributes=None
+    ):
+        """
   AddInstanceObject(self: ObjectTable,instanceDefinitionIndex: int,instanceXform: Transform,attributes: ObjectAttributes) -> Guid
 
   AddInstanceObject(self: ObjectTable,instanceDefinitionIndex: int,instanceXform: Transform) -> Guid
   """
-  pass
- def AddLeader(self,*__args):
-  """
+        pass
+
+    def AddLeader(self, *__args):
+        """
   AddLeader(self: ObjectTable,text: str,plane: Plane,points: IEnumerable[Point2d]) -> Guid
 
   AddLeader(self: ObjectTable,text: str,points: IEnumerable[Point3d]) -> Guid
@@ -3136,9 +3421,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
   AddLeader(self: ObjectTable,text: str,plane: Plane,points: IEnumerable[Point2d],attributes: ObjectAttributes) -> Guid
   """
-  pass
- def AddLine(self,*__args):
-  """
+        pass
+
+    def AddLine(self, *__args):
+        """
   AddLine(self: ObjectTable,line: Line) -> Guid
 
   
@@ -3193,18 +3479,22 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: A unique identifier for the object.
   """
-  pass
- def AddLinearDimension(self,dimension,attributes=None,history=None,reference=None):
-  """
+        pass
+
+    def AddLinearDimension(
+        self, dimension, attributes=None, history=None, reference=None
+    ):
+        """
   AddLinearDimension(self: ObjectTable,dimension: LinearDimension,attributes: ObjectAttributes,history: HistoryRecord,reference: bool) -> Guid
 
   AddLinearDimension(self: ObjectTable,dimension: LinearDimension,attributes: ObjectAttributes) -> Guid
 
   AddLinearDimension(self: ObjectTable,dimension: LinearDimension) -> Guid
   """
-  pass
- def AddMesh(self,mesh,attributes=None,history=None,reference=None):
-  """
+        pass
+
+    def AddMesh(self, mesh, attributes=None, history=None, reference=None):
+        """
   AddMesh(self: ObjectTable,mesh: Mesh,attributes: ObjectAttributes,history: HistoryRecord,reference: bool) -> Guid
 
   AddMesh(self: ObjectTable,mesh: Mesh,attributes: ObjectAttributes) -> Guid
@@ -3233,16 +3523,20 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: A unique identifier for the object.
   """
-  pass
- def AddMorphControl(self,morphControl,attributes=None):
-  """
+        pass
+
+    def AddMorphControl(self, morphControl, attributes=None):
+        """
   AddMorphControl(self: ObjectTable,morphControl: MorphControl,attributes: ObjectAttributes) -> Guid
 
   AddMorphControl(self: ObjectTable,morphControl: MorphControl) -> Guid
   """
-  pass
- def AddPictureFrame(self,plane,texturePath,asMesh,width,height,selfIllumination,embedBitmap):
-  """
+        pass
+
+    def AddPictureFrame(
+        self, plane, texturePath, asMesh, width, height, selfIllumination, embedBitmap
+    ):
+        """
   AddPictureFrame(self: ObjectTable,plane: Plane,texturePath: str,asMesh: bool,width: float,height: float,selfIllumination: bool,embedBitmap: bool) -> Guid
 
   
@@ -3321,9 +3615,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: A unique identifier for the object
   """
-  pass
- def AddPoint(self,*__args):
-  """
+        pass
+
+    def AddPoint(self, *__args):
+        """
   AddPoint(self: ObjectTable,point: Point3d,attributes: ObjectAttributes,history: HistoryRecord,reference: bool) -> Guid
 
   
@@ -3416,9 +3711,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: A unique identifier for the object.
   """
-  pass
- def AddPointCloud(self,*__args):
-  """
+        pass
+
+    def AddPointCloud(self, *__args):
+        """
   AddPointCloud(self: ObjectTable,points: IEnumerable[Point3d]) -> Guid
 
   AddPointCloud(self: ObjectTable,points: IEnumerable[Point3d],attributes: ObjectAttributes) -> Guid
@@ -3475,9 +3771,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: A unique identifier for the object.
   """
-  pass
- def AddPoints(self,points,attributes=None):
-  """
+        pass
+
+    def AddPoints(self, points, attributes=None):
+        """
   AddPoints(self: ObjectTable,points: IEnumerable[Point3f]) -> RhinoList[Guid]
 
   AddPoints(self: ObjectTable,points: IEnumerable[Point3f],attributes: ObjectAttributes) -> RhinoList[Guid]
@@ -3486,39 +3783,46 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
   AddPoints(self: ObjectTable,points: IEnumerable[Point3d],attributes: ObjectAttributes) -> RhinoList[Guid]
   """
-  pass
- def AddPolyline(self,points,attributes=None,history=None,reference=None):
-  """
+        pass
+
+    def AddPolyline(self, points, attributes=None, history=None, reference=None):
+        """
   AddPolyline(self: ObjectTable,points: IEnumerable[Point3d],attributes: ObjectAttributes,history: HistoryRecord,reference: bool) -> Guid
 
   AddPolyline(self: ObjectTable,points: IEnumerable[Point3d],attributes: ObjectAttributes) -> Guid
 
   AddPolyline(self: ObjectTable,points: IEnumerable[Point3d]) -> Guid
   """
-  pass
- def AddRadialDimension(self,dimension,attributes=None,history=None,reference=None):
-  """
+        pass
+
+    def AddRadialDimension(
+        self, dimension, attributes=None, history=None, reference=None
+    ):
+        """
   AddRadialDimension(self: ObjectTable,dimension: RadialDimension,attributes: ObjectAttributes,history: HistoryRecord,reference: bool) -> Guid
 
   AddRadialDimension(self: ObjectTable,dimension: RadialDimension,attributes: ObjectAttributes) -> Guid
 
   AddRadialDimension(self: ObjectTable,dimension: RadialDimension) -> Guid
   """
-  pass
- def AddRhinoObject(self,*__args):
-  """ AddRhinoObject(self: ObjectTable,pointObject: CustomPointObject)AddRhinoObject(self: ObjectTable,pointObject: PointObject,point: Point)AddRhinoObject(self: ObjectTable,curveObject: CurveObject,curve: Curve)AddRhinoObject(self: ObjectTable,brepObject: BrepObject,brep: Brep)AddRhinoObject(self: ObjectTable,meshObject: CustomMeshObject)AddRhinoObject(self: ObjectTable,meshObject: MeshObject,mesh: Mesh)AddRhinoObject(self: ObjectTable,brepObject: CustomBrepObject) """
-  pass
- def AddSphere(self,sphere,attributes=None,history=None,reference=None):
-  """
+        pass
+
+    def AddRhinoObject(self, *__args):
+        """ AddRhinoObject(self: ObjectTable,pointObject: CustomPointObject)AddRhinoObject(self: ObjectTable,pointObject: PointObject,point: Point)AddRhinoObject(self: ObjectTable,curveObject: CurveObject,curve: Curve)AddRhinoObject(self: ObjectTable,brepObject: BrepObject,brep: Brep)AddRhinoObject(self: ObjectTable,meshObject: CustomMeshObject)AddRhinoObject(self: ObjectTable,meshObject: MeshObject,mesh: Mesh)AddRhinoObject(self: ObjectTable,brepObject: CustomBrepObject) """
+        pass
+
+    def AddSphere(self, sphere, attributes=None, history=None, reference=None):
+        """
   AddSphere(self: ObjectTable,sphere: Sphere,attributes: ObjectAttributes,history: HistoryRecord,reference: bool) -> Guid
 
   AddSphere(self: ObjectTable,sphere: Sphere,attributes: ObjectAttributes) -> Guid
 
   AddSphere(self: ObjectTable,sphere: Sphere) -> Guid
   """
-  pass
- def AddSurface(self,surface,attributes=None,history=None,reference=None):
-  """
+        pass
+
+    def AddSurface(self, surface, attributes=None, history=None, reference=None):
+        """
   AddSurface(self: ObjectTable,surface: Surface,attributes: ObjectAttributes,history: HistoryRecord,reference: bool) -> Guid
 
   AddSurface(self: ObjectTable,surface: Surface,attributes: ObjectAttributes) -> Guid
@@ -3547,9 +3851,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: A unique identifier for the object.
   """
-  pass
- def AddText(self,*__args):
-  """
+        pass
+
+    def AddText(self, *__args):
+        """
   AddText(self: ObjectTable,text: str,plane: Plane,height: float,fontName: str,bold: bool,italic: bool,attributes: ObjectAttributes,history: HistoryRecord,reference: bool) -> Guid
 
   AddText(self: ObjectTable,text: str,plane: Plane,height: float,fontName: str,bold: bool,italic: bool,attributes: ObjectAttributes) -> Guid
@@ -3636,9 +3941,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
   AddText(self: ObjectTable,text: str,plane: Plane,height: float,fontName: str,bold: bool,italic: bool,justification: TextJustification) -> Guid
   """
-  pass
- def AddTextDot(self,*__args):
-  """
+        pass
+
+    def AddTextDot(self, *__args):
+        """
   AddTextDot(self: ObjectTable,dot: TextDot,attributes: ObjectAttributes) -> Guid
 
   
@@ -3697,9 +4003,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: A unique identifier for the object.
   """
-  pass
- def AllObjectsSince(self,runtimeSerialNumber):
-  """
+        pass
+
+    def AllObjectsSince(self, runtimeSerialNumber):
+        """
   AllObjectsSince(self: ObjectTable,runtimeSerialNumber: UInt32) -> Array[RhinoObject]
 
   
@@ -3712,9 +4019,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: An array of objects or null if no objects were added since the given runtime serial number.
   """
-  pass
- def Delete(self,*__args):
-  """
+        pass
+
+    def Delete(self, *__args):
+        """
   Delete(self: ObjectTable,objectId: Guid,quiet: bool) -> bool
 
   
@@ -3759,9 +4067,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: true on success,false on failure.
   """
-  pass
- def Duplicate(self,*__args):
-  """
+        pass
+
+    def Duplicate(self, *__args):
+        """
   Duplicate(self: ObjectTable,objectId: Guid) -> Guid
 
   
@@ -3810,9 +4119,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: The new object ID.
   """
-  pass
- def Find(self,*__args):
-  """
+        pass
+
+    def Find(self, *__args):
+        """
   Find(self: ObjectTable,runtimeSerialNumber: UInt32) -> RhinoObject
 
   
@@ -3893,9 +4203,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: Reference to the rhino object with the objectId or null if no such object could be found.
   """
-  pass
- def FindByCrossingWindowRegion(self,viewport,*__args):
-  """
+        pass
+
+    def FindByCrossingWindowRegion(self, viewport, *__args):
+        """
   FindByCrossingWindowRegion(self: ObjectTable,viewport: RhinoViewport,screen1: Point2d,screen2: Point2d,inside: bool,filter: ObjectType) -> Array[RhinoObject]
 
   
@@ -3918,9 +4229,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
   FindByCrossingWindowRegion(self: ObjectTable,viewport: RhinoViewport,region: IEnumerable[Point3d],inside: bool,filter: ObjectType) -> Array[RhinoObject]
   """
-  pass
- def FindByDrawColor(self,drawColor,includeLights):
-  """
+        pass
+
+    def FindByDrawColor(self, drawColor, includeLights):
+        """
   FindByDrawColor(self: ObjectTable,drawColor: Color,includeLights: bool) -> Array[RhinoObject]
 
   
@@ -3935,9 +4247,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: An array of Rhino document objects. This array can be empty.
   """
-  pass
- def FindByFilter(self,filter):
-  """
+        pass
+
+    def FindByFilter(self, filter):
+        """
   FindByFilter(self: ObjectTable,filter: ObjectEnumeratorSettings) -> Array[RhinoObject]
 
   
@@ -3950,9 +4263,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: A Rhino object array. This array can be emptry but not null.
   """
-  pass
- def FindByGroup(self,groupIndex):
-  """
+        pass
+
+    def FindByGroup(self, groupIndex):
+        """
   FindByGroup(self: ObjectTable,groupIndex: int) -> Array[RhinoObject]
 
   
@@ -3965,9 +4279,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: An array of objects that belong to the specified group or null if no objects could be found.
   """
-  pass
- def FindByLayer(self,*__args):
-  """
+        pass
+
+    def FindByLayer(self, *__args):
+        """
   FindByLayer(self: ObjectTable,layerName: str) -> Array[RhinoObject]
 
   
@@ -3992,12 +4307,22 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: Array of objects that belong to the specified group or null if no objects could be found.
   """
-  pass
- def FindByObjectType(self,typeFilter):
-  """ FindByObjectType(self: ObjectTable,typeFilter: ObjectType) -> Array[RhinoObject] """
-  pass
- def FindByUserString(self,key,value,caseSensitive,searchGeometry=None,searchAttributes=None,filter=None):
-  """
+        pass
+
+    def FindByObjectType(self, typeFilter):
+        """ FindByObjectType(self: ObjectTable,typeFilter: ObjectType) -> Array[RhinoObject] """
+        pass
+
+    def FindByUserString(
+        self,
+        key,
+        value,
+        caseSensitive,
+        searchGeometry=None,
+        searchAttributes=None,
+        filter=None,
+    ):
+        """
   FindByUserString(self: ObjectTable,key: str,value: str,caseSensitive: bool,searchGeometry: bool,searchAttributes: bool,filter: ObjectEnumeratorSettings) -> Array[RhinoObject]
 
   
@@ -4092,9 +4417,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
     objects could be found.
   """
-  pass
- def FindByWindowRegion(self,viewport,*__args):
-  """
+        pass
+
+    def FindByWindowRegion(self, viewport, *__args):
+        """
   FindByWindowRegion(self: ObjectTable,viewport: RhinoViewport,screen1: Point2d,screen2: Point2d,inside: bool,filter: ObjectType) -> Array[RhinoObject]
 
   
@@ -4117,9 +4443,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
   FindByWindowRegion(self: ObjectTable,viewport: RhinoViewport,region: IEnumerable[Point3d],inside: bool,filter: ObjectType) -> Array[RhinoObject]
   """
-  pass
- def FindClippingPlanesForViewport(self,viewport):
-  """
+        pass
+
+    def FindClippingPlanesForViewport(self, viewport):
+        """
   FindClippingPlanesForViewport(self: ObjectTable,viewport: RhinoViewport) -> Array[ClippingPlaneObject]
 
   
@@ -4132,24 +4459,28 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: An array of clipping plane objects. The array can be emptry but not null.
   """
-  pass
- def GetEnumerator(self):
-  """ GetEnumerator(self: ObjectTable) -> IEnumerator[RhinoObject] """
-  pass
- def GetObjectList(self,*__args):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """ GetEnumerator(self: ObjectTable) -> IEnumerator[RhinoObject] """
+        pass
+
+    def GetObjectList(self, *__args):
+        """
   GetObjectList(self: ObjectTable,typeFilter: ObjectType) -> IEnumerable[RhinoObject]
 
   GetObjectList(self: ObjectTable,typeFilter: Type) -> IEnumerable[RhinoObject]
 
   GetObjectList(self: ObjectTable,settings: ObjectEnumeratorSettings) -> IEnumerable[RhinoObject]
   """
-  pass
- def GetSelectedObjects(self,includeLights,includeGrips):
-  """ GetSelectedObjects(self: ObjectTable,includeLights: bool,includeGrips: bool) -> IEnumerable[RhinoObject] """
-  pass
- def GripUpdate(self,obj,deleteOriginal):
-  """
+        pass
+
+    def GetSelectedObjects(self, includeLights, includeGrips):
+        """ GetSelectedObjects(self: ObjectTable,includeLights: bool,includeGrips: bool) -> IEnumerable[RhinoObject] """
+        pass
+
+    def GripUpdate(self, obj, deleteOriginal):
+        """
   GripUpdate(self: ObjectTable,obj: RhinoObject,deleteOriginal: bool) -> RhinoObject
 
   
@@ -4170,9 +4501,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: new RhinoObject on success; otherwise null.
   """
-  pass
- def Hide(self,*__args):
-  """
+        pass
+
+    def Hide(self, *__args):
+        """
   Hide(self: ObjectTable,objectId: Guid,ignoreLayerMode: bool) -> bool
 
   
@@ -4215,9 +4547,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: true if the object was successfully hidden.
   """
-  pass
- def Lock(self,*__args):
-  """
+        pass
+
+    def Lock(self, *__args):
+        """
   Lock(self: ObjectTable,objectId: Guid,ignoreLayerMode: bool) -> bool
 
   
@@ -4260,9 +4593,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: true if the object was successfully locked.
   """
-  pass
- def ModifyAttributes(self,*__args):
-  """
+        pass
+
+    def ModifyAttributes(self, *__args):
+        """
   ModifyAttributes(self: ObjectTable,objectId: Guid,newAttributes: ObjectAttributes,quiet: bool) -> bool
 
   
@@ -4311,9 +4645,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: true if successful.
   """
-  pass
- def ModifyRenderMaterial(self,*__args):
-  """
+        pass
+
+    def ModifyRenderMaterial(self, *__args):
+        """
   ModifyRenderMaterial(self: ObjectTable,objectId: Guid,material: RenderMaterial) -> bool
 
   
@@ -4374,18 +4709,20 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: Returns true on success otherwise returns false.
   """
-  pass
- def ModifyTextureMapping(self,*__args):
-  """
+        pass
+
+    def ModifyTextureMapping(self, *__args):
+        """
   ModifyTextureMapping(self: ObjectTable,obj: RhinoObject,channel: int,mapping: TextureMapping) -> bool
 
   ModifyTextureMapping(self: ObjectTable,objId: Guid,channel: int,mapping: TextureMapping) -> bool
 
   ModifyTextureMapping(self: ObjectTable,objRef: ObjRef,channel: int,mapping: TextureMapping) -> bool
   """
-  pass
- def MostRecentObject(self):
-  """
+        pass
+
+    def MostRecentObject(self):
+        """
   MostRecentObject(self: ObjectTable) -> RhinoObject
 
   
@@ -4394,12 +4731,14 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: The most recent (non-deleted) object in the document,or null if no such object exists.
   """
-  pass
- def ObjectCount(self,filter):
-  """ ObjectCount(self: ObjectTable,filter: ObjectEnumeratorSettings) -> int """
-  pass
- def Purge(self,*__args):
-  """
+        pass
+
+    def ObjectCount(self, filter):
+        """ ObjectCount(self: ObjectTable,filter: ObjectEnumeratorSettings) -> int """
+        pass
+
+    def Purge(self, *__args):
+        """
   Purge(self: ObjectTable,rhinoObject: RhinoObject) -> bool
 
   
@@ -4436,9 +4775,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: true if the object was purged; otherwise false.
   """
-  pass
- def Replace(self,*__args):
-  """
+        pass
+
+    def Replace(self, *__args):
+        """
   Replace(self: ObjectTable,objref: ObjRef,pointcloud: PointCloud) -> bool
 
   
@@ -4829,9 +5169,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: true if successful.
   """
-  pass
- def Select(self,*__args):
-  """
+        pass
+
+    def Select(self, *__args):
+        """
   Select(self: ObjectTable,objectId: Guid,select: bool,syncHighlight: bool) -> bool
 
   
@@ -5064,9 +5405,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: true on success,false on failure.
   """
-  pass
- def Show(self,*__args):
-  """
+        pass
+
+    def Show(self, *__args):
+        """
   Show(self: ObjectTable,objectId: Guid,ignoreLayerMode: bool) -> bool
 
   
@@ -5121,9 +5463,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: true if the object was successfully shown.
   """
-  pass
- def Transform(self,*__args):
-  """
+        pass
+
+    def Transform(self, *__args):
+        """
   Transform(self: ObjectTable,objectId: Guid,xform: Transform,deleteOriginal: bool) -> Guid
 
   
@@ -5224,9 +5567,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
     object has identical attributes.
   """
-  pass
- def TransformWithHistory(self,*__args):
-  """
+        pass
+
+    def TransformWithHistory(self, *__args):
+        """
   TransformWithHistory(self: ObjectTable,objectId: Guid,xform: Transform) -> Guid
 
   
@@ -5327,16 +5671,18 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
     object has identical attributes.
   """
-  pass
- def Undelete(self,*__args):
-  """
+        pass
+
+    def Undelete(self, *__args):
+        """
   Undelete(self: ObjectTable,rhinoObject: RhinoObject) -> bool
 
   Undelete(self: ObjectTable,runtimeSerialNumber: UInt32) -> bool
   """
-  pass
- def Unlock(self,*__args):
-  """
+        pass
+
+    def Unlock(self, *__args):
+        """
   Unlock(self: ObjectTable,objectId: Guid,ignoreLayerMode: bool) -> bool
 
   
@@ -5391,9 +5737,10 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: true if the object was successfully unlocked.
   """
-  pass
- def UnselectAll(self,ignorePersistentSelections=None):
-  """
+        pass
+
+    def UnselectAll(self, ignorePersistentSelections=None):
+        """
   UnselectAll(self: ObjectTable) -> int
 
   
@@ -5414,24 +5761,32 @@ class ObjectTable(object,IEnumerable[RhinoObject],IEnumerable):
 
    Returns: Number of object that were unselected.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__[RhinoObject](enumerable: IEnumerable[RhinoObject],value: RhinoObject) -> bool """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- BoundingBox=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the boundingbox for all objects (normal,locked and hidden) in this
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[RhinoObject](enumerable: IEnumerable[RhinoObject],value: RhinoObject) -> bool """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    BoundingBox = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the boundingbox for all objects (normal,locked and hidden) in this
 
    document that exist in "model" space. This bounding box does not include
 
@@ -5445,8 +5800,10 @@ Get: BoundingBox(self: ObjectTable) -> BoundingBox
 
 """
 
- BoundingBoxVisible=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the boundingbox for all visible objects (normal and locked) in this
+    BoundingBoxVisible = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the boundingbox for all visible objects (normal and locked) in this
 
    document that exist in "model" space. This bounding box does not include
 
@@ -5460,8 +5817,8 @@ Get: BoundingBoxVisible(self: ObjectTable) -> BoundingBox
 
 """
 
- Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the document that owns this object table.
+    Document = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the document that owns this object table.
 
 
 
@@ -5472,11 +5829,10 @@ Get: Document(self: ObjectTable) -> RhinoDoc
 """
 
 
-
 class StringTable(object):
- # no doc
- def Delete(self,*__args):
-  """
+    # no doc
+    def Delete(self, *__args):
+        """
   Delete(self: StringTable,key: str)Delete(self: StringTable,section: str,entry: str)
 
    Removes user data strings from the document.
@@ -5487,9 +5843,10 @@ class StringTable(object):
 
    entry: name of entry to delete. If null,all entries will be deleted for a given section.
   """
-  pass
- def GetEntryNames(self,section):
-  """
+        pass
+
+    def GetEntryNames(self, section):
+        """
   GetEntryNames(self: StringTable,section: str) -> Array[str]
 
   
@@ -5502,12 +5859,14 @@ class StringTable(object):
 
    Returns: An array of section names. This can be empty,but not null.
   """
-  pass
- def GetKey(self,i):
-  """ GetKey(self: StringTable,i: int) -> str """
-  pass
- def GetSectionNames(self):
-  """
+        pass
+
+    def GetKey(self, i):
+        """ GetKey(self: StringTable,i: int) -> str """
+        pass
+
+    def GetSectionNames(self):
+        """
   GetSectionNames(self: StringTable) -> Array[str]
 
   
@@ -5522,9 +5881,10 @@ class StringTable(object):
 
    Returns: An array of section names. This can be empty,but not null.
   """
-  pass
- def GetValue(self,*__args):
-  """
+        pass
+
+    def GetValue(self, *__args):
+        """
   GetValue(self: StringTable,section: str,entry: str) -> str
 
   
@@ -5543,9 +5903,10 @@ class StringTable(object):
 
   GetValue(self: StringTable,i: int) -> str
   """
-  pass
- def SetString(self,*__args):
-  """
+        pass
+
+    def SetString(self, *__args):
+        """
   SetString(self: StringTable,key: str,value: str) -> str
 
   SetString(self: StringTable,section: str,entry: str,value: str) -> str
@@ -5564,9 +5925,10 @@ class StringTable(object):
 
    Returns: The previous value if successful and a previous value existed.
   """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The number of user data strings in the current document.
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The number of user data strings in the current document.
 
 
 
@@ -5576,8 +5938,8 @@ Get: Count(self: StringTable) -> int
 
 """
 
- Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Document that owns this object table.
+    Document = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Document that owns this object table.
 
 
 
@@ -5588,11 +5950,10 @@ Get: Document(self: StringTable) -> RhinoDoc
 """
 
 
-
-class ViewTable(object,IEnumerable[RhinoView],IEnumerable):
- # no doc
- def Add(self,title,projection,position,floating):
-  """
+class ViewTable(object, IEnumerable[RhinoView], IEnumerable):
+    # no doc
+    def Add(self, title, projection, position, floating):
+        """
   Add(self: ViewTable,title: str,projection: DefinedViewportProjection,position: Rectangle,floating: bool) -> RhinoView
 
   
@@ -5611,9 +5972,10 @@ class ViewTable(object,IEnumerable[RhinoView],IEnumerable):
 
    Returns: The newly constructed Rhino view; or null on error.
   """
-  pass
- def AddPageView(self,title,pageWidth=None,pageHeight=None):
-  """
+        pass
+
+    def AddPageView(self, title, pageWidth=None, pageHeight=None):
+        """
   AddPageView(self: ViewTable,title: str,pageWidth: float,pageHeight: float) -> RhinoPageView
 
   
@@ -5646,12 +6008,14 @@ class ViewTable(object,IEnumerable[RhinoView],IEnumerable):
 
    Returns: The newly created page view on success; or null on error.
   """
-  pass
- def DefaultViewLayout(self):
-  """ DefaultViewLayout(self: ViewTable) """
-  pass
- def Find(self,*__args):
-  """
+        pass
+
+    def DefaultViewLayout(self):
+        """ DefaultViewLayout(self: ViewTable) """
+        pass
+
+    def Find(self, *__args):
+        """
   Find(self: ViewTable,mainViewportName: str,compareCase: bool) -> RhinoView
 
   
@@ -5692,18 +6056,22 @@ class ViewTable(object,IEnumerable[RhinoView],IEnumerable):
 
    Returns: View on success. null if the view could not be found in this document.
   """
-  pass
- def FlashObjects(self,list,useSelectionColor):
-  """ FlashObjects(self: ViewTable,list: IEnumerable[RhinoObject],useSelectionColor: bool) """
-  pass
- def FourViewLayout(self,useMatchingViews):
-  """ FourViewLayout(self: ViewTable,useMatchingViews: bool) """
-  pass
- def GetEnumerator(self):
-  """ GetEnumerator(self: ViewTable) -> IEnumerator[RhinoView] """
-  pass
- def GetPageViews(self):
-  """
+        pass
+
+    def FlashObjects(self, list, useSelectionColor):
+        """ FlashObjects(self: ViewTable,list: IEnumerable[RhinoObject],useSelectionColor: bool) """
+        pass
+
+    def FourViewLayout(self, useMatchingViews):
+        """ FourViewLayout(self: ViewTable,useMatchingViews: bool) """
+        pass
+
+    def GetEnumerator(self):
+        """ GetEnumerator(self: ViewTable) -> IEnumerator[RhinoView] """
+        pass
+
+    def GetPageViews(self):
+        """
   GetPageViews(self: ViewTable) -> Array[RhinoPageView]
 
   
@@ -5712,12 +6080,14 @@ class ViewTable(object,IEnumerable[RhinoView],IEnumerable):
 
    Returns: An array with all page views. The return value can be an empty array but not null.
   """
-  pass
- def GetStandardRhinoViews(self):
-  """ GetStandardRhinoViews(self: ViewTable) -> Array[RhinoView] """
-  pass
- def GetViewList(self,includeStandardViews,includePageViews):
-  """
+        pass
+
+    def GetStandardRhinoViews(self):
+        """ GetStandardRhinoViews(self: ViewTable) -> Array[RhinoView] """
+        pass
+
+    def GetViewList(self, includeStandardViews, includePageViews):
+        """
   GetViewList(self: ViewTable,includeStandardViews: bool,includePageViews: bool) -> Array[RhinoView]
 
   
@@ -5732,34 +6102,44 @@ class ViewTable(object,IEnumerable[RhinoView],IEnumerable):
 
    Returns: A array of Rhino views. This array can be emptry,but not null.
   """
-  pass
- def Redraw(self):
-  """
+        pass
+
+    def Redraw(self):
+        """
   Redraw(self: ViewTable)
 
    Redraws all views.
   """
-  pass
- def ThreeViewLayout(self,useMatchingViews):
-  """ ThreeViewLayout(self: ViewTable,useMatchingViews: bool) """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__[RhinoView](enumerable: IEnumerable[RhinoView],value: RhinoView) -> bool """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- ActiveView=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or Sets the active view.
+        pass
+
+    def ThreeViewLayout(self, useMatchingViews):
+        """ ThreeViewLayout(self: ViewTable,useMatchingViews: bool) """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[RhinoView](enumerable: IEnumerable[RhinoView],value: RhinoView) -> bool """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    ActiveView = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or Sets the active view.
 
 
 
@@ -5771,8 +6151,8 @@ Set: ActiveView(self: ViewTable)=value
 
 """
 
- Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Document that owns this object table.
+    Document = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Document that owns this object table.
 
 
 
@@ -5782,15 +6162,19 @@ Get: Document(self: ViewTable) -> RhinoDoc
 
 """
 
- ModelSpaceIsActive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: ModelSpaceIsActive(self: ViewTable) -> bool
+    ModelSpaceIsActive = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: ModelSpaceIsActive(self: ViewTable) -> bool
 
 
 
 """
 
- RedrawEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns or sets (enable or disables) screen redrawing.
+    RedrawEnabled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns or sets (enable or disables) screen redrawing.
 
 
 
@@ -5801,6 +6185,3 @@ Get: RedrawEnabled(self: ViewTable) -> bool
 Set: RedrawEnabled(self: ViewTable)=value
 
 """
-
-
-

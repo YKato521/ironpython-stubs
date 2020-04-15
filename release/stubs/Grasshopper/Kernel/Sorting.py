@@ -8,8 +8,10 @@
 # no functions
 # classes
 
+
 class GH_NetworkSorter(object):
     """ GH_NetworkSorter() """
+
     def CreateContext(self, objs):
         """ CreateContext(self: GH_NetworkSorter, objs: List[IGH_DocumentObject]) """
         pass
@@ -28,6 +30,7 @@ class GH_NetworkSorter(object):
 
 class GH_NetworkSorterNode(object):
     """ GH_NetworkSorterNode(obj_target: IGH_DocumentObject) """
+
     def AdjustTarget(self, bDamp, bLimit):
         """ AdjustTarget(self: GH_NetworkSorterNode, bDamp: Single, bLimit: Single) """
         pass
@@ -40,11 +43,11 @@ class GH_NetworkSorterNode(object):
         """ ConstructNodeForces(self: GH_NetworkSorterNode, objs: List[IGH_DocumentObject]) """
         pass
 
-    def RectangleClosestPoint(self, *args): #cannot find CLR method
+    def RectangleClosestPoint(self, *args):  # cannot find CLR method
         """ RectangleClosestPoint(self: GH_NetworkSorterNode, rec: RectangleF, pt: PointF) -> PointF """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, obj_target):
         """ __new__(cls: type, obj_target: IGH_DocumentObject) """
         pass
@@ -55,5 +58,3 @@ class GH_NetworkSorterNode(object):
     m_push_x = None
     m_push_y = None
     m_target = None
-
-

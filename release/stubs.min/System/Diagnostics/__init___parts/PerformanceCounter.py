@@ -1,5 +1,5 @@
-class PerformanceCounter(Component,IComponent,IDisposable,ISupportInitialize):
- """
+class PerformanceCounter(Component, IComponent, IDisposable, ISupportInitialize):
+    """
  Represents a Windows NT performance counter component.
 
  
@@ -16,34 +16,38 @@ class PerformanceCounter(Component,IComponent,IDisposable,ISupportInitialize):
 
  PerformanceCounter(categoryName: str,counterName: str,readOnly: bool)
  """
- def BeginInit(self):
-  """
+
+    def BeginInit(self):
+        """
   BeginInit(self: PerformanceCounter)
 
    Begins the initialization of a System.Diagnostics.PerformanceCounter instance used on a form or 
 
     by another component. The initialization occurs at runtime.
   """
-  pass
- def Close(self):
-  """
+        pass
+
+    def Close(self):
+        """
   Close(self: PerformanceCounter)
 
    Closes the performance counter and frees all the resources allocated by this performance counter 
 
     instance.
   """
-  pass
- @staticmethod
- def CloseSharedResources():
-  """
+        pass
+
+    @staticmethod
+    def CloseSharedResources():
+        """
   CloseSharedResources()
 
    Frees the performance counter library shared state allocated by the counters.
   """
-  pass
- def Decrement(self):
-  """
+        pass
+
+    def Decrement(self):
+        """
   Decrement(self: PerformanceCounter) -> Int64
 
   
@@ -52,21 +56,24 @@ class PerformanceCounter(Component,IComponent,IDisposable,ISupportInitialize):
 
    Returns: The decremented counter value.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: PerformanceCounter,disposing: bool) """
-  pass
- def EndInit(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: PerformanceCounter,disposing: bool) """
+        pass
+
+    def EndInit(self):
+        """
   EndInit(self: PerformanceCounter)
 
    Ends the initialization of a System.Diagnostics.PerformanceCounter instance that is used on a 
 
     form or by another component. The initialization occurs at runtime.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -85,9 +92,10 @@ class PerformanceCounter(Component,IComponent,IDisposable,ISupportInitialize):
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def Increment(self):
-  """
+        pass
+
+    def Increment(self):
+        """
   Increment(self: PerformanceCounter) -> Int64
 
   
@@ -96,9 +104,10 @@ class PerformanceCounter(Component,IComponent,IDisposable,ISupportInitialize):
 
    Returns: The incremented counter value.
   """
-  pass
- def IncrementBy(self,value):
-  """
+        pass
+
+    def IncrementBy(self, value):
+        """
   IncrementBy(self: PerformanceCounter,value: Int64) -> Int64
 
   
@@ -115,9 +124,10 @@ class PerformanceCounter(Component,IComponent,IDisposable,ISupportInitialize):
 
    Returns: The new counter value.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -148,9 +158,10 @@ class PerformanceCounter(Component,IComponent,IDisposable,ISupportInitialize):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def NextSample(self):
-  """
+        pass
+
+    def NextSample(self):
+        """
   NextSample(self: PerformanceCounter) -> CounterSample
 
   
@@ -161,9 +172,10 @@ class PerformanceCounter(Component,IComponent,IDisposable,ISupportInitialize):
 
     for this counter.
   """
-  pass
- def NextValue(self):
-  """
+        pass
+
+    def NextValue(self):
+        """
   NextValue(self: PerformanceCounter) -> Single
 
   
@@ -172,38 +184,43 @@ class PerformanceCounter(Component,IComponent,IDisposable,ISupportInitialize):
 
    Returns: The next calculated value that the system obtains for this counter.
   """
-  pass
- def RemoveInstance(self):
-  """
+        pass
+
+    def RemoveInstance(self):
+        """
   RemoveInstance(self: PerformanceCounter)
 
    Deletes the category instance specified by the System.Diagnostics.PerformanceCounter object 
 
     System.Diagnostics.PerformanceCounter.InstanceName property.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,categoryName=None,counterName=None,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, categoryName=None, counterName=None, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,categoryName: str,counterName: str,instanceName: str,machineName: str)
@@ -216,18 +233,24 @@ class PerformanceCounter(Component,IComponent,IDisposable,ISupportInitialize):
 
   __new__(cls: type,categoryName: str,counterName: str,readOnly: bool)
   """
-  pass
- def __str__(self,*args):
-  pass
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- CategoryName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the performance counter category for this performance counter.
+    CategoryName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the performance counter category for this performance counter.
 
 
 
@@ -239,8 +262,10 @@ Set: CategoryName(self: PerformanceCounter)=value
 
 """
 
- CounterHelp=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the description for this performance counter.
+    CounterHelp = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the description for this performance counter.
 
 
 
@@ -250,8 +275,10 @@ Get: CounterHelp(self: PerformanceCounter) -> str
 
 """
 
- CounterName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the performance counter that is associated with this System.Diagnostics.PerformanceCounter instance.
+    CounterName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the performance counter that is associated with this System.Diagnostics.PerformanceCounter instance.
 
 
 
@@ -263,8 +290,10 @@ Set: CounterName(self: PerformanceCounter)=value
 
 """
 
- CounterType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the counter type of the associated performance counter.
+    CounterType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the counter type of the associated performance counter.
 
 
 
@@ -274,22 +303,26 @@ Get: CounterType(self: PerformanceCounter) -> PerformanceCounterType
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- InstanceLifetime=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the lifetime of a process.
+    InstanceLifetime = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the lifetime of a process.
 
 
 
@@ -301,8 +334,10 @@ Set: InstanceLifetime(self: PerformanceCounter)=value
 
 """
 
- InstanceName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets an instance name for this performance counter.
+    InstanceName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets an instance name for this performance counter.
 
 
 
@@ -314,8 +349,10 @@ Set: InstanceName(self: PerformanceCounter)=value
 
 """
 
- MachineName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the computer name for this performance counter
+    MachineName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the computer name for this performance counter
 
 
 
@@ -327,8 +364,8 @@ Set: MachineName(self: PerformanceCounter)=value
 
 """
 
- RawValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the raw,or uncalculated,value of this counter.
+    RawValue = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the raw,or uncalculated,value of this counter.
 
 
 
@@ -340,8 +377,8 @@ Set: RawValue(self: PerformanceCounter)=value
 
 """
 
- ReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether this System.Diagnostics.PerformanceCounter instance is in read-only mode.
+    ReadOnly = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether this System.Diagnostics.PerformanceCounter instance is in read-only mode.
 
 
 
@@ -353,6 +390,4 @@ Set: ReadOnly(self: PerformanceCounter)=value
 
 """
 
-
- DefaultFileMappingSize=524288
-
+    DefaultFileMappingSize = 524288

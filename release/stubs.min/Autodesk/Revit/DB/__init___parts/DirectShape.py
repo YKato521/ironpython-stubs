@@ -1,11 +1,12 @@
-class DirectShape(Element,IDisposable):
- """
+class DirectShape(Element, IDisposable):
+    """
  This class is used to store externally created geometric shapes. Primary intended use is for importing shapes from other data formats such as IFC or STEP.
 
     A DirectShape object may be assigned a category. That will affect how that object is displayed in Revit.
  """
- def AppendShape(self,*__args):
-  """
+
+    def AppendShape(self, *__args):
+        """
   AppendShape(self: DirectShape,pGeomArr: IList[GeometryObject])AppendShape(self: DirectShape,pGeomArr: IList[GeometryObject],viewType: DirectShapeTargetViewType)AppendShape(self: DirectShape,ShapeBuilder: ShapeBuilder)
 
    Appends shape built by the supplied ShapeBuilderObject to shape representation 
@@ -22,9 +23,10 @@ class DirectShape(Element,IDisposable):
 
    ShapeBuilder: The ShapeBuilder object that was used to build the shape to be appended.
   """
-  pass
- def AreOptionsValid(self,options):
-  """
+        pass
+
+    def AreOptionsValid(self, options):
+        """
   AreOptionsValid(self: DirectShape,options: DirectShapeOptions) -> bool
 
   
@@ -41,9 +43,10 @@ class DirectShape(Element,IDisposable):
 
    Returns: True if the DirectShapeOptions are valid; false otherwise.
   """
-  pass
- def AreOptionsValidForTransientDirectShape(self,options):
-  """
+        pass
+
+    def AreOptionsValidForTransientDirectShape(self, options):
+        """
   AreOptionsValidForTransientDirectShape(self: DirectShape,options: DirectShapeOptions) -> bool
 
   
@@ -60,10 +63,11 @@ class DirectShape(Element,IDisposable):
 
    Returns: True if the DirectShapeOptions are valid; false otherwise.
   """
-  pass
- @staticmethod
- def CreateElement(document,categoryId,applicationId=None,applicationDataId=None):
-  """
+        pass
+
+    @staticmethod
+    def CreateElement(document, categoryId, applicationId=None, applicationDataId=None):
+        """
   CreateElement(document: Document,categoryId: ElementId,applicationId: str,applicationDataId: str) -> DirectShape
 
   
@@ -108,10 +112,19 @@ class DirectShape(Element,IDisposable):
 
    Returns: The created DirectShape object.
   """
-  pass
- @staticmethod
- def CreateElementInstance(document,typeId,categoryId,definitionId,trf,applicationId=None,applicationDataId=None):
-  """
+        pass
+
+    @staticmethod
+    def CreateElementInstance(
+        document,
+        typeId,
+        categoryId,
+        definitionId,
+        trf,
+        applicationId=None,
+        applicationDataId=None,
+    ):
+        """
   CreateElementInstance(document: Document,typeId: ElementId,categoryId: ElementId,definitionId: str,trf: Transform,applicationId: str,applicationDataId: str) -> DirectShape
 
   
@@ -192,10 +205,11 @@ class DirectShape(Element,IDisposable):
 
    Returns: The created DirectShape object.
   """
-  pass
- @staticmethod
- def CreateGeometryInstance(document,definition_id,trf):
-  """
+        pass
+
+    @staticmethod
+    def CreateGeometryInstance(document, definition_id, trf):
+        """
   CreateGeometryInstance(document: Document,definition_id: str,trf: Transform) -> IList[GeometryObject]
 
   
@@ -220,15 +234,18 @@ class DirectShape(Element,IDisposable):
 
      The caller function takes ownership
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetOptions(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetOptions(self):
+        """
   GetOptions(self: DirectShape) -> DirectShapeOptions
 
   
@@ -237,10 +254,11 @@ class DirectShape(Element,IDisposable):
 
    Returns: Options currently set for this DirectShape.
   """
-  pass
- @staticmethod
- def IsSupportedDocument(document):
-  """
+        pass
+
+    @staticmethod
+    def IsSupportedDocument(document):
+        """
   IsSupportedDocument(document: Document) -> bool
 
   
@@ -259,10 +277,11 @@ class DirectShape(Element,IDisposable):
 
     document,false otherwise.
   """
-  pass
- @staticmethod
- def IsValidCategoryId(categoryId,doc):
-  """
+        pass
+
+    @staticmethod
+    def IsValidCategoryId(categoryId, doc):
+        """
   IsValidCategoryId(categoryId: ElementId,doc: Document) -> bool
 
   
@@ -279,9 +298,10 @@ class DirectShape(Element,IDisposable):
 
     category.
   """
-  pass
- def IsValidGeometry(self,Geom):
-  """
+        pass
+
+    def IsValidGeometry(self, Geom):
+        """
   IsValidGeometry(self: DirectShape,Geom: Solid) -> bool
 
   
@@ -302,16 +322,18 @@ class DirectShape(Element,IDisposable):
 
    Returns: True if the supplied geometry object passes the validation criteria.
   """
-  pass
- def IsValidShape(self,shape,viewType=None):
-  """
+        pass
+
+    def IsValidShape(self, shape, viewType=None):
+        """
   IsValidShape(self: DirectShape,shape: IList[GeometryObject]) -> bool
 
   IsValidShape(self: DirectShape,shape: IList[GeometryObject],viewType: DirectShapeTargetViewType) -> bool
   """
-  pass
- def IsValidTypeId(self,typeId):
-  """
+        pass
+
+    def IsValidTypeId(self, typeId):
+        """
   IsValidTypeId(self: DirectShape,typeId: ElementId) -> bool
 
   
@@ -344,15 +366,18 @@ class DirectShape(Element,IDisposable):
 
     this object was not set previously.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetGUIDs(self,appGUID,appDataGUID):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetGUIDs(self, appGUID, appDataGUID):
+        """
   SetGUIDs(self: DirectShape,appGUID: str,appDataGUID: str)
 
    Sets the GUID of the application that has created this DirectShape element and
@@ -369,9 +394,10 @@ class DirectShape(Element,IDisposable):
 
    appDataGUID: GUID of the native data.
   """
-  pass
- def SetName(self,name):
-  """
+        pass
+
+    def SetName(self, name):
+        """
   SetName(self: DirectShape,name: str)
 
    Sets the name for the DirectShape element.
@@ -380,9 +406,10 @@ class DirectShape(Element,IDisposable):
 
    name: The name.
   """
-  pass
- def SetOptions(self,options):
-  """
+        pass
+
+    def SetOptions(self, options):
+        """
   SetOptions(self: DirectShape,options: DirectShapeOptions)
 
    Sets the options to use for this DirectShape.
@@ -391,9 +418,10 @@ class DirectShape(Element,IDisposable):
 
    options: Options to use for this DirectShape.
   """
-  pass
- def SetShape(self,*__args):
-  """
+        pass
+
+    def SetShape(self, *__args):
+        """
   SetShape(self: DirectShape,pGeomArr: IList[GeometryObject])SetShape(self: DirectShape,pGeomArr: IList[GeometryObject],viewType: DirectShapeTargetViewType)SetShape(self: DirectShape,pBuilder: ShapeBuilder)
 
    Sets the shape of this object to the one accumulated in the supplied Builder 
@@ -416,9 +444,10 @@ class DirectShape(Element,IDisposable):
 
     and the ShapeBuilder object will be reset.
   """
-  pass
- def SetTypeId(self,typeId):
-  """
+        pass
+
+    def SetTypeId(self, typeId):
+        """
   SetTypeId(self: DirectShape,typeId: ElementId)
 
    Sets the DirectShapeType for the DirectShape element.
@@ -429,18 +458,24 @@ class DirectShape(Element,IDisposable):
 
     once.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- ApplicationDataId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """A text string that identifies the data to the creating application.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    ApplicationDataId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """A text string that identifies the data to the creating application.
 
 
 
@@ -452,8 +487,10 @@ Set: ApplicationDataId(self: DirectShape)=value
 
 """
 
- ApplicationId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """A text string that identifies the creating application.
+    ApplicationId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """A text string that identifies the creating application.
 
 
 
@@ -465,8 +502,8 @@ Set: ApplicationId(self: DirectShape)=value
 
 """
 
- TypeId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Element id of a DirectShapeType object that holds properties to be shared by this element. Optional.
+    TypeId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Element id of a DirectShapeType object that holds properties to be shared by this element. Optional.
 
 
 
@@ -475,5 +512,3 @@ Get: TypeId(self: DirectShape) -> ElementId
 
 
 """
-
-

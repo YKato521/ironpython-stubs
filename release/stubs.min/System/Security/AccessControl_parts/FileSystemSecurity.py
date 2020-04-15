@@ -1,7 +1,16 @@
 class FileSystemSecurity(NativeObjectSecurity):
- """ Represents the access control and audit security for a file or directory. """
- def AccessRuleFactory(self,identityReference,accessMask,isInherited,inheritanceFlags,propagationFlags,type):
-  """
+    """ Represents the access control and audit security for a file or directory. """
+
+    def AccessRuleFactory(
+        self,
+        identityReference,
+        accessMask,
+        isInherited,
+        inheritanceFlags,
+        propagationFlags,
+        type,
+    ):
+        """
   AccessRuleFactory(self: FileSystemSecurity,identityReference: IdentityReference,accessMask: int,isInherited: bool,inheritanceFlags: InheritanceFlags,propagationFlags: PropagationFlags,type: AccessControlType) -> AccessRule
 
   
@@ -46,9 +55,10 @@ class FileSystemSecurity(NativeObjectSecurity):
 
     flags.
   """
-  pass
- def AddAccessRule(self,rule):
-  """
+        pass
+
+    def AddAccessRule(self, rule):
+        """
   AddAccessRule(self: FileSystemSecurity,rule: FileSystemAccessRule)
 
    Adds the specified access control list (ACL) permission to the current file or directory.
@@ -59,9 +69,10 @@ class FileSystemSecurity(NativeObjectSecurity):
 
     list (ACL) permission to add to a file or directory.
   """
-  pass
- def AddAuditRule(self,rule):
-  """
+        pass
+
+    def AddAuditRule(self, rule):
+        """
   AddAuditRule(self: FileSystemSecurity,rule: FileSystemAuditRule)
 
    Adds the specified audit rule to the current file or directory.
@@ -72,9 +83,18 @@ class FileSystemSecurity(NativeObjectSecurity):
 
     to a file or directory.
   """
-  pass
- def AuditRuleFactory(self,identityReference,accessMask,isInherited,inheritanceFlags,propagationFlags,flags):
-  """
+        pass
+
+    def AuditRuleFactory(
+        self,
+        identityReference,
+        accessMask,
+        isInherited,
+        inheritanceFlags,
+        propagationFlags,
+        flags,
+    ):
+        """
   AuditRuleFactory(self: FileSystemSecurity,identityReference: IdentityReference,accessMask: int,isInherited: bool,inheritanceFlags: InheritanceFlags,propagationFlags: PropagationFlags,flags: AuditFlags) -> AuditRule
 
   
@@ -115,9 +135,10 @@ class FileSystemSecurity(NativeObjectSecurity):
 
     rule for the specified user.
   """
-  pass
- def RemoveAccessRule(self,rule):
-  """
+        pass
+
+    def RemoveAccessRule(self, rule):
+        """
   RemoveAccessRule(self: FileSystemSecurity,rule: FileSystemAccessRule) -> bool
 
   
@@ -138,9 +159,10 @@ class FileSystemSecurity(NativeObjectSecurity):
 
    Returns: true if the access rule was removed; otherwise,false.
   """
-  pass
- def RemoveAccessRuleAll(self,rule):
-  """
+        pass
+
+    def RemoveAccessRuleAll(self, rule):
+        """
   RemoveAccessRuleAll(self: FileSystemSecurity,rule: FileSystemAccessRule)
 
    Removes all access control list (ACL) permissions for the specified user from the current file 
@@ -155,9 +177,10 @@ class FileSystemSecurity(NativeObjectSecurity):
 
     control list (ACL) permissions should be removed from a file or directory.
   """
-  pass
- def RemoveAccessRuleSpecific(self,rule):
-  """
+        pass
+
+    def RemoveAccessRuleSpecific(self, rule):
+        """
   RemoveAccessRuleSpecific(self: FileSystemSecurity,rule: FileSystemAccessRule)
 
    Removes a single matching allow or deny access control list (ACL) permission from the current 
@@ -172,9 +195,10 @@ class FileSystemSecurity(NativeObjectSecurity):
 
     control list (ACL) permissions should be removed from a file or directory.
   """
-  pass
- def RemoveAuditRule(self,rule):
-  """
+        pass
+
+    def RemoveAuditRule(self, rule):
+        """
   RemoveAuditRule(self: FileSystemSecurity,rule: FileSystemAuditRule) -> bool
 
   
@@ -191,9 +215,10 @@ class FileSystemSecurity(NativeObjectSecurity):
 
    Returns: true if the audit rule was removed; otherwise,false
   """
-  pass
- def RemoveAuditRuleAll(self,rule):
-  """
+        pass
+
+    def RemoveAuditRuleAll(self, rule):
+        """
   RemoveAuditRuleAll(self: FileSystemSecurity,rule: FileSystemAuditRule)
 
    Removes all audit rules for the specified user from the current file or directory.
@@ -204,9 +229,10 @@ class FileSystemSecurity(NativeObjectSecurity):
 
     rules should be removed from a file or directory.
   """
-  pass
- def RemoveAuditRuleSpecific(self,rule):
-  """
+        pass
+
+    def RemoveAuditRuleSpecific(self, rule):
+        """
   RemoveAuditRuleSpecific(self: FileSystemSecurity,rule: FileSystemAuditRule)
 
    Removes a single matching allow or deny audit rule from the current file or directory.
@@ -217,9 +243,10 @@ class FileSystemSecurity(NativeObjectSecurity):
 
     remove from a file or directory.
   """
-  pass
- def ResetAccessRule(self,rule):
-  """
+        pass
+
+    def ResetAccessRule(self, rule):
+        """
   ResetAccessRule(self: FileSystemSecurity,rule: FileSystemAccessRule)
 
    Adds the specified access control list (ACL) permission to the current file or directory and 
@@ -234,9 +261,10 @@ class FileSystemSecurity(NativeObjectSecurity):
 
     list (ACL) permission to add to a file or directory.
   """
-  pass
- def SetAccessRule(self,rule):
-  """
+        pass
+
+    def SetAccessRule(self, rule):
+        """
   SetAccessRule(self: FileSystemSecurity,rule: FileSystemAccessRule)
 
    Sets the specified access control list (ACL) permission for the current file or directory.
@@ -247,9 +275,10 @@ class FileSystemSecurity(NativeObjectSecurity):
 
     list (ACL) permission to set for a file or directory.
   """
-  pass
- def SetAuditRule(self,rule):
-  """
+        pass
+
+    def SetAuditRule(self, rule):
+        """
   SetAuditRule(self: FileSystemSecurity,rule: FileSystemAuditRule)
 
    Sets the specified audit rule for the current file or directory.
@@ -260,9 +289,12 @@ class FileSystemSecurity(NativeObjectSecurity):
 
     for a file or directory.
   """
-  pass
- AccessRightType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the enumeration that the System.Security.AccessControl.FileSystemSecurity class uses to represent access rights.
+        pass
+
+    AccessRightType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the enumeration that the System.Security.AccessControl.FileSystemSecurity class uses to represent access rights.
 
 
 
@@ -272,15 +304,19 @@ Get: AccessRightType(self: FileSystemSecurity) -> Type
 
 """
 
- AccessRulesModified=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that specifies whether the access rules associated with this System.Security.AccessControl.ObjectSecurity object have been modified.
+    AccessRulesModified = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that specifies whether the access rules associated with this System.Security.AccessControl.ObjectSecurity object have been modified.
 
 
 
 """
 
- AccessRuleType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the enumeration that the System.Security.AccessControl.FileSystemSecurity class uses to represent access rules.
+    AccessRuleType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the enumeration that the System.Security.AccessControl.FileSystemSecurity class uses to represent access rules.
 
 
 
@@ -290,15 +326,19 @@ Get: AccessRuleType(self: FileSystemSecurity) -> Type
 
 """
 
- AuditRulesModified=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that specifies whether the audit rules associated with this System.Security.AccessControl.ObjectSecurity object have been modified.
+    AuditRulesModified = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that specifies whether the audit rules associated with this System.Security.AccessControl.ObjectSecurity object have been modified.
 
 
 
 """
 
- AuditRuleType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the type that the System.Security.AccessControl.FileSystemSecurity class uses to represent audit rules.
+    AuditRuleType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the type that the System.Security.AccessControl.FileSystemSecurity class uses to represent audit rules.
 
 
 
@@ -308,32 +348,36 @@ Get: AuditRuleType(self: FileSystemSecurity) -> Type
 
 """
 
- GroupModified=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that specifies whether the group associated with the securable object has been modified.
+    GroupModified = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that specifies whether the group associated with the securable object has been modified.
 
 
 
 """
 
- IsContainer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a Boolean value that specifies whether this System.Security.AccessControl.ObjectSecurity object is a container object.
+    IsContainer = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a Boolean value that specifies whether this System.Security.AccessControl.ObjectSecurity object is a container object.
 
 
 
 """
 
- IsDS=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a Boolean value that specifies whether this System.Security.AccessControl.ObjectSecurity object is a directory object.
+    IsDS = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a Boolean value that specifies whether this System.Security.AccessControl.ObjectSecurity object is a directory object.
 
 
 
 """
 
- OwnerModified=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that specifies whether the owner of the securable object has been modified.
+    OwnerModified = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that specifies whether the owner of the securable object has been modified.
 
 
 
 """
-
-

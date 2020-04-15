@@ -1,8 +1,9 @@
-class ExportDWGSettings(Element,IDisposable):
- """ This element contains DWG/DXF export settings which are saved in a Revit document. """
- @staticmethod
- def Create(document,name,options=None):
-  """
+class ExportDWGSettings(Element, IDisposable):
+    """ This element contains DWG/DXF export settings which are saved in a Revit document. """
+
+    @staticmethod
+    def Create(document, name, options=None):
+        """
   Create(document: Document,name: str) -> ExportDWGSettings
 
   
@@ -49,15 +50,18 @@ class ExportDWGSettings(Element,IDisposable):
 
    Returns: The new DWG export settings instance.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetDWGExportOptions(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetDWGExportOptions(self):
+        """
   GetDWGExportOptions(self: ExportDWGSettings) -> DWGExportOptions
 
   
@@ -66,9 +70,10 @@ class ExportDWGSettings(Element,IDisposable):
 
    Returns: The options.
   """
-  pass
- def GetDXFExportOptions(self):
-  """
+        pass
+
+    def GetDXFExportOptions(self):
+        """
   GetDXFExportOptions(self: ExportDWGSettings) -> DXFExportOptions
 
   
@@ -77,10 +82,11 @@ class ExportDWGSettings(Element,IDisposable):
 
    Returns: The options
   """
-  pass
- @staticmethod
- def ListNames(aDoc):
-  """
+        pass
+
+    @staticmethod
+    def ListNames(aDoc):
+        """
   ListNames(aDoc: Document) -> IList[str]
 
   
@@ -93,12 +99,14 @@ class ExportDWGSettings(Element,IDisposable):
 
    Returns: An array of strings representing names of predefined setups.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def SetDWGExportOptions(self,options):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def SetDWGExportOptions(self, options):
+        """
   SetDWGExportOptions(self: ExportDWGSettings,options: DWGExportOptions)
 
    Sets the options stored in these settings.
@@ -107,9 +115,10 @@ class ExportDWGSettings(Element,IDisposable):
 
    options: The options.
   """
-  pass
- def SetDXFExportOptions(self,options):
-  """
+        pass
+
+    def SetDXFExportOptions(self, options):
+        """
   SetDXFExportOptions(self: ExportDWGSettings,options: DXFExportOptions)
 
    Sets the options stored in these settings.
@@ -118,16 +127,20 @@ class ExportDWGSettings(Element,IDisposable):
 
    options: The options.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

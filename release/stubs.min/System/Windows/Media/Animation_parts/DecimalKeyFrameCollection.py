@@ -1,13 +1,14 @@
-class DecimalKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerable):
- """
+class DecimalKeyFrameCollection(Freezable, ISealable, IList, ICollection, IEnumerable):
+    """
  Represents a collection of System.Windows.Media.Animation.DecimalKeyFrame objects.
 
  
 
  DecimalKeyFrameCollection()
  """
- def Add(self,keyFrame):
-  """
+
+    def Add(self, keyFrame):
+        """
   Add(self: DecimalKeyFrameCollection,keyFrame: DecimalKeyFrame) -> int
 
   
@@ -20,16 +21,18 @@ class DecimalKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerabl
 
    Returns: The index at which the keyFrame was added.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: DecimalKeyFrameCollection)
 
    Removes all System.Windows.Media.Animation.DecimalKeyFrame objects from the collection.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: DecimalKeyFrameCollection) -> DecimalKeyFrameCollection
 
   
@@ -48,9 +51,10 @@ class DecimalKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerabl
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCore(self,*args):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """
   CloneCore(self: DecimalKeyFrameCollection,sourceFreezable: Freezable)
 
    Makes this instance a deep copy of the specified 
@@ -67,9 +71,10 @@ class DecimalKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerabl
 
    sourceFreezable: The System.Windows.Media.Animation.DecimalKeyFrameCollection to clone.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """
   CloneCurrentValueCore(self: DecimalKeyFrameCollection,sourceFreezable: Freezable)
 
    Makes this instance a modifiable deep copy of the specified 
@@ -84,9 +89,10 @@ class DecimalKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerabl
 
    sourceFreezable: The System.Windows.Media.Animation.DecimalKeyFrameCollection to clone.
   """
-  pass
- def Contains(self,keyFrame):
-  """
+        pass
+
+    def Contains(self, keyFrame):
+        """
   Contains(self: DecimalKeyFrameCollection,keyFrame: DecimalKeyFrame) -> bool
 
   
@@ -103,9 +109,10 @@ class DecimalKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerabl
 
    Returns: true if the collection contains keyFrame; otherwise,false.
   """
-  pass
- def CopyTo(self,array,index):
-  """
+        pass
+
+    def CopyTo(self, array, index):
+        """
   CopyTo(self: DecimalKeyFrameCollection,array: Array[DecimalKeyFrame],index: int)
 
    Copies all of the System.Windows.Media.Animation.DecimalKeyFrame objects in a collection to a 
@@ -120,9 +127,10 @@ class DecimalKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerabl
 
    index: Index position in the array to which the contents of the collection are copied.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -131,9 +139,10 @@ class DecimalKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerabl
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """
   CreateInstanceCore(self: DecimalKeyFrameCollection) -> Freezable
 
   
@@ -142,9 +151,10 @@ class DecimalKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerabl
 
    Returns: A frozen instance of System.Windows.Media.Animation.DecimalKeyFrameCollection.
   """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: DecimalKeyFrameCollection,isChecking: bool) -> bool
 
   
@@ -171,9 +181,10 @@ class DecimalKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerabl
 
     having begun to change the frozen status of this object.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """
   GetAsFrozenCore(self: DecimalKeyFrameCollection,sourceFreezable: Freezable)
 
    Makes this instance a clone of the specified 
@@ -186,9 +197,10 @@ class DecimalKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerabl
 
    sourceFreezable: The System.Windows.Media.Animation.DecimalKeyFrameCollection object to clone and freeze.
   """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """
   GetCurrentValueAsFrozenCore(self: DecimalKeyFrameCollection,sourceFreezable: Freezable)
 
    Makes this instance a frozen clone of the specified 
@@ -203,9 +215,10 @@ class DecimalKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerabl
 
    sourceFreezable: The System.Windows.Media.Animation.DecimalKeyFrameCollection to copy and freeze.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: DecimalKeyFrameCollection) -> IEnumerator
 
   
@@ -214,9 +227,10 @@ class DecimalKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerabl
 
    Returns: An System.Collections.IEnumerator that can iterate through the collection.
   """
-  pass
- def IndexOf(self,keyFrame):
-  """
+        pass
+
+    def IndexOf(self, keyFrame):
+        """
   IndexOf(self: DecimalKeyFrameCollection,keyFrame: DecimalKeyFrame) -> int
 
   
@@ -235,9 +249,10 @@ class DecimalKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerabl
 
     otherwise,-1.
   """
-  pass
- def Insert(self,index,keyFrame):
-  """
+        pass
+
+    def Insert(self, index, keyFrame):
+        """
   Insert(self: DecimalKeyFrameCollection,index: int,keyFrame: DecimalKeyFrame)
 
    Inserts a System.Windows.Media.Animation.DecimalKeyFrame into a specific location within the 
@@ -252,16 +267,18 @@ class DecimalKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerabl
 
    keyFrame: The System.Windows.Media.Animation.DecimalKeyFrame object to insert in the collection.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: Freezable)
 
    Called when the current System.Windows.Freezable object is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -292,9 +309,10 @@ class DecimalKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerabl
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -311,9 +329,10 @@ class DecimalKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerabl
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -322,9 +341,10 @@ class DecimalKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerabl
 
     members that are not dependency properties.
   """
-  pass
- def Remove(self,keyFrame):
-  """
+        pass
+
+    def Remove(self, keyFrame):
+        """
   Remove(self: DecimalKeyFrameCollection,keyFrame: DecimalKeyFrame)
 
    Removes a System.Windows.Media.Animation.DecimalKeyFrame object from the collection.
@@ -333,9 +353,10 @@ class DecimalKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerabl
 
    keyFrame: Identifies the System.Windows.Media.Animation.DecimalKeyFrame to remove from the collection.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: DecimalKeyFrameCollection,index: int)
 
    Removes the System.Windows.Media.Animation.DecimalKeyFrame at the specified index position from 
@@ -348,9 +369,10 @@ class DecimalKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerabl
 
    index: Index position of the System.Windows.Media.Animation.DecimalKeyFrame to be removed.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -367,9 +389,10 @@ class DecimalKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerabl
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -380,9 +403,10 @@ class DecimalKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerabl
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -391,12 +415,14 @@ class DecimalKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerabl
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IList,value: object) -> bool
 
   
@@ -409,24 +435,30 @@ class DecimalKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerabl
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of key frames contained in the System.Windows.Media.Animation.DecimalKeyFrameCollection.
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of key frames contained in the System.Windows.Media.Animation.DecimalKeyFrameCollection.
 
 
 
@@ -436,8 +468,10 @@ Get: Count(self: DecimalKeyFrameCollection) -> int
 
 """
 
- IsFixedSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates if the collection size can ever change.
+    IsFixedSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates if the collection size can ever change.
 
 
 
@@ -447,8 +481,10 @@ Get: IsFixedSize(self: DecimalKeyFrameCollection) -> bool
 
 """
 
- IsReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates if the collection is read-only.
+    IsReadOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates if the collection is read-only.
 
 
 
@@ -458,8 +494,10 @@ Get: IsReadOnly(self: DecimalKeyFrameCollection) -> bool
 
 """
 
- IsSynchronized=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether access to the collection is synchronized (thread-safe).
+    IsSynchronized = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether access to the collection is synchronized (thread-safe).
 
 
 
@@ -469,8 +507,8 @@ Get: IsSynchronized(self: DecimalKeyFrameCollection) -> bool
 
 """
 
- SyncRoot=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an object that can be used to synchronize access to the collection.
+    SyncRoot = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an object that can be used to synchronize access to the collection.
 
 
 
@@ -480,6 +518,4 @@ Get: SyncRoot(self: DecimalKeyFrameCollection) -> object
 
 """
 
-
- Empty=None
-
+    Empty = None

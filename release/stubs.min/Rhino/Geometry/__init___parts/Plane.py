@@ -1,5 +1,5 @@
-class Plane(object,IEquatable[Plane],IEpsilonComparable[Plane]):
- """
+class Plane(object, IEquatable[Plane], IEpsilonComparable[Plane]):
+    """
  Represents the value of a center point and two axes in a plane in three dimensions.
 
  
@@ -14,8 +14,9 @@ class Plane(object,IEquatable[Plane],IEpsilonComparable[Plane]):
 
  Plane(a: float,b: float,c: float,d: float)
  """
- def ClosestParameter(self,testPoint,s,t):
-  """
+
+    def ClosestParameter(self, testPoint, s, t):
+        """
   ClosestParameter(self: Plane,testPoint: Point3d) -> (bool,float,float)
 
   
@@ -32,9 +33,10 @@ class Plane(object,IEquatable[Plane],IEpsilonComparable[Plane]):
 
     successfully.
   """
-  pass
- def ClosestPoint(self,testPoint):
-  """
+        pass
+
+    def ClosestPoint(self, testPoint):
+        """
   ClosestPoint(self: Plane,testPoint: Point3d) -> Point3d
 
   
@@ -49,9 +51,10 @@ class Plane(object,IEquatable[Plane],IEpsilonComparable[Plane]):
 
      or Point3d.Unset on failure.
   """
-  pass
- def DistanceTo(self,testPoint):
-  """
+        pass
+
+    def DistanceTo(self, testPoint):
+        """
   DistanceTo(self: Plane,testPoint: Point3d) -> float
 
   
@@ -70,18 +73,20 @@ class Plane(object,IEquatable[Plane],IEpsilonComparable[Plane]):
 
    Returns: Signed distance from this plane to testPoint.
   """
-  pass
- def EpsilonEquals(self,other,epsilon):
-  """
+        pass
+
+    def EpsilonEquals(self, other, epsilon):
+        """
   EpsilonEquals(self: Plane,other: Plane,epsilon: float) -> bool
 
   
 
    Check that all values in other are within epsilon of the values in this
   """
-  pass
- def Equals(self,*__args):
-  """
+        pass
+
+    def Equals(self, *__args):
+        """
   Equals(self: Plane,plane: Plane) -> bool
 
   
@@ -106,9 +111,10 @@ class Plane(object,IEquatable[Plane],IEpsilonComparable[Plane]):
 
    Returns: true if obj is a plane and has the same components as this plane; false otherwise.
   """
-  pass
- def ExtendThroughBox(self,box,s,t):
-  """
+        pass
+
+    def ExtendThroughBox(self, box, s, t):
+        """
   ExtendThroughBox(self: Plane,box: Box) -> (bool,Interval,Interval)
 
   
@@ -133,24 +139,27 @@ class Plane(object,IEquatable[Plane],IEpsilonComparable[Plane]):
 
    Returns: true on success,false on failure.
   """
-  pass
- @staticmethod
- def FitPlaneToPoints(points,plane,maximumDeviation=None):
-  """
+        pass
+
+    @staticmethod
+    def FitPlaneToPoints(points, plane, maximumDeviation=None):
+        """
   FitPlaneToPoints(points: IEnumerable[Point3d]) -> (PlaneFitResult,Plane,float)
 
   FitPlaneToPoints(points: IEnumerable[Point3d]) -> (PlaneFitResult,Plane)
   """
-  pass
- def Flip(self):
-  """
+        pass
+
+    def Flip(self):
+        """
   Flip(self: Plane)
 
    Flip this plane by swapping out the X and Y axes and inverting the Z axis.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Plane) -> int
 
   
@@ -159,9 +168,10 @@ class Plane(object,IEquatable[Plane],IEpsilonComparable[Plane]):
 
    Returns: A particular number for a specific instance of plane.
   """
-  pass
- def GetPlaneEquation(self):
-  """
+        pass
+
+    def GetPlaneEquation(self):
+        """
   GetPlaneEquation(self: Plane) -> Array[float]
 
   
@@ -170,9 +180,10 @@ class Plane(object,IEquatable[Plane],IEpsilonComparable[Plane]):
 
    Returns: Array of four values.
   """
-  pass
- def PointAt(self,u,v,w=None):
-  """
+        pass
+
+    def PointAt(self, u, v, w=None):
+        """
   PointAt(self: Plane,u: float,v: float,w: float) -> Point3d
 
   
@@ -203,9 +214,10 @@ class Plane(object,IEquatable[Plane],IEpsilonComparable[Plane]):
 
    Returns: plane.origin + u*plane.xaxis + v*plane.yaxis.
   """
-  pass
- def RemapToPlaneSpace(self,ptSample,ptPlane):
-  """
+        pass
+
+    def RemapToPlaneSpace(self, ptSample, ptPlane):
+        """
   RemapToPlaneSpace(self: Plane,ptSample: Point3d) -> (bool,Point3d)
 
   
@@ -218,9 +230,10 @@ class Plane(object,IEquatable[Plane],IEpsilonComparable[Plane]):
 
    Returns: true on success,false on failure.
   """
-  pass
- def Rotate(self,*__args):
-  """
+        pass
+
+    def Rotate(self, *__args):
+        """
   Rotate(self: Plane,angle: float,axis: Vector3d,centerOfRotation: Point3d) -> bool
 
   
@@ -285,9 +298,10 @@ class Plane(object,IEquatable[Plane],IEpsilonComparable[Plane]):
 
    Returns: true on success,false on failure.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: Plane) -> str
 
   
@@ -296,9 +310,10 @@ class Plane(object,IEquatable[Plane],IEpsilonComparable[Plane]):
 
    Returns: Text.
   """
-  pass
- def Transform(self,xform):
-  """
+        pass
+
+    def Transform(self, xform):
+        """
   Transform(self: Plane,xform: Transform) -> bool
 
   
@@ -311,9 +326,10 @@ class Plane(object,IEquatable[Plane],IEpsilonComparable[Plane]):
 
    Returns: true on success,false on failure.
   """
-  pass
- def Translate(self,delta):
-  """
+        pass
+
+    def Translate(self, delta):
+        """
   Translate(self: Plane,delta: Vector3d) -> bool
 
   
@@ -326,9 +342,10 @@ class Plane(object,IEquatable[Plane],IEpsilonComparable[Plane]):
 
    Returns: true on success,false on failure.
   """
-  pass
- def ValueAt(self,p):
-  """
+        pass
+
+    def ValueAt(self, p):
+        """
   ValueAt(self: Plane,p: Point3d) -> float
 
   
@@ -345,16 +362,19 @@ class Plane(object,IEquatable[Plane],IEpsilonComparable[Plane]):
 
     pe[3] are the coeeficients of the plane equation.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__[Plane]() -> Plane
 
   
@@ -369,18 +389,23 @@ class Plane(object,IEquatable[Plane],IEpsilonComparable[Plane]):
 
   __new__(cls: type,a: float,b: float,c: float,d: float)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- IsValid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether or not this is a valid plane. 
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    IsValid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether or not this is a valid plane. 
 
    A plane is considered to be valid when all fields contain reasonable 
 
@@ -394,8 +419,8 @@ Get: IsValid(self: Plane) -> bool
 
 """
 
- Normal=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the normal of this plane. This is essentially the ZAxis of the plane.
+    Normal = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the normal of this plane. This is essentially the ZAxis of the plane.
 
 
 
@@ -405,8 +430,8 @@ Get: Normal(self: Plane) -> Vector3d
 
 """
 
- Origin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the origin point of this plane.
+    Origin = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the origin point of this plane.
 
 
 
@@ -418,8 +443,8 @@ Set: Origin(self: Plane)=value
 
 """
 
- OriginX=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the X coordinate of the origin of this plane.
+    OriginX = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the X coordinate of the origin of this plane.
 
 
 
@@ -431,8 +456,8 @@ Set: OriginX(self: Plane)=value
 
 """
 
- OriginY=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Y coordinate of the origin of this plane.
+    OriginY = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Y coordinate of the origin of this plane.
 
 
 
@@ -444,8 +469,8 @@ Set: OriginY(self: Plane)=value
 
 """
 
- OriginZ=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Z coordinate of the origin of this plane.
+    OriginZ = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Z coordinate of the origin of this plane.
 
 
 
@@ -457,8 +482,8 @@ Set: OriginZ(self: Plane)=value
 
 """
 
- XAxis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the X axis vector of this plane.
+    XAxis = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the X axis vector of this plane.
 
 
 
@@ -470,8 +495,8 @@ Set: XAxis(self: Plane)=value
 
 """
 
- YAxis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Y axis vector of this plane.
+    YAxis = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Y axis vector of this plane.
 
 
 
@@ -483,8 +508,8 @@ Set: YAxis(self: Plane)=value
 
 """
 
- ZAxis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Z axis vector of this plane.
+    ZAxis = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Z axis vector of this plane.
 
 
 
@@ -496,9 +521,7 @@ Set: ZAxis(self: Plane)=value
 
 """
 
-
- Unset=None
- WorldXY=None
- WorldYZ=None
- WorldZX=None
-
+    Unset = None
+    WorldXY = None
+    WorldYZ = None
+    WorldZX = None

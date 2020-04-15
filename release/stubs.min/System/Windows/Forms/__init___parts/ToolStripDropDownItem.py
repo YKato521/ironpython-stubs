@@ -1,10 +1,19 @@
-class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISupportOleDropSource,IArrangedElement):
- """ Provides basic functionality for controls that display a System.Windows.Forms.ToolStripDropDown when a System.Windows.Forms.ToolStripDropDownButton,System.Windows.Forms.ToolStripMenuItem,or System.Windows.Forms.ToolStripSplitButton control is clicked. """
- def CreateAccessibilityInstance(self,*args):
-  """ CreateAccessibilityInstance(self: ToolStripDropDownItem) -> AccessibleObject """
-  pass
- def CreateDefaultDropDown(self,*args):
-  """
+class ToolStripDropDownItem(
+    ToolStripItem,
+    IComponent,
+    IDisposable,
+    IDropTarget,
+    ISupportOleDropSource,
+    IArrangedElement,
+):
+    """ Provides basic functionality for controls that display a System.Windows.Forms.ToolStripDropDown when a System.Windows.Forms.ToolStripDropDownButton,System.Windows.Forms.ToolStripMenuItem,or System.Windows.Forms.ToolStripSplitButton control is clicked. """
+
+    def CreateAccessibilityInstance(self, *args):
+        """ CreateAccessibilityInstance(self: ToolStripDropDownItem) -> AccessibleObject """
+        pass
+
+    def CreateDefaultDropDown(self, *args):
+        """
   CreateDefaultDropDown(self: ToolStripDropDownItem) -> ToolStripDropDown
 
   
@@ -13,9 +22,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    Returns: A System.Windows.Forms.ToolStripDropDown.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: ToolStripDropDownItem,disposing: bool)
 
    Releases the unmanaged resources used by the System.Windows.Forms.ToolStripDropDownItem and 
@@ -28,9 +38,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -49,16 +60,18 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def HideDropDown(self):
-  """
+        pass
+
+    def HideDropDown(self):
+        """
   HideDropDown(self: ToolStripDropDownItem)
 
    Makes a visible System.Windows.Forms.ToolStripDropDown hidden.
   """
-  pass
- def IsInputChar(self,*args):
-  """
+        pass
+
+    def IsInputChar(self, *args):
+        """
   IsInputChar(self: ToolStripItem,charCode: Char) -> bool
 
   
@@ -71,9 +84,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    Returns: true if the character should be sent directly to the item and not preprocessed; otherwise,false.
   """
-  pass
- def IsInputKey(self,*args):
-  """
+        pass
+
+    def IsInputKey(self, *args):
+        """
   IsInputKey(self: ToolStripItem,keyData: Keys) -> bool
 
   
@@ -90,9 +104,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    Returns: true if the specified key is a regular input key; otherwise,false.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -123,9 +138,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def OnAvailableChanged(self,*args):
-  """
+        pass
+
+    def OnAvailableChanged(self, *args):
+        """
   OnAvailableChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the AvailableChanged event.
@@ -134,9 +150,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBackColorChanged(self,*args):
-  """
+        pass
+
+    def OnBackColorChanged(self, *args):
+        """
   OnBackColorChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.BackColorChanged event.
@@ -145,12 +162,14 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBoundsChanged(self,*args):
-  """ OnBoundsChanged(self: ToolStripDropDownItem) """
-  pass
- def OnClick(self,*args):
-  """
+        pass
+
+    def OnBoundsChanged(self, *args):
+        """ OnBoundsChanged(self: ToolStripDropDownItem) """
+        pass
+
+    def OnClick(self, *args):
+        """
   OnClick(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.Click event.
@@ -159,9 +178,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDisplayStyleChanged(self,*args):
-  """
+        pass
+
+    def OnDisplayStyleChanged(self, *args):
+        """
   OnDisplayStyleChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DisplayStyleChanged event.
@@ -170,9 +190,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDoubleClick(self,*args):
-  """
+        pass
+
+    def OnDoubleClick(self, *args):
+        """
   OnDoubleClick(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DoubleClick event.
@@ -181,9 +202,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDragDrop(self,*args):
-  """
+        pass
+
+    def OnDragDrop(self, *args):
+        """
   OnDragDrop(self: ToolStripItem,dragEvent: DragEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DragDrop event.
@@ -192,9 +214,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    dragEvent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnDragEnter(self,*args):
-  """
+        pass
+
+    def OnDragEnter(self, *args):
+        """
   OnDragEnter(self: ToolStripItem,dragEvent: DragEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DragEnter event.
@@ -203,9 +226,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    dragEvent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnDragLeave(self,*args):
-  """
+        pass
+
+    def OnDragLeave(self, *args):
+        """
   OnDragLeave(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DragLeave event.
@@ -214,9 +238,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDragOver(self,*args):
-  """
+        pass
+
+    def OnDragOver(self, *args):
+        """
   OnDragOver(self: ToolStripItem,dragEvent: DragEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DragOver event.
@@ -225,9 +250,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    dragEvent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnDropDownClosed(self,*args):
-  """
+        pass
+
+    def OnDropDownClosed(self, *args):
+        """
   OnDropDownClosed(self: ToolStripDropDownItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripDropDownItem.DropDownClosed event.
@@ -236,9 +262,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDropDownHide(self,*args):
-  """
+        pass
+
+    def OnDropDownHide(self, *args):
+        """
   OnDropDownHide(self: ToolStripDropDownItem,e: EventArgs)
 
    Raised in response to the System.Windows.Forms.ToolStripDropDownItem.HideDropDown method.
@@ -247,9 +274,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDropDownItemClicked(self,*args):
-  """
+        pass
+
+    def OnDropDownItemClicked(self, *args):
+        """
   OnDropDownItemClicked(self: ToolStripDropDownItem,e: ToolStripItemClickedEventArgs)
 
    Raises the System.Windows.Forms.ToolStripDropDownItem.DropDownItemClicked event.
@@ -258,9 +286,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: A System.Windows.Forms.ToolStripItemClickedEventArgs that contains the event data.
   """
-  pass
- def OnDropDownOpened(self,*args):
-  """
+        pass
+
+    def OnDropDownOpened(self, *args):
+        """
   OnDropDownOpened(self: ToolStripDropDownItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripDropDownItem.DropDownOpened event.
@@ -269,9 +298,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDropDownShow(self,*args):
-  """
+        pass
+
+    def OnDropDownShow(self, *args):
+        """
   OnDropDownShow(self: ToolStripDropDownItem,e: EventArgs)
 
    Raised in response to the System.Windows.Forms.ToolStripDropDownItem.ShowDropDown method.
@@ -280,9 +310,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnEnabledChanged(self,*args):
-  """
+        pass
+
+    def OnEnabledChanged(self, *args):
+        """
   OnEnabledChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.EnabledChanged event.
@@ -291,9 +322,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnFontChanged(self,*args):
-  """
+        pass
+
+    def OnFontChanged(self, *args):
+        """
   OnFontChanged(self: ToolStripDropDownItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripDropDown.FontChanged event.
@@ -302,9 +334,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnForeColorChanged(self,*args):
-  """
+        pass
+
+    def OnForeColorChanged(self, *args):
+        """
   OnForeColorChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.ForeColorChanged event.
@@ -313,9 +346,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnGiveFeedback(self,*args):
-  """
+        pass
+
+    def OnGiveFeedback(self, *args):
+        """
   OnGiveFeedback(self: ToolStripItem,giveFeedbackEvent: GiveFeedbackEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.GiveFeedback event.
@@ -324,9 +358,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    giveFeedbackEvent: A System.Windows.Forms.GiveFeedbackEventArgs that contains the event data.
   """
-  pass
- def OnLayout(self,*args):
-  """
+        pass
+
+    def OnLayout(self, *args):
+        """
   OnLayout(self: ToolStripItem,e: LayoutEventArgs)
 
    Raises the System.Windows.Forms.Control.Layout event.
@@ -335,9 +370,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: A System.Windows.Forms.LayoutEventArgs that contains the event data.
   """
-  pass
- def OnLocationChanged(self,*args):
-  """
+        pass
+
+    def OnLocationChanged(self, *args):
+        """
   OnLocationChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.LocationChanged event.
@@ -346,9 +382,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseDown(self,*args):
-  """
+        pass
+
+    def OnMouseDown(self, *args):
+        """
   OnMouseDown(self: ToolStripItem,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseDown event.
@@ -357,9 +394,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseEnter(self,*args):
-  """
+        pass
+
+    def OnMouseEnter(self, *args):
+        """
   OnMouseEnter(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseEnter event.
@@ -368,9 +406,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseHover(self,*args):
-  """
+        pass
+
+    def OnMouseHover(self, *args):
+        """
   OnMouseHover(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseHover event.
@@ -379,9 +418,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseLeave(self,*args):
-  """
+        pass
+
+    def OnMouseLeave(self, *args):
+        """
   OnMouseLeave(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseLeave event.
@@ -390,9 +430,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseMove(self,*args):
-  """
+        pass
+
+    def OnMouseMove(self, *args):
+        """
   OnMouseMove(self: ToolStripItem,mea: MouseEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseMove event.
@@ -401,9 +442,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    mea: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseUp(self,*args):
-  """
+        pass
+
+    def OnMouseUp(self, *args):
+        """
   OnMouseUp(self: ToolStripItem,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseUp event.
@@ -412,9 +454,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnOwnerChanged(self,*args):
-  """
+        pass
+
+    def OnOwnerChanged(self, *args):
+        """
   OnOwnerChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.OwnerChanged event.
@@ -423,9 +466,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnOwnerFontChanged(self,*args):
-  """
+        pass
+
+    def OnOwnerFontChanged(self, *args):
+        """
   OnOwnerFontChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.FontChanged event when the 
@@ -440,9 +484,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: A System.EventArgs that contains the event data.
   """
-  pass
- def OnPaint(self,*args):
-  """
+        pass
+
+    def OnPaint(self, *args):
+        """
   OnPaint(self: ToolStripItem,e: PaintEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.Paint event.
@@ -451,9 +496,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: A System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def OnParentBackColorChanged(self,*args):
-  """
+        pass
+
+    def OnParentBackColorChanged(self, *args):
+        """
   OnParentBackColorChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.BackColorChanged event.
@@ -462,9 +508,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentChanged(self,*args):
-  """
+        pass
+
+    def OnParentChanged(self, *args):
+        """
   OnParentChanged(self: ToolStripItem,oldParent: ToolStrip,newParent: ToolStrip)
 
    Raises the System.Windows.Forms.Control.ParentChanged event.
@@ -475,9 +522,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    newParent: The new parent of the item.
   """
-  pass
- def OnParentEnabledChanged(self,*args):
-  """
+        pass
+
+    def OnParentEnabledChanged(self, *args):
+        """
   OnParentEnabledChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.EnabledChanged event when the 
@@ -490,9 +538,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentForeColorChanged(self,*args):
-  """
+        pass
+
+    def OnParentForeColorChanged(self, *args):
+        """
   OnParentForeColorChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.ForeColorChanged event.
@@ -501,9 +550,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentRightToLeftChanged(self,*args):
-  """
+        pass
+
+    def OnParentRightToLeftChanged(self, *args):
+        """
   OnParentRightToLeftChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.RightToLeftChanged event.
@@ -512,9 +562,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnQueryContinueDrag(self,*args):
-  """
+        pass
+
+    def OnQueryContinueDrag(self, *args):
+        """
   OnQueryContinueDrag(self: ToolStripItem,queryContinueDragEvent: QueryContinueDragEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.QueryContinueDrag event.
@@ -523,16 +574,18 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    queryContinueDragEvent: A System.Windows.Forms.QueryContinueDragEventArgs that contains the event data.
   """
-  pass
- def OnRightToLeftChanged(self,*args):
-  """
+        pass
+
+    def OnRightToLeftChanged(self, *args):
+        """
   OnRightToLeftChanged(self: ToolStripDropDownItem,e: EventArgs)
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnTextChanged(self,*args):
-  """
+        pass
+
+    def OnTextChanged(self, *args):
+        """
   OnTextChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.TextChanged event.
@@ -541,9 +594,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnVisibleChanged(self,*args):
-  """
+        pass
+
+    def OnVisibleChanged(self, *args):
+        """
   OnVisibleChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.VisibleChanged event.
@@ -552,9 +606,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def ProcessCmdKey(self,*args):
-  """
+        pass
+
+    def ProcessCmdKey(self, *args):
+        """
   ProcessCmdKey(self: ToolStripDropDownItem,m: Message,keyData: Keys) -> (bool,Message)
 
   
@@ -573,9 +628,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    Returns: false in all cases.
   """
-  pass
- def ProcessDialogKey(self,*args):
-  """
+        pass
+
+    def ProcessDialogKey(self, *args):
+        """
   ProcessDialogKey(self: ToolStripDropDownItem,keyData: Keys) -> bool
 
   
@@ -588,9 +644,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    Returns: true if the key was processed by the item; otherwise,false.
   """
-  pass
- def ProcessMnemonic(self,*args):
-  """
+        pass
+
+    def ProcessMnemonic(self, *args):
+        """
   ProcessMnemonic(self: ToolStripItem,charCode: Char) -> bool
 
   
@@ -603,9 +660,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    Returns: true in all cases.
   """
-  pass
- def SetBounds(self,*args):
-  """
+        pass
+
+    def SetBounds(self, *args):
+        """
   SetBounds(self: ToolStripItem,bounds: Rectangle)
 
    Sets the size and location of the item.
@@ -616,9 +674,10 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
     System.Windows.Forms.ToolStripItem
   """
-  pass
- def SetVisibleCore(self,*args):
-  """
+        pass
+
+    def SetVisibleCore(self, *args):
+        """
   SetVisibleCore(self: ToolStripItem,visible: bool)
 
    Sets the System.Windows.Forms.ToolStripItem to the specified visible state.
@@ -627,38 +686,43 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
    visible: true to make the System.Windows.Forms.ToolStripItem visible; otherwise,false.
   """
-  pass
- def ShowDropDown(self):
-  """
+        pass
+
+    def ShowDropDown(self):
+        """
   ShowDropDown(self: ToolStripDropDownItem)
 
    Displays the System.Windows.Forms.ToolStripDropDownItem control associated with this 
 
     System.Windows.Forms.ToolStripDropDownItem.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """
   __new__(cls: type)
 
   __new__(cls: type,text: str,image: Image,onClick: EventHandler)
@@ -667,67 +731,85 @@ class ToolStripDropDownItem(ToolStripItem,IComponent,IDisposable,IDropTarget,ISu
 
   __new__(cls: type,text: str,image: Image,*dropDownItems: Array[ToolStripItem])
   """
-  pass
- def __str__(self,*args):
-  pass
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- DefaultAutoToolTip=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether to display the System.Windows.Forms.ToolTip that is defined as the default.
+    DefaultAutoToolTip = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether to display the System.Windows.Forms.ToolTip that is defined as the default.
 
 
 
 """
 
- DefaultDisplayStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating what is displayed on the System.Windows.Forms.ToolStripItem.
+    DefaultDisplayStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating what is displayed on the System.Windows.Forms.ToolStripItem.
 
 
 
 """
 
- DefaultMargin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the default margin of an item.
+    DefaultMargin = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the default margin of an item.
 
 
 
 """
 
- DefaultPadding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the internal spacing characteristics of the item.
+    DefaultPadding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the internal spacing characteristics of the item.
 
 
 
 """
 
- DefaultSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the default size of the item.
+    DefaultSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the default size of the item.
 
 
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- DismissWhenClicked=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether items on a System.Windows.Forms.ToolStripDropDown are hidden after they are clicked.
+    DismissWhenClicked = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether items on a System.Windows.Forms.ToolStripDropDown are hidden after they are clicked.
 
 
 
 """
 
- DropDown=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Windows.Forms.ToolStripDropDown that will be displayed when this System.Windows.Forms.ToolStripDropDownItem is clicked.
+    DropDown = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the System.Windows.Forms.ToolStripDropDown that will be displayed when this System.Windows.Forms.ToolStripDropDownItem is clicked.
 
 
 
@@ -739,8 +821,10 @@ Set: DropDown(self: ToolStripDropDownItem)=value
 
 """
 
- DropDownDirection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating the direction in which the System.Windows.Forms.ToolStripDropDownItem emerges from its parent container.
+    DropDownDirection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating the direction in which the System.Windows.Forms.ToolStripDropDownItem emerges from its parent container.
 
 
 
@@ -752,8 +836,10 @@ Set: DropDownDirection(self: ToolStripDropDownItem)=value
 
 """
 
- DropDownItems=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of items in the System.Windows.Forms.ToolStripDropDown that is associated with this System.Windows.Forms.ToolStripDropDownItem.
+    DropDownItems = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the collection of items in the System.Windows.Forms.ToolStripDropDown that is associated with this System.Windows.Forms.ToolStripDropDownItem.
 
 
 
@@ -763,29 +849,35 @@ Get: DropDownItems(self: ToolStripDropDownItem) -> ToolStripItemCollection
 
 """
 
- DropDownLocation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the screen coordinates,in pixels,of the upper-left corner of the System.Windows.Forms.ToolStripDropDownItem.
+    DropDownLocation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the screen coordinates,in pixels,of the upper-left corner of the System.Windows.Forms.ToolStripDropDownItem.
 
 
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- HasDropDown=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: HasDropDown(self: ToolStripDropDownItem) -> bool
+    HasDropDown = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: HasDropDown(self: ToolStripDropDownItem) -> bool
 
 
 
 """
 
- HasDropDownItems=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Windows.Forms.ToolStripDropDownItem has System.Windows.Forms.ToolStripDropDown controls associated with it.
+    HasDropDownItems = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Windows.Forms.ToolStripDropDownItem has System.Windows.Forms.ToolStripDropDown controls associated with it.
 
 
 
@@ -795,15 +887,15 @@ Get: HasDropDownItems(self: ToolStripDropDownItem) -> bool
 
 """
 
- Parent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the parent container of the System.Windows.Forms.ToolStripItem.
+    Parent = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the parent container of the System.Windows.Forms.ToolStripItem.
 
 
 
 """
 
- Pressed=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Windows.Forms.ToolStripDropDownItem is in the pressed state.
+    Pressed = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the System.Windows.Forms.ToolStripDropDownItem is in the pressed state.
 
 
 
@@ -813,16 +905,16 @@ Get: Pressed(self: ToolStripDropDownItem) -> bool
 
 """
 
- ShowKeyboardCues=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether to show or hide shortcut keys.
+    ShowKeyboardCues = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether to show or hide shortcut keys.
 
 
 
 """
 
-
- DropDownClosed=None
- DropDownItemClicked=None
- DropDownOpened=None
- DropDownOpening=None
-
+    DropDownClosed = None
+    DropDownItemClicked = None
+    DropDownOpened = None
+    DropDownOpening = None

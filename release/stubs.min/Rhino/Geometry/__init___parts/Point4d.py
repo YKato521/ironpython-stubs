@@ -1,5 +1,5 @@
-class Point4d(object,ISerializable,IEquatable[Point4d],IEpsilonComparable[Point4d]):
- """
+class Point4d(object, ISerializable, IEquatable[Point4d], IEpsilonComparable[Point4d]):
+    """
  Represents the four coordinates of a point in four-dimensional space.
 
     The W (fourth) dimension is often considered the weight of the point as seen in 3D space.
@@ -10,9 +10,10 @@ class Point4d(object,ISerializable,IEquatable[Point4d],IEpsilonComparable[Point4
 
  Point4d(point: Point3d)
  """
- @staticmethod
- def Add(point1,point2):
-  """
+
+    @staticmethod
+    def Add(point1, point2):
+        """
   Add(point1: Point4d,point2: Point4d) -> Point4d
 
   
@@ -33,18 +34,20 @@ class Point4d(object,ISerializable,IEquatable[Point4d],IEpsilonComparable[Point4
 
    Returns: A new point that results from the weighted addition of point1 and point2.
   """
-  pass
- def EpsilonEquals(self,other,epsilon):
-  """
+        pass
+
+    def EpsilonEquals(self, other, epsilon):
+        """
   EpsilonEquals(self: Point4d,other: Point4d,epsilon: float) -> bool
 
   
 
    Check that all values in other are within epsilon of the values in this
   """
-  pass
- def Equals(self,*__args):
-  """
+        pass
+
+    def Equals(self, *__args):
+        """
   Equals(self: Point4d,point: Point4d) -> bool
 
   
@@ -73,9 +76,10 @@ class Point4d(object,ISerializable,IEquatable[Point4d],IEpsilonComparable[Point4
 
    Returns: true if obj is Point4d and has the same coordinates as this; otherwise false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Point4d) -> int
 
   
@@ -84,10 +88,11 @@ class Point4d(object,ISerializable,IEquatable[Point4d],IEpsilonComparable[Point4
 
    Returns: A non-unique hash code,which uses all coordiantes of this object.
   """
-  pass
- @staticmethod
- def Multiply(point,d):
-  """
+        pass
+
+    @staticmethod
+    def Multiply(point, d):
+        """
   Multiply(point: Point4d,d: float) -> Point4d
 
   
@@ -108,10 +113,11 @@ class Point4d(object,ISerializable,IEquatable[Point4d],IEpsilonComparable[Point4
 
    Returns: A new point that results from the coordinatewise multiplication of point with d.
   """
-  pass
- @staticmethod
- def Subtract(point1,point2):
-  """
+        pass
+
+    @staticmethod
+    def Subtract(point1, point2):
+        """
   Subtract(point1: Point4d,point2: Point4d) -> Point4d
 
   
@@ -132,22 +138,27 @@ class Point4d(object,ISerializable,IEquatable[Point4d],IEpsilonComparable[Point4
 
    Returns: A new point that results from the weighted subtraction of point2 from point1.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __mul__(self,*args):
-  """ x.__mul__(y) <==> x*yx.__mul__(y) <==> x*y """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __mul__(self, *args):
+        """ x.__mul__(y) <==> x*yx.__mul__(y) <==> x*y """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__[Point4d]() -> Point4d
 
   
@@ -156,11 +167,13 @@ class Point4d(object,ISerializable,IEquatable[Point4d],IEpsilonComparable[Point4
 
   __new__(cls: type,point: Point3d)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __radd__(self,*args):
-  """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __radd__(self, *args):
+        """
   __radd__(point1: Point4d,point2: Point4d) -> Point4d
 
   
@@ -175,14 +188,17 @@ class Point4d(object,ISerializable,IEquatable[Point4d],IEpsilonComparable[Point4
 
    Returns: A new point that results from the weighted addition of point1 and point2.
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __rmul__(self,*args):
-  """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __rmul__(self, *args):
+        """
   __rmul__(point1: Point4d,point2: Point4d) -> float
 
   
@@ -203,9 +219,10 @@ class Point4d(object,ISerializable,IEquatable[Point4d],IEpsilonComparable[Point4
 
    Returns: A value that results from the coordinatewise multiplication of point1 and point2.
   """
-  pass
- def __rsub__(self,*args):
-  """
+        pass
+
+    def __rsub__(self, *args):
+        """
   __rsub__(point1: Point4d,point2: Point4d) -> Point4d
 
   
@@ -220,14 +237,17 @@ class Point4d(object,ISerializable,IEquatable[Point4d],IEpsilonComparable[Point4
 
    Returns: A new point that results from the weighted subtraction of point2 from point1.
   """
-  pass
- def __str__(self,*args):
-  pass
- def __sub__(self,*args):
-  """ x.__sub__(y) <==> x-y """
-  pass
- W=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the W (fourth) coordinate -or weight- of this point.
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    def __sub__(self, *args):
+        """ x.__sub__(y) <==> x-y """
+        pass
+
+    W = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the W (fourth) coordinate -or weight- of this point.
 
 
 
@@ -239,8 +259,8 @@ Set: W(self: Point4d)=value
 
 """
 
- X=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the X (first) coordinate of this point.
+    X = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the X (first) coordinate of this point.
 
 
 
@@ -252,8 +272,8 @@ Set: X(self: Point4d)=value
 
 """
 
- Y=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Y (second) coordinate of this point.
+    Y = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Y (second) coordinate of this point.
 
 
 
@@ -265,8 +285,8 @@ Set: Y(self: Point4d)=value
 
 """
 
- Z=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Z (third) coordinate of this point.
+    Z = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Z (third) coordinate of this point.
 
 
 
@@ -278,6 +298,4 @@ Set: Z(self: Point4d)=value
 
 """
 
-
- Unset=None
-
+    Unset = None

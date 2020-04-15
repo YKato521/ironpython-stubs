@@ -1,5 +1,5 @@
 class UV(object):
- """
+    """
  Object representing coordinates in 2-dimensional space.
 
  
@@ -8,8 +8,9 @@ class UV(object):
 
  UV()
  """
- def Add(self,source):
-  """
+
+    def Add(self, source):
+        """
   Add(self: UV,source: UV) -> UV
 
   
@@ -22,9 +23,10 @@ class UV(object):
 
    Returns: The 2-D vector equal to the sum of the two vectors.
   """
-  pass
- def AngleTo(self,source):
-  """
+        pass
+
+    def AngleTo(self, source):
+        """
   AngleTo(self: UV,source: UV) -> float
 
   
@@ -39,9 +41,10 @@ class UV(object):
 
     in radians.
   """
-  pass
- def CrossProduct(self,source):
-  """
+        pass
+
+    def CrossProduct(self, source):
+        """
   CrossProduct(self: UV,source: UV) -> float
 
   
@@ -54,9 +57,10 @@ class UV(object):
 
    Returns: The real number equal to the cross product.
   """
-  pass
- def DistanceTo(self,source):
-  """
+        pass
+
+    def DistanceTo(self, source):
+        """
   DistanceTo(self: UV,source: UV) -> float
 
   
@@ -69,9 +73,10 @@ class UV(object):
 
    Returns: The real number equal to the distance between the two points.
   """
-  pass
- def Divide(self,value):
-  """
+        pass
+
+    def Divide(self, value):
+        """
   Divide(self: UV,value: float) -> UV
 
   
@@ -84,9 +89,10 @@ class UV(object):
 
    Returns: The divided 2-D vector.
   """
-  pass
- def DotProduct(self,source):
-  """
+        pass
+
+    def DotProduct(self, source):
+        """
   DotProduct(self: UV,source: UV) -> float
 
   
@@ -99,18 +105,20 @@ class UV(object):
 
    Returns: The real number equal to the dot product.
   """
-  pass
- def GetLength(self):
-  """
+        pass
+
+    def GetLength(self):
+        """
   GetLength(self: UV) -> float
 
   
 
    The length of this 2-D vector.
   """
-  pass
- def IsAlmostEqualTo(self,source,tolerance=None):
-  """
+        pass
+
+    def IsAlmostEqualTo(self, source, tolerance=None):
+        """
   IsAlmostEqualTo(self: UV,source: UV) -> bool
 
   
@@ -145,27 +153,30 @@ class UV(object):
 
    Returns: True if the vectors are the same; otherwise,false.
   """
-  pass
- def IsUnitLength(self):
-  """
+        pass
+
+    def IsUnitLength(self):
+        """
   IsUnitLength(self: UV) -> bool
 
   
 
    The boolean value indicates whether this 2-D vector is of unit length.
   """
-  pass
- def IsZeroLength(self):
-  """
+        pass
+
+    def IsZeroLength(self):
+        """
   IsZeroLength(self: UV) -> bool
 
   
 
    The boolean value indicates whether this 2-D vector is a zero vector.
   """
-  pass
- def Multiply(self,value):
-  """
+        pass
+
+    def Multiply(self, value):
+        """
   Multiply(self: UV,value: float) -> UV
 
   
@@ -178,9 +189,10 @@ class UV(object):
 
    Returns: The multiplied 2-D vector.
   """
-  pass
- def Negate(self):
-  """
+        pass
+
+    def Negate(self):
+        """
   Negate(self: UV) -> UV
 
   
@@ -189,9 +201,10 @@ class UV(object):
 
    Returns: The 2-D vector opposite to this vector.
   """
-  pass
- def Normalize(self):
-  """
+        pass
+
+    def Normalize(self):
+        """
   Normalize(self: UV) -> UV
 
   
@@ -200,9 +213,10 @@ class UV(object):
 
    Returns: The normalized UV or zero if the vector is almost Zero.
   """
-  pass
- def Subtract(self,source):
-  """
+        pass
+
+    def Subtract(self, source):
+        """
   Subtract(self: UV,source: UV) -> UV
 
   
@@ -215,41 +229,49 @@ class UV(object):
 
    Returns: The 2-D vector equal to the difference between the two vectors.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: UV) -> str
 
   
 
    Gets formatted string showing (U,V) with values formatted to 9 decimal places.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __div__(self,*args):
-  """ x.__div__(y) <==> x/y """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __mul__(self,*args):
-  """ x.__mul__(y) <==> x*y """
-  pass
- def __neg__(self,*args):
-  """ x.__neg__() <==> -x """
-  pass
- @staticmethod
- def __new__(self,u=None,v=None):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __div__(self, *args):
+        """ x.__div__(y) <==> x/y """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __mul__(self, *args):
+        """ x.__mul__(y) <==> x*y """
+        pass
+
+    def __neg__(self, *args):
+        """ x.__neg__() <==> -x """
+        pass
+
+    @staticmethod
+    def __new__(self, u=None, v=None):
+        """
   __new__(cls: type,u: float,v: float)
 
   __new__(cls: type)
   """
-  pass
- def __radd__(self,*args):
-  """
+        pass
+
+    def __radd__(self, *args):
+        """
   __radd__(left: UV,right: UV) -> UV
 
   
@@ -264,9 +286,10 @@ class UV(object):
 
    Returns: The 2-D vector equal to the sum of the two source vectors.
   """
-  pass
- def __rmul__(self,*args):
-  """
+        pass
+
+    def __rmul__(self, *args):
+        """
   __rmul__(value: float,right: UV) -> UV
 
   
@@ -281,9 +304,10 @@ class UV(object):
 
    Returns: The multiplied 2-D vector.
   """
-  pass
- def __rsub__(self,*args):
-  """
+        pass
+
+    def __rsub__(self, *args):
+        """
   __rsub__(left: UV,right: UV) -> UV
 
   
@@ -298,12 +322,14 @@ class UV(object):
 
    Returns: The 2-D vector equal to the difference between the two source vectors.
   """
-  pass
- def __sub__(self,*args):
-  """ x.__sub__(y) <==> x-y """
-  pass
- U=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the first coordinate.
+        pass
+
+    def __sub__(self, *args):
+        """ x.__sub__(y) <==> x-y """
+        pass
+
+    U = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the first coordinate.
 
 
 
@@ -313,8 +339,8 @@ Get: U(self: UV) -> float
 
 """
 
- V=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the second coordinate.
+    V = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the second coordinate.
 
 
 
@@ -324,8 +350,6 @@ Get: V(self: UV) -> float
 
 """
 
-
- BasisU=None
- BasisV=None
- Zero=None
-
+    BasisU = None
+    BasisV = None
+    Zero = None

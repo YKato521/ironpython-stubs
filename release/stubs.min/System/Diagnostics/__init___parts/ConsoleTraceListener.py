@@ -1,5 +1,5 @@
-class ConsoleTraceListener(TextWriterTraceListener,IDisposable):
- """
+class ConsoleTraceListener(TextWriterTraceListener, IDisposable):
+    """
  Directs tracing or debugging output to either the standard output or the standard error stream.
 
  
@@ -8,15 +8,17 @@ class ConsoleTraceListener(TextWriterTraceListener,IDisposable):
 
  ConsoleTraceListener(useErrorStream: bool)
  """
- def Close(self):
-  """
+
+    def Close(self):
+        """
   Close(self: ConsoleTraceListener)
 
    Closes the output to the stream specified for this trace listener.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: TextWriterTraceListener,disposing: bool)
 
    Disposes this System.Diagnostics.TextWriterTraceListener object.
@@ -27,9 +29,10 @@ class ConsoleTraceListener(TextWriterTraceListener,IDisposable):
 
     System.Diagnostics.TextWriterTraceListener.Dispose(System.Boolean) has no effect.
   """
-  pass
- def GetSupportedAttributes(self,*args):
-  """
+        pass
+
+    def GetSupportedAttributes(self, *args):
+        """
   GetSupportedAttributes(self: TraceListener) -> Array[str]
 
   
@@ -40,9 +43,10 @@ class ConsoleTraceListener(TextWriterTraceListener,IDisposable):
 
     are no custom attributes.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -73,48 +77,54 @@ class ConsoleTraceListener(TextWriterTraceListener,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def WriteIndent(self,*args):
-  """
+        pass
+
+    def WriteIndent(self, *args):
+        """
   WriteIndent(self: TraceListener)
 
    Writes the indent to the listener you create when you implement this class,and resets the 
 
     System.Diagnostics.TraceListener.NeedIndent property to false.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,useErrorStream=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, useErrorStream=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,useErrorStream: bool)
   """
-  pass
- NeedIndent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether to indent the output.
+        pass
+
+    NeedIndent = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether to indent the output.
 
 
 
 """
-
-

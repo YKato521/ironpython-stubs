@@ -8,8 +8,9 @@
 # no functions
 # classes
 
+
 class Field(object):
- """
+    """
  Generic data fields used to add publicly accessible properties to
 
     RenderContent.FieldDictionary.  These should be created by calling a
@@ -24,8 +25,9 @@ class Field(object):
 
     up the C++ pointers when they are disposed of.
  """
- def CreateCppPointer(self,*args):
-  """
+
+    def CreateCppPointer(self, *args):
+        """
   CreateCppPointer(self: Field,content: RenderContent,attachToPointer: IntPtr)
 
    Create the RDK C++ field object and set its initial value,fields are
@@ -60,9 +62,10 @@ class Field(object):
 
    attachToPointer: Existing C++ pointer to attach to.
   """
-  pass
- def ValueAsBool(self,*args):
-  """
+        pass
+
+    def ValueAsBool(self, *args):
+        """
   ValueAsBool(self: Field) -> bool
 
   
@@ -71,9 +74,10 @@ class Field(object):
 
    Returns: Returns field value as a bool.
   """
-  pass
- def ValueAsByteArray(self,*args):
-  """
+        pass
+
+    def ValueAsByteArray(self, *args):
+        """
   ValueAsByteArray(self: Field) -> Array[Byte]
 
   
@@ -82,9 +86,10 @@ class Field(object):
 
    Returns: Return field as a byte array.
   """
-  pass
- def ValueAsColor4f(self,*args):
-  """
+        pass
+
+    def ValueAsColor4f(self, *args):
+        """
   ValueAsColor4f(self: Field) -> Color4f
 
   
@@ -93,9 +98,10 @@ class Field(object):
 
    Returns: Return field as a Rhino.Display.Color4f color value.
   """
-  pass
- def ValueAsDateTime(self,*args):
-  """
+        pass
+
+    def ValueAsDateTime(self, *args):
+        """
   ValueAsDateTime(self: Field) -> DateTime
 
   
@@ -104,9 +110,10 @@ class Field(object):
 
    Returns: Return field as a DateTime value.
   """
-  pass
- def ValueAsDouble(self,*args):
-  """
+        pass
+
+    def ValueAsDouble(self, *args):
+        """
   ValueAsDouble(self: Field) -> float
 
   
@@ -115,9 +122,10 @@ class Field(object):
 
    Returns: Return the field value as a double precision number.
   """
-  pass
- def ValueAsFloat(self,*args):
-  """
+        pass
+
+    def ValueAsFloat(self, *args):
+        """
   ValueAsFloat(self: Field) -> Single
 
   
@@ -126,9 +134,10 @@ class Field(object):
 
    Returns: Return the field value as an floating point number.
   """
-  pass
- def ValueAsGuid(self,*args):
-  """
+        pass
+
+    def ValueAsGuid(self, *args):
+        """
   ValueAsGuid(self: Field) -> Guid
 
   
@@ -137,9 +146,10 @@ class Field(object):
 
    Returns: Return the field value as an Guid.
   """
-  pass
- def ValueAsInt(self,*args):
-  """
+        pass
+
+    def ValueAsInt(self, *args):
+        """
   ValueAsInt(self: Field) -> int
 
   
@@ -148,12 +158,14 @@ class Field(object):
 
    Returns: Return the field value as an integer.
   """
-  pass
- def ValueAsObject(self):
-  """ ValueAsObject(self: Field) -> object """
-  pass
- def ValueAsPoint2d(self,*args):
-  """
+        pass
+
+    def ValueAsObject(self):
+        """ ValueAsObject(self: Field) -> object """
+        pass
+
+    def ValueAsPoint2d(self, *args):
+        """
   ValueAsPoint2d(self: Field) -> Point2d
 
   
@@ -162,9 +174,10 @@ class Field(object):
 
    Returns: Return field as a Rhino.Geometry.Point2d color value.
   """
-  pass
- def ValueAsPoint3d(self,*args):
-  """
+        pass
+
+    def ValueAsPoint3d(self, *args):
+        """
   ValueAsPoint3d(self: Field) -> Point3d
 
   
@@ -173,9 +186,10 @@ class Field(object):
 
    Returns: Return field as a Rhino.Geometry.Point3d color value.
   """
-  pass
- def ValueAsPoint4d(self,*args):
-  """
+        pass
+
+    def ValueAsPoint4d(self, *args):
+        """
   ValueAsPoint4d(self: Field) -> Point4d
 
   
@@ -184,9 +198,10 @@ class Field(object):
 
    Returns: Return field as a Rhino.Geometry.Point4d color value.
   """
-  pass
- def ValueAsString(self,*args):
-  """
+        pass
+
+    def ValueAsString(self, *args):
+        """
   ValueAsString(self: Field) -> str
 
   
@@ -195,9 +210,10 @@ class Field(object):
 
    Returns: Returns the field value as a string if possible.
   """
-  pass
- def ValueAsTransform(self,*args):
-  """
+        pass
+
+    def ValueAsTransform(self, *args):
+        """
   ValueAsTransform(self: Field) -> Transform
 
   
@@ -206,9 +222,10 @@ class Field(object):
 
    Returns: Return field as a Rhino.Geometry.Transform color value.
   """
-  pass
- def ValueAsVector2d(self,*args):
-  """
+        pass
+
+    def ValueAsVector2d(self, *args):
+        """
   ValueAsVector2d(self: Field) -> Vector2d
 
   
@@ -217,9 +234,10 @@ class Field(object):
 
    Returns: Return field as a Rhino.Geometry.Vector2d color value.
   """
-  pass
- def ValueAsVector3d(self,*args):
-  """
+        pass
+
+    def ValueAsVector3d(self, *args):
+        """
   ValueAsVector3d(self: Field) -> Vector3d
 
   
@@ -228,20 +246,24 @@ class Field(object):
 
    Returns: Return field as a Rhino.Geometry.Vector3d color value.
   """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """ __new__(cls: type,renderContent: RenderContent,attachToPointer: IntPtr,key: str,prompt: str,initialValue: object,isTextured: bool) """
-  pass
- IsTextured=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsTextured(self: Field) -> bool
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """ __new__(cls: type,renderContent: RenderContent,attachToPointer: IntPtr,key: str,prompt: str,initialValue: object,isTextured: bool) """
+        pass
+
+    IsTextured = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IsTextured(self: Field) -> bool
 
 
 
 """
 
- Key=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Field key value string set by constructor
+    Key = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Field key value string set by constructor
 
 
 
@@ -251,8 +273,8 @@ Get: Key(self: Field) -> str
 
 """
 
- Prompt=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Optional UI prompt string set by constructor
+    Prompt = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Optional UI prompt string set by constructor
 
 
 
@@ -262,8 +284,8 @@ Get: Prompt(self: Field) -> str
 
 """
 
- Tag=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets an object that contains data to associate with the field.
+    Tag = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets an object that contains data to associate with the field.
 
 
 
@@ -276,14 +298,15 @@ Set: Tag(self: Field)=value
 """
 
 
-
 class BoolField(Field):
- """ bool field value class """
- def ValueAsObject(self):
-  """ ValueAsObject(self: BoolField) -> object """
-  pass
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the field value
+    """ bool field value class """
+
+    def ValueAsObject(self):
+        """ ValueAsObject(self: BoolField) -> object """
+        pass
+
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the field value
 
 
 
@@ -296,14 +319,15 @@ Set: Value(self: BoolField)=value
 """
 
 
-
 class ByteArrayField(Field):
- """ ByteArray field value class """
- def ValueAsObject(self):
-  """ ValueAsObject(self: ByteArrayField) -> object """
-  pass
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the field value
+    """ ByteArray field value class """
+
+    def ValueAsObject(self):
+        """ ValueAsObject(self: ByteArrayField) -> object """
+        pass
+
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the field value
 
 
 
@@ -316,14 +340,17 @@ Set: Value(self: ByteArrayField)=value
 """
 
 
-
 class Color4fField(Field):
- """ Color4f field value class """
- def ValueAsObject(self):
-  """ ValueAsObject(self: Color4fField) -> object """
-  pass
- SystemColorValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the field value
+    """ Color4f field value class """
+
+    def ValueAsObject(self):
+        """ ValueAsObject(self: Color4fField) -> object """
+        pass
+
+    SystemColorValue = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the field value
 
 
 
@@ -335,8 +362,8 @@ Set: SystemColorValue(self: Color4fField)=value
 
 """
 
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the field value
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the field value
 
 
 
@@ -349,14 +376,15 @@ Set: Value(self: Color4fField)=value
 """
 
 
-
 class DateTimeField(Field):
- """ DateTime field value class """
- def ValueAsObject(self):
-  """ ValueAsObject(self: DateTimeField) -> object """
-  pass
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the field value
+    """ DateTime field value class """
+
+    def ValueAsObject(self):
+        """ ValueAsObject(self: DateTimeField) -> object """
+        pass
+
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the field value
 
 
 
@@ -369,14 +397,15 @@ Set: Value(self: DateTimeField)=value
 """
 
 
-
 class DoubleField(Field):
- """ double field value class """
- def ValueAsObject(self):
-  """ ValueAsObject(self: DoubleField) -> object """
-  pass
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the field value
+    """ double field value class """
+
+    def ValueAsObject(self):
+        """ ValueAsObject(self: DoubleField) -> object """
+        pass
+
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the field value
 
 
 
@@ -389,9 +418,8 @@ Set: Value(self: DoubleField)=value
 """
 
 
-
 class FieldDictionary(object):
- """
+    """
  Dictionary containing RenderContent data fields,add fields to this
 
     dictionary in your derived RenderContent classes constructor.  Get field
@@ -400,8 +428,9 @@ class FieldDictionary(object):
 
     method.
  """
- def Add(self,key,value,prompt=None):
-  """
+
+    def Add(self, key, value, prompt=None):
+        """
   Add(self: FieldDictionary,key: str,value: Point3d) -> Point3dField
 
   
@@ -1050,9 +1079,10 @@ class FieldDictionary(object):
 
    value: Initial value for this field.
   """
-  pass
- def AddTextured(self,key,value,prompt):
-  """
+        pass
+
+    def AddTextured(self, key, value, prompt):
+        """
   AddTextured(self: FieldDictionary,key: str,value: Point3d,prompt: str) -> Point3dField
 
   
@@ -1531,9 +1561,10 @@ class FieldDictionary(object):
 
     interface.
   """
-  pass
- def ContainsField(self,fieldName):
-  """
+        pass
+
+    def ContainsField(self, fieldName):
+        """
   ContainsField(self: FieldDictionary,fieldName: str) -> bool
 
   
@@ -1556,9 +1587,10 @@ class FieldDictionary(object):
 
     found.
   """
-  pass
- def GetField(self,fieldName):
-  """
+        pass
+
+    def GetField(self, fieldName):
+        """
   GetField(self: FieldDictionary,fieldName: str) -> Field
 
   
@@ -1575,9 +1607,10 @@ class FieldDictionary(object):
 
     null is returned.
   """
-  pass
- def Set(self,key,value,changeContext=None):
-  """
+        pass
+
+    def Set(self, key, value, changeContext=None):
+        """
   Set(self: FieldDictionary,key: str,value: Point2d)
 
    Set the field value and send the appropriate change notification to the
@@ -1868,9 +1901,10 @@ class FieldDictionary(object):
 
   Set(self: FieldDictionary,key: str,value: Single,changeContext: ChangeContexts)
   """
-  pass
- def SetTag(self,key,tag):
-  """
+        pass
+
+    def SetTag(self, key, tag):
+        """
   SetTag(self: FieldDictionary,key: str,tag: object) -> bool
 
   
@@ -1885,9 +1919,10 @@ class FieldDictionary(object):
 
    Returns: True if the field is found and the tag was set otherwise false is returned.
   """
-  pass
- def TryGetTag(self,key,tag):
-  """
+        pass
+
+    def TryGetTag(self, key, tag):
+        """
   TryGetTag(self: FieldDictionary,key: str) -> (bool,object)
 
   
@@ -1904,9 +1939,10 @@ class FieldDictionary(object):
 
     false.
   """
-  pass
- def TryGetValue(self,key,value):
-  """
+        pass
+
+    def TryGetValue(self, key, value):
+        """
   TryGetValue(self: FieldDictionary,key: str) -> (bool,Point3d)
 
   
@@ -2193,18 +2229,22 @@ class FieldDictionary(object):
 
      Returns false if the field was not found.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
 
 class FloatField(Field):
- """ float field value class """
- def ValueAsObject(self):
-  """ ValueAsObject(self: FloatField) -> object """
-  pass
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the field value
+    """ float field value class """
+
+    def ValueAsObject(self):
+        """ ValueAsObject(self: FloatField) -> object """
+        pass
+
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the field value
 
 
 
@@ -2217,14 +2257,15 @@ Set: Value(self: FloatField)=value
 """
 
 
-
 class GuidField(Field):
- """ Guid field value class """
- def ValueAsObject(self):
-  """ ValueAsObject(self: GuidField) -> object """
-  pass
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the field value
+    """ Guid field value class """
+
+    def ValueAsObject(self):
+        """ ValueAsObject(self: GuidField) -> object """
+        pass
+
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the field value
 
 
 
@@ -2237,14 +2278,15 @@ Set: Value(self: GuidField)=value
 """
 
 
-
 class IntField(Field):
- """ Integer field value class """
- def ValueAsObject(self):
-  """ ValueAsObject(self: IntField) -> object """
-  pass
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the field value
+    """ Integer field value class """
+
+    def ValueAsObject(self):
+        """ ValueAsObject(self: IntField) -> object """
+        pass
+
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the field value
 
 
 
@@ -2257,14 +2299,15 @@ Set: Value(self: IntField)=value
 """
 
 
-
 class Point2dField(Field):
- """ Point2d field value class """
- def ValueAsObject(self):
-  """ ValueAsObject(self: Point2dField) -> object """
-  pass
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the field value
+    """ Point2d field value class """
+
+    def ValueAsObject(self):
+        """ ValueAsObject(self: Point2dField) -> object """
+        pass
+
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the field value
 
 
 
@@ -2277,14 +2320,15 @@ Set: Value(self: Point2dField)=value
 """
 
 
-
 class Point3dField(Field):
- """ Point3d field value class """
- def ValueAsObject(self):
-  """ ValueAsObject(self: Point3dField) -> object """
-  pass
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the field value
+    """ Point3d field value class """
+
+    def ValueAsObject(self):
+        """ ValueAsObject(self: Point3dField) -> object """
+        pass
+
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the field value
 
 
 
@@ -2297,14 +2341,15 @@ Set: Value(self: Point3dField)=value
 """
 
 
-
 class Point4dField(Field):
- """ Point4d field value class """
- def ValueAsObject(self):
-  """ ValueAsObject(self: Point4dField) -> object """
-  pass
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the field value
+    """ Point4d field value class """
+
+    def ValueAsObject(self):
+        """ ValueAsObject(self: Point4dField) -> object """
+        pass
+
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the field value
 
 
 
@@ -2317,14 +2362,15 @@ Set: Value(self: Point4dField)=value
 """
 
 
-
 class StringField(Field):
- """ String field value class """
- def ValueAsObject(self):
-  """ ValueAsObject(self: StringField) -> object """
-  pass
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the field value
+    """ String field value class """
+
+    def ValueAsObject(self):
+        """ ValueAsObject(self: StringField) -> object """
+        pass
+
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the field value
 
 
 
@@ -2337,14 +2383,15 @@ Set: Value(self: StringField)=value
 """
 
 
-
 class TransformField(Field):
- """ Transform field value class """
- def ValueAsObject(self):
-  """ ValueAsObject(self: TransformField) -> object """
-  pass
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the field value
+    """ Transform field value class """
+
+    def ValueAsObject(self):
+        """ ValueAsObject(self: TransformField) -> object """
+        pass
+
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the field value
 
 
 
@@ -2357,14 +2404,15 @@ Set: Value(self: TransformField)=value
 """
 
 
-
 class Vector2dField(Field):
- """ Vector2d field value class """
- def ValueAsObject(self):
-  """ ValueAsObject(self: Vector2dField) -> object """
-  pass
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the field value
+    """ Vector2d field value class """
+
+    def ValueAsObject(self):
+        """ ValueAsObject(self: Vector2dField) -> object """
+        pass
+
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the field value
 
 
 
@@ -2377,14 +2425,15 @@ Set: Value(self: Vector2dField)=value
 """
 
 
-
 class Vector3dField(Field):
- """ Vector3d field value class """
- def ValueAsObject(self):
-  """ ValueAsObject(self: Vector3dField) -> object """
-  pass
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the field value
+    """ Vector3d field value class """
+
+    def ValueAsObject(self):
+        """ ValueAsObject(self: Vector3dField) -> object """
+        pass
+
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the field value
 
 
 
@@ -2395,6 +2444,3 @@ Get: Value(self: Vector3dField) -> Vector3d
 Set: Value(self: Vector3dField)=value
 
 """
-
-
-

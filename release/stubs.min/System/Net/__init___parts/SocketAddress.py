@@ -1,5 +1,5 @@
 class SocketAddress(object):
- """
+    """
  Stores serialized information from System.Net.EndPoint derived classes.
 
  
@@ -8,8 +8,9 @@ class SocketAddress(object):
 
  SocketAddress(family: AddressFamily)
  """
- def Equals(self,comparand):
-  """
+
+    def Equals(self, comparand):
+        """
   Equals(self: SocketAddress,comparand: object) -> bool
 
   
@@ -26,9 +27,10 @@ class SocketAddress(object):
 
    Returns: true if the specified System.Object is equal to the current System.Object; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: SocketAddress) -> int
 
   
@@ -41,9 +43,10 @@ class SocketAddress(object):
 
    Returns: A hash code for the current System.Object.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: SocketAddress) -> str
 
   
@@ -52,28 +55,34 @@ class SocketAddress(object):
 
    Returns: A string that contains information about the System.Net.SocketAddress.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- @staticmethod
- def __new__(self,family,size=None):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    @staticmethod
+    def __new__(self, family, size=None):
+        """
   __new__(cls: type,family: AddressFamily)
 
   __new__(cls: type,family: AddressFamily,size: int)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Family=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Net.Sockets.AddressFamily enumerated value of the current System.Net.SocketAddress.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Family = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the System.Net.Sockets.AddressFamily enumerated value of the current System.Net.SocketAddress.
 
 
 
@@ -83,8 +92,8 @@ Get: Family(self: SocketAddress) -> AddressFamily
 
 """
 
- Size=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the underlying buffer size of the System.Net.SocketAddress.
+    Size = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the underlying buffer size of the System.Net.SocketAddress.
 
 
 
@@ -93,5 +102,3 @@ Get: Size(self: SocketAddress) -> int
 
 
 """
-
-

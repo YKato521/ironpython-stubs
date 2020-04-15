@@ -1,7 +1,8 @@
 class TransportContext(object):
- """ The System.Net.TransportContext class provides additional context about the underlying transport layer. """
- def GetChannelBinding(self,kind):
-  """
+    """ The System.Net.TransportContext class provides additional context about the underlying transport layer. """
+
+    def GetChannelBinding(self, kind):
+        """
   GetChannelBinding(self: TransportContext,kind: ChannelBindingKind) -> ChannelBinding
 
   
@@ -16,7 +17,8 @@ class TransportContext(object):
 
     channel binding is not supported by the current transport or by the operating system.
   """
-  pass
- def GetTlsTokenBindings(self):
-  """ GetTlsTokenBindings(self: TransportContext) -> IEnumerable[TokenBinding] """
-  pass
+        pass
+
+    def GetTlsTokenBindings(self):
+        """ GetTlsTokenBindings(self: TransportContext) -> IEnumerable[TokenBinding] """
+        pass

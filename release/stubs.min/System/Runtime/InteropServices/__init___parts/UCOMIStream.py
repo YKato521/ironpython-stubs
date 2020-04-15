@@ -1,7 +1,8 @@
 class UCOMIStream:
- """ Use System.Runtime.InteropServices.ComTypes.IStream instead. """
- def Clone(self,ppstm):
-  """
+    """ Use System.Runtime.InteropServices.ComTypes.IStream instead. """
+
+    def Clone(self, ppstm):
+        """
   Clone(self: UCOMIStream) -> UCOMIStream
 
   
@@ -10,9 +11,10 @@ class UCOMIStream:
 
     original stream.
   """
-  pass
- def Commit(self,grfCommitFlags):
-  """
+        pass
+
+    def Commit(self, grfCommitFlags):
+        """
   Commit(self: UCOMIStream,grfCommitFlags: int)
 
    Ensures that any changes made to a stream object open in transacted mode are reflected in the 
@@ -25,9 +27,10 @@ class UCOMIStream:
 
    grfCommitFlags: Controls how the changes for the stream object are committed.
   """
-  pass
- def CopyTo(self,pstm,cb,pcbRead,pcbWritten):
-  """
+        pass
+
+    def CopyTo(self, pstm, cb, pcbRead, pcbWritten):
+        """
   CopyTo(self: UCOMIStream,pstm: UCOMIStream,cb: Int64,pcbRead: IntPtr,pcbWritten: IntPtr)
 
    Copies a specified number of bytes from the current seek pointer in the stream to the current 
@@ -46,9 +49,10 @@ class UCOMIStream:
 
    pcbWritten: On successful return,contains the actual number of bytes written to the destination.
   """
-  pass
- def LockRegion(self,libOffset,cb,dwLockType):
-  """
+        pass
+
+    def LockRegion(self, libOffset, cb, dwLockType):
+        """
   LockRegion(self: UCOMIStream,libOffset: Int64,cb: Int64,dwLockType: int)
 
    Restricts access to a specified range of bytes in the stream.
@@ -61,9 +65,10 @@ class UCOMIStream:
 
    dwLockType: The requested restrictions on accessing the range.
   """
-  pass
- def Read(self,pv,cb,pcbRead):
-  """
+        pass
+
+    def Read(self, pv, cb, pcbRead):
+        """
   Read(self: UCOMIStream,cb: int,pcbRead: IntPtr) -> Array[Byte]
 
   
@@ -80,18 +85,20 @@ class UCOMIStream:
 
    pcbRead: Pointer to a ULONG variable that receives the actual number of bytes read from the stream object.
   """
-  pass
- def Revert(self):
-  """
+        pass
+
+    def Revert(self):
+        """
   Revert(self: UCOMIStream)
 
    Discards all changes that have been made to a transacted stream since the last 
 
     System.Runtime.InteropServices.UCOMIStream.Commit(System.Int32) call.
   """
-  pass
- def Seek(self,dlibMove,dwOrigin,plibNewPosition):
-  """
+        pass
+
+    def Seek(self, dlibMove, dwOrigin, plibNewPosition):
+        """
   Seek(self: UCOMIStream,dlibMove: Int64,dwOrigin: int,plibNewPosition: IntPtr)
 
    Changes the seek pointer to a new location relative to the beginning of the stream,to the end 
@@ -112,9 +119,10 @@ class UCOMIStream:
 
    plibNewPosition: On successful return,contains the offset of the seek pointer from the beginning of the stream.
   """
-  pass
- def SetSize(self,libNewSize):
-  """
+        pass
+
+    def SetSize(self, libNewSize):
+        """
   SetSize(self: UCOMIStream,libNewSize: Int64)
 
    Changes the size of the stream object.
@@ -123,9 +131,10 @@ class UCOMIStream:
 
    libNewSize: Specifies the new size of the stream as a number of bytes.
   """
-  pass
- def Stat(self,pstatstg,grfStatFlag):
-  """
+        pass
+
+    def Stat(self, pstatstg, grfStatFlag):
+        """
   Stat(self: UCOMIStream,grfStatFlag: int) -> STATSTG
 
   
@@ -138,9 +147,10 @@ class UCOMIStream:
 
     saving some memory allocation operations.
   """
-  pass
- def UnlockRegion(self,libOffset,cb,dwLockType):
-  """
+        pass
+
+    def UnlockRegion(self, libOffset, cb, dwLockType):
+        """
   UnlockRegion(self: UCOMIStream,libOffset: Int64,cb: Int64,dwLockType: int)
 
    Removes the access restriction on a range of bytes previously restricted with 
@@ -157,9 +167,10 @@ class UCOMIStream:
 
    dwLockType: The access restrictions previously placed on the range.
   """
-  pass
- def Write(self,pv,cb,pcbWritten):
-  """
+        pass
+
+    def Write(self, pv, cb, pcbWritten):
+        """
   Write(self: UCOMIStream,pv: Array[Byte],cb: int,pcbWritten: IntPtr)
 
    Writes a specified number of bytes into the stream object starting at the current seek pointer.
@@ -176,7 +187,8 @@ class UCOMIStream:
 
     number of bytes written.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

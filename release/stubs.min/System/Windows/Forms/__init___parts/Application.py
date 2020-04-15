@@ -1,8 +1,9 @@
 class Application(object):
- """ Provides static methods and properties to manage an application,such as methods to start and stop an application,to process Windows messages,and properties to get information about an application. This class cannot be inherited. """
- @staticmethod
- def AddMessageFilter(value):
-  """
+    """ Provides static methods and properties to manage an application,such as methods to start and stop an application,to process Windows messages,and properties to get information about an application. This class cannot be inherited. """
+
+    @staticmethod
+    def AddMessageFilter(value):
+        """
   AddMessageFilter(value: IMessageFilter)
 
    Adds a message filter to monitor Windows messages as they are routed to their destinations.
@@ -11,26 +12,29 @@ class Application(object):
 
    value: The implementation of the System.Windows.Forms.IMessageFilter interface you want to install.
   """
-  pass
- @staticmethod
- def DoEvents():
-  """
+        pass
+
+    @staticmethod
+    def DoEvents():
+        """
   DoEvents()
 
    Processes all Windows messages currently in the message queue.
   """
-  pass
- @staticmethod
- def EnableVisualStyles():
-  """
+        pass
+
+    @staticmethod
+    def EnableVisualStyles():
+        """
   EnableVisualStyles()
 
    Enables visual styles for the application.
   """
-  pass
- @staticmethod
- def Exit(e=None):
-  """
+        pass
+
+    @staticmethod
+    def Exit(e=None):
+        """
   Exit(e: CancelEventArgs)
 
    Informs all message pumps that they must terminate,and then closes all application windows 
@@ -49,18 +53,20 @@ class Application(object):
 
     after the messages have been processed.
   """
-  pass
- @staticmethod
- def ExitThread():
-  """
+        pass
+
+    @staticmethod
+    def ExitThread():
+        """
   ExitThread()
 
    Exits the message loop on the current thread and closes all windows on the thread.
   """
-  pass
- @staticmethod
- def FilterMessage(message):
-  """
+        pass
+
+    @staticmethod
+    def FilterMessage(message):
+        """
   FilterMessage(message: Message) -> (bool,Message)
 
   
@@ -73,10 +79,11 @@ class Application(object):
 
    Returns: True if the filters were processed; otherwise,false.
   """
-  pass
- @staticmethod
- def OleRequired():
-  """
+        pass
+
+    @staticmethod
+    def OleRequired():
+        """
   OleRequired() -> ApartmentState
 
   
@@ -85,10 +92,11 @@ class Application(object):
 
    Returns: One of the System.Threading.ApartmentState values.
   """
-  pass
- @staticmethod
- def OnThreadException(t):
-  """
+        pass
+
+    @staticmethod
+    def OnThreadException(t):
+        """
   OnThreadException(t: Exception)
 
    Raises the System.Windows.Forms.Application.ThreadException event.
@@ -97,10 +105,11 @@ class Application(object):
 
    t: An System.Exception that represents the exception that was thrown.
   """
-  pass
- @staticmethod
- def RaiseIdle(e):
-  """
+        pass
+
+    @staticmethod
+    def RaiseIdle(e):
+        """
   RaiseIdle(e: EventArgs)
 
    Raises the System.Windows.Forms.Application.Idle event in hosted scenarios.
@@ -109,14 +118,16 @@ class Application(object):
 
    e: The System.EventArgs objects to pass to the System.Windows.Forms.Application.Idle event.
   """
-  pass
- @staticmethod
- def RegisterMessageLoop(callback):
-  """ RegisterMessageLoop(callback: MessageLoopCallback) """
-  pass
- @staticmethod
- def RemoveMessageFilter(value):
-  """
+        pass
+
+    @staticmethod
+    def RegisterMessageLoop(callback):
+        """ RegisterMessageLoop(callback: MessageLoopCallback) """
+        pass
+
+    @staticmethod
+    def RemoveMessageFilter(value):
+        """
   RemoveMessageFilter(value: IMessageFilter)
 
    Removes a message filter from the message pump of the application.
@@ -125,18 +136,20 @@ class Application(object):
 
    value: The implementation of the System.Windows.Forms.IMessageFilter to remove from the application.
   """
-  pass
- @staticmethod
- def Restart():
-  """
+        pass
+
+    @staticmethod
+    def Restart():
+        """
   Restart()
 
    Shuts down the application and starts a new instance immediately.
   """
-  pass
- @staticmethod
- def Run(*__args):
-  """
+        pass
+
+    @staticmethod
+    def Run(*__args):
+        """
   Run(context: ApplicationContext)
 
    Begins running a standard application message loop on the current thread,with an 
@@ -165,10 +178,11 @@ class Application(object):
 
    Begins running a standard application message loop on the current thread,without a form.
   """
-  pass
- @staticmethod
- def SetCompatibleTextRenderingDefault(defaultValue):
-  """
+        pass
+
+    @staticmethod
+    def SetCompatibleTextRenderingDefault(defaultValue):
+        """
   SetCompatibleTextRenderingDefault(defaultValue: bool)
 
    Sets the application-wide default for the UseCompatibleTextRendering property defined on certain 
@@ -185,10 +199,11 @@ class Application(object):
 
     if false,new controls use the GDI�based System.Windows.Forms.TextRenderer class.
   """
-  pass
- @staticmethod
- def SetSuspendState(state,force,disableWakeEvent):
-  """
+        pass
+
+    @staticmethod
+    def SetSuspendState(state, force, disableWakeEvent):
+        """
   SetSuspendState(state: PowerState,force: bool,disableWakeEvent: bool) -> bool
 
   
@@ -213,10 +228,11 @@ class Application(object):
 
    Returns: true if the system is being suspended,otherwise,false.
   """
-  pass
- @staticmethod
- def SetUnhandledExceptionMode(mode,threadScope=None):
-  """
+        pass
+
+    @staticmethod
+    def SetUnhandledExceptionMode(mode, threadScope=None):
+        """
   SetUnhandledExceptionMode(mode: UnhandledExceptionMode,threadScope: bool)
 
    Instructs the application how to respond to unhandled exceptions,optionally applying 
@@ -245,10 +261,11 @@ class Application(object):
 
     behave if an exception is thrown without being caught.
   """
-  pass
- @staticmethod
- def UnregisterMessageLoop():
-  """
+        pass
+
+    @staticmethod
+    def UnregisterMessageLoop():
+        """
   UnregisterMessageLoop()
 
    Unregisters the message loop callback made with 
@@ -257,30 +274,32 @@ class Application(object):
 
     Callback).
   """
-  pass
- AllowQuit=False
- ApplicationExit=None
- CommonAppDataPath='C:\\ProgramData\\IronPython Team\\IronPython\\IronPython 2.7.7 final 0'
- CompanyName='IronPython Team'
- CurrentCulture=None
- CurrentInputLanguage=None
- EnterThreadModal=None
- ExecutablePath='C:\\Program Files (x86)\\IronPython-2.7.7\\ipy.exe'
- Idle=None
- LeaveThreadModal=None
- LocalUserAppDataPath='C:\\Users\\gtalarico\\AppData\\Local\\IronPython Team\\IronPython\\IronPython 2.7.7 final 0'
- MessageLoop=False
- MessageLoopCallback=None
- OpenForms=None
- ProductName='IronPython'
- ProductVersion='IronPython 2.7.7 final 0'
- RenderWithVisualStyles=False
- SafeTopLevelCaptionFormat='{1} - {0} - {2}'
- StartupPath='C:\\Program Files (x86)\\IronPython-2.7.7'
- ThreadException=None
- ThreadExit=None
- UserAppDataPath='C:\\Users\\gtalarico\\AppData\\Roaming\\IronPython Team\\IronPython\\IronPython 2.7.7 final 0'
- UserAppDataRegistry=None
- UseWaitCursor=False
- VisualStyleState=None
+        pass
 
+    AllowQuit = False
+    ApplicationExit = None
+    CommonAppDataPath = (
+        "C:\\ProgramData\\IronPython Team\\IronPython\\IronPython 2.7.7 final 0"
+    )
+    CompanyName = "IronPython Team"
+    CurrentCulture = None
+    CurrentInputLanguage = None
+    EnterThreadModal = None
+    ExecutablePath = "C:\\Program Files (x86)\\IronPython-2.7.7\\ipy.exe"
+    Idle = None
+    LeaveThreadModal = None
+    LocalUserAppDataPath = "C:\\Users\\gtalarico\\AppData\\Local\\IronPython Team\\IronPython\\IronPython 2.7.7 final 0"
+    MessageLoop = False
+    MessageLoopCallback = None
+    OpenForms = None
+    ProductName = "IronPython"
+    ProductVersion = "IronPython 2.7.7 final 0"
+    RenderWithVisualStyles = False
+    SafeTopLevelCaptionFormat = "{1} - {0} - {2}"
+    StartupPath = "C:\\Program Files (x86)\\IronPython-2.7.7"
+    ThreadException = None
+    ThreadExit = None
+    UserAppDataPath = "C:\\Users\\gtalarico\\AppData\\Roaming\\IronPython Team\\IronPython\\IronPython 2.7.7 final 0"
+    UserAppDataRegistry = None
+    UseWaitCursor = False
+    VisualStyleState = None

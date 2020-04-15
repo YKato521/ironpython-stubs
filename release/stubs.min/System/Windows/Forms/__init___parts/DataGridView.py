@@ -1,13 +1,37 @@
-class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInPlaceObject,IOleInPlaceActiveObject,IOleWindow,IViewObject,IViewObject2,IPersist,IPersistStreamInit,IPersistPropertyBag,IPersistStorage,IQuickActivate,ISupportOleDropSource,IDropTarget,ISynchronizeInvoke,IWin32Window,IArrangedElement,IBindableComponent,ISupportInitialize):
- """
+class DataGridView(
+    Control,
+    IComponent,
+    IDisposable,
+    IOleControl,
+    IOleObject,
+    IOleInPlaceObject,
+    IOleInPlaceActiveObject,
+    IOleWindow,
+    IViewObject,
+    IViewObject2,
+    IPersist,
+    IPersistStreamInit,
+    IPersistPropertyBag,
+    IPersistStorage,
+    IQuickActivate,
+    ISupportOleDropSource,
+    IDropTarget,
+    ISynchronizeInvoke,
+    IWin32Window,
+    IArrangedElement,
+    IBindableComponent,
+    ISupportInitialize,
+):
+    """
  Displays data in a customizable grid.
 
  
 
  DataGridView()
  """
- def AccessibilityNotifyClients(self,*args):
-  """
+
+    def AccessibilityNotifyClients(self, *args):
+        """
   AccessibilityNotifyClients(self: Control,accEvent: AccessibleEvents,objectID: int,childID: int)
 
    Notifies the accessibility client applications of the specified 
@@ -38,9 +62,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    childID: The child System.Windows.Forms.Control to notify of the accessible event.
   """
-  pass
- def AccessibilityNotifyCurrentCellChanged(self,*args):
-  """
+        pass
+
+    def AccessibilityNotifyCurrentCellChanged(self, *args):
+        """
   AccessibilityNotifyCurrentCellChanged(self: DataGridView,cellAddress: Point)
 
    Notifies the accessible client applications when a new cell becomes the current cell.
@@ -49,9 +74,16 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    cellAddress: A System.Drawing.Point indicating the row and column indexes of the new current cell.
   """
-  pass
- def AdjustColumnHeaderBorderStyle(self,dataGridViewAdvancedBorderStyleInput,dataGridViewAdvancedBorderStylePlaceholder,isFirstDisplayedColumn,isLastVisibleColumn):
-  """
+        pass
+
+    def AdjustColumnHeaderBorderStyle(
+        self,
+        dataGridViewAdvancedBorderStyleInput,
+        dataGridViewAdvancedBorderStylePlaceholder,
+        isFirstDisplayedColumn,
+        isLastVisibleColumn,
+    ):
+        """
   AdjustColumnHeaderBorderStyle(self: DataGridView,dataGridViewAdvancedBorderStyleInput: DataGridViewAdvancedBorderStyle,dataGridViewAdvancedBorderStylePlaceholder: DataGridViewAdvancedBorderStyle,isFirstDisplayedColumn: bool,isLastVisibleColumn: bool) -> DataGridViewAdvancedBorderStyle
 
   
@@ -94,9 +126,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
     current column header.
   """
-  pass
- def AreAllCellsSelected(self,includeInvisibleCells):
-  """
+        pass
+
+    def AreAllCellsSelected(self, includeInvisibleCells):
+        """
   AreAllCellsSelected(self: DataGridView,includeInvisibleCells: bool) -> bool
 
   
@@ -119,9 +152,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
     cells); otherwise,false.
   """
-  pass
- def AutoResizeColumn(self,columnIndex,autoSizeColumnMode=None):
-  """
+        pass
+
+    def AutoResizeColumn(self, columnIndex, autoSizeColumnMode=None):
+        """
   AutoResizeColumn(self: DataGridView,columnIndex: int,autoSizeColumnMode: DataGridViewAutoSizeColumnMode)
 
    Adjusts the width of the specified column using the specified size mode.
@@ -144,9 +178,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    columnIndex: The index of the column to resize.
   """
-  pass
- def AutoResizeColumnHeadersHeight(self,columnIndex=None):
-  """
+        pass
+
+    def AutoResizeColumnHeadersHeight(self, columnIndex=None):
+        """
   AutoResizeColumnHeadersHeight(self: DataGridView,columnIndex: int)
 
    Adjusts the height of the column headers based on changes to the contents of the header in the 
@@ -163,9 +198,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Adjusts the height of the column headers to fit the contents of the largest column header.
   """
-  pass
- def AutoResizeColumns(self,autoSizeColumnsMode=None):
-  """
+        pass
+
+    def AutoResizeColumns(self, autoSizeColumnsMode=None):
+        """
   AutoResizeColumns(self: DataGridView,autoSizeColumnsMode: DataGridViewAutoSizeColumnsMode)
 
    Adjusts the width of all columns using the specified size mode.
@@ -180,9 +216,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
     cells.
   """
-  pass
- def AutoResizeRow(self,rowIndex,autoSizeRowMode=None):
-  """
+        pass
+
+    def AutoResizeRow(self, rowIndex, autoSizeRowMode=None):
+        """
   AutoResizeRow(self: DataGridView,rowIndex: int,autoSizeRowMode: DataGridViewAutoSizeRowMode)
 
    Adjusts the height of the specified row using the specified size mode.
@@ -205,9 +242,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    rowIndex: The index of the row to resize.
   """
-  pass
- def AutoResizeRowHeadersWidth(self,*__args):
-  """
+        pass
+
+    def AutoResizeRowHeadersWidth(self, *__args):
+        """
   AutoResizeRowHeadersWidth(self: DataGridView,rowIndex: int,rowHeadersWidthSizeMode: DataGridViewRowHeadersWidthSizeMode)
 
    Adjusts the width of the row headers based on changes to the contents of the header in the 
@@ -230,9 +268,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    rowHeadersWidthSizeMode: One of the System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode values.
   """
-  pass
- def AutoResizeRows(self,autoSizeRowsMode=None):
-  """
+        pass
+
+    def AutoResizeRows(self, autoSizeRowsMode=None):
+        """
   AutoResizeRows(self: DataGridView,autoSizeRowsMode: DataGridViewAutoSizeRowsMode)
 
    Adjusts the heights of the rows using the specified size mode value.
@@ -247,9 +286,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
     cells.
   """
-  pass
- def BeginEdit(self,selectAll):
-  """
+        pass
+
+    def BeginEdit(self, selectAll):
+        """
   BeginEdit(self: DataGridView,selectAll: bool) -> bool
 
   
@@ -264,9 +304,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
     false.
   """
-  pass
- def CancelEdit(self):
-  """
+        pass
+
+    def CancelEdit(self):
+        """
   CancelEdit(self: DataGridView) -> bool
 
   
@@ -275,16 +316,18 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the cancel was successful; otherwise,false.
   """
-  pass
- def ClearSelection(self):
-  """
+        pass
+
+    def ClearSelection(self):
+        """
   ClearSelection(self: DataGridView)
 
    Clears the current selection by unselecting all selected cells.
   """
-  pass
- def CommitEdit(self,context):
-  """
+        pass
+
+    def CommitEdit(self, context):
+        """
   CommitEdit(self: DataGridView,context: DataGridViewDataErrorContexts) -> bool
 
   
@@ -301,9 +344,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the changes were committed; otherwise false.
   """
-  pass
- def CreateAccessibilityInstance(self,*args):
-  """
+        pass
+
+    def CreateAccessibilityInstance(self, *args):
+        """
   CreateAccessibilityInstance(self: DataGridView) -> AccessibleObject
 
   
@@ -314,9 +358,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
     System.Windows.Forms.DataGridView.
   """
-  pass
- def CreateColumnsInstance(self,*args):
-  """
+        pass
+
+    def CreateColumnsInstance(self, *args):
+        """
   CreateColumnsInstance(self: DataGridView) -> DataGridViewColumnCollection
 
   
@@ -325,9 +370,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: An empty System.Windows.Forms.DataGridViewColumnCollection.
   """
-  pass
- def CreateControlsInstance(self,*args):
-  """
+        pass
+
+    def CreateControlsInstance(self, *args):
+        """
   CreateControlsInstance(self: DataGridView) -> ControlCollection
 
   
@@ -340,16 +386,18 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: An empty System.Windows.Forms.Control.ControlCollection.
   """
-  pass
- def CreateHandle(self,*args):
-  """
+        pass
+
+    def CreateHandle(self, *args):
+        """
   CreateHandle(self: Control)
 
    Creates a handle for the control.
   """
-  pass
- def CreateRowsInstance(self,*args):
-  """
+        pass
+
+    def CreateRowsInstance(self, *args):
+        """
   CreateRowsInstance(self: DataGridView) -> DataGridViewRowCollection
 
   
@@ -358,9 +406,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: An empty System.Windows.Forms.DataGridViewRowCollection.
   """
-  pass
- def DefWndProc(self,*args):
-  """
+        pass
+
+    def DefWndProc(self, *args):
+        """
   DefWndProc(self: Control,m: Message) -> Message
 
   
@@ -371,16 +420,18 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    m: The Windows System.Windows.Forms.Message to process.
   """
-  pass
- def DestroyHandle(self,*args):
-  """
+        pass
+
+    def DestroyHandle(self, *args):
+        """
   DestroyHandle(self: Control)
 
    Destroys the handle associated with the control.
   """
-  pass
- def DisplayedColumnCount(self,includePartialColumns):
-  """
+        pass
+
+    def DisplayedColumnCount(self, includePartialColumns):
+        """
   DisplayedColumnCount(self: DataGridView,includePartialColumns: bool) -> int
 
   
@@ -393,9 +444,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: The number of columns displayed to the user.
   """
-  pass
- def DisplayedRowCount(self,includePartialRow):
-  """
+        pass
+
+    def DisplayedRowCount(self, includePartialRow):
+        """
   DisplayedRowCount(self: DataGridView,includePartialRow: bool) -> int
 
   
@@ -408,16 +460,18 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: The number of rows displayed to the user.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: DataGridView,disposing: bool)
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def EndEdit(self,context=None):
-  """
+        pass
+
+    def EndEdit(self, context=None):
+        """
   EndEdit(self: DataGridView,context: DataGridViewDataErrorContexts) -> bool
 
   
@@ -442,9 +496,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the edit operation is committed and ended; otherwise,false.
   """
-  pass
- def GetAccessibilityObjectById(self,*args):
-  """
+        pass
+
+    def GetAccessibilityObjectById(self, *args):
+        """
   GetAccessibilityObjectById(self: DataGridView,objectId: int) -> AccessibleObject
 
   
@@ -453,9 +508,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: An System.Windows.Forms.AccessibleObject.
   """
-  pass
- def GetAutoSizeMode(self,*args):
-  """
+        pass
+
+    def GetAutoSizeMode(self, *args):
+        """
   GetAutoSizeMode(self: Control) -> AutoSizeMode
 
   
@@ -468,9 +524,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: One of the System.Windows.Forms.AutoSizeMode values.
   """
-  pass
- def GetCellCount(self,includeFilter):
-  """
+        pass
+
+    def GetCellCount(self, includeFilter):
+        """
   GetCellCount(self: DataGridView,includeFilter: DataGridViewElementStates) -> int
 
   
@@ -487,9 +544,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: The number of cells that match the includeFilter parameter.
   """
-  pass
- def GetCellDisplayRectangle(self,columnIndex,rowIndex,cutOverflow):
-  """
+        pass
+
+    def GetCellDisplayRectangle(self, columnIndex, rowIndex, cutOverflow):
+        """
   GetCellDisplayRectangle(self: DataGridView,columnIndex: int,rowIndex: int,cutOverflow: bool) -> Rectangle
 
   
@@ -506,9 +564,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: The System.Drawing.Rectangle that represents the display rectangle of the cell.
   """
-  pass
- def GetClipboardContent(self):
-  """
+        pass
+
+    def GetClipboardContent(self):
+        """
   GetClipboardContent(self: DataGridView) -> DataObject
 
   
@@ -521,9 +580,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: A System.Windows.Forms.DataObject that represents the contents of the selected cells.
   """
-  pass
- def GetColumnDisplayRectangle(self,columnIndex,cutOverflow):
-  """
+        pass
+
+    def GetColumnDisplayRectangle(self, columnIndex, cutOverflow):
+        """
   GetColumnDisplayRectangle(self: DataGridView,columnIndex: int,cutOverflow: bool) -> Rectangle
 
   
@@ -546,9 +606,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: The System.Drawing.Rectangle that represents the display rectangle of the column.
   """
-  pass
- def GetRowDisplayRectangle(self,rowIndex,cutOverflow):
-  """
+        pass
+
+    def GetRowDisplayRectangle(self, rowIndex, cutOverflow):
+        """
   GetRowDisplayRectangle(self: DataGridView,rowIndex: int,cutOverflow: bool) -> Rectangle
 
   
@@ -567,9 +628,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: The System.Drawing.Rectangle that represents the display rectangle of the row.
   """
-  pass
- def GetScaledBounds(self,*args):
-  """
+        pass
+
+    def GetScaledBounds(self, *args):
+        """
   GetScaledBounds(self: Control,bounds: Rectangle,factor: SizeF,specified: BoundsSpecified) -> Rectangle
 
   
@@ -590,9 +652,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: A System.Drawing.Rectangle representing the bounds within which the control is scaled.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -611,9 +674,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def GetStyle(self,*args):
-  """
+        pass
+
+    def GetStyle(self, *args):
+        """
   GetStyle(self: Control,flag: ControlStyles) -> bool
 
   
@@ -626,9 +690,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the specified control style bit is set to true; otherwise,false.
   """
-  pass
- def GetTopLevel(self,*args):
-  """
+        pass
+
+    def GetTopLevel(self, *args):
+        """
   GetTopLevel(self: Control) -> bool
 
   
@@ -637,9 +702,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the control is a top-level control; otherwise,false.
   """
-  pass
- def HitTest(self,x,y):
-  """
+        pass
+
+    def HitTest(self, x, y):
+        """
   HitTest(self: DataGridView,x: int,y: int) -> HitTestInfo
 
   
@@ -654,16 +720,18 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: A System.Windows.Forms.DataGridView.HitTestInfo that contains the location information.
   """
-  pass
- def InitLayout(self,*args):
-  """
+        pass
+
+    def InitLayout(self, *args):
+        """
   InitLayout(self: Control)
 
    Called after the control has been added to another container.
   """
-  pass
- def InvalidateCell(self,*__args):
-  """
+        pass
+
+    def InvalidateCell(self, *__args):
+        """
   InvalidateCell(self: DataGridView,columnIndex: int,rowIndex: int)
 
    Invalidates the cell with the specified row and column indexes,forcing it to be repainted.
@@ -686,9 +754,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    dataGridViewCell: The System.Windows.Forms.DataGridViewCell to invalidate.
   """
-  pass
- def InvalidateColumn(self,columnIndex):
-  """
+        pass
+
+    def InvalidateColumn(self, columnIndex):
+        """
   InvalidateColumn(self: DataGridView,columnIndex: int)
 
    Invalidates the specified column of the System.Windows.Forms.DataGridView,forcing it to be 
@@ -701,9 +770,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    columnIndex: The index of the column to invalidate.
   """
-  pass
- def InvalidateRow(self,rowIndex):
-  """
+        pass
+
+    def InvalidateRow(self, rowIndex):
+        """
   InvalidateRow(self: DataGridView,rowIndex: int)
 
    Invalidates the specified row of the System.Windows.Forms.DataGridView,forcing it to be 
@@ -716,9 +786,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    rowIndex: The index of the row to invalidate.
   """
-  pass
- def InvokeGotFocus(self,*args):
-  """
+        pass
+
+    def InvokeGotFocus(self, *args):
+        """
   InvokeGotFocus(self: Control,toInvoke: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.GotFocus event for the specified control.
@@ -729,9 +800,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def InvokeLostFocus(self,*args):
-  """
+        pass
+
+    def InvokeLostFocus(self, *args):
+        """
   InvokeLostFocus(self: Control,toInvoke: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.LostFocus event for the specified control.
@@ -742,9 +814,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def InvokeOnClick(self,*args):
-  """
+        pass
+
+    def InvokeOnClick(self, *args):
+        """
   InvokeOnClick(self: Control,toInvoke: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Click event for the specified control.
@@ -755,9 +828,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def InvokePaint(self,*args):
-  """
+        pass
+
+    def InvokePaint(self, *args):
+        """
   InvokePaint(self: Control,c: Control,e: PaintEventArgs)
 
    Raises the System.Windows.Forms.Control.Paint event for the specified control.
@@ -768,9 +842,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def InvokePaintBackground(self,*args):
-  """
+        pass
+
+    def InvokePaintBackground(self, *args):
+        """
   InvokePaintBackground(self: Control,c: Control,e: PaintEventArgs)
 
    Raises the PaintBackground event for the specified control.
@@ -781,9 +856,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def IsInputChar(self,*args):
-  """
+        pass
+
+    def IsInputChar(self, *args):
+        """
   IsInputChar(self: DataGridView,charCode: Char) -> bool
 
   
@@ -800,9 +876,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the character is recognized as an input character; otherwise,false.
   """
-  pass
- def IsInputKey(self,*args):
-  """
+        pass
+
+    def IsInputKey(self, *args):
+        """
   IsInputKey(self: DataGridView,keyData: Keys) -> bool
 
   
@@ -811,9 +888,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the specified key is a regular input key; otherwise,false.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -844,9 +922,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def NotifyCurrentCellDirty(self,dirty):
-  """
+        pass
+
+    def NotifyCurrentCellDirty(self, dirty):
+        """
   NotifyCurrentCellDirty(self: DataGridView,dirty: bool)
 
    Notifies the System.Windows.Forms.DataGridView that the current cell has uncommitted changes.
@@ -855,9 +934,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    dirty: true to indicate the cell has uncommitted changes; otherwise,false.
   """
-  pass
- def NotifyInvalidate(self,*args):
-  """
+        pass
+
+    def NotifyInvalidate(self, *args):
+        """
   NotifyInvalidate(self: Control,invalidatedArea: Rectangle)
 
    Raises the System.Windows.Forms.Control.Invalidated event with a specified region of the control 
@@ -870,9 +950,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    invalidatedArea: A System.Drawing.Rectangle representing the area to invalidate.
   """
-  pass
- def OnAllowUserToAddRowsChanged(self,*args):
-  """
+        pass
+
+    def OnAllowUserToAddRowsChanged(self, *args):
+        """
   OnAllowUserToAddRowsChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.AllowUserToAddRowsChanged event.
@@ -881,9 +962,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnAllowUserToDeleteRowsChanged(self,*args):
-  """
+        pass
+
+    def OnAllowUserToDeleteRowsChanged(self, *args):
+        """
   OnAllowUserToDeleteRowsChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.AllowUserToDeleteRowsChanged event.
@@ -892,9 +974,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnAllowUserToOrderColumnsChanged(self,*args):
-  """
+        pass
+
+    def OnAllowUserToOrderColumnsChanged(self, *args):
+        """
   OnAllowUserToOrderColumnsChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.AllowUserToOrderColumnsChanged event.
@@ -903,9 +986,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.EventArgs that contains the event data.
   """
-  pass
- def OnAllowUserToResizeColumnsChanged(self,*args):
-  """
+        pass
+
+    def OnAllowUserToResizeColumnsChanged(self, *args):
+        """
   OnAllowUserToResizeColumnsChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.AllowUserToResizeColumnsChanged event.
@@ -914,9 +998,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnAllowUserToResizeRowsChanged(self,*args):
-  """
+        pass
+
+    def OnAllowUserToResizeRowsChanged(self, *args):
+        """
   OnAllowUserToResizeRowsChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.AllowUserToResizeRowsChanged event.
@@ -925,9 +1010,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnAlternatingRowsDefaultCellStyleChanged(self,*args):
-  """
+        pass
+
+    def OnAlternatingRowsDefaultCellStyleChanged(self, *args):
+        """
   OnAlternatingRowsDefaultCellStyleChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyleChanged event.
@@ -936,9 +1022,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnAutoGenerateColumnsChanged(self,*args):
-  """
+        pass
+
+    def OnAutoGenerateColumnsChanged(self, *args):
+        """
   OnAutoGenerateColumnsChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.AutoGenerateColumnsChanged event.
@@ -947,9 +1034,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnAutoSizeChanged(self,*args):
-  """
+        pass
+
+    def OnAutoSizeChanged(self, *args):
+        """
   OnAutoSizeChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.AutoSizeChanged event.
@@ -958,9 +1046,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnAutoSizeColumnModeChanged(self,*args):
-  """
+        pass
+
+    def OnAutoSizeColumnModeChanged(self, *args):
+        """
   OnAutoSizeColumnModeChanged(self: DataGridView,e: DataGridViewAutoSizeColumnModeEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.AutoSizeColumnModeChanged event.
@@ -969,9 +1058,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewAutoSizeColumnModeEventArgs that contains the event data.
   """
-  pass
- def OnAutoSizeColumnsModeChanged(self,*args):
-  """
+        pass
+
+    def OnAutoSizeColumnsModeChanged(self, *args):
+        """
   OnAutoSizeColumnsModeChanged(self: DataGridView,e: DataGridViewAutoSizeColumnsModeEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.AutoSizeColumnsModeChanged event.
@@ -980,9 +1070,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewAutoSizeColumnsModeEventArgs that contains the event data.
   """
-  pass
- def OnAutoSizeRowsModeChanged(self,*args):
-  """
+        pass
+
+    def OnAutoSizeRowsModeChanged(self, *args):
+        """
   OnAutoSizeRowsModeChanged(self: DataGridView,e: DataGridViewAutoSizeModeEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.AutoSizeRowsModeChanged event.
@@ -991,9 +1082,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewAutoSizeModeEventArgs that contains the event data.
   """
-  pass
- def OnBackColorChanged(self,*args):
-  """
+        pass
+
+    def OnBackColorChanged(self, *args):
+        """
   OnBackColorChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BackColorChanged event.
@@ -1002,9 +1094,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBackgroundColorChanged(self,*args):
-  """
+        pass
+
+    def OnBackgroundColorChanged(self, *args):
+        """
   OnBackgroundColorChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.BackgroundColorChanged event.
@@ -1013,9 +1106,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBackgroundImageChanged(self,*args):
-  """
+        pass
+
+    def OnBackgroundImageChanged(self, *args):
+        """
   OnBackgroundImageChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BackgroundImageChanged event.
@@ -1024,9 +1118,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBackgroundImageLayoutChanged(self,*args):
-  """
+        pass
+
+    def OnBackgroundImageLayoutChanged(self, *args):
+        """
   OnBackgroundImageLayoutChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BackgroundImageLayoutChanged event.
@@ -1035,9 +1130,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBindingContextChanged(self,*args):
-  """
+        pass
+
+    def OnBindingContextChanged(self, *args):
+        """
   OnBindingContextChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BindingContextChanged event.
@@ -1046,9 +1142,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBorderStyleChanged(self,*args):
-  """
+        pass
+
+    def OnBorderStyleChanged(self, *args):
+        """
   OnBorderStyleChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.BorderStyleChanged event.
@@ -1057,9 +1154,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnCancelRowEdit(self,*args):
-  """
+        pass
+
+    def OnCancelRowEdit(self, *args):
+        """
   OnCancelRowEdit(self: DataGridView,e: QuestionEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CancelRowEdit event.
@@ -1068,9 +1166,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.QuestionEventArgs that contains the event data.
   """
-  pass
- def OnCausesValidationChanged(self,*args):
-  """
+        pass
+
+    def OnCausesValidationChanged(self, *args):
+        """
   OnCausesValidationChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.CausesValidationChanged event.
@@ -1079,9 +1178,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnCellBeginEdit(self,*args):
-  """
+        pass
+
+    def OnCellBeginEdit(self, *args):
+        """
   OnCellBeginEdit(self: DataGridView,e: DataGridViewCellCancelEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellBeginEdit event.
@@ -1090,9 +1190,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellCancelEventArgs that contains the event data.
   """
-  pass
- def OnCellBorderStyleChanged(self,*args):
-  """
+        pass
+
+    def OnCellBorderStyleChanged(self, *args):
+        """
   OnCellBorderStyleChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellBorderStyleChanged event.
@@ -1101,9 +1202,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnCellClick(self,*args):
-  """
+        pass
+
+    def OnCellClick(self, *args):
+        """
   OnCellClick(self: DataGridView,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellClick event.
@@ -1112,9 +1214,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnCellContentClick(self,*args):
-  """
+        pass
+
+    def OnCellContentClick(self, *args):
+        """
   OnCellContentClick(self: DataGridView,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellContentClick event.
@@ -1125,9 +1228,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
     whose content was clicked.
   """
-  pass
- def OnCellContentDoubleClick(self,*args):
-  """
+        pass
+
+    def OnCellContentDoubleClick(self, *args):
+        """
   OnCellContentDoubleClick(self: DataGridView,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellContentDoubleClick event.
@@ -1136,9 +1240,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnCellContextMenuStripChanged(self,*args):
-  """
+        pass
+
+    def OnCellContextMenuStripChanged(self, *args):
+        """
   OnCellContextMenuStripChanged(self: DataGridView,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellContextMenuStripChanged event.
@@ -1147,9 +1252,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnCellContextMenuStripNeeded(self,*args):
-  """
+        pass
+
+    def OnCellContextMenuStripNeeded(self, *args):
+        """
   OnCellContextMenuStripNeeded(self: DataGridView,e: DataGridViewCellContextMenuStripNeededEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellContextMenuStripNeeded event.
@@ -1160,9 +1266,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
     data.
   """
-  pass
- def OnCellDoubleClick(self,*args):
-  """
+        pass
+
+    def OnCellDoubleClick(self, *args):
+        """
   OnCellDoubleClick(self: DataGridView,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellDoubleClick event.
@@ -1171,9 +1278,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnCellEndEdit(self,*args):
-  """
+        pass
+
+    def OnCellEndEdit(self, *args):
+        """
   OnCellEndEdit(self: DataGridView,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellEndEdit event.
@@ -1182,9 +1290,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnCellEnter(self,*args):
-  """
+        pass
+
+    def OnCellEnter(self, *args):
+        """
   OnCellEnter(self: DataGridView,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellEnter event.
@@ -1193,9 +1302,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnCellErrorTextChanged(self,*args):
-  """
+        pass
+
+    def OnCellErrorTextChanged(self, *args):
+        """
   OnCellErrorTextChanged(self: DataGridView,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellErrorTextChanged event.
@@ -1204,9 +1314,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnCellErrorTextNeeded(self,*args):
-  """
+        pass
+
+    def OnCellErrorTextNeeded(self, *args):
+        """
   OnCellErrorTextNeeded(self: DataGridView,e: DataGridViewCellErrorTextNeededEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellErrorTextNeeded event.
@@ -1215,9 +1326,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellErrorTextNeededEventArgs that contains the event data.
   """
-  pass
- def OnCellFormatting(self,*args):
-  """
+        pass
+
+    def OnCellFormatting(self, *args):
+        """
   OnCellFormatting(self: DataGridView,e: DataGridViewCellFormattingEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellFormatting event.
@@ -1226,9 +1338,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellFormattingEventArgs that contains the event data.
   """
-  pass
- def OnCellLeave(self,*args):
-  """
+        pass
+
+    def OnCellLeave(self, *args):
+        """
   OnCellLeave(self: DataGridView,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellLeave event.
@@ -1237,9 +1350,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnCellMouseClick(self,*args):
-  """
+        pass
+
+    def OnCellMouseClick(self, *args):
+        """
   OnCellMouseClick(self: DataGridView,e: DataGridViewCellMouseEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellMouseClick event.
@@ -1248,9 +1362,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellMouseEventArgs that contains the event data.
   """
-  pass
- def OnCellMouseDoubleClick(self,*args):
-  """
+        pass
+
+    def OnCellMouseDoubleClick(self, *args):
+        """
   OnCellMouseDoubleClick(self: DataGridView,e: DataGridViewCellMouseEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellMouseDoubleClick event.
@@ -1259,9 +1374,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellMouseEventArgs that contains the event data.
   """
-  pass
- def OnCellMouseDown(self,*args):
-  """
+        pass
+
+    def OnCellMouseDown(self, *args):
+        """
   OnCellMouseDown(self: DataGridView,e: DataGridViewCellMouseEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellMouseDown event.
@@ -1270,9 +1386,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellMouseEventArgs that contains the event data.
   """
-  pass
- def OnCellMouseEnter(self,*args):
-  """
+        pass
+
+    def OnCellMouseEnter(self, *args):
+        """
   OnCellMouseEnter(self: DataGridView,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellMouseEnter event.
@@ -1281,9 +1398,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnCellMouseLeave(self,*args):
-  """
+        pass
+
+    def OnCellMouseLeave(self, *args):
+        """
   OnCellMouseLeave(self: DataGridView,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellMouseLeave event.
@@ -1292,9 +1410,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnCellMouseMove(self,*args):
-  """
+        pass
+
+    def OnCellMouseMove(self, *args):
+        """
   OnCellMouseMove(self: DataGridView,e: DataGridViewCellMouseEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellMouseMove event.
@@ -1303,9 +1422,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellMouseEventArgs that contains the event data.
   """
-  pass
- def OnCellMouseUp(self,*args):
-  """
+        pass
+
+    def OnCellMouseUp(self, *args):
+        """
   OnCellMouseUp(self: DataGridView,e: DataGridViewCellMouseEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellMouseUp event.
@@ -1314,9 +1434,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellMouseEventArgs that contains the event data.
   """
-  pass
- def OnCellPainting(self,*args):
-  """
+        pass
+
+    def OnCellPainting(self, *args):
+        """
   OnCellPainting(self: DataGridView,e: DataGridViewCellPaintingEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellPainting event.
@@ -1325,9 +1446,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellPaintingEventArgs that contains the event data.
   """
-  pass
- def OnCellParsing(self,*args):
-  """
+        pass
+
+    def OnCellParsing(self, *args):
+        """
   OnCellParsing(self: DataGridView,e: DataGridViewCellParsingEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellParsing event.
@@ -1336,9 +1458,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellParsingEventArgs that contains the event data.
   """
-  pass
- def OnCellStateChanged(self,*args):
-  """
+        pass
+
+    def OnCellStateChanged(self, *args):
+        """
   OnCellStateChanged(self: DataGridView,e: DataGridViewCellStateChangedEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellStateChanged event.
@@ -1347,9 +1470,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellStateChangedEventArgs that contains the event data.
   """
-  pass
- def OnCellStyleChanged(self,*args):
-  """
+        pass
+
+    def OnCellStyleChanged(self, *args):
+        """
   OnCellStyleChanged(self: DataGridView,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellStyleChanged event.
@@ -1358,9 +1482,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnCellStyleContentChanged(self,*args):
-  """
+        pass
+
+    def OnCellStyleContentChanged(self, *args):
+        """
   OnCellStyleContentChanged(self: DataGridView,e: DataGridViewCellStyleContentChangedEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellStyleContentChanged event.
@@ -1369,9 +1494,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellStyleContentChangedEventArgs that contains the event data.
   """
-  pass
- def OnCellToolTipTextChanged(self,*args):
-  """
+        pass
+
+    def OnCellToolTipTextChanged(self, *args):
+        """
   OnCellToolTipTextChanged(self: DataGridView,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellToolTipTextChanged event.
@@ -1380,9 +1506,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.Windows.Forms.DataGridViewCellEventArgs that contains information about the cell.
   """
-  pass
- def OnCellToolTipTextNeeded(self,*args):
-  """
+        pass
+
+    def OnCellToolTipTextNeeded(self, *args):
+        """
   OnCellToolTipTextNeeded(self: DataGridView,e: DataGridViewCellToolTipTextNeededEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellToolTipTextNeeded event.
@@ -1391,9 +1518,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs that contains the event data.
   """
-  pass
- def OnCellValidated(self,*args):
-  """
+        pass
+
+    def OnCellValidated(self, *args):
+        """
   OnCellValidated(self: DataGridView,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellValidated event.
@@ -1402,9 +1530,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnCellValidating(self,*args):
-  """
+        pass
+
+    def OnCellValidating(self, *args):
+        """
   OnCellValidating(self: DataGridView,e: DataGridViewCellValidatingEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellValidating event.
@@ -1413,9 +1542,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellValidatingEventArgs that contains the event data.
   """
-  pass
- def OnCellValueChanged(self,*args):
-  """
+        pass
+
+    def OnCellValueChanged(self, *args):
+        """
   OnCellValueChanged(self: DataGridView,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellValueChanged event.
@@ -1424,9 +1554,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnCellValueNeeded(self,*args):
-  """
+        pass
+
+    def OnCellValueNeeded(self, *args):
+        """
   OnCellValueNeeded(self: DataGridView,e: DataGridViewCellValueEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellValueNeeded event.
@@ -1435,9 +1566,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellValueEventArgs that contains the event data.
   """
-  pass
- def OnCellValuePushed(self,*args):
-  """
+        pass
+
+    def OnCellValuePushed(self, *args):
+        """
   OnCellValuePushed(self: DataGridView,e: DataGridViewCellValueEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellValuePushed event.
@@ -1446,9 +1578,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellValueEventArgs that contains the event data.
   """
-  pass
- def OnChangeUICues(self,*args):
-  """
+        pass
+
+    def OnChangeUICues(self, *args):
+        """
   OnChangeUICues(self: Control,e: UICuesEventArgs)
 
    Raises the System.Windows.Forms.Control.ChangeUICues event.
@@ -1457,9 +1590,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.UICuesEventArgs that contains the event data.
   """
-  pass
- def OnClick(self,*args):
-  """
+        pass
+
+    def OnClick(self, *args):
+        """
   OnClick(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Click event.
@@ -1468,9 +1602,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnClientSizeChanged(self,*args):
-  """
+        pass
+
+    def OnClientSizeChanged(self, *args):
+        """
   OnClientSizeChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ClientSizeChanged event.
@@ -1479,9 +1614,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnColumnAdded(self,*args):
-  """
+        pass
+
+    def OnColumnAdded(self, *args):
+        """
   OnColumnAdded(self: DataGridView,e: DataGridViewColumnEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.ColumnAdded event.
@@ -1490,9 +1626,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewColumnEventArgs that contains the event data.
   """
-  pass
- def OnColumnContextMenuStripChanged(self,*args):
-  """
+        pass
+
+    def OnColumnContextMenuStripChanged(self, *args):
+        """
   OnColumnContextMenuStripChanged(self: DataGridView,e: DataGridViewColumnEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.ColumnContextMenuStripChanged event.
@@ -1501,9 +1638,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewColumnEventArgs that contains the event data.
   """
-  pass
- def OnColumnDataPropertyNameChanged(self,*args):
-  """
+        pass
+
+    def OnColumnDataPropertyNameChanged(self, *args):
+        """
   OnColumnDataPropertyNameChanged(self: DataGridView,e: DataGridViewColumnEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.ColumnDataPropertyNameChanged event.
@@ -1512,9 +1650,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewColumnEventArgs that contains the event data.
   """
-  pass
- def OnColumnDefaultCellStyleChanged(self,*args):
-  """
+        pass
+
+    def OnColumnDefaultCellStyleChanged(self, *args):
+        """
   OnColumnDefaultCellStyleChanged(self: DataGridView,e: DataGridViewColumnEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.ColumnDefaultCellStyleChanged event.
@@ -1523,9 +1662,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewColumnEventArgs that contains the event data.
   """
-  pass
- def OnColumnDisplayIndexChanged(self,*args):
-  """
+        pass
+
+    def OnColumnDisplayIndexChanged(self, *args):
+        """
   OnColumnDisplayIndexChanged(self: DataGridView,e: DataGridViewColumnEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.ColumnDisplayIndexChanged event.
@@ -1534,9 +1674,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewColumnEventArgs that contains the event data.
   """
-  pass
- def OnColumnDividerDoubleClick(self,*args):
-  """
+        pass
+
+    def OnColumnDividerDoubleClick(self, *args):
+        """
   OnColumnDividerDoubleClick(self: DataGridView,e: DataGridViewColumnDividerDoubleClickEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.ColumnDividerDoubleClick event.
@@ -1547,9 +1688,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
     data.
   """
-  pass
- def OnColumnDividerWidthChanged(self,*args):
-  """
+        pass
+
+    def OnColumnDividerWidthChanged(self, *args):
+        """
   OnColumnDividerWidthChanged(self: DataGridView,e: DataGridViewColumnEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.ColumnDividerWidthChanged event.
@@ -1558,9 +1700,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewColumnEventArgs that contains the event data.
   """
-  pass
- def OnColumnHeaderCellChanged(self,*args):
-  """
+        pass
+
+    def OnColumnHeaderCellChanged(self, *args):
+        """
   OnColumnHeaderCellChanged(self: DataGridView,e: DataGridViewColumnEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.ColumnHeaderCellChanged event.
@@ -1569,9 +1712,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewColumnEventArgs that contains the event data.
   """
-  pass
- def OnColumnHeaderMouseClick(self,*args):
-  """
+        pass
+
+    def OnColumnHeaderMouseClick(self, *args):
+        """
   OnColumnHeaderMouseClick(self: DataGridView,e: DataGridViewCellMouseEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.ColumnHeaderMouseClick event.
@@ -1580,9 +1724,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellMouseEventArgs that contains the event data.
   """
-  pass
- def OnColumnHeaderMouseDoubleClick(self,*args):
-  """
+        pass
+
+    def OnColumnHeaderMouseDoubleClick(self, *args):
+        """
   OnColumnHeaderMouseDoubleClick(self: DataGridView,e: DataGridViewCellMouseEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.ColumnHeaderMouseDoubleClick event.
@@ -1593,9 +1738,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
     and the position of the mouse pointer.
   """
-  pass
- def OnColumnHeadersBorderStyleChanged(self,*args):
-  """
+        pass
+
+    def OnColumnHeadersBorderStyleChanged(self, *args):
+        """
   OnColumnHeadersBorderStyleChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.ColumnHeadersBorderStyleChanged event.
@@ -1604,9 +1750,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnColumnHeadersDefaultCellStyleChanged(self,*args):
-  """
+        pass
+
+    def OnColumnHeadersDefaultCellStyleChanged(self, *args):
+        """
   OnColumnHeadersDefaultCellStyleChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyleChanged event.
@@ -1615,9 +1762,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnColumnHeadersHeightChanged(self,*args):
-  """
+        pass
+
+    def OnColumnHeadersHeightChanged(self, *args):
+        """
   OnColumnHeadersHeightChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.ColumnHeadersHeightChanged event.
@@ -1626,9 +1774,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnColumnHeadersHeightSizeModeChanged(self,*args):
-  """
+        pass
+
+    def OnColumnHeadersHeightSizeModeChanged(self, *args):
+        """
   OnColumnHeadersHeightSizeModeChanged(self: DataGridView,e: DataGridViewAutoSizeModeEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.ColumnHeadersHeightSizeModeChanged event.
@@ -1637,9 +1786,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewAutoSizeModeEventArgs that contains the event data.
   """
-  pass
- def OnColumnMinimumWidthChanged(self,*args):
-  """
+        pass
+
+    def OnColumnMinimumWidthChanged(self, *args):
+        """
   OnColumnMinimumWidthChanged(self: DataGridView,e: DataGridViewColumnEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.ColumnMinimumWidthChanged event.
@@ -1648,9 +1798,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewColumnEventArgs that contains the event data.
   """
-  pass
- def OnColumnNameChanged(self,*args):
-  """
+        pass
+
+    def OnColumnNameChanged(self, *args):
+        """
   OnColumnNameChanged(self: DataGridView,e: DataGridViewColumnEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.ColumnNameChanged event.
@@ -1659,9 +1810,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewColumnEventArgs that contains the event data.
   """
-  pass
- def OnColumnRemoved(self,*args):
-  """
+        pass
+
+    def OnColumnRemoved(self, *args):
+        """
   OnColumnRemoved(self: DataGridView,e: DataGridViewColumnEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.ColumnRemoved event.
@@ -1670,9 +1822,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewColumnEventArgs that contains the event data.
   """
-  pass
- def OnColumnSortModeChanged(self,*args):
-  """
+        pass
+
+    def OnColumnSortModeChanged(self, *args):
+        """
   OnColumnSortModeChanged(self: DataGridView,e: DataGridViewColumnEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.ColumnSortModeChanged event.
@@ -1681,9 +1834,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewColumnEventArgs that contains the event data.
   """
-  pass
- def OnColumnStateChanged(self,*args):
-  """
+        pass
+
+    def OnColumnStateChanged(self, *args):
+        """
   OnColumnStateChanged(self: DataGridView,e: DataGridViewColumnStateChangedEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.ColumnStateChanged event.
@@ -1692,9 +1846,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewColumnStateChangedEventArgs that contains the event data.
   """
-  pass
- def OnColumnToolTipTextChanged(self,*args):
-  """
+        pass
+
+    def OnColumnToolTipTextChanged(self, *args):
+        """
   OnColumnToolTipTextChanged(self: DataGridView,e: DataGridViewColumnEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.ColumnToolTipTextChanged event.
@@ -1703,9 +1858,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewColumnEventArgs that contains information about the column.
   """
-  pass
- def OnColumnWidthChanged(self,*args):
-  """
+        pass
+
+    def OnColumnWidthChanged(self, *args):
+        """
   OnColumnWidthChanged(self: DataGridView,e: DataGridViewColumnEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.ColumnWidthChanged event.
@@ -1714,9 +1870,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewColumnEventArgs that contains the event data.
   """
-  pass
- def OnContextMenuChanged(self,*args):
-  """
+        pass
+
+    def OnContextMenuChanged(self, *args):
+        """
   OnContextMenuChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ContextMenuChanged event.
@@ -1725,9 +1882,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnContextMenuStripChanged(self,*args):
-  """
+        pass
+
+    def OnContextMenuStripChanged(self, *args):
+        """
   OnContextMenuStripChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ContextMenuStripChanged event.
@@ -1736,9 +1894,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnControlAdded(self,*args):
-  """
+        pass
+
+    def OnControlAdded(self, *args):
+        """
   OnControlAdded(self: Control,e: ControlEventArgs)
 
    Raises the System.Windows.Forms.Control.ControlAdded event.
@@ -1747,9 +1906,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.ControlEventArgs that contains the event data.
   """
-  pass
- def OnControlRemoved(self,*args):
-  """
+        pass
+
+    def OnControlRemoved(self, *args):
+        """
   OnControlRemoved(self: Control,e: ControlEventArgs)
 
    Raises the System.Windows.Forms.Control.ControlRemoved event.
@@ -1758,16 +1918,18 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.ControlEventArgs that contains the event data.
   """
-  pass
- def OnCreateControl(self,*args):
-  """
+        pass
+
+    def OnCreateControl(self, *args):
+        """
   OnCreateControl(self: Control)
 
    Raises the System.Windows.Forms.Control.CreateControl method.
   """
-  pass
- def OnCurrentCellChanged(self,*args):
-  """
+        pass
+
+    def OnCurrentCellChanged(self, *args):
+        """
   OnCurrentCellChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CurrentCellChanged event.
@@ -1776,9 +1938,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnCurrentCellDirtyStateChanged(self,*args):
-  """
+        pass
+
+    def OnCurrentCellDirtyStateChanged(self, *args):
+        """
   OnCurrentCellDirtyStateChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CurrentCellDirtyStateChanged event.
@@ -1787,9 +1950,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnCursorChanged(self,*args):
-  """
+        pass
+
+    def OnCursorChanged(self, *args):
+        """
   OnCursorChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.CursorChanged event and updates the 
@@ -1802,9 +1966,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDataBindingComplete(self,*args):
-  """
+        pass
+
+    def OnDataBindingComplete(self, *args):
+        """
   OnDataBindingComplete(self: DataGridView,e: DataGridViewBindingCompleteEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.DataBindingComplete event.
@@ -1813,9 +1978,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewBindingCompleteEventArgs that contains the event data.
   """
-  pass
- def OnDataError(self,*args):
-  """
+        pass
+
+    def OnDataError(self, *args):
+        """
   OnDataError(self: DataGridView,displayErrorDialogIfNoHandler: bool,e: DataGridViewDataErrorEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.DataError event.
@@ -1830,9 +1996,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewDataErrorEventArgs that contains the event data.
   """
-  pass
- def OnDataMemberChanged(self,*args):
-  """
+        pass
+
+    def OnDataMemberChanged(self, *args):
+        """
   OnDataMemberChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.DataMemberChanged event.
@@ -1841,9 +2008,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDataSourceChanged(self,*args):
-  """
+        pass
+
+    def OnDataSourceChanged(self, *args):
+        """
   OnDataSourceChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.DataSourceChanged event.
@@ -1852,9 +2020,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDefaultCellStyleChanged(self,*args):
-  """
+        pass
+
+    def OnDefaultCellStyleChanged(self, *args):
+        """
   OnDefaultCellStyleChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.DefaultCellStyleChanged event.
@@ -1863,9 +2032,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDefaultValuesNeeded(self,*args):
-  """
+        pass
+
+    def OnDefaultValuesNeeded(self, *args):
+        """
   OnDefaultValuesNeeded(self: DataGridView,e: DataGridViewRowEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.DefaultValuesNeeded event.
@@ -1874,9 +2044,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewRowEventArgs that contains the event data.
   """
-  pass
- def OnDockChanged(self,*args):
-  """
+        pass
+
+    def OnDockChanged(self, *args):
+        """
   OnDockChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.DockChanged event.
@@ -1885,9 +2056,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDoubleClick(self,*args):
-  """
+        pass
+
+    def OnDoubleClick(self, *args):
+        """
   OnDoubleClick(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.DoubleClick event.
@@ -1896,15 +2068,18 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDpiChangedAfterParent(self,*args):
-  """ OnDpiChangedAfterParent(self: Control,e: EventArgs) """
-  pass
- def OnDpiChangedBeforeParent(self,*args):
-  """ OnDpiChangedBeforeParent(self: Control,e: EventArgs) """
-  pass
- def OnDragDrop(self,*args):
-  """
+        pass
+
+    def OnDpiChangedAfterParent(self, *args):
+        """ OnDpiChangedAfterParent(self: Control,e: EventArgs) """
+        pass
+
+    def OnDpiChangedBeforeParent(self, *args):
+        """ OnDpiChangedBeforeParent(self: Control,e: EventArgs) """
+        pass
+
+    def OnDragDrop(self, *args):
+        """
   OnDragDrop(self: Control,drgevent: DragEventArgs)
 
    Raises the System.Windows.Forms.Control.DragDrop event.
@@ -1913,9 +2088,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    drgevent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnDragEnter(self,*args):
-  """
+        pass
+
+    def OnDragEnter(self, *args):
+        """
   OnDragEnter(self: Control,drgevent: DragEventArgs)
 
    Raises the System.Windows.Forms.Control.DragEnter event.
@@ -1924,9 +2100,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    drgevent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnDragLeave(self,*args):
-  """
+        pass
+
+    def OnDragLeave(self, *args):
+        """
   OnDragLeave(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.DragLeave event.
@@ -1935,9 +2112,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDragOver(self,*args):
-  """
+        pass
+
+    def OnDragOver(self, *args):
+        """
   OnDragOver(self: Control,drgevent: DragEventArgs)
 
    Raises the System.Windows.Forms.Control.DragOver event.
@@ -1946,9 +2124,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    drgevent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnEditingControlShowing(self,*args):
-  """
+        pass
+
+    def OnEditingControlShowing(self, *args):
+        """
   OnEditingControlShowing(self: DataGridView,e: DataGridViewEditingControlShowingEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.EditingControlShowing event.
@@ -1959,9 +2138,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
     about the editing control.
   """
-  pass
- def OnEditModeChanged(self,*args):
-  """
+        pass
+
+    def OnEditModeChanged(self, *args):
+        """
   OnEditModeChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.EditModeChanged event.
@@ -1970,16 +2150,18 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnEnabledChanged(self,*args):
-  """
+        pass
+
+    def OnEnabledChanged(self, *args):
+        """
   OnEnabledChanged(self: DataGridView,e: EventArgs)
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnEnter(self,*args):
-  """
+        pass
+
+    def OnEnter(self, *args):
+        """
   OnEnter(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Enter event.
@@ -1988,9 +2170,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnFontChanged(self,*args):
-  """
+        pass
+
+    def OnFontChanged(self, *args):
+        """
   OnFontChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.FontChanged event.
@@ -1999,9 +2182,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnForeColorChanged(self,*args):
-  """
+        pass
+
+    def OnForeColorChanged(self, *args):
+        """
   OnForeColorChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.ForeColorChanged event.
@@ -2010,9 +2194,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnGiveFeedback(self,*args):
-  """
+        pass
+
+    def OnGiveFeedback(self, *args):
+        """
   OnGiveFeedback(self: Control,gfbevent: GiveFeedbackEventArgs)
 
    Raises the System.Windows.Forms.Control.GiveFeedback event.
@@ -2021,16 +2206,18 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    gfbevent: A System.Windows.Forms.GiveFeedbackEventArgs that contains the event data.
   """
-  pass
- def OnGotFocus(self,*args):
-  """
+        pass
+
+    def OnGotFocus(self, *args):
+        """
   OnGotFocus(self: DataGridView,e: EventArgs)
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnGridColorChanged(self,*args):
-  """
+        pass
+
+    def OnGridColorChanged(self, *args):
+        """
   OnGridColorChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.GridColorChanged event.
@@ -2039,9 +2226,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnHandleCreated(self,*args):
-  """
+        pass
+
+    def OnHandleCreated(self, *args):
+        """
   OnHandleCreated(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.HandleCreated event.
@@ -2050,16 +2238,18 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnHandleDestroyed(self,*args):
-  """
+        pass
+
+    def OnHandleDestroyed(self, *args):
+        """
   OnHandleDestroyed(self: DataGridView,e: EventArgs)
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnHelpRequested(self,*args):
-  """
+        pass
+
+    def OnHelpRequested(self, *args):
+        """
   OnHelpRequested(self: Control,hevent: HelpEventArgs)
 
    Raises the System.Windows.Forms.Control.HelpRequested event.
@@ -2068,9 +2258,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    hevent: A System.Windows.Forms.HelpEventArgs that contains the event data.
   """
-  pass
- def OnImeModeChanged(self,*args):
-  """
+        pass
+
+    def OnImeModeChanged(self, *args):
+        """
   OnImeModeChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ImeModeChanged event.
@@ -2079,9 +2270,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnInvalidated(self,*args):
-  """
+        pass
+
+    def OnInvalidated(self, *args):
+        """
   OnInvalidated(self: Control,e: InvalidateEventArgs)
 
    Raises the System.Windows.Forms.Control.Invalidated event.
@@ -2090,9 +2282,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.Windows.Forms.InvalidateEventArgs that contains the event data.
   """
-  pass
- def OnKeyDown(self,*args):
-  """
+        pass
+
+    def OnKeyDown(self, *args):
+        """
   OnKeyDown(self: DataGridView,e: KeyEventArgs)
 
    Raises the System.Windows.Forms.Control.KeyDown event.
@@ -2101,9 +2294,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.KeyEventArgs that contains the event data.
   """
-  pass
- def OnKeyPress(self,*args):
-  """
+        pass
+
+    def OnKeyPress(self, *args):
+        """
   OnKeyPress(self: DataGridView,e: KeyPressEventArgs)
 
    Raises the System.Windows.Forms.Control.KeyPress event.
@@ -2112,9 +2306,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.KeyPressEventArgs that contains the event data.
   """
-  pass
- def OnKeyUp(self,*args):
-  """
+        pass
+
+    def OnKeyUp(self, *args):
+        """
   OnKeyUp(self: DataGridView,e: KeyEventArgs)
 
    Raises the System.Windows.Forms.Control.KeyUp event.
@@ -2123,9 +2318,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.KeyEventArgs that contains the event data.
   """
-  pass
- def OnLayout(self,*args):
-  """
+        pass
+
+    def OnLayout(self, *args):
+        """
   OnLayout(self: DataGridView,e: LayoutEventArgs)
 
    Raises the System.Windows.Forms.Control.Layout event.
@@ -2134,9 +2330,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.LayoutEventArgs that contains the event data.
   """
-  pass
- def OnLeave(self,*args):
-  """
+        pass
+
+    def OnLeave(self, *args):
+        """
   OnLeave(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Leave event.
@@ -2145,9 +2342,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnLocationChanged(self,*args):
-  """
+        pass
+
+    def OnLocationChanged(self, *args):
+        """
   OnLocationChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.LocationChanged event.
@@ -2156,16 +2354,18 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnLostFocus(self,*args):
-  """
+        pass
+
+    def OnLostFocus(self, *args):
+        """
   OnLostFocus(self: DataGridView,e: EventArgs)
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMarginChanged(self,*args):
-  """
+        pass
+
+    def OnMarginChanged(self, *args):
+        """
   OnMarginChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.MarginChanged event.
@@ -2174,9 +2374,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseCaptureChanged(self,*args):
-  """
+        pass
+
+    def OnMouseCaptureChanged(self, *args):
+        """
   OnMouseCaptureChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.MouseCaptureChanged event.
@@ -2185,9 +2386,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseClick(self,*args):
-  """
+        pass
+
+    def OnMouseClick(self, *args):
+        """
   OnMouseClick(self: DataGridView,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseClick event.
@@ -2196,16 +2398,18 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseDoubleClick(self,*args):
-  """
+        pass
+
+    def OnMouseDoubleClick(self, *args):
+        """
   OnMouseDoubleClick(self: DataGridView,e: MouseEventArgs)
 
    e: An System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseDown(self,*args):
-  """
+        pass
+
+    def OnMouseDown(self, *args):
+        """
   OnMouseDown(self: DataGridView,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseDown event.
@@ -2214,16 +2418,18 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseEnter(self,*args):
-  """
+        pass
+
+    def OnMouseEnter(self, *args):
+        """
   OnMouseEnter(self: DataGridView,e: EventArgs)
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseHover(self,*args):
-  """
+        pass
+
+    def OnMouseHover(self, *args):
+        """
   OnMouseHover(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.MouseHover event.
@@ -2232,9 +2438,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseLeave(self,*args):
-  """
+        pass
+
+    def OnMouseLeave(self, *args):
+        """
   OnMouseLeave(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.MouseLeave event.
@@ -2243,9 +2450,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseMove(self,*args):
-  """
+        pass
+
+    def OnMouseMove(self, *args):
+        """
   OnMouseMove(self: DataGridView,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseMove event.
@@ -2254,9 +2462,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseUp(self,*args):
-  """
+        pass
+
+    def OnMouseUp(self, *args):
+        """
   OnMouseUp(self: DataGridView,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseUp event.
@@ -2265,16 +2474,18 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseWheel(self,*args):
-  """
+        pass
+
+    def OnMouseWheel(self, *args):
+        """
   OnMouseWheel(self: DataGridView,e: MouseEventArgs)
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMove(self,*args):
-  """
+        pass
+
+    def OnMove(self, *args):
+        """
   OnMove(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Move event.
@@ -2283,9 +2494,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMultiSelectChanged(self,*args):
-  """
+        pass
+
+    def OnMultiSelectChanged(self, *args):
+        """
   OnMultiSelectChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.MultiSelectChanged event.
@@ -2294,9 +2506,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnNewRowNeeded(self,*args):
-  """
+        pass
+
+    def OnNewRowNeeded(self, *args):
+        """
   OnNewRowNeeded(self: DataGridView,e: DataGridViewRowEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.NewRowNeeded event.
@@ -2305,9 +2518,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewRowEventArgs that contains the event data.
   """
-  pass
- def OnNotifyMessage(self,*args):
-  """
+        pass
+
+    def OnNotifyMessage(self, *args):
+        """
   OnNotifyMessage(self: Control,m: Message)
 
    Notifies the control of Windows messages.
@@ -2316,9 +2530,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    m: A System.Windows.Forms.Message that represents the Windows message.
   """
-  pass
- def OnPaddingChanged(self,*args):
-  """
+        pass
+
+    def OnPaddingChanged(self, *args):
+        """
   OnPaddingChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.PaddingChanged event.
@@ -2327,9 +2542,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.EventArgs that contains the event data.
   """
-  pass
- def OnPaint(self,*args):
-  """
+        pass
+
+    def OnPaint(self, *args):
+        """
   OnPaint(self: DataGridView,e: PaintEventArgs)
 
    Raises the System.Windows.Forms.Control.Paint event.
@@ -2338,9 +2554,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def OnPaintBackground(self,*args):
-  """
+        pass
+
+    def OnPaintBackground(self, *args):
+        """
   OnPaintBackground(self: Control,pevent: PaintEventArgs)
 
    Paints the background of the control.
@@ -2349,9 +2566,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    pevent: A System.Windows.Forms.PaintEventArgs that contains information about the control to paint.
   """
-  pass
- def OnParentBackColorChanged(self,*args):
-  """
+        pass
+
+    def OnParentBackColorChanged(self, *args):
+        """
   OnParentBackColorChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BackColorChanged event when the 
@@ -2364,9 +2582,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentBackgroundImageChanged(self,*args):
-  """
+        pass
+
+    def OnParentBackgroundImageChanged(self, *args):
+        """
   OnParentBackgroundImageChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BackgroundImageChanged event when the 
@@ -2379,9 +2598,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentBindingContextChanged(self,*args):
-  """
+        pass
+
+    def OnParentBindingContextChanged(self, *args):
+        """
   OnParentBindingContextChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.BindingContextChanged event when the 
@@ -2394,9 +2614,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentChanged(self,*args):
-  """
+        pass
+
+    def OnParentChanged(self, *args):
+        """
   OnParentChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ParentChanged event.
@@ -2405,9 +2626,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentCursorChanged(self,*args):
-  """
+        pass
+
+    def OnParentCursorChanged(self, *args):
+        """
   OnParentCursorChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.CursorChanged event.
@@ -2416,9 +2638,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentEnabledChanged(self,*args):
-  """
+        pass
+
+    def OnParentEnabledChanged(self, *args):
+        """
   OnParentEnabledChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.EnabledChanged event when the 
@@ -2431,9 +2654,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentFontChanged(self,*args):
-  """
+        pass
+
+    def OnParentFontChanged(self, *args):
+        """
   OnParentFontChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.FontChanged event when the 
@@ -2446,9 +2670,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentForeColorChanged(self,*args):
-  """
+        pass
+
+    def OnParentForeColorChanged(self, *args):
+        """
   OnParentForeColorChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.ForeColorChanged event when the 
@@ -2461,9 +2686,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentRightToLeftChanged(self,*args):
-  """
+        pass
+
+    def OnParentRightToLeftChanged(self, *args):
+        """
   OnParentRightToLeftChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.RightToLeftChanged event when the 
@@ -2476,9 +2702,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentVisibleChanged(self,*args):
-  """
+        pass
+
+    def OnParentVisibleChanged(self, *args):
+        """
   OnParentVisibleChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.VisibleChanged event when the 
@@ -2491,9 +2718,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnPreviewKeyDown(self,*args):
-  """
+        pass
+
+    def OnPreviewKeyDown(self, *args):
+        """
   OnPreviewKeyDown(self: Control,e: PreviewKeyDownEventArgs)
 
    Raises the System.Windows.Forms.Control.PreviewKeyDown event.
@@ -2502,9 +2730,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.PreviewKeyDownEventArgs that contains the event data.
   """
-  pass
- def OnPrint(self,*args):
-  """
+        pass
+
+    def OnPrint(self, *args):
+        """
   OnPrint(self: Control,e: PaintEventArgs)
 
    Raises the System.Windows.Forms.Control.Paint event.
@@ -2513,9 +2742,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def OnQueryContinueDrag(self,*args):
-  """
+        pass
+
+    def OnQueryContinueDrag(self, *args):
+        """
   OnQueryContinueDrag(self: Control,qcdevent: QueryContinueDragEventArgs)
 
    Raises the System.Windows.Forms.Control.QueryContinueDrag event.
@@ -2524,9 +2754,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    qcdevent: A System.Windows.Forms.QueryContinueDragEventArgs that contains the event data.
   """
-  pass
- def OnReadOnlyChanged(self,*args):
-  """
+        pass
+
+    def OnReadOnlyChanged(self, *args):
+        """
   OnReadOnlyChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.ReadOnlyChanged event.
@@ -2535,9 +2766,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnRegionChanged(self,*args):
-  """
+        pass
+
+    def OnRegionChanged(self, *args):
+        """
   OnRegionChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.RegionChanged event.
@@ -2546,9 +2778,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnResize(self,*args):
-  """
+        pass
+
+    def OnResize(self, *args):
+        """
   OnResize(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Resize event.
@@ -2557,16 +2790,18 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnRightToLeftChanged(self,*args):
-  """
+        pass
+
+    def OnRightToLeftChanged(self, *args):
+        """
   OnRightToLeftChanged(self: DataGridView,e: EventArgs)
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnRowContextMenuStripChanged(self,*args):
-  """
+        pass
+
+    def OnRowContextMenuStripChanged(self, *args):
+        """
   OnRowContextMenuStripChanged(self: DataGridView,e: DataGridViewRowEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowContextMenuStripChanged event.
@@ -2575,9 +2810,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewRowEventArgs that contains the event data.
   """
-  pass
- def OnRowContextMenuStripNeeded(self,*args):
-  """
+        pass
+
+    def OnRowContextMenuStripNeeded(self, *args):
+        """
   OnRowContextMenuStripNeeded(self: DataGridView,e: DataGridViewRowContextMenuStripNeededEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowContextMenuStripNeeded event.
@@ -2588,9 +2824,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
     data.
   """
-  pass
- def OnRowDefaultCellStyleChanged(self,*args):
-  """
+        pass
+
+    def OnRowDefaultCellStyleChanged(self, *args):
+        """
   OnRowDefaultCellStyleChanged(self: DataGridView,e: DataGridViewRowEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowDefaultCellStyleChanged event.
@@ -2599,9 +2836,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewRowEventArgs that contains the event data.
   """
-  pass
- def OnRowDirtyStateNeeded(self,*args):
-  """
+        pass
+
+    def OnRowDirtyStateNeeded(self, *args):
+        """
   OnRowDirtyStateNeeded(self: DataGridView,e: QuestionEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowDirtyStateNeeded event.
@@ -2610,9 +2848,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.QuestionEventArgs that contains the event data.
   """
-  pass
- def OnRowDividerDoubleClick(self,*args):
-  """
+        pass
+
+    def OnRowDividerDoubleClick(self, *args):
+        """
   OnRowDividerDoubleClick(self: DataGridView,e: DataGridViewRowDividerDoubleClickEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowDividerDoubleClick event.
@@ -2621,9 +2860,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewRowDividerDoubleClickEventArgs that contains the event data.
   """
-  pass
- def OnRowDividerHeightChanged(self,*args):
-  """
+        pass
+
+    def OnRowDividerHeightChanged(self, *args):
+        """
   OnRowDividerHeightChanged(self: DataGridView,e: DataGridViewRowEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowDividerHeightChanged event.
@@ -2632,9 +2872,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewRowEventArgs that contains the event data.
   """
-  pass
- def OnRowEnter(self,*args):
-  """
+        pass
+
+    def OnRowEnter(self, *args):
+        """
   OnRowEnter(self: DataGridView,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowEnter event.
@@ -2643,9 +2884,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnRowErrorTextChanged(self,*args):
-  """
+        pass
+
+    def OnRowErrorTextChanged(self, *args):
+        """
   OnRowErrorTextChanged(self: DataGridView,e: DataGridViewRowEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowErrorTextChanged event.
@@ -2654,9 +2896,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewRowEventArgs that contains the event data.
   """
-  pass
- def OnRowErrorTextNeeded(self,*args):
-  """
+        pass
+
+    def OnRowErrorTextNeeded(self, *args):
+        """
   OnRowErrorTextNeeded(self: DataGridView,e: DataGridViewRowErrorTextNeededEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowErrorTextNeeded event.
@@ -2665,9 +2908,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewRowErrorTextNeededEventArgs that contains the event data.
   """
-  pass
- def OnRowHeaderCellChanged(self,*args):
-  """
+        pass
+
+    def OnRowHeaderCellChanged(self, *args):
+        """
   OnRowHeaderCellChanged(self: DataGridView,e: DataGridViewRowEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowHeaderCellChanged event.
@@ -2676,9 +2920,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewRowEventArgs that contains the event data.
   """
-  pass
- def OnRowHeaderMouseClick(self,*args):
-  """
+        pass
+
+    def OnRowHeaderMouseClick(self, *args):
+        """
   OnRowHeaderMouseClick(self: DataGridView,e: DataGridViewCellMouseEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowHeaderMouseClick event.
@@ -2689,9 +2934,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
     and the header cell that was clicked.
   """
-  pass
- def OnRowHeaderMouseDoubleClick(self,*args):
-  """
+        pass
+
+    def OnRowHeaderMouseDoubleClick(self, *args):
+        """
   OnRowHeaderMouseDoubleClick(self: DataGridView,e: DataGridViewCellMouseEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowHeaderMouseDoubleClick event.
@@ -2702,9 +2948,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
     and the header cell that was double-clicked.
   """
-  pass
- def OnRowHeadersBorderStyleChanged(self,*args):
-  """
+        pass
+
+    def OnRowHeadersBorderStyleChanged(self, *args):
+        """
   OnRowHeadersBorderStyleChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowHeadersBorderStyleChanged event.
@@ -2713,9 +2960,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnRowHeadersDefaultCellStyleChanged(self,*args):
-  """
+        pass
+
+    def OnRowHeadersDefaultCellStyleChanged(self, *args):
+        """
   OnRowHeadersDefaultCellStyleChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowHeadersDefaultCellStyleChanged event.
@@ -2724,9 +2972,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnRowHeadersWidthChanged(self,*args):
-  """
+        pass
+
+    def OnRowHeadersWidthChanged(self, *args):
+        """
   OnRowHeadersWidthChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowHeadersWidthChanged event.
@@ -2735,9 +2984,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnRowHeadersWidthSizeModeChanged(self,*args):
-  """
+        pass
+
+    def OnRowHeadersWidthSizeModeChanged(self, *args):
+        """
   OnRowHeadersWidthSizeModeChanged(self: DataGridView,e: DataGridViewAutoSizeModeEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowHeadersWidthSizeModeChanged event.
@@ -2746,9 +2996,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewAutoSizeModeEventArgs that contains the event data.
   """
-  pass
- def OnRowHeightChanged(self,*args):
-  """
+        pass
+
+    def OnRowHeightChanged(self, *args):
+        """
   OnRowHeightChanged(self: DataGridView,e: DataGridViewRowEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowHeightChanged event.
@@ -2757,9 +3008,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewRowEventArgs that contains the event data.
   """
-  pass
- def OnRowHeightInfoNeeded(self,*args):
-  """
+        pass
+
+    def OnRowHeightInfoNeeded(self, *args):
+        """
   OnRowHeightInfoNeeded(self: DataGridView,e: DataGridViewRowHeightInfoNeededEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowHeightInfoNeeded event.
@@ -2768,9 +3020,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewRowHeightInfoNeededEventArgs that contains the event data.
   """
-  pass
- def OnRowHeightInfoPushed(self,*args):
-  """
+        pass
+
+    def OnRowHeightInfoPushed(self, *args):
+        """
   OnRowHeightInfoPushed(self: DataGridView,e: DataGridViewRowHeightInfoPushedEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowHeightInfoPushed event.
@@ -2779,9 +3032,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewRowHeightInfoPushedEventArgs that contains the event data.
   """
-  pass
- def OnRowLeave(self,*args):
-  """
+        pass
+
+    def OnRowLeave(self, *args):
+        """
   OnRowLeave(self: DataGridView,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowLeave event.
@@ -2790,9 +3044,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnRowMinimumHeightChanged(self,*args):
-  """
+        pass
+
+    def OnRowMinimumHeightChanged(self, *args):
+        """
   OnRowMinimumHeightChanged(self: DataGridView,e: DataGridViewRowEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowMinimumHeightChanged event.
@@ -2801,9 +3056,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewRowEventArgs that contains the event data.
   """
-  pass
- def OnRowPostPaint(self,*args):
-  """
+        pass
+
+    def OnRowPostPaint(self, *args):
+        """
   OnRowPostPaint(self: DataGridView,e: DataGridViewRowPostPaintEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowPostPaint event.
@@ -2812,9 +3068,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewRowPostPaintEventArgs that contains the event data.
   """
-  pass
- def OnRowPrePaint(self,*args):
-  """
+        pass
+
+    def OnRowPrePaint(self, *args):
+        """
   OnRowPrePaint(self: DataGridView,e: DataGridViewRowPrePaintEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowPrePaint event.
@@ -2823,9 +3080,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewRowPrePaintEventArgs that contains the event data.
   """
-  pass
- def OnRowsAdded(self,*args):
-  """
+        pass
+
+    def OnRowsAdded(self, *args):
+        """
   OnRowsAdded(self: DataGridView,e: DataGridViewRowsAddedEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowsAdded event.
@@ -2836,9 +3094,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
     rows.
   """
-  pass
- def OnRowsDefaultCellStyleChanged(self,*args):
-  """
+        pass
+
+    def OnRowsDefaultCellStyleChanged(self, *args):
+        """
   OnRowsDefaultCellStyleChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowsDefaultCellStyleChanged event.
@@ -2847,9 +3106,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnRowsRemoved(self,*args):
-  """
+        pass
+
+    def OnRowsRemoved(self, *args):
+        """
   OnRowsRemoved(self: DataGridView,e: DataGridViewRowsRemovedEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowsRemoved event.
@@ -2860,9 +3120,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
     deleted rows.
   """
-  pass
- def OnRowStateChanged(self,*args):
-  """
+        pass
+
+    def OnRowStateChanged(self, *args):
+        """
   OnRowStateChanged(self: DataGridView,rowIndex: int,e: DataGridViewRowStateChangedEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowStateChanged event.
@@ -2873,9 +3134,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewRowStateChangedEventArgs that contains the event data.
   """
-  pass
- def OnRowUnshared(self,*args):
-  """
+        pass
+
+    def OnRowUnshared(self, *args):
+        """
   OnRowUnshared(self: DataGridView,e: DataGridViewRowEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowUnshared event.
@@ -2884,9 +3146,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewRowEventArgs that contains the event data.
   """
-  pass
- def OnRowValidated(self,*args):
-  """
+        pass
+
+    def OnRowValidated(self, *args):
+        """
   OnRowValidated(self: DataGridView,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowValidated event.
@@ -2895,9 +3158,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnRowValidating(self,*args):
-  """
+        pass
+
+    def OnRowValidating(self, *args):
+        """
   OnRowValidating(self: DataGridView,e: DataGridViewCellCancelEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.RowValidating event.
@@ -2906,9 +3170,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewCellCancelEventArgs that contains the event data.
   """
-  pass
- def OnScroll(self,*args):
-  """
+        pass
+
+    def OnScroll(self, *args):
+        """
   OnScroll(self: DataGridView,e: ScrollEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.Scroll event.
@@ -2917,9 +3182,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.ScrollEventArgs that contains the event data.
   """
-  pass
- def OnSelectionChanged(self,*args):
-  """
+        pass
+
+    def OnSelectionChanged(self, *args):
+        """
   OnSelectionChanged(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.SelectionChanged event.
@@ -2928,9 +3194,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains information about the event.
   """
-  pass
- def OnSizeChanged(self,*args):
-  """
+        pass
+
+    def OnSizeChanged(self, *args):
+        """
   OnSizeChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.SizeChanged event.
@@ -2939,9 +3206,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnSortCompare(self,*args):
-  """
+        pass
+
+    def OnSortCompare(self, *args):
+        """
   OnSortCompare(self: DataGridView,e: DataGridViewSortCompareEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.SortCompare event.
@@ -2950,9 +3218,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewSortCompareEventArgs that contains the event data.
   """
-  pass
- def OnSorted(self,*args):
-  """
+        pass
+
+    def OnSorted(self, *args):
+        """
   OnSorted(self: DataGridView,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridView.Sorted event.
@@ -2961,9 +3230,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnStyleChanged(self,*args):
-  """
+        pass
+
+    def OnStyleChanged(self, *args):
+        """
   OnStyleChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.StyleChanged event.
@@ -2972,9 +3242,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnSystemColorsChanged(self,*args):
-  """
+        pass
+
+    def OnSystemColorsChanged(self, *args):
+        """
   OnSystemColorsChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.SystemColorsChanged event.
@@ -2983,9 +3254,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnTabIndexChanged(self,*args):
-  """
+        pass
+
+    def OnTabIndexChanged(self, *args):
+        """
   OnTabIndexChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.TabIndexChanged event.
@@ -2994,9 +3266,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnTabStopChanged(self,*args):
-  """
+        pass
+
+    def OnTabStopChanged(self, *args):
+        """
   OnTabStopChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.TabStopChanged event.
@@ -3005,9 +3278,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnTextChanged(self,*args):
-  """
+        pass
+
+    def OnTextChanged(self, *args):
+        """
   OnTextChanged(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.TextChanged event.
@@ -3016,9 +3290,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnUserAddedRow(self,*args):
-  """
+        pass
+
+    def OnUserAddedRow(self, *args):
+        """
   OnUserAddedRow(self: DataGridView,e: DataGridViewRowEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.UserAddedRow event.
@@ -3027,9 +3302,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewRowEventArgs that contains the event data.
   """
-  pass
- def OnUserDeletedRow(self,*args):
-  """
+        pass
+
+    def OnUserDeletedRow(self, *args):
+        """
   OnUserDeletedRow(self: DataGridView,e: DataGridViewRowEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.UserDeletedRow event.
@@ -3038,9 +3314,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewRowEventArgs that contains the event data.
   """
-  pass
- def OnUserDeletingRow(self,*args):
-  """
+        pass
+
+    def OnUserDeletingRow(self, *args):
+        """
   OnUserDeletingRow(self: DataGridView,e: DataGridViewRowCancelEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.UserDeletingRow event.
@@ -3049,9 +3326,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DataGridViewRowCancelEventArgs that contains the event data.
   """
-  pass
- def OnValidated(self,*args):
-  """
+        pass
+
+    def OnValidated(self, *args):
+        """
   OnValidated(self: Control,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.Validated event.
@@ -3060,9 +3338,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnValidating(self,*args):
-  """
+        pass
+
+    def OnValidating(self, *args):
+        """
   OnValidating(self: DataGridView,e: CancelEventArgs)
 
    Raises the System.Windows.Forms.Control.Validating event.
@@ -3071,16 +3350,18 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.ComponentModel.CancelEventArgs that contains the event data.
   """
-  pass
- def OnVisibleChanged(self,*args):
-  """
+        pass
+
+    def OnVisibleChanged(self, *args):
+        """
   OnVisibleChanged(self: DataGridView,e: EventArgs)
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def PaintBackground(self,*args):
-  """
+        pass
+
+    def PaintBackground(self, *args):
+        """
   PaintBackground(self: DataGridView,graphics: Graphics,clipBounds: Rectangle,gridBounds: Rectangle)
 
    Paints the background of the System.Windows.Forms.DataGridView.
@@ -3097,9 +3378,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    gridBounds: A System.Drawing.Rectangle that represents the area in which cells are drawn.
   """
-  pass
- def ProcessAKey(self,*args):
-  """
+        pass
+
+    def ProcessAKey(self, *args):
+        """
   ProcessAKey(self: DataGridView,keyData: Keys) -> bool
 
   
@@ -3116,9 +3398,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the key was processed; otherwise,false.
   """
-  pass
- def ProcessCmdKey(self,*args):
-  """
+        pass
+
+    def ProcessCmdKey(self, *args):
+        """
   ProcessCmdKey(self: Control,msg: Message,keyData: Keys) -> (bool,Message)
 
   
@@ -3137,9 +3420,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the character was processed by the control; otherwise,false.
   """
-  pass
- def ProcessDataGridViewKey(self,*args):
-  """
+        pass
+
+    def ProcessDataGridViewKey(self, *args):
+        """
   ProcessDataGridViewKey(self: DataGridView,e: KeyEventArgs) -> bool
 
   
@@ -3152,9 +3436,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the key was processed; otherwise,false.
   """
-  pass
- def ProcessDeleteKey(self,*args):
-  """
+        pass
+
+    def ProcessDeleteKey(self, *args):
+        """
   ProcessDeleteKey(self: DataGridView,keyData: Keys) -> bool
 
   
@@ -3171,9 +3456,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the key was processed; otherwise,false.
   """
-  pass
- def ProcessDialogChar(self,*args):
-  """
+        pass
+
+    def ProcessDialogChar(self, *args):
+        """
   ProcessDialogChar(self: Control,charCode: Char) -> bool
 
   
@@ -3186,9 +3472,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the character was processed by the control; otherwise,false.
   """
-  pass
- def ProcessDialogKey(self,*args):
-  """
+        pass
+
+    def ProcessDialogKey(self, *args):
+        """
   ProcessDialogKey(self: DataGridView,keyData: Keys) -> bool
 
   
@@ -3205,9 +3492,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the key was processed; otherwise,false.
   """
-  pass
- def ProcessDownKey(self,*args):
-  """
+        pass
+
+    def ProcessDownKey(self, *args):
+        """
   ProcessDownKey(self: DataGridView,keyData: Keys) -> bool
 
   
@@ -3224,9 +3512,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the key was processed; otherwise,false.
   """
-  pass
- def ProcessEndKey(self,*args):
-  """
+        pass
+
+    def ProcessEndKey(self, *args):
+        """
   ProcessEndKey(self: DataGridView,keyData: Keys) -> bool
 
   
@@ -3243,9 +3532,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the key was processed; otherwise,false.
   """
-  pass
- def ProcessEnterKey(self,*args):
-  """
+        pass
+
+    def ProcessEnterKey(self, *args):
+        """
   ProcessEnterKey(self: DataGridView,keyData: Keys) -> bool
 
   
@@ -3262,9 +3552,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the key was processed; otherwise,false.
   """
-  pass
- def ProcessEscapeKey(self,*args):
-  """
+        pass
+
+    def ProcessEscapeKey(self, *args):
+        """
   ProcessEscapeKey(self: DataGridView,keyData: Keys) -> bool
 
   
@@ -3281,9 +3572,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the key was processed; otherwise,false.
   """
-  pass
- def ProcessF2Key(self,*args):
-  """
+        pass
+
+    def ProcessF2Key(self, *args):
+        """
   ProcessF2Key(self: DataGridView,keyData: Keys) -> bool
 
   
@@ -3300,9 +3592,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the key was processed; otherwise,false.
   """
-  pass
- def ProcessHomeKey(self,*args):
-  """
+        pass
+
+    def ProcessHomeKey(self, *args):
+        """
   ProcessHomeKey(self: DataGridView,keyData: Keys) -> bool
 
   
@@ -3315,9 +3608,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the key was processed; otherwise,false.
   """
-  pass
- def ProcessInsertKey(self,*args):
-  """
+        pass
+
+    def ProcessInsertKey(self, *args):
+        """
   ProcessInsertKey(self: DataGridView,keyData: Keys) -> bool
 
   
@@ -3330,9 +3624,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the key was processed; otherwise,false.
   """
-  pass
- def ProcessKeyEventArgs(self,*args):
-  """
+        pass
+
+    def ProcessKeyEventArgs(self, *args):
+        """
   ProcessKeyEventArgs(self: DataGridView,m: Message) -> (bool,Message)
 
   
@@ -3349,9 +3644,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the message was processed; otherwise,false.
   """
-  pass
- def ProcessKeyMessage(self,*args):
-  """
+        pass
+
+    def ProcessKeyMessage(self, *args):
+        """
   ProcessKeyMessage(self: Control,m: Message) -> (bool,Message)
 
   
@@ -3368,9 +3664,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the message was processed by the control; otherwise,false.
   """
-  pass
- def ProcessKeyPreview(self,*args):
-  """
+        pass
+
+    def ProcessKeyPreview(self, *args):
+        """
   ProcessKeyPreview(self: DataGridView,m: Message) -> (bool,Message)
 
   
@@ -3387,9 +3684,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the message was processed; otherwise,false.
   """
-  pass
- def ProcessLeftKey(self,*args):
-  """
+        pass
+
+    def ProcessLeftKey(self, *args):
+        """
   ProcessLeftKey(self: DataGridView,keyData: Keys) -> bool
 
   
@@ -3406,9 +3704,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the key was processed; otherwise,false.
   """
-  pass
- def ProcessMnemonic(self,*args):
-  """
+        pass
+
+    def ProcessMnemonic(self, *args):
+        """
   ProcessMnemonic(self: Control,charCode: Char) -> bool
 
   
@@ -3421,9 +3720,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the character was processed as a mnemonic by the control; otherwise,false.
   """
-  pass
- def ProcessNextKey(self,*args):
-  """
+        pass
+
+    def ProcessNextKey(self, *args):
+        """
   ProcessNextKey(self: DataGridView,keyData: Keys) -> bool
 
   
@@ -3440,9 +3740,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the key was processed; otherwise,false.
   """
-  pass
- def ProcessPriorKey(self,*args):
-  """
+        pass
+
+    def ProcessPriorKey(self, *args):
+        """
   ProcessPriorKey(self: DataGridView,keyData: Keys) -> bool
 
   
@@ -3459,9 +3760,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the key was processed; otherwise,false.
   """
-  pass
- def ProcessRightKey(self,*args):
-  """
+        pass
+
+    def ProcessRightKey(self, *args):
+        """
   ProcessRightKey(self: DataGridView,keyData: Keys) -> bool
 
   
@@ -3478,9 +3780,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the key was processed; otherwise,false.
   """
-  pass
- def ProcessSpaceKey(self,*args):
-  """
+        pass
+
+    def ProcessSpaceKey(self, *args):
+        """
   ProcessSpaceKey(self: DataGridView,keyData: Keys) -> bool
 
   
@@ -3493,9 +3796,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the key was processed; otherwise,false.
   """
-  pass
- def ProcessTabKey(self,*args):
-  """
+        pass
+
+    def ProcessTabKey(self, *args):
+        """
   ProcessTabKey(self: DataGridView,keyData: Keys) -> bool
 
   
@@ -3512,9 +3816,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the key was processed; otherwise,false.
   """
-  pass
- def ProcessUpKey(self,*args):
-  """
+        pass
+
+    def ProcessUpKey(self, *args):
+        """
   ProcessUpKey(self: DataGridView,keyData: Keys) -> bool
 
   
@@ -3531,9 +3836,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the key was processed; otherwise,false.
   """
-  pass
- def ProcessZeroKey(self,*args):
-  """
+        pass
+
+    def ProcessZeroKey(self, *args):
+        """
   ProcessZeroKey(self: DataGridView,keyData: Keys) -> bool
 
   
@@ -3550,9 +3856,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the key was processed; otherwise,false.
   """
-  pass
- def RaiseDragEvent(self,*args):
-  """
+        pass
+
+    def RaiseDragEvent(self, *args):
+        """
   RaiseDragEvent(self: Control,key: object,e: DragEventArgs)
 
    Raises the appropriate drag event.
@@ -3563,9 +3870,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def RaiseKeyEvent(self,*args):
-  """
+        pass
+
+    def RaiseKeyEvent(self, *args):
+        """
   RaiseKeyEvent(self: Control,key: object,e: KeyEventArgs)
 
    Raises the appropriate key event.
@@ -3576,9 +3884,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.KeyEventArgs that contains the event data.
   """
-  pass
- def RaiseMouseEvent(self,*args):
-  """
+        pass
+
+    def RaiseMouseEvent(self, *args):
+        """
   RaiseMouseEvent(self: Control,key: object,e: MouseEventArgs)
 
    Raises the appropriate mouse event.
@@ -3589,9 +3898,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def RaisePaintEvent(self,*args):
-  """
+        pass
+
+    def RaisePaintEvent(self, *args):
+        """
   RaisePaintEvent(self: Control,key: object,e: PaintEventArgs)
 
    Raises the appropriate paint event.
@@ -3602,16 +3912,18 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    e: A System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def RecreateHandle(self,*args):
-  """
+        pass
+
+    def RecreateHandle(self, *args):
+        """
   RecreateHandle(self: Control)
 
    Forces the re-creation of the handle for the control.
   """
-  pass
- def RefreshEdit(self):
-  """
+        pass
+
+    def RefreshEdit(self):
+        """
   RefreshEdit(self: DataGridView) -> bool
 
   
@@ -3624,26 +3936,30 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if successful; false if a System.Windows.Forms.DataGridView.DataError event occurred.
   """
-  pass
- def RescaleConstantsForDpi(self,*args):
-  """ RescaleConstantsForDpi(self: Control,deviceDpiOld: int,deviceDpiNew: int) """
-  pass
- def ResetMouseEventArgs(self,*args):
-  """
+        pass
+
+    def RescaleConstantsForDpi(self, *args):
+        """ RescaleConstantsForDpi(self: Control,deviceDpiOld: int,deviceDpiNew: int) """
+        pass
+
+    def ResetMouseEventArgs(self, *args):
+        """
   ResetMouseEventArgs(self: Control)
 
    Resets the control to handle the System.Windows.Forms.Control.MouseLeave event.
   """
-  pass
- def ResetText(self):
-  """
+        pass
+
+    def ResetText(self):
+        """
   ResetText(self: DataGridView)
 
    Resets the System.Windows.Forms.DataGridView.Text property to its default value.
   """
-  pass
- def RtlTranslateAlignment(self,*args):
-  """
+        pass
+
+    def RtlTranslateAlignment(self, *args):
+        """
   RtlTranslateAlignment(self: Control,align: ContentAlignment) -> ContentAlignment
 
   
@@ -3692,9 +4008,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: One of the System.Windows.Forms.HorizontalAlignment values.
   """
-  pass
- def RtlTranslateContent(self,*args):
-  """
+        pass
+
+    def RtlTranslateContent(self, *args):
+        """
   RtlTranslateContent(self: Control,align: ContentAlignment) -> ContentAlignment
 
   
@@ -3711,9 +4028,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: One of the System.Drawing.ContentAlignment values.
   """
-  pass
- def RtlTranslateHorizontal(self,*args):
-  """
+        pass
+
+    def RtlTranslateHorizontal(self, *args):
+        """
   RtlTranslateHorizontal(self: Control,align: HorizontalAlignment) -> HorizontalAlignment
 
   
@@ -3730,9 +4048,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: One of the System.Windows.Forms.HorizontalAlignment values.
   """
-  pass
- def RtlTranslateLeftRight(self,*args):
-  """
+        pass
+
+    def RtlTranslateLeftRight(self, *args):
+        """
   RtlTranslateLeftRight(self: Control,align: LeftRightAlignment) -> LeftRightAlignment
 
   
@@ -3749,9 +4068,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: One of the System.Windows.Forms.LeftRightAlignment values.
   """
-  pass
- def ScaleControl(self,*args):
-  """
+        pass
+
+    def ScaleControl(self, *args):
+        """
   ScaleControl(self: Control,factor: SizeF,specified: BoundsSpecified)
 
    Scales a control's location,size,padding and margin.
@@ -3764,9 +4084,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
     when defining its size and position.
   """
-  pass
- def ScaleCore(self,*args):
-  """
+        pass
+
+    def ScaleCore(self, *args):
+        """
   ScaleCore(self: Control,dx: Single,dy: Single)
 
    This method is not relevant for this class.
@@ -3777,9 +4098,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    dy: The vertical scaling factor.
   """
-  pass
- def Select(self):
-  """
+        pass
+
+    def Select(self):
+        """
   Select(self: Control,directed: bool,forward: bool)
 
    Activates a child control. Optionally specifies the direction in the tab order to select the 
@@ -3794,16 +4116,18 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    forward: true to move forward in the tab order; false to move backward in the tab order.
   """
-  pass
- def SelectAll(self):
-  """
+        pass
+
+    def SelectAll(self):
+        """
   SelectAll(self: DataGridView)
 
    Selects all the cells in the System.Windows.Forms.DataGridView.
   """
-  pass
- def SetAutoSizeMode(self,*args):
-  """
+        pass
+
+    def SetAutoSizeMode(self, *args):
+        """
   SetAutoSizeMode(self: Control,mode: AutoSizeMode)
 
    Sets a value indicating how a control will behave when its System.Windows.Forms.Control.AutoSize 
@@ -3816,9 +4140,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    mode: One of the System.Windows.Forms.AutoSizeMode values.
   """
-  pass
- def SetBoundsCore(self,*args):
-  """
+        pass
+
+    def SetBoundsCore(self, *args):
+        """
   SetBoundsCore(self: DataGridView,x: int,y: int,width: int,height: int,specified: BoundsSpecified)
 
    This member overrides 
@@ -3841,9 +4166,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    specified: A bitwise combination of the System.Windows.Forms.BoundsSpecified values.
   """
-  pass
- def SetClientSizeCore(self,*args):
-  """
+        pass
+
+    def SetClientSizeCore(self, *args):
+        """
   SetClientSizeCore(self: Control,x: int,y: int)
 
    Sets the size of the client area of the control.
@@ -3854,9 +4180,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    y: The client area height,in pixels.
   """
-  pass
- def SetCurrentCellAddressCore(self,*args):
-  """
+        pass
+
+    def SetCurrentCellAddressCore(self, *args):
+        """
   SetCurrentCellAddressCore(self: DataGridView,columnIndex: int,rowIndex: int,setAnchorCellAddress: bool,validateCurrentCell: bool,throughMouseClick: bool) -> bool
 
   
@@ -3885,9 +4212,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: true if the current cell was successfully set; otherwise,false.
   """
-  pass
- def SetSelectedCellCore(self,*args):
-  """
+        pass
+
+    def SetSelectedCellCore(self, *args):
+        """
   SetSelectedCellCore(self: DataGridView,columnIndex: int,rowIndex: int,selected: bool)
 
    Changes the selection state of the cell with the specified row and column indexes.
@@ -3900,9 +4228,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    selected: true to select the cell; false to cancel the selection of the cell.
   """
-  pass
- def SetSelectedColumnCore(self,*args):
-  """
+        pass
+
+    def SetSelectedColumnCore(self, *args):
+        """
   SetSelectedColumnCore(self: DataGridView,columnIndex: int,selected: bool)
 
    Changes the selection state of the column with the specified index.
@@ -3913,9 +4242,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    selected: true to select the column; false to cancel the selection of the column.
   """
-  pass
- def SetSelectedRowCore(self,*args):
-  """
+        pass
+
+    def SetSelectedRowCore(self, *args):
+        """
   SetSelectedRowCore(self: DataGridView,rowIndex: int,selected: bool)
 
    Changes the selection state of the row with the specified index.
@@ -3926,9 +4256,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    selected: true to select the row; false to cancel the selection of the row.
   """
-  pass
- def SetStyle(self,*args):
-  """
+        pass
+
+    def SetStyle(self, *args):
+        """
   SetStyle(self: Control,flag: ControlStyles,value: bool)
 
    Sets a specified System.Windows.Forms.ControlStyles flag to either true or false.
@@ -3939,9 +4270,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    value: true to apply the specified style to the control; otherwise,false.
   """
-  pass
- def SetTopLevel(self,*args):
-  """
+        pass
+
+    def SetTopLevel(self, *args):
+        """
   SetTopLevel(self: Control,value: bool)
 
    Sets the control as the top-level control.
@@ -3950,9 +4282,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    value: true to set the control as the top-level control; otherwise,false.
   """
-  pass
- def SetVisibleCore(self,*args):
-  """
+        pass
+
+    def SetVisibleCore(self, *args):
+        """
   SetVisibleCore(self: Control,value: bool)
 
    Sets the control to the specified visible state.
@@ -3961,9 +4294,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    value: true to make the control visible; otherwise,false.
   """
-  pass
- def SizeFromClientSize(self,*args):
-  """
+        pass
+
+    def SizeFromClientSize(self, *args):
+        """
   SizeFromClientSize(self: Control,clientSize: Size) -> Size
 
   
@@ -3976,9 +4310,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Returns: A System.Drawing.Size value representing the height and width of the entire control.
   """
-  pass
- def Sort(self,*__args):
-  """
+        pass
+
+    def Sort(self, *__args):
+        """
   Sort(self: DataGridView,comparer: IComparer)
 
    Sorts the contents of the System.Windows.Forms.DataGridView control using an implementation of 
@@ -4005,9 +4340,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    direction: One of the System.ComponentModel.ListSortDirection values.
   """
-  pass
- def UpdateBounds(self,*args):
-  """
+        pass
+
+    def UpdateBounds(self, *args):
+        """
   UpdateBounds(self: Control,x: int,y: int,width: int,height: int,clientWidth: int,clientHeight: int)
 
    Updates the bounds of the control with the specified size,location,and client size.
@@ -4044,9 +4380,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    Updates the bounds of the control with the current size and location.
   """
-  pass
- def UpdateCellErrorText(self,columnIndex,rowIndex):
-  """
+        pass
+
+    def UpdateCellErrorText(self, columnIndex, rowIndex):
+        """
   UpdateCellErrorText(self: DataGridView,columnIndex: int,rowIndex: int)
 
    Forces the cell at the specified location to update its error text.
@@ -4057,9 +4394,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    rowIndex: The row index of the cell to update,or -1 to indicate a column header cell.
   """
-  pass
- def UpdateCellValue(self,columnIndex,rowIndex):
-  """
+        pass
+
+    def UpdateCellValue(self, columnIndex, rowIndex):
+        """
   UpdateCellValue(self: DataGridView,columnIndex: int,rowIndex: int)
 
    Forces the control to update its display of the cell at the specified location based on its new 
@@ -4074,9 +4412,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    rowIndex: The zero-based row index of the cell with the new value.
   """
-  pass
- def UpdateRowErrorText(self,*__args):
-  """
+        pass
+
+    def UpdateRowErrorText(self, *__args):
+        """
   UpdateRowErrorText(self: DataGridView,rowIndexStart: int,rowIndexEnd: int)
 
    Forces the rows in the given range to update their error text.
@@ -4095,9 +4434,10 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    rowIndex: The zero-based index of the row to update.
   """
-  pass
- def UpdateRowHeightInfo(self,rowIndex,updateToEnd):
-  """
+        pass
+
+    def UpdateRowHeightInfo(self, rowIndex, updateToEnd):
+        """
   UpdateRowHeightInfo(self: DataGridView,rowIndex: int,updateToEnd: bool)
 
    Forces the specified row or rows to update their height information.
@@ -4108,23 +4448,26 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
    updateToEnd: true to update the specified row and all subsequent rows.
   """
-  pass
- def UpdateStyles(self,*args):
-  """
+        pass
+
+    def UpdateStyles(self, *args):
+        """
   UpdateStyles(self: Control)
 
    Forces the assigned styles to be reapplied to the control.
   """
-  pass
- def UpdateZOrder(self,*args):
-  """
+        pass
+
+    def UpdateZOrder(self, *args):
+        """
   UpdateZOrder(self: Control)
 
    Updates the control in its parent's z-order.
   """
-  pass
- def WndProc(self,*args):
-  """
+        pass
+
+    def WndProc(self, *args):
+        """
   WndProc(self: DataGridView,m: Message) -> Message
 
   
@@ -4137,36 +4480,45 @@ class DataGridView(Control,IComponent,IDisposable,IOleControl,IOleObject,IOleInP
 
     process.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]=x.__setitem__(i,y) <==> x[i]= """
-  pass
- def __str__(self,*args):
-  pass
- AdjustedTopLeftHeaderBorderStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the border style for the upper-left cell in the System.Windows.Forms.DataGridView.
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]=x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AdjustedTopLeftHeaderBorderStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the border style for the upper-left cell in the System.Windows.Forms.DataGridView.
 
 
 
@@ -4176,8 +4528,10 @@ Get: AdjustedTopLeftHeaderBorderStyle(self: DataGridView) -> DataGridViewAdvance
 
 """
 
- AdvancedCellBorderStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the border style of the cells in the System.Windows.Forms.DataGridView.
+    AdvancedCellBorderStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the border style of the cells in the System.Windows.Forms.DataGridView.
 
 
 
@@ -4187,8 +4541,10 @@ Get: AdvancedCellBorderStyle(self: DataGridView) -> DataGridViewAdvancedBorderSt
 
 """
 
- AdvancedColumnHeadersBorderStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the border style of the column header cells in the System.Windows.Forms.DataGridView.
+    AdvancedColumnHeadersBorderStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the border style of the column header cells in the System.Windows.Forms.DataGridView.
 
 
 
@@ -4198,8 +4554,10 @@ Get: AdvancedColumnHeadersBorderStyle(self: DataGridView) -> DataGridViewAdvance
 
 """
 
- AdvancedRowHeadersBorderStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the border style of the row header cells in the System.Windows.Forms.DataGridView.
+    AdvancedRowHeadersBorderStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the border style of the row header cells in the System.Windows.Forms.DataGridView.
 
 
 
@@ -4209,8 +4567,10 @@ Get: AdvancedRowHeadersBorderStyle(self: DataGridView) -> DataGridViewAdvancedBo
 
 """
 
- AllowUserToAddRows=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the option to add rows is displayed to the user.
+    AllowUserToAddRows = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the option to add rows is displayed to the user.
 
 
 
@@ -4222,8 +4582,10 @@ Set: AllowUserToAddRows(self: DataGridView)=value
 
 """
 
- AllowUserToDeleteRows=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the user is allowed to delete rows from the System.Windows.Forms.DataGridView.
+    AllowUserToDeleteRows = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the user is allowed to delete rows from the System.Windows.Forms.DataGridView.
 
 
 
@@ -4235,8 +4597,10 @@ Set: AllowUserToDeleteRows(self: DataGridView)=value
 
 """
 
- AllowUserToOrderColumns=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether manual column repositioning is enabled.
+    AllowUserToOrderColumns = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether manual column repositioning is enabled.
 
 
 
@@ -4248,8 +4612,10 @@ Set: AllowUserToOrderColumns(self: DataGridView)=value
 
 """
 
- AllowUserToResizeColumns=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether users can resize columns.
+    AllowUserToResizeColumns = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether users can resize columns.
 
 
 
@@ -4261,8 +4627,10 @@ Set: AllowUserToResizeColumns(self: DataGridView)=value
 
 """
 
- AllowUserToResizeRows=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether users can resize rows.
+    AllowUserToResizeRows = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether users can resize rows.
 
 
 
@@ -4274,8 +4642,10 @@ Set: AllowUserToResizeRows(self: DataGridView)=value
 
 """
 
- AlternatingRowsDefaultCellStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the default cell style applied to odd-numbered rows of the System.Windows.Forms.DataGridView.
+    AlternatingRowsDefaultCellStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the default cell style applied to odd-numbered rows of the System.Windows.Forms.DataGridView.
 
 
 
@@ -4287,8 +4657,10 @@ Set: AlternatingRowsDefaultCellStyle(self: DataGridView)=value
 
 """
 
- AutoGenerateColumns=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether columns are created automatically when the System.Windows.Forms.DataGridView.DataSource or System.Windows.Forms.DataGridView.DataMember properties are set.
+    AutoGenerateColumns = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether columns are created automatically when the System.Windows.Forms.DataGridView.DataSource or System.Windows.Forms.DataGridView.DataMember properties are set.
 
 
 
@@ -4300,8 +4672,8 @@ Set: AutoGenerateColumns(self: DataGridView)=value
 
 """
 
- AutoSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: AutoSize(self: DataGridView) -> bool
+    AutoSize = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: AutoSize(self: DataGridView) -> bool
 
 
 
@@ -4309,8 +4681,10 @@ Set: AutoSize(self: DataGridView)=value
 
 """
 
- AutoSizeColumnsMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating how column widths are determined.
+    AutoSizeColumnsMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating how column widths are determined.
 
 
 
@@ -4322,8 +4696,10 @@ Set: AutoSizeColumnsMode(self: DataGridView)=value
 
 """
 
- AutoSizeRowsMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating how row heights are determined.
+    AutoSizeRowsMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating how row heights are determined.
 
 
 
@@ -4335,8 +4711,8 @@ Set: AutoSizeRowsMode(self: DataGridView)=value
 
 """
 
- BackColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the background color for the control.
+    BackColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the background color for the control.
 
 
 
@@ -4348,8 +4724,10 @@ Set: BackColor(self: DataGridView)=value
 
 """
 
- BackgroundColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the background color of the System.Windows.Forms.DataGridView.
+    BackgroundColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the background color of the System.Windows.Forms.DataGridView.
 
 
 
@@ -4361,8 +4739,10 @@ Set: BackgroundColor(self: DataGridView)=value
 
 """
 
- BackgroundImage=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the background image displayed in the control.
+    BackgroundImage = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the background image displayed in the control.
 
 
 
@@ -4374,8 +4754,10 @@ Set: BackgroundImage(self: DataGridView)=value
 
 """
 
- BackgroundImageLayout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the background image layout as defined in the System.Windows.Forms.ImageLayout enumeration.
+    BackgroundImageLayout = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the background image layout as defined in the System.Windows.Forms.ImageLayout enumeration.
 
 
 
@@ -4387,8 +4769,10 @@ Set: BackgroundImageLayout(self: DataGridView)=value
 
 """
 
- BorderStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the border style for the System.Windows.Forms.DataGridView.
+    BorderStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the border style for the System.Windows.Forms.DataGridView.
 
 
 
@@ -4400,22 +4784,28 @@ Set: BorderStyle(self: DataGridView)=value
 
 """
 
- CanEnableIme=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Windows.Forms.Control.ImeMode property can be set to an active value,to enable IME support.
+    CanEnableIme = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Windows.Forms.Control.ImeMode property can be set to an active value,to enable IME support.
 
 
 
 """
 
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determines if events can be raised on the control.
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Determines if events can be raised on the control.
 
 
 
 """
 
- CellBorderStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the cell border style for the System.Windows.Forms.DataGridView.
+    CellBorderStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the cell border style for the System.Windows.Forms.DataGridView.
 
 
 
@@ -4427,8 +4817,10 @@ Set: CellBorderStyle(self: DataGridView)=value
 
 """
 
- ClipboardCopyMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether users can copy cell text values to the System.Windows.Forms.Clipboard and whether row and column header text is included.
+    ClipboardCopyMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether users can copy cell text values to the System.Windows.Forms.Clipboard and whether row and column header text is included.
 
 
 
@@ -4440,8 +4832,10 @@ Set: ClipboardCopyMode(self: DataGridView)=value
 
 """
 
- ColumnCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the number of columns displayed in the System.Windows.Forms.DataGridView.
+    ColumnCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the number of columns displayed in the System.Windows.Forms.DataGridView.
 
 
 
@@ -4453,8 +4847,10 @@ Set: ColumnCount(self: DataGridView)=value
 
 """
 
- ColumnHeadersBorderStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the border style applied to the column headers.
+    ColumnHeadersBorderStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the border style applied to the column headers.
 
 
 
@@ -4466,8 +4862,10 @@ Set: ColumnHeadersBorderStyle(self: DataGridView)=value
 
 """
 
- ColumnHeadersDefaultCellStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the default column header style.
+    ColumnHeadersDefaultCellStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the default column header style.
 
 
 
@@ -4479,8 +4877,10 @@ Set: ColumnHeadersDefaultCellStyle(self: DataGridView)=value
 
 """
 
- ColumnHeadersHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the height,in pixels,of the column headers row
+    ColumnHeadersHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the height,in pixels,of the column headers row
 
 
 
@@ -4492,8 +4892,10 @@ Set: ColumnHeadersHeight(self: DataGridView)=value
 
 """
 
- ColumnHeadersHeightSizeMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the height of the column headers is adjustable and whether it can be adjusted by the user or is automatically adjusted to fit the contents of the headers.
+    ColumnHeadersHeightSizeMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the height of the column headers is adjustable and whether it can be adjusted by the user or is automatically adjusted to fit the contents of the headers.
 
 
 
@@ -4505,8 +4907,10 @@ Set: ColumnHeadersHeightSizeMode(self: DataGridView)=value
 
 """
 
- ColumnHeadersVisible=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the column header row is displayed.
+    ColumnHeadersVisible = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the column header row is displayed.
 
 
 
@@ -4518,8 +4922,8 @@ Set: ColumnHeadersVisible(self: DataGridView)=value
 
 """
 
- Columns=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection that contains all the columns in the control.
+    Columns = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a collection that contains all the columns in the control.
 
 
 
@@ -4529,15 +4933,19 @@ Get: Columns(self: DataGridView) -> DataGridViewColumnCollection
 
 """
 
- CreateParams=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the required creation parameters when the control handle is created.
+    CreateParams = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the required creation parameters when the control handle is created.
 
 
 
 """
 
- CurrentCell=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the currently active cell.
+    CurrentCell = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the currently active cell.
 
 
 
@@ -4549,8 +4957,10 @@ Set: CurrentCell(self: DataGridView)=value
 
 """
 
- CurrentCellAddress=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the row and column indexes of the currently active cell.
+    CurrentCellAddress = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the row and column indexes of the currently active cell.
 
 
 
@@ -4560,8 +4970,10 @@ Get: CurrentCellAddress(self: DataGridView) -> Point
 
 """
 
- CurrentRow=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the row containing the current cell.
+    CurrentRow = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the row containing the current cell.
 
 
 
@@ -4571,8 +4983,10 @@ Get: CurrentRow(self: DataGridView) -> DataGridViewRow
 
 """
 
- DataMember=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the list or table in the data source for which the System.Windows.Forms.DataGridView is displaying data.
+    DataMember = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the list or table in the data source for which the System.Windows.Forms.DataGridView is displaying data.
 
 
 
@@ -4584,8 +4998,10 @@ Set: DataMember(self: DataGridView)=value
 
 """
 
- DataSource=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the data source that the System.Windows.Forms.DataGridView is displaying data for.
+    DataSource = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the data source that the System.Windows.Forms.DataGridView is displaying data for.
 
 
 
@@ -4597,8 +5013,10 @@ Set: DataSource(self: DataGridView)=value
 
 """
 
- DefaultCellStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the default cell style to be applied to the cells in the System.Windows.Forms.DataGridView if no other cell style properties are set.
+    DefaultCellStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the default cell style to be applied to the cells in the System.Windows.Forms.DataGridView if no other cell style properties are set.
 
 
 
@@ -4610,64 +5028,82 @@ Set: DefaultCellStyle(self: DataGridView)=value
 
 """
 
- DefaultCursor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the default cursor for the control.
+    DefaultCursor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the default cursor for the control.
 
 
 
 """
 
- DefaultImeMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the default Input Method Editor (IME) mode supported by the control.
+    DefaultImeMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the default Input Method Editor (IME) mode supported by the control.
 
 
 
 """
 
- DefaultMargin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the space,in pixels,that is specified by default between controls.
+    DefaultMargin = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the space,in pixels,that is specified by default between controls.
 
 
 
 """
 
- DefaultMaximumSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the length and height,in pixels,that is specified as the default maximum size of a control.
+    DefaultMaximumSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the length and height,in pixels,that is specified as the default maximum size of a control.
 
 
 
 """
 
- DefaultMinimumSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the length and height,in pixels,that is specified as the default minimum size of a control.
+    DefaultMinimumSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the length and height,in pixels,that is specified as the default minimum size of a control.
 
 
 
 """
 
- DefaultPadding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the internal spacing,in pixels,of the contents of a control.
+    DefaultPadding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the internal spacing,in pixels,of the contents of a control.
 
 
 
 """
 
- DefaultSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the default initial size of the control.
+    DefaultSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the default initial size of the control.
 
 
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- DisplayRectangle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the rectangle that represents the display area of the control.
+    DisplayRectangle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the rectangle that represents the display area of the control.
 
 
 
@@ -4677,15 +5113,19 @@ Get: DisplayRectangle(self: DataGridView) -> Rectangle
 
 """
 
- DoubleBuffered=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether this control should redraw its surface using a secondary buffer to reduce or prevent flicker.
+    DoubleBuffered = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether this control should redraw its surface using a secondary buffer to reduce or prevent flicker.
 
 
 
 """
 
- EditingControl=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the control hosted by the current cell,if a cell with an editing control is in edit mode.
+    EditingControl = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the control hosted by the current cell,if a cell with an editing control is in edit mode.
 
 
 
@@ -4695,8 +5135,10 @@ Get: EditingControl(self: DataGridView) -> Control
 
 """
 
- EditingPanel=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the panel that contains the System.Windows.Forms.DataGridView.EditingControl.
+    EditingPanel = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the panel that contains the System.Windows.Forms.DataGridView.EditingControl.
 
 
 
@@ -4706,8 +5148,8 @@ Get: EditingPanel(self: DataGridView) -> Panel
 
 """
 
- EditMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating how to begin editing a cell.
+    EditMode = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating how to begin editing a cell.
 
 
 
@@ -4719,8 +5161,10 @@ Set: EditMode(self: DataGridView)=value
 
 """
 
- EnableHeadersVisualStyles=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether row and column headers use the visual styles of the user's current theme if visual styles are enabled for the application.
+    EnableHeadersVisualStyles = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether row and column headers use the visual styles of the user's current theme if visual styles are enabled for the application.
 
 
 
@@ -4732,15 +5176,17 @@ Set: EnableHeadersVisualStyles(self: DataGridView)=value
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- FirstDisplayedCell=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the first cell currently displayed in the System.Windows.Forms.DataGridView; typically,this cell is in the upper left corner.
+    FirstDisplayedCell = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the first cell currently displayed in the System.Windows.Forms.DataGridView; typically,this cell is in the upper left corner.
 
 
 
@@ -4752,8 +5198,10 @@ Set: FirstDisplayedCell(self: DataGridView)=value
 
 """
 
- FirstDisplayedScrollingColumnHiddenWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the width of the portion of the column that is currently scrolled out of view..
+    FirstDisplayedScrollingColumnHiddenWidth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the width of the portion of the column that is currently scrolled out of view..
 
 
 
@@ -4763,8 +5211,10 @@ Get: FirstDisplayedScrollingColumnHiddenWidth(self: DataGridView) -> int
 
 """
 
- FirstDisplayedScrollingColumnIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the index of the column that is the first column displayed on the System.Windows.Forms.DataGridView.
+    FirstDisplayedScrollingColumnIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the index of the column that is the first column displayed on the System.Windows.Forms.DataGridView.
 
 
 
@@ -4776,8 +5226,10 @@ Set: FirstDisplayedScrollingColumnIndex(self: DataGridView)=value
 
 """
 
- FirstDisplayedScrollingRowIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the index of the row that is the first row displayed on the System.Windows.Forms.DataGridView.
+    FirstDisplayedScrollingRowIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the index of the row that is the first row displayed on the System.Windows.Forms.DataGridView.
 
 
 
@@ -4789,8 +5241,8 @@ Set: FirstDisplayedScrollingRowIndex(self: DataGridView)=value
 
 """
 
- Font=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the font of the text displayed by the System.Windows.Forms.DataGridView.
+    Font = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the font of the text displayed by the System.Windows.Forms.DataGridView.
 
 
 
@@ -4802,15 +5254,17 @@ Set: Font(self: DataGridView)=value
 
 """
 
- FontHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the height of the font of the control.
+    FontHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the height of the font of the control.
 
 
 
 """
 
- ForeColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the foreground color of the System.Windows.Forms.DataGridView.
+    ForeColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the foreground color of the System.Windows.Forms.DataGridView.
 
 
 
@@ -4822,8 +5276,8 @@ Set: ForeColor(self: DataGridView)=value
 
 """
 
- GridColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the color of the grid lines separating the cells of the System.Windows.Forms.DataGridView.
+    GridColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the color of the grid lines separating the cells of the System.Windows.Forms.DataGridView.
 
 
 
@@ -4835,15 +5289,19 @@ Set: GridColor(self: DataGridView)=value
 
 """
 
- HorizontalScrollBar=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the horizontal scroll bar of the control.
+    HorizontalScrollBar = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the horizontal scroll bar of the control.
 
 
 
 """
 
- HorizontalScrollingOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the number of pixels by which the control is scrolled horizontally.
+    HorizontalScrollingOffset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the number of pixels by which the control is scrolled horizontally.
 
 
 
@@ -4855,15 +5313,19 @@ Set: HorizontalScrollingOffset(self: DataGridView)=value
 
 """
 
- ImeModeBase=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the IME mode of a control.
+    ImeModeBase = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the IME mode of a control.
 
 
 
 """
 
- IsCurrentCellDirty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the current cell has uncommitted changes.
+    IsCurrentCellDirty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the current cell has uncommitted changes.
 
 
 
@@ -4873,8 +5335,10 @@ Get: IsCurrentCellDirty(self: DataGridView) -> bool
 
 """
 
- IsCurrentCellInEditMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the currently active cell is being edited.
+    IsCurrentCellInEditMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the currently active cell is being edited.
 
 
 
@@ -4884,8 +5348,10 @@ Get: IsCurrentCellInEditMode(self: DataGridView) -> bool
 
 """
 
- IsCurrentRowDirty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the current row has uncommitted changes.
+    IsCurrentRowDirty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the current row has uncommitted changes.
 
 
 
@@ -4895,8 +5361,10 @@ Get: IsCurrentRowDirty(self: DataGridView) -> bool
 
 """
 
- MultiSelect=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the user is allowed to select more than one cell,row,or column of the System.Windows.Forms.DataGridView at a time.
+    MultiSelect = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the user is allowed to select more than one cell,row,or column of the System.Windows.Forms.DataGridView at a time.
 
 
 
@@ -4908,8 +5376,10 @@ Set: MultiSelect(self: DataGridView)=value
 
 """
 
- NewRowIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the index of the row for new records.
+    NewRowIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the index of the row for new records.
 
 
 
@@ -4919,8 +5389,8 @@ Get: NewRowIndex(self: DataGridView) -> int
 
 """
 
- Padding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant for this control.
+    Padding = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """This property is not relevant for this control.
 
 
 
@@ -4932,8 +5402,8 @@ Set: Padding(self: DataGridView)=value
 
 """
 
- ReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the user can edit the cells of the System.Windows.Forms.DataGridView control.
+    ReadOnly = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the user can edit the cells of the System.Windows.Forms.DataGridView control.
 
 
 
@@ -4945,22 +5415,26 @@ Set: ReadOnly(self: DataGridView)=value
 
 """
 
- RenderRightToLeft=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is now obsolete.
+    RenderRightToLeft = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property is now obsolete.
 
 
 
 """
 
- ResizeRedraw=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the control redraws itself when resized.
+    ResizeRedraw = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the control redraws itself when resized.
 
 
 
 """
 
- RowCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the number of rows displayed in the System.Windows.Forms.DataGridView.
+    RowCount = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the number of rows displayed in the System.Windows.Forms.DataGridView.
 
 
 
@@ -4972,8 +5446,10 @@ Set: RowCount(self: DataGridView)=value
 
 """
 
- RowHeadersBorderStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the border style of the row header cells.
+    RowHeadersBorderStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the border style of the row header cells.
 
 
 
@@ -4985,8 +5461,10 @@ Set: RowHeadersBorderStyle(self: DataGridView)=value
 
 """
 
- RowHeadersDefaultCellStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the default style applied to the row header cells.
+    RowHeadersDefaultCellStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the default style applied to the row header cells.
 
 
 
@@ -4998,8 +5476,10 @@ Set: RowHeadersDefaultCellStyle(self: DataGridView)=value
 
 """
 
- RowHeadersVisible=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the column that contains row headers is displayed.
+    RowHeadersVisible = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the column that contains row headers is displayed.
 
 
 
@@ -5011,8 +5491,10 @@ Set: RowHeadersVisible(self: DataGridView)=value
 
 """
 
- RowHeadersWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the width,in pixels,of the column that contains the row headers.
+    RowHeadersWidth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the width,in pixels,of the column that contains the row headers.
 
 
 
@@ -5024,8 +5506,10 @@ Set: RowHeadersWidth(self: DataGridView)=value
 
 """
 
- RowHeadersWidthSizeMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the width of the row headers is adjustable and whether it can be adjusted by the user or is automatically adjusted to fit the contents of the headers.
+    RowHeadersWidthSizeMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the width of the row headers is adjustable and whether it can be adjusted by the user or is automatically adjusted to fit the contents of the headers.
 
 
 
@@ -5037,8 +5521,8 @@ Set: RowHeadersWidthSizeMode(self: DataGridView)=value
 
 """
 
- Rows=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection that contains all the rows in the System.Windows.Forms.DataGridView control.
+    Rows = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a collection that contains all the rows in the System.Windows.Forms.DataGridView control.
 
 
 
@@ -5048,8 +5532,10 @@ Get: Rows(self: DataGridView) -> DataGridViewRowCollection
 
 """
 
- RowsDefaultCellStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the default style applied to the row cells of the System.Windows.Forms.DataGridView.
+    RowsDefaultCellStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the default style applied to the row cells of the System.Windows.Forms.DataGridView.
 
 
 
@@ -5061,8 +5547,10 @@ Set: RowsDefaultCellStyle(self: DataGridView)=value
 
 """
 
- RowTemplate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the row that represents the template for all the rows in the control.
+    RowTemplate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the row that represents the template for all the rows in the control.
 
 
 
@@ -5074,15 +5562,19 @@ Set: RowTemplate(self: DataGridView)=value
 
 """
 
- ScaleChildren=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that determines the scaling of child controls.
+    ScaleChildren = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that determines the scaling of child controls.
 
 
 
 """
 
- ScrollBars=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the type of scroll bars to display for the System.Windows.Forms.DataGridView control.
+    ScrollBars = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the type of scroll bars to display for the System.Windows.Forms.DataGridView control.
 
 
 
@@ -5094,8 +5586,10 @@ Set: ScrollBars(self: DataGridView)=value
 
 """
 
- SelectedCells=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of cells selected by the user.
+    SelectedCells = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the collection of cells selected by the user.
 
 
 
@@ -5105,8 +5599,10 @@ Get: SelectedCells(self: DataGridView) -> DataGridViewSelectedCellCollection
 
 """
 
- SelectedColumns=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of columns selected by the user.
+    SelectedColumns = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the collection of columns selected by the user.
 
 
 
@@ -5116,8 +5612,10 @@ Get: SelectedColumns(self: DataGridView) -> DataGridViewSelectedColumnCollection
 
 """
 
- SelectedRows=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of rows selected by the user.
+    SelectedRows = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the collection of rows selected by the user.
 
 
 
@@ -5127,8 +5625,10 @@ Get: SelectedRows(self: DataGridView) -> DataGridViewSelectedRowCollection
 
 """
 
- SelectionMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating how the cells of the System.Windows.Forms.DataGridView can be selected.
+    SelectionMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating how the cells of the System.Windows.Forms.DataGridView can be selected.
 
 
 
@@ -5140,8 +5640,10 @@ Set: SelectionMode(self: DataGridView)=value
 
 """
 
- ShowCellErrors=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether to show cell errors.
+    ShowCellErrors = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether to show cell errors.
 
 
 
@@ -5153,8 +5655,10 @@ Set: ShowCellErrors(self: DataGridView)=value
 
 """
 
- ShowCellToolTips=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether or not ToolTips will show when the mouse pointer pauses on a cell.
+    ShowCellToolTips = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether or not ToolTips will show when the mouse pointer pauses on a cell.
 
 
 
@@ -5166,8 +5670,10 @@ Set: ShowCellToolTips(self: DataGridView)=value
 
 """
 
- ShowEditingIcon=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether or not the editing glyph is visible in the row header of the cell being edited.
+    ShowEditingIcon = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether or not the editing glyph is visible in the row header of the cell being edited.
 
 
 
@@ -5179,22 +5685,28 @@ Set: ShowEditingIcon(self: DataGridView)=value
 
 """
 
- ShowFocusCues=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the control should display focus rectangles.
+    ShowFocusCues = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the control should display focus rectangles.
 
 
 
 """
 
- ShowKeyboardCues=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the user interface is in the appropriate state to show or hide keyboard accelerators.
+    ShowKeyboardCues = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the user interface is in the appropriate state to show or hide keyboard accelerators.
 
 
 
 """
 
- ShowRowErrors=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether row headers will display error glyphs for each row that contains a data entry error.
+    ShowRowErrors = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether row headers will display error glyphs for each row that contains a data entry error.
 
 
 
@@ -5206,8 +5718,10 @@ Set: ShowRowErrors(self: DataGridView)=value
 
 """
 
- SortedColumn=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the column by which the System.Windows.Forms.DataGridView contents are currently sorted.
+    SortedColumn = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the column by which the System.Windows.Forms.DataGridView contents are currently sorted.
 
 
 
@@ -5217,8 +5731,8 @@ Get: SortedColumn(self: DataGridView) -> DataGridViewColumn
 
 """
 
- SortOrder=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the items in the System.Windows.Forms.DataGridView control are sorted in ascending or descending order,or are not sorted.
+    SortOrder = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the items in the System.Windows.Forms.DataGridView control are sorted in ascending or descending order,or are not sorted.
 
 
 
@@ -5228,8 +5742,10 @@ Get: SortOrder(self: DataGridView) -> SortOrder
 
 """
 
- StandardTab=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the TAB key moves the focus to the next control in the tab order rather than moving focus to the next cell in the control.
+    StandardTab = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the TAB key moves the focus to the next control in the tab order rather than moving focus to the next cell in the control.
 
 
 
@@ -5241,8 +5757,8 @@ Set: StandardTab(self: DataGridView)=value
 
 """
 
- Text=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the text associated with the control.
+    Text = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the text associated with the control.
 
 
 
@@ -5254,8 +5770,10 @@ Set: Text(self: DataGridView)=value
 
 """
 
- TopLeftHeaderCell=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the header cell located in the upper left corner of the System.Windows.Forms.DataGridView control.
+    TopLeftHeaderCell = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the header cell located in the upper left corner of the System.Windows.Forms.DataGridView control.
 
 
 
@@ -5267,8 +5785,10 @@ Set: TopLeftHeaderCell(self: DataGridView)=value
 
 """
 
- UserSetCursor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the default or user-specified value of the System.Windows.Forms.Control.Cursor property.
+    UserSetCursor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the default or user-specified value of the System.Windows.Forms.Control.Cursor property.
 
 
 
@@ -5278,15 +5798,19 @@ Get: UserSetCursor(self: DataGridView) -> Cursor
 
 """
 
- VerticalScrollBar=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the vertical scroll bar of the control.
+    VerticalScrollBar = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the vertical scroll bar of the control.
 
 
 
 """
 
- VerticalScrollingOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of pixels by which the control is scrolled vertically.
+    VerticalScrollingOffset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the number of pixels by which the control is scrolled vertically.
 
 
 
@@ -5296,8 +5820,10 @@ Get: VerticalScrollingOffset(self: DataGridView) -> int
 
 """
 
- VirtualMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether you have provided your own data-management operations for the System.Windows.Forms.DataGridView control.
+    VirtualMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether you have provided your own data-management operations for the System.Windows.Forms.DataGridView control.
 
 
 
@@ -5309,135 +5835,133 @@ Set: VirtualMode(self: DataGridView)=value
 
 """
 
-
- AllowUserToAddRowsChanged=None
- AllowUserToDeleteRowsChanged=None
- AllowUserToOrderColumnsChanged=None
- AllowUserToResizeColumnsChanged=None
- AllowUserToResizeRowsChanged=None
- AlternatingRowsDefaultCellStyleChanged=None
- AutoGenerateColumnsChanged=None
- AutoSizeColumnModeChanged=None
- AutoSizeColumnsModeChanged=None
- AutoSizeRowsModeChanged=None
- BackColorChanged=None
- BackgroundColorChanged=None
- BackgroundImageChanged=None
- BackgroundImageLayoutChanged=None
- BorderStyleChanged=None
- CancelRowEdit=None
- CellBeginEdit=None
- CellBorderStyleChanged=None
- CellClick=None
- CellContentClick=None
- CellContentDoubleClick=None
- CellContextMenuStripChanged=None
- CellContextMenuStripNeeded=None
- CellDoubleClick=None
- CellEndEdit=None
- CellEnter=None
- CellErrorTextChanged=None
- CellErrorTextNeeded=None
- CellFormatting=None
- CellLeave=None
- CellMouseClick=None
- CellMouseDoubleClick=None
- CellMouseDown=None
- CellMouseEnter=None
- CellMouseLeave=None
- CellMouseMove=None
- CellMouseUp=None
- CellPainting=None
- CellParsing=None
- CellStateChanged=None
- CellStyleChanged=None
- CellStyleContentChanged=None
- CellToolTipTextChanged=None
- CellToolTipTextNeeded=None
- CellValidated=None
- CellValidating=None
- CellValueChanged=None
- CellValueNeeded=None
- CellValuePushed=None
- ColumnAdded=None
- ColumnContextMenuStripChanged=None
- ColumnDataPropertyNameChanged=None
- ColumnDefaultCellStyleChanged=None
- ColumnDisplayIndexChanged=None
- ColumnDividerDoubleClick=None
- ColumnDividerWidthChanged=None
- ColumnHeaderCellChanged=None
- ColumnHeaderMouseClick=None
- ColumnHeaderMouseDoubleClick=None
- ColumnHeadersBorderStyleChanged=None
- ColumnHeadersDefaultCellStyleChanged=None
- ColumnHeadersHeightChanged=None
- ColumnHeadersHeightSizeModeChanged=None
- ColumnMinimumWidthChanged=None
- ColumnNameChanged=None
- ColumnRemoved=None
- ColumnSortModeChanged=None
- ColumnStateChanged=None
- ColumnToolTipTextChanged=None
- ColumnWidthChanged=None
- CurrentCellChanged=None
- CurrentCellDirtyStateChanged=None
- DataBindingComplete=None
- DataError=None
- DataGridViewAccessibleObject=None
- DataGridViewControlCollection=None
- DataGridViewTopRowAccessibleObject=None
- DataMemberChanged=None
- DataSourceChanged=None
- DefaultCellStyleChanged=None
- DefaultValuesNeeded=None
- EditingControlShowing=None
- EditModeChanged=None
- FontChanged=None
- ForeColorChanged=None
- GridColorChanged=None
- HitTestInfo=None
- MultiSelectChanged=None
- NewRowNeeded=None
- PaddingChanged=None
- ReadOnlyChanged=None
- RowContextMenuStripChanged=None
- RowContextMenuStripNeeded=None
- RowDefaultCellStyleChanged=None
- RowDirtyStateNeeded=None
- RowDividerDoubleClick=None
- RowDividerHeightChanged=None
- RowEnter=None
- RowErrorTextChanged=None
- RowErrorTextNeeded=None
- RowHeaderCellChanged=None
- RowHeaderMouseClick=None
- RowHeaderMouseDoubleClick=None
- RowHeadersBorderStyleChanged=None
- RowHeadersDefaultCellStyleChanged=None
- RowHeadersWidthChanged=None
- RowHeadersWidthSizeModeChanged=None
- RowHeightChanged=None
- RowHeightInfoNeeded=None
- RowHeightInfoPushed=None
- RowLeave=None
- RowMinimumHeightChanged=None
- RowPostPaint=None
- RowPrePaint=None
- RowsAdded=None
- RowsDefaultCellStyleChanged=None
- RowsRemoved=None
- RowStateChanged=None
- RowUnshared=None
- RowValidated=None
- RowValidating=None
- Scroll=None
- SelectionChanged=None
- SortCompare=None
- Sorted=None
- StyleChanged=None
- TextChanged=None
- UserAddedRow=None
- UserDeletedRow=None
- UserDeletingRow=None
-
+    AllowUserToAddRowsChanged = None
+    AllowUserToDeleteRowsChanged = None
+    AllowUserToOrderColumnsChanged = None
+    AllowUserToResizeColumnsChanged = None
+    AllowUserToResizeRowsChanged = None
+    AlternatingRowsDefaultCellStyleChanged = None
+    AutoGenerateColumnsChanged = None
+    AutoSizeColumnModeChanged = None
+    AutoSizeColumnsModeChanged = None
+    AutoSizeRowsModeChanged = None
+    BackColorChanged = None
+    BackgroundColorChanged = None
+    BackgroundImageChanged = None
+    BackgroundImageLayoutChanged = None
+    BorderStyleChanged = None
+    CancelRowEdit = None
+    CellBeginEdit = None
+    CellBorderStyleChanged = None
+    CellClick = None
+    CellContentClick = None
+    CellContentDoubleClick = None
+    CellContextMenuStripChanged = None
+    CellContextMenuStripNeeded = None
+    CellDoubleClick = None
+    CellEndEdit = None
+    CellEnter = None
+    CellErrorTextChanged = None
+    CellErrorTextNeeded = None
+    CellFormatting = None
+    CellLeave = None
+    CellMouseClick = None
+    CellMouseDoubleClick = None
+    CellMouseDown = None
+    CellMouseEnter = None
+    CellMouseLeave = None
+    CellMouseMove = None
+    CellMouseUp = None
+    CellPainting = None
+    CellParsing = None
+    CellStateChanged = None
+    CellStyleChanged = None
+    CellStyleContentChanged = None
+    CellToolTipTextChanged = None
+    CellToolTipTextNeeded = None
+    CellValidated = None
+    CellValidating = None
+    CellValueChanged = None
+    CellValueNeeded = None
+    CellValuePushed = None
+    ColumnAdded = None
+    ColumnContextMenuStripChanged = None
+    ColumnDataPropertyNameChanged = None
+    ColumnDefaultCellStyleChanged = None
+    ColumnDisplayIndexChanged = None
+    ColumnDividerDoubleClick = None
+    ColumnDividerWidthChanged = None
+    ColumnHeaderCellChanged = None
+    ColumnHeaderMouseClick = None
+    ColumnHeaderMouseDoubleClick = None
+    ColumnHeadersBorderStyleChanged = None
+    ColumnHeadersDefaultCellStyleChanged = None
+    ColumnHeadersHeightChanged = None
+    ColumnHeadersHeightSizeModeChanged = None
+    ColumnMinimumWidthChanged = None
+    ColumnNameChanged = None
+    ColumnRemoved = None
+    ColumnSortModeChanged = None
+    ColumnStateChanged = None
+    ColumnToolTipTextChanged = None
+    ColumnWidthChanged = None
+    CurrentCellChanged = None
+    CurrentCellDirtyStateChanged = None
+    DataBindingComplete = None
+    DataError = None
+    DataGridViewAccessibleObject = None
+    DataGridViewControlCollection = None
+    DataGridViewTopRowAccessibleObject = None
+    DataMemberChanged = None
+    DataSourceChanged = None
+    DefaultCellStyleChanged = None
+    DefaultValuesNeeded = None
+    EditingControlShowing = None
+    EditModeChanged = None
+    FontChanged = None
+    ForeColorChanged = None
+    GridColorChanged = None
+    HitTestInfo = None
+    MultiSelectChanged = None
+    NewRowNeeded = None
+    PaddingChanged = None
+    ReadOnlyChanged = None
+    RowContextMenuStripChanged = None
+    RowContextMenuStripNeeded = None
+    RowDefaultCellStyleChanged = None
+    RowDirtyStateNeeded = None
+    RowDividerDoubleClick = None
+    RowDividerHeightChanged = None
+    RowEnter = None
+    RowErrorTextChanged = None
+    RowErrorTextNeeded = None
+    RowHeaderCellChanged = None
+    RowHeaderMouseClick = None
+    RowHeaderMouseDoubleClick = None
+    RowHeadersBorderStyleChanged = None
+    RowHeadersDefaultCellStyleChanged = None
+    RowHeadersWidthChanged = None
+    RowHeadersWidthSizeModeChanged = None
+    RowHeightChanged = None
+    RowHeightInfoNeeded = None
+    RowHeightInfoPushed = None
+    RowLeave = None
+    RowMinimumHeightChanged = None
+    RowPostPaint = None
+    RowPrePaint = None
+    RowsAdded = None
+    RowsDefaultCellStyleChanged = None
+    RowsRemoved = None
+    RowStateChanged = None
+    RowUnshared = None
+    RowValidated = None
+    RowValidating = None
+    Scroll = None
+    SelectionChanged = None
+    SortCompare = None
+    Sorted = None
+    StyleChanged = None
+    TextChanged = None
+    UserAddedRow = None
+    UserDeletedRow = None
+    UserDeletingRow = None

@@ -8,6 +8,7 @@
 # no functions
 # classes
 
+
 class DrawingObjectSelector(object):
     # no doc
     def GetSelected(self):
@@ -44,6 +45,7 @@ class DrawingSelector(object):
 
 class Events(MarshalByRefObject):
     """ Events() """
+
     def InitializeLifetimeService(self):
         """ InitializeLifetimeService(self: Events) -> object """
         pass
@@ -96,9 +98,12 @@ class Picker(object):
 
     def PickObject(self, prompt, *__args):
         """
-        PickObject(self: Picker, prompt: str) -> (DrawingObject, ViewBase, Point)
-        PickObject(self: Picker, prompt: str, typeFilter: Array[Type]) -> (DrawingObject, ViewBase, Point)
-        PickObject(self: Picker, prompt: str) -> (DrawingObject, ViewBase)
+        PickObject(self: Picker, prompt: str) -> (DrawingObject, ViewBase, Point)
+
+        PickObject(self: Picker, prompt: str, typeFilter: Array[Type]) -> (DrawingObject, ViewBase, Point)
+
+        PickObject(self: Picker, prompt: str) -> (DrawingObject, ViewBase)
+
         PickObject(self: Picker, prompt: str) -> Tuple[DrawingObject, ViewBase]
         """
         pass
@@ -109,26 +114,39 @@ class Picker(object):
 
     def PickPoint(self, prompt, pickedPoint=None, pickedView=None):
         """
-        PickPoint(self: Picker, prompt: str) -> Tuple[Point, ViewBase]
+        PickPoint(self: Picker, prompt: str) -> Tuple[Point, ViewBase]
+
         PickPoint(self: Picker, prompt: str) -> (Point, ViewBase)
         """
         pass
 
     def PickPoints(self, *__args):
         """
-        PickPoints(self: Picker, prompts: StringList) -> (PointList, ViewBase)
-        PickPoints(self: Picker, prompts: StringList) -> Tuple[PointList, ViewBase]
-        PickPoints(self: Picker, numberOfPicks: int, prompts: StringList) -> (PointList, ViewBase)
+        PickPoints(self: Picker, prompts: StringList) -> (PointList, ViewBase)
+
+        PickPoints(self: Picker, prompts: StringList) -> Tuple[PointList, ViewBase]
+
+        PickPoints(self: Picker, numberOfPicks: int, prompts: StringList) -> (PointList, ViewBase)
+
         PickPoints(self: Picker, numberOfPicks: int, prompts: StringList) -> Tuple[PointList, ViewBase]
         """
         pass
 
-    def PickThreePoints(self, firstPrompt, secondPrompt, thirdPrompt, firstPickedPoint, secondPickedPoint, thirdPickedPoint, pickedView):
+    def PickThreePoints(
+        self,
+        firstPrompt,
+        secondPrompt,
+        thirdPrompt,
+        firstPickedPoint,
+        secondPickedPoint,
+        thirdPickedPoint,
+        pickedView,
+    ):
         """ PickThreePoints(self: Picker, firstPrompt: str, secondPrompt: str, thirdPrompt: str) -> (Point, Point, Point, ViewBase) """
         pass
 
-    def PickTwoPoints(self, firstPrompt, secondPrompt, firstPickedPoint, secondPickedPoint, pickedView):
+    def PickTwoPoints(
+        self, firstPrompt, secondPrompt, firstPickedPoint, secondPickedPoint, pickedView
+    ):
         """ PickTwoPoints(self: Picker, firstPrompt: str, secondPrompt: str) -> (Point, Point, ViewBase) """
         pass
-
-

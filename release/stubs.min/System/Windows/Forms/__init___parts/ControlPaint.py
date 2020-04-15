@@ -1,8 +1,9 @@
 class ControlPaint(object):
- """ Provides methods used to paint common Windows controls and their elements. This class cannot be inherited. """
- @staticmethod
- def CreateHBitmap16Bit(bitmap,background):
-  """
+    """ Provides methods used to paint common Windows controls and their elements. This class cannot be inherited. """
+
+    @staticmethod
+    def CreateHBitmap16Bit(bitmap, background):
+        """
   CreateHBitmap16Bit(bitmap: Bitmap,background: Color) -> IntPtr
 
   
@@ -17,10 +18,11 @@ class ControlPaint(object):
 
    Returns: An System.IntPtr representing the handle to the bitmap.
   """
-  pass
- @staticmethod
- def CreateHBitmapColorMask(bitmap,monochromeMask):
-  """
+        pass
+
+    @staticmethod
+    def CreateHBitmapColorMask(bitmap, monochromeMask):
+        """
   CreateHBitmapColorMask(bitmap: Bitmap,monochromeMask: IntPtr) -> IntPtr
 
   
@@ -35,10 +37,11 @@ class ControlPaint(object):
 
    Returns: An System.IntPtr representing the handle to the bitmap.
   """
-  pass
- @staticmethod
- def CreateHBitmapTransparencyMask(bitmap):
-  """
+        pass
+
+    @staticmethod
+    def CreateHBitmapTransparencyMask(bitmap):
+        """
   CreateHBitmapTransparencyMask(bitmap: Bitmap) -> IntPtr
 
   
@@ -55,10 +58,11 @@ class ControlPaint(object):
 
    Returns: The handle to the System.Drawing.Bitmap mask.
   """
-  pass
- @staticmethod
- def Dark(baseColor,percOfDarkDark=None):
-  """
+        pass
+
+    @staticmethod
+    def Dark(baseColor, percOfDarkDark=None):
+        """
   Dark(baseColor: Color) -> Color
 
   
@@ -89,10 +93,11 @@ class ControlPaint(object):
 
    Returns: A System.Drawing.Color that represent the dark color on the control.
   """
-  pass
- @staticmethod
- def DarkDark(baseColor):
-  """
+        pass
+
+    @staticmethod
+    def DarkDark(baseColor):
+        """
   DarkDark(baseColor: Color) -> Color
 
   
@@ -105,10 +110,11 @@ class ControlPaint(object):
 
    Returns: A System.Drawing.Color that represents the dark color on the control.
   """
-  pass
- @staticmethod
- def DrawBorder(graphics,bounds,*__args):
-  """
+        pass
+
+    @staticmethod
+    def DrawBorder(graphics, bounds, *__args):
+        """
   DrawBorder(graphics: Graphics,bounds: Rectangle,leftColor: Color,leftWidth: int,leftStyle: ButtonBorderStyle,topColor: Color,topWidth: int,topStyle: ButtonBorderStyle,rightColor: Color,rightWidth: int,rightStyle: ButtonBorderStyle,bottomColor: Color,bottomWidth: int,bottomStyle: ButtonBorderStyle)
 
    Draws a border on a button-style control with the specified styles,colors,and border widths; 
@@ -181,10 +187,11 @@ class ControlPaint(object):
 
    style: One of the System.Windows.Forms.ButtonBorderStyle values that specifies the style of the border.
   """
-  pass
- @staticmethod
- def DrawBorder3D(graphics,*__args):
-  """
+        pass
+
+    @staticmethod
+    def DrawBorder3D(graphics, *__args):
+        """
   DrawBorder3D(graphics: Graphics,x: int,y: int,width: int,height: int)
 
    Draws a three-dimensional style border on the specified graphics surface and within the 
@@ -301,10 +308,11 @@ class ControlPaint(object):
 
     draw the border on.
   """
-  pass
- @staticmethod
- def DrawButton(graphics,*__args):
-  """
+        pass
+
+    @staticmethod
+    def DrawButton(graphics, *__args):
+        """
   DrawButton(graphics: Graphics,x: int,y: int,width: int,height: int,state: ButtonState)
 
    Draws a button control in the specified state,on the specified graphics surface,and within the 
@@ -349,10 +357,11 @@ class ControlPaint(object):
 
     draw the button in.
   """
-  pass
- @staticmethod
- def DrawCaptionButton(graphics,*__args):
-  """
+        pass
+
+    @staticmethod
+    def DrawCaptionButton(graphics, *__args):
+        """
   DrawCaptionButton(graphics: Graphics,x: int,y: int,width: int,height: int,button: CaptionButton,state: ButtonState)
 
    Draws the specified caption button control in the specified state,on the specified graphics 
@@ -409,10 +418,11 @@ class ControlPaint(object):
 
     draw the button in.
   """
-  pass
- @staticmethod
- def DrawCheckBox(graphics,*__args):
-  """
+        pass
+
+    @staticmethod
+    def DrawCheckBox(graphics, *__args):
+        """
   DrawCheckBox(graphics: Graphics,rectangle: Rectangle,state: ButtonState)
 
    Draws a check box control in the specified state,on the specified graphics surface,and within 
@@ -457,10 +467,11 @@ class ControlPaint(object):
 
     draw the check box in.
   """
-  pass
- @staticmethod
- def DrawComboButton(graphics,*__args):
-  """
+        pass
+
+    @staticmethod
+    def DrawComboButton(graphics, *__args):
+        """
   DrawComboButton(graphics: Graphics,x: int,y: int,width: int,height: int,state: ButtonState)
 
    Draws a drop-down button on a combo box control in the specified state,on the specified 
@@ -505,10 +516,11 @@ class ControlPaint(object):
 
     draw the combo box in.
   """
-  pass
- @staticmethod
- def DrawContainerGrabHandle(graphics,bounds):
-  """
+        pass
+
+    @staticmethod
+    def DrawContainerGrabHandle(graphics, bounds):
+        """
   DrawContainerGrabHandle(graphics: Graphics,bounds: Rectangle)
 
    Draws a container control grab handle glyph on the specified graphics surface and within the 
@@ -523,10 +535,11 @@ class ControlPaint(object):
 
    bounds: The System.Drawing.Rectangle that represents the dimensions of the grab handle glyph.
   """
-  pass
- @staticmethod
- def DrawFocusRectangle(graphics,rectangle,foreColor=None,backColor=None):
-  """
+        pass
+
+    @staticmethod
+    def DrawFocusRectangle(graphics, rectangle, foreColor=None, backColor=None):
+        """
   DrawFocusRectangle(graphics: Graphics,rectangle: Rectangle,foreColor: Color,backColor: Color)
 
    Draws a focus rectangle on the specified graphics surface and within the specified bounds.
@@ -559,10 +572,11 @@ class ControlPaint(object):
 
    rectangle: The System.Drawing.Rectangle that represents the dimensions of the grab handle glyph.
   """
-  pass
- @staticmethod
- def DrawGrabHandle(graphics,rectangle,primary,enabled):
-  """
+        pass
+
+    @staticmethod
+    def DrawGrabHandle(graphics, rectangle, primary, enabled):
+        """
   DrawGrabHandle(graphics: Graphics,rectangle: Rectangle,primary: bool,enabled: bool)
 
    Draws a standard selection grab handle glyph on the specified graphics surface,within the 
@@ -581,10 +595,11 @@ class ControlPaint(object):
 
    enabled: true to draw the handle in an enabled state; otherwise,false.
   """
-  pass
- @staticmethod
- def DrawGrid(graphics,area,pixelsBetweenDots,backColor):
-  """
+        pass
+
+    @staticmethod
+    def DrawGrid(graphics, area, pixelsBetweenDots, backColor):
+        """
   DrawGrid(graphics: Graphics,area: Rectangle,pixelsBetweenDots: Size,backColor: Color)
 
    Draws a grid of one-pixel dots with the specified spacing,within the specified bounds,on the 
@@ -603,10 +618,11 @@ class ControlPaint(object):
 
    backColor: The System.Drawing.Color of the background behind the grid.
   """
-  pass
- @staticmethod
- def DrawImageDisabled(graphics,image,x,y,background):
-  """
+        pass
+
+    @staticmethod
+    def DrawImageDisabled(graphics, image, x, y, background):
+        """
   DrawImageDisabled(graphics: Graphics,image: Image,x: int,y: int,background: Color)
 
    Draws the specified image in a disabled state.
@@ -623,10 +639,11 @@ class ControlPaint(object):
 
    background: The System.Drawing.Color of the background behind the image.
   """
-  pass
- @staticmethod
- def DrawLockedFrame(graphics,rectangle,primary):
-  """
+        pass
+
+    @staticmethod
+    def DrawLockedFrame(graphics, rectangle, primary):
+        """
   DrawLockedFrame(graphics: Graphics,rectangle: Rectangle,primary: bool)
 
    Draws a locked selection frame on the screen within the specified bounds and on the specified 
@@ -643,10 +660,11 @@ class ControlPaint(object):
 
    primary: true to draw this frame with the colors used for the primary selection; otherwise,false.
   """
-  pass
- @staticmethod
- def DrawMenuGlyph(graphics,*__args):
-  """
+        pass
+
+    @staticmethod
+    def DrawMenuGlyph(graphics, *__args):
+        """
   DrawMenuGlyph(graphics: Graphics,x: int,y: int,width: int,height: int,glyph: MenuGlyph)
 
    Draws the specified menu glyph on a menu item control with the specified bounds and on the 
@@ -739,10 +757,11 @@ class ControlPaint(object):
 
    backColor: The color that replaces System.Drawing.Color.Black as the background color.
   """
-  pass
- @staticmethod
- def DrawMixedCheckBox(graphics,*__args):
-  """
+        pass
+
+    @staticmethod
+    def DrawMixedCheckBox(graphics, *__args):
+        """
   DrawMixedCheckBox(graphics: Graphics,x: int,y: int,width: int,height: int,state: ButtonState)
 
    Draws a three-state check box control in the specified state,on the specified graphics surface,
@@ -787,10 +806,11 @@ class ControlPaint(object):
 
     draw the check box in.
   """
-  pass
- @staticmethod
- def DrawRadioButton(graphics,*__args):
-  """
+        pass
+
+    @staticmethod
+    def DrawRadioButton(graphics, *__args):
+        """
   DrawRadioButton(graphics: Graphics,rectangle: Rectangle,state: ButtonState)
 
    Draws a radio button control in the specified state,on the specified graphics surface,and 
@@ -835,10 +855,11 @@ class ControlPaint(object):
 
     draw the radio button in.
   """
-  pass
- @staticmethod
- def DrawReversibleFrame(rectangle,backColor,style):
-  """
+        pass
+
+    @staticmethod
+    def DrawReversibleFrame(rectangle, backColor, style):
+        """
   DrawReversibleFrame(rectangle: Rectangle,backColor: Color,style: FrameStyle)
 
    Draws a reversible frame on the screen within the specified bounds,with the specified 
@@ -859,10 +880,11 @@ class ControlPaint(object):
 
    style: One of the System.Windows.Forms.FrameStyle values that specifies the style of the frame.
   """
-  pass
- @staticmethod
- def DrawReversibleLine(start,end,backColor):
-  """
+        pass
+
+    @staticmethod
+    def DrawReversibleLine(start, end, backColor):
+        """
   DrawReversibleLine(start: Point,end: Point,backColor: Color)
 
    Draws a reversible line on the screen within the specified starting and ending points and with 
@@ -879,10 +901,11 @@ class ControlPaint(object):
 
    backColor: The System.Drawing.Color of the background behind the line.
   """
-  pass
- @staticmethod
- def DrawScrollButton(graphics,*__args):
-  """
+        pass
+
+    @staticmethod
+    def DrawScrollButton(graphics, *__args):
+        """
   DrawScrollButton(graphics: Graphics,x: int,y: int,width: int,height: int,button: ScrollButton,state: ButtonState)
 
    Draws the specified scroll button on a scroll bar control in the specified state,on the 
@@ -939,10 +962,11 @@ class ControlPaint(object):
 
     draw the scroll button in.
   """
-  pass
- @staticmethod
- def DrawSelectionFrame(graphics,active,outsideRect,insideRect,backColor):
-  """
+        pass
+
+    @staticmethod
+    def DrawSelectionFrame(graphics, active, outsideRect, insideRect, backColor):
+        """
   DrawSelectionFrame(graphics: Graphics,active: bool,outsideRect: Rectangle,insideRect: Rectangle,backColor: Color)
 
    Draws a standard selection frame in the specified state,on the specified graphics surface,with 
@@ -963,10 +987,11 @@ class ControlPaint(object):
 
    backColor: The System.Drawing.Color of the background behind the frame.
   """
-  pass
- @staticmethod
- def DrawSizeGrip(graphics,backColor,*__args):
-  """
+        pass
+
+    @staticmethod
+    def DrawSizeGrip(graphics, backColor, *__args):
+        """
   DrawSizeGrip(graphics: Graphics,backColor: Color,x: int,y: int,width: int,height: int)
 
    Draws a size grip on a form with the specified bounds and background color and on the specified 
@@ -1005,10 +1030,11 @@ class ControlPaint(object):
 
    bounds: The System.Drawing.Rectangle that represents the dimensions of the size grip.
   """
-  pass
- @staticmethod
- def DrawStringDisabled(*__args):
-  """
+        pass
+
+    @staticmethod
+    def DrawStringDisabled(*__args):
+        """
   DrawStringDisabled(dc: IDeviceContext,s: str,font: Font,color: Color,layoutRectangle: Rectangle,format: TextFormatFlags)
 
    Draws the specified string in a disabled state on the specified graphics surface,within the 
@@ -1055,10 +1081,11 @@ class ControlPaint(object):
 
    format: The System.Drawing.StringFormat to apply to the string.
   """
-  pass
- @staticmethod
- def DrawVisualStyleBorder(graphics,bounds):
-  """
+        pass
+
+    @staticmethod
+    def DrawVisualStyleBorder(graphics, bounds):
+        """
   DrawVisualStyleBorder(graphics: Graphics,bounds: Rectangle)
 
    Draws a border in the style appropriate for disabled items.
@@ -1069,10 +1096,11 @@ class ControlPaint(object):
 
    bounds: The System.Drawing.Rectangle that represents the dimensions of the border.
   """
-  pass
- @staticmethod
- def FillReversibleRectangle(rectangle,backColor):
-  """
+        pass
+
+    @staticmethod
+    def FillReversibleRectangle(rectangle, backColor):
+        """
   FillReversibleRectangle(rectangle: Rectangle,backColor: Color)
 
    Draws a filled,reversible rectangle on the screen.
@@ -1087,10 +1115,11 @@ class ControlPaint(object):
 
    backColor: The System.Drawing.Color of the background behind the fill.
   """
-  pass
- @staticmethod
- def Light(baseColor,percOfLightLight=None):
-  """
+        pass
+
+    @staticmethod
+    def Light(baseColor, percOfLightLight=None):
+        """
   Light(baseColor: Color) -> Color
 
   
@@ -1121,10 +1150,11 @@ class ControlPaint(object):
 
    Returns: A System.Drawing.Color that represents the light color on the control.
   """
-  pass
- @staticmethod
- def LightLight(baseColor):
-  """
+        pass
+
+    @staticmethod
+    def LightLight(baseColor):
+        """
   LightLight(baseColor: Color) -> Color
 
   
@@ -1137,6 +1167,6 @@ class ControlPaint(object):
 
    Returns: A System.Drawing.Color that represents the light color on the control.
   """
-  pass
- ContrastControlDark=None
+        pass
 
+    ContrastControlDark = None

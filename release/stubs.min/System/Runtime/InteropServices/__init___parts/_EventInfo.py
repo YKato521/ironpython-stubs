@@ -1,7 +1,8 @@
 class _EventInfo:
- """ Exposes the public members of the System.Reflection.EventInfo class to unmanaged code. """
- def AddEventHandler(self,target,handler):
-  """
+    """ Exposes the public members of the System.Reflection.EventInfo class to unmanaged code. """
+
+    def AddEventHandler(self, target, handler):
+        """
   AddEventHandler(self: _EventInfo,target: object,handler: Delegate)
 
    Provides COM objects with version-independent access to the 
@@ -16,9 +17,10 @@ class _EventInfo:
 
    handler: A method or methods to be invoked when the event is raised by the target.
   """
-  pass
- def Equals(self,other):
-  """
+        pass
+
+    def Equals(self, other):
+        """
   Equals(self: _EventInfo,other: object) -> bool
 
   
@@ -35,9 +37,10 @@ class _EventInfo:
 
    Returns: true if the specified System.Object is equal to the current System.Object; otherwise,false.
   """
-  pass
- def GetAddMethod(self,nonPublic=None):
-  """
+        pass
+
+    def GetAddMethod(self, nonPublic=None):
+        """
   GetAddMethod(self: _EventInfo) -> MethodInfo
 
   
@@ -72,9 +75,10 @@ class _EventInfo:
 
     delegate to the event source.
   """
-  pass
- def GetCustomAttributes(self,*__args):
-  """
+        pass
+
+    def GetCustomAttributes(self, *__args):
+        """
   GetCustomAttributes(self: _EventInfo,inherit: bool) -> Array[object]
 
   
@@ -119,9 +123,10 @@ class _EventInfo:
 
     attributes have been applied.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: _EventInfo) -> int
 
   
@@ -130,9 +135,10 @@ class _EventInfo:
 
    Returns: The hash code for the current instance.
   """
-  pass
- def GetIDsOfNames(self,riid,rgszNames,cNames,lcid,rgDispId):
-  """
+        pass
+
+    def GetIDsOfNames(self, riid, rgszNames, cNames, lcid, rgDispId):
+        """
   GetIDsOfNames(self: _EventInfo,riid: Guid,rgszNames: IntPtr,cNames: UInt32,lcid: UInt32,rgDispId: IntPtr) -> Guid
 
   
@@ -151,9 +157,10 @@ class _EventInfo:
 
    rgDispId: An array allocated by the caller that receives the identifiers corresponding to the names.
   """
-  pass
- def GetRaiseMethod(self,nonPublic=None):
-  """
+        pass
+
+    def GetRaiseMethod(self, nonPublic=None):
+        """
   GetRaiseMethod(self: _EventInfo) -> MethodInfo
 
   
@@ -182,9 +189,10 @@ class _EventInfo:
 
    Returns: The System.Reflection.MethodInfo object that was called when the event was raised.
   """
-  pass
- def GetRemoveMethod(self,nonPublic=None):
-  """
+        pass
+
+    def GetRemoveMethod(self, nonPublic=None):
+        """
   GetRemoveMethod(self: _EventInfo) -> MethodInfo
 
   
@@ -219,9 +227,10 @@ class _EventInfo:
 
     delegate from the event source.
   """
-  pass
- def GetType(self):
-  """
+        pass
+
+    def GetType(self):
+        """
   GetType(self: _EventInfo) -> Type
 
   
@@ -230,9 +239,10 @@ class _EventInfo:
 
    Returns: A System.Type object.
   """
-  pass
- def GetTypeInfo(self,iTInfo,lcid,ppTInfo):
-  """
+        pass
+
+    def GetTypeInfo(self, iTInfo, lcid, ppTInfo):
+        """
   GetTypeInfo(self: _EventInfo,iTInfo: UInt32,lcid: UInt32,ppTInfo: IntPtr)
 
    Retrieves the type information for an object,which can be used to get the type information for 
@@ -249,18 +259,30 @@ class _EventInfo:
 
    ppTInfo: A pointer to the requested type information object.
   """
-  pass
- def GetTypeInfoCount(self,pcTInfo):
-  """
+        pass
+
+    def GetTypeInfoCount(self, pcTInfo):
+        """
   GetTypeInfoCount(self: _EventInfo) -> UInt32
 
   
 
    Retrieves the number of type information interfaces that an object provides (either 0 or 1).
   """
-  pass
- def Invoke(self,dispIdMember,riid,lcid,wFlags,pDispParams,pVarResult,pExcepInfo,puArgErr):
-  """
+        pass
+
+    def Invoke(
+        self,
+        dispIdMember,
+        riid,
+        lcid,
+        wFlags,
+        pDispParams,
+        pVarResult,
+        pExcepInfo,
+        puArgErr,
+    ):
+        """
   Invoke(self: _EventInfo,dispIdMember: UInt32,riid: Guid,lcid: UInt32,wFlags: Int16,pDispParams: IntPtr,pVarResult: IntPtr,pExcepInfo: IntPtr,puArgErr: IntPtr) -> Guid
 
   
@@ -289,9 +311,10 @@ class _EventInfo:
 
    puArgErr: The index of the first argument that has an error.
   """
-  pass
- def IsDefined(self,attributeType,inherit):
-  """
+        pass
+
+    def IsDefined(self, attributeType, inherit):
+        """
   IsDefined(self: _EventInfo,attributeType: Type,inherit: bool) -> bool
 
   
@@ -312,9 +335,10 @@ class _EventInfo:
 
     otherwise,false.
   """
-  pass
- def RemoveEventHandler(self,target,handler):
-  """
+        pass
+
+    def RemoveEventHandler(self, target, handler):
+        """
   RemoveEventHandler(self: _EventInfo,target: object,handler: Delegate)
 
    Provides COM objects with version-independent access to the 
@@ -329,9 +353,10 @@ class _EventInfo:
 
    handler: The delegate to be disassociated from the events raised by target.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: _EventInfo) -> str
 
   
@@ -340,17 +365,23 @@ class _EventInfo:
 
    Returns: A string that represents the current System.Object.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- Attributes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.EventInfo.Attributes property.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Attributes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.EventInfo.Attributes property.
 
 
 
@@ -360,8 +391,10 @@ Get: Attributes(self: _EventInfo) -> EventAttributes
 
 """
 
- DeclaringType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.MemberInfo.DeclaringType property.
+    DeclaringType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.MemberInfo.DeclaringType property.
 
 
 
@@ -371,8 +404,10 @@ Get: DeclaringType(self: _EventInfo) -> Type
 
 """
 
- EventHandlerType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.EventInfo.EventHandlerType property.
+    EventHandlerType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.EventInfo.EventHandlerType property.
 
 
 
@@ -382,8 +417,10 @@ Get: EventHandlerType(self: _EventInfo) -> Type
 
 """
 
- IsMulticast=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.EventInfo.IsMulticast property.
+    IsMulticast = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.EventInfo.IsMulticast property.
 
 
 
@@ -393,8 +430,10 @@ Get: IsMulticast(self: _EventInfo) -> bool
 
 """
 
- IsSpecialName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.EventInfo.IsSpecialName property.
+    IsSpecialName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.EventInfo.IsSpecialName property.
 
 
 
@@ -404,8 +443,10 @@ Get: IsSpecialName(self: _EventInfo) -> bool
 
 """
 
- MemberType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.EventInfo.MemberType property.
+    MemberType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.EventInfo.MemberType property.
 
 
 
@@ -415,8 +456,8 @@ Get: MemberType(self: _EventInfo) -> MemberTypes
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.MemberInfo.Name property.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Reflection.MemberInfo.Name property.
 
 
 
@@ -426,8 +467,10 @@ Get: Name(self: _EventInfo) -> str
 
 """
 
- ReflectedType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.MemberInfo.ReflectedType property.
+    ReflectedType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.MemberInfo.ReflectedType property.
 
 
 
@@ -436,5 +479,3 @@ Get: ReflectedType(self: _EventInfo) -> Type
 
 
 """
-
-

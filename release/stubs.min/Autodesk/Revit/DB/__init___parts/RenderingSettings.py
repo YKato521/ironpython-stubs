@@ -1,10 +1,12 @@
-class RenderingSettings(object,IDisposable):
- """ Represents the rendering settings for a 3d view. """
- def Dispose(self):
-  """ Dispose(self: RenderingSettings) """
-  pass
- def GetBackgroundSettings(self):
-  """
+class RenderingSettings(object, IDisposable):
+    """ Represents the rendering settings for a 3d view. """
+
+    def Dispose(self):
+        """ Dispose(self: RenderingSettings) """
+        pass
+
+    def GetBackgroundSettings(self):
+        """
   GetBackgroundSettings(self: RenderingSettings) -> BackgroundSettings
 
   
@@ -13,9 +15,10 @@ class RenderingSettings(object,IDisposable):
 
    Returns: The rendering background settings.
   """
-  pass
- def GetRenderingImageExposureSettings(self):
-  """
+        pass
+
+    def GetRenderingImageExposureSettings(self):
+        """
   GetRenderingImageExposureSettings(self: RenderingSettings) -> RenderingImageExposureSettings
 
   
@@ -24,9 +27,10 @@ class RenderingSettings(object,IDisposable):
 
    Returns: The rendering image exposure settings.
   """
-  pass
- def GetRenderingQualitySettings(self):
-  """
+        pass
+
+    def GetRenderingQualitySettings(self):
+        """
   GetRenderingQualitySettings(self: RenderingSettings) -> RenderingQualitySettings
 
   
@@ -35,9 +39,10 @@ class RenderingSettings(object,IDisposable):
 
    Returns: The rendering quality settings.
   """
-  pass
- def GetRenderingRegionOutline(self):
-  """
+        pass
+
+    def GetRenderingRegionOutline(self):
+        """
   GetRenderingRegionOutline(self: RenderingSettings) -> Outline
 
   
@@ -46,12 +51,14 @@ class RenderingSettings(object,IDisposable):
 
    Returns: The outline of the rendering region.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: RenderingSettings,disposing: bool) """
-  pass
- def SetBackgroundSettings(self,background):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: RenderingSettings,disposing: bool) """
+        pass
+
+    def SetBackgroundSettings(self, background):
+        """
   SetBackgroundSettings(self: RenderingSettings,background: BackgroundSettings)
 
    Changes the rendering background settings details for the current background 
@@ -64,9 +71,10 @@ class RenderingSettings(object,IDisposable):
 
    background: An instance of the new rendering background settings.
   """
-  pass
- def SetRenderingImageExposureSettings(self,exposure):
-  """
+        pass
+
+    def SetRenderingImageExposureSettings(self, exposure):
+        """
   SetRenderingImageExposureSettings(self: RenderingSettings,exposure: RenderingImageExposureSettings)
 
    Changes the rendering image exposure settings.
@@ -75,9 +83,10 @@ class RenderingSettings(object,IDisposable):
 
    exposure: An instance of the new rendering image exposure settings.
   """
-  pass
- def SetRenderingQualitySettings(self,settings):
-  """
+        pass
+
+    def SetRenderingQualitySettings(self, settings):
+        """
   SetRenderingQualitySettings(self: RenderingSettings,settings: RenderingQualitySettings)
 
    Change rendering quality settings.
@@ -86,21 +95,28 @@ class RenderingSettings(object,IDisposable):
 
    settings: An instance of the new rendering quality settings.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- BackgroundStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The enum value that controls the background style for rendering.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    BackgroundStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The enum value that controls the background style for rendering.
 
 
 
@@ -112,8 +128,10 @@ Set: BackgroundStyle(self: RenderingSettings)=value
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -123,8 +141,10 @@ Get: IsValidObject(self: RenderingSettings) -> bool
 
 """
 
- LightingSource=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The lighting scheme type.
+    LightingSource = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The lighting scheme type.
 
 
 
@@ -136,8 +156,10 @@ Set: LightingSource(self: RenderingSettings)=value
 
 """
 
- PrinterResolution=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The resolution level when using printer.
+    PrinterResolution = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The resolution level when using printer.
 
 
 
@@ -149,8 +171,10 @@ Set: PrinterResolution(self: RenderingSettings)=value
 
 """
 
- ResolutionTarget=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The resolution target.
+    ResolutionTarget = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The resolution target.
 
 
 
@@ -162,8 +186,10 @@ Set: ResolutionTarget(self: RenderingSettings)=value
 
 """
 
- ResolutionValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The rendering resolution in dots per inch (DPI).
+    ResolutionValue = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The rendering resolution in dots per inch (DPI).
 
 
 
@@ -173,8 +199,10 @@ Get: ResolutionValue(self: RenderingSettings) -> int
 
 """
 
- UsesRegionRendering=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The bool value that indicates whether to use region rendering.
+    UsesRegionRendering = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The bool value that indicates whether to use region rendering.
 
 
 
@@ -185,5 +213,3 @@ Get: UsesRegionRendering(self: RenderingSettings) -> bool
 Set: UsesRegionRendering(self: RenderingSettings)=value
 
 """
-
-

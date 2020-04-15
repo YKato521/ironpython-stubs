@@ -1,13 +1,21 @@
-class Vector3DAnimationUsingKeyFrames(Vector3DAnimationBase,ISealable,IAnimatable,IResource,IKeyFrameAnimation,IAddChild):
- """
+class Vector3DAnimationUsingKeyFrames(
+    Vector3DAnimationBase,
+    ISealable,
+    IAnimatable,
+    IResource,
+    IKeyFrameAnimation,
+    IAddChild,
+):
+    """
  Animates the value of a System.Windows.Media.Media3D.Vector3D property along a set of System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.KeyFrames.
 
  
 
  Vector3DAnimationUsingKeyFrames()
  """
- def AddChild(self,*args):
-  """
+
+    def AddChild(self, *args):
+        """
   AddChild(self: Vector3DAnimationUsingKeyFrames,child: object)
 
    Adds a child System.Windows.Media.Animation.Vector3DKeyFrame to this 
@@ -22,9 +30,10 @@ class Vector3DAnimationUsingKeyFrames(Vector3DAnimationBase,ISealable,IAnimatabl
 
     System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.
   """
-  pass
- def AddText(self,*args):
-  """
+        pass
+
+    def AddText(self, *args):
+        """
   AddText(self: Vector3DAnimationUsingKeyFrames,childText: str)
 
    Adds a text string as a child of this 
@@ -37,9 +46,10 @@ class Vector3DAnimationUsingKeyFrames(Vector3DAnimationBase,ISealable,IAnimatabl
 
    childText: The text added to the System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.
   """
-  pass
- def AllocateClock(self,*args):
-  """
+        pass
+
+    def AllocateClock(self, *args):
+        """
   AllocateClock(self: AnimationTimeline) -> Clock
 
   
@@ -52,9 +62,10 @@ class Vector3DAnimationUsingKeyFrames(Vector3DAnimationBase,ISealable,IAnimatabl
 
    Returns: A clock for this System.Windows.Media.Animation.AnimationTimeline.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: Vector3DAnimationUsingKeyFrames) -> Vector3DAnimationUsingKeyFrames
 
   
@@ -67,9 +78,10 @@ class Vector3DAnimationUsingKeyFrames(Vector3DAnimationBase,ISealable,IAnimatabl
 
     performance. The copy's System.Windows.Freezable.IsFrozen property is false.
   """
-  pass
- def CloneCore(self,*args):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """
   CloneCore(self: Vector3DAnimationUsingKeyFrames,sourceFreezable: Freezable)
 
    Makes the specified System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames a modifiable 
@@ -84,9 +96,10 @@ class Vector3DAnimationUsingKeyFrames(Vector3DAnimationBase,ISealable,IAnimatabl
 
    sourceFreezable: Destination for the modifiable clone of the current object.
   """
-  pass
- def CloneCurrentValue(self):
-  """
+        pass
+
+    def CloneCurrentValue(self):
+        """
   CloneCurrentValue(self: Vector3DAnimationUsingKeyFrames) -> Vector3DAnimationUsingKeyFrames
 
   
@@ -103,9 +116,10 @@ class Vector3DAnimationUsingKeyFrames(Vector3DAnimationBase,ISealable,IAnimatabl
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """
   CloneCurrentValueCore(self: Vector3DAnimationUsingKeyFrames,sourceFreezable: Freezable)
 
    Makes the specified System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames a modifiable 
@@ -118,9 +132,10 @@ class Vector3DAnimationUsingKeyFrames(Vector3DAnimationBase,ISealable,IAnimatabl
 
    sourceFreezable: The System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames to be cloned.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -129,9 +144,10 @@ class Vector3DAnimationUsingKeyFrames(Vector3DAnimationBase,ISealable,IAnimatabl
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """
   CreateInstanceCore(self: Vector3DAnimationUsingKeyFrames) -> Freezable
 
   
@@ -140,9 +156,10 @@ class Vector3DAnimationUsingKeyFrames(Vector3DAnimationBase,ISealable,IAnimatabl
 
    Returns: A new instance of System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.
   """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: Vector3DAnimationUsingKeyFrames,isChecking: bool) -> bool
 
   
@@ -165,9 +182,10 @@ class Vector3DAnimationUsingKeyFrames(Vector3DAnimationBase,ISealable,IAnimatabl
 
     having begun to change the frozen status of this object.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """
   GetAsFrozenCore(self: Vector3DAnimationUsingKeyFrames,source: Freezable)
 
    Makes this instance a clone of the specified 
@@ -180,9 +198,10 @@ class Vector3DAnimationUsingKeyFrames(Vector3DAnimationBase,ISealable,IAnimatabl
 
    source: The System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames object to be cloned.
   """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """
   GetCurrentValueAsFrozenCore(self: Vector3DAnimationUsingKeyFrames,source: Freezable)
 
    Makes this instance a copy of the specified 
@@ -195,9 +214,10 @@ class Vector3DAnimationUsingKeyFrames(Vector3DAnimationBase,ISealable,IAnimatabl
 
    source: The System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames to copy and freeze
   """
-  pass
- def GetCurrentValueCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueCore(self, *args):
+        """
   GetCurrentValueCore(self: Vector3DAnimationUsingKeyFrames,defaultOriginValue: Vector3D,defaultDestinationValue: Vector3D,animationClock: AnimationClock) -> Vector3D
 
   
@@ -232,9 +252,10 @@ class Vector3DAnimationUsingKeyFrames(Vector3DAnimationBase,ISealable,IAnimatabl
 
    Returns: The calculated value of the property,as determined by the current instance.
   """
-  pass
- def GetNaturalDuration(self,*args):
-  """
+        pass
+
+    def GetNaturalDuration(self, *args):
+        """
   GetNaturalDuration(self: Timeline,clock: Clock) -> Duration
 
   
@@ -253,9 +274,10 @@ class Vector3DAnimationUsingKeyFrames(Vector3DAnimationBase,ISealable,IAnimatabl
 
     System.Windows.Duration.Automatic if the natural duration is unknown.
   """
-  pass
- def GetNaturalDurationCore(self,*args):
-  """
+        pass
+
+    def GetNaturalDurationCore(self, *args):
+        """
   GetNaturalDurationCore(self: Vector3DAnimationUsingKeyFrames,clock: Clock) -> Duration
 
   
@@ -276,18 +298,20 @@ class Vector3DAnimationUsingKeyFrames(Vector3DAnimationBase,ISealable,IAnimatabl
 
     one second.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: Vector3DAnimationUsingKeyFrames)
 
    Called when the current System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames object is 
 
     modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -318,9 +342,10 @@ class Vector3DAnimationUsingKeyFrames(Vector3DAnimationBase,ISealable,IAnimatabl
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -337,9 +362,10 @@ class Vector3DAnimationUsingKeyFrames(Vector3DAnimationBase,ISealable,IAnimatabl
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -348,9 +374,10 @@ class Vector3DAnimationUsingKeyFrames(Vector3DAnimationBase,ISealable,IAnimatabl
 
     members that are not dependency properties.
   """
-  pass
- def ShouldSerializeKeyFrames(self):
-  """
+        pass
+
+    def ShouldSerializeKeyFrames(self):
+        """
   ShouldSerializeKeyFrames(self: Vector3DAnimationUsingKeyFrames) -> bool
 
   
@@ -367,9 +394,10 @@ class Vector3DAnimationUsingKeyFrames(Vector3DAnimationBase,ISealable,IAnimatabl
 
    Returns: true if the property value should be serialized; otherwise,false.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -386,9 +414,10 @@ class Vector3DAnimationUsingKeyFrames(Vector3DAnimationBase,ISealable,IAnimatabl
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -399,9 +428,10 @@ class Vector3DAnimationUsingKeyFrames(Vector3DAnimationBase,ISealable,IAnimatabl
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -410,12 +440,16 @@ class Vector3DAnimationUsingKeyFrames(Vector3DAnimationBase,ISealable,IAnimatabl
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- IsAdditive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that specifies whether the animation's output value is added to the base value of the property being animated.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    IsAdditive = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that specifies whether the animation's output value is added to the base value of the property being animated.
 
 
 
@@ -427,8 +461,10 @@ Set: IsAdditive(self: Vector3DAnimationUsingKeyFrames)=value
 
 """
 
- IsCumulative=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that specifies whether the animation's value accumulates when it repeats.
+    IsCumulative = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that specifies whether the animation's value accumulates when it repeats.
 
 
 
@@ -440,8 +476,8 @@ Set: IsCumulative(self: Vector3DAnimationUsingKeyFrames)=value
 
 """
 
- KeyFrames=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the collection of System.Windows.Media.Animation.Vector3DKeyFrame objects that define the animation.
+    KeyFrames = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the collection of System.Windows.Media.Animation.Vector3DKeyFrame objects that define the animation.
 
 
 
@@ -452,5 +488,3 @@ Get: KeyFrames(self: Vector3DAnimationUsingKeyFrames) -> Vector3DKeyFrameCollect
 Set: KeyFrames(self: Vector3DAnimationUsingKeyFrames)=value
 
 """
-
-

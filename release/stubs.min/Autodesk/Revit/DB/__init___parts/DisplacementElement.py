@@ -1,12 +1,13 @@
-class DisplacementElement(Element,IDisposable):
- """
+class DisplacementElement(Element, IDisposable):
+    """
  A view-specific element that causes other elements to appear to be displaced from their
 
     actual locations.
  """
- @staticmethod
- def CanCategoryBeDisplaced(categoryId):
-  """
+
+    @staticmethod
+    def CanCategoryBeDisplaced(categoryId):
+        """
   CanCategoryBeDisplaced(categoryId: ElementId) -> bool
 
   
@@ -23,27 +24,38 @@ class DisplacementElement(Element,IDisposable):
 
    Returns: Returns true if elements of this category can be displaced,and false otherwise.
   """
-  pass
- def CanElementsBeAddedToDisplacementSet(self,toDisplace):
-  """ CanElementsBeAddedToDisplacementSet(self: DisplacementElement,toDisplace: ICollection[ElementId]) -> bool """
-  pass
- @staticmethod
- def CanElementsBeDisplaced(view,elementIds,commonDisplacedElementId=None):
-  """
+        pass
+
+    def CanElementsBeAddedToDisplacementSet(self, toDisplace):
+        """ CanElementsBeAddedToDisplacementSet(self: DisplacementElement,toDisplace: ICollection[ElementId]) -> bool """
+        pass
+
+    @staticmethod
+    def CanElementsBeDisplaced(view, elementIds, commonDisplacedElementId=None):
+        """
   CanElementsBeDisplaced(view: View,elementIds: ICollection[ElementId]) -> (bool,ElementId)
 
   CanElementsBeDisplaced(view: View,elementIds: ICollection[ElementId]) -> bool
   """
-  pass
- @staticmethod
- def Create(document,elementsToDisplace,displacement,ownerDBView,parentDisplacementElement):
-  """ Create(document: Document,elementsToDisplace: ICollection[ElementId],displacement: XYZ,ownerDBView: View,parentDisplacementElement: DisplacementElement) -> DisplacementElement """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def GetAbsoluteDisplacement(self):
-  """
+        pass
+
+    @staticmethod
+    def Create(
+        document,
+        elementsToDisplace,
+        displacement,
+        ownerDBView,
+        parentDisplacementElement,
+    ):
+        """ Create(document: Document,elementsToDisplace: ICollection[ElementId],displacement: XYZ,ownerDBView: View,parentDisplacementElement: DisplacementElement) -> DisplacementElement """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def GetAbsoluteDisplacement(self):
+        """
   GetAbsoluteDisplacement(self: DisplacementElement) -> XYZ
 
   
@@ -52,10 +64,11 @@ class DisplacementElement(Element,IDisposable):
 
    Returns: The absolute displacement.
   """
-  pass
- @staticmethod
- def GetAdditionalElementsToDisplace(document,view,idToDisplace):
-  """
+        pass
+
+    @staticmethod
+    def GetAdditionalElementsToDisplace(document, view, idToDisplace):
+        """
   GetAdditionalElementsToDisplace(document: Document,view: View,idToDisplace: ElementId) -> ICollection[ElementId]
 
   
@@ -74,12 +87,14 @@ class DisplacementElement(Element,IDisposable):
 
    idToDisplace: element id of element to displace
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetChildren(self):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetChildren(self):
+        """
   GetChildren(self: DisplacementElement) -> IList[DisplacementElement]
 
   
@@ -94,9 +109,10 @@ class DisplacementElement(Element,IDisposable):
 
    Returns: The returned array is sorted by element id.
   """
-  pass
- def GetDisplacedElementIds(self,view=None):
-  """
+        pass
+
+    def GetDisplacedElementIds(self, view=None):
+        """
   GetDisplacedElementIds(view: View) -> ICollection[ElementId]
 
   
@@ -117,9 +133,10 @@ class DisplacementElement(Element,IDisposable):
 
    Returns: The element ids.
   """
-  pass
- def GetDisplacedElementIdsFromAllChildren(self):
-  """
+        pass
+
+    def GetDisplacedElementIdsFromAllChildren(self):
+        """
   GetDisplacedElementIdsFromAllChildren(self: DisplacementElement) -> ICollection[ElementId]
 
   
@@ -134,10 +151,11 @@ class DisplacementElement(Element,IDisposable):
 
    Returns: The element ids.
   """
-  pass
- @staticmethod
- def GetDisplacementElementId(view,id):
-  """
+        pass
+
+    @staticmethod
+    def GetDisplacementElementId(view, id):
+        """
   GetDisplacementElementId(view: View,id: ElementId) -> ElementId
 
   
@@ -152,10 +170,11 @@ class DisplacementElement(Element,IDisposable):
 
    Returns: The element id of DisplacementElement that includes the specified element id.
   """
-  pass
- @staticmethod
- def GetDisplacementElementIds(view):
-  """
+        pass
+
+    @staticmethod
+    def GetDisplacementElementIds(view):
+        """
   GetDisplacementElementIds(view: View) -> ICollection[ElementId]
 
   
@@ -168,9 +187,10 @@ class DisplacementElement(Element,IDisposable):
 
    Returns: The element ids.
   """
-  pass
- def GetRelativeDisplacement(self):
-  """
+        pass
+
+    def GetRelativeDisplacement(self):
+        """
   GetRelativeDisplacement(self: DisplacementElement) -> XYZ
 
   
@@ -183,10 +203,11 @@ class DisplacementElement(Element,IDisposable):
 
    Returns: The relative displacement.
   """
-  pass
- @staticmethod
- def IsAllowedAsDisplacedElement(element):
-  """
+        pass
+
+    @staticmethod
+    def IsAllowedAsDisplacedElement(element):
+        """
   IsAllowedAsDisplacedElement(element: Element) -> bool
 
   
@@ -199,10 +220,11 @@ class DisplacementElement(Element,IDisposable):
 
    Returns: Returns true if the element is eligible to be assigned to a DisplacementElement.
   """
-  pass
- @staticmethod
- def IsElementDisplacedInView(view,id):
-  """
+        pass
+
+    @staticmethod
+    def IsElementDisplacedInView(view, id):
+        """
   IsElementDisplacedInView(view: View,id: ElementId) -> bool
 
   
@@ -215,14 +237,16 @@ class DisplacementElement(Element,IDisposable):
 
    id: The element id.
   """
-  pass
- @staticmethod
- def IsNotEmpty(elementIds):
-  """ IsNotEmpty(elementIds: ICollection[ElementId]) -> bool """
-  pass
- @staticmethod
- def IsValidAsParentInView(view,parent):
-  """
+        pass
+
+    @staticmethod
+    def IsNotEmpty(elementIds):
+        """ IsNotEmpty(elementIds: ICollection[ElementId]) -> bool """
+        pass
+
+    @staticmethod
+    def IsValidAsParentInView(view, parent):
+        """
   IsValidAsParentInView(view: View,parent: DisplacementElement) -> bool
 
   
@@ -241,12 +265,14 @@ class DisplacementElement(Element,IDisposable):
 
    parent: A DisplacementElement.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def RemoveDisplacedElement(self,ElemToRemove):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def RemoveDisplacedElement(self, ElemToRemove):
+        """
   RemoveDisplacedElement(self: DisplacementElement,ElemToRemove: Element)
 
    Remove a displaced element from this DisplacementElement.
@@ -255,9 +281,10 @@ class DisplacementElement(Element,IDisposable):
 
    ElemToRemove: The element to remove.
   """
-  pass
- def ResetDisplacedElements(self):
-  """
+        pass
+
+    def ResetDisplacedElements(self):
+        """
   ResetDisplacedElements(self: DisplacementElement)
 
    Sets the translation of the DisplacementElement to (0,0,0).
@@ -268,15 +295,18 @@ class DisplacementElement(Element,IDisposable):
 
     actual location.
   """
-  pass
- def SetDisplacedElementIds(self,displacedElemIds):
-  """ SetDisplacedElementIds(self: DisplacementElement,displacedElemIds: ICollection[ElementId]) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetRelativeDisplacement(self,displacement):
-  """
+        pass
+
+    def SetDisplacedElementIds(self, displacedElemIds):
+        """ SetDisplacedElementIds(self: DisplacementElement,displacedElemIds: ICollection[ElementId]) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetRelativeDisplacement(self, displacement):
+        """
   SetRelativeDisplacement(self: DisplacementElement,displacement: XYZ)
 
    Sets the relative displacement applied to the displaced elements by this 
@@ -289,18 +319,22 @@ class DisplacementElement(Element,IDisposable):
 
    displacement: The relative displacement.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- ParentId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id of the parent DisplacementElement. This DisplacementElement's relative transform
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    ParentId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The element id of the parent DisplacementElement. This DisplacementElement's relative transform
 
    will be concatenated with the absolute transform of its parent.
 
@@ -311,5 +345,3 @@ Get: ParentId(self: DisplacementElement) -> ElementId
 
 
 """
-
-

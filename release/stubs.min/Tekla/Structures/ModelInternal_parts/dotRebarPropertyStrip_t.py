@@ -1,5 +1,4 @@
 class dotRebarPropertyStrip_t(object):
- # no doc
- RebarProperties=None
- RebarStrip=None
-
+    # no doc
+    RebarProperties = None
+    RebarStrip = None

@@ -1,8 +1,9 @@
-class WallSweep(HostObject,IDisposable):
- """ Represents a wall sweep or reveal. """
- @staticmethod
- def Create(wall,wallSweepType,wallSweepInfo):
-  """
+class WallSweep(HostObject, IDisposable):
+    """ Represents a wall sweep or reveal. """
+
+    @staticmethod
+    def Create(wall, wallSweepType, wallSweepInfo):
+        """
   Create(wall: Wall,wallSweepType: ElementId,wallSweepInfo: WallSweepInfo) -> WallSweep
 
   
@@ -19,15 +20,18 @@ class WallSweep(HostObject,IDisposable):
 
    Returns: The new wall sweep.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetHostIds(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetHostIds(self):
+        """
   GetHostIds(self: WallSweep) -> IList[ElementId]
 
   
@@ -36,9 +40,10 @@ class WallSweep(HostObject,IDisposable):
 
    Returns: The list of wall ids.
   """
-  pass
- def GetWallSweepInfo(self):
-  """
+        pass
+
+    def GetWallSweepInfo(self):
+        """
   GetWallSweepInfo(self: WallSweep) -> WallSweepInfo
 
   
@@ -47,16 +52,19 @@ class WallSweep(HostObject,IDisposable):
 
    Returns: The information that describes the wall sweep or reveal.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- @staticmethod
- def WallAllowsWallSweep(wall):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    @staticmethod
+    def WallAllowsWallSweep(wall):
+        """
   WallAllowsWallSweep(wall: Wall) -> bool
 
   
@@ -73,13 +81,16 @@ class WallSweep(HostObject,IDisposable):
 
    Returns: True if the wall may host a wall sweep,false otherwise.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

@@ -1,5 +1,5 @@
-class NumericRevisionSettings(object,IDisposable):
- """
+class NumericRevisionSettings(object, IDisposable):
+    """
  Contains settings that apply to Revisions with the Numeric RevisionNumberType.
 
  
@@ -10,11 +10,13 @@ class NumericRevisionSettings(object,IDisposable):
 
  NumericRevisionSettings(other: NumericRevisionSettings)
  """
- def Dispose(self):
-  """ Dispose(self: NumericRevisionSettings) """
-  pass
- def IsEqual(self,other):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: NumericRevisionSettings) """
+        pass
+
+    def IsEqual(self, other):
+        """
   IsEqual(self: NumericRevisionSettings,other: NumericRevisionSettings) -> bool
 
   
@@ -27,9 +29,10 @@ class NumericRevisionSettings(object,IDisposable):
 
    Returns: True,if two NumericRevisionSettings are the same.
   """
-  pass
- def IsValid(self):
-  """
+        pass
+
+    def IsValid(self):
+        """
   IsValid(self: NumericRevisionSettings) -> bool
 
   
@@ -38,34 +41,43 @@ class NumericRevisionSettings(object,IDisposable):
 
    Returns: True if the NumericRevisionSettings is valid.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: NumericRevisionSettings,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: NumericRevisionSettings,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,startNumber: int,prefix: str,suffix: str)
 
   __new__(cls: type)
 
   __new__(cls: type,other: NumericRevisionSettings)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -75,8 +87,8 @@ Get: IsValidObject(self: NumericRevisionSettings) -> bool
 
 """
 
- Prefix=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The prefix string that will be prepended to the number of each revision with Numeric RevisionNumberingType.
+    Prefix = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The prefix string that will be prepended to the number of each revision with Numeric RevisionNumberingType.
 
 
 
@@ -88,8 +100,10 @@ Set: Prefix(self: NumericRevisionSettings)=value
 
 """
 
- StartNumber=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The start number for the sequence.
+    StartNumber = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The start number for the sequence.
 
 
 
@@ -101,8 +115,8 @@ Set: StartNumber(self: NumericRevisionSettings)=value
 
 """
 
- Suffix=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The suffix string that will be appended to the number of each revision with Numeric RevisionNumberingType.
+    Suffix = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The suffix string that will be appended to the number of each revision with Numeric RevisionNumberingType.
 
 
 
@@ -113,5 +127,3 @@ Get: Suffix(self: NumericRevisionSettings) -> str
 Set: Suffix(self: NumericRevisionSettings)=value
 
 """
-
-

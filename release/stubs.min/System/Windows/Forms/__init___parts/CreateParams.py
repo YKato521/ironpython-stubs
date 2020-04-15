@@ -1,20 +1,22 @@
 class CreateParams(object):
- """
+    """
  Encapsulates the information needed when creating a control.
 
  
 
  CreateParams()
  """
- def ToString(self):
-  """
+
+    def ToString(self):
+        """
   ToString(self: CreateParams) -> str
 
    Returns: A string that represents the current object.
   """
-  pass
- Caption=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the control's initial text.
+        pass
+
+    Caption = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the control's initial text.
 
 
 
@@ -26,8 +28,8 @@ Set: Caption(self: CreateParams)=value
 
 """
 
- ClassName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the Windows class to derive the control from.
+    ClassName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the name of the Windows class to derive the control from.
 
 
 
@@ -39,8 +41,10 @@ Set: ClassName(self: CreateParams)=value
 
 """
 
- ClassStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a bitwise combination of class style values.
+    ClassStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a bitwise combination of class style values.
 
 
 
@@ -52,8 +56,8 @@ Set: ClassStyle(self: CreateParams)=value
 
 """
 
- ExStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a bitwise combination of extended window style values.
+    ExStyle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a bitwise combination of extended window style values.
 
 
 
@@ -65,8 +69,8 @@ Set: ExStyle(self: CreateParams)=value
 
 """
 
- Height=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the initial height of the control.
+    Height = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the initial height of the control.
 
 
 
@@ -78,8 +82,8 @@ Set: Height(self: CreateParams)=value
 
 """
 
- Param=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets additional parameter information needed to create the control.
+    Param = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets additional parameter information needed to create the control.
 
 
 
@@ -91,8 +95,8 @@ Set: Param(self: CreateParams)=value
 
 """
 
- Parent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the control's parent.
+    Parent = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the control's parent.
 
 
 
@@ -104,8 +108,8 @@ Set: Parent(self: CreateParams)=value
 
 """
 
- Style=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a bitwise combination of window style values.
+    Style = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a bitwise combination of window style values.
 
 
 
@@ -117,8 +121,8 @@ Set: Style(self: CreateParams)=value
 
 """
 
- Width=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the initial width of the control.
+    Width = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the initial width of the control.
 
 
 
@@ -130,8 +134,8 @@ Set: Width(self: CreateParams)=value
 
 """
 
- X=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the initial left position of the control.
+    X = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the initial left position of the control.
 
 
 
@@ -143,8 +147,8 @@ Set: X(self: CreateParams)=value
 
 """
 
- Y=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the top position of the initial location of the control.
+    Y = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the top position of the initial location of the control.
 
 
 
@@ -155,5 +159,3 @@ Get: Y(self: CreateParams) -> int
 Set: Y(self: CreateParams)=value
 
 """
-
-

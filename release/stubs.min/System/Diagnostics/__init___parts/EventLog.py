@@ -1,5 +1,5 @@
-class EventLog(Component,IComponent,IDisposable,ISupportInitialize):
- """
+class EventLog(Component, IComponent, IDisposable, ISupportInitialize):
+    """
  Provides interaction with Windows event logs.
 
  
@@ -12,32 +12,36 @@ class EventLog(Component,IComponent,IDisposable,ISupportInitialize):
 
  EventLog(logName: str,machineName: str,source: str)
  """
- def BeginInit(self):
-  """
+
+    def BeginInit(self):
+        """
   BeginInit(self: EventLog)
 
    Begins the initialization of an System.Diagnostics.EventLog used on a form or used by another 
 
     component. The initialization occurs at runtime.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: EventLog)
 
    Removes all entries from the event log.
   """
-  pass
- def Close(self):
-  """
+        pass
+
+    def Close(self):
+        """
   Close(self: EventLog)
 
    Closes the event log and releases read and write handles.
   """
-  pass
- @staticmethod
- def CreateEventSource(*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateEventSource(*__args):
+        """
   CreateEventSource(sourceData: EventSourceCreationData)
 
    Establishes a valid event source for writing localized event messages,using the specified 
@@ -88,10 +92,11 @@ class EventLog(Component,IComponent,IDisposable,ISupportInitialize):
 
     System,or a custom event log.
   """
-  pass
- @staticmethod
- def Delete(logName,machineName=None):
-  """
+        pass
+
+    @staticmethod
+    def Delete(logName, machineName=None):
+        """
   Delete(logName: str,machineName: str)
 
    Removes an event log from the specified computer.
@@ -116,10 +121,11 @@ class EventLog(Component,IComponent,IDisposable,ISupportInitialize):
 
     custom event logs on the computer.
   """
-  pass
- @staticmethod
- def DeleteEventSource(source,machineName=None):
-  """
+        pass
+
+    @staticmethod
+    def DeleteEventSource(source, machineName=None):
+        """
   DeleteEventSource(source: str,machineName: str)
 
    Removes the application's event source registration from the specified computer.
@@ -138,9 +144,10 @@ class EventLog(Component,IComponent,IDisposable,ISupportInitialize):
 
    source: The name by which the application is registered in the event log system.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: EventLog,disposing: bool)
 
    Releases the unmanaged resources used by the System.Diagnostics.EventLog,and optionally 
@@ -153,19 +160,21 @@ class EventLog(Component,IComponent,IDisposable,ISupportInitialize):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def EndInit(self):
-  """
+        pass
+
+    def EndInit(self):
+        """
   EndInit(self: EventLog)
 
    Ends the initialization of an System.Diagnostics.EventLog used on a form or by another 
 
     component. The initialization occurs at runtime.
   """
-  pass
- @staticmethod
- def Exists(logName,machineName=None):
-  """
+        pass
+
+    @staticmethod
+    def Exists(logName, machineName=None):
+        """
   Exists(logName: str,machineName: str) -> bool
 
   
@@ -204,10 +213,11 @@ class EventLog(Component,IComponent,IDisposable,ISupportInitialize):
 
    Returns: true if the log exists on the local computer; otherwise,false.
   """
-  pass
- @staticmethod
- def GetEventLogs(machineName=None):
-  """
+        pass
+
+    @staticmethod
+    def GetEventLogs(machineName=None):
+        """
   GetEventLogs(machineName: str) -> Array[EventLog]
 
   
@@ -236,9 +246,10 @@ class EventLog(Component,IComponent,IDisposable,ISupportInitialize):
 
    Returns: An array of type System.Diagnostics.EventLog that represents the logs on the local computer.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -257,10 +268,11 @@ class EventLog(Component,IComponent,IDisposable,ISupportInitialize):
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- @staticmethod
- def LogNameFromSourceName(source,machineName):
-  """
+        pass
+
+    @staticmethod
+    def LogNameFromSourceName(source, machineName):
+        """
   LogNameFromSourceName(source: str,machineName: str) -> str
 
   
@@ -275,9 +287,10 @@ class EventLog(Component,IComponent,IDisposable,ISupportInitialize):
 
    Returns: The name of the log associated with the specified source in the registry.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -308,9 +321,10 @@ class EventLog(Component,IComponent,IDisposable,ISupportInitialize):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def ModifyOverflowPolicy(self,action,retentionDays):
-  """
+        pass
+
+    def ModifyOverflowPolicy(self, action, retentionDays):
+        """
   ModifyOverflowPolicy(self: EventLog,action: OverflowAction,retentionDays: int)
 
    Changes the configured behavior for writing new entries when the event log reaches its maximum 
@@ -327,9 +341,10 @@ class EventLog(Component,IComponent,IDisposable,ISupportInitialize):
 
     action is set to System.Diagnostics.OverflowAction.OverwriteOlder.
   """
-  pass
- def RegisterDisplayName(self,resourceFile,resourceId):
-  """
+        pass
+
+    def RegisterDisplayName(self, resourceFile, resourceId):
+        """
   RegisterDisplayName(self: EventLog,resourceFile: str,resourceId: Int64)
 
    Specifies the localized name of the event log,which is displayed in the server Event Viewer.
@@ -340,10 +355,11 @@ class EventLog(Component,IComponent,IDisposable,ISupportInitialize):
 
    resourceId: The resource identifier that indexes a localized string within the resource file.
   """
-  pass
- @staticmethod
- def SourceExists(source,machineName=None):
-  """
+        pass
+
+    @staticmethod
+    def SourceExists(source, machineName=None):
+        """
   SourceExists(source: str,machineName: str) -> bool
 
   
@@ -370,9 +386,10 @@ class EventLog(Component,IComponent,IDisposable,ISupportInitialize):
 
    Returns: true if the event source is registered on the local computer; otherwise,false.
   """
-  pass
- def WriteEntry(self,*__args):
-  """
+        pass
+
+    def WriteEntry(self, *__args):
+        """
   WriteEntry(self: EventLog,message: str,type: EventLogEntryType,eventID: int,category: Int16)
 
    Writes an entry with the given message text,application-defined event identifier,and 
@@ -543,9 +560,10 @@ class EventLog(Component,IComponent,IDisposable,ISupportInitialize):
 
    type: One of the System.Diagnostics.EventLogEntryType values.
   """
-  pass
- def WriteEvent(self,*__args):
-  """
+        pass
+
+    def WriteEvent(self, *__args):
+        """
   WriteEvent(source: str,instance: EventInstance,*values: Array[object])
 
    Writes an event log entry with the given event data and message replacement strings,using the 
@@ -606,29 +624,33 @@ class EventLog(Component,IComponent,IDisposable,ISupportInitialize):
 
    values: An array of strings to merge into the message text of the event log entry.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,logName=None,machineName=None,source=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, logName=None, machineName=None, source=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,logName: str)
@@ -637,25 +659,33 @@ class EventLog(Component,IComponent,IDisposable,ISupportInitialize):
 
   __new__(cls: type,logName: str,machineName: str,source: str)
   """
-  pass
- def __str__(self,*args):
-  pass
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- EnableRaisingEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the System.Diagnostics.EventLog receives System.Diagnostics.EventLog.EntryWritten event notifications.
+    EnableRaisingEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the System.Diagnostics.EventLog receives System.Diagnostics.EventLog.EntryWritten event notifications.
 
 
 
@@ -667,8 +697,8 @@ Set: EnableRaisingEvents(self: EventLog)=value
 
 """
 
- Entries=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the contents of the event log.
+    Entries = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the contents of the event log.
 
 
 
@@ -678,15 +708,15 @@ Get: Entries(self: EventLog) -> EventLogEntryCollection
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- Log=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the log to read from or write to.
+    Log = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the name of the log to read from or write to.
 
 
 
@@ -698,8 +728,10 @@ Set: Log(self: EventLog)=value
 
 """
 
- LogDisplayName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the event log's friendly name.
+    LogDisplayName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the event log's friendly name.
 
 
 
@@ -709,8 +741,10 @@ Get: LogDisplayName(self: EventLog) -> str
 
 """
 
- MachineName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the computer on which to read or write events.
+    MachineName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the computer on which to read or write events.
 
 
 
@@ -722,8 +756,10 @@ Set: MachineName(self: EventLog)=value
 
 """
 
- MaximumKilobytes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the maximum event log size in kilobytes.
+    MaximumKilobytes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the maximum event log size in kilobytes.
 
 
 
@@ -735,8 +771,10 @@ Set: MaximumKilobytes(self: EventLog)=value
 
 """
 
- MinimumRetentionDays=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of days to retain entries in the event log.
+    MinimumRetentionDays = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the number of days to retain entries in the event log.
 
 
 
@@ -746,8 +784,10 @@ Get: MinimumRetentionDays(self: EventLog) -> int
 
 """
 
- OverflowAction=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the configured behavior for storing new entries when the event log reaches its maximum log file size.
+    OverflowAction = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the configured behavior for storing new entries when the event log reaches its maximum log file size.
 
 
 
@@ -757,8 +797,8 @@ Get: OverflowAction(self: EventLog) -> OverflowAction
 
 """
 
- Source=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the source name to register and use when writing to the event log.
+    Source = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the source name to register and use when writing to the event log.
 
 
 
@@ -770,8 +810,10 @@ Set: Source(self: EventLog)=value
 
 """
 
- SynchronizingObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the object used to marshal the event handler calls issued as a result of an System.Diagnostics.EventLog entry written event.
+    SynchronizingObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the object used to marshal the event handler calls issued as a result of an System.Diagnostics.EventLog entry written event.
 
 
 
@@ -783,6 +825,4 @@ Set: SynchronizingObject(self: EventLog)=value
 
 """
 
-
- EntryWritten=None
-
+    EntryWritten = None

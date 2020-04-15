@@ -1,13 +1,14 @@
-class CommonDialog(Component,IComponent,IDisposable):
- """
+class CommonDialog(Component, IComponent, IDisposable):
+    """
  Specifies the base class used for displaying dialog boxes on the screen.
 
  
 
  CommonDialog()
  """
- def Dispose(self):
-  """
+
+    def Dispose(self):
+        """
   Dispose(self: Component,disposing: bool)
 
    Releases the unmanaged resources used by the System.ComponentModel.Component and optionally 
@@ -20,9 +21,10 @@ class CommonDialog(Component,IComponent,IDisposable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -41,9 +43,10 @@ class CommonDialog(Component,IComponent,IDisposable):
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def HookProc(self,*args):
-  """
+        pass
+
+    def HookProc(self, *args):
+        """
   HookProc(self: CommonDialog,hWnd: IntPtr,msg: int,wparam: IntPtr,lparam: IntPtr) -> IntPtr
 
   
@@ -68,9 +71,10 @@ class CommonDialog(Component,IComponent,IDisposable):
 
     default dialog box procedure ignores the message.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -101,9 +105,10 @@ class CommonDialog(Component,IComponent,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def OnHelpRequest(self,*args):
-  """
+        pass
+
+    def OnHelpRequest(self, *args):
+        """
   OnHelpRequest(self: CommonDialog,e: EventArgs)
 
    Raises the System.Windows.Forms.CommonDialog.HelpRequest event.
@@ -112,9 +117,10 @@ class CommonDialog(Component,IComponent,IDisposable):
 
    e: An System.Windows.Forms.HelpEventArgs that provides the event data.
   """
-  pass
- def OwnerWndProc(self,*args):
-  """
+        pass
+
+    def OwnerWndProc(self, *args):
+        """
   OwnerWndProc(self: CommonDialog,hWnd: IntPtr,msg: int,wparam: IntPtr,lparam: IntPtr) -> IntPtr
 
   
@@ -137,18 +143,20 @@ class CommonDialog(Component,IComponent,IDisposable):
 
    Returns: The result of the message processing,which is dependent on the message sent.
   """
-  pass
- def Reset(self):
-  """
+        pass
+
+    def Reset(self):
+        """
   Reset(self: CommonDialog)
 
    When overridden in a derived class,resets the properties of a common dialog box to their 
 
     default values.
   """
-  pass
- def RunDialog(self,*args):
-  """
+        pass
+
+    def RunDialog(self, *args):
+        """
   RunDialog(self: CommonDialog,hwndOwner: IntPtr) -> bool
 
   
@@ -161,9 +169,10 @@ class CommonDialog(Component,IComponent,IDisposable):
 
    Returns: true if the dialog box was successfully run; otherwise,false.
   """
-  pass
- def ShowDialog(self,owner=None):
-  """
+        pass
+
+    def ShowDialog(self, owner=None):
+        """
   ShowDialog(self: CommonDialog,owner: IWin32Window) -> DialogResult
 
   
@@ -194,51 +203,60 @@ class CommonDialog(Component,IComponent,IDisposable):
 
     System.Windows.Forms.DialogResult.Cancel.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- Tag=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets an object that contains data about the control.
+    Tag = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets an object that contains data about the control.
 
 
 
@@ -250,6 +268,4 @@ Set: Tag(self: CommonDialog)=value
 
 """
 
-
- HelpRequest=None
-
+    HelpRequest = None

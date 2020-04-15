@@ -1,5 +1,5 @@
-class TableCellStyleOverrideOptions(object,IDisposable):
- """
+class TableCellStyleOverrideOptions(object, IDisposable):
+    """
  This helper class represents the overridden characteristics of the associated cell.
 
  
@@ -8,14 +8,17 @@ class TableCellStyleOverrideOptions(object,IDisposable):
 
  TableCellStyleOverrideOptions()
  """
- def Dispose(self):
-  """ Dispose(self: TableCellStyleOverrideOptions) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: TableCellStyleOverrideOptions,disposing: bool) """
-  pass
- def SetAllOverrides(self,bOverride):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: TableCellStyleOverrideOptions) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: TableCellStyleOverrideOptions,disposing: bool) """
+        pass
+
+    def SetAllOverrides(self, bOverride):
+        """
   SetAllOverrides(self: TableCellStyleOverrideOptions,bOverride: bool)
 
    Sets all overrides to a specific value.
@@ -24,29 +27,37 @@ class TableCellStyleOverrideOptions(object,IDisposable):
 
    bOverride: The value that will be assigned to all the overrides.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,other=None):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, other=None):
+        """
   __new__(cls: type,other: TableCellStyleOverrideOptions)
 
   __new__(cls: type)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- BackgroundColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the background color characteristic is overridden.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    BackgroundColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the background color characteristic is overridden.
 
 
 
@@ -58,8 +69,8 @@ Set: BackgroundColor(self: TableCellStyleOverrideOptions)=value
 
 """
 
- Bold=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the bold characteristic is overridden.
+    Bold = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Indicates if the bold characteristic is overridden.
 
 
 
@@ -71,8 +82,10 @@ Set: Bold(self: TableCellStyleOverrideOptions)=value
 
 """
 
- BorderBottomLineStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the border bottom line style characteristic is overridden.
+    BorderBottomLineStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the border bottom line style characteristic is overridden.
 
 
 
@@ -84,8 +97,10 @@ Set: BorderBottomLineStyle(self: TableCellStyleOverrideOptions)=value
 
 """
 
- BorderLeftLineStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the border left line style characteristic is overridden.
+    BorderLeftLineStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the border left line style characteristic is overridden.
 
 
 
@@ -97,8 +112,10 @@ Set: BorderLeftLineStyle(self: TableCellStyleOverrideOptions)=value
 
 """
 
- BorderLineStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the border line style characteristic is overridden.
+    BorderLineStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the border line style characteristic is overridden.
 
 
 
@@ -110,8 +127,10 @@ Set: BorderLineStyle(self: TableCellStyleOverrideOptions)=value
 
 """
 
- BorderRightLineStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the border right line style characteristic is overridden.
+    BorderRightLineStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the border right line style characteristic is overridden.
 
 
 
@@ -123,8 +142,10 @@ Set: BorderRightLineStyle(self: TableCellStyleOverrideOptions)=value
 
 """
 
- BorderTopLineStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the border top line style characteristic is overridden.
+    BorderTopLineStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the border top line style characteristic is overridden.
 
 
 
@@ -136,8 +157,8 @@ Set: BorderTopLineStyle(self: TableCellStyleOverrideOptions)=value
 
 """
 
- Font=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the font name characteristic is overridden.
+    Font = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Indicates if the font name characteristic is overridden.
 
 
 
@@ -149,8 +170,8 @@ Set: Font(self: TableCellStyleOverrideOptions)=value
 
 """
 
- FontColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the font color characteristic is overridden.
+    FontColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Indicates if the font color characteristic is overridden.
 
 
 
@@ -162,8 +183,8 @@ Set: FontColor(self: TableCellStyleOverrideOptions)=value
 
 """
 
- FontSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the font size characteristic is overridden.
+    FontSize = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Indicates if the font size characteristic is overridden.
 
 
 
@@ -175,8 +196,10 @@ Set: FontSize(self: TableCellStyleOverrideOptions)=value
 
 """
 
- HorizontalAlignment=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the horizontal alignment characteristic is overridden.
+    HorizontalAlignment = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the horizontal alignment characteristic is overridden.
 
 
 
@@ -188,8 +211,10 @@ Set: HorizontalAlignment(self: TableCellStyleOverrideOptions)=value
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -199,8 +224,8 @@ Get: IsValidObject(self: TableCellStyleOverrideOptions) -> bool
 
 """
 
- Italics=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the italics characteristic is overridden.
+    Italics = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Indicates if the italics characteristic is overridden.
 
 
 
@@ -212,8 +237,10 @@ Set: Italics(self: TableCellStyleOverrideOptions)=value
 
 """
 
- TextOrientation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the text orientation characteristic is overridden.
+    TextOrientation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the text orientation characteristic is overridden.
 
 
 
@@ -225,8 +252,8 @@ Set: TextOrientation(self: TableCellStyleOverrideOptions)=value
 
 """
 
- Underline=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the underline characteristic is overridden.
+    Underline = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Indicates if the underline characteristic is overridden.
 
 
 
@@ -238,8 +265,10 @@ Set: Underline(self: TableCellStyleOverrideOptions)=value
 
 """
 
- VerticalAlignment=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the vertical alignment characteristic is overridden.
+    VerticalAlignment = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the vertical alignment characteristic is overridden.
 
 
 
@@ -250,5 +279,3 @@ Get: VerticalAlignment(self: TableCellStyleOverrideOptions) -> bool
 Set: VerticalAlignment(self: TableCellStyleOverrideOptions)=value
 
 """
-
-

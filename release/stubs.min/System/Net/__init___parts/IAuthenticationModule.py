@@ -1,7 +1,8 @@
 class IAuthenticationModule:
- """ Provides the base authentication interface for Web client authentication modules. """
- def Authenticate(self,challenge,request,credentials):
-  """
+    """ Provides the base authentication interface for Web client authentication modules. """
+
+    def Authenticate(self, challenge, request, credentials):
+        """
   Authenticate(self: IAuthenticationModule,challenge: str,request: WebRequest,credentials: ICredentials) -> Authorization
 
   
@@ -24,9 +25,10 @@ class IAuthenticationModule:
 
     null if the challenge cannot be handled.
   """
-  pass
- def PreAuthenticate(self,request,credentials):
-  """
+        pass
+
+    def PreAuthenticate(self, request, credentials):
+        """
   PreAuthenticate(self: IAuthenticationModule,request: WebRequest,credentials: ICredentials) -> Authorization
 
   
@@ -45,12 +47,16 @@ class IAuthenticationModule:
 
    Returns: An System.Net.Authorization instance containing the authorization message for the request.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- AuthenticationType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the authentication type provided by this authentication module.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    AuthenticationType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the authentication type provided by this authentication module.
 
 
 
@@ -60,8 +66,10 @@ Get: AuthenticationType(self: IAuthenticationModule) -> str
 
 """
 
- CanPreAuthenticate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the authentication module supports preauthentication.
+    CanPreAuthenticate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the authentication module supports preauthentication.
 
 
 
@@ -70,5 +78,3 @@ Get: CanPreAuthenticate(self: IAuthenticationModule) -> bool
 
 
 """
-
-

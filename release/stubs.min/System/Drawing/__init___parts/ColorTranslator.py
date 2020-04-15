@@ -1,8 +1,9 @@
 class ColorTranslator(object):
- """ Translates colors to and from GDI+ System.Drawing.Color structures. This class cannot be inherited. """
- @staticmethod
- def FromHtml(htmlColor):
-  """
+    """ Translates colors to and from GDI+ System.Drawing.Color structures. This class cannot be inherited. """
+
+    @staticmethod
+    def FromHtml(htmlColor):
+        """
   FromHtml(htmlColor: str) -> Color
 
   
@@ -17,10 +18,11 @@ class ColorTranslator(object):
 
     System.Drawing.Color.Empty if htmlColor is null.
   """
-  pass
- @staticmethod
- def FromOle(oleColor):
-  """
+        pass
+
+    @staticmethod
+    def FromOle(oleColor):
+        """
   FromOle(oleColor: int) -> Color
 
   
@@ -33,10 +35,11 @@ class ColorTranslator(object):
 
    Returns: The System.Drawing.Color structure that represents the translated OLE color.
   """
-  pass
- @staticmethod
- def FromWin32(win32Color):
-  """
+        pass
+
+    @staticmethod
+    def FromWin32(win32Color):
+        """
   FromWin32(win32Color: int) -> Color
 
   
@@ -49,10 +52,11 @@ class ColorTranslator(object):
 
    Returns: The System.Drawing.Color structure that represents the translated Windows color.
   """
-  pass
- @staticmethod
- def ToHtml(c):
-  """
+        pass
+
+    @staticmethod
+    def ToHtml(c):
+        """
   ToHtml(c: Color) -> str
 
   
@@ -65,10 +69,11 @@ class ColorTranslator(object):
 
    Returns: The string that represents the HTML color.
   """
-  pass
- @staticmethod
- def ToOle(c):
-  """
+        pass
+
+    @staticmethod
+    def ToOle(c):
+        """
   ToOle(c: Color) -> int
 
   
@@ -81,10 +86,11 @@ class ColorTranslator(object):
 
    Returns: The OLE color value.
   """
-  pass
- @staticmethod
- def ToWin32(c):
-  """
+        pass
+
+    @staticmethod
+    def ToWin32(c):
+        """
   ToWin32(c: Color) -> int
 
   
@@ -97,4 +103,4 @@ class ColorTranslator(object):
 
    Returns: The Windows color value.
   """
-  pass
+        pass

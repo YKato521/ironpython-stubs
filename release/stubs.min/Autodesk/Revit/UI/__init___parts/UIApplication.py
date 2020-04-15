@@ -1,5 +1,5 @@
-class UIApplication(object,IDisposable):
- """
+class UIApplication(object, IDisposable):
+    """
  Represents an active session of the Autodesk Revit user interface,providing access to
 
     UI customization methods,events,and the active document.
@@ -8,8 +8,9 @@ class UIApplication(object,IDisposable):
 
  UIApplication(revitApp: Application)
  """
- def CanPostCommand(self,commandId):
-  """
+
+    def CanPostCommand(self, commandId):
+        """
   CanPostCommand(self: UIApplication,commandId: RevitCommandId) -> bool
 
   
@@ -24,9 +25,10 @@ class UIApplication(object,IDisposable):
 
    commandId: The command Id.
   """
-  pass
- def CreateAddInCommandBinding(self,revitCommandId):
-  """
+        pass
+
+    def CreateAddInCommandBinding(self, revitCommandId):
+        """
   CreateAddInCommandBinding(self: UIApplication,revitCommandId: RevitCommandId) -> AddInCommandBinding
 
   
@@ -37,9 +39,10 @@ class UIApplication(object,IDisposable):
 
    revitCommandId: The Revit command id to identify the command handler you want to replace.
   """
-  pass
- def CreateRibbonPanel(self,*__args):
-  """
+        pass
+
+    def CreateRibbonPanel(self, *__args):
+        """
   CreateRibbonPanel(self: UIApplication,tabName: str,panelName: str) -> RibbonPanel
 
   
@@ -74,9 +77,10 @@ class UIApplication(object,IDisposable):
 
    panelName: The name of the panel to be created.
   """
-  pass
- def CreateRibbonTab(self,tabName):
-  """
+        pass
+
+    def CreateRibbonTab(self, tabName):
+        """
   CreateRibbonTab(self: UIApplication,tabName: str)
 
    Creates a new tab on the Revit user interface.
@@ -85,13 +89,15 @@ class UIApplication(object,IDisposable):
 
    tabName: The name of the tab to be created.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: UIApplication) """
-  pass
- @staticmethod
- def DoDragDrop(dropData,handler=None):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: UIApplication) """
+        pass
+
+    @staticmethod
+    def DoDragDrop(dropData, handler=None):
+        """
   DoDragDrop(dropData: ICollection[str])DoDragDrop(dropData: object,handler: IDropHandler)
 
    Initiates a drag and drop operation with a custom drop implementation.
@@ -102,9 +108,10 @@ class UIApplication(object,IDisposable):
 
    handler: The handler to be executed when the drop occurs.
   """
-  pass
- def GetDockablePane(self,id):
-  """
+        pass
+
+    def GetDockablePane(self, id):
+        """
   GetDockablePane(self: UIApplication,id: DockablePaneId) -> DockablePane
 
   
@@ -115,9 +122,10 @@ class UIApplication(object,IDisposable):
 
    id: Unique identifier for the new pane.
   """
-  pass
- def GetRibbonPanels(self,*__args):
-  """
+        pass
+
+    def GetRibbonPanels(self, *__args):
+        """
   GetRibbonPanels(self: UIApplication) -> List[RibbonPanel]
 
   
@@ -144,9 +152,10 @@ class UIApplication(object,IDisposable):
 
    tabName: The name of the tab on which the panels are located.
   """
-  pass
- def LoadAddIn(self,fileName):
-  """
+        pass
+
+    def LoadAddIn(self, fileName):
+        """
   LoadAddIn(self: UIApplication,fileName: str)
 
    Loads add-ins from the given manifest file.
@@ -159,9 +168,10 @@ class UIApplication(object,IDisposable):
 
   manifest file which contains Revit add-ins.
   """
-  pass
- def LoadPackageContents(self,packageContentsPath):
-  """
+        pass
+
+    def LoadPackageContents(self, packageContentsPath):
+        """
   LoadPackageContents(self: UIApplication,packageContentsPath: str)
 
    Loads add-ins from the given packageContents.xml file.
@@ -170,9 +180,10 @@ class UIApplication(object,IDisposable):
 
    packageContentsPath: The name of package contents file
   """
-  pass
- def OpenAndActivateDocument(self,*__args):
-  """
+        pass
+
+    def OpenAndActivateDocument(self, *__args):
+        """
   OpenAndActivateDocument(self: UIApplication,fileName: str) -> UIDocument
 
   
@@ -213,9 +224,10 @@ class UIApplication(object,IDisposable):
 
     detach from central and query the user whether to preserve or discard worksets.
   """
-  pass
- def PostCommand(self,commandId):
-  """
+        pass
+
+    def PostCommand(self, commandId):
+        """
   PostCommand(self: UIApplication,commandId: RevitCommandId)
 
    Posts the command to the Revit message queue to be invoked when control returns 
@@ -228,9 +240,10 @@ class UIApplication(object,IDisposable):
 
    commandId: The command Id.
   """
-  pass
- def RegisterDockablePane(self,id,title,provider):
-  """
+        pass
+
+    def RegisterDockablePane(self, id, title, provider):
+        """
   RegisterDockablePane(self: UIApplication,id: DockablePaneId,title: str,provider: IDockablePaneProvider)
 
    Adds a new dockable pane to the Revit user interface.
@@ -243,12 +256,14 @@ class UIApplication(object,IDisposable):
 
    provider: Your add-in's implementation of the IDockablePaneProvider interface.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: UIApplication,disposing: bool) """
-  pass
- def RemoveAddInCommandBinding(self,revitCommandId):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: UIApplication,disposing: bool) """
+        pass
+
+    def RemoveAddInCommandBinding(self, revitCommandId):
+        """
   RemoveAddInCommandBinding(self: UIApplication,revitCommandId: RevitCommandId)
 
    Removes an AddInCommandBinding.
@@ -259,32 +274,41 @@ class UIApplication(object,IDisposable):
 
     binding.
   """
-  pass
- def setNativeUIApplication(self,*args):
-  """ setNativeUIApplication(self: UIApplication,uiApp: UIApplication*) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,revitApp):
-  """
+        pass
+
+    def setNativeUIApplication(self, *args):
+        """ setNativeUIApplication(self: UIApplication,uiApp: UIApplication*) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, revitApp):
+        """
   __new__(cls: type)
 
   __new__(cls: type,revitApp: Application)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- ActiveAddInId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get current active external application or external command id.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    ActiveAddInId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get current active external application or external command id.
 
 
 
@@ -294,8 +318,10 @@ Get: ActiveAddInId(self: UIApplication) -> AddInId
 
 """
 
- ActiveUIDocument=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides access to an object that represents the currently active project.
+    ActiveUIDocument = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides access to an object that represents the currently active project.
 
 
 
@@ -305,8 +331,10 @@ Get: ActiveUIDocument(self: UIApplication) -> UIDocument
 
 """
 
- Application=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the database level Application represented by this UI level Application.
+    Application = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the database level Application represented by this UI level Application.
 
 
 
@@ -316,8 +344,10 @@ Get: Application(self: UIApplication) -> Application
 
 """
 
- DrawingAreaExtents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the rectangle that represents the screen pixel coordinates of drawing area.
+    DrawingAreaExtents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get the rectangle that represents the screen pixel coordinates of drawing area.
 
 
 
@@ -327,8 +357,10 @@ Get: DrawingAreaExtents(self: UIApplication) -> Rectangle
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -338,8 +370,10 @@ Get: IsValidObject(self: UIApplication) -> bool
 
 """
 
- LoadedApplications=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns an array of successfully loaded external applications.
+    LoadedApplications = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns an array of successfully loaded external applications.
 
 
 
@@ -349,8 +383,10 @@ Get: LoadedApplications(self: UIApplication) -> ExternalApplicationArray
 
 """
 
- MainWindowExtents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the rectangle that represents the screen pixel coordinates of Revit main window.
+    MainWindowExtents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get the rectangle that represents the screen pixel coordinates of Revit main window.
 
 
 
@@ -360,14 +396,12 @@ Get: MainWindowExtents(self: UIApplication) -> Rectangle
 
 """
 
-
- ApplicationClosing=None
- DialogBoxShowing=None
- DisplayingOptionsDialog=None
- DockableFrameFocusChanged=None
- DockableFrameVisibilityChanged=None
- FabricationPartBrowserChanged=None
- Idling=None
- ViewActivated=None
- ViewActivating=None
-
+    ApplicationClosing = None
+    DialogBoxShowing = None
+    DisplayingOptionsDialog = None
+    DockableFrameFocusChanged = None
+    DockableFrameVisibilityChanged = None
+    FabricationPartBrowserChanged = None
+    Idling = None
+    ViewActivated = None
+    ViewActivating = None

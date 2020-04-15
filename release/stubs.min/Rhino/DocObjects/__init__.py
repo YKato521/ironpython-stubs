@@ -32,7 +32,9 @@ from __init___parts.HatchPattern import HatchPattern
 from __init___parts.HatchPatternFillType import HatchPatternFillType
 from __init___parts.HistoryRecord import HistoryRecord
 from __init___parts.InstanceDefinition import InstanceDefinition
-from __init___parts.InstanceDefinitionArchiveFileStatus import InstanceDefinitionArchiveFileStatus
+from __init___parts.InstanceDefinitionArchiveFileStatus import (
+    InstanceDefinitionArchiveFileStatus,
+)
 from __init___parts.InstanceDefinitionLayerStyle import InstanceDefinitionLayerStyle
 from __init___parts.InstanceDefinitionUpdateType import InstanceDefinitionUpdateType
 from __init___parts.InstanceObject import InstanceObject
@@ -63,8 +65,12 @@ from __init___parts.PointObject import PointObject
 from __init___parts.RadialDimensionObject import RadialDimensionObject
 from __init___parts.ReplayHistoryData import ReplayHistoryData
 from __init___parts.ReplayHistoryResult import ReplayHistoryResult
-from __init___parts.RhinoDeselectAllObjectsEventArgs import RhinoDeselectAllObjectsEventArgs
-from __init___parts.RhinoModifyObjectAttributesEventArgs import RhinoModifyObjectAttributesEventArgs
+from __init___parts.RhinoDeselectAllObjectsEventArgs import (
+    RhinoDeselectAllObjectsEventArgs,
+)
+from __init___parts.RhinoModifyObjectAttributesEventArgs import (
+    RhinoModifyObjectAttributesEventArgs,
+)
 from __init___parts.RhinoObjectEventArgs import RhinoObjectEventArgs
 from __init___parts.RhinoObjectSelectionEventArgs import RhinoObjectSelectionEventArgs
 from __init___parts.RhinoReplaceObjectEventArgs import RhinoReplaceObjectEventArgs

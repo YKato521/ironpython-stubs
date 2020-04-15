@@ -1,7 +1,8 @@
-class FabricationPart(Element,IDisposable):
- """ Represents a fabrication component in the Autodesk Revit MEP product. """
- def AdjustEndLength(self,partConn,lengthToAdjust,totalLengthOnly):
-  """
+class FabricationPart(Element, IDisposable):
+    """ Represents a fabrication component in the Autodesk Revit MEP product. """
+
+    def AdjustEndLength(self, partConn, lengthToAdjust, totalLengthOnly):
+        """
   AdjustEndLength(self: FabricationPart,partConn: Connector,lengthToAdjust: float,totalLengthOnly: bool) -> float
 
   
@@ -18,10 +19,11 @@ class FabricationPart(Element,IDisposable):
 
    Returns: The adjusted length.
   """
-  pass
- @staticmethod
- def AlignPartByConnectors(doc,partConn,toConn,axisRotation):
-  """
+        pass
+
+    @staticmethod
+    def AlignPartByConnectors(doc, partConn, toConn, axisRotation):
+        """
   AlignPartByConnectors(doc: Document,partConn: Connector,toConn: Connector,axisRotation: float) -> bool
 
   
@@ -48,9 +50,10 @@ class FabricationPart(Element,IDisposable):
 
    Returns: True if alignment succeeds,false otherwise.
   """
-  pass
- def CanAdjustEndLength(self,partConn):
-  """
+        pass
+
+    def CanAdjustEndLength(self, partConn):
+        """
   CanAdjustEndLength(self: FabricationPart,partConn: Connector) -> bool
 
   
@@ -63,10 +66,11 @@ class FabricationPart(Element,IDisposable):
 
    Returns: True if the end of fabrication part can be adjusted.
   """
-  pass
- @staticmethod
- def ConnectAndCouple(doc,partConn,toConn):
-  """
+        pass
+
+    @staticmethod
+    def ConnectAndCouple(doc, partConn, toConn):
+        """
   ConnectAndCouple(doc: Document,partConn: Connector,toConn: Connector) -> bool
 
   
@@ -87,10 +91,11 @@ class FabricationPart(Element,IDisposable):
 
    Returns: True if connection succeeded,false otherwise.
   """
-  pass
- @staticmethod
- def Create(document,button,*__args):
-  """
+        pass
+
+    @staticmethod
+    def Create(document, button, *__args):
+        """
   Create(document: Document,button: FabricationServiceButton,width: float,depth: float,levelId: ElementId) -> FabricationPart
 
   
@@ -137,10 +142,11 @@ class FabricationPart(Element,IDisposable):
 
    Returns: The new fabrication part.
   """
-  pass
- @staticmethod
- def CreateHanger(document,button,*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateHanger(document, button, *__args):
+        """
   CreateHanger(document: Document,button: FabricationServiceButton,hostId: ElementId,hostConnector: Connector,distance: float,attachToStructure: bool) -> FabricationPart
 
   
@@ -217,15 +223,18 @@ class FabricationPart(Element,IDisposable):
 
    Returns: The newly-created fabrication hanger.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetCalculatedDimensionValue(self,dim):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetCalculatedDimensionValue(self, dim):
+        """
   GetCalculatedDimensionValue(self: FabricationPart,dim: FabricationDimensionDefinition) -> str
 
   
@@ -238,9 +247,10 @@ class FabricationPart(Element,IDisposable):
 
    Returns: The calculated dimension value.
   """
-  pass
- def GetDimensionCalculatedOptions(self,dim):
-  """
+        pass
+
+    def GetDimensionCalculatedOptions(self, dim):
+        """
   GetDimensionCalculatedOptions(self: FabricationPart,dim: FabricationDimensionDefinition) -> IList[str]
 
   
@@ -253,9 +263,10 @@ class FabricationPart(Element,IDisposable):
 
    Returns: The calculated options of the fabrication dimension.
   """
-  pass
- def GetDimensions(self):
-  """
+        pass
+
+    def GetDimensions(self):
+        """
   GetDimensions(self: FabricationPart) -> IList[FabricationDimensionDefinition]
 
   
@@ -264,9 +275,10 @@ class FabricationPart(Element,IDisposable):
 
    Returns: Returns an array of fabrication dimensions.
   """
-  pass
- def GetDimensionValue(self,dim):
-  """
+        pass
+
+    def GetDimensionValue(self, dim):
+        """
   GetDimensionValue(self: FabricationPart,dim: FabricationDimensionDefinition) -> float
 
   
@@ -283,9 +295,10 @@ class FabricationPart(Element,IDisposable):
 
    Returns: The dimension value.
   """
-  pass
- def GetHostedInfo(self):
-  """
+        pass
+
+    def GetHostedInfo(self):
+        """
   GetHostedInfo(self: FabricationPart) -> FabricationHostedInfo
 
   
@@ -296,9 +309,10 @@ class FabricationPart(Element,IDisposable):
 
     part does not have a host.
   """
-  pass
- def GetProductListEntryCount(self):
-  """
+        pass
+
+    def GetProductListEntryCount(self):
+        """
   GetProductListEntryCount(self: FabricationPart) -> int
 
   
@@ -307,9 +321,10 @@ class FabricationPart(Element,IDisposable):
 
    Returns: Returns the number of product entries.
   """
-  pass
- def GetProductListEntryName(self,index):
-  """
+        pass
+
+    def GetProductListEntryName(self, index):
+        """
   GetProductListEntryName(self: FabricationPart,index: int) -> str
 
   
@@ -322,9 +337,10 @@ class FabricationPart(Element,IDisposable):
 
    Returns: Returns the specified product entry name.
   """
-  pass
- def GetRodInfo(self):
-  """
+        pass
+
+    def GetRodInfo(self):
+        """
   GetRodInfo(self: FabricationPart) -> FabricationRodInfo
 
   
@@ -335,9 +351,10 @@ class FabricationPart(Element,IDisposable):
 
     have any rod.
   """
-  pass
- def GetTransform(self):
-  """
+        pass
+
+    def GetTransform(self):
+        """
   GetTransform(self: FabricationPart) -> Transform
 
   
@@ -346,9 +363,10 @@ class FabricationPart(Element,IDisposable):
 
    Returns: The transformation matrix of the fabrication part element.
   """
-  pass
- def IsAHanger(self):
-  """
+        pass
+
+    def IsAHanger(self):
+        """
   IsAHanger(self: FabricationPart) -> bool
 
   
@@ -357,9 +375,10 @@ class FabricationPart(Element,IDisposable):
 
    Returns: True if the part is a hanger. False otherwise.
   """
-  pass
- def IsAStraight(self):
-  """
+        pass
+
+    def IsAStraight(self):
+        """
   IsAStraight(self: FabricationPart) -> bool
 
   
@@ -368,9 +387,10 @@ class FabricationPart(Element,IDisposable):
 
    Returns: True if the part is a straight part. False otherwise.
   """
-  pass
- def IsATap(self):
-  """
+        pass
+
+    def IsATap(self):
+        """
   IsATap(self: FabricationPart) -> bool
 
   
@@ -379,9 +399,10 @@ class FabricationPart(Element,IDisposable):
 
    Returns: True if it is any sort of tap.
   """
-  pass
- def IsDimensionCalculated(self,dim):
-  """
+        pass
+
+    def IsDimensionCalculated(self, dim):
+        """
   IsDimensionCalculated(self: FabricationPart,dim: FabricationDimensionDefinition) -> bool
 
   
@@ -394,9 +415,10 @@ class FabricationPart(Element,IDisposable):
 
    Returns: True if the fabrication dimension is calculated.
   """
-  pass
- def IsProductList(self):
-  """
+        pass
+
+    def IsProductList(self):
+        """
   IsProductList(self: FabricationPart) -> bool
 
   
@@ -405,9 +427,10 @@ class FabricationPart(Element,IDisposable):
 
    Returns: Returns true if the fabrication part is a product list.
   """
-  pass
- def IsProductListEntryCompatibleSize(self,productEntry):
-  """
+        pass
+
+    def IsProductListEntryCompatibleSize(self, productEntry):
+        """
   IsProductListEntryCompatibleSize(self: FabricationPart,productEntry: int) -> bool
 
   
@@ -426,14 +449,18 @@ class FabricationPart(Element,IDisposable):
 
     altering any connected dimensions.
   """
-  pass
- @staticmethod
- def OptimizeLengths(doc,partIds):
-  """ OptimizeLengths(doc: Document,partIds: ISet[ElementId]) -> ISet[ElementId] """
-  pass
- @staticmethod
- def PlaceAsTap(doc,tapPartConn,hostPartConn,distance,axisRotation,secondaryAxisRotation):
-  """
+        pass
+
+    @staticmethod
+    def OptimizeLengths(doc, partIds):
+        """ OptimizeLengths(doc: Document,partIds: ISet[ElementId]) -> ISet[ElementId] """
+        pass
+
+    @staticmethod
+    def PlaceAsTap(
+        doc, tapPartConn, hostPartConn, distance, axisRotation, secondaryAxisRotation
+    ):
+        """
   PlaceAsTap(doc: Document,tapPartConn: Connector,hostPartConn: Connector,distance: float,axisRotation: float,secondaryAxisRotation: float)
 
    Places the part by its connector to a specific position on the straight part at 
@@ -456,10 +483,13 @@ class FabricationPart(Element,IDisposable):
 
    secondaryAxisRotation: The secondary axis rotation in radians.
   """
-  pass
- @staticmethod
- def PlaceFittingAsCutIn(doc,straightId,fittingId,position,fittingConn,axisRotation):
-  """
+        pass
+
+    @staticmethod
+    def PlaceFittingAsCutIn(
+        doc, straightId, fittingId, position, fittingConn, axisRotation
+    ):
+        """
   PlaceFittingAsCutIn(doc: Document,straightId: ElementId,fittingId: ElementId,position: XYZ,fittingConn: Connector,axisRotation: float) -> bool
 
   
@@ -494,13 +524,15 @@ class FabricationPart(Element,IDisposable):
 
    Returns: True if cuts in successfully.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- @staticmethod
- def Reposition(doc,partId):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    @staticmethod
+    def Reposition(doc, partId):
+        """
   Reposition(doc: Document,partId: ElementId)
 
    Repositions the fabrication straight part to another end of the run.
@@ -511,10 +543,11 @@ class FabricationPart(Element,IDisposable):
 
    partId: Id of the fabrication part to reposition.
   """
-  pass
- @staticmethod
- def RotateConnectedPartByConnector(doc,conn,axisRotationBy):
-  """
+        pass
+
+    @staticmethod
+    def RotateConnectedPartByConnector(doc, conn, axisRotationBy):
+        """
   RotateConnectedPartByConnector(doc: Document,conn: Connector,axisRotationBy: float)
 
    Rotates a connected fabrication part around the axis of the specified connector.
@@ -527,10 +560,11 @@ class FabricationPart(Element,IDisposable):
 
    axisRotationBy: The angle in radians to rotate by.
   """
-  pass
- @staticmethod
- def RotateConnectedTap(doc,tap,primaryAxisRotateBy,secondaryAxisRotateBy):
-  """
+        pass
+
+    @staticmethod
+    def RotateConnectedTap(doc, tap, primaryAxisRotateBy, secondaryAxisRotateBy):
+        """
   RotateConnectedTap(doc: Document,tap: FabricationPart,primaryAxisRotateBy: float,secondaryAxisRotateBy: float)
 
    Rotates a connected fabrication tap by the specified angles about the primary 
@@ -549,9 +583,10 @@ class FabricationPart(Element,IDisposable):
 
    secondaryAxisRotateBy: The secondary axis rotation angle in radians to rotate by.
   """
-  pass
- def SetCalculatedDimensionValue(self,dim,value):
-  """
+        pass
+
+    def SetCalculatedDimensionValue(self, dim, value):
+        """
   SetCalculatedDimensionValue(self: FabricationPart,dim: FabricationDimensionDefinition,value: str)
 
    Sets the calculated dimension value.
@@ -562,9 +597,10 @@ class FabricationPart(Element,IDisposable):
 
    value: The calculated dimension value.
   """
-  pass
- def SetDimensionValue(self,dim,newValue):
-  """
+        pass
+
+    def SetDimensionValue(self, dim, newValue):
+        """
   SetDimensionValue(self: FabricationPart,dim: FabricationDimensionDefinition,newValue: float)
 
    Sets the fabrication dimension value. The value is in Revit internal units.
@@ -575,12 +611,14 @@ class FabricationPart(Element,IDisposable):
 
    newValue: The dimension value.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetPositionByEnd(self,connector,position):
-  """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetPositionByEnd(self, connector, position):
+        """
   SetPositionByEnd(self: FabricationPart,connector: Connector,position: XYZ)
 
    Positions the connector of the fabrication part element by the passed point.
@@ -591,22 +629,27 @@ class FabricationPart(Element,IDisposable):
 
    position: The position to move to.
   """
-  pass
- @staticmethod
- def StretchAndFit(document,stretchConnector,target,newPartIds):
-  """ StretchAndFit(document: Document,stretchConnector: Connector,target: FabricationPartRouteEnd) -> (FabricationPartFitResult,ISet[ElementId]) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Alias=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The alias of the fabrication part.
+        pass
+
+    @staticmethod
+    def StretchAndFit(document, stretchConnector, target, newPartIds):
+        """ StretchAndFit(document: Document,stretchConnector: Connector,target: FabricationPartRouteEnd) -> (FabricationPartFitResult,ISet[ElementId]) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Alias = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The alias of the fabrication part.
 
 
 
@@ -616,8 +659,10 @@ Get: Alias(self: FabricationPart) -> str
 
 """
 
- BottomOfPartElevation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The associated elevation to the bottom of fabrication part off of the current level.
+    BottomOfPartElevation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The associated elevation to the bottom of fabrication part off of the current level.
 
 
 
@@ -627,8 +672,10 @@ Get: BottomOfPartElevation(self: FabricationPart) -> float
 
 """
 
- ConnectorManager=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The connector manager of the fabrication part.
+    ConnectorManager = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The connector manager of the fabrication part.
 
 
 
@@ -638,8 +685,8 @@ Get: ConnectorManager(self: FabricationPart) -> ConnectorManager
 
 """
 
- CutType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The cut type of the fabrication part.
+    CutType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The cut type of the fabrication part.
 
 
 
@@ -649,8 +696,10 @@ Get: CutType(self: FabricationPart) -> int
 
 """
 
- DomainType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The domain type for the fabrication part.
+    DomainType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The domain type for the fabrication part.
 
 
 
@@ -660,8 +709,10 @@ Get: DomainType(self: FabricationPart) -> ConnectorDomainType
 
 """
 
- DoubleWallMaterial=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The double wall material identifier of the fabrication part.
+    DoubleWallMaterial = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The double wall material identifier of the fabrication part.
 
 
 
@@ -671,8 +722,10 @@ Get: DoubleWallMaterial(self: FabricationPart) -> int
 
 """
 
- DoubleWallMaterialArea=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The double wall material area of the fabrication part. If the fabrication part is not double walled,returns zero.
+    DoubleWallMaterialArea = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The double wall material area of the fabrication part. If the fabrication part is not double walled,returns zero.
 
 
 
@@ -682,8 +735,10 @@ Get: DoubleWallMaterialArea(self: FabricationPart) -> float
 
 """
 
- DoubleWallMaterialThickness=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The double wall material thickness of the fabrication part. If the fabrication part is not double walled,returns zero.
+    DoubleWallMaterialThickness = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The double wall material thickness of the fabrication part. If the fabrication part is not double walled,returns zero.
 
 
 
@@ -693,8 +748,10 @@ Get: DoubleWallMaterialThickness(self: FabricationPart) -> float
 
 """
 
- HasDoubleWall=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True if the fabrication part is double walled.
+    HasDoubleWall = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """True if the fabrication part is double walled.
 
 
 
@@ -704,8 +761,10 @@ Get: HasDoubleWall(self: FabricationPart) -> bool
 
 """
 
- HasInsulation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True if the fabrication part is insulated.
+    HasInsulation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """True if the fabrication part is insulated.
 
 
 
@@ -715,8 +774,8 @@ Get: HasInsulation(self: FabricationPart) -> bool
 
 """
 
- HasLining=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True if the fabrication part is lined.
+    HasLining = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """True if the fabrication part is lined.
 
 
 
@@ -726,8 +785,10 @@ Get: HasLining(self: FabricationPart) -> bool
 
 """
 
- InsulationArea=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The insulation area of the fabrication part. If the fabrication part is not insulated,returns zero.
+    InsulationArea = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The insulation area of the fabrication part. If the fabrication part is not insulated,returns zero.
 
 
 
@@ -737,8 +798,10 @@ Get: InsulationArea(self: FabricationPart) -> float
 
 """
 
- InsulationSpecification=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The fabrication part insulation specification identifier.
+    InsulationSpecification = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The fabrication part insulation specification identifier.
 
 
 
@@ -750,8 +813,10 @@ Set: InsulationSpecification(self: FabricationPart)=value
 
 """
 
- InsulationThickness=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The insulation thickness of the fabrication part. If the fabrication part is not insulated,returns zero.
+    InsulationThickness = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The insulation thickness of the fabrication part. If the fabrication part is not insulated,returns zero.
 
 
 
@@ -761,8 +826,10 @@ Get: InsulationThickness(self: FabricationPart) -> float
 
 """
 
- InsulationType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The insulation type of the fabrication part.
+    InsulationType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The insulation type of the fabrication part.
 
 
 
@@ -772,8 +839,10 @@ Get: InsulationType(self: FabricationPart) -> str
 
 """
 
- IsBoughtOut=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True if the fabrication part is bought out.
+    IsBoughtOut = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """True if the fabrication part is bought out.
 
 
 
@@ -783,8 +852,10 @@ Get: IsBoughtOut(self: FabricationPart) -> bool
 
 """
 
- ItemCustomId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The item custom identifier for the fabrication part.
+    ItemCustomId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The item custom identifier for the fabrication part.
 
 
 
@@ -794,8 +865,10 @@ Get: ItemCustomId(self: FabricationPart) -> int
 
 """
 
- ItemNumber=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The item number that is used for identification,re-ordering from shop.
+    ItemNumber = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The item number that is used for identification,re-ordering from shop.
 
 
 
@@ -807,8 +880,10 @@ Set: ItemNumber(self: FabricationPart)=value
 
 """
 
- LevelOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The associated level offset that indicates the distance from the center of the fabrication part to the current level.
+    LevelOffset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The associated level offset that indicates the distance from the center of the fabrication part to the current level.
 
 
 
@@ -818,8 +893,10 @@ Get: LevelOffset(self: FabricationPart) -> float
 
 """
 
- LiningArea=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The lining area of the fabrication part. If the fabrication part is not lined,returns zero.
+    LiningArea = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The lining area of the fabrication part. If the fabrication part is not lined,returns zero.
 
 
 
@@ -829,8 +906,10 @@ Get: LiningArea(self: FabricationPart) -> float
 
 """
 
- LiningThickness=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The lining thickness of the fabrication part. If the fabrication part is not lined,returns zero.
+    LiningThickness = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The lining thickness of the fabrication part. If the fabrication part is not lined,returns zero.
 
 
 
@@ -840,8 +919,10 @@ Get: LiningThickness(self: FabricationPart) -> float
 
 """
 
- LiningType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The lining type of the fabrication part.
+    LiningType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The lining type of the fabrication part.
 
 
 
@@ -851,8 +932,8 @@ Get: LiningType(self: FabricationPart) -> str
 
 """
 
- Material=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The fabrication material identifier.
+    Material = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The fabrication material identifier.
 
 
 
@@ -864,8 +945,10 @@ Set: Material(self: FabricationPart)=value
 
 """
 
- MaterialThickness=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The material thickness of the fabrication part.
+    MaterialThickness = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The material thickness of the fabrication part.
 
 
 
@@ -875,8 +958,8 @@ Get: MaterialThickness(self: FabricationPart) -> float
 
 """
 
- Notes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The notes of the fabrication part.
+    Notes = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The notes of the fabrication part.
 
 
 
@@ -888,8 +971,8 @@ Set: Notes(self: FabricationPart)=value
 
 """
 
- Origin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The origin of the fabrication part element.
+    Origin = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The origin of the fabrication part element.
 
 
 
@@ -899,8 +982,10 @@ Get: Origin(self: FabricationPart) -> XYZ
 
 """
 
- OverallSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The overall size of the fabrication part.
+    OverallSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The overall size of the fabrication part.
 
 
 
@@ -910,8 +995,10 @@ Get: OverallSize(self: FabricationPart) -> str
 
 """
 
- ProductCode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The current database id of the part within the fabrication database.
+    ProductCode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The current database id of the part within the fabrication database.
 
 
 
@@ -921,8 +1008,10 @@ Get: ProductCode(self: FabricationPart) -> str
 
 """
 
- ProductDataRange=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The product data range of the fabrication part.
+    ProductDataRange = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The product data range of the fabrication part.
 
 
 
@@ -932,8 +1021,10 @@ Get: ProductDataRange(self: FabricationPart) -> str
 
 """
 
- ProductFinishDescription=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The product finish description of the fabrication part.
+    ProductFinishDescription = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The product finish description of the fabrication part.
 
 
 
@@ -943,8 +1034,10 @@ Get: ProductFinishDescription(self: FabricationPart) -> str
 
 """
 
- ProductInstallType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The product install type of the fabrication part.
+    ProductInstallType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The product install type of the fabrication part.
 
 
 
@@ -954,8 +1047,10 @@ Get: ProductInstallType(self: FabricationPart) -> str
 
 """
 
- ProductListEntry=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The product entry index of the fabrication part. A value of -1 indicates the fabrication part is not a product list.
+    ProductListEntry = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The product entry index of the fabrication part. A value of -1 indicates the fabrication part is not a product list.
 
 
 
@@ -967,8 +1062,10 @@ Set: ProductListEntry(self: FabricationPart)=value
 
 """
 
- ProductLongDescription=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The product long description of the fabrication part.
+    ProductLongDescription = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The product long description of the fabrication part.
 
 
 
@@ -978,8 +1075,10 @@ Get: ProductLongDescription(self: FabricationPart) -> str
 
 """
 
- ProductMaterialDescription=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The product material description of the fabrication part.
+    ProductMaterialDescription = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The product material description of the fabrication part.
 
 
 
@@ -989,8 +1088,10 @@ Get: ProductMaterialDescription(self: FabricationPart) -> str
 
 """
 
- ProductName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The product name of the fabrication part.
+    ProductName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The product name of the fabrication part.
 
 
 
@@ -1000,8 +1101,10 @@ Get: ProductName(self: FabricationPart) -> str
 
 """
 
- ProductOriginalEquipmentManufacture=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The product original equipment manufacture (OEM) of the fabrication part.
+    ProductOriginalEquipmentManufacture = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The product original equipment manufacture (OEM) of the fabrication part.
 
 
 
@@ -1011,8 +1114,10 @@ Get: ProductOriginalEquipmentManufacture(self: FabricationPart) -> str
 
 """
 
- ProductShortDescription=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The product short description of the fabrication part.
+    ProductShortDescription = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The product short description of the fabrication part.
 
 
 
@@ -1022,8 +1127,10 @@ Get: ProductShortDescription(self: FabricationPart) -> str
 
 """
 
- ProductSizeDescription=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The product size description of the fabrication part.
+    ProductSizeDescription = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The product size description of the fabrication part.
 
 
 
@@ -1033,8 +1140,10 @@ Get: ProductSizeDescription(self: FabricationPart) -> str
 
 """
 
- ProductSpecificationDescription=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The product specification description of the fabrication part.
+    ProductSpecificationDescription = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The product specification description of the fabrication part.
 
 
 
@@ -1044,8 +1153,10 @@ Get: ProductSpecificationDescription(self: FabricationPart) -> str
 
 """
 
- ServiceAbbreviation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The associated service abbreviation for the fabrication service.
+    ServiceAbbreviation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The associated service abbreviation for the fabrication service.
 
 
 
@@ -1055,8 +1166,8 @@ Get: ServiceAbbreviation(self: FabricationPart) -> str
 
 """
 
- ServiceId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The fabrication part service identifier. The service can only be changed to compatible services.
+    ServiceId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The fabrication part service identifier. The service can only be changed to compatible services.
 
 
 
@@ -1066,8 +1177,10 @@ Get: ServiceId(self: FabricationPart) -> int
 
 """
 
- ServiceName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The name of the service associated with the fabrication part.
+    ServiceName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The name of the service associated with the fabrication part.
 
 
 
@@ -1077,8 +1190,10 @@ Get: ServiceName(self: FabricationPart) -> str
 
 """
 
- SheetMetalArea=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The sheet metal area of the fabrication part.
+    SheetMetalArea = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The sheet metal area of the fabrication part.
 
 
 
@@ -1088,8 +1203,8 @@ Get: SheetMetalArea(self: FabricationPart) -> float
 
 """
 
- Size=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The size of the fabrication part.
+    Size = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The size of the fabrication part.
 
 
 
@@ -1099,8 +1214,8 @@ Get: Size(self: FabricationPart) -> str
 
 """
 
- Slope=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The slope for the straight fabrication part.
+    Slope = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The slope for the straight fabrication part.
 
 
 
@@ -1110,8 +1225,10 @@ Get: Slope(self: FabricationPart) -> float
 
 """
 
- Specification=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The fabrication part specification identifier.
+    Specification = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The fabrication part specification identifier.
 
 
 
@@ -1123,8 +1240,10 @@ Set: Specification(self: FabricationPart)=value
 
 """
 
- TopOfPartElevation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The associated elevation to the top of fabrication part off of the current level.
+    TopOfPartElevation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The associated elevation to the top of fabrication part off of the current level.
 
 
 
@@ -1134,8 +1253,10 @@ Get: TopOfPartElevation(self: FabricationPart) -> float
 
 """
 
- ValidationStatus=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The validation status of the fabrication part.
+    ValidationStatus = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The validation status of the fabrication part.
 
 
 
@@ -1145,8 +1266,8 @@ Get: ValidationStatus(self: FabricationPart) -> ValidationStatus
 
 """
 
- Vendor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The vendor of the fabrication part.
+    Vendor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The vendor of the fabrication part.
 
 
 
@@ -1156,8 +1277,10 @@ Get: Vendor(self: FabricationPart) -> str
 
 """
 
- VendorCode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The vendor code of the fabrication part.
+    VendorCode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The vendor code of the fabrication part.
 
 
 
@@ -1167,8 +1290,8 @@ Get: VendorCode(self: FabricationPart) -> str
 
 """
 
- Weight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The weight of the fabrication part.
+    Weight = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The weight of the fabrication part.
 
 
 
@@ -1177,5 +1300,3 @@ Get: Weight(self: FabricationPart) -> float
 
 
 """
-
-

@@ -1,7 +1,8 @@
-class PerformanceAdviser(object,IDisposable):
- """ The tool to report performance problems in a given document. """
- def AddRule(self,id,rule):
-  """
+class PerformanceAdviser(object, IDisposable):
+    """ The tool to report performance problems in a given document. """
+
+    def AddRule(self, id, rule):
+        """
   AddRule(self: PerformanceAdviser,id: PerformanceAdviserRuleId,rule: IPerformanceAdviserRule)
 
    Adds a performance adviser rule to the list of rules.
@@ -12,9 +13,10 @@ class PerformanceAdviser(object,IDisposable):
 
    rule: The rule to be added
   """
-  pass
- def DeleteRule(self,id):
-  """
+        pass
+
+    def DeleteRule(self, id):
+        """
   DeleteRule(self: PerformanceAdviser,id: PerformanceAdviserRuleId)
 
    Deletes a performance adviser rule from the list of rules.
@@ -23,12 +25,14 @@ class PerformanceAdviser(object,IDisposable):
 
    id: An id of the rule to be deleted from the list of rules.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: PerformanceAdviser) """
-  pass
- def ExecuteAllRules(self,document):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: PerformanceAdviser) """
+        pass
+
+    def ExecuteAllRules(self, document):
+        """
   ExecuteAllRules(self: PerformanceAdviser,document: Document) -> IList[FailureMessage]
 
   
@@ -41,16 +45,18 @@ class PerformanceAdviser(object,IDisposable):
 
    Returns: Failure messages explaining performance problems detected in the document.
   """
-  pass
- def ExecuteRules(self,document,rules):
-  """
+        pass
+
+    def ExecuteRules(self, document, rules):
+        """
   ExecuteRules(self: PerformanceAdviser,document: Document,rules: IList[PerformanceAdviserRuleId]) -> IList[FailureMessage]
 
   ExecuteRules(self: PerformanceAdviser,document: Document,rules: IList[int]) -> IList[FailureMessage]
   """
-  pass
- def GetAllRuleIds(self):
-  """
+        pass
+
+    def GetAllRuleIds(self):
+        """
   GetAllRuleIds(self: PerformanceAdviser) -> IList[PerformanceAdviserRuleId]
 
   
@@ -59,9 +65,10 @@ class PerformanceAdviser(object,IDisposable):
 
    Returns: A collection of rule Ids
   """
-  pass
- def GetElementFilterFromRule(self,*__args):
-  """
+        pass
+
+    def GetElementFilterFromRule(self, *__args):
+        """
   GetElementFilterFromRule(self: PerformanceAdviser,id: PerformanceAdviserRuleId,document: Document) -> ElementFilter
 
   
@@ -90,9 +97,10 @@ class PerformanceAdviser(object,IDisposable):
 
    Returns: The filter to restrict elements to be checked.
   """
-  pass
- def GetNumberOfRules(self):
-  """
+        pass
+
+    def GetNumberOfRules(self):
+        """
   GetNumberOfRules(self: PerformanceAdviser) -> int
 
   
@@ -101,10 +109,11 @@ class PerformanceAdviser(object,IDisposable):
 
    Returns: Number of performance adviser rules in the list.
   """
-  pass
- @staticmethod
- def GetPerformanceAdviser():
-  """
+        pass
+
+    @staticmethod
+    def GetPerformanceAdviser():
+        """
   GetPerformanceAdviser() -> PerformanceAdviser
 
   
@@ -113,9 +122,10 @@ class PerformanceAdviser(object,IDisposable):
 
    Returns: The only instance of PerformanceAdviser in the Application.
   """
-  pass
- def GetRuleDescription(self,*__args):
-  """
+        pass
+
+    def GetRuleDescription(self, *__args):
+        """
   GetRuleDescription(self: PerformanceAdviser,id: PerformanceAdviserRuleId) -> str
 
   
@@ -140,9 +150,10 @@ class PerformanceAdviser(object,IDisposable):
 
    Returns: The description of the rule.
   """
-  pass
- def GetRuleId(self,index):
-  """
+        pass
+
+    def GetRuleId(self, index):
+        """
   GetRuleId(self: PerformanceAdviser,index: int) -> PerformanceAdviserRuleId
 
   
@@ -155,9 +166,10 @@ class PerformanceAdviser(object,IDisposable):
 
    Returns: The rule id.
   """
-  pass
- def GetRuleName(self,*__args):
-  """
+        pass
+
+    def GetRuleName(self, *__args):
+        """
   GetRuleName(self: PerformanceAdviser,id: PerformanceAdviserRuleId) -> str
 
   
@@ -182,9 +194,10 @@ class PerformanceAdviser(object,IDisposable):
 
    Returns: The name of the rule.
   """
-  pass
- def IsRuleEnabled(self,*__args):
-  """
+        pass
+
+    def IsRuleEnabled(self, *__args):
+        """
   IsRuleEnabled(self: PerformanceAdviser,index: int) -> bool
 
   
@@ -209,9 +222,10 @@ class PerformanceAdviser(object,IDisposable):
 
    Returns: True if rule is disabled,false otherwise.
   """
-  pass
- def PostWarning(self,message):
-  """
+        pass
+
+    def PostWarning(self, message):
+        """
   PostWarning(self: PerformanceAdviser,message: FailureMessage)
 
    Reports a problem detected during execution of a rule.
@@ -220,12 +234,14 @@ class PerformanceAdviser(object,IDisposable):
 
    message: Warning describing the problem detected by a rule.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: PerformanceAdviser,disposing: bool) """
-  pass
- def SetRuleEnabled(self,*__args):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: PerformanceAdviser,disposing: bool) """
+        pass
+
+    def SetRuleEnabled(self, *__args):
+        """
   SetRuleEnabled(self: PerformanceAdviser,index: int,enabled: bool)
 
    Retrieves an enabled/disabled status for the given rule.
@@ -246,9 +262,10 @@ class PerformanceAdviser(object,IDisposable):
 
    enabled: True enables the rule,false disables.
   """
-  pass
- def WillRuleCheckElements(self,*__args):
-  """
+        pass
+
+    def WillRuleCheckElements(self, *__args):
+        """
   WillRuleCheckElements(self: PerformanceAdviser,id: PerformanceAdviserRuleId) -> bool
 
   
@@ -273,21 +290,28 @@ class PerformanceAdviser(object,IDisposable):
 
    Returns: True if rule needs to be executed on individual elements.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -296,5 +320,3 @@ Get: IsValidObject(self: PerformanceAdviser) -> bool
 
 
 """
-
-

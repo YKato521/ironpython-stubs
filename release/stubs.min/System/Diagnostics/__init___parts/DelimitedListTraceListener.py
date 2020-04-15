@@ -1,5 +1,5 @@
-class DelimitedListTraceListener(TextWriterTraceListener,IDisposable):
- """
+class DelimitedListTraceListener(TextWriterTraceListener, IDisposable):
+    """
  Directs tracing or debugging output to a text writer,such as a stream writer,or to a stream,such as a file stream.
 
  
@@ -16,8 +16,9 @@ class DelimitedListTraceListener(TextWriterTraceListener,IDisposable):
 
  DelimitedListTraceListener(fileName: str,name: str)
  """
- def Dispose(self):
-  """
+
+    def Dispose(self):
+        """
   Dispose(self: TextWriterTraceListener,disposing: bool)
 
    Disposes this System.Diagnostics.TextWriterTraceListener object.
@@ -28,9 +29,10 @@ class DelimitedListTraceListener(TextWriterTraceListener,IDisposable):
 
     System.Diagnostics.TextWriterTraceListener.Dispose(System.Boolean) has no effect.
   """
-  pass
- def GetSupportedAttributes(self,*args):
-  """
+        pass
+
+    def GetSupportedAttributes(self, *args):
+        """
   GetSupportedAttributes(self: DelimitedListTraceListener) -> Array[str]
 
   
@@ -39,9 +41,10 @@ class DelimitedListTraceListener(TextWriterTraceListener,IDisposable):
 
    Returns: A string array that contains the single value "delimiter".
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -72,9 +75,10 @@ class DelimitedListTraceListener(TextWriterTraceListener,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def TraceData(self,eventCache,source,eventType,id,data):
-  """
+        pass
+
+    def TraceData(self, eventCache, source, eventType, id, data):
+        """
   TraceData(self: DelimitedListTraceListener,eventCache: TraceEventCache,source: str,eventType: TraceEventType,id: int,*data: Array[object])
 
    Writes trace information,an array of data objects,and event information to the output file or 
@@ -135,9 +139,10 @@ class DelimitedListTraceListener(TextWriterTraceListener,IDisposable):
 
    data: A data object to write to the output file or stream.
   """
-  pass
- def TraceEvent(self,eventCache,source,eventType,id,*__args):
-  """
+        pass
+
+    def TraceEvent(self, eventCache, source, eventType, id, *__args):
+        """
   TraceEvent(self: DelimitedListTraceListener,eventCache: TraceEventCache,source: str,eventType: TraceEventType,id: int,message: str)
 
    Writes trace information,a message,and event information to the output file or stream.
@@ -204,38 +209,43 @@ class DelimitedListTraceListener(TextWriterTraceListener,IDisposable):
 
    args: An array containing zero or more objects to format.
   """
-  pass
- def WriteIndent(self,*args):
-  """
+        pass
+
+    def WriteIndent(self, *args):
+        """
   WriteIndent(self: TraceListener)
 
    Writes the indent to the listener you create when you implement this class,and resets the 
 
     System.Diagnostics.TraceListener.NeedIndent property to false.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,stream: Stream)
 
   __new__(cls: type,stream: Stream,name: str)
@@ -248,9 +258,10 @@ class DelimitedListTraceListener(TextWriterTraceListener,IDisposable):
 
   __new__(cls: type,fileName: str,name: str)
   """
-  pass
- Delimiter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the delimiter for the delimited list.
+        pass
+
+    Delimiter = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the delimiter for the delimited list.
 
 
 
@@ -262,11 +273,11 @@ Set: Delimiter(self: DelimitedListTraceListener)=value
 
 """
 
- NeedIndent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether to indent the output.
+    NeedIndent = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether to indent the output.
 
 
 
 """
-
-

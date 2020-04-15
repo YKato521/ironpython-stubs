@@ -1,8 +1,9 @@
-class FeatureSupport(object,IFeatureSupport):
- """ Provides static methods for retrieving feature information from the current system. """
- @staticmethod
- def GetVersionPresent(*__args):
-  """
+class FeatureSupport(object, IFeatureSupport):
+    """ Provides static methods for retrieving feature information from the current system. """
+
+    @staticmethod
+    def GetVersionPresent(*__args):
+        """
   GetVersionPresent(self: FeatureSupport,feature: object) -> Version
 
   
@@ -45,10 +46,11 @@ class FeatureSupport(object,IFeatureSupport):
 
     null if the feature is not installed.
   """
-  pass
- @staticmethod
- def IsPresent(*__args):
-  """
+        pass
+
+    @staticmethod
+    def IsPresent(*__args):
+        """
   IsPresent(self: FeatureSupport,feature: object) -> bool
 
   
@@ -143,10 +145,12 @@ class FeatureSupport(object,IFeatureSupport):
 
     specified minimum number.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass

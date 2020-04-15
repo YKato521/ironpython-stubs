@@ -1,11 +1,12 @@
 class IControllableDropHandler(IDropHandler):
- """
+    """
  An interface to be executed when custom data is dragged and dropped onto the Revit user interface.
 
     This interface is different from IDropHandler in that it allows the handler to verify whether the drop event can be executed on the given view.
  """
- def CanExecute(self,document,data,dropViewId):
-  """
+
+    def CanExecute(self, document, data, dropViewId):
+        """
   CanExecute(self: IControllableDropHandler,document: UIDocument,data: object,dropViewId: ElementId) -> bool
 
   
@@ -30,7 +31,8 @@ class IControllableDropHandler(IDropHandler):
 
     cancel the activation and the drop execution.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

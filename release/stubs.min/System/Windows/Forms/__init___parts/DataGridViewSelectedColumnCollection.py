@@ -1,14 +1,18 @@
-class DataGridViewSelectedColumnCollection(BaseCollection,ICollection,IEnumerable,IList):
- """ Represents a collection of System.Windows.Forms.DataGridViewColumn objects that are selected in a System.Windows.Forms.DataGridView. """
- def Clear(self):
-  """
+class DataGridViewSelectedColumnCollection(
+    BaseCollection, ICollection, IEnumerable, IList
+):
+    """ Represents a collection of System.Windows.Forms.DataGridViewColumn objects that are selected in a System.Windows.Forms.DataGridView. """
+
+    def Clear(self):
+        """
   Clear(self: DataGridViewSelectedColumnCollection)
 
    Clears the collection.
   """
-  pass
- def Contains(self,dataGridViewColumn):
-  """
+        pass
+
+    def Contains(self, dataGridViewColumn):
+        """
   Contains(self: DataGridViewSelectedColumnCollection,dataGridViewColumn: DataGridViewColumn) -> bool
 
   
@@ -25,9 +29,10 @@ class DataGridViewSelectedColumnCollection(BaseCollection,ICollection,IEnumerabl
 
    Returns: true if the dataGridViewColumn parameter is in the collection; otherwise,false.
   """
-  pass
- def CopyTo(self,*__args):
-  """
+        pass
+
+    def CopyTo(self, *__args):
+        """
   CopyTo(self: DataGridViewSelectedColumnCollection,array: Array[DataGridViewColumn],index: int)
 
    Copies the elements of the collection to the specified array,starting at the specified index.
@@ -42,9 +47,10 @@ class DataGridViewSelectedColumnCollection(BaseCollection,ICollection,IEnumerabl
 
    index: The zero-based index in the array at which copying begins.
   """
-  pass
- def Insert(self,index,dataGridViewColumn):
-  """
+        pass
+
+    def Insert(self, index, dataGridViewColumn):
+        """
   Insert(self: DataGridViewSelectedColumnCollection,index: int,dataGridViewColumn: DataGridViewColumn)
 
    Inserts a column into the collection at the specified position.
@@ -57,9 +63,10 @@ class DataGridViewSelectedColumnCollection(BaseCollection,ICollection,IEnumerabl
 
     System.Windows.Forms.DataGridViewSelectedColumnCollection.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -90,9 +97,10 @@ class DataGridViewSelectedColumnCollection(BaseCollection,ICollection,IEnumerabl
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IList,value: object) -> bool
 
   
@@ -105,19 +113,22 @@ class DataGridViewSelectedColumnCollection(BaseCollection,ICollection,IEnumerabl
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- List=property(lambda self: object(),lambda self,v: None,lambda self: None)
+        pass
 
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
 
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    List = property(lambda self: object(), lambda self, v: None, lambda self: None)

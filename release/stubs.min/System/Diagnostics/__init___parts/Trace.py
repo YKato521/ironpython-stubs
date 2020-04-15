@@ -1,8 +1,9 @@
 class Trace(object):
- """ Provides a set of methods and properties that help you trace the execution of your code. This class cannot be inherited. """
- @staticmethod
- def Assert(condition,message=None,detailMessage=None):
-  """
+    """ Provides a set of methods and properties that help you trace the execution of your code. This class cannot be inherited. """
+
+    @staticmethod
+    def Assert(condition, message=None, detailMessage=None):
+        """
   Assert(condition: bool,message: str,detailMessage: str)
 
    Checks for a condition; if the condition is false,outputs two specified messages and displays a 
@@ -55,18 +56,20 @@ class Trace(object):
 
     and the message box is not displayed.
   """
-  pass
- @staticmethod
- def Close():
-  """
+        pass
+
+    @staticmethod
+    def Close():
+        """
   Close()
 
    Flushes the output buffer,and then closes the System.Diagnostics.Trace.Listeners.
   """
-  pass
- @staticmethod
- def Fail(message,detailMessage=None):
-  """
+        pass
+
+    @staticmethod
+    def Fail(message, detailMessage=None):
+        """
   Fail(message: str,detailMessage: str)
 
    Emits an error message,and a detailed error message.
@@ -85,36 +88,40 @@ class Trace(object):
 
    message: A message to emit.
   """
-  pass
- @staticmethod
- def Flush():
-  """
+        pass
+
+    @staticmethod
+    def Flush():
+        """
   Flush()
 
    Flushes the output buffer,and causes buffered data to be written to the 
 
     System.Diagnostics.Trace.Listeners.
   """
-  pass
- @staticmethod
- def Indent():
-  """
+        pass
+
+    @staticmethod
+    def Indent():
+        """
   Indent()
 
    Increases the current System.Diagnostics.Trace.IndentLevel by one.
   """
-  pass
- @staticmethod
- def Refresh():
-  """
+        pass
+
+    @staticmethod
+    def Refresh():
+        """
   Refresh()
 
    Refreshes the trace configuration data.
   """
-  pass
- @staticmethod
- def TraceError(*__args):
-  """
+        pass
+
+    @staticmethod
+    def TraceError(*__args):
+        """
   TraceError(format: str,*args: Array[object])
 
    Writes an error message to the trace listeners in the System.Diagnostics.Trace.Listeners 
@@ -145,10 +152,11 @@ class Trace(object):
 
    message: The informative message to write.
   """
-  pass
- @staticmethod
- def TraceInformation(*__args):
-  """
+        pass
+
+    @staticmethod
+    def TraceInformation(*__args):
+        """
   TraceInformation(format: str,*args: Array[object])
 
    Writes an informational message to the trace listeners in the System.Diagnostics.Trace.Listeners 
@@ -179,10 +187,11 @@ class Trace(object):
 
    message: The informative message to write.
   """
-  pass
- @staticmethod
- def TraceWarning(*__args):
-  """
+        pass
+
+    @staticmethod
+    def TraceWarning(*__args):
+        """
   TraceWarning(format: str,*args: Array[object])
 
    Writes a warning message to the trace listeners in the System.Diagnostics.Trace.Listeners 
@@ -213,18 +222,20 @@ class Trace(object):
 
    message: The informative message to write.
   """
-  pass
- @staticmethod
- def Unindent():
-  """
+        pass
+
+    @staticmethod
+    def Unindent():
+        """
   Unindent()
 
    Decreases the current System.Diagnostics.Trace.IndentLevel by one.
   """
-  pass
- @staticmethod
- def Write(*__args):
-  """
+        pass
+
+    @staticmethod
+    def Write(*__args):
+        """
   Write(message: str,category: str)
 
    Writes a category name and a message to the trace listeners in the 
@@ -273,10 +284,11 @@ class Trace(object):
 
    value: An System.Object whose name is sent to the System.Diagnostics.Trace.Listeners.
   """
-  pass
- @staticmethod
- def WriteIf(condition,*__args):
-  """
+        pass
+
+    @staticmethod
+    def WriteIf(condition, *__args):
+        """
   WriteIf(condition: bool,message: str,category: str)
 
    Writes a category name and message to the trace listeners in the 
@@ -337,10 +349,11 @@ class Trace(object):
 
    value: An System.Object whose name is sent to the System.Diagnostics.Trace.Listeners.
   """
-  pass
- @staticmethod
- def WriteLine(*__args):
-  """
+        pass
+
+    @staticmethod
+    def WriteLine(*__args):
+        """
   WriteLine(message: str,category: str)
 
    Writes a category name and message to the trace listeners in the 
@@ -389,10 +402,11 @@ class Trace(object):
 
    value: An System.Object whose name is sent to the System.Diagnostics.Trace.Listeners.
   """
-  pass
- @staticmethod
- def WriteLineIf(condition,*__args):
-  """
+        pass
+
+    @staticmethod
+    def WriteLineIf(condition, *__args):
+        """
   WriteLineIf(condition: bool,message: str,category: str)
 
    Writes a category name and message to the trace listeners in the 
@@ -453,11 +467,11 @@ class Trace(object):
 
    value: An System.Object whose name is sent to the System.Diagnostics.Trace.Listeners.
   """
-  pass
- AutoFlush=False
- CorrelationManager=None
- IndentLevel=0
- IndentSize=4
- Listeners=None
- UseGlobalLock=True
+        pass
 
+    AutoFlush = False
+    CorrelationManager = None
+    IndentLevel = 0
+    IndentSize = 4
+    Listeners = None
+    UseGlobalLock = True

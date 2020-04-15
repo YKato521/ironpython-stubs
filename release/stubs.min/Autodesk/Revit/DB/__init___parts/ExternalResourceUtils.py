@@ -1,8 +1,9 @@
 class ExternalResourceUtils(object):
- """ A utility class containing functions related to external resource references. """
- @staticmethod
- def GetAllExternalResourceReferences(document,resourceType=None):
-  """
+    """ A utility class containing functions related to external resource references. """
+
+    @staticmethod
+    def GetAllExternalResourceReferences(document, resourceType=None):
+        """
   GetAllExternalResourceReferences(document: Document) -> ISet[ElementId]
 
   
@@ -33,8 +34,8 @@ class ExternalResourceUtils(object):
 
    Returns: The ids of all elements which refer to external resources of the specified type.
   """
-  pass
- __all__=[
-  'GetAllExternalResourceReferences',
- ]
+        pass
 
+    __all__ = [
+        "GetAllExternalResourceReferences",
+    ]

@@ -1,13 +1,14 @@
 class BooleanConverter(TypeConverter):
- """
+    """
  Provides a type converter to convert System.Boolean objects to and from various other representations.
 
  
 
  BooleanConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: BooleanConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -26,9 +27,10 @@ class BooleanConverter(TypeConverter):
 
    Returns: true if this object can perform the conversion; otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: BooleanConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -45,9 +47,10 @@ class BooleanConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def GetStandardValues(self,context=None):
-  """
+        pass
+
+    def GetStandardValues(self, context=None):
+        """
   GetStandardValues(self: BooleanConverter,context: ITypeDescriptorContext) -> StandardValuesCollection
 
   
@@ -62,9 +65,10 @@ class BooleanConverter(TypeConverter):
 
     valid values.
   """
-  pass
- def GetStandardValuesExclusive(self,context=None):
-  """
+        pass
+
+    def GetStandardValuesExclusive(self, context=None):
+        """
   GetStandardValuesExclusive(self: BooleanConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -87,9 +91,10 @@ class BooleanConverter(TypeConverter):
 
     text) is an exhaustive list of possible values. This method never returns false.
   """
-  pass
- def GetStandardValuesSupported(self,context=None):
-  """
+        pass
+
+    def GetStandardValuesSupported(self, context=None):
+        """
   GetStandardValuesSupported(self: BooleanConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -112,4 +117,4 @@ class BooleanConverter(TypeConverter):
 
     returns false.
   """
-  pass
+        pass

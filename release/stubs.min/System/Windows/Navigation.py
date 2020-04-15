@@ -8,11 +8,13 @@
 # no functions
 # classes
 
+
 class BaseUriHelper(object):
- """ Provides a method to resolve relative uniform resource identifiers (URIs) with respect to the base URI of a container,such as a System.Windows.Controls.Frame. """
- @staticmethod
- def GetBaseUri(element):
-  """
+    """ Provides a method to resolve relative uniform resource identifiers (URIs) with respect to the base URI of a container,such as a System.Windows.Controls.Frame. """
+
+    @staticmethod
+    def GetBaseUri(element):
+        """
   GetBaseUri(element: DependencyObject) -> Uri
 
   
@@ -25,11 +27,10 @@ class BaseUriHelper(object):
 
    Returns: The base URI of a given element.
   """
-  pass
- BaseUriProperty=None
- __all__=[
-  'BaseUriProperty',
-  'GetBaseUri',
- ]
+        pass
 
-
+    BaseUriProperty = None
+    __all__ = [
+        "BaseUriProperty",
+        "GetBaseUri",
+    ]

@@ -1,5 +1,5 @@
 class ProcessStartInfo(object):
- """
+    """
  Specifies a set of values that are used when you start a process.
 
  
@@ -10,18 +10,20 @@ class ProcessStartInfo(object):
 
  ProcessStartInfo(fileName: str,arguments: str)
  """
- @staticmethod
- def __new__(self,fileName=None,arguments=None):
-  """
+
+    @staticmethod
+    def __new__(self, fileName=None, arguments=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,fileName: str)
 
   __new__(cls: type,fileName: str,arguments: str)
   """
-  pass
- Arguments=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the set of command-line arguments to use when starting the application.
+        pass
+
+    Arguments = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the set of command-line arguments to use when starting the application.
 
 
 
@@ -33,8 +35,10 @@ Set: Arguments(self: ProcessStartInfo)=value
 
 """
 
- CreateNoWindow=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether to start the process in a new window.
+    CreateNoWindow = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether to start the process in a new window.
 
 
 
@@ -46,8 +50,8 @@ Set: CreateNoWindow(self: ProcessStartInfo)=value
 
 """
 
- Domain=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that identifies the domain to use when starting the process.
+    Domain = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value that identifies the domain to use when starting the process.
 
 
 
@@ -59,15 +63,19 @@ Set: Domain(self: ProcessStartInfo)=value
 
 """
 
- Environment=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Environment(self: ProcessStartInfo) -> IDictionary[str,str]
+    Environment = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: Environment(self: ProcessStartInfo) -> IDictionary[str,str]
 
 
 
 """
 
- EnvironmentVariables=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets search paths for files,directories for temporary files,application-specific options,and other similar information.
+    EnvironmentVariables = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets search paths for files,directories for temporary files,application-specific options,and other similar information.
 
 
 
@@ -77,8 +85,10 @@ Get: EnvironmentVariables(self: ProcessStartInfo) -> StringDictionary
 
 """
 
- ErrorDialog=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether an error dialog box is displayed to the user if the process cannot be started.
+    ErrorDialog = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether an error dialog box is displayed to the user if the process cannot be started.
 
 
 
@@ -90,8 +100,10 @@ Set: ErrorDialog(self: ProcessStartInfo)=value
 
 """
 
- ErrorDialogParentHandle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the window handle to use when an error dialog box is shown for a process that cannot be started.
+    ErrorDialogParentHandle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the window handle to use when an error dialog box is shown for a process that cannot be started.
 
 
 
@@ -103,8 +115,8 @@ Set: ErrorDialogParentHandle(self: ProcessStartInfo)=value
 
 """
 
- FileName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the application or document to start.
+    FileName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the application or document to start.
 
 
 
@@ -116,8 +128,10 @@ Set: FileName(self: ProcessStartInfo)=value
 
 """
 
- LoadUserProfile=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether the Windows user profile is to be loaded from the registry.
+    LoadUserProfile = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether the Windows user profile is to be loaded from the registry.
 
 
 
@@ -129,8 +143,8 @@ Set: LoadUserProfile(self: ProcessStartInfo)=value
 
 """
 
- Password=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a secure string that contains the user password to use when starting the process.
+    Password = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a secure string that contains the user password to use when starting the process.
 
 
 
@@ -142,8 +156,10 @@ Set: Password(self: ProcessStartInfo)=value
 
 """
 
- PasswordInClearText=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: PasswordInClearText(self: ProcessStartInfo) -> str
+    PasswordInClearText = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: PasswordInClearText(self: ProcessStartInfo) -> str
 
 
 
@@ -151,8 +167,10 @@ Set: PasswordInClearText(self: ProcessStartInfo)=value
 
 """
 
- RedirectStandardError=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether the error output of an application is written to the System.Diagnostics.Process.StandardError stream.
+    RedirectStandardError = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether the error output of an application is written to the System.Diagnostics.Process.StandardError stream.
 
 
 
@@ -164,8 +182,10 @@ Set: RedirectStandardError(self: ProcessStartInfo)=value
 
 """
 
- RedirectStandardInput=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the input for an application is read from the System.Diagnostics.Process.StandardInput stream.
+    RedirectStandardInput = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the input for an application is read from the System.Diagnostics.Process.StandardInput stream.
 
 
 
@@ -177,8 +197,10 @@ Set: RedirectStandardInput(self: ProcessStartInfo)=value
 
 """
 
- RedirectStandardOutput=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether the output of an application is written to the System.Diagnostics.Process.StandardOutput stream.
+    RedirectStandardOutput = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether the output of an application is written to the System.Diagnostics.Process.StandardOutput stream.
 
 
 
@@ -190,8 +212,10 @@ Set: RedirectStandardOutput(self: ProcessStartInfo)=value
 
 """
 
- StandardErrorEncoding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the preferred encoding for error output.
+    StandardErrorEncoding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the preferred encoding for error output.
 
 
 
@@ -203,8 +227,10 @@ Set: StandardErrorEncoding(self: ProcessStartInfo)=value
 
 """
 
- StandardOutputEncoding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the preferred encoding for standard output.
+    StandardOutputEncoding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the preferred encoding for standard output.
 
 
 
@@ -216,8 +242,8 @@ Set: StandardOutputEncoding(self: ProcessStartInfo)=value
 
 """
 
- UserName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the user name to be used when starting the process.
+    UserName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the user name to be used when starting the process.
 
 
 
@@ -229,8 +255,10 @@ Set: UserName(self: ProcessStartInfo)=value
 
 """
 
- UseShellExecute=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether to use the operating system shell to start the process.
+    UseShellExecute = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether to use the operating system shell to start the process.
 
 
 
@@ -242,8 +270,8 @@ Set: UseShellExecute(self: ProcessStartInfo)=value
 
 """
 
- Verb=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the verb to use when opening the application or document specified by the System.Diagnostics.ProcessStartInfo.FileName property.
+    Verb = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the verb to use when opening the application or document specified by the System.Diagnostics.ProcessStartInfo.FileName property.
 
 
 
@@ -255,8 +283,8 @@ Set: Verb(self: ProcessStartInfo)=value
 
 """
 
- Verbs=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the set of verbs associated with the type of file specified by the System.Diagnostics.ProcessStartInfo.FileName property.
+    Verbs = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the set of verbs associated with the type of file specified by the System.Diagnostics.ProcessStartInfo.FileName property.
 
 
 
@@ -266,8 +294,10 @@ Get: Verbs(self: ProcessStartInfo) -> Array[str]
 
 """
 
- WindowStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the window state to use when the process is started.
+    WindowStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the window state to use when the process is started.
 
 
 
@@ -279,8 +309,10 @@ Set: WindowStyle(self: ProcessStartInfo)=value
 
 """
 
- WorkingDirectory=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the initial directory for the process to be started.
+    WorkingDirectory = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the initial directory for the process to be started.
 
 
 
@@ -291,5 +323,3 @@ Get: WorkingDirectory(self: ProcessStartInfo) -> str
 Set: WorkingDirectory(self: ProcessStartInfo)=value
 
 """
-
-

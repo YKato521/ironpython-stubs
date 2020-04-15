@@ -1,7 +1,8 @@
 class _ConstructorInfo:
- """ Exposes the public members of the System.Reflection.ConstructorInfo class to unmanaged code. """
- def Equals(self,other):
-  """
+    """ Exposes the public members of the System.Reflection.ConstructorInfo class to unmanaged code. """
+
+    def Equals(self, other):
+        """
   Equals(self: _ConstructorInfo,other: object) -> bool
 
   
@@ -18,9 +19,10 @@ class _ConstructorInfo:
 
    Returns: true if the specified System.Object is equal to the current System.Object; otherwise,false.
   """
-  pass
- def GetCustomAttributes(self,*__args):
-  """
+        pass
+
+    def GetCustomAttributes(self, *__args):
+        """
   GetCustomAttributes(self: _ConstructorInfo,inherit: bool) -> Array[object]
 
   
@@ -65,9 +67,10 @@ class _ConstructorInfo:
 
     attributes have been applied.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: _ConstructorInfo) -> int
 
   
@@ -76,9 +79,10 @@ class _ConstructorInfo:
 
    Returns: The hash code for the current instance.
   """
-  pass
- def GetIDsOfNames(self,riid,rgszNames,cNames,lcid,rgDispId):
-  """
+        pass
+
+    def GetIDsOfNames(self, riid, rgszNames, cNames, lcid, rgDispId):
+        """
   GetIDsOfNames(self: _ConstructorInfo,riid: Guid,rgszNames: IntPtr,cNames: UInt32,lcid: UInt32,rgDispId: IntPtr) -> Guid
 
   
@@ -97,9 +101,10 @@ class _ConstructorInfo:
 
    rgDispId: Caller-allocated array that receives the IDs corresponding to the names.
   """
-  pass
- def GetMethodImplementationFlags(self):
-  """
+        pass
+
+    def GetMethodImplementationFlags(self):
+        """
   GetMethodImplementationFlags(self: _ConstructorInfo) -> MethodImplAttributes
 
   
@@ -112,9 +117,10 @@ class _ConstructorInfo:
 
    Returns: The System.Reflection.MethodImplAttributes flags.
   """
-  pass
- def GetParameters(self):
-  """
+        pass
+
+    def GetParameters(self):
+        """
   GetParameters(self: _ConstructorInfo) -> Array[ParameterInfo]
 
   
@@ -129,9 +135,10 @@ class _ConstructorInfo:
 
     signature of the method (or constructor) reflected by this instance.
   """
-  pass
- def GetType(self):
-  """
+        pass
+
+    def GetType(self):
+        """
   GetType(self: _ConstructorInfo) -> Type
 
   
@@ -140,9 +147,10 @@ class _ConstructorInfo:
 
    Returns: A System.Type object.
   """
-  pass
- def GetTypeInfo(self,iTInfo,lcid,ppTInfo):
-  """
+        pass
+
+    def GetTypeInfo(self, iTInfo, lcid, ppTInfo):
+        """
   GetTypeInfo(self: _ConstructorInfo,iTInfo: UInt32,lcid: UInt32,ppTInfo: IntPtr)
 
    Retrieves the type information for an object,which can then be used to get the type information 
@@ -159,18 +167,30 @@ class _ConstructorInfo:
 
    ppTInfo: Receives a pointer to the requested type information object.
   """
-  pass
- def GetTypeInfoCount(self,pcTInfo):
-  """
+        pass
+
+    def GetTypeInfoCount(self, pcTInfo):
+        """
   GetTypeInfoCount(self: _ConstructorInfo) -> UInt32
 
   
 
    Retrieves the number of type information interfaces that an object provides (either 0 or 1).
   """
-  pass
- def Invoke(self,dispIdMember,riid,lcid,wFlags,pDispParams,pVarResult,pExcepInfo,puArgErr):
-  """
+        pass
+
+    def Invoke(
+        self,
+        dispIdMember,
+        riid,
+        lcid,
+        wFlags,
+        pDispParams,
+        pVarResult,
+        pExcepInfo,
+        puArgErr,
+    ):
+        """
   Invoke(self: _ConstructorInfo,dispIdMember: UInt32,riid: Guid,lcid: UInt32,wFlags: Int16,pDispParams: IntPtr,pVarResult: IntPtr,pExcepInfo: IntPtr,puArgErr: IntPtr) -> Guid
 
   
@@ -199,9 +219,10 @@ class _ConstructorInfo:
 
    puArgErr: The index of the first argument that has an error.
   """
-  pass
- def Invoke_2(self,obj,invokeAttr,binder,parameters,culture):
-  """
+        pass
+
+    def Invoke_2(self, obj, invokeAttr, binder, parameters, culture):
+        """
   Invoke_2(self: _ConstructorInfo,obj: object,invokeAttr: BindingFlags,binder: Binder,parameters: Array[object],culture: CultureInfo) -> object
 
   
@@ -250,9 +271,10 @@ class _ConstructorInfo:
 
    Returns: An instance of the class associated with the constructor.
   """
-  pass
- def Invoke_3(self,obj,parameters):
-  """
+        pass
+
+    def Invoke_3(self, obj, parameters):
+        """
   Invoke_3(self: _ConstructorInfo,obj: object,parameters: Array[object]) -> object
 
   
@@ -287,9 +309,10 @@ class _ConstructorInfo:
 
    Returns: An instance of the class associated with the constructor.
   """
-  pass
- def Invoke_4(self,invokeAttr,binder,parameters,culture):
-  """
+        pass
+
+    def Invoke_4(self, invokeAttr, binder, parameters, culture):
+        """
   Invoke_4(self: _ConstructorInfo,invokeAttr: BindingFlags,binder: Binder,parameters: Array[object],culture: CultureInfo) -> object
 
   
@@ -336,9 +359,10 @@ class _ConstructorInfo:
 
    Returns: An instance of the class associated with the constructor.
   """
-  pass
- def Invoke_5(self,parameters):
-  """
+        pass
+
+    def Invoke_5(self, parameters):
+        """
   Invoke_5(self: _ConstructorInfo,parameters: Array[object]) -> object
 
   
@@ -367,9 +391,10 @@ class _ConstructorInfo:
 
    Returns: An instance of the class associated with the constructor.
   """
-  pass
- def IsDefined(self,attributeType,inherit):
-  """
+        pass
+
+    def IsDefined(self, attributeType, inherit):
+        """
   IsDefined(self: _ConstructorInfo,attributeType: Type,inherit: bool) -> bool
 
   
@@ -388,9 +413,10 @@ class _ConstructorInfo:
 
    Returns: true if one or more instances of attributeType is applied to this member; otherwise false.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: _ConstructorInfo) -> str
 
   
@@ -399,17 +425,23 @@ class _ConstructorInfo:
 
    Returns: A string that represents the current System.Object.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- Attributes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.MethodBase.Attributes property.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Attributes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.MethodBase.Attributes property.
 
 
 
@@ -419,8 +451,10 @@ Get: Attributes(self: _ConstructorInfo) -> MethodAttributes
 
 """
 
- CallingConvention=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.MethodBase.CallingConvention property.
+    CallingConvention = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.MethodBase.CallingConvention property.
 
 
 
@@ -430,8 +464,10 @@ Get: CallingConvention(self: _ConstructorInfo) -> CallingConventions
 
 """
 
- DeclaringType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.MemberInfo.DeclaringType property.
+    DeclaringType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.MemberInfo.DeclaringType property.
 
 
 
@@ -441,8 +477,10 @@ Get: DeclaringType(self: _ConstructorInfo) -> Type
 
 """
 
- IsAbstract=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.MethodBase.IsAbstract property.
+    IsAbstract = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.MethodBase.IsAbstract property.
 
 
 
@@ -452,8 +490,10 @@ Get: IsAbstract(self: _ConstructorInfo) -> bool
 
 """
 
- IsAssembly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.MethodBase.IsAssembly property.
+    IsAssembly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.MethodBase.IsAssembly property.
 
 
 
@@ -463,8 +503,10 @@ Get: IsAssembly(self: _ConstructorInfo) -> bool
 
 """
 
- IsConstructor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.MethodBase.IsConstructor property.
+    IsConstructor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.MethodBase.IsConstructor property.
 
 
 
@@ -474,8 +516,8 @@ Get: IsConstructor(self: _ConstructorInfo) -> bool
 
 """
 
- IsFamily=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.MethodBase.IsFamily property.
+    IsFamily = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Reflection.MethodBase.IsFamily property.
 
 
 
@@ -485,8 +527,10 @@ Get: IsFamily(self: _ConstructorInfo) -> bool
 
 """
 
- IsFamilyAndAssembly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.MethodBase.IsFamilyAndAssembly property.
+    IsFamilyAndAssembly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.MethodBase.IsFamilyAndAssembly property.
 
 
 
@@ -496,8 +540,10 @@ Get: IsFamilyAndAssembly(self: _ConstructorInfo) -> bool
 
 """
 
- IsFamilyOrAssembly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.MethodBase.IsFamilyOrAssembly property.
+    IsFamilyOrAssembly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.MethodBase.IsFamilyOrAssembly property.
 
 
 
@@ -507,8 +553,8 @@ Get: IsFamilyOrAssembly(self: _ConstructorInfo) -> bool
 
 """
 
- IsFinal=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.MethodBase.IsFinal property.
+    IsFinal = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Reflection.MethodBase.IsFinal property.
 
 
 
@@ -518,8 +564,10 @@ Get: IsFinal(self: _ConstructorInfo) -> bool
 
 """
 
- IsHideBySig=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.MethodBase.IsHideBySig property.
+    IsHideBySig = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.MethodBase.IsHideBySig property.
 
 
 
@@ -529,8 +577,8 @@ Get: IsHideBySig(self: _ConstructorInfo) -> bool
 
 """
 
- IsPrivate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.MethodBase.IsPrivate property.
+    IsPrivate = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Reflection.MethodBase.IsPrivate property.
 
 
 
@@ -540,8 +588,8 @@ Get: IsPrivate(self: _ConstructorInfo) -> bool
 
 """
 
- IsPublic=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.MethodBase.IsPublic property.
+    IsPublic = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Reflection.MethodBase.IsPublic property.
 
 
 
@@ -551,8 +599,10 @@ Get: IsPublic(self: _ConstructorInfo) -> bool
 
 """
 
- IsSpecialName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.MethodBase.IsSpecialName property.
+    IsSpecialName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.MethodBase.IsSpecialName property.
 
 
 
@@ -562,8 +612,8 @@ Get: IsSpecialName(self: _ConstructorInfo) -> bool
 
 """
 
- IsStatic=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.MethodBase.IsStatic property.
+    IsStatic = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Reflection.MethodBase.IsStatic property.
 
 
 
@@ -573,8 +623,8 @@ Get: IsStatic(self: _ConstructorInfo) -> bool
 
 """
 
- IsVirtual=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.MethodBase.IsVirtual property.
+    IsVirtual = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Reflection.MethodBase.IsVirtual property.
 
 
 
@@ -584,8 +634,10 @@ Get: IsVirtual(self: _ConstructorInfo) -> bool
 
 """
 
- MemberType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.ConstructorInfo.MemberType property.
+    MemberType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.ConstructorInfo.MemberType property.
 
 
 
@@ -595,8 +647,10 @@ Get: MemberType(self: _ConstructorInfo) -> MemberTypes
 
 """
 
- MethodHandle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.MethodBase.MethodHandle property.
+    MethodHandle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.MethodBase.MethodHandle property.
 
 
 
@@ -606,8 +660,8 @@ Get: MethodHandle(self: _ConstructorInfo) -> RuntimeMethodHandle
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.MemberInfo.Name property.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Reflection.MemberInfo.Name property.
 
 
 
@@ -617,8 +671,10 @@ Get: Name(self: _ConstructorInfo) -> str
 
 """
 
- ReflectedType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.MemberInfo.ReflectedType property.
+    ReflectedType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Reflection.MemberInfo.ReflectedType property.
 
 
 
@@ -627,5 +683,3 @@ Get: ReflectedType(self: _ConstructorInfo) -> Type
 
 
 """
-
-

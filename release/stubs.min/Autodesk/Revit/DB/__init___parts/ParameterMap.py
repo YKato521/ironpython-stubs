@@ -1,20 +1,22 @@
-class ParameterMap(APIObject,IDisposable,IEnumerable):
- """
+class ParameterMap(APIObject, IDisposable, IEnumerable):
+    """
  A map that can contain a mapping of a parameter name (a String) to a parameter.
 
  
 
  ParameterMap()
  """
- def Clear(self):
-  """
+
+    def Clear(self):
+        """
   Clear(self: ParameterMap)
 
    Removes every item from the map,rendering it empty.
   """
-  pass
- def Contains(self,key):
-  """
+        pass
+
+    def Contains(self, key):
+        """
   Contains(self: ParameterMap,key: str) -> bool
 
   
@@ -27,12 +29,14 @@ class ParameterMap(APIObject,IDisposable,IEnumerable):
 
    Returns: The Contains method returns True if the key is within the map,otherwise False.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: ParameterMap,A_0: bool) """
-  pass
- def Erase(self,key):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: ParameterMap,A_0: bool) """
+        pass
+
+    def Erase(self, key):
+        """
   Erase(self: ParameterMap,key: str) -> int
 
   
@@ -45,9 +49,10 @@ class ParameterMap(APIObject,IDisposable,IEnumerable):
 
    Returns: The number of items that were erased from the map.
   """
-  pass
- def ForwardIterator(self):
-  """
+        pass
+
+    def ForwardIterator(self):
+        """
   ForwardIterator(self: ParameterMap) -> ParameterMapIterator
 
   
@@ -56,9 +61,10 @@ class ParameterMap(APIObject,IDisposable,IEnumerable):
 
    Returns: Returns a forward moving iterator to the map.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: ParameterMap) -> IEnumerator
 
   
@@ -67,9 +73,10 @@ class ParameterMap(APIObject,IDisposable,IEnumerable):
 
    Returns: Returns a forward moving iterator to the map.
   """
-  pass
- def Insert(self,key,item):
-  """
+        pass
+
+    def Insert(self, key, item):
+        """
   Insert(self: ParameterMap,key: str,item: Parameter) -> bool
 
   
@@ -84,15 +91,18 @@ class ParameterMap(APIObject,IDisposable,IEnumerable):
 
    Returns: Returns whether the item was inserted into the map.
   """
-  pass
- def ReleaseManagedResources(self,*args):
-  """ ReleaseManagedResources(self: APIObject) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: ParameterMap) """
-  pass
- def ReverseIterator(self):
-  """
+        pass
+
+    def ReleaseManagedResources(self, *args):
+        """ ReleaseManagedResources(self: APIObject) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: ParameterMap) """
+        pass
+
+    def ReverseIterator(self):
+        """
   ReverseIterator(self: ParameterMap) -> ParameterMapIterator
 
   
@@ -101,27 +111,34 @@ class ParameterMap(APIObject,IDisposable,IEnumerable):
 
    Returns: Returns a backward moving iterator to the map.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- IsEmpty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Test to see if the map is empty.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    IsEmpty = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Test to see if the map is empty.
 
 
 
@@ -131,8 +148,8 @@ Get: IsEmpty(self: ParameterMap) -> bool
 
 """
 
- Size=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the number of objects that are in the map.
+    Size = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns the number of objects that are in the map.
 
 
 
@@ -141,5 +158,3 @@ Get: Size(self: ParameterMap) -> int
 
 
 """
-
-

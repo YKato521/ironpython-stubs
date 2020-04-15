@@ -1,7 +1,8 @@
 class EndPoint(object):
- """ Identifies a network address. This is an abstract class. """
- def Create(self,socketAddress):
-  """
+    """ Identifies a network address. This is an abstract class. """
+
+    def Create(self, socketAddress):
+        """
   Create(self: EndPoint,socketAddress: SocketAddress) -> EndPoint
 
   
@@ -16,9 +17,10 @@ class EndPoint(object):
 
     System.Net.SocketAddress instance.
   """
-  pass
- def Serialize(self):
-  """
+        pass
+
+    def Serialize(self):
+        """
   Serialize(self: EndPoint) -> SocketAddress
 
   
@@ -27,9 +29,12 @@ class EndPoint(object):
 
    Returns: A System.Net.SocketAddress instance that contains the endpoint information.
   """
-  pass
- AddressFamily=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the address family to which the endpoint belongs.
+        pass
+
+    AddressFamily = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the address family to which the endpoint belongs.
 
 
 
@@ -38,5 +43,3 @@ Get: AddressFamily(self: EndPoint) -> AddressFamily
 
 
 """
-
-

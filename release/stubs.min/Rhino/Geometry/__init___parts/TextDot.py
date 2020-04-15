@@ -1,5 +1,5 @@
-class TextDot(GeometryBase,IDisposable,ISerializable):
- """
+class TextDot(GeometryBase, IDisposable, ISerializable):
+    """
  Represents a text dot,or an annotation entity with text that always faces the camera and always has the same size.
 
     This class refers to the geometric element that is independent from the document.
@@ -8,8 +8,9 @@ class TextDot(GeometryBase,IDisposable,ISerializable):
 
  TextDot(text: str,location: Point3d)
  """
- def ConstructConstObject(self,*args):
-  """
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -20,9 +21,10 @@ class TextDot(GeometryBase,IDisposable,ISerializable):
 
    subobject_index: The subobject index.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: CommonObject,disposing: bool)
 
    For derived class implementers.
@@ -47,9 +49,10 @@ class TextDot(GeometryBase,IDisposable,ISerializable):
 
     finalizer.
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: CommonObject)
 
    For derived classes implementers.
@@ -58,45 +61,52 @@ class TextDot(GeometryBase,IDisposable,ISerializable):
 
     instance from being const.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: GeometryBase)
 
    Is called when a non-const operation occurs.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,text,location):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, text, location):
+        """
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
 
   __new__(cls: type,text: str,location: Point3d)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- FontFace=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Font face used for displaying the dot
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    FontFace = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Font face used for displaying the dot
 
 
 
@@ -108,8 +118,10 @@ Set: FontFace(self: TextDot)=value
 
 """
 
- FontHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Height of font used for displaying the dot
+    FontHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Height of font used for displaying the dot
 
 
 
@@ -121,8 +133,8 @@ Set: FontHeight(self: TextDot)=value
 
 """
 
- Point=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the position of the textdot.
+    Point = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the position of the textdot.
 
 
 
@@ -134,8 +146,8 @@ Set: Point(self: TextDot)=value
 
 """
 
- Text=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the text of the textdot.
+    Text = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the text of the textdot.
 
 
 
@@ -146,5 +158,3 @@ Get: Text(self: TextDot) -> str
 Set: Text(self: TextDot)=value
 
 """
-
-

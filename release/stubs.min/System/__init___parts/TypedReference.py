@@ -1,7 +1,8 @@
 class TypedReference(object):
- """ Describes objects that contain both a managed pointer to a location and a runtime representation of the type that may be stored at that location. """
- def Equals(self,o):
-  """
+    """ Describes objects that contain both a managed pointer to a location and a runtime representation of the type that may be stored at that location. """
+
+    def Equals(self, o):
+        """
   Equals(self: TypedReference,o: object) -> bool
 
   
@@ -14,9 +15,10 @@ class TypedReference(object):
 
    Returns: true if this object is equal to the specified object; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: TypedReference) -> int
 
   
@@ -25,10 +27,11 @@ class TypedReference(object):
 
    Returns: The hash code of this object.
   """
-  pass
- @staticmethod
- def GetTargetType(value):
-  """
+        pass
+
+    @staticmethod
+    def GetTargetType(value):
+        """
   GetTargetType(value: TypedReference) -> Type
 
   
@@ -41,10 +44,11 @@ class TypedReference(object):
 
    Returns: The type of the target of the specified TypedReference.
   """
-  pass
- @staticmethod
- def MakeTypedReference(target,flds):
-  """
+        pass
+
+    @staticmethod
+    def MakeTypedReference(target, flds):
+        """
   MakeTypedReference(target: object,flds: Array[FieldInfo]) -> TypedReference
 
   
@@ -69,10 +73,11 @@ class TypedReference(object):
 
    Returns: A System.TypedReference for the field described by the last element of flds.
   """
-  pass
- @staticmethod
- def SetTypedReference(target,value):
-  """
+        pass
+
+    @staticmethod
+    def SetTypedReference(target, value):
+        """
   SetTypedReference(target: TypedReference,value: object)
 
    Converts the specified value to a TypedReference. This method is not supported.
@@ -83,10 +88,11 @@ class TypedReference(object):
 
    value: The value to be converted.
   """
-  pass
- @staticmethod
- def TargetTypeToken(value):
-  """
+        pass
+
+    @staticmethod
+    def TargetTypeToken(value):
+        """
   TargetTypeToken(value: TypedReference) -> RuntimeTypeHandle
 
   
@@ -99,10 +105,11 @@ class TypedReference(object):
 
    Returns: The internal metadata type handle for the specified TypedReference.
   """
-  pass
- @staticmethod
- def ToObject(value):
-  """
+        pass
+
+    @staticmethod
+    def ToObject(value):
+        """
   ToObject(value: TypedReference) -> object
 
   
@@ -115,9 +122,11 @@ class TypedReference(object):
 
    Returns: An System.Object converted from a TypedReference.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __ne__(self,*args):
-  pass
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __ne__(self, *args):
+        pass

@@ -1,5 +1,5 @@
-class FileStream(Stream,IDisposable):
- """
+class FileStream(Stream, IDisposable):
+    """
  Exposes a System.IO.Stream around a file,supporting both synchronous and asynchronous read and write operations.
 
  
@@ -34,8 +34,9 @@ class FileStream(Stream,IDisposable):
 
  FileStream(handle: SafeFileHandle,access: FileAccess,bufferSize: int,isAsync: bool)
  """
- def BeginRead(self,array,offset,numBytes,userCallback,stateObject):
-  """
+
+    def BeginRead(self, array, offset, numBytes, userCallback, stateObject):
+        """
   BeginRead(self: FileStream,array: Array[Byte],offset: int,numBytes: int,userCallback: AsyncCallback,stateObject: object) -> IAsyncResult
 
   
@@ -60,9 +61,10 @@ class FileStream(Stream,IDisposable):
 
    Returns: An object that references the asynchronous read.
   """
-  pass
- def BeginWrite(self,array,offset,numBytes,userCallback,stateObject):
-  """
+        pass
+
+    def BeginWrite(self, array, offset, numBytes, userCallback, stateObject):
+        """
   BeginWrite(self: FileStream,array: Array[Byte],offset: int,numBytes: int,userCallback: AsyncCallback,stateObject: object) -> IAsyncResult
 
   
@@ -87,9 +89,10 @@ class FileStream(Stream,IDisposable):
 
    Returns: An object that references the asynchronous write.
   """
-  pass
- def CreateWaitHandle(self,*args):
-  """
+        pass
+
+    def CreateWaitHandle(self, *args):
+        """
   CreateWaitHandle(self: Stream) -> WaitHandle
 
   
@@ -98,9 +101,10 @@ class FileStream(Stream,IDisposable):
 
    Returns: A reference to the allocated WaitHandle.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: FileStream,disposing: bool)
 
    Releases the unmanaged resources used by the System.IO.FileStream and optionally releases the 
@@ -113,9 +117,10 @@ class FileStream(Stream,IDisposable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def EndRead(self,asyncResult):
-  """
+        pass
+
+    def EndRead(self, asyncResult):
+        """
   EndRead(self: FileStream,asyncResult: IAsyncResult) -> int
 
   
@@ -132,9 +137,10 @@ class FileStream(Stream,IDisposable):
 
     byte is available.
   """
-  pass
- def EndWrite(self,asyncResult):
-  """
+        pass
+
+    def EndWrite(self, asyncResult):
+        """
   EndWrite(self: FileStream,asyncResult: IAsyncResult)
 
    Ends an asynchronous write,blocking until the I/O operation has completed.
@@ -143,9 +149,10 @@ class FileStream(Stream,IDisposable):
 
    asyncResult: The pending asynchronous I/O request.
   """
-  pass
- def Flush(self,flushToDisk=None):
-  """
+        pass
+
+    def Flush(self, flushToDisk=None):
+        """
   Flush(self: FileStream,flushToDisk: bool)
 
    Clears buffers for this stream and causes any buffered data to be written to the file,and also 
@@ -162,12 +169,14 @@ class FileStream(Stream,IDisposable):
 
    Clears buffers for this stream and causes any buffered data to be written to the file.
   """
-  pass
- def FlushAsync(self,cancellationToken=None):
-  """ FlushAsync(self: FileStream,cancellationToken: CancellationToken) -> Task """
-  pass
- def GetAccessControl(self):
-  """
+        pass
+
+    def FlushAsync(self, cancellationToken=None):
+        """ FlushAsync(self: FileStream,cancellationToken: CancellationToken) -> Task """
+        pass
+
+    def GetAccessControl(self):
+        """
   GetAccessControl(self: FileStream) -> FileSecurity
 
   
@@ -182,9 +191,10 @@ class FileStream(Stream,IDisposable):
 
     System.IO.FileStream object.
   """
-  pass
- def Lock(self,position,length):
-  """
+        pass
+
+    def Lock(self, position, length):
+        """
   Lock(self: FileStream,position: Int64,length: Int64)
 
    Prevents other processes from reading from or writing to the System.IO.FileStream.
@@ -199,9 +209,10 @@ class FileStream(Stream,IDisposable):
 
    length: The range to be locked.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -232,16 +243,18 @@ class FileStream(Stream,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def ObjectInvariant(self,*args):
-  """
+        pass
+
+    def ObjectInvariant(self, *args):
+        """
   ObjectInvariant(self: Stream)
 
    Provides support for a System.Diagnostics.Contracts.Contract.
   """
-  pass
- def Read(self,array,offset,count):
-  """
+        pass
+
+    def Read(self, array, offset, count):
+        """
   Read(self: FileStream,offset: int,count: int) -> (int,Array[Byte])
 
   
@@ -260,12 +273,14 @@ class FileStream(Stream,IDisposable):
 
     is reached.
   """
-  pass
- def ReadAsync(self,buffer,offset,count,cancellationToken=None):
-  """ ReadAsync(self: FileStream,buffer: Array[Byte],offset: int,count: int,cancellationToken: CancellationToken) -> Task[int] """
-  pass
- def ReadByte(self):
-  """
+        pass
+
+    def ReadAsync(self, buffer, offset, count, cancellationToken=None):
+        """ ReadAsync(self: FileStream,buffer: Array[Byte],offset: int,count: int,cancellationToken: CancellationToken) -> Task[int] """
+        pass
+
+    def ReadByte(self):
+        """
   ReadByte(self: FileStream) -> int
 
   
@@ -274,9 +289,10 @@ class FileStream(Stream,IDisposable):
 
    Returns: The byte,cast to an System.Int32,or -1 if the end of the stream has been reached.
   """
-  pass
- def Seek(self,offset,origin):
-  """
+        pass
+
+    def Seek(self, offset, origin):
+        """
   Seek(self: FileStream,offset: Int64,origin: SeekOrigin) -> Int64
 
   
@@ -295,9 +311,10 @@ class FileStream(Stream,IDisposable):
 
    Returns: The new position in the stream.
   """
-  pass
- def SetAccessControl(self,fileSecurity):
-  """
+        pass
+
+    def SetAccessControl(self, fileSecurity):
+        """
   SetAccessControl(self: FileStream,fileSecurity: FileSecurity)
 
    Applies access control list (ACL) entries described by a 
@@ -312,9 +329,10 @@ class FileStream(Stream,IDisposable):
 
    fileSecurity: An object that describes an ACL entry to apply to the current file.
   """
-  pass
- def SetLength(self,value):
-  """
+        pass
+
+    def SetLength(self, value):
+        """
   SetLength(self: FileStream,value: Int64)
 
    Sets the length of this stream to the given value.
@@ -323,9 +341,10 @@ class FileStream(Stream,IDisposable):
 
    value: The new length of the stream.
   """
-  pass
- def Unlock(self,position,length):
-  """
+        pass
+
+    def Unlock(self, position, length):
+        """
   Unlock(self: FileStream,position: Int64,length: Int64)
 
    Allows access by other processes to all or part of a file that was previously locked.
@@ -336,9 +355,10 @@ class FileStream(Stream,IDisposable):
 
    length: The range to be unlocked.
   """
-  pass
- def Write(self,array,offset,count):
-  """
+        pass
+
+    def Write(self, array, offset, count):
+        """
   Write(self: FileStream,array: Array[Byte],offset: int,count: int)
 
    Writes a block of bytes to this stream using data from a buffer.
@@ -351,12 +371,14 @@ class FileStream(Stream,IDisposable):
 
    count: The number of bytes to be written to the current stream.
   """
-  pass
- def WriteAsync(self,buffer,offset,count,cancellationToken=None):
-  """ WriteAsync(self: FileStream,buffer: Array[Byte],offset: int,count: int,cancellationToken: CancellationToken) -> Task """
-  pass
- def WriteByte(self,value):
-  """
+        pass
+
+    def WriteAsync(self, buffer, offset, count, cancellationToken=None):
+        """ WriteAsync(self: FileStream,buffer: Array[Byte],offset: int,count: int,cancellationToken: CancellationToken) -> Task """
+        pass
+
+    def WriteByte(self, value):
+        """
   WriteByte(self: FileStream,value: Byte)
 
    Writes a byte to the current position in the file stream.
@@ -365,29 +387,33 @@ class FileStream(Stream,IDisposable):
 
    value: A byte to write to the stream.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,path: str,mode: FileMode)
 
   __new__(cls: type,path: str,mode: FileMode,access: FileAccess)
@@ -418,9 +444,10 @@ class FileStream(Stream,IDisposable):
 
   __new__(cls: type,handle: SafeFileHandle,access: FileAccess,bufferSize: int,isAsync: bool)
   """
-  pass
- CanRead=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the current stream supports reading.
+        pass
+
+    CanRead = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the current stream supports reading.
 
 
 
@@ -430,8 +457,8 @@ Get: CanRead(self: FileStream) -> bool
 
 """
 
- CanSeek=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the current stream supports seeking.
+    CanSeek = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the current stream supports seeking.
 
 
 
@@ -441,8 +468,8 @@ Get: CanSeek(self: FileStream) -> bool
 
 """
 
- CanWrite=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the current stream supports writing.
+    CanWrite = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the current stream supports writing.
 
 
 
@@ -452,8 +479,8 @@ Get: CanWrite(self: FileStream) -> bool
 
 """
 
- Handle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the operating system file handle for the file that the current FileStream object encapsulates.
+    Handle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the operating system file handle for the file that the current FileStream object encapsulates.
 
 
 
@@ -463,8 +490,8 @@ Get: Handle(self: FileStream) -> IntPtr
 
 """
 
- IsAsync=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the FileStream was opened asynchronously or synchronously.
+    IsAsync = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the FileStream was opened asynchronously or synchronously.
 
 
 
@@ -474,8 +501,8 @@ Get: IsAsync(self: FileStream) -> bool
 
 """
 
- Length=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the length in bytes of the stream.
+    Length = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the length in bytes of the stream.
 
 
 
@@ -485,8 +512,8 @@ Get: Length(self: FileStream) -> Int64
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name of the FileStream that was passed to the constructor.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the name of the FileStream that was passed to the constructor.
 
 
 
@@ -496,8 +523,8 @@ Get: Name(self: FileStream) -> str
 
 """
 
- Position=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the current position of this stream.
+    Position = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the current position of this stream.
 
 
 
@@ -509,8 +536,10 @@ Set: Position(self: FileStream)=value
 
 """
 
- SafeFileHandle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a Microsoft.Win32.SafeHandles.SafeFileHandle object that represents the operating system file handle for the file that the current System.IO.FileStream object encapsulates.
+    SafeFileHandle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a Microsoft.Win32.SafeHandles.SafeFileHandle object that represents the operating system file handle for the file that the current System.IO.FileStream object encapsulates.
 
 
 
@@ -519,5 +548,3 @@ Get: SafeFileHandle(self: FileStream) -> SafeFileHandle
 
 
 """
-
-

@@ -1,8 +1,9 @@
-class SunAndShadowSettings(Element,IDisposable):
- """ The SunAndShadowSettings class represents the sun control. """
- @staticmethod
- def CalculateTimeZone(latitude,longitude):
-  """
+class SunAndShadowSettings(Element, IDisposable):
+    """ The SunAndShadowSettings class represents the sun control. """
+
+    @staticmethod
+    def CalculateTimeZone(latitude, longitude):
+        """
   CalculateTimeZone(latitude: float,longitude: float) -> float
 
   
@@ -21,20 +22,23 @@ class SunAndShadowSettings(Element,IDisposable):
 
    Returns: The time zone,in hours,ranging from +12 hours to -12 hours with 0 being GMT.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def FitToModel(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def FitToModel(self):
+        """
   FitToModel(self: SunAndShadowSettings)
 
    Adjust SunAndShadowSettings to fit around the current model geometry.
   """
-  pass
- @staticmethod
- def GetActiveSunAndShadowSettings(aDocument):
-  """
+        pass
+
+    @staticmethod
+    def GetActiveSunAndShadowSettings(aDocument):
+        """
   GetActiveSunAndShadowSettings(aDocument: Document) -> Element
 
   
@@ -53,12 +57,14 @@ class SunAndShadowSettings(Element,IDisposable):
 
    Returns: The active SunAndShadowSettings element for the supplied document.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetFrameAltitude(self,frame):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetFrameAltitude(self, frame):
+        """
   GetFrameAltitude(self: SunAndShadowSettings,frame: float) -> float
 
   
@@ -71,9 +77,10 @@ class SunAndShadowSettings(Element,IDisposable):
 
    Returns: Altitude angle (radians)
   """
-  pass
- def GetFrameAzimuth(self,frame):
-  """
+        pass
+
+    def GetFrameAzimuth(self, frame):
+        """
   GetFrameAzimuth(self: SunAndShadowSettings,frame: float) -> float
 
   
@@ -92,9 +99,10 @@ class SunAndShadowSettings(Element,IDisposable):
 
     used by Revit for the Lighting Study Azimuth value.
   """
-  pass
- def GetFrameTime(self,frame):
-  """
+        pass
+
+    def GetFrameTime(self, frame):
+        """
   GetFrameTime(self: SunAndShadowSettings,frame: float) -> DateTime
 
   
@@ -111,9 +119,10 @@ class SunAndShadowSettings(Element,IDisposable):
 
    Returns: The date and time.  The value will be in Coordinated Universal Time (UTC).
   """
-  pass
- def GetMatchingPreset(self):
-  """
+        pass
+
+    def GetMatchingPreset(self):
+        """
   GetMatchingPreset(self: SunAndShadowSettings) -> str
 
   
@@ -130,9 +139,10 @@ class SunAndShadowSettings(Element,IDisposable):
 
     element.
   """
-  pass
- def GetSunrise(self,date):
-  """
+        pass
+
+    def GetSunrise(self, date):
+        """
   GetSunrise(self: SunAndShadowSettings,date: DateTime) -> DateTime
 
   
@@ -151,9 +161,10 @@ class SunAndShadowSettings(Element,IDisposable):
 
    Returns: The date and time.  The value will be in Coordinated Universal Time (UTC).
   """
-  pass
- def GetSunset(self,date):
-  """
+        pass
+
+    def GetSunset(self, date):
+        """
   GetSunset(self: SunAndShadowSettings,date: DateTime) -> DateTime
 
   
@@ -172,9 +183,10 @@ class SunAndShadowSettings(Element,IDisposable):
 
    Returns: The date and time.  The value will be in Coordinated Universal Time (UTC).
   """
-  pass
- def IsAfterStartDateAndTime(self,time):
-  """
+        pass
+
+    def IsAfterStartDateAndTime(self, time):
+        """
   IsAfterStartDateAndTime(self: SunAndShadowSettings,time: DateTime) -> bool
 
   
@@ -187,9 +199,10 @@ class SunAndShadowSettings(Element,IDisposable):
 
    Returns: True if the date and time is valid,false otherwise.
   """
-  pass
- def IsBeforeEndDateAndTime(self,time):
-  """
+        pass
+
+    def IsBeforeEndDateAndTime(self, time):
+        """
   IsBeforeEndDateAndTime(self: SunAndShadowSettings,time: DateTime) -> bool
 
   
@@ -202,9 +215,10 @@ class SunAndShadowSettings(Element,IDisposable):
 
    Returns: True if the date and time is valid,false otherwise.
   """
-  pass
- def IsFrameValid(self,frame):
-  """
+        pass
+
+    def IsFrameValid(self, frame):
+        """
   IsFrameValid(self: SunAndShadowSettings,frame: float) -> bool
 
   
@@ -217,9 +231,10 @@ class SunAndShadowSettings(Element,IDisposable):
 
    Returns: True if the frame is valid for the SunAndShadowSettings,false otherwise.
   """
-  pass
- def IsGroundPlaneLevelValid(self,levelId):
-  """
+        pass
+
+    def IsGroundPlaneLevelValid(self, levelId):
+        """
   IsGroundPlaneLevelValid(self: SunAndShadowSettings,levelId: ElementId) -> bool
 
   
@@ -232,9 +247,10 @@ class SunAndShadowSettings(Element,IDisposable):
 
    Returns: True if the element is a valid Ground Plane Level,false otherwise.
   """
-  pass
- def IsTimeIntervalValid(self,interval):
-  """
+        pass
+
+    def IsTimeIntervalValid(self, interval):
+        """
   IsTimeIntervalValid(self: SunAndShadowSettings,interval: SunStudyTimeInterval) -> bool
 
   
@@ -249,24 +265,32 @@ class SunAndShadowSettings(Element,IDisposable):
 
     otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- ActiveFrame=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the active animation frame for a single-day or multi-day study,
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    ActiveFrame = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies the active animation frame for a single-day or multi-day study,
 
    starting at 1.0 for the first frame and incrementing in intervals of 1.0.
 
@@ -280,8 +304,10 @@ Set: ActiveFrame(self: SunAndShadowSettings)=value
 
 """
 
- ActiveFrameTime=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the date and time of the SunAndShadowSettings element for the active frame.
+    ActiveFrameTime = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies the date and time of the SunAndShadowSettings element for the active frame.
 
 
 
@@ -291,8 +317,8 @@ Get: ActiveFrameTime(self: SunAndShadowSettings) -> DateTime
 
 """
 
- Altitude=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Altitude setting (angle in radians). This is only relevant when dealing with a SunAndShadowSettings
+    Altitude = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Altitude setting (angle in radians). This is only relevant when dealing with a SunAndShadowSettings
 
    element that uses lighting mode.
 
@@ -306,8 +332,8 @@ Set: Altitude(self: SunAndShadowSettings)=value
 
 """
 
- Azimuth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Azimuth setting (angle in radians). This is only relevant when dealing with a SunAndShadowSettings
+    Azimuth = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Azimuth setting (angle in radians). This is only relevant when dealing with a SunAndShadowSettings
 
    element that uses lighting mode.
 
@@ -321,8 +347,10 @@ Set: Azimuth(self: SunAndShadowSettings)=value
 
 """
 
- EndDateAndTime=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the end date and time.
+    EndDateAndTime = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies the end date and time.
 
 
 
@@ -334,8 +362,10 @@ Set: EndDateAndTime(self: SunAndShadowSettings)=value
 
 """
 
- GroundPlaneHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the ground plane height.
+    GroundPlaneHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies the ground plane height.
 
 
 
@@ -345,8 +375,10 @@ Get: GroundPlaneHeight(self: SunAndShadowSettings) -> float
 
 """
 
- GroundPlaneLevelId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the element id of the Ground Plane level for the SunAndShadowSettings element.
+    GroundPlaneLevelId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies the element id of the Ground Plane level for the SunAndShadowSettings element.
 
 
 
@@ -358,8 +390,8 @@ Set: GroundPlaneLevelId(self: SunAndShadowSettings)=value
 
 """
 
- Latitude=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the current latitude used by the SunAndShadowSettings element.
+    Latitude = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Identifies the current latitude used by the SunAndShadowSettings element.
 
 
 
@@ -369,8 +401,8 @@ Get: Latitude(self: SunAndShadowSettings) -> float
 
 """
 
- Longitude=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the current longitude used by the SunAndShadowSettings element.
+    Longitude = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Identifies the current longitude used by the SunAndShadowSettings element.
 
 
 
@@ -380,8 +412,10 @@ Get: Longitude(self: SunAndShadowSettings) -> float
 
 """
 
- NumberOfFrames=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the total number of animation frames for a single-day or multi-day study.
+    NumberOfFrames = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies the total number of animation frames for a single-day or multi-day study.
 
 
 
@@ -391,8 +425,10 @@ Get: NumberOfFrames(self: SunAndShadowSettings) -> float
 
 """
 
- ProjectLocationId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the ProjectLocation element used by the SunAndShadowSettings element.
+    ProjectLocationId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies the ProjectLocation element used by the SunAndShadowSettings element.
 
 
 
@@ -402,8 +438,10 @@ Get: ProjectLocationId(self: SunAndShadowSettings) -> ElementId
 
 """
 
- ProjectLocationName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the name of the project location used by the SunAndShadowSettings element.
+    ProjectLocationName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies the name of the project location used by the SunAndShadowSettings element.
 
 
 
@@ -413,8 +451,10 @@ Get: ProjectLocationName(self: SunAndShadowSettings) -> str
 
 """
 
- RelativeToView=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies whether the SunAndShadowSettings element is relative to the view
+    RelativeToView = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies whether the SunAndShadowSettings element is relative to the view
 
    direction. This is only relevant for lighting mode.
 
@@ -428,8 +468,10 @@ Set: RelativeToView(self: SunAndShadowSettings)=value
 
 """
 
- SharesSettings=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies whether settings are shared globally.
+    SharesSettings = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies whether settings are shared globally.
 
 
 
@@ -441,8 +483,10 @@ Set: SharesSettings(self: SunAndShadowSettings)=value
 
 """
 
- StartDateAndTime=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the start or current date and time.
+    StartDateAndTime = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies the start or current date and time.
 
 
 
@@ -454,8 +498,10 @@ Set: StartDateAndTime(self: SunAndShadowSettings)=value
 
 """
 
- SunAndShadowType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the type of the SunAndShadowSettings element.
+    SunAndShadowType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies the type of the SunAndShadowSettings element.
 
 
 
@@ -467,8 +513,10 @@ Set: SunAndShadowType(self: SunAndShadowSettings)=value
 
 """
 
- SunriseToSunset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies whether the current single day sun study is set to run from
+    SunriseToSunset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies whether the current single day sun study is set to run from
 
    sunrise to sunset.
 
@@ -482,8 +530,10 @@ Set: SunriseToSunset(self: SunAndShadowSettings)=value
 
 """
 
- TimeInterval=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the time interval between animation frames.
+    TimeInterval = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies the time interval between animation frames.
 
 
 
@@ -495,8 +545,8 @@ Set: TimeInterval(self: SunAndShadowSettings)=value
 
 """
 
- TimeZone=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the time zone.
+    TimeZone = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Identifies the time zone.
 
 
 
@@ -506,8 +556,8 @@ Get: TimeZone(self: SunAndShadowSettings) -> float
 
 """
 
- UsesDST=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies whether the SunAndShadowSettings element is using daylight savings time.
+    UsesDST = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Identifies whether the SunAndShadowSettings element is using daylight savings time.
 
 
 
@@ -517,8 +567,10 @@ Get: UsesDST(self: SunAndShadowSettings) -> bool
 
 """
 
- UsesGroundPlane=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies whether the SunAndShadowSettings element uses a ground plane.
+    UsesGroundPlane = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies whether the SunAndShadowSettings element uses a ground plane.
 
 
 
@@ -530,8 +582,8 @@ Set: UsesGroundPlane(self: SunAndShadowSettings)=value
 
 """
 
- Visible=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Visibility in current view for a per-view SunAndShadowSettings element.
+    Visible = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Visibility in current view for a per-view SunAndShadowSettings element.
 
 
 
@@ -542,5 +594,3 @@ Get: Visible(self: SunAndShadowSettings) -> bool
 Set: Visible(self: SunAndShadowSettings)=value
 
 """
-
-

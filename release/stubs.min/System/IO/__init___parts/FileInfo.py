@@ -1,13 +1,14 @@
-class FileInfo(FileSystemInfo,ISerializable):
- """
+class FileInfo(FileSystemInfo, ISerializable):
+    """
  Provides properties and instance methods for the creation,copying,deletion,moving,and opening of files,and aids in the creation of System.IO.FileStream objects. This class cannot be inherited.
 
  
 
  FileInfo(fileName: str)
  """
- def AppendText(self):
-  """
+
+    def AppendText(self):
+        """
   AppendText(self: FileInfo) -> StreamWriter
 
   
@@ -20,9 +21,10 @@ class FileInfo(FileSystemInfo,ISerializable):
 
    Returns: A new StreamWriter.
   """
-  pass
- def CopyTo(self,destFileName,overwrite=None):
-  """
+        pass
+
+    def CopyTo(self, destFileName, overwrite=None):
+        """
   CopyTo(self: FileInfo,destFileName: str,overwrite: bool) -> FileInfo
 
   
@@ -53,9 +55,10 @@ class FileInfo(FileSystemInfo,ISerializable):
 
    Returns: A new file with a fully qualified path.
   """
-  pass
- def Create(self):
-  """
+        pass
+
+    def Create(self):
+        """
   Create(self: FileInfo) -> FileStream
 
   
@@ -64,9 +67,10 @@ class FileInfo(FileSystemInfo,ISerializable):
 
    Returns: A new file.
   """
-  pass
- def CreateText(self):
-  """
+        pass
+
+    def CreateText(self):
+        """
   CreateText(self: FileInfo) -> StreamWriter
 
   
@@ -75,32 +79,36 @@ class FileInfo(FileSystemInfo,ISerializable):
 
    Returns: A new StreamWriter.
   """
-  pass
- def Decrypt(self):
-  """
+        pass
+
+    def Decrypt(self):
+        """
   Decrypt(self: FileInfo)
 
    Decrypts a file that was encrypted by the current account using the System.IO.FileInfo.Encrypt 
 
     method.
   """
-  pass
- def Delete(self):
-  """
+        pass
+
+    def Delete(self):
+        """
   Delete(self: FileInfo)
 
    Permanently deletes a file.
   """
-  pass
- def Encrypt(self):
-  """
+        pass
+
+    def Encrypt(self):
+        """
   Encrypt(self: FileInfo)
 
    Encrypts a file so that only the account used to encrypt the file can decrypt it.
   """
-  pass
- def GetAccessControl(self,includeSections=None):
-  """
+        pass
+
+    def GetAccessControl(self, includeSections=None):
+        """
   GetAccessControl(self: FileInfo,includeSections: AccessControlSections) -> FileSecurity
 
   
@@ -141,9 +149,10 @@ class FileInfo(FileSystemInfo,ISerializable):
 
     for the current file.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -174,9 +183,10 @@ class FileInfo(FileSystemInfo,ISerializable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def MoveTo(self,destFileName):
-  """
+        pass
+
+    def MoveTo(self, destFileName):
+        """
   MoveTo(self: FileInfo,destFileName: str)
 
    Moves a specified file to a new location,providing the option to specify a new file name.
@@ -185,9 +195,10 @@ class FileInfo(FileSystemInfo,ISerializable):
 
    destFileName: The path to move the file to,which can specify a different file name.
   """
-  pass
- def Open(self,mode,access=None,share=None):
-  """
+        pass
+
+    def Open(self, mode, access=None, share=None):
+        """
   Open(self: FileInfo,mode: FileMode,access: FileAccess,share: FileShare) -> FileStream
 
   
@@ -258,9 +269,10 @@ class FileInfo(FileSystemInfo,ISerializable):
 
    Returns: A file opened in the specified mode,with read/write access and unshared.
   """
-  pass
- def OpenRead(self):
-  """
+        pass
+
+    def OpenRead(self):
+        """
   OpenRead(self: FileInfo) -> FileStream
 
   
@@ -269,9 +281,10 @@ class FileInfo(FileSystemInfo,ISerializable):
 
    Returns: A new read-only System.IO.FileStream object.
   """
-  pass
- def OpenText(self):
-  """
+        pass
+
+    def OpenText(self):
+        """
   OpenText(self: FileInfo) -> StreamReader
 
   
@@ -280,9 +293,10 @@ class FileInfo(FileSystemInfo,ISerializable):
 
    Returns: A new StreamReader with UTF8 encoding.
   """
-  pass
- def OpenWrite(self):
-  """
+        pass
+
+    def OpenWrite(self):
+        """
   OpenWrite(self: FileInfo) -> FileStream
 
   
@@ -291,9 +305,12 @@ class FileInfo(FileSystemInfo,ISerializable):
 
    Returns: A write-only unshared System.IO.FileStream object for a new or existing file.
   """
-  pass
- def Replace(self,destinationFileName,destinationBackupFileName,ignoreMetadataErrors=None):
-  """
+        pass
+
+    def Replace(
+        self, destinationFileName, destinationBackupFileName, ignoreMetadataErrors=None
+    ):
+        """
   Replace(self: FileInfo,destinationFileName: str,destinationBackupFileName: str,ignoreMetadataErrors: bool) -> FileInfo
 
   
@@ -354,9 +371,10 @@ class FileInfo(FileSystemInfo,ISerializable):
 
     destFileName parameter.
   """
-  pass
- def SetAccessControl(self,fileSecurity):
-  """
+        pass
+
+    def SetAccessControl(self, fileSecurity):
+        """
   SetAccessControl(self: FileInfo,fileSecurity: FileSecurity)
 
    Applies access control list (ACL) entries described by a 
@@ -373,9 +391,10 @@ class FileInfo(FileSystemInfo,ISerializable):
 
     entry to apply to the current file.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: FileInfo) -> str
 
   
@@ -384,20 +403,25 @@ class FileInfo(FileSystemInfo,ISerializable):
 
    Returns: A string representing the path.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,fileName):
-  """ __new__(cls: type,fileName: str) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Directory=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an instance of the parent directory.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, fileName):
+        """ __new__(cls: type,fileName: str) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Directory = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an instance of the parent directory.
 
 
 
@@ -407,8 +431,10 @@ Get: Directory(self: FileInfo) -> DirectoryInfo
 
 """
 
- DirectoryName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a string representing the directory's full path.
+    DirectoryName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a string representing the directory's full path.
 
 
 
@@ -418,8 +444,8 @@ Get: DirectoryName(self: FileInfo) -> str
 
 """
 
- Exists=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether a file exists.
+    Exists = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether a file exists.
 
 
 
@@ -429,8 +455,10 @@ Get: Exists(self: FileInfo) -> bool
 
 """
 
- IsReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that determines if the current file is read only.
+    IsReadOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that determines if the current file is read only.
 
 
 
@@ -442,8 +470,8 @@ Set: IsReadOnly(self: FileInfo)=value
 
 """
 
- Length=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the size,in bytes,of the current file.
+    Length = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the size,in bytes,of the current file.
 
 
 
@@ -453,8 +481,8 @@ Get: Length(self: FileInfo) -> Int64
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name of the file.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the name of the file.
 
 
 
@@ -464,7 +492,5 @@ Get: Name(self: FileInfo) -> str
 
 """
 
-
- FullPath=None
- OriginalPath=None
-
+    FullPath = None
+    OriginalPath = None

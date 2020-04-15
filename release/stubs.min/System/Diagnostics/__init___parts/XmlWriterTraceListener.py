@@ -1,5 +1,5 @@
-class XmlWriterTraceListener(TextWriterTraceListener,IDisposable):
- """
+class XmlWriterTraceListener(TextWriterTraceListener, IDisposable):
+    """
  Directs tracing or debugging output as XML-encoded data to a System.IO.TextWriter or to a System.IO.Stream,such as a System.IO.FileStream.
 
  
@@ -16,17 +16,19 @@ class XmlWriterTraceListener(TextWriterTraceListener,IDisposable):
 
  XmlWriterTraceListener(filename: str,name: str)
  """
- def Close(self):
-  """
+
+    def Close(self):
+        """
   Close(self: XmlWriterTraceListener)
 
    Closes the System.Diagnostics.TextWriterTraceListener.Writer for this listener so that it no 
 
     longer receives tracing or debugging output.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: TextWriterTraceListener,disposing: bool)
 
    Disposes this System.Diagnostics.TextWriterTraceListener object.
@@ -37,9 +39,10 @@ class XmlWriterTraceListener(TextWriterTraceListener,IDisposable):
 
     System.Diagnostics.TextWriterTraceListener.Dispose(System.Boolean) has no effect.
   """
-  pass
- def Fail(self,message,detailMessage=None):
-  """
+        pass
+
+    def Fail(self, message, detailMessage=None):
+        """
   Fail(self: XmlWriterTraceListener,message: str,detailMessage: str)
 
    Writes trace information including an error message and a detailed error message to the file or 
@@ -54,9 +57,10 @@ class XmlWriterTraceListener(TextWriterTraceListener,IDisposable):
 
    detailMessage: The detailed error message to append to the error message.
   """
-  pass
- def GetSupportedAttributes(self,*args):
-  """
+        pass
+
+    def GetSupportedAttributes(self, *args):
+        """
   GetSupportedAttributes(self: TraceListener) -> Array[str]
 
   
@@ -67,9 +71,10 @@ class XmlWriterTraceListener(TextWriterTraceListener,IDisposable):
 
     are no custom attributes.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -100,9 +105,10 @@ class XmlWriterTraceListener(TextWriterTraceListener,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def TraceData(self,eventCache,source,eventType,id,data):
-  """
+        pass
+
+    def TraceData(self, eventCache, source, eventType, id, data):
+        """
   TraceData(self: XmlWriterTraceListener,eventCache: TraceEventCache,source: str,eventType: TraceEventType,id: int,*data: Array[object])
 
    Writes trace information,data objects,and event information to the file or stream.
@@ -143,9 +149,10 @@ class XmlWriterTraceListener(TextWriterTraceListener,IDisposable):
 
    data: A data object to emit.
   """
-  pass
- def TraceEvent(self,eventCache,source,eventType,id,*__args):
-  """
+        pass
+
+    def TraceEvent(self, eventCache, source, eventType, id, *__args):
+        """
   TraceEvent(self: XmlWriterTraceListener,eventCache: TraceEventCache,source: str,eventType: TraceEventType,id: int,message: str)
 
    Writes trace information,a message,and event information to the file or stream.
@@ -192,9 +199,10 @@ class XmlWriterTraceListener(TextWriterTraceListener,IDisposable):
 
    args: An object array containing zero or more objects to format.
   """
-  pass
- def TraceTransfer(self,eventCache,source,id,message,relatedActivityId):
-  """
+        pass
+
+    def TraceTransfer(self, eventCache, source, id, message, relatedActivityId):
+        """
   TraceTransfer(self: XmlWriterTraceListener,eventCache: TraceEventCache,source: str,id: int,message: str,relatedActivityId: Guid)
 
    Writes trace information including the identity of a related activity,a message,and event 
@@ -219,9 +227,10 @@ class XmlWriterTraceListener(TextWriterTraceListener,IDisposable):
 
    relatedActivityId: A System.Guid structure that identifies a related activity.
   """
-  pass
- def Write(self,*__args):
-  """
+        pass
+
+    def Write(self, *__args):
+        """
   Write(self: XmlWriterTraceListener,message: str)
 
    Writes a verbatim message without any additional context information to the file or stream.
@@ -230,18 +239,20 @@ class XmlWriterTraceListener(TextWriterTraceListener,IDisposable):
 
    message: The message to write.
   """
-  pass
- def WriteIndent(self,*args):
-  """
+        pass
+
+    def WriteIndent(self, *args):
+        """
   WriteIndent(self: TraceListener)
 
    Writes the indent to the listener you create when you implement this class,and resets the 
 
     System.Diagnostics.TraceListener.NeedIndent property to false.
   """
-  pass
- def WriteLine(self,*__args):
-  """
+        pass
+
+    def WriteLine(self, *__args):
+        """
   WriteLine(self: XmlWriterTraceListener,message: str)
 
    Writes a verbatim message without any additional context information followed by the current 
@@ -254,29 +265,33 @@ class XmlWriterTraceListener(TextWriterTraceListener,IDisposable):
 
    message: The message to write.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,stream: Stream)
 
   __new__(cls: type,stream: Stream,name: str)
@@ -289,15 +304,16 @@ class XmlWriterTraceListener(TextWriterTraceListener,IDisposable):
 
   __new__(cls: type,filename: str,name: str)
   """
-  pass
- NeedIndent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether to indent the output.
+        pass
+
+    NeedIndent = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether to indent the output.
 
 
 
 """
 
 
-
 # variables with complex values
-

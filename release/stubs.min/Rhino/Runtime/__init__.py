@@ -8,11 +8,13 @@
 # no functions
 # classes
 
+
 class AssemblyResolver(object):
- """ Assembly Resolver for the Rhino App Domain. """
- @staticmethod
- def AddSearchFile(file):
-  """
+    """ Assembly Resolver for the Rhino App Domain. """
+
+    @staticmethod
+    def AddSearchFile(file):
+        """
   AddSearchFile(file: str)
 
    Register another file with the Assembly Resolver. File must be a .NET assembly,
@@ -27,10 +29,11 @@ class AssemblyResolver(object):
 
    file: Path of file to include during Assembly Resolver events.
   """
-  pass
- @staticmethod
- def AddSearchFolder(folder):
-  """
+        pass
+
+    @staticmethod
+    def AddSearchFolder(folder):
+        """
   AddSearchFolder(folder: str)
 
    Register a custom folder with the Assembly Resolver. Folders will be 
@@ -49,17 +52,19 @@ class AssemblyResolver(object):
 
    folder: Path of folder to include during Assembly Resolver events.
   """
-  pass
- __all__=[
-  'AddSearchFile',
-  'AddSearchFolder',
- ]
+        pass
+
+    __all__ = [
+        "AddSearchFile",
+        "AddSearchFolder",
+    ]
 
 
-class CommonObject(object,IDisposable,ISerializable):
- """ Base class for .NET classes that wrap C++ unmanaged Rhino classes. """
- def ConstructConstObject(self,*args):
-  """
+class CommonObject(object, IDisposable, ISerializable):
+    """ Base class for .NET classes that wrap C++ unmanaged Rhino classes. """
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -70,16 +75,18 @@ class CommonObject(object,IDisposable,ISerializable):
 
    subobject_index: The subobject index.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: CommonObject)
 
    Actively reclaims unmanaged resources that this instance uses.
   """
-  pass
- def EnsurePrivateCopy(self):
-  """
+        pass
+
+    def EnsurePrivateCopy(self):
+        """
   EnsurePrivateCopy(self: CommonObject)
 
    If you want to keep a copy of this class around by holding onto it in a variable after a command
@@ -92,9 +99,10 @@ class CommonObject(object,IDisposable,ISerializable):
 
      call this function as many times as you want.
   """
-  pass
- def GetObjectData(self,info,context):
-  """
+        pass
+
+    def GetObjectData(self, info, context):
+        """
   GetObjectData(self: CommonObject,info: SerializationInfo,context: StreamingContext)
 
    Populates a System.Runtime.Serialization.SerializationInfo with the data needed to serialize the 
@@ -109,9 +117,10 @@ class CommonObject(object,IDisposable,ISerializable):
 
    context: The destination (see System.Runtime.Serialization.StreamingContext) for this serialization.
   """
-  pass
- def IsValidWithLog(self,log):
-  """
+        pass
+
+    def IsValidWithLog(self, log):
+        """
   IsValidWithLog(self: CommonObject) -> (bool,str)
 
   
@@ -126,9 +135,10 @@ class CommonObject(object,IDisposable,ISerializable):
 
    Returns: true if this object is valid; false otherwise.
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: CommonObject)
 
    For derived classes implementers.
@@ -137,48 +147,58 @@ class CommonObject(object,IDisposable,ISerializable):
 
     instance from being const.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: CommonObject)
 
    Is called when a non-const operation first occurs.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """
   __new__(cls: type)
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- HasUserData=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets true if this class has any custom information attached to it through UserData.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    HasUserData = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets true if this class has any custom information attached to it through UserData.
 
 
 
@@ -188,8 +208,10 @@ Get: HasUserData(self: CommonObject) -> bool
 
 """
 
- IsDocumentControlled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If true this object may not be modified. Any properties or functions that attempt
+    IsDocumentControlled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """If true this object may not be modified. Any properties or functions that attempt
 
    to modify this object when it is set to "IsReadOnly" will throw a NotSupportedException.
 
@@ -201,8 +223,8 @@ Get: IsDocumentControlled(self: CommonObject) -> bool
 
 """
 
- IsValid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Tests an object to see if it is valid.
+    IsValid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Tests an object to see if it is valid.
 
 
 
@@ -212,8 +234,8 @@ Get: IsValid(self: CommonObject) -> bool
 
 """
 
- UserData=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """List of custom information that is attached to this class.
+    UserData = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """List of custom information that is attached to this class.
 
 
 
@@ -223,8 +245,10 @@ Get: UserData(self: CommonObject) -> UserDataList
 
 """
 
- UserDictionary=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Dictionary of custom information attached to this class. The dictionary is actually user
+    UserDictionary = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Dictionary of custom information attached to this class. The dictionary is actually user
 
    data provided as an easy to use sharable set of information.
 
@@ -237,9 +261,8 @@ Get: UserDictionary(self: CommonObject) -> ArchivableDictionary
 """
 
 
-
-class DocumentCollectedException(Exception,ISerializable,_Exception):
- """
+class DocumentCollectedException(Exception, ISerializable, _Exception):
+    """
  Represents the error that happen when a class user attempts to execute a modifying operation
 
     on an object that has been added to a document.
@@ -248,25 +271,32 @@ class DocumentCollectedException(Exception,ISerializable,_Exception):
 
  DocumentCollectedException()
  """
- def add_SerializeObjectState(self,*args):
-  """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def remove_SerializeObjectState(self,*args):
-  """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
+
+    def add_SerializeObjectState(self, *args):
+        """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def remove_SerializeObjectState(self, *args):
+        """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
 
 class HostUtils(object):
- """ Contains static methods to deal with teh runtime environment. """
- @staticmethod
- def CheckForRdk(throwOnFalse,usePreviousResult):
-  """
+    """ Contains static methods to deal with teh runtime environment. """
+
+    @staticmethod
+    def CheckForRdk(throwOnFalse, usePreviousResult):
+        """
   CheckForRdk(throwOnFalse: bool,usePreviousResult: bool) -> bool
 
   
@@ -289,10 +319,11 @@ class HostUtils(object):
 
     Rhino.Runtime.RdkNotLoadedException will hinder the retrieval of any return value.
   """
-  pass
- @staticmethod
- def CreateCommands(*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateCommands(*__args):
+        """
   CreateCommands(pPlugIn: IntPtr,pluginAssembly: Assembly) -> int
 
   
@@ -315,10 +346,11 @@ class HostUtils(object):
 
    plugin: Plugin to harvest for commands.
   """
-  pass
- @staticmethod
- def CreatePlugIn(pluginType,printDebugMessages):
-  """
+        pass
+
+    @staticmethod
+    def CreatePlugIn(pluginType, printDebugMessages):
+        """
   CreatePlugIn(pluginType: Type,printDebugMessages: bool) -> PlugIn
 
   
@@ -333,10 +365,11 @@ class HostUtils(object):
 
    Returns: A new plug-in instance.
   """
-  pass
- @staticmethod
- def DebugDumpToString(*__args):
-  """
+        pass
+
+    @staticmethod
+    def DebugDumpToString(*__args):
+        """
   DebugDumpToString(bezierCurve: BezierCurve) -> str
 
   
@@ -381,10 +414,11 @@ class HostUtils(object):
 
    Returns: A debug dump text.
   """
-  pass
- @staticmethod
- def DebugString(*__args):
-  """
+        pass
+
+    @staticmethod
+    def DebugString(*__args):
+        """
   DebugString(format: str,*args: Array[object])
 
    Prints a debug message to the Rhino Command Line. 
@@ -415,10 +449,11 @@ class HostUtils(object):
 
    msg: Message to print.
   """
-  pass
- @staticmethod
- def DisplayOleAlerts(display):
-  """
+        pass
+
+    @staticmethod
+    def DisplayOleAlerts(display):
+        """
   DisplayOleAlerts(display: bool)
 
    Defines if Ole alerts ("Server busy") alerts should be visualized.
@@ -433,10 +468,11 @@ class HostUtils(object):
 
    display: Whether alerts should be visible.
   """
-  pass
- @staticmethod
- def ExceptionReport(*__args):
-  """
+        pass
+
+    @staticmethod
+    def ExceptionReport(*__args):
+        """
   ExceptionReport(source: str,ex: Exception)
 
    Informs RhinoCommon of an exception that has been handled but that the developer wants to screen.
@@ -455,10 +491,11 @@ class HostUtils(object):
 
    ex: An exception.
   """
-  pass
- @staticmethod
- def GetAssemblySearchPaths():
-  """
+        pass
+
+    @staticmethod
+    def GetAssemblySearchPaths():
+        """
   GetAssemblySearchPaths() -> Array[str]
 
   
@@ -469,10 +506,11 @@ class HostUtils(object):
 
      may be located
   """
-  pass
- @staticmethod
- def GetRhinoDotNetAssembly():
-  """
+        pass
+
+    @staticmethod
+    def GetRhinoDotNetAssembly():
+        """
   GetRhinoDotNetAssembly() -> Assembly
 
   
@@ -481,10 +519,11 @@ class HostUtils(object):
 
    Returns: An assembly.
   """
-  pass
- @staticmethod
- def InitializeRhinoCommon():
-  """
+        pass
+
+    @staticmethod
+    def InitializeRhinoCommon():
+        """
   InitializeRhinoCommon()
 
    Makes sure all static RhinoCommon components is set up correctly. 
@@ -497,10 +536,11 @@ class HostUtils(object):
 
     method.
   """
-  pass
- @staticmethod
- def InitializeZooClient():
-  """
+        pass
+
+    @staticmethod
+    def InitializeZooClient():
+        """
   InitializeZooClient()
 
    Initializes the ZooClient and Rhino license manager,this should get
@@ -513,10 +553,11 @@ class HostUtils(object):
 
     method.
   """
-  pass
- @staticmethod
- def InPlaceConstCast(geometry,makeNonConst):
-  """
+        pass
+
+    @staticmethod
+    def InPlaceConstCast(geometry, makeNonConst):
+        """
   InPlaceConstCast(geometry: GeometryBase,makeNonConst: bool)
 
    DO NOT USE UNLESS YOU ARE CERTAIN ABOUT THE IMPLICATIONS.
@@ -557,10 +598,11 @@ class HostUtils(object):
 
    makeNonConst: A boolean value.
   """
-  pass
- @staticmethod
- def InvokeOnMainUiThread(method,args=None):
-  """
+        pass
+
+    @staticmethod
+    def InvokeOnMainUiThread(method, args=None):
+        """
   InvokeOnMainUiThread(method: Delegate,*args: Array[object]) -> object
 
   
@@ -587,10 +629,11 @@ class HostUtils(object):
 
    Returns: A return object,or null.
   """
-  pass
- @staticmethod
- def RegisterDynamicCommand(plugin,cmd):
-  """
+        pass
+
+    @staticmethod
+    def RegisterDynamicCommand(plugin, cmd):
+        """
   RegisterDynamicCommand(plugin: PlugIn,cmd: Command) -> bool
 
   
@@ -605,48 +648,51 @@ class HostUtils(object):
 
    Returns: true on success,false on failure.
   """
-  pass
- @staticmethod
- def SetInShutDown():
-  """
+        pass
+
+    @staticmethod
+    def SetInShutDown():
+        """
   SetInShutDown()
 
    Informs the runtime that the application is shutting down.
   """
-  pass
- ExceptionReportDelegate=None
- OnExceptionReport=None
- RunningInMono=False
- RunningInRhino=False
- RunningOnOSX=False
- RunningOnWindows=True
- SendDebugToCommandLine=False
- __all__=[
-  'CheckForRdk',
-  'CreateCommands',
-  'CreatePlugIn',
-  'DebugDumpToString',
-  'DebugString',
-  'DisplayOleAlerts',
-  'ExceptionReport',
-  'ExceptionReportDelegate',
-  'GetAssemblySearchPaths',
-  'GetRhinoDotNetAssembly',
-  'InitializeRhinoCommon',
-  'InitializeZooClient',
-  'InPlaceConstCast',
-  'InvokeOnMainUiThread',
-  'OnExceptionReport',
-  'RegisterDynamicCommand',
-  'SetInShutDown',
- ]
+        pass
+
+    ExceptionReportDelegate = None
+    OnExceptionReport = None
+    RunningInMono = False
+    RunningInRhino = False
+    RunningOnOSX = False
+    RunningOnWindows = True
+    SendDebugToCommandLine = False
+    __all__ = [
+        "CheckForRdk",
+        "CreateCommands",
+        "CreatePlugIn",
+        "DebugDumpToString",
+        "DebugString",
+        "DisplayOleAlerts",
+        "ExceptionReport",
+        "ExceptionReportDelegate",
+        "GetAssemblySearchPaths",
+        "GetRhinoDotNetAssembly",
+        "InitializeRhinoCommon",
+        "InitializeZooClient",
+        "InPlaceConstCast",
+        "InvokeOnMainUiThread",
+        "OnExceptionReport",
+        "RegisterDynamicCommand",
+        "SetInShutDown",
+    ]
 
 
 class Interop(object):
- """ Contains static methods to marshal objects between RhinoCommon and legacy Rhino_DotNet or C++. """
- @staticmethod
- def CreateFromNativePointer(pGeometry):
-  """
+    """ Contains static methods to marshal objects between RhinoCommon and legacy Rhino_DotNet or C++. """
+
+    @staticmethod
+    def CreateFromNativePointer(pGeometry):
+        """
   CreateFromNativePointer(pGeometry: IntPtr) -> GeometryBase
 
   
@@ -665,10 +711,11 @@ class Interop(object):
 
    Returns: The appropriate geometry class in RhinoCommon on success.
   """
-  pass
- @staticmethod
- def FromOnBrep(source):
-  """
+        pass
+
+    @staticmethod
+    def FromOnBrep(source):
+        """
   FromOnBrep(source: object) -> Brep
 
   
@@ -681,10 +728,11 @@ class Interop(object):
 
    Returns: RhinoCommon object on success. This will be an independent copy.
   """
-  pass
- @staticmethod
- def FromOnCurve(source):
-  """
+        pass
+
+    @staticmethod
+    def FromOnCurve(source):
+        """
   FromOnCurve(source: object) -> Curve
 
   
@@ -697,10 +745,11 @@ class Interop(object):
 
    Returns: RhinoCommon object on success. This will be an independent copy.
   """
-  pass
- @staticmethod
- def FromOnMesh(source):
-  """
+        pass
+
+    @staticmethod
+    def FromOnMesh(source):
+        """
   FromOnMesh(source: object) -> Mesh
 
   
@@ -713,10 +762,11 @@ class Interop(object):
 
    Returns: RhinoCommon object on success. This will be an independent copy.
   """
-  pass
- @staticmethod
- def FromOnSurface(source):
-  """
+        pass
+
+    @staticmethod
+    def FromOnSurface(source):
+        """
   FromOnSurface(source: object) -> Surface
 
   
@@ -743,10 +793,11 @@ class Interop(object):
 
    Returns: RhinoCommon object on success. This will be an independent copy.
   """
-  pass
- @staticmethod
- def NativeGeometryConstPointer(geometry):
-  """
+        pass
+
+    @staticmethod
+    def NativeGeometryConstPointer(geometry):
+        """
   NativeGeometryConstPointer(geometry: GeometryBase) -> IntPtr
 
   
@@ -765,10 +816,11 @@ class Interop(object):
 
    Returns: A pointer to the const geometry.
   """
-  pass
- @staticmethod
- def NativeGeometryNonConstPointer(geometry):
-  """
+        pass
+
+    @staticmethod
+    def NativeGeometryNonConstPointer(geometry):
+        """
   NativeGeometryNonConstPointer(geometry: GeometryBase) -> IntPtr
 
   
@@ -787,20 +839,22 @@ class Interop(object):
 
    Returns: A pointer to the non-const geometry.
   """
-  pass
- @staticmethod
- def NativeNonConstPointer(viewport):
-  """
+        pass
+
+    @staticmethod
+    def NativeNonConstPointer(viewport):
+        """
   NativeNonConstPointer(viewport: ViewportInfo) -> IntPtr
 
   
 
    Get ON_Viewport* from a ViewportInfo instance
   """
-  pass
- @staticmethod
- def NativeRhinoDocPointer(doc):
-  """
+        pass
+
+    @staticmethod
+    def NativeRhinoDocPointer(doc):
+        """
   NativeRhinoDocPointer(doc: RhinoDoc) -> IntPtr
 
   
@@ -813,10 +867,11 @@ class Interop(object):
 
    Returns: A pointer value.
   """
-  pass
- @staticmethod
- def PlugInPointer(plugin):
-  """
+        pass
+
+    @staticmethod
+    def PlugInPointer(plugin):
+        """
   PlugInPointer(plugin: PlugIn) -> IntPtr
 
   
@@ -835,10 +890,11 @@ class Interop(object):
 
    Returns: A pointer.
   """
-  pass
- @staticmethod
- def RhinoObjectConstPointer(rhinoObject):
-  """
+        pass
+
+    @staticmethod
+    def RhinoObjectConstPointer(rhinoObject):
+        """
   RhinoObjectConstPointer(rhinoObject: RhinoObject) -> IntPtr
 
   
@@ -857,10 +913,11 @@ class Interop(object):
 
    Returns: A pointer to the Rhino const object.
   """
-  pass
- @staticmethod
- def RhinoObjectFromPointer(pRhinoObject):
-  """
+        pass
+
+    @staticmethod
+    def RhinoObjectFromPointer(pRhinoObject):
+        """
   RhinoObjectFromPointer(pRhinoObject: IntPtr) -> RhinoObject
 
   
@@ -873,10 +930,11 @@ class Interop(object):
 
    Returns: A new Rhino object,or null if the pointer was invalid or System.IntPtr.Zero.
   """
-  pass
- @staticmethod
- def ToIRhinoViewport(source):
-  """
+        pass
+
+    @staticmethod
+    def ToIRhinoViewport(source):
+        """
   ToIRhinoViewport(source: RhinoViewport) -> object
 
   
@@ -889,10 +947,11 @@ class Interop(object):
 
    Returns: Rhino_DotNet IRhinoViewport object on success. This will be an independent copy.
   """
-  pass
- @staticmethod
- def ToOnBrep(source):
-  """
+        pass
+
+    @staticmethod
+    def ToOnBrep(source):
+        """
   ToOnBrep(source: Brep) -> object
 
   
@@ -905,10 +964,11 @@ class Interop(object):
 
    Returns: Rhino_DotNet object on success. This will be an independent copy.
   """
-  pass
- @staticmethod
- def ToOnCurve(source):
-  """
+        pass
+
+    @staticmethod
+    def ToOnCurve(source):
+        """
   ToOnCurve(source: Curve) -> object
 
   
@@ -921,10 +981,11 @@ class Interop(object):
 
    Returns: Rhino_DotNet object on success. This will be an independent copy.
   """
-  pass
- @staticmethod
- def ToOnMesh(source):
-  """
+        pass
+
+    @staticmethod
+    def ToOnMesh(source):
+        """
   ToOnMesh(source: Mesh) -> object
 
   
@@ -937,10 +998,11 @@ class Interop(object):
 
    Returns: Rhino_DotNet object on success. This will be an independent copy.
   """
-  pass
- @staticmethod
- def ToOnSurface(source):
-  """
+        pass
+
+    @staticmethod
+    def ToOnSurface(source):
+        """
   ToOnSurface(source: Surface) -> object
 
   
@@ -953,10 +1015,11 @@ class Interop(object):
 
    Returns: Rhino_DotNet object on success. This will be an independent copy.
   """
-  pass
- @staticmethod
- def ToOnXform(source):
-  """
+        pass
+
+    @staticmethod
+    def ToOnXform(source):
+        """
   ToOnXform(source: Transform) -> object
 
   
@@ -969,10 +1032,11 @@ class Interop(object):
 
    Returns: Rhino_DotNet object on success. This will be an independent copy.
   """
-  pass
- @staticmethod
- def TryCopyFromOnArc(source,destination):
-  """
+        pass
+
+    @staticmethod
+    def TryCopyFromOnArc(source, destination):
+        """
   TryCopyFromOnArc(source: object) -> (bool,Arc)
 
   
@@ -985,10 +1049,11 @@ class Interop(object):
 
    Returns: true if the operation succeeded; false otherwise.
   """
-  pass
- @staticmethod
- def TryCopyToOnArc(source,destination):
-  """
+        pass
+
+    @staticmethod
+    def TryCopyToOnArc(source, destination):
+        """
   TryCopyToOnArc(source: Arc,destination: object) -> bool
 
   
@@ -1003,35 +1068,37 @@ class Interop(object):
 
    Returns: true if the operation succeeded; false otherwise.
   """
-  pass
- __all__=[
-  'CreateFromNativePointer',
-  'FromOnBrep',
-  'FromOnCurve',
-  'FromOnMesh',
-  'FromOnSurface',
-  'NativeGeometryConstPointer',
-  'NativeGeometryNonConstPointer',
-  'NativeNonConstPointer',
-  'NativeRhinoDocPointer',
-  'PlugInPointer',
-  'RhinoObjectConstPointer',
-  'RhinoObjectFromPointer',
-  'ToIRhinoViewport',
-  'ToOnBrep',
-  'ToOnCurve',
-  'ToOnMesh',
-  'ToOnSurface',
-  'ToOnXform',
-  'TryCopyFromOnArc',
-  'TryCopyToOnArc',
- ]
+        pass
+
+    __all__ = [
+        "CreateFromNativePointer",
+        "FromOnBrep",
+        "FromOnCurve",
+        "FromOnMesh",
+        "FromOnSurface",
+        "NativeGeometryConstPointer",
+        "NativeGeometryNonConstPointer",
+        "NativeNonConstPointer",
+        "NativeRhinoDocPointer",
+        "PlugInPointer",
+        "RhinoObjectConstPointer",
+        "RhinoObjectFromPointer",
+        "ToIRhinoViewport",
+        "ToOnBrep",
+        "ToOnCurve",
+        "ToOnMesh",
+        "ToOnSurface",
+        "ToOnXform",
+        "TryCopyFromOnArc",
+        "TryCopyToOnArc",
+    ]
 
 
 class PythonCompiledCode(object):
- """ Represents scripting compiled code. """
- def Execute(self,scope):
-  """
+    """ Represents scripting compiled code. """
+
+    def Execute(self, scope):
+        """
   Execute(self: PythonCompiledCode,scope: PythonScript)
 
    Executes the script in a specific scope.
@@ -1040,12 +1107,14 @@ class PythonCompiledCode(object):
 
    scope: The scope where the script should be executed.
   """
-  pass
+        pass
+
 
 class PythonScript(object):
- """ Represents a Python script. """
- def Compile(self,script):
-  """
+    """ Represents a Python script. """
+
+    def Compile(self, script):
+        """
   Compile(self: PythonScript,script: str) -> PythonCompiledCode
 
   
@@ -1058,9 +1127,10 @@ class PythonScript(object):
 
    Returns: A Python compiled code instance.
   """
-  pass
- def ContainsVariable(self,name):
-  """
+        pass
+
+    def ContainsVariable(self, name):
+        """
   ContainsVariable(self: PythonScript,name: str) -> bool
 
   
@@ -1073,10 +1143,11 @@ class PythonScript(object):
 
    Returns: true if the variable is present.
   """
-  pass
- @staticmethod
- def Create():
-  """
+        pass
+
+    @staticmethod
+    def Create():
+        """
   Create() -> PythonScript
 
   
@@ -1085,12 +1156,14 @@ class PythonScript(object):
 
    Returns: A new Python script,or null if none could be created. Rhino 4 always returns null.
   """
-  pass
- def CreateTextEditorControl(self,script,helpcallback):
-  """ CreateTextEditorControl(self: PythonScript,script: str,helpcallback: Action[str]) -> Control """
-  pass
- def EvaluateExpression(self,statements,expression):
-  """
+        pass
+
+    def CreateTextEditorControl(self, script, helpcallback):
+        """ CreateTextEditorControl(self: PythonScript,script: str,helpcallback: Action[str]) -> Control """
+        pass
+
+    def EvaluateExpression(self, statements, expression):
+        """
   EvaluateExpression(self: PythonScript,statements: str,expression: str) -> object
 
   
@@ -1105,9 +1178,10 @@ class PythonScript(object):
 
    Returns: The expression result.
   """
-  pass
- def ExecuteFile(self,path):
-  """
+        pass
+
+    def ExecuteFile(self, path):
+        """
   ExecuteFile(self: PythonScript,path: str) -> bool
 
   
@@ -1120,9 +1194,10 @@ class PythonScript(object):
 
    Returns: true if the file executed. This method can throw scripting-runtime based exceptions.
   """
-  pass
- def ExecuteScript(self,script):
-  """
+        pass
+
+    def ExecuteScript(self, script):
+        """
   ExecuteScript(self: PythonScript,script: str) -> bool
 
   
@@ -1135,9 +1210,10 @@ class PythonScript(object):
 
    Returns: true if the file executed. This method can throw scripting-runtime based exceptions.
   """
-  pass
- def GetStackTraceFromException(self,ex):
-  """
+        pass
+
+    def GetStackTraceFromException(self, ex):
+        """
   GetStackTraceFromException(self: PythonScript,ex: Exception) -> str
 
   
@@ -1150,9 +1226,10 @@ class PythonScript(object):
 
    Returns: A string that represents the Python exception.
   """
-  pass
- def GetVariable(self,name):
-  """
+        pass
+
+    def GetVariable(self, name):
+        """
   GetVariable(self: PythonScript,name: str) -> object
 
   
@@ -1165,9 +1242,10 @@ class PythonScript(object):
 
    Returns: The variable object.
   """
-  pass
- def GetVariableNames(self):
-  """
+        pass
+
+    def GetVariableNames(self):
+        """
   GetVariableNames(self: PythonScript) -> IEnumerable[str]
 
   
@@ -1176,9 +1254,10 @@ class PythonScript(object):
 
    Returns: An enumerable set with all names of the variables.
   """
-  pass
- def RemoveVariable(self,name):
-  """
+        pass
+
+    def RemoveVariable(self, name):
+        """
   RemoveVariable(self: PythonScript,name: str)
 
    Removes a defined variable from the main scripting context.
@@ -1187,9 +1266,10 @@ class PythonScript(object):
 
    name: The variable name.
   """
-  pass
- def SetIntellisenseVariable(self,name,value):
-  """
+        pass
+
+    def SetIntellisenseVariable(self, name, value):
+        """
   SetIntellisenseVariable(self: PythonScript,name: str,value: object)
 
    Sets a variable for runtime introspection.
@@ -1200,9 +1280,10 @@ class PythonScript(object):
 
    value: A variable value.
   """
-  pass
- def SetVariable(self,name,value):
-  """
+        pass
+
+    def SetVariable(self, name, value):
+        """
   SetVariable(self: PythonScript,name: str,value: object)
 
    Sets a variable with a name and an object. Object can be null (Nothing in Visual Basic).
@@ -1213,9 +1294,10 @@ class PythonScript(object):
 
    value: A valid value for that variable name.
   """
-  pass
- ContextId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a context unique identified.
+        pass
+
+    ContextId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a context unique identified.
 
 
 
@@ -1227,8 +1309,8 @@ Set: ContextId(self: PythonScript)=value
 
 """
 
- Output=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Python script "print()" target.
+    Output = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Python script "print()" target.
 
    By default string output goes to the Rhino.RhinoApp.Write function.
 
@@ -1246,8 +1328,10 @@ Set: Output(self: PythonScript)=value
 
 """
 
- ScriptContextDoc=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """object set to variable held in scriptcontext.doc.
+    ScriptContextDoc = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """object set to variable held in scriptcontext.doc.
 
 
 
@@ -1260,44 +1344,51 @@ Set: ScriptContextDoc(self: PythonScript)=value
 """
 
 
-
-class RdkNotLoadedException(Exception,ISerializable,_Exception):
- """
+class RdkNotLoadedException(Exception, ISerializable, _Exception):
+    """
  Is thrown when the RDK is not loaded.
 
  
 
  RdkNotLoadedException()
  """
- def add_SerializeObjectState(self,*args):
-  """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def remove_SerializeObjectState(self,*args):
-  """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
+
+    def add_SerializeObjectState(self, *args):
+        """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def remove_SerializeObjectState(self, *args):
+        """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
 
 class Skin(object):
- """
+    """
  Represents a customized environment that changes the appearance of Rhino.
 
     Skin DLLs must contain a single class that derives from the Skin class.
  """
- def HideSplash(self,*args):
-  """
+
+    def HideSplash(self, *args):
+        """
   HideSplash(self: Skin)
 
    Is called when the splash screen should be hidden.
   """
-  pass
- def OnBeginLoadAtStartPlugIns(self,*args):
-  """
+        pass
+
+    def OnBeginLoadAtStartPlugIns(self, *args):
+        """
   OnBeginLoadAtStartPlugIns(self: Skin,expectedCount: int)
 
    Is called when the first plug-in that loads at start-up is going to be loaded.
@@ -1306,9 +1397,10 @@ class Skin(object):
 
    expectedCount: The complete amount of plug-ins.
   """
-  pass
- def OnBeginLoadPlugIn(self,*args):
-  """
+        pass
+
+    def OnBeginLoadPlugIn(self, *args):
+        """
   OnBeginLoadPlugIn(self: Skin,description: str)
 
    Is called when a specific plug-in is going to be loaded.
@@ -1317,44 +1409,50 @@ class Skin(object):
 
    description: The plug-in description.
   """
-  pass
- def OnBuiltInCommandsRegistered(self,*args):
-  """
+        pass
+
+    def OnBuiltInCommandsRegistered(self, *args):
+        """
   OnBuiltInCommandsRegistered(self: Skin)
 
    Is called when built-in commands are registered.
   """
-  pass
- def OnEndLoadAtStartPlugIns(self,*args):
-  """
+        pass
+
+    def OnEndLoadAtStartPlugIns(self, *args):
+        """
   OnEndLoadAtStartPlugIns(self: Skin)
 
    Is called after all of the load at start plug-ins have been loaded.
   """
-  pass
- def OnEndLoadPlugIn(self,*args):
-  """
+        pass
+
+    def OnEndLoadPlugIn(self, *args):
+        """
   OnEndLoadPlugIn(self: Skin)
 
    Is called after each plug-in has been loaded.
   """
-  pass
- def OnLicenseCheckCompleted(self,*args):
-  """
+        pass
+
+    def OnLicenseCheckCompleted(self, *args):
+        """
   OnLicenseCheckCompleted(self: Skin)
 
    Is called when the license check is completed.
   """
-  pass
- def OnMainFrameWindowCreated(self,*args):
-  """
+        pass
+
+    def OnMainFrameWindowCreated(self, *args):
+        """
   OnMainFrameWindowCreated(self: Skin)
 
    Is called when the main frame window is created.
   """
-  pass
- def ShowHelp(self,*args):
-  """
+        pass
+
+    def ShowHelp(self, *args):
+        """
   ShowHelp(self: Skin)
 
    Called when the "help" splash screen should be shown. Default
@@ -1363,30 +1461,36 @@ class Skin(object):
 
     calls ShowSplash()
   """
-  pass
- def ShowSplash(self,*args):
-  """
+        pass
+
+    def ShowSplash(self, *args):
+        """
   ShowSplash(self: Skin)
 
    Is called when the splash screen should be shown.
   """
-  pass
- ApplicationName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If you want to provide a custom name for your skin.
+        pass
+
+    ApplicationName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """If you want to provide a custom name for your skin.
 
 
 
 """
 
- MainRhinoIcon=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If you want to provide a custom icon for your skin.
+    MainRhinoIcon = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """If you want to provide a custom icon for your skin.
 
 
 
 """
 
- Settings=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets access to the skin persistent settings.
+    Settings = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets access to the skin persistent settings.
 
 
 
@@ -1396,9 +1500,7 @@ Get: Settings(self: Skin) -> PersistentSettings
 
 """
 
-
- ActiveSkin=None
+    ActiveSkin = None
 
 
 # variables with complex values
-

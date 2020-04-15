@@ -1,5 +1,5 @@
-class LookupBindingPropertiesAttribute(Attribute,_Attribute):
- """
+class LookupBindingPropertiesAttribute(Attribute, _Attribute):
+    """
  Specifies the properties that support lookup-based binding. This class cannot be inherited.
 
  
@@ -8,8 +8,9 @@ class LookupBindingPropertiesAttribute(Attribute,_Attribute):
 
  LookupBindingPropertiesAttribute(dataSource: str,displayMember: str,valueMember: str,lookupMember: str)
  """
- def Equals(self,obj):
-  """
+
+    def Equals(self, obj):
+        """
   Equals(self: LookupBindingPropertiesAttribute,obj: object) -> bool
 
   
@@ -32,9 +33,10 @@ class LookupBindingPropertiesAttribute(Attribute,_Attribute):
 
     equal.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: LookupBindingPropertiesAttribute) -> int
 
   
@@ -43,25 +45,34 @@ class LookupBindingPropertiesAttribute(Attribute,_Attribute):
 
    Returns: A hash code for the current System.ComponentModel.LookupBindingPropertiesAttribute.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,dataSource=None,displayMember=None,valueMember=None,lookupMember=None):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(
+        self, dataSource=None, displayMember=None, valueMember=None, lookupMember=None
+    ):
+        """
   __new__(cls: type)
 
   __new__(cls: type,dataSource: str,displayMember: str,valueMember: str,lookupMember: str)
   """
-  pass
- def __ne__(self,*args):
-  pass
- DataSource=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name of the data source property for the component to which the System.ComponentModel.LookupBindingPropertiesAttribute is bound.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    DataSource = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the name of the data source property for the component to which the System.ComponentModel.LookupBindingPropertiesAttribute is bound.
 
 
 
@@ -71,8 +82,10 @@ Get: DataSource(self: LookupBindingPropertiesAttribute) -> str
 
 """
 
- DisplayMember=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name of the display member property for the component to which the System.ComponentModel.LookupBindingPropertiesAttribute is bound.
+    DisplayMember = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the name of the display member property for the component to which the System.ComponentModel.LookupBindingPropertiesAttribute is bound.
 
 
 
@@ -82,8 +95,10 @@ Get: DisplayMember(self: LookupBindingPropertiesAttribute) -> str
 
 """
 
- LookupMember=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name of the lookup member for the component to which this attribute is bound.
+    LookupMember = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the name of the lookup member for the component to which this attribute is bound.
 
 
 
@@ -93,8 +108,10 @@ Get: LookupMember(self: LookupBindingPropertiesAttribute) -> str
 
 """
 
- ValueMember=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name of the value member property for the component to which the System.ComponentModel.LookupBindingPropertiesAttribute is bound.
+    ValueMember = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the name of the value member property for the component to which the System.ComponentModel.LookupBindingPropertiesAttribute is bound.
 
 
 
@@ -104,6 +121,4 @@ Get: ValueMember(self: LookupBindingPropertiesAttribute) -> str
 
 """
 
-
- Default=None
-
+    Default = None

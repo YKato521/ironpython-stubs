@@ -1,13 +1,14 @@
-class AttributeCollection(object,ICollection,IEnumerable):
- """
+class AttributeCollection(object, ICollection, IEnumerable):
+    """
  Represents a collection of attributes.
 
  
 
  AttributeCollection(*attributes: Array[Attribute])
  """
- def Contains(self,*__args):
-  """
+
+    def Contains(self, *__args):
+        """
   Contains(self: AttributeCollection,attributes: Array[Attribute]) -> bool
 
   
@@ -38,9 +39,10 @@ class AttributeCollection(object,ICollection,IEnumerable):
 
     attribute; otherwise,false.
   """
-  pass
- def CopyTo(self,array,index):
-  """
+        pass
+
+    def CopyTo(self, array, index):
+        """
   CopyTo(self: AttributeCollection,array: Array,index: int)
 
    Copies the collection to an array,starting at the specified index.
@@ -51,10 +53,11 @@ class AttributeCollection(object,ICollection,IEnumerable):
 
    index: The index to start from.
   """
-  pass
- @staticmethod
- def FromExisting(existing,newAttributes):
-  """
+        pass
+
+    @staticmethod
+    def FromExisting(existing, newAttributes):
+        """
   FromExisting(existing: AttributeCollection,*newAttributes: Array[Attribute]) -> AttributeCollection
 
   
@@ -73,9 +76,10 @@ class AttributeCollection(object,ICollection,IEnumerable):
 
    Returns: A new System.ComponentModel.AttributeCollection that is a copy of existing.
   """
-  pass
- def GetDefaultAttribute(self,*args):
-  """
+        pass
+
+    def GetDefaultAttribute(self, *args):
+        """
   GetDefaultAttribute(self: AttributeCollection,attributeType: Type) -> Attribute
 
   
@@ -88,9 +92,10 @@ class AttributeCollection(object,ICollection,IEnumerable):
 
    Returns: An System.Attribute.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: AttributeCollection) -> IEnumerator
 
   
@@ -99,9 +104,10 @@ class AttributeCollection(object,ICollection,IEnumerable):
 
    Returns: An enumerator of type System.Collections.IEnumerator.
   """
-  pass
- def Matches(self,*__args):
-  """
+        pass
+
+    def Matches(self, *__args):
+        """
   Matches(self: AttributeCollection,attributes: Array[Attribute]) -> bool
 
   
@@ -136,39 +142,48 @@ class AttributeCollection(object,ICollection,IEnumerable):
 
     in the collection; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,attributes):
-  """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, attributes):
+        """
   __new__(cls: type,*attributes: Array[Attribute])
 
   __new__(cls: type)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Attributes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the attribute collection.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Attributes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the attribute collection.
 
 
 
 """
 
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of attributes.
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of attributes.
 
 
 
@@ -178,6 +193,4 @@ Get: Count(self: AttributeCollection) -> int
 
 """
 
-
- Empty=None
-
+    Empty = None

@@ -1,5 +1,12 @@
-class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarget,ISupportOleDropSource,IArrangedElement):
- """
+class ToolStripProgressBar(
+    ToolStripControlHost,
+    IComponent,
+    IDisposable,
+    IDropTarget,
+    ISupportOleDropSource,
+    IArrangedElement,
+):
+    """
  Represents a Windows progress bar control contained in a System.Windows.Forms.StatusStrip.
 
  
@@ -8,11 +15,13 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
  ToolStripProgressBar(name: str)
  """
- def CreateAccessibilityInstance(self,*args):
-  """ CreateAccessibilityInstance(self: ToolStripControlHost) -> AccessibleObject """
-  pass
- def Dispose(self):
-  """
+
+    def CreateAccessibilityInstance(self, *args):
+        """ CreateAccessibilityInstance(self: ToolStripControlHost) -> AccessibleObject """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: ToolStripControlHost,disposing: bool)
 
    Releases the unmanaged resources used by the System.Windows.Forms.ToolStripControlHost and 
@@ -25,9 +34,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -46,9 +56,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def Increment(self,value):
-  """
+        pass
+
+    def Increment(self, value):
+        """
   Increment(self: ToolStripProgressBar,value: int)
 
    Advances the current position of the progress bar by the specified amount.
@@ -57,9 +68,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    value: The amount by which to increment the progress bar's current position.
   """
-  pass
- def IsInputChar(self,*args):
-  """
+        pass
+
+    def IsInputChar(self, *args):
+        """
   IsInputChar(self: ToolStripItem,charCode: Char) -> bool
 
   
@@ -72,9 +84,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    Returns: true if the character should be sent directly to the item and not preprocessed; otherwise,false.
   """
-  pass
- def IsInputKey(self,*args):
-  """
+        pass
+
+    def IsInputKey(self, *args):
+        """
   IsInputKey(self: ToolStripItem,keyData: Keys) -> bool
 
   
@@ -91,9 +104,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    Returns: true if the specified key is a regular input key; otherwise,false.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -124,9 +138,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def OnAvailableChanged(self,*args):
-  """
+        pass
+
+    def OnAvailableChanged(self, *args):
+        """
   OnAvailableChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the AvailableChanged event.
@@ -135,9 +150,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBackColorChanged(self,*args):
-  """
+        pass
+
+    def OnBackColorChanged(self, *args):
+        """
   OnBackColorChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.BackColorChanged event.
@@ -146,16 +162,18 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBoundsChanged(self,*args):
-  """
+        pass
+
+    def OnBoundsChanged(self, *args):
+        """
   OnBoundsChanged(self: ToolStripControlHost)
 
    Occurs when the System.Windows.Forms.ToolStripItem.Bounds property changes.
   """
-  pass
- def OnClick(self,*args):
-  """
+        pass
+
+    def OnClick(self, *args):
+        """
   OnClick(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.Click event.
@@ -164,9 +182,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDisplayStyleChanged(self,*args):
-  """
+        pass
+
+    def OnDisplayStyleChanged(self, *args):
+        """
   OnDisplayStyleChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DisplayStyleChanged event.
@@ -175,9 +194,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDoubleClick(self,*args):
-  """
+        pass
+
+    def OnDoubleClick(self, *args):
+        """
   OnDoubleClick(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DoubleClick event.
@@ -186,9 +206,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDragDrop(self,*args):
-  """
+        pass
+
+    def OnDragDrop(self, *args):
+        """
   OnDragDrop(self: ToolStripItem,dragEvent: DragEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DragDrop event.
@@ -197,9 +218,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    dragEvent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnDragEnter(self,*args):
-  """
+        pass
+
+    def OnDragEnter(self, *args):
+        """
   OnDragEnter(self: ToolStripItem,dragEvent: DragEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DragEnter event.
@@ -208,9 +230,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    dragEvent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnDragLeave(self,*args):
-  """
+        pass
+
+    def OnDragLeave(self, *args):
+        """
   OnDragLeave(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DragLeave event.
@@ -219,9 +242,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnDragOver(self,*args):
-  """
+        pass
+
+    def OnDragOver(self, *args):
+        """
   OnDragOver(self: ToolStripItem,dragEvent: DragEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.DragOver event.
@@ -230,9 +254,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    dragEvent: A System.Windows.Forms.DragEventArgs that contains the event data.
   """
-  pass
- def OnEnabledChanged(self,*args):
-  """
+        pass
+
+    def OnEnabledChanged(self, *args):
+        """
   OnEnabledChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.EnabledChanged event.
@@ -241,9 +266,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnEnter(self,*args):
-  """
+        pass
+
+    def OnEnter(self, *args):
+        """
   OnEnter(self: ToolStripControlHost,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.Enter event.
@@ -252,9 +278,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnFontChanged(self,*args):
-  """
+        pass
+
+    def OnFontChanged(self, *args):
+        """
   OnFontChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.FontChanged event.
@@ -263,9 +290,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnForeColorChanged(self,*args):
-  """
+        pass
+
+    def OnForeColorChanged(self, *args):
+        """
   OnForeColorChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.ForeColorChanged event.
@@ -274,9 +302,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnGiveFeedback(self,*args):
-  """
+        pass
+
+    def OnGiveFeedback(self, *args):
+        """
   OnGiveFeedback(self: ToolStripItem,giveFeedbackEvent: GiveFeedbackEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.GiveFeedback event.
@@ -285,9 +314,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    giveFeedbackEvent: A System.Windows.Forms.GiveFeedbackEventArgs that contains the event data.
   """
-  pass
- def OnGotFocus(self,*args):
-  """
+        pass
+
+    def OnGotFocus(self, *args):
+        """
   OnGotFocus(self: ToolStripControlHost,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.GotFocus event.
@@ -296,9 +326,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnHostedControlResize(self,*args):
-  """
+        pass
+
+    def OnHostedControlResize(self, *args):
+        """
   OnHostedControlResize(self: ToolStripControlHost,e: EventArgs)
 
    Synchronizes the resizing of the control host with the resizing of the hosted control.
@@ -307,9 +338,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnKeyDown(self,*args):
-  """
+        pass
+
+    def OnKeyDown(self, *args):
+        """
   OnKeyDown(self: ToolStripControlHost,e: KeyEventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.KeyDown event.
@@ -318,9 +350,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: A System.Windows.Forms.KeyEventArgs that contains the event data.
   """
-  pass
- def OnKeyPress(self,*args):
-  """
+        pass
+
+    def OnKeyPress(self, *args):
+        """
   OnKeyPress(self: ToolStripControlHost,e: KeyPressEventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.KeyPress event.
@@ -329,9 +362,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: A System.Windows.Forms.KeyPressEventArgs that contains the event data.
   """
-  pass
- def OnKeyUp(self,*args):
-  """
+        pass
+
+    def OnKeyUp(self, *args):
+        """
   OnKeyUp(self: ToolStripControlHost,e: KeyEventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.KeyUp event.
@@ -340,16 +374,18 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: A System.Windows.Forms.KeyEventArgs that contains the event data.
   """
-  pass
- def OnLayout(self,*args):
-  """
+        pass
+
+    def OnLayout(self, *args):
+        """
   OnLayout(self: ToolStripControlHost,e: LayoutEventArgs)
 
    e: A System.Windows.Forms.LayoutEventArgs that contains the event data.
   """
-  pass
- def OnLeave(self,*args):
-  """
+        pass
+
+    def OnLeave(self, *args):
+        """
   OnLeave(self: ToolStripControlHost,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.Leave event.
@@ -358,9 +394,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: A System.EventArgs that contains the event data.
   """
-  pass
- def OnLocationChanged(self,*args):
-  """
+        pass
+
+    def OnLocationChanged(self, *args):
+        """
   OnLocationChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.LocationChanged event.
@@ -369,9 +406,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnLostFocus(self,*args):
-  """
+        pass
+
+    def OnLostFocus(self, *args):
+        """
   OnLostFocus(self: ToolStripControlHost,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.LostFocus event.
@@ -380,9 +418,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: A System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseDown(self,*args):
-  """
+        pass
+
+    def OnMouseDown(self, *args):
+        """
   OnMouseDown(self: ToolStripItem,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseDown event.
@@ -391,9 +430,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseEnter(self,*args):
-  """
+        pass
+
+    def OnMouseEnter(self, *args):
+        """
   OnMouseEnter(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseEnter event.
@@ -402,9 +442,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseHover(self,*args):
-  """
+        pass
+
+    def OnMouseHover(self, *args):
+        """
   OnMouseHover(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseHover event.
@@ -413,9 +454,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseLeave(self,*args):
-  """
+        pass
+
+    def OnMouseLeave(self, *args):
+        """
   OnMouseLeave(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseLeave event.
@@ -424,9 +466,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMouseMove(self,*args):
-  """
+        pass
+
+    def OnMouseMove(self, *args):
+        """
   OnMouseMove(self: ToolStripItem,mea: MouseEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseMove event.
@@ -435,9 +478,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    mea: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseUp(self,*args):
-  """
+        pass
+
+    def OnMouseUp(self, *args):
+        """
   OnMouseUp(self: ToolStripItem,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.MouseUp event.
@@ -446,9 +490,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def OnOwnerChanged(self,*args):
-  """
+        pass
+
+    def OnOwnerChanged(self, *args):
+        """
   OnOwnerChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.OwnerChanged event.
@@ -457,9 +502,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnOwnerFontChanged(self,*args):
-  """
+        pass
+
+    def OnOwnerFontChanged(self, *args):
+        """
   OnOwnerFontChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.Control.FontChanged event when the 
@@ -474,16 +520,18 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: A System.EventArgs that contains the event data.
   """
-  pass
- def OnPaint(self,*args):
-  """
+        pass
+
+    def OnPaint(self, *args):
+        """
   OnPaint(self: ToolStripControlHost,e: PaintEventArgs)
 
    e: A System.Windows.Forms.PaintEventArgs that contains the event data.
   """
-  pass
- def OnParentBackColorChanged(self,*args):
-  """
+        pass
+
+    def OnParentBackColorChanged(self, *args):
+        """
   OnParentBackColorChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.BackColorChanged event.
@@ -492,18 +540,20 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentChanged(self,*args):
-  """
+        pass
+
+    def OnParentChanged(self, *args):
+        """
   OnParentChanged(self: ToolStripControlHost,oldParent: ToolStrip,newParent: ToolStrip)
 
    oldParent: The original parent of the item.
 
    newParent: The new parent of the item.
   """
-  pass
- def OnParentEnabledChanged(self,*args):
-  """
+        pass
+
+    def OnParentEnabledChanged(self, *args):
+        """
   OnParentEnabledChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.EnabledChanged event when the 
@@ -516,9 +566,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentForeColorChanged(self,*args):
-  """
+        pass
+
+    def OnParentForeColorChanged(self, *args):
+        """
   OnParentForeColorChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.ForeColorChanged event.
@@ -527,9 +578,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnParentRightToLeftChanged(self,*args):
-  """
+        pass
+
+    def OnParentRightToLeftChanged(self, *args):
+        """
   OnParentRightToLeftChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.RightToLeftChanged event.
@@ -538,9 +590,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnQueryContinueDrag(self,*args):
-  """
+        pass
+
+    def OnQueryContinueDrag(self, *args):
+        """
   OnQueryContinueDrag(self: ToolStripItem,queryContinueDragEvent: QueryContinueDragEventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.QueryContinueDrag event.
@@ -549,9 +602,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    queryContinueDragEvent: A System.Windows.Forms.QueryContinueDragEventArgs that contains the event data.
   """
-  pass
- def OnRightToLeftChanged(self,*args):
-  """
+        pass
+
+    def OnRightToLeftChanged(self, *args):
+        """
   OnRightToLeftChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.RightToLeftChanged event.
@@ -560,9 +614,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnRightToLeftLayoutChanged(self,*args):
-  """
+        pass
+
+    def OnRightToLeftLayoutChanged(self, *args):
+        """
   OnRightToLeftLayoutChanged(self: ToolStripProgressBar,e: EventArgs)
 
    Raises the System.Windows.Forms.ProgressBar.RightToLeftLayoutChanged event.
@@ -571,16 +626,18 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnSubscribeControlEvents(self,*args):
-  """
+        pass
+
+    def OnSubscribeControlEvents(self, *args):
+        """
   OnSubscribeControlEvents(self: ToolStripProgressBar,control: Control)
 
    control: The control from which to subscribe events.
   """
-  pass
- def OnTextChanged(self,*args):
-  """
+        pass
+
+    def OnTextChanged(self, *args):
+        """
   OnTextChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.TextChanged event.
@@ -589,16 +646,18 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnUnsubscribeControlEvents(self,*args):
-  """
+        pass
+
+    def OnUnsubscribeControlEvents(self, *args):
+        """
   OnUnsubscribeControlEvents(self: ToolStripProgressBar,control: Control)
 
    control: The control from which to unsubscribe events.
   """
-  pass
- def OnValidated(self,*args):
-  """
+        pass
+
+    def OnValidated(self, *args):
+        """
   OnValidated(self: ToolStripControlHost,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.Validated event.
@@ -607,9 +666,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: A System.EventArgs that contains the event data.
   """
-  pass
- def OnValidating(self,*args):
-  """
+        pass
+
+    def OnValidating(self, *args):
+        """
   OnValidating(self: ToolStripControlHost,e: CancelEventArgs)
 
    Raises the System.Windows.Forms.ToolStripControlHost.Validating event.
@@ -618,9 +678,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: A System.ComponentModel.CancelEventArgs that contains the event data.
   """
-  pass
- def OnVisibleChanged(self,*args):
-  """
+        pass
+
+    def OnVisibleChanged(self, *args):
+        """
   OnVisibleChanged(self: ToolStripItem,e: EventArgs)
 
    Raises the System.Windows.Forms.ToolStripItem.VisibleChanged event.
@@ -629,18 +690,20 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def PerformStep(self):
-  """
+        pass
+
+    def PerformStep(self):
+        """
   PerformStep(self: ToolStripProgressBar)
 
    Advances the current position of the progress bar by the amount of the 
 
     System.Windows.Forms.ToolStripProgressBar.Step property.
   """
-  pass
- def ProcessCmdKey(self,*args):
-  """
+        pass
+
+    def ProcessCmdKey(self, *args):
+        """
   ProcessCmdKey(self: ToolStripControlHost,m: Message,keyData: Keys) -> (bool,Message)
 
   
@@ -659,9 +722,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    Returns: false in all cases.
   """
-  pass
- def ProcessDialogKey(self,*args):
-  """
+        pass
+
+    def ProcessDialogKey(self, *args):
+        """
   ProcessDialogKey(self: ToolStripControlHost,keyData: Keys) -> bool
 
   
@@ -674,9 +738,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    Returns: true if the key was processed by the item; otherwise,false.
   """
-  pass
- def ProcessMnemonic(self,*args):
-  """
+        pass
+
+    def ProcessMnemonic(self, *args):
+        """
   ProcessMnemonic(self: ToolStripControlHost,charCode: Char) -> bool
 
   
@@ -689,9 +754,10 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
    Returns: true if the character was processed as a mnemonic by the control; otherwise,false.
   """
-  pass
- def SetBounds(self,*args):
-  """
+        pass
+
+    def SetBounds(self, *args):
+        """
   SetBounds(self: ToolStripItem,bounds: Rectangle)
 
    Sets the size and location of the item.
@@ -702,45 +768,54 @@ class ToolStripProgressBar(ToolStripControlHost,IComponent,IDisposable,IDropTarg
 
     System.Windows.Forms.ToolStripItem
   """
-  pass
- def SetVisibleCore(self,*args):
-  """
+        pass
+
+    def SetVisibleCore(self, *args):
+        """
   SetVisibleCore(self: ToolStripControlHost,visible: bool)
 
    visible: true to make the System.Windows.Forms.ToolStripItem visible; otherwise,false.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,name=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, name=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,name: str)
   """
-  pass
- def __str__(self,*args):
-  pass
- BackgroundImage=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    BackgroundImage = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property is not relevant to this class.
 
 
 
@@ -752,8 +827,10 @@ Set: BackgroundImage(self: ToolStripProgressBar)=value
 
 """
 
- BackgroundImageLayout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not relevant to this class.
+    BackgroundImageLayout = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property is not relevant to this class.
 
 
 
@@ -765,71 +842,89 @@ Set: BackgroundImageLayout(self: ToolStripProgressBar)=value
 
 """
 
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- DefaultAutoToolTip=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether to display the System.Windows.Forms.ToolTip that is defined as the default.
+    DefaultAutoToolTip = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether to display the System.Windows.Forms.ToolTip that is defined as the default.
 
 
 
 """
 
- DefaultDisplayStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating what is displayed on the System.Windows.Forms.ToolStripItem.
+    DefaultDisplayStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating what is displayed on the System.Windows.Forms.ToolStripItem.
 
 
 
 """
 
- DefaultMargin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the spacing between the System.Windows.Forms.ToolStripProgressBar and adjacent items.
+    DefaultMargin = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the spacing between the System.Windows.Forms.ToolStripProgressBar and adjacent items.
 
 
 
 """
 
- DefaultPadding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the internal spacing characteristics of the item.
+    DefaultPadding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the internal spacing characteristics of the item.
 
 
 
 """
 
- DefaultSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the height and width of the System.Windows.Forms.ToolStripProgressBar in pixels.
+    DefaultSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the height and width of the System.Windows.Forms.ToolStripProgressBar in pixels.
 
 
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- DismissWhenClicked=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether items on a System.Windows.Forms.ToolStripDropDown are hidden after they are clicked.
+    DismissWhenClicked = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether items on a System.Windows.Forms.ToolStripDropDown are hidden after they are clicked.
 
 
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- MarqueeAnimationSpeed=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value representing the delay between each System.Windows.Forms.ProgressBarStyle.Marquee display update,in milliseconds.
+    MarqueeAnimationSpeed = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value representing the delay between each System.Windows.Forms.ProgressBarStyle.Marquee display update,in milliseconds.
 
 
 
@@ -841,8 +936,8 @@ Set: MarqueeAnimationSpeed(self: ToolStripProgressBar)=value
 
 """
 
- Maximum=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the upper bound of the range that is defined for this System.Windows.Forms.ToolStripProgressBar.
+    Maximum = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the upper bound of the range that is defined for this System.Windows.Forms.ToolStripProgressBar.
 
 
 
@@ -854,8 +949,8 @@ Set: Maximum(self: ToolStripProgressBar)=value
 
 """
 
- Minimum=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the lower bound of the range that is defined for this System.Windows.Forms.ToolStripProgressBar.
+    Minimum = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the lower bound of the range that is defined for this System.Windows.Forms.ToolStripProgressBar.
 
 
 
@@ -867,15 +962,17 @@ Set: Minimum(self: ToolStripProgressBar)=value
 
 """
 
- Parent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the parent container of the System.Windows.Forms.ToolStripItem.
+    Parent = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the parent container of the System.Windows.Forms.ToolStripItem.
 
 
 
 """
 
- ProgressBar=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Forms.ProgressBar.
+    ProgressBar = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Windows.Forms.ProgressBar.
 
 
 
@@ -885,8 +982,10 @@ Get: ProgressBar(self: ToolStripProgressBar) -> ProgressBar
 
 """
 
- RightToLeftLayout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the System.Windows.Forms.ToolStripProgressBar layout is right-to-left or left-to-right when the System.Windows.Forms.RightToLeft property is set to System.Windows.Forms.RightToLeft.Yes.
+    RightToLeftLayout = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the System.Windows.Forms.ToolStripProgressBar layout is right-to-left or left-to-right when the System.Windows.Forms.RightToLeft property is set to System.Windows.Forms.RightToLeft.Yes.
 
 
 
@@ -898,15 +997,17 @@ Set: RightToLeftLayout(self: ToolStripProgressBar)=value
 
 """
 
- ShowKeyboardCues=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether to show or hide shortcut keys.
+    ShowKeyboardCues = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether to show or hide shortcut keys.
 
 
 
 """
 
- Step=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the amount by which to increment the current value of the System.Windows.Forms.ToolStripProgressBar when the System.Windows.Forms.ToolStripProgressBar.PerformStep method is called.
+    Step = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the amount by which to increment the current value of the System.Windows.Forms.ToolStripProgressBar when the System.Windows.Forms.ToolStripProgressBar.PerformStep method is called.
 
 
 
@@ -918,8 +1019,8 @@ Set: Step(self: ToolStripProgressBar)=value
 
 """
 
- Style=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the style of the System.Windows.Forms.ToolStripProgressBar.
+    Style = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the style of the System.Windows.Forms.ToolStripProgressBar.
 
 
 
@@ -931,8 +1032,8 @@ Set: Style(self: ToolStripProgressBar)=value
 
 """
 
- Text=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the text displayed on the System.Windows.Forms.ToolStripProgressBar.
+    Text = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the text displayed on the System.Windows.Forms.ToolStripProgressBar.
 
 
 
@@ -944,8 +1045,8 @@ Set: Text(self: ToolStripProgressBar)=value
 
 """
 
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the current value of the System.Windows.Forms.ToolStripProgressBar.
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the current value of the System.Windows.Forms.ToolStripProgressBar.
 
 
 
@@ -957,14 +1058,12 @@ Set: Value(self: ToolStripProgressBar)=value
 
 """
 
-
- KeyDown=None
- KeyPress=None
- KeyUp=None
- LocationChanged=None
- OwnerChanged=None
- RightToLeftLayoutChanged=None
- TextChanged=None
- Validated=None
- Validating=None
-
+    KeyDown = None
+    KeyPress = None
+    KeyUp = None
+    LocationChanged = None
+    OwnerChanged = None
+    RightToLeftLayoutChanged = None
+    TextChanged = None
+    Validated = None
+    Validating = None

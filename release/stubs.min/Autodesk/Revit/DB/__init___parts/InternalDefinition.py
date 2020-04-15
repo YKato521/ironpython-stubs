@@ -1,5 +1,5 @@
-class InternalDefinition(Definition,IDisposable):
- """
+class InternalDefinition(Definition, IDisposable):
+    """
  This object represents a parameter definition in Autodesk Revit.
 
     Every parameter has a ParamDef object which defines what kind of parameter it is,its properties,its behavior,etc.
@@ -18,14 +18,17 @@ class InternalDefinition(Definition,IDisposable):
 
     determines what kind of control will be used for the parameter in properties grids: edit box,combo box,pushbutton,etc.
  """
- def Dispose(self):
-  """ Dispose(self: InternalDefinition) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: InternalDefinition,disposing: bool) """
-  pass
- def SetAllowVaryBetweenGroups(self,document,allowVaryBetweenGroups):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: InternalDefinition) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: InternalDefinition,disposing: bool) """
+        pass
+
+    def SetAllowVaryBetweenGroups(self, document, allowVaryBetweenGroups):
+        """
   SetAllowVaryBetweenGroups(self: InternalDefinition,document: Document,allowVaryBetweenGroups: bool) -> ICollection[ElementId]
 
   
@@ -40,18 +43,24 @@ class InternalDefinition(Definition,IDisposable):
 
    Returns: The ids of elements that were updated to align the values between groups.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- BuiltInParameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Tests whether this definition identifies a built-in parameter or not.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    BuiltInParameter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Tests whether this definition identifies a built-in parameter or not.
 
 
 
@@ -61,8 +70,8 @@ Get: BuiltInParameter(self: InternalDefinition) -> BuiltInParameter
 
 """
 
- Id=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the parameter.
+    Id = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The id of the parameter.
 
 
 
@@ -72,8 +81,10 @@ Get: Id(self: InternalDefinition) -> ElementId
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -83,8 +94,8 @@ Get: IsValidObject(self: InternalDefinition) -> bool
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The user-visible name for the parameter.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The user-visible name for the parameter.
 
 
 
@@ -94,8 +105,10 @@ Get: Name(self: InternalDefinition) -> str
 
 """
 
- ParameterGroup=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Id of a built-in parameter group to which the parameter defined by this definition belongs.
+    ParameterGroup = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Id of a built-in parameter group to which the parameter defined by this definition belongs.
 
 
 
@@ -107,8 +120,10 @@ Set: ParameterGroup(self: InternalDefinition)=value
 
 """
 
- ParameterType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the user-visible interpretation of the parameter data.
+    ParameterType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the user-visible interpretation of the parameter data.
 
 
 
@@ -118,8 +133,10 @@ Get: ParameterType(self: InternalDefinition) -> ParameterType
 
 """
 
- VariesAcrossGroups=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether or not the parameter values can vary across group members.
+    VariesAcrossGroups = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether or not the parameter values can vary across group members.
 
 
 
@@ -129,8 +146,8 @@ Get: VariesAcrossGroups(self: InternalDefinition) -> bool
 
 """
 
- Visible=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the parameter is visible in the Autodesk Revit user interface.
+    Visible = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Indicates if the parameter is visible in the Autodesk Revit user interface.
 
 
 
@@ -139,5 +156,3 @@ Get: Visible(self: InternalDefinition) -> bool
 
 
 """
-
-

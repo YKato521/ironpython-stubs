@@ -1,13 +1,14 @@
 class ImageConverter(TypeConverter):
- """
+    """
  System.Drawing.ImageConverter  is a class that can be used to convert System.Drawing.Image objects from one data type to another. Access this class through the System.ComponentModel.TypeDescriptor object.
 
  
 
  ImageConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: ImageConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -28,9 +29,10 @@ class ImageConverter(TypeConverter):
 
     otherwise,false.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: ImageConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -51,9 +53,10 @@ class ImageConverter(TypeConverter):
 
     otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: ImageConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -72,9 +75,10 @@ class ImageConverter(TypeConverter):
 
     specified object. Otherwise,it throws an exception.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: ImageConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -107,9 +111,10 @@ class ImageConverter(TypeConverter):
 
    Returns: This method returns the converted object.
   """
-  pass
- def GetProperties(self,*__args):
-  """
+        pass
+
+    def GetProperties(self, *__args):
+        """
   GetProperties(self: ImageConverter,context: ITypeDescriptorContext,value: object,attributes: Array[Attribute]) -> PropertyDescriptorCollection
 
   
@@ -128,9 +133,10 @@ class ImageConverter(TypeConverter):
 
     exposed,this can return null. The default implementation always returns null.
   """
-  pass
- def GetPropertiesSupported(self,context=None):
-  """
+        pass
+
+    def GetPropertiesSupported(self, context=None):
+        """
   GetPropertiesSupported(self: ImageConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -145,4 +151,4 @@ class ImageConverter(TypeConverter):
 
     be called to find the properties of this object.
   """
-  pass
+        pass

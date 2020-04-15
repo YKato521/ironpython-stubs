@@ -8,6 +8,7 @@
 # no functions
 # classes
 
+
 class ModelHistory(object):
     # no doc
     @staticmethod
@@ -33,7 +34,8 @@ class ModelHistory(object):
     @staticmethod
     def GetModifications(Name, *__args):
         """
-        GetModifications(Name: str, ObjectTypes: IEnumerable[ModelObjectEnum], PrevStamp: ModificationStamp) -> ModificationInfo
+        GetModifications(Name: str, ObjectTypes: IEnumerable[ModelObjectEnum], PrevStamp: ModificationStamp) -> ModificationInfo
+
         GetModifications(Name: str, PrevStamp: ModificationStamp) -> ModificationInfo
         """
         pass
@@ -56,7 +58,8 @@ class ModelHistory(object):
     @staticmethod
     def TakeModifications(Name, *__args):
         """
-        TakeModifications(Name: str, ObjectTypes: IEnumerable[ModelObjectEnum], PrevStamp: ModificationStamp) -> ModificationInfo
+        TakeModifications(Name: str, ObjectTypes: IEnumerable[ModelObjectEnum], PrevStamp: ModificationStamp) -> ModificationInfo
+
         TakeModifications(Name: str, PrevStamp: ModificationStamp) -> ModificationInfo
         """
         pass
@@ -67,17 +70,17 @@ class ModelHistory(object):
         pass
 
     __all__ = [
-        '__reduce_ex__',
-        'GetCurrentModificationStamp',
-        'GetDeletedObjects',
-        'GetDeletedObjectsWithType',
-        'GetLocalChanges',
-        'GetModifications',
-        'GetModifiedObjects',
-        'GetModifiedObjectsWithType',
-        'GetNotSharedObjects',
-        'TakeModifications',
-        'UpdateModificationStampToLatest',
+        "__reduce_ex__",
+        "GetCurrentModificationStamp",
+        "GetDeletedObjects",
+        "GetDeletedObjectsWithType",
+        "GetLocalChanges",
+        "GetModifications",
+        "GetModifiedObjects",
+        "GetModifiedObjectsWithType",
+        "GetNotSharedObjects",
+        "TakeModifications",
+        "UpdateModificationStampToLatest",
     ]
 
 
@@ -90,34 +93,50 @@ class ModificationInfo(object):
 
 class ModificationStamp(object):
     """
-    ModificationStamp()
+    ModificationStamp()
+
     ModificationStamp(LocalStamp: int, ServerStamp: int)
     """
-    @staticmethod # known case of __new__
+
+    @staticmethod  # known case of __new__
     def __new__(self, LocalStamp=None, ServerStamp=None):
         """
-        __new__(cls: type)
+        __new__(cls: type)
+
         __new__(cls: type, LocalStamp: int, ServerStamp: int)
         """
         pass
 
-    Guid = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Guid(self: ModificationStamp) -> str
-
+    Guid = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Guid(self: ModificationStamp) -> str
+
+
+
 """
 
-    LocalStamp = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: LocalStamp(self: ModificationStamp) -> int
-
-Set: LocalStamp(self: ModificationStamp) = value
+    LocalStamp = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: LocalStamp(self: ModificationStamp) -> int
+
+
+
+Set: LocalStamp(self: ModificationStamp) = value
+
 """
 
-    ServerStamp = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: ServerStamp(self: ModificationStamp) -> int
-
-Set: ServerStamp(self: ModificationStamp) = value
-"""
+    ServerStamp = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: ServerStamp(self: ModificationStamp) -> int
 
+
+
+Set: ServerStamp(self: ModificationStamp) = value
+
+"""
 
 
 class ModifiedObjectInfo(object):
@@ -127,5 +146,3 @@ class ModifiedObjectInfo(object):
     IsModified = None
     IsNumberingChanged = None
     ModelObject = None
-
-

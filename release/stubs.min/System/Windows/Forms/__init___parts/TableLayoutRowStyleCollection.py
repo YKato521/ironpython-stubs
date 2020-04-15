@@ -1,7 +1,10 @@
-class TableLayoutRowStyleCollection(TableLayoutStyleCollection,IList,ICollection,IEnumerable):
- """ A collection that stores System.Windows.Forms.RowStyle objects. """
- def Add(self,*__args):
-  """
+class TableLayoutRowStyleCollection(
+    TableLayoutStyleCollection, IList, ICollection, IEnumerable
+):
+    """ A collection that stores System.Windows.Forms.RowStyle objects. """
+
+    def Add(self, *__args):
+        """
   Add(self: TableLayoutRowStyleCollection,rowStyle: RowStyle) -> int
 
   
@@ -22,9 +25,10 @@ class TableLayoutRowStyleCollection(TableLayoutStyleCollection,IList,ICollection
 
    Returns: The position into which the new element was inserted.
   """
-  pass
- def Contains(self,rowStyle):
-  """
+        pass
+
+    def Contains(self, rowStyle):
+        """
   Contains(self: TableLayoutRowStyleCollection,rowStyle: RowStyle) -> bool
 
   
@@ -47,9 +51,10 @@ class TableLayoutRowStyleCollection(TableLayoutStyleCollection,IList,ICollection
 
     System.Windows.Forms.TableLayoutRowStyleCollection; otherwise,false.
   """
-  pass
- def IndexOf(self,rowStyle):
-  """
+        pass
+
+    def IndexOf(self, rowStyle):
+        """
   IndexOf(self: TableLayoutRowStyleCollection,rowStyle: RowStyle) -> int
 
   
@@ -72,9 +77,10 @@ class TableLayoutRowStyleCollection(TableLayoutStyleCollection,IList,ICollection
 
     otherwise,-1.
   """
-  pass
- def Insert(self,index,rowStyle):
-  """
+        pass
+
+    def Insert(self, index, rowStyle):
+        """
   Insert(self: TableLayoutRowStyleCollection,index: int,rowStyle: RowStyle)
 
    Inserts a System.Windows.Forms.RowStyle into the 
@@ -91,9 +97,10 @@ class TableLayoutRowStyleCollection(TableLayoutStyleCollection,IList,ICollection
 
     System.Windows.Forms.TableLayoutRowStyleCollection. The value can be null.
   """
-  pass
- def Remove(self,rowStyle):
-  """
+        pass
+
+    def Remove(self, rowStyle):
+        """
   Remove(self: TableLayoutRowStyleCollection,rowStyle: RowStyle)
 
    Removes the first occurrence of a specific object from the 
@@ -108,19 +115,24 @@ class TableLayoutRowStyleCollection(TableLayoutStyleCollection,IList,ICollection
 
     System.Windows.Forms.TableLayoutRowStyleCollection. The value can be null.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass

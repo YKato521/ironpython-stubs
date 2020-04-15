@@ -1,11 +1,12 @@
 class IFailuresPreprocessor:
- """
+    """
  An interface that may be used to perform a preprocessing step to either filter out anticipated transaction failures
 
     or to mark certain failures as non-continuable.
  """
- def PreprocessFailures(self,failuresAccessor):
-  """
+
+    def PreprocessFailures(self, failuresAccessor):
+        """
   PreprocessFailures(self: IFailuresPreprocessor,failuresAccessor: FailuresAccessor) -> FailureProcessingResult
 
   
@@ -58,7 +59,8 @@ class IFailuresPreprocessor:
 
     values are not allowed.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

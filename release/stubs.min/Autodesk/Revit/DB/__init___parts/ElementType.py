@@ -1,10 +1,12 @@
-class ElementType(Element,IDisposable):
- """ Base class for all Types within Autodesk Revit. """
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def Duplicate(self,name):
-  """
+class ElementType(Element, IDisposable):
+    """ Base class for all Types within Autodesk Revit. """
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def Duplicate(self, name):
+        """
   Duplicate(self: ElementType,name: str) -> ElementType
 
   
@@ -17,12 +19,14 @@ class ElementType(Element,IDisposable):
 
    Returns: The duplicated element type.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetPreviewImage(self,size):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetPreviewImage(self, size):
+        """
   GetPreviewImage(self: ElementType,size: Size) -> Bitmap
 
   
@@ -41,9 +45,10 @@ class ElementType(Element,IDisposable):
 
     image.
   """
-  pass
- def GetSimilarTypes(self):
-  """
+        pass
+
+    def GetSimilarTypes(self):
+        """
   GetSimilarTypes(self: ElementType) -> ICollection[ElementId]
 
   
@@ -52,9 +57,10 @@ class ElementType(Element,IDisposable):
 
    Returns: A set of element IDs of types that are similar to this type.
   """
-  pass
- def IsSimilarType(self,typeId):
-  """
+        pass
+
+    def IsSimilarType(self, typeId):
+        """
   IsSimilarType(self: ElementType,typeId: ElementId) -> bool
 
   
@@ -67,9 +73,10 @@ class ElementType(Element,IDisposable):
 
    Returns: True if given type is similar to this type,false otherwise.
   """
-  pass
- def IsValidDefaultFamilyType(self,familyCategoryId):
-  """
+        pass
+
+    def IsValidDefaultFamilyType(self, familyCategoryId):
+        """
   IsValidDefaultFamilyType(self: ElementType,familyCategoryId: ElementId) -> bool
 
   
@@ -88,24 +95,32 @@ class ElementType(Element,IDisposable):
 
     id.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- CanBeCopied=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determine if this ElementType can create a copy
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    CanBeCopied = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Determine if this ElementType can create a copy
 
 
 
@@ -115,8 +130,10 @@ Get: CanBeCopied(self: ElementType) -> bool
 
 """
 
- CanBeDeleted=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determine if this ElementType can be deleted
+    CanBeDeleted = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Determine if this ElementType can be deleted
 
 
 
@@ -126,8 +143,10 @@ Get: CanBeDeleted(self: ElementType) -> bool
 
 """
 
- CanBeRenamed=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determine if this ElementType can be renamed
+    CanBeRenamed = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Determine if this ElementType can be renamed
 
 
 
@@ -137,8 +156,10 @@ Get: CanBeRenamed(self: ElementType) -> bool
 
 """
 
- FamilyName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the family name of this element type.
+    FamilyName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the family name of this element type.
 
 
 
@@ -148,13 +169,11 @@ Get: FamilyName(self: ElementType) -> str
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Set the name for the ElementType.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Set the name for the ElementType.
 
 
 
 Set: Name(self: ElementType)=value
 
 """
-
-

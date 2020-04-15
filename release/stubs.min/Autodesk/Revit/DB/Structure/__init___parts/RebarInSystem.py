@@ -1,7 +1,8 @@
-class RebarInSystem(Element,IDisposable):
- """ Represents a rebar element that is part of a system. """
- def CanApplyPresentationMode(self,dBView):
-  """
+class RebarInSystem(Element, IDisposable):
+    """ Represents a rebar element that is part of a system. """
+
+    def CanApplyPresentationMode(self, dBView):
+        """
   CanApplyPresentationMode(self: RebarInSystem,dBView: View) -> bool
 
   
@@ -14,9 +15,10 @@ class RebarInSystem(Element,IDisposable):
 
    Returns: True if a presentation mode can be applied for the given view,false otherwise.
   """
-  pass
- def ClearPresentationMode(self,dBView):
-  """
+        pass
+
+    def ClearPresentationMode(self, dBView):
+        """
   ClearPresentationMode(self: RebarInSystem,dBView: View)
 
    Sets the presentation mode for this rebar set to the default (either for a 
@@ -29,12 +31,14 @@ class RebarInSystem(Element,IDisposable):
 
    dBView: The view where the presentation mode will be cleared. NULL for all views
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def DoesBarExistAtPosition(self,barPosition):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def DoesBarExistAtPosition(self, barPosition):
+        """
   DoesBarExistAtPosition(self: RebarInSystem,barPosition: int) -> bool
 
   
@@ -55,9 +59,10 @@ class RebarInSystem(Element,IDisposable):
 
     includeFirstBar and includeLastBar methods for Rebar)
   """
-  pass
- def FindMatchingPredefinedPresentationMode(self,dBView):
-  """
+        pass
+
+    def FindMatchingPredefinedPresentationMode(self, dBView):
+        """
   FindMatchingPredefinedPresentationMode(self: RebarInSystem,dBView: View) -> RebarPresentationMode
 
   
@@ -80,9 +85,10 @@ class RebarInSystem(Element,IDisposable):
 
     RebarPresentationMode.Select.
   """
-  pass
- def GetBarPositionTransform(self,barPositionIndex):
-  """
+        pass
+
+    def GetBarPositionTransform(self, barPositionIndex):
+        """
   GetBarPositionTransform(self: RebarInSystem,barPositionIndex: int) -> Transform
 
   
@@ -101,21 +107,26 @@ class RebarInSystem(Element,IDisposable):
 
    Returns: The position of a bar in the set relative to the first position.
   """
-  pass
- def GetBendData(self):
-  """
+        pass
+
+    def GetBendData(self):
+        """
   GetBendData(self: RebarInSystem) -> RebarBendData
 
   
 
    Gets the RebarBendData,containing bar and hook information,of the instance.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetCenterlineCurves(self,adjustForSelfIntersection,suppressHooks,suppressBendRadius):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetCenterlineCurves(
+        self, adjustForSelfIntersection, suppressHooks, suppressBendRadius
+    ):
+        """
   GetCenterlineCurves(self: RebarInSystem,adjustForSelfIntersection: bool,suppressHooks: bool,suppressBendRadius: bool) -> IList[Curve]
 
   
@@ -150,9 +161,10 @@ class RebarInSystem(Element,IDisposable):
 
     RebarShape definition.
   """
-  pass
- def GetDistributionPath(self):
-  """
+        pass
+
+    def GetDistributionPath(self):
+        """
   GetDistributionPath(self: RebarInSystem) -> Line
 
   
@@ -165,9 +177,10 @@ class RebarInSystem(Element,IDisposable):
 
     the set.
   """
-  pass
- def GetHookTypeId(self,end):
-  """
+        pass
+
+    def GetHookTypeId(self, end):
+        """
   GetHookTypeId(self: RebarInSystem,end: int) -> ElementId
 
   
@@ -184,9 +197,10 @@ class RebarInSystem(Element,IDisposable):
 
     the specified end.
   """
-  pass
- def GetHostId(self):
-  """
+        pass
+
+    def GetHostId(self):
+        """
   GetHostId(self: RebarInSystem) -> ElementId
 
   
@@ -199,9 +213,10 @@ class RebarInSystem(Element,IDisposable):
 
     floor,foundation,beam,brace or column.
   """
-  pass
- def GetPresentationMode(self,dBView):
-  """
+        pass
+
+    def GetPresentationMode(self, dBView):
+        """
   GetPresentationMode(self: RebarInSystem,dBView: View) -> RebarPresentationMode
 
   
@@ -214,9 +229,10 @@ class RebarInSystem(Element,IDisposable):
 
    Returns: The presentation mode.
   """
-  pass
- def GetReinforcementRoundingManager(self):
-  """
+        pass
+
+    def GetReinforcementRoundingManager(self):
+        """
   GetReinforcementRoundingManager(self: RebarInSystem) -> RebarRoundingManager
 
   
@@ -225,9 +241,10 @@ class RebarInSystem(Element,IDisposable):
 
    Returns: The rounding manager.
   """
-  pass
- def HasPresentationOverrides(self,dBView):
-  """
+        pass
+
+    def HasPresentationOverrides(self, dBView):
+        """
   HasPresentationOverrides(self: RebarInSystem,dBView: View) -> bool
 
   
@@ -246,9 +263,10 @@ class RebarInSystem(Element,IDisposable):
 
     otherwise.
   """
-  pass
- def IsBarHidden(self,view,barIndex):
-  """
+        pass
+
+    def IsBarHidden(self, view, barIndex):
+        """
   IsBarHidden(self: RebarInSystem,view: View,barIndex: int) -> bool
 
   
@@ -263,9 +281,10 @@ class RebarInSystem(Element,IDisposable):
 
    Returns: True if the bar is hidden in this view,false otherwise.
   """
-  pass
- def IsRebarInSection(self,dBView):
-  """
+        pass
+
+    def IsRebarInSection(self, dBView):
+        """
   IsRebarInSection(self: RebarInSystem,dBView: View) -> bool
 
   
@@ -278,9 +297,10 @@ class RebarInSystem(Element,IDisposable):
 
    Returns: True if this RebarInSystem is shown as a cross-section,false otherwise.
   """
-  pass
- def IsSolidInView(self,view):
-  """
+        pass
+
+    def IsSolidInView(self, view):
+        """
   IsSolidInView(self: RebarInSystem,view: View3D) -> bool
 
   
@@ -293,9 +313,10 @@ class RebarInSystem(Element,IDisposable):
 
    Returns: True if rebar is shown solidly,false otherwise.
   """
-  pass
- def IsUnobscuredInView(self,view):
-  """
+        pass
+
+    def IsUnobscuredInView(self, view):
+        """
   IsUnobscuredInView(self: RebarInSystem,view: View) -> bool
 
   
@@ -308,12 +329,14 @@ class RebarInSystem(Element,IDisposable):
 
    Returns: True if rebar is shown unobscured,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def SetBarHiddenStatus(self,view,barIndex,hide):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def SetBarHiddenStatus(self, view, barIndex, hide):
+        """
   SetBarHiddenStatus(self: RebarInSystem,view: View,barIndex: int,hide: bool)
 
    Sets the bar in this rebar set to be hidden or unhidden in the given view.
@@ -326,12 +349,14 @@ class RebarInSystem(Element,IDisposable):
 
    hide: True to hide this bar in the view,false to unhide the bar.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetPresentationMode(self,dBView,presentationMode):
-  """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetPresentationMode(self, dBView, presentationMode):
+        """
   SetPresentationMode(self: RebarInSystem,dBView: View,presentationMode: RebarPresentationMode)
 
    Sets the presentation mode for this rebar set when displayed in the given view.
@@ -342,9 +367,10 @@ class RebarInSystem(Element,IDisposable):
 
    presentationMode: The presentation mode.
   """
-  pass
- def SetSolidInView(self,view,solid):
-  """
+        pass
+
+    def SetSolidInView(self, view, solid):
+        """
   SetSolidInView(self: RebarInSystem,view: View3D,solid: bool)
 
    Sets this rebar element to be shown solidly in a 3D view.
@@ -355,9 +381,10 @@ class RebarInSystem(Element,IDisposable):
 
    solid: True if rebar element is shown solidly,false otherwise.
   """
-  pass
- def SetUnobscuredInView(self,view,unobscured):
-  """
+        pass
+
+    def SetUnobscuredInView(self, view, unobscured):
+        """
   SetUnobscuredInView(self: RebarInSystem,view: View,unobscured: bool)
 
    Sets  RebarInSystem element to be shown unobscured in a view.
@@ -368,18 +395,24 @@ class RebarInSystem(Element,IDisposable):
 
    unobscured: True if  RebarInSystem element is shown unobscured,false otherwise.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- ArrayLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the distribution path length of rebar set.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    ArrayLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies the distribution path length of rebar set.
 
 
 
@@ -389,8 +422,10 @@ Get: ArrayLength(self: RebarInSystem) -> float
 
 """
 
- BarsOnNormalSide=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies if the bars of the rebar set are on the same side of the rebar plane indicated by the normal.
+    BarsOnNormalSide = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies if the bars of the rebar set are on the same side of the rebar plane indicated by the normal.
 
    For the current implementation of RebarInSystem,this property will always return true,
 
@@ -404,8 +439,10 @@ Get: BarsOnNormalSide(self: RebarInSystem) -> bool
 
 """
 
- LayoutRule=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the layout rule of rebar set.
+    LayoutRule = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies the layout rule of rebar set.
 
 
 
@@ -415,8 +452,10 @@ Get: LayoutRule(self: RebarInSystem) -> RebarLayoutRule
 
 """
 
- MaxSpacing=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the maximum spacing between rebar in rebar set.
+    MaxSpacing = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies the maximum spacing between rebar in rebar set.
 
 
 
@@ -426,8 +465,8 @@ Get: MaxSpacing(self: RebarInSystem) -> float
 
 """
 
- Normal=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """A unit-length vector normal to the plane of the rebar
+    Normal = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """A unit-length vector normal to the plane of the rebar
 
 
 
@@ -437,8 +476,10 @@ Get: Normal(self: RebarInSystem) -> XYZ
 
 """
 
- NumberOfBarPositions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The number of bar positions available in the rebar.
+    NumberOfBarPositions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The number of bar positions available in the rebar.
 
 
 
@@ -448,8 +489,8 @@ Get: NumberOfBarPositions(self: RebarInSystem) -> int
 
 """
 
- Quantity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the number of bars in rebar set.
+    Quantity = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Identifies the number of bars in rebar set.
 
    For the current implementation of RebarInSystem,this property will always return the same number as NumberOfBarPositions,
 
@@ -465,8 +506,10 @@ Get: Quantity(self: RebarInSystem) -> int
 
 """
 
- RebarShapeId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The RebarShape element that defines the shape of the rebar.
+    RebarShapeId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The RebarShape element that defines the shape of the rebar.
 
 
 
@@ -476,8 +519,10 @@ Get: RebarShapeId(self: RebarInSystem) -> ElementId
 
 """
 
- ScheduleMark=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Schedule Mark parameter. On creation,the Schedule Mark is set
+    ScheduleMark = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The Schedule Mark parameter. On creation,the Schedule Mark is set
 
    to a value that is unique to the host,but it can be set to
 
@@ -493,8 +538,8 @@ Set: ScheduleMark(self: RebarInSystem)=value
 
 """
 
- SystemId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Id of an AreaReinforcement or PathReinforcement element that owns
+    SystemId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The Id of an AreaReinforcement or PathReinforcement element that owns
 
    this element.
 
@@ -506,8 +551,10 @@ Get: SystemId(self: RebarInSystem) -> ElementId
 
 """
 
- TotalLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The length of an individual bar multiplied by Quantity.
+    TotalLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The length of an individual bar multiplied by Quantity.
 
 
 
@@ -517,8 +564,8 @@ Get: TotalLength(self: RebarInSystem) -> float
 
 """
 
- Volume=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The volume of an individual bar multiplied by Quantity.
+    Volume = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The volume of an individual bar multiplied by Quantity.
 
 
 
@@ -527,5 +574,3 @@ Get: Volume(self: RebarInSystem) -> float
 
 
 """
-
-

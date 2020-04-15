@@ -1,13 +1,21 @@
-class SingleAnimationUsingKeyFrames(SingleAnimationBase,ISealable,IAnimatable,IResource,IKeyFrameAnimation,IAddChild):
- """
+class SingleAnimationUsingKeyFrames(
+    SingleAnimationBase,
+    ISealable,
+    IAnimatable,
+    IResource,
+    IKeyFrameAnimation,
+    IAddChild,
+):
+    """
  Animates the value of a System.Single property along a set of System.Windows.Media.Animation.SingleAnimationUsingKeyFrames.KeyFrames.
 
  
 
  SingleAnimationUsingKeyFrames()
  """
- def AddChild(self,*args):
-  """
+
+    def AddChild(self, *args):
+        """
   AddChild(self: SingleAnimationUsingKeyFrames,child: object)
 
    Adds a child System.Windows.Media.Animation.SingleKeyFrame to this 
@@ -22,9 +30,10 @@ class SingleAnimationUsingKeyFrames(SingleAnimationBase,ISealable,IAnimatable,IR
 
     System.Windows.Media.Animation.SingleAnimationUsingKeyFrames.
   """
-  pass
- def AddText(self,*args):
-  """
+        pass
+
+    def AddText(self, *args):
+        """
   AddText(self: SingleAnimationUsingKeyFrames,childText: str)
 
    Adds a text string as a child of this 
@@ -37,9 +46,10 @@ class SingleAnimationUsingKeyFrames(SingleAnimationBase,ISealable,IAnimatable,IR
 
    childText: The text added to the System.Windows.Media.Animation.SingleAnimationUsingKeyFrames.
   """
-  pass
- def AllocateClock(self,*args):
-  """
+        pass
+
+    def AllocateClock(self, *args):
+        """
   AllocateClock(self: AnimationTimeline) -> Clock
 
   
@@ -52,9 +62,10 @@ class SingleAnimationUsingKeyFrames(SingleAnimationBase,ISealable,IAnimatable,IR
 
    Returns: A clock for this System.Windows.Media.Animation.AnimationTimeline.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: SingleAnimationUsingKeyFrames) -> SingleAnimationUsingKeyFrames
 
   
@@ -73,9 +84,10 @@ class SingleAnimationUsingKeyFrames(SingleAnimationBase,ISealable,IAnimatable,IR
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCore(self,*args):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """
   CloneCore(self: SingleAnimationUsingKeyFrames,sourceFreezable: Freezable)
 
    Makes this instance a deep copy of the specified 
@@ -92,9 +104,10 @@ class SingleAnimationUsingKeyFrames(SingleAnimationBase,ISealable,IAnimatable,IR
 
    sourceFreezable: The System.Windows.Media.Animation.SingleAnimationUsingKeyFrames to clone.
   """
-  pass
- def CloneCurrentValue(self):
-  """
+        pass
+
+    def CloneCurrentValue(self):
+        """
   CloneCurrentValue(self: SingleAnimationUsingKeyFrames) -> SingleAnimationUsingKeyFrames
 
   
@@ -111,9 +124,10 @@ class SingleAnimationUsingKeyFrames(SingleAnimationBase,ISealable,IAnimatable,IR
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """
   CloneCurrentValueCore(self: SingleAnimationUsingKeyFrames,sourceFreezable: Freezable)
 
    Makes this instance a modifiable deep copy of the specified 
@@ -128,9 +142,10 @@ class SingleAnimationUsingKeyFrames(SingleAnimationBase,ISealable,IAnimatable,IR
 
    sourceFreezable: The System.Windows.Media.Animation.SingleAnimationUsingKeyFrames to clone.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -139,9 +154,10 @@ class SingleAnimationUsingKeyFrames(SingleAnimationBase,ISealable,IAnimatable,IR
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """
   CreateInstanceCore(self: SingleAnimationUsingKeyFrames) -> Freezable
 
   
@@ -150,9 +166,10 @@ class SingleAnimationUsingKeyFrames(SingleAnimationBase,ISealable,IAnimatable,IR
 
    Returns: A new instance of System.Windows.Media.Animation.SingleAnimationUsingKeyFrames.
   """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: SingleAnimationUsingKeyFrames,isChecking: bool) -> bool
 
   
@@ -175,9 +192,10 @@ class SingleAnimationUsingKeyFrames(SingleAnimationBase,ISealable,IAnimatable,IR
 
     having begun to change the frozen status of this object.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """
   GetAsFrozenCore(self: SingleAnimationUsingKeyFrames,source: Freezable)
 
    Makes this instance a clone of the specified 
@@ -190,9 +208,10 @@ class SingleAnimationUsingKeyFrames(SingleAnimationBase,ISealable,IAnimatable,IR
 
    source: The System.Windows.Media.Animation.SingleAnimationUsingKeyFrames object to clone.
   """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """
   GetCurrentValueAsFrozenCore(self: SingleAnimationUsingKeyFrames,source: Freezable)
 
    Makes this instance a frozen clone of the specified 
@@ -207,9 +226,10 @@ class SingleAnimationUsingKeyFrames(SingleAnimationBase,ISealable,IAnimatable,IR
 
    source: The System.Windows.Media.Animation.SingleAnimationUsingKeyFrames to copy and freeze.
   """
-  pass
- def GetCurrentValueCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueCore(self, *args):
+        """
   GetCurrentValueCore(self: SingleAnimationUsingKeyFrames,defaultOriginValue: Single,defaultDestinationValue: Single,animationClock: AnimationClock) -> Single
 
   
@@ -244,9 +264,10 @@ class SingleAnimationUsingKeyFrames(SingleAnimationBase,ISealable,IAnimatable,IR
 
    Returns: The calculated value of the property,as determined by the current instance.
   """
-  pass
- def GetNaturalDuration(self,*args):
-  """
+        pass
+
+    def GetNaturalDuration(self, *args):
+        """
   GetNaturalDuration(self: Timeline,clock: Clock) -> Duration
 
   
@@ -265,9 +286,10 @@ class SingleAnimationUsingKeyFrames(SingleAnimationBase,ISealable,IAnimatable,IR
 
     System.Windows.Duration.Automatic if the natural duration is unknown.
   """
-  pass
- def GetNaturalDurationCore(self,*args):
-  """
+        pass
+
+    def GetNaturalDurationCore(self, *args):
+        """
   GetNaturalDurationCore(self: SingleAnimationUsingKeyFrames,clock: Clock) -> Duration
 
   
@@ -288,18 +310,20 @@ class SingleAnimationUsingKeyFrames(SingleAnimationBase,ISealable,IAnimatable,IR
 
     one second.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: SingleAnimationUsingKeyFrames)
 
    Called when the current System.Windows.Media.Animation.SingleAnimationUsingKeyFrames object is 
 
     modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -330,9 +354,10 @@ class SingleAnimationUsingKeyFrames(SingleAnimationBase,ISealable,IAnimatable,IR
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -349,9 +374,10 @@ class SingleAnimationUsingKeyFrames(SingleAnimationBase,ISealable,IAnimatable,IR
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -360,9 +386,10 @@ class SingleAnimationUsingKeyFrames(SingleAnimationBase,ISealable,IAnimatable,IR
 
     members that are not dependency properties.
   """
-  pass
- def ShouldSerializeKeyFrames(self):
-  """
+        pass
+
+    def ShouldSerializeKeyFrames(self):
+        """
   ShouldSerializeKeyFrames(self: SingleAnimationUsingKeyFrames) -> bool
 
   
@@ -377,9 +404,10 @@ class SingleAnimationUsingKeyFrames(SingleAnimationBase,ISealable,IAnimatable,IR
 
    Returns: true if the property value should be serialized; otherwise,false.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -396,9 +424,10 @@ class SingleAnimationUsingKeyFrames(SingleAnimationBase,ISealable,IAnimatable,IR
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -409,9 +438,10 @@ class SingleAnimationUsingKeyFrames(SingleAnimationBase,ISealable,IAnimatable,IR
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -420,12 +450,16 @@ class SingleAnimationUsingKeyFrames(SingleAnimationBase,ISealable,IAnimatable,IR
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- IsAdditive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that specifies whether the animation's output value is added to the base value of the property being animated.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    IsAdditive = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that specifies whether the animation's output value is added to the base value of the property being animated.
 
 
 
@@ -437,8 +471,10 @@ Set: IsAdditive(self: SingleAnimationUsingKeyFrames)=value
 
 """
 
- IsCumulative=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that specifies whether the animation's value accumulates when it repeats.
+    IsCumulative = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that specifies whether the animation's value accumulates when it repeats.
 
 
 
@@ -450,8 +486,8 @@ Set: IsCumulative(self: SingleAnimationUsingKeyFrames)=value
 
 """
 
- KeyFrames=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the collection of System.Windows.Media.Animation.SingleKeyFrame objects that define the animation.
+    KeyFrames = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the collection of System.Windows.Media.Animation.SingleKeyFrame objects that define the animation.
 
 
 
@@ -462,5 +498,3 @@ Get: KeyFrames(self: SingleAnimationUsingKeyFrames) -> SingleKeyFrameCollection
 Set: KeyFrames(self: SingleAnimationUsingKeyFrames)=value
 
 """
-
-

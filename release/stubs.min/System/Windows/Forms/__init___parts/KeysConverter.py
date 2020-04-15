@@ -1,13 +1,14 @@
-class KeysConverter(TypeConverter,IComparer):
- """
+class KeysConverter(TypeConverter, IComparer):
+    """
  Provides a System.ComponentModel.TypeConverter to convert System.Windows.Forms.Keys objects to and from other representations.
 
  
 
  KeysConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: KeysConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -32,9 +33,10 @@ class KeysConverter(TypeConverter,IComparer):
 
    Returns: true if the conversion can be performed; otherwise,false.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: KeysConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -59,9 +61,10 @@ class KeysConverter(TypeConverter,IComparer):
 
    Returns: true if the conversion can be performed; otherwise,false.
   """
-  pass
- def Compare(self,a,b):
-  """
+        pass
+
+    def Compare(self, a, b):
+        """
   Compare(self: KeysConverter,a: object,b: object) -> int
 
   
@@ -78,9 +81,10 @@ class KeysConverter(TypeConverter,IComparer):
 
     negative integer. a is less than b. zero a equals b. A positive integer. a is greater than b.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: KeysConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -103,9 +107,10 @@ class KeysConverter(TypeConverter,IComparer):
 
    Returns: An object that represents the converted value.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: KeysConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -130,9 +135,10 @@ class KeysConverter(TypeConverter,IComparer):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def GetConvertFromException(self,*args):
-  """
+        pass
+
+    def GetConvertFromException(self, *args):
+        """
   GetConvertFromException(self: TypeConverter,value: object) -> Exception
 
   
@@ -145,9 +151,10 @@ class KeysConverter(TypeConverter,IComparer):
 
    Returns: An System.Exception that represents the exception to throw when a conversion cannot be performed.
   """
-  pass
- def GetConvertToException(self,*args):
-  """
+        pass
+
+    def GetConvertToException(self, *args):
+        """
   GetConvertToException(self: TypeConverter,value: object,destinationType: Type) -> Exception
 
   
@@ -162,9 +169,10 @@ class KeysConverter(TypeConverter,IComparer):
 
    Returns: An System.Exception that represents the exception to throw when a conversion cannot be performed.
   """
-  pass
- def GetStandardValues(self,context=None):
-  """
+        pass
+
+    def GetStandardValues(self, context=None):
+        """
   GetStandardValues(self: KeysConverter,context: ITypeDescriptorContext) -> StandardValuesCollection
 
   
@@ -189,9 +197,10 @@ class KeysConverter(TypeConverter,IComparer):
 
     valid values,which can be empty if the data type does not support a standard set of values.
   """
-  pass
- def GetStandardValuesExclusive(self,context=None):
-  """
+        pass
+
+    def GetStandardValuesExclusive(self, context=None):
+        """
   GetStandardValuesExclusive(self: KeysConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -218,9 +227,10 @@ class KeysConverter(TypeConverter,IComparer):
 
     default implementation for this method always returns false.
   """
-  pass
- def GetStandardValuesSupported(self,context=None):
-  """
+        pass
+
+    def GetStandardValuesSupported(self, context=None):
+        """
   GetStandardValuesSupported(self: KeysConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -243,9 +253,10 @@ class KeysConverter(TypeConverter,IComparer):
 
    Returns: Always returns true.
   """
-  pass
- def SortProperties(self,*args):
-  """
+        pass
+
+    def SortProperties(self, *args):
+        """
   SortProperties(self: TypeConverter,props: PropertyDescriptorCollection,names: Array[str]) -> PropertyDescriptorCollection
 
   
@@ -260,10 +271,12 @@ class KeysConverter(TypeConverter,IComparer):
 
    Returns: A System.ComponentModel.PropertyDescriptorCollection that contains the sorted properties.
   """
-  pass
- def __cmp__(self,*args):
-  """ x.__cmp__(y) <==> cmp(x,y) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __cmp__(self, *args):
+        """ x.__cmp__(y) <==> cmp(x,y) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

@@ -1,13 +1,14 @@
 class DataGridViewCellStyleConverter(TypeConverter):
- """
+    """
  Converts System.Windows.Forms.DataGridViewCellStyle objects to and from other data types.
 
  
 
  DataGridViewCellStyleConverter()
  """
- def CanConvertTo(self,*__args):
-  """
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: DataGridViewCellStyleConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -18,9 +19,10 @@ class DataGridViewCellStyleConverter(TypeConverter):
 
    Returns: true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: DataGridViewCellStyleConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -35,4 +37,4 @@ class DataGridViewCellStyleConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
+        pass

@@ -1,13 +1,14 @@
 class PointConverter(TypeConverter):
- """
+    """
  Converts a System.Drawing.Point object from one data type to another.
 
  
 
  PointConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: PointConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -32,9 +33,10 @@ class PointConverter(TypeConverter):
 
    Returns: true if this object can perform the conversion; otherwise,false.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: PointConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -53,9 +55,10 @@ class PointConverter(TypeConverter):
 
    Returns: true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: PointConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -82,9 +85,10 @@ class PointConverter(TypeConverter):
 
    Returns: The converted object.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: PointConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -113,9 +117,10 @@ class PointConverter(TypeConverter):
 
    Returns: The converted object.
   """
-  pass
- def CreateInstance(self,*__args):
-  """
+        pass
+
+    def CreateInstance(self, *__args):
+        """
   CreateInstance(self: PointConverter,context: ITypeDescriptorContext,propertyValues: IDictionary) -> object
 
   
@@ -140,9 +145,10 @@ class PointConverter(TypeConverter):
 
     returns null.
   """
-  pass
- def GetCreateInstanceSupported(self,context=None):
-  """
+        pass
+
+    def GetCreateInstanceSupported(self, context=None):
+        """
   GetCreateInstanceSupported(self: PointConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -167,9 +173,10 @@ class PointConverter(TypeConverter):
 
     of this object; otherwise,false.
   """
-  pass
- def GetProperties(self,*__args):
-  """
+        pass
+
+    def GetProperties(self, *__args):
+        """
   GetProperties(self: PointConverter,context: ITypeDescriptorContext,value: object,attributes: Array[Attribute]) -> PropertyDescriptorCollection
 
   
@@ -188,9 +195,10 @@ class PointConverter(TypeConverter):
 
     method might return null. The default implementation always returns null.
   """
-  pass
- def GetPropertiesSupported(self,context=None):
-  """
+        pass
+
+    def GetPropertiesSupported(self, context=None):
+        """
   GetPropertiesSupported(self: PointConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -209,4 +217,4 @@ class PointConverter(TypeConverter):
 
     false.
   """
-  pass
+        pass

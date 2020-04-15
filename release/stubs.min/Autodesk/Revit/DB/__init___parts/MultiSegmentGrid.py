@@ -1,14 +1,15 @@
-class MultiSegmentGrid(Element,IDisposable):
- """
+class MultiSegmentGrid(Element, IDisposable):
+    """
  This element acts as a multi-segmented Grid. The individual grids associated to
 
     the MultiSegmentGrid behave as a single unit and all share the same text. They inherit
 
     their type (GridType) from the MultiSegmentGrid.
  """
- @staticmethod
- def AreGridsInSameMultiSegmentGrid(grid1,grid2):
-  """
+
+    @staticmethod
+    def AreGridsInSameMultiSegmentGrid(grid1, grid2):
+        """
   AreGridsInSameMultiSegmentGrid(grid1: Grid,grid2: Grid) -> bool
 
   
@@ -29,10 +30,11 @@ class MultiSegmentGrid(Element,IDisposable):
 
     element id for both Grids.
   """
-  pass
- @staticmethod
- def Create(document,typeId,curveLoop,sketchPlaneId):
-  """
+        pass
+
+    @staticmethod
+    def Create(document, typeId, curveLoop, sketchPlaneId):
+        """
   Create(document: Document,typeId: ElementId,curveLoop: CurveLoop,sketchPlaneId: ElementId) -> ElementId
 
   
@@ -55,15 +57,18 @@ class MultiSegmentGrid(Element,IDisposable):
 
    Returns: The element id of the new MultiSegmentGrid element.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetGridIds(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetGridIds(self):
+        """
   GetGridIds(self: MultiSegmentGrid) -> ICollection[ElementId]
 
   
@@ -72,10 +77,11 @@ class MultiSegmentGrid(Element,IDisposable):
 
    Returns: Element ids of Grids that make up this MultiSegmentGrid.
   """
-  pass
- @staticmethod
- def GetMultiSegementGridId(grid):
-  """
+        pass
+
+    @staticmethod
+    def GetMultiSegementGridId(grid):
+        """
   GetMultiSegementGridId(grid: Grid) -> ElementId
 
   
@@ -96,10 +102,11 @@ class MultiSegmentGrid(Element,IDisposable):
 
      this will return invalidElementId.
   """
-  pass
- @staticmethod
- def IsValidCurveLoop(curveLoop):
-  """
+        pass
+
+    @staticmethod
+    def IsValidCurveLoop(curveLoop):
+        """
   IsValidCurveLoop(curveLoop: CurveLoop) -> bool
 
   
@@ -118,10 +125,11 @@ class MultiSegmentGrid(Element,IDisposable):
 
     false otherwise.
   """
-  pass
- @staticmethod
- def IsValidSketchPlaneId(document,elemId):
-  """
+        pass
+
+    @staticmethod
+    def IsValidSketchPlaneId(document, elemId):
+        """
   IsValidSketchPlaneId(document: Document,elemId: ElementId) -> bool
 
   
@@ -140,24 +148,30 @@ class MultiSegmentGrid(Element,IDisposable):
 
    Returns: True if elemId is the element id of a horizontal SketchPlane.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Text=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """name shared by grids in this MultiSegmentGrid
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Text = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """name shared by grids in this MultiSegmentGrid
 
 
 
@@ -168,5 +182,3 @@ Get: Text(self: MultiSegmentGrid) -> str
 Set: Text(self: MultiSegmentGrid)=value
 
 """
-
-

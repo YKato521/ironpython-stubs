@@ -1,13 +1,14 @@
 class RectangleConverter(TypeConverter):
- """
+    """
  Converts rectangles from one data type to another. Access this class through the System.ComponentModel.TypeDescriptor.
 
  
 
  RectangleConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: RectangleConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -32,9 +33,10 @@ class RectangleConverter(TypeConverter):
 
    Returns: This method returns true if this object can perform the conversion; otherwise,false.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: RectangleConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -59,9 +61,10 @@ class RectangleConverter(TypeConverter):
 
    Returns: This method returns true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: RectangleConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -90,9 +93,10 @@ class RectangleConverter(TypeConverter):
 
    Returns: The converted object.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: RectangleConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -123,9 +127,10 @@ class RectangleConverter(TypeConverter):
 
    Returns: The converted object.
   """
-  pass
- def CreateInstance(self,*__args):
-  """
+        pass
+
+    def CreateInstance(self, *__args):
+        """
   CreateInstance(self: RectangleConverter,context: ITypeDescriptorContext,propertyValues: IDictionary) -> object
 
   
@@ -154,9 +159,10 @@ class RectangleConverter(TypeConverter):
 
     returns null.
   """
-  pass
- def GetCreateInstanceSupported(self,context=None):
-  """
+        pass
+
+    def GetCreateInstanceSupported(self, context=None):
+        """
   GetCreateInstanceSupported(self: RectangleConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -181,9 +187,10 @@ class RectangleConverter(TypeConverter):
 
     this object; otherwise,false.
   """
-  pass
- def GetProperties(self,*__args):
-  """
+        pass
+
+    def GetProperties(self, *__args):
+        """
   GetProperties(self: RectangleConverter,context: ITypeDescriptorContext,value: object,attributes: Array[Attribute]) -> PropertyDescriptorCollection
 
   
@@ -202,9 +209,10 @@ class RectangleConverter(TypeConverter):
 
     exposed,this may return null. The default implementation always returns null.
   """
-  pass
- def GetPropertiesSupported(self,context=None):
-  """
+        pass
+
+    def GetPropertiesSupported(self, context=None):
+        """
   GetPropertiesSupported(self: RectangleConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -223,4 +231,4 @@ class RectangleConverter(TypeConverter):
 
     false.
   """
-  pass
+        pass

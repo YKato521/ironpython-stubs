@@ -1,5 +1,5 @@
-class AlphanumericRevisionSettings(object,IDisposable):
- """
+class AlphanumericRevisionSettings(object, IDisposable):
+    """
  Contains settings that apply to Revisions with the Alphanumeric RevisionNumberType.
 
  
@@ -10,11 +10,13 @@ class AlphanumericRevisionSettings(object,IDisposable):
 
  AlphanumericRevisionSettings(other: AlphanumericRevisionSettings)
  """
- def Dispose(self):
-  """ Dispose(self: AlphanumericRevisionSettings) """
-  pass
- def GetSequence(self):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: AlphanumericRevisionSettings) """
+        pass
+
+    def GetSequence(self):
+        """
   GetSequence(self: AlphanumericRevisionSettings) -> IList[str]
 
   
@@ -25,9 +27,10 @@ class AlphanumericRevisionSettings(object,IDisposable):
 
     revisions with the Alphanumeric RevisionNumberType.
   """
-  pass
- def IsEqual(self,other):
-  """
+        pass
+
+    def IsEqual(self, other):
+        """
   IsEqual(self: AlphanumericRevisionSettings,other: AlphanumericRevisionSettings) -> bool
 
   
@@ -44,9 +47,10 @@ class AlphanumericRevisionSettings(object,IDisposable):
 
    Returns: True,if two AlphanumericRevisionSettings are the same.
   """
-  pass
- def IsValid(self):
-  """
+        pass
+
+    def IsValid(self):
+        """
   IsValid(self: AlphanumericRevisionSettings) -> bool
 
   
@@ -55,37 +59,47 @@ class AlphanumericRevisionSettings(object,IDisposable):
 
    Returns: True if the settings are valid.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: AlphanumericRevisionSettings,disposing: bool) """
-  pass
- def SetSequence(self,sequence):
-  """ SetSequence(self: AlphanumericRevisionSettings,sequence: IList[str]) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: AlphanumericRevisionSettings,disposing: bool) """
+        pass
+
+    def SetSequence(self, sequence):
+        """ SetSequence(self: AlphanumericRevisionSettings,sequence: IList[str]) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,sequence: IList[str],prefix: str,suffix: str)
 
   __new__(cls: type)
 
   __new__(cls: type,other: AlphanumericRevisionSettings)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -95,8 +109,8 @@ Get: IsValidObject(self: AlphanumericRevisionSettings) -> bool
 
 """
 
- Prefix=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The prefix string that will be prepended to the number of each revision with Alphanumeric RevisionNumberingType.
+    Prefix = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The prefix string that will be prepended to the number of each revision with Alphanumeric RevisionNumberingType.
 
 
 
@@ -108,8 +122,8 @@ Set: Prefix(self: AlphanumericRevisionSettings)=value
 
 """
 
- Suffix=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The suffix string that will be appended to the number of each revision with Alphanumeric RevisionNumberingType.
+    Suffix = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The suffix string that will be appended to the number of each revision with Alphanumeric RevisionNumberingType.
 
 
 
@@ -120,5 +134,3 @@ Get: Suffix(self: AlphanumericRevisionSettings) -> str
 Set: Suffix(self: AlphanumericRevisionSettings)=value
 
 """
-
-

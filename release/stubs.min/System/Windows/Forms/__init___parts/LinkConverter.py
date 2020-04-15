@@ -1,13 +1,14 @@
 class LinkConverter(TypeConverter):
- """
+    """
  Provides a type converter for System.Windows.Forms.LinkLabel.Link objects.
 
  
 
  LinkConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: LinkConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -34,9 +35,10 @@ class LinkConverter(TypeConverter):
 
     false.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: LinkConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -61,9 +63,10 @@ class LinkConverter(TypeConverter):
 
     false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: LinkConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -88,9 +91,10 @@ class LinkConverter(TypeConverter):
 
    Returns: The converted object.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: LinkConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -117,4 +121,4 @@ class LinkConverter(TypeConverter):
 
    Returns: The converted object.
   """
-  pass
+        pass

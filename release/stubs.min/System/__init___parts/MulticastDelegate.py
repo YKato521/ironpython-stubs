@@ -1,7 +1,8 @@
-class MulticastDelegate(Delegate,ICloneable,ISerializable):
- """ Represents a multicast delegate; that is,a delegate that can have more than one element in its invocation list. """
- def CombineImpl(self,*args):
-  """
+class MulticastDelegate(Delegate, ICloneable, ISerializable):
+    """ Represents a multicast delegate; that is,a delegate that can have more than one element in its invocation list. """
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -14,9 +15,10 @@ class MulticastDelegate(Delegate,ICloneable,ISerializable):
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -35,9 +37,10 @@ class MulticastDelegate(Delegate,ICloneable,ISerializable):
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def Equals(self,obj):
-  """
+        pass
+
+    def Equals(self, obj):
+        """
   Equals(self: MulticastDelegate,obj: object) -> bool
 
   
@@ -50,9 +53,10 @@ class MulticastDelegate(Delegate,ICloneable,ISerializable):
 
    Returns: true if obj and this instance have the same invocation lists; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: MulticastDelegate) -> int
 
   
@@ -61,9 +65,10 @@ class MulticastDelegate(Delegate,ICloneable,ISerializable):
 
    Returns: A 32-bit signed integer hash code.
   """
-  pass
- def GetInvocationList(self):
-  """
+        pass
+
+    def GetInvocationList(self):
+        """
   GetInvocationList(self: MulticastDelegate) -> Array[Delegate]
 
   
@@ -74,9 +79,10 @@ class MulticastDelegate(Delegate,ICloneable,ISerializable):
 
     instance.
   """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -85,9 +91,10 @@ class MulticastDelegate(Delegate,ICloneable,ISerializable):
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def GetObjectData(self,info,context):
-  """
+        pass
+
+    def GetObjectData(self, info, context):
+        """
   GetObjectData(self: MulticastDelegate,info: SerializationInfo,context: StreamingContext)
 
    Populates a System.Runtime.Serialization.SerializationInfo object with all the data needed to 
@@ -102,9 +109,10 @@ class MulticastDelegate(Delegate,ICloneable,ISerializable):
 
    context: (Reserved) The location where serialized data is stored and retrieved.
   """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -123,22 +131,27 @@ class MulticastDelegate(Delegate,ICloneable,ISerializable):
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """
   __new__(cls: type,target: object,method: str)
 
   __new__(cls: type,target: Type,method: str)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass

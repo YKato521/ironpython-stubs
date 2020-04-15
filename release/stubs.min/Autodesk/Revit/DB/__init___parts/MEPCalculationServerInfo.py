@@ -1,5 +1,5 @@
-class MEPCalculationServerInfo(object,IDisposable):
- """
+class MEPCalculationServerInfo(object, IDisposable):
+    """
  a struct to hold the information about a MEP calucation servers
 
  
@@ -10,12 +10,14 @@ class MEPCalculationServerInfo(object,IDisposable):
 
  MEPCalculationServerInfo()
  """
- def Dispose(self):
-  """ Dispose(self: MEPCalculationServerInfo) """
-  pass
- @staticmethod
- def GetMEPCalculationServerInfo(famInst):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: MEPCalculationServerInfo) """
+        pass
+
+    @staticmethod
+    def GetMEPCalculationServerInfo(famInst):
+        """
   GetMEPCalculationServerInfo(famInst: FamilyInstance) -> MEPCalculationServerInfo
 
   
@@ -28,34 +30,43 @@ class MEPCalculationServerInfo(object,IDisposable):
 
    Returns: The MEPCalculationServerInfo.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: MEPCalculationServerInfo,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: MEPCalculationServerInfo,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,other: MEPCalculationServerInfo)
 
   __new__(cls: type,server: IExternalServer)
 
   __new__(cls: type)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Description=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Description of the server.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Description = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The Description of the server.
 
 
 
@@ -67,8 +78,10 @@ Set: Description(self: MEPCalculationServerInfo)=value
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -78,8 +91,8 @@ Get: IsValidObject(self: MEPCalculationServerInfo) -> bool
 
 """
 
- ServerId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Id of the server.
+    ServerId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The Id of the server.
 
 
 
@@ -91,8 +104,10 @@ Set: ServerId(self: MEPCalculationServerInfo)=value
 
 """
 
- ServerName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Name of the server.
+    ServerName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The Name of the server.
 
 
 
@@ -104,6 +119,4 @@ Set: ServerName(self: MEPCalculationServerInfo)=value
 
 """
 
-
- PipeUseDefinitionOnTypeGUID=None
-
+    PipeUseDefinitionOnTypeGUID = None

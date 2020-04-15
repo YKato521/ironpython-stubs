@@ -4,8 +4,10 @@ from collections import defaultdict
 from ConfigParser import ConfigParser
 from .logger import logger
 
+
 class Timer(object):
     "Time and TimeIt Decorator"
+
     def __init__(self):
         self.start_time = time.time()
 
@@ -18,11 +20,13 @@ class Timer(object):
     def time_function(name):
         def wrapper(func):
             def wrap(*ags, **kwargs):
-                logger.debug('START: {}'.format(name))
+                logger.debug("START: {}".format(name))
                 t = Timer()
                 rv = func(*ags, **kwargs)
                 duration = t.stop()
-                logger.debug('Done: {} sec'.format(duration))
+                logger.debug("Done: {} sec".format(duration))
                 return rv
+
             return wrap
+
         return wrapper

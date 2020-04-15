@@ -1,7 +1,8 @@
 class AnimationClock(Clock):
- """ Maintains the run-time state of an System.Windows.Media.Animation.AnimationTimeline and processes its output values. """
- def GetCurrentValue(self,defaultOriginValue,defaultDestinationValue):
-  """
+    """ Maintains the run-time state of an System.Windows.Media.Animation.AnimationTimeline and processes its output values. """
+
+    def GetCurrentValue(self, defaultOriginValue, defaultDestinationValue):
+        """
   GetCurrentValue(self: AnimationClock,defaultOriginValue: object,defaultDestinationValue: object) -> object
 
   
@@ -30,20 +31,24 @@ class AnimationClock(Clock):
 
    Returns: The current value of this System.Windows.Media.Animation.AnimationClock.
   """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """ __new__(cls: type,animation: AnimationTimeline) """
-  pass
- CurrentGlobalTime=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the current global time,as established by the WPF timing system.
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """ __new__(cls: type,animation: AnimationTimeline) """
+        pass
+
+    CurrentGlobalTime = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the current global time,as established by the WPF timing system.
 
 
 
 """
 
- Timeline=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Media.Animation.AnimationTimeline that describes this clock's behavior.
+    Timeline = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the System.Windows.Media.Animation.AnimationTimeline that describes this clock's behavior.
 
 
 
@@ -52,5 +57,3 @@ Get: Timeline(self: AnimationClock) -> AnimationTimeline
 
 
 """
-
-

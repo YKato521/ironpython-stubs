@@ -1,7 +1,8 @@
 class ITypeLibConverter:
- """ Provides a set of services that convert a managed assembly to a COM type library and vice versa. """
- def ConvertAssemblyToTypeLib(self,assembly,typeLibName,flags,notifySink):
-  """
+    """ Provides a set of services that convert a managed assembly to a COM type library and vice versa. """
+
+    def ConvertAssemblyToTypeLib(self, assembly, typeLibName, flags, notifySink):
+        """
   ConvertAssemblyToTypeLib(self: ITypeLibConverter,assembly: Assembly,typeLibName: str,flags: TypeLibExporterFlags,notifySink: ITypeLibExporterNotifySink) -> object
 
   
@@ -24,9 +25,12 @@ class ITypeLibConverter:
 
    Returns: An object that implements the ITypeLib interface.
   """
-  pass
- def ConvertTypeLibToAssembly(self,typeLib,asmFileName,flags,notifySink,publicKey,keyPair,*__args):
-  """
+        pass
+
+    def ConvertTypeLibToAssembly(
+        self, typeLib, asmFileName, flags, notifySink, publicKey, keyPair, *__args
+    ):
+        """
   ConvertTypeLibToAssembly(self: ITypeLibConverter,typeLib: object,asmFileName: str,flags: int,notifySink: ITypeLibImporterNotifySink,publicKey: Array[Byte],keyPair: StrongNameKeyPair,unsafeInterfaces: bool) -> AssemblyBuilder
 
   
@@ -93,9 +97,10 @@ class ITypeLibConverter:
 
    Returns: An System.Reflection.Emit.AssemblyBuilder object containing the converted type library.
   """
-  pass
- def GetPrimaryInteropAssembly(self,g,major,minor,lcid,asmName,asmCodeBase):
-  """
+        pass
+
+    def GetPrimaryInteropAssembly(self, g, major, minor, lcid, asmName, asmCodeBase):
+        """
   GetPrimaryInteropAssembly(self: ITypeLibConverter,g: Guid,major: int,minor: int,lcid: int) -> (bool,str,str)
 
   
@@ -114,7 +119,8 @@ class ITypeLibConverter:
 
    Returns: true if the primary interop assembly was found in the registry; otherwise false.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

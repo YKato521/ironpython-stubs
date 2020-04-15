@@ -7,15 +7,20 @@
 
 # functions
 
-def DispatcherOperation(*args,**kwargs): # real signature unknown
- """ Represents an object that is used to interact with an operation that has been posted to the System.Windows.Threading.Dispatcher queue. """
- pass
+
+def DispatcherOperation(*args, **kwargs):  # real signature unknown
+    """ Represents an object that is used to interact with an operation that has been posted to the System.Windows.Threading.Dispatcher queue. """
+    pass
+
+
 # classes
 
+
 class Dispatcher(object):
- """ Provides services for managing the queue of work items for a thread. """
- def BeginInvoke(self,*__args):
-  """
+    """ Provides services for managing the queue of work items for a thread. """
+
+    def BeginInvoke(self, *__args):
+        """
   BeginInvoke(self: Dispatcher,method: Delegate,*args: Array[object]) -> DispatcherOperation
 
   
@@ -178,9 +183,10 @@ class Dispatcher(object):
 
     with the delegate as it is pending execution in the event queue.
   """
-  pass
- def BeginInvokeShutdown(self,priority):
-  """
+        pass
+
+    def BeginInvokeShutdown(self, priority):
+        """
   BeginInvokeShutdown(self: Dispatcher,priority: DispatcherPriority)
 
    Initiates shutdown of the System.Windows.Threading.Dispatcher asynchronously.
@@ -189,9 +195,10 @@ class Dispatcher(object):
 
    priority: The priority at which to begin shutting down the dispatcher.
   """
-  pass
- def CheckAccess(self):
-  """
+        pass
+
+    def CheckAccess(self):
+        """
   CheckAccess(self: Dispatcher) -> bool
 
   
@@ -206,9 +213,10 @@ class Dispatcher(object):
 
     System.Windows.Threading.Dispatcher; otherwise,false.
   """
-  pass
- def DisableProcessing(self):
-  """
+        pass
+
+    def DisableProcessing(self):
+        """
   DisableProcessing(self: Dispatcher) -> DispatcherProcessingDisabled
 
   
@@ -217,18 +225,20 @@ class Dispatcher(object):
 
    Returns: A structure used to re-enable dispatcher processing.
   """
-  pass
- @staticmethod
- def ExitAllFrames():
-  """
+        pass
+
+    @staticmethod
+    def ExitAllFrames():
+        """
   ExitAllFrames()
 
    Requests that all frames exit,including nested frames.
   """
-  pass
- @staticmethod
- def FromThread(thread):
-  """
+        pass
+
+    @staticmethod
+    def FromThread(thread):
+        """
   FromThread(thread: Thread) -> Dispatcher
 
   
@@ -241,9 +251,10 @@ class Dispatcher(object):
 
    Returns: The dispatcher for thread.
   """
-  pass
- def Invoke(self,*__args):
-  """
+        pass
+
+    def Invoke(self, *__args):
+        """
   Invoke(self: Dispatcher,priority: DispatcherPriority,timeout: TimeSpan,method: Delegate) -> object
 
   
@@ -538,9 +549,10 @@ class Dispatcher(object):
 
   Invoke[TResult](self: Dispatcher,callback: Func[TResult],priority: DispatcherPriority,cancellationToken: CancellationToken) -> TResult
   """
-  pass
- def InvokeAsync(self,callback,priority=None,cancellationToken=None):
-  """
+        pass
+
+    def InvokeAsync(self, callback, priority=None, cancellationToken=None):
+        """
   InvokeAsync[TResult](self: Dispatcher,callback: Func[TResult]) -> DispatcherOperation[TResult]
 
   InvokeAsync[TResult](self: Dispatcher,callback: Func[TResult],priority: DispatcherPriority) -> DispatcherOperation[TResult]
@@ -553,17 +565,19 @@ class Dispatcher(object):
 
   InvokeAsync(self: Dispatcher,callback: Action,priority: DispatcherPriority,cancellationToken: CancellationToken) -> DispatcherOperation
   """
-  pass
- def InvokeShutdown(self):
-  """
+        pass
+
+    def InvokeShutdown(self):
+        """
   InvokeShutdown(self: Dispatcher)
 
    Initiates the shutdown process of the System.Windows.Threading.Dispatcher synchronously.
   """
-  pass
- @staticmethod
- def PushFrame(frame):
-  """
+        pass
+
+    @staticmethod
+    def PushFrame(frame):
+        """
   PushFrame(frame: DispatcherFrame)
 
    Enters an execute loop.
@@ -572,18 +586,20 @@ class Dispatcher(object):
 
    frame: The frame for the dispatcher to process.
   """
-  pass
- @staticmethod
- def Run():
-  """
+        pass
+
+    @staticmethod
+    def Run():
+        """
   Run()
 
    Pushes the main execution frame on the event queue of the System.Windows.Threading.Dispatcher.
   """
-  pass
- @staticmethod
- def ValidatePriority(priority,parameterName):
-  """
+        pass
+
+    @staticmethod
+    def ValidatePriority(priority, parameterName):
+        """
   ValidatePriority(priority: DispatcherPriority,parameterName: str)
 
    Determines whether the specified System.Windows.Threading.DispatcherPriority is a valid priority.
@@ -594,24 +610,29 @@ class Dispatcher(object):
 
    parameterName: A string that will be returned by the exception that occurs if the priority is invalid.
   """
-  pass
- def VerifyAccess(self):
-  """
+        pass
+
+    def VerifyAccess(self):
+        """
   VerifyAccess(self: Dispatcher)
 
    Determines whether the calling thread has access to this System.Windows.Threading.Dispatcher.
   """
-  pass
- @staticmethod
- def Yield(priority=None):
-  """
+        pass
+
+    @staticmethod
+    def Yield(priority=None):
+        """
   Yield(priority: DispatcherPriority) -> DispatcherPriorityAwaitable
 
   Yield() -> DispatcherPriorityAwaitable
   """
-  pass
- HasShutdownFinished=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determines whether the System.Windows.Threading.Dispatcher has finished shutting down.
+        pass
+
+    HasShutdownFinished = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Determines whether the System.Windows.Threading.Dispatcher has finished shutting down.
 
 
 
@@ -621,8 +642,10 @@ Get: HasShutdownFinished(self: Dispatcher) -> bool
 
 """
 
- HasShutdownStarted=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determines whether the System.Windows.Threading.Dispatcher is shutting down.
+    HasShutdownStarted = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Determines whether the System.Windows.Threading.Dispatcher is shutting down.
 
 
 
@@ -632,8 +655,8 @@ Get: HasShutdownStarted(self: Dispatcher) -> bool
 
 """
 
- Hooks=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of hooks that provide additional event information about the System.Windows.Threading.Dispatcher.
+    Hooks = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the collection of hooks that provide additional event information about the System.Windows.Threading.Dispatcher.
 
 
 
@@ -643,8 +666,8 @@ Get: Hooks(self: Dispatcher) -> DispatcherHooks
 
 """
 
- Thread=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the thread this System.Windows.Threading.Dispatcher is associated with.
+    Thread = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the thread this System.Windows.Threading.Dispatcher is associated with.
 
 
 
@@ -654,18 +677,20 @@ Get: Thread(self: Dispatcher) -> Thread
 
 """
 
-
- CurrentDispatcher=None
- ShutdownFinished=None
- ShutdownStarted=None
- UnhandledException=None
- UnhandledExceptionFilter=None
+    CurrentDispatcher = None
+    ShutdownFinished = None
+    ShutdownStarted = None
+    UnhandledException = None
+    UnhandledExceptionFilter = None
 
 
 class DispatcherEventArgs(EventArgs):
- """ Provides event data for System.Windows.Threading.Dispatcher related events. """
- Dispatcher=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The System.Windows.Threading.Dispatcher associated with this event.
+    """ Provides event data for System.Windows.Threading.Dispatcher related events. """
+
+    Dispatcher = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The System.Windows.Threading.Dispatcher associated with this event.
 
 
 
@@ -676,11 +701,11 @@ Get: Dispatcher(self: DispatcherEventArgs) -> Dispatcher
 """
 
 
-
 class DispatcherObject(object):
- """ Represents an object that is associated with a System.Windows.Threading.Dispatcher. """
- def CheckAccess(self):
-  """
+    """ Represents an object that is associated with a System.Windows.Threading.Dispatcher. """
+
+    def CheckAccess(self):
+        """
   CheckAccess(self: DispatcherObject) -> bool
 
   
@@ -693,16 +718,20 @@ class DispatcherObject(object):
 
    Returns: true if the calling thread has access to this object; otherwise,false.
   """
-  pass
- def VerifyAccess(self):
-  """
+        pass
+
+    def VerifyAccess(self):
+        """
   VerifyAccess(self: DispatcherObject)
 
    Enforces that the calling thread has access to this System.Windows.Threading.DispatcherObject.
   """
-  pass
- Dispatcher=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Threading.Dispatcher this System.Windows.Threading.DispatcherObject is associated with.
+        pass
+
+    Dispatcher = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Windows.Threading.Dispatcher this System.Windows.Threading.DispatcherObject is associated with.
 
 
 
@@ -713,9 +742,8 @@ Get: Dispatcher(self: DispatcherObject) -> Dispatcher
 """
 
 
-
 class DispatcherFrame(DispatcherObject):
- """
+    """
  Represents an execution loop in the System.Windows.Threading.Dispatcher.
 
  
@@ -724,16 +752,18 @@ class DispatcherFrame(DispatcherObject):
 
  DispatcherFrame(exitWhenRequested: bool)
  """
- @staticmethod
- def __new__(self,exitWhenRequested=None):
-  """
+
+    @staticmethod
+    def __new__(self, exitWhenRequested=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,exitWhenRequested: bool)
   """
-  pass
- Continue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether this System.Windows.Threading.DispatcherFrame should continue.
+        pass
+
+    Continue = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value that indicates whether this System.Windows.Threading.DispatcherFrame should continue.
 
 
 
@@ -746,21 +776,24 @@ Set: Continue(self: DispatcherFrame)=value
 """
 
 
-
 class DispatcherHookEventArgs(EventArgs):
- """
+    """
  Provides event data for System.Windows.Threading.DispatcherHooks events.
 
  
 
  DispatcherHookEventArgs(operation: DispatcherOperation)
  """
- @staticmethod
- def __new__(self,operation):
-  """ __new__(cls: type,operation: DispatcherOperation) """
-  pass
- Dispatcher=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Threading.Dispatcher associated with this event.
+
+    @staticmethod
+    def __new__(self, operation):
+        """ __new__(cls: type,operation: DispatcherOperation) """
+        pass
+
+    Dispatcher = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Windows.Threading.Dispatcher associated with this event.
 
 
 
@@ -770,8 +803,8 @@ Get: Dispatcher(self: DispatcherHookEventArgs) -> Dispatcher
 
 """
 
- Operation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Threading.DispatcherOperation associated with this event.
+    Operation = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the System.Windows.Threading.DispatcherOperation associated with this event.
 
 
 
@@ -782,20 +815,21 @@ Get: Operation(self: DispatcherHookEventArgs) -> DispatcherOperation
 """
 
 
-
-class DispatcherHookEventHandler(MulticastDelegate,ICloneable,ISerializable):
- """
+class DispatcherHookEventHandler(MulticastDelegate, ICloneable, ISerializable):
+    """
  Represents the method that will handle System.Windows.Threading.DispatcherHooks related events.
 
  
 
  DispatcherHookEventHandler(object: object,method: IntPtr)
  """
- def BeginInvoke(self,sender,e,callback,object):
-  """ BeginInvoke(self: DispatcherHookEventHandler,sender: object,e: DispatcherHookEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+
+    def BeginInvoke(self, sender, e, callback, object):
+        """ BeginInvoke(self: DispatcherHookEventHandler,sender: object,e: DispatcherHookEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -808,9 +842,10 @@ class DispatcherHookEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -829,12 +864,14 @@ class DispatcherHookEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: DispatcherHookEventHandler,result: IAsyncResult) """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: DispatcherHookEventHandler,result: IAsyncResult) """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -843,12 +880,14 @@ class DispatcherHookEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,sender,e):
-  """ Invoke(self: DispatcherHookEventHandler,sender: object,e: DispatcherHookEventArgs) """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, sender, e):
+        """ Invoke(self: DispatcherHookEventHandler,sender: object,e: DispatcherHookEventArgs) """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -867,40 +906,47 @@ class DispatcherHookEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
 
 class DispatcherHooks(object):
- """ Provides additional event information about System.Windows.Threading.Dispatcher processing. """
- DispatcherInactive=None
- OperationAborted=None
- OperationCompleted=None
- OperationPosted=None
- OperationPriorityChanged=None
- OperationStarted=None
+    """ Provides additional event information about System.Windows.Threading.Dispatcher processing. """
+
+    DispatcherInactive = None
+    OperationAborted = None
+    OperationCompleted = None
+    OperationPosted = None
+    OperationPriorityChanged = None
+    OperationStarted = None
 
 
-class DispatcherOperationCallback(MulticastDelegate,ICloneable,ISerializable):
- """
+class DispatcherOperationCallback(MulticastDelegate, ICloneable, ISerializable):
+    """
  Represents a delegate to use for dispatcher operations.
 
  
 
  DispatcherOperationCallback(object: object,method: IntPtr)
  """
- def BeginInvoke(self,arg,callback,object):
-  """ BeginInvoke(self: DispatcherOperationCallback,arg: object,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+
+    def BeginInvoke(self, arg, callback, object):
+        """ BeginInvoke(self: DispatcherOperationCallback,arg: object,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -913,9 +959,10 @@ class DispatcherOperationCallback(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -934,12 +981,14 @@ class DispatcherOperationCallback(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: DispatcherOperationCallback,result: IAsyncResult) -> object """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: DispatcherOperationCallback,result: IAsyncResult) -> object """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -948,12 +997,14 @@ class DispatcherOperationCallback(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,arg):
-  """ Invoke(self: DispatcherOperationCallback,arg: object) -> object """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, arg):
+        """ Invoke(self: DispatcherOperationCallback,arg: object) -> object """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -972,143 +1023,178 @@ class DispatcherOperationCallback(MulticastDelegate,ICloneable,ISerializable):
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
 
-class DispatcherOperationStatus(Enum,IComparable,IFormattable,IConvertible):
- """
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+
+class DispatcherOperationStatus(Enum, IComparable, IFormattable, IConvertible):
+    """
  Describes the possible values for the status of a System.Windows.Threading.DispatcherOperation.
 
  
 
  enum DispatcherOperationStatus,values: Aborted (1),Completed (2),Executing (3),Pending (0)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Aborted=None
- Completed=None
- Executing=None
- Pending=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Aborted = None
+    Completed = None
+    Executing = None
+    Pending = None
+    value__ = None
 
 
-class DispatcherPriority(Enum,IComparable,IFormattable,IConvertible):
- """
+class DispatcherPriority(Enum, IComparable, IFormattable, IConvertible):
+    """
  Describes the priorities at which operations can be invoked by way of the System.Windows.Threading.Dispatcher.
 
  
 
  enum DispatcherPriority,values: ApplicationIdle (2),Background (4),ContextIdle (3),DataBind (8),Inactive (0),Input (5),Invalid (-1),Loaded (6),Normal (9),Render (7),Send (10),SystemIdle (1)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- ApplicationIdle=None
- Background=None
- ContextIdle=None
- DataBind=None
- Inactive=None
- Input=None
- Invalid=None
- Loaded=None
- Normal=None
- Render=None
- Send=None
- SystemIdle=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    ApplicationIdle = None
+    Background = None
+    ContextIdle = None
+    DataBind = None
+    Inactive = None
+    Input = None
+    Invalid = None
+    Loaded = None
+    Normal = None
+    Render = None
+    Send = None
+    SystemIdle = None
+    value__ = None
 
 
 class DispatcherPriorityAwaitable(object):
- # no doc
- def GetAwaiter(self):
-  """ GetAwaiter(self: DispatcherPriorityAwaitable) -> DispatcherPriorityAwaiter """
-  pass
+    # no doc
+    def GetAwaiter(self):
+        """ GetAwaiter(self: DispatcherPriorityAwaitable) -> DispatcherPriorityAwaiter """
+        pass
 
-class DispatcherPriorityAwaiter(object,INotifyCompletion):
- # no doc
- def GetResult(self):
-  """ GetResult(self: DispatcherPriorityAwaiter) """
-  pass
- def OnCompleted(self,continuation):
-  """ OnCompleted(self: DispatcherPriorityAwaiter,continuation: Action) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- IsCompleted=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsCompleted(self: DispatcherPriorityAwaiter) -> bool
+
+class DispatcherPriorityAwaiter(object, INotifyCompletion):
+    # no doc
+    def GetResult(self):
+        """ GetResult(self: DispatcherPriorityAwaiter) """
+        pass
+
+    def OnCompleted(self, continuation):
+        """ OnCompleted(self: DispatcherPriorityAwaiter,continuation: Action) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    IsCompleted = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IsCompleted(self: DispatcherPriorityAwaiter) -> bool
 
 
 
 """
 
 
+class DispatcherProcessingDisabled(object, IDisposable):
+    """ Represents the Dispatcher when it is in a disable state and provides a means to re-enable dispatcher processing. """
 
-class DispatcherProcessingDisabled(object,IDisposable):
- """ Represents the Dispatcher when it is in a disable state and provides a means to re-enable dispatcher processing. """
- def Dispose(self):
-  """
+    def Dispose(self):
+        """
   Dispose(self: DispatcherProcessingDisabled)
 
    Re-enables dispatcher processing.
   """
-  pass
- def Equals(self,obj):
-  """
+        pass
+
+    def Equals(self, obj):
+        """
   Equals(self: DispatcherProcessingDisabled,obj: object) -> bool
 
   
@@ -1127,9 +1213,10 @@ class DispatcherProcessingDisabled(object,IDisposable):
 
     System.Windows.Threading.DispatcherProcessingDisabled object; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: DispatcherProcessingDisabled) -> int
 
   
@@ -1138,39 +1225,47 @@ class DispatcherProcessingDisabled(object,IDisposable):
 
    Returns: A signed 32-bit integer hash code.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __ne__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
 
 class DispatcherSynchronizationContext(SynchronizationContext):
- """
+    """
  Provides a synchronization context for Windows Presentation Foundation (WPF).
 
  
@@ -1181,8 +1276,9 @@ class DispatcherSynchronizationContext(SynchronizationContext):
 
  DispatcherSynchronizationContext(dispatcher: Dispatcher,priority: DispatcherPriority)
  """
- def CreateCopy(self):
-  """
+
+    def CreateCopy(self):
+        """
   CreateCopy(self: DispatcherSynchronizationContext) -> SynchronizationContext
 
   
@@ -1191,9 +1287,10 @@ class DispatcherSynchronizationContext(SynchronizationContext):
 
    Returns: The copy of this synchronization context.
   """
-  pass
- def Post(self,d,state):
-  """
+        pass
+
+    def Post(self, d, state):
+        """
   Post(self: DispatcherSynchronizationContext,d: SendOrPostCallback,state: object)
 
    Invokes the callback in the synchronization context asynchronously.
@@ -1204,9 +1301,10 @@ class DispatcherSynchronizationContext(SynchronizationContext):
 
    state: The object passed to the delegate.
   """
-  pass
- def Send(self,d,state):
-  """
+        pass
+
+    def Send(self, d, state):
+        """
   Send(self: DispatcherSynchronizationContext,d: SendOrPostCallback,state: object)
 
    Invokes the callback in the synchronization context synchronously.
@@ -1217,9 +1315,10 @@ class DispatcherSynchronizationContext(SynchronizationContext):
 
    state: The object passed to the delegate.
   """
-  pass
- def Wait(self,waitHandles,waitAll,millisecondsTimeout):
-  """
+        pass
+
+    def Wait(self, waitHandles, waitAll, millisecondsTimeout):
+        """
   Wait(self: DispatcherSynchronizationContext,waitHandles: Array[IntPtr],waitAll: bool,millisecondsTimeout: int) -> int
 
   
@@ -1240,20 +1339,22 @@ class DispatcherSynchronizationContext(SynchronizationContext):
 
    Returns: The array index of the object that satisfied the wait.
   """
-  pass
- @staticmethod
- def __new__(self,dispatcher=None,priority=None):
-  """
+        pass
+
+    @staticmethod
+    def __new__(self, dispatcher=None, priority=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,dispatcher: Dispatcher)
 
   __new__(cls: type,dispatcher: Dispatcher,priority: DispatcherPriority)
   """
-  pass
+        pass
+
 
 class DispatcherTimer(object):
- """
+    """
  A timer that is integrated into the System.Windows.Threading.Dispatcher queue which is processed at a specified interval of time and at a specified priority.
 
  
@@ -1266,23 +1367,26 @@ class DispatcherTimer(object):
 
  DispatcherTimer(interval: TimeSpan,priority: DispatcherPriority,callback: EventHandler,dispatcher: Dispatcher)
  """
- def Start(self):
-  """
+
+    def Start(self):
+        """
   Start(self: DispatcherTimer)
 
    Starts the System.Windows.Threading.DispatcherTimer.
   """
-  pass
- def Stop(self):
-  """
+        pass
+
+    def Stop(self):
+        """
   Stop(self: DispatcherTimer)
 
    Stops the System.Windows.Threading.DispatcherTimer.
   """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,priority: DispatcherPriority)
@@ -1291,9 +1395,12 @@ class DispatcherTimer(object):
 
   __new__(cls: type,interval: TimeSpan,priority: DispatcherPriority,callback: EventHandler,dispatcher: Dispatcher)
   """
-  pass
- Dispatcher=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Threading.Dispatcher associated with this System.Windows.Threading.DispatcherTimer.
+        pass
+
+    Dispatcher = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Windows.Threading.Dispatcher associated with this System.Windows.Threading.DispatcherTimer.
 
 
 
@@ -1303,8 +1410,8 @@ Get: Dispatcher(self: DispatcherTimer) -> Dispatcher
 
 """
 
- Interval=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the period of time between timer ticks.
+    Interval = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the period of time between timer ticks.
 
 
 
@@ -1316,8 +1423,8 @@ Set: Interval(self: DispatcherTimer)=value
 
 """
 
- IsEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether the timer is running.
+    IsEnabled = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value that indicates whether the timer is running.
 
 
 
@@ -1329,8 +1436,8 @@ Set: IsEnabled(self: DispatcherTimer)=value
 
 """
 
- Tag=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a user-defined data object.
+    Tag = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a user-defined data object.
 
 
 
@@ -1342,14 +1449,14 @@ Set: Tag(self: DispatcherTimer)=value
 
 """
 
-
- Tick=None
+    Tick = None
 
 
 class DispatcherUnhandledExceptionEventArgs(DispatcherEventArgs):
- """ Provides data for the System.Windows.Threading.Dispatcher�System.Windows.Threading.Dispatcher.UnhandledException event. """
- Exception=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the exception that was raised when executing code by way of the dispatcher.
+    """ Provides data for the System.Windows.Threading.Dispatcher�System.Windows.Threading.Dispatcher.UnhandledException event. """
+
+    Exception = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the exception that was raised when executing code by way of the dispatcher.
 
 
 
@@ -1359,8 +1466,8 @@ Get: Exception(self: DispatcherUnhandledExceptionEventArgs) -> Exception
 
 """
 
- Handled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets whether the exception event has been handled.
+    Handled = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets whether the exception event has been handled.
 
 
 
@@ -1373,20 +1480,23 @@ Set: Handled(self: DispatcherUnhandledExceptionEventArgs)=value
 """
 
 
-
-class DispatcherUnhandledExceptionEventHandler(MulticastDelegate,ICloneable,ISerializable):
- """
+class DispatcherUnhandledExceptionEventHandler(
+    MulticastDelegate, ICloneable, ISerializable
+):
+    """
  Represents the method that will handle the System.Windows.Threading.Dispatcher.UnhandledException event.
 
  
 
  DispatcherUnhandledExceptionEventHandler(object: object,method: IntPtr)
  """
- def BeginInvoke(self,sender,e,callback,object):
-  """ BeginInvoke(self: DispatcherUnhandledExceptionEventHandler,sender: object,e: DispatcherUnhandledExceptionEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+
+    def BeginInvoke(self, sender, e, callback, object):
+        """ BeginInvoke(self: DispatcherUnhandledExceptionEventHandler,sender: object,e: DispatcherUnhandledExceptionEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -1399,9 +1509,10 @@ class DispatcherUnhandledExceptionEventHandler(MulticastDelegate,ICloneable,ISer
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -1420,12 +1531,14 @@ class DispatcherUnhandledExceptionEventHandler(MulticastDelegate,ICloneable,ISer
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: DispatcherUnhandledExceptionEventHandler,result: IAsyncResult) """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: DispatcherUnhandledExceptionEventHandler,result: IAsyncResult) """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -1434,12 +1547,14 @@ class DispatcherUnhandledExceptionEventHandler(MulticastDelegate,ICloneable,ISer
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,sender,e):
-  """ Invoke(self: DispatcherUnhandledExceptionEventHandler,sender: object,e: DispatcherUnhandledExceptionEventArgs) """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, sender, e):
+        """ Invoke(self: DispatcherUnhandledExceptionEventHandler,sender: object,e: DispatcherUnhandledExceptionEventArgs) """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -1458,21 +1573,26 @@ class DispatcherUnhandledExceptionEventHandler(MulticastDelegate,ICloneable,ISer
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
 
 class DispatcherUnhandledExceptionFilterEventArgs(DispatcherEventArgs):
- """ Provides data for the System.Windows.Threading.Dispatcher�System.Windows.Threading.Dispatcher.UnhandledExceptionFilter event. """
- Exception=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the exception that was raised when executing code by way of the dispatcher.
+    """ Provides data for the System.Windows.Threading.Dispatcher�System.Windows.Threading.Dispatcher.UnhandledExceptionFilter event. """
+
+    Exception = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the exception that was raised when executing code by way of the dispatcher.
 
 
 
@@ -1482,8 +1602,10 @@ Get: Exception(self: DispatcherUnhandledExceptionFilterEventArgs) -> Exception
 
 """
 
- RequestCatch=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets whether the exception should be caught and the event handlers called.
+    RequestCatch = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets whether the exception should be caught and the event handlers called.
 
 
 
@@ -1496,20 +1618,23 @@ Set: RequestCatch(self: DispatcherUnhandledExceptionFilterEventArgs)=value
 """
 
 
-
-class DispatcherUnhandledExceptionFilterEventHandler(MulticastDelegate,ICloneable,ISerializable):
- """
+class DispatcherUnhandledExceptionFilterEventHandler(
+    MulticastDelegate, ICloneable, ISerializable
+):
+    """
  Represents the method that will handle the System.Windows.Threading.Dispatcher.UnhandledExceptionFilter event.
 
  
 
  DispatcherUnhandledExceptionFilterEventHandler(object: object,method: IntPtr)
  """
- def BeginInvoke(self,sender,e,callback,object):
-  """ BeginInvoke(self: DispatcherUnhandledExceptionFilterEventHandler,sender: object,e: DispatcherUnhandledExceptionFilterEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+
+    def BeginInvoke(self, sender, e, callback, object):
+        """ BeginInvoke(self: DispatcherUnhandledExceptionFilterEventHandler,sender: object,e: DispatcherUnhandledExceptionFilterEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -1522,9 +1647,10 @@ class DispatcherUnhandledExceptionFilterEventHandler(MulticastDelegate,ICloneabl
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -1543,12 +1669,14 @@ class DispatcherUnhandledExceptionFilterEventHandler(MulticastDelegate,ICloneabl
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: DispatcherUnhandledExceptionFilterEventHandler,result: IAsyncResult) """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: DispatcherUnhandledExceptionFilterEventHandler,result: IAsyncResult) """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -1557,12 +1685,14 @@ class DispatcherUnhandledExceptionFilterEventHandler(MulticastDelegate,ICloneabl
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,sender,e):
-  """ Invoke(self: DispatcherUnhandledExceptionFilterEventHandler,sender: object,e: DispatcherUnhandledExceptionFilterEventArgs) """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, sender, e):
+        """ Invoke(self: DispatcherUnhandledExceptionFilterEventHandler,sender: object,e: DispatcherUnhandledExceptionFilterEventArgs) """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -1581,14 +1711,16 @@ class DispatcherUnhandledExceptionFilterEventHandler(MulticastDelegate,ICloneabl
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
 
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass

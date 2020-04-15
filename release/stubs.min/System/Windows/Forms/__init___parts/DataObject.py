@@ -1,5 +1,5 @@
-class DataObject(object,IDataObject,IDataObject):
- """
+class DataObject(object, IDataObject, IDataObject):
+    """
  Implements a basic data transfer mechanism.
 
  
@@ -10,8 +10,9 @@ class DataObject(object,IDataObject,IDataObject):
 
  DataObject(format: str,data: object)
  """
- def ContainsAudio(self):
-  """
+
+    def ContainsAudio(self):
+        """
   ContainsAudio(self: DataObject) -> bool
 
   
@@ -24,9 +25,10 @@ class DataObject(object,IDataObject,IDataObject):
 
    Returns: true if the data object contains audio data; otherwise,false.
   """
-  pass
- def ContainsFileDropList(self):
-  """
+        pass
+
+    def ContainsFileDropList(self):
+        """
   ContainsFileDropList(self: DataObject) -> bool
 
   
@@ -39,9 +41,10 @@ class DataObject(object,IDataObject,IDataObject):
 
    Returns: true if the data object contains a file drop list; otherwise,false.
   """
-  pass
- def ContainsImage(self):
-  """
+        pass
+
+    def ContainsImage(self):
+        """
   ContainsImage(self: DataObject) -> bool
 
   
@@ -54,9 +57,10 @@ class DataObject(object,IDataObject,IDataObject):
 
    Returns: true if the data object contains image data; otherwise,false.
   """
-  pass
- def ContainsText(self,format=None):
-  """
+        pass
+
+    def ContainsText(self, format=None):
+        """
   ContainsText(self: DataObject,format: TextDataFormat) -> bool
 
   
@@ -85,9 +89,10 @@ class DataObject(object,IDataObject,IDataObject):
 
    Returns: true if the data object contains text data; otherwise,false.
   """
-  pass
- def GetAudioStream(self):
-  """
+        pass
+
+    def GetAudioStream(self):
+        """
   GetAudioStream(self: DataObject) -> Stream
 
   
@@ -98,9 +103,10 @@ class DataObject(object,IDataObject,IDataObject):
 
     the System.Windows.Forms.DataFormats.WaveAudio format.
   """
-  pass
- def GetData(self,format,autoConvert=None):
-  """
+        pass
+
+    def GetData(self, format, autoConvert=None):
+        """
   GetData(self: DataObject,format: Type) -> object
 
   
@@ -143,9 +149,10 @@ class DataObject(object,IDataObject,IDataObject):
 
    Returns: The data associated with the specified format,or null.
   """
-  pass
- def GetDataPresent(self,format,autoConvert=None):
-  """
+        pass
+
+    def GetDataPresent(self, format, autoConvert=None):
+        """
   GetDataPresent(self: DataObject,format: str) -> bool
 
   
@@ -206,9 +213,10 @@ class DataObject(object,IDataObject,IDataObject):
 
     converted to,the specified format; otherwise,false.
   """
-  pass
- def GetFileDropList(self):
-  """
+        pass
+
+    def GetFileDropList(self):
+        """
   GetFileDropList(self: DataObject) -> StringCollection
 
   
@@ -221,9 +229,10 @@ class DataObject(object,IDataObject,IDataObject):
 
     or can be converted to that format.
   """
-  pass
- def GetFormats(self,autoConvert=None):
-  """
+        pass
+
+    def GetFormats(self, autoConvert=None):
+        """
   GetFormats(self: DataObject) -> Array[str]
 
   
@@ -264,9 +273,10 @@ class DataObject(object,IDataObject,IDataObject):
 
     stored in this object.
   """
-  pass
- def GetImage(self):
-  """
+        pass
+
+    def GetImage(self):
+        """
   GetImage(self: DataObject) -> Image
 
   
@@ -279,9 +289,10 @@ class DataObject(object,IDataObject,IDataObject):
 
     or can be converted to that format.
   """
-  pass
- def GetText(self,format=None):
-  """
+        pass
+
+    def GetText(self, format=None):
+        """
   GetText(self: DataObject,format: TextDataFormat) -> str
 
   
@@ -316,9 +327,10 @@ class DataObject(object,IDataObject,IDataObject):
 
     in the System.Windows.Forms.TextDataFormat.UnicodeText format.
   """
-  pass
- def SetAudio(self,*__args):
-  """
+        pass
+
+    def SetAudio(self, *__args):
+        """
   SetAudio(self: DataObject,audioStream: Stream)
 
    Adds a System.IO.Stream to the data object in the System.Windows.Forms.DataFormats.WaveAudio 
@@ -343,9 +355,10 @@ class DataObject(object,IDataObject,IDataObject):
 
    audioBytes: A System.Byte array containing the audio data.
   """
-  pass
- def SetData(self,*__args):
-  """
+        pass
+
+    def SetData(self, *__args):
+        """
   SetData(self: DataObject,format: Type,data: object)
 
    Adds the specified object to the System.Windows.Forms.DataObject using the specified type as the 
@@ -398,9 +411,10 @@ class DataObject(object,IDataObject,IDataObject):
 
    data: The data to store.
   """
-  pass
- def SetFileDropList(self,filePaths):
-  """
+        pass
+
+    def SetFileDropList(self, filePaths):
+        """
   SetFileDropList(self: DataObject,filePaths: StringCollection)
 
    Adds a collection of file names to the data object in the 
@@ -413,9 +427,10 @@ class DataObject(object,IDataObject,IDataObject):
 
    filePaths: A System.Collections.Specialized.StringCollection containing the file names.
   """
-  pass
- def SetImage(self,image):
-  """
+        pass
+
+    def SetImage(self, image):
+        """
   SetImage(self: DataObject,image: Image)
 
    Adds an System.Drawing.Image to the data object in the System.Windows.Forms.DataFormats.Bitmap 
@@ -428,9 +443,10 @@ class DataObject(object,IDataObject,IDataObject):
 
    image: The System.Drawing.Image to add to the data object.
   """
-  pass
- def SetText(self,textData,format=None):
-  """
+        pass
+
+    def SetText(self, textData, format=None):
+        """
   SetText(self: DataObject,textData: str,format: TextDataFormat)
 
    Adds text data to the data object in the format indicated by the specified 
@@ -453,20 +469,23 @@ class DataObject(object,IDataObject,IDataObject):
 
    textData: The text to add to the data object.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,data: object)
 
   __new__(cls: type,format: str,data: object)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass

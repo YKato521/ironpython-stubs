@@ -1,7 +1,8 @@
 class IRegistrationServices:
- """ Provides a set of services for registering and unregistering managed assemblies for use from COM. """
- def GetManagedCategoryGuid(self):
-  """
+    """ Provides a set of services for registering and unregistering managed assemblies for use from COM. """
+
+    def GetManagedCategoryGuid(self):
+        """
   GetManagedCategoryGuid(self: IRegistrationServices) -> Guid
 
   
@@ -10,9 +11,10 @@ class IRegistrationServices:
 
    Returns: The GUID of the COM category that contains the managed classes.
   """
-  pass
- def GetProgIdForType(self,type):
-  """
+        pass
+
+    def GetProgIdForType(self, type):
+        """
   GetProgIdForType(self: IRegistrationServices,type: Type) -> str
 
   
@@ -25,9 +27,10 @@ class IRegistrationServices:
 
    Returns: The ProgID for the specified type.
   """
-  pass
- def GetRegistrableTypesInAssembly(self,assembly):
-  """
+        pass
+
+    def GetRegistrableTypesInAssembly(self, assembly):
+        """
   GetRegistrableTypesInAssembly(self: IRegistrationServices,assembly: Assembly) -> Array[Type]
 
   
@@ -46,9 +49,10 @@ class IRegistrationServices:
 
    Returns: A System.Type array containing a list of classes in assembly.
   """
-  pass
- def RegisterAssembly(self,assembly,flags):
-  """
+        pass
+
+    def RegisterAssembly(self, assembly, flags):
+        """
   RegisterAssembly(self: IRegistrationServices,assembly: Assembly,flags: AssemblyRegistrationFlags) -> bool
 
   
@@ -69,9 +73,10 @@ class IRegistrationServices:
 
     assembly contains no eligible types.
   """
-  pass
- def RegisterTypeForComClients(self,type,g):
-  """
+        pass
+
+    def RegisterTypeForComClients(self, type, g):
+        """
   RegisterTypeForComClients(self: IRegistrationServices,type: Type,g: Guid) -> Guid
 
   
@@ -84,9 +89,10 @@ class IRegistrationServices:
 
    g: GUID used to register the specified type.
   """
-  pass
- def TypeRepresentsComType(self,type):
-  """
+        pass
+
+    def TypeRepresentsComType(self, type):
+        """
   TypeRepresentsComType(self: IRegistrationServices,type: Type) -> bool
 
   
@@ -99,9 +105,10 @@ class IRegistrationServices:
 
    Returns: true if the specified type is a COM type; otherwise false.
   """
-  pass
- def TypeRequiresRegistration(self,type):
-  """
+        pass
+
+    def TypeRequiresRegistration(self, type):
+        """
   TypeRequiresRegistration(self: IRegistrationServices,type: Type) -> bool
 
   
@@ -114,9 +121,10 @@ class IRegistrationServices:
 
    Returns: true if the type must be registered for use from COM; otherwise false.
   """
-  pass
- def UnregisterAssembly(self,assembly):
-  """
+        pass
+
+    def UnregisterAssembly(self, assembly):
+        """
   UnregisterAssembly(self: IRegistrationServices,assembly: Assembly) -> bool
 
   
@@ -131,7 +139,8 @@ class IRegistrationServices:
 
     assembly contains no eligible types.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

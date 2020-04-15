@@ -1,23 +1,27 @@
 class ComponentIndex(object):
- """
+    """
  Represents an index of an element contained in another object.
 
  
 
  ComponentIndex(type: ComponentIndexType,index: int)
  """
- @staticmethod
- def __new__(self,type,index):
-  """
+
+    @staticmethod
+    def __new__(self, type, index):
+        """
   __new__[ComponentIndex]() -> ComponentIndex
 
   
 
   __new__(cls: type,type: ComponentIndexType,index: int)
   """
-  pass
- ComponentIndexType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The interpretation of Index depends on the Type value.
+        pass
+
+    ComponentIndexType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The interpretation of Index depends on the Type value.
 
    Type    m_index interpretation (0 based indices)
 
@@ -63,8 +67,8 @@ Get: ComponentIndexType(self: ComponentIndex) -> ComponentIndexType
 
 """
 
- Index=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The interpretation of m_index depends on the m_type value.
+    Index = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The interpretation of m_index depends on the m_type value.
 
    m_type    m_index interpretation (0 based indices)
 
@@ -110,6 +114,4 @@ Get: Index(self: ComponentIndex) -> int
 
 """
 
-
- Unset=None
-
+    Unset = None

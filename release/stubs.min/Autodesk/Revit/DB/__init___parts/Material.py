@@ -1,7 +1,8 @@
-class Material(Element,IDisposable):
- """ Represents a material element within an Autodesk Revit project. """
- def ClearMaterialAspect(self,aspect):
-  """
+class Material(Element, IDisposable):
+    """ Represents a material element within an Autodesk Revit project. """
+
+    def ClearMaterialAspect(self, aspect):
+        """
   ClearMaterialAspect(self: Material,aspect: MaterialAspect)
 
    Removes an aspect from the material.
@@ -10,10 +11,11 @@ class Material(Element,IDisposable):
 
    aspect: The material aspect.
   """
-  pass
- @staticmethod
- def Create(document,name):
-  """
+        pass
+
+    @staticmethod
+    def Create(document, name):
+        """
   Create(document: Document,name: str) -> ElementId
 
   
@@ -28,12 +30,14 @@ class Material(Element,IDisposable):
 
    Returns: Identifier of the new material.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def Duplicate(self,name):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def Duplicate(self, name):
+        """
   Duplicate(self: Material,name: str) -> Material
 
   
@@ -52,13 +56,15 @@ class Material(Element,IDisposable):
 
    Returns: The new material.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- @staticmethod
- def IsMaterialOrValidDefault(pElem,materialId):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    @staticmethod
+    def IsMaterialOrValidDefault(pElem, materialId):
+        """
   IsMaterialOrValidDefault(pElem: Element,materialId: ElementId) -> bool
 
   
@@ -75,10 +81,11 @@ class Material(Element,IDisposable):
 
     material from category,false otherwise.
   """
-  pass
- @staticmethod
- def IsNameUnique(aDocument,name):
-  """
+        pass
+
+    @staticmethod
+    def IsNameUnique(aDocument, name):
+        """
   IsNameUnique(aDocument: Document,name: str) -> bool
 
   
@@ -93,15 +100,18 @@ class Material(Element,IDisposable):
 
    Returns: Returns true if the name is unique,and false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetMaterialAspectByPropertySet(self,aspect,propertySetId):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetMaterialAspectByPropertySet(self, aspect, propertySetId):
+        """
   SetMaterialAspectByPropertySet(self: Material,aspect: MaterialAspect,propertySetId: ElementId)
 
    Sets an aspect of the material to a shared property set.
@@ -112,18 +122,24 @@ class Material(Element,IDisposable):
 
    propertySetId: Identifier of a shared property set (an instance of PropertySetElement).
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- AppearanceAssetId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The ElementId of the AppearanceAssetElement.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    AppearanceAssetId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The ElementId of the AppearanceAssetElement.
 
 
 
@@ -135,8 +151,8 @@ Set: AppearanceAssetId(self: Material)=value
 
 """
 
- Color=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The color of the material.
+    Color = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The color of the material.
 
 
 
@@ -148,8 +164,10 @@ Set: Color(self: Material)=value
 
 """
 
- CutPatternColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The color of the material cut pattern.
+    CutPatternColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The color of the material cut pattern.
 
 
 
@@ -161,8 +179,10 @@ Set: CutPatternColor(self: Material)=value
 
 """
 
- CutPatternId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the FillPatternElement associated to cut views of faces with this material.
+    CutPatternId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The id of the FillPatternElement associated to cut views of faces with this material.
 
 
 
@@ -174,8 +194,8 @@ Set: CutPatternId(self: Material)=value
 
 """
 
- Glow=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The option for glow.
+    Glow = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The option for glow.
 
 
 
@@ -187,8 +207,10 @@ Set: Glow(self: Material)=value
 
 """
 
- MaterialCategory=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The name of the material category,e.g. 'Wood'
+    MaterialCategory = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The name of the material category,e.g. 'Wood'
 
 
 
@@ -200,8 +222,10 @@ Set: MaterialCategory(self: Material)=value
 
 """
 
- MaterialClass=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The name of the general material type,e.g. 'Wood.'
+    MaterialClass = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The name of the general material type,e.g. 'Wood.'
 
 
 
@@ -213,8 +237,8 @@ Set: MaterialClass(self: Material)=value
 
 """
 
- Shininess=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The shininess of the material.
+    Shininess = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The shininess of the material.
 
 
 
@@ -226,8 +250,10 @@ Set: Shininess(self: Material)=value
 
 """
 
- Smoothness=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The smoothness of the material.
+    Smoothness = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The smoothness of the material.
 
 
 
@@ -239,8 +265,10 @@ Set: Smoothness(self: Material)=value
 
 """
 
- StructuralAssetId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The ElementId of the structural PropertySetElement.
+    StructuralAssetId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The ElementId of the structural PropertySetElement.
 
 
 
@@ -252,8 +280,10 @@ Set: StructuralAssetId(self: Material)=value
 
 """
 
- SurfacePatternColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The color of the material surface pattern.
+    SurfacePatternColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The color of the material surface pattern.
 
 
 
@@ -265,8 +295,10 @@ Set: SurfacePatternColor(self: Material)=value
 
 """
 
- SurfacePatternId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the FillPatternElement associated to normal views of faces with this material.
+    SurfacePatternId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The id of the FillPatternElement associated to normal views of faces with this material.
 
 
 
@@ -278,8 +310,10 @@ Set: SurfacePatternId(self: Material)=value
 
 """
 
- ThermalAssetId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The ElementId of the thermal PropertySetElement.
+    ThermalAssetId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The ElementId of the thermal PropertySetElement.
 
 
 
@@ -291,8 +325,10 @@ Set: ThermalAssetId(self: Material)=value
 
 """
 
- Transparency=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The transparency of the material.
+    Transparency = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The transparency of the material.
 
 
 
@@ -304,8 +340,10 @@ Set: Transparency(self: Material)=value
 
 """
 
- UseRenderAppearanceForShading=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True to use the render appearance settings for shaded view appearance;
+    UseRenderAppearanceForShading = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """True to use the render appearance settings for shaded view appearance;
 
    false to use the material's color and transparency value for shaded view appearance.
 
@@ -318,5 +356,3 @@ Get: UseRenderAppearanceForShading(self: Material) -> bool
 Set: UseRenderAppearanceForShading(self: Material)=value
 
 """
-
-

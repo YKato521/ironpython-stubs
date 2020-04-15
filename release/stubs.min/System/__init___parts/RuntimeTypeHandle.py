@@ -1,7 +1,8 @@
-class RuntimeTypeHandle(object,ISerializable):
- """ Represents a type using an internal metadata token. """
- def Equals(self,*__args):
-  """
+class RuntimeTypeHandle(object, ISerializable):
+    """ Represents a type using an internal metadata token. """
+
+    def Equals(self, *__args):
+        """
   Equals(self: RuntimeTypeHandle,handle: RuntimeTypeHandle) -> bool
 
   
@@ -36,9 +37,10 @@ class RuntimeTypeHandle(object,ISerializable):
 
     otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: RuntimeTypeHandle) -> int
 
   
@@ -47,9 +49,10 @@ class RuntimeTypeHandle(object,ISerializable):
 
    Returns: A 32-bit signed integer hash code.
   """
-  pass
- def GetModuleHandle(self):
-  """
+        pass
+
+    def GetModuleHandle(self):
+        """
   GetModuleHandle(self: RuntimeTypeHandle) -> ModuleHandle
 
   
@@ -60,9 +63,10 @@ class RuntimeTypeHandle(object,ISerializable):
 
     represented by the current instance.
   """
-  pass
- def GetObjectData(self,info,context):
-  """
+        pass
+
+    def GetObjectData(self, info, context):
+        """
   GetObjectData(self: RuntimeTypeHandle,info: SerializationInfo,context: StreamingContext)
 
    Populates a System.Runtime.Serialization.SerializationInfo with the data necessary to 
@@ -77,24 +81,31 @@ class RuntimeTypeHandle(object,ISerializable):
 
    context: (Reserved) The location where serialized data will be stored and retrieved.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a handle to the type represented by this instance.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a handle to the type represented by this instance.
 
 
 
@@ -103,5 +114,3 @@ Get: Value(self: RuntimeTypeHandle) -> IntPtr
 
 
 """
-
-

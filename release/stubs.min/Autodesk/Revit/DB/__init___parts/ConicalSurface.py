@@ -1,8 +1,9 @@
-class ConicalSurface(Surface,IDisposable):
- """ A Conical Surface. """
- @staticmethod
- def Create(frameOfReference,halfAngle):
-  """
+class ConicalSurface(Surface, IDisposable):
+    """ A Conical Surface. """
+
+    @staticmethod
+    def Create(frameOfReference, halfAngle):
+        """
   Create(frameOfReference: Frame,halfAngle: float) -> ConicalSurface
 
   
@@ -33,12 +34,14 @@ class ConicalSurface(Surface,IDisposable):
 
    Returns: The created ConicalSurface.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Surface,A_0: bool) """
-  pass
- def GetFrameOfReference(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Surface,A_0: bool) """
+        pass
+
+    def GetFrameOfReference(self):
+        """
   GetFrameOfReference(self: ConicalSurface) -> Frame
 
   
@@ -47,10 +50,11 @@ class ConicalSurface(Surface,IDisposable):
 
    Returns: Frame of reference associated with this ConicalSurface.
   """
-  pass
- @staticmethod
- def IsValidConeAngle(halfAngle):
-  """
+        pass
+
+    @staticmethod
+    def IsValidConeAngle(halfAngle):
+        """
   IsValidConeAngle(halfAngle: float) -> bool
 
   
@@ -69,21 +73,26 @@ class ConicalSurface(Surface,IDisposable):
 
     otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Surface,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Axis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Axis of the cone. This is the Z axis of the local coordinate system associated with this cone.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Surface,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Axis = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Axis of the cone. This is the Z axis of the local coordinate system associated with this cone.
 
 
 
@@ -93,8 +102,8 @@ Get: Axis(self: ConicalSurface) -> XYZ
 
 """
 
- HalfAngle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Cone angle.
+    HalfAngle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Cone angle.
 
 
 
@@ -104,8 +113,8 @@ Get: HalfAngle(self: ConicalSurface) -> float
 
 """
 
- Origin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Apex of the cone. This is the origin of the local coordinate system associated with this cone.
+    Origin = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Apex of the cone. This is the origin of the local coordinate system associated with this cone.
 
 
 
@@ -115,8 +124,8 @@ Get: Origin(self: ConicalSurface) -> XYZ
 
 """
 
- XDir=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """X axis of the local coordinate system associated with this cone.
+    XDir = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """X axis of the local coordinate system associated with this cone.
 
 
 
@@ -126,8 +135,8 @@ Get: XDir(self: ConicalSurface) -> XYZ
 
 """
 
- YDir=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """X axis of the local coordinate system associated with this cone.
+    YDir = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """X axis of the local coordinate system associated with this cone.
 
 
 
@@ -136,5 +145,3 @@ Get: YDir(self: ConicalSurface) -> XYZ
 
 
 """
-
-

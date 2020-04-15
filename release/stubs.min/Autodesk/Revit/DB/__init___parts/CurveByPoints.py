@@ -1,22 +1,26 @@
-class CurveByPoints(CurveElement,IDisposable):
- """ A curve interpolating two or more points. """
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetPoints(self):
-  """
+class CurveByPoints(CurveElement, IDisposable):
+    """ A curve interpolating two or more points. """
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetPoints(self):
+        """
   GetPoints(self: CurveByPoints) -> ReferencePointArray
 
   
 
    Get the sequence of points interpolated by this curve.
   """
-  pass
- def GetVisibility(self):
-  """
+        pass
+
+    def GetVisibility(self):
+        """
   GetVisibility(self: CurveByPoints) -> FamilyElementVisibility
 
   
@@ -25,15 +29,18 @@ class CurveByPoints(CurveElement,IDisposable):
 
    Returns: A copy of visibility settings for the curve.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetPoints(self,points):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetPoints(self, points):
+        """
   SetPoints(self: CurveByPoints,points: ReferencePointArray)
 
    Change the sequence of points interpolated by this curve.
@@ -42,17 +49,19 @@ class CurveByPoints(CurveElement,IDisposable):
 
    points: An array of 2 or more ReferencePoints.
   """
-  pass
- def SetVisibility(self,visibility):
-  """
+        pass
+
+    def SetVisibility(self, visibility):
+        """
   SetVisibility(self: CurveByPoints,visibility: FamilyElementVisibility)
 
    Sets the visibility.
   """
-  pass
- @staticmethod
- def SortPoints(arr):
-  """
+        pass
+
+    @staticmethod
+    def SortPoints(arr):
+        """
   SortPoints(arr: ReferencePointArray) -> bool
 
   
@@ -81,18 +90,24 @@ class CurveByPoints(CurveElement,IDisposable):
 
   true otherwise.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- IsReferenceLine=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsReferenceLine(self: CurveByPoints) -> bool
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    IsReferenceLine = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IsReferenceLine(self: CurveByPoints) -> bool
 
 
 
@@ -100,8 +115,10 @@ Set: IsReferenceLine(self: CurveByPoints)=value
 
 """
 
- ReferenceType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates the type of reference.
+    ReferenceType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates the type of reference.
 
 
 
@@ -113,8 +130,10 @@ Set: ReferenceType(self: CurveByPoints)=value
 
 """
 
- SketchPlane=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Override the SketchPlane property of CurveElement.
+    SketchPlane = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Override the SketchPlane property of CurveElement.
 
 
 
@@ -126,8 +145,10 @@ Set: SketchPlane(self: CurveByPoints)=value
 
 """
 
- Subcategory=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The subcategory,or graphics style,of the CurveByPoints.
+    Subcategory = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The subcategory,or graphics style,of the CurveByPoints.
 
 
 
@@ -139,8 +160,8 @@ Set: Subcategory(self: CurveByPoints)=value
 
 """
 
- Visible=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether the point is visible when the family is loaded
+    Visible = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Whether the point is visible when the family is loaded
 
 into a project.
 
@@ -153,5 +174,3 @@ Get: Visible(self: CurveByPoints) -> bool
 Set: Visible(self: CurveByPoints)=value
 
 """
-
-

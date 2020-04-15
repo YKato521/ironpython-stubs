@@ -1,13 +1,14 @@
-class Container(object,IContainer,IDisposable):
- """
+class Container(object, IContainer, IDisposable):
+    """
  Encapsulates zero or more components.
 
  
 
  Container()
  """
- def Add(self,component,name=None):
-  """
+
+    def Add(self, component, name=None):
+        """
   Add(self: Container,component: IComponent,name: str)
 
    Adds the specified System.ComponentModel.Component to the System.ComponentModel.Container and 
@@ -38,9 +39,10 @@ class Container(object,IContainer,IDisposable):
 
    component: The component to add.
   """
-  pass
- def CreateSite(self,*args):
-  """
+        pass
+
+    def CreateSite(self, *args):
+        """
   CreateSite(self: Container,component: IComponent,name: str) -> ISite
 
   
@@ -59,16 +61,18 @@ class Container(object,IContainer,IDisposable):
 
    Returns: The newly created site.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: Container)
 
    Releases all resources used by the System.ComponentModel.Container.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Container,service: Type) -> object
 
   
@@ -81,9 +85,10 @@ class Container(object,IContainer,IDisposable):
 
    Returns: An System.Object implementing the requested service,or null if the service cannot be resolved.
   """
-  pass
- def Remove(self,component):
-  """
+        pass
+
+    def Remove(self, component):
+        """
   Remove(self: Container,component: IComponent)
 
    Removes a component from the System.ComponentModel.Container.
@@ -92,9 +97,10 @@ class Container(object,IContainer,IDisposable):
 
    component: The component to remove.
   """
-  pass
- def RemoveWithoutUnsiting(self,*args):
-  """
+        pass
+
+    def RemoveWithoutUnsiting(self, *args):
+        """
   RemoveWithoutUnsiting(self: Container,component: IComponent)
 
    Removes a component from the System.ComponentModel.Container without setting 
@@ -107,9 +113,10 @@ class Container(object,IContainer,IDisposable):
 
    component: The component to remove.
   """
-  pass
- def ValidateName(self,*args):
-  """
+        pass
+
+    def ValidateName(self, *args):
+        """
   ValidateName(self: Container,component: IComponent,name: str)
 
    Determines whether the component name is unique for this container.
@@ -120,34 +127,42 @@ class Container(object,IContainer,IDisposable):
 
    name: The component name to validate.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Components=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets all the components in the System.ComponentModel.Container.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Components = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets all the components in the System.ComponentModel.Container.
 
 
 
@@ -156,5 +171,3 @@ Get: Components(self: Container) -> ComponentCollection
 
 
 """
-
-

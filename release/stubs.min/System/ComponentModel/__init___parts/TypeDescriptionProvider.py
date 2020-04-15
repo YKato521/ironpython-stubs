@@ -1,7 +1,8 @@
 class TypeDescriptionProvider(object):
- """ Provides supplemental metadata to the System.ComponentModel.TypeDescriptor. """
- def CreateInstance(self,provider,objectType,argTypes,args):
-  """
+    """ Provides supplemental metadata to the System.ComponentModel.TypeDescriptor. """
+
+    def CreateInstance(self, provider, objectType, argTypes, args):
+        """
   CreateInstance(self: TypeDescriptionProvider,provider: IServiceProvider,objectType: Type,argTypes: Array[Type],args: Array[object]) -> object
 
   
@@ -24,9 +25,10 @@ class TypeDescriptionProvider(object):
 
    Returns: The substitute System.Object.
   """
-  pass
- def GetCache(self,instance):
-  """
+        pass
+
+    def GetCache(self, instance):
+        """
   GetCache(self: TypeDescriptionProvider,instance: object) -> IDictionary
 
   
@@ -39,9 +41,10 @@ class TypeDescriptionProvider(object):
 
    Returns: An System.Collections.IDictionary if the provided object supports caching; otherwise,null.
   """
-  pass
- def GetExtendedTypeDescriptor(self,instance):
-  """
+        pass
+
+    def GetExtendedTypeDescriptor(self, instance):
+        """
   GetExtendedTypeDescriptor(self: TypeDescriptionProvider,instance: object) -> ICustomTypeDescriptor
 
   
@@ -54,9 +57,10 @@ class TypeDescriptionProvider(object):
 
    Returns: An System.ComponentModel.ICustomTypeDescriptor that can provide extended metadata for the object.
   """
-  pass
- def GetExtenderProviders(self,*args):
-  """
+        pass
+
+    def GetExtenderProviders(self, *args):
+        """
   GetExtenderProviders(self: TypeDescriptionProvider,instance: object) -> Array[IExtenderProvider]
 
   
@@ -69,9 +73,10 @@ class TypeDescriptionProvider(object):
 
    Returns: An array of extender providers for instance.
   """
-  pass
- def GetFullComponentName(self,component):
-  """
+        pass
+
+    def GetFullComponentName(self, component):
+        """
   GetFullComponentName(self: TypeDescriptionProvider,component: object) -> str
 
   
@@ -84,9 +89,10 @@ class TypeDescriptionProvider(object):
 
    Returns: The name of the specified component.
   """
-  pass
- def GetReflectionType(self,*__args):
-  """
+        pass
+
+    def GetReflectionType(self, *__args):
+        """
   GetReflectionType(self: TypeDescriptionProvider,objectType: Type,instance: object) -> Type
 
   
@@ -125,9 +131,10 @@ class TypeDescriptionProvider(object):
 
    Returns: A System.Type.
   """
-  pass
- def GetRuntimeType(self,reflectionType):
-  """
+        pass
+
+    def GetRuntimeType(self, reflectionType):
+        """
   GetRuntimeType(self: TypeDescriptionProvider,reflectionType: Type) -> Type
 
   
@@ -140,9 +147,10 @@ class TypeDescriptionProvider(object):
 
    Returns: A System.Type that represents the runtime equivalent of reflectionType.
   """
-  pass
- def GetTypeDescriptor(self,*__args):
-  """
+        pass
+
+    def GetTypeDescriptor(self, *__args):
+        """
   GetTypeDescriptor(self: TypeDescriptionProvider,objectType: Type,instance: object) -> ICustomTypeDescriptor
 
   
@@ -189,9 +197,10 @@ class TypeDescriptionProvider(object):
 
    Returns: An System.ComponentModel.ICustomTypeDescriptor that can provide metadata for the type.
   """
-  pass
- def IsSupportedType(self,type):
-  """
+        pass
+
+    def IsSupportedType(self, type):
+        """
   IsSupportedType(self: TypeDescriptionProvider,type: Type) -> bool
 
   
@@ -210,12 +219,13 @@ class TypeDescriptionProvider(object):
 
     providers; otherwise,false.
   """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """
   __new__(cls: type)
 
   __new__(cls: type,parent: TypeDescriptionProvider)
   """
-  pass
+        pass

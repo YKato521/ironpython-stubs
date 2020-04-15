@@ -1,7 +1,8 @@
-class ElevationMarker(Element,IDisposable):
- """ ElevationMarkers either host elevation ViewSection views or view references. """
- def CreateElevation(self,document,viewPlanId,index):
-  """
+class ElevationMarker(Element, IDisposable):
+    """ ElevationMarkers either host elevation ViewSection views or view references. """
+
+    def CreateElevation(self, document, viewPlanId, index):
+        """
   CreateElevation(self: ElevationMarker,document: Document,viewPlanId: ElementId,index: int) -> ViewSection
 
   
@@ -36,10 +37,11 @@ class ElevationMarker(Element,IDisposable):
 
    Returns: The new elevation ViewSection.
   """
-  pass
- @staticmethod
- def CreateElevationMarker(document,viewFamilyTypeId,origin,initialViewScale):
-  """
+        pass
+
+    @staticmethod
+    def CreateElevationMarker(document, viewFamilyTypeId, origin, initialViewScale):
+        """
   CreateElevationMarker(document: Document,viewFamilyTypeId: ElementId,origin: XYZ,initialViewScale: int) -> ElevationMarker
 
   
@@ -68,9 +70,10 @@ class ElevationMarker(Element,IDisposable):
 
    Returns: The new ElevationMarker.
   """
-  pass
- def CreateReferenceElevation(self,document,index,viewIdToReference):
-  """
+        pass
+
+    def CreateReferenceElevation(self, document, index, viewIdToReference):
+        """
   CreateReferenceElevation(self: ElevationMarker,document: Document,index: int,viewIdToReference: ElementId)
 
    Creates a reference elevation on the ElevationMarker at the desired index.
@@ -83,10 +86,11 @@ class ElevationMarker(Element,IDisposable):
 
    viewIdToReference: The view which will be referenced.
   """
-  pass
- @staticmethod
- def CreateReferenceElevationMarker(document,viewFamilyTypeId,origin,viewPlanId):
-  """
+        pass
+
+    @staticmethod
+    def CreateReferenceElevationMarker(document, viewFamilyTypeId, origin, viewPlanId):
+        """
   CreateReferenceElevationMarker(document: Document,viewFamilyTypeId: ElementId,origin: XYZ,viewPlanId: ElementId) -> ElevationMarker
 
   
@@ -113,15 +117,18 @@ class ElevationMarker(Element,IDisposable):
 
    Returns: The new ElevationMarker.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetViewId(self,index):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetViewId(self, index):
+        """
   GetViewId(self: ElevationMarker,index: int) -> ElementId
 
   
@@ -136,9 +143,10 @@ class ElevationMarker(Element,IDisposable):
 
     otherwise.
   """
-  pass
- def HasElevations(self):
-  """
+        pass
+
+    def HasElevations(self):
+        """
   HasElevations(self: ElevationMarker) -> bool
 
   
@@ -151,9 +159,10 @@ class ElevationMarker(Element,IDisposable):
 
    Returns: True if the ElevationMarker has at least one elevation view,false otherwise.
   """
-  pass
- def IsAvailableIndex(self,index):
-  """
+        pass
+
+    def IsAvailableIndex(self, index):
+        """
   IsAvailableIndex(self: ElevationMarker,index: int) -> bool
 
   
@@ -170,24 +179,32 @@ class ElevationMarker(Element,IDisposable):
 
    Returns: True if an elevation can be created at %index%,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- CurrentViewCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The current number of views hosted by this ElevationMarker.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    CurrentViewCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The current number of views hosted by this ElevationMarker.
 
 
 
@@ -197,8 +214,10 @@ Get: CurrentViewCount(self: ElevationMarker) -> int
 
 """
 
- IsReference=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if this is a reference ElevationMarker.
+    IsReference = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if this is a reference ElevationMarker.
 
    Only reference elevations can be hosted by reference ElevationMarkers.
 
@@ -210,8 +229,10 @@ Get: IsReference(self: ElevationMarker) -> bool
 
 """
 
- MaximumViewCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The maximum number of views that can be hosted by this ElevationMarker.
+    MaximumViewCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The maximum number of views that can be hosted by this ElevationMarker.
 
 
 
@@ -220,5 +241,3 @@ Get: MaximumViewCount(self: ElevationMarker) -> int
 
 
 """
-
-

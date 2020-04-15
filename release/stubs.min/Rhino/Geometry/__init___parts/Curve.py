@@ -1,13 +1,14 @@
-class Curve(GeometryBase,IDisposable,ISerializable):
- """
+class Curve(GeometryBase, IDisposable, ISerializable):
+    """
  Represents a base class that is common to most RhinoCommon curve types.
 
     A curve represents an entity that can be all visited by providing
 
     a single parameter,usually called t.
  """
- def ChangeClosedCurveSeam(self,t):
-  """
+
+    def ChangeClosedCurveSeam(self, t):
+        """
   ChangeClosedCurveSeam(self: Curve,t: float) -> bool
 
   
@@ -20,9 +21,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true on success,false on failure.
   """
-  pass
- def ChangeDimension(self,desiredDimension):
-  """
+        pass
+
+    def ChangeDimension(self, desiredDimension):
+        """
   ChangeDimension(self: Curve,desiredDimension: int) -> bool
 
   
@@ -41,9 +43,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
      otherwise false.
   """
-  pass
- def ClosedCurveOrientation(self,*__args):
-  """
+        pass
+
+    def ClosedCurveOrientation(self, *__args):
+        """
   ClosedCurveOrientation(self: Curve,xform: Transform) -> CurveOrientation
 
   
@@ -104,9 +107,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: The orientation of this curve with respect to a defined up direction.
   """
-  pass
- def ClosestPoint(self,testPoint,t,maximumDistance=None):
-  """
+        pass
+
+    def ClosestPoint(self, testPoint, t, maximumDistance=None):
+        """
   ClosestPoint(self: Curve,testPoint: Point3d,maximumDistance: float) -> (bool,float)
 
   
@@ -167,9 +171,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true on success,false on failure.
   """
-  pass
- def ClosestPoints(self,*__args):
-  """
+        pass
+
+    def ClosestPoints(self, *__args):
+        """
   ClosestPoints(self: Curve,otherCurve: Curve) -> (bool,Point3d,Point3d)
 
   
@@ -186,9 +191,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
   ClosestPoints(self: Curve,geometry: IEnumerable[GeometryBase],maximumDistance: float) -> (bool,Point3d,Point3d,int)
   """
-  pass
- def ConstructConstObject(self,*args):
-  """
+        pass
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -199,9 +205,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    subobject_index: The subobject index.
   """
-  pass
- def Contains(self,testPoint,plane=None,tolerance=None):
-  """
+        pass
+
+    def Contains(self, testPoint, plane=None, tolerance=None):
+        """
   Contains(self: Curve,testPoint: Point3d,plane: Plane,tolerance: float) -> PointContainment
 
   
@@ -266,10 +273,11 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: Relationship between point and curve region.
   """
-  pass
- @staticmethod
- def CreateBlendCurve(*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateBlendCurve(*__args):
+        """
   CreateBlendCurve(curve0: Curve,t0: float,reverse0: bool,continuity0: BlendContinuity,curve1: Curve,t1: float,reverse1: bool,continuity1: BlendContinuity) -> Curve
 
   
@@ -350,10 +358,11 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: A curve representing the blend between A and B or null on failure.
   """
-  pass
- @staticmethod
- def CreateBooleanDifference(curveA,*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateBooleanDifference(curveA, *__args):
+        """
   CreateBooleanDifference(curveA: Curve,subtractors: IEnumerable[Curve]) -> Array[Curve]
 
   CreateBooleanDifference(curveA: Curve,curveB: Curve) -> Array[Curve]
@@ -376,10 +385,11 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: Result curves on success,empty array if no difference could be calculated.
   """
-  pass
- @staticmethod
- def CreateBooleanIntersection(curveA,curveB):
-  """
+        pass
+
+    @staticmethod
+    def CreateBooleanIntersection(curveA, curveB):
+        """
   CreateBooleanIntersection(curveA: Curve,curveB: Curve) -> Array[Curve]
 
   
@@ -400,22 +410,25 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: Result curves on success,empty array if no intersection could be calculated.
   """
-  pass
- @staticmethod
- def CreateBooleanUnion(curves):
-  """ CreateBooleanUnion(curves: IEnumerable[Curve]) -> Array[Curve] """
-  pass
- @staticmethod
- def CreateControlPointCurve(points,degree=None):
-  """
+        pass
+
+    @staticmethod
+    def CreateBooleanUnion(curves):
+        """ CreateBooleanUnion(curves: IEnumerable[Curve]) -> Array[Curve] """
+        pass
+
+    @staticmethod
+    def CreateControlPointCurve(points, degree=None):
+        """
   CreateControlPointCurve(points: IEnumerable[Point3d]) -> Curve
 
   CreateControlPointCurve(points: IEnumerable[Point3d],degree: int) -> Curve
   """
-  pass
- @staticmethod
- def CreateFillet(curve0,curve1,radius,t0Base,t1Base):
-  """
+        pass
+
+    @staticmethod
+    def CreateFillet(curve0, curve1, radius, t0Base, t1Base):
+        """
   CreateFillet(curve0: Curve,curve1: Curve,radius: float,t0Base: float,t1Base: float) -> Arc
 
   
@@ -436,10 +449,22 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: The fillet arc on success,or Arc.Unset on failure.
   """
-  pass
- @staticmethod
- def CreateFilletCurves(curve0,point0,curve1,point1,radius,join,trim,arcExtension,tolerance,angleTolerance):
-  """
+        pass
+
+    @staticmethod
+    def CreateFilletCurves(
+        curve0,
+        point0,
+        curve1,
+        point1,
+        radius,
+        join,
+        trim,
+        arcExtension,
+        tolerance,
+        angleTolerance,
+    ):
+        """
   CreateFilletCurves(curve0: Curve,point0: Point3d,curve1: Curve,point1: Point3d,radius: float,join: bool,trim: bool,arcExtension: bool,tolerance: float,angleTolerance: float) -> Array[Curve]
 
   
@@ -520,20 +545,24 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
     false,then just the fillet curve is returned.
   """
-  pass
- @staticmethod
- def CreateInterpolatedCurve(points,degree,knots=None,startTangent=None,endTangent=None):
-  """
+        pass
+
+    @staticmethod
+    def CreateInterpolatedCurve(
+        points, degree, knots=None, startTangent=None, endTangent=None
+    ):
+        """
   CreateInterpolatedCurve(points: IEnumerable[Point3d],degree: int,knots: CurveKnotStyle,startTangent: Vector3d,endTangent: Vector3d) -> Curve
 
   CreateInterpolatedCurve(points: IEnumerable[Point3d],degree: int,knots: CurveKnotStyle) -> Curve
 
   CreateInterpolatedCurve(points: IEnumerable[Point3d],degree: int) -> Curve
   """
-  pass
- @staticmethod
- def CreateMeanCurve(curveA,curveB,angleToleranceRadians=None):
-  """
+        pass
+
+    @staticmethod
+    def CreateMeanCurve(curveA, curveB, angleToleranceRadians=None):
+        """
   CreateMeanCurve(curveA: Curve,curveB: Curve) -> Curve
 
   
@@ -576,10 +605,11 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: The average curve,or null on error.
   """
-  pass
- @staticmethod
- def CreateTweenCurves(curve0,curve1,numCurves):
-  """
+        pass
+
+    @staticmethod
+    def CreateTweenCurves(curve0, curve1, numCurves):
+        """
   CreateTweenCurves(curve0: Curve,curve1: Curve,numCurves: int) -> Array[Curve]
 
   
@@ -608,10 +638,11 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: An array of joint curves. This array can be empty.
   """
-  pass
- @staticmethod
- def CreateTweenCurvesWithMatching(curve0,curve1,numCurves):
-  """
+        pass
+
+    @staticmethod
+    def CreateTweenCurvesWithMatching(curve0, curve1, numCurves):
+        """
   CreateTweenCurvesWithMatching(curve0: Curve,curve1: Curve,numCurves: int) -> Array[Curve]
 
   
@@ -644,10 +675,11 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: An array of joint curves. This array can be empty.
   """
-  pass
- @staticmethod
- def CreateTweenCurvesWithSampling(curve0,curve1,numCurves,numSamples):
-  """
+        pass
+
+    @staticmethod
+    def CreateTweenCurvesWithSampling(curve0, curve1, numCurves, numSamples):
+        """
   CreateTweenCurvesWithSampling(curve0: Curve,curve1: Curve,numCurves: int,numSamples: int) -> Array[Curve]
 
   
@@ -682,9 +714,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: >An array of joint curves. This array can be empty.
   """
-  pass
- def CurvatureAt(self,t):
-  """
+        pass
+
+    def CurvatureAt(self, t):
+        """
   CurvatureAt(self: Curve,t: float) -> Vector3d
 
   
@@ -697,9 +730,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: Curvature vector of the curve at the parameter t.
   """
-  pass
- def DerivativeAt(self,t,derivativeCount,side=None):
-  """
+        pass
+
+    def DerivativeAt(self, t, derivativeCount, side=None):
+        """
   DerivativeAt(self: Curve,t: float,derivativeCount: int,side: CurveEvaluationSide) -> Array[Vector3d]
 
   
@@ -736,9 +770,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: An array of vectors that represents all the derivatives starting at zero.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: Curve,disposing: bool)
 
    For derived class implementers.
@@ -763,9 +798,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
     finalizer.
   """
-  pass
- def DivideAsContour(self,contourStart,contourEnd,interval):
-  """
+        pass
+
+    def DivideAsContour(self, contourStart, contourEnd, interval):
+        """
   DivideAsContour(self: Curve,contourStart: Point3d,contourEnd: Point3d,interval: float) -> Array[Point3d]
 
   
@@ -782,9 +818,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: An array of points; or null on error.
   """
-  pass
- def DivideByCount(self,segmentCount,includeEnds,points=None):
-  """
+        pass
+
+    def DivideByCount(self, segmentCount, includeEnds, points=None):
+        """
   DivideByCount(self: Curve,segmentCount: int,includeEnds: bool) -> (Array[float],Array[Point3d])
 
   
@@ -813,9 +850,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: List of curve parameters at the division points on success,null on failure.
   """
-  pass
- def DivideByLength(self,segmentLength,includeStart,points=None):
-  """
+        pass
+
+    def DivideByLength(self, segmentLength, includeStart, points=None):
+        """
   DivideByLength(self: Curve,segmentLength: float,includeStart: bool) -> (Array[float],Array[Point3d])
 
   
@@ -844,9 +882,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: Array containing division curve parameters if successful,null on failure.
   """
-  pass
- def DivideEquidistant(self,distance):
-  """
+        pass
+
+    def DivideEquidistant(self, distance):
+        """
   DivideEquidistant(self: Curve,distance: float) -> Array[Point3d]
 
   
@@ -859,10 +898,11 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: An array of equidistant points,or null on error.
   """
-  pass
- @staticmethod
- def DoDirectionsMatch(curveA,curveB):
-  """
+        pass
+
+    @staticmethod
+    def DoDirectionsMatch(curveA, curveB):
+        """
   DoDirectionsMatch(curveA: Curve,curveB: Curve) -> bool
 
   
@@ -881,18 +921,20 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
     in the opposite directions.
   """
-  pass
- def Duplicate(self):
-  """
+        pass
+
+    def Duplicate(self):
+        """
   Duplicate(self: Curve) -> GeometryBase
 
   
 
    Constructs an exact duplicate of this Curve.
   """
-  pass
- def DuplicateCurve(self):
-  """
+        pass
+
+    def DuplicateCurve(self):
+        """
   DuplicateCurve(self: Curve) -> Curve
 
   
@@ -901,9 +943,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: An exact copy of this curve.
   """
-  pass
- def DuplicateSegments(self):
-  """
+        pass
+
+    def DuplicateSegments(self):
+        """
   DuplicateSegments(self: Curve) -> Array[Curve]
 
   
@@ -918,9 +961,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: An array of all the segments that make up this curve.
   """
-  pass
- def Extend(self,*__args):
-  """
+        pass
+
+    def Extend(self, *__args):
+        """
   Extend(self: Curve,side: CurveEnd,style: CurveExtensionStyle,geometry: IEnumerable[GeometryBase]) -> Curve
 
   Extend(self: Curve,side: CurveEnd,style: CurveExtensionStyle,endPoint: Point3d) -> Curve
@@ -1013,15 +1057,18 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: Extended curve on success,null on failure.
   """
-  pass
- def ExtendByArc(self,side,geometry):
-  """ ExtendByArc(self: Curve,side: CurveEnd,geometry: IEnumerable[GeometryBase]) -> Curve """
-  pass
- def ExtendByLine(self,side,geometry):
-  """ ExtendByLine(self: Curve,side: CurveEnd,geometry: IEnumerable[GeometryBase]) -> Curve """
-  pass
- def ExtendOnSurface(self,side,*__args):
-  """
+        pass
+
+    def ExtendByArc(self, side, geometry):
+        """ ExtendByArc(self: Curve,side: CurveEnd,geometry: IEnumerable[GeometryBase]) -> Curve """
+        pass
+
+    def ExtendByLine(self, side, geometry):
+        """ ExtendByLine(self: Curve,side: CurveEnd,geometry: IEnumerable[GeometryBase]) -> Curve """
+        pass
+
+    def ExtendOnSurface(self, side, *__args):
+        """
   ExtendOnSurface(self: Curve,side: CurveEnd,face: BrepFace) -> Curve
 
   
@@ -1050,9 +1097,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: New extended curve result on success,null on failure.
   """
-  pass
- def Fair(self,distanceTolerance,angleTolerance,clampStart,clampEnd,iterations):
-  """
+        pass
+
+    def Fair(self, distanceTolerance, angleTolerance, clampStart, clampEnd, iterations):
+        """
   Fair(self: Curve,distanceTolerance: float,angleTolerance: float,clampStart: int,clampEnd: int,iterations: int) -> Curve
 
   
@@ -1089,9 +1137,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: Returns new faired Curve on success,null on failure.
   """
-  pass
- def Fit(self,degree,fitTolerance,angleTolerance):
-  """
+        pass
+
+    def Fit(self, degree, fitTolerance, angleTolerance):
+        """
   Fit(self: Curve,degree: int,fitTolerance: float,angleTolerance: float) -> Curve
 
   
@@ -1124,9 +1173,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: Returns a new fitted Curve if successful,null on failure.
   """
-  pass
- def FrameAt(self,t,plane):
-  """
+        pass
+
+    def FrameAt(self, t, plane):
+        """
   FrameAt(self: Curve,t: float) -> (bool,Plane)
 
   
@@ -1139,9 +1189,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true on success,false on failure.
   """
-  pass
- def GetCurveParameterFromNurbsFormParameter(self,nurbsParameter,curveParameter):
-  """
+        pass
+
+    def GetCurveParameterFromNurbsFormParameter(self, nurbsParameter, curveParameter):
+        """
   GetCurveParameterFromNurbsFormParameter(self: Curve,nurbsParameter: float) -> (bool,float)
 
   
@@ -1154,10 +1205,21 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true on success,false on failure.
   """
-  pass
- @staticmethod
- def GetDistancesBetweenCurves(curveA,curveB,tolerance,maxDistance,maxDistanceParameterA,maxDistanceParameterB,minDistance,minDistanceParameterA,minDistanceParameterB):
-  """
+        pass
+
+    @staticmethod
+    def GetDistancesBetweenCurves(
+        curveA,
+        curveB,
+        tolerance,
+        maxDistance,
+        maxDistanceParameterA,
+        maxDistanceParameterB,
+        minDistance,
+        minDistanceParameterA,
+        minDistanceParameterB,
+    ):
+        """
   GetDistancesBetweenCurves(curveA: Curve,curveB: Curve,tolerance: float) -> (bool,float,float,float,float,float,float)
 
   
@@ -1174,10 +1236,11 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if the operation succeeded; otherwise false.
   """
-  pass
- @staticmethod
- def GetFilletPoints(curve0,curve1,radius,t0Base,t1Base,t0,t1,filletPlane):
-  """
+        pass
+
+    @staticmethod
+    def GetFilletPoints(curve0, curve1, radius, t0Base, t1Base, t0, t1, filletPlane):
+        """
   GetFilletPoints(curve0: Curve,curve1: Curve,radius: float,t0Base: float,t1Base: float) -> (bool,float,float,Plane)
 
   
@@ -1198,9 +1261,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true on success,false on failure.
   """
-  pass
- def GetLength(self,*__args):
-  """
+        pass
+
+    def GetLength(self, *__args):
+        """
   GetLength(self: Curve,subdomain: Interval) -> float
 
   
@@ -1259,9 +1323,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: The length of the curve on success,or zero on failure.
   """
-  pass
- def GetNextDiscontinuity(self,continuityType,t0,t1,t):
-  """
+        pass
+
+    def GetNextDiscontinuity(self, continuityType, t0, t1, t):
+        """
   GetNextDiscontinuity(self: Curve,continuityType: Continuity,t0: float,t1: float) -> (bool,float)
 
   
@@ -1320,9 +1385,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
       the ends of their domains.
   """
-  pass
- def GetNurbsFormParameterFromCurveParameter(self,curveParameter,nurbsParameter):
-  """
+        pass
+
+    def GetNurbsFormParameterFromCurveParameter(self, curveParameter, nurbsParameter):
+        """
   GetNurbsFormParameterFromCurveParameter(self: Curve,curveParameter: float) -> (bool,float)
 
   
@@ -1335,12 +1401,14 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true on success,false on failure.
   """
-  pass
- def GetPerpendicularFrames(self,parameters):
-  """ GetPerpendicularFrames(self: Curve,parameters: IEnumerable[float]) -> Array[Plane] """
-  pass
- def HasNurbsForm(self):
-  """
+        pass
+
+    def GetPerpendicularFrames(self, parameters):
+        """ GetPerpendicularFrames(self: Curve,parameters: IEnumerable[float]) -> Array[Plane] """
+        pass
+
+    def HasNurbsForm(self):
+        """
   HasNurbsForm(self: Curve) -> int
 
   
@@ -1373,9 +1441,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
     transendental parameterization like circles.
   """
-  pass
- def IsArc(self,tolerance=None):
-  """
+        pass
+
+    def IsArc(self, tolerance=None):
+        """
   IsArc(self: Curve,tolerance: float) -> bool
 
   
@@ -1396,9 +1465,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if the curve can be represented by an arc or a circle within tolerance.
   """
-  pass
- def IsCircle(self,tolerance=None):
-  """
+        pass
+
+    def IsCircle(self, tolerance=None):
+        """
   IsCircle(self: Curve,tolerance: float) -> bool
 
   
@@ -1419,9 +1489,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if the Curve can be represented by a circle within tolerance.
   """
-  pass
- def IsClosable(self,tolerance,minimumAbsoluteSize=None,minimumRelativeSize=None):
-  """
+        pass
+
+    def IsClosable(self, tolerance, minimumAbsoluteSize=None, minimumRelativeSize=None):
+        """
   IsClosable(self: Curve,tolerance: float) -> bool
 
   
@@ -1494,9 +1565,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if start and end points are close enough based on above conditions.
   """
-  pass
- def IsContinuous(self,continuityType,t):
-  """
+        pass
+
+    def IsContinuous(self, continuityType, t):
+        """
   IsContinuous(self: Curve,continuityType: Continuity,t: float) -> bool
 
   
@@ -1511,9 +1583,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if the curve has at least the c type continuity at the parameter t.
   """
-  pass
- def IsEllipse(self,tolerance=None):
-  """
+        pass
+
+    def IsEllipse(self, tolerance=None):
+        """
   IsEllipse(self: Curve,tolerance: float) -> bool
 
   
@@ -1534,9 +1607,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if the Curve can be represented by an ellipse within tolerance.
   """
-  pass
- def IsInPlane(self,testPlane,tolerance=None):
-  """
+        pass
+
+    def IsInPlane(self, testPlane, tolerance=None):
+        """
   IsInPlane(self: Curve,testPlane: Plane,tolerance: float) -> bool
 
   
@@ -1563,9 +1637,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if the maximum distance from the curve to the testPlane is <= RhinoMath.ZeroTolerance.
   """
-  pass
- def IsLinear(self,tolerance=None):
-  """
+        pass
+
+    def IsLinear(self, tolerance=None):
+        """
   IsLinear(self: Curve,tolerance: float) -> bool
 
   
@@ -1596,9 +1671,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if the curve is linear.
   """
-  pass
- def IsPlanar(self,tolerance=None):
-  """
+        pass
+
+    def IsPlanar(self, tolerance=None):
+        """
   IsPlanar(self: Curve,tolerance: float) -> bool
 
   
@@ -1623,9 +1699,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if the curve is planar (flat) to within RhinoMath.ZeroTolerance units (1e-12).
   """
-  pass
- def IsPolyline(self):
-  """
+        pass
+
+    def IsPolyline(self):
+        """
   IsPolyline(self: Curve) -> bool
 
   
@@ -1650,9 +1727,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if this curve can be represented as a polyline; otherwise,false.
   """
-  pass
- def IsShort(self,tolerance,subdomain=None):
-  """
+        pass
+
+    def IsShort(self, tolerance, subdomain=None):
+        """
   IsShort(self: Curve,tolerance: float,subdomain: Interval) -> bool
 
   
@@ -1679,19 +1757,21 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if the length of the curve is <= tolerance.
   """
-  pass
- @staticmethod
- def JoinCurves(inputCurves,joinTolerance=None,preserveDirection=None):
-  """
+        pass
+
+    @staticmethod
+    def JoinCurves(inputCurves, joinTolerance=None, preserveDirection=None):
+        """
   JoinCurves(inputCurves: IEnumerable[Curve],joinTolerance: float,preserveDirection: bool) -> Array[Curve]
 
   JoinCurves(inputCurves: IEnumerable[Curve],joinTolerance: float) -> Array[Curve]
 
   JoinCurves(inputCurves: IEnumerable[Curve]) -> Array[Curve]
   """
-  pass
- def LengthParameter(self,segmentLength,t,*__args):
-  """
+        pass
+
+    def LengthParameter(self, segmentLength, t, *__args):
+        """
   LengthParameter(self: Curve,segmentLength: float,subdomain: Interval) -> (bool,float)
 
   
@@ -1780,9 +1860,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true on success,false on failure.
   """
-  pass
- def MakeClosed(self,tolerance):
-  """
+        pass
+
+    def MakeClosed(self, tolerance):
+        """
   MakeClosed(self: Curve,tolerance: float) -> bool
 
   
@@ -1813,10 +1894,11 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true on success,false on failure.
   """
-  pass
- @staticmethod
- def MakeEndsMeet(curveA,adjustStartCurveA,curveB,adjustStartCurveB):
-  """
+        pass
+
+    @staticmethod
+    def MakeEndsMeet(curveA, adjustStartCurveA, curveB, adjustStartCurveB):
+        """
   MakeEndsMeet(curveA: Curve,adjustStartCurveA: bool,curveB: Curve,adjustStartCurveB: bool) -> bool
 
   
@@ -1835,9 +1917,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true on success.
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: Curve)
 
    For derived classes implementers.
@@ -1846,9 +1929,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
     instance from being const.
   """
-  pass
- def NormalizedLengthParameter(self,s,t,*__args):
-  """
+        pass
+
+    def NormalizedLengthParameter(self, s, t, *__args):
+        """
   NormalizedLengthParameter(self: Curve,s: float,subdomain: Interval) -> (bool,float)
 
   
@@ -1961,9 +2045,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true on success,false on failure.
   """
-  pass
- def NormalizedLengthParameters(self,s,absoluteTolerance,*__args):
-  """
+        pass
+
+    def NormalizedLengthParameters(self, s, absoluteTolerance, *__args):
+        """
   NormalizedLengthParameters(self: Curve,s: Array[float],absoluteTolerance: float,subdomain: Interval) -> Array[float]
 
   
@@ -2142,9 +2227,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
      Null on failure.
   """
-  pass
- def Offset(self,*__args):
-  """
+        pass
+
+    def Offset(self, *__args):
+        """
   Offset(self: Curve,directionPoint: Point3d,normal: Vector3d,distance: float,tolerance: float,cornerStyle: CurveOffsetCornerStyle) -> Array[Curve]
 
   
@@ -2203,9 +2289,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: Offset curves on success,null on failure.
   """
-  pass
- def OffsetNormalToSurface(self,surface,height):
-  """
+        pass
+
+    def OffsetNormalToSurface(self, surface, height):
+        """
   OffsetNormalToSurface(self: Curve,surface: Surface,height: float) -> Curve
 
   
@@ -2234,9 +2321,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
     result will not be a very accurate offset.
   """
-  pass
- def OffsetOnSurface(self,*__args):
-  """
+        pass
+
+    def OffsetOnSurface(self, *__args):
+        """
   OffsetOnSurface(self: Curve,surface: Surface,distance: float,fittingTolerance: float) -> Array[Curve]
 
   
@@ -2361,16 +2449,18 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: Offset curves on success,or null on failure.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: GeometryBase)
 
    Is called when a non-const operation occurs.
   """
-  pass
- def PerpendicularFrameAt(self,t,plane):
-  """
+        pass
+
+    def PerpendicularFrameAt(self, t, plane):
+        """
   PerpendicularFrameAt(self: Curve,t: float) -> (bool,Plane)
 
   
@@ -2393,10 +2483,11 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true on success,false on failure.
   """
-  pass
- @staticmethod
- def PlanarClosedCurveRelationship(curveA,curveB,testPlane,tolerance):
-  """
+        pass
+
+    @staticmethod
+    def PlanarClosedCurveRelationship(curveA, curveB, testPlane, tolerance):
+        """
   PlanarClosedCurveRelationship(curveA: Curve,curveB: Curve,testPlane: Plane,tolerance: float) -> RegionContainment
 
   
@@ -2425,10 +2516,11 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: A value indicating the relationship between the first and the second curve.
   """
-  pass
- @staticmethod
- def PlanarCurveCollision(curveA,curveB,testPlane,tolerance):
-  """
+        pass
+
+    @staticmethod
+    def PlanarCurveCollision(curveA, curveB, testPlane, tolerance):
+        """
   PlanarCurveCollision(curveA: Curve,curveB: Curve,testPlane: Plane,tolerance: float) -> bool
 
   
@@ -2447,9 +2539,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if the curves intersect,otherwise false
   """
-  pass
- def PointAt(self,t):
-  """
+        pass
+
+    def PointAt(self, t):
+        """
   PointAt(self: Curve,t: float) -> Point3d
 
   
@@ -2462,9 +2555,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: Point (location of curve at the parameter t).
   """
-  pass
- def PointAtLength(self,length):
-  """
+        pass
+
+    def PointAtLength(self, length):
+        """
   PointAtLength(self: Curve,length: float) -> Point3d
 
   
@@ -2487,9 +2581,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: Point on the curve at the specified length from the start point or Poin3d.Unset on failure.
   """
-  pass
- def PointAtNormalizedLength(self,length):
-  """
+        pass
+
+    def PointAtNormalizedLength(self, length):
+        """
   PointAtNormalizedLength(self: Curve,length: float) -> Point3d
 
   
@@ -2514,10 +2609,11 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
     failure.
   """
-  pass
- @staticmethod
- def ProjectToBrep(*__args):
-  """
+        pass
+
+    @staticmethod
+    def ProjectToBrep(*__args):
+        """
   ProjectToBrep(curves: IEnumerable[Curve],breps: IEnumerable[Brep],direction: Vector3d,tolerance: float) -> Array[Curve]
 
   ProjectToBrep(curves: IEnumerable[Curve],breps: IEnumerable[Brep],direction: Vector3d,tolerance: float) -> (Array[Curve],Array[int],Array[int])
@@ -2544,10 +2640,11 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
   ProjectToBrep(curve: Curve,breps: IEnumerable[Brep],direction: Vector3d,tolerance: float) -> Array[Curve]
   """
-  pass
- @staticmethod
- def ProjectToMesh(*__args):
-  """
+        pass
+
+    @staticmethod
+    def ProjectToMesh(*__args):
+        """
   ProjectToMesh(curves: IEnumerable[Curve],meshes: IEnumerable[Mesh],direction: Vector3d,tolerance: float) -> Array[Curve]
 
   ProjectToMesh(curve: Curve,meshes: IEnumerable[Mesh],direction: Vector3d,tolerance: float) -> Array[Curve]
@@ -2570,10 +2667,11 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: A curve array.
   """
-  pass
- @staticmethod
- def ProjectToPlane(curve,plane):
-  """
+        pass
+
+    @staticmethod
+    def ProjectToPlane(curve, plane):
+        """
   ProjectToPlane(curve: Curve,plane: Plane) -> Curve
 
   
@@ -2588,9 +2686,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: The projected curve on success; null on failure.
   """
-  pass
- def PullToBrepFace(self,*__args):
-  """
+        pass
+
+    def PullToBrepFace(self, *__args):
+        """
   PullToBrepFace(curve: Curve,face: BrepFace,tolerance: float) -> Array[Curve]
 
   
@@ -2621,9 +2720,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: An array containing the resulting curves after pulling. This array could be empty.
   """
-  pass
- def PullToMesh(self,mesh,tolerance):
-  """
+        pass
+
+    def PullToMesh(self, mesh, tolerance):
+        """
   PullToMesh(self: Curve,mesh: Mesh,tolerance: float) -> PolylineCurve
 
   
@@ -2646,9 +2746,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: A polyline curve on success,null on failure.
   """
-  pass
- def Rebuild(self,pointCount,degree,preserveTangents):
-  """
+        pass
+
+    def Rebuild(self, pointCount, degree, preserveTangents):
+        """
   Rebuild(self: Curve,pointCount: int,degree: int,preserveTangents: bool) -> NurbsCurve
 
   
@@ -2665,9 +2766,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: A Nurbs curve on success or null on failure.
   """
-  pass
- def RemoveShortSegments(self,tolerance):
-  """
+        pass
+
+    def RemoveShortSegments(self, tolerance):
+        """
   RemoveShortSegments(self: Curve,tolerance: float) -> bool
 
   
@@ -2690,9 +2792,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
     were found.
   """
-  pass
- def Reverse(self):
-  """
+        pass
+
+    def Reverse(self):
+        """
   Reverse(self: Curve) -> bool
 
   
@@ -2701,9 +2804,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true on success,false on failure.
   """
-  pass
- def SetEndPoint(self,point):
-  """
+        pass
+
+    def SetEndPoint(self, point):
+        """
   SetEndPoint(self: Curve,point: Point3d) -> bool
 
   
@@ -2722,9 +2826,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true on success,false on failure.
   """
-  pass
- def SetStartPoint(self,point):
-  """
+        pass
+
+    def SetStartPoint(self, point):
+        """
   SetStartPoint(self: Curve,point: Point3d) -> bool
 
   
@@ -2743,9 +2848,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true on success,false on failure.
   """
-  pass
- def Simplify(self,options,distanceTolerance,angleToleranceRadians):
-  """
+        pass
+
+    def Simplify(self, options, distanceTolerance, angleToleranceRadians):
+        """
   Simplify(self: Curve,options: CurveSimplifyOptions,distanceTolerance: float,angleToleranceRadians: float) -> Curve
 
   
@@ -2808,9 +2914,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: New simplified curve on success,null on failure.
   """
-  pass
- def SimplifyEnd(self,end,options,distanceTolerance,angleToleranceRadians):
-  """
+        pass
+
+    def SimplifyEnd(self, end, options, distanceTolerance, angleToleranceRadians):
+        """
   SimplifyEnd(self: Curve,end: CurveEnd,options: CurveSimplifyOptions,distanceTolerance: float,angleToleranceRadians: float) -> Curve
 
   
@@ -2835,9 +2942,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: New simplified curve on success,null on failure.
   """
-  pass
- def SpanDomain(self,spanIndex):
-  """
+        pass
+
+    def SpanDomain(self, spanIndex):
+        """
   SpanDomain(self: Curve,spanIndex: int) -> Interval
 
   
@@ -2856,9 +2964,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: Interval of the span with the given index.
   """
-  pass
- def Split(self,*__args):
-  """
+        pass
+
+    def Split(self, *__args):
+        """
   Split(self: Curve,cutter: Brep,tolerance: float) -> Array[Curve]
 
   
@@ -2907,9 +3016,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
   Split(self: Curve,t: IEnumerable[float]) -> Array[Curve]
   """
-  pass
- def TangentAt(self,t):
-  """
+        pass
+
+    def TangentAt(self, t):
+        """
   TangentAt(self: Curve,t: float) -> Vector3d
 
   
@@ -2922,9 +3032,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: Unit tangent vector of the curve at the parameter t.
   """
-  pass
- def ToNurbsCurve(self,subdomain=None):
-  """
+        pass
+
+    def ToNurbsCurve(self, subdomain=None):
+        """
   ToNurbsCurve(self: Curve) -> NurbsCurve
 
   
@@ -2945,9 +3056,22 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: NURBS representation of the curve on success,null on failure.
   """
-  pass
- def ToPolyline(self,mainSegmentCount,subSegmentCount,maxAngleRadians,maxChordLengthRatio,maxAspectRatio,tolerance,minEdgeLength,maxEdgeLength,keepStartPoint,curveDomain=None):
-  """
+        pass
+
+    def ToPolyline(
+        self,
+        mainSegmentCount,
+        subSegmentCount,
+        maxAngleRadians,
+        maxChordLengthRatio,
+        maxAspectRatio,
+        tolerance,
+        minEdgeLength,
+        maxEdgeLength,
+        keepStartPoint,
+        curveDomain=None,
+    ):
+        """
   ToPolyline(self: Curve,mainSegmentCount: int,subSegmentCount: int,maxAngleRadians: float,maxChordLengthRatio: float,maxAspectRatio: float,tolerance: float,minEdgeLength: float,maxEdgeLength: float,keepStartPoint: bool,curveDomain: Interval) -> PolylineCurve
 
   
@@ -3138,9 +3262,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: PolylineCurve on success,null on error.
   """
-  pass
- def Trim(self,*__args):
-  """
+        pass
+
+    def Trim(self, *__args):
+        """
   Trim(self: Curve,side: CurveEnd,length: float) -> Curve
 
   
@@ -3181,9 +3306,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: Trimmed portion of this curve is successfull,null on failure.
   """
-  pass
- def TryGetArc(self,*__args):
-  """
+        pass
+
+    def TryGetArc(self, *__args):
+        """
   TryGetArc(self: Curve,plane: Plane) -> (bool,Arc)
 
   
@@ -3230,9 +3356,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if the curve could be converted into an arc.
   """
-  pass
- def TryGetCircle(self,circle,tolerance=None):
-  """
+        pass
+
+    def TryGetCircle(self, circle, tolerance=None):
+        """
   TryGetCircle(self: Curve,tolerance: float) -> (bool,Circle)
 
   
@@ -3253,9 +3380,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if the curve could be converted into a Circle.
   """
-  pass
- def TryGetEllipse(self,*__args):
-  """
+        pass
+
+    def TryGetEllipse(self, *__args):
+        """
   TryGetEllipse(self: Curve,plane: Plane) -> (bool,Ellipse)
 
   
@@ -3302,9 +3430,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if the curve could be converted into an Ellipse.
   """
-  pass
- def TryGetPlane(self,plane,tolerance=None):
-  """
+        pass
+
+    def TryGetPlane(self, plane, tolerance=None):
+        """
   TryGetPlane(self: Curve,tolerance: float) -> (bool,Plane)
 
   
@@ -3331,9 +3460,10 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
     RhinoMath.ZeroTolerance.
   """
-  pass
- def TryGetPolyline(self,polyline,parameters=None):
-  """
+        pass
+
+    def TryGetPolyline(self, polyline, parameters=None):
+        """
   TryGetPolyline(self: Curve) -> (bool,Polyline,Array[float])
 
   
@@ -3382,38 +3512,44 @@ class Curve(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if this curve can be represented as a polyline; otherwise,false.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """
   __new__(cls: type)
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- Degree=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the maximum algebraic degree of any span
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    Degree = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the maximum algebraic degree of any span
 
    or a good estimate if curve spans are not algebraic.
 
@@ -3425,8 +3561,8 @@ Get: Degree(self: Curve) -> int
 
 """
 
- Dimension=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the dimension of the object.
+    Dimension = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the dimension of the object.
 
    The dimension is typically three. For parameter space trimming
 
@@ -3442,8 +3578,8 @@ Get: Dimension(self: Curve) -> int
 
 """
 
- Domain=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the domain of the curve.
+    Domain = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the domain of the curve.
 
 
 
@@ -3455,8 +3591,8 @@ Set: Domain(self: Curve)=value
 
 """
 
- IsClosed=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether or not this curve is a closed curve.
+    IsClosed = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether or not this curve is a closed curve.
 
 
 
@@ -3466,8 +3602,10 @@ Get: IsClosed(self: Curve) -> bool
 
 """
 
- IsPeriodic=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether or not this curve is considered to be Periodic.
+    IsPeriodic = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether or not this curve is considered to be Periodic.
 
 
 
@@ -3477,8 +3615,10 @@ Get: IsPeriodic(self: Curve) -> bool
 
 """
 
- PointAtEnd=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Evaluates point at the end of the curve.
+    PointAtEnd = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Evaluates point at the end of the curve.
 
 
 
@@ -3488,8 +3628,10 @@ Get: PointAtEnd(self: Curve) -> Point3d
 
 """
 
- PointAtStart=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Evaluates point at the start of the curve.
+    PointAtStart = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Evaluates point at the start of the curve.
 
 
 
@@ -3499,8 +3641,8 @@ Get: PointAtStart(self: Curve) -> Point3d
 
 """
 
- SpanCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of non-empty smooth (c-infinity) spans in the curve.
+    SpanCount = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of non-empty smooth (c-infinity) spans in the curve.
 
 
 
@@ -3510,8 +3652,10 @@ Get: SpanCount(self: Curve) -> int
 
 """
 
- TangentAtEnd=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Evaluate unit tangent vector at the end of the curve.
+    TangentAtEnd = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Evaluate unit tangent vector at the end of the curve.
 
 
 
@@ -3521,8 +3665,10 @@ Get: TangentAtEnd(self: Curve) -> Vector3d
 
 """
 
- TangentAtStart=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Evaluates the unit tangent vector at the start of the curve.
+    TangentAtStart = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Evaluates the unit tangent vector at the start of the curve.
 
 
 
@@ -3531,5 +3677,3 @@ Get: TangentAtStart(self: Curve) -> Vector3d
 
 
 """
-
-

@@ -1,13 +1,14 @@
-class AlternationConverter(object,IValueConverter):
- """
+class AlternationConverter(object, IValueConverter):
+    """
  Converts an integer to and from an object by applying the integer as an index to a list of objects.
 
  
 
  AlternationConverter()
  """
- def Convert(self,o,targetType,parameter,culture):
-  """
+
+    def Convert(self, o, targetType, parameter, culture):
+        """
   Convert(self: AlternationConverter,o: object,targetType: Type,parameter: object,culture: CultureInfo) -> object
 
   
@@ -32,9 +33,10 @@ class AlternationConverter(object,IValueConverter):
 
     System.Windows.Controls.AlternationConverter.Values.
   """
-  pass
- def ConvertBack(self,o,targetType,parameter,culture):
-  """
+        pass
+
+    def ConvertBack(self, o, targetType, parameter, culture):
+        """
   ConvertBack(self: AlternationConverter,o: object,targetType: Type,parameter: object,culture: CultureInfo) -> object
 
   
@@ -53,15 +55,18 @@ class AlternationConverter(object,IValueConverter):
 
       not exist in System.Windows.Controls.AlternationConverter.Values.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Values=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a list of objects that the System.Windows.Controls.AlternationConverter returns when an integer is passed to the System.Windows.Controls.AlternationConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo) method.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Values = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a list of objects that the System.Windows.Controls.AlternationConverter returns when an integer is passed to the System.Windows.Controls.AlternationConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo) method.
 
 
 
@@ -70,5 +75,3 @@ Get: Values(self: AlternationConverter) -> IList
 
 
 """
-
-

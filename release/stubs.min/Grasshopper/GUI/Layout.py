@@ -8,30 +8,33 @@
 # no functions
 # classes
 
+
 class GH_GenericLayout(object):
- # no doc
- @staticmethod
- def Horizontal_ByIndex(area,stack,expand):
-  """ Horizontal_ByIndex(area: Rectangle,stack: List[Rectangle],expand: bool) -> List[Rectangle] """
-  pass
- @staticmethod
- def Horizontal_ByPosition(area,stack,expand,radical=None):
-  """
+    # no doc
+    @staticmethod
+    def Horizontal_ByIndex(area, stack, expand):
+        """ Horizontal_ByIndex(area: Rectangle,stack: List[Rectangle],expand: bool) -> List[Rectangle] """
+        pass
+
+    @staticmethod
+    def Horizontal_ByPosition(area, stack, expand, radical=None):
+        """
   Horizontal_ByPosition(area: Rectangle,stack: List[Rectangle],expand: bool,radical: int) -> List[Rectangle]
 
   Horizontal_ByPosition(area: Rectangle,stack: List[Rectangle],expand: bool) -> List[Rectangle]
   """
-  pass
- @staticmethod
- def Vertical_ByIndex(area,stack,expand):
-  """ Vertical_ByIndex(area: Rectangle,stack: List[Rectangle],expand: bool) -> List[Rectangle] """
-  pass
- @staticmethod
- def Vertical_ByPosition(area,stack,expand,radical=None):
-  """
+        pass
+
+    @staticmethod
+    def Vertical_ByIndex(area, stack, expand):
+        """ Vertical_ByIndex(area: Rectangle,stack: List[Rectangle],expand: bool) -> List[Rectangle] """
+        pass
+
+    @staticmethod
+    def Vertical_ByPosition(area, stack, expand, radical=None):
+        """
   Vertical_ByPosition(area: Rectangle,stack: List[Rectangle],expand: bool,radical: int) -> List[Rectangle]
 
   Vertical_ByPosition(area: Rectangle,stack: List[Rectangle],expand: bool) -> List[Rectangle]
   """
-  pass
-
+        pass

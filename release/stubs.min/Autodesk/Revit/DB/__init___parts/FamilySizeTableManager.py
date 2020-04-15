@@ -1,8 +1,9 @@
-class FamilySizeTableManager(object,IDisposable):
- """ Manages importing,exporting,and querying size data through the FamilySizeTable class. """
- @staticmethod
- def CreateFamilySizeTableManager(document,familyId):
-  """
+class FamilySizeTableManager(object, IDisposable):
+    """ Manages importing,exporting,and querying size data through the FamilySizeTable class. """
+
+    @staticmethod
+    def CreateFamilySizeTableManager(document, familyId):
+        """
   CreateFamilySizeTableManager(document: Document,familyId: ElementId) -> bool
 
   
@@ -27,12 +28,14 @@ class FamilySizeTableManager(object,IDisposable):
 
    Returns: True if successful,false otherwise.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: FamilySizeTableManager) """
-  pass
- def ExportSizeTable(self,tableName,filePath):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: FamilySizeTableManager) """
+        pass
+
+    def ExportSizeTable(self, tableName, filePath):
+        """
   ExportSizeTable(self: FamilySizeTableManager,tableName: str,filePath: str) -> bool
 
   
@@ -47,9 +50,10 @@ class FamilySizeTableManager(object,IDisposable):
 
    Returns: True if successful,false otherwise..
   """
-  pass
- def GetAllSizeTableNames(self):
-  """
+        pass
+
+    def GetAllSizeTableNames(self):
+        """
   GetAllSizeTableNames(self: FamilySizeTableManager) -> IList[str]
 
   
@@ -58,10 +62,11 @@ class FamilySizeTableManager(object,IDisposable):
 
    Returns: Array of size table names.
   """
-  pass
- @staticmethod
- def GetFamilySizeTableManager(document,familyId):
-  """
+        pass
+
+    @staticmethod
+    def GetFamilySizeTableManager(document, familyId):
+        """
   GetFamilySizeTableManager(document: Document,familyId: ElementId) -> FamilySizeTableManager
 
   
@@ -76,9 +81,10 @@ class FamilySizeTableManager(object,IDisposable):
 
    Returns: The FamilySizeTableManager of the Family.
   """
-  pass
- def GetSizeTable(self,tableName):
-  """
+        pass
+
+    def GetSizeTable(self, tableName):
+        """
   GetSizeTable(self: FamilySizeTableManager,tableName: str) -> FamilySizeTable
 
   
@@ -91,9 +97,10 @@ class FamilySizeTableManager(object,IDisposable):
 
    Returns: The FamilySizeTable of a given name.
   """
-  pass
- def HasSizeTable(self,tableName):
-  """
+        pass
+
+    def HasSizeTable(self, tableName):
+        """
   HasSizeTable(self: FamilySizeTableManager,tableName: str) -> bool
 
   
@@ -106,9 +113,10 @@ class FamilySizeTableManager(object,IDisposable):
 
    Returns: True if the FamilySizeTable exists,false otherwise.
   """
-  pass
- def ImportSizeTable(self,document,filePath,errorInfo):
-  """
+        pass
+
+    def ImportSizeTable(self, document, filePath, errorInfo):
+        """
   ImportSizeTable(self: FamilySizeTableManager,document: Document,filePath: str,errorInfo: FamilySizeTableErrorInfo) -> bool
 
   
@@ -125,12 +133,14 @@ class FamilySizeTableManager(object,IDisposable):
 
    Returns: True if successful,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: FamilySizeTableManager,disposing: bool) """
-  pass
- def RemoveSizeTable(self,tableName):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: FamilySizeTableManager,disposing: bool) """
+        pass
+
+    def RemoveSizeTable(self, tableName):
+        """
   RemoveSizeTable(self: FamilySizeTableManager,tableName: str) -> bool
 
   
@@ -143,21 +153,28 @@ class FamilySizeTableManager(object,IDisposable):
 
    Returns: True if successful,false otherwise.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -167,8 +184,10 @@ Get: IsValidObject(self: FamilySizeTableManager) -> bool
 
 """
 
- NumberOfSizeTables=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The number of FamilySizeTables in a family.
+    NumberOfSizeTables = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The number of FamilySizeTables in a family.
 
 
 
@@ -177,5 +196,3 @@ Get: NumberOfSizeTables(self: FamilySizeTableManager) -> int
 
 
 """
-
-

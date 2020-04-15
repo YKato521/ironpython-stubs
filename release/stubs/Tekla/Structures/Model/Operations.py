@@ -8,8 +8,10 @@
 # no functions
 # classes
 
+
 class GuidConversion(object):
     """ GuidConversion() """
+
     def GetGuidMapping(self):
         """ GetGuidMapping(self: GuidConversion) -> Dictionary[Guid, Guid] """
         pass
@@ -29,8 +31,10 @@ class Operation(object):
     @staticmethod
     def Combine(ObjectToCombineTo, ObjectToBeCombined):
         """
-        Combine(ObjectToCombineTo: RebarGroup, ObjectToBeCombined: RebarGroup) -> RebarGroup
-        Combine(ObjectToCombineTo: SingleRebar, ObjectToBeCombined: SingleRebar) -> SingleRebar
+        Combine(ObjectToCombineTo: RebarGroup, ObjectToBeCombined: RebarGroup) -> RebarGroup
+
+        Combine(ObjectToCombineTo: SingleRebar, ObjectToBeCombined: SingleRebar) -> SingleRebar
+
         Combine(ObjectToCombineTo: Beam, ObjectToBeCombined: Beam) -> Beam
         """
         pass
@@ -38,7 +42,8 @@ class Operation(object):
     @staticmethod
     def CopyObject(Object, *__args):
         """
-        CopyObject(Object: ModelObject, StartCoordinateSystem: CoordinateSystem, EndCoordinateSystem: CoordinateSystem) -> ModelObject
+        CopyObject(Object: ModelObject, StartCoordinateSystem: CoordinateSystem, EndCoordinateSystem: CoordinateSystem) -> ModelObject
+
         CopyObject(Object: ModelObject, CopyVector: Vector) -> ModelObject
         """
         pass
@@ -46,9 +51,12 @@ class Operation(object):
     @staticmethod
     def CreateBentPlateByFaces(part1, face1, part2, face2, radius=None):
         """
-        CreateBentPlateByFaces(part1: Part, face1: IList[Point], part2: Part, face2: IList[Point], radius: float) -> BentPlate
-        CreateBentPlateByFaces(part1: Part, face1: Face, part2: Part, face2: Face, radius: float) -> BentPlate
-        CreateBentPlateByFaces(part1: Part, face1: IList[Point], part2: Part, face2: IList[Point]) -> BentPlate
+        CreateBentPlateByFaces(part1: Part, face1: IList[Point], part2: Part, face2: IList[Point], radius: float) -> BentPlate
+
+        CreateBentPlateByFaces(part1: Part, face1: Face, part2: Part, face2: Face, radius: float) -> BentPlate
+
+        CreateBentPlateByFaces(part1: Part, face1: IList[Point], part2: Part, face2: IList[Point]) -> BentPlate
+
         CreateBentPlateByFaces(part1: Part, face1: Face, part2: Part, face2: Face) -> BentPlate
         """
         pass
@@ -56,7 +64,8 @@ class Operation(object):
     @staticmethod
     def CreateBentPlateByParts(part1, part2, radius=None):
         """
-        CreateBentPlateByParts(part1: Part, part2: Part, radius: float) -> BentPlate
+        CreateBentPlateByParts(part1: Part, part2: Part, radius: float) -> BentPlate
+
         CreateBentPlateByParts(part1: Part, part2: Part) -> BentPlate
         """
         pass
@@ -134,7 +143,8 @@ class Operation(object):
     @staticmethod
     def MoveObject(Object, *__args):
         """
-        MoveObject(Object: ModelObject, StartCoordinateSystem: CoordinateSystem, EndCoordinateSystem: CoordinateSystem) -> bool
+        MoveObject(Object: ModelObject, StartCoordinateSystem: CoordinateSystem, EndCoordinateSystem: CoordinateSystem) -> bool
+
         MoveObject(Object: ModelObject, TranslationVector: Vector) -> bool
         """
         pass
@@ -142,7 +152,8 @@ class Operation(object):
     @staticmethod
     def ObjectMatchesToFilter(ModelObject, *__args):
         """
-        ObjectMatchesToFilter(ModelObject: ModelObject, FilterExpression: FilterExpression) -> bool
+        ObjectMatchesToFilter(ModelObject: ModelObject, FilterExpression: FilterExpression) -> bool
+
         ObjectMatchesToFilter(ModelObject: ModelObject, FilterName: str) -> bool
         """
         pass
@@ -150,7 +161,8 @@ class Operation(object):
     @staticmethod
     def Open(ModelFolder, OpenAutoSaved=None):
         """
-        Open(ModelFolder: str, OpenAutoSaved: bool) -> bool
+        Open(ModelFolder: str, OpenAutoSaved: bool) -> bool
+
         Open(ModelFolder: str) -> bool
         """
         pass
@@ -183,11 +195,16 @@ class Operation(object):
     @staticmethod
     def Split(Object, *__args):
         """
-        Split(Object: CircleRebarGroup, SplitLine: Line) -> CircleRebarGroup
-        Split(Object: RebarGroup, SplitLine: Line) -> RebarGroup
-        Split(Object: ContourPlate, SplitPolygon: Polygon) -> ContourPlate
-        Split(Object: Beam, SplitPoint: Point) -> Beam
-        Split(Object: SingleRebar, SplitLine: Line) -> SingleRebar
+        Split(Object: CircleRebarGroup, SplitLine: Line) -> CircleRebarGroup
+
+        Split(Object: RebarGroup, SplitLine: Line) -> RebarGroup
+
+        Split(Object: ContourPlate, SplitPolygon: Polygon) -> ContourPlate
+
+        Split(Object: Beam, SplitPoint: Point) -> Beam
+
+        Split(Object: SingleRebar, SplitLine: Line) -> SingleRebar
+
         Split(Object: CurvedRebarGroup, SplitLine: Line) -> CurvedRebarGroup
         """
         pass
@@ -195,7 +212,8 @@ class Operation(object):
     @staticmethod
     def Ungrouping(Reinforcement):
         """
-        Ungrouping(Reinforcement: RebarMesh) -> ModelObjectEnumerator
+        Ungrouping(Reinforcement: RebarMesh) -> ModelObjectEnumerator
+
         Ungrouping(Reinforcement: RebarGroup) -> ModelObjectEnumerator
         """
         pass
@@ -204,39 +222,37 @@ class Operation(object):
     ProgressBar = None
     UnselectedModeEnum = None
     __all__ = [
-        '__reduce_ex__',
-        'CalculatePourUnits',
-        'Combine',
-        'CopyObject',
-        'CreateBentPlateByFaces',
-        'CreateBentPlateByParts',
-        'CreateMISFileFromAll',
-        'CreateMISFileFromSelected',
-        'CreateNCFilesFromAll',
-        'CreateNCFilesFromSelected',
-        'CreateReportFromAll',
-        'CreateReportFromSelected',
-        'DisplayPrompt',
-        'DisplayReport',
-        'ExplodeBentPlate',
-        'Group',
-        'IsMacroRunning',
-        'IsModelAutoSaved',
-        'IsNumberingUpToDate',
-        'IsNumberingUpToDateAll',
-        'MISExportTypeEnum',
-        'MoveObject',
-        'ObjectMatchesToFilter',
-        'Open',
-        'ProgressBar',
-        'RemoveFromPourUnit',
-        'RunMacro',
-        'SaveAsWebModel',
-        'SaveSelectedAsWebModel',
-        'ShowOnlySelected',
-        'Split',
-        'Ungrouping',
-        'UnselectedModeEnum',
+        "__reduce_ex__",
+        "CalculatePourUnits",
+        "Combine",
+        "CopyObject",
+        "CreateBentPlateByFaces",
+        "CreateBentPlateByParts",
+        "CreateMISFileFromAll",
+        "CreateMISFileFromSelected",
+        "CreateNCFilesFromAll",
+        "CreateNCFilesFromSelected",
+        "CreateReportFromAll",
+        "CreateReportFromSelected",
+        "DisplayPrompt",
+        "DisplayReport",
+        "ExplodeBentPlate",
+        "Group",
+        "IsMacroRunning",
+        "IsModelAutoSaved",
+        "IsNumberingUpToDate",
+        "IsNumberingUpToDateAll",
+        "MISExportTypeEnum",
+        "MoveObject",
+        "ObjectMatchesToFilter",
+        "Open",
+        "ProgressBar",
+        "RemoveFromPourUnit",
+        "RunMacro",
+        "SaveAsWebModel",
+        "SaveSelectedAsWebModel",
+        "ShowOnlySelected",
+        "Split",
+        "Ungrouping",
+        "UnselectedModeEnum",
     ]
-
-

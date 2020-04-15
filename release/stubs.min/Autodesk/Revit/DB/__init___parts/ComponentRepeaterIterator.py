@@ -1,10 +1,14 @@
-class ComponentRepeaterIterator(object,IEnumerator[ComponentRepeaterSlot],IDisposable,IEnumerator):
- """ A slot iterator for ComponentRepeater. """
- def Dispose(self):
-  """ Dispose(self: ComponentRepeaterIterator) """
-  pass
- def GetCurrent(self):
-  """
+class ComponentRepeaterIterator(
+    object, IEnumerator[ComponentRepeaterSlot], IDisposable, IEnumerator
+):
+    """ A slot iterator for ComponentRepeater. """
+
+    def Dispose(self):
+        """ Dispose(self: ComponentRepeaterIterator) """
+        pass
+
+    def GetCurrent(self):
+        """
   GetCurrent(self: ComponentRepeaterIterator) -> ComponentRepeaterSlot
 
   
@@ -13,9 +17,10 @@ class ComponentRepeaterIterator(object,IEnumerator[ComponentRepeaterSlot],IDispo
 
    Returns: The current slot.
   """
-  pass
- def IsDone(self):
-  """
+        pass
+
+    def IsDone(self):
+        """
   IsDone(self: ComponentRepeaterIterator) -> bool
 
   
@@ -26,9 +31,10 @@ class ComponentRepeaterIterator(object,IEnumerator[ComponentRepeaterSlot],IDispo
 
     iterated.
   """
-  pass
- def MoveNext(self):
-  """
+        pass
+
+    def MoveNext(self):
+        """
   MoveNext(self: ComponentRepeaterIterator) -> bool
 
   
@@ -41,40 +47,50 @@ class ComponentRepeaterIterator(object,IEnumerator[ComponentRepeaterSlot],IDispo
 
     iterator has completed all available items.
   """
-  pass
- def next(self,*args):
-  """ next(self: object) -> object """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: ComponentRepeaterIterator,disposing: bool) """
-  pass
- def Reset(self):
-  """
+        pass
+
+    def next(self, *args):
+        """ next(self: object) -> object """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: ComponentRepeaterIterator,disposing: bool) """
+        pass
+
+    def Reset(self):
+        """
   Reset(self: ComponentRepeaterIterator)
 
    Resets the iterator to the initial state.
   """
-  pass
- def __contains__(self,*args):
-  """ __contains__[ComponentRepeaterSlot](enumerator: IEnumerator[ComponentRepeaterSlot],value: ComponentRepeaterSlot) -> bool """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerator) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Current=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the item at the current position of the iterator.
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[ComponentRepeaterSlot](enumerator: IEnumerator[ComponentRepeaterSlot],value: ComponentRepeaterSlot) -> bool """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerator) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Current = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the item at the current position of the iterator.
 
 
 
@@ -84,8 +100,10 @@ Get: Current(self: ComponentRepeaterIterator) -> ComponentRepeaterSlot
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -94,5 +112,3 @@ Get: IsValidObject(self: ComponentRepeaterIterator) -> bool
 
 
 """
-
-

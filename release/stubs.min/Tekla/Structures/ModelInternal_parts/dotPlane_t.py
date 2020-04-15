@@ -1,6 +1,5 @@
 class dotPlane_t(object):
- # no doc
- AxisX=None
- AxisY=None
- Origin=None
-
+    # no doc
+    AxisX = None
+    AxisY = None
+    Origin = None

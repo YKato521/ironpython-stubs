@@ -1,8 +1,9 @@
-class LinePatternElement(Element,IDisposable):
- """ An element that represents a line pattern. """
- @staticmethod
- def Create(document,linePattern):
-  """
+class LinePatternElement(Element, IDisposable):
+    """ An element that represents a line pattern. """
+
+    @staticmethod
+    def Create(document, linePattern):
+        """
   Create(document: Document,linePattern: LinePattern) -> LinePatternElement
 
   
@@ -17,16 +18,19 @@ class LinePatternElement(Element,IDisposable):
 
    Returns: The newly created LinePatternElement.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- @staticmethod
- def GetLinePattern(document=None,elementId=None):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    @staticmethod
+    def GetLinePattern(document=None, elementId=None):
+        """
   GetLinePattern(self: LinePatternElement) -> LinePattern
 
   
@@ -53,10 +57,11 @@ class LinePatternElement(Element,IDisposable):
 
      or built-in line pattern. ll for Solid.
   """
-  pass
- @staticmethod
- def GetLinePatternElementByName(document,name):
-  """
+        pass
+
+    @staticmethod
+    def GetLinePatternElementByName(document, name):
+        """
   GetLinePatternElementByName(document: Document,name: str) -> LinePatternElement
 
   
@@ -71,10 +76,11 @@ class LinePatternElement(Element,IDisposable):
 
    Returns: The LinePatternElement.
   """
-  pass
- @staticmethod
- def GetSolidPatternId():
-  """
+        pass
+
+    @staticmethod
+    def GetSolidPatternId():
+        """
   GetSolidPatternId() -> ElementId
 
   
@@ -83,15 +89,18 @@ class LinePatternElement(Element,IDisposable):
 
    Returns: The element id of the solid line pattern.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetLinePattern(self,newLinePattern):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetLinePattern(self, newLinePattern):
+        """
   SetLinePattern(self: LinePatternElement,newLinePattern: LinePattern)
 
    Sets the LinePattern associated to this element.
@@ -100,13 +109,16 @@ class LinePatternElement(Element,IDisposable):
 
    newLinePattern: The new LinePattern object.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

@@ -1,5 +1,7 @@
-class TimeSpan(object,IComparable,IComparable[TimeSpan],IEquatable[TimeSpan],IFormattable):
- """
+class TimeSpan(
+    object, IComparable, IComparable[TimeSpan], IEquatable[TimeSpan], IFormattable
+):
+    """
  Represents a time interval.
 
  
@@ -12,8 +14,9 @@ class TimeSpan(object,IComparable,IComparable[TimeSpan],IEquatable[TimeSpan],IFo
 
  TimeSpan(days: int,hours: int,minutes: int,seconds: int,milliseconds: int)
  """
- def Add(self,ts):
-  """
+
+    def Add(self, ts):
+        """
   Add(self: TimeSpan,ts: TimeSpan) -> TimeSpan
 
   
@@ -30,10 +33,11 @@ class TimeSpan(object,IComparable,IComparable[TimeSpan],IEquatable[TimeSpan],IFo
 
    Returns: A new object that represents the value of this instance plus the value of ts.
   """
-  pass
- @staticmethod
- def Compare(t1,t2):
-  """
+        pass
+
+    @staticmethod
+    def Compare(t1, t2):
+        """
   Compare(t1: TimeSpan,t2: TimeSpan) -> int
 
   
@@ -54,9 +58,10 @@ class TimeSpan(object,IComparable,IComparable[TimeSpan],IEquatable[TimeSpan],IFo
 
     t1 is longer than t2.
   """
-  pass
- def CompareTo(self,value):
-  """
+        pass
+
+    def CompareTo(self, value):
+        """
   CompareTo(self: TimeSpan,value: TimeSpan) -> int
 
   
@@ -99,9 +104,10 @@ class TimeSpan(object,IComparable,IComparable[TimeSpan],IEquatable[TimeSpan],IFo
 
     instance is equal to value. 1 This instance is longer than value.-or- value is null.
   """
-  pass
- def Duration(self):
-  """
+        pass
+
+    def Duration(self):
+        """
   Duration(self: TimeSpan) -> TimeSpan
 
   
@@ -114,9 +120,10 @@ class TimeSpan(object,IComparable,IComparable[TimeSpan],IEquatable[TimeSpan],IFo
 
    Returns: A new object whose value is the absolute value of the current System.TimeSpan object.
   """
-  pass
- def Equals(self,*__args):
-  """
+        pass
+
+    def Equals(self, *__args):
+        """
   Equals(t1: TimeSpan,t2: TimeSpan) -> bool
 
   
@@ -157,10 +164,11 @@ class TimeSpan(object,IComparable,IComparable[TimeSpan],IEquatable[TimeSpan],IFo
 
     System.TimeSpan structure; otherwise,false.
   """
-  pass
- @staticmethod
- def FromDays(value):
-  """
+        pass
+
+    @staticmethod
+    def FromDays(value):
+        """
   FromDays(value: float) -> TimeSpan
 
   
@@ -177,10 +185,11 @@ class TimeSpan(object,IComparable,IComparable[TimeSpan],IEquatable[TimeSpan],IFo
 
    Returns: An object that represents value.
   """
-  pass
- @staticmethod
- def FromHours(value):
-  """
+        pass
+
+    @staticmethod
+    def FromHours(value):
+        """
   FromHours(value: float) -> TimeSpan
 
   
@@ -197,10 +206,11 @@ class TimeSpan(object,IComparable,IComparable[TimeSpan],IEquatable[TimeSpan],IFo
 
    Returns: An object that represents value.
   """
-  pass
- @staticmethod
- def FromMilliseconds(value):
-  """
+        pass
+
+    @staticmethod
+    def FromMilliseconds(value):
+        """
   FromMilliseconds(value: float) -> TimeSpan
 
   
@@ -213,10 +223,11 @@ class TimeSpan(object,IComparable,IComparable[TimeSpan],IEquatable[TimeSpan],IFo
 
    Returns: An object that represents value.
   """
-  pass
- @staticmethod
- def FromMinutes(value):
-  """
+        pass
+
+    @staticmethod
+    def FromMinutes(value):
+        """
   FromMinutes(value: float) -> TimeSpan
 
   
@@ -233,10 +244,11 @@ class TimeSpan(object,IComparable,IComparable[TimeSpan],IEquatable[TimeSpan],IFo
 
    Returns: An object that represents value.
   """
-  pass
- @staticmethod
- def FromSeconds(value):
-  """
+        pass
+
+    @staticmethod
+    def FromSeconds(value):
+        """
   FromSeconds(value: float) -> TimeSpan
 
   
@@ -253,10 +265,11 @@ class TimeSpan(object,IComparable,IComparable[TimeSpan],IEquatable[TimeSpan],IFo
 
    Returns: An object that represents value.
   """
-  pass
- @staticmethod
- def FromTicks(value):
-  """
+        pass
+
+    @staticmethod
+    def FromTicks(value):
+        """
   FromTicks(value: Int64) -> TimeSpan
 
   
@@ -273,9 +286,10 @@ class TimeSpan(object,IComparable,IComparable[TimeSpan],IEquatable[TimeSpan],IFo
 
    Returns: An object that represents value.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: TimeSpan) -> int
 
   
@@ -284,9 +298,10 @@ class TimeSpan(object,IComparable,IComparable[TimeSpan],IEquatable[TimeSpan],IFo
 
    Returns: A 32-bit signed integer hash code.
   """
-  pass
- def Negate(self):
-  """
+        pass
+
+    def Negate(self):
+        """
   Negate(self: TimeSpan) -> TimeSpan
 
   
@@ -295,10 +310,11 @@ class TimeSpan(object,IComparable,IComparable[TimeSpan],IEquatable[TimeSpan],IFo
 
    Returns: A new object with the same numeric value as this instance,but with the opposite sign.
   """
-  pass
- @staticmethod
- def Parse(*__args):
-  """
+        pass
+
+    @staticmethod
+    def Parse(*__args):
+        """
   Parse(input: str,formatProvider: IFormatProvider) -> TimeSpan
 
   
@@ -329,10 +345,11 @@ class TimeSpan(object,IComparable,IComparable[TimeSpan],IEquatable[TimeSpan],IFo
 
    Returns: A time interval that corresponds to s.
   """
-  pass
- @staticmethod
- def ParseExact(input,*__args):
-  """
+        pass
+
+    @staticmethod
+    def ParseExact(input, *__args):
+        """
   ParseExact(input: str,format: str,formatProvider: IFormatProvider,styles: TimeSpanStyles) -> TimeSpan
 
   
@@ -433,9 +450,10 @@ class TimeSpan(object,IComparable,IComparable[TimeSpan],IEquatable[TimeSpan],IFo
 
    Returns: A time interval that corresponds to input,as specified by formats and formatProvider.
   """
-  pass
- def Subtract(self,ts):
-  """
+        pass
+
+    def Subtract(self, ts):
+        """
   Subtract(self: TimeSpan,ts: TimeSpan) -> TimeSpan
 
   
@@ -454,9 +472,10 @@ class TimeSpan(object,IComparable,IComparable[TimeSpan],IEquatable[TimeSpan],IFo
 
     ts.
   """
-  pass
- def ToString(self,format=None,formatProvider=None):
-  """
+        pass
+
+    def ToString(self, format=None, formatProvider=None):
+        """
   ToString(self: TimeSpan,format: str,formatProvider: IFormatProvider) -> str
 
   
@@ -507,10 +526,11 @@ class TimeSpan(object,IComparable,IComparable[TimeSpan],IEquatable[TimeSpan],IFo
 
    Returns: The string representation of the current System.TimeSpan value.
   """
-  pass
- @staticmethod
- def TryParse(*__args):
-  """
+        pass
+
+    @staticmethod
+    def TryParse(*__args):
+        """
   TryParse(input: str,formatProvider: IFormatProvider) -> (bool,TimeSpan)
 
   
@@ -561,10 +581,11 @@ class TimeSpan(object,IComparable,IComparable[TimeSpan],IEquatable[TimeSpan],IFo
 
     one days,hours,minutes,or seconds component outside its valid range.
   """
-  pass
- @staticmethod
- def TryParseExact(input,*__args):
-  """
+        pass
+
+    @staticmethod
+    def TryParseExact(input, *__args):
+        """
   TryParseExact(input: str,format: str,formatProvider: IFormatProvider,styles: TimeSpanStyles) -> (bool,TimeSpan)
 
   
@@ -665,36 +686,47 @@ class TimeSpan(object,IComparable,IComparable[TimeSpan],IEquatable[TimeSpan],IFo
 
    Returns: true if input was converted successfully; otherwise,false.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __cmp__(self,*args):
-  """ x.__cmp__(y) <==> cmp(x,y) """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __neg__(self,*args):
-  """ x.__neg__() <==> -x """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __cmp__(self, *args):
+        """ x.__cmp__(y) <==> cmp(x,y) """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __neg__(self, *args):
+        """ x.__neg__() <==> -x """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,ticks: Int64)
 
   __new__(cls: type,hours: int,minutes: int,seconds: int)
@@ -705,11 +737,13 @@ class TimeSpan(object,IComparable,IComparable[TimeSpan],IEquatable[TimeSpan],IFo
 
   __new__[TimeSpan]() -> TimeSpan
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __pos__(self,*args):
-  """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __pos__(self, *args):
+        """
   __pos__(t: TimeSpan) -> TimeSpan
 
   
@@ -722,9 +756,10 @@ class TimeSpan(object,IComparable,IComparable[TimeSpan],IEquatable[TimeSpan],IFo
 
    Returns: The time interval specified by t.
   """
-  pass
- def __radd__(self,*args):
-  """
+        pass
+
+    def __radd__(self, *args):
+        """
   __radd__(t1: TimeSpan,t2: TimeSpan) -> TimeSpan
 
   
@@ -739,14 +774,17 @@ class TimeSpan(object,IComparable,IComparable[TimeSpan],IEquatable[TimeSpan],IFo
 
    Returns: An object whose value is the sum of the values of t1 and t2.
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __rsub__(self,*args):
-  """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __rsub__(self, *args):
+        """
   __rsub__(t1: TimeSpan,t2: TimeSpan) -> TimeSpan
 
   
@@ -761,14 +799,17 @@ class TimeSpan(object,IComparable,IComparable[TimeSpan],IEquatable[TimeSpan],IFo
 
    Returns: An object whose value is the result of the value of t1 minus the value of t2.
   """
-  pass
- def __str__(self,*args):
-  pass
- def __sub__(self,*args):
-  """ x.__sub__(y) <==> x-y """
-  pass
- Days=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the days component of the time interval represented by the current System.TimeSpan structure.
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    def __sub__(self, *args):
+        """ x.__sub__(y) <==> x-y """
+        pass
+
+    Days = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the days component of the time interval represented by the current System.TimeSpan structure.
 
 
 
@@ -778,8 +819,8 @@ Get: Days(self: TimeSpan) -> int
 
 """
 
- Hours=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the hours component of the time interval represented by the current System.TimeSpan structure.
+    Hours = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the hours component of the time interval represented by the current System.TimeSpan structure.
 
 
 
@@ -789,8 +830,10 @@ Get: Hours(self: TimeSpan) -> int
 
 """
 
- Milliseconds=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the milliseconds component of the time interval represented by the current System.TimeSpan structure.
+    Milliseconds = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the milliseconds component of the time interval represented by the current System.TimeSpan structure.
 
 
 
@@ -800,8 +843,8 @@ Get: Milliseconds(self: TimeSpan) -> int
 
 """
 
- Minutes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the minutes component of the time interval represented by the current System.TimeSpan structure.
+    Minutes = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the minutes component of the time interval represented by the current System.TimeSpan structure.
 
 
 
@@ -811,8 +854,8 @@ Get: Minutes(self: TimeSpan) -> int
 
 """
 
- Seconds=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the seconds component of the time interval represented by the current System.TimeSpan structure.
+    Seconds = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the seconds component of the time interval represented by the current System.TimeSpan structure.
 
 
 
@@ -822,8 +865,8 @@ Get: Seconds(self: TimeSpan) -> int
 
 """
 
- Ticks=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of ticks that represent the value of the current System.TimeSpan structure.
+    Ticks = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of ticks that represent the value of the current System.TimeSpan structure.
 
 
 
@@ -833,8 +876,8 @@ Get: Ticks(self: TimeSpan) -> Int64
 
 """
 
- TotalDays=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the value of the current System.TimeSpan structure expressed in whole and fractional days.
+    TotalDays = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the value of the current System.TimeSpan structure expressed in whole and fractional days.
 
 
 
@@ -844,8 +887,10 @@ Get: TotalDays(self: TimeSpan) -> float
 
 """
 
- TotalHours=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the value of the current System.TimeSpan structure expressed in whole and fractional hours.
+    TotalHours = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the value of the current System.TimeSpan structure expressed in whole and fractional hours.
 
 
 
@@ -855,8 +900,10 @@ Get: TotalHours(self: TimeSpan) -> float
 
 """
 
- TotalMilliseconds=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the value of the current System.TimeSpan structure expressed in whole and fractional milliseconds.
+    TotalMilliseconds = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the value of the current System.TimeSpan structure expressed in whole and fractional milliseconds.
 
 
 
@@ -866,8 +913,10 @@ Get: TotalMilliseconds(self: TimeSpan) -> float
 
 """
 
- TotalMinutes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the value of the current System.TimeSpan structure expressed in whole and fractional minutes.
+    TotalMinutes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the value of the current System.TimeSpan structure expressed in whole and fractional minutes.
 
 
 
@@ -877,8 +926,10 @@ Get: TotalMinutes(self: TimeSpan) -> float
 
 """
 
- TotalSeconds=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the value of the current System.TimeSpan structure expressed in whole and fractional seconds.
+    TotalSeconds = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the value of the current System.TimeSpan structure expressed in whole and fractional seconds.
 
 
 
@@ -888,13 +939,11 @@ Get: TotalSeconds(self: TimeSpan) -> float
 
 """
 
-
- MaxValue=None
- MinValue=None
- TicksPerDay=None
- TicksPerHour=None
- TicksPerMillisecond=None
- TicksPerMinute=None
- TicksPerSecond=None
- Zero=None
-
+    MaxValue = None
+    MinValue = None
+    TicksPerDay = None
+    TicksPerHour = None
+    TicksPerMillisecond = None
+    TicksPerMinute = None
+    TicksPerSecond = None
+    Zero = None

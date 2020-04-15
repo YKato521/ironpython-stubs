@@ -1,5 +1,5 @@
-class DataObjectAttribute(Attribute,_Attribute):
- """
+class DataObjectAttribute(Attribute, _Attribute):
+    """
  Identifies a type as an object suitable for binding to an System.Web.UI.WebControls.ObjectDataSource object. This class cannot be inherited.
 
  
@@ -8,8 +8,9 @@ class DataObjectAttribute(Attribute,_Attribute):
 
  DataObjectAttribute(isDataObject: bool)
  """
- def Equals(self,obj):
-  """
+
+    def Equals(self, obj):
+        """
   Equals(self: DataObjectAttribute,obj: object) -> bool
 
   
@@ -28,9 +29,10 @@ class DataObjectAttribute(Attribute,_Attribute):
 
     false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: DataObjectAttribute) -> int
 
   
@@ -39,9 +41,10 @@ class DataObjectAttribute(Attribute,_Attribute):
 
    Returns: A 32-bit signed integer hash code.
   """
-  pass
- def IsDefaultAttribute(self):
-  """
+        pass
+
+    def IsDefaultAttribute(self):
+        """
   IsDefaultAttribute(self: DataObjectAttribute) -> bool
 
   
@@ -54,25 +57,32 @@ class DataObjectAttribute(Attribute,_Attribute):
 
    Returns: true if the current value of the attribute is the default; otherwise,false.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,isDataObject=None):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, isDataObject=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,isDataObject: bool)
   """
-  pass
- def __ne__(self,*args):
-  pass
- IsDataObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether an object should be considered suitable for binding to an System.Web.UI.WebControls.ObjectDataSource object at design time.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    IsDataObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether an object should be considered suitable for binding to an System.Web.UI.WebControls.ObjectDataSource object at design time.
 
 
 
@@ -82,8 +92,6 @@ Get: IsDataObject(self: DataObjectAttribute) -> bool
 
 """
 
-
- DataObject=None
- Default=None
- NonDataObject=None
-
+    DataObject = None
+    Default = None
+    NonDataObject = None

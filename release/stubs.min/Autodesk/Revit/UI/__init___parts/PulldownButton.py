@@ -1,7 +1,8 @@
 class PulldownButton(RibbonButton):
- """ The PulldownButton object represents a button with a drop-down list on RibbonPanel. """
- def AddPushButton(self,buttonData):
-  """
+    """ The PulldownButton object represents a button with a drop-down list on RibbonPanel. """
+
+    def AddPushButton(self, buttonData):
+        """
   AddPushButton(self: PulldownButton,buttonData: PushButtonData) -> PushButton
 
   
@@ -18,22 +19,24 @@ class PulldownButton(RibbonButton):
 
    Returns: The newly added pushbutton.
   """
-  pass
- def AddSeparator(self):
-  """
+        pass
+
+    def AddSeparator(self):
+        """
   AddSeparator(self: PulldownButton)
 
    Adds a separator to the drop-down list.
   """
-  pass
- def GetItems(self):
-  """
+        pass
+
+    def GetItems(self):
+        """
   GetItems(self: PulldownButton) -> IList[PushButton]
 
   
 
    Gets a copy of the collection of buttons assigned to the pulldown button.
   """
-  pass
- m_ItemType=None
+        pass
 
+    m_ItemType = None

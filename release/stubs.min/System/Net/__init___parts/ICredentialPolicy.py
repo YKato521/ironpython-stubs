@@ -1,7 +1,10 @@
 class ICredentialPolicy:
- """ Defines the credential policy to be used for resource requests that are made using System.Net.WebRequest and its derived classes. """
- def ShouldSendCredential(self,challengeUri,request,credential,authenticationModule):
-  """
+    """ Defines the credential policy to be used for resource requests that are made using System.Net.WebRequest and its derived classes. """
+
+    def ShouldSendCredential(
+        self, challengeUri, request, credential, authenticationModule
+    ):
+        """
   ShouldSendCredential(self: ICredentialPolicy,challengeUri: Uri,request: WebRequest,credential: NetworkCredential,authenticationModule: IAuthenticationModule) -> bool
 
   
@@ -28,7 +31,8 @@ class ICredentialPolicy:
 
    Returns: true if the credentials are sent with the request; otherwise,false.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

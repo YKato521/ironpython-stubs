@@ -1,5 +1,13 @@
-class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializationCallback,IComparable[DateTimeOffset],IEquatable[DateTimeOffset]):
- """
+class DateTimeOffset(
+    object,
+    IComparable,
+    IFormattable,
+    ISerializable,
+    IDeserializationCallback,
+    IComparable[DateTimeOffset],
+    IEquatable[DateTimeOffset],
+):
+    """
  Represents a point in time,typically expressed as a date and time of day,relative to Coordinated Universal Time (UTC).
 
  
@@ -16,8 +24,9 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
  DateTimeOffset(year: int,month: int,day: int,hour: int,minute: int,second: int,millisecond: int,calendar: Calendar,offset: TimeSpan)
  """
- def Add(self,timeSpan):
-  """
+
+    def Add(self, timeSpan):
+        """
   Add(self: DateTimeOffset,timeSpan: TimeSpan) -> DateTimeOffset
 
   
@@ -32,9 +41,10 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
     System.DateTimeOffset object and the time interval represented by timeSpan.
   """
-  pass
- def AddDays(self,days):
-  """
+        pass
+
+    def AddDays(self, days):
+        """
   AddDays(self: DateTimeOffset,days: float) -> DateTimeOffset
 
   
@@ -49,9 +59,10 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
     System.DateTimeOffset object and the number of days represented by days.
   """
-  pass
- def AddHours(self,hours):
-  """
+        pass
+
+    def AddHours(self, hours):
+        """
   AddHours(self: DateTimeOffset,hours: float) -> DateTimeOffset
 
   
@@ -70,9 +81,10 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
     System.DateTimeOffset object and the number of hours represented by hours.
   """
-  pass
- def AddMilliseconds(self,milliseconds):
-  """
+        pass
+
+    def AddMilliseconds(self, milliseconds):
+        """
   AddMilliseconds(self: DateTimeOffset,milliseconds: float) -> DateTimeOffset
 
   
@@ -87,9 +99,10 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
     System.DateTimeOffset object and the number of whole milliseconds represented by milliseconds.
   """
-  pass
- def AddMinutes(self,minutes):
-  """
+        pass
+
+    def AddMinutes(self, minutes):
+        """
   AddMinutes(self: DateTimeOffset,minutes: float) -> DateTimeOffset
 
   
@@ -108,9 +121,10 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
     System.DateTimeOffset object and the number of minutes represented by minutes.
   """
-  pass
- def AddMonths(self,months):
-  """
+        pass
+
+    def AddMonths(self, months):
+        """
   AddMonths(self: DateTimeOffset,months: int) -> DateTimeOffset
 
   
@@ -125,9 +139,10 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
     System.DateTimeOffset object and the number of months represented by months.
   """
-  pass
- def AddSeconds(self,seconds):
-  """
+        pass
+
+    def AddSeconds(self, seconds):
+        """
   AddSeconds(self: DateTimeOffset,seconds: float) -> DateTimeOffset
 
   
@@ -146,9 +161,10 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
     System.DateTimeOffset object and the number of seconds represented by seconds.
   """
-  pass
- def AddTicks(self,ticks):
-  """
+        pass
+
+    def AddTicks(self, ticks):
+        """
   AddTicks(self: DateTimeOffset,ticks: Int64) -> DateTimeOffset
 
   
@@ -163,9 +179,10 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
     System.DateTimeOffset object and the number of ticks represented by ticks.
   """
-  pass
- def AddYears(self,years):
-  """
+        pass
+
+    def AddYears(self, years):
+        """
   AddYears(self: DateTimeOffset,years: int) -> DateTimeOffset
 
   
@@ -180,10 +197,11 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
     System.DateTimeOffset object and the number of years represented by years.
   """
-  pass
- @staticmethod
- def Compare(first,second):
-  """
+        pass
+
+    @staticmethod
+    def Compare(first, second):
+        """
   Compare(first: DateTimeOffset,second: DateTimeOffset) -> int
 
   
@@ -208,9 +226,10 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
     zerofirst is later than second.
   """
-  pass
- def CompareTo(self,other):
-  """
+        pass
+
+    def CompareTo(self, other):
+        """
   CompareTo(self: DateTimeOffset,other: DateTimeOffset) -> int
 
   
@@ -237,9 +256,10 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
     other.
   """
-  pass
- def Equals(self,*__args):
-  """
+        pass
+
+    def Equals(self, *__args):
+        """
   Equals(first: DateTimeOffset,second: DateTimeOffset) -> bool
 
   
@@ -296,9 +316,10 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
     time as the current System.DateTimeOffset object; otherwise,false.
   """
-  pass
- def EqualsExact(self,other):
-  """
+        pass
+
+    def EqualsExact(self, other):
+        """
   EqualsExact(self: DateTimeOffset,other: DateTimeOffset) -> bool
 
   
@@ -317,10 +338,11 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
     the same System.DateTimeOffset.Offset value; otherwise,false.
   """
-  pass
- @staticmethod
- def FromFileTime(fileTime):
-  """
+        pass
+
+    @staticmethod
+    def FromFileTime(fileTime):
+        """
   FromFileTime(fileTime: Int64) -> DateTimeOffset
 
   
@@ -335,17 +357,20 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
     offset.
   """
-  pass
- @staticmethod
- def FromUnixTimeMilliseconds(milliseconds):
-  """ FromUnixTimeMilliseconds(milliseconds: Int64) -> DateTimeOffset """
-  pass
- @staticmethod
- def FromUnixTimeSeconds(seconds):
-  """ FromUnixTimeSeconds(seconds: Int64) -> DateTimeOffset """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    @staticmethod
+    def FromUnixTimeMilliseconds(milliseconds):
+        """ FromUnixTimeMilliseconds(milliseconds: Int64) -> DateTimeOffset """
+        pass
+
+    @staticmethod
+    def FromUnixTimeSeconds(seconds):
+        """ FromUnixTimeSeconds(seconds: Int64) -> DateTimeOffset """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: DateTimeOffset) -> int
 
   
@@ -354,10 +379,11 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
    Returns: A 32-bit signed integer hash code.
   """
-  pass
- @staticmethod
- def Parse(input,formatProvider=None,styles=None):
-  """
+        pass
+
+    @staticmethod
+    def Parse(input, formatProvider=None, styles=None):
+        """
   Parse(input: str,formatProvider: IFormatProvider,styles: DateTimeStyles) -> DateTimeOffset
 
   
@@ -424,10 +450,11 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
    Returns: An object that is equivalent to the date and time that is contained in input.
   """
-  pass
- @staticmethod
- def ParseExact(input,*__args):
-  """
+        pass
+
+    @staticmethod
+    def ParseExact(input, *__args):
+        """
   ParseExact(input: str,formats: Array[str],formatProvider: IFormatProvider,styles: DateTimeStyles) -> DateTimeOffset
 
   
@@ -508,9 +535,10 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
     format and formatProvider.
   """
-  pass
- def Subtract(self,value):
-  """
+        pass
+
+    def Subtract(self, value):
+        """
   Subtract(self: DateTimeOffset,value: TimeSpan) -> DateTimeOffset
 
   
@@ -543,9 +571,10 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
    Returns: An object that specifies the interval between the two System.DateTimeOffset objects.
   """
-  pass
- def ToFileTime(self):
-  """
+        pass
+
+    def ToFileTime(self):
+        """
   ToFileTime(self: DateTimeOffset) -> Int64
 
   
@@ -554,9 +583,10 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
    Returns: The value of the current System.DateTimeOffset object,expressed as a Windows file time.
   """
-  pass
- def ToLocalTime(self):
-  """
+        pass
+
+    def ToLocalTime(self):
+        """
   ToLocalTime(self: DateTimeOffset) -> DateTimeOffset
 
   
@@ -571,9 +601,10 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
     converted to local time.
   """
-  pass
- def ToOffset(self,offset):
-  """
+        pass
+
+    def ToOffset(self, offset):
+        """
   ToOffset(self: DateTimeOffset,offset: TimeSpan) -> DateTimeOffset
 
   
@@ -594,9 +625,10 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
     System.DateTimeOffset.Offset property is set to offset.
   """
-  pass
- def ToString(self,*__args):
-  """
+        pass
+
+    def ToString(self, *__args):
+        """
   ToString(self: DateTimeOffset,formatProvider: IFormatProvider) -> str
 
   
@@ -673,9 +705,10 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
     by format.
   """
-  pass
- def ToUniversalTime(self):
-  """
+        pass
+
+    def ToUniversalTime(self):
+        """
   ToUniversalTime(self: DateTimeOffset) -> DateTimeOffset
 
   
@@ -690,16 +723,19 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
     converted to Coordinated Universal Time (UTC).
   """
-  pass
- def ToUnixTimeMilliseconds(self):
-  """ ToUnixTimeMilliseconds(self: DateTimeOffset) -> Int64 """
-  pass
- def ToUnixTimeSeconds(self):
-  """ ToUnixTimeSeconds(self: DateTimeOffset) -> Int64 """
-  pass
- @staticmethod
- def TryParse(input,*__args):
-  """
+        pass
+
+    def ToUnixTimeMilliseconds(self):
+        """ ToUnixTimeMilliseconds(self: DateTimeOffset) -> Int64 """
+        pass
+
+    def ToUnixTimeSeconds(self):
+        """ ToUnixTimeSeconds(self: DateTimeOffset) -> Int64 """
+        pass
+
+    @staticmethod
+    def TryParse(input, *__args):
+        """
   TryParse(input: str,formatProvider: IFormatProvider,styles: DateTimeStyles) -> (bool,DateTimeOffset)
 
   
@@ -740,10 +776,11 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
    Returns: true if the input parameter is successfully converted; otherwise,false.
   """
-  pass
- @staticmethod
- def TryParseExact(input,*__args):
-  """
+        pass
+
+    @staticmethod
+    def TryParseExact(input, *__args):
+        """
   TryParseExact(input: str,formats: Array[str],formatProvider: IFormatProvider,styles: DateTimeStyles) -> (bool,DateTimeOffset)
 
   
@@ -800,33 +837,43 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
    Returns: true if the input parameter is successfully converted; otherwise,false.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __cmp__(self,*args):
-  """ x.__cmp__(y) <==> cmp(x,y) """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __cmp__(self, *args):
+        """ x.__cmp__(y) <==> cmp(x,y) """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,ticks: Int64,offset: TimeSpan)
 
   __new__(cls: type,dateTime: DateTime)
@@ -841,16 +888,20 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
   __new__[DateTimeOffset]() -> DateTimeOffset
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __rsub__(self,*args):
-  """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __rsub__(self, *args):
+        """
   __rsub__(left: DateTimeOffset,right: DateTimeOffset) -> TimeSpan
 
   
@@ -865,14 +916,17 @@ class DateTimeOffset(object,IComparable,IFormattable,ISerializable,IDeserializat
 
    Returns: An object that represents the difference between left and right.
   """
-  pass
- def __str__(self,*args):
-  pass
- def __sub__(self,*args):
-  """ x.__sub__(y) <==> x-yx.__sub__(y) <==> x-y """
-  pass
- Date=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a System.DateTime value that represents the date component of the current System.DateTimeOffset object.
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    def __sub__(self, *args):
+        """ x.__sub__(y) <==> x-yx.__sub__(y) <==> x-y """
+        pass
+
+    Date = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a System.DateTime value that represents the date component of the current System.DateTimeOffset object.
 
 
 
@@ -882,8 +936,8 @@ Get: Date(self: DateTimeOffset) -> DateTime
 
 """
 
- DateTime=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a System.DateTime value that represents the date and time of the current System.DateTimeOffset object.
+    DateTime = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a System.DateTime value that represents the date and time of the current System.DateTimeOffset object.
 
 
 
@@ -893,8 +947,8 @@ Get: DateTime(self: DateTimeOffset) -> DateTime
 
 """
 
- Day=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the day of the month represented by the current System.DateTimeOffset object.
+    Day = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the day of the month represented by the current System.DateTimeOffset object.
 
 
 
@@ -904,8 +958,8 @@ Get: Day(self: DateTimeOffset) -> int
 
 """
 
- DayOfWeek=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the day of the week represented by the current System.DateTimeOffset object.
+    DayOfWeek = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the day of the week represented by the current System.DateTimeOffset object.
 
 
 
@@ -915,8 +969,8 @@ Get: DayOfWeek(self: DateTimeOffset) -> DayOfWeek
 
 """
 
- DayOfYear=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the day of the year represented by the current System.DateTimeOffset object.
+    DayOfYear = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the day of the year represented by the current System.DateTimeOffset object.
 
 
 
@@ -926,8 +980,8 @@ Get: DayOfYear(self: DateTimeOffset) -> int
 
 """
 
- Hour=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the hour component of the time represented by the current System.DateTimeOffset object.
+    Hour = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the hour component of the time represented by the current System.DateTimeOffset object.
 
 
 
@@ -937,8 +991,10 @@ Get: Hour(self: DateTimeOffset) -> int
 
 """
 
- LocalDateTime=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a System.DateTime value that represents the local date and time of the current System.DateTimeOffset object.
+    LocalDateTime = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a System.DateTime value that represents the local date and time of the current System.DateTimeOffset object.
 
 
 
@@ -948,8 +1004,10 @@ Get: LocalDateTime(self: DateTimeOffset) -> DateTime
 
 """
 
- Millisecond=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the millisecond component of the time represented by the current System.DateTimeOffset object.
+    Millisecond = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the millisecond component of the time represented by the current System.DateTimeOffset object.
 
 
 
@@ -959,8 +1017,8 @@ Get: Millisecond(self: DateTimeOffset) -> int
 
 """
 
- Minute=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the minute component of the time represented by the current System.DateTimeOffset object.
+    Minute = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the minute component of the time represented by the current System.DateTimeOffset object.
 
 
 
@@ -970,8 +1028,8 @@ Get: Minute(self: DateTimeOffset) -> int
 
 """
 
- Month=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the month component of the date represented by the current System.DateTimeOffset object.
+    Month = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the month component of the date represented by the current System.DateTimeOffset object.
 
 
 
@@ -981,8 +1039,8 @@ Get: Month(self: DateTimeOffset) -> int
 
 """
 
- Offset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the time's offset from Coordinated Universal Time (UTC).
+    Offset = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the time's offset from Coordinated Universal Time (UTC).
 
 
 
@@ -992,8 +1050,8 @@ Get: Offset(self: DateTimeOffset) -> TimeSpan
 
 """
 
- Second=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the second component of the clock time represented by the current System.DateTimeOffset object.
+    Second = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the second component of the clock time represented by the current System.DateTimeOffset object.
 
 
 
@@ -1003,8 +1061,8 @@ Get: Second(self: DateTimeOffset) -> int
 
 """
 
- Ticks=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of ticks that represents the date and time of the current System.DateTimeOffset object in clock time.
+    Ticks = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of ticks that represents the date and time of the current System.DateTimeOffset object in clock time.
 
 
 
@@ -1014,8 +1072,8 @@ Get: Ticks(self: DateTimeOffset) -> Int64
 
 """
 
- TimeOfDay=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the time of day for the current System.DateTimeOffset object.
+    TimeOfDay = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the time of day for the current System.DateTimeOffset object.
 
 
 
@@ -1025,8 +1083,10 @@ Get: TimeOfDay(self: DateTimeOffset) -> TimeSpan
 
 """
 
- UtcDateTime=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a System.DateTime value that represents the Coordinated Universal Time (UTC) date and time of the current System.DateTimeOffset object.
+    UtcDateTime = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a System.DateTime value that represents the Coordinated Universal Time (UTC) date and time of the current System.DateTimeOffset object.
 
 
 
@@ -1036,8 +1096,8 @@ Get: UtcDateTime(self: DateTimeOffset) -> DateTime
 
 """
 
- UtcTicks=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of ticks that represents the date and time of the current System.DateTimeOffset object in Coordinated Universal Time (UTC).
+    UtcTicks = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of ticks that represents the date and time of the current System.DateTimeOffset object in Coordinated Universal Time (UTC).
 
 
 
@@ -1047,8 +1107,8 @@ Get: UtcTicks(self: DateTimeOffset) -> Int64
 
 """
 
- Year=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the year component of the date represented by the current System.DateTimeOffset object.
+    Year = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the year component of the date represented by the current System.DateTimeOffset object.
 
 
 
@@ -1058,9 +1118,7 @@ Get: Year(self: DateTimeOffset) -> int
 
 """
 
-
- MaxValue=None
- MinValue=None
- Now=None
- UtcNow=None
-
+    MaxValue = None
+    MinValue = None
+    Now = None
+    UtcNow = None

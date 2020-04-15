@@ -8,68 +8,89 @@
 # no functions
 # classes
 
+
 class DeformingType(Enum):
- """ enum DeformingType,values: DEFORMED (1),NOT_SPECIFIED (0),UNDEFORMED (2) """
- DEFORMED=None
- NOT_SPECIFIED=None
- UNDEFORMED=None
- value__=None
+    """ enum DeformingType,values: DEFORMED (1),NOT_SPECIFIED (0),UNDEFORMED (2) """
+
+    DEFORMED = None
+    NOT_SPECIFIED = None
+    UNDEFORMED = None
+    value__ = None
 
 
 class FoldingType(Enum):
- """ enum FoldingType,values: FOLDED (1),NOT_SPECIFIED (0),UNFOLDED (2) """
- FOLDED=None
- NOT_SPECIFIED=None
- UNFOLDED=None
- value__=None
+    """ enum FoldingType,values: FOLDED (1),NOT_SPECIFIED (0),UNFOLDED (2) """
+
+    FOLDED = None
+    NOT_SPECIFIED = None
+    UNFOLDED = None
+    value__ = None
 
 
 class FormingStates(object):
- """
- FormingStates()
- FormingStates(deforming: DeformingType)
- FormingStates(folding: FoldingType)
- FormingStates(wrapping: WrappingType)
+    """
+ FormingStates()
+
+ FormingStates(deforming: DeformingType)
+
+ FormingStates(folding: FoldingType)
+
+ FormingStates(wrapping: WrappingType)
+
  FormingStates(deforming: DeformingType,folding: FoldingType,wrapping: WrappingType)
  """
- def Clone(self):
-  """ Clone(self: FormingStates) -> object """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
-  __new__(cls: type)
-  __new__(cls: type,deforming: DeformingType)
-  __new__(cls: type,folding: FoldingType)
-  __new__(cls: type,wrapping: WrappingType)
+
+    def Clone(self):
+        """ Clone(self: FormingStates) -> object """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
+  __new__(cls: type)
+
+  __new__(cls: type,deforming: DeformingType)
+
+  __new__(cls: type,folding: FoldingType)
+
+  __new__(cls: type,wrapping: WrappingType)
+
   __new__(cls: type,deforming: DeformingType,folding: FoldingType,wrapping: WrappingType)
   """
-  pass
- Deforming=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Deforming(self: FormingStates) -> DeformingType
-
-Set: Deforming(self: FormingStates)=value
+        pass
+
+    Deforming = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Deforming(self: FormingStates) -> DeformingType
+
+
+
+Set: Deforming(self: FormingStates)=value
+
 """
 
- Folding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Folding(self: FormingStates) -> FoldingType
-
-Set: Folding(self: FormingStates)=value
+    Folding = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Folding(self: FormingStates) -> FoldingType
+
+
+
+Set: Folding(self: FormingStates)=value
+
 """
 
- Wrapping=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Wrapping(self: FormingStates) -> WrappingType
-
-Set: Wrapping(self: FormingStates)=value
-"""
+    Wrapping = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Wrapping(self: FormingStates) -> WrappingType
 
+
+
+Set: Wrapping(self: FormingStates)=value
+
+"""
 
 
 class WrappingType(Enum):
- """ enum WrappingType,values: NOT_SPECIFIED (0),UNWRAPPED (2),WRAPPED (1) """
- NOT_SPECIFIED=None
- UNWRAPPED=None
- value__=None
- WRAPPED=None
+    """ enum WrappingType,values: NOT_SPECIFIED (0),UNWRAPPED (2),WRAPPED (1) """
 
-
+    NOT_SPECIFIED = None
+    UNWRAPPED = None
+    value__ = None
+    WRAPPED = None

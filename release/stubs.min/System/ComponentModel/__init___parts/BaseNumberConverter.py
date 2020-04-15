@@ -1,7 +1,8 @@
 class BaseNumberConverter(TypeConverter):
- """ Provides a base type converter for nonfloating-point numerical types. """
- def CanConvertFrom(self,*__args):
-  """
+    """ Provides a base type converter for nonfloating-point numerical types. """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: BaseNumberConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -20,9 +21,10 @@ class BaseNumberConverter(TypeConverter):
 
    Returns: true if this converter can perform the operation; otherwise,false.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: BaseNumberConverter,context: ITypeDescriptorContext,t: Type) -> bool
 
   
@@ -41,9 +43,10 @@ class BaseNumberConverter(TypeConverter):
 
    Returns: true if this converter can perform the operation; otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: BaseNumberConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -60,9 +63,10 @@ class BaseNumberConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: BaseNumberConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -81,4 +85,4 @@ class BaseNumberConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
+        pass

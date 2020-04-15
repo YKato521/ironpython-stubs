@@ -1,5 +1,5 @@
-class DebuggerVisualizerAttribute(Attribute,_Attribute):
- """
+class DebuggerVisualizerAttribute(Attribute, _Attribute):
+    """
  Specifies that the type has a visualizer. This class cannot be inherited.
 
  
@@ -16,12 +16,14 @@ class DebuggerVisualizerAttribute(Attribute,_Attribute):
 
  DebuggerVisualizerAttribute(visualizer: Type,visualizerObjectSourceTypeName: str)
  """
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,visualizerTypeName: str)
 
   __new__(cls: type,visualizerTypeName: str,visualizerObjectSourceTypeName: str)
@@ -34,9 +36,12 @@ class DebuggerVisualizerAttribute(Attribute,_Attribute):
 
   __new__(cls: type,visualizer: Type,visualizerObjectSourceTypeName: str)
   """
-  pass
- Description=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the description of the visualizer.
+        pass
+
+    Description = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the description of the visualizer.
 
 
 
@@ -48,8 +53,8 @@ Set: Description(self: DebuggerVisualizerAttribute)=value
 
 """
 
- Target=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the target type when the attribute is applied at the assembly level.
+    Target = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the target type when the attribute is applied at the assembly level.
 
 
 
@@ -61,8 +66,10 @@ Set: Target(self: DebuggerVisualizerAttribute)=value
 
 """
 
- TargetTypeName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the fully qualified type name when the attribute is applied at the assembly level.
+    TargetTypeName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the fully qualified type name when the attribute is applied at the assembly level.
 
 
 
@@ -74,8 +81,10 @@ Set: TargetTypeName(self: DebuggerVisualizerAttribute)=value
 
 """
 
- VisualizerObjectSourceTypeName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the fully qualified type name of the visualizer object source.
+    VisualizerObjectSourceTypeName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the fully qualified type name of the visualizer object source.
 
 
 
@@ -85,8 +94,10 @@ Get: VisualizerObjectSourceTypeName(self: DebuggerVisualizerAttribute) -> str
 
 """
 
- VisualizerTypeName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the fully qualified type name of the visualizer.
+    VisualizerTypeName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the fully qualified type name of the visualizer.
 
 
 
@@ -95,5 +106,3 @@ Get: VisualizerTypeName(self: DebuggerVisualizerAttribute) -> str
 
 
 """
-
-

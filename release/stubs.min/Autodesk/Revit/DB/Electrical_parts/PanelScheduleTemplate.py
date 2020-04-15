@@ -1,11 +1,12 @@
-class PanelScheduleTemplate(Element,IDisposable):
- """
+class PanelScheduleTemplate(Element, IDisposable):
+    """
  The PanelScheduleTemplate class represents an instance of panel schedule template
 
     element. An instance object could be a branch panel,a switchboard or a data panel template.
  """
- def CopyFrom(self,OtherADoc,otherElem):
-  """
+
+    def CopyFrom(self, OtherADoc, otherElem):
+        """
   CopyFrom(self: PanelScheduleTemplate,OtherADoc: Document,otherElem: PanelScheduleTemplate)
 
    Copies all values from other element to this object.
@@ -16,10 +17,11 @@ class PanelScheduleTemplate(Element,IDisposable):
 
    otherElem: The element being copied from.
   """
-  pass
- @staticmethod
- def Create(document,type,config,strName):
-  """
+        pass
+
+    @staticmethod
+    def Create(document, type, config, strName):
+        """
   Create(document: Document,type: PanelScheduleType,config: PanelConfiguration,strName: str) -> PanelScheduleTemplate
 
   
@@ -38,24 +40,28 @@ class PanelScheduleTemplate(Element,IDisposable):
 
    Returns: The newly created panel schedule template element.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetPanelScheduleType(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetPanelScheduleType(self):
+        """
   GetPanelScheduleType(self: PanelScheduleTemplate) -> PanelScheduleType
 
   
 
    Returns the panel schedule type.
   """
-  pass
- def GetSectionData(self,sectionType):
-  """
+        pass
+
+    def GetSectionData(self, sectionType):
+        """
   GetSectionData(self: PanelScheduleTemplate,sectionType: SectionType) -> TableSectionData
 
   
@@ -64,9 +70,10 @@ class PanelScheduleTemplate(Element,IDisposable):
 
    Returns: The table section data object.
   """
-  pass
- def GetTableData(self):
-  """
+        pass
+
+    def GetTableData(self):
+        """
   GetTableData(self: PanelScheduleTemplate) -> PanelScheduleData
 
   
@@ -75,9 +82,10 @@ class PanelScheduleTemplate(Element,IDisposable):
 
    Returns: The panel schedule data object.
   """
-  pass
- def HasSameType(self,otherTemplate):
-  """
+        pass
+
+    def HasSameType(self, otherTemplate):
+        """
   HasSameType(self: PanelScheduleTemplate,otherTemplate: PanelScheduleTemplate) -> bool
 
   
@@ -92,10 +100,11 @@ class PanelScheduleTemplate(Element,IDisposable):
 
     false otherwise.
   """
-  pass
- @staticmethod
- def IsValidPanelConfiguration(scheduleType,configuration):
-  """
+        pass
+
+    @staticmethod
+    def IsValidPanelConfiguration(scheduleType, configuration):
+        """
   IsValidPanelConfiguration(scheduleType: PanelScheduleType,configuration: PanelConfiguration) -> bool
 
   
@@ -112,10 +121,11 @@ class PanelScheduleTemplate(Element,IDisposable):
 
     otherwise.
   """
-  pass
- @staticmethod
- def IsValidType(*__args):
-  """
+        pass
+
+    @staticmethod
+    def IsValidType(*__args):
+        """
   IsValidType(panelScheduleType: PanelScheduleType) -> bool
 
   
@@ -130,15 +140,18 @@ class PanelScheduleTemplate(Element,IDisposable):
 
     for this element,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetTableData(self,Data):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetTableData(self, Data):
+        """
   SetTableData(self: PanelScheduleTemplate,Data: PanelScheduleData)
 
    Assigns table data to this template
@@ -147,18 +160,24 @@ class PanelScheduleTemplate(Element,IDisposable):
 
    Data: The panel schedule data
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- IsBranchPanelSchedule=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks to see if this object is branch panel schedule template element.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    IsBranchPanelSchedule = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Checks to see if this object is branch panel schedule template element.
 
 
 
@@ -168,8 +187,10 @@ Get: IsBranchPanelSchedule(self: PanelScheduleTemplate) -> bool
 
 """
 
- IsDataPanelSchedule=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks to see if this object is data panel schedule template element.
+    IsDataPanelSchedule = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Checks to see if this object is data panel schedule template element.
 
 
 
@@ -179,8 +200,8 @@ Get: IsDataPanelSchedule(self: PanelScheduleTemplate) -> bool
 
 """
 
- IsDefault=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks to see if this is default template for the given panel schedule type.
+    IsDefault = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Checks to see if this is default template for the given panel schedule type.
 
 
 
@@ -190,8 +211,10 @@ Get: IsDefault(self: PanelScheduleTemplate) -> bool
 
 """
 
- IsSwitchboardSchedule=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks to see if this object is switchboard schedule template element.
+    IsSwitchboardSchedule = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Checks to see if this object is switchboard schedule template element.
 
 
 
@@ -200,5 +223,3 @@ Get: IsSwitchboardSchedule(self: PanelScheduleTemplate) -> bool
 
 
 """
-
-

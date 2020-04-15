@@ -1,5 +1,11 @@
-class Vector3f(object,IEquatable[Vector3f],IComparable[Vector3f],IComparable,IEpsilonFComparable[Vector3f]):
- """
+class Vector3f(
+    object,
+    IEquatable[Vector3f],
+    IComparable[Vector3f],
+    IComparable,
+    IEpsilonFComparable[Vector3f],
+):
+    """
  Represents the three components of a vector in three-dimensional space,
 
     using System.Single-precision floating point numbers.
@@ -8,9 +14,10 @@ class Vector3f(object,IEquatable[Vector3f],IComparable[Vector3f],IComparable,IEp
 
  Vector3f(x: Single,y: Single,z: Single)
  """
- @staticmethod
- def Add(point,vector):
-  """
+
+    @staticmethod
+    def Add(point, vector):
+        """
   Add(point: Point3f,vector: Vector3f) -> Point3f
 
   
@@ -31,9 +38,10 @@ class Vector3f(object,IEquatable[Vector3f],IComparable[Vector3f],IComparable,IEp
 
    Returns: A new point that results from the addition of point and vector.
   """
-  pass
- def CompareTo(self,other):
-  """
+        pass
+
+    def CompareTo(self, other):
+        """
   CompareTo(self: Vector3f,other: Vector3f) -> int
 
   
@@ -54,10 +62,11 @@ class Vector3f(object,IEquatable[Vector3f],IComparable[Vector3f],IComparable,IEp
 
     other.Y-1: if this.X == other.X and this.Y == other.Y and this.Z < other.Z+1: otherwise.
   """
-  pass
- @staticmethod
- def CrossProduct(a,b):
-  """
+        pass
+
+    @staticmethod
+    def CrossProduct(a, b):
+        """
   CrossProduct(a: Vector3f,b: Vector3f) -> Vector3f
 
   
@@ -82,18 +91,20 @@ class Vector3f(object,IEquatable[Vector3f],IComparable[Vector3f],IComparable,IEp
 
     b.Length andwith a result that is oriented following the right hand rule.
   """
-  pass
- def EpsilonEquals(self,other,epsilon):
-  """
+        pass
+
+    def EpsilonEquals(self, other, epsilon):
+        """
   EpsilonEquals(self: Vector3f,other: Vector3f,epsilon: Single) -> bool
 
   
 
    Check that all values in other are withing epsilon of the values in this
   """
-  pass
- def Equals(self,*__args):
-  """
+        pass
+
+    def Equals(self, *__args):
+        """
   Equals(self: Vector3f,vector: Vector3f) -> bool
 
   
@@ -122,9 +133,10 @@ class Vector3f(object,IEquatable[Vector3f],IComparable[Vector3f],IComparable,IEp
 
    Returns: true if obj is Vector3f and has the same components as this; otherwise false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Vector3f) -> int
 
   
@@ -133,10 +145,11 @@ class Vector3f(object,IEquatable[Vector3f],IComparable[Vector3f],IComparable,IEp
 
    Returns: A hash code that is not unique for each vector.
   """
-  pass
- @staticmethod
- def Multiply(*__args):
-  """
+        pass
+
+    @staticmethod
+    def Multiply(*__args):
+        """
   Multiply(t: Single,vector: Vector3f) -> Vector3f
 
   
@@ -177,9 +190,10 @@ class Vector3f(object,IEquatable[Vector3f],IComparable[Vector3f],IComparable,IEp
 
    Returns: A new vector that is the original vector coordinatewise multiplied by t.
   """
-  pass
- def PerpendicularTo(self,other):
-  """
+        pass
+
+    def PerpendicularTo(self, other):
+        """
   PerpendicularTo(self: Vector3f,other: Vector3f) -> bool
 
   
@@ -194,9 +208,10 @@ class Vector3f(object,IEquatable[Vector3f],IComparable[Vector3f],IComparable,IEp
 
    Returns: true on success,false if input vector is zero or invalid.
   """
-  pass
- def Reverse(self):
-  """
+        pass
+
+    def Reverse(self):
+        """
   Reverse(self: Vector3f) -> bool
 
   
@@ -215,9 +230,10 @@ class Vector3f(object,IEquatable[Vector3f],IComparable[Vector3f],IComparable,IEp
 
    Returns: true on success or false if the vector is invalid.
   """
-  pass
- def Rotate(self,angleRadians,rotationAxis):
-  """
+        pass
+
+    def Rotate(self, angleRadians, rotationAxis):
+        """
   Rotate(self: Vector3f,angleRadians: float,rotationAxis: Vector3f) -> bool
 
   
@@ -232,9 +248,10 @@ class Vector3f(object,IEquatable[Vector3f],IComparable[Vector3f],IComparable,IEp
 
    Returns: true on success,false on failure.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: Vector3f) -> str
 
   
@@ -243,9 +260,10 @@ class Vector3f(object,IEquatable[Vector3f],IComparable[Vector3f],IComparable,IEp
 
    Returns: The vector representation in the form X,Y,Z.
   """
-  pass
- def Transform(self,transformation):
-  """
+        pass
+
+    def Transform(self, transformation):
+        """
   Transform(self: Vector3f,transformation: Transform)
 
    Transforms the vector in place.
@@ -260,9 +278,10 @@ class Vector3f(object,IEquatable[Vector3f],IComparable[Vector3f],IComparable,IEp
 
    transformation: Transformation matrix to apply.
   """
-  pass
- def Unitize(self):
-  """
+        pass
+
+    def Unitize(self):
+        """
   Unitize(self: Vector3f) -> bool
 
   
@@ -277,38 +296,48 @@ class Vector3f(object,IEquatable[Vector3f],IComparable[Vector3f],IComparable,IEp
 
    Returns: true on success or false on failure.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __mul__(self,*args):
-  """ x.__mul__(y) <==> x*y """
-  pass
- @staticmethod
- def __new__(self,x,y,z):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __mul__(self, *args):
+        """ x.__mul__(y) <==> x*y """
+        pass
+
+    @staticmethod
+    def __new__(self, x, y, z):
+        """
   __new__[Vector3f]() -> Vector3f
 
   
 
   __new__(cls: type,x: Single,y: Single,z: Single)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __radd__(self,*args):
-  """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __radd__(self, *args):
+        """
   __radd__(point: Point3f,vector: Vector3f) -> Point3f
 
   
@@ -323,14 +352,17 @@ class Vector3f(object,IEquatable[Vector3f],IComparable[Vector3f],IComparable,IEp
 
    Returns: A new point that results from the addition of point and vector.
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __rmul__(self,*args):
-  """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __rmul__(self, *args):
+        """
   __rmul__(t: Single,vector: Vector3f) -> Vector3f
 
   
@@ -345,11 +377,13 @@ class Vector3f(object,IEquatable[Vector3f],IComparable[Vector3f],IComparable,IEp
 
    Returns: A new vector that is the original vector coordinatewise multiplied by t.
   """
-  pass
- def __str__(self,*args):
-  pass
- Length=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Computes the length (or magnitude,or size) of this vector.
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Length = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Computes the length (or magnitude,or size) of this vector.
 
    This is an application of Pythagoras' theorem.
 
@@ -363,8 +397,8 @@ Get: Length(self: Vector3f) -> Single
 
 """
 
- X=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the X (first) component of this vector.
+    X = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the X (first) component of this vector.
 
 
 
@@ -376,8 +410,8 @@ Set: X(self: Vector3f)=value
 
 """
 
- Y=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Y (second) component of this vector.
+    Y = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Y (second) component of this vector.
 
 
 
@@ -389,8 +423,8 @@ Set: Y(self: Vector3f)=value
 
 """
 
- Z=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Z (third) component of this vector.
+    Z = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Z (third) component of this vector.
 
 
 
@@ -402,10 +436,8 @@ Set: Z(self: Vector3f)=value
 
 """
 
-
- Unset=None
- XAxis=None
- YAxis=None
- ZAxis=None
- Zero=None
-
+    Unset = None
+    XAxis = None
+    YAxis = None
+    ZAxis = None
+    Zero = None

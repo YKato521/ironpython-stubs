@@ -1,13 +1,14 @@
-class DataGridViewColumnCollection(BaseCollection,ICollection,IEnumerable,IList):
- """
+class DataGridViewColumnCollection(BaseCollection, ICollection, IEnumerable, IList):
+    """
  Represents a collection of System.Windows.Forms.DataGridViewColumn objects in a System.Windows.Forms.DataGridView control.
 
  
 
  DataGridViewColumnCollection(dataGridView: DataGridView)
  """
- def Add(self,*__args):
-  """
+
+    def Add(self, *__args):
+        """
   Add(self: DataGridViewColumnCollection,dataGridViewColumn: DataGridViewColumn) -> int
 
   
@@ -38,9 +39,10 @@ class DataGridViewColumnCollection(BaseCollection,ICollection,IEnumerable,IList)
 
    Returns: The index of the column.
   """
-  pass
- def AddRange(self,dataGridViewColumns):
-  """
+        pass
+
+    def AddRange(self, dataGridViewColumns):
+        """
   AddRange(self: DataGridViewColumnCollection,*dataGridViewColumns: Array[DataGridViewColumn])
 
    Adds a range of columns to the collection.
@@ -49,16 +51,18 @@ class DataGridViewColumnCollection(BaseCollection,ICollection,IEnumerable,IList)
 
    dataGridViewColumns: An array of System.Windows.Forms.DataGridViewColumn objects to add.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: DataGridViewColumnCollection)
 
    Clears the collection.
   """
-  pass
- def Contains(self,*__args):
-  """
+        pass
+
+    def Contains(self, *__args):
+        """
   Contains(self: DataGridViewColumnCollection,columnName: str) -> bool
 
   
@@ -83,9 +87,10 @@ class DataGridViewColumnCollection(BaseCollection,ICollection,IEnumerable,IList)
 
    Returns: true if the given column is in the collection; otherwise,false.
   """
-  pass
- def CopyTo(self,*__args):
-  """
+        pass
+
+    def CopyTo(self, *__args):
+        """
   CopyTo(self: DataGridViewColumnCollection,array: Array[DataGridViewColumn],index: int)
 
    Copies the items from the collection to the given array.
@@ -96,9 +101,10 @@ class DataGridViewColumnCollection(BaseCollection,ICollection,IEnumerable,IList)
 
    index: The index of the destination array at which to start copying.
   """
-  pass
- def GetColumnCount(self,includeFilter):
-  """
+        pass
+
+    def GetColumnCount(self, includeFilter):
+        """
   GetColumnCount(self: DataGridViewColumnCollection,includeFilter: DataGridViewElementStates) -> int
 
   
@@ -115,9 +121,10 @@ class DataGridViewColumnCollection(BaseCollection,ICollection,IEnumerable,IList)
 
    Returns: The number of columns that meet the filter requirements.
   """
-  pass
- def GetColumnsWidth(self,includeFilter):
-  """
+        pass
+
+    def GetColumnsWidth(self, includeFilter):
+        """
   GetColumnsWidth(self: DataGridViewColumnCollection,includeFilter: DataGridViewElementStates) -> int
 
   
@@ -140,9 +147,10 @@ class DataGridViewColumnCollection(BaseCollection,ICollection,IEnumerable,IList)
 
     requirements.
   """
-  pass
- def GetFirstColumn(self,includeFilter,excludeFilter=None):
-  """
+        pass
+
+    def GetFirstColumn(self, includeFilter, excludeFilter=None):
+        """
   GetFirstColumn(self: DataGridViewColumnCollection,includeFilter: DataGridViewElementStates,excludeFilter: DataGridViewElementStates) -> DataGridViewColumn
 
   
@@ -191,9 +199,10 @@ class DataGridViewColumnCollection(BaseCollection,ICollection,IEnumerable,IList)
 
     is found.
   """
-  pass
- def GetLastColumn(self,includeFilter,excludeFilter):
-  """
+        pass
+
+    def GetLastColumn(self, includeFilter, excludeFilter):
+        """
   GetLastColumn(self: DataGridViewColumnCollection,includeFilter: DataGridViewElementStates,excludeFilter: DataGridViewElementStates) -> DataGridViewColumn
 
   
@@ -218,9 +227,10 @@ class DataGridViewColumnCollection(BaseCollection,ICollection,IEnumerable,IList)
 
     no column is found.
   """
-  pass
- def GetNextColumn(self,dataGridViewColumnStart,includeFilter,excludeFilter):
-  """
+        pass
+
+    def GetNextColumn(self, dataGridViewColumnStart, includeFilter, excludeFilter):
+        """
   GetNextColumn(self: DataGridViewColumnCollection,dataGridViewColumnStart: DataGridViewColumn,includeFilter: DataGridViewElementStates,excludeFilter: DataGridViewElementStates) -> DataGridViewColumn
 
   
@@ -249,9 +259,10 @@ class DataGridViewColumnCollection(BaseCollection,ICollection,IEnumerable,IList)
 
    Returns: The next column that meets the given filter requirements,or null if no column is found.
   """
-  pass
- def GetPreviousColumn(self,dataGridViewColumnStart,includeFilter,excludeFilter):
-  """
+        pass
+
+    def GetPreviousColumn(self, dataGridViewColumnStart, includeFilter, excludeFilter):
+        """
   GetPreviousColumn(self: DataGridViewColumnCollection,dataGridViewColumnStart: DataGridViewColumn,includeFilter: DataGridViewElementStates,excludeFilter: DataGridViewElementStates) -> DataGridViewColumn
 
   
@@ -280,9 +291,10 @@ class DataGridViewColumnCollection(BaseCollection,ICollection,IEnumerable,IList)
 
    Returns: The previous column that meets the given filter requirements,or null if no column is found.
   """
-  pass
- def IndexOf(self,dataGridViewColumn):
-  """
+        pass
+
+    def IndexOf(self, dataGridViewColumn):
+        """
   IndexOf(self: DataGridViewColumnCollection,dataGridViewColumn: DataGridViewColumn) -> int
 
   
@@ -295,9 +307,10 @@ class DataGridViewColumnCollection(BaseCollection,ICollection,IEnumerable,IList)
 
    Returns: The index of the given System.Windows.Forms.DataGridViewColumn.
   """
-  pass
- def Insert(self,columnIndex,dataGridViewColumn):
-  """
+        pass
+
+    def Insert(self, columnIndex, dataGridViewColumn):
+        """
   Insert(self: DataGridViewColumnCollection,columnIndex: int,dataGridViewColumn: DataGridViewColumn)
 
    Inserts a column at the given index in the collection.
@@ -308,9 +321,10 @@ class DataGridViewColumnCollection(BaseCollection,ICollection,IEnumerable,IList)
 
    dataGridViewColumn: The System.Windows.Forms.DataGridViewColumn to insert.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -341,9 +355,10 @@ class DataGridViewColumnCollection(BaseCollection,ICollection,IEnumerable,IList)
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def OnCollectionChanged(self,*args):
-  """
+        pass
+
+    def OnCollectionChanged(self, *args):
+        """
   OnCollectionChanged(self: DataGridViewColumnCollection,e: CollectionChangeEventArgs)
 
    Raises the System.Windows.Forms.DataGridViewColumnCollection.CollectionChanged event.
@@ -352,9 +367,10 @@ class DataGridViewColumnCollection(BaseCollection,ICollection,IEnumerable,IList)
 
    e: A System.ComponentModel.CollectionChangeEventArgs that contains the event data.
   """
-  pass
- def Remove(self,*__args):
-  """
+        pass
+
+    def Remove(self, *__args):
+        """
   Remove(self: DataGridViewColumnCollection,columnName: str)
 
    Removes the column with the specified name from the collection.
@@ -371,9 +387,10 @@ class DataGridViewColumnCollection(BaseCollection,ICollection,IEnumerable,IList)
 
    dataGridViewColumn: The column to delete.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: DataGridViewColumnCollection,index: int)
 
    Removes the column at the given index in the collection.
@@ -382,12 +399,14 @@ class DataGridViewColumnCollection(BaseCollection,ICollection,IEnumerable,IList)
 
    index: The index of the column to delete.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IList,value: object) -> bool
 
   
@@ -400,32 +419,38 @@ class DataGridViewColumnCollection(BaseCollection,ICollection,IEnumerable,IList)
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,dataGridView):
-  """ __new__(cls: type,dataGridView: DataGridView) """
-  pass
- DataGridView=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Forms.DataGridView upon which the collection performs column-related operations.
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, dataGridView):
+        """ __new__(cls: type,dataGridView: DataGridView) """
+        pass
+
+    DataGridView = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Windows.Forms.DataGridView upon which the collection performs column-related operations.
 
 
 
 """
 
- List=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    List = property(lambda self: object(), lambda self, v: None, lambda self: None)
 
-
- CollectionChanged=None
-
+    CollectionChanged = None

@@ -1,8 +1,9 @@
 class ButtonRenderer(object):
- """ Provides methods used to render a button control with or without visual styles. This class cannot be inherited. """
- @staticmethod
- def DrawButton(g,bounds,*__args):
-  """
+    """ Provides methods used to render a button control with or without visual styles. This class cannot be inherited. """
+
+    @staticmethod
+    def DrawButton(g, bounds, *__args):
+        """
   DrawButton(g: Graphics,bounds: Rectangle,image: Image,imageBounds: Rectangle,focused: bool,state: PushButtonState)
 
    Draws a button control in the specified state and bounds,with the specified image,and with an 
@@ -177,10 +178,11 @@ class ButtonRenderer(object):
 
     state of the button.
   """
-  pass
- @staticmethod
- def DrawParentBackground(g,bounds,childControl):
-  """
+        pass
+
+    @staticmethod
+    def DrawParentBackground(g, bounds, childControl):
+        """
   DrawParentBackground(g: Graphics,bounds: Rectangle,childControl: Control)
 
    Draws the background of a control's parent in the specified area.
@@ -195,10 +197,11 @@ class ButtonRenderer(object):
 
    childControl: The control whose parent's background will be drawn.
   """
-  pass
- @staticmethod
- def IsBackgroundPartiallyTransparent(state):
-  """
+        pass
+
+    @staticmethod
+    def IsBackgroundPartiallyTransparent(state):
+        """
   IsBackgroundPartiallyTransparent(state: PushButtonState) -> bool
 
   
@@ -217,6 +220,6 @@ class ButtonRenderer(object):
 
     false.
   """
-  pass
- RenderMatchingApplicationState=True
+        pass
 
+    RenderMatchingApplicationState = True

@@ -1,13 +1,21 @@
-class QuaternionAnimationUsingKeyFrames(QuaternionAnimationBase,ISealable,IAnimatable,IResource,IKeyFrameAnimation,IAddChild):
- """
+class QuaternionAnimationUsingKeyFrames(
+    QuaternionAnimationBase,
+    ISealable,
+    IAnimatable,
+    IResource,
+    IKeyFrameAnimation,
+    IAddChild,
+):
+    """
  Animates the value of a System.Windows.Media.Media3D.Quaternion property along a set of System.Windows.Media.Animation.QuaternionAnimationUsingKeyFrames.KeyFrames over a specified System.Windows.Media.Animation.Timeline.Duration.
 
  
 
  QuaternionAnimationUsingKeyFrames()
  """
- def AddChild(self,*args):
-  """
+
+    def AddChild(self, *args):
+        """
   AddChild(self: QuaternionAnimationUsingKeyFrames,child: object)
 
    Adds a child System.Windows.Media.Animation.QuaternionKeyFrame to this 
@@ -22,9 +30,10 @@ class QuaternionAnimationUsingKeyFrames(QuaternionAnimationBase,ISealable,IAnima
 
     System.Windows.Media.Animation.QuaternionAnimationUsingKeyFrames.
   """
-  pass
- def AddText(self,*args):
-  """
+        pass
+
+    def AddText(self, *args):
+        """
   AddText(self: QuaternionAnimationUsingKeyFrames,childText: str)
 
    Adds a text string as a child of this 
@@ -37,9 +46,10 @@ class QuaternionAnimationUsingKeyFrames(QuaternionAnimationBase,ISealable,IAnima
 
    childText: The text added to the System.Windows.Media.Animation.QuaternionAnimationUsingKeyFrames.
   """
-  pass
- def AllocateClock(self,*args):
-  """
+        pass
+
+    def AllocateClock(self, *args):
+        """
   AllocateClock(self: AnimationTimeline) -> Clock
 
   
@@ -52,9 +62,10 @@ class QuaternionAnimationUsingKeyFrames(QuaternionAnimationBase,ISealable,IAnima
 
    Returns: A clock for this System.Windows.Media.Animation.AnimationTimeline.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: QuaternionAnimationUsingKeyFrames) -> QuaternionAnimationUsingKeyFrames
 
   
@@ -73,9 +84,10 @@ class QuaternionAnimationUsingKeyFrames(QuaternionAnimationBase,ISealable,IAnima
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCore(self,*args):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """
   CloneCore(self: QuaternionAnimationUsingKeyFrames,sourceFreezable: Freezable)
 
    Makes this instance a deep copy of the specified 
@@ -92,9 +104,10 @@ class QuaternionAnimationUsingKeyFrames(QuaternionAnimationBase,ISealable,IAnima
 
    sourceFreezable: The System.Windows.Media.Animation.QuaternionAnimationUsingKeyFrames to clone.
   """
-  pass
- def CloneCurrentValue(self):
-  """
+        pass
+
+    def CloneCurrentValue(self):
+        """
   CloneCurrentValue(self: QuaternionAnimationUsingKeyFrames) -> QuaternionAnimationUsingKeyFrames
 
   
@@ -113,9 +126,10 @@ class QuaternionAnimationUsingKeyFrames(QuaternionAnimationBase,ISealable,IAnima
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """
   CloneCurrentValueCore(self: QuaternionAnimationUsingKeyFrames,sourceFreezable: Freezable)
 
    Makes this instance a clone of the specified 
@@ -128,9 +142,10 @@ class QuaternionAnimationUsingKeyFrames(QuaternionAnimationBase,ISealable,IAnima
 
    sourceFreezable: The System.Windows.Media.Animation.QuaternionAnimationUsingKeyFrames object to clone.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -139,9 +154,10 @@ class QuaternionAnimationUsingKeyFrames(QuaternionAnimationBase,ISealable,IAnima
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """
   CreateInstanceCore(self: QuaternionAnimationUsingKeyFrames) -> Freezable
 
   
@@ -150,9 +166,10 @@ class QuaternionAnimationUsingKeyFrames(QuaternionAnimationBase,ISealable,IAnima
 
    Returns: A new instance of System.Windows.Media.Animation.QuaternionAnimationUsingKeyFrames.
   """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: QuaternionAnimationUsingKeyFrames,isChecking: bool) -> bool
 
   
@@ -175,9 +192,10 @@ class QuaternionAnimationUsingKeyFrames(QuaternionAnimationBase,ISealable,IAnima
 
     having begun to change the frozen status of this object.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """
   GetAsFrozenCore(self: QuaternionAnimationUsingKeyFrames,source: Freezable)
 
    Makes this instance a clone of the specified 
@@ -190,9 +208,10 @@ class QuaternionAnimationUsingKeyFrames(QuaternionAnimationBase,ISealable,IAnima
 
    source: The System.Windows.Media.Animation.QuaternionAnimationUsingKeyFrames object to clone.
   """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """
   GetCurrentValueAsFrozenCore(self: QuaternionAnimationUsingKeyFrames,source: Freezable)
 
    Makes this instance a frozen clone of the specified 
@@ -207,9 +226,10 @@ class QuaternionAnimationUsingKeyFrames(QuaternionAnimationBase,ISealable,IAnima
 
    source: The System.Windows.Media.Animation.QuaternionAnimationUsingKeyFrames to copy and freeze.
   """
-  pass
- def GetCurrentValueCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueCore(self, *args):
+        """
   GetCurrentValueCore(self: QuaternionAnimationUsingKeyFrames,defaultOriginValue: Quaternion,defaultDestinationValue: Quaternion,animationClock: AnimationClock) -> Quaternion
 
   
@@ -244,9 +264,10 @@ class QuaternionAnimationUsingKeyFrames(QuaternionAnimationBase,ISealable,IAnima
 
    Returns: The calculated value of the property,as determined by the current instance.
   """
-  pass
- def GetNaturalDuration(self,*args):
-  """
+        pass
+
+    def GetNaturalDuration(self, *args):
+        """
   GetNaturalDuration(self: Timeline,clock: Clock) -> Duration
 
   
@@ -265,9 +286,10 @@ class QuaternionAnimationUsingKeyFrames(QuaternionAnimationBase,ISealable,IAnima
 
     System.Windows.Duration.Automatic if the natural duration is unknown.
   """
-  pass
- def GetNaturalDurationCore(self,*args):
-  """
+        pass
+
+    def GetNaturalDurationCore(self, *args):
+        """
   GetNaturalDurationCore(self: QuaternionAnimationUsingKeyFrames,clock: Clock) -> Duration
 
   
@@ -288,18 +310,20 @@ class QuaternionAnimationUsingKeyFrames(QuaternionAnimationBase,ISealable,IAnima
 
     one second.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: QuaternionAnimationUsingKeyFrames)
 
    Called when the current System.Windows.Media.Animation.QuaternionAnimationUsingKeyFrames object 
 
     is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -330,9 +354,10 @@ class QuaternionAnimationUsingKeyFrames(QuaternionAnimationBase,ISealable,IAnima
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -349,9 +374,10 @@ class QuaternionAnimationUsingKeyFrames(QuaternionAnimationBase,ISealable,IAnima
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -360,9 +386,10 @@ class QuaternionAnimationUsingKeyFrames(QuaternionAnimationBase,ISealable,IAnima
 
     members that are not dependency properties.
   """
-  pass
- def ShouldSerializeKeyFrames(self):
-  """
+        pass
+
+    def ShouldSerializeKeyFrames(self):
+        """
   ShouldSerializeKeyFrames(self: QuaternionAnimationUsingKeyFrames) -> bool
 
   
@@ -379,9 +406,10 @@ class QuaternionAnimationUsingKeyFrames(QuaternionAnimationBase,ISealable,IAnima
 
    Returns: true if the property value should be serialized; otherwise,false.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -398,9 +426,10 @@ class QuaternionAnimationUsingKeyFrames(QuaternionAnimationBase,ISealable,IAnima
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -411,9 +440,10 @@ class QuaternionAnimationUsingKeyFrames(QuaternionAnimationBase,ISealable,IAnima
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -422,12 +452,16 @@ class QuaternionAnimationUsingKeyFrames(QuaternionAnimationBase,ISealable,IAnima
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- IsAdditive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that specifies whether the animation's output value is added to the base value of the property being animated.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    IsAdditive = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that specifies whether the animation's output value is added to the base value of the property being animated.
 
 
 
@@ -439,8 +473,10 @@ Set: IsAdditive(self: QuaternionAnimationUsingKeyFrames)=value
 
 """
 
- IsCumulative=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that specifies whether the animation's value accumulates when it repeats.
+    IsCumulative = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that specifies whether the animation's value accumulates when it repeats.
 
 
 
@@ -452,8 +488,8 @@ Set: IsCumulative(self: QuaternionAnimationUsingKeyFrames)=value
 
 """
 
- KeyFrames=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the collection of System.Windows.Media.Animation.QuaternionKeyFrame objects that define the animation.
+    KeyFrames = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the collection of System.Windows.Media.Animation.QuaternionKeyFrame objects that define the animation.
 
 
 
@@ -464,5 +500,3 @@ Get: KeyFrames(self: QuaternionAnimationUsingKeyFrames) -> QuaternionKeyFrameCol
 Set: KeyFrames(self: QuaternionAnimationUsingKeyFrames)=value
 
 """
-
-

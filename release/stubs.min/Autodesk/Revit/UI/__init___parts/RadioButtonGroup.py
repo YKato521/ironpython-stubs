@@ -1,7 +1,8 @@
 class RadioButtonGroup(RibbonItem):
- """ Represents a group of related buttons in the Ribbon. """
- def AddItem(self,buttonData):
-  """
+    """ Represents a group of related buttons in the Ribbon. """
+
+    def AddItem(self, buttonData):
+        """
   AddItem(self: RadioButtonGroup,buttonData: ToggleButtonData) -> ToggleButton
 
   
@@ -14,21 +15,24 @@ class RadioButtonGroup(RibbonItem):
 
    Returns: The newly added ToggleButton.
   """
-  pass
- def AddItems(self,buttonData):
-  """ AddItems(self: RadioButtonGroup,buttonData: IList[ToggleButtonData]) -> IList[ToggleButton] """
-  pass
- def GetItems(self):
-  """
+        pass
+
+    def AddItems(self, buttonData):
+        """ AddItems(self: RadioButtonGroup,buttonData: IList[ToggleButtonData]) -> IList[ToggleButton] """
+        pass
+
+    def GetItems(self):
+        """
   GetItems(self: RadioButtonGroup) -> IList[ToggleButton]
 
   
 
    Gets the collection of ToggleButtons assigned to the RadioButtonGroup.
   """
-  pass
- Current=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the current checked ToggleButton of the RadioButtonGroup.
+        pass
+
+    Current = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the current checked ToggleButton of the RadioButtonGroup.
 
 
 
@@ -40,6 +44,4 @@ Set: Current(self: RadioButtonGroup)=value
 
 """
 
-
- m_ItemType=None
-
+    m_ItemType = None

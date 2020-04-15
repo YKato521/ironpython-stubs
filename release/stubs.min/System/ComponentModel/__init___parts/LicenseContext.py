@@ -1,13 +1,14 @@
-class LicenseContext(object,IServiceProvider):
- """
+class LicenseContext(object, IServiceProvider):
+    """
  Specifies when you can use a licensed object and provides a way of obtaining additional services needed to support licenses running within its domain.
 
  
 
  LicenseContext()
  """
- def GetSavedLicenseKey(self,type,resourceAssembly):
-  """
+
+    def GetSavedLicenseKey(self, type, resourceAssembly):
+        """
   GetSavedLicenseKey(self: LicenseContext,type: Type,resourceAssembly: Assembly) -> str
 
   
@@ -28,9 +29,10 @@ class LicenseContext(object,IServiceProvider):
 
     unless you override it.
   """
-  pass
- def GetService(self,type):
-  """
+        pass
+
+    def GetService(self, type):
+        """
   GetService(self: LicenseContext,type: Type) -> object
 
   
@@ -43,9 +45,10 @@ class LicenseContext(object,IServiceProvider):
 
    Returns: An instance of the service,or null if the service cannot be found.
   """
-  pass
- def SetSavedLicenseKey(self,type,key):
-  """
+        pass
+
+    def SetSavedLicenseKey(self, type, key):
+        """
   SetSavedLicenseKey(self: LicenseContext,type: Type,key: str)
 
    When overridden in a derived class,sets a license key for the specified type.
@@ -56,15 +59,18 @@ class LicenseContext(object,IServiceProvider):
 
    key: The System.ComponentModel.License.LicenseKey to save for the type of component.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- UsageMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets a value that specifies when you can use a license.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    UsageMode = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """When overridden in a derived class,gets a value that specifies when you can use a license.
 
 
 
@@ -73,5 +79,3 @@ Get: UsageMode(self: LicenseContext) -> LicenseUsageMode
 
 
 """
-
-

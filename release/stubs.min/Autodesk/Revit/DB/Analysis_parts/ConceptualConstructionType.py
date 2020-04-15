@@ -1,17 +1,19 @@
-class ConceptualConstructionType(ElementType,IDisposable):
- """
+class ConceptualConstructionType(ElementType, IDisposable):
+    """
  This element is used to describe the conceptual physical,construction,and energy properties in a manner
 
     that can be understood by both the Revit BIM model and Green Building Studio/Green Building XML.
 
     For serialization
  """
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- @staticmethod
- def GetAllConceptualConstructionsForCategory(ccda,massSubCategoryId):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    @staticmethod
+    def GetAllConceptualConstructionsForCategory(ccda, massSubCategoryId):
+        """
   GetAllConceptualConstructionsForCategory(ccda: Document,massSubCategoryId: ElementId) -> ICollection[ElementId]
 
   
@@ -28,13 +30,15 @@ class ConceptualConstructionType(ElementType,IDisposable):
 
     appropriate for the subcategory.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- @staticmethod
- def GetFloorOrSlabConstructionType(ccda,typeEnum):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    @staticmethod
+    def GetFloorOrSlabConstructionType(ccda, typeEnum):
+        """
   GetFloorOrSlabConstructionType(ccda: Document,typeEnum: ConceptualConstructionFloorSlabType) -> ElementId
 
   
@@ -57,9 +61,10 @@ class ConceptualConstructionType(ElementType,IDisposable):
 
    Returns: Returns ElementId of a ConceptualConstructionType.
   """
-  pass
- def GetGBSId(self,massSurfaceSubCategoryId):
-  """
+        pass
+
+    def GetGBSId(self, massSurfaceSubCategoryId):
+        """
   GetGBSId(self: ConceptualConstructionType,massSurfaceSubCategoryId: ElementId) -> int
 
   
@@ -72,10 +77,11 @@ class ConceptualConstructionType(ElementType,IDisposable):
 
    Returns: Returns the integer id used to represent the ConceptualConstructionType.
   """
-  pass
- @staticmethod
- def GetOpeningConstructionType(ccda,typeEnum):
-  """
+        pass
+
+    @staticmethod
+    def GetOpeningConstructionType(ccda, typeEnum):
+        """
   GetOpeningConstructionType(ccda: Document,typeEnum: ConceptualConstructionOpeningType) -> ElementId
 
   
@@ -94,10 +100,11 @@ class ConceptualConstructionType(ElementType,IDisposable):
 
    Returns: Returns ElementId of a ConceptualConstructionType.
   """
-  pass
- @staticmethod
- def GetRoofConstructionType(ccda,typeEnum):
-  """
+        pass
+
+    @staticmethod
+    def GetRoofConstructionType(ccda, typeEnum):
+        """
   GetRoofConstructionType(ccda: Document,typeEnum: ConceptualConstructionRoofType) -> ElementId
 
   
@@ -112,10 +119,11 @@ class ConceptualConstructionType(ElementType,IDisposable):
 
    Returns: Returns ElementId of a ConceptualConstructionType.
   """
-  pass
- @staticmethod
- def GetShadeConstructionType(ccda,typeEnum):
-  """
+        pass
+
+    @staticmethod
+    def GetShadeConstructionType(ccda, typeEnum):
+        """
   GetShadeConstructionType(ccda: Document,typeEnum: ConceptualConstructionShadeType) -> ElementId
 
   
@@ -130,10 +138,11 @@ class ConceptualConstructionType(ElementType,IDisposable):
 
    Returns: Returns ElementId of a ConceptualConstructionType.
   """
-  pass
- @staticmethod
- def GetWallConstructionType(ccda,typeEnum):
-  """
+        pass
+
+    @staticmethod
+    def GetWallConstructionType(ccda, typeEnum):
+        """
   GetWallConstructionType(ccda: Document,typeEnum: ConceptualConstructionWallType) -> ElementId
 
   
@@ -148,10 +157,11 @@ class ConceptualConstructionType(ElementType,IDisposable):
 
    Returns: Returns ElementId of a ConceptualConstructionType.
   """
-  pass
- @staticmethod
- def GetWindowOrSkylightConstructionType(ccda,typeEnum):
-  """
+        pass
+
+    @staticmethod
+    def GetWindowOrSkylightConstructionType(ccda, typeEnum):
+        """
   GetWindowOrSkylightConstructionType(ccda: Document,typeEnum: ConceptualConstructionWindowSkylightType) -> ElementId
 
   
@@ -174,10 +184,11 @@ class ConceptualConstructionType(ElementType,IDisposable):
 
    Returns: Returns ElementId of a ConceptualConstructionType.
   """
-  pass
- @staticmethod
- def IsValidConceptualConstructionId(ccda,constructionTypeId):
-  """
+        pass
+
+    @staticmethod
+    def IsValidConceptualConstructionId(ccda, constructionTypeId):
+        """
   IsValidConceptualConstructionId(ccda: Document,constructionTypeId: ElementId) -> bool
 
   
@@ -192,10 +203,13 @@ class ConceptualConstructionType(ElementType,IDisposable):
 
    Returns: Returns true if is an id of a ConceptualConstructionType,false otherwise.
   """
-  pass
- @staticmethod
- def IsValidConceptualConstructionIdForCategory(ccda,constructionTypeId,massSubcategoryId):
-  """
+        pass
+
+    @staticmethod
+    def IsValidConceptualConstructionIdForCategory(
+        ccda, constructionTypeId, massSubcategoryId
+    ):
+        """
   IsValidConceptualConstructionIdForCategory(ccda: Document,constructionTypeId: ElementId,massSubcategoryId: ElementId) -> bool
 
   
@@ -216,10 +230,11 @@ class ConceptualConstructionType(ElementType,IDisposable):
 
    Returns: Returns true if valid,false otherwise
   """
-  pass
- @staticmethod
- def IsValidSubcategoryForMassSurfaceDatas(massSubCategoryId):
-  """
+        pass
+
+    @staticmethod
+    def IsValidSubcategoryForMassSurfaceDatas(massSubCategoryId):
+        """
   IsValidSubcategoryForMassSurfaceDatas(massSubCategoryId: ElementId) -> bool
 
   
@@ -246,9 +261,10 @@ class ConceptualConstructionType(ElementType,IDisposable):
 
    Returns: True if the mass sub-category falls within the list,false otherwise.
   """
-  pass
- def IsValidSurfaceSubcategoryForConstruction(self,massSurfaceSubcategoryId):
-  """
+        pass
+
+    def IsValidSurfaceSubcategoryForConstruction(self, massSurfaceSubcategoryId):
+        """
   IsValidSurfaceSubcategoryForConstruction(self: ConceptualConstructionType,massSurfaceSubcategoryId: ElementId) -> bool
 
   
@@ -265,24 +281,32 @@ class ConceptualConstructionType(ElementType,IDisposable):
 
    Returns: Returns true if appropriate for the input subcategory,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- MassSurfaceSubCategoryId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The surface type subcategory element id associated with the ConceptualConstructionType.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    MassSurfaceSubCategoryId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The surface type subcategory element id associated with the ConceptualConstructionType.
 
 
 
@@ -292,8 +316,10 @@ Get: MassSurfaceSubCategoryId(self: ConceptualConstructionType) -> ElementId
 
 """
 
- MaterialId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Material used for visualization of this construction.
+    MaterialId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Material used for visualization of this construction.
 
 
 
@@ -304,5 +330,3 @@ Get: MaterialId(self: ConceptualConstructionType) -> ElementId
 Set: MaterialId(self: ConceptualConstructionType)=value
 
 """
-
-

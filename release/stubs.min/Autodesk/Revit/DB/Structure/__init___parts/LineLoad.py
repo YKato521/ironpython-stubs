@@ -1,8 +1,9 @@
-class LineLoad(LoadBase,IDisposable):
- """ An object that represents a force/moment applied in a linear manner. """
- @staticmethod
- def Create(aDoc,*__args):
-  """
+class LineLoad(LoadBase, IDisposable):
+    """ An object that represents a force/moment applied in a linear manner. """
+
+    @staticmethod
+    def Create(aDoc, *__args):
+        """
   Create(aDoc: Document,host: AnalyticalModelStick,forceVector1: XYZ,momentVector1: XYZ,symbol: LineLoadType) -> LineLoad
 
   
@@ -85,30 +86,36 @@ class LineLoad(LoadBase,IDisposable):
 
    Returns: If successful,returns the newly created LineLoad,ll otherwise.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetCurve(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetCurve(self):
+        """
   GetCurve(self: LineLoad) -> Curve
 
   
 
    Returns curve that define geometry of the line load.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetPoints(self,startPoint,endPoint):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetPoints(self, startPoint, endPoint):
+        """
   SetPoints(self: LineLoad,startPoint: XYZ,endPoint: XYZ) -> bool
 
   
@@ -123,18 +130,22 @@ class LineLoad(LoadBase,IDisposable):
 
    Returns: Returns true if successful,false otherwise.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- EndPoint=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the three dimensional location of the end point for the line load.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    EndPoint = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns the three dimensional location of the end point for the line load.
 
 
 
@@ -144,8 +155,10 @@ Get: EndPoint(self: LineLoad) -> XYZ
 
 """
 
- ForceVector1=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The force vector applied to the start point of the line load,oriented according to OrientTo setting.
+    ForceVector1 = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The force vector applied to the start point of the line load,oriented according to OrientTo setting.
 
 
 
@@ -157,8 +170,10 @@ Set: ForceVector1(self: LineLoad)=value
 
 """
 
- ForceVector2=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The force vector applied to the end point of the line load,oriented according to OrientTo setting.
+    ForceVector2 = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The force vector applied to the end point of the line load,oriented according to OrientTo setting.
 
 
 
@@ -170,8 +185,10 @@ Set: ForceVector2(self: LineLoad)=value
 
 """
 
- IsProjected=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the load is projected.
+    IsProjected = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the load is projected.
 
 
 
@@ -183,8 +200,8 @@ Set: IsProjected(self: LineLoad)=value
 
 """
 
- IsUniform=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the load is uniform.
+    IsUniform = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Indicates if the load is uniform.
 
 
 
@@ -194,8 +211,10 @@ Get: IsUniform(self: LineLoad) -> bool
 
 """
 
- MomentVector1=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The moment vector applied to the start point of the line load,oriented according to OrientTo setting.
+    MomentVector1 = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The moment vector applied to the start point of the line load,oriented according to OrientTo setting.
 
 
 
@@ -207,8 +226,10 @@ Set: MomentVector1(self: LineLoad)=value
 
 """
 
- MomentVector2=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The moment vector applied to the end point of the line load,oriented according to OrientTo setting.
+    MomentVector2 = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The moment vector applied to the end point of the line load,oriented according to OrientTo setting.
 
 
 
@@ -220,8 +241,10 @@ Set: MomentVector2(self: LineLoad)=value
 
 """
 
- StartPoint=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the three dimensional location of the start point for the line load.
+    StartPoint = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the three dimensional location of the start point for the line load.
 
 
 
@@ -230,5 +253,3 @@ Get: StartPoint(self: LineLoad) -> XYZ
 
 
 """
-
-

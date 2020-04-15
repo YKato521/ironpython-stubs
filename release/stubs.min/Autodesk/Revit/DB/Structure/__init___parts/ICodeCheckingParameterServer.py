@@ -1,7 +1,8 @@
 class ICodeCheckingParameterServer(IExternalServer):
- """ Interface for the code checking parameter server to implement. """
- def PerformCodeChecking(self,data):
-  """
+    """ Interface for the code checking parameter server to implement. """
+
+    def PerformCodeChecking(self, data):
+        """
   PerformCodeChecking(self: ICodeCheckingParameterServer,data: CodeCheckingParameterServiceData) -> bool
 
   
@@ -18,7 +19,8 @@ class ICodeCheckingParameterServer(IExternalServer):
 
    Returns: Indicates whether the code checking parameter server is executed successfully.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

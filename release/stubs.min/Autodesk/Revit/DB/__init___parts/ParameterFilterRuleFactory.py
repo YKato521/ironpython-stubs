@@ -1,8 +1,9 @@
-class ParameterFilterRuleFactory(object,IDisposable):
- """ Contains functions that create appropriate FilterRule objects based on the parameters given. """
- @staticmethod
- def CreateBeginsWithRule(parameter,value,caseSensitive):
-  """
+class ParameterFilterRuleFactory(object, IDisposable):
+    """ Contains functions that create appropriate FilterRule objects based on the parameters given. """
+
+    @staticmethod
+    def CreateBeginsWithRule(parameter, value, caseSensitive):
+        """
   CreateBeginsWithRule(parameter: ElementId,value: str,caseSensitive: bool) -> FilterRule
 
   
@@ -31,10 +32,11 @@ class ParameterFilterRuleFactory(object,IDisposable):
 
    caseSensitive: If true,the string comparison will be case-sensitive.
   """
-  pass
- @staticmethod
- def CreateContainsRule(parameter,value,caseSensitive):
-  """
+        pass
+
+    @staticmethod
+    def CreateContainsRule(parameter, value, caseSensitive):
+        """
   CreateContainsRule(parameter: ElementId,value: str,caseSensitive: bool) -> FilterRule
 
   
@@ -63,10 +65,11 @@ class ParameterFilterRuleFactory(object,IDisposable):
 
    caseSensitive: If true,the string comparison will be case-sensitive.
   """
-  pass
- @staticmethod
- def CreateEndsWithRule(parameter,value,caseSensitive):
-  """
+        pass
+
+    @staticmethod
+    def CreateEndsWithRule(parameter, value, caseSensitive):
+        """
   CreateEndsWithRule(parameter: ElementId,value: str,caseSensitive: bool) -> FilterRule
 
   
@@ -95,10 +98,11 @@ class ParameterFilterRuleFactory(object,IDisposable):
 
    caseSensitive: If true,the string comparison will be case-sensitive.
   """
-  pass
- @staticmethod
- def CreateEqualsRule(parameter,value,*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateEqualsRule(parameter, value, *__args):
+        """
   CreateEqualsRule(parameter: ElementId,value: float,epsilon: float) -> FilterRule
 
   
@@ -195,10 +199,11 @@ class ParameterFilterRuleFactory(object,IDisposable):
 
    value: The user-supplied value against which values from the document will be compared.
   """
-  pass
- @staticmethod
- def CreateGreaterOrEqualRule(parameter,value,*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateGreaterOrEqualRule(parameter, value, *__args):
+        """
   CreateGreaterOrEqualRule(parameter: ElementId,value: float,epsilon: float) -> FilterRule
 
   
@@ -295,10 +300,11 @@ class ParameterFilterRuleFactory(object,IDisposable):
 
    value: The user-supplied value against which values from the document will be compared.
   """
-  pass
- @staticmethod
- def CreateGreaterRule(parameter,value,*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateGreaterRule(parameter, value, *__args):
+        """
   CreateGreaterRule(parameter: ElementId,value: float,epsilon: float) -> FilterRule
 
   
@@ -395,10 +401,11 @@ class ParameterFilterRuleFactory(object,IDisposable):
 
    value: The user-supplied value against which values from the document will be compared.
   """
-  pass
- @staticmethod
- def CreateIsAssociatedWithGlobalParameterRule(parameter,value):
-  """
+        pass
+
+    @staticmethod
+    def CreateIsAssociatedWithGlobalParameterRule(parameter, value):
+        """
   CreateIsAssociatedWithGlobalParameterRule(parameter: ElementId,value: ElementId) -> FilterRule
 
   
@@ -421,10 +428,11 @@ class ParameterFilterRuleFactory(object,IDisposable):
 
    value: The global parameter used to test the association.
   """
-  pass
- @staticmethod
- def CreateIsNotAssociatedWithGlobalParameterRule(parameter,value):
-  """
+        pass
+
+    @staticmethod
+    def CreateIsNotAssociatedWithGlobalParameterRule(parameter, value):
+        """
   CreateIsNotAssociatedWithGlobalParameterRule(parameter: ElementId,value: ElementId) -> FilterRule
 
   
@@ -447,10 +455,11 @@ class ParameterFilterRuleFactory(object,IDisposable):
 
    value: The global parameter used to test the association.
   """
-  pass
- @staticmethod
- def CreateLessOrEqualRule(parameter,value,*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateLessOrEqualRule(parameter, value, *__args):
+        """
   CreateLessOrEqualRule(parameter: ElementId,value: float,epsilon: float) -> FilterRule
 
   
@@ -547,10 +556,11 @@ class ParameterFilterRuleFactory(object,IDisposable):
 
    value: The user-supplied value against which values from the document will be compared.
   """
-  pass
- @staticmethod
- def CreateLessRule(parameter,value,*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateLessRule(parameter, value, *__args):
+        """
   CreateLessRule(parameter: ElementId,value: float,epsilon: float) -> FilterRule
 
   
@@ -647,10 +657,11 @@ class ParameterFilterRuleFactory(object,IDisposable):
 
    value: The user-supplied value against which values from the document will be compared.
   """
-  pass
- @staticmethod
- def CreateNotBeginsWithRule(parameter,value,caseSensitive):
-  """
+        pass
+
+    @staticmethod
+    def CreateNotBeginsWithRule(parameter, value, caseSensitive):
+        """
   CreateNotBeginsWithRule(parameter: ElementId,value: str,caseSensitive: bool) -> FilterRule
 
   
@@ -679,10 +690,11 @@ class ParameterFilterRuleFactory(object,IDisposable):
 
    caseSensitive: If true,the string comparison will be case-sensitive.
   """
-  pass
- @staticmethod
- def CreateNotContainsRule(parameter,value,caseSensitive):
-  """
+        pass
+
+    @staticmethod
+    def CreateNotContainsRule(parameter, value, caseSensitive):
+        """
   CreateNotContainsRule(parameter: ElementId,value: str,caseSensitive: bool) -> FilterRule
 
   
@@ -711,10 +723,11 @@ class ParameterFilterRuleFactory(object,IDisposable):
 
    caseSensitive: If true,the string comparison will be case-sensitive.
   """
-  pass
- @staticmethod
- def CreateNotEndsWithRule(parameter,value,caseSensitive):
-  """
+        pass
+
+    @staticmethod
+    def CreateNotEndsWithRule(parameter, value, caseSensitive):
+        """
   CreateNotEndsWithRule(parameter: ElementId,value: str,caseSensitive: bool) -> FilterRule
 
   
@@ -743,10 +756,11 @@ class ParameterFilterRuleFactory(object,IDisposable):
 
    caseSensitive: If true,the string comparison will be case-sensitive.
   """
-  pass
- @staticmethod
- def CreateNotEqualsRule(parameter,value,*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateNotEqualsRule(parameter, value, *__args):
+        """
   CreateNotEqualsRule(parameter: ElementId,value: float,epsilon: float) -> FilterRule
 
   
@@ -843,10 +857,11 @@ class ParameterFilterRuleFactory(object,IDisposable):
 
    value: The user-supplied value against which values from the document will be compared.
   """
-  pass
- @staticmethod
- def CreateSharedParameterApplicableRule(parameterName):
-  """
+        pass
+
+    @staticmethod
+    def CreateSharedParameterApplicableRule(parameterName):
+        """
   CreateSharedParameterApplicableRule(parameterName: str) -> FilterRule
 
   
@@ -857,27 +872,36 @@ class ParameterFilterRuleFactory(object,IDisposable):
 
    parameterName: The name of the parameter that elements must support to satisfy this rule.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: ParameterFilterRuleFactory) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: ParameterFilterRuleFactory,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: ParameterFilterRuleFactory) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: ParameterFilterRuleFactory,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -886,5 +910,3 @@ Get: IsValidObject(self: ParameterFilterRuleFactory) -> bool
 
 
 """
-
-

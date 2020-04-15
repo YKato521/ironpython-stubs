@@ -1,5 +1,11 @@
-class MaterialRefs(object,IDictionary[Guid,MaterialRef],ICollection[KeyValuePair[Guid,MaterialRef]],IEnumerable[KeyValuePair[Guid,MaterialRef]],IEnumerable):
- """
+class MaterialRefs(
+    object,
+    IDictionary[Guid, MaterialRef],
+    ICollection[KeyValuePair[Guid, MaterialRef]],
+    IEnumerable[KeyValuePair[Guid, MaterialRef]],
+    IEnumerable,
+):
+    """
  If you are developing a high quality plug-in renderer,and a user is
 
     assigning a custom render material to this object,then add rendering
@@ -16,8 +22,9 @@ class MaterialRefs(object,IDictionary[Guid,MaterialRef],ICollection[KeyValuePair
 
     dictionary when setting the MaterialIndex will take care of your needs.
  """
- def Add(self,*__args):
-  """
+
+    def Add(self, *__args):
+        """
   Add(self: MaterialRefs,key: Guid,value: MaterialRef)
 
    Add or replace an element with the provided key and value to this dictionary.
@@ -30,19 +37,22 @@ class MaterialRefs(object,IDictionary[Guid,MaterialRef],ICollection[KeyValuePair
 
   Add(self: MaterialRefs,item: KeyValuePair[Guid,MaterialRef])
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: MaterialRefs)
 
    Removes all items from this dictionary.
   """
-  pass
- def Contains(self,item):
-  """ Contains(self: MaterialRefs,item: KeyValuePair[Guid,MaterialRef]) -> bool """
-  pass
- def ContainsKey(self,key):
-  """
+        pass
+
+    def Contains(self, item):
+        """ Contains(self: MaterialRefs,item: KeyValuePair[Guid,MaterialRef]) -> bool """
+        pass
+
+    def ContainsKey(self, key):
+        """
   ContainsKey(self: MaterialRefs,key: Guid) -> bool
 
   
@@ -65,12 +75,14 @@ class MaterialRefs(object,IDictionary[Guid,MaterialRef],ICollection[KeyValuePair
 
     otherwise,false.
   """
-  pass
- def CopyTo(self,array,arrayIndex):
-  """ CopyTo(self: MaterialRefs,array: Array[KeyValuePair[Guid,MaterialRef]],arrayIndex: int) """
-  pass
- def Create(self,createParams):
-  """
+        pass
+
+    def CopyTo(self, array, arrayIndex):
+        """ CopyTo(self: MaterialRefs,array: Array[KeyValuePair[Guid,MaterialRef]],arrayIndex: int) """
+        pass
+
+    def Create(self, createParams):
+        """
   Create(self: MaterialRefs,createParams: MaterialRefCreateParams) -> MaterialRef
 
   
@@ -93,9 +105,10 @@ class MaterialRefs(object,IDictionary[Guid,MaterialRef],ICollection[KeyValuePair
 
     object.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: MaterialRefs) -> IEnumerator[KeyValuePair[Guid,MaterialRef]]
 
   
@@ -104,9 +117,10 @@ class MaterialRefs(object,IDictionary[Guid,MaterialRef],ICollection[KeyValuePair
 
    Returns: A IEnumerator that can be used to iterate this dictionary.
   """
-  pass
- def Remove(self,*__args):
-  """
+        pass
+
+    def Remove(self, *__args):
+        """
   Remove(self: MaterialRefs,key: Guid) -> bool
 
   
@@ -129,9 +143,10 @@ class MaterialRefs(object,IDictionary[Guid,MaterialRef],ICollection[KeyValuePair
 
   Remove(self: MaterialRefs,item: KeyValuePair[Guid,MaterialRef]) -> bool
   """
-  pass
- def TryGetValue(self,key,value):
-  """
+        pass
+
+    def TryGetValue(self, key, value):
+        """
   TryGetValue(self: MaterialRefs,key: Guid) -> (bool,MaterialRef)
 
   
@@ -148,33 +163,42 @@ class MaterialRefs(object,IDictionary[Guid,MaterialRef],ICollection[KeyValuePair
 
     false.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__(self: IDictionary[Guid,MaterialRef],key: Guid) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of elements contained in this dictionary
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__(self: IDictionary[Guid,MaterialRef],key: Guid) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of elements contained in this dictionary
 
 
 
@@ -184,8 +208,10 @@ Get: Count(self: MaterialRefs) -> int
 
 """
 
- IsReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """IDictionary required property,always returns false for this dictionary.
+    IsReadOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """IDictionary required property,always returns false for this dictionary.
 
 
 
@@ -195,8 +221,8 @@ Get: IsReadOnly(self: MaterialRefs) -> bool
 
 """
 
- Keys=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an ICollection containing the plug-in Id's in this dictionary.
+    Keys = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an ICollection containing the plug-in Id's in this dictionary.
 
 
 
@@ -206,8 +232,8 @@ Get: Keys(self: MaterialRefs) -> ICollection[Guid]
 
 """
 
- Values=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an ICollection containing the MaterialRef objects in this
+    Values = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an ICollection containing the MaterialRef objects in this
 
    dictionary.
 
@@ -218,5 +244,3 @@ Get: Values(self: MaterialRefs) -> ICollection[MaterialRef]
 
 
 """
-
-

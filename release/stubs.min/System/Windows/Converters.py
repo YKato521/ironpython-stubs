@@ -8,16 +8,18 @@
 # no functions
 # classes
 
+
 class Int32RectValueSerializer(ValueSerializer):
- """
+    """
  Converts instances of System.String to and from instances of System.Windows.Int32Rect.
 
  
 
  Int32RectValueSerializer()
  """
- def CanConvertFromString(self,value,context):
-  """
+
+    def CanConvertFromString(self, value, context):
+        """
   CanConvertFromString(self: Int32RectValueSerializer,value: str,context: IValueSerializerContext) -> bool
 
   
@@ -36,9 +38,10 @@ class Int32RectValueSerializer(ValueSerializer):
 
    Returns: Always returns true.
   """
-  pass
- def CanConvertToString(self,value,context):
-  """
+        pass
+
+    def CanConvertToString(self, value, context):
+        """
   CanConvertToString(self: Int32RectValueSerializer,value: object,context: IValueSerializerContext) -> bool
 
   
@@ -53,9 +56,10 @@ class Int32RectValueSerializer(ValueSerializer):
 
    Returns: true if value can be converted into a System.String; otherwise,false.
   """
-  pass
- def ConvertFromString(self,value,context):
-  """
+        pass
+
+    def ConvertFromString(self, value, context):
+        """
   ConvertFromString(self: Int32RectValueSerializer,value: str,context: IValueSerializerContext) -> object
 
   
@@ -70,9 +74,10 @@ class Int32RectValueSerializer(ValueSerializer):
 
    Returns: A new instance of System.Windows.Int32Rect based on the supplied value.
   """
-  pass
- def ConvertToString(self,value,context):
-  """
+        pass
+
+    def ConvertToString(self, value, context):
+        """
   ConvertToString(self: Int32RectValueSerializer,value: object,context: IValueSerializerContext) -> str
 
   
@@ -87,18 +92,20 @@ class Int32RectValueSerializer(ValueSerializer):
 
    Returns: A string representation of the specified System.Windows.Int32Rect.
   """
-  pass
+        pass
+
 
 class PointValueSerializer(ValueSerializer):
- """
+    """
  Converts instances of System.String to and from instances of System.Windows.Point.
 
  
 
  PointValueSerializer()
  """
- def CanConvertFromString(self,value,context):
-  """
+
+    def CanConvertFromString(self, value, context):
+        """
   CanConvertFromString(self: PointValueSerializer,value: str,context: IValueSerializerContext) -> bool
 
   
@@ -117,9 +124,10 @@ class PointValueSerializer(ValueSerializer):
 
    Returns: Always returns true.
   """
-  pass
- def CanConvertToString(self,value,context):
-  """
+        pass
+
+    def CanConvertToString(self, value, context):
+        """
   CanConvertToString(self: PointValueSerializer,value: object,context: IValueSerializerContext) -> bool
 
   
@@ -134,9 +142,10 @@ class PointValueSerializer(ValueSerializer):
 
    Returns: true if value can be converted into a System.String; otherwise,false.
   """
-  pass
- def ConvertFromString(self,value,context):
-  """
+        pass
+
+    def ConvertFromString(self, value, context):
+        """
   ConvertFromString(self: PointValueSerializer,value: str,context: IValueSerializerContext) -> object
 
   
@@ -151,9 +160,10 @@ class PointValueSerializer(ValueSerializer):
 
    Returns: A new instance of System.Windows.Point based on the supplied value.
   """
-  pass
- def ConvertToString(self,value,context):
-  """
+        pass
+
+    def ConvertToString(self, value, context):
+        """
   ConvertToString(self: PointValueSerializer,value: object,context: IValueSerializerContext) -> str
 
   
@@ -168,18 +178,20 @@ class PointValueSerializer(ValueSerializer):
 
    Returns: A string representation of the specified System.Windows.Point.
   """
-  pass
+        pass
+
 
 class RectValueSerializer(ValueSerializer):
- """
+    """
  Converts instances of System.String to and from instances of System.Windows.Rect.
 
  
 
  RectValueSerializer()
  """
- def CanConvertFromString(self,value,context):
-  """
+
+    def CanConvertFromString(self, value, context):
+        """
   CanConvertFromString(self: RectValueSerializer,value: str,context: IValueSerializerContext) -> bool
 
   
@@ -198,9 +210,10 @@ class RectValueSerializer(ValueSerializer):
 
    Returns: Always returns true.
   """
-  pass
- def CanConvertToString(self,value,context):
-  """
+        pass
+
+    def CanConvertToString(self, value, context):
+        """
   CanConvertToString(self: RectValueSerializer,value: object,context: IValueSerializerContext) -> bool
 
   
@@ -215,9 +228,10 @@ class RectValueSerializer(ValueSerializer):
 
    Returns: true if value can be converted into a System.String; otherwise,false.
   """
-  pass
- def ConvertFromString(self,value,context):
-  """
+        pass
+
+    def ConvertFromString(self, value, context):
+        """
   ConvertFromString(self: RectValueSerializer,value: str,context: IValueSerializerContext) -> object
 
   
@@ -232,9 +246,10 @@ class RectValueSerializer(ValueSerializer):
 
    Returns: A new instance of System.Windows.Rect based on the supplied value.
   """
-  pass
- def ConvertToString(self,value,context):
-  """
+        pass
+
+    def ConvertToString(self, value, context):
+        """
   ConvertToString(self: RectValueSerializer,value: object,context: IValueSerializerContext) -> str
 
   
@@ -249,18 +264,20 @@ class RectValueSerializer(ValueSerializer):
 
    Returns: A string representation of the specified System.Windows.Rect.
   """
-  pass
+        pass
+
 
 class SizeValueSerializer(ValueSerializer):
- """
+    """
  Converts instances of System.String to and from instances of System.Windows.Size.
 
  
 
  SizeValueSerializer()
  """
- def CanConvertFromString(self,value,context):
-  """
+
+    def CanConvertFromString(self, value, context):
+        """
   CanConvertFromString(self: SizeValueSerializer,value: str,context: IValueSerializerContext) -> bool
 
   
@@ -279,9 +296,10 @@ class SizeValueSerializer(ValueSerializer):
 
    Returns: Always returns true.
   """
-  pass
- def CanConvertToString(self,value,context):
-  """
+        pass
+
+    def CanConvertToString(self, value, context):
+        """
   CanConvertToString(self: SizeValueSerializer,value: object,context: IValueSerializerContext) -> bool
 
   
@@ -296,9 +314,10 @@ class SizeValueSerializer(ValueSerializer):
 
    Returns: true if value can be converted into a System.String; otherwise,false.
   """
-  pass
- def ConvertFromString(self,value,context):
-  """
+        pass
+
+    def ConvertFromString(self, value, context):
+        """
   ConvertFromString(self: SizeValueSerializer,value: str,context: IValueSerializerContext) -> object
 
   
@@ -313,9 +332,10 @@ class SizeValueSerializer(ValueSerializer):
 
    Returns: A new instance of System.Windows.Size based on the supplied value.
   """
-  pass
- def ConvertToString(self,value,context):
-  """
+        pass
+
+    def ConvertToString(self, value, context):
+        """
   ConvertToString(self: SizeValueSerializer,value: object,context: IValueSerializerContext) -> str
 
   
@@ -330,18 +350,20 @@ class SizeValueSerializer(ValueSerializer):
 
    Returns: A string representation of the specified System.Windows.Size.
   """
-  pass
+        pass
+
 
 class VectorValueSerializer(ValueSerializer):
- """
+    """
  Converts instances of System.String to and from instances of System.Windows.Vector.
 
  
 
  VectorValueSerializer()
  """
- def CanConvertFromString(self,value,context):
-  """
+
+    def CanConvertFromString(self, value, context):
+        """
   CanConvertFromString(self: VectorValueSerializer,value: str,context: IValueSerializerContext) -> bool
 
   
@@ -360,9 +382,10 @@ class VectorValueSerializer(ValueSerializer):
 
    Returns: Always returns true.
   """
-  pass
- def CanConvertToString(self,value,context):
-  """
+        pass
+
+    def CanConvertToString(self, value, context):
+        """
   CanConvertToString(self: VectorValueSerializer,value: object,context: IValueSerializerContext) -> bool
 
   
@@ -377,9 +400,10 @@ class VectorValueSerializer(ValueSerializer):
 
    Returns: true if value can be converted into a System.String; otherwise,false.
   """
-  pass
- def ConvertFromString(self,value,context):
-  """
+        pass
+
+    def ConvertFromString(self, value, context):
+        """
   ConvertFromString(self: VectorValueSerializer,value: str,context: IValueSerializerContext) -> object
 
   
@@ -394,9 +418,10 @@ class VectorValueSerializer(ValueSerializer):
 
    Returns: A new instance of System.Windows.Vector based on the supplied value.
   """
-  pass
- def ConvertToString(self,value,context):
-  """
+        pass
+
+    def ConvertToString(self, value, context):
+        """
   ConvertToString(self: VectorValueSerializer,value: object,context: IValueSerializerContext) -> str
 
   
@@ -411,5 +436,4 @@ class VectorValueSerializer(ValueSerializer):
 
    Returns: A string representation of the specified System.Windows.Vector.
   """
-  pass
-
+        pass

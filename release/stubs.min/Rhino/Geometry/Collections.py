@@ -8,10 +8,12 @@
 # no functions
 # classes
 
-class BrepCurveList(object,IEnumerable[Curve],IEnumerable,IRhinoTable[Curve]):
- """ Provides access to all the underlying curves in a Brep object. """
- def Add(self,curve):
-  """
+
+class BrepCurveList(object, IEnumerable[Curve], IEnumerable, IRhinoTable[Curve]):
+    """ Provides access to all the underlying curves in a Brep object. """
+
+    def Add(self, curve):
+        """
   Add(self: BrepCurveList,curve: Curve) -> int
 
   
@@ -28,9 +30,10 @@ class BrepCurveList(object,IEnumerable[Curve],IEnumerable,IRhinoTable[Curve]):
 
     not acceptable.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: BrepCurveList) -> IEnumerator[Curve]
 
   
@@ -39,27 +42,34 @@ class BrepCurveList(object,IEnumerable[Curve],IEnumerable,IRhinoTable[Curve]):
 
    Returns: The enumerator.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__[Curve](enumerable: IEnumerable[Curve],value: Curve) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of curves in this list.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[Curve](enumerable: IEnumerable[Curve],value: Curve) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of curves in this list.
 
 
 
@@ -70,11 +80,11 @@ Get: Count(self: BrepCurveList) -> int
 """
 
 
+class BrepEdgeList(object, IEnumerable[BrepEdge], IEnumerable, IRhinoTable[BrepEdge]):
+    """ Provides access to all the Edges in a Brep object. """
 
-class BrepEdgeList(object,IEnumerable[BrepEdge],IEnumerable,IRhinoTable[BrepEdge]):
- """ Provides access to all the Edges in a Brep object. """
- def Add(self,*__args):
-  """
+    def Add(self, *__args):
+        """
   Add(self: BrepEdgeList,startVertexIndex: int,endVertexIndex: int,curve3dIndex: int,subDomain: Interval,edgeTolerance: float) -> BrepEdge
 
   
@@ -105,9 +115,10 @@ class BrepEdgeList(object,IEnumerable[BrepEdge],IEnumerable,IRhinoTable[BrepEdge
 
    Create and add a new edge to this list
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: BrepEdgeList) -> IEnumerator[BrepEdge]
 
   
@@ -116,12 +127,14 @@ class BrepEdgeList(object,IEnumerable[BrepEdge],IEnumerable,IRhinoTable[BrepEdge
 
    Returns: The enumerator.
   """
-  pass
- def SplitEdgeAtParameters(self,edgeIndex,edgeParameters):
-  """ SplitEdgeAtParameters(self: BrepEdgeList,edgeIndex: int,edgeParameters: IEnumerable[float]) -> int """
-  pass
- def SplitKinkyEdge(self,edgeIndex,kinkToleranceRadians):
-  """
+        pass
+
+    def SplitEdgeAtParameters(self, edgeIndex, edgeParameters):
+        """ SplitEdgeAtParameters(self: BrepEdgeList,edgeIndex: int,edgeParameters: IEnumerable[float]) -> int """
+        pass
+
+    def SplitKinkyEdge(self, edgeIndex, kinkToleranceRadians):
+        """
   SplitKinkyEdge(self: BrepEdgeList,edgeIndex: int,kinkToleranceRadians: float) -> bool
 
   
@@ -136,27 +149,34 @@ class BrepEdgeList(object,IEnumerable[BrepEdge],IEnumerable,IRhinoTable[BrepEdge
 
    Returns: true if successful.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__[BrepEdge](enumerable: IEnumerable[BrepEdge],value: BrepEdge) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of brep edges.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[BrepEdge](enumerable: IEnumerable[BrepEdge],value: BrepEdge) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of brep edges.
 
 
 
@@ -167,11 +187,11 @@ Get: Count(self: BrepEdgeList) -> int
 """
 
 
+class BrepFaceList(object, IEnumerable[BrepFace], IEnumerable, IRhinoTable[BrepFace]):
+    """ Provides access to all the Faces in a Brep object. """
 
-class BrepFaceList(object,IEnumerable[BrepFace],IEnumerable,IRhinoTable[BrepFace]):
- """ Provides access to all the Faces in a Brep object. """
- def Add(self,*__args):
-  """
+    def Add(self, *__args):
+        """
   Add(self: BrepFaceList,surface: Surface) -> BrepFace
 
   
@@ -222,9 +242,10 @@ class BrepFaceList(object,IEnumerable[BrepFace],IEnumerable,IRhinoTable[BrepFace
 
    surfaceIndex: index of surface in brep's Surfaces list
   """
-  pass
- def AddConeFace(self,vertex,edge,revEdge):
-  """
+        pass
+
+    def AddConeFace(self, vertex, edge, revEdge):
+        """
   AddConeFace(self: BrepFaceList,vertex: BrepVertex,edge: BrepEdge,revEdge: bool) -> BrepFace
 
   
@@ -259,9 +280,10 @@ class BrepFaceList(object,IEnumerable[BrepFace],IEnumerable,IRhinoTable[BrepFace
 
     orientation of edge.
   """
-  pass
- def AddRuledFace(self,edgeA,revEdgeA,edgeB,revEdgeB):
-  """
+        pass
+
+    def AddRuledFace(self, edgeA, revEdgeA, edgeB, revEdgeB):
+        """
   AddRuledFace(self: BrepFaceList,edgeA: BrepEdge,revEdgeA: bool,edgeB: BrepEdge,revEdgeB: bool) -> BrepFace
 
   
@@ -294,9 +316,10 @@ class BrepFaceList(object,IEnumerable[BrepFace],IEnumerable,IRhinoTable[BrepFace
 
     orientation of edgeB
   """
-  pass
- def ExtractFace(self,faceIndex):
-  """
+        pass
+
+    def ExtractFace(self, faceIndex):
+        """
   ExtractFace(self: BrepFaceList,faceIndex: int) -> Brep
 
   
@@ -309,9 +332,10 @@ class BrepFaceList(object,IEnumerable[BrepFace],IEnumerable,IRhinoTable[BrepFace
 
    Returns: A brep. This can be null.
   """
-  pass
- def Flip(self,onlyReversedFaces):
-  """
+        pass
+
+    def Flip(self, onlyReversedFaces):
+        """
   Flip(self: BrepFaceList,onlyReversedFaces: bool)
 
    Flips the orientation of faces.
@@ -328,9 +352,10 @@ class BrepFaceList(object,IEnumerable[BrepFace],IEnumerable,IRhinoTable[BrepFace
 
     faces are flipped regardless of their orientation.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: BrepFaceList) -> IEnumerator[BrepFace]
 
   
@@ -339,9 +364,10 @@ class BrepFaceList(object,IEnumerable[BrepFace],IEnumerable,IRhinoTable[BrepFace
 
    Returns: The enumerator.
   """
-  pass
- def RemoveAt(self,faceIndex):
-  """
+        pass
+
+    def RemoveAt(self, faceIndex):
+        """
   RemoveAt(self: BrepFaceList,faceIndex: int)
 
    Deletes a face at a specified index.
@@ -350,9 +376,10 @@ class BrepFaceList(object,IEnumerable[BrepFace],IEnumerable,IRhinoTable[BrepFace
 
    faceIndex: The index of the mesh face.
   """
-  pass
- def RemoveSlits(self):
-  """
+        pass
+
+    def RemoveSlits(self):
+        """
   RemoveSlits(self: BrepFaceList) -> bool
 
   
@@ -361,9 +388,10 @@ class BrepFaceList(object,IEnumerable[BrepFace],IEnumerable,IRhinoTable[BrepFace
 
    Returns: true if any slits were removed
   """
-  pass
- def ShrinkFaces(self):
-  """
+        pass
+
+    def ShrinkFaces(self):
+        """
   ShrinkFaces(self: BrepFaceList) -> bool
 
   
@@ -382,9 +410,10 @@ class BrepFaceList(object,IEnumerable[BrepFace],IEnumerable,IRhinoTable[BrepFace
 
    Returns: true on success,false on failure.
   """
-  pass
- def SplitBipolarFaces(self):
-  """
+        pass
+
+    def SplitBipolarFaces(self):
+        """
   SplitBipolarFaces(self: BrepFaceList) -> bool
 
   
@@ -399,9 +428,10 @@ class BrepFaceList(object,IEnumerable[BrepFace],IEnumerable,IRhinoTable[BrepFace
 
    Returns: true if successful.
   """
-  pass
- def SplitClosedFaces(self,minimumDegree):
-  """
+        pass
+
+    def SplitClosedFaces(self, minimumDegree):
+        """
   SplitClosedFaces(self: BrepFaceList,minimumDegree: int) -> bool
 
   
@@ -422,9 +452,10 @@ class BrepFaceList(object,IEnumerable[BrepFace],IEnumerable,IRhinoTable[BrepFace
 
    Returns: true if successful.
   """
-  pass
- def SplitKinkyFace(self,faceIndex,kinkTolerance):
-  """
+        pass
+
+    def SplitKinkyFace(self, faceIndex, kinkTolerance):
+        """
   SplitKinkyFace(self: BrepFaceList,faceIndex: int,kinkTolerance: float) -> bool
 
   
@@ -439,9 +470,10 @@ class BrepFaceList(object,IEnumerable[BrepFace],IEnumerable,IRhinoTable[BrepFace
 
    Returns: true on success,false on failure.
   """
-  pass
- def SplitKinkyFaces(self,kinkTolerance=None,compact=None):
-  """
+        pass
+
+    def SplitKinkyFaces(self, kinkTolerance=None, compact=None):
+        """
   SplitKinkyFaces(self: BrepFaceList,kinkTolerance: float,compact: bool) -> bool
 
   
@@ -476,9 +508,10 @@ class BrepFaceList(object,IEnumerable[BrepFace],IEnumerable,IRhinoTable[BrepFace
 
    Returns: true on success,false on failure.
   """
-  pass
- def StandardizeFaceSurface(self,faceIndex):
-  """
+        pass
+
+    def StandardizeFaceSurface(self, faceIndex):
+        """
   StandardizeFaceSurface(self: BrepFaceList,faceIndex: int) -> bool
 
   
@@ -501,34 +534,42 @@ class BrepFaceList(object,IEnumerable[BrepFace],IEnumerable,IRhinoTable[BrepFace
 
    Returns: true if successful.
   """
-  pass
- def StandardizeFaceSurfaces(self):
-  """
+        pass
+
+    def StandardizeFaceSurfaces(self):
+        """
   StandardizeFaceSurfaces(self: BrepFaceList)
 
    Standardize all faces in the brep.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__[BrepFace](enumerable: IEnumerable[BrepFace],value: BrepFace) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of brep faces.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[BrepFace](enumerable: IEnumerable[BrepFace],value: BrepFace) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of brep faces.
 
 
 
@@ -539,11 +580,11 @@ Get: Count(self: BrepFaceList) -> int
 """
 
 
+class BrepLoopList(object, IEnumerable[BrepLoop], IEnumerable, IRhinoTable[BrepLoop]):
+    """ Provides access to all the Loops in a Brep object. """
 
-class BrepLoopList(object,IEnumerable[BrepLoop],IEnumerable,IRhinoTable[BrepLoop]):
- """ Provides access to all the Loops in a Brep object. """
- def Add(self,loopType,face=None):
-  """
+    def Add(self, loopType, face=None):
+        """
   Add(self: BrepLoopList,loopType: BrepLoopType,face: BrepFace) -> BrepLoop
 
   
@@ -570,9 +611,10 @@ class BrepLoopList(object,IEnumerable[BrepLoop],IEnumerable,IRhinoTable[BrepLoop
 
     surface.
   """
-  pass
- def AddOuterLoop(self,faceIndex):
-  """
+        pass
+
+    def AddOuterLoop(self, faceIndex):
+        """
   AddOuterLoop(self: BrepLoopList,faceIndex: int) -> BrepLoop
 
   
@@ -595,12 +637,14 @@ class BrepLoopList(object,IEnumerable[BrepLoop],IEnumerable,IRhinoTable[BrepLoop
 
    Returns: New outer boundary loop that is complete.
   """
-  pass
- def AddPlanarFaceLoop(self,faceIndex,loopType,boundaryCurves):
-  """ AddPlanarFaceLoop(self: BrepLoopList,faceIndex: int,loopType: BrepLoopType,boundaryCurves: IEnumerable[Curve]) -> BrepLoop """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def AddPlanarFaceLoop(self, faceIndex, loopType, boundaryCurves):
+        """ AddPlanarFaceLoop(self: BrepLoopList,faceIndex: int,loopType: BrepLoopType,boundaryCurves: IEnumerable[Curve]) -> BrepLoop """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: BrepLoopList) -> IEnumerator[BrepLoop]
 
   
@@ -609,27 +653,34 @@ class BrepLoopList(object,IEnumerable[BrepLoop],IEnumerable,IRhinoTable[BrepLoop
 
    Returns: The enumerator.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__[BrepLoop](enumerable: IEnumerable[BrepLoop],value: BrepLoop) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of brep loops.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[BrepLoop](enumerable: IEnumerable[BrepLoop],value: BrepLoop) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of brep loops.
 
 
 
@@ -640,11 +691,11 @@ Get: Count(self: BrepLoopList) -> int
 """
 
 
+class BrepSurfaceList(object, IEnumerable[Surface], IEnumerable, IRhinoTable[Surface]):
+    """ Provides access to all the underlying surfaces in a Brep object. """
 
-class BrepSurfaceList(object,IEnumerable[Surface],IEnumerable,IRhinoTable[Surface]):
- """ Provides access to all the underlying surfaces in a Brep object. """
- def GetEnumerator(self):
-  """
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: BrepSurfaceList) -> IEnumerator[Surface]
 
   
@@ -653,24 +704,30 @@ class BrepSurfaceList(object,IEnumerable[Surface],IEnumerable,IRhinoTable[Surfac
 
    Returns: The enumerator.
   """
-  pass
- def __contains__(self,*args):
-  """ __contains__[Surface](enumerable: IEnumerable[Surface],value: Surface) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of surfaces in a brep.
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[Surface](enumerable: IEnumerable[Surface],value: Surface) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of surfaces in a brep.
 
 
 
@@ -681,11 +738,11 @@ Get: Count(self: BrepSurfaceList) -> int
 """
 
 
+class BrepTrimList(object, IEnumerable[BrepTrim], IEnumerable, IRhinoTable[BrepTrim]):
+    """ Provides access to all the Trims in a Brep object """
 
-class BrepTrimList(object,IEnumerable[BrepTrim],IEnumerable,IRhinoTable[BrepTrim]):
- """ Provides access to all the Trims in a Brep object """
- def Add(self,*__args):
-  """
+    def Add(self, *__args):
+        """
   Add(self: BrepTrimList,rev3d: bool,edge: BrepEdge,curve2dIndex: int) -> BrepTrim
 
   
@@ -756,9 +813,10 @@ class BrepTrimList(object,IEnumerable[BrepTrim],IEnumerable,IRhinoTable[BrepTrim
 
    Returns: new trim
   """
-  pass
- def AddCurveOnFace(self,face,edge,rev3d,curve2dIndex):
-  """
+        pass
+
+    def AddCurveOnFace(self, face, edge, rev3d, curve2dIndex):
+        """
   AddCurveOnFace(self: BrepTrimList,face: BrepFace,edge: BrepEdge,rev3d: bool,curve2dIndex: int) -> BrepTrim
 
   
@@ -777,9 +835,10 @@ class BrepTrimList(object,IEnumerable[BrepTrim],IEnumerable,IRhinoTable[BrepTrim
 
    Returns: new trim that represents the curve on surface
   """
-  pass
- def AddSingularTrim(self,vertex,loop,iso,curve2dIndex):
-  """
+        pass
+
+    def AddSingularTrim(self, vertex, loop, iso, curve2dIndex):
+        """
   AddSingularTrim(self: BrepTrimList,vertex: BrepVertex,loop: BrepLoop,iso: IsoStatus,curve2dIndex: int) -> BrepTrim
 
   
@@ -796,9 +855,10 @@ class BrepTrimList(object,IEnumerable[BrepTrim],IEnumerable,IRhinoTable[BrepTrim
 
    Returns: new trim
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: BrepTrimList) -> IEnumerator[BrepTrim]
 
   
@@ -807,27 +867,34 @@ class BrepTrimList(object,IEnumerable[BrepTrim],IEnumerable,IRhinoTable[BrepTrim
 
    Returns: The enumerator.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__[BrepTrim](enumerable: IEnumerable[BrepTrim],value: BrepTrim) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of brep trims.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[BrepTrim](enumerable: IEnumerable[BrepTrim],value: BrepTrim) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of brep trims.
 
 
 
@@ -838,11 +905,13 @@ Get: Count(self: BrepTrimList) -> int
 """
 
 
+class BrepVertexList(
+    object, IEnumerable[BrepVertex], IEnumerable, IRhinoTable[BrepVertex]
+):
+    """ Provides access to all the Vertices in a Brep object """
 
-class BrepVertexList(object,IEnumerable[BrepVertex],IEnumerable,IRhinoTable[BrepVertex]):
- """ Provides access to all the Vertices in a Brep object """
- def Add(self,point=None,vertexTolerance=None):
-  """
+    def Add(self, point=None, vertexTolerance=None):
+        """
   Add(self: BrepVertexList,point: Point3d,vertexTolerance: float) -> BrepVertex
 
   
@@ -859,9 +928,10 @@ class BrepVertexList(object,IEnumerable[BrepVertex],IEnumerable,IRhinoTable[Brep
 
    Create and add a new vertex to this list
   """
-  pass
- def AddPointOnFace(self,face,s,t):
-  """
+        pass
+
+    def AddPointOnFace(self, face, s, t):
+        """
   AddPointOnFace(self: BrepVertexList,face: BrepFace,s: float,t: float) -> BrepVertex
 
   
@@ -878,9 +948,10 @@ class BrepVertexList(object,IEnumerable[BrepVertex],IEnumerable,IRhinoTable[Brep
 
    Returns: new vertex that represents the point on face
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: BrepVertexList) -> IEnumerator[BrepVertex]
 
   
@@ -889,27 +960,34 @@ class BrepVertexList(object,IEnumerable[BrepVertex],IEnumerable,IRhinoTable[Brep
 
    Returns: The enumerator.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__[BrepVertex](enumerable: IEnumerable[BrepVertex],value: BrepVertex) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of brep vertices.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[BrepVertex](enumerable: IEnumerable[BrepVertex],value: BrepVertex) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of brep vertices.
 
 
 
@@ -920,11 +998,11 @@ Get: Count(self: BrepVertexList) -> int
 """
 
 
+class MeshFaceList(object, IEnumerable[MeshFace], IEnumerable, IRhinoTable[MeshFace]):
+    """ Provides access to the faces and Face related functionality of a Mesh. """
 
-class MeshFaceList(object,IEnumerable[MeshFace],IEnumerable,IRhinoTable[MeshFace]):
- """ Provides access to the faces and Face related functionality of a Mesh. """
- def AddFace(self,*__args):
-  """
+    def AddFace(self, *__args):
+        """
   AddFace(self: MeshFaceList,vertex1: int,vertex2: int,vertex3: int,vertex4: int) -> int
 
   
@@ -971,12 +1049,14 @@ class MeshFaceList(object,IEnumerable[MeshFace],IEnumerable,IRhinoTable[MeshFace
 
    Returns: The index of the newly added face.
   """
-  pass
- def AddFaces(self,faces):
-  """ AddFaces(self: MeshFaceList,faces: IEnumerable[MeshFace]) -> Array[int] """
-  pass
- def AdjacentFaces(self,faceIndex):
-  """
+        pass
+
+    def AddFaces(self, faces):
+        """ AddFaces(self: MeshFaceList,faces: IEnumerable[MeshFace]) -> Array[int] """
+        pass
+
+    def AdjacentFaces(self, faceIndex):
+        """
   AdjacentFaces(self: MeshFaceList,faceIndex: int) -> Array[int]
 
   
@@ -989,16 +1069,18 @@ class MeshFaceList(object,IEnumerable[MeshFace],IEnumerable,IRhinoTable[MeshFace
 
    Returns: All indices that share an edge.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: MeshFaceList)
 
    Clears the Face list on the mesh.
   """
-  pass
- def ConvertQuadsToTriangles(self):
-  """
+        pass
+
+    def ConvertQuadsToTriangles(self):
+        """
   ConvertQuadsToTriangles(self: MeshFaceList) -> bool
 
   
@@ -1007,9 +1089,12 @@ class MeshFaceList(object,IEnumerable[MeshFace],IEnumerable,IRhinoTable[MeshFace
 
    Returns: true on success,false on failure.
   """
-  pass
- def ConvertTrianglesToQuads(self,angleToleranceRadians,minimumDiagonalLengthRatio):
-  """
+        pass
+
+    def ConvertTrianglesToQuads(
+        self, angleToleranceRadians, minimumDiagonalLengthRatio
+    ):
+        """
   ConvertTrianglesToQuads(self: MeshFaceList,angleToleranceRadians: float,minimumDiagonalLengthRatio: float) -> bool
 
   
@@ -1046,9 +1131,10 @@ class MeshFaceList(object,IEnumerable[MeshFace],IEnumerable,IRhinoTable[MeshFace
 
    Returns: true on success,false on failure.
   """
-  pass
- def CullDegenerateFaces(self):
-  """
+        pass
+
+    def CullDegenerateFaces(self):
+        """
   CullDegenerateFaces(self: MeshFaceList) -> int
 
   
@@ -1071,12 +1157,14 @@ class MeshFaceList(object,IEnumerable[MeshFace],IEnumerable,IRhinoTable[MeshFace
 
    Returns: The number of degenerate faces that were removed.
   """
-  pass
- def DeleteFaces(self,faceIndexes):
-  """ DeleteFaces(self: MeshFaceList,faceIndexes: IEnumerable[int]) -> int """
-  pass
- def GetConnectedFaces(self,faceIndex,angleRadians,greaterThanAngle):
-  """
+        pass
+
+    def DeleteFaces(self, faceIndexes):
+        """ DeleteFaces(self: MeshFaceList,faceIndexes: IEnumerable[int]) -> int """
+        pass
+
+    def GetConnectedFaces(self, faceIndex, angleRadians, greaterThanAngle):
+        """
   GetConnectedFaces(self: MeshFaceList,faceIndex: int,angleRadians: float,greaterThanAngle: bool) -> Array[int]
 
   
@@ -1105,9 +1193,10 @@ class MeshFaceList(object,IEnumerable[MeshFace],IEnumerable,IRhinoTable[MeshFace
 
    Returns: list of connected face indices
   """
-  pass
- def GetConnectedFacesToEdges(self,startFaceIndex,treatNonmanifoldLikeUnwelded):
-  """
+        pass
+
+    def GetConnectedFacesToEdges(self, startFaceIndex, treatNonmanifoldLikeUnwelded):
+        """
   GetConnectedFacesToEdges(self: MeshFaceList,startFaceIndex: int,treatNonmanifoldLikeUnwelded: bool) -> Array[int]
 
   
@@ -1138,9 +1227,10 @@ class MeshFaceList(object,IEnumerable[MeshFace],IEnumerable,IRhinoTable[MeshFace
 
    Returns: Array of connected face indexes
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: MeshFaceList) -> IEnumerator[MeshFace]
 
   
@@ -1149,9 +1239,10 @@ class MeshFaceList(object,IEnumerable[MeshFace],IEnumerable,IRhinoTable[MeshFace
 
    Returns: The enumerator.
   """
-  pass
- def GetFace(self,index):
-  """
+        pass
+
+    def GetFace(self, index):
+        """
   GetFace(self: MeshFaceList,index: int) -> MeshFace
 
   
@@ -1170,9 +1261,10 @@ class MeshFaceList(object,IEnumerable[MeshFace],IEnumerable,IRhinoTable[MeshFace
 
    Returns: The mesh face at the given index on success or MeshFace.Unset if the index is out of range.
   """
-  pass
- def GetFaceBoundingBox(self,faceIndex):
-  """
+        pass
+
+    def GetFaceBoundingBox(self, faceIndex):
+        """
   GetFaceBoundingBox(self: MeshFaceList,faceIndex: int) -> BoundingBox
 
   
@@ -1185,9 +1277,10 @@ class MeshFaceList(object,IEnumerable[MeshFace],IEnumerable,IRhinoTable[MeshFace
 
    Returns: A new bounding box,or Rhino.Geometry.BoundingBox.Empty on error.
   """
-  pass
- def GetFaceCenter(self,faceIndex):
-  """
+        pass
+
+    def GetFaceCenter(self, faceIndex):
+        """
   GetFaceCenter(self: MeshFaceList,faceIndex: int) -> Point3d
 
   
@@ -1210,9 +1303,10 @@ class MeshFaceList(object,IEnumerable[MeshFace],IEnumerable,IRhinoTable[MeshFace
 
    Returns: The center point.
   """
-  pass
- def GetFaceVertices(self,faceIndex,a,b,c,d):
-  """
+        pass
+
+    def GetFaceVertices(self, faceIndex, a, b, c, d):
+        """
   GetFaceVertices(self: MeshFaceList,faceIndex: int) -> (bool,Point3f,Point3f,Point3f,Point3f)
 
   
@@ -1225,9 +1319,10 @@ class MeshFaceList(object,IEnumerable[MeshFace],IEnumerable,IRhinoTable[MeshFace
 
    Returns: true if the operation succeeded,otherwise false.
   """
-  pass
- def GetTopologicalVertices(self,faceIndex):
-  """
+        pass
+
+    def GetTopologicalVertices(self, faceIndex):
+        """
   GetTopologicalVertices(self: MeshFaceList,faceIndex: int) -> Array[int]
 
   
@@ -1240,9 +1335,10 @@ class MeshFaceList(object,IEnumerable[MeshFace],IEnumerable,IRhinoTable[MeshFace
 
    Returns: An array of integers.
   """
-  pass
- def HasNakedEdges(self,faceIndex):
-  """
+        pass
+
+    def HasNakedEdges(self, faceIndex):
+        """
   HasNakedEdges(self: MeshFaceList,faceIndex: int) -> bool
 
   
@@ -1261,9 +1357,10 @@ class MeshFaceList(object,IEnumerable[MeshFace],IEnumerable,IRhinoTable[MeshFace
 
    Returns: true if that face makes the mesh open,otherwise false.
   """
-  pass
- def Insert(self,index,face):
-  """
+        pass
+
+    def Insert(self, index, face):
+        """
   Insert(self: MeshFaceList,index: int,face: MeshFace)
 
    Inserts a mesh face at a defined index in this list.
@@ -1274,9 +1371,10 @@ class MeshFaceList(object,IEnumerable[MeshFace],IEnumerable,IRhinoTable[MeshFace
 
    face: A face.
   """
-  pass
- def IsHidden(self,faceIndex):
-  """
+        pass
+
+    def IsHidden(self, faceIndex):
+        """
   IsHidden(self: MeshFaceList,faceIndex: int) -> bool
 
   
@@ -1295,9 +1393,10 @@ class MeshFaceList(object,IEnumerable[MeshFace],IEnumerable,IRhinoTable[MeshFace
 
    Returns: true if hidden,false if fully visible.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: MeshFaceList,index: int)
 
    Removes a face from the mesh.
@@ -1306,9 +1405,10 @@ class MeshFaceList(object,IEnumerable[MeshFace],IEnumerable,IRhinoTable[MeshFace
 
    index: The index of the face that will be removed.
   """
-  pass
- def SetFace(self,index,*__args):
-  """
+        pass
+
+    def SetFace(self, index, *__args):
+        """
   SetFace(self: MeshFaceList,index: int,vertex1: int,vertex2: int,vertex3: int,vertex4: int) -> bool
 
   
@@ -1361,9 +1461,10 @@ class MeshFaceList(object,IEnumerable[MeshFace],IEnumerable,IRhinoTable[MeshFace
 
    Returns: true if the operation succeeded,otherwise false.
   """
-  pass
- def ToIntArray(self,asTriangles):
-  """
+        pass
+
+    def ToIntArray(self, asTriangles):
+        """
   ToIntArray(self: MeshFaceList,asTriangles: bool) -> Array[int]
 
   
@@ -1376,24 +1477,30 @@ class MeshFaceList(object,IEnumerable[MeshFace],IEnumerable,IRhinoTable[MeshFace
 
    Returns: The int array.
   """
-  pass
- def __contains__(self,*args):
-  """ __contains__[MeshFace](enumerable: IEnumerable[MeshFace],value: MeshFace) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the number of mesh faces.
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[MeshFace](enumerable: IEnumerable[MeshFace],value: MeshFace) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the number of mesh faces.
 
 
 
@@ -1405,8 +1512,8 @@ Set: Count(self: MeshFaceList)=value
 
 """
 
- QuadCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of faces that are quads (4 corners).
+    QuadCount = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of faces that are quads (4 corners).
 
 
 
@@ -1416,8 +1523,10 @@ Get: QuadCount(self: MeshFaceList) -> int
 
 """
 
- TriangleCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of faces that are triangles (3 corners).
+    TriangleCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the number of faces that are triangles (3 corners).
 
 
 
@@ -1428,11 +1537,13 @@ Get: TriangleCount(self: MeshFaceList) -> int
 """
 
 
+class MeshFaceNormalList(
+    object, IEnumerable[Vector3f], IEnumerable, IRhinoTable[Vector3f]
+):
+    """ Provides access to the Face normals of a Mesh. """
 
-class MeshFaceNormalList(object,IEnumerable[Vector3f],IEnumerable,IRhinoTable[Vector3f]):
- """ Provides access to the Face normals of a Mesh. """
- def AddFaceNormal(self,*__args):
-  """
+    def AddFaceNormal(self, *__args):
+        """
   AddFaceNormal(self: MeshFaceNormalList,normal: Vector3d) -> int
 
   
@@ -1489,16 +1600,18 @@ class MeshFaceNormalList(object,IEnumerable[Vector3f],IEnumerable,IRhinoTable[Ve
 
    Returns: The index of the newly added face normal.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: MeshFaceNormalList)
 
    Clears the Face Normal list on the mesh.
   """
-  pass
- def ComputeFaceNormals(self):
-  """
+        pass
+
+    def ComputeFaceNormals(self):
+        """
   ComputeFaceNormals(self: MeshFaceNormalList) -> bool
 
   
@@ -1507,9 +1620,10 @@ class MeshFaceNormalList(object,IEnumerable[Vector3f],IEnumerable,IRhinoTable[Ve
 
    Returns: true on success,false on failure.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: MeshFaceNormalList) -> IEnumerator[Vector3f]
 
   
@@ -1518,9 +1632,10 @@ class MeshFaceNormalList(object,IEnumerable[Vector3f],IEnumerable,IRhinoTable[Ve
 
    Returns: The enumerator.
   """
-  pass
- def SetFaceNormal(self,index,*__args):
-  """
+        pass
+
+    def SetFaceNormal(self, index, *__args):
+        """
   SetFaceNormal(self: MeshFaceNormalList,index: int,normal: Vector3d) -> bool
 
   
@@ -1585,9 +1700,10 @@ class MeshFaceNormalList(object,IEnumerable[Vector3f],IEnumerable,IRhinoTable[Ve
 
    Returns: true on success; false on error.
   """
-  pass
- def UnitizeFaceNormals(self):
-  """
+        pass
+
+    def UnitizeFaceNormals(self):
+        """
   UnitizeFaceNormals(self: MeshFaceNormalList) -> bool
 
   
@@ -1596,27 +1712,34 @@ class MeshFaceNormalList(object,IEnumerable[Vector3f],IEnumerable,IRhinoTable[Ve
 
    Returns: true on success,false on failure.
   """
-  pass
- def __contains__(self,*args):
-  """ __contains__[Vector3f](enumerable: IEnumerable[Vector3f],value: Vector3f) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the number of mesh face normals.
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[Vector3f](enumerable: IEnumerable[Vector3f],value: Vector3f) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the number of mesh face normals.
 
 
 
@@ -1629,11 +1752,13 @@ Set: Count(self: MeshFaceNormalList)=value
 """
 
 
+class MeshTextureCoordinateList(
+    object, IEnumerable[Point2f], IEnumerable, IRhinoTable[Point2f]
+):
+    """ Provides access to the Vertex Texture coordinates of a Mesh. """
 
-class MeshTextureCoordinateList(object,IEnumerable[Point2f],IEnumerable,IRhinoTable[Point2f]):
- """ Provides access to the Vertex Texture coordinates of a Mesh. """
- def Add(self,*__args):
-  """
+    def Add(self, *__args):
+        """
   Add(self: MeshTextureCoordinateList,tc: Point2f) -> int
 
   
@@ -1686,9 +1811,10 @@ class MeshTextureCoordinateList(object,IEnumerable[Point2f],IEnumerable,IRhinoTa
 
    Returns: The index of the newly added texture coordinate.
   """
-  pass
- def AddRange(self,textureCoordinates):
-  """
+        pass
+
+    def AddRange(self, textureCoordinates):
+        """
   AddRange(self: MeshTextureCoordinateList,textureCoordinates: Array[Point2f]) -> bool
 
   
@@ -1701,16 +1827,18 @@ class MeshTextureCoordinateList(object,IEnumerable[Point2f],IEnumerable,IRhinoTa
 
    Returns: true on success,false on failure.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: MeshTextureCoordinateList)
 
    Clears the Texture Coordinate list on the mesh.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: MeshTextureCoordinateList) -> IEnumerator[Point2f]
 
   
@@ -1719,9 +1847,10 @@ class MeshTextureCoordinateList(object,IEnumerable[Point2f],IEnumerable,IRhinoTa
 
    Returns: The enumerator.
   """
-  pass
- def NormalizeTextureCoordinates(self):
-  """
+        pass
+
+    def NormalizeTextureCoordinates(self):
+        """
   NormalizeTextureCoordinates(self: MeshTextureCoordinateList) -> bool
 
   
@@ -1736,9 +1865,10 @@ class MeshTextureCoordinateList(object,IEnumerable[Point2f],IEnumerable,IRhinoTa
 
    Returns: true on success,false on failure.
   """
-  pass
- def ReverseTextureCoordinates(self,direction):
-  """
+        pass
+
+    def ReverseTextureCoordinates(self, direction):
+        """
   ReverseTextureCoordinates(self: MeshTextureCoordinateList,direction: int) -> bool
 
   
@@ -1759,9 +1889,10 @@ class MeshTextureCoordinateList(object,IEnumerable[Point2f],IEnumerable,IRhinoTa
 
    Returns: true if operation succeeded; otherwise,false.
   """
-  pass
- def SetTextureCoordinate(self,index,*__args):
-  """
+        pass
+
+    def SetTextureCoordinate(self, index, *__args):
+        """
   SetTextureCoordinate(self: MeshTextureCoordinateList,index: int,tc: Point2f) -> bool
 
   
@@ -1862,9 +1993,10 @@ class MeshTextureCoordinateList(object,IEnumerable[Point2f],IEnumerable,IRhinoTa
 
    Returns: true on success,false on failure.
   """
-  pass
- def SetTextureCoordinates(self,*__args):
-  """
+        pass
+
+    def SetTextureCoordinates(self, *__args):
+        """
   SetTextureCoordinates(self: MeshTextureCoordinateList,mapping: TextureMapping) -> bool
 
   
@@ -1889,9 +2021,10 @@ class MeshTextureCoordinateList(object,IEnumerable[Point2f],IEnumerable,IRhinoTa
 
    Returns: true on success,false on failure.
   """
-  pass
- def TransposeTextureCoordinates(self):
-  """
+        pass
+
+    def TransposeTextureCoordinates(self):
+        """
   TransposeTextureCoordinates(self: MeshTextureCoordinateList) -> bool
 
   
@@ -1908,30 +2041,38 @@ class MeshTextureCoordinateList(object,IEnumerable[Point2f],IEnumerable,IRhinoTa
 
    Returns: true on success,false on failure.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__[Point2f](enumerable: IEnumerable[Point2f],value: Point2f) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the number of texture coordinates.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[Point2f](enumerable: IEnumerable[Point2f],value: Point2f) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the number of texture coordinates.
 
 
 
@@ -1944,11 +2085,11 @@ Set: Count(self: MeshTextureCoordinateList)=value
 """
 
 
-
 class MeshTopologyEdgeList(object):
- """ Represents an entry point to the list of edges in a mesh topology. """
- def CollapseEdge(self,topologyEdgeIndex):
-  """
+    """ Represents an entry point to the list of edges in a mesh topology. """
+
+    def CollapseEdge(self, topologyEdgeIndex):
+        """
   CollapseEdge(self: MeshTopologyEdgeList,topologyEdgeIndex: int) -> bool
 
   
@@ -1961,9 +2102,10 @@ class MeshTopologyEdgeList(object):
 
    Returns: true if successful.
   """
-  pass
- def EdgeLine(self,topologyEdgeIndex):
-  """
+        pass
+
+    def EdgeLine(self, topologyEdgeIndex):
+        """
   EdgeLine(self: MeshTopologyEdgeList,topologyEdgeIndex: int) -> Line
 
   
@@ -1976,9 +2118,12 @@ class MeshTopologyEdgeList(object):
 
    Returns: Line along edge. If input is not valid,an Invalid Line is returned.
   """
-  pass
- def GetConnectedFaces(self,topologyEdgeIndex,faceOrientationMatchesEdgeDirection=None):
-  """
+        pass
+
+    def GetConnectedFaces(
+        self, topologyEdgeIndex, faceOrientationMatchesEdgeDirection=None
+    ):
+        """
   GetConnectedFaces(self: MeshTopologyEdgeList,topologyEdgeIndex: int) -> (Array[int],Array[bool])
 
   
@@ -2003,9 +2148,10 @@ class MeshTopologyEdgeList(object):
 
    Returns: An array of face indices the edge borders. This might be empty on error.
   """
-  pass
- def GetEdgeIndex(self,topologyVertex1,topologyVertex2):
-  """
+        pass
+
+    def GetEdgeIndex(self, topologyVertex1, topologyVertex2):
+        """
   GetEdgeIndex(self: MeshTopologyEdgeList,topologyVertex1: int,topologyVertex2: int) -> int
 
   
@@ -2026,9 +2172,10 @@ class MeshTopologyEdgeList(object):
 
    Returns: The edge index.
   """
-  pass
- def GetEdgesForFace(self,faceIndex,sameOrientation=None):
-  """
+        pass
+
+    def GetEdgesForFace(self, faceIndex, sameOrientation=None):
+        """
   GetEdgesForFace(self: MeshTopologyEdgeList,faceIndex: int) -> (Array[int],Array[bool])
 
   
@@ -2053,9 +2200,10 @@ class MeshTopologyEdgeList(object):
 
    Returns: A new array of indices to the topological edges that are connected with the specified face.
   """
-  pass
- def GetTopologyVertices(self,topologyEdgeIndex):
-  """
+        pass
+
+    def GetTopologyVertices(self, topologyEdgeIndex):
+        """
   GetTopologyVertices(self: MeshTopologyEdgeList,topologyEdgeIndex: int) -> IndexPair
 
   
@@ -2068,9 +2216,10 @@ class MeshTopologyEdgeList(object):
 
    Returns: The pair of vertex indices the edge connects.
   """
-  pass
- def IsHidden(self,topologyEdgeIndex):
-  """
+        pass
+
+    def IsHidden(self, topologyEdgeIndex):
+        """
   IsHidden(self: MeshTopologyEdgeList,topologyEdgeIndex: int) -> bool
 
   
@@ -2089,9 +2238,10 @@ class MeshTopologyEdgeList(object):
 
    Returns: true if mesh topology edge is hidden.
   """
-  pass
- def IsSwappableEdge(self,topologyEdgeIndex):
-  """
+        pass
+
+    def IsSwappableEdge(self, topologyEdgeIndex):
+        """
   IsSwappableEdge(self: MeshTopologyEdgeList,topologyEdgeIndex: int) -> bool
 
   
@@ -2108,9 +2258,10 @@ class MeshTopologyEdgeList(object):
 
    Returns: true if edge can be swapped.
   """
-  pass
- def SplitEdge(self,topologyEdgeIndex,*__args):
-  """
+        pass
+
+    def SplitEdge(self, topologyEdgeIndex, *__args):
+        """
   SplitEdge(self: MeshTopologyEdgeList,topologyEdgeIndex: int,point: Point3d) -> bool
 
   
@@ -2139,9 +2290,10 @@ class MeshTopologyEdgeList(object):
 
    Returns: true if successful
   """
-  pass
- def SwapEdge(self,topologyEdgeIndex):
-  """
+        pass
+
+    def SwapEdge(self, topologyEdgeIndex):
+        """
   SwapEdge(self: MeshTopologyEdgeList,topologyEdgeIndex: int) -> bool
 
   
@@ -2154,9 +2306,10 @@ class MeshTopologyEdgeList(object):
 
    Returns: true if successful.
   """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the amount of edges in this list.
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the amount of edges in this list.
 
 
 
@@ -2167,17 +2320,19 @@ Get: Count(self: MeshTopologyEdgeList) -> int
 """
 
 
-
-class MeshTopologyVertexList(object,IEnumerable[Point3f],IEnumerable,IRhinoTable[Point3f]):
- """
+class MeshTopologyVertexList(
+    object, IEnumerable[Point3f], IEnumerable, IRhinoTable[Point3f]
+):
+    """
  Provides access to the mesh topology vertices of a mesh. Topology vertices are
 
     sets of vertices in the MeshVertexList that can topologically be considered the
 
     same vertex.
  """
- def ConnectedFaces(self,topologyVertexIndex):
-  """
+
+    def ConnectedFaces(self, topologyVertexIndex):
+        """
   ConnectedFaces(self: MeshTopologyVertexList,topologyVertexIndex: int) -> Array[int]
 
   
@@ -2194,9 +2349,10 @@ class MeshTopologyVertexList(object,IEnumerable[Point3f],IEnumerable,IRhinoTable
 
     null if no faces are connected to this vertex.
   """
-  pass
- def ConnectedTopologyVertices(self,topologyVertexIndex,sorted=None):
-  """
+        pass
+
+    def ConnectedTopologyVertices(self, topologyVertexIndex, sorted=None):
+        """
   ConnectedTopologyVertices(self: MeshTopologyVertexList,topologyVertexIndex: int,sorted: bool) -> Array[int]
 
   
@@ -2233,9 +2389,10 @@ class MeshTopologyVertexList(object,IEnumerable[Point3f],IEnumerable,IRhinoTable
 
     null if no vertices are connected to this vertex.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: MeshTopologyVertexList) -> IEnumerator[Point3f]
 
   
@@ -2244,9 +2401,10 @@ class MeshTopologyVertexList(object,IEnumerable[Point3f],IEnumerable,IRhinoTable
 
    Returns: The enumerator.
   """
-  pass
- def IndicesFromFace(self,faceIndex):
-  """
+        pass
+
+    def IndicesFromFace(self, faceIndex):
+        """
   IndicesFromFace(self: MeshTopologyVertexList,faceIndex: int) -> Array[int]
 
   
@@ -2259,9 +2417,10 @@ class MeshTopologyVertexList(object,IEnumerable[Point3f],IEnumerable,IRhinoTable
 
    Returns: An array of vertex indices.
   """
-  pass
- def IsHidden(self,topologyVertexIndex):
-  """
+        pass
+
+    def IsHidden(self, topologyVertexIndex):
+        """
   IsHidden(self: MeshTopologyVertexList,topologyVertexIndex: int) -> bool
 
   
@@ -2280,9 +2439,10 @@ class MeshTopologyVertexList(object,IEnumerable[Point3f],IEnumerable,IRhinoTable
 
    Returns: true if mesh topology vertex is hidden.
   """
-  pass
- def MeshVertexIndices(self,topologyVertexIndex):
-  """
+        pass
+
+    def MeshVertexIndices(self, topologyVertexIndex):
+        """
   MeshVertexIndices(self: MeshTopologyVertexList,topologyVertexIndex: int) -> Array[int]
 
   
@@ -2295,9 +2455,10 @@ class MeshTopologyVertexList(object,IEnumerable[Point3f],IEnumerable,IRhinoTable
 
    Returns: Indices of all vertices that in Mesh.Vertices that a topology vertex represents.
   """
-  pass
- def SortEdges(self,topologyVertexIndex=None):
-  """
+        pass
+
+    def SortEdges(self, topologyVertexIndex=None):
+        """
   SortEdges(self: MeshTopologyVertexList,topologyVertexIndex: int) -> bool
 
   
@@ -2350,9 +2511,10 @@ class MeshTopologyVertexList(object,IEnumerable[Point3f],IEnumerable,IRhinoTable
 
    Returns: true on success.
   """
-  pass
- def TopologyVertexIndex(self,vertexIndex):
-  """
+        pass
+
+    def TopologyVertexIndex(self, vertexIndex):
+        """
   TopologyVertexIndex(self: MeshTopologyVertexList,vertexIndex: int) -> int
 
   
@@ -2367,27 +2529,34 @@ class MeshTopologyVertexList(object,IEnumerable[Point3f],IEnumerable,IRhinoTable
 
    Returns: Index of a topology vertex in the Mesh.TopologyVertices.
   """
-  pass
- def __contains__(self,*args):
-  """ __contains__[Point3f](enumerable: IEnumerable[Point3f],value: Point3f) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the number of mesh topology vertices.
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[Point3f](enumerable: IEnumerable[Point3f],value: Point3f) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the number of mesh topology vertices.
 
 
 
@@ -2398,11 +2567,11 @@ Get: Count(self: MeshTopologyVertexList) -> int
 """
 
 
+class MeshVertexColorList(object, IEnumerable[Color], IEnumerable, IRhinoTable[Color]):
+    """ Provides access to the vertex colors of a mesh object. """
 
-class MeshVertexColorList(object,IEnumerable[Color],IEnumerable,IRhinoTable[Color]):
- """ Provides access to the vertex colors of a mesh object. """
- def Add(self,*__args):
-  """
+    def Add(self, *__args):
+        """
   Add(self: MeshVertexColorList,color: Color) -> int
 
   
@@ -2431,9 +2600,10 @@ class MeshVertexColorList(object,IEnumerable[Color],IEnumerable,IRhinoTable[Colo
 
    Returns: The index of the newly added color.
   """
-  pass
- def AppendColors(self,colors):
-  """
+        pass
+
+    def AppendColors(self, colors):
+        """
   AppendColors(self: MeshVertexColorList,colors: Array[Color]) -> bool
 
   
@@ -2452,16 +2622,18 @@ class MeshVertexColorList(object,IEnumerable[Color],IEnumerable,IRhinoTable[Colo
 
    Returns: true on success,false on failure.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: MeshVertexColorList)
 
    Clears the vertex color list on the mesh.
   """
-  pass
- def CreateMonotoneMesh(self,baseColor):
-  """
+        pass
+
+    def CreateMonotoneMesh(self, baseColor):
+        """
   CreateMonotoneMesh(self: MeshVertexColorList,baseColor: Color) -> bool
 
   
@@ -2474,9 +2646,10 @@ class MeshVertexColorList(object,IEnumerable[Color],IEnumerable,IRhinoTable[Colo
 
    Returns: true on success,false on failure.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: MeshVertexColorList) -> IEnumerator[Color]
 
   
@@ -2485,9 +2658,10 @@ class MeshVertexColorList(object,IEnumerable[Color],IEnumerable,IRhinoTable[Colo
 
    Returns: The enumerator.
   """
-  pass
- def SetColor(self,*__args):
-  """
+        pass
+
+    def SetColor(self, *__args):
+        """
   SetColor(self: MeshVertexColorList,face: MeshFace,color: Color) -> bool
 
   
@@ -2562,9 +2736,10 @@ class MeshVertexColorList(object,IEnumerable[Color],IEnumerable,IRhinoTable[Colo
 
    Returns: true on success,false on failure.
   """
-  pass
- def SetColors(self,colors):
-  """
+        pass
+
+    def SetColors(self, colors):
+        """
   SetColors(self: MeshVertexColorList,colors: Array[Color]) -> bool
 
   
@@ -2583,30 +2758,38 @@ class MeshVertexColorList(object,IEnumerable[Color],IEnumerable,IRhinoTable[Colo
 
    Returns: true on success,false on failure.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__[Color](enumerable: IEnumerable[Color],value: Color) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the number of mesh colors.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[Color](enumerable: IEnumerable[Color],value: Color) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the number of mesh colors.
 
 
 
@@ -2618,8 +2801,8 @@ Set: Count(self: MeshVertexColorList)=value
 
 """
 
- Tag=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a mapping information for the mesh associated with these vertex colors.
+    Tag = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a mapping information for the mesh associated with these vertex colors.
 
 
 
@@ -2632,11 +2815,11 @@ Set: Tag(self: MeshVertexColorList)=value
 """
 
 
+class MeshVertexList(object, IEnumerable[Point3f], IEnumerable, IRhinoTable[Point3f]):
+    """ Provides access to the vertices and vertex-related functionality of a mesh. """
 
-class MeshVertexList(object,IEnumerable[Point3f],IEnumerable,IRhinoTable[Point3f]):
- """ Provides access to the vertices and vertex-related functionality of a mesh. """
- def Add(self,*__args):
-  """
+    def Add(self, *__args):
+        """
   Add(self: MeshVertexList,vertex: Point3f) -> int
 
   
@@ -2693,19 +2876,22 @@ class MeshVertexList(object,IEnumerable[Point3f],IEnumerable,IRhinoTable[Point3f
 
    Returns: The index of the newly added vertex.
   """
-  pass
- def AddVertices(self,vertices):
-  """ AddVertices(self: MeshVertexList,vertices: IEnumerable[Point3f])AddVertices(self: MeshVertexList,vertices: IEnumerable[Point3d]) """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def AddVertices(self, vertices):
+        """ AddVertices(self: MeshVertexList,vertices: IEnumerable[Point3f])AddVertices(self: MeshVertexList,vertices: IEnumerable[Point3d]) """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: MeshVertexList)
 
    Clear the Vertex list on the mesh.
   """
-  pass
- def CombineIdentical(self,ignoreNormals,ignoreAdditional):
-  """
+        pass
+
+    def CombineIdentical(self, ignoreNormals, ignoreAdditional):
+        """
   CombineIdentical(self: MeshVertexList,ignoreNormals: bool,ignoreAdditional: bool) -> bool
 
   
@@ -2726,9 +2912,10 @@ class MeshVertexList(object,IEnumerable[Point3f],IEnumerable,IRhinoTable[Point3f
 
    Returns: true if the mesh is changed,in which case the mesh will have fewer vertices than before.
   """
-  pass
- def CullUnused(self):
-  """
+        pass
+
+    def CullUnused(self):
+        """
   CullUnused(self: MeshVertexList) -> int
 
   
@@ -2737,9 +2924,10 @@ class MeshVertexList(object,IEnumerable[Point3f],IEnumerable,IRhinoTable[Point3f
 
    Returns: The number of unused vertices that were removed.
   """
-  pass
- def GetConnectedVertices(self,vertexIndex):
-  """
+        pass
+
+    def GetConnectedVertices(self, vertexIndex):
+        """
   GetConnectedVertices(self: MeshVertexList,vertexIndex: int) -> Array[int]
 
   
@@ -2752,9 +2940,10 @@ class MeshVertexList(object,IEnumerable[Point3f],IEnumerable,IRhinoTable[Point3f
 
    Returns: An array of vertex indices that are connected with the specified vertex.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: MeshVertexList) -> IEnumerator[Point3f]
 
   
@@ -2763,9 +2952,10 @@ class MeshVertexList(object,IEnumerable[Point3f],IEnumerable,IRhinoTable[Point3f
 
    Returns: The enumerator.
   """
-  pass
- def GetTopologicalIndenticalVertices(self,vertexIndex):
-  """
+        pass
+
+    def GetTopologicalIndenticalVertices(self, vertexIndex):
+        """
   GetTopologicalIndenticalVertices(self: MeshVertexList,vertexIndex: int) -> Array[int]
 
   
@@ -2784,9 +2974,10 @@ class MeshVertexList(object,IEnumerable[Point3f],IEnumerable,IRhinoTable[Point3f
 
     array includes vertexIndex. Returns null on failure.
   """
-  pass
- def GetVertexFaces(self,vertexIndex):
-  """
+        pass
+
+    def GetVertexFaces(self, vertexIndex):
+        """
   GetVertexFaces(self: MeshVertexList,vertexIndex: int) -> Array[int]
 
   
@@ -2799,9 +2990,10 @@ class MeshVertexList(object,IEnumerable[Point3f],IEnumerable,IRhinoTable[Point3f
 
    Returns: An array of indices of faces on success,null on failure.
   """
-  pass
- def Hide(self,vertexIndex):
-  """
+        pass
+
+    def Hide(self, vertexIndex):
+        """
   Hide(self: MeshVertexList,vertexIndex: int)
 
    Hides the vertex at the given index.
@@ -2810,16 +3002,18 @@ class MeshVertexList(object,IEnumerable[Point3f],IEnumerable,IRhinoTable[Point3f
 
    vertexIndex: Index of vertex to hide.
   """
-  pass
- def HideAll(self):
-  """
+        pass
+
+    def HideAll(self):
+        """
   HideAll(self: MeshVertexList)
 
    Hides all vertices in the mesh.
   """
-  pass
- def IsHidden(self,vertexIndex):
-  """
+        pass
+
+    def IsHidden(self, vertexIndex):
+        """
   IsHidden(self: MeshVertexList,vertexIndex: int) -> bool
 
   
@@ -2832,9 +3026,10 @@ class MeshVertexList(object,IEnumerable[Point3f],IEnumerable,IRhinoTable[Point3f
 
    Returns: true if the vertex is hidden,false if it is not.
   """
-  pass
- def Remove(self,*__args):
-  """
+        pass
+
+    def Remove(self, *__args):
+        """
   Remove(self: MeshVertexList,indices: IEnumerable[int],shrinkFaces: bool) -> bool
 
   Remove(self: MeshVertexList,index: int,shrinkFaces: bool) -> bool
@@ -2851,9 +3046,10 @@ class MeshVertexList(object,IEnumerable[Point3f],IEnumerable,IRhinoTable[Point3f
 
    Returns: true on success,false on failure.
   """
-  pass
- def SetVertex(self,index,*__args):
-  """
+        pass
+
+    def SetVertex(self, index, *__args):
+        """
   SetVertex(self: MeshVertexList,index: int,vertex: Point3f) -> bool
 
   
@@ -2950,9 +3146,10 @@ class MeshVertexList(object,IEnumerable[Point3f],IEnumerable,IRhinoTable[Point3f
 
    Returns: true on success,false on failure.
   """
-  pass
- def Show(self,vertexIndex):
-  """
+        pass
+
+    def Show(self, vertexIndex):
+        """
   Show(self: MeshVertexList,vertexIndex: int)
 
    Shows the vertex at the given index.
@@ -2961,16 +3158,18 @@ class MeshVertexList(object,IEnumerable[Point3f],IEnumerable,IRhinoTable[Point3f
 
    vertexIndex: Index of vertex to show.
   """
-  pass
- def ShowAll(self):
-  """
+        pass
+
+    def ShowAll(self):
+        """
   ShowAll(self: MeshVertexList)
 
    Shows all vertices in the mesh.
   """
-  pass
- def ToFloatArray(self):
-  """
+        pass
+
+    def ToFloatArray(self):
+        """
   ToFloatArray(self: MeshVertexList) -> Array[Single]
 
   
@@ -2979,9 +3178,10 @@ class MeshVertexList(object,IEnumerable[Point3f],IEnumerable,IRhinoTable[Point3f
 
    Returns: The float array.
   """
-  pass
- def ToPoint3dArray(self):
-  """
+        pass
+
+    def ToPoint3dArray(self):
+        """
   ToPoint3dArray(self: MeshVertexList) -> Array[Point3d]
 
   
@@ -2990,9 +3190,10 @@ class MeshVertexList(object,IEnumerable[Point3f],IEnumerable,IRhinoTable[Point3f
 
    Returns: A new array.
   """
-  pass
- def ToPoint3fArray(self):
-  """
+        pass
+
+    def ToPoint3fArray(self):
+        """
   ToPoint3fArray(self: MeshVertexList) -> Array[Point3f]
 
   
@@ -3001,30 +3202,38 @@ class MeshVertexList(object,IEnumerable[Point3f],IEnumerable,IRhinoTable[Point3f
 
    Returns: A new array.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__[Point3f](enumerable: IEnumerable[Point3f],value: Point3f) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the number of mesh vertices.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[Point3f](enumerable: IEnumerable[Point3f],value: Point3f) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the number of mesh vertices.
 
 
 
@@ -3037,11 +3246,13 @@ Set: Count(self: MeshVertexList)=value
 """
 
 
+class MeshVertexNormalList(
+    object, IEnumerable[Vector3f], IEnumerable, IRhinoTable[Vector3f]
+):
+    """ Provides access to the Vertex Normals of a Mesh. """
 
-class MeshVertexNormalList(object,IEnumerable[Vector3f],IEnumerable,IRhinoTable[Vector3f]):
- """ Provides access to the Vertex Normals of a Mesh. """
- def Add(self,*__args):
-  """
+    def Add(self, *__args):
+        """
   Add(self: MeshVertexNormalList,normal: Vector3f) -> int
 
   
@@ -3098,9 +3309,10 @@ class MeshVertexNormalList(object,IEnumerable[Vector3f],IEnumerable,IRhinoTable[
 
    Returns: The index of the newly added vertex normal.
   """
-  pass
- def AddRange(self,normals):
-  """
+        pass
+
+    def AddRange(self, normals):
+        """
   AddRange(self: MeshVertexNormalList,normals: Array[Vector3f]) -> bool
 
   
@@ -3113,16 +3325,18 @@ class MeshVertexNormalList(object,IEnumerable[Vector3f],IEnumerable,IRhinoTable[
 
    Returns: true on success,false on failure.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: MeshVertexNormalList)
 
    Clears the vertex normal collection on the mesh.
   """
-  pass
- def ComputeNormals(self):
-  """
+        pass
+
+    def ComputeNormals(self):
+        """
   ComputeNormals(self: MeshVertexNormalList) -> bool
 
   
@@ -3131,9 +3345,10 @@ class MeshVertexNormalList(object,IEnumerable[Vector3f],IEnumerable,IRhinoTable[
 
    Returns: true on success,false on failure.
   """
-  pass
- def Flip(self):
-  """
+        pass
+
+    def Flip(self):
+        """
   Flip(self: MeshVertexNormalList)
 
    Reverses direction of all vertex normals
@@ -3142,9 +3357,10 @@ class MeshVertexNormalList(object,IEnumerable[Vector3f],IEnumerable,IRhinoTable[
 
     false)
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: MeshVertexNormalList) -> IEnumerator[Vector3f]
 
   
@@ -3153,9 +3369,10 @@ class MeshVertexNormalList(object,IEnumerable[Vector3f],IEnumerable,IRhinoTable[
 
    Returns: The enumerator.
   """
-  pass
- def SetNormal(self,index,*__args):
-  """
+        pass
+
+    def SetNormal(self, index, *__args):
+        """
   SetNormal(self: MeshVertexNormalList,index: int,normal: Vector3f) -> bool
 
   
@@ -3260,9 +3477,10 @@ class MeshVertexNormalList(object,IEnumerable[Vector3f],IEnumerable,IRhinoTable[
 
    Returns: true on success,false on failure.
   """
-  pass
- def SetNormals(self,normals):
-  """
+        pass
+
+    def SetNormals(self, normals):
+        """
   SetNormals(self: MeshVertexNormalList,normals: Array[Vector3f]) -> bool
 
   
@@ -3275,9 +3493,10 @@ class MeshVertexNormalList(object,IEnumerable[Vector3f],IEnumerable,IRhinoTable[
 
    Returns: true on success,false on failure.
   """
-  pass
- def UnitizeNormals(self):
-  """
+        pass
+
+    def UnitizeNormals(self):
+        """
   UnitizeNormals(self: MeshVertexNormalList) -> bool
 
   
@@ -3286,30 +3505,38 @@ class MeshVertexNormalList(object,IEnumerable[Vector3f],IEnumerable,IRhinoTable[
 
    Returns: true on success,false on failure.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__[Vector3f](enumerable: IEnumerable[Vector3f],value: Vector3f) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the number of mesh vertex normals.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[Vector3f](enumerable: IEnumerable[Vector3f],value: Vector3f) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the number of mesh vertex normals.
 
 
 
@@ -3322,11 +3549,17 @@ Set: Count(self: MeshVertexNormalList)=value
 """
 
 
+class NurbsCurveKnotList(
+    object,
+    IEnumerable[float],
+    IEnumerable,
+    IRhinoTable[float],
+    IEpsilonComparable[NurbsCurveKnotList],
+):
+    """ Provides access to the knot vector of a nurbs curve. """
 
-class NurbsCurveKnotList(object,IEnumerable[float],IEnumerable,IRhinoTable[float],IEpsilonComparable[NurbsCurveKnotList]):
- """ Provides access to the knot vector of a nurbs curve. """
- def ClampEnd(self,end):
-  """
+    def ClampEnd(self, end):
+        """
   ClampEnd(self: NurbsCurveKnotList,end: CurveEnd) -> bool
 
   
@@ -3339,9 +3572,10 @@ class NurbsCurveKnotList(object,IEnumerable[float],IEnumerable,IRhinoTable[float
 
    Returns: true on success,false on failure.
   """
-  pass
- def CreatePeriodicKnots(self,knotSpacing):
-  """
+        pass
+
+    def CreatePeriodicKnots(self, knotSpacing):
+        """
   CreatePeriodicKnots(self: NurbsCurveKnotList,knotSpacing: float) -> bool
 
   
@@ -3362,9 +3596,10 @@ class NurbsCurveKnotList(object,IEnumerable[float],IEnumerable,IRhinoTable[float
 
    Returns: true on success,false on failure.
   """
-  pass
- def CreateUniformKnots(self,knotSpacing):
-  """
+        pass
+
+    def CreateUniformKnots(self, knotSpacing):
+        """
   CreateUniformKnots(self: NurbsCurveKnotList,knotSpacing: float) -> bool
 
   
@@ -3385,9 +3620,10 @@ class NurbsCurveKnotList(object,IEnumerable[float],IEnumerable,IRhinoTable[float
 
    Returns: true on success,false on failure.
   """
-  pass
- def EnsurePrivateCopy(self):
-  """
+        pass
+
+    def EnsurePrivateCopy(self):
+        """
   EnsurePrivateCopy(self: NurbsCurveKnotList)
 
    If you want to keep a copy of this class around by holding onto it in a variable after a command
@@ -3400,18 +3636,20 @@ class NurbsCurveKnotList(object,IEnumerable[float],IEnumerable,IRhinoTable[float
 
      call this function as many times as you want.
   """
-  pass
- def EpsilonEquals(self,other,epsilon):
-  """
+        pass
+
+    def EpsilonEquals(self, other, epsilon):
+        """
   EpsilonEquals(self: NurbsCurveKnotList,other: NurbsCurveKnotList,epsilon: float) -> bool
 
   
 
    Check that all values in other are within epsilon of the values in this
   """
-  pass
- def InsertKnot(self,value,multiplicity=None):
-  """
+        pass
+
+    def InsertKnot(self, value, multiplicity=None):
+        """
   InsertKnot(self: NurbsCurveKnotList,value: float,multiplicity: int) -> bool
 
   
@@ -3450,9 +3688,10 @@ class NurbsCurveKnotList(object,IEnumerable[float],IEnumerable,IRhinoTable[float
 
    Returns: true on success,false on failure.
   """
-  pass
- def KnotMultiplicity(self,index):
-  """
+        pass
+
+    def KnotMultiplicity(self, index):
+        """
   KnotMultiplicity(self: NurbsCurveKnotList,index: int) -> int
 
   
@@ -3465,9 +3704,10 @@ class NurbsCurveKnotList(object,IEnumerable[float],IEnumerable,IRhinoTable[float
 
    Returns: The multiplicity (valence) of the knot.
   """
-  pass
- def SuperfluousKnot(self,start):
-  """
+        pass
+
+    def SuperfluousKnot(self, start):
+        """
   SuperfluousKnot(self: NurbsCurveKnotList,start: bool) -> float
 
   
@@ -3490,27 +3730,34 @@ class NurbsCurveKnotList(object,IEnumerable[float],IEnumerable,IRhinoTable[float
 
    Returns: A component.
   """
-  pass
- def __contains__(self,*args):
-  """ __contains__[float](enumerable: IEnumerable[float],value: float) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Total number of knots in this curve.
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[float](enumerable: IEnumerable[float],value: float) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Total number of knots in this curve.
 
 
 
@@ -3520,8 +3767,10 @@ Get: Count(self: NurbsCurveKnotList) -> int
 
 """
 
- IsClampedEnd=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether or not the knot vector is clamped at the end of the curve. 
+    IsClampedEnd = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether or not the knot vector is clamped at the end of the curve. 
 
    Clamped curves are coincident with the first and last control-point. This requires fully multiple knots.
 
@@ -3533,8 +3782,10 @@ Get: IsClampedEnd(self: NurbsCurveKnotList) -> bool
 
 """
 
- IsClampedStart=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether or not the knot vector is clamped at the start of the curve. 
+    IsClampedStart = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether or not the knot vector is clamped at the start of the curve. 
 
    Clamped curves start at the first control-point. This requires fully multiple knots.
 
@@ -3547,11 +3798,17 @@ Get: IsClampedStart(self: NurbsCurveKnotList) -> bool
 """
 
 
+class NurbsCurvePointList(
+    object,
+    IEnumerable[ControlPoint],
+    IEnumerable,
+    IRhinoTable[ControlPoint],
+    IEpsilonComparable[NurbsCurvePointList],
+):
+    """ Provides access to the control points of a nurbs curve. """
 
-class NurbsCurvePointList(object,IEnumerable[ControlPoint],IEnumerable,IRhinoTable[ControlPoint],IEpsilonComparable[NurbsCurvePointList]):
- """ Provides access to the control points of a nurbs curve. """
- def ChangeEndWeights(self,w0,w1):
-  """
+    def ChangeEndWeights(self, w0, w1):
+        """
   ChangeEndWeights(self: NurbsCurvePointList,w0: float,w1: float) -> bool
 
   
@@ -3570,9 +3827,10 @@ class NurbsCurvePointList(object,IEnumerable[ControlPoint],IEnumerable,IRhinoTab
 
    Returns: true on success,false on failure.
   """
-  pass
- def ControlPolygon(self):
-  """
+        pass
+
+    def ControlPolygon(self):
+        """
   ControlPolygon(self: NurbsCurvePointList) -> Polyline
 
   
@@ -3589,9 +3847,10 @@ class NurbsCurvePointList(object,IEnumerable[ControlPoint],IEnumerable,IRhinoTab
 
    Returns: A polyline connecting all control points.
   """
-  pass
- def EnsurePrivateCopy(self):
-  """
+        pass
+
+    def EnsurePrivateCopy(self):
+        """
   EnsurePrivateCopy(self: NurbsCurvePointList)
 
    If you want to keep a copy of this class around by holding onto it in a variable after a command
@@ -3604,18 +3863,20 @@ class NurbsCurvePointList(object,IEnumerable[ControlPoint],IEnumerable,IRhinoTab
 
      call this function as many times as you want.
   """
-  pass
- def EpsilonEquals(self,other,epsilon):
-  """
+        pass
+
+    def EpsilonEquals(self, other, epsilon):
+        """
   EpsilonEquals(self: NurbsCurvePointList,other: NurbsCurvePointList,epsilon: float) -> bool
 
   
 
    Check that all values in other are within epsilon of the values in this
   """
-  pass
- def MakeNonRational(self):
-  """
+        pass
+
+    def MakeNonRational(self):
+        """
   MakeNonRational(self: NurbsCurvePointList) -> bool
 
   
@@ -3624,9 +3885,10 @@ class NurbsCurvePointList(object,IEnumerable[ControlPoint],IEnumerable,IRhinoTab
 
    Returns: true on success,false on failure.
   """
-  pass
- def MakeRational(self):
-  """
+        pass
+
+    def MakeRational(self):
+        """
   MakeRational(self: NurbsCurvePointList) -> bool
 
   
@@ -3635,9 +3897,10 @@ class NurbsCurvePointList(object,IEnumerable[ControlPoint],IEnumerable,IRhinoTab
 
    Returns: true on success,false on failure.
   """
-  pass
- def SetPoint(self,index,*__args):
-  """
+        pass
+
+    def SetPoint(self, index, *__args):
+        """
   SetPoint(self: NurbsCurvePointList,index: int,point: Point4d) -> bool
 
   
@@ -3680,27 +3943,36 @@ class NurbsCurvePointList(object,IEnumerable[ControlPoint],IEnumerable,IRhinoTab
 
    weight: Weight of control-point.
   """
-  pass
- def __contains__(self,*args):
-  """ __contains__[ControlPoint](enumerable: IEnumerable[ControlPoint],value: ControlPoint) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- ControlPolygonLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the length of the polyline connecting all control points.
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[ControlPoint](enumerable: IEnumerable[ControlPoint],value: ControlPoint) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    ControlPolygonLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the length of the polyline connecting all control points.
 
 
 
@@ -3710,8 +3982,8 @@ Get: ControlPolygonLength(self: NurbsCurvePointList) -> float
 
 """
 
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of control points in this curve.
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of control points in this curve.
 
 
 
@@ -3722,11 +3994,17 @@ Get: Count(self: NurbsCurvePointList) -> int
 """
 
 
+class NurbsSurfaceKnotList(
+    object,
+    IEnumerable[float],
+    IEnumerable,
+    IRhinoTable[float],
+    IEpsilonComparable[NurbsSurfaceKnotList],
+):
+    """ Provides access to the knot vector of a nurbs surface. """
 
-class NurbsSurfaceKnotList(object,IEnumerable[float],IEnumerable,IRhinoTable[float],IEpsilonComparable[NurbsSurfaceKnotList]):
- """ Provides access to the knot vector of a nurbs surface. """
- def CreatePeriodicKnots(self,knotSpacing):
-  """
+    def CreatePeriodicKnots(self, knotSpacing):
+        """
   CreatePeriodicKnots(self: NurbsSurfaceKnotList,knotSpacing: float) -> bool
 
   
@@ -3747,9 +4025,10 @@ class NurbsSurfaceKnotList(object,IEnumerable[float],IEnumerable,IRhinoTable[flo
 
    Returns: true on success,false on failure.
   """
-  pass
- def CreateUniformKnots(self,knotSpacing):
-  """
+        pass
+
+    def CreateUniformKnots(self, knotSpacing):
+        """
   CreateUniformKnots(self: NurbsSurfaceKnotList,knotSpacing: float) -> bool
 
   
@@ -3770,9 +4049,10 @@ class NurbsSurfaceKnotList(object,IEnumerable[float],IEnumerable,IRhinoTable[flo
 
    Returns: true on success,false on failure.
   """
-  pass
- def EnsurePrivateCopy(self):
-  """
+        pass
+
+    def EnsurePrivateCopy(self):
+        """
   EnsurePrivateCopy(self: NurbsSurfaceKnotList)
 
    If you want to keep a copy of this class around by holding onto it in a variable after a command
@@ -3785,18 +4065,20 @@ class NurbsSurfaceKnotList(object,IEnumerable[float],IEnumerable,IRhinoTable[flo
 
      call this function as many times as you want.
   """
-  pass
- def EpsilonEquals(self,other,epsilon):
-  """
+        pass
+
+    def EpsilonEquals(self, other, epsilon):
+        """
   EpsilonEquals(self: NurbsSurfaceKnotList,other: NurbsSurfaceKnotList,epsilon: float) -> bool
 
   
 
    Check that all values in other are within epsilon of the values in this
   """
-  pass
- def InsertKnot(self,value,multiplicity=None):
-  """
+        pass
+
+    def InsertKnot(self, value, multiplicity=None):
+        """
   InsertKnot(self: NurbsSurfaceKnotList,value: float,multiplicity: int) -> bool
 
   
@@ -3835,9 +4117,10 @@ class NurbsSurfaceKnotList(object,IEnumerable[float],IEnumerable,IRhinoTable[flo
 
    Returns: true on success,false on failure.
   """
-  pass
- def KnotMultiplicity(self,index):
-  """
+        pass
+
+    def KnotMultiplicity(self, index):
+        """
   KnotMultiplicity(self: NurbsSurfaceKnotList,index: int) -> int
 
   
@@ -3850,9 +4133,10 @@ class NurbsSurfaceKnotList(object,IEnumerable[float],IEnumerable,IRhinoTable[flo
 
    Returns: The multiplicity (valence) of the knot.
   """
-  pass
- def SuperfluousKnot(self,start):
-  """
+        pass
+
+    def SuperfluousKnot(self, start):
+        """
   SuperfluousKnot(self: NurbsSurfaceKnotList,start: bool) -> float
 
   
@@ -3875,27 +4159,36 @@ class NurbsSurfaceKnotList(object,IEnumerable[float],IEnumerable,IRhinoTable[flo
 
    Returns: A component.
   """
-  pass
- def __contains__(self,*args):
-  """ __contains__[float](enumerable: IEnumerable[float],value: float) -> bool """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- ClampedAtEnd=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determines if a knot vector is clamped.
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[float](enumerable: IEnumerable[float],value: float) -> bool """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    ClampedAtEnd = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Determines if a knot vector is clamped.
 
 
 
@@ -3905,8 +4198,10 @@ Get: ClampedAtEnd(self: NurbsSurfaceKnotList) -> bool
 
 """
 
- ClampedAtStart=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determines if a knot vector is clamped.
+    ClampedAtStart = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Determines if a knot vector is clamped.
 
 
 
@@ -3916,8 +4211,8 @@ Get: ClampedAtStart(self: NurbsSurfaceKnotList) -> bool
 
 """
 
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the total number of knots in this curve.
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the total number of knots in this curve.
 
 
 
@@ -3928,11 +4223,16 @@ Get: Count(self: NurbsSurfaceKnotList) -> int
 """
 
 
+class NurbsSurfacePointList(
+    object,
+    IEnumerable[ControlPoint],
+    IEnumerable,
+    IEpsilonComparable[NurbsSurfacePointList],
+):
+    """ Provides access to the control points of a nurbs surface. """
 
-class NurbsSurfacePointList(object,IEnumerable[ControlPoint],IEnumerable,IEpsilonComparable[NurbsSurfacePointList]):
- """ Provides access to the control points of a nurbs surface. """
- def EnsurePrivateCopy(self):
-  """
+    def EnsurePrivateCopy(self):
+        """
   EnsurePrivateCopy(self: NurbsSurfacePointList)
 
    If you want to keep a copy of this class around by holding onto it in a variable after a command
@@ -3945,18 +4245,20 @@ class NurbsSurfacePointList(object,IEnumerable[ControlPoint],IEnumerable,IEpsilo
 
      call this function as many times as you want.
   """
-  pass
- def EpsilonEquals(self,other,epsilon):
-  """
+        pass
+
+    def EpsilonEquals(self, other, epsilon):
+        """
   EpsilonEquals(self: NurbsSurfacePointList,other: NurbsSurfacePointList,epsilon: float) -> bool
 
   
 
    Check that all values in other are within epsilon of the values in this
   """
-  pass
- def GetControlPoint(self,u,v):
-  """
+        pass
+
+    def GetControlPoint(self, u, v):
+        """
   GetControlPoint(self: NurbsSurfacePointList,u: int,v: int) -> ControlPoint
 
   
@@ -3971,9 +4273,10 @@ class NurbsSurfacePointList(object,IEnumerable[ControlPoint],IEnumerable,IEpsilo
 
    Returns: The control point at the given (u,v) index.
   """
-  pass
- def GetGrevillePoint(self,u,v):
-  """
+        pass
+
+    def GetGrevillePoint(self, u, v):
+        """
   GetGrevillePoint(self: NurbsSurfacePointList,u: int,v: int) -> Point2d
 
   
@@ -3992,9 +4295,10 @@ class NurbsSurfacePointList(object,IEnumerable[ControlPoint],IEnumerable,IEpsilo
 
    Returns: A Surface UV coordinate on success,Point2d.Unset on failure.
   """
-  pass
- def SetControlPoint(self,u,v,cp):
-  """
+        pass
+
+    def SetControlPoint(self, u, v, cp):
+        """
   SetControlPoint(self: NurbsSurfacePointList,u: int,v: int,cp: ControlPoint) -> bool
 
   
@@ -4027,21 +4331,26 @@ class NurbsSurfacePointList(object,IEnumerable[ControlPoint],IEnumerable,IEpsilo
 
    Returns: true on success,false on failure.
   """
-  pass
- def __contains__(self,*args):
-  """ __contains__[ControlPoint](enumerable: IEnumerable[ControlPoint],value: ControlPoint) -> bool """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- CountU=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of control points in the U direction of this surface.
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[ControlPoint](enumerable: IEnumerable[ControlPoint],value: ControlPoint) -> bool """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    CountU = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of control points in the U direction of this surface.
 
 
 
@@ -4051,8 +4360,8 @@ Get: CountU(self: NurbsSurfacePointList) -> int
 
 """
 
- CountV=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of control points in the V direction of this surface.
+    CountV = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of control points in the V direction of this surface.
 
 
 
@@ -4061,6 +4370,3 @@ Get: CountV(self: NurbsSurfacePointList) -> int
 
 
 """
-
-
-

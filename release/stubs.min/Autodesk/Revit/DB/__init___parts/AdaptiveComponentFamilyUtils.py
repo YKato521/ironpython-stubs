@@ -1,8 +1,9 @@
 class AdaptiveComponentFamilyUtils(object):
- """ An interface for Adaptive Component Instances. """
- @staticmethod
- def GetNumberOfAdaptivePoints(family):
-  """
+    """ An interface for Adaptive Component Instances. """
+
+    @staticmethod
+    def GetNumberOfAdaptivePoints(family):
+        """
   GetNumberOfAdaptivePoints(family: Family) -> int
 
   
@@ -15,10 +16,11 @@ class AdaptiveComponentFamilyUtils(object):
 
    Returns: Number of Adaptive Point Element References in Adaptive Component Family.
   """
-  pass
- @staticmethod
- def GetNumberOfPlacementPoints(family):
-  """
+        pass
+
+    @staticmethod
+    def GetNumberOfPlacementPoints(family):
+        """
   GetNumberOfPlacementPoints(family: Family) -> int
 
   
@@ -33,10 +35,11 @@ class AdaptiveComponentFamilyUtils(object):
 
     Family.
   """
-  pass
- @staticmethod
- def GetNumberOfShapeHandlePoints(family):
-  """
+        pass
+
+    @staticmethod
+    def GetNumberOfShapeHandlePoints(family):
+        """
   GetNumberOfShapeHandlePoints(family: Family) -> int
 
   
@@ -51,10 +54,11 @@ class AdaptiveComponentFamilyUtils(object):
 
     Component Family.
   """
-  pass
- @staticmethod
- def GetPlacementNumber(doc,refPointId):
-  """
+        pass
+
+    @staticmethod
+    def GetPlacementNumber(doc, refPointId):
+        """
   GetPlacementNumber(doc: Document,refPointId: ElementId) -> int
 
   
@@ -69,10 +73,11 @@ class AdaptiveComponentFamilyUtils(object):
 
    Returns: Placement number of the Adaptive Placement Point.
   """
-  pass
- @staticmethod
- def GetPointConstraintType(doc,refPointId):
-  """
+        pass
+
+    @staticmethod
+    def GetPointConstraintType(doc, refPointId):
+        """
   GetPointConstraintType(doc: Document,refPointId: ElementId) -> AdaptivePointConstraintType
 
   
@@ -87,10 +92,11 @@ class AdaptiveComponentFamilyUtils(object):
 
    Returns: Constraint type of the Adaptive Shape Handle Point.
   """
-  pass
- @staticmethod
- def GetPointOrientationType(doc,refPointId):
-  """
+        pass
+
+    @staticmethod
+    def GetPointOrientationType(doc, refPointId):
+        """
   GetPointOrientationType(doc: Document,refPointId: ElementId) -> AdaptivePointOrientationType
 
   
@@ -105,10 +111,11 @@ class AdaptiveComponentFamilyUtils(object):
 
    Returns: Orientation type of Adaptive Placement Point.
   """
-  pass
- @staticmethod
- def IsAdaptiveComponentFamily(family):
-  """
+        pass
+
+    @staticmethod
+    def IsAdaptiveComponentFamily(family):
+        """
   IsAdaptiveComponentFamily(family: Family) -> bool
 
   
@@ -121,10 +128,11 @@ class AdaptiveComponentFamilyUtils(object):
 
    Returns: True if the Family is an Adaptive Component Family.
   """
-  pass
- @staticmethod
- def IsAdaptivePlacementPoint(doc,refPointId):
-  """
+        pass
+
+    @staticmethod
+    def IsAdaptivePlacementPoint(doc, refPointId):
+        """
   IsAdaptivePlacementPoint(doc: Document,refPointId: ElementId) -> bool
 
   
@@ -139,10 +147,11 @@ class AdaptiveComponentFamilyUtils(object):
 
    Returns: True if the Point is an Adaptive Placement Point.
   """
-  pass
- @staticmethod
- def IsAdaptivePoint(doc,refPointId):
-  """
+        pass
+
+    @staticmethod
+    def IsAdaptivePoint(doc, refPointId):
+        """
   IsAdaptivePoint(doc: Document,refPointId: ElementId) -> bool
 
   
@@ -157,10 +166,11 @@ class AdaptiveComponentFamilyUtils(object):
 
    Returns: True if the Point is an Adaptive Point (Placement Point or Shape Handle Point).
   """
-  pass
- @staticmethod
- def IsAdaptiveShapeHandlePoint(doc,refPointId):
-  """
+        pass
+
+    @staticmethod
+    def IsAdaptiveShapeHandlePoint(doc, refPointId):
+        """
   IsAdaptiveShapeHandlePoint(doc: Document,refPointId: ElementId) -> bool
 
   
@@ -175,10 +185,11 @@ class AdaptiveComponentFamilyUtils(object):
 
    Returns: True if the Point is an Adaptive Shape Handle Point.
   """
-  pass
- @staticmethod
- def MakeAdaptivePoint(doc,refPointId,type):
-  """
+        pass
+
+    @staticmethod
+    def MakeAdaptivePoint(doc, refPointId, type):
+        """
   MakeAdaptivePoint(doc: Document,refPointId: ElementId,type: AdaptivePointType)
 
    Makes Reference Point an Adaptive Point or makes an Adaptive Point a Reference 
@@ -195,10 +206,11 @@ class AdaptiveComponentFamilyUtils(object):
 
    type: The Adaptive Point Type
   """
-  pass
- @staticmethod
- def SetPlacementNumber(doc,refPointId,placementNumber):
-  """
+        pass
+
+    @staticmethod
+    def SetPlacementNumber(doc, refPointId, placementNumber):
+        """
   SetPlacementNumber(doc: Document,refPointId: ElementId,placementNumber: int)
 
    Sets Placement Number of an Adaptive Placement Point.
@@ -211,10 +223,11 @@ class AdaptiveComponentFamilyUtils(object):
 
    placementNumber: Placement number of the Adaptive Placement Point.
   """
-  pass
- @staticmethod
- def SetPointConstraintType(doc,refPointId,constraintType):
-  """
+        pass
+
+    @staticmethod
+    def SetPointConstraintType(doc, refPointId, constraintType):
+        """
   SetPointConstraintType(doc: Document,refPointId: ElementId,constraintType: AdaptivePointConstraintType)
 
    Sets constrain type of an Adaptive Shape Handle Point.
@@ -227,10 +240,11 @@ class AdaptiveComponentFamilyUtils(object):
 
    constraintType: Constraint type of the Adaptive Shape Handle Point.
   """
-  pass
- @staticmethod
- def SetPointOrientationType(doc,refPointId,orientationType):
-  """
+        pass
+
+    @staticmethod
+    def SetPointOrientationType(doc, refPointId, orientationType):
+        """
   SetPointOrientationType(doc: Document,refPointId: ElementId,orientationType: AdaptivePointOrientationType)
 
    Sets orientation type of an Adaptive Placement Point.
@@ -243,21 +257,21 @@ class AdaptiveComponentFamilyUtils(object):
 
    orientationType: Orientation type of the Adaptive Placement Point.
   """
-  pass
- __all__=[
-  'GetNumberOfAdaptivePoints',
-  'GetNumberOfPlacementPoints',
-  'GetNumberOfShapeHandlePoints',
-  'GetPlacementNumber',
-  'GetPointConstraintType',
-  'GetPointOrientationType',
-  'IsAdaptiveComponentFamily',
-  'IsAdaptivePlacementPoint',
-  'IsAdaptivePoint',
-  'IsAdaptiveShapeHandlePoint',
-  'MakeAdaptivePoint',
-  'SetPlacementNumber',
-  'SetPointConstraintType',
-  'SetPointOrientationType',
- ]
+        pass
 
+    __all__ = [
+        "GetNumberOfAdaptivePoints",
+        "GetNumberOfPlacementPoints",
+        "GetNumberOfShapeHandlePoints",
+        "GetPlacementNumber",
+        "GetPointConstraintType",
+        "GetPointOrientationType",
+        "IsAdaptiveComponentFamily",
+        "IsAdaptivePlacementPoint",
+        "IsAdaptivePoint",
+        "IsAdaptiveShapeHandlePoint",
+        "MakeAdaptivePoint",
+        "SetPlacementNumber",
+        "SetPointConstraintType",
+        "SetPointOrientationType",
+    ]

@@ -1,7 +1,8 @@
 class IServiceProvider:
- """ Defines a mechanism for retrieving a service object; that is,an object that provides custom support to other objects. """
- def GetService(self,serviceType):
-  """
+    """ Defines a mechanism for retrieving a service object; that is,an object that provides custom support to other objects. """
+
+    def GetService(self, serviceType):
+        """
   GetService(self: IServiceProvider,serviceType: Type) -> object
 
   
@@ -14,7 +15,8 @@ class IServiceProvider:
 
    Returns: A service object of type serviceType.-or- null if there is no service object of type serviceType.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

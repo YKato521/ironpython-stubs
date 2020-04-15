@@ -8,16 +8,22 @@
 # no functions
 # classes
 
+
 class GH_Gradient(object, GH_ISerializable):
     """
-    GH_Gradient()
-    GH_Gradient(other: GH_Gradient)
+    GH_Gradient()
+
+    GH_Gradient(other: GH_Gradient)
+
     GH_Gradient(parameters: IEnumerable[float], colours: IEnumerable[Color])
     """
+
     def AddGrip(self, *__args):
         """
-        AddGrip(self: GH_Gradient, t: float, c0: Color, c1: Color) -> GH_Grip
-        AddGrip(self: GH_Gradient, grip: GH_Grip)AddGrip(self: GH_Gradient, t: float) -> GH_Grip
+        AddGrip(self: GH_Gradient, t: float, c0: Color, c1: Color) -> GH_Grip
+
+        AddGrip(self: GH_Gradient, grip: GH_Grip)AddGrip(self: GH_Gradient, t: float) -> GH_Grip
+
         AddGrip(self: GH_Gradient, t: float, c: Color) -> GH_Grip
         """
         pass
@@ -77,8 +83,10 @@ class GH_Gradient(object, GH_ISerializable):
 
     def NearestGrip(self, *__args):
         """
-        NearestGrip(self: GH_Gradient, t: float, side: GH_GripSide) -> int
-        NearestGrip(self: GH_Gradient, t: float) -> int
+        NearestGrip(self: GH_Gradient, t: float, side: GH_GripSide) -> int
+
+        NearestGrip(self: GH_Gradient, t: float) -> int
+
         NearestGrip(self: GH_Gradient, dest: RectangleF, pt: PointF, maxRadius: float) -> int
         """
         pass
@@ -148,54 +156,74 @@ class GH_Gradient(object, GH_ISerializable):
         """ Zebra() -> GH_Gradient """
         pass
 
-    def __getitem__(self, *args): #cannot find CLR method
+    def __getitem__(self, *args):  # cannot find CLR method
         """ x.__getitem__(y) <==> x[y] """
         pass
 
-    def __init__(self, *args): #cannot find CLR method
+    def __init__(self, *args):  # cannot find CLR method
         """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, *__args):
         """
-        __new__(cls: type)
-        __new__(cls: type, other: GH_Gradient)
+        __new__(cls: type)
+
+        __new__(cls: type, other: GH_Gradient)
+
         __new__(cls: type, parameters: IEnumerable[float], colours: IEnumerable[Color])
         """
         pass
 
-    def __repr__(self, *args): #cannot find CLR method
+    def __repr__(self, *args):  # cannot find CLR method
         """ __repr__(self: object) -> str """
         pass
 
-    def __setitem__(self, *args): #cannot find CLR method
+    def __setitem__(self, *args):  # cannot find CLR method
         """ x.__setitem__(i, y) <==> x[i]= """
         pass
 
-    GripCount = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: GripCount(self: GH_Gradient) -> int
-
+    GripCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: GripCount(self: GH_Gradient) -> int
+
+
+
 """
 
-    Linear = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Linear(self: GH_Gradient) -> bool
-
-Set: Linear(self: GH_Gradient) = value
+    Linear = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Linear(self: GH_Gradient) -> bool
+
+
+
+Set: Linear(self: GH_Gradient) = value
+
 """
 
-    Locked = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Locked(self: GH_Gradient) -> bool
-
-Set: Locked(self: GH_Gradient) = value
+    Locked = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Locked(self: GH_Gradient) -> bool
+
+
+
+Set: Locked(self: GH_Gradient) = value
+
 """
 
-    SelectedGrip = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: SelectedGrip(self: GH_Gradient) -> GH_Grip
-
-Set: SelectedGrip(self: GH_Gradient) = value
-"""
+    SelectedGrip = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: SelectedGrip(self: GH_Gradient) -> GH_Grip
 
+
+
+Set: SelectedGrip(self: GH_Gradient) = value
+
+"""
 
     GradientChanged = None
     GradientChangedEventHandler = None
@@ -205,30 +233,42 @@ Set: SelectedGrip(self: GH_Gradient) = value
 
 class GH_GradientChangedEventArgs(EventArgs):
     """ GH_GradientChangedEventArgs(gradient: GH_Gradient, intermediate: bool) """
-    @staticmethod # known case of __new__
+
+    @staticmethod  # known case of __new__
     def __new__(self, gradient, intermediate):
         """ __new__(cls: type, gradient: GH_Gradient, intermediate: bool) """
         pass
 
-    Gradient = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Gradient(self: GH_GradientChangedEventArgs) -> GH_Gradient
-
+    Gradient = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Gradient(self: GH_GradientChangedEventArgs) -> GH_Gradient
+
+
+
 """
 
-    Intermediate = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Intermediate(self: GH_GradientChangedEventArgs) -> bool
-
-"""
+    Intermediate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Intermediate(self: GH_GradientChangedEventArgs) -> bool
 
+
+
+"""
 
 
 class GH_Grip(object, IComparable[GH_Grip], GH_ISerializable):
     """
-    GH_Grip()
-    GH_Grip(parameter: float, colour: Color)
-    GH_Grip(parameter: float, colourLeft: Color, colourRight: Color)
+    GH_Grip()
+
+    GH_Grip(parameter: float, colour: Color)
+
+    GH_Grip(parameter: float, colourLeft: Color, colourRight: Color)
+
     GH_Grip(other: GH_Grip)
     """
+
     @staticmethod
     def Blend(A, B, t):
         """ Blend(A: Color, B: Color, t: float) -> Color """
@@ -250,98 +290,133 @@ class GH_Grip(object, IComparable[GH_Grip], GH_ISerializable):
         """ Write(self: GH_Grip, writer: GH_IWriter) -> bool """
         pass
 
-    def __init__(self, *args): #cannot find CLR method
+    def __init__(self, *args):  # cannot find CLR method
         """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, *__args):
         """
-        __new__(cls: type)
-        __new__(cls: type, parameter: float, colour: Color)
-        __new__(cls: type, parameter: float, colourLeft: Color, colourRight: Color)
+        __new__(cls: type)
+
+        __new__(cls: type, parameter: float, colour: Color)
+
+        __new__(cls: type, parameter: float, colourLeft: Color, colourRight: Color)
+
         __new__(cls: type, other: GH_Grip)
         """
         pass
 
-    def __repr__(self, *args): #cannot find CLR method
+    def __repr__(self, *args):  # cannot find CLR method
         """ __repr__(self: object) -> str """
         pass
 
-    ColourLeft = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: ColourLeft(self: GH_Grip) -> Color
-
-Set: ColourLeft(self: GH_Grip) = value
+    ColourLeft = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: ColourLeft(self: GH_Grip) -> Color
+
+
+
+Set: ColourLeft(self: GH_Grip) = value
+
 """
 
-    ColourRight = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: ColourRight(self: GH_Grip) -> Color
-
-Set: ColourRight(self: GH_Grip) = value
+    ColourRight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: ColourRight(self: GH_Grip) -> Color
+
+
+
+Set: ColourRight(self: GH_Grip) = value
+
 """
 
-    GripId = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: GripId(self: GH_Grip) -> Guid
-
+    GripId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: GripId(self: GH_Grip) -> Guid
+
+
+
 """
 
-    IsValid = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: IsValid(self: GH_Grip) -> bool
-
+    IsValid = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: IsValid(self: GH_Grip) -> bool
+
+
+
 """
 
-    Parameter = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Parameter(self: GH_Grip) -> float
-
-Set: Parameter(self: GH_Grip) = value
+    Parameter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Parameter(self: GH_Grip) -> float
+
+
+
+Set: Parameter(self: GH_Grip) = value
+
 """
 
-    Selected = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Selected(self: GH_Grip) -> bool
-
-Set: Selected(self: GH_Grip) = value
+    Selected = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Selected(self: GH_Grip) -> bool
+
+
+
+Set: Selected(self: GH_Grip) = value
+
 """
 
-    Type = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Type(self: GH_Grip) -> GH_GripType
-
-"""
+    Type = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Type(self: GH_Grip) -> GH_GripType
 
+
+
+"""
 
 
 class GH_GripSide(Enum, IComparable, IFormattable, IConvertible):
     """ enum GH_GripSide, values: Both (0), Left (1), Right (2) """
-    def __eq__(self, *args): #cannot find CLR method
+
+    def __eq__(self, *args):  # cannot find CLR method
         """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
         pass
 
-    def __format__(self, *args): #cannot find CLR method
+    def __format__(self, *args):  # cannot find CLR method
         """ __format__(formattable: IFormattable, format: str) -> str """
         pass
 
-    def __ge__(self, *args): #cannot find CLR method
+    def __ge__(self, *args):  # cannot find CLR method
         pass
 
-    def __gt__(self, *args): #cannot find CLR method
+    def __gt__(self, *args):  # cannot find CLR method
         pass
 
-    def __init__(self, *args): #cannot find CLR method
+    def __init__(self, *args):  # cannot find CLR method
         """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
         pass
 
-    def __le__(self, *args): #cannot find CLR method
+    def __le__(self, *args):  # cannot find CLR method
         pass
 
-    def __lt__(self, *args): #cannot find CLR method
+    def __lt__(self, *args):  # cannot find CLR method
         pass
 
-    def __ne__(self, *args): #cannot find CLR method
+    def __ne__(self, *args):  # cannot find CLR method
         pass
 
-    def __reduce_ex__(self, *args): #cannot find CLR method
+    def __reduce_ex__(self, *args):  # cannot find CLR method
         pass
 
-    def __str__(self, *args): #cannot find CLR method
+    def __str__(self, *args):  # cannot find CLR method
         pass
 
     Both = None
@@ -352,41 +427,40 @@ class GH_GripSide(Enum, IComparable, IFormattable, IConvertible):
 
 class GH_GripType(Enum, IComparable, IFormattable, IConvertible):
     """ enum GH_GripType, values: Continuous (0), Discontinuous (1) """
-    def __eq__(self, *args): #cannot find CLR method
+
+    def __eq__(self, *args):  # cannot find CLR method
         """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
         pass
 
-    def __format__(self, *args): #cannot find CLR method
+    def __format__(self, *args):  # cannot find CLR method
         """ __format__(formattable: IFormattable, format: str) -> str """
         pass
 
-    def __ge__(self, *args): #cannot find CLR method
+    def __ge__(self, *args):  # cannot find CLR method
         pass
 
-    def __gt__(self, *args): #cannot find CLR method
+    def __gt__(self, *args):  # cannot find CLR method
         pass
 
-    def __init__(self, *args): #cannot find CLR method
+    def __init__(self, *args):  # cannot find CLR method
         """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
         pass
 
-    def __le__(self, *args): #cannot find CLR method
+    def __le__(self, *args):  # cannot find CLR method
         pass
 
-    def __lt__(self, *args): #cannot find CLR method
+    def __lt__(self, *args):  # cannot find CLR method
         pass
 
-    def __ne__(self, *args): #cannot find CLR method
+    def __ne__(self, *args):  # cannot find CLR method
         pass
 
-    def __reduce_ex__(self, *args): #cannot find CLR method
+    def __reduce_ex__(self, *args):  # cannot find CLR method
         pass
 
-    def __str__(self, *args): #cannot find CLR method
+    def __str__(self, *args):  # cannot find CLR method
         pass
 
     Continuous = None
     Discontinuous = None
     value__ = None
-
-

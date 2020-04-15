@@ -1,13 +1,14 @@
 class ImageKeyConverter(StringConverter):
- """
+    """
  Provides a type converter to convert data for an image key to and from another data type.
 
  
 
  ImageKeyConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: ImageKeyConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -26,9 +27,10 @@ class ImageKeyConverter(StringConverter):
 
    Returns: true to indicate the specified conversion can be performed; otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: ImageKeyConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -45,9 +47,10 @@ class ImageKeyConverter(StringConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: ImageKeyConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -72,9 +75,10 @@ class ImageKeyConverter(StringConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def GetStandardValues(self,context=None):
-  """
+        pass
+
+    def GetStandardValues(self, context=None):
+        """
   GetStandardValues(self: ImageKeyConverter,context: ITypeDescriptorContext) -> StandardValuesCollection
 
   
@@ -99,9 +103,10 @@ class ImageKeyConverter(StringConverter):
 
     image key values.
   """
-  pass
- def GetStandardValuesExclusive(self,context=None):
-  """
+        pass
+
+    def GetStandardValuesExclusive(self, context=None):
+        """
   GetStandardValuesExclusive(self: ImageKeyConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -128,9 +133,10 @@ class ImageKeyConverter(StringConverter):
 
     true.
   """
-  pass
- def GetStandardValuesSupported(self,context=None):
-  """
+        pass
+
+    def GetStandardValuesSupported(self, context=None):
+        """
   GetStandardValuesSupported(self: ImageKeyConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -153,12 +159,13 @@ class ImageKeyConverter(StringConverter):
 
    Returns: true to indicate a list of standard values is supported; otherwise,false. Always returns true.
   """
-  pass
- IncludeNoneAsStandardValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether null is valid in the System.ComponentModel.TypeConverter.StandardValuesCollection collection.
+        pass
+
+    IncludeNoneAsStandardValue = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether null is valid in the System.ComponentModel.TypeConverter.StandardValuesCollection collection.
 
 
 
 """
-
-

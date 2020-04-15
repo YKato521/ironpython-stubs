@@ -1,13 +1,16 @@
 class DWFExportOptions(CADExportOptions):
- """
+    """
  DWF Export options.
 
  
 
  DWFExportOptions()
  """
- CropBoxVisible=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether to export crop box.
+
+    CropBoxVisible = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether to export crop box.
 
 
 
@@ -19,8 +22,10 @@ Set: CropBoxVisible(self: DWFExportOptions)=value
 
 """
 
- ExportingAreas=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether to also export areas and rooms' geometry.
+    ExportingAreas = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether to also export areas and rooms' geometry.
 
 
 
@@ -32,8 +37,10 @@ Set: ExportingAreas(self: DWFExportOptions)=value
 
 """
 
- ExportObjectData=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether to include properties associated with elements.
+    ExportObjectData = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether to include properties associated with elements.
 
 
 
@@ -45,8 +52,10 @@ Set: ExportObjectData(self: DWFExportOptions)=value
 
 """
 
- ExportTexture=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether to export texture.
+    ExportTexture = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether to export texture.
 
 
 
@@ -58,8 +67,10 @@ Set: ExportTexture(self: DWFExportOptions)=value
 
 """
 
- ImageFormat=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Controls the compression level of images embedded.
+    ImageFormat = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Controls the compression level of images embedded.
 
 
 
@@ -71,8 +82,10 @@ Set: ImageFormat(self: DWFExportOptions)=value
 
 """
 
- ImageQuality=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Image quality level when compressed raster format(JPEG) is used.
+    ImageQuality = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Image quality level when compressed raster format(JPEG) is used.
 
 
 
@@ -84,8 +97,10 @@ Set: ImageQuality(self: DWFExportOptions)=value
 
 """
 
- MergedViews=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether to merge all views in one file.
+    MergedViews = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether to merge all views in one file.
 
 
 
@@ -97,8 +112,10 @@ Set: MergedViews(self: DWFExportOptions)=value
 
 """
 
- PaperFormat=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Standard paper format.
+    PaperFormat = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Standard paper format.
 
 
 
@@ -110,8 +127,10 @@ Set: PaperFormat(self: DWFExportOptions)=value
 
 """
 
- PortraitLayout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Paper orientation - Portrait/Landscape.
+    PortraitLayout = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Paper orientation - Portrait/Landscape.
 
 
 
@@ -123,8 +142,10 @@ Set: PortraitLayout(self: DWFExportOptions)=value
 
 """
 
- StopOnError=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether export process should stop when a view fails to export.
+    StopOnError = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether export process should stop when a view fails to export.
 
 
 
@@ -135,5 +156,3 @@ Get: StopOnError(self: DWFExportOptions) -> bool
 Set: StopOnError(self: DWFExportOptions)=value
 
 """
-
-

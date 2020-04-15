@@ -1,5 +1,5 @@
-class Pen(MarshalByRefObject,ISystemColorTracker,ICloneable,IDisposable):
- """
+class Pen(MarshalByRefObject, ISystemColorTracker, ICloneable, IDisposable):
+    """
  Defines an object used to draw lines and curves. This class cannot be inherited.
 
  
@@ -12,8 +12,9 @@ class Pen(MarshalByRefObject,ISystemColorTracker,ICloneable,IDisposable):
 
  Pen(brush: Brush,width: Single)
  """
- def Clone(self):
-  """
+
+    def Clone(self):
+        """
   Clone(self: Pen) -> object
 
   
@@ -22,16 +23,18 @@ class Pen(MarshalByRefObject,ISystemColorTracker,ICloneable,IDisposable):
 
    Returns: An System.Object that can be cast to a System.Drawing.Pen.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: Pen)
 
    Releases all resources used by this System.Drawing.Pen.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -62,9 +65,10 @@ class Pen(MarshalByRefObject,ISystemColorTracker,ICloneable,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def MultiplyTransform(self,matrix,order=None):
-  """
+        pass
+
+    def MultiplyTransform(self, matrix, order=None):
+        """
   MultiplyTransform(self: Pen,matrix: Matrix,order: MatrixOrder)
 
    Multiplies the transformation matrix for this System.Drawing.Pen by the specified 
@@ -91,16 +95,18 @@ class Pen(MarshalByRefObject,ISystemColorTracker,ICloneable,IDisposable):
 
    matrix: The System.Drawing.Drawing2D.Matrix object by which to multiply the transformation matrix.
   """
-  pass
- def ResetTransform(self):
-  """
+        pass
+
+    def ResetTransform(self):
+        """
   ResetTransform(self: Pen)
 
    Resets the geometric transformation matrix for this System.Drawing.Pen to identity.
   """
-  pass
- def RotateTransform(self,angle,order=None):
-  """
+        pass
+
+    def RotateTransform(self, angle, order=None):
+        """
   RotateTransform(self: Pen,angle: Single,order: MatrixOrder)
 
    Rotates the local geometric transformation by the specified angle in the specified order.
@@ -127,9 +133,10 @@ class Pen(MarshalByRefObject,ISystemColorTracker,ICloneable,IDisposable):
 
    angle: The angle of rotation.
   """
-  pass
- def ScaleTransform(self,sx,sy,order=None):
-  """
+        pass
+
+    def ScaleTransform(self, sx, sy, order=None):
+        """
   ScaleTransform(self: Pen,sx: Single,sy: Single,order: MatrixOrder)
 
    Scales the local geometric transformation by the specified factors in the specified order.
@@ -160,9 +167,10 @@ class Pen(MarshalByRefObject,ISystemColorTracker,ICloneable,IDisposable):
 
    sy: The factor by which to scale the transformation in the y-axis direction.
   """
-  pass
- def SetLineCap(self,startCap,endCap,dashCap):
-  """
+        pass
+
+    def SetLineCap(self, startCap, endCap, dashCap):
+        """
   SetLineCap(self: Pen,startCap: LineCap,endCap: LineCap,dashCap: DashCap)
 
    Sets the values that determine the style of cap used to end lines drawn by this 
@@ -189,9 +197,10 @@ class Pen(MarshalByRefObject,ISystemColorTracker,ICloneable,IDisposable):
 
     of dashed lines drawn with this System.Drawing.Pen.
   """
-  pass
- def TranslateTransform(self,dx,dy,order=None):
-  """
+        pass
+
+    def TranslateTransform(self, dx, dy, order=None):
+        """
   TranslateTransform(self: Pen,dx: Single,dy: Single,order: MatrixOrder)
 
    Translates the local geometric transformation by the specified dimensions in the specified order.
@@ -218,29 +227,33 @@ class Pen(MarshalByRefObject,ISystemColorTracker,ICloneable,IDisposable):
 
    dy: The value of the translation in y.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,color: Color)
 
   __new__(cls: type,color: Color,width: Single)
@@ -249,9 +262,10 @@ class Pen(MarshalByRefObject,ISystemColorTracker,ICloneable,IDisposable):
 
   __new__(cls: type,brush: Brush,width: Single)
   """
-  pass
- Alignment=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the alignment for this System.Drawing.Pen.
+        pass
+
+    Alignment = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the alignment for this System.Drawing.Pen.
 
 
 
@@ -263,8 +277,8 @@ Set: Alignment(self: Pen)=value
 
 """
 
- Brush=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Drawing.Brush that determines attributes of this System.Drawing.Pen.
+    Brush = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the System.Drawing.Brush that determines attributes of this System.Drawing.Pen.
 
 
 
@@ -276,8 +290,8 @@ Set: Brush(self: Pen)=value
 
 """
 
- Color=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the color of this System.Drawing.Pen.
+    Color = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the color of this System.Drawing.Pen.
 
 
 
@@ -289,8 +303,10 @@ Set: Color(self: Pen)=value
 
 """
 
- CompoundArray=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets an array of values that specifies a compound pen. A compound pen draws a compound line made up of parallel lines and spaces.
+    CompoundArray = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets an array of values that specifies a compound pen. A compound pen draws a compound line made up of parallel lines and spaces.
 
 
 
@@ -302,8 +318,10 @@ Set: CompoundArray(self: Pen)=value
 
 """
 
- CustomEndCap=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a custom cap to use at the end of lines drawn with this System.Drawing.Pen.
+    CustomEndCap = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a custom cap to use at the end of lines drawn with this System.Drawing.Pen.
 
 
 
@@ -315,8 +333,10 @@ Set: CustomEndCap(self: Pen)=value
 
 """
 
- CustomStartCap=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a custom cap to use at the beginning of lines drawn with this System.Drawing.Pen.
+    CustomStartCap = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a custom cap to use at the beginning of lines drawn with this System.Drawing.Pen.
 
 
 
@@ -328,8 +348,8 @@ Set: CustomStartCap(self: Pen)=value
 
 """
 
- DashCap=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the cap style used at the end of the dashes that make up dashed lines drawn with this System.Drawing.Pen.
+    DashCap = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the cap style used at the end of the dashes that make up dashed lines drawn with this System.Drawing.Pen.
 
 
 
@@ -341,8 +361,10 @@ Set: DashCap(self: Pen)=value
 
 """
 
- DashOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the distance from the start of a line to the beginning of a dash pattern.
+    DashOffset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the distance from the start of a line to the beginning of a dash pattern.
 
 
 
@@ -354,8 +376,10 @@ Set: DashOffset(self: Pen)=value
 
 """
 
- DashPattern=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets an array of custom dashes and spaces.
+    DashPattern = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets an array of custom dashes and spaces.
 
 
 
@@ -367,8 +391,8 @@ Set: DashPattern(self: Pen)=value
 
 """
 
- DashStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the style used for dashed lines drawn with this System.Drawing.Pen.
+    DashStyle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the style used for dashed lines drawn with this System.Drawing.Pen.
 
 
 
@@ -380,8 +404,8 @@ Set: DashStyle(self: Pen)=value
 
 """
 
- EndCap=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the cap style used at the end of lines drawn with this System.Drawing.Pen.
+    EndCap = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the cap style used at the end of lines drawn with this System.Drawing.Pen.
 
 
 
@@ -393,8 +417,8 @@ Set: EndCap(self: Pen)=value
 
 """
 
- LineJoin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the join style for the ends of two consecutive lines drawn with this System.Drawing.Pen.
+    LineJoin = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the join style for the ends of two consecutive lines drawn with this System.Drawing.Pen.
 
 
 
@@ -406,8 +430,10 @@ Set: LineJoin(self: Pen)=value
 
 """
 
- MiterLimit=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the limit of the thickness of the join on a mitered corner.
+    MiterLimit = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the limit of the thickness of the join on a mitered corner.
 
 
 
@@ -419,8 +445,8 @@ Set: MiterLimit(self: Pen)=value
 
 """
 
- PenType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the style of lines drawn with this System.Drawing.Pen.
+    PenType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the style of lines drawn with this System.Drawing.Pen.
 
 
 
@@ -430,8 +456,8 @@ Get: PenType(self: Pen) -> PenType
 
 """
 
- StartCap=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the cap style used at the beginning of lines drawn with this System.Drawing.Pen.
+    StartCap = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the cap style used at the beginning of lines drawn with this System.Drawing.Pen.
 
 
 
@@ -443,8 +469,8 @@ Set: StartCap(self: Pen)=value
 
 """
 
- Transform=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a copy of the geometric transformation for this System.Drawing.Pen.
+    Transform = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a copy of the geometric transformation for this System.Drawing.Pen.
 
 
 
@@ -456,8 +482,8 @@ Set: Transform(self: Pen)=value
 
 """
 
- Width=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the width of this System.Drawing.Pen,in units of the System.Drawing.Graphics object used for drawing.
+    Width = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the width of this System.Drawing.Pen,in units of the System.Drawing.Graphics object used for drawing.
 
 
 
@@ -468,5 +494,3 @@ Get: Width(self: Pen) -> Single
 Set: Width(self: Pen)=value
 
 """
-
-

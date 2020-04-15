@@ -1,13 +1,14 @@
-class ObjectAttributes(CommonObject,IDisposable,ISerializable):
- """
+class ObjectAttributes(CommonObject, IDisposable, ISerializable):
+    """
  Attributes (color,material,layer,...) associated with a rhino object
 
  
 
  ObjectAttributes()
  """
- def AddToGroup(self,groupIndex):
-  """
+
+    def AddToGroup(self, groupIndex):
+        """
   AddToGroup(self: ObjectAttributes,groupIndex: int)
 
    Adds object to the group with specified index by appending index to
@@ -24,23 +25,26 @@ class ObjectAttributes(CommonObject,IDisposable,ISerializable):
 
    groupIndex: The index that will be added.
   """
-  pass
- def ComputedPlotColor(self,document,viewportId=None):
-  """
+        pass
+
+    def ComputedPlotColor(self, document, viewportId=None):
+        """
   ComputedPlotColor(self: ObjectAttributes,document: RhinoDoc,viewportId: Guid) -> Color
 
   ComputedPlotColor(self: ObjectAttributes,document: RhinoDoc) -> Color
   """
-  pass
- def ComputedPlotWeight(self,document,viewportId=None):
-  """
+        pass
+
+    def ComputedPlotWeight(self, document, viewportId=None):
+        """
   ComputedPlotWeight(self: ObjectAttributes,document: RhinoDoc,viewportId: Guid) -> float
 
   ComputedPlotWeight(self: ObjectAttributes,document: RhinoDoc) -> float
   """
-  pass
- def ConstructConstObject(self,*args):
-  """
+        pass
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -51,9 +55,10 @@ class ObjectAttributes(CommonObject,IDisposable,ISerializable):
 
    subobject_index: The subobject index.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: CommonObject,disposing: bool)
 
    For derived class implementers.
@@ -78,16 +83,18 @@ class ObjectAttributes(CommonObject,IDisposable,ISerializable):
 
     finalizer.
   """
-  pass
- def DrawColor(self,document,viewportId=None):
-  """
+        pass
+
+    def DrawColor(self, document, viewportId=None):
+        """
   DrawColor(self: ObjectAttributes,document: RhinoDoc,viewportId: Guid) -> Color
 
   DrawColor(self: ObjectAttributes,document: RhinoDoc) -> Color
   """
-  pass
- def Duplicate(self):
-  """
+        pass
+
+    def Duplicate(self):
+        """
   Duplicate(self: ObjectAttributes) -> ObjectAttributes
 
   
@@ -96,9 +103,10 @@ class ObjectAttributes(CommonObject,IDisposable,ISerializable):
 
    Returns: A new instance on success,or null on failure.
   """
-  pass
- def GetGroupList(self):
-  """
+        pass
+
+    def GetGroupList(self):
+        """
   GetGroupList(self: ObjectAttributes) -> Array[int]
 
   
@@ -111,9 +119,10 @@ class ObjectAttributes(CommonObject,IDisposable,ISerializable):
 
    Returns: An array of group indices. null might be retuned in place of an empty array.
   """
-  pass
- def GetUserString(self,key):
-  """
+        pass
+
+    def GetUserString(self, key):
+        """
   GetUserString(self: ObjectAttributes,key: str) -> str
 
   
@@ -126,9 +135,10 @@ class ObjectAttributes(CommonObject,IDisposable,ISerializable):
 
    Returns: string associated with the key if successful. null if no key was found.
   """
-  pass
- def GetUserStrings(self):
-  """
+        pass
+
+    def GetUserStrings(self):
+        """
   GetUserStrings(self: ObjectAttributes) -> NameValueCollection
 
   
@@ -141,9 +151,10 @@ class ObjectAttributes(CommonObject,IDisposable,ISerializable):
 
    Returns: A collection of key strings and values strings. This
   """
-  pass
- def HasDisplayModeOverride(self,viewportId):
-  """
+        pass
+
+    def HasDisplayModeOverride(self, viewportId):
+        """
   HasDisplayModeOverride(self: ObjectAttributes,viewportId: Guid) -> bool
 
   
@@ -156,9 +167,10 @@ class ObjectAttributes(CommonObject,IDisposable,ISerializable):
 
    Returns: true if the object has a display mode override for the viewport; otherwise,false.
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: CommonObject)
 
    For derived classes implementers.
@@ -167,16 +179,18 @@ class ObjectAttributes(CommonObject,IDisposable,ISerializable):
 
     instance from being const.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: CommonObject)
 
    Is called when a non-const operation first occurs.
   """
-  pass
- def RemoveDisplayModeOverride(self,rhinoViewportId=None):
-  """
+        pass
+
+    def RemoveDisplayModeOverride(self, rhinoViewportId=None):
+        """
   RemoveDisplayModeOverride(self: ObjectAttributes,rhinoViewportId: Guid)
 
    By default,objects are drawn using the display mode of the viewport that
@@ -217,16 +231,18 @@ class ObjectAttributes(CommonObject,IDisposable,ISerializable):
 
      viewports.
   """
-  pass
- def RemoveFromAllGroups(self):
-  """
+        pass
+
+    def RemoveFromAllGroups(self):
+        """
   RemoveFromAllGroups(self: ObjectAttributes)
 
    Removes object from all groups.
   """
-  pass
- def RemoveFromGroup(self,groupIndex):
-  """
+        pass
+
+    def RemoveFromGroup(self, groupIndex):
+        """
   RemoveFromGroup(self: ObjectAttributes,groupIndex: int)
 
    removes object from the group with specified index.
@@ -241,9 +257,10 @@ class ObjectAttributes(CommonObject,IDisposable,ISerializable):
 
    groupIndex: The index that will be removed.
   """
-  pass
- def SetDisplayModeOverride(self,mode,rhinoViewportId=None):
-  """
+        pass
+
+    def SetDisplayModeOverride(self, mode, rhinoViewportId=None):
+        """
   SetDisplayModeOverride(self: ObjectAttributes,mode: DisplayModeDescription,rhinoViewportId: Guid) -> bool
 
   
@@ -298,9 +315,10 @@ class ObjectAttributes(CommonObject,IDisposable,ISerializable):
 
    Returns: true if setting was successful.
   """
-  pass
- def SetUserString(self,key,value):
-  """
+        pass
+
+    def SetUserString(self, key, value):
+        """
   SetUserString(self: ObjectAttributes,key: str,value: str) -> bool
 
   
@@ -315,38 +333,46 @@ class ObjectAttributes(CommonObject,IDisposable,ISerializable):
 
    Returns: true on success.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self):
+        """
   __new__(cls: type)
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- ColorSource=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The color used to display an object is specified in one of three ways.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    ColorSource = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The color used to display an object is specified in one of three ways.
 
    If ColorSource is ON::color_from_layer,then the object's layer ON_Layer::Color() is used.
 
@@ -368,8 +394,8 @@ Set: ColorSource(self: ObjectAttributes)=value
 
 """
 
- Decals=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets all object decals associated with this object.
+    Decals = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets all object decals associated with this object.
 
 
 
@@ -379,8 +405,10 @@ Get: Decals(self: ObjectAttributes) -> Decals
 
 """
 
- DisplayOrder=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Display order used to force objects to be drawn on top or behind each other.
+    DisplayOrder = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Display order used to force objects to be drawn on top or behind each other.
 
    Larger numbers draw on top of smaller numbers.
 
@@ -396,8 +424,10 @@ Set: DisplayOrder(self: ObjectAttributes)=value
 
 """
 
- GroupCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """number of groups object belongs to.
+    GroupCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """number of groups object belongs to.
 
 
 
@@ -407,8 +437,10 @@ Get: GroupCount(self: ObjectAttributes) -> int
 
 """
 
- HasMapping=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """A mapping from any plugin source is associated with these attributes
+    HasMapping = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """A mapping from any plugin source is associated with these attributes
 
    Need to do this here to respond correctly to ModifyObjectAttributes event
 
@@ -420,15 +452,19 @@ Get: HasMapping(self: ObjectAttributes) -> bool
 
 """
 
- IsDocumentControlled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsDocumentControlled(self: ObjectAttributes) -> bool
+    IsDocumentControlled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IsDocumentControlled(self: ObjectAttributes) -> bool
 
 
 
 """
 
- IsInstanceDefinitionObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Use this query to determine if an object is part of an instance definition.
+    IsInstanceDefinitionObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Use this query to determine if an object is part of an instance definition.
 
 
 
@@ -438,8 +474,10 @@ Get: IsInstanceDefinitionObject(self: ObjectAttributes) -> bool
 
 """
 
- LayerIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets an associated layer index.
+    LayerIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets an associated layer index.
 
    Layer definitions in an OpenNURBS model are stored in a layer table.
 
@@ -459,8 +497,10 @@ Set: LayerIndex(self: ObjectAttributes)=value
 
 """
 
- LinetypeIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the linetype index.
+    LinetypeIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the linetype index.
 
    Linetype definitions in an OpenNURBS model are stored in a linetype table.
 
@@ -480,8 +520,10 @@ Set: LinetypeIndex(self: ObjectAttributes)=value
 
 """
 
- LinetypeSource=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Linetype used to display an object is specified in one of two ways.
+    LinetypeSource = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The Linetype used to display an object is specified in one of two ways.
 
    If LinetypeSource is ON::linetype_from_layer,then the object's layer ON_Layer::Linetype() is used.
 
@@ -497,8 +539,10 @@ Set: LinetypeSource(self: ObjectAttributes)=value
 
 """
 
- MaterialIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the material index.
+    MaterialIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the material index.
 
    If you want something simple and fast,set the index of
 
@@ -514,8 +558,10 @@ Set: MaterialIndex(self: ObjectAttributes)=value
 
 """
 
- MaterialRefs=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If you are developing a high quality plug-in renderer,and a user is
+    MaterialRefs = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """If you are developing a high quality plug-in renderer,and a user is
 
    assigning a custom render material to this object,then add rendering
 
@@ -539,8 +585,10 @@ Get: MaterialRefs(self: ObjectAttributes) -> MaterialRefs
 
 """
 
- MaterialSource=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determines if the simple material should come from the object or from it's layer.
+    MaterialSource = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Determines if the simple material should come from the object or from it's layer.
 
    High quality rendering plug-ins should use m_rendering_attributes.
 
@@ -554,8 +602,8 @@ Set: MaterialSource(self: ObjectAttributes)=value
 
 """
 
- Mode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """An object must be in one of three modes: normal,locked or hidden.
+    Mode = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """An object must be in one of three modes: normal,locked or hidden.
 
    If an object is in normal mode,then the object's layer controls visibility
 
@@ -575,8 +623,8 @@ Set: Mode(self: ObjectAttributes)=value
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets an object optional text name.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets an object optional text name.
 
    More than one object in a model can have the same name and
 
@@ -592,8 +640,10 @@ Set: Name(self: ObjectAttributes)=value
 
 """
 
- ObjectColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If ON::color_from_object == ColorSource,then color is the object's display color.
+    ObjectColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """If ON::color_from_object == ColorSource,then color is the object's display color.
 
 
 
@@ -605,8 +655,10 @@ Set: ObjectColor(self: ObjectAttributes)=value
 
 """
 
- ObjectDecoration=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Used to indicate an object has a decoration (like an arrowhead on a curve)
+    ObjectDecoration = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Used to indicate an object has a decoration (like an arrowhead on a curve)
 
 
 
@@ -618,8 +670,8 @@ Set: ObjectDecoration(self: ObjectAttributes)=value
 
 """
 
- ObjectId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Every object has a Guid (globally unique identifier,also known as UUID,or universally
+    ObjectId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Every object has a Guid (globally unique identifier,also known as UUID,or universally
 
    unique identifier). The default value is Guid.Empty.
 
@@ -647,8 +699,8 @@ Set: ObjectId(self: ObjectAttributes)=value
 
 """
 
- PlotColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If plot_color_from_object == PlotColorSource,then PlotColor is the object's plotting color.
+    PlotColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """If plot_color_from_object == PlotColorSource,then PlotColor is the object's plotting color.
 
 
 
@@ -660,8 +712,10 @@ Set: PlotColor(self: ObjectAttributes)=value
 
 """
 
- PlotColorSource=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The color used to plot an object on paper is specified in one of three ways.
+    PlotColorSource = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The color used to plot an object on paper is specified in one of three ways.
 
    If PlotColorSource is ON::plot_color_from_layer,then the object's layer ON_Layer::PlotColor() is used.
 
@@ -677,8 +731,10 @@ Set: PlotColorSource(self: ObjectAttributes)=value
 
 """
 
- PlotWeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Plot weight in millimeters.
+    PlotWeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Plot weight in millimeters.
 
    =0.0 means use the default width
 
@@ -694,8 +750,10 @@ Set: PlotWeight(self: ObjectAttributes)=value
 
 """
 
- PlotWeightSource=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: PlotWeightSource(self: ObjectAttributes) -> ObjectPlotWeightSource
+    PlotWeightSource = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: PlotWeightSource(self: ObjectAttributes) -> ObjectPlotWeightSource
 
 
 
@@ -703,8 +761,8 @@ Set: PlotWeightSource(self: ObjectAttributes)=value
 
 """
 
- Space=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Starting with V4,objects can be in either model space or page space.
+    Space = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Starting with V4,objects can be in either model space or page space.
 
    If an object is in page space,then ViewportId is not nil and
 
@@ -720,15 +778,19 @@ Set: Space(self: ObjectAttributes)=value
 
 """
 
- UserStringCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: UserStringCount(self: ObjectAttributes) -> int
+    UserStringCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: UserStringCount(self: ObjectAttributes) -> int
 
 
 
 """
 
- ViewportId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If ViewportId is nil,the object is active in all viewports. If ViewportId is not nil,then 
+    ViewportId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """If ViewportId is nil,the object is active in all viewports. If ViewportId is not nil,then 
 
    this object is only active in a specific view. This field is primarily used to assign page
 
@@ -746,8 +808,8 @@ Set: ViewportId(self: ObjectAttributes)=value
 
 """
 
- Visible=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """object visibility.
+    Visible = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """object visibility.
 
 
 
@@ -759,8 +821,10 @@ Set: Visible(self: ObjectAttributes)=value
 
 """
 
- WireDensity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When a surface object is displayed in wireframe,this controls
+    WireDensity = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """When a surface object is displayed in wireframe,this controls
 
    how many isoparametric wires are used.
 
@@ -783,5 +847,3 @@ Get: WireDensity(self: ObjectAttributes) -> int
 Set: WireDensity(self: ObjectAttributes)=value
 
 """
-
-

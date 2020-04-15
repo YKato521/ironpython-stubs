@@ -1,7 +1,16 @@
-class RowDefinitionCollection(object,IList[RowDefinition],ICollection[RowDefinition],IEnumerable[RowDefinition],IEnumerable,IList,ICollection):
- """ Provides access to an ordered,strongly typed collection of System.Windows.Controls.RowDefinition objects. """
- def Add(self,value):
-  """
+class RowDefinitionCollection(
+    object,
+    IList[RowDefinition],
+    ICollection[RowDefinition],
+    IEnumerable[RowDefinition],
+    IEnumerable,
+    IList,
+    ICollection,
+):
+    """ Provides access to an ordered,strongly typed collection of System.Windows.Controls.RowDefinition objects. """
+
+    def Add(self, value):
+        """
   Add(self: RowDefinitionCollection,value: RowDefinition)
 
    Adds a System.Windows.Controls.RowDefinition element to a 
@@ -14,16 +23,18 @@ class RowDefinitionCollection(object,IList[RowDefinition],ICollection[RowDefinit
 
    value: Identifies the System.Windows.Controls.RowDefinition to add to the collection.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: RowDefinitionCollection)
 
    Clears the content of the System.Windows.Controls.RowDefinitionCollection.
   """
-  pass
- def Contains(self,value):
-  """
+        pass
+
+    def Contains(self, value):
+        """
   Contains(self: RowDefinitionCollection,value: RowDefinition) -> bool
 
   
@@ -40,9 +51,10 @@ class RowDefinitionCollection(object,IList[RowDefinition],ICollection[RowDefinit
 
    Returns: true if the System.Windows.Controls.RowDefinition exists within the collection; otherwise false.
   """
-  pass
- def CopyTo(self,array,index):
-  """
+        pass
+
+    def CopyTo(self, array, index):
+        """
   CopyTo(self: RowDefinitionCollection,array: Array[RowDefinition],index: int)
 
    Copies an array of System.Windows.Controls.RowDefinition objects to a given index position 
@@ -59,9 +71,10 @@ class RowDefinitionCollection(object,IList[RowDefinition],ICollection[RowDefinit
 
     objects are copied.
   """
-  pass
- def IndexOf(self,value):
-  """
+        pass
+
+    def IndexOf(self, value):
+        """
   IndexOf(self: RowDefinitionCollection,value: RowDefinition) -> int
 
   
@@ -78,9 +91,10 @@ class RowDefinitionCollection(object,IList[RowDefinition],ICollection[RowDefinit
 
    Returns: The index of value if found in the collection; otherwise,-1.
   """
-  pass
- def Insert(self,index,value):
-  """
+        pass
+
+    def Insert(self, index, value):
+        """
   Insert(self: RowDefinitionCollection,index: int,value: RowDefinition)
 
    Inserts a System.Windows.Controls.RowDefinition at the specified index position within a 
@@ -95,9 +109,10 @@ class RowDefinitionCollection(object,IList[RowDefinition],ICollection[RowDefinit
 
    value: The System.Windows.Controls.RowDefinition to insert.
   """
-  pass
- def Remove(self,value):
-  """
+        pass
+
+    def Remove(self, value):
+        """
   Remove(self: RowDefinitionCollection,value: RowDefinition) -> bool
 
   
@@ -116,9 +131,10 @@ class RowDefinitionCollection(object,IList[RowDefinition],ICollection[RowDefinit
 
     otherwise,false.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: RowDefinitionCollection,index: int)
 
    Removes a System.Windows.Controls.RowDefinition from a 
@@ -131,9 +147,10 @@ class RowDefinitionCollection(object,IList[RowDefinition],ICollection[RowDefinit
 
    index: The position within the collection at which the System.Windows.Controls.RowDefinition is removed.
   """
-  pass
- def RemoveRange(self,index,count):
-  """
+        pass
+
+    def RemoveRange(self, index, count):
+        """
   RemoveRange(self: RowDefinitionCollection,index: int,count: int)
 
    Removes a range of System.Windows.Controls.RowDefinition objects from a 
@@ -152,12 +169,14 @@ class RowDefinitionCollection(object,IList[RowDefinition],ICollection[RowDefinit
 
    count: The total number of System.Windows.Controls.RowDefinition objects to remove from the collection.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: ICollection[RowDefinition],item: RowDefinition) -> bool
 
   __contains__(self: IList,value: object) -> bool
@@ -172,27 +191,34 @@ class RowDefinitionCollection(object,IList[RowDefinition],ICollection[RowDefinit
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the total number of items within this instance of System.Windows.Controls.RowDefinitionCollection.
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the total number of items within this instance of System.Windows.Controls.RowDefinitionCollection.
 
 
 
@@ -202,8 +228,10 @@ Get: Count(self: RowDefinitionCollection) -> int
 
 """
 
- IsReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether a System.Windows.Controls.RowDefinitionCollection is read-only.
+    IsReadOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether a System.Windows.Controls.RowDefinitionCollection is read-only.
 
 
 
@@ -213,8 +241,10 @@ Get: IsReadOnly(self: RowDefinitionCollection) -> bool
 
 """
 
- IsSynchronized=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether access to this System.Windows.Controls.RowDefinitionCollection is synchronized (thread-safe).
+    IsSynchronized = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether access to this System.Windows.Controls.RowDefinitionCollection is synchronized (thread-safe).
 
 
 
@@ -224,8 +254,8 @@ Get: IsSynchronized(self: RowDefinitionCollection) -> bool
 
 """
 
- SyncRoot=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an object that can be used to synchronize access to the System.Windows.Controls.RowDefinitionCollection.
+    SyncRoot = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an object that can be used to synchronize access to the System.Windows.Controls.RowDefinitionCollection.
 
 
 
@@ -234,5 +264,3 @@ Get: SyncRoot(self: RowDefinitionCollection) -> object
 
 
 """
-
-

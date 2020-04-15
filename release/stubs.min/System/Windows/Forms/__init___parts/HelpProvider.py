@@ -1,13 +1,14 @@
-class HelpProvider(Component,IComponent,IDisposable,IExtenderProvider):
- """
+class HelpProvider(Component, IComponent, IDisposable, IExtenderProvider):
+    """
  Provides pop-up or online Help for controls.
 
  
 
  HelpProvider()
  """
- def CanExtend(self,target):
-  """
+
+    def CanExtend(self, target):
+        """
   CanExtend(self: HelpProvider,target: object) -> bool
 
   
@@ -20,9 +21,10 @@ class HelpProvider(Component,IComponent,IDisposable,IExtenderProvider):
 
    Returns: true if this object can provide its extender properties; otherwise,false.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: Component,disposing: bool)
 
    Releases the unmanaged resources used by the System.ComponentModel.Component and optionally 
@@ -35,9 +37,10 @@ class HelpProvider(Component,IComponent,IDisposable,IExtenderProvider):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def GetHelpKeyword(self,ctl):
-  """
+        pass
+
+    def GetHelpKeyword(self, ctl):
+        """
   GetHelpKeyword(self: HelpProvider,ctl: Control) -> str
 
   
@@ -54,9 +57,10 @@ class HelpProvider(Component,IComponent,IDisposable,IExtenderProvider):
 
     string.
   """
-  pass
- def GetHelpNavigator(self,ctl):
-  """
+        pass
+
+    def GetHelpNavigator(self, ctl):
+        """
   GetHelpNavigator(self: HelpProvider,ctl: Control) -> HelpNavigator
 
   
@@ -71,9 +75,10 @@ class HelpProvider(Component,IComponent,IDisposable,IExtenderProvider):
 
     System.Windows.Forms.HelpNavigator.AssociateIndex.
   """
-  pass
- def GetHelpString(self,ctl):
-  """
+        pass
+
+    def GetHelpString(self, ctl):
+        """
   GetHelpString(self: HelpProvider,ctl: Control) -> str
 
   
@@ -86,9 +91,10 @@ class HelpProvider(Component,IComponent,IDisposable,IExtenderProvider):
 
    Returns: The Help string associated with this control. The default is null.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -107,9 +113,10 @@ class HelpProvider(Component,IComponent,IDisposable,IExtenderProvider):
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def GetShowHelp(self,ctl):
-  """
+        pass
+
+    def GetShowHelp(self, ctl):
+        """
   GetShowHelp(self: HelpProvider,ctl: Control) -> bool
 
   
@@ -122,9 +129,10 @@ class HelpProvider(Component,IComponent,IDisposable,IExtenderProvider):
 
    Returns: true if Help will be displayed for the control; otherwise,false.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -155,9 +163,10 @@ class HelpProvider(Component,IComponent,IDisposable,IExtenderProvider):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def ResetShowHelp(self,ctl):
-  """
+        pass
+
+    def ResetShowHelp(self, ctl):
+        """
   ResetShowHelp(self: HelpProvider,ctl: Control)
 
    Removes the Help associated with the specified control.
@@ -166,9 +175,10 @@ class HelpProvider(Component,IComponent,IDisposable,IExtenderProvider):
 
    ctl: The control to remove Help from.
   """
-  pass
- def SetHelpKeyword(self,ctl,keyword):
-  """
+        pass
+
+    def SetHelpKeyword(self, ctl, keyword):
+        """
   SetHelpKeyword(self: HelpProvider,ctl: Control,keyword: str)
 
    Specifies the keyword used to retrieve Help when the user invokes Help for the specified control.
@@ -179,9 +189,10 @@ class HelpProvider(Component,IComponent,IDisposable,IExtenderProvider):
 
    keyword: The Help keyword to associate with the control.
   """
-  pass
- def SetHelpNavigator(self,ctl,navigator):
-  """
+        pass
+
+    def SetHelpNavigator(self, ctl, navigator):
+        """
   SetHelpNavigator(self: HelpProvider,ctl: Control,navigator: HelpNavigator)
 
    Specifies the Help command to use when retrieving Help from the Help file for the specified 
@@ -196,9 +207,10 @@ class HelpProvider(Component,IComponent,IDisposable,IExtenderProvider):
 
    navigator: One of the System.Windows.Forms.HelpNavigator values.
   """
-  pass
- def SetHelpString(self,ctl,helpString):
-  """
+        pass
+
+    def SetHelpString(self, ctl, helpString):
+        """
   SetHelpString(self: HelpProvider,ctl: Control,helpString: str)
 
    Specifies the Help string associated with the specified control.
@@ -209,9 +221,10 @@ class HelpProvider(Component,IComponent,IDisposable,IExtenderProvider):
 
    helpString: The Help string associated with the control.
   """
-  pass
- def SetShowHelp(self,ctl,value):
-  """
+        pass
+
+    def SetShowHelp(self, ctl, value):
+        """
   SetShowHelp(self: HelpProvider,ctl: Control,value: bool)
 
    Specifies whether Help is displayed for the specified control.
@@ -222,9 +235,10 @@ class HelpProvider(Component,IComponent,IDisposable,IExtenderProvider):
 
    value: true if Help displays for the control; otherwise,false.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: HelpProvider) -> str
 
   
@@ -233,51 +247,62 @@ class HelpProvider(Component,IComponent,IDisposable,IExtenderProvider):
 
    Returns: A string that represents the current System.Windows.Forms.HelpProvider.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- HelpNamespace=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value specifying the name of the Help file associated with this System.Windows.Forms.HelpProvider object.
+    HelpNamespace = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value specifying the name of the Help file associated with this System.Windows.Forms.HelpProvider object.
 
 
 
@@ -289,8 +314,8 @@ Set: HelpNamespace(self: HelpProvider)=value
 
 """
 
- Tag=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the object that contains supplemental data about the System.Windows.Forms.HelpProvider.
+    Tag = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the object that contains supplemental data about the System.Windows.Forms.HelpProvider.
 
 
 
@@ -301,5 +326,3 @@ Get: Tag(self: HelpProvider) -> object
 Set: Tag(self: HelpProvider)=value
 
 """
-
-

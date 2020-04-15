@@ -1,13 +1,14 @@
 class IconConverter(ExpandableObjectConverter):
- """
+    """
  Converts an System.Drawing.Icon object from one data type to another. Access this class through the System.ComponentModel.TypeDescriptor object.
 
  
 
  IconConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: IconConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -28,9 +29,10 @@ class IconConverter(ExpandableObjectConverter):
 
     otherwise,false.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: IconConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -51,9 +53,10 @@ class IconConverter(ExpandableObjectConverter):
 
     otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: IconConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -72,9 +75,10 @@ class IconConverter(ExpandableObjectConverter):
 
     specified object. Otherwise,it throws an exception.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: IconConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -105,4 +109,4 @@ class IconConverter(ExpandableObjectConverter):
 
    Returns: This method returns the converted object.
   """
-  pass
+        pass

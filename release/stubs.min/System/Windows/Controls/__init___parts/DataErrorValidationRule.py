@@ -1,13 +1,14 @@
 class DataErrorValidationRule(ValidationRule):
- """
+    """
  Represents a rule that checks for errors that are raised by the System.ComponentModel.IDataErrorInfo implementation of the source object.
 
  
 
  DataErrorValidationRule()
  """
- def Validate(self,value,cultureInfo,owner=None):
-  """
+
+    def Validate(self, value, cultureInfo, owner=None):
+        """
   Validate(self: DataErrorValidationRule,value: object,cultureInfo: CultureInfo) -> ValidationResult
 
   
@@ -22,4 +23,4 @@ class DataErrorValidationRule(ValidationRule):
 
    Returns: The result of the validation.
   """
-  pass
+        pass

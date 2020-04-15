@@ -1,13 +1,14 @@
 class ExpandableObjectConverter(TypeConverter):
- """
+    """
  Provides a type converter to convert expandable objects to and from various other representations.
 
  
 
  ExpandableObjectConverter()
  """
- def GetProperties(self,*__args):
-  """
+
+    def GetProperties(self, *__args):
+        """
   GetProperties(self: ExpandableObjectConverter,context: ITypeDescriptorContext,value: object,attributes: Array[Attribute]) -> PropertyDescriptorCollection
 
   
@@ -26,9 +27,10 @@ class ExpandableObjectConverter(TypeConverter):
 
     the component,or null if there are no properties.
   """
-  pass
- def GetPropertiesSupported(self,context=None):
-  """
+        pass
+
+    def GetPropertiesSupported(self, context=None):
+        """
   GetPropertiesSupported(self: ExpandableObjectConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -43,4 +45,4 @@ class ExpandableObjectConverter(TypeConverter):
 
     to find the properties of this object. This method never returns false.
   """
-  pass
+        pass

@@ -1,7 +1,8 @@
 class ICustomTypeDescriptor:
- """ Provides an interface that supplies dynamic custom type information for an object. """
- def GetAttributes(self):
-  """
+    """ Provides an interface that supplies dynamic custom type information for an object. """
+
+    def GetAttributes(self):
+        """
   GetAttributes(self: ICustomTypeDescriptor) -> AttributeCollection
 
   
@@ -10,9 +11,10 @@ class ICustomTypeDescriptor:
 
    Returns: An System.ComponentModel.AttributeCollection containing the attributes for this object.
   """
-  pass
- def GetClassName(self):
-  """
+        pass
+
+    def GetClassName(self):
+        """
   GetClassName(self: ICustomTypeDescriptor) -> str
 
   
@@ -21,9 +23,10 @@ class ICustomTypeDescriptor:
 
    Returns: The class name of the object,or null if the class does not have a name.
   """
-  pass
- def GetComponentName(self):
-  """
+        pass
+
+    def GetComponentName(self):
+        """
   GetComponentName(self: ICustomTypeDescriptor) -> str
 
   
@@ -32,9 +35,10 @@ class ICustomTypeDescriptor:
 
    Returns: The name of the object,or null if the object does not have a name.
   """
-  pass
- def GetConverter(self):
-  """
+        pass
+
+    def GetConverter(self):
+        """
   GetConverter(self: ICustomTypeDescriptor) -> TypeConverter
 
   
@@ -45,9 +49,10 @@ class ICustomTypeDescriptor:
 
     no System.ComponentModel.TypeConverter for this object.
   """
-  pass
- def GetDefaultEvent(self):
-  """
+        pass
+
+    def GetDefaultEvent(self):
+        """
   GetDefaultEvent(self: ICustomTypeDescriptor) -> EventDescriptor
 
   
@@ -58,9 +63,10 @@ class ICustomTypeDescriptor:
 
     null if this object does not have events.
   """
-  pass
- def GetDefaultProperty(self):
-  """
+        pass
+
+    def GetDefaultProperty(self):
+        """
   GetDefaultProperty(self: ICustomTypeDescriptor) -> PropertyDescriptor
 
   
@@ -71,9 +77,10 @@ class ICustomTypeDescriptor:
 
     or null if this object does not have properties.
   """
-  pass
- def GetEditor(self,editorBaseType):
-  """
+        pass
+
+    def GetEditor(self, editorBaseType):
+        """
   GetEditor(self: ICustomTypeDescriptor,editorBaseType: Type) -> object
 
   
@@ -88,9 +95,10 @@ class ICustomTypeDescriptor:
 
     cannot be found.
   """
-  pass
- def GetEvents(self,attributes=None):
-  """
+        pass
+
+    def GetEvents(self, attributes=None):
+        """
   GetEvents(self: ICustomTypeDescriptor,attributes: Array[Attribute]) -> EventDescriptorCollection
 
   
@@ -121,9 +129,10 @@ class ICustomTypeDescriptor:
 
     instance.
   """
-  pass
- def GetProperties(self,attributes=None):
-  """
+        pass
+
+    def GetProperties(self, attributes=None):
+        """
   GetProperties(self: ICustomTypeDescriptor,attributes: Array[Attribute]) -> PropertyDescriptorCollection
 
   
@@ -150,9 +159,10 @@ class ICustomTypeDescriptor:
 
     component instance.
   """
-  pass
- def GetPropertyOwner(self,pd):
-  """
+        pass
+
+    def GetPropertyOwner(self, pd):
+        """
   GetPropertyOwner(self: ICustomTypeDescriptor,pd: PropertyDescriptor) -> object
 
   
@@ -169,7 +179,8 @@ class ICustomTypeDescriptor:
 
    Returns: An System.Object that represents the owner of the specified property.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

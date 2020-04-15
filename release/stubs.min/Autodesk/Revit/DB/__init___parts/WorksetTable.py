@@ -1,10 +1,12 @@
-class WorksetTable(object,IDisposable):
- """ A table containing references to all the worksets contained in a document. """
- def Dispose(self):
-  """ Dispose(self: WorksetTable) """
-  pass
- def GetActiveWorksetId(self):
-  """
+class WorksetTable(object, IDisposable):
+    """ A table containing references to all the worksets contained in a document. """
+
+    def Dispose(self):
+        """ Dispose(self: WorksetTable) """
+        pass
+
+    def GetActiveWorksetId(self):
+        """
   GetActiveWorksetId(self: WorksetTable) -> WorksetId
 
   
@@ -13,9 +15,10 @@ class WorksetTable(object,IDisposable):
 
    Returns: WorksetId of the active workset.
   """
-  pass
- def GetWorkset(self,*__args):
-  """
+        pass
+
+    def GetWorkset(self, *__args):
+        """
   GetWorkset(self: WorksetTable,id: WorksetId) -> Workset
 
   
@@ -40,10 +43,11 @@ class WorksetTable(object,IDisposable):
 
    Returns: The returned workset. ll if there is no workset in this table with this Id.
   """
-  pass
- @staticmethod
- def IsWorksetNameUnique(aDoc,name):
-  """
+        pass
+
+    @staticmethod
+    def IsWorksetNameUnique(aDoc, name):
+        """
   IsWorksetNameUnique(aDoc: Document,name: str) -> bool
 
   
@@ -58,13 +62,15 @@ class WorksetTable(object,IDisposable):
 
    Returns: True if this given workset name is unique in the document,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: WorksetTable,disposing: bool) """
-  pass
- @staticmethod
- def RenameWorkset(aDoc,worksetId,name):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: WorksetTable,disposing: bool) """
+        pass
+
+    @staticmethod
+    def RenameWorkset(aDoc, worksetId, name):
+        """
   RenameWorkset(aDoc: Document,worksetId: WorksetId,name: str)
 
    Renames the workset.
@@ -77,9 +83,10 @@ class WorksetTable(object,IDisposable):
 
    name: The workset name.
   """
-  pass
- def SetActiveWorksetId(self,worksetId):
-  """
+        pass
+
+    def SetActiveWorksetId(self, worksetId):
+        """
   SetActiveWorksetId(self: WorksetTable,worksetId: WorksetId)
 
    Sets the active workset.
@@ -88,21 +95,28 @@ class WorksetTable(object,IDisposable):
 
    worksetId: The workset Id.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -111,5 +125,3 @@ Get: IsValidObject(self: WorksetTable) -> bool
 
 
 """
-
-

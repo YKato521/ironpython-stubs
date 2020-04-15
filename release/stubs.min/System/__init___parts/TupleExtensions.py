@@ -1,8 +1,31 @@
 class TupleExtensions(object):
- # no doc
- @staticmethod
- def Deconstruct(value,item1,item2=None,item3=None,item4=None,item5=None,item6=None,item7=None,item8=None,item9=None,item10=None,item11=None,item12=None,item13=None,item14=None,item15=None,item16=None,item17=None,item18=None,item19=None,item20=None,item21=None):
-  """
+    # no doc
+    @staticmethod
+    def Deconstruct(
+        value,
+        item1,
+        item2=None,
+        item3=None,
+        item4=None,
+        item5=None,
+        item6=None,
+        item7=None,
+        item8=None,
+        item9=None,
+        item10=None,
+        item11=None,
+        item12=None,
+        item13=None,
+        item14=None,
+        item15=None,
+        item16=None,
+        item17=None,
+        item18=None,
+        item19=None,
+        item20=None,
+        item21=None,
+    ):
+        """
   Deconstruct[(T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15)](value: Tuple[T1,T2,T3,T4,T5,T6,T7,Tuple[T8,T9,T10,T11,T12,T13,T14,Tuple[T15]]]) -> (T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15)
 
   Deconstruct[(T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16)](value: Tuple[T1,T2,T3,T4,T5,T6,T7,Tuple[T8,T9,T10,T11,T12,T13,T14,Tuple[T15,T16]]]) -> (T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16)
@@ -45,10 +68,11 @@ class TupleExtensions(object):
 
   Deconstruct[(T1,T2,T3,T4,T5,T6,T7)](value: Tuple[T1,T2,T3,T4,T5,T6,T7]) -> (T1,T2,T3,T4,T5,T6,T7)
   """
-  pass
- @staticmethod
- def ToTuple(value):
-  """
+        pass
+
+    @staticmethod
+    def ToTuple(value):
+        """
   ToTuple[(T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15)](value: ValueTuple[T1,T2,T3,T4,T5,T6,T7,ValueTuple[T8,T9,T10,T11,T12,T13,T14,ValueTuple[T15]]]) -> Tuple[T1,T2,T3,T4,T5,T6,T7,Tuple[T8,T9,T10,T11,T12,T13,T14,Tuple[T15]]]
 
   ToTuple[(T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16)](value: ValueTuple[T1,T2,T3,T4,T5,T6,T7,ValueTuple[T8,T9,T10,T11,T12,T13,T14,ValueTuple[T15,T16]]]) -> Tuple[T1,T2,T3,T4,T5,T6,T7,Tuple[T8,T9,T10,T11,T12,T13,T14,Tuple[T15,T16]]]
@@ -91,10 +115,11 @@ class TupleExtensions(object):
 
   ToTuple[(T1,T2,T3,T4,T5,T6,T7)](value: ValueTuple[T1,T2,T3,T4,T5,T6,T7]) -> Tuple[T1,T2,T3,T4,T5,T6,T7]
   """
-  pass
- @staticmethod
- def ToValueTuple(value):
-  """
+        pass
+
+    @staticmethod
+    def ToValueTuple(value):
+        """
   ToValueTuple[(T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15)](value: Tuple[T1,T2,T3,T4,T5,T6,T7,Tuple[T8,T9,T10,T11,T12,T13,T14,Tuple[T15]]]) -> ValueTuple[T1,T2,T3,T4,T5,T6,T7,ValueTuple[T8,T9,T10,T11,T12,T13,T14,ValueTuple[T15]]]
 
   ToValueTuple[(T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16)](value: Tuple[T1,T2,T3,T4,T5,T6,T7,Tuple[T8,T9,T10,T11,T12,T13,T14,Tuple[T15,T16]]]) -> ValueTuple[T1,T2,T3,T4,T5,T6,T7,ValueTuple[T8,T9,T10,T11,T12,T13,T14,ValueTuple[T15,T16]]]
@@ -137,10 +162,10 @@ class TupleExtensions(object):
 
   ToValueTuple[(T1,T2,T3,T4,T5,T6,T7)](value: Tuple[T1,T2,T3,T4,T5,T6,T7]) -> ValueTuple[T1,T2,T3,T4,T5,T6,T7]
   """
-  pass
- __all__=[
-  'Deconstruct',
-  'ToTuple',
-  'ToValueTuple',
- ]
+        pass
 
+    __all__ = [
+        "Deconstruct",
+        "ToTuple",
+        "ToValueTuple",
+    ]

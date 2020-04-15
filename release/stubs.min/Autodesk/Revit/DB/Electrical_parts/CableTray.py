@@ -1,8 +1,9 @@
-class CableTray(CableTrayConduitBase,IDisposable):
- """ This class represents a cable tray in Autodesk Revit. """
- @staticmethod
- def Create(document,cabletrayType,startPoint,endPoint,levelId):
-  """
+class CableTray(CableTrayConduitBase, IDisposable):
+    """ This class represents a cable tray in Autodesk Revit. """
+
+    @staticmethod
+    def Create(document, cabletrayType, startPoint, endPoint, levelId):
+        """
   Create(document: Document,cabletrayType: ElementId,startPoint: XYZ,endPoint: XYZ,levelId: ElementId) -> CableTray
 
   
@@ -37,15 +38,18 @@ class CableTray(CableTrayConduitBase,IDisposable):
 
    Returns: The newly created cable tray.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetShapeType(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetShapeType(self):
+        """
   GetShapeType(self: CableTray) -> CableTrayShape
 
   
@@ -54,10 +58,11 @@ class CableTray(CableTrayConduitBase,IDisposable):
 
    Returns: The shape type.
   """
-  pass
- @staticmethod
- def IsValidCableTrayType(document,cabletrayType):
-  """
+        pass
+
+    @staticmethod
+    def IsValidCableTrayType(document, cabletrayType):
+        """
   IsValidCableTrayType(document: Document,cabletrayType: ElementId) -> bool
 
   
@@ -72,9 +77,10 @@ class CableTray(CableTrayConduitBase,IDisposable):
 
    Returns: True if the cable tray type is valid,false otherwise.
   """
-  pass
- def IsValidRungSpace(self,rungSpace):
-  """
+        pass
+
+    def IsValidRungSpace(self, rungSpace):
+        """
   IsValidRungSpace(self: CableTray,rungSpace: float) -> bool
 
   
@@ -87,24 +93,32 @@ class CableTray(CableTrayConduitBase,IDisposable):
 
    Returns: True if the value is acceptable,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- CurveNormal=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The up-direction vector of the cable tray.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    CurveNormal = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The up-direction vector of the cable tray.
 
 
 
@@ -116,8 +130,8 @@ Set: CurveNormal(self: CableTray)=value
 
 """
 
- RungSpace=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Distance between two rungs for the ladder cable tray.
+    RungSpace = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Distance between two rungs for the ladder cable tray.
 
 
 
@@ -128,5 +142,3 @@ Get: RungSpace(self: CableTray) -> float
 Set: RungSpace(self: CableTray)=value
 
 """
-
-

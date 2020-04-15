@@ -1,7 +1,8 @@
 class ITypedList:
- """ Provides functionality to discover the schema for a bindable list,where the properties available for binding differ from the public properties of the object to bind to. """
- def GetItemProperties(self,listAccessors):
-  """
+    """ Provides functionality to discover the schema for a bindable list,where the properties available for binding differ from the public properties of the object to bind to. """
+
+    def GetItemProperties(self, listAccessors):
+        """
   GetItemProperties(self: ITypedList,listAccessors: Array[PropertyDescriptor]) -> PropertyDescriptorCollection
 
   
@@ -24,9 +25,10 @@ class ITypedList:
 
     item used to bind data.
   """
-  pass
- def GetListName(self,listAccessors):
-  """
+        pass
+
+    def GetListName(self, listAccessors):
+        """
   GetListName(self: ITypedList,listAccessors: Array[PropertyDescriptor]) -> str
 
   
@@ -43,7 +45,8 @@ class ITypedList:
 
    Returns: The name of the list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

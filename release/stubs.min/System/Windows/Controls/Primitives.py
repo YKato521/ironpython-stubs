@@ -18,7 +18,9 @@ from Primitives_parts.CustomPopupPlacementCallback import CustomPopupPlacementCa
 from Primitives_parts.IContainItemStorage import IContainItemStorage
 from Primitives_parts.DataGridCellsPresenter import DataGridCellsPresenter
 from Primitives_parts.DataGridColumnHeader import DataGridColumnHeader
-from Primitives_parts.DataGridColumnHeadersPresenter import DataGridColumnHeadersPresenter
+from Primitives_parts.DataGridColumnHeadersPresenter import (
+    DataGridColumnHeadersPresenter,
+)
 from Primitives_parts.DataGridDetailsPresenter import DataGridDetailsPresenter
 from Primitives_parts.DataGridRowHeader import DataGridRowHeader
 from Primitives_parts.IScrollInfo import IScrollInfo
@@ -37,9 +39,13 @@ from Primitives_parts.GeneratorDirection import GeneratorDirection
 from Primitives_parts.GeneratorPosition import GeneratorPosition
 from Primitives_parts.GeneratorStatus import GeneratorStatus
 from Primitives_parts.GridViewRowPresenterBase import GridViewRowPresenterBase
-from Primitives_parts.IHierarchicalVirtualizationAndScrollInfo import IHierarchicalVirtualizationAndScrollInfo
+from Primitives_parts.IHierarchicalVirtualizationAndScrollInfo import (
+    IHierarchicalVirtualizationAndScrollInfo,
+)
 from Primitives_parts.IItemContainerGenerator import IItemContainerGenerator
-from Primitives_parts.IRecyclingItemContainerGenerator import IRecyclingItemContainerGenerator
+from Primitives_parts.IRecyclingItemContainerGenerator import (
+    IRecyclingItemContainerGenerator,
+)
 from Primitives_parts.ItemsChangedEventArgs import ItemsChangedEventArgs
 from Primitives_parts.ItemsChangedEventHandler import ItemsChangedEventHandler
 from Primitives_parts.LayoutInformation import LayoutInformation

@@ -1,7 +1,8 @@
-class BitmapEntry(CommonObject,IDisposable,ISerializable):
- """ Rhino.DocObjects.Tables.BitmapTable entry """
- def ConstructConstObject(self,*args):
-  """
+class BitmapEntry(CommonObject, IDisposable, ISerializable):
+    """ Rhino.DocObjects.Tables.BitmapTable entry """
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -12,9 +13,10 @@ class BitmapEntry(CommonObject,IDisposable,ISerializable):
 
    subobject_index: The subobject index.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: CommonObject,disposing: bool)
 
    For derived class implementers.
@@ -39,9 +41,10 @@ class BitmapEntry(CommonObject,IDisposable,ISerializable):
 
     finalizer.
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: CommonObject)
 
    For derived classes implementers.
@@ -50,44 +53,52 @@ class BitmapEntry(CommonObject,IDisposable,ISerializable):
 
     instance from being const.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: CommonObject)
 
    Is called when a non-const operation first occurs.
   """
-  pass
- def Save(self,fileName):
-  """ Save(self: BitmapEntry,fileName: str) -> bool """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def Save(self, fileName):
+        """ Save(self: BitmapEntry,fileName: str) -> bool """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """ __new__(cls: type,info: SerializationInfo,context: StreamingContext) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- FileName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The name of this bitmap.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """ __new__(cls: type,info: SerializationInfo,context: StreamingContext) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    FileName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The name of this bitmap.
 
 
 
@@ -97,8 +108,10 @@ Get: FileName(self: BitmapEntry) -> str
 
 """
 
- IsReference=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicting whether this bitmap is a referenced bitmap. 
+    IsReference = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicting whether this bitmap is a referenced bitmap. 
 
    Referenced bitmaps are part of referenced documents.
 
@@ -109,5 +122,3 @@ Get: IsReference(self: BitmapEntry) -> bool
 
 
 """
-
-

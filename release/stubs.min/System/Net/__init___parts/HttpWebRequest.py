@@ -1,20 +1,22 @@
-class HttpWebRequest(WebRequest,ISerializable):
- """
+class HttpWebRequest(WebRequest, ISerializable):
+    """
  Provides an HTTP-specific implementation of the System.Net.WebRequest class.
 
  
 
  HttpWebRequest()
  """
- def Abort(self):
-  """
+
+    def Abort(self):
+        """
   Abort(self: HttpWebRequest)
 
    Cancels a request to an Internet resource.
   """
-  pass
- def AddRange(self,*__args):
-  """
+        pass
+
+    def AddRange(self, *__args):
+        """
   AddRange(self: HttpWebRequest,rangeSpecifier: str,from: Int64,to: Int64)
 
    Adds a range header to a request for a specified range.
@@ -111,9 +113,10 @@ class HttpWebRequest(WebRequest,ISerializable):
 
    range: The starting or ending point of the range.
   """
-  pass
- def BeginGetRequestStream(self,callback,state):
-  """
+        pass
+
+    def BeginGetRequestStream(self, callback, state):
+        """
   BeginGetRequestStream(self: HttpWebRequest,callback: AsyncCallback,state: object) -> IAsyncResult
 
   
@@ -128,9 +131,10 @@ class HttpWebRequest(WebRequest,ISerializable):
 
    Returns: An System.IAsyncResult that references the asynchronous request.
   """
-  pass
- def BeginGetResponse(self,callback,state):
-  """
+        pass
+
+    def BeginGetResponse(self, callback, state):
+        """
   BeginGetResponse(self: HttpWebRequest,callback: AsyncCallback,state: object) -> IAsyncResult
 
   
@@ -145,9 +149,10 @@ class HttpWebRequest(WebRequest,ISerializable):
 
    Returns: An System.IAsyncResult that references the asynchronous request for a response.
   """
-  pass
- def EndGetRequestStream(self,asyncResult,context=None):
-  """
+        pass
+
+    def EndGetRequestStream(self, asyncResult, context=None):
+        """
   EndGetRequestStream(self: HttpWebRequest,asyncResult: IAsyncResult) -> (Stream,TransportContext)
 
   
@@ -176,9 +181,10 @@ class HttpWebRequest(WebRequest,ISerializable):
 
    Returns: A System.IO.Stream to use to write request data.
   """
-  pass
- def EndGetResponse(self,asyncResult):
-  """
+        pass
+
+    def EndGetResponse(self, asyncResult):
+        """
   EndGetResponse(self: HttpWebRequest,asyncResult: IAsyncResult) -> WebResponse
 
   
@@ -191,9 +197,10 @@ class HttpWebRequest(WebRequest,ISerializable):
 
    Returns: A System.Net.WebResponse that contains the response from the Internet resource.
   """
-  pass
- def GetObjectData(self,*args):
-  """
+        pass
+
+    def GetObjectData(self, *args):
+        """
   GetObjectData(self: HttpWebRequest,serializationInfo: SerializationInfo,streamingContext: StreamingContext)
 
    Populates a System.Runtime.Serialization.SerializationInfo with the data required to serialize 
@@ -210,9 +217,10 @@ class HttpWebRequest(WebRequest,ISerializable):
 
     serialization.
   """
-  pass
- def GetRequestStream(self,context=None):
-  """
+        pass
+
+    def GetRequestStream(self, context=None):
+        """
   GetRequestStream(self: HttpWebRequest) -> (Stream,TransportContext)
 
   
@@ -233,9 +241,10 @@ class HttpWebRequest(WebRequest,ISerializable):
 
    Returns: A System.IO.Stream to use to write request data.
   """
-  pass
- def GetResponse(self):
-  """
+        pass
+
+    def GetResponse(self):
+        """
   GetResponse(self: HttpWebRequest) -> WebResponse
 
   
@@ -244,9 +253,10 @@ class HttpWebRequest(WebRequest,ISerializable):
 
    Returns: A System.Net.WebResponse that contains the response from the Internet resource.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -277,22 +287,26 @@ class HttpWebRequest(WebRequest,ISerializable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self):
+        """
   __new__(cls: type)
 
   __new__(cls: type,serializationInfo: SerializationInfo,streamingContext: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- Accept=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the value of the Accept HTTP header.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    Accept = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the value of the Accept HTTP header.
 
 
 
@@ -304,8 +318,8 @@ Set: Accept(self: HttpWebRequest)=value
 
 """
 
- Address=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the Uniform Resource Identifier (URI) of the Internet resource that actually responds to the request.
+    Address = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the Uniform Resource Identifier (URI) of the Internet resource that actually responds to the request.
 
 
 
@@ -315,8 +329,10 @@ Get: Address(self: HttpWebRequest) -> Uri
 
 """
 
- AllowAutoRedirect=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether the request should follow redirection responses.
+    AllowAutoRedirect = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether the request should follow redirection responses.
 
 
 
@@ -328,8 +344,10 @@ Set: AllowAutoRedirect(self: HttpWebRequest)=value
 
 """
 
- AllowReadStreamBuffering=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: AllowReadStreamBuffering(self: HttpWebRequest) -> bool
+    AllowReadStreamBuffering = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: AllowReadStreamBuffering(self: HttpWebRequest) -> bool
 
 
 
@@ -337,8 +355,10 @@ Set: AllowReadStreamBuffering(self: HttpWebRequest)=value
 
 """
 
- AllowWriteStreamBuffering=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether to buffer the data sent to the Internet resource.
+    AllowWriteStreamBuffering = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether to buffer the data sent to the Internet resource.
 
 
 
@@ -350,8 +370,10 @@ Set: AllowWriteStreamBuffering(self: HttpWebRequest)=value
 
 """
 
- AutomaticDecompression=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the type of decompression that is used.
+    AutomaticDecompression = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the type of decompression that is used.
 
 
 
@@ -363,8 +385,10 @@ Set: AutomaticDecompression(self: HttpWebRequest)=value
 
 """
 
- ClientCertificates=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the collection of security certificates that are associated with this request.
+    ClientCertificates = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the collection of security certificates that are associated with this request.
 
 
 
@@ -376,8 +400,10 @@ Set: ClientCertificates(self: HttpWebRequest)=value
 
 """
 
- Connection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the value of the Connection HTTP header.
+    Connection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the value of the Connection HTTP header.
 
 
 
@@ -389,8 +415,10 @@ Set: Connection(self: HttpWebRequest)=value
 
 """
 
- ConnectionGroupName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the connection group for the request.
+    ConnectionGroupName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the connection group for the request.
 
 
 
@@ -402,8 +430,10 @@ Set: ConnectionGroupName(self: HttpWebRequest)=value
 
 """
 
- ContentLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Content-length HTTP header.
+    ContentLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the Content-length HTTP header.
 
 
 
@@ -415,8 +445,10 @@ Set: ContentLength(self: HttpWebRequest)=value
 
 """
 
- ContentType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the value of the Content-type HTTP header.
+    ContentType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the value of the Content-type HTTP header.
 
 
 
@@ -428,8 +460,10 @@ Set: ContentType(self: HttpWebRequest)=value
 
 """
 
- ContinueDelegate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the delegate method called when an HTTP 100-continue response is received from the Internet resource.
+    ContinueDelegate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the delegate method called when an HTTP 100-continue response is received from the Internet resource.
 
 
 
@@ -441,8 +475,10 @@ Set: ContinueDelegate(self: HttpWebRequest)=value
 
 """
 
- ContinueTimeout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: ContinueTimeout(self: HttpWebRequest) -> int
+    ContinueTimeout = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: ContinueTimeout(self: HttpWebRequest) -> int
 
 
 
@@ -450,8 +486,10 @@ Set: ContinueTimeout(self: HttpWebRequest)=value
 
 """
 
- CookieContainer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the cookies associated with the request.
+    CookieContainer = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the cookies associated with the request.
 
 
 
@@ -463,8 +501,10 @@ Set: CookieContainer(self: HttpWebRequest)=value
 
 """
 
- Credentials=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets authentication information for the request.
+    Credentials = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets authentication information for the request.
 
 
 
@@ -476,8 +516,8 @@ Set: Credentials(self: HttpWebRequest)=value
 
 """
 
- Date=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get or set the Date HTTP header value to use in an HTTP request.
+    Date = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get or set the Date HTTP header value to use in an HTTP request.
 
 
 
@@ -489,8 +529,8 @@ Set: Date(self: HttpWebRequest)=value
 
 """
 
- Expect=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the value of the Expect HTTP header.
+    Expect = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the value of the Expect HTTP header.
 
 
 
@@ -502,8 +542,10 @@ Set: Expect(self: HttpWebRequest)=value
 
 """
 
- HaveResponse=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether a response has been received from an Internet resource.
+    HaveResponse = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether a response has been received from an Internet resource.
 
 
 
@@ -513,8 +555,8 @@ Get: HaveResponse(self: HttpWebRequest) -> bool
 
 """
 
- Headers=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies a collection of the name/value pairs that make up the HTTP headers.
+    Headers = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Specifies a collection of the name/value pairs that make up the HTTP headers.
 
 
 
@@ -526,8 +568,8 @@ Set: Headers(self: HttpWebRequest)=value
 
 """
 
- Host=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get or set the Host header value to use in an HTTP request independent from the request URI.
+    Host = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get or set the Host header value to use in an HTTP request independent from the request URI.
 
 
 
@@ -539,8 +581,10 @@ Set: Host(self: HttpWebRequest)=value
 
 """
 
- IfModifiedSince=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the value of the If-Modified-Since HTTP header.
+    IfModifiedSince = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the value of the If-Modified-Since HTTP header.
 
 
 
@@ -552,8 +596,8 @@ Set: IfModifiedSince(self: HttpWebRequest)=value
 
 """
 
- KeepAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether to make a persistent connection to the Internet resource.
+    KeepAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value that indicates whether to make a persistent connection to the Internet resource.
 
 
 
@@ -565,8 +609,10 @@ Set: KeepAlive(self: HttpWebRequest)=value
 
 """
 
- MaximumAutomaticRedirections=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the maximum number of redirects that the request follows.
+    MaximumAutomaticRedirections = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the maximum number of redirects that the request follows.
 
 
 
@@ -578,8 +624,10 @@ Set: MaximumAutomaticRedirections(self: HttpWebRequest)=value
 
 """
 
- MaximumResponseHeadersLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the maximum allowed length of the response headers.
+    MaximumResponseHeadersLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the maximum allowed length of the response headers.
 
 
 
@@ -591,8 +639,8 @@ Set: MaximumResponseHeadersLength(self: HttpWebRequest)=value
 
 """
 
- MediaType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the media type of the request.
+    MediaType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the media type of the request.
 
 
 
@@ -604,8 +652,8 @@ Set: MediaType(self: HttpWebRequest)=value
 
 """
 
- Method=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the method for the request.
+    Method = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the method for the request.
 
 
 
@@ -617,8 +665,8 @@ Set: Method(self: HttpWebRequest)=value
 
 """
 
- Pipelined=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether to pipeline the request to the Internet resource.
+    Pipelined = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value that indicates whether to pipeline the request to the Internet resource.
 
 
 
@@ -630,8 +678,10 @@ Set: Pipelined(self: HttpWebRequest)=value
 
 """
 
- PreAuthenticate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether to send an Authorization header with the request.
+    PreAuthenticate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether to send an Authorization header with the request.
 
 
 
@@ -643,8 +693,10 @@ Set: PreAuthenticate(self: HttpWebRequest)=value
 
 """
 
- ProtocolVersion=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the version of HTTP to use for the request.
+    ProtocolVersion = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the version of HTTP to use for the request.
 
 
 
@@ -656,8 +708,8 @@ Set: ProtocolVersion(self: HttpWebRequest)=value
 
 """
 
- Proxy=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets proxy information for the request.
+    Proxy = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets proxy information for the request.
 
 
 
@@ -669,8 +721,10 @@ Set: Proxy(self: HttpWebRequest)=value
 
 """
 
- ReadWriteTimeout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a time-out in milliseconds when writing to or reading from a stream.
+    ReadWriteTimeout = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a time-out in milliseconds when writing to or reading from a stream.
 
 
 
@@ -682,8 +736,8 @@ Set: ReadWriteTimeout(self: HttpWebRequest)=value
 
 """
 
- Referer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the value of the Referer HTTP header.
+    Referer = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the value of the Referer HTTP header.
 
 
 
@@ -695,8 +749,10 @@ Set: Referer(self: HttpWebRequest)=value
 
 """
 
- RequestUri=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the original Uniform Resource Identifier (URI) of the request.
+    RequestUri = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the original Uniform Resource Identifier (URI) of the request.
 
 
 
@@ -706,8 +762,10 @@ Get: RequestUri(self: HttpWebRequest) -> Uri
 
 """
 
- SendChunked=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether to send data in segments to the Internet resource.
+    SendChunked = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether to send data in segments to the Internet resource.
 
 
 
@@ -719,8 +777,10 @@ Set: SendChunked(self: HttpWebRequest)=value
 
 """
 
- ServerCertificateValidationCallback=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: ServerCertificateValidationCallback(self: HttpWebRequest) -> RemoteCertificateValidationCallback
+    ServerCertificateValidationCallback = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: ServerCertificateValidationCallback(self: HttpWebRequest) -> RemoteCertificateValidationCallback
 
 
 
@@ -728,8 +788,10 @@ Set: ServerCertificateValidationCallback(self: HttpWebRequest)=value
 
 """
 
- ServicePoint=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the service point to use for the request.
+    ServicePoint = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the service point to use for the request.
 
 
 
@@ -739,15 +801,17 @@ Get: ServicePoint(self: HttpWebRequest) -> ServicePoint
 
 """
 
- SupportsCookieContainer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: SupportsCookieContainer(self: HttpWebRequest) -> bool
+    SupportsCookieContainer = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: SupportsCookieContainer(self: HttpWebRequest) -> bool
 
 
 
 """
 
- Timeout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the time-out value in milliseconds for the System.Net.HttpWebRequest.GetResponse and System.Net.HttpWebRequest.GetRequestStream methods.
+    Timeout = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the time-out value in milliseconds for the System.Net.HttpWebRequest.GetResponse and System.Net.HttpWebRequest.GetRequestStream methods.
 
 
 
@@ -759,8 +823,10 @@ Set: Timeout(self: HttpWebRequest)=value
 
 """
 
- TransferEncoding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the value of the Transfer-encoding HTTP header.
+    TransferEncoding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the value of the Transfer-encoding HTTP header.
 
 
 
@@ -772,8 +838,10 @@ Set: TransferEncoding(self: HttpWebRequest)=value
 
 """
 
- UnsafeAuthenticatedConnectionSharing=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether to allow high-speed NTLM-authenticated connection sharing.
+    UnsafeAuthenticatedConnectionSharing = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether to allow high-speed NTLM-authenticated connection sharing.
 
 
 
@@ -785,8 +853,10 @@ Set: UnsafeAuthenticatedConnectionSharing(self: HttpWebRequest)=value
 
 """
 
- UseDefaultCredentials=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a System.Boolean value that controls whether default credentials are sent with requests.
+    UseDefaultCredentials = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a System.Boolean value that controls whether default credentials are sent with requests.
 
 
 
@@ -798,8 +868,8 @@ Set: UseDefaultCredentials(self: HttpWebRequest)=value
 
 """
 
- UserAgent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the value of the User-agent HTTP header.
+    UserAgent = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the value of the User-agent HTTP header.
 
 
 
@@ -811,8 +881,6 @@ Set: UserAgent(self: HttpWebRequest)=value
 
 """
 
-
- DefaultCachePolicy=None
- DefaultMaximumErrorResponseLength=64
- DefaultMaximumResponseHeadersLength=64
-
+    DefaultCachePolicy = None
+    DefaultMaximumErrorResponseLength = 64
+    DefaultMaximumResponseHeadersLength = 64

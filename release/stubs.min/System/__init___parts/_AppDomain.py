@@ -1,7 +1,8 @@
 class _AppDomain:
- """ Exposes the public members of the System.AppDomain class to unmanaged code. """
- def AppendPrivatePath(self,path):
-  """
+    """ Exposes the public members of the System.AppDomain class to unmanaged code. """
+
+    def AppendPrivatePath(self, path):
+        """
   AppendPrivatePath(self: _AppDomain,path: str)
 
    Provides COM objects with version-independent access to the 
@@ -14,27 +15,30 @@ class _AppDomain:
 
    path: The name of the directory to be appended to the private path.
   """
-  pass
- def ClearPrivatePath(self):
-  """
+        pass
+
+    def ClearPrivatePath(self):
+        """
   ClearPrivatePath(self: _AppDomain)
 
    Provides COM objects with version-independent access to the System.AppDomain.ClearPrivatePath 
 
     method.
   """
-  pass
- def ClearShadowCopyPath(self):
-  """
+        pass
+
+    def ClearShadowCopyPath(self):
+        """
   ClearShadowCopyPath(self: _AppDomain)
 
    Provides COM objects with version-independent access to the System.AppDomain.ClearShadowCopyPath 
 
     method.
   """
-  pass
- def CreateInstance(self,assemblyName,typeName,*__args):
-  """
+        pass
+
+    def CreateInstance(self, assemblyName, typeName, *__args):
+        """
   CreateInstance(self: _AppDomain,assemblyName: str,typeName: str,ignoreCase: bool,bindingAttr: BindingFlags,binder: Binder,args: Array[object],culture: CultureInfo,activationAttributes: Array[object],securityAttributes: Evidence) -> ObjectHandle
 
   
@@ -169,9 +173,10 @@ class _AppDomain:
 
     to be unwrapped to access the real object.
   """
-  pass
- def CreateInstanceFrom(self,assemblyFile,typeName,*__args):
-  """
+        pass
+
+    def CreateInstanceFrom(self, assemblyFile, typeName, *__args):
+        """
   CreateInstanceFrom(self: _AppDomain,assemblyFile: str,typeName: str,ignoreCase: bool,bindingAttr: BindingFlags,binder: Binder,args: Array[object],culture: CultureInfo,activationAttributes: Array[object],securityAttributes: Evidence) -> ObjectHandle
 
   
@@ -326,9 +331,10 @@ class _AppDomain:
 
     value needs to be unwrapped to access the real object.
   """
-  pass
- def DefineDynamicAssembly(self,name,access,*__args):
-  """
+        pass
+
+    def DefineDynamicAssembly(self, name, access, *__args):
+        """
   DefineDynamicAssembly(self: _AppDomain,name: AssemblyName,access: AssemblyBuilderAccess,evidence: Evidence,requiredPermissions: PermissionSet,optionalPermissions: PermissionSet,refusedPermissions: PermissionSet) -> AssemblyBuilder
 
   
@@ -615,9 +621,10 @@ class _AppDomain:
 
    Returns: Represents the dynamic assembly created.
   """
-  pass
- def DoCallBack(self,theDelegate):
-  """
+        pass
+
+    def DoCallBack(self, theDelegate):
+        """
   DoCallBack(self: _AppDomain,theDelegate: CrossAppDomainDelegate)
 
    Provides COM objects with version-independent access to the 
@@ -630,9 +637,10 @@ class _AppDomain:
 
    theDelegate: A delegate that specifies a method to call.
   """
-  pass
- def Equals(self,other):
-  """
+        pass
+
+    def Equals(self, other):
+        """
   Equals(self: _AppDomain,other: object) -> bool
 
   
@@ -649,9 +657,10 @@ class _AppDomain:
 
    Returns: true if the specified System.Object is equal to the current System.Object; otherwise,false.
   """
-  pass
- def ExecuteAssembly(self,assemblyFile,assemblySecurity=None,args=None):
-  """
+        pass
+
+    def ExecuteAssembly(self, assemblyFile, assemblySecurity=None, args=None):
+        """
   ExecuteAssembly(self: _AppDomain,assemblyFile: str,assemblySecurity: Evidence,args: Array[str]) -> int
 
   
@@ -708,9 +717,10 @@ class _AppDomain:
 
    Returns: The value returned by the entry point of the assembly.
   """
-  pass
- def GetAssemblies(self):
-  """
+        pass
+
+    def GetAssemblies(self):
+        """
   GetAssemblies(self: _AppDomain) -> Array[Assembly]
 
   
@@ -723,9 +733,10 @@ class _AppDomain:
 
    Returns: An array of assemblies in this application domain.
   """
-  pass
- def GetData(self,name):
-  """
+        pass
+
+    def GetData(self, name):
+        """
   GetData(self: _AppDomain,name: str) -> object
 
   
@@ -746,9 +757,10 @@ class _AppDomain:
 
    Returns: The value of the name property.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: _AppDomain) -> int
 
   
@@ -761,9 +773,10 @@ class _AppDomain:
 
    Returns: A hash code for the current System.Object.
   """
-  pass
- def GetIDsOfNames(self,riid,rgszNames,cNames,lcid,rgDispId):
-  """
+        pass
+
+    def GetIDsOfNames(self, riid, rgszNames, cNames, lcid, rgDispId):
+        """
   GetIDsOfNames(self: _AppDomain,riid: Guid,rgszNames: IntPtr,cNames: UInt32,lcid: UInt32,rgDispId: IntPtr) -> Guid
 
   
@@ -782,9 +795,10 @@ class _AppDomain:
 
    rgDispId: Caller-allocated array which receives the IDs corresponding to the names.
   """
-  pass
- def GetLifetimeService(self):
-  """
+        pass
+
+    def GetLifetimeService(self):
+        """
   GetLifetimeService(self: _AppDomain) -> object
 
   
@@ -799,9 +813,10 @@ class _AppDomain:
 
     for this instance.
   """
-  pass
- def GetType(self):
-  """
+        pass
+
+    def GetType(self):
+        """
   GetType(self: _AppDomain) -> Type
 
   
@@ -810,9 +825,10 @@ class _AppDomain:
 
    Returns: A System.Type representing the type of the current instance.
   """
-  pass
- def GetTypeInfo(self,iTInfo,lcid,ppTInfo):
-  """
+        pass
+
+    def GetTypeInfo(self, iTInfo, lcid, ppTInfo):
+        """
   GetTypeInfo(self: _AppDomain,iTInfo: UInt32,lcid: UInt32,ppTInfo: IntPtr)
 
    Retrieves the type information for an object,which can then be used to get the type information 
@@ -829,18 +845,20 @@ class _AppDomain:
 
    ppTInfo: Receives a pointer to the requested type information object.
   """
-  pass
- def GetTypeInfoCount(self,pcTInfo):
-  """
+        pass
+
+    def GetTypeInfoCount(self, pcTInfo):
+        """
   GetTypeInfoCount(self: _AppDomain) -> UInt32
 
   
 
    Retrieves the number of type information interfaces that an object provides (either 0 or 1).
   """
-  pass
- def InitializeLifetimeService(self):
-  """
+        pass
+
+    def InitializeLifetimeService(self):
+        """
   InitializeLifetimeService(self: _AppDomain) -> object
 
   
@@ -853,9 +871,20 @@ class _AppDomain:
 
    Returns: Always null.
   """
-  pass
- def Invoke(self,dispIdMember,riid,lcid,wFlags,pDispParams,pVarResult,pExcepInfo,puArgErr):
-  """
+        pass
+
+    def Invoke(
+        self,
+        dispIdMember,
+        riid,
+        lcid,
+        wFlags,
+        pDispParams,
+        pVarResult,
+        pExcepInfo,
+        puArgErr,
+    ):
+        """
   Invoke(self: _AppDomain,dispIdMember: UInt32,riid: Guid,lcid: UInt32,wFlags: Int16,pDispParams: IntPtr,pVarResult: IntPtr,pExcepInfo: IntPtr,puArgErr: IntPtr) -> Guid
 
   
@@ -884,9 +913,10 @@ class _AppDomain:
 
    puArgErr: The index of the first argument that has an error.
   """
-  pass
- def Load(self,*__args):
-  """
+        pass
+
+    def Load(self, *__args):
+        """
   Load(self: _AppDomain,rawAssembly: Array[Byte],rawSymbolStore: Array[Byte],securityEvidence: Evidence) -> Assembly
 
   
@@ -1013,9 +1043,10 @@ class _AppDomain:
 
    Returns: The loaded assembly.
   """
-  pass
- def SetAppDomainPolicy(self,domainPolicy):
-  """
+        pass
+
+    def SetAppDomainPolicy(self, domainPolicy):
+        """
   SetAppDomainPolicy(self: _AppDomain,domainPolicy: PolicyLevel)
 
    Provides COM objects with version-independent access to the 
@@ -1028,9 +1059,10 @@ class _AppDomain:
 
    domainPolicy: The security policy level.
   """
-  pass
- def SetCachePath(self,s):
-  """
+        pass
+
+    def SetCachePath(self, s):
+        """
   SetCachePath(self: _AppDomain,s: str)
 
    Provides COM objects with version-independent access to the 
@@ -1043,9 +1075,10 @@ class _AppDomain:
 
    s: The fully qualified path to the shadow copy location.
   """
-  pass
- def SetData(self,name,data):
-  """
+        pass
+
+    def SetData(self, name, data):
+        """
   SetData(self: _AppDomain,name: str,data: object)
 
    Provides COM objects with version-independent access to the 
@@ -1060,9 +1093,10 @@ class _AppDomain:
 
    data: The value of the property.
   """
-  pass
- def SetPrincipalPolicy(self,policy):
-  """
+        pass
+
+    def SetPrincipalPolicy(self, policy):
+        """
   SetPrincipalPolicy(self: _AppDomain,policy: PrincipalPolicy)
 
    Provides COM objects with version-independent access to the 
@@ -1077,9 +1111,10 @@ class _AppDomain:
 
     principal object to attach to threads.
   """
-  pass
- def SetShadowCopyPath(self,s):
-  """
+        pass
+
+    def SetShadowCopyPath(self, s):
+        """
   SetShadowCopyPath(self: _AppDomain,s: str)
 
    Provides COM objects with version-independent access to the 
@@ -1092,9 +1127,10 @@ class _AppDomain:
 
    s: A list of directory names,where each name is separated by a semicolon.
   """
-  pass
- def SetThreadPrincipal(self,principal):
-  """
+        pass
+
+    def SetThreadPrincipal(self, principal):
+        """
   SetThreadPrincipal(self: _AppDomain,principal: IPrincipal)
 
    Provides COM objects with version-independent access to the 
@@ -1107,9 +1143,10 @@ class _AppDomain:
 
    principal: The principal object to attach to threads.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: _AppDomain) -> str
 
   
@@ -1122,17 +1159,23 @@ class _AppDomain:
 
     "There are no context policies."
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- BaseDirectory=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.AppDomain.BaseDirectory property.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    BaseDirectory = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.AppDomain.BaseDirectory property.
 
 
 
@@ -1142,8 +1185,10 @@ Get: BaseDirectory(self: _AppDomain) -> str
 
 """
 
- DynamicDirectory=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.AppDomain.DynamicDirectory property.
+    DynamicDirectory = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.AppDomain.DynamicDirectory property.
 
 
 
@@ -1153,8 +1198,8 @@ Get: DynamicDirectory(self: _AppDomain) -> str
 
 """
 
- Evidence=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.AppDomain.Evidence property.
+    Evidence = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.AppDomain.Evidence property.
 
 
 
@@ -1164,8 +1209,10 @@ Get: Evidence(self: _AppDomain) -> Evidence
 
 """
 
- FriendlyName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.AppDomain.FriendlyName property.
+    FriendlyName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.AppDomain.FriendlyName property.
 
 
 
@@ -1175,8 +1222,10 @@ Get: FriendlyName(self: _AppDomain) -> str
 
 """
 
- RelativeSearchPath=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.AppDomain.RelativeSearchPath property.
+    RelativeSearchPath = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.AppDomain.RelativeSearchPath property.
 
 
 
@@ -1186,8 +1235,10 @@ Get: RelativeSearchPath(self: _AppDomain) -> str
 
 """
 
- ShadowCopyFiles=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.AppDomain.ShadowCopyFiles property.
+    ShadowCopyFiles = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.AppDomain.ShadowCopyFiles property.
 
 
 
@@ -1197,12 +1248,10 @@ Get: ShadowCopyFiles(self: _AppDomain) -> bool
 
 """
 
-
- AssemblyLoad=None
- AssemblyResolve=None
- DomainUnload=None
- ProcessExit=None
- ResourceResolve=None
- TypeResolve=None
- UnhandledException=None
-
+    AssemblyLoad = None
+    AssemblyResolve = None
+    DomainUnload = None
+    ProcessExit = None
+    ResourceResolve = None
+    TypeResolve = None
+    UnhandledException = None

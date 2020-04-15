@@ -8,19 +8,22 @@
 # no functions
 # classes
 
+
 class Color(object):
- # no doc
- @staticmethod
- def Add(c1,c2):
-  """ Add(c1: Color,c2: Color) -> Color """
-  pass
- @staticmethod
- def Blerp(colors,parameter):
-  """ Blerp(colors: IList[IndexedColor2D],parameter: UV) -> Color """
-  pass
- @staticmethod
- def Brightness(c):
-  """
+    # no doc
+    @staticmethod
+    def Add(c1, c2):
+        """ Add(c1: Color,c2: Color) -> Color """
+        pass
+
+    @staticmethod
+    def Blerp(colors, parameter):
+        """ Blerp(colors: IList[IndexedColor2D],parameter: UV) -> Color """
+        pass
+
+    @staticmethod
+    def Brightness(c):
+        """
   Brightness(c: Color) -> Single
 
   
@@ -29,18 +32,21 @@ class Color(object):
 
    Returns: double between 0 and 1 inclusive.
   """
-  pass
- @staticmethod
- def BuildColorFrom1DRange(colors,parameters,parameter):
-  """ BuildColorFrom1DRange(colors: List[Color],parameters: List[float],parameter: float) -> Color """
-  pass
- @staticmethod
- def BuildColorFrom2DRange(colors,parameters,parameter):
-  """ BuildColorFrom2DRange(colors: IList[Color],parameters: IList[UV],parameter: UV) -> Color """
-  pass
- @staticmethod
- def ByARGB(a,r,g,b):
-  """
+        pass
+
+    @staticmethod
+    def BuildColorFrom1DRange(colors, parameters, parameter):
+        """ BuildColorFrom1DRange(colors: List[Color],parameters: List[float],parameter: float) -> Color """
+        pass
+
+    @staticmethod
+    def BuildColorFrom2DRange(colors, parameters, parameter):
+        """ BuildColorFrom2DRange(colors: IList[Color],parameters: IList[UV],parameter: UV) -> Color """
+        pass
+
+    @staticmethod
+    def ByARGB(a, r, g, b):
+        """
   ByARGB(a: int,r: int,g: int,b: int) -> Color
 
   
@@ -59,10 +65,11 @@ class Color(object):
 
    Returns: Color.
   """
-  pass
- @staticmethod
- def Components(c):
-  """
+        pass
+
+    @staticmethod
+    def Components(c):
+        """
   Components(c: Color) -> Dictionary[str,Byte]
 
   
@@ -71,20 +78,24 @@ class Color(object):
 
    Returns: Saturation value for the color.
   """
-  pass
- @staticmethod
- def Divide(c1,div):
-  """ Divide(c1: Color,div: float) -> Color """
-  pass
- def Equals(self,obj):
-  """ Equals(self: Color,obj: object) -> bool """
-  pass
- def GetHashCode(self):
-  """ GetHashCode(self: Color) -> int """
-  pass
- @staticmethod
- def Hue(c):
-  """
+        pass
+
+    @staticmethod
+    def Divide(c1, div):
+        """ Divide(c1: Color,div: float) -> Color """
+        pass
+
+    def Equals(self, obj):
+        """ Equals(self: Color,obj: object) -> bool """
+        pass
+
+    def GetHashCode(self):
+        """ GetHashCode(self: Color) -> int """
+        pass
+
+    @staticmethod
+    def Hue(c):
+        """
   Hue(c: Color) -> Single
 
   
@@ -93,18 +104,21 @@ class Color(object):
 
    Returns: double between 0 and 1 inclusive.
   """
-  pass
- @staticmethod
- def Lerp(start,end,t):
-  """ Lerp(start: Color,end: Color,t: float) -> Color """
-  pass
- @staticmethod
- def Multiply(c1,div):
-  """ Multiply(c1: Color,div: float) -> Color """
-  pass
- @staticmethod
- def Saturation(c):
-  """
+        pass
+
+    @staticmethod
+    def Lerp(start, end, t):
+        """ Lerp(start: Color,end: Color,t: float) -> Color """
+        pass
+
+    @staticmethod
+    def Multiply(c1, div):
+        """ Multiply(c1: Color,div: float) -> Color """
+        pass
+
+    @staticmethod
+    def Saturation(c):
+        """
   Saturation(c: Color) -> Single
 
   
@@ -113,29 +127,37 @@ class Color(object):
 
    Returns: double between 0 and 1 inclusive.
   """
-  pass
- def ToString(self):
-  """ ToString(self: Color) -> str """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __div__(self,*args):
-  """ x.__div__(y) <==> x/y """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __mul__(self,*args):
-  """ x.__mul__(y) <==> x*y """
-  pass
- def __ne__(self,*args):
-  pass
- def __radd__(self,*args):
-  """ __radd__(c1: Color,c2: Color) -> Color """
-  pass
- Alpha=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Find the alpha component of a color,0 to 255.
+        pass
+
+    def ToString(self):
+        """ ToString(self: Color) -> str """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __div__(self, *args):
+        """ x.__div__(y) <==> x/y """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __mul__(self, *args):
+        """ x.__mul__(y) <==> x*y """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __radd__(self, *args):
+        """ __radd__(c1: Color,c2: Color) -> Color """
+        pass
+
+    Alpha = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Find the alpha component of a color,0 to 255.
 
 
 
@@ -145,8 +167,8 @@ Get: Alpha(self: Color) -> Byte
 
 """
 
- Blue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Find the blue component of a color,0 to 255.
+    Blue = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Find the blue component of a color,0 to 255.
 
 
 
@@ -156,8 +178,8 @@ Get: Blue(self: Color) -> Byte
 
 """
 
- Green=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Find the green component of a color,0 to 255.
+    Green = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Find the green component of a color,0 to 255.
 
 
 
@@ -167,8 +189,8 @@ Get: Green(self: Color) -> Byte
 
 """
 
- Red=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Find the red component of a color,0 to 255.
+    Red = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Find the red component of a color,0 to 255.
 
 
 
@@ -178,45 +200,50 @@ Get: Red(self: Color) -> Byte
 
 """
 
-
- IndexedColor1D=None
- IndexedColor2D=None
+    IndexedColor1D = None
+    IndexedColor2D = None
 
 
 class ColorRange1D(object):
- # no doc
- @staticmethod
- def ByColorsAndParameters(colors,parameters):
-  """ ByColorsAndParameters(colors: List[Color],parameters: List[float]) -> ColorRange1D """
-  pass
- @staticmethod
- def Default():
-  """ Default() -> ColorRange1D """
-  pass
- @staticmethod
- def GetColorAtParameter(colorRange,parameter):
-  """ GetColorAtParameter(colorRange: ColorRange1D,parameter: float) -> Color """
-  pass
- def ToString(self):
-  """ ToString(self: ColorRange1D) -> str """
-  pass
- IndexedColors=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IndexedColors(self: ColorRange1D) -> IEnumerable[IndexedColor1D]
+    # no doc
+    @staticmethod
+    def ByColorsAndParameters(colors, parameters):
+        """ ByColorsAndParameters(colors: List[Color],parameters: List[float]) -> ColorRange1D """
+        pass
+
+    @staticmethod
+    def Default():
+        """ Default() -> ColorRange1D """
+        pass
+
+    @staticmethod
+    def GetColorAtParameter(colorRange, parameter):
+        """ GetColorAtParameter(colorRange: ColorRange1D,parameter: float) -> Color """
+        pass
+
+    def ToString(self):
+        """ ToString(self: ColorRange1D) -> str """
+        pass
+
+    IndexedColors = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IndexedColors(self: ColorRange1D) -> IEnumerable[IndexedColor1D]
 
 
 
 """
 
 
-
 class ColorRange2D(object):
- # no doc
- @staticmethod
- def ByColorsAndParameters(colors,parameters):
-  """ ByColorsAndParameters(colors: IList[Color],parameters: IList[UV]) -> ColorRange2D """
-  pass
- def GetColorAtParameter(self,parameter):
-  """
+    # no doc
+    @staticmethod
+    def ByColorsAndParameters(colors, parameters):
+        """ ByColorsAndParameters(colors: IList[Color],parameters: IList[UV]) -> ColorRange2D """
+        pass
+
+    def GetColorAtParameter(self, parameter):
+        """
   GetColorAtParameter(self: ColorRange2D,parameter: UV) -> Color
 
   
@@ -229,39 +256,46 @@ class ColorRange2D(object):
 
    Returns: A Color.
   """
-  pass
+        pass
+
 
 class Compare(object):
- """ Comparison methods. """
- @staticmethod
- def GreaterThan(a,b):
-  """ GreaterThan(a: object,b: object) -> bool """
-  pass
- @staticmethod
- def GreaterThanOrEqual(a,b):
-  """ GreaterThanOrEqual(a: object,b: object) -> bool """
-  pass
- @staticmethod
- def LessThan(a,b):
-  """ LessThan(a: object,b: object) -> bool """
-  pass
- @staticmethod
- def LessThanOrEqual(a,b):
-  """ LessThanOrEqual(a: object,b: object) -> bool """
-  pass
- __all__=[
-  'GreaterThan',
-  'GreaterThanOrEqual',
-  'LessThan',
-  'LessThanOrEqual',
- ]
+    """ Comparison methods. """
+
+    @staticmethod
+    def GreaterThan(a, b):
+        """ GreaterThan(a: object,b: object) -> bool """
+        pass
+
+    @staticmethod
+    def GreaterThanOrEqual(a, b):
+        """ GreaterThanOrEqual(a: object,b: object) -> bool """
+        pass
+
+    @staticmethod
+    def LessThan(a, b):
+        """ LessThan(a: object,b: object) -> bool """
+        pass
+
+    @staticmethod
+    def LessThanOrEqual(a, b):
+        """ LessThanOrEqual(a: object,b: object) -> bool """
+        pass
+
+    __all__ = [
+        "GreaterThan",
+        "GreaterThanOrEqual",
+        "LessThan",
+        "LessThanOrEqual",
+    ]
 
 
 class DateTime(object):
- """ Object representing a specific Date and Time. """
- @staticmethod
- def AddTimeSpan(dateTime,timeSpan):
-  """
+    """ Object representing a specific Date and Time. """
+
+    @staticmethod
+    def AddTimeSpan(dateTime, timeSpan):
+        """
   AddTimeSpan(dateTime: DateTime,timeSpan: TimeSpan) -> DateTime
 
   
@@ -276,10 +310,11 @@ class DateTime(object):
 
    Returns: DateTime
   """
-  pass
- @staticmethod
- def ByDate(year,month,day):
-  """
+        pass
+
+    @staticmethod
+    def ByDate(year, month, day):
+        """
   ByDate(year: int,month: int,day: int) -> DateTime
 
   
@@ -296,10 +331,11 @@ class DateTime(object):
 
    Returns: DateTime
   """
-  pass
- @staticmethod
- def ByDateAndTime(year,month,day,hour,minute,second,millisecond):
-  """
+        pass
+
+    @staticmethod
+    def ByDateAndTime(year, month, day, hour, minute, second, millisecond):
+        """
   ByDateAndTime(year: int,month: int,day: int,hour: int,minute: int,second: int,millisecond: int) -> DateTime
 
   
@@ -324,10 +360,11 @@ class DateTime(object):
 
    Returns: DateTime
   """
-  pass
- @staticmethod
- def Components(dateTime):
-  """
+        pass
+
+    @staticmethod
+    def Components(dateTime):
+        """
   Components(dateTime: DateTime) -> Dictionary[str,int]
 
   
@@ -338,10 +375,11 @@ class DateTime(object):
 
    dateTime: A DateTime.
   """
-  pass
- @staticmethod
- def Date(dateTime):
-  """
+        pass
+
+    @staticmethod
+    def Date(dateTime):
+        """
   Date(dateTime: DateTime) -> DateTime
 
   
@@ -352,10 +390,11 @@ class DateTime(object):
 
    dateTime: A DateTime.
   """
-  pass
- @staticmethod
- def DayOfWeek(dateTime):
-  """
+        pass
+
+    @staticmethod
+    def DayOfWeek(dateTime):
+        """
   DayOfWeek(dateTime: DateTime) -> DayOfWeek
 
   
@@ -368,10 +407,11 @@ class DateTime(object):
 
    Returns: Day of the week
   """
-  pass
- @staticmethod
- def DayOfYear(dateTime):
-  """
+        pass
+
+    @staticmethod
+    def DayOfYear(dateTime):
+        """
   DayOfYear(dateTime: DateTime) -> int
 
   
@@ -382,10 +422,11 @@ class DateTime(object):
 
    dateTime: A DateTime.
   """
-  pass
- @staticmethod
- def DaysInMonth(year,month):
-  """
+        pass
+
+    @staticmethod
+    def DaysInMonth(year, month):
+        """
   DaysInMonth(year: int,month: int) -> int
 
   
@@ -398,10 +439,11 @@ class DateTime(object):
 
    month: Exact month (1-12)
   """
-  pass
- @staticmethod
- def FromString(str):
-  """
+        pass
+
+    @staticmethod
+    def FromString(str):
+        """
   FromString(str: str) -> DateTime
 
   
@@ -414,10 +456,11 @@ class DateTime(object):
 
    Returns: DateTime
   """
-  pass
- @staticmethod
- def IsDaylightSavingsTime(dateTime):
-  """
+        pass
+
+    @staticmethod
+    def IsDaylightSavingsTime(dateTime):
+        """
   IsDaylightSavingsTime(dateTime: DateTime) -> bool
 
   
@@ -428,10 +471,11 @@ class DateTime(object):
 
    dateTime: A DateTime.
   """
-  pass
- @staticmethod
- def IsLeapYear(year):
-  """
+        pass
+
+    @staticmethod
+    def IsLeapYear(year):
+        """
   IsLeapYear(year: int) -> bool
 
   
@@ -442,10 +486,11 @@ class DateTime(object):
 
    year: Exact year (1-9999)
   """
-  pass
- @staticmethod
- def SubtractTimeSpan(dateTime,timeSpan):
-  """
+        pass
+
+    @staticmethod
+    def SubtractTimeSpan(dateTime, timeSpan):
+        """
   SubtractTimeSpan(dateTime: DateTime,timeSpan: TimeSpan) -> DateTime
 
   
@@ -460,10 +505,11 @@ class DateTime(object):
 
    Returns: DateTime
   """
-  pass
- @staticmethod
- def TimeOfDay(dateTime):
-  """
+        pass
+
+    @staticmethod
+    def TimeOfDay(dateTime):
+        """
   TimeOfDay(dateTime: DateTime) -> TimeSpan
 
   
@@ -480,82 +526,95 @@ class DateTime(object):
 
    dateTime: A DateTime.
   """
-  pass
- MaxValue=None
- MinValue=None
- Now=None
- Today=None
- __all__=[
-  'AddTimeSpan',
-  'ByDate',
-  'ByDateAndTime',
-  'Components',
-  'Date',
-  'DayOfWeek',
-  'DayOfYear',
-  'DaysInMonth',
-  'FromString',
-  'IsDaylightSavingsTime',
-  'IsLeapYear',
-  'SubtractTimeSpan',
-  'TimeOfDay',
- ]
+        pass
+
+    MaxValue = None
+    MinValue = None
+    Now = None
+    Today = None
+    __all__ = [
+        "AddTimeSpan",
+        "ByDate",
+        "ByDateAndTime",
+        "Components",
+        "Date",
+        "DayOfWeek",
+        "DayOfYear",
+        "DaysInMonth",
+        "FromString",
+        "IsDaylightSavingsTime",
+        "IsLeapYear",
+        "SubtractTimeSpan",
+        "TimeOfDay",
+    ]
 
 
-class DayOfWeek(Enum,IComparable,IFormattable,IConvertible):
- """
+class DayOfWeek(Enum, IComparable, IFormattable, IConvertible):
+    """
  Days of the Week
 
  
 
  enum DayOfWeek,values: Friday (5),Monday (1),Saturday (6),Sunday (0),Thursday (4),Tuesday (2),Wednesday (3)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Friday=None
- Monday=None
- Saturday=None
- Sunday=None
- Thursday=None
- Tuesday=None
- value__=None
- Wednesday=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Friday = None
+    Monday = None
+    Saturday = None
+    Sunday = None
+    Thursday = None
+    Tuesday = None
+    value__ = None
+    Wednesday = None
 
 
 class DefaultColorRanges(object):
- # no doc
- Analysis=None
- __all__=[
-  'Analysis',
- ]
+    # no doc
+    Analysis = None
+    __all__ = [
+        "Analysis",
+    ]
 
 
 class Formula(object):
- """ Backend implementation for Formula node. """
- @staticmethod
- def Evaluate(formulaString,parameters,args):
-  """
+    """ Backend implementation for Formula node. """
+
+    @staticmethod
+    def Evaluate(formulaString, parameters, args):
+        """
   Evaluate(formulaString: str,parameters: Array[str],args: Array[object]) -> object
 
   
@@ -572,17 +631,19 @@ class Formula(object):
 
    Returns: Result of the formula calculation.
   """
-  pass
- __all__=[
-  'Evaluate',
- ]
+        pass
+
+    __all__ = [
+        "Evaluate",
+    ]
 
 
 class List(object):
- """ Methods for creating and manipulating Lists. """
- @staticmethod
- def AddItemToEnd(item,list):
-  """
+    """ Methods for creating and manipulating Lists. """
+
+    @staticmethod
+    def AddItemToEnd(item, list):
+        """
   AddItemToEnd(item: object,list: IList) -> IList
 
   
@@ -595,10 +656,11 @@ class List(object):
 
    list: List to add on to.
   """
-  pass
- @staticmethod
- def AddItemToFront(item,list):
-  """
+        pass
+
+    @staticmethod
+    def AddItemToFront(item, list):
+        """
   AddItemToFront(item: object,list: IList) -> IList
 
   
@@ -613,10 +675,11 @@ class List(object):
 
    Returns: New list.
   """
-  pass
- @staticmethod
- def AllIndicesOf(list,item):
-  """
+        pass
+
+    @staticmethod
+    def AllIndicesOf(list, item):
+        """
   AllIndicesOf(list: IList,item: object) -> IList
 
   
@@ -641,14 +704,16 @@ class List(object):
 
     list if the item does not exist in the list.
   """
-  pass
- @staticmethod
- def Chop(list,lengths):
-  """ Chop(list: IList,lengths: List[int]) -> IList """
-  pass
- @staticmethod
- def Clean(list,preserveIndices):
-  """
+        pass
+
+    @staticmethod
+    def Chop(list, lengths):
+        """ Chop(list: IList,lengths: List[int]) -> IList """
+        pass
+
+    @staticmethod
+    def Clean(list, preserveIndices):
+        """
   Clean(list: IList,preserveIndices: bool) -> IList
 
   
@@ -667,10 +732,11 @@ class List(object):
 
    Returns: A list cleaned of nulls and empty lists
   """
-  pass
- @staticmethod
- def Combinations(list,length,replace):
-  """
+        pass
+
+    @staticmethod
+    def Combinations(list, length, replace):
+        """
   Combinations(list: IList,length: int,replace: bool) -> IList
 
   
@@ -693,10 +759,11 @@ class List(object):
 
    Returns: Combinations of the list of the given length.
   """
-  pass
- @staticmethod
- def ContainsItem(list,item):
-  """
+        pass
+
+    @staticmethod
+    def ContainsItem(list, item):
+        """
   ContainsItem(list: IList,item: object) -> bool
 
   
@@ -711,10 +778,11 @@ class List(object):
 
    Returns: Whether list contains the given item.
   """
-  pass
- @staticmethod
- def Count(list):
-  """
+        pass
+
+    @staticmethod
+    def Count(list):
+        """
   Count(list: IList) -> int
 
   
@@ -727,10 +795,11 @@ class List(object):
 
    Returns: List length.
   """
-  pass
- @staticmethod
- def Cycle(list,amount):
-  """
+        pass
+
+    @staticmethod
+    def Cycle(list, amount):
+        """
   Cycle(list: IList,amount: int) -> IList
 
   
@@ -745,10 +814,11 @@ class List(object):
 
    Returns: List of repeated lists.
   """
-  pass
- @staticmethod
- def Deconstruct(list):
-  """
+        pass
+
+    @staticmethod
+    def Deconstruct(list):
+        """
   Deconstruct(list: IList) -> IDictionary
 
   
@@ -767,10 +837,11 @@ class List(object):
 
    Returns: Rest of the list.
   """
-  pass
- @staticmethod
- def DiagonalLeft(list,rowLength):
-  """
+        pass
+
+    @staticmethod
+    def DiagonalLeft(list, rowLength):
+        """
   DiagonalLeft(list: IList,rowLength: int) -> IList
 
   
@@ -785,10 +856,11 @@ class List(object):
 
    Returns: Lists of elements along matrix diagonals.
   """
-  pass
- @staticmethod
- def DiagonalRight(list,subLength):
-  """
+        pass
+
+    @staticmethod
+    def DiagonalRight(list, subLength):
+        """
   DiagonalRight(list: IList,subLength: int) -> IList
 
   
@@ -803,10 +875,11 @@ class List(object):
 
    Returns: Lists of elements along matrix diagonals.
   """
-  pass
- @staticmethod
- def DropEveryNthItem(list,n,offset):
-  """
+        pass
+
+    @staticmethod
+    def DropEveryNthItem(list, n, offset):
+        """
   DropEveryNthItem(list: IList,n: int,offset: int) -> IList
 
   
@@ -829,10 +902,11 @@ class List(object):
 
    Returns: List with items removed.
   """
-  pass
- @staticmethod
- def DropItems(list,amount):
-  """
+        pass
+
+    @staticmethod
+    def DropItems(list, amount):
+        """
   DropItems(list: IList,amount: int) -> IList
 
   
@@ -853,10 +927,11 @@ class List(object):
 
    Returns: List of remaining items.
   """
-  pass
- @staticmethod
- def FilterByBoolMask(list,mask):
-  """
+        pass
+
+    @staticmethod
+    def FilterByBoolMask(list, mask):
+        """
   FilterByBoolMask(list: IList,mask: IList) -> Dictionary[str,object]
 
   
@@ -877,10 +952,11 @@ class List(object):
 
    Returns: Items whose mask index is false.
   """
-  pass
- @staticmethod
- def FirstIndexOf(list,item):
-  """
+        pass
+
+    @staticmethod
+    def FirstIndexOf(list, item):
+        """
   FirstIndexOf(list: IList,item: object) -> int
 
   
@@ -901,10 +977,11 @@ class List(object):
 
    Returns: Zero-based index of the item in the list,or -1 if it is not found.
   """
-  pass
- @staticmethod
- def FirstItem(list):
-  """
+        pass
+
+    @staticmethod
+    def FirstItem(list):
+        """
   FirstItem(list: IList) -> object
 
   
@@ -917,10 +994,11 @@ class List(object):
 
    Returns: First item in the list.
   """
-  pass
- @staticmethod
- def Flatten(list,amt):
-  """
+        pass
+
+    @staticmethod
+    def Flatten(list, amt):
+        """
   Flatten(list: IList,amt: int) -> IList
 
   
@@ -933,10 +1011,11 @@ class List(object):
 
    amt: Layers of nesting to remove.
   """
-  pass
- @staticmethod
- def GetItemAtIndex(list,index):
-  """
+        pass
+
+    @staticmethod
+    def GetItemAtIndex(list, index):
+        """
   GetItemAtIndex(list: IList,index: int) -> object
 
   
@@ -951,10 +1030,11 @@ class List(object):
 
    Returns: Item in the list at the given index.
   """
-  pass
- @staticmethod
- def GroupByKey(list,keys):
-  """
+        pass
+
+    @staticmethod
+    def GroupByKey(list, keys):
+        """
   GroupByKey(list: IList,keys: IList) -> IDictionary
 
   
@@ -969,10 +1049,11 @@ class List(object):
 
    Returns: key value corresponding to each group
   """
-  pass
- @staticmethod
- def IsEmpty(list):
-  """
+        pass
+
+    @staticmethod
+    def IsEmpty(list):
+        """
   IsEmpty(list: IList) -> bool
 
   
@@ -985,10 +1066,11 @@ class List(object):
 
    Returns: Whether the list is empty.
   """
-  pass
- @staticmethod
- def Join(lists):
-  """
+        pass
+
+    @staticmethod
+    def Join(lists):
+        """
   Join(*lists: Array[IList]) -> IList
 
   
@@ -1001,10 +1083,11 @@ class List(object):
 
    Returns: Joined list.
   """
-  pass
- @staticmethod
- def LastItem(list):
-  """
+        pass
+
+    @staticmethod
+    def LastItem(list):
+        """
   LastItem(list: IList) -> object
 
   
@@ -1017,18 +1100,21 @@ class List(object):
 
    Returns: Last item in the list.
   """
-  pass
- @staticmethod
- def MaximumItem(list):
-  """ MaximumItem(list: IEnumerable[object]) -> object """
-  pass
- @staticmethod
- def MinimumItem(list):
-  """ MinimumItem(list: IEnumerable[object]) -> object """
-  pass
- @staticmethod
- def OfRepeatedItem(item,amount):
-  """
+        pass
+
+    @staticmethod
+    def MaximumItem(list):
+        """ MaximumItem(list: IEnumerable[object]) -> object """
+        pass
+
+    @staticmethod
+    def MinimumItem(list):
+        """ MinimumItem(list: IEnumerable[object]) -> object """
+        pass
+
+    @staticmethod
+    def OfRepeatedItem(item, amount):
+        """
   OfRepeatedItem(item: object,amount: int) -> IList
 
   
@@ -1043,14 +1129,16 @@ class List(object):
 
    Returns: List of repeated items.
   """
-  pass
- @staticmethod
- def Permutations(list,length):
-  """ Permutations(list: IList,length: Nullable[int]) -> IList """
-  pass
- @staticmethod
- def RemoveItemAtIndex(list,indices):
-  """
+        pass
+
+    @staticmethod
+    def Permutations(list, length):
+        """ Permutations(list: IList,length: Nullable[int]) -> IList """
+        pass
+
+    @staticmethod
+    def RemoveItemAtIndex(list, indices):
+        """
   RemoveItemAtIndex(list: IList,indices: Array[int]) -> IList
 
   
@@ -1065,14 +1153,16 @@ class List(object):
 
    Returns: List with items removed.
   """
-  pass
- @staticmethod
- def Repeat(list,amount):
-  """ Repeat(list: IList,amount: int) -> IList """
-  pass
- @staticmethod
- def ReplaceItemAtIndex(list,index,item):
-  """
+        pass
+
+    @staticmethod
+    def Repeat(list, amount):
+        """ Repeat(list: IList,amount: int) -> IList """
+        pass
+
+    @staticmethod
+    def ReplaceItemAtIndex(list, index, item):
+        """
   ReplaceItemAtIndex(list: IList,index: int,item: object) -> IList
 
   
@@ -1089,10 +1179,11 @@ class List(object):
 
    Returns: A new list with the item replaced.
   """
-  pass
- @staticmethod
- def RestOfItems(list):
-  """
+        pass
+
+    @staticmethod
+    def RestOfItems(list):
+        """
   RestOfItems(list: IList) -> IList
 
   
@@ -1105,10 +1196,11 @@ class List(object):
 
    Returns: Rest of the list.
   """
-  pass
- @staticmethod
- def Reverse(list):
-  """
+        pass
+
+    @staticmethod
+    def Reverse(list):
+        """
   Reverse(list: IList) -> IList
 
   
@@ -1121,10 +1213,11 @@ class List(object):
 
    Returns: New list.
   """
-  pass
- @staticmethod
- def ShiftIndices(list,amount):
-  """
+        pass
+
+    @staticmethod
+    def ShiftIndices(list, amount):
+        """
   ShiftIndices(list: IList,amount: int) -> IList
 
   
@@ -1139,10 +1232,11 @@ class List(object):
 
    Returns: Shifted list.
   """
-  pass
- @staticmethod
- def Shuffle(list):
-  """
+        pass
+
+    @staticmethod
+    def Shuffle(list):
+        """
   Shuffle(list: IList) -> IList
 
   
@@ -1155,18 +1249,21 @@ class List(object):
 
    Returns: Randomized list.
   """
-  pass
- @staticmethod
- def Slice(list,start,end,step):
-  """ Slice(list: IList,start: Nullable[int],end: Nullable[int],step: int) -> IList """
-  pass
- @staticmethod
- def Sort(list):
-  """ Sort(list: IEnumerable[object]) -> IList """
-  pass
- @staticmethod
- def SortByKey(list,keys):
-  """
+        pass
+
+    @staticmethod
+    def Slice(list, start, end, step):
+        """ Slice(list: IList,start: Nullable[int],end: Nullable[int],step: int) -> IList """
+        pass
+
+    @staticmethod
+    def Sort(list):
+        """ Sort(list: IEnumerable[object]) -> IList """
+        pass
+
+    @staticmethod
+    def SortByKey(list, keys):
+        """
   SortByKey(list: IList,keys: IList) -> IDictionary
 
   
@@ -1181,10 +1278,11 @@ class List(object):
 
    Returns: sorted keys
   """
-  pass
- @staticmethod
- def Sublists(list,ranges,offset):
-  """
+        pass
+
+    @staticmethod
+    def Sublists(list, ranges, offset):
+        """
   Sublists(list: IList,ranges: IList,offset: int) -> IList
 
   
@@ -1211,10 +1309,11 @@ class List(object):
 
    Returns: Sublists of the given list.
   """
-  pass
- @staticmethod
- def TakeEveryNthItem(list,n,offset):
-  """
+        pass
+
+    @staticmethod
+    def TakeEveryNthItem(list, n, offset):
+        """
   TakeEveryNthItem(list: IList,n: int,offset: int) -> IList
 
   
@@ -1239,10 +1338,11 @@ class List(object):
 
    Returns: Items from the list.
   """
-  pass
- @staticmethod
- def TakeItems(list,amount):
-  """
+        pass
+
+    @staticmethod
+    def TakeItems(list, amount):
+        """
   TakeItems(list: IList,amount: int) -> IList
 
   
@@ -1257,10 +1357,11 @@ class List(object):
 
    Returns: List of extracted items.
   """
-  pass
- @staticmethod
- def Transpose(lists):
-  """
+        pass
+
+    @staticmethod
+    def Transpose(lists):
+        """
   Transpose(lists: IList) -> IList
 
   
@@ -1285,10 +1386,11 @@ class List(object):
 
    Returns: A list of transposed lists.
   """
-  pass
- @staticmethod
- def UniqueItems(list):
-  """
+        pass
+
+    @staticmethod
+    def UniqueItems(list):
+        """
   UniqueItems(list: IList) -> IList
 
   
@@ -1301,64 +1403,67 @@ class List(object):
 
    Returns: Filtered list.
   """
-  pass
- @staticmethod
- def __Create(items):
-  """ __Create(items: IList) -> IList """
-  pass
- Empty=None
- __all__=[
-  '__Create',
-  'AddItemToEnd',
-  'AddItemToFront',
-  'AllIndicesOf',
-  'Chop',
-  'Clean',
-  'Combinations',
-  'ContainsItem',
-  'Count',
-  'Cycle',
-  'Deconstruct',
-  'DiagonalLeft',
-  'DiagonalRight',
-  'DropEveryNthItem',
-  'DropItems',
-  'FilterByBoolMask',
-  'FirstIndexOf',
-  'FirstItem',
-  'Flatten',
-  'GetItemAtIndex',
-  'GroupByKey',
-  'IsEmpty',
-  'Join',
-  'LastItem',
-  'MaximumItem',
-  'MinimumItem',
-  'OfRepeatedItem',
-  'Permutations',
-  'RemoveItemAtIndex',
-  'Repeat',
-  'ReplaceItemAtIndex',
-  'RestOfItems',
-  'Reverse',
-  'ShiftIndices',
-  'Shuffle',
-  'Slice',
-  'Sort',
-  'SortByKey',
-  'Sublists',
-  'TakeEveryNthItem',
-  'TakeItems',
-  'Transpose',
-  'UniqueItems',
- ]
+        pass
+
+    @staticmethod
+    def __Create(items):
+        """ __Create(items: IList) -> IList """
+        pass
+
+    Empty = None
+    __all__ = [
+        "__Create",
+        "AddItemToEnd",
+        "AddItemToFront",
+        "AllIndicesOf",
+        "Chop",
+        "Clean",
+        "Combinations",
+        "ContainsItem",
+        "Count",
+        "Cycle",
+        "Deconstruct",
+        "DiagonalLeft",
+        "DiagonalRight",
+        "DropEveryNthItem",
+        "DropItems",
+        "FilterByBoolMask",
+        "FirstIndexOf",
+        "FirstItem",
+        "Flatten",
+        "GetItemAtIndex",
+        "GroupByKey",
+        "IsEmpty",
+        "Join",
+        "LastItem",
+        "MaximumItem",
+        "MinimumItem",
+        "OfRepeatedItem",
+        "Permutations",
+        "RemoveItemAtIndex",
+        "Repeat",
+        "ReplaceItemAtIndex",
+        "RestOfItems",
+        "Reverse",
+        "ShiftIndices",
+        "Shuffle",
+        "Slice",
+        "Sort",
+        "SortByKey",
+        "Sublists",
+        "TakeEveryNthItem",
+        "TakeItems",
+        "Transpose",
+        "UniqueItems",
+    ]
 
 
 class Logic(object):
- """ Boolean logic methods. """
- @staticmethod
- def Xor(a,b):
-  """
+    """ Boolean logic methods. """
+
+    @staticmethod
+    def Xor(a, b):
+        """
   Xor(a: bool,b: bool) -> bool
 
   
@@ -1373,17 +1478,19 @@ class Logic(object):
 
    Returns: Boolean result.
   """
-  pass
- __all__=[
-  'Xor',
- ]
+        pass
+
+    __all__ = [
+        "Xor",
+    ]
 
 
 class Math(object):
- """ Methods for performing Mathematical operations. """
- @staticmethod
- def Abs(*__args):
-  """
+    """ Methods for performing Mathematical operations. """
+
+    @staticmethod
+    def Abs(*__args):
+        """
   Abs(integer: Int64) -> Int64
 
   
@@ -1408,10 +1515,11 @@ class Math(object):
 
    Returns: Absolute value of the number.
   """
-  pass
- @staticmethod
- def Acos(ratio):
-  """
+        pass
+
+    @staticmethod
+    def Acos(ratio):
+        """
   Acos(ratio: float) -> float
 
   
@@ -1424,10 +1532,11 @@ class Math(object):
 
    Returns: The angle whose cosine is the input ratio.
   """
-  pass
- @staticmethod
- def Asin(ratio):
-  """
+        pass
+
+    @staticmethod
+    def Asin(ratio):
+        """
   Asin(ratio: float) -> float
 
   
@@ -1440,10 +1549,11 @@ class Math(object):
 
    Returns: The angle whose sine is the input ratio.
   """
-  pass
- @staticmethod
- def Atan(ratio):
-  """
+        pass
+
+    @staticmethod
+    def Atan(ratio):
+        """
   Atan(ratio: float) -> float
 
   
@@ -1456,10 +1566,11 @@ class Math(object):
 
    Returns: The angle whose tangent is the input ratio.
   """
-  pass
- @staticmethod
- def Atan2(numerator,denominator):
-  """
+        pass
+
+    @staticmethod
+    def Atan2(numerator, denominator):
+        """
   Atan2(numerator: float,denominator: float) -> float
 
   
@@ -1480,14 +1591,16 @@ class Math(object):
 
    Returns: The angle whose tangent is numerator/denominator.
   """
-  pass
- @staticmethod
- def Average(numbers):
-  """ Average(numbers: IList[float]) -> float """
-  pass
- @staticmethod
- def Ceiling(number):
-  """
+        pass
+
+    @staticmethod
+    def Average(numbers):
+        """ Average(numbers: IList[float]) -> float """
+        pass
+
+    @staticmethod
+    def Ceiling(number):
+        """
   Ceiling(number: float) -> Int64
 
   
@@ -1500,10 +1613,11 @@ class Math(object):
 
    Returns: First integer greater than the number.
   """
-  pass
- @staticmethod
- def Cos(angle):
-  """
+        pass
+
+    @staticmethod
+    def Cos(angle):
+        """
   Cos(angle: float) -> float
 
   
@@ -1516,10 +1630,11 @@ class Math(object):
 
    Returns: Cosine of the angle.
   """
-  pass
- @staticmethod
- def Cosh(angle):
-  """
+        pass
+
+    @staticmethod
+    def Cosh(angle):
+        """
   Cosh(angle: float) -> float
 
   
@@ -1532,10 +1647,11 @@ class Math(object):
 
    Returns: Hyperbolic cosine of the angle.
   """
-  pass
- @staticmethod
- def DegreesToRadians(degrees):
-  """
+        pass
+
+    @staticmethod
+    def DegreesToRadians(degrees):
+        """
   DegreesToRadians(degrees: float) -> float
 
   
@@ -1548,10 +1664,11 @@ class Math(object):
 
    Returns: Angle in radians.
   """
-  pass
- @staticmethod
- def DivRem(dividend,divisor):
-  """
+        pass
+
+    @staticmethod
+    def DivRem(dividend, divisor):
+        """
   DivRem(dividend: Int64,divisor: Int64) -> Int64
 
   
@@ -1566,10 +1683,11 @@ class Math(object):
 
    Returns: The remainder of the division.
   """
-  pass
- @staticmethod
- def Exp(number):
-  """
+        pass
+
+    @staticmethod
+    def Exp(number):
+        """
   Exp(number: float) -> float
 
   
@@ -1582,10 +1700,11 @@ class Math(object):
 
    Returns: The exponential of the number.
   """
-  pass
- @staticmethod
- def Factorial(number):
-  """
+        pass
+
+    @staticmethod
+    def Factorial(number):
+        """
   Factorial(number: Int64) -> Int64
 
   
@@ -1598,10 +1717,11 @@ class Math(object):
 
    Returns: The factorial result of the integer.
   """
-  pass
- @staticmethod
- def Floor(number):
-  """
+        pass
+
+    @staticmethod
+    def Floor(number):
+        """
   Floor(number: float) -> Int64
 
   
@@ -1614,14 +1734,16 @@ class Math(object):
 
    Returns: First integer smaller than the number.
   """
-  pass
- @staticmethod
- def IEEERemainder(value1,value2):
-  """ IEEERemainder(value1: float,value2: float) -> float """
-  pass
- @staticmethod
- def Log(number,logBase=None):
-  """
+        pass
+
+    @staticmethod
+    def IEEERemainder(value1, value2):
+        """ IEEERemainder(value1: float,value2: float) -> float """
+        pass
+
+    @staticmethod
+    def Log(number, logBase=None):
+        """
   Log(number: float,logBase: float) -> float
 
   
@@ -1644,10 +1766,11 @@ class Math(object):
 
    Returns: Natural log of the number.
   """
-  pass
- @staticmethod
- def Log10(number):
-  """
+        pass
+
+    @staticmethod
+    def Log10(number):
+        """
   Log10(number: float) -> float
 
   
@@ -1660,10 +1783,11 @@ class Math(object):
 
    Returns: Logarithm of the number.
   """
-  pass
- @staticmethod
- def Max(*__args):
-  """
+        pass
+
+    @staticmethod
+    def Max(*__args):
+        """
   Max(int1: Int64,int2: Int64) -> Int64
 
   
@@ -1692,10 +1816,11 @@ class Math(object):
 
    Returns: Greater of the two numbers.
   """
-  pass
- @staticmethod
- def Min(*__args):
-  """
+        pass
+
+    @staticmethod
+    def Min(*__args):
+        """
   Min(int1: Int64,int2: Int64) -> Int64
 
   
@@ -1724,10 +1849,11 @@ class Math(object):
 
    Returns: Smaler of the two numbers.
   """
-  pass
- @staticmethod
- def Pow(number,power):
-  """
+        pass
+
+    @staticmethod
+    def Pow(number, power):
+        """
   Pow(number: float,power: float) -> float
 
   
@@ -1742,10 +1868,11 @@ class Math(object):
 
    Returns: Number raised to the power.
   """
-  pass
- @staticmethod
- def RadiansToDegrees(radians):
-  """
+        pass
+
+    @staticmethod
+    def RadiansToDegrees(radians):
+        """
   RadiansToDegrees(radians: float) -> float
 
   
@@ -1758,10 +1885,11 @@ class Math(object):
 
    Returns: Angle in degrees.
   """
-  pass
- @staticmethod
- def Rand():
-  """
+        pass
+
+    @staticmethod
+    def Rand():
+        """
   Rand() -> float
 
   
@@ -1770,10 +1898,11 @@ class Math(object):
 
    Returns: Random number in the range [0,1).
   """
-  pass
- @staticmethod
- def Random(*__args):
-  """
+        pass
+
+    @staticmethod
+    def Random(*__args):
+        """
   Random(value1: float,value2: float) -> float
 
   
@@ -1790,10 +1919,11 @@ class Math(object):
 
   Random(seed: Nullable[int]) -> float
   """
-  pass
- @staticmethod
- def RandomList(amount):
-  """
+        pass
+
+    @staticmethod
+    def RandomList(amount):
+        """
   RandomList(amount: int) -> IList
 
   
@@ -1812,14 +1942,16 @@ class Math(object):
 
    Returns: List of random numbers between 0 and 1.
   """
-  pass
- @staticmethod
- def RemapRange(numbers,newMin,newMax):
-  """ RemapRange(numbers: IList[float],newMin: float,newMax: float) -> IList """
-  pass
- @staticmethod
- def Round(number,digits=None):
-  """
+        pass
+
+    @staticmethod
+    def RemapRange(numbers, newMin, newMax):
+        """ RemapRange(numbers: IList[float],newMin: float,newMax: float) -> IList """
+        pass
+
+    @staticmethod
+    def Round(number, digits=None):
+        """
   Round(number: float,digits: int) -> float
 
   
@@ -1852,10 +1984,11 @@ class Math(object):
 
    Returns: Integral value closes to the number.
   """
-  pass
- @staticmethod
- def Sign(*__args):
-  """
+        pass
+
+    @staticmethod
+    def Sign(*__args):
+        """
   Sign(integer: Int64) -> Int64
 
   
@@ -1880,10 +2013,11 @@ class Math(object):
 
    Returns: The sign of the number: -1,0,or 1.
   """
-  pass
- @staticmethod
- def Sin(angle):
-  """
+        pass
+
+    @staticmethod
+    def Sin(angle):
+        """
   Sin(angle: float) -> float
 
   
@@ -1896,10 +2030,11 @@ class Math(object):
 
    Returns: Sine of the angle.
   """
-  pass
- @staticmethod
- def Sinh(angle):
-  """
+        pass
+
+    @staticmethod
+    def Sinh(angle):
+        """
   Sinh(angle: float) -> float
 
   
@@ -1912,10 +2047,11 @@ class Math(object):
 
    Returns: Hyperbolic sine of the angle.
   """
-  pass
- @staticmethod
- def Sqrt(number):
-  """
+        pass
+
+    @staticmethod
+    def Sqrt(number):
+        """
   Sqrt(number: float) -> float
 
   
@@ -1924,14 +2060,16 @@ class Math(object):
 
      Returns: Positive square root of the number.
   """
-  pass
- @staticmethod
- def Sum(values):
-  """ Sum(values: IEnumerable[float]) -> float """
-  pass
- @staticmethod
- def Tan(angle):
-  """
+        pass
+
+    @staticmethod
+    def Sum(values):
+        """ Sum(values: IEnumerable[float]) -> float """
+        pass
+
+    @staticmethod
+    def Tan(angle):
+        """
   Tan(angle: float) -> float
 
   
@@ -1944,10 +2082,11 @@ class Math(object):
 
    Returns: Tangent of the angle.
   """
-  pass
- @staticmethod
- def Tanh(angle):
-  """
+        pass
+
+    @staticmethod
+    def Tanh(angle):
+        """
   Tanh(angle: float) -> float
 
   
@@ -1960,91 +2099,105 @@ class Math(object):
 
    Returns: Hyperbolic tangent of the angle.
   """
-  pass
- @staticmethod
- def Truncate(value):
-  """ Truncate(value: float) -> float """
-  pass
- E=2.7182818284590451
- GoldenRatio=1.6180339887499999
- PI=3.1415926535897931
- PiTimes2=6.2831853071795862
- __all__=[
-  'Abs',
-  'Acos',
-  'Asin',
-  'Atan',
-  'Atan2',
-  'Average',
-  'Ceiling',
-  'Cos',
-  'Cosh',
-  'DegreesToRadians',
-  'DivRem',
-  'Exp',
-  'Factorial',
-  'Floor',
-  'IEEERemainder',
-  'Log',
-  'Log10',
-  'Max',
-  'Min',
-  'Pow',
-  'RadiansToDegrees',
-  'Rand',
-  'Random',
-  'RandomList',
-  'RemapRange',
-  'Round',
-  'Sign',
-  'Sin',
-  'Sinh',
-  'Sqrt',
-  'Sum',
-  'Tan',
-  'Tanh',
-  'Truncate',
- ]
+        pass
+
+    @staticmethod
+    def Truncate(value):
+        """ Truncate(value: float) -> float """
+        pass
+
+    E = 2.7182818284590451
+    GoldenRatio = 1.6180339887499999
+    PI = 3.1415926535897931
+    PiTimes2 = 6.2831853071795862
+    __all__ = [
+        "Abs",
+        "Acos",
+        "Asin",
+        "Atan",
+        "Atan2",
+        "Average",
+        "Ceiling",
+        "Cos",
+        "Cosh",
+        "DegreesToRadians",
+        "DivRem",
+        "Exp",
+        "Factorial",
+        "Floor",
+        "IEEERemainder",
+        "Log",
+        "Log10",
+        "Max",
+        "Min",
+        "Pow",
+        "RadiansToDegrees",
+        "Rand",
+        "Random",
+        "RandomList",
+        "RemapRange",
+        "Round",
+        "Sign",
+        "Sin",
+        "Sinh",
+        "Sqrt",
+        "Sum",
+        "Tan",
+        "Tanh",
+        "Truncate",
+    ]
 
 
 class Node(object):
- """ Node(min: UV,max: UV) """
- def Contains(self,uv):
-  """ Contains(self: Node,uv: UV) -> bool """
-  pass
- def FindAllNodesUpLevel(self,count):
-  """ FindAllNodesUpLevel(self: Node,count: int) -> List[Node] """
-  pass
- def FindNodesIntersectingRectangle(self,rectangle):
-  """ FindNodesIntersectingRectangle(self: Node,rectangle: UVRect) -> List[Node] """
-  pass
- def FindNodesWithinRadius(self,location,radius):
-  """ FindNodesWithinRadius(self: Node,location: UV,radius: float) -> List[Node] """
-  pass
- def FindNodeWhichContains(self,point):
-  """ FindNodeWhichContains(self: Node,point: UV) -> Node """
-  pass
- def GetAllNodes(self):
-  """ GetAllNodes(self: Node) -> List[Node] """
-  pass
- def Insert(self,uv):
-  """ Insert(self: Node,uv: UV) """
-  pass
- def TryFind(self,uv,node):
-  """ TryFind(self: Node,uv: UV) -> (bool,Node) """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- @staticmethod
- def __new__(self,min,max):
-  """ __new__(cls: type,min: UV,max: UV) """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Bounds=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Bounds(self: Node) -> UVRect
+    """ Node(min: UV,max: UV) """
+
+    def Contains(self, uv):
+        """ Contains(self: Node,uv: UV) -> bool """
+        pass
+
+    def FindAllNodesUpLevel(self, count):
+        """ FindAllNodesUpLevel(self: Node,count: int) -> List[Node] """
+        pass
+
+    def FindNodesIntersectingRectangle(self, rectangle):
+        """ FindNodesIntersectingRectangle(self: Node,rectangle: UVRect) -> List[Node] """
+        pass
+
+    def FindNodesWithinRadius(self, location, radius):
+        """ FindNodesWithinRadius(self: Node,location: UV,radius: float) -> List[Node] """
+        pass
+
+    def FindNodeWhichContains(self, point):
+        """ FindNodeWhichContains(self: Node,point: UV) -> Node """
+        pass
+
+    def GetAllNodes(self):
+        """ GetAllNodes(self: Node) -> List[Node] """
+        pass
+
+    def Insert(self, uv):
+        """ Insert(self: Node,uv: UV) """
+        pass
+
+    def TryFind(self, uv, node):
+        """ TryFind(self: Node,uv: UV) -> (bool,Node) """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    @staticmethod
+    def __new__(self, min, max):
+        """ __new__(cls: type,min: UV,max: UV) """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Bounds = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Bounds(self: Node) -> UVRect
 
 
 
@@ -2052,15 +2205,17 @@ Set: Bounds(self: Node)=value
 
 """
 
- IsLeafNode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsLeafNode(self: Node) -> bool
+    IsLeafNode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IsLeafNode(self: Node) -> bool
 
 
 
 """
 
- Item=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Item(self: Node) -> object
+    Item = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Item(self: Node) -> object
 
 
 
@@ -2068,29 +2223,29 @@ Set: Item(self: Node)=value
 
 """
 
- NE=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: NE(self: Node) -> Node
+    NE = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: NE(self: Node) -> Node
 
 
 
 """
 
- NW=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: NW(self: Node) -> Node
+    NW = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: NW(self: Node) -> Node
 
 
 
 """
 
- Parent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Parent(self: Node) -> Node
+    Parent = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Parent(self: Node) -> Node
 
 
 
 """
 
- Point=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Point(self: Node) -> UV
+    Point = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Point(self: Node) -> UV
 
 
 
@@ -2098,27 +2253,27 @@ Set: Point(self: Node)=value
 
 """
 
- SE=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: SE(self: Node) -> Node
+    SE = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: SE(self: Node) -> Node
 
 
 
 """
 
- SW=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: SW(self: Node) -> Node
+    SW = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: SW(self: Node) -> Node
 
 
 
 """
-
 
 
 class Object(object):
- """ Generic functions that operate on all data. """
- @staticmethod
- def Identity(obj):
-  """
+    """ Generic functions that operate on all data. """
+
+    @staticmethod
+    def Identity(obj):
+        """
   Identity(obj: object) -> object
 
   
@@ -2129,10 +2284,11 @@ class Object(object):
 
    obj: An object.
   """
-  pass
- @staticmethod
- def IsNull(obj):
-  """
+        pass
+
+    @staticmethod
+    def IsNull(obj):
+        """
   IsNull(obj: object) -> bool
 
   
@@ -2145,10 +2301,11 @@ class Object(object):
 
    Returns: Whether object is null.
   """
-  pass
- @staticmethod
- def Type(obj):
-  """
+        pass
+
+    @staticmethod
+    def Type(obj):
+        """
   Type(obj: object) -> str
 
   
@@ -2161,25 +2318,28 @@ class Object(object):
 
    Returns: Type of object.
   """
-  pass
- __all__=[
-  'Identity',
-  'IsNull',
-  'Type',
- ]
+        pass
+
+    __all__ = [
+        "Identity",
+        "IsNull",
+        "Type",
+    ]
 
 
 class Quadtree(object):
- # no doc
- @staticmethod
- def ByUVs(uvs):
-  """ ByUVs(uvs: IEnumerable[UV]) -> Quadtree """
-  pass
- def FindPointsInRectangle(self,rectangle):
-  """ FindPointsInRectangle(self: Quadtree,rectangle: UVRect) -> List[UV] """
-  pass
- def FindPointsWithinRadius(self,center,radius):
-  """
+    # no doc
+    @staticmethod
+    def ByUVs(uvs):
+        """ ByUVs(uvs: IEnumerable[UV]) -> Quadtree """
+        pass
+
+    def FindPointsInRectangle(self, rectangle):
+        """ FindPointsInRectangle(self: Quadtree,rectangle: UVRect) -> List[UV] """
+        pass
+
+    def FindPointsWithinRadius(self, center, radius):
+        """
   FindPointsWithinRadius(self: Quadtree,center: UV,radius: float) -> List[UV]
 
   
@@ -2194,9 +2354,10 @@ class Quadtree(object):
 
    Returns: A list of UVs.
   """
-  pass
- Root=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Root(self: Quadtree) -> Node
+        pass
+
+    Root = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Root(self: Quadtree) -> Node
 
 
 
@@ -2205,42 +2366,47 @@ Set: Root(self: Quadtree)=value
 """
 
 
-
 class Sorting(object):
- """
+    """
  Utility methods for sorting by keys. These should be suppressed from becoming nodes,instead
 
     they will be wrapped by DS implementations that accept a key mapping function.
  """
- @staticmethod
- def groupByKey(list,keys):
-  """ groupByKey(list: IList,keys: IList) -> IList """
-  pass
- @staticmethod
- def maxByKey(list,keys):
-  """ maxByKey(list: IList,keys: IList) -> object """
-  pass
- @staticmethod
- def minByKey(list,keys):
-  """ minByKey(list: IList,keys: IList) -> object """
-  pass
- @staticmethod
- def sortByKey(list,keys):
-  """ sortByKey(list: IList,keys: IList) -> IList """
-  pass
- __all__=[
-  'groupByKey',
-  'maxByKey',
-  'minByKey',
-  'sortByKey',
- ]
+
+    @staticmethod
+    def groupByKey(list, keys):
+        """ groupByKey(list: IList,keys: IList) -> IList """
+        pass
+
+    @staticmethod
+    def maxByKey(list, keys):
+        """ maxByKey(list: IList,keys: IList) -> object """
+        pass
+
+    @staticmethod
+    def minByKey(list, keys):
+        """ minByKey(list: IList,keys: IList) -> object """
+        pass
+
+    @staticmethod
+    def sortByKey(list, keys):
+        """ sortByKey(list: IList,keys: IList) -> IList """
+        pass
+
+    __all__ = [
+        "groupByKey",
+        "maxByKey",
+        "minByKey",
+        "sortByKey",
+    ]
 
 
 class String(object):
- """ Methods for managing strings. """
- @staticmethod
- def Center(str,newWidth,padChars):
-  """
+    """ Methods for managing strings. """
+
+    @staticmethod
+    def Center(str, newWidth, padChars):
+        """
   Center(str: str,newWidth: int,padChars: str) -> str
 
   
@@ -2267,10 +2433,11 @@ class String(object):
 
     for a specified total length.
   """
-  pass
- @staticmethod
- def ChangeCase(str,upper):
-  """
+        pass
+
+    @staticmethod
+    def ChangeCase(str, upper):
+        """
   ChangeCase(str: str,upper: bool) -> str
 
   
@@ -2291,10 +2458,11 @@ class String(object):
 
    Returns: String with converted case.
   """
-  pass
- @staticmethod
- def Concat(strings):
-  """
+        pass
+
+    @staticmethod
+    def Concat(strings):
+        """
   Concat(*strings: Array[str]) -> str
 
   
@@ -2307,10 +2475,11 @@ class String(object):
 
    Returns: String made from list of strings.
   """
-  pass
- @staticmethod
- def Contains(str,searchFor,ignoreCase):
-  """
+        pass
+
+    @staticmethod
+    def Contains(str, searchFor, ignoreCase):
+        """
   Contains(str: str,searchFor: str,ignoreCase: bool) -> bool
 
   
@@ -2327,10 +2496,11 @@ class String(object):
 
    Returns: Whether the string contains the substring.
   """
-  pass
- @staticmethod
- def CountOccurrences(str,searchFor,ignoreCase):
-  """
+        pass
+
+    @staticmethod
+    def CountOccurrences(str, searchFor, ignoreCase):
+        """
   CountOccurrences(str: str,searchFor: str,ignoreCase: bool) -> int
 
   
@@ -2347,10 +2517,11 @@ class String(object):
 
    Returns: Number of non-overlapping occurrences of the substring in the string.
   """
-  pass
- @staticmethod
- def EndsWith(str,searchFor,ignoreCase):
-  """
+        pass
+
+    @staticmethod
+    def EndsWith(str, searchFor, ignoreCase):
+        """
   EndsWith(str: str,searchFor: str,ignoreCase: bool) -> bool
 
   
@@ -2367,14 +2538,16 @@ class String(object):
 
    Returns: Whether the string ends with the substring.
   """
-  pass
- @staticmethod
- def FromObject(obj):
-  """ FromObject(obj: object) -> str """
-  pass
- @staticmethod
- def IndexOf(str,searchFor,ignoreCase):
-  """
+        pass
+
+    @staticmethod
+    def FromObject(obj):
+        """ FromObject(obj: object) -> str """
+        pass
+
+    @staticmethod
+    def IndexOf(str, searchFor, ignoreCase):
+        """
   IndexOf(str: str,searchFor: str,ignoreCase: bool) -> int
 
   
@@ -2397,10 +2570,11 @@ class String(object):
 
    Returns: Index of the first occurrence of the substring or -1 if not found.
   """
-  pass
- @staticmethod
- def Insert(str,index,toInsert):
-  """
+        pass
+
+    @staticmethod
+    def Insert(str, index, toInsert):
+        """
   Insert(str: str,index: int,toInsert: str) -> str
 
   
@@ -2417,10 +2591,11 @@ class String(object):
 
    Returns: String with inserted substring.
   """
-  pass
- @staticmethod
- def Join(separator,strings):
-  """
+        pass
+
+    @staticmethod
+    def Join(separator, strings):
+        """
   Join(separator: str,*strings: Array[str]) -> str
 
   
@@ -2441,10 +2616,11 @@ class String(object):
 
    Returns: A string made from the list of strings including the separator character.
   """
-  pass
- @staticmethod
- def LastIndexOf(str,searchFor,ignoreCase):
-  """
+        pass
+
+    @staticmethod
+    def LastIndexOf(str, searchFor, ignoreCase):
+        """
   LastIndexOf(str: str,searchFor: str,ignoreCase: bool) -> int
 
   
@@ -2467,10 +2643,11 @@ class String(object):
 
    Returns: Index of the last occurrence of the substring or -1 if not found.
   """
-  pass
- @staticmethod
- def Length(str):
-  """
+        pass
+
+    @staticmethod
+    def Length(str):
+        """
   Length(str: str) -> int
 
   
@@ -2483,10 +2660,11 @@ class String(object):
 
    Returns: Number of characters in the string.
   """
-  pass
- @staticmethod
- def PadLeft(str,newWidth,padChars):
-  """
+        pass
+
+    @staticmethod
+    def PadLeft(str, newWidth, padChars):
+        """
   PadLeft(str: str,newWidth: int,padChars: str) -> str
 
   
@@ -2509,10 +2687,11 @@ class String(object):
 
    Returns: Strings right-aligned by padding with leading whitespaces for a specified total length.
   """
-  pass
- @staticmethod
- def PadRight(str,newWidth,padChars):
-  """
+        pass
+
+    @staticmethod
+    def PadRight(str, newWidth, padChars):
+        """
   PadRight(str: str,newWidth: int,padChars: str) -> str
 
   
@@ -2535,14 +2714,16 @@ class String(object):
 
    Returns: Strings left-aligned by padding with trailing whitespaces for a specified total length.
   """
-  pass
- @staticmethod
- def Remove(str,startIndex,count):
-  """ Remove(str: str,startIndex: int,count: Nullable[int]) -> str """
-  pass
- @staticmethod
- def Replace(str,searchFor,replaceWith):
-  """
+        pass
+
+    @staticmethod
+    def Remove(str, startIndex, count):
+        """ Remove(str: str,startIndex: int,count: Nullable[int]) -> str """
+        pass
+
+    @staticmethod
+    def Replace(str, searchFor, replaceWith):
+        """
   Replace(str: str,searchFor: str,replaceWith: str) -> str
 
   
@@ -2559,10 +2740,11 @@ class String(object):
 
    Returns: String with replacements made.
   """
-  pass
- @staticmethod
- def Split(str,separaters):
-  """
+        pass
+
+    @staticmethod
+    def Split(str, separaters):
+        """
   Split(str: str,*separaters: Array[str]) -> Array[str]
 
   
@@ -2583,10 +2765,11 @@ class String(object):
 
    Returns: List of strings made from the input string.
   """
-  pass
- @staticmethod
- def StartsWith(str,searchFor,ignoreCase):
-  """
+        pass
+
+    @staticmethod
+    def StartsWith(str, searchFor, ignoreCase):
+        """
   StartsWith(str: str,searchFor: str,ignoreCase: bool) -> bool
 
   
@@ -2603,10 +2786,11 @@ class String(object):
 
    Returns: Whether the string starts with the substring.
   """
-  pass
- @staticmethod
- def Substring(str,startIndex,length):
-  """
+        pass
+
+    @staticmethod
+    def Substring(str, startIndex, length):
+        """
   Substring(str: str,startIndex: int,length: int) -> str
 
   
@@ -2629,10 +2813,11 @@ class String(object):
 
    Returns: Substring made from the original string.
   """
-  pass
- @staticmethod
- def ToLower(str):
-  """
+        pass
+
+    @staticmethod
+    def ToLower(str):
+        """
   ToLower(str: str) -> str
 
   
@@ -2645,10 +2830,11 @@ class String(object):
 
    Returns: Lowercase string.
   """
-  pass
- @staticmethod
- def ToNumber(str):
-  """
+        pass
+
+    @staticmethod
+    def ToNumber(str):
+        """
   ToNumber(str: str) -> object
 
   
@@ -2661,10 +2847,11 @@ class String(object):
 
    Returns: Integer or double-type number.
   """
-  pass
- @staticmethod
- def ToUpper(str):
-  """
+        pass
+
+    @staticmethod
+    def ToUpper(str):
+        """
   ToUpper(str: str) -> str
 
   
@@ -2677,10 +2864,11 @@ class String(object):
 
    Returns: Uppercase string.
   """
-  pass
- @staticmethod
- def TrimLeadingWhitespace(str):
-  """
+        pass
+
+    @staticmethod
+    def TrimLeadingWhitespace(str):
+        """
   TrimLeadingWhitespace(str: str) -> str
 
   
@@ -2693,10 +2881,11 @@ class String(object):
 
    Returns: String with leading white spaces removed.
   """
-  pass
- @staticmethod
- def TrimTrailingWhitespace(str):
-  """
+        pass
+
+    @staticmethod
+    def TrimTrailingWhitespace(str):
+        """
   TrimTrailingWhitespace(str: str) -> str
 
   
@@ -2709,10 +2898,11 @@ class String(object):
 
    Returns: String with white spaces at end removed.
   """
-  pass
- @staticmethod
- def TrimWhitespace(str):
-  """
+        pass
+
+    @staticmethod
+    def TrimWhitespace(str):
+        """
   TrimWhitespace(str: str) -> str
 
   
@@ -2725,41 +2915,43 @@ class String(object):
 
    Returns: String with beginning and ending whitespaces removed.
   """
-  pass
- __all__=[
-  'Center',
-  'ChangeCase',
-  'Concat',
-  'Contains',
-  'CountOccurrences',
-  'EndsWith',
-  'FromObject',
-  'IndexOf',
-  'Insert',
-  'Join',
-  'LastIndexOf',
-  'Length',
-  'PadLeft',
-  'PadRight',
-  'Remove',
-  'Replace',
-  'Split',
-  'StartsWith',
-  'Substring',
-  'ToLower',
-  'ToNumber',
-  'ToUpper',
-  'TrimLeadingWhitespace',
-  'TrimTrailingWhitespace',
-  'TrimWhitespace',
- ]
+        pass
+
+    __all__ = [
+        "Center",
+        "ChangeCase",
+        "Concat",
+        "Contains",
+        "CountOccurrences",
+        "EndsWith",
+        "FromObject",
+        "IndexOf",
+        "Insert",
+        "Join",
+        "LastIndexOf",
+        "Length",
+        "PadLeft",
+        "PadRight",
+        "Remove",
+        "Replace",
+        "Split",
+        "StartsWith",
+        "Substring",
+        "ToLower",
+        "ToNumber",
+        "ToUpper",
+        "TrimLeadingWhitespace",
+        "TrimTrailingWhitespace",
+        "TrimWhitespace",
+    ]
 
 
 class Thread(object):
- """ Functions for manipulating evaluation threads. """
- @staticmethod
- def Pause(x,msTimeout):
-  """
+    """ Functions for manipulating evaluation threads. """
+
+    @staticmethod
+    def Pause(x, msTimeout):
+        """
   Pause(x: object,msTimeout: int) -> object
 
   
@@ -2774,17 +2966,19 @@ class Thread(object):
 
    Returns: Object passed through.
   """
-  pass
- __all__=[
-  'Pause',
- ]
+        pass
+
+    __all__ = [
+        "Pause",
+    ]
 
 
 class TimeSpan(object):
- """ Object representing an elapsed period of time,with no specific start or end date. """
- @staticmethod
- def Add(timeSpan1,timeSpan2):
-  """
+    """ Object representing an elapsed period of time,with no specific start or end date. """
+
+    @staticmethod
+    def Add(timeSpan1, timeSpan2):
+        """
   Add(timeSpan1: TimeSpan,timeSpan2: TimeSpan) -> TimeSpan
 
   
@@ -2799,10 +2993,11 @@ class TimeSpan(object):
 
    Returns: TimeSpan
   """
-  pass
- @staticmethod
- def ByDateDifference(date1,date2):
-  """
+        pass
+
+    @staticmethod
+    def ByDateDifference(date1, date2):
+        """
   ByDateDifference(date1: DateTime,date2: DateTime) -> TimeSpan
 
   
@@ -2817,10 +3012,11 @@ class TimeSpan(object):
 
    Returns: TimeSpan
   """
-  pass
- @staticmethod
- def Components(timeSpan):
-  """
+        pass
+
+    @staticmethod
+    def Components(timeSpan):
+        """
   Components(timeSpan: TimeSpan) -> Dictionary[str,int]
 
   
@@ -2831,10 +3027,11 @@ class TimeSpan(object):
 
    timeSpan: A TimeSpan.
   """
-  pass
- @staticmethod
- def Create(days,hours,minutes,seconds,milliseconds):
-  """
+        pass
+
+    @staticmethod
+    def Create(days, hours, minutes, seconds, milliseconds):
+        """
   Create(days: float,hours: float,minutes: float,seconds: float,milliseconds: float) -> TimeSpan
 
   
@@ -2855,10 +3052,11 @@ class TimeSpan(object):
 
    Returns: TimeSpan
   """
-  pass
- @staticmethod
- def FromString(str):
-  """
+        pass
+
+    @staticmethod
+    def FromString(str):
+        """
   FromString(str: str) -> TimeSpan
 
   
@@ -2871,10 +3069,11 @@ class TimeSpan(object):
 
    Returns: TimeSpan
   """
-  pass
- @staticmethod
- def Negate(timeSpan):
-  """
+        pass
+
+    @staticmethod
+    def Negate(timeSpan):
+        """
   Negate(timeSpan: TimeSpan) -> TimeSpan
 
   
@@ -2887,10 +3086,11 @@ class TimeSpan(object):
 
    Returns: TimeSpan
   """
-  pass
- @staticmethod
- def Scale(timeSpan,scaleFactor):
-  """
+        pass
+
+    @staticmethod
+    def Scale(timeSpan, scaleFactor):
+        """
   Scale(timeSpan: TimeSpan,scaleFactor: float) -> TimeSpan
 
   
@@ -2911,10 +3111,11 @@ class TimeSpan(object):
 
    Returns: TimeSpan
   """
-  pass
- @staticmethod
- def Subtract(timeSpan1,timeSpan2):
-  """
+        pass
+
+    @staticmethod
+    def Subtract(timeSpan1, timeSpan2):
+        """
   Subtract(timeSpan1: TimeSpan,timeSpan2: TimeSpan) -> TimeSpan
 
   
@@ -2929,10 +3130,11 @@ class TimeSpan(object):
 
    Returns: TimeSpan
   """
-  pass
- @staticmethod
- def TotalDays(timeSpan):
-  """
+        pass
+
+    @staticmethod
+    def TotalDays(timeSpan):
+        """
   TotalDays(timeSpan: TimeSpan) -> float
 
   
@@ -2949,10 +3151,11 @@ class TimeSpan(object):
 
    timeSpan: A TimeSpan.
   """
-  pass
- @staticmethod
- def TotalHours(timeSpan):
-  """
+        pass
+
+    @staticmethod
+    def TotalHours(timeSpan):
+        """
   TotalHours(timeSpan: TimeSpan) -> float
 
   
@@ -2969,10 +3172,11 @@ class TimeSpan(object):
 
    timeSpan: A TimeSpan.
   """
-  pass
- @staticmethod
- def TotalMilliseconds(timeSpan):
-  """
+        pass
+
+    @staticmethod
+    def TotalMilliseconds(timeSpan):
+        """
   TotalMilliseconds(timeSpan: TimeSpan) -> float
 
   
@@ -2989,10 +3193,11 @@ class TimeSpan(object):
 
    timeSpan: A TimeSpan.
   """
-  pass
- @staticmethod
- def TotalMinutes(timeSpan):
-  """
+        pass
+
+    @staticmethod
+    def TotalMinutes(timeSpan):
+        """
   TotalMinutes(timeSpan: TimeSpan) -> float
 
   
@@ -3009,10 +3214,11 @@ class TimeSpan(object):
 
    timeSpan: A TimeSpan.
   """
-  pass
- @staticmethod
- def TotalSeconds(timeSpan):
-  """
+        pass
+
+    @staticmethod
+    def TotalSeconds(timeSpan):
+        """
   TotalSeconds(timeSpan: TimeSpan) -> float
 
   
@@ -3029,36 +3235,39 @@ class TimeSpan(object):
 
    timeSpan: A TimeSpan.
   """
-  pass
- MaxValue=None
- MinValue=None
- Zero=None
- __all__=[
-  'Add',
-  'ByDateDifference',
-  'Components',
-  'Create',
-  'FromString',
-  'Negate',
-  'Scale',
-  'Subtract',
-  'TotalDays',
-  'TotalHours',
-  'TotalMilliseconds',
-  'TotalMinutes',
-  'TotalSeconds',
- ]
+        pass
+
+    MaxValue = None
+    MinValue = None
+    Zero = None
+    __all__ = [
+        "Add",
+        "ByDateDifference",
+        "Components",
+        "Create",
+        "FromString",
+        "Negate",
+        "Scale",
+        "Subtract",
+        "TotalDays",
+        "TotalHours",
+        "TotalMilliseconds",
+        "TotalMinutes",
+        "TotalSeconds",
+    ]
 
 
 class Types(object):
- """ Types() """
- @staticmethod
- def FindTypeByNameInAssembly(typeName,assemblyName):
-  """ FindTypeByNameInAssembly(typeName: str,assemblyName: str) -> Type """
-  pass
+    """ Types() """
+
+    @staticmethod
+    def FindTypeByNameInAssembly(typeName, assemblyName):
+        """ FindTypeByNameInAssembly(typeName: str,assemblyName: str) -> Type """
+        pass
+
 
 class UVRect(object):
- """
+    """
  Helper class used to define a Rectangle described
 
     by a minimum and a maximum UV.
@@ -3067,32 +3276,38 @@ class UVRect(object):
 
  UVRect(min: UV,max: UV)
  """
- def Contains(self,uv):
-  """ Contains(self: UVRect,uv: UV) -> bool """
-  pass
- def Intersects(self,rect):
-  """ Intersects(self: UVRect,rect: UVRect) -> bool """
-  pass
- @staticmethod
- def __new__(self,min,max):
-  """ __new__(cls: type,min: UV,max: UV) """
-  pass
- CenterPoint=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: CenterPoint(self: UVRect) -> UV
+
+    def Contains(self, uv):
+        """ Contains(self: UVRect,uv: UV) -> bool """
+        pass
+
+    def Intersects(self, rect):
+        """ Intersects(self: UVRect,rect: UVRect) -> bool """
+        pass
+
+    @staticmethod
+    def __new__(self, min, max):
+        """ __new__(cls: type,min: UV,max: UV) """
+        pass
+
+    CenterPoint = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: CenterPoint(self: UVRect) -> UV
 
 
 
 """
 
- Height=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Height(self: UVRect) -> float
+    Height = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Height(self: UVRect) -> float
 
 
 
 """
 
- Max=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Max(self: UVRect) -> UV
+    Max = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Max(self: UVRect) -> UV
 
 
 
@@ -3100,8 +3315,8 @@ Set: Max(self: UVRect)=value
 
 """
 
- Min=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Min(self: UVRect) -> UV
+    Min = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Min(self: UVRect) -> UV
 
 
 
@@ -3109,21 +3324,21 @@ Set: Min(self: UVRect)=value
 
 """
 
- Width=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Width(self: UVRect) -> float
+    Width = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Width(self: UVRect) -> float
 
 
 
 """
 
 
-
 class Web(object):
- """ Web() """
- @staticmethod
- def WebRequestByUrl(url):
-  """ WebRequestByUrl(url: str) -> str """
-  pass
+    """ Web() """
+
+    @staticmethod
+    def WebRequestByUrl(url):
+        """ WebRequestByUrl(url: str) -> str """
+        pass
+
 
 # variables with complex values
-

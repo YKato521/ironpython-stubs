@@ -8,13 +8,16 @@
 # no functions
 # classes
 
-class DuctFittingAndAccessoryPressureDropUIData(object,IDisposable):
- """ The input and output data used by external UI servers for storing UI settings. """
- def Dispose(self):
-  """ Dispose(self: DuctFittingAndAccessoryPressureDropUIData) """
-  pass
- def GetUIDataItems(self):
-  """
+
+class DuctFittingAndAccessoryPressureDropUIData(object, IDisposable):
+    """ The input and output data used by external UI servers for storing UI settings. """
+
+    def Dispose(self):
+        """ Dispose(self: DuctFittingAndAccessoryPressureDropUIData) """
+        pass
+
+    def GetUIDataItems(self):
+        """
   GetUIDataItems(self: DuctFittingAndAccessoryPressureDropUIData) -> IList[DuctFittingAndAccessoryPressureDropUIDataItem]
 
   
@@ -23,9 +26,10 @@ class DuctFittingAndAccessoryPressureDropUIData(object,IDisposable):
 
    Returns: An array of UI data items.
   """
-  pass
- def GetUnits(self):
-  """
+        pass
+
+    def GetUnits(self):
+        """
   GetUnits(self: DuctFittingAndAccessoryPressureDropUIData) -> Units
 
   
@@ -34,24 +38,32 @@ class DuctFittingAndAccessoryPressureDropUIData(object,IDisposable):
 
    Returns: The Units object.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: DuctFittingAndAccessoryPressureDropUIData,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: DuctFittingAndAccessoryPressureDropUIData,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -62,14 +74,15 @@ Get: IsValidObject(self: DuctFittingAndAccessoryPressureDropUIData) -> bool
 """
 
 
+class DuctFittingAndAccessoryPressureDropUIDataItem(object, IDisposable):
+    """ Each duct fitting or duct accessory FamilyInstance has one DuctFittingAndAccessoryPressureDropUIDataItem. """
 
-class DuctFittingAndAccessoryPressureDropUIDataItem(object,IDisposable):
- """ Each duct fitting or duct accessory FamilyInstance has one DuctFittingAndAccessoryPressureDropUIDataItem. """
- def Dispose(self):
-  """ Dispose(self: DuctFittingAndAccessoryPressureDropUIDataItem) """
-  pass
- def GetDuctFittingAndAccessoryData(self):
-  """
+    def Dispose(self):
+        """ Dispose(self: DuctFittingAndAccessoryPressureDropUIDataItem) """
+        pass
+
+    def GetDuctFittingAndAccessoryData(self):
+        """
   GetDuctFittingAndAccessoryData(self: DuctFittingAndAccessoryPressureDropUIDataItem) -> DuctFittingAndAccessoryData
 
   
@@ -78,9 +91,10 @@ class DuctFittingAndAccessoryPressureDropUIDataItem(object,IDisposable):
 
    Returns: The fitting data stored in the UI data item.
   """
-  pass
- def GetEntity(self):
-  """
+        pass
+
+    def GetEntity(self):
+        """
   GetEntity(self: DuctFittingAndAccessoryPressureDropUIDataItem) -> Entity
 
   
@@ -91,12 +105,14 @@ class DuctFittingAndAccessoryPressureDropUIDataItem(object,IDisposable):
 
    Returns: The returned Entity.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: DuctFittingAndAccessoryPressureDropUIDataItem,disposing: bool) """
-  pass
- def SetEntity(self,entity):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: DuctFittingAndAccessoryPressureDropUIDataItem,disposing: bool) """
+        pass
+
+    def SetEntity(self, entity):
+        """
   SetEntity(self: DuctFittingAndAccessoryPressureDropUIDataItem,entity: Entity)
 
    Stores the entity in the UI data item.
@@ -105,21 +121,28 @@ class DuctFittingAndAccessoryPressureDropUIDataItem(object,IDisposable):
 
    entity: The Entity to be stored.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -130,11 +153,11 @@ Get: IsValidObject(self: DuctFittingAndAccessoryPressureDropUIDataItem) -> bool
 """
 
 
-
 class IDuctFittingAndAccessoryPressureDropUIServer(IExternalServer):
- """ Interface for external servers providing optional UI for duct fitting and duct accessory coefficient calculation. """
- def GetDBServerId(self):
-  """
+    """ Interface for external servers providing optional UI for duct fitting and duct accessory coefficient calculation. """
+
+    def GetDBServerId(self):
+        """
   GetDBServerId(self: IDuctFittingAndAccessoryPressureDropUIServer) -> Guid
 
   
@@ -147,9 +170,10 @@ class IDuctFittingAndAccessoryPressureDropUIServer(IExternalServer):
 
    Returns: The Id of the DB server.
   """
-  pass
- def ShowSettings(self,data):
-  """
+        pass
+
+    def ShowSettings(self, data):
+        """
   ShowSettings(self: IDuctFittingAndAccessoryPressureDropUIServer,data: DuctFittingAndAccessoryPressureDropUIData) -> bool
 
   
@@ -162,8 +186,8 @@ class IDuctFittingAndAccessoryPressureDropUIServer(IExternalServer):
 
    Returns: True if the user makes any changes in the UI,false otherwise.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
 
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

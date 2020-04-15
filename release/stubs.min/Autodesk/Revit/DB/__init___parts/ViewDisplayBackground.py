@@ -1,12 +1,13 @@
-class ViewDisplayBackground(object,IDisposable):
- """
+class ViewDisplayBackground(object, IDisposable):
+    """
  Set of values that control how background is drawn in a view.
 
     Background can only be set for a 3d view or for a section or elevation view.
  """
- @staticmethod
- def CreateGradient(skyColor,horizonColor,groundColor):
-  """
+
+    @staticmethod
+    def CreateGradient(skyColor, horizonColor, groundColor):
+        """
   CreateGradient(skyColor: Color,horizonColor: Color,groundColor: Color) -> ViewDisplayBackground
 
   
@@ -41,10 +42,11 @@ class ViewDisplayBackground(object,IDisposable):
 
    Returns: New background object to pass to DBView::setBackground.
   """
-  pass
- @staticmethod
- def CreateImage(imagePath,flags,imageOffsets,imageScales):
-  """
+        pass
+
+    @staticmethod
+    def CreateImage(imagePath, flags, imageOffsets, imageScales):
+        """
   CreateImage(imagePath: str,flags: ViewDisplayBackgroundImageFlags,imageOffsets: UV,imageScales: UV) -> ViewDisplayBackground
 
   
@@ -75,10 +77,11 @@ class ViewDisplayBackground(object,IDisposable):
 
    Returns: New background object to pass to DBView::setBackground.
   """
-  pass
- @staticmethod
- def CreateSky():
-  """
+        pass
+
+    @staticmethod
+    def CreateSky():
+        """
   CreateSky() -> ViewDisplayBackground
 
   
@@ -93,27 +96,36 @@ class ViewDisplayBackground(object,IDisposable):
 
    Returns: New background object to pass to DBView::setBackground.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: ViewDisplayBackground) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: ViewDisplayBackground,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- BackgroundColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The color of the horizon when the type is 'Gradient'.
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: ViewDisplayBackground) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: ViewDisplayBackground,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    BackgroundColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The color of the horizon when the type is 'Gradient'.
 
 
 
@@ -123,8 +135,10 @@ Get: BackgroundColor(self: ViewDisplayBackground) -> Color
 
 """
 
- GroundColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The color of the ground when the type is 'Gradient' or 'SunAndClouds'.
+    GroundColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The color of the ground when the type is 'Gradient' or 'SunAndClouds'.
 
 
 
@@ -134,8 +148,10 @@ Get: GroundColor(self: ViewDisplayBackground) -> Color
 
 """
 
- HorizontalImageOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The distance between the left viewport boundary and the left edge of the background image.
+    HorizontalImageOffset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The distance between the left viewport boundary and the left edge of the background image.
 
 
 
@@ -145,8 +161,10 @@ Get: HorizontalImageOffset(self: ViewDisplayBackground) -> float
 
 """
 
- HorizontalImageScale=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The horizontal scale of the background image; the scale of 1.0 puts the image pixel-to-pixel.
+    HorizontalImageScale = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The horizontal scale of the background image; the scale of 1.0 puts the image pixel-to-pixel.
 
 
 
@@ -156,8 +174,10 @@ Get: HorizontalImageScale(self: ViewDisplayBackground) -> float
 
 """
 
- ImageFlags=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The image alignment indicators when the type is 'Image'.
+    ImageFlags = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The image alignment indicators when the type is 'Image'.
 
 
 
@@ -167,8 +187,8 @@ Get: ImageFlags(self: ViewDisplayBackground) -> ViewDisplayBackgroundImageFlags
 
 """
 
- ImagePath=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The path to the image file when the type is 'Image'.
+    ImagePath = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The path to the image file when the type is 'Image'.
 
 
 
@@ -178,8 +198,10 @@ Get: ImagePath(self: ViewDisplayBackground) -> str
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -189,8 +211,8 @@ Get: IsValidObject(self: ViewDisplayBackground) -> bool
 
 """
 
- SkyColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The color of the sky when the type is 'Gradient'.
+    SkyColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The color of the sky when the type is 'Gradient'.
 
 
 
@@ -200,8 +222,8 @@ Get: SkyColor(self: ViewDisplayBackground) -> Color
 
 """
 
- Type=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The type of the background.
+    Type = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The type of the background.
 
 
 
@@ -211,8 +233,10 @@ Get: Type(self: ViewDisplayBackground) -> ViewDisplayBackgroundType
 
 """
 
- VerticalImageOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The distance between the bottom viewport boundary and the bottom edge of the background image.
+    VerticalImageOffset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The distance between the bottom viewport boundary and the bottom edge of the background image.
 
 
 
@@ -222,8 +246,10 @@ Get: VerticalImageOffset(self: ViewDisplayBackground) -> float
 
 """
 
- VerticalImageScale=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The vertical scale of the background image; the scale of 1.0 puts the image pixel-to-pixel.
+    VerticalImageScale = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The vertical scale of the background image; the scale of 1.0 puts the image pixel-to-pixel.
 
 
 
@@ -232,5 +258,3 @@ Get: VerticalImageScale(self: ViewDisplayBackground) -> float
 
 
 """
-
-

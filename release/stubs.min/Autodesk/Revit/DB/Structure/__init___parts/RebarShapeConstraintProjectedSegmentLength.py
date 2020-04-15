@@ -1,5 +1,5 @@
-class RebarShapeConstraintProjectedSegmentLength(RebarShapeConstraint,IDisposable):
- """
+class RebarShapeConstraintProjectedSegmentLength(RebarShapeConstraint, IDisposable):
+    """
  A constraint that measures the length of a segment as measured by projecting onto a direction
 
     that is not parallel to the segment.
@@ -8,11 +8,13 @@ class RebarShapeConstraintProjectedSegmentLength(RebarShapeConstraint,IDisposabl
 
  RebarShapeConstraintProjectedSegmentLength(paramId: ElementId,direction: UV,tripleProductSign: int,refType0: RebarShapeSegmentEndReferenceType,refType1: RebarShapeSegmentEndReferenceType)
  """
- def Dispose(self):
-  """ Dispose(self: RebarShapeConstraint,A_0: bool) """
-  pass
- def GetSegmentEndReferenceType(self,index):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: RebarShapeConstraint,A_0: bool) """
+        pass
+
+    def GetSegmentEndReferenceType(self, index):
+        """
   GetSegmentEndReferenceType(self: RebarShapeConstraintProjectedSegmentLength,index: int) -> RebarShapeSegmentEndReferenceType
 
   
@@ -27,25 +29,31 @@ class RebarShapeConstraintProjectedSegmentLength(RebarShapeConstraint,IDisposabl
 
    index: Which reference on the constraint. Either 0 or 1.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: RebarShapeConstraint,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,paramId,direction,tripleProductSign,refType0,refType1):
-  """ __new__(cls: type,paramId: ElementId,direction: UV,tripleProductSign: int,refType0: RebarShapeSegmentEndReferenceType,refType1: RebarShapeSegmentEndReferenceType) """
-  pass
- Direction=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """A vector specifying the direction of the constraint. The direction is fixed,
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: RebarShapeConstraint,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, paramId, direction, tripleProductSign, refType0, refType1):
+        """ __new__(cls: type,paramId: ElementId,direction: UV,tripleProductSign: int,refType0: RebarShapeSegmentEndReferenceType,refType1: RebarShapeSegmentEndReferenceType) """
+        pass
+
+    Direction = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """A vector specifying the direction of the constraint. The direction is fixed,
 
    and the shape is always constructed so that the segment
 
@@ -59,8 +67,10 @@ Get: Direction(self: RebarShapeConstraintProjectedSegmentLength) -> UV
 
 """
 
- TripleProductSign=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Sign of the z-coordinate of the cross
+    TripleProductSign = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Sign of the z-coordinate of the cross
 
    product of the Direction property with the segment vector.
 
@@ -77,5 +87,3 @@ Get: TripleProductSign(self: RebarShapeConstraintProjectedSegmentLength) -> int
 
 
 """
-
-

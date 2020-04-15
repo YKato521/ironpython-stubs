@@ -1,8 +1,9 @@
-class BuildingEnvelopeAnalyzer(object,IDisposable):
- """ Analyzes which elements are part of the building envelope,the building elements exposed to the outside. """
- @staticmethod
- def Create(document,options):
-  """
+class BuildingEnvelopeAnalyzer(object, IDisposable):
+    """ Analyzes which elements are part of the building envelope,the building elements exposed to the outside. """
+
+    @staticmethod
+    def Create(document, options):
+        """
   Create(document: Document,options: BuildingEnvelopeAnalyzerOptions) -> BuildingEnvelopeAnalyzer
 
   
@@ -21,12 +22,14 @@ class BuildingEnvelopeAnalyzer(object,IDisposable):
 
    Returns: The created analyzer.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: BuildingEnvelopeAnalyzer) """
-  pass
- def GetBoundingElements(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: BuildingEnvelopeAnalyzer) """
+        pass
+
+    def GetBoundingElements(self):
+        """
   GetBoundingElements(self: BuildingEnvelopeAnalyzer) -> IList[LinkElementId]
 
   
@@ -39,9 +42,10 @@ class BuildingEnvelopeAnalyzer(object,IDisposable):
 
    Returns: The ids of the building elements in the envelope.
   """
-  pass
- def GetBoundingElementsForSpaceVolume(self,spaceVolume):
-  """
+        pass
+
+    def GetBoundingElementsForSpaceVolume(self, spaceVolume):
+        """
   GetBoundingElementsForSpaceVolume(self: BuildingEnvelopeAnalyzer,spaceVolume: int) -> IList[LinkElementId]
 
   
@@ -54,9 +58,10 @@ class BuildingEnvelopeAnalyzer(object,IDisposable):
 
    Returns: The ids of the bounding building elements for the enclosed space volume.
   """
-  pass
- def GetCenterPointsForConnectedGridCellsInSpaceVolume(self,spaceVolume):
-  """
+        pass
+
+    def GetCenterPointsForConnectedGridCellsInSpaceVolume(self, spaceVolume):
+        """
   GetCenterPointsForConnectedGridCellsInSpaceVolume(self: BuildingEnvelopeAnalyzer,spaceVolume: int) -> IList[XYZ]
 
   
@@ -67,24 +72,32 @@ class BuildingEnvelopeAnalyzer(object,IDisposable):
 
     volume.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: BuildingEnvelopeAnalyzer,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: BuildingEnvelopeAnalyzer,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -93,5 +106,3 @@ Get: IsValidObject(self: BuildingEnvelopeAnalyzer) -> bool
 
 
 """
-
-

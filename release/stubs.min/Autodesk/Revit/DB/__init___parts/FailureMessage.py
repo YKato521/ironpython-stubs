@@ -1,13 +1,14 @@
-class FailureMessage(object,IDisposable):
- """
+class FailureMessage(object, IDisposable):
+    """
  Represents a message describing a failure of an operation in Revit.
 
  
 
  FailureMessage(id: FailureDefinitionId)
  """
- def AddResolution(self,type,resolution):
-  """
+
+    def AddResolution(self, type, resolution):
+        """
   AddResolution(self: FailureMessage,type: FailureResolutionType,resolution: FailureResolution) -> FailureMessage
 
   
@@ -22,12 +23,14 @@ class FailureMessage(object,IDisposable):
 
    Returns: The FailureMessage.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: FailureMessage) """
-  pass
- def GetAdditionalElements(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: FailureMessage) """
+        pass
+
+    def GetAdditionalElements(self):
+        """
   GetAdditionalElements(self: FailureMessage) -> ICollection[ElementId]
 
   
@@ -36,9 +39,10 @@ class FailureMessage(object,IDisposable):
 
    Returns: The additional elements.
   """
-  pass
- def GetDefaultResolutionCaption(self):
-  """
+        pass
+
+    def GetDefaultResolutionCaption(self):
+        """
   GetDefaultResolutionCaption(self: FailureMessage) -> str
 
   
@@ -47,9 +51,10 @@ class FailureMessage(object,IDisposable):
 
    Returns: The caption of the default resolution of the failure.
   """
-  pass
- def GetDescriptionText(self):
-  """
+        pass
+
+    def GetDescriptionText(self):
+        """
   GetDescriptionText(self: FailureMessage) -> str
 
   
@@ -58,9 +63,10 @@ class FailureMessage(object,IDisposable):
 
    Returns: The description text.
   """
-  pass
- def GetFailingElements(self):
-  """
+        pass
+
+    def GetFailingElements(self):
+        """
   GetFailingElements(self: FailureMessage) -> ICollection[ElementId]
 
   
@@ -69,9 +75,10 @@ class FailureMessage(object,IDisposable):
 
    Returns: The elements that have caused the failure.
   """
-  pass
- def GetFailureDefinitionId(self):
-  """
+        pass
+
+    def GetFailureDefinitionId(self):
+        """
   GetFailureDefinitionId(self: FailureMessage) -> FailureDefinitionId
 
   
@@ -80,9 +87,10 @@ class FailureMessage(object,IDisposable):
 
    Returns: The id of the FailureDefinition for the failure.
   """
-  pass
- def GetSeverity(self):
-  """
+        pass
+
+    def GetSeverity(self):
+        """
   GetSeverity(self: FailureMessage) -> FailureSeverity
 
   
@@ -91,9 +99,10 @@ class FailureMessage(object,IDisposable):
 
    Returns: The severity of the failure.
   """
-  pass
- def HasResolutionOfType(self,type):
-  """
+        pass
+
+    def HasResolutionOfType(self, type):
+        """
   HasResolutionOfType(self: FailureMessage,type: FailureResolutionType) -> bool
 
   
@@ -106,9 +115,10 @@ class FailureMessage(object,IDisposable):
 
    Returns: True if the failure has a type of resolutions,else false.
   """
-  pass
- def HasResolutions(self):
-  """
+        pass
+
+    def HasResolutions(self):
+        """
   HasResolutions(self: FailureMessage) -> bool
 
   
@@ -117,12 +127,14 @@ class FailureMessage(object,IDisposable):
 
    Returns: True if the failure has any resolutions,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: FailureMessage,disposing: bool) """
-  pass
- def SetAdditionalElement(self,additionalElement):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: FailureMessage,disposing: bool) """
+        pass
+
+    def SetAdditionalElement(self, additionalElement):
+        """
   SetAdditionalElement(self: FailureMessage,additionalElement: ElementId) -> FailureMessage
 
   
@@ -135,12 +147,14 @@ class FailureMessage(object,IDisposable):
 
    Returns: The FailureMessage.
   """
-  pass
- def SetAdditionalElements(self,additionalElements):
-  """ SetAdditionalElements(self: FailureMessage,additionalElements: ICollection[ElementId]) -> FailureMessage """
-  pass
- def SetFailingElement(self,id):
-  """
+        pass
+
+    def SetAdditionalElements(self, additionalElements):
+        """ SetAdditionalElements(self: FailureMessage,additionalElements: ICollection[ElementId]) -> FailureMessage """
+        pass
+
+    def SetFailingElement(self, id):
+        """
   SetFailingElement(self: FailureMessage,id: ElementId) -> FailureMessage
 
   
@@ -153,28 +167,37 @@ class FailureMessage(object,IDisposable):
 
    Returns: The FailureMessage.
   """
-  pass
- def SetFailingElements(self,idsToShow):
-  """ SetFailingElements(self: FailureMessage,idsToShow: ICollection[ElementId]) -> FailureMessage """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,id):
-  """ __new__(cls: type,id: FailureDefinitionId) """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def SetFailingElements(self, idsToShow):
+        """ SetFailingElements(self: FailureMessage,idsToShow: ICollection[ElementId]) -> FailureMessage """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, id):
+        """ __new__(cls: type,id: FailureDefinitionId) """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -183,5 +206,3 @@ Get: IsValidObject(self: FailureMessage) -> bool
 
 
 """
-
-

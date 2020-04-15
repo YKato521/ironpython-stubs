@@ -35,7 +35,9 @@ from __init___parts.FileStream import FileStream
 from __init___parts.FileSystemEventArgs import FileSystemEventArgs
 from __init___parts.FileSystemEventHandler import FileSystemEventHandler
 from __init___parts.FileSystemWatcher import FileSystemWatcher
-from __init___parts.InternalBufferOverflowException import InternalBufferOverflowException
+from __init___parts.InternalBufferOverflowException import (
+    InternalBufferOverflowException,
+)
 from __init___parts.InvalidDataException import InvalidDataException
 from __init___parts.IODescriptionAttribute import IODescriptionAttribute
 from __init___parts.MemoryStream import MemoryStream

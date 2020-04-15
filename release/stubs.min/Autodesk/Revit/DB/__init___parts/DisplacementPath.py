@@ -1,8 +1,9 @@
-class DisplacementPath(Element,IDisposable):
- """ A view-specific annotation related to a DisplacementElement. """
- @staticmethod
- def Create(aDoc,displacementElement,reference,param):
-  """
+class DisplacementPath(Element, IDisposable):
+    """ A view-specific annotation related to a DisplacementElement. """
+
+    @staticmethod
+    def Create(aDoc, displacementElement, reference, param):
+        """
   Create(aDoc: Document,displacementElement: DisplacementElement,reference: Reference,param: float) -> ElementId
 
   
@@ -33,16 +34,19 @@ class DisplacementPath(Element,IDisposable):
 
    Returns: The element id of the newly created DisplacementPath.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- @staticmethod
- def IsValidParam(param):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    @staticmethod
+    def IsValidParam(param):
+        """
   IsValidParam(param: float) -> bool
 
   
@@ -53,10 +57,11 @@ class DisplacementPath(Element,IDisposable):
 
    param: proposed edge parameter.
   """
-  pass
- @staticmethod
- def IsValidReference(displacementElement,reference):
-  """
+        pass
+
+    @staticmethod
+    def IsValidReference(displacementElement, reference):
+        """
   IsValidReference(displacementElement: DisplacementElement,reference: Reference) -> bool
 
   
@@ -73,12 +78,14 @@ class DisplacementPath(Element,IDisposable):
 
    reference: A pick.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def SetAnchorPoint(self,displacementElement,reference,param):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def SetAnchorPoint(self, displacementElement, reference, param):
+        """
   SetAnchorPoint(self: DisplacementPath,displacementElement: DisplacementElement,reference: Reference,param: float)
 
    Sets the reference that determines the origin of this DisplacementPath.
@@ -95,21 +102,28 @@ class DisplacementPath(Element,IDisposable):
 
    param: An parameter used to specify a point on the edge.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- AncestorIdx=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies the end point of the path.
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    AncestorIdx = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies the end point of the path.
 
 
 
@@ -121,8 +135,8 @@ Set: AncestorIdx(self: DisplacementPath)=value
 
 """
 
- PathStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies the style of the path.
+    PathStyle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Specifies the style of the path.
 
 
 
@@ -133,5 +147,3 @@ Get: PathStyle(self: DisplacementPath) -> DisplacementPathStyle
 Set: PathStyle(self: DisplacementPath)=value
 
 """
-
-

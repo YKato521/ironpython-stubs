@@ -1,5 +1,5 @@
 class SizeF(object):
- """
+    """
  Stores an ordered pair of floating-point numbers,typically the width and height of a rectangle.
 
  
@@ -10,9 +10,10 @@ class SizeF(object):
 
  SizeF(width: Single,height: Single)
  """
- @staticmethod
- def Add(sz1,sz2):
-  """
+
+    @staticmethod
+    def Add(sz1, sz2):
+        """
   Add(sz1: SizeF,sz2: SizeF) -> SizeF
 
   
@@ -31,9 +32,10 @@ class SizeF(object):
 
    Returns: A System.Drawing.SizeF structure that is the result of the addition operation.
   """
-  pass
- def Equals(self,obj):
-  """
+        pass
+
+    def Equals(self, obj):
+        """
   Equals(self: SizeF,obj: object) -> bool
 
   
@@ -52,9 +54,10 @@ class SizeF(object):
 
     this System.Drawing.SizeF; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: SizeF) -> int
 
   
@@ -63,10 +66,11 @@ class SizeF(object):
 
    Returns: An integer value that specifies a hash value for this System.Drawing.Size structure.
   """
-  pass
- @staticmethod
- def Subtract(sz1,sz2):
-  """
+        pass
+
+    @staticmethod
+    def Subtract(sz1, sz2):
+        """
   Subtract(sz1: SizeF,sz2: SizeF) -> SizeF
 
   
@@ -85,9 +89,10 @@ class SizeF(object):
 
    Returns: A System.Drawing.SizeF structure that is a result of the subtraction operation.
   """
-  pass
- def ToPointF(self):
-  """
+        pass
+
+    def ToPointF(self):
+        """
   ToPointF(self: SizeF) -> PointF
 
   
@@ -96,9 +101,10 @@ class SizeF(object):
 
    Returns: Returns a System.Drawing.PointF structure.
   """
-  pass
- def ToSize(self):
-  """
+        pass
+
+    def ToSize(self):
+        """
   ToSize(self: SizeF) -> Size
 
   
@@ -107,9 +113,10 @@ class SizeF(object):
 
    Returns: Returns a System.Drawing.Size structure.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: SizeF) -> str
 
   
@@ -118,16 +125,19 @@ class SizeF(object):
 
    Returns: A string that represents this System.Drawing.SizeF structure.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__[SizeF]() -> SizeF
 
   
@@ -138,11 +148,13 @@ class SizeF(object):
 
   __new__(cls: type,width: Single,height: Single)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __radd__(self,*args):
-  """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __radd__(self, *args):
+        """
   __radd__(sz1: SizeF,sz2: SizeF) -> SizeF
 
   
@@ -161,9 +173,10 @@ class SizeF(object):
 
    Returns: A System.Drawing.Size structure that is the result of the addition operation.
   """
-  pass
- def __rsub__(self,*args):
-  """
+        pass
+
+    def __rsub__(self, *args):
+        """
   __rsub__(sz1: SizeF,sz2: SizeF) -> SizeF
 
   
@@ -182,12 +195,14 @@ class SizeF(object):
 
    Returns: A System.Drawing.SizeF that is the result of the subtraction operation.
   """
-  pass
- def __sub__(self,*args):
-  """ x.__sub__(y) <==> x-y """
-  pass
- Height=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the vertical component of this System.Drawing.SizeF structure.
+        pass
+
+    def __sub__(self, *args):
+        """ x.__sub__(y) <==> x-y """
+        pass
+
+    Height = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the vertical component of this System.Drawing.SizeF structure.
 
 
 
@@ -199,8 +214,8 @@ Set: Height(self: SizeF)=value
 
 """
 
- IsEmpty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether this System.Drawing.SizeF structure has zero width and height.
+    IsEmpty = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether this System.Drawing.SizeF structure has zero width and height.
 
 
 
@@ -210,8 +225,8 @@ Get: IsEmpty(self: SizeF) -> bool
 
 """
 
- Width=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the horizontal component of this System.Drawing.SizeF structure.
+    Width = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the horizontal component of this System.Drawing.SizeF structure.
 
 
 
@@ -223,6 +238,4 @@ Set: Width(self: SizeF)=value
 
 """
 
-
- Empty=None
-
+    Empty = None

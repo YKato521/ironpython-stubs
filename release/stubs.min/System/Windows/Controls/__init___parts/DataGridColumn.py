@@ -1,7 +1,8 @@
 class DataGridColumn(DependencyObject):
- """ Represents a System.Windows.Controls.DataGrid column. """
- def CancelCellEdit(self,*args):
-  """
+    """ Represents a System.Windows.Controls.DataGrid column. """
+
+    def CancelCellEdit(self, *args):
+        """
   CancelCellEdit(self: DataGridColumn,editingElement: FrameworkElement,uneditedValue: object)
 
    Causes the cell being edited to revert to the original,unedited value.
@@ -12,9 +13,10 @@ class DataGridColumn(DependencyObject):
 
    uneditedValue: The original,unedited value in the cell being edited.
   """
-  pass
- def CommitCellEdit(self,*args):
-  """
+        pass
+
+    def CommitCellEdit(self, *args):
+        """
   CommitCellEdit(self: DataGridColumn,editingElement: FrameworkElement) -> bool
 
   
@@ -27,9 +29,10 @@ class DataGridColumn(DependencyObject):
 
    Returns: true if no validation errors are found; otherwise,false.
   """
-  pass
- def GenerateEditingElement(self,*args):
-  """
+        pass
+
+    def GenerateEditingElement(self, *args):
+        """
   GenerateEditingElement(self: DataGridColumn,cell: DataGridCell,dataItem: object) -> FrameworkElement
 
   
@@ -50,9 +53,10 @@ class DataGridColumn(DependencyObject):
 
     property value of the column.
   """
-  pass
- def GenerateElement(self,*args):
-  """
+        pass
+
+    def GenerateElement(self, *args):
+        """
   GenerateElement(self: DataGridColumn,cell: DataGridCell,dataItem: object) -> FrameworkElement
 
   
@@ -73,9 +77,10 @@ class DataGridColumn(DependencyObject):
 
     property value of the column.
   """
-  pass
- def GetCellContent(self,*__args):
-  """
+        pass
+
+    def GetCellContent(self, *__args):
+        """
   GetCellContent(self: DataGridColumn,dataGridRow: DataGridRow) -> FrameworkElement
 
   
@@ -108,9 +113,10 @@ class DataGridColumn(DependencyObject):
 
    Returns: The cell content; or null,if the cell is not found.
   """
-  pass
- def NotifyPropertyChanged(self,*args):
-  """
+        pass
+
+    def NotifyPropertyChanged(self, *args):
+        """
   NotifyPropertyChanged(self: DataGridColumn,propertyName: str)
 
    Notifies the System.Windows.Controls.DataGrid that contains this column that a column property 
@@ -123,9 +129,10 @@ class DataGridColumn(DependencyObject):
 
    propertyName: The name of the column property that changed.
   """
-  pass
- def OnCoerceIsReadOnly(self,*args):
-  """
+        pass
+
+    def OnCoerceIsReadOnly(self, *args):
+        """
   OnCoerceIsReadOnly(self: DataGridColumn,baseValue: bool) -> bool
 
   
@@ -144,9 +151,10 @@ class DataGridColumn(DependencyObject):
 
     System.Windows.Controls.DataGrid; otherwise,false.
   """
-  pass
- def OnCopyingCellClipboardContent(self,item):
-  """
+        pass
+
+    def OnCopyingCellClipboardContent(self, item):
+        """
   OnCopyingCellClipboardContent(self: DataGridColumn,item: object) -> object
 
   
@@ -159,9 +167,10 @@ class DataGridColumn(DependencyObject):
 
    Returns: An object that represents the content of the cell.
   """
-  pass
- def OnPastingCellClipboardContent(self,item,cellContent):
-  """
+        pass
+
+    def OnPastingCellClipboardContent(self, item, cellContent):
+        """
   OnPastingCellClipboardContent(self: DataGridColumn,item: object,cellContent: object)
 
    Raises the System.Windows.Controls.DataGridColumn.PastingCellClipboardContent event.
@@ -172,9 +181,10 @@ class DataGridColumn(DependencyObject):
 
    cellContent: The content to paste into the cell.
   """
-  pass
- def PrepareCellForEdit(self,*args):
-  """
+        pass
+
+    def PrepareCellForEdit(self, *args):
+        """
   PrepareCellForEdit(self: DataGridColumn,editingElement: FrameworkElement,editingEventArgs: RoutedEventArgs) -> object
 
   
@@ -191,9 +201,10 @@ class DataGridColumn(DependencyObject):
 
     all cases.
   """
-  pass
- def RefreshCellContent(self,*args):
-  """
+        pass
+
+    def RefreshCellContent(self, *args):
+        """
   RefreshCellContent(self: DataGridColumn,element: FrameworkElement,propertyName: str)
 
    When overridden in a derived class,updates the contents of a cell in the column in response to 
@@ -208,9 +219,12 @@ class DataGridColumn(DependencyObject):
 
    propertyName: The name of the column property that changed.
   """
-  pass
- ActualWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the current width of the column,in device-independent units (1/96th inch per unit).
+        pass
+
+    ActualWidth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the current width of the column,in device-independent units (1/96th inch per unit).
 
 
 
@@ -220,8 +234,10 @@ Get: ActualWidth(self: DataGridColumn) -> float
 
 """
 
- CanUserReorder=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether the user can change the column display position by dragging the column header.
+    CanUserReorder = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether the user can change the column display position by dragging the column header.
 
 
 
@@ -233,8 +249,10 @@ Set: CanUserReorder(self: DataGridColumn)=value
 
 """
 
- CanUserResize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether the user can adjust the column width by using the mouse.
+    CanUserResize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether the user can adjust the column width by using the mouse.
 
 
 
@@ -246,8 +264,10 @@ Set: CanUserResize(self: DataGridColumn)=value
 
 """
 
- CanUserSort=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether the user can sort the column by clicking the column header.
+    CanUserSort = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether the user can sort the column by clicking the column header.
 
 
 
@@ -259,8 +279,8 @@ Set: CanUserSort(self: DataGridColumn)=value
 
 """
 
- CellStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the style that is used to render cells in the column.
+    CellStyle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the style that is used to render cells in the column.
 
 
 
@@ -272,8 +292,10 @@ Set: CellStyle(self: DataGridColumn)=value
 
 """
 
- ClipboardContentBinding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the binding object to use when getting or setting cell content for the clipboard.
+    ClipboardContentBinding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the binding object to use when getting or setting cell content for the clipboard.
 
 
 
@@ -285,15 +307,19 @@ Set: ClipboardContentBinding(self: DataGridColumn)=value
 
 """
 
- DataGridOwner=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Controls.DataGrid control that contains this column.
+    DataGridOwner = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Windows.Controls.DataGrid control that contains this column.
 
 
 
 """
 
- DisplayIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the display position of the column relative to the other columns in the System.Windows.Controls.DataGrid.
+    DisplayIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the display position of the column relative to the other columns in the System.Windows.Controls.DataGrid.
 
 
 
@@ -305,8 +331,10 @@ Set: DisplayIndex(self: DataGridColumn)=value
 
 """
 
- DragIndicatorStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the style object to apply to the column header during a drag operation.
+    DragIndicatorStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the style object to apply to the column header during a drag operation.
 
 
 
@@ -318,8 +346,8 @@ Set: DragIndicatorStyle(self: DataGridColumn)=value
 
 """
 
- Header=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the content of the column header.
+    Header = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the content of the column header.
 
 
 
@@ -331,8 +359,10 @@ Set: Header(self: DataGridColumn)=value
 
 """
 
- HeaderStringFormat=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the format pattern to apply to the content of the column header.
+    HeaderStringFormat = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the format pattern to apply to the content of the column header.
 
 
 
@@ -344,8 +374,10 @@ Set: HeaderStringFormat(self: DataGridColumn)=value
 
 """
 
- HeaderStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the style that is used when rendering the column header.
+    HeaderStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the style that is used when rendering the column header.
 
 
 
@@ -357,8 +389,10 @@ Set: HeaderStyle(self: DataGridColumn)=value
 
 """
 
- HeaderTemplate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the template that defines the visual representation of the column header.
+    HeaderTemplate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the template that defines the visual representation of the column header.
 
 
 
@@ -370,8 +404,10 @@ Set: HeaderTemplate(self: DataGridColumn)=value
 
 """
 
- HeaderTemplateSelector=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the object that selects which template to use for the column header.
+    HeaderTemplateSelector = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the object that selects which template to use for the column header.
 
 
 
@@ -383,8 +419,10 @@ Set: HeaderTemplateSelector(self: DataGridColumn)=value
 
 """
 
- IsAutoGenerated=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the column is auto-generated.
+    IsAutoGenerated = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the column is auto-generated.
 
 
 
@@ -394,8 +432,8 @@ Get: IsAutoGenerated(self: DataGridColumn) -> bool
 
 """
 
- IsFrozen=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the column is prevented from scrolling horizontally.
+    IsFrozen = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether the column is prevented from scrolling horizontally.
 
 
 
@@ -405,8 +443,10 @@ Get: IsFrozen(self: DataGridColumn) -> bool
 
 """
 
- IsReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether cells in the column can be edited.
+    IsReadOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether cells in the column can be edited.
 
 
 
@@ -418,8 +458,8 @@ Set: IsReadOnly(self: DataGridColumn)=value
 
 """
 
- MaxWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the maximum width constraint of the column.
+    MaxWidth = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the maximum width constraint of the column.
 
 
 
@@ -431,8 +471,8 @@ Set: MaxWidth(self: DataGridColumn)=value
 
 """
 
- MinWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the minimum width constraint of the column.
+    MinWidth = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the minimum width constraint of the column.
 
 
 
@@ -444,8 +484,10 @@ Set: MinWidth(self: DataGridColumn)=value
 
 """
 
- SortDirection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the sort direction (ascending or descending) of the column.
+    SortDirection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the sort direction (ascending or descending) of the column.
 
 
 
@@ -457,8 +499,10 @@ Set: SortDirection(self: DataGridColumn)=value
 
 """
 
- SortMemberPath=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a property name,or a period-delimited hierarchy of property names,that indicates the member to sort by.
+    SortMemberPath = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a property name,or a period-delimited hierarchy of property names,that indicates the member to sort by.
 
 
 
@@ -470,8 +514,10 @@ Set: SortMemberPath(self: DataGridColumn)=value
 
 """
 
- Visibility=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the visibility of the column.
+    Visibility = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the visibility of the column.
 
 
 
@@ -483,8 +529,8 @@ Set: Visibility(self: DataGridColumn)=value
 
 """
 
- Width=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the column width or automatic sizing mode.
+    Width = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the column width or automatic sizing mode.
 
 
 
@@ -496,28 +542,26 @@ Set: Width(self: DataGridColumn)=value
 
 """
 
-
- ActualWidthProperty=None
- CanUserReorderProperty=None
- CanUserResizeProperty=None
- CanUserSortProperty=None
- CellStyleProperty=None
- CopyingCellClipboardContent=None
- DisplayIndexProperty=None
- DragIndicatorStyleProperty=None
- HeaderProperty=None
- HeaderStringFormatProperty=None
- HeaderStyleProperty=None
- HeaderTemplateProperty=None
- HeaderTemplateSelectorProperty=None
- IsAutoGeneratedProperty=None
- IsFrozenProperty=None
- IsReadOnlyProperty=None
- MaxWidthProperty=None
- MinWidthProperty=None
- PastingCellClipboardContent=None
- SortDirectionProperty=None
- SortMemberPathProperty=None
- VisibilityProperty=None
- WidthProperty=None
-
+    ActualWidthProperty = None
+    CanUserReorderProperty = None
+    CanUserResizeProperty = None
+    CanUserSortProperty = None
+    CellStyleProperty = None
+    CopyingCellClipboardContent = None
+    DisplayIndexProperty = None
+    DragIndicatorStyleProperty = None
+    HeaderProperty = None
+    HeaderStringFormatProperty = None
+    HeaderStyleProperty = None
+    HeaderTemplateProperty = None
+    HeaderTemplateSelectorProperty = None
+    IsAutoGeneratedProperty = None
+    IsFrozenProperty = None
+    IsReadOnlyProperty = None
+    MaxWidthProperty = None
+    MinWidthProperty = None
+    PastingCellClipboardContent = None
+    SortDirectionProperty = None
+    SortMemberPathProperty = None
+    VisibilityProperty = None
+    WidthProperty = None

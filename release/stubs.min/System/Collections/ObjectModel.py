@@ -8,14 +8,26 @@
 # no functions
 # classes
 
-class Collection(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,ICollection,IReadOnlyList[T],IReadOnlyCollection[T]):
- """
+
+class Collection(
+    object,
+    IList[T],
+    ICollection[T],
+    IEnumerable[T],
+    IEnumerable,
+    IList,
+    ICollection,
+    IReadOnlyList[T],
+    IReadOnlyCollection[T],
+):
+    """
  Collection[T]()
 
  Collection[T](list: IList[T])
  """
- def Add(self,item):
-  """
+
+    def Add(self, item):
+        """
   Add(self: Collection[T],item: T)
 
    Adds an object to the end of the System.Collections.ObjectModel.Collection.
@@ -26,23 +38,26 @@ class Collection(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList
 
     can be null for reference types.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: Collection[T])
 
    Removes all elements from the System.Collections.ObjectModel.Collection.
   """
-  pass
- def ClearItems(self,*args):
-  """
+        pass
+
+    def ClearItems(self, *args):
+        """
   ClearItems(self: Collection[T])
 
    Removes all elements from the System.Collections.ObjectModel.Collection.
   """
-  pass
- def Contains(self,item):
-  """
+        pass
+
+    def Contains(self, item):
+        """
   Contains(self: Collection[T],item: T) -> bool
 
   
@@ -59,12 +74,14 @@ class Collection(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList
 
    Returns: true if item is found in the System.Collections.ObjectModel.Collection; otherwise,false.
   """
-  pass
- def CopyTo(self,array,index):
-  """ CopyTo(self: Collection[T],array: Array[T],index: int) """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def CopyTo(self, array, index):
+        """ CopyTo(self: Collection[T],array: Array[T],index: int) """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: Collection[T]) -> IEnumerator[T]
 
   
@@ -73,9 +90,10 @@ class Collection(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList
 
    Returns: An System.Collections.Generic.IEnumerator for the System.Collections.ObjectModel.Collection.
   """
-  pass
- def IndexOf(self,item):
-  """
+        pass
+
+    def IndexOf(self, item):
+        """
   IndexOf(self: Collection[T],item: T) -> int
 
   
@@ -98,9 +116,10 @@ class Collection(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList
 
     System.Collections.ObjectModel.Collection,if found; otherwise,-1.
   """
-  pass
- def Insert(self,index,item):
-  """
+        pass
+
+    def Insert(self, index, item):
+        """
   Insert(self: Collection[T],index: int,item: T)
 
    Inserts an element into the System.Collections.ObjectModel.Collection at the specified index.
@@ -111,9 +130,10 @@ class Collection(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList
 
    item: The object to insert. The value can be null for reference types.
   """
-  pass
- def InsertItem(self,*args):
-  """
+        pass
+
+    def InsertItem(self, *args):
+        """
   InsertItem(self: Collection[T],index: int,item: T)
 
    Inserts an element into the System.Collections.ObjectModel.Collection at the specified index.
@@ -124,9 +144,10 @@ class Collection(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList
 
    item: The object to insert. The value can be null for reference types.
   """
-  pass
- def Remove(self,item):
-  """
+        pass
+
+    def Remove(self, item):
+        """
   Remove(self: Collection[T],item: T) -> bool
 
   
@@ -149,9 +170,10 @@ class Collection(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList
 
     was not found in the original System.Collections.ObjectModel.Collection.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: Collection[T],index: int)
 
    Removes the element at the specified index of the System.Collections.ObjectModel.Collection.
@@ -160,9 +182,10 @@ class Collection(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList
 
    index: The zero-based index of the element to remove.
   """
-  pass
- def RemoveItem(self,*args):
-  """
+        pass
+
+    def RemoveItem(self, *args):
+        """
   RemoveItem(self: Collection[T],index: int)
 
    Removes the element at the specified index of the System.Collections.ObjectModel.Collection.
@@ -171,9 +194,10 @@ class Collection(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList
 
    index: The zero-based index of the element to remove.
   """
-  pass
- def SetItem(self,*args):
-  """
+        pass
+
+    def SetItem(self, *args):
+        """
   SetItem(self: Collection[T],index: int,item: T)
 
    Replaces the element at the specified index.
@@ -184,12 +208,14 @@ class Collection(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList
 
    item: The new value for the element at the specified index. The value can be null for reference types.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: ICollection[T],item: T) -> bool
 
   
@@ -214,37 +240,46 @@ class Collection(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,list=None):
-  """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, list=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,list: IList[T])
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of elements actually contained in the System.Collections.ObjectModel.Collection.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of elements actually contained in the System.Collections.ObjectModel.Collection.
 
 
 
@@ -254,19 +289,28 @@ Get: Count(self: Collection[T]) -> int
 
 """
 
- Items=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a System.Collections.Generic.IList wrapper around the System.Collections.ObjectModel.Collection.
+    Items = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a System.Collections.Generic.IList wrapper around the System.Collections.ObjectModel.Collection.
 
 
 
 """
 
 
-
-class KeyedCollection(Collection[TItem],IList[TItem],ICollection[TItem],IEnumerable[TItem],IEnumerable,IList,ICollection,IReadOnlyList[TItem],IReadOnlyCollection[TItem]):
- # no doc
- def ChangeItemKey(self,*args):
-  """
+class KeyedCollection(
+    Collection[TItem],
+    IList[TItem],
+    ICollection[TItem],
+    IEnumerable[TItem],
+    IEnumerable,
+    IList,
+    ICollection,
+    IReadOnlyList[TItem],
+    IReadOnlyCollection[TItem],
+):
+    # no doc
+    def ChangeItemKey(self, *args):
+        """
   ChangeItemKey(self: KeyedCollection[TKey,TItem],item: TItem,newKey: TKey)
 
    Changes the key associated with the specified element in the lookup dictionary.
@@ -277,16 +321,18 @@ class KeyedCollection(Collection[TItem],IList[TItem],ICollection[TItem],IEnumera
 
    newKey: The new key for item.
   """
-  pass
- def ClearItems(self,*args):
-  """
+        pass
+
+    def ClearItems(self, *args):
+        """
   ClearItems(self: KeyedCollection[TKey,TItem])
 
    Removes all elements from the System.Collections.ObjectModel.KeyedCollection.
   """
-  pass
- def Contains(self,*__args):
-  """
+        pass
+
+    def Contains(self, *__args):
+        """
   Contains(self: KeyedCollection[TKey,TItem],key: TKey) -> bool
 
   
@@ -301,9 +347,10 @@ class KeyedCollection(Collection[TItem],IList[TItem],ICollection[TItem],IEnumera
 
     specified key; otherwise,false.
   """
-  pass
- def GetKeyForItem(self,*args):
-  """
+        pass
+
+    def GetKeyForItem(self, *args):
+        """
   GetKeyForItem(self: KeyedCollection[TKey,TItem],item: TItem) -> TKey
 
   
@@ -316,9 +363,10 @@ class KeyedCollection(Collection[TItem],IList[TItem],ICollection[TItem],IEnumera
 
    Returns: The key for the specified element.
   """
-  pass
- def InsertItem(self,*args):
-  """
+        pass
+
+    def InsertItem(self, *args):
+        """
   InsertItem(self: KeyedCollection[TKey,TItem],index: int,item: TItem)
 
    Inserts an element into the System.Collections.ObjectModel.KeyedCollection at the specified 
@@ -333,9 +381,10 @@ class KeyedCollection(Collection[TItem],IList[TItem],ICollection[TItem],IEnumera
 
    item: The object to insert.
   """
-  pass
- def Remove(self,*__args):
-  """
+        pass
+
+    def Remove(self, *__args):
+        """
   Remove(self: KeyedCollection[TKey,TItem],key: TKey) -> bool
 
   
@@ -354,9 +403,10 @@ class KeyedCollection(Collection[TItem],IList[TItem],ICollection[TItem],IEnumera
 
     if key is not found in the System.Collections.ObjectModel.KeyedCollection.
   """
-  pass
- def RemoveItem(self,*args):
-  """
+        pass
+
+    def RemoveItem(self, *args):
+        """
   RemoveItem(self: KeyedCollection[TKey,TItem],index: int)
 
    Removes the element at the specified index of the System.Collections.ObjectModel.KeyedCollection.
@@ -365,9 +415,10 @@ class KeyedCollection(Collection[TItem],IList[TItem],ICollection[TItem],IEnumera
 
    index: The index of the element to remove.
   """
-  pass
- def SetItem(self,*args):
-  """
+        pass
+
+    def SetItem(self, *args):
+        """
   SetItem(self: KeyedCollection[TKey,TItem],index: int,item: TItem)
 
    Replaces the item at the specified index with the specified item.
@@ -378,33 +429,40 @@ class KeyedCollection(Collection[TItem],IList[TItem],ICollection[TItem],IEnumera
 
    item: The new item.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """
   __new__(cls: type)
 
   __new__(cls: type,comparer: IEqualityComparer[TKey])
 
   __new__(cls: type,comparer: IEqualityComparer[TKey],dictionaryCreationThreshold: int)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Comparer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the generic equality comparer that is used to determine equality of keys in the collection.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Comparer = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the generic equality comparer that is used to determine equality of keys in the collection.
 
 
 
@@ -414,35 +472,50 @@ Get: Comparer(self: KeyedCollection[TKey,TItem]) -> IEqualityComparer[TKey]
 
 """
 
- Dictionary=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the lookup dictionary of the System.Collections.ObjectModel.KeyedCollection.
+    Dictionary = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the lookup dictionary of the System.Collections.ObjectModel.KeyedCollection.
 
 
 
 """
 
- Items=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a System.Collections.Generic.IList wrapper around the System.Collections.ObjectModel.Collection.
+    Items = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a System.Collections.Generic.IList wrapper around the System.Collections.ObjectModel.Collection.
 
 
 
 """
 
 
-
-class ObservableCollection(Collection[T],IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,ICollection,IReadOnlyList[T],IReadOnlyCollection[T],INotifyCollectionChanged,INotifyPropertyChanged):
- """
+class ObservableCollection(
+    Collection[T],
+    IList[T],
+    ICollection[T],
+    IEnumerable[T],
+    IEnumerable,
+    IList,
+    ICollection,
+    IReadOnlyList[T],
+    IReadOnlyCollection[T],
+    INotifyCollectionChanged,
+    INotifyPropertyChanged,
+):
+    """
  ObservableCollection[T]()
 
  ObservableCollection[T](list: List[T])
 
  ObservableCollection[T](collection: IEnumerable[T])
  """
- def add_PropertyChanged(self,*args):
-  """ add_PropertyChanged(self: ObservableCollection[T],value: PropertyChangedEventHandler) """
-  pass
- def BlockReentrancy(self,*args):
-  """
+
+    def add_PropertyChanged(self, *args):
+        """ add_PropertyChanged(self: ObservableCollection[T],value: PropertyChangedEventHandler) """
+        pass
+
+    def BlockReentrancy(self, *args):
+        """
   BlockReentrancy(self: ObservableCollection[T]) -> IDisposable
 
   
@@ -451,23 +524,26 @@ class ObservableCollection(Collection[T],IList[T],ICollection[T],IEnumerable[T],
 
    Returns: An System.IDisposable object that can be used to dispose of the object.
   """
-  pass
- def CheckReentrancy(self,*args):
-  """
+        pass
+
+    def CheckReentrancy(self, *args):
+        """
   CheckReentrancy(self: ObservableCollection[T])
 
    Checks for reentrant attempts to change this collection.
   """
-  pass
- def ClearItems(self,*args):
-  """
+        pass
+
+    def ClearItems(self, *args):
+        """
   ClearItems(self: ObservableCollection[T])
 
    Removes all items from the collection.
   """
-  pass
- def InsertItem(self,*args):
-  """
+        pass
+
+    def InsertItem(self, *args):
+        """
   InsertItem(self: ObservableCollection[T],index: int,item: T)
 
    Inserts an item into the collection at the specified index.
@@ -478,9 +554,10 @@ class ObservableCollection(Collection[T],IList[T],ICollection[T],IEnumerable[T],
 
    item: The object to insert.
   """
-  pass
- def Move(self,oldIndex,newIndex):
-  """
+        pass
+
+    def Move(self, oldIndex, newIndex):
+        """
   Move(self: ObservableCollection[T],oldIndex: int,newIndex: int)
 
    Moves the item at the specified index to a new location in the collection.
@@ -491,9 +568,10 @@ class ObservableCollection(Collection[T],IList[T],ICollection[T],IEnumerable[T],
 
    newIndex: The zero-based index specifying the new location of the item.
   """
-  pass
- def MoveItem(self,*args):
-  """
+        pass
+
+    def MoveItem(self, *args):
+        """
   MoveItem(self: ObservableCollection[T],oldIndex: int,newIndex: int)
 
    Moves the item at the specified index to a new location in the collection.
@@ -504,9 +582,10 @@ class ObservableCollection(Collection[T],IList[T],ICollection[T],IEnumerable[T],
 
    newIndex: The zero-based index specifying the new location of the item.
   """
-  pass
- def OnCollectionChanged(self,*args):
-  """
+        pass
+
+    def OnCollectionChanged(self, *args):
+        """
   OnCollectionChanged(self: ObservableCollection[T],e: NotifyCollectionChangedEventArgs)
 
    Raises the System.Collections.ObjectModel.ObservableCollection event with the provided arguments.
@@ -515,9 +594,10 @@ class ObservableCollection(Collection[T],IList[T],ICollection[T],IEnumerable[T],
 
    e: Arguments of the event being raised.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: ObservableCollection[T],e: PropertyChangedEventArgs)
 
    Raises the System.Collections.ObjectModel.ObservableCollection event with the provided arguments.
@@ -526,9 +606,10 @@ class ObservableCollection(Collection[T],IList[T],ICollection[T],IEnumerable[T],
 
    e: Arguments of the event being raised.
   """
-  pass
- def RemoveItem(self,*args):
-  """
+        pass
+
+    def RemoveItem(self, *args):
+        """
   RemoveItem(self: ObservableCollection[T],index: int)
 
    Removes the item at the specified index of the collection.
@@ -537,12 +618,14 @@ class ObservableCollection(Collection[T],IList[T],ICollection[T],IEnumerable[T],
 
    index: The zero-based index of the element to remove.
   """
-  pass
- def remove_PropertyChanged(self,*args):
-  """ remove_PropertyChanged(self: ObservableCollection[T],value: PropertyChangedEventHandler) """
-  pass
- def SetItem(self,*args):
-  """
+        pass
+
+    def remove_PropertyChanged(self, *args):
+        """ remove_PropertyChanged(self: ObservableCollection[T],value: PropertyChangedEventHandler) """
+        pass
+
+    def SetItem(self, *args):
+        """
   SetItem(self: ObservableCollection[T],index: int,item: T)
 
    Replaces the element at the specified index.
@@ -553,46 +636,63 @@ class ObservableCollection(Collection[T],IList[T],ICollection[T],IEnumerable[T],
 
    item: The new value for the element at the specified index.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,list: List[T])
 
   __new__(cls: type,collection: IEnumerable[T])
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Items=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a System.Collections.Generic.IList wrapper around the System.Collections.ObjectModel.Collection.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Items = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a System.Collections.Generic.IList wrapper around the System.Collections.ObjectModel.Collection.
 
 
 
 """
 
+    CollectionChanged = None
 
- CollectionChanged=None
 
+class ReadOnlyCollection(
+    object,
+    IList[T],
+    ICollection[T],
+    IEnumerable[T],
+    IEnumerable,
+    IList,
+    ICollection,
+    IReadOnlyList[T],
+    IReadOnlyCollection[T],
+):
+    """ ReadOnlyCollection[T](list: IList[T]) """
 
-class ReadOnlyCollection(object,IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,ICollection,IReadOnlyList[T],IReadOnlyCollection[T]):
- """ ReadOnlyCollection[T](list: IList[T]) """
- def Contains(self,value):
-  """
+    def Contains(self, value):
+        """
   Contains(self: ReadOnlyCollection[T],value: T) -> bool
 
   
@@ -611,12 +711,14 @@ class ReadOnlyCollection(object,IList[T],ICollection[T],IEnumerable[T],IEnumerab
 
     false.
   """
-  pass
- def CopyTo(self,array,index):
-  """ CopyTo(self: ReadOnlyCollection[T],array: Array[T],index: int) """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def CopyTo(self, array, index):
+        """ CopyTo(self: ReadOnlyCollection[T],array: Array[T],index: int) """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: ReadOnlyCollection[T]) -> IEnumerator[T]
 
   
@@ -631,9 +733,10 @@ class ReadOnlyCollection(object,IList[T],ICollection[T],IEnumerable[T],IEnumerab
 
     System.Collections.ObjectModel.ReadOnlyCollection.
   """
-  pass
- def IndexOf(self,value):
-  """
+        pass
+
+    def IndexOf(self, value):
+        """
   IndexOf(self: ReadOnlyCollection[T],value: T) -> int
 
   
@@ -656,9 +759,10 @@ class ReadOnlyCollection(object,IList[T],ICollection[T],IEnumerable[T],IEnumerab
 
     System.Collections.ObjectModel.ReadOnlyCollection,if found; otherwise,-1.
   """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: ICollection[T],item: T) -> bool
 
   
@@ -683,30 +787,38 @@ class ReadOnlyCollection(object,IList[T],ICollection[T],IEnumerable[T],IEnumerab
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,list):
-  """ __new__(cls: type,list: IList[T]) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of elements contained in the System.Collections.ObjectModel.ReadOnlyCollection instance.
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, list):
+        """ __new__(cls: type,list: IList[T]) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of elements contained in the System.Collections.ObjectModel.ReadOnlyCollection instance.
 
 
 
@@ -716,28 +828,41 @@ Get: Count(self: ReadOnlyCollection[T]) -> int
 
 """
 
- Items=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the System.Collections.Generic.IList that the System.Collections.ObjectModel.ReadOnlyCollection wraps.
+    Items = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns the System.Collections.Generic.IList that the System.Collections.ObjectModel.ReadOnlyCollection wraps.
 
 
 
 """
 
 
+class ReadOnlyDictionary(
+    object,
+    IDictionary[TKey, TValue],
+    ICollection[KeyValuePair[TKey, TValue]],
+    IEnumerable[KeyValuePair[TKey, TValue]],
+    IEnumerable,
+    IDictionary,
+    ICollection,
+    IReadOnlyDictionary[TKey, TValue],
+    IReadOnlyCollection[KeyValuePair[TKey, TValue]],
+):
+    """ ReadOnlyDictionary[TKey,TValue](dictionary: IDictionary[TKey,TValue]) """
 
-class ReadOnlyDictionary(object,IDictionary[TKey,TValue],ICollection[KeyValuePair[TKey,TValue]],IEnumerable[KeyValuePair[TKey,TValue]],IEnumerable,IDictionary,ICollection,IReadOnlyDictionary[TKey,TValue],IReadOnlyCollection[KeyValuePair[TKey,TValue]]):
- """ ReadOnlyDictionary[TKey,TValue](dictionary: IDictionary[TKey,TValue]) """
- def ContainsKey(self,key):
-  """ ContainsKey(self: ReadOnlyDictionary[TKey,TValue],key: TKey) -> bool """
-  pass
- def GetEnumerator(self):
-  """ GetEnumerator(self: ReadOnlyDictionary[TKey,TValue]) -> IEnumerator[KeyValuePair[TKey,TValue]] """
-  pass
- def TryGetValue(self,key,value):
-  """ TryGetValue(self: ReadOnlyDictionary[TKey,TValue],key: TKey) -> (bool,TValue) """
-  pass
- def __contains__(self,*args):
-  """
+    def ContainsKey(self, key):
+        """ ContainsKey(self: ReadOnlyDictionary[TKey,TValue],key: TKey) -> bool """
+        pass
+
+    def GetEnumerator(self):
+        """ GetEnumerator(self: ReadOnlyDictionary[TKey,TValue]) -> IEnumerator[KeyValuePair[TKey,TValue]] """
+        pass
+
+    def TryGetValue(self, key, value):
+        """ TryGetValue(self: ReadOnlyDictionary[TKey,TValue],key: TKey) -> (bool,TValue) """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IDictionary[TKey,TValue],key: TKey) -> bool
 
   
@@ -774,66 +899,90 @@ class ReadOnlyDictionary(object,IDictionary[TKey,TValue],ICollection[KeyValuePai
 
    Returns: true if the System.Collections.IDictionary contains an element with the key; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,dictionary):
-  """ __new__(cls: type,dictionary: IDictionary[TKey,TValue]) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Count(self: ReadOnlyDictionary[TKey,TValue]) -> int
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, dictionary):
+        """ __new__(cls: type,dictionary: IDictionary[TKey,TValue]) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Count(self: ReadOnlyDictionary[TKey,TValue]) -> int
 
 
 
 """
 
- Dictionary=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    Dictionary = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Keys=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Keys(self: ReadOnlyDictionary[TKey,TValue]) -> KeyCollection
-
-
-
-"""
-
- Values=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Values(self: ReadOnlyDictionary[TKey,TValue]) -> ValueCollection
+    Keys = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Keys(self: ReadOnlyDictionary[TKey,TValue]) -> KeyCollection
 
 
 
 """
 
+    Values = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Values(self: ReadOnlyDictionary[TKey,TValue]) -> ValueCollection
 
- KeyCollection=None
- ValueCollection=None
 
 
-class ReadOnlyObservableCollection(ReadOnlyCollection[T],IList[T],ICollection[T],IEnumerable[T],IEnumerable,IList,ICollection,IReadOnlyList[T],IReadOnlyCollection[T],INotifyCollectionChanged,INotifyPropertyChanged):
- """ ReadOnlyObservableCollection[T](list: ObservableCollection[T]) """
- def add_CollectionChanged(self,*args):
-  """ add_CollectionChanged(self: ReadOnlyObservableCollection[T],value: NotifyCollectionChangedEventHandler) """
-  pass
- def add_PropertyChanged(self,*args):
-  """ add_PropertyChanged(self: ReadOnlyObservableCollection[T],value: PropertyChangedEventHandler) """
-  pass
- def OnCollectionChanged(self,*args):
-  """
+"""
+
+    KeyCollection = None
+    ValueCollection = None
+
+
+class ReadOnlyObservableCollection(
+    ReadOnlyCollection[T],
+    IList[T],
+    ICollection[T],
+    IEnumerable[T],
+    IEnumerable,
+    IList,
+    ICollection,
+    IReadOnlyList[T],
+    IReadOnlyCollection[T],
+    INotifyCollectionChanged,
+    INotifyPropertyChanged,
+):
+    """ ReadOnlyObservableCollection[T](list: ObservableCollection[T]) """
+
+    def add_CollectionChanged(self, *args):
+        """ add_CollectionChanged(self: ReadOnlyObservableCollection[T],value: NotifyCollectionChangedEventHandler) """
+        pass
+
+    def add_PropertyChanged(self, *args):
+        """ add_PropertyChanged(self: ReadOnlyObservableCollection[T],value: PropertyChangedEventHandler) """
+        pass
+
+    def OnCollectionChanged(self, *args):
+        """
   OnCollectionChanged(self: ReadOnlyObservableCollection[T],args: NotifyCollectionChangedEventArgs)
 
    Raises the System.Collections.ObjectModel.ReadOnlyObservableCollection event using the provided 
@@ -846,9 +995,10 @@ class ReadOnlyObservableCollection(ReadOnlyCollection[T],IList[T],ICollection[T]
 
    args: Arguments of the event being raised.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: ReadOnlyObservableCollection[T],args: PropertyChangedEventArgs)
 
    Raises the System.Collections.ObjectModel.ReadOnlyObservableCollection event using the provided 
@@ -861,34 +1011,39 @@ class ReadOnlyObservableCollection(ReadOnlyCollection[T],IList[T],ICollection[T]
 
    args: Arguments of the event being raised.
   """
-  pass
- def remove_CollectionChanged(self,*args):
-  """ remove_CollectionChanged(self: ReadOnlyObservableCollection[T],value: NotifyCollectionChangedEventHandler) """
-  pass
- def remove_PropertyChanged(self,*args):
-  """ remove_PropertyChanged(self: ReadOnlyObservableCollection[T],value: PropertyChangedEventHandler) """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- @staticmethod
- def __new__(self,list):
-  """ __new__(cls: type,list: ObservableCollection[T]) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- Items=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the System.Collections.Generic.IList that the System.Collections.ObjectModel.ReadOnlyCollection wraps.
+        pass
+
+    def remove_CollectionChanged(self, *args):
+        """ remove_CollectionChanged(self: ReadOnlyObservableCollection[T],value: NotifyCollectionChangedEventHandler) """
+        pass
+
+    def remove_PropertyChanged(self, *args):
+        """ remove_PropertyChanged(self: ReadOnlyObservableCollection[T],value: PropertyChangedEventHandler) """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    @staticmethod
+    def __new__(self, list):
+        """ __new__(cls: type,list: ObservableCollection[T]) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    Items = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns the System.Collections.Generic.IList that the System.Collections.ObjectModel.ReadOnlyCollection wraps.
 
 
 
 """
-
-
-

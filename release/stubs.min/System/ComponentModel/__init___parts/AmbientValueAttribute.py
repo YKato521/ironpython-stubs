@@ -1,5 +1,5 @@
-class AmbientValueAttribute(Attribute,_Attribute):
- """
+class AmbientValueAttribute(Attribute, _Attribute):
+    """
  Specifies the value to pass to a property to cause the property to get its value from another source. This is known as ambience. This class cannot be inherited.
 
  
@@ -26,8 +26,9 @@ class AmbientValueAttribute(Attribute,_Attribute):
 
  AmbientValueAttribute(value: object)
  """
- def Equals(self,obj):
-  """
+
+    def Equals(self, obj):
+        """
   Equals(self: AmbientValueAttribute,obj: object) -> bool
 
   
@@ -50,9 +51,10 @@ class AmbientValueAttribute(Attribute,_Attribute):
 
     System.ComponentModel.AmbientValueAttribute; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: AmbientValueAttribute) -> int
 
   
@@ -61,16 +63,19 @@ class AmbientValueAttribute(Attribute,_Attribute):
 
    Returns: A hash code for the current System.ComponentModel.AmbientValueAttribute.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,type: Type,value: str)
 
   __new__(cls: type,value: Char)
@@ -93,11 +98,13 @@ class AmbientValueAttribute(Attribute,_Attribute):
 
   __new__(cls: type,value: object)
   """
-  pass
- def __ne__(self,*args):
-  pass
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the object that is the value of this System.ComponentModel.AmbientValueAttribute.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the object that is the value of this System.ComponentModel.AmbientValueAttribute.
 
 
 
@@ -106,5 +113,3 @@ Get: Value(self: AmbientValueAttribute) -> object
 
 
 """
-
-

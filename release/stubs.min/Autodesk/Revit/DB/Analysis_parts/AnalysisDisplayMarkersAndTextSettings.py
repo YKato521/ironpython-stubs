@@ -1,5 +1,5 @@
-class AnalysisDisplayMarkersAndTextSettings(object,IDisposable):
- """
+class AnalysisDisplayMarkersAndTextSettings(object, IDisposable):
+    """
  Contains markers and text settings for analysis display style element.
 
  
@@ -8,11 +8,13 @@ class AnalysisDisplayMarkersAndTextSettings(object,IDisposable):
 
  AnalysisDisplayMarkersAndTextSettings(other: AnalysisDisplayMarkersAndTextSettings)
  """
- def Dispose(self):
-  """ Dispose(self: AnalysisDisplayMarkersAndTextSettings) """
-  pass
- def IsEqual(self,other):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: AnalysisDisplayMarkersAndTextSettings) """
+        pass
+
+    def IsEqual(self, other):
+        """
   IsEqual(self: AnalysisDisplayMarkersAndTextSettings,other: AnalysisDisplayMarkersAndTextSettings) -> bool
 
   
@@ -25,32 +27,41 @@ class AnalysisDisplayMarkersAndTextSettings(object,IDisposable):
 
    Returns: True if objects are equal,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: AnalysisDisplayMarkersAndTextSettings,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,other=None):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: AnalysisDisplayMarkersAndTextSettings,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, other=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,other: AnalysisDisplayMarkersAndTextSettings)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -60,8 +71,10 @@ Get: IsValidObject(self: AnalysisDisplayMarkersAndTextSettings) -> bool
 
 """
 
- MarkerSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Size of marker.
+    MarkerSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Size of marker.
 
 
 
@@ -73,8 +86,10 @@ Set: MarkerSize(self: AnalysisDisplayMarkersAndTextSettings)=value
 
 """
 
- MarkerType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Type of marker.
+    MarkerType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Type of marker.
 
 
 
@@ -86,8 +101,8 @@ Set: MarkerType(self: AnalysisDisplayMarkersAndTextSettings)=value
 
 """
 
- Rounding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Increment to which numeric values of analysis results are rounded in markers.
+    Rounding = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Increment to which numeric values of analysis results are rounded in markers.
 
 
 
@@ -99,8 +114,10 @@ Set: Rounding(self: AnalysisDisplayMarkersAndTextSettings)=value
 
 """
 
- TextLabelType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Type of diagram text label visualization.
+    TextLabelType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Type of diagram text label visualization.
 
 
 
@@ -112,8 +129,10 @@ Set: TextLabelType(self: AnalysisDisplayMarkersAndTextSettings)=value
 
 """
 
- TextTypeId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Element id of text associated with the settings.
+    TextTypeId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Element id of text associated with the settings.
 
 
 
@@ -124,5 +143,3 @@ Get: TextTypeId(self: AnalysisDisplayMarkersAndTextSettings) -> ElementId
 Set: TextTypeId(self: AnalysisDisplayMarkersAndTextSettings)=value
 
 """
-
-

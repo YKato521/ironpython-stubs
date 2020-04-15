@@ -1,13 +1,14 @@
 class LicFileLicenseProvider(LicenseProvider):
- """
+    """
  Provides an implementation of a System.ComponentModel.LicenseProvider. The provider works in a similar fashion to the Microsoft .NET Framework standard licensing model.
 
  
 
  LicFileLicenseProvider()
  """
- def GetKey(self,*args):
-  """
+
+    def GetKey(self, *args):
+        """
   GetKey(self: LicFileLicenseProvider,type: Type) -> str
 
   
@@ -20,9 +21,10 @@ class LicFileLicenseProvider(LicenseProvider):
 
    Returns: A confirmation that the type parameter is licensed.
   """
-  pass
- def GetLicense(self,context,type,instance,allowExceptions):
-  """
+        pass
+
+    def GetLicense(self, context, type, instance, allowExceptions):
+        """
   GetLicense(self: LicFileLicenseProvider,context: LicenseContext,type: Type,instance: object,allowExceptions: bool) -> License
 
   
@@ -47,9 +49,10 @@ class LicFileLicenseProvider(LicenseProvider):
 
     System.ComponentModel.License or a valid context parameter,it returns null.
   """
-  pass
- def IsKeyValid(self,*args):
-  """
+        pass
+
+    def IsKeyValid(self, *args):
+        """
   IsKeyValid(self: LicFileLicenseProvider,key: str,type: Type) -> bool
 
   
@@ -72,4 +75,4 @@ class LicFileLicenseProvider(LicenseProvider):
 
     otherwise,false.
   """
-  pass
+        pass

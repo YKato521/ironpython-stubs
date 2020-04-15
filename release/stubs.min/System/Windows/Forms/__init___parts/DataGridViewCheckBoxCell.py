@@ -1,5 +1,7 @@
-class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGridViewEditingCell):
- """
+class DataGridViewCheckBoxCell(
+    DataGridViewCell, ICloneable, IDisposable, IDataGridViewEditingCell
+):
+    """
  Displays a check box user interface (UI) to use in a System.Windows.Forms.DataGridView control.
 
  
@@ -8,8 +10,9 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
  DataGridViewCheckBoxCell(threeState: bool)
  """
- def BorderWidths(self,*args):
-  """
+
+    def BorderWidths(self, *args):
+        """
   BorderWidths(self: DataGridViewCell,advancedBorderStyle: DataGridViewAdvancedBorderStyle) -> Rectangle
 
   
@@ -22,9 +25,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    Returns: A System.Drawing.Rectangle that represents the widths of all the cell margins.
   """
-  pass
- def ClickUnsharesRow(self,*args):
-  """
+        pass
+
+    def ClickUnsharesRow(self, *args):
+        """
   ClickUnsharesRow(self: DataGridViewCell,e: DataGridViewCellEventArgs) -> bool
 
   
@@ -45,9 +49,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: DataGridViewCheckBoxCell) -> object
 
   
@@ -56,9 +61,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    Returns: An System.Object that represents the cloned System.Windows.Forms.DataGridViewCheckBoxCell.
   """
-  pass
- def ContentClickUnsharesRow(self,*args):
-  """
+        pass
+
+    def ContentClickUnsharesRow(self, *args):
+        """
   ContentClickUnsharesRow(self: DataGridViewCheckBoxCell,e: DataGridViewCellEventArgs) -> bool
 
   
@@ -71,9 +77,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    Returns: true if the cell is in edit mode; otherwise,false.
   """
-  pass
- def ContentDoubleClickUnsharesRow(self,*args):
-  """
+        pass
+
+    def ContentDoubleClickUnsharesRow(self, *args):
+        """
   ContentDoubleClickUnsharesRow(self: DataGridViewCheckBoxCell,e: DataGridViewCellEventArgs) -> bool
 
   
@@ -90,9 +97,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    Returns: true if the cell is in edit mode; otherwise,false.
   """
-  pass
- def CreateAccessibilityInstance(self,*args):
-  """
+        pass
+
+    def CreateAccessibilityInstance(self, *args):
+        """
   CreateAccessibilityInstance(self: DataGridViewCheckBoxCell) -> AccessibleObject
 
   
@@ -103,9 +111,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
     the System.Windows.Forms.DataGridViewCheckBoxCell.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: DataGridViewCell,disposing: bool)
 
    Releases the unmanaged resources used by the System.Windows.Forms.DataGridViewCell and 
@@ -118,9 +127,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def DoubleClickUnsharesRow(self,*args):
-  """
+        pass
+
+    def DoubleClickUnsharesRow(self, *args):
+        """
   DoubleClickUnsharesRow(self: DataGridViewCell,e: DataGridViewCellEventArgs) -> bool
 
   
@@ -141,9 +151,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def EnterUnsharesRow(self,*args):
-  """
+        pass
+
+    def EnterUnsharesRow(self, *args):
+        """
   EnterUnsharesRow(self: DataGridViewCell,rowIndex: int,throughMouseClick: bool) -> bool
 
   
@@ -164,9 +175,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def GetClipboardContent(self,*args):
-  """
+        pass
+
+    def GetClipboardContent(self, *args):
+        """
   GetClipboardContent(self: DataGridViewCell,rowIndex: int,firstCell: bool,lastCell: bool,inFirstRow: bool,inLastRow: bool,format: str) -> object
 
   
@@ -207,9 +219,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
     System.Windows.Forms.Clipboard.
   """
-  pass
- def GetContentBounds(self,rowIndex):
-  """
+        pass
+
+    def GetContentBounds(self, rowIndex):
+        """
   GetContentBounds(self: DataGridViewCheckBoxCell,graphics: Graphics,cellStyle: DataGridViewCellStyle,rowIndex: int) -> Rectangle
 
   
@@ -222,9 +235,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    Returns: The System.Drawing.Rectangle that bounds the cell's contents.
   """
-  pass
- def GetEditingCellFormattedValue(self,context):
-  """
+        pass
+
+    def GetEditingCellFormattedValue(self, context):
+        """
   GetEditingCellFormattedValue(self: DataGridViewCheckBoxCell,context: DataGridViewDataErrorContexts) -> object
 
   
@@ -241,9 +255,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    Returns: An System.Object representing the formatted value of the editing cell.
   """
-  pass
- def GetErrorIconBounds(self,*args):
-  """
+        pass
+
+    def GetErrorIconBounds(self, *args):
+        """
   GetErrorIconBounds(self: DataGridViewCheckBoxCell,graphics: Graphics,cellStyle: DataGridViewCellStyle,rowIndex: int) -> Rectangle
 
   
@@ -258,9 +273,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
     System.Drawing.Rectangle.Empty.
   """
-  pass
- def GetErrorText(self,*args):
-  """
+        pass
+
+    def GetErrorText(self, *args):
+        """
   GetErrorText(self: DataGridViewCell,rowIndex: int) -> str
 
   
@@ -273,9 +289,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    Returns: A string that describes the error for the current System.Windows.Forms.DataGridViewCell.
   """
-  pass
- def GetFormattedValue(self,*args):
-  """
+        pass
+
+    def GetFormattedValue(self, *args):
+        """
   GetFormattedValue(self: DataGridViewCheckBoxCell,value: object,rowIndex: int,cellStyle: DataGridViewCellStyle,valueTypeConverter: TypeConverter,formattedValueTypeConverter: TypeConverter,context: DataGridViewDataErrorContexts) -> (object,DataGridViewCellStyle)
 
   
@@ -312,9 +329,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
     of a System.Windows.Forms.DataGridView control.
   """
-  pass
- def GetPreferredSize(self,*args):
-  """
+        pass
+
+    def GetPreferredSize(self, *args):
+        """
   GetPreferredSize(self: DataGridViewCheckBoxCell,graphics: Graphics,cellStyle: DataGridViewCellStyle,rowIndex: int,constraintSize: Size) -> Size
 
   
@@ -329,9 +347,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    Returns: A System.Drawing.Size that represents the preferred size,in pixels,of the cell.
   """
-  pass
- def GetSize(self,*args):
-  """
+        pass
+
+    def GetSize(self, *args):
+        """
   GetSize(self: DataGridViewCell,rowIndex: int) -> Size
 
   
@@ -344,9 +363,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    Returns: A System.Drawing.Size representing the cell's dimensions.
   """
-  pass
- def GetValue(self,*args):
-  """
+        pass
+
+    def GetValue(self, *args):
+        """
   GetValue(self: DataGridViewCell,rowIndex: int) -> object
 
   
@@ -359,9 +379,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    Returns: The value contained in the System.Windows.Forms.DataGridViewCell.
   """
-  pass
- def KeyDownUnsharesRow(self,*args):
-  """
+        pass
+
+    def KeyDownUnsharesRow(self, *args):
+        """
   KeyDownUnsharesRow(self: DataGridViewCheckBoxCell,e: KeyEventArgs,rowIndex: int) -> bool
 
   
@@ -382,9 +403,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
     otherwise,false.
   """
-  pass
- def KeyPressUnsharesRow(self,*args):
-  """
+        pass
+
+    def KeyPressUnsharesRow(self, *args):
+        """
   KeyPressUnsharesRow(self: DataGridViewCell,e: KeyPressEventArgs,rowIndex: int) -> bool
 
   
@@ -401,9 +423,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def KeyUpUnsharesRow(self,*args):
-  """
+        pass
+
+    def KeyUpUnsharesRow(self, *args):
+        """
   KeyUpUnsharesRow(self: DataGridViewCheckBoxCell,e: KeyEventArgs,rowIndex: int) -> bool
 
   
@@ -422,9 +445,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    Returns: true if the SPACE key is released; otherwise,false.
   """
-  pass
- def LeaveUnsharesRow(self,*args):
-  """
+        pass
+
+    def LeaveUnsharesRow(self, *args):
+        """
   LeaveUnsharesRow(self: DataGridViewCell,rowIndex: int,throughMouseClick: bool) -> bool
 
   
@@ -445,9 +469,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def MouseClickUnsharesRow(self,*args):
-  """
+        pass
+
+    def MouseClickUnsharesRow(self, *args):
+        """
   MouseClickUnsharesRow(self: DataGridViewCell,e: DataGridViewCellMouseEventArgs) -> bool
 
   
@@ -466,9 +491,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def MouseDoubleClickUnsharesRow(self,*args):
-  """
+        pass
+
+    def MouseDoubleClickUnsharesRow(self, *args):
+        """
   MouseDoubleClickUnsharesRow(self: DataGridViewCell,e: DataGridViewCellMouseEventArgs) -> bool
 
   
@@ -483,9 +509,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def MouseDownUnsharesRow(self,*args):
-  """
+        pass
+
+    def MouseDownUnsharesRow(self, *args):
+        """
   MouseDownUnsharesRow(self: DataGridViewCheckBoxCell,e: DataGridViewCellMouseEventArgs) -> bool
 
   
@@ -502,9 +529,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    Returns: Always true.
   """
-  pass
- def MouseEnterUnsharesRow(self,*args):
-  """
+        pass
+
+    def MouseEnterUnsharesRow(self, *args):
+        """
   MouseEnterUnsharesRow(self: DataGridViewCheckBoxCell,rowIndex: int) -> bool
 
   
@@ -521,9 +549,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    Returns: true if the cell was the last cell receiving a mouse click; otherwise,false.
   """
-  pass
- def MouseLeaveUnsharesRow(self,*args):
-  """
+        pass
+
+    def MouseLeaveUnsharesRow(self, *args):
+        """
   MouseLeaveUnsharesRow(self: DataGridViewCheckBoxCell,rowIndex: int) -> bool
 
   
@@ -540,9 +569,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    Returns: true if the button is not in the normal state; false if the button is in the pressed state.
   """
-  pass
- def MouseMoveUnsharesRow(self,*args):
-  """
+        pass
+
+    def MouseMoveUnsharesRow(self, *args):
+        """
   MouseMoveUnsharesRow(self: DataGridViewCell,e: DataGridViewCellMouseEventArgs) -> bool
 
   
@@ -557,9 +587,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def MouseUpUnsharesRow(self,*args):
-  """
+        pass
+
+    def MouseUpUnsharesRow(self, *args):
+        """
   MouseUpUnsharesRow(self: DataGridViewCheckBoxCell,e: DataGridViewCellMouseEventArgs) -> bool
 
   
@@ -576,9 +607,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    Returns: Always true.
   """
-  pass
- def OnClick(self,*args):
-  """
+        pass
+
+    def OnClick(self, *args):
+        """
   OnClick(self: DataGridViewCell,e: DataGridViewCellEventArgs)
 
    Called when the cell is clicked.
@@ -587,32 +619,36 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnContentClick(self,*args):
-  """
+        pass
+
+    def OnContentClick(self, *args):
+        """
   OnContentClick(self: DataGridViewCheckBoxCell,e: DataGridViewCellEventArgs)
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnContentDoubleClick(self,*args):
-  """
+        pass
+
+    def OnContentDoubleClick(self, *args):
+        """
   OnContentDoubleClick(self: DataGridViewCheckBoxCell,e: DataGridViewCellEventArgs)
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnDataGridViewChanged(self,*args):
-  """
+        pass
+
+    def OnDataGridViewChanged(self, *args):
+        """
   OnDataGridViewChanged(self: DataGridViewCell)
 
    Called when the System.Windows.Forms.DataGridViewElement.DataGridView property of the cell 
 
     changes.
   """
-  pass
- def OnDoubleClick(self,*args):
-  """
+        pass
+
+    def OnDoubleClick(self, *args):
+        """
   OnDoubleClick(self: DataGridViewCell,e: DataGridViewCellEventArgs)
 
    Called when the cell is double-clicked.
@@ -621,9 +657,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnEnter(self,*args):
-  """
+        pass
+
+    def OnEnter(self, *args):
+        """
   OnEnter(self: DataGridViewCell,rowIndex: int,throughMouseClick: bool)
 
    Called when the focus moves to a cell.
@@ -636,9 +673,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
     the cell.
   """
-  pass
- def OnKeyDown(self,*args):
-  """
+        pass
+
+    def OnKeyDown(self, *args):
+        """
   OnKeyDown(self: DataGridViewCheckBoxCell,e: KeyEventArgs,rowIndex: int)
 
    Called when a character key is pressed while the focus is on a cell.
@@ -649,9 +687,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    rowIndex: The row index of the current cell,or -1 if the cell is not owned by a row.
   """
-  pass
- def OnKeyPress(self,*args):
-  """
+        pass
+
+    def OnKeyPress(self, *args):
+        """
   OnKeyPress(self: DataGridViewCell,e: KeyPressEventArgs,rowIndex: int)
 
    Called when a key is pressed while the focus is on a cell.
@@ -662,9 +701,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    rowIndex: The index of the cell's parent row.
   """
-  pass
- def OnKeyUp(self,*args):
-  """
+        pass
+
+    def OnKeyUp(self, *args):
+        """
   OnKeyUp(self: DataGridViewCheckBoxCell,e: KeyEventArgs,rowIndex: int)
 
    Called when a character key is released while the focus is on a cell.
@@ -675,9 +715,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    rowIndex: The row index of the current cell,or -1 if the cell is not owned by a row.
   """
-  pass
- def OnLeave(self,*args):
-  """
+        pass
+
+    def OnLeave(self, *args):
+        """
   OnLeave(self: DataGridViewCheckBoxCell,rowIndex: int,throughMouseClick: bool)
 
    Called when the focus moves from a cell.
@@ -690,9 +731,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
     change; otherwise,false.
   """
-  pass
- def OnMouseClick(self,*args):
-  """
+        pass
+
+    def OnMouseClick(self, *args):
+        """
   OnMouseClick(self: DataGridViewCell,e: DataGridViewCellMouseEventArgs)
 
    Called when the user clicks a mouse button while the pointer is on a cell.
@@ -701,9 +743,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    e: A System.Windows.Forms.DataGridViewCellMouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseDoubleClick(self,*args):
-  """
+        pass
+
+    def OnMouseDoubleClick(self, *args):
+        """
   OnMouseDoubleClick(self: DataGridViewCell,e: DataGridViewCellMouseEventArgs)
 
    Called when the user double-clicks a mouse button while the pointer is on a cell.
@@ -712,9 +755,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    e: A System.Windows.Forms.DataGridViewCellMouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseDown(self,*args):
-  """
+        pass
+
+    def OnMouseDown(self, *args):
+        """
   OnMouseDown(self: DataGridViewCheckBoxCell,e: DataGridViewCellMouseEventArgs)
 
    Called when the mouse button is held down while the pointer is on a cell.
@@ -723,9 +767,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    e: A System.Windows.Forms.DataGridViewCellMouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseEnter(self,*args):
-  """
+        pass
+
+    def OnMouseEnter(self, *args):
+        """
   OnMouseEnter(self: DataGridViewCell,rowIndex: int)
 
    Called when the mouse pointer moves over a cell.
@@ -734,9 +779,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    rowIndex: The index of the cell's parent row.
   """
-  pass
- def OnMouseLeave(self,*args):
-  """
+        pass
+
+    def OnMouseLeave(self, *args):
+        """
   OnMouseLeave(self: DataGridViewCheckBoxCell,rowIndex: int)
 
    Called when the mouse pointer moves from a cell.
@@ -745,9 +791,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    rowIndex: The row index of the current cell or -1 if the cell is not owned by a row.
   """
-  pass
- def OnMouseMove(self,*args):
-  """
+        pass
+
+    def OnMouseMove(self, *args):
+        """
   OnMouseMove(self: DataGridViewCheckBoxCell,e: DataGridViewCellMouseEventArgs)
 
    Called when the mouse pointer moves within a cell.
@@ -756,9 +803,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    e: A System.Windows.Forms.DataGridViewCellMouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseUp(self,*args):
-  """
+        pass
+
+    def OnMouseUp(self, *args):
+        """
   OnMouseUp(self: DataGridViewCheckBoxCell,e: DataGridViewCellMouseEventArgs)
 
    Called when the mouse button is released while the pointer is on a cell.
@@ -767,9 +815,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    e: A System.Windows.Forms.DataGridViewCellMouseEventArgs that contains the event data.
   """
-  pass
- def Paint(self,*args):
-  """
+        pass
+
+    def Paint(self, *args):
+        """
   Paint(self: DataGridViewCheckBoxCell,graphics: Graphics,clipBounds: Rectangle,cellBounds: Rectangle,rowIndex: int,elementState: DataGridViewElementStates,value: object,formattedValue: object,errorText: str,cellStyle: DataGridViewCellStyle,advancedBorderStyle: DataGridViewAdvancedBorderStyle,paintParts: DataGridViewPaintParts)
 
    Paints the current System.Windows.Forms.DataGridViewCheckBoxCell.
@@ -816,9 +865,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
     which parts of the cell need to be painted.
   """
-  pass
- def PaintBorder(self,*args):
-  """
+        pass
+
+    def PaintBorder(self, *args):
+        """
   PaintBorder(self: DataGridViewCell,graphics: Graphics,clipBounds: Rectangle,bounds: Rectangle,cellStyle: DataGridViewCellStyle,advancedBorderStyle: DataGridViewAdvancedBorderStyle)
 
    Paints the border of the current System.Windows.Forms.DataGridViewCell.
@@ -845,9 +895,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
     that is being painted.
   """
-  pass
- def PaintErrorIcon(self,*args):
-  """
+        pass
+
+    def PaintErrorIcon(self, *args):
+        """
   PaintErrorIcon(self: DataGridViewCell,graphics: Graphics,clipBounds: Rectangle,cellValueBounds: Rectangle,errorText: str)
 
    Paints the error icon of the current System.Windows.Forms.DataGridViewCell.
@@ -866,9 +917,12 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    errorText: An error message that is associated with the cell.
   """
-  pass
- def ParseFormattedValue(self,formattedValue,cellStyle,formattedValueTypeConverter,valueTypeConverter):
-  """
+        pass
+
+    def ParseFormattedValue(
+        self, formattedValue, cellStyle, formattedValueTypeConverter, valueTypeConverter
+    ):
+        """
   ParseFormattedValue(self: DataGridViewCheckBoxCell,formattedValue: object,cellStyle: DataGridViewCellStyle,formattedValueTypeConverter: TypeConverter,valueTypeConverter: TypeConverter) -> object
 
   
@@ -895,9 +949,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    Returns: The cell value.
   """
-  pass
- def PrepareEditingCellForEdit(self,selectAll):
-  """
+        pass
+
+    def PrepareEditingCellForEdit(self, selectAll):
+        """
   PrepareEditingCellForEdit(self: DataGridViewCheckBoxCell,selectAll: bool)
 
    This method is not meaningful for this type.
@@ -906,9 +961,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    selectAll: This parameter is ignored.
   """
-  pass
- def RaiseCellClick(self,*args):
-  """
+        pass
+
+    def RaiseCellClick(self, *args):
+        """
   RaiseCellClick(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellClick event.
@@ -917,9 +973,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseCellContentClick(self,*args):
-  """
+        pass
+
+    def RaiseCellContentClick(self, *args):
+        """
   RaiseCellContentClick(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellContentClick event.
@@ -928,9 +985,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseCellContentDoubleClick(self,*args):
-  """
+        pass
+
+    def RaiseCellContentDoubleClick(self, *args):
+        """
   RaiseCellContentDoubleClick(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellContentDoubleClick event.
@@ -939,9 +997,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseCellValueChanged(self,*args):
-  """
+        pass
+
+    def RaiseCellValueChanged(self, *args):
+        """
   RaiseCellValueChanged(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellValueChanged event.
@@ -950,9 +1009,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseDataError(self,*args):
-  """
+        pass
+
+    def RaiseDataError(self, *args):
+        """
   RaiseDataError(self: DataGridViewElement,e: DataGridViewDataErrorEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.DataError event.
@@ -961,9 +1021,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    e: A System.Windows.Forms.DataGridViewDataErrorEventArgs that contains the event data.
   """
-  pass
- def RaiseMouseWheel(self,*args):
-  """
+        pass
+
+    def RaiseMouseWheel(self, *args):
+        """
   RaiseMouseWheel(self: DataGridViewElement,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseWheel event.
@@ -972,9 +1033,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def SetValue(self,*args):
-  """
+        pass
+
+    def SetValue(self, *args):
+        """
   SetValue(self: DataGridViewCell,rowIndex: int,value: object) -> bool
 
   
@@ -989,9 +1051,10 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    Returns: true if the value has been set; otherwise,false.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: DataGridViewCheckBoxCell) -> str
 
   
@@ -1000,38 +1063,46 @@ class DataGridViewCheckBoxCell(DataGridViewCell,ICloneable,IDisposable,IDataGrid
 
    Returns: A System.String that represents the current cell.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,threeState=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, threeState=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,threeState: bool)
   """
-  pass
- def __str__(self,*args):
-  pass
- EditingCellFormattedValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the formatted value of the control hosted by the cell when it is in edit mode.
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    EditingCellFormattedValue = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the formatted value of the control hosted by the cell when it is in edit mode.
 
 
 
@@ -1043,8 +1114,10 @@ Set: EditingCellFormattedValue(self: DataGridViewCheckBoxCell)=value
 
 """
 
- EditingCellValueChanged=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a flag indicating that the value has been changed for this cell.
+    EditingCellValueChanged = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a flag indicating that the value has been changed for this cell.
 
 
 
@@ -1056,8 +1129,8 @@ Set: EditingCellValueChanged(self: DataGridViewCheckBoxCell)=value
 
 """
 
- EditType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the type of the cell's hosted editing control.
+    EditType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the type of the cell's hosted editing control.
 
 
 
@@ -1067,8 +1140,10 @@ Get: EditType(self: DataGridViewCheckBoxCell) -> Type
 
 """
 
- FalseValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the underlying value corresponding to a cell value of false.
+    FalseValue = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the underlying value corresponding to a cell value of false.
 
 
 
@@ -1080,8 +1155,8 @@ Set: FalseValue(self: DataGridViewCheckBoxCell)=value
 
 """
 
- FlatStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the flat style appearance of the check box user interface (UI).
+    FlatStyle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the flat style appearance of the check box user interface (UI).
 
 
 
@@ -1093,8 +1168,10 @@ Set: FlatStyle(self: DataGridViewCheckBoxCell)=value
 
 """
 
- FormattedValueType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the type of the cell display value.
+    FormattedValueType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the type of the cell display value.
 
 
 
@@ -1104,8 +1181,10 @@ Get: FormattedValueType(self: DataGridViewCheckBoxCell) -> Type
 
 """
 
- IndeterminateValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the underlying value corresponding to an indeterminate or null cell value.
+    IndeterminateValue = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the underlying value corresponding to an indeterminate or null cell value.
 
 
 
@@ -1117,8 +1196,10 @@ Set: IndeterminateValue(self: DataGridViewCheckBoxCell)=value
 
 """
 
- ThreeState=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether ternary mode has been enabled for the hosted check box control.
+    ThreeState = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether ternary mode has been enabled for the hosted check box control.
 
 
 
@@ -1130,8 +1211,8 @@ Set: ThreeState(self: DataGridViewCheckBoxCell)=value
 
 """
 
- TrueValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the underlying value corresponding to a cell value of true.
+    TrueValue = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the underlying value corresponding to a cell value of true.
 
 
 
@@ -1143,8 +1224,8 @@ Set: TrueValue(self: DataGridViewCheckBoxCell)=value
 
 """
 
- ValueType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the data type of the values in the cell.
+    ValueType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the data type of the values in the cell.
 
 
 
@@ -1156,6 +1237,4 @@ Set: ValueType(self: DataGridViewCheckBoxCell)=value
 
 """
 
-
- DataGridViewCheckBoxCellAccessibleObject=None
-
+    DataGridViewCheckBoxCellAccessibleObject = None

@@ -1,8 +1,9 @@
 class JoinGeometryUtils(object):
- """ Utilities for joining and unjoining elements,and for managing the order in which elements are joined. """
- @staticmethod
- def AreElementsJoined(document,firstElement,secondElement):
-  """
+    """ Utilities for joining and unjoining elements,and for managing the order in which elements are joined. """
+
+    @staticmethod
+    def AreElementsJoined(document, firstElement, secondElement):
+        """
   AreElementsJoined(document: Document,firstElement: Element,secondElement: Element) -> bool
 
   
@@ -19,10 +20,11 @@ class JoinGeometryUtils(object):
 
    Returns: True if the two elements are joined.
   """
-  pass
- @staticmethod
- def GetJoinedElements(document,element):
-  """
+        pass
+
+    @staticmethod
+    def GetJoinedElements(document, element):
+        """
   GetJoinedElements(document: Document,element: Element) -> ICollection[ElementId]
 
   
@@ -37,10 +39,11 @@ class JoinGeometryUtils(object):
 
    Returns: The set of elements that are joined to the given element.
   """
-  pass
- @staticmethod
- def IsCuttingElementInJoin(document,firstElement,secondElement):
-  """
+        pass
+
+    @staticmethod
+    def IsCuttingElementInJoin(document, firstElement, secondElement):
+        """
   IsCuttingElementInJoin(document: Document,firstElement: Element,secondElement: Element) -> bool
 
   
@@ -63,10 +66,11 @@ class JoinGeometryUtils(object):
 
     secondElement is cut by the firstElement.
   """
-  pass
- @staticmethod
- def JoinGeometry(document,firstElement,secondElement):
-  """
+        pass
+
+    @staticmethod
+    def JoinGeometry(document, firstElement, secondElement):
+        """
   JoinGeometry(document: Document,firstElement: Element,secondElement: Element)
 
    Creates clean joins between two elements that share a common face.
@@ -81,10 +85,11 @@ class JoinGeometryUtils(object):
 
     element.
   """
-  pass
- @staticmethod
- def SwitchJoinOrder(document,firstElement,secondElement):
-  """
+        pass
+
+    @staticmethod
+    def SwitchJoinOrder(document, firstElement, secondElement):
+        """
   SwitchJoinOrder(document: Document,firstElement: Element,secondElement: Element)
 
    Reverses the order in which two elements are joined.
@@ -97,10 +102,11 @@ class JoinGeometryUtils(object):
 
    secondElement: The second element. This element must be joined to the first element.
   """
-  pass
- @staticmethod
- def UnjoinGeometry(document,firstElement,secondElement):
-  """
+        pass
+
+    @staticmethod
+    def UnjoinGeometry(document, firstElement, secondElement):
+        """
   UnjoinGeometry(document: Document,firstElement: Element,secondElement: Element)
 
    Removes a join between two elements.
@@ -115,13 +121,13 @@ class JoinGeometryUtils(object):
 
     element.
   """
-  pass
- __all__=[
-  'AreElementsJoined',
-  'GetJoinedElements',
-  'IsCuttingElementInJoin',
-  'JoinGeometry',
-  'SwitchJoinOrder',
-  'UnjoinGeometry',
- ]
+        pass
 
+    __all__ = [
+        "AreElementsJoined",
+        "GetJoinedElements",
+        "IsCuttingElementInJoin",
+        "JoinGeometry",
+        "SwitchJoinOrder",
+        "UnjoinGeometry",
+    ]

@@ -1,5 +1,5 @@
-class StringWriter(TextWriter,IDisposable):
- """
+class StringWriter(TextWriter, IDisposable):
+    """
  Implements a System.IO.TextWriter for writing information to a string. The information is stored in an underlying System.Text.StringBuilder.
 
  
@@ -12,15 +12,17 @@ class StringWriter(TextWriter,IDisposable):
 
  StringWriter(sb: StringBuilder,formatProvider: IFormatProvider)
  """
- def Close(self):
-  """
+
+    def Close(self):
+        """
   Close(self: StringWriter)
 
    Closes the current System.IO.StringWriter and the underlying stream.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: StringWriter,disposing: bool)
 
    Releases the unmanaged resources used by the System.IO.StringWriter and optionally releases the 
@@ -33,12 +35,14 @@ class StringWriter(TextWriter,IDisposable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def FlushAsync(self):
-  """ FlushAsync(self: StringWriter) -> Task """
-  pass
- def GetStringBuilder(self):
-  """
+        pass
+
+    def FlushAsync(self):
+        """ FlushAsync(self: StringWriter) -> Task """
+        pass
+
+    def GetStringBuilder(self):
+        """
   GetStringBuilder(self: StringWriter) -> StringBuilder
 
   
@@ -47,9 +51,10 @@ class StringWriter(TextWriter,IDisposable):
 
    Returns: The underlying StringBuilder.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -80,9 +85,10 @@ class StringWriter(TextWriter,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: StringWriter) -> str
 
   
@@ -91,9 +97,10 @@ class StringWriter(TextWriter,IDisposable):
 
    Returns: The string containing the characters written to the current StringWriter.
   """
-  pass
- def Write(self,*__args):
-  """
+        pass
+
+    def Write(self, *__args):
+        """
   Write(self: StringWriter,value: str)
 
    Writes a string to this instance of the StringWriter.
@@ -122,47 +129,53 @@ class StringWriter(TextWriter,IDisposable):
 
    value: The character to write.
   """
-  pass
- def WriteAsync(self,*__args):
-  """
+        pass
+
+    def WriteAsync(self, *__args):
+        """
   WriteAsync(self: StringWriter,buffer: Array[Char],index: int,count: int) -> Task
 
   WriteAsync(self: StringWriter,value: str) -> Task
 
   WriteAsync(self: StringWriter,value: Char) -> Task
   """
-  pass
- def WriteLineAsync(self,*__args):
-  """
+        pass
+
+    def WriteLineAsync(self, *__args):
+        """
   WriteLineAsync(self: StringWriter,buffer: Array[Char],index: int,count: int) -> Task
 
   WriteLineAsync(self: StringWriter,value: str) -> Task
 
   WriteLineAsync(self: StringWriter,value: Char) -> Task
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,formatProvider: IFormatProvider)
@@ -171,13 +184,16 @@ class StringWriter(TextWriter,IDisposable):
 
   __new__(cls: type,sb: StringBuilder,formatProvider: IFormatProvider)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Encoding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Text.Encoding in which the output is written.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Encoding = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the System.Text.Encoding in which the output is written.
 
 
 
@@ -187,6 +203,4 @@ Get: Encoding(self: StringWriter) -> Encoding
 
 """
 
-
- CoreNewLine=None
-
+    CoreNewLine = None

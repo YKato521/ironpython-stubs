@@ -1,5 +1,5 @@
 class UriBuilder(object):
- """
+    """
  Provides a custom constructor for uniform resource identifiers (URIs) and modifies URIs for the System.Uri class.
 
  
@@ -18,8 +18,9 @@ class UriBuilder(object):
 
  UriBuilder(scheme: str,host: str,port: int,path: str,extraValue: str)
  """
- def Equals(self,rparam):
-  """
+
+    def Equals(self, rparam):
+        """
   Equals(self: UriBuilder,rparam: object) -> bool
 
   
@@ -34,9 +35,10 @@ class UriBuilder(object):
 
     System.UriBuilder instance; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: UriBuilder) -> int
 
   
@@ -45,9 +47,10 @@ class UriBuilder(object):
 
    Returns: The hash code generated for the URI.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: UriBuilder) -> str
 
   
@@ -56,13 +59,15 @@ class UriBuilder(object):
 
    Returns: The string that contains the unescaped display string of the System.UriBuilder.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,uri: str)
@@ -77,11 +82,13 @@ class UriBuilder(object):
 
   __new__(cls: type,scheme: str,host: str,port: int,path: str,extraValue: str)
   """
-  pass
- def __ne__(self,*args):
-  pass
- Fragment=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the fragment portion of the URI.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    Fragment = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the fragment portion of the URI.
 
 
 
@@ -93,8 +100,8 @@ Set: Fragment(self: UriBuilder)=value
 
 """
 
- Host=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Domain Name System (DNS) host name or IP address of a server.
+    Host = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Domain Name System (DNS) host name or IP address of a server.
 
 
 
@@ -106,8 +113,8 @@ Set: Host(self: UriBuilder)=value
 
 """
 
- Password=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the password associated with the user that accesses the URI.
+    Password = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the password associated with the user that accesses the URI.
 
 
 
@@ -119,8 +126,8 @@ Set: Password(self: UriBuilder)=value
 
 """
 
- Path=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the path to the resource referenced by the URI.
+    Path = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the path to the resource referenced by the URI.
 
 
 
@@ -132,8 +139,8 @@ Set: Path(self: UriBuilder)=value
 
 """
 
- Port=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the port number of the URI.
+    Port = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the port number of the URI.
 
 
 
@@ -145,8 +152,8 @@ Set: Port(self: UriBuilder)=value
 
 """
 
- Query=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets any query information included in the URI.
+    Query = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets any query information included in the URI.
 
 
 
@@ -158,8 +165,8 @@ Set: Query(self: UriBuilder)=value
 
 """
 
- Scheme=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the scheme name of the URI.
+    Scheme = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the scheme name of the URI.
 
 
 
@@ -171,8 +178,8 @@ Set: Scheme(self: UriBuilder)=value
 
 """
 
- Uri=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Uri instance constructed by the specified System.UriBuilder instance.
+    Uri = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the System.Uri instance constructed by the specified System.UriBuilder instance.
 
 
 
@@ -182,8 +189,8 @@ Get: Uri(self: UriBuilder) -> Uri
 
 """
 
- UserName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The user name associated with the user that accesses the URI.
+    UserName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The user name associated with the user that accesses the URI.
 
 
 
@@ -194,5 +201,3 @@ Get: UserName(self: UriBuilder) -> str
 Set: UserName(self: UriBuilder)=value
 
 """
-
-

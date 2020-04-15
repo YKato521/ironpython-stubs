@@ -1,5 +1,5 @@
 class Unroller(object):
- """
+    """
  Represents the operation of unrolling a single surface.
 
  
@@ -8,8 +8,9 @@ class Unroller(object):
 
  Unroller(brep: Brep)
  """
- def AddFollowingGeometry(self,*__args):
-  """
+
+    def AddFollowingGeometry(self, *__args):
+        """
   AddFollowingGeometry(self: Unroller,dot: TextDot)
 
    Adds a text dot that should be unrolled along with the surface/brep.
@@ -54,9 +55,10 @@ class Unroller(object):
 
   AddFollowingGeometry(self: Unroller,points: IEnumerable[Point3d])
   """
-  pass
- def PerformUnroll(self,unrolledCurves,unrolledPoints,unrolledDots):
-  """
+        pass
+
+    def PerformUnroll(self, unrolledCurves, unrolledPoints, unrolledDots):
+        """
   PerformUnroll(self: Unroller) -> (Array[Brep],Array[Curve],Array[Point3d],Array[TextDot])
 
   
@@ -65,17 +67,21 @@ class Unroller(object):
 
    Returns: An array of breps. This array can be empty.
   """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,surface: Surface)
 
   __new__(cls: type,brep: Brep)
   """
-  pass
- AbsoluteTolerance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the absolute tolerance for the unrolling operation.
+        pass
+
+    AbsoluteTolerance = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the absolute tolerance for the unrolling operation.
 
    Absolute tolerance is used in the evaluation of new entities,
 
@@ -93,8 +99,10 @@ Set: AbsoluteTolerance(self: Unroller)=value
 
 """
 
- ExplodeOutput=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value determining whether geometry should be exploded.
+    ExplodeOutput = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value determining whether geometry should be exploded.
 
 
 
@@ -106,8 +114,10 @@ Set: ExplodeOutput(self: Unroller)=value
 
 """
 
- ExplodeSpacing=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value determining whether spacing should be exploded.
+    ExplodeSpacing = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value determining whether spacing should be exploded.
 
 
 
@@ -119,8 +129,10 @@ Set: ExplodeSpacing(self: Unroller)=value
 
 """
 
- RelativeTolerance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the relative tolerance for the unrolling operation.
+    RelativeTolerance = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the relative tolerance for the unrolling operation.
 
    Relative tolerance is used in the evaluation of intrinsic properties,
 
@@ -143,5 +155,3 @@ Get: RelativeTolerance(self: Unroller) -> float
 Set: RelativeTolerance(self: Unroller)=value
 
 """
-
-

@@ -1,15 +1,17 @@
-class ConnectorElement(Element,IDisposable,IConnector):
- """ A base class that provides support for all connector elements occurring in families. """
- def AssignAsPrimary(self):
-  """
+class ConnectorElement(Element, IDisposable, IConnector):
+    """ A base class that provides support for all connector elements occurring in families. """
+
+    def AssignAsPrimary(self):
+        """
   AssignAsPrimary(self: ConnectorElement)
 
    Assign a connector as a primary connector.
   """
-  pass
- @staticmethod
- def CreateCableTrayConnector(document,planarFace,edge=None):
-  """
+        pass
+
+    @staticmethod
+    def CreateCableTrayConnector(document, planarFace, edge=None):
+        """
   CreateCableTrayConnector(document: Document,planarFace: Reference) -> ConnectorElement
 
   
@@ -44,10 +46,11 @@ class ConnectorElement(Element,IDisposable,IConnector):
 
    Returns: The cable tray ConnectorElement.
   """
-  pass
- @staticmethod
- def CreateConduitConnector(document,planarFace,edge=None):
-  """
+        pass
+
+    @staticmethod
+    def CreateConduitConnector(document, planarFace, edge=None):
+        """
   CreateConduitConnector(document: Document,planarFace: Reference) -> ConnectorElement
 
   
@@ -82,10 +85,13 @@ class ConnectorElement(Element,IDisposable,IConnector):
 
    Returns: The conduit ConnectorElement.
   """
-  pass
- @staticmethod
- def CreateDuctConnector(document,ductSystemType,profileShape,planarFace,edge=None):
-  """
+        pass
+
+    @staticmethod
+    def CreateDuctConnector(
+        document, ductSystemType, profileShape, planarFace, edge=None
+    ):
+        """
   CreateDuctConnector(document: Document,ductSystemType: DuctSystemType,profileShape: ConnectorProfileType,planarFace: Reference) -> ConnectorElement
 
   
@@ -128,10 +134,13 @@ class ConnectorElement(Element,IDisposable,IConnector):
 
    Returns: The duct ConnectorElement.
   """
-  pass
- @staticmethod
- def CreateElectricalConnector(document,electricalSystemType,planarFace,edge=None):
-  """
+        pass
+
+    @staticmethod
+    def CreateElectricalConnector(
+        document, electricalSystemType, planarFace, edge=None
+    ):
+        """
   CreateElectricalConnector(document: Document,electricalSystemType: ElectricalSystemType,planarFace: Reference) -> ConnectorElement
 
   
@@ -170,10 +179,11 @@ class ConnectorElement(Element,IDisposable,IConnector):
 
    Returns: The electrical ConnectorElement.
   """
-  pass
- @staticmethod
- def CreatePipeConnector(document,pipeSystemType,planarFace,edge=None):
-  """
+        pass
+
+    @staticmethod
+    def CreatePipeConnector(document, pipeSystemType, planarFace, edge=None):
+        """
   CreatePipeConnector(document: Document,pipeSystemType: PipeSystemType,planarFace: Reference) -> ConnectorElement
 
   
@@ -212,22 +222,26 @@ class ConnectorElement(Element,IDisposable,IConnector):
 
    Returns: The pipe ConnectorElement.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def FlipDirection(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def FlipDirection(self):
+        """
   FlipDirection(self: ConnectorElement)
 
    Reverses the direction of the connector element.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetLinkedConnectorElement(self):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetLinkedConnectorElement(self):
+        """
   GetLinkedConnectorElement(self: ConnectorElement) -> ConnectorElement
 
   
@@ -236,9 +250,10 @@ class ConnectorElement(Element,IDisposable,IConnector):
 
    Returns: The linked connector element.  If ll,the connector has no link.
   """
-  pass
- def IsSystemClassificationValid(self,systemClassification):
-  """
+        pass
+
+    def IsSystemClassificationValid(self, systemClassification):
+        """
   IsSystemClassificationValid(self: ConnectorElement,systemClassification: MEPSystemClassification) -> bool
 
   
@@ -253,15 +268,18 @@ class ConnectorElement(Element,IDisposable,IConnector):
 
     otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetLinkedConnectorElement(self,otherConnector):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetLinkedConnectorElement(self, otherConnector):
+        """
   SetLinkedConnectorElement(self: ConnectorElement,otherConnector: ConnectorElement)
 
    Set the linked connector element.
@@ -270,18 +288,24 @@ class ConnectorElement(Element,IDisposable,IConnector):
 
    otherConnector: The connector to link to.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- CoordinateSystem=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The coordinate system of the connector.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    CoordinateSystem = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The coordinate system of the connector.
 
 
 
@@ -291,8 +315,8 @@ Get: CoordinateSystem(self: ConnectorElement) -> Transform
 
 """
 
- Direction=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the direction of the connector element.
+    Direction = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the direction of the connector element.
 
 
 
@@ -302,8 +326,8 @@ Get: Direction(self: ConnectorElement) -> XYZ
 
 """
 
- Domain=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The domain of the connector.
+    Domain = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The domain of the connector.
 
 
 
@@ -313,8 +337,8 @@ Get: Domain(self: ConnectorElement) -> Domain
 
 """
 
- Height=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The height of the connector.
+    Height = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The height of the connector.
 
 
 
@@ -324,8 +348,8 @@ Get: Height(self: ConnectorElement) -> float
 
 """
 
- IsPrimary=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies if this is the primary connector in the family.
+    IsPrimary = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Identifies if this is the primary connector in the family.
 
 
 
@@ -335,8 +359,8 @@ Get: IsPrimary(self: ConnectorElement) -> bool
 
 """
 
- Origin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The location of the connector in family document.
+    Origin = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The location of the connector in family document.
 
 
 
@@ -346,8 +370,8 @@ Get: Origin(self: ConnectorElement) -> XYZ
 
 """
 
- Radius=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The radius of the connector.
+    Radius = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The radius of the connector.
 
 
 
@@ -357,8 +381,8 @@ Get: Radius(self: ConnectorElement) -> float
 
 """
 
- Shape=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The shape of the connector.
+    Shape = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The shape of the connector.
 
 
 
@@ -368,8 +392,10 @@ Get: Shape(self: ConnectorElement) -> ConnectorProfileType
 
 """
 
- SystemClassification=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The system classification of the connector.
+    SystemClassification = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The system classification of the connector.
 
 
 
@@ -381,8 +407,8 @@ Set: SystemClassification(self: ConnectorElement)=value
 
 """
 
- Width=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The width of the connector.
+    Width = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The width of the connector.
 
 
 
@@ -391,5 +417,3 @@ Get: Width(self: ConnectorElement) -> float
 
 
 """
-
-

@@ -1,13 +1,14 @@
 class TableLayoutPanelCellPosition(object):
- """
+    """
  Represents a cell in a System.Windows.Forms.TableLayoutPanel.
 
  
 
  TableLayoutPanelCellPosition(column: int,row: int)
  """
- def Equals(self,other):
-  """
+
+    def Equals(self, other):
+        """
   Equals(self: TableLayoutPanelCellPosition,other: object) -> bool
 
   
@@ -26,9 +27,10 @@ class TableLayoutPanelCellPosition(object):
 
     column as the specified System.Windows.Forms.TableLayoutPanelCellPosition; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: TableLayoutPanelCellPosition) -> int
 
   
@@ -39,9 +41,10 @@ class TableLayoutPanelCellPosition(object):
 
     System.Windows.Forms.TableLayoutPanelCellPosition.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: TableLayoutPanelCellPosition) -> str
 
   
@@ -50,22 +53,26 @@ class TableLayoutPanelCellPosition(object):
 
    Returns: A string that represents this System.Windows.Forms.TableLayoutPanelCellPosition.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- @staticmethod
- def __new__(self,column,row):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    @staticmethod
+    def __new__(self, column, row):
+        """
   __new__(cls: type,column: int,row: int)
 
   __new__[TableLayoutPanelCellPosition]() -> TableLayoutPanelCellPosition
   """
-  pass
- def __ne__(self,*args):
-  pass
- Column=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the column number of the current System.Windows.Forms.TableLayoutPanelCellPosition.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    Column = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the column number of the current System.Windows.Forms.TableLayoutPanelCellPosition.
 
 
 
@@ -77,8 +84,8 @@ Set: Column(self: TableLayoutPanelCellPosition)=value
 
 """
 
- Row=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the row number of the current System.Windows.Forms.TableLayoutPanelCellPosition.
+    Row = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the row number of the current System.Windows.Forms.TableLayoutPanelCellPosition.
 
 
 
@@ -89,5 +96,3 @@ Get: Row(self: TableLayoutPanelCellPosition) -> int
 Set: Row(self: TableLayoutPanelCellPosition)=value
 
 """
-
-

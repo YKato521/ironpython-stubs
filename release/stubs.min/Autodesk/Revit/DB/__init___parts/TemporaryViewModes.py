@@ -1,14 +1,16 @@
-class TemporaryViewModes(APIObject,IDisposable):
- """ A data structure containing data related to temporary view modes. """
- def DeactivateAllModes(self):
-  """
+class TemporaryViewModes(APIObject, IDisposable):
+    """ A data structure containing data related to temporary view modes. """
+
+    def DeactivateAllModes(self):
+        """
   DeactivateAllModes(self: TemporaryViewModes)
 
    Deactivates all temporary modes that are currently active.
   """
-  pass
- def DeactivateMode(self,mode):
-  """
+        pass
+
+    def DeactivateMode(self, mode):
+        """
   DeactivateMode(self: TemporaryViewModes,mode: TemporaryViewMode)
 
    Deactivates the given temporary mode.
@@ -17,12 +19,14 @@ class TemporaryViewModes(APIObject,IDisposable):
 
    mode: The mode to deactivate
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: TemporaryViewModes,A_0: bool) """
-  pass
- def GetCaption(self,mode):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: TemporaryViewModes,A_0: bool) """
+        pass
+
+    def GetCaption(self, mode):
+        """
   GetCaption(self: TemporaryViewModes,mode: TemporaryViewMode) -> str
 
   
@@ -35,9 +39,10 @@ class TemporaryViewModes(APIObject,IDisposable):
 
    Returns: Text of the caption. The text is localized.
   """
-  pass
- def IsModeActive(self,mode):
-  """
+        pass
+
+    def IsModeActive(self, mode):
+        """
   IsModeActive(self: TemporaryViewModes,mode: TemporaryViewMode) -> bool
 
   
@@ -48,9 +53,10 @@ class TemporaryViewModes(APIObject,IDisposable):
 
    mode: The mode being tested
   """
-  pass
- def IsModeAvailable(self,mode):
-  """
+        pass
+
+    def IsModeAvailable(self, mode):
+        """
   IsModeAvailable(self: TemporaryViewModes,mode: TemporaryViewMode) -> bool
 
   
@@ -67,9 +73,10 @@ class TemporaryViewModes(APIObject,IDisposable):
 
    Returns: True of the temporary mode is currently available in the associated view.
   """
-  pass
- def IsModeEnabled(self,mode):
-  """
+        pass
+
+    def IsModeEnabled(self, mode):
+        """
   IsModeEnabled(self: TemporaryViewModes,mode: TemporaryViewMode) -> bool
 
   
@@ -84,9 +91,10 @@ class TemporaryViewModes(APIObject,IDisposable):
 
     False otherwise.
   """
-  pass
- def IsValidState(self,state):
-  """
+        pass
+
+    def IsValidState(self, state):
+        """
   IsValidState(self: TemporaryViewModes,state: PreviewFamilyVisibilityMode) -> bool
 
   
@@ -103,24 +111,32 @@ class TemporaryViewModes(APIObject,IDisposable):
 
    Returns: Returns True if the state is applicable for the view; False otherwise.
   """
-  pass
- def ReleaseManagedResources(self,*args):
-  """ ReleaseManagedResources(self: APIObject) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: TemporaryViewModes,disposing: bool)ReleaseUnmanagedResources(self: APIObject) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def ReleaseManagedResources(self, *args):
+        """ ReleaseManagedResources(self: APIObject) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: TemporaryViewModes,disposing: bool)ReleaseUnmanagedResources(self: APIObject) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -130,8 +146,10 @@ Get: IsValidObject(self: TemporaryViewModes) -> bool
 
 """
 
- PreviewFamilyVisibility=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The current state of the PreviewFamilyVisibility mode in the associated view.
+    PreviewFamilyVisibility = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The current state of the PreviewFamilyVisibility mode in the associated view.
 
 
 
@@ -143,8 +161,10 @@ Set: PreviewFamilyVisibility(self: TemporaryViewModes)=value
 
 """
 
- RevealConstraints=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The current state of the RevealConstraints mode in the associated view.
+    RevealConstraints = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The current state of the RevealConstraints mode in the associated view.
 
 
 
@@ -156,8 +176,10 @@ Set: RevealConstraints(self: TemporaryViewModes)=value
 
 """
 
- RevealHiddenElements=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The current state of the RevealHiddenElements mode in the associated view.
+    RevealHiddenElements = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The current state of the RevealHiddenElements mode in the associated view.
 
 
 
@@ -169,8 +191,10 @@ Set: RevealHiddenElements(self: TemporaryViewModes)=value
 
 """
 
- WorksharingDisplay=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The current state of the WorksharingDisplay mode in the associated view.
+    WorksharingDisplay = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The current state of the WorksharingDisplay mode in the associated view.
 
 
 
@@ -182,7 +206,5 @@ Set: WorksharingDisplay(self: TemporaryViewModes)=value
 
 """
 
-
- PreviewFamilyVisibilityDefaultOnState=False
- PreviewFamilyVisibilityDefaultUncutState=False
-
+    PreviewFamilyVisibilityDefaultOnState = False
+    PreviewFamilyVisibilityDefaultUncutState = False

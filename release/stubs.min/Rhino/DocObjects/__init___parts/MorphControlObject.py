@@ -1,2 +1,2 @@
 class MorphControlObject(RhinoObject):
- """ Represents a Rhino.Geometry.MorphControlMorphControl in a document. """
+    """ Represents a Rhino.Geometry.MorphControlMorphControl in a document. """

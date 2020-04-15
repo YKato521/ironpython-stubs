@@ -1,5 +1,7 @@
-class PointCloud(GeometryBase,IDisposable,ISerializable,IEnumerable[PointCloudItem],IEnumerable):
- """
+class PointCloud(
+    GeometryBase, IDisposable, ISerializable, IEnumerable[PointCloudItem], IEnumerable
+):
+    """
  Represents a collection of coordinates with optional normal vectors and colors.
 
  
@@ -10,8 +12,9 @@ class PointCloud(GeometryBase,IDisposable,ISerializable,IEnumerable[PointCloudIt
 
  PointCloud(points: IEnumerable[Point3d])
  """
- def Add(self,point,*__args):
-  """
+
+    def Add(self, point, *__args):
+        """
   Add(self: PointCloud,point: Point3d,color: Color)
 
    Append a new point to the end of the list.
@@ -52,12 +55,14 @@ class PointCloud(GeometryBase,IDisposable,ISerializable,IEnumerable[PointCloudIt
 
    normal: Normal vector of new point.
   """
-  pass
- def AddRange(self,points):
-  """ AddRange(self: PointCloud,points: IEnumerable[Point3d]) """
-  pass
- def AppendNew(self):
-  """
+        pass
+
+    def AddRange(self, points):
+        """ AddRange(self: PointCloud,points: IEnumerable[Point3d]) """
+        pass
+
+    def AppendNew(self):
+        """
   AppendNew(self: PointCloud) -> PointCloudItem
 
   
@@ -66,30 +71,34 @@ class PointCloud(GeometryBase,IDisposable,ISerializable,IEnumerable[PointCloudIt
 
    Returns: The newly appended item.
   """
-  pass
- def ClearColors(self):
-  """
+        pass
+
+    def ClearColors(self):
+        """
   ClearColors(self: PointCloud)
 
    Destroys the color information in this point cloud.
   """
-  pass
- def ClearHiddenFlags(self):
-  """
+        pass
+
+    def ClearHiddenFlags(self):
+        """
   ClearHiddenFlags(self: PointCloud)
 
    Destroys the hidden flag information in this point cloud.
   """
-  pass
- def ClearNormals(self):
-  """
+        pass
+
+    def ClearNormals(self):
+        """
   ClearNormals(self: PointCloud)
 
    Destroys the normal vector information in this point cloud.
   """
-  pass
- def ClosestPoint(self,testPoint):
-  """
+        pass
+
+    def ClosestPoint(self, testPoint):
+        """
   ClosestPoint(self: PointCloud,testPoint: Point3d) -> int
 
   
@@ -102,9 +111,10 @@ class PointCloud(GeometryBase,IDisposable,ISerializable,IEnumerable[PointCloudIt
 
    Returns: Index of point in the point cloud on success. -1 on failure.
   """
-  pass
- def ConstructConstObject(self,*args):
-  """
+        pass
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -115,9 +125,10 @@ class PointCloud(GeometryBase,IDisposable,ISerializable,IEnumerable[PointCloudIt
 
    subobject_index: The subobject index.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: CommonObject,disposing: bool)
 
    For derived class implementers.
@@ -142,9 +153,10 @@ class PointCloud(GeometryBase,IDisposable,ISerializable,IEnumerable[PointCloudIt
 
     finalizer.
   """
-  pass
- def GetColors(self):
-  """
+        pass
+
+    def GetColors(self):
+        """
   GetColors(self: PointCloud) -> Array[Color]
 
   
@@ -153,9 +165,10 @@ class PointCloud(GeometryBase,IDisposable,ISerializable,IEnumerable[PointCloudIt
 
    Returns: An array containing all the colors in this point cloud.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: PointCloud) -> IEnumerator[PointCloudItem]
 
   
@@ -164,9 +177,10 @@ class PointCloud(GeometryBase,IDisposable,ISerializable,IEnumerable[PointCloudIt
 
    Returns: A instance of System.Collections.Generic.IEnumerator.
   """
-  pass
- def GetNormals(self):
-  """
+        pass
+
+    def GetNormals(self):
+        """
   GetNormals(self: PointCloud) -> Array[Vector3d]
 
   
@@ -175,9 +189,10 @@ class PointCloud(GeometryBase,IDisposable,ISerializable,IEnumerable[PointCloudIt
 
    Returns: An array containing all the normals in this point cloud.
   """
-  pass
- def GetPoints(self):
-  """
+        pass
+
+    def GetPoints(self):
+        """
   GetPoints(self: PointCloud) -> Array[Point3d]
 
   
@@ -186,9 +201,10 @@ class PointCloud(GeometryBase,IDisposable,ISerializable,IEnumerable[PointCloudIt
 
    Returns: An array containing all the points in this point cloud.
   """
-  pass
- def Insert(self,index,point,*__args):
-  """
+        pass
+
+    def Insert(self, index, point, *__args):
+        """
   Insert(self: PointCloud,index: int,point: Point3d,color: Color)
 
    Inserts a new point into the point list.
@@ -237,9 +253,10 @@ class PointCloud(GeometryBase,IDisposable,ISerializable,IEnumerable[PointCloudIt
 
    normal: Normal vector of new point.
   """
-  pass
- def InsertNew(self,index):
-  """
+        pass
+
+    def InsertNew(self, index):
+        """
   InsertNew(self: PointCloud,index: int) -> PointCloudItem
 
   
@@ -252,12 +269,14 @@ class PointCloud(GeometryBase,IDisposable,ISerializable,IEnumerable[PointCloudIt
 
    Returns: The newly inserted item.
   """
-  pass
- def InsertRange(self,index,points):
-  """ InsertRange(self: PointCloud,index: int,points: IEnumerable[Point3d]) """
-  pass
- def Merge(self,other):
-  """
+        pass
+
+    def InsertRange(self, index, points):
+        """ InsertRange(self: PointCloud,index: int,points: IEnumerable[Point3d]) """
+        pass
+
+    def Merge(self, other):
+        """
   Merge(self: PointCloud,other: PointCloud)
 
    Copies the point values of another pointcloud into this one.
@@ -266,9 +285,10 @@ class PointCloud(GeometryBase,IDisposable,ISerializable,IEnumerable[PointCloudIt
 
    other: PointCloud to merge with this one.
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: CommonObject)
 
    For derived classes implementers.
@@ -277,16 +297,18 @@ class PointCloud(GeometryBase,IDisposable,ISerializable,IEnumerable[PointCloudIt
 
     instance from being const.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: GeometryBase)
 
    Is called when a non-const operation occurs.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: PointCloud,index: int)
 
    Remove the point at the given index.
@@ -295,41 +317,49 @@ class PointCloud(GeometryBase,IDisposable,ISerializable,IEnumerable[PointCloudIt
 
    index: Index of point to remove.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__[PointCloudItem](enumerable: IEnumerable[PointCloudItem],value: PointCloudItem) -> bool """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[PointCloudItem](enumerable: IEnumerable[PointCloudItem],value: PointCloudItem) -> bool """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,other: PointCloud)
@@ -338,11 +368,15 @@ class PointCloud(GeometryBase,IDisposable,ISerializable,IEnumerable[PointCloudIt
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- ContainsColors=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether or not the points in this 
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    ContainsColors = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether or not the points in this 
 
    pointcloud have colors assigned to them.
 
@@ -354,8 +388,10 @@ Get: ContainsColors(self: PointCloud) -> bool
 
 """
 
- ContainsHiddenFlags=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether or not the points in this 
+    ContainsHiddenFlags = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether or not the points in this 
 
    pointcloud have hidden flags assigned to them.
 
@@ -367,8 +403,10 @@ Get: ContainsHiddenFlags(self: PointCloud) -> bool
 
 """
 
- ContainsNormals=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether or not the points in this 
+    ContainsNormals = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether or not the points in this 
 
    pointcloud have normals assigned to them.
 
@@ -380,8 +418,8 @@ Get: ContainsNormals(self: PointCloud) -> bool
 
 """
 
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of points in this pointcloud.
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of points in this pointcloud.
 
 
 
@@ -391,8 +429,10 @@ Get: Count(self: PointCloud) -> int
 
 """
 
- HiddenPointCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of points that have their Hidden flag set.
+    HiddenPointCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the number of points that have their Hidden flag set.
 
 
 
@@ -401,5 +441,3 @@ Get: HiddenPointCount(self: PointCloud) -> int
 
 
 """
-
-

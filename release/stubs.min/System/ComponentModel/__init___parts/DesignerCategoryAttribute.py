@@ -1,5 +1,5 @@
-class DesignerCategoryAttribute(Attribute,_Attribute):
- """
+class DesignerCategoryAttribute(Attribute, _Attribute):
+    """
  Specifies that the designer for a class belongs to a certain category.
 
  
@@ -8,8 +8,9 @@ class DesignerCategoryAttribute(Attribute,_Attribute):
 
  DesignerCategoryAttribute(category: str)
  """
- def Equals(self,obj):
-  """
+
+    def Equals(self, obj):
+        """
   Equals(self: DesignerCategoryAttribute,obj: object) -> bool
 
   
@@ -26,9 +27,10 @@ class DesignerCategoryAttribute(Attribute,_Attribute):
 
    Returns: true if the value of the given object is equal to that of the current; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: DesignerCategoryAttribute) -> int
 
   
@@ -37,9 +39,10 @@ class DesignerCategoryAttribute(Attribute,_Attribute):
 
    Returns: A 32-bit signed integer hash code.
   """
-  pass
- def IsDefaultAttribute(self):
-  """
+        pass
+
+    def IsDefaultAttribute(self):
+        """
   IsDefaultAttribute(self: DesignerCategoryAttribute) -> bool
 
   
@@ -48,25 +51,30 @@ class DesignerCategoryAttribute(Attribute,_Attribute):
 
    Returns: true if the attribute is the default value for this attribute class; otherwise,false.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,category=None):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, category=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,category: str)
   """
-  pass
- def __ne__(self,*args):
-  pass
- Category=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name of the category.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    Category = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the name of the category.
 
 
 
@@ -76,8 +84,8 @@ Get: Category(self: DesignerCategoryAttribute) -> str
 
 """
 
- TypeId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a unique identifier for this attribute.
+    TypeId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a unique identifier for this attribute.
 
 
 
@@ -87,9 +95,7 @@ Get: TypeId(self: DesignerCategoryAttribute) -> object
 
 """
 
-
- Component=None
- Default=None
- Form=None
- Generic=None
-
+    Component = None
+    Default = None
+    Form = None
+    Generic = None

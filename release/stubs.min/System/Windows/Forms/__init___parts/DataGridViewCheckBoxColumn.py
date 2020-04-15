@@ -1,5 +1,7 @@
-class DataGridViewCheckBoxColumn(DataGridViewColumn,ICloneable,IDisposable,IComponent):
- """
+class DataGridViewCheckBoxColumn(
+    DataGridViewColumn, ICloneable, IDisposable, IComponent
+):
+    """
  Hosts a collection of System.Windows.Forms.DataGridViewCheckBoxCell objects.
 
  
@@ -8,22 +10,25 @@ class DataGridViewCheckBoxColumn(DataGridViewColumn,ICloneable,IDisposable,IComp
 
  DataGridViewCheckBoxColumn(threeState: bool)
  """
- def Dispose(self):
-  """
+
+    def Dispose(self):
+        """
   Dispose(self: DataGridViewColumn,disposing: bool)
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def OnDataGridViewChanged(self,*args):
-  """
+        pass
+
+    def OnDataGridViewChanged(self, *args):
+        """
   OnDataGridViewChanged(self: DataGridViewBand)
 
    Called when the band is associated with a different System.Windows.Forms.DataGridView.
   """
-  pass
- def RaiseCellClick(self,*args):
-  """
+        pass
+
+    def RaiseCellClick(self, *args):
+        """
   RaiseCellClick(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellClick event.
@@ -32,9 +37,10 @@ class DataGridViewCheckBoxColumn(DataGridViewColumn,ICloneable,IDisposable,IComp
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseCellContentClick(self,*args):
-  """
+        pass
+
+    def RaiseCellContentClick(self, *args):
+        """
   RaiseCellContentClick(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellContentClick event.
@@ -43,9 +49,10 @@ class DataGridViewCheckBoxColumn(DataGridViewColumn,ICloneable,IDisposable,IComp
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseCellContentDoubleClick(self,*args):
-  """
+        pass
+
+    def RaiseCellContentDoubleClick(self, *args):
+        """
   RaiseCellContentDoubleClick(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellContentDoubleClick event.
@@ -54,9 +61,10 @@ class DataGridViewCheckBoxColumn(DataGridViewColumn,ICloneable,IDisposable,IComp
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseCellValueChanged(self,*args):
-  """
+        pass
+
+    def RaiseCellValueChanged(self, *args):
+        """
   RaiseCellValueChanged(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellValueChanged event.
@@ -65,9 +73,10 @@ class DataGridViewCheckBoxColumn(DataGridViewColumn,ICloneable,IDisposable,IComp
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseDataError(self,*args):
-  """
+        pass
+
+    def RaiseDataError(self, *args):
+        """
   RaiseDataError(self: DataGridViewElement,e: DataGridViewDataErrorEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.DataError event.
@@ -76,9 +85,10 @@ class DataGridViewCheckBoxColumn(DataGridViewColumn,ICloneable,IDisposable,IComp
 
    e: A System.Windows.Forms.DataGridViewDataErrorEventArgs that contains the event data.
   """
-  pass
- def RaiseMouseWheel(self,*args):
-  """
+        pass
+
+    def RaiseMouseWheel(self, *args):
+        """
   RaiseMouseWheel(self: DataGridViewElement,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseWheel event.
@@ -87,45 +97,54 @@ class DataGridViewCheckBoxColumn(DataGridViewColumn,ICloneable,IDisposable,IComp
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: DataGridViewCheckBoxColumn) -> str
 
    Returns: A System.String that describes the column.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,threeState=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, threeState=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,threeState: bool)
   """
-  pass
- def __str__(self,*args):
-  pass
- CellTemplate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the template used to create new cells.
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    CellTemplate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the template used to create new cells.
 
 
 
@@ -137,8 +156,10 @@ Set: CellTemplate(self: DataGridViewCheckBoxColumn)=value
 
 """
 
- DefaultCellStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the column's default cell style.
+    DefaultCellStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the column's default cell style.
 
 
 
@@ -150,8 +171,10 @@ Set: DefaultCellStyle(self: DataGridViewCheckBoxColumn)=value
 
 """
 
- FalseValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the underlying value corresponding to a cell value of false,which appears as an unchecked box.
+    FalseValue = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the underlying value corresponding to a cell value of false,which appears as an unchecked box.
 
 
 
@@ -163,8 +186,8 @@ Set: FalseValue(self: DataGridViewCheckBoxColumn)=value
 
 """
 
- FlatStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the flat style appearance of the check box cells.
+    FlatStyle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the flat style appearance of the check box cells.
 
 
 
@@ -176,15 +199,19 @@ Set: FlatStyle(self: DataGridViewCheckBoxColumn)=value
 
 """
 
- HeaderCellCore=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the header cell of the System.Windows.Forms.DataGridViewBand.
+    HeaderCellCore = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the header cell of the System.Windows.Forms.DataGridViewBand.
 
 
 
 """
 
- IndeterminateValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the underlying value corresponding to an indeterminate or null cell value,which appears as a disabled checkbox.
+    IndeterminateValue = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the underlying value corresponding to an indeterminate or null cell value,which appears as a disabled checkbox.
 
 
 
@@ -196,15 +223,17 @@ Set: IndeterminateValue(self: DataGridViewCheckBoxColumn)=value
 
 """
 
- IsRow=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the band represents a row.
+    IsRow = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the band represents a row.
 
 
 
 """
 
- ThreeState=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the hosted check box cells will allow three check states rather than two.
+    ThreeState = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the hosted check box cells will allow three check states rather than two.
 
 
 
@@ -216,8 +245,8 @@ Set: ThreeState(self: DataGridViewCheckBoxColumn)=value
 
 """
 
- TrueValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the underlying value corresponding to a cell value of true,which appears as a checked box.
+    TrueValue = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the underlying value corresponding to a cell value of true,which appears as a checked box.
 
 
 
@@ -228,5 +257,3 @@ Get: TrueValue(self: DataGridViewCheckBoxColumn) -> object
 Set: TrueValue(self: DataGridViewCheckBoxColumn)=value
 
 """
-
-

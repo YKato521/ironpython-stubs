@@ -1,7 +1,8 @@
 class MarshalByRefObject(object):
- """ Enables access to objects across application domain boundaries in applications that support remoting. """
- def CreateObjRef(self,requestedType):
-  """
+    """ Enables access to objects across application domain boundaries in applications that support remoting. """
+
+    def CreateObjRef(self, requestedType):
+        """
   CreateObjRef(self: MarshalByRefObject,requestedType: Type) -> ObjRef
 
   
@@ -18,9 +19,10 @@ class MarshalByRefObject(object):
 
    Returns: Information required to generate a proxy.
   """
-  pass
- def GetLifetimeService(self):
-  """
+        pass
+
+    def GetLifetimeService(self):
+        """
   GetLifetimeService(self: MarshalByRefObject) -> object
 
   
@@ -35,9 +37,10 @@ class MarshalByRefObject(object):
 
     for this instance.
   """
-  pass
- def InitializeLifetimeService(self):
-  """
+        pass
+
+    def InitializeLifetimeService(self):
+        """
   InitializeLifetimeService(self: MarshalByRefObject) -> object
 
   
@@ -52,4 +55,4 @@ class MarshalByRefObject(object):
 
     System.Runtime.Remoting.Lifetime.LifetimeServices.LeaseManagerPollTime property.
   """
-  pass
+        pass

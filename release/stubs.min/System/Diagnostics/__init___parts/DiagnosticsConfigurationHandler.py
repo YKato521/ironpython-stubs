@@ -1,13 +1,14 @@
-class DiagnosticsConfigurationHandler(object,IConfigurationSectionHandler):
- """
+class DiagnosticsConfigurationHandler(object, IConfigurationSectionHandler):
+    """
  Handles the diagnostics section of configuration files.
 
  
 
  DiagnosticsConfigurationHandler()
  """
- def Create(self,parent,configContext,section):
-  """
+
+    def Create(self, parent, configContext, section):
+        """
   Create(self: DiagnosticsConfigurationHandler,parent: object,configContext: object,section: XmlNode) -> object
 
   
@@ -28,10 +29,12 @@ class DiagnosticsConfigurationHandler(object,IConfigurationSectionHandler):
 
    Returns: A new configuration object,in the form of a System.Collections.Hashtable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass

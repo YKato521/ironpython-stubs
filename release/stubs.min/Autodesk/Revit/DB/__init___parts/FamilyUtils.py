@@ -1,8 +1,9 @@
 class FamilyUtils(object):
- """ Contains utilities related to family operations. """
- @staticmethod
- def ConvertFamilyToFaceHostBased(document,familyId):
-  """
+    """ Contains utilities related to family operations. """
+
+    @staticmethod
+    def ConvertFamilyToFaceHostBased(document, familyId):
+        """
   ConvertFamilyToFaceHostBased(document: Document,familyId: ElementId)
 
    Converts a family to be face host based.
@@ -13,10 +14,11 @@ class FamilyUtils(object):
 
    familyId: The family id.
   """
-  pass
- @staticmethod
- def FamilyCanConvertToFaceHostBased(document,familyId):
-  """
+        pass
+
+    @staticmethod
+    def FamilyCanConvertToFaceHostBased(document, familyId):
+        """
   FamilyCanConvertToFaceHostBased(document: Document,familyId: ElementId) -> bool
 
   
@@ -51,10 +53,11 @@ class FamilyUtils(object):
 
     sOST_SprinklersOST_TelephoneDevices
   """
-  pass
- @staticmethod
- def GetProfileSymbols(document,profileFamilyUsage,oneCurveLoopOnly):
-  """
+        pass
+
+    @staticmethod
+    def GetProfileSymbols(document, profileFamilyUsage, oneCurveLoopOnly):
+        """
   GetProfileSymbols(document: Document,profileFamilyUsage: ProfileFamilyUsage,oneCurveLoopOnly: bool) -> ICollection[ElementId]
 
   
@@ -71,10 +74,10 @@ class FamilyUtils(object):
 
    Returns: The set of profile Family Symbol element ids.
   """
-  pass
- __all__=[
-  'ConvertFamilyToFaceHostBased',
-  'FamilyCanConvertToFaceHostBased',
-  'GetProfileSymbols',
- ]
+        pass
 
+    __all__ = [
+        "ConvertFamilyToFaceHostBased",
+        "FamilyCanConvertToFaceHostBased",
+        "GetProfileSymbols",
+    ]

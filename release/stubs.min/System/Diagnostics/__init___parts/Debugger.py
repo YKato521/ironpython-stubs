@@ -1,22 +1,24 @@
 class Debugger(object):
- """
+    """
  Enables communication with a debugger. This class cannot be inherited.
 
  
 
  Debugger()
  """
- @staticmethod
- def Break():
-  """
+
+    @staticmethod
+    def Break():
+        """
   Break()
 
    Signals a breakpoint to an attached debugger.
   """
-  pass
- @staticmethod
- def IsLogging():
-  """
+        pass
+
+    @staticmethod
+    def IsLogging():
+        """
   IsLogging() -> bool
 
   
@@ -29,10 +31,11 @@ class Debugger(object):
 
     on this key,see Enabling JIT-Attach Debugging.
   """
-  pass
- @staticmethod
- def Launch():
-  """
+        pass
+
+    @staticmethod
+    def Launch():
+        """
   Launch() -> bool
 
   
@@ -41,10 +44,11 @@ class Debugger(object):
 
    Returns: true if the startup is successful or if the debugger is already attached; otherwise,false.
   """
-  pass
- @staticmethod
- def Log(level,category,message):
-  """
+        pass
+
+    @staticmethod
+    def Log(level, category, message):
+        """
   Log(level: int,category: str,message: str)
 
    Posts a message for the attached debugger.
@@ -57,17 +61,18 @@ class Debugger(object):
 
    message: The message to show.
   """
-  pass
- @staticmethod
- def NotifyOfCrossThreadDependency():
-  """
+        pass
+
+    @staticmethod
+    def NotifyOfCrossThreadDependency():
+        """
   NotifyOfCrossThreadDependency()
 
    Notifies a debugger that execution is about to enter a path that involves a cross-thread 
 
     dependency.
   """
-  pass
- DefaultCategory=None
- IsAttached=False
+        pass
 
+    DefaultCategory = None
+    IsAttached = False

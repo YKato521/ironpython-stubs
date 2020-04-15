@@ -1,5 +1,13 @@
-class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,IComparable[DateTime],IEquatable[DateTime]):
- """
+class DateTime(
+    object,
+    IComparable,
+    IFormattable,
+    IConvertible,
+    ISerializable,
+    IComparable[DateTime],
+    IEquatable[DateTime],
+):
+    """
  Represents an instant in time,typically expressed as a date and time of day.
 
  
@@ -26,8 +34,9 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
  DateTime(year: int,month: int,day: int,hour: int,minute: int,second: int,millisecond: int,calendar: Calendar,kind: DateTimeKind)
  """
- def Add(self,value):
-  """
+
+    def Add(self, value):
+        """
   Add(self: DateTime,value: TimeSpan) -> DateTime
 
   
@@ -46,9 +55,10 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
     interval represented by value.
   """
-  pass
- def AddDays(self,value):
-  """
+        pass
+
+    def AddDays(self, value):
+        """
   AddDays(self: DateTime,value: float) -> DateTime
 
   
@@ -67,9 +77,10 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
     number of days represented by value.
   """
-  pass
- def AddHours(self,value):
-  """
+        pass
+
+    def AddHours(self, value):
+        """
   AddHours(self: DateTime,value: float) -> DateTime
 
   
@@ -88,9 +99,10 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
     number of hours represented by value.
   """
-  pass
- def AddMilliseconds(self,value):
-  """
+        pass
+
+    def AddMilliseconds(self, value):
+        """
   AddMilliseconds(self: DateTime,value: float) -> DateTime
 
   
@@ -113,9 +125,10 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
     number of milliseconds represented by value.
   """
-  pass
- def AddMinutes(self,value):
-  """
+        pass
+
+    def AddMinutes(self, value):
+        """
   AddMinutes(self: DateTime,value: float) -> DateTime
 
   
@@ -134,9 +147,10 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
     number of minutes represented by value.
   """
-  pass
- def AddMonths(self,months):
-  """
+        pass
+
+    def AddMonths(self, months):
+        """
   AddMonths(self: DateTime,months: int) -> DateTime
 
   
@@ -153,9 +167,10 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
    Returns: An object whose value is the sum of the date and time represented by this instance and months.
   """
-  pass
- def AddSeconds(self,value):
-  """
+        pass
+
+    def AddSeconds(self, value):
+        """
   AddSeconds(self: DateTime,value: float) -> DateTime
 
   
@@ -174,9 +189,10 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
     number of seconds represented by value.
   """
-  pass
- def AddTicks(self,value):
-  """
+        pass
+
+    def AddTicks(self, value):
+        """
   AddTicks(self: DateTime,value: Int64) -> DateTime
 
   
@@ -195,9 +211,10 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
     represented by value.
   """
-  pass
- def AddYears(self,value):
-  """
+        pass
+
+    def AddYears(self, value):
+        """
   AddYears(self: DateTime,value: int) -> DateTime
 
   
@@ -216,10 +233,11 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
     number of years represented by value.
   """
-  pass
- @staticmethod
- def Compare(t1,t2):
-  """
+        pass
+
+    @staticmethod
+    def Compare(t1, t2):
+        """
   Compare(t1: DateTime,t2: DateTime) -> int
 
   
@@ -240,9 +258,10 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
     t1 is earlier than t2. Zero t1 is the same as t2. Greater than zero t1 is later than t2.
   """
-  pass
- def CompareTo(self,value):
-  """
+        pass
+
+    def CompareTo(self, value):
+        """
   CompareTo(self: DateTime,value: DateTime) -> int
 
   
@@ -289,10 +308,11 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
     than zero This instance is later than value,or value is null.
   """
-  pass
- @staticmethod
- def DaysInMonth(year,month):
-  """
+        pass
+
+    @staticmethod
+    def DaysInMonth(year, month):
+        """
   DaysInMonth(year: int,month: int) -> int
 
   
@@ -309,9 +329,10 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
     the return value is 28 or 29 depending upon whether year is a leap year.
   """
-  pass
- def Equals(self,*__args):
-  """
+        pass
+
+    def Equals(self, *__args):
+        """
   Equals(t1: DateTime,t2: DateTime) -> bool
 
   
@@ -360,10 +381,11 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
     otherwise,false.
   """
-  pass
- @staticmethod
- def FromBinary(dateData):
-  """
+        pass
+
+    @staticmethod
+    def FromBinary(dateData):
+        """
   FromBinary(dateData: Int64) -> DateTime
 
   
@@ -382,10 +404,11 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
     System.DateTime.ToBinary method.
   """
-  pass
- @staticmethod
- def FromFileTime(fileTime):
-  """
+        pass
+
+    @staticmethod
+    def FromFileTime(fileTime):
+        """
   FromFileTime(fileTime: Int64) -> DateTime
 
   
@@ -400,10 +423,11 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
     fileTime parameter.
   """
-  pass
- @staticmethod
- def FromFileTimeUtc(fileTime):
-  """
+        pass
+
+    @staticmethod
+    def FromFileTimeUtc(fileTime):
+        """
   FromFileTimeUtc(fileTime: Int64) -> DateTime
 
   
@@ -418,10 +442,11 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
     fileTime parameter.
   """
-  pass
- @staticmethod
- def FromOADate(d):
-  """
+        pass
+
+    @staticmethod
+    def FromOADate(d):
+        """
   FromOADate(d: float) -> DateTime
 
   
@@ -434,9 +459,10 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
    Returns: An object that represents the same date and time as d.
   """
-  pass
- def GetDateTimeFormats(self,*__args):
-  """
+        pass
+
+    def GetDateTimeFormats(self, *__args):
+        """
   GetDateTimeFormats(self: DateTime,format: Char) -> Array[str]
 
   
@@ -513,9 +539,10 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
     with one of the standard date and time format specifiers.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: DateTime) -> int
 
   
@@ -524,9 +551,10 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
    Returns: A 32-bit signed integer hash code.
   """
-  pass
- def GetTypeCode(self):
-  """
+        pass
+
+    def GetTypeCode(self):
+        """
   GetTypeCode(self: DateTime) -> TypeCode
 
   
@@ -535,9 +563,10 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
    Returns: The enumerated constant,System.TypeCode.DateTime.
   """
-  pass
- def IsDaylightSavingTime(self):
-  """
+        pass
+
+    def IsDaylightSavingTime(self):
+        """
   IsDaylightSavingTime(self: DateTime) -> bool
 
   
@@ -554,10 +583,11 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
     current time zone. false if System.DateTime.Kind is System.DateTimeKind.Utc.
   """
-  pass
- @staticmethod
- def IsLeapYear(year):
-  """
+        pass
+
+    @staticmethod
+    def IsLeapYear(year):
+        """
   IsLeapYear(year: int) -> bool
 
   
@@ -570,10 +600,11 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
    Returns: true if year is a leap year; otherwise,false.
   """
-  pass
- @staticmethod
- def Parse(s,provider=None,styles=None):
-  """
+        pass
+
+    @staticmethod
+    def Parse(s, provider=None, styles=None):
+        """
   Parse(s: str,provider: IFormatProvider,styles: DateTimeStyles) -> DateTime
 
   
@@ -640,10 +671,11 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
    Returns: An object that is equivalent to the date and time contained in s.
   """
-  pass
- @staticmethod
- def ParseExact(s,*__args):
-  """
+        pass
+
+    @staticmethod
+    def ParseExact(s, *__args):
+        """
   ParseExact(s: str,formats: Array[str],provider: IFormatProvider,style: DateTimeStyles) -> DateTime
 
   
@@ -738,10 +770,11 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
     provider.
   """
-  pass
- @staticmethod
- def SpecifyKind(value,kind):
-  """
+        pass
+
+    @staticmethod
+    def SpecifyKind(value, kind):
+        """
   SpecifyKind(value: DateTime,kind: DateTimeKind) -> DateTime
 
   
@@ -768,9 +801,10 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
     and the System.DateTimeKind value specified by the kind parameter.
   """
-  pass
- def Subtract(self,value):
-  """
+        pass
+
+    def Subtract(self, value):
+        """
   Subtract(self: DateTime,value: TimeSpan) -> DateTime
 
   
@@ -801,9 +835,10 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
     and time represented by value.
   """
-  pass
- def ToBinary(self):
-  """
+        pass
+
+    def ToBinary(self):
+        """
   ToBinary(self: DateTime) -> Int64
 
   
@@ -818,9 +853,10 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
     properties.
   """
-  pass
- def ToFileTime(self):
-  """
+        pass
+
+    def ToFileTime(self):
+        """
   ToFileTime(self: DateTime) -> Int64
 
   
@@ -829,9 +865,10 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
    Returns: The value of the current System.DateTime object expressed as a Windows file time.
   """
-  pass
- def ToFileTimeUtc(self):
-  """
+        pass
+
+    def ToFileTimeUtc(self):
+        """
   ToFileTimeUtc(self: DateTime) -> Int64
 
   
@@ -840,9 +877,10 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
    Returns: The value of the current System.DateTime object expressed as a Windows file time.
   """
-  pass
- def ToLocalTime(self):
-  """
+        pass
+
+    def ToLocalTime(self):
+        """
   ToLocalTime(self: DateTime) -> DateTime
 
   
@@ -859,9 +897,10 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
     represented as a System.DateTime object.
   """
-  pass
- def ToLongDateString(self):
-  """
+        pass
+
+    def ToLongDateString(self):
+        """
   ToLongDateString(self: DateTime) -> str
 
   
@@ -874,9 +913,10 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
    Returns: A string that contains the long date string representation of the current System.DateTime object.
   """
-  pass
- def ToLongTimeString(self):
-  """
+        pass
+
+    def ToLongTimeString(self):
+        """
   ToLongTimeString(self: DateTime) -> str
 
   
@@ -889,9 +929,10 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
    Returns: A string that contains the long time string representation of the current System.DateTime object.
   """
-  pass
- def ToOADate(self):
-  """
+        pass
+
+    def ToOADate(self):
+        """
   ToOADate(self: DateTime) -> float
 
   
@@ -902,9 +943,10 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
     value of this instance.
   """
-  pass
- def ToShortDateString(self):
-  """
+        pass
+
+    def ToShortDateString(self):
+        """
   ToShortDateString(self: DateTime) -> str
 
   
@@ -919,9 +961,10 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
     object.
   """
-  pass
- def ToShortTimeString(self):
-  """
+        pass
+
+    def ToShortTimeString(self):
+        """
   ToShortTimeString(self: DateTime) -> str
 
   
@@ -936,9 +979,10 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
     object.
   """
-  pass
- def ToString(self,*__args):
-  """
+        pass
+
+    def ToString(self, *__args):
+        """
   ToString(self: DateTime,provider: IFormatProvider) -> str
 
   
@@ -1001,9 +1045,10 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
    Returns: A string representation of value of the current System.DateTime object as specified by format.
   """
-  pass
- def ToUniversalTime(self):
-  """
+        pass
+
+    def ToUniversalTime(self):
+        """
   ToUniversalTime(self: DateTime) -> DateTime
 
   
@@ -1020,10 +1065,11 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
     System.DateTime object.
   """
-  pass
- @staticmethod
- def TryParse(s,*__args):
-  """
+        pass
+
+    @staticmethod
+    def TryParse(s, *__args):
+        """
   TryParse(s: str,provider: IFormatProvider,styles: DateTimeStyles) -> (bool,DateTime)
 
   
@@ -1068,10 +1114,11 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
    Returns: true if the s parameter was converted successfully; otherwise,false.
   """
-  pass
- @staticmethod
- def TryParseExact(s,*__args):
-  """
+        pass
+
+    @staticmethod
+    def TryParseExact(s, *__args):
+        """
   TryParseExact(s: str,formats: Array[str],provider: IFormatProvider,style: DateTimeStyles) -> (bool,DateTime)
 
   
@@ -1128,33 +1175,43 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
    Returns: true if s was converted successfully; otherwise,false.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __cmp__(self,*args):
-  """ x.__cmp__(y) <==> cmp(x,y) """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __cmp__(self, *args):
+        """ x.__cmp__(y) <==> cmp(x,y) """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,ticks: Int64)
 
   __new__(cls: type,ticks: Int64,kind: DateTimeKind)
@@ -1179,16 +1236,20 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
   __new__[DateTime]() -> DateTime
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __rsub__(self,*args):
-  """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __rsub__(self, *args):
+        """
   __rsub__(d1: DateTime,d2: DateTime) -> TimeSpan
 
   
@@ -1207,14 +1268,17 @@ class DateTime(object,IComparable,IFormattable,IConvertible,ISerializable,ICompa
 
    Returns: The time interval between d1 and d2; that is,d1 minus d2.
   """
-  pass
- def __str__(self,*args):
-  pass
- def __sub__(self,*args):
-  """ x.__sub__(y) <==> x-yx.__sub__(y) <==> x-y """
-  pass
- Date=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the date component of this instance.
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    def __sub__(self, *args):
+        """ x.__sub__(y) <==> x-yx.__sub__(y) <==> x-y """
+        pass
+
+    Date = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the date component of this instance.
 
 
 
@@ -1224,8 +1288,8 @@ Get: Date(self: DateTime) -> DateTime
 
 """
 
- Day=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the day of the month represented by this instance.
+    Day = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the day of the month represented by this instance.
 
 
 
@@ -1235,8 +1299,8 @@ Get: Day(self: DateTime) -> int
 
 """
 
- DayOfWeek=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the day of the week represented by this instance.
+    DayOfWeek = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the day of the week represented by this instance.
 
 
 
@@ -1246,8 +1310,8 @@ Get: DayOfWeek(self: DateTime) -> DayOfWeek
 
 """
 
- DayOfYear=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the day of the year represented by this instance.
+    DayOfYear = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the day of the year represented by this instance.
 
 
 
@@ -1257,8 +1321,8 @@ Get: DayOfYear(self: DateTime) -> int
 
 """
 
- Hour=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the hour component of the date represented by this instance.
+    Hour = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the hour component of the date represented by this instance.
 
 
 
@@ -1268,8 +1332,8 @@ Get: Hour(self: DateTime) -> int
 
 """
 
- Kind=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the time represented by this instance is based on local time,Coordinated Universal Time (UTC),or neither.
+    Kind = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether the time represented by this instance is based on local time,Coordinated Universal Time (UTC),or neither.
 
 
 
@@ -1279,8 +1343,10 @@ Get: Kind(self: DateTime) -> DateTimeKind
 
 """
 
- Millisecond=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the milliseconds component of the date represented by this instance.
+    Millisecond = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the milliseconds component of the date represented by this instance.
 
 
 
@@ -1290,8 +1356,8 @@ Get: Millisecond(self: DateTime) -> int
 
 """
 
- Minute=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the minute component of the date represented by this instance.
+    Minute = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the minute component of the date represented by this instance.
 
 
 
@@ -1301,8 +1367,8 @@ Get: Minute(self: DateTime) -> int
 
 """
 
- Month=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the month component of the date represented by this instance.
+    Month = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the month component of the date represented by this instance.
 
 
 
@@ -1312,8 +1378,8 @@ Get: Month(self: DateTime) -> int
 
 """
 
- Second=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the seconds component of the date represented by this instance.
+    Second = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the seconds component of the date represented by this instance.
 
 
 
@@ -1323,8 +1389,8 @@ Get: Second(self: DateTime) -> int
 
 """
 
- Ticks=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of ticks that represent the date and time of this instance.
+    Ticks = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of ticks that represent the date and time of this instance.
 
 
 
@@ -1334,8 +1400,8 @@ Get: Ticks(self: DateTime) -> Int64
 
 """
 
- TimeOfDay=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the time of day for this instance.
+    TimeOfDay = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the time of day for this instance.
 
 
 
@@ -1345,8 +1411,8 @@ Get: TimeOfDay(self: DateTime) -> TimeSpan
 
 """
 
- Year=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the year component of the date represented by this instance.
+    Year = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the year component of the date represented by this instance.
 
 
 
@@ -1356,10 +1422,8 @@ Get: Year(self: DateTime) -> int
 
 """
 
-
- MaxValue=None
- MinValue=None
- Now=None
- Today=None
- UtcNow=None
-
+    MaxValue = None
+    MinValue = None
+    Now = None
+    Today = None
+    UtcNow = None

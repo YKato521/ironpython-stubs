@@ -1,13 +1,20 @@
-class WebHeaderCollection(NameValueCollection,ICollection,IEnumerable,ISerializable,IDeserializationCallback):
- """
+class WebHeaderCollection(
+    NameValueCollection,
+    ICollection,
+    IEnumerable,
+    ISerializable,
+    IDeserializationCallback,
+):
+    """
  Contains protocol headers associated with a request or response.
 
  
 
  WebHeaderCollection()
  """
- def Add(self,*__args):
-  """
+
+    def Add(self, *__args):
+        """
   Add(self: WebHeaderCollection,header: HttpResponseHeader,value: str)
 
    Inserts the specified header with the specified value into the collection.
@@ -46,9 +53,10 @@ class WebHeaderCollection(NameValueCollection,ICollection,IEnumerable,ISerializa
 
    value: The content of the header.
   """
-  pass
- def AddWithoutValidate(self,*args):
-  """
+        pass
+
+    def AddWithoutValidate(self, *args):
+        """
   AddWithoutValidate(self: WebHeaderCollection,headerName: str,headerValue: str)
 
    Inserts a header into the collection without checking whether the header is on the restricted 
@@ -63,9 +71,10 @@ class WebHeaderCollection(NameValueCollection,ICollection,IEnumerable,ISerializa
 
    headerValue: The content of the header.
   """
-  pass
- def BaseAdd(self,*args):
-  """
+        pass
+
+    def BaseAdd(self, *args):
+        """
   BaseAdd(self: NameObjectCollectionBase,name: str,value: object)
 
    Adds an entry with the specified key and value into the 
@@ -80,16 +89,18 @@ class WebHeaderCollection(NameValueCollection,ICollection,IEnumerable,ISerializa
 
    value: The System.Object value of the entry to add. The value can be null.
   """
-  pass
- def BaseClear(self,*args):
-  """
+        pass
+
+    def BaseClear(self, *args):
+        """
   BaseClear(self: NameObjectCollectionBase)
 
    Removes all entries from the System.Collections.Specialized.NameObjectCollectionBase instance.
   """
-  pass
- def BaseGet(self,*args):
-  """
+        pass
+
+    def BaseGet(self, *args):
+        """
   BaseGet(self: NameObjectCollectionBase,index: int) -> object
 
   
@@ -124,9 +135,10 @@ class WebHeaderCollection(NameValueCollection,ICollection,IEnumerable,ISerializa
 
     otherwise,null.
   """
-  pass
- def BaseGetAllKeys(self,*args):
-  """
+        pass
+
+    def BaseGetAllKeys(self, *args):
+        """
   BaseGetAllKeys(self: NameObjectCollectionBase) -> Array[str]
 
   
@@ -141,9 +153,10 @@ class WebHeaderCollection(NameValueCollection,ICollection,IEnumerable,ISerializa
 
     System.Collections.Specialized.NameObjectCollectionBase instance.
   """
-  pass
- def BaseGetAllValues(self,*args):
-  """
+        pass
+
+    def BaseGetAllValues(self, *args):
+        """
   BaseGetAllValues(self: NameObjectCollectionBase,type: Type) -> Array[object]
 
   
@@ -178,9 +191,10 @@ class WebHeaderCollection(NameValueCollection,ICollection,IEnumerable,ISerializa
 
     System.Collections.Specialized.NameObjectCollectionBase instance.
   """
-  pass
- def BaseGetKey(self,*args):
-  """
+        pass
+
+    def BaseGetKey(self, *args):
+        """
   BaseGetKey(self: NameObjectCollectionBase,index: int) -> str
 
   
@@ -197,9 +211,10 @@ class WebHeaderCollection(NameValueCollection,ICollection,IEnumerable,ISerializa
 
    Returns: A System.String that represents the key of the entry at the specified index.
   """
-  pass
- def BaseHasKeys(self,*args):
-  """
+        pass
+
+    def BaseHasKeys(self, *args):
+        """
   BaseHasKeys(self: NameObjectCollectionBase) -> bool
 
   
@@ -214,9 +229,10 @@ class WebHeaderCollection(NameValueCollection,ICollection,IEnumerable,ISerializa
 
     whose keys are not null; otherwise,false.
   """
-  pass
- def BaseRemove(self,*args):
-  """
+        pass
+
+    def BaseRemove(self, *args):
+        """
   BaseRemove(self: NameObjectCollectionBase,name: str)
 
    Removes the entries with the specified key from the 
@@ -229,9 +245,10 @@ class WebHeaderCollection(NameValueCollection,ICollection,IEnumerable,ISerializa
 
    name: The System.String key of the entries to remove. The key can be null.
   """
-  pass
- def BaseRemoveAt(self,*args):
-  """
+        pass
+
+    def BaseRemoveAt(self, *args):
+        """
   BaseRemoveAt(self: NameObjectCollectionBase,index: int)
 
    Removes the entry at the specified index of the 
@@ -244,9 +261,10 @@ class WebHeaderCollection(NameValueCollection,ICollection,IEnumerable,ISerializa
 
    index: The zero-based index of the entry to remove.
   """
-  pass
- def BaseSet(self,*args):
-  """
+        pass
+
+    def BaseSet(self, *args):
+        """
   BaseSet(self: NameObjectCollectionBase,index: int,value: object)
 
    Sets the value of the entry at the specified index of the 
@@ -279,16 +297,18 @@ class WebHeaderCollection(NameValueCollection,ICollection,IEnumerable,ISerializa
 
    value: The System.Object that represents the new value of the entry to set. The value can be null.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: WebHeaderCollection)
 
    Removes all headers from the collection.
   """
-  pass
- def Get(self,*__args):
-  """
+        pass
+
+    def Get(self, *__args):
+        """
   Get(self: WebHeaderCollection,index: int) -> str
 
   
@@ -317,9 +337,10 @@ class WebHeaderCollection(NameValueCollection,ICollection,IEnumerable,ISerializa
 
    Returns: A System.String holding the value of the specified header.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: WebHeaderCollection) -> IEnumerator
 
   
@@ -328,9 +349,10 @@ class WebHeaderCollection(NameValueCollection,ICollection,IEnumerable,ISerializa
 
    Returns: An System.Collections.IEnumerator for the System.Net.WebHeaderCollection.
   """
-  pass
- def GetKey(self,index):
-  """
+        pass
+
+    def GetKey(self, index):
+        """
   GetKey(self: WebHeaderCollection,index: int) -> str
 
   
@@ -343,9 +365,10 @@ class WebHeaderCollection(NameValueCollection,ICollection,IEnumerable,ISerializa
 
    Returns: A System.String holding the header name.
   """
-  pass
- def GetObjectData(self,serializationInfo,streamingContext):
-  """
+        pass
+
+    def GetObjectData(self, serializationInfo, streamingContext):
+        """
   GetObjectData(self: WebHeaderCollection,serializationInfo: SerializationInfo,streamingContext: StreamingContext)
 
    Populates a System.Runtime.Serialization.SerializationInfo with the data needed to serialize the 
@@ -362,9 +385,10 @@ class WebHeaderCollection(NameValueCollection,ICollection,IEnumerable,ISerializa
 
     serialization.
   """
-  pass
- def GetValues(self,*__args):
-  """
+        pass
+
+    def GetValues(self, *__args):
+        """
   GetValues(self: WebHeaderCollection,index: int) -> Array[str]
 
   
@@ -389,17 +413,19 @@ class WebHeaderCollection(NameValueCollection,ICollection,IEnumerable,ISerializa
 
    Returns: An array of header strings.
   """
-  pass
- def InvalidateCachedArrays(self,*args):
-  """
+        pass
+
+    def InvalidateCachedArrays(self, *args):
+        """
   InvalidateCachedArrays(self: NameValueCollection)
 
    Resets the cached arrays of the collection to null.
   """
-  pass
- @staticmethod
- def IsRestricted(headerName,response=None):
-  """
+        pass
+
+    @staticmethod
+    def IsRestricted(headerName, response=None):
+        """
   IsRestricted(headerName: str,response: bool) -> bool
 
   
@@ -426,9 +452,10 @@ class WebHeaderCollection(NameValueCollection,ICollection,IEnumerable,ISerializa
 
    Returns: true if the header is restricted; otherwise false.
   """
-  pass
- def OnDeserialization(self,sender):
-  """
+        pass
+
+    def OnDeserialization(self, sender):
+        """
   OnDeserialization(self: WebHeaderCollection,sender: object)
 
    Implements the System.Runtime.Serialization.ISerializable interface and raises the 
@@ -441,9 +468,10 @@ class WebHeaderCollection(NameValueCollection,ICollection,IEnumerable,ISerializa
 
    sender: The source of the deserialization event.
   """
-  pass
- def Remove(self,*__args):
-  """
+        pass
+
+    def Remove(self, *__args):
+        """
   Remove(self: WebHeaderCollection,name: str)
 
    Removes the specified header from the collection.
@@ -468,9 +496,10 @@ class WebHeaderCollection(NameValueCollection,ICollection,IEnumerable,ISerializa
 
    header: The System.Net.HttpRequestHeader instance to remove from the collection.
   """
-  pass
- def Set(self,*__args):
-  """
+        pass
+
+    def Set(self, *__args):
+        """
   Set(self: WebHeaderCollection,header: HttpResponseHeader,value: str)
 
    Sets the specified header to the specified value.
@@ -501,9 +530,10 @@ class WebHeaderCollection(NameValueCollection,ICollection,IEnumerable,ISerializa
 
    value: The content of the header to set.
   """
-  pass
- def ToByteArray(self):
-  """
+        pass
+
+    def ToByteArray(self):
+        """
   ToByteArray(self: WebHeaderCollection) -> Array[Byte]
 
   
@@ -512,9 +542,10 @@ class WebHeaderCollection(NameValueCollection,ICollection,IEnumerable,ISerializa
 
    Returns: A System.Byte array holding the header collection.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: WebHeaderCollection) -> str
 
   
@@ -523,39 +554,49 @@ class WebHeaderCollection(NameValueCollection,ICollection,IEnumerable,ISerializa
 
    Returns: The System.String representation of the collection.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self):
+        """
   __new__(cls: type)
 
   __new__(cls: type,serializationInfo: SerializationInfo,streamingContext: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]=x.__setitem__(i,y) <==> x[i]= """
-  pass
- def __str__(self,*args):
-  pass
- AllKeys=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets all header names (keys) in the collection.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]=x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AllKeys = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets all header names (keys) in the collection.
 
 
 
@@ -565,8 +606,8 @@ Get: AllKeys(self: WebHeaderCollection) -> Array[str]
 
 """
 
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of headers in the collection.
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of headers in the collection.
 
 
 
@@ -576,15 +617,17 @@ Get: Count(self: WebHeaderCollection) -> int
 
 """
 
- IsReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the System.Collections.Specialized.NameObjectCollectionBase instance is read-only.
+    IsReadOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the System.Collections.Specialized.NameObjectCollectionBase instance is read-only.
 
 
 
 """
 
- Keys=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of header names (keys) in the collection.
+    Keys = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the collection of header names (keys) in the collection.
 
 
 
@@ -593,5 +636,3 @@ Get: Keys(self: WebHeaderCollection) -> KeysCollection
 
 
 """
-
-

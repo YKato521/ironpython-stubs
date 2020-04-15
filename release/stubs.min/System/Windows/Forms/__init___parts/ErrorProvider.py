@@ -1,5 +1,7 @@
-class ErrorProvider(Component,IComponent,IDisposable,IExtenderProvider,ISupportInitialize):
- """
+class ErrorProvider(
+    Component, IComponent, IDisposable, IExtenderProvider, ISupportInitialize
+):
+    """
  Provides a user interface for indicating that a control on a form has an error associated with it.
 
  
@@ -10,8 +12,9 @@ class ErrorProvider(Component,IComponent,IDisposable,IExtenderProvider,ISupportI
 
  ErrorProvider(container: IContainer)
  """
- def BindToDataAndErrors(self,newDataSource,newDataMember):
-  """
+
+    def BindToDataAndErrors(self, newDataSource, newDataMember):
+        """
   BindToDataAndErrors(self: ErrorProvider,newDataSource: object,newDataMember: str)
 
    Provides a method to set both the System.Windows.Forms.ErrorProvider.DataSource and 
@@ -32,9 +35,10 @@ class ErrorProvider(Component,IComponent,IDisposable,IExtenderProvider,ISupportI
 
     System.Data.DataTable.
   """
-  pass
- def CanExtend(self,extendee):
-  """
+        pass
+
+    def CanExtend(self, extendee):
+        """
   CanExtend(self: ErrorProvider,extendee: object) -> bool
 
   
@@ -51,23 +55,26 @@ class ErrorProvider(Component,IComponent,IDisposable,IExtenderProvider,ISupportI
 
     System.Windows.Forms.ToolBar.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: ErrorProvider)
 
    Clears all settings associated with this component.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: ErrorProvider,disposing: bool)
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def GetError(self,control):
-  """
+        pass
+
+    def GetError(self, control):
+        """
   GetError(self: ErrorProvider,control: Control) -> str
 
   
@@ -80,9 +87,10 @@ class ErrorProvider(Component,IComponent,IDisposable,IExtenderProvider,ISupportI
 
    Returns: The error description string for the specified control.
   """
-  pass
- def GetIconAlignment(self,control):
-  """
+        pass
+
+    def GetIconAlignment(self, control):
+        """
   GetIconAlignment(self: ErrorProvider,control: Control) -> ErrorIconAlignment
 
   
@@ -97,9 +105,10 @@ class ErrorProvider(Component,IComponent,IDisposable,IExtenderProvider,ISupportI
 
     System.Windows.Forms.ErrorIconAlignment.MiddleRight.
   """
-  pass
- def GetIconPadding(self,control):
-  """
+        pass
+
+    def GetIconPadding(self, control):
+        """
   GetIconPadding(self: ErrorProvider,control: Control) -> int
 
   
@@ -112,9 +121,10 @@ class ErrorProvider(Component,IComponent,IDisposable,IExtenderProvider,ISupportI
 
    Returns: The number of pixels to leave between the icon and the control.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -133,9 +143,10 @@ class ErrorProvider(Component,IComponent,IDisposable,IExtenderProvider,ISupportI
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -166,9 +177,10 @@ class ErrorProvider(Component,IComponent,IDisposable,IExtenderProvider,ISupportI
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def OnRightToLeftChanged(self,*args):
-  """
+        pass
+
+    def OnRightToLeftChanged(self, *args):
+        """
   OnRightToLeftChanged(self: ErrorProvider,e: EventArgs)
 
    Raises the System.Windows.Forms.ErrorProvider.RightToLeftChanged event.
@@ -177,9 +189,10 @@ class ErrorProvider(Component,IComponent,IDisposable,IExtenderProvider,ISupportI
 
    e: A System.EventArgs that contains the event data.
   """
-  pass
- def SetError(self,control,value):
-  """
+        pass
+
+    def SetError(self, control, value):
+        """
   SetError(self: ErrorProvider,control: Control,value: str)
 
    Sets the error description string for the specified control.
@@ -190,9 +203,10 @@ class ErrorProvider(Component,IComponent,IDisposable,IExtenderProvider,ISupportI
 
    value: The error description string,or null or System.String.Empty to remove the error.
   """
-  pass
- def SetIconAlignment(self,control,value):
-  """
+        pass
+
+    def SetIconAlignment(self, control, value):
+        """
   SetIconAlignment(self: ErrorProvider,control: Control,value: ErrorIconAlignment)
 
    Sets the location where the error icon should be placed in relation to the control.
@@ -203,9 +217,10 @@ class ErrorProvider(Component,IComponent,IDisposable,IExtenderProvider,ISupportI
 
    value: One of the System.Windows.Forms.ErrorIconAlignment values.
   """
-  pass
- def SetIconPadding(self,control,padding):
-  """
+        pass
+
+    def SetIconPadding(self, control, padding):
+        """
   SetIconPadding(self: ErrorProvider,control: Control,padding: int)
 
    Sets the amount of extra space to leave between the specified control and the error icon.
@@ -216,49 +231,56 @@ class ErrorProvider(Component,IComponent,IDisposable,IExtenderProvider,ISupportI
 
    padding: The number of pixels to add between the icon and the control.
   """
-  pass
- def UpdateBinding(self):
-  """
+        pass
+
+    def UpdateBinding(self):
+        """
   UpdateBinding(self: ErrorProvider)
 
    Provides a method to update the bindings of the System.Windows.Forms.ErrorProvider.DataSource,
 
     System.Windows.Forms.ErrorProvider.DataMember,and the error text.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,parentControl: ContainerControl)
 
   __new__(cls: type,container: IContainer)
   """
-  pass
- def __str__(self,*args):
-  pass
- BlinkRate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the rate at which the error icon flashes.
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    BlinkRate = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the rate at which the error icon flashes.
 
 
 
@@ -270,8 +292,10 @@ Set: BlinkRate(self: ErrorProvider)=value
 
 """
 
- BlinkStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating when the error icon flashes.
+    BlinkStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating when the error icon flashes.
 
 
 
@@ -283,15 +307,19 @@ Set: BlinkStyle(self: ErrorProvider)=value
 
 """
 
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- ContainerControl=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating the parent control for this System.Windows.Forms.ErrorProvider.
+    ContainerControl = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating the parent control for this System.Windows.Forms.ErrorProvider.
 
 
 
@@ -303,8 +331,10 @@ Set: ContainerControl(self: ErrorProvider)=value
 
 """
 
- DataMember=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the list within a data source to monitor.
+    DataMember = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the list within a data source to monitor.
 
 
 
@@ -316,8 +346,10 @@ Set: DataMember(self: ErrorProvider)=value
 
 """
 
- DataSource=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the data source that the System.Windows.Forms.ErrorProvider monitors.
+    DataSource = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the data source that the System.Windows.Forms.ErrorProvider monitors.
 
 
 
@@ -329,22 +361,24 @@ Set: DataSource(self: ErrorProvider)=value
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- Icon=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Drawing.Icon that is displayed next to a control when an error description string has been set for the control.
+    Icon = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the System.Drawing.Icon that is displayed next to a control when an error description string has been set for the control.
 
 
 
@@ -356,8 +390,10 @@ Set: Icon(self: ErrorProvider)=value
 
 """
 
- RightToLeft=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether the component is used in a locale that supports right-to-left fonts.
+    RightToLeft = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether the component is used in a locale that supports right-to-left fonts.
 
 
 
@@ -369,13 +405,13 @@ Set: RightToLeft(self: ErrorProvider)=value
 
 """
 
- Site=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Set: Site(self: ErrorProvider)=value
+    Site = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Set: Site(self: ErrorProvider)=value
 
 """
 
- Tag=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets an object that contains data about the component.
+    Tag = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets an object that contains data about the component.
 
 
 
@@ -387,6 +423,4 @@ Set: Tag(self: ErrorProvider)=value
 
 """
 
-
- RightToLeftChanged=None
-
+    RightToLeftChanged = None

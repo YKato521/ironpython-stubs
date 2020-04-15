@@ -1,7 +1,8 @@
 class ComboBox(RibbonItem):
- """ This class represents a selection control with a drop-down list that can be shown or hidden by clicking the arrow. """
- def AddItem(self,memberData):
-  """
+    """ This class represents a selection control with a drop-down list that can be shown or hidden by clicking the arrow. """
+
+    def AddItem(self, memberData):
+        """
   AddItem(self: ComboBox,memberData: ComboBoxMemberData) -> ComboBoxMember
 
   
@@ -14,28 +15,32 @@ class ComboBox(RibbonItem):
 
    Returns: The newly added ComboBoxMember.
   """
-  pass
- def AddItems(self,memberData):
-  """ AddItems(self: ComboBox,memberData: IList[ComboBoxMemberData]) -> IList[ComboBoxMember] """
-  pass
- def AddSeparator(self):
-  """
+        pass
+
+    def AddItems(self, memberData):
+        """ AddItems(self: ComboBox,memberData: IList[ComboBoxMemberData]) -> IList[ComboBoxMember] """
+        pass
+
+    def AddSeparator(self):
+        """
   AddSeparator(self: ComboBox)
 
    Adds a separator to the drop-down list.
   """
-  pass
- def GetItems(self):
-  """
+        pass
+
+    def GetItems(self):
+        """
   GetItems(self: ComboBox) -> IList[ComboBoxMember]
 
   
 
    Gets the copy of a collection of the ComboBoxMembers assigned to the ComboBox.
   """
-  pass
- Current=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the current checked ComboBox member of the ComboBox.
+        pass
+
+    Current = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the current checked ComboBox member of the ComboBox.
 
 
 
@@ -47,8 +52,8 @@ Set: Current(self: ComboBox)=value
 
 """
 
- Image=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The image shown on the ComboBox.
+    Image = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The image shown on the ComboBox.
 
 
 
@@ -60,9 +65,7 @@ Set: Image(self: ComboBox)=value
 
 """
 
-
- CurrentChanged=None
- DropDownClosed=None
- DropDownOpened=None
- m_ItemType=None
-
+    CurrentChanged = None
+    DropDownClosed = None
+    DropDownOpened = None
+    m_ItemType = None

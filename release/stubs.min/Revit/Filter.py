@@ -8,11 +8,13 @@
 # no functions
 # classes
 
+
 class FilterRule(object):
- """ Revit Filter Rule """
- @staticmethod
- def ByRuleType(type,value,parameter):
-  """
+    """ Revit Filter Rule """
+
+    @staticmethod
+    def ByRuleType(type, value, parameter):
+        """
   ByRuleType(type: str,value: object,parameter: Parameter) -> FilterRule
 
   
@@ -27,15 +29,28 @@ class FilterRule(object):
 
    parameter: Parameter to filter
   """
-  pass
- RuleType=None
+        pass
+
+    RuleType = None
 
 
 class OverrideGraphicSettings(object):
- """ Override Graphic Settings """
- @staticmethod
- def ByProperties(cutFillColor,projectionFillColor,cutLineColor,projectionLineColor,cutFillPattern,projectionFillPattern,cutLinePattern,projectionLinePattern,cutLineWeight,projectionLineWeight):
-  """
+    """ Override Graphic Settings """
+
+    @staticmethod
+    def ByProperties(
+        cutFillColor,
+        projectionFillColor,
+        cutLineColor,
+        projectionLineColor,
+        cutFillPattern,
+        projectionFillPattern,
+        cutLinePattern,
+        projectionLinePattern,
+        cutLineWeight,
+        projectionLineWeight,
+    ):
+        """
   ByProperties(cutFillColor: Color,projectionFillColor: Color,cutLineColor: Color,projectionLineColor: Color,cutFillPattern: FillPatternElement,projectionFillPattern: FillPatternElement,cutLinePattern: LinePatternElement,projectionLinePattern: LinePatternElement,cutLineWeight: int,projectionLineWeight: int) -> OverrideGraphicSettings
 
   
@@ -66,37 +81,48 @@ class OverrideGraphicSettings(object):
 
    Returns: OverrideGraphicSettings
   """
-  pass
+        pass
 
-class ParameterFilterElement(Element,IDisposable,IGraphicItem,IFormattable):
- """ Parameter Filter Element """
- @staticmethod
- def ByRules(name,categories,rules):
-  """ ByRules(name: str,categories: IEnumerable[Category],rules: IEnumerable[FilterRule]) -> ParameterFilterElement """
-  pass
- def SafeInit(self,*args):
-  """
+
+class ParameterFilterElement(Element, IDisposable, IGraphicItem, IFormattable):
+    """ Parameter Filter Element """
+
+    @staticmethod
+    def ByRules(name, categories, rules):
+        """ ByRules(name: str,categories: IEnumerable[Category],rules: IEnumerable[FilterRule]) -> ParameterFilterElement """
+        pass
+
+    def SafeInit(self, *args):
+        """
   SafeInit(self: Element,init: Action)
 
    Handling exceptions when calling the initializing function
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reference to the Element
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InternalElement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reference to the Element
 
 
 
@@ -106,21 +132,20 @@ Get: InternalElement(self: ParameterFilterElement) -> Element
 
 """
 
- InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id for this element
+    InternalElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id for this element
 
 
 
 """
 
- IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Is this element still alive in Revit,and good to be drawn,queried etc.
+    IsAlive = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Is this element still alive in Revit,and good to be drawn,queried etc.
 
 
 
 """
 
-
- InternalUniqueId=None
-
-
+    InternalUniqueId = None

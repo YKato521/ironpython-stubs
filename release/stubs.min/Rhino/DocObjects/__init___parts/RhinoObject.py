@@ -1,11 +1,12 @@
 class RhinoObject(object):
- """
+    """
  Represents an object in the document.
 
     RhinoObjects should only ever be creatable by the RhinoDoc.
  """
- def CommitChanges(self):
-  """
+
+    def CommitChanges(self):
+        """
   CommitChanges(self: RhinoObject) -> bool
 
   
@@ -14,9 +15,10 @@ class RhinoObject(object):
 
    Returns: true if changes were made.
   """
-  pass
- def CreateMeshes(self,meshType,parameters,ignoreCustomParameters):
-  """
+        pass
+
+    def CreateMeshes(self, meshType, parameters, ignoreCustomParameters):
+        """
   CreateMeshes(self: RhinoObject,meshType: MeshType,parameters: MeshingParameters,ignoreCustomParameters: bool) -> int
 
   
@@ -39,9 +41,10 @@ class RhinoObject(object):
 
    Returns: number of meshes created
   """
-  pass
- def DuplicateGeometry(self):
-  """
+        pass
+
+    def DuplicateGeometry(self):
+        """
   DuplicateGeometry(self: RhinoObject) -> GeometryBase
 
   
@@ -50,9 +53,10 @@ class RhinoObject(object):
 
    Returns: A copy of the internal geometry.
   """
-  pass
- def EnableCustomGrips(self,customGrips):
-  """
+        pass
+
+    def EnableCustomGrips(self, customGrips):
+        """
   EnableCustomGrips(self: RhinoObject,customGrips: CustomObjectGrips) -> bool
 
   
@@ -69,9 +73,10 @@ class RhinoObject(object):
 
     does not support custom grips,then false is returned.
   """
-  pass
- def EnableVisualAnalysisMode(self,mode,enable):
-  """
+        pass
+
+    def EnableVisualAnalysisMode(self, mode, enable):
+        """
   EnableVisualAnalysisMode(self: RhinoObject,mode: VisualAnalysisMode,enable: bool) -> bool
 
   
@@ -86,9 +91,10 @@ class RhinoObject(object):
 
    Returns: true if this object supports the analysis mode.
   """
-  pass
- def GetActiveVisualAnalysisModes(self):
-  """
+        pass
+
+    def GetActiveVisualAnalysisModes(self):
+        """
   GetActiveVisualAnalysisModes(self: RhinoObject) -> Array[VisualAnalysisMode]
 
   
@@ -97,9 +103,10 @@ class RhinoObject(object):
 
    Returns: An array of visual analysis modes. The array can be empty,but not null.
   """
-  pass
- def GetDynamicTransform(self,transform):
-  """
+        pass
+
+    def GetDynamicTransform(self, transform):
+        """
   GetDynamicTransform(self: RhinoObject) -> (bool,Transform)
 
   
@@ -122,9 +129,10 @@ class RhinoObject(object):
 
      in which case the identity xform is returned.
   """
-  pass
- def GetGrips(self):
-  """
+        pass
+
+    def GetGrips(self):
+        """
   GetGrips(self: RhinoObject) -> Array[GripObject]
 
   
@@ -139,9 +147,10 @@ class RhinoObject(object):
 
    Returns: An array of grip objects; or null if there are no grips.
   """
-  pass
- def GetGroupList(self):
-  """
+        pass
+
+    def GetGroupList(self):
+        """
   GetGroupList(self: RhinoObject) -> Array[int]
 
   
@@ -156,9 +165,10 @@ class RhinoObject(object):
 
    Returns: An array of group indices,or null if Rhino.DocObjects.RhinoObject.GroupCount is 0.
   """
-  pass
- def GetHighlightedSubObjects(self):
-  """
+        pass
+
+    def GetHighlightedSubObjects(self):
+        """
   GetHighlightedSubObjects(self: RhinoObject) -> Array[ComponentIndex]
 
   
@@ -167,9 +177,10 @@ class RhinoObject(object):
 
    Returns: An array of all highlighted subobjects; or null is there are none.
   """
-  pass
- def GetMaterial(self,frontMaterial):
-  """
+        pass
+
+    def GetMaterial(self, frontMaterial):
+        """
   GetMaterial(self: RhinoObject,frontMaterial: bool) -> Material
 
   
@@ -190,18 +201,20 @@ class RhinoObject(object):
 
    frontMaterial: If true,gets the material used to render the object's front side
   """
-  pass
- def GetMeshes(self,meshType):
-  """
+        pass
+
+    def GetMeshes(self, meshType):
+        """
   GetMeshes(self: RhinoObject,meshType: MeshType) -> Array[Mesh]
 
   
 
    Get existing meshes used to render and analyze surface and polysrf objects.
   """
-  pass
- def GetRenderMaterial(self,frontMaterial):
-  """
+        pass
+
+    def GetRenderMaterial(self, frontMaterial):
+        """
   GetRenderMaterial(self: RhinoObject,frontMaterial: bool) -> RenderMaterial
 
   
@@ -242,13 +255,15 @@ class RhinoObject(object):
 
     it is returned otherwise; null is returned.
   """
-  pass
- @staticmethod
- def GetRenderMeshes(rhinoObjects,okToCreate,returnAllObjects):
-  """ GetRenderMeshes(rhinoObjects: IEnumerable[RhinoObject],okToCreate: bool,returnAllObjects: bool) -> Array[ObjRef] """
-  pass
- def GetRenderMeshParameters(self):
-  """
+        pass
+
+    @staticmethod
+    def GetRenderMeshes(rhinoObjects, okToCreate, returnAllObjects):
+        """ GetRenderMeshes(rhinoObjects: IEnumerable[RhinoObject],okToCreate: bool,returnAllObjects: bool) -> Array[ObjRef] """
+        pass
+
+    def GetRenderMeshParameters(self):
+        """
   GetRenderMeshParameters(self: RhinoObject) -> MeshingParameters
 
   
@@ -263,9 +278,10 @@ class RhinoObject(object):
 
     meshing parameters are used.
   """
-  pass
- def GetRenderPrimitiveList(self,viewport,preview):
-  """
+        pass
+
+    def GetRenderPrimitiveList(self, viewport, preview):
+        """
   GetRenderPrimitiveList(self: RhinoObject,viewport: ViewportInfo,preview: bool) -> RenderPrimitiveList
 
   
@@ -286,9 +302,10 @@ class RhinoObject(object):
 
    Returns: Returns a RenderPrimitiveList if successful otherwise returns null.
   """
-  pass
- def GetSelectedSubObjects(self):
-  """
+        pass
+
+    def GetSelectedSubObjects(self):
+        """
   GetSelectedSubObjects(self: RhinoObject) -> Array[ComponentIndex]
 
   
@@ -297,9 +314,10 @@ class RhinoObject(object):
 
    Returns: An array of subobject indices,or null if there are none.
   """
-  pass
- def GetSubObjects(self):
-  """
+        pass
+
+    def GetSubObjects(self):
+        """
   GetSubObjects(self: RhinoObject) -> Array[RhinoObject]
 
   
@@ -308,9 +326,10 @@ class RhinoObject(object):
 
    Returns: An array of subobjects,or null if there are none.
   """
-  pass
- def GetTextureChannels(self):
-  """
+        pass
+
+    def GetTextureChannels(self):
+        """
   GetTextureChannels(self: RhinoObject) -> Array[int]
 
   
@@ -319,9 +338,10 @@ class RhinoObject(object):
 
    Returns: Returns an array of channel Id's or an empty list if there are not mappings.
   """
-  pass
- def GetTextureMapping(self,channel,objectTransform=None):
-  """
+        pass
+
+    def GetTextureMapping(self, channel, objectTransform=None):
+        """
   GetTextureMapping(self: RhinoObject,channel: int) -> (TextureMapping,Transform)
 
   
@@ -330,9 +350,10 @@ class RhinoObject(object):
 
   GetTextureMapping(self: RhinoObject,channel: int) -> TextureMapping
   """
-  pass
- def Highlight(self,enable):
-  """
+        pass
+
+    def Highlight(self, enable):
+        """
   Highlight(self: RhinoObject,enable: bool) -> bool
 
   
@@ -345,9 +366,10 @@ class RhinoObject(object):
 
    Returns: true if the object is now highlighted.
   """
-  pass
- def HighlightSubObject(self,componentIndex,highlight):
-  """
+        pass
+
+    def HighlightSubObject(self, componentIndex, highlight):
+        """
   HighlightSubObject(self: RhinoObject,componentIndex: ComponentIndex,highlight: bool) -> bool
 
   
@@ -362,9 +384,10 @@ class RhinoObject(object):
 
    Returns: true if the subobject is now highlighted.
   """
-  pass
- def InVisualAnalysisMode(self,mode=None):
-  """
+        pass
+
+    def InVisualAnalysisMode(self, mode=None):
+        """
   InVisualAnalysisMode(self: RhinoObject,mode: VisualAnalysisMode) -> bool
 
   
@@ -387,9 +410,10 @@ class RhinoObject(object):
 
    Returns: true if an analysis mode is active; otherwise false.
   """
-  pass
- def IsActiveInViewport(self,viewport):
-  """
+        pass
+
+    def IsActiveInViewport(self, viewport):
+        """
   IsActiveInViewport(self: RhinoObject,viewport: RhinoViewport) -> bool
 
   
@@ -398,9 +422,10 @@ class RhinoObject(object):
 
    Returns: True if the object is active in viewport
   """
-  pass
- def IsHighlighted(self,checkSubObjects):
-  """
+        pass
+
+    def IsHighlighted(self, checkSubObjects):
+        """
   IsHighlighted(self: RhinoObject,checkSubObjects: bool) -> int
 
   
@@ -425,18 +450,26 @@ class RhinoObject(object):
 
     are highlighted.
   """
-  pass
- def IsMeshable(self,meshType):
-  """
+        pass
+
+    def IsMeshable(self, meshType):
+        """
   IsMeshable(self: RhinoObject,meshType: MeshType) -> bool
 
   
 
    Returns true if the object is capable of having a mesh of the specified type
   """
-  pass
- def IsSelectable(self,ignoreSelectionState=None,ignoreGripsState=None,ignoreLayerLocking=None,ignoreLayerVisibility=None):
-  """
+        pass
+
+    def IsSelectable(
+        self,
+        ignoreSelectionState=None,
+        ignoreGripsState=None,
+        ignoreLayerLocking=None,
+        ignoreLayerVisibility=None,
+    ):
+        """
   IsSelectable(self: RhinoObject) -> bool
 
   
@@ -489,9 +522,10 @@ class RhinoObject(object):
 
    Returns: true if object is capable of being selected.
   """
-  pass
- def IsSelected(self,checkSubObjects):
-  """
+        pass
+
+    def IsSelected(self, checkSubObjects):
+        """
   IsSelected(self: RhinoObject,checkSubObjects: bool) -> int
 
   
@@ -524,9 +558,10 @@ class RhinoObject(object):
 
      3=one or more proper sub-objects are selected.
   """
-  pass
- def IsSubObjectHighlighted(self,componentIndex):
-  """
+        pass
+
+    def IsSubObjectHighlighted(self, componentIndex):
+        """
   IsSubObjectHighlighted(self: RhinoObject,componentIndex: ComponentIndex) -> bool
 
   
@@ -539,9 +574,10 @@ class RhinoObject(object):
 
    Returns: true if the subobject is highlighted.
   """
-  pass
- def IsSubObjectSelectable(self,componentIndex,ignoreSelectionState):
-  """
+        pass
+
+    def IsSubObjectSelectable(self, componentIndex, ignoreSelectionState):
+        """
   IsSubObjectSelectable(self: RhinoObject,componentIndex: ComponentIndex,ignoreSelectionState: bool) -> bool
 
   
@@ -562,9 +598,10 @@ class RhinoObject(object):
 
    Returns: true if the specified subobject can be selected.
   """
-  pass
- def IsSubObjectSelected(self,componentIndex):
-  """
+        pass
+
+    def IsSubObjectSelected(self, componentIndex):
+        """
   IsSubObjectSelected(self: RhinoObject,componentIndex: ComponentIndex) -> bool
 
   
@@ -577,9 +614,10 @@ class RhinoObject(object):
 
    Returns: true if the subobject is selected.
   """
-  pass
- def MemoryEstimate(self):
-  """
+        pass
+
+    def MemoryEstimate(self):
+        """
   MemoryEstimate(self: RhinoObject) -> UInt32
 
   
@@ -598,9 +636,10 @@ class RhinoObject(object):
 
    Returns: The estimated number of bytes this object occupies in memory.
   """
-  pass
- def MeshCount(self,meshType,parameters):
-  """
+        pass
+
+    def MeshCount(self, meshType, parameters):
+        """
   MeshCount(self: RhinoObject,meshType: MeshType,parameters: MeshingParameters) -> int
 
   
@@ -637,17 +676,19 @@ class RhinoObject(object):
 
    Returns: number of meshes
   """
-  pass
- @staticmethod
- def MeshObjects(rhinoObjects,parameters,*__args):
-  """
+        pass
+
+    @staticmethod
+    def MeshObjects(rhinoObjects, parameters, *__args):
+        """
   MeshObjects(rhinoObjects: IEnumerable[RhinoObject],parameters: MeshingParameters,simpleDialog: bool) -> (Result,MeshingParameters,bool,Array[Mesh],Array[ObjectAttributes])
 
   MeshObjects(rhinoObjects: IEnumerable[RhinoObject],parameters: MeshingParameters) -> (Result,Array[Mesh],Array[ObjectAttributes])
   """
-  pass
- def OnAddToDocument(self,*args):
-  """
+        pass
+
+    def OnAddToDocument(self, *args):
+        """
   OnAddToDocument(self: RhinoObject,doc: RhinoDoc)
 
    This call informs an object it is about to be added to the list of
@@ -656,9 +697,10 @@ class RhinoObject(object):
 
     in the document.
   """
-  pass
- def OnDeleteFromDocument(self,*args):
-  """
+        pass
+
+    def OnDeleteFromDocument(self, *args):
+        """
   OnDeleteFromDocument(self: RhinoObject,doc: RhinoDoc)
 
    This call informs an object it is about to be deleted.
@@ -669,16 +711,18 @@ class RhinoObject(object):
 
      before they are deleted.
   """
-  pass
- def OnDraw(self,*args):
-  """
+        pass
+
+    def OnDraw(self, *args):
+        """
   OnDraw(self: RhinoObject,e: DrawEventArgs)
 
    Called when Rhino wants to draw this object
   """
-  pass
- def OnDuplicate(self,*args):
-  """
+        pass
+
+    def OnDuplicate(self, *args):
+        """
   OnDuplicate(self: RhinoObject,source: RhinoObject)
 
    Called when this a new instance of this object is created and copied from
@@ -687,9 +731,10 @@ class RhinoObject(object):
 
     existing object
   """
-  pass
- def OnPick(self,*args):
-  """
+        pass
+
+    def OnPick(self, *args):
+        """
   OnPick(self: RhinoObject,context: PickContext) -> IEnumerable[ObjRef]
 
   
@@ -700,19 +745,22 @@ class RhinoObject(object):
 
     picked given a pick context.
   """
-  pass
- def OnPicked(self,*args):
-  """ OnPicked(self: RhinoObject,context: PickContext,pickedItems: IEnumerable[ObjRef]) """
-  pass
- def OnSelectionChanged(self,*args):
-  """
+        pass
+
+    def OnPicked(self, *args):
+        """ OnPicked(self: RhinoObject,context: PickContext,pickedItems: IEnumerable[ObjRef]) """
+        pass
+
+    def OnSelectionChanged(self, *args):
+        """
   OnSelectionChanged(self: RhinoObject)
 
    Called when the selection state of this object has changed
   """
-  pass
- def OnSpaceMorph(self,*args):
-  """
+        pass
+
+    def OnSpaceMorph(self, *args):
+        """
   OnSpaceMorph(self: RhinoObject,morph: SpaceMorph)
 
    Called when a space morph has been applied to the geometry.
@@ -721,16 +769,26 @@ class RhinoObject(object):
 
     works for CustomMeshObject instances
   """
-  pass
- def OnTransform(self,*args):
-  """
+        pass
+
+    def OnTransform(self, *args):
+        """
   OnTransform(self: RhinoObject,transform: Transform)
 
    Called when a transformation has been applied to the geometry
   """
-  pass
- def Select(self,on,syncHighlight=None,persistentSelect=None,ignoreGripsState=None,ignoreLayerLocking=None,ignoreLayerVisibility=None):
-  """
+        pass
+
+    def Select(
+        self,
+        on,
+        syncHighlight=None,
+        persistentSelect=None,
+        ignoreGripsState=None,
+        ignoreLayerLocking=None,
+        ignoreLayerVisibility=None,
+    ):
+        """
   Select(self: RhinoObject,on: bool,syncHighlight: bool) -> int
 
   
@@ -821,9 +879,10 @@ class RhinoObject(object):
 
    Returns: 0: object is not selected.1: object is selected.2: object is selected persistently.
   """
-  pass
- def SelectSubObject(self,componentIndex,select,syncHighlight):
-  """
+        pass
+
+    def SelectSubObject(self, componentIndex, select, syncHighlight):
+        """
   SelectSubObject(self: RhinoObject,componentIndex: ComponentIndex,select: bool,syncHighlight: bool) -> int
 
   
@@ -854,9 +913,10 @@ class RhinoObject(object):
 
     persistently.
   """
-  pass
- def ShortDescription(self,plural):
-  """
+        pass
+
+    def ShortDescription(self, plural):
+        """
   ShortDescription(self: RhinoObject,plural: bool) -> str
 
   
@@ -869,9 +929,10 @@ class RhinoObject(object):
 
    Returns: A string with the short localized descriptive name.
   """
-  pass
- def SupportsRenderPrimitiveList(self,viewport,preview):
-  """
+        pass
+
+    def SupportsRenderPrimitiveList(self, viewport, preview):
+        """
   SupportsRenderPrimitiveList(self: RhinoObject,viewport: ViewportInfo,preview: bool) -> bool
 
   
@@ -892,9 +953,10 @@ class RhinoObject(object):
 
    Returns: Returns true if custom render mesh(es) will get built for this object.
   """
-  pass
- def TryGetRenderPrimitiveBoundingBox(self,viewport,preview,boundingBox):
-  """
+        pass
+
+    def TryGetRenderPrimitiveBoundingBox(self, viewport, preview, boundingBox):
+        """
   TryGetRenderPrimitiveBoundingBox(self: RhinoObject,viewport: ViewportInfo,preview: bool) -> (bool,BoundingBox)
 
   
@@ -921,9 +983,10 @@ class RhinoObject(object):
 
     false on error.
   """
-  pass
- def UnhighlightAllSubObjects(self):
-  """
+        pass
+
+    def UnhighlightAllSubObjects(self):
+        """
   UnhighlightAllSubObjects(self: RhinoObject) -> int
 
   
@@ -932,9 +995,10 @@ class RhinoObject(object):
 
    Returns: The number of changed subobjects.
   """
-  pass
- def UnselectAllSubObjects(self):
-  """
+        pass
+
+    def UnselectAllSubObjects(self):
+        """
   UnselectAllSubObjects(self: RhinoObject) -> int
 
   
@@ -943,9 +1007,12 @@ class RhinoObject(object):
 
    Returns: The number of unselected subobjects.
   """
-  pass
- Attributes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the object attributes.
+        pass
+
+    Attributes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the object attributes.
 
 
 
@@ -957,8 +1024,8 @@ Set: Attributes(self: RhinoObject)=value
 
 """
 
- Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the document that owns this object.
+    Document = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the document that owns this object.
 
 
 
@@ -968,8 +1035,8 @@ Get: Document(self: RhinoObject) -> RhinoDoc
 
 """
 
- Geometry=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the underlying geometry for this object.
+    Geometry = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the underlying geometry for this object.
 
    All rhino objects are composed of geometry and attributes.
 
@@ -981,8 +1048,8 @@ Get: Geometry(self: RhinoObject) -> GeometryBase
 
 """
 
- GripsOn=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the activation state of object default editing grips.
+    GripsOn = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the activation state of object default editing grips.
 
 
 
@@ -994,8 +1061,10 @@ Set: GripsOn(self: RhinoObject)=value
 
 """
 
- GripsSelected=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """true if grips are turned on and at least one is selected.
+    GripsSelected = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """true if grips are turned on and at least one is selected.
 
 
 
@@ -1005,8 +1074,10 @@ Get: GripsSelected(self: RhinoObject) -> bool
 
 """
 
- GroupCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Number of groups object belongs to.
+    GroupCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Number of groups object belongs to.
 
 
 
@@ -1016,8 +1087,10 @@ Get: GroupCount(self: RhinoObject) -> int
 
 """
 
- HasDynamicTransform=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True if the object has a dynamic transformation
+    HasDynamicTransform = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """True if the object has a dynamic transformation
 
 
 
@@ -1027,8 +1100,8 @@ Get: HasDynamicTransform(self: RhinoObject) -> bool
 
 """
 
- Id=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Every object has a Guid (globally unique identifier,also known as UUID,or universally
+    Id = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Every object has a Guid (globally unique identifier,also known as UUID,or universally
 
    unique identifier). The default value is Guid.Empty.
 
@@ -1054,8 +1127,10 @@ Get: Id(self: RhinoObject) -> Guid
 
 """
 
- IsDeletable=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Some objects cannot be deleted,like grips on lights and annotation objects.
+    IsDeletable = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Some objects cannot be deleted,like grips on lights and annotation objects.
 
 
 
@@ -1065,8 +1140,8 @@ Get: IsDeletable(self: RhinoObject) -> bool
 
 """
 
- IsDeleted=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """true if the object is deleted. Deleted objects are kept by the document
+    IsDeleted = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """true if the object is deleted. Deleted objects are kept by the document
 
    for undo purposes. Call RhinoDoc.UndeleteObject to undelete an object.
 
@@ -1078,8 +1153,8 @@ Get: IsDeleted(self: RhinoObject) -> bool
 
 """
 
- IsHidden=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """An object must be in one of three modes: normal,locked or hidden.
+    IsHidden = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """An object must be in one of three modes: normal,locked or hidden.
 
    If an object is in normal mode,then the object's layer controls visibility
 
@@ -1097,8 +1172,10 @@ Get: IsHidden(self: RhinoObject) -> bool
 
 """
 
- IsInstanceDefinitionGeometry=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """true if the object is used as part of an instance definition.
+    IsInstanceDefinitionGeometry = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """true if the object is used as part of an instance definition.
 
 
 
@@ -1108,8 +1185,8 @@ Get: IsInstanceDefinitionGeometry(self: RhinoObject) -> bool
 
 """
 
- IsLocked=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """An object must be in one of three modes: normal,locked or hidden.
+    IsLocked = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """An object must be in one of three modes: normal,locked or hidden.
 
    If an object is in normal mode,then the object's layer controls visibility
 
@@ -1127,8 +1204,8 @@ Get: IsLocked(self: RhinoObject) -> bool
 
 """
 
- IsNormal=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """An object must be in one of three modes: normal,locked or hidden.
+    IsNormal = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """An object must be in one of three modes: normal,locked or hidden.
 
    If an object is in normal mode,then the object's layer controls visibility
 
@@ -1146,8 +1223,10 @@ Get: IsNormal(self: RhinoObject) -> bool
 
 """
 
- IsReference=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating if an object is a reference object. An object from a work session
+    IsReference = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating if an object is a reference object. An object from a work session
 
    reference model is a reference object and cannot be modified. An object is
 
@@ -1161,8 +1240,8 @@ Get: IsReference(self: RhinoObject) -> bool
 
 """
 
- IsValid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Tests an object to see if its data members are correctly initialized.
+    IsValid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Tests an object to see if its data members are correctly initialized.
 
 
 
@@ -1172,8 +1251,8 @@ Get: IsValid(self: RhinoObject) -> bool
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Rhino objects have optional text names.  More than one object in
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Rhino objects have optional text names.  More than one object in
 
    a model can have the same name and some objects may have no name.
 
@@ -1185,8 +1264,10 @@ Get: Name(self: RhinoObject) -> str
 
 """
 
- ObjectType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the Rhino-based object type.
+    ObjectType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the Rhino-based object type.
 
 
 
@@ -1196,8 +1277,10 @@ Get: ObjectType(self: RhinoObject) -> ObjectType
 
 """
 
- RenderMaterial=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the render material associated with this object or null if there
+    RenderMaterial = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the render material associated with this object or null if there
 
    is none.  This does not pay attention to the material source and will
 
@@ -1211,8 +1294,10 @@ Get: RenderMaterial(self: RhinoObject) -> RenderMaterial
 
 """
 
- RuntimeSerialNumber=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the objects runtime serial number.
+    RuntimeSerialNumber = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the objects runtime serial number.
 
 
 
@@ -1222,8 +1307,8 @@ Get: RuntimeSerialNumber(self: RhinoObject) -> UInt32
 
 """
 
- Visible=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the object visibility.
+    Visible = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the object visibility.
 
 
 
@@ -1232,5 +1317,3 @@ Get: Visible(self: RhinoObject) -> bool
 
 
 """
-
-

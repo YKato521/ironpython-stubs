@@ -1,13 +1,14 @@
-class CredentialCache(object,ICredentials,ICredentialsByHost,IEnumerable):
- """
+class CredentialCache(object, ICredentials, ICredentialsByHost, IEnumerable):
+    """
  Provides storage for multiple credentials.
 
  
 
  CredentialCache()
  """
- def Add(self,*__args):
-  """
+
+    def Add(self, *__args):
+        """
   Add(self: CredentialCache,host: str,port: int,authenticationType: str,credential: NetworkCredential)
 
    Adds a System.Net.NetworkCredential instance for use with SMTP to the credential cache and 
@@ -50,9 +51,10 @@ class CredentialCache(object,ICredentials,ICredentialsByHost,IEnumerable):
 
    cred: The System.Net.NetworkCredential to add to the credential cache.
   """
-  pass
- def GetCredential(self,*__args):
-  """
+        pass
+
+    def GetCredential(self, *__args):
+        """
   GetCredential(self: CredentialCache,host: str,port: int,authenticationType: str) -> NetworkCredential
 
   
@@ -95,9 +97,10 @@ class CredentialCache(object,ICredentials,ICredentialsByHost,IEnumerable):
 
    Returns: A System.Net.NetworkCredential or,if there is no matching credential in the cache,null.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: CredentialCache) -> IEnumerator
 
   
@@ -106,9 +109,10 @@ class CredentialCache(object,ICredentials,ICredentialsByHost,IEnumerable):
 
    Returns: An System.Collections.IEnumerator for the System.Net.CredentialCache.
   """
-  pass
- def Remove(self,*__args):
-  """
+        pass
+
+    def Remove(self, *__args):
+        """
   Remove(self: CredentialCache,host: str,port: int,authenticationType: str)
 
    Deletes a System.Net.NetworkCredential instance from the cache if it is associated with the 
@@ -143,19 +147,23 @@ class CredentialCache(object,ICredentials,ICredentialsByHost,IEnumerable):
 
    authType: The authentication scheme used by the host named in uriPrefix.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- DefaultCredentials=None
- DefaultNetworkCredentials=None
+        pass
 
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    DefaultCredentials = None
+    DefaultNetworkCredentials = None

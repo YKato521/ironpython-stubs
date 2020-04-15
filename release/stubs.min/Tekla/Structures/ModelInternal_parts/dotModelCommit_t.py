@@ -1,4 +1,3 @@
 class dotModelCommit_t(object):
- # no doc
- aMessage=None
-
+    # no doc
+    aMessage = None

@@ -1,8 +1,9 @@
 class GC(object):
- """ Controls the system garbage collector,a service that automatically reclaims unused memory. """
- @staticmethod
- def AddMemoryPressure(bytesAllocated):
-  """
+    """ Controls the system garbage collector,a service that automatically reclaims unused memory. """
+
+    @staticmethod
+    def AddMemoryPressure(bytesAllocated):
+        """
   AddMemoryPressure(bytesAllocated: Int64)
 
    Informs the runtime of a large allocation of unmanaged memory that should be taken into account 
@@ -15,18 +16,20 @@ class GC(object):
 
    bytesAllocated: The incremental amount of unmanaged memory that has been allocated.
   """
-  pass
- @staticmethod
- def CancelFullGCNotification():
-  """
+        pass
+
+    @staticmethod
+    def CancelFullGCNotification():
+        """
   CancelFullGCNotification()
 
    Cancels the registration of a garbage collection notification.
   """
-  pass
- @staticmethod
- def Collect(generation=None,mode=None,blocking=None,compacting=None):
-  """
+        pass
+
+    @staticmethod
+    def Collect(generation=None, mode=None, blocking=None, compacting=None):
+        """
   Collect(generation: int,mode: GCCollectionMode,blocking: bool)Collect(generation: int,mode: GCCollectionMode,blocking: bool,compacting: bool)Collect(generation: int,mode: GCCollectionMode)
 
    Forces a garbage collection from generation zero through a specified generation,at a time 
@@ -53,10 +56,11 @@ class GC(object):
 
    Forces an immediate garbage collection of all generations.
   """
-  pass
- @staticmethod
- def CollectionCount(generation):
-  """
+        pass
+
+    @staticmethod
+    def CollectionCount(generation):
+        """
   CollectionCount(generation: int) -> int
 
   
@@ -75,14 +79,16 @@ class GC(object):
 
     process was started.
   """
-  pass
- @staticmethod
- def EndNoGCRegion():
-  """ EndNoGCRegion() """
-  pass
- @staticmethod
- def GetGeneration(*__args):
-  """
+        pass
+
+    @staticmethod
+    def EndNoGCRegion():
+        """ EndNoGCRegion() """
+        pass
+
+    @staticmethod
+    def GetGeneration(*__args):
+        """
   GetGeneration(wo: WeakReference) -> int
 
   
@@ -111,10 +117,11 @@ class GC(object):
 
    Returns: The current generation number of obj.
   """
-  pass
- @staticmethod
- def GetTotalMemory(forceFullCollection):
-  """
+        pass
+
+    @staticmethod
+    def GetTotalMemory(forceFullCollection):
+        """
   GetTotalMemory(forceFullCollection: bool) -> Int64
 
   
@@ -139,10 +146,11 @@ class GC(object):
 
     managed memory.
   """
-  pass
- @staticmethod
- def KeepAlive(obj):
-  """
+        pass
+
+    @staticmethod
+    def KeepAlive(obj):
+        """
   KeepAlive(obj: object)
 
    References the specified object,which makes it ineligible for garbage collection from the start 
@@ -155,10 +163,11 @@ class GC(object):
 
    obj: The object to reference.
   """
-  pass
- @staticmethod
- def RegisterForFullGCNotification(maxGenerationThreshold,largeObjectHeapThreshold):
-  """
+        pass
+
+    @staticmethod
+    def RegisterForFullGCNotification(maxGenerationThreshold, largeObjectHeapThreshold):
+        """
   RegisterForFullGCNotification(maxGenerationThreshold: int,largeObjectHeapThreshold: int)
 
    Specifies that a garbage collection notification should be raised when conditions favor full 
@@ -179,10 +188,11 @@ class GC(object):
 
     allocated in the large object heap.
   """
-  pass
- @staticmethod
- def RemoveMemoryPressure(bytesAllocated):
-  """
+        pass
+
+    @staticmethod
+    def RemoveMemoryPressure(bytesAllocated):
+        """
   RemoveMemoryPressure(bytesAllocated: Int64)
 
    Informs the runtime that unmanaged memory has been released and no longer needs to be taken into 
@@ -195,10 +205,11 @@ class GC(object):
 
    bytesAllocated: The amount of unmanaged memory that has been released.
   """
-  pass
- @staticmethod
- def ReRegisterForFinalize(obj):
-  """
+        pass
+
+    @staticmethod
+    def ReRegisterForFinalize(obj):
+        """
   ReRegisterForFinalize(obj: object)
 
    Requests that the system call the finalizer for the specified object for which 
@@ -211,10 +222,11 @@ class GC(object):
 
    obj: The object that a finalizer must be called for.
   """
-  pass
- @staticmethod
- def SuppressFinalize(obj):
-  """
+        pass
+
+    @staticmethod
+    def SuppressFinalize(obj):
+        """
   SuppressFinalize(obj: object)
 
    Requests that the system not call the finalizer for the specified object.
@@ -223,10 +235,11 @@ class GC(object):
 
    obj: The object that a finalizer must not be called for.
   """
-  pass
- @staticmethod
- def TryStartNoGCRegion(totalSize,*__args):
-  """
+        pass
+
+    @staticmethod
+    def TryStartNoGCRegion(totalSize, *__args):
+        """
   TryStartNoGCRegion(totalSize: Int64,disallowFullBlockingGC: bool) -> bool
 
   TryStartNoGCRegion(totalSize: Int64,lohSize: Int64,disallowFullBlockingGC: bool) -> bool
@@ -235,10 +248,11 @@ class GC(object):
 
   TryStartNoGCRegion(totalSize: Int64,lohSize: Int64) -> bool
   """
-  pass
- @staticmethod
- def WaitForFullGCApproach(millisecondsTimeout=None):
-  """
+        pass
+
+    @staticmethod
+    def WaitForFullGCApproach(millisecondsTimeout=None):
+        """
   WaitForFullGCApproach(millisecondsTimeout: int) -> GCNotificationStatus
 
   
@@ -271,10 +285,11 @@ class GC(object):
 
    Returns: The status of the registered garbage collection notification.
   """
-  pass
- @staticmethod
- def WaitForFullGCComplete(millisecondsTimeout=None):
-  """
+        pass
+
+    @staticmethod
+    def WaitForFullGCComplete(millisecondsTimeout=None):
+        """
   WaitForFullGCComplete(millisecondsTimeout: int) -> GCNotificationStatus
 
   
@@ -307,34 +322,35 @@ class GC(object):
 
    Returns: The status of the registered garbage collection notification.
   """
-  pass
- @staticmethod
- def WaitForPendingFinalizers():
-  """
+        pass
+
+    @staticmethod
+    def WaitForPendingFinalizers():
+        """
   WaitForPendingFinalizers()
 
    Suspends the current thread until the thread that is processing the queue of finalizers has 
 
     emptied that queue.
   """
-  pass
- MaxGeneration=2
- __all__=[
-  'AddMemoryPressure',
-  'CancelFullGCNotification',
-  'Collect',
-  'CollectionCount',
-  'EndNoGCRegion',
-  'GetGeneration',
-  'GetTotalMemory',
-  'KeepAlive',
-  'RegisterForFullGCNotification',
-  'RemoveMemoryPressure',
-  'ReRegisterForFinalize',
-  'SuppressFinalize',
-  'TryStartNoGCRegion',
-  'WaitForFullGCApproach',
-  'WaitForFullGCComplete',
-  'WaitForPendingFinalizers',
- ]
+        pass
 
+    MaxGeneration = 2
+    __all__ = [
+        "AddMemoryPressure",
+        "CancelFullGCNotification",
+        "Collect",
+        "CollectionCount",
+        "EndNoGCRegion",
+        "GetGeneration",
+        "GetTotalMemory",
+        "KeepAlive",
+        "RegisterForFullGCNotification",
+        "RemoveMemoryPressure",
+        "ReRegisterForFinalize",
+        "SuppressFinalize",
+        "TryStartNoGCRegion",
+        "WaitForFullGCApproach",
+        "WaitForFullGCComplete",
+        "WaitForPendingFinalizers",
+    ]

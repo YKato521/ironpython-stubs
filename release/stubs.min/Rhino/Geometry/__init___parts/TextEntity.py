@@ -1,5 +1,5 @@
-class TextEntity(AnnotationBase,IDisposable,ISerializable):
- """
+class TextEntity(AnnotationBase, IDisposable, ISerializable):
+    """
  Represents text geometry.
 
     This class refers to the geometric element that is independent from the document.
@@ -8,8 +8,9 @@ class TextEntity(AnnotationBase,IDisposable,ISerializable):
 
  TextEntity()
  """
- def ConstructConstObject(self,*args):
-  """
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -20,9 +21,10 @@ class TextEntity(AnnotationBase,IDisposable,ISerializable):
 
    subobject_index: The subobject index.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: CommonObject,disposing: bool)
 
    For derived class implementers.
@@ -47,9 +49,10 @@ class TextEntity(AnnotationBase,IDisposable,ISerializable):
 
     finalizer.
   """
-  pass
- def Explode(self):
-  """
+        pass
+
+    def Explode(self):
+        """
   Explode(self: TextEntity) -> Array[Curve]
 
   
@@ -58,9 +61,10 @@ class TextEntity(AnnotationBase,IDisposable,ISerializable):
 
    Returns: An array of curves that forms the outline or content of this text entity.
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: CommonObject)
 
    For derived classes implementers.
@@ -69,45 +73,54 @@ class TextEntity(AnnotationBase,IDisposable,ISerializable):
 
     instance from being const.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: GeometryBase)
 
    Is called when a non-const operation occurs.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self):
+        """
   __new__(cls: type)
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- AnnotativeScalingEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Scale annotation according to detail scale factor in paperspace
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    AnnotativeScalingEnabled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Scale annotation according to detail scale factor in paperspace
 
    or by 1.0 in paperspace and not in a detail
 
@@ -123,8 +136,8 @@ Set: AnnotativeScalingEnabled(self: TextEntity)=value
 
 """
 
- FontIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the index of font in document font table used by the text.
+    FontIndex = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the index of font in document font table used by the text.
 
 
 
@@ -136,8 +149,10 @@ Set: FontIndex(self: TextEntity)=value
 
 """
 
- Justification=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the justification of text in relation to its base point.
+    Justification = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the justification of text in relation to its base point.
 
 
 
@@ -149,8 +164,8 @@ Set: Justification(self: TextEntity)=value
 
 """
 
- MaskColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Color to use for drawing a text mask when it is enabled. If the mask is
+    MaskColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Color to use for drawing a text mask when it is enabled. If the mask is
 
    enabled and MaskColor is System.Drawing.Color.Transparent,then the
 
@@ -166,8 +181,10 @@ Set: MaskColor(self: TextEntity)=value
 
 """
 
- MaskEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determines whether or not to draw a Text Mask
+    MaskEnabled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Determines whether or not to draw a Text Mask
 
 
 
@@ -179,8 +196,10 @@ Set: MaskEnabled(self: TextEntity)=value
 
 """
 
- MaskOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """distance around text to display mask
+    MaskOffset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """distance around text to display mask
 
 
 
@@ -192,8 +211,10 @@ Set: MaskOffset(self: TextEntity)=value
 
 """
 
- MaskUsesViewportColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If true,the viewport's color is used for the mask color. If
+    MaskUsesViewportColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """If true,the viewport's color is used for the mask color. If
 
    false,the color defined by MaskColor is used
 
@@ -206,5 +227,3 @@ Get: MaskUsesViewportColor(self: TextEntity) -> bool
 Set: MaskUsesViewportColor(self: TextEntity)=value
 
 """
-
-

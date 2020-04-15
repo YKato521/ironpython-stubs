@@ -1,5 +1,5 @@
-class ColumnHeader(Component,IComponent,IDisposable,ICloneable):
- """
+class ColumnHeader(Component, IComponent, IDisposable, ICloneable):
+    """
  Displays a single column header in a System.Windows.Forms.ListView control.
 
  
@@ -10,8 +10,9 @@ class ColumnHeader(Component,IComponent,IDisposable,ICloneable):
 
  ColumnHeader(imageKey: str)
  """
- def AutoResize(self,headerAutoResize):
-  """
+
+    def AutoResize(self, headerAutoResize):
+        """
   AutoResize(self: ColumnHeader,headerAutoResize: ColumnHeaderAutoResizeStyle)
 
    Resizes the width of the column as indicated by the resize style.
@@ -20,9 +21,10 @@ class ColumnHeader(Component,IComponent,IDisposable,ICloneable):
 
    headerAutoResize: One of the System.Windows.Forms.ColumnHeaderAutoResizeStyle  values.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: ColumnHeader) -> object
 
   
@@ -35,9 +37,10 @@ class ColumnHeader(Component,IComponent,IDisposable,ICloneable):
 
    Returns: An object representing a copy of this System.Windows.Forms.ColumnHeader object.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: ColumnHeader,disposing: bool)
 
    Disposes of the resources (other than memory) used by the System.Windows.Forms.ColumnHeader.
@@ -46,9 +49,10 @@ class ColumnHeader(Component,IComponent,IDisposable,ICloneable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -67,9 +71,10 @@ class ColumnHeader(Component,IComponent,IDisposable,ICloneable):
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -100,9 +105,10 @@ class ColumnHeader(Component,IComponent,IDisposable,ICloneable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: ColumnHeader) -> str
 
   
@@ -113,54 +119,66 @@ class ColumnHeader(Component,IComponent,IDisposable,ICloneable):
 
     the System.ComponentModel.Component is unnamed.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,imageIndex: int)
 
   __new__(cls: type,imageKey: str)
   """
-  pass
- def __str__(self,*args):
-  pass
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- DisplayIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the display order of the column relative to the currently displayed columns.
+    DisplayIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the display order of the column relative to the currently displayed columns.
 
 
 
@@ -172,15 +190,17 @@ Set: DisplayIndex(self: ColumnHeader)=value
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- ImageIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the index of the image displayed in the System.Windows.Forms.ColumnHeader.
+    ImageIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the index of the image displayed in the System.Windows.Forms.ColumnHeader.
 
 
 
@@ -192,8 +212,8 @@ Set: ImageIndex(self: ColumnHeader)=value
 
 """
 
- ImageKey=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the key of the image displayed in the column.
+    ImageKey = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the key of the image displayed in the column.
 
 
 
@@ -205,8 +225,8 @@ Set: ImageKey(self: ColumnHeader)=value
 
 """
 
- ImageList=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the image list associated with the System.Windows.Forms.ColumnHeader.
+    ImageList = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the image list associated with the System.Windows.Forms.ColumnHeader.
 
 
 
@@ -216,8 +236,8 @@ Get: ImageList(self: ColumnHeader) -> ImageList
 
 """
 
- Index=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the location with the System.Windows.Forms.ListView control's System.Windows.Forms.ListView.ColumnHeaderCollection of this column.
+    Index = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the location with the System.Windows.Forms.ListView control's System.Windows.Forms.ListView.ColumnHeaderCollection of this column.
 
 
 
@@ -227,8 +247,8 @@ Get: Index(self: ColumnHeader) -> int
 
 """
 
- ListView=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Forms.ListView control the System.Windows.Forms.ColumnHeader is located in.
+    ListView = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the System.Windows.Forms.ListView control the System.Windows.Forms.ColumnHeader is located in.
 
 
 
@@ -238,8 +258,8 @@ Get: ListView(self: ColumnHeader) -> ListView
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the System.Windows.Forms.ColumnHeader.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the name of the System.Windows.Forms.ColumnHeader.
 
 
 
@@ -251,8 +271,8 @@ Set: Name(self: ColumnHeader)=value
 
 """
 
- Tag=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets an object that contains data to associate with the System.Windows.Forms.ColumnHeader.
+    Tag = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets an object that contains data to associate with the System.Windows.Forms.ColumnHeader.
 
 
 
@@ -264,8 +284,8 @@ Set: Tag(self: ColumnHeader)=value
 
 """
 
- Text=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the text displayed in the column header.
+    Text = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the text displayed in the column header.
 
 
 
@@ -277,8 +297,8 @@ Set: Text(self: ColumnHeader)=value
 
 """
 
- TextAlign=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the horizontal alignment of the text displayed in the System.Windows.Forms.ColumnHeader.
+    TextAlign = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the horizontal alignment of the text displayed in the System.Windows.Forms.ColumnHeader.
 
 
 
@@ -290,8 +310,8 @@ Set: TextAlign(self: ColumnHeader)=value
 
 """
 
- Width=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the width of the column.
+    Width = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the width of the column.
 
 
 
@@ -302,5 +322,3 @@ Get: Width(self: ColumnHeader) -> int
 Set: Width(self: ColumnHeader)=value
 
 """
-
-

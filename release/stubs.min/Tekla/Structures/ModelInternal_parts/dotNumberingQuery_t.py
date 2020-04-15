@@ -1,5 +1,4 @@
 class dotNumberingQuery_t(object):
- # no doc
- Id=None
- QueryMode=None
-
+    # no doc
+    Id = None
+    QueryMode = None

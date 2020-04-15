@@ -1,5 +1,5 @@
-class WallSweepInfo(object,IDisposable):
- """
+class WallSweepInfo(object, IDisposable):
+    """
  Represents a wall sweep or reveal of a vertically compound structure.
 
  
@@ -8,43 +8,52 @@ class WallSweepInfo(object,IDisposable):
 
  WallSweepInfo(fixed: bool,type: WallSweepType)
  """
- def Dispose(self):
-  """ Dispose(self: WallSweepInfo) """
-  pass
- def IsEqual(self,toCompare):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: WallSweepInfo) """
+        pass
+
+    def IsEqual(self, toCompare):
+        """
   IsEqual(self: WallSweepInfo,toCompare: WallSweepInfo) -> bool
 
   
 
    Determines if the input object is equivalent to this WallSweepInfo.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: WallSweepInfo,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: WallSweepInfo,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,type: WallSweepType,vertical: bool)
 
   __new__(cls: type,fixed: bool,type: WallSweepType)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- CutsWall=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if you want the sweep to cut geometry out of the host wall.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    CutsWall = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Indicates if you want the sweep to cut geometry out of the host wall.
 
 
 
@@ -56,8 +65,10 @@ Set: CutsWall(self: WallSweepInfo)=value
 
 """
 
- DefaultSetback=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The sweep setback distance from inserts,such as windows and doors.
+    DefaultSetback = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The sweep setback distance from inserts,such as windows and doors.
 
 
 
@@ -69,8 +80,8 @@ Set: DefaultSetback(self: WallSweepInfo)=value
 
 """
 
- Distance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The distance from either the top or base of the wall.
+    Distance = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The distance from either the top or base of the wall.
 
 
 
@@ -82,8 +93,10 @@ Set: Distance(self: WallSweepInfo)=value
 
 """
 
- DistanceMeasuredFrom=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if Distance is measured from the top or bottom of the wall.
+    DistanceMeasuredFrom = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if Distance is measured from the top or bottom of the wall.
 
 
 
@@ -95,8 +108,8 @@ Set: DistanceMeasuredFrom(self: WallSweepInfo)=value
 
 """
 
- Id=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the sweep or reveal.
+    Id = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The id of the sweep or reveal.
 
 
 
@@ -108,8 +121,10 @@ Set: Id(self: WallSweepInfo)=value
 
 """
 
- IsCutByInserts=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the sweep is cut by wall inserts.
+    IsCutByInserts = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the sweep is cut by wall inserts.
 
 
 
@@ -121,8 +136,8 @@ Set: IsCutByInserts(self: WallSweepInfo)=value
 
 """
 
- IsFixed=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the described wall sweep is fixed.  A sweep is fixed if it is a part of a vertical compound structure.
+    IsFixed = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Indicates if the described wall sweep is fixed.  A sweep is fixed if it is a part of a vertical compound structure.
 
 
 
@@ -132,8 +147,10 @@ Get: IsFixed(self: WallSweepInfo) -> bool
 
 """
 
- IsProfileFlipped=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the profile is applied upside-down.
+    IsProfileFlipped = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the profile is applied upside-down.
 
 
 
@@ -145,8 +162,10 @@ Set: IsProfileFlipped(self: WallSweepInfo)=value
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -156,8 +175,10 @@ Get: IsValidObject(self: WallSweepInfo) -> bool
 
 """
 
- IsVertical=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether the sweep or reveal is swept vertically or horizontally.
+    IsVertical = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates whether the sweep or reveal is swept vertically or horizontally.
 
 
 
@@ -167,8 +188,10 @@ Get: IsVertical(self: WallSweepInfo) -> bool
 
 """
 
- MaterialId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id of the material used to create the sweep or reveal.
+    MaterialId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id of the material used to create the sweep or reveal.
 
 
 
@@ -180,8 +203,8 @@ Set: MaterialId(self: WallSweepInfo)=value
 
 """
 
- ProfileId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id of the profile family used to create the sweep or reveal.
+    ProfileId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The element id of the profile family used to create the sweep or reveal.
 
 
 
@@ -193,8 +216,10 @@ Set: ProfileId(self: WallSweepInfo)=value
 
 """
 
- WallOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The offset from the sweep or reveal to the wall.
+    WallOffset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The offset from the sweep or reveal to the wall.
 
 
 
@@ -206,8 +231,8 @@ Set: WallOffset(self: WallSweepInfo)=value
 
 """
 
- WallSide=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The side of the wall to which the sweep or reveal is attached.
+    WallSide = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The side of the wall to which the sweep or reveal is attached.
 
 
 
@@ -219,8 +244,10 @@ Set: WallSide(self: WallSweepInfo)=value
 
 """
 
- WallSweepType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The type (either a wall sweep or a reveal).
+    WallSweepType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The type (either a wall sweep or a reveal).
 
 
 
@@ -231,5 +258,3 @@ Get: WallSweepType(self: WallSweepInfo) -> WallSweepType
 Set: WallSweepType(self: WallSweepInfo)=value
 
 """
-
-

@@ -8,11 +8,12 @@
 # no functions
 # classes
 
+
 class RayBounce(object):
- # no doc
- @staticmethod
- def ByOriginDirection(origin,direction,maxBounces,view):
-  """
+    # no doc
+    @staticmethod
+    def ByOriginDirection(origin, direction, maxBounces, view):
+        """
   ByOriginDirection(origin: Point,direction: Vector,maxBounces: int,view: View3D) -> Dictionary[str,object]
 
   
@@ -21,9 +22,8 @@ class RayBounce(object):
 
     point and direction
   """
-  pass
- __all__=[
-  'ByOriginDirection',
- ]
+        pass
 
-
+    __all__ = [
+        "ByOriginDirection",
+    ]

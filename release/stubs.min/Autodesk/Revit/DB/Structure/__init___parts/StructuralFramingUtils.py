@@ -1,8 +1,9 @@
 class StructuralFramingUtils(object):
- """ A collection of Structural Framing Utilities. """
- @staticmethod
- def AllowJoinAtEnd(familyInstance,end):
-  """
+    """ A collection of Structural Framing Utilities. """
+
+    @staticmethod
+    def AllowJoinAtEnd(familyInstance, end):
+        """
   AllowJoinAtEnd(familyInstance: FamilyInstance,end: int)
 
    Sets the indicated end of the framing element to be allowed to join to others.
@@ -13,10 +14,11 @@ class StructuralFramingUtils(object):
 
    end: The index of the end (0 for the start,1 for the end).
   """
-  pass
- @staticmethod
- def CanFlipEnds(familyInstance):
-  """
+        pass
+
+    @staticmethod
+    def CanFlipEnds(familyInstance):
+        """
   CanFlipEnds(familyInstance: FamilyInstance) -> bool
 
   
@@ -33,10 +35,11 @@ class StructuralFramingUtils(object):
 
    Returns: True for non-concrete line,arc or ellipse framing element,false otherwise.
   """
-  pass
- @staticmethod
- def CanSetEndReference(familyInstance,end):
-  """
+        pass
+
+    @staticmethod
+    def CanSetEndReference(familyInstance, end):
+        """
   CanSetEndReference(familyInstance: FamilyInstance,end: int) -> bool
 
   
@@ -55,10 +58,11 @@ class StructuralFramingUtils(object):
 
    Returns: True if reference can be set for the given end of the framing element.
   """
-  pass
- @staticmethod
- def DisallowJoinAtEnd(familyInstance,end):
-  """
+        pass
+
+    @staticmethod
+    def DisallowJoinAtEnd(familyInstance, end):
+        """
   DisallowJoinAtEnd(familyInstance: FamilyInstance,end: int)
 
    Sets the indicated end of the framing element to not be allowed to join to 
@@ -73,10 +77,11 @@ class StructuralFramingUtils(object):
 
    end: The index of the end (0 for the start,1 for the end).
   """
-  pass
- @staticmethod
- def FlipEnds(familyInstance):
-  """
+        pass
+
+    @staticmethod
+    def FlipEnds(familyInstance):
+        """
   FlipEnds(familyInstance: FamilyInstance)
 
    Flips the ends of the structural framing element.
@@ -87,10 +92,11 @@ class StructuralFramingUtils(object):
 
     non-concrete.
   """
-  pass
- @staticmethod
- def GetEndReference(familyInstance,end):
-  """
+        pass
+
+    @staticmethod
+    def GetEndReference(familyInstance, end):
+        """
   GetEndReference(familyInstance: FamilyInstance,end: int) -> Reference
 
   
@@ -113,10 +119,11 @@ class StructuralFramingUtils(object):
 
    Returns: The end reference.
   """
-  pass
- @staticmethod
- def IsEndReferenceValid(familyInstance,end,pick):
-  """
+        pass
+
+    @staticmethod
+    def IsEndReferenceValid(familyInstance, end, pick):
+        """
   IsEndReferenceValid(familyInstance: FamilyInstance,end: int,pick: Reference) -> bool
 
   
@@ -141,10 +148,11 @@ class StructuralFramingUtils(object):
 
    Returns: True if the given reference can be set for the given end of the framing element.
   """
-  pass
- @staticmethod
- def IsJoinAllowedAtEnd(familyInstance,end):
-  """
+        pass
+
+    @staticmethod
+    def IsJoinAllowedAtEnd(familyInstance, end):
+        """
   IsJoinAllowedAtEnd(familyInstance: FamilyInstance,end: int) -> bool
 
   
@@ -163,10 +171,11 @@ class StructuralFramingUtils(object):
 
    Returns: True if it is allowed to join. False if it is disallowed.
   """
-  pass
- @staticmethod
- def RemoveEndReference(familyInstance,end):
-  """
+        pass
+
+    @staticmethod
+    def RemoveEndReference(familyInstance, end):
+        """
   RemoveEndReference(familyInstance: FamilyInstance,end: int)
 
    Resets the end reference of the structural framing element.
@@ -181,10 +190,11 @@ class StructuralFramingUtils(object):
 
    end: The index of the end (0 for the start,1 for the end).
   """
-  pass
- @staticmethod
- def SetEndReference(familyInstance,end,pick):
-  """
+        pass
+
+    @staticmethod
+    def SetEndReference(familyInstance, end, pick):
+        """
   SetEndReference(familyInstance: FamilyInstance,end: int,pick: Reference)
 
    Sets the end reference of a framing element.
@@ -201,17 +211,17 @@ class StructuralFramingUtils(object):
 
    pick: The reference to set to the given end.
   """
-  pass
- __all__=[
-  'AllowJoinAtEnd',
-  'CanFlipEnds',
-  'CanSetEndReference',
-  'DisallowJoinAtEnd',
-  'FlipEnds',
-  'GetEndReference',
-  'IsEndReferenceValid',
-  'IsJoinAllowedAtEnd',
-  'RemoveEndReference',
-  'SetEndReference',
- ]
+        pass
 
+    __all__ = [
+        "AllowJoinAtEnd",
+        "CanFlipEnds",
+        "CanSetEndReference",
+        "DisallowJoinAtEnd",
+        "FlipEnds",
+        "GetEndReference",
+        "IsEndReferenceValid",
+        "IsJoinAllowedAtEnd",
+        "RemoveEndReference",
+        "SetEndReference",
+    ]

@@ -1,14 +1,16 @@
-class TessellatedShapeBuilderResult(object,IDisposable):
- """
+class TessellatedShapeBuilderResult(object, IDisposable):
+    """
  Describes what TessellatedShapeBuilder has
 
     construct.
  """
- def Dispose(self):
-  """ Dispose(self: TessellatedShapeBuilderResult) """
-  pass
- def GetGeometricalObjects(self):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: TessellatedShapeBuilderResult) """
+        pass
+
+    def GetGeometricalObjects(self):
+        """
   GetGeometricalObjects(self: TessellatedShapeBuilderResult) -> IList[GeometryObject]
 
   
@@ -23,9 +25,10 @@ class TessellatedShapeBuilderResult(object,IDisposable):
 
    Returns: Geometrical object which were built.
   """
-  pass
- def GetIssuesForFaceSet(self,setIndex):
-  """
+        pass
+
+    def GetIssuesForFaceSet(self, setIndex):
+        """
   GetIssuesForFaceSet(self: TessellatedShapeBuilderResult,setIndex: int) -> IList[TessellatedBuildIssue]
 
   
@@ -48,9 +51,10 @@ class TessellatedShapeBuilderResult(object,IDisposable):
 
     'setIndex'.
   """
-  pass
- def GetNumberOfFaceSets(self):
-  """
+        pass
+
+    def GetNumberOfFaceSets(self):
+        """
   GetNumberOfFaceSets(self: TessellatedShapeBuilderResult) -> int
 
   
@@ -59,24 +63,32 @@ class TessellatedShapeBuilderResult(object,IDisposable):
 
    Returns: The number of face sets.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: TessellatedShapeBuilderResult,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- AreObjectsAvailable=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Shows whether 'issues' still contains the original data or whether
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: TessellatedShapeBuilderResult,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    AreObjectsAvailable = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Shows whether 'issues' still contains the original data or whether
 
    these data have already been relinquished by 'getGeometricalObjects'.
 
@@ -90,8 +102,10 @@ Get: AreObjectsAvailable(self: TessellatedShapeBuilderResult) -> bool
 
 """
 
- HasInvalidData=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether there were any inconsistencies in the face sets,
+    HasInvalidData = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether there were any inconsistencies in the face sets,
 
    stored in the tessellated shape builder while building
 
@@ -105,8 +119,10 @@ Get: HasInvalidData(self: TessellatedShapeBuilderResult) -> bool
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -116,8 +132,8 @@ Get: IsValidObject(self: TessellatedShapeBuilderResult) -> bool
 
 """
 
- Outcome=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """What kinds of geometrical objects were built.
+    Outcome = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """What kinds of geometrical objects were built.
 
 
 
@@ -126,5 +142,3 @@ Get: Outcome(self: TessellatedShapeBuilderResult) -> TessellatedShapeBuilderOutc
 
 
 """
-
-

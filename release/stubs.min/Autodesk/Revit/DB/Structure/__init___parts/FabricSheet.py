@@ -1,8 +1,9 @@
-class FabricSheet(Element,IDisposable):
- """ An object that represents an Fabric Sheet Element within the Autodesk Revit project. """
- @staticmethod
- def Create(document,*__args):
-  """
+class FabricSheet(Element, IDisposable):
+    """ An object that represents an Fabric Sheet Element within the Autodesk Revit project. """
+
+    @staticmethod
+    def Create(document, *__args):
+        """
   Create(document: Document,hostElement: Element,fabricSheetTypeId: ElementId) -> FabricSheet
 
   
@@ -81,12 +82,14 @@ class FabricSheet(Element,IDisposable):
 
    Returns: The instance of the newly created bent fabric sheet.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def GetBendProfile(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def GetBendProfile(self):
+        """
   GetBendProfile(self: FabricSheet) -> CurveLoop
 
   
@@ -101,9 +104,10 @@ class FabricSheet(Element,IDisposable):
 
     sheet,for flat fabric sheet ll will be returned.
   """
-  pass
- def GetBendProfileWithFillets(self):
-  """
+        pass
+
+    def GetBendProfileWithFillets(self):
+        """
   GetBendProfileWithFillets(self: FabricSheet) -> CurveLoop
 
   
@@ -122,12 +126,14 @@ class FabricSheet(Element,IDisposable):
 
     returned.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetReinforcementRoundingManager(self):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetReinforcementRoundingManager(self):
+        """
   GetReinforcementRoundingManager(self: FabricSheet) -> FabricRoundingManager
 
   
@@ -136,9 +142,10 @@ class FabricSheet(Element,IDisposable):
 
    Returns: The rounding manager.
   """
-  pass
- def GetSegmentParameterIdsAndLengths(self,rounded):
-  """
+        pass
+
+    def GetSegmentParameterIdsAndLengths(self, rounded):
+        """
   GetSegmentParameterIdsAndLengths(self: FabricSheet,rounded: bool) -> IDictionary[ElementId,float]
 
   
@@ -161,9 +168,10 @@ class FabricSheet(Element,IDisposable):
 
     flat fabric sheet (not bent) empty array is returned.
   """
-  pass
- def GetSheetLocation(self):
-  """
+        pass
+
+    def GetSheetLocation(self):
+        """
   GetSheetLocation(self: FabricSheet) -> Transform
 
   
@@ -172,9 +180,10 @@ class FabricSheet(Element,IDisposable):
 
    Returns: The location of the Fabric Sheet instance.
   """
-  pass
- def GetWireCenterlines(self,wireDirection=None):
-  """
+        pass
+
+    def GetWireCenterlines(self, wireDirection=None):
+        """
   GetWireCenterlines(self: FabricSheet,wireDirection: WireDistributionDirection) -> IList[Curve]
 
   
@@ -199,9 +208,10 @@ class FabricSheet(Element,IDisposable):
 
    Returns: The centerline curves.
   """
-  pass
- def IsCoverOffsetValid(self,coverOffset):
-  """
+        pass
+
+    def IsCoverOffsetValid(self, coverOffset):
+        """
   IsCoverOffsetValid(self: FabricSheet,coverOffset: float) -> bool
 
   
@@ -214,9 +224,10 @@ class FabricSheet(Element,IDisposable):
 
    Returns: True if the value is valid,false if the value is invalid.
   """
-  pass
- def IsSingleFabricSheetWithinHost(self,hostElement,transform):
-  """
+        pass
+
+    def IsSingleFabricSheetWithinHost(self, hostElement, transform):
+        """
   IsSingleFabricSheetWithinHost(self: FabricSheet,hostElement: Element,transform: Transform) -> bool
 
   
@@ -233,10 +244,11 @@ class FabricSheet(Element,IDisposable):
 
     single Fabric Sheet instance is out of host.
   """
-  pass
- @staticmethod
- def IsValidHost(*__args):
-  """
+        pass
+
+    @staticmethod
+    def IsValidHost(*__args):
+        """
   IsValidHost(document: Document,concreteHostElementId: ElementId) -> bool
 
   
@@ -263,9 +275,10 @@ class FabricSheet(Element,IDisposable):
 
    Returns: True if the element is a valid host for fabric sheet,false otherwise.
   """
-  pass
- def PlaceInHost(self,hostElement,transform):
-  """
+        pass
+
+    def PlaceInHost(self, hostElement, transform):
+        """
   PlaceInHost(self: FabricSheet,hostElement: Element,transform: Transform)
 
    Inserts the single Fabric Sheet instance into the host element.
@@ -280,12 +293,14 @@ class FabricSheet(Element,IDisposable):
 
    transform: The transform that defines the placement of the instance single Fabric Sheet.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def SetBendProfile(self,bendProfile):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def SetBendProfile(self, bendProfile):
+        """
   SetBendProfile(self: FabricSheet,bendProfile: CurveLoop)
 
    Sets new profile that defines the shape of the Fabric Sheet bending.
@@ -314,12 +329,14 @@ class FabricSheet(Element,IDisposable):
 
       The provided profile defines the center-curve of a wire.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetSegmentLength(self,segmentParameterId,value):
-  """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetSegmentLength(self, segmentParameterId, value):
+        """
   SetSegmentLength(self: FabricSheet,segmentParameterId: ElementId,value: float)
 
    Sets the value of the bent fabric sheet segment(like A,B,C,D etc.)
@@ -330,18 +347,24 @@ class FabricSheet(Element,IDisposable):
 
    value: The length value to set
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- BendFinalLoopOrientationVector=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Direction of local Fabric Sheet Y axis in bending polyline LCS.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    BendFinalLoopOrientationVector = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Direction of local Fabric Sheet Y axis in bending polyline LCS.
 
 
 
@@ -351,8 +374,10 @@ Get: BendFinalLoopOrientationVector(self: FabricSheet) -> XYZ
 
 """
 
- BentFabricBendDirection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies which wire direction of the fabric sheet is bent.
+    BentFabricBendDirection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies which wire direction of the fabric sheet is bent.
 
 
 
@@ -364,8 +389,10 @@ Set: BentFabricBendDirection(self: FabricSheet)=value
 
 """
 
- BentFabricLongitudinalCutLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies the cut length of the fabric sheet perpendicular to the bend edge.
+    BentFabricLongitudinalCutLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies the cut length of the fabric sheet perpendicular to the bend edge.
 
 
 
@@ -377,8 +404,10 @@ Set: BentFabricLongitudinalCutLength(self: FabricSheet)=value
 
 """
 
- BentFabricStraightWiresLocation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies the location of straight bars with respect to bent bars in the fabric sheet.
+    BentFabricStraightWiresLocation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies the location of straight bars with respect to bent bars in the fabric sheet.
 
 
 
@@ -390,8 +419,10 @@ Set: BentFabricStraightWiresLocation(self: FabricSheet)=value
 
 """
 
- BentFabricWiresOrientation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies the location of the straight bars in the fabric sheet.
+    BentFabricWiresOrientation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies the location of the straight bars in the fabric sheet.
 
 
 
@@ -403,8 +434,10 @@ Set: BentFabricWiresOrientation(self: FabricSheet)=value
 
 """
 
- CoverOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The additional cover offset of the Fabric Sheet.
+    CoverOffset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The additional cover offset of the Fabric Sheet.
 
 
 
@@ -416,8 +449,10 @@ Set: CoverOffset(self: FabricSheet)=value
 
 """
 
- CutOverallLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The sheet length after cutting has taken place.
+    CutOverallLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The sheet length after cutting has taken place.
 
 
 
@@ -427,8 +462,10 @@ Get: CutOverallLength(self: FabricSheet) -> float
 
 """
 
- CutOverallWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The sheet length after cutting has taken place.
+    CutOverallWidth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The sheet length after cutting has taken place.
 
 
 
@@ -438,8 +475,10 @@ Get: CutOverallWidth(self: FabricSheet) -> float
 
 """
 
- CutSheetMass=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The sheet mass after cutting has taken place.
+    CutSheetMass = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The sheet mass after cutting has taken place.
 
 
 
@@ -449,8 +488,10 @@ Get: CutSheetMass(self: FabricSheet) -> float
 
 """
 
- FabricAreaOwnerId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Fabric Area Id.
+    FabricAreaOwnerId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The Fabric Area Id.
 
 
 
@@ -460,8 +501,10 @@ Get: FabricAreaOwnerId(self: FabricSheet) -> ElementId
 
 """
 
- FabricHostReference=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Controls if Single Fabric Sheet should be cut by the Host Cover
+    FabricHostReference = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Controls if Single Fabric Sheet should be cut by the Host Cover
 
 
 
@@ -473,8 +516,10 @@ Set: FabricHostReference(self: FabricSheet)=value
 
 """
 
- FabricLocation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Fabric Sheet location in the host.
+    FabricLocation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The Fabric Sheet location in the host.
 
 
 
@@ -486,8 +531,10 @@ Set: FabricLocation(self: FabricSheet)=value
 
 """
 
- FabricNumber=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies the numerical parameter assigned to the fabric sheet and any sheet of the same type,dimension,material,shape,and partition.
+    FabricNumber = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies the numerical parameter assigned to the fabric sheet and any sheet of the same type,dimension,material,shape,and partition.
 
 
 
@@ -497,8 +544,8 @@ Get: FabricNumber(self: FabricSheet) -> str
 
 """
 
- HostId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The structure element that contains the Fabric Sheet.
+    HostId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The structure element that contains the Fabric Sheet.
 
 
 
@@ -508,8 +555,8 @@ Get: HostId(self: FabricSheet) -> ElementId
 
 """
 
- IsBent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The type of fabric sheet. True for bent fabric sheet,false for flat fabric sheet.
+    IsBent = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The type of fabric sheet. True for bent fabric sheet,false for flat fabric sheet.
 
 
 
@@ -519,8 +566,8 @@ Get: IsBent(self: FabricSheet) -> bool
 
 """
 
- SketchId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the Sketch element for this element.
+    SketchId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The id of the Sketch element for this element.
 
 
 
@@ -529,5 +576,3 @@ Get: SketchId(self: FabricSheet) -> ElementId
 
 
 """
-
-

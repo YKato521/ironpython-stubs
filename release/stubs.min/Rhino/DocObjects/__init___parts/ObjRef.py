@@ -1,5 +1,5 @@
-class ObjRef(object,IDisposable):
- """
+class ObjRef(object, IDisposable):
+    """
  Represents a reference to a Rhino object.
 
  
@@ -10,8 +10,9 @@ class ObjRef(object,IDisposable):
 
  ObjRef(rhinoObject: RhinoObject,pickContext: PickContext)
  """
- def Brep(self):
-  """
+
+    def Brep(self):
+        """
   Brep(self: ObjRef) -> Brep
 
   
@@ -20,9 +21,10 @@ class ObjRef(object,IDisposable):
 
    Returns: A boundary representation; or null on error.
   """
-  pass
- def ClippingPlaneSurface(self):
-  """
+        pass
+
+    def ClippingPlaneSurface(self):
+        """
   ClippingPlaneSurface(self: ObjRef) -> ClippingPlaneSurface
 
   
@@ -31,9 +33,10 @@ class ObjRef(object,IDisposable):
 
    Returns: A clipping plane surface,or null if this reference targeted something else.
   """
-  pass
- def Curve(self):
-  """
+        pass
+
+    def Curve(self):
+        """
   Curve(self: ObjRef) -> Curve
 
   
@@ -42,9 +45,10 @@ class ObjRef(object,IDisposable):
 
    Returns: A curve,or null if this reference targeted something else.
   """
-  pass
- def CurveParameter(self,parameter):
-  """
+        pass
+
+    def CurveParameter(self, parameter):
+        """
   CurveParameter(self: ObjRef) -> (Curve,float)
 
   
@@ -63,16 +67,18 @@ class ObjRef(object,IDisposable):
 
     otherwise null.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: ObjRef)
 
    Actively reclaims unmanaged resources that this instance uses.
   """
-  pass
- def Edge(self):
-  """
+        pass
+
+    def Edge(self):
+        """
   Edge(self: ObjRef) -> BrepEdge
 
   
@@ -81,9 +87,10 @@ class ObjRef(object,IDisposable):
 
    Returns: A boundary representation edge; or null on error.
   """
-  pass
- def Face(self):
-  """
+        pass
+
+    def Face(self):
+        """
   Face(self: ObjRef) -> BrepFace
 
   
@@ -98,9 +105,10 @@ class ObjRef(object,IDisposable):
 
    Returns: A boundary representation face; or null on error.
   """
-  pass
- def Geometry(self):
-  """
+        pass
+
+    def Geometry(self):
+        """
   Geometry(self: ObjRef) -> GeometryBase
 
   
@@ -109,9 +117,10 @@ class ObjRef(object,IDisposable):
 
    Returns: The geometry.
   """
-  pass
- def Hatch(self):
-  """
+        pass
+
+    def Hatch(self):
+        """
   Hatch(self: ObjRef) -> Hatch
 
   
@@ -120,9 +129,10 @@ class ObjRef(object,IDisposable):
 
    Returns: A hatch; or null if the referenced object is not a hatch
   """
-  pass
- def Light(self):
-  """
+        pass
+
+    def Light(self):
+        """
   Light(self: ObjRef) -> Light
 
   
@@ -131,9 +141,10 @@ class ObjRef(object,IDisposable):
 
    Returns: A light; or null if the referenced object is not a light,or on error.
   """
-  pass
- def Mesh(self):
-  """
+        pass
+
+    def Mesh(self):
+        """
   Mesh(self: ObjRef) -> Mesh
 
   
@@ -142,18 +153,20 @@ class ObjRef(object,IDisposable):
 
    Returns: A mesh; or null if the referenced object is not a mesh,or on error.
   """
-  pass
- def Object(self):
-  """
+        pass
+
+    def Object(self):
+        """
   Object(self: ObjRef) -> RhinoObject
 
   
 
    Returns the referenced Rhino object.
   """
-  pass
- def Point(self):
-  """
+        pass
+
+    def Point(self):
+        """
   Point(self: ObjRef) -> Point
 
   
@@ -162,9 +175,10 @@ class ObjRef(object,IDisposable):
 
    Returns: A point; or null if the referenced object is not a point,or on error.
   """
-  pass
- def PointCloud(self):
-  """
+        pass
+
+    def PointCloud(self):
+        """
   PointCloud(self: ObjRef) -> PointCloud
 
   
@@ -173,9 +187,10 @@ class ObjRef(object,IDisposable):
 
    Returns: A point cloud; or null if the referenced object is not a point cloud,or on error.
   """
-  pass
- def SelectionMethod(self):
-  """
+        pass
+
+    def SelectionMethod(self):
+        """
   SelectionMethod(self: ObjRef) -> SelectionMethod
 
   
@@ -184,9 +199,10 @@ class ObjRef(object,IDisposable):
 
    Returns: The method used to select this object.
   """
-  pass
- def SelectionPoint(self):
-  """
+        pass
+
+    def SelectionPoint(self):
+        """
   SelectionPoint(self: ObjRef) -> Point3d
 
   
@@ -203,9 +219,10 @@ class ObjRef(object,IDisposable):
 
    Returns: The point where the selection occured or Point3d.Unset on failure.
   """
-  pass
- def SetSelectionComponent(self,componentIndex):
-  """
+        pass
+
+    def SetSelectionComponent(self, componentIndex):
+        """
   SetSelectionComponent(self: ObjRef,componentIndex: ComponentIndex)
 
    When an object is selected by picking a sub-object,SetSelectionComponent
@@ -214,9 +231,10 @@ class ObjRef(object,IDisposable):
 
     used to identify the sub-object.
   """
-  pass
- def Surface(self):
-  """
+        pass
+
+    def Surface(self):
+        """
   Surface(self: ObjRef) -> Surface
 
   
@@ -225,9 +243,10 @@ class ObjRef(object,IDisposable):
 
    Returns: A surface; or null if the referenced object is not a surface,or on error.
   """
-  pass
- def SurfaceParameter(self,u,v):
-  """
+        pass
+
+    def SurfaceParameter(self, u, v):
+        """
   SurfaceParameter(self: ObjRef) -> (Surface,float,float)
 
   
@@ -244,9 +263,10 @@ class ObjRef(object,IDisposable):
 
    Returns: If the selection point was on a surface,then the surface is returned.
   """
-  pass
- def TextDot(self):
-  """
+        pass
+
+    def TextDot(self):
+        """
   TextDot(self: ObjRef) -> TextDot
 
   
@@ -255,9 +275,10 @@ class ObjRef(object,IDisposable):
 
    Returns: A text dot; or null if the referenced object is not a text dot,or on error.
   """
-  pass
- def TextEntity(self):
-  """
+        pass
+
+    def TextEntity(self):
+        """
   TextEntity(self: ObjRef) -> TextEntity
 
   
@@ -266,9 +287,10 @@ class ObjRef(object,IDisposable):
 
    Returns: A text entity; or null if the referenced object is not a text entity,or on error.
   """
-  pass
- def Trim(self):
-  """
+        pass
+
+    def Trim(self):
+        """
   Trim(self: ObjRef) -> BrepTrim
 
   
@@ -283,41 +305,49 @@ class ObjRef(object,IDisposable):
 
    Returns: A boundary representation trim; or null on error
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,id: Guid)
 
   __new__(cls: type,rhinoObject: RhinoObject)
 
   __new__(cls: type,rhinoObject: RhinoObject,pickContext: PickContext)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- GeometryComponentIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the component index of the referenced (sub) geometry.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    GeometryComponentIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the component index of the referenced (sub) geometry.
 
    Some objects have subobjects that are valid pieces of geometry. For
 
@@ -335,8 +365,8 @@ Get: GeometryComponentIndex(self: ObjRef) -> ComponentIndex
 
 """
 
- ObjectId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the id of the referenced Rhino object.
+    ObjectId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns the id of the referenced Rhino object.
 
 
 
@@ -346,8 +376,10 @@ Get: ObjectId(self: ObjRef) -> Guid
 
 """
 
- RuntimeSerialNumber=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If > 0,then this is the value of a Rhino object's serial number field.
+    RuntimeSerialNumber = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """If > 0,then this is the value of a Rhino object's serial number field.
 
    The serial number is used instead of the pointer to prevent crashes in
 
@@ -364,5 +396,3 @@ Get: RuntimeSerialNumber(self: ObjRef) -> UInt32
 
 
 """
-
-

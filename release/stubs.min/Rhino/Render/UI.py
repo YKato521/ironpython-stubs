@@ -8,14 +8,16 @@
 # no functions
 # classes
 
+
 class IUserInterfaceSection:
- """
+    """
  Implement this interface in your user control to get UserInterfaceSection
 
     event notification.
  """
- def OnUserInterfaceSectionExpanding(self,userInterfaceSection,expanding):
-  """
+
+    def OnUserInterfaceSectionExpanding(self, userInterfaceSection, expanding):
+        """
   OnUserInterfaceSectionExpanding(self: IUserInterfaceSection,userInterfaceSection: UserInterfaceSection,expanding: bool)
 
    The UserInterfaceSection object that called this interface method.
@@ -28,9 +30,10 @@ class IUserInterfaceSection:
 
      collapsed.
   """
-  pass
- def UserInterfaceDisplayData(self,userInterfaceSection,renderContentList):
-  """
+        pass
+
+    def UserInterfaceDisplayData(self, userInterfaceSection, renderContentList):
+        """
   UserInterfaceDisplayData(self: IUserInterfaceSection,userInterfaceSection: UserInterfaceSection,renderContentList: Array[RenderContent])
 
    Called by UserInterfaceSection when the selected content changes or a
@@ -47,15 +50,18 @@ class IUserInterfaceSection:
 
    renderContentList: The currently selected list of content items to edit.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
 
 class UserInterfaceSection(object):
- """ Custom user interface section manager """
- def Expand(self,expand):
-  """
+    """ Custom user interface section manager """
+
+    def Expand(self, expand):
+        """
   Expand(self: UserInterfaceSection,expand: bool)
 
    Expand or collapse this content section.
@@ -64,10 +70,11 @@ class UserInterfaceSection(object):
 
    expand: If true then expand the content section otherwise collapse it.
   """
-  pass
- @staticmethod
- def FromWindow(window):
-  """
+        pass
+
+    @staticmethod
+    def FromWindow(window):
+        """
   FromWindow(window: IWin32Window) -> UserInterfaceSection
 
   
@@ -92,9 +99,10 @@ class UserInterfaceSection(object):
 
     window then return the object otherwise return null.
   """
-  pass
- def GetContentList(self):
-  """
+        pass
+
+    def GetContentList(self):
+        """
   GetContentList(self: UserInterfaceSection) -> Array[RenderContent]
 
   
@@ -103,9 +111,10 @@ class UserInterfaceSection(object):
 
    Returns: Returns a list of currently selected content items to be edited.
   """
-  pass
- def GetSibling(self,id):
-  """
+        pass
+
+    def GetSibling(self, id):
+        """
   GetSibling(self: UserInterfaceSection,id: Guid) -> UserInterfaceSection
 
   
@@ -122,9 +131,10 @@ class UserInterfaceSection(object):
 
     the specified Id or null if no match is found.
   """
-  pass
- def GetSiblings(self):
-  """
+        pass
+
+    def GetSiblings(self):
+        """
   GetSiblings(self: UserInterfaceSection) -> Array[UserInterfaceSection]
 
   
@@ -143,9 +153,10 @@ class UserInterfaceSection(object):
 
     sections container.
   """
-  pass
- def Show(self,visible):
-  """
+        pass
+
+    def Show(self, visible):
+        """
   Show(self: UserInterfaceSection,visible: bool)
 
    Show or hide this content section.
@@ -154,9 +165,12 @@ class UserInterfaceSection(object):
 
    visible: If true then show the content section otherwise hide it.
   """
-  pass
- RenderContent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The RenderContent object that created this user interface object.
+        pass
+
+    RenderContent = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The RenderContent object that created this user interface object.
 
 
 
@@ -166,8 +180,8 @@ Get: RenderContent(self: UserInterfaceSection) -> RenderContent
 
 """
 
- Window=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The user control associated with this user interface object.
+    Window = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The user control associated with this user interface object.
 
 
 
@@ -176,6 +190,3 @@ Get: Window(self: UserInterfaceSection) -> IWin32Window
 
 
 """
-
-
-

@@ -1,7 +1,8 @@
 class ContainerFilterService(object):
- """ Provides a base class for the container filter service. """
- def FilterComponents(self,components):
-  """
+    """ Provides a base class for the container filter service. """
+
+    def FilterComponents(self, components):
+        """
   FilterComponents(self: ContainerFilterService,components: ComponentCollection) -> ComponentCollection
 
   
@@ -14,4 +15,4 @@ class ContainerFilterService(object):
 
    Returns: A System.ComponentModel.ComponentCollection that represents a modified collection.
   """
-  pass
+        pass

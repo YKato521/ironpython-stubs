@@ -1,2 +1,2 @@
 class RadialDimensionObject(AnnotationObjectBase):
- """ A radius style dimension """
+    """ A radius style dimension """

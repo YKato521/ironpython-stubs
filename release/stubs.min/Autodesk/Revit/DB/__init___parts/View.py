@@ -1,7 +1,8 @@
-class View(Element,IDisposable):
- """ Base class for all types of views in Autodesk Revit. """
- def AddFilter(self,filterElementId):
-  """
+class View(Element, IDisposable):
+    """ Base class for all types of views in Autodesk Revit. """
+
+    def AddFilter(self, filterElementId):
+        """
   AddFilter(self: View,filterElementId: ElementId)
 
    Adds a filter to the view.
@@ -10,9 +11,10 @@ class View(Element,IDisposable):
 
    filterElementId: ElementId of the filter.
   """
-  pass
- def AllowsAnalysisDisplay(self):
-  """
+        pass
+
+    def AllowsAnalysisDisplay(self):
+        """
   AllowsAnalysisDisplay(self: View) -> bool
 
   
@@ -21,9 +23,10 @@ class View(Element,IDisposable):
 
    Returns: True if the view allows display of Analysis results,false otherwise.
   """
-  pass
- def ApplyViewTemplateParameters(self,otherView):
-  """
+        pass
+
+    def ApplyViewTemplateParameters(self, otherView):
+        """
   ApplyViewTemplateParameters(self: View,otherView: View)
 
    Applies to this view the parameters of the input view that are not controlled 
@@ -40,9 +43,10 @@ class View(Element,IDisposable):
 
     to be a valid template (property IsTemplate can be true or false).
   """
-  pass
- def AreGraphicsOverridesAllowed(self):
-  """
+        pass
+
+    def AreGraphicsOverridesAllowed(self):
+        """
   AreGraphicsOverridesAllowed(self: View) -> bool
 
   
@@ -51,9 +55,10 @@ class View(Element,IDisposable):
 
    Returns: True if Overriddes can be applied to the view,false otherwise.
   """
-  pass
- def CanCategoryBeHidden(self,elementId):
-  """
+        pass
+
+    def CanCategoryBeHidden(self, elementId):
+        """
   CanCategoryBeHidden(self: View,elementId: ElementId) -> bool
 
   
@@ -66,9 +71,10 @@ class View(Element,IDisposable):
 
    Returns: True if the category can be hidden,false otherwise.
   """
-  pass
- def CanCategoryBeHiddenTemporary(self,elementId):
-  """
+        pass
+
+    def CanCategoryBeHiddenTemporary(self, elementId):
+        """
   CanCategoryBeHiddenTemporary(self: View,elementId: ElementId) -> bool
 
   
@@ -79,9 +85,10 @@ class View(Element,IDisposable):
 
    elementId: Id of the category to be checked
   """
-  pass
- def CanEnableTemporaryViewPropertiesMode(self):
-  """
+        pass
+
+    def CanEnableTemporaryViewPropertiesMode(self):
+        """
   CanEnableTemporaryViewPropertiesMode(self: View) -> bool
 
   
@@ -94,9 +101,10 @@ class View(Element,IDisposable):
 
    Returns: True if view can use Temporary View Properties mode in current state.
   """
-  pass
- def CanModifyDetailLevel(self):
-  """
+        pass
+
+    def CanModifyDetailLevel(self):
+        """
   CanModifyDetailLevel(self: View) -> bool
 
   
@@ -105,9 +113,10 @@ class View(Element,IDisposable):
 
    Returns: True if Detail Level can be modified.
   """
-  pass
- def CanModifyDisplayStyle(self):
-  """
+        pass
+
+    def CanModifyDisplayStyle(self):
+        """
   CanModifyDisplayStyle(self: View) -> bool
 
   
@@ -116,9 +125,10 @@ class View(Element,IDisposable):
 
    Returns: True if DisplayStyle can be modified.
   """
-  pass
- def CanModifyViewDiscipline(self):
-  """
+        pass
+
+    def CanModifyViewDiscipline(self):
+        """
   CanModifyViewDiscipline(self: View) -> bool
 
   
@@ -127,9 +137,10 @@ class View(Element,IDisposable):
 
    Returns: True if View Discipline can be modified
   """
-  pass
- def CanUseDepthCueing(self):
-  """
+        pass
+
+    def CanUseDepthCueing(self):
+        """
   CanUseDepthCueing(self: View) -> bool
 
   
@@ -138,9 +149,10 @@ class View(Element,IDisposable):
 
    Returns: True if view can use Depth Cueing
   """
-  pass
- def CanUseTemporaryVisibilityModes(self):
-  """
+        pass
+
+    def CanUseTemporaryVisibilityModes(self):
+        """
   CanUseTemporaryVisibilityModes(self: View) -> bool
 
   
@@ -149,9 +161,10 @@ class View(Element,IDisposable):
 
    Returns: True if view can use temporary visibility modes
   """
-  pass
- def CanViewBeDuplicated(self,duplicateOption):
-  """
+        pass
+
+    def CanViewBeDuplicated(self, duplicateOption):
+        """
   CanViewBeDuplicated(self: View,duplicateOption: ViewDuplicateOption) -> bool
 
   
@@ -164,25 +177,28 @@ class View(Element,IDisposable):
 
    Returns: True if the view can be duplicated,false otherwise.
   """
-  pass
- def ConvertTemporaryHideIsolateToPermanent(self):
-  """
+        pass
+
+    def ConvertTemporaryHideIsolateToPermanent(self):
+        """
   ConvertTemporaryHideIsolateToPermanent(self: View)
 
    Convert all temporary hidden elements or categories to permanently hidden in 
 
     view.
   """
-  pass
- def ConvertToIndependent(self):
-  """
+        pass
+
+    def ConvertToIndependent(self):
+        """
   ConvertToIndependent(self: View)
 
    Convert the dependent view to independent.
   """
-  pass
- def DisableTemporaryViewMode(self,mode):
-  """
+        pass
+
+    def DisableTemporaryViewMode(self, mode):
+        """
   DisableTemporaryViewMode(self: View,mode: TemporaryViewMode)
 
    Disables the specified temporary view mode.
@@ -191,12 +207,14 @@ class View(Element,IDisposable):
 
    mode: The mode to disable.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def Duplicate(self,duplicateOption):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def Duplicate(self, duplicateOption):
+        """
   Duplicate(self: View,duplicateOption: ViewDuplicateOption) -> ElementId
 
   
@@ -209,16 +227,18 @@ class View(Element,IDisposable):
 
    Returns: The id of the newly created view.
   """
-  pass
- def EnableRevealHiddenMode(self):
-  """
+        pass
+
+    def EnableRevealHiddenMode(self):
+        """
   EnableRevealHiddenMode(self: View)
 
    Enables Reveal Hidden elements mode.
   """
-  pass
- def EnableTemporaryViewPropertiesMode(self,viewTemplateId):
-  """
+        pass
+
+    def EnableTemporaryViewPropertiesMode(self, viewTemplateId):
+        """
   EnableTemporaryViewPropertiesMode(self: View,viewTemplateId: ElementId) -> bool
 
   
@@ -239,9 +259,10 @@ class View(Element,IDisposable):
 
     View Properties was successfully started.
   """
-  pass
- def GetBackground(self):
-  """
+        pass
+
+    def GetBackground(self):
+        """
   GetBackground(self: View) -> ViewDisplayBackground
 
   
@@ -250,12 +271,14 @@ class View(Element,IDisposable):
 
    Returns: Current background.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: View,view: View) -> BoundingBoxXYZ """
-  pass
- def GetCategoryHidden(self,categoryId):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: View,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetCategoryHidden(self, categoryId):
+        """
   GetCategoryHidden(self: View,categoryId: ElementId) -> bool
 
   
@@ -272,9 +295,10 @@ class View(Element,IDisposable):
 
    Returns: True if the category is invisible (hidden),false otherwise.
   """
-  pass
- def GetCategoryOverrides(self,categoryId):
-  """
+        pass
+
+    def GetCategoryOverrides(self, categoryId):
+        """
   GetCategoryOverrides(self: View,categoryId: ElementId) -> OverrideGraphicSettings
 
   
@@ -291,9 +315,10 @@ class View(Element,IDisposable):
 
     been set for this view.
   """
-  pass
- def GetCropRegionShapeManager(self):
-  """
+        pass
+
+    def GetCropRegionShapeManager(self):
+        """
   GetCropRegionShapeManager(self: View) -> ViewCropRegionShapeManager
 
   
@@ -302,10 +327,11 @@ class View(Element,IDisposable):
 
    Returns: The crop region shape manager.
   """
-  pass
- @staticmethod
- def GetCropRegionShapeManagerForReferenceCallout(doc,callout):
-  """
+        pass
+
+    @staticmethod
+    def GetCropRegionShapeManagerForReferenceCallout(doc, callout):
+        """
   GetCropRegionShapeManagerForReferenceCallout(doc: Document,callout: ElementId) -> ViewCropRegionShapeManager
 
   
@@ -320,9 +346,10 @@ class View(Element,IDisposable):
 
    Returns: The crop region shape manager.
   """
-  pass
- def GetDependentViewIds(self):
-  """
+        pass
+
+    def GetDependentViewIds(self):
+        """
   GetDependentViewIds(self: View) -> ICollection[ElementId]
 
   
@@ -331,9 +358,10 @@ class View(Element,IDisposable):
 
    Returns: Ids of the dependent views.
   """
-  pass
- def GetDepthCueing(self):
-  """
+        pass
+
+    def GetDepthCueing(self):
+        """
   GetDepthCueing(self: View) -> ViewDisplayDepthCueing
 
   
@@ -342,9 +370,10 @@ class View(Element,IDisposable):
 
    Returns: Current depth cueing settings.
   """
-  pass
- def GetElementOverrides(self,elementId):
-  """
+        pass
+
+    def GetElementOverrides(self, elementId):
+        """
   GetElementOverrides(self: View,elementId: ElementId) -> OverrideGraphicSettings
 
   
@@ -357,9 +386,10 @@ class View(Element,IDisposable):
 
    Returns: An object representing all graphic overrides of the element elementId in view.
   """
-  pass
- def GetFilterOverrides(self,filterElementId):
-  """
+        pass
+
+    def GetFilterOverrides(self, filterElementId):
+        """
   GetFilterOverrides(self: View,filterElementId: ElementId) -> OverrideGraphicSettings
 
   
@@ -372,9 +402,10 @@ class View(Element,IDisposable):
 
    Returns: Object representing all graphic overrides of the filter in the view.
   """
-  pass
- def GetFilters(self):
-  """
+        pass
+
+    def GetFilters(self):
+        """
   GetFilters(self: View) -> ICollection[ElementId]
 
   
@@ -383,9 +414,10 @@ class View(Element,IDisposable):
 
    Returns: The ElementIds of the Filters.
   """
-  pass
- def GetFilterVisibility(self,filterElementId):
-  """
+        pass
+
+    def GetFilterVisibility(self, filterElementId):
+        """
   GetFilterVisibility(self: View,filterElementId: ElementId) -> bool
 
   
@@ -400,9 +432,10 @@ class View(Element,IDisposable):
 
     otherwise.
   """
-  pass
- def GetNonControlledTemplateParameterIds(self):
-  """
+        pass
+
+    def GetNonControlledTemplateParameterIds(self):
+        """
   GetNonControlledTemplateParameterIds(self: View) -> ICollection[ElementId]
 
   
@@ -415,9 +448,10 @@ class View(Element,IDisposable):
 
    Returns: The parameter ids that are not marked to be included.
   """
-  pass
- def GetPointCloudOverrides(self):
-  """
+        pass
+
+    def GetPointCloudOverrides(self):
+        """
   GetPointCloudOverrides(self: View) -> PointCloudOverrides
 
   
@@ -426,9 +460,10 @@ class View(Element,IDisposable):
 
    Returns: Point cloud overrides for the view
   """
-  pass
- def GetPrimaryViewId(self):
-  """
+        pass
+
+    def GetPrimaryViewId(self):
+        """
   GetPrimaryViewId(self: View) -> ElementId
 
   
@@ -437,9 +472,10 @@ class View(Element,IDisposable):
 
    Returns: The id of the primary view,or InvalidElementId if there is no primary view.
   """
-  pass
- def GetReferenceCallouts(self):
-  """
+        pass
+
+    def GetReferenceCallouts(self):
+        """
   GetReferenceCallouts(self: View) -> ICollection[ElementId]
 
   
@@ -448,9 +484,10 @@ class View(Element,IDisposable):
 
    Returns: Element ids of all reference callouts in the view.
   """
-  pass
- def GetReferenceElevations(self):
-  """
+        pass
+
+    def GetReferenceElevations(self):
+        """
   GetReferenceElevations(self: View) -> ICollection[ElementId]
 
   
@@ -459,9 +496,10 @@ class View(Element,IDisposable):
 
    Returns: Element ids of all reference elevations in the view.
   """
-  pass
- def GetReferenceSections(self):
-  """
+        pass
+
+    def GetReferenceSections(self):
+        """
   GetReferenceSections(self: View) -> ICollection[ElementId]
 
   
@@ -470,9 +508,10 @@ class View(Element,IDisposable):
 
    Returns: Element ids of all reference sections in the view.
   """
-  pass
- def GetSketchyLines(self):
-  """
+        pass
+
+    def GetSketchyLines(self):
+        """
   GetSketchyLines(self: View) -> ViewDisplaySketchyLines
 
   
@@ -481,9 +520,10 @@ class View(Element,IDisposable):
 
    Returns: Current sketchy lines settings.
   """
-  pass
- def GetTemplateParameterIds(self):
-  """
+        pass
+
+    def GetTemplateParameterIds(self):
+        """
   GetTemplateParameterIds(self: View) -> IList[ElementId]
 
   
@@ -496,9 +536,10 @@ class View(Element,IDisposable):
 
    Returns: The parameter ids that may be controlled.
   """
-  pass
- def GetTemporaryViewPropertiesId(self):
-  """
+        pass
+
+    def GetTemporaryViewPropertiesId(self):
+        """
   GetTemporaryViewPropertiesId(self: View) -> ElementId
 
   
@@ -511,9 +552,10 @@ class View(Element,IDisposable):
 
     InvalidElementId will be returned.
   """
-  pass
- def GetTemporaryViewPropertiesName(self):
-  """
+        pass
+
+    def GetTemporaryViewPropertiesName(self):
+        """
   GetTemporaryViewPropertiesName(self: View) -> str
 
   
@@ -526,9 +568,10 @@ class View(Element,IDisposable):
 
     returned.
   """
-  pass
- def GetViewDisplayModel(self):
-  """
+        pass
+
+    def GetViewDisplayModel(self):
+        """
   GetViewDisplayModel(self: View) -> ViewDisplayModel
 
   
@@ -537,9 +580,10 @@ class View(Element,IDisposable):
 
    Returns: Current view display model settings.
   """
-  pass
- def GetVisibility(self,category):
-  """
+        pass
+
+    def GetVisibility(self, category):
+        """
   GetVisibility(self: View,category: Category) -> bool
 
   
@@ -552,9 +596,10 @@ class View(Element,IDisposable):
 
    Returns: True if the category is visible,false otherwise.
   """
-  pass
- def GetWorksetVisibility(self,worksetId):
-  """
+        pass
+
+    def GetWorksetVisibility(self, worksetId):
+        """
   GetWorksetVisibility(self: View,worksetId: WorksetId) -> WorksetVisibility
 
   
@@ -567,9 +612,10 @@ class View(Element,IDisposable):
 
    Returns: The visibility of a workset for this particular view.
   """
-  pass
- def GetWorksharingDisplayMode(self):
-  """
+        pass
+
+    def GetWorksharingDisplayMode(self):
+        """
   GetWorksharingDisplayMode(self: View) -> WorksharingDisplayMode
 
   
@@ -578,9 +624,10 @@ class View(Element,IDisposable):
 
    Returns: The active worksharing display mode in this view.
   """
-  pass
- def HasDetailLevel(self):
-  """
+        pass
+
+    def HasDetailLevel(self):
+        """
   HasDetailLevel(self: View) -> bool
 
   
@@ -589,9 +636,10 @@ class View(Element,IDisposable):
 
    Returns: True if the view has a Detail Level,false otherwise
   """
-  pass
- def HasDisplayStyle(self):
-  """
+        pass
+
+    def HasDisplayStyle(self):
+        """
   HasDisplayStyle(self: View) -> bool
 
   
@@ -600,9 +648,10 @@ class View(Element,IDisposable):
 
    Returns: True if view has a DisplayStyle property
   """
-  pass
- def HasViewDiscipline(self):
-  """
+        pass
+
+    def HasViewDiscipline(self):
+        """
   HasViewDiscipline(self: View) -> bool
 
   
@@ -611,19 +660,22 @@ class View(Element,IDisposable):
 
    Returns: True if the view has a Discipline property
   """
-  pass
- def HideActiveWorkPlane(self):
-  """
+        pass
+
+    def HideActiveWorkPlane(self):
+        """
   HideActiveWorkPlane(self: View)
 
    Hide the active work plane of the view.
   """
-  pass
- def HideCategoriesTemporary(self,elementIds):
-  """ HideCategoriesTemporary(self: View,elementIds: ICollection[ElementId]) """
-  pass
- def HideCategoryTemporary(self,elementId):
-  """
+        pass
+
+    def HideCategoriesTemporary(self, elementIds):
+        """ HideCategoriesTemporary(self: View,elementIds: ICollection[ElementId]) """
+        pass
+
+    def HideCategoryTemporary(self, elementId):
+        """
   HideCategoryTemporary(self: View,elementId: ElementId)
 
    Set one category to be temporarily hidden in the view.
@@ -632,15 +684,18 @@ class View(Element,IDisposable):
 
    elementId: Id of the category to be hidden
   """
-  pass
- def HideElements(self,elementIdSet):
-  """ HideElements(self: View,elementIdSet: ICollection[ElementId]) """
-  pass
- def HideElementsTemporary(self,elementIdSet):
-  """ HideElementsTemporary(self: View,elementIdSet: ICollection[ElementId]) """
-  pass
- def HideElementTemporary(self,elementId):
-  """
+        pass
+
+    def HideElements(self, elementIdSet):
+        """ HideElements(self: View,elementIdSet: ICollection[ElementId]) """
+        pass
+
+    def HideElementsTemporary(self, elementIdSet):
+        """ HideElementsTemporary(self: View,elementIdSet: ICollection[ElementId]) """
+        pass
+
+    def HideElementTemporary(self, elementId):
+        """
   HideElementTemporary(self: View,elementId: ElementId)
 
    Set one element to be temporarily hidden in the view.
@@ -649,9 +704,10 @@ class View(Element,IDisposable):
 
    elementId: The id of the element to be temporarily hidden.
   """
-  pass
- def IsCategoryOverridable(self,categoryId):
-  """
+        pass
+
+    def IsCategoryOverridable(self, categoryId):
+        """
   IsCategoryOverridable(self: View,categoryId: ElementId) -> bool
 
   
@@ -664,9 +720,10 @@ class View(Element,IDisposable):
 
    Returns: True if category can be overridden,false otherwise.
   """
-  pass
- def IsElementVisibleInTemporaryViewMode(self,mode,id):
-  """
+        pass
+
+    def IsElementVisibleInTemporaryViewMode(self, mode, id):
+        """
   IsElementVisibleInTemporaryViewMode(self: View,mode: TemporaryViewMode,id: ElementId) -> bool
 
   
@@ -691,9 +748,10 @@ class View(Element,IDisposable):
 
    Returns: True if the element is visible,false if the element is hidden in the view mode.
   """
-  pass
- def IsFilterApplied(self,filterElementId):
-  """
+        pass
+
+    def IsFilterApplied(self, filterElementId):
+        """
   IsFilterApplied(self: View,filterElementId: ElementId) -> bool
 
   
@@ -706,9 +764,10 @@ class View(Element,IDisposable):
 
    Returns: True if the filter is applied to the view,false otherwise.
   """
-  pass
- def IsInTemporaryViewMode(self,mode):
-  """
+        pass
+
+    def IsInTemporaryViewMode(self, mode):
+        """
   IsInTemporaryViewMode(self: View,mode: TemporaryViewMode) -> bool
 
   
@@ -721,12 +780,14 @@ class View(Element,IDisposable):
 
    Returns: True if this view is in the temporary view mode indicated,false otherwise.
   """
-  pass
- def IsolateCategoriesTemporary(self,elementIds):
-  """ IsolateCategoriesTemporary(self: View,elementIds: ICollection[ElementId]) """
-  pass
- def IsolateCategoryTemporary(self,elementId):
-  """
+        pass
+
+    def IsolateCategoriesTemporary(self, elementIds):
+        """ IsolateCategoriesTemporary(self: View,elementIds: ICollection[ElementId]) """
+        pass
+
+    def IsolateCategoryTemporary(self, elementId):
+        """
   IsolateCategoryTemporary(self: View,elementId: ElementId)
 
    Set one category to be temporarily isolated in the view.
@@ -735,12 +796,14 @@ class View(Element,IDisposable):
 
    elementId: Id of category to be isolated.
   """
-  pass
- def IsolateElementsTemporary(self,elementIds):
-  """ IsolateElementsTemporary(self: View,elementIds: ICollection[ElementId]) """
-  pass
- def IsolateElementTemporary(self,elementId):
-  """
+        pass
+
+    def IsolateElementsTemporary(self, elementIds):
+        """ IsolateElementsTemporary(self: View,elementIds: ICollection[ElementId]) """
+        pass
+
+    def IsolateElementTemporary(self, elementId):
+        """
   IsolateElementTemporary(self: View,elementId: ElementId)
 
    Set one element to be temporarily isolated in the view.
@@ -749,9 +812,10 @@ class View(Element,IDisposable):
 
    elementId: Id of element to be isolated.
   """
-  pass
- def IsTemporaryHideIsolateActive(self):
-  """
+        pass
+
+    def IsTemporaryHideIsolateActive(self):
+        """
   IsTemporaryHideIsolateActive(self: View) -> bool
 
   
@@ -762,9 +826,10 @@ class View(Element,IDisposable):
 
     otherwise.
   """
-  pass
- def IsTemporaryViewPropertiesModeEnabled(self):
-  """
+        pass
+
+    def IsTemporaryViewPropertiesModeEnabled(self):
+        """
   IsTemporaryViewPropertiesModeEnabled(self: View) -> bool
 
   
@@ -773,10 +838,11 @@ class View(Element,IDisposable):
 
     otherwise.
   """
-  pass
- @staticmethod
- def IsValidViewScale(viewScale):
-  """
+        pass
+
+    @staticmethod
+    def IsValidViewScale(viewScale):
+        """
   IsValidViewScale(viewScale: int) -> bool
 
   
@@ -789,9 +855,10 @@ class View(Element,IDisposable):
 
    Returns: True if the view scale is within the allowable range,false otherwise.
   """
-  pass
- def IsValidViewTemplate(self,templateId):
-  """
+        pass
+
+    def IsValidViewTemplate(self, templateId):
+        """
   IsValidViewTemplate(self: View,templateId: ElementId) -> bool
 
   
@@ -810,9 +877,10 @@ class View(Element,IDisposable):
 
     view,or if it is InvalidElementId,false otherwise.
   """
-  pass
- def IsWorksetVisible(self,worksetId):
-  """
+        pass
+
+    def IsWorksetVisible(self, worksetId):
+        """
   IsWorksetVisible(self: View,worksetId: WorksetId) -> bool
 
   
@@ -825,9 +893,10 @@ class View(Element,IDisposable):
 
    Returns: Whether the workset is visible.
   """
-  pass
- def Print(self,*__args):
-  """
+        pass
+
+    def Print(self, *__args):
+        """
   Print(self: View,viewTemplate: View,useCurrentPrintSettings: bool)
 
    Print this view with the given view template,and either the view's document's 
@@ -884,12 +953,14 @@ class View(Element,IDisposable):
 
     the current active document.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def RemoveFilter(self,filterElementId):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def RemoveFilter(self, filterElementId):
+        """
   RemoveFilter(self: View,filterElementId: ElementId)
 
    Removes a filter from the view.
@@ -898,9 +969,10 @@ class View(Element,IDisposable):
 
    filterElementId: ElementId of the filter.
   """
-  pass
- def SetBackground(self,background):
-  """
+        pass
+
+    def SetBackground(self, background):
+        """
   SetBackground(self: View,background: ViewDisplayBackground)
 
    Sets the background for the view.  Background can only be set for 3d views and 
@@ -913,9 +985,10 @@ class View(Element,IDisposable):
 
    background: Background to set.  See 'ViewDisplayBackground' class and its 'create' methods.
   """
-  pass
- def SetCategoryHidden(self,categoryId,hide):
-  """
+        pass
+
+    def SetCategoryHidden(self, categoryId, hide):
+        """
   SetCategoryHidden(self: View,categoryId: ElementId,hide: bool)
 
    Sets if elements of the given category will be visible in this view.
@@ -926,9 +999,10 @@ class View(Element,IDisposable):
 
    hide: True to make elements of this category invisible,false to make them visible.
   """
-  pass
- def SetCategoryOverrides(self,categoryId,overrideGraphicSettings):
-  """
+        pass
+
+    def SetCategoryOverrides(self, categoryId, overrideGraphicSettings):
+        """
   SetCategoryOverrides(self: View,categoryId: ElementId,overrideGraphicSettings: OverrideGraphicSettings)
 
    Sets graphic overrides for a category in view.
@@ -939,9 +1013,10 @@ class View(Element,IDisposable):
 
    overrideGraphicSettings: Object representing all graphic overrides of the category categoryId in view.
   """
-  pass
- def SetDepthCueing(self,depthCueing):
-  """
+        pass
+
+    def SetDepthCueing(self, depthCueing):
+        """
   SetDepthCueing(self: View,depthCueing: ViewDisplayDepthCueing)
 
    Sets the depth cueing settings for the view.
@@ -950,9 +1025,10 @@ class View(Element,IDisposable):
 
    depthCueing: Depth cueing settings to set.
   """
-  pass
- def SetElementOverrides(self,elementId,overrideGraphicSettings):
-  """
+        pass
+
+    def SetElementOverrides(self, elementId, overrideGraphicSettings):
+        """
   SetElementOverrides(self: View,elementId: ElementId,overrideGraphicSettings: OverrideGraphicSettings)
 
    Sets graphic overrides for an element in the view.
@@ -963,12 +1039,14 @@ class View(Element,IDisposable):
 
    overrideGraphicSettings: An object representing all graphic overrides of the element in view.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetFilterOverrides(self,filterElementId,overrideGraphicSettings):
-  """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetFilterOverrides(self, filterElementId, overrideGraphicSettings):
+        """
   SetFilterOverrides(self: View,filterElementId: ElementId,overrideGraphicSettings: OverrideGraphicSettings)
 
    Sets the overrides associated with a filter.
@@ -979,9 +1057,10 @@ class View(Element,IDisposable):
 
    overrideGraphicSettings: The overrides to apply to the filter.
   """
-  pass
- def SetFilterVisibility(self,filterElementId,visibility):
-  """
+        pass
+
+    def SetFilterVisibility(self, filterElementId, visibility):
+        """
   SetFilterVisibility(self: View,filterElementId: ElementId,visibility: bool)
 
    Sets the visibility of the elements associated with a filter.
@@ -994,12 +1073,14 @@ class View(Element,IDisposable):
 
     otherwise.
   """
-  pass
- def SetNonControlledTemplateParameterIds(self,newSet):
-  """ SetNonControlledTemplateParameterIds(self: View,newSet: ICollection[ElementId]) """
-  pass
- def SetSketchyLines(self,sketchyLines):
-  """
+        pass
+
+    def SetNonControlledTemplateParameterIds(self, newSet):
+        """ SetNonControlledTemplateParameterIds(self: View,newSet: ICollection[ElementId]) """
+        pass
+
+    def SetSketchyLines(self, sketchyLines):
+        """
   SetSketchyLines(self: View,sketchyLines: ViewDisplaySketchyLines)
 
    Sets the sketchy lines settings for the view.
@@ -1008,9 +1089,10 @@ class View(Element,IDisposable):
 
    sketchyLines: Sketchy Lines settings to set.
   """
-  pass
- def SetViewDisplayModel(self,viewDisplayModel):
-  """
+        pass
+
+    def SetViewDisplayModel(self, viewDisplayModel):
+        """
   SetViewDisplayModel(self: View,viewDisplayModel: ViewDisplayModel)
 
    Sets the view display model settings for the view.
@@ -1019,9 +1101,10 @@ class View(Element,IDisposable):
 
    viewDisplayModel: View display model settings to set.
   """
-  pass
- def SetVisibility(self,category,visible):
-  """
+        pass
+
+    def SetVisibility(self, category, visible):
+        """
   SetVisibility(self: View,category: Category,visible: bool)
 
    Sets if elements of the given category will be visible in this view.
@@ -1032,9 +1115,10 @@ class View(Element,IDisposable):
 
    visible: True to make elements of this category visible,false to make them invisible.
   """
-  pass
- def SetWorksetVisibility(self,worksetId,visible):
-  """
+        pass
+
+    def SetWorksetVisibility(self, worksetId, visible):
+        """
   SetWorksetVisibility(self: View,worksetId: WorksetId,visible: WorksetVisibility)
 
    Sets visibility for a workset in this view.
@@ -1045,9 +1129,10 @@ class View(Element,IDisposable):
 
    visible: The visibility of the workset.
   """
-  pass
- def SetWorksharingDisplayMode(self,displayMode):
-  """
+        pass
+
+    def SetWorksharingDisplayMode(self, displayMode):
+        """
   SetWorksharingDisplayMode(self: View,displayMode: WorksharingDisplayMode)
 
    Sets the worksharing display mode for this view.
@@ -1056,16 +1141,18 @@ class View(Element,IDisposable):
 
    displayMode: The desired display mode.  "Off" will turn off all worksharing display modes.
   """
-  pass
- def ShowActiveWorkPlane(self):
-  """
+        pass
+
+    def ShowActiveWorkPlane(self):
+        """
   ShowActiveWorkPlane(self: View)
 
    Show the active work plane of the view.
   """
-  pass
- def SupportsRevealConstraints(self):
-  """
+        pass
+
+    def SupportsRevealConstraints(self):
+        """
   SupportsRevealConstraints(self: View) -> bool
 
   
@@ -1076,9 +1163,10 @@ class View(Element,IDisposable):
 
     activated.
   """
-  pass
- def SupportsWorksharingDisplayMode(self,mode):
-  """
+        pass
+
+    def SupportsWorksharingDisplayMode(self, mode):
+        """
   SupportsWorksharingDisplayMode(self: View,mode: WorksharingDisplayMode) -> bool
 
   
@@ -1101,21 +1189,28 @@ class View(Element,IDisposable):
 
     workshared document.
   """
-  pass
- def UnhideElements(self,elementIdSet):
-  """ UnhideElements(self: View,elementIdSet: ICollection[ElementId]) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- AnalysisDisplayStyleId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Element id of Analysis Display Style associated with the view.
+        pass
+
+    def UnhideElements(self, elementIdSet):
+        """ UnhideElements(self: View,elementIdSet: ICollection[ElementId]) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    AnalysisDisplayStyleId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Element id of Analysis Display Style associated with the view.
 
 
 
@@ -1127,8 +1222,10 @@ Set: AnalysisDisplayStyleId(self: View)=value
 
 """
 
- AreAnalyticalModelCategoriesHidden=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if analytical model categories are currently hidden in the view.
+    AreAnalyticalModelCategoriesHidden = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if analytical model categories are currently hidden in the view.
 
 
 
@@ -1140,8 +1237,10 @@ Set: AreAnalyticalModelCategoriesHidden(self: View)=value
 
 """
 
- AreAnnotationCategoriesHidden=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if annotation categories are currently hidden in the view.
+    AreAnnotationCategoriesHidden = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if annotation categories are currently hidden in the view.
 
 
 
@@ -1153,8 +1252,10 @@ Set: AreAnnotationCategoriesHidden(self: View)=value
 
 """
 
- AreImportCategoriesHidden=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if import categories are currently hidden in the view.
+    AreImportCategoriesHidden = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if import categories are currently hidden in the view.
 
 
 
@@ -1166,8 +1267,10 @@ Set: AreImportCategoriesHidden(self: View)=value
 
 """
 
- AreModelCategoriesHidden=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if model categories are currently hidden in the view.
+    AreModelCategoriesHidden = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if model categories are currently hidden in the view.
 
 
 
@@ -1179,8 +1282,10 @@ Set: AreModelCategoriesHidden(self: View)=value
 
 """
 
- ArePointCloudsHidden=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if point clouds are currently hidden in the view.
+    ArePointCloudsHidden = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if point clouds are currently hidden in the view.
 
 
 
@@ -1192,8 +1297,10 @@ Set: ArePointCloudsHidden(self: View)=value
 
 """
 
- AssociatedAssemblyInstanceId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Id of the assembly instance that owns the assembly view.
+    AssociatedAssemblyInstanceId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The Id of the assembly instance that owns the assembly view.
 
 
 
@@ -1203,8 +1310,10 @@ Get: AssociatedAssemblyInstanceId(self: View) -> ElementId
 
 """
 
- CanBePrinted=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Test whether the view can be printed.
+    CanBePrinted = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Test whether the view can be printed.
 
 
 
@@ -1214,8 +1323,8 @@ Get: CanBePrinted(self: View) -> bool
 
 """
 
- CropBox=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Crop Box applied to the view,or an outline encompassing the crop region applied to the view.
+    CropBox = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The Crop Box applied to the view,or an outline encompassing the crop region applied to the view.
 
 
 
@@ -1227,8 +1336,10 @@ Set: CropBox(self: View)=value
 
 """
 
- CropBoxActive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether or not the Crop Box/Region is active for the view.
+    CropBoxActive = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether or not the Crop Box/Region is active for the view.
 
 
 
@@ -1240,8 +1351,10 @@ Set: CropBoxActive(self: View)=value
 
 """
 
- CropBoxVisible=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether or not the Crop Box/Region is visible for the view.
+    CropBoxVisible = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether or not the Crop Box/Region is visible for the view.
 
 
 
@@ -1253,8 +1366,10 @@ Set: CropBoxVisible(self: View)=value
 
 """
 
- DetailLevel=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The detail level of this view.
+    DetailLevel = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The detail level of this view.
 
 
 
@@ -1266,8 +1381,10 @@ Set: DetailLevel(self: View)=value
 
 """
 
- Discipline=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Discipline of the view.
+    Discipline = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The Discipline of the view.
 
 
 
@@ -1279,8 +1396,10 @@ Set: Discipline(self: View)=value
 
 """
 
- DisplayStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The DisplayStyle of the view.
+    DisplayStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The DisplayStyle of the view.
 
    Returns DisplayStyle.Wireframe if the view has no display style.
 
@@ -1294,8 +1413,8 @@ Set: DisplayStyle(self: View)=value
 
 """
 
- GenLevel=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The level for the view.
+    GenLevel = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The level for the view.
 
 
 
@@ -1305,8 +1424,10 @@ Get: GenLevel(self: View) -> Level
 
 """
 
- IsAssemblyView=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the view is assembly view.
+    IsAssemblyView = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the view is assembly view.
 
 
 
@@ -1316,8 +1437,10 @@ Get: IsAssemblyView(self: View) -> bool
 
 """
 
- IsTemplate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Test whether the view is a view template.
+    IsTemplate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Test whether the view is a view template.
 
 
 
@@ -1327,8 +1450,8 @@ Get: IsTemplate(self: View) -> bool
 
 """
 
- Origin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the origin of the screen.
+    Origin = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns the origin of the screen.
 
 
 
@@ -1338,8 +1461,8 @@ Get: Origin(self: View) -> XYZ
 
 """
 
- Outline=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The bounds of the view in paper space (in inches).
+    Outline = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The bounds of the view in paper space (in inches).
 
 
 
@@ -1349,8 +1472,10 @@ Get: Outline(self: View) -> BoundingBoxUV
 
 """
 
- PartsVisibility=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The visibility setting for parts in this view.
+    PartsVisibility = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The visibility setting for parts in this view.
 
 
 
@@ -1362,8 +1487,10 @@ Set: PartsVisibility(self: View)=value
 
 """
 
- RevealConstraintsMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether the Reveal Constraints mode is activated in the view.
+    RevealConstraintsMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates whether the Reveal Constraints mode is activated in the view.
 
 
 
@@ -1375,8 +1502,10 @@ Set: RevealConstraintsMode(self: View)=value
 
 """
 
- RightDirection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The direction towards the right side of the screen.
+    RightDirection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The direction towards the right side of the screen.
 
 
 
@@ -1386,8 +1515,8 @@ Get: RightDirection(self: View) -> XYZ
 
 """
 
- Scale=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The scale of the view.
+    Scale = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The scale of the view.
 
 
 
@@ -1399,8 +1528,10 @@ Set: Scale(self: View)=value
 
 """
 
- ShadowIntensity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The intesity of cast shadows - 0=no shadows,100=black.
+    ShadowIntensity = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The intesity of cast shadows - 0=no shadows,100=black.
 
 
 
@@ -1412,8 +1543,10 @@ Set: ShadowIntensity(self: View)=value
 
 """
 
- SketchPlane=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The sketch plane assigned to the view for model curve creation.
+    SketchPlane = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The sketch plane assigned to the view for model curve creation.
 
 
 
@@ -1425,8 +1558,10 @@ Set: SketchPlane(self: View)=value
 
 """
 
- SunAndShadowSettings=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The sun and shadow settings assigned to the view for shadow calculation and rendering.
+    SunAndShadowSettings = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The sun and shadow settings assigned to the view for shadow calculation and rendering.
 
 
 
@@ -1436,8 +1571,10 @@ Get: SunAndShadowSettings(self: View) -> SunAndShadowSettings
 
 """
 
- SunlightIntensity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The intensity of the simulated (directional) sunlight.  0=no directional light; maximum value is 100.
+    SunlightIntensity = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The intensity of the simulated (directional) sunlight.  0=no directional light; maximum value is 100.
 
 
 
@@ -1449,8 +1586,10 @@ Set: SunlightIntensity(self: View)=value
 
 """
 
- TemporaryViewModes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Data of temporary view modes associated with this view.
+    TemporaryViewModes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Data of temporary view modes associated with this view.
 
 
 
@@ -1460,8 +1599,8 @@ Get: TemporaryViewModes(self: View) -> TemporaryViewModes
 
 """
 
- Title=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The view title. This consists of the view name plus other modifiers,such as the view type,
+    Title = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The view title. This consists of the view name plus other modifiers,such as the view type,
 
    sheet number,area scheme,and/or assembly type,depending on the specifics of the view.
 
@@ -1473,8 +1612,10 @@ Get: Title(self: View) -> str
 
 """
 
- UpDirection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The direction towards the top of the screen.
+    UpDirection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The direction towards the top of the screen.
 
 
 
@@ -1484,8 +1625,10 @@ Get: UpDirection(self: View) -> XYZ
 
 """
 
- ViewDirection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The direction towards the viewer.
+    ViewDirection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The direction towards the viewer.
 
 
 
@@ -1495,8 +1638,8 @@ Get: ViewDirection(self: View) -> XYZ
 
 """
 
- ViewName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The name of the view.
+    ViewName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The name of the view.
 
 
 
@@ -1508,8 +1651,10 @@ Set: ViewName(self: View)=value
 
 """
 
- ViewTemplateId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the template view that controls this view's parameters.
+    ViewTemplateId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The id of the template view that controls this view's parameters.
 
 
 
@@ -1521,8 +1666,8 @@ Set: ViewTemplateId(self: View)=value
 
 """
 
- ViewType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The type of the view.
+    ViewType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The type of the view.
 
 
 
@@ -1531,5 +1676,3 @@ Get: ViewType(self: View) -> ViewType
 
 
 """
-
-

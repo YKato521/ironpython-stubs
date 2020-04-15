@@ -1,13 +1,16 @@
-class Rotation3DKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumerable):
- """
+class Rotation3DKeyFrameCollection(
+    Freezable, ISealable, IList, ICollection, IEnumerable
+):
+    """
  Represents a collection of System.Windows.Media.Animation.Rotation3DKeyFrame objects.
 
  
 
  Rotation3DKeyFrameCollection()
  """
- def Add(self,keyFrame):
-  """
+
+    def Add(self, keyFrame):
+        """
   Add(self: Rotation3DKeyFrameCollection,keyFrame: Rotation3DKeyFrame) -> int
 
   
@@ -20,16 +23,18 @@ class Rotation3DKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumer
 
    Returns: The index at which the keyFrame was added.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: Rotation3DKeyFrameCollection)
 
    Removes all System.Windows.Media.Animation.Rotation3DKeyFrame objects from the collection.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: Rotation3DKeyFrameCollection) -> Rotation3DKeyFrameCollection
 
   
@@ -48,9 +53,10 @@ class Rotation3DKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumer
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCore(self,*args):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """
   CloneCore(self: Rotation3DKeyFrameCollection,sourceFreezable: Freezable)
 
    Makes this instance a deep copy of the specified 
@@ -67,9 +73,10 @@ class Rotation3DKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumer
 
    sourceFreezable: The System.Windows.Media.Animation.Rotation3DKeyFrameCollection to clone.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """
   CloneCurrentValueCore(self: Rotation3DKeyFrameCollection,sourceFreezable: Freezable)
 
    Makes this instance a modifiable deep copy of the specified 
@@ -84,9 +91,10 @@ class Rotation3DKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumer
 
    sourceFreezable: The System.Windows.Media.Animation.Rotation3DKeyFrameCollection to clone.
   """
-  pass
- def Contains(self,keyFrame):
-  """
+        pass
+
+    def Contains(self, keyFrame):
+        """
   Contains(self: Rotation3DKeyFrameCollection,keyFrame: Rotation3DKeyFrame) -> bool
 
   
@@ -103,9 +111,10 @@ class Rotation3DKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumer
 
    Returns: true if the collection contains keyFrame; otherwise,false.
   """
-  pass
- def CopyTo(self,array,index):
-  """
+        pass
+
+    def CopyTo(self, array, index):
+        """
   CopyTo(self: Rotation3DKeyFrameCollection,array: Array[Rotation3DKeyFrame],index: int)
 
    Copies all of the System.Windows.Media.Animation.Rotation3DKeyFrame objects in a collection to a 
@@ -120,9 +129,10 @@ class Rotation3DKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumer
 
    index: Index position in the array to which the contents of the collection are copied.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -131,9 +141,10 @@ class Rotation3DKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumer
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """
   CreateInstanceCore(self: Rotation3DKeyFrameCollection) -> Freezable
 
   
@@ -142,9 +153,10 @@ class Rotation3DKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumer
 
    Returns: A frozen instance of System.Windows.Media.Animation.Rotation3DKeyFrameCollection.
   """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: Rotation3DKeyFrameCollection,isChecking: bool) -> bool
 
   
@@ -167,9 +179,10 @@ class Rotation3DKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumer
 
     having begun to change the frozen status of this object.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """
   GetAsFrozenCore(self: Rotation3DKeyFrameCollection,sourceFreezable: Freezable)
 
    Makes this instance a clone of the specified 
@@ -182,9 +195,10 @@ class Rotation3DKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumer
 
    sourceFreezable: The System.Windows.Media.Animation.Rotation3DKeyFrameCollection object to clone.
   """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """
   GetCurrentValueAsFrozenCore(self: Rotation3DKeyFrameCollection,sourceFreezable: Freezable)
 
    Makes this instance a frozen clone of the specified 
@@ -199,9 +213,10 @@ class Rotation3DKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumer
 
    sourceFreezable: The System.Windows.Media.Animation.Rotation3DKeyFrameCollection to copy and freeze.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: Rotation3DKeyFrameCollection) -> IEnumerator
 
   
@@ -210,9 +225,10 @@ class Rotation3DKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumer
 
    Returns: An System.Collections.IEnumerator that can iterate through the collection.
   """
-  pass
- def IndexOf(self,keyFrame):
-  """
+        pass
+
+    def IndexOf(self, keyFrame):
+        """
   IndexOf(self: Rotation3DKeyFrameCollection,keyFrame: Rotation3DKeyFrame) -> int
 
   
@@ -231,9 +247,10 @@ class Rotation3DKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumer
 
     otherwise,-1.
   """
-  pass
- def Insert(self,index,keyFrame):
-  """
+        pass
+
+    def Insert(self, index, keyFrame):
+        """
   Insert(self: Rotation3DKeyFrameCollection,index: int,keyFrame: Rotation3DKeyFrame)
 
    Inserts a System.Windows.Media.Animation.Rotation3DKeyFrame into a specific location within the 
@@ -248,16 +265,18 @@ class Rotation3DKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumer
 
    keyFrame: The System.Windows.Media.Animation.Rotation3DKeyFrame object to insert in the collection.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: Freezable)
 
    Called when the current System.Windows.Freezable object is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -288,9 +307,10 @@ class Rotation3DKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumer
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -307,9 +327,10 @@ class Rotation3DKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumer
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -318,9 +339,10 @@ class Rotation3DKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumer
 
     members that are not dependency properties.
   """
-  pass
- def Remove(self,keyFrame):
-  """
+        pass
+
+    def Remove(self, keyFrame):
+        """
   Remove(self: Rotation3DKeyFrameCollection,keyFrame: Rotation3DKeyFrame)
 
    Removes a System.Windows.Media.Animation.Rotation3DKeyFrame object from the collection.
@@ -329,9 +351,10 @@ class Rotation3DKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumer
 
    keyFrame: Identifies the System.Windows.Media.Animation.Rotation3DKeyFrame to remove from the collection.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: Rotation3DKeyFrameCollection,index: int)
 
    Removes the System.Windows.Media.Animation.Rotation3DKeyFrame at the specified index position 
@@ -344,9 +367,10 @@ class Rotation3DKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumer
 
    index: Index position of the System.Windows.Media.Animation.Rotation3DKeyFrame to be removed.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -363,9 +387,10 @@ class Rotation3DKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumer
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -376,9 +401,10 @@ class Rotation3DKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumer
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -387,12 +413,14 @@ class Rotation3DKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumer
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IList,value: object) -> bool
 
   
@@ -405,24 +433,30 @@ class Rotation3DKeyFrameCollection(Freezable,ISealable,IList,ICollection,IEnumer
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of key frames contained in the System.Windows.Media.Animation.Rotation3DKeyFrameCollection.
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of key frames contained in the System.Windows.Media.Animation.Rotation3DKeyFrameCollection.
 
 
 
@@ -432,8 +466,10 @@ Get: Count(self: Rotation3DKeyFrameCollection) -> int
 
 """
 
- IsFixedSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates if the collection is frozen.
+    IsFixedSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates if the collection is frozen.
 
 
 
@@ -443,8 +479,10 @@ Get: IsFixedSize(self: Rotation3DKeyFrameCollection) -> bool
 
 """
 
- IsReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates if the collection is read-only.
+    IsReadOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates if the collection is read-only.
 
 
 
@@ -454,8 +492,10 @@ Get: IsReadOnly(self: Rotation3DKeyFrameCollection) -> bool
 
 """
 
- IsSynchronized=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether access to the collection is synchronized (thread-safe).
+    IsSynchronized = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether access to the collection is synchronized (thread-safe).
 
 
 
@@ -465,8 +505,8 @@ Get: IsSynchronized(self: Rotation3DKeyFrameCollection) -> bool
 
 """
 
- SyncRoot=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an object that can be used to synchronize access to the collection.
+    SyncRoot = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an object that can be used to synchronize access to the collection.
 
 
 
@@ -476,6 +516,4 @@ Get: SyncRoot(self: Rotation3DKeyFrameCollection) -> object
 
 """
 
-
- Empty=None
-
+    Empty = None

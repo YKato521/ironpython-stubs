@@ -1,5 +1,5 @@
-class BinaryWriter(object,IDisposable):
- """
+class BinaryWriter(object, IDisposable):
+    """
  Writes primitive types in binary to a stream and supports writing strings in a specific encoding.
 
  
@@ -10,31 +10,35 @@ class BinaryWriter(object,IDisposable):
 
  BinaryWriter(output: Stream,encoding: Encoding,leaveOpen: bool)
  """
- def Close(self):
-  """
+
+    def Close(self):
+        """
   Close(self: BinaryWriter)
 
    Closes the current System.IO.BinaryWriter and the underlying stream.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: BinaryWriter)
 
    Releases all resources used by the current instance of the System.IO.BinaryWriter class.
   """
-  pass
- def Flush(self):
-  """
+        pass
+
+    def Flush(self):
+        """
   Flush(self: BinaryWriter)
 
    Clears all buffers for the current writer and causes any buffered data to be written to the 
 
     underlying device.
   """
-  pass
- def Seek(self,offset,origin):
-  """
+        pass
+
+    def Seek(self, offset, origin):
+        """
   Seek(self: BinaryWriter,offset: int,origin: SeekOrigin) -> Int64
 
   
@@ -53,9 +57,10 @@ class BinaryWriter(object,IDisposable):
 
    Returns: The position with the current stream.
   """
-  pass
- def Write(self,*__args):
-  """
+        pass
+
+    def Write(self, *__args):
+        """
   Write(self: BinaryWriter,value: UInt16)
 
    Writes a two-byte unsigned integer to the current stream and advances the stream position by two 
@@ -264,9 +269,10 @@ class BinaryWriter(object,IDisposable):
 
    chars: A character array containing the data to write.
   """
-  pass
- def Write7BitEncodedInt(self,*args):
-  """
+        pass
+
+    def Write7BitEncodedInt(self, *args):
+        """
   Write7BitEncodedInt(self: BinaryWriter,value: int)
 
    Writes a 32-bit integer in a compressed format.
@@ -275,29 +281,33 @@ class BinaryWriter(object,IDisposable):
 
    value: The 32-bit integer to be written.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,output,encoding=None,leaveOpen=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, output, encoding=None, leaveOpen=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,output: Stream)
@@ -306,14 +316,19 @@ class BinaryWriter(object,IDisposable):
 
   __new__(cls: type,output: Stream,encoding: Encoding,leaveOpen: bool)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- BaseStream=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the underlying stream of the System.IO.BinaryWriter.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    BaseStream = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the underlying stream of the System.IO.BinaryWriter.
 
 
 
@@ -323,7 +338,5 @@ Get: BaseStream(self: BinaryWriter) -> Stream
 
 """
 
-
- Null=None
- OutStream=None
-
+    Null = None
+    OutStream = None

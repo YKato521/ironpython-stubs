@@ -1,8 +1,9 @@
-class Ellipse(Curve,IDisposable):
- """ A whole or partial ellipse. """
- @staticmethod
- def Create(center,xRadius,yRadius,xAxis,yAxis,startParameter,endParameter):
-  """
+class Ellipse(Curve, IDisposable):
+    """ A whole or partial ellipse. """
+
+    @staticmethod
+    def Create(center, xRadius, yRadius, xAxis, yAxis, startParameter, endParameter):
+        """
   Create(center: XYZ,xRadius: float,yRadius: float,xAxis: XYZ,yAxis: XYZ,startParameter: float,endParameter: float) -> Ellipse
 
   
@@ -27,27 +28,34 @@ class Ellipse(Curve,IDisposable):
 
    Returns: The new ellipse or elliptical arc.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: APIObject,A_0: bool) """
-  pass
- def ReleaseManagedResources(self,*args):
-  """ ReleaseManagedResources(self: APIObject) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: GeometryObject) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Center=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the center of the ellipse.
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: APIObject,A_0: bool) """
+        pass
+
+    def ReleaseManagedResources(self, *args):
+        """ ReleaseManagedResources(self: APIObject) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: GeometryObject) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Center = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns the center of the ellipse.
 
 
 
@@ -57,8 +65,8 @@ Get: Center(self: Ellipse) -> XYZ
 
 """
 
- Normal=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the normal to the plane in which the ellipse is defined.
+    Normal = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns the normal to the plane in which the ellipse is defined.
 
 
 
@@ -68,8 +76,8 @@ Get: Normal(self: Ellipse) -> XYZ
 
 """
 
- RadiusX=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the X vector radius of the ellipse.
+    RadiusX = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns the X vector radius of the ellipse.
 
 
 
@@ -79,8 +87,8 @@ Get: RadiusX(self: Ellipse) -> float
 
 """
 
- RadiusY=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the Y vector radius of the ellipse.
+    RadiusY = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns the Y vector radius of the ellipse.
 
 
 
@@ -90,8 +98,10 @@ Get: RadiusY(self: Ellipse) -> float
 
 """
 
- XDirection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The X direction.
+    XDirection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The X direction.
 
 
 
@@ -101,8 +111,10 @@ Get: XDirection(self: Ellipse) -> XYZ
 
 """
 
- YDirection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Y direction.
+    YDirection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The Y direction.
 
 
 
@@ -111,5 +123,3 @@ Get: YDirection(self: Ellipse) -> XYZ
 
 
 """
-
-

@@ -1,8 +1,11 @@
 class UnitFormatUtils(object):
- """ A utility class for formatting and parsing numbers with units. """
- @staticmethod
- def Format(units,unitType,value,maxAccuracy,forEditing,formatValueOptions=None):
-  """
+    """ A utility class for formatting and parsing numbers with units. """
+
+    @staticmethod
+    def Format(
+        units, unitType, value, maxAccuracy, forEditing, formatValueOptions=None
+    ):
+        """
   Format(units: Units,unitType: UnitType,value: float,maxAccuracy: bool,forEditing: bool,formatValueOptions: FormatValueOptions) -> str
 
   
@@ -81,10 +84,11 @@ class UnitFormatUtils(object):
 
    Returns: The formatted string.
   """
-  pass
- @staticmethod
- def TryParse(units,unitType,stringToParse,*__args):
-  """
+        pass
+
+    @staticmethod
+    def TryParse(units, unitType, stringToParse, *__args):
+        """
   TryParse(units: Units,unitType: UnitType,stringToParse: str,valueParsingOptions: ValueParsingOptions) -> (bool,float,str)
 
   
@@ -169,9 +173,9 @@ class UnitFormatUtils(object):
 
    Returns: True if the string can be parsed,false otherwise.
   """
-  pass
- __all__=[
-  'Format',
-  'TryParse',
- ]
+        pass
 
+    __all__ = [
+        "Format",
+        "TryParse",
+    ]

@@ -1,8 +1,9 @@
 class BitConverter(object):
- """ Converts base data types to an array of bytes,and an array of bytes to base data types. """
- @staticmethod
- def DoubleToInt64Bits(value):
-  """
+    """ Converts base data types to an array of bytes,and an array of bytes to base data types. """
+
+    @staticmethod
+    def DoubleToInt64Bits(value):
+        """
   DoubleToInt64Bits(value: float) -> Int64
 
   
@@ -15,10 +16,11 @@ class BitConverter(object):
 
    Returns: A 64-bit signed integer whose value is equivalent to value.
   """
-  pass
- @staticmethod
- def GetBytes(value):
-  """
+        pass
+
+    @staticmethod
+    def GetBytes(value):
+        """
   GetBytes(value: UInt32) -> Array[Byte]
 
   
@@ -139,10 +141,11 @@ class BitConverter(object):
 
    Returns: An array of bytes with length 4.
   """
-  pass
- @staticmethod
- def Int64BitsToDouble(value):
-  """
+        pass
+
+    @staticmethod
+    def Int64BitsToDouble(value):
+        """
   Int64BitsToDouble(value: Int64) -> float
 
   
@@ -155,10 +158,11 @@ class BitConverter(object):
 
    Returns: A double-precision floating point number whose value is equivalent to value.
   """
-  pass
- @staticmethod
- def ToBoolean(value,startIndex):
-  """
+        pass
+
+    @staticmethod
+    def ToBoolean(value, startIndex):
+        """
   ToBoolean(value: Array[Byte],startIndex: int) -> bool
 
   
@@ -173,10 +177,11 @@ class BitConverter(object):
 
    Returns: true if the byte at startIndex in value is nonzero; otherwise,false.
   """
-  pass
- @staticmethod
- def ToChar(value,startIndex):
-  """
+        pass
+
+    @staticmethod
+    def ToChar(value, startIndex):
+        """
   ToChar(value: Array[Byte],startIndex: int) -> Char
 
   
@@ -191,10 +196,11 @@ class BitConverter(object):
 
    Returns: A character formed by two bytes beginning at startIndex.
   """
-  pass
- @staticmethod
- def ToDouble(value,startIndex):
-  """
+        pass
+
+    @staticmethod
+    def ToDouble(value, startIndex):
+        """
   ToDouble(value: Array[Byte],startIndex: int) -> float
 
   
@@ -213,10 +219,11 @@ class BitConverter(object):
 
    Returns: A double precision floating point number formed by eight bytes beginning at startIndex.
   """
-  pass
- @staticmethod
- def ToInt16(value,startIndex):
-  """
+        pass
+
+    @staticmethod
+    def ToInt16(value, startIndex):
+        """
   ToInt16(value: Array[Byte],startIndex: int) -> Int16
 
   
@@ -231,10 +238,11 @@ class BitConverter(object):
 
    Returns: A 16-bit signed integer formed by two bytes beginning at startIndex.
   """
-  pass
- @staticmethod
- def ToInt32(value,startIndex):
-  """
+        pass
+
+    @staticmethod
+    def ToInt32(value, startIndex):
+        """
   ToInt32(value: Array[Byte],startIndex: int) -> int
 
   
@@ -253,10 +261,11 @@ class BitConverter(object):
 
    Returns: A 32-bit signed integer formed by four bytes beginning at startIndex.
   """
-  pass
- @staticmethod
- def ToInt64(value,startIndex):
-  """
+        pass
+
+    @staticmethod
+    def ToInt64(value, startIndex):
+        """
   ToInt64(value: Array[Byte],startIndex: int) -> Int64
 
   
@@ -275,10 +284,11 @@ class BitConverter(object):
 
    Returns: A 64-bit signed integer formed by eight bytes beginning at startIndex.
   """
-  pass
- @staticmethod
- def ToSingle(value,startIndex):
-  """
+        pass
+
+    @staticmethod
+    def ToSingle(value, startIndex):
+        """
   ToSingle(value: Array[Byte],startIndex: int) -> Single
 
   
@@ -297,10 +307,11 @@ class BitConverter(object):
 
    Returns: A single-precision floating point number formed by four bytes beginning at startIndex.
   """
-  pass
- @staticmethod
- def ToString(value=None,startIndex=None,length=None):
-  """
+        pass
+
+    @staticmethod
+    def ToString(value=None, startIndex=None, length=None):
+        """
   ToString(value: Array[Byte],startIndex: int) -> str
 
   
@@ -365,10 +376,11 @@ class BitConverter(object):
 
     element in a subarray of value; for example,"7F-2C-4A-00".
   """
-  pass
- @staticmethod
- def ToUInt16(value,startIndex):
-  """
+        pass
+
+    @staticmethod
+    def ToUInt16(value, startIndex):
+        """
   ToUInt16(value: Array[Byte],startIndex: int) -> UInt16
 
   
@@ -387,10 +399,11 @@ class BitConverter(object):
 
    Returns: A 16-bit unsigned integer formed by two bytes beginning at startIndex.
   """
-  pass
- @staticmethod
- def ToUInt32(value,startIndex):
-  """
+        pass
+
+    @staticmethod
+    def ToUInt32(value, startIndex):
+        """
   ToUInt32(value: Array[Byte],startIndex: int) -> UInt32
 
   
@@ -409,10 +422,11 @@ class BitConverter(object):
 
    Returns: A 32-bit unsigned integer formed by four bytes beginning at startIndex.
   """
-  pass
- @staticmethod
- def ToUInt64(value,startIndex):
-  """
+        pass
+
+    @staticmethod
+    def ToUInt64(value, startIndex):
+        """
   ToUInt64(value: Array[Byte],startIndex: int) -> UInt64
 
   
@@ -431,23 +445,23 @@ class BitConverter(object):
 
    Returns: A 64-bit unsigned integer formed by the eight bytes beginning at startIndex.
   """
-  pass
- IsLittleEndian=True
- __all__=[
-  'DoubleToInt64Bits',
-  'GetBytes',
-  'Int64BitsToDouble',
-  'IsLittleEndian',
-  'ToBoolean',
-  'ToChar',
-  'ToDouble',
-  'ToInt16',
-  'ToInt32',
-  'ToInt64',
-  'ToSingle',
-  'ToString',
-  'ToUInt16',
-  'ToUInt32',
-  'ToUInt64',
- ]
+        pass
 
+    IsLittleEndian = True
+    __all__ = [
+        "DoubleToInt64Bits",
+        "GetBytes",
+        "Int64BitsToDouble",
+        "IsLittleEndian",
+        "ToBoolean",
+        "ToChar",
+        "ToDouble",
+        "ToInt16",
+        "ToInt32",
+        "ToInt64",
+        "ToSingle",
+        "ToString",
+        "ToUInt16",
+        "ToUInt32",
+        "ToUInt64",
+    ]

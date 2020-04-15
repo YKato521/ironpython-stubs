@@ -1,11 +1,13 @@
-class BasicFileInfo(object,IDisposable):
- """ Encapsulates basic information about a Revit file,including worksharing status,Revit version,username and central path. """
- def Dispose(self):
-  """ Dispose(self: BasicFileInfo) """
-  pass
- @staticmethod
- def Extract(file):
-  """
+class BasicFileInfo(object, IDisposable):
+    """ Encapsulates basic information about a Revit file,including worksharing status,Revit version,username and central path. """
+
+    def Dispose(self):
+        """ Dispose(self: BasicFileInfo) """
+        pass
+
+    @staticmethod
+    def Extract(file):
+        """
   Extract(file: str) -> BasicFileInfo
 
   
@@ -26,9 +28,10 @@ class BasicFileInfo(object,IDisposable):
 
    Returns: If successful,basic file data.
   """
-  pass
- def GetDocumentVersion(self):
-  """
+        pass
+
+    def GetDocumentVersion(self):
+        """
   GetDocumentVersion(self: BasicFileInfo) -> DocumentVersion
 
   
@@ -37,24 +40,32 @@ class BasicFileInfo(object,IDisposable):
 
    Returns: The DocumentVersion for the file.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: BasicFileInfo,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- AllLocalChangesSavedToCentral=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Are all local changes saved to the central file?
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: BasicFileInfo,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    AllLocalChangesSavedToCentral = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Are all local changes saved to the central file?
 
 
 
@@ -64,8 +75,10 @@ Get: AllLocalChangesSavedToCentral(self: BasicFileInfo) -> bool
 
 """
 
- CentralPath=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the central model path.
+    CentralPath = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the central model path.
 
 
 
@@ -75,8 +88,8 @@ Get: CentralPath(self: BasicFileInfo) -> str
 
 """
 
- IsCentral=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks if the file is workshared and Central.
+    IsCentral = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Checks if the file is workshared and Central.
 
 
 
@@ -86,8 +99,10 @@ Get: IsCentral(self: BasicFileInfo) -> bool
 
 """
 
- IsCreatedLocal=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks if the file is created local.
+    IsCreatedLocal = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Checks if the file is created local.
 
 
 
@@ -97,8 +112,10 @@ Get: IsCreatedLocal(self: BasicFileInfo) -> bool
 
 """
 
- IsInProgress=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks if the file is workshared and is in process of becoming Central.
+    IsInProgress = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Checks if the file is workshared and is in process of becoming Central.
 
 
 
@@ -108,8 +125,8 @@ Get: IsInProgress(self: BasicFileInfo) -> bool
 
 """
 
- IsLocal=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks if the file is workshared and Local.
+    IsLocal = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Checks if the file is workshared and Local.
 
 
 
@@ -119,8 +136,10 @@ Get: IsLocal(self: BasicFileInfo) -> bool
 
 """
 
- IsSavedInCurrentVersion=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks if the file is saved in the current version.
+    IsSavedInCurrentVersion = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Checks if the file is saved in the current version.
 
 
 
@@ -130,8 +149,10 @@ Get: IsSavedInCurrentVersion(self: BasicFileInfo) -> bool
 
 """
 
- IsSavedInLaterVersion=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks if the file is saved in a later version of Revit than the running Revit.
+    IsSavedInLaterVersion = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Checks if the file is saved in a later version of Revit than the running Revit.
 
 
 
@@ -141,8 +162,10 @@ Get: IsSavedInLaterVersion(self: BasicFileInfo) -> bool
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -152,8 +175,10 @@ Get: IsValidObject(self: BasicFileInfo) -> bool
 
 """
 
- IsWorkshared=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks if the file is workshared.
+    IsWorkshared = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Checks if the file is workshared.
 
 
 
@@ -163,8 +188,10 @@ Get: IsWorkshared(self: BasicFileInfo) -> bool
 
 """
 
- LanguageWhenSaved=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Return the language active for the last save
+    LanguageWhenSaved = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Return the language active for the last save
 
 
 
@@ -174,8 +201,10 @@ Get: LanguageWhenSaved(self: BasicFileInfo) -> LanguageType
 
 """
 
- LatestCentralEpisodeGUID=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This is the central model's episode GUID corresponding to the last reload latest
+    LatestCentralEpisodeGUID = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This is the central model's episode GUID corresponding to the last reload latest
 
    done for this model.
 
@@ -187,8 +216,10 @@ Get: LatestCentralEpisodeGUID(self: BasicFileInfo) -> Guid
 
 """
 
- LatestCentralVersion=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This is the central model's version number corresponding to the last reload latest
+    LatestCentralVersion = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This is the central model's version number corresponding to the last reload latest
 
    done for this model.
 
@@ -200,8 +231,10 @@ Get: LatestCentralVersion(self: BasicFileInfo) -> int
 
 """
 
- SavedInVersion=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the version in which file is saved.
+    SavedInVersion = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the version in which file is saved.
 
 
 
@@ -211,8 +244,8 @@ Get: SavedInVersion(self: BasicFileInfo) -> str
 
 """
 
- Username=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the username.
+    Username = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns the username.
 
 
 
@@ -221,5 +254,3 @@ Get: Username(self: BasicFileInfo) -> str
 
 
 """
-
-

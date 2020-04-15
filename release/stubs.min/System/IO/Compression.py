@@ -8,75 +8,98 @@
 # no functions
 # classes
 
-class CompressionLevel(Enum,IComparable,IFormattable,IConvertible):
- """ enum CompressionLevel,values: Fastest (1),NoCompression (2),Optimal (0) """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Fastest=None
- NoCompression=None
- Optimal=None
- value__=None
+
+class CompressionLevel(Enum, IComparable, IFormattable, IConvertible):
+    """ enum CompressionLevel,values: Fastest (1),NoCompression (2),Optimal (0) """
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Fastest = None
+    NoCompression = None
+    Optimal = None
+    value__ = None
 
 
-class CompressionMode(Enum,IComparable,IFormattable,IConvertible):
- """
+class CompressionMode(Enum, IComparable, IFormattable, IConvertible):
+    """
  Specifies whether to compress or decompress the underlying stream.
 
  
 
  enum CompressionMode,values: Compress (1),Decompress (0)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Compress=None
- Decompress=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Compress = None
+    Decompress = None
+    value__ = None
 
 
-class DeflateStream(Stream,IDisposable):
- """
+class DeflateStream(Stream, IDisposable):
+    """
  Provides methods and properties for compressing and decompressing streams using the Deflate algorithm.
 
  
@@ -89,8 +112,9 @@ class DeflateStream(Stream,IDisposable):
 
  DeflateStream(stream: Stream,compressionLevel: CompressionLevel,leaveOpen: bool)
  """
- def BeginRead(self,array,offset,count,asyncCallback,asyncState):
-  """
+
+    def BeginRead(self, array, offset, count, asyncCallback, asyncState):
+        """
   BeginRead(self: DeflateStream,array: Array[Byte],offset: int,count: int,asyncCallback: AsyncCallback,asyncState: object) -> IAsyncResult
 
   
@@ -117,9 +141,10 @@ class DeflateStream(Stream,IDisposable):
 
     pending.
   """
-  pass
- def BeginWrite(self,array,offset,count,asyncCallback,asyncState):
-  """
+        pass
+
+    def BeginWrite(self, array, offset, count, asyncCallback, asyncState):
+        """
   BeginWrite(self: DeflateStream,array: Array[Byte],offset: int,count: int,asyncCallback: AsyncCallback,asyncState: object) -> IAsyncResult
 
   
@@ -146,9 +171,10 @@ class DeflateStream(Stream,IDisposable):
 
     pending.
   """
-  pass
- def CreateWaitHandle(self,*args):
-  """
+        pass
+
+    def CreateWaitHandle(self, *args):
+        """
   CreateWaitHandle(self: Stream) -> WaitHandle
 
   
@@ -157,9 +183,10 @@ class DeflateStream(Stream,IDisposable):
 
    Returns: A reference to the allocated WaitHandle.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: DeflateStream,disposing: bool)
 
    Releases the unmanaged resources used by the System.IO.Compression.DeflateStream and optionally 
@@ -172,9 +199,10 @@ class DeflateStream(Stream,IDisposable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def EndRead(self,asyncResult):
-  """
+        pass
+
+    def EndRead(self, asyncResult):
+        """
   EndRead(self: DeflateStream,asyncResult: IAsyncResult) -> int
 
   
@@ -191,9 +219,10 @@ class DeflateStream(Stream,IDisposable):
 
     otherwise,it blocks until at least one byte is available.
   """
-  pass
- def EndWrite(self,asyncResult):
-  """
+        pass
+
+    def EndWrite(self, asyncResult):
+        """
   EndWrite(self: DeflateStream,asyncResult: IAsyncResult)
 
    Ends an asynchronous write operation.
@@ -202,18 +231,20 @@ class DeflateStream(Stream,IDisposable):
 
    asyncResult: A reference to the outstanding asynchronous I/O request.
   """
-  pass
- def Flush(self):
-  """
+        pass
+
+    def Flush(self):
+        """
   Flush(self: DeflateStream)
 
    Flushes the contents of the internal buffer of the current stream object to the underlying 
 
     stream.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -244,16 +275,18 @@ class DeflateStream(Stream,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def ObjectInvariant(self,*args):
-  """
+        pass
+
+    def ObjectInvariant(self, *args):
+        """
   ObjectInvariant(self: Stream)
 
    Provides support for a System.Diagnostics.Contracts.Contract.
   """
-  pass
- def Read(self,array,offset,count):
-  """
+        pass
+
+    def Read(self, array, offset, count):
+        """
   Read(self: DeflateStream,array: Array[Byte],offset: int,count: int) -> int
 
   
@@ -270,9 +303,10 @@ class DeflateStream(Stream,IDisposable):
 
    Returns: The number of bytes that were read into the byte array.
   """
-  pass
- def Seek(self,offset,origin):
-  """
+        pass
+
+    def Seek(self, offset, origin):
+        """
   Seek(self: DeflateStream,offset: Int64,origin: SeekOrigin) -> Int64
 
   
@@ -287,9 +321,10 @@ class DeflateStream(Stream,IDisposable):
 
    Returns: A long value.
   """
-  pass
- def SetLength(self,value):
-  """
+        pass
+
+    def SetLength(self, value):
+        """
   SetLength(self: DeflateStream,value: Int64)
 
    This operation is not supported and always throws a System.NotSupportedException.
@@ -298,9 +333,10 @@ class DeflateStream(Stream,IDisposable):
 
    value: The length of the stream.
   """
-  pass
- def Write(self,array,offset,count):
-  """
+        pass
+
+    def Write(self, array, offset, count):
+        """
   Write(self: DeflateStream,array: Array[Byte],offset: int,count: int)
 
    Writes compressed bytes to the underlying stream from the specified byte array.
@@ -313,29 +349,33 @@ class DeflateStream(Stream,IDisposable):
 
    count: The maximum number of compressed bytes to write.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,stream,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, stream, *__args):
+        """
   __new__(cls: type,stream: Stream,mode: CompressionMode)
 
   __new__(cls: type,stream: Stream,mode: CompressionMode,leaveOpen: bool)
@@ -344,9 +384,12 @@ class DeflateStream(Stream,IDisposable):
 
   __new__(cls: type,stream: Stream,compressionLevel: CompressionLevel,leaveOpen: bool)
   """
-  pass
- BaseStream=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a reference to the underlying stream.
+        pass
+
+    BaseStream = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a reference to the underlying stream.
 
 
 
@@ -356,8 +399,8 @@ Get: BaseStream(self: DeflateStream) -> Stream
 
 """
 
- CanRead=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the stream supports reading while decompressing a file.
+    CanRead = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the stream supports reading while decompressing a file.
 
 
 
@@ -367,8 +410,8 @@ Get: CanRead(self: DeflateStream) -> bool
 
 """
 
- CanSeek=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the stream supports seeking.
+    CanSeek = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the stream supports seeking.
 
 
 
@@ -378,8 +421,8 @@ Get: CanSeek(self: DeflateStream) -> bool
 
 """
 
- CanWrite=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the stream supports writing.
+    CanWrite = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the stream supports writing.
 
 
 
@@ -389,8 +432,8 @@ Get: CanWrite(self: DeflateStream) -> bool
 
 """
 
- Length=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not supported and always throws a System.NotSupportedException.
+    Length = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """This property is not supported and always throws a System.NotSupportedException.
 
 
 
@@ -400,8 +443,8 @@ Get: Length(self: DeflateStream) -> Int64
 
 """
 
- Position=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not supported and always throws a System.NotSupportedException.
+    Position = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """This property is not supported and always throws a System.NotSupportedException.
 
 
 
@@ -414,9 +457,8 @@ Set: Position(self: DeflateStream)=value
 """
 
 
-
-class GZipStream(Stream,IDisposable):
- """
+class GZipStream(Stream, IDisposable):
+    """
  Provides methods and properties used to compress and decompress streams.
 
  
@@ -429,8 +471,9 @@ class GZipStream(Stream,IDisposable):
 
  GZipStream(stream: Stream,compressionLevel: CompressionLevel,leaveOpen: bool)
  """
- def BeginRead(self,array,offset,count,asyncCallback,asyncState):
-  """
+
+    def BeginRead(self, array, offset, count, asyncCallback, asyncState):
+        """
   BeginRead(self: GZipStream,array: Array[Byte],offset: int,count: int,asyncCallback: AsyncCallback,asyncState: object) -> IAsyncResult
 
   
@@ -457,9 +500,10 @@ class GZipStream(Stream,IDisposable):
 
     pending.
   """
-  pass
- def BeginWrite(self,array,offset,count,asyncCallback,asyncState):
-  """
+        pass
+
+    def BeginWrite(self, array, offset, count, asyncCallback, asyncState):
+        """
   BeginWrite(self: GZipStream,array: Array[Byte],offset: int,count: int,asyncCallback: AsyncCallback,asyncState: object) -> IAsyncResult
 
   
@@ -486,9 +530,10 @@ class GZipStream(Stream,IDisposable):
 
     pending.
   """
-  pass
- def CreateWaitHandle(self,*args):
-  """
+        pass
+
+    def CreateWaitHandle(self, *args):
+        """
   CreateWaitHandle(self: Stream) -> WaitHandle
 
   
@@ -497,9 +542,10 @@ class GZipStream(Stream,IDisposable):
 
    Returns: A reference to the allocated WaitHandle.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: GZipStream,disposing: bool)
 
    Releases the unmanaged resources used by the System.IO.Compression.GZipStream and optionally 
@@ -512,9 +558,10 @@ class GZipStream(Stream,IDisposable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def EndRead(self,asyncResult):
-  """
+        pass
+
+    def EndRead(self, asyncResult):
+        """
   EndRead(self: GZipStream,asyncResult: IAsyncResult) -> int
 
   
@@ -531,9 +578,10 @@ class GZipStream(Stream,IDisposable):
 
     otherwise,it blocks until at least one byte is available.
   """
-  pass
- def EndWrite(self,asyncResult):
-  """
+        pass
+
+    def EndWrite(self, asyncResult):
+        """
   EndWrite(self: GZipStream,asyncResult: IAsyncResult)
 
    Handles the end of an asynchronous write operation.
@@ -542,18 +590,20 @@ class GZipStream(Stream,IDisposable):
 
    asyncResult: The System.IAsyncResult object that represents the asynchronous call.
   """
-  pass
- def Flush(self):
-  """
+        pass
+
+    def Flush(self):
+        """
   Flush(self: GZipStream)
 
    Flushes the contents of the internal buffer of the current System.IO.Compression.GZipStream 
 
     object to the underlying stream.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -584,16 +634,18 @@ class GZipStream(Stream,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def ObjectInvariant(self,*args):
-  """
+        pass
+
+    def ObjectInvariant(self, *args):
+        """
   ObjectInvariant(self: Stream)
 
    Provides support for a System.Diagnostics.Contracts.Contract.
   """
-  pass
- def Read(self,array,offset,count):
-  """
+        pass
+
+    def Read(self, array, offset, count):
+        """
   Read(self: GZipStream,array: Array[Byte],offset: int,count: int) -> int
 
   
@@ -612,9 +664,10 @@ class GZipStream(Stream,IDisposable):
 
     been reached,zero or the number of bytes read is returned.
   """
-  pass
- def Seek(self,offset,origin):
-  """
+        pass
+
+    def Seek(self, offset, origin):
+        """
   Seek(self: GZipStream,offset: Int64,origin: SeekOrigin) -> Int64
 
   
@@ -629,9 +682,10 @@ class GZipStream(Stream,IDisposable):
 
    Returns: A long value.
   """
-  pass
- def SetLength(self,value):
-  """
+        pass
+
+    def SetLength(self, value):
+        """
   SetLength(self: GZipStream,value: Int64)
 
    This property is not supported and always throws a System.NotSupportedException.
@@ -640,9 +694,10 @@ class GZipStream(Stream,IDisposable):
 
    value: The length of the stream.
   """
-  pass
- def Write(self,array,offset,count):
-  """
+        pass
+
+    def Write(self, array, offset, count):
+        """
   Write(self: GZipStream,array: Array[Byte],offset: int,count: int)
 
    Writes compressed bytes to the underlying stream from the specified byte array.
@@ -655,29 +710,33 @@ class GZipStream(Stream,IDisposable):
 
    count: The maximum number of compressed bytes to write.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,stream,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, stream, *__args):
+        """
   __new__(cls: type,stream: Stream,mode: CompressionMode)
 
   __new__(cls: type,stream: Stream,mode: CompressionMode,leaveOpen: bool)
@@ -686,9 +745,12 @@ class GZipStream(Stream,IDisposable):
 
   __new__(cls: type,stream: Stream,compressionLevel: CompressionLevel,leaveOpen: bool)
   """
-  pass
- BaseStream=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a reference to the underlying stream.
+        pass
+
+    BaseStream = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a reference to the underlying stream.
 
 
 
@@ -698,8 +760,8 @@ Get: BaseStream(self: GZipStream) -> Stream
 
 """
 
- CanRead=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the stream supports reading while decompressing a file.
+    CanRead = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the stream supports reading while decompressing a file.
 
 
 
@@ -709,8 +771,8 @@ Get: CanRead(self: GZipStream) -> bool
 
 """
 
- CanSeek=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the stream supports seeking.
+    CanSeek = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the stream supports seeking.
 
 
 
@@ -720,8 +782,8 @@ Get: CanSeek(self: GZipStream) -> bool
 
 """
 
- CanWrite=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the stream supports writing.
+    CanWrite = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the stream supports writing.
 
 
 
@@ -731,8 +793,8 @@ Get: CanWrite(self: GZipStream) -> bool
 
 """
 
- Length=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not supported and always throws a System.NotSupportedException.
+    Length = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """This property is not supported and always throws a System.NotSupportedException.
 
 
 
@@ -742,8 +804,8 @@ Get: Length(self: GZipStream) -> Int64
 
 """
 
- Position=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is not supported and always throws a System.NotSupportedException.
+    Position = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """This property is not supported and always throws a System.NotSupportedException.
 
 
 
@@ -754,6 +816,3 @@ Get: Position(self: GZipStream) -> Int64
 Set: Position(self: GZipStream)=value
 
 """
-
-
-

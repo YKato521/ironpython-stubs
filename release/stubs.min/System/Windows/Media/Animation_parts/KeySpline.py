@@ -1,5 +1,5 @@
-class KeySpline(Freezable,ISealable,IFormattable):
- """
+class KeySpline(Freezable, ISealable, IFormattable):
+    """
  This class is used by a spline key frame to define animation progress.
 
  
@@ -10,8 +10,9 @@ class KeySpline(Freezable,ISealable,IFormattable):
 
  KeySpline(x1: float,y1: float,x2: float,y2: float)
  """
- def CloneCore(self,*args):
-  """
+
+    def CloneCore(self, *args):
+        """
   CloneCore(self: KeySpline,sourceFreezable: Freezable)
 
    Makes this instance a deep copy of the specified System.Windows.Media.Animation.KeySpline. When 
@@ -26,9 +27,10 @@ class KeySpline(Freezable,ISealable,IFormattable):
 
    sourceFreezable: The System.Windows.Media.Animation.KeySpline to clone.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """
   CloneCurrentValueCore(self: KeySpline,sourceFreezable: Freezable)
 
    Makes this instance a modifiable deep copy of the specified 
@@ -43,9 +45,10 @@ class KeySpline(Freezable,ISealable,IFormattable):
 
    sourceFreezable: The System.Windows.Media.Animation.KeySpline to clone.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -54,9 +57,10 @@ class KeySpline(Freezable,ISealable,IFormattable):
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """
   CreateInstanceCore(self: KeySpline) -> Freezable
 
   
@@ -65,9 +69,10 @@ class KeySpline(Freezable,ISealable,IFormattable):
 
    Returns: A new instance of System.Windows.Media.Animation.KeySpline.
   """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: Freezable,isChecking: bool) -> bool
 
   
@@ -94,9 +99,10 @@ class KeySpline(Freezable,ISealable,IFormattable):
 
     it cannot be made unmodifiable.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """
   GetAsFrozenCore(self: KeySpline,sourceFreezable: Freezable)
 
    Makes this instance a clone of the specified System.Windows.Media.Animation.KeySpline object.
@@ -105,9 +111,10 @@ class KeySpline(Freezable,ISealable,IFormattable):
 
    sourceFreezable: The System.Windows.Media.Animation.KeySpline object to clone.
   """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """
   GetCurrentValueAsFrozenCore(self: KeySpline,sourceFreezable: Freezable)
 
    Makes this instance a frozen clone of the specified System.Windows.Media.Animation.KeySpline. 
@@ -120,9 +127,10 @@ class KeySpline(Freezable,ISealable,IFormattable):
 
    sourceFreezable: The System.Windows.Media.Animation.KeySpline to copy and freeze.
   """
-  pass
- def GetSplineProgress(self,linearProgress):
-  """
+        pass
+
+    def GetSplineProgress(self, linearProgress):
+        """
   GetSplineProgress(self: KeySpline,linearProgress: float) -> float
 
   
@@ -135,16 +143,18 @@ class KeySpline(Freezable,ISealable,IFormattable):
 
    Returns: The calculated spline progress.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: KeySpline)
 
    Called when the current System.Windows.Media.Animation.KeySpline object is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -175,9 +185,10 @@ class KeySpline(Freezable,ISealable,IFormattable):
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -194,9 +205,10 @@ class KeySpline(Freezable,ISealable,IFormattable):
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -205,9 +217,10 @@ class KeySpline(Freezable,ISealable,IFormattable):
 
     members that are not dependency properties.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -224,9 +237,10 @@ class KeySpline(Freezable,ISealable,IFormattable):
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def ToString(self,formatProvider=None):
-  """
+        pass
+
+    def ToString(self, formatProvider=None):
+        """
   ToString(self: KeySpline,formatProvider: IFormatProvider) -> str
 
   
@@ -255,9 +269,10 @@ class KeySpline(Freezable,ISealable,IFormattable):
 
    Returns: A string representation of this System.Windows.Media.Animation.KeySpline.
   """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -268,9 +283,10 @@ class KeySpline(Freezable,ISealable,IFormattable):
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -279,27 +295,34 @@ class KeySpline(Freezable,ISealable,IFormattable):
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,x1: float,y1: float,x2: float,y2: float)
 
   __new__(cls: type,controlPoint1: Point,controlPoint2: Point)
   """
-  pass
- def __str__(self,*args):
-  pass
- ControlPoint1=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The first control point used to define a Bezier curve that describes a System.Windows.Media.Animation.KeySpline.
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    ControlPoint1 = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The first control point used to define a Bezier curve that describes a System.Windows.Media.Animation.KeySpline.
 
 
 
@@ -311,8 +334,10 @@ Set: ControlPoint1(self: KeySpline)=value
 
 """
 
- ControlPoint2=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The second control point used to define a Bezier curve that describes a System.Windows.Media.Animation.KeySpline.
+    ControlPoint2 = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The second control point used to define a Bezier curve that describes a System.Windows.Media.Animation.KeySpline.
 
 
 
@@ -323,5 +348,3 @@ Get: ControlPoint2(self: KeySpline) -> Point
 Set: ControlPoint2(self: KeySpline)=value
 
 """
-
-

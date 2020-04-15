@@ -1,5 +1,5 @@
-class DefaultValueAttribute(Attribute,_Attribute):
- """
+class DefaultValueAttribute(Attribute, _Attribute):
+    """
  Specifies the default value for a property.
 
  
@@ -26,8 +26,9 @@ class DefaultValueAttribute(Attribute,_Attribute):
 
  DefaultValueAttribute(value: object)
  """
- def Equals(self,obj):
-  """
+
+    def Equals(self, obj):
+        """
   Equals(self: DefaultValueAttribute,obj: object) -> bool
 
   
@@ -44,12 +45,14 @@ class DefaultValueAttribute(Attribute,_Attribute):
 
    Returns: true if the value of the given object is equal to that of the current; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """ GetHashCode(self: DefaultValueAttribute) -> int """
-  pass
- def SetValue(self,*args):
-  """
+        pass
+
+    def GetHashCode(self):
+        """ GetHashCode(self: DefaultValueAttribute) -> int """
+        pass
+
+    def SetValue(self, *args):
+        """
   SetValue(self: DefaultValueAttribute,value: object)
 
    Sets the default value for the property to which this attribute is bound.
@@ -58,16 +61,19 @@ class DefaultValueAttribute(Attribute,_Attribute):
 
    value: The default value.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,type: Type,value: str)
 
   __new__(cls: type,value: Char)
@@ -90,11 +96,13 @@ class DefaultValueAttribute(Attribute,_Attribute):
 
   __new__(cls: type,value: object)
   """
-  pass
- def __ne__(self,*args):
-  pass
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the default value of the property this attribute is bound to.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the default value of the property this attribute is bound to.
 
 
 
@@ -103,5 +111,3 @@ Get: Value(self: DefaultValueAttribute) -> object
 
 
 """
-
-

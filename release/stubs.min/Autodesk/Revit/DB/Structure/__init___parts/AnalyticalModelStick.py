@@ -1,14 +1,16 @@
-class AnalyticalModelStick(AnalyticalModel,IDisposable):
- """
+class AnalyticalModelStick(AnalyticalModel, IDisposable):
+    """
  An element that represents a stick in the structural analytical model.
 
     Could be one of beam,brace or column type.
  """
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def GetAlignmentMethod(self,selector):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def GetAlignmentMethod(self, selector):
+        """
   GetAlignmentMethod(self: AnalyticalModelStick,selector: AnalyticalElementSelector) -> AnalyticalAlignmentMethod
 
   
@@ -21,12 +23,14 @@ class AnalyticalModelStick(AnalyticalModel,IDisposable):
 
    Returns: The alignment method at a given end.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetLocalCoordinateSystem(self,*__args):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetLocalCoordinateSystem(self, *__args):
+        """
   GetLocalCoordinateSystem(self: AnalyticalModelStick,point: XYZ) -> Transform
 
   
@@ -77,9 +81,10 @@ class AnalyticalModelStick(AnalyticalModel,IDisposable):
 
     - base point of LCS.
   """
-  pass
- def GetMemberForces(self):
-  """
+        pass
+
+    def GetMemberForces(self):
+        """
   GetMemberForces(self: AnalyticalModelStick) -> IList[MemberForces]
 
   
@@ -100,9 +105,10 @@ class AnalyticalModelStick(AnalyticalModel,IDisposable):
 
     position of Member Forces on element.
   """
-  pass
- def GetProjectionPlaneY(self,selector):
-  """
+        pass
+
+    def GetProjectionPlaneY(self, selector):
+        """
   GetProjectionPlaneY(self: AnalyticalModelStick,selector: AnalyticalElementSelector) -> ElementId
 
   
@@ -119,9 +125,10 @@ class AnalyticalModelStick(AnalyticalModel,IDisposable):
 
     projected to a Plane.
   """
-  pass
- def GetProjectionPlaneZ(self,selector):
-  """
+        pass
+
+    def GetProjectionPlaneZ(self, selector):
+        """
   GetProjectionPlaneZ(self: AnalyticalModelStick,selector: AnalyticalElementSelector) -> ElementId
 
   
@@ -138,9 +145,10 @@ class AnalyticalModelStick(AnalyticalModel,IDisposable):
 
     projected to a Plane.
   """
-  pass
- def GetProjectionY(self,selector):
-  """
+        pass
+
+    def GetProjectionY(self, selector):
+        """
   GetProjectionY(self: AnalyticalModelStick,selector: AnalyticalElementSelector) -> StickElementProjectionY
 
   
@@ -153,9 +161,10 @@ class AnalyticalModelStick(AnalyticalModel,IDisposable):
 
    Returns: Indicates if the projection is a preset value,or refers to a Plane.
   """
-  pass
- def GetProjectionZ(self,selector):
-  """
+        pass
+
+    def GetProjectionZ(self, selector):
+        """
   GetProjectionZ(self: AnalyticalModelStick,selector: AnalyticalElementSelector) -> StickElementProjectionZ
 
   
@@ -168,9 +177,10 @@ class AnalyticalModelStick(AnalyticalModel,IDisposable):
 
    Returns: Indicates if the projection is a preset value,or refers to a Plane.
   """
-  pass
- def GetReleases(self,start,fx,fy,fz,mx,my,mz):
-  """
+        pass
+
+    def GetReleases(self, start, fx, fy, fz, mx, my, mz):
+        """
   GetReleases(self: AnalyticalModelStick,start: bool) -> (bool,bool,bool,bool,bool,bool)
 
   
@@ -181,9 +191,10 @@ class AnalyticalModelStick(AnalyticalModel,IDisposable):
 
    start: The position on analytical model stick element. True for start,false for end.
   """
-  pass
- def GetReleaseType(self,start):
-  """
+        pass
+
+    def GetReleaseType(self, start):
+        """
   GetReleaseType(self: AnalyticalModelStick,start: bool) -> ReleaseType
 
   
@@ -196,12 +207,14 @@ class AnalyticalModelStick(AnalyticalModel,IDisposable):
 
    Returns: The type of release.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def RemoveAllMemberForces(self):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def RemoveAllMemberForces(self):
+        """
   RemoveAllMemberForces(self: AnalyticalModelStick) -> bool
 
   
@@ -210,9 +223,10 @@ class AnalyticalModelStick(AnalyticalModel,IDisposable):
 
    Returns: True if any member forces were removed,false otherwise.
   """
-  pass
- def RemoveMemberForces(self,start):
-  """
+        pass
+
+    def RemoveMemberForces(self, start):
+        """
   RemoveMemberForces(self: AnalyticalModelStick,start: bool) -> bool
 
   
@@ -229,9 +243,10 @@ class AnalyticalModelStick(AnalyticalModel,IDisposable):
 
    Returns: True if member forces for provided position were removed,false otherwise.
   """
-  pass
- def SetAlignmentMethod(self,selector,method):
-  """
+        pass
+
+    def SetAlignmentMethod(self, selector, method):
+        """
   SetAlignmentMethod(self: AnalyticalModelStick,selector: AnalyticalElementSelector,method: AnalyticalAlignmentMethod)
 
    Sets the alignment method for a given selector.
@@ -242,12 +257,14 @@ class AnalyticalModelStick(AnalyticalModel,IDisposable):
 
    method: The alignment method at a given end.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetMemberForces(self,*__args):
-  """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetMemberForces(self, *__args):
+        """
   SetMemberForces(self: AnalyticalModelStick,start: bool,force: XYZ,moment: XYZ)
 
    Adds Member Forces to element.
@@ -294,9 +311,10 @@ class AnalyticalModelStick(AnalyticalModel,IDisposable):
 
     Member Forces object.
   """
-  pass
- def SetProjection(self,selector,*__args):
-  """
+        pass
+
+    def SetProjection(self, selector, *__args):
+        """
   SetProjection(self: AnalyticalModelStick,selector: AnalyticalElementSelector,planeIdY: ElementId,projectionZ: StickElementProjectionZ)
 
    Sets the analytical model projection to a preset value.
@@ -367,9 +385,10 @@ class AnalyticalModelStick(AnalyticalModel,IDisposable):
 
     identifies a Level,a Grid,or a Ref Plane.
   """
-  pass
- def SetReleases(self,start,fx,fy,fz,mx,my,mz):
-  """
+        pass
+
+    def SetReleases(self, start, fx, fy, fz, mx, my, mz):
+        """
   SetReleases(self: AnalyticalModelStick,start: bool,fx: bool,fy: bool,fz: bool,mx: bool,my: bool,mz: bool)
 
    Sets the releases of element.
@@ -378,9 +397,10 @@ class AnalyticalModelStick(AnalyticalModel,IDisposable):
 
    start: The position on analytical model stick element. True for start,false for end.
   """
-  pass
- def SetReleaseType(self,start,releaseType):
-  """
+        pass
+
+    def SetReleaseType(self, start, releaseType):
+        """
   SetReleaseType(self: AnalyticalModelStick,start: bool,releaseType: ReleaseType)
 
    Sets the release type.
@@ -391,13 +411,16 @@ class AnalyticalModelStick(AnalyticalModel,IDisposable):
 
    releaseType: The type of release.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

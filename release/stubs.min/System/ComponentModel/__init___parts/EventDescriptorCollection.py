@@ -1,5 +1,5 @@
-class EventDescriptorCollection(object,ICollection,IEnumerable,IList):
- """
+class EventDescriptorCollection(object, ICollection, IEnumerable, IList):
+    """
  Represents a collection of System.ComponentModel.EventDescriptor objects.
 
  
@@ -8,8 +8,9 @@ class EventDescriptorCollection(object,ICollection,IEnumerable,IList):
 
  EventDescriptorCollection(events: Array[EventDescriptor],readOnly: bool)
  """
- def Add(self,value):
-  """
+
+    def Add(self, value):
+        """
   Add(self: EventDescriptorCollection,value: EventDescriptor) -> int
 
   
@@ -22,16 +23,18 @@ class EventDescriptorCollection(object,ICollection,IEnumerable,IList):
 
    Returns: The position of the System.ComponentModel.EventDescriptor within the collection.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: EventDescriptorCollection)
 
    Removes all objects from the collection.
   """
-  pass
- def Contains(self,value):
-  """
+        pass
+
+    def Contains(self, value):
+        """
   Contains(self: EventDescriptorCollection,value: EventDescriptor) -> bool
 
   
@@ -44,9 +47,10 @@ class EventDescriptorCollection(object,ICollection,IEnumerable,IList):
 
    Returns: true if the collection contains the value parameter given; otherwise,false.
   """
-  pass
- def Find(self,name,ignoreCase):
-  """
+        pass
+
+    def Find(self, name, ignoreCase):
+        """
   Find(self: EventDescriptorCollection,name: str,ignoreCase: bool) -> EventDescriptor
 
   
@@ -63,9 +67,10 @@ class EventDescriptorCollection(object,ICollection,IEnumerable,IList):
 
     exist.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: EventDescriptorCollection) -> IEnumerator
 
   
@@ -74,9 +79,10 @@ class EventDescriptorCollection(object,ICollection,IEnumerable,IList):
 
    Returns: An enumerator that implements System.Collections.IEnumerator.
   """
-  pass
- def IndexOf(self,value):
-  """
+        pass
+
+    def IndexOf(self, value):
+        """
   IndexOf(self: EventDescriptorCollection,value: EventDescriptor) -> int
 
   
@@ -89,9 +95,10 @@ class EventDescriptorCollection(object,ICollection,IEnumerable,IList):
 
    Returns: The index of the given System.ComponentModel.EventDescriptor within the collection.
   """
-  pass
- def Insert(self,index,value):
-  """
+        pass
+
+    def Insert(self, index, value):
+        """
   Insert(self: EventDescriptorCollection,index: int,value: EventDescriptor)
 
    Inserts an System.ComponentModel.EventDescriptor to the collection at a specified index.
@@ -102,9 +109,10 @@ class EventDescriptorCollection(object,ICollection,IEnumerable,IList):
 
    value: An System.ComponentModel.EventDescriptor to insert into the collection.
   """
-  pass
- def InternalSort(self,*args):
-  """
+        pass
+
+    def InternalSort(self, *args):
+        """
   InternalSort(self: EventDescriptorCollection,sorter: IComparer)
 
    Sorts the members of this System.ComponentModel.EventDescriptorCollection,using the specified 
@@ -133,9 +141,10 @@ class EventDescriptorCollection(object,ICollection,IEnumerable,IList):
 
     System.ComponentModel.EventDescriptor objects in this collection.
   """
-  pass
- def Remove(self,value):
-  """
+        pass
+
+    def Remove(self, value):
+        """
   Remove(self: EventDescriptorCollection,value: EventDescriptor)
 
    Removes the specified System.ComponentModel.EventDescriptor from the collection.
@@ -144,9 +153,10 @@ class EventDescriptorCollection(object,ICollection,IEnumerable,IList):
 
    value: The System.ComponentModel.EventDescriptor to remove from the collection.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: EventDescriptorCollection,index: int)
 
    Removes the System.ComponentModel.EventDescriptor at the specified index from the collection.
@@ -155,9 +165,10 @@ class EventDescriptorCollection(object,ICollection,IEnumerable,IList):
 
    index: The index of the System.ComponentModel.EventDescriptor to remove.
   """
-  pass
- def Sort(self,*__args):
-  """
+        pass
+
+    def Sort(self, *__args):
+        """
   Sort(self: EventDescriptorCollection,names: Array[str],comparer: IComparer) -> EventDescriptorCollection
 
   
@@ -236,12 +247,14 @@ class EventDescriptorCollection(object,ICollection,IEnumerable,IList):
 
    Returns: The new System.ComponentModel.EventDescriptorCollection.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IList,value: object) -> bool
 
   
@@ -254,32 +267,39 @@ class EventDescriptorCollection(object,ICollection,IEnumerable,IList):
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,events,readOnly=None):
-  """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, events, readOnly=None):
+        """
   __new__(cls: type,events: Array[EventDescriptor])
 
   __new__(cls: type,events: Array[EventDescriptor],readOnly: bool)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of event descriptors in the collection.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of event descriptors in the collection.
 
 
 
@@ -289,6 +309,4 @@ Get: Count(self: EventDescriptorCollection) -> int
 
 """
 
-
- Empty=None
-
+    Empty = None

@@ -1,5 +1,5 @@
-class NetworkCredential(object,ICredentials,ICredentialsByHost):
- """
+class NetworkCredential(object, ICredentials, ICredentialsByHost):
+    """
  Provides credentials for password-based authentication schemes such as basic,digest,NTLM,and Kerberos authentication.
 
  
@@ -14,8 +14,9 @@ class NetworkCredential(object,ICredentials,ICredentialsByHost):
 
  NetworkCredential(userName: str,password: SecureString,domain: str)
  """
- def GetCredential(self,*__args):
-  """
+
+    def GetCredential(self, *__args):
+        """
   GetCredential(self: NetworkCredential,host: str,port: int,authenticationType: str) -> NetworkCredential
 
   
@@ -68,13 +69,15 @@ class NetworkCredential(object,ICredentials,ICredentialsByHost):
 
    Returns: A System.Net.NetworkCredential object.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,userName=None,password=None,domain=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, userName=None, password=None, domain=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,userName: str,password: str)
@@ -85,12 +88,14 @@ class NetworkCredential(object,ICredentials,ICredentialsByHost):
 
   __new__(cls: type,userName: str,password: SecureString,domain: str)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Domain=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the domain or computer name that verifies the credentials.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Domain = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the domain or computer name that verifies the credentials.
 
 
 
@@ -102,8 +107,8 @@ Set: Domain(self: NetworkCredential)=value
 
 """
 
- Password=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the password for the user name associated with the credentials.
+    Password = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the password for the user name associated with the credentials.
 
 
 
@@ -115,8 +120,10 @@ Set: Password(self: NetworkCredential)=value
 
 """
 
- SecurePassword=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the password as a System.Security.SecureString instance.
+    SecurePassword = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the password as a System.Security.SecureString instance.
 
 
 
@@ -128,8 +135,8 @@ Set: SecurePassword(self: NetworkCredential)=value
 
 """
 
- UserName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the user name associated with the credentials.
+    UserName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the user name associated with the credentials.
 
 
 
@@ -140,5 +147,3 @@ Get: UserName(self: NetworkCredential) -> str
 Set: UserName(self: NetworkCredential)=value
 
 """
-
-

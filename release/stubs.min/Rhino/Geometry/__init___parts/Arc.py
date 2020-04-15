@@ -1,5 +1,5 @@
-class Arc(object,IEquatable[Arc],IEpsilonComparable[Arc]):
- """
+class Arc(object, IEquatable[Arc], IEpsilonComparable[Arc]):
+    """
  Represents the value of a plane,two angles and a radius in
 
     a subcurve of a three-dimensional circle.
@@ -32,8 +32,9 @@ class Arc(object,IEquatable[Arc],IEpsilonComparable[Arc]):
 
  Arc(pointA: Point3d,tangentA: Vector3d,pointB: Point3d)
  """
- def BoundingBox(self):
-  """
+
+    def BoundingBox(self):
+        """
   BoundingBox(self: Arc) -> BoundingBox
 
   
@@ -42,9 +43,10 @@ class Arc(object,IEquatable[Arc],IEpsilonComparable[Arc]):
 
    Returns: Bounding box of arc.
   """
-  pass
- def ClosestParameter(self,testPoint):
-  """
+        pass
+
+    def ClosestParameter(self, testPoint):
+        """
   ClosestParameter(self: Arc,testPoint: Point3d) -> float
 
   
@@ -71,9 +73,10 @@ class Arc(object,IEquatable[Arc],IEpsilonComparable[Arc]):
 
     RhinoMath.UnsetValue is returned.
   """
-  pass
- def ClosestPoint(self,testPoint):
-  """
+        pass
+
+    def ClosestPoint(self, testPoint):
+        """
   ClosestPoint(self: Arc,testPoint: Point3d) -> Point3d
 
   
@@ -92,18 +95,20 @@ class Arc(object,IEquatable[Arc],IEpsilonComparable[Arc]):
 
      UnsetPoint on failure.
   """
-  pass
- def EpsilonEquals(self,other,epsilon):
-  """
+        pass
+
+    def EpsilonEquals(self, other, epsilon):
+        """
   EpsilonEquals(self: Arc,other: Arc,epsilon: float) -> bool
 
   
 
    Check that all values in other are within epsilon of the values in this
   """
-  pass
- def Equals(self,*__args):
-  """
+        pass
+
+    def Equals(self, *__args):
+        """
   Equals(self: Arc,other: Arc) -> bool
 
   
@@ -128,9 +133,10 @@ class Arc(object,IEquatable[Arc],IEpsilonComparable[Arc]):
 
    Returns: true if obj is an arc and is exactly equal to this arc; otherwise false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Arc) -> int
 
   
@@ -139,9 +145,10 @@ class Arc(object,IEquatable[Arc],IEpsilonComparable[Arc]):
 
    Returns: A non-unique integer that represents this arc.
   """
-  pass
- def PointAt(self,t):
-  """
+        pass
+
+    def PointAt(self, t):
+        """
   PointAt(self: Arc,t: float) -> Point3d
 
   
@@ -154,18 +161,20 @@ class Arc(object,IEquatable[Arc],IEpsilonComparable[Arc]):
 
    Returns: The point at the given parameter.
   """
-  pass
- def Reverse(self):
-  """
+        pass
+
+    def Reverse(self):
+        """
   Reverse(self: Arc)
 
    Reverses the orientation of the arc. Changes the domain from [a,b]
 
      to [-b,-a].
   """
-  pass
- def TangentAt(self,t):
-  """
+        pass
+
+    def TangentAt(self, t):
+        """
   TangentAt(self: Arc,t: float) -> Vector3d
 
   
@@ -178,9 +187,10 @@ class Arc(object,IEquatable[Arc],IEpsilonComparable[Arc]):
 
    Returns: The tangent at the arc at the given parameter.
   """
-  pass
- def ToNurbsCurve(self):
-  """
+        pass
+
+    def ToNurbsCurve(self):
+        """
   ToNurbsCurve(self: Arc) -> NurbsCurve
 
   
@@ -195,9 +205,10 @@ class Arc(object,IEquatable[Arc],IEpsilonComparable[Arc]):
 
    Returns: A nurbs curve representation of this arc or null if no such representation could be made.
   """
-  pass
- def Transform(self,xform):
-  """
+        pass
+
+    def Transform(self, xform):
+        """
   Transform(self: Arc,xform: Transform) -> bool
 
   
@@ -216,9 +227,10 @@ class Arc(object,IEquatable[Arc],IEpsilonComparable[Arc]):
 
    Returns: true on success,false on failure.
   """
-  pass
- def Trim(self,domain):
-  """
+        pass
+
+    def Trim(self, domain):
+        """
   Trim(self: Arc,domain: Interval) -> bool
 
   
@@ -231,16 +243,19 @@ class Arc(object,IEquatable[Arc],IEpsilonComparable[Arc]):
 
    Returns: true on success,false on failure.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__[Arc]() -> Arc
 
   
@@ -259,18 +274,23 @@ class Arc(object,IEquatable[Arc],IEpsilonComparable[Arc]):
 
   __new__(cls: type,pointA: Point3d,tangentA: Vector3d,pointB: Point3d)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- Angle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the sweep -or subtended- angle (in Radians) for this arc segment.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Angle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the sweep -or subtended- angle (in Radians) for this arc segment.
 
 
 
@@ -282,8 +302,10 @@ Set: Angle(self: Arc)=value
 
 """
 
- AngleDegrees=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the sweep -or subtended- angle (in Radians) for this arc segment.
+    AngleDegrees = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the sweep -or subtended- angle (in Radians) for this arc segment.
 
 
 
@@ -295,8 +317,10 @@ Set: AngleDegrees(self: Arc)=value
 
 """
 
- AngleDomain=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the angle domain (in Radians) of this arc.
+    AngleDomain = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the angle domain (in Radians) of this arc.
 
 
 
@@ -308,8 +332,8 @@ Set: AngleDomain(self: Arc)=value
 
 """
 
- Center=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the center point for this arc.
+    Center = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the center point for this arc.
 
 
 
@@ -321,8 +345,10 @@ Set: Center(self: Arc)=value
 
 """
 
- Circumference=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the circumference of the circle that is coincident with this arc.
+    Circumference = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the circumference of the circle that is coincident with this arc.
 
 
 
@@ -332,8 +358,8 @@ Get: Circumference(self: Arc) -> float
 
 """
 
- Diameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Diameter of this arc.
+    Diameter = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Diameter of this arc.
 
 
 
@@ -345,8 +371,8 @@ Set: Diameter(self: Arc)=value
 
 """
 
- EndAngle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the end angle (in Radians) for this arc segment.
+    EndAngle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the end angle (in Radians) for this arc segment.
 
 
 
@@ -358,8 +384,10 @@ Set: EndAngle(self: Arc)=value
 
 """
 
- EndAngleDegrees=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the end angle (in Radians) for this arc segment.
+    EndAngleDegrees = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the end angle (in Radians) for this arc segment.
 
 
 
@@ -371,8 +399,8 @@ Set: EndAngleDegrees(self: Arc)=value
 
 """
 
- EndPoint=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the end point of the arc.
+    EndPoint = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the end point of the arc.
 
 
 
@@ -382,8 +410,8 @@ Get: EndPoint(self: Arc) -> Point3d
 
 """
 
- IsCircle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether or not this arc is a complete circle.
+    IsCircle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether or not this arc is a complete circle.
 
 
 
@@ -393,8 +421,8 @@ Get: IsCircle(self: Arc) -> bool
 
 """
 
- IsValid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether or not this arc is valid.
+    IsValid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether or not this arc is valid.
 
    Detail:
 
@@ -408,8 +436,8 @@ Get: IsValid(self: Arc) -> bool
 
 """
 
- Length=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the length of the arc. (Length=Radius * (subtended angle in radians)).
+    Length = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the length of the arc. (Length=Radius * (subtended angle in radians)).
 
 
 
@@ -419,8 +447,8 @@ Get: Length(self: Arc) -> float
 
 """
 
- MidPoint=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the mid-point of the arc.
+    MidPoint = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the mid-point of the arc.
 
 
 
@@ -430,8 +458,8 @@ Get: MidPoint(self: Arc) -> Point3d
 
 """
 
- Plane=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the plane in which this arc lies.
+    Plane = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the plane in which this arc lies.
 
 
 
@@ -443,8 +471,8 @@ Set: Plane(self: Arc)=value
 
 """
 
- Radius=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the radius of this arc.
+    Radius = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the radius of this arc.
 
 
 
@@ -456,8 +484,10 @@ Set: Radius(self: Arc)=value
 
 """
 
- StartAngle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the start angle (in Radians) for this arc segment.
+    StartAngle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the start angle (in Radians) for this arc segment.
 
 
 
@@ -469,8 +499,10 @@ Set: StartAngle(self: Arc)=value
 
 """
 
- StartAngleDegrees=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the start angle (in Radians) for this arc segment.
+    StartAngleDegrees = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the start angle (in Radians) for this arc segment.
 
 
 
@@ -482,8 +514,10 @@ Set: StartAngleDegrees(self: Arc)=value
 
 """
 
- StartPoint=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the start point of the arc.
+    StartPoint = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the start point of the arc.
 
 
 
@@ -492,5 +526,3 @@ Get: StartPoint(self: Arc) -> Point3d
 
 
 """
-
-

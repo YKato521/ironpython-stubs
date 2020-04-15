@@ -1,8 +1,9 @@
 class SolidUtils(object):
- """ Contains utility functions for solid operations. """
- @staticmethod
- def Clone(solid):
-  """
+    """ Contains utility functions for solid operations. """
+
+    @staticmethod
+    def Clone(solid):
+        """
   Clone(solid: Solid) -> Solid
 
   
@@ -15,10 +16,11 @@ class SolidUtils(object):
 
    Returns: The newly created Solid.
   """
-  pass
- @staticmethod
- def CreateTransformed(solid,transform):
-  """
+        pass
+
+    @staticmethod
+    def CreateTransformed(solid, transform):
+        """
   CreateTransformed(solid: Solid,transform: Transform) -> Solid
 
   
@@ -33,10 +35,11 @@ class SolidUtils(object):
 
    Returns: The newly created Solid.
   """
-  pass
- @staticmethod
- def IsValidForTessellation(solidOrShell):
-  """
+        pass
+
+    @staticmethod
+    def IsValidForTessellation(solidOrShell):
+        """
   IsValidForTessellation(solidOrShell: Solid) -> bool
 
   
@@ -49,10 +52,11 @@ class SolidUtils(object):
 
    Returns: True if the solid or shell is valid for tessellation,false otherwise.
   """
-  pass
- @staticmethod
- def SplitVolumes(solid):
-  """
+        pass
+
+    @staticmethod
+    def SplitVolumes(solid):
+        """
   SplitVolumes(solid: Solid) -> IList[Solid]
 
   
@@ -65,10 +69,11 @@ class SolidUtils(object):
 
    Returns: The split solid geometries.
   """
-  pass
- @staticmethod
- def TessellateSolidOrShell(solidOrShell,tessellationControls):
-  """
+        pass
+
+    @staticmethod
+    def TessellateSolidOrShell(solidOrShell, tessellationControls):
+        """
   TessellateSolidOrShell(solidOrShell: Solid,tessellationControls: SolidOrShellTessellationControls) -> TriangulatedSolidOrShell
 
   
@@ -95,12 +100,12 @@ class SolidUtils(object):
 
     input solid or the components of the input shell.
   """
-  pass
- __all__=[
-  'Clone',
-  'CreateTransformed',
-  'IsValidForTessellation',
-  'SplitVolumes',
-  'TessellateSolidOrShell',
- ]
+        pass
 
+    __all__ = [
+        "Clone",
+        "CreateTransformed",
+        "IsValidForTessellation",
+        "SplitVolumes",
+        "TessellateSolidOrShell",
+    ]

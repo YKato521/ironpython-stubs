@@ -1,8 +1,9 @@
 class Help(object):
- """ Encapsulates the HTML Help 1.0 engine. """
- @staticmethod
- def ShowHelp(parent,url,*__args):
-  """
+    """ Encapsulates the HTML Help 1.0 engine. """
+
+    @staticmethod
+    def ShowHelp(parent, url, *__args):
+        """
   ShowHelp(parent: Control,url: str,keyword: str)
 
    Displays the contents of the Help file found at the specified URL for a specific keyword.
@@ -51,10 +52,11 @@ class Help(object):
 
    navigator: One of the System.Windows.Forms.HelpNavigator values.
   """
-  pass
- @staticmethod
- def ShowHelpIndex(parent,url):
-  """
+        pass
+
+    @staticmethod
+    def ShowHelpIndex(parent, url):
+        """
   ShowHelpIndex(parent: Control,url: str)
 
    Displays the index of the specified Help file.
@@ -65,10 +67,11 @@ class Help(object):
 
    url: The path and name of the Help file.
   """
-  pass
- @staticmethod
- def ShowPopup(parent,caption,location):
-  """
+        pass
+
+    @staticmethod
+    def ShowPopup(parent, caption, location):
+        """
   ShowPopup(parent: Control,caption: str,location: Point)
 
    Displays a Help pop-up window.
@@ -83,4 +86,4 @@ class Help(object):
 
     window,relative to the upper-left corner of the screen.
   """
-  pass
+        pass

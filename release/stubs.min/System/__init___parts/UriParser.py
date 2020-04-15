@@ -1,7 +1,8 @@
 class UriParser(object):
- """ Parses a new URI scheme. This is an abstract class. """
- def GetComponents(self,*args):
-  """
+    """ Parses a new URI scheme. This is an abstract class. """
+
+    def GetComponents(self, *args):
+        """
   GetComponents(self: UriParser,uri: Uri,components: UriComponents,format: UriFormat) -> str
 
   
@@ -18,9 +19,10 @@ class UriParser(object):
 
    Returns: A string that contains the components.
   """
-  pass
- def InitializeAndValidate(self,*args):
-  """
+        pass
+
+    def InitializeAndValidate(self, *args):
+        """
   InitializeAndValidate(self: UriParser,uri: Uri) -> UriFormatException
 
   
@@ -31,9 +33,10 @@ class UriParser(object):
 
    uri: The T:System.Uri to validate.
   """
-  pass
- def IsBaseOf(self,*args):
-  """
+        pass
+
+    def IsBaseOf(self, *args):
+        """
   IsBaseOf(self: UriParser,baseUri: Uri,relativeUri: Uri) -> bool
 
   
@@ -48,10 +51,11 @@ class UriParser(object):
 
    Returns: true if baseUri is a base URI for relativeUri; otherwise,false.
   """
-  pass
- @staticmethod
- def IsKnownScheme(schemeName):
-  """
+        pass
+
+    @staticmethod
+    def IsKnownScheme(schemeName):
+        """
   IsKnownScheme(schemeName: str) -> bool
 
   
@@ -64,9 +68,10 @@ class UriParser(object):
 
    Returns: true if schemeName has been registered; otherwise,false.
   """
-  pass
- def IsWellFormedOriginalString(self,*args):
-  """
+        pass
+
+    def IsWellFormedOriginalString(self, *args):
+        """
   IsWellFormedOriginalString(self: UriParser,uri: Uri) -> bool
 
   
@@ -79,9 +84,10 @@ class UriParser(object):
 
    Returns: true if uri is well-formed; otherwise,false.
   """
-  pass
- def OnNewUri(self,*args):
-  """
+        pass
+
+    def OnNewUri(self, *args):
+        """
   OnNewUri(self: UriParser) -> UriParser
 
   
@@ -90,9 +96,10 @@ class UriParser(object):
 
    Returns: A System.UriParser for the constructed System.Uri.
   """
-  pass
- def OnRegister(self,*args):
-  """
+        pass
+
+    def OnRegister(self, *args):
+        """
   OnRegister(self: UriParser,schemeName: str,defaultPort: int)
 
    Invoked by the Framework when a System.UriParser method is registered.
@@ -103,10 +110,11 @@ class UriParser(object):
 
    defaultPort: The port number of the scheme.
   """
-  pass
- @staticmethod
- def Register(uriParser,schemeName,defaultPort):
-  """
+        pass
+
+    @staticmethod
+    def Register(uriParser, schemeName, defaultPort):
+        """
   Register(uriParser: UriParser,schemeName: str,defaultPort: int)
 
    Associates a scheme and port number with a System.UriParser.
@@ -119,9 +127,10 @@ class UriParser(object):
 
    defaultPort: The default port number for the specified scheme.
   """
-  pass
- def Resolve(self,*args):
-  """
+        pass
+
+    def Resolve(self, *args):
+        """
   Resolve(self: UriParser,baseUri: Uri,relativeUri: Uri) -> (str,UriFormatException)
 
   
@@ -136,4 +145,4 @@ class UriParser(object):
 
    Returns: The string of the resolved relative System.Uri.
   """
-  pass
+        pass

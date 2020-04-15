@@ -1,16 +1,18 @@
-class Document(object,IDisposable):
- """ An object that represents an open Autodesk Revit project. """
- def AutoJoinElements(self):
-  """
+class Document(object, IDisposable):
+    """ An object that represents an open Autodesk Revit project. """
+
+    def AutoJoinElements(self):
+        """
   AutoJoinElements(self: Document)
 
    Forces the elements in the Revit document to automatically join to their 
 
     neighbors where appropriate.
   """
-  pass
- def CanEnableWorksharing(self):
-  """
+        pass
+
+    def CanEnableWorksharing(self):
+        """
   CanEnableWorksharing(self: Document) -> bool
 
   
@@ -19,9 +21,10 @@ class Document(object,IDisposable):
 
    Returns: True if worksharing can be enabled in the document,False otherwise.
   """
-  pass
- def Close(self,saveModified=None):
-  """
+        pass
+
+    def Close(self, saveModified=None):
+        """
   Close(self: Document,saveModified: bool) -> bool
 
   
@@ -62,9 +65,10 @@ class Document(object,IDisposable):
 
   When function succeeds,True is returned.
   """
-  pass
- def CombineElements(self,members):
-  """
+        pass
+
+    def CombineElements(self, members):
+        """
   CombineElements(self: Document,members: CombinableElementArray) -> GeomCombination
 
   
@@ -81,9 +85,10 @@ class Document(object,IDisposable):
     
   exception with error information will be thrown.
   """
-  pass
- def ConvertDetailToModelCurves(self,view,detailCurves):
-  """
+        pass
+
+    def ConvertDetailToModelCurves(self, view, detailCurves):
+        """
   ConvertDetailToModelCurves(self: Document,view: View,detailCurves: DetailCurveArray) -> ModelCurveArray
 
   
@@ -104,9 +109,10 @@ class Document(object,IDisposable):
 
    detailCurves: The detail curve array to be converted.
   """
-  pass
- def ConvertModelToDetailCurves(self,view,modelCurves):
-  """
+        pass
+
+    def ConvertModelToDetailCurves(self, view, modelCurves):
+        """
   ConvertModelToDetailCurves(self: Document,view: View,modelCurves: ModelCurveArray) -> DetailCurveArray
 
   
@@ -131,9 +137,10 @@ class Document(object,IDisposable):
 
    modelCurves: The model curve array to be converted.
   """
-  pass
- def ConvertModelToSymbolicCurves(self,view,modelCurves):
-  """
+        pass
+
+    def ConvertModelToSymbolicCurves(self, view, modelCurves):
+        """
   ConvertModelToSymbolicCurves(self: Document,view: View,modelCurves: ModelCurveArray) -> SymbolicCurveArray
 
   
@@ -162,9 +169,10 @@ class Document(object,IDisposable):
 
    modelCurves: The model curve array to be converted.
   """
-  pass
- def ConvertSymbolicToModelCurves(self,view,symbolicCurve):
-  """
+        pass
+
+    def ConvertSymbolicToModelCurves(self, view, symbolicCurve):
+        """
   ConvertSymbolicToModelCurves(self: Document,view: View,symbolicCurve: SymbolicCurveArray) -> ModelCurveArray
 
   
@@ -185,9 +193,10 @@ class Document(object,IDisposable):
 
    symbolicCurve: The symbolic curve array to be converted.
   """
-  pass
- def Delete(self,*__args):
-  """
+        pass
+
+    def Delete(self, *__args):
+        """
   Delete(self: Document,elementId: ElementId) -> ICollection[ElementId]
 
   
@@ -202,12 +211,14 @@ class Document(object,IDisposable):
 
   Delete(self: Document,elementIds: ICollection[ElementId]) -> ICollection[ElementId]
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Document) """
-  pass
- def EditFamily(self,loadedFamily):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Document) """
+        pass
+
+    def EditFamily(self, loadedFamily):
+        """
   EditFamily(self: Document,loadedFamily: Family) -> Document
 
   
@@ -220,9 +231,10 @@ class Document(object,IDisposable):
 
    Returns: Reference of the document of the family.
   """
-  pass
- def EnableWorksharing(self,worksetNameGridLevel,worksetName):
-  """
+        pass
+
+    def EnableWorksharing(self, worksetNameGridLevel, worksetName):
+        """
   EnableWorksharing(self: Document,worksetNameGridLevel: str,worksetName: str)
 
    Enables worksharing in the document.
@@ -233,18 +245,20 @@ class Document(object,IDisposable):
 
    worksetName: Name of workset for all other elements.
   """
-  pass
- def Equals(self,obj):
-  """
+        pass
+
+    def Equals(self, obj):
+        """
   Equals(self: Document,obj: object) -> bool
 
   
 
    Determines whether the specified System.Object equals to this System.Object.
   """
-  pass
- def Export(self,folder,name,*__args):
-  """
+        pass
+
+    def Export(self, folder, name, *__args):
+        """
   Export(self: Document,folder: str,name: str,views: ViewSet,options: FBXExportOptions) -> bool
 
   
@@ -489,9 +503,10 @@ class Document(object,IDisposable):
 
    Returns: True if successful,otherwise False.
   """
-  pass
- def ExportImage(self,options):
-  """
+        pass
+
+    def ExportImage(self, options):
+        """
   ExportImage(self: Document,options: ImageExportOptions)
 
    Exports a view or set of views into an image file.
@@ -500,9 +515,10 @@ class Document(object,IDisposable):
 
    options: The options which govern the image export.
   """
-  pass
- def GetDefaultElementTypeId(self,defaultTypeId):
-  """
+        pass
+
+    def GetDefaultElementTypeId(self, defaultTypeId):
+        """
   GetDefaultElementTypeId(self: Document,defaultTypeId: ElementTypeGroup) -> ElementId
 
   
@@ -515,9 +531,10 @@ class Document(object,IDisposable):
 
    Returns: The element type id.
   """
-  pass
- def GetDefaultFamilyTypeId(self,familyCategoryId):
-  """
+        pass
+
+    def GetDefaultFamilyTypeId(self, familyCategoryId):
+        """
   GetDefaultFamilyTypeId(self: Document,familyCategoryId: ElementId) -> ElementId
 
   
@@ -530,9 +547,10 @@ class Document(object,IDisposable):
 
    Returns: The default family type id.
   """
-  pass
- def GetDocumentPreviewSettings(self):
-  """
+        pass
+
+    def GetDocumentPreviewSettings(self):
+        """
   GetDocumentPreviewSettings(self: Document) -> DocumentPreviewSettings
 
   
@@ -541,10 +559,11 @@ class Document(object,IDisposable):
 
    Returns: The preview settings.
   """
-  pass
- @staticmethod
- def GetDocumentVersion(doc):
-  """
+        pass
+
+    @staticmethod
+    def GetDocumentVersion(doc):
+        """
   GetDocumentVersion(doc: Document) -> DocumentVersion
 
   
@@ -557,9 +576,10 @@ class Document(object,IDisposable):
 
    Returns: The DocumentVersion corresponding to the given document.
   """
-  pass
- def GetElement(self,*__args):
-  """
+        pass
+
+    def GetElement(self, *__args):
+        """
   GetElement(self: Document,reference: Reference) -> Element
 
   
@@ -602,18 +622,20 @@ class Document(object,IDisposable):
 
    Returns: The element referenced by the input argument.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Document) -> int
 
   
 
    Gets the hash code of this document instance.
   """
-  pass
- def GetPaintedMaterial(self,elementId,face):
-  """
+        pass
+
+    def GetPaintedMaterial(self, elementId, face):
+        """
   GetPaintedMaterial(self: Document,elementId: ElementId,face: Face) -> ElementId
 
   
@@ -632,9 +654,10 @@ class Document(object,IDisposable):
 
    Returns: The material's Id painted on the element's face.
   """
-  pass
- def GetPrintSettingIds(self):
-  """
+        pass
+
+    def GetPrintSettingIds(self):
+        """
   GetPrintSettingIds(self: Document) -> ICollection[ElementId]
 
   
@@ -643,9 +666,10 @@ class Document(object,IDisposable):
 
    Returns: The ElementIds of all print setting elements
   """
-  pass
- def GetRoomAtPoint(self,point,phase=None):
-  """
+        pass
+
+    def GetRoomAtPoint(self, point, phase=None):
+        """
   GetRoomAtPoint(self: Document,point: XYZ,phase: Phase) -> Room
 
   
@@ -672,9 +696,10 @@ class Document(object,IDisposable):
 
    Returns: The room containing the point.
   """
-  pass
- def GetSpaceAtPoint(self,point,phase=None):
-  """
+        pass
+
+    def GetSpaceAtPoint(self, point, phase=None):
+        """
   GetSpaceAtPoint(self: Document,point: XYZ,phase: Phase) -> Space
 
   
@@ -701,9 +726,10 @@ class Document(object,IDisposable):
 
    Returns: The space containing the point.
   """
-  pass
- def GetUnits(self):
-  """
+        pass
+
+    def GetUnits(self):
+        """
   GetUnits(self: Document) -> Units
 
   
@@ -712,9 +738,10 @@ class Document(object,IDisposable):
 
    Returns: The Units object.
   """
-  pass
- def GetWorksetId(self,id):
-  """
+        pass
+
+    def GetWorksetId(self, id):
+        """
   GetWorksetId(self: Document,id: ElementId) -> WorksetId
 
   
@@ -727,9 +754,10 @@ class Document(object,IDisposable):
 
    Returns: Id of the Workset which owns the element.
   """
-  pass
- def GetWorksetTable(self):
-  """
+        pass
+
+    def GetWorksetTable(self):
+        """
   GetWorksetTable(self: Document) -> WorksetTable
 
   
@@ -738,9 +766,10 @@ class Document(object,IDisposable):
 
    Returns: The WorksetTable of this document.
   """
-  pass
- def GetWorksharingCentralModelPath(self):
-  """
+        pass
+
+    def GetWorksharingCentralModelPath(self):
+        """
   GetWorksharingCentralModelPath(self: Document) -> ModelPath
 
   
@@ -749,9 +778,10 @@ class Document(object,IDisposable):
 
    Returns: The central model path,or null if the document is not workshared.
   """
-  pass
- def HasAllChangesFromCentral(self):
-  """
+        pass
+
+    def HasAllChangesFromCentral(self):
+        """
   HasAllChangesFromCentral(self: Document) -> bool
 
   
@@ -774,9 +804,10 @@ class Document(object,IDisposable):
 
     CentralModelContentionException.
   """
-  pass
- def Import(self,file,options,*__args):
-  """
+        pass
+
+    def Import(self, file, options, *__args):
+        """
   Import(self: Document,file: str,options: DWGImportOptions,pDBView: View) -> (bool,ElementId)
 
   
@@ -901,9 +932,10 @@ class Document(object,IDisposable):
 
    Returns: Returns the element Id of the linked instance.
   """
-  pass
- def IsDefaultElementTypeIdValid(self,defaultTypeId,typeId):
-  """
+        pass
+
+    def IsDefaultElementTypeIdValid(self, defaultTypeId, typeId):
+        """
   IsDefaultElementTypeIdValid(self: Document,defaultTypeId: ElementTypeGroup,typeId: ElementId) -> bool
 
   
@@ -920,9 +952,10 @@ class Document(object,IDisposable):
 
     otherwise.
   """
-  pass
- def IsDefaultFamilyTypeIdValid(self,familyCategoryId,familyTypeId):
-  """
+        pass
+
+    def IsDefaultFamilyTypeIdValid(self, familyCategoryId, familyTypeId):
+        """
   IsDefaultFamilyTypeIdValid(self: Document,familyCategoryId: ElementId,familyTypeId: ElementId) -> bool
 
   
@@ -939,9 +972,10 @@ class Document(object,IDisposable):
 
     otherwise.
   """
-  pass
- def IsPainted(self,elementId,face):
-  """
+        pass
+
+    def IsPainted(self, elementId, face):
+        """
   IsPainted(self: Document,elementId: ElementId,face: Face) -> bool
 
   
@@ -956,9 +990,10 @@ class Document(object,IDisposable):
 
    Returns: True if the element's face is painted.
   """
-  pass
- def Link(self,file,options,pDBView=None,elementId=None):
-  """
+        pass
+
+    def Link(self, file, options, pDBView=None, elementId=None):
+        """
   Link(self: Document,file: str,options: SATImportOptions,pDBView: View) -> ElementId
 
   
@@ -1057,9 +1092,10 @@ class Document(object,IDisposable):
 
    Returns: True if successful,otherwise False.
   """
-  pass
- def LoadFamily(self,*__args):
-  """
+        pass
+
+    def LoadFamily(self, *__args):
+        """
   LoadFamily(self: Document,filename: str) -> (bool,Family)
 
   
@@ -1152,9 +1188,10 @@ class Document(object,IDisposable):
 
    Returns: Reference of the family in the target document.
   """
-  pass
- def LoadFamilySymbol(self,filename,name,*__args):
-  """
+        pass
+
+    def LoadFamilySymbol(self, filename, name, *__args):
+        """
   LoadFamilySymbol(self: Document,filename: str,name: str) -> bool
 
   
@@ -1221,9 +1258,10 @@ class Document(object,IDisposable):
 
     otherwise False.
   """
-  pass
- def MakeTransientElements(self,maker):
-  """
+        pass
+
+    def MakeTransientElements(self, maker):
+        """
   MakeTransientElements(self: Document,maker: ITransientElementMaker)
 
    This method encapsulates the process of creating transient elements in the 
@@ -1242,9 +1280,10 @@ class Document(object,IDisposable):
 
     called to create element(s) which would become transient.
   """
-  pass
- def Paint(self,elementId,face,*__args):
-  """
+        pass
+
+    def Paint(self, elementId, face, *__args):
+        """
   Paint(self: Document,elementId: ElementId,face: Face,familyParameter: FamilyParameter)
 
    Paint the element's face with specified material.
@@ -1269,9 +1308,10 @@ class Document(object,IDisposable):
 
    materialId: The material to be painted on the face
   """
-  pass
- def PostFailure(self,failure):
-  """
+        pass
+
+    def PostFailure(self, failure):
+        """
   PostFailure(self: Document,failure: FailureMessage) -> FailureMessageKey
 
   
@@ -1290,9 +1330,10 @@ class Document(object,IDisposable):
 
     postings,returned key will be the same every time.
   """
-  pass
- def Print(self,views,*__args):
-  """
+        pass
+
+    def Print(self, views, *__args):
+        """
   Print(self: Document,views: ViewSet,useCurrentPrintSettings: bool)
 
    Prints a set of views with default view template and default print settings.
@@ -1345,22 +1386,26 @@ class Document(object,IDisposable):
 
    viewTemplate: The view template which apply to the set of views.
   """
-  pass
- def Regenerate(self):
-  """
+        pass
+
+    def Regenerate(self):
+        """
   Regenerate(self: Document)
 
    Updates the elements in the Revit document to reflect all changes.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Document,disposing: bool) """
-  pass
- def ReleaseUnmanagedResources_(self,*args):
-  """ ReleaseUnmanagedResources_(self: Document,disposing: bool) """
-  pass
- def ReloadLatest(self,reloadOptions):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Document,disposing: bool) """
+        pass
+
+    def ReleaseUnmanagedResources_(self, *args):
+        """ ReleaseUnmanagedResources_(self: Document,disposing: bool) """
+        pass
+
+    def ReloadLatest(self, reloadOptions):
+        """
   ReloadLatest(self: Document,reloadOptions: ReloadLatestOptions)
 
    Fetches changes from central (due to one or more synchronizations with central)
@@ -1375,9 +1420,10 @@ class Document(object,IDisposable):
 
    reloadOptions: Various options to control behavior of reloadLatest.
   """
-  pass
- def RemovePaint(self,elementId,face):
-  """
+        pass
+
+    def RemovePaint(self, elementId, face):
+        """
   RemovePaint(self: Document,elementId: ElementId,face: Face)
 
    Remove the material painted on the element's face.
@@ -1394,9 +1440,10 @@ class Document(object,IDisposable):
 
    face: The painted element's face.
   """
-  pass
- def Save(self,options=None):
-  """
+        pass
+
+    def Save(self, options=None):
+        """
   Save(self: Document)
 
    Saves the document.
@@ -1409,9 +1456,10 @@ class Document(object,IDisposable):
 
    options: Options to control the Save operation.
   """
-  pass
- def SaveAs(self,*__args):
-  """
+        pass
+
+    def SaveAs(self, *__args):
+        """
   SaveAs(self: Document,filepath: str)
 
    Saves the document to a given file path.
@@ -1452,9 +1500,10 @@ class Document(object,IDisposable):
 
    options: Options to govern the SaveAs operation.
   """
-  pass
- def SaveToProjectAsImage(self,options):
-  """
+        pass
+
+    def SaveToProjectAsImage(self, options):
+        """
   SaveToProjectAsImage(self: Document,options: ImageExportOptions) -> ElementId
 
   
@@ -1469,9 +1518,10 @@ class Document(object,IDisposable):
 
     otherwise.
   """
-  pass
- def SeparateElements(self,members):
-  """
+        pass
+
+    def SeparateElements(self, members):
+        """
   SeparateElements(self: Document,members: CombinableElementArray)
 
    Separate a set of combinable elements out of combinations they currently belong 
@@ -1484,9 +1534,10 @@ class Document(object,IDisposable):
 
    members: A list of combinable elements to be separated.
   """
-  pass
- def SetDefaultElementTypeId(self,defaultTypeId,typeId):
-  """
+        pass
+
+    def SetDefaultElementTypeId(self, defaultTypeId, typeId):
+        """
   SetDefaultElementTypeId(self: Document,defaultTypeId: ElementTypeGroup,typeId: ElementId)
 
    Sets the default element type id of the given DefaultElementType id.
@@ -1497,9 +1548,10 @@ class Document(object,IDisposable):
 
    typeId: The element type id.
   """
-  pass
- def SetDefaultFamilyTypeId(self,familyCategoryId,familyTypeId):
-  """
+        pass
+
+    def SetDefaultFamilyTypeId(self, familyCategoryId, familyTypeId):
+        """
   SetDefaultFamilyTypeId(self: Document,familyCategoryId: ElementId,familyTypeId: ElementId)
 
    Sets the default family type id for the given family category.
@@ -1510,9 +1562,10 @@ class Document(object,IDisposable):
 
    familyTypeId: The default family type id.
   """
-  pass
- def SetUnits(self,units):
-  """
+        pass
+
+    def SetUnits(self, units):
+        """
   SetUnits(self: Document,units: Units)
 
    Sets the units.
@@ -1521,9 +1574,10 @@ class Document(object,IDisposable):
 
    units: The units.
   """
-  pass
- def SynchronizeWithCentral(self,transactOptions,syncOptions):
-  """
+        pass
+
+    def SynchronizeWithCentral(self, transactOptions, syncOptions):
+        """
   SynchronizeWithCentral(self: Document,transactOptions: TransactWithCentralOptions,syncOptions: SynchronizeWithCentralOptions)
 
    Performs reload latest until the model in the current session is up to date and 
@@ -1542,9 +1596,10 @@ class Document(object,IDisposable):
 
    syncOptions: Options to customize behavior of SynchronizeWithCentral.
   """
-  pass
- def UnpostFailure(self,messageKey):
-  """
+        pass
+
+    def UnpostFailure(self, messageKey):
+        """
   UnpostFailure(self: Document,messageKey: FailureMessageKey)
 
    Deletes the posted failure message associated with a given FailureMessageKey.
@@ -1553,26 +1608,35 @@ class Document(object,IDisposable):
 
    messageKey: The key of the FailureMessage to be deleted.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __ne__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- ActiveProjectLocation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Retrieve the active project location.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    ActiveProjectLocation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Retrieve the active project location.
 
 
 
@@ -1584,8 +1648,10 @@ Set: ActiveProjectLocation(self: Document)=value
 
 """
 
- ActiveView=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The document's active view.
+    ActiveView = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The document's active view.
 
 
 
@@ -1595,8 +1661,10 @@ Get: ActiveView(self: Document) -> View
 
 """
 
- Application=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the Application in which the Document resides.
+    Application = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the Application in which the Document resides.
 
 
 
@@ -1606,8 +1674,8 @@ Get: Application(self: Document) -> Application
 
 """
 
- Create=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """An object that can be used to create new instances of Autodesk Revit API elements
+    Create = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """An object that can be used to create new instances of Autodesk Revit API elements
 
 within a project.
 
@@ -1619,8 +1687,10 @@ Get: Create(self: Document) -> Document
 
 """
 
- DisplayUnitSystem=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides access to display unit type with in the document.
+    DisplayUnitSystem = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides access to display unit type with in the document.
 
 
 
@@ -1630,8 +1700,10 @@ Get: DisplayUnitSystem(self: Document) -> DisplayUnit
 
 """
 
- FamilyCreate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """An object that can be used to create new instances of Autodesk Revit API elements
+    FamilyCreate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """An object that can be used to create new instances of Autodesk Revit API elements
 
 within a family document.
 
@@ -1643,8 +1715,10 @@ Get: FamilyCreate(self: Document) -> FamilyItemFactory
 
 """
 
- FamilyManager=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The family manager object provides access to family types and parameters.
+    FamilyManager = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The family manager object provides access to family types and parameters.
 
 
 
@@ -1654,8 +1728,10 @@ Get: FamilyManager(self: Document) -> FamilyManager
 
 """
 
- IsDetached=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies if a workshared document is detached.
+    IsDetached = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies if a workshared document is detached.
 
    Also,see Autodesk.Revit.DB.Document.IsWorkshared
 
@@ -1667,8 +1743,10 @@ Get: IsDetached(self: Document) -> bool
 
 """
 
- IsFamilyDocument=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies if the current document is a family document.
+    IsFamilyDocument = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies if the current document is a family document.
 
 
 
@@ -1678,8 +1756,8 @@ Get: IsFamilyDocument(self: Document) -> bool
 
 """
 
- IsLinked=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies if a document is a linked RVT.
+    IsLinked = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Identifies if a document is a linked RVT.
 
 
 
@@ -1689,8 +1767,10 @@ Get: IsLinked(self: Document) -> bool
 
 """
 
- IsModifiable=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The document's state of modifiability.
+    IsModifiable = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The document's state of modifiability.
 
 
 
@@ -1700,8 +1780,10 @@ Get: IsModifiable(self: Document) -> bool
 
 """
 
- IsModified=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The state of changes made to the document.
+    IsModified = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The state of changes made to the document.
 
 
 
@@ -1711,8 +1793,10 @@ Get: IsModified(self: Document) -> bool
 
 """
 
- IsReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies if the document is read-only or can possibly be modified.
+    IsReadOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies if the document is read-only or can possibly be modified.
 
 
 
@@ -1722,8 +1806,10 @@ Get: IsReadOnly(self: Document) -> bool
 
 """
 
- IsReadOnlyFile=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Signals whether the document was opened from a read-only file.
+    IsReadOnlyFile = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Signals whether the document was opened from a read-only file.
 
 
 
@@ -1733,8 +1819,10 @@ Get: IsReadOnlyFile(self: Document) -> bool
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -1744,8 +1832,10 @@ Get: IsValidObject(self: Document) -> bool
 
 """
 
- IsWorkshared=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies if worksharing (i.e. editing permissions and multiple worksets) have been enabled in the document.
+    IsWorkshared = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies if worksharing (i.e. editing permissions and multiple worksets) have been enabled in the document.
 
    Also,see Autodesk.Revit.DB.Document.IsDetached
 
@@ -1757,8 +1847,10 @@ Get: IsWorkshared(self: Document) -> bool
 
 """
 
- MassDisplayTemporaryOverride=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This setting controls temporary display in views of objects with mass category or subcategories.
+    MassDisplayTemporaryOverride = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This setting controls temporary display in views of objects with mass category or subcategories.
 
 
 
@@ -1770,8 +1862,10 @@ Set: MassDisplayTemporaryOverride(self: Document)=value
 
 """
 
- MullionTypes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property is used to retrieve all the mullion types in current system.
+    MullionTypes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property is used to retrieve all the mullion types in current system.
 
 
 
@@ -1781,8 +1875,10 @@ Get: MullionTypes(self: Document) -> MullionTypeSet
 
 """
 
- OwnerFamily=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the Family of this Family Document.
+    OwnerFamily = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get the Family of this Family Document.
 
 
 
@@ -1792,8 +1888,10 @@ Get: OwnerFamily(self: Document) -> Family
 
 """
 
- PanelTypes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Retrieves a set of PanelType objects that contains all the panel types that are currently loaded into the
+    PanelTypes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Retrieves a set of PanelType objects that contains all the panel types that are currently loaded into the
 
 project.
 
@@ -1805,8 +1903,10 @@ Get: PanelTypes(self: Document) -> PanelTypeSet
 
 """
 
- ParameterBindings=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Retrieves an object from which mappings between parameter definitions and categories can
+    ParameterBindings = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Retrieves an object from which mappings between parameter definitions and categories can
 
 be found.
 
@@ -1818,8 +1918,8 @@ Get: ParameterBindings(self: Document) -> BindingMap
 
 """
 
- PathName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The fully qualified path of the document's disk file.
+    PathName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The fully qualified path of the document's disk file.
 
 
 
@@ -1829,8 +1929,8 @@ Get: PathName(self: Document) -> str
 
 """
 
- Phases=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Retrieves all the object that represent phases within the project.
+    Phases = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Retrieves all the object that represent phases within the project.
 
 
 
@@ -1840,8 +1940,10 @@ Get: Phases(self: Document) -> PhaseArray
 
 """
 
- PrintManager=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Retrieve the PrintManager of current project.
+    PrintManager = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Retrieve the PrintManager of current project.
 
 
 
@@ -1851,8 +1953,10 @@ Get: PrintManager(self: Document) -> PrintManager
 
 """
 
- ProjectInformation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Return the Project Information of the current project.
+    ProjectInformation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Return the Project Information of the current project.
 
 
 
@@ -1862,8 +1966,10 @@ Get: ProjectInformation(self: Document) -> ProjectInfo
 
 """
 
- ProjectLocations=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Retrieve all the project locations associated with this project
+    ProjectLocations = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Retrieve all the project locations associated with this project
 
 
 
@@ -1873,8 +1979,10 @@ Get: ProjectLocations(self: Document) -> ProjectLocationSet
 
 """
 
- ReactionsAreUpToDate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reports if the analytical model has regenerated in a document with reaction loads.
+    ReactionsAreUpToDate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reports if the analytical model has regenerated in a document with reaction loads.
 
 
 
@@ -1884,8 +1992,8 @@ Get: ReactionsAreUpToDate(self: Document) -> bool
 
 """
 
- Settings=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides access to general application settings,such as Categories.
+    Settings = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides access to general application settings,such as Categories.
 
 
 
@@ -1895,8 +2003,10 @@ Get: Settings(self: Document) -> Settings
 
 """
 
- SiteLocation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the site location information.
+    SiteLocation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the site location information.
 
 
 
@@ -1906,8 +2016,8 @@ Get: SiteLocation(self: Document) -> SiteLocation
 
 """
 
- Title=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The document's title.
+    Title = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The document's title.
 
 
 
@@ -1917,8 +2027,10 @@ Get: Title(self: Document) -> str
 
 """
 
- WorksharingCentralGUID=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The central GUID of the server-based model.
+    WorksharingCentralGUID = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The central GUID of the server-based model.
 
 
 
@@ -1928,14 +2040,12 @@ Get: WorksharingCentralGUID(self: Document) -> Guid
 
 """
 
-
- DocumentClosing=None
- DocumentPrinted=None
- DocumentPrinting=None
- DocumentSaved=None
- DocumentSavedAs=None
- DocumentSaving=None
- DocumentSavingAs=None
- ViewPrinted=None
- ViewPrinting=None
-
+    DocumentClosing = None
+    DocumentPrinted = None
+    DocumentPrinting = None
+    DocumentSaved = None
+    DocumentSavedAs = None
+    DocumentSaving = None
+    DocumentSavingAs = None
+    ViewPrinted = None
+    ViewPrinting = None

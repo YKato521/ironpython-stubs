@@ -1,5 +1,5 @@
-class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingService):
- """
+class DataGridTableStyle(Component, IComponent, IDisposable, IDataGridEditingService):
+    """
  Represents the table drawn by the System.Windows.Forms.DataGrid control at run time.
 
  
@@ -10,8 +10,9 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
  DataGridTableStyle(listManager: CurrencyManager)
  """
- def BeginEdit(self,gridColumn,rowNumber):
-  """
+
+    def BeginEdit(self, gridColumn, rowNumber):
+        """
   BeginEdit(self: DataGridTableStyle,gridColumn: DataGridColumnStyle,rowNumber: int) -> bool
 
   
@@ -26,9 +27,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    Returns: true,if the operation succeeds; otherwise,false.
   """
-  pass
- def CreateGridColumn(self,*args):
-  """
+        pass
+
+    def CreateGridColumn(self, *args):
+        """
   CreateGridColumn(self: DataGridTableStyle,prop: PropertyDescriptor,isDefault: bool) -> DataGridColumnStyle
 
   
@@ -63,9 +65,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    Returns: The newly created System.Windows.Forms.DataGridColumnStyle.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: DataGridTableStyle,disposing: bool)
 
    Disposes of the resources (other than memory) used by the 
@@ -78,9 +81,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def EndEdit(self,gridColumn,rowNumber,shouldAbort):
-  """
+        pass
+
+    def EndEdit(self, gridColumn, rowNumber, shouldAbort):
+        """
   EndEdit(self: DataGridTableStyle,gridColumn: DataGridColumnStyle,rowNumber: int,shouldAbort: bool) -> bool
 
   
@@ -101,9 +105,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    Returns: true if the edit operation ends successfully; otherwise,false.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -122,9 +127,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -155,9 +161,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def OnAllowSortingChanged(self,*args):
-  """
+        pass
+
+    def OnAllowSortingChanged(self, *args):
+        """
   OnAllowSortingChanged(self: DataGridTableStyle,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridTableStyle.AllowSortingChanged event.
@@ -166,9 +173,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnAlternatingBackColorChanged(self,*args):
-  """
+        pass
+
+    def OnAlternatingBackColorChanged(self, *args):
+        """
   OnAlternatingBackColorChanged(self: DataGridTableStyle,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridTableStyle.AlternatingBackColorChanged event.
@@ -177,9 +185,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnBackColorChanged(self,*args):
-  """
+        pass
+
+    def OnBackColorChanged(self, *args):
+        """
   OnBackColorChanged(self: DataGridTableStyle,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridTableStyle.BackColorChanged event.
@@ -188,9 +197,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnColumnHeadersVisibleChanged(self,*args):
-  """
+        pass
+
+    def OnColumnHeadersVisibleChanged(self, *args):
+        """
   OnColumnHeadersVisibleChanged(self: DataGridTableStyle,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridTableStyle.ColumnHeadersVisibleChanged event.
@@ -199,9 +209,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnForeColorChanged(self,*args):
-  """
+        pass
+
+    def OnForeColorChanged(self, *args):
+        """
   OnForeColorChanged(self: DataGridTableStyle,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridTableStyle.ForeColorChanged event.
@@ -210,9 +221,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnGridLineColorChanged(self,*args):
-  """
+        pass
+
+    def OnGridLineColorChanged(self, *args):
+        """
   OnGridLineColorChanged(self: DataGridTableStyle,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridTableStyle.GridLineColorChanged event.
@@ -221,9 +233,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnGridLineStyleChanged(self,*args):
-  """
+        pass
+
+    def OnGridLineStyleChanged(self, *args):
+        """
   OnGridLineStyleChanged(self: DataGridTableStyle,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridTableStyle.GridLineStyleChanged event.
@@ -232,9 +245,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnHeaderBackColorChanged(self,*args):
-  """
+        pass
+
+    def OnHeaderBackColorChanged(self, *args):
+        """
   OnHeaderBackColorChanged(self: DataGridTableStyle,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridTableStyle.HeaderBackColorChanged event.
@@ -243,9 +257,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnHeaderFontChanged(self,*args):
-  """
+        pass
+
+    def OnHeaderFontChanged(self, *args):
+        """
   OnHeaderFontChanged(self: DataGridTableStyle,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridTableStyle.HeaderFontChanged event.
@@ -254,9 +269,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnHeaderForeColorChanged(self,*args):
-  """
+        pass
+
+    def OnHeaderForeColorChanged(self, *args):
+        """
   OnHeaderForeColorChanged(self: DataGridTableStyle,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridTableStyle.HeaderForeColorChanged event.
@@ -265,9 +281,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnLinkColorChanged(self,*args):
-  """
+        pass
+
+    def OnLinkColorChanged(self, *args):
+        """
   OnLinkColorChanged(self: DataGridTableStyle,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridTableStyle.LinkColorChanged event.
@@ -276,9 +293,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnLinkHoverColorChanged(self,*args):
-  """
+        pass
+
+    def OnLinkHoverColorChanged(self, *args):
+        """
   OnLinkHoverColorChanged(self: DataGridTableStyle,e: EventArgs)
 
    Raises the LinkHoverColorChanged event.
@@ -287,9 +305,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnMappingNameChanged(self,*args):
-  """
+        pass
+
+    def OnMappingNameChanged(self, *args):
+        """
   OnMappingNameChanged(self: DataGridTableStyle,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridTableStyle.MappingNameChanged event
@@ -298,9 +317,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnPreferredColumnWidthChanged(self,*args):
-  """
+        pass
+
+    def OnPreferredColumnWidthChanged(self, *args):
+        """
   OnPreferredColumnWidthChanged(self: DataGridTableStyle,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridTableStyle.PreferredColumnWidthChanged event.
@@ -309,9 +329,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnPreferredRowHeightChanged(self,*args):
-  """
+        pass
+
+    def OnPreferredRowHeightChanged(self, *args):
+        """
   OnPreferredRowHeightChanged(self: DataGridTableStyle,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridTableStyle.PreferredRowHeightChanged event.
@@ -320,9 +341,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnReadOnlyChanged(self,*args):
-  """
+        pass
+
+    def OnReadOnlyChanged(self, *args):
+        """
   OnReadOnlyChanged(self: DataGridTableStyle,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridTableStyle.ReadOnlyChanged event.
@@ -331,9 +353,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnRowHeadersVisibleChanged(self,*args):
-  """
+        pass
+
+    def OnRowHeadersVisibleChanged(self, *args):
+        """
   OnRowHeadersVisibleChanged(self: DataGridTableStyle,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridTableStyle.RowHeadersVisibleChanged event.
@@ -342,9 +365,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnRowHeaderWidthChanged(self,*args):
-  """
+        pass
+
+    def OnRowHeaderWidthChanged(self, *args):
+        """
   OnRowHeaderWidthChanged(self: DataGridTableStyle,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridTableStyle.RowHeaderWidthChanged event.
@@ -353,9 +377,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnSelectionBackColorChanged(self,*args):
-  """
+        pass
+
+    def OnSelectionBackColorChanged(self, *args):
+        """
   OnSelectionBackColorChanged(self: DataGridTableStyle,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridTableStyle.SelectionBackColorChanged event.
@@ -364,9 +389,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def OnSelectionForeColorChanged(self,*args):
-  """
+        pass
+
+    def OnSelectionForeColorChanged(self, *args):
+        """
   OnSelectionForeColorChanged(self: DataGridTableStyle,e: EventArgs)
 
    Raises the System.Windows.Forms.DataGridTableStyle.SelectionForeColorChanged event.
@@ -375,92 +401,104 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    e: An System.EventArgs that contains the event data.
   """
-  pass
- def ResetAlternatingBackColor(self):
-  """
+        pass
+
+    def ResetAlternatingBackColor(self):
+        """
   ResetAlternatingBackColor(self: DataGridTableStyle)
 
    Resets the System.Windows.Forms.DataGridTableStyle.AlternatingBackColor property to its default 
 
     value.
   """
-  pass
- def ResetBackColor(self):
-  """
+        pass
+
+    def ResetBackColor(self):
+        """
   ResetBackColor(self: DataGridTableStyle)
 
    Resets the System.Windows.Forms.DataGridTableStyle.BackColor property to its default value.
   """
-  pass
- def ResetForeColor(self):
-  """
+        pass
+
+    def ResetForeColor(self):
+        """
   ResetForeColor(self: DataGridTableStyle)
 
    Resets the System.Windows.Forms.DataGridTableStyle.ForeColor property to its default value.
   """
-  pass
- def ResetGridLineColor(self):
-  """
+        pass
+
+    def ResetGridLineColor(self):
+        """
   ResetGridLineColor(self: DataGridTableStyle)
 
    Resets the System.Windows.Forms.DataGridTableStyle.GridLineColor property to its default value.
   """
-  pass
- def ResetHeaderBackColor(self):
-  """
+        pass
+
+    def ResetHeaderBackColor(self):
+        """
   ResetHeaderBackColor(self: DataGridTableStyle)
 
    Resets the System.Windows.Forms.DataGridTableStyle.HeaderBackColor property to its default value.
   """
-  pass
- def ResetHeaderFont(self):
-  """
+        pass
+
+    def ResetHeaderFont(self):
+        """
   ResetHeaderFont(self: DataGridTableStyle)
 
    Resets the System.Windows.Forms.DataGridTableStyle.HeaderFont property to its default value.
   """
-  pass
- def ResetHeaderForeColor(self):
-  """
+        pass
+
+    def ResetHeaderForeColor(self):
+        """
   ResetHeaderForeColor(self: DataGridTableStyle)
 
    Resets the System.Windows.Forms.DataGridTableStyle.HeaderForeColor property to its default value.
   """
-  pass
- def ResetLinkColor(self):
-  """
+        pass
+
+    def ResetLinkColor(self):
+        """
   ResetLinkColor(self: DataGridTableStyle)
 
    Resets the System.Windows.Forms.DataGridTableStyle.LinkColor property to its default value.
   """
-  pass
- def ResetLinkHoverColor(self):
-  """
+        pass
+
+    def ResetLinkHoverColor(self):
+        """
   ResetLinkHoverColor(self: DataGridTableStyle)
 
    Resets the System.Windows.Forms.DataGridTableStyle.LinkHoverColor property to its default value.
   """
-  pass
- def ResetSelectionBackColor(self):
-  """
+        pass
+
+    def ResetSelectionBackColor(self):
+        """
   ResetSelectionBackColor(self: DataGridTableStyle)
 
    Resets the System.Windows.Forms.DataGridTableStyle.SelectionBackColor property to its default 
 
     value.
   """
-  pass
- def ResetSelectionForeColor(self):
-  """
+        pass
+
+    def ResetSelectionForeColor(self):
+        """
   ResetSelectionForeColor(self: DataGridTableStyle)
 
    Resets the System.Windows.Forms.DataGridTableStyle.SelectionForeColor property to its default 
 
     value.
   """
-  pass
- def ShouldSerializeAlternatingBackColor(self,*args):
-  """
+        pass
+
+    def ShouldSerializeAlternatingBackColor(self, *args):
+        """
   ShouldSerializeAlternatingBackColor(self: DataGridTableStyle) -> bool
 
   
@@ -473,9 +511,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    Returns: true if the property value has changed from its default; otherwise,false.
   """
-  pass
- def ShouldSerializeBackColor(self,*args):
-  """
+        pass
+
+    def ShouldSerializeBackColor(self, *args):
+        """
   ShouldSerializeBackColor(self: DataGridTableStyle) -> bool
 
   
@@ -488,9 +527,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    Returns: true if the property value has changed from its default; otherwise,false.
   """
-  pass
- def ShouldSerializeForeColor(self,*args):
-  """
+        pass
+
+    def ShouldSerializeForeColor(self, *args):
+        """
   ShouldSerializeForeColor(self: DataGridTableStyle) -> bool
 
   
@@ -503,9 +543,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    Returns: true if the property value has changed from its default; otherwise,false.
   """
-  pass
- def ShouldSerializeGridLineColor(self,*args):
-  """
+        pass
+
+    def ShouldSerializeGridLineColor(self, *args):
+        """
   ShouldSerializeGridLineColor(self: DataGridTableStyle) -> bool
 
   
@@ -518,9 +559,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    Returns: true if the property value has changed from its default; otherwise,false.
   """
-  pass
- def ShouldSerializeHeaderBackColor(self,*args):
-  """
+        pass
+
+    def ShouldSerializeHeaderBackColor(self, *args):
+        """
   ShouldSerializeHeaderBackColor(self: DataGridTableStyle) -> bool
 
   
@@ -533,9 +575,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    Returns: true if the property value has changed from its default; otherwise,false.
   """
-  pass
- def ShouldSerializeHeaderForeColor(self,*args):
-  """
+        pass
+
+    def ShouldSerializeHeaderForeColor(self, *args):
+        """
   ShouldSerializeHeaderForeColor(self: DataGridTableStyle) -> bool
 
   
@@ -548,9 +591,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    Returns: true if the property value has changed from its default; otherwise,false.
   """
-  pass
- def ShouldSerializeLinkColor(self,*args):
-  """
+        pass
+
+    def ShouldSerializeLinkColor(self, *args):
+        """
   ShouldSerializeLinkColor(self: DataGridTableStyle) -> bool
 
   
@@ -563,9 +607,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    Returns: true if the property value has changed from its default; otherwise,false.
   """
-  pass
- def ShouldSerializeLinkHoverColor(self,*args):
-  """
+        pass
+
+    def ShouldSerializeLinkHoverColor(self, *args):
+        """
   ShouldSerializeLinkHoverColor(self: DataGridTableStyle) -> bool
 
   
@@ -578,9 +623,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    Returns: true if the property value has changed from its default; otherwise,false.
   """
-  pass
- def ShouldSerializePreferredRowHeight(self,*args):
-  """
+        pass
+
+    def ShouldSerializePreferredRowHeight(self, *args):
+        """
   ShouldSerializePreferredRowHeight(self: DataGridTableStyle) -> bool
 
   
@@ -593,9 +639,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    Returns: true if the property value has changed from its default; otherwise,false.
   """
-  pass
- def ShouldSerializeSelectionBackColor(self,*args):
-  """
+        pass
+
+    def ShouldSerializeSelectionBackColor(self, *args):
+        """
   ShouldSerializeSelectionBackColor(self: DataGridTableStyle) -> bool
 
   
@@ -608,9 +655,10 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    Returns: true if the property value has changed from its default; otherwise,false.
   """
-  pass
- def ShouldSerializeSelectionForeColor(self,*args):
-  """
+        pass
+
+    def ShouldSerializeSelectionForeColor(self, *args):
+        """
   ShouldSerializeSelectionForeColor(self: DataGridTableStyle) -> bool
 
   
@@ -623,40 +671,48 @@ class DataGridTableStyle(Component,IComponent,IDisposable,IDataGridEditingServic
 
    Returns: true if the property value has changed from its default; otherwise,false.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,isDefaultTableStyle: bool)
 
   __new__(cls: type)
 
   __new__(cls: type,listManager: CurrencyManager)
   """
-  pass
- def __str__(self,*args):
-  pass
- AllowSorting=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether sorting is allowed on the grid table when this System.Windows.Forms.DataGridTableStyle is used.
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AllowSorting = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates whether sorting is allowed on the grid table when this System.Windows.Forms.DataGridTableStyle is used.
 
 
 
@@ -668,8 +724,10 @@ Set: AllowSorting(self: DataGridTableStyle)=value
 
 """
 
- AlternatingBackColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the background color of odd-numbered rows of the grid.
+    AlternatingBackColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the background color of odd-numbered rows of the grid.
 
 
 
@@ -681,8 +739,8 @@ Set: AlternatingBackColor(self: DataGridTableStyle)=value
 
 """
 
- BackColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the background color of even-numbered rows of the grid.
+    BackColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the background color of even-numbered rows of the grid.
 
 
 
@@ -694,15 +752,19 @@ Set: BackColor(self: DataGridTableStyle)=value
 
 """
 
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- ColumnHeadersVisible=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether column headers are visible.
+    ColumnHeadersVisible = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether column headers are visible.
 
 
 
@@ -714,8 +776,8 @@ Set: ColumnHeadersVisible(self: DataGridTableStyle)=value
 
 """
 
- DataGrid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Windows.Forms.DataGrid control for the drawn table.
+    DataGrid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the System.Windows.Forms.DataGrid control for the drawn table.
 
 
 
@@ -727,22 +789,24 @@ Set: DataGrid(self: DataGridTableStyle)=value
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- ForeColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the foreground color of the grid table.
+    ForeColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the foreground color of the grid table.
 
 
 
@@ -754,8 +818,10 @@ Set: ForeColor(self: DataGridTableStyle)=value
 
 """
 
- GridColumnStyles=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of columns drawn for this table.
+    GridColumnStyles = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the collection of columns drawn for this table.
 
 
 
@@ -765,8 +831,10 @@ Get: GridColumnStyles(self: DataGridTableStyle) -> GridColumnStylesCollection
 
 """
 
- GridLineColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the color of grid lines.
+    GridLineColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the color of grid lines.
 
 
 
@@ -778,8 +846,10 @@ Set: GridLineColor(self: DataGridTableStyle)=value
 
 """
 
- GridLineStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the style of grid lines.
+    GridLineStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the style of grid lines.
 
 
 
@@ -791,8 +861,10 @@ Set: GridLineStyle(self: DataGridTableStyle)=value
 
 """
 
- HeaderBackColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the background color of headers.
+    HeaderBackColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the background color of headers.
 
 
 
@@ -804,8 +876,10 @@ Set: HeaderBackColor(self: DataGridTableStyle)=value
 
 """
 
- HeaderFont=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the font used for header captions.
+    HeaderFont = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the font used for header captions.
 
 
 
@@ -817,8 +891,10 @@ Set: HeaderFont(self: DataGridTableStyle)=value
 
 """
 
- HeaderForeColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the foreground color of headers.
+    HeaderForeColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the foreground color of headers.
 
 
 
@@ -830,8 +906,8 @@ Set: HeaderForeColor(self: DataGridTableStyle)=value
 
 """
 
- LinkColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the color of link text.
+    LinkColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the color of link text.
 
 
 
@@ -843,8 +919,10 @@ Set: LinkColor(self: DataGridTableStyle)=value
 
 """
 
- LinkHoverColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the color displayed when hovering over link text.
+    LinkHoverColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the color displayed when hovering over link text.
 
 
 
@@ -856,8 +934,10 @@ Set: LinkHoverColor(self: DataGridTableStyle)=value
 
 """
 
- MappingName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name used to map this table to a specific data source.
+    MappingName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name used to map this table to a specific data source.
 
 
 
@@ -869,8 +949,10 @@ Set: MappingName(self: DataGridTableStyle)=value
 
 """
 
- PreferredColumnWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the width used to create columns when a new grid is displayed.
+    PreferredColumnWidth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the width used to create columns when a new grid is displayed.
 
 
 
@@ -882,8 +964,10 @@ Set: PreferredColumnWidth(self: DataGridTableStyle)=value
 
 """
 
- PreferredRowHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the height used to create a row when a new grid is displayed.
+    PreferredRowHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the height used to create a row when a new grid is displayed.
 
 
 
@@ -895,8 +979,8 @@ Set: PreferredRowHeight(self: DataGridTableStyle)=value
 
 """
 
- ReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether columns can be edited.
+    ReadOnly = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether columns can be edited.
 
 
 
@@ -908,8 +992,10 @@ Set: ReadOnly(self: DataGridTableStyle)=value
 
 """
 
- RowHeadersVisible=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether row headers are visible.
+    RowHeadersVisible = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether row headers are visible.
 
 
 
@@ -921,8 +1007,10 @@ Set: RowHeadersVisible(self: DataGridTableStyle)=value
 
 """
 
- RowHeaderWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the width of row headers.
+    RowHeaderWidth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the width of row headers.
 
 
 
@@ -934,8 +1022,10 @@ Set: RowHeaderWidth(self: DataGridTableStyle)=value
 
 """
 
- SelectionBackColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the background color of selected cells.
+    SelectionBackColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the background color of selected cells.
 
 
 
@@ -947,8 +1037,10 @@ Set: SelectionBackColor(self: DataGridTableStyle)=value
 
 """
 
- SelectionForeColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the foreground color of selected cells.
+    SelectionForeColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the foreground color of selected cells.
 
 
 
@@ -960,26 +1052,24 @@ Set: SelectionForeColor(self: DataGridTableStyle)=value
 
 """
 
-
- AllowSortingChanged=None
- AlternatingBackColorChanged=None
- BackColorChanged=None
- ColumnHeadersVisibleChanged=None
- DefaultTableStyle=None
- ForeColorChanged=None
- GridLineColorChanged=None
- GridLineStyleChanged=None
- HeaderBackColorChanged=None
- HeaderFontChanged=None
- HeaderForeColorChanged=None
- LinkColorChanged=None
- LinkHoverColorChanged=None
- MappingNameChanged=None
- PreferredColumnWidthChanged=None
- PreferredRowHeightChanged=None
- ReadOnlyChanged=None
- RowHeadersVisibleChanged=None
- RowHeaderWidthChanged=None
- SelectionBackColorChanged=None
- SelectionForeColorChanged=None
-
+    AllowSortingChanged = None
+    AlternatingBackColorChanged = None
+    BackColorChanged = None
+    ColumnHeadersVisibleChanged = None
+    DefaultTableStyle = None
+    ForeColorChanged = None
+    GridLineColorChanged = None
+    GridLineStyleChanged = None
+    HeaderBackColorChanged = None
+    HeaderFontChanged = None
+    HeaderForeColorChanged = None
+    LinkColorChanged = None
+    LinkHoverColorChanged = None
+    MappingNameChanged = None
+    PreferredColumnWidthChanged = None
+    PreferredRowHeightChanged = None
+    ReadOnlyChanged = None
+    RowHeadersVisibleChanged = None
+    RowHeaderWidthChanged = None
+    SelectionBackColorChanged = None
+    SelectionForeColorChanged = None

@@ -1,7 +1,8 @@
-class DatumPlane(Element,IDisposable):
- """ A base class representing a datum surface (level,grid or reference plane) in Autodesk Revit. """
- def AddLeader(self,datumEnd,view):
-  """
+class DatumPlane(Element, IDisposable):
+    """ A base class representing a datum surface (level,grid or reference plane) in Autodesk Revit. """
+
+    def AddLeader(self, datumEnd, view):
+        """
   AddLeader(self: DatumPlane,datumEnd: DatumEnds,view: View) -> Leader
 
   
@@ -20,9 +21,10 @@ class DatumPlane(Element,IDisposable):
 
    Returns: The Leader of the datum plane. Null will return if the view is null.
   """
-  pass
- def CanBeVisibleInView(self,view):
-  """
+        pass
+
+    def CanBeVisibleInView(self, view):
+        """
   CanBeVisibleInView(self: DatumPlane,view: View) -> bool
 
   
@@ -35,15 +37,18 @@ class DatumPlane(Element,IDisposable):
 
    Returns: True if visible,false otherwise.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetCurvesInView(self,extentMode,view):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetCurvesInView(self, extentMode, view):
+        """
   GetCurvesInView(self: DatumPlane,extentMode: DatumExtentType,view: View) -> IList[Curve]
 
   
@@ -62,9 +67,10 @@ class DatumPlane(Element,IDisposable):
 
    Returns: The curves.
   """
-  pass
- def GetDatumExtentTypeInView(self,datumEnd,view):
-  """
+        pass
+
+    def GetDatumExtentTypeInView(self, datumEnd, view):
+        """
   GetDatumExtentTypeInView(self: DatumPlane,datumEnd: DatumEnds,view: View) -> DatumExtentType
 
   
@@ -83,9 +89,10 @@ class DatumPlane(Element,IDisposable):
 
    Returns: The extent type.
   """
-  pass
- def GetLeader(self,datumEnd,view):
-  """
+        pass
+
+    def GetLeader(self, datumEnd, view):
+        """
   GetLeader(self: DatumPlane,datumEnd: DatumEnds,view: View) -> Leader
 
   
@@ -104,9 +111,10 @@ class DatumPlane(Element,IDisposable):
 
    Returns: The Leader of the datum plane. Null will return if no leader applied.
   """
-  pass
- def GetPropagationViews(self,view):
-  """
+        pass
+
+    def GetPropagationViews(self, view):
+        """
   GetPropagationViews(self: DatumPlane,view: View) -> ISet[ElementId]
 
   
@@ -123,9 +131,10 @@ class DatumPlane(Element,IDisposable):
 
    Returns: A set of ElementIds of the parallel views for extent propagation.
   """
-  pass
- def HasBubbleInView(self,datumEnd,view):
-  """
+        pass
+
+    def HasBubbleInView(self, datumEnd, view):
+        """
   HasBubbleInView(self: DatumPlane,datumEnd: DatumEnds,view: View) -> bool
 
   
@@ -140,9 +149,10 @@ class DatumPlane(Element,IDisposable):
 
    Returns: True if the DatumPlane has bubble,false otherwise.
   """
-  pass
- def HideBubbleInView(self,datumEnd,view):
-  """
+        pass
+
+    def HideBubbleInView(self, datumEnd, view):
+        """
   HideBubbleInView(self: DatumPlane,datumEnd: DatumEnds,view: View)
 
    Hides the bubble in a view. This method does not apply to Reference planes.
@@ -153,9 +163,10 @@ class DatumPlane(Element,IDisposable):
 
    view: The view on which the DatumPlane shows.
   """
-  pass
- def IsBubbleVisibleInView(self,datumEnd,view):
-  """
+        pass
+
+    def IsBubbleVisibleInView(self, datumEnd, view):
+        """
   IsBubbleVisibleInView(self: DatumPlane,datumEnd: DatumEnds,view: View) -> bool
 
   
@@ -170,9 +181,10 @@ class DatumPlane(Element,IDisposable):
 
    Returns: True if the bubble is visible,false otherwise.
   """
-  pass
- def IsCurveValidInView(self,extentMode,view,curve):
-  """
+        pass
+
+    def IsCurveValidInView(self, extentMode, view, curve):
+        """
   IsCurveValidInView(self: DatumPlane,extentMode: DatumExtentType,view: View,curve: Curve) -> bool
 
   
@@ -197,9 +209,10 @@ class DatumPlane(Element,IDisposable):
 
    Returns: True if it is valid,false otherwise.
   """
-  pass
- def IsLeaderValid(self,datumEnd,view,leader):
-  """
+        pass
+
+    def IsLeaderValid(self, datumEnd, view, leader):
+        """
   IsLeaderValid(self: DatumPlane,datumEnd: DatumEnds,view: View,leader: Leader) -> bool
 
   
@@ -220,22 +233,26 @@ class DatumPlane(Element,IDisposable):
 
    Returns: True if the leader is valid for set leader,false otherwise.
   """
-  pass
- def Maximize3DExtents(self):
-  """
+        pass
+
+    def Maximize3DExtents(self):
+        """
   Maximize3DExtents(self: DatumPlane)
 
    Maximizes the 3d extents of the datum plane in all possible views.
   """
-  pass
- def PropagateToViews(self,view,parallelViews):
-  """ PropagateToViews(self: DatumPlane,view: View,parallelViews: ISet[ElementId]) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def SetCurveInView(self,extentMode,view,curve):
-  """
+        pass
+
+    def PropagateToViews(self, view, parallelViews):
+        """ PropagateToViews(self: DatumPlane,view: View,parallelViews: ISet[ElementId]) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def SetCurveInView(self, extentMode, view, curve):
+        """
   SetCurveInView(self: DatumPlane,extentMode: DatumExtentType,view: View,curve: Curve)
 
    Sets the extents to match the curve.
@@ -248,9 +265,10 @@ class DatumPlane(Element,IDisposable):
 
    curve: The curve.
   """
-  pass
- def SetDatumExtentType(self,datumEnd,view,extentMode):
-  """
+        pass
+
+    def SetDatumExtentType(self, datumEnd, view, extentMode):
+        """
   SetDatumExtentType(self: DatumPlane,datumEnd: DatumEnds,view: View,extentMode: DatumExtentType)
 
    Sets whether or not the end of the datum plane is aligned with 3D extents or is 
@@ -267,12 +285,14 @@ class DatumPlane(Element,IDisposable):
 
    extentMode: The DatumExtentType.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetLeader(self,datumEnd,view,pLeader):
-  """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetLeader(self, datumEnd, view, pLeader):
+        """
   SetLeader(self: DatumPlane,datumEnd: DatumEnds,view: View,pLeader: Leader)
 
    Sets the leader to the indicated end of the datum plane. This method does not 
@@ -289,9 +309,10 @@ class DatumPlane(Element,IDisposable):
 
    pLeader: The Leader for setting the datum plane.
   """
-  pass
- def ShowBubbleInView(self,datumEnd,view):
-  """
+        pass
+
+    def ShowBubbleInView(self, datumEnd, view):
+        """
   ShowBubbleInView(self: DatumPlane,datumEnd: DatumEnds,view: View)
 
    Shows the bubble in a view. This method does not apply to Reference planes.
@@ -302,13 +323,16 @@ class DatumPlane(Element,IDisposable):
 
    view: The view on which the DatumPlane shows.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

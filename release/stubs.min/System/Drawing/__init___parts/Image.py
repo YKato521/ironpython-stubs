@@ -1,7 +1,8 @@
-class Image(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
- """ An abstract base class that provides functionality for the System.Drawing.Bitmap and System.Drawing.Imaging.Metafile descended classes. """
- def Clone(self):
-  """
+class Image(MarshalByRefObject, ISerializable, ICloneable, IDisposable):
+    """ An abstract base class that provides functionality for the System.Drawing.Bitmap and System.Drawing.Imaging.Metafile descended classes. """
+
+    def Clone(self):
+        """
   Clone(self: Image) -> object
 
   
@@ -10,17 +11,19 @@ class Image(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
    Returns: The System.Drawing.Image this method creates,cast as an object.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: Image)
 
    Releases all resources used by this System.Drawing.Image.
   """
-  pass
- @staticmethod
- def FromFile(filename,useEmbeddedColorManagement=None):
-  """
+        pass
+
+    @staticmethod
+    def FromFile(filename, useEmbeddedColorManagement=None):
+        """
   FromFile(filename: str,useEmbeddedColorManagement: bool) -> Image
 
   
@@ -51,10 +54,11 @@ class Image(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
    Returns: The System.Drawing.Image this method creates.
   """
-  pass
- @staticmethod
- def FromHbitmap(hbitmap,hpalette=None):
-  """
+        pass
+
+    @staticmethod
+    def FromHbitmap(hbitmap, hpalette=None):
+        """
   FromHbitmap(hbitmap: IntPtr,hpalette: IntPtr) -> Bitmap
 
   
@@ -85,10 +89,11 @@ class Image(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
    Returns: The System.Drawing.Bitmap this method creates.
   """
-  pass
- @staticmethod
- def FromStream(stream,useEmbeddedColorManagement=None,validateImageData=None):
-  """
+        pass
+
+    @staticmethod
+    def FromStream(stream, useEmbeddedColorManagement=None, validateImageData=None):
+        """
   FromStream(stream: Stream,useEmbeddedColorManagement: bool,validateImageData: bool) -> Image
 
   
@@ -139,9 +144,10 @@ class Image(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
    Returns: The System.Drawing.Image this method creates.
   """
-  pass
- def GetBounds(self,pageUnit):
-  """
+        pass
+
+    def GetBounds(self, pageUnit):
+        """
   GetBounds(self: Image,pageUnit: GraphicsUnit) -> (RectangleF,GraphicsUnit)
 
   
@@ -158,9 +164,10 @@ class Image(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
    Returns: The System.Drawing.RectangleF that represents the bounds of the image,in the specified unit.
   """
-  pass
- def GetEncoderParameterList(self,encoder):
-  """
+        pass
+
+    def GetEncoderParameterList(self, encoder):
+        """
   GetEncoderParameterList(self: Image,encoder: Guid) -> EncoderParameters
 
   
@@ -177,9 +184,10 @@ class Image(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
     contains information about one of the parameters supported by the specified image encoder.
   """
-  pass
- def GetFrameCount(self,dimension):
-  """
+        pass
+
+    def GetFrameCount(self, dimension):
+        """
   GetFrameCount(self: Image,dimension: FrameDimension) -> int
 
   
@@ -192,10 +200,11 @@ class Image(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
    Returns: The number of frames in the specified dimension.
   """
-  pass
- @staticmethod
- def GetPixelFormatSize(pixfmt):
-  """
+        pass
+
+    @staticmethod
+    def GetPixelFormatSize(pixfmt):
+        """
   GetPixelFormatSize(pixfmt: PixelFormat) -> int
 
   
@@ -212,9 +221,10 @@ class Image(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
    Returns: The color depth of the specified pixel format.
   """
-  pass
- def GetPropertyItem(self,propid):
-  """
+        pass
+
+    def GetPropertyItem(self, propid):
+        """
   GetPropertyItem(self: Image,propid: int) -> PropertyItem
 
   
@@ -227,13 +237,15 @@ class Image(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
    Returns: The System.Drawing.Imaging.PropertyItem this method gets.
   """
-  pass
- def GetThumbnailImage(self,thumbWidth,thumbHeight,callback,callbackData):
-  """ GetThumbnailImage(self: Image,thumbWidth: int,thumbHeight: int,callback: GetThumbnailImageAbort,callbackData: IntPtr) -> Image """
-  pass
- @staticmethod
- def IsAlphaPixelFormat(pixfmt):
-  """
+        pass
+
+    def GetThumbnailImage(self, thumbWidth, thumbHeight, callback, callbackData):
+        """ GetThumbnailImage(self: Image,thumbWidth: int,thumbHeight: int,callback: GetThumbnailImageAbort,callbackData: IntPtr) -> Image """
+        pass
+
+    @staticmethod
+    def IsAlphaPixelFormat(pixfmt):
+        """
   IsAlphaPixelFormat(pixfmt: PixelFormat) -> bool
 
   
@@ -250,10 +262,11 @@ class Image(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
    Returns: true if pixfmt contains alpha information; otherwise,false.
   """
-  pass
- @staticmethod
- def IsCanonicalPixelFormat(pixfmt):
-  """
+        pass
+
+    @staticmethod
+    def IsCanonicalPixelFormat(pixfmt):
+        """
   IsCanonicalPixelFormat(pixfmt: PixelFormat) -> bool
 
   
@@ -266,10 +279,11 @@ class Image(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
    Returns: true if pixfmt is canonical; otherwise,false.
   """
-  pass
- @staticmethod
- def IsExtendedPixelFormat(pixfmt):
-  """
+        pass
+
+    @staticmethod
+    def IsExtendedPixelFormat(pixfmt):
+        """
   IsExtendedPixelFormat(pixfmt: PixelFormat) -> bool
 
   
@@ -282,9 +296,10 @@ class Image(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
    Returns: true if pixfmt is extended; otherwise,false.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -315,9 +330,10 @@ class Image(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def RemovePropertyItem(self,propid):
-  """
+        pass
+
+    def RemovePropertyItem(self, propid):
+        """
   RemovePropertyItem(self: Image,propid: int)
 
    Removes the specified property item from this System.Drawing.Image.
@@ -326,9 +342,10 @@ class Image(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
    propid: The ID of the property item to remove.
   """
-  pass
- def RotateFlip(self,rotateFlipType):
-  """
+        pass
+
+    def RotateFlip(self, rotateFlipType):
+        """
   RotateFlip(self: Image,rotateFlipType: RotateFlipType)
 
    Rotates,flips,or rotates and flips the System.Drawing.Image.
@@ -339,9 +356,10 @@ class Image(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
     the image.
   """
-  pass
- def Save(self,*__args):
-  """
+        pass
+
+    def Save(self, *__args):
+        """
   Save(self: Image,stream: Stream,format: ImageFormat)
 
    Saves this image to the specified stream in the specified format.
@@ -402,9 +420,10 @@ class Image(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
    format: The System.Drawing.Imaging.ImageFormat for this System.Drawing.Image.
   """
-  pass
- def SaveAdd(self,*__args):
-  """
+        pass
+
+    def SaveAdd(self, *__args):
+        """
   SaveAdd(self: Image,image: Image,encoderParams: EncoderParameters)
 
    Adds a frame to the file or stream specified in a previous call to the 
@@ -439,9 +458,10 @@ class Image(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
     that is used by the save-add operation.
   """
-  pass
- def SelectActiveFrame(self,dimension,frameIndex):
-  """
+        pass
+
+    def SelectActiveFrame(self, dimension, frameIndex):
+        """
   SelectActiveFrame(self: Image,dimension: FrameDimension,frameIndex: int) -> int
 
   
@@ -456,9 +476,10 @@ class Image(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
    Returns: Always returns 0.
   """
-  pass
- def SetPropertyItem(self,propitem):
-  """
+        pass
+
+    def SetPropertyItem(self, propitem):
+        """
   SetPropertyItem(self: Image,propitem: PropertyItem)
 
    Stores a property item (piece of metadata) in this System.Drawing.Image.
@@ -467,30 +488,35 @@ class Image(MarshalByRefObject,ISerializable,ICloneable,IDisposable):
 
    propitem: The System.Drawing.Imaging.PropertyItem to be stored.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- Flags=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets attribute flags for the pixel data of this System.Drawing.Image.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    Flags = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets attribute flags for the pixel data of this System.Drawing.Image.
 
 
 
@@ -500,8 +526,10 @@ Get: Flags(self: Image) -> int
 
 """
 
- FrameDimensionsList=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an array of GUIDs that represent the dimensions of frames within this System.Drawing.Image.
+    FrameDimensionsList = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets an array of GUIDs that represent the dimensions of frames within this System.Drawing.Image.
 
 
 
@@ -511,8 +539,8 @@ Get: FrameDimensionsList(self: Image) -> Array[Guid]
 
 """
 
- Height=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the height,in pixels,of this System.Drawing.Image.
+    Height = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the height,in pixels,of this System.Drawing.Image.
 
 
 
@@ -522,8 +550,10 @@ Get: Height(self: Image) -> int
 
 """
 
- HorizontalResolution=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the horizontal resolution,in pixels per inch,of this System.Drawing.Image.
+    HorizontalResolution = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the horizontal resolution,in pixels per inch,of this System.Drawing.Image.
 
 
 
@@ -533,8 +563,8 @@ Get: HorizontalResolution(self: Image) -> Single
 
 """
 
- Palette=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the color palette used for this System.Drawing.Image.
+    Palette = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the color palette used for this System.Drawing.Image.
 
 
 
@@ -546,8 +576,10 @@ Set: Palette(self: Image)=value
 
 """
 
- PhysicalDimension=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the width and height of this image.
+    PhysicalDimension = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the width and height of this image.
 
 
 
@@ -557,8 +589,10 @@ Get: PhysicalDimension(self: Image) -> SizeF
 
 """
 
- PixelFormat=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the pixel format for this System.Drawing.Image.
+    PixelFormat = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the pixel format for this System.Drawing.Image.
 
 
 
@@ -568,8 +602,10 @@ Get: PixelFormat(self: Image) -> PixelFormat
 
 """
 
- PropertyIdList=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets IDs of the property items stored in this System.Drawing.Image.
+    PropertyIdList = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets IDs of the property items stored in this System.Drawing.Image.
 
 
 
@@ -579,8 +615,10 @@ Get: PropertyIdList(self: Image) -> Array[int]
 
 """
 
- PropertyItems=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets all the property items (pieces of metadata) stored in this System.Drawing.Image.
+    PropertyItems = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets all the property items (pieces of metadata) stored in this System.Drawing.Image.
 
 
 
@@ -590,8 +628,8 @@ Get: PropertyItems(self: Image) -> Array[PropertyItem]
 
 """
 
- RawFormat=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the file format of this System.Drawing.Image.
+    RawFormat = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the file format of this System.Drawing.Image.
 
 
 
@@ -601,8 +639,8 @@ Get: RawFormat(self: Image) -> ImageFormat
 
 """
 
- Size=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the width and height,in pixels,of this image.
+    Size = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the width and height,in pixels,of this image.
 
 
 
@@ -612,8 +650,8 @@ Get: Size(self: Image) -> Size
 
 """
 
- Tag=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets an object that provides additional data about the image.
+    Tag = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets an object that provides additional data about the image.
 
 
 
@@ -625,8 +663,10 @@ Set: Tag(self: Image)=value
 
 """
 
- VerticalResolution=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the vertical resolution,in pixels per inch,of this System.Drawing.Image.
+    VerticalResolution = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the vertical resolution,in pixels per inch,of this System.Drawing.Image.
 
 
 
@@ -636,8 +676,8 @@ Get: VerticalResolution(self: Image) -> Single
 
 """
 
- Width=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the width,in pixels,of this System.Drawing.Image.
+    Width = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the width,in pixels,of this System.Drawing.Image.
 
 
 
@@ -647,6 +687,4 @@ Get: Width(self: Image) -> int
 
 """
 
-
- GetThumbnailImageAbort=None
-
+    GetThumbnailImageAbort = None

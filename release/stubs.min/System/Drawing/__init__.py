@@ -9,8 +9,12 @@
 # classes
 from __init___parts.Image import Image
 from __init___parts.Bitmap import Bitmap
-from __init___parts.BitmapSuffixInSameAssemblyAttribute import BitmapSuffixInSameAssemblyAttribute
-from __init___parts.BitmapSuffixInSatelliteAssemblyAttribute import BitmapSuffixInSatelliteAssemblyAttribute
+from __init___parts.BitmapSuffixInSameAssemblyAttribute import (
+    BitmapSuffixInSameAssemblyAttribute,
+)
+from __init___parts.BitmapSuffixInSatelliteAssemblyAttribute import (
+    BitmapSuffixInSatelliteAssemblyAttribute,
+)
 from __init___parts.Brush import Brush
 from __init___parts.Brushes import Brushes
 from __init___parts.BufferedGraphics import BufferedGraphics

@@ -1,8 +1,9 @@
 class ExternalFileUtils(object):
- """ A utility class containing functions related to external file references. """
- @staticmethod
- def GetAllExternalFileReferences(aDoc):
-  """
+    """ A utility class containing functions related to external file references. """
+
+    @staticmethod
+    def GetAllExternalFileReferences(aDoc):
+        """
   GetAllExternalFileReferences(aDoc: Document) -> ICollection[ElementId]
 
   
@@ -15,10 +16,11 @@ class ExternalFileUtils(object):
 
    Returns: The ids of all elements which are external file references.
   """
-  pass
- @staticmethod
- def GetExternalFileReference(aDoc,elemId):
-  """
+        pass
+
+    @staticmethod
+    def GetExternalFileReference(aDoc, elemId):
+        """
   GetExternalFileReference(aDoc: Document,elemId: ElementId) -> ExternalFileReference
 
   
@@ -35,10 +37,11 @@ class ExternalFileUtils(object):
 
     file.
   """
-  pass
- @staticmethod
- def IsExternalFileReference(aDoc,elemId):
-  """
+        pass
+
+    @staticmethod
+    def IsExternalFileReference(aDoc, elemId):
+        """
   IsExternalFileReference(aDoc: Document,elemId: ElementId) -> bool
 
   
@@ -53,10 +56,10 @@ class ExternalFileUtils(object):
 
    Returns: True if the given element represents an external file; false otherwise.
   """
-  pass
- __all__=[
-  'GetAllExternalFileReferences',
-  'GetExternalFileReference',
-  'IsExternalFileReference',
- ]
+        pass
 
+    __all__ = [
+        "GetAllExternalFileReferences",
+        "GetExternalFileReference",
+        "IsExternalFileReference",
+    ]

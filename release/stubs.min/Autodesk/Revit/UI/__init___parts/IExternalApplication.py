@@ -1,7 +1,8 @@
 class IExternalApplication:
- """ An interface that supports addition of external applications to Revit. """
- def OnShutdown(self,application):
-  """
+    """ An interface that supports addition of external applications to Revit. """
+
+    def OnShutdown(self, application):
+        """
   OnShutdown(self: IExternalApplication,application: UIControlledApplication) -> Result
 
   
@@ -14,9 +15,10 @@ class IExternalApplication:
 
    Returns: Indicates if the external application completes its work successfully.
   """
-  pass
- def OnStartup(self,application):
-  """
+        pass
+
+    def OnStartup(self, application):
+        """
   OnStartup(self: IExternalApplication,application: UIControlledApplication) -> Result
 
   
@@ -29,7 +31,8 @@ class IExternalApplication:
 
    Returns: Indicates if the external application completes its work successfully.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

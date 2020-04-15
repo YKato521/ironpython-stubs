@@ -1,8 +1,9 @@
-class PanelScheduleSheetInstance(Element,IDisposable):
- """ The class represents an instance of a panel schedule placed on sheet. """
- @staticmethod
- def Create(ADoc,scheduleId,DBView):
-  """
+class PanelScheduleSheetInstance(Element, IDisposable):
+    """ The class represents an instance of a panel schedule placed on sheet. """
+
+    @staticmethod
+    def Create(ADoc, scheduleId, DBView):
+        """
   Create(ADoc: Document,scheduleId: ElementId,DBView: View) -> PanelScheduleSheetInstance
 
   
@@ -11,15 +12,18 @@ class PanelScheduleSheetInstance(Element,IDisposable):
 
    Returns: The newly created panel schedule sheet instance element.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetSchedule(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetSchedule(self):
+        """
   GetSchedule(self: PanelScheduleSheetInstance) -> PanelScheduleView
 
   
@@ -28,15 +32,18 @@ class PanelScheduleSheetInstance(Element,IDisposable):
 
    Returns: The panel schedule view element.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SplitSegment(self,iSeg):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SplitSegment(self, iSeg):
+        """
   SplitSegment(self: PanelScheduleSheetInstance,iSeg: int) -> bool
 
   
@@ -45,18 +52,22 @@ class PanelScheduleSheetInstance(Element,IDisposable):
 
      Thrown if the index is out of bounds.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Origin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The sheet instance offset in drawing sheet coordinates.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Origin = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The sheet instance offset in drawing sheet coordinates.
 
 
 
@@ -68,8 +79,10 @@ Set: Origin(self: PanelScheduleSheetInstance)=value
 
 """
 
- ScheduleId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The panel schedule id.
+    ScheduleId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The panel schedule id.
 
 
 
@@ -80,5 +93,3 @@ Get: ScheduleId(self: PanelScheduleSheetInstance) -> ElementId
 Set: ScheduleId(self: PanelScheduleSheetInstance)=value
 
 """
-
-

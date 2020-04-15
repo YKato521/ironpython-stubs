@@ -1,13 +1,14 @@
-class ToolStripPanelRow(Component,IComponent,IDisposable,IArrangedElement):
- """
+class ToolStripPanelRow(Component, IComponent, IDisposable, IArrangedElement):
+    """
  Represents a row of a System.Windows.Forms.ToolStripPanel that can contain controls.
 
  
 
  ToolStripPanelRow(parent: ToolStripPanel)
  """
- def CanMove(self,toolStripToDrag):
-  """
+
+    def CanMove(self, toolStripToDrag):
+        """
   CanMove(self: ToolStripPanelRow,toolStripToDrag: ToolStrip) -> bool
 
   
@@ -30,9 +31,10 @@ class ToolStripPanelRow(Component,IComponent,IDisposable,IArrangedElement):
 
     System.Windows.Forms.ToolStrip; otherwise,false.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: ToolStripPanelRow,disposing: bool)
 
    Releases the unmanaged resources used by the System.Windows.Forms.ToolStripPanelRow and 
@@ -45,9 +47,10 @@ class ToolStripPanelRow(Component,IComponent,IDisposable,IArrangedElement):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -66,9 +69,10 @@ class ToolStripPanelRow(Component,IComponent,IDisposable,IArrangedElement):
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -99,9 +103,10 @@ class ToolStripPanelRow(Component,IComponent,IDisposable,IArrangedElement):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def OnBoundsChanged(self,*args):
-  """
+        pass
+
+    def OnBoundsChanged(self, *args):
+        """
   OnBoundsChanged(self: ToolStripPanelRow,oldBounds: Rectangle,newBounds: Rectangle)
 
    Occurs when the System.Windows.Forms.ToolStripPanelRow.Bounds property changes.
@@ -112,9 +117,10 @@ class ToolStripPanelRow(Component,IComponent,IDisposable,IArrangedElement):
 
    newBounds: The new value of the System.Windows.Forms.ToolStripPanelRow.Bounds property.
   """
-  pass
- def OnControlAdded(self,*args):
-  """
+        pass
+
+    def OnControlAdded(self, *args):
+        """
   OnControlAdded(self: ToolStripPanelRow,control: Control,index: int)
 
    Raises the System.Windows.Forms.Control.ControlAdded event.
@@ -125,9 +131,10 @@ class ToolStripPanelRow(Component,IComponent,IDisposable,IArrangedElement):
 
    index: The zero-based index representing the position of the added control.
   """
-  pass
- def OnControlRemoved(self,*args):
-  """
+        pass
+
+    def OnControlRemoved(self, *args):
+        """
   OnControlRemoved(self: ToolStripPanelRow,control: Control,index: int)
 
    Raises the System.Windows.Forms.Control.ControlRemoved event.
@@ -138,9 +145,10 @@ class ToolStripPanelRow(Component,IComponent,IDisposable,IArrangedElement):
 
    index: The zero-based index representing the position of the removed control.
   """
-  pass
- def OnLayout(self,*args):
-  """
+        pass
+
+    def OnLayout(self, *args):
+        """
   OnLayout(self: ToolStripPanelRow,e: LayoutEventArgs)
 
    Raises the System.Windows.Forms.Control.Layout event.
@@ -149,41 +157,48 @@ class ToolStripPanelRow(Component,IComponent,IDisposable,IArrangedElement):
 
    e: A System.Windows.Forms.LayoutEventArgs that contains the event data.
   """
-  pass
- def OnOrientationChanged(self,*args):
-  """
+        pass
+
+    def OnOrientationChanged(self, *args):
+        """
   OnOrientationChanged(self: ToolStripPanelRow)
 
    Occurs when the value of the System.Windows.Forms.ToolStripPanelRow.Orientation property changes.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,parent):
-  """ __new__(cls: type,parent: ToolStripPanel) """
-  pass
- def __str__(self,*args):
-  pass
- Bounds=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the size and location of the System.Windows.Forms.ToolStripPanelRow,including its nonclient elements,in pixels,relative to the parent control.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, parent):
+        """ __new__(cls: type,parent: ToolStripPanel) """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Bounds = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the size and location of the System.Windows.Forms.ToolStripPanelRow,including its nonclient elements,in pixels,relative to the parent control.
 
 
 
@@ -193,15 +208,17 @@ Get: Bounds(self: ToolStripPanelRow) -> Rectangle
 
 """
 
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- Controls=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the controls in the System.Windows.Forms.ToolStripPanelRow.
+    Controls = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the controls in the System.Windows.Forms.ToolStripPanelRow.
 
 
 
@@ -211,29 +228,37 @@ Get: Controls(self: ToolStripPanelRow) -> Array[Control]
 
 """
 
- DefaultMargin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the space,in pixels,that is specified by default between controls.
+    DefaultMargin = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the space,in pixels,that is specified by default between controls.
 
 
 
 """
 
- DefaultPadding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the internal spacing,in pixels,of the contents of a control.
+    DefaultPadding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the internal spacing,in pixels,of the contents of a control.
 
 
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- DisplayRectangle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the display area of the control.
+    DisplayRectangle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the display area of the control.
 
 
 
@@ -243,15 +268,17 @@ Get: DisplayRectangle(self: ToolStripPanelRow) -> Rectangle
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- LayoutEngine=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an instance of the control's layout engine.
+    LayoutEngine = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets an instance of the control's layout engine.
 
 
 
@@ -261,8 +288,8 @@ Get: LayoutEngine(self: ToolStripPanelRow) -> LayoutEngine
 
 """
 
- Margin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the space between controls.
+    Margin = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the space between controls.
 
 
 
@@ -274,8 +301,10 @@ Set: Margin(self: ToolStripPanelRow)=value
 
 """
 
- Orientation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the layout direction of the System.Windows.Forms.ToolStripPanelRow relative to its containing System.Windows.Forms.ToolStripPanel.
+    Orientation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the layout direction of the System.Windows.Forms.ToolStripPanelRow relative to its containing System.Windows.Forms.ToolStripPanel.
 
 
 
@@ -285,8 +314,8 @@ Get: Orientation(self: ToolStripPanelRow) -> Orientation
 
 """
 
- Padding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets padding within the control.
+    Padding = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets padding within the control.
 
 
 
@@ -298,8 +327,10 @@ Set: Padding(self: ToolStripPanelRow)=value
 
 """
 
- ToolStripPanel=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Forms.ToolStripPanel that contains the System.Windows.Forms.ToolStripPanelRow.
+    ToolStripPanel = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Windows.Forms.ToolStripPanel that contains the System.Windows.Forms.ToolStripPanelRow.
 
 
 
@@ -308,5 +339,3 @@ Get: ToolStripPanel(self: ToolStripPanelRow) -> ToolStripPanel
 
 
 """
-
-

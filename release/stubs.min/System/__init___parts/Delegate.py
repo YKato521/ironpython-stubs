@@ -1,10 +1,12 @@
-class Delegate(object,ICloneable,ISerializable):
- """ Represents a delegate,which is a data structure that refers to a static method or to a class instance and an instance method of that class. """
- def Call(self,*args):
-  """ x.__call__(...) <==> x(...)x.__call__(...) <==> x(...) """
-  pass
- def Clone(self):
-  """
+class Delegate(object, ICloneable, ISerializable):
+    """ Represents a delegate,which is a data structure that refers to a static method or to a class instance and an instance method of that class. """
+
+    def Call(self, *args):
+        """ x.__call__(...) <==> x(...)x.__call__(...) <==> x(...) """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: Delegate) -> object
 
   
@@ -13,10 +15,11 @@ class Delegate(object,ICloneable,ISerializable):
 
    Returns: A shallow copy of the delegate.
   """
-  pass
- @staticmethod
- def Combine(*__args):
-  """
+        pass
+
+    @staticmethod
+    def Combine(*__args):
+        """
   Combine(*delegates: Array[Delegate]) -> Delegate
 
   
@@ -53,9 +56,10 @@ class Delegate(object,ICloneable,ISerializable):
 
     if both a and b are null references.
   """
-  pass
- def CombineImpl(self,*args):
-  """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: Delegate,d: Delegate) -> Delegate
 
   
@@ -80,10 +84,11 @@ class Delegate(object,ICloneable,ISerializable):
 
     multicast (combinable) delegate if d is null.
   """
-  pass
- @staticmethod
- def CreateDelegate(type,*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateDelegate(type, *__args):
+        """
   CreateDelegate(type: Type,method: MethodInfo,throwOnBindFailure: bool) -> Delegate
 
   
@@ -346,9 +351,10 @@ class Delegate(object,ICloneable,ISerializable):
 
     class.
   """
-  pass
- def DynamicInvoke(self,args):
-  """
+        pass
+
+    def DynamicInvoke(self, args):
+        """
   DynamicInvoke(self: Delegate,*args: Array[object]) -> object
 
   
@@ -367,9 +373,10 @@ class Delegate(object,ICloneable,ISerializable):
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -388,9 +395,10 @@ class Delegate(object,ICloneable,ISerializable):
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def Equals(self,obj):
-  """
+        pass
+
+    def Equals(self, obj):
+        """
   Equals(self: Delegate,obj: object) -> bool
 
   
@@ -409,9 +417,10 @@ class Delegate(object,ICloneable,ISerializable):
 
     otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Delegate) -> int
 
   
@@ -420,9 +429,10 @@ class Delegate(object,ICloneable,ISerializable):
 
    Returns: A hash code for the delegate.
   """
-  pass
- def GetInvocationList(self):
-  """
+        pass
+
+    def GetInvocationList(self):
+        """
   GetInvocationList(self: Delegate) -> Array[Delegate]
 
   
@@ -431,9 +441,10 @@ class Delegate(object,ICloneable,ISerializable):
 
    Returns: An array of delegates representing the invocation list of the current delegate.
   """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: Delegate) -> MethodInfo
 
   
@@ -442,9 +453,10 @@ class Delegate(object,ICloneable,ISerializable):
 
    Returns: A System.Reflection.MethodInfo describing the static method represented by the current delegate.
   """
-  pass
- def GetObjectData(self,info,context):
-  """
+        pass
+
+    def GetObjectData(self, info, context):
+        """
   GetObjectData(self: Delegate,info: SerializationInfo,context: StreamingContext)
 
    Not supported.
@@ -455,16 +467,19 @@ class Delegate(object,ICloneable,ISerializable):
 
    context: Not supported.
   """
-  pass
- def InPlaceAdd(self,*args):
-  """ InPlaceAdd(self: Delegate,other: Delegate) -> Delegate """
-  pass
- def InPlaceSubtract(self,*args):
-  """ InPlaceSubtract(self: Delegate,other: Delegate) -> Delegate """
-  pass
- @staticmethod
- def Remove(source,value):
-  """
+        pass
+
+    def InPlaceAdd(self, *args):
+        """ InPlaceAdd(self: Delegate,other: Delegate) -> Delegate """
+        pass
+
+    def InPlaceSubtract(self, *args):
+        """ InPlaceSubtract(self: Delegate,other: Delegate) -> Delegate """
+        pass
+
+    @staticmethod
+    def Remove(source, value):
+        """
   Remove(source: Delegate,value: Delegate) -> Delegate
 
   
@@ -493,10 +508,11 @@ class Delegate(object,ICloneable,ISerializable):
 
     reference.
   """
-  pass
- @staticmethod
- def RemoveAll(source,value):
-  """
+        pass
+
+    @staticmethod
+    def RemoveAll(source, value):
+        """
   RemoveAll(source: Delegate,value: Delegate) -> Delegate
 
   
@@ -527,9 +543,10 @@ class Delegate(object,ICloneable,ISerializable):
 
     null reference.
   """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: Delegate,d: Delegate) -> Delegate
 
   
@@ -554,35 +571,45 @@ class Delegate(object,ICloneable,ISerializable):
 
     Returns null if the invocation list of value is equal to the current delegate's invocation list.
   """
-  pass
- def __call__(self,*args):
-  """ x.__call__(...) <==> x(...)x.__call__(...) <==> x(...) """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __iadd__(self,*args):
-  """ __iadd__(self: Delegate,other: Delegate) -> Delegate """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __isub__(self,*args):
-  """ __isub__(self: Delegate,other: Delegate) -> Delegate """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """ __new__(type: type,function: object) -> object """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Method=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the method represented by the delegate.
+        pass
+
+    def __call__(self, *args):
+        """ x.__call__(...) <==> x(...)x.__call__(...) <==> x(...) """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __iadd__(self, *args):
+        """ __iadd__(self: Delegate,other: Delegate) -> Delegate """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __isub__(self, *args):
+        """ __isub__(self: Delegate,other: Delegate) -> Delegate """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """ __new__(type: type,function: object) -> object """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Method = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the method represented by the delegate.
 
 
 
@@ -592,8 +619,8 @@ Get: Method(self: Delegate) -> MethodInfo
 
 """
 
- Target=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the class instance on which the current delegate invokes the instance method.
+    Target = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the class instance on which the current delegate invokes the instance method.
 
 
 
@@ -602,5 +629,3 @@ Get: Target(self: Delegate) -> object
 
 
 """
-
-

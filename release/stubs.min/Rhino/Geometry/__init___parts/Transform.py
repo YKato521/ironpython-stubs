@@ -1,5 +1,5 @@
-class Transform(object,IComparable[Transform],IEquatable[Transform]):
- """
+class Transform(object, IComparable[Transform], IEquatable[Transform]):
+    """
  Represents the values in a 4x4 transform matrix.
 
     This is parallel to C++ ON_Xform.
@@ -8,9 +8,10 @@ class Transform(object,IComparable[Transform],IEquatable[Transform]):
 
  Transform(diagonalValue: float)
  """
- @staticmethod
- def ChangeBasis(*__args):
-  """
+
+    @staticmethod
+    def ChangeBasis(*__args):
+        """
   ChangeBasis(initialBasisX: Vector3d,initialBasisY: Vector3d,initialBasisZ: Vector3d,finalBasisX: Vector3d,finalBasisY: Vector3d,finalBasisZ: Vector3d) -> Transform
 
   
@@ -69,9 +70,10 @@ class Transform(object,IComparable[Transform],IEquatable[Transform]):
     
      Transform.Unset on failure.
   """
-  pass
- def CompareTo(self,other):
-  """
+        pass
+
+    def CompareTo(self, other):
+        """
   CompareTo(self: Transform,other: Transform) -> int
 
   
@@ -90,9 +92,10 @@ class Transform(object,IComparable[Transform],IEquatable[Transform]):
 
    Returns: -1 if this < other; 0 if both are equal; 1 otherwise.
   """
-  pass
- def Equals(self,*__args):
-  """
+        pass
+
+    def Equals(self, *__args):
+        """
   Equals(self: Transform,other: Transform) -> bool
 
   
@@ -117,9 +120,10 @@ class Transform(object,IComparable[Transform],IEquatable[Transform]):
 
    Returns: true if obj is a transform and has the same value as this transform; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Transform) -> int
 
   
@@ -128,10 +132,11 @@ class Transform(object,IComparable[Transform],IEquatable[Transform]):
 
    Returns: A number that can be used to hash this transform in a dictionary.
   """
-  pass
- @staticmethod
- def Mirror(*__args):
-  """
+        pass
+
+    @staticmethod
+    def Mirror(*__args):
+        """
   Mirror(mirrorPlane: Plane) -> Transform
 
   
@@ -168,10 +173,11 @@ class Transform(object,IComparable[Transform],IEquatable[Transform]):
 
    Returns: A transformation matrix which mirrors geometry in a specified plane.
   """
-  pass
- @staticmethod
- def Multiply(a,b):
-  """
+        pass
+
+    @staticmethod
+    def Multiply(a, b):
+        """
   Multiply(a: Transform,b: Transform) -> Transform
 
   
@@ -196,10 +202,11 @@ class Transform(object,IComparable[Transform],IEquatable[Transform]):
 
     The resulting Transform gives the same result as though you'd first apply A then B.
   """
-  pass
- @staticmethod
- def PlanarProjection(plane):
-  """
+        pass
+
+    @staticmethod
+    def PlanarProjection(plane):
+        """
   PlanarProjection(plane: Plane) -> Transform
 
   
@@ -212,14 +219,16 @@ class Transform(object,IComparable[Transform],IEquatable[Transform]):
 
    Returns: A transformation matrix which projects geometry onto a specified plane.
   """
-  pass
- @staticmethod
- def PlaneToPlane(plane0,plane1):
-  """ PlaneToPlane(plane0: Plane,plane1: Plane) -> Transform """
-  pass
- @staticmethod
- def Rotation(*__args):
-  """
+        pass
+
+    @staticmethod
+    def PlaneToPlane(plane0, plane1):
+        """ PlaneToPlane(plane0: Plane,plane1: Plane) -> Transform """
+        pass
+
+    @staticmethod
+    def Rotation(*__args):
+        """
   Rotation(startDirection: Vector3d,endDirection: Vector3d,rotationCenter: Point3d) -> Transform
 
   
@@ -306,10 +315,11 @@ class Transform(object,IComparable[Transform],IEquatable[Transform]):
 
    Returns: A transformation matrix which rotates geometry around an anchor point.
   """
-  pass
- @staticmethod
- def Scale(*__args):
-  """
+        pass
+
+    @staticmethod
+    def Scale(*__args):
+        """
   Scale(plane: Plane,xScaleFactor: float,yScaleFactor: float,zScaleFactor: float) -> Transform
 
   
@@ -342,10 +352,11 @@ class Transform(object,IComparable[Transform],IEquatable[Transform]):
 
    Returns: A transform matrix which scales geometry uniformly around the anchor point.
   """
-  pass
- @staticmethod
- def Shear(plane,x,y,z):
-  """
+        pass
+
+    @staticmethod
+    def Shear(plane, x, y, z):
+        """
   Shear(plane: Plane,x: Vector3d,y: Vector3d,z: Vector3d) -> Transform
 
   
@@ -364,18 +375,20 @@ class Transform(object,IComparable[Transform],IEquatable[Transform]):
 
    Returns: A transformation matrix which shear geometry.
   """
-  pass
- def ToFloatArray(self,rowDominant):
-  """
+        pass
+
+    def ToFloatArray(self, rowDominant):
+        """
   ToFloatArray(self: Transform,rowDominant: bool) -> Array[Single]
 
   
 
    Return the matrix as a linear array of 16 float values
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: Transform) -> str
 
   
@@ -384,9 +397,10 @@ class Transform(object,IComparable[Transform],IEquatable[Transform]):
 
    Returns: A textual representation.
   """
-  pass
- def TransformBoundingBox(self,bbox):
-  """
+        pass
+
+    def TransformBoundingBox(self, bbox):
+        """
   TransformBoundingBox(self: Transform,bbox: BoundingBox) -> BoundingBox
 
   
@@ -403,13 +417,15 @@ class Transform(object,IComparable[Transform],IEquatable[Transform]):
 
    Returns: A new bounding box.
   """
-  pass
- def TransformList(self,points):
-  """ TransformList(self: Transform,points: IEnumerable[Point3d]) -> Array[Point3d] """
-  pass
- @staticmethod
- def Translation(*__args):
-  """
+        pass
+
+    def TransformList(self, points):
+        """ TransformList(self: Transform,points: IEnumerable[Point3d]) -> Array[Point3d] """
+        pass
+
+    @staticmethod
+    def Translation(*__args):
+        """
   Translation(dx: float,dy: float,dz: float) -> Transform
 
   
@@ -444,18 +460,20 @@ class Transform(object,IComparable[Transform],IEquatable[Transform]):
 
    Returns: A transform matrix which moves geometry along the motion vector.
   """
-  pass
- def Transpose(self):
-  """
+        pass
+
+    def Transpose(self):
+        """
   Transpose(self: Transform) -> Transform
 
   
 
    Flip row/column values
   """
-  pass
- def TryGetInverse(self,inverseTransform):
-  """
+        pass
+
+    def TryGetInverse(self, inverseTransform):
+        """
   TryGetInverse(self: Transform) -> (bool,Transform)
 
   
@@ -472,38 +490,47 @@ class Transform(object,IComparable[Transform],IEquatable[Transform]):
 
     Transform is Valid,inverseTransform will be set to a pseudo inverse.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __mul__(self,*args):
-  """ x.__mul__(y) <==> x*yx.__mul__(y) <==> x*yx.__mul__(y) <==> x*y """
-  pass
- @staticmethod
- def __new__(self,diagonalValue):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __mul__(self, *args):
+        """ x.__mul__(y) <==> x*yx.__mul__(y) <==> x*yx.__mul__(y) <==> x*y """
+        pass
+
+    @staticmethod
+    def __new__(self, diagonalValue):
+        """
   __new__[Transform]() -> Transform
 
   
 
   __new__(cls: type,diagonalValue: float)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __rmul__(self,*args):
-  """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __rmul__(self, *args):
+        """
   __rmul__(a: Transform,b: Transform) -> Transform
 
   
@@ -522,14 +549,19 @@ class Transform(object,IComparable[Transform],IEquatable[Transform]):
 
     The resulting Transform gives the same result as though you'd first apply A then B.
   """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- def __str__(self,*args):
-  pass
- Determinant=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The determinant of this 4x4 matrix.
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Determinant = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The determinant of this 4x4 matrix.
 
 
 
@@ -539,8 +571,8 @@ Get: Determinant(self: Transform) -> float
 
 """
 
- IsValid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether or not this Transform is a valid matrix. 
+    IsValid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether or not this Transform is a valid matrix. 
 
    A valid transform matrix is not allowed to have any invalid numbers.
 
@@ -552,8 +584,8 @@ Get: IsValid(self: Transform) -> bool
 
 """
 
- M00=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets this[0,0].
+    M00 = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets this[0,0].
 
 
 
@@ -565,8 +597,8 @@ Set: M00(self: Transform)=value
 
 """
 
- M01=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets this[0,1].
+    M01 = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets this[0,1].
 
 
 
@@ -578,8 +610,8 @@ Set: M01(self: Transform)=value
 
 """
 
- M02=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets this[0,2].
+    M02 = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets this[0,2].
 
 
 
@@ -591,8 +623,8 @@ Set: M02(self: Transform)=value
 
 """
 
- M03=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets this[0,3].
+    M03 = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets this[0,3].
 
 
 
@@ -604,8 +636,8 @@ Set: M03(self: Transform)=value
 
 """
 
- M10=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets this[1,0].
+    M10 = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets this[1,0].
 
 
 
@@ -617,8 +649,8 @@ Set: M10(self: Transform)=value
 
 """
 
- M11=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets this[1,1].
+    M11 = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets this[1,1].
 
 
 
@@ -630,8 +662,8 @@ Set: M11(self: Transform)=value
 
 """
 
- M12=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets this[1,2].
+    M12 = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets this[1,2].
 
 
 
@@ -643,8 +675,8 @@ Set: M12(self: Transform)=value
 
 """
 
- M13=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets this[1,3].
+    M13 = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets this[1,3].
 
 
 
@@ -656,8 +688,8 @@ Set: M13(self: Transform)=value
 
 """
 
- M20=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets this[2,0].
+    M20 = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets this[2,0].
 
 
 
@@ -669,8 +701,8 @@ Set: M20(self: Transform)=value
 
 """
 
- M21=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets this[2,1].
+    M21 = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets this[2,1].
 
 
 
@@ -682,8 +714,8 @@ Set: M21(self: Transform)=value
 
 """
 
- M22=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets this[2,2].
+    M22 = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets this[2,2].
 
 
 
@@ -695,8 +727,8 @@ Set: M22(self: Transform)=value
 
 """
 
- M23=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets this[2,3].
+    M23 = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets this[2,3].
 
 
 
@@ -708,8 +740,8 @@ Set: M23(self: Transform)=value
 
 """
 
- M30=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets this[3,0].
+    M30 = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets this[3,0].
 
 
 
@@ -721,8 +753,8 @@ Set: M30(self: Transform)=value
 
 """
 
- M31=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets this[3,1].
+    M31 = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets this[3,1].
 
 
 
@@ -734,8 +766,8 @@ Set: M31(self: Transform)=value
 
 """
 
- M32=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets this[3,2].
+    M32 = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets this[3,2].
 
 
 
@@ -747,8 +779,8 @@ Set: M32(self: Transform)=value
 
 """
 
- M33=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets this[3,3].
+    M33 = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets this[3,3].
 
 
 
@@ -760,8 +792,10 @@ Set: M33(self: Transform)=value
 
 """
 
- SimilarityType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether or not the Transform maintains similarity. 
+    SimilarityType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether or not the Transform maintains similarity. 
 
    The easiest way to think of Similarity is that any circle,when transformed,
 
@@ -775,7 +809,5 @@ Get: SimilarityType(self: Transform) -> TransformSimilarityType
 
 """
 
-
- Identity=None
- Unset=None
-
+    Identity = None
+    Unset = None

@@ -1,7 +1,8 @@
-class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
- """ Represents a character as a UTF-16 code unit. """
- def CompareTo(self,value):
-  """
+class Char(object, IComparable, IConvertible, IComparable[Char], IEquatable[Char]):
+    """ Represents a character as a UTF-16 code unit. """
+
+    def CompareTo(self, value):
+        """
   CompareTo(self: Char,value: Char) -> int
 
   
@@ -50,10 +51,11 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
     follows value.-or- value is null.
   """
-  pass
- @staticmethod
- def ConvertFromUtf32(utf32):
-  """
+        pass
+
+    @staticmethod
+    def ConvertFromUtf32(utf32):
+        """
   ConvertFromUtf32(utf32: int) -> str
 
   
@@ -68,10 +70,11 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
     equivalent to the code point specified by the utf32 parameter.
   """
-  pass
- @staticmethod
- def ConvertToUtf32(*__args):
-  """
+        pass
+
+    @staticmethod
+    def ConvertToUtf32(*__args):
+        """
   ConvertToUtf32(s: str,index: int) -> int
 
   
@@ -108,9 +111,10 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
    Returns: The 21-bit Unicode code point represented by the highSurrogate and lowSurrogate parameters.
   """
-  pass
- def Equals(self,obj):
-  """
+        pass
+
+    def Equals(self, obj):
+        """
   Equals(self: Char,obj: Char) -> bool
 
   
@@ -141,9 +145,10 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
     false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Char) -> int
 
   
@@ -152,10 +157,11 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
    Returns: A 32-bit signed integer hash code.
   """
-  pass
- @staticmethod
- def GetNumericValue(*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetNumericValue(*__args):
+        """
   GetNumericValue(s: str,index: int) -> float
 
   
@@ -190,9 +196,10 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
    Returns: The numeric value of c if that character represents a number; otherwise,-1.0.
   """
-  pass
- def GetTypeCode(self):
-  """
+        pass
+
+    def GetTypeCode(self):
+        """
   GetTypeCode(self: Char) -> TypeCode
 
   
@@ -201,10 +208,11 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
    Returns: The enumerated constant,System.TypeCode.Char.
   """
-  pass
- @staticmethod
- def GetUnicodeCategory(*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetUnicodeCategory(*__args):
+        """
   GetUnicodeCategory(s: str,index: int) -> UnicodeCategory
 
   
@@ -243,10 +251,11 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
    Returns: A System.Globalization.UnicodeCategory value that identifies the group that contains c.
   """
-  pass
- @staticmethod
- def IsControl(*__args):
-  """
+        pass
+
+    @staticmethod
+    def IsControl(*__args):
+        """
   IsControl(s: str,index: int) -> bool
 
   
@@ -277,10 +286,11 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
    Returns: true if c is a control character; otherwise,false.
   """
-  pass
- @staticmethod
- def IsDigit(*__args):
-  """
+        pass
+
+    @staticmethod
+    def IsDigit(*__args):
+        """
   IsDigit(s: str,index: int) -> bool
 
   
@@ -311,10 +321,11 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
    Returns: true if c is a decimal digit; otherwise,false.
   """
-  pass
- @staticmethod
- def IsHighSurrogate(*__args):
-  """
+        pass
+
+    @staticmethod
+    def IsHighSurrogate(*__args):
+        """
   IsHighSurrogate(s: str,index: int) -> bool
 
   
@@ -349,10 +360,11 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
    Returns: true if the numeric value of the c parameter ranges from U+D800 through U+DBFF; otherwise,false.
   """
-  pass
- @staticmethod
- def IsLetter(*__args):
-  """
+        pass
+
+    @staticmethod
+    def IsLetter(*__args):
+        """
   IsLetter(s: str,index: int) -> bool
 
   
@@ -383,10 +395,11 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
    Returns: true if c is a letter; otherwise,false.
   """
-  pass
- @staticmethod
- def IsLetterOrDigit(*__args):
-  """
+        pass
+
+    @staticmethod
+    def IsLetterOrDigit(*__args):
+        """
   IsLetterOrDigit(s: str,index: int) -> bool
 
   
@@ -417,10 +430,11 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
    Returns: true if c is a letter or a decimal digit; otherwise,false.
   """
-  pass
- @staticmethod
- def IsLower(*__args):
-  """
+        pass
+
+    @staticmethod
+    def IsLower(*__args):
+        """
   IsLower(s: str,index: int) -> bool
 
   
@@ -451,10 +465,11 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
    Returns: true if c is a lowercase letter; otherwise,false.
   """
-  pass
- @staticmethod
- def IsLowSurrogate(*__args):
-  """
+        pass
+
+    @staticmethod
+    def IsLowSurrogate(*__args):
+        """
   IsLowSurrogate(s: str,index: int) -> bool
 
   
@@ -489,10 +504,11 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
    Returns: true if the numeric value of the c parameter ranges from U+DC00 through U+DFFF; otherwise,false.
   """
-  pass
- @staticmethod
- def IsNumber(*__args):
-  """
+        pass
+
+    @staticmethod
+    def IsNumber(*__args):
+        """
   IsNumber(s: str,index: int) -> bool
 
   
@@ -523,10 +539,11 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
    Returns: true if c is a number; otherwise,false.
   """
-  pass
- @staticmethod
- def IsPunctuation(*__args):
-  """
+        pass
+
+    @staticmethod
+    def IsPunctuation(*__args):
+        """
   IsPunctuation(s: str,index: int) -> bool
 
   
@@ -557,10 +574,11 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
    Returns: true if c is a punctuation mark; otherwise,false.
   """
-  pass
- @staticmethod
- def IsSeparator(*__args):
-  """
+        pass
+
+    @staticmethod
+    def IsSeparator(*__args):
+        """
   IsSeparator(s: str,index: int) -> bool
 
   
@@ -591,10 +609,11 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
    Returns: true if c is a separator character; otherwise,false.
   """
-  pass
- @staticmethod
- def IsSurrogate(*__args):
-  """
+        pass
+
+    @staticmethod
+    def IsSurrogate(*__args):
+        """
   IsSurrogate(s: str,index: int) -> bool
 
   
@@ -629,10 +648,11 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
    Returns: true if c is either a high surrogate or a low surrogate; otherwise,false.
   """
-  pass
- @staticmethod
- def IsSurrogatePair(*__args):
-  """
+        pass
+
+    @staticmethod
+    def IsSurrogatePair(*__args):
+        """
   IsSurrogatePair(highSurrogate: Char,lowSurrogate: Char) -> bool
 
   
@@ -677,10 +697,11 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
     false.
   """
-  pass
- @staticmethod
- def IsSymbol(*__args):
-  """
+        pass
+
+    @staticmethod
+    def IsSymbol(*__args):
+        """
   IsSymbol(s: str,index: int) -> bool
 
   
@@ -711,10 +732,11 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
    Returns: true if c is a symbol character; otherwise,false.
   """
-  pass
- @staticmethod
- def IsUpper(*__args):
-  """
+        pass
+
+    @staticmethod
+    def IsUpper(*__args):
+        """
   IsUpper(s: str,index: int) -> bool
 
   
@@ -745,10 +767,11 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
    Returns: true if c is an uppercase letter; otherwise,false.
   """
-  pass
- @staticmethod
- def IsWhiteSpace(*__args):
-  """
+        pass
+
+    @staticmethod
+    def IsWhiteSpace(*__args):
+        """
   IsWhiteSpace(s: str,index: int) -> bool
 
   
@@ -779,10 +802,11 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
    Returns: true if c is white space; otherwise,false.
   """
-  pass
- @staticmethod
- def Parse(s):
-  """
+        pass
+
+    @staticmethod
+    def Parse(s):
+        """
   Parse(s: str) -> Char
 
   
@@ -795,10 +819,11 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
    Returns: A Unicode character equivalent to the sole character in s.
   """
-  pass
- @staticmethod
- def ToLower(c,culture=None):
-  """
+        pass
+
+    @staticmethod
+    def ToLower(c, culture=None):
+        """
   ToLower(c: Char) -> Char
 
   
@@ -835,10 +860,11 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
     is already lowercase or not alphabetic.
   """
-  pass
- @staticmethod
- def ToLowerInvariant(c):
-  """
+        pass
+
+    @staticmethod
+    def ToLowerInvariant(c):
+        """
   ToLowerInvariant(c: Char) -> Char
 
   
@@ -857,9 +883,10 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
     lowercase or not alphabetic.
   """
-  pass
- def ToString(self,*__args):
-  """
+        pass
+
+    def ToString(self, *__args):
+        """
   ToString(c: Char) -> str
 
   
@@ -896,10 +923,11 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
    Returns: The string representation of the value of this instance.
   """
-  pass
- @staticmethod
- def ToUpper(c,culture=None):
-  """
+        pass
+
+    @staticmethod
+    def ToUpper(c, culture=None):
+        """
   ToUpper(c: Char) -> Char
 
   
@@ -936,10 +964,11 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
     is already uppercase,has no uppercase equivalent,or is not alphabetic.
   """
-  pass
- @staticmethod
- def ToUpperInvariant(c):
-  """
+        pass
+
+    @staticmethod
+    def ToUpperInvariant(c):
+        """
   ToUpperInvariant(c: Char) -> Char
 
   
@@ -958,10 +987,11 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
     uppercase or not alphabetic.
   """
-  pass
- @staticmethod
- def TryParse(s,result):
-  """
+        pass
+
+    @staticmethod
+    def TryParse(s, result):
+        """
   TryParse(s: str) -> (bool,Char)
 
   
@@ -978,38 +1008,48 @@ class Char(object,IComparable,IConvertible,IComparable[Char],IEquatable[Char]):
 
    Returns: true if the s parameter was converted successfully; otherwise,false.
   """
-  pass
- def __cmp__(self,*args):
-  """ x.__cmp__(y) <==> cmp(x,y) """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __cmp__(self, *args):
+        """ x.__cmp__(y) <==> cmp(x,y) """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: Char,other: str) -> bool
 
   __contains__(self: Char,other: Char) -> bool
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __hash__(self,*args):
-  """ x.__hash__() <==> hash(x) """
-  pass
- def __index__(self,*args):
-  """ __index__(self: Char) -> int """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: Char) -> str """
-  pass
- def __str__(self,*args):
-  pass
- MaxValue=None
- MinValue=None
+        pass
 
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __hash__(self, *args):
+        """ x.__hash__() <==> hash(x) """
+        pass
+
+    def __index__(self, *args):
+        """ __index__(self: Char) -> int """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: Char) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    MaxValue = None
+    MinValue = None

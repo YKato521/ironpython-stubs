@@ -1,11 +1,12 @@
 class ICentralLockedCallback:
- """
+    """
  An interface that may be used to control Revit's behavior when it tries to lock central
 
     and is blocked because another user already has locked central.
  """
- def ShouldWaitForLockAvailability(self):
-  """
+
+    def ShouldWaitForLockAvailability(self):
+        """
   ShouldWaitForLockAvailability(self: ICentralLockedCallback) -> bool
 
   
@@ -14,7 +15,8 @@ class ICentralLockedCallback:
 
    Returns: True means wait and try again later.  False means immediately give up.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

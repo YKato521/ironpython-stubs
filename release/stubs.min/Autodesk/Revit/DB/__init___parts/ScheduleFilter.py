@@ -1,5 +1,5 @@
-class ScheduleFilter(object,IDisposable):
- """
+class ScheduleFilter(object, IDisposable):
+    """
  A filter in a schedule.
 
  
@@ -16,11 +16,13 @@ class ScheduleFilter(object,IDisposable):
 
  ScheduleFilter()
  """
- def Dispose(self):
-  """ Dispose(self: ScheduleFilter) """
-  pass
- def GetDoubleValue(self):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: ScheduleFilter) """
+        pass
+
+    def GetDoubleValue(self):
+        """
   GetDoubleValue(self: ScheduleFilter) -> float
 
   
@@ -29,9 +31,10 @@ class ScheduleFilter(object,IDisposable):
 
    Returns: The filter value.
   """
-  pass
- def GetElementIdValue(self):
-  """
+        pass
+
+    def GetElementIdValue(self):
+        """
   GetElementIdValue(self: ScheduleFilter) -> ElementId
 
   
@@ -40,9 +43,10 @@ class ScheduleFilter(object,IDisposable):
 
    Returns: The filter value.
   """
-  pass
- def GetIntegerValue(self):
-  """
+        pass
+
+    def GetIntegerValue(self):
+        """
   GetIntegerValue(self: ScheduleFilter) -> int
 
   
@@ -51,9 +55,10 @@ class ScheduleFilter(object,IDisposable):
 
    Returns: The filter value.
   """
-  pass
- def GetStringValue(self):
-  """
+        pass
+
+    def GetStringValue(self):
+        """
   GetStringValue(self: ScheduleFilter) -> str
 
   
@@ -62,19 +67,22 @@ class ScheduleFilter(object,IDisposable):
 
    Returns: The filter value.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: ScheduleFilter,disposing: bool) """
-  pass
- def SetNullValue(self):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: ScheduleFilter,disposing: bool) """
+        pass
+
+    def SetNullValue(self):
+        """
   SetNullValue(self: ScheduleFilter)
 
    Sets the filter to have no specified value (used for HasParameter filters).
   """
-  pass
- def SetValue(self,*__args):
-  """
+        pass
+
+    def SetValue(self, *__args):
+        """
   SetValue(self: ScheduleFilter,value: float)
 
    Set the filter value to a double.
@@ -107,19 +115,23 @@ class ScheduleFilter(object,IDisposable):
 
    string: The filter value.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,fieldId=None,filterType=None,value=None):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, fieldId=None, filterType=None, value=None):
+        """
   __new__(cls: type,fieldId: ScheduleFieldId,filterType: ScheduleFilterType,value: ElementId)
 
   __new__(cls: type,fieldId: ScheduleFieldId,filterType: ScheduleFilterType,value: str)
@@ -132,12 +144,14 @@ class ScheduleFilter(object,IDisposable):
 
   __new__(cls: type)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- FieldId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The ID of the field used to filter the schedule.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    FieldId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The ID of the field used to filter the schedule.
 
 
 
@@ -149,8 +163,10 @@ Set: FieldId(self: ScheduleFilter)=value
 
 """
 
- FilterType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The filter type.
+    FilterType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The filter type.
 
 
 
@@ -162,8 +178,10 @@ Set: FilterType(self: ScheduleFilter)=value
 
 """
 
- IsDoubleValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the filter has a double value.
+    IsDoubleValue = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the filter has a double value.
 
 
 
@@ -173,8 +191,10 @@ Get: IsDoubleValue(self: ScheduleFilter) -> bool
 
 """
 
- IsElementIdValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the filter has an ElementId value.
+    IsElementIdValue = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the filter has an ElementId value.
 
 
 
@@ -184,8 +204,10 @@ Get: IsElementIdValue(self: ScheduleFilter) -> bool
 
 """
 
- IsIntegerValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the filter has an integer value.
+    IsIntegerValue = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the filter has an integer value.
 
 
 
@@ -195,8 +217,10 @@ Get: IsIntegerValue(self: ScheduleFilter) -> bool
 
 """
 
- IsNullValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the filter has no specified value.
+    IsNullValue = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the filter has no specified value.
 
 
 
@@ -206,8 +230,10 @@ Get: IsNullValue(self: ScheduleFilter) -> bool
 
 """
 
- IsStringValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if the filter has a string value.
+    IsStringValue = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if the filter has a string value.
 
 
 
@@ -217,8 +243,10 @@ Get: IsStringValue(self: ScheduleFilter) -> bool
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -227,5 +255,3 @@ Get: IsValidObject(self: ScheduleFilter) -> bool
 
 
 """
-
-

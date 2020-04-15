@@ -1,5 +1,5 @@
-class Uri(object,ISerializable):
- """
+class Uri(object, ISerializable):
+    """
  Provides an object representation of a uniform resource identifier (URI) and easy access to the parts of the URI.
 
  
@@ -16,16 +16,18 @@ class Uri(object,ISerializable):
 
  Uri(baseUri: Uri,relativeUri: Uri)
  """
- def Canonicalize(self,*args):
-  """
+
+    def Canonicalize(self, *args):
+        """
   Canonicalize(self: Uri)
 
    Converts the internally stored URI to canonical form.
   """
-  pass
- @staticmethod
- def CheckHostName(name):
-  """
+        pass
+
+    @staticmethod
+    def CheckHostName(name):
+        """
   CheckHostName(name: str) -> UriHostNameType
 
   
@@ -42,10 +44,11 @@ class Uri(object,ISerializable):
 
     System.UriHostNameType.Unknown.
   """
-  pass
- @staticmethod
- def CheckSchemeName(schemeName):
-  """
+        pass
+
+    @staticmethod
+    def CheckSchemeName(schemeName):
+        """
   CheckSchemeName(schemeName: str) -> bool
 
   
@@ -58,17 +61,19 @@ class Uri(object,ISerializable):
 
    Returns: A System.Boolean value that is true if the scheme name is valid; otherwise,false.
   """
-  pass
- def CheckSecurity(self,*args):
-  """
+        pass
+
+    def CheckSecurity(self, *args):
+        """
   CheckSecurity(self: Uri)
 
    Calling this method has no effect.
   """
-  pass
- @staticmethod
- def Compare(uri1,uri2,partsToCompare,compareFormat,comparisonType):
-  """
+        pass
+
+    @staticmethod
+    def Compare(uri1, uri2, partsToCompare, compareFormat, comparisonType):
+        """
   Compare(uri1: Uri,uri2: Uri,partsToCompare: UriComponents,compareFormat: UriFormat,comparisonType: StringComparison) -> int
 
   
@@ -101,9 +106,10 @@ class Uri(object,ISerializable):
 
     zerouri1 is greater than uri2.
   """
-  pass
- def Equals(self,comparand):
-  """
+        pass
+
+    def Equals(self, comparand):
+        """
   Equals(self: Uri,comparand: object) -> bool
 
   
@@ -118,19 +124,21 @@ class Uri(object,ISerializable):
 
     false.
   """
-  pass
- def Escape(self,*args):
-  """
+        pass
+
+    def Escape(self, *args):
+        """
   Escape(self: Uri)
 
    Converts any unsafe or reserved characters in the path component to their hexadecimal character 
 
     representations.
   """
-  pass
- @staticmethod
- def EscapeDataString(stringToEscape):
-  """
+        pass
+
+    @staticmethod
+    def EscapeDataString(stringToEscape):
+        """
   EscapeDataString(stringToEscape: str) -> str
 
   
@@ -143,9 +151,10 @@ class Uri(object,ISerializable):
 
    Returns: A System.String that contains the escaped representation of stringToEscape.
   """
-  pass
- def EscapeString(self,*args):
-  """
+        pass
+
+    def EscapeString(self, *args):
+        """
   EscapeString(str: str) -> str
 
   
@@ -158,10 +167,11 @@ class Uri(object,ISerializable):
 
    Returns: The escaped representation of the string.
   """
-  pass
- @staticmethod
- def EscapeUriString(stringToEscape):
-  """
+        pass
+
+    @staticmethod
+    def EscapeUriString(stringToEscape):
+        """
   EscapeUriString(stringToEscape: str) -> str
 
   
@@ -174,10 +184,11 @@ class Uri(object,ISerializable):
 
    Returns: A System.String that contains the escaped representation of stringToEscape.
   """
-  pass
- @staticmethod
- def FromHex(digit):
-  """
+        pass
+
+    @staticmethod
+    def FromHex(digit):
+        """
   FromHex(digit: Char) -> int
 
   
@@ -192,9 +203,10 @@ class Uri(object,ISerializable):
 
     hexadecimal digit.
   """
-  pass
- def GetComponents(self,components,format):
-  """
+        pass
+
+    def GetComponents(self, components, format):
+        """
   GetComponents(self: Uri,components: UriComponents,format: UriFormat) -> str
 
   
@@ -217,9 +229,10 @@ class Uri(object,ISerializable):
 
    Returns: A System.String that contains the components.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Uri) -> int
 
   
@@ -228,9 +241,10 @@ class Uri(object,ISerializable):
 
    Returns: An System.Int32 containing the hash value generated for this URI.
   """
-  pass
- def GetLeftPart(self,part):
-  """
+        pass
+
+    def GetLeftPart(self, part):
+        """
   GetLeftPart(self: Uri,part: UriPartial) -> str
 
   
@@ -243,9 +257,10 @@ class Uri(object,ISerializable):
 
    Returns: A System.String that contains the specified portion of the System.Uri instance.
   """
-  pass
- def GetObjectData(self,*args):
-  """
+        pass
+
+    def GetObjectData(self, *args):
+        """
   GetObjectData(self: Uri,serializationInfo: SerializationInfo,streamingContext: StreamingContext)
 
    Returns the data needed to serialize the current instance.
@@ -262,10 +277,11 @@ class Uri(object,ISerializable):
 
     the serialized stream associated with the System.Uri.
   """
-  pass
- @staticmethod
- def HexEscape(character):
-  """
+        pass
+
+    @staticmethod
+    def HexEscape(character):
+        """
   HexEscape(character: Char) -> str
 
   
@@ -278,10 +294,11 @@ class Uri(object,ISerializable):
 
    Returns: The hexadecimal representation of the specified character.
   """
-  pass
- @staticmethod
- def HexUnescape(pattern,index):
-  """
+        pass
+
+    @staticmethod
+    def HexUnescape(pattern, index):
+        """
   HexUnescape(pattern: str,index: int) -> (Char,int)
 
   
@@ -300,9 +317,10 @@ class Uri(object,ISerializable):
 
     incremented to point to the character following the one returned.
   """
-  pass
- def IsBadFileSystemCharacter(self,*args):
-  """
+        pass
+
+    def IsBadFileSystemCharacter(self, *args):
+        """
   IsBadFileSystemCharacter(self: Uri,character: Char) -> bool
 
   
@@ -315,9 +333,10 @@ class Uri(object,ISerializable):
 
    Returns: A System.Boolean value that is true if the specified character is invalid; otherwise false.
   """
-  pass
- def IsBaseOf(self,uri):
-  """
+        pass
+
+    def IsBaseOf(self, uri):
+        """
   IsBaseOf(self: Uri,uri: Uri) -> bool
 
   
@@ -334,9 +353,10 @@ class Uri(object,ISerializable):
 
    Returns: true if the current System.Uri instance is a base of uri; otherwise,false.
   """
-  pass
- def IsExcludedCharacter(self,*args):
-  """
+        pass
+
+    def IsExcludedCharacter(self, *args):
+        """
   IsExcludedCharacter(character: Char) -> bool
 
   
@@ -351,10 +371,11 @@ class Uri(object,ISerializable):
 
     false.
   """
-  pass
- @staticmethod
- def IsHexDigit(character):
-  """
+        pass
+
+    @staticmethod
+    def IsHexDigit(character):
+        """
   IsHexDigit(character: Char) -> bool
 
   
@@ -369,10 +390,11 @@ class Uri(object,ISerializable):
 
     false.
   """
-  pass
- @staticmethod
- def IsHexEncoding(pattern,index):
-  """
+        pass
+
+    @staticmethod
+    def IsHexEncoding(pattern, index):
+        """
   IsHexEncoding(pattern: str,index: int) -> bool
 
   
@@ -389,9 +411,10 @@ class Uri(object,ISerializable):
 
     otherwise,false.
   """
-  pass
- def IsReservedCharacter(self,*args):
-  """
+        pass
+
+    def IsReservedCharacter(self, *args):
+        """
   IsReservedCharacter(self: Uri,character: Char) -> bool
 
   
@@ -406,9 +429,10 @@ class Uri(object,ISerializable):
 
     otherwise,false.
   """
-  pass
- def IsWellFormedOriginalString(self):
-  """
+        pass
+
+    def IsWellFormedOriginalString(self):
+        """
   IsWellFormedOriginalString(self: Uri) -> bool
 
   
@@ -421,10 +445,11 @@ class Uri(object,ISerializable):
 
    Returns: A System.Boolean value that is true if the string was well-formed; else false.
   """
-  pass
- @staticmethod
- def IsWellFormedUriString(uriString,uriKind):
-  """
+        pass
+
+    @staticmethod
+    def IsWellFormedUriString(uriString, uriKind):
+        """
   IsWellFormedUriString(uriString: str,uriKind: UriKind) -> bool
 
   
@@ -443,9 +468,10 @@ class Uri(object,ISerializable):
 
    Returns: A System.Boolean value that is true if the string was well-formed; else false.
   """
-  pass
- def MakeRelative(self,toUri):
-  """
+        pass
+
+    def MakeRelative(self, toUri):
+        """
   MakeRelative(self: Uri,toUri: Uri) -> str
 
   
@@ -464,9 +490,10 @@ class Uri(object,ISerializable):
 
     System.String that represents the toUri parameter.
   """
-  pass
- def MakeRelativeUri(self,uri):
-  """
+        pass
+
+    def MakeRelativeUri(self, uri):
+        """
   MakeRelativeUri(self: Uri,uri: Uri) -> Uri
 
   
@@ -485,18 +512,20 @@ class Uri(object,ISerializable):
 
     parameter.
   """
-  pass
- def Parse(self,*args):
-  """
+        pass
+
+    def Parse(self, *args):
+        """
   Parse(self: Uri)
 
    Parses the URI of the current instance to ensure it contains all the parts required for a valid 
 
     URI.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: Uri) -> str
 
   
@@ -507,10 +536,11 @@ class Uri(object,ISerializable):
 
     instance. All characters are unescaped except #,?,and %.
   """
-  pass
- @staticmethod
- def TryCreate(*__args):
-  """
+        pass
+
+    @staticmethod
+    def TryCreate(*__args):
+        """
   TryCreate(baseUri: Uri,relativeUri: Uri) -> (bool,Uri)
 
   
@@ -553,9 +583,10 @@ class Uri(object,ISerializable):
 
    Returns: A System.Boolean value that is true if the System.Uri was successfully created; otherwise,false.
   """
-  pass
- def Unescape(self,*args):
-  """
+        pass
+
+    def Unescape(self, *args):
+        """
   Unescape(self: Uri,path: str) -> str
 
   
@@ -572,10 +603,11 @@ class Uri(object,ISerializable):
 
    Returns: A System.String that contains the unescaped value of the path parameter.
   """
-  pass
- @staticmethod
- def UnescapeDataString(stringToUnescape):
-  """
+        pass
+
+    @staticmethod
+    def UnescapeDataString(stringToUnescape):
+        """
   UnescapeDataString(stringToUnescape: str) -> str
 
   
@@ -588,19 +620,23 @@ class Uri(object,ISerializable):
 
    Returns: A System.String that contains the unescaped representation of stringToUnescape.
   """
-  pass
- def __cmp__(self,*args):
-  """ x.__cmp__(y) <==> cmp(x,y) """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __cmp__(self, *args):
+        """ x.__cmp__(y) <==> cmp(x,y) """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,uriString: str)
 
   __new__(cls: type,uriString: str,dontEscape: bool)
@@ -615,18 +651,25 @@ class Uri(object,ISerializable):
 
   __new__(cls: type,serializationInfo: SerializationInfo,streamingContext: StreamingContext)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- AbsolutePath=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the absolute path of the URI.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AbsolutePath = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the absolute path of the URI.
 
 
 
@@ -636,8 +679,10 @@ Get: AbsolutePath(self: Uri) -> str
 
 """
 
- AbsoluteUri=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the absolute URI.
+    AbsoluteUri = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the absolute URI.
 
 
 
@@ -647,8 +692,8 @@ Get: AbsoluteUri(self: Uri) -> str
 
 """
 
- Authority=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the Domain Name System (DNS) host name or IP address and the port number for a server.
+    Authority = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the Domain Name System (DNS) host name or IP address and the port number for a server.
 
 
 
@@ -658,8 +703,10 @@ Get: Authority(self: Uri) -> str
 
 """
 
- DnsSafeHost=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an unescaped host name that is safe to use for DNS resolution.
+    DnsSafeHost = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets an unescaped host name that is safe to use for DNS resolution.
 
 
 
@@ -669,8 +716,8 @@ Get: DnsSafeHost(self: Uri) -> str
 
 """
 
- Fragment=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the escaped URI fragment.
+    Fragment = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the escaped URI fragment.
 
 
 
@@ -680,8 +727,8 @@ Get: Fragment(self: Uri) -> str
 
 """
 
- Host=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the host component of this instance.
+    Host = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the host component of this instance.
 
 
 
@@ -691,8 +738,10 @@ Get: Host(self: Uri) -> str
 
 """
 
- HostNameType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the type of the host name specified in the URI.
+    HostNameType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the type of the host name specified in the URI.
 
 
 
@@ -702,15 +751,17 @@ Get: HostNameType(self: Uri) -> UriHostNameType
 
 """
 
- IdnHost=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IdnHost(self: Uri) -> str
+    IdnHost = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: IdnHost(self: Uri) -> str
 
 
 
 """
 
- IsAbsoluteUri=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets whether the System.Uri instance is absolute.
+    IsAbsoluteUri = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets whether the System.Uri instance is absolute.
 
 
 
@@ -720,8 +771,10 @@ Get: IsAbsoluteUri(self: Uri) -> bool
 
 """
 
- IsDefaultPort=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets whether the port value of the URI is the default for this scheme.
+    IsDefaultPort = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets whether the port value of the URI is the default for this scheme.
 
 
 
@@ -731,8 +784,8 @@ Get: IsDefaultPort(self: Uri) -> bool
 
 """
 
- IsFile=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the specified System.Uri is a file URI.
+    IsFile = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the specified System.Uri is a file URI.
 
 
 
@@ -742,8 +795,10 @@ Get: IsFile(self: Uri) -> bool
 
 """
 
- IsLoopback=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets whether the specified System.Uri references the local host.
+    IsLoopback = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets whether the specified System.Uri references the local host.
 
 
 
@@ -753,8 +808,8 @@ Get: IsLoopback(self: Uri) -> bool
 
 """
 
- IsUnc=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets whether the specified System.Uri is a universal naming convention (UNC) path.
+    IsUnc = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets whether the specified System.Uri is a universal naming convention (UNC) path.
 
 
 
@@ -764,8 +819,8 @@ Get: IsUnc(self: Uri) -> bool
 
 """
 
- LocalPath=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a local operating-system representation of a file name.
+    LocalPath = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a local operating-system representation of a file name.
 
 
 
@@ -775,8 +830,10 @@ Get: LocalPath(self: Uri) -> str
 
 """
 
- OriginalString=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the original URI string that was passed to the System.Uri constructor.
+    OriginalString = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the original URI string that was passed to the System.Uri constructor.
 
 
 
@@ -786,8 +843,10 @@ Get: OriginalString(self: Uri) -> str
 
 """
 
- PathAndQuery=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Uri.AbsolutePath and System.Uri.Query properties separated by a question mark (?).
+    PathAndQuery = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Uri.AbsolutePath and System.Uri.Query properties separated by a question mark (?).
 
 
 
@@ -797,8 +856,8 @@ Get: PathAndQuery(self: Uri) -> str
 
 """
 
- Port=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the port number of this URI.
+    Port = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the port number of this URI.
 
 
 
@@ -808,8 +867,8 @@ Get: Port(self: Uri) -> int
 
 """
 
- Query=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets any query information included in the specified URI.
+    Query = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets any query information included in the specified URI.
 
 
 
@@ -819,8 +878,8 @@ Get: Query(self: Uri) -> str
 
 """
 
- Scheme=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the scheme name for this URI.
+    Scheme = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the scheme name for this URI.
 
 
 
@@ -830,8 +889,8 @@ Get: Scheme(self: Uri) -> str
 
 """
 
- Segments=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an array containing the path segments that make up the specified URI.
+    Segments = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an array containing the path segments that make up the specified URI.
 
 
 
@@ -841,8 +900,10 @@ Get: Segments(self: Uri) -> Array[str]
 
 """
 
- UserEscaped=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates that the URI string was completely escaped before the System.Uri instance was created.
+    UserEscaped = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates that the URI string was completely escaped before the System.Uri instance was created.
 
 
 
@@ -852,8 +913,8 @@ Get: UserEscaped(self: Uri) -> bool
 
 """
 
- UserInfo=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the user name,password,or other user-specific information associated with the specified URI.
+    UserInfo = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the user name,password,or other user-specific information associated with the specified URI.
 
 
 
@@ -863,16 +924,14 @@ Get: UserInfo(self: Uri) -> str
 
 """
 
-
- SchemeDelimiter='://'
- UriSchemeFile='file'
- UriSchemeFtp='ftp'
- UriSchemeGopher='gopher'
- UriSchemeHttp='http'
- UriSchemeHttps='https'
- UriSchemeMailto='mailto'
- UriSchemeNetPipe='net.pipe'
- UriSchemeNetTcp='net.tcp'
- UriSchemeNews='news'
- UriSchemeNntp='nntp'
-
+    SchemeDelimiter = "://"
+    UriSchemeFile = "file"
+    UriSchemeFtp = "ftp"
+    UriSchemeGopher = "gopher"
+    UriSchemeHttp = "http"
+    UriSchemeHttps = "https"
+    UriSchemeMailto = "mailto"
+    UriSchemeNetPipe = "net.pipe"
+    UriSchemeNetTcp = "net.tcp"
+    UriSchemeNews = "news"
+    UriSchemeNntp = "nntp"

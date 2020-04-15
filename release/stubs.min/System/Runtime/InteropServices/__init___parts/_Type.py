@@ -1,7 +1,8 @@
 class _Type:
- """ Exposes the public members of the System.Type class to the unmanaged code. """
- def Equals(self,*__args):
-  """
+    """ Exposes the public members of the System.Type class to the unmanaged code. """
+
+    def Equals(self, *__args):
+        """
   Equals(self: _Type,o: Type) -> bool
 
   
@@ -48,9 +49,10 @@ class _Type:
 
     System.Type; otherwise,false.
   """
-  pass
- def FindInterfaces(self,filter,filterCriteria):
-  """
+        pass
+
+    def FindInterfaces(self, filter, filterCriteria):
+        """
   FindInterfaces(self: _Type,filter: TypeFilter,filterCriteria: object) -> Array[Type]
 
   
@@ -77,9 +79,10 @@ class _Type:
 
     matching the filter are implemented or inherited by the current System.Type.
   """
-  pass
- def FindMembers(self,memberType,bindingAttr,filter,filterCriteria):
-  """
+        pass
+
+    def FindMembers(self, memberType, bindingAttr, filter, filterCriteria):
+        """
   FindMembers(self: _Type,memberType: MemberTypes,bindingAttr: BindingFlags,filter: MemberFilter,filterCriteria: object) -> Array[MemberInfo]
 
   
@@ -128,9 +131,10 @@ class _Type:
 
     members of type memberType that match the filter criteria.
   """
-  pass
- def GetArrayRank(self):
-  """
+        pass
+
+    def GetArrayRank(self):
+        """
   GetArrayRank(self: _Type) -> int
 
   
@@ -139,9 +143,10 @@ class _Type:
 
    Returns: An System.Int32 containing the number of dimensions in the current System.Type.
   """
-  pass
- def GetConstructor(self,*__args):
-  """
+        pass
+
+    def GetConstructor(self, *__args):
+        """
   GetConstructor(self: _Type,types: Array[Type]) -> ConstructorInfo
 
   
@@ -274,9 +279,10 @@ class _Type:
 
     specified requirements,if found; otherwise,null.
   """
-  pass
- def GetConstructors(self,bindingAttr=None):
-  """
+        pass
+
+    def GetConstructors(self, bindingAttr=None):
+        """
   GetConstructors(self: _Type) -> Array[ConstructorInfo]
 
   
@@ -325,9 +331,10 @@ class _Type:
 
     generic type or method definition.
   """
-  pass
- def GetCustomAttributes(self,*__args):
-  """
+        pass
+
+    def GetCustomAttributes(self, *__args):
+        """
   GetCustomAttributes(self: _Type,inherit: bool) -> Array[object]
 
   
@@ -372,9 +379,10 @@ class _Type:
 
     attributes have been applied.
   """
-  pass
- def GetDefaultMembers(self):
-  """
+        pass
+
+    def GetDefaultMembers(self):
+        """
   GetDefaultMembers(self: _Type) -> Array[MemberInfo]
 
   
@@ -387,9 +395,10 @@ class _Type:
 
     does not have default members.
   """
-  pass
- def GetElementType(self):
-  """
+        pass
+
+    def GetElementType(self):
+        """
   GetElementType(self: _Type) -> Type
 
   
@@ -404,9 +413,10 @@ class _Type:
 
     method definition.
   """
-  pass
- def GetEvent(self,name,bindingAttr=None):
-  """
+        pass
+
+    def GetEvent(self, name, bindingAttr=None):
+        """
   GetEvent(self: _Type,name: str) -> EventInfo
 
   
@@ -463,9 +473,10 @@ class _Type:
 
     inherited by the current System.Type,if found; otherwise,null.
   """
-  pass
- def GetEvents(self,bindingAttr=None):
-  """
+        pass
+
+    def GetEvents(self, bindingAttr=None):
+        """
   GetEvents(self: _Type,bindingAttr: BindingFlags) -> Array[EventInfo]
 
   
@@ -506,9 +517,10 @@ class _Type:
 
     System.Reflection.EventInfo,if the current System.Type does not have public events.
   """
-  pass
- def GetField(self,name,bindingAttr=None):
-  """
+        pass
+
+    def GetField(self, name, bindingAttr=None):
+        """
   GetField(self: _Type,name: str) -> FieldInfo
 
   
@@ -553,9 +565,10 @@ class _Type:
 
     requirements,if found; otherwise,null.
   """
-  pass
- def GetFields(self,bindingAttr=None):
-  """
+        pass
+
+    def GetFields(self, bindingAttr=None):
+        """
   GetFields(self: _Type) -> Array[FieldInfo]
 
   
@@ -596,9 +609,10 @@ class _Type:
 
     the defined fields match the binding constraints.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: _Type) -> int
 
   
@@ -607,9 +621,10 @@ class _Type:
 
    Returns: An System.Int32 containing the hash code for this instance.
   """
-  pass
- def GetIDsOfNames(self,riid,rgszNames,cNames,lcid,rgDispId):
-  """
+        pass
+
+    def GetIDsOfNames(self, riid, rgszNames, cNames, lcid, rgDispId):
+        """
   GetIDsOfNames(self: _Type,riid: Guid,rgszNames: IntPtr,cNames: UInt32,lcid: UInt32,rgDispId: IntPtr) -> Guid
 
   
@@ -628,9 +643,10 @@ class _Type:
 
    rgDispId: Caller-allocated array that receives the IDs corresponding to the names.
   """
-  pass
- def GetInterface(self,name,ignoreCase=None):
-  """
+        pass
+
+    def GetInterface(self, name, ignoreCase=None):
+        """
   GetInterface(self: _Type,name: str) -> Type
 
   
@@ -683,9 +699,10 @@ class _Type:
 
     inherited by the current System.Type,if found; otherwise,null.
   """
-  pass
- def GetInterfaceMap(self,interfaceType):
-  """
+        pass
+
+    def GetInterfaceMap(self, interfaceType):
+        """
   GetInterfaceMap(self: _Type,interfaceType: Type) -> InterfaceMapping
 
   
@@ -704,9 +721,10 @@ class _Type:
 
     interfaceType.
   """
-  pass
- def GetInterfaces(self):
-  """
+        pass
+
+    def GetInterfaces(self):
+        """
   GetInterfaces(self: _Type) -> Array[Type]
 
   
@@ -719,9 +737,10 @@ class _Type:
 
     inherited by the current System.Type.
   """
-  pass
- def GetMember(self,name,*__args):
-  """
+        pass
+
+    def GetMember(self, name, *__args):
+        """
   GetMember(self: _Type,name: str) -> Array[MemberInfo]
 
   
@@ -796,9 +815,10 @@ class _Type:
 
     specified name,if found; otherwise,an empty array.
   """
-  pass
- def GetMembers(self,bindingAttr=None):
-  """
+        pass
+
+    def GetMembers(self, bindingAttr=None):
+        """
   GetMembers(self: _Type) -> Array[MemberInfo]
 
   
@@ -839,9 +859,10 @@ class _Type:
 
     of the defined members match the binding constraints.
   """
-  pass
- def GetMethod(self,name,*__args):
-  """
+        pass
+
+    def GetMethod(self, name, *__args):
+        """
   GetMethod(self: _Type,name: str,types: Array[Type],modifiers: Array[ParameterModifier]) -> MethodInfo
 
   
@@ -1062,9 +1083,10 @@ class _Type:
 
     requirements,if found; otherwise,null.
   """
-  pass
- def GetMethods(self,bindingAttr=None):
-  """
+        pass
+
+    def GetMethods(self, bindingAttr=None):
+        """
   GetMethods(self: _Type) -> Array[MethodInfo]
 
   
@@ -1105,9 +1127,10 @@ class _Type:
 
     of the defined methods match the binding constraints.
   """
-  pass
- def GetNestedType(self,name,bindingAttr=None):
-  """
+        pass
+
+    def GetNestedType(self, name, bindingAttr=None):
+        """
   GetNestedType(self: _Type,name: str) -> Type
 
   
@@ -1152,9 +1175,10 @@ class _Type:
 
     found; otherwise,null.
   """
-  pass
- def GetNestedTypes(self,bindingAttr=None):
-  """
+        pass
+
+    def GetNestedTypes(self, bindingAttr=None):
+        """
   GetNestedTypes(self: _Type) -> Array[Type]
 
   
@@ -1197,9 +1221,10 @@ class _Type:
 
     binding constraints.
   """
-  pass
- def GetProperties(self,bindingAttr=None):
-  """
+        pass
+
+    def GetProperties(self, bindingAttr=None):
+        """
   GetProperties(self: _Type) -> Array[PropertyInfo]
 
   
@@ -1240,9 +1265,10 @@ class _Type:
 
     of the properties match the binding constraints.
   """
-  pass
- def GetProperty(self,name,*__args):
-  """
+        pass
+
+    def GetProperty(self, name, *__args):
+        """
   GetProperty(self: _Type,name: str,types: Array[Type]) -> PropertyInfo
 
   
@@ -1461,9 +1487,10 @@ class _Type:
 
     specified requirements,if found; otherwise,null.
   """
-  pass
- def GetType(self):
-  """
+        pass
+
+    def GetType(self):
+        """
   GetType(self: _Type) -> Type
 
   
@@ -1472,9 +1499,10 @@ class _Type:
 
    Returns: The current System.Type.
   """
-  pass
- def GetTypeInfo(self,iTInfo,lcid,ppTInfo):
-  """
+        pass
+
+    def GetTypeInfo(self, iTInfo, lcid, ppTInfo):
+        """
   GetTypeInfo(self: _Type,iTInfo: UInt32,lcid: UInt32,ppTInfo: IntPtr)
 
    Retrieves the type information for an object,which can then be used to get the type information 
@@ -1491,18 +1519,30 @@ class _Type:
 
    ppTInfo: Receives a pointer to the requested type information object.
   """
-  pass
- def GetTypeInfoCount(self,pcTInfo):
-  """
+        pass
+
+    def GetTypeInfoCount(self, pcTInfo):
+        """
   GetTypeInfoCount(self: _Type) -> UInt32
 
   
 
    Retrieves the number of type information interfaces that an object provides (either 0 or 1).
   """
-  pass
- def Invoke(self,dispIdMember,riid,lcid,wFlags,pDispParams,pVarResult,pExcepInfo,puArgErr):
-  """
+        pass
+
+    def Invoke(
+        self,
+        dispIdMember,
+        riid,
+        lcid,
+        wFlags,
+        pDispParams,
+        pVarResult,
+        pExcepInfo,
+        puArgErr,
+    ):
+        """
   Invoke(self: _Type,dispIdMember: UInt32,riid: Guid,lcid: UInt32,wFlags: Int16,pDispParams: IntPtr,pVarResult: IntPtr,pExcepInfo: IntPtr,puArgErr: IntPtr) -> Guid
 
   
@@ -1531,9 +1571,10 @@ class _Type:
 
    puArgErr: The index of the first argument that has an error.
   """
-  pass
- def InvokeMember(self,name,invokeAttr,binder,target,args,*__args):
-  """
+        pass
+
+    def InvokeMember(self, name, invokeAttr, binder, target, args, *__args):
+        """
   InvokeMember(self: _Type,name: str,invokeAttr: BindingFlags,binder: Binder,target: object,args: Array[object]) -> object
 
   
@@ -1700,9 +1741,10 @@ class _Type:
 
    Returns: An System.Object representing the return value of the invoked member.
   """
-  pass
- def IsAssignableFrom(self,c):
-  """
+        pass
+
+    def IsAssignableFrom(self, c):
+        """
   IsAssignableFrom(self: _Type,c: Type) -> bool
 
   
@@ -1725,9 +1767,10 @@ class _Type:
 
     the constraints of c. false if none of these conditions are the case,or if c is null.
   """
-  pass
- def IsDefined(self,attributeType,inherit):
-  """
+        pass
+
+    def IsDefined(self, attributeType, inherit):
+        """
   IsDefined(self: _Type,attributeType: Type,inherit: bool) -> bool
 
   
@@ -1746,9 +1789,10 @@ class _Type:
 
    Returns: true if one or more instance of attributeType is applied to this member; otherwise,false.
   """
-  pass
- def IsInstanceOfType(self,o):
-  """
+        pass
+
+    def IsInstanceOfType(self, o):
+        """
   IsInstanceOfType(self: _Type,o: object) -> bool
 
   
@@ -1771,9 +1815,10 @@ class _Type:
 
     (that is,System.Type.ContainsGenericParameters returns true).
   """
-  pass
- def IsSubclassOf(self,c):
-  """
+        pass
+
+    def IsSubclassOf(self, c):
+        """
   IsSubclassOf(self: _Type,c: Type) -> bool
 
   
@@ -1796,9 +1841,10 @@ class _Type:
 
     represent the same class.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: _Type) -> str
 
   
@@ -1807,17 +1853,21 @@ class _Type:
 
    Returns: A System.String representing the name of the current System.Type.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- Assembly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.Assembly property.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Assembly = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Type.Assembly property.
 
 
 
@@ -1827,8 +1877,10 @@ Get: Assembly(self: _Type) -> Assembly
 
 """
 
- AssemblyQualifiedName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.AssemblyQualifiedName property.
+    AssemblyQualifiedName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.AssemblyQualifiedName property.
 
 
 
@@ -1838,8 +1890,10 @@ Get: AssemblyQualifiedName(self: _Type) -> str
 
 """
 
- Attributes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.Attributes property.
+    Attributes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.Attributes property.
 
 
 
@@ -1849,8 +1903,8 @@ Get: Attributes(self: _Type) -> TypeAttributes
 
 """
 
- BaseType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.BaseType property.
+    BaseType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Type.BaseType property.
 
 
 
@@ -1860,8 +1914,10 @@ Get: BaseType(self: _Type) -> Type
 
 """
 
- DeclaringType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.DeclaringType property.
+    DeclaringType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.DeclaringType property.
 
 
 
@@ -1871,8 +1927,8 @@ Get: DeclaringType(self: _Type) -> Type
 
 """
 
- FullName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.FullName property.
+    FullName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Type.FullName property.
 
 
 
@@ -1882,8 +1938,8 @@ Get: FullName(self: _Type) -> str
 
 """
 
- GUID=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.GUID property.
+    GUID = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Type.GUID property.
 
 
 
@@ -1893,8 +1949,10 @@ Get: GUID(self: _Type) -> Guid
 
 """
 
- HasElementType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.HasElementType property.
+    HasElementType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.HasElementType property.
 
 
 
@@ -1904,8 +1962,10 @@ Get: HasElementType(self: _Type) -> bool
 
 """
 
- IsAbstract=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsAbstract property.
+    IsAbstract = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.IsAbstract property.
 
 
 
@@ -1915,8 +1975,10 @@ Get: IsAbstract(self: _Type) -> bool
 
 """
 
- IsAnsiClass=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsAnsiClass property.
+    IsAnsiClass = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.IsAnsiClass property.
 
 
 
@@ -1926,8 +1988,8 @@ Get: IsAnsiClass(self: _Type) -> bool
 
 """
 
- IsArray=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsArray property.
+    IsArray = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Type.IsArray property.
 
 
 
@@ -1937,8 +1999,10 @@ Get: IsArray(self: _Type) -> bool
 
 """
 
- IsAutoClass=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsAutoClass property.
+    IsAutoClass = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.IsAutoClass property.
 
 
 
@@ -1948,8 +2012,10 @@ Get: IsAutoClass(self: _Type) -> bool
 
 """
 
- IsAutoLayout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsAutoLayout property.
+    IsAutoLayout = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.IsAutoLayout property.
 
 
 
@@ -1959,8 +2025,8 @@ Get: IsAutoLayout(self: _Type) -> bool
 
 """
 
- IsByRef=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsByRef property.
+    IsByRef = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Type.IsByRef property.
 
 
 
@@ -1970,8 +2036,8 @@ Get: IsByRef(self: _Type) -> bool
 
 """
 
- IsClass=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsClass property.
+    IsClass = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Type.IsClass property.
 
 
 
@@ -1981,8 +2047,10 @@ Get: IsClass(self: _Type) -> bool
 
 """
 
- IsCOMObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsCOMObject property.
+    IsCOMObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.IsCOMObject property.
 
 
 
@@ -1992,8 +2060,10 @@ Get: IsCOMObject(self: _Type) -> bool
 
 """
 
- IsContextful=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsContextful property.
+    IsContextful = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.IsContextful property.
 
 
 
@@ -2003,8 +2073,8 @@ Get: IsContextful(self: _Type) -> bool
 
 """
 
- IsEnum=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsEnum property.
+    IsEnum = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Type.IsEnum property.
 
 
 
@@ -2014,8 +2084,10 @@ Get: IsEnum(self: _Type) -> bool
 
 """
 
- IsExplicitLayout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsExplicitLayout property.
+    IsExplicitLayout = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.IsExplicitLayout property.
 
 
 
@@ -2025,8 +2097,8 @@ Get: IsExplicitLayout(self: _Type) -> bool
 
 """
 
- IsImport=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsImport property.
+    IsImport = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Type.IsImport property.
 
 
 
@@ -2036,8 +2108,10 @@ Get: IsImport(self: _Type) -> bool
 
 """
 
- IsInterface=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsInterface property.
+    IsInterface = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.IsInterface property.
 
 
 
@@ -2047,8 +2121,10 @@ Get: IsInterface(self: _Type) -> bool
 
 """
 
- IsLayoutSequential=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsLayoutSequential property.
+    IsLayoutSequential = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.IsLayoutSequential property.
 
 
 
@@ -2058,8 +2134,10 @@ Get: IsLayoutSequential(self: _Type) -> bool
 
 """
 
- IsMarshalByRef=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsMarshalByRef property.
+    IsMarshalByRef = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.IsMarshalByRef property.
 
 
 
@@ -2069,8 +2147,10 @@ Get: IsMarshalByRef(self: _Type) -> bool
 
 """
 
- IsNestedAssembly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsNestedAssembly property.
+    IsNestedAssembly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.IsNestedAssembly property.
 
 
 
@@ -2080,8 +2160,10 @@ Get: IsNestedAssembly(self: _Type) -> bool
 
 """
 
- IsNestedFamANDAssem=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsNestedFamANDAssem property.
+    IsNestedFamANDAssem = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.IsNestedFamANDAssem property.
 
 
 
@@ -2091,8 +2173,10 @@ Get: IsNestedFamANDAssem(self: _Type) -> bool
 
 """
 
- IsNestedFamily=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsNestedFamily property.
+    IsNestedFamily = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.IsNestedFamily property.
 
 
 
@@ -2102,8 +2186,10 @@ Get: IsNestedFamily(self: _Type) -> bool
 
 """
 
- IsNestedFamORAssem=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsNestedFamORAssem property.
+    IsNestedFamORAssem = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.IsNestedFamORAssem property.
 
 
 
@@ -2113,8 +2199,10 @@ Get: IsNestedFamORAssem(self: _Type) -> bool
 
 """
 
- IsNestedPrivate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsNestedPrivate property.
+    IsNestedPrivate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.IsNestedPrivate property.
 
 
 
@@ -2124,8 +2212,10 @@ Get: IsNestedPrivate(self: _Type) -> bool
 
 """
 
- IsNestedPublic=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsNestedPublic property.
+    IsNestedPublic = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.IsNestedPublic property.
 
 
 
@@ -2135,8 +2225,10 @@ Get: IsNestedPublic(self: _Type) -> bool
 
 """
 
- IsNotPublic=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsNotPublic property.
+    IsNotPublic = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.IsNotPublic property.
 
 
 
@@ -2146,8 +2238,8 @@ Get: IsNotPublic(self: _Type) -> bool
 
 """
 
- IsPointer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsPointer property.
+    IsPointer = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Type.IsPointer property.
 
 
 
@@ -2157,8 +2249,10 @@ Get: IsPointer(self: _Type) -> bool
 
 """
 
- IsPrimitive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsPrimitive property.
+    IsPrimitive = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.IsPrimitive property.
 
 
 
@@ -2168,8 +2262,8 @@ Get: IsPrimitive(self: _Type) -> bool
 
 """
 
- IsPublic=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsPublic property.
+    IsPublic = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Type.IsPublic property.
 
 
 
@@ -2179,8 +2273,8 @@ Get: IsPublic(self: _Type) -> bool
 
 """
 
- IsSealed=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsSealed property.
+    IsSealed = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Type.IsSealed property.
 
 
 
@@ -2190,8 +2284,10 @@ Get: IsSealed(self: _Type) -> bool
 
 """
 
- IsSerializable=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsSerializable property.
+    IsSerializable = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.IsSerializable property.
 
 
 
@@ -2201,8 +2297,10 @@ Get: IsSerializable(self: _Type) -> bool
 
 """
 
- IsSpecialName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsSpecialName property.
+    IsSpecialName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.IsSpecialName property.
 
 
 
@@ -2212,8 +2310,10 @@ Get: IsSpecialName(self: _Type) -> bool
 
 """
 
- IsUnicodeClass=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsUnicodeClass property.
+    IsUnicodeClass = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.IsUnicodeClass property.
 
 
 
@@ -2223,8 +2323,10 @@ Get: IsUnicodeClass(self: _Type) -> bool
 
 """
 
- IsValueType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.IsValueType property.
+    IsValueType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.IsValueType property.
 
 
 
@@ -2234,8 +2336,10 @@ Get: IsValueType(self: _Type) -> bool
 
 """
 
- MemberType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.MemberType property.
+    MemberType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.MemberType property.
 
 
 
@@ -2245,8 +2349,8 @@ Get: MemberType(self: _Type) -> MemberTypes
 
 """
 
- Module=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.Module property.
+    Module = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Type.Module property.
 
 
 
@@ -2256,8 +2360,8 @@ Get: Module(self: _Type) -> Module
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Reflection.MemberInfo.Name property.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Reflection.MemberInfo.Name property.
 
 
 
@@ -2267,8 +2371,8 @@ Get: Name(self: _Type) -> str
 
 """
 
- Namespace=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.Namespace property.
+    Namespace = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Provides COM objects with version-independent access to the System.Type.Namespace property.
 
 
 
@@ -2278,8 +2382,10 @@ Get: Namespace(self: _Type) -> str
 
 """
 
- ReflectedType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.ReflectedType property.
+    ReflectedType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.ReflectedType property.
 
 
 
@@ -2289,8 +2395,10 @@ Get: ReflectedType(self: _Type) -> Type
 
 """
 
- TypeHandle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.TypeHandle property.
+    TypeHandle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.TypeHandle property.
 
 
 
@@ -2300,8 +2408,10 @@ Get: TypeHandle(self: _Type) -> RuntimeTypeHandle
 
 """
 
- TypeInitializer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.TypeInitializer property.
+    TypeInitializer = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.TypeInitializer property.
 
 
 
@@ -2311,8 +2421,10 @@ Get: TypeInitializer(self: _Type) -> ConstructorInfo
 
 """
 
- UnderlyingSystemType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Provides COM objects with version-independent access to the System.Type.UnderlyingSystemType property.
+    UnderlyingSystemType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Provides COM objects with version-independent access to the System.Type.UnderlyingSystemType property.
 
 
 
@@ -2321,5 +2433,3 @@ Get: UnderlyingSystemType(self: _Type) -> Type
 
 
 """
-
-

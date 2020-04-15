@@ -1,5 +1,5 @@
-class Box(object,IEpsilonComparable[Box]):
- """
+class Box(object, IEpsilonComparable[Box]):
+    """
  Represents the value of a plane and three intervals in
 
     an orthogonal,oriented box that is not necessarily parallel to the world Y,X,Z axes.
@@ -16,8 +16,9 @@ class Box(object,IEpsilonComparable[Box]):
 
  Box(basePlane: Plane,boundingbox: BoundingBox)
  """
- def ClosestPoint(self,point):
-  """
+
+    def ClosestPoint(self, point):
+        """
   ClosestPoint(self: Box,point: Point3d) -> Point3d
 
   
@@ -30,9 +31,10 @@ class Box(object,IEpsilonComparable[Box]):
 
    Returns: The point on or in the box that is closest to the sample point.
   """
-  pass
- def Contains(self,*__args):
-  """
+        pass
+
+    def Contains(self, *__args):
+        """
   Contains(self: Box,box: BoundingBox,strict: bool) -> bool
 
   
@@ -133,18 +135,20 @@ class Box(object,IEpsilonComparable[Box]):
 
    Returns: true if the box is on the inside of or coincident with this Box.
   """
-  pass
- def EpsilonEquals(self,other,epsilon):
-  """
+        pass
+
+    def EpsilonEquals(self, other, epsilon):
+        """
   EpsilonEquals(self: Box,other: Box,epsilon: float) -> bool
 
   
 
    Check that all values in other are within epsilon of the values in this
   """
-  pass
- def FurthestPoint(self,point):
-  """
+        pass
+
+    def FurthestPoint(self, point):
+        """
   FurthestPoint(self: Box,point: Point3d) -> Point3d
 
   
@@ -157,9 +161,10 @@ class Box(object,IEpsilonComparable[Box]):
 
    Returns: The point on the box that is furthest from the sample point.
   """
-  pass
- def GetCorners(self):
-  """
+        pass
+
+    def GetCorners(self):
+        """
   GetCorners(self: Box) -> Array[Point3d]
 
   
@@ -168,9 +173,10 @@ class Box(object,IEpsilonComparable[Box]):
 
    Returns: An array of 8 corners.
   """
-  pass
- def Inflate(self,*__args):
-  """
+        pass
+
+    def Inflate(self, *__args):
+        """
   Inflate(self: Box,xAmount: float,yAmount: float,zAmount: float)
 
    Inflates the box by a given offset in each direction.
@@ -207,9 +213,10 @@ class Box(object,IEpsilonComparable[Box]):
 
    amount: Amount (in model units) to inflate this box in all directions.
   """
-  pass
- def MakeValid(self):
-  """
+        pass
+
+    def MakeValid(self):
+        """
   MakeValid(self: Box) -> bool
 
   
@@ -222,9 +229,10 @@ class Box(object,IEpsilonComparable[Box]):
 
     remains in a differently abled state.
   """
-  pass
- def PointAt(self,x,y,z):
-  """
+        pass
+
+    def PointAt(self, x, y, z):
+        """
   PointAt(self: Box,x: float,y: float,z: float) -> Point3d
 
   
@@ -247,9 +255,10 @@ class Box(object,IEpsilonComparable[Box]):
 
    Returns: The point at (x,y,z).
   """
-  pass
- def RepositionBasePlane(self,origin):
-  """
+        pass
+
+    def RepositionBasePlane(self, origin):
+        """
   RepositionBasePlane(self: Box,origin: Point3d)
 
    Repositions the origin of the Base plane for this box without affecting 
@@ -264,9 +273,10 @@ class Box(object,IEpsilonComparable[Box]):
 
    origin: The new base plane origin.
   """
-  pass
- def ToBrep(self):
-  """
+        pass
+
+    def ToBrep(self):
+        """
   ToBrep(self: Box) -> Brep
 
   
@@ -275,9 +285,10 @@ class Box(object,IEpsilonComparable[Box]):
 
    Returns: A Brep representation of this box or null.
   """
-  pass
- def Transform(self,xform):
-  """
+        pass
+
+    def Transform(self, xform):
+        """
   Transform(self: Box,xform: Transform) -> bool
 
   
@@ -296,9 +307,10 @@ class Box(object,IEpsilonComparable[Box]):
 
    Returns: true if the Box was successfully transformed,false if otherwise.
   """
-  pass
- def Union(self,point):
-  """
+        pass
+
+    def Union(self, point):
+        """
   Union(self: Box,point: Point3d)
 
    Constructs a union between this Box and the given point. 
@@ -313,13 +325,15 @@ class Box(object,IEpsilonComparable[Box]):
 
    point: Point to include.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__[Box]() -> Box
 
   
@@ -334,16 +348,20 @@ class Box(object,IEpsilonComparable[Box]):
 
   __new__(cls: type,basePlane: Plane,boundingbox: BoundingBox)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- Area=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the total surface area of this box.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Area = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the total surface area of this box.
 
 
 
@@ -353,8 +371,10 @@ Get: Area(self: Box) -> float
 
 """
 
- BoundingBox=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the world axis aligned Bounding box for this oriented box.
+    BoundingBox = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the world axis aligned Bounding box for this oriented box.
 
 
 
@@ -364,8 +384,8 @@ Get: BoundingBox(self: Box) -> BoundingBox
 
 """
 
- Center=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the point that is in the center of the box.
+    Center = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the point that is in the center of the box.
 
 
 
@@ -375,8 +395,8 @@ Get: Center(self: Box) -> Point3d
 
 """
 
- IsValid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the validity of this Box. Boxes are invalid when the base plane or any of 
+    IsValid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the validity of this Box. Boxes are invalid when the base plane or any of 
 
    the dimension intervals are invalid or decreasing.
 
@@ -388,8 +408,8 @@ Get: IsValid(self: Box) -> bool
 
 """
 
- Plane=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the orientation plane for this Box.
+    Plane = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the orientation plane for this Box.
 
 
 
@@ -401,8 +421,8 @@ Set: Plane(self: Box)=value
 
 """
 
- Volume=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the total volume of this box.
+    Volume = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the total volume of this box.
 
 
 
@@ -412,8 +432,8 @@ Get: Volume(self: Box) -> float
 
 """
 
- X=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Interval that describes the dimension of the 
+    X = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Interval that describes the dimension of the 
 
    Box along the orientation plane X-Axis. Otherwise known as the Width of the Box.
 
@@ -427,8 +447,8 @@ Set: X(self: Box)=value
 
 """
 
- Y=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Interval that describes the dimension of the 
+    Y = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Interval that describes the dimension of the 
 
    Box along the orientation plane Y-Axis. Otherwise known as the Depth of the Box.
 
@@ -442,8 +462,8 @@ Set: Y(self: Box)=value
 
 """
 
- Z=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Interval that describes the dimension of the 
+    Z = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Interval that describes the dimension of the 
 
    Box along the orientation plane Z-Axis. Otherwise known as the Height of the Box.
 
@@ -457,7 +477,5 @@ Set: Z(self: Box)=value
 
 """
 
-
- Empty=None
- Unset=None
-
+    Empty = None
+    Unset = None

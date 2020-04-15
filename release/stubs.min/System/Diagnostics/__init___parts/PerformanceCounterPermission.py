@@ -1,5 +1,11 @@
-class PerformanceCounterPermission(ResourcePermissionBase,IPermission,ISecurityEncodable,IStackWalk,IUnrestrictedPermission):
- """
+class PerformanceCounterPermission(
+    ResourcePermissionBase,
+    IPermission,
+    ISecurityEncodable,
+    IStackWalk,
+    IUnrestrictedPermission,
+):
+    """
  Allows control of code access permissions for System.Diagnostics.PerformanceCounter.
 
  
@@ -12,8 +18,9 @@ class PerformanceCounterPermission(ResourcePermissionBase,IPermission,ISecurityE
 
  PerformanceCounterPermission(permissionAccessEntries: Array[PerformanceCounterPermissionEntry])
  """
- def AddPermissionAccess(self,*args):
-  """
+
+    def AddPermissionAccess(self, *args):
+        """
   AddPermissionAccess(self: ResourcePermissionBase,entry: ResourcePermissionBaseEntry)
 
    Adds a permission entry to the permission.
@@ -22,16 +29,18 @@ class PerformanceCounterPermission(ResourcePermissionBase,IPermission,ISecurityE
 
    entry: The System.Security.Permissions.ResourcePermissionBaseEntry to add.
   """
-  pass
- def Clear(self,*args):
-  """
+        pass
+
+    def Clear(self, *args):
+        """
   Clear(self: ResourcePermissionBase)
 
    Clears the permission of the added permission entries.
   """
-  pass
- def GetPermissionEntries(self,*args):
-  """
+        pass
+
+    def GetPermissionEntries(self, *args):
+        """
   GetPermissionEntries(self: ResourcePermissionBase) -> Array[ResourcePermissionBaseEntry]
 
   
@@ -46,9 +55,10 @@ class PerformanceCounterPermission(ResourcePermissionBase,IPermission,ISecurityE
 
     this permission.
   """
-  pass
- def RemovePermissionAccess(self,*args):
-  """
+        pass
+
+    def RemovePermissionAccess(self, *args):
+        """
   RemovePermissionAccess(self: ResourcePermissionBase,entry: ResourcePermissionBaseEntry)
 
    Removes a permission entry from the permission.
@@ -57,13 +67,15 @@ class PerformanceCounterPermission(ResourcePermissionBase,IPermission,ISecurityE
 
    entry: The System.Security.Permissions.ResourcePermissionBaseEntry to remove.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,state: PermissionState)
@@ -72,20 +84,27 @@ class PerformanceCounterPermission(ResourcePermissionBase,IPermission,ISecurityE
 
   __new__(cls: type,permissionAccessEntries: Array[PerformanceCounterPermissionEntry])
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- PermissionAccessType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets an enumeration value that describes the types of access that you are giving the resource.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    PermissionAccessType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets an enumeration value that describes the types of access that you are giving the resource.
 
 
 
 """
 
- PermissionEntries=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of permission entries for this permissions request.
+    PermissionEntries = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the collection of permission entries for this permissions request.
 
 
 
@@ -95,11 +114,9 @@ Get: PermissionEntries(self: PerformanceCounterPermission) -> PerformanceCounter
 
 """
 
- TagNames=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets an array of strings that identify the resource you are protecting.
+    TagNames = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets an array of strings that identify the resource you are protecting.
 
 
 
 """
-
-

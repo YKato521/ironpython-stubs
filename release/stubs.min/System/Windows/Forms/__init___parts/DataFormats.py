@@ -1,8 +1,9 @@
 class DataFormats(object):
- """ Provides static,predefined System.Windows.Forms.Clipboard format names. Use them to identify the format of data that you store in an System.Windows.Forms.IDataObject. """
- @staticmethod
- def GetFormat(*__args):
-  """
+    """ Provides static,predefined System.Windows.Forms.Clipboard format names. Use them to identify the format of data that you store in an System.Windows.Forms.IDataObject. """
+
+    @staticmethod
+    def GetFormat(*__args):
+        """
   GetFormat(id: int) -> Format
 
   
@@ -41,27 +42,27 @@ class DataFormats(object):
 
     of the format.
   """
-  pass
- Bitmap='Bitmap'
- CommaSeparatedValue='Csv'
- Dib='DeviceIndependentBitmap'
- Dif='DataInterchangeFormat'
- EnhancedMetafile='EnhancedMetafile'
- FileDrop='FileDrop'
- Format=None
- Html='HTML Format'
- Locale='Locale'
- MetafilePict='MetaFilePict'
- OemText='OEMText'
- Palette='Palette'
- PenData='PenData'
- Riff='RiffAudio'
- Rtf='Rich Text Format'
- Serializable='WindowsForms10PersistentObject'
- StringFormat='System.String'
- SymbolicLink='SymbolicLink'
- Text='Text'
- Tiff='TaggedImageFileFormat'
- UnicodeText='UnicodeText'
- WaveAudio='WaveAudio'
+        pass
 
+    Bitmap = "Bitmap"
+    CommaSeparatedValue = "Csv"
+    Dib = "DeviceIndependentBitmap"
+    Dif = "DataInterchangeFormat"
+    EnhancedMetafile = "EnhancedMetafile"
+    FileDrop = "FileDrop"
+    Format = None
+    Html = "HTML Format"
+    Locale = "Locale"
+    MetafilePict = "MetaFilePict"
+    OemText = "OEMText"
+    Palette = "Palette"
+    PenData = "PenData"
+    Riff = "RiffAudio"
+    Rtf = "Rich Text Format"
+    Serializable = "WindowsForms10PersistentObject"
+    StringFormat = "System.String"
+    SymbolicLink = "SymbolicLink"
+    Text = "Text"
+    Tiff = "TaggedImageFileFormat"
+    UnicodeText = "UnicodeText"
+    WaveAudio = "WaveAudio"

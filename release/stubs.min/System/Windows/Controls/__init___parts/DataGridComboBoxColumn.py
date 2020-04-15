@@ -1,13 +1,14 @@
 class DataGridComboBoxColumn(DataGridColumn):
- """
+    """
  Represents a System.Windows.Controls.DataGrid column that hosts System.Windows.Controls.ComboBox controls in its cells.
 
  
 
  DataGridComboBoxColumn()
  """
- def OnSelectedItemBindingChanged(self,*args):
-  """
+
+    def OnSelectedItemBindingChanged(self, *args):
+        """
   OnSelectedItemBindingChanged(self: DataGridComboBoxColumn,oldBinding: BindingBase,newBinding: BindingBase)
 
    Notifies the System.Windows.Controls.DataGrid when the 
@@ -22,9 +23,10 @@ class DataGridComboBoxColumn(DataGridColumn):
 
    newBinding: The binding that the column has been changed to.
   """
-  pass
- def OnSelectedValueBindingChanged(self,*args):
-  """
+        pass
+
+    def OnSelectedValueBindingChanged(self, *args):
+        """
   OnSelectedValueBindingChanged(self: DataGridComboBoxColumn,oldBinding: BindingBase,newBinding: BindingBase)
 
    Notifies the System.Windows.Controls.DataGrid when the 
@@ -39,9 +41,10 @@ class DataGridComboBoxColumn(DataGridColumn):
 
    newBinding: The binding that the column has been changed to.
   """
-  pass
- def OnTextBindingChanged(self,*args):
-  """
+        pass
+
+    def OnTextBindingChanged(self, *args):
+        """
   OnTextBindingChanged(self: DataGridComboBoxColumn,oldBinding: BindingBase,newBinding: BindingBase)
 
    Notifies the System.Windows.Controls.DataGrid when the 
@@ -56,9 +59,12 @@ class DataGridComboBoxColumn(DataGridColumn):
 
    newBinding: The binding that the column has been changed to.
   """
-  pass
- ClipboardContentBinding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the binding object to use when getting or setting cell content for the clipboard.
+        pass
+
+    ClipboardContentBinding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the binding object to use when getting or setting cell content for the clipboard.
 
 
 
@@ -70,15 +76,19 @@ Set: ClipboardContentBinding(self: DataGridComboBoxColumn)=value
 
 """
 
- DataGridOwner=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Controls.DataGrid control that contains this column.
+    DataGridOwner = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Windows.Controls.DataGrid control that contains this column.
 
 
 
 """
 
- DisplayMemberPath=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a path to a value on the source object to provide the visual representation of the object.
+    DisplayMemberPath = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a path to a value on the source object to provide the visual representation of the object.
 
 
 
@@ -90,8 +100,10 @@ Set: DisplayMemberPath(self: DataGridComboBoxColumn)=value
 
 """
 
- EditingElementStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the style that is used when rendering the element that the column displays for a cell in editing mode.
+    EditingElementStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the style that is used when rendering the element that the column displays for a cell in editing mode.
 
 
 
@@ -103,8 +115,10 @@ Set: EditingElementStyle(self: DataGridComboBoxColumn)=value
 
 """
 
- ElementStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the style that is used when rendering the element that the column displays for a cell that is not in editing mode.
+    ElementStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the style that is used when rendering the element that the column displays for a cell that is not in editing mode.
 
 
 
@@ -116,8 +130,10 @@ Set: ElementStyle(self: DataGridComboBoxColumn)=value
 
 """
 
- ItemsSource=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a collection that is used to generate the content of the combo box control.
+    ItemsSource = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a collection that is used to generate the content of the combo box control.
 
 
 
@@ -129,8 +145,10 @@ Set: ItemsSource(self: DataGridComboBoxColumn)=value
 
 """
 
- SelectedItemBinding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the binding for the currently selected item.
+    SelectedItemBinding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the binding for the currently selected item.
 
 
 
@@ -142,8 +160,10 @@ Set: SelectedItemBinding(self: DataGridComboBoxColumn)=value
 
 """
 
- SelectedValueBinding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the value of the selected item,obtained by using System.Windows.Controls.DataGridComboBoxColumn.SelectedValuePath.
+    SelectedValueBinding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the value of the selected item,obtained by using System.Windows.Controls.DataGridComboBoxColumn.SelectedValuePath.
 
 
 
@@ -155,8 +175,10 @@ Set: SelectedValueBinding(self: DataGridComboBoxColumn)=value
 
 """
 
- SelectedValuePath=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the path that is used to get the System.Windows.Controls.Primitives.Selector.SelectedValue from the System.Windows.Controls.Primitives.Selector.SelectedItem.
+    SelectedValuePath = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the path that is used to get the System.Windows.Controls.Primitives.Selector.SelectedValue from the System.Windows.Controls.Primitives.Selector.SelectedItem.
 
 
 
@@ -168,8 +190,10 @@ Set: SelectedValuePath(self: DataGridComboBoxColumn)=value
 
 """
 
- TextBinding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the binding for the text in the text box portion of the System.Windows.Controls.ComboBox control.
+    TextBinding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the binding for the text in the text box portion of the System.Windows.Controls.ComboBox control.
 
 
 
@@ -181,13 +205,11 @@ Set: TextBinding(self: DataGridComboBoxColumn)=value
 
 """
 
-
- DefaultEditingElementStyle=None
- DefaultElementStyle=None
- DisplayMemberPathProperty=None
- EditingElementStyleProperty=None
- ElementStyleProperty=None
- ItemsSourceProperty=None
- SelectedValuePathProperty=None
- TextBlockComboBoxStyleKey=None
-
+    DefaultEditingElementStyle = None
+    DefaultElementStyle = None
+    DisplayMemberPathProperty = None
+    EditingElementStyleProperty = None
+    ElementStyleProperty = None
+    ItemsSourceProperty = None
+    SelectedValuePathProperty = None
+    TextBlockComboBoxStyleKey = None

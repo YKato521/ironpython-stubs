@@ -1,5 +1,5 @@
-class ComplexBindingPropertiesAttribute(Attribute,_Attribute):
- """
+class ComplexBindingPropertiesAttribute(Attribute, _Attribute):
+    """
  Specifies the data source and data member properties for a component that supports complex data binding. This class cannot be inherited.
 
  
@@ -10,8 +10,9 @@ class ComplexBindingPropertiesAttribute(Attribute,_Attribute):
 
  ComplexBindingPropertiesAttribute(dataSource: str,dataMember: str)
  """
- def Equals(self,obj):
-  """
+
+    def Equals(self, obj):
+        """
   Equals(self: ComplexBindingPropertiesAttribute,obj: object) -> bool
 
   
@@ -34,34 +35,42 @@ class ComplexBindingPropertiesAttribute(Attribute,_Attribute):
 
     equal.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: ComplexBindingPropertiesAttribute) -> int
 
    Returns: A 32-bit signed integer hash code.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,dataSource=None,dataMember=None):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, dataSource=None, dataMember=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,dataSource: str)
 
   __new__(cls: type,dataSource: str,dataMember: str)
   """
-  pass
- def __ne__(self,*args):
-  pass
- DataMember=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name of the data member property for the component to which the System.ComponentModel.ComplexBindingPropertiesAttribute is bound.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    DataMember = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the name of the data member property for the component to which the System.ComponentModel.ComplexBindingPropertiesAttribute is bound.
 
 
 
@@ -71,8 +80,10 @@ Get: DataMember(self: ComplexBindingPropertiesAttribute) -> str
 
 """
 
- DataSource=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name of the data source property for the component to which the System.ComponentModel.ComplexBindingPropertiesAttribute is bound.
+    DataSource = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the name of the data source property for the component to which the System.ComponentModel.ComplexBindingPropertiesAttribute is bound.
 
 
 
@@ -82,6 +93,4 @@ Get: DataSource(self: ComplexBindingPropertiesAttribute) -> str
 
 """
 
-
- Default=None
-
+    Default = None

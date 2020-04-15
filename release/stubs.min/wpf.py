@@ -19,8 +19,9 @@ module()
 
 # functions
 
-def LoadComponent(self,filename): # real signature unknown; restored from __doc__
- """
+
+def LoadComponent(self, filename):  # real signature unknown; restored from __doc__
+    """
  LoadComponent(self: object,filename: str) -> object
 
  
@@ -119,6 +120,7 @@ def LoadComponent(self,filename): # real signature unknown; restored from __doc_
 
    same type as the root of the XAML element.
  """
- return object()
+    return object()
+
 
 # no classes

@@ -8,11 +8,13 @@
 # no functions
 # classes
 
+
 class CursorInteropHelper(object):
- """ Provides a static helper class for WPF/Win32 interoperation with one method,which is used to obtain a Windows Presentation Foundation (WPF)�System.Windows.Input.Cursor object based on a provided Win32 cursor handle. """
- @staticmethod
- def Create(cursorHandle):
-  """
+    """ Provides a static helper class for WPF/Win32 interoperation with one method,which is used to obtain a Windows Presentation Foundation (WPF)�System.Windows.Input.Cursor object based on a provided Win32 cursor handle. """
+
+    @staticmethod
+    def Create(cursorHandle):
+        """
   Create(cursorHandle: SafeHandle) -> Cursor
 
   
@@ -31,14 +33,22 @@ class CursorInteropHelper(object):
 
     handle.
   """
-  pass
- __all__=[
-  'Create',
- ]
+        pass
+
+    __all__ = [
+        "Create",
+    ]
 
 
-class D3DImage(ImageSource,ISealable,IAnimatable,IResource,IFormattable,IAppDomainShutdownListener):
- """
+class D3DImage(
+    ImageSource,
+    ISealable,
+    IAnimatable,
+    IResource,
+    IFormattable,
+    IAppDomainShutdownListener,
+):
+    """
  An System.Windows.Media.ImageSource that displays a user-created Direct3D surface.
 
  
@@ -47,8 +57,9 @@ class D3DImage(ImageSource,ISealable,IAnimatable,IResource,IFormattable,IAppDoma
 
  D3DImage(dpiX: float,dpiY: float)
  """
- def AddDirtyRect(self,dirtyRect):
-  """
+
+    def AddDirtyRect(self, dirtyRect):
+        """
   AddDirtyRect(self: D3DImage,dirtyRect: Int32Rect)
 
    Specifies the area of the back buffer that changed.
@@ -57,9 +68,10 @@ class D3DImage(ImageSource,ISealable,IAnimatable,IResource,IFormattable,IAppDoma
 
    dirtyRect: An System.Windows.Int32Rect that represents the area that changed.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: D3DImage) -> D3DImage
 
   
@@ -76,16 +88,18 @@ class D3DImage(ImageSource,ISealable,IAnimatable,IResource,IFormattable,IAppDoma
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCore(self,*args):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """
   CloneCore(self: D3DImage,sourceFreezable: Freezable)
 
    sourceFreezable: The object to clone.
   """
-  pass
- def CloneCurrentValue(self):
-  """
+        pass
+
+    def CloneCurrentValue(self):
+        """
   CloneCurrentValue(self: D3DImage) -> D3DImage
 
   
@@ -102,16 +116,18 @@ class D3DImage(ImageSource,ISealable,IAnimatable,IResource,IFormattable,IAppDoma
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """
   CloneCurrentValueCore(self: D3DImage,sourceFreezable: Freezable)
 
    sourceFreezable: The System.Windows.Freezable to be cloned.
   """
-  pass
- def CopyBackBuffer(self,*args):
-  """
+        pass
+
+    def CopyBackBuffer(self, *args):
+        """
   CopyBackBuffer(self: D3DImage) -> BitmapSource
 
   
@@ -122,9 +138,10 @@ class D3DImage(ImageSource,ISealable,IAnimatable,IResource,IFormattable,IAppDoma
 
     back buffer; otherwise,null if the back buffer cannot be read.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -133,9 +150,10 @@ class D3DImage(ImageSource,ISealable,IAnimatable,IResource,IFormattable,IAppDoma
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """
   CreateInstanceCore(self: D3DImage) -> Freezable
 
   
@@ -148,9 +166,10 @@ class D3DImage(ImageSource,ISealable,IAnimatable,IResource,IFormattable,IAppDoma
 
    Returns: The new instance.
   """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: D3DImage,isChecking: bool) -> bool
 
   
@@ -167,37 +186,42 @@ class D3DImage(ImageSource,ISealable,IAnimatable,IResource,IFormattable,IAppDoma
 
    Returns: false in all cases.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """
   GetAsFrozenCore(self: D3DImage,sourceFreezable: Freezable)
 
    sourceFreezable: The instance to copy.
   """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """
   GetCurrentValueAsFrozenCore(self: D3DImage,sourceFreezable: Freezable)
 
    sourceFreezable: The System.Windows.Freezable to copy and freeze.
   """
-  pass
- def Lock(self):
-  """
+        pass
+
+    def Lock(self):
+        """
   Lock(self: D3DImage)
 
    Locks the System.Windows.Interop.D3DImage and enables operations on the back buffer.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: Freezable)
 
    Called when the current System.Windows.Freezable object is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -228,9 +252,10 @@ class D3DImage(ImageSource,ISealable,IAnimatable,IResource,IFormattable,IAppDoma
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -247,9 +272,10 @@ class D3DImage(ImageSource,ISealable,IAnimatable,IResource,IFormattable,IAppDoma
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -258,9 +284,10 @@ class D3DImage(ImageSource,ISealable,IAnimatable,IResource,IFormattable,IAppDoma
 
     members that are not dependency properties.
   """
-  pass
- def SetBackBuffer(self,backBufferType,backBuffer,enableSoftwareFallback=None):
-  """
+        pass
+
+    def SetBackBuffer(self, backBufferType, backBuffer, enableSoftwareFallback=None):
+        """
   SetBackBuffer(self: D3DImage,backBufferType: D3DResourceType,backBuffer: IntPtr,enableSoftwareFallback: bool)SetBackBuffer(self: D3DImage,backBufferType: D3DResourceType,backBuffer: IntPtr)
 
    Assigns a Direct3D surface as the source of the back buffer.
@@ -271,9 +298,10 @@ class D3DImage(ImageSource,ISealable,IAnimatable,IResource,IFormattable,IAppDoma
 
    backBuffer: The Direct3D surface to assign as the back buffer.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -290,9 +318,10 @@ class D3DImage(ImageSource,ISealable,IAnimatable,IResource,IFormattable,IAppDoma
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def TryLock(self,timeout):
-  """
+        pass
+
+    def TryLock(self, timeout):
+        """
   TryLock(self: D3DImage,timeout: Duration) -> bool
 
   
@@ -305,16 +334,18 @@ class D3DImage(ImageSource,ISealable,IAnimatable,IResource,IFormattable,IAppDoma
 
    Returns: true if the lock was acquired; otherwise,false.
   """
-  pass
- def Unlock(self):
-  """
+        pass
+
+    def Unlock(self):
+        """
   Unlock(self: D3DImage)
 
    Decrements the lock count for the System.Windows.Interop.D3DImage.
   """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -325,9 +356,10 @@ class D3DImage(ImageSource,ISealable,IAnimatable,IResource,IFormattable,IAppDoma
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -336,25 +368,30 @@ class D3DImage(ImageSource,ISealable,IAnimatable,IResource,IFormattable,IAppDoma
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,dpiX=None,dpiY=None):
-  """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, dpiX=None, dpiY=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,dpiX: float,dpiY: float)
   """
-  pass
- def __str__(self,*args):
-  pass
- Height=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the height of the System.Windows.Interop.D3DImage.
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Height = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the height of the System.Windows.Interop.D3DImage.
 
 
 
@@ -364,8 +401,10 @@ Get: Height(self: D3DImage) -> float
 
 """
 
- IsFrontBufferAvailable=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether a front buffer exists.
+    IsFrontBufferAvailable = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether a front buffer exists.
 
 
 
@@ -375,8 +414,8 @@ Get: IsFrontBufferAvailable(self: D3DImage) -> bool
 
 """
 
- Metadata=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the metadata associated with the image source.
+    Metadata = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the metadata associated with the image source.
 
 
 
@@ -386,8 +425,10 @@ Get: Metadata(self: D3DImage) -> ImageMetadata
 
 """
 
- PixelHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the height of the System.Windows.Interop.D3DImage,in pixels.
+    PixelHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the height of the System.Windows.Interop.D3DImage,in pixels.
 
 
 
@@ -397,8 +438,10 @@ Get: PixelHeight(self: D3DImage) -> int
 
 """
 
- PixelWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the width of the System.Windows.Interop.D3DImage,in pixels.
+    PixelWidth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the width of the System.Windows.Interop.D3DImage,in pixels.
 
 
 
@@ -408,8 +451,8 @@ Get: PixelWidth(self: D3DImage) -> int
 
 """
 
- Width=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the width of the System.Windows.Interop.D3DImage.
+    Width = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the width of the System.Windows.Interop.D3DImage.
 
 
 
@@ -419,53 +462,65 @@ Get: Width(self: D3DImage) -> float
 
 """
 
+    IsFrontBufferAvailableChanged = None
+    IsFrontBufferAvailableProperty = None
 
- IsFrontBufferAvailableChanged=None
- IsFrontBufferAvailableProperty=None
 
-
-class D3DResourceType(Enum,IComparable,IFormattable,IConvertible):
- """
+class D3DResourceType(Enum, IComparable, IFormattable, IConvertible):
+    """
  Specifies the Direct3D surface types that are compatible with the System.Windows.Interop.D3DImage class.
 
  
 
  enum D3DResourceType,values: IDirect3DSurface9 (0)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- IDirect3DSurface9=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    IDirect3DSurface9 = None
+    value__ = None
 
 
 class IWin32Window:
- """ Defines the contract for Win32 window handles. """
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Handle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the window handle.
+    """ Defines the contract for Win32 window handles. """
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Handle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the window handle.
 
 
 
@@ -476,9 +531,8 @@ Get: Handle(self: IWin32Window) -> IntPtr
 """
 
 
-
-class HwndSource(PresentationSource,IDisposable,IWin32Window,IKeyboardInputSink):
- """
+class HwndSource(PresentationSource, IDisposable, IWin32Window, IKeyboardInputSink):
+    """
  Presents Windows Presentation Foundation (WPF) content in a Win32 window.
 
  
@@ -491,8 +545,9 @@ class HwndSource(PresentationSource,IDisposable,IWin32Window,IKeyboardInputSink)
 
  HwndSource(parameters: HwndSourceParameters)
  """
- def AddHook(self,hook):
-  """
+
+    def AddHook(self, hook):
+        """
   AddHook(self: HwndSource,hook: HwndSourceHook)
 
    Adds an event handler that receives all window messages.
@@ -503,27 +558,30 @@ class HwndSource(PresentationSource,IDisposable,IWin32Window,IKeyboardInputSink)
 
     receives the window messages.
   """
-  pass
- def AddSource(self,*args):
-  """
+        pass
+
+    def AddSource(self, *args):
+        """
   AddSource(self: PresentationSource)
 
    Adds a System.Windows.PresentationSource derived class instance to the list of known 
 
     presentation sources.
   """
-  pass
- def ClearContentRenderedListeners(self,*args):
-  """
+        pass
+
+    def ClearContentRenderedListeners(self, *args):
+        """
   ClearContentRenderedListeners(self: PresentationSource)
 
    Sets the list of listeners for the System.Windows.PresentationSource.ContentRendered event to 
 
     null.
   """
-  pass
- def CreateHandleRef(self):
-  """
+        pass
+
+    def CreateHandleRef(self):
+        """
   CreateHandleRef(self: HwndSource) -> HandleRef
 
   
@@ -536,19 +594,21 @@ class HwndSource(PresentationSource,IDisposable,IWin32Window,IKeyboardInputSink)
 
    Returns: A structure that contains the window handle for this System.Windows.Interop.HwndSource.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: HwndSource)
 
    Releases all managed resources that are used by the System.Windows.Interop.HwndSource,and 
 
     raises the System.Windows.Interop.HwndSource.Disposed event.
   """
-  pass
- @staticmethod
- def FromHwnd(hwnd):
-  """
+        pass
+
+    @staticmethod
+    def FromHwnd(hwnd):
+        """
   FromHwnd(hwnd: IntPtr) -> HwndSource
 
   
@@ -563,9 +623,10 @@ class HwndSource(PresentationSource,IDisposable,IWin32Window,IKeyboardInputSink)
 
     handle.
   """
-  pass
- def GetCompositionTargetCore(self,*args):
-  """
+        pass
+
+    def GetCompositionTargetCore(self, *args):
+        """
   GetCompositionTargetCore(self: HwndSource) -> CompositionTarget
 
   
@@ -574,9 +635,10 @@ class HwndSource(PresentationSource,IDisposable,IWin32Window,IKeyboardInputSink)
 
    Returns: Returns the visual target of the window.
   """
-  pass
- def HasFocusWithinCore(self,*args):
-  """
+        pass
+
+    def HasFocusWithinCore(self, *args):
+        """
   HasFocusWithinCore(self: HwndSource) -> bool
 
   
@@ -585,12 +647,14 @@ class HwndSource(PresentationSource,IDisposable,IWin32Window,IKeyboardInputSink)
 
    Returns: true if the sink or one of its contained components has focus; otherwise,false.
   """
-  pass
- def OnDpiChanged(self,*args):
-  """ OnDpiChanged(self: HwndSource,e: HwndDpiChangedEventArgs) """
-  pass
- def OnMnemonicCore(self,*args):
-  """
+        pass
+
+    def OnDpiChanged(self, *args):
+        """ OnDpiChanged(self: HwndSource,e: HwndDpiChangedEventArgs) """
+        pass
+
+    def OnMnemonicCore(self, *args):
+        """
   OnMnemonicCore(self: HwndSource,msg: MSG,modifiers: ModifierKeys) -> (bool,MSG)
 
   
@@ -605,9 +669,10 @@ class HwndSource(PresentationSource,IDisposable,IWin32Window,IKeyboardInputSink)
 
    Returns: true if the message was handled; otherwise,false.
   """
-  pass
- def RegisterKeyboardInputSinkCore(self,*args):
-  """
+        pass
+
+    def RegisterKeyboardInputSinkCore(self, *args):
+        """
   RegisterKeyboardInputSinkCore(self: HwndSource,sink: IKeyboardInputSink) -> IKeyboardInputSite
 
   
@@ -620,9 +685,10 @@ class HwndSource(PresentationSource,IDisposable,IWin32Window,IKeyboardInputSink)
 
    Returns: The System.Windows.Interop.IKeyboardInputSite site of the contained component.
   """
-  pass
- def RemoveHook(self,hook):
-  """
+        pass
+
+    def RemoveHook(self, hook):
+        """
   RemoveHook(self: HwndSource,hook: HwndSourceHook)
 
    Removes the event handlers that were added by 
@@ -635,18 +701,20 @@ class HwndSource(PresentationSource,IDisposable,IWin32Window,IKeyboardInputSink)
 
    hook: The event handler to remove.
   """
-  pass
- def RemoveSource(self,*args):
-  """
+        pass
+
+    def RemoveSource(self, *args):
+        """
   RemoveSource(self: PresentationSource)
 
    Removes a System.Windows.PresentationSource derived class instance from the list of known 
 
     presentation sources.
   """
-  pass
- def RootChanged(self,*args):
-  """
+        pass
+
+    def RootChanged(self, *args):
+        """
   RootChanged(self: PresentationSource,oldRoot: Visual,newRoot: Visual)
 
    Provides notification that the root System.Windows.Media.Visual has changed.
@@ -657,9 +725,10 @@ class HwndSource(PresentationSource,IDisposable,IWin32Window,IKeyboardInputSink)
 
    newRoot: The new root System.Windows.Media.Visual.
   """
-  pass
- def TabIntoCore(self,*args):
-  """
+        pass
+
+    def TabIntoCore(self, *args):
+        """
   TabIntoCore(self: HwndSource,request: TraversalRequest) -> bool
 
   
@@ -672,9 +741,10 @@ class HwndSource(PresentationSource,IDisposable,IWin32Window,IKeyboardInputSink)
 
    Returns: true if the focus has been set as requested; false,if there are no tab stops.
   """
-  pass
- def TranslateAcceleratorCore(self,*args):
-  """
+        pass
+
+    def TranslateAcceleratorCore(self, *args):
+        """
   TranslateAcceleratorCore(self: HwndSource,msg: MSG,modifiers: ModifierKeys) -> (bool,MSG)
 
   
@@ -693,9 +763,10 @@ class HwndSource(PresentationSource,IDisposable,IWin32Window,IKeyboardInputSink)
 
    Returns: true if the message was handled by the method implementation; otherwise,false.
   """
-  pass
- def TranslateCharCore(self,*args):
-  """
+        pass
+
+    def TranslateCharCore(self, *args):
+        """
   TranslateCharCore(self: HwndSource,msg: MSG,modifiers: ModifierKeys) -> (bool,MSG)
 
   
@@ -724,29 +795,33 @@ class HwndSource(PresentationSource,IDisposable,IWin32Window,IKeyboardInputSink)
 
     nput.ModifierKeys) should not be called; otherwise,false.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,classStyle: int,style: int,exStyle: int,x: int,y: int,name: str,parent: IntPtr)
 
   __new__(cls: type,classStyle: int,style: int,exStyle: int,x: int,y: int,width: int,height: int,name: str,parent: IntPtr,adjustSizingForNonClientArea: bool)
@@ -755,9 +830,12 @@ class HwndSource(PresentationSource,IDisposable,IWin32Window,IKeyboardInputSink)
 
   __new__(cls: type,parameters: HwndSourceParameters)
   """
-  pass
- AcquireHwndFocusInMenuMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the value that determines whether to acquire Win32 focus for the WPF containing window for this System.Windows.Interop.HwndSource.
+        pass
+
+    AcquireHwndFocusInMenuMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the value that determines whether to acquire Win32 focus for the WPF containing window for this System.Windows.Interop.HwndSource.
 
 
 
@@ -767,8 +845,10 @@ Get: AcquireHwndFocusInMenuMode(self: HwndSource) -> bool
 
 """
 
- ChildKeyboardInputSinks=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a sequence of registered input sinks.
+    ChildKeyboardInputSinks = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a sequence of registered input sinks.
 
 
 
@@ -778,8 +858,10 @@ Get: ChildKeyboardInputSinks(self: HwndSource) -> IEnumerable[IKeyboardInputSink
 
 """
 
- CompositionTarget=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the visual manager for the hosted window.
+    CompositionTarget = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the visual manager for the hosted window.
 
 
 
@@ -789,8 +871,8 @@ Get: CompositionTarget(self: HwndSource) -> HwndTarget
 
 """
 
- Handle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the window handle for this System.Windows.Interop.HwndSource.
+    Handle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the window handle for this System.Windows.Interop.HwndSource.
 
 
 
@@ -800,8 +882,10 @@ Get: Handle(self: HwndSource) -> IntPtr
 
 """
 
- IsDisposed=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether System.Windows.Interop.HwndSource.Dispose has been called on this System.Windows.Interop.HwndSource.
+    IsDisposed = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether System.Windows.Interop.HwndSource.Dispose has been called on this System.Windows.Interop.HwndSource.
 
 
 
@@ -811,15 +895,19 @@ Get: IsDisposed(self: HwndSource) -> bool
 
 """
 
- KeyboardInputSiteCore=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a reference to the component's container's System.Windows.Interop.IKeyboardInputSite interface.
+    KeyboardInputSiteCore = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a reference to the component's container's System.Windows.Interop.IKeyboardInputSite interface.
 
 
 
 """
 
- RestoreFocusMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Input.RestoreFocusMode for the window.
+    RestoreFocusMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Windows.Input.RestoreFocusMode for the window.
 
 
 
@@ -829,8 +917,10 @@ Get: RestoreFocusMode(self: HwndSource) -> RestoreFocusMode
 
 """
 
- RootVisual=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Windows.Media.CompositionTarget.RootVisual of the window.
+    RootVisual = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Windows.Media.CompositionTarget.RootVisual of the window.
 
 
 
@@ -842,8 +932,10 @@ Set: RootVisual(self: HwndSource)=value
 
 """
 
- SizeToContent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get or sets whether and how the window is sized to its content.
+    SizeToContent = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get or sets whether and how the window is sized to its content.
 
 
 
@@ -855,8 +947,10 @@ Set: SizeToContent(self: HwndSource)=value
 
 """
 
- UsesPerPixelOpacity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that declares whether the per-pixel opacity of the source window content is respected.
+    UsesPerPixelOpacity = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that declares whether the per-pixel opacity of the source window content is respected.
 
 
 
@@ -866,27 +960,28 @@ Get: UsesPerPixelOpacity(self: HwndSource) -> bool
 
 """
 
+    AutoResized = None
+    DefaultAcquireHwndFocusInMenuMode = True
+    Disposed = None
+    DpiChanged = None
+    SizeToContentChanged = None
 
- AutoResized=None
- DefaultAcquireHwndFocusInMenuMode=True
- Disposed=None
- DpiChanged=None
- SizeToContentChanged=None
 
-
-class HwndSourceHook(MulticastDelegate,ICloneable,ISerializable):
- """
+class HwndSourceHook(MulticastDelegate, ICloneable, ISerializable):
+    """
  Represents the method that handles Win32 window messages.
 
  
 
  HwndSourceHook(object: object,method: IntPtr)
  """
- def BeginInvoke(self,hwnd,msg,wParam,lParam,handled,callback,object):
-  """ BeginInvoke(self: HwndSourceHook,hwnd: IntPtr,msg: int,wParam: IntPtr,lParam: IntPtr,handled: bool,callback: AsyncCallback,object: object) -> (IAsyncResult,bool) """
-  pass
- def CombineImpl(self,*args):
-  """
+
+    def BeginInvoke(self, hwnd, msg, wParam, lParam, handled, callback, object):
+        """ BeginInvoke(self: HwndSourceHook,hwnd: IntPtr,msg: int,wParam: IntPtr,lParam: IntPtr,handled: bool,callback: AsyncCallback,object: object) -> (IAsyncResult,bool) """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -899,9 +994,10 @@ class HwndSourceHook(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -920,12 +1016,14 @@ class HwndSourceHook(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,handled,result):
-  """ EndInvoke(self: HwndSourceHook,handled: bool,result: IAsyncResult) -> (IntPtr,bool) """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, handled, result):
+        """ EndInvoke(self: HwndSourceHook,handled: bool,result: IAsyncResult) -> (IntPtr,bool) """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -934,12 +1032,14 @@ class HwndSourceHook(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,hwnd,msg,wParam,lParam,handled):
-  """ Invoke(self: HwndSourceHook,hwnd: IntPtr,msg: int,wParam: IntPtr,lParam: IntPtr,handled: bool) -> (IntPtr,bool) """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, hwnd, msg, wParam, lParam, handled):
+        """ Invoke(self: HwndSourceHook,hwnd: IntPtr,msg: int,wParam: IntPtr,lParam: IntPtr,handled: bool) -> (IntPtr,bool) """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -958,19 +1058,23 @@ class HwndSourceHook(MulticastDelegate,ICloneable,ISerializable):
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
 
 class HwndSourceParameters(object):
- """
+    """
  Contains the parameters that are used to create an System.Windows.Interop.HwndSource object using the System.Windows.Interop.HwndSource.#ctor(System.Windows.Interop.HwndSourceParameters) constructor.
 
  
@@ -979,8 +1083,9 @@ class HwndSourceParameters(object):
 
  HwndSourceParameters(name: str,width: int,height: int)
  """
- def Equals(self,obj):
-  """
+
+    def Equals(self, obj):
+        """
   Equals(self: HwndSourceParameters,obj: HwndSourceParameters) -> bool
 
   
@@ -1009,9 +1114,10 @@ class HwndSourceParameters(object):
 
    Returns: true if the comparison is equal; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: HwndSourceParameters) -> int
 
   
@@ -1020,9 +1126,10 @@ class HwndSourceParameters(object):
 
    Returns: A 32-bit signed integer hash code.
   """
-  pass
- def SetPosition(self,x,y):
-  """
+        pass
+
+    def SetPosition(self, x, y):
+        """
   SetPosition(self: HwndSourceParameters,x: int,y: int)
 
    Sets the values that are used for the screen position of the window for the 
@@ -1037,9 +1144,10 @@ class HwndSourceParameters(object):
 
    y: The position of the upper edge of the window.
   """
-  pass
- def SetSize(self,width,height):
-  """
+        pass
+
+    def SetSize(self, width, height):
+        """
   SetSize(self: HwndSourceParameters,width: int,height: int)
 
    Sets the values that are used for the window size of the System.Windows.Interop.HwndSource.
@@ -1050,24 +1158,30 @@ class HwndSourceParameters(object):
 
    height: The height of the window,in device pixels.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- @staticmethod
- def __new__(self,name,width=None,height=None):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    @staticmethod
+    def __new__(self, name, width=None, height=None):
+        """
   __new__(cls: type,name: str)
 
   __new__(cls: type,name: str,width: int,height: int)
 
   __new__[HwndSourceParameters]() -> HwndSourceParameters
   """
-  pass
- def __ne__(self,*args):
-  pass
- AcquireHwndFocusInMenuMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the value that determines whether to acquire Win32 focus for the WPF containing window when an System.Windows.Interop.HwndSource is created.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    AcquireHwndFocusInMenuMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the value that determines whether to acquire Win32 focus for the WPF containing window when an System.Windows.Interop.HwndSource is created.
 
 
 
@@ -1079,8 +1193,10 @@ Set: AcquireHwndFocusInMenuMode(self: HwndSourceParameters)=value
 
 """
 
- AdjustSizingForNonClientArea=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether to include the nonclient area for sizing.
+    AdjustSizingForNonClientArea = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether to include the nonclient area for sizing.
 
 
 
@@ -1092,8 +1208,10 @@ Set: AdjustSizingForNonClientArea(self: HwndSourceParameters)=value
 
 """
 
- ExtendedWindowStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the extended Microsoft Windows styles for the window.
+    ExtendedWindowStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the extended Microsoft Windows styles for the window.
 
 
 
@@ -1105,8 +1223,10 @@ Set: ExtendedWindowStyle(self: HwndSourceParameters)=value
 
 """
 
- HasAssignedSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether a size was assigned.
+    HasAssignedSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether a size was assigned.
 
 
 
@@ -1116,8 +1236,8 @@ Get: HasAssignedSize(self: HwndSourceParameters) -> bool
 
 """
 
- Height=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates the height of the window.
+    Height = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value that indicates the height of the window.
 
 
 
@@ -1129,8 +1249,10 @@ Set: Height(self: HwndSourceParameters)=value
 
 """
 
- HwndSourceHook=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the message hook for the window.
+    HwndSourceHook = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the message hook for the window.
 
 
 
@@ -1142,8 +1264,10 @@ Set: HwndSourceHook(self: HwndSourceParameters)=value
 
 """
 
- ParentWindow=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the window handle (HWND) of the parent for the created window.
+    ParentWindow = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the window handle (HWND) of the parent for the created window.
 
 
 
@@ -1155,8 +1279,8 @@ Set: ParentWindow(self: HwndSourceParameters)=value
 
 """
 
- PositionX=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the left-edge position of the window.
+    PositionX = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the left-edge position of the window.
 
 
 
@@ -1168,8 +1292,8 @@ Set: PositionX(self: HwndSourceParameters)=value
 
 """
 
- PositionY=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the upper-edge position of the window.
+    PositionY = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the upper-edge position of the window.
 
 
 
@@ -1181,8 +1305,10 @@ Set: PositionY(self: HwndSourceParameters)=value
 
 """
 
- RestoreFocusMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets how WPF handles restoring focus to the window.
+    RestoreFocusMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets how WPF handles restoring focus to the window.
 
 
 
@@ -1194,8 +1320,10 @@ Set: RestoreFocusMode(self: HwndSourceParameters)=value
 
 """
 
- TreatAncestorsAsNonClientArea=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: TreatAncestorsAsNonClientArea(self: HwndSourceParameters) -> bool
+    TreatAncestorsAsNonClientArea = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: TreatAncestorsAsNonClientArea(self: HwndSourceParameters) -> bool
 
 
 
@@ -1203,8 +1331,10 @@ Set: TreatAncestorsAsNonClientArea(self: HwndSourceParameters)=value
 
 """
 
- TreatAsInputRoot=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: TreatAsInputRoot(self: HwndSourceParameters) -> bool
+    TreatAsInputRoot = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: TreatAsInputRoot(self: HwndSourceParameters) -> bool
 
 
 
@@ -1212,8 +1342,10 @@ Set: TreatAsInputRoot(self: HwndSourceParameters)=value
 
 """
 
- UsesPerPixelOpacity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that declares whether the per-pixel opacity of the source window content is respected.
+    UsesPerPixelOpacity = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that declares whether the per-pixel opacity of the source window content is respected.
 
 
 
@@ -1225,8 +1357,10 @@ Set: UsesPerPixelOpacity(self: HwndSourceParameters)=value
 
 """
 
- UsesPerPixelTransparency=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: UsesPerPixelTransparency(self: HwndSourceParameters) -> bool
+    UsesPerPixelTransparency = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: UsesPerPixelTransparency(self: HwndSourceParameters) -> bool
 
 
 
@@ -1234,8 +1368,8 @@ Set: UsesPerPixelTransparency(self: HwndSourceParameters)=value
 
 """
 
- Width=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates the width of the window.
+    Width = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value that indicates the width of the window.
 
 
 
@@ -1247,8 +1381,10 @@ Set: Width(self: HwndSourceParameters)=value
 
 """
 
- WindowClassStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Microsoft Windows class style for the window.
+    WindowClassStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the Microsoft Windows class style for the window.
 
 
 
@@ -1260,8 +1396,10 @@ Set: WindowClassStyle(self: HwndSourceParameters)=value
 
 """
 
- WindowName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the window.
+    WindowName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the window.
 
 
 
@@ -1273,8 +1411,10 @@ Set: WindowName(self: HwndSourceParameters)=value
 
 """
 
- WindowStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the style for the window.
+    WindowStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the style for the window.
 
 
 
@@ -1287,47 +1427,54 @@ Set: WindowStyle(self: HwndSourceParameters)=value
 """
 
 
-
-class HwndTarget(CompositionTarget,IDisposable,ICompositionTarget):
- """
+class HwndTarget(CompositionTarget, IDisposable, ICompositionTarget):
+    """
  Represents a binding to a window handle that supports visual composition.
 
  
 
  HwndTarget(hwnd: IntPtr)
  """
- def Dispose(self):
-  """
+
+    def Dispose(self):
+        """
   Dispose(self: HwndTarget)
 
    Releases all resources used by the System.Windows.Interop.HwndTarget.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,hwnd):
-  """ __new__(cls: type,hwnd: IntPtr) """
-  pass
- BackgroundColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the background color of the window referenced by this System.Windows.Interop.HwndTarget.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, hwnd):
+        """ __new__(cls: type,hwnd: IntPtr) """
+        pass
+
+    BackgroundColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the background color of the window referenced by this System.Windows.Interop.HwndTarget.
 
 
 
@@ -1339,8 +1486,10 @@ Set: BackgroundColor(self: HwndTarget)=value
 
 """
 
- RenderMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the rendering mode for the window referenced by this System.Windows.Interop.HwndTarget.
+    RenderMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the rendering mode for the window referenced by this System.Windows.Interop.HwndTarget.
 
 
 
@@ -1352,8 +1501,10 @@ Set: RenderMode(self: HwndTarget)=value
 
 """
 
- RootVisual=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the root visual object of the page that is hosted by the window.
+    RootVisual = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the root visual object of the page that is hosted by the window.
 
 
 
@@ -1361,8 +1512,10 @@ Set: RootVisual(self: HwndTarget)=value
 
 """
 
- TransformFromDevice=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a matrix that transforms the coordinates of the device that is associated with the rendering destination of this target.
+    TransformFromDevice = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a matrix that transforms the coordinates of the device that is associated with the rendering destination of this target.
 
 
 
@@ -1372,8 +1525,10 @@ Get: TransformFromDevice(self: HwndTarget) -> Matrix
 
 """
 
- TransformToDevice=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a matrix that transforms the coordinates of this target to the device that is associated with the rendering destination.
+    TransformToDevice = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a matrix that transforms the coordinates of this target to the device that is associated with the rendering destination.
 
 
 
@@ -1383,8 +1538,10 @@ Get: TransformToDevice(self: HwndTarget) -> Matrix
 
 """
 
- UsesPerPixelOpacity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that declares whether the per-pixel opacity value of the source window content is used for rendering.
+    UsesPerPixelOpacity = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that declares whether the per-pixel opacity value of the source window content is used for rendering.
 
 
 
@@ -1395,12 +1552,12 @@ Get: UsesPerPixelOpacity(self: HwndTarget) -> bool
 """
 
 
-
 class Imaging(object):
- """ Provides managed to unmanaged interoperation support for creating image objects. """
- @staticmethod
- def CreateBitmapSourceFromHBitmap(bitmap,palette,sourceRect,sizeOptions):
-  """
+    """ Provides managed to unmanaged interoperation support for creating image objects. """
+
+    @staticmethod
+    def CreateBitmapSourceFromHBitmap(bitmap, palette, sourceRect, sizeOptions):
+        """
   CreateBitmapSourceFromHBitmap(bitmap: IntPtr,palette: IntPtr,sourceRect: Int32Rect,sizeOptions: BitmapSizeOptions) -> BitmapSource
 
   
@@ -1423,10 +1580,11 @@ class Imaging(object):
 
    Returns: The created System.Windows.Media.Imaging.BitmapSource.
   """
-  pass
- @staticmethod
- def CreateBitmapSourceFromHIcon(icon,sourceRect,sizeOptions):
-  """
+        pass
+
+    @staticmethod
+    def CreateBitmapSourceFromHIcon(icon, sourceRect, sizeOptions):
+        """
   CreateBitmapSourceFromHIcon(icon: IntPtr,sourceRect: Int32Rect,sizeOptions: BitmapSizeOptions) -> BitmapSource
 
   
@@ -1447,10 +1605,13 @@ class Imaging(object):
 
    Returns: The created System.Windows.Media.Imaging.BitmapSource.
   """
-  pass
- @staticmethod
- def CreateBitmapSourceFromMemorySection(section,pixelWidth,pixelHeight,format,stride,offset):
-  """
+        pass
+
+    @staticmethod
+    def CreateBitmapSourceFromMemorySection(
+        section, pixelWidth, pixelHeight, format, stride, offset
+    ):
+        """
   CreateBitmapSourceFromMemorySection(section: IntPtr,pixelWidth: int,pixelHeight: int,format: PixelFormat,stride: int,offset: int) -> BitmapSource
 
   
@@ -1477,33 +1638,38 @@ class Imaging(object):
 
    Returns: The created System.Windows.Media.Imaging.BitmapSource.
   """
-  pass
- __all__=[
-  'CreateBitmapSourceFromHBitmap',
-  'CreateBitmapSourceFromHIcon',
-  'CreateBitmapSourceFromMemorySection',
- ]
+        pass
+
+    __all__ = [
+        "CreateBitmapSourceFromHBitmap",
+        "CreateBitmapSourceFromHIcon",
+        "CreateBitmapSourceFromMemorySection",
+    ]
 
 
-class InteropBitmap(BitmapSource,ISealable,IAnimatable,IResource,IFormattable):
- """ System.Windows.Interop.InteropBitmap enables developers to improve rendering performance of non-WPF�UIs that are hosted by WPF in interoperability scenarios. """
- def CheckIfSiteOfOrigin(self,*args):
-  """
+class InteropBitmap(BitmapSource, ISealable, IAnimatable, IResource, IFormattable):
+    """ System.Windows.Interop.InteropBitmap enables developers to improve rendering performance of non-WPF�UIs that are hosted by WPF in interoperability scenarios. """
+
+    def CheckIfSiteOfOrigin(self, *args):
+        """
   CheckIfSiteOfOrigin(self: BitmapSource)
 
    Checks whether the bitmap source content is from a known site of origin. This method is used to 
 
     make sure that pixel copying operations are safe.
   """
-  pass
- def CloneCore(self,*args):
-  """ CloneCore(self: InteropBitmap,sourceFreezable: Freezable) """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """ CloneCurrentValueCore(self: InteropBitmap,sourceFreezable: Freezable) """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """ CloneCore(self: InteropBitmap,sourceFreezable: Freezable) """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """ CloneCurrentValueCore(self: InteropBitmap,sourceFreezable: Freezable) """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -1512,12 +1678,14 @@ class InteropBitmap(BitmapSource,ISealable,IAnimatable,IResource,IFormattable):
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """ CreateInstanceCore(self: InteropBitmap) -> Freezable """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """ CreateInstanceCore(self: InteropBitmap) -> Freezable """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: BitmapSource,isChecking: bool) -> bool
 
   
@@ -1538,29 +1706,34 @@ class InteropBitmap(BitmapSource,ISealable,IAnimatable,IResource,IFormattable):
 
     unmodifiable,with the side effect of having begun to change the frozen status of this object.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """ GetAsFrozenCore(self: InteropBitmap,sourceFreezable: Freezable) """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """ GetCurrentValueAsFrozenCore(self: InteropBitmap,sourceFreezable: Freezable) """
-  pass
- def Invalidate(self,dirtyRect=None):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """ GetAsFrozenCore(self: InteropBitmap,sourceFreezable: Freezable) """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """ GetCurrentValueAsFrozenCore(self: InteropBitmap,sourceFreezable: Freezable) """
+        pass
+
+    def Invalidate(self, dirtyRect=None):
+        """
   Invalidate(self: InteropBitmap,dirtyRect: Nullable[Int32Rect])Invalidate(self: InteropBitmap)
 
    Forces the hosted non-WPF�UI to be rendered.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: Freezable)
 
    Called when the current System.Windows.Freezable object is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -1591,9 +1764,10 @@ class InteropBitmap(BitmapSource,ISealable,IAnimatable,IResource,IFormattable):
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -1610,9 +1784,10 @@ class InteropBitmap(BitmapSource,ISealable,IAnimatable,IResource,IFormattable):
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -1621,9 +1796,10 @@ class InteropBitmap(BitmapSource,ISealable,IAnimatable,IResource,IFormattable):
 
     members that are not dependency properties.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -1640,9 +1816,10 @@ class InteropBitmap(BitmapSource,ISealable,IAnimatable,IResource,IFormattable):
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -1653,9 +1830,10 @@ class InteropBitmap(BitmapSource,ISealable,IAnimatable,IResource,IFormattable):
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -1664,49 +1842,62 @@ class InteropBitmap(BitmapSource,ISealable,IAnimatable,IResource,IFormattable):
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
+        pass
 
-class RenderMode(Enum,IComparable,IFormattable,IConvertible):
- """
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+
+class RenderMode(Enum, IComparable, IFormattable, IConvertible):
+    """
  Specifies the rendering preference.
 
  
 
  enum RenderMode,values: Default (0),SoftwareOnly (1)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Default=None
- SoftwareOnly=None
- value__=None
 
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
 
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Default = None
+    SoftwareOnly = None
+    value__ = None

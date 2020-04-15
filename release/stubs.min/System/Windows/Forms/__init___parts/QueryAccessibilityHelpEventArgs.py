@@ -1,5 +1,5 @@
 class QueryAccessibilityHelpEventArgs(EventArgs):
- """
+    """
  Provides data for the System.Windows.Forms.Control.QueryAccessibilityHelp event.
 
  
@@ -8,16 +8,20 @@ class QueryAccessibilityHelpEventArgs(EventArgs):
 
  QueryAccessibilityHelpEventArgs(helpNamespace: str,helpString: str,helpKeyword: str)
  """
- @staticmethod
- def __new__(self,helpNamespace=None,helpString=None,helpKeyword=None):
-  """
+
+    @staticmethod
+    def __new__(self, helpNamespace=None, helpString=None, helpKeyword=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,helpNamespace: str,helpString: str,helpKeyword: str)
   """
-  pass
- HelpKeyword=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Help keyword for the specified control.
+        pass
+
+    HelpKeyword = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the Help keyword for the specified control.
 
 
 
@@ -29,8 +33,10 @@ Set: HelpKeyword(self: QueryAccessibilityHelpEventArgs)=value
 
 """
 
- HelpNamespace=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value specifying the name of the Help file.
+    HelpNamespace = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value specifying the name of the Help file.
 
 
 
@@ -42,8 +48,10 @@ Set: HelpNamespace(self: QueryAccessibilityHelpEventArgs)=value
 
 """
 
- HelpString=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the string defining what Help to get for the System.Windows.Forms.AccessibleObject.
+    HelpString = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the string defining what Help to get for the System.Windows.Forms.AccessibleObject.
 
 
 
@@ -54,5 +62,3 @@ Get: HelpString(self: QueryAccessibilityHelpEventArgs) -> str
 Set: HelpString(self: QueryAccessibilityHelpEventArgs)=value
 
 """
-
-

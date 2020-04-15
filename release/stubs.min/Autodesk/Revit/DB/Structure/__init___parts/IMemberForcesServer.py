@@ -1,7 +1,8 @@
 class IMemberForcesServer(IExternalServer):
- """ Interface for the Member Forces server to implement. """
- def MemberForcesUpdate(self,data):
-  """
+    """ Interface for the Member Forces server to implement. """
+
+    def MemberForcesUpdate(self, data):
+        """
   MemberForcesUpdate(self: IMemberForcesServer,data: MemberForcesServiceData) -> bool
 
   
@@ -18,7 +19,8 @@ class IMemberForcesServer(IExternalServer):
 
    Returns: Indicates whether themember forces parameter server is executed successfully.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

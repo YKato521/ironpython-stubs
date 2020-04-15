@@ -1,7 +1,8 @@
 class UCOMIConnectionPointContainer:
- """ Use System.Runtime.InteropServices.ComTypes.IConnectionPointContainer instead. """
- def EnumConnectionPoints(self,ppEnum):
-  """
+    """ Use System.Runtime.InteropServices.ComTypes.IConnectionPointContainer instead. """
+
+    def EnumConnectionPoints(self, ppEnum):
+        """
   EnumConnectionPoints(self: UCOMIConnectionPointContainer) -> UCOMIEnumConnectionPoints
 
   
@@ -10,9 +11,10 @@ class UCOMIConnectionPointContainer:
 
     connection point per IID.
   """
-  pass
- def FindConnectionPoint(self,riid,ppCP):
-  """
+        pass
+
+    def FindConnectionPoint(self, riid, ppCP):
+        """
   FindConnectionPoint(self: UCOMIConnectionPointContainer,riid: Guid) -> (Guid,UCOMIConnectionPoint)
 
   
@@ -27,7 +29,8 @@ class UCOMIConnectionPointContainer:
 
    riid: A reference to the outgoing interface IID whose connection point is being requested.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

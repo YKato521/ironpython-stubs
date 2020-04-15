@@ -1,8 +1,9 @@
 class Console(object):
- """ Represents the standard input,output,and error streams for console applications. This class cannot be inherited. """
- @staticmethod
- def Beep(frequency=None,duration=None):
-  """
+    """ Represents the standard input,output,and error streams for console applications. This class cannot be inherited. """
+
+    @staticmethod
+    def Beep(frequency=None, duration=None):
+        """
   Beep(frequency: int,duration: int)
 
    Plays the sound of a beep of a specified frequency and duration through the console speaker.
@@ -17,18 +18,30 @@ class Console(object):
 
    Plays the sound of a beep through the console speaker.
   """
-  pass
- @staticmethod
- def Clear():
-  """
+        pass
+
+    @staticmethod
+    def Clear():
+        """
   Clear()
 
    Clears the console buffer and corresponding console window of display information.
   """
-  pass
- @staticmethod
- def MoveBufferArea(sourceLeft,sourceTop,sourceWidth,sourceHeight,targetLeft,targetTop,sourceChar=None,sourceForeColor=None,sourceBackColor=None):
-  """
+        pass
+
+    @staticmethod
+    def MoveBufferArea(
+        sourceLeft,
+        sourceTop,
+        sourceWidth,
+        sourceHeight,
+        targetLeft,
+        targetTop,
+        sourceChar=None,
+        sourceForeColor=None,
+        sourceBackColor=None,
+    ):
+        """
   MoveBufferArea(sourceLeft: int,sourceTop: int,sourceWidth: int,sourceHeight: int,targetLeft: int,targetTop: int,sourceChar: Char,sourceForeColor: ConsoleColor,sourceBackColor: ConsoleColor)
 
    Copies a specified source area of the screen buffer to a specified destination area.
@@ -71,10 +84,11 @@ class Console(object):
 
    targetTop: The topmost row of the destination area.
   """
-  pass
- @staticmethod
- def OpenStandardError(bufferSize=None):
-  """
+        pass
+
+    @staticmethod
+    def OpenStandardError(bufferSize=None):
+        """
   OpenStandardError(bufferSize: int) -> Stream
 
   
@@ -95,10 +109,11 @@ class Console(object):
 
    Returns: The standard error stream.
   """
-  pass
- @staticmethod
- def OpenStandardInput(bufferSize=None):
-  """
+        pass
+
+    @staticmethod
+    def OpenStandardInput(bufferSize=None):
+        """
   OpenStandardInput(bufferSize: int) -> Stream
 
   
@@ -119,10 +134,11 @@ class Console(object):
 
    Returns: The standard input stream.
   """
-  pass
- @staticmethod
- def OpenStandardOutput(bufferSize=None):
-  """
+        pass
+
+    @staticmethod
+    def OpenStandardOutput(bufferSize=None):
+        """
   OpenStandardOutput(bufferSize: int) -> Stream
 
   
@@ -143,10 +159,11 @@ class Console(object):
 
    Returns: The standard output stream.
   """
-  pass
- @staticmethod
- def Read():
-  """
+        pass
+
+    @staticmethod
+    def Read():
+        """
   Read() -> int
 
   
@@ -157,10 +174,11 @@ class Console(object):
 
     characters to be read.
   """
-  pass
- @staticmethod
- def ReadKey(intercept=None):
-  """
+        pass
+
+    @staticmethod
+    def ReadKey(intercept=None):
+        """
   ReadKey(intercept: bool) -> ConsoleKeyInfo
 
   
@@ -207,10 +225,11 @@ class Console(object):
 
     SHIFT,ALT,or CTRL modifier keys was pressed simultaneously with the console key.
   """
-  pass
- @staticmethod
- def ReadLine():
-  """
+        pass
+
+    @staticmethod
+    def ReadLine():
+        """
   ReadLine() -> str
 
   
@@ -219,18 +238,20 @@ class Console(object):
 
    Returns: The next line of characters from the input stream,or null if no more lines are available.
   """
-  pass
- @staticmethod
- def ResetColor():
-  """
+        pass
+
+    @staticmethod
+    def ResetColor():
+        """
   ResetColor()
 
    Sets the foreground and background console colors to their defaults.
   """
-  pass
- @staticmethod
- def SetBufferSize(width,height):
-  """
+        pass
+
+    @staticmethod
+    def SetBufferSize(width, height):
+        """
   SetBufferSize(width: int,height: int)
 
    Sets the height and width of the screen buffer area to the specified values.
@@ -241,10 +262,11 @@ class Console(object):
 
    height: The height of the buffer area measured in rows.
   """
-  pass
- @staticmethod
- def SetCursorPosition(left,top):
-  """
+        pass
+
+    @staticmethod
+    def SetCursorPosition(left, top):
+        """
   SetCursorPosition(left: int,top: int)
 
    Sets the position of the cursor.
@@ -255,10 +277,11 @@ class Console(object):
 
    top: The row position of the cursor.
   """
-  pass
- @staticmethod
- def SetError(newError):
-  """
+        pass
+
+    @staticmethod
+    def SetError(newError):
+        """
   SetError(newError: TextWriter)
 
    Sets the System.Console.Error property to the specified System.IO.TextWriter object.
@@ -267,10 +290,11 @@ class Console(object):
 
    newError: A stream that is the new standard error output.
   """
-  pass
- @staticmethod
- def SetIn(newIn):
-  """
+        pass
+
+    @staticmethod
+    def SetIn(newIn):
+        """
   SetIn(newIn: TextReader)
 
    Sets the System.Console.In property to the specified System.IO.TextReader object.
@@ -279,10 +303,11 @@ class Console(object):
 
    newIn: A stream that is the new standard input.
   """
-  pass
- @staticmethod
- def SetOut(newOut):
-  """
+        pass
+
+    @staticmethod
+    def SetOut(newOut):
+        """
   SetOut(newOut: TextWriter)
 
    Sets the System.Console.Out property to the specified System.IO.TextWriter object.
@@ -291,10 +316,11 @@ class Console(object):
 
    newOut: A stream that is the new standard output.
   """
-  pass
- @staticmethod
- def SetWindowPosition(left,top):
-  """
+        pass
+
+    @staticmethod
+    def SetWindowPosition(left, top):
+        """
   SetWindowPosition(left: int,top: int)
 
    Sets the position of the console window relative to the screen buffer.
@@ -305,10 +331,11 @@ class Console(object):
 
    top: The row position of the upper left corner of the console window.
   """
-  pass
- @staticmethod
- def SetWindowSize(width,height):
-  """
+        pass
+
+    @staticmethod
+    def SetWindowSize(width, height):
+        """
   SetWindowSize(width: int,height: int)
 
    Sets the height and width of the console window to the specified values.
@@ -319,10 +346,11 @@ class Console(object):
 
    height: The height of the console window measured in rows.
   """
-  pass
- @staticmethod
- def Write(*__args):
-  """
+        pass
+
+    @staticmethod
+    def Write(*__args):
+        """
   Write(value: Single)
 
    Writes the text representation of the specified single-precision floating-point value to the 
@@ -541,10 +569,11 @@ class Console(object):
 
    value: The value to write.
   """
-  pass
- @staticmethod
- def WriteLine(*__args):
-  """
+        pass
+
+    @staticmethod
+    def WriteLine(*__args):
+        """
   WriteLine(value: object)
 
    Writes the text representation of the specified object,followed by the current line terminator,
@@ -793,55 +822,55 @@ class Console(object):
 
    value: The value to write.
   """
-  pass
- BackgroundColor=None
- BufferHeight=1000
- BufferWidth=127
- CancelKeyPress=None
- CapsLock=False
- CursorLeft=0
- CursorSize=25
- CursorTop=999
- CursorVisible=True
- Error=None
- ForegroundColor=None
- In=None
- InputEncoding=None
- IsErrorRedirected=False
- IsInputRedirected=False
- IsOutputRedirected=False
- KeyAvailable=False
- LargestWindowHeight=60
- LargestWindowWidth=127
- NumberLock=True
- Out=None
- OutputEncoding=None
- Title='cmd - ipy  -m ironstubs make System --folder=stubs2 --overwrite'
- TreatControlCAsInput=False
- WindowHeight=60
- WindowLeft=0
- WindowTop=940
- WindowWidth=127
- __all__=[
-  'Beep',
-  'CancelKeyPress',
-  'Clear',
-  'MoveBufferArea',
-  'OpenStandardError',
-  'OpenStandardInput',
-  'OpenStandardOutput',
-  'Read',
-  'ReadKey',
-  'ReadLine',
-  'ResetColor',
-  'SetBufferSize',
-  'SetCursorPosition',
-  'SetError',
-  'SetIn',
-  'SetOut',
-  'SetWindowPosition',
-  'SetWindowSize',
-  'Write',
-  'WriteLine',
- ]
+        pass
 
+    BackgroundColor = None
+    BufferHeight = 1000
+    BufferWidth = 127
+    CancelKeyPress = None
+    CapsLock = False
+    CursorLeft = 0
+    CursorSize = 25
+    CursorTop = 999
+    CursorVisible = True
+    Error = None
+    ForegroundColor = None
+    In = None
+    InputEncoding = None
+    IsErrorRedirected = False
+    IsInputRedirected = False
+    IsOutputRedirected = False
+    KeyAvailable = False
+    LargestWindowHeight = 60
+    LargestWindowWidth = 127
+    NumberLock = True
+    Out = None
+    OutputEncoding = None
+    Title = "cmd - ipy  -m ironstubs make System --folder=stubs2 --overwrite"
+    TreatControlCAsInput = False
+    WindowHeight = 60
+    WindowLeft = 0
+    WindowTop = 940
+    WindowWidth = 127
+    __all__ = [
+        "Beep",
+        "CancelKeyPress",
+        "Clear",
+        "MoveBufferArea",
+        "OpenStandardError",
+        "OpenStandardInput",
+        "OpenStandardOutput",
+        "Read",
+        "ReadKey",
+        "ReadLine",
+        "ResetColor",
+        "SetBufferSize",
+        "SetCursorPosition",
+        "SetError",
+        "SetIn",
+        "SetOut",
+        "SetWindowPosition",
+        "SetWindowSize",
+        "Write",
+        "WriteLine",
+    ]

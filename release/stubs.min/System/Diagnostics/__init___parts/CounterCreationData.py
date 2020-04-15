@@ -1,5 +1,5 @@
 class CounterCreationData(object):
- """
+    """
  Defines the counter type,name,and Help string for a custom counter.
 
  
@@ -8,16 +8,20 @@ class CounterCreationData(object):
 
  CounterCreationData()
  """
- @staticmethod
- def __new__(self,counterName=None,counterHelp=None,counterType=None):
-  """
+
+    @staticmethod
+    def __new__(self, counterName=None, counterHelp=None, counterType=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,counterName: str,counterHelp: str,counterType: PerformanceCounterType)
   """
-  pass
- CounterHelp=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the custom counter's description.
+        pass
+
+    CounterHelp = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the custom counter's description.
 
 
 
@@ -29,8 +33,10 @@ Set: CounterHelp(self: CounterCreationData)=value
 
 """
 
- CounterName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the custom counter.
+    CounterName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the custom counter.
 
 
 
@@ -42,8 +48,10 @@ Set: CounterName(self: CounterCreationData)=value
 
 """
 
- CounterType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the performance counter type of the custom counter.
+    CounterType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the performance counter type of the custom counter.
 
 
 
@@ -54,5 +62,3 @@ Get: CounterType(self: CounterCreationData) -> PerformanceCounterType
 Set: CounterType(self: CounterCreationData)=value
 
 """
-
-

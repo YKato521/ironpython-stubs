@@ -1,8 +1,9 @@
 class ModelPathUtils(object):
- """ Utility functions using ModelPaths """
- @staticmethod
- def ConvertModelPathToUserVisiblePath(path):
-  """
+    """ Utility functions using ModelPaths """
+
+    @staticmethod
+    def ConvertModelPathToUserVisiblePath(path):
+        """
   ConvertModelPathToUserVisiblePath(path: ModelPath) -> str
 
   
@@ -15,10 +16,11 @@ class ModelPathUtils(object):
 
    Returns: The path in string form
   """
-  pass
- @staticmethod
- def ConvertUserVisiblePathToModelPath(strPath):
-  """
+        pass
+
+    @staticmethod
+    def ConvertUserVisiblePathToModelPath(strPath):
+        """
   ConvertUserVisiblePathToModelPath(strPath: str) -> ModelPath
 
   
@@ -31,10 +33,11 @@ class ModelPathUtils(object):
 
    Returns: A ModelPath representing either a server or file path.
   """
-  pass
- @staticmethod
- def IsValidUserVisibleFullServerPath(strPath):
-  """
+        pass
+
+    @staticmethod
+    def IsValidUserVisibleFullServerPath(strPath):
+        """
   IsValidUserVisibleFullServerPath(strPath: str) -> bool
 
   
@@ -49,10 +52,10 @@ class ModelPathUtils(object):
 
    Returns: True if the given path is a valid server path,false otherwise.
   """
-  pass
- __all__=[
-  'ConvertModelPathToUserVisiblePath',
-  'ConvertUserVisiblePathToModelPath',
-  'IsValidUserVisibleFullServerPath',
- ]
+        pass
 
+    __all__ = [
+        "ConvertModelPathToUserVisiblePath",
+        "ConvertUserVisiblePathToModelPath",
+        "IsValidUserVisibleFullServerPath",
+    ]

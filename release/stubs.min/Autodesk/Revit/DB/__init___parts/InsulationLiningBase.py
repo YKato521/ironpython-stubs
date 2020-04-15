@@ -1,14 +1,17 @@
-class InsulationLiningBase(MEPCurve,IDisposable):
- """ Acts as the base class for duct insulation,pipe insulation and duct lining elements. """
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- @staticmethod
- def GetInsulationIds(document,elemId):
-  """
+class InsulationLiningBase(MEPCurve, IDisposable):
+    """ Acts as the base class for duct insulation,pipe insulation and duct lining elements. """
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    @staticmethod
+    def GetInsulationIds(document, elemId):
+        """
   GetInsulationIds(document: Document,elemId: ElementId) -> ICollection[ElementId]
 
   
@@ -23,10 +26,11 @@ class InsulationLiningBase(MEPCurve,IDisposable):
 
    Returns: A collection of the ids of the insulation elements.
   """
-  pass
- @staticmethod
- def GetLiningIds(document,elemId):
-  """
+        pass
+
+    @staticmethod
+    def GetLiningIds(document, elemId):
+        """
   GetLiningIds(document: Document,elemId: ElementId) -> ICollection[ElementId]
 
   
@@ -41,10 +45,11 @@ class InsulationLiningBase(MEPCurve,IDisposable):
 
    Returns: A collection of the ids of the lining elements.
   """
-  pass
- @staticmethod
- def IsValidThickness(thickness):
-  """
+        pass
+
+    @staticmethod
+    def IsValidThickness(thickness):
+        """
   IsValidThickness(thickness: float) -> bool
 
   
@@ -61,24 +66,32 @@ class InsulationLiningBase(MEPCurve,IDisposable):
 
    Returns: True if the thickness is valid,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- HostElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the host element for the insulation or lining element.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    HostElementId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The id of the host element for the insulation or lining element.
 
 
 
@@ -88,8 +101,8 @@ Get: HostElementId(self: InsulationLiningBase) -> ElementId
 
 """
 
- Thickness=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Thickness of the insulation or lining element.
+    Thickness = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Thickness of the insulation or lining element.
 
 
 
@@ -100,5 +113,3 @@ Get: Thickness(self: InsulationLiningBase) -> float
 Set: Thickness(self: InsulationLiningBase)=value
 
 """
-
-

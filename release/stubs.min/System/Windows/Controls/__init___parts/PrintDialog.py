@@ -1,13 +1,14 @@
 class PrintDialog(object):
- """
+    """
  Invokes a standard Microsoft Windows print dialog box that configures a System.Printing.PrintTicket and System.Printing.PrintQueue according to user input and then prints a document.
 
  
 
  PrintDialog()
  """
- def PrintDocument(self,documentPaginator,description):
-  """
+
+    def PrintDocument(self, documentPaginator, description):
+        """
   PrintDocument(self: PrintDialog,documentPaginator: DocumentPaginator,description: str)
 
    Prints a System.Windows.Documents.DocumentPaginator object to the System.Printing.PrintQueue 
@@ -24,9 +25,10 @@ class PrintDialog(object):
 
     the printer.
   """
-  pass
- def PrintVisual(self,visual,description):
-  """
+        pass
+
+    def PrintVisual(self, visual, description):
+        """
   PrintVisual(self: PrintDialog,visual: Visual,description: str)
 
    Prints a visual (non-text) object,which is derived from the System.Windows.Media.Visual class,
@@ -43,9 +45,10 @@ class PrintDialog(object):
 
     the printer.
   """
-  pass
- def ShowDialog(self):
-  """
+        pass
+
+    def ShowDialog(self):
+        """
   ShowDialog(self: PrintDialog) -> Nullable[bool]
 
   
@@ -56,9 +59,12 @@ class PrintDialog(object):
 
     box without clicking Print or Cancel.
   """
-  pass
- CurrentPageEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: CurrentPageEnabled(self: PrintDialog) -> bool
+        pass
+
+    CurrentPageEnabled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: CurrentPageEnabled(self: PrintDialog) -> bool
 
 
 
@@ -66,8 +72,8 @@ Set: CurrentPageEnabled(self: PrintDialog)=value
 
 """
 
- MaxPage=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the highest page number that is allowed in page ranges.
+    MaxPage = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the highest page number that is allowed in page ranges.
 
 
 
@@ -79,8 +85,8 @@ Set: MaxPage(self: PrintDialog)=value
 
 """
 
- MinPage=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the lowest page number that is allowed in page ranges.
+    MinPage = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the lowest page number that is allowed in page ranges.
 
 
 
@@ -92,8 +98,8 @@ Set: MinPage(self: PrintDialog)=value
 
 """
 
- PageRange=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the range of pages to print when System.Windows.Controls.PrintDialog.PageRangeSelection is set to System.Windows.Controls.PageRangeSelection.UserPages.
+    PageRange = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the range of pages to print when System.Windows.Controls.PrintDialog.PageRangeSelection is set to System.Windows.Controls.PageRangeSelection.UserPages.
 
 
 
@@ -105,8 +111,10 @@ Set: PageRange(self: PrintDialog)=value
 
 """
 
- PageRangeSelection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Windows.Controls.PageRangeSelection for this instance of System.Windows.Controls.PrintDialog.
+    PageRangeSelection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Windows.Controls.PageRangeSelection for this instance of System.Windows.Controls.PrintDialog.
 
 
 
@@ -118,8 +126,10 @@ Set: PageRangeSelection(self: PrintDialog)=value
 
 """
 
- PrintableAreaHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the height of the printable area of the page.
+    PrintableAreaHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the height of the printable area of the page.
 
 
 
@@ -129,8 +139,10 @@ Get: PrintableAreaHeight(self: PrintDialog) -> float
 
 """
 
- PrintableAreaWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the width of the printable area of the page.
+    PrintableAreaWidth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the width of the printable area of the page.
 
 
 
@@ -140,8 +152,10 @@ Get: PrintableAreaWidth(self: PrintDialog) -> float
 
 """
 
- PrintQueue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a System.Printing.PrintQueue that represents the printer that is selected.
+    PrintQueue = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a System.Printing.PrintQueue that represents the printer that is selected.
 
 
 
@@ -153,8 +167,10 @@ Set: PrintQueue(self: PrintDialog)=value
 
 """
 
- PrintTicket=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Printing.PrintTicket that is used by the System.Windows.Controls.PrintDialog when the user clicks Print for the current print job.
+    PrintTicket = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Printing.PrintTicket that is used by the System.Windows.Controls.PrintDialog when the user clicks Print for the current print job.
 
 
 
@@ -166,8 +182,10 @@ Set: PrintTicket(self: PrintDialog)=value
 
 """
 
- SelectedPagesEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: SelectedPagesEnabled(self: PrintDialog) -> bool
+    SelectedPagesEnabled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: SelectedPagesEnabled(self: PrintDialog) -> bool
 
 
 
@@ -175,8 +193,10 @@ Set: SelectedPagesEnabled(self: PrintDialog)=value
 
 """
 
- UserPageRangeEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether users of the Print dialog box have the option to specify ranges of pages to print.
+    UserPageRangeEnabled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether users of the Print dialog box have the option to specify ranges of pages to print.
 
 
 
@@ -187,5 +207,3 @@ Get: UserPageRangeEnabled(self: PrintDialog) -> bool
 Set: UserPageRangeEnabled(self: PrintDialog)=value
 
 """
-
-

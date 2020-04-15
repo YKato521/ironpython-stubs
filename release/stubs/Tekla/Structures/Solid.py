@@ -8,27 +8,39 @@
 # no functions
 # classes
 
+
 class Edge(object):
     # no doc
     def Clone(self):
         """ Clone(self: Edge) -> object """
         pass
 
-    EndPoint = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: EndPoint(self: Edge) -> Point
-
+    EndPoint = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: EndPoint(self: Edge) -> Point
+
+
+
 """
 
-    StartPoint = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: StartPoint(self: Edge) -> Point
-
+    StartPoint = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: StartPoint(self: Edge) -> Point
+
+
+
 """
 
-    Type = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Type(self: Edge) -> EdgeTypeEnum
-
-"""
+    Type = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Type(self: Edge) -> EdgeTypeEnum
 
+
+
+"""
 
     EdgeTypeEnum = None
 
@@ -39,7 +51,7 @@ class EdgeEnumerator(object):
         """ MoveNext(self: EdgeEnumerator) -> bool """
         pass
 
-    def next(self, *args): #cannot find CLR method
+    def next(self, *args):  # cannot find CLR method
         """ next(self: object) -> object """
         pass
 
@@ -47,15 +59,18 @@ class EdgeEnumerator(object):
         """ Reset(self: EdgeEnumerator) """
         pass
 
-    def __iter__(self, *args): #cannot find CLR method
+    def __iter__(self, *args):  # cannot find CLR method
         """ __iter__(self: IEnumerator) -> object """
         pass
 
-    Current = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Current(self: EdgeEnumerator) -> object
-
-"""
+    Current = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Current(self: EdgeEnumerator) -> object
 
+
+
+"""
 
 
 class Face(object):
@@ -64,16 +79,23 @@ class Face(object):
         """ GetLoopEnumerator(self: Face) -> LoopEnumerator """
         pass
 
-    Normal = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Normal(self: Face) -> Vector
-
+    Normal = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Normal(self: Face) -> Vector
+
+
+
 """
 
-    OriginPartId = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: OriginPartId(self: Face) -> Identifier
-
-"""
+    OriginPartId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: OriginPartId(self: Face) -> Identifier
 
+
+
+"""
 
 
 class FaceEnumerator(object):
@@ -82,7 +104,7 @@ class FaceEnumerator(object):
         """ MoveNext(self: FaceEnumerator) -> bool """
         pass
 
-    def next(self, *args): #cannot find CLR method
+    def next(self, *args):  # cannot find CLR method
         """ next(self: object) -> object """
         pass
 
@@ -90,15 +112,18 @@ class FaceEnumerator(object):
         """ Reset(self: FaceEnumerator) """
         pass
 
-    def __iter__(self, *args): #cannot find CLR method
+    def __iter__(self, *args):  # cannot find CLR method
         """ __iter__(self: IEnumerator) -> object """
         pass
 
-    Current = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Current(self: FaceEnumerator) -> Face
-
-"""
+    Current = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Current(self: FaceEnumerator) -> Face
 
+
+
+"""
 
 
 class ISolid:
@@ -111,20 +136,27 @@ class ISolid:
         """ GetFaceEnumerator(self: ISolid) -> FaceEnumerator """
         pass
 
-    def __init__(self, *args): #cannot find CLR method
+    def __init__(self, *args):  # cannot find CLR method
         """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
         pass
 
-    MaximumPoint = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: MaximumPoint(self: ISolid) -> Point
-
+    MaximumPoint = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: MaximumPoint(self: ISolid) -> Point
+
+
+
 """
 
-    MinimumPoint = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: MinimumPoint(self: ISolid) -> Point
-
-"""
+    MinimumPoint = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: MinimumPoint(self: ISolid) -> Point
 
+
+
+"""
 
 
 class Loop(object):
@@ -140,7 +172,7 @@ class LoopEnumerator(object):
         """ MoveNext(self: LoopEnumerator) -> bool """
         pass
 
-    def next(self, *args): #cannot find CLR method
+    def next(self, *args):  # cannot find CLR method
         """ next(self: object) -> object """
         pass
 
@@ -148,15 +180,18 @@ class LoopEnumerator(object):
         """ Reset(self: LoopEnumerator) """
         pass
 
-    def __iter__(self, *args): #cannot find CLR method
+    def __iter__(self, *args):  # cannot find CLR method
         """ __iter__(self: IEnumerator) -> object """
         pass
 
-    Current = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Current(self: LoopEnumerator) -> Loop
-
-"""
+    Current = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Current(self: LoopEnumerator) -> Loop
 
+
+
+"""
 
 
 class Shell(object):
@@ -176,7 +211,7 @@ class ShellEnumerator(object):
         """ MoveNext(self: ShellEnumerator) -> bool """
         pass
 
-    def next(self, *args): #cannot find CLR method
+    def next(self, *args):  # cannot find CLR method
         """ next(self: object) -> object """
         pass
 
@@ -184,15 +219,18 @@ class ShellEnumerator(object):
         """ Reset(self: ShellEnumerator) """
         pass
 
-    def __iter__(self, *args): #cannot find CLR method
+    def __iter__(self, *args):  # cannot find CLR method
         """ __iter__(self: IEnumerator) -> object """
         pass
 
-    Current = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Current(self: ShellEnumerator) -> object
-
-"""
+    Current = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Current(self: ShellEnumerator) -> object
 
+
+
+"""
 
 
 class VertexEnumerator(object):
@@ -201,7 +239,7 @@ class VertexEnumerator(object):
         """ MoveNext(self: VertexEnumerator) -> bool """
         pass
 
-    def next(self, *args): #cannot find CLR method
+    def next(self, *args):  # cannot find CLR method
         """ next(self: object) -> object """
         pass
 
@@ -209,14 +247,15 @@ class VertexEnumerator(object):
         """ Reset(self: VertexEnumerator) """
         pass
 
-    def __iter__(self, *args): #cannot find CLR method
+    def __iter__(self, *args):  # cannot find CLR method
         """ __iter__(self: IEnumerator) -> object """
         pass
 
-    Current = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Current(self: VertexEnumerator) -> Point
-
+    Current = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Current(self: VertexEnumerator) -> Point
+
+
+
 """
-
-
-

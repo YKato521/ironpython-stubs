@@ -8,69 +8,82 @@
 # no functions
 # classes
 
-class TSplineEdge(Edge,IDisposable,IGraphicItem):
- # no doc
- def ComputeHashCode(self,*args):
-  """ ComputeHashCode(self: DesignScriptEntity) -> int """
-  pass
- def Dispose(self):
-  """ Dispose(self: DesignScriptEntity,disposing: bool) """
-  pass
- def DisposeDisplayable(self,*args):
-  """ DisposeDisplayable(self: DesignScriptEntity) """
-  pass
- def Equals(self,obj):
-  """ Equals(self: DesignScriptEntity,dsentity: DesignScriptEntity) -> bool """
-  pass
- def Info(self):
-  """
+
+class TSplineEdge(Edge, IDisposable, IGraphicItem):
+    # no doc
+    def ComputeHashCode(self, *args):
+        """ ComputeHashCode(self: DesignScriptEntity) -> int """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: DesignScriptEntity,disposing: bool) """
+        pass
+
+    def DisposeDisplayable(self, *args):
+        """ DisposeDisplayable(self: DesignScriptEntity) """
+        pass
+
+    def Equals(self, obj):
+        """ Equals(self: DesignScriptEntity,dsentity: DesignScriptEntity) -> bool """
+        pass
+
+    def Info(self):
+        """
   Info(self: TSplineEdge) -> Dictionary[str,object]
 
   
 
    A bunch of TSEdge properties: uvnFrame and index,whether TSEdge is on Border,is Manifold or not
   """
-  pass
- def ToString(self):
-  """ ToString(self: TSplineEdge) -> str """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def ToString(self):
+        """ ToString(self: TSplineEdge) -> str """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- AdjacentFaces=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: AdjacentFaces(self: TSplineEdge) -> Array[TSplineFace]
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AdjacentFaces = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: AdjacentFaces(self: TSplineEdge) -> Array[TSplineFace]
 
 
 
 """
 
- EndVertex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: EndVertex(self: TSplineEdge) -> TSplineVertex
+    EndVertex = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: EndVertex(self: TSplineEdge) -> TSplineVertex
 
 
 
 """
 
- Index=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Index of the TSEdge
+    Index = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Index of the TSEdge
 
 
 
@@ -80,8 +93,8 @@ Get: Index(self: TSplineEdge) -> int
 
 """
 
- IsBorder=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether the TSEdge is on border
+    IsBorder = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Whether the TSEdge is on border
 
 
 
@@ -91,8 +104,10 @@ Get: IsBorder(self: TSplineEdge) -> bool
 
 """
 
- IsManifold=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether the TSEdge is manifold
+    IsManifold = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether the TSEdge is manifold
 
 
 
@@ -102,15 +117,17 @@ Get: IsManifold(self: TSplineEdge) -> bool
 
 """
 
- StartVertex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: StartVertex(self: TSplineEdge) -> TSplineVertex
+    StartVertex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: StartVertex(self: TSplineEdge) -> TSplineVertex
 
 
 
 """
 
- UVNFrame=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Return UVN Frame of the TSEdge (point on the hull,U vector,V vector and normal)
+    UVNFrame = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Return UVN Frame of the TSEdge (point on the hull,U vector,V vector and normal)
 
 
 
@@ -120,66 +137,75 @@ Get: UVNFrame(self: TSplineEdge) -> TSplineUVNFrame
 
 """
 
+    mConstructor = None
 
- mConstructor=None
 
+class TSplineFace(Face, IDisposable, IGraphicItem):
+    # no doc
+    def ComputeHashCode(self, *args):
+        """ ComputeHashCode(self: DesignScriptEntity) -> int """
+        pass
 
-class TSplineFace(Face,IDisposable,IGraphicItem):
- # no doc
- def ComputeHashCode(self,*args):
-  """ ComputeHashCode(self: DesignScriptEntity) -> int """
-  pass
- def Dispose(self):
-  """ Dispose(self: DesignScriptEntity,disposing: bool) """
-  pass
- def DisposeDisplayable(self,*args):
-  """ DisposeDisplayable(self: DesignScriptEntity) """
-  pass
- def Equals(self,obj):
-  """ Equals(self: DesignScriptEntity,dsentity: DesignScriptEntity) -> bool """
-  pass
- def Info(self):
-  """
+    def Dispose(self):
+        """ Dispose(self: DesignScriptEntity,disposing: bool) """
+        pass
+
+    def DisposeDisplayable(self, *args):
+        """ DisposeDisplayable(self: DesignScriptEntity) """
+        pass
+
+    def Equals(self, obj):
+        """ Equals(self: DesignScriptEntity,dsentity: DesignScriptEntity) -> bool """
+        pass
+
+    def Info(self):
+        """
   Info(self: TSplineFace) -> Dictionary[str,object]
 
   
 
    A bunch of TSplineFace properties: uvnFrame,index,valence and number of sides
   """
-  pass
- def ToString(self):
-  """ ToString(self: TSplineFace) -> str """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def ToString(self):
+        """ ToString(self: TSplineFace) -> str """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- Edges=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Edges(self: TSplineFace) -> Array[TSplineEdge]
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Edges = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Edges(self: TSplineFace) -> Array[TSplineEdge]
 
 
 
 """
 
- Index=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Index of the TSFace
+    Index = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Index of the TSFace
 
 
 
@@ -189,8 +215,8 @@ Get: Index(self: TSplineFace) -> int
 
 """
 
- Sides=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Number of parametric sides on the TSFace
+    Sides = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Number of parametric sides on the TSFace
 
 
 
@@ -200,8 +226,8 @@ Get: Sides(self: TSplineFace) -> int
 
 """
 
- UVNFrame=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Return UVN Frame of the TSplineFace (point on the hull,U vector,V vector and normal)
+    UVNFrame = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Return UVN Frame of the TSplineFace (point on the hull,U vector,V vector and normal)
 
 
 
@@ -211,8 +237,8 @@ Get: UVNFrame(self: TSplineFace) -> TSplineUVNFrame
 
 """
 
- Valence=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Number of edges or vertices on the TSFace
+    Valence = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Number of edges or vertices on the TSFace
 
 
 
@@ -222,77 +248,87 @@ Get: Valence(self: TSplineFace) -> int
 
 """
 
- Vertices=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Vertices(self: TSplineFace) -> Array[TSplineVertex]
+    Vertices = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Vertices(self: TSplineFace) -> Array[TSplineVertex]
 
 
 
 """
 
+    mConstructor = None
 
- mConstructor=None
 
-
-class TSplineInitialSymmetry(DesignScriptEntity,IDisposable,IGraphicItem):
- # no doc
- @staticmethod
- def ByAxial(xAxis,yAxis,zAxis):
-  """
+class TSplineInitialSymmetry(DesignScriptEntity, IDisposable, IGraphicItem):
+    # no doc
+    @staticmethod
+    def ByAxial(xAxis, yAxis, zAxis):
+        """
   ByAxial(xAxis: bool,yAxis: bool,zAxis: bool) -> TSplineInitialSymmetry
 
   
 
    Create an axial TSplineInitialSymmetry with given symmetry axes.
   """
-  pass
- @staticmethod
- def ByRadial(symmetricFaces):
-  """
+        pass
+
+    @staticmethod
+    def ByRadial(symmetricFaces):
+        """
   ByRadial(symmetricFaces: int) -> TSplineInitialSymmetry
 
   
 
    Create a radial TSplineInitialSymmetry with given amount of spans per symmetric segment.
   """
-  pass
- def ComputeHashCode(self,*args):
-  """ ComputeHashCode(self: DesignScriptEntity) -> int """
-  pass
- def Dispose(self):
-  """ Dispose(self: DesignScriptEntity,disposing: bool) """
-  pass
- def DisposeDisplayable(self,*args):
-  """ DisposeDisplayable(self: DesignScriptEntity) """
-  pass
- def Equals(self,obj):
-  """ Equals(self: DesignScriptEntity,dsentity: DesignScriptEntity) -> bool """
-  pass
- def ToString(self):
-  """ ToString(self: TSplineInitialSymmetry) -> str """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def ComputeHashCode(self, *args):
+        """ ComputeHashCode(self: DesignScriptEntity) -> int """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: DesignScriptEntity,disposing: bool) """
+        pass
+
+    def DisposeDisplayable(self, *args):
+        """ DisposeDisplayable(self: DesignScriptEntity) """
+        pass
+
+    def Equals(self, obj):
+        """ Equals(self: DesignScriptEntity,dsentity: DesignScriptEntity) -> bool """
+        pass
+
+    def ToString(self):
+        """ ToString(self: TSplineInitialSymmetry) -> str """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- IsRadial=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether newly created t-spline has radial symmetry.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    IsRadial = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Whether newly created t-spline has radial symmetry.
 
 
 
@@ -302,8 +338,10 @@ Get: IsRadial(self: TSplineInitialSymmetry) -> bool
 
 """
 
- RadialSymmetryFaces=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Number of faces in symmetry segment. Only available if t-spline has radial symmetry.
+    RadialSymmetryFaces = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Number of faces in symmetry segment. Only available if t-spline has radial symmetry.
 
 
 
@@ -313,8 +351,8 @@ Get: RadialSymmetryFaces(self: TSplineInitialSymmetry) -> int
 
 """
 
- XAxis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether newly created t-spline has symmetry on x axis.
+    XAxis = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Whether newly created t-spline has symmetry on x axis.
 
 
 
@@ -324,8 +362,8 @@ Get: XAxis(self: TSplineInitialSymmetry) -> bool
 
 """
 
- YAxis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether newly created t-spline has symmetry on y axis.
+    YAxis = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Whether newly created t-spline has symmetry on y axis.
 
 
 
@@ -335,8 +373,8 @@ Get: YAxis(self: TSplineInitialSymmetry) -> bool
 
 """
 
- ZAxis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether newly created t-spline has symmetry on z axis.
+    ZAxis = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Whether newly created t-spline has symmetry on z axis.
 
 
 
@@ -346,15 +384,14 @@ Get: ZAxis(self: TSplineInitialSymmetry) -> bool
 
 """
 
+    mConstructor = None
 
- mConstructor=None
 
-
-class TSplineReflection(DesignScriptEntity,IDisposable,IGraphicItem):
- # no doc
- @staticmethod
- def ByAxial(plane):
-  """
+class TSplineReflection(DesignScriptEntity, IDisposable, IGraphicItem):
+    # no doc
+    @staticmethod
+    def ByAxial(plane):
+        """
   ByAxial(plane: Plane) -> TSplineReflection
 
   
@@ -367,10 +404,11 @@ class TSplineReflection(DesignScriptEntity,IDisposable,IGraphicItem):
 
    Returns: T-Spline axial reflection
   """
-  pass
- @staticmethod
- def ByRadial(plane,segmentsCount,segmentAngle):
-  """
+        pass
+
+    @staticmethod
+    def ByRadial(plane, segmentsCount, segmentAngle):
+        """
   ByRadial(plane: Plane,segmentsCount: int,segmentAngle: float) -> TSplineReflection
 
   
@@ -395,45 +433,55 @@ class TSplineReflection(DesignScriptEntity,IDisposable,IGraphicItem):
 
    Returns: T-Spline radial reflection
   """
-  pass
- def ComputeHashCode(self,*args):
-  """ ComputeHashCode(self: DesignScriptEntity) -> int """
-  pass
- def Dispose(self):
-  """ Dispose(self: DesignScriptEntity,disposing: bool) """
-  pass
- def DisposeDisplayable(self,*args):
-  """ DisposeDisplayable(self: DesignScriptEntity) """
-  pass
- def Equals(self,obj):
-  """ Equals(self: DesignScriptEntity,dsentity: DesignScriptEntity) -> bool """
-  pass
- def ToString(self):
-  """ ToString(self: TSplineReflection) -> str """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def ComputeHashCode(self, *args):
+        """ ComputeHashCode(self: DesignScriptEntity) -> int """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: DesignScriptEntity,disposing: bool) """
+        pass
+
+    def DisposeDisplayable(self, *args):
+        """ DisposeDisplayable(self: DesignScriptEntity) """
+        pass
+
+    def Equals(self, obj):
+        """ Equals(self: DesignScriptEntity,dsentity: DesignScriptEntity) -> bool """
+        pass
+
+    def ToString(self):
+        """ ToString(self: TSplineReflection) -> str """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- Axis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Axis of the reflection
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Axis = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Axis of the reflection
 
 
 
@@ -443,8 +491,8 @@ Get: Axis(self: TSplineReflection) -> Vector
 
 """
 
- IsRadial=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether the reflection is radial
+    IsRadial = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Whether the reflection is radial
 
 
 
@@ -454,8 +502,8 @@ Get: IsRadial(self: TSplineReflection) -> bool
 
 """
 
- Plane=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Plane of the reflection
+    Plane = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Plane of the reflection
 
 
 
@@ -465,8 +513,10 @@ Get: Plane(self: TSplineReflection) -> Plane
 
 """
 
- SegmentAngle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Angle between each pair of symmetric segments of radial reflection
+    SegmentAngle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Angle between each pair of symmetric segments of radial reflection
 
 
 
@@ -476,8 +526,10 @@ Get: SegmentAngle(self: TSplineReflection) -> float
 
 """
 
- SegmentsCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Number of segments of radial reflection
+    SegmentsCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Number of segments of radial reflection
 
 
 
@@ -487,17 +539,17 @@ Get: SegmentsCount(self: TSplineReflection) -> int
 
 """
 
+    mConstructor = None
 
- mConstructor=None
 
+class TSplineTopology(Topology, IDisposable, IGraphicItem):
+    # no doc
+    def ComputeHashCode(self, *args):
+        """ ComputeHashCode(self: Geometry) -> int """
+        pass
 
-class TSplineTopology(Topology,IDisposable,IGraphicItem):
- # no doc
- def ComputeHashCode(self,*args):
-  """ ComputeHashCode(self: Geometry) -> int """
-  pass
- def DecomposedEdges(self):
-  """
+    def DecomposedEdges(self):
+        """
   DecomposedEdges(self: TSplineTopology) -> Dictionary[str,Array[TSplineEdge]]
 
   
@@ -506,9 +558,10 @@ class TSplineTopology(Topology,IDisposable,IGraphicItem):
 
    Returns: Set of edges
   """
-  pass
- def DecomposedFaces(self):
-  """
+        pass
+
+    def DecomposedFaces(self):
+        """
   DecomposedFaces(self: TSplineTopology) -> Dictionary[str,Array[TSplineFace]]
 
   
@@ -517,9 +570,10 @@ class TSplineTopology(Topology,IDisposable,IGraphicItem):
 
    Returns: Set of faces
   """
-  pass
- def DecomposedVertices(self):
-  """
+        pass
+
+    def DecomposedVertices(self):
+        """
   DecomposedVertices(self: TSplineTopology) -> Dictionary[str,Array[TSplineVertex]]
 
   
@@ -528,15 +582,18 @@ class TSplineTopology(Topology,IDisposable,IGraphicItem):
 
    Returns: Set of vertices
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Geometry,disposing: bool) """
-  pass
- def DisposeDisplayable(self,*args):
-  """ DisposeDisplayable(self: Geometry) """
-  pass
- def EdgeByIndex(self,index):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Geometry,disposing: bool) """
+        pass
+
+    def DisposeDisplayable(self, *args):
+        """ DisposeDisplayable(self: Geometry) """
+        pass
+
+    def EdgeByIndex(self, index):
+        """
   EdgeByIndex(self: TSplineTopology,index: int) -> TSplineEdge
 
   
@@ -549,12 +606,14 @@ class TSplineTopology(Topology,IDisposable,IGraphicItem):
 
    Returns: T-Spline Edge
   """
-  pass
- def Equals(self,obj):
-  """ Equals(self: DesignScriptEntity,dsentity: DesignScriptEntity) -> bool """
-  pass
- def FaceByIndex(self,index):
-  """
+        pass
+
+    def Equals(self, obj):
+        """ Equals(self: DesignScriptEntity,dsentity: DesignScriptEntity) -> bool """
+        pass
+
+    def FaceByIndex(self, index):
+        """
   FaceByIndex(self: TSplineTopology,index: int) -> TSplineFace
 
   
@@ -567,12 +626,14 @@ class TSplineTopology(Topology,IDisposable,IGraphicItem):
 
    Returns: T-Spline Face
   """
-  pass
- def ToString(self):
-  """ ToString(self: TSplineTopology) -> str """
-  pass
- def VertexByIndex(self,index):
-  """
+        pass
+
+    def ToString(self):
+        """ ToString(self: TSplineTopology) -> str """
+        pass
+
+    def VertexByIndex(self, index):
+        """
   VertexByIndex(self: TSplineTopology,index: int) -> TSplineVertex
 
   
@@ -585,30 +646,37 @@ class TSplineTopology(Topology,IDisposable,IGraphicItem):
 
    Returns: T-Spline Vertex
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- BorderEdges=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Border Edges contained in the T-Spline Surface
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    BorderEdges = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Border Edges contained in the T-Spline Surface
 
 
 
@@ -618,8 +686,10 @@ Get: BorderEdges(self: TSplineTopology) -> Array[TSplineEdge]
 
 """
 
- BorderFaces=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Border Faces contained in the T-Spline Surface
+    BorderFaces = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Border Faces contained in the T-Spline Surface
 
 
 
@@ -629,8 +699,10 @@ Get: BorderFaces(self: TSplineTopology) -> Array[TSplineFace]
 
 """
 
- BorderVertices=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Border Vertices contained in the T-Spline Surface
+    BorderVertices = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Border Vertices contained in the T-Spline Surface
 
 
 
@@ -640,15 +712,17 @@ Get: BorderVertices(self: TSplineTopology) -> Array[TSplineVertex]
 
 """
 
- Edges=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Edges(self: TSplineTopology) -> Array[TSplineEdge]
+    Edges = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Edges(self: TSplineTopology) -> Array[TSplineEdge]
 
 
 
 """
 
- EdgesCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Return number of edges in the T-Spline Surface
+    EdgesCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Return number of edges in the T-Spline Surface
 
 
 
@@ -658,15 +732,17 @@ Get: EdgesCount(self: TSplineTopology) -> int
 
 """
 
- Faces=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Faces(self: TSplineTopology) -> Array[TSplineFace]
+    Faces = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Faces(self: TSplineTopology) -> Array[TSplineFace]
 
 
 
 """
 
- FacesCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Return number of faces in the T-Spline Surface
+    FacesCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Return number of faces in the T-Spline Surface
 
 
 
@@ -676,8 +752,10 @@ Get: FacesCount(self: TSplineTopology) -> int
 
 """
 
- InnerEdges=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Inner Edges contained in the T-Spline Surface
+    InnerEdges = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Inner Edges contained in the T-Spline Surface
 
 
 
@@ -687,8 +765,10 @@ Get: InnerEdges(self: TSplineTopology) -> Array[TSplineEdge]
 
 """
 
- InnerFaces=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Inner Faces contained in the T-Spline Surface
+    InnerFaces = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Inner Faces contained in the T-Spline Surface
 
 
 
@@ -698,8 +778,10 @@ Get: InnerFaces(self: TSplineTopology) -> Array[TSplineFace]
 
 """
 
- InnerVertices=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Inner Vertices contained in the T-Spline Surface
+    InnerVertices = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Inner Vertices contained in the T-Spline Surface
 
 
 
@@ -709,8 +791,8 @@ Get: InnerVertices(self: TSplineTopology) -> Array[TSplineVertex]
 
 """
 
- NGonFaces=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """N-Gon Faces contained in the T-Spline Surface
+    NGonFaces = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """N-Gon Faces contained in the T-Spline Surface
 
 
 
@@ -720,8 +802,10 @@ Get: NGonFaces(self: TSplineTopology) -> Array[TSplineFace]
 
 """
 
- NonManifoldEdges=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Non-Manifold Edges contained in the T-Spline Surface
+    NonManifoldEdges = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Non-Manifold Edges contained in the T-Spline Surface
 
 
 
@@ -731,8 +815,10 @@ Get: NonManifoldEdges(self: TSplineTopology) -> Array[TSplineEdge]
 
 """
 
- NonManifoldVertices=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Non-Manifold Vertices contained in the T-Spline Surface
+    NonManifoldVertices = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Non-Manifold Vertices contained in the T-Spline Surface
 
 
 
@@ -742,8 +828,10 @@ Get: NonManifoldVertices(self: TSplineTopology) -> Array[TSplineVertex]
 
 """
 
- RegularFaces=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Regular Faces contained in the T-Spline Surface
+    RegularFaces = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Regular Faces contained in the T-Spline Surface
 
 
 
@@ -753,8 +841,10 @@ Get: RegularFaces(self: TSplineTopology) -> Array[TSplineFace]
 
 """
 
- RegularVertices=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Regular Vertices contained in the T-Spline Surface
+    RegularVertices = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Regular Vertices contained in the T-Spline Surface
 
 
 
@@ -764,8 +854,10 @@ Get: RegularVertices(self: TSplineTopology) -> Array[TSplineVertex]
 
 """
 
- StarPointVertices=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Star-Point Vertices contained in the T-Spline Surface
+    StarPointVertices = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Star-Point Vertices contained in the T-Spline Surface
 
 
 
@@ -775,8 +867,10 @@ Get: StarPointVertices(self: TSplineTopology) -> Array[TSplineVertex]
 
 """
 
- TPointVertices=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """T-Point Vertices contained in the T-Spline Surface
+    TPointVertices = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """T-Point Vertices contained in the T-Spline Surface
 
 
 
@@ -786,15 +880,17 @@ Get: TPointVertices(self: TSplineTopology) -> Array[TSplineVertex]
 
 """
 
- Vertices=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Vertices(self: TSplineTopology) -> Array[TSplineVertex]
+    Vertices = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Vertices(self: TSplineTopology) -> Array[TSplineVertex]
 
 
 
 """
 
- VerticesCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Return number of vertices in the T-Spline Surface
+    VerticesCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Return number of vertices in the T-Spline Surface
 
 
 
@@ -804,41 +900,109 @@ Get: VerticesCount(self: TSplineTopology) -> int
 
 """
 
+    mConstructor = None
 
- mConstructor=None
 
+class TSplineSurface(TSplineTopology, IDisposable, IGraphicItem):
+    # no doc
+    def AddReflections(self, reflections, weldSymmetricPortions, weldTolerance):
+        """ AddReflections(self: TSplineSurface,reflections: IEnumerable[TSplineReflection],weldSymmetricPortions: bool,weldTolerance: float) -> TSplineSurface """
+        pass
 
-class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
- # no doc
- def AddReflections(self,reflections,weldSymmetricPortions,weldTolerance):
-  """ AddReflections(self: TSplineSurface,reflections: IEnumerable[TSplineReflection],weldSymmetricPortions: bool,weldTolerance: float) -> TSplineSurface """
-  pass
- def BevelEdges(self,edges,percentage,segments,keepOnFace,roundness):
-  """ BevelEdges(self: TSplineSurface,edges: IEnumerable[TSplineEdge],percentage: float,segments: int,keepOnFace: bool,roundness: float) -> TSplineSurface """
-  pass
- def BridgeEdgesToEdges(self,firstGroup,secondGroup,followCurves,frameRotations,spansCounts,cleanBorderBridges,keepSubdCreases,firstAlignVertices,secondAlignVertices,flipAlignmentFlags):
-  """ BridgeEdgesToEdges(self: TSplineSurface,firstGroup: IEnumerable[TSplineEdge],secondGroup: IEnumerable[TSplineEdge],followCurves: IEnumerable[Curve],frameRotations: IEnumerable[int],spansCounts: IEnumerable[int],cleanBorderBridges: bool,keepSubdCreases: bool,firstAlignVertices: IEnumerable[TSplineVertex],secondAlignVertices: IEnumerable[TSplineVertex],flipAlignmentFlags: IEnumerable[bool]) -> TSplineSurface """
-  pass
- def BridgeEdgesToFaces(self,firstGroup,secondGroup,followCurves,frameRotations,spansCounts,cleanBorderBridges,keepSubdCreases,firstAlignVertices,secondAlignVertices,flipAlignmentFlags):
-  """ BridgeEdgesToFaces(self: TSplineSurface,firstGroup: IEnumerable[TSplineEdge],secondGroup: IEnumerable[TSplineFace],followCurves: IEnumerable[Curve],frameRotations: IEnumerable[int],spansCounts: IEnumerable[int],cleanBorderBridges: bool,keepSubdCreases: bool,firstAlignVertices: IEnumerable[TSplineVertex],secondAlignVertices: IEnumerable[TSplineVertex],flipAlignmentFlags: IEnumerable[bool]) -> TSplineSurface """
-  pass
- def BridgeFacesToEdges(self,firstGroup,secondGroup,followCurves,frameRotations,spansCounts,cleanBorderBridges,keepSubdCreases,firstAlignVertices,secondAlignVertices,flipAlignmentFlags):
-  """ BridgeFacesToEdges(self: TSplineSurface,firstGroup: IEnumerable[TSplineFace],secondGroup: IEnumerable[TSplineEdge],followCurves: IEnumerable[Curve],frameRotations: IEnumerable[int],spansCounts: IEnumerable[int],cleanBorderBridges: bool,keepSubdCreases: bool,firstAlignVertices: IEnumerable[TSplineVertex],secondAlignVertices: IEnumerable[TSplineVertex],flipAlignmentFlags: IEnumerable[bool]) -> TSplineSurface """
-  pass
- def BridgeFacesToFaces(self,firstGroup,secondGroup,followCurves,frameRotations,spansCounts,cleanBorderBridges,keepSubdCreases,firstAlignVertices,secondAlignVertices,flipAlignmentFlags):
-  """ BridgeFacesToFaces(self: TSplineSurface,firstGroup: IEnumerable[TSplineFace],secondGroup: IEnumerable[TSplineFace],followCurves: IEnumerable[Curve],frameRotations: IEnumerable[int],spansCounts: IEnumerable[int],cleanBorderBridges: bool,keepSubdCreases: bool,firstAlignVertices: IEnumerable[TSplineVertex],secondAlignVertices: IEnumerable[TSplineVertex],flipAlignmentFlags: IEnumerable[bool]) -> TSplineSurface """
-  pass
- @staticmethod
- def BuildFromLines(lines,maxFaceValence,snappingTolerance,creaseOuterVertices,inSmoothMode):
-  """ BuildFromLines(lines: IEnumerable[Curve],maxFaceValence: int,snappingTolerance: float,creaseOuterVertices: bool,inSmoothMode: bool) -> TSplineSurface """
-  pass
- @staticmethod
- def BuildPipes(curves,defaultRadius,snappingTolerance,segmentsCount,endRotations,endRadii,endPercentage,inSmoothMode):
-  """ BuildPipes(curves: IEnumerable[Curve],defaultRadius: float,snappingTolerance: float,segmentsCount: IEnumerable[int],endRotations: IEnumerable[float],endRadii: IEnumerable[float],endPercentage: IEnumerable[float],inSmoothMode: bool) -> TSplineSurface """
-  pass
- @staticmethod
- def ByBoxCorners(lowPoint,highPoint,xSpans,ySpans,zSpans,symmetry,inSmoothMode):
-  """
+    def BevelEdges(self, edges, percentage, segments, keepOnFace, roundness):
+        """ BevelEdges(self: TSplineSurface,edges: IEnumerable[TSplineEdge],percentage: float,segments: int,keepOnFace: bool,roundness: float) -> TSplineSurface """
+        pass
+
+    def BridgeEdgesToEdges(
+        self,
+        firstGroup,
+        secondGroup,
+        followCurves,
+        frameRotations,
+        spansCounts,
+        cleanBorderBridges,
+        keepSubdCreases,
+        firstAlignVertices,
+        secondAlignVertices,
+        flipAlignmentFlags,
+    ):
+        """ BridgeEdgesToEdges(self: TSplineSurface,firstGroup: IEnumerable[TSplineEdge],secondGroup: IEnumerable[TSplineEdge],followCurves: IEnumerable[Curve],frameRotations: IEnumerable[int],spansCounts: IEnumerable[int],cleanBorderBridges: bool,keepSubdCreases: bool,firstAlignVertices: IEnumerable[TSplineVertex],secondAlignVertices: IEnumerable[TSplineVertex],flipAlignmentFlags: IEnumerable[bool]) -> TSplineSurface """
+        pass
+
+    def BridgeEdgesToFaces(
+        self,
+        firstGroup,
+        secondGroup,
+        followCurves,
+        frameRotations,
+        spansCounts,
+        cleanBorderBridges,
+        keepSubdCreases,
+        firstAlignVertices,
+        secondAlignVertices,
+        flipAlignmentFlags,
+    ):
+        """ BridgeEdgesToFaces(self: TSplineSurface,firstGroup: IEnumerable[TSplineEdge],secondGroup: IEnumerable[TSplineFace],followCurves: IEnumerable[Curve],frameRotations: IEnumerable[int],spansCounts: IEnumerable[int],cleanBorderBridges: bool,keepSubdCreases: bool,firstAlignVertices: IEnumerable[TSplineVertex],secondAlignVertices: IEnumerable[TSplineVertex],flipAlignmentFlags: IEnumerable[bool]) -> TSplineSurface """
+        pass
+
+    def BridgeFacesToEdges(
+        self,
+        firstGroup,
+        secondGroup,
+        followCurves,
+        frameRotations,
+        spansCounts,
+        cleanBorderBridges,
+        keepSubdCreases,
+        firstAlignVertices,
+        secondAlignVertices,
+        flipAlignmentFlags,
+    ):
+        """ BridgeFacesToEdges(self: TSplineSurface,firstGroup: IEnumerable[TSplineFace],secondGroup: IEnumerable[TSplineEdge],followCurves: IEnumerable[Curve],frameRotations: IEnumerable[int],spansCounts: IEnumerable[int],cleanBorderBridges: bool,keepSubdCreases: bool,firstAlignVertices: IEnumerable[TSplineVertex],secondAlignVertices: IEnumerable[TSplineVertex],flipAlignmentFlags: IEnumerable[bool]) -> TSplineSurface """
+        pass
+
+    def BridgeFacesToFaces(
+        self,
+        firstGroup,
+        secondGroup,
+        followCurves,
+        frameRotations,
+        spansCounts,
+        cleanBorderBridges,
+        keepSubdCreases,
+        firstAlignVertices,
+        secondAlignVertices,
+        flipAlignmentFlags,
+    ):
+        """ BridgeFacesToFaces(self: TSplineSurface,firstGroup: IEnumerable[TSplineFace],secondGroup: IEnumerable[TSplineFace],followCurves: IEnumerable[Curve],frameRotations: IEnumerable[int],spansCounts: IEnumerable[int],cleanBorderBridges: bool,keepSubdCreases: bool,firstAlignVertices: IEnumerable[TSplineVertex],secondAlignVertices: IEnumerable[TSplineVertex],flipAlignmentFlags: IEnumerable[bool]) -> TSplineSurface """
+        pass
+
+    @staticmethod
+    def BuildFromLines(
+        lines, maxFaceValence, snappingTolerance, creaseOuterVertices, inSmoothMode
+    ):
+        """ BuildFromLines(lines: IEnumerable[Curve],maxFaceValence: int,snappingTolerance: float,creaseOuterVertices: bool,inSmoothMode: bool) -> TSplineSurface """
+        pass
+
+    @staticmethod
+    def BuildPipes(
+        curves,
+        defaultRadius,
+        snappingTolerance,
+        segmentsCount,
+        endRotations,
+        endRadii,
+        endPercentage,
+        inSmoothMode,
+    ):
+        """ BuildPipes(curves: IEnumerable[Curve],defaultRadius: float,snappingTolerance: float,segmentsCount: IEnumerable[int],endRotations: IEnumerable[float],endRadii: IEnumerable[float],endPercentage: IEnumerable[float],inSmoothMode: bool) -> TSplineSurface """
+        pass
+
+    @staticmethod
+    def ByBoxCorners(
+        lowPoint, highPoint, xSpans, ySpans, zSpans, symmetry, inSmoothMode
+    ):
+        """
   ByBoxCorners(lowPoint: Point,highPoint: Point,xSpans: int,ySpans: int,zSpans: int,symmetry: TSplineInitialSymmetry,inSmoothMode: bool) -> TSplineSurface
 
   
@@ -863,10 +1027,11 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: T-Spline Cuboid
   """
-  pass
- @staticmethod
- def ByBoxLengths(*__args):
-  """
+        pass
+
+    @staticmethod
+    def ByBoxLengths(*__args):
+        """
   ByBoxLengths(cs: CoordinateSystem,width: float,length: float,height: float,xSpans: int,ySpans: int,zSpans: int,symmetry: TSplineInitialSymmetry,inSmoothMode: bool) -> TSplineSurface
 
   
@@ -953,14 +1118,25 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: T-Spline Cuboid
   """
-  pass
- @staticmethod
- def ByCombinedTSplineSurfaces(tSplineSurfaces):
-  """ ByCombinedTSplineSurfaces(tSplineSurfaces: IEnumerable[TSplineSurface]) -> TSplineSurface """
-  pass
- @staticmethod
- def ByConeCoordinateSystemHeightRadii(cs,height,startRadius,endRadius,radiusSpans,heightSpans,symmetry,inSmoothMode):
-  """
+        pass
+
+    @staticmethod
+    def ByCombinedTSplineSurfaces(tSplineSurfaces):
+        """ ByCombinedTSplineSurfaces(tSplineSurfaces: IEnumerable[TSplineSurface]) -> TSplineSurface """
+        pass
+
+    @staticmethod
+    def ByConeCoordinateSystemHeightRadii(
+        cs,
+        height,
+        startRadius,
+        endRadius,
+        radiusSpans,
+        heightSpans,
+        symmetry,
+        inSmoothMode,
+    ):
+        """
   ByConeCoordinateSystemHeightRadii(cs: CoordinateSystem,height: float,startRadius: float,endRadius: float,radiusSpans: int,heightSpans: int,symmetry: TSplineInitialSymmetry,inSmoothMode: bool) -> TSplineSurface
 
   
@@ -995,10 +1171,13 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: Conical T-Spline Surface
   """
-  pass
- @staticmethod
- def ByConeCoordinateSystemHeightRadius(cs,height,radius,radiusSpans,heightSpans,symmetry,inSmoothMode):
-  """
+        pass
+
+    @staticmethod
+    def ByConeCoordinateSystemHeightRadius(
+        cs, height, radius, radiusSpans, heightSpans, symmetry, inSmoothMode
+    ):
+        """
   ByConeCoordinateSystemHeightRadius(cs: CoordinateSystem,height: float,radius: float,radiusSpans: int,heightSpans: int,symmetry: TSplineInitialSymmetry,inSmoothMode: bool) -> TSplineSurface
 
   
@@ -1031,10 +1210,20 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: Conical T-Spline Surface
   """
-  pass
- @staticmethod
- def ByConePointsRadii(startPoint,endPoint,startRadius,endRadius,radiusSpans,heightSpans,symmetry,inSmoothMode):
-  """
+        pass
+
+    @staticmethod
+    def ByConePointsRadii(
+        startPoint,
+        endPoint,
+        startRadius,
+        endRadius,
+        radiusSpans,
+        heightSpans,
+        symmetry,
+        inSmoothMode,
+    ):
+        """
   ByConePointsRadii(startPoint: Point,endPoint: Point,startRadius: float,endRadius: float,radiusSpans: int,heightSpans: int,symmetry: TSplineInitialSymmetry,inSmoothMode: bool) -> TSplineSurface
 
   
@@ -1067,10 +1256,13 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: Conical T-Spline Surface
   """
-  pass
- @staticmethod
- def ByConePointsRadius(startPoint,endPoint,radius,radiusSpans,heightSpans,symmetry,inSmoothMode):
-  """
+        pass
+
+    @staticmethod
+    def ByConePointsRadius(
+        startPoint, endPoint, radius, radiusSpans, heightSpans, symmetry, inSmoothMode
+    ):
+        """
   ByConePointsRadius(startPoint: Point,endPoint: Point,radius: float,radiusSpans: int,heightSpans: int,symmetry: TSplineInitialSymmetry,inSmoothMode: bool) -> TSplineSurface
 
   
@@ -1101,10 +1293,13 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: Conical T-Spline Surface
   """
-  pass
- @staticmethod
- def ByCylinderPointsRadius(startPoint,endPoint,radius,radiusSpans,heightSpans,symmetry,inSmoothMode):
-  """
+        pass
+
+    @staticmethod
+    def ByCylinderPointsRadius(
+        startPoint, endPoint, radius, radiusSpans, heightSpans, symmetry, inSmoothMode
+    ):
+        """
   ByCylinderPointsRadius(startPoint: Point,endPoint: Point,radius: float,radiusSpans: int,heightSpans: int,symmetry: TSplineInitialSymmetry,inSmoothMode: bool) -> TSplineSurface
 
   
@@ -1129,10 +1324,13 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: Cylindric T-Spline Surface
   """
-  pass
- @staticmethod
- def ByCylinderRadiusHeight(cs,radius,height,radiusSpans,heightSpans,symmetry,inSmoothMode):
-  """
+        pass
+
+    @staticmethod
+    def ByCylinderRadiusHeight(
+        cs, radius, height, radiusSpans, heightSpans, symmetry, inSmoothMode
+    ):
+        """
   ByCylinderRadiusHeight(cs: CoordinateSystem,radius: float,height: float,radiusSpans: int,heightSpans: int,symmetry: TSplineInitialSymmetry,inSmoothMode: bool) -> TSplineSurface
 
   
@@ -1161,14 +1359,26 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: Cylindric T-Spline Surface
   """
-  pass
- @staticmethod
- def ByExtrude(curve,direction,frontDistance,backDistance,frontSpans,backSpans,profileSpans,uniform,inSmoothMode):
-  """ ByExtrude(curve: Curve,direction: Vector,frontDistance: float,backDistance: float,frontSpans: int,backSpans: int,profileSpans: int,uniform: bool,inSmoothMode: bool) -> TSplineSurface """
-  pass
- @staticmethod
- def ByNurbsSurfaceCurvature(nurbsSurface,inSmoothMode):
-  """
+        pass
+
+    @staticmethod
+    def ByExtrude(
+        curve,
+        direction,
+        frontDistance,
+        backDistance,
+        frontSpans,
+        backSpans,
+        profileSpans,
+        uniform,
+        inSmoothMode,
+    ):
+        """ ByExtrude(curve: Curve,direction: Vector,frontDistance: float,backDistance: float,frontSpans: int,backSpans: int,profileSpans: int,uniform: bool,inSmoothMode: bool) -> TSplineSurface """
+        pass
+
+    @staticmethod
+    def ByNurbsSurfaceCurvature(nurbsSurface, inSmoothMode):
+        """
   ByNurbsSurfaceCurvature(nurbsSurface: NurbsSurface,inSmoothMode: bool) -> TSplineSurface
 
   
@@ -1191,10 +1401,13 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    inSmoothMode: Show T-Spline Surface in box or smooth visualization
   """
-  pass
- @staticmethod
- def ByNurbsSurfaceUniform(nurbsSurface,uSpans,vSpans,uUseArcLen,vUseArcLen,inSmoothMode):
-  """
+        pass
+
+    @staticmethod
+    def ByNurbsSurfaceUniform(
+        nurbsSurface, uSpans, vSpans, uUseArcLen, vUseArcLen, inSmoothMode
+    ):
+        """
   ByNurbsSurfaceUniform(nurbsSurface: NurbsSurface,uSpans: int,vSpans: int,uUseArcLen: bool,vUseArcLen: bool,inSmoothMode: bool) -> TSplineSurface
 
   
@@ -1233,14 +1446,20 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    inSmoothMode: Show T-Spline Surface in box or smooth visualization
   """
-  pass
- @staticmethod
- def ByPlaneBestFitThroughPoints(points,minCorner,maxCorner,xSpans,ySpans,symmetry,inSmoothMode):
-  """ ByPlaneBestFitThroughPoints(points: IEnumerable[Point],minCorner: Point,maxCorner: Point,xSpans: int,ySpans: int,symmetry: TSplineInitialSymmetry,inSmoothMode: bool) -> TSplineSurface """
-  pass
- @staticmethod
- def ByPlaneLineAndPoint(line,point,minCorner,maxCorner,xSpans,ySpans,symmetry,inSmoothMode):
-  """
+        pass
+
+    @staticmethod
+    def ByPlaneBestFitThroughPoints(
+        points, minCorner, maxCorner, xSpans, ySpans, symmetry, inSmoothMode
+    ):
+        """ ByPlaneBestFitThroughPoints(points: IEnumerable[Point],minCorner: Point,maxCorner: Point,xSpans: int,ySpans: int,symmetry: TSplineInitialSymmetry,inSmoothMode: bool) -> TSplineSurface """
+        pass
+
+    @staticmethod
+    def ByPlaneLineAndPoint(
+        line, point, minCorner, maxCorner, xSpans, ySpans, symmetry, inSmoothMode
+    ):
+        """
   ByPlaneLineAndPoint(line: Line,point: Point,minCorner: Point,maxCorner: Point,xSpans: int,ySpans: int,symmetry: TSplineInitialSymmetry,inSmoothMode: bool) -> TSplineSurface
 
   
@@ -1271,10 +1490,13 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: Plane T-Spline Surface
   """
-  pass
- @staticmethod
- def ByPlaneOriginNormal(origin,normal,minCorner,maxCorner,xSpans,ySpans,symmetry,inSmoothMode):
-  """
+        pass
+
+    @staticmethod
+    def ByPlaneOriginNormal(
+        origin, normal, minCorner, maxCorner, xSpans, ySpans, symmetry, inSmoothMode
+    ):
+        """
   ByPlaneOriginNormal(origin: Point,normal: Vector,minCorner: Point,maxCorner: Point,xSpans: int,ySpans: int,symmetry: TSplineInitialSymmetry,inSmoothMode: bool) -> TSplineSurface
 
   
@@ -1301,10 +1523,21 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: Plane T-Spline Surface
   """
-  pass
- @staticmethod
- def ByPlaneOriginNormalXAxis(origin,normal,xAxis,minCorner,maxCorner,xSpans,ySpans,symmetry,inSmoothMode):
-  """
+        pass
+
+    @staticmethod
+    def ByPlaneOriginNormalXAxis(
+        origin,
+        normal,
+        xAxis,
+        minCorner,
+        maxCorner,
+        xSpans,
+        ySpans,
+        symmetry,
+        inSmoothMode,
+    ):
+        """
   ByPlaneOriginNormalXAxis(origin: Point,normal: Vector,xAxis: Vector,minCorner: Point,maxCorner: Point,xSpans: int,ySpans: int,symmetry: TSplineInitialSymmetry,inSmoothMode: bool) -> TSplineSurface
 
   
@@ -1341,10 +1574,21 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: Plane T-Spline Surface
   """
-  pass
- @staticmethod
- def ByPlaneOriginXAxisYAxis(origin,xAxis,yAxis,minCorner,maxCorner,xSpans,ySpans,symmetry,inSmoothMode):
-  """
+        pass
+
+    @staticmethod
+    def ByPlaneOriginXAxisYAxis(
+        origin,
+        xAxis,
+        yAxis,
+        minCorner,
+        maxCorner,
+        xSpans,
+        ySpans,
+        symmetry,
+        inSmoothMode,
+    ):
+        """
   ByPlaneOriginXAxisYAxis(origin: Point,xAxis: Vector,yAxis: Vector,minCorner: Point,maxCorner: Point,xSpans: int,ySpans: int,symmetry: TSplineInitialSymmetry,inSmoothMode: bool) -> TSplineSurface
 
   
@@ -1379,10 +1623,13 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: Plane T-Spline Surface
   """
-  pass
- @staticmethod
- def ByPlaneThreePoints(p1,p2,p3,minCorner,maxCorner,xSpans,ySpans,symmetry,inSmoothMode):
-  """
+        pass
+
+    @staticmethod
+    def ByPlaneThreePoints(
+        p1, p2, p3, minCorner, maxCorner, xSpans, ySpans, symmetry, inSmoothMode
+    ):
+        """
   ByPlaneThreePoints(p1: Point,p2: Point,p3: Point,minCorner: Point,maxCorner: Point,xSpans: int,ySpans: int,symmetry: TSplineInitialSymmetry,inSmoothMode: bool) -> TSplineSurface
 
   
@@ -1415,10 +1662,11 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: Plane T-Spline Surface
   """
-  pass
- @staticmethod
- def ByQuadballCenterRadius(center,radius,spans,symmetry,inSmoothMode):
-  """
+        pass
+
+    @staticmethod
+    def ByQuadballCenterRadius(center, radius, spans, symmetry, inSmoothMode):
+        """
   ByQuadballCenterRadius(center: Point,radius: float,spans: int,symmetry: TSplineInitialSymmetry,inSmoothMode: bool) -> TSplineSurface
 
   
@@ -1439,10 +1687,11 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: T-Spline Quadball
   """
-  pass
- @staticmethod
- def ByQuadballCoordinateSystemRadius(cs,radius,spans,symmetry,inSmoothMode):
-  """
+        pass
+
+    @staticmethod
+    def ByQuadballCoordinateSystemRadius(cs, radius, spans, symmetry, inSmoothMode):
+        """
   ByQuadballCoordinateSystemRadius(cs: CoordinateSystem,radius: float,spans: int,symmetry: TSplineInitialSymmetry,inSmoothMode: bool) -> TSplineSurface
 
   
@@ -1463,10 +1712,22 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: T-Spline Quadball
   """
-  pass
- @staticmethod
- def ByRevolve(profile,axisOrigin,axisDirection,startAngle,sweepAngle,radialSpans,axialSpans,uniform,symmetry,inSmoothMode):
-  """
+        pass
+
+    @staticmethod
+    def ByRevolve(
+        profile,
+        axisOrigin,
+        axisDirection,
+        startAngle,
+        sweepAngle,
+        radialSpans,
+        axialSpans,
+        uniform,
+        symmetry,
+        inSmoothMode,
+    ):
+        """
   ByRevolve(profile: Curve,axisOrigin: Point,axisDirection: Vector,startAngle: float,sweepAngle: float,radialSpans: int,axialSpans: int,uniform: bool,symmetry: TSplineInitialSymmetry,inSmoothMode: bool) -> TSplineSurface
 
   
@@ -1505,14 +1766,18 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    inSmoothMode: Show T-Spline Surface in box or smooth visualization
   """
-  pass
- @staticmethod
- def BySphereBestFit(points,radiusSpans,heightSpans,symmetry,inSmoothMode):
-  """ BySphereBestFit(points: IEnumerable[Point],radiusSpans: int,heightSpans: int,symmetry: TSplineInitialSymmetry,inSmoothMode: bool) -> TSplineSurface """
-  pass
- @staticmethod
- def BySphereCenterPointRadius(centerPoint,radius,radiusSpans,heightSpans,symmetry,inSmoothMode):
-  """
+        pass
+
+    @staticmethod
+    def BySphereBestFit(points, radiusSpans, heightSpans, symmetry, inSmoothMode):
+        """ BySphereBestFit(points: IEnumerable[Point],radiusSpans: int,heightSpans: int,symmetry: TSplineInitialSymmetry,inSmoothMode: bool) -> TSplineSurface """
+        pass
+
+    @staticmethod
+    def BySphereCenterPointRadius(
+        centerPoint, radius, radiusSpans, heightSpans, symmetry, inSmoothMode
+    ):
+        """
   BySphereCenterPointRadius(centerPoint: Point,radius: float,radiusSpans: int,heightSpans: int,symmetry: TSplineInitialSymmetry,inSmoothMode: bool) -> TSplineSurface
 
   
@@ -1535,14 +1800,25 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: Spherical T-Spline Surface
   """
-  pass
- @staticmethod
- def BySphereFourPoints(points,radiusSpans,heightSpans,symmetry,inSmoothMode):
-  """ BySphereFourPoints(points: IEnumerable[Point],radiusSpans: int,heightSpans: int,symmetry: TSplineInitialSymmetry,inSmoothMode: bool) -> TSplineSurface """
-  pass
- @staticmethod
- def BySweep(profile,path,parallel,pathSpans,profileSpans,pathUniform,profileUniform,inSmoothMode):
-  """
+        pass
+
+    @staticmethod
+    def BySphereFourPoints(points, radiusSpans, heightSpans, symmetry, inSmoothMode):
+        """ BySphereFourPoints(points: IEnumerable[Point],radiusSpans: int,heightSpans: int,symmetry: TSplineInitialSymmetry,inSmoothMode: bool) -> TSplineSurface """
+        pass
+
+    @staticmethod
+    def BySweep(
+        profile,
+        path,
+        parallel,
+        pathSpans,
+        profileSpans,
+        pathUniform,
+        profileUniform,
+        inSmoothMode,
+    ):
+        """
   BySweep(profile: Curve,path: Curve,parallel: bool,pathSpans: int,profileSpans: int,pathUniform: bool,profileUniform: bool,inSmoothMode: bool) -> TSplineSurface
 
   
@@ -1567,10 +1843,19 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    inSmoothMode: Show T-Spline Surface in box or smooth visualization
   """
-  pass
- @staticmethod
- def ByTorusCenterRadii(center,innerRadius,outerRadius,innerRadiusSpans,outerRadiusSpans,symmetry,inSmoothMode):
-  """
+        pass
+
+    @staticmethod
+    def ByTorusCenterRadii(
+        center,
+        innerRadius,
+        outerRadius,
+        innerRadiusSpans,
+        outerRadiusSpans,
+        symmetry,
+        inSmoothMode,
+    ):
+        """
   ByTorusCenterRadii(center: Point,innerRadius: float,outerRadius: float,innerRadiusSpans: int,outerRadiusSpans: int,symmetry: TSplineInitialSymmetry,inSmoothMode: bool) -> TSplineSurface
 
   
@@ -1595,10 +1880,19 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: Toroidal T-Spline Surface
   """
-  pass
- @staticmethod
- def ByTorusCoordinateSystemRadii(cs,innerRadius,outerRadius,innerRadiusSpans,outerRadiusSpans,symmetry,inSmoothMode):
-  """
+        pass
+
+    @staticmethod
+    def ByTorusCoordinateSystemRadii(
+        cs,
+        innerRadius,
+        outerRadius,
+        innerRadiusSpans,
+        outerRadiusSpans,
+        symmetry,
+        inSmoothMode,
+    ):
+        """
   ByTorusCoordinateSystemRadii(cs: CoordinateSystem,innerRadius: float,outerRadius: float,innerRadiusSpans: int,outerRadiusSpans: int,symmetry: TSplineInitialSymmetry,inSmoothMode: bool) -> TSplineSurface
 
   
@@ -1623,9 +1917,10 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: Toroidal T-Spline Surface
   """
-  pass
- def CompressIndexes(self):
-  """
+        pass
+
+    def CompressIndexes(self):
+        """
   CompressIndexes(self: TSplineSurface) -> TSplineSurface
 
   
@@ -1634,43 +1929,54 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
     the relative order of the indices.
   """
-  pass
- def ComputeHashCode(self,*args):
-  """ ComputeHashCode(self: Geometry) -> int """
-  pass
- def CreaseEdges(self,edges):
-  """ CreaseEdges(self: TSplineSurface,edges: IEnumerable[TSplineEdge]) -> TSplineSurface """
-  pass
- def CreaseVertices(self,vertices):
-  """ CreaseVertices(self: TSplineSurface,vertices: IEnumerable[TSplineVertex]) -> TSplineSurface """
-  pass
- def CreateMatch(self,tsEdges,*__args):
-  """
+        pass
+
+    def ComputeHashCode(self, *args):
+        """ ComputeHashCode(self: Geometry) -> int """
+        pass
+
+    def CreaseEdges(self, edges):
+        """ CreaseEdges(self: TSplineSurface,edges: IEnumerable[TSplineEdge]) -> TSplineSurface """
+        pass
+
+    def CreaseVertices(self, vertices):
+        """ CreaseVertices(self: TSplineSurface,vertices: IEnumerable[TSplineVertex]) -> TSplineSurface """
+        pass
+
+    def CreateMatch(self, tsEdges, *__args):
+        """
   CreateMatch(self: TSplineSurface,tsEdges: IEnumerable[TSplineEdge],brepEdges: IEnumerable[Edge],continuity: int,useArclength: bool,useRefinement: bool,numRefinementSteps: int,refinementTolerance: float,usePropagation: bool,widthOfPropagation: float,tangentScale: float,curvParamWeight: float,flipSourceTargetAlignment: bool) -> TSplineSurface
 
   CreateMatch(self: TSplineSurface,tsEdges: IEnumerable[TSplineEdge],curves: IEnumerable[Curve],continuity: int,useArclength: bool,useRefinement: bool,numRefinementSteps: int,refinementTolerance: float,usePropagation: bool,widthOfPropagation: float,tangentScale: float,curvParamWeight: float,flipSourceTargetAlignment: bool) -> TSplineSurface
   """
-  pass
- def DeleteEdges(self,edges):
-  """ DeleteEdges(self: TSplineSurface,edges: IEnumerable[TSplineEdge]) -> TSplineSurface """
-  pass
- def DeleteFaces(self,faces):
-  """ DeleteFaces(self: TSplineSurface,faces: IEnumerable[TSplineFace]) -> TSplineSurface """
-  pass
- def DeleteVertices(self,vertices):
-  """ DeleteVertices(self: TSplineSurface,vertices: IEnumerable[TSplineVertex]) -> TSplineSurface """
-  pass
- def Dispose(self):
-  """ Dispose(self: Geometry,disposing: bool) """
-  pass
- def DisposeDisplayable(self,*args):
-  """ DisposeDisplayable(self: Geometry) """
-  pass
- def DuplicateFaces(self,faces):
-  """ DuplicateFaces(self: TSplineSurface,faces: IEnumerable[TSplineFace]) -> TSplineSurface """
-  pass
- def EnableSmoothMode(self,enable):
-  """
+        pass
+
+    def DeleteEdges(self, edges):
+        """ DeleteEdges(self: TSplineSurface,edges: IEnumerable[TSplineEdge]) -> TSplineSurface """
+        pass
+
+    def DeleteFaces(self, faces):
+        """ DeleteFaces(self: TSplineSurface,faces: IEnumerable[TSplineFace]) -> TSplineSurface """
+        pass
+
+    def DeleteVertices(self, vertices):
+        """ DeleteVertices(self: TSplineSurface,vertices: IEnumerable[TSplineVertex]) -> TSplineSurface """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Geometry,disposing: bool) """
+        pass
+
+    def DisposeDisplayable(self, *args):
+        """ DisposeDisplayable(self: Geometry) """
+        pass
+
+    def DuplicateFaces(self, faces):
+        """ DuplicateFaces(self: TSplineSurface,faces: IEnumerable[TSplineFace]) -> TSplineSurface """
+        pass
+
+    def EnableSmoothMode(self, enable):
+        """
   EnableSmoothMode(self: TSplineSurface,enable: bool) -> TSplineSurface
 
   
@@ -1689,13 +1995,15 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: t-spline with chosen visualization style
   """
-  pass
- def Equals(self,obj):
-  """ Equals(self: DesignScriptEntity,dsentity: DesignScriptEntity) -> bool """
-  pass
- @staticmethod
- def ExportToTSM(tSplineSurface,filePath):
-  """
+        pass
+
+    def Equals(self, obj):
+        """ Equals(self: DesignScriptEntity,dsentity: DesignScriptEntity) -> bool """
+        pass
+
+    @staticmethod
+    def ExportToTSM(tSplineSurface, filePath):
+        """
   ExportToTSM(tSplineSurface: TSplineSurface,filePath: str) -> str
 
   
@@ -1710,35 +2018,43 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: File path where T-Spline Surface is being saved
   """
-  pass
- @staticmethod
- def ExportToTSS(tSplineSurfaces,filePath):
-  """ ExportToTSS(tSplineSurfaces: IEnumerable[TSplineSurface],filePath: str) -> str """
-  pass
- def ExtrudeEdges(self,edges,direction,spans):
-  """ ExtrudeEdges(self: TSplineSurface,edges: IEnumerable[TSplineEdge],direction: Vector,spans: int) -> TSplineSurface """
-  pass
- def ExtrudeEdgesAlongCurve(self,edges,curve,spans):
-  """ ExtrudeEdgesAlongCurve(self: TSplineSurface,edges: IEnumerable[TSplineEdge],curve: Curve,spans: int) -> TSplineSurface """
-  pass
- def ExtrudeFaces(self,faces,direction,spans):
-  """ ExtrudeFaces(self: TSplineSurface,faces: IEnumerable[TSplineFace],direction: Vector,spans: int) -> TSplineSurface """
-  pass
- def ExtrudeFacesAlongCurve(self,faces,curve,spans):
-  """ ExtrudeFacesAlongCurve(self: TSplineSurface,faces: IEnumerable[TSplineFace],curve: Curve,spans: int) -> TSplineSurface """
-  pass
- def FillHole(self,edges,fillMethod,keepSubdCreases):
-  """ FillHole(self: TSplineSurface,edges: IEnumerable[TSplineEdge],fillMethod: int,keepSubdCreases: bool) -> TSplineSurface """
-  pass
- def FlattenVertices(self,vertices,parallelPlane=None):
-  """
+        pass
+
+    @staticmethod
+    def ExportToTSS(tSplineSurfaces, filePath):
+        """ ExportToTSS(tSplineSurfaces: IEnumerable[TSplineSurface],filePath: str) -> str """
+        pass
+
+    def ExtrudeEdges(self, edges, direction, spans):
+        """ ExtrudeEdges(self: TSplineSurface,edges: IEnumerable[TSplineEdge],direction: Vector,spans: int) -> TSplineSurface """
+        pass
+
+    def ExtrudeEdgesAlongCurve(self, edges, curve, spans):
+        """ ExtrudeEdgesAlongCurve(self: TSplineSurface,edges: IEnumerable[TSplineEdge],curve: Curve,spans: int) -> TSplineSurface """
+        pass
+
+    def ExtrudeFaces(self, faces, direction, spans):
+        """ ExtrudeFaces(self: TSplineSurface,faces: IEnumerable[TSplineFace],direction: Vector,spans: int) -> TSplineSurface """
+        pass
+
+    def ExtrudeFacesAlongCurve(self, faces, curve, spans):
+        """ ExtrudeFacesAlongCurve(self: TSplineSurface,faces: IEnumerable[TSplineFace],curve: Curve,spans: int) -> TSplineSurface """
+        pass
+
+    def FillHole(self, edges, fillMethod, keepSubdCreases):
+        """ FillHole(self: TSplineSurface,edges: IEnumerable[TSplineEdge],fillMethod: int,keepSubdCreases: bool) -> TSplineSurface """
+        pass
+
+    def FlattenVertices(self, vertices, parallelPlane=None):
+        """
   FlattenVertices(self: TSplineSurface,vertices: IEnumerable[TSplineVertex],parallelPlane: Plane) -> TSplineSurface
 
   FlattenVertices(self: TSplineSurface,vertices: IEnumerable[TSplineVertex]) -> TSplineSurface
   """
-  pass
- def FlipNormals(self):
-  """
+        pass
+
+    def FlipNormals(self):
+        """
   FlipNormals(self: TSplineSurface) -> TSplineSurface
 
   
@@ -1747,10 +2063,11 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: T-Spline Surface with inverted normals
   """
-  pass
- @staticmethod
- def ImportFromTSM(*__args):
-  """
+        pass
+
+    @staticmethod
+    def ImportFromTSM(*__args):
+        """
   ImportFromTSM(file: FileInfo,inSmoothMode: bool) -> Array[TSplineSurface]
 
   
@@ -1779,10 +2096,11 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: Newly loaded T-Spline surface in list
   """
-  pass
- @staticmethod
- def ImportFromTSS(*__args):
-  """
+        pass
+
+    @staticmethod
+    def ImportFromTSS(*__args):
+        """
   ImportFromTSS(file: FileInfo,inSmoothMode: bool) -> Array[TSplineSurface]
 
   
@@ -1811,9 +2129,10 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: A set of newly loaded T-Spline Surfaces
   """
-  pass
- def Interpolate(self,reverse):
-  """
+        pass
+
+    def Interpolate(self, reverse):
+        """
   Interpolate(self: TSplineSurface,reverse: bool) -> TSplineSurface
 
   
@@ -1832,9 +2151,10 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: Interpolated T-Spline in given direction
   """
-  pass
- def MakeUniform(self):
-  """
+        pass
+
+    def MakeUniform(self):
+        """
   MakeUniform(self: TSplineSurface) -> TSplineSurface
 
   
@@ -1843,18 +2163,22 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: T-Spline Surface with uniform internals
   """
-  pass
- def MergeEdges(self,firstGroup,secondGroup,insertCreases):
-  """ MergeEdges(self: TSplineSurface,firstGroup: IEnumerable[TSplineEdge],secondGroup: IEnumerable[TSplineEdge],insertCreases: bool) -> TSplineSurface """
-  pass
- def MoveVertices(self,vertices,vector,onSurface):
-  """ MoveVertices(self: TSplineSurface,vertices: IEnumerable[TSplineVertex],vector: Vector,onSurface: bool) -> TSplineSurface """
-  pass
- def PullVertices(self,vertices,geometries,surfacePoints):
-  """ PullVertices(self: TSplineSurface,vertices: IEnumerable[TSplineVertex],geometries: IEnumerable[Geometry],surfacePoints: bool) -> TSplineSurface """
-  pass
- def RemoveReflections(self):
-  """
+        pass
+
+    def MergeEdges(self, firstGroup, secondGroup, insertCreases):
+        """ MergeEdges(self: TSplineSurface,firstGroup: IEnumerable[TSplineEdge],secondGroup: IEnumerable[TSplineEdge],insertCreases: bool) -> TSplineSurface """
+        pass
+
+    def MoveVertices(self, vertices, vector, onSurface):
+        """ MoveVertices(self: TSplineSurface,vertices: IEnumerable[TSplineVertex],vector: Vector,onSurface: bool) -> TSplineSurface """
+        pass
+
+    def PullVertices(self, vertices, geometries, surfacePoints):
+        """ PullVertices(self: TSplineSurface,vertices: IEnumerable[TSplineVertex],geometries: IEnumerable[Geometry],surfacePoints: bool) -> TSplineSurface """
+        pass
+
+    def RemoveReflections(self):
+        """
   RemoveReflections(self: TSplineSurface) -> TSplineSurface
 
   
@@ -1863,12 +2187,14 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: T-Spline surface with given reflections removed
   """
-  pass
- def SlideEdges(self,edges,amount,roundness):
-  """ SlideEdges(self: TSplineSurface,edges: IEnumerable[TSplineEdge],amount: float,roundness: float) -> TSplineSurface """
-  pass
- def Standardize(self):
-  """
+        pass
+
+    def SlideEdges(self, edges, amount, roundness):
+        """ SlideEdges(self: TSplineSurface,edges: IEnumerable[TSplineEdge],amount: float,roundness: float) -> TSplineSurface """
+        pass
+
+    def Standardize(self):
+        """
   Standardize(self: TSplineSurface) -> TSplineSurface
 
   
@@ -1885,12 +2211,14 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: Standardized T-Spline Surface
   """
-  pass
- def SubdivideFaces(self,faces,exact):
-  """ SubdivideFaces(self: TSplineSurface,faces: IEnumerable[TSplineFace],exact: bool) -> TSplineSurface """
-  pass
- def Thicken(self,*__args):
-  """
+        pass
+
+    def SubdivideFaces(self, faces, exact):
+        """ SubdivideFaces(self: TSplineSurface,faces: IEnumerable[TSplineFace],exact: bool) -> TSplineSurface """
+        pass
+
+    def Thicken(self, *__args):
+        """
   Thicken(self: TSplineSurface,vector: Vector,softEdges: bool) -> TSplineSurface
 
   
@@ -1919,9 +2247,10 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: Thickened TSpline surface
   """
-  pass
- def ToBRep(self,matchTopology):
-  """
+        pass
+
+    def ToBRep(self, matchTopology):
+        """
   ToBRep(self: TSplineSurface,matchTopology: bool) -> Array[Topology]
 
   
@@ -1934,9 +2263,10 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: Topology entity (Solid or Surface)
   """
-  pass
- def ToMesh(self,minSegments,tolerance):
-  """
+        pass
+
+    def ToMesh(self, minSegments, tolerance):
+        """
   ToMesh(self: TSplineSurface,minSegments: int,tolerance: float) -> Mesh
 
   
@@ -1955,25 +2285,30 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: Mesh entity
   """
-  pass
- def ToString(self):
-  """ ToString(self: TSplineSurface) -> str """
-  pass
- def UncreaseEdges(self,edges):
-  """ UncreaseEdges(self: TSplineSurface,edges: IEnumerable[TSplineEdge]) -> TSplineSurface """
-  pass
- def UncreaseVertices(self,vertices):
-  """ UncreaseVertices(self: TSplineSurface,vertices: IEnumerable[TSplineVertex]) -> TSplineSurface """
-  pass
- def Unweld(self,*__args):
-  """
+        pass
+
+    def ToString(self):
+        """ ToString(self: TSplineSurface) -> str """
+        pass
+
+    def UncreaseEdges(self, edges):
+        """ UncreaseEdges(self: TSplineSurface,edges: IEnumerable[TSplineEdge]) -> TSplineSurface """
+        pass
+
+    def UncreaseVertices(self, vertices):
+        """ UncreaseVertices(self: TSplineSurface,vertices: IEnumerable[TSplineVertex]) -> TSplineSurface """
+        pass
+
+    def Unweld(self, *__args):
+        """
   Unweld(self: TSplineSurface,vertices: IEnumerable[TSplineVertex]) -> TSplineSurface
 
   Unweld(self: TSplineSurface,edges: IEnumerable[TSplineEdge]) -> TSplineSurface
   """
-  pass
- def WeldCoincidentVertices(self,tolerance):
-  """
+        pass
+
+    def WeldCoincidentVertices(self, tolerance):
+        """
   WeldCoincidentVertices(self: TSplineSurface,tolerance: float) -> TSplineSurface
 
   
@@ -1986,37 +2321,43 @@ class TSplineSurface(TSplineTopology,IDisposable,IGraphicItem):
 
    Returns: TSpline surface without coincident vertices
   """
-  pass
- def WeldVertices(self,*__args):
-  """
+        pass
+
+    def WeldVertices(self, *__args):
+        """
   WeldVertices(self: TSplineSurface,firstGroup: IEnumerable[TSplineVertex],secondGroup: IEnumerable[TSplineVertex],keepSubdCreases: bool) -> TSplineSurface
 
   WeldVertices(self: TSplineSurface,vertices: IEnumerable[TSplineVertex],newPosition: Point,keepSubdCreases: bool) -> TSplineSurface
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- IsClosed=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether t-spline is is open.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    IsClosed = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Whether t-spline is is open.
 
 
 
@@ -2026,8 +2367,10 @@ Get: IsClosed(self: TSplineSurface) -> bool
 
 """
 
- IsExtractable=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether t-spline is extractable (Could be displayed in smooth mode)
+    IsExtractable = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether t-spline is extractable (Could be displayed in smooth mode)
 
 
 
@@ -2037,8 +2380,10 @@ Get: IsExtractable(self: TSplineSurface) -> bool
 
 """
 
- IsInBoxMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether t-spline in box or smooth mode
+    IsInBoxMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether t-spline in box or smooth mode
 
 
 
@@ -2048,8 +2393,10 @@ Get: IsInBoxMode(self: TSplineSurface) -> bool
 
 """
 
- IsStandard=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Check all guarantees required for standardization to determine
+    IsStandard = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Check all guarantees required for standardization to determine
 
    if the t-spline is standard
 
@@ -2061,8 +2408,10 @@ Get: IsStandard(self: TSplineSurface) -> bool
 
 """
 
- IsWaterTight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """All closed surfaces are watertight,but some watertight surfaces are open.
+    IsWaterTight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """All closed surfaces are watertight,but some watertight surfaces are open.
 
 
 
@@ -2072,8 +2421,10 @@ Get: IsWaterTight(self: TSplineSurface) -> bool
 
 """
 
- Reflections=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """A list of reflections applied to the t-spline
+    Reflections = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """A list of reflections applied to the t-spline
 
 
 
@@ -2083,50 +2434,58 @@ Get: Reflections(self: TSplineSurface) -> Array[TSplineReflection]
 
 """
 
+    mConstructor = None
 
- mConstructor=None
 
+class TSplineUVNFrame(DesignScriptEntity, IDisposable, IGraphicItem):
+    # no doc
+    def ComputeHashCode(self, *args):
+        """ ComputeHashCode(self: DesignScriptEntity) -> int """
+        pass
 
-class TSplineUVNFrame(DesignScriptEntity,IDisposable,IGraphicItem):
- # no doc
- def ComputeHashCode(self,*args):
-  """ ComputeHashCode(self: DesignScriptEntity) -> int """
-  pass
- def Dispose(self):
-  """ Dispose(self: DesignScriptEntity,disposing: bool) """
-  pass
- def DisposeDisplayable(self,*args):
-  """ DisposeDisplayable(self: DesignScriptEntity) """
-  pass
- def Equals(self,obj):
-  """ Equals(self: DesignScriptEntity,dsentity: DesignScriptEntity) -> bool """
-  pass
- def ToString(self):
-  """ ToString(self: TSplineUVNFrame) -> str """
-  pass
- def __enter__(self,*args):
-  """
+    def Dispose(self):
+        """ Dispose(self: DesignScriptEntity,disposing: bool) """
+        pass
+
+    def DisposeDisplayable(self, *args):
+        """ DisposeDisplayable(self: DesignScriptEntity) """
+        pass
+
+    def Equals(self, obj):
+        """ Equals(self: DesignScriptEntity,dsentity: DesignScriptEntity) -> bool """
+        pass
+
+    def ToString(self):
+        """ ToString(self: TSplineUVNFrame) -> str """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- Normal=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Normal of the TopologyItem
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Normal = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Normal of the TopologyItem
 
 
 
@@ -2136,8 +2495,8 @@ Get: Normal(self: TSplineUVNFrame) -> Vector
 
 """
 
- Position=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Point of the TopologyItem on the hull
+    Position = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Point of the TopologyItem on the hull
 
 
 
@@ -2147,8 +2506,8 @@ Get: Position(self: TSplineUVNFrame) -> Point
 
 """
 
- U=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """U vector of the TopologyItem
+    U = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """U vector of the TopologyItem
 
 
 
@@ -2158,8 +2517,8 @@ Get: U(self: TSplineUVNFrame) -> Vector
 
 """
 
- V=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """V vector of the TopologyItem
+    V = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """V vector of the TopologyItem
 
 
 
@@ -2169,26 +2528,29 @@ Get: V(self: TSplineUVNFrame) -> Vector
 
 """
 
+    mConstructor = None
 
- mConstructor=None
 
+class TSplineVertex(Vertex, IDisposable, IGraphicItem):
+    # no doc
+    def ComputeHashCode(self, *args):
+        """ ComputeHashCode(self: DesignScriptEntity) -> int """
+        pass
 
-class TSplineVertex(Vertex,IDisposable,IGraphicItem):
- # no doc
- def ComputeHashCode(self,*args):
-  """ ComputeHashCode(self: DesignScriptEntity) -> int """
-  pass
- def Dispose(self):
-  """ Dispose(self: DesignScriptEntity,disposing: bool) """
-  pass
- def DisposeDisplayable(self,*args):
-  """ DisposeDisplayable(self: DesignScriptEntity) """
-  pass
- def Equals(self,obj):
-  """ Equals(self: DesignScriptEntity,dsentity: DesignScriptEntity) -> bool """
-  pass
- def Info(self):
-  """
+    def Dispose(self):
+        """ Dispose(self: DesignScriptEntity,disposing: bool) """
+        pass
+
+    def DisposeDisplayable(self, *args):
+        """ DisposeDisplayable(self: DesignScriptEntity) """
+        pass
+
+    def Equals(self, obj):
+        """ Equals(self: DesignScriptEntity,dsentity: DesignScriptEntity) -> bool """
+        pass
+
+    def Info(self):
+        """
   Info(self: TSplineVertex) -> Dictionary[str,object]
 
   
@@ -2197,47 +2559,59 @@ class TSplineVertex(Vertex,IDisposable,IGraphicItem):
 
     is a StarPoint,TPoint,Manifold or not
   """
-  pass
- def ToString(self):
-  """ ToString(self: TSplineVertex) -> str """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def ToString(self):
+        """ ToString(self: TSplineVertex) -> str """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- AdjacentEdges=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: AdjacentEdges(self: TSplineVertex) -> Array[TSplineEdge]
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AdjacentEdges = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: AdjacentEdges(self: TSplineVertex) -> Array[TSplineEdge]
 
 
 
 """
 
- AdjacentFaces=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: AdjacentFaces(self: TSplineVertex) -> Array[TSplineFace]
+    AdjacentFaces = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: AdjacentFaces(self: TSplineVertex) -> Array[TSplineFace]
 
 
 
 """
 
- FunctionalValence=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Functional valence of the TSVertex,taking T-points into account
+    FunctionalValence = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Functional valence of the TSVertex,taking T-points into account
 
 
 
@@ -2247,8 +2621,8 @@ Get: FunctionalValence(self: TSplineVertex) -> int
 
 """
 
- Index=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Index of the TSVertex
+    Index = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Index of the TSVertex
 
 
 
@@ -2258,8 +2632,10 @@ Get: Index(self: TSplineVertex) -> int
 
 """
 
- IsManifold=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether the TSVertex is manifold
+    IsManifold = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether the TSVertex is manifold
 
 
 
@@ -2269,8 +2645,10 @@ Get: IsManifold(self: TSplineVertex) -> bool
 
 """
 
- IsStarPoint=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether the TSVertex is a star point
+    IsStarPoint = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether the TSVertex is a star point
 
 
 
@@ -2280,8 +2658,8 @@ Get: IsStarPoint(self: TSplineVertex) -> bool
 
 """
 
- IsTPoint=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether the TSVertex is a T-point
+    IsTPoint = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Whether the TSVertex is a T-point
 
 
 
@@ -2291,8 +2669,8 @@ Get: IsTPoint(self: TSplineVertex) -> bool
 
 """
 
- UVNFrame=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Return UVN Frame of the TSVertex (point on the hull,U vector,V vector and normal)
+    UVNFrame = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Return UVN Frame of the TSVertex (point on the hull,U vector,V vector and normal)
 
 
 
@@ -2302,8 +2680,8 @@ Get: UVNFrame(self: TSplineVertex) -> TSplineUVNFrame
 
 """
 
- Valence=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Number of edges or faces on the TSVertex
+    Valence = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Number of edges or faces on the TSVertex
 
 
 
@@ -2313,7 +2691,4 @@ Get: Valence(self: TSplineVertex) -> int
 
 """
 
-
- mConstructor=None
-
-
+    mConstructor = None

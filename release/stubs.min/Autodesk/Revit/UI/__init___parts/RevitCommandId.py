@@ -1,11 +1,13 @@
-class RevitCommandId(object,IDisposable):
- """ Represents a command id in Autodesk Revit. """
- def Dispose(self):
-  """ Dispose(self: RevitCommandId) """
-  pass
- @staticmethod
- def LookupCommandId(name):
-  """
+class RevitCommandId(object, IDisposable):
+    """ Represents a command id in Autodesk Revit. """
+
+    def Dispose(self):
+        """ Dispose(self: RevitCommandId) """
+        pass
+
+    @staticmethod
+    def LookupCommandId(name):
+        """
   LookupCommandId(name: str) -> RevitCommandId
 
   
@@ -24,10 +26,11 @@ class RevitCommandId(object,IDisposable):
 
     found.
   """
-  pass
- @staticmethod
- def LookupPostableCommandId(postableCommand):
-  """
+        pass
+
+    @staticmethod
+    def LookupPostableCommandId(postableCommand):
+        """
   LookupPostableCommandId(postableCommand: PostableCommand) -> RevitCommandId
 
   
@@ -42,24 +45,32 @@ class RevitCommandId(object,IDisposable):
 
     found.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: RevitCommandId,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- CanHaveBinding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether the command can be assigned a binding to an external add-in.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: RevitCommandId,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    CanHaveBinding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates whether the command can be assigned a binding to an external add-in.
 
 
 
@@ -69,8 +80,10 @@ Get: CanHaveBinding(self: RevitCommandId) -> bool
 
 """
 
- HasBinding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether a replacement of either the Execute or CanExecute events (or both) have been applied to this command.
+    HasBinding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates whether a replacement of either the Execute or CanExecute events (or both) have been applied to this command.
 
 
 
@@ -80,8 +93,8 @@ Get: HasBinding(self: RevitCommandId) -> bool
 
 """
 
- Id=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The command id.
+    Id = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The command id.
 
 
 
@@ -91,8 +104,10 @@ Get: Id(self: RevitCommandId) -> UInt32
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -102,8 +117,8 @@ Get: IsValidObject(self: RevitCommandId) -> bool
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The command name.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The command name.
 
 
 
@@ -112,5 +127,3 @@ Get: Name(self: RevitCommandId) -> str
 
 
 """
-
-

@@ -1,13 +1,24 @@
-class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFrameworkInputElement,ISupportInitialize,IHaveResources,IQueryAmbient,IAddChild):
- """
+class ToolBarTray(
+    FrameworkElement,
+    IResource,
+    IAnimatable,
+    IInputElement,
+    IFrameworkInputElement,
+    ISupportInitialize,
+    IHaveResources,
+    IQueryAmbient,
+    IAddChild,
+):
+    """
  Represents the container that handles the layout of a System.Windows.Controls.ToolBar.
 
  
 
  ToolBarTray()
  """
- def AddLogicalChild(self,*args):
-  """
+
+    def AddLogicalChild(self, *args):
+        """
   AddLogicalChild(self: FrameworkElement,child: object)
 
    Adds the provided object to the logical tree of this element.
@@ -16,9 +27,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    child: Child element to be added.
   """
-  pass
- def AddVisualChild(self,*args):
-  """
+        pass
+
+    def AddVisualChild(self, *args):
+        """
   AddVisualChild(self: Visual,child: Visual)
 
    Defines the parent-child relationship between two visuals.
@@ -27,9 +39,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    child: The child visual object to add to parent visual.
   """
-  pass
- def ArrangeCore(self,*args):
-  """
+        pass
+
+    def ArrangeCore(self, *args):
+        """
   ArrangeCore(self: FrameworkElement,finalRect: Rect)
 
    Implements System.Windows.UIElement.ArrangeCore(System.Windows.Rect) (defined as virtual in 
@@ -42,9 +55,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    finalRect: The final area within the parent that this element should use to arrange itself and its children.
   """
-  pass
- def ArrangeOverride(self,*args):
-  """
+        pass
+
+    def ArrangeOverride(self, *args):
+        """
   ArrangeOverride(self: ToolBarTray,arrangeSize: Size) -> Size
 
   
@@ -57,10 +71,11 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    Returns: The size of the control.
   """
-  pass
- @staticmethod
- def GetIsLocked(element):
-  """
+        pass
+
+    @staticmethod
+    def GetIsLocked(element):
+        """
   GetIsLocked(element: DependencyObject) -> bool
 
   
@@ -79,9 +94,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
     false.
   """
-  pass
- def GetLayoutClip(self,*args):
-  """
+        pass
+
+    def GetLayoutClip(self, *args):
+        """
   GetLayoutClip(self: FrameworkElement,layoutSlotSize: Size) -> Geometry
 
   
@@ -98,9 +114,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    Returns: The clipping geometry.
   """
-  pass
- def GetTemplateChild(self,*args):
-  """
+        pass
+
+    def GetTemplateChild(self, *args):
+        """
   GetTemplateChild(self: FrameworkElement,childName: str) -> DependencyObject
 
   
@@ -117,9 +134,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    Returns: The requested element. May be null if no element of the requested name exists.
   """
-  pass
- def GetUIParentCore(self,*args):
-  """
+        pass
+
+    def GetUIParentCore(self, *args):
+        """
   GetUIParentCore(self: FrameworkElement) -> DependencyObject
 
   
@@ -130,9 +148,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
     has a non-visual parent connection.
   """
-  pass
- def GetVisualChild(self,*args):
-  """
+        pass
+
+    def GetVisualChild(self, *args):
+        """
   GetVisualChild(self: ToolBarTray,index: int) -> Visual
 
   
@@ -145,9 +164,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    Returns: The index number of the visible child.
   """
-  pass
- def HitTestCore(self,*args):
-  """
+        pass
+
+    def HitTestCore(self, *args):
+        """
   HitTestCore(self: UIElement,hitTestParameters: GeometryHitTestParameters) -> GeometryHitTestResult
 
   
@@ -182,9 +202,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    Returns: Results of the test,including the evaluated point.
   """
-  pass
- def MeasureCore(self,*args):
-  """
+        pass
+
+    def MeasureCore(self, *args):
+        """
   MeasureCore(self: FrameworkElement,availableSize: Size) -> Size
 
   
@@ -197,9 +218,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    Returns: The desired size of this element in layout.
   """
-  pass
- def MeasureOverride(self,*args):
-  """
+        pass
+
+    def MeasureOverride(self, *args):
+        """
   MeasureOverride(self: ToolBarTray,constraint: Size) -> Size
 
   
@@ -216,9 +238,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    Returns: The size of the control.
   """
-  pass
- def OnAccessKey(self,*args):
-  """
+        pass
+
+    def OnAccessKey(self, *args):
+        """
   OnAccessKey(self: UIElement,e: AccessKeyEventArgs)
 
    Provides class handling for when an access key that is meaningful for this element is invoked.
@@ -231,9 +254,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
     these events also sent this access key invocation to other elements.
   """
-  pass
- def OnChildDesiredSizeChanged(self,*args):
-  """
+        pass
+
+    def OnChildDesiredSizeChanged(self, *args):
+        """
   OnChildDesiredSizeChanged(self: UIElement,child: UIElement)
 
    Supports layout behavior when a child element is resized.
@@ -242,9 +266,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    child: The child element that is being resized.
   """
-  pass
- def OnContextMenuClosing(self,*args):
-  """
+        pass
+
+    def OnContextMenuClosing(self, *args):
+        """
   OnContextMenuClosing(self: FrameworkElement,e: ContextMenuEventArgs)
 
    Invoked whenever an unhandled System.Windows.FrameworkElement.ContextMenuClosing routed event 
@@ -257,9 +282,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: Provides data about the event.
   """
-  pass
- def OnContextMenuOpening(self,*args):
-  """
+        pass
+
+    def OnContextMenuOpening(self, *args):
+        """
   OnContextMenuOpening(self: FrameworkElement,e: ContextMenuEventArgs)
 
    Invoked whenever an unhandled System.Windows.FrameworkElement.ContextMenuOpening routed event 
@@ -272,9 +298,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.RoutedEventArgs that contains the event data.
   """
-  pass
- def OnCreateAutomationPeer(self,*args):
-  """
+        pass
+
+    def OnCreateAutomationPeer(self, *args):
+        """
   OnCreateAutomationPeer(self: UIElement) -> AutomationPeer
 
   
@@ -287,12 +314,14 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    Returns: The type-specific System.Windows.Automation.Peers.AutomationPeer implementation.
   """
-  pass
- def OnDpiChanged(self,*args):
-  """ OnDpiChanged(self: Visual,oldDpi: DpiScale,newDpi: DpiScale) """
-  pass
- def OnDragEnter(self,*args):
-  """
+        pass
+
+    def OnDpiChanged(self, *args):
+        """ OnDpiChanged(self: Visual,oldDpi: DpiScale,newDpi: DpiScale) """
+        pass
+
+    def OnDragEnter(self, *args):
+        """
   OnDragEnter(self: UIElement,e: DragEventArgs)
 
    Invoked when an unhandled System.Windows.DragDrop.DragEnter�attached event reaches an element in 
@@ -307,9 +336,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.DragEventArgs that contains the event data.
   """
-  pass
- def OnDragLeave(self,*args):
-  """
+        pass
+
+    def OnDragLeave(self, *args):
+        """
   OnDragLeave(self: UIElement,e: DragEventArgs)
 
    Invoked when an unhandled System.Windows.DragDrop.DragLeave�attached event reaches an element in 
@@ -324,9 +354,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.DragEventArgs that contains the event data.
   """
-  pass
- def OnDragOver(self,*args):
-  """
+        pass
+
+    def OnDragOver(self, *args):
+        """
   OnDragOver(self: UIElement,e: DragEventArgs)
 
    Invoked when an unhandled System.Windows.DragDrop.DragOver�attached event reaches an element in 
@@ -341,9 +372,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.DragEventArgs that contains the event data.
   """
-  pass
- def OnDrop(self,*args):
-  """
+        pass
+
+    def OnDrop(self, *args):
+        """
   OnDrop(self: UIElement,e: DragEventArgs)
 
    Invoked when an unhandled System.Windows.DragDrop.DragEnter�attached event reaches an element in 
@@ -358,9 +390,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.DragEventArgs that contains the event data.
   """
-  pass
- def OnGiveFeedback(self,*args):
-  """
+        pass
+
+    def OnGiveFeedback(self, *args):
+        """
   OnGiveFeedback(self: UIElement,e: GiveFeedbackEventArgs)
 
    Invoked when an unhandled System.Windows.DragDrop.GiveFeedback�attached event reaches an element 
@@ -375,9 +408,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.GiveFeedbackEventArgs that contains the event data.
   """
-  pass
- def OnGotFocus(self,*args):
-  """
+        pass
+
+    def OnGotFocus(self, *args):
+        """
   OnGotFocus(self: FrameworkElement,e: RoutedEventArgs)
 
    Invoked whenever an unhandled System.Windows.UIElement.GotFocus event reaches this element in 
@@ -390,9 +424,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.RoutedEventArgs that contains the event data.
   """
-  pass
- def OnGotKeyboardFocus(self,*args):
-  """
+        pass
+
+    def OnGotKeyboardFocus(self, *args):
+        """
   OnGotKeyboardFocus(self: UIElement,e: KeyboardFocusChangedEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Keyboard.GotKeyboardFocus�attached event reaches 
@@ -407,9 +442,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.KeyboardFocusChangedEventArgs that contains the event data.
   """
-  pass
- def OnGotMouseCapture(self,*args):
-  """
+        pass
+
+    def OnGotMouseCapture(self, *args):
+        """
   OnGotMouseCapture(self: UIElement,e: MouseEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Mouse.GotMouseCapture�attached event reaches an 
@@ -424,9 +460,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.MouseEventArgs that contains the event data.
   """
-  pass
- def OnGotStylusCapture(self,*args):
-  """
+        pass
+
+    def OnGotStylusCapture(self, *args):
+        """
   OnGotStylusCapture(self: UIElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.GotStylusCapture�attached event reaches an 
@@ -441,9 +478,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.StylusEventArgs that contains the event data.
   """
-  pass
- def OnGotTouchCapture(self,*args):
-  """
+        pass
+
+    def OnGotTouchCapture(self, *args):
+        """
   OnGotTouchCapture(self: UIElement,e: TouchEventArgs)
 
    Provides class handling for the System.Windows.UIElement.GotTouchCapture routed event that 
@@ -456,9 +494,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: A System.Windows.Input.TouchEventArgs that contains the event data.
   """
-  pass
- def OnInitialized(self,*args):
-  """
+        pass
+
+    def OnInitialized(self, *args):
+        """
   OnInitialized(self: FrameworkElement,e: EventArgs)
 
    Raises the System.Windows.FrameworkElement.Initialized event. This method is invoked whenever 
@@ -471,9 +510,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.RoutedEventArgs that contains the event data.
   """
-  pass
- def OnIsKeyboardFocusedChanged(self,*args):
-  """
+        pass
+
+    def OnIsKeyboardFocusedChanged(self, *args):
+        """
   OnIsKeyboardFocusedChanged(self: UIElement,e: DependencyPropertyChangedEventArgs)
 
    Invoked when an unhandled System.Windows.UIElement.IsKeyboardFocusedChanged event is raised on 
@@ -486,9 +526,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.DependencyPropertyChangedEventArgs that contains the event data.
   """
-  pass
- def OnIsKeyboardFocusWithinChanged(self,*args):
-  """
+        pass
+
+    def OnIsKeyboardFocusWithinChanged(self, *args):
+        """
   OnIsKeyboardFocusWithinChanged(self: UIElement,e: DependencyPropertyChangedEventArgs)
 
    Invoked just before the System.Windows.UIElement.IsKeyboardFocusWithinChanged event is raised by 
@@ -501,9 +542,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: A System.Windows.DependencyPropertyChangedEventArgs that contains the event data.
   """
-  pass
- def OnIsMouseCapturedChanged(self,*args):
-  """
+        pass
+
+    def OnIsMouseCapturedChanged(self, *args):
+        """
   OnIsMouseCapturedChanged(self: UIElement,e: DependencyPropertyChangedEventArgs)
 
    Invoked when an unhandled System.Windows.UIElement.IsMouseCapturedChanged event is raised on 
@@ -516,9 +558,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.DependencyPropertyChangedEventArgs that contains the event data.
   """
-  pass
- def OnIsMouseCaptureWithinChanged(self,*args):
-  """
+        pass
+
+    def OnIsMouseCaptureWithinChanged(self, *args):
+        """
   OnIsMouseCaptureWithinChanged(self: UIElement,e: DependencyPropertyChangedEventArgs)
 
    Invoked when an unhandled System.Windows.UIElement.IsMouseCaptureWithinChanged event is raised 
@@ -531,9 +574,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: A System.Windows.DependencyPropertyChangedEventArgs that contains the event data.
   """
-  pass
- def OnIsMouseDirectlyOverChanged(self,*args):
-  """
+        pass
+
+    def OnIsMouseDirectlyOverChanged(self, *args):
+        """
   OnIsMouseDirectlyOverChanged(self: UIElement,e: DependencyPropertyChangedEventArgs)
 
    Invoked when an unhandled System.Windows.UIElement.IsMouseDirectlyOverChanged event is raised on 
@@ -546,9 +590,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.DependencyPropertyChangedEventArgs that contains the event data.
   """
-  pass
- def OnIsStylusCapturedChanged(self,*args):
-  """
+        pass
+
+    def OnIsStylusCapturedChanged(self, *args):
+        """
   OnIsStylusCapturedChanged(self: UIElement,e: DependencyPropertyChangedEventArgs)
 
    Invoked when an unhandled System.Windows.UIElement.IsStylusCapturedChanged event is raised on 
@@ -561,9 +606,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: A System.Windows.DependencyPropertyChangedEventArgs that contains the event data.
   """
-  pass
- def OnIsStylusCaptureWithinChanged(self,*args):
-  """
+        pass
+
+    def OnIsStylusCaptureWithinChanged(self, *args):
+        """
   OnIsStylusCaptureWithinChanged(self: UIElement,e: DependencyPropertyChangedEventArgs)
 
    Invoked when an unhandled System.Windows.UIElement.IsStylusCaptureWithinChanged event is raised 
@@ -576,9 +622,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.DependencyPropertyChangedEventArgs that contains the event data.
   """
-  pass
- def OnIsStylusDirectlyOverChanged(self,*args):
-  """
+        pass
+
+    def OnIsStylusDirectlyOverChanged(self, *args):
+        """
   OnIsStylusDirectlyOverChanged(self: UIElement,e: DependencyPropertyChangedEventArgs)
 
    Invoked when an unhandled System.Windows.UIElement.IsStylusDirectlyOverChanged event is raised 
@@ -591,9 +638,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.DependencyPropertyChangedEventArgs that contains the event data.
   """
-  pass
- def OnKeyDown(self,*args):
-  """
+        pass
+
+    def OnKeyDown(self, *args):
+        """
   OnKeyDown(self: UIElement,e: KeyEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Keyboard.KeyDown�attached event reaches an 
@@ -608,9 +656,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.KeyEventArgs that contains the event data.
   """
-  pass
- def OnKeyUp(self,*args):
-  """
+        pass
+
+    def OnKeyUp(self, *args):
+        """
   OnKeyUp(self: UIElement,e: KeyEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Keyboard.KeyUp�attached event reaches an element 
@@ -625,9 +674,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.KeyEventArgs that contains the event data.
   """
-  pass
- def OnLostFocus(self,*args):
-  """
+        pass
+
+    def OnLostFocus(self, *args):
+        """
   OnLostFocus(self: UIElement,e: RoutedEventArgs)
 
    Raises the System.Windows.UIElement.LostFocus�routed event by using the event data that is 
@@ -642,9 +692,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
     identifier for the System.Windows.UIElement.LostFocus event.
   """
-  pass
- def OnLostKeyboardFocus(self,*args):
-  """
+        pass
+
+    def OnLostKeyboardFocus(self, *args):
+        """
   OnLostKeyboardFocus(self: UIElement,e: KeyboardFocusChangedEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Keyboard.LostKeyboardFocus�attached event reaches 
@@ -659,9 +710,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.KeyboardFocusChangedEventArgs that contains event data.
   """
-  pass
- def OnLostMouseCapture(self,*args):
-  """
+        pass
+
+    def OnLostMouseCapture(self, *args):
+        """
   OnLostMouseCapture(self: UIElement,e: MouseEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Mouse.LostMouseCapture�attached event reaches an 
@@ -676,9 +728,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.MouseEventArgs that contains event data.
   """
-  pass
- def OnLostStylusCapture(self,*args):
-  """
+        pass
+
+    def OnLostStylusCapture(self, *args):
+        """
   OnLostStylusCapture(self: UIElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.LostStylusCapture�attached event reaches 
@@ -693,9 +746,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.StylusEventArgs that contains event data.
   """
-  pass
- def OnLostTouchCapture(self,*args):
-  """
+        pass
+
+    def OnLostTouchCapture(self, *args):
+        """
   OnLostTouchCapture(self: UIElement,e: TouchEventArgs)
 
    Provides class handling for the System.Windows.UIElement.LostTouchCapture routed event that 
@@ -708,9 +762,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: A System.Windows.Input.TouchEventArgs that contains the event data.
   """
-  pass
- def OnManipulationBoundaryFeedback(self,*args):
-  """
+        pass
+
+    def OnManipulationBoundaryFeedback(self, *args):
+        """
   OnManipulationBoundaryFeedback(self: UIElement,e: ManipulationBoundaryFeedbackEventArgs)
 
    Called when the System.Windows.UIElement.ManipulationBoundaryFeedback event occurs.
@@ -719,9 +774,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The data for the event.
   """
-  pass
- def OnManipulationCompleted(self,*args):
-  """
+        pass
+
+    def OnManipulationCompleted(self, *args):
+        """
   OnManipulationCompleted(self: UIElement,e: ManipulationCompletedEventArgs)
 
    Called when the System.Windows.UIElement.ManipulationCompleted event occurs.
@@ -730,9 +786,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The data for the event.
   """
-  pass
- def OnManipulationDelta(self,*args):
-  """
+        pass
+
+    def OnManipulationDelta(self, *args):
+        """
   OnManipulationDelta(self: UIElement,e: ManipulationDeltaEventArgs)
 
    Called when the System.Windows.UIElement.ManipulationDelta event occurs.
@@ -741,9 +798,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The data for the event.
   """
-  pass
- def OnManipulationInertiaStarting(self,*args):
-  """
+        pass
+
+    def OnManipulationInertiaStarting(self, *args):
+        """
   OnManipulationInertiaStarting(self: UIElement,e: ManipulationInertiaStartingEventArgs)
 
    Called when the System.Windows.UIElement.ManipulationInertiaStarting event occurs.
@@ -752,9 +810,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The data for the event.
   """
-  pass
- def OnManipulationStarted(self,*args):
-  """
+        pass
+
+    def OnManipulationStarted(self, *args):
+        """
   OnManipulationStarted(self: UIElement,e: ManipulationStartedEventArgs)
 
    Called when the System.Windows.UIElement.ManipulationStarted event occurs.
@@ -763,9 +822,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The data for the event.
   """
-  pass
- def OnManipulationStarting(self,*args):
-  """
+        pass
+
+    def OnManipulationStarting(self, *args):
+        """
   OnManipulationStarting(self: UIElement,e: ManipulationStartingEventArgs)
 
    Provides class handling for the System.Windows.UIElement.ManipulationStarting routed event that 
@@ -778,9 +838,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: A System.Windows.Input.ManipulationStartingEventArgs  that contains the event data.
   """
-  pass
- def OnMouseDown(self,*args):
-  """
+        pass
+
+    def OnMouseDown(self, *args):
+        """
   OnMouseDown(self: UIElement,e: MouseButtonEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Mouse.MouseDown�attached event reaches an element 
@@ -797,9 +858,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
     reports details about the mouse button that was pressed and the handled state.
   """
-  pass
- def OnMouseEnter(self,*args):
-  """
+        pass
+
+    def OnMouseEnter(self, *args):
+        """
   OnMouseEnter(self: UIElement,e: MouseEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Mouse.MouseEnter�attached event is raised on this 
@@ -812,9 +874,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseLeave(self,*args):
-  """
+        pass
+
+    def OnMouseLeave(self, *args):
+        """
   OnMouseLeave(self: UIElement,e: MouseEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Mouse.MouseLeave�attached event is raised on this 
@@ -827,9 +890,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseLeftButtonDown(self,*args):
-  """
+        pass
+
+    def OnMouseLeftButtonDown(self, *args):
+        """
   OnMouseLeftButtonDown(self: UIElement,e: MouseButtonEventArgs)
 
    Invoked when an unhandled System.Windows.UIElement.MouseLeftButtonDown�routed event is raised on 
@@ -844,9 +908,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
     reports that the left mouse button was pressed.
   """
-  pass
- def OnMouseLeftButtonUp(self,*args):
-  """
+        pass
+
+    def OnMouseLeftButtonUp(self, *args):
+        """
   OnMouseLeftButtonUp(self: UIElement,e: MouseButtonEventArgs)
 
    Invoked when an unhandled System.Windows.UIElement.MouseLeftButtonUp�routed event reaches an 
@@ -863,9 +928,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
     reports that the left mouse button was released.
   """
-  pass
- def OnMouseMove(self,*args):
-  """
+        pass
+
+    def OnMouseMove(self, *args):
+        """
   OnMouseMove(self: UIElement,e: MouseEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Mouse.MouseMove�attached event reaches an element 
@@ -880,9 +946,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.MouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseRightButtonDown(self,*args):
-  """
+        pass
+
+    def OnMouseRightButtonDown(self, *args):
+        """
   OnMouseRightButtonDown(self: UIElement,e: MouseButtonEventArgs)
 
    Invoked when an unhandled System.Windows.UIElement.MouseRightButtonDown�routed event reaches an 
@@ -899,9 +966,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
     reports that the right mouse button was pressed.
   """
-  pass
- def OnMouseRightButtonUp(self,*args):
-  """
+        pass
+
+    def OnMouseRightButtonUp(self, *args):
+        """
   OnMouseRightButtonUp(self: UIElement,e: MouseButtonEventArgs)
 
    Invoked when an unhandled System.Windows.UIElement.MouseRightButtonUp�routed event reaches an 
@@ -918,9 +986,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
     reports that the right mouse button was released.
   """
-  pass
- def OnMouseUp(self,*args):
-  """
+        pass
+
+    def OnMouseUp(self, *args):
+        """
   OnMouseUp(self: UIElement,e: MouseButtonEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Mouse.MouseUp�routed event reaches an element in 
@@ -937,9 +1006,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
     reports that the mouse button was released.
   """
-  pass
- def OnMouseWheel(self,*args):
-  """
+        pass
+
+    def OnMouseWheel(self, *args):
+        """
   OnMouseWheel(self: UIElement,e: MouseWheelEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Mouse.MouseWheel�attached event reaches an 
@@ -954,9 +1024,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.MouseWheelEventArgs that contains the event data.
   """
-  pass
- def OnPreviewDragEnter(self,*args):
-  """
+        pass
+
+    def OnPreviewDragEnter(self, *args):
+        """
   OnPreviewDragEnter(self: UIElement,e: DragEventArgs)
 
    Invoked when an unhandled System.Windows.DragDrop.PreviewDragEnter�attached event reaches an 
@@ -971,9 +1042,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.DragEventArgs that contains the event data.
   """
-  pass
- def OnPreviewDragLeave(self,*args):
-  """
+        pass
+
+    def OnPreviewDragLeave(self, *args):
+        """
   OnPreviewDragLeave(self: UIElement,e: DragEventArgs)
 
    Invoked when an unhandled System.Windows.DragDrop.PreviewDragLeave�attached event reaches an 
@@ -988,9 +1060,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.DragEventArgs that contains the event data.
   """
-  pass
- def OnPreviewDragOver(self,*args):
-  """
+        pass
+
+    def OnPreviewDragOver(self, *args):
+        """
   OnPreviewDragOver(self: UIElement,e: DragEventArgs)
 
    Invoked when an unhandled System.Windows.DragDrop.PreviewDragOver�attached event reaches an 
@@ -1005,9 +1078,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.DragEventArgs that contains the event data.
   """
-  pass
- def OnPreviewDrop(self,*args):
-  """
+        pass
+
+    def OnPreviewDrop(self, *args):
+        """
   OnPreviewDrop(self: UIElement,e: DragEventArgs)
 
    Invoked when an unhandled System.Windows.DragDrop.PreviewDrop�attached event reaches an element 
@@ -1022,9 +1096,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.DragEventArgs that contains the event data.
   """
-  pass
- def OnPreviewGiveFeedback(self,*args):
-  """
+        pass
+
+    def OnPreviewGiveFeedback(self, *args):
+        """
   OnPreviewGiveFeedback(self: UIElement,e: GiveFeedbackEventArgs)
 
    Invoked when an unhandled System.Windows.DragDrop.PreviewGiveFeedback�attached event reaches an 
@@ -1039,9 +1114,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.GiveFeedbackEventArgs that contains the event data.
   """
-  pass
- def OnPreviewGotKeyboardFocus(self,*args):
-  """
+        pass
+
+    def OnPreviewGotKeyboardFocus(self, *args):
+        """
   OnPreviewGotKeyboardFocus(self: UIElement,e: KeyboardFocusChangedEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Keyboard.PreviewGotKeyboardFocus�attached event 
@@ -1056,9 +1132,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.KeyboardFocusChangedEventArgs that contains the event data.
   """
-  pass
- def OnPreviewKeyDown(self,*args):
-  """
+        pass
+
+    def OnPreviewKeyDown(self, *args):
+        """
   OnPreviewKeyDown(self: UIElement,e: KeyEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Keyboard.PreviewKeyDown�attached event reaches an 
@@ -1073,9 +1150,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.KeyEventArgs that contains the event data.
   """
-  pass
- def OnPreviewKeyUp(self,*args):
-  """
+        pass
+
+    def OnPreviewKeyUp(self, *args):
+        """
   OnPreviewKeyUp(self: UIElement,e: KeyEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Keyboard.PreviewKeyUp�attached event reaches an 
@@ -1090,9 +1168,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.KeyEventArgs that contains the event data.
   """
-  pass
- def OnPreviewLostKeyboardFocus(self,*args):
-  """
+        pass
+
+    def OnPreviewLostKeyboardFocus(self, *args):
+        """
   OnPreviewLostKeyboardFocus(self: UIElement,e: KeyboardFocusChangedEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Keyboard.PreviewKeyDown�attached event reaches an 
@@ -1107,9 +1186,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.KeyboardFocusChangedEventArgs that contains the event data.
   """
-  pass
- def OnPreviewMouseDown(self,*args):
-  """
+        pass
+
+    def OnPreviewMouseDown(self, *args):
+        """
   OnPreviewMouseDown(self: UIElement,e: MouseButtonEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Mouse.PreviewMouseDown attached�routed event 
@@ -1126,9 +1206,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
     reports that one or more mouse buttons were pressed.
   """
-  pass
- def OnPreviewMouseLeftButtonDown(self,*args):
-  """
+        pass
+
+    def OnPreviewMouseLeftButtonDown(self, *args):
+        """
   OnPreviewMouseLeftButtonDown(self: UIElement,e: MouseButtonEventArgs)
 
    Invoked when an unhandled System.Windows.UIElement.PreviewMouseLeftButtonDown�routed event 
@@ -1145,9 +1226,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
     reports that the left mouse button was pressed.
   """
-  pass
- def OnPreviewMouseLeftButtonUp(self,*args):
-  """
+        pass
+
+    def OnPreviewMouseLeftButtonUp(self, *args):
+        """
   OnPreviewMouseLeftButtonUp(self: UIElement,e: MouseButtonEventArgs)
 
    Invoked when an unhandled System.Windows.UIElement.PreviewMouseLeftButtonUp�routed event reaches 
@@ -1164,9 +1246,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
     reports that the left mouse button was released.
   """
-  pass
- def OnPreviewMouseMove(self,*args):
-  """
+        pass
+
+    def OnPreviewMouseMove(self, *args):
+        """
   OnPreviewMouseMove(self: UIElement,e: MouseEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Mouse.PreviewMouseMove�attached event reaches an 
@@ -1181,9 +1264,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.MouseEventArgs that contains the event data.
   """
-  pass
- def OnPreviewMouseRightButtonDown(self,*args):
-  """
+        pass
+
+    def OnPreviewMouseRightButtonDown(self, *args):
+        """
   OnPreviewMouseRightButtonDown(self: UIElement,e: MouseButtonEventArgs)
 
    Invoked when an unhandled System.Windows.UIElement.PreviewMouseRightButtonDown�routed event 
@@ -1200,9 +1284,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
     reports that the right mouse button was pressed.
   """
-  pass
- def OnPreviewMouseRightButtonUp(self,*args):
-  """
+        pass
+
+    def OnPreviewMouseRightButtonUp(self, *args):
+        """
   OnPreviewMouseRightButtonUp(self: UIElement,e: MouseButtonEventArgs)
 
    Invoked when an unhandled System.Windows.UIElement.PreviewMouseRightButtonUp�routed event 
@@ -1219,9 +1304,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
     reports that the right mouse button was released.
   """
-  pass
- def OnPreviewMouseUp(self,*args):
-  """
+        pass
+
+    def OnPreviewMouseUp(self, *args):
+        """
   OnPreviewMouseUp(self: UIElement,e: MouseButtonEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Mouse.PreviewMouseUp�attached event reaches an 
@@ -1238,9 +1324,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
     reports that one or more mouse buttons were released.
   """
-  pass
- def OnPreviewMouseWheel(self,*args):
-  """
+        pass
+
+    def OnPreviewMouseWheel(self, *args):
+        """
   OnPreviewMouseWheel(self: UIElement,e: MouseWheelEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Mouse.PreviewMouseWheel�attached event reaches an 
@@ -1255,9 +1342,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.MouseWheelEventArgs that contains the event data.
   """
-  pass
- def OnPreviewQueryContinueDrag(self,*args):
-  """
+        pass
+
+    def OnPreviewQueryContinueDrag(self, *args):
+        """
   OnPreviewQueryContinueDrag(self: UIElement,e: QueryContinueDragEventArgs)
 
    Invoked when an unhandled System.Windows.DragDrop.PreviewQueryContinueDrag�attached event 
@@ -1272,9 +1360,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.QueryContinueDragEventArgs that contains the event data.
   """
-  pass
- def OnPreviewStylusButtonDown(self,*args):
-  """
+        pass
+
+    def OnPreviewStylusButtonDown(self, *args):
+        """
   OnPreviewStylusButtonDown(self: UIElement,e: StylusButtonEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.PreviewStylusButtonDown�attached event 
@@ -1289,9 +1378,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.StylusButtonEventArgs that contains the event data.
   """
-  pass
- def OnPreviewStylusButtonUp(self,*args):
-  """
+        pass
+
+    def OnPreviewStylusButtonUp(self, *args):
+        """
   OnPreviewStylusButtonUp(self: UIElement,e: StylusButtonEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.PreviewStylusButtonUp�attached event 
@@ -1306,9 +1396,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.StylusButtonEventArgs that contains the event data.
   """
-  pass
- def OnPreviewStylusDown(self,*args):
-  """
+        pass
+
+    def OnPreviewStylusDown(self, *args):
+        """
   OnPreviewStylusDown(self: UIElement,e: StylusDownEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.PreviewStylusDown�attached event reaches 
@@ -1323,9 +1414,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.StylusDownEventArgs that contains the event data.
   """
-  pass
- def OnPreviewStylusInAirMove(self,*args):
-  """
+        pass
+
+    def OnPreviewStylusInAirMove(self, *args):
+        """
   OnPreviewStylusInAirMove(self: UIElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.PreviewStylusInAirMove�attached event 
@@ -1340,9 +1432,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.StylusEventArgs that contains the event data.
   """
-  pass
- def OnPreviewStylusInRange(self,*args):
-  """
+        pass
+
+    def OnPreviewStylusInRange(self, *args):
+        """
   OnPreviewStylusInRange(self: UIElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.PreviewStylusInRange�attached event 
@@ -1357,9 +1450,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.StylusEventArgs that contains the event data.
   """
-  pass
- def OnPreviewStylusMove(self,*args):
-  """
+        pass
+
+    def OnPreviewStylusMove(self, *args):
+        """
   OnPreviewStylusMove(self: UIElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.PreviewStylusMove�attached event reaches 
@@ -1374,9 +1468,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.StylusEventArgs that contains the event data.
   """
-  pass
- def OnPreviewStylusOutOfRange(self,*args):
-  """
+        pass
+
+    def OnPreviewStylusOutOfRange(self, *args):
+        """
   OnPreviewStylusOutOfRange(self: UIElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.PreviewStylusOutOfRange�attached event 
@@ -1391,9 +1486,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.StylusEventArgs that contains the event data.
   """
-  pass
- def OnPreviewStylusSystemGesture(self,*args):
-  """
+        pass
+
+    def OnPreviewStylusSystemGesture(self, *args):
+        """
   OnPreviewStylusSystemGesture(self: UIElement,e: StylusSystemGestureEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.PreviewStylusSystemGesture�attached event 
@@ -1408,9 +1504,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.StylusSystemGestureEventArgs that contains the event data.
   """
-  pass
- def OnPreviewStylusUp(self,*args):
-  """
+        pass
+
+    def OnPreviewStylusUp(self, *args):
+        """
   OnPreviewStylusUp(self: UIElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.PreviewStylusUp�attached event reaches an 
@@ -1425,9 +1522,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.StylusEventArgs that contains the event data.
   """
-  pass
- def OnPreviewTextInput(self,*args):
-  """
+        pass
+
+    def OnPreviewTextInput(self, *args):
+        """
   OnPreviewTextInput(self: UIElement,e: TextCompositionEventArgs)
 
    Invoked when an unhandled System.Windows.Input.TextCompositionManager.PreviewTextInput�attached 
@@ -1442,9 +1540,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.TextCompositionEventArgs that contains the event data.
   """
-  pass
- def OnPreviewTouchDown(self,*args):
-  """
+        pass
+
+    def OnPreviewTouchDown(self, *args):
+        """
   OnPreviewTouchDown(self: UIElement,e: TouchEventArgs)
 
    Provides class handling for the System.Windows.UIElement.PreviewTouchDown routed event that 
@@ -1457,9 +1556,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: A System.Windows.Input.TouchEventArgs that contains the event data.
   """
-  pass
- def OnPreviewTouchMove(self,*args):
-  """
+        pass
+
+    def OnPreviewTouchMove(self, *args):
+        """
   OnPreviewTouchMove(self: UIElement,e: TouchEventArgs)
 
    Provides class handling for the System.Windows.UIElement.PreviewTouchMove routed event that 
@@ -1472,9 +1572,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: A System.Windows.Input.TouchEventArgs that contains the event data.
   """
-  pass
- def OnPreviewTouchUp(self,*args):
-  """
+        pass
+
+    def OnPreviewTouchUp(self, *args):
+        """
   OnPreviewTouchUp(self: UIElement,e: TouchEventArgs)
 
    Provides class handling for the System.Windows.UIElement.PreviewTouchUp routed event that occurs 
@@ -1487,9 +1588,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: A System.Windows.Input.TouchEventArgs that contains the event data.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: FrameworkElement,e: DependencyPropertyChangedEventArgs)
 
    Invoked whenever the effective value of any dependency property on this 
@@ -1508,9 +1610,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The event data that describes the property that changed,as well as old and new values.
   """
-  pass
- def OnQueryContinueDrag(self,*args):
-  """
+        pass
+
+    def OnQueryContinueDrag(self, *args):
+        """
   OnQueryContinueDrag(self: UIElement,e: QueryContinueDragEventArgs)
 
    Invoked when an unhandled System.Windows.DragDrop.QueryContinueDrag�attached event reaches an 
@@ -1525,9 +1628,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.QueryContinueDragEventArgs that contains the event data.
   """
-  pass
- def OnQueryCursor(self,*args):
-  """
+        pass
+
+    def OnQueryCursor(self, *args):
+        """
   OnQueryCursor(self: UIElement,e: QueryCursorEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Mouse.QueryCursor�attached event reaches an 
@@ -1542,9 +1646,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.QueryCursorEventArgs that contains the event data.
   """
-  pass
- def OnRender(self,*args):
-  """
+        pass
+
+    def OnRender(self, *args):
+        """
   OnRender(self: ToolBarTray,dc: DrawingContext)
 
    Called when a System.Windows.Controls.ToolBarTray is displayed to get the Drawing Context (DC) 
@@ -1557,9 +1662,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    dc: Drawing context to use to render the System.Windows.Controls.ToolBarTray.
   """
-  pass
- def OnRenderSizeChanged(self,*args):
-  """
+        pass
+
+    def OnRenderSizeChanged(self, *args):
+        """
   OnRenderSizeChanged(self: FrameworkElement,sizeInfo: SizeChangedInfo)
 
    Raises the System.Windows.FrameworkElement.SizeChanged event,using the specified information as 
@@ -1572,9 +1678,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    sizeInfo: Details of the old and new size involved in the change.
   """
-  pass
- def OnStyleChanged(self,*args):
-  """
+        pass
+
+    def OnStyleChanged(self, *args):
+        """
   OnStyleChanged(self: FrameworkElement,oldStyle: Style,newStyle: Style)
 
    Invoked when the style in use on this element changes,which will invalidate the layout.
@@ -1585,9 +1692,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    newStyle: The new style.
   """
-  pass
- def OnStylusButtonDown(self,*args):
-  """
+        pass
+
+    def OnStylusButtonDown(self, *args):
+        """
   OnStylusButtonDown(self: UIElement,e: StylusButtonEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.StylusButtonDown�attached event reaches an 
@@ -1602,9 +1710,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.StylusButtonEventArgs that contains the event data.
   """
-  pass
- def OnStylusButtonUp(self,*args):
-  """
+        pass
+
+    def OnStylusButtonUp(self, *args):
+        """
   OnStylusButtonUp(self: UIElement,e: StylusButtonEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.StylusButtonUp�attached event reaches an 
@@ -1619,9 +1728,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.StylusButtonEventArgs that contains the event data.
   """
-  pass
- def OnStylusDown(self,*args):
-  """
+        pass
+
+    def OnStylusDown(self, *args):
+        """
   OnStylusDown(self: UIElement,e: StylusDownEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.StylusDown�attached event reaches an 
@@ -1636,9 +1746,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.StylusDownEventArgs that contains the event data.
   """
-  pass
- def OnStylusEnter(self,*args):
-  """
+        pass
+
+    def OnStylusEnter(self, *args):
+        """
   OnStylusEnter(self: UIElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.StylusEnter�attached event is raised by 
@@ -1651,9 +1762,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.StylusEventArgs that contains the event data.
   """
-  pass
- def OnStylusInAirMove(self,*args):
-  """
+        pass
+
+    def OnStylusInAirMove(self, *args):
+        """
   OnStylusInAirMove(self: UIElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.StylusInAirMove�attached event reaches an 
@@ -1668,9 +1780,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.StylusEventArgs that contains the event data.
   """
-  pass
- def OnStylusInRange(self,*args):
-  """
+        pass
+
+    def OnStylusInRange(self, *args):
+        """
   OnStylusInRange(self: UIElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.StylusInRange�attached event reaches an 
@@ -1685,9 +1798,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.StylusEventArgs that contains the event data.
   """
-  pass
- def OnStylusLeave(self,*args):
-  """
+        pass
+
+    def OnStylusLeave(self, *args):
+        """
   OnStylusLeave(self: UIElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.StylusLeave�attached event is raised by 
@@ -1700,9 +1814,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.StylusEventArgs that contains the event data.
   """
-  pass
- def OnStylusMove(self,*args):
-  """
+        pass
+
+    def OnStylusMove(self, *args):
+        """
   OnStylusMove(self: UIElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.StylusMove�attached event reaches an 
@@ -1717,9 +1832,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.StylusEventArgs that contains the event data.
   """
-  pass
- def OnStylusOutOfRange(self,*args):
-  """
+        pass
+
+    def OnStylusOutOfRange(self, *args):
+        """
   OnStylusOutOfRange(self: UIElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.StylusOutOfRange�attached event reaches an 
@@ -1734,9 +1850,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.StylusEventArgs that contains the event data.
   """
-  pass
- def OnStylusSystemGesture(self,*args):
-  """
+        pass
+
+    def OnStylusSystemGesture(self, *args):
+        """
   OnStylusSystemGesture(self: UIElement,e: StylusSystemGestureEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.StylusSystemGesture�attached event reaches 
@@ -1751,9 +1868,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.StylusSystemGestureEventArgs that contains the event data.
   """
-  pass
- def OnStylusUp(self,*args):
-  """
+        pass
+
+    def OnStylusUp(self, *args):
+        """
   OnStylusUp(self: UIElement,e: StylusEventArgs)
 
    Invoked when an unhandled System.Windows.Input.Stylus.StylusUp�attached event reaches an element 
@@ -1768,9 +1886,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.StylusEventArgs that contains the event data.
   """
-  pass
- def OnTextInput(self,*args):
-  """
+        pass
+
+    def OnTextInput(self, *args):
+        """
   OnTextInput(self: UIElement,e: TextCompositionEventArgs)
 
    Invoked when an unhandled System.Windows.Input.TextCompositionManager.TextInput�attached event 
@@ -1785,9 +1904,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: The System.Windows.Input.TextCompositionEventArgs that contains the event data.
   """
-  pass
- def OnToolTipClosing(self,*args):
-  """
+        pass
+
+    def OnToolTipClosing(self, *args):
+        """
   OnToolTipClosing(self: FrameworkElement,e: ToolTipEventArgs)
 
    Invoked whenever an unhandled System.Windows.FrameworkElement.ToolTipClosing routed event 
@@ -1800,9 +1920,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: Provides data about the event.
   """
-  pass
- def OnToolTipOpening(self,*args):
-  """
+        pass
+
+    def OnToolTipOpening(self, *args):
+        """
   OnToolTipOpening(self: FrameworkElement,e: ToolTipEventArgs)
 
    Invoked whenever the System.Windows.FrameworkElement.ToolTipOpening routed event reaches this 
@@ -1815,9 +1936,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: Provides data about the event.
   """
-  pass
- def OnTouchDown(self,*args):
-  """
+        pass
+
+    def OnTouchDown(self, *args):
+        """
   OnTouchDown(self: UIElement,e: TouchEventArgs)
 
    Provides class handling for the System.Windows.UIElement.TouchDown routed event that occurs when 
@@ -1830,9 +1952,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: A System.Windows.Input.TouchEventArgs that contains the event data.
   """
-  pass
- def OnTouchEnter(self,*args):
-  """
+        pass
+
+    def OnTouchEnter(self, *args):
+        """
   OnTouchEnter(self: UIElement,e: TouchEventArgs)
 
    Provides class handling for the System.Windows.UIElement.TouchEnter routed event that occurs 
@@ -1845,9 +1968,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: A System.Windows.Input.TouchEventArgs that contains the event data.
   """
-  pass
- def OnTouchLeave(self,*args):
-  """
+        pass
+
+    def OnTouchLeave(self, *args):
+        """
   OnTouchLeave(self: UIElement,e: TouchEventArgs)
 
    Provides class handling for the System.Windows.UIElement.TouchLeave routed event that occurs 
@@ -1860,9 +1984,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: A System.Windows.Input.TouchEventArgs that contains the event data.
   """
-  pass
- def OnTouchMove(self,*args):
-  """
+        pass
+
+    def OnTouchMove(self, *args):
+        """
   OnTouchMove(self: UIElement,e: TouchEventArgs)
 
    Provides class handling for the System.Windows.UIElement.TouchMove routed event that occurs when 
@@ -1875,9 +2000,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: A System.Windows.Input.TouchEventArgs that contains the event data.
   """
-  pass
- def OnTouchUp(self,*args):
-  """
+        pass
+
+    def OnTouchUp(self, *args):
+        """
   OnTouchUp(self: UIElement,e: TouchEventArgs)
 
    Provides class handling for the System.Windows.UIElement.TouchUp routed event that occurs when a 
@@ -1890,9 +2016,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    e: A System.Windows.Input.TouchEventArgs that contains the event data.
   """
-  pass
- def OnVisualChildrenChanged(self,*args):
-  """
+        pass
+
+    def OnVisualChildrenChanged(self, *args):
+        """
   OnVisualChildrenChanged(self: Visual,visualAdded: DependencyObject,visualRemoved: DependencyObject)
 
    Called when the System.Windows.Media.VisualCollection of the visual object is modified.
@@ -1903,9 +2030,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    visualRemoved: The System.Windows.Media.Visual that was removed from the collection
   """
-  pass
- def OnVisualParentChanged(self,*args):
-  """
+        pass
+
+    def OnVisualParentChanged(self, *args):
+        """
   OnVisualParentChanged(self: FrameworkElement,oldParent: DependencyObject)
 
    Invoked when the parent of this element in the visual tree is changed. Overrides 
@@ -1920,9 +2048,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
     previously.
   """
-  pass
- def ParentLayoutInvalidated(self,*args):
-  """
+        pass
+
+    def ParentLayoutInvalidated(self, *args):
+        """
   ParentLayoutInvalidated(self: FrameworkElement,child: UIElement)
 
    Supports incremental layout implementations in specialized subclasses of 
@@ -1941,9 +2070,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    child: The child element reporting the change.
   """
-  pass
- def RemoveLogicalChild(self,*args):
-  """
+        pass
+
+    def RemoveLogicalChild(self, *args):
+        """
   RemoveLogicalChild(self: FrameworkElement,child: object)
 
    Removes the provided object from this element's logical tree. System.Windows.FrameworkElement 
@@ -1956,9 +2086,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    child: The element to remove.
   """
-  pass
- def RemoveVisualChild(self,*args):
-  """
+        pass
+
+    def RemoveVisualChild(self, *args):
+        """
   RemoveVisualChild(self: Visual,child: Visual)
 
    Removes the parent-child relationship between two visuals.
@@ -1967,10 +2098,11 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    child: The child visual object to remove from the parent visual.
   """
-  pass
- @staticmethod
- def SetIsLocked(element,value):
-  """
+        pass
+
+    @staticmethod
+    def SetIsLocked(element, value):
+        """
   SetIsLocked(element: DependencyObject,value: bool)
 
    Writes the value of the System.Windows.Controls.ToolBarTray.IsLocked property to the specified 
@@ -1985,9 +2117,10 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    value: The property value to set.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -2004,12 +2137,16 @@ class ToolBarTray(FrameworkElement,IResource,IAnimatable,IInputElement,IFramewor
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Background=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a brush to use for the background color of the System.Windows.Controls.ToolBarTray.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Background = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a brush to use for the background color of the System.Windows.Controls.ToolBarTray.
 
 
 
@@ -2021,31 +2158,39 @@ Set: Background(self: ToolBarTray)=value
 
 """
 
- DefaultStyleKey=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the key to use to reference the style for this control,when theme styles are used or defined.
+    DefaultStyleKey = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the key to use to reference the style for this control,when theme styles are used or defined.
 
 
 
 """
 
- HasEffectiveKeyboardFocus=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasEffectiveKeyboardFocus = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- InheritanceBehavior=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the scope limits for property value inheritance,resource key lookup,and RelativeSource FindAncestor lookup.
-
-
-
-"""
-
- IsEnabledCore=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that becomes the return value of System.Windows.UIElement.IsEnabled in derived classes.
+    InheritanceBehavior = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the scope limits for property value inheritance,resource key lookup,and RelativeSource FindAncestor lookup.
 
 
 
 """
 
- IsLocked=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether a System.Windows.Controls.ToolBar can be moved inside a System.Windows.Controls.ToolBarTray.
+    IsEnabledCore = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that becomes the return value of System.Windows.UIElement.IsEnabled in derived classes.
+
+
+
+"""
+
+    IsLocked = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value that indicates whether a System.Windows.Controls.ToolBar can be moved inside a System.Windows.Controls.ToolBarTray.
 
 
 
@@ -2057,15 +2202,19 @@ Set: IsLocked(self: ToolBarTray)=value
 
 """
 
- LogicalChildren=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an enumerator to the logical child elements of a System.Windows.Controls.ToolBarTray.
+    LogicalChildren = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets an enumerator to the logical child elements of a System.Windows.Controls.ToolBarTray.
 
 
 
 """
 
- Orientation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies the orientation of a System.Windows.Controls.ToolBarTray.
+    Orientation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies the orientation of a System.Windows.Controls.ToolBarTray.
 
 
 
@@ -2077,15 +2226,17 @@ Set: Orientation(self: ToolBarTray)=value
 
 """
 
- StylusPlugIns=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of all stylus plug-in (customization) objects associated with this element.
+    StylusPlugIns = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a collection of all stylus plug-in (customization) objects associated with this element.
 
 
 
 """
 
- ToolBars=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of System.Windows.Controls.ToolBar elements in the System.Windows.Controls.ToolBarTray.
+    ToolBars = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the collection of System.Windows.Controls.ToolBar elements in the System.Windows.Controls.ToolBarTray.
 
 
 
@@ -2095,141 +2246,177 @@ Get: ToolBars(self: ToolBarTray) -> Collection[ToolBar]
 
 """
 
- VisualBitmapEffect=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Windows.Media.Effects.BitmapEffect value for the System.Windows.Media.Visual.
+    VisualBitmapEffect = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Windows.Media.Effects.BitmapEffect value for the System.Windows.Media.Visual.
 
 
 
 """
 
- VisualBitmapEffectInput=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Windows.Media.Effects.BitmapEffectInput value for the System.Windows.Media.Visual.
+    VisualBitmapEffectInput = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Windows.Media.Effects.BitmapEffectInput value for the System.Windows.Media.Visual.
 
 
 
 """
 
- VisualBitmapScalingMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Windows.Media.BitmapScalingMode for the System.Windows.Media.Visual.
+    VisualBitmapScalingMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Windows.Media.BitmapScalingMode for the System.Windows.Media.Visual.
 
 
 
 """
 
- VisualCacheMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a cached representation of the System.Windows.Media.Visual.
+    VisualCacheMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a cached representation of the System.Windows.Media.Visual.
 
 
 
 """
 
- VisualChildrenCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of children that are currently visible.
+    VisualChildrenCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the number of children that are currently visible.
 
 
 
 """
 
- VisualClearTypeHint=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Windows.Media.ClearTypeHint that determines how ClearType is rendered in the System.Windows.Media.Visual.
+    VisualClearTypeHint = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Windows.Media.ClearTypeHint that determines how ClearType is rendered in the System.Windows.Media.Visual.
 
 
 
 """
 
- VisualClip=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the clip region of the System.Windows.Media.Visual as a System.Windows.Media.Geometry value.
+    VisualClip = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the clip region of the System.Windows.Media.Visual as a System.Windows.Media.Geometry value.
 
 
 
 """
 
- VisualEdgeMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the edge mode of the System.Windows.Media.Visual as an System.Windows.Media.EdgeMode value.
+    VisualEdgeMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the edge mode of the System.Windows.Media.Visual as an System.Windows.Media.EdgeMode value.
 
 
 
 """
 
- VisualEffect=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the bitmap effect to apply to the System.Windows.Media.Visual.
+    VisualEffect = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the bitmap effect to apply to the System.Windows.Media.Visual.
 
 
 
 """
 
- VisualOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the offset value of the visual object.
+    VisualOffset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the offset value of the visual object.
 
 
 
 """
 
- VisualOpacity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the opacity of the System.Windows.Media.Visual.
+    VisualOpacity = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the opacity of the System.Windows.Media.Visual.
 
 
 
 """
 
- VisualOpacityMask=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Windows.Media.Brush value that represents the opacity mask of the System.Windows.Media.Visual.
+    VisualOpacityMask = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Windows.Media.Brush value that represents the opacity mask of the System.Windows.Media.Visual.
 
 
 
 """
 
- VisualParent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the visual tree parent of the visual object.
+    VisualParent = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the visual tree parent of the visual object.
 
 
 
 """
 
- VisualScrollableAreaClip=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a clipped scrollable area for the System.Windows.Media.Visual.
+    VisualScrollableAreaClip = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a clipped scrollable area for the System.Windows.Media.Visual.
 
 
 
 """
 
- VisualTextHintingMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Windows.Media.TextHintingMode of the System.Windows.Media.Visual.
+    VisualTextHintingMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Windows.Media.TextHintingMode of the System.Windows.Media.Visual.
 
 
 
 """
 
- VisualTextRenderingMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Windows.Media.TextRenderingMode of the System.Windows.Media.Visual.
+    VisualTextRenderingMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Windows.Media.TextRenderingMode of the System.Windows.Media.Visual.
 
 
 
 """
 
- VisualTransform=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Windows.Media.Transform value for the System.Windows.Media.Visual.
+    VisualTransform = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Windows.Media.Transform value for the System.Windows.Media.Visual.
 
 
 
 """
 
- VisualXSnappingGuidelines=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the x-coordinate (vertical) guideline collection.
+    VisualXSnappingGuidelines = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the x-coordinate (vertical) guideline collection.
 
 
 
 """
 
- VisualYSnappingGuidelines=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the y-coordinate (horizontal) guideline collection.
+    VisualYSnappingGuidelines = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the y-coordinate (horizontal) guideline collection.
 
 
 
 """
 
-
- BackgroundProperty=None
- IsLockedProperty=None
- OrientationProperty=None
-
+    BackgroundProperty = None
+    IsLockedProperty = None
+    OrientationProperty = None

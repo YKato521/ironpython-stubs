@@ -1,13 +1,14 @@
 class ListBindingConverter(TypeConverter):
- """
+    """
  Provides a type converter to convert System.Windows.Forms.Binding objects to and from various other representations.
 
  
 
  ListBindingConverter()
  """
- def CanConvertTo(self,*__args):
-  """
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: ListBindingConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -18,9 +19,10 @@ class ListBindingConverter(TypeConverter):
 
    Returns: true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: ListBindingConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -35,9 +37,10 @@ class ListBindingConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def CreateInstance(self,*__args):
-  """
+        pass
+
+    def CreateInstance(self, *__args):
+        """
   CreateInstance(self: ListBindingConverter,context: ITypeDescriptorContext,propertyValues: IDictionary) -> object
 
   
@@ -50,9 +53,10 @@ class ListBindingConverter(TypeConverter):
 
     cannot be created. This method always returns null.
   """
-  pass
- def GetCreateInstanceSupported(self,context=None):
-  """
+        pass
+
+    def GetCreateInstanceSupported(self, context=None):
+        """
   GetCreateInstanceSupported(self: ListBindingConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -65,4 +69,4 @@ class ListBindingConverter(TypeConverter):
 
     new value; otherwise,false.
   """
-  pass
+        pass

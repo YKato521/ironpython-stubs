@@ -1,7 +1,8 @@
-class AnalyticalModel(Element,IDisposable):
- """ AnalyticalModel represents the Analytical Model portion of a given Structural Element. """
- def Approximate(self,enableApproximation):
-  """
+class AnalyticalModel(Element, IDisposable):
+    """ AnalyticalModel represents the Analytical Model portion of a given Structural Element. """
+
+    def Approximate(self, enableApproximation):
+        """
   Approximate(self: AnalyticalModel,enableApproximation: bool)
 
    Switches between non-approximated (e.g.,Curved) Analytical Models
@@ -16,9 +17,10 @@ class AnalyticalModel(Element,IDisposable):
 
    enableApproximation: Enable/disable approximated function.
   """
-  pass
- def CanApproximate(self):
-  """
+        pass
+
+    def CanApproximate(self):
+        """
   CanApproximate(self: AnalyticalModel) -> bool
 
   
@@ -27,9 +29,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: True if Analytical Model can be approximated; false otherwise.
   """
-  pass
- def CanDisableAutoDetect(self,direction):
-  """
+        pass
+
+    def CanDisableAutoDetect(self, direction):
+        """
   CanDisableAutoDetect(self: AnalyticalModel,direction: AnalyticalDirection) -> bool
 
   
@@ -42,9 +45,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: True if Analytical Auto-detect can be disabled,false otherwise
   """
-  pass
- def CanHaveRigidLinks(self):
-  """
+        pass
+
+    def CanHaveRigidLinks(self):
+        """
   CanHaveRigidLinks(self: AnalyticalModel) -> bool
 
   
@@ -53,9 +57,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: True if Analytical Model supports Rigid Links; false otherwise.
   """
-  pass
- def CanUseHardPoints(self):
-  """
+        pass
+
+    def CanUseHardPoints(self):
+        """
   CanUseHardPoints(self: AnalyticalModel) -> bool
 
   
@@ -64,9 +69,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: True if Analytical Model can use Hard Points,false otherwise.
   """
-  pass
- def CloneAdjustment(self,source,end):
-  """
+        pass
+
+    def CloneAdjustment(self, source, end):
+        """
   CloneAdjustment(self: AnalyticalModel,source: AnalyticalModel,end: int)
 
    The method clones the adjustment of one end of the AM on another AM,
@@ -77,9 +83,10 @@ class AnalyticalModel(Element,IDisposable):
 
      One of the Analytical Model ends
   """
-  pass
- def Disconnect(self,selector):
-  """
+        pass
+
+    def Disconnect(self, selector):
+        """
   Disconnect(self: AnalyticalModel,selector: AnalyticalElementSelector)
 
    Unjoin from Hub Element.
@@ -88,12 +95,14 @@ class AnalyticalModel(Element,IDisposable):
 
    selector: End of the analytical model.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def Enable(self,enable):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def Enable(self, enable):
+        """
   Enable(self: AnalyticalModel,enable: bool)
 
    Enables or disables Analytical Model,if the Element allows a one-operation 
@@ -106,9 +115,10 @@ class AnalyticalModel(Element,IDisposable):
 
    enable: Enable (true) or disable (false) Analytical Model.
   """
-  pass
- def EnableAutoDetect(self,direction,enabled):
-  """
+        pass
+
+    def EnableAutoDetect(self, direction, enabled):
+        """
   EnableAutoDetect(self: AnalyticalModel,direction: AnalyticalDirection,enabled: bool)
 
    Enable or disable Analytical Auto-detect.
@@ -119,9 +129,10 @@ class AnalyticalModel(Element,IDisposable):
 
    enabled: Turn Analytical Auto-detect on (true) or off (false)
   """
-  pass
- def GetAnalyticalModelSketchComponents(self):
-  """
+        pass
+
+    def GetAnalyticalModelSketchComponents(self):
+        """
   GetAnalyticalModelSketchComponents(self: AnalyticalModel) -> IList[AnalyticalModelSketchComponent]
 
   
@@ -146,9 +157,10 @@ class AnalyticalModel(Element,IDisposable):
 
      return an empty array.
   """
-  pass
- def GetAnalyticalModelSupports(self):
-  """
+        pass
+
+    def GetAnalyticalModelSupports(self):
+        """
   GetAnalyticalModelSupports(self: AnalyticalModel) -> IList[AnalyticalModelSupport]
 
   
@@ -163,9 +175,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: Array of AnalyticalModelSupport objects,each one representing a support.
   """
-  pass
- def GetAnalyzeAs(self):
-  """
+        pass
+
+    def GetAnalyzeAs(self):
+        """
   GetAnalyzeAs(self: AnalyticalModel) -> AnalyzeAs
 
   
@@ -174,9 +187,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: AnalyzeAs enumeration,indicating how Analytical Model is analyzed.
   """
-  pass
- def GetApproximationDeviation(self):
-  """
+        pass
+
+    def GetApproximationDeviation(self):
+        """
   GetApproximationDeviation(self: AnalyticalModel) -> float
 
   
@@ -189,9 +203,10 @@ class AnalyticalModel(Element,IDisposable):
 
     make sense,then this will be 0.0.
   """
-  pass
- def GetAutoDetectMatchedElements(self,direction):
-  """
+        pass
+
+    def GetAutoDetectMatchedElements(self, direction):
+        """
   GetAutoDetectMatchedElements(self: AnalyticalModel,direction: AnalyticalDirection) -> ICollection[ElementId]
 
   
@@ -208,12 +223,14 @@ class AnalyticalModel(Element,IDisposable):
 
     may be empty if this Element is not Auto-detecting against anything.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetCurve(self):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetCurve(self):
+        """
   GetCurve(self: AnalyticalModel) -> Curve
 
   
@@ -222,9 +239,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: Single curve of the Analytical Model.
   """
-  pass
- def GetCurves(self,curveType):
-  """
+        pass
+
+    def GetCurves(self, curveType):
+        """
   GetCurves(self: AnalyticalModel,curveType: AnalyticalCurveType) -> IList[Curve]
 
   
@@ -237,9 +255,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: An array of curves representing analytical model.
   """
-  pass
- def GetElementId(self):
-  """
+        pass
+
+    def GetElementId(self):
+        """
   GetElementId(self: AnalyticalModel) -> ElementId
 
   
@@ -252,9 +271,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: Element Id for a structural element.
   """
-  pass
- def GetLocalCoordinateSystem(self):
-  """
+        pass
+
+    def GetLocalCoordinateSystem(self):
+        """
   GetLocalCoordinateSystem(self: AnalyticalModel) -> Transform
 
   
@@ -271,9 +291,10 @@ class AnalyticalModel(Element,IDisposable):
 
     which local coordinate system was calculated.
   """
-  pass
- def GetManualAdjustmentMatchedElements(self):
-  """
+        pass
+
+    def GetManualAdjustmentMatchedElements(self):
+        """
   GetManualAdjustmentMatchedElements(self: AnalyticalModel) -> ICollection[ElementId]
 
   
@@ -292,9 +313,10 @@ class AnalyticalModel(Element,IDisposable):
 
     participating in locked Manual Analytical Adjustment.
   """
-  pass
- def GetOffset(self,selector):
-  """
+        pass
+
+    def GetOffset(self, selector):
+        """
   GetOffset(self: AnalyticalModel,selector: AnalyticalElementSelector) -> XYZ
 
   
@@ -307,9 +329,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: Offset of analytical model from base analytical model at the given end.
   """
-  pass
- def GetPoint(self):
-  """
+        pass
+
+    def GetPoint(self):
+        """
   GetPoint(self: AnalyticalModel) -> XYZ
 
   
@@ -318,9 +341,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: Point of the Analytical Model.
   """
-  pass
- def GetReference(self,selector):
-  """
+        pass
+
+    def GetReference(self, selector):
+        """
   GetReference(self: AnalyticalModel,selector: AnalyticalModelSelector) -> Reference
 
   
@@ -333,9 +357,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: Requested reference.
   """
-  pass
- def GetRigidLink(self,selector):
-  """
+        pass
+
+    def GetRigidLink(self, selector):
+        """
   GetRigidLink(self: AnalyticalModel,selector: AnalyticalModelSelector) -> Curve
 
   
@@ -348,9 +373,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: Rigid link satisfying selector.
   """
-  pass
- def HasDeletedLinks(self):
-  """
+        pass
+
+    def HasDeletedLinks(self):
+        """
   HasDeletedLinks(self: AnalyticalModel) -> bool
 
   
@@ -359,9 +385,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: True if contains,false otherwise.
   """
-  pass
- def HasRigidLinksWith(self,neighborId):
-  """
+        pass
+
+    def HasRigidLinksWith(self, neighborId):
+        """
   HasRigidLinksWith(self: AnalyticalModel,neighborId: ElementId) -> bool
 
   
@@ -374,9 +401,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: true if Rigid Links exist,false otherwise.
   """
-  pass
- def IsAnalyzeAsValid(self,analyzeAs):
-  """
+        pass
+
+    def IsAnalyzeAsValid(self, analyzeAs):
+        """
   IsAnalyzeAsValid(self: AnalyticalModel,analyzeAs: AnalyzeAs) -> bool
 
   
@@ -389,9 +417,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: True if valid; false otherwise.
   """
-  pass
- def IsApproximated(self):
-  """
+        pass
+
+    def IsApproximated(self):
+        """
   IsApproximated(self: AnalyticalModel) -> bool
 
   
@@ -404,9 +433,10 @@ class AnalyticalModel(Element,IDisposable):
 
     approximation is meaningless for Analytical Model.
   """
-  pass
- def IsAutoDetectEnabled(self,direction):
-  """
+        pass
+
+    def IsAutoDetectEnabled(self, direction):
+        """
   IsAutoDetectEnabled(self: AnalyticalModel,direction: AnalyticalDirection) -> bool
 
   
@@ -419,9 +449,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: True if enabled in the given direction,false otherwise.
   """
-  pass
- def IsElementFullySupported(self):
-  """
+        pass
+
+    def IsElementFullySupported(self):
+        """
   IsElementFullySupported(self: AnalyticalModel) -> bool
 
   
@@ -430,9 +461,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: True if Analytical Model is fully supported,false otherwise.
   """
-  pass
- def IsEnabled(self):
-  """
+        pass
+
+    def IsEnabled(self):
+        """
   IsEnabled(self: AnalyticalModel) -> bool
 
   
@@ -441,9 +473,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: True if Analytical Model is enabled,false otherwise.
   """
-  pass
- def IsManuallyAdjusted(self):
-  """
+        pass
+
+    def IsManuallyAdjusted(self):
+        """
   IsManuallyAdjusted(self: AnalyticalModel) -> bool
 
   
@@ -452,18 +485,20 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: True if user has manually adjusted the Analytical Model; false otherwise.
   """
-  pass
- def IsModified(self):
-  """
+        pass
+
+    def IsModified(self):
+        """
   IsModified(self: AnalyticalModel) -> bool
 
   
 
    Checks if AM has been adjusted from auto-detect at any end.
   """
-  pass
- def IsSingleCurve(self):
-  """
+        pass
+
+    def IsSingleCurve(self):
+        """
   IsSingleCurve(self: AnalyticalModel) -> bool
 
   
@@ -472,9 +507,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: True if Analytical Model can be expressed as a single curve,false otherwise.
   """
-  pass
- def IsSinglePoint(self):
-  """
+        pass
+
+    def IsSinglePoint(self):
+        """
   IsSinglePoint(self: AnalyticalModel) -> bool
 
   
@@ -483,9 +519,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: True if Analytical Model can be expressed as a single point,false otherwise.
   """
-  pass
- def IsValidDirectionForAutoDetect(self,direction):
-  """
+        pass
+
+    def IsValidDirectionForAutoDetect(self, direction):
+        """
   IsValidDirectionForAutoDetect(self: AnalyticalModel,direction: AnalyticalDirection) -> bool
 
   
@@ -498,9 +535,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: True if direction is valid,false otherwise.
   """
-  pass
- def IsValidForManualAdjustment(self,reference):
-  """
+        pass
+
+    def IsValidForManualAdjustment(self, reference):
+        """
   IsValidForManualAdjustment(self: AnalyticalModel,reference: Reference) -> bool
 
   
@@ -517,9 +555,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: True if reference can be used,false otherwise.
   """
-  pass
- def IsValidManualAdjustmentSource(self,source,adjustmentDirection):
-  """
+        pass
+
+    def IsValidManualAdjustmentSource(self, source, adjustmentDirection):
+        """
   IsValidManualAdjustmentSource(self: AnalyticalModel,source: Reference,adjustmentDirection: AnalyticalDirection) -> bool
 
   
@@ -538,9 +577,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: True if reference can be used as source; false otherwise.
   """
-  pass
- def IsValidManualAdjustmentTarget(self,target,source,direction):
-  """
+        pass
+
+    def IsValidManualAdjustmentTarget(self, target, source, direction):
+        """
   IsValidManualAdjustmentTarget(self: AnalyticalModel,target: Reference,source: Reference,direction: AnalyticalDirection) -> bool
 
   
@@ -569,9 +609,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: True if reference can be used,false otherwise.
   """
-  pass
- def IsValidRigidLinksOption(self,rigidLinksOption):
-  """
+        pass
+
+    def IsValidRigidLinksOption(self, rigidLinksOption):
+        """
   IsValidRigidLinksOption(self: AnalyticalModel,rigidLinksOption: AnalyticalRigidLinksOption) -> bool
 
   
@@ -584,9 +625,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: True if option is valid,false otherwise.
   """
-  pass
- def IsValidSelector(self,selector):
-  """
+        pass
+
+    def IsValidSelector(self, selector):
+        """
   IsValidSelector(self: AnalyticalModel,selector: AnalyticalModelSelector) -> bool
 
   
@@ -599,9 +641,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: True if selector is valid for this Analytical Model,false otherwise.
   """
-  pass
- def ManuallyAdjust(self,source,target):
-  """
+        pass
+
+    def ManuallyAdjust(self, source, target):
+        """
   ManuallyAdjust(self: AnalyticalModel,source: Reference,target: Reference) -> bool
 
   
@@ -626,21 +669,24 @@ class AnalyticalModel(Element,IDisposable):
 
     otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def ResetLinks(self):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def ResetLinks(self):
+        """
   ResetLinks(self: AnalyticalModel)
 
    The function is trying to recreate analytical link elements that were deleted 
 
     by the user.
   """
-  pass
- def ResetManualAdjustment(self):
-  """
+        pass
+
+    def ResetManualAdjustment(self):
+        """
   ResetManualAdjustment(self: AnalyticalModel) -> bool
 
   
@@ -653,9 +699,10 @@ class AnalyticalModel(Element,IDisposable):
 
     succeeds,false otherwise.
   """
-  pass
- def SetAnalyzeAs(self,analyzeAs):
-  """
+        pass
+
+    def SetAnalyzeAs(self, analyzeAs):
+        """
   SetAnalyzeAs(self: AnalyticalModel,analyzeAs: AnalyzeAs)
 
    Sets value of Analyze As parameter for this Element.
@@ -664,9 +711,10 @@ class AnalyticalModel(Element,IDisposable):
 
    analyzeAs: Indicates how Analytical Model is analyzed .
   """
-  pass
- def SetApproximationDeviation(self,deviation):
-  """
+        pass
+
+    def SetApproximationDeviation(self, deviation):
+        """
   SetApproximationDeviation(self: AnalyticalModel,deviation: float)
 
    Adjusts the amount by which approximation is made.
@@ -675,12 +723,14 @@ class AnalyticalModel(Element,IDisposable):
 
    deviation: Maximum distance from line to actual curve
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetOffset(self,selector,offset):
-  """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetOffset(self, selector, offset):
+        """
   SetOffset(self: AnalyticalModel,selector: AnalyticalElementSelector,offset: XYZ)
 
    Sets the offset of the analytical model at end.
@@ -691,9 +741,10 @@ class AnalyticalModel(Element,IDisposable):
 
    offset: New offset for end of analytical model.
   """
-  pass
- def SetUsesHardPoints(self,hardPoints):
-  """
+        pass
+
+    def SetUsesHardPoints(self, hardPoints):
+        """
   SetUsesHardPoints(self: AnalyticalModel,hardPoints: bool)
 
    Sets Hard Points for the Analytical Model.
@@ -702,9 +753,10 @@ class AnalyticalModel(Element,IDisposable):
 
    hardPoints: Enable/disable Hard Points (true=enable).
   """
-  pass
- def SupportsManualAdjustment(self):
-  """
+        pass
+
+    def SupportsManualAdjustment(self):
+        """
   SupportsManualAdjustment(self: AnalyticalModel) -> bool
 
   
@@ -713,9 +765,10 @@ class AnalyticalModel(Element,IDisposable):
 
    Returns: True if Manual Adjustment is possible,false otherwise.
   """
-  pass
- def UsesHardPoints(self):
-  """
+        pass
+
+    def UsesHardPoints(self):
+        """
   UsesHardPoints(self: AnalyticalModel) -> bool
 
   
@@ -728,18 +781,24 @@ class AnalyticalModel(Element,IDisposable):
 
     are meaningless for Analytical Model.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- RigidLinksOption=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if parameters indicate if Rigid Links should be formed.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    RigidLinksOption = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if parameters indicate if Rigid Links should be formed.
 
 
 
@@ -750,5 +809,3 @@ Get: RigidLinksOption(self: AnalyticalModel) -> AnalyticalRigidLinksOption
 Set: RigidLinksOption(self: AnalyticalModel)=value
 
 """
-
-

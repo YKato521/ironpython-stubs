@@ -1,13 +1,16 @@
-class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDisposable):
- """
+class DataGridViewTopLeftHeaderCell(
+    DataGridViewColumnHeaderCell, ICloneable, IDisposable
+):
+    """
  Represents the cell in the top left corner of the System.Windows.Forms.DataGridView that sits above the row headers and to the left of the column headers.
 
  
 
  DataGridViewTopLeftHeaderCell()
  """
- def BorderWidths(self,*args):
-  """
+
+    def BorderWidths(self, *args):
+        """
   BorderWidths(self: DataGridViewCell,advancedBorderStyle: DataGridViewAdvancedBorderStyle) -> Rectangle
 
   
@@ -20,9 +23,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    Returns: A System.Drawing.Rectangle that represents the widths of all the cell margins.
   """
-  pass
- def ClickUnsharesRow(self,*args):
-  """
+        pass
+
+    def ClickUnsharesRow(self, *args):
+        """
   ClickUnsharesRow(self: DataGridViewCell,e: DataGridViewCellEventArgs) -> bool
 
   
@@ -43,9 +47,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def ContentClickUnsharesRow(self,*args):
-  """
+        pass
+
+    def ContentClickUnsharesRow(self, *args):
+        """
   ContentClickUnsharesRow(self: DataGridViewCell,e: DataGridViewCellEventArgs) -> bool
 
   
@@ -66,9 +71,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def ContentDoubleClickUnsharesRow(self,*args):
-  """
+        pass
+
+    def ContentDoubleClickUnsharesRow(self, *args):
+        """
   ContentDoubleClickUnsharesRow(self: DataGridViewCell,e: DataGridViewCellEventArgs) -> bool
 
   
@@ -89,9 +95,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def CreateAccessibilityInstance(self,*args):
-  """
+        pass
+
+    def CreateAccessibilityInstance(self, *args):
+        """
   CreateAccessibilityInstance(self: DataGridViewTopLeftHeaderCell) -> AccessibleObject
 
   
@@ -104,9 +111,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
     for the System.Windows.Forms.DataGridViewTopLeftHeaderCell.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: DataGridViewHeaderCell,disposing: bool)
 
    Releases the unmanaged resources used by the System.Windows.Forms.DataGridViewHeaderCell and 
@@ -119,9 +127,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def DoubleClickUnsharesRow(self,*args):
-  """
+        pass
+
+    def DoubleClickUnsharesRow(self, *args):
+        """
   DoubleClickUnsharesRow(self: DataGridViewCell,e: DataGridViewCellEventArgs) -> bool
 
   
@@ -142,9 +151,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def EnterUnsharesRow(self,*args):
-  """
+        pass
+
+    def EnterUnsharesRow(self, *args):
+        """
   EnterUnsharesRow(self: DataGridViewCell,rowIndex: int,throughMouseClick: bool) -> bool
 
   
@@ -165,9 +175,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def GetClipboardContent(self,*args):
-  """
+        pass
+
+    def GetClipboardContent(self, *args):
+        """
   GetClipboardContent(self: DataGridViewColumnHeaderCell,rowIndex: int,firstCell: bool,lastCell: bool,inFirstRow: bool,inLastRow: bool,format: str) -> object
 
   
@@ -208,9 +219,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
     System.Windows.Forms.Clipboard.
   """
-  pass
- def GetContentBounds(self,rowIndex):
-  """
+        pass
+
+    def GetContentBounds(self, rowIndex):
+        """
   GetContentBounds(self: DataGridViewTopLeftHeaderCell,graphics: Graphics,cellStyle: DataGridViewCellStyle,rowIndex: int) -> Rectangle
 
   
@@ -231,9 +243,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    Returns: The System.Drawing.Rectangle that bounds the cell's contents.
   """
-  pass
- def GetErrorIconBounds(self,*args):
-  """
+        pass
+
+    def GetErrorIconBounds(self, *args):
+        """
   GetErrorIconBounds(self: DataGridViewTopLeftHeaderCell,graphics: Graphics,cellStyle: DataGridViewCellStyle,rowIndex: int) -> Rectangle
 
   
@@ -252,9 +265,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
     System.Drawing.Rectangle.Empty.
   """
-  pass
- def GetErrorText(self,*args):
-  """
+        pass
+
+    def GetErrorText(self, *args):
+        """
   GetErrorText(self: DataGridViewCell,rowIndex: int) -> str
 
   
@@ -267,9 +281,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    Returns: A string that describes the error for the current System.Windows.Forms.DataGridViewCell.
   """
-  pass
- def GetFormattedValue(self,*args):
-  """
+        pass
+
+    def GetFormattedValue(self, *args):
+        """
   GetFormattedValue(self: DataGridViewCell,value: object,rowIndex: int,cellStyle: DataGridViewCellStyle,valueTypeConverter: TypeConverter,formattedValueTypeConverter: TypeConverter,context: DataGridViewDataErrorContexts) -> (object,DataGridViewCellStyle)
 
   
@@ -306,9 +321,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
     System.Windows.Forms.DataGridView control.
   """
-  pass
- def GetPreferredSize(self,*args):
-  """
+        pass
+
+    def GetPreferredSize(self, *args):
+        """
   GetPreferredSize(self: DataGridViewTopLeftHeaderCell,graphics: Graphics,cellStyle: DataGridViewCellStyle,rowIndex: int,constraintSize: Size) -> Size
 
   
@@ -327,9 +343,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    Returns: A System.Drawing.Size that represents the preferred size,in pixels,of the cell.
   """
-  pass
- def GetSize(self,*args):
-  """
+        pass
+
+    def GetSize(self, *args):
+        """
   GetSize(self: DataGridViewHeaderCell,rowIndex: int) -> Size
 
   
@@ -342,9 +359,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    Returns: A System.Drawing.Size that represents the size of the header cell.
   """
-  pass
- def GetValue(self,*args):
-  """
+        pass
+
+    def GetValue(self, *args):
+        """
   GetValue(self: DataGridViewColumnHeaderCell,rowIndex: int) -> object
 
   
@@ -357,9 +375,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    Returns: The value contained in the System.Windows.Forms.DataGridViewColumnHeaderCell.
   """
-  pass
- def KeyDownUnsharesRow(self,*args):
-  """
+        pass
+
+    def KeyDownUnsharesRow(self, *args):
+        """
   KeyDownUnsharesRow(self: DataGridViewCell,e: KeyEventArgs,rowIndex: int) -> bool
 
   
@@ -380,9 +399,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def KeyPressUnsharesRow(self,*args):
-  """
+        pass
+
+    def KeyPressUnsharesRow(self, *args):
+        """
   KeyPressUnsharesRow(self: DataGridViewCell,e: KeyPressEventArgs,rowIndex: int) -> bool
 
   
@@ -399,9 +419,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def KeyUpUnsharesRow(self,*args):
-  """
+        pass
+
+    def KeyUpUnsharesRow(self, *args):
+        """
   KeyUpUnsharesRow(self: DataGridViewCell,e: KeyEventArgs,rowIndex: int) -> bool
 
   
@@ -422,9 +443,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def LeaveUnsharesRow(self,*args):
-  """
+        pass
+
+    def LeaveUnsharesRow(self, *args):
+        """
   LeaveUnsharesRow(self: DataGridViewCell,rowIndex: int,throughMouseClick: bool) -> bool
 
   
@@ -445,9 +467,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def MouseClickUnsharesRow(self,*args):
-  """
+        pass
+
+    def MouseClickUnsharesRow(self, *args):
+        """
   MouseClickUnsharesRow(self: DataGridViewCell,e: DataGridViewCellMouseEventArgs) -> bool
 
   
@@ -466,9 +489,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def MouseDoubleClickUnsharesRow(self,*args):
-  """
+        pass
+
+    def MouseDoubleClickUnsharesRow(self, *args):
+        """
   MouseDoubleClickUnsharesRow(self: DataGridViewCell,e: DataGridViewCellMouseEventArgs) -> bool
 
   
@@ -483,9 +507,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def MouseDownUnsharesRow(self,*args):
-  """
+        pass
+
+    def MouseDownUnsharesRow(self, *args):
+        """
   MouseDownUnsharesRow(self: DataGridViewHeaderCell,e: DataGridViewCellMouseEventArgs) -> bool
 
   
@@ -508,9 +533,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
     System.Windows.Forms.DataGridView.EnableHeadersVisualStyles property is true; otherwise,false.
   """
-  pass
- def MouseEnterUnsharesRow(self,*args):
-  """
+        pass
+
+    def MouseEnterUnsharesRow(self, *args):
+        """
   MouseEnterUnsharesRow(self: DataGridViewHeaderCell,rowIndex: int) -> bool
 
   
@@ -525,9 +551,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
     System.Windows.Forms.DataGridView.EnableHeadersVisualStyles property is true; otherwise,false.
   """
-  pass
- def MouseLeaveUnsharesRow(self,*args):
-  """
+        pass
+
+    def MouseLeaveUnsharesRow(self, *args):
+        """
   MouseLeaveUnsharesRow(self: DataGridViewHeaderCell,rowIndex: int) -> bool
 
   
@@ -544,9 +571,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
     System.Windows.Forms.DataGridView.EnableHeadersVisualStyles property is true; otherwise,false.
   """
-  pass
- def MouseMoveUnsharesRow(self,*args):
-  """
+        pass
+
+    def MouseMoveUnsharesRow(self, *args):
+        """
   MouseMoveUnsharesRow(self: DataGridViewCell,e: DataGridViewCellMouseEventArgs) -> bool
 
   
@@ -561,9 +589,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
     System.Windows.Forms.DataGridViewCell class always returns false.
   """
-  pass
- def MouseUpUnsharesRow(self,*args):
-  """
+        pass
+
+    def MouseUpUnsharesRow(self, *args):
+        """
   MouseUpUnsharesRow(self: DataGridViewHeaderCell,e: DataGridViewCellMouseEventArgs) -> bool
 
   
@@ -586,9 +615,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
     System.Windows.Forms.DataGridView.EnableHeadersVisualStyles property is true; otherwise,false.
   """
-  pass
- def OnClick(self,*args):
-  """
+        pass
+
+    def OnClick(self, *args):
+        """
   OnClick(self: DataGridViewCell,e: DataGridViewCellEventArgs)
 
    Called when the cell is clicked.
@@ -597,9 +627,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnContentClick(self,*args):
-  """
+        pass
+
+    def OnContentClick(self, *args):
+        """
   OnContentClick(self: DataGridViewCell,e: DataGridViewCellEventArgs)
 
    Called when the cell's contents are clicked.
@@ -608,9 +639,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnContentDoubleClick(self,*args):
-  """
+        pass
+
+    def OnContentDoubleClick(self, *args):
+        """
   OnContentDoubleClick(self: DataGridViewCell,e: DataGridViewCellEventArgs)
 
    Called when the cell's contents are double-clicked.
@@ -619,18 +651,20 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnDataGridViewChanged(self,*args):
-  """
+        pass
+
+    def OnDataGridViewChanged(self, *args):
+        """
   OnDataGridViewChanged(self: DataGridViewCell)
 
    Called when the System.Windows.Forms.DataGridViewElement.DataGridView property of the cell 
 
     changes.
   """
-  pass
- def OnDoubleClick(self,*args):
-  """
+        pass
+
+    def OnDoubleClick(self, *args):
+        """
   OnDoubleClick(self: DataGridViewCell,e: DataGridViewCellEventArgs)
 
    Called when the cell is double-clicked.
@@ -639,9 +673,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def OnEnter(self,*args):
-  """
+        pass
+
+    def OnEnter(self, *args):
+        """
   OnEnter(self: DataGridViewCell,rowIndex: int,throughMouseClick: bool)
 
    Called when the focus moves to a cell.
@@ -654,9 +689,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
     the cell.
   """
-  pass
- def OnKeyDown(self,*args):
-  """
+        pass
+
+    def OnKeyDown(self, *args):
+        """
   OnKeyDown(self: DataGridViewCell,e: KeyEventArgs,rowIndex: int)
 
    Called when a character key is pressed while the focus is on a cell.
@@ -667,9 +703,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    rowIndex: The index of the cell's parent row.
   """
-  pass
- def OnKeyPress(self,*args):
-  """
+        pass
+
+    def OnKeyPress(self, *args):
+        """
   OnKeyPress(self: DataGridViewCell,e: KeyPressEventArgs,rowIndex: int)
 
    Called when a key is pressed while the focus is on a cell.
@@ -680,9 +717,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    rowIndex: The index of the cell's parent row.
   """
-  pass
- def OnKeyUp(self,*args):
-  """
+        pass
+
+    def OnKeyUp(self, *args):
+        """
   OnKeyUp(self: DataGridViewCell,e: KeyEventArgs,rowIndex: int)
 
    Called when a character key is released while the focus is on a cell.
@@ -693,9 +731,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    rowIndex: The index of the cell's parent row.
   """
-  pass
- def OnLeave(self,*args):
-  """
+        pass
+
+    def OnLeave(self, *args):
+        """
   OnLeave(self: DataGridViewCell,rowIndex: int,throughMouseClick: bool)
 
    Called when the focus moves from a cell.
@@ -708,9 +747,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
     from the cell.
   """
-  pass
- def OnMouseClick(self,*args):
-  """
+        pass
+
+    def OnMouseClick(self, *args):
+        """
   OnMouseClick(self: DataGridViewCell,e: DataGridViewCellMouseEventArgs)
 
    Called when the user clicks a mouse button while the pointer is on a cell.
@@ -719,9 +759,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    e: A System.Windows.Forms.DataGridViewCellMouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseDoubleClick(self,*args):
-  """
+        pass
+
+    def OnMouseDoubleClick(self, *args):
+        """
   OnMouseDoubleClick(self: DataGridViewCell,e: DataGridViewCellMouseEventArgs)
 
    Called when the user double-clicks a mouse button while the pointer is on a cell.
@@ -730,9 +771,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    e: A System.Windows.Forms.DataGridViewCellMouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseDown(self,*args):
-  """
+        pass
+
+    def OnMouseDown(self, *args):
+        """
   OnMouseDown(self: DataGridViewHeaderCell,e: DataGridViewCellMouseEventArgs)
 
    Called when the mouse button is held down while the pointer is on a cell.
@@ -743,9 +785,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
     position.
   """
-  pass
- def OnMouseEnter(self,*args):
-  """
+        pass
+
+    def OnMouseEnter(self, *args):
+        """
   OnMouseEnter(self: DataGridViewHeaderCell,rowIndex: int)
 
    Called when the mouse pointer enters the cell.
@@ -754,9 +797,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    rowIndex: The index of the row containing the cell.
   """
-  pass
- def OnMouseLeave(self,*args):
-  """
+        pass
+
+    def OnMouseLeave(self, *args):
+        """
   OnMouseLeave(self: DataGridViewHeaderCell,rowIndex: int)
 
    Called when the mouse pointer leaves the cell.
@@ -765,9 +809,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    rowIndex: The index of the row containing the cell.
   """
-  pass
- def OnMouseMove(self,*args):
-  """
+        pass
+
+    def OnMouseMove(self, *args):
+        """
   OnMouseMove(self: DataGridViewCell,e: DataGridViewCellMouseEventArgs)
 
    Called when the mouse pointer moves within a cell.
@@ -776,9 +821,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    e: A System.Windows.Forms.DataGridViewCellMouseEventArgs that contains the event data.
   """
-  pass
- def OnMouseUp(self,*args):
-  """
+        pass
+
+    def OnMouseUp(self, *args):
+        """
   OnMouseUp(self: DataGridViewHeaderCell,e: DataGridViewCellMouseEventArgs)
 
    Called when the mouse button is released while the pointer is over the cell.
@@ -789,9 +835,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
     position.
   """
-  pass
- def Paint(self,*args):
-  """
+        pass
+
+    def Paint(self, *args):
+        """
   Paint(self: DataGridViewTopLeftHeaderCell,graphics: Graphics,clipBounds: Rectangle,cellBounds: Rectangle,rowIndex: int,cellState: DataGridViewElementStates,value: object,formattedValue: object,errorText: str,cellStyle: DataGridViewCellStyle,advancedBorderStyle: DataGridViewAdvancedBorderStyle,paintParts: DataGridViewPaintParts)
 
    Paints the current System.Windows.Forms.DataGridViewTopLeftHeaderCell.
@@ -842,9 +889,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
     which parts of the cell need to be painted.
   """
-  pass
- def PaintBorder(self,*args):
-  """
+        pass
+
+    def PaintBorder(self, *args):
+        """
   PaintBorder(self: DataGridViewTopLeftHeaderCell,graphics: Graphics,clipBounds: Rectangle,bounds: Rectangle,cellStyle: DataGridViewCellStyle,advancedBorderStyle: DataGridViewAdvancedBorderStyle)
 
    graphics: The System.Drawing.Graphics used to paint the border.
@@ -867,9 +915,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
     that is being painted.
   """
-  pass
- def PaintErrorIcon(self,*args):
-  """
+        pass
+
+    def PaintErrorIcon(self, *args):
+        """
   PaintErrorIcon(self: DataGridViewCell,graphics: Graphics,clipBounds: Rectangle,cellValueBounds: Rectangle,errorText: str)
 
    Paints the error icon of the current System.Windows.Forms.DataGridViewCell.
@@ -888,9 +937,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    errorText: An error message that is associated with the cell.
   """
-  pass
- def RaiseCellClick(self,*args):
-  """
+        pass
+
+    def RaiseCellClick(self, *args):
+        """
   RaiseCellClick(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellClick event.
@@ -899,9 +949,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseCellContentClick(self,*args):
-  """
+        pass
+
+    def RaiseCellContentClick(self, *args):
+        """
   RaiseCellContentClick(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellContentClick event.
@@ -910,9 +961,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseCellContentDoubleClick(self,*args):
-  """
+        pass
+
+    def RaiseCellContentDoubleClick(self, *args):
+        """
   RaiseCellContentDoubleClick(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellContentDoubleClick event.
@@ -921,9 +973,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseCellValueChanged(self,*args):
-  """
+        pass
+
+    def RaiseCellValueChanged(self, *args):
+        """
   RaiseCellValueChanged(self: DataGridViewElement,e: DataGridViewCellEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.CellValueChanged event.
@@ -932,9 +985,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    e: A System.Windows.Forms.DataGridViewCellEventArgs that contains the event data.
   """
-  pass
- def RaiseDataError(self,*args):
-  """
+        pass
+
+    def RaiseDataError(self, *args):
+        """
   RaiseDataError(self: DataGridViewElement,e: DataGridViewDataErrorEventArgs)
 
    Raises the System.Windows.Forms.DataGridView.DataError event.
@@ -943,9 +997,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    e: A System.Windows.Forms.DataGridViewDataErrorEventArgs that contains the event data.
   """
-  pass
- def RaiseMouseWheel(self,*args):
-  """
+        pass
+
+    def RaiseMouseWheel(self, *args):
+        """
   RaiseMouseWheel(self: DataGridViewElement,e: MouseEventArgs)
 
    Raises the System.Windows.Forms.Control.MouseWheel event.
@@ -954,9 +1009,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    e: A System.Windows.Forms.MouseEventArgs that contains the event data.
   """
-  pass
- def SetValue(self,*args):
-  """
+        pass
+
+    def SetValue(self, *args):
+        """
   SetValue(self: DataGridViewColumnHeaderCell,rowIndex: int,value: object) -> bool
 
   
@@ -971,9 +1027,10 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    Returns: true if the value has been set; otherwise false.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: DataGridViewTopLeftHeaderCell) -> str
 
   
@@ -982,35 +1039,40 @@ class DataGridViewTopLeftHeaderCell(DataGridViewColumnHeaderCell,ICloneable,IDis
 
    Returns: A string that represents the current cell.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- ButtonState=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the buttonlike visual state of the header cell.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    ButtonState = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the buttonlike visual state of the header cell.
 
 
 
 """
 
-
- DataGridViewTopLeftHeaderCellAccessibleObject=None
-
+    DataGridViewTopLeftHeaderCellAccessibleObject = None

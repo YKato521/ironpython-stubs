@@ -1,56 +1,62 @@
-class Process(Component,IComponent,IDisposable):
- """
+class Process(Component, IComponent, IDisposable):
+    """
  Provides access to local and remote processes and enables you to start and stop local system processes.
 
  
 
  Process()
  """
- def BeginErrorReadLine(self):
-  """
+
+    def BeginErrorReadLine(self):
+        """
   BeginErrorReadLine(self: Process)
 
    Begins asynchronous read operations on the redirected System.Diagnostics.Process.StandardError 
 
     stream of the application.
   """
-  pass
- def BeginOutputReadLine(self):
-  """
+        pass
+
+    def BeginOutputReadLine(self):
+        """
   BeginOutputReadLine(self: Process)
 
    Begins asynchronous read operations on the redirected System.Diagnostics.Process.StandardOutput 
 
     stream of the application.
   """
-  pass
- def CancelErrorRead(self):
-  """
+        pass
+
+    def CancelErrorRead(self):
+        """
   CancelErrorRead(self: Process)
 
    Cancels the asynchronous read operation on the redirected 
 
     System.Diagnostics.Process.StandardError stream of an application.
   """
-  pass
- def CancelOutputRead(self):
-  """
+        pass
+
+    def CancelOutputRead(self):
+        """
   CancelOutputRead(self: Process)
 
    Cancels the asynchronous read operation on the redirected 
 
     System.Diagnostics.Process.StandardOutput stream of an application.
   """
-  pass
- def Close(self):
-  """
+        pass
+
+    def Close(self):
+        """
   Close(self: Process)
 
    Frees all the resources that are associated with this component.
   """
-  pass
- def CloseMainWindow(self):
-  """
+        pass
+
+    def CloseMainWindow(self):
+        """
   CloseMainWindow(self: Process) -> bool
 
   
@@ -61,9 +67,10 @@ class Process(Component,IComponent,IDisposable):
 
     main window or if the main window is disabled (for example if a modal dialog is being shown).
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: Process,disposing: bool)
 
    Release all resources used by this process.
@@ -72,10 +79,11 @@ class Process(Component,IComponent,IDisposable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- @staticmethod
- def EnterDebugMode():
-  """
+        pass
+
+    @staticmethod
+    def EnterDebugMode():
+        """
   EnterDebugMode()
 
    Puts a System.Diagnostics.Process component in state to interact with operating system processes 
@@ -84,10 +92,11 @@ class Process(Component,IComponent,IDisposable):
 
     thread.
   """
-  pass
- @staticmethod
- def GetCurrentProcess():
-  """
+        pass
+
+    @staticmethod
+    def GetCurrentProcess():
+        """
   GetCurrentProcess() -> Process
 
   
@@ -102,10 +111,11 @@ class Process(Component,IComponent,IDisposable):
 
     the calling application.
   """
-  pass
- @staticmethod
- def GetProcessById(processId,machineName=None):
-  """
+        pass
+
+    @staticmethod
+    def GetProcessById(processId, machineName=None):
+        """
   GetProcessById(processId: int) -> Process
 
   
@@ -146,10 +156,11 @@ class Process(Component,IComponent,IDisposable):
 
     identified by the processId parameter.
   """
-  pass
- @staticmethod
- def GetProcesses(machineName=None):
-  """
+        pass
+
+    @staticmethod
+    def GetProcesses(machineName=None):
+        """
   GetProcesses(machineName: str) -> Array[Process]
 
   
@@ -184,10 +195,11 @@ class Process(Component,IComponent,IDisposable):
 
     the local computer.
   """
-  pass
- @staticmethod
- def GetProcessesByName(processName,machineName=None):
-  """
+        pass
+
+    @staticmethod
+    def GetProcessesByName(processName, machineName=None):
+        """
   GetProcessesByName(processName: str,machineName: str) -> Array[Process]
 
   
@@ -228,9 +240,10 @@ class Process(Component,IComponent,IDisposable):
 
     specified application or file.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -249,26 +262,29 @@ class Process(Component,IComponent,IDisposable):
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def Kill(self):
-  """
+        pass
+
+    def Kill(self):
+        """
   Kill(self: Process)
 
    Immediately stops the associated process.
   """
-  pass
- @staticmethod
- def LeaveDebugMode():
-  """
+        pass
+
+    @staticmethod
+    def LeaveDebugMode():
+        """
   LeaveDebugMode()
 
    Takes a System.Diagnostics.Process component out of the state that lets it interact with 
 
     operating system processes that run in a special mode.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -299,25 +315,28 @@ class Process(Component,IComponent,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def OnExited(self,*args):
-  """
+        pass
+
+    def OnExited(self, *args):
+        """
   OnExited(self: Process)
 
    Raises the System.Diagnostics.Process.Exited event.
   """
-  pass
- def Refresh(self):
-  """
+        pass
+
+    def Refresh(self):
+        """
   Refresh(self: Process)
 
    Discards any information about the associated process that has been cached inside the process 
 
     component.
   """
-  pass
- def Start(self,*__args):
-  """
+        pass
+
+    def Start(self, *__args):
+        """
   Start(fileName: str) -> Process
 
   
@@ -458,9 +477,10 @@ class Process(Component,IComponent,IDisposable):
 
     if no process resource is started (for example,if an existing process is reused).
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: Process) -> str
 
   
@@ -471,9 +491,10 @@ class Process(Component,IComponent,IDisposable):
 
     System.Object.ToString return value.
   """
-  pass
- def WaitForExit(self,milliseconds=None):
-  """
+        pass
+
+    def WaitForExit(self, milliseconds=None):
+        """
   WaitForExit(self: Process)
 
    Instructs the System.Diagnostics.Process component to wait indefinitely for the associated 
@@ -504,9 +525,10 @@ class Process(Component,IComponent,IDisposable):
 
    Returns: true if the associated process has exited; otherwise,false.
   """
-  pass
- def WaitForInputIdle(self,milliseconds=None):
-  """
+        pass
+
+    def WaitForInputIdle(self, milliseconds=None):
+        """
   WaitForInputIdle(self: Process) -> bool
 
   
@@ -545,30 +567,37 @@ class Process(Component,IComponent,IDisposable):
 
    Returns: true if the associated process has reached an idle state; otherwise,false.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- BasePriority=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the base priority of the associated process.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    BasePriority = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the base priority of the associated process.
 
 
 
@@ -578,22 +607,28 @@ Get: BasePriority(self: Process) -> int
 
 """
 
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- EnableRaisingEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets whether the System.Diagnostics.Process.Exited event should be raised when the process terminates.
+    EnableRaisingEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets whether the System.Diagnostics.Process.Exited event should be raised when the process terminates.
 
 
 
@@ -605,15 +640,15 @@ Set: EnableRaisingEvents(self: Process)=value
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- ExitCode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the value that the associated process specified when it terminated.
+    ExitCode = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the value that the associated process specified when it terminated.
 
 
 
@@ -623,8 +658,8 @@ Get: ExitCode(self: Process) -> int
 
 """
 
- ExitTime=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the time that the associated process exited.
+    ExitTime = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the time that the associated process exited.
 
 
 
@@ -634,8 +669,8 @@ Get: ExitTime(self: Process) -> DateTime
 
 """
 
- Handle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the native handle of the associated process.
+    Handle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the native handle of the associated process.
 
 
 
@@ -645,8 +680,10 @@ Get: Handle(self: Process) -> IntPtr
 
 """
 
- HandleCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of handles opened by the process.
+    HandleCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the number of handles opened by the process.
 
 
 
@@ -656,8 +693,8 @@ Get: HandleCount(self: Process) -> int
 
 """
 
- HasExited=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the associated process has been terminated.
+    HasExited = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the associated process has been terminated.
 
 
 
@@ -667,8 +704,8 @@ Get: HasExited(self: Process) -> bool
 
 """
 
- Id=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the unique identifier for the associated process.
+    Id = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the unique identifier for the associated process.
 
 
 
@@ -678,8 +715,10 @@ Get: Id(self: Process) -> int
 
 """
 
- MachineName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name of the computer the associated process is running on.
+    MachineName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the name of the computer the associated process is running on.
 
 
 
@@ -689,8 +728,10 @@ Get: MachineName(self: Process) -> str
 
 """
 
- MainModule=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the main module for the associated process.
+    MainModule = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the main module for the associated process.
 
 
 
@@ -700,8 +741,10 @@ Get: MainModule(self: Process) -> ProcessModule
 
 """
 
- MainWindowHandle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the window handle of the main window of the associated process.
+    MainWindowHandle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the window handle of the main window of the associated process.
 
 
 
@@ -711,8 +754,10 @@ Get: MainWindowHandle(self: Process) -> IntPtr
 
 """
 
- MainWindowTitle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the caption of the main window of the process.
+    MainWindowTitle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the caption of the main window of the process.
 
 
 
@@ -722,8 +767,10 @@ Get: MainWindowTitle(self: Process) -> str
 
 """
 
- MaxWorkingSet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the maximum allowable working set size for the associated process.
+    MaxWorkingSet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the maximum allowable working set size for the associated process.
 
 
 
@@ -735,8 +782,10 @@ Set: MaxWorkingSet(self: Process)=value
 
 """
 
- MinWorkingSet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the minimum allowable working set size for the associated process.
+    MinWorkingSet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the minimum allowable working set size for the associated process.
 
 
 
@@ -748,8 +797,8 @@ Set: MinWorkingSet(self: Process)=value
 
 """
 
- Modules=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the modules that have been loaded by the associated process.
+    Modules = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the modules that have been loaded by the associated process.
 
 
 
@@ -759,8 +808,10 @@ Get: Modules(self: Process) -> ProcessModuleCollection
 
 """
 
- NonpagedSystemMemorySize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the nonpaged system memory size allocated to this process.
+    NonpagedSystemMemorySize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the nonpaged system memory size allocated to this process.
 
 
 
@@ -770,8 +821,10 @@ Get: NonpagedSystemMemorySize(self: Process) -> int
 
 """
 
- NonpagedSystemMemorySize64=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the amount of nonpaged system memory allocated for the associated process.
+    NonpagedSystemMemorySize64 = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the amount of nonpaged system memory allocated for the associated process.
 
 
 
@@ -781,8 +834,10 @@ Get: NonpagedSystemMemorySize64(self: Process) -> Int64
 
 """
 
- PagedMemorySize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the paged memory size.
+    PagedMemorySize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the paged memory size.
 
 
 
@@ -792,8 +847,10 @@ Get: PagedMemorySize(self: Process) -> int
 
 """
 
- PagedMemorySize64=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the amount of paged memory allocated for the associated process.
+    PagedMemorySize64 = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the amount of paged memory allocated for the associated process.
 
 
 
@@ -803,8 +860,10 @@ Get: PagedMemorySize64(self: Process) -> Int64
 
 """
 
- PagedSystemMemorySize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the paged system memory size.
+    PagedSystemMemorySize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the paged system memory size.
 
 
 
@@ -814,8 +873,10 @@ Get: PagedSystemMemorySize(self: Process) -> int
 
 """
 
- PagedSystemMemorySize64=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the amount of pageable system memory allocated for the associated process.
+    PagedSystemMemorySize64 = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the amount of pageable system memory allocated for the associated process.
 
 
 
@@ -825,8 +886,10 @@ Get: PagedSystemMemorySize64(self: Process) -> Int64
 
 """
 
- PeakPagedMemorySize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the peak paged memory size.
+    PeakPagedMemorySize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the peak paged memory size.
 
 
 
@@ -836,8 +899,10 @@ Get: PeakPagedMemorySize(self: Process) -> int
 
 """
 
- PeakPagedMemorySize64=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the maximum amount of memory in the virtual memory paging file used by the associated process.
+    PeakPagedMemorySize64 = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the maximum amount of memory in the virtual memory paging file used by the associated process.
 
 
 
@@ -847,8 +912,10 @@ Get: PeakPagedMemorySize64(self: Process) -> Int64
 
 """
 
- PeakVirtualMemorySize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the peak virtual memory size.
+    PeakVirtualMemorySize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the peak virtual memory size.
 
 
 
@@ -858,8 +925,10 @@ Get: PeakVirtualMemorySize(self: Process) -> int
 
 """
 
- PeakVirtualMemorySize64=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the maximum amount of virtual memory used by the associated process.
+    PeakVirtualMemorySize64 = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the maximum amount of virtual memory used by the associated process.
 
 
 
@@ -869,8 +938,10 @@ Get: PeakVirtualMemorySize64(self: Process) -> Int64
 
 """
 
- PeakWorkingSet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the peak working set size for the associated process.
+    PeakWorkingSet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the peak working set size for the associated process.
 
 
 
@@ -880,8 +951,10 @@ Get: PeakWorkingSet(self: Process) -> int
 
 """
 
- PeakWorkingSet64=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the maximum amount of physical memory used by the associated process.
+    PeakWorkingSet64 = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the maximum amount of physical memory used by the associated process.
 
 
 
@@ -891,8 +964,10 @@ Get: PeakWorkingSet64(self: Process) -> Int64
 
 """
 
- PriorityBoostEnabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the associated process priority should temporarily be boosted by the operating system when the main window has the focus.
+    PriorityBoostEnabled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the associated process priority should temporarily be boosted by the operating system when the main window has the focus.
 
 
 
@@ -904,8 +979,10 @@ Set: PriorityBoostEnabled(self: Process)=value
 
 """
 
- PriorityClass=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the overall priority category for the associated process.
+    PriorityClass = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the overall priority category for the associated process.
 
 
 
@@ -917,8 +994,10 @@ Set: PriorityClass(self: Process)=value
 
 """
 
- PrivateMemorySize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the private memory size.
+    PrivateMemorySize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the private memory size.
 
 
 
@@ -928,8 +1007,10 @@ Get: PrivateMemorySize(self: Process) -> int
 
 """
 
- PrivateMemorySize64=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the amount of private memory allocated for the associated process.
+    PrivateMemorySize64 = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the amount of private memory allocated for the associated process.
 
 
 
@@ -939,8 +1020,10 @@ Get: PrivateMemorySize64(self: Process) -> Int64
 
 """
 
- PrivilegedProcessorTime=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the privileged processor time for this process.
+    PrivilegedProcessorTime = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the privileged processor time for this process.
 
 
 
@@ -950,8 +1033,10 @@ Get: PrivilegedProcessorTime(self: Process) -> TimeSpan
 
 """
 
- ProcessName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name of the process.
+    ProcessName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the name of the process.
 
 
 
@@ -961,8 +1046,10 @@ Get: ProcessName(self: Process) -> str
 
 """
 
- ProcessorAffinity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the processors on which the threads in this process can be scheduled to run.
+    ProcessorAffinity = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the processors on which the threads in this process can be scheduled to run.
 
 
 
@@ -974,8 +1061,10 @@ Set: ProcessorAffinity(self: Process)=value
 
 """
 
- Responding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the user interface of the process is responding.
+    Responding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the user interface of the process is responding.
 
 
 
@@ -985,15 +1074,17 @@ Get: Responding(self: Process) -> bool
 
 """
 
- SafeHandle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: SafeHandle(self: Process) -> SafeProcessHandle
+    SafeHandle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: SafeHandle(self: Process) -> SafeProcessHandle
 
 
 
 """
 
- SessionId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the Terminal Services session identifier for the associated process.
+    SessionId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the Terminal Services session identifier for the associated process.
 
 
 
@@ -1003,8 +1094,10 @@ Get: SessionId(self: Process) -> int
 
 """
 
- StandardError=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a stream used to read the error output of the application.
+    StandardError = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a stream used to read the error output of the application.
 
 
 
@@ -1014,8 +1107,10 @@ Get: StandardError(self: Process) -> StreamReader
 
 """
 
- StandardInput=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a stream used to write the input of the application.
+    StandardInput = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a stream used to write the input of the application.
 
 
 
@@ -1025,8 +1120,10 @@ Get: StandardInput(self: Process) -> StreamWriter
 
 """
 
- StandardOutput=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a stream used to read the output of the application.
+    StandardOutput = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a stream used to read the output of the application.
 
 
 
@@ -1036,8 +1133,8 @@ Get: StandardOutput(self: Process) -> StreamReader
 
 """
 
- StartInfo=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the properties to pass to the System.Diagnostics.Process.Start method of the System.Diagnostics.Process.
+    StartInfo = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the properties to pass to the System.Diagnostics.Process.Start method of the System.Diagnostics.Process.
 
 
 
@@ -1049,8 +1146,8 @@ Set: StartInfo(self: Process)=value
 
 """
 
- StartTime=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the time that the associated process was started.
+    StartTime = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the time that the associated process was started.
 
 
 
@@ -1060,8 +1157,10 @@ Get: StartTime(self: Process) -> DateTime
 
 """
 
- SynchronizingObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the object used to marshal the event handler calls that are issued as a result of a process exit event.
+    SynchronizingObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the object used to marshal the event handler calls that are issued as a result of a process exit event.
 
 
 
@@ -1073,8 +1172,8 @@ Set: SynchronizingObject(self: Process)=value
 
 """
 
- Threads=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the set of threads that are running in the associated process.
+    Threads = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the set of threads that are running in the associated process.
 
 
 
@@ -1084,8 +1183,10 @@ Get: Threads(self: Process) -> ProcessThreadCollection
 
 """
 
- TotalProcessorTime=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the total processor time for this process.
+    TotalProcessorTime = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the total processor time for this process.
 
 
 
@@ -1095,8 +1196,10 @@ Get: TotalProcessorTime(self: Process) -> TimeSpan
 
 """
 
- UserProcessorTime=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the user processor time for this process.
+    UserProcessorTime = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the user processor time for this process.
 
 
 
@@ -1106,8 +1209,10 @@ Get: UserProcessorTime(self: Process) -> TimeSpan
 
 """
 
- VirtualMemorySize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the size of the process's virtual memory.
+    VirtualMemorySize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the size of the process's virtual memory.
 
 
 
@@ -1117,8 +1222,10 @@ Get: VirtualMemorySize(self: Process) -> int
 
 """
 
- VirtualMemorySize64=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the amount of the virtual memory allocated for the associated process.
+    VirtualMemorySize64 = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the amount of the virtual memory allocated for the associated process.
 
 
 
@@ -1128,8 +1235,10 @@ Get: VirtualMemorySize64(self: Process) -> Int64
 
 """
 
- WorkingSet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the associated process's physical memory usage.
+    WorkingSet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the associated process's physical memory usage.
 
 
 
@@ -1139,8 +1248,10 @@ Get: WorkingSet(self: Process) -> int
 
 """
 
- WorkingSet64=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the amount of physical memory allocated for the associated process.
+    WorkingSet64 = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the amount of physical memory allocated for the associated process.
 
 
 
@@ -1150,8 +1261,6 @@ Get: WorkingSet64(self: Process) -> Int64
 
 """
 
-
- ErrorDataReceived=None
- Exited=None
- OutputDataReceived=None
-
+    ErrorDataReceived = None
+    Exited = None
+    OutputDataReceived = None

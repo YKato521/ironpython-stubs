@@ -1,8 +1,9 @@
 class AdaptiveComponentInstanceUtils(object):
- """ An interface for Adaptive Component Instances. """
- @staticmethod
- def CreateAdaptiveComponentInstance(doc,famSymb):
-  """
+    """ An interface for Adaptive Component Instances. """
+
+    @staticmethod
+    def CreateAdaptiveComponentInstance(doc, famSymb):
+        """
   CreateAdaptiveComponentInstance(doc: Document,famSymb: FamilySymbol) -> FamilyInstance
 
   
@@ -17,10 +18,11 @@ class AdaptiveComponentInstanceUtils(object):
 
    Returns: The Family Instance
   """
-  pass
- @staticmethod
- def GetInstancePlacementPointElementRefIds(famInst):
-  """
+        pass
+
+    @staticmethod
+    def GetInstancePlacementPointElementRefIds(famInst):
+        """
   GetInstancePlacementPointElementRefIds(famInst: FamilyInstance) -> IList[ElementId]
 
   
@@ -39,10 +41,11 @@ class AdaptiveComponentInstanceUtils(object):
 
     adapts.
   """
-  pass
- @staticmethod
- def GetInstancePointElementRefIds(famInst):
-  """
+        pass
+
+    @staticmethod
+    def GetInstancePointElementRefIds(famInst):
+        """
   GetInstancePointElementRefIds(famInst: FamilyInstance) -> IList[ElementId]
 
   
@@ -55,10 +58,11 @@ class AdaptiveComponentInstanceUtils(object):
 
    Returns: The Adaptive Point Element Ref ids to which the instance geometry adapts.
   """
-  pass
- @staticmethod
- def GetInstanceShapeHandlePointElementRefIds(famInst):
-  """
+        pass
+
+    @staticmethod
+    def GetInstanceShapeHandlePointElementRefIds(famInst):
+        """
   GetInstanceShapeHandlePointElementRefIds(famInst: FamilyInstance) -> IList[ElementId]
 
   
@@ -77,10 +81,11 @@ class AdaptiveComponentInstanceUtils(object):
 
     adapts.
   """
-  pass
- @staticmethod
- def HasAdaptiveFamilySymbol(famInst):
-  """
+        pass
+
+    @staticmethod
+    def HasAdaptiveFamilySymbol(famInst):
+        """
   HasAdaptiveFamilySymbol(famInst: FamilyInstance) -> bool
 
   
@@ -93,10 +98,11 @@ class AdaptiveComponentInstanceUtils(object):
 
    Returns: True if the FamilyInstance has an Adaptive Family Symbol.
   """
-  pass
- @staticmethod
- def IsAdaptiveComponentInstance(famInst):
-  """
+        pass
+
+    @staticmethod
+    def IsAdaptiveComponentInstance(famInst):
+        """
   IsAdaptiveComponentInstance(famInst: FamilyInstance) -> bool
 
   
@@ -109,10 +115,11 @@ class AdaptiveComponentInstanceUtils(object):
 
    Returns: True if the FamilyInstance has an Adaptive Component Instances.
   """
-  pass
- @staticmethod
- def IsAdaptiveFamilySymbol(famSymb):
-  """
+        pass
+
+    @staticmethod
+    def IsAdaptiveFamilySymbol(famSymb):
+        """
   IsAdaptiveFamilySymbol(famSymb: FamilySymbol) -> bool
 
   
@@ -125,10 +132,11 @@ class AdaptiveComponentInstanceUtils(object):
 
    Returns: True if the FamilySymbol is a valid Adaptive Family Symbol.
   """
-  pass
- @staticmethod
- def IsInstanceFlipped(famInst):
-  """
+        pass
+
+    @staticmethod
+    def IsInstanceFlipped(famInst):
+        """
   IsInstanceFlipped(famInst: FamilyInstance) -> bool
 
   
@@ -141,10 +149,11 @@ class AdaptiveComponentInstanceUtils(object):
 
    Returns: True if the instance is flipped.
   """
-  pass
- @staticmethod
- def MoveAdaptiveComponentInstance(famInst,trf,unHost):
-  """
+        pass
+
+    @staticmethod
+    def MoveAdaptiveComponentInstance(famInst, trf, unHost):
+        """
   MoveAdaptiveComponentInstance(famInst: FamilyInstance,trf: Transform,unHost: bool)
 
    Moves Adaptive Component Instance by the specified transformation.
@@ -161,10 +170,11 @@ class AdaptiveComponentInstanceUtils(object):
 
       False if the Point Element Refs remain hosted.
   """
-  pass
- @staticmethod
- def SetInstanceFlipped(famInst,flip):
-  """
+        pass
+
+    @staticmethod
+    def SetInstanceFlipped(famInst, flip):
+        """
   SetInstanceFlipped(famInst: FamilyInstance,flip: bool)
 
    Sets the value of the flip parameter on the adaptive instance.
@@ -175,17 +185,17 @@ class AdaptiveComponentInstanceUtils(object):
 
    flip: The flip flag
   """
-  pass
- __all__=[
-  'CreateAdaptiveComponentInstance',
-  'GetInstancePlacementPointElementRefIds',
-  'GetInstancePointElementRefIds',
-  'GetInstanceShapeHandlePointElementRefIds',
-  'HasAdaptiveFamilySymbol',
-  'IsAdaptiveComponentInstance',
-  'IsAdaptiveFamilySymbol',
-  'IsInstanceFlipped',
-  'MoveAdaptiveComponentInstance',
-  'SetInstanceFlipped',
- ]
+        pass
 
+    __all__ = [
+        "CreateAdaptiveComponentInstance",
+        "GetInstancePlacementPointElementRefIds",
+        "GetInstancePointElementRefIds",
+        "GetInstanceShapeHandlePointElementRefIds",
+        "HasAdaptiveFamilySymbol",
+        "IsAdaptiveComponentInstance",
+        "IsAdaptiveFamilySymbol",
+        "IsInstanceFlipped",
+        "MoveAdaptiveComponentInstance",
+        "SetInstanceFlipped",
+    ]

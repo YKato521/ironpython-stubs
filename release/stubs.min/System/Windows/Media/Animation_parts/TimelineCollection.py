@@ -1,5 +1,16 @@
-class TimelineCollection(Animatable,ISealable,IAnimatable,IResource,IList,ICollection,IEnumerable,IList[Timeline],ICollection[Timeline],IEnumerable[Timeline]):
- """
+class TimelineCollection(
+    Animatable,
+    ISealable,
+    IAnimatable,
+    IResource,
+    IList,
+    ICollection,
+    IEnumerable,
+    IList[Timeline],
+    ICollection[Timeline],
+    IEnumerable[Timeline],
+):
+    """
  Represents a collection of System.Windows.Media.Animation.Timeline objects.
 
  
@@ -10,8 +21,9 @@ class TimelineCollection(Animatable,ISealable,IAnimatable,IResource,IList,IColle
 
  TimelineCollection(collection: IEnumerable[Timeline])
  """
- def Add(self,value):
-  """
+
+    def Add(self, value):
+        """
   Add(self: TimelineCollection,value: Timeline)
 
    Inserts a new System.Windows.Media.Animation.Timeline object into the 
@@ -24,16 +36,18 @@ class TimelineCollection(Animatable,ISealable,IAnimatable,IResource,IList,IColle
 
    value: The object to add.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: TimelineCollection)
 
    Removes all items from the System.Windows.Media.Animation.TimelineCollection.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: TimelineCollection) -> TimelineCollection
 
   
@@ -52,12 +66,14 @@ class TimelineCollection(Animatable,ISealable,IAnimatable,IResource,IList,IColle
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCore(self,*args):
-  """ CloneCore(self: TimelineCollection,source: Freezable) """
-  pass
- def CloneCurrentValue(self):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """ CloneCore(self: TimelineCollection,source: Freezable) """
+        pass
+
+    def CloneCurrentValue(self):
+        """
   CloneCurrentValue(self: TimelineCollection) -> TimelineCollection
 
   
@@ -74,12 +90,14 @@ class TimelineCollection(Animatable,ISealable,IAnimatable,IResource,IList,IColle
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """ CloneCurrentValueCore(self: TimelineCollection,source: Freezable) """
-  pass
- def Contains(self,value):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """ CloneCurrentValueCore(self: TimelineCollection,source: Freezable) """
+        pass
+
+    def Contains(self, value):
+        """
   Contains(self: TimelineCollection,value: Timeline) -> bool
 
   
@@ -96,9 +114,10 @@ class TimelineCollection(Animatable,ISealable,IAnimatable,IResource,IList,IColle
 
    Returns: true if value is found; otherwise,false.
   """
-  pass
- def CopyTo(self,array,index):
-  """
+        pass
+
+    def CopyTo(self, array, index):
+        """
   CopyTo(self: TimelineCollection,array: Array[Timeline],index: int)
 
    Copies the items of the System.Windows.Media.Animation.TimelineCollection to the passed Timeline 
@@ -113,9 +132,10 @@ class TimelineCollection(Animatable,ISealable,IAnimatable,IResource,IList,IColle
 
    index: The zero-based index position where copying begins.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -124,21 +144,26 @@ class TimelineCollection(Animatable,ISealable,IAnimatable,IResource,IList,IColle
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """ CreateInstanceCore(self: TimelineCollection) -> Freezable """
-  pass
- def FreezeCore(self,*args):
-  """ FreezeCore(self: TimelineCollection,isChecking: bool) -> bool """
-  pass
- def GetAsFrozenCore(self,*args):
-  """ GetAsFrozenCore(self: TimelineCollection,source: Freezable) """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """ GetCurrentValueAsFrozenCore(self: TimelineCollection,source: Freezable) """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """ CreateInstanceCore(self: TimelineCollection) -> Freezable """
+        pass
+
+    def FreezeCore(self, *args):
+        """ FreezeCore(self: TimelineCollection,isChecking: bool) -> bool """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """ GetAsFrozenCore(self: TimelineCollection,source: Freezable) """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """ GetCurrentValueAsFrozenCore(self: TimelineCollection,source: Freezable) """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: TimelineCollection) -> Enumerator
 
   
@@ -147,9 +172,10 @@ class TimelineCollection(Animatable,ISealable,IAnimatable,IResource,IList,IColle
 
    Returns: An object that can iterate the members of the collection.
   """
-  pass
- def IndexOf(self,value):
-  """
+        pass
+
+    def IndexOf(self, value):
+        """
   IndexOf(self: TimelineCollection,value: Timeline) -> int
 
   
@@ -166,9 +192,10 @@ class TimelineCollection(Animatable,ISealable,IAnimatable,IResource,IList,IColle
 
    Returns: The index position of value within this list.  If not found,-1 is returned.
   """
-  pass
- def Insert(self,index,value):
-  """
+        pass
+
+    def Insert(self, index, value):
+        """
   Insert(self: TimelineCollection,index: int,value: Timeline)
 
    Inserts the specified Timeline object into this 
@@ -183,16 +210,18 @@ class TimelineCollection(Animatable,ISealable,IAnimatable,IResource,IList,IColle
 
    value: The object to insert.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: Freezable)
 
    Called when the current System.Windows.Freezable object is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -223,9 +252,10 @@ class TimelineCollection(Animatable,ISealable,IAnimatable,IResource,IList,IColle
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -242,9 +272,10 @@ class TimelineCollection(Animatable,ISealable,IAnimatable,IResource,IList,IColle
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -253,9 +284,10 @@ class TimelineCollection(Animatable,ISealable,IAnimatable,IResource,IList,IColle
 
     members that are not dependency properties.
   """
-  pass
- def Remove(self,value):
-  """
+        pass
+
+    def Remove(self, value):
+        """
   Remove(self: TimelineCollection,value: Timeline) -> bool
 
   
@@ -272,9 +304,10 @@ class TimelineCollection(Animatable,ISealable,IAnimatable,IResource,IList,IColle
 
    Returns: true if the operation was successful; otherwise,false.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: TimelineCollection,index: int)
 
    Removes the System.Windows.Media.Animation.Timeline at the specified index position from this 
@@ -287,9 +320,10 @@ class TimelineCollection(Animatable,ISealable,IAnimatable,IResource,IList,IColle
 
    index: The zero-based index position of the item to remove.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -306,9 +340,10 @@ class TimelineCollection(Animatable,ISealable,IAnimatable,IResource,IList,IColle
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -319,9 +354,10 @@ class TimelineCollection(Animatable,ISealable,IAnimatable,IResource,IList,IColle
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -330,12 +366,14 @@ class TimelineCollection(Animatable,ISealable,IAnimatable,IResource,IList,IColle
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: ICollection[Timeline],item: Timeline) -> bool
 
   __contains__(self: IList,value: object) -> bool
@@ -350,34 +388,41 @@ class TimelineCollection(Animatable,ISealable,IAnimatable,IResource,IList,IColle
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,capacity: int)
 
   __new__(cls: type,collection: IEnumerable[Timeline])
   """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of items contained in this System.Windows.Media.Animation.TimelineCollection.
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of items contained in this System.Windows.Media.Animation.TimelineCollection.
 
 
 
@@ -387,6 +432,4 @@ Get: Count(self: TimelineCollection) -> int
 
 """
 
-
- Enumerator=None
-
+    Enumerator = None

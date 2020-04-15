@@ -1,8 +1,9 @@
-class AppearanceAssetElement(Element,IDisposable):
- """ An element that represents an appearance asset for use in composing material definitions. """
- @staticmethod
- def Create(document,name,asset):
-  """
+class AppearanceAssetElement(Element, IDisposable):
+    """ An element that represents an appearance asset for use in composing material definitions. """
+
+    @staticmethod
+    def Create(document, name, asset):
+        """
   Create(document: Document,name: str,asset: Asset) -> AppearanceAssetElement
 
   
@@ -23,13 +24,15 @@ class AppearanceAssetElement(Element,IDisposable):
 
     you should access it without owning it.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- @staticmethod
- def GetAppearanceAssetElementByName(doc,name):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    @staticmethod
+    def GetAppearanceAssetElementByName(doc, name):
+        """
   GetAppearanceAssetElementByName(doc: Document,name: str) -> AppearanceAssetElement
 
   
@@ -42,12 +45,14 @@ class AppearanceAssetElement(Element,IDisposable):
 
    name: Name of the AppearanceAssetElement.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetRenderingAsset(self):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetRenderingAsset(self):
+        """
   GetRenderingAsset(self: AppearanceAssetElement) -> Asset
 
   
@@ -56,15 +61,18 @@ class AppearanceAssetElement(Element,IDisposable):
 
    Returns: The rendering asset held by this appearance asset element.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetRenderingAsset(self,asset):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetRenderingAsset(self, asset):
+        """
   SetRenderingAsset(self: AppearanceAssetElement,asset: Asset)
 
    Sets the rendering asset for the appearance asset element.
@@ -73,13 +81,16 @@ class AppearanceAssetElement(Element,IDisposable):
 
    asset: The new rendering asset.It should be an appearance asset.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

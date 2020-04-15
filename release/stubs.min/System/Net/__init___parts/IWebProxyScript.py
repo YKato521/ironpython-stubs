@@ -1,14 +1,16 @@
 class IWebProxyScript:
- """ Provides the base interface to load and execute scripts for automatic proxy detection. """
- def Close(self):
-  """
+    """ Provides the base interface to load and execute scripts for automatic proxy detection. """
+
+    def Close(self):
+        """
   Close(self: IWebProxyScript)
 
    Closes a script.
   """
-  pass
- def Load(self,scriptLocation,script,helperType):
-  """
+        pass
+
+    def Load(self, scriptLocation, script, helperType):
+        """
   Load(self: IWebProxyScript,scriptLocation: Uri,script: str,helperType: Type) -> bool
 
   
@@ -25,9 +27,10 @@ class IWebProxyScript:
 
    Returns: A System.Boolean indicating whether the script was successfully loaded.
   """
-  pass
- def Run(self,url,host):
-  """
+        pass
+
+    def Run(self, url, host):
+        """
   Run(self: IWebProxyScript,url: str,host: str) -> str
 
   
@@ -42,7 +45,8 @@ class IWebProxyScript:
 
    Returns: A System.String.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

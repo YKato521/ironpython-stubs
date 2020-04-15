@@ -1,8 +1,9 @@
 class Directory(object):
- """ Exposes static methods for creating,moving,and enumerating through directories and subdirectories. This class cannot be inherited. """
- @staticmethod
- def CreateDirectory(path,directorySecurity=None):
-  """
+    """ Exposes static methods for creating,moving,and enumerating through directories and subdirectories. This class cannot be inherited. """
+
+    @staticmethod
+    def CreateDirectory(path, directorySecurity=None):
+        """
   CreateDirectory(path: str,directorySecurity: DirectorySecurity) -> DirectoryInfo
 
   
@@ -29,10 +30,11 @@ class Directory(object):
 
    Returns: A System.IO.DirectoryInfo as specified by path.
   """
-  pass
- @staticmethod
- def Delete(path,recursive=None):
-  """
+        pass
+
+    @staticmethod
+    def Delete(path, recursive=None):
+        """
   Delete(path: str,recursive: bool)
 
    Deletes the specified directory and,if indicated,any subdirectories and files in the directory.
@@ -51,10 +53,11 @@ class Directory(object):
 
    path: The name of the empty directory to remove. This directory must be writable or empty.
   """
-  pass
- @staticmethod
- def EnumerateDirectories(path,searchPattern=None,searchOption=None):
-  """
+        pass
+
+    @staticmethod
+    def EnumerateDirectories(path, searchPattern=None, searchOption=None):
+        """
   EnumerateDirectories(path: str,searchPattern: str,searchOption: SearchOption) -> IEnumerable[str]
 
   
@@ -119,10 +122,11 @@ class Directory(object):
 
    Returns: An enumerable collection of directory names in the directory specified by path.
   """
-  pass
- @staticmethod
- def EnumerateFiles(path,searchPattern=None,searchOption=None):
-  """
+        pass
+
+    @staticmethod
+    def EnumerateFiles(path, searchPattern=None, searchOption=None):
+        """
   EnumerateFiles(path: str,searchPattern: str,searchOption: SearchOption) -> IEnumerable[str]
 
   
@@ -183,10 +187,11 @@ class Directory(object):
 
    Returns: An enumerable collection of file names in the directory specified by path.
   """
-  pass
- @staticmethod
- def EnumerateFileSystemEntries(path,searchPattern=None,searchOption=None):
-  """
+        pass
+
+    @staticmethod
+    def EnumerateFileSystemEntries(path, searchPattern=None, searchOption=None):
+        """
   EnumerateFileSystemEntries(path: str,searchPattern: str,searchOption: SearchOption) -> IEnumerable[str]
 
   
@@ -251,10 +256,11 @@ class Directory(object):
 
    Returns: An enumerable collection of file-system entries in the directory specified by path.
   """
-  pass
- @staticmethod
- def Exists(path):
-  """
+        pass
+
+    @staticmethod
+    def Exists(path):
+        """
   Exists(path: str) -> bool
 
   
@@ -267,10 +273,11 @@ class Directory(object):
 
    Returns: true if path refers to an existing directory; otherwise,false.
   """
-  pass
- @staticmethod
- def GetAccessControl(path,includeSections=None):
-  """
+        pass
+
+    @staticmethod
+    def GetAccessControl(path, includeSections=None):
+        """
   GetAccessControl(path: str,includeSections: AccessControlSections) -> DirectorySecurity
 
   
@@ -323,10 +330,11 @@ class Directory(object):
 
     rules for the file described by the path parameter.
   """
-  pass
- @staticmethod
- def GetCreationTime(path):
-  """
+        pass
+
+    @staticmethod
+    def GetCreationTime(path):
+        """
   GetCreationTime(path: str) -> DateTime
 
   
@@ -341,10 +349,11 @@ class Directory(object):
 
     value is expressed in local time.
   """
-  pass
- @staticmethod
- def GetCreationTimeUtc(path):
-  """
+        pass
+
+    @staticmethod
+    def GetCreationTimeUtc(path):
+        """
   GetCreationTimeUtc(path: str) -> DateTime
 
   
@@ -359,10 +368,11 @@ class Directory(object):
 
     value is expressed in UTC time.
   """
-  pass
- @staticmethod
- def GetCurrentDirectory():
-  """
+        pass
+
+    @staticmethod
+    def GetCurrentDirectory():
+        """
   GetCurrentDirectory() -> str
 
   
@@ -373,10 +383,11 @@ class Directory(object):
 
     backslash (\).
   """
-  pass
- @staticmethod
- def GetDirectories(path,searchPattern=None,searchOption=None):
-  """
+        pass
+
+    @staticmethod
+    def GetDirectories(path, searchPattern=None, searchOption=None):
+        """
   GetDirectories(path: str,searchPattern: str,searchOption: SearchOption) -> Array[str]
 
   
@@ -447,10 +458,11 @@ class Directory(object):
 
    Returns: An array of the names of subdirectories in path.
   """
-  pass
- @staticmethod
- def GetDirectoryRoot(path):
-  """
+        pass
+
+    @staticmethod
+    def GetDirectoryRoot(path):
+        """
   GetDirectoryRoot(path: str) -> str
 
   
@@ -463,10 +475,11 @@ class Directory(object):
 
    Returns: A string containing the volume information,root information,or both for the specified path.
   """
-  pass
- @staticmethod
- def GetFiles(path,searchPattern=None,searchOption=None):
-  """
+        pass
+
+    @staticmethod
+    def GetFiles(path, searchPattern=None, searchOption=None):
+        """
   GetFiles(path: str,searchPattern: str,searchOption: SearchOption) -> Array[str]
 
   
@@ -545,10 +558,11 @@ class Directory(object):
 
    Returns: A String array of file names in the specified directory.
   """
-  pass
- @staticmethod
- def GetFileSystemEntries(path,searchPattern=None,searchOption=None):
-  """
+        pass
+
+    @staticmethod
+    def GetFileSystemEntries(path, searchPattern=None, searchOption=None):
+        """
   GetFileSystemEntries(path: str,searchPattern: str,searchOption: SearchOption) -> Array[str]
 
   
@@ -613,10 +627,11 @@ class Directory(object):
 
    Returns: An array that contains the names of files and subdirectories in the specified directory.
   """
-  pass
- @staticmethod
- def GetLastAccessTime(path):
-  """
+        pass
+
+    @staticmethod
+    def GetLastAccessTime(path):
+        """
   GetLastAccessTime(path: str) -> DateTime
 
   
@@ -631,10 +646,11 @@ class Directory(object):
 
     accessed. This value is expressed in local time.
   """
-  pass
- @staticmethod
- def GetLastAccessTimeUtc(path):
-  """
+        pass
+
+    @staticmethod
+    def GetLastAccessTimeUtc(path):
+        """
   GetLastAccessTimeUtc(path: str) -> DateTime
 
   
@@ -653,10 +669,11 @@ class Directory(object):
 
     accessed. This value is expressed in UTC time.
   """
-  pass
- @staticmethod
- def GetLastWriteTime(path):
-  """
+        pass
+
+    @staticmethod
+    def GetLastWriteTime(path):
+        """
   GetLastWriteTime(path: str) -> DateTime
 
   
@@ -671,10 +688,11 @@ class Directory(object):
 
     written to. This value is expressed in local time.
   """
-  pass
- @staticmethod
- def GetLastWriteTimeUtc(path):
-  """
+        pass
+
+    @staticmethod
+    def GetLastWriteTimeUtc(path):
+        """
   GetLastWriteTimeUtc(path: str) -> DateTime
 
   
@@ -693,10 +711,11 @@ class Directory(object):
 
     written to. This value is expressed in UTC time.
   """
-  pass
- @staticmethod
- def GetLogicalDrives():
-  """
+        pass
+
+    @staticmethod
+    def GetLogicalDrives():
+        """
   GetLogicalDrives() -> Array[str]
 
   
@@ -705,10 +724,11 @@ class Directory(object):
 
    Returns: The logical drives on this computer.
   """
-  pass
- @staticmethod
- def GetParent(path):
-  """
+        pass
+
+    @staticmethod
+    def GetParent(path):
+        """
   GetParent(path: str) -> DirectoryInfo
 
   
@@ -723,10 +743,11 @@ class Directory(object):
 
     or share name.
   """
-  pass
- @staticmethod
- def Move(sourceDirName,destDirName):
-  """
+        pass
+
+    @staticmethod
+    def Move(sourceDirName, destDirName):
+        """
   Move(sourceDirName: str,destDirName: str)
 
    Moves a file or a directory and its contents to a new location.
@@ -739,10 +760,11 @@ class Directory(object):
 
     must also be a file name.
   """
-  pass
- @staticmethod
- def SetAccessControl(path,directorySecurity):
-  """
+        pass
+
+    @staticmethod
+    def SetAccessControl(path, directorySecurity):
+        """
   SetAccessControl(path: str,directorySecurity: DirectorySecurity)
 
    Applies access control list (ACL) entries described by a 
@@ -759,10 +781,11 @@ class Directory(object):
 
     the directory described by the path parameter.
   """
-  pass
- @staticmethod
- def SetCreationTime(path,creationTime):
-  """
+        pass
+
+    @staticmethod
+    def SetCreationTime(path, creationTime):
+        """
   SetCreationTime(path: str,creationTime: DateTime)
 
    Sets the creation date and time for the specified file or directory.
@@ -775,10 +798,11 @@ class Directory(object):
 
     is expressed in local time.
   """
-  pass
- @staticmethod
- def SetCreationTimeUtc(path,creationTimeUtc):
-  """
+        pass
+
+    @staticmethod
+    def SetCreationTimeUtc(path, creationTimeUtc):
+        """
   SetCreationTimeUtc(path: str,creationTimeUtc: DateTime)
 
    Sets the creation date and time,in Coordinated Universal Time (UTC) format,for the specified 
@@ -795,10 +819,11 @@ class Directory(object):
 
     is expressed in UTC time.
   """
-  pass
- @staticmethod
- def SetCurrentDirectory(path):
-  """
+        pass
+
+    @staticmethod
+    def SetCurrentDirectory(path):
+        """
   SetCurrentDirectory(path: str)
 
    Sets the application's current working directory to the specified directory.
@@ -807,10 +832,11 @@ class Directory(object):
 
    path: The path to which the current working directory is set.
   """
-  pass
- @staticmethod
- def SetLastAccessTime(path,lastAccessTime):
-  """
+        pass
+
+    @staticmethod
+    def SetLastAccessTime(path, lastAccessTime):
+        """
   SetLastAccessTime(path: str,lastAccessTime: DateTime)
 
    Sets the date and time the specified file or directory was last accessed.
@@ -823,10 +849,11 @@ class Directory(object):
 
     is expressed in local time.
   """
-  pass
- @staticmethod
- def SetLastAccessTimeUtc(path,lastAccessTimeUtc):
-  """
+        pass
+
+    @staticmethod
+    def SetLastAccessTimeUtc(path, lastAccessTimeUtc):
+        """
   SetLastAccessTimeUtc(path: str,lastAccessTimeUtc: DateTime)
 
    Sets the date and time,in Coordinated Universal Time (UTC) format,that the specified file or 
@@ -843,10 +870,11 @@ class Directory(object):
 
     is expressed in UTC time.
   """
-  pass
- @staticmethod
- def SetLastWriteTime(path,lastWriteTime):
-  """
+        pass
+
+    @staticmethod
+    def SetLastWriteTime(path, lastWriteTime):
+        """
   SetLastWriteTime(path: str,lastWriteTime: DateTime)
 
    Sets the date and time a directory was last written to.
@@ -857,10 +885,11 @@ class Directory(object):
 
    lastWriteTime: The date and time the directory was last written to. This value is expressed in local time.
   """
-  pass
- @staticmethod
- def SetLastWriteTimeUtc(path,lastWriteTimeUtc):
-  """
+        pass
+
+    @staticmethod
+    def SetLastWriteTimeUtc(path, lastWriteTimeUtc):
+        """
   SetLastWriteTimeUtc(path: str,lastWriteTimeUtc: DateTime)
 
    Sets the date and time,in Coordinated Universal Time (UTC) format,that a directory was last 
@@ -875,36 +904,36 @@ class Directory(object):
 
    lastWriteTimeUtc: The date and time the directory was last written to. This value is expressed in UTC time.
   """
-  pass
- __all__=[
-  'CreateDirectory',
-  'Delete',
-  'EnumerateDirectories',
-  'EnumerateFiles',
-  'EnumerateFileSystemEntries',
-  'Exists',
-  'GetAccessControl',
-  'GetCreationTime',
-  'GetCreationTimeUtc',
-  'GetCurrentDirectory',
-  'GetDirectories',
-  'GetDirectoryRoot',
-  'GetFiles',
-  'GetFileSystemEntries',
-  'GetLastAccessTime',
-  'GetLastAccessTimeUtc',
-  'GetLastWriteTime',
-  'GetLastWriteTimeUtc',
-  'GetLogicalDrives',
-  'GetParent',
-  'Move',
-  'SetAccessControl',
-  'SetCreationTime',
-  'SetCreationTimeUtc',
-  'SetCurrentDirectory',
-  'SetLastAccessTime',
-  'SetLastAccessTimeUtc',
-  'SetLastWriteTime',
-  'SetLastWriteTimeUtc',
- ]
+        pass
 
+    __all__ = [
+        "CreateDirectory",
+        "Delete",
+        "EnumerateDirectories",
+        "EnumerateFiles",
+        "EnumerateFileSystemEntries",
+        "Exists",
+        "GetAccessControl",
+        "GetCreationTime",
+        "GetCreationTimeUtc",
+        "GetCurrentDirectory",
+        "GetDirectories",
+        "GetDirectoryRoot",
+        "GetFiles",
+        "GetFileSystemEntries",
+        "GetLastAccessTime",
+        "GetLastAccessTimeUtc",
+        "GetLastWriteTime",
+        "GetLastWriteTimeUtc",
+        "GetLogicalDrives",
+        "GetParent",
+        "Move",
+        "SetAccessControl",
+        "SetCreationTime",
+        "SetCreationTimeUtc",
+        "SetCurrentDirectory",
+        "SetLastAccessTime",
+        "SetLastAccessTimeUtc",
+        "SetLastWriteTime",
+        "SetLastWriteTimeUtc",
+    ]

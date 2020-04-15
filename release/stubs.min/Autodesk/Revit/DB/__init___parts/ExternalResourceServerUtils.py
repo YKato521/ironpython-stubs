@@ -1,8 +1,9 @@
 class ExternalResourceServerUtils(object):
- """ Contains utilities related to external resource server. """
- @staticmethod
- def IsValidShortName(serverId,serverName):
-  """
+    """ Contains utilities related to external resource server. """
+
+    @staticmethod
+    def IsValidShortName(serverId, serverName):
+        """
   IsValidShortName(serverId: Guid,serverName: str) -> bool
 
   
@@ -17,10 +18,11 @@ class ExternalResourceServerUtils(object):
 
    Returns: True if the name is a valid short name,false otherwise.
   """
-  pass
- @staticmethod
- def ServerSupportsAssemblyCodeData(extRef):
-  """
+        pass
+
+    @staticmethod
+    def ServerSupportsAssemblyCodeData(extRef):
+        """
   ServerSupportsAssemblyCodeData(extRef: ExternalResourceReference) -> bool
 
   
@@ -41,10 +43,11 @@ class ExternalResourceServerUtils(object):
 
     AssemblyCodeData. False otherwise.
   """
-  pass
- @staticmethod
- def ServerSupportsKeynotes(extRef):
-  """
+        pass
+
+    @staticmethod
+    def ServerSupportsKeynotes(extRef):
+        """
   ServerSupportsKeynotes(extRef: ExternalResourceReference) -> bool
 
   
@@ -65,10 +68,11 @@ class ExternalResourceServerUtils(object):
 
     keynotes.  False otherwise.
   """
-  pass
- @staticmethod
- def ServerSupportsRevitLinks(extRef):
-  """
+        pass
+
+    @staticmethod
+    def ServerSupportsRevitLinks(extRef):
+        """
   ServerSupportsRevitLinks(extRef: ExternalResourceReference) -> bool
 
   
@@ -89,11 +93,11 @@ class ExternalResourceServerUtils(object):
 
     links. False otherwise.
   """
-  pass
- __all__=[
-  'IsValidShortName',
-  'ServerSupportsAssemblyCodeData',
-  'ServerSupportsKeynotes',
-  'ServerSupportsRevitLinks',
- ]
+        pass
 
+    __all__ = [
+        "IsValidShortName",
+        "ServerSupportsAssemblyCodeData",
+        "ServerSupportsKeynotes",
+        "ServerSupportsRevitLinks",
+    ]

@@ -1,8 +1,9 @@
 class Debug(object):
- """ Provides a set of methods and properties that help debug your code. This class cannot be inherited. """
- @staticmethod
- def Assert(condition,message=None,*__args):
-  """
+    """ Provides a set of methods and properties that help debug your code. This class cannot be inherited. """
+
+    @staticmethod
+    def Assert(condition, message=None, *__args):
+        """
   Assert(condition: bool,message: str,detailMessage: str)
 
    Checks for a condition; if the condition is false,outputs two specified messages and displays a 
@@ -85,20 +86,22 @@ class Debug(object):
 
    message: The message to send to the System.Diagnostics.Trace.Listeners collection.
   """
-  pass
- @staticmethod
- def Close():
-  """
+        pass
+
+    @staticmethod
+    def Close():
+        """
   Close()
 
    Flushes the output buffer and then calls the Close method on each of the 
 
     System.Diagnostics.Debug.Listeners.
   """
-  pass
- @staticmethod
- def Fail(message,detailMessage=None):
-  """
+        pass
+
+    @staticmethod
+    def Fail(message, detailMessage=None):
+        """
   Fail(message: str,detailMessage: str)
 
    Emits an error message and a detailed error message.
@@ -117,28 +120,31 @@ class Debug(object):
 
    message: A message to emit.
   """
-  pass
- @staticmethod
- def Flush():
-  """
+        pass
+
+    @staticmethod
+    def Flush():
+        """
   Flush()
 
    Flushes the output buffer and causes buffered data to write to the 
 
     System.Diagnostics.Debug.Listeners collection.
   """
-  pass
- @staticmethod
- def Indent():
-  """
+        pass
+
+    @staticmethod
+    def Indent():
+        """
   Indent()
 
    Increases the current System.Diagnostics.Debug.IndentLevel by one.
   """
-  pass
- @staticmethod
- def Print(*__args):
-  """
+        pass
+
+    @staticmethod
+    def Print(*__args):
+        """
   Print(format: str,*args: Array[object])
 
    Writes a formatted string followed by a line terminator to the trace listeners in the 
@@ -169,18 +175,20 @@ class Debug(object):
 
    message: The message to write.
   """
-  pass
- @staticmethod
- def Unindent():
-  """
+        pass
+
+    @staticmethod
+    def Unindent():
+        """
   Unindent()
 
    Decreases the current System.Diagnostics.Debug.IndentLevel by one.
   """
-  pass
- @staticmethod
- def Write(*__args):
-  """
+        pass
+
+    @staticmethod
+    def Write(*__args):
+        """
   Write(message: str,category: str)
 
    Writes a category name and message to the trace listeners in the 
@@ -229,10 +237,11 @@ class Debug(object):
 
    value: An object whose name is sent to the System.Diagnostics.Debug.Listeners.
   """
-  pass
- @staticmethod
- def WriteIf(condition,*__args):
-  """
+        pass
+
+    @staticmethod
+    def WriteIf(condition, *__args):
+        """
   WriteIf(condition: bool,message: str,category: str)
 
    Writes a category name and message to the trace listeners in the 
@@ -309,10 +318,11 @@ class Debug(object):
 
    value: An object whose name is sent to the System.Diagnostics.Debug.Listeners.
   """
-  pass
- @staticmethod
- def WriteLine(*__args):
-  """
+        pass
+
+    @staticmethod
+    def WriteLine(*__args):
+        """
   WriteLine(value: object,category: str)
 
    Writes a category name and the value of the object's System.Object.ToString method to the trace 
@@ -383,10 +393,11 @@ class Debug(object):
 
    value: An object whose name is sent to the System.Diagnostics.Debug.Listeners.
   """
-  pass
- @staticmethod
- def WriteLineIf(condition,*__args):
-  """
+        pass
+
+    @staticmethod
+    def WriteLineIf(condition, *__args):
+        """
   WriteLineIf(condition: bool,message: str,category: str)
 
    Writes a category name and message to the trace listeners in the 
@@ -459,22 +470,22 @@ class Debug(object):
 
    value: An object whose name is sent to the System.Diagnostics.Debug.Listeners.
   """
-  pass
- AutoFlush=False
- IndentLevel=0
- IndentSize=4
- Listeners=None
- __all__=[
-  'Assert',
-  'Close',
-  'Fail',
-  'Flush',
-  'Indent',
-  'Print',
-  'Unindent',
-  'Write',
-  'WriteIf',
-  'WriteLine',
-  'WriteLineIf',
- ]
+        pass
 
+    AutoFlush = False
+    IndentLevel = 0
+    IndentSize = 4
+    Listeners = None
+    __all__ = [
+        "Assert",
+        "Close",
+        "Fail",
+        "Flush",
+        "Indent",
+        "Print",
+        "Unindent",
+        "Write",
+        "WriteIf",
+        "WriteLine",
+        "WriteLineIf",
+    ]

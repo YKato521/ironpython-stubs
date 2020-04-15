@@ -1,16 +1,18 @@
-class DimensionSegmentArrayIterator(APIObject,IDisposable,IEnumerator):
- """
+class DimensionSegmentArrayIterator(APIObject, IDisposable, IEnumerator):
+    """
  An iterator to an array of DimensionSegment objects..
 
  
 
  DimensionSegmentArrayIterator()
  """
- def Dispose(self):
-  """ Dispose(self: DimensionSegmentArrayIterator,A_0: bool) """
-  pass
- def MoveNext(self):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: DimensionSegmentArrayIterator,A_0: bool) """
+        pass
+
+    def MoveNext(self):
+        """
   MoveNext(self: DimensionSegmentArrayIterator) -> bool
 
   
@@ -27,37 +29,46 @@ class DimensionSegmentArrayIterator(APIObject,IDisposable,IEnumerator):
 
      the array.
   """
-  pass
- def next(self,*args):
-  """ next(self: object) -> object """
-  pass
- def ReleaseManagedResources(self,*args):
-  """ ReleaseManagedResources(self: APIObject) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: DimensionSegmentArrayIterator) """
-  pass
- def Reset(self):
-  """
+        pass
+
+    def next(self, *args):
+        """ next(self: object) -> object """
+        pass
+
+    def ReleaseManagedResources(self, *args):
+        """ ReleaseManagedResources(self: APIObject) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: DimensionSegmentArrayIterator) """
+        pass
+
+    def Reset(self):
+        """
   Reset(self: DimensionSegmentArrayIterator)
 
    Bring the iterator back to the start of the array.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerator) -> object """
-  pass
- Current=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Retrieves the item that is the current focus of the iterator.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerator) -> object """
+        pass
+
+    Current = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Retrieves the item that is the current focus of the iterator.
 
 
 
@@ -66,5 +77,3 @@ Get: Current(self: DimensionSegmentArrayIterator) -> object
 
 
 """
-
-

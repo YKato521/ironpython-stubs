@@ -1,7 +1,8 @@
 class IConvertible:
- """ Defines methods that convert the value of the implementing reference or value type to a common language runtime type that has an equivalent value. """
- def GetTypeCode(self):
-  """
+    """ Defines methods that convert the value of the implementing reference or value type to a common language runtime type that has an equivalent value. """
+
+    def GetTypeCode(self):
+        """
   GetTypeCode(self: IConvertible) -> TypeCode
 
   
@@ -12,9 +13,10 @@ class IConvertible:
 
     this interface.
   """
-  pass
- def ToBoolean(self,provider):
-  """
+        pass
+
+    def ToBoolean(self, provider):
+        """
   ToBoolean(self: IConvertible,provider: IFormatProvider) -> bool
 
   
@@ -35,9 +37,10 @@ class IConvertible:
 
    Returns: A Boolean value equivalent to the value of this instance.
   """
-  pass
- def ToByte(self,provider):
-  """
+        pass
+
+    def ToByte(self, provider):
+        """
   ToByte(self: IConvertible,provider: IFormatProvider) -> Byte
 
   
@@ -58,9 +61,10 @@ class IConvertible:
 
    Returns: An 8-bit unsigned integer equivalent to the value of this instance.
   """
-  pass
- def ToChar(self,provider):
-  """
+        pass
+
+    def ToChar(self, provider):
+        """
   ToChar(self: IConvertible,provider: IFormatProvider) -> Char
 
   
@@ -81,9 +85,10 @@ class IConvertible:
 
    Returns: A Unicode character equivalent to the value of this instance.
   """
-  pass
- def ToDateTime(self,provider):
-  """
+        pass
+
+    def ToDateTime(self, provider):
+        """
   ToDateTime(self: IConvertible,provider: IFormatProvider) -> DateTime
 
   
@@ -104,9 +109,10 @@ class IConvertible:
 
    Returns: A System.DateTime instance equivalent to the value of this instance.
   """
-  pass
- def ToDecimal(self,provider):
-  """
+        pass
+
+    def ToDecimal(self, provider):
+        """
   ToDecimal(self: IConvertible,provider: IFormatProvider) -> Decimal
 
   
@@ -127,9 +133,10 @@ class IConvertible:
 
    Returns: A System.Decimal number equivalent to the value of this instance.
   """
-  pass
- def ToDouble(self,provider):
-  """
+        pass
+
+    def ToDouble(self, provider):
+        """
   ToDouble(self: IConvertible,provider: IFormatProvider) -> float
 
   
@@ -150,9 +157,10 @@ class IConvertible:
 
    Returns: A double-precision floating-point number equivalent to the value of this instance.
   """
-  pass
- def ToInt16(self,provider):
-  """
+        pass
+
+    def ToInt16(self, provider):
+        """
   ToInt16(self: IConvertible,provider: IFormatProvider) -> Int16
 
   
@@ -173,9 +181,10 @@ class IConvertible:
 
    Returns: An 16-bit signed integer equivalent to the value of this instance.
   """
-  pass
- def ToInt32(self,provider):
-  """
+        pass
+
+    def ToInt32(self, provider):
+        """
   ToInt32(self: IConvertible,provider: IFormatProvider) -> int
 
   
@@ -196,9 +205,10 @@ class IConvertible:
 
    Returns: An 32-bit signed integer equivalent to the value of this instance.
   """
-  pass
- def ToInt64(self,provider):
-  """
+        pass
+
+    def ToInt64(self, provider):
+        """
   ToInt64(self: IConvertible,provider: IFormatProvider) -> Int64
 
   
@@ -219,9 +229,10 @@ class IConvertible:
 
    Returns: An 64-bit signed integer equivalent to the value of this instance.
   """
-  pass
- def ToSByte(self,provider):
-  """
+        pass
+
+    def ToSByte(self, provider):
+        """
   ToSByte(self: IConvertible,provider: IFormatProvider) -> SByte
 
   
@@ -242,9 +253,10 @@ class IConvertible:
 
    Returns: An 8-bit signed integer equivalent to the value of this instance.
   """
-  pass
- def ToSingle(self,provider):
-  """
+        pass
+
+    def ToSingle(self, provider):
+        """
   ToSingle(self: IConvertible,provider: IFormatProvider) -> Single
 
   
@@ -265,9 +277,10 @@ class IConvertible:
 
    Returns: A single-precision floating-point number equivalent to the value of this instance.
   """
-  pass
- def ToString(self,provider):
-  """
+        pass
+
+    def ToString(self, provider):
+        """
   ToString(self: IConvertible,provider: IFormatProvider) -> str
 
   
@@ -288,9 +301,10 @@ class IConvertible:
 
    Returns: A System.String instance equivalent to the value of this instance.
   """
-  pass
- def ToType(self,conversionType,provider):
-  """
+        pass
+
+    def ToType(self, conversionType, provider):
+        """
   ToType(self: IConvertible,conversionType: Type,provider: IFormatProvider) -> object
 
   
@@ -315,9 +329,10 @@ class IConvertible:
 
     instance.
   """
-  pass
- def ToUInt16(self,provider):
-  """
+        pass
+
+    def ToUInt16(self, provider):
+        """
   ToUInt16(self: IConvertible,provider: IFormatProvider) -> UInt16
 
   
@@ -338,9 +353,10 @@ class IConvertible:
 
    Returns: An 16-bit unsigned integer equivalent to the value of this instance.
   """
-  pass
- def ToUInt32(self,provider):
-  """
+        pass
+
+    def ToUInt32(self, provider):
+        """
   ToUInt32(self: IConvertible,provider: IFormatProvider) -> UInt32
 
   
@@ -361,9 +377,10 @@ class IConvertible:
 
    Returns: An 32-bit unsigned integer equivalent to the value of this instance.
   """
-  pass
- def ToUInt64(self,provider):
-  """
+        pass
+
+    def ToUInt64(self, provider):
+        """
   ToUInt64(self: IConvertible,provider: IFormatProvider) -> UInt64
 
   
@@ -384,7 +401,8 @@ class IConvertible:
 
    Returns: An 64-bit unsigned integer equivalent to the value of this instance.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

@@ -1,14 +1,16 @@
-class GeometryInstance(GeometryObject,IDisposable):
- """
+class GeometryInstance(GeometryObject, IDisposable):
+    """
  An instance of another element (symbol),specially positioned by this
 
  element.
  """
- def Dispose(self):
-  """ Dispose(self: APIObject,A_0: bool) """
-  pass
- def GetInstanceGeometry(self,transform=None):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: APIObject,A_0: bool) """
+        pass
+
+    def GetInstanceGeometry(self, transform=None):
+        """
   GetInstanceGeometry(self: GeometryInstance) -> GeometryElement
 
   
@@ -29,9 +31,10 @@ class GeometryInstance(GeometryObject,IDisposable):
 
    Returns: An element which contains the computed geometry for the transformed instance.
   """
-  pass
- def GetSymbolGeometry(self,transform=None):
-  """
+        pass
+
+    def GetSymbolGeometry(self, transform=None):
+        """
   GetSymbolGeometry(self: GeometryInstance) -> GeometryElement
 
   
@@ -62,24 +65,30 @@ class GeometryInstance(GeometryObject,IDisposable):
 
    Returns: An element which contains the computed geometry for the transformed symbol.
   """
-  pass
- def ReleaseManagedResources(self,*args):
-  """ ReleaseManagedResources(self: APIObject) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: GeometryObject) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Symbol=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The symbol element that this object is referring to.
+        pass
+
+    def ReleaseManagedResources(self, *args):
+        """ ReleaseManagedResources(self: APIObject) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: GeometryObject) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Symbol = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The symbol element that this object is referring to.
 
 
 
@@ -89,8 +98,10 @@ Get: Symbol(self: GeometryInstance) -> Element
 
 """
 
- SymbolGeometry=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The geometric representation of the symbol which generates this instance.
+    SymbolGeometry = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The geometric representation of the symbol which generates this instance.
 
 
 
@@ -100,8 +111,8 @@ Get: SymbolGeometry(self: GeometryInstance) -> GeometryElement
 
 """
 
- Transform=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The affine transformation from the local coordinate space of the symbol into the
+    Transform = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The affine transformation from the local coordinate space of the symbol into the
 
 coordinate space of the instance.
 
@@ -112,5 +123,3 @@ Get: Transform(self: GeometryInstance) -> Transform
 
 
 """
-
-

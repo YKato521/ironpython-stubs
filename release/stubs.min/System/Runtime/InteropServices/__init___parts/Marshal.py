@@ -1,8 +1,9 @@
 class Marshal(object):
- """ Provides a collection of methods for allocating unmanaged memory,copying unmanaged memory blocks,and converting managed to unmanaged types,as well as other miscellaneous methods used when interacting with unmanaged code. """
- @staticmethod
- def AddRef(pUnk):
-  """
+    """ Provides a collection of methods for allocating unmanaged memory,copying unmanaged memory blocks,and converting managed to unmanaged types,as well as other miscellaneous methods used when interacting with unmanaged code. """
+
+    @staticmethod
+    def AddRef(pUnk):
+        """
   AddRef(pUnk: IntPtr) -> int
 
   
@@ -15,10 +16,11 @@ class Marshal(object):
 
    Returns: The new value of the reference count on the pUnk parameter.
   """
-  pass
- @staticmethod
- def AllocCoTaskMem(cb):
-  """
+        pass
+
+    @staticmethod
+    def AllocCoTaskMem(cb):
+        """
   AllocCoTaskMem(cb: int) -> IntPtr
 
   
@@ -33,10 +35,11 @@ class Marshal(object):
 
     released with System.Runtime.InteropServices.Marshal.FreeCoTaskMem(System.IntPtr).
   """
-  pass
- @staticmethod
- def AllocHGlobal(cb):
-  """
+        pass
+
+    @staticmethod
+    def AllocHGlobal(cb):
+        """
   AllocHGlobal(cb: int) -> IntPtr
 
   
@@ -71,10 +74,11 @@ class Marshal(object):
 
     System.Runtime.InteropServices.Marshal.FreeHGlobal(System.IntPtr) method.
   """
-  pass
- @staticmethod
- def AreComObjectsAvailableForCleanup():
-  """
+        pass
+
+    @staticmethod
+    def AreComObjectsAvailableForCleanup():
+        """
   AreComObjectsAvailableForCleanup() -> bool
 
   
@@ -83,10 +87,11 @@ class Marshal(object):
 
    Returns: true if there are any RCWs available for cleanup; otherwise,false.
   """
-  pass
- @staticmethod
- def BindToMoniker(monikerName):
-  """
+        pass
+
+    @staticmethod
+    def BindToMoniker(monikerName):
+        """
   BindToMoniker(monikerName: str) -> object
 
   
@@ -101,10 +106,11 @@ class Marshal(object):
 
     parameter. A moniker is a name,and in this case,the moniker is defined by an interface.
   """
-  pass
- @staticmethod
- def ChangeWrapperHandleStrength(otp,fIsWeak):
-  """
+        pass
+
+    @staticmethod
+    def ChangeWrapperHandleStrength(otp, fIsWeak):
+        """
   ChangeWrapperHandleStrength(otp: object,fIsWeak: bool)
 
    Changes the strength of an object's COM Callable Wrapper (CCW) handle.
@@ -121,20 +127,22 @@ class Marshal(object):
 
     reference count; false to reset the handle strength on otp to be reference counted.
   """
-  pass
- @staticmethod
- def CleanupUnusedObjectsInCurrentContext():
-  """
+        pass
+
+    @staticmethod
+    def CleanupUnusedObjectsInCurrentContext():
+        """
   CleanupUnusedObjectsInCurrentContext()
 
    Notifies the runtime to clean up all Runtime Callable Wrappers (RCWs) allocated in the current 
 
     context.
   """
-  pass
- @staticmethod
- def Copy(source,*__args):
-  """
+        pass
+
+    @staticmethod
+    def Copy(source, *__args):
+        """
   Copy(source: IntPtr,destination: Array[Int16],startIndex: int,length: int)
 
    Copies data from an unmanaged memory pointer to a managed 16-bit signed integer array.
@@ -391,10 +399,11 @@ class Marshal(object):
 
    length: The number of array elements to copy.
   """
-  pass
- @staticmethod
- def CreateAggregatedObject(pOuter,o):
-  """
+        pass
+
+    @staticmethod
+    def CreateAggregatedObject(pOuter, o):
+        """
   CreateAggregatedObject[T](pOuter: IntPtr,o: T) -> IntPtr
 
   CreateAggregatedObject(pOuter: IntPtr,o: object) -> IntPtr
@@ -411,10 +420,11 @@ class Marshal(object):
 
    Returns: The inner IUnknown pointer of the managed object.
   """
-  pass
- @staticmethod
- def CreateWrapperOfType(o,t=None):
-  """
+        pass
+
+    @staticmethod
+    def CreateWrapperOfType(o, t=None):
+        """
   CreateWrapperOfType[(T,TWrapper)](o: T) -> TWrapper
 
   CreateWrapperOfType(o: object,t: Type) -> object
@@ -431,10 +441,11 @@ class Marshal(object):
 
    Returns: The newly wrapped object that is an instance of the desired type.
   """
-  pass
- @staticmethod
- def DestroyStructure(ptr,structuretype=None):
-  """
+        pass
+
+    @staticmethod
+    def DestroyStructure(ptr, structuretype=None):
+        """
   DestroyStructure[T](ptr: IntPtr)DestroyStructure(ptr: IntPtr,structuretype: Type)
 
    Frees all substructures that the specified unmanaged memory block points to.
@@ -447,10 +458,11 @@ class Marshal(object):
 
     in the ptr parameter.
   """
-  pass
- @staticmethod
- def FinalReleaseComObject(o):
-  """
+        pass
+
+    @staticmethod
+    def FinalReleaseComObject(o):
+        """
   FinalReleaseComObject(o: object) -> int
 
   
@@ -465,10 +477,11 @@ class Marshal(object):
 
     (zero) if the release is successful.
   """
-  pass
- @staticmethod
- def FreeBSTR(ptr):
-  """
+        pass
+
+    @staticmethod
+    def FreeBSTR(ptr):
+        """
   FreeBSTR(ptr: IntPtr)
 
    Frees a BSTR using the COM SysFreeString function.
@@ -477,10 +490,11 @@ class Marshal(object):
 
    ptr: The address of the BSTR to be freed.
   """
-  pass
- @staticmethod
- def FreeCoTaskMem(ptr):
-  """
+        pass
+
+    @staticmethod
+    def FreeCoTaskMem(ptr):
+        """
   FreeCoTaskMem(ptr: IntPtr)
 
    Frees a block of memory allocated by the unmanaged COM task memory allocator.
@@ -489,10 +503,11 @@ class Marshal(object):
 
    ptr: The address of the memory to be freed.
   """
-  pass
- @staticmethod
- def FreeHGlobal(hglobal):
-  """
+        pass
+
+    @staticmethod
+    def FreeHGlobal(hglobal):
+        """
   FreeHGlobal(hglobal: IntPtr)
 
    Frees memory previously allocated from the unmanaged memory of the process.
@@ -503,10 +518,11 @@ class Marshal(object):
 
     System.Runtime.InteropServices.Marshal.AllocHGlobal(System.IntPtr).
   """
-  pass
- @staticmethod
- def GenerateGuidForType(type):
-  """
+        pass
+
+    @staticmethod
+    def GenerateGuidForType(type):
+        """
   GenerateGuidForType(type: Type) -> Guid
 
   
@@ -523,10 +539,11 @@ class Marshal(object):
 
    Returns: An identifier for the specified type.
   """
-  pass
- @staticmethod
- def GenerateProgIdForType(type):
-  """
+        pass
+
+    @staticmethod
+    def GenerateProgIdForType(type):
+        """
   GenerateProgIdForType(type: Type) -> str
 
   
@@ -539,10 +556,11 @@ class Marshal(object):
 
    Returns: The ProgID of the specified type.
   """
-  pass
- @staticmethod
- def GetActiveObject(progID):
-  """
+        pass
+
+    @staticmethod
+    def GetActiveObject(progID):
+        """
   GetActiveObject(progID: str) -> object
 
   
@@ -557,10 +575,11 @@ class Marshal(object):
 
     that it supports.
   """
-  pass
- @staticmethod
- def GetComInterfaceForObject(o,T=None,mode=None):
-  """
+        pass
+
+    @staticmethod
+    def GetComInterfaceForObject(o, T=None, mode=None):
+        """
   GetComInterfaceForObject(o: object,T: Type,mode: CustomQueryInterfaceMode) -> IntPtr
 
   
@@ -607,10 +626,11 @@ class Marshal(object):
 
    Returns: The interface pointer that represents the specified interface for the object.
   """
-  pass
- @staticmethod
- def GetComInterfaceForObjectInContext(o,t):
-  """
+        pass
+
+    @staticmethod
+    def GetComInterfaceForObjectInContext(o, t):
+        """
   GetComInterfaceForObjectInContext(o: object,t: Type) -> IntPtr
 
   
@@ -631,10 +651,11 @@ class Marshal(object):
 
     null if the caller is not in the same context as the object.
   """
-  pass
- @staticmethod
- def GetComObjectData(obj,key):
-  """
+        pass
+
+    @staticmethod
+    def GetComObjectData(obj, key):
+        """
   GetComObjectData(obj: object,key: object) -> object
 
   
@@ -649,10 +670,11 @@ class Marshal(object):
 
    Returns: The data represented by the key parameter in the internal hash table of the obj parameter.
   """
-  pass
- @staticmethod
- def GetComSlotForMethodInfo(m):
-  """
+        pass
+
+    @staticmethod
+    def GetComSlotForMethodInfo(m):
+        """
   GetComSlotForMethodInfo(m: MemberInfo) -> int
 
   
@@ -669,10 +691,11 @@ class Marshal(object):
 
    Returns: The VTBL slot m identifier when it is exposed to COM.
   """
-  pass
- @staticmethod
- def GetDelegateForFunctionPointer(ptr,t=None):
-  """
+        pass
+
+    @staticmethod
+    def GetDelegateForFunctionPointer(ptr, t=None):
+        """
   GetDelegateForFunctionPointer[TDelegate](ptr: IntPtr) -> TDelegate
 
   GetDelegateForFunctionPointer(ptr: IntPtr,t: Type) -> Delegate
@@ -689,10 +712,11 @@ class Marshal(object):
 
    Returns: A delegate instance that can be cast to the appropriate delegate type.
   """
-  pass
- @staticmethod
- def GetEndComSlot(t):
-  """
+        pass
+
+    @staticmethod
+    def GetEndComSlot(t):
+        """
   GetEndComSlot(t: Type) -> int
 
   
@@ -711,10 +735,11 @@ class Marshal(object):
 
     returned VTBL slot is the last slot in the interface that is generated from the class.
   """
-  pass
- @staticmethod
- def GetExceptionCode():
-  """
+        pass
+
+    @staticmethod
+    def GetExceptionCode():
+        """
   GetExceptionCode() -> int
 
   
@@ -723,10 +748,11 @@ class Marshal(object):
 
    Returns: The type of the exception.
   """
-  pass
- @staticmethod
- def GetExceptionForHR(errorCode,errorInfo=None):
-  """
+        pass
+
+    @staticmethod
+    def GetExceptionForHR(errorCode, errorInfo=None):
+        """
   GetExceptionForHR(errorCode: int,errorInfo: IntPtr) -> Exception
 
   
@@ -763,10 +789,11 @@ class Marshal(object):
 
    Returns: An object that represents the converted HRESULT.
   """
-  pass
- @staticmethod
- def GetExceptionPointers():
-  """
+        pass
+
+    @staticmethod
+    def GetExceptionPointers():
+        """
   GetExceptionPointers() -> IntPtr
 
   
@@ -779,10 +806,11 @@ class Marshal(object):
 
    Returns: A pointer to an EXCEPTION_POINTERS structure.
   """
-  pass
- @staticmethod
- def GetFunctionPointerForDelegate(d):
-  """
+        pass
+
+    @staticmethod
+    def GetFunctionPointerForDelegate(d):
+        """
   GetFunctionPointerForDelegate[TDelegate](d: TDelegate) -> IntPtr
 
   GetFunctionPointerForDelegate(d: Delegate) -> IntPtr
@@ -799,10 +827,11 @@ class Marshal(object):
 
     managed delegate.
   """
-  pass
- @staticmethod
- def GetHINSTANCE(m):
-  """
+        pass
+
+    @staticmethod
+    def GetHINSTANCE(m):
+        """
   GetHINSTANCE(m: Module) -> IntPtr
 
   
@@ -815,10 +844,11 @@ class Marshal(object):
 
    Returns: The HINSTANCE for m; or -1 if the module does not have an HINSTANCE.
   """
-  pass
- @staticmethod
- def GetHRForException(e):
-  """
+        pass
+
+    @staticmethod
+    def GetHRForException(e):
+        """
   GetHRForException(e: Exception) -> int
 
   
@@ -831,10 +861,11 @@ class Marshal(object):
 
    Returns: The HRESULT mapped to the supplied exception.
   """
-  pass
- @staticmethod
- def GetHRForLastWin32Error():
-  """
+        pass
+
+    @staticmethod
+    def GetHRForLastWin32Error():
+        """
   GetHRForLastWin32Error() -> int
 
   
@@ -847,10 +878,11 @@ class Marshal(object):
 
    Returns: The HRESULT corresponding to the last Win32 error code.
   """
-  pass
- @staticmethod
- def GetIDispatchForObject(o):
-  """
+        pass
+
+    @staticmethod
+    def GetIDispatchForObject(o):
+        """
   GetIDispatchForObject(o: object) -> IntPtr
 
   
@@ -863,10 +895,11 @@ class Marshal(object):
 
    Returns: The IDispatch pointer for the o parameter.
   """
-  pass
- @staticmethod
- def GetIDispatchForObjectInContext(o):
-  """
+        pass
+
+    @staticmethod
+    def GetIDispatchForObjectInContext(o):
+        """
   GetIDispatchForObjectInContext(o: object) -> IntPtr
 
   
@@ -885,10 +918,11 @@ class Marshal(object):
 
     same context as the specified object.
   """
-  pass
- @staticmethod
- def GetITypeInfoForType(t):
-  """
+        pass
+
+    @staticmethod
+    def GetITypeInfoForType(t):
+        """
   GetITypeInfoForType(t: Type) -> IntPtr
 
   
@@ -901,10 +935,11 @@ class Marshal(object):
 
    Returns: A pointer to the ITypeInfo interface for the t parameter.
   """
-  pass
- @staticmethod
- def GetIUnknownForObject(o):
-  """
+        pass
+
+    @staticmethod
+    def GetIUnknownForObject(o):
+        """
   GetIUnknownForObject(o: object) -> IntPtr
 
   
@@ -917,10 +952,11 @@ class Marshal(object):
 
    Returns: The IUnknown pointer for the o parameter.
   """
-  pass
- @staticmethod
- def GetIUnknownForObjectInContext(o):
-  """
+        pass
+
+    @staticmethod
+    def GetIUnknownForObjectInContext(o):
+        """
   GetIUnknownForObjectInContext(o: object) -> IntPtr
 
   
@@ -939,10 +975,11 @@ class Marshal(object):
 
     as the specified object.
   """
-  pass
- @staticmethod
- def GetLastWin32Error():
-  """
+        pass
+
+    @staticmethod
+    def GetLastWin32Error():
+        """
   GetLastWin32Error() -> int
 
   
@@ -955,10 +992,11 @@ class Marshal(object):
 
    Returns: The last error code set by a call to the Win32 SetLastError function.
   """
-  pass
- @staticmethod
- def GetManagedThunkForUnmanagedMethodPtr(pfnMethodToWrap,pbSignature,cbSignature):
-  """
+        pass
+
+    @staticmethod
+    def GetManagedThunkForUnmanagedMethodPtr(pfnMethodToWrap, pbSignature, cbSignature):
+        """
   GetManagedThunkForUnmanagedMethodPtr(pfnMethodToWrap: IntPtr,pbSignature: IntPtr,cbSignature: int) -> IntPtr
 
   
@@ -981,10 +1019,11 @@ class Marshal(object):
 
     unmanaged code.
   """
-  pass
- @staticmethod
- def GetMethodInfoForComSlot(t,slot,memberType):
-  """
+        pass
+
+    @staticmethod
+    def GetMethodInfoForComSlot(t, slot, memberType):
+        """
   GetMethodInfoForComSlot(t: Type,slot: int,memberType: ComMemberType) -> (MemberInfo,ComMemberType)
 
   
@@ -1005,10 +1044,11 @@ class Marshal(object):
 
    Returns: The object that represents the member at the specified VTBL slot.
   """
-  pass
- @staticmethod
- def GetNativeVariantForObject(obj,pDstNativeVariant):
-  """
+        pass
+
+    @staticmethod
+    def GetNativeVariantForObject(obj, pDstNativeVariant):
+        """
   GetNativeVariantForObject[T](obj: T,pDstNativeVariant: IntPtr)GetNativeVariantForObject(obj: object,pDstNativeVariant: IntPtr)
 
    Converts an object to a COM VARIANT.
@@ -1019,10 +1059,11 @@ class Marshal(object):
 
    pDstNativeVariant: A pointer to receive the VARIANT that corresponds to the obj parameter.
   """
-  pass
- @staticmethod
- def GetObjectForIUnknown(pUnk):
-  """
+        pass
+
+    @staticmethod
+    def GetObjectForIUnknown(pUnk):
+        """
   GetObjectForIUnknown(pUnk: IntPtr) -> object
 
   
@@ -1039,10 +1080,11 @@ class Marshal(object):
 
    Returns: An object that represents the specified unmanaged COM object.
   """
-  pass
- @staticmethod
- def GetObjectForNativeVariant(pSrcNativeVariant):
-  """
+        pass
+
+    @staticmethod
+    def GetObjectForNativeVariant(pSrcNativeVariant):
+        """
   GetObjectForNativeVariant[T](pSrcNativeVariant: IntPtr) -> T
 
   
@@ -1067,10 +1109,11 @@ class Marshal(object):
 
    Returns: An object that corresponds to the pSrcNativeVariant parameter.
   """
-  pass
- @staticmethod
- def GetObjectsForNativeVariants(aSrcNativeVariant,cVars):
-  """
+        pass
+
+    @staticmethod
+    def GetObjectsForNativeVariants(aSrcNativeVariant, cVars):
+        """
   GetObjectsForNativeVariants[T](aSrcNativeVariant: IntPtr,cVars: int) -> Array[T]
 
   
@@ -1099,10 +1142,11 @@ class Marshal(object):
 
    Returns: An object array that corresponds to aSrcNativeVariant.
   """
-  pass
- @staticmethod
- def GetStartComSlot(t):
-  """
+        pass
+
+    @staticmethod
+    def GetStartComSlot(t):
+        """
   GetStartComSlot(t: Type) -> int
 
   
@@ -1121,10 +1165,11 @@ class Marshal(object):
 
     based on IUnknown,and 7 if the interface is based on IDispatch.
   """
-  pass
- @staticmethod
- def GetThreadFromFiberCookie(cookie):
-  """
+        pass
+
+    @staticmethod
+    def GetThreadFromFiberCookie(cookie):
+        """
   GetThreadFromFiberCookie(cookie: int) -> Thread
 
   
@@ -1137,10 +1182,11 @@ class Marshal(object):
 
    Returns: A thread that corresponds to the cookie parameter.
   """
-  pass
- @staticmethod
- def GetTypedObjectForIUnknown(pUnk,t):
-  """
+        pass
+
+    @staticmethod
+    def GetTypedObjectForIUnknown(pUnk, t):
+        """
   GetTypedObjectForIUnknown(pUnk: IntPtr,t: Type) -> object
 
   
@@ -1157,10 +1203,11 @@ class Marshal(object):
 
     unmanaged COM object.
   """
-  pass
- @staticmethod
- def GetTypeForITypeInfo(piTypeInfo):
-  """
+        pass
+
+    @staticmethod
+    def GetTypeForITypeInfo(piTypeInfo):
+        """
   GetTypeForITypeInfo(piTypeInfo: IntPtr) -> Type
 
   
@@ -1173,14 +1220,16 @@ class Marshal(object):
 
    Returns: A managed type that represents the unmanaged ITypeInfo object.
   """
-  pass
- @staticmethod
- def GetTypeFromCLSID(clsid):
-  """ GetTypeFromCLSID(clsid: Guid) -> Type """
-  pass
- @staticmethod
- def GetTypeInfoName(*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetTypeFromCLSID(clsid):
+        """ GetTypeFromCLSID(clsid: Guid) -> Type """
+        pass
+
+    @staticmethod
+    def GetTypeInfoName(*__args):
+        """
   GetTypeInfoName(typeInfo: ITypeInfo) -> str
 
   
@@ -1205,10 +1254,11 @@ class Marshal(object):
 
    Returns: The name of the type that the pTI parameter points to.
   """
-  pass
- @staticmethod
- def GetTypeLibGuid(*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetTypeLibGuid(*__args):
+        """
   GetTypeLibGuid(typelib: ITypeLib) -> Guid
 
   
@@ -1233,10 +1283,11 @@ class Marshal(object):
 
    Returns: The LIBID of the type library that the pTLB parameter points to.
   """
-  pass
- @staticmethod
- def GetTypeLibGuidForAssembly(asm):
-  """
+        pass
+
+    @staticmethod
+    def GetTypeLibGuidForAssembly(asm):
+        """
   GetTypeLibGuidForAssembly(asm: Assembly) -> Guid
 
   
@@ -1253,10 +1304,11 @@ class Marshal(object):
 
    Returns: The LIBID that is assigned to a type library when it is exported from the specified assembly.
   """
-  pass
- @staticmethod
- def GetTypeLibLcid(*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetTypeLibLcid(*__args):
+        """
   GetTypeLibLcid(typelib: ITypeLib) -> int
 
   
@@ -1281,10 +1333,11 @@ class Marshal(object):
 
    Returns: The LCID of the type library that the pTLB parameter points to.
   """
-  pass
- @staticmethod
- def GetTypeLibName(*__args):
-  """
+        pass
+
+    @staticmethod
+    def GetTypeLibName(*__args):
+        """
   GetTypeLibName(typelib: ITypeLib) -> str
 
   
@@ -1309,10 +1362,11 @@ class Marshal(object):
 
    Returns: The name of the type library that the pTLB parameter points to.
   """
-  pass
- @staticmethod
- def GetTypeLibVersionForAssembly(inputAssembly,majorVersion,minorVersion):
-  """
+        pass
+
+    @staticmethod
+    def GetTypeLibVersionForAssembly(inputAssembly, majorVersion, minorVersion):
+        """
   GetTypeLibVersionForAssembly(inputAssembly: Assembly) -> (int,int)
 
   
@@ -1323,10 +1377,11 @@ class Marshal(object):
 
    inputAssembly: A managed assembly.
   """
-  pass
- @staticmethod
- def GetUniqueObjectForIUnknown(unknown):
-  """
+        pass
+
+    @staticmethod
+    def GetUniqueObjectForIUnknown(unknown):
+        """
   GetUniqueObjectForIUnknown(unknown: IntPtr) -> object
 
   
@@ -1339,10 +1394,11 @@ class Marshal(object):
 
    Returns: A unique RCW for the specified IUnknown interface.
   """
-  pass
- @staticmethod
- def GetUnmanagedThunkForManagedMethodPtr(pfnMethodToWrap,pbSignature,cbSignature):
-  """
+        pass
+
+    @staticmethod
+    def GetUnmanagedThunkForManagedMethodPtr(pfnMethodToWrap, pbSignature, cbSignature):
+        """
   GetUnmanagedThunkForManagedMethodPtr(pfnMethodToWrap: IntPtr,pbSignature: IntPtr,cbSignature: int) -> IntPtr
 
   
@@ -1363,10 +1419,11 @@ class Marshal(object):
 
    Returns: A pointer to a function that will marshal a call from pfnMethodToWrap to managed code.
   """
-  pass
- @staticmethod
- def IsComObject(o):
-  """
+        pass
+
+    @staticmethod
+    def IsComObject(o):
+        """
   IsComObject(o: object) -> bool
 
   
@@ -1379,10 +1436,11 @@ class Marshal(object):
 
    Returns: true if the o parameter is a COM type; otherwise,false.
   """
-  pass
- @staticmethod
- def IsTypeVisibleFromCom(t):
-  """
+        pass
+
+    @staticmethod
+    def IsTypeVisibleFromCom(t):
+        """
   IsTypeVisibleFromCom(t: Type) -> bool
 
   
@@ -1395,10 +1453,11 @@ class Marshal(object):
 
    Returns: true if the type is visible to COM; otherwise,false.
   """
-  pass
- @staticmethod
- def NumParamBytes(m):
-  """
+        pass
+
+    @staticmethod
+    def NumParamBytes(m):
+        """
   NumParamBytes(m: MethodInfo) -> int
 
   
@@ -1415,10 +1474,11 @@ class Marshal(object):
 
    Returns: The number of bytes required to represent the method parameters in unmanaged memory.
   """
-  pass
- @staticmethod
- def OffsetOf(*__args):
-  """
+        pass
+
+    @staticmethod
+    def OffsetOf(*__args):
+        """
   OffsetOf[T](fieldName: str) -> IntPtr
 
   OffsetOf(t: Type,fieldName: str) -> IntPtr
@@ -1441,10 +1501,11 @@ class Marshal(object):
 
     platform invoke.
   """
-  pass
- @staticmethod
- def Prelink(m):
-  """
+        pass
+
+    @staticmethod
+    def Prelink(m):
+        """
   Prelink(m: MethodInfo)
 
    Executes one-time method setup tasks without calling the method.
@@ -1453,10 +1514,11 @@ class Marshal(object):
 
    m: The method to be checked.
   """
-  pass
- @staticmethod
- def PrelinkAll(c):
-  """
+        pass
+
+    @staticmethod
+    def PrelinkAll(c):
+        """
   PrelinkAll(c: Type)
 
    Performs a pre-link check for all methods on a class.
@@ -1465,10 +1527,11 @@ class Marshal(object):
 
    c: The class whose methods are to be checked.
   """
-  pass
- @staticmethod
- def PtrToStringAnsi(ptr,len=None):
-  """
+        pass
+
+    @staticmethod
+    def PtrToStringAnsi(ptr, len=None):
+        """
   PtrToStringAnsi(ptr: IntPtr,len: int) -> str
 
   
@@ -1509,10 +1572,11 @@ class Marshal(object):
 
     returns a null string.
   """
-  pass
- @staticmethod
- def PtrToStringAuto(ptr,len=None):
-  """
+        pass
+
+    @staticmethod
+    def PtrToStringAuto(ptr, len=None):
+        """
   PtrToStringAuto(ptr: IntPtr) -> str
 
   
@@ -1561,10 +1625,11 @@ class Marshal(object):
 
     null; otherwise,this method returns null.
   """
-  pass
- @staticmethod
- def PtrToStringBSTR(ptr):
-  """
+        pass
+
+    @staticmethod
+    def PtrToStringBSTR(ptr):
+        """
   PtrToStringBSTR(ptr: IntPtr) -> str
 
   
@@ -1583,10 +1648,11 @@ class Marshal(object):
 
     not null; otherwise,this method returns null.
   """
-  pass
- @staticmethod
- def PtrToStringUni(ptr,len=None):
-  """
+        pass
+
+    @staticmethod
+    def PtrToStringUni(ptr, len=None):
+        """
   PtrToStringUni(ptr: IntPtr) -> str
 
   
@@ -1627,10 +1693,11 @@ class Marshal(object):
 
     not null; otherwise,this method returns null.
   """
-  pass
- @staticmethod
- def PtrToStructure(ptr,*__args):
-  """
+        pass
+
+    @staticmethod
+    def PtrToStructure(ptr, *__args):
+        """
   PtrToStructure(ptr: IntPtr,structureType: Type) -> object
 
   
@@ -1663,10 +1730,11 @@ class Marshal(object):
 
   PtrToStructure[T](ptr: IntPtr,structure: T)
   """
-  pass
- @staticmethod
- def QueryInterface(pUnk,iid,ppv):
-  """
+        pass
+
+    @staticmethod
+    def QueryInterface(pUnk, iid, ppv):
+        """
   QueryInterface(pUnk: IntPtr,iid: Guid) -> (int,Guid,IntPtr)
 
   
@@ -1681,10 +1749,11 @@ class Marshal(object):
 
    Returns: An HRESULT that indicates the success or failure of the call.
   """
-  pass
- @staticmethod
- def ReadByte(ptr,ofs=None):
-  """
+        pass
+
+    @staticmethod
+    def ReadByte(ptr, ofs=None):
+        """
   ReadByte(ptr: IntPtr) -> Byte
 
   
@@ -1725,10 +1794,11 @@ class Marshal(object):
 
    Returns: The byte read from unmanaged memory at the given offset.
   """
-  pass
- @staticmethod
- def ReadInt16(ptr,ofs=None):
-  """
+        pass
+
+    @staticmethod
+    def ReadInt16(ptr, ofs=None):
+        """
   ReadInt16(ptr: IntPtr) -> Int16
 
   
@@ -1769,10 +1839,11 @@ class Marshal(object):
 
    Returns: The 16-bit signed integer read from unmanaged memory at the given offset.
   """
-  pass
- @staticmethod
- def ReadInt32(ptr,ofs=None):
-  """
+        pass
+
+    @staticmethod
+    def ReadInt32(ptr, ofs=None):
+        """
   ReadInt32(ptr: IntPtr) -> int
 
   
@@ -1813,10 +1884,11 @@ class Marshal(object):
 
    Returns: The 32-bit signed integer read from unmanaged memory at the given offset.
   """
-  pass
- @staticmethod
- def ReadInt64(ptr,ofs=None):
-  """
+        pass
+
+    @staticmethod
+    def ReadInt64(ptr, ofs=None):
+        """
   ReadInt64(ptr: IntPtr) -> Int64
 
   
@@ -1857,10 +1929,11 @@ class Marshal(object):
 
    Returns: The 64-bit signed integer read from unmanaged memory at the given offset.
   """
-  pass
- @staticmethod
- def ReadIntPtr(ptr,ofs=None):
-  """
+        pass
+
+    @staticmethod
+    def ReadIntPtr(ptr, ofs=None):
+        """
   ReadIntPtr(ptr: IntPtr) -> IntPtr
 
   
@@ -1905,10 +1978,11 @@ class Marshal(object):
 
    Returns: The integer read from unmanaged memory at the given offset.
   """
-  pass
- @staticmethod
- def ReAllocCoTaskMem(pv,cb):
-  """
+        pass
+
+    @staticmethod
+    def ReAllocCoTaskMem(pv, cb):
+        """
   ReAllocCoTaskMem(pv: IntPtr,cb: int) -> IntPtr
 
   
@@ -1933,10 +2007,11 @@ class Marshal(object):
 
     released with System.Runtime.InteropServices.Marshal.FreeCoTaskMem(System.IntPtr).
   """
-  pass
- @staticmethod
- def ReAllocHGlobal(pv,cb):
-  """
+        pass
+
+    @staticmethod
+    def ReAllocHGlobal(pv, cb):
+        """
   ReAllocHGlobal(pv: IntPtr,cb: IntPtr) -> IntPtr
 
   
@@ -1965,10 +2040,11 @@ class Marshal(object):
 
     System.Runtime.InteropServices.Marshal.FreeHGlobal(System.IntPtr).
   """
-  pass
- @staticmethod
- def Release(pUnk):
-  """
+        pass
+
+    @staticmethod
+    def Release(pUnk):
+        """
   Release(pUnk: IntPtr) -> int
 
   
@@ -1981,10 +2057,11 @@ class Marshal(object):
 
    Returns: The new value of the reference count on the interface specified by the pUnk parameter.
   """
-  pass
- @staticmethod
- def ReleaseComObject(o):
-  """
+        pass
+
+    @staticmethod
+    def ReleaseComObject(o):
+        """
   ReleaseComObject(o: object) -> int
 
   
@@ -2005,18 +2082,20 @@ class Marshal(object):
 
     managed clients calling it.
   """
-  pass
- @staticmethod
- def ReleaseThreadCache():
-  """
+        pass
+
+    @staticmethod
+    def ReleaseThreadCache():
+        """
   ReleaseThreadCache()
 
    Releases the thread cache.
   """
-  pass
- @staticmethod
- def SecureStringToBSTR(s):
-  """
+        pass
+
+    @staticmethod
+    def SecureStringToBSTR(s):
+        """
   SecureStringToBSTR(s: SecureString) -> IntPtr
 
   
@@ -2035,10 +2114,11 @@ class Marshal(object):
 
     supplied.
   """
-  pass
- @staticmethod
- def SecureStringToCoTaskMemAnsi(s):
-  """
+        pass
+
+    @staticmethod
+    def SecureStringToCoTaskMemAnsi(s):
+        """
   SecureStringToCoTaskMemAnsi(s: SecureString) -> IntPtr
 
   
@@ -2057,10 +2137,11 @@ class Marshal(object):
 
     supplied.
   """
-  pass
- @staticmethod
- def SecureStringToCoTaskMemUnicode(s):
-  """
+        pass
+
+    @staticmethod
+    def SecureStringToCoTaskMemUnicode(s):
+        """
   SecureStringToCoTaskMemUnicode(s: SecureString) -> IntPtr
 
   
@@ -2079,10 +2160,11 @@ class Marshal(object):
 
     supplied.
   """
-  pass
- @staticmethod
- def SecureStringToGlobalAllocAnsi(s):
-  """
+        pass
+
+    @staticmethod
+    def SecureStringToGlobalAllocAnsi(s):
+        """
   SecureStringToGlobalAllocAnsi(s: SecureString) -> IntPtr
 
   
@@ -2101,10 +2183,11 @@ class Marshal(object):
 
     supplied.
   """
-  pass
- @staticmethod
- def SecureStringToGlobalAllocUnicode(s):
-  """
+        pass
+
+    @staticmethod
+    def SecureStringToGlobalAllocUnicode(s):
+        """
   SecureStringToGlobalAllocUnicode(s: SecureString) -> IntPtr
 
   
@@ -2119,10 +2202,11 @@ class Marshal(object):
 
     System.Security.SecureString object whose length is 0.
   """
-  pass
- @staticmethod
- def SetComObjectData(obj,key,data):
-  """
+        pass
+
+    @staticmethod
+    def SetComObjectData(obj, key, data):
+        """
   SetComObjectData(obj: object,key: object,data: object) -> bool
 
   
@@ -2139,10 +2223,11 @@ class Marshal(object):
 
    Returns: true if the data was set successfully; otherwise,false.
   """
-  pass
- @staticmethod
- def SizeOf(*__args):
-  """
+        pass
+
+    @staticmethod
+    def SizeOf(*__args):
+        """
   SizeOf(t: Type) -> int
 
   
@@ -2171,10 +2256,11 @@ class Marshal(object):
 
   SizeOf[T](structure: T) -> int
   """
-  pass
- @staticmethod
- def StringToBSTR(s):
-  """
+        pass
+
+    @staticmethod
+    def StringToBSTR(s):
+        """
   StringToBSTR(s: str) -> IntPtr
 
   
@@ -2187,10 +2273,11 @@ class Marshal(object):
 
    Returns: An unmanaged pointer to the BSTR,or 0 if s is null.
   """
-  pass
- @staticmethod
- def StringToCoTaskMemAnsi(s):
-  """
+        pass
+
+    @staticmethod
+    def StringToCoTaskMemAnsi(s):
+        """
   StringToCoTaskMemAnsi(s: str) -> IntPtr
 
   
@@ -2209,10 +2296,11 @@ class Marshal(object):
 
     null.
   """
-  pass
- @staticmethod
- def StringToCoTaskMemAuto(s):
-  """
+        pass
+
+    @staticmethod
+    def StringToCoTaskMemAuto(s):
+        """
   StringToCoTaskMemAuto(s: str) -> IntPtr
 
   
@@ -2229,10 +2317,11 @@ class Marshal(object):
 
    Returns: The allocated memory block,or 0 if s is null.
   """
-  pass
- @staticmethod
- def StringToCoTaskMemUni(s):
-  """
+        pass
+
+    @staticmethod
+    def StringToCoTaskMemUni(s):
+        """
   StringToCoTaskMemUni(s: str) -> IntPtr
 
   
@@ -2251,10 +2340,11 @@ class Marshal(object):
 
     null.
   """
-  pass
- @staticmethod
- def StringToHGlobalAnsi(s):
-  """
+        pass
+
+    @staticmethod
+    def StringToHGlobalAnsi(s):
+        """
   StringToHGlobalAnsi(s: str) -> IntPtr
 
   
@@ -2271,10 +2361,11 @@ class Marshal(object):
 
    Returns: The address,in unmanaged memory,to where s was copied,or 0 if s is null.
   """
-  pass
- @staticmethod
- def StringToHGlobalAuto(s):
-  """
+        pass
+
+    @staticmethod
+    def StringToHGlobalAuto(s):
+        """
   StringToHGlobalAuto(s: str) -> IntPtr
 
   
@@ -2291,10 +2382,11 @@ class Marshal(object):
 
    Returns: The address,in unmanaged memory,to where the string was copied,or 0 if s is null.
   """
-  pass
- @staticmethod
- def StringToHGlobalUni(s):
-  """
+        pass
+
+    @staticmethod
+    def StringToHGlobalUni(s):
+        """
   StringToHGlobalUni(s: str) -> IntPtr
 
   
@@ -2307,10 +2399,11 @@ class Marshal(object):
 
    Returns: The address,in unmanaged memory,to where the s was copied,or 0 if s is null.
   """
-  pass
- @staticmethod
- def StructureToPtr(structure,ptr,fDeleteOld):
-  """
+        pass
+
+    @staticmethod
+    def StructureToPtr(structure, ptr, fDeleteOld):
+        """
   StructureToPtr[T](structure: T,ptr: IntPtr,fDeleteOld: bool)StructureToPtr(structure: object,ptr: IntPtr,fDeleteOld: bool)
 
    Marshals data from a managed object to an unmanaged block of memory.
@@ -2333,10 +2426,11 @@ class Marshal(object):
 
     leak.
   """
-  pass
- @staticmethod
- def ThrowExceptionForHR(errorCode,errorInfo=None):
-  """
+        pass
+
+    @staticmethod
+    def ThrowExceptionForHR(errorCode, errorInfo=None):
+        """
   ThrowExceptionForHR(errorCode: int,errorInfo: IntPtr)
 
    Throws an exception with a specific failure HRESULT,based on the specified IErrorInfo Interface 
@@ -2365,10 +2459,11 @@ class Marshal(object):
 
    errorCode: The HRESULT corresponding to the desired exception.
   """
-  pass
- @staticmethod
- def UnsafeAddrOfPinnedArrayElement(arr,index):
-  """
+        pass
+
+    @staticmethod
+    def UnsafeAddrOfPinnedArrayElement(arr, index):
+        """
   UnsafeAddrOfPinnedArrayElement[T](arr: Array[T],index: int) -> IntPtr
 
   UnsafeAddrOfPinnedArrayElement(arr: Array,index: int) -> IntPtr
@@ -2385,10 +2480,11 @@ class Marshal(object):
 
    Returns: The address of index inside arr.
   """
-  pass
- @staticmethod
- def WriteByte(ptr,*__args):
-  """
+        pass
+
+    @staticmethod
+    def WriteByte(ptr, *__args):
+        """
   WriteByte(ptr: IntPtr,val: Byte)
 
    Writes a single byte value to unmanaged memory.
@@ -2423,10 +2519,11 @@ class Marshal(object):
 
    val: The value to write.
   """
-  pass
- @staticmethod
- def WriteInt16(ptr,*__args):
-  """
+        pass
+
+    @staticmethod
+    def WriteInt16(ptr, *__args):
+        """
   WriteInt16(ptr: IntPtr,ofs: int,val: Char)
 
    Writes a 16-bit signed integer value to unmanaged memory at a specified offset.
@@ -2495,10 +2592,11 @@ class Marshal(object):
 
    val: The value to write.
   """
-  pass
- @staticmethod
- def WriteInt32(ptr,*__args):
-  """
+        pass
+
+    @staticmethod
+    def WriteInt32(ptr, *__args):
+        """
   WriteInt32(ptr: IntPtr,val: int)
 
    Writes a 32-bit signed integer value to unmanaged memory.
@@ -2533,10 +2631,11 @@ class Marshal(object):
 
    val: The value to write.
   """
-  pass
- @staticmethod
- def WriteInt64(ptr,*__args):
-  """
+        pass
+
+    @staticmethod
+    def WriteInt64(ptr, *__args):
+        """
   WriteInt64(ptr: IntPtr,val: Int64)
 
    Writes a 64-bit signed integer value to unmanaged memory.
@@ -2571,10 +2670,11 @@ class Marshal(object):
 
    val: The value to write.
   """
-  pass
- @staticmethod
- def WriteIntPtr(ptr,*__args):
-  """
+        pass
+
+    @staticmethod
+    def WriteIntPtr(ptr, *__args):
+        """
   WriteIntPtr(ptr: IntPtr,val: IntPtr)
 
    Writes a processor native sized integer value into unmanaged memory.
@@ -2609,10 +2709,11 @@ class Marshal(object):
 
    val: The value to write.
   """
-  pass
- @staticmethod
- def ZeroFreeBSTR(s):
-  """
+        pass
+
+    @staticmethod
+    def ZeroFreeBSTR(s):
+        """
   ZeroFreeBSTR(s: IntPtr)
 
    Frees a BSTR Data Type pointer that was allocated using the 
@@ -2625,10 +2726,11 @@ class Marshal(object):
 
    s: The address of the BSTR to free.
   """
-  pass
- @staticmethod
- def ZeroFreeCoTaskMemAnsi(s):
-  """
+        pass
+
+    @staticmethod
+    def ZeroFreeCoTaskMemAnsi(s):
+        """
   ZeroFreeCoTaskMemAnsi(s: IntPtr)
 
    Frees an unmanaged string pointer that was allocated using the 
@@ -2643,10 +2745,11 @@ class Marshal(object):
 
    s: The address of the unmanaged string to free.
   """
-  pass
- @staticmethod
- def ZeroFreeCoTaskMemUnicode(s):
-  """
+        pass
+
+    @staticmethod
+    def ZeroFreeCoTaskMemUnicode(s):
+        """
   ZeroFreeCoTaskMemUnicode(s: IntPtr)
 
    Frees an unmanaged string pointer that was allocated using the 
@@ -2661,10 +2764,11 @@ class Marshal(object):
 
    s: The address of the unmanaged string to free.
   """
-  pass
- @staticmethod
- def ZeroFreeGlobalAllocAnsi(s):
-  """
+        pass
+
+    @staticmethod
+    def ZeroFreeGlobalAllocAnsi(s):
+        """
   ZeroFreeGlobalAllocAnsi(s: IntPtr)
 
    Frees an unmanaged string pointer that was allocated using the 
@@ -2679,10 +2783,11 @@ class Marshal(object):
 
    s: The address of the unmanaged string to free.
   """
-  pass
- @staticmethod
- def ZeroFreeGlobalAllocUnicode(s):
-  """
+        pass
+
+    @staticmethod
+    def ZeroFreeGlobalAllocUnicode(s):
+        """
   ZeroFreeGlobalAllocUnicode(s: IntPtr)
 
    Frees an unmanaged string pointer that was allocated using the 
@@ -2697,116 +2802,116 @@ class Marshal(object):
 
    s: The address of the unmanaged string to free.
   """
-  pass
- SystemDefaultCharSize=2
- SystemMaxDBCSCharSize=1
- __all__=[
-  'AddRef',
-  'AllocCoTaskMem',
-  'AllocHGlobal',
-  'AreComObjectsAvailableForCleanup',
-  'BindToMoniker',
-  'ChangeWrapperHandleStrength',
-  'CleanupUnusedObjectsInCurrentContext',
-  'Copy',
-  'CreateAggregatedObject',
-  'CreateWrapperOfType',
-  'DestroyStructure',
-  'FinalReleaseComObject',
-  'FreeBSTR',
-  'FreeCoTaskMem',
-  'FreeHGlobal',
-  'GenerateGuidForType',
-  'GenerateProgIdForType',
-  'GetActiveObject',
-  'GetComInterfaceForObject',
-  'GetComInterfaceForObjectInContext',
-  'GetComObjectData',
-  'GetComSlotForMethodInfo',
-  'GetDelegateForFunctionPointer',
-  'GetEndComSlot',
-  'GetExceptionCode',
-  'GetExceptionForHR',
-  'GetExceptionPointers',
-  'GetFunctionPointerForDelegate',
-  'GetHINSTANCE',
-  'GetHRForException',
-  'GetHRForLastWin32Error',
-  'GetIDispatchForObject',
-  'GetIDispatchForObjectInContext',
-  'GetITypeInfoForType',
-  'GetIUnknownForObject',
-  'GetIUnknownForObjectInContext',
-  'GetLastWin32Error',
-  'GetManagedThunkForUnmanagedMethodPtr',
-  'GetMethodInfoForComSlot',
-  'GetNativeVariantForObject',
-  'GetObjectForIUnknown',
-  'GetObjectForNativeVariant',
-  'GetObjectsForNativeVariants',
-  'GetStartComSlot',
-  'GetThreadFromFiberCookie',
-  'GetTypedObjectForIUnknown',
-  'GetTypeForITypeInfo',
-  'GetTypeFromCLSID',
-  'GetTypeInfoName',
-  'GetTypeLibGuid',
-  'GetTypeLibGuidForAssembly',
-  'GetTypeLibLcid',
-  'GetTypeLibName',
-  'GetTypeLibVersionForAssembly',
-  'GetUniqueObjectForIUnknown',
-  'GetUnmanagedThunkForManagedMethodPtr',
-  'IsComObject',
-  'IsTypeVisibleFromCom',
-  'NumParamBytes',
-  'OffsetOf',
-  'Prelink',
-  'PrelinkAll',
-  'PtrToStringAnsi',
-  'PtrToStringAuto',
-  'PtrToStringBSTR',
-  'PtrToStringUni',
-  'PtrToStructure',
-  'QueryInterface',
-  'ReadByte',
-  'ReadInt16',
-  'ReadInt32',
-  'ReadInt64',
-  'ReadIntPtr',
-  'ReAllocCoTaskMem',
-  'ReAllocHGlobal',
-  'Release',
-  'ReleaseComObject',
-  'ReleaseThreadCache',
-  'SecureStringToBSTR',
-  'SecureStringToCoTaskMemAnsi',
-  'SecureStringToCoTaskMemUnicode',
-  'SecureStringToGlobalAllocAnsi',
-  'SecureStringToGlobalAllocUnicode',
-  'SetComObjectData',
-  'SizeOf',
-  'StringToBSTR',
-  'StringToCoTaskMemAnsi',
-  'StringToCoTaskMemAuto',
-  'StringToCoTaskMemUni',
-  'StringToHGlobalAnsi',
-  'StringToHGlobalAuto',
-  'StringToHGlobalUni',
-  'StructureToPtr',
-  'SystemDefaultCharSize',
-  'SystemMaxDBCSCharSize',
-  'ThrowExceptionForHR',
-  'UnsafeAddrOfPinnedArrayElement',
-  'WriteByte',
-  'WriteInt16',
-  'WriteInt32',
-  'WriteInt64',
-  'WriteIntPtr',
-  'ZeroFreeBSTR',
-  'ZeroFreeCoTaskMemAnsi',
-  'ZeroFreeCoTaskMemUnicode',
-  'ZeroFreeGlobalAllocAnsi',
-  'ZeroFreeGlobalAllocUnicode',
- ]
+        pass
 
+    SystemDefaultCharSize = 2
+    SystemMaxDBCSCharSize = 1
+    __all__ = [
+        "AddRef",
+        "AllocCoTaskMem",
+        "AllocHGlobal",
+        "AreComObjectsAvailableForCleanup",
+        "BindToMoniker",
+        "ChangeWrapperHandleStrength",
+        "CleanupUnusedObjectsInCurrentContext",
+        "Copy",
+        "CreateAggregatedObject",
+        "CreateWrapperOfType",
+        "DestroyStructure",
+        "FinalReleaseComObject",
+        "FreeBSTR",
+        "FreeCoTaskMem",
+        "FreeHGlobal",
+        "GenerateGuidForType",
+        "GenerateProgIdForType",
+        "GetActiveObject",
+        "GetComInterfaceForObject",
+        "GetComInterfaceForObjectInContext",
+        "GetComObjectData",
+        "GetComSlotForMethodInfo",
+        "GetDelegateForFunctionPointer",
+        "GetEndComSlot",
+        "GetExceptionCode",
+        "GetExceptionForHR",
+        "GetExceptionPointers",
+        "GetFunctionPointerForDelegate",
+        "GetHINSTANCE",
+        "GetHRForException",
+        "GetHRForLastWin32Error",
+        "GetIDispatchForObject",
+        "GetIDispatchForObjectInContext",
+        "GetITypeInfoForType",
+        "GetIUnknownForObject",
+        "GetIUnknownForObjectInContext",
+        "GetLastWin32Error",
+        "GetManagedThunkForUnmanagedMethodPtr",
+        "GetMethodInfoForComSlot",
+        "GetNativeVariantForObject",
+        "GetObjectForIUnknown",
+        "GetObjectForNativeVariant",
+        "GetObjectsForNativeVariants",
+        "GetStartComSlot",
+        "GetThreadFromFiberCookie",
+        "GetTypedObjectForIUnknown",
+        "GetTypeForITypeInfo",
+        "GetTypeFromCLSID",
+        "GetTypeInfoName",
+        "GetTypeLibGuid",
+        "GetTypeLibGuidForAssembly",
+        "GetTypeLibLcid",
+        "GetTypeLibName",
+        "GetTypeLibVersionForAssembly",
+        "GetUniqueObjectForIUnknown",
+        "GetUnmanagedThunkForManagedMethodPtr",
+        "IsComObject",
+        "IsTypeVisibleFromCom",
+        "NumParamBytes",
+        "OffsetOf",
+        "Prelink",
+        "PrelinkAll",
+        "PtrToStringAnsi",
+        "PtrToStringAuto",
+        "PtrToStringBSTR",
+        "PtrToStringUni",
+        "PtrToStructure",
+        "QueryInterface",
+        "ReadByte",
+        "ReadInt16",
+        "ReadInt32",
+        "ReadInt64",
+        "ReadIntPtr",
+        "ReAllocCoTaskMem",
+        "ReAllocHGlobal",
+        "Release",
+        "ReleaseComObject",
+        "ReleaseThreadCache",
+        "SecureStringToBSTR",
+        "SecureStringToCoTaskMemAnsi",
+        "SecureStringToCoTaskMemUnicode",
+        "SecureStringToGlobalAllocAnsi",
+        "SecureStringToGlobalAllocUnicode",
+        "SetComObjectData",
+        "SizeOf",
+        "StringToBSTR",
+        "StringToCoTaskMemAnsi",
+        "StringToCoTaskMemAuto",
+        "StringToCoTaskMemUni",
+        "StringToHGlobalAnsi",
+        "StringToHGlobalAuto",
+        "StringToHGlobalUni",
+        "StructureToPtr",
+        "SystemDefaultCharSize",
+        "SystemMaxDBCSCharSize",
+        "ThrowExceptionForHR",
+        "UnsafeAddrOfPinnedArrayElement",
+        "WriteByte",
+        "WriteInt16",
+        "WriteInt32",
+        "WriteInt64",
+        "WriteIntPtr",
+        "ZeroFreeBSTR",
+        "ZeroFreeCoTaskMemAnsi",
+        "ZeroFreeCoTaskMemUnicode",
+        "ZeroFreeGlobalAllocAnsi",
+        "ZeroFreeGlobalAllocUnicode",
+    ]

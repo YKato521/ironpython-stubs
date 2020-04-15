@@ -1,7 +1,8 @@
-class GridColumnStylesCollection(BaseCollection,ICollection,IEnumerable,IList):
- """ Represents a collection of System.Windows.Forms.DataGridColumnStyle objects in the System.Windows.Forms.DataGrid control. """
- def Add(self,column):
-  """
+class GridColumnStylesCollection(BaseCollection, ICollection, IEnumerable, IList):
+    """ Represents a collection of System.Windows.Forms.DataGridColumnStyle objects in the System.Windows.Forms.DataGrid control. """
+
+    def Add(self, column):
+        """
   Add(self: GridColumnStylesCollection,column: DataGridColumnStyle) -> int
 
   
@@ -14,9 +15,10 @@ class GridColumnStylesCollection(BaseCollection,ICollection,IEnumerable,IList):
 
    Returns: The index of the new System.Windows.Forms.DataGridColumnStyle.
   """
-  pass
- def AddRange(self,columns):
-  """
+        pass
+
+    def AddRange(self, columns):
+        """
   AddRange(self: GridColumnStylesCollection,columns: Array[DataGridColumnStyle])
 
    Adds an array of column style objects to the collection.
@@ -25,16 +27,18 @@ class GridColumnStylesCollection(BaseCollection,ICollection,IEnumerable,IList):
 
    columns: An array of System.Windows.Forms.DataGridColumnStyle objects to add to the collection.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: GridColumnStylesCollection)
 
    Clears the collection of System.Windows.Forms.DataGridColumnStyle objects.
   """
-  pass
- def Contains(self,*__args):
-  """
+        pass
+
+    def Contains(self, *__args):
+        """
   Contains(self: GridColumnStylesCollection,name: str) -> bool
 
   
@@ -93,9 +97,10 @@ class GridColumnStylesCollection(BaseCollection,ICollection,IEnumerable,IList):
 
    Returns: true if the collection contains the System.Windows.Forms.DataGridColumnStyle; otherwise,false.
   """
-  pass
- def IndexOf(self,element):
-  """
+        pass
+
+    def IndexOf(self, element):
+        """
   IndexOf(self: GridColumnStylesCollection,element: DataGridColumnStyle) -> int
 
   
@@ -112,9 +117,10 @@ class GridColumnStylesCollection(BaseCollection,ICollection,IEnumerable,IList):
 
     System.Windows.Forms.DataGridColumnStyle exists.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -145,9 +151,10 @@ class GridColumnStylesCollection(BaseCollection,ICollection,IEnumerable,IList):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def OnCollectionChanged(self,*args):
-  """
+        pass
+
+    def OnCollectionChanged(self, *args):
+        """
   OnCollectionChanged(self: GridColumnStylesCollection,e: CollectionChangeEventArgs)
 
    Raises the System.Windows.Forms.GridColumnStylesCollection.CollectionChanged event.
@@ -156,9 +163,10 @@ class GridColumnStylesCollection(BaseCollection,ICollection,IEnumerable,IList):
 
    e: A System.ComponentModel.CollectionChangeEventArgs that contains the event data event.
   """
-  pass
- def Remove(self,column):
-  """
+        pass
+
+    def Remove(self, column):
+        """
   Remove(self: GridColumnStylesCollection,column: DataGridColumnStyle)
 
    Removes the specified System.Windows.Forms.DataGridColumnStyle from the 
@@ -171,9 +179,10 @@ class GridColumnStylesCollection(BaseCollection,ICollection,IEnumerable,IList):
 
    column: The System.Windows.Forms.DataGridColumnStyle to remove from the collection.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: GridColumnStylesCollection,index: int)
 
    Removes the System.Windows.Forms.DataGridColumnStyle with the specified index from the 
@@ -186,21 +195,24 @@ class GridColumnStylesCollection(BaseCollection,ICollection,IEnumerable,IList):
 
    index: The zero-based index of the System.Windows.Forms.DataGridColumnStyle to remove.
   """
-  pass
- def ResetPropertyDescriptors(self):
-  """
+        pass
+
+    def ResetPropertyDescriptors(self):
+        """
   ResetPropertyDescriptors(self: GridColumnStylesCollection)
 
    Sets the System.ComponentModel.PropertyDescriptor for each column style in the collection to 
 
     null.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IList,value: object) -> bool
 
   
@@ -213,26 +225,29 @@ class GridColumnStylesCollection(BaseCollection,ICollection,IEnumerable,IList):
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- List=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of items in the collection.
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    List = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of items in the collection.
 
 
 
 """
 
-
- CollectionChanged=None
-
+    CollectionChanged = None

@@ -1,7 +1,10 @@
-class ConduitSizeSettings(Element,IDisposable,IEnumerable[KeyValuePair[str,ConduitSizes]],IEnumerable):
- """ Conduit sizes settings """
- def AddSize(self,standardName,sizeInfo):
-  """
+class ConduitSizeSettings(
+    Element, IDisposable, IEnumerable[KeyValuePair[str, ConduitSizes]], IEnumerable
+):
+    """ Conduit sizes settings """
+
+    def AddSize(self, standardName, sizeInfo):
+        """
   AddSize(self: ConduitSizeSettings,standardName: str,sizeInfo: ConduitSize)
 
    Inserts a new ConduitSize in to the conduit size settings. The conduit standard 
@@ -16,9 +19,12 @@ class ConduitSizeSettings(Element,IDisposable,IEnumerable[KeyValuePair[str,Condu
 
    sizeInfo: The new ConduitSize to be added.
   """
-  pass
- def CreateConduitStandardTypeFromExisingStandardType(self,pADoc,newStandardName,existingStandardName):
-  """
+        pass
+
+    def CreateConduitStandardTypeFromExisingStandardType(
+        self, pADoc, newStandardName, existingStandardName
+    ):
+        """
   CreateConduitStandardTypeFromExisingStandardType(self: ConduitSizeSettings,pADoc: Document,newStandardName: str,existingStandardName: str) -> bool
 
   
@@ -39,12 +45,14 @@ class ConduitSizeSettings(Element,IDisposable,IEnumerable[KeyValuePair[str,Condu
 
    Returns: True if creating success; otherwise false.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def DoesConduitStandardTypeExist(self,standardName):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def DoesConduitStandardTypeExist(self, standardName):
+        """
   DoesConduitStandardTypeExist(self: ConduitSizeSettings,standardName: str) -> bool
 
   
@@ -55,13 +63,15 @@ class ConduitSizeSettings(Element,IDisposable,IEnumerable[KeyValuePair[str,Condu
 
    standardName: The conduit standard name.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- @staticmethod
- def GetConduitSizeSettings(aDoc):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    @staticmethod
+    def GetConduitSizeSettings(aDoc):
+        """
   GetConduitSizeSettings(aDoc: Document) -> ConduitSizeSettings
 
   
@@ -74,18 +84,20 @@ class ConduitSizeSettings(Element,IDisposable,IEnumerable[KeyValuePair[str,Condu
 
    Returns: The conduit size settings of the project.
   """
-  pass
- def GetConduitSizeSettingsIterator(self):
-  """
+        pass
+
+    def GetConduitSizeSettingsIterator(self):
+        """
   GetConduitSizeSettingsIterator(self: ConduitSizeSettings) -> ConduitSizeSettingIterator
 
   
 
    Returns a ConduitSizeSettingIterator to the conduit size settings.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: ConduitSizeSettings) -> IEnumerator[KeyValuePair[str,ConduitSizes]]
 
   
@@ -94,9 +106,10 @@ class ConduitSizeSettings(Element,IDisposable,IEnumerable[KeyValuePair[str,Condu
 
    Returns: An IEnumerator object that can be used to iterate through the collection.
   """
-  pass
- def GetSizeCount(self,standardName):
-  """
+        pass
+
+    def GetSizeCount(self, standardName):
+        """
   GetSizeCount(self: ConduitSizeSettings,standardName: str) -> int
 
   
@@ -111,12 +124,14 @@ class ConduitSizeSettings(Element,IDisposable,IEnumerable[KeyValuePair[str,Condu
 
    standardName: The conduit standard name.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def RemoveConduitStandardType(self,pADoc,standardName):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def RemoveConduitStandardType(self, pADoc, standardName):
+        """
   RemoveConduitStandardType(self: ConduitSizeSettings,pADoc: Document,standardName: str) -> bool
 
   
@@ -135,9 +150,10 @@ class ConduitSizeSettings(Element,IDisposable,IEnumerable[KeyValuePair[str,Condu
 
    Returns: True if removing success; otherwise false.
   """
-  pass
- def RemoveSize(self,standardName,nominalDiameter):
-  """
+        pass
+
+    def RemoveSize(self, standardName, nominalDiameter):
+        """
   RemoveSize(self: ConduitSizeSettings,standardName: str,nominalDiameter: float)
 
    Erase the existing ConduitSize with this nominal diameter. The conduit standard 
@@ -152,22 +168,28 @@ class ConduitSizeSettings(Element,IDisposable,IEnumerable[KeyValuePair[str,Condu
 
    nominalDiameter: Nominal diameter.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __contains__(self,*args):
-  """ __contains__[KeyValuePair[str,ConduitSizes]](enumerable: IEnumerable[KeyValuePair[str,ConduitSizes]],value: KeyValuePair[str,ConduitSizes]) -> bool """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[KeyValuePair[str,ConduitSizes]](enumerable: IEnumerable[KeyValuePair[str,ConduitSizes]],value: KeyValuePair[str,ConduitSizes]) -> bool """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass

@@ -1,13 +1,14 @@
-class ImmutableObjectAttribute(Attribute,_Attribute):
- """
+class ImmutableObjectAttribute(Attribute, _Attribute):
+    """
  Specifies that an object has no subproperties capable of being edited. This class cannot be inherited.
 
  
 
  ImmutableObjectAttribute(immutable: bool)
  """
- def Equals(self,obj):
-  """
+
+    def Equals(self, obj):
+        """
   Equals(self: ImmutableObjectAttribute,obj: object) -> bool
 
   
@@ -16,9 +17,10 @@ class ImmutableObjectAttribute(Attribute,_Attribute):
 
    Returns: true if obj equals the type and value of this instance; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: ImmutableObjectAttribute) -> int
 
   
@@ -27,9 +29,10 @@ class ImmutableObjectAttribute(Attribute,_Attribute):
 
    Returns: A hash code for the current System.ComponentModel.ImmutableObjectAttribute.
   """
-  pass
- def IsDefaultAttribute(self):
-  """
+        pass
+
+    def IsDefaultAttribute(self):
+        """
   IsDefaultAttribute(self: ImmutableObjectAttribute) -> bool
 
   
@@ -38,21 +41,26 @@ class ImmutableObjectAttribute(Attribute,_Attribute):
 
    Returns: true if this instance is the default attribute for the class; otherwise,false.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,immutable):
-  """ __new__(cls: type,immutable: bool) """
-  pass
- def __ne__(self,*args):
-  pass
- Immutable=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets whether the object is immutable.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, immutable):
+        """ __new__(cls: type,immutable: bool) """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    Immutable = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets whether the object is immutable.
 
 
 
@@ -62,8 +70,6 @@ Get: Immutable(self: ImmutableObjectAttribute) -> bool
 
 """
 
-
- Default=None
- No=None
- Yes=None
-
+    Default = None
+    No = None
+    Yes = None

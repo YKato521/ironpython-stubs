@@ -1,5 +1,5 @@
-class BinaryReader(object,IDisposable):
- """
+class BinaryReader(object, IDisposable):
+    """
  Reads primitive data types as binary values in a specific encoding.
 
  
@@ -10,22 +10,25 @@ class BinaryReader(object,IDisposable):
 
  BinaryReader(input: Stream,encoding: Encoding,leaveOpen: bool)
  """
- def Close(self):
-  """
+
+    def Close(self):
+        """
   Close(self: BinaryReader)
 
    Closes the current reader and the underlying stream.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: BinaryReader)
 
    Releases all resources used by the current instance of the System.IO.BinaryReader class.
   """
-  pass
- def FillBuffer(self,*args):
-  """
+        pass
+
+    def FillBuffer(self, *args):
+        """
   FillBuffer(self: BinaryReader,numBytes: int)
 
    Fills the internal buffer with the specified number of bytes read from the stream.
@@ -34,9 +37,10 @@ class BinaryReader(object,IDisposable):
 
    numBytes: The number of bytes to be read.
   """
-  pass
- def PeekChar(self):
-  """
+        pass
+
+    def PeekChar(self):
+        """
   PeekChar(self: BinaryReader) -> int
 
   
@@ -47,9 +51,10 @@ class BinaryReader(object,IDisposable):
 
     support seeking.
   """
-  pass
- def Read(self,buffer=None,index=None,count=None):
-  """
+        pass
+
+    def Read(self, buffer=None, index=None, count=None):
+        """
   Read(self: BinaryReader,buffer: Array[Byte],index: int,count: int) -> int
 
   
@@ -112,9 +117,10 @@ class BinaryReader(object,IDisposable):
 
    Returns: The next character from the input stream,or -1 if no characters are currently available.
   """
-  pass
- def Read7BitEncodedInt(self,*args):
-  """
+        pass
+
+    def Read7BitEncodedInt(self, *args):
+        """
   Read7BitEncodedInt(self: BinaryReader) -> int
 
   
@@ -123,9 +129,10 @@ class BinaryReader(object,IDisposable):
 
    Returns: A 32-bit integer in compressed format.
   """
-  pass
- def ReadBoolean(self):
-  """
+        pass
+
+    def ReadBoolean(self):
+        """
   ReadBoolean(self: BinaryReader) -> bool
 
   
@@ -138,9 +145,10 @@ class BinaryReader(object,IDisposable):
 
    Returns: true if the byte is nonzero; otherwise,false.
   """
-  pass
- def ReadByte(self):
-  """
+        pass
+
+    def ReadByte(self):
+        """
   ReadByte(self: BinaryReader) -> Byte
 
   
@@ -153,9 +161,10 @@ class BinaryReader(object,IDisposable):
 
    Returns: The next byte read from the current stream.
   """
-  pass
- def ReadBytes(self,count):
-  """
+        pass
+
+    def ReadBytes(self, count):
+        """
   ReadBytes(self: BinaryReader,count: int) -> Array[Byte]
 
   
@@ -174,9 +183,10 @@ class BinaryReader(object,IDisposable):
 
     of bytes requested if the end of the stream is reached.
   """
-  pass
- def ReadChar(self):
-  """
+        pass
+
+    def ReadChar(self):
+        """
   ReadChar(self: BinaryReader) -> Char
 
   
@@ -189,9 +199,10 @@ class BinaryReader(object,IDisposable):
 
    Returns: A character read from the current stream.
   """
-  pass
- def ReadChars(self,count):
-  """
+        pass
+
+    def ReadChars(self, count):
+        """
   ReadChars(self: BinaryReader,count: int) -> Array[Char]
 
   
@@ -212,9 +223,10 @@ class BinaryReader(object,IDisposable):
 
     number of characters requested if the end of the stream is reached.
   """
-  pass
- def ReadDecimal(self):
-  """
+        pass
+
+    def ReadDecimal(self):
+        """
   ReadDecimal(self: BinaryReader) -> Decimal
 
   
@@ -227,9 +239,10 @@ class BinaryReader(object,IDisposable):
 
    Returns: A decimal value read from the current stream.
   """
-  pass
- def ReadDouble(self):
-  """
+        pass
+
+    def ReadDouble(self):
+        """
   ReadDouble(self: BinaryReader) -> float
 
   
@@ -242,9 +255,10 @@ class BinaryReader(object,IDisposable):
 
    Returns: An 8-byte floating point value read from the current stream.
   """
-  pass
- def ReadInt16(self):
-  """
+        pass
+
+    def ReadInt16(self):
+        """
   ReadInt16(self: BinaryReader) -> Int16
 
   
@@ -257,9 +271,10 @@ class BinaryReader(object,IDisposable):
 
    Returns: A 2-byte signed integer read from the current stream.
   """
-  pass
- def ReadInt32(self):
-  """
+        pass
+
+    def ReadInt32(self):
+        """
   ReadInt32(self: BinaryReader) -> int
 
   
@@ -272,9 +287,10 @@ class BinaryReader(object,IDisposable):
 
    Returns: A 4-byte signed integer read from the current stream.
   """
-  pass
- def ReadInt64(self):
-  """
+        pass
+
+    def ReadInt64(self):
+        """
   ReadInt64(self: BinaryReader) -> Int64
 
   
@@ -287,9 +303,10 @@ class BinaryReader(object,IDisposable):
 
    Returns: An 8-byte signed integer read from the current stream.
   """
-  pass
- def ReadSByte(self):
-  """
+        pass
+
+    def ReadSByte(self):
+        """
   ReadSByte(self: BinaryReader) -> SByte
 
   
@@ -298,9 +315,10 @@ class BinaryReader(object,IDisposable):
 
    Returns: A signed byte read from the current stream.
   """
-  pass
- def ReadSingle(self):
-  """
+        pass
+
+    def ReadSingle(self):
+        """
   ReadSingle(self: BinaryReader) -> Single
 
   
@@ -313,9 +331,10 @@ class BinaryReader(object,IDisposable):
 
    Returns: A 4-byte floating point value read from the current stream.
   """
-  pass
- def ReadString(self):
-  """
+        pass
+
+    def ReadString(self):
+        """
   ReadString(self: BinaryReader) -> str
 
   
@@ -328,9 +347,10 @@ class BinaryReader(object,IDisposable):
 
    Returns: The string being read.
   """
-  pass
- def ReadUInt16(self):
-  """
+        pass
+
+    def ReadUInt16(self):
+        """
   ReadUInt16(self: BinaryReader) -> UInt16
 
   
@@ -343,9 +363,10 @@ class BinaryReader(object,IDisposable):
 
    Returns: A 2-byte unsigned integer read from this stream.
   """
-  pass
- def ReadUInt32(self):
-  """
+        pass
+
+    def ReadUInt32(self):
+        """
   ReadUInt32(self: BinaryReader) -> UInt32
 
   
@@ -358,9 +379,10 @@ class BinaryReader(object,IDisposable):
 
    Returns: A 4-byte unsigned integer read from this stream.
   """
-  pass
- def ReadUInt64(self):
-  """
+        pass
+
+    def ReadUInt64(self):
+        """
   ReadUInt64(self: BinaryReader) -> UInt64
 
   
@@ -373,41 +395,49 @@ class BinaryReader(object,IDisposable):
 
    Returns: An 8-byte unsigned integer read from this stream.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,input,encoding=None,leaveOpen=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, input, encoding=None, leaveOpen=None):
+        """
   __new__(cls: type,input: Stream)
 
   __new__(cls: type,input: Stream,encoding: Encoding)
 
   __new__(cls: type,input: Stream,encoding: Encoding,leaveOpen: bool)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- BaseStream=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Exposes access to the underlying stream of the System.IO.BinaryReader.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    BaseStream = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Exposes access to the underlying stream of the System.IO.BinaryReader.
 
 
 
@@ -416,5 +446,3 @@ Get: BaseStream(self: BinaryReader) -> Stream
 
 
 """
-
-

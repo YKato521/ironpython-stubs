@@ -1,8 +1,9 @@
 class AnalyticalConsistencyChecking(object):
- """ Utilities that allow for detection of incorrect or incomplete analytical consistency. """
- @staticmethod
- def CheckAnalyticalConsistency(document):
-  """
+    """ Utilities that allow for detection of incorrect or incomplete analytical consistency. """
+
+    @staticmethod
+    def CheckAnalyticalConsistency(document):
+        """
   CheckAnalyticalConsistency(document: Document) -> bool
 
   
@@ -15,8 +16,8 @@ class AnalyticalConsistencyChecking(object):
 
    Returns: True if run succeeded,false otherwise.
   """
-  pass
- __all__=[
-  'CheckAnalyticalConsistency',
- ]
+        pass
 
+    __all__ = [
+        "CheckAnalyticalConsistency",
+    ]

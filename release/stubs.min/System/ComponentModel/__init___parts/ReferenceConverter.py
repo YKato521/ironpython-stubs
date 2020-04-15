@@ -1,13 +1,14 @@
 class ReferenceConverter(TypeConverter):
- """
+    """
  Provides a type converter to convert object references to and from other representations.
 
  
 
  ReferenceConverter(type: Type)
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: ReferenceConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -26,9 +27,10 @@ class ReferenceConverter(TypeConverter):
 
    Returns: true if this object can perform the conversion; otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: ReferenceConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -45,9 +47,10 @@ class ReferenceConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: ReferenceConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -66,9 +69,10 @@ class ReferenceConverter(TypeConverter):
 
    Returns: The converted object.
   """
-  pass
- def GetStandardValues(self,context=None):
-  """
+        pass
+
+    def GetStandardValues(self, context=None):
+        """
   GetStandardValues(self: ReferenceConverter,context: ITypeDescriptorContext) -> StandardValuesCollection
 
   
@@ -83,9 +87,10 @@ class ReferenceConverter(TypeConverter):
 
     valid values,or null if the data type does not support a standard set of values.
   """
-  pass
- def GetStandardValuesExclusive(self,context=None):
-  """
+        pass
+
+    def GetStandardValuesExclusive(self, context=None):
+        """
   GetStandardValuesExclusive(self: ReferenceConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -108,9 +113,10 @@ class ReferenceConverter(TypeConverter):
 
     ontext) is an exhaustive list of possible values. This method never returns false.
   """
-  pass
- def GetStandardValuesSupported(self,context=None):
-  """
+        pass
+
+    def GetStandardValuesSupported(self, context=None):
+        """
   GetStandardValuesSupported(self: ReferenceConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -133,9 +139,10 @@ class ReferenceConverter(TypeConverter):
 
     returns false.
   """
-  pass
- def IsValueAllowed(self,*args):
-  """
+        pass
+
+    def IsValueAllowed(self, *args):
+        """
   IsValueAllowed(self: ReferenceConverter,context: ITypeDescriptorContext,value: object) -> bool
 
   
@@ -156,8 +163,9 @@ class ReferenceConverter(TypeConverter):
 
     value cannot be added to the standard values collection.
   """
-  pass
- @staticmethod
- def __new__(self,type):
-  """ __new__(cls: type,type: Type) """
-  pass
+        pass
+
+    @staticmethod
+    def __new__(self, type):
+        """ __new__(cls: type,type: Type) """
+        pass

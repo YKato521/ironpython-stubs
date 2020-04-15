@@ -8,42 +8,49 @@
 # no functions
 # classes
 
+
 class AutoDrawingRule(object):
- """ AutoDrawingRule(RuleFromFile: str) """
- @staticmethod
- def __new__(self,RuleFromFile):
-  """ __new__(cls: type,RuleFromFile: str) """
-  pass
- Filename=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Filename(self: AutoDrawingRule) -> str
-
-Set: Filename(self: AutoDrawingRule)=value
+    """ AutoDrawingRule(RuleFromFile: str) """
+
+    @staticmethod
+    def __new__(self, RuleFromFile):
+        """ __new__(cls: type,RuleFromFile: str) """
+        pass
+
+    Filename = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Filename(self: AutoDrawingRule) -> str
+
+
+
+Set: Filename(self: AutoDrawingRule)=value
+
 """
 
 
-
 class AutoDrawingsStatusEnum(Enum):
- """ enum AutoDrawingsStatusEnum,values: ERROR_DRAWING_EDITOR_MUST_BE_CLOSED (3),ERROR_NUMBERING_NOT_UPTODATE (2),OPERATION_FAILED (1),OPERATION_OK (0) """
- ERROR_DRAWING_EDITOR_MUST_BE_CLOSED=None
- ERROR_NUMBERING_NOT_UPTODATE=None
- OPERATION_FAILED=None
- OPERATION_OK=None
- value__=None
+    """ enum AutoDrawingsStatusEnum,values: ERROR_DRAWING_EDITOR_MUST_BE_CLOSED (3),ERROR_NUMBERING_NOT_UPTODATE (2),OPERATION_FAILED (1),OPERATION_OK (0) """
+
+    ERROR_DRAWING_EDITOR_MUST_BE_CLOSED = None
+    ERROR_NUMBERING_NOT_UPTODATE = None
+    OPERATION_FAILED = None
+    OPERATION_OK = None
+    value__ = None
 
 
 class DrawingCreator(object):
- # no doc
- @staticmethod
- def CreateDrawings(Rule,*__args):
-  """
-  CreateDrawings(Rule: AutoDrawingRule,ModelObjectIdentifier: Identifier) -> bool
-  CreateDrawings(Rule: AutoDrawingRule,ModelObjectIdentifier: Identifier) -> (bool,AutoDrawingsStatusEnum)
+    # no doc
+    @staticmethod
+    def CreateDrawings(Rule, *__args):
+        """
+  CreateDrawings(Rule: AutoDrawingRule,ModelObjectIdentifier: Identifier) -> bool
+
+  CreateDrawings(Rule: AutoDrawingRule,ModelObjectIdentifier: Identifier) -> (bool,AutoDrawingsStatusEnum)
+
   CreateDrawings(Rule: AutoDrawingRule,aModelObjectIdentifier: List[Identifier]) -> (bool,AutoDrawingsStatusEnum)
   """
-  pass
- __all__=[
-  '__reduce_ex__',
-  'CreateDrawings',
- ]
+        pass
 
-
+    __all__ = [
+        "__reduce_ex__",
+        "CreateDrawings",
+    ]

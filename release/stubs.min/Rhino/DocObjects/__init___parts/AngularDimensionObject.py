@@ -1,2 +1,2 @@
 class AngularDimensionObject(AnnotationObjectBase):
- """ Angular style dimension """
+    """ Angular style dimension """

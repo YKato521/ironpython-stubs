@@ -1,13 +1,14 @@
 class ExceptionValidationRule(ValidationRule):
- """
+    """
  Represents a rule that checks for exceptions that are thrown during the update of the binding source property.
 
  
 
  ExceptionValidationRule()
  """
- def Validate(self,value,cultureInfo,owner=None):
-  """
+
+    def Validate(self, value, cultureInfo, owner=None):
+        """
   Validate(self: ExceptionValidationRule,value: object,cultureInfo: CultureInfo) -> ValidationResult
 
   
@@ -22,4 +23,4 @@ class ExceptionValidationRule(ValidationRule):
 
    Returns: A System.Windows.Controls.ValidationResult object.
   """
-  pass
+        pass

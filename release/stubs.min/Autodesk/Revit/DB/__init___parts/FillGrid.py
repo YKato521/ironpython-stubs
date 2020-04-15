@@ -1,5 +1,5 @@
-class FillGrid(object,IDisposable):
- """
+class FillGrid(object, IDisposable):
+    """
  Represents a grid line in a fill pattern.
 
  
@@ -10,8 +10,9 @@ class FillGrid(object,IDisposable):
 
  FillGrid(other: FillGrid)
  """
- def CalculateLengthPerArea(self):
-  """
+
+    def CalculateLengthPerArea(self):
+        """
   CalculateLengthPerArea(self: FillGrid) -> float
 
   
@@ -20,9 +21,10 @@ class FillGrid(object,IDisposable):
 
    Returns: The length per area.
   """
-  pass
- def CalculateLinesPerLength(self):
-  """
+        pass
+
+    def CalculateLinesPerLength(self):
+        """
   CalculateLinesPerLength(self: FillGrid) -> float
 
   
@@ -31,9 +33,10 @@ class FillGrid(object,IDisposable):
 
    Returns: The solid lines per length.
   """
-  pass
- def CalculateStrokesPerArea(self):
-  """
+        pass
+
+    def CalculateStrokesPerArea(self):
+        """
   CalculateStrokesPerArea(self: FillGrid) -> float
 
   
@@ -42,12 +45,14 @@ class FillGrid(object,IDisposable):
 
    Returns: The strokes per area.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: FillGrid) """
-  pass
- def GetHatchingDirection(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: FillGrid) """
+        pass
+
+    def GetHatchingDirection(self):
+        """
   GetHatchingDirection(self: FillGrid) -> UV
 
   
@@ -56,9 +61,10 @@ class FillGrid(object,IDisposable):
 
    Returns: The direction of hatching.
   """
-  pass
- def GetPointLineZone(self,point,nearestPoint=None):
-  """
+        pass
+
+    def GetPointLineZone(self, point, nearestPoint=None):
+        """
   GetPointLineZone(self: FillGrid,point: UV) -> int
 
   
@@ -87,9 +93,10 @@ class FillGrid(object,IDisposable):
 
    Returns: The index of fill grid line.
   """
-  pass
- def GetSegmentDirection(self):
-  """
+        pass
+
+    def GetSegmentDirection(self):
+        """
   GetSegmentDirection(self: FillGrid) -> UV
 
   
@@ -98,9 +105,10 @@ class FillGrid(object,IDisposable):
 
    Returns: The direction of segment.
   """
-  pass
- def GetSegments(self):
-  """
+        pass
+
+    def GetSegments(self):
+        """
   GetSegments(self: FillGrid) -> IList[float]
 
   
@@ -109,9 +117,10 @@ class FillGrid(object,IDisposable):
 
    Returns: The segments.
   """
-  pass
- def IsEqual(self,other):
-  """
+        pass
+
+    def IsEqual(self, other):
+        """
   IsEqual(self: FillGrid,other: FillGrid) -> bool
 
   
@@ -124,37 +133,45 @@ class FillGrid(object,IDisposable):
 
    Returns: True if the two fill grids are equal,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: FillGrid,disposing: bool) """
-  pass
- def SetSegments(self,segArr):
-  """ SetSegments(self: FillGrid,segArr: IList[float]) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: FillGrid,disposing: bool) """
+        pass
+
+    def SetSegments(self, segArr):
+        """ SetSegments(self: FillGrid,segArr: IList[float]) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,angle: float,spacing: float)
 
   __new__(cls: type)
 
   __new__(cls: type,other: FillGrid)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Angle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets and sets the angle of the fill grid.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Angle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets and sets the angle of the fill grid.
 
 
 
@@ -166,8 +183,10 @@ Set: Angle(self: FillGrid)=value
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -177,8 +196,8 @@ Get: IsValidObject(self: FillGrid) -> bool
 
 """
 
- Offset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets and sets the offset of the fill grid.
+    Offset = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets and sets the offset of the fill grid.
 
 
 
@@ -190,8 +209,8 @@ Set: Offset(self: FillGrid)=value
 
 """
 
- Origin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets and sets the origin of the fill grid.
+    Origin = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets and sets the origin of the fill grid.
 
 
 
@@ -203,8 +222,8 @@ Set: Origin(self: FillGrid)=value
 
 """
 
- Shift=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets and sets the shift of the fill grid.
+    Shift = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets and sets the shift of the fill grid.
 
 
 
@@ -215,5 +234,3 @@ Get: Shift(self: FillGrid) -> float
 Set: Shift(self: FillGrid)=value
 
 """
-
-

@@ -1,7 +1,8 @@
 class UCOMITypeLib:
- """ Use System.Runtime.InteropServices.ComTypes.ITypeLib instead. """
- def FindName(self,szNameBuf,lHashVal,ppTInfo,rgMemId,pcFound):
-  """
+    """ Use System.Runtime.InteropServices.ComTypes.ITypeLib instead. """
+
+    def FindName(self, szNameBuf, lHashVal, ppTInfo, rgMemId, pcFound):
+        """
   FindName(self: UCOMITypeLib,szNameBuf: str,lHashVal: int,pcFound: Int16) -> (Array[UCOMITypeInfo],Array[int],Int16)
 
   
@@ -26,9 +27,12 @@ class UCOMITypeLib:
 
     might be more type descriptions that contain the name.
   """
-  pass
- def GetDocumentation(self,index,strName,strDocString,dwHelpContext,strHelpFile):
-  """
+        pass
+
+    def GetDocumentation(
+        self, index, strName, strDocString, dwHelpContext, strHelpFile
+    ):
+        """
   GetDocumentation(self: UCOMITypeLib,index: int) -> (str,str,int,str)
 
   
@@ -43,18 +47,20 @@ class UCOMITypeLib:
 
    index: Index of the type description whose documentation is to be returned.
   """
-  pass
- def GetLibAttr(self,ppTLibAttr):
-  """
+        pass
+
+    def GetLibAttr(self, ppTLibAttr):
+        """
   GetLibAttr(self: UCOMITypeLib) -> IntPtr
 
   
 
    Retrieves the structure that contains the library's attributes.
   """
-  pass
- def GetTypeComp(self,ppTComp):
-  """
+        pass
+
+    def GetTypeComp(self, ppTComp):
+        """
   GetTypeComp(self: UCOMITypeLib) -> UCOMITypeComp
 
   
@@ -63,9 +69,10 @@ class UCOMITypeLib:
 
     functions.
   """
-  pass
- def GetTypeInfo(self,index,ppTI):
-  """
+        pass
+
+    def GetTypeInfo(self, index, ppTI):
+        """
   GetTypeInfo(self: UCOMITypeLib,index: int) -> UCOMITypeInfo
 
   
@@ -76,9 +83,10 @@ class UCOMITypeLib:
 
    index: Index of the UCOMITypeInfo interface to return.
   """
-  pass
- def GetTypeInfoCount(self):
-  """
+        pass
+
+    def GetTypeInfoCount(self):
+        """
   GetTypeInfoCount(self: UCOMITypeLib) -> int
 
   
@@ -87,9 +95,10 @@ class UCOMITypeLib:
 
    Returns: The number of type descriptions in the type library.
   """
-  pass
- def GetTypeInfoOfGuid(self,guid,ppTInfo):
-  """
+        pass
+
+    def GetTypeInfoOfGuid(self, guid, ppTInfo):
+        """
   GetTypeInfoOfGuid(self: UCOMITypeLib,guid: Guid) -> (Guid,UCOMITypeInfo)
 
   
@@ -100,9 +109,10 @@ class UCOMITypeLib:
 
    guid: IID of the interface of CLSID of the class whose type info is requested.
   """
-  pass
- def GetTypeInfoType(self,index,pTKind):
-  """
+        pass
+
+    def GetTypeInfoType(self, index, pTKind):
+        """
   GetTypeInfoType(self: UCOMITypeLib,index: int) -> TYPEKIND
 
   
@@ -113,9 +123,10 @@ class UCOMITypeLib:
 
    index: The index of the type description within the type library.
   """
-  pass
- def IsName(self,szNameBuf,lHashVal):
-  """
+        pass
+
+    def IsName(self, szNameBuf, lHashVal):
+        """
   IsName(self: UCOMITypeLib,szNameBuf: str,lHashVal: int) -> bool
 
   
@@ -134,9 +145,10 @@ class UCOMITypeLib:
 
    Returns: true if szNameBuf was found in the type library; otherwise false.
   """
-  pass
- def ReleaseTLibAttr(self,pTLibAttr):
-  """
+        pass
+
+    def ReleaseTLibAttr(self, pTLibAttr):
+        """
   ReleaseTLibAttr(self: UCOMITypeLib,pTLibAttr: IntPtr)
 
    Releases the System.Runtime.InteropServices.TYPELIBATTR originally obtained from 
@@ -149,7 +161,8 @@ class UCOMITypeLib:
 
    pTLibAttr: The TLIBATTR to release.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

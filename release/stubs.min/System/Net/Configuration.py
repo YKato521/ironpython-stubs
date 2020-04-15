@@ -8,8 +8,9 @@
 # no functions
 # classes
 
+
 class AuthenticationModuleElement(ConfigurationElement):
- """
+    """
  Represents the type information for an authentication module. This class cannot be inherited.
 
  
@@ -18,34 +19,44 @@ class AuthenticationModuleElement(ConfigurationElement):
 
  AuthenticationModuleElement(typeName: str)
  """
- @staticmethod
- def __new__(self,typeName=None):
-  """
+
+    @staticmethod
+    def __new__(self, typeName=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,typeName: str)
   """
-  pass
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+        pass
+
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Type=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the type and assembly information for the current instance.
+    Type = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the type and assembly information for the current instance.
 
 
 
@@ -58,17 +69,19 @@ Set: Type(self: AuthenticationModuleElement)=value
 """
 
 
-
-class AuthenticationModuleElementCollection(ConfigurationElementCollection,ICollection,IEnumerable):
- """
+class AuthenticationModuleElementCollection(
+    ConfigurationElementCollection, ICollection, IEnumerable
+):
+    """
  Represents a container for authentication module configuration elements. This class cannot be inherited.
 
  
 
  AuthenticationModuleElementCollection()
  """
- def Add(self,element):
-  """
+
+    def Add(self, element):
+        """
   Add(self: AuthenticationModuleElementCollection,element: AuthenticationModuleElement)
 
    Adds an element to the collection.
@@ -77,9 +90,10 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
    element: The System.Net.Configuration.AuthenticationModuleElement to add to the collection.
   """
-  pass
- def BaseAdd(self,*args):
-  """
+        pass
+
+    def BaseAdd(self, *args):
+        """
   BaseAdd(self: ConfigurationElementCollection,index: int,element: ConfigurationElement)
 
    Adds a configuration element to the configuration element collection.
@@ -112,16 +126,18 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
    element: The System.Configuration.ConfigurationElement to add.
   """
-  pass
- def BaseClear(self,*args):
-  """
+        pass
+
+    def BaseClear(self, *args):
+        """
   BaseClear(self: ConfigurationElementCollection)
 
    Removes all configuration element objects from the collection.
   """
-  pass
- def BaseGet(self,*args):
-  """
+        pass
+
+    def BaseGet(self, *args):
+        """
   BaseGet(self: ConfigurationElementCollection,index: int) -> ConfigurationElement
 
   
@@ -146,9 +162,10 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
    Returns: The System.Configuration.ConfigurationElement with the specified key; otherwise,null.
   """
-  pass
- def BaseGetAllKeys(self,*args):
-  """
+        pass
+
+    def BaseGetAllKeys(self, *args):
+        """
   BaseGetAllKeys(self: ConfigurationElementCollection) -> Array[object]
 
   
@@ -163,9 +180,10 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
     contained in the System.Configuration.ConfigurationElementCollection.
   """
-  pass
- def BaseGetKey(self,*args):
-  """
+        pass
+
+    def BaseGetKey(self, *args):
+        """
   BaseGetKey(self: ConfigurationElementCollection,index: int) -> object
 
   
@@ -178,9 +196,10 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
    Returns: The key for the specified System.Configuration.ConfigurationElement.
   """
-  pass
- def BaseIndexOf(self,*args):
-  """
+        pass
+
+    def BaseIndexOf(self, *args):
+        """
   BaseIndexOf(self: ConfigurationElementCollection,element: ConfigurationElement) -> int
 
   
@@ -193,9 +212,10 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
    Returns: The index of the specified System.Configuration.ConfigurationElement; otherwise,-1.
   """
-  pass
- def BaseIsRemoved(self,*args):
-  """
+        pass
+
+    def BaseIsRemoved(self, *args):
+        """
   BaseIsRemoved(self: ConfigurationElementCollection,key: object) -> bool
 
   
@@ -214,9 +234,10 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
     otherwise,false. The default is false.
   """
-  pass
- def BaseRemove(self,*args):
-  """
+        pass
+
+    def BaseRemove(self, *args):
+        """
   BaseRemove(self: ConfigurationElementCollection,key: object)
 
    Removes a System.Configuration.ConfigurationElement from the collection.
@@ -225,9 +246,10 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
    key: The key of the System.Configuration.ConfigurationElement to remove.
   """
-  pass
- def BaseRemoveAt(self,*args):
-  """
+        pass
+
+    def BaseRemoveAt(self, *args):
+        """
   BaseRemoveAt(self: ConfigurationElementCollection,index: int)
 
    Removes the System.Configuration.ConfigurationElement at the specified index location.
@@ -236,16 +258,18 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
    index: The index location of the System.Configuration.ConfigurationElement to remove.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: AuthenticationModuleElementCollection)
 
    Removes all elements from the collection.
   """
-  pass
- def CreateNewElement(self,*args):
-  """
+        pass
+
+    def CreateNewElement(self, *args):
+        """
   CreateNewElement(self: AuthenticationModuleElementCollection) -> ConfigurationElement
 
   CreateNewElement(self: ConfigurationElementCollection,elementName: str) -> ConfigurationElement
@@ -260,9 +284,10 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
    Returns: A new System.Configuration.ConfigurationElement.
   """
-  pass
- def DeserializeElement(self,*args):
-  """
+        pass
+
+    def DeserializeElement(self, *args):
+        """
   DeserializeElement(self: ConfigurationElement,reader: XmlReader,serializeCollectionKey: bool)
 
    Reads XML from the configuration file.
@@ -273,12 +298,14 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
    serializeCollectionKey: true to serialize only the collection key properties; otherwise,false.
   """
-  pass
- def GetElementKey(self,*args):
-  """ GetElementKey(self: AuthenticationModuleElementCollection,element: ConfigurationElement) -> object """
-  pass
- def GetTransformedAssemblyString(self,*args):
-  """
+        pass
+
+    def GetElementKey(self, *args):
+        """ GetElementKey(self: AuthenticationModuleElementCollection,element: ConfigurationElement) -> object """
+        pass
+
+    def GetTransformedAssemblyString(self, *args):
+        """
   GetTransformedAssemblyString(self: ConfigurationElement,assemblyName: str) -> str
 
   
@@ -297,9 +324,10 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
     available.
   """
-  pass
- def GetTransformedTypeString(self,*args):
-  """
+        pass
+
+    def GetTransformedTypeString(self, *args):
+        """
   GetTransformedTypeString(self: ConfigurationElement,typeName: str) -> str
 
   
@@ -318,16 +346,18 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
     available.
   """
-  pass
- def get_Item(self,*__args):
-  """
+        pass
+
+    def get_Item(self, *__args):
+        """
   get_Item(self: ConfigurationElement,propertyName: str) -> object
 
   get_Item(self: ConfigurationElement,prop: ConfigurationProperty) -> object
   """
-  pass
- def IndexOf(self,element):
-  """
+        pass
+
+    def IndexOf(self, element):
+        """
   IndexOf(self: AuthenticationModuleElementCollection,element: AuthenticationModuleElement) -> int
 
   
@@ -340,25 +370,28 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
    Returns: The zero-based index of element.
   """
-  pass
- def Init(self,*args):
-  """
+        pass
+
+    def Init(self, *args):
+        """
   Init(self: ConfigurationElement)
 
    Sets the System.Configuration.ConfigurationElement object to its initial state.
   """
-  pass
- def InitializeDefault(self,*args):
-  """
+        pass
+
+    def InitializeDefault(self, *args):
+        """
   InitializeDefault(self: ConfigurationElement)
 
    Used to initialize a default set of values for the System.Configuration.ConfigurationElement 
 
     object.
   """
-  pass
- def IsElementName(self,*args):
-  """
+        pass
+
+    def IsElementName(self, *args):
+        """
   IsElementName(self: ConfigurationElementCollection,elementName: str) -> bool
 
   
@@ -375,9 +408,10 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
    Returns: true if the element exists in the collection; otherwise,false. The default is false.
   """
-  pass
- def IsElementRemovable(self,*args):
-  """
+        pass
+
+    def IsElementRemovable(self, *args):
+        """
   IsElementRemovable(self: ConfigurationElementCollection,element: ConfigurationElement) -> bool
 
   
@@ -396,9 +430,10 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
     System.Configuration.ConfigurationElementCollection; otherwise,false. The default is true.
   """
-  pass
- def IsModified(self,*args):
-  """
+        pass
+
+    def IsModified(self, *args):
+        """
   IsModified(self: ConfigurationElementCollection) -> bool
 
   
@@ -411,9 +446,10 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
    Returns: true if any contained element has been modified; otherwise,false
   """
-  pass
- def ListErrors(self,*args):
-  """
+        pass
+
+    def ListErrors(self, *args):
+        """
   ListErrors(self: ConfigurationElement,errorList: IList)
 
    Adds the invalid-property errors in this System.Configuration.ConfigurationElement object,and 
@@ -426,9 +462,10 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
    errorList: An object that implements the System.Collections.IList interface.
   """
-  pass
- def OnDeserializeUnrecognizedAttribute(self,*args):
-  """
+        pass
+
+    def OnDeserializeUnrecognizedAttribute(self, *args):
+        """
   OnDeserializeUnrecognizedAttribute(self: ConfigurationElement,name: str,value: str) -> bool
 
   
@@ -443,9 +480,10 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
    Returns: true when an unknown attribute is encountered while deserializing; otherwise,false.
   """
-  pass
- def OnDeserializeUnrecognizedElement(self,*args):
-  """
+        pass
+
+    def OnDeserializeUnrecognizedElement(self, *args):
+        """
   OnDeserializeUnrecognizedElement(self: ConfigurationElementCollection,elementName: str,reader: XmlReader) -> bool
 
   
@@ -462,9 +500,10 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
     false.
   """
-  pass
- def OnRequiredPropertyNotFound(self,*args):
-  """
+        pass
+
+    def OnRequiredPropertyNotFound(self, *args):
+        """
   OnRequiredPropertyNotFound(self: ConfigurationElement,name: str) -> object
 
   
@@ -477,16 +516,18 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
    Returns: None.
   """
-  pass
- def PostDeserialize(self,*args):
-  """
+        pass
+
+    def PostDeserialize(self, *args):
+        """
   PostDeserialize(self: ConfigurationElement)
 
    Called after deserialization.
   """
-  pass
- def PreSerialize(self,*args):
-  """
+        pass
+
+    def PreSerialize(self, *args):
+        """
   PreSerialize(self: ConfigurationElement,writer: XmlWriter)
 
    Called before serialization.
@@ -497,9 +538,10 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
     System.Configuration.ConfigurationElement.
   """
-  pass
- def Remove(self,*__args):
-  """
+        pass
+
+    def Remove(self, *__args):
+        """
   Remove(self: AuthenticationModuleElementCollection,name: str)
 
    Removes the element with the specified key.
@@ -516,9 +558,10 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
    element: The System.Net.Configuration.AuthenticationModuleElement to remove.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: AuthenticationModuleElementCollection,index: int)
 
    Removes the element at the specified index.
@@ -527,9 +570,10 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
    index: The zero-based index of the element to remove.
   """
-  pass
- def Reset(self,*args):
-  """
+        pass
+
+    def Reset(self, *args):
+        """
   Reset(self: ConfigurationElementCollection,parentElement: ConfigurationElement)
 
    Resets the System.Configuration.ConfigurationElementCollection to its unmodified state when 
@@ -544,18 +588,20 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
     any; otherwise,null.
   """
-  pass
- def ResetModified(self,*args):
-  """
+        pass
+
+    def ResetModified(self, *args):
+        """
   ResetModified(self: ConfigurationElementCollection)
 
    Resets the value of the System.Configuration.ConfigurationElementCollection.IsModified property 
 
     to false when overridden in a derived class.
   """
-  pass
- def SerializeElement(self,*args):
-  """
+        pass
+
+    def SerializeElement(self, *args):
+        """
   SerializeElement(self: ConfigurationElementCollection,writer: XmlWriter,serializeCollectionKey: bool) -> bool
 
   
@@ -576,9 +622,10 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
     file successfully.
   """
-  pass
- def SerializeToXmlElement(self,*args):
-  """
+        pass
+
+    def SerializeToXmlElement(self, *args):
+        """
   SerializeToXmlElement(self: ConfigurationElement,writer: XmlWriter,elementName: str) -> bool
 
   
@@ -597,9 +644,10 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
    Returns: true if writing was successful; otherwise,false.
   """
-  pass
- def SetPropertyValue(self,*args):
-  """
+        pass
+
+    def SetPropertyValue(self, *args):
+        """
   SetPropertyValue(self: ConfigurationElement,prop: ConfigurationProperty,value: object,ignoreLocks: bool)
 
    Sets a property to the specified value.
@@ -612,21 +660,24 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
    ignoreLocks: true if the locks on the property should be ignored; otherwise,false.
   """
-  pass
- def SetReadOnly(self,*args):
-  """
+        pass
+
+    def SetReadOnly(self, *args):
+        """
   SetReadOnly(self: ConfigurationElementCollection)
 
    Sets the System.Configuration.ConfigurationElementCollection.IsReadOnly property for the 
 
     System.Configuration.ConfigurationElementCollection object and for all sub-elements.
   """
-  pass
- def set_Item(self,*__args):
-  """ set_Item(self: ConfigurationElement,propertyName: str,value: object)set_Item(self: ConfigurationElement,prop: ConfigurationProperty,value: object) """
-  pass
- def Unmerge(self,*args):
-  """
+        pass
+
+    def set_Item(self, *__args):
+        """ set_Item(self: ConfigurationElement,propertyName: str,value: object)set_Item(self: ConfigurationElement,prop: ConfigurationProperty,value: object) """
+        pass
+
+    def Unmerge(self, *args):
+        """
   Unmerge(self: ConfigurationElementCollection,sourceElement: ConfigurationElement,parentElement: ConfigurationElement,saveMode: ConfigurationSaveMode)
 
    Reverses the effect of merging configuration information from different levels of the 
@@ -653,92 +704,118 @@ class AuthenticationModuleElementCollection(ConfigurationElementCollection,IColl
 
     values to include.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]=x.__setitem__(i,y) <==> x[i]= """
-  pass
- AddElementName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the System.Configuration.ConfigurationElement to associate with the add operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]=x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    AddElementName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the System.Configuration.ConfigurationElement to associate with the add operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
 
 
 
 """
 
- ClearElementName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name for the System.Configuration.ConfigurationElement to associate with the clear operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
+    ClearElementName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name for the System.Configuration.ConfigurationElement to associate with the clear operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
 
 
 
 """
 
- ElementName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name used to identify this collection of elements in the configuration file when overridden in a derived class.
+    ElementName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the name used to identify this collection of elements in the configuration file when overridden in a derived class.
 
 
 
 """
 
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of properties.
-
-
-
-"""
-
- RemoveElementName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the System.Configuration.ConfigurationElement to associate with the remove operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the collection of properties.
 
 
 
 """
 
- ThrowOnDuplicate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether an attempt to add a duplicate System.Configuration.ConfigurationElement to the System.Configuration.ConfigurationElementCollection will cause an exception to be thrown.
+    RemoveElementName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the System.Configuration.ConfigurationElement to associate with the remove operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
 
 
 
 """
 
+    ThrowOnDuplicate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether an attempt to add a duplicate System.Configuration.ConfigurationElement to the System.Configuration.ConfigurationElementCollection will cause an exception to be thrown.
+
+
+
+"""
 
 
 class AuthenticationModulesSection(ConfigurationSection):
- """
+    """
  Represents the configuration section for authentication modules. This class cannot be inherited.
 
  
 
  AuthenticationModulesSection()
  """
- AuthenticationModules=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of authentication modules in the section.
+
+    AuthenticationModules = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the collection of authentication modules in the section.
 
 
 
@@ -748,28 +825,35 @@ Get: AuthenticationModules(self: AuthenticationModulesSection) -> Authentication
 
 """
 
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
-
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
 
 class BypassElement(ConfigurationElement):
- """
+    """
  Represents the address information for resources that are not retrieved using a proxy server. This class cannot be inherited.
 
  
@@ -778,16 +862,18 @@ class BypassElement(ConfigurationElement):
 
  BypassElement(address: str)
  """
- @staticmethod
- def __new__(self,address=None):
-  """
+
+    @staticmethod
+    def __new__(self, address=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,address: str)
   """
-  pass
- Address=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the addresses of resources that bypass the proxy server.
+        pass
+
+    Address = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the addresses of resources that bypass the proxy server.
 
 
 
@@ -799,36 +885,44 @@ Set: Address(self: BypassElement)=value
 
 """
 
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
 
-
-class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumerable):
- """
+class BypassElementCollection(ConfigurationElementCollection, ICollection, IEnumerable):
+    """
  Represents a container for the addresses of resources that bypass the proxy server. This class cannot be inherited.
 
  
 
  BypassElementCollection()
  """
- def Add(self,element):
-  """
+
+    def Add(self, element):
+        """
   Add(self: BypassElementCollection,element: BypassElement)
 
    Adds an element to the collection.
@@ -837,9 +931,10 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
    element: The System.Net.Configuration.BypassElement to add to the collection.
   """
-  pass
- def BaseAdd(self,*args):
-  """
+        pass
+
+    def BaseAdd(self, *args):
+        """
   BaseAdd(self: ConfigurationElementCollection,index: int,element: ConfigurationElement)
 
    Adds a configuration element to the configuration element collection.
@@ -872,16 +967,18 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
    element: The System.Configuration.ConfigurationElement to add.
   """
-  pass
- def BaseClear(self,*args):
-  """
+        pass
+
+    def BaseClear(self, *args):
+        """
   BaseClear(self: ConfigurationElementCollection)
 
    Removes all configuration element objects from the collection.
   """
-  pass
- def BaseGet(self,*args):
-  """
+        pass
+
+    def BaseGet(self, *args):
+        """
   BaseGet(self: ConfigurationElementCollection,index: int) -> ConfigurationElement
 
   
@@ -906,9 +1003,10 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
    Returns: The System.Configuration.ConfigurationElement with the specified key; otherwise,null.
   """
-  pass
- def BaseGetAllKeys(self,*args):
-  """
+        pass
+
+    def BaseGetAllKeys(self, *args):
+        """
   BaseGetAllKeys(self: ConfigurationElementCollection) -> Array[object]
 
   
@@ -923,9 +1021,10 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
     contained in the System.Configuration.ConfigurationElementCollection.
   """
-  pass
- def BaseGetKey(self,*args):
-  """
+        pass
+
+    def BaseGetKey(self, *args):
+        """
   BaseGetKey(self: ConfigurationElementCollection,index: int) -> object
 
   
@@ -938,9 +1037,10 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
    Returns: The key for the specified System.Configuration.ConfigurationElement.
   """
-  pass
- def BaseIndexOf(self,*args):
-  """
+        pass
+
+    def BaseIndexOf(self, *args):
+        """
   BaseIndexOf(self: ConfigurationElementCollection,element: ConfigurationElement) -> int
 
   
@@ -953,9 +1053,10 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
    Returns: The index of the specified System.Configuration.ConfigurationElement; otherwise,-1.
   """
-  pass
- def BaseIsRemoved(self,*args):
-  """
+        pass
+
+    def BaseIsRemoved(self, *args):
+        """
   BaseIsRemoved(self: ConfigurationElementCollection,key: object) -> bool
 
   
@@ -974,9 +1075,10 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
     otherwise,false. The default is false.
   """
-  pass
- def BaseRemove(self,*args):
-  """
+        pass
+
+    def BaseRemove(self, *args):
+        """
   BaseRemove(self: ConfigurationElementCollection,key: object)
 
    Removes a System.Configuration.ConfigurationElement from the collection.
@@ -985,9 +1087,10 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
    key: The key of the System.Configuration.ConfigurationElement to remove.
   """
-  pass
- def BaseRemoveAt(self,*args):
-  """
+        pass
+
+    def BaseRemoveAt(self, *args):
+        """
   BaseRemoveAt(self: ConfigurationElementCollection,index: int)
 
    Removes the System.Configuration.ConfigurationElement at the specified index location.
@@ -996,16 +1099,18 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
    index: The index location of the System.Configuration.ConfigurationElement to remove.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: BypassElementCollection)
 
    Removes all elements from the collection.
   """
-  pass
- def CreateNewElement(self,*args):
-  """
+        pass
+
+    def CreateNewElement(self, *args):
+        """
   CreateNewElement(self: BypassElementCollection) -> ConfigurationElement
 
   CreateNewElement(self: ConfigurationElementCollection,elementName: str) -> ConfigurationElement
@@ -1020,9 +1125,10 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
    Returns: A new System.Configuration.ConfigurationElement.
   """
-  pass
- def DeserializeElement(self,*args):
-  """
+        pass
+
+    def DeserializeElement(self, *args):
+        """
   DeserializeElement(self: ConfigurationElement,reader: XmlReader,serializeCollectionKey: bool)
 
    Reads XML from the configuration file.
@@ -1033,12 +1139,14 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
    serializeCollectionKey: true to serialize only the collection key properties; otherwise,false.
   """
-  pass
- def GetElementKey(self,*args):
-  """ GetElementKey(self: BypassElementCollection,element: ConfigurationElement) -> object """
-  pass
- def GetTransformedAssemblyString(self,*args):
-  """
+        pass
+
+    def GetElementKey(self, *args):
+        """ GetElementKey(self: BypassElementCollection,element: ConfigurationElement) -> object """
+        pass
+
+    def GetTransformedAssemblyString(self, *args):
+        """
   GetTransformedAssemblyString(self: ConfigurationElement,assemblyName: str) -> str
 
   
@@ -1057,9 +1165,10 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
     available.
   """
-  pass
- def GetTransformedTypeString(self,*args):
-  """
+        pass
+
+    def GetTransformedTypeString(self, *args):
+        """
   GetTransformedTypeString(self: ConfigurationElement,typeName: str) -> str
 
   
@@ -1078,16 +1187,18 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
     available.
   """
-  pass
- def get_Item(self,*__args):
-  """
+        pass
+
+    def get_Item(self, *__args):
+        """
   get_Item(self: ConfigurationElement,propertyName: str) -> object
 
   get_Item(self: ConfigurationElement,prop: ConfigurationProperty) -> object
   """
-  pass
- def IndexOf(self,element):
-  """
+        pass
+
+    def IndexOf(self, element):
+        """
   IndexOf(self: BypassElementCollection,element: BypassElement) -> int
 
   
@@ -1100,25 +1211,28 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
    Returns: The zero-based index of element.
   """
-  pass
- def Init(self,*args):
-  """
+        pass
+
+    def Init(self, *args):
+        """
   Init(self: ConfigurationElement)
 
    Sets the System.Configuration.ConfigurationElement object to its initial state.
   """
-  pass
- def InitializeDefault(self,*args):
-  """
+        pass
+
+    def InitializeDefault(self, *args):
+        """
   InitializeDefault(self: ConfigurationElement)
 
    Used to initialize a default set of values for the System.Configuration.ConfigurationElement 
 
     object.
   """
-  pass
- def IsElementName(self,*args):
-  """
+        pass
+
+    def IsElementName(self, *args):
+        """
   IsElementName(self: ConfigurationElementCollection,elementName: str) -> bool
 
   
@@ -1135,9 +1249,10 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
    Returns: true if the element exists in the collection; otherwise,false. The default is false.
   """
-  pass
- def IsElementRemovable(self,*args):
-  """
+        pass
+
+    def IsElementRemovable(self, *args):
+        """
   IsElementRemovable(self: ConfigurationElementCollection,element: ConfigurationElement) -> bool
 
   
@@ -1156,9 +1271,10 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
     System.Configuration.ConfigurationElementCollection; otherwise,false. The default is true.
   """
-  pass
- def IsModified(self,*args):
-  """
+        pass
+
+    def IsModified(self, *args):
+        """
   IsModified(self: ConfigurationElementCollection) -> bool
 
   
@@ -1171,9 +1287,10 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
    Returns: true if any contained element has been modified; otherwise,false
   """
-  pass
- def ListErrors(self,*args):
-  """
+        pass
+
+    def ListErrors(self, *args):
+        """
   ListErrors(self: ConfigurationElement,errorList: IList)
 
    Adds the invalid-property errors in this System.Configuration.ConfigurationElement object,and 
@@ -1186,9 +1303,10 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
    errorList: An object that implements the System.Collections.IList interface.
   """
-  pass
- def OnDeserializeUnrecognizedAttribute(self,*args):
-  """
+        pass
+
+    def OnDeserializeUnrecognizedAttribute(self, *args):
+        """
   OnDeserializeUnrecognizedAttribute(self: ConfigurationElement,name: str,value: str) -> bool
 
   
@@ -1203,9 +1321,10 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
    Returns: true when an unknown attribute is encountered while deserializing; otherwise,false.
   """
-  pass
- def OnDeserializeUnrecognizedElement(self,*args):
-  """
+        pass
+
+    def OnDeserializeUnrecognizedElement(self, *args):
+        """
   OnDeserializeUnrecognizedElement(self: ConfigurationElementCollection,elementName: str,reader: XmlReader) -> bool
 
   
@@ -1222,9 +1341,10 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
     false.
   """
-  pass
- def OnRequiredPropertyNotFound(self,*args):
-  """
+        pass
+
+    def OnRequiredPropertyNotFound(self, *args):
+        """
   OnRequiredPropertyNotFound(self: ConfigurationElement,name: str) -> object
 
   
@@ -1237,16 +1357,18 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
    Returns: None.
   """
-  pass
- def PostDeserialize(self,*args):
-  """
+        pass
+
+    def PostDeserialize(self, *args):
+        """
   PostDeserialize(self: ConfigurationElement)
 
    Called after deserialization.
   """
-  pass
- def PreSerialize(self,*args):
-  """
+        pass
+
+    def PreSerialize(self, *args):
+        """
   PreSerialize(self: ConfigurationElement,writer: XmlWriter)
 
    Called before serialization.
@@ -1257,9 +1379,10 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
     System.Configuration.ConfigurationElement.
   """
-  pass
- def Remove(self,*__args):
-  """
+        pass
+
+    def Remove(self, *__args):
+        """
   Remove(self: BypassElementCollection,name: str)
 
    Removes the element with the specified key.
@@ -1276,9 +1399,10 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
    element: The System.Net.Configuration.BypassElement to remove.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: BypassElementCollection,index: int)
 
    Removes the element at the specified index.
@@ -1287,9 +1411,10 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
    index: The zero-based index of the element to remove.
   """
-  pass
- def Reset(self,*args):
-  """
+        pass
+
+    def Reset(self, *args):
+        """
   Reset(self: ConfigurationElementCollection,parentElement: ConfigurationElement)
 
    Resets the System.Configuration.ConfigurationElementCollection to its unmodified state when 
@@ -1304,18 +1429,20 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
     any; otherwise,null.
   """
-  pass
- def ResetModified(self,*args):
-  """
+        pass
+
+    def ResetModified(self, *args):
+        """
   ResetModified(self: ConfigurationElementCollection)
 
    Resets the value of the System.Configuration.ConfigurationElementCollection.IsModified property 
 
     to false when overridden in a derived class.
   """
-  pass
- def SerializeElement(self,*args):
-  """
+        pass
+
+    def SerializeElement(self, *args):
+        """
   SerializeElement(self: ConfigurationElementCollection,writer: XmlWriter,serializeCollectionKey: bool) -> bool
 
   
@@ -1336,9 +1463,10 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
     file successfully.
   """
-  pass
- def SerializeToXmlElement(self,*args):
-  """
+        pass
+
+    def SerializeToXmlElement(self, *args):
+        """
   SerializeToXmlElement(self: ConfigurationElement,writer: XmlWriter,elementName: str) -> bool
 
   
@@ -1357,9 +1485,10 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
    Returns: true if writing was successful; otherwise,false.
   """
-  pass
- def SetPropertyValue(self,*args):
-  """
+        pass
+
+    def SetPropertyValue(self, *args):
+        """
   SetPropertyValue(self: ConfigurationElement,prop: ConfigurationProperty,value: object,ignoreLocks: bool)
 
    Sets a property to the specified value.
@@ -1372,21 +1501,24 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
    ignoreLocks: true if the locks on the property should be ignored; otherwise,false.
   """
-  pass
- def SetReadOnly(self,*args):
-  """
+        pass
+
+    def SetReadOnly(self, *args):
+        """
   SetReadOnly(self: ConfigurationElementCollection)
 
    Sets the System.Configuration.ConfigurationElementCollection.IsReadOnly property for the 
 
     System.Configuration.ConfigurationElementCollection object and for all sub-elements.
   """
-  pass
- def set_Item(self,*__args):
-  """ set_Item(self: ConfigurationElement,propertyName: str,value: object)set_Item(self: ConfigurationElement,prop: ConfigurationProperty,value: object) """
-  pass
- def Unmerge(self,*args):
-  """
+        pass
+
+    def set_Item(self, *__args):
+        """ set_Item(self: ConfigurationElement,propertyName: str,value: object)set_Item(self: ConfigurationElement,prop: ConfigurationProperty,value: object) """
+        pass
+
+    def Unmerge(self, *args):
+        """
   Unmerge(self: ConfigurationElementCollection,sourceElement: ConfigurationElement,parentElement: ConfigurationElement,saveMode: ConfigurationSaveMode)
 
    Reverses the effect of merging configuration information from different levels of the 
@@ -1413,79 +1545,102 @@ class BypassElementCollection(ConfigurationElementCollection,ICollection,IEnumer
 
     values to include.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]=x.__setitem__(i,y) <==> x[i]= """
-  pass
- AddElementName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the System.Configuration.ConfigurationElement to associate with the add operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]=x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    AddElementName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the System.Configuration.ConfigurationElement to associate with the add operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
 
 
 
 """
 
- ClearElementName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name for the System.Configuration.ConfigurationElement to associate with the clear operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
+    ClearElementName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name for the System.Configuration.ConfigurationElement to associate with the clear operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
 
 
 
 """
 
- ElementName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name used to identify this collection of elements in the configuration file when overridden in a derived class.
+    ElementName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the name used to identify this collection of elements in the configuration file when overridden in a derived class.
 
 
 
 """
 
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of properties.
-
-
-
-"""
-
- RemoveElementName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the System.Configuration.ConfigurationElement to associate with the remove operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the collection of properties.
 
 
 
 """
 
- ThrowOnDuplicate=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    RemoveElementName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the System.Configuration.ConfigurationElement to associate with the remove operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
 
+
+
+"""
+
+    ThrowOnDuplicate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
 
 class ConnectionManagementElement(ConfigurationElement):
- """
+    """
  Represents the maximum number of connections to a remote computer. This class cannot be inherited.
 
  
@@ -1494,16 +1649,18 @@ class ConnectionManagementElement(ConfigurationElement):
 
  ConnectionManagementElement(address: str,maxConnection: int)
  """
- @staticmethod
- def __new__(self,address=None,maxConnection=None):
-  """
+
+    @staticmethod
+    def __new__(self, address=None, maxConnection=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,address: str,maxConnection: int)
   """
-  pass
- Address=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the address for remote computers.
+        pass
+
+    Address = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the address for remote computers.
 
 
 
@@ -1515,24 +1672,32 @@ Set: Address(self: ConnectionManagementElement)=value
 
 """
 
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- MaxConnection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the maximum number of connections that can be made to a remote computer.
+    MaxConnection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the maximum number of connections that can be made to a remote computer.
 
 
 
@@ -1544,20 +1709,24 @@ Set: MaxConnection(self: ConnectionManagementElement)=value
 
 """
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
 
-
-class ConnectionManagementElementCollection(ConfigurationElementCollection,ICollection,IEnumerable):
- """
+class ConnectionManagementElementCollection(
+    ConfigurationElementCollection, ICollection, IEnumerable
+):
+    """
  Represents a container for connection management configuration elements. This class cannot be inherited.
 
  
 
  ConnectionManagementElementCollection()
  """
- def Add(self,element):
-  """
+
+    def Add(self, element):
+        """
   Add(self: ConnectionManagementElementCollection,element: ConnectionManagementElement)
 
    Adds an element to the collection.
@@ -1566,9 +1735,10 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
    element: The System.Net.Configuration.ConnectionManagementElement to add to the collection.
   """
-  pass
- def BaseAdd(self,*args):
-  """
+        pass
+
+    def BaseAdd(self, *args):
+        """
   BaseAdd(self: ConfigurationElementCollection,index: int,element: ConfigurationElement)
 
    Adds a configuration element to the configuration element collection.
@@ -1601,16 +1771,18 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
    element: The System.Configuration.ConfigurationElement to add.
   """
-  pass
- def BaseClear(self,*args):
-  """
+        pass
+
+    def BaseClear(self, *args):
+        """
   BaseClear(self: ConfigurationElementCollection)
 
    Removes all configuration element objects from the collection.
   """
-  pass
- def BaseGet(self,*args):
-  """
+        pass
+
+    def BaseGet(self, *args):
+        """
   BaseGet(self: ConfigurationElementCollection,index: int) -> ConfigurationElement
 
   
@@ -1635,9 +1807,10 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
    Returns: The System.Configuration.ConfigurationElement with the specified key; otherwise,null.
   """
-  pass
- def BaseGetAllKeys(self,*args):
-  """
+        pass
+
+    def BaseGetAllKeys(self, *args):
+        """
   BaseGetAllKeys(self: ConfigurationElementCollection) -> Array[object]
 
   
@@ -1652,9 +1825,10 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
     contained in the System.Configuration.ConfigurationElementCollection.
   """
-  pass
- def BaseGetKey(self,*args):
-  """
+        pass
+
+    def BaseGetKey(self, *args):
+        """
   BaseGetKey(self: ConfigurationElementCollection,index: int) -> object
 
   
@@ -1667,9 +1841,10 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
    Returns: The key for the specified System.Configuration.ConfigurationElement.
   """
-  pass
- def BaseIndexOf(self,*args):
-  """
+        pass
+
+    def BaseIndexOf(self, *args):
+        """
   BaseIndexOf(self: ConfigurationElementCollection,element: ConfigurationElement) -> int
 
   
@@ -1682,9 +1857,10 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
    Returns: The index of the specified System.Configuration.ConfigurationElement; otherwise,-1.
   """
-  pass
- def BaseIsRemoved(self,*args):
-  """
+        pass
+
+    def BaseIsRemoved(self, *args):
+        """
   BaseIsRemoved(self: ConfigurationElementCollection,key: object) -> bool
 
   
@@ -1703,9 +1879,10 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
     otherwise,false. The default is false.
   """
-  pass
- def BaseRemove(self,*args):
-  """
+        pass
+
+    def BaseRemove(self, *args):
+        """
   BaseRemove(self: ConfigurationElementCollection,key: object)
 
    Removes a System.Configuration.ConfigurationElement from the collection.
@@ -1714,9 +1891,10 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
    key: The key of the System.Configuration.ConfigurationElement to remove.
   """
-  pass
- def BaseRemoveAt(self,*args):
-  """
+        pass
+
+    def BaseRemoveAt(self, *args):
+        """
   BaseRemoveAt(self: ConfigurationElementCollection,index: int)
 
    Removes the System.Configuration.ConfigurationElement at the specified index location.
@@ -1725,16 +1903,18 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
    index: The index location of the System.Configuration.ConfigurationElement to remove.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: ConnectionManagementElementCollection)
 
    Removes all elements from the collection.
   """
-  pass
- def CreateNewElement(self,*args):
-  """
+        pass
+
+    def CreateNewElement(self, *args):
+        """
   CreateNewElement(self: ConnectionManagementElementCollection) -> ConfigurationElement
 
   CreateNewElement(self: ConfigurationElementCollection,elementName: str) -> ConfigurationElement
@@ -1749,9 +1929,10 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
    Returns: A new System.Configuration.ConfigurationElement.
   """
-  pass
- def DeserializeElement(self,*args):
-  """
+        pass
+
+    def DeserializeElement(self, *args):
+        """
   DeserializeElement(self: ConfigurationElement,reader: XmlReader,serializeCollectionKey: bool)
 
    Reads XML from the configuration file.
@@ -1762,12 +1943,14 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
    serializeCollectionKey: true to serialize only the collection key properties; otherwise,false.
   """
-  pass
- def GetElementKey(self,*args):
-  """ GetElementKey(self: ConnectionManagementElementCollection,element: ConfigurationElement) -> object """
-  pass
- def GetTransformedAssemblyString(self,*args):
-  """
+        pass
+
+    def GetElementKey(self, *args):
+        """ GetElementKey(self: ConnectionManagementElementCollection,element: ConfigurationElement) -> object """
+        pass
+
+    def GetTransformedAssemblyString(self, *args):
+        """
   GetTransformedAssemblyString(self: ConfigurationElement,assemblyName: str) -> str
 
   
@@ -1786,9 +1969,10 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
     available.
   """
-  pass
- def GetTransformedTypeString(self,*args):
-  """
+        pass
+
+    def GetTransformedTypeString(self, *args):
+        """
   GetTransformedTypeString(self: ConfigurationElement,typeName: str) -> str
 
   
@@ -1807,16 +1991,18 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
     available.
   """
-  pass
- def get_Item(self,*__args):
-  """
+        pass
+
+    def get_Item(self, *__args):
+        """
   get_Item(self: ConfigurationElement,propertyName: str) -> object
 
   get_Item(self: ConfigurationElement,prop: ConfigurationProperty) -> object
   """
-  pass
- def IndexOf(self,element):
-  """
+        pass
+
+    def IndexOf(self, element):
+        """
   IndexOf(self: ConnectionManagementElementCollection,element: ConnectionManagementElement) -> int
 
   
@@ -1829,25 +2015,28 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
    Returns: The zero-based index of element.
   """
-  pass
- def Init(self,*args):
-  """
+        pass
+
+    def Init(self, *args):
+        """
   Init(self: ConfigurationElement)
 
    Sets the System.Configuration.ConfigurationElement object to its initial state.
   """
-  pass
- def InitializeDefault(self,*args):
-  """
+        pass
+
+    def InitializeDefault(self, *args):
+        """
   InitializeDefault(self: ConfigurationElement)
 
    Used to initialize a default set of values for the System.Configuration.ConfigurationElement 
 
     object.
   """
-  pass
- def IsElementName(self,*args):
-  """
+        pass
+
+    def IsElementName(self, *args):
+        """
   IsElementName(self: ConfigurationElementCollection,elementName: str) -> bool
 
   
@@ -1864,9 +2053,10 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
    Returns: true if the element exists in the collection; otherwise,false. The default is false.
   """
-  pass
- def IsElementRemovable(self,*args):
-  """
+        pass
+
+    def IsElementRemovable(self, *args):
+        """
   IsElementRemovable(self: ConfigurationElementCollection,element: ConfigurationElement) -> bool
 
   
@@ -1885,9 +2075,10 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
     System.Configuration.ConfigurationElementCollection; otherwise,false. The default is true.
   """
-  pass
- def IsModified(self,*args):
-  """
+        pass
+
+    def IsModified(self, *args):
+        """
   IsModified(self: ConfigurationElementCollection) -> bool
 
   
@@ -1900,9 +2091,10 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
    Returns: true if any contained element has been modified; otherwise,false
   """
-  pass
- def ListErrors(self,*args):
-  """
+        pass
+
+    def ListErrors(self, *args):
+        """
   ListErrors(self: ConfigurationElement,errorList: IList)
 
    Adds the invalid-property errors in this System.Configuration.ConfigurationElement object,and 
@@ -1915,9 +2107,10 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
    errorList: An object that implements the System.Collections.IList interface.
   """
-  pass
- def OnDeserializeUnrecognizedAttribute(self,*args):
-  """
+        pass
+
+    def OnDeserializeUnrecognizedAttribute(self, *args):
+        """
   OnDeserializeUnrecognizedAttribute(self: ConfigurationElement,name: str,value: str) -> bool
 
   
@@ -1932,9 +2125,10 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
    Returns: true when an unknown attribute is encountered while deserializing; otherwise,false.
   """
-  pass
- def OnDeserializeUnrecognizedElement(self,*args):
-  """
+        pass
+
+    def OnDeserializeUnrecognizedElement(self, *args):
+        """
   OnDeserializeUnrecognizedElement(self: ConfigurationElementCollection,elementName: str,reader: XmlReader) -> bool
 
   
@@ -1951,9 +2145,10 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
     false.
   """
-  pass
- def OnRequiredPropertyNotFound(self,*args):
-  """
+        pass
+
+    def OnRequiredPropertyNotFound(self, *args):
+        """
   OnRequiredPropertyNotFound(self: ConfigurationElement,name: str) -> object
 
   
@@ -1966,16 +2161,18 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
    Returns: None.
   """
-  pass
- def PostDeserialize(self,*args):
-  """
+        pass
+
+    def PostDeserialize(self, *args):
+        """
   PostDeserialize(self: ConfigurationElement)
 
    Called after deserialization.
   """
-  pass
- def PreSerialize(self,*args):
-  """
+        pass
+
+    def PreSerialize(self, *args):
+        """
   PreSerialize(self: ConfigurationElement,writer: XmlWriter)
 
    Called before serialization.
@@ -1986,9 +2183,10 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
     System.Configuration.ConfigurationElement.
   """
-  pass
- def Remove(self,*__args):
-  """
+        pass
+
+    def Remove(self, *__args):
+        """
   Remove(self: ConnectionManagementElementCollection,name: str)
 
    Removes the element with the specified key.
@@ -2005,9 +2203,10 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
    element: The System.Net.Configuration.ConnectionManagementElement to remove.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: ConnectionManagementElementCollection,index: int)
 
    Removes the element at the specified index.
@@ -2016,9 +2215,10 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
    index: The zero-based index of the element to remove.
   """
-  pass
- def Reset(self,*args):
-  """
+        pass
+
+    def Reset(self, *args):
+        """
   Reset(self: ConfigurationElementCollection,parentElement: ConfigurationElement)
 
    Resets the System.Configuration.ConfigurationElementCollection to its unmodified state when 
@@ -2033,18 +2233,20 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
     any; otherwise,null.
   """
-  pass
- def ResetModified(self,*args):
-  """
+        pass
+
+    def ResetModified(self, *args):
+        """
   ResetModified(self: ConfigurationElementCollection)
 
    Resets the value of the System.Configuration.ConfigurationElementCollection.IsModified property 
 
     to false when overridden in a derived class.
   """
-  pass
- def SerializeElement(self,*args):
-  """
+        pass
+
+    def SerializeElement(self, *args):
+        """
   SerializeElement(self: ConfigurationElementCollection,writer: XmlWriter,serializeCollectionKey: bool) -> bool
 
   
@@ -2065,9 +2267,10 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
     file successfully.
   """
-  pass
- def SerializeToXmlElement(self,*args):
-  """
+        pass
+
+    def SerializeToXmlElement(self, *args):
+        """
   SerializeToXmlElement(self: ConfigurationElement,writer: XmlWriter,elementName: str) -> bool
 
   
@@ -2086,9 +2289,10 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
    Returns: true if writing was successful; otherwise,false.
   """
-  pass
- def SetPropertyValue(self,*args):
-  """
+        pass
+
+    def SetPropertyValue(self, *args):
+        """
   SetPropertyValue(self: ConfigurationElement,prop: ConfigurationProperty,value: object,ignoreLocks: bool)
 
    Sets a property to the specified value.
@@ -2101,21 +2305,24 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
    ignoreLocks: true if the locks on the property should be ignored; otherwise,false.
   """
-  pass
- def SetReadOnly(self,*args):
-  """
+        pass
+
+    def SetReadOnly(self, *args):
+        """
   SetReadOnly(self: ConfigurationElementCollection)
 
    Sets the System.Configuration.ConfigurationElementCollection.IsReadOnly property for the 
 
     System.Configuration.ConfigurationElementCollection object and for all sub-elements.
   """
-  pass
- def set_Item(self,*__args):
-  """ set_Item(self: ConfigurationElement,propertyName: str,value: object)set_Item(self: ConfigurationElement,prop: ConfigurationProperty,value: object) """
-  pass
- def Unmerge(self,*args):
-  """
+        pass
+
+    def set_Item(self, *__args):
+        """ set_Item(self: ConfigurationElement,propertyName: str,value: object)set_Item(self: ConfigurationElement,prop: ConfigurationProperty,value: object) """
+        pass
+
+    def Unmerge(self, *args):
+        """
   Unmerge(self: ConfigurationElementCollection,sourceElement: ConfigurationElement,parentElement: ConfigurationElement,saveMode: ConfigurationSaveMode)
 
    Reverses the effect of merging configuration information from different levels of the 
@@ -2142,92 +2349,118 @@ class ConnectionManagementElementCollection(ConfigurationElementCollection,IColl
 
     values to include.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]=x.__setitem__(i,y) <==> x[i]= """
-  pass
- AddElementName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the System.Configuration.ConfigurationElement to associate with the add operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]=x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    AddElementName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the System.Configuration.ConfigurationElement to associate with the add operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
 
 
 
 """
 
- ClearElementName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name for the System.Configuration.ConfigurationElement to associate with the clear operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
+    ClearElementName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name for the System.Configuration.ConfigurationElement to associate with the clear operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
 
 
 
 """
 
- ElementName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name used to identify this collection of elements in the configuration file when overridden in a derived class.
+    ElementName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the name used to identify this collection of elements in the configuration file when overridden in a derived class.
 
 
 
 """
 
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of properties.
-
-
-
-"""
-
- RemoveElementName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the System.Configuration.ConfigurationElement to associate with the remove operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the collection of properties.
 
 
 
 """
 
- ThrowOnDuplicate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether an attempt to add a duplicate System.Configuration.ConfigurationElement to the System.Configuration.ConfigurationElementCollection will cause an exception to be thrown.
+    RemoveElementName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the System.Configuration.ConfigurationElement to associate with the remove operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
 
 
 
 """
 
+    ThrowOnDuplicate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether an attempt to add a duplicate System.Configuration.ConfigurationElement to the System.Configuration.ConfigurationElementCollection will cause an exception to be thrown.
+
+
+
+"""
 
 
 class ConnectionManagementSection(ConfigurationSection):
- """
+    """
  Represents the configuration section for connection management. This class cannot be inherited.
 
  
 
  ConnectionManagementSection()
  """
- ConnectionManagement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of connection management objects in the section.
+
+    ConnectionManagement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the collection of connection management objects in the section.
 
 
 
@@ -2237,36 +2470,46 @@ Get: ConnectionManagement(self: ConnectionManagementSection) -> ConnectionManage
 
 """
 
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
-
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
 
 class DefaultProxySection(ConfigurationSection):
- """
+    """
  Represents the configuration section for Web proxy server usage. This class cannot be inherited.
 
  
 
  DefaultProxySection()
  """
- BypassList=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of resources that are not obtained using the Web proxy server.
+
+    BypassList = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the collection of resources that are not obtained using the Web proxy server.
 
 
 
@@ -2276,15 +2519,17 @@ Get: BypassList(self: DefaultProxySection) -> BypassElementCollection
 
 """
 
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- Enabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets whether a Web proxy is used.
+    Enabled = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets whether a Web proxy is used.
 
 
 
@@ -2296,17 +2541,21 @@ Set: Enabled(self: DefaultProxySection)=value
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Module=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the type information for a custom Web proxy implementation.
+    Module = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the type information for a custom Web proxy implementation.
 
 
 
@@ -2316,10 +2565,12 @@ Get: Module(self: DefaultProxySection) -> ModuleElement
 
 """
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Proxy=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the URI that identifies the Web proxy server to use.
+    Proxy = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the URI that identifies the Web proxy server to use.
 
 
 
@@ -2329,8 +2580,10 @@ Get: Proxy(self: DefaultProxySection) -> ProxyElement
 
 """
 
- UseDefaultCredentials=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets whether default credentials are to be used to access a Web proxy server.
+    UseDefaultCredentials = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets whether default credentials are to be used to access a Web proxy server.
 
 
 
@@ -2343,33 +2596,41 @@ Set: UseDefaultCredentials(self: DefaultProxySection)=value
 """
 
 
-
 class FtpCachePolicyElement(ConfigurationElement):
- """
+    """
  Represents the default FTP cache policy for network resources. This class cannot be inherited.
 
  
 
  FtpCachePolicyElement()
  """
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- PolicyLevel=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets FTP caching behavior for the local machine.
+    PolicyLevel = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets FTP caching behavior for the local machine.
 
 
 
@@ -2381,36 +2642,46 @@ Set: PolicyLevel(self: FtpCachePolicyElement)=value
 
 """
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
-
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
 
 class HttpCachePolicyElement(ConfigurationElement):
- """
+    """
  Represents the default HTTP cache policy for network resources. This class cannot be inherited.
 
  
 
  HttpCachePolicyElement()
  """
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- MaximumAge=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the maximum age permitted for a resource returned from the cache.
+    MaximumAge = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the maximum age permitted for a resource returned from the cache.
 
 
 
@@ -2422,8 +2693,10 @@ Set: MaximumAge(self: HttpCachePolicyElement)=value
 
 """
 
- MaximumStale=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the maximum staleness value permitted for a resource returned from the cache.
+    MaximumStale = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the maximum staleness value permitted for a resource returned from the cache.
 
 
 
@@ -2435,8 +2708,10 @@ Set: MaximumStale(self: HttpCachePolicyElement)=value
 
 """
 
- MinimumFresh=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the minimum freshness permitted for a resource returned from the cache.
+    MinimumFresh = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the minimum freshness permitted for a resource returned from the cache.
 
 
 
@@ -2448,8 +2723,10 @@ Set: MinimumFresh(self: HttpCachePolicyElement)=value
 
 """
 
- PolicyLevel=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets HTTP caching behavior for the local machine.
+    PolicyLevel = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets HTTP caching behavior for the local machine.
 
 
 
@@ -2461,45 +2738,57 @@ Set: PolicyLevel(self: HttpCachePolicyElement)=value
 
 """
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
-
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
 
 class HttpListenerElement(ConfigurationElement):
- """
+    """
  Represents the HttpListener element in the configuration file. This class cannot be inherited.
 
  
 
  HttpListenerElement()
  """
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Timeouts=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Timeouts(self: HttpListenerElement) -> HttpListenerTimeoutsElement
+    Timeouts = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Timeouts(self: HttpListenerElement) -> HttpListenerTimeoutsElement
 
 
 
 """
 
- UnescapeRequestUrl=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates if System.Net.HttpListener uses the raw unescaped URI instead of the converted URI.
+    UnescapeRequestUrl = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates if System.Net.HttpListener uses the raw unescaped URI instead of the converted URI.
 
 
 
@@ -2510,97 +2799,125 @@ Get: UnescapeRequestUrl(self: HttpListenerElement) -> bool
 """
 
 
-
 class HttpListenerTimeoutsElement(ConfigurationElement):
- """ HttpListenerTimeoutsElement() """
- DrainEntityBody=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: DrainEntityBody(self: HttpListenerTimeoutsElement) -> TimeSpan
+    """ HttpListenerTimeoutsElement() """
+
+    DrainEntityBody = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: DrainEntityBody(self: HttpListenerTimeoutsElement) -> TimeSpan
 
 
 
 """
 
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EntityBody=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: EntityBody(self: HttpListenerTimeoutsElement) -> TimeSpan
+    EntityBody = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: EntityBody(self: HttpListenerTimeoutsElement) -> TimeSpan
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- HeaderWait=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: HeaderWait(self: HttpListenerTimeoutsElement) -> TimeSpan
-
-
-
-"""
-
- IdleConnection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IdleConnection(self: HttpListenerTimeoutsElement) -> TimeSpan
+    HeaderWait = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: HeaderWait(self: HttpListenerTimeoutsElement) -> TimeSpan
 
 
 
 """
 
- MinSendBytesPerSecond=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: MinSendBytesPerSecond(self: HttpListenerTimeoutsElement) -> Int64
+    IdleConnection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IdleConnection(self: HttpListenerTimeoutsElement) -> TimeSpan
 
 
 
 """
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
-
- RequestQueue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: RequestQueue(self: HttpListenerTimeoutsElement) -> TimeSpan
+    MinSendBytesPerSecond = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: MinSendBytesPerSecond(self: HttpListenerTimeoutsElement) -> Int64
 
 
 
 """
 
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+
+    RequestQueue = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: RequestQueue(self: HttpListenerTimeoutsElement) -> TimeSpan
+
+
+
+"""
 
 
 class HttpWebRequestElement(ConfigurationElement):
- """
+    """
  Represents the maximum length for response headers. This class cannot be inherited.
 
  
 
  HttpWebRequestElement()
  """
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- MaximumErrorResponseLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the maximum allowed length of an error response.
+    MaximumErrorResponseLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the maximum allowed length of an error response.
 
 
 
@@ -2612,8 +2929,10 @@ Set: MaximumErrorResponseLength(self: HttpWebRequestElement)=value
 
 """
 
- MaximumResponseHeadersLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the maximum allowed length of the response headers.
+    MaximumResponseHeadersLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the maximum allowed length of the response headers.
 
 
 
@@ -2625,8 +2944,10 @@ Set: MaximumResponseHeadersLength(self: HttpWebRequestElement)=value
 
 """
 
- MaximumUnauthorizedUploadLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the maximum length of an upload in response to an unauthorized error code.
+    MaximumUnauthorizedUploadLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the maximum length of an upload in response to an unauthorized error code.
 
 
 
@@ -2638,10 +2959,14 @@ Set: MaximumUnauthorizedUploadLength(self: HttpWebRequestElement)=value
 
 """
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- UseUnsafeHeaderParsing=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Setting this property ignores validation errors that occur during HTTP parsing.
+    UseUnsafeHeaderParsing = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Setting this property ignores validation errors that occur during HTTP parsing.
 
 
 
@@ -2654,24 +2979,26 @@ Set: UseUnsafeHeaderParsing(self: HttpWebRequestElement)=value
 """
 
 
-
 class Ipv6Element(ConfigurationElement):
- """
+    """
  Determines whether Internet Protocol version 6 is enabled on the local computer. This class cannot be inherited.
 
  
 
  Ipv6Element()
  """
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- Enabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that indicates whether Internet Protocol version 6 is enabled on the local computer.
+    Enabled = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a Boolean value that indicates whether Internet Protocol version 6 is enabled on the local computer.
 
 
 
@@ -2683,29 +3010,35 @@ Set: Enabled(self: Ipv6Element)=value
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
-
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
 
 class MailSettingsSectionGroup(ConfigurationSectionGroup):
- """
+    """
  Initializes a new instance of the System.Net.Configuration.MailSettingsSectionGroup class.
 
  
 
  MailSettingsSectionGroup()
  """
- Smtp=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the SMTP settings for the local computer.
+
+    Smtp = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the SMTP settings for the local computer.
 
 
 
@@ -2716,35 +3049,43 @@ Get: Smtp(self: MailSettingsSectionGroup) -> SmtpSection
 """
 
 
-
 class ModuleElement(ConfigurationElement):
- """
+    """
  Represents the type information for a custom System.Net.IWebProxy module. This class cannot be inherited.
 
  
 
  ModuleElement()
  """
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Type=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the type and assembly information for the current instance.
+    Type = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the type and assembly information for the current instance.
 
 
 
@@ -2757,18 +3098,18 @@ Set: Type(self: ModuleElement)=value
 """
 
 
-
 class NetSectionGroup(ConfigurationSectionGroup):
- """
+    """
  Gets the section group information for the networking namespaces. This class cannot be inherited.
 
  
 
  NetSectionGroup()
  """
- @staticmethod
- def GetSectionGroup(config):
-  """
+
+    @staticmethod
+    def GetSectionGroup(config):
+        """
   GetSectionGroup(config: Configuration) -> NetSectionGroup
 
   
@@ -2781,9 +3122,12 @@ class NetSectionGroup(ConfigurationSectionGroup):
 
    Returns: A System.Net.Configuration.NetSectionGroup that represents the System.Net settings in config.
   """
-  pass
- AuthenticationModules=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the configuration section containing the authentication modules registered for the local computer.
+        pass
+
+    AuthenticationModules = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the configuration section containing the authentication modules registered for the local computer.
 
 
 
@@ -2793,8 +3137,10 @@ Get: AuthenticationModules(self: NetSectionGroup) -> AuthenticationModulesSectio
 
 """
 
- ConnectionManagement=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the configuration section containing the connection management settings for the local computer.
+    ConnectionManagement = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the configuration section containing the connection management settings for the local computer.
 
 
 
@@ -2804,8 +3150,10 @@ Get: ConnectionManagement(self: NetSectionGroup) -> ConnectionManagementSection
 
 """
 
- DefaultProxy=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the configuration section containing the default Web proxy server settings for the local computer.
+    DefaultProxy = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the configuration section containing the default Web proxy server settings for the local computer.
 
 
 
@@ -2815,8 +3163,10 @@ Get: DefaultProxy(self: NetSectionGroup) -> DefaultProxySection
 
 """
 
- MailSettings=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the configuration section containing the SMTP client e-mail settings for the local computer.
+    MailSettings = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the configuration section containing the SMTP client e-mail settings for the local computer.
 
 
 
@@ -2826,8 +3176,10 @@ Get: MailSettings(self: NetSectionGroup) -> MailSettingsSectionGroup
 
 """
 
- RequestCaching=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the configuration section containing the cache configuration settings for the local computer.
+    RequestCaching = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the configuration section containing the cache configuration settings for the local computer.
 
 
 
@@ -2837,8 +3189,8 @@ Get: RequestCaching(self: NetSectionGroup) -> RequestCachingSection
 
 """
 
- Settings=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the configuration section containing the network settings for the local computer.
+    Settings = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the configuration section containing the network settings for the local computer.
 
 
 
@@ -2848,8 +3200,10 @@ Get: Settings(self: NetSectionGroup) -> SettingsSection
 
 """
 
- WebRequestModules=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the configuration section containing the modules registered for use with the System.Net.WebRequest class.
+    WebRequestModules = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the configuration section containing the modules registered for use with the System.Net.WebRequest class.
 
 
 
@@ -2860,24 +3214,26 @@ Get: WebRequestModules(self: NetSectionGroup) -> WebRequestModulesSection
 """
 
 
-
 class PerformanceCountersElement(ConfigurationElement):
- """
+    """
  Represents the performance counter element in the System.Net configuration file that determines whether networking performance counters are enabled. This class cannot be inherited.
 
  
 
  PerformanceCountersElement()
  """
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- Enabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets whether performance counters are enabled.
+    Enabled = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets whether performance counters are enabled.
 
 
 
@@ -2889,29 +3245,37 @@ Set: Enabled(self: PerformanceCountersElement)=value
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
-
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
 
 class ProxyElement(ConfigurationElement):
- """
+    """
  Identifies the configuration settings for Web proxy server. This class cannot be inherited.
 
  
 
  ProxyElement()
  """
- AutoDetect=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets and sets an System.Net.Configuration.ProxyElement.AutoDetectValues value that controls whether the Web proxy is automatically detected.
+
+    AutoDetect = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets and sets an System.Net.Configuration.ProxyElement.AutoDetectValues value that controls whether the Web proxy is automatically detected.
 
 
 
@@ -2923,8 +3287,10 @@ Set: AutoDetect(self: ProxyElement)=value
 
 """
 
- BypassOnLocal=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets and sets a value that indicates whether local resources are retrieved by using a Web proxy server.
+    BypassOnLocal = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets and sets a value that indicates whether local resources are retrieved by using a Web proxy server.
 
 
 
@@ -2936,26 +3302,36 @@ Set: BypassOnLocal(self: ProxyElement)=value
 
 """
 
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- ProxyAddress=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets and sets the URI that identifies the Web proxy server to use.
+    ProxyAddress = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets and sets the URI that identifies the Web proxy server to use.
 
 
 
@@ -2967,8 +3343,10 @@ Set: ProxyAddress(self: ProxyElement)=value
 
 """
 
- ScriptLocation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets and sets an System.Uri value that specifies the location of the automatic proxy detection script.
+    ScriptLocation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets and sets an System.Uri value that specifies the location of the automatic proxy detection script.
 
 
 
@@ -2980,8 +3358,10 @@ Set: ScriptLocation(self: ProxyElement)=value
 
 """
 
- UseSystemDefault=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets and sets a System.Boolean value that controls whether the Internet Explorer Web proxy settings are used.
+    UseSystemDefault = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets and sets a System.Boolean value that controls whether the Internet Explorer Web proxy settings are used.
 
 
 
@@ -2993,22 +3373,24 @@ Set: UseSystemDefault(self: ProxyElement)=value
 
 """
 
-
- AutoDetectValues=None
- BypassOnLocalValues=None
- UseSystemDefaultValues=None
+    AutoDetectValues = None
+    BypassOnLocalValues = None
+    UseSystemDefaultValues = None
 
 
 class RequestCachingSection(ConfigurationSection):
- """
+    """
  Represents the configuration section for cache behavior. This class cannot be inherited.
 
  
 
  RequestCachingSection()
  """
- DefaultFtpCachePolicy=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the default FTP caching behavior for the local computer.
+
+    DefaultFtpCachePolicy = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the default FTP caching behavior for the local computer.
 
 
 
@@ -3018,8 +3400,10 @@ Get: DefaultFtpCachePolicy(self: RequestCachingSection) -> FtpCachePolicyElement
 
 """
 
- DefaultHttpCachePolicy=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the default caching behavior for the local computer.
+    DefaultHttpCachePolicy = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the default caching behavior for the local computer.
 
 
 
@@ -3029,8 +3413,10 @@ Get: DefaultHttpCachePolicy(self: RequestCachingSection) -> HttpCachePolicyEleme
 
 """
 
- DefaultPolicyLevel=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the default cache policy level.
+    DefaultPolicyLevel = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the default cache policy level.
 
 
 
@@ -3042,8 +3428,10 @@ Set: DefaultPolicyLevel(self: RequestCachingSection)=value
 
 """
 
- DisableAllCaching=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that enables caching on the local computer.
+    DisableAllCaching = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that enables caching on the local computer.
 
 
 
@@ -3055,24 +3443,32 @@ Set: DisableAllCaching(self: RequestCachingSection)=value
 
 """
 
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- IsPrivateCache=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that indicates whether the local computer cache is private.
+    IsPrivateCache = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that indicates whether the local computer cache is private.
 
 
 
@@ -3084,10 +3480,14 @@ Set: IsPrivateCache(self: RequestCachingSection)=value
 
 """
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- UnspecifiedMaximumAge=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value used as the maximum age for cached resources that do not have expiration information.
+    UnspecifiedMaximumAge = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value used as the maximum age for cached resources that do not have expiration information.
 
 
 
@@ -3100,17 +3500,19 @@ Set: UnspecifiedMaximumAge(self: RequestCachingSection)=value
 """
 
 
-
 class ServicePointManagerElement(ConfigurationElement):
- """
+    """
  Represents the default settings used to create connections to a remote computer. This class cannot be inherited.
 
  
 
  ServicePointManagerElement()
  """
- CheckCertificateName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that controls checking host name information in an X509 certificate.
+
+    CheckCertificateName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that controls checking host name information in an X509 certificate.
 
 
 
@@ -3122,8 +3524,10 @@ Set: CheckCertificateName(self: ServicePointManagerElement)=value
 
 """
 
- CheckCertificateRevocationList=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that indicates whether the certificate is checked against the certificate authority revocation list.
+    CheckCertificateRevocationList = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that indicates whether the certificate is checked against the certificate authority revocation list.
 
 
 
@@ -3135,8 +3539,10 @@ Set: CheckCertificateRevocationList(self: ServicePointManagerElement)=value
 
 """
 
- DnsRefreshTimeout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the amount of time after which address information is refreshed.
+    DnsRefreshTimeout = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the amount of time after which address information is refreshed.
 
 
 
@@ -3148,15 +3554,19 @@ Set: DnsRefreshTimeout(self: ServicePointManagerElement)=value
 
 """
 
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EnableDnsRoundRobin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that controls using different IP addresses on connections to the same server.
+    EnableDnsRoundRobin = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that controls using different IP addresses on connections to the same server.
 
 
 
@@ -3168,8 +3578,10 @@ Set: EnableDnsRoundRobin(self: ServicePointManagerElement)=value
 
 """
 
- EncryptionPolicy=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Net.Security.EncryptionPolicy to use.
+    EncryptionPolicy = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Net.Security.EncryptionPolicy to use.
 
 
 
@@ -3181,15 +3593,19 @@ Set: EncryptionPolicy(self: ServicePointManagerElement)=value
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- Expect100Continue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that determines whether 100-Continue behavior is used.
+    Expect100Continue = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that determines whether 100-Continue behavior is used.
 
 
 
@@ -3201,12 +3617,18 @@ Set: Expect100Continue(self: ServicePointManagerElement)=value
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- UseNagleAlgorithm=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that determines whether the Nagle algorithm is used.
+    UseNagleAlgorithm = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that determines whether the Nagle algorithm is used.
 
 
 
@@ -3219,33 +3641,41 @@ Set: UseNagleAlgorithm(self: ServicePointManagerElement)=value
 """
 
 
-
 class SettingsSection(ConfigurationSection):
- """
+    """
  Represents the configuration section for sockets,IPv6,response headers,and service points. This class cannot be inherited.
 
  
 
  SettingsSection()
  """
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- HttpListener=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the configuration element that controls the settings used by an System.Net.HttpListener object.
+    HttpListener = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the configuration element that controls the settings used by an System.Net.HttpListener object.
 
 
 
@@ -3255,8 +3685,10 @@ Get: HttpListener(self: SettingsSection) -> HttpListenerElement
 
 """
 
- HttpWebRequest=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the configuration element that controls the maximum response header length.
+    HttpWebRequest = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the configuration element that controls the maximum response header length.
 
 
 
@@ -3266,8 +3698,8 @@ Get: HttpWebRequest(self: SettingsSection) -> HttpWebRequestElement
 
 """
 
- Ipv6=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the configuration element that enables Internet Protocol version 6 (IPv6).
+    Ipv6 = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the configuration element that enables Internet Protocol version 6 (IPv6).
 
 
 
@@ -3277,8 +3709,10 @@ Get: Ipv6(self: SettingsSection) -> Ipv6Element
 
 """
 
- PerformanceCounters=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the configuration element that controls whether performance counters are enabled.
+    PerformanceCounters = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the configuration element that controls whether performance counters are enabled.
 
 
 
@@ -3288,10 +3722,14 @@ Get: PerformanceCounters(self: SettingsSection) -> PerformanceCountersElement
 
 """
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- ServicePointManager=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the configuration element that controls settings for connections to remote host computers.
+    ServicePointManager = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the configuration element that controls settings for connections to remote host computers.
 
 
 
@@ -3301,8 +3739,8 @@ Get: ServicePointManager(self: SettingsSection) -> ServicePointManagerElement
 
 """
 
- Socket=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the configuration element that controls settings for sockets.
+    Socket = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the configuration element that controls settings for sockets.
 
 
 
@@ -3312,8 +3750,10 @@ Get: Socket(self: SettingsSection) -> SocketElement
 
 """
 
- WebProxyScript=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the configuration element that controls the execution timeout and download timeout of Web proxy scripts.
+    WebProxyScript = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the configuration element that controls the execution timeout and download timeout of Web proxy scripts.
 
 
 
@@ -3323,25 +3763,29 @@ Get: WebProxyScript(self: SettingsSection) -> WebProxyScriptElement
 
 """
 
- WebUtility=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: WebUtility(self: SettingsSection) -> WebUtilityElement
+    WebUtility = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: WebUtility(self: SettingsSection) -> WebUtilityElement
 
 
 
 """
 
 
-
 class SmtpNetworkElement(ConfigurationElement):
- """
+    """
  Represents the network element in the SMTP configuration file. This class cannot be inherited.
 
  
 
  SmtpNetworkElement()
  """
- ClientDomain=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the client domain name used in the initial SMTP protocol request to connect to an SMTP mail server.
+
+    ClientDomain = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the client domain name used in the initial SMTP protocol request to connect to an SMTP mail server.
 
 
 
@@ -3353,8 +3797,10 @@ Set: ClientDomain(self: SmtpNetworkElement)=value
 
 """
 
- DefaultCredentials=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determines whether or not default user credentials are used to access an SMTP server. The default value is false.
+    DefaultCredentials = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Determines whether or not default user credentials are used to access an SMTP server. The default value is false.
 
 
 
@@ -3366,15 +3812,17 @@ Set: DefaultCredentials(self: SmtpNetworkElement)=value
 
 """
 
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EnableSsl=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets whether SSL is used to access an SMTP mail server. The default value is false.
+    EnableSsl = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets whether SSL is used to access an SMTP mail server. The default value is false.
 
 
 
@@ -3386,17 +3834,21 @@ Set: EnableSsl(self: SmtpNetworkElement)=value
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Host=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the SMTP server.
+    Host = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the name of the SMTP server.
 
 
 
@@ -3408,8 +3860,8 @@ Set: Host(self: SmtpNetworkElement)=value
 
 """
 
- Password=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the user password to use to connect to an SMTP mail server.
+    Password = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the user password to use to connect to an SMTP mail server.
 
 
 
@@ -3421,8 +3873,8 @@ Set: Password(self: SmtpNetworkElement)=value
 
 """
 
- Port=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the port that SMTP clients use to connect to an SMTP mail server. The default value is 25.
+    Port = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the port that SMTP clients use to connect to an SMTP mail server. The default value is 25.
 
 
 
@@ -3434,10 +3886,14 @@ Set: Port(self: SmtpNetworkElement)=value
 
 """
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- TargetName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Service Provider Name (SPN) to use for authentication when using extended protection to connect to an SMTP mail server.
+    TargetName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the Service Provider Name (SPN) to use for authentication when using extended protection to connect to an SMTP mail server.
 
 
 
@@ -3449,8 +3905,8 @@ Set: TargetName(self: SmtpNetworkElement)=value
 
 """
 
- UserName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the user name to connect to an SMTP mail server.
+    UserName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the user name to connect to an SMTP mail server.
 
 
 
@@ -3463,17 +3919,19 @@ Set: UserName(self: SmtpNetworkElement)=value
 """
 
 
-
 class SmtpSection(ConfigurationSection):
- """
+    """
  Represents the SMTP section in the System.Net configuration file.
 
  
 
  SmtpSection()
  """
- DeliveryFormat=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: DeliveryFormat(self: SmtpSection) -> SmtpDeliveryFormat
+
+    DeliveryFormat = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: DeliveryFormat(self: SmtpSection) -> SmtpDeliveryFormat
 
 
 
@@ -3481,8 +3939,10 @@ Set: DeliveryFormat(self: SmtpSection)=value
 
 """
 
- DeliveryMethod=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the SMTP delivery method. The default delivery method is System.Net.Mail.SmtpDeliveryMethod.Network.
+    DeliveryMethod = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the SMTP delivery method. The default delivery method is System.Net.Mail.SmtpDeliveryMethod.Network.
 
 
 
@@ -3494,22 +3954,26 @@ Set: DeliveryMethod(self: SmtpSection)=value
 
 """
 
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- From=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the default value that indicates who the email message is from.
+    From = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the default value that indicates who the email message is from.
 
 
 
@@ -3521,10 +3985,12 @@ Set: From(self: SmtpSection)=value
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Network=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a System.Net.Configuration.SmtpNetworkElement.
+    Network = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a System.Net.Configuration.SmtpNetworkElement.
 
 
 
@@ -3534,10 +4000,14 @@ Get: Network(self: SmtpSection) -> SmtpNetworkElement
 
 """
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- SpecifiedPickupDirectory=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the pickup directory that will be used by the SMPT client.
+    SpecifiedPickupDirectory = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the pickup directory that will be used by the SMPT client.
 
 
 
@@ -3548,33 +4018,41 @@ Get: SpecifiedPickupDirectory(self: SmtpSection) -> SmtpSpecifiedPickupDirectory
 """
 
 
-
 class SmtpSpecifiedPickupDirectoryElement(ConfigurationElement):
- """
+    """
  Represents an SMTP pickup directory configuration element.
 
  
 
  SmtpSpecifiedPickupDirectoryElement()
  """
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- PickupDirectoryLocation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the folder where applications save mail messages to be processed by the SMTP server.
+    PickupDirectoryLocation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the folder where applications save mail messages to be processed by the SMTP server.
 
 
 
@@ -3586,20 +4064,24 @@ Set: PickupDirectoryLocation(self: SmtpSpecifiedPickupDirectoryElement)=value
 
 """
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
-
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
 
 class SocketElement(ConfigurationElement):
- """
+    """
  Represents information used to configure System.Net.Sockets.Socket objects. This class cannot be inherited.
 
  
 
  SocketElement()
  """
- AlwaysUseCompletionPortsForAccept=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that specifies whether completion ports are used when accepting connections.
+
+    AlwaysUseCompletionPortsForAccept = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that specifies whether completion ports are used when accepting connections.
 
 
 
@@ -3611,8 +4093,10 @@ Set: AlwaysUseCompletionPortsForAccept(self: SocketElement)=value
 
 """
 
- AlwaysUseCompletionPortsForConnect=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that specifies whether completion ports are used when making connections.
+    AlwaysUseCompletionPortsForConnect = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that specifies whether completion ports are used when making connections.
 
 
 
@@ -3624,24 +4108,32 @@ Set: AlwaysUseCompletionPortsForConnect(self: SocketElement)=value
 
 """
 
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- IPProtectionLevel=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that specifies the default System.Net.Sockets.IPProtectionLevel to use for a socket.
+    IPProtectionLevel = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that specifies the default System.Net.Sockets.IPProtectionLevel to use for a socket.
 
 
 
@@ -3653,83 +4145,109 @@ Set: IPProtectionLevel(self: SocketElement)=value
 
 """
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
 
+class UnicodeDecodingConformance(Enum, IComparable, IFormattable, IConvertible):
+    """ enum UnicodeDecodingConformance,values: Auto (0),Compat (2),Loose (3),Strict (1) """
 
-class UnicodeDecodingConformance(Enum,IComparable,IFormattable,IConvertible):
- """ enum UnicodeDecodingConformance,values: Auto (0),Compat (2),Loose (3),Strict (1) """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Auto=None
- Compat=None
- Loose=None
- Strict=None
- value__=None
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Auto = None
+    Compat = None
+    Loose = None
+    Strict = None
+    value__ = None
 
 
-class UnicodeEncodingConformance(Enum,IComparable,IFormattable,IConvertible):
- """ enum UnicodeEncodingConformance,values: Auto (0),Compat (2),Strict (1) """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Auto=None
- Compat=None
- Strict=None
- value__=None
+class UnicodeEncodingConformance(Enum, IComparable, IFormattable, IConvertible):
+    """ enum UnicodeEncodingConformance,values: Auto (0),Compat (2),Strict (1) """
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Auto = None
+    Compat = None
+    Strict = None
+    value__ = None
 
 
 class WebProxyScriptElement(ConfigurationElement):
- """
+    """
  Represents information used to configure Web proxy scripts. This class cannot be inherited.
 
  
 
  WebProxyScriptElement()
  """
- DownloadTimeout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Web proxy script download timeout using the format hours:minutes:seconds.
+
+    DownloadTimeout = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the Web proxy script download timeout using the format hours:minutes:seconds.
 
 
 
@@ -3741,28 +4259,35 @@ Set: DownloadTimeout(self: WebProxyScriptElement)=value
 
 """
 
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
-
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
 
 class WebRequestModuleElement(ConfigurationElement):
- """
+    """
  Represents a URI prefix and the associated class that handles creating Web requests for the prefix. This class cannot be inherited.
 
  
@@ -3773,34 +4298,42 @@ class WebRequestModuleElement(ConfigurationElement):
 
  WebRequestModuleElement(prefix: str,type: Type)
  """
- @staticmethod
- def __new__(self,prefix=None,type=None):
-  """
+
+    @staticmethod
+    def __new__(self, prefix=None, type=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,prefix: str,type: str)
 
   __new__(cls: type,prefix: str,type: Type)
   """
-  pass
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+        pass
+
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Prefix=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the URI prefix for the current Web request module.
+    Prefix = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the URI prefix for the current Web request module.
 
 
 
@@ -3812,10 +4345,12 @@ Set: Prefix(self: WebRequestModuleElement)=value
 
 """
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Type=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a class that creates Web requests.
+    Type = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a class that creates Web requests.
 
 
 
@@ -3828,17 +4363,19 @@ Set: Type(self: WebRequestModuleElement)=value
 """
 
 
-
-class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollection,IEnumerable):
- """
+class WebRequestModuleElementCollection(
+    ConfigurationElementCollection, ICollection, IEnumerable
+):
+    """
  Represents a container for Web request module configuration elements. This class cannot be inherited.
 
  
 
  WebRequestModuleElementCollection()
  """
- def Add(self,element):
-  """
+
+    def Add(self, element):
+        """
   Add(self: WebRequestModuleElementCollection,element: WebRequestModuleElement)
 
    Adds an element to the collection.
@@ -3847,9 +4384,10 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
    element: The System.Net.Configuration.WebRequestModuleElement to add to the collection.
   """
-  pass
- def BaseAdd(self,*args):
-  """
+        pass
+
+    def BaseAdd(self, *args):
+        """
   BaseAdd(self: ConfigurationElementCollection,index: int,element: ConfigurationElement)
 
    Adds a configuration element to the configuration element collection.
@@ -3882,16 +4420,18 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
    element: The System.Configuration.ConfigurationElement to add.
   """
-  pass
- def BaseClear(self,*args):
-  """
+        pass
+
+    def BaseClear(self, *args):
+        """
   BaseClear(self: ConfigurationElementCollection)
 
    Removes all configuration element objects from the collection.
   """
-  pass
- def BaseGet(self,*args):
-  """
+        pass
+
+    def BaseGet(self, *args):
+        """
   BaseGet(self: ConfigurationElementCollection,index: int) -> ConfigurationElement
 
   
@@ -3916,9 +4456,10 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
    Returns: The System.Configuration.ConfigurationElement with the specified key; otherwise,null.
   """
-  pass
- def BaseGetAllKeys(self,*args):
-  """
+        pass
+
+    def BaseGetAllKeys(self, *args):
+        """
   BaseGetAllKeys(self: ConfigurationElementCollection) -> Array[object]
 
   
@@ -3933,9 +4474,10 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
     contained in the System.Configuration.ConfigurationElementCollection.
   """
-  pass
- def BaseGetKey(self,*args):
-  """
+        pass
+
+    def BaseGetKey(self, *args):
+        """
   BaseGetKey(self: ConfigurationElementCollection,index: int) -> object
 
   
@@ -3948,9 +4490,10 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
    Returns: The key for the specified System.Configuration.ConfigurationElement.
   """
-  pass
- def BaseIndexOf(self,*args):
-  """
+        pass
+
+    def BaseIndexOf(self, *args):
+        """
   BaseIndexOf(self: ConfigurationElementCollection,element: ConfigurationElement) -> int
 
   
@@ -3963,9 +4506,10 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
    Returns: The index of the specified System.Configuration.ConfigurationElement; otherwise,-1.
   """
-  pass
- def BaseIsRemoved(self,*args):
-  """
+        pass
+
+    def BaseIsRemoved(self, *args):
+        """
   BaseIsRemoved(self: ConfigurationElementCollection,key: object) -> bool
 
   
@@ -3984,9 +4528,10 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
     otherwise,false. The default is false.
   """
-  pass
- def BaseRemove(self,*args):
-  """
+        pass
+
+    def BaseRemove(self, *args):
+        """
   BaseRemove(self: ConfigurationElementCollection,key: object)
 
    Removes a System.Configuration.ConfigurationElement from the collection.
@@ -3995,9 +4540,10 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
    key: The key of the System.Configuration.ConfigurationElement to remove.
   """
-  pass
- def BaseRemoveAt(self,*args):
-  """
+        pass
+
+    def BaseRemoveAt(self, *args):
+        """
   BaseRemoveAt(self: ConfigurationElementCollection,index: int)
 
    Removes the System.Configuration.ConfigurationElement at the specified index location.
@@ -4006,16 +4552,18 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
    index: The index location of the System.Configuration.ConfigurationElement to remove.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: WebRequestModuleElementCollection)
 
    Removes all elements from the collection.
   """
-  pass
- def CreateNewElement(self,*args):
-  """
+        pass
+
+    def CreateNewElement(self, *args):
+        """
   CreateNewElement(self: WebRequestModuleElementCollection) -> ConfigurationElement
 
   CreateNewElement(self: ConfigurationElementCollection,elementName: str) -> ConfigurationElement
@@ -4030,9 +4578,10 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
    Returns: A new System.Configuration.ConfigurationElement.
   """
-  pass
- def DeserializeElement(self,*args):
-  """
+        pass
+
+    def DeserializeElement(self, *args):
+        """
   DeserializeElement(self: ConfigurationElement,reader: XmlReader,serializeCollectionKey: bool)
 
    Reads XML from the configuration file.
@@ -4043,12 +4592,14 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
    serializeCollectionKey: true to serialize only the collection key properties; otherwise,false.
   """
-  pass
- def GetElementKey(self,*args):
-  """ GetElementKey(self: WebRequestModuleElementCollection,element: ConfigurationElement) -> object """
-  pass
- def GetTransformedAssemblyString(self,*args):
-  """
+        pass
+
+    def GetElementKey(self, *args):
+        """ GetElementKey(self: WebRequestModuleElementCollection,element: ConfigurationElement) -> object """
+        pass
+
+    def GetTransformedAssemblyString(self, *args):
+        """
   GetTransformedAssemblyString(self: ConfigurationElement,assemblyName: str) -> str
 
   
@@ -4067,9 +4618,10 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
     available.
   """
-  pass
- def GetTransformedTypeString(self,*args):
-  """
+        pass
+
+    def GetTransformedTypeString(self, *args):
+        """
   GetTransformedTypeString(self: ConfigurationElement,typeName: str) -> str
 
   
@@ -4088,16 +4640,18 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
     available.
   """
-  pass
- def get_Item(self,*__args):
-  """
+        pass
+
+    def get_Item(self, *__args):
+        """
   get_Item(self: ConfigurationElement,propertyName: str) -> object
 
   get_Item(self: ConfigurationElement,prop: ConfigurationProperty) -> object
   """
-  pass
- def IndexOf(self,element):
-  """
+        pass
+
+    def IndexOf(self, element):
+        """
   IndexOf(self: WebRequestModuleElementCollection,element: WebRequestModuleElement) -> int
 
   
@@ -4110,25 +4664,28 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
    Returns: The zero-based index of element.
   """
-  pass
- def Init(self,*args):
-  """
+        pass
+
+    def Init(self, *args):
+        """
   Init(self: ConfigurationElement)
 
    Sets the System.Configuration.ConfigurationElement object to its initial state.
   """
-  pass
- def InitializeDefault(self,*args):
-  """
+        pass
+
+    def InitializeDefault(self, *args):
+        """
   InitializeDefault(self: ConfigurationElement)
 
    Used to initialize a default set of values for the System.Configuration.ConfigurationElement 
 
     object.
   """
-  pass
- def IsElementName(self,*args):
-  """
+        pass
+
+    def IsElementName(self, *args):
+        """
   IsElementName(self: ConfigurationElementCollection,elementName: str) -> bool
 
   
@@ -4145,9 +4702,10 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
    Returns: true if the element exists in the collection; otherwise,false. The default is false.
   """
-  pass
- def IsElementRemovable(self,*args):
-  """
+        pass
+
+    def IsElementRemovable(self, *args):
+        """
   IsElementRemovable(self: ConfigurationElementCollection,element: ConfigurationElement) -> bool
 
   
@@ -4166,9 +4724,10 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
     System.Configuration.ConfigurationElementCollection; otherwise,false. The default is true.
   """
-  pass
- def IsModified(self,*args):
-  """
+        pass
+
+    def IsModified(self, *args):
+        """
   IsModified(self: ConfigurationElementCollection) -> bool
 
   
@@ -4181,9 +4740,10 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
    Returns: true if any contained element has been modified; otherwise,false
   """
-  pass
- def ListErrors(self,*args):
-  """
+        pass
+
+    def ListErrors(self, *args):
+        """
   ListErrors(self: ConfigurationElement,errorList: IList)
 
    Adds the invalid-property errors in this System.Configuration.ConfigurationElement object,and 
@@ -4196,9 +4756,10 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
    errorList: An object that implements the System.Collections.IList interface.
   """
-  pass
- def OnDeserializeUnrecognizedAttribute(self,*args):
-  """
+        pass
+
+    def OnDeserializeUnrecognizedAttribute(self, *args):
+        """
   OnDeserializeUnrecognizedAttribute(self: ConfigurationElement,name: str,value: str) -> bool
 
   
@@ -4213,9 +4774,10 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
    Returns: true when an unknown attribute is encountered while deserializing; otherwise,false.
   """
-  pass
- def OnDeserializeUnrecognizedElement(self,*args):
-  """
+        pass
+
+    def OnDeserializeUnrecognizedElement(self, *args):
+        """
   OnDeserializeUnrecognizedElement(self: ConfigurationElementCollection,elementName: str,reader: XmlReader) -> bool
 
   
@@ -4232,9 +4794,10 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
     false.
   """
-  pass
- def OnRequiredPropertyNotFound(self,*args):
-  """
+        pass
+
+    def OnRequiredPropertyNotFound(self, *args):
+        """
   OnRequiredPropertyNotFound(self: ConfigurationElement,name: str) -> object
 
   
@@ -4247,16 +4810,18 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
    Returns: None.
   """
-  pass
- def PostDeserialize(self,*args):
-  """
+        pass
+
+    def PostDeserialize(self, *args):
+        """
   PostDeserialize(self: ConfigurationElement)
 
    Called after deserialization.
   """
-  pass
- def PreSerialize(self,*args):
-  """
+        pass
+
+    def PreSerialize(self, *args):
+        """
   PreSerialize(self: ConfigurationElement,writer: XmlWriter)
 
    Called before serialization.
@@ -4267,9 +4832,10 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
     System.Configuration.ConfigurationElement.
   """
-  pass
- def Remove(self,*__args):
-  """
+        pass
+
+    def Remove(self, *__args):
+        """
   Remove(self: WebRequestModuleElementCollection,name: str)
 
    Removes the element with the specified key.
@@ -4286,9 +4852,10 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
    element: The System.Net.Configuration.WebRequestModuleElement to remove.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: WebRequestModuleElementCollection,index: int)
 
    Removes the element at the specified index.
@@ -4297,9 +4864,10 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
    index: The zero-based index of the element to remove.
   """
-  pass
- def Reset(self,*args):
-  """
+        pass
+
+    def Reset(self, *args):
+        """
   Reset(self: ConfigurationElementCollection,parentElement: ConfigurationElement)
 
    Resets the System.Configuration.ConfigurationElementCollection to its unmodified state when 
@@ -4314,18 +4882,20 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
     any; otherwise,null.
   """
-  pass
- def ResetModified(self,*args):
-  """
+        pass
+
+    def ResetModified(self, *args):
+        """
   ResetModified(self: ConfigurationElementCollection)
 
    Resets the value of the System.Configuration.ConfigurationElementCollection.IsModified property 
 
     to false when overridden in a derived class.
   """
-  pass
- def SerializeElement(self,*args):
-  """
+        pass
+
+    def SerializeElement(self, *args):
+        """
   SerializeElement(self: ConfigurationElementCollection,writer: XmlWriter,serializeCollectionKey: bool) -> bool
 
   
@@ -4346,9 +4916,10 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
     file successfully.
   """
-  pass
- def SerializeToXmlElement(self,*args):
-  """
+        pass
+
+    def SerializeToXmlElement(self, *args):
+        """
   SerializeToXmlElement(self: ConfigurationElement,writer: XmlWriter,elementName: str) -> bool
 
   
@@ -4367,9 +4938,10 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
    Returns: true if writing was successful; otherwise,false.
   """
-  pass
- def SetPropertyValue(self,*args):
-  """
+        pass
+
+    def SetPropertyValue(self, *args):
+        """
   SetPropertyValue(self: ConfigurationElement,prop: ConfigurationProperty,value: object,ignoreLocks: bool)
 
    Sets a property to the specified value.
@@ -4382,21 +4954,24 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
    ignoreLocks: true if the locks on the property should be ignored; otherwise,false.
   """
-  pass
- def SetReadOnly(self,*args):
-  """
+        pass
+
+    def SetReadOnly(self, *args):
+        """
   SetReadOnly(self: ConfigurationElementCollection)
 
    Sets the System.Configuration.ConfigurationElementCollection.IsReadOnly property for the 
 
     System.Configuration.ConfigurationElementCollection object and for all sub-elements.
   """
-  pass
- def set_Item(self,*__args):
-  """ set_Item(self: ConfigurationElement,propertyName: str,value: object)set_Item(self: ConfigurationElement,prop: ConfigurationProperty,value: object) """
-  pass
- def Unmerge(self,*args):
-  """
+        pass
+
+    def set_Item(self, *__args):
+        """ set_Item(self: ConfigurationElement,propertyName: str,value: object)set_Item(self: ConfigurationElement,prop: ConfigurationProperty,value: object) """
+        pass
+
+    def Unmerge(self, *args):
+        """
   Unmerge(self: ConfigurationElementCollection,sourceElement: ConfigurationElement,parentElement: ConfigurationElement,saveMode: ConfigurationSaveMode)
 
    Reverses the effect of merging configuration information from different levels of the 
@@ -4423,110 +4998,144 @@ class WebRequestModuleElementCollection(ConfigurationElementCollection,ICollecti
 
     values to include.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]=x.__setitem__(i,y) <==> x[i]= """
-  pass
- AddElementName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the System.Configuration.ConfigurationElement to associate with the add operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]=x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    AddElementName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the System.Configuration.ConfigurationElement to associate with the add operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
 
 
 
 """
 
- ClearElementName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name for the System.Configuration.ConfigurationElement to associate with the clear operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
+    ClearElementName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name for the System.Configuration.ConfigurationElement to associate with the clear operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
 
 
 
 """
 
- ElementName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name used to identify this collection of elements in the configuration file when overridden in a derived class.
+    ElementName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the name used to identify this collection of elements in the configuration file when overridden in a derived class.
 
 
 
 """
 
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of properties.
-
-
-
-"""
-
- RemoveElementName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the System.Configuration.ConfigurationElement to associate with the remove operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the collection of properties.
 
 
 
 """
 
- ThrowOnDuplicate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether an attempt to add a duplicate System.Configuration.ConfigurationElement to the System.Configuration.ConfigurationElementCollection will cause an exception to be thrown.
+    RemoveElementName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the System.Configuration.ConfigurationElement to associate with the remove operation in the System.Configuration.ConfigurationElementCollection when overridden in a derived class.
 
 
 
 """
 
+    ThrowOnDuplicate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether an attempt to add a duplicate System.Configuration.ConfigurationElement to the System.Configuration.ConfigurationElementCollection will cause an exception to be thrown.
+
+
+
+"""
 
 
 class WebRequestModulesSection(ConfigurationSection):
- """
+    """
  Represents the configuration section for Web request modules. This class cannot be inherited.
 
  
 
  WebRequestModulesSection()
  """
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- WebRequestModules=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of Web request modules in the section.
+    WebRequestModules = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the collection of Web request modules in the section.
 
 
 
@@ -4537,29 +5146,39 @@ Get: WebRequestModules(self: WebRequestModulesSection) -> WebRequestModuleElemen
 """
 
 
-
 class WebUtilityElement(ConfigurationElement):
- """ WebUtilityElement() """
- ElementProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
+    """ WebUtilityElement() """
+
+    ElementProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ConfigurationElementProperty object that represents the System.Configuration.ConfigurationElement object itself.
 
 
 
 """
 
- EvaluationContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
+    EvaluationContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Configuration.ContextInformation object for the System.Configuration.ConfigurationElement object.
 
 
 
 """
 
- HasContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    HasContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- Properties=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    Properties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- UnicodeDecodingConformance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: UnicodeDecodingConformance(self: WebUtilityElement) -> UnicodeDecodingConformance
+    UnicodeDecodingConformance = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: UnicodeDecodingConformance(self: WebUtilityElement) -> UnicodeDecodingConformance
 
 
 
@@ -4567,14 +5186,13 @@ Set: UnicodeDecodingConformance(self: WebUtilityElement)=value
 
 """
 
- UnicodeEncodingConformance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: UnicodeEncodingConformance(self: WebUtilityElement) -> UnicodeEncodingConformance
+    UnicodeEncodingConformance = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: UnicodeEncodingConformance(self: WebUtilityElement) -> UnicodeEncodingConformance
 
 
 
 Set: UnicodeEncodingConformance(self: WebUtilityElement)=value
 
 """
-
-
-

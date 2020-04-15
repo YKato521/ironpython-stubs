@@ -1,13 +1,14 @@
 class TimeSpanConverter(TypeConverter):
- """
+    """
  Provides a type converter to convert System.TimeSpan objects to and from other representations.
 
  
 
  TimeSpanConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: TimeSpanConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -26,9 +27,10 @@ class TimeSpanConverter(TypeConverter):
 
    Returns: true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: TimeSpanConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -47,9 +49,10 @@ class TimeSpanConverter(TypeConverter):
 
    Returns: true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: TimeSpanConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -66,9 +69,10 @@ class TimeSpanConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: TimeSpanConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -87,4 +91,4 @@ class TimeSpanConverter(TypeConverter):
 
    Returns: The converted object.
   """
-  pass
+        pass

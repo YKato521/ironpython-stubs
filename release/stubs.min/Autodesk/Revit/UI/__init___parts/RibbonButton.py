@@ -1,11 +1,13 @@
 class RibbonButton(RibbonItem):
- """ This class is the base class of PushButton and PulldownButton. """
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """ __new__(cls: type,item: RibbonButton,parentId: str) """
-  pass
- Image=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The image of the button.
+    """ This class is the base class of PushButton and PulldownButton. """
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """ __new__(cls: type,item: RibbonButton,parentId: str) """
+        pass
+
+    Image = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The image of the button.
 
 
 
@@ -17,8 +19,10 @@ Set: Image(self: RibbonButton)=value
 
 """
 
- IsEnabledByContext=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates if this button can be executed. True if the pushbutton is permitted to be executed based on the 
+    IsEnabledByContext = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates if this button can be executed. True if the pushbutton is permitted to be executed based on the 
 
 current Revit context (active document,active view and active tool). False if the pushbutton is disabled because 
 
@@ -32,8 +36,10 @@ Get: IsEnabledByContext(self: RibbonButton) -> bool
 
 """
 
- LargeImage=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The large image shown on the button.
+    LargeImage = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The large image shown on the button.
 
 
 
@@ -45,6 +51,4 @@ Set: LargeImage(self: RibbonButton)=value
 
 """
 
-
- m_ItemType=None
-
+    m_ItemType = None

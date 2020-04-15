@@ -8,11 +8,12 @@
 # no functions
 # classes
 
+
 class GeometryObjectSelector(object):
- # no doc
- @staticmethod
- def ByReferenceStableRepresentation(referenceString):
-  """
+    # no doc
+    @staticmethod
+    def ByReferenceStableRepresentation(referenceString):
+        """
   ByReferenceStableRepresentation(referenceString: str) -> object
 
   
@@ -21,9 +22,8 @@ class GeometryObjectSelector(object):
 
     geometry's reference.
   """
-  pass
- __all__=[
-  'ByReferenceStableRepresentation',
- ]
+        pass
 
-
+    __all__ = [
+        "ByReferenceStableRepresentation",
+    ]

@@ -1,11 +1,12 @@
-class RevSurface(Surface,IDisposable,ISerializable):
- """
+class RevSurface(Surface, IDisposable, ISerializable):
+    """
  Represents a surface of revolution.
 
     Revolutions can be incomplete (they can form arcs).
  """
- def ConstructConstObject(self,*args):
-  """
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -16,10 +17,11 @@ class RevSurface(Surface,IDisposable,ISerializable):
 
    subobject_index: The subobject index.
   """
-  pass
- @staticmethod
- def Create(*__args):
-  """
+        pass
+
+    @staticmethod
+    def Create(*__args):
+        """
   Create(revoluteLine: Line,axisOfRevolution: Line) -> RevSurface
 
   
@@ -142,10 +144,11 @@ class RevSurface(Surface,IDisposable,ISerializable):
 
    Returns: A new surface of revolution,or null if any of the inputs is invalid or on error.
   """
-  pass
- @staticmethod
- def CreateFromCone(cone):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromCone(cone):
+        """
   CreateFromCone(cone: Cone) -> RevSurface
 
   
@@ -158,10 +161,11 @@ class RevSurface(Surface,IDisposable,ISerializable):
 
    Returns: A new surface of revolution,or null if any of the inputs is invalid or on error.
   """
-  pass
- @staticmethod
- def CreateFromCylinder(cylinder):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromCylinder(cylinder):
+        """
   CreateFromCylinder(cylinder: Cylinder) -> RevSurface
 
   
@@ -174,10 +178,11 @@ class RevSurface(Surface,IDisposable,ISerializable):
 
    Returns: A new surface of revolution,or null if any of the inputs is invalid or on error.
   """
-  pass
- @staticmethod
- def CreateFromSphere(sphere):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromSphere(sphere):
+        """
   CreateFromSphere(sphere: Sphere) -> RevSurface
 
   
@@ -190,10 +195,11 @@ class RevSurface(Surface,IDisposable,ISerializable):
 
    Returns: A new surface of revolution,or null if any of the inputs is invalid or on error.
   """
-  pass
- @staticmethod
- def CreateFromTorus(torus):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromTorus(torus):
+        """
   CreateFromTorus(torus: Torus) -> RevSurface
 
   
@@ -206,9 +212,10 @@ class RevSurface(Surface,IDisposable,ISerializable):
 
    Returns: A new surface of revolution,or null if any of the inputs is invalid or on error.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: CommonObject,disposing: bool)
 
    For derived class implementers.
@@ -233,9 +240,10 @@ class RevSurface(Surface,IDisposable,ISerializable):
 
     finalizer.
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: CommonObject)
 
    For derived classes implementers.
@@ -244,36 +252,42 @@ class RevSurface(Surface,IDisposable,ISerializable):
 
     instance from being const.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: GeometryBase)
 
    Is called when a non-const operation occurs.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """ __new__(cls: type,info: SerializationInfo,context: StreamingContext) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """ __new__(cls: type,info: SerializationInfo,context: StreamingContext) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass

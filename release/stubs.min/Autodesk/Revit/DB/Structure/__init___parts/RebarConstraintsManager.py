@@ -1,23 +1,26 @@
-class RebarConstraintsManager(object,IDisposable):
- """
+class RebarConstraintsManager(object, IDisposable):
+    """
  A class used to obtain information about the constraints (RebarConstraints) acting
 
     on the shape handles (RebarConstrainedHandles) of a Rebar element,and to replace
 
     default constraints with user-preferred choices.
  """
- def ClearHandleConstraintPairHighlighting(self,aDoc):
-  """
+
+    def ClearHandleConstraintPairHighlighting(self, aDoc):
+        """
   ClearHandleConstraintPairHighlighting(self: RebarConstraintsManager,aDoc: Document)
 
    Clears all highlighting in all views.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: RebarConstraintsManager) """
-  pass
- def GetAllConstrainedHandles(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: RebarConstraintsManager) """
+        pass
+
+    def GetAllConstrainedHandles(self):
+        """
   GetAllConstrainedHandles(self: RebarConstraintsManager) -> IList[RebarConstrainedHandle]
 
   
@@ -26,9 +29,10 @@ class RebarConstraintsManager(object,IDisposable):
 
    Returns: A collection of RebarConstrainedHandles
   """
-  pass
- def GetConstraintCandidatesForHandle(self,handle):
-  """
+        pass
+
+    def GetConstraintCandidatesForHandle(self, handle):
+        """
   GetConstraintCandidatesForHandle(self: RebarConstraintsManager,handle: RebarConstrainedHandle) -> IList[RebarConstraint]
 
   
@@ -45,18 +49,20 @@ class RebarConstraintsManager(object,IDisposable):
 
    Returns: A collection of RebarConstraints
   """
-  pass
- def GetCurrentConstraintOnHandle(self,handle):
-  """
+        pass
+
+    def GetCurrentConstraintOnHandle(self, handle):
+        """
   GetCurrentConstraintOnHandle(self: RebarConstraintsManager,handle: RebarConstrainedHandle) -> RebarConstraint
 
   
 
    Retrieves the RebarConstraint that acts on the specified RebarConstraintHandle.
   """
-  pass
- def GetPreferredConstraintOnHandle(self,handle):
-  """
+        pass
+
+    def GetPreferredConstraintOnHandle(self, handle):
+        """
   GetPreferredConstraintOnHandle(self: RebarConstraintsManager,handle: RebarConstrainedHandle) -> RebarConstraint
 
   
@@ -73,18 +79,20 @@ class RebarConstraintsManager(object,IDisposable):
 
    Returns: The user prefered RebarConstraint applied to the RebarConstrainedHandle.
   """
-  pass
- def HasValidRebar(self):
-  """
+        pass
+
+    def HasValidRebar(self):
+        """
   HasValidRebar(self: RebarConstraintsManager) -> bool
 
   
 
    Checks whether the Manager's Rebar is still valid.
   """
-  pass
- def HighlightHandleConstraintPairInAllViews(self,aDoc,handle,constraint):
-  """
+        pass
+
+    def HighlightHandleConstraintPairInAllViews(self, aDoc, handle, constraint):
+        """
   HighlightHandleConstraintPairInAllViews(self: RebarConstraintsManager,aDoc: Document,handle: RebarConstrainedHandle,constraint: RebarConstraint)
 
    Highlights the specified RebarConstrainedHandle and RebarConstraint in all 
@@ -99,12 +107,14 @@ class RebarConstraintsManager(object,IDisposable):
 
    constraint: The RebarConstraint to be highlighted in all views.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: RebarConstraintsManager,disposing: bool) """
-  pass
- def RemovePreferredConstraintFromHandle(self,handle):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: RebarConstraintsManager,disposing: bool) """
+        pass
+
+    def RemovePreferredConstraintFromHandle(self, handle):
+        """
   RemovePreferredConstraintFromHandle(self: RebarConstraintsManager,handle: RebarConstrainedHandle)
 
    Clears the user-preferred RebarConstraint from the specified 
@@ -117,9 +127,10 @@ class RebarConstraintsManager(object,IDisposable):
 
    handle: The RebarConstrainedHandle for which the user RebarConstraint is to be deleted.
   """
-  pass
- def SetPreferredConstraintForHandle(self,handle,constraint):
-  """
+        pass
+
+    def SetPreferredConstraintForHandle(self, handle, constraint):
+        """
   SetPreferredConstraintForHandle(self: RebarConstraintsManager,handle: RebarConstrainedHandle,constraint: RebarConstraint)
 
    Sets the RebarConstraint as preferred constraint target for the specified 
@@ -134,21 +145,28 @@ class RebarConstraintsManager(object,IDisposable):
 
    constraint: The new RebarConstraint to be applied to the RebarConstrainedHandle.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -158,6 +176,4 @@ Get: IsValidObject(self: RebarConstraintsManager) -> bool
 
 """
 
-
- IsRebarConstrainedPlacementEnabled=False
-
+    IsRebarConstrainedPlacementEnabled = False

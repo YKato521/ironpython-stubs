@@ -1,7 +1,13 @@
-class ItemContainerGenerator(object,IRecyclingItemContainerGenerator,IItemContainerGenerator,IWeakEventListener):
- """ Generates the user interface (UI) on behalf of its host,such as an�System.Windows.Controls.ItemsControl. """
- def ContainerFromIndex(self,index):
-  """
+class ItemContainerGenerator(
+    object,
+    IRecyclingItemContainerGenerator,
+    IItemContainerGenerator,
+    IWeakEventListener,
+):
+    """ Generates the user interface (UI) on behalf of its host,such as an�System.Windows.Controls.ItemsControl. """
+
+    def ContainerFromIndex(self, index):
+        """
   ContainerFromIndex(self: ItemContainerGenerator,index: int) -> DependencyObject
 
   
@@ -20,9 +26,10 @@ class ItemContainerGenerator(object,IRecyclingItemContainerGenerator,IItemContai
 
     System.Windows.Controls.ItemCollection or returns null if the item is not realized.
   """
-  pass
- def ContainerFromItem(self,item):
-  """
+        pass
+
+    def ContainerFromItem(self, item):
+        """
   ContainerFromItem(self: ItemContainerGenerator,item: object) -> DependencyObject
 
   
@@ -37,12 +44,14 @@ class ItemContainerGenerator(object,IRecyclingItemContainerGenerator,IItemContai
 
     belong to the item collection,or if a System.Windows.UIElement has not been generated for it.
   """
-  pass
- def GenerateBatches(self):
-  """ GenerateBatches(self: ItemContainerGenerator) -> IDisposable """
-  pass
- def IndexFromContainer(self,container,returnLocalIndex=None):
-  """
+        pass
+
+    def GenerateBatches(self):
+        """ GenerateBatches(self: ItemContainerGenerator) -> IDisposable """
+        pass
+
+    def IndexFromContainer(self, container, returnLocalIndex=None):
+        """
   IndexFromContainer(self: ItemContainerGenerator,container: DependencyObject,returnLocalIndex: bool) -> int
 
   IndexFromContainer(self: ItemContainerGenerator,container: DependencyObject) -> int
@@ -63,9 +72,10 @@ class ItemContainerGenerator(object,IRecyclingItemContainerGenerator,IItemContai
 
     System.Windows.UIElement or -1 if container is not found.
   """
-  pass
- def ItemFromContainer(self,container):
-  """
+        pass
+
+    def ItemFromContainer(self, container):
+        """
   ItemFromContainer(self: ItemContainerGenerator,container: DependencyObject) -> object
 
   
@@ -82,22 +92,25 @@ class ItemContainerGenerator(object,IRecyclingItemContainerGenerator,IItemContai
 
     System.Windows.DependencyProperty.UnsetValue is returned.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Items=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Items(self: ItemContainerGenerator) -> ReadOnlyCollection[object]
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Items = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Items(self: ItemContainerGenerator) -> ReadOnlyCollection[object]
 
 
 
 """
 
- Status=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The generation status of the System.Windows.Controls.ItemContainerGenerator.
+    Status = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The generation status of the System.Windows.Controls.ItemContainerGenerator.
 
 
 
@@ -107,7 +120,5 @@ Get: Status(self: ItemContainerGenerator) -> GeneratorStatus
 
 """
 
-
- ItemsChanged=None
- StatusChanged=None
-
+    ItemsChanged = None
+    StatusChanged = None

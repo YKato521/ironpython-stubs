@@ -1,8 +1,9 @@
 class MessageBox(object):
- """ Displays a message box that can contain text,buttons,and symbols that inform and instruct the user. """
- @staticmethod
- def Show(*__args):
-  """
+    """ Displays a message box that can contain text,buttons,and symbols that inform and instruct the user. """
+
+    @staticmethod
+    def Show(*__args):
+        """
   Show(text: str) -> DialogResult
 
   
@@ -761,4 +762,4 @@ class MessageBox(object):
 
    Returns: One of the System.Windows.Forms.DialogResult values.
   """
-  pass
+        pass

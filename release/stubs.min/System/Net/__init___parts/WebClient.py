@@ -1,20 +1,22 @@
-class WebClient(Component,IComponent,IDisposable):
- """
+class WebClient(Component, IComponent, IDisposable):
+    """
  Provides common methods for sending data to and receiving data from a resource identified by a URI.
 
  
 
  WebClient()
  """
- def CancelAsync(self):
-  """
+
+    def CancelAsync(self):
+        """
   CancelAsync(self: WebClient)
 
    Cancels a pending asynchronous operation.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: Component,disposing: bool)
 
    Releases the unmanaged resources used by the System.ComponentModel.Component and optionally 
@@ -27,9 +29,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def DownloadData(self,address):
-  """
+        pass
+
+    def DownloadData(self, address):
+        """
   DownloadData(self: WebClient,address: Uri) -> Array[Byte]
 
   
@@ -54,9 +57,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    Returns: A System.Byte array containing the downloaded resource.
   """
-  pass
- def DownloadDataAsync(self,address,userToken=None):
-  """
+        pass
+
+    def DownloadDataAsync(self, address, userToken=None):
+        """
   DownloadDataAsync(self: WebClient,address: Uri,userToken: object)
 
    Downloads the specified resource as a System.Byte array. This method does not block the calling 
@@ -87,16 +91,18 @@ class WebClient(Component,IComponent,IDisposable):
 
    address: A System.Uri containing the URI to download.
   """
-  pass
- def DownloadDataTaskAsync(self,address):
-  """
+        pass
+
+    def DownloadDataTaskAsync(self, address):
+        """
   DownloadDataTaskAsync(self: WebClient,address: Uri) -> Task[Array[Byte]]
 
   DownloadDataTaskAsync(self: WebClient,address: str) -> Task[Array[Byte]]
   """
-  pass
- def DownloadFile(self,address,fileName):
-  """
+        pass
+
+    def DownloadFile(self, address, fileName):
+        """
   DownloadFile(self: WebClient,address: Uri,fileName: str)
 
    Downloads the resource with the specified URI to a local file.
@@ -117,9 +123,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    fileName: The name of the local file that is to receive the data.
   """
-  pass
- def DownloadFileAsync(self,address,fileName,userToken=None):
-  """
+        pass
+
+    def DownloadFileAsync(self, address, fileName, userToken=None):
+        """
   DownloadFileAsync(self: WebClient,address: Uri,fileName: str,userToken: object)
 
    Downloads,to a local file,the resource with the specified URI. This method does not block the 
@@ -154,16 +161,18 @@ class WebClient(Component,IComponent,IDisposable):
 
    fileName: The name of the file to be placed on the local computer.
   """
-  pass
- def DownloadFileTaskAsync(self,address,fileName):
-  """
+        pass
+
+    def DownloadFileTaskAsync(self, address, fileName):
+        """
   DownloadFileTaskAsync(self: WebClient,address: Uri,fileName: str) -> Task
 
   DownloadFileTaskAsync(self: WebClient,address: str,fileName: str) -> Task
   """
-  pass
- def DownloadString(self,address):
-  """
+        pass
+
+    def DownloadString(self, address):
+        """
   DownloadString(self: WebClient,address: Uri) -> str
 
   
@@ -196,9 +205,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    Returns: A System.String containing the requested resource.
   """
-  pass
- def DownloadStringAsync(self,address,userToken=None):
-  """
+        pass
+
+    def DownloadStringAsync(self, address, userToken=None):
+        """
   DownloadStringAsync(self: WebClient,address: Uri,userToken: object)
 
    Downloads the specified string to the specified resource. This method does not block the calling 
@@ -225,16 +235,18 @@ class WebClient(Component,IComponent,IDisposable):
 
    address: A System.Uri containing the URI to download.
   """
-  pass
- def DownloadStringTaskAsync(self,address):
-  """
+        pass
+
+    def DownloadStringTaskAsync(self, address):
+        """
   DownloadStringTaskAsync(self: WebClient,address: Uri) -> Task[str]
 
   DownloadStringTaskAsync(self: WebClient,address: str) -> Task[str]
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -253,9 +265,10 @@ class WebClient(Component,IComponent,IDisposable):
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def GetWebRequest(self,*args):
-  """
+        pass
+
+    def GetWebRequest(self, *args):
+        """
   GetWebRequest(self: WebClient,address: Uri) -> WebRequest
 
   
@@ -268,9 +281,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    Returns: A new System.Net.WebRequest object for the specified resource.
   """
-  pass
- def GetWebResponse(self,*args):
-  """
+        pass
+
+    def GetWebResponse(self, *args):
+        """
   GetWebResponse(self: WebClient,request: WebRequest,result: IAsyncResult) -> WebResponse
 
   
@@ -305,9 +319,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    Returns: A System.Net.WebResponse containing the response for the specified System.Net.WebRequest.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -338,9 +353,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def OnDownloadDataCompleted(self,*args):
-  """
+        pass
+
+    def OnDownloadDataCompleted(self, *args):
+        """
   OnDownloadDataCompleted(self: WebClient,e: DownloadDataCompletedEventArgs)
 
    Raises the System.Net.WebClient.DownloadDataCompleted event.
@@ -349,9 +365,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    e: A System.Net.DownloadDataCompletedEventArgs object that contains event data.
   """
-  pass
- def OnDownloadFileCompleted(self,*args):
-  """
+        pass
+
+    def OnDownloadFileCompleted(self, *args):
+        """
   OnDownloadFileCompleted(self: WebClient,e: AsyncCompletedEventArgs)
 
    Raises the System.Net.WebClient.DownloadFileCompleted event.
@@ -360,9 +377,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    e: An System.ComponentModel.AsyncCompletedEventArgs object containing event data.
   """
-  pass
- def OnDownloadProgressChanged(self,*args):
-  """
+        pass
+
+    def OnDownloadProgressChanged(self, *args):
+        """
   OnDownloadProgressChanged(self: WebClient,e: DownloadProgressChangedEventArgs)
 
    Raises the System.Net.WebClient.DownloadProgressChanged event.
@@ -371,9 +389,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    e: A System.Net.DownloadProgressChangedEventArgs object containing event data.
   """
-  pass
- def OnDownloadStringCompleted(self,*args):
-  """
+        pass
+
+    def OnDownloadStringCompleted(self, *args):
+        """
   OnDownloadStringCompleted(self: WebClient,e: DownloadStringCompletedEventArgs)
 
    Raises the System.Net.WebClient.DownloadStringCompleted event.
@@ -382,9 +401,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    e: A System.Net.DownloadStringCompletedEventArgs object containing event data.
   """
-  pass
- def OnOpenReadCompleted(self,*args):
-  """
+        pass
+
+    def OnOpenReadCompleted(self, *args):
+        """
   OnOpenReadCompleted(self: WebClient,e: OpenReadCompletedEventArgs)
 
    Raises the System.Net.WebClient.OpenReadCompleted event.
@@ -393,9 +413,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    e: A System.Net.OpenReadCompletedEventArgs  object containing event data.
   """
-  pass
- def OnOpenWriteCompleted(self,*args):
-  """
+        pass
+
+    def OnOpenWriteCompleted(self, *args):
+        """
   OnOpenWriteCompleted(self: WebClient,e: OpenWriteCompletedEventArgs)
 
    Raises the System.Net.WebClient.OpenWriteCompleted event.
@@ -404,9 +425,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    e: A System.Net.OpenWriteCompletedEventArgs object containing event data.
   """
-  pass
- def OnUploadDataCompleted(self,*args):
-  """
+        pass
+
+    def OnUploadDataCompleted(self, *args):
+        """
   OnUploadDataCompleted(self: WebClient,e: UploadDataCompletedEventArgs)
 
    Raises the System.Net.WebClient.UploadDataCompleted event.
@@ -415,9 +437,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    e: A System.Net.UploadDataCompletedEventArgs  object containing event data.
   """
-  pass
- def OnUploadFileCompleted(self,*args):
-  """
+        pass
+
+    def OnUploadFileCompleted(self, *args):
+        """
   OnUploadFileCompleted(self: WebClient,e: UploadFileCompletedEventArgs)
 
    Raises the System.Net.WebClient.UploadFileCompleted event.
@@ -426,9 +449,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    e: An System.Net.UploadFileCompletedEventArgs object containing event data.
   """
-  pass
- def OnUploadProgressChanged(self,*args):
-  """
+        pass
+
+    def OnUploadProgressChanged(self, *args):
+        """
   OnUploadProgressChanged(self: WebClient,e: UploadProgressChangedEventArgs)
 
    Raises the System.Net.WebClient.UploadProgressChanged event.
@@ -437,9 +461,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    e: An System.Net.UploadProgressChangedEventArgs object containing event data.
   """
-  pass
- def OnUploadStringCompleted(self,*args):
-  """
+        pass
+
+    def OnUploadStringCompleted(self, *args):
+        """
   OnUploadStringCompleted(self: WebClient,e: UploadStringCompletedEventArgs)
 
    Raises the System.Net.WebClient.UploadStringCompleted event.
@@ -448,9 +473,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    e: An System.Net.UploadStringCompletedEventArgs  object containing event data.
   """
-  pass
- def OnUploadValuesCompleted(self,*args):
-  """
+        pass
+
+    def OnUploadValuesCompleted(self, *args):
+        """
   OnUploadValuesCompleted(self: WebClient,e: UploadValuesCompletedEventArgs)
 
    Raises the System.Net.WebClient.UploadValuesCompleted event.
@@ -459,12 +485,14 @@ class WebClient(Component,IComponent,IDisposable):
 
    e: A System.Net.UploadValuesCompletedEventArgs  object containing event data.
   """
-  pass
- def OnWriteStreamClosed(self,*args):
-  """ OnWriteStreamClosed(self: WebClient,e: WriteStreamClosedEventArgs) """
-  pass
- def OpenRead(self,address):
-  """
+        pass
+
+    def OnWriteStreamClosed(self, *args):
+        """ OnWriteStreamClosed(self: WebClient,e: WriteStreamClosedEventArgs) """
+        pass
+
+    def OpenRead(self, address):
+        """
   OpenRead(self: WebClient,address: Uri) -> Stream
 
   
@@ -497,9 +525,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    Returns: A System.IO.Stream used to read data from a resource.
   """
-  pass
- def OpenReadAsync(self,address,userToken=None):
-  """
+        pass
+
+    def OpenReadAsync(self, address, userToken=None):
+        """
   OpenReadAsync(self: WebClient,address: Uri,userToken: object)
 
    Opens a readable stream containing the specified resource. This method does not block the 
@@ -530,16 +559,18 @@ class WebClient(Component,IComponent,IDisposable):
 
    address: The URI of the resource to retrieve.
   """
-  pass
- def OpenReadTaskAsync(self,address):
-  """
+        pass
+
+    def OpenReadTaskAsync(self, address):
+        """
   OpenReadTaskAsync(self: WebClient,address: Uri) -> Task[Stream]
 
   OpenReadTaskAsync(self: WebClient,address: str) -> Task[Stream]
   """
-  pass
- def OpenWrite(self,address,method=None):
-  """
+        pass
+
+    def OpenWrite(self, address, method=None):
+        """
   OpenWrite(self: WebClient,address: str,method: str) -> Stream
 
   
@@ -600,9 +631,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    Returns: A System.IO.Stream used to write data to the resource.
   """
-  pass
- def OpenWriteAsync(self,address,method=None,userToken=None):
-  """
+        pass
+
+    def OpenWriteAsync(self, address, method=None, userToken=None):
+        """
   OpenWriteAsync(self: WebClient,address: Uri,method: str,userToken: object)
 
    Opens a stream for writing data to the specified resource,using the specified method. This 
@@ -657,9 +689,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    address: The URI of the resource to receive the data.
   """
-  pass
- def OpenWriteTaskAsync(self,address,method=None):
-  """
+        pass
+
+    def OpenWriteTaskAsync(self, address, method=None):
+        """
   OpenWriteTaskAsync(self: WebClient,address: str,method: str) -> Task[Stream]
 
   OpenWriteTaskAsync(self: WebClient,address: Uri,method: str) -> Task[Stream]
@@ -668,9 +701,10 @@ class WebClient(Component,IComponent,IDisposable):
 
   OpenWriteTaskAsync(self: WebClient,address: Uri) -> Task[Stream]
   """
-  pass
- def UploadData(self,address,*__args):
-  """
+        pass
+
+    def UploadData(self, address, *__args):
+        """
   UploadData(self: WebClient,address: str,method: str,data: Array[Byte]) -> Array[Byte]
 
   
@@ -739,9 +773,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    Returns: A System.Byte array containing the body of the response from the resource.
   """
-  pass
- def UploadDataAsync(self,address,*__args):
-  """
+        pass
+
+    def UploadDataAsync(self, address, *__args):
+        """
   UploadDataAsync(self: WebClient,address: Uri,method: str,data: Array[Byte],userToken: object)
 
    Uploads a data buffer to a resource identified by a URI,using the specified method and 
@@ -802,9 +837,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    data: The data buffer to send to the resource.
   """
-  pass
- def UploadDataTaskAsync(self,address,*__args):
-  """
+        pass
+
+    def UploadDataTaskAsync(self, address, *__args):
+        """
   UploadDataTaskAsync(self: WebClient,address: str,method: str,data: Array[Byte]) -> Task[Array[Byte]]
 
   UploadDataTaskAsync(self: WebClient,address: Uri,method: str,data: Array[Byte]) -> Task[Array[Byte]]
@@ -813,9 +849,10 @@ class WebClient(Component,IComponent,IDisposable):
 
   UploadDataTaskAsync(self: WebClient,address: Uri,data: Array[Byte]) -> Task[Array[Byte]]
   """
-  pass
- def UploadFile(self,address,*__args):
-  """
+        pass
+
+    def UploadFile(self, address, *__args):
+        """
   UploadFile(self: WebClient,address: str,method: str,fileName: str) -> Array[Byte]
 
   
@@ -884,9 +921,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    Returns: A System.Byte array containing the body of the response from the resource.
   """
-  pass
- def UploadFileAsync(self,address,*__args):
-  """
+        pass
+
+    def UploadFileAsync(self, address, *__args):
+        """
   UploadFileAsync(self: WebClient,address: Uri,method: str,fileName: str,userToken: object)
 
    Uploads the specified local file to the specified resource,using the POST method. This method 
@@ -959,9 +997,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    fileName: The file to send to the resource.
   """
-  pass
- def UploadFileTaskAsync(self,address,*__args):
-  """
+        pass
+
+    def UploadFileTaskAsync(self, address, *__args):
+        """
   UploadFileTaskAsync(self: WebClient,address: str,method: str,fileName: str) -> Task[Array[Byte]]
 
   UploadFileTaskAsync(self: WebClient,address: Uri,method: str,fileName: str) -> Task[Array[Byte]]
@@ -970,9 +1009,10 @@ class WebClient(Component,IComponent,IDisposable):
 
   UploadFileTaskAsync(self: WebClient,address: Uri,fileName: str) -> Task[Array[Byte]]
   """
-  pass
- def UploadString(self,address,*__args):
-  """
+        pass
+
+    def UploadString(self, address, *__args):
+        """
   UploadString(self: WebClient,address: str,method: str,data: str) -> str
 
   
@@ -1057,9 +1097,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    Returns: A System.String containing the response sent by the server.
   """
-  pass
- def UploadStringAsync(self,address,*__args):
-  """
+        pass
+
+    def UploadStringAsync(self, address, *__args):
+        """
   UploadStringAsync(self: WebClient,address: Uri,method: str,data: str,userToken: object)
 
    Uploads the specified string to the specified resource. This method does not block the calling 
@@ -1132,9 +1173,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    data: The string to be uploaded.
   """
-  pass
- def UploadStringTaskAsync(self,address,*__args):
-  """
+        pass
+
+    def UploadStringTaskAsync(self, address, *__args):
+        """
   UploadStringTaskAsync(self: WebClient,address: str,method: str,data: str) -> Task[str]
 
   UploadStringTaskAsync(self: WebClient,address: Uri,method: str,data: str) -> Task[str]
@@ -1143,9 +1185,10 @@ class WebClient(Component,IComponent,IDisposable):
 
   UploadStringTaskAsync(self: WebClient,address: Uri,data: str) -> Task[str]
   """
-  pass
- def UploadValues(self,address,*__args):
-  """
+        pass
+
+    def UploadValues(self, address, *__args):
+        """
   UploadValues(self: WebClient,address: str,method: str,data: NameValueCollection) -> Array[Byte]
 
   
@@ -1222,9 +1265,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    Returns: A System.Byte array containing the body of the response from the resource.
   """
-  pass
- def UploadValuesAsync(self,address,*__args):
-  """
+        pass
+
+    def UploadValuesAsync(self, address, *__args):
+        """
   UploadValuesAsync(self: WebClient,address: Uri,method: str,data: NameValueCollection,userToken: object)
 
    Uploads the data in the specified name/value collection to the resource identified by the 
@@ -1299,9 +1343,10 @@ class WebClient(Component,IComponent,IDisposable):
 
    data: The System.Collections.Specialized.NameValueCollection to send to the resource.
   """
-  pass
- def UploadValuesTaskAsync(self,address,*__args):
-  """
+        pass
+
+    def UploadValuesTaskAsync(self, address, *__args):
+        """
   UploadValuesTaskAsync(self: WebClient,address: Uri,data: NameValueCollection) -> Task[Array[Byte]]
 
   UploadValuesTaskAsync(self: WebClient,address: Uri,method: str,data: NameValueCollection) -> Task[Array[Byte]]
@@ -1310,30 +1355,37 @@ class WebClient(Component,IComponent,IDisposable):
 
   UploadValuesTaskAsync(self: WebClient,address: str,method: str,data: NameValueCollection) -> Task[Array[Byte]]
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- AllowReadStreamBuffering=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: AllowReadStreamBuffering(self: WebClient) -> bool
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AllowReadStreamBuffering = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: AllowReadStreamBuffering(self: WebClient) -> bool
 
 
 
@@ -1341,8 +1393,10 @@ Set: AllowReadStreamBuffering(self: WebClient)=value
 
 """
 
- AllowWriteStreamBuffering=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: AllowWriteStreamBuffering(self: WebClient) -> bool
+    AllowWriteStreamBuffering = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: AllowWriteStreamBuffering(self: WebClient) -> bool
 
 
 
@@ -1350,8 +1404,10 @@ Set: AllowWriteStreamBuffering(self: WebClient)=value
 
 """
 
- BaseAddress=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the base URI for requests made by a System.Net.WebClient.
+    BaseAddress = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the base URI for requests made by a System.Net.WebClient.
 
 
 
@@ -1363,8 +1419,10 @@ Set: BaseAddress(self: WebClient)=value
 
 """
 
- CachePolicy=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the application's cache policy for any resources obtained by this WebClient instance using System.Net.WebRequest objects.
+    CachePolicy = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the application's cache policy for any resources obtained by this WebClient instance using System.Net.WebRequest objects.
 
 
 
@@ -1376,15 +1434,19 @@ Set: CachePolicy(self: WebClient)=value
 
 """
 
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- Credentials=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the network credentials that are sent to the host and used to authenticate the request.
+    Credentials = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the network credentials that are sent to the host and used to authenticate the request.
 
 
 
@@ -1396,15 +1458,17 @@ Set: Credentials(self: WebClient)=value
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- Encoding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets and sets the System.Text.Encoding used to upload and download strings.
+    Encoding = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets and sets the System.Text.Encoding used to upload and download strings.
 
 
 
@@ -1416,15 +1480,15 @@ Set: Encoding(self: WebClient)=value
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- Headers=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a collection of header name/value pairs associated with the request.
+    Headers = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a collection of header name/value pairs associated with the request.
 
 
 
@@ -1436,8 +1500,8 @@ Set: Headers(self: WebClient)=value
 
 """
 
- IsBusy=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets whether a Web request is in progress.
+    IsBusy = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets whether a Web request is in progress.
 
 
 
@@ -1447,8 +1511,8 @@ Get: IsBusy(self: WebClient) -> bool
 
 """
 
- Proxy=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the proxy used by this System.Net.WebClient object.
+    Proxy = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the proxy used by this System.Net.WebClient object.
 
 
 
@@ -1460,8 +1524,10 @@ Set: Proxy(self: WebClient)=value
 
 """
 
- QueryString=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a collection of query name/value pairs associated with the request.
+    QueryString = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a collection of query name/value pairs associated with the request.
 
 
 
@@ -1473,8 +1539,10 @@ Set: QueryString(self: WebClient)=value
 
 """
 
- ResponseHeaders=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of header name/value pairs associated with the response.
+    ResponseHeaders = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a collection of header name/value pairs associated with the response.
 
 
 
@@ -1484,8 +1552,10 @@ Get: ResponseHeaders(self: WebClient) -> WebHeaderCollection
 
 """
 
- UseDefaultCredentials=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a System.Boolean value that controls whether the System.Net.CredentialCache.DefaultCredentials are sent with requests.
+    UseDefaultCredentials = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a System.Boolean value that controls whether the System.Net.CredentialCache.DefaultCredentials are sent with requests.
 
 
 
@@ -1497,17 +1567,15 @@ Set: UseDefaultCredentials(self: WebClient)=value
 
 """
 
-
- DownloadDataCompleted=None
- DownloadFileCompleted=None
- DownloadProgressChanged=None
- DownloadStringCompleted=None
- OpenReadCompleted=None
- OpenWriteCompleted=None
- UploadDataCompleted=None
- UploadFileCompleted=None
- UploadProgressChanged=None
- UploadStringCompleted=None
- UploadValuesCompleted=None
- WriteStreamClosed=None
-
+    DownloadDataCompleted = None
+    DownloadFileCompleted = None
+    DownloadProgressChanged = None
+    DownloadStringCompleted = None
+    OpenReadCompleted = None
+    OpenWriteCompleted = None
+    UploadDataCompleted = None
+    UploadFileCompleted = None
+    UploadProgressChanged = None
+    UploadStringCompleted = None
+    UploadValuesCompleted = None
+    WriteStreamClosed = None

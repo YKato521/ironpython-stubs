@@ -1,10 +1,12 @@
-class Layer(CommonObject,IDisposable,ISerializable):
- """ Layer() """
- def CommitChanges(self):
-  """ CommitChanges(self: Layer) -> bool """
-  pass
- def ConstructConstObject(self,*args):
-  """
+class Layer(CommonObject, IDisposable, ISerializable):
+    """ Layer() """
+
+    def CommitChanges(self):
+        """ CommitChanges(self: Layer) -> bool """
+        pass
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -15,16 +17,18 @@ class Layer(CommonObject,IDisposable,ISerializable):
 
    subobject_index: The subobject index.
   """
-  pass
- def Default(self):
-  """
+        pass
+
+    def Default(self):
+        """
   Default(self: Layer)
 
    Sets layer to default settings.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: CommonObject,disposing: bool)
 
    For derived class implementers.
@@ -49,9 +53,10 @@ class Layer(CommonObject,IDisposable,ISerializable):
 
     finalizer.
   """
-  pass
- def GetChildren(self):
-  """
+        pass
+
+    def GetChildren(self):
+        """
   GetChildren(self: Layer) -> Array[Layer]
 
   
@@ -60,10 +65,11 @@ class Layer(CommonObject,IDisposable,ISerializable):
 
    Returns: Array of child layers. null if this layer does not have any children.
   """
-  pass
- @staticmethod
- def GetDefaultLayerProperties():
-  """
+        pass
+
+    @staticmethod
+    def GetDefaultLayerProperties():
+        """
   GetDefaultLayerProperties() -> Layer
 
   
@@ -86,9 +92,10 @@ class Layer(CommonObject,IDisposable,ISerializable):
 
    Returns: A new layer instance.
   """
-  pass
- def GetPersistentLocking(self):
-  """
+        pass
+
+    def GetPersistentLocking(self):
+        """
   GetPersistentLocking(self: Layer) -> bool
 
   
@@ -111,9 +118,10 @@ class Layer(CommonObject,IDisposable,ISerializable):
 
     again.
   """
-  pass
- def GetPersistentVisibility(self):
-  """
+        pass
+
+    def GetPersistentVisibility(self):
+        """
   GetPersistentVisibility(self: Layer) -> bool
 
   
@@ -138,9 +146,10 @@ class Layer(CommonObject,IDisposable,ISerializable):
 
      again.
   """
-  pass
- def GetUserString(self,key):
-  """
+        pass
+
+    def GetUserString(self, key):
+        """
   GetUserString(self: Layer,key: str) -> str
 
   
@@ -153,9 +162,10 @@ class Layer(CommonObject,IDisposable,ISerializable):
 
    Returns: string associated with the key if successful. null if no key was found.
   """
-  pass
- def GetUserStrings(self):
-  """
+        pass
+
+    def GetUserStrings(self):
+        """
   GetUserStrings(self: Layer) -> NameValueCollection
 
   
@@ -164,24 +174,27 @@ class Layer(CommonObject,IDisposable,ISerializable):
 
    Returns: A new collection.
   """
-  pass
- def IsChildOf(self,*__args):
-  """
+        pass
+
+    def IsChildOf(self, *__args):
+        """
   IsChildOf(self: Layer,otherLayer: Layer) -> bool
 
   IsChildOf(self: Layer,layerIndex: int) -> bool
   """
-  pass
- def IsParentOf(self,*__args):
-  """
+        pass
+
+    def IsParentOf(self, *__args):
+        """
   IsParentOf(self: Layer,otherLayer: Layer) -> bool
 
   IsParentOf(self: Layer,layerIndex: int) -> bool
   """
-  pass
- @staticmethod
- def IsValidName(name):
-  """
+        pass
+
+    @staticmethod
+    def IsValidName(name):
+        """
   IsValidName(name: str) -> bool
 
   
@@ -194,9 +207,10 @@ class Layer(CommonObject,IDisposable,ISerializable):
 
    Returns: true if the name is valid for a layer name; otherwise,false.
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: CommonObject)
 
    For derived classes implementers.
@@ -205,30 +219,34 @@ class Layer(CommonObject,IDisposable,ISerializable):
 
     instance from being const.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: CommonObject)
 
    Is called when a non-const operation first occurs.
   """
-  pass
- def SetPersistentLocking(self,persistentLocking):
-  """
+        pass
+
+    def SetPersistentLocking(self, persistentLocking):
+        """
   SetPersistentLocking(self: Layer,persistentLocking: bool)
 
    Set the persistent locking setting for this layer
   """
-  pass
- def SetPersistentVisibility(self,persistentVisibility):
-  """
+        pass
+
+    def SetPersistentVisibility(self, persistentVisibility):
+        """
   SetPersistentVisibility(self: Layer,persistentVisibility: bool)
 
    Set the persistent visibility setting for this layer
   """
-  pass
- def SetUserString(self,key,value):
-  """
+        pass
+
+    def SetUserString(self, key, value):
+        """
   SetUserString(self: Layer,key: str,value: str) -> bool
 
   
@@ -243,57 +261,67 @@ class Layer(CommonObject,IDisposable,ISerializable):
 
    Returns: true on success.
   """
-  pass
- def ToString(self):
-  """ ToString(self: Layer) -> str """
-  pass
- def UnsetPersistentLocking(self):
-  """
+        pass
+
+    def ToString(self):
+        """ ToString(self: Layer) -> str """
+        pass
+
+    def UnsetPersistentLocking(self):
+        """
   UnsetPersistentLocking(self: Layer)
 
    Remove any explicity persistent locking settings from this layer
   """
-  pass
- def UnsetPersistentVisibility(self):
-  """
+        pass
+
+    def UnsetPersistentVisibility(self):
+        """
   UnsetPersistentVisibility(self: Layer)
 
    Remove any explicit persistent visibility setting from this layer
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self):
+        """
   __new__(cls: type)
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Color=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the display color for this layer.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Color = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the display color for this layer.
 
 
 
@@ -305,8 +333,8 @@ Set: Color(self: Layer)=value
 
 """
 
- FullPath=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the full path to this layer. The full path includes nesting information.
+    FullPath = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the full path to this layer. The full path includes nesting information.
 
 
 
@@ -316,8 +344,8 @@ Get: FullPath(self: Layer) -> str
 
 """
 
- Id=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the ID of this layer object. 
+    Id = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the ID of this layer object. 
 
    You typically do not need to assign a custom ID.
 
@@ -331,8 +359,8 @@ Set: Id(self: Layer)=value
 
 """
 
- IgesLevel=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the IGES level for this layer.
+    IgesLevel = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the IGES level for this layer.
 
 
 
@@ -344,8 +372,8 @@ Set: IgesLevel(self: Layer)=value
 
 """
 
- IsDeleted=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether this layer has been deleted and is 
+    IsDeleted = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether this layer has been deleted and is 
 
    currently in the Undo buffer.
 
@@ -357,8 +385,10 @@ Get: IsDeleted(self: Layer) -> bool
 
 """
 
- IsExpanded=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether this layer is expanded in the Rhino Layer dialog.
+    IsExpanded = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether this layer is expanded in the Rhino Layer dialog.
 
 
 
@@ -370,8 +400,8 @@ Set: IsExpanded(self: Layer)=value
 
 """
 
- IsLocked=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating the locked state of this layer.
+    IsLocked = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating the locked state of this layer.
 
 
 
@@ -383,8 +413,10 @@ Set: IsLocked(self: Layer)=value
 
 """
 
- IsReference=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicting whether this layer is a referenced layer. 
+    IsReference = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicting whether this layer is a referenced layer. 
 
    Referenced layers are part of referenced documents.
 
@@ -396,8 +428,8 @@ Get: IsReference(self: Layer) -> bool
 
 """
 
- IsVisible=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the visibility of this layer.
+    IsVisible = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the visibility of this layer.
 
 
 
@@ -409,8 +441,10 @@ Set: IsVisible(self: Layer)=value
 
 """
 
- LayerIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the index of this layer.
+    LayerIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the index of this layer.
 
 
 
@@ -422,8 +456,10 @@ Set: LayerIndex(self: Layer)=value
 
 """
 
- LinetypeIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the line-type index for this layer.
+    LinetypeIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the line-type index for this layer.
 
 
 
@@ -435,8 +471,8 @@ Set: LinetypeIndex(self: Layer)=value
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of this layer.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the name of this layer.
 
 
 
@@ -448,8 +484,10 @@ Set: Name(self: Layer)=value
 
 """
 
- ParentLayerId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the ID of the parent layer. Layers can be origanized in a hierarchical structure,
+    ParentLayerId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the ID of the parent layer. Layers can be origanized in a hierarchical structure,
 
    in which case this returns the parent layer ID. If the layer has no parent,
 
@@ -465,8 +503,8 @@ Set: ParentLayerId(self: Layer)=value
 
 """
 
- PlotColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the plot color for this layer.
+    PlotColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the plot color for this layer.
 
 
 
@@ -478,8 +516,10 @@ Set: PlotColor(self: Layer)=value
 
 """
 
- PlotWeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the thickness of the plotting pen in millimeters. 
+    PlotWeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the thickness of the plotting pen in millimeters. 
 
    A thickness of 0.0 indicates the "default" pen weight should be used.
 
@@ -493,8 +533,10 @@ Set: PlotWeight(self: Layer)=value
 
 """
 
- RenderMaterial=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Rhino.Render.RenderMaterial for objects on
+    RenderMaterial = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the Rhino.Render.RenderMaterial for objects on
 
    this layer that have MaterialSource() == MaterialFromLayer.
 
@@ -514,8 +556,10 @@ Set: RenderMaterial(self: Layer)=value
 
 """
 
- RenderMaterialIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the index of render material for objects on this layer that have
+    RenderMaterialIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the index of render material for objects on this layer that have
 
    MaterialSource() == MaterialFromLayer. 
 
@@ -535,8 +579,8 @@ Set: RenderMaterialIndex(self: Layer)=value
 
 """
 
- SortIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Runtime index used to sort layers in layer dialog.
+    SortIndex = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Runtime index used to sort layers in layer dialog.
 
 
 
@@ -546,8 +590,10 @@ Get: SortIndex(self: Layer) -> int
 
 """
 
- UserStringCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the amount of user strings.
+    UserStringCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the amount of user strings.
 
 
 
@@ -556,5 +602,3 @@ Get: UserStringCount(self: Layer) -> int
 
 
 """
-
-

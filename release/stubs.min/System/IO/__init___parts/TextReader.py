@@ -1,21 +1,24 @@
-class TextReader(MarshalByRefObject,IDisposable):
- """ Represents a reader that can read a sequential series of characters. """
- def Close(self):
-  """
+class TextReader(MarshalByRefObject, IDisposable):
+    """ Represents a reader that can read a sequential series of characters. """
+
+    def Close(self):
+        """
   Close(self: TextReader)
 
    Closes the System.IO.TextReader and releases any system resources associated with the TextReader.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: TextReader)
 
    Releases all resources used by the System.IO.TextReader object.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -46,9 +49,10 @@ class TextReader(MarshalByRefObject,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def Peek(self):
-  """
+        pass
+
+    def Peek(self):
+        """
   Peek(self: TextReader) -> int
 
   
@@ -63,9 +67,10 @@ class TextReader(MarshalByRefObject,IDisposable):
 
     or the stream does not support seeking.
   """
-  pass
- def Read(self,buffer=None,index=None,count=None):
-  """
+        pass
+
+    def Read(self, buffer=None, index=None, count=None):
+        """
   Read(self: TextReader,index: int,count: int) -> (int,Array[Char])
 
   
@@ -108,12 +113,14 @@ class TextReader(MarshalByRefObject,IDisposable):
 
     implementation returns -1.
   """
-  pass
- def ReadAsync(self,buffer,index,count):
-  """ ReadAsync(self: TextReader,buffer: Array[Char],index: int,count: int) -> Task[int] """
-  pass
- def ReadBlock(self,buffer,index,count):
-  """
+        pass
+
+    def ReadAsync(self, buffer, index, count):
+        """ ReadAsync(self: TextReader,buffer: Array[Char],index: int,count: int) -> Task[int] """
+        pass
+
+    def ReadBlock(self, buffer, index, count):
+        """
   ReadBlock(self: TextReader,index: int,count: int) -> (int,Array[Char])
 
   
@@ -136,12 +143,14 @@ class TextReader(MarshalByRefObject,IDisposable):
 
     to count,depending on whether all input characters have been read.
   """
-  pass
- def ReadBlockAsync(self,buffer,index,count):
-  """ ReadBlockAsync(self: TextReader,buffer: Array[Char],index: int,count: int) -> Task[int] """
-  pass
- def ReadLine(self):
-  """
+        pass
+
+    def ReadBlockAsync(self, buffer, index, count):
+        """ ReadBlockAsync(self: TextReader,buffer: Array[Char],index: int,count: int) -> Task[int] """
+        pass
+
+    def ReadLine(self):
+        """
   ReadLine(self: TextReader) -> str
 
   
@@ -150,12 +159,14 @@ class TextReader(MarshalByRefObject,IDisposable):
 
    Returns: The next line from the input stream,or null if all characters have been read.
   """
-  pass
- def ReadLineAsync(self):
-  """ ReadLineAsync(self: TextReader) -> Task[str] """
-  pass
- def ReadToEnd(self):
-  """
+        pass
+
+    def ReadLineAsync(self):
+        """ ReadLineAsync(self: TextReader) -> Task[str] """
+        pass
+
+    def ReadToEnd(self):
+        """
   ReadToEnd(self: TextReader) -> str
 
   
@@ -168,13 +179,15 @@ class TextReader(MarshalByRefObject,IDisposable):
 
    Returns: A string containing all characters from the current position to the end of the TextReader.
   """
-  pass
- def ReadToEndAsync(self):
-  """ ReadToEndAsync(self: TextReader) -> Task[str] """
-  pass
- @staticmethod
- def Synchronized(reader):
-  """
+        pass
+
+    def ReadToEndAsync(self):
+        """ ReadToEndAsync(self: TextReader) -> Task[str] """
+        pass
+
+    @staticmethod
+    def Synchronized(reader):
+        """
   Synchronized(reader: TextReader) -> TextReader
 
   
@@ -187,27 +200,31 @@ class TextReader(MarshalByRefObject,IDisposable):
 
    Returns: A thread-safe System.IO.TextReader.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- Null=None
+        pass
 
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    Null = None

@@ -8,85 +8,109 @@
 # no functions
 # classes
 
-class AccessLevel(Enum,IComparable,IFormattable,IConvertible):
- """
+
+class AccessLevel(Enum, IComparable, IFormattable, IConvertible):
+    """
  Defines access levels to objects in the Extensible Storage framework.
 
  
 
  enum AccessLevel,values: Application (3),Public (1),Vendor (2)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Application=None
- Public=None
- value__=None
- Vendor=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Application = None
+    Public = None
+    value__ = None
+    Vendor = None
 
 
-class ContainerType(Enum,IComparable,IFormattable,IConvertible):
- """
+class ContainerType(Enum, IComparable, IFormattable, IConvertible):
+    """
  An enumerated type indicating if the field represents a single value or a container of multiple values.
 
  
 
  enum ContainerType,values: Array (1),Map (2),Simple (0)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Array=None
- Map=None
- Simple=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Array = None
+    Map = None
+    Simple = None
+    value__ = None
 
 
-class DataStorage(Element,IDisposable):
- """ An element which allows an API applications to organize and store data. """
- @staticmethod
- def Create(doc):
-  """
+class DataStorage(Element, IDisposable):
+    """ An element which allows an API applications to organize and store data. """
+
+    @staticmethod
+    def Create(doc):
+        """
   Create(doc: Document) -> DataStorage
 
   
@@ -99,31 +123,39 @@ class DataStorage(Element,IDisposable):
 
    Returns: The newly created DataStorage element.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
 
-class Entity(object,IDisposable):
- """
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+
+class Entity(object, IDisposable):
+    """
  An object stored in the Extensible Storage framework. An Entity is described by a Schema,
 
     which serves both to identify an Entity,and to describe its contents (Fields).
@@ -138,8 +170,9 @@ class Entity(object,IDisposable):
 
  Entity(other: Entity)
  """
- def Clear(self,*__args):
-  """
+
+    def Clear(self, *__args):
+        """
   Clear(self: Entity,field: Field)
 
    Resets the field to its default value.
@@ -156,12 +189,14 @@ class Entity(object,IDisposable):
 
    fieldName: The name of the field to clear.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Entity) """
-  pass
- def Get(self,*__args):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Entity) """
+        pass
+
+    def Get(self, *__args):
+        """
   Get[FieldType](self: Entity,fieldName: str) -> FieldType
 
   Get[FieldType](self: Entity,field: Field) -> FieldType
@@ -170,9 +205,10 @@ class Entity(object,IDisposable):
 
   Get[FieldType](self: Entity,field: Field,displayUnits: DisplayUnitType) -> FieldType
   """
-  pass
- def IsValid(self):
-  """
+        pass
+
+    def IsValid(self):
+        """
   IsValid(self: Entity) -> bool
 
   
@@ -181,9 +217,10 @@ class Entity(object,IDisposable):
 
    Returns: True if the Entity is valid.
   """
-  pass
- def ReadAccessGranted(self):
-  """
+        pass
+
+    def ReadAccessGranted(self):
+        """
   ReadAccessGranted(self: Entity) -> bool
 
   
@@ -192,9 +229,10 @@ class Entity(object,IDisposable):
 
    Returns: True if read access is allowed.
   """
-  pass
- def RecognizedField(self,field):
-  """
+        pass
+
+    def RecognizedField(self, field):
+        """
   RecognizedField(self: Entity,field: Field) -> bool
 
   
@@ -207,15 +245,18 @@ class Entity(object,IDisposable):
 
    Returns: True if the Field belongs to the same Schema as this Entity.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Entity,disposing: bool) """
-  pass
- def Set(self,*__args):
-  """ Set[FieldType](self: Entity,fieldName: str,value: FieldType)Set[FieldType](self: Entity,field: Field,value: FieldType)Set[FieldType](self: Entity,fieldName: str,value: FieldType,displayUnits: DisplayUnitType)Set[FieldType](self: Entity,field: Field,value: FieldType,displayUnits: DisplayUnitType) """
-  pass
- def WriteAccessGranted(self):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Entity,disposing: bool) """
+        pass
+
+    def Set(self, *__args):
+        """ Set[FieldType](self: Entity,fieldName: str,value: FieldType)Set[FieldType](self: Entity,field: Field,value: FieldType)Set[FieldType](self: Entity,fieldName: str,value: FieldType,displayUnits: DisplayUnitType)Set[FieldType](self: Entity,field: Field,value: FieldType,displayUnits: DisplayUnitType) """
+        pass
+
+    def WriteAccessGranted(self):
+        """
   WriteAccessGranted(self: Entity) -> bool
 
   
@@ -224,19 +265,23 @@ class Entity(object,IDisposable):
 
    Returns: True if write access is allowed.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,schemaGUID: Guid)
 
   __new__(cls: type,schema: Schema)
@@ -245,12 +290,16 @@ class Entity(object,IDisposable):
 
   __new__(cls: type,other: Entity)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -260,8 +309,8 @@ Get: IsValidObject(self: Entity) -> bool
 
 """
 
- Schema=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Schema describing this Entity.
+    Schema = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The Schema describing this Entity.
 
 
 
@@ -271,8 +320,10 @@ Get: Schema(self: Entity) -> Schema
 
 """
 
- SchemaGUID=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The GUID of the Schema describing this Entity.
+    SchemaGUID = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The GUID of the Schema describing this Entity.
 
 
 
@@ -283,36 +334,44 @@ Get: SchemaGUID(self: Entity) -> Guid
 """
 
 
-
-class ExtensibleStorageFilter(ElementQuickFilter,IDisposable):
- """
+class ExtensibleStorageFilter(ElementQuickFilter, IDisposable):
+    """
  A filter used to filter elements with extensible storage data based on specific Schema id.
 
  
 
  ExtensibleStorageFilter(schemaGuid: Guid)
  """
- def Dispose(self):
-  """ Dispose(self: ElementFilter,A_0: bool) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: ElementFilter,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,schemaGuid):
-  """ __new__(cls: type,schemaGuid: Guid) """
-  pass
- SchemaGuid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Schema id used to filter elements with extensible storage data
+
+    def Dispose(self):
+        """ Dispose(self: ElementFilter,A_0: bool) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: ElementFilter,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, schemaGuid):
+        """ __new__(cls: type,schemaGuid: Guid) """
+        pass
+
+    SchemaGuid = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Schema id used to filter elements with extensible storage data
 
 
 
@@ -323,15 +382,15 @@ Get: SchemaGuid(self: ExtensibleStorageFilter) -> Guid
 """
 
 
-
-class Field(object,IDisposable):
- """
+class Field(object, IDisposable):
+    """
  The description of a field within a Schema in the Extensible Storage framework. Contains
 
     the field's name,type,access control and documentation.
  """
- def CompatibleDisplayUnitType(self,type):
-  """
+
+    def CompatibleDisplayUnitType(self, type):
+        """
   CompatibleDisplayUnitType(self: Field,type: DisplayUnitType) -> bool
 
   
@@ -344,15 +403,18 @@ class Field(object,IDisposable):
 
    Returns: True if the type is compatible,false otherwise.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Field) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Field,disposing: bool) """
-  pass
- def SubEntityReadAccessGranted(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Field) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Field,disposing: bool) """
+        pass
+
+    def SubEntityReadAccessGranted(self):
+        """
   SubEntityReadAccessGranted(self: Field) -> bool
 
   
@@ -361,9 +423,10 @@ class Field(object,IDisposable):
 
    Returns: True if subentities are readable.
   """
-  pass
- def SubEntityWriteAccessGranted(self):
-  """
+        pass
+
+    def SubEntityWriteAccessGranted(self):
+        """
   SubEntityWriteAccessGranted(self: Field) -> bool
 
   
@@ -372,21 +435,28 @@ class Field(object,IDisposable):
 
    Returns: True if subentities are writable.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- ContainerType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Reports whether this is a simple field containing one value,
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    ContainerType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Reports whether this is a simple field containing one value,
 
    or a container of multiple values.
 
@@ -398,8 +468,10 @@ Get: ContainerType(self: Field) -> ContainerType
 
 """
 
- Documentation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The overall description of the Field.
+    Documentation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The overall description of the Field.
 
 
 
@@ -409,8 +481,8 @@ Get: Documentation(self: Field) -> str
 
 """
 
- FieldName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The name of the field.
+    FieldName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The name of the field.
 
 
 
@@ -420,8 +492,10 @@ Get: FieldName(self: Field) -> str
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -431,8 +505,8 @@ Get: IsValidObject(self: Field) -> bool
 
 """
 
- KeyType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The type of the keys stored in the field.
+    KeyType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The type of the keys stored in the field.
 
 
 
@@ -442,8 +516,8 @@ Get: KeyType(self: Field) -> Type
 
 """
 
- Schema=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Schema to which this Field belongs.
+    Schema = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The Schema to which this Field belongs.
 
 
 
@@ -453,8 +527,8 @@ Get: Schema(self: Field) -> Schema
 
 """
 
- SubSchema=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Schema describing the subentity (or subentities) stored in this Field.
+    SubSchema = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The Schema describing the subentity (or subentities) stored in this Field.
 
 
 
@@ -464,8 +538,10 @@ Get: SubSchema(self: Field) -> Schema
 
 """
 
- SubSchemaGUID=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The GUID of the Schema describing the subentity (or subentities) stored in this Field.
+    SubSchemaGUID = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The GUID of the Schema describing the subentity (or subentities) stored in this Field.
 
 
 
@@ -475,8 +551,8 @@ Get: SubSchemaGUID(self: Field) -> Guid
 
 """
 
- UnitType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The type of units represented by values stored in this field
+    UnitType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The type of units represented by values stored in this field
 
 
 
@@ -486,8 +562,8 @@ Get: UnitType(self: Field) -> UnitType
 
 """
 
- ValueType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The type of the values stored in the field.
+    ValueType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The type of the values stored in the field.
 
 
 
@@ -498,9 +574,8 @@ Get: ValueType(self: Field) -> Type
 """
 
 
-
-class FieldBuilder(object,IDisposable):
- """
+class FieldBuilder(object, IDisposable):
+    """
  This class is used to create Fields in the Extensible Storage framework.
 
  
@@ -509,11 +584,13 @@ class FieldBuilder(object,IDisposable):
 
  FieldBuilder(other: FieldBuilder)
  """
- def Dispose(self):
-  """ Dispose(self: FieldBuilder) """
-  pass
- def NeedsSubSchemaGUID(self):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: FieldBuilder) """
+        pass
+
+    def NeedsSubSchemaGUID(self):
+        """
   NeedsSubSchemaGUID(self: FieldBuilder) -> bool
 
   
@@ -526,9 +603,10 @@ class FieldBuilder(object,IDisposable):
 
    Returns: True if SubSchemaGUID is required.
   """
-  pass
- def NeedsUnits(self):
-  """
+        pass
+
+    def NeedsUnits(self):
+        """
   NeedsUnits(self: FieldBuilder) -> bool
 
   
@@ -537,9 +615,10 @@ class FieldBuilder(object,IDisposable):
 
    Returns: True if units are required.
   """
-  pass
- def Ready(self):
-  """
+        pass
+
+    def Ready(self):
+        """
   Ready(self: FieldBuilder) -> bool
 
   
@@ -548,12 +627,14 @@ class FieldBuilder(object,IDisposable):
 
    Returns: True if the SchemaBuilder has not yet been finished.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: FieldBuilder,disposing: bool) """
-  pass
- def SetDocumentation(self,documentation):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: FieldBuilder,disposing: bool) """
+        pass
+
+    def SetDocumentation(self, documentation):
+        """
   SetDocumentation(self: FieldBuilder,documentation: str) -> FieldBuilder
 
   
@@ -566,9 +647,10 @@ class FieldBuilder(object,IDisposable):
 
    Returns: The FieldBuilder object may be used to add more details to the field.
   """
-  pass
- def SetSubSchemaGUID(self,guid):
-  """
+        pass
+
+    def SetSubSchemaGUID(self, guid):
+        """
   SetSubSchemaGUID(self: FieldBuilder,guid: Guid) -> FieldBuilder
 
   
@@ -585,9 +667,10 @@ class FieldBuilder(object,IDisposable):
 
    Returns: The FieldBuilder object may be used to add more details to the field.
   """
-  pass
- def SetUnitType(self,units):
-  """
+        pass
+
+    def SetUnitType(self, units):
+        """
   SetUnitType(self: FieldBuilder,units: UnitType) -> FieldBuilder
 
   
@@ -600,29 +683,37 @@ class FieldBuilder(object,IDisposable):
 
    Returns: The FieldBuilder object may be used to add more details to the field.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,field: Field,builder: SchemaBuilder)
 
   __new__(cls: type,other: FieldBuilder)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -633,19 +724,20 @@ Get: IsValidObject(self: FieldBuilder) -> bool
 """
 
 
-
-class Schema(object,IDisposable):
- """
+class Schema(object, IDisposable):
+    """
  The description of a single object (Entity) in the Extensible Storage framework. Contains
 
     identity information,documentation and the list of fields to be stored in the Entity.
  """
- def Dispose(self):
-  """ Dispose(self: Schema) """
-  pass
- @staticmethod
- def EraseSchemaAndAllEntities(schema,overrideWriteAccessWithUserPermission):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: Schema) """
+        pass
+
+    @staticmethod
+    def EraseSchemaAndAllEntities(schema, overrideWriteAccessWithUserPermission):
+        """
   EraseSchemaAndAllEntities(schema: Schema,overrideWriteAccessWithUserPermission: bool)
 
    Erases all Entities corresponding to this Schema from all open documents,and 
@@ -674,9 +766,10 @@ class Schema(object,IDisposable):
 
      the Schema.
   """
-  pass
- def GetField(self,name):
-  """
+        pass
+
+    def GetField(self, name):
+        """
   GetField(self: Schema,name: str) -> Field
 
   
@@ -689,38 +782,42 @@ class Schema(object,IDisposable):
 
    Returns: The Field
   """
-  pass
- def ListFields(self):
-  """
+        pass
+
+    def ListFields(self):
+        """
   ListFields(self: Schema) -> IList[Field]
 
   
 
    The complete list of fields in the Schema,sorted by name.
   """
-  pass
- @staticmethod
- def ListSchemas():
-  """
+        pass
+
+    @staticmethod
+    def ListSchemas():
+        """
   ListSchemas() -> IList[Schema]
 
   
 
    Lists all schemas in memory.
   """
-  pass
- @staticmethod
- def Lookup(guid):
-  """
+        pass
+
+    @staticmethod
+    def Lookup(guid):
+        """
   Lookup(guid: Guid) -> Schema
 
   
 
    Finds the Schema corresponding to the GUID in memory.
   """
-  pass
- def ReadAccessGranted(self):
-  """
+        pass
+
+    def ReadAccessGranted(self):
+        """
   ReadAccessGranted(self: Schema) -> bool
 
   
@@ -729,12 +826,14 @@ class Schema(object,IDisposable):
 
    Returns: True if read access is allowed.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Schema,disposing: bool) """
-  pass
- def WriteAccessGranted(self):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Schema,disposing: bool) """
+        pass
+
+    def WriteAccessGranted(self):
+        """
   WriteAccessGranted(self: Schema) -> bool
 
   
@@ -743,21 +842,28 @@ class Schema(object,IDisposable):
 
    Returns: True if write access is allowed.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- ApplicationGUID=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The GUID of the application or add-in that may access entities of this Schema under the
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    ApplicationGUID = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The GUID of the application or add-in that may access entities of this Schema under the
 
    Application access level.
 
@@ -769,8 +875,10 @@ Get: ApplicationGUID(self: Schema) -> Guid
 
 """
 
- Documentation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The overall description of the Schema.
+    Documentation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The overall description of the Schema.
 
 
 
@@ -780,8 +888,8 @@ Get: Documentation(self: Schema) -> str
 
 """
 
- GUID=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The identifier of the Schema.
+    GUID = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The identifier of the Schema.
 
    Setter made unavailable,because it would violate set-correctness
 
@@ -793,8 +901,10 @@ Get: GUID(self: Schema) -> Guid
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -804,8 +914,10 @@ Get: IsValidObject(self: Schema) -> bool
 
 """
 
- ReadAccessLevel=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Read access level of the schema.
+    ReadAccessLevel = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Read access level of the schema.
 
 
 
@@ -815,8 +927,10 @@ Get: ReadAccessLevel(self: Schema) -> AccessLevel
 
 """
 
- SchemaName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The user-friendly name of the Schema.
+    SchemaName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The user-friendly name of the Schema.
 
 
 
@@ -826,8 +940,8 @@ Get: SchemaName(self: Schema) -> str
 
 """
 
- VendorId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the third-party vendor that may access entities of this Schema under the
+    VendorId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The id of the third-party vendor that may access entities of this Schema under the
 
    Vendor access level.
 
@@ -839,8 +953,10 @@ Get: VendorId(self: Schema) -> str
 
 """
 
- WriteAccessLevel=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Write access level of the schema.
+    WriteAccessLevel = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Write access level of the schema.
 
 
 
@@ -851,17 +967,17 @@ Get: WriteAccessLevel(self: Schema) -> AccessLevel
 """
 
 
-
-class SchemaBuilder(object,IDisposable):
- """
+class SchemaBuilder(object, IDisposable):
+    """
  This class is used to create Schemas in the Extensible Storage framework.
 
  
 
  SchemaBuilder(guid: Guid)
  """
- def AcceptableName(self,name):
-  """
+
+    def AcceptableName(self, name):
+        """
   AcceptableName(self: SchemaBuilder,name: str) -> bool
 
   
@@ -874,9 +990,10 @@ class SchemaBuilder(object,IDisposable):
 
    Returns: True if the name is acceptable.
   """
-  pass
- def AddArrayField(self,fieldName,fieldType):
-  """
+        pass
+
+    def AddArrayField(self, fieldName, fieldType):
+        """
   AddArrayField(self: SchemaBuilder,fieldName: str,fieldType: Type) -> FieldBuilder
 
   
@@ -901,9 +1018,10 @@ class SchemaBuilder(object,IDisposable):
 
      the unit type if the field contains floating-point values.
   """
-  pass
- def AddMapField(self,fieldName,keyType,valueType):
-  """
+        pass
+
+    def AddMapField(self, fieldName, keyType, valueType):
+        """
   AddMapField(self: SchemaBuilder,fieldName: str,keyType: Type,valueType: Type) -> FieldBuilder
 
   
@@ -930,9 +1048,10 @@ class SchemaBuilder(object,IDisposable):
 
      the unit type if the field contains floating-point values.
   """
-  pass
- def AddSimpleField(self,fieldName,fieldType):
-  """
+        pass
+
+    def AddSimpleField(self, fieldName, fieldType):
+        """
   AddSimpleField(self: SchemaBuilder,fieldName: str,fieldType: Type) -> FieldBuilder
 
   
@@ -955,12 +1074,14 @@ class SchemaBuilder(object,IDisposable):
 
      the unit type if the field contains floating-point values.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: SchemaBuilder) """
-  pass
- def Finish(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: SchemaBuilder) """
+        pass
+
+    def Finish(self):
+        """
   Finish(self: SchemaBuilder) -> Schema
 
   
@@ -969,10 +1090,11 @@ class SchemaBuilder(object,IDisposable):
 
    Returns: The newly created Schema.
   """
-  pass
- @staticmethod
- def GUIDIsValid(guid):
-  """
+        pass
+
+    @staticmethod
+    def GUIDIsValid(guid):
+        """
   GUIDIsValid(guid: Guid) -> bool
 
   
@@ -985,9 +1107,10 @@ class SchemaBuilder(object,IDisposable):
 
    Returns: True if the GUID is valid
   """
-  pass
- def Ready(self):
-  """
+        pass
+
+    def Ready(self):
+        """
   Ready(self: SchemaBuilder) -> bool
 
   
@@ -996,12 +1119,14 @@ class SchemaBuilder(object,IDisposable):
 
    Returns: True if the SchemaBuilder has not yet been finished.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: SchemaBuilder,disposing: bool) """
-  pass
- def SetApplicationGUID(self,applicationGUID):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: SchemaBuilder,disposing: bool) """
+        pass
+
+    def SetApplicationGUID(self, applicationGUID):
+        """
   SetApplicationGUID(self: SchemaBuilder,applicationGUID: Guid) -> SchemaBuilder
 
   
@@ -1020,9 +1145,10 @@ class SchemaBuilder(object,IDisposable):
 
    Returns: The SchemaBuilder object may be used to add more settings.
   """
-  pass
- def SetDocumentation(self,documentation):
-  """
+        pass
+
+    def SetDocumentation(self, documentation):
+        """
   SetDocumentation(self: SchemaBuilder,documentation: str) -> SchemaBuilder
 
   
@@ -1035,9 +1161,10 @@ class SchemaBuilder(object,IDisposable):
 
    Returns: The SchemaBuilder object may be used to add more settings.
   """
-  pass
- def SetReadAccessLevel(self,readAccessLevel):
-  """
+        pass
+
+    def SetReadAccessLevel(self, readAccessLevel):
+        """
   SetReadAccessLevel(self: SchemaBuilder,readAccessLevel: AccessLevel) -> SchemaBuilder
 
   
@@ -1050,9 +1177,10 @@ class SchemaBuilder(object,IDisposable):
 
    Returns: The SchemaBuilder object may be used to add more settings.
   """
-  pass
- def SetSchemaName(self,schemaName):
-  """
+        pass
+
+    def SetSchemaName(self, schemaName):
+        """
   SetSchemaName(self: SchemaBuilder,schemaName: str) -> SchemaBuilder
 
   
@@ -1065,9 +1193,10 @@ class SchemaBuilder(object,IDisposable):
 
    Returns: The SchemaBuilder object may be used to add more settings.
   """
-  pass
- def SetVendorId(self,vendorId):
-  """
+        pass
+
+    def SetVendorId(self, vendorId):
+        """
   SetVendorId(self: SchemaBuilder,vendorId: str) -> SchemaBuilder
 
   
@@ -1088,9 +1217,10 @@ class SchemaBuilder(object,IDisposable):
 
    Returns: The SchemaBuilder object may be used to add more settings.
   """
-  pass
- def SetWriteAccessLevel(self,writeAccessLevel):
-  """
+        pass
+
+    def SetWriteAccessLevel(self, writeAccessLevel):
+        """
   SetWriteAccessLevel(self: SchemaBuilder,writeAccessLevel: AccessLevel) -> SchemaBuilder
 
   
@@ -1103,10 +1233,11 @@ class SchemaBuilder(object,IDisposable):
 
    Returns: The SchemaBuilder object may be used to add more settings.
   """
-  pass
- @staticmethod
- def VendorIdIsValid(vendorId):
-  """
+        pass
+
+    @staticmethod
+    def VendorIdIsValid(vendorId):
+        """
   VendorIdIsValid(vendorId: str) -> bool
 
   
@@ -1133,25 +1264,33 @@ class SchemaBuilder(object,IDisposable):
 
    Returns: True if the vendor ID is valid.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,guid):
-  """ __new__(cls: type,guid: Guid) """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, guid):
+        """ __new__(cls: type,guid: Guid) """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -1160,6 +1299,3 @@ Get: IsValidObject(self: SchemaBuilder) -> bool
 
 
 """
-
-
-

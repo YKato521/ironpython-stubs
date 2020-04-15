@@ -1,13 +1,14 @@
-class OpenFileDialog(FileDialog,IComponent,IDisposable):
- """
+class OpenFileDialog(FileDialog, IComponent, IDisposable):
+    """
  Prompts the user to open a file. This class cannot be inherited.
 
  
 
  OpenFileDialog()
  """
- def Dispose(self):
-  """
+
+    def Dispose(self):
+        """
   Dispose(self: Component,disposing: bool)
 
    Releases the unmanaged resources used by the System.ComponentModel.Component and optionally 
@@ -20,9 +21,10 @@ class OpenFileDialog(FileDialog,IComponent,IDisposable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -41,9 +43,10 @@ class OpenFileDialog(FileDialog,IComponent,IDisposable):
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def HookProc(self,*args):
-  """
+        pass
+
+    def HookProc(self, *args):
+        """
   HookProc(self: FileDialog,hWnd: IntPtr,msg: int,wparam: IntPtr,lparam: IntPtr) -> IntPtr
 
   
@@ -68,9 +71,10 @@ class OpenFileDialog(FileDialog,IComponent,IDisposable):
 
     if the default dialog box procedure ignores the message.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -101,9 +105,10 @@ class OpenFileDialog(FileDialog,IComponent,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def OnFileOk(self,*args):
-  """
+        pass
+
+    def OnFileOk(self, *args):
+        """
   OnFileOk(self: FileDialog,e: CancelEventArgs)
 
    Raises the System.Windows.Forms.FileDialog.FileOk event.
@@ -112,9 +117,10 @@ class OpenFileDialog(FileDialog,IComponent,IDisposable):
 
    e: A System.ComponentModel.CancelEventArgs that contains the event data.
   """
-  pass
- def OnHelpRequest(self,*args):
-  """
+        pass
+
+    def OnHelpRequest(self, *args):
+        """
   OnHelpRequest(self: CommonDialog,e: EventArgs)
 
    Raises the System.Windows.Forms.CommonDialog.HelpRequest event.
@@ -123,9 +129,10 @@ class OpenFileDialog(FileDialog,IComponent,IDisposable):
 
    e: An System.Windows.Forms.HelpEventArgs that provides the event data.
   """
-  pass
- def OpenFile(self):
-  """
+        pass
+
+    def OpenFile(self):
+        """
   OpenFile(self: OpenFileDialog) -> Stream
 
   
@@ -138,9 +145,10 @@ class OpenFileDialog(FileDialog,IComponent,IDisposable):
 
    Returns: A System.IO.Stream that specifies the read-only file selected by the user.
   """
-  pass
- def OwnerWndProc(self,*args):
-  """
+        pass
+
+    def OwnerWndProc(self, *args):
+        """
   OwnerWndProc(self: CommonDialog,hWnd: IntPtr,msg: int,wparam: IntPtr,lparam: IntPtr) -> IntPtr
 
   
@@ -163,16 +171,18 @@ class OpenFileDialog(FileDialog,IComponent,IDisposable):
 
    Returns: The result of the message processing,which is dependent on the message sent.
   """
-  pass
- def Reset(self):
-  """
+        pass
+
+    def Reset(self):
+        """
   Reset(self: OpenFileDialog)
 
    Resets all properties to their default values.
   """
-  pass
- def RunDialog(self,*args):
-  """
+        pass
+
+    def RunDialog(self, *args):
+        """
   RunDialog(self: FileDialog,hWndOwner: IntPtr) -> bool
 
   
@@ -185,37 +195,46 @@ class OpenFileDialog(FileDialog,IComponent,IDisposable):
 
    Returns: true if the file could be opened; otherwise,false.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- CheckFileExists=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the dialog box displays a warning if the user specifies a file name that does not exist.
+    CheckFileExists = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the dialog box displays a warning if the user specifies a file name that does not exist.
 
 
 
@@ -227,29 +246,33 @@ Set: CheckFileExists(self: OpenFileDialog)=value
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- Instance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the Win32 instance handle for the application.
+    Instance = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the Win32 instance handle for the application.
 
 
 
 """
 
- Multiselect=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the dialog box allows multiple files to be selected.
+    Multiselect = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the dialog box allows multiple files to be selected.
 
 
 
@@ -261,15 +284,17 @@ Set: Multiselect(self: OpenFileDialog)=value
 
 """
 
- Options=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets values to initialize the System.Windows.Forms.FileDialog.
+    Options = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets values to initialize the System.Windows.Forms.FileDialog.
 
 
 
 """
 
- ReadOnlyChecked=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the read-only check box is selected.
+    ReadOnlyChecked = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the read-only check box is selected.
 
 
 
@@ -281,8 +306,10 @@ Set: ReadOnlyChecked(self: OpenFileDialog)=value
 
 """
 
- SafeFileName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the file name and extension for the file selected in the dialog box. The file name does not include the path.
+    SafeFileName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the file name and extension for the file selected in the dialog box. The file name does not include the path.
 
 
 
@@ -292,8 +319,10 @@ Get: SafeFileName(self: OpenFileDialog) -> str
 
 """
 
- SafeFileNames=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an array of file names and extensions for all the selected files in the dialog box. The file names do not include the path.
+    SafeFileNames = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets an array of file names and extensions for all the selected files in the dialog box. The file names do not include the path.
 
 
 
@@ -303,8 +332,10 @@ Get: SafeFileNames(self: OpenFileDialog) -> Array[str]
 
 """
 
- ShowReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the dialog box contains a read-only check box.
+    ShowReadOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the dialog box contains a read-only check box.
 
 
 
@@ -315,5 +346,3 @@ Get: ShowReadOnly(self: OpenFileDialog) -> bool
 Set: ShowReadOnly(self: OpenFileDialog)=value
 
 """
-
-

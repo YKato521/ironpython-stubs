@@ -8,40 +8,46 @@
 # no functions
 # classes
 
+
 class StylusPlugIn(object):
- """ Represents a plug-in that can be added to a control's System.Windows.UIElement.StylusPlugIns property. """
- def OnAdded(self,*args):
-  """
+    """ Represents a plug-in that can be added to a control's System.Windows.UIElement.StylusPlugIns property. """
+
+    def OnAdded(self, *args):
+        """
   OnAdded(self: StylusPlugIn)
 
    Occurs when the System.Windows.Input.StylusPlugIns.StylusPlugIn is added to an element.
   """
-  pass
- def OnEnabledChanged(self,*args):
-  """
+        pass
+
+    def OnEnabledChanged(self, *args):
+        """
   OnEnabledChanged(self: StylusPlugIn)
 
    Occurs when the System.Windows.Input.StylusPlugIns.StylusPlugIn.Enabled property changes.
   """
-  pass
- def OnIsActiveForInputChanged(self,*args):
-  """
+        pass
+
+    def OnIsActiveForInputChanged(self, *args):
+        """
   OnIsActiveForInputChanged(self: StylusPlugIn)
 
    Occurs when the System.Windows.Input.StylusPlugIns.StylusPlugIn.IsActiveForInput property 
 
     changes.
   """
-  pass
- def OnRemoved(self,*args):
-  """
+        pass
+
+    def OnRemoved(self, *args):
+        """
   OnRemoved(self: StylusPlugIn)
 
    Occurs when the System.Windows.Input.StylusPlugIns.StylusPlugIn is removed from an element.
   """
-  pass
- def OnStylusDown(self,*args):
-  """
+        pass
+
+    def OnStylusDown(self, *args):
+        """
   OnStylusDown(self: StylusPlugIn,rawStylusInput: RawStylusInput)
 
    Occurs on a thread in the pen thread pool when the tablet pen touches the digitizer.
@@ -52,9 +58,10 @@ class StylusPlugIn(object):
 
     the pen.
   """
-  pass
- def OnStylusDownProcessed(self,*args):
-  """
+        pass
+
+    def OnStylusDownProcessed(self, *args):
+        """
   OnStylusDownProcessed(self: StylusPlugIn,callbackData: object,targetVerified: bool)
 
    Occurs on the application UI (user interface) thread when the tablet pen touches the digitizer.
@@ -71,9 +78,10 @@ class StylusPlugIn(object):
 
     System.Windows.Input.StylusPlugIns.StylusPlugIn; otherwise,false.
   """
-  pass
- def OnStylusEnter(self,*args):
-  """
+        pass
+
+    def OnStylusEnter(self, *args):
+        """
   OnStylusEnter(self: StylusPlugIn,rawStylusInput: RawStylusInput,confirmed: bool)
 
    Occurs on a pen thread when the cursor enters the bounds of an element.
@@ -88,9 +96,10 @@ class StylusPlugIn(object):
 
    confirmed: true if the pen actually entered the bounds of the element; otherwise,false.
   """
-  pass
- def OnStylusLeave(self,*args):
-  """
+        pass
+
+    def OnStylusLeave(self, *args):
+        """
   OnStylusLeave(self: StylusPlugIn,rawStylusInput: RawStylusInput,confirmed: bool)
 
    Occurs on a pen thread when the cursor leaves the bounds of an element.
@@ -105,9 +114,10 @@ class StylusPlugIn(object):
 
    confirmed: true if the pen actually left the bounds of the element; otherwise,false.
   """
-  pass
- def OnStylusMove(self,*args):
-  """
+        pass
+
+    def OnStylusMove(self, *args):
+        """
   OnStylusMove(self: StylusPlugIn,rawStylusInput: RawStylusInput)
 
    Occurs on a pen thread when the tablet pen moves on the digitizer.
@@ -118,9 +128,10 @@ class StylusPlugIn(object):
 
     the pen.
   """
-  pass
- def OnStylusMoveProcessed(self,*args):
-  """
+        pass
+
+    def OnStylusMoveProcessed(self, *args):
+        """
   OnStylusMoveProcessed(self: StylusPlugIn,callbackData: object,targetVerified: bool)
 
    Occurs on the application UI (user interface) thread when the tablet pen moves on the digitizer.
@@ -137,9 +148,10 @@ class StylusPlugIn(object):
 
     System.Windows.Input.StylusPlugIns.StylusPlugIn; otherwise,false.
   """
-  pass
- def OnStylusUp(self,*args):
-  """
+        pass
+
+    def OnStylusUp(self, *args):
+        """
   OnStylusUp(self: StylusPlugIn,rawStylusInput: RawStylusInput)
 
    Occurs on a pen thread when the user lifts the tablet pen from the digitizer.
@@ -150,9 +162,10 @@ class StylusPlugIn(object):
 
     the pen.
   """
-  pass
- def OnStylusUpProcessed(self,*args):
-  """
+        pass
+
+    def OnStylusUpProcessed(self, *args):
+        """
   OnStylusUpProcessed(self: StylusPlugIn,callbackData: object,targetVerified: bool)
 
    Occurs on the application UI (user interface) thread when the user lifts the tablet pen from the 
@@ -173,9 +186,10 @@ class StylusPlugIn(object):
 
     System.Windows.Input.StylusPlugIns.StylusPlugIn; otherwise,false.
   """
-  pass
- Element=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.UIElement to which the System.Windows.Input.StylusPlugIns.StylusPlugIn is attached.
+        pass
+
+    Element = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the System.Windows.UIElement to which the System.Windows.Input.StylusPlugIns.StylusPlugIn is attached.
 
 
 
@@ -185,8 +199,10 @@ Get: Element(self: StylusPlugIn) -> UIElement
 
 """
 
- ElementBounds=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the cached bounds of the element.
+    ElementBounds = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the cached bounds of the element.
 
 
 
@@ -196,8 +212,8 @@ Get: ElementBounds(self: StylusPlugIn) -> Rect
 
 """
 
- Enabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets whether the System.Windows.Input.StylusPlugIns.StylusPlugIn is active.
+    Enabled = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets whether the System.Windows.Input.StylusPlugIns.StylusPlugIn is active.
 
 
 
@@ -209,8 +225,10 @@ Set: Enabled(self: StylusPlugIn)=value
 
 """
 
- IsActiveForInput=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets whether the System.Windows.Input.StylusPlugIns.StylusPlugIn is able to accept input.
+    IsActiveForInput = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets whether the System.Windows.Input.StylusPlugIns.StylusPlugIn is able to accept input.
 
 
 
@@ -221,17 +239,17 @@ Get: IsActiveForInput(self: StylusPlugIn) -> bool
 """
 
 
-
 class DynamicRenderer(StylusPlugIn):
- """
+    """
  Draws ink on a surface as the user moves the tablet pen.
 
  
 
  DynamicRenderer()
  """
- def GetDispatcher(self,*args):
-  """
+
+    def GetDispatcher(self, *args):
+        """
   GetDispatcher(self: DynamicRenderer) -> Dispatcher
 
   
@@ -240,9 +258,10 @@ class DynamicRenderer(StylusPlugIn):
 
    Returns: A System.Windows.Threading.Dispatcher for the rendering thread.
   """
-  pass
- def OnDraw(self,*args):
-  """
+        pass
+
+    def OnDraw(self, *args):
+        """
   OnDraw(self: DynamicRenderer,drawingContext: DrawingContext,stylusPoints: StylusPointCollection,geometry: Geometry,fillBrush: Brush)
 
    Draws the ink in real-time so it appears to "flow" from the tablet pen or other pointing device.
@@ -257,18 +276,20 @@ class DynamicRenderer(StylusPlugIn):
 
    fillBrush: A Brush that specifies the appearance of the current stroke.
   """
-  pass
- def OnDrawingAttributesReplaced(self,*args):
-  """
+        pass
+
+    def OnDrawingAttributesReplaced(self, *args):
+        """
   OnDrawingAttributesReplaced(self: DynamicRenderer)
 
    Occurs when the System.Windows.Input.StylusPlugIns.DynamicRenderer.DrawingAttributes property 
 
     changes.
   """
-  pass
- def Reset(self,stylusDevice,stylusPoints):
-  """
+        pass
+
+    def Reset(self, stylusDevice, stylusPoints):
+        """
   Reset(self: DynamicRenderer,stylusDevice: StylusDevice,stylusPoints: StylusPointCollection)
 
    Clears rendering on the current stroke and redraws it.
@@ -279,9 +300,12 @@ class DynamicRenderer(StylusPlugIn):
 
    stylusPoints: The stylus points to be redrawn.
   """
-  pass
- DrawingAttributes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Windows.Ink.DrawingAttributes that specifies the appearance of the rendered ink.
+        pass
+
+    DrawingAttributes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Windows.Ink.DrawingAttributes that specifies the appearance of the rendered ink.
 
 
 
@@ -293,8 +317,10 @@ Set: DrawingAttributes(self: DynamicRenderer)=value
 
 """
 
- RootVisual=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the root visual for the System.Windows.Input.StylusPlugIns.DynamicRenderer.
+    RootVisual = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the root visual for the System.Windows.Input.StylusPlugIns.DynamicRenderer.
 
 
 
@@ -305,11 +331,11 @@ Get: RootVisual(self: DynamicRenderer) -> Visual
 """
 
 
-
 class RawStylusInput(object):
- """ Provides information about input from a System.Windows.Input.StylusDevice to a System.Windows.Input.StylusPlugIns.StylusPlugIn. """
- def GetStylusPoints(self):
-  """
+    """ Provides information about input from a System.Windows.Input.StylusDevice to a System.Windows.Input.StylusPlugIns.StylusPlugIn. """
+
+    def GetStylusPoints(self):
+        """
   GetStylusPoints(self: RawStylusInput) -> StylusPointCollection
 
   
@@ -318,9 +344,10 @@ class RawStylusInput(object):
 
    Returns: The stylus points that are collected from the stylus.
   """
-  pass
- def NotifyWhenProcessed(self,callbackData):
-  """
+        pass
+
+    def NotifyWhenProcessed(self, callbackData):
+        """
   NotifyWhenProcessed(self: RawStylusInput,callbackData: object)
 
    Subscribes to the application thread's corresponding stylus methods.
@@ -329,9 +356,10 @@ class RawStylusInput(object):
 
    callbackData: The data to pass to the application thread.
   """
-  pass
- def SetStylusPoints(self,stylusPoints):
-  """
+        pass
+
+    def SetStylusPoints(self, stylusPoints):
+        """
   SetStylusPoints(self: RawStylusInput,stylusPoints: StylusPointCollection)
 
    Sets the stylus points that are passed to the application thread.
@@ -340,9 +368,12 @@ class RawStylusInput(object):
 
    stylusPoints: The stylus points to pass to the application thread.
   """
-  pass
- StylusDeviceId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the identifier of the current stylus device.
+        pass
+
+    StylusDeviceId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the identifier of the current stylus device.
 
 
 
@@ -352,8 +383,10 @@ Get: StylusDeviceId(self: RawStylusInput) -> int
 
 """
 
- TabletDeviceId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the identifier of the current tablet device.
+    TabletDeviceId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the identifier of the current tablet device.
 
 
 
@@ -363,8 +396,8 @@ Get: TabletDeviceId(self: RawStylusInput) -> int
 
 """
 
- Timestamp=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the time at which the input occurred.
+    Timestamp = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the time at which the input occurred.
 
 
 
@@ -375,39 +408,54 @@ Get: Timestamp(self: RawStylusInput) -> int
 """
 
 
+class StylusPlugInCollection(
+    Collection[StylusPlugIn],
+    IList[StylusPlugIn],
+    ICollection[StylusPlugIn],
+    IEnumerable[StylusPlugIn],
+    IEnumerable,
+    IList,
+    ICollection,
+    IReadOnlyList[StylusPlugIn],
+    IReadOnlyCollection[StylusPlugIn],
+):
+    """ Represent a collection of System.Windows.Input.StylusPlugIns.StylusPlugIn objects. """
 
-class StylusPlugInCollection(Collection[StylusPlugIn],IList[StylusPlugIn],ICollection[StylusPlugIn],IEnumerable[StylusPlugIn],IEnumerable,IList,ICollection,IReadOnlyList[StylusPlugIn],IReadOnlyCollection[StylusPlugIn]):
- """ Represent a collection of System.Windows.Input.StylusPlugIns.StylusPlugIn objects. """
- def ClearItems(self,*args):
-  """ ClearItems(self: StylusPlugInCollection) """
-  pass
- def InsertItem(self,*args):
-  """ InsertItem(self: StylusPlugInCollection,index: int,plugIn: StylusPlugIn) """
-  pass
- def RemoveItem(self,*args):
-  """ RemoveItem(self: StylusPlugInCollection,index: int) """
-  pass
- def SetItem(self,*args):
-  """ SetItem(self: StylusPlugInCollection,index: int,plugIn: StylusPlugIn) """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Items=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a System.Collections.Generic.IList wrapper around the System.Collections.ObjectModel.Collection.
+    def ClearItems(self, *args):
+        """ ClearItems(self: StylusPlugInCollection) """
+        pass
+
+    def InsertItem(self, *args):
+        """ InsertItem(self: StylusPlugInCollection,index: int,plugIn: StylusPlugIn) """
+        pass
+
+    def RemoveItem(self, *args):
+        """ RemoveItem(self: StylusPlugInCollection,index: int) """
+        pass
+
+    def SetItem(self, *args):
+        """ SetItem(self: StylusPlugInCollection,index: int,plugIn: StylusPlugIn) """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Items = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a System.Collections.Generic.IList wrapper around the System.Collections.ObjectModel.Collection.
 
 
 
 """
-
-
-

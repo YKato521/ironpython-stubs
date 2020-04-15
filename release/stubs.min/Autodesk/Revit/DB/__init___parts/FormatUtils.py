@@ -1,8 +1,9 @@
 class FormatUtils(object):
- """ A utility class for formatting numbers with units. """
- @staticmethod
- def Format(document,unitType,value):
-  """
+    """ A utility class for formatting numbers with units. """
+
+    @staticmethod
+    def Format(document, unitType, value):
+        """
   Format(document: Document,unitType: UnitType,value: float) -> str
 
   
@@ -23,8 +24,8 @@ class FormatUtils(object):
 
    Returns: The formatted string.
   """
-  pass
- __all__=[
-  'Format',
- ]
+        pass
 
+    __all__ = [
+        "Format",
+    ]

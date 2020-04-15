@@ -1,5 +1,5 @@
-class RTree(object,IDisposable):
- """
+class RTree(object, IDisposable):
+    """
  Represents a spatial search structure based on implementations of the
 
     R-tree algorithm by Toni Gutman.
@@ -8,16 +8,18 @@ class RTree(object,IDisposable):
 
  RTree()
  """
- def Clear(self):
-  """
+
+    def Clear(self):
+        """
   Clear(self: RTree)
 
    Removes all elements.
   """
-  pass
- @staticmethod
- def CreateMeshFaceTree(mesh):
-  """
+        pass
+
+    @staticmethod
+    def CreateMeshFaceTree(mesh):
+        """
   CreateMeshFaceTree(mesh: Mesh) -> RTree
 
   
@@ -36,10 +38,11 @@ class RTree(object,IDisposable):
 
    Returns: A new tree,or null on error.
   """
-  pass
- @staticmethod
- def CreatePointCloudTree(cloud):
-  """
+        pass
+
+    @staticmethod
+    def CreatePointCloudTree(cloud):
+        """
   CreatePointCloudTree(cloud: PointCloud) -> RTree
 
   
@@ -52,16 +55,18 @@ class RTree(object,IDisposable):
 
    Returns: A new tree,or null on error.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: RTree)
 
    Actively reclaims unmanaged resources that this instance uses.
   """
-  pass
- def Insert(self,*__args):
-  """
+        pass
+
+    def Insert(self, *__args):
+        """
   Insert(self: RTree,box: BoundingBox,elementId: IntPtr) -> bool
 
   
@@ -146,9 +151,10 @@ class RTree(object,IDisposable):
 
    Returns: true if element was successfully inserted.
   """
-  pass
- def Remove(self,*__args):
-  """
+        pass
+
+    def Remove(self, *__args):
+        """
   Remove(self: RTree,box: BoundingBox,elementId: IntPtr) -> bool
 
   
@@ -219,9 +225,10 @@ class RTree(object,IDisposable):
 
    Returns: true if element was successfully removed.
   """
-  pass
- def Search(self,*__args):
-  """
+        pass
+
+    def Search(self, *__args):
+        """
   Search(self: RTree,sphere: Sphere,callback: EventHandler[RTreeEventArgs]) -> bool
 
   Search(self: RTree,sphere: Sphere,callback: EventHandler[RTreeEventArgs],tag: object) -> bool
@@ -230,35 +237,41 @@ class RTree(object,IDisposable):
 
   Search(self: RTree,box: BoundingBox,callback: EventHandler[RTreeEventArgs],tag: object) -> bool
   """
-  pass
- @staticmethod
- def SearchOverlaps(treeA,treeB,tolerance,callback):
-  """ SearchOverlaps(treeA: RTree,treeB: RTree,tolerance: float,callback: EventHandler[RTreeEventArgs]) -> bool """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    @staticmethod
+    def SearchOverlaps(treeA, treeB, tolerance, callback):
+        """ SearchOverlaps(treeA: RTree,treeB: RTree,tolerance: float,callback: EventHandler[RTreeEventArgs]) -> bool """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of items in this tree.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of items in this tree.
 
 
 
@@ -267,5 +280,3 @@ Get: Count(self: RTree) -> int
 
 
 """
-
-

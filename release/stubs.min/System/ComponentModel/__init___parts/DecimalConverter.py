@@ -1,13 +1,14 @@
 class DecimalConverter(BaseNumberConverter):
- """
+    """
  Provides a type converter to convert System.Decimal objects to and from various other representations.
 
  
 
  DecimalConverter()
  """
- def CanConvertTo(self,*__args):
-  """
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: DecimalConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -26,9 +27,10 @@ class DecimalConverter(BaseNumberConverter):
 
    Returns: true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: DecimalConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -47,4 +49,4 @@ class DecimalConverter(BaseNumberConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
+        pass

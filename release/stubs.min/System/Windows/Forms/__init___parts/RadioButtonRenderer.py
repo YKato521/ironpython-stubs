@@ -1,8 +1,9 @@
 class RadioButtonRenderer(object):
- """ Provides methods used to render an option button control (also known as a radio button) with or without visual styles. This class cannot be inherited. """
- @staticmethod
- def DrawParentBackground(g,bounds,childControl):
-  """
+    """ Provides methods used to render an option button control (also known as a radio button) with or without visual styles. This class cannot be inherited. """
+
+    @staticmethod
+    def DrawParentBackground(g, bounds, childControl):
+        """
   DrawParentBackground(g: Graphics,bounds: Rectangle,childControl: Control)
 
    Draws the background of a control's parent in the specified area.
@@ -17,10 +18,11 @@ class RadioButtonRenderer(object):
 
    childControl: The control whose parent's background will be drawn.
   """
-  pass
- @staticmethod
- def DrawRadioButton(g,glyphLocation,*__args):
-  """
+        pass
+
+    @staticmethod
+    def DrawRadioButton(g, glyphLocation, *__args):
+        """
   DrawRadioButton(g: Graphics,glyphLocation: Point,textBounds: Rectangle,radioButtonText: str,font: Font,image: Image,imageBounds: Rectangle,focused: bool,state: RadioButtonState)
 
    Draws an option button control (also known as a radio button) in the specified state and 
@@ -165,10 +167,11 @@ class RadioButtonRenderer(object):
 
     state of the option button.
   """
-  pass
- @staticmethod
- def GetGlyphSize(g,state):
-  """
+        pass
+
+    @staticmethod
+    def GetGlyphSize(g, state):
+        """
   GetGlyphSize(g: Graphics,state: RadioButtonState) -> Size
 
   
@@ -187,10 +190,11 @@ class RadioButtonRenderer(object):
 
    Returns: A System.Drawing.Size that represents the size,in pixels,of the option button glyph.
   """
-  pass
- @staticmethod
- def IsBackgroundPartiallyTransparent(state):
-  """
+        pass
+
+    @staticmethod
+    def IsBackgroundPartiallyTransparent(state):
+        """
   IsBackgroundPartiallyTransparent(state: RadioButtonState) -> bool
 
   
@@ -213,6 +217,6 @@ class RadioButtonRenderer(object):
 
     otherwise,false.
   """
-  pass
- RenderMatchingApplicationState=True
+        pass
 
+    RenderMatchingApplicationState = True

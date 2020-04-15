@@ -1,14 +1,15 @@
 class InstanceDefinition(object):
- # no doc
- def CreatePreviewBitmap(self,definedViewportProjection,*__args):
-  """
+    # no doc
+    def CreatePreviewBitmap(self, definedViewportProjection, *__args):
+        """
   CreatePreviewBitmap(self: InstanceDefinition,definedViewportProjection: DefinedViewportProjection,bitmapSize: Size) -> Bitmap
 
   CreatePreviewBitmap(self: InstanceDefinition,definedViewportProjection: DefinedViewportProjection,displayMode: DisplayMode,bitmapSize: Size) -> Bitmap
   """
-  pass
- def GetContainers(self):
-  """
+        pass
+
+    def GetContainers(self):
+        """
   GetContainers(self: InstanceDefinition) -> Array[InstanceDefinition]
 
   
@@ -17,9 +18,10 @@ class InstanceDefinition(object):
 
    Returns: An array of instance definitions. The returned array can be empty,but not null.
   """
-  pass
- def GetObjects(self):
-  """
+        pass
+
+    def GetObjects(self):
+        """
   GetObjects(self: InstanceDefinition) -> Array[RhinoObject]
 
   
@@ -28,9 +30,10 @@ class InstanceDefinition(object):
 
    Returns: An array of Rhino objects. The returned array can be empty,but not null.
   """
-  pass
- def GetReferences(self,wheretoLook):
-  """
+        pass
+
+    def GetReferences(self, wheretoLook):
+        """
   GetReferences(self: InstanceDefinition,wheretoLook: int) -> Array[InstanceObject]
 
   
@@ -53,9 +56,10 @@ class InstanceDefinition(object):
 
    Returns: An array of instance objects. The returned array can be empty,but not null.
   """
-  pass
- def InUse(self,wheretoLook):
-  """
+        pass
+
+    def InUse(self, wheretoLook):
+        """
   InUse(self: InstanceDefinition,wheretoLook: int) -> bool
 
   
@@ -72,9 +76,10 @@ class InstanceDefinition(object):
 
    Returns: true if the instance definition is used; otherwise false.
   """
-  pass
- def Object(self,index):
-  """
+        pass
+
+    def Object(self, index):
+        """
   Object(self: InstanceDefinition,index: int) -> RhinoObject
 
   
@@ -91,9 +96,10 @@ class InstanceDefinition(object):
 
     that references this definition.count the number of references to this instance.
   """
-  pass
- def UsesDefinition(self,otherIdefIndex):
-  """
+        pass
+
+    def UsesDefinition(self, otherIdefIndex):
+        """
   UsesDefinition(self: InstanceDefinition,otherIdefIndex: int) -> int
 
   
@@ -116,9 +122,12 @@ class InstanceDefinition(object):
 
     the returned value is the nesting depth.
   """
-  pass
- ArchiveFileStatus=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the archive file status of a linked instance definition.
+        pass
+
+    ArchiveFileStatus = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the archive file status of a linked instance definition.
 
 
 
@@ -128,22 +137,24 @@ Get: ArchiveFileStatus(self: InstanceDefinition) -> InstanceDefinitionArchiveFil
 
 """
 
- Description=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Description(self: InstanceDefinition) -> str
+    Description = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: Description(self: InstanceDefinition) -> str
 
 
 
 """
 
- Id=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Id(self: InstanceDefinition) -> Guid
+    Id = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Id(self: InstanceDefinition) -> Guid
 
 
 
 """
 
- Index=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Index of this instance definition in the index definition table.
+    Index = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Index of this instance definition in the index definition table.
 
 
 
@@ -153,15 +164,17 @@ Get: Index(self: InstanceDefinition) -> int
 
 """
 
- IsDeleted=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsDeleted(self: InstanceDefinition) -> bool
+    IsDeleted = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: IsDeleted(self: InstanceDefinition) -> bool
 
 
 
 """
 
- IsReference=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """An object from a work session reference model is reference a
+    IsReference = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """An object from a work session reference model is reference a
 
    reference object and cannot be modified.  An object is a reference
 
@@ -175,29 +188,33 @@ Get: IsReference(self: InstanceDefinition) -> bool
 
 """
 
- IsTenuous=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsTenuous(self: InstanceDefinition) -> bool
+    IsTenuous = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: IsTenuous(self: InstanceDefinition) -> bool
 
 
 
 """
 
- LayerStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: LayerStyle(self: InstanceDefinition) -> InstanceDefinitionLayerStyle
+    LayerStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: LayerStyle(self: InstanceDefinition) -> InstanceDefinitionLayerStyle
 
 
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Name(self: InstanceDefinition) -> str
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Name(self: InstanceDefinition) -> str
 
 
 
 """
 
- ObjectCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Number of objects this definition uses. This counts the objects that are used to define the geometry.
+    ObjectCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Number of objects this definition uses. This counts the objects that are used to define the geometry.
 
    This does NOT count the number of references to this instance definition.
 
@@ -209,8 +226,10 @@ Get: ObjectCount(self: InstanceDefinition) -> int
 
 """
 
- SkipNestedLinkedDefinitions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Controls how much geometry is read when a linked InstanceDefinition is updated.
+    SkipNestedLinkedDefinitions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Controls how much geometry is read when a linked InstanceDefinition is updated.
 
 
 
@@ -220,22 +239,26 @@ Get: SkipNestedLinkedDefinitions(self: InstanceDefinition) -> bool
 
 """
 
- SourceArchive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: SourceArchive(self: InstanceDefinition) -> str
+    SourceArchive = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: SourceArchive(self: InstanceDefinition) -> str
 
 
 
 """
 
- UpdateType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: UpdateType(self: InstanceDefinition) -> InstanceDefinitionUpdateType
+    UpdateType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: UpdateType(self: InstanceDefinition) -> InstanceDefinitionUpdateType
 
 
 
 """
 
- Url=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The hyperlink URL that is executed when the UrlDescription hyperlink is clicked on in the Insert and Block UI
+    Url = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The hyperlink URL that is executed when the UrlDescription hyperlink is clicked on in the Insert and Block UI
 
 
 
@@ -245,8 +268,10 @@ Get: Url(self: InstanceDefinition) -> str
 
 """
 
- UrlDescription=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The URL description displayed as a hyperlink in the Insert and Block UI
+    UrlDescription = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The URL description displayed as a hyperlink in the Insert and Block UI
 
 
 
@@ -255,5 +280,3 @@ Get: UrlDescription(self: InstanceDefinition) -> str
 
 
 """
-
-

@@ -1,7 +1,8 @@
-class GeometryBase(CommonObject,IDisposable,ISerializable):
- """ Provides a common base for most geometric classes. This class is abstract. """
- def ComponentIndex(self):
-  """
+class GeometryBase(CommonObject, IDisposable, ISerializable):
+    """ Provides a common base for most geometric classes. This class is abstract. """
+
+    def ComponentIndex(self):
+        """
   ComponentIndex(self: GeometryBase) -> ComponentIndex
 
   
@@ -26,9 +27,10 @@ class GeometryBase(CommonObject,IDisposable,ISerializable):
 
        and m_index=-1.
   """
-  pass
- def ConstructConstObject(self,*args):
-  """
+        pass
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -39,9 +41,10 @@ class GeometryBase(CommonObject,IDisposable,ISerializable):
 
    subobject_index: The subobject index.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: CommonObject,disposing: bool)
 
    For derived class implementers.
@@ -66,9 +69,10 @@ class GeometryBase(CommonObject,IDisposable,ISerializable):
 
     finalizer.
   """
-  pass
- def Duplicate(self):
-  """
+        pass
+
+    def Duplicate(self):
+        """
   Duplicate(self: GeometryBase) -> GeometryBase
 
   
@@ -77,9 +81,10 @@ class GeometryBase(CommonObject,IDisposable,ISerializable):
 
    Returns: An object of the same type as this,with the same properties and behavior.
   """
-  pass
- def DuplicateShallow(self):
-  """
+        pass
+
+    def DuplicateShallow(self):
+        """
   DuplicateShallow(self: GeometryBase) -> GeometryBase
 
   
@@ -118,9 +123,10 @@ class GeometryBase(CommonObject,IDisposable,ISerializable):
 
     implementing classes.
   """
-  pass
- def GetBoundingBox(self,*__args):
-  """
+        pass
+
+    def GetBoundingBox(self, *__args):
+        """
   GetBoundingBox(self: GeometryBase,plane: Plane) -> BoundingBox
 
   
@@ -203,9 +209,10 @@ class GeometryBase(CommonObject,IDisposable,ISerializable):
 
     BoundingBox.Empty if not bounding box could be found.
   """
-  pass
- def GetUserString(self,key):
-  """
+        pass
+
+    def GetUserString(self, key):
+        """
   GetUserString(self: GeometryBase,key: str) -> str
 
   
@@ -218,9 +225,10 @@ class GeometryBase(CommonObject,IDisposable,ISerializable):
 
    Returns: string associated with the key if successful. null if no key was found.
   """
-  pass
- def GetUserStrings(self):
-  """
+        pass
+
+    def GetUserStrings(self):
+        """
   GetUserStrings(self: GeometryBase) -> NameValueCollection
 
   
@@ -229,9 +237,10 @@ class GeometryBase(CommonObject,IDisposable,ISerializable):
 
    Returns: A new collection.
   """
-  pass
- def MakeDeformable(self):
-  """
+        pass
+
+    def MakeDeformable(self):
+        """
   MakeDeformable(self: GeometryBase) -> bool
 
   
@@ -250,9 +259,10 @@ class GeometryBase(CommonObject,IDisposable,ISerializable):
 
     already deformable or was converted into a deformable object.
   """
-  pass
- def MemoryEstimate(self):
-  """
+        pass
+
+    def MemoryEstimate(self):
+        """
   MemoryEstimate(self: GeometryBase) -> UInt32
 
   
@@ -261,9 +271,10 @@ class GeometryBase(CommonObject,IDisposable,ISerializable):
 
    Returns: An estimated memory footprint.
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: CommonObject)
 
    For derived classes implementers.
@@ -272,16 +283,18 @@ class GeometryBase(CommonObject,IDisposable,ISerializable):
 
     instance from being const.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: GeometryBase)
 
    Is called when a non-const operation occurs.
   """
-  pass
- def Rotate(self,angleRadians,rotationAxis,rotationCenter):
-  """
+        pass
+
+    def Rotate(self, angleRadians, rotationAxis, rotationCenter):
+        """
   Rotate(self: GeometryBase,angleRadians: float,rotationAxis: Vector3d,rotationCenter: Point3d) -> bool
 
   
@@ -304,9 +317,10 @@ class GeometryBase(CommonObject,IDisposable,ISerializable):
 
    Returns: true if geometry successfully rotated.
   """
-  pass
- def Scale(self,scaleFactor):
-  """
+        pass
+
+    def Scale(self, scaleFactor):
+        """
   Scale(self: GeometryBase,scaleFactor: float) -> bool
 
   
@@ -319,9 +333,10 @@ class GeometryBase(CommonObject,IDisposable,ISerializable):
 
    Returns: true if geometry successfully scaled.
   """
-  pass
- def SetUserString(self,key,value):
-  """
+        pass
+
+    def SetUserString(self, key, value):
+        """
   SetUserString(self: GeometryBase,key: str,value: str) -> bool
 
   
@@ -336,9 +351,10 @@ class GeometryBase(CommonObject,IDisposable,ISerializable):
 
    Returns: true on success.
   """
-  pass
- def Transform(self,xform):
-  """
+        pass
+
+    def Transform(self, xform):
+        """
   Transform(self: GeometryBase,xform: Transform) -> bool
 
   
@@ -365,9 +381,10 @@ class GeometryBase(CommonObject,IDisposable,ISerializable):
 
    Returns: true if geometry successfully transformed.
   """
-  pass
- def Translate(self,*__args):
-  """
+        pass
+
+    def Translate(self, *__args):
+        """
   Translate(self: GeometryBase,x: float,y: float,z: float) -> bool
 
   
@@ -396,34 +413,42 @@ class GeometryBase(CommonObject,IDisposable,ISerializable):
 
    Returns: true if geometry successfully translated.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """ __new__(cls: type,info: SerializationInfo,context: StreamingContext) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- HasBrepForm=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns true if the Brep.TryConvertBrep function will be successful for this object
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """ __new__(cls: type,info: SerializationInfo,context: StreamingContext) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    HasBrepForm = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns true if the Brep.TryConvertBrep function will be successful for this object
 
 
 
@@ -433,8 +458,10 @@ Get: HasBrepForm(self: GeometryBase) -> bool
 
 """
 
- IsDeformable=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """true if object can be accurately modified with "squishy" transformations like
+    IsDeformable = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """true if object can be accurately modified with "squishy" transformations like
 
    projections,shears,and non-uniform scaling.
 
@@ -446,8 +473,10 @@ Get: IsDeformable(self: GeometryBase) -> bool
 
 """
 
- IsDocumentControlled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If true this object may not be modified. Any properties or functions that attempt
+    IsDocumentControlled = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """If true this object may not be modified. Any properties or functions that attempt
 
    to modify this object when it is set to "IsReadOnly" will throw a NotSupportedException.
 
@@ -459,8 +488,10 @@ Get: IsDocumentControlled(self: GeometryBase) -> bool
 
 """
 
- ObjectType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Useful for switch statements that need to differentiate between
+    ObjectType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Useful for switch statements that need to differentiate between
 
    basic object types like points,curves,surfaces,and so on.
 
@@ -472,8 +503,10 @@ Get: ObjectType(self: GeometryBase) -> ObjectType
 
 """
 
- UserStringCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the amount of user strings.
+    UserStringCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the amount of user strings.
 
 
 
@@ -482,5 +515,3 @@ Get: UserStringCount(self: GeometryBase) -> int
 
 
 """
-
-

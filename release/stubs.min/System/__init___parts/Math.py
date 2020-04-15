@@ -1,8 +1,9 @@
 class Math(object):
- """ Provides constants and static methods for trigonometric,logarithmic,and other common mathematical functions. """
- @staticmethod
- def Abs(value):
-  """
+    """ Provides constants and static methods for trigonometric,logarithmic,and other common mathematical functions. """
+
+    @staticmethod
+    def Abs(value):
+        """
   Abs(value: Single) -> Single
 
   
@@ -102,10 +103,11 @@ class Math(object):
   
 
     """
-  pass
- @staticmethod
- def Acos(d):
-  """
+        pass
+
+    @staticmethod
+    def Acos(d):
+        """
   Acos(d: float) -> float
 
   
@@ -122,10 +124,11 @@ class Math(object):
 
       equals System.Double.NaN.
   """
-  pass
- @staticmethod
- def Asin(d):
-  """
+        pass
+
+    @staticmethod
+    def Asin(d):
+        """
   Asin(d: float) -> float
 
   
@@ -142,10 +145,11 @@ class Math(object):
 
       1 or d equals System.Double.NaN.
   """
-  pass
- @staticmethod
- def Atan(d):
-  """
+        pass
+
+    @staticmethod
+    def Atan(d):
+        """
   Atan(d: float) -> float
 
   
@@ -158,10 +162,11 @@ class Math(object):
 
           System.Double.PositiveInfinity.
   """
-  pass
- @staticmethod
- def Atan2(y,x):
-  """
+        pass
+
+    @staticmethod
+    def Atan2(y, x):
+        """
   Atan2(y: float,x: float) -> float
 
   
@@ -178,10 +183,11 @@ class Math(object):
 
     System.Double.NaN.
   """
-  pass
- @staticmethod
- def BigMul(a,b):
-  """
+        pass
+
+    @staticmethod
+    def BigMul(a, b):
+        """
   BigMul(a: int,b: int) -> Int64
 
   
@@ -196,10 +202,11 @@ class Math(object):
 
    Returns: The number containing the product of the specified numbers.
   """
-  pass
- @staticmethod
- def Ceiling(*__args):
-  """
+        pass
+
+    @staticmethod
+    def Ceiling(*__args):
+        """
   Ceiling(a: float) -> float
 
   
@@ -240,10 +247,11 @@ class Math(object):
 
     System.Decimal instead of an integral type.
   """
-  pass
- @staticmethod
- def Cos(d):
-  """
+        pass
+
+    @staticmethod
+    def Cos(d):
+        """
   Cos(d: float) -> float
 
   
@@ -258,10 +266,11 @@ class Math(object):
 
     System.Double.PositiveInfinity,this method returns System.Double.NaN.
   """
-  pass
- @staticmethod
- def Cosh(value):
-  """
+        pass
+
+    @staticmethod
+    def Cosh(value):
+        """
   Cosh(value: float) -> float
 
   
@@ -278,10 +287,11 @@ class Math(object):
 
     System.Double.NaN,System.Double.NaN is returned.
   """
-  pass
- @staticmethod
- def DivRem(a,b,result):
-  """
+        pass
+
+    @staticmethod
+    def DivRem(a, b, result):
+        """
   DivRem(a: Int64,b: Int64) -> (Int64,Int64)
 
   
@@ -318,10 +328,11 @@ class Math(object):
 
    Returns: The quotient of the specified numbers.
   """
-  pass
- @staticmethod
- def Exp(d):
-  """
+        pass
+
+    @staticmethod
+    def Exp(d):
+        """
   Exp(d: float) -> float
 
   
@@ -338,10 +349,11 @@ class Math(object):
 
     System.Double.NegativeInfinity,0 is returned.
   """
-  pass
- @staticmethod
- def Floor(d):
-  """
+        pass
+
+    @staticmethod
+    def Floor(d):
+        """
   Floor(d: float) -> float
 
   
@@ -374,10 +386,11 @@ class Math(object):
 
    Returns: The largest integer less than or equal to d.
   """
-  pass
- @staticmethod
- def IEEERemainder(x,y):
-  """
+        pass
+
+    @staticmethod
+    def IEEERemainder(x, y):
+        """
   IEEERemainder(x: float,y: float) -> float
 
   
@@ -402,10 +415,11 @@ class Math(object):
 
     returned.
   """
-  pass
- @staticmethod
- def Log(*__args):
-  """
+        pass
+
+    @staticmethod
+    def Log(*__args):
+        """
   Log(a: float,newBase: float) -> float
 
   
@@ -452,10 +466,11 @@ class Math(object):
 
     System.Double.PositiveInfinitySystem.Double.PositiveInfinity
   """
-  pass
- @staticmethod
- def Log10(d):
-  """
+        pass
+
+    @staticmethod
+    def Log10(d):
+        """
   Log10(d: float) -> float
 
   
@@ -474,10 +489,11 @@ class Math(object):
 
     System.Double.PositiveInfinitySystem.Double.PositiveInfinity
   """
-  pass
- @staticmethod
- def Max(val1,val2):
-  """
+        pass
+
+    @staticmethod
+    def Max(val1, val2):
+        """
   Max(val1: UInt64,val2: UInt64) -> UInt64
 
   
@@ -640,10 +656,11 @@ class Math(object):
 
    Returns: Parameter val1 or val2,whichever is larger.
   """
-  pass
- @staticmethod
- def Min(val1,val2):
-  """
+        pass
+
+    @staticmethod
+    def Min(val1, val2):
+        """
   Min(val1: UInt64,val2: UInt64) -> UInt64
 
   
@@ -806,10 +823,11 @@ class Math(object):
 
    Returns: Parameter val1 or val2,whichever is smaller.
   """
-  pass
- @staticmethod
- def Pow(x,y):
-  """
+        pass
+
+    @staticmethod
+    def Pow(x, y):
+        """
   Pow(x: float,y: float) -> float
 
   
@@ -824,10 +842,11 @@ class Math(object):
 
    Returns: The number x raised to the power y.
   """
-  pass
- @staticmethod
- def Round(*__args):
-  """
+        pass
+
+    @staticmethod
+    def Round(*__args):
+        """
   Round(d: Decimal,decimals: int) -> Decimal
 
   
@@ -982,10 +1001,11 @@ class Math(object):
 
     the other odd,then mode determines which of the two is returned.
   """
-  pass
- @staticmethod
- def Sign(value):
-  """
+        pass
+
+    @staticmethod
+    def Sign(value):
+        """
   Sign(value: Single) -> int
 
   
@@ -1096,10 +1116,11 @@ class Math(object):
 
     -1 value is less than zero. 0 value is equal to zero. 1 value is greater than zero.
   """
-  pass
- @staticmethod
- def Sin(a):
-  """
+        pass
+
+    @staticmethod
+    def Sin(a):
+        """
   Sin(a: float) -> float
 
   
@@ -1114,10 +1135,11 @@ class Math(object):
 
     System.Double.PositiveInfinity,this method returns System.Double.NaN.
   """
-  pass
- @staticmethod
- def Sinh(value):
-  """
+        pass
+
+    @staticmethod
+    def Sinh(value):
+        """
   Sinh(value: float) -> float
 
   
@@ -1134,10 +1156,11 @@ class Math(object):
 
     to value.
   """
-  pass
- @staticmethod
- def Sqrt(d):
-  """
+        pass
+
+    @staticmethod
+    def Sqrt(d):
+        """
   Sqrt(d: float) -> float
 
   
@@ -1156,10 +1179,11 @@ class Math(object):
 
     System.Double.PositiveInfinitySystem.Double.PositiveInfinity
   """
-  pass
- @staticmethod
- def Tan(a):
-  """
+        pass
+
+    @staticmethod
+    def Tan(a):
+        """
   Tan(a: float) -> float
 
   
@@ -1174,10 +1198,11 @@ class Math(object):
 
     System.Double.PositiveInfinity,this method returns System.Double.NaN.
   """
-  pass
- @staticmethod
- def Tanh(value):
-  """
+        pass
+
+    @staticmethod
+    def Tanh(value):
+        """
   Tanh(value: float) -> float
 
   
@@ -1194,10 +1219,11 @@ class Math(object):
 
     If value is equal to System.Double.NaN,this method returns System.Double.NaN.
   """
-  pass
- @staticmethod
- def Truncate(d):
-  """
+        pass
+
+    @staticmethod
+    def Truncate(d):
+        """
   Truncate(d: float) -> float
 
   
@@ -1232,37 +1258,37 @@ class Math(object):
 
     discarded.
   """
-  pass
- E=2.7182818284590451
- PI=3.1415926535897931
- __all__=[
-  'Abs',
-  'Acos',
-  'Asin',
-  'Atan',
-  'Atan2',
-  'BigMul',
-  'Ceiling',
-  'Cos',
-  'Cosh',
-  'DivRem',
-  'E',
-  'Exp',
-  'Floor',
-  'IEEERemainder',
-  'Log',
-  'Log10',
-  'Max',
-  'Min',
-  'PI',
-  'Pow',
-  'Round',
-  'Sign',
-  'Sin',
-  'Sinh',
-  'Sqrt',
-  'Tan',
-  'Tanh',
-  'Truncate',
- ]
+        pass
 
+    E = 2.7182818284590451
+    PI = 3.1415926535897931
+    __all__ = [
+        "Abs",
+        "Acos",
+        "Asin",
+        "Atan",
+        "Atan2",
+        "BigMul",
+        "Ceiling",
+        "Cos",
+        "Cosh",
+        "DivRem",
+        "E",
+        "Exp",
+        "Floor",
+        "IEEERemainder",
+        "Log",
+        "Log10",
+        "Max",
+        "Min",
+        "PI",
+        "Pow",
+        "Round",
+        "Sign",
+        "Sin",
+        "Sinh",
+        "Sqrt",
+        "Tan",
+        "Tanh",
+        "Truncate",
+    ]

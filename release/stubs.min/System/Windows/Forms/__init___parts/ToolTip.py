@@ -1,5 +1,5 @@
-class ToolTip(Component,IComponent,IDisposable,IExtenderProvider):
- """
+class ToolTip(Component, IComponent, IDisposable, IExtenderProvider):
+    """
  Represents a small rectangular pop-up window that displays a brief description of a control's purpose when the user rests the pointer on the control.
 
  
@@ -8,8 +8,9 @@ class ToolTip(Component,IComponent,IDisposable,IExtenderProvider):
 
  ToolTip()
  """
- def CanExtend(self,target):
-  """
+
+    def CanExtend(self, target):
+        """
   CanExtend(self: ToolTip,target: object) -> bool
 
   
@@ -24,9 +25,10 @@ class ToolTip(Component,IComponent,IDisposable,IExtenderProvider):
 
     otherwise,false.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: ToolTip,disposing: bool)
 
    Disposes of the System.Windows.Forms.ToolTip component.
@@ -35,9 +37,10 @@ class ToolTip(Component,IComponent,IDisposable,IExtenderProvider):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -56,9 +59,10 @@ class ToolTip(Component,IComponent,IDisposable,IExtenderProvider):
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def GetToolTip(self,control):
-  """
+        pass
+
+    def GetToolTip(self, control):
+        """
   GetToolTip(self: ToolTip,control: Control) -> str
 
   
@@ -71,9 +75,10 @@ class ToolTip(Component,IComponent,IDisposable,IExtenderProvider):
 
    Returns: A System.String containing the ToolTip text for the specified control.
   """
-  pass
- def Hide(self,win):
-  """
+        pass
+
+    def Hide(self, win):
+        """
   Hide(self: ToolTip,win: IWin32Window)
 
    Hides the specified ToolTip window.
@@ -84,9 +89,10 @@ class ToolTip(Component,IComponent,IDisposable,IExtenderProvider):
 
     associated with.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -117,16 +123,18 @@ class ToolTip(Component,IComponent,IDisposable,IExtenderProvider):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def RemoveAll(self):
-  """
+        pass
+
+    def RemoveAll(self):
+        """
   RemoveAll(self: ToolTip)
 
    Removes all ToolTip text currently associated with the ToolTip component.
   """
-  pass
- def SetToolTip(self,control,caption):
-  """
+        pass
+
+    def SetToolTip(self, control, caption):
+        """
   SetToolTip(self: ToolTip,control: Control,caption: str)
 
    Associates ToolTip text with the specified control.
@@ -137,9 +145,10 @@ class ToolTip(Component,IComponent,IDisposable,IExtenderProvider):
 
    caption: The ToolTip text to display when the pointer is on the control.
   """
-  pass
- def Show(self,text,window,*__args):
-  """
+        pass
+
+    def Show(self, text, window, *__args):
+        """
   Show(self: ToolTip,text: str,window: IWin32Window,point: Point,duration: int)
 
    Sets the ToolTip text associated with the specified control,and then displays the ToolTip for 
@@ -260,16 +269,18 @@ class ToolTip(Component,IComponent,IDisposable,IExtenderProvider):
 
     the associated control window,to display the ToolTip.
   """
-  pass
- def StopTimer(self,*args):
-  """
+        pass
+
+    def StopTimer(self, *args):
+        """
   StopTimer(self: ToolTip)
 
    Stops the timer that hides displayed ToolTips.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: ToolTip) -> str
 
   
@@ -278,38 +289,44 @@ class ToolTip(Component,IComponent,IDisposable,IExtenderProvider):
 
    Returns: A System.String containing a description of the System.Windows.Forms.ToolTip.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,cont=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, cont=None):
+        """
   __new__(cls: type,cont: IContainer)
 
   __new__(cls: type)
   """
-  pass
- def __str__(self,*args):
-  pass
- Active=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the ToolTip is currently active.
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Active = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the ToolTip is currently active.
 
 
 
@@ -321,8 +338,10 @@ Set: Active(self: ToolTip)=value
 
 """
 
- AutomaticDelay=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the automatic delay for the ToolTip.
+    AutomaticDelay = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the automatic delay for the ToolTip.
 
 
 
@@ -334,8 +353,10 @@ Set: AutomaticDelay(self: ToolTip)=value
 
 """
 
- AutoPopDelay=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the period of time the ToolTip remains visible if the pointer is stationary on a control with specified ToolTip text.
+    AutoPopDelay = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the period of time the ToolTip remains visible if the pointer is stationary on a control with specified ToolTip text.
 
 
 
@@ -347,8 +368,8 @@ Set: AutoPopDelay(self: ToolTip)=value
 
 """
 
- BackColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the background color for the ToolTip.
+    BackColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the background color for the ToolTip.
 
 
 
@@ -360,36 +381,42 @@ Set: BackColor(self: ToolTip)=value
 
 """
 
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- CreateParams=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the creation parameters for the ToolTip window.
+    CreateParams = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the creation parameters for the ToolTip window.
 
 
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- ForeColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the foreground color for the ToolTip.
+    ForeColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the foreground color for the ToolTip.
 
 
 
@@ -401,8 +428,10 @@ Set: ForeColor(self: ToolTip)=value
 
 """
 
- InitialDelay=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the time that passes before the ToolTip appears.
+    InitialDelay = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the time that passes before the ToolTip appears.
 
 
 
@@ -414,8 +443,8 @@ Set: InitialDelay(self: ToolTip)=value
 
 """
 
- IsBalloon=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the ToolTip should use a balloon window.
+    IsBalloon = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the ToolTip should use a balloon window.
 
 
 
@@ -427,8 +456,8 @@ Set: IsBalloon(self: ToolTip)=value
 
 """
 
- OwnerDraw=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the ToolTip is drawn by the operating system or by code that you provide.
+    OwnerDraw = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the ToolTip is drawn by the operating system or by code that you provide.
 
 
 
@@ -440,8 +469,10 @@ Set: OwnerDraw(self: ToolTip)=value
 
 """
 
- ReshowDelay=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the length of time that must transpire before subsequent ToolTip windows appear as the pointer moves from one control to another.
+    ReshowDelay = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the length of time that must transpire before subsequent ToolTip windows appear as the pointer moves from one control to another.
 
 
 
@@ -453,8 +484,10 @@ Set: ReshowDelay(self: ToolTip)=value
 
 """
 
- ShowAlways=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether a ToolTip window is displayed,even when its parent control is not active.
+    ShowAlways = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether a ToolTip window is displayed,even when its parent control is not active.
 
 
 
@@ -466,8 +499,10 @@ Set: ShowAlways(self: ToolTip)=value
 
 """
 
- StripAmpersands=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that determines how ampersand (&) characters are treated.
+    StripAmpersands = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that determines how ampersand (&) characters are treated.
 
 
 
@@ -479,8 +514,8 @@ Set: StripAmpersands(self: ToolTip)=value
 
 """
 
- Tag=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the object that contains programmer-supplied data associated with the System.Windows.Forms.ToolTip.
+    Tag = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the object that contains programmer-supplied data associated with the System.Windows.Forms.ToolTip.
 
 
 
@@ -492,8 +527,10 @@ Set: Tag(self: ToolTip)=value
 
 """
 
- ToolTipIcon=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that defines the type of icon to be displayed alongside the ToolTip text.
+    ToolTipIcon = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that defines the type of icon to be displayed alongside the ToolTip text.
 
 
 
@@ -505,8 +542,10 @@ Set: ToolTipIcon(self: ToolTip)=value
 
 """
 
- ToolTipTitle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a title for the ToolTip window.
+    ToolTipTitle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a title for the ToolTip window.
 
 
 
@@ -518,8 +557,10 @@ Set: ToolTipTitle(self: ToolTip)=value
 
 """
 
- UseAnimation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value determining whether an animation effect should be used when displaying the ToolTip.
+    UseAnimation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value determining whether an animation effect should be used when displaying the ToolTip.
 
 
 
@@ -531,8 +572,8 @@ Set: UseAnimation(self: ToolTip)=value
 
 """
 
- UseFading=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value determining whether a fade effect should be used when displaying the ToolTip.
+    UseFading = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value determining whether a fade effect should be used when displaying the ToolTip.
 
 
 
@@ -544,7 +585,5 @@ Set: UseFading(self: ToolTip)=value
 
 """
 
-
- Draw=None
- Popup=None
-
+    Draw = None
+    Popup = None

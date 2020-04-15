@@ -1,29 +1,32 @@
-class BrepFace(SurfaceProxy,IDisposable,ISerializable):
- """
+class BrepFace(SurfaceProxy, IDisposable, ISerializable):
+    """
  Provides strongly-typed access to brep faces.
 
     A Brep face is composed of one surface and trimming curves.
  """
- def AdjacentEdges(self):
-  """
+
+    def AdjacentEdges(self):
+        """
   AdjacentEdges(self: BrepFace) -> Array[int]
 
   
 
    Gets the indices of all the BrepEdges that delineate this Face.
   """
-  pass
- def AdjacentFaces(self):
-  """
+        pass
+
+    def AdjacentFaces(self):
+        """
   AdjacentFaces(self: BrepFace) -> Array[int]
 
   
 
    Gets the indices of all the BrepFaces that surround (are adjacent to) this face.
   """
-  pass
- def ChangeSurface(self,surfaceIndex):
-  """
+        pass
+
+    def ChangeSurface(self, surfaceIndex):
+        """
   ChangeSurface(self: BrepFace,surfaceIndex: int) -> bool
 
   
@@ -36,9 +39,10 @@ class BrepFace(SurfaceProxy,IDisposable,ISerializable):
 
    Returns: true if successful.
   """
-  pass
- def ConstructConstObject(self,*args):
-  """
+        pass
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -49,9 +53,10 @@ class BrepFace(SurfaceProxy,IDisposable,ISerializable):
 
    subobject_index: The subobject index.
   """
-  pass
- def CreateExtrusion(self,pathCurve,cap):
-  """
+        pass
+
+    def CreateExtrusion(self, pathCurve, cap):
+        """
   CreateExtrusion(self: BrepFace,pathCurve: Curve,cap: bool) -> Brep
 
   
@@ -66,9 +71,10 @@ class BrepFace(SurfaceProxy,IDisposable,ISerializable):
 
    Returns: A Brep on success or null on failure.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: CommonObject,disposing: bool)
 
    For derived class implementers.
@@ -93,9 +99,10 @@ class BrepFace(SurfaceProxy,IDisposable,ISerializable):
 
     finalizer.
   """
-  pass
- def DuplicateFace(self,duplicateMeshes):
-  """
+        pass
+
+    def DuplicateFace(self, duplicateMeshes):
+        """
   DuplicateFace(self: BrepFace,duplicateMeshes: bool) -> Brep
 
   
@@ -108,9 +115,10 @@ class BrepFace(SurfaceProxy,IDisposable,ISerializable):
 
    Returns: A new single-face brep synonymous with the current Face.
   """
-  pass
- def DuplicateSurface(self):
-  """
+        pass
+
+    def DuplicateSurface(self):
+        """
   DuplicateSurface(self: BrepFace) -> Surface
 
   
@@ -119,9 +127,10 @@ class BrepFace(SurfaceProxy,IDisposable,ISerializable):
 
    Returns: A copy of this face's underlying surface.
   """
-  pass
- def GetMesh(self,meshType):
-  """
+        pass
+
+    def GetMesh(self, meshType):
+        """
   GetMesh(self: BrepFace,meshType: MeshType) -> Mesh
 
   
@@ -134,9 +143,10 @@ class BrepFace(SurfaceProxy,IDisposable,ISerializable):
 
    Returns: A mesh.
   """
-  pass
- def IsPointOnFace(self,u,v):
-  """
+        pass
+
+    def IsPointOnFace(self, u, v):
+        """
   IsPointOnFace(self: BrepFace,u: float,v: float) -> PointFaceRelation
 
   
@@ -151,9 +161,10 @@ class BrepFace(SurfaceProxy,IDisposable,ISerializable):
 
    Returns: A value describing the spatial relationship between the point and the face.
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: CommonObject)
 
    For derived classes implementers.
@@ -162,19 +173,22 @@ class BrepFace(SurfaceProxy,IDisposable,ISerializable):
 
     instance from being const.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: GeometryBase)
 
    Is called when a non-const operation occurs.
   """
-  pass
- def PullPointsToFace(self,points,tolerance):
-  """ PullPointsToFace(self: BrepFace,points: IEnumerable[Point3d],tolerance: float) -> Array[Point3d] """
-  pass
- def RebuildEdges(self,tolerance,rebuildSharedEdges,rebuildVertices):
-  """
+        pass
+
+    def PullPointsToFace(self, points, tolerance):
+        """ PullPointsToFace(self: BrepFace,points: IEnumerable[Point3d],tolerance: float) -> Array[Point3d] """
+        pass
+
+    def RebuildEdges(self, tolerance, rebuildSharedEdges, rebuildVertices):
+        """
   RebuildEdges(self: BrepFace,tolerance: float,rebuildSharedEdges: bool,rebuildVertices: bool) -> bool
 
   
@@ -197,9 +211,10 @@ class BrepFace(SurfaceProxy,IDisposable,ISerializable):
 
    Returns: true on success.
   """
-  pass
- def SetDomain(self,direction,domain):
-  """
+        pass
+
+    def SetDomain(self, direction, domain):
+        """
   SetDomain(self: BrepFace,direction: int,domain: Interval) -> bool
 
   
@@ -214,9 +229,10 @@ class BrepFace(SurfaceProxy,IDisposable,ISerializable):
 
    Returns: true on success,false on failure.
   """
-  pass
- def SetMesh(self,meshType,mesh):
-  """
+        pass
+
+    def SetMesh(self, meshType, mesh):
+        """
   SetMesh(self: BrepFace,meshType: MeshType,mesh: Mesh) -> bool
 
   
@@ -231,12 +247,14 @@ class BrepFace(SurfaceProxy,IDisposable,ISerializable):
 
    Returns: true if the operation succeeded; otherwise false.
   """
-  pass
- def Split(self,*__args):
-  """ Split(self: BrepFace,curves: IEnumerable[Curve],tolerance: float) -> Brep """
-  pass
- def TrimAwareIsoCurve(self,direction,constantParameter):
-  """
+        pass
+
+    def Split(self, *__args):
+        """ Split(self: BrepFace,curves: IEnumerable[Curve],tolerance: float) -> Brep """
+        pass
+
+    def TrimAwareIsoCurve(self, direction, constantParameter):
+        """
   TrimAwareIsoCurve(self: BrepFace,direction: int,constantParameter: float) -> Array[Curve]
 
   
@@ -263,9 +281,10 @@ class BrepFace(SurfaceProxy,IDisposable,ISerializable):
 
    Returns: Isoparametric curves connecting all points with the constantParameter value.
   """
-  pass
- def TrimAwareIsoIntervals(self,direction,constantParameter):
-  """
+        pass
+
+    def TrimAwareIsoIntervals(self, direction, constantParameter):
+        """
   TrimAwareIsoIntervals(self: BrepFace,direction: int,constantParameter: float) -> Array[Interval]
 
   
@@ -298,9 +317,10 @@ class BrepFace(SurfaceProxy,IDisposable,ISerializable):
 
     (iso_constant,intervals[i][0]) and (iso_constant,intervals[i][1]).
   """
-  pass
- def UnderlyingSurface(self):
-  """
+        pass
+
+    def UnderlyingSurface(self):
+        """
   UnderlyingSurface(self: BrepFace) -> Surface
 
   
@@ -309,28 +329,32 @@ class BrepFace(SurfaceProxy,IDisposable,ISerializable):
 
    Returns: A surface,or null on error.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- FaceIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Index of face in Brep.Faces array.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    FaceIndex = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Index of face in Brep.Faces array.
 
 
 
@@ -340,8 +364,8 @@ Get: FaceIndex(self: BrepFace) -> int
 
 """
 
- IsSurface=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the face is synonymous with the underlying surface. 
+    IsSurface = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the face is synonymous with the underlying surface. 
 
    If a Face has no trimming curves then it is considered a Surface.
 
@@ -353,8 +377,8 @@ Get: IsSurface(self: BrepFace) -> bool
 
 """
 
- Loops=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Loops in this face.
+    Loops = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Loops in this face.
 
 
 
@@ -364,8 +388,10 @@ Get: Loops(self: BrepFace) -> BrepLoopList
 
 """
 
- OrientationIsReversed=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """true if face orientation is opposite of natural surface orientation.
+    OrientationIsReversed = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """true if face orientation is opposite of natural surface orientation.
 
 
 
@@ -377,8 +403,8 @@ Set: OrientationIsReversed(self: BrepFace)=value
 
 """
 
- OuterLoop=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Every face has a single outer loop.
+    OuterLoop = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Every face has a single outer loop.
 
 
 
@@ -388,8 +414,10 @@ Get: OuterLoop(self: BrepFace) -> BrepLoop
 
 """
 
- SurfaceIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Surface index of the 3d surface geometry used by this face or -1
+    SurfaceIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Surface index of the 3d surface geometry used by this face or -1
 
 
 
@@ -398,5 +426,3 @@ Get: SurfaceIndex(self: BrepFace) -> int
 
 
 """
-
-

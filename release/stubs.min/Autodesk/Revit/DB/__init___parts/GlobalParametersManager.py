@@ -1,8 +1,9 @@
-class GlobalParametersManager(object,IDisposable):
- """ A class to access and query information about global parameters in Revit models. """
- @staticmethod
- def AreGlobalParametersAllowed(document):
-  """
+class GlobalParametersManager(object, IDisposable):
+    """ A class to access and query information about global parameters in Revit models. """
+
+    @staticmethod
+    def AreGlobalParametersAllowed(document):
+        """
   AreGlobalParametersAllowed(document: Document) -> bool
 
   
@@ -13,13 +14,15 @@ class GlobalParametersManager(object,IDisposable):
 
    document: A revit document of interest.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: GlobalParametersManager) """
-  pass
- @staticmethod
- def FindByName(document,name):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: GlobalParametersManager) """
+        pass
+
+    @staticmethod
+    def FindByName(document, name):
+        """
   FindByName(document: Document,name: str) -> ElementId
 
   
@@ -38,10 +41,11 @@ class GlobalParametersManager(object,IDisposable):
 
    Returns: ElementId of the parameter element,or InvalidElementId if it was not found.
   """
-  pass
- @staticmethod
- def GetAllGlobalParameters(document):
-  """
+        pass
+
+    @staticmethod
+    def GetAllGlobalParameters(document):
+        """
   GetAllGlobalParameters(document: Document) -> ISet[ElementId]
 
   
@@ -54,10 +58,11 @@ class GlobalParametersManager(object,IDisposable):
 
    Returns: A collection of Element Ids of global parameter elements.
   """
-  pass
- @staticmethod
- def GetGlobalParametersOrdered(document):
-  """
+        pass
+
+    @staticmethod
+    def GetGlobalParametersOrdered(document):
+        """
   GetGlobalParametersOrdered(document: Document) -> IList[ElementId]
 
   
@@ -70,10 +75,11 @@ class GlobalParametersManager(object,IDisposable):
 
    Returns: An array of Element Ids of all Global Parameters in the document.
   """
-  pass
- @staticmethod
- def IsUniqueName(document,name):
-  """
+        pass
+
+    @staticmethod
+    def IsUniqueName(document, name):
+        """
   IsUniqueName(document: Document,name: str) -> bool
 
   
@@ -94,10 +100,11 @@ class GlobalParametersManager(object,IDisposable):
 
     nof the document; False otherwise.
   """
-  pass
- @staticmethod
- def IsValidGlobalParameter(document,parameterId):
-  """
+        pass
+
+    @staticmethod
+    def IsValidGlobalParameter(document, parameterId):
+        """
   IsValidGlobalParameter(document: Document,parameterId: ElementId) -> bool
 
   
@@ -112,10 +119,11 @@ class GlobalParametersManager(object,IDisposable):
 
    Returns: Returns True if the Id is of a valid global parameter; False otherwise.
   """
-  pass
- @staticmethod
- def MoveParameterDownOrder(document,parameterId):
-  """
+        pass
+
+    @staticmethod
+    def MoveParameterDownOrder(document, parameterId):
+        """
   MoveParameterDownOrder(document: Document,parameterId: ElementId) -> bool
 
   
@@ -130,10 +138,11 @@ class GlobalParametersManager(object,IDisposable):
 
    Returns: Indicates whether the parameter could be moved Down in order or not.
   """
-  pass
- @staticmethod
- def MoveParameterUpOrder(document,parameterId):
-  """
+        pass
+
+    @staticmethod
+    def MoveParameterUpOrder(document, parameterId):
+        """
   MoveParameterUpOrder(document: Document,parameterId: ElementId) -> bool
 
   
@@ -148,13 +157,15 @@ class GlobalParametersManager(object,IDisposable):
 
    Returns: Indicates whether the parameter could be moved Up in order or not.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: GlobalParametersManager,disposing: bool) """
-  pass
- @staticmethod
- def SortParameters(document,order):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: GlobalParametersManager,disposing: bool) """
+        pass
+
+    @staticmethod
+    def SortParameters(document, order):
+        """
   SortParameters(document: Document,order: ParametersOrder)
 
    Sorts global parameters in the desired order.
@@ -165,21 +176,28 @@ class GlobalParametersManager(object,IDisposable):
 
    order: Desired sorting order
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -188,5 +206,3 @@ Get: IsValidObject(self: GlobalParametersManager) -> bool
 
 
 """
-
-

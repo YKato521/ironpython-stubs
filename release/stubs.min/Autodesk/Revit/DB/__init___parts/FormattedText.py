@@ -1,5 +1,5 @@
-class FormattedText(object,IDisposable):
- """
+class FormattedText(object, IDisposable):
+    """
  FormattedText is used to create,edit and format text in a Autodesk.Revit.DB.TextNote
 
     or to query the text and format properties of a Autodesk.Revit.DB.TextNode
@@ -10,8 +10,9 @@ class FormattedText(object,IDisposable):
 
  FormattedText()
  """
- def AsTextRange(self):
-  """
+
+    def AsTextRange(self):
+        """
   AsTextRange(self: FormattedText) -> TextRange
 
   
@@ -20,12 +21,14 @@ class FormattedText(object,IDisposable):
 
    Returns: The Autodesk.Revit.DB.TextRange object that represents the entire text.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: FormattedText) """
-  pass
- def Find(self,searchString,startIndex,matchCase,matchWholeWord):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: FormattedText) """
+        pass
+
+    def Find(self, searchString, startIndex, matchCase, matchWholeWord):
+        """
   Find(self: FormattedText,searchString: str,startIndex: int,matchCase: bool,matchWholeWord: bool) -> TextRange
 
   
@@ -58,9 +61,10 @@ class FormattedText(object,IDisposable):
 
    Returns: The text range identified.
   """
-  pass
- def GetAllCapsStatus(self,textRange=None):
-  """
+        pass
+
+    def GetAllCapsStatus(self, textRange=None):
+        """
   GetAllCapsStatus(self: FormattedText,textRange: TextRange) -> FormatStatus
 
   
@@ -93,9 +97,10 @@ class FormattedText(object,IDisposable):
 
    Returns: The format status of all caps on characters Autodesk.Revit.DB.FormatStatus.
   """
-  pass
- def GetBoldStatus(self,textRange=None):
-  """
+        pass
+
+    def GetBoldStatus(self, textRange=None):
+        """
   GetBoldStatus(self: FormattedText,textRange: TextRange) -> FormatStatus
 
   
@@ -128,9 +133,10 @@ class FormattedText(object,IDisposable):
 
    Returns: The format status of bold on characters Autodesk.Revit.DB.FormatStatus.
   """
-  pass
- def GetIndentLevel(self,textRange):
-  """
+        pass
+
+    def GetIndentLevel(self, textRange):
+        """
   GetIndentLevel(self: FormattedText,textRange: TextRange) -> int
 
   
@@ -143,9 +149,10 @@ class FormattedText(object,IDisposable):
 
    Returns: The indentation level of the paragraphs in the range.
   """
-  pass
- def GetItalicStatus(self,textRange=None):
-  """
+        pass
+
+    def GetItalicStatus(self, textRange=None):
+        """
   GetItalicStatus(self: FormattedText,textRange: TextRange) -> FormatStatus
 
   
@@ -178,9 +185,10 @@ class FormattedText(object,IDisposable):
 
    Returns: The format status of italic on characters Autodesk.Revit.DB.FormatStatus.
   """
-  pass
- def GetListStartNumber(self,textRange):
-  """
+        pass
+
+    def GetListStartNumber(self, textRange):
+        """
   GetListStartNumber(self: FormattedText,textRange: TextRange) -> int
 
   
@@ -193,9 +201,10 @@ class FormattedText(object,IDisposable):
 
    Returns: The list start number of the text range.
   """
-  pass
- def GetListType(self,textRange):
-  """
+        pass
+
+    def GetListType(self, textRange):
+        """
   GetListType(self: FormattedText,textRange: TextRange) -> ListType
 
   
@@ -208,36 +217,40 @@ class FormattedText(object,IDisposable):
 
    Returns: The Autodesk.Revit.DB.ListType of the paragraph.
   """
-  pass
- def GetMaximumIndentLevel(self):
-  """
+        pass
+
+    def GetMaximumIndentLevel(self):
+        """
   GetMaximumIndentLevel(self: FormattedText) -> int
 
   
 
    Returns the maximum allowed indent level
   """
-  pass
- def GetMaximumListStartNumber(self):
-  """
+        pass
+
+    def GetMaximumListStartNumber(self):
+        """
   GetMaximumListStartNumber(self: FormattedText) -> int
 
   
 
    Returns the maximum allowed list start number.
   """
-  pass
- def GetMinimumListStartNumber(self):
-  """
+        pass
+
+    def GetMinimumListStartNumber(self):
+        """
   GetMinimumListStartNumber(self: FormattedText) -> int
 
   
 
    Returns the minumum allowed list start number.
   """
-  pass
- def GetPlainText(self,textRange=None):
-  """
+        pass
+
+    def GetPlainText(self, textRange=None):
+        """
   GetPlainText(self: FormattedText) -> str
 
   
@@ -264,9 +277,10 @@ class FormattedText(object,IDisposable):
 
    Returns: The substring of the text in a plain text form.
   """
-  pass
- def GetSubscriptStatus(self,textRange=None):
-  """
+        pass
+
+    def GetSubscriptStatus(self, textRange=None):
+        """
   GetSubscriptStatus(self: FormattedText,textRange: TextRange) -> FormatStatus
 
   
@@ -299,9 +313,10 @@ class FormattedText(object,IDisposable):
 
    Returns: The format status of subscript on characters Autodesk.Revit.DB.FormatStatus.
   """
-  pass
- def GetSuperscriptStatus(self,textRange=None):
-  """
+        pass
+
+    def GetSuperscriptStatus(self, textRange=None):
+        """
   GetSuperscriptStatus(self: FormattedText,textRange: TextRange) -> FormatStatus
 
   
@@ -334,9 +349,10 @@ class FormattedText(object,IDisposable):
 
    Returns: The format status of superscript on characters Autodesk.Revit.DB.FormatStatus.
   """
-  pass
- def GetUnderlineStatus(self,textRange=None):
-  """
+        pass
+
+    def GetUnderlineStatus(self, textRange=None):
+        """
   GetUnderlineStatus(self: FormattedText,textRange: TextRange) -> FormatStatus
 
   
@@ -369,12 +385,14 @@ class FormattedText(object,IDisposable):
 
    Returns: The format status of underline on characters Autodesk.Revit.DB.FormatStatus.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: FormattedText,disposing: bool) """
-  pass
- def SetAllCapsStatus(self,*__args):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: FormattedText,disposing: bool) """
+        pass
+
+    def SetAllCapsStatus(self, *__args):
+        """
   SetAllCapsStatus(self: FormattedText,textRange: TextRange,isAllCaps: bool)
 
    Sets the characters in a given text range to be in all caps or not.
@@ -407,9 +425,10 @@ class FormattedText(object,IDisposable):
 
     all capped,false to set not all capped.
   """
-  pass
- def SetBoldStatus(self,*__args):
-  """
+        pass
+
+    def SetBoldStatus(self, *__args):
+        """
   SetBoldStatus(self: FormattedText,textRange: TextRange,isBold: bool)
 
    Sets the characters in a given text range to be bold or not bold.
@@ -438,9 +457,10 @@ class FormattedText(object,IDisposable):
 
     false to set not bold.
   """
-  pass
- def SetIndentLevel(self,textRange,level):
-  """
+        pass
+
+    def SetIndentLevel(self, textRange, level):
+        """
   SetIndentLevel(self: FormattedText,textRange: TextRange,level: int)
 
    Sets the number of tab stops that the paragraph should be indented.
@@ -451,9 +471,10 @@ class FormattedText(object,IDisposable):
 
    level: The level set on the paragraph.
   """
-  pass
- def SetItalicStatus(self,*__args):
-  """
+        pass
+
+    def SetItalicStatus(self, *__args):
+        """
   SetItalicStatus(self: FormattedText,textRange: TextRange,isItalic: bool)
 
    Sets the characters in a given text range to be italic or not italic.
@@ -482,9 +503,10 @@ class FormattedText(object,IDisposable):
 
     italic,false to set not italic.
   """
-  pass
- def SetListStartNumber(self,textRange,value):
-  """
+        pass
+
+    def SetListStartNumber(self, textRange, value):
+        """
   SetListStartNumber(self: FormattedText,textRange: TextRange,value: int)
 
    Sets the list start number on the paragraphs in a given text range.
@@ -495,9 +517,10 @@ class FormattedText(object,IDisposable):
 
    value: The list start number to be set on the text range.
   """
-  pass
- def SetListType(self,textRange,listType):
-  """
+        pass
+
+    def SetListType(self, textRange, listType):
+        """
   SetListType(self: FormattedText,textRange: TextRange,listType: ListType)
 
    Sets the Autodesk.Revit.DB.ListType of a paragraph.
@@ -508,9 +531,10 @@ class FormattedText(object,IDisposable):
 
    listType: The Autodesk.Revit.DB.ListType to set on the paragraph.
   """
-  pass
- def SetPlainText(self,*__args):
-  """
+        pass
+
+    def SetPlainText(self, *__args):
+        """
   SetPlainText(self: FormattedText,plainText: str)
 
    Sets the entire text with the given text in a plain text form.
@@ -529,9 +553,10 @@ class FormattedText(object,IDisposable):
 
    plainText: The given text in a plain text form.
   """
-  pass
- def SetSubscriptStatus(self,*__args):
-  """
+        pass
+
+    def SetSubscriptStatus(self, *__args):
+        """
   SetSubscriptStatus(self: FormattedText,textRange: TextRange,isSubscript: bool)
 
    Sets the characters in a given text range to be subscript or not subscript.
@@ -560,9 +585,10 @@ class FormattedText(object,IDisposable):
 
     subscript,false to set not subscript.
   """
-  pass
- def SetSuperscriptStatus(self,*__args):
-  """
+        pass
+
+    def SetSuperscriptStatus(self, *__args):
+        """
   SetSuperscriptStatus(self: FormattedText,textRange: TextRange,isSuperscript: bool)
 
    Sets the characters in a given text range to be superscript or not superscript.
@@ -591,9 +617,10 @@ class FormattedText(object,IDisposable):
 
     set superscript,false to set not superscript.
   """
-  pass
- def SetUnderlineStatus(self,*__args):
-  """
+        pass
+
+    def SetUnderlineStatus(self, *__args):
+        """
   SetUnderlineStatus(self: FormattedText,textRange: TextRange,isUnderlined: bool)
 
    Sets the characters in a given text range to be underlined or not underlined.
@@ -622,29 +649,37 @@ class FormattedText(object,IDisposable):
 
     underlined,false to set not underlined.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,plainText=None):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, plainText=None):
+        """
   __new__(cls: type,plainText: str)
 
   __new__(cls: type)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -653,5 +688,3 @@ Get: IsValidObject(self: FormattedText) -> bool
 
 
 """
-
-

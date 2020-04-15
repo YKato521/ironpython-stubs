@@ -1,8 +1,9 @@
-class NurbSpline(Curve,IDisposable):
- """ A nurb spline. """
- @staticmethod
- def Create(*__args):
-  """
+class NurbSpline(Curve, IDisposable):
+    """ A nurb spline. """
+
+    @staticmethod
+    def Create(*__args):
+        """
   Create(controlPoints: IList[XYZ],weights: IList[float],knots: IList[float],degree: int,closed: bool,rational: bool) -> NurbSpline
 
   Create(controlPoints: IList[XYZ],weights: IList[float]) -> NurbSpline
@@ -19,10 +20,11 @@ class NurbSpline(Curve,IDisposable):
 
    Returns: The new NurbSpline object.
   """
-  pass
- @staticmethod
- def CreateCurve(*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateCurve(*__args):
+        """
   CreateCurve(degree: int,knots: IList[float],controlPoints: IList[XYZ],weights: IList[float]) -> Curve
 
   CreateCurve(degree: int,knots: IList[float],controlPoints: IList[XYZ]) -> Curve
@@ -47,30 +49,40 @@ class NurbSpline(Curve,IDisposable):
 
   CreateCurve(controlPoints: IList[XYZ],weights: IList[float]) -> Curve
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: APIObject,A_0: bool) """
-  pass
- def ReleaseManagedResources(self,*args):
-  """ ReleaseManagedResources(self: APIObject) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: GeometryObject) """
-  pass
- def SetControlPointsAndWeights(self,ctrlPoints,weights):
-  """ SetControlPointsAndWeights(self: NurbSpline,ctrlPoints: IList[XYZ],weights: DoubleArray) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- CtrlPoints=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the control points of the nurb spline.
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: APIObject,A_0: bool) """
+        pass
+
+    def ReleaseManagedResources(self, *args):
+        """ ReleaseManagedResources(self: APIObject) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: GeometryObject) """
+        pass
+
+    def SetControlPointsAndWeights(self, ctrlPoints, weights):
+        """ SetControlPointsAndWeights(self: NurbSpline,ctrlPoints: IList[XYZ],weights: DoubleArray) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    CtrlPoints = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the control points of the nurb spline.
 
 
 
@@ -80,8 +92,8 @@ Get: CtrlPoints(self: NurbSpline) -> IList[XYZ]
 
 """
 
- Degree=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the degree of the nurb spline.
+    Degree = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns the degree of the nurb spline.
 
 
 
@@ -91,8 +103,8 @@ Get: Degree(self: NurbSpline) -> int
 
 """
 
- isClosed=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Return/set the nurb spline's isClosed property.
+    isClosed = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Return/set the nurb spline's isClosed property.
 
 
 
@@ -104,8 +116,10 @@ Set: isClosed(self: NurbSpline)=value
 
 """
 
- isRational=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns whether the nurb spline is rational or not.
+    isRational = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns whether the nurb spline is rational or not.
 
 
 
@@ -115,8 +129,8 @@ Get: isRational(self: NurbSpline) -> bool
 
 """
 
- Knots=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Return/set the knots of the nurb spline.
+    Knots = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Return/set the knots of the nurb spline.
 
 
 
@@ -128,8 +142,8 @@ Set: Knots(self: NurbSpline)=value
 
 """
 
- Weights=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the weights of the nurb spline.
+    Weights = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns the weights of the nurb spline.
 
 
 
@@ -138,5 +152,3 @@ Get: Weights(self: NurbSpline) -> DoubleArray
 
 
 """
-
-

@@ -1,16 +1,18 @@
-class RevitLinkLoadResult(object,IDisposable):
- """
+class RevitLinkLoadResult(object, IDisposable):
+    """
  This class stores the results of trying to load a single linked model.
 
  
 
  RevitLinkLoadResult(other: RevitLinkLoadResult)
  """
- def Dispose(self):
-  """ Dispose(self: RevitLinkLoadResult) """
-  pass
- def GetCentralModelName(self):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: RevitLinkLoadResult) """
+        pass
+
+    def GetCentralModelName(self):
+        """
   GetCentralModelName(self: RevitLinkLoadResult) -> ModelPath
 
   
@@ -25,9 +27,10 @@ class RevitLinkLoadResult(object,IDisposable):
 
     link's name.
   """
-  pass
- def GetExternalResourceReference(self):
-  """
+        pass
+
+    def GetExternalResourceReference(self):
+        """
   GetExternalResourceReference(self: RevitLinkLoadResult) -> ExternalResourceReference
 
   
@@ -40,9 +43,10 @@ class RevitLinkLoadResult(object,IDisposable):
 
      to the link.
   """
-  pass
- def GetExternalResourceReferencesFromFailedLoads(self):
-  """
+        pass
+
+    def GetExternalResourceReferencesFromFailedLoads(self):
+        """
   GetExternalResourceReferencesFromFailedLoads(self: RevitLinkLoadResult) -> IList[ExternalResourceReference]
 
   
@@ -57,9 +61,10 @@ class RevitLinkLoadResult(object,IDisposable):
 
    Returns: A collection of link ExternalResourceReferences which failed to load.
   """
-  pass
- def GetLinkLoadResult(self,matchExtResRef):
-  """
+        pass
+
+    def GetLinkLoadResult(self, matchExtResRef):
+        """
   GetLinkLoadResult(self: RevitLinkLoadResult,matchExtResRef: ExternalResourceReference) -> RevitLinkLoadResult
 
   
@@ -80,18 +85,20 @@ class RevitLinkLoadResult(object,IDisposable):
 
     ExternalResourceReference.
   """
-  pass
- def GetModelName(self):
-  """
+        pass
+
+    def GetModelName(self):
+        """
   GetModelName(self: RevitLinkLoadResult) -> ModelPath
 
   
 
    Gets the name of the model.
   """
-  pass
- def GetNestedLinkLoadResults(self):
-  """
+        pass
+
+    def GetNestedLinkLoadResults(self):
+        """
   GetNestedLinkLoadResults(self: RevitLinkLoadResult) -> IDictionary[str,RevitLinkLoadResult]
 
   
@@ -108,9 +115,10 @@ class RevitLinkLoadResult(object,IDisposable):
 
     link.
   """
-  pass
- def GetParentModelName(self):
-  """
+        pass
+
+    def GetParentModelName(self):
+        """
   GetParentModelName(self: RevitLinkLoadResult) -> ModelPath
 
   
@@ -121,10 +129,11 @@ class RevitLinkLoadResult(object,IDisposable):
 
     the link is a top-level link.
   """
-  pass
- @staticmethod
- def IsCodeSuccess(code):
-  """
+        pass
+
+    @staticmethod
+    def IsCodeSuccess(code):
+        """
   IsCodeSuccess(code: RevitLinkLoadResultType) -> bool
 
   
@@ -137,28 +146,35 @@ class RevitLinkLoadResult(object,IDisposable):
 
    Returns: True if LinkLoadResultType argument is success,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: RevitLinkLoadResult,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,other):
-  """ __new__(cls: type,other: RevitLinkLoadResult) """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- ElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the created or loaded linked model.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: RevitLinkLoadResult,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, other):
+        """ __new__(cls: type,other: RevitLinkLoadResult) """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    ElementId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The id of the created or loaded linked model.
 
 
 
@@ -168,8 +184,10 @@ Get: ElementId(self: RevitLinkLoadResult) -> ElementId
 
 """
 
- IsCircularLink=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True if these results are part of a link cycle.
+    IsCircularLink = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """True if these results are part of a link cycle.
 
 
 
@@ -179,8 +197,8 @@ Get: IsCircularLink(self: RevitLinkLoadResult) -> bool
 
 """
 
- IsNested=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True if these results represent a nested link; false otherwise.
+    IsNested = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """True if these results represent a nested link; false otherwise.
 
 
 
@@ -190,8 +208,10 @@ Get: IsNested(self: RevitLinkLoadResult) -> bool
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -201,8 +221,10 @@ Get: IsValidObject(self: RevitLinkLoadResult) -> bool
 
 """
 
- LoadResult=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Holds the results of creating or loading a link. Results can be LinkLoadResultType.LinkLoaded
+    LoadResult = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Holds the results of creating or loading a link. Results can be LinkLoadResultType.LinkLoaded
 
    for success,or a variety of errors. See LinkLoadResultType for the full list.
 
@@ -213,5 +235,3 @@ Get: LoadResult(self: RevitLinkLoadResult) -> RevitLinkLoadResultType
 
 
 """
-
-

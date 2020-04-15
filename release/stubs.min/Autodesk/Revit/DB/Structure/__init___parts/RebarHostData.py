@@ -1,19 +1,22 @@
-class RebarHostData(object,IDisposable):
- """ Interface to rebar-specific data stored in each valid rebar host element. """
- def Dispose(self):
-  """ Dispose(self: RebarHostData) """
-  pass
- def GetAreaReinforcementsInHost(self):
-  """
+class RebarHostData(object, IDisposable):
+    """ Interface to rebar-specific data stored in each valid rebar host element. """
+
+    def Dispose(self):
+        """ Dispose(self: RebarHostData) """
+        pass
+
+    def GetAreaReinforcementsInHost(self):
+        """
   GetAreaReinforcementsInHost(self: RebarHostData) -> IList[AreaReinforcement]
 
   
 
    Returns all AreaReinforcement elements hosted by the referenced element.
   """
-  pass
- def GetCommonCoverType(self):
-  """
+        pass
+
+    def GetCommonCoverType(self):
+        """
   GetCommonCoverType(self: RebarHostData) -> RebarCoverType
 
   
@@ -32,9 +35,10 @@ class RebarHostData(object,IDisposable):
 
     CoverTypes.
   """
-  pass
- def GetCoverType(self,face):
-  """
+        pass
+
+    def GetCoverType(self, face):
+        """
   GetCoverType(self: RebarHostData,face: Reference) -> RebarCoverType
 
   
@@ -47,55 +51,61 @@ class RebarHostData(object,IDisposable):
 
     is concealed,returns ll.
   """
-  pass
- def GetExposedFaces(self):
-  """
+        pass
+
+    def GetExposedFaces(self):
+        """
   GetExposedFaces(self: RebarHostData) -> IList[Reference]
 
   
 
    Returns all the exposed faces,that is,those that have an associated CoverType.
   """
-  pass
- def GetFabricAreasInHost(self):
-  """
+        pass
+
+    def GetFabricAreasInHost(self):
+        """
   GetFabricAreasInHost(self: RebarHostData) -> IList[FabricArea]
 
   
 
    Returns all FabricArea elements hosted by the referenced element.
   """
-  pass
- def GetFabricSheetsInHost(self):
-  """
+        pass
+
+    def GetFabricSheetsInHost(self):
+        """
   GetFabricSheetsInHost(self: RebarHostData) -> IList[FabricSheet]
 
   
 
    Returns all FabricSheet elements hosted by the referenced element.
   """
-  pass
- def GetPathReinforcementsInHost(self):
-  """
+        pass
+
+    def GetPathReinforcementsInHost(self):
+        """
   GetPathReinforcementsInHost(self: RebarHostData) -> IList[PathReinforcement]
 
   
 
    Returns all PathReinforcement elements hosted by the referenced element.
   """
-  pass
- def GetRebarContainersInHost(self):
-  """
+        pass
+
+    def GetRebarContainersInHost(self):
+        """
   GetRebarContainersInHost(self: RebarHostData) -> IList[RebarContainer]
 
   
 
    Returns all RebarContainer elements hosted by the referenced element.
   """
-  pass
- @staticmethod
- def GetRebarHostData(host):
-  """
+        pass
+
+    @staticmethod
+    def GetRebarHostData(host):
+        """
   GetRebarHostData(host: Element) -> RebarHostData
 
   
@@ -110,18 +120,20 @@ class RebarHostData(object,IDisposable):
 
    Returns: A RebarHostData object,or ll.
   """
-  pass
- def GetRebarsInHost(self):
-  """
+        pass
+
+    def GetRebarsInHost(self):
+        """
   GetRebarsInHost(self: RebarHostData) -> IList[Rebar]
 
   
 
    Returns all Rebar elements hosted by the referenced element.
   """
-  pass
- def IsFaceExposed(self,face):
-  """
+        pass
+
+    def IsFaceExposed(self, face):
+        """
   IsFaceExposed(self: RebarHostData,face: Reference) -> bool
 
   
@@ -136,10 +148,11 @@ class RebarHostData(object,IDisposable):
 
    Returns: True if %face% is exposed,false otherwise.
   """
-  pass
- @staticmethod
- def IsValidHost(element=None):
-  """
+        pass
+
+    @staticmethod
+    def IsValidHost(element=None):
+        """
   IsValidHost(self: RebarHostData) -> bool
 
   
@@ -168,12 +181,14 @@ class RebarHostData(object,IDisposable):
 
      false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: RebarHostData,disposing: bool) """
-  pass
- def SetCommonCoverType(self,coverType):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: RebarHostData,disposing: bool) """
+        pass
+
+    def SetCommonCoverType(self, coverType):
+        """
   SetCommonCoverType(self: RebarHostData,coverType: RebarCoverType)
 
    Associate a single CoverType with all exposed faces of the host element.
@@ -182,28 +197,36 @@ class RebarHostData(object,IDisposable):
 
    coverType: A CoverType object to be applied to all faces.
   """
-  pass
- def SetCoverType(self,face,coverType):
-  """
+        pass
+
+    def SetCoverType(self, face, coverType):
+        """
   SetCoverType(self: RebarHostData,face: Reference,coverType: RebarCoverType)
 
    Associates the specified CoverType with the specified face of the element.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -212,5 +235,3 @@ Get: IsValidObject(self: RebarHostData) -> bool
 
 
 """
-
-

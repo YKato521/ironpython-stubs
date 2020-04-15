@@ -1,8 +1,9 @@
-class ViewSection(View,IDisposable):
- """ ViewSection covers sections,details,elevations,and callouts,all in their reference and non-reference variations. """
- @staticmethod
- def CreateCallout(document,parentViewId,viewFamilyTypeId,point1,point2):
-  """
+class ViewSection(View, IDisposable):
+    """ ViewSection covers sections,details,elevations,and callouts,all in their reference and non-reference variations. """
+
+    @staticmethod
+    def CreateCallout(document, parentViewId, viewFamilyTypeId, point1, point2):
+        """
   CreateCallout(document: Document,parentViewId: ElementId,viewFamilyTypeId: ElementId,point1: XYZ,point2: XYZ) -> View
 
   
@@ -57,10 +58,11 @@ class ViewSection(View,IDisposable):
 
     ViewDetail.
   """
-  pass
- @staticmethod
- def CreateDetail(document,viewFamilyTypeId,sectionBox):
-  """
+        pass
+
+    @staticmethod
+    def CreateDetail(document, viewFamilyTypeId, sectionBox):
+        """
   CreateDetail(document: Document,viewFamilyTypeId: ElementId,sectionBox: BoundingBoxXYZ) -> ViewSection
 
   
@@ -85,10 +87,13 @@ class ViewSection(View,IDisposable):
 
    Returns: The new detail ViewSection.
   """
-  pass
- @staticmethod
- def CreateReferenceCallout(document,parentViewId,viewIdToReference,point1,point2):
-  """
+        pass
+
+    @staticmethod
+    def CreateReferenceCallout(
+        document, parentViewId, viewIdToReference, point1, point2
+    ):
+        """
   CreateReferenceCallout(document: Document,parentViewId: ElementId,viewIdToReference: ElementId,point1: XYZ,point2: XYZ)
 
    Creates a new reference callout.
@@ -155,10 +160,13 @@ class ViewSection(View,IDisposable):
 
    point2: The other diagonally opposed corner of the callout symbol in the parent view.
   """
-  pass
- @staticmethod
- def CreateReferenceSection(document,parentViewId,viewIdToReference,headPoint,tailPoint):
-  """
+        pass
+
+    @staticmethod
+    def CreateReferenceSection(
+        document, parentViewId, viewIdToReference, headPoint, tailPoint
+    ):
+        """
   CreateReferenceSection(document: Document,parentViewId: ElementId,viewIdToReference: ElementId,headPoint: XYZ,tailPoint: XYZ)
 
    Creates a new reference section.
@@ -191,10 +199,11 @@ class ViewSection(View,IDisposable):
 
    tailPoint: Determines the location of the section marker's tail in the parent view.
   """
-  pass
- @staticmethod
- def CreateSection(document,viewFamilyTypeId,sectionBox):
-  """
+        pass
+
+    @staticmethod
+    def CreateSection(document, viewFamilyTypeId, sectionBox):
+        """
   CreateSection(document: Document,viewFamilyTypeId: ElementId,sectionBox: BoundingBoxXYZ) -> ViewSection
 
   
@@ -219,16 +228,19 @@ class ViewSection(View,IDisposable):
 
    Returns: The new section ViewSection.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: View,view: View) -> BoundingBoxXYZ """
-  pass
- @staticmethod
- def IsParentViewValidForCallout(document,parentViewId):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: View,view: View) -> BoundingBoxXYZ """
+        pass
+
+    @staticmethod
+    def IsParentViewValidForCallout(document, parentViewId):
+        """
   IsParentViewValidForCallout(document: Document,parentViewId: ElementId) -> bool
 
   
@@ -255,10 +267,11 @@ class ViewSection(View,IDisposable):
 
     false otherwise.
   """
-  pass
- @staticmethod
- def IsViewFamilyTypeValidForCallout(document,viewFamilyTypeId,parentViewId):
-  """
+        pass
+
+    @staticmethod
+    def IsViewFamilyTypeValidForCallout(document, viewFamilyTypeId, parentViewId):
+        """
   IsViewFamilyTypeValidForCallout(document: Document,viewFamilyTypeId: ElementId,parentViewId: ElementId) -> bool
 
   
@@ -315,19 +328,24 @@ class ViewSection(View,IDisposable):
 
     false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

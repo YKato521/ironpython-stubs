@@ -1,11 +1,13 @@
-class LabelUtils(object,IDisposable):
- """ Used to obtain user-visible names for enums. """
- def Dispose(self):
-  """ Dispose(self: LabelUtils) """
-  pass
- @staticmethod
- def GetLabelFor(*__args):
-  """
+class LabelUtils(object, IDisposable):
+    """ Used to obtain user-visible names for enums. """
+
+    def Dispose(self):
+        """ Dispose(self: LabelUtils) """
+        pass
+
+    @staticmethod
+    def GetLabelFor(*__args):
+        """
   GetLabelFor(ductLossMethodType: DuctLossMethodType,doc: Document) -> str
 
   
@@ -114,10 +116,11 @@ class LabelUtils(object,IDisposable):
 
    displayUnitType: The DisplayUnitType to get the user-visible name.
   """
-  pass
- @staticmethod
- def GetStructuralSectionShapeName(shape):
-  """
+        pass
+
+    @staticmethod
+    def GetStructuralSectionShapeName(shape):
+        """
   GetStructuralSectionShapeName(shape: StructuralSectionShape) -> str
 
   
@@ -128,24 +131,32 @@ class LabelUtils(object,IDisposable):
 
    shape: The StructuralSectionShape to get the user-visible name.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: LabelUtils,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: LabelUtils,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -154,5 +165,3 @@ Get: IsValidObject(self: LabelUtils) -> bool
 
 
 """
-
-

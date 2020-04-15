@@ -1,13 +1,14 @@
-class Surface(GeometryBase,IDisposable,ISerializable):
- """
+class Surface(GeometryBase, IDisposable, ISerializable):
+    """
  Represents a base class that is common to most RhinoCommon surface types.
 
     A surface represents an entity that can be all visited by providing
 
     two independent parameters,usually called (u,v),or sometimes (s,t).
  """
- def ClosestPoint(self,testPoint,u,v):
-  """
+
+    def ClosestPoint(self, testPoint, u, v):
+        """
   ClosestPoint(self: Surface,testPoint: Point3d) -> (bool,float,float)
 
   
@@ -20,9 +21,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: true on success,false on failure.
   """
-  pass
- def ClosestSide(self,u,v):
-  """
+        pass
+
+    def ClosestSide(self, u, v):
+        """
   ClosestSide(self: Surface,u: float,v: float) -> IsoStatus
 
   
@@ -37,9 +39,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: A side.
   """
-  pass
- def ConstructConstObject(self,*args):
-  """
+        pass
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -50,10 +53,11 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    subobject_index: The subobject index.
   """
-  pass
- @staticmethod
- def CreateExtrusion(profile,direction):
-  """
+        pass
+
+    @staticmethod
+    def CreateExtrusion(profile, direction):
+        """
   CreateExtrusion(profile: Curve,direction: Vector3d) -> Surface
 
   
@@ -68,10 +72,11 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: A surface on success or null on failure.
   """
-  pass
- @staticmethod
- def CreateExtrusionToPoint(profile,apexPoint):
-  """
+        pass
+
+    @staticmethod
+    def CreateExtrusionToPoint(profile, apexPoint):
+        """
   CreateExtrusionToPoint(profile: Curve,apexPoint: Point3d) -> Surface
 
   
@@ -86,10 +91,11 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: A Surface on success or null on failure.
   """
-  pass
- @staticmethod
- def CreatePeriodicSurface(baseSurface,direction):
-  """
+        pass
+
+    @staticmethod
+    def CreatePeriodicSurface(baseSurface, direction):
+        """
   CreatePeriodicSurface(baseSurface: Surface,direction: int) -> Surface
 
   
@@ -104,10 +110,11 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: A new surface; or null on error.
   """
-  pass
- @staticmethod
- def CreateRollingBallFillet(surfaceA,*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateRollingBallFillet(surfaceA, *__args):
+        """
   CreateRollingBallFillet(surfaceA: Surface,uvA: Point2d,surfaceB: Surface,uvB: Point2d,radius: float,tolerance: float) -> Array[Surface]
 
   
@@ -170,9 +177,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: A new array of rolling ball fillet surfaces; this array can be empty on failure.
   """
-  pass
- def CurvatureAt(self,u,v):
-  """
+        pass
+
+    def CurvatureAt(self, u, v):
+        """
   CurvatureAt(self: Surface,u: float,v: float) -> SurfaceCurvature
 
   
@@ -187,9 +195,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: Surface Curvature data for the point at uv or null on failure.
   """
-  pass
- def Degree(self,direction):
-  """
+        pass
+
+    def Degree(self, direction):
+        """
   Degree(self: Surface,direction: int) -> int
 
   
@@ -208,9 +217,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: The maximum degree.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: CommonObject,disposing: bool)
 
    For derived class implementers.
@@ -235,9 +245,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
     finalizer.
   """
-  pass
- def Domain(self,direction):
-  """
+        pass
+
+    def Domain(self, direction):
+        """
   Domain(self: Surface,direction: int) -> Interval
 
   
@@ -250,9 +261,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: An interval value.
   """
-  pass
- def Evaluate(self,u,v,numberDerivatives,point,derivatives):
-  """
+        pass
+
+    def Evaluate(self, u, v, numberDerivatives, point, derivatives):
+        """
   Evaluate(self: Surface,u: float,v: float,numberDerivatives: int) -> (bool,Point3d,Array[Vector3d])
 
   
@@ -269,9 +281,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if the operation succeeded; false otherwise.
   """
-  pass
- def Extend(self,edge,extensionLength,smooth):
-  """
+        pass
+
+    def Extend(self, edge, extensionLength, smooth):
+        """
   Extend(self: Surface,edge: IsoStatus,extensionLength: float,smooth: bool) -> Surface
 
   
@@ -290,9 +303,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: New extended surface on success.
   """
-  pass
- def Fit(self,uDegree,vDegree,fitTolerance):
-  """
+        pass
+
+    def Fit(self, uDegree, vDegree, fitTolerance):
+        """
   Fit(self: Surface,uDegree: int,vDegree: int,fitTolerance: float) -> Surface
 
   
@@ -309,9 +323,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: A surface,or null on error.
   """
-  pass
- def FrameAt(self,u,v,frame):
-  """
+        pass
+
+    def FrameAt(self, u, v, frame):
+        """
   FrameAt(self: Surface,u: float,v: float) -> (bool,Plane)
 
   
@@ -332,9 +347,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if this operation succeeded; otherwise false.
   """
-  pass
- def GetNextDiscontinuity(self,direction,continuityType,t0,t1,t):
-  """
+        pass
+
+    def GetNextDiscontinuity(self, direction, continuityType, t0, t1, t):
+        """
   GetNextDiscontinuity(self: Surface,direction: int,continuityType: Continuity,t0: float,t1: float) -> (bool,float)
 
   
@@ -395,9 +411,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
      at least C0_locus_continuous at the ends of their domains.
   """
-  pass
- def GetSpanVector(self,direction):
-  """
+        pass
+
+    def GetSpanVector(self, direction):
+        """
   GetSpanVector(self: Surface,direction: int) -> Array[float]
 
   
@@ -410,9 +427,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: An array with span vectors; or null on error.
   """
-  pass
- def GetSurfaceSize(self,width,height):
-  """
+        pass
+
+    def GetSurfaceSize(self, width, height):
+        """
   GetSurfaceSize(self: Surface) -> (bool,float,float)
 
   
@@ -427,9 +445,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if successful.
   """
-  pass
- def HasNurbsForm(self):
-  """
+        pass
+
+    def HasNurbsForm(self):
+        """
   HasNurbsForm(self: Surface) -> int
 
   
@@ -462,15 +481,18 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
      cylinders,and cones.
   """
-  pass
- def InterpolatedCurveOnSurface(self,points,tolerance):
-  """ InterpolatedCurveOnSurface(self: Surface,points: IEnumerable[Point3d],tolerance: float) -> NurbsCurve """
-  pass
- def InterpolatedCurveOnSurfaceUV(self,points,tolerance):
-  """ InterpolatedCurveOnSurfaceUV(self: Surface,points: IEnumerable[Point2d],tolerance: float) -> NurbsCurve """
-  pass
- def IsAtSeam(self,u,v):
-  """
+        pass
+
+    def InterpolatedCurveOnSurface(self, points, tolerance):
+        """ InterpolatedCurveOnSurface(self: Surface,points: IEnumerable[Point3d],tolerance: float) -> NurbsCurve """
+        pass
+
+    def InterpolatedCurveOnSurfaceUV(self, points, tolerance):
+        """ InterpolatedCurveOnSurfaceUV(self: Surface,points: IEnumerable[Point2d],tolerance: float) -> NurbsCurve """
+        pass
+
+    def IsAtSeam(self, u, v):
+        """
   IsAtSeam(self: Surface,u: float,v: float) -> int
 
   
@@ -495,9 +517,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
     2 are true.
   """
-  pass
- def IsAtSingularity(self,u,v,exact):
-  """
+        pass
+
+    def IsAtSingularity(self, u, v, exact):
+        """
   IsAtSingularity(self: Surface,u: float,v: float,exact: bool) -> bool
 
   
@@ -520,9 +543,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if surface is singular at (s,t)
   """
-  pass
- def IsClosed(self,direction):
-  """
+        pass
+
+    def IsClosed(self, direction):
+        """
   IsClosed(self: Surface,direction: int) -> bool
 
   
@@ -535,9 +559,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: The indicating boolean value.
   """
-  pass
- def IsCone(self,tolerance=None):
-  """
+        pass
+
+    def IsCone(self, tolerance=None):
+        """
   IsCone(self: Surface,tolerance: float) -> bool
 
   
@@ -558,9 +583,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if the surface is a portion of a cone.
   """
-  pass
- def IsContinuous(self,continuityType,u,v):
-  """
+        pass
+
+    def IsContinuous(self, continuityType, u, v):
+        """
   IsContinuous(self: Surface,continuityType: Continuity,u: float,v: float) -> bool
 
   
@@ -577,9 +603,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if the surface has at least the specified continuity at the (u,v) parameter.
   """
-  pass
- def IsCylinder(self,tolerance=None):
-  """
+        pass
+
+    def IsCylinder(self, tolerance=None):
+        """
   IsCylinder(self: Surface,tolerance: float) -> bool
 
   
@@ -600,9 +627,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if the surface is a portion of a cylinder.
   """
-  pass
- def IsIsoparametric(self,*__args):
-  """
+        pass
+
+    def IsIsoparametric(self, *__args):
+        """
   IsIsoparametric(self: Surface,bbox: BoundingBox) -> IsoStatus
 
   
@@ -645,9 +673,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: IsoStatus flag describing the iso-parametric relationship between the surface and the curve.
   """
-  pass
- def IsoCurve(self,direction,constantParameter):
-  """
+        pass
+
+    def IsoCurve(self, direction, constantParameter):
+        """
   IsoCurve(self: Surface,direction: int,constantParameter: float) -> Curve
 
   
@@ -682,9 +711,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: An isoparametric curve or null on error.
   """
-  pass
- def IsPeriodic(self,direction):
-  """
+        pass
+
+    def IsPeriodic(self, direction):
+        """
   IsPeriodic(self: Surface,direction: int) -> bool
 
   
@@ -697,9 +727,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: The indicating boolean value.
   """
-  pass
- def IsPlanar(self,tolerance=None):
-  """
+        pass
+
+    def IsPlanar(self, tolerance=None):
+        """
   IsPlanar(self: Surface,tolerance: float) -> bool
 
   
@@ -726,9 +757,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if the surface is planar (flat) to within RhinoMath.ZeroTolerance units (1e-12).
   """
-  pass
- def IsSingular(self,side):
-  """
+        pass
+
+    def IsSingular(self, side):
+        """
   IsSingular(self: Surface,side: int) -> bool
 
   
@@ -743,9 +775,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: True if this specific side of the surface is singular; otherwise,false.
   """
-  pass
- def IsSphere(self,tolerance=None):
-  """
+        pass
+
+    def IsSphere(self, tolerance=None):
+        """
   IsSphere(self: Surface,tolerance: float) -> bool
 
   
@@ -766,9 +799,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if the surface is a portion of a sphere.
   """
-  pass
- def IsTorus(self,tolerance=None):
-  """
+        pass
+
+    def IsTorus(self, tolerance=None):
+        """
   IsTorus(self: Surface,tolerance: float) -> bool
 
   
@@ -789,9 +823,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if the surface is a portion of a torus.
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: CommonObject)
 
    For derived classes implementers.
@@ -800,9 +835,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
     instance from being const.
   """
-  pass
- def NormalAt(self,u,v):
-  """
+        pass
+
+    def NormalAt(self, u, v):
+        """
   NormalAt(self: Surface,u: float,v: float) -> Vector3d
 
   
@@ -823,9 +859,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: The normal.
   """
-  pass
- def Offset(self,distance,tolerance):
-  """
+        pass
+
+    def Offset(self, distance, tolerance):
+        """
   Offset(self: Surface,distance: float,tolerance: float) -> Surface
 
   
@@ -840,16 +877,18 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: The offsetted surface or null on failure.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: GeometryBase)
 
    Is called when a non-const operation occurs.
   """
-  pass
- def PointAt(self,u,v):
-  """
+        pass
+
+    def PointAt(self, u, v):
+        """
   PointAt(self: Surface,u: float,v: float) -> Point3d
 
   
@@ -864,9 +903,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: Point3d.Unset on failure.
   """
-  pass
- def Pullback(self,curve3d,tolerance,curve3dSubdomain=None):
-  """
+        pass
+
+    def Pullback(self, curve3d, tolerance, curve3dSubdomain=None):
+        """
   Pullback(self: Surface,curve3d: Curve,tolerance: float,curve3dSubdomain: Interval) -> Curve
 
   
@@ -909,9 +949,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: 2d curve.
   """
-  pass
- def Pushup(self,curve2d,tolerance,curve2dSubdomain=None):
-  """
+        pass
+
+    def Pushup(self, curve2d, tolerance, curve2dSubdomain=None):
+        """
   Pushup(self: Surface,curve2d: Curve,tolerance: float) -> Curve
 
   
@@ -950,9 +991,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: 3d curve.
   """
-  pass
- def Rebuild(self,uDegree,vDegree,uPointCount,vPointCount):
-  """
+        pass
+
+    def Rebuild(self, uDegree, vDegree, uPointCount, vPointCount):
+        """
   Rebuild(self: Surface,uDegree: int,vDegree: int,uPointCount: int,vPointCount: int) -> NurbsSurface
 
   
@@ -983,9 +1025,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: new rebuilt surface on success. null on failure.
   """
-  pass
- def Reverse(self,direction,inPlace=None):
-  """
+        pass
+
+    def Reverse(self, direction, inPlace=None):
+        """
   Reverse(self: Surface,direction: int,inPlace: bool) -> Surface
 
   
@@ -1022,9 +1065,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: a new reversed surface on success.
   """
-  pass
- def SetDomain(self,direction,domain):
-  """
+        pass
+
+    def SetDomain(self, direction, domain):
+        """
   SetDomain(self: Surface,direction: int,domain: Interval) -> bool
 
   
@@ -1039,9 +1083,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if setting succeeded,otherwise false.
   """
-  pass
- def ShortPath(self,start,end,tolerance):
-  """
+        pass
+
+    def ShortPath(self, start, end, tolerance):
+        """
   ShortPath(self: Surface,start: Point2d,end: Point2d,tolerance: float) -> Curve
 
   
@@ -1058,9 +1103,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: a geodesic curve on the surface on success. null on failure.
   """
-  pass
- def SpanCount(self,direction):
-  """
+        pass
+
+    def SpanCount(self, direction):
+        """
   SpanCount(self: Surface,direction: int) -> int
 
   
@@ -1073,9 +1119,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: The span count.
   """
-  pass
- def Split(self,direction,parameter):
-  """
+        pass
+
+    def Split(self, direction, parameter):
+        """
   Split(self: Surface,direction: int,parameter: float) -> Array[Surface]
 
   
@@ -1108,9 +1155,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: Array of two surfaces on success
   """
-  pass
- def ToBrep(self):
-  """
+        pass
+
+    def ToBrep(self):
+        """
   ToBrep(self: Surface) -> Brep
 
   
@@ -1119,9 +1167,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: A Brep with a similar shape like this surface or null.
   """
-  pass
- def ToNurbsSurface(self,tolerance=None,accuracy=None):
-  """
+        pass
+
+    def ToNurbsSurface(self, tolerance=None, accuracy=None):
+        """
   ToNurbsSurface(self: Surface,tolerance: float) -> (NurbsSurface,int)
 
   
@@ -1148,9 +1197,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: NurbsSurface on success,null on failure.
   """
-  pass
- def Transpose(self,inPlace=None):
-  """
+        pass
+
+    def Transpose(self, inPlace=None):
+        """
   Transpose(self: Surface,inPlace: bool) -> Surface
 
   
@@ -1167,9 +1217,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: New transposed surface on success,null on failure.
   """
-  pass
- def Trim(self,u,v):
-  """
+        pass
+
+    def Trim(self, u, v):
+        """
   Trim(self: Surface,u: Interval,v: Interval) -> Surface
 
   
@@ -1184,9 +1235,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: SubSurface on success,null on failure.
   """
-  pass
- def TryGetCone(self,cone,tolerance=None):
-  """
+        pass
+
+    def TryGetCone(self, cone, tolerance=None):
+        """
   TryGetCone(self: Surface,tolerance: float) -> (bool,Cone)
 
   
@@ -1211,9 +1263,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if the surface is a portion of a cone.
   """
-  pass
- def TryGetCylinder(self,cylinder,tolerance=None):
-  """
+        pass
+
+    def TryGetCylinder(self, cylinder, tolerance=None):
+        """
   TryGetCylinder(self: Surface,tolerance: float) -> (bool,Cylinder)
 
   
@@ -1238,9 +1291,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if the surface is a portion of a cylinder.
   """
-  pass
- def TryGetPlane(self,plane,tolerance=None):
-  """
+        pass
+
+    def TryGetPlane(self, plane, tolerance=None):
+        """
   TryGetPlane(self: Surface,tolerance: float) -> (bool,Plane)
 
   
@@ -1267,9 +1321,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
     RhinoMath.ZeroTolerance.
   """
-  pass
- def TryGetSphere(self,sphere,tolerance=None):
-  """
+        pass
+
+    def TryGetSphere(self, sphere, tolerance=None):
+        """
   TryGetSphere(self: Surface,tolerance: float) -> (bool,Sphere)
 
   
@@ -1290,9 +1345,10 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if the surface is a portion of a sphere.
   """
-  pass
- def TryGetTorus(self,torus,tolerance=None):
-  """
+        pass
+
+    def TryGetTorus(self, torus, tolerance=None):
+        """
   TryGetTorus(self: Surface,tolerance: float) -> (bool,Torus)
 
   
@@ -1317,38 +1373,44 @@ class Surface(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if the surface is a portion of a torus.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """
   __new__(cls: type)
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- IsSolid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a values indicating whether a surface is solid.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    IsSolid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a values indicating whether a surface is solid.
 
 
 
@@ -1357,5 +1419,3 @@ Get: IsSolid(self: Surface) -> bool
 
 
 """
-
-

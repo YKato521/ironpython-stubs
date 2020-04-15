@@ -1,7 +1,8 @@
-class PartMakerMethodToDivideVolumes(object,IDisposable):
- """ By-References dividing strategy used by PartMaker element. """
- def AddIntersectingReference(self,intersectingReference,offset):
-  """
+class PartMakerMethodToDivideVolumes(object, IDisposable):
+    """ By-References dividing strategy used by PartMaker element. """
+
+    def AddIntersectingReference(self, intersectingReference, offset):
+        """
   AddIntersectingReference(self: PartMakerMethodToDivideVolumes,intersectingReference: ElementId,offset: float) -> bool
 
   
@@ -26,17 +27,19 @@ class PartMakerMethodToDivideVolumes(object,IDisposable):
 
      only updated its offset.
   """
-  pass
- @staticmethod
- def AreElementsValidIntersectingReferences(*__args):
-  """
+        pass
+
+    @staticmethod
+    def AreElementsValidIntersectingReferences(*__args):
+        """
   AreElementsValidIntersectingReferences(self: PartMakerMethodToDivideVolumes,elementIds: ICollection[ElementId]) -> bool
 
   AreElementsValidIntersectingReferences(document: Document,elementIds: ICollection[ElementId]) -> bool
   """
-  pass
- def CanBeDivisionProfile(self,familyId,familyDocument=None):
-  """
+        pass
+
+    def CanBeDivisionProfile(self, familyId, familyDocument=None):
+        """
   CanBeDivisionProfile(familyId: ElementId,familyDocument: Document) -> bool
 
   
@@ -73,12 +76,14 @@ class PartMakerMethodToDivideVolumes(object,IDisposable):
 
     false otherwise.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: PartMakerMethodToDivideVolumes) """
-  pass
- def GetOffsetForIntersectingReference(self,intersectingReference):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: PartMakerMethodToDivideVolumes) """
+        pass
+
+    def GetOffsetForIntersectingReference(self, intersectingReference):
+        """
   GetOffsetForIntersectingReference(self: PartMakerMethodToDivideVolumes,intersectingReference: ElementId) -> float
 
   
@@ -91,9 +96,10 @@ class PartMakerMethodToDivideVolumes(object,IDisposable):
 
    Returns: The offset for the intersecting reference
   """
-  pass
- def GetPlaneOfSketch(self):
-  """
+        pass
+
+    def GetPlaneOfSketch(self):
+        """
   GetPlaneOfSketch(self: PartMakerMethodToDivideVolumes) -> Plane
 
   
@@ -102,22 +108,25 @@ class PartMakerMethodToDivideVolumes(object,IDisposable):
 
    Returns: The plane of the sketch.
   """
-  pass
- def GetSketchCurves(self,curveArray):
-  """ GetSketchCurves(self: PartMakerMethodToDivideVolumes) -> IList[Curve] """
-  pass
- def GetSplitRefsOffsets(self):
-  """
+        pass
+
+    def GetSketchCurves(self, curveArray):
+        """ GetSketchCurves(self: PartMakerMethodToDivideVolumes) -> IList[Curve] """
+        pass
+
+    def GetSplitRefsOffsets(self):
+        """
   GetSplitRefsOffsets(self: PartMakerMethodToDivideVolumes) -> IDictionary[ElementId,float]
 
   
 
    Returns offsets for plane-defining splitters.
   """
-  pass
- @staticmethod
- def IsElementValidIntersectingReference(*__args):
-  """
+        pass
+
+    @staticmethod
+    def IsElementValidIntersectingReference(*__args):
+        """
   IsElementValidIntersectingReference(self: PartMakerMethodToDivideVolumes,elementId: ElementId) -> bool
 
   
@@ -144,10 +153,11 @@ class PartMakerMethodToDivideVolumes(object,IDisposable):
 
    Returns: True if the reference is valid,false otherwise.
   """
-  pass
- @staticmethod
- def IsValidSketchPlane(document,sketchPlaneId):
-  """
+        pass
+
+    @staticmethod
+    def IsValidSketchPlane(document, sketchPlaneId):
+        """
   IsValidSketchPlane(document: Document,sketchPlaneId: ElementId) -> bool
 
   
@@ -162,12 +172,14 @@ class PartMakerMethodToDivideVolumes(object,IDisposable):
 
    Returns: True if SketchPlane valid,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: PartMakerMethodToDivideVolumes,disposing: bool) """
-  pass
- def RemoveIntersectingReference(self,intersectingReference):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: PartMakerMethodToDivideVolumes,disposing: bool) """
+        pass
+
+    def RemoveIntersectingReference(self, intersectingReference):
+        """
   RemoveIntersectingReference(self: PartMakerMethodToDivideVolumes,intersectingReference: ElementId) -> bool
 
   
@@ -186,9 +198,10 @@ class PartMakerMethodToDivideVolumes(object,IDisposable):
 
      intersecting reference.
   """
-  pass
- def SetOffsetForIntersectingReference(self,intersectingReference,offset):
-  """
+        pass
+
+    def SetOffsetForIntersectingReference(self, intersectingReference, offset):
+        """
   SetOffsetForIntersectingReference(self: PartMakerMethodToDivideVolumes,intersectingReference: ElementId,offset: float)
 
    Sets offset for the intersecting reference.
@@ -199,9 +212,10 @@ class PartMakerMethodToDivideVolumes(object,IDisposable):
 
    offset: The new offset.
   """
-  pass
- def UsesReference(self,intersectingReference):
-  """
+        pass
+
+    def UsesReference(self, intersectingReference):
+        """
   UsesReference(self: PartMakerMethodToDivideVolumes,intersectingReference: ElementId) -> bool
 
   
@@ -214,21 +228,28 @@ class PartMakerMethodToDivideVolumes(object,IDisposable):
 
    Returns: True if the intersecting reference is used by the PartMaker.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- DivisionGap=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The gap which is created between matching profiles of parts.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    DivisionGap = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The gap which is created between matching profiles of parts.
 
 
 
@@ -240,8 +261,10 @@ Set: DivisionGap(self: PartMakerMethodToDivideVolumes)=value
 
 """
 
- DivisionPatternMirror=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether pattern defined by the division rule should be mirrored before application
+    DivisionPatternMirror = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether pattern defined by the division rule should be mirrored before application
 
    Mirroring is similar to changing indices of u-const gridlines.
 
@@ -255,8 +278,10 @@ Set: DivisionPatternMirror(self: PartMakerMethodToDivideVolumes)=value
 
 """
 
- DivisionRotationAngle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Angle by which both u- and v- gridlines of the division are rotated with respect
+    DivisionRotationAngle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Angle by which both u- and v- gridlines of the division are rotated with respect
 
    to the natural u/v-const directions of the sketch plane.
 
@@ -270,8 +295,10 @@ Set: DivisionRotationAngle(self: PartMakerMethodToDivideVolumes)=value
 
 """
 
- DivisionRuleId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Id of the 'DivisionRule' which is used to augment the cutting sketch.
+    DivisionRuleId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Id of the 'DivisionRule' which is used to augment the cutting sketch.
 
 
 
@@ -283,8 +310,10 @@ Set: DivisionRuleId(self: PartMakerMethodToDivideVolumes)=value
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -294,8 +323,10 @@ Get: IsValidObject(self: PartMakerMethodToDivideVolumes) -> bool
 
 """
 
- ProfileFlipAcross=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True if the corresponding left/upper parts profile are mirrored with respect
+    ProfileFlipAcross = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """True if the corresponding left/upper parts profile are mirrored with respect
 
    to the division line. False if the profile of left/upper parts are defined
 
@@ -311,8 +342,10 @@ Set: ProfileFlipAcross(self: PartMakerMethodToDivideVolumes)=value
 
 """
 
- ProfileFlipAlong=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True if the corresponding left/upper parts profile are mirrored with respect
+    ProfileFlipAlong = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """True if the corresponding left/upper parts profile are mirrored with respect
 
    to the center line of the hosts to be divided. False if the profile of
 
@@ -328,8 +361,10 @@ Set: ProfileFlipAlong(self: PartMakerMethodToDivideVolumes)=value
 
 """
 
- ProfileMatch=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determines how two profiles match.
+    ProfileMatch = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Determines how two profiles match.
 
 
 
@@ -341,8 +376,10 @@ Set: ProfileMatch(self: PartMakerMethodToDivideVolumes)=value
 
 """
 
- ProfileOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The offset which is applied to a family-defined profile in the
+    ProfileOffset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The offset which is applied to a family-defined profile in the
 
    direction away from the division line and toward left/upper part
 
@@ -358,8 +395,10 @@ Set: ProfileOffset(self: PartMakerMethodToDivideVolumes)=value
 
 """
 
- ProfileType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the profile family applied to boundaries between parts.
+    ProfileType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The id of the profile family applied to boundaries between parts.
 
 
 
@@ -371,8 +410,10 @@ Set: ProfileType(self: PartMakerMethodToDivideVolumes)=value
 
 """
 
- UConstDivisionIndent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indentation for the application of division rule's pattern across u-const gridlines
+    UConstDivisionIndent = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indentation for the application of division rule's pattern across u-const gridlines
 
    (i.e.,similar to changing indices of u-const gridlines).
 
@@ -386,8 +427,10 @@ Set: UConstDivisionIndent(self: PartMakerMethodToDivideVolumes)=value
 
 """
 
- VConstDivisionIndent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indentation for the application of division rule's pattern across v-const gridlines
+    VConstDivisionIndent = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indentation for the application of division rule's pattern across v-const gridlines
 
    (i.e.,similar to changing indices of v-const gridlines).
 
@@ -400,5 +443,3 @@ Get: VConstDivisionIndent(self: PartMakerMethodToDivideVolumes) -> int
 Set: VConstDivisionIndent(self: PartMakerMethodToDivideVolumes)=value
 
 """
-
-

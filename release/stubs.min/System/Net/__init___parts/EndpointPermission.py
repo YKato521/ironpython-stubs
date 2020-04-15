@@ -1,7 +1,8 @@
 class EndpointPermission(object):
- """ Defines an endpoint that is authorized by a System.Net.SocketPermission instance. """
- def Equals(self,obj):
-  """
+    """ Defines an endpoint that is authorized by a System.Net.SocketPermission instance. """
+
+    def Equals(self, obj):
+        """
   Equals(self: EndpointPermission,obj: object) -> bool
 
   
@@ -18,9 +19,10 @@ class EndpointPermission(object):
 
    Returns: true if the specified System.Object is equal to the current System.Object; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: EndpointPermission) -> int
 
   
@@ -29,9 +31,10 @@ class EndpointPermission(object):
 
    Returns: A hash code for the current System.Object.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: EndpointPermission) -> str
 
   
@@ -40,14 +43,17 @@ class EndpointPermission(object):
 
    Returns: A string that represents the current System.Net.EndpointPermission instance.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __ne__(self,*args):
-  pass
- Hostname=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the DNS host name or IP address of the server that is associated with this endpoint.
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    Hostname = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the DNS host name or IP address of the server that is associated with this endpoint.
 
 
 
@@ -57,8 +63,8 @@ Get: Hostname(self: EndpointPermission) -> str
 
 """
 
- Port=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the network port number that is associated with this endpoint.
+    Port = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the network port number that is associated with this endpoint.
 
 
 
@@ -68,8 +74,8 @@ Get: Port(self: EndpointPermission) -> int
 
 """
 
- Transport=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the transport type that is associated with this endpoint.
+    Transport = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the transport type that is associated with this endpoint.
 
 
 
@@ -78,5 +84,3 @@ Get: Transport(self: EndpointPermission) -> TransportType
 
 
 """
-
-

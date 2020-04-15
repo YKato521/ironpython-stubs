@@ -1,4 +1,3 @@
 class dotUndoOperation_t(object):
- # no doc
- Operation=None
-
+    # no doc
+    Operation = None

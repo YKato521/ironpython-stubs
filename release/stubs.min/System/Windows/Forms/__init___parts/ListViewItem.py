@@ -1,5 +1,5 @@
-class ListViewItem(object,ICloneable,ISerializable):
- """
+class ListViewItem(object, ICloneable, ISerializable):
+    """
  Represents an item in a System.Windows.Forms.ListView control.
 
  
@@ -48,15 +48,17 @@ class ListViewItem(object,ICloneable,ISerializable):
 
  ListViewItem(subItems: Array[ListViewSubItem],imageKey: str,group: ListViewGroup)
  """
- def BeginEdit(self):
-  """
+
+    def BeginEdit(self):
+        """
   BeginEdit(self: ListViewItem)
 
    Places the item text into edit mode.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: ListViewItem) -> object
 
   
@@ -67,9 +69,10 @@ class ListViewItem(object,ICloneable,ISerializable):
 
     as the cloned item.
   """
-  pass
- def Deserialize(self,*args):
-  """
+        pass
+
+    def Deserialize(self, *args):
+        """
   Deserialize(self: ListViewItem,info: SerializationInfo,context: StreamingContext)
 
    Deserializes the item.
@@ -86,18 +89,20 @@ class ListViewItem(object,ICloneable,ISerializable):
 
     the stream being deserialized.
   """
-  pass
- def EnsureVisible(self):
-  """
+        pass
+
+    def EnsureVisible(self):
+        """
   EnsureVisible(self: ListViewItem)
 
    Ensures that the item is visible within the control,scrolling the contents of the control,if 
 
     necessary.
   """
-  pass
- def FindNearestItem(self,searchDirection):
-  """
+        pass
+
+    def FindNearestItem(self, searchDirection):
+        """
   FindNearestItem(self: ListViewItem,searchDirection: SearchDirectionHint) -> ListViewItem
 
   
@@ -116,9 +121,10 @@ class ListViewItem(object,ICloneable,ISerializable):
 
     specified direction.
   """
-  pass
- def GetBounds(self,portion):
-  """
+        pass
+
+    def GetBounds(self, portion):
+        """
   GetBounds(self: ListViewItem,portion: ItemBoundsPortion) -> Rectangle
 
   
@@ -137,9 +143,10 @@ class ListViewItem(object,ICloneable,ISerializable):
 
     the item.
   """
-  pass
- def GetSubItemAt(self,x,y):
-  """
+        pass
+
+    def GetSubItemAt(self, x, y):
+        """
   GetSubItemAt(self: ListViewItem,x: int,y: int) -> ListViewSubItem
 
   
@@ -154,16 +161,18 @@ class ListViewItem(object,ICloneable,ISerializable):
 
    Returns: The System.Windows.Forms.ListViewItem.ListViewSubItem at the specified x- and y-coordinates.
   """
-  pass
- def Remove(self):
-  """
+        pass
+
+    def Remove(self):
+        """
   Remove(self: ListViewItem)
 
    Removes the item from its associated System.Windows.Forms.ListView control.
   """
-  pass
- def Serialize(self,*args):
-  """
+        pass
+
+    def Serialize(self, *args):
+        """
   Serialize(self: ListViewItem,info: SerializationInfo,context: StreamingContext)
 
    Serializes the item.
@@ -180,20 +189,23 @@ class ListViewItem(object,ICloneable,ISerializable):
 
     the stream being serialized.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: ListViewItem) -> str
 
    Returns: A string that represents the current object.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
@@ -240,16 +252,20 @@ class ListViewItem(object,ICloneable,ISerializable):
 
   __new__(cls: type,subItems: Array[ListViewSubItem],imageKey: str,group: ListViewGroup)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- BackColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the background color of the item's text.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    BackColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the background color of the item's text.
 
 
 
@@ -261,8 +277,8 @@ Set: BackColor(self: ListViewItem)=value
 
 """
 
- Bounds=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the bounding rectangle of the item,including subitems.
+    Bounds = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the bounding rectangle of the item,including subitems.
 
 
 
@@ -272,8 +288,8 @@ Get: Bounds(self: ListViewItem) -> Rectangle
 
 """
 
- Checked=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the item is checked.
+    Checked = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the item is checked.
 
 
 
@@ -285,8 +301,8 @@ Set: Checked(self: ListViewItem)=value
 
 """
 
- Focused=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the item has focus within the System.Windows.Forms.ListView control.
+    Focused = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the item has focus within the System.Windows.Forms.ListView control.
 
 
 
@@ -298,8 +314,8 @@ Set: Focused(self: ListViewItem)=value
 
 """
 
- Font=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the font of the text displayed by the item.
+    Font = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the font of the text displayed by the item.
 
 
 
@@ -311,8 +327,8 @@ Set: Font(self: ListViewItem)=value
 
 """
 
- ForeColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the foreground color of the item's text.
+    ForeColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the foreground color of the item's text.
 
 
 
@@ -324,8 +340,8 @@ Set: ForeColor(self: ListViewItem)=value
 
 """
 
- Group=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the group to which the item is assigned.
+    Group = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the group to which the item is assigned.
 
 
 
@@ -337,8 +353,10 @@ Set: Group(self: ListViewItem)=value
 
 """
 
- ImageIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the index of the image that is displayed for the item.
+    ImageIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the index of the image that is displayed for the item.
 
 
 
@@ -350,8 +368,8 @@ Set: ImageIndex(self: ListViewItem)=value
 
 """
 
- ImageKey=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the key for the image that is displayed for the item.
+    ImageKey = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the key for the image that is displayed for the item.
 
 
 
@@ -363,8 +381,8 @@ Set: ImageKey(self: ListViewItem)=value
 
 """
 
- ImageList=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Forms.ImageList that contains the image displayed with the item.
+    ImageList = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the System.Windows.Forms.ImageList that contains the image displayed with the item.
 
 
 
@@ -374,8 +392,10 @@ Get: ImageList(self: ListViewItem) -> ImageList
 
 """
 
- IndentCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the number of small image widths by which to indent the System.Windows.Forms.ListViewItem.
+    IndentCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the number of small image widths by which to indent the System.Windows.Forms.ListViewItem.
 
 
 
@@ -387,8 +407,8 @@ Set: IndentCount(self: ListViewItem)=value
 
 """
 
- Index=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the zero-based index of the item within the System.Windows.Forms.ListView control.
+    Index = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the zero-based index of the item within the System.Windows.Forms.ListView control.
 
 
 
@@ -398,8 +418,8 @@ Get: Index(self: ListViewItem) -> int
 
 """
 
- ListView=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Forms.ListView control that contains the item.
+    ListView = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the System.Windows.Forms.ListView control that contains the item.
 
 
 
@@ -409,8 +429,8 @@ Get: ListView(self: ListViewItem) -> ListView
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name associated with this System.Windows.Forms.ListViewItem.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the name associated with this System.Windows.Forms.ListViewItem.
 
 
 
@@ -422,8 +442,8 @@ Set: Name(self: ListViewItem)=value
 
 """
 
- Position=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the position of the upper-left corner of the System.Windows.Forms.ListViewItem.
+    Position = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the position of the upper-left corner of the System.Windows.Forms.ListViewItem.
 
 
 
@@ -435,8 +455,8 @@ Set: Position(self: ListViewItem)=value
 
 """
 
- Selected=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the item is selected.
+    Selected = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the item is selected.
 
 
 
@@ -448,8 +468,10 @@ Set: Selected(self: ListViewItem)=value
 
 """
 
- StateImageIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the index of the state image (an image such as a selected or cleared check box that indicates the state of the item) that is displayed for the item.
+    StateImageIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the index of the state image (an image such as a selected or cleared check box that indicates the state of the item) that is displayed for the item.
 
 
 
@@ -461,8 +483,8 @@ Set: StateImageIndex(self: ListViewItem)=value
 
 """
 
- SubItems=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection containing all subitems of the item.
+    SubItems = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a collection containing all subitems of the item.
 
 
 
@@ -472,8 +494,8 @@ Get: SubItems(self: ListViewItem) -> ListViewSubItemCollection
 
 """
 
- Tag=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets an object that contains data to associate with the item.
+    Tag = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets an object that contains data to associate with the item.
 
 
 
@@ -485,8 +507,8 @@ Set: Tag(self: ListViewItem)=value
 
 """
 
- Text=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the text of the item.
+    Text = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the text of the item.
 
 
 
@@ -498,8 +520,10 @@ Set: Text(self: ListViewItem)=value
 
 """
 
- ToolTipText=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the text shown when the mouse pointer rests on the System.Windows.Forms.ListViewItem.
+    ToolTipText = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the text shown when the mouse pointer rests on the System.Windows.Forms.ListViewItem.
 
 
 
@@ -511,8 +535,10 @@ Set: ToolTipText(self: ListViewItem)=value
 
 """
 
- UseItemStyleForSubItems=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the System.Windows.Forms.ListViewItem.Font,System.Windows.Forms.ListViewItem.ForeColor,and System.Windows.Forms.ListViewItem.BackColor properties for the item are used for all its subitems.
+    UseItemStyleForSubItems = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the System.Windows.Forms.ListViewItem.Font,System.Windows.Forms.ListViewItem.ForeColor,and System.Windows.Forms.ListViewItem.BackColor properties for the item are used for all its subitems.
 
 
 
@@ -524,7 +550,5 @@ Set: UseItemStyleForSubItems(self: ListViewItem)=value
 
 """
 
-
- ListViewSubItem=None
- ListViewSubItemCollection=None
-
+    ListViewSubItem = None
+    ListViewSubItemCollection = None

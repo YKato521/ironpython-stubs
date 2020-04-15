@@ -8,41 +8,48 @@
 # no functions
 # classes
 
+
 class ElementQueries(object):
- # no doc
- @staticmethod
- def AtLevel(arg):
-  """ AtLevel(arg: Level) -> IList[Element] """
-  pass
- @staticmethod
- def OfCategory(category):
-  """ OfCategory(category: Category) -> IList[Element] """
-  pass
- @staticmethod
- def OfElementType(elementType):
-  """ OfElementType(elementType: Type) -> IList[Element] """
-  pass
- @staticmethod
- def OfFamilyType(familyType):
-  """ OfFamilyType(familyType: FamilyType) -> IList[Element] """
-  pass
- __all__=[
-  'AtLevel',
-  'OfCategory',
-  'OfElementType',
-  'OfFamilyType',
- ]
+    # no doc
+    @staticmethod
+    def AtLevel(arg):
+        """ AtLevel(arg: Level) -> IList[Element] """
+        pass
+
+    @staticmethod
+    def OfCategory(category):
+        """ OfCategory(category: Category) -> IList[Element] """
+        pass
+
+    @staticmethod
+    def OfElementType(elementType):
+        """ OfElementType(elementType: Type) -> IList[Element] """
+        pass
+
+    @staticmethod
+    def OfFamilyType(familyType):
+        """ OfFamilyType(familyType: FamilyType) -> IList[Element] """
+        pass
+
+    __all__ = [
+        "AtLevel",
+        "OfCategory",
+        "OfElementType",
+        "OfFamilyType",
+    ]
 
 
 class ElementUtils(object):
- """ ElementUtils() """
- @staticmethod
- def GetConvertedParameterValue(param,value):
-  """ GetConvertedParameterValue(param: Parameter,value: float) -> float """
-  pass
- @staticmethod
- def GetParameterValue(param):
-  """
+    """ ElementUtils() """
+
+    @staticmethod
+    def GetConvertedParameterValue(param, value):
+        """ GetConvertedParameterValue(param: Parameter,value: float) -> float """
+        pass
+
+    @staticmethod
+    def GetParameterValue(param):
+        """
   GetParameterValue(param: Parameter) -> object
 
   
@@ -53,14 +60,16 @@ class ElementUtils(object):
 
    param: Revit parameter
   """
-  pass
- @staticmethod
- def SetParameterValue(param,value):
-  """ SetParameterValue(param: Parameter,value: str)SetParameterValue(param: Parameter,value: bool)SetParameterValue(param: Parameter,value: int)SetParameterValue(param: Parameter,value: float)SetParameterValue(param: Parameter,value: Element) """
-  pass
- @staticmethod
- def UpdateLevelName(name):
-  """
+        pass
+
+    @staticmethod
+    def SetParameterValue(param, value):
+        """ SetParameterValue(param: Parameter,value: str)SetParameterValue(param: Parameter,value: bool)SetParameterValue(param: Parameter,value: int)SetParameterValue(param: Parameter,value: float)SetParameterValue(param: Parameter,value: Element) """
+        pass
+
+    @staticmethod
+    def UpdateLevelName(name):
+        """
   UpdateLevelName(name: str) -> str
 
   
@@ -85,12 +94,13 @@ class ElementUtils(object):
 
      from "abc" to "abc(1)".
   """
-  pass
+        pass
+
 
 class TransformUtils(object):
- """ TransformUtils() """
- @staticmethod
- def ExtractEularAnglesFromTransform(transform,angles):
-  """ ExtractEularAnglesFromTransform(transform: Transform) -> Array[float] """
-  pass
+    """ TransformUtils() """
 
+    @staticmethod
+    def ExtractEularAnglesFromTransform(transform, angles):
+        """ ExtractEularAnglesFromTransform(transform: Transform) -> Array[float] """
+        pass

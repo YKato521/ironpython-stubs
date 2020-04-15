@@ -8,7 +8,9 @@
 # no functions
 # classes
 from __init___parts._Attribute import _Attribute
-from __init___parts.AllowReversePInvokeCallsAttribute import AllowReversePInvokeCallsAttribute
+from __init___parts.AllowReversePInvokeCallsAttribute import (
+    AllowReversePInvokeCallsAttribute,
+)
 from __init___parts.ArrayWithOffset import ArrayWithOffset
 from __init___parts.AssemblyRegistrationFlags import AssemblyRegistrationFlags
 from __init___parts.AutomationProxyAttribute import AutomationProxyAttribute
@@ -43,7 +45,9 @@ from __init___parts.CurrencyWrapper import CurrencyWrapper
 from __init___parts.CustomQueryInterfaceMode import CustomQueryInterfaceMode
 from __init___parts.CustomQueryInterfaceResult import CustomQueryInterfaceResult
 from __init___parts.DefaultCharSetAttribute import DefaultCharSetAttribute
-from __init___parts.DefaultDllImportSearchPathsAttribute import DefaultDllImportSearchPathsAttribute
+from __init___parts.DefaultDllImportSearchPathsAttribute import (
+    DefaultDllImportSearchPathsAttribute,
+)
 from __init___parts.DefaultParameterValueAttribute import DefaultParameterValueAttribute
 from __init___parts.DESCKIND import DESCKIND
 from __init___parts.DispatchWrapper import DispatchWrapper
@@ -90,7 +94,9 @@ from __init___parts.ITypeLibImporterNotifySink import ITypeLibImporterNotifySink
 from __init___parts.LayoutKind import LayoutKind
 from __init___parts.LCIDConversionAttribute import LCIDConversionAttribute
 from __init___parts.LIBFLAGS import LIBFLAGS
-from __init___parts.ManagedToNativeComInteropStubAttribute import ManagedToNativeComInteropStubAttribute
+from __init___parts.ManagedToNativeComInteropStubAttribute import (
+    ManagedToNativeComInteropStubAttribute,
+)
 from __init___parts.Marshal import Marshal
 from __init___parts.MarshalAsAttribute import MarshalAsAttribute
 from __init___parts.MarshalDirectiveException import MarshalDirectiveException
@@ -100,7 +106,9 @@ from __init___parts.OutAttribute import OutAttribute
 from __init___parts.PARAMDESC import PARAMDESC
 from __init___parts.PARAMFLAG import PARAMFLAG
 from __init___parts.PreserveSigAttribute import PreserveSigAttribute
-from __init___parts.PrimaryInteropAssemblyAttribute import PrimaryInteropAssemblyAttribute
+from __init___parts.PrimaryInteropAssemblyAttribute import (
+    PrimaryInteropAssemblyAttribute,
+)
 from __init___parts.ProgIdAttribute import ProgIdAttribute
 from __init___parts.RegistrationClassContext import RegistrationClassContext
 from __init___parts.RegistrationConnectionType import RegistrationConnectionType
@@ -111,7 +119,9 @@ from __init___parts.SafeArrayTypeMismatchException import SafeArrayTypeMismatchE
 from __init___parts.SafeHandle import SafeHandle
 from __init___parts.SafeBuffer import SafeBuffer
 from __init___parts.SEHException import SEHException
-from __init___parts.SetWin32ContextInIDispatchAttribute import SetWin32ContextInIDispatchAttribute
+from __init___parts.SetWin32ContextInIDispatchAttribute import (
+    SetWin32ContextInIDispatchAttribute,
+)
 from __init___parts.StandardOleMarshalObject import StandardOleMarshalObject
 from __init___parts.STATSTG import STATSTG
 from __init___parts.StructLayoutAttribute import StructLayoutAttribute
@@ -149,7 +159,9 @@ from __init___parts.UCOMITypeComp import UCOMITypeComp
 from __init___parts.UCOMITypeInfo import UCOMITypeInfo
 from __init___parts.UCOMITypeLib import UCOMITypeLib
 from __init___parts.UnknownWrapper import UnknownWrapper
-from __init___parts.UnmanagedFunctionPointerAttribute import UnmanagedFunctionPointerAttribute
+from __init___parts.UnmanagedFunctionPointerAttribute import (
+    UnmanagedFunctionPointerAttribute,
+)
 from __init___parts.UnmanagedType import UnmanagedType
 from __init___parts.VARDESC import VARDESC
 from __init___parts.VarEnum import VarEnum

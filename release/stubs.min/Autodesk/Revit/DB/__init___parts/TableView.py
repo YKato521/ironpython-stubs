@@ -1,14 +1,16 @@
-class TableView(View,IDisposable):
- """
+class TableView(View, IDisposable):
+    """
  This represents a view that shows a table.
 
     Most of the layout data for the table is contained in the TableData class.
  """
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def GetAvailableParameterCategories(self,sectionType,row):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def GetAvailableParameterCategories(self, sectionType, row):
+        """
   GetAvailableParameterCategories(self: TableView,sectionType: SectionType,row: int) -> IList[ElementId]
 
   
@@ -23,10 +25,11 @@ class TableView(View,IDisposable):
 
    Returns: The available parameter categories.
   """
-  pass
- @staticmethod
- def GetAvailableParameters(cda,categoryId):
-  """
+        pass
+
+    @staticmethod
+    def GetAvailableParameters(cda, categoryId):
+        """
   GetAvailableParameters(cda: Document,categoryId: ElementId) -> IList[ElementId]
 
   
@@ -45,12 +48,14 @@ class TableView(View,IDisposable):
 
    Returns: The IDs of all valid parameters.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: View,view: View) -> BoundingBoxXYZ """
-  pass
- def GetCalculatedValueName(self,sectionType,row,column):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: View,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetCalculatedValueName(self, sectionType, row, column):
+        """
   GetCalculatedValueName(self: TableView,sectionType: SectionType,row: int,column: int) -> str
 
   
@@ -67,9 +72,10 @@ class TableView(View,IDisposable):
 
    Returns: The name of the calculated value.
   """
-  pass
- def GetCalculatedValueText(self,sectionType,row,column):
-  """
+        pass
+
+    def GetCalculatedValueText(self, sectionType, row, column):
+        """
   GetCalculatedValueText(self: TableView,sectionType: SectionType,row: int,column: int) -> str
 
   
@@ -86,9 +92,10 @@ class TableView(View,IDisposable):
 
    Returns: The calculated value text.
   """
-  pass
- def GetCellText(self,sectionType,row,column):
-  """
+        pass
+
+    def GetCellText(self, sectionType, row, column):
+        """
   GetCellText(self: TableView,sectionType: SectionType,row: int,column: int) -> str
 
   
@@ -105,9 +112,10 @@ class TableView(View,IDisposable):
 
    Returns: The text for the given cell
   """
-  pass
- def IsValidSectionType(self,sectionType):
-  """
+        pass
+
+    def IsValidSectionType(self, sectionType):
+        """
   IsValidSectionType(self: TableView,sectionType: SectionType) -> bool
 
   
@@ -120,24 +128,32 @@ class TableView(View,IDisposable):
 
    Returns: True if the Section Type is valid,false otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- MaximumColumnWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the maximum column width
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    MaximumColumnWidth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the maximum column width
 
 
 
@@ -147,8 +163,10 @@ Get: MaximumColumnWidth(self: TableView) -> int
 
 """
 
- MaximumGridWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the allowed maximum grid width
+    MaximumGridWidth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the allowed maximum grid width
 
 
 
@@ -158,8 +176,10 @@ Get: MaximumGridWidth(self: TableView) -> int
 
 """
 
- MaximumRowHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the maximum row height
+    MaximumRowHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the maximum row height
 
 
 
@@ -169,8 +189,10 @@ Get: MaximumRowHeight(self: TableView) -> int
 
 """
 
- MinimumColumnWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the minimum column width
+    MinimumColumnWidth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the minimum column width
 
 
 
@@ -180,8 +202,10 @@ Get: MinimumColumnWidth(self: TableView) -> int
 
 """
 
- MinimumRowHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the minimum row height
+    MinimumRowHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the minimum row height
 
 
 
@@ -191,8 +215,8 @@ Get: MinimumRowHeight(self: TableView) -> int
 
 """
 
- TargetId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """the element id of the element that is being viewed
+    TargetId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """the element id of the element that is being viewed
 
 
 
@@ -203,5 +227,3 @@ Get: TargetId(self: TableView) -> ElementId
 Set: TargetId(self: TableView)=value
 
 """
-
-

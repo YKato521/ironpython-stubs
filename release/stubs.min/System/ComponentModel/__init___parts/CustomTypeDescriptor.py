@@ -1,7 +1,8 @@
-class CustomTypeDescriptor(object,ICustomTypeDescriptor):
- """ Provides a simple default implementation of the System.ComponentModel.ICustomTypeDescriptor interface. """
- def GetAttributes(self):
-  """
+class CustomTypeDescriptor(object, ICustomTypeDescriptor):
+    """ Provides a simple default implementation of the System.ComponentModel.ICustomTypeDescriptor interface. """
+
+    def GetAttributes(self):
+        """
   GetAttributes(self: CustomTypeDescriptor) -> AttributeCollection
 
   
@@ -12,9 +13,10 @@ class CustomTypeDescriptor(object,ICustomTypeDescriptor):
 
     is System.ComponentModel.AttributeCollection.Empty.
   """
-  pass
- def GetClassName(self):
-  """
+        pass
+
+    def GetClassName(self):
+        """
   GetClassName(self: CustomTypeDescriptor) -> str
 
   
@@ -25,9 +27,10 @@ class CustomTypeDescriptor(object,ICustomTypeDescriptor):
 
     describing. The default is null.
   """
-  pass
- def GetComponentName(self):
-  """
+        pass
+
+    def GetComponentName(self):
+        """
   GetComponentName(self: CustomTypeDescriptor) -> str
 
   
@@ -38,9 +41,10 @@ class CustomTypeDescriptor(object,ICustomTypeDescriptor):
 
     describing. The default is null.
   """
-  pass
- def GetConverter(self):
-  """
+        pass
+
+    def GetConverter(self):
+        """
   GetConverter(self: CustomTypeDescriptor) -> TypeConverter
 
   
@@ -51,9 +55,10 @@ class CustomTypeDescriptor(object,ICustomTypeDescriptor):
 
     default is a newly created System.ComponentModel.TypeConverter.
   """
-  pass
- def GetDefaultEvent(self):
-  """
+        pass
+
+    def GetDefaultEvent(self):
+        """
   GetDefaultEvent(self: CustomTypeDescriptor) -> EventDescriptor
 
   
@@ -68,9 +73,10 @@ class CustomTypeDescriptor(object,ICustomTypeDescriptor):
 
     this type descriptor. The default is null.
   """
-  pass
- def GetDefaultProperty(self):
-  """
+        pass
+
+    def GetDefaultProperty(self):
+        """
   GetDefaultProperty(self: CustomTypeDescriptor) -> PropertyDescriptor
 
   
@@ -85,9 +91,10 @@ class CustomTypeDescriptor(object,ICustomTypeDescriptor):
 
     this type descriptor. The default is null.
   """
-  pass
- def GetEditor(self,editorBaseType):
-  """
+        pass
+
+    def GetEditor(self, editorBaseType):
+        """
   GetEditor(self: CustomTypeDescriptor,editorBaseType: Type) -> object
 
   
@@ -106,9 +113,10 @@ class CustomTypeDescriptor(object,ICustomTypeDescriptor):
 
     descriptor. The default is null.
   """
-  pass
- def GetEvents(self,attributes=None):
-  """
+        pass
+
+    def GetEvents(self, attributes=None):
+        """
   GetEvents(self: CustomTypeDescriptor,attributes: Array[Attribute]) -> EventDescriptorCollection
 
   
@@ -143,9 +151,10 @@ class CustomTypeDescriptor(object,ICustomTypeDescriptor):
 
     System.ComponentModel.EventDescriptorCollection.Empty.
   """
-  pass
- def GetProperties(self,attributes=None):
-  """
+        pass
+
+    def GetProperties(self, attributes=None):
+        """
   GetProperties(self: CustomTypeDescriptor) -> PropertyDescriptorCollection
 
   
@@ -180,9 +189,10 @@ class CustomTypeDescriptor(object,ICustomTypeDescriptor):
 
     System.ComponentModel.PropertyDescriptorCollection.Empty.
   """
-  pass
- def GetPropertyOwner(self,pd):
-  """
+        pass
+
+    def GetPropertyOwner(self, pd):
+        """
   GetPropertyOwner(self: CustomTypeDescriptor,pd: PropertyDescriptor) -> object
 
   
@@ -197,18 +207,21 @@ class CustomTypeDescriptor(object,ICustomTypeDescriptor):
 
     null.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """
   __new__(cls: type)
 
   __new__(cls: type,parent: ICustomTypeDescriptor)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass

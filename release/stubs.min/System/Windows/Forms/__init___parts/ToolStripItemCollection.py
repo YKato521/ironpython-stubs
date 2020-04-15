@@ -1,13 +1,16 @@
-class ToolStripItemCollection(ArrangedElementCollection,IList,ICollection,IEnumerable):
- """
+class ToolStripItemCollection(
+    ArrangedElementCollection, IList, ICollection, IEnumerable
+):
+    """
  Represents a collection of System.Windows.Forms.ToolStripItem objects.
 
  
 
  ToolStripItemCollection(owner: ToolStrip,value: Array[ToolStripItem])
  """
- def Add(self,*__args):
-  """
+
+    def Add(self, *__args):
+        """
   Add(self: ToolStripItemCollection,text: str,image: Image,onClick: EventHandler) -> ToolStripItem
 
   
@@ -82,9 +85,10 @@ class ToolStripItemCollection(ArrangedElementCollection,IList,ICollection,IEnume
 
    Returns: The new System.Windows.Forms.ToolStripItem.
   """
-  pass
- def AddRange(self,toolStripItems):
-  """
+        pass
+
+    def AddRange(self, toolStripItems):
+        """
   AddRange(self: ToolStripItemCollection,toolStripItems: ToolStripItemCollection)
 
    Adds a System.Windows.Forms.ToolStripItemCollection to the current collection.
@@ -101,16 +105,18 @@ class ToolStripItemCollection(ArrangedElementCollection,IList,ICollection,IEnume
 
    toolStripItems: An array of System.Windows.Forms.ToolStripItem controls.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: ToolStripItemCollection)
 
    Removes all items from the collection.
   """
-  pass
- def Contains(self,value):
-  """
+        pass
+
+    def Contains(self, value):
+        """
   Contains(self: ToolStripItemCollection,value: ToolStripItem) -> bool
 
   
@@ -129,9 +135,10 @@ class ToolStripItemCollection(ArrangedElementCollection,IList,ICollection,IEnume
 
     System.Windows.Forms.ToolStripItemCollection; otherwise,false.
   """
-  pass
- def ContainsKey(self,key):
-  """
+        pass
+
+    def ContainsKey(self, key):
+        """
   ContainsKey(self: ToolStripItemCollection,key: str) -> bool
 
   
@@ -146,9 +153,10 @@ class ToolStripItemCollection(ArrangedElementCollection,IList,ICollection,IEnume
 
     System.Windows.Forms.ToolStripItem with the specified key; otherwise,false.
   """
-  pass
- def CopyTo(self,array,index):
-  """
+        pass
+
+    def CopyTo(self, array, index):
+        """
   CopyTo(self: ToolStripItemCollection,array: Array[ToolStripItem],index: int)
 
    Copies the collection into the specified position of the specified 
@@ -163,9 +171,10 @@ class ToolStripItemCollection(ArrangedElementCollection,IList,ICollection,IEnume
 
    index: The position in the System.Windows.Forms.ToolStripItem array at which to paste the collection.
   """
-  pass
- def Find(self,key,searchAllChildren):
-  """
+        pass
+
+    def Find(self, key, searchAllChildren):
+        """
   Find(self: ToolStripItemCollection,key: str,searchAllChildren: bool) -> Array[ToolStripItem]
 
   
@@ -184,9 +193,10 @@ class ToolStripItemCollection(ArrangedElementCollection,IList,ICollection,IEnume
 
    Returns: A System.Windows.Forms.ToolStripItem array of the search results.
   """
-  pass
- def IndexOf(self,value):
-  """
+        pass
+
+    def IndexOf(self, value):
+        """
   IndexOf(self: ToolStripItemCollection,value: ToolStripItem) -> int
 
   
@@ -207,9 +217,10 @@ class ToolStripItemCollection(ArrangedElementCollection,IList,ICollection,IEnume
 
     found; otherwise,-1.
   """
-  pass
- def IndexOfKey(self,key):
-  """
+        pass
+
+    def IndexOfKey(self, key):
+        """
   IndexOfKey(self: ToolStripItemCollection,key: str) -> int
 
   
@@ -224,9 +235,10 @@ class ToolStripItemCollection(ArrangedElementCollection,IList,ICollection,IEnume
 
     System.Windows.Forms.ToolStripItem specified by the key parameter,if found; otherwise,-1.
   """
-  pass
- def Insert(self,index,value):
-  """
+        pass
+
+    def Insert(self, index, value):
+        """
   Insert(self: ToolStripItemCollection,index: int,value: ToolStripItem)
 
    Inserts the specified item into the collection at the specified index.
@@ -241,9 +253,10 @@ class ToolStripItemCollection(ArrangedElementCollection,IList,ICollection,IEnume
 
    value: The System.Windows.Forms.ToolStripItem to insert.
   """
-  pass
- def Remove(self,value):
-  """
+        pass
+
+    def Remove(self, value):
+        """
   Remove(self: ToolStripItemCollection,value: ToolStripItem)
 
    Removes the specified item from the collection.
@@ -254,9 +267,10 @@ class ToolStripItemCollection(ArrangedElementCollection,IList,ICollection,IEnume
 
     System.Windows.Forms.ToolStripItemCollection.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: ToolStripItemCollection,index: int)
 
    Removes an item from the specified index in the collection.
@@ -265,9 +279,10 @@ class ToolStripItemCollection(ArrangedElementCollection,IList,ICollection,IEnume
 
    index: The index value of the System.Windows.Forms.ToolStripItem to remove.
   """
-  pass
- def RemoveByKey(self,key):
-  """
+        pass
+
+    def RemoveByKey(self, key):
+        """
   RemoveByKey(self: ToolStripItemCollection,key: str)
 
    Removes the item that has the specified key.
@@ -276,12 +291,14 @@ class ToolStripItemCollection(ArrangedElementCollection,IList,ICollection,IEnume
 
    key: The key of the System.Windows.Forms.ToolStripItem to remove.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IList,value: object) -> bool
 
   
@@ -294,22 +311,29 @@ class ToolStripItemCollection(ArrangedElementCollection,IList,ICollection,IEnume
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- @staticmethod
- def __new__(self,owner,value):
-  """ __new__(cls: type,owner: ToolStrip,value: Array[ToolStripItem]) """
-  pass
- IsReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Windows.Forms.ToolStripItemCollection is read-only.
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    @staticmethod
+    def __new__(self, owner, value):
+        """ __new__(cls: type,owner: ToolStrip,value: Array[ToolStripItem]) """
+        pass
+
+    IsReadOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Windows.Forms.ToolStripItemCollection is read-only.
 
 
 
@@ -318,5 +342,3 @@ Get: IsReadOnly(self: ToolStripItemCollection) -> bool
 
 
 """
-
-

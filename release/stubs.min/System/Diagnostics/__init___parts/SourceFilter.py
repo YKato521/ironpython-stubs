@@ -1,13 +1,16 @@
 class SourceFilter(TraceFilter):
- """
+    """
  Indicates whether a listener should trace a message based on the source of a trace.
 
  
 
  SourceFilter(source: str)
  """
- def ShouldTrace(self,cache,source,eventType,id,formatOrMessage,args,data1,data):
-  """
+
+    def ShouldTrace(
+        self, cache, source, eventType, id, formatOrMessage, args, data1, data
+    ):
+        """
   ShouldTrace(self: SourceFilter,cache: TraceEventCache,source: str,eventType: TraceEventType,id: int,formatOrMessage: str,args: Array[object],data1: object,data: Array[object]) -> bool
 
   
@@ -34,13 +37,15 @@ class SourceFilter(TraceFilter):
 
    Returns: true if the trace should be produced; otherwise,false.
   """
-  pass
- @staticmethod
- def __new__(self,source):
-  """ __new__(cls: type,source: str) """
-  pass
- Source=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the trace source.
+        pass
+
+    @staticmethod
+    def __new__(self, source):
+        """ __new__(cls: type,source: str) """
+        pass
+
+    Source = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the name of the trace source.
 
 
 
@@ -51,5 +56,3 @@ Get: Source(self: SourceFilter) -> str
 Set: Source(self: SourceFilter)=value
 
 """
-
-

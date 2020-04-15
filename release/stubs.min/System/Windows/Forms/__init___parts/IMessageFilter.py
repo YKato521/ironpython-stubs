@@ -1,7 +1,8 @@
 class IMessageFilter:
- """ Defines a message filter interface. """
- def PreFilterMessage(self,m):
-  """
+    """ Defines a message filter interface. """
+
+    def PreFilterMessage(self, m):
+        """
   PreFilterMessage(self: IMessageFilter,m: Message) -> (bool,Message)
 
   
@@ -16,7 +17,8 @@ class IMessageFilter:
 
     continue to the next filter or control.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

@@ -1,13 +1,16 @@
 class BuildingSiteExportOptions(object):
- """
+    """
  Building Site Export options.
 
  
 
  BuildingSiteExportOptions()
  """
- AreaPerPerson=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Custom value for Area Per Person value.
+
+    AreaPerPerson = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Custom value for Area Per Person value.
 
 
 
@@ -19,8 +22,10 @@ Set: AreaPerPerson(self: BuildingSiteExportOptions)=value
 
 """
 
- PropertyLine=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Optional property Line to export; it may be ll.
+    PropertyLine = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Optional property Line to export; it may be ll.
 
 
 
@@ -32,8 +37,10 @@ Set: PropertyLine(self: BuildingSiteExportOptions)=value
 
 """
 
- PropertyLineOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Property Line Offset. Default is 0.0.
+    PropertyLineOffset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Property Line Offset. Default is 0.0.
 
 
 
@@ -45,8 +52,10 @@ Set: PropertyLineOffset(self: BuildingSiteExportOptions)=value
 
 """
 
- TotalGrossArea=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Custom value for the total area.
+    TotalGrossArea = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Custom value for the total area.
 
 
 
@@ -58,8 +67,10 @@ Set: TotalGrossArea(self: BuildingSiteExportOptions)=value
 
 """
 
- TotalOccupancy=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Custom value for the total occupancy.
+    TotalOccupancy = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Custom value for the total occupancy.
 
 
 
@@ -70,5 +81,3 @@ Get: TotalOccupancy(self: BuildingSiteExportOptions) -> int
 Set: TotalOccupancy(self: BuildingSiteExportOptions)=value
 
 """
-
-

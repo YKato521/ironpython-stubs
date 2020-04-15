@@ -1,7 +1,8 @@
-class OSFeature(FeatureSupport,IFeatureSupport):
- """ Provides operating-system specific feature queries. """
- def GetVersionPresent(self,feature):
-  """
+class OSFeature(FeatureSupport, IFeatureSupport):
+    """ Provides operating-system specific feature queries. """
+
+    def GetVersionPresent(self, feature):
+        """
   GetVersionPresent(self: OSFeature,feature: object) -> Version
 
   
@@ -20,10 +21,11 @@ class OSFeature(FeatureSupport,IFeatureSupport):
 
     available on the system; or null if the feature cannot be found.
   """
-  pass
- @staticmethod
- def IsPresent(*__args):
-  """
+        pass
+
+    @staticmethod
+    def IsPresent(*__args):
+        """
   IsPresent(enumVal: SystemParameter) -> bool
 
   
@@ -40,11 +42,12 @@ class OSFeature(FeatureSupport,IFeatureSupport):
 
    Returns: true if the feature is available on the system; otherwise,false.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Feature=None
- LayeredWindows=None
- Themes=None
+        pass
 
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Feature = None
+    LayeredWindows = None
+    Themes = None

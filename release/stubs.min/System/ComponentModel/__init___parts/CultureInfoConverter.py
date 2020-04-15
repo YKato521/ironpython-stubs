@@ -1,13 +1,14 @@
 class CultureInfoConverter(TypeConverter):
- """
+    """
  Provides a type converter to convert System.Globalization.CultureInfo objects to and from various other representations.
 
  
 
  CultureInfoConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: CultureInfoConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -26,9 +27,10 @@ class CultureInfoConverter(TypeConverter):
 
    Returns: true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: CultureInfoConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -47,9 +49,10 @@ class CultureInfoConverter(TypeConverter):
 
    Returns: true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: CultureInfoConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -66,9 +69,10 @@ class CultureInfoConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: CultureInfoConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -87,9 +91,10 @@ class CultureInfoConverter(TypeConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def GetCultureName(self,*args):
-  """
+        pass
+
+    def GetCultureName(self, *args):
+        """
   GetCultureName(self: CultureInfoConverter,culture: CultureInfo) -> str
 
   
@@ -102,9 +107,10 @@ class CultureInfoConverter(TypeConverter):
 
    Returns: The name of the specified culture.
   """
-  pass
- def GetStandardValues(self,context=None):
-  """
+        pass
+
+    def GetStandardValues(self, context=None):
+        """
   GetStandardValues(self: CultureInfoConverter,context: ITypeDescriptorContext) -> StandardValuesCollection
 
   
@@ -123,9 +129,10 @@ class CultureInfoConverter(TypeConverter):
 
     valid values,or null if the data type does not support a standard set of values.
   """
-  pass
- def GetStandardValuesExclusive(self,context=None):
-  """
+        pass
+
+    def GetStandardValuesExclusive(self, context=None):
+        """
   GetStandardValuesExclusive(self: CultureInfoConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -150,9 +157,10 @@ class CultureInfoConverter(TypeConverter):
 
     This method never returns true.
   """
-  pass
- def GetStandardValuesSupported(self,context=None):
-  """
+        pass
+
+    def GetStandardValuesSupported(self, context=None):
+        """
   GetStandardValuesSupported(self: CultureInfoConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -175,4 +183,4 @@ class CultureInfoConverter(TypeConverter):
 
     returns false.
   """
-  pass
+        pass

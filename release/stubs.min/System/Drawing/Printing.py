@@ -8,57 +8,71 @@
 # no functions
 # classes
 
-class Duplex(Enum,IComparable,IFormattable,IConvertible):
- """
+
+class Duplex(Enum, IComparable, IFormattable, IConvertible):
+    """
  Specifies the printer's duplex setting.
 
  
 
  enum Duplex,values: Default (-1),Horizontal (3),Simplex (1),Vertical (2)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Default=None
- Horizontal=None
- Simplex=None
- value__=None
- Vertical=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Default = None
+    Horizontal = None
+    Simplex = None
+    value__ = None
+    Vertical = None
 
 
-class InvalidPrinterException(SystemException,ISerializable,_Exception):
- """
+class InvalidPrinterException(SystemException, ISerializable, _Exception):
+    """
  Represents the exception that is thrown when you try to access a printer using printer settings that are not valid.
 
  
 
  InvalidPrinterException(settings: PrinterSettings)
  """
- def add_SerializeObjectState(self,*args):
-  """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def GetObjectData(self,info,context):
-  """
+
+    def add_SerializeObjectState(self, *args):
+        """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def GetObjectData(self, info, context):
+        """
   GetObjectData(self: InvalidPrinterException,info: SerializationInfo,context: StreamingContext)
 
    Overridden. Sets the System.Runtime.Serialization.SerializationInfo with information about the 
@@ -79,28 +93,34 @@ class InvalidPrinterException(SystemException,ISerializable,_Exception):
 
     source or destination.
   """
-  pass
- def remove_SerializeObjectState(self,*args):
-  """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,settings):
-  """
+        pass
+
+    def remove_SerializeObjectState(self, *args):
+        """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, settings):
+        """
   __new__(cls: type,settings: PrinterSettings)
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
+        pass
 
-class Margins(object,ICloneable):
- """
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+
+class Margins(object, ICloneable):
+    """
  Specifies the dimensions of the margins of a printed page.
 
  
@@ -109,8 +129,9 @@ class Margins(object,ICloneable):
 
  Margins()
  """
- def Clone(self):
-  """
+
+    def Clone(self):
+        """
   Clone(self: Margins) -> object
 
   
@@ -119,9 +140,10 @@ class Margins(object,ICloneable):
 
    Returns: A duplicate of this object.
   """
-  pass
- def Equals(self,obj):
-  """
+        pass
+
+    def Equals(self, obj):
+        """
   Equals(self: Margins,obj: object) -> bool
 
   
@@ -144,9 +166,10 @@ class Margins(object,ICloneable):
 
     System.Drawing.Printing.Margins; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Margins) -> int
 
   
@@ -159,9 +182,10 @@ class Margins(object,ICloneable):
 
    Returns: A hash code based on the left,right,top,and bottom margins.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: Margins) -> str
 
   
@@ -170,32 +194,40 @@ class Margins(object,ICloneable):
 
    Returns: A System.String representation of the System.Drawing.Printing.Margins.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,left=None,right=None,top=None,bottom=None):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, left=None, right=None, top=None, bottom=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,left: int,right: int,top: int,bottom: int)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- Bottom=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the bottom margin,in hundredths of an inch.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Bottom = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the bottom margin,in hundredths of an inch.
 
 
 
@@ -207,8 +239,8 @@ Set: Bottom(self: Margins)=value
 
 """
 
- Left=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the left margin width,in hundredths of an inch.
+    Left = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the left margin width,in hundredths of an inch.
 
 
 
@@ -220,8 +252,8 @@ Set: Left(self: Margins)=value
 
 """
 
- Right=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the right margin width,in hundredths of an inch.
+    Right = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the right margin width,in hundredths of an inch.
 
 
 
@@ -233,8 +265,8 @@ Set: Right(self: Margins)=value
 
 """
 
- Top=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the top margin width,in hundredths of an inch.
+    Top = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the top margin width,in hundredths of an inch.
 
 
 
@@ -247,17 +279,17 @@ Set: Top(self: Margins)=value
 """
 
 
-
 class MarginsConverter(ExpandableObjectConverter):
- """
+    """
  Provides a System.Drawing.Printing.MarginsConverter for System.Drawing.Printing.Margins.
 
  
 
  MarginsConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: MarginsConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -276,9 +308,10 @@ class MarginsConverter(ExpandableObjectConverter):
 
    Returns: true if an object can perform the conversion; otherwise,false.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: MarginsConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -297,9 +330,10 @@ class MarginsConverter(ExpandableObjectConverter):
 
    Returns: true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: MarginsConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -316,9 +350,10 @@ class MarginsConverter(ExpandableObjectConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: MarginsConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -341,9 +376,10 @@ class MarginsConverter(ExpandableObjectConverter):
 
    Returns: An System.Object that represents the converted value.
   """
-  pass
- def CreateInstance(self,*__args):
-  """
+        pass
+
+    def CreateInstance(self, *__args):
+        """
   CreateInstance(self: MarginsConverter,context: ITypeDescriptorContext,propertyValues: IDictionary) -> object
 
   
@@ -360,9 +396,10 @@ class MarginsConverter(ExpandableObjectConverter):
 
     object cannot be created.
   """
-  pass
- def GetCreateInstanceSupported(self,context=None):
-  """
+        pass
+
+    def GetCreateInstanceSupported(self, context=None):
+        """
   GetCreateInstanceSupported(self: MarginsConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -387,10 +424,11 @@ class MarginsConverter(ExpandableObjectConverter):
 
     returns true.
   """
-  pass
+        pass
 
-class PageSettings(object,ICloneable):
- """
+
+class PageSettings(object, ICloneable):
+    """
  Specifies settings that apply to a single,printed page.
 
  
@@ -399,8 +437,9 @@ class PageSettings(object,ICloneable):
 
  PageSettings(printerSettings: PrinterSettings)
  """
- def Clone(self):
-  """
+
+    def Clone(self):
+        """
   Clone(self: PageSettings) -> object
 
   
@@ -409,9 +448,10 @@ class PageSettings(object,ICloneable):
 
    Returns: A copy of this object.
   """
-  pass
- def CopyToHdevmode(self,hdevmode):
-  """
+        pass
+
+    def CopyToHdevmode(self, hdevmode):
+        """
   CopyToHdevmode(self: PageSettings,hdevmode: IntPtr)
 
    Copies the relevant information from the System.Drawing.Printing.PageSettings to the specified 
@@ -424,9 +464,10 @@ class PageSettings(object,ICloneable):
 
    hdevmode: The handle to a Win32 DEVMODE structure.
   """
-  pass
- def SetHdevmode(self,hdevmode):
-  """
+        pass
+
+    def SetHdevmode(self, hdevmode):
+        """
   SetHdevmode(self: PageSettings,hdevmode: IntPtr)
 
    Copies relevant information to the System.Drawing.Printing.PageSettings from the specified 
@@ -439,9 +480,10 @@ class PageSettings(object,ICloneable):
 
    hdevmode: The handle to a Win32 DEVMODE structure.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: PageSettings) -> str
 
   
@@ -450,27 +492,33 @@ class PageSettings(object,ICloneable):
 
    Returns: A string showing the various property settings for the System.Drawing.Printing.PageSettings.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,printerSettings=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, printerSettings=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,printerSettings: PrinterSettings)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- Bounds=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the size of the page,taking into account the page orientation specified by the System.Drawing.Printing.PageSettings.Landscape property.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Bounds = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the size of the page,taking into account the page orientation specified by the System.Drawing.Printing.PageSettings.Landscape property.
 
 
 
@@ -480,8 +528,8 @@ Get: Bounds(self: PageSettings) -> Rectangle
 
 """
 
- Color=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the page should be printed in color.
+    Color = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the page should be printed in color.
 
 
 
@@ -493,8 +541,10 @@ Set: Color(self: PageSettings)=value
 
 """
 
- HardMarginX=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the x-coordinate,in hundredths of an inch,of the hard margin at the left of the page.
+    HardMarginX = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the x-coordinate,in hundredths of an inch,of the hard margin at the left of the page.
 
 
 
@@ -504,8 +554,10 @@ Get: HardMarginX(self: PageSettings) -> Single
 
 """
 
- HardMarginY=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the y-coordinate,in hundredths of an inch,of the hard margin at the top of the page.
+    HardMarginY = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the y-coordinate,in hundredths of an inch,of the hard margin at the top of the page.
 
 
 
@@ -515,8 +567,8 @@ Get: HardMarginY(self: PageSettings) -> Single
 
 """
 
- Landscape=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the page is printed in landscape or portrait orientation.
+    Landscape = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the page is printed in landscape or portrait orientation.
 
 
 
@@ -528,8 +580,8 @@ Set: Landscape(self: PageSettings)=value
 
 """
 
- Margins=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the margins for this page.
+    Margins = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the margins for this page.
 
 
 
@@ -541,8 +593,8 @@ Set: Margins(self: PageSettings)=value
 
 """
 
- PaperSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the paper size for the page.
+    PaperSize = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the paper size for the page.
 
 
 
@@ -554,8 +606,10 @@ Set: PaperSize(self: PageSettings)=value
 
 """
 
- PaperSource=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the page's paper source; for example,the printer's upper tray.
+    PaperSource = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the page's paper source; for example,the printer's upper tray.
 
 
 
@@ -567,8 +621,10 @@ Set: PaperSource(self: PageSettings)=value
 
 """
 
- PrintableArea=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the bounds of the printable area of the page for the printer.
+    PrintableArea = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the bounds of the printable area of the page for the printer.
 
 
 
@@ -578,8 +634,10 @@ Get: PrintableArea(self: PageSettings) -> RectangleF
 
 """
 
- PrinterResolution=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the printer resolution for the page.
+    PrinterResolution = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the printer resolution for the page.
 
 
 
@@ -591,8 +649,10 @@ Set: PrinterResolution(self: PageSettings)=value
 
 """
 
- PrinterSettings=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the printer settings associated with the page.
+    PrinterSettings = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the printer settings associated with the page.
 
 
 
@@ -605,160 +665,170 @@ Set: PrinterSettings(self: PageSettings)=value
 """
 
 
-
-class PaperKind(Enum,IComparable,IFormattable,IConvertible):
- """
+class PaperKind(Enum, IComparable, IFormattable, IConvertible):
+    """
  Specifies the standard paper sizes.
 
  
 
  enum PaperKind,values: A2 (66),A3 (8),A3Extra (63),A3ExtraTransverse (68),A3Rotated (76),A3Transverse (67),A4 (9),A4Extra (53),A4Plus (60),A4Rotated (77),A4Small (10),A4Transverse (55),A5 (11),A5Extra (64),A5Rotated (78),A5Transverse (61),A6 (70),A6Rotated (83),APlus (57),B4 (12),B4Envelope (33),B4JisRotated (79),B5 (13),B5Envelope (34),B5Extra (65),B5JisRotated (80),B5Transverse (62),B6Envelope (35),B6Jis (88),B6JisRotated (89),BPlus (58),C3Envelope (29),C4Envelope (30),C5Envelope (28),C65Envelope (32),C6Envelope (31),CSheet (24),Custom (0),DLEnvelope (27),DSheet (25),ESheet (26),Executive (7),Folio (14),GermanLegalFanfold (41),GermanStandardFanfold (40),InviteEnvelope (47),IsoB4 (42),ItalyEnvelope (36),JapaneseDoublePostcard (69),JapaneseDoublePostcardRotated (82),JapaneseEnvelopeChouNumber3 (73),JapaneseEnvelopeChouNumber3Rotated (86),JapaneseEnvelopeChouNumber4 (74),JapaneseEnvelopeChouNumber4Rotated (87),JapaneseEnvelopeKakuNumber2 (71),JapaneseEnvelopeKakuNumber2Rotated (84),JapaneseEnvelopeKakuNumber3 (72),JapaneseEnvelopeKakuNumber3Rotated (85),JapaneseEnvelopeYouNumber4 (91),JapaneseEnvelopeYouNumber4Rotated (92),JapanesePostcard (43),JapanesePostcardRotated (81),Ledger (4),Legal (5),LegalExtra (51),Letter (1),LetterExtra (50),LetterExtraTransverse (56),LetterPlus (59),LetterRotated (75),LetterSmall (2),LetterTransverse (54),MonarchEnvelope (37),Note (18),Number10Envelope (20),Number11Envelope (21),Number12Envelope (22),Number14Envelope (23),Number9Envelope (19),PersonalEnvelope (38),Prc16K (93),Prc16KRotated (106),Prc32K (94),Prc32KBig (95),Prc32KBigRotated (108),Prc32KRotated (107),PrcEnvelopeNumber1 (96),PrcEnvelopeNumber10 (105),PrcEnvelopeNumber10Rotated (118),PrcEnvelopeNumber1Rotated (109),PrcEnvelopeNumber2 (97),PrcEnvelopeNumber2Rotated (110),PrcEnvelopeNumber3 (98),PrcEnvelopeNumber3Rotated (111),PrcEnvelopeNumber4 (99),PrcEnvelopeNumber4Rotated (112),PrcEnvelopeNumber5 (100),PrcEnvelopeNumber5Rotated (113),PrcEnvelopeNumber6 (101),PrcEnvelopeNumber6Rotated (114),PrcEnvelopeNumber7 (102),PrcEnvelopeNumber7Rotated (115),PrcEnvelopeNumber8 (103),PrcEnvelopeNumber8Rotated (116),PrcEnvelopeNumber9 (104),PrcEnvelopeNumber9Rotated (117),Quarto (15),Standard10x11 (45),Standard10x14 (16),Standard11x17 (17),Standard12x11 (90),Standard15x11 (46),Standard9x11 (44),Statement (6),Tabloid (3),TabloidExtra (52),USStandardFanfold (39)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- A2=None
- A3=None
- A3Extra=None
- A3ExtraTransverse=None
- A3Rotated=None
- A3Transverse=None
- A4=None
- A4Extra=None
- A4Plus=None
- A4Rotated=None
- A4Small=None
- A4Transverse=None
- A5=None
- A5Extra=None
- A5Rotated=None
- A5Transverse=None
- A6=None
- A6Rotated=None
- APlus=None
- B4=None
- B4Envelope=None
- B4JisRotated=None
- B5=None
- B5Envelope=None
- B5Extra=None
- B5JisRotated=None
- B5Transverse=None
- B6Envelope=None
- B6Jis=None
- B6JisRotated=None
- BPlus=None
- C3Envelope=None
- C4Envelope=None
- C5Envelope=None
- C65Envelope=None
- C6Envelope=None
- CSheet=None
- Custom=None
- DLEnvelope=None
- DSheet=None
- ESheet=None
- Executive=None
- Folio=None
- GermanLegalFanfold=None
- GermanStandardFanfold=None
- InviteEnvelope=None
- IsoB4=None
- ItalyEnvelope=None
- JapaneseDoublePostcard=None
- JapaneseDoublePostcardRotated=None
- JapaneseEnvelopeChouNumber3=None
- JapaneseEnvelopeChouNumber3Rotated=None
- JapaneseEnvelopeChouNumber4=None
- JapaneseEnvelopeChouNumber4Rotated=None
- JapaneseEnvelopeKakuNumber2=None
- JapaneseEnvelopeKakuNumber2Rotated=None
- JapaneseEnvelopeKakuNumber3=None
- JapaneseEnvelopeKakuNumber3Rotated=None
- JapaneseEnvelopeYouNumber4=None
- JapaneseEnvelopeYouNumber4Rotated=None
- JapanesePostcard=None
- JapanesePostcardRotated=None
- Ledger=None
- Legal=None
- LegalExtra=None
- Letter=None
- LetterExtra=None
- LetterExtraTransverse=None
- LetterPlus=None
- LetterRotated=None
- LetterSmall=None
- LetterTransverse=None
- MonarchEnvelope=None
- Note=None
- Number10Envelope=None
- Number11Envelope=None
- Number12Envelope=None
- Number14Envelope=None
- Number9Envelope=None
- PersonalEnvelope=None
- Prc16K=None
- Prc16KRotated=None
- Prc32K=None
- Prc32KBig=None
- Prc32KBigRotated=None
- Prc32KRotated=None
- PrcEnvelopeNumber1=None
- PrcEnvelopeNumber10=None
- PrcEnvelopeNumber10Rotated=None
- PrcEnvelopeNumber1Rotated=None
- PrcEnvelopeNumber2=None
- PrcEnvelopeNumber2Rotated=None
- PrcEnvelopeNumber3=None
- PrcEnvelopeNumber3Rotated=None
- PrcEnvelopeNumber4=None
- PrcEnvelopeNumber4Rotated=None
- PrcEnvelopeNumber5=None
- PrcEnvelopeNumber5Rotated=None
- PrcEnvelopeNumber6=None
- PrcEnvelopeNumber6Rotated=None
- PrcEnvelopeNumber7=None
- PrcEnvelopeNumber7Rotated=None
- PrcEnvelopeNumber8=None
- PrcEnvelopeNumber8Rotated=None
- PrcEnvelopeNumber9=None
- PrcEnvelopeNumber9Rotated=None
- Quarto=None
- Standard10x11=None
- Standard10x14=None
- Standard11x17=None
- Standard12x11=None
- Standard15x11=None
- Standard9x11=None
- Statement=None
- Tabloid=None
- TabloidExtra=None
- USStandardFanfold=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    A2 = None
+    A3 = None
+    A3Extra = None
+    A3ExtraTransverse = None
+    A3Rotated = None
+    A3Transverse = None
+    A4 = None
+    A4Extra = None
+    A4Plus = None
+    A4Rotated = None
+    A4Small = None
+    A4Transverse = None
+    A5 = None
+    A5Extra = None
+    A5Rotated = None
+    A5Transverse = None
+    A6 = None
+    A6Rotated = None
+    APlus = None
+    B4 = None
+    B4Envelope = None
+    B4JisRotated = None
+    B5 = None
+    B5Envelope = None
+    B5Extra = None
+    B5JisRotated = None
+    B5Transverse = None
+    B6Envelope = None
+    B6Jis = None
+    B6JisRotated = None
+    BPlus = None
+    C3Envelope = None
+    C4Envelope = None
+    C5Envelope = None
+    C65Envelope = None
+    C6Envelope = None
+    CSheet = None
+    Custom = None
+    DLEnvelope = None
+    DSheet = None
+    ESheet = None
+    Executive = None
+    Folio = None
+    GermanLegalFanfold = None
+    GermanStandardFanfold = None
+    InviteEnvelope = None
+    IsoB4 = None
+    ItalyEnvelope = None
+    JapaneseDoublePostcard = None
+    JapaneseDoublePostcardRotated = None
+    JapaneseEnvelopeChouNumber3 = None
+    JapaneseEnvelopeChouNumber3Rotated = None
+    JapaneseEnvelopeChouNumber4 = None
+    JapaneseEnvelopeChouNumber4Rotated = None
+    JapaneseEnvelopeKakuNumber2 = None
+    JapaneseEnvelopeKakuNumber2Rotated = None
+    JapaneseEnvelopeKakuNumber3 = None
+    JapaneseEnvelopeKakuNumber3Rotated = None
+    JapaneseEnvelopeYouNumber4 = None
+    JapaneseEnvelopeYouNumber4Rotated = None
+    JapanesePostcard = None
+    JapanesePostcardRotated = None
+    Ledger = None
+    Legal = None
+    LegalExtra = None
+    Letter = None
+    LetterExtra = None
+    LetterExtraTransverse = None
+    LetterPlus = None
+    LetterRotated = None
+    LetterSmall = None
+    LetterTransverse = None
+    MonarchEnvelope = None
+    Note = None
+    Number10Envelope = None
+    Number11Envelope = None
+    Number12Envelope = None
+    Number14Envelope = None
+    Number9Envelope = None
+    PersonalEnvelope = None
+    Prc16K = None
+    Prc16KRotated = None
+    Prc32K = None
+    Prc32KBig = None
+    Prc32KBigRotated = None
+    Prc32KRotated = None
+    PrcEnvelopeNumber1 = None
+    PrcEnvelopeNumber10 = None
+    PrcEnvelopeNumber10Rotated = None
+    PrcEnvelopeNumber1Rotated = None
+    PrcEnvelopeNumber2 = None
+    PrcEnvelopeNumber2Rotated = None
+    PrcEnvelopeNumber3 = None
+    PrcEnvelopeNumber3Rotated = None
+    PrcEnvelopeNumber4 = None
+    PrcEnvelopeNumber4Rotated = None
+    PrcEnvelopeNumber5 = None
+    PrcEnvelopeNumber5Rotated = None
+    PrcEnvelopeNumber6 = None
+    PrcEnvelopeNumber6Rotated = None
+    PrcEnvelopeNumber7 = None
+    PrcEnvelopeNumber7Rotated = None
+    PrcEnvelopeNumber8 = None
+    PrcEnvelopeNumber8Rotated = None
+    PrcEnvelopeNumber9 = None
+    PrcEnvelopeNumber9Rotated = None
+    Quarto = None
+    Standard10x11 = None
+    Standard10x14 = None
+    Standard11x17 = None
+    Standard12x11 = None
+    Standard15x11 = None
+    Standard9x11 = None
+    Statement = None
+    Tabloid = None
+    TabloidExtra = None
+    USStandardFanfold = None
+    value__ = None
 
 
 class PaperSize(object):
- """
+    """
  Specifies the size of a piece of paper.
 
  
@@ -767,8 +837,9 @@ class PaperSize(object):
 
  PaperSize(name: str,width: int,height: int)
  """
- def ToString(self):
-  """
+
+    def ToString(self):
+        """
   ToString(self: PaperSize) -> str
 
   
@@ -777,17 +848,19 @@ class PaperSize(object):
 
    Returns: A string.
   """
-  pass
- @staticmethod
- def __new__(self,name=None,width=None,height=None):
-  """
+        pass
+
+    @staticmethod
+    def __new__(self, name=None, width=None, height=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,name: str,width: int,height: int)
   """
-  pass
- Height=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the height of the paper,in hundredths of an inch.
+        pass
+
+    Height = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the height of the paper,in hundredths of an inch.
 
 
 
@@ -799,8 +872,8 @@ Set: Height(self: PaperSize)=value
 
 """
 
- Kind=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the type of paper.
+    Kind = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the type of paper.
 
 
 
@@ -810,8 +883,8 @@ Get: Kind(self: PaperSize) -> PaperKind
 
 """
 
- PaperName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the type of paper.
+    PaperName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the name of the type of paper.
 
 
 
@@ -823,8 +896,8 @@ Set: PaperName(self: PaperSize)=value
 
 """
 
- RawKind=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets an integer representing one of the System.Drawing.Printing.PaperSize values or a custom value.
+    RawKind = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets an integer representing one of the System.Drawing.Printing.PaperSize values or a custom value.
 
 
 
@@ -836,8 +909,8 @@ Set: RawKind(self: PaperSize)=value
 
 """
 
- Width=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the width of the paper,in hundredths of an inch.
+    Width = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the width of the paper,in hundredths of an inch.
 
 
 
@@ -850,17 +923,17 @@ Set: Width(self: PaperSize)=value
 """
 
 
-
 class PaperSource(object):
- """
+    """
  Specifies the paper tray from which the printer gets paper.
 
  
 
  PaperSource()
  """
- def ToString(self):
-  """
+
+    def ToString(self):
+        """
   ToString(self: PaperSource) -> str
 
   
@@ -869,9 +942,10 @@ class PaperSource(object):
 
    Returns: A string.
   """
-  pass
- Kind=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the paper source.
+        pass
+
+    Kind = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the paper source.
 
 
 
@@ -881,8 +955,8 @@ Get: Kind(self: PaperSource) -> PaperSourceKind
 
 """
 
- RawKind=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the integer representing one of the System.Drawing.Printing.PaperSourceKind values or a custom value.
+    RawKind = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the integer representing one of the System.Drawing.Printing.PaperSourceKind values or a custom value.
 
 
 
@@ -894,8 +968,10 @@ Set: RawKind(self: PaperSource)=value
 
 """
 
- SourceName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the paper source.
+    SourceName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the paper source.
 
 
 
@@ -908,69 +984,81 @@ Set: SourceName(self: PaperSource)=value
 """
 
 
-
-class PaperSourceKind(Enum,IComparable,IFormattable,IConvertible):
- """
+class PaperSourceKind(Enum, IComparable, IFormattable, IConvertible):
+    """
  Standard paper sources.
 
  
 
  enum PaperSourceKind,values: AutomaticFeed (7),Cassette (14),Custom (257),Envelope (5),FormSource (15),LargeCapacity (11),LargeFormat (10),Lower (2),Manual (4),ManualFeed (6),Middle (3),SmallFormat (9),TractorFeed (8),Upper (1)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- AutomaticFeed=None
- Cassette=None
- Custom=None
- Envelope=None
- FormSource=None
- LargeCapacity=None
- LargeFormat=None
- Lower=None
- Manual=None
- ManualFeed=None
- Middle=None
- SmallFormat=None
- TractorFeed=None
- Upper=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AutomaticFeed = None
+    Cassette = None
+    Custom = None
+    Envelope = None
+    FormSource = None
+    LargeCapacity = None
+    LargeFormat = None
+    Lower = None
+    Manual = None
+    ManualFeed = None
+    Middle = None
+    SmallFormat = None
+    TractorFeed = None
+    Upper = None
+    value__ = None
 
 
 class PreviewPageInfo(object):
- """
+    """
  Specifies print preview information for a single page. This class cannot be inherited.
 
  
 
  PreviewPageInfo(image: Image,physicalSize: Size)
  """
- @staticmethod
- def __new__(self,image,physicalSize):
-  """ __new__(cls: type,image: Image,physicalSize: Size) """
-  pass
- Image=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the image of the printed page.
+
+    @staticmethod
+    def __new__(self, image, physicalSize):
+        """ __new__(cls: type,image: Image,physicalSize: Size) """
+        pass
+
+    Image = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the image of the printed page.
 
 
 
@@ -980,8 +1068,10 @@ Get: Image(self: PreviewPageInfo) -> Image
 
 """
 
- PhysicalSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the size of the printed page,in hundredths of an inch.
+    PhysicalSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the size of the printed page,in hundredths of an inch.
 
 
 
@@ -992,11 +1082,11 @@ Get: PhysicalSize(self: PreviewPageInfo) -> Size
 """
 
 
-
 class PrintController(object):
- """ Controls how a document is printed,when printing from a Windows Forms application. """
- def OnEndPage(self,document,e):
-  """
+    """ Controls how a document is printed,when printing from a Windows Forms application. """
+
+    def OnEndPage(self, document, e):
+        """
   OnEndPage(self: PrintController,document: PrintDocument,e: PrintPageEventArgs)
 
    When overridden in a derived class,completes the control sequence that determines when and how 
@@ -1011,9 +1101,10 @@ class PrintController(object):
 
    e: A System.Drawing.Printing.PrintPageEventArgs that contains the event data.
   """
-  pass
- def OnEndPrint(self,document,e):
-  """
+        pass
+
+    def OnEndPrint(self, document, e):
+        """
   OnEndPrint(self: PrintController,document: PrintDocument,e: PrintEventArgs)
 
    When overridden in a derived class,completes the control sequence that determines when and how 
@@ -1028,9 +1119,10 @@ class PrintController(object):
 
    e: A System.Drawing.Printing.PrintEventArgs that contains the event data.
   """
-  pass
- def OnStartPage(self,document,e):
-  """
+        pass
+
+    def OnStartPage(self, document, e):
+        """
   OnStartPage(self: PrintController,document: PrintDocument,e: PrintPageEventArgs) -> Graphics
 
   
@@ -1049,9 +1141,10 @@ class PrintController(object):
 
    Returns: A System.Drawing.Graphics that represents a page from a System.Drawing.Printing.PrintDocument.
   """
-  pass
- def OnStartPrint(self,document,e):
-  """
+        pass
+
+    def OnStartPrint(self, document, e):
+        """
   OnStartPrint(self: PrintController,document: PrintDocument,e: PrintEventArgs)
 
    When overridden in a derived class,begins the control sequence that determines when and how to 
@@ -1066,9 +1159,10 @@ class PrintController(object):
 
    e: A System.Drawing.Printing.PrintEventArgs that contains the event data.
   """
-  pass
- IsPreview=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Drawing.Printing.PrintController is used for print preview.
+        pass
+
+    IsPreview = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the System.Drawing.Printing.PrintController is used for print preview.
 
 
 
@@ -1079,17 +1173,17 @@ Get: IsPreview(self: PrintController) -> bool
 """
 
 
-
 class PreviewPrintController(PrintController):
- """
+    """
  Specifies a print controller that displays a document on a screen as a series of images.
 
  
 
  PreviewPrintController()
  """
- def GetPreviewPageInfo(self):
-  """
+
+    def GetPreviewPageInfo(self):
+        """
   GetPreviewPageInfo(self: PreviewPrintController) -> Array[PreviewPageInfo]
 
   
@@ -1100,9 +1194,10 @@ class PreviewPrintController(PrintController):
 
     System.Drawing.Printing.PrintDocument as a series of images.
   """
-  pass
- def OnEndPage(self,document,e):
-  """
+        pass
+
+    def OnEndPage(self, document, e):
+        """
   OnEndPage(self: PreviewPrintController,document: PrintDocument,e: PrintPageEventArgs)
 
    Completes the control sequence that determines when and how to preview a page in a print 
@@ -1119,9 +1214,10 @@ class PreviewPrintController(PrintController):
 
     the print document.
   """
-  pass
- def OnEndPrint(self,document,e):
-  """
+        pass
+
+    def OnEndPrint(self, document, e):
+        """
   OnEndPrint(self: PreviewPrintController,document: PrintDocument,e: PrintEventArgs)
 
    Completes the control sequence that determines when and how to preview a print document.
@@ -1134,9 +1230,10 @@ class PreviewPrintController(PrintController):
 
     document.
   """
-  pass
- def OnStartPage(self,document,e):
-  """
+        pass
+
+    def OnStartPage(self, document, e):
+        """
   OnStartPage(self: PreviewPrintController,document: PrintDocument,e: PrintPageEventArgs) -> Graphics
 
   
@@ -1159,9 +1256,10 @@ class PreviewPrintController(PrintController):
 
    Returns: A System.Drawing.Graphics that represents a page from a System.Drawing.Printing.PrintDocument.
   """
-  pass
- def OnStartPrint(self,document,e):
-  """
+        pass
+
+    def OnStartPrint(self, document, e):
+        """
   OnStartPrint(self: PreviewPrintController,document: PrintDocument,e: PrintEventArgs)
 
    Begins the control sequence that determines when and how to preview a print document.
@@ -1172,9 +1270,10 @@ class PreviewPrintController(PrintController):
 
    e: A System.Drawing.Printing.PrintEventArgs that contains data about how to print the document.
   """
-  pass
- IsPreview=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether this controller is used for print preview.
+        pass
+
+    IsPreview = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether this controller is used for print preview.
 
 
 
@@ -1184,8 +1283,10 @@ Get: IsPreview(self: PreviewPrintController) -> bool
 
 """
 
- UseAntiAlias=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether to use anti-aliasing when displaying the print preview.
+    UseAntiAlias = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether to use anti-aliasing when displaying the print preview.
 
 
 
@@ -1198,54 +1299,65 @@ Set: UseAntiAlias(self: PreviewPrintController)=value
 """
 
 
-
-class PrintAction(Enum,IComparable,IFormattable,IConvertible):
- """
+class PrintAction(Enum, IComparable, IFormattable, IConvertible):
+    """
  Specifies the type of print operation occurring.
 
  
 
  enum PrintAction,values: PrintToFile (0),PrintToPreview (1),PrintToPrinter (2)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- PrintToFile=None
- PrintToPreview=None
- PrintToPrinter=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    PrintToFile = None
+    PrintToPreview = None
+    PrintToPrinter = None
+    value__ = None
 
 
-class PrintDocument(Component,IComponent,IDisposable):
- """
+class PrintDocument(Component, IComponent, IDisposable):
+    """
  Defines a reusable object that sends output to a printer,when printing from a Windows Forms application.
 
  
 
  PrintDocument()
  """
- def Dispose(self):
-  """
+
+    def Dispose(self):
+        """
   Dispose(self: Component,disposing: bool)
 
    Releases the unmanaged resources used by the System.ComponentModel.Component and optionally 
@@ -1258,9 +1370,10 @@ class PrintDocument(Component,IComponent,IDisposable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -1279,9 +1392,10 @@ class PrintDocument(Component,IComponent,IDisposable):
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -1312,9 +1426,10 @@ class PrintDocument(Component,IComponent,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def OnBeginPrint(self,*args):
-  """
+        pass
+
+    def OnBeginPrint(self, *args):
+        """
   OnBeginPrint(self: PrintDocument,e: PrintEventArgs)
 
    Raises the System.Drawing.Printing.PrintDocument.BeginPrint event. It is called after the 
@@ -1329,9 +1444,10 @@ class PrintDocument(Component,IComponent,IDisposable):
 
    e: A System.Drawing.Printing.PrintEventArgs that contains the event data.
   """
-  pass
- def OnEndPrint(self,*args):
-  """
+        pass
+
+    def OnEndPrint(self, *args):
+        """
   OnEndPrint(self: PrintDocument,e: PrintEventArgs)
 
    Raises the System.Drawing.Printing.PrintDocument.EndPrint event. It is called when the last page 
@@ -1344,9 +1460,10 @@ class PrintDocument(Component,IComponent,IDisposable):
 
    e: A System.Drawing.Printing.PrintEventArgs that contains the event data.
   """
-  pass
- def OnPrintPage(self,*args):
-  """
+        pass
+
+    def OnPrintPage(self, *args):
+        """
   OnPrintPage(self: PrintDocument,e: PrintPageEventArgs)
 
    Raises the System.Drawing.Printing.PrintDocument.PrintPage event. It is called before a page 
@@ -1359,9 +1476,10 @@ class PrintDocument(Component,IComponent,IDisposable):
 
    e: A System.Drawing.Printing.PrintPageEventArgs that contains the event data.
   """
-  pass
- def OnQueryPageSettings(self,*args):
-  """
+        pass
+
+    def OnQueryPageSettings(self, *args):
+        """
   OnQueryPageSettings(self: PrintDocument,e: QueryPageSettingsEventArgs)
 
    Raises the System.Drawing.Printing.PrintDocument.QueryPageSettings event. It is called 
@@ -1374,16 +1492,18 @@ class PrintDocument(Component,IComponent,IDisposable):
 
    e: A System.Drawing.Printing.QueryPageSettingsEventArgs that contains the event data.
   """
-  pass
- def Print(self):
-  """
+        pass
+
+    def Print(self):
+        """
   Print(self: PrintDocument)
 
    Starts the document's printing process.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: PrintDocument) -> str
 
   
@@ -1392,37 +1512,46 @@ class PrintDocument(Component,IComponent,IDisposable):
 
    Returns: A string.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- DefaultPageSettings=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets page settings that are used as defaults for all pages to be printed.
+    DefaultPageSettings = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets page settings that are used as defaults for all pages to be printed.
 
 
 
@@ -1434,15 +1563,19 @@ Set: DefaultPageSettings(self: PrintDocument)=value
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- DocumentName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the document name to display (for example,in a print status dialog box or printer queue) while printing the document.
+    DocumentName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the document name to display (for example,in a print status dialog box or printer queue) while printing the document.
 
 
 
@@ -1454,15 +1587,17 @@ Set: DocumentName(self: PrintDocument)=value
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- OriginAtMargins=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the position of a graphics object associated with a page is located just inside the user-specified margins or at the top-left corner of the printable area of the page.
+    OriginAtMargins = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the position of a graphics object associated with a page is located just inside the user-specified margins or at the top-left corner of the printable area of the page.
 
 
 
@@ -1474,8 +1609,10 @@ Set: OriginAtMargins(self: PrintDocument)=value
 
 """
 
- PrintController=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the print controller that guides the printing process.
+    PrintController = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the print controller that guides the printing process.
 
 
 
@@ -1487,8 +1624,10 @@ Set: PrintController(self: PrintDocument)=value
 
 """
 
- PrinterSettings=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the printer that prints the document.
+    PrinterSettings = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the printer that prints the document.
 
 
 
@@ -1500,23 +1639,23 @@ Set: PrinterSettings(self: PrintDocument)=value
 
 """
 
-
- BeginPrint=None
- EndPrint=None
- PrintPage=None
- QueryPageSettings=None
+    BeginPrint = None
+    EndPrint = None
+    PrintPage = None
+    QueryPageSettings = None
 
 
 class PrinterResolution(object):
- """
+    """
  Represents the resolution supported by a printer.
 
  
 
  PrinterResolution()
  """
- def ToString(self):
-  """
+
+    def ToString(self):
+        """
   ToString(self: PrinterResolution) -> str
 
   
@@ -1525,9 +1664,10 @@ class PrinterResolution(object):
 
    Returns: A System.String that contains information about the System.Drawing.Printing.PrinterResolution.
   """
-  pass
- Kind=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the printer resolution.
+        pass
+
+    Kind = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the printer resolution.
 
 
 
@@ -1539,8 +1679,8 @@ Set: Kind(self: PrinterResolution)=value
 
 """
 
- X=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the horizontal printer resolution,in dots per inch.
+    X = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the horizontal printer resolution,in dots per inch.
 
 
 
@@ -1552,8 +1692,8 @@ Set: X(self: PrinterResolution)=value
 
 """
 
- Y=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the vertical printer resolution,in dots per inch.
+    Y = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the vertical printer resolution,in dots per inch.
 
 
 
@@ -1566,56 +1706,67 @@ Set: Y(self: PrinterResolution)=value
 """
 
 
-
-class PrinterResolutionKind(Enum,IComparable,IFormattable,IConvertible):
- """
+class PrinterResolutionKind(Enum, IComparable, IFormattable, IConvertible):
+    """
  Specifies a printer resolution.
 
  
 
  enum PrinterResolutionKind,values: Custom (0),Draft (-1),High (-4),Low (-2),Medium (-3)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Custom=None
- Draft=None
- High=None
- Low=None
- Medium=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Custom = None
+    Draft = None
+    High = None
+    Low = None
+    Medium = None
+    value__ = None
 
 
-class PrinterSettings(object,ICloneable):
- """
+class PrinterSettings(object, ICloneable):
+    """
  Specifies information about how a document is printed,including the printer that prints it,when printing from a Windows Forms application.
 
  
 
  PrinterSettings()
  """
- def Clone(self):
-  """
+
+    def Clone(self):
+        """
   Clone(self: PrinterSettings) -> object
 
   
@@ -1624,9 +1775,10 @@ class PrinterSettings(object,ICloneable):
 
    Returns: A copy of this object.
   """
-  pass
- def CreateMeasurementGraphics(self,*__args):
-  """
+        pass
+
+    def CreateMeasurementGraphics(self, *__args):
+        """
   CreateMeasurementGraphics(self: PrinterSettings,pageSettings: PageSettings) -> Graphics
 
   
@@ -1699,9 +1851,10 @@ class PrinterSettings(object,ICloneable):
 
     System.Drawing.Printing.PageSettings.
   """
-  pass
- def GetHdevmode(self,pageSettings=None):
-  """
+        pass
+
+    def GetHdevmode(self, pageSettings=None):
+        """
   GetHdevmode(self: PrinterSettings,pageSettings: PageSettings) -> IntPtr
 
   
@@ -1730,9 +1883,10 @@ class PrinterSettings(object,ICloneable):
 
    Returns: A handle to a DEVMODE structure.
   """
-  pass
- def GetHdevnames(self):
-  """
+        pass
+
+    def GetHdevnames(self):
+        """
   GetHdevnames(self: PrinterSettings) -> IntPtr
 
   
@@ -1741,9 +1895,10 @@ class PrinterSettings(object,ICloneable):
 
    Returns: A handle to a DEVNAMES structure.
   """
-  pass
- def IsDirectPrintingSupported(self,*__args):
-  """
+        pass
+
+    def IsDirectPrintingSupported(self, *__args):
+        """
   IsDirectPrintingSupported(self: PrinterSettings,image: Image) -> bool
 
   
@@ -1768,9 +1923,10 @@ class PrinterSettings(object,ICloneable):
 
    Returns: true if the printer supports printing the specified image format; otherwise,false.
   """
-  pass
- def SetHdevmode(self,hdevmode):
-  """
+        pass
+
+    def SetHdevmode(self, hdevmode):
+        """
   SetHdevmode(self: PrinterSettings,hdevmode: IntPtr)
 
    Copies the relevant information out of the given handle and into the 
@@ -1783,9 +1939,10 @@ class PrinterSettings(object,ICloneable):
 
    hdevmode: The handle to a Win32 DEVMODE structure.
   """
-  pass
- def SetHdevnames(self,hdevnames):
-  """
+        pass
+
+    def SetHdevnames(self, hdevnames):
+        """
   SetHdevnames(self: PrinterSettings,hdevnames: IntPtr)
 
    Copies the relevant information out of the given handle and into the 
@@ -1798,9 +1955,10 @@ class PrinterSettings(object,ICloneable):
 
    hdevnames: The handle to a Win32 DEVNAMES structure.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: PrinterSettings) -> str
 
   
@@ -1809,19 +1967,24 @@ class PrinterSettings(object,ICloneable):
 
    Returns: A string.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- CanDuplex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the printer supports double-sided printing.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    CanDuplex = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the printer supports double-sided printing.
 
 
 
@@ -1831,8 +1994,8 @@ Get: CanDuplex(self: PrinterSettings) -> bool
 
 """
 
- Collate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the printed document is collated.
+    Collate = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the printed document is collated.
 
 
 
@@ -1844,8 +2007,8 @@ Set: Collate(self: PrinterSettings)=value
 
 """
 
- Copies=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the number of copies of the document to print.
+    Copies = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the number of copies of the document to print.
 
 
 
@@ -1857,8 +2020,10 @@ Set: Copies(self: PrinterSettings)=value
 
 """
 
- DefaultPageSettings=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the default page settings for this printer.
+    DefaultPageSettings = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the default page settings for this printer.
 
 
 
@@ -1868,8 +2033,8 @@ Get: DefaultPageSettings(self: PrinterSettings) -> PageSettings
 
 """
 
- Duplex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the printer setting for double-sided printing.
+    Duplex = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the printer setting for double-sided printing.
 
 
 
@@ -1881,8 +2046,8 @@ Set: Duplex(self: PrinterSettings)=value
 
 """
 
- FromPage=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the page number of the first page to print.
+    FromPage = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the page number of the first page to print.
 
 
 
@@ -1894,8 +2059,10 @@ Set: FromPage(self: PrinterSettings)=value
 
 """
 
- IsDefaultPrinter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Drawing.Printing.PrinterSettings.PrinterName property designates the default printer,except when the user explicitly sets System.Drawing.Printing.PrinterSettings.PrinterName.
+    IsDefaultPrinter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Drawing.Printing.PrinterSettings.PrinterName property designates the default printer,except when the user explicitly sets System.Drawing.Printing.PrinterSettings.PrinterName.
 
 
 
@@ -1905,8 +2072,8 @@ Get: IsDefaultPrinter(self: PrinterSettings) -> bool
 
 """
 
- IsPlotter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the printer is a plotter.
+    IsPlotter = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the printer is a plotter.
 
 
 
@@ -1916,8 +2083,8 @@ Get: IsPlotter(self: PrinterSettings) -> bool
 
 """
 
- IsValid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Drawing.Printing.PrinterSettings.PrinterName property designates a valid printer.
+    IsValid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether the System.Drawing.Printing.PrinterSettings.PrinterName property designates a valid printer.
 
 
 
@@ -1927,8 +2094,10 @@ Get: IsValid(self: PrinterSettings) -> bool
 
 """
 
- LandscapeAngle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the angle,in degrees,that the portrait orientation is rotated to produce the landscape orientation.
+    LandscapeAngle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the angle,in degrees,that the portrait orientation is rotated to produce the landscape orientation.
 
 
 
@@ -1938,8 +2107,10 @@ Get: LandscapeAngle(self: PrinterSettings) -> int
 
 """
 
- MaximumCopies=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the maximum number of copies that the printer enables the user to print at a time.
+    MaximumCopies = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the maximum number of copies that the printer enables the user to print at a time.
 
 
 
@@ -1949,8 +2120,10 @@ Get: MaximumCopies(self: PrinterSettings) -> int
 
 """
 
- MaximumPage=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the maximum System.Drawing.Printing.PrinterSettings.FromPage or System.Drawing.Printing.PrinterSettings.ToPage that can be selected in a System.Windows.Forms.PrintDialog.
+    MaximumPage = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the maximum System.Drawing.Printing.PrinterSettings.FromPage or System.Drawing.Printing.PrinterSettings.ToPage that can be selected in a System.Windows.Forms.PrintDialog.
 
 
 
@@ -1962,8 +2135,10 @@ Set: MaximumPage(self: PrinterSettings)=value
 
 """
 
- MinimumPage=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the minimum System.Drawing.Printing.PrinterSettings.FromPage or System.Drawing.Printing.PrinterSettings.ToPage that can be selected in a System.Windows.Forms.PrintDialog.
+    MinimumPage = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the minimum System.Drawing.Printing.PrinterSettings.FromPage or System.Drawing.Printing.PrinterSettings.ToPage that can be selected in a System.Windows.Forms.PrintDialog.
 
 
 
@@ -1975,8 +2150,10 @@ Set: MinimumPage(self: PrinterSettings)=value
 
 """
 
- PaperSizes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the paper sizes that are supported by this printer.
+    PaperSizes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the paper sizes that are supported by this printer.
 
 
 
@@ -1986,8 +2163,10 @@ Get: PaperSizes(self: PrinterSettings) -> PaperSizeCollection
 
 """
 
- PaperSources=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the paper source trays that are available on the printer.
+    PaperSources = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the paper source trays that are available on the printer.
 
 
 
@@ -1997,8 +2176,10 @@ Get: PaperSources(self: PrinterSettings) -> PaperSourceCollection
 
 """
 
- PrinterName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the printer to use.
+    PrinterName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the printer to use.
 
 
 
@@ -2010,8 +2191,10 @@ Set: PrinterName(self: PrinterSettings)=value
 
 """
 
- PrinterResolutions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets all the resolutions that are supported by this printer.
+    PrinterResolutions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets all the resolutions that are supported by this printer.
 
 
 
@@ -2021,8 +2204,10 @@ Get: PrinterResolutions(self: PrinterSettings) -> PrinterResolutionCollection
 
 """
 
- PrintFileName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the file name,when printing to a file.
+    PrintFileName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the file name,when printing to a file.
 
 
 
@@ -2034,8 +2219,10 @@ Set: PrintFileName(self: PrinterSettings)=value
 
 """
 
- PrintRange=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the page numbers that the user has specified to be printed.
+    PrintRange = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the page numbers that the user has specified to be printed.
 
 
 
@@ -2047,8 +2234,10 @@ Set: PrintRange(self: PrinterSettings)=value
 
 """
 
- PrintToFile=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the printing output is sent to a file instead of a port.
+    PrintToFile = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the printing output is sent to a file instead of a port.
 
 
 
@@ -2060,8 +2249,10 @@ Set: PrintToFile(self: PrinterSettings)=value
 
 """
 
- SupportsColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether this printer supports color printing.
+    SupportsColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether this printer supports color printing.
 
 
 
@@ -2071,8 +2262,8 @@ Get: SupportsColor(self: PrinterSettings) -> bool
 
 """
 
- ToPage=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the number of the last page to print.
+    ToPage = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the number of the last page to print.
 
 
 
@@ -2084,57 +2275,68 @@ Set: ToPage(self: PrinterSettings)=value
 
 """
 
+    InstalledPrinters = None
+    PaperSizeCollection = None
+    PaperSourceCollection = None
+    PrinterResolutionCollection = None
+    StringCollection = None
 
- InstalledPrinters=None
- PaperSizeCollection=None
- PaperSourceCollection=None
- PrinterResolutionCollection=None
- StringCollection=None
 
-
-class PrinterUnit(Enum,IComparable,IFormattable,IConvertible):
- """
+class PrinterUnit(Enum, IComparable, IFormattable, IConvertible):
+    """
  Specifies several of the units of measure used for printing.
 
  
 
  enum PrinterUnit,values: Display (0),HundredthsOfAMillimeter (2),TenthsOfAMillimeter (3),ThousandthsOfAnInch (1)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Display=None
- HundredthsOfAMillimeter=None
- TenthsOfAMillimeter=None
- ThousandthsOfAnInch=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Display = None
+    HundredthsOfAMillimeter = None
+    TenthsOfAMillimeter = None
+    ThousandthsOfAnInch = None
+    value__ = None
 
 
 class PrinterUnitConvert(object):
- """ Specifies a series of conversion methods that are useful when interoperating with the Win32 printing API. This class cannot be inherited. """
- @staticmethod
- def Convert(value,fromUnit,toUnit):
-  """
+    """ Specifies a series of conversion methods that are useful when interoperating with the Win32 printing API. This class cannot be inherited. """
+
+    @staticmethod
+    def Convert(value, fromUnit, toUnit):
+        """
   Convert(value: Size,fromUnit: PrinterUnit,toUnit: PrinterUnit) -> Size
 
   
@@ -2263,18 +2465,22 @@ class PrinterUnitConvert(object):
 
    Returns: A System.Drawing.Point that represents the converted System.Drawing.Printing.PrinterUnit.
   """
-  pass
+        pass
+
 
 class PrintEventArgs(CancelEventArgs):
- """
+    """
  Provides data for the System.Drawing.Printing.PrintDocument.BeginPrint and System.Drawing.Printing.PrintDocument.EndPrint events.
 
  
 
  PrintEventArgs()
  """
- PrintAction=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns System.Drawing.Printing.PrintAction.PrintToFile in all cases.
+
+    PrintAction = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns System.Drawing.Printing.PrintAction.PrintToFile in all cases.
 
 
 
@@ -2285,20 +2491,21 @@ Get: PrintAction(self: PrintEventArgs) -> PrintAction
 """
 
 
-
-class PrintEventHandler(MulticastDelegate,ICloneable,ISerializable):
- """
+class PrintEventHandler(MulticastDelegate, ICloneable, ISerializable):
+    """
  Represents the method that will handle the System.Drawing.Printing.PrintDocument.BeginPrint or System.Drawing.Printing.PrintDocument.EndPrint event of a System.Drawing.Printing.PrintDocument.
 
  
 
  PrintEventHandler(object: object,method: IntPtr)
  """
- def BeginInvoke(self,sender,e,callback,object):
-  """ BeginInvoke(self: PrintEventHandler,sender: object,e: PrintEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+
+    def BeginInvoke(self, sender, e, callback, object):
+        """ BeginInvoke(self: PrintEventHandler,sender: object,e: PrintEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -2311,9 +2518,10 @@ class PrintEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -2332,12 +2540,14 @@ class PrintEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: PrintEventHandler,result: IAsyncResult) """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: PrintEventHandler,result: IAsyncResult) """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -2346,12 +2556,14 @@ class PrintEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,sender,e):
-  """ Invoke(self: PrintEventHandler,sender: object,e: PrintEventArgs) """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, sender, e):
+        """ Invoke(self: PrintEventHandler,sender: object,e: PrintEventArgs) """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -2370,19 +2582,29 @@ class PrintEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
 
-class PrintingPermission(CodeAccessPermission,IPermission,ISecurityEncodable,IStackWalk,IUnrestrictedPermission):
- """
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+
+class PrintingPermission(
+    CodeAccessPermission,
+    IPermission,
+    ISecurityEncodable,
+    IStackWalk,
+    IUnrestrictedPermission,
+):
+    """
  Controls access to printers. This class cannot be inherited.
 
  
@@ -2391,8 +2613,9 @@ class PrintingPermission(CodeAccessPermission,IPermission,ISecurityEncodable,ISt
 
  PrintingPermission(printingLevel: PrintingPermissionLevel)
  """
- def Copy(self):
-  """
+
+    def Copy(self):
+        """
   Copy(self: PrintingPermission) -> IPermission
 
   
@@ -2401,9 +2624,10 @@ class PrintingPermission(CodeAccessPermission,IPermission,ISecurityEncodable,ISt
 
    Returns: A copy of the current permission object.
   """
-  pass
- def FromXml(self,esd):
-  """
+        pass
+
+    def FromXml(self, esd):
+        """
   FromXml(self: PrintingPermission,esd: SecurityElement)
 
    Reconstructs a security object with a specified state from an XML encoding.
@@ -2412,9 +2636,10 @@ class PrintingPermission(CodeAccessPermission,IPermission,ISecurityEncodable,ISt
 
    esd: The XML encoding to use to reconstruct the security object.
   """
-  pass
- def Intersect(self,target):
-  """
+        pass
+
+    def Intersect(self, target):
+        """
   Intersect(self: PrintingPermission,target: IPermission) -> IPermission
 
   
@@ -2433,9 +2658,10 @@ class PrintingPermission(CodeAccessPermission,IPermission,ISecurityEncodable,ISt
 
     target. This object is null if the intersection is empty.
   """
-  pass
- def IsSubsetOf(self,target):
-  """
+        pass
+
+    def IsSubsetOf(self, target):
+        """
   IsSubsetOf(self: PrintingPermission,target: IPermission) -> bool
 
   
@@ -2452,9 +2678,10 @@ class PrintingPermission(CodeAccessPermission,IPermission,ISecurityEncodable,ISt
 
    Returns: true if the current permission object is a subset of target; otherwise,false.
   """
-  pass
- def IsUnrestricted(self):
-  """
+        pass
+
+    def IsUnrestricted(self):
+        """
   IsUnrestricted(self: PrintingPermission) -> bool
 
   
@@ -2463,9 +2690,10 @@ class PrintingPermission(CodeAccessPermission,IPermission,ISecurityEncodable,ISt
 
    Returns: true if permission is unrestricted; otherwise,false.
   """
-  pass
- def ToXml(self):
-  """
+        pass
+
+    def ToXml(self):
+        """
   ToXml(self: PrintingPermission) -> SecurityElement
 
   
@@ -2474,9 +2702,10 @@ class PrintingPermission(CodeAccessPermission,IPermission,ISecurityEncodable,ISt
 
    Returns: An XML encoding of the security object,including any state information.
   """
-  pass
- def Union(self,target):
-  """
+        pass
+
+    def Union(self, target):
+        """
   Union(self: PrintingPermission,target: IPermission) -> IPermission
 
   
@@ -2491,24 +2720,29 @@ class PrintingPermission(CodeAccessPermission,IPermission,ISecurityEncodable,ISt
 
     specified permission object.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,state: PermissionState)
 
   __new__(cls: type,printingLevel: PrintingPermissionLevel)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Level=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the code's level of printing access.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Level = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the code's level of printing access.
 
 
 
@@ -2521,17 +2755,17 @@ Set: Level(self: PrintingPermission)=value
 """
 
 
-
-class PrintingPermissionAttribute(CodeAccessSecurityAttribute,_Attribute):
- """
+class PrintingPermissionAttribute(CodeAccessSecurityAttribute, _Attribute):
+    """
  Allows declarative printing permission checks.
 
  
 
  PrintingPermissionAttribute(action: SecurityAction)
  """
- def CreatePermission(self):
-  """
+
+    def CreatePermission(self):
+        """
   CreatePermission(self: PrintingPermissionAttribute) -> IPermission
 
   
@@ -2544,16 +2778,19 @@ class PrintingPermissionAttribute(CodeAccessSecurityAttribute,_Attribute):
 
    Returns: An System.Security.IPermission that represents the created permission.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,action):
-  """ __new__(cls: type,action: SecurityAction) """
-  pass
- Level=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the type of printing allowed.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, action):
+        """ __new__(cls: type,action: SecurityAction) """
+        pass
+
+    Level = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the type of printing allowed.
 
 
 
@@ -2566,59 +2803,71 @@ Set: Level(self: PrintingPermissionAttribute)=value
 """
 
 
-
-class PrintingPermissionLevel(Enum,IComparable,IFormattable,IConvertible):
- """
+class PrintingPermissionLevel(Enum, IComparable, IFormattable, IConvertible):
+    """
  Specifies the type of printing that code is allowed to do.
 
  
 
  enum PrintingPermissionLevel,values: AllPrinting (3),DefaultPrinting (2),NoPrinting (0),SafePrinting (1)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- AllPrinting=None
- DefaultPrinting=None
- NoPrinting=None
- SafePrinting=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AllPrinting = None
+    DefaultPrinting = None
+    NoPrinting = None
+    SafePrinting = None
+    value__ = None
 
 
 class PrintPageEventArgs(EventArgs):
- """
+    """
  Provides data for the System.Drawing.Printing.PrintDocument.PrintPage event.
 
  
 
  PrintPageEventArgs(graphics: Graphics,marginBounds: Rectangle,pageBounds: Rectangle,pageSettings: PageSettings)
  """
- @staticmethod
- def __new__(self,graphics,marginBounds,pageBounds,pageSettings):
-  """ __new__(cls: type,graphics: Graphics,marginBounds: Rectangle,pageBounds: Rectangle,pageSettings: PageSettings) """
-  pass
- Cancel=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the print job should be canceled.
+
+    @staticmethod
+    def __new__(self, graphics, marginBounds, pageBounds, pageSettings):
+        """ __new__(cls: type,graphics: Graphics,marginBounds: Rectangle,pageBounds: Rectangle,pageSettings: PageSettings) """
+        pass
+
+    Cancel = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the print job should be canceled.
 
 
 
@@ -2630,8 +2879,8 @@ Set: Cancel(self: PrintPageEventArgs)=value
 
 """
 
- Graphics=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Drawing.Graphics used to paint the page.
+    Graphics = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the System.Drawing.Graphics used to paint the page.
 
 
 
@@ -2641,8 +2890,10 @@ Get: Graphics(self: PrintPageEventArgs) -> Graphics
 
 """
 
- HasMorePages=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether an additional page should be printed.
+    HasMorePages = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether an additional page should be printed.
 
 
 
@@ -2654,8 +2905,10 @@ Set: HasMorePages(self: PrintPageEventArgs)=value
 
 """
 
- MarginBounds=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the rectangular area that represents the portion of the page inside the margins.
+    MarginBounds = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the rectangular area that represents the portion of the page inside the margins.
 
 
 
@@ -2665,8 +2918,10 @@ Get: MarginBounds(self: PrintPageEventArgs) -> Rectangle
 
 """
 
- PageBounds=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the rectangular area that represents the total area of the page.
+    PageBounds = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the rectangular area that represents the total area of the page.
 
 
 
@@ -2676,8 +2931,10 @@ Get: PageBounds(self: PrintPageEventArgs) -> Rectangle
 
 """
 
- PageSettings=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the page settings for the current page.
+    PageSettings = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the page settings for the current page.
 
 
 
@@ -2688,20 +2945,21 @@ Get: PageSettings(self: PrintPageEventArgs) -> PageSettings
 """
 
 
-
-class PrintPageEventHandler(MulticastDelegate,ICloneable,ISerializable):
- """
+class PrintPageEventHandler(MulticastDelegate, ICloneable, ISerializable):
+    """
  Represents the method that will handle the System.Drawing.Printing.PrintDocument.PrintPage event of a System.Drawing.Printing.PrintDocument.
 
  
 
  PrintPageEventHandler(object: object,method: IntPtr)
  """
- def BeginInvoke(self,sender,e,callback,object):
-  """ BeginInvoke(self: PrintPageEventHandler,sender: object,e: PrintPageEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+
+    def BeginInvoke(self, sender, e, callback, object):
+        """ BeginInvoke(self: PrintPageEventHandler,sender: object,e: PrintPageEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -2714,9 +2972,10 @@ class PrintPageEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -2735,12 +2994,14 @@ class PrintPageEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: PrintPageEventHandler,result: IAsyncResult) """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: PrintPageEventHandler,result: IAsyncResult) """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -2749,12 +3010,14 @@ class PrintPageEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,sender,e):
-  """ Invoke(self: PrintPageEventHandler,sender: object,e: PrintPageEventArgs) """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, sender, e):
+        """ Invoke(self: PrintPageEventHandler,sender: object,e: PrintPageEventArgs) """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -2773,69 +3036,88 @@ class PrintPageEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
 
-class PrintRange(Enum,IComparable,IFormattable,IConvertible):
- """
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+
+class PrintRange(Enum, IComparable, IFormattable, IConvertible):
+    """
  Specifies the part of the document to print.
 
  
 
  enum PrintRange,values: AllPages (0),CurrentPage (4194304),Selection (1),SomePages (2)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- AllPages=None
- CurrentPage=None
- Selection=None
- SomePages=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AllPages = None
+    CurrentPage = None
+    Selection = None
+    SomePages = None
+    value__ = None
 
 
 class QueryPageSettingsEventArgs(PrintEventArgs):
- """
+    """
  Provides data for the System.Drawing.Printing.PrintDocument.QueryPageSettings event.
 
  
 
  QueryPageSettingsEventArgs(pageSettings: PageSettings)
  """
- @staticmethod
- def __new__(self,pageSettings):
-  """ __new__(cls: type,pageSettings: PageSettings) """
-  pass
- PageSettings=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the page settings for the page to be printed.
+
+    @staticmethod
+    def __new__(self, pageSettings):
+        """ __new__(cls: type,pageSettings: PageSettings) """
+        pass
+
+    PageSettings = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the page settings for the page to be printed.
 
 
 
@@ -2848,20 +3130,21 @@ Set: PageSettings(self: QueryPageSettingsEventArgs)=value
 """
 
 
-
-class QueryPageSettingsEventHandler(MulticastDelegate,ICloneable,ISerializable):
- """
+class QueryPageSettingsEventHandler(MulticastDelegate, ICloneable, ISerializable):
+    """
  Represents the method that handles the System.Drawing.Printing.PrintDocument.QueryPageSettings event of a System.Drawing.Printing.PrintDocument.
 
  
 
  QueryPageSettingsEventHandler(object: object,method: IntPtr)
  """
- def BeginInvoke(self,sender,e,callback,object):
-  """ BeginInvoke(self: QueryPageSettingsEventHandler,sender: object,e: QueryPageSettingsEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+
+    def BeginInvoke(self, sender, e, callback, object):
+        """ BeginInvoke(self: QueryPageSettingsEventHandler,sender: object,e: QueryPageSettingsEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -2874,9 +3157,10 @@ class QueryPageSettingsEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -2895,12 +3179,14 @@ class QueryPageSettingsEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: QueryPageSettingsEventHandler,result: IAsyncResult) """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: QueryPageSettingsEventHandler,result: IAsyncResult) """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -2909,12 +3195,14 @@ class QueryPageSettingsEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,sender,e):
-  """ Invoke(self: QueryPageSettingsEventHandler,sender: object,e: QueryPageSettingsEventArgs) """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, sender, e):
+        """ Invoke(self: QueryPageSettingsEventHandler,sender: object,e: QueryPageSettingsEventArgs) """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -2933,27 +3221,32 @@ class QueryPageSettingsEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
 
 class StandardPrintController(PrintController):
- """
+    """
  Specifies a print controller that sends information to a printer.
 
  
 
  StandardPrintController()
  """
- def OnEndPage(self,document,e):
-  """
+
+    def OnEndPage(self, document, e):
+        """
   OnEndPage(self: StandardPrintController,document: PrintDocument,e: PrintPageEventArgs)
 
    Completes the control sequence that determines when and how to print a page of a document.
@@ -2966,9 +3259,10 @@ class StandardPrintController(PrintController):
 
     document.
   """
-  pass
- def OnEndPrint(self,document,e):
-  """
+        pass
+
+    def OnEndPrint(self, document, e):
+        """
   OnEndPrint(self: StandardPrintController,document: PrintDocument,e: PrintEventArgs)
 
    Completes the control sequence that determines when and how to print a document.
@@ -2979,9 +3273,10 @@ class StandardPrintController(PrintController):
 
    e: A System.Drawing.Printing.PrintEventArgs that contains data about how to print the document.
   """
-  pass
- def OnStartPage(self,document,e):
-  """
+        pass
+
+    def OnStartPage(self, document, e):
+        """
   OnStartPage(self: StandardPrintController,document: PrintDocument,e: PrintPageEventArgs) -> Graphics
 
   
@@ -3008,9 +3303,10 @@ class StandardPrintController(PrintController):
 
     System.Drawing.Printing.PrintDocument.
   """
-  pass
- def OnStartPrint(self,document,e):
-  """
+        pass
+
+    def OnStartPrint(self, document, e):
+        """
   OnStartPrint(self: StandardPrintController,document: PrintDocument,e: PrintEventArgs)
 
    Begins the control sequence that determines when and how to print a document.
@@ -3021,5 +3317,4 @@ class StandardPrintController(PrintController):
 
    e: A System.Drawing.Printing.PrintEventArgs that contains data about how to print the document.
   """
-  pass
-
+        pass

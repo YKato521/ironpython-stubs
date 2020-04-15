@@ -1,12 +1,14 @@
 class DetailElementOrderUtils(object):
- """ A utility class that arranges the draw order of the detail objects. """
- @staticmethod
- def AreDetailElements(pDocument,pDBView,detailElementIds):
-  """ AreDetailElements(pDocument: Document,pDBView: View,detailElementIds: ICollection[ElementId]) -> bool """
-  pass
- @staticmethod
- def BringForward(pDocument,pDBView,*__args):
-  """
+    """ A utility class that arranges the draw order of the detail objects. """
+
+    @staticmethod
+    def AreDetailElements(pDocument, pDBView, detailElementIds):
+        """ AreDetailElements(pDocument: Document,pDBView: View,detailElementIds: ICollection[ElementId]) -> bool """
+        pass
+
+    @staticmethod
+    def BringForward(pDocument, pDBView, *__args):
+        """
   BringForward(pDocument: Document,pDBView: View,detailElementId: ElementId)
 
    Moves the given detail instance one step closer to the front of all other 
@@ -25,10 +27,11 @@ class DetailElementOrderUtils(object):
 
   BringForward(pDocument: Document,pDBView: View,detailElementIds: ICollection[ElementId])
   """
-  pass
- @staticmethod
- def BringToFront(pDocument,pDBView,*__args):
-  """
+        pass
+
+    @staticmethod
+    def BringToFront(pDocument, pDBView, *__args):
+        """
   BringToFront(pDocument: Document,pDBView: View,detailElementId: ElementId)
 
    Places the given detail instance in the front of all other detail instances in 
@@ -47,10 +50,11 @@ class DetailElementOrderUtils(object):
 
   BringToFront(pDocument: Document,pDBView: View,detailElementIds: ICollection[ElementId])
   """
-  pass
- @staticmethod
- def IsDetailElement(pDocument,pDBView,detailElementId):
-  """
+        pass
+
+    @staticmethod
+    def IsDetailElement(pDocument, pDBView, detailElementId):
+        """
   IsDetailElement(pDocument: Document,pDBView: View,detailElementId: ElementId) -> bool
 
   
@@ -67,10 +71,11 @@ class DetailElementOrderUtils(object):
 
    Returns: True if it is a detail element,false otherwise.
   """
-  pass
- @staticmethod
- def SendBackward(pDocument,pDBView,*__args):
-  """
+        pass
+
+    @staticmethod
+    def SendBackward(pDocument, pDBView, *__args):
+        """
   SendBackward(pDocument: Document,pDBView: View,detailElementId: ElementId)
 
    Moves the given detail instance one step closer to the back of all other detail 
@@ -89,10 +94,11 @@ class DetailElementOrderUtils(object):
 
   SendBackward(pDocument: Document,pDBView: View,detailElementIds: ICollection[ElementId])
   """
-  pass
- @staticmethod
- def SendToBack(pDocument,pDBView,*__args):
-  """
+        pass
+
+    @staticmethod
+    def SendToBack(pDocument, pDBView, *__args):
+        """
   SendToBack(pDocument: Document,pDBView: View,detailElementId: ElementId)
 
    Places the given detail instance behind all detail instances in the view.
@@ -107,13 +113,13 @@ class DetailElementOrderUtils(object):
 
   SendToBack(pDocument: Document,pDBView: View,detailElementIds: ICollection[ElementId])
   """
-  pass
- __all__=[
-  'AreDetailElements',
-  'BringForward',
-  'BringToFront',
-  'IsDetailElement',
-  'SendBackward',
-  'SendToBack',
- ]
+        pass
 
+    __all__ = [
+        "AreDetailElements",
+        "BringForward",
+        "BringToFront",
+        "IsDetailElement",
+        "SendBackward",
+        "SendToBack",
+    ]

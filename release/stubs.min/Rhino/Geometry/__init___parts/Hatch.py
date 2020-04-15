@@ -1,5 +1,5 @@
-class Hatch(GeometryBase,IDisposable,ISerializable):
- """
+class Hatch(GeometryBase, IDisposable, ISerializable):
+    """
  Represents a hatch in planar boundary loop or loops.
 
     This is a 2d entity with a plane defining a local coordinate system.
@@ -12,8 +12,9 @@ class Hatch(GeometryBase,IDisposable,ISerializable):
 
     Hatch has an index to get the pattern definition from the pattern table.
  """
- def ConstructConstObject(self,*args):
-  """
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -24,10 +25,11 @@ class Hatch(GeometryBase,IDisposable,ISerializable):
 
    subobject_index: The subobject index.
   """
-  pass
- @staticmethod
- def Create(*__args):
-  """
+        pass
+
+    @staticmethod
+    def Create(*__args):
+        """
   Create(curve: Curve,hatchPatternIndex: int,rotationRadians: float,scale: float) -> Array[Hatch]
 
   
@@ -48,18 +50,20 @@ class Hatch(GeometryBase,IDisposable,ISerializable):
 
   Create(curves: IEnumerable[Curve],hatchPatternIndex: int,rotationRadians: float,scale: float) -> Array[Hatch]
   """
-  pass
- def CreateDisplayGeometry(self,pattern,patternScale,bounds,lines,solidBrep):
-  """
+        pass
+
+    def CreateDisplayGeometry(self, pattern, patternScale, bounds, lines, solidBrep):
+        """
   CreateDisplayGeometry(self: Hatch,pattern: HatchPattern,patternScale: float) -> (Array[Curve],Array[Line],Brep)
 
   
 
    Generate geometry that would be used to draw the hatch with a given hatch pattern
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: CommonObject,disposing: bool)
 
    For derived class implementers.
@@ -84,9 +88,10 @@ class Hatch(GeometryBase,IDisposable,ISerializable):
 
     finalizer.
   """
-  pass
- def Explode(self):
-  """
+        pass
+
+    def Explode(self):
+        """
   Explode(self: Hatch) -> Array[GeometryBase]
 
   
@@ -95,9 +100,10 @@ class Hatch(GeometryBase,IDisposable,ISerializable):
 
    Returns: An array of geometry that formed the appearance of the original elements.
   """
-  pass
- def Get3dCurves(self,outer):
-  """
+        pass
+
+    def Get3dCurves(self, outer):
+        """
   Get3dCurves(self: Hatch,outer: bool) -> Array[Curve]
 
   
@@ -108,9 +114,10 @@ class Hatch(GeometryBase,IDisposable,ISerializable):
 
    outer: true to get the outer curves,false to get the inner curves
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: CommonObject)
 
    For derived classes implementers.
@@ -119,41 +126,50 @@ class Hatch(GeometryBase,IDisposable,ISerializable):
 
     instance from being const.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: GeometryBase)
 
    Is called when a non-const operation occurs.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """ __new__(cls: type,info: SerializationInfo,context: StreamingContext) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- PatternIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the index of the pattern in the document hatch pattern table.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """ __new__(cls: type,info: SerializationInfo,context: StreamingContext) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    PatternIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the index of the pattern in the document hatch pattern table.
 
 
 
@@ -165,8 +181,10 @@ Set: PatternIndex(self: Hatch)=value
 
 """
 
- PatternRotation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the relative rotation of the pattern.
+    PatternRotation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the relative rotation of the pattern.
 
 
 
@@ -178,8 +196,10 @@ Set: PatternRotation(self: Hatch)=value
 
 """
 
- PatternScale=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the scaling factor of the pattern.
+    PatternScale = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the scaling factor of the pattern.
 
 
 
@@ -190,5 +210,3 @@ Get: PatternScale(self: Hatch) -> float
 Set: PatternScale(self: Hatch)=value
 
 """
-
-

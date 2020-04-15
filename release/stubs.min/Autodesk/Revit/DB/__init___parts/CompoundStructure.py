@@ -1,7 +1,8 @@
-class CompoundStructure(object,IDisposable):
- """ Describes the internal structure of a wall,floor,roof or ceiling. """
- def AddWallSweep(self,wallSweepInfo):
-  """
+class CompoundStructure(object, IDisposable):
+    """ Describes the internal structure of a wall,floor,roof or ceiling. """
+
+    def AddWallSweep(self, wallSweepInfo):
+        """
   AddWallSweep(self: CompoundStructure,wallSweepInfo: WallSweepInfo)
 
    Adds a new wall sweep or reveal to the compound structure.
@@ -10,9 +11,10 @@ class CompoundStructure(object,IDisposable):
 
    wallSweepInfo: The wall sweep info to create a wall sweep.
   """
-  pass
- def AssociateRegionWithLayer(self,regionId,layerIdx):
-  """
+        pass
+
+    def AssociateRegionWithLayer(self, regionId, layerIdx):
+        """
   AssociateRegionWithLayer(self: CompoundStructure,regionId: int,layerIdx: int)
 
    Associates a region with a layer.
@@ -23,9 +25,10 @@ class CompoundStructure(object,IDisposable):
 
    layerIdx: The index of a layer in this CompoundStructure.
   """
-  pass
- def CanLayerBeStructuralMaterial(self,layerIndex):
-  """
+        pass
+
+    def CanLayerBeStructuralMaterial(self, layerIndex):
+        """
   CanLayerBeStructuralMaterial(self: CompoundStructure,layerIndex: int) -> bool
 
   
@@ -44,9 +47,10 @@ class CompoundStructure(object,IDisposable):
 
     otherwise.
   """
-  pass
- def CanLayerBeVariable(self,variableLayerIndex):
-  """
+        pass
+
+    def CanLayerBeVariable(self, variableLayerIndex):
+        """
   CanLayerBeVariable(self: CompoundStructure,variableLayerIndex: int) -> bool
 
   
@@ -59,9 +63,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: True if the input layer may be a variable thickness layer and false otherwise.
   """
-  pass
- def CanLayerWidthBeNonZero(self,layerIdx):
-  """
+        pass
+
+    def CanLayerWidthBeNonZero(self, layerIdx):
+        """
   CanLayerWidthBeNonZero(self: CompoundStructure,layerIdx: int) -> bool
 
   
@@ -76,9 +81,10 @@ class CompoundStructure(object,IDisposable):
 
    layerIdx: The index of a CompoundStructureLayer.
   """
-  pass
- def ChangeRegionWidth(self,regionId,newWidth):
-  """
+        pass
+
+    def ChangeRegionWidth(self, regionId, newWidth):
+        """
   ChangeRegionWidth(self: CompoundStructure,regionId: int,newWidth: float) -> bool
 
   
@@ -93,9 +99,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: True if newWidth is zero and the region was deleted.
   """
-  pass
- def ClearWallSweeps(self,wallSweepType):
-  """
+        pass
+
+    def ClearWallSweeps(self, wallSweepType):
+        """
   ClearWallSweeps(self: CompoundStructure,wallSweepType: WallSweepType)
 
    Removes all sweeps or reveals from the compound structure.
@@ -104,14 +111,16 @@ class CompoundStructure(object,IDisposable):
 
    wallSweepType: The type of a wall sweep.
   """
-  pass
- @staticmethod
- def CreateSimpleCompoundStructure(layers):
-  """ CreateSimpleCompoundStructure(layers: IList[CompoundStructureLayer]) -> CompoundStructure """
-  pass
- @staticmethod
- def CreateSingleLayerCompoundStructure(*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateSimpleCompoundStructure(layers):
+        """ CreateSimpleCompoundStructure(layers: IList[CompoundStructureLayer]) -> CompoundStructure """
+        pass
+
+    @staticmethod
+    def CreateSingleLayerCompoundStructure(*__args):
+        """
   CreateSingleLayerCompoundStructure(layerFunction: MaterialFunctionAssignment,width: float,materialId: ElementId) -> CompoundStructure
 
   
@@ -146,9 +155,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: The newly created compound structure.
   """
-  pass
- def DeleteLayer(self,layerIdx):
-  """
+        pass
+
+    def DeleteLayer(self, layerIdx):
+        """
   DeleteLayer(self: CompoundStructure,layerIdx: int) -> bool
 
   
@@ -165,12 +175,16 @@ class CompoundStructure(object,IDisposable):
 
    Returns: True if the layer was successfully deleted,and false otherwise.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: CompoundStructure) """
-  pass
- def FindEnclosingRegionAndSegments(self,gridUV,splitDirection,segmentId1,segmentId2):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: CompoundStructure) """
+        pass
+
+    def FindEnclosingRegionAndSegments(
+        self, gridUV, splitDirection, segmentId1, segmentId2
+    ):
+        """
   FindEnclosingRegionAndSegments(self: CompoundStructure,gridUV: UV,splitDirection: RectangularGridSegmentOrientation) -> (int,int,int)
 
   
@@ -193,9 +207,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: Returns the id of the enclosing region,and -1 if no region encloses the point.
   """
-  pass
- def GetAdjacentRegions(self,segmentId):
-  """
+        pass
+
+    def GetAdjacentRegions(self, segmentId):
+        """
   GetAdjacentRegions(self: CompoundStructure,segmentId: int) -> IList[int]
 
   
@@ -208,9 +223,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: The ids of the regions that are bounded by the specified segment.
   """
-  pass
- def GetCoreBoundaryLayerIndex(self,shellLayerType):
-  """
+        pass
+
+    def GetCoreBoundaryLayerIndex(self, shellLayerType):
+        """
   GetCoreBoundaryLayerIndex(self: CompoundStructure,shellLayerType: ShellLayerType) -> int
 
   
@@ -231,9 +247,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: The index of the layer.
   """
-  pass
- def GetDeckEmbeddingType(self,layerIdx):
-  """
+        pass
+
+    def GetDeckEmbeddingType(self, layerIdx):
+        """
   GetDeckEmbeddingType(self: CompoundStructure,layerIdx: int) -> StructDeckEmbeddingType
 
   
@@ -248,9 +265,10 @@ class CompoundStructure(object,IDisposable):
 
     Invalid if it is not a structural deck.
   """
-  pass
- def GetDeckProfileId(self,layerIdx):
-  """
+        pass
+
+    def GetDeckProfileId(self, layerIdx):
+        """
   GetDeckProfileId(self: CompoundStructure,layerIdx: int) -> ElementId
 
   
@@ -269,9 +287,10 @@ class CompoundStructure(object,IDisposable):
 
     isStructuralDeck(layerIdx) is false.
   """
-  pass
- def GetExtendableRegionIds(self,top):
-  """
+        pass
+
+    def GetExtendableRegionIds(self, top):
+        """
   GetExtendableRegionIds(self: CompoundStructure,top: bool) -> IList[int]
 
   
@@ -290,9 +309,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: An array of region ids which are marked extendable.
   """
-  pass
- def GetFirstCoreLayerIndex(self):
-  """
+        pass
+
+    def GetFirstCoreLayerIndex(self):
+        """
   GetFirstCoreLayerIndex(self: CompoundStructure) -> int
 
   
@@ -301,9 +321,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: The index of the first core layer.
   """
-  pass
- def GetLastCoreLayerIndex(self):
-  """
+        pass
+
+    def GetLastCoreLayerIndex(self):
+        """
   GetLastCoreLayerIndex(self: CompoundStructure) -> int
 
   
@@ -312,9 +333,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: The index of the last core layer.
   """
-  pass
- def GetLayerAssociatedToRegion(self,regionId):
-  """
+        pass
+
+    def GetLayerAssociatedToRegion(self, regionId):
+        """
   GetLayerAssociatedToRegion(self: CompoundStructure,regionId: int) -> int
 
   
@@ -327,9 +349,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: The index of a layer in this CompoundStructure.
   """
-  pass
- def GetLayerFunction(self,layerIdx):
-  """
+        pass
+
+    def GetLayerFunction(self, layerIdx):
+        """
   GetLayerFunction(self: CompoundStructure,layerIdx: int) -> MaterialFunctionAssignment
 
   
@@ -342,9 +365,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: The function of the layer.
   """
-  pass
- def GetLayers(self):
-  """
+        pass
+
+    def GetLayers(self):
+        """
   GetLayers(self: CompoundStructure) -> IList[CompoundStructureLayer]
 
   
@@ -359,9 +383,10 @@ class CompoundStructure(object,IDisposable):
 
     be used in other CompoundStructure methods accepting a layer index.
   """
-  pass
- def GetLayerWidth(self,layerIdx):
-  """
+        pass
+
+    def GetLayerWidth(self, layerIdx):
+        """
   GetLayerWidth(self: CompoundStructure,layerIdx: int) -> float
 
   
@@ -374,9 +399,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: The width of the specified layer.
   """
-  pass
- def GetMaterialId(self,layerIdx):
-  """
+        pass
+
+    def GetMaterialId(self, layerIdx):
+        """
   GetMaterialId(self: CompoundStructure,layerIdx: int) -> ElementId
 
   
@@ -389,10 +415,11 @@ class CompoundStructure(object,IDisposable):
 
    Returns: The material element id.
   """
-  pass
- @staticmethod
- def GetMinimumLayerThickness():
-  """
+        pass
+
+    @staticmethod
+    def GetMinimumLayerThickness():
+        """
   GetMinimumLayerThickness() -> float
 
   
@@ -401,9 +428,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: The minimum allowable width of a layer in feet.
   """
-  pass
- def GetNumberOfShellLayers(self,shellLayerType):
-  """
+        pass
+
+    def GetNumberOfShellLayers(self, shellLayerType):
+        """
   GetNumberOfShellLayers(self: CompoundStructure,shellLayerType: ShellLayerType) -> int
 
   
@@ -428,9 +456,10 @@ class CompoundStructure(object,IDisposable):
 
     shellLayerType.
   """
-  pass
- def GetOffsetForLocationLine(self,wallLocationLine):
-  """
+        pass
+
+    def GetOffsetForLocationLine(self, wallLocationLine):
+        """
   GetOffsetForLocationLine(self: CompoundStructure,wallLocationLine: WallLocationLine) -> float
 
   
@@ -447,9 +476,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: The offset.
   """
-  pass
- def GetPreviousNonZeroLayerIndex(self,thisIdx):
-  """
+        pass
+
+    def GetPreviousNonZeroLayerIndex(self, thisIdx):
+        """
   GetPreviousNonZeroLayerIndex(self: CompoundStructure,thisIdx: int) -> int
 
   
@@ -462,9 +492,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: The index of the layer found.
   """
-  pass
- def GetRegionEnvelope(self,regionId):
-  """
+        pass
+
+    def GetRegionEnvelope(self, regionId):
+        """
   GetRegionEnvelope(self: CompoundStructure,regionId: int) -> BoundingBoxUV
 
   
@@ -477,9 +508,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: The envelope of the region.
   """
-  pass
- def GetRegionIds(self):
-  """
+        pass
+
+    def GetRegionIds(self):
+        """
   GetRegionIds(self: CompoundStructure) -> IList[int]
 
   
@@ -488,9 +520,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: The ids of the regions defining this CompoundStructure.
   """
-  pass
- def GetRegionsAlongLevel(self,height):
-  """
+        pass
+
+    def GetRegionsAlongLevel(self, height):
+        """
   GetRegionsAlongLevel(self: CompoundStructure,height: float) -> IList[int]
 
   
@@ -511,9 +544,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: The ids of the regions intersected by the specified line.
   """
-  pass
- def GetRegionsAssociatedToLayer(self,layerIdx):
-  """
+        pass
+
+    def GetRegionsAssociatedToLayer(self, layerIdx):
+        """
   GetRegionsAssociatedToLayer(self: CompoundStructure,layerIdx: int) -> IList[int]
 
   
@@ -526,9 +560,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: An array of region ids which are associated to the specified layer.
   """
-  pass
- def GetSegmentCoordinate(self,segmentId):
-  """
+        pass
+
+    def GetSegmentCoordinate(self, segmentId):
+        """
   GetSegmentCoordinate(self: CompoundStructure,segmentId: int) -> float
 
   
@@ -541,9 +576,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: The local coordinates of the specified segment.
   """
-  pass
- def GetSegmentEndPoints(self,segmentId,regionId,end1,end2):
-  """
+        pass
+
+    def GetSegmentEndPoints(self, segmentId, regionId, end1, end2):
+        """
   GetSegmentEndPoints(self: CompoundStructure,segmentId: int,regionId: int) -> (UV,UV)
 
   
@@ -556,9 +592,10 @@ class CompoundStructure(object,IDisposable):
 
    regionId: The region id.
   """
-  pass
- def GetSegmentIds(self):
-  """
+        pass
+
+    def GetSegmentIds(self):
+        """
   GetSegmentIds(self: CompoundStructure) -> IList[int]
 
   
@@ -569,9 +606,10 @@ class CompoundStructure(object,IDisposable):
 
     CompoundStructure.
   """
-  pass
- def GetSegmentOrientation(self,segmentId):
-  """
+        pass
+
+    def GetSegmentOrientation(self, segmentId):
+        """
   GetSegmentOrientation(self: CompoundStructure,segmentId: int) -> RectangularGridSegmentOrientation
 
   
@@ -584,9 +622,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: The orientation of the specified segment.
   """
-  pass
- def GetSimpleCompoundStructure(self,wallHeight,distAboveBase):
-  """
+        pass
+
+    def GetSimpleCompoundStructure(self, wallHeight, distAboveBase):
+        """
   GetSimpleCompoundStructure(self: CompoundStructure,wallHeight: float,distAboveBase: float) -> CompoundStructure
 
   
@@ -621,9 +660,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: A simple CompoundStructure representing a series of parallel layers.
   """
-  pass
- def GetWallSweepsInfo(self,wallSweepType):
-  """
+        pass
+
+    def GetWallSweepsInfo(self, wallSweepType):
+        """
   GetWallSweepsInfo(self: CompoundStructure,wallSweepType: WallSweepType) -> IList[WallSweepInfo]
 
   
@@ -640,9 +680,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: An array which describes the intrinsic wall sweeps or reveals.
   """
-  pass
- def GetWidth(self,regionId=None):
-  """
+        pass
+
+    def GetWidth(self, regionId=None):
+        """
   GetWidth(self: CompoundStructure,regionId: int) -> float
 
   
@@ -663,9 +704,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: The width of a host object with this compound structure.
   """
-  pass
- def IsCoreLayer(self,layerIdx):
-  """
+        pass
+
+    def IsCoreLayer(self, layerIdx):
+        """
   IsCoreLayer(self: CompoundStructure,layerIdx: int) -> bool
 
   
@@ -680,9 +722,10 @@ class CompoundStructure(object,IDisposable):
 
     the interior or exterior shell layers.
   """
-  pass
- def IsEqual(self,otherStructure):
-  """
+        pass
+
+    def IsEqual(self, otherStructure):
+        """
   IsEqual(self: CompoundStructure,otherStructure: CompoundStructure) -> bool
 
   
@@ -695,9 +738,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: True if the two CompoundStructures are the same,and false otherwise.
   """
-  pass
- def IsLayerValid(self,layerIdx,layer):
-  """
+        pass
+
+    def IsLayerValid(self, layerIdx, layer):
+        """
   IsLayerValid(self: CompoundStructure,layerIdx: int,layer: CompoundStructureLayer) -> bool
 
   
@@ -714,9 +758,10 @@ class CompoundStructure(object,IDisposable):
 
     internally consistent.
   """
-  pass
- def IsRectangularRegion(self,regionId):
-  """
+        pass
+
+    def IsRectangularRegion(self, regionId):
+        """
   IsRectangularRegion(self: CompoundStructure,regionId: int) -> bool
 
   
@@ -729,9 +774,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: True if the specified region is a rectangle,false otherwise.
   """
-  pass
- def IsSimpleRegion(self,regionId):
-  """
+        pass
+
+    def IsSimpleRegion(self, regionId):
+        """
   IsSimpleRegion(self: CompoundStructure,regionId: int) -> bool
 
   
@@ -744,9 +790,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: True if the region is simple,false otherwise.
   """
-  pass
- def IsStructuralDeck(self,layerIdx):
-  """
+        pass
+
+    def IsStructuralDeck(self, layerIdx):
+        """
   IsStructuralDeck(self: CompoundStructure,layerIdx: int) -> bool
 
   
@@ -759,12 +806,14 @@ class CompoundStructure(object,IDisposable):
 
    Returns: True if specified layer is a structural deck,and false otherwise.
   """
-  pass
- def IsValid(self,doc,errMap,twoLayerErrorsMap):
-  """ IsValid(self: CompoundStructure,doc: Document) -> (bool,IDictionary[int,CompoundStructureError],IDictionary[int,int]) """
-  pass
- def IsValidRegionId(self,regionId):
-  """
+        pass
+
+    def IsValid(self, doc, errMap, twoLayerErrorsMap):
+        """ IsValid(self: CompoundStructure,doc: Document) -> (bool,IDictionary[int,CompoundStructureError],IDictionary[int,int]) """
+        pass
+
+    def IsValidRegionId(self, regionId):
+        """
   IsValidRegionId(self: CompoundStructure,regionId: int) -> bool
 
   
@@ -781,18 +830,20 @@ class CompoundStructure(object,IDisposable):
 
    Returns: True if the region is valid,false otherwise.
   """
-  pass
- def IsValidSampleHeight(self,height):
-  """
+        pass
+
+    def IsValidSampleHeight(self, height):
+        """
   IsValidSampleHeight(self: CompoundStructure,height: float) -> bool
 
   
 
    Is the specified height a valid sample height for this compound structure?
   """
-  pass
- def IsValidSegmentId(self,segmentId):
-  """
+        pass
+
+    def IsValidSegmentId(self, segmentId):
+        """
   IsValidSegmentId(self: CompoundStructure,segmentId: int) -> bool
 
   
@@ -809,9 +860,10 @@ class CompoundStructure(object,IDisposable):
 
    Returns: True if the specified segment is valid,false otherwise.
   """
-  pass
- def IsVerticallyHomogeneous(self):
-  """
+        pass
+
+    def IsVerticallyHomogeneous(self):
+        """
   IsVerticallyHomogeneous(self: CompoundStructure) -> bool
 
   
@@ -826,9 +878,10 @@ class CompoundStructure(object,IDisposable):
 
     stretch from bottom to top,false otherwise.
   """
-  pass
- def MergeRegionsAdjacentToSegment(self,segmentId,layerIdxForMergedRegion):
-  """
+        pass
+
+    def MergeRegionsAdjacentToSegment(self, segmentId, layerIdxForMergedRegion):
+        """
   MergeRegionsAdjacentToSegment(self: CompoundStructure,segmentId: int,layerIdxForMergedRegion: int) -> int
 
   
@@ -847,9 +900,10 @@ class CompoundStructure(object,IDisposable):
 
      an invalid region and was not performed.
   """
-  pass
- def ParticipatesInWrapping(self,layerIdx):
-  """
+        pass
+
+    def ParticipatesInWrapping(self, layerIdx):
+        """
   ParticipatesInWrapping(self: CompoundStructure,layerIdx: int) -> bool
 
   
@@ -866,12 +920,14 @@ class CompoundStructure(object,IDisposable):
 
      participate in wrapping.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: CompoundStructure,disposing: bool) """
-  pass
- def RemoveWallSweep(self,wallSweepType,id):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: CompoundStructure,disposing: bool) """
+        pass
+
+    def RemoveWallSweep(self, wallSweepType, id):
+        """
   RemoveWallSweep(self: CompoundStructure,wallSweepType: WallSweepType,id: int)
 
    Removes a single sweep or reveal from the compound structure.
@@ -882,9 +938,10 @@ class CompoundStructure(object,IDisposable):
 
    id: The id of the sweep or reveal to remove.
   """
-  pass
- def SetDeckEmbeddingType(self,layerIdx,embedType):
-  """
+        pass
+
+    def SetDeckEmbeddingType(self, layerIdx, embedType):
+        """
   SetDeckEmbeddingType(self: CompoundStructure,layerIdx: int,embedType: StructDeckEmbeddingType)
 
    Sets the deck embedding type to use for the specified structural deck.
@@ -895,9 +952,10 @@ class CompoundStructure(object,IDisposable):
 
    embedType: The embedding type to be used by the specified layer if it is a structural deck.
   """
-  pass
- def SetDeckProfileId(self,layerIdx,profileId):
-  """
+        pass
+
+    def SetDeckProfileId(self, layerIdx, profileId):
+        """
   SetDeckProfileId(self: CompoundStructure,layerIdx: int,profileId: ElementId)
 
    Sets the profile loop to use for the specified structural deck.
@@ -910,12 +968,14 @@ class CompoundStructure(object,IDisposable):
 
     the specified layer if it is a structural deck.
   """
-  pass
- def SetExtendableRegionIds(self,top,regionIds):
-  """ SetExtendableRegionIds(self: CompoundStructure,top: bool,regionIds: IList[int]) """
-  pass
- def SetLayer(self,layerIdx,layer):
-  """
+        pass
+
+    def SetExtendableRegionIds(self, top, regionIds):
+        """ SetExtendableRegionIds(self: CompoundStructure,top: bool,regionIds: IList[int]) """
+        pass
+
+    def SetLayer(self, layerIdx, layer):
+        """
   SetLayer(self: CompoundStructure,layerIdx: int,layer: CompoundStructureLayer)
 
    Sets a single layer for this CompoundStructure.
@@ -926,9 +986,10 @@ class CompoundStructure(object,IDisposable):
 
    layer: The layer to be set.
   """
-  pass
- def SetLayerFunction(self,layerIdx,function):
-  """
+        pass
+
+    def SetLayerFunction(self, layerIdx, function):
+        """
   SetLayerFunction(self: CompoundStructure,layerIdx: int,function: MaterialFunctionAssignment)
 
    Sets the function of the specified layer.
@@ -939,12 +1000,14 @@ class CompoundStructure(object,IDisposable):
 
    function: The function of the layer.
   """
-  pass
- def SetLayers(self,layers):
-  """ SetLayers(self: CompoundStructure,layers: IList[CompoundStructureLayer]) """
-  pass
- def SetLayerWidth(self,layerIdx,width):
-  """
+        pass
+
+    def SetLayers(self, layers):
+        """ SetLayers(self: CompoundStructure,layers: IList[CompoundStructureLayer]) """
+        pass
+
+    def SetLayerWidth(self, layerIdx, width):
+        """
   SetLayerWidth(self: CompoundStructure,layerIdx: int,width: float)
 
    Sets the width of a specified layer.
@@ -955,9 +1018,10 @@ class CompoundStructure(object,IDisposable):
 
    width: The new width of the specified layer.
   """
-  pass
- def SetMaterialId(self,layerIdx,materialId):
-  """
+        pass
+
+    def SetMaterialId(self, layerIdx, materialId):
+        """
   SetMaterialId(self: CompoundStructure,layerIdx: int,materialId: ElementId)
 
    Sets a material element for a specified layer.
@@ -968,9 +1032,10 @@ class CompoundStructure(object,IDisposable):
 
    materialId: The ElementId of a Material element.
   """
-  pass
- def SetNumberOfShellLayers(self,shellLayerType,numLayers):
-  """
+        pass
+
+    def SetNumberOfShellLayers(self, shellLayerType, numLayers):
+        """
   SetNumberOfShellLayers(self: CompoundStructure,shellLayerType: ShellLayerType,numLayers: int)
 
    Sets the number of interior or exterior shell layers.
@@ -991,9 +1056,10 @@ class CompoundStructure(object,IDisposable):
 
    numLayers: The number of layers to be in the specified shell.
   """
-  pass
- def SetParticipatesInWrapping(self,layerIdx,participatesInWrapping):
-  """
+        pass
+
+    def SetParticipatesInWrapping(self, layerIdx, participatesInWrapping):
+        """
   SetParticipatesInWrapping(self: CompoundStructure,layerIdx: int,participatesInWrapping: bool)
 
    Assigns if a layer is included in wrapping at inserts and ends.
@@ -1006,9 +1072,10 @@ class CompoundStructure(object,IDisposable):
 
     false otherwise.
   """
-  pass
- def SplitRegion(self,gridUV,splitDirection,newSegmentId=None):
-  """
+        pass
+
+    def SplitRegion(self, gridUV, splitDirection, newSegmentId=None):
+        """
   SplitRegion(self: CompoundStructure,gridUV: UV,splitDirection: RectangularGridSegmentOrientation) -> (int,int)
 
   
@@ -1045,21 +1112,28 @@ class CompoundStructure(object,IDisposable):
 
    Returns: The id of the region created by this operation.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- CutoffHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Horizontal segments below or at the cutoff height have their distance to the wall bottom fixed,those above
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    CutoffHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Horizontal segments below or at the cutoff height have their distance to the wall bottom fixed,those above
 
    have their distance to the wall top fixed.
 
@@ -1073,8 +1147,8 @@ Set: CutoffHeight(self: CompoundStructure)=value
 
 """
 
- EndCap=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates the end cap condition defining which shell layers will participate in end wrapping.
+    EndCap = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Indicates the end cap condition defining which shell layers will participate in end wrapping.
 
 
 
@@ -1086,8 +1160,10 @@ Set: EndCap(self: CompoundStructure)=value
 
 """
 
- HasStructuralDeck=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks if the compound structure has a structural deck.
+    HasStructuralDeck = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Checks if the compound structure has a structural deck.
 
 
 
@@ -1097,8 +1173,8 @@ Get: HasStructuralDeck(self: CompoundStructure) -> bool
 
 """
 
- IsEmpty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Checks whether this CompoundStructure is empty.
+    IsEmpty = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Checks whether this CompoundStructure is empty.
 
 
 
@@ -1108,8 +1184,10 @@ Get: IsEmpty(self: CompoundStructure) -> bool
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -1119,8 +1197,10 @@ Get: IsValidObject(self: CompoundStructure) -> bool
 
 """
 
- IsVerticallyCompound=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies if this CompoundStructure represents a layout that is more complicated than a simple set of parallel layers.
+    IsVerticallyCompound = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies if this CompoundStructure represents a layout that is more complicated than a simple set of parallel layers.
 
 
 
@@ -1130,8 +1210,10 @@ Get: IsVerticallyCompound(self: CompoundStructure) -> bool
 
 """
 
- LayerCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the number of layers contained in this CompoundStructure.
+    LayerCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the number of layers contained in this CompoundStructure.
 
 
 
@@ -1141,8 +1223,10 @@ Get: LayerCount(self: CompoundStructure) -> int
 
 """
 
- MinimumSampleHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The minimum sample height determined by the current sample height and the horizontal segments.
+    MinimumSampleHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The minimum sample height determined by the current sample height and the horizontal segments.
 
 
 
@@ -1152,8 +1236,10 @@ Get: MinimumSampleHeight(self: CompoundStructure) -> float
 
 """
 
- OpeningWrapping=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates the opening wrapping condition defining which shell layers of a wall,in plan view,wrap at inserts and openings.
+    OpeningWrapping = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates the opening wrapping condition defining which shell layers of a wall,in plan view,wrap at inserts and openings.
 
 
 
@@ -1165,8 +1251,10 @@ Set: OpeningWrapping(self: CompoundStructure)=value
 
 """
 
- SampleHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The sample height is the presumed height of the wall to which the data in this CompoundStructure is applied.
+    SampleHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The sample height is the presumed height of the wall to which the data in this CompoundStructure is applied.
 
 
 
@@ -1178,8 +1266,10 @@ Set: SampleHeight(self: CompoundStructure)=value
 
 """
 
- StructuralMaterialIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates the layer whose material defines the structural properties of the type for the purposes of analysis.
+    StructuralMaterialIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates the layer whose material defines the structural properties of the type for the purposes of analysis.
 
 
 
@@ -1191,8 +1281,10 @@ Set: StructuralMaterialIndex(self: CompoundStructure)=value
 
 """
 
- VariableLayerIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates the index of the layer which is designated as variable.
+    VariableLayerIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates the index of the layer which is designated as variable.
 
 
 
@@ -1203,5 +1295,3 @@ Get: VariableLayerIndex(self: CompoundStructure) -> int
 Set: VariableLayerIndex(self: CompoundStructure)=value
 
 """
-
-

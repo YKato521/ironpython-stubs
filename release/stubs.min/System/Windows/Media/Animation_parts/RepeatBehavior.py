@@ -1,5 +1,5 @@
-class RepeatBehavior(object,IFormattable):
- """
+class RepeatBehavior(object, IFormattable):
+    """
  Describes how a System.Windows.Media.Animation.Timeline repeats its simple duration.
 
  
@@ -8,8 +8,9 @@ class RepeatBehavior(object,IFormattable):
 
  RepeatBehavior(duration: TimeSpan)
  """
- def Equals(self,*__args):
-  """
+
+    def Equals(self, *__args):
+        """
   Equals(repeatBehavior1: RepeatBehavior,repeatBehavior2: RepeatBehavior) -> bool
 
   
@@ -66,9 +67,10 @@ class RepeatBehavior(object,IFormattable):
 
     behavior as this instance; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: RepeatBehavior) -> int
 
   
@@ -77,9 +79,10 @@ class RepeatBehavior(object,IFormattable):
 
    Returns: A 32-bit signed integer hash code.
   """
-  pass
- def ToString(self,formatProvider=None):
-  """
+        pass
+
+    def ToString(self, formatProvider=None):
+        """
   ToString(self: RepeatBehavior,formatProvider: IFormatProvider) -> str
 
   
@@ -104,35 +107,43 @@ class RepeatBehavior(object,IFormattable):
 
    Returns: A string representation of this instance.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,count: float)
 
   __new__(cls: type,duration: TimeSpan)
 
   __new__[RepeatBehavior]() -> RepeatBehavior
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of times a System.Windows.Media.Animation.Timeline should repeat.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of times a System.Windows.Media.Animation.Timeline should repeat.
 
 
 
@@ -142,8 +153,8 @@ Get: Count(self: RepeatBehavior) -> float
 
 """
 
- Duration=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the total length of time a System.Windows.Media.Animation.Timeline should play.
+    Duration = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the total length of time a System.Windows.Media.Animation.Timeline should play.
 
 
 
@@ -153,8 +164,8 @@ Get: Duration(self: RepeatBehavior) -> TimeSpan
 
 """
 
- HasCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the repeat behavior has a specified iteration count.
+    HasCount = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether the repeat behavior has a specified iteration count.
 
 
 
@@ -164,8 +175,10 @@ Get: HasCount(self: RepeatBehavior) -> bool
 
 """
 
- HasDuration=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the repeat behavior has a specified repeat duration.
+    HasDuration = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the repeat behavior has a specified repeat duration.
 
 
 
@@ -175,6 +188,4 @@ Get: HasDuration(self: RepeatBehavior) -> bool
 
 """
 
-
- Forever=None
-
+    Forever = None

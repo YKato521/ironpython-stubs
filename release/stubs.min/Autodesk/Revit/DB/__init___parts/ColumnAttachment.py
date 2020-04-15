@@ -1,12 +1,15 @@
-class ColumnAttachment(object,IDisposable):
- """
+class ColumnAttachment(object, IDisposable):
+    """
  An object representing the attachment of the top or bottom of a column to some target:
 
     a floor,roof,ceiling,beam,or brace.
  """
- @staticmethod
- def AddColumnAttachment(doc,column,target,baseOrTop,cutColumnStyle,justification,attachOffset):
-  """
+
+    @staticmethod
+    def AddColumnAttachment(
+        doc, column, target, baseOrTop, cutColumnStyle, justification, attachOffset
+    ):
+        """
   AddColumnAttachment(doc: Document,column: FamilyInstance,target: Element,baseOrTop: int,cutColumnStyle: ColumnAttachmentCutStyle,justification: ColumnAttachmentJustification,attachOffset: float)
 
    Attaches the column to the target. If an attachment already
@@ -37,13 +40,15 @@ class ColumnAttachment(object,IDisposable):
 
       be higher than the attachment point; if negative,lower.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: ColumnAttachment) """
-  pass
- @staticmethod
- def GetColumnAttachment(column,*__args):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: ColumnAttachment) """
+        pass
+
+    @staticmethod
+    def GetColumnAttachment(column, *__args):
+        """
   GetColumnAttachment(column: FamilyInstance,baseOrTop: int) -> ColumnAttachment
 
   
@@ -88,10 +93,11 @@ class ColumnAttachment(object,IDisposable):
 
     no such attachment.
   """
-  pass
- @staticmethod
- def IsValidColumn(familyInstance):
-  """
+        pass
+
+    @staticmethod
+    def IsValidColumn(familyInstance):
+        """
   IsValidColumn(familyInstance: FamilyInstance) -> bool
 
   
@@ -102,10 +108,11 @@ class ColumnAttachment(object,IDisposable):
 
    familyInstance: A column.
   """
-  pass
- @staticmethod
- def IsValidTarget(*__args):
-  """
+        pass
+
+    @staticmethod
+    def IsValidTarget(*__args):
+        """
   IsValidTarget(column: FamilyInstance,target: Element) -> bool
 
   
@@ -146,13 +153,15 @@ class ColumnAttachment(object,IDisposable):
 
    target: A proposed target element for a column attachment.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: ColumnAttachment,disposing: bool) """
-  pass
- @staticmethod
- def RemoveColumnAttachment(column,*__args):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: ColumnAttachment,disposing: bool) """
+        pass
+
+    @staticmethod
+    def RemoveColumnAttachment(column, *__args):
+        """
   RemoveColumnAttachment(column: FamilyInstance,baseOrTop: int)
 
    Removes an attachment at the top or base of a column,if there is one.
@@ -173,28 +182,36 @@ class ColumnAttachment(object,IDisposable):
 
    targetId: Id of a target element.
   """
-  pass
- def SetJustification(self,justification):
-  """
+        pass
+
+    def SetJustification(self, justification):
+        """
   SetJustification(self: ColumnAttachment,justification: ColumnAttachmentJustification)
 
    Setter of ColumnAttachmentJustification
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- AttachOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The offset of the column attachment.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    AttachOffset = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The offset of the column attachment.
 
 
 
@@ -206,8 +223,8 @@ Set: AttachOffset(self: ColumnAttachment)=value
 
 """
 
- BaseOrTop=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies if this ColumnAttachment is at the base or top of the column.
+    BaseOrTop = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Identifies if this ColumnAttachment is at the base or top of the column.
 
 
 
@@ -217,8 +234,8 @@ Get: BaseOrTop(self: ColumnAttachment) -> int
 
 """
 
- CutStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies whether the column,or the attached element should be cut (or if neither should be cut).
+    CutStyle = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Identifies whether the column,or the attached element should be cut (or if neither should be cut).
 
 
 
@@ -228,8 +245,10 @@ Get: CutStyle(self: ColumnAttachment) -> ColumnAttachmentCutStyle
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -239,8 +258,10 @@ Get: IsValidObject(self: ColumnAttachment) -> bool
 
 """
 
- Justification=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies the type of justification to apply to this ColumnAttachment.
+    Justification = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies the type of justification to apply to this ColumnAttachment.
 
 
 
@@ -250,8 +271,8 @@ Get: Justification(self: ColumnAttachment) -> ColumnAttachmentJustification
 
 """
 
- TargetId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The id of the element that is attached to the column and is described by this ColumnAttachment.
+    TargetId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The id of the element that is attached to the column and is described by this ColumnAttachment.
 
 
 
@@ -260,5 +281,3 @@ Get: TargetId(self: ColumnAttachment) -> ElementId
 
 
 """
-
-

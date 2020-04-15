@@ -1,8 +1,9 @@
 class ComEventsHelper(object):
- """ Provides methods that enable .NET Framework delegates that handle events to be added and removed from COM objects. """
- @staticmethod
- def Combine(rcw,iid,dispid,d):
-  """
+    """ Provides methods that enable .NET Framework delegates that handle events to be added and removed from COM objects. """
+
+    @staticmethod
+    def Combine(rcw, iid, dispid, d):
+        """
   Combine(rcw: object,iid: Guid,dispid: int,d: Delegate)
 
    Adds a delegate to the invocation list of events originating from a COM object.
@@ -17,10 +18,11 @@ class ComEventsHelper(object):
 
    d: The delegate to invoke when the COM event is fired.
   """
-  pass
- @staticmethod
- def Remove(rcw,iid,dispid,d):
-  """
+        pass
+
+    @staticmethod
+    def Remove(rcw, iid, dispid, d):
+        """
   Remove(rcw: object,iid: Guid,dispid: int,d: Delegate) -> Delegate
 
   
@@ -39,9 +41,9 @@ class ComEventsHelper(object):
 
    Returns: The delegate that was removed from the invocation list.
   """
-  pass
- __all__=[
-  'Combine',
-  'Remove',
- ]
+        pass
 
+    __all__ = [
+        "Combine",
+        "Remove",
+    ]

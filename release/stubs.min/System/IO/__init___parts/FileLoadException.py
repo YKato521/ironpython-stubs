@@ -1,5 +1,5 @@
-class FileLoadException(IOException,ISerializable,_Exception):
- """
+class FileLoadException(IOException, ISerializable, _Exception):
+    """
  The exception that is thrown when a managed assembly is found but cannot be loaded.
 
  
@@ -14,11 +14,13 @@ class FileLoadException(IOException,ISerializable,_Exception):
 
  FileLoadException(message: str,fileName: str,inner: Exception)
  """
- def add_SerializeObjectState(self,*args):
-  """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def GetObjectData(self,info,context):
-  """
+
+    def add_SerializeObjectState(self, *args):
+        """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def GetObjectData(self, info, context):
+        """
   GetObjectData(self: FileLoadException,info: SerializationInfo,context: StreamingContext)
 
    Sets the System.Runtime.Serialization.SerializationInfo with the file name and additional 
@@ -39,12 +41,14 @@ class FileLoadException(IOException,ISerializable,_Exception):
 
     source or destination.
   """
-  pass
- def remove_SerializeObjectState(self,*args):
-  """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def remove_SerializeObjectState(self, *args):
+        """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: FileLoadException) -> str
 
   
@@ -61,13 +65,15 @@ class FileLoadException(IOException,ISerializable,_Exception):
 
     System.IO.FileLoadException constructor is used.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,message=None,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, message=None, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,message: str)
@@ -80,13 +86,16 @@ class FileLoadException(IOException,ISerializable,_Exception):
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- FileName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name of the file that causes this exception.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    FileName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the name of the file that causes this exception.
 
 
 
@@ -96,8 +105,8 @@ Get: FileName(self: FileLoadException) -> str
 
 """
 
- FusionLog=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the log file that describes why an assembly load failed.
+    FusionLog = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the log file that describes why an assembly load failed.
 
 
 
@@ -107,8 +116,8 @@ Get: FusionLog(self: FileLoadException) -> str
 
 """
 
- Message=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the error message and the name of the file that caused this exception.
+    Message = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the error message and the name of the file that caused this exception.
 
 
 
@@ -117,5 +126,3 @@ Get: Message(self: FileLoadException) -> str
 
 
 """
-
-

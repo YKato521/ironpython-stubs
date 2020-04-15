@@ -8,11 +8,13 @@
 # no functions
 # classes
 
+
 class Transaction(object):
- """ A Revit Transaction. """
- @staticmethod
- def End(input):
-  """
+    """ A Revit Transaction. """
+
+    @staticmethod
+    def End(input):
+        """
   End(input: object) -> object
 
   
@@ -29,10 +31,11 @@ class Transaction(object):
 
    input: An object.
   """
-  pass
- @staticmethod
- def Start(input):
-  """
+        pass
+
+    @staticmethod
+    def Start(input):
+        """
   Start(input: object) -> object
 
   
@@ -43,5 +46,4 @@ class Transaction(object):
 
     in.
   """
-  pass
-
+        pass

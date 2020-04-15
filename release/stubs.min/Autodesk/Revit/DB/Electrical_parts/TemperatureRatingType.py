@@ -1,7 +1,8 @@
-class TemperatureRatingType(ElementType,IDisposable):
- """ Represents temperature rating type definition information. """
- def AddCorrectionFactor(self,temperature,factor):
-  """
+class TemperatureRatingType(ElementType, IDisposable):
+    """ Represents temperature rating type definition information. """
+
+    def AddCorrectionFactor(self, temperature, factor):
+        """
   AddCorrectionFactor(self: TemperatureRatingType,temperature: Int64,factor: float) -> CorrectionFactor
 
   
@@ -16,9 +17,10 @@ class TemperatureRatingType(ElementType,IDisposable):
 
    Returns: New constructed correction factor.
   """
-  pass
- def AddInsulationType(self,name):
-  """
+        pass
+
+    def AddInsulationType(self, name):
+        """
   AddInsulationType(self: TemperatureRatingType,name: str) -> InsulationType
 
   
@@ -31,9 +33,10 @@ class TemperatureRatingType(ElementType,IDisposable):
 
    Returns: Constructed insulation type instance.
   """
-  pass
- def AddWireSize(self,size,ampacity,diameter):
-  """
+        pass
+
+    def AddWireSize(self, size, ampacity, diameter):
+        """
   AddWireSize(self: TemperatureRatingType,size: str,ampacity: Int64,diameter: float) -> WireSize
 
   
@@ -50,18 +53,22 @@ class TemperatureRatingType(ElementType,IDisposable):
 
    Returns: Constructed wire size type.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def RemoveCorrectionFactor(self,correctionFactor):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def RemoveCorrectionFactor(self, correctionFactor):
+        """
   RemoveCorrectionFactor(self: TemperatureRatingType,correctionFactor: CorrectionFactor)
 
    Remove an existing correction factor from this temperature rating type in Revit 
@@ -76,9 +83,10 @@ class TemperatureRatingType(ElementType,IDisposable):
 
    Returns: New constructed correction factor.
   """
-  pass
- def RemoveInsulationType(self,insulationType):
-  """
+        pass
+
+    def RemoveInsulationType(self, insulationType):
+        """
   RemoveInsulationType(self: TemperatureRatingType,insulationType: InsulationType)
 
    Remove an existing insulation type from this temperature rating type.
@@ -87,9 +95,10 @@ class TemperatureRatingType(ElementType,IDisposable):
 
    insulationType: Insulation type to be removed.
   """
-  pass
- def RemoveWireSize(self,wireSize):
-  """
+        pass
+
+    def RemoveWireSize(self, wireSize):
+        """
   RemoveWireSize(self: TemperatureRatingType,wireSize: WireSize)
 
    Remove an existing wire size type from this temperature rating type.
@@ -98,21 +107,28 @@ class TemperatureRatingType(ElementType,IDisposable):
 
    wireSize: The wire size type to be removed.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- CorrectionFactors=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get all correction factors defined in this temperature rating type and its corresponding material type.
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    CorrectionFactors = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get all correction factors defined in this temperature rating type and its corresponding material type.
 
 
 
@@ -122,8 +138,10 @@ Get: CorrectionFactors(self: TemperatureRatingType) -> CorrectionFactorSet
 
 """
 
- InsulationTypes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get all insulation types defined in this temperature rating type and its corresponding material type.
+    InsulationTypes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get all insulation types defined in this temperature rating type and its corresponding material type.
 
 
 
@@ -133,8 +151,8 @@ Get: InsulationTypes(self: TemperatureRatingType) -> InsulationTypeSet
 
 """
 
- IsInUse=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicate whether the temperature rating type is in use.
+    IsInUse = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Indicate whether the temperature rating type is in use.
 
 
 
@@ -144,8 +162,10 @@ Get: IsInUse(self: TemperatureRatingType) -> bool
 
 """
 
- MaterialType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the material type information which this temperature rating type belongs to.
+    MaterialType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get the material type information which this temperature rating type belongs to.
 
 
 
@@ -155,8 +175,8 @@ Get: MaterialType(self: TemperatureRatingType) -> WireMaterialType
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get name of temperature rating type.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get name of temperature rating type.
 
 
 
@@ -164,8 +184,8 @@ Set: Name(self: TemperatureRatingType)=value
 
 """
 
- WireSizes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get all electrical wire sizes defined in this temperature rating type and its corresponding material type.
+    WireSizes = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get all electrical wire sizes defined in this temperature rating type and its corresponding material type.
 
 
 
@@ -174,5 +194,3 @@ Get: WireSizes(self: TemperatureRatingType) -> WireSizeSet
 
 
 """
-
-

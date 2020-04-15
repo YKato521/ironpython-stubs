@@ -1,5 +1,5 @@
 class CommonSecurityDescriptor(GenericSecurityDescriptor):
- """
+    """
  Represents a security descriptor. A security descriptor includes an owner,a primary group,a Discretionary Access Control List (DACL),and a System Access Control List (SACL).
 
  
@@ -12,14 +12,17 @@ class CommonSecurityDescriptor(GenericSecurityDescriptor):
 
  CommonSecurityDescriptor(isContainer: bool,isDS: bool,binaryForm: Array[Byte],offset: int)
  """
- def AddDiscretionaryAcl(self,revision,trusted):
-  """ AddDiscretionaryAcl(self: CommonSecurityDescriptor,revision: Byte,trusted: int) """
-  pass
- def AddSystemAcl(self,revision,trusted):
-  """ AddSystemAcl(self: CommonSecurityDescriptor,revision: Byte,trusted: int) """
-  pass
- def PurgeAccessControl(self,sid):
-  """
+
+    def AddDiscretionaryAcl(self, revision, trusted):
+        """ AddDiscretionaryAcl(self: CommonSecurityDescriptor,revision: Byte,trusted: int) """
+        pass
+
+    def AddSystemAcl(self, revision, trusted):
+        """ AddSystemAcl(self: CommonSecurityDescriptor,revision: Byte,trusted: int) """
+        pass
+
+    def PurgeAccessControl(self, sid):
+        """
   PurgeAccessControl(self: CommonSecurityDescriptor,sid: SecurityIdentifier)
 
    Removes all access rules for the specified security identifier from the Discretionary Access 
@@ -34,9 +37,10 @@ class CommonSecurityDescriptor(GenericSecurityDescriptor):
 
    sid: The security identifier for which to remove access rules.
   """
-  pass
- def PurgeAudit(self,sid):
-  """
+        pass
+
+    def PurgeAudit(self, sid):
+        """
   PurgeAudit(self: CommonSecurityDescriptor,sid: SecurityIdentifier)
 
    Removes all audit rules for the specified security identifier from the System Access Control 
@@ -49,9 +53,10 @@ class CommonSecurityDescriptor(GenericSecurityDescriptor):
 
    sid: The security identifier for which to remove audit rules.
   """
-  pass
- def SetDiscretionaryAclProtection(self,isProtected,preserveInheritance):
-  """
+        pass
+
+    def SetDiscretionaryAclProtection(self, isProtected, preserveInheritance):
+        """
   SetDiscretionaryAclProtection(self: CommonSecurityDescriptor,isProtected: bool,preserveInheritance: bool)
 
    Sets the inheritance protection for the Discretionary Access Control List (DACL) associated with 
@@ -70,9 +75,10 @@ class CommonSecurityDescriptor(GenericSecurityDescriptor):
 
     DACL.
   """
-  pass
- def SetSystemAclProtection(self,isProtected,preserveInheritance):
-  """
+        pass
+
+    def SetSystemAclProtection(self, isProtected, preserveInheritance):
+        """
   SetSystemAclProtection(self: CommonSecurityDescriptor,isProtected: bool,preserveInheritance: bool)
 
    Sets the inheritance protection for the System Access Control List (SACL) associated with this 
@@ -91,10 +97,11 @@ class CommonSecurityDescriptor(GenericSecurityDescriptor):
 
     SACL.
   """
-  pass
- @staticmethod
- def __new__(self,isContainer,isDS,*__args):
-  """
+        pass
+
+    @staticmethod
+    def __new__(self, isContainer, isDS, *__args):
+        """
   __new__(cls: type,isContainer: bool,isDS: bool,flags: ControlFlags,owner: SecurityIdentifier,group: SecurityIdentifier,systemAcl: SystemAcl,discretionaryAcl: DiscretionaryAcl)
 
   __new__(cls: type,isContainer: bool,isDS: bool,rawSecurityDescriptor: RawSecurityDescriptor)
@@ -103,9 +110,12 @@ class CommonSecurityDescriptor(GenericSecurityDescriptor):
 
   __new__(cls: type,isContainer: bool,isDS: bool,binaryForm: Array[Byte],offset: int)
   """
-  pass
- ControlFlags=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets values that specify behavior of the System.Security.AccessControl.CommonSecurityDescriptor object.
+        pass
+
+    ControlFlags = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets values that specify behavior of the System.Security.AccessControl.CommonSecurityDescriptor object.
 
 
 
@@ -115,8 +125,10 @@ Get: ControlFlags(self: CommonSecurityDescriptor) -> ControlFlags
 
 """
 
- DiscretionaryAcl=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the discretionary access control list (DACL) for this System.Security.AccessControl.CommonSecurityDescriptor object. The DACL contains access rules.
+    DiscretionaryAcl = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the discretionary access control list (DACL) for this System.Security.AccessControl.CommonSecurityDescriptor object. The DACL contains access rules.
 
 
 
@@ -128,8 +140,8 @@ Set: DiscretionaryAcl(self: CommonSecurityDescriptor)=value
 
 """
 
- Group=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the primary group for this System.Security.AccessControl.CommonSecurityDescriptor object.
+    Group = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the primary group for this System.Security.AccessControl.CommonSecurityDescriptor object.
 
 
 
@@ -141,8 +153,10 @@ Set: Group(self: CommonSecurityDescriptor)=value
 
 """
 
- IsContainer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a Boolean value that specifies whether the object associated with this System.Security.AccessControl.CommonSecurityDescriptor object is a container object.
+    IsContainer = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a Boolean value that specifies whether the object associated with this System.Security.AccessControl.CommonSecurityDescriptor object is a container object.
 
 
 
@@ -152,8 +166,10 @@ Get: IsContainer(self: CommonSecurityDescriptor) -> bool
 
 """
 
- IsDiscretionaryAclCanonical=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a Boolean value that specifies whether the Discretionary Access Control List (DACL) associated with this System.Security.AccessControl.CommonSecurityDescriptor object is in canonical order.
+    IsDiscretionaryAclCanonical = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a Boolean value that specifies whether the Discretionary Access Control List (DACL) associated with this System.Security.AccessControl.CommonSecurityDescriptor object is in canonical order.
 
 
 
@@ -163,8 +179,8 @@ Get: IsDiscretionaryAclCanonical(self: CommonSecurityDescriptor) -> bool
 
 """
 
- IsDS=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a Boolean value that specifies whether the object associated with this System.Security.AccessControl.CommonSecurityDescriptor object is a directory object.
+    IsDS = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a Boolean value that specifies whether the object associated with this System.Security.AccessControl.CommonSecurityDescriptor object is a directory object.
 
 
 
@@ -174,8 +190,10 @@ Get: IsDS(self: CommonSecurityDescriptor) -> bool
 
 """
 
- IsSystemAclCanonical=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a Boolean value that specifies whether the System Access Control List (SACL) associated with this System.Security.AccessControl.CommonSecurityDescriptor object is in canonical order.
+    IsSystemAclCanonical = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a Boolean value that specifies whether the System Access Control List (SACL) associated with this System.Security.AccessControl.CommonSecurityDescriptor object is in canonical order.
 
 
 
@@ -185,8 +203,8 @@ Get: IsSystemAclCanonical(self: CommonSecurityDescriptor) -> bool
 
 """
 
- Owner=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the owner of the object associated with this System.Security.AccessControl.CommonSecurityDescriptor object.
+    Owner = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the owner of the object associated with this System.Security.AccessControl.CommonSecurityDescriptor object.
 
 
 
@@ -198,8 +216,8 @@ Set: Owner(self: CommonSecurityDescriptor)=value
 
 """
 
- SystemAcl=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System Access Control List (SACL) for this System.Security.AccessControl.CommonSecurityDescriptor object. The SACL contains audit rules.
+    SystemAcl = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the System Access Control List (SACL) for this System.Security.AccessControl.CommonSecurityDescriptor object. The SACL contains audit rules.
 
 
 
@@ -210,5 +228,3 @@ Get: SystemAcl(self: CommonSecurityDescriptor) -> SystemAcl
 Set: SystemAcl(self: CommonSecurityDescriptor)=value
 
 """
-
-

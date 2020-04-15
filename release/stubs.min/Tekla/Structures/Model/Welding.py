@@ -8,24 +8,27 @@
 # no functions
 # classes
 
+
 class WeldGeometry(object):
- # no doc
- Polygons=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Polygons(self: WeldGeometry) -> ArrayList
-
+    # no doc
+    Polygons = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Polygons(self: WeldGeometry) -> ArrayList
+
+
+
 """
 
- Position=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Position(self: WeldGeometry) -> WeldSeamPositionEnum
-
-"""
+    Position = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Position(self: WeldGeometry) -> WeldSeamPositionEnum
 
+
+
+"""
 
 
 class WeldSeamPositionEnum(Enum):
- """ enum WeldSeamPositionEnum,values: SEAM_ABOVE (1),SEAM_BELOW (2) """
- SEAM_ABOVE=None
- SEAM_BELOW=None
- value__=None
+    """ enum WeldSeamPositionEnum,values: SEAM_ABOVE (1),SEAM_BELOW (2) """
 
-
+    SEAM_ABOVE = None
+    SEAM_BELOW = None
+    value__ = None

@@ -1,7 +1,8 @@
 class BrepObject(RhinoObject):
- """ Represents a Rhino.Geometry.Brepbrep in a document. """
- def DuplicateBrepGeometry(self):
-  """
+    """ Represents a Rhino.Geometry.Brepbrep in a document. """
+
+    def DuplicateBrepGeometry(self):
+        """
   DuplicateBrepGeometry(self: BrepObject) -> Brep
 
   
@@ -10,9 +11,12 @@ class BrepObject(RhinoObject):
 
    Returns: The copy of the geometry.
   """
-  pass
- BrepGeometry=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the brep geometry linked with this object.
+        pass
+
+    BrepGeometry = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the brep geometry linked with this object.
 
 
 
@@ -21,5 +25,3 @@ Get: BrepGeometry(self: BrepObject) -> Brep
 
 
 """
-
-

@@ -1,13 +1,14 @@
 class DateTimeOffsetConverter(TypeConverter):
- """
+    """
  Provides a type converter to convert System.DateTimeOffset structures to and from various other representations.
 
  
 
  DateTimeOffsetConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: DateTimeOffsetConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -26,9 +27,10 @@ class DateTimeOffsetConverter(TypeConverter):
 
    Returns: true if the specified type can be converted to a System.DateTimeOffset; otherwise,false.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: DateTimeOffsetConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -47,9 +49,10 @@ class DateTimeOffsetConverter(TypeConverter):
 
    Returns: true if a System.DateTimeOffset can be converted to the specified type; otherwise,false.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: DateTimeOffsetConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -66,9 +69,10 @@ class DateTimeOffsetConverter(TypeConverter):
 
    Returns: A System.DateTimeOffset that represents the specified object.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: DateTimeOffsetConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -87,4 +91,4 @@ class DateTimeOffsetConverter(TypeConverter):
 
    Returns: An object of the specified type that represents the System.DateTimeOffset.
   """
-  pass
+        pass

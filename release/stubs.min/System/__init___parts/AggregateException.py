@@ -1,5 +1,5 @@
-class AggregateException(Exception,ISerializable,_Exception):
- """
+class AggregateException(Exception, ISerializable, _Exception):
+    """
  Represents one or more errors that occur during application execution.
 
  
@@ -18,11 +18,13 @@ class AggregateException(Exception,ISerializable,_Exception):
 
  AggregateException(message: str,*innerExceptions: Array[Exception])
  """
- def add_SerializeObjectState(self,*args):
-  """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def Flatten(self):
-  """
+
+    def add_SerializeObjectState(self, *args):
+        """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def Flatten(self):
+        """
   Flatten(self: AggregateException) -> AggregateException
 
   
@@ -31,9 +33,10 @@ class AggregateException(Exception,ISerializable,_Exception):
 
    Returns: A new,flattened System.AggregateException.
   """
-  pass
- def GetBaseException(self):
-  """
+        pass
+
+    def GetBaseException(self):
+        """
   GetBaseException(self: AggregateException) -> Exception
 
   
@@ -42,9 +45,10 @@ class AggregateException(Exception,ISerializable,_Exception):
 
    Returns: Returns the System.AggregateException that is the root cause of this exception.
   """
-  pass
- def GetObjectData(self,info,context):
-  """
+        pass
+
+    def GetObjectData(self, info, context):
+        """
   GetObjectData(self: AggregateException,info: SerializationInfo,context: StreamingContext)
 
    Initializes a new instance of the System.AggregateException class with serialized data.
@@ -55,15 +59,18 @@ class AggregateException(Exception,ISerializable,_Exception):
 
    context: The contextual information about the source or destination.
   """
-  pass
- def Handle(self,predicate):
-  """ Handle(self: AggregateException,predicate: Func[Exception,bool]) """
-  pass
- def remove_SerializeObjectState(self,*args):
-  """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def Handle(self, predicate):
+        """ Handle(self: AggregateException,predicate: Func[Exception,bool]) """
+        pass
+
+    def remove_SerializeObjectState(self, *args):
+        """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: AggregateException) -> str
 
   
@@ -72,13 +79,15 @@ class AggregateException(Exception,ISerializable,_Exception):
 
    Returns: A string representation of the current exception.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,message: str)
@@ -95,13 +104,18 @@ class AggregateException(Exception,ISerializable,_Exception):
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- InnerExceptions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a read-only collection of the System.Exception instances that caused the current exception.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    InnerExceptions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a read-only collection of the System.Exception instances that caused the current exception.
 
 
 
@@ -110,5 +124,3 @@ Get: InnerExceptions(self: AggregateException) -> ReadOnlyCollection[Exception]
 
 
 """
-
-

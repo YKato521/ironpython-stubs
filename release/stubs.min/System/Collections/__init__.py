@@ -8,8 +8,9 @@
 # no functions
 # classes
 
-class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
- """
+
+class ArrayList(object, IList, ICollection, IEnumerable, ICloneable):
+    """
  Implements the System.Collections.IList interface using an array whose size is dynamically increased as required.
 
  
@@ -20,9 +21,10 @@ class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
 
  ArrayList(c: ICollection)
  """
- @staticmethod
- def Adapter(list):
-  """
+
+    @staticmethod
+    def Adapter(list):
+        """
   Adapter(list: IList) -> ArrayList
 
   
@@ -35,9 +37,10 @@ class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
 
    Returns: The System.Collections.ArrayList wrapper around the System.Collections.IList.
   """
-  pass
- def Add(self,value):
-  """
+        pass
+
+    def Add(self, value):
+        """
   Add(self: ArrayList,value: object) -> int
 
   
@@ -54,9 +57,10 @@ class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
 
    Returns: The System.Collections.ArrayList index at which the value has been added.
   """
-  pass
- def AddRange(self,c):
-  """
+        pass
+
+    def AddRange(self, c):
+        """
   AddRange(self: ArrayList,c: ICollection)
 
    Adds the elements of an System.Collections.ICollection to the end of the 
@@ -73,9 +77,10 @@ class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
 
     that are null.
   """
-  pass
- def BinarySearch(self,*__args):
-  """
+        pass
+
+    def BinarySearch(self, *__args):
+        """
   BinarySearch(self: ArrayList,value: object,comparer: IComparer) -> int
 
   
@@ -162,16 +167,18 @@ class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
 
     System.Collections.ArrayList.Count.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: ArrayList)
 
    Removes all elements from the System.Collections.ArrayList.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: ArrayList) -> object
 
   
@@ -180,9 +187,10 @@ class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
 
    Returns: A shallow copy of the System.Collections.ArrayList.
   """
-  pass
- def Contains(self,item):
-  """
+        pass
+
+    def Contains(self, item):
+        """
   Contains(self: ArrayList,item: object) -> bool
 
   
@@ -195,9 +203,10 @@ class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
 
    Returns: true if item is found in the System.Collections.ArrayList; otherwise,false.
   """
-  pass
- def CopyTo(self,*__args):
-  """
+        pass
+
+    def CopyTo(self, *__args):
+        """
   CopyTo(self: ArrayList,index: int,array: Array,arrayIndex: int,count: int)
 
    Copies a range of elements from the System.Collections.ArrayList to a compatible one-dimensional 
@@ -252,10 +261,11 @@ class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
 
     System.Collections.ArrayList. The System.Array must have zero-based indexing.
   """
-  pass
- @staticmethod
- def FixedSize(list):
-  """
+        pass
+
+    @staticmethod
+    def FixedSize(list):
+        """
   FixedSize(list: ArrayList) -> ArrayList
 
   
@@ -280,9 +290,10 @@ class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
 
    Returns: An System.Collections.IList wrapper with a fixed size.
   """
-  pass
- def GetEnumerator(self,index=None,count=None):
-  """
+        pass
+
+    def GetEnumerator(self, index=None, count=None):
+        """
   GetEnumerator(self: ArrayList,index: int,count: int) -> IEnumerator
 
   
@@ -317,9 +328,10 @@ class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
 
    Returns: An System.Collections.IEnumerator for the entire System.Collections.ArrayList.
   """
-  pass
- def GetRange(self,index,count):
-  """
+        pass
+
+    def GetRange(self, index, count):
+        """
   GetRange(self: ArrayList,index: int,count: int) -> ArrayList
 
   
@@ -340,9 +352,10 @@ class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
 
     System.Collections.ArrayList.
   """
-  pass
- def IndexOf(self,value,startIndex=None,count=None):
-  """
+        pass
+
+    def IndexOf(self, value, startIndex=None, count=None):
+        """
   IndexOf(self: ArrayList,value: object,startIndex: int,count: int) -> int
 
   
@@ -415,9 +428,10 @@ class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
 
     System.Collections.ArrayList,if found; otherwise,-1.
   """
-  pass
- def Insert(self,index,value):
-  """
+        pass
+
+    def Insert(self, index, value):
+        """
   Insert(self: ArrayList,index: int,value: object)
 
    Inserts an element into the System.Collections.ArrayList at the specified index.
@@ -428,9 +442,10 @@ class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
 
    value: The System.Object to insert. The value can be null.
   """
-  pass
- def InsertRange(self,index,c):
-  """
+        pass
+
+    def InsertRange(self, index, c):
+        """
   InsertRange(self: ArrayList,index: int,c: ICollection)
 
    Inserts the elements of a collection into the System.Collections.ArrayList at the specified 
@@ -449,9 +464,10 @@ class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
 
     that are null.
   """
-  pass
- def LastIndexOf(self,value,startIndex=None,count=None):
-  """
+        pass
+
+    def LastIndexOf(self, value, startIndex=None, count=None):
+        """
   LastIndexOf(self: ArrayList,value: object,startIndex: int,count: int) -> int
 
   
@@ -524,10 +540,11 @@ class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
 
     System.Collections.ArrayList,if found; otherwise,-1.
   """
-  pass
- @staticmethod
- def ReadOnly(list):
-  """
+        pass
+
+    @staticmethod
+    def ReadOnly(list):
+        """
   ReadOnly(list: ArrayList) -> ArrayList
 
   
@@ -552,9 +569,10 @@ class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
 
    Returns: A read-only System.Collections.IList wrapper around list.
   """
-  pass
- def Remove(self,obj):
-  """
+        pass
+
+    def Remove(self, obj):
+        """
   Remove(self: ArrayList,obj: object)
 
    Removes the first occurrence of a specific object from the System.Collections.ArrayList.
@@ -563,9 +581,10 @@ class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
 
    obj: The System.Object to remove from the System.Collections.ArrayList. The value can be null.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: ArrayList,index: int)
 
    Removes the element at the specified index of the System.Collections.ArrayList.
@@ -574,9 +593,10 @@ class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
 
    index: The zero-based index of the element to remove.
   """
-  pass
- def RemoveRange(self,index,count):
-  """
+        pass
+
+    def RemoveRange(self, index, count):
+        """
   RemoveRange(self: ArrayList,index: int,count: int)
 
    Removes a range of elements from the System.Collections.ArrayList.
@@ -587,10 +607,11 @@ class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
 
    count: The number of elements to remove.
   """
-  pass
- @staticmethod
- def Repeat(value,count):
-  """
+        pass
+
+    @staticmethod
+    def Repeat(value, count):
+        """
   Repeat(value: object,count: int) -> ArrayList
 
   
@@ -609,9 +630,10 @@ class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
 
    Returns: An System.Collections.ArrayList with count number of elements,all of which are copies of value.
   """
-  pass
- def Reverse(self,index=None,count=None):
-  """
+        pass
+
+    def Reverse(self, index=None, count=None):
+        """
   Reverse(self: ArrayList,index: int,count: int)
 
    Reverses the order of the elements in the specified range.
@@ -626,9 +648,10 @@ class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
 
    Reverses the order of the elements in the entire System.Collections.ArrayList.
   """
-  pass
- def SetRange(self,index,c):
-  """
+        pass
+
+    def SetRange(self, index, c):
+        """
   SetRange(self: ArrayList,index: int,c: ICollection)
 
    Copies the elements of a collection over a range of elements in the System.Collections.ArrayList.
@@ -641,9 +664,10 @@ class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
 
     The collection itself cannot be null,but it can contain elements that are null.
   """
-  pass
- def Sort(self,*__args):
-  """
+        pass
+
+    def Sort(self, *__args):
+        """
   Sort(self: ArrayList,index: int,count: int,comparer: IComparer)
 
    Sorts the elements in a range of elements in System.Collections.ArrayList using the specified 
@@ -684,10 +708,11 @@ class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
 
    Sorts the elements in the entire System.Collections.ArrayList.
   """
-  pass
- @staticmethod
- def Synchronized(list):
-  """
+        pass
+
+    @staticmethod
+    def Synchronized(list):
+        """
   Synchronized(list: ArrayList) -> ArrayList
 
   
@@ -712,9 +737,10 @@ class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
 
    Returns: An System.Collections.IList wrapper that is synchronized (thread safe).
   """
-  pass
- def ToArray(self,type=None):
-  """
+        pass
+
+    def ToArray(self, type=None):
+        """
   ToArray(self: ArrayList,type: Type) -> Array
 
   
@@ -743,19 +769,22 @@ class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
 
    Returns: An System.Object array containing copies of the elements of the System.Collections.ArrayList.
   """
-  pass
- def TrimToSize(self):
-  """
+        pass
+
+    def TrimToSize(self):
+        """
   TrimToSize(self: ArrayList)
 
    Sets the capacity to the actual number of elements in the System.Collections.ArrayList.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IList,value: object) -> bool
 
   
@@ -768,39 +797,48 @@ class ArrayList(object,IList,ICollection,IEnumerable,ICloneable):
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,capacity: int)
 
   __new__(cls: type,c: ICollection)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Capacity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the number of elements that the System.Collections.ArrayList can contain.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Capacity = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the number of elements that the System.Collections.ArrayList can contain.
 
 
 
@@ -812,8 +850,8 @@ Set: Capacity(self: ArrayList)=value
 
 """
 
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of elements actually contained in the System.Collections.ArrayList.
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of elements actually contained in the System.Collections.ArrayList.
 
 
 
@@ -823,8 +861,10 @@ Get: Count(self: ArrayList) -> int
 
 """
 
- IsFixedSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Collections.ArrayList has a fixed size.
+    IsFixedSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Collections.ArrayList has a fixed size.
 
 
 
@@ -834,8 +874,10 @@ Get: IsFixedSize(self: ArrayList) -> bool
 
 """
 
- IsReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Collections.ArrayList is read-only.
+    IsReadOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Collections.ArrayList is read-only.
 
 
 
@@ -845,8 +887,10 @@ Get: IsReadOnly(self: ArrayList) -> bool
 
 """
 
- IsSynchronized=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether access to the System.Collections.ArrayList is synchronized (thread safe).
+    IsSynchronized = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether access to the System.Collections.ArrayList is synchronized (thread safe).
 
 
 
@@ -856,8 +900,8 @@ Get: IsSynchronized(self: ArrayList) -> bool
 
 """
 
- SyncRoot=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an object that can be used to synchronize access to the System.Collections.ArrayList.
+    SyncRoot = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an object that can be used to synchronize access to the System.Collections.ArrayList.
 
 
 
@@ -868,9 +912,8 @@ Get: SyncRoot(self: ArrayList) -> object
 """
 
 
-
-class BitArray(object,ICollection,IEnumerable,ICloneable):
- """
+class BitArray(object, ICollection, IEnumerable, ICloneable):
+    """
  Manages a compact array of bit values,which are represented as Booleans,where true indicates that the bit is on (1) and false indicates the bit is off (0).
 
  
@@ -887,8 +930,9 @@ class BitArray(object,ICollection,IEnumerable,ICloneable):
 
  BitArray(bits: BitArray)
  """
- def And(self,value):
-  """
+
+    def And(self, value):
+        """
   And(self: BitArray,value: BitArray) -> BitArray
 
   
@@ -909,9 +953,10 @@ class BitArray(object,ICollection,IEnumerable,ICloneable):
 
     System.Collections.BitArray.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: BitArray) -> object
 
   
@@ -920,9 +965,10 @@ class BitArray(object,ICollection,IEnumerable,ICloneable):
 
    Returns: A shallow copy of the System.Collections.BitArray.
   """
-  pass
- def CopyTo(self,array,index):
-  """
+        pass
+
+    def CopyTo(self, array, index):
+        """
   CopyTo(self: BitArray,array: Array,index: int)
 
    Copies the entire System.Collections.BitArray to a compatible one-dimensional System.Array,
@@ -941,9 +987,10 @@ class BitArray(object,ICollection,IEnumerable,ICloneable):
 
    index: The zero-based index in array at which copying begins.
   """
-  pass
- def Get(self,index):
-  """
+        pass
+
+    def Get(self, index):
+        """
   Get(self: BitArray,index: int) -> bool
 
   
@@ -956,9 +1003,10 @@ class BitArray(object,ICollection,IEnumerable,ICloneable):
 
    Returns: The value of the bit at position index.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: BitArray) -> IEnumerator
 
   
@@ -967,9 +1015,10 @@ class BitArray(object,ICollection,IEnumerable,ICloneable):
 
    Returns: An System.Collections.IEnumerator for the entire System.Collections.BitArray.
   """
-  pass
- def Not(self):
-  """
+        pass
+
+    def Not(self):
+        """
   Not(self: BitArray) -> BitArray
 
   
@@ -982,9 +1031,10 @@ class BitArray(object,ICollection,IEnumerable,ICloneable):
 
    Returns: The current instance with inverted bit values.
   """
-  pass
- def Or(self,value):
-  """
+        pass
+
+    def Or(self, value):
+        """
   Or(self: BitArray,value: BitArray) -> BitArray
 
   
@@ -1005,9 +1055,10 @@ class BitArray(object,ICollection,IEnumerable,ICloneable):
 
     System.Collections.BitArray.
   """
-  pass
- def Set(self,index,value):
-  """
+        pass
+
+    def Set(self, index, value):
+        """
   Set(self: BitArray,index: int,value: bool)
 
    Sets the bit at a specific position in the System.Collections.BitArray to the specified value.
@@ -1018,9 +1069,10 @@ class BitArray(object,ICollection,IEnumerable,ICloneable):
 
    value: The Boolean value to assign to the bit.
   """
-  pass
- def SetAll(self,value):
-  """
+        pass
+
+    def SetAll(self, value):
+        """
   SetAll(self: BitArray,value: bool)
 
    Sets all bits in the System.Collections.BitArray to the specified value.
@@ -1029,9 +1081,10 @@ class BitArray(object,ICollection,IEnumerable,ICloneable):
 
    value: The Boolean value to assign to all bits.
   """
-  pass
- def Xor(self,value):
-  """
+        pass
+
+    def Xor(self, value):
+        """
   Xor(self: BitArray,value: BitArray) -> BitArray
 
   
@@ -1054,22 +1107,27 @@ class BitArray(object,ICollection,IEnumerable,ICloneable):
 
     System.Collections.BitArray.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,length: int)
 
   __new__(cls: type,length: int,defaultValue: bool)
@@ -1082,17 +1140,21 @@ class BitArray(object,ICollection,IEnumerable,ICloneable):
 
   __new__(cls: type,bits: BitArray)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of elements contained in the System.Collections.BitArray.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of elements contained in the System.Collections.BitArray.
 
 
 
@@ -1102,8 +1164,10 @@ Get: Count(self: BitArray) -> int
 
 """
 
- IsReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Collections.BitArray is read-only.
+    IsReadOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Collections.BitArray is read-only.
 
 
 
@@ -1113,8 +1177,10 @@ Get: IsReadOnly(self: BitArray) -> bool
 
 """
 
- IsSynchronized=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether access to the System.Collections.BitArray is synchronized (thread safe).
+    IsSynchronized = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether access to the System.Collections.BitArray is synchronized (thread safe).
 
 
 
@@ -1124,8 +1190,8 @@ Get: IsSynchronized(self: BitArray) -> bool
 
 """
 
- Length=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the number of elements in the System.Collections.BitArray.
+    Length = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the number of elements in the System.Collections.BitArray.
 
 
 
@@ -1137,8 +1203,8 @@ Set: Length(self: BitArray)=value
 
 """
 
- SyncRoot=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an object that can be used to synchronize access to the System.Collections.BitArray.
+    SyncRoot = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an object that can be used to synchronize access to the System.Collections.BitArray.
 
 
 
@@ -1149,9 +1215,8 @@ Get: SyncRoot(self: BitArray) -> object
 """
 
 
-
-class CaseInsensitiveComparer(object,IComparer):
- """
+class CaseInsensitiveComparer(object, IComparer):
+    """
  Compares two objects for equivalence,ignoring the case of strings.
 
  
@@ -1160,8 +1225,9 @@ class CaseInsensitiveComparer(object,IComparer):
 
  CaseInsensitiveComparer()
  """
- def Compare(self,a,b):
-  """
+
+    def Compare(self, a, b):
+        """
   Compare(self: CaseInsensitiveComparer,a: object,b: object) -> int
 
   
@@ -1184,32 +1250,38 @@ class CaseInsensitiveComparer(object,IComparer):
 
     casing ignored. Greater than zero a is greater than b,with casing ignored.
   """
-  pass
- def __cmp__(self,*args):
-  """ x.__cmp__(y) <==> cmp(x,y) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,culture=None):
-  """
+        pass
+
+    def __cmp__(self, *args):
+        """ x.__cmp__(y) <==> cmp(x,y) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, culture=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,culture: CultureInfo)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Default=None
- DefaultInvariant=None
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Default = None
+    DefaultInvariant = None
 
 
-class CaseInsensitiveHashCodeProvider(object,IHashCodeProvider):
- """
+class CaseInsensitiveHashCodeProvider(object, IHashCodeProvider):
+    """
  Supplies a hash code for an object,using a hashing algorithm that ignores the case of strings.
 
  
@@ -1218,8 +1290,9 @@ class CaseInsensitiveHashCodeProvider(object,IHashCodeProvider):
 
  CaseInsensitiveHashCodeProvider(culture: CultureInfo)
  """
- def GetHashCode(self,obj=None):
-  """
+
+    def GetHashCode(self, obj=None):
+        """
   GetHashCode(self: CaseInsensitiveHashCodeProvider,obj: object) -> int
 
   
@@ -1236,31 +1309,37 @@ class CaseInsensitiveHashCodeProvider(object,IHashCodeProvider):
 
    Returns: A hash code for the given object,using a hashing algorithm that ignores the case of strings.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,culture=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, culture=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,culture: CultureInfo)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Default=None
- DefaultInvariant=None
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Default = None
+    DefaultInvariant = None
 
 
 class IEnumerable:
- """ Exposes the enumerator,which supports a simple iteration over a non-generic collection. """
- def GetEnumerator(self):
-  """
+    """ Exposes the enumerator,which supports a simple iteration over a non-generic collection. """
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: IEnumerable) -> IEnumerator
 
   
@@ -1269,18 +1348,22 @@ class IEnumerable:
 
    Returns: An System.Collections.IEnumerator object that can be used to iterate through the collection.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
 
 class ICollection(IEnumerable):
- """ Defines size,enumerators,and synchronization methods for all nongeneric collections. """
- def CopyTo(self,array,index):
-  """
+    """ Defines size,enumerators,and synchronization methods for all nongeneric collections. """
+
+    def CopyTo(self, array, index):
+        """
   CopyTo(self: ICollection,array: Array,index: int)
 
    Copies the elements of the System.Collections.ICollection to an System.Array,starting at a 
@@ -1299,12 +1382,14 @@ class ICollection(IEnumerable):
 
    index: The zero-based index in array at which copying begins.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of elements contained in the System.Collections.ICollection.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of elements contained in the System.Collections.ICollection.
 
 
 
@@ -1314,8 +1399,10 @@ Get: Count(self: ICollection) -> int
 
 """
 
- IsSynchronized=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether access to the System.Collections.ICollection is synchronized (thread safe).
+    IsSynchronized = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether access to the System.Collections.ICollection is synchronized (thread safe).
 
 
 
@@ -1325,8 +1412,8 @@ Get: IsSynchronized(self: ICollection) -> bool
 
 """
 
- SyncRoot=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an object that can be used to synchronize access to the System.Collections.ICollection.
+    SyncRoot = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an object that can be used to synchronize access to the System.Collections.ICollection.
 
 
 
@@ -1337,11 +1424,11 @@ Get: SyncRoot(self: ICollection) -> object
 """
 
 
+class IList(ICollection, IEnumerable):
+    """ Represents a non-generic collection of objects that can be individually accessed by index. """
 
-class IList(ICollection,IEnumerable):
- """ Represents a non-generic collection of objects that can be individually accessed by index. """
- def Add(self,value):
-  """
+    def Add(self, value):
+        """
   Add(self: IList,value: object) -> int
 
   
@@ -1356,16 +1443,18 @@ class IList(ICollection,IEnumerable):
 
     inserted into the collection,
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: IList)
 
    Removes all items from the System.Collections.IList.
   """
-  pass
- def Contains(self,value):
-  """
+        pass
+
+    def Contains(self, value):
+        """
   __contains__(self: IList,value: object) -> bool
 
   
@@ -1378,9 +1467,10 @@ class IList(ICollection,IEnumerable):
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def IndexOf(self,value):
-  """
+        pass
+
+    def IndexOf(self, value):
+        """
   IndexOf(self: IList,value: object) -> int
 
   
@@ -1393,9 +1483,10 @@ class IList(ICollection,IEnumerable):
 
    Returns: The index of value if found in the list; otherwise,-1.
   """
-  pass
- def Insert(self,index,value):
-  """
+        pass
+
+    def Insert(self, index, value):
+        """
   Insert(self: IList,index: int,value: object)
 
    Inserts an item to the System.Collections.IList at the specified index.
@@ -1406,9 +1497,10 @@ class IList(ICollection,IEnumerable):
 
    value: The object to insert into the System.Collections.IList.
   """
-  pass
- def Remove(self,value):
-  """
+        pass
+
+    def Remove(self, value):
+        """
   Remove(self: IList,value: object)
 
    Removes the first occurrence of a specific object from the System.Collections.IList.
@@ -1417,9 +1509,10 @@ class IList(ICollection,IEnumerable):
 
    value: The object to remove from the System.Collections.IList.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: IList,index: int)
 
    Removes the System.Collections.IList item at the specified index.
@@ -1428,27 +1521,36 @@ class IList(ICollection,IEnumerable):
 
    index: The zero-based index of the item to remove.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- IsFixedSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Collections.IList has a fixed size.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    IsFixedSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Collections.IList has a fixed size.
 
 
 
@@ -1458,8 +1560,10 @@ Get: IsFixedSize(self: IList) -> bool
 
 """
 
- IsReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Collections.IList is read-only.
+    IsReadOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Collections.IList is read-only.
 
 
 
@@ -1470,20 +1574,21 @@ Get: IsReadOnly(self: IList) -> bool
 """
 
 
+class CollectionBase(object, IList, ICollection, IEnumerable):
+    """ Provides the abstract base class for a strongly typed collection. """
 
-class CollectionBase(object,IList,ICollection,IEnumerable):
- """ Provides the abstract base class for a strongly typed collection. """
- def Clear(self):
-  """
+    def Clear(self):
+        """
   Clear(self: CollectionBase)
 
    Removes all objects from the System.Collections.CollectionBase instance. This method cannot be 
 
     overridden.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: CollectionBase) -> IEnumerator
 
   
@@ -1492,27 +1597,30 @@ class CollectionBase(object,IList,ICollection,IEnumerable):
 
    Returns: An System.Collections.IEnumerator for the System.Collections.CollectionBase instance.
   """
-  pass
- def OnClear(self,*args):
-  """
+        pass
+
+    def OnClear(self, *args):
+        """
   OnClear(self: CollectionBase)
 
    Performs additional custom processes when clearing the contents of the 
 
     System.Collections.CollectionBase instance.
   """
-  pass
- def OnClearComplete(self,*args):
-  """
+        pass
+
+    def OnClearComplete(self, *args):
+        """
   OnClearComplete(self: CollectionBase)
 
    Performs additional custom processes after clearing the contents of the 
 
     System.Collections.CollectionBase instance.
   """
-  pass
- def OnInsert(self,*args):
-  """
+        pass
+
+    def OnInsert(self, *args):
+        """
   OnInsert(self: CollectionBase,index: int,value: object)
 
    Performs additional custom processes before inserting a new element into the 
@@ -1527,9 +1635,10 @@ class CollectionBase(object,IList,ICollection,IEnumerable):
 
    value: The new value of the element at index.
   """
-  pass
- def OnInsertComplete(self,*args):
-  """
+        pass
+
+    def OnInsertComplete(self, *args):
+        """
   OnInsertComplete(self: CollectionBase,index: int,value: object)
 
    Performs additional custom processes after inserting a new element into the 
@@ -1544,9 +1653,10 @@ class CollectionBase(object,IList,ICollection,IEnumerable):
 
    value: The new value of the element at index.
   """
-  pass
- def OnRemove(self,*args):
-  """
+        pass
+
+    def OnRemove(self, *args):
+        """
   OnRemove(self: CollectionBase,index: int,value: object)
 
    Performs additional custom processes when removing an element from the 
@@ -1561,9 +1671,10 @@ class CollectionBase(object,IList,ICollection,IEnumerable):
 
    value: The value of the element to remove from index.
   """
-  pass
- def OnRemoveComplete(self,*args):
-  """
+        pass
+
+    def OnRemoveComplete(self, *args):
+        """
   OnRemoveComplete(self: CollectionBase,index: int,value: object)
 
    Performs additional custom processes after removing an element from the 
@@ -1578,9 +1689,10 @@ class CollectionBase(object,IList,ICollection,IEnumerable):
 
    value: The value of the element to remove from index.
   """
-  pass
- def OnSet(self,*args):
-  """
+        pass
+
+    def OnSet(self, *args):
+        """
   OnSet(self: CollectionBase,index: int,oldValue: object,newValue: object)
 
    Performs additional custom processes before setting a value in the 
@@ -1597,9 +1709,10 @@ class CollectionBase(object,IList,ICollection,IEnumerable):
 
    newValue: The new value of the element at index.
   """
-  pass
- def OnSetComplete(self,*args):
-  """
+        pass
+
+    def OnSetComplete(self, *args):
+        """
   OnSetComplete(self: CollectionBase,index: int,oldValue: object,newValue: object)
 
    Performs additional custom processes after setting a value in the 
@@ -1616,9 +1729,10 @@ class CollectionBase(object,IList,ICollection,IEnumerable):
 
    newValue: The new value of the element at index.
   """
-  pass
- def OnValidate(self,*args):
-  """
+        pass
+
+    def OnValidate(self, *args):
+        """
   OnValidate(self: CollectionBase,value: object)
 
    Performs additional custom processes when validating a value.
@@ -1627,9 +1741,10 @@ class CollectionBase(object,IList,ICollection,IEnumerable):
 
    value: The object to validate.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: CollectionBase,index: int)
 
    Removes the element at the specified index of the System.Collections.CollectionBase instance. 
@@ -1642,9 +1757,10 @@ class CollectionBase(object,IList,ICollection,IEnumerable):
 
    index: The zero-based index of the element to remove.
   """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IList,value: object) -> bool
 
   
@@ -1657,31 +1773,38 @@ class CollectionBase(object,IList,ICollection,IEnumerable):
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """
   __new__(cls: type)
 
   __new__(cls: type,capacity: int)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Capacity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the number of elements that the System.Collections.CollectionBase can contain.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Capacity = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the number of elements that the System.Collections.CollectionBase can contain.
 
 
 
@@ -1693,8 +1816,8 @@ Set: Capacity(self: CollectionBase)=value
 
 """
 
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of elements contained in the System.Collections.CollectionBase instance. This property cannot be overridden.
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of elements contained in the System.Collections.CollectionBase instance. This property cannot be overridden.
 
 
 
@@ -1704,32 +1827,32 @@ Get: Count(self: CollectionBase) -> int
 
 """
 
- InnerList=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an System.Collections.ArrayList containing the list of elements in the System.Collections.CollectionBase instance.
+    InnerList = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an System.Collections.ArrayList containing the list of elements in the System.Collections.CollectionBase instance.
 
 
 
 """
 
- List=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an System.Collections.IList containing the list of elements in the System.Collections.CollectionBase instance.
+    List = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an System.Collections.IList containing the list of elements in the System.Collections.CollectionBase instance.
 
 
 
 """
 
 
-
-class Comparer(object,IComparer,ISerializable):
- """
+class Comparer(object, IComparer, ISerializable):
+    """
  Compares two objects for equivalence,where string comparisons are case-sensitive.
 
  
 
  Comparer(culture: CultureInfo)
  """
- def Compare(self,a,b):
-  """
+
+    def Compare(self, a, b):
+        """
   Compare(self: Comparer,a: object,b: object) -> int
 
   
@@ -1752,9 +1875,10 @@ class Comparer(object,IComparer,ISerializable):
 
     greater than b.
   """
-  pass
- def GetObjectData(self,info,context):
-  """
+        pass
+
+    def GetObjectData(self, info, context):
+        """
   GetObjectData(self: Comparer,info: SerializationInfo,context: StreamingContext)
 
    Populates a System.Runtime.Serialization.SerializationInfo object with the data required for 
@@ -1769,30 +1893,37 @@ class Comparer(object,IComparer,ISerializable):
 
    context: The context information about the source or destination of the serialization.
   """
-  pass
- def __cmp__(self,*args):
-  """ x.__cmp__(y) <==> cmp(x,y) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,culture):
-  """ __new__(cls: type,culture: CultureInfo) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Default=None
- DefaultInvariant=None
+        pass
+
+    def __cmp__(self, *args):
+        """ x.__cmp__(y) <==> cmp(x,y) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, culture):
+        """ __new__(cls: type,culture: CultureInfo) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Default = None
+    DefaultInvariant = None
 
 
-class IDictionary(ICollection,IEnumerable):
- """ Represents a nongeneric collection of key/value pairs. """
- def Add(self,key,value):
-  """
+class IDictionary(ICollection, IEnumerable):
+    """ Represents a nongeneric collection of key/value pairs. """
+
+    def Add(self, key, value):
+        """
   Add(self: IDictionary,key: object,value: object)
 
    Adds an element with the provided key and value to the System.Collections.IDictionary object.
@@ -1803,16 +1934,18 @@ class IDictionary(ICollection,IEnumerable):
 
    value: The System.Object to use as the value of the element to add.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: IDictionary)
 
    Removes all elements from the System.Collections.IDictionary object.
   """
-  pass
- def Contains(self,key):
-  """
+        pass
+
+    def Contains(self, key):
+        """
   __contains__(self: IDictionary,key: object) -> bool
 
   
@@ -1829,9 +1962,10 @@ class IDictionary(ICollection,IEnumerable):
 
    Returns: true if the System.Collections.IDictionary contains an element with the key; otherwise,false.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: IDictionary) -> IDictionaryEnumerator
 
   
@@ -1844,9 +1978,10 @@ class IDictionary(ICollection,IEnumerable):
 
    Returns: An System.Collections.IDictionaryEnumerator object for the System.Collections.IDictionary object.
   """
-  pass
- def Remove(self,key):
-  """
+        pass
+
+    def Remove(self, key):
+        """
   Remove(self: IDictionary,key: object)
 
    Removes the element with the specified key from the System.Collections.IDictionary object.
@@ -1855,27 +1990,36 @@ class IDictionary(ICollection,IEnumerable):
 
    key: The key of the element to remove.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- IsFixedSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Collections.IDictionary object has a fixed size.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    IsFixedSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Collections.IDictionary object has a fixed size.
 
 
 
@@ -1885,8 +2029,10 @@ Get: IsFixedSize(self: IDictionary) -> bool
 
 """
 
- IsReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Collections.IDictionary object is read-only.
+    IsReadOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Collections.IDictionary object is read-only.
 
 
 
@@ -1896,8 +2042,8 @@ Get: IsReadOnly(self: IDictionary) -> bool
 
 """
 
- Keys=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an System.Collections.ICollection object containing the keys of the System.Collections.IDictionary object.
+    Keys = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an System.Collections.ICollection object containing the keys of the System.Collections.IDictionary object.
 
 
 
@@ -1907,8 +2053,8 @@ Get: Keys(self: IDictionary) -> ICollection
 
 """
 
- Values=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an System.Collections.ICollection object containing the values in the System.Collections.IDictionary object.
+    Values = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an System.Collections.ICollection object containing the values in the System.Collections.IDictionary object.
 
 
 
@@ -1919,18 +2065,19 @@ Get: Values(self: IDictionary) -> ICollection
 """
 
 
+class DictionaryBase(object, IDictionary, ICollection, IEnumerable):
+    """ Provides the abstract base class for a strongly typed collection of key/value pairs. """
 
-class DictionaryBase(object,IDictionary,ICollection,IEnumerable):
- """ Provides the abstract base class for a strongly typed collection of key/value pairs. """
- def Clear(self):
-  """
+    def Clear(self):
+        """
   Clear(self: DictionaryBase)
 
    Clears the contents of the System.Collections.DictionaryBase instance.
   """
-  pass
- def CopyTo(self,array,index):
-  """
+        pass
+
+    def CopyTo(self, array, index):
+        """
   CopyTo(self: DictionaryBase,array: Array,index: int)
 
    Copies the System.Collections.DictionaryBase elements to a one-dimensional System.Array at the 
@@ -1951,9 +2098,10 @@ class DictionaryBase(object,IDictionary,ICollection,IEnumerable):
 
    index: The zero-based index in array at which copying begins.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: DictionaryBase) -> IDictionaryEnumerator
 
   
@@ -1966,27 +2114,30 @@ class DictionaryBase(object,IDictionary,ICollection,IEnumerable):
 
    Returns: An System.Collections.IDictionaryEnumerator for the System.Collections.DictionaryBase instance.
   """
-  pass
- def OnClear(self,*args):
-  """
+        pass
+
+    def OnClear(self, *args):
+        """
   OnClear(self: DictionaryBase)
 
    Performs additional custom processes before clearing the contents of the 
 
     System.Collections.DictionaryBase instance.
   """
-  pass
- def OnClearComplete(self,*args):
-  """
+        pass
+
+    def OnClearComplete(self, *args):
+        """
   OnClearComplete(self: DictionaryBase)
 
    Performs additional custom processes after clearing the contents of the 
 
     System.Collections.DictionaryBase instance.
   """
-  pass
- def OnGet(self,*args):
-  """
+        pass
+
+    def OnGet(self, *args):
+        """
   OnGet(self: DictionaryBase,key: object,currentValue: object) -> object
 
   
@@ -2005,9 +2156,10 @@ class DictionaryBase(object,IDictionary,ICollection,IEnumerable):
 
    Returns: An System.Object containing the element with the specified key and value.
   """
-  pass
- def OnInsert(self,*args):
-  """
+        pass
+
+    def OnInsert(self, *args):
+        """
   OnInsert(self: DictionaryBase,key: object,value: object)
 
    Performs additional custom processes before inserting a new element into the 
@@ -2022,9 +2174,10 @@ class DictionaryBase(object,IDictionary,ICollection,IEnumerable):
 
    value: The value of the element to insert.
   """
-  pass
- def OnInsertComplete(self,*args):
-  """
+        pass
+
+    def OnInsertComplete(self, *args):
+        """
   OnInsertComplete(self: DictionaryBase,key: object,value: object)
 
    Performs additional custom processes after inserting a new element into the 
@@ -2039,9 +2192,10 @@ class DictionaryBase(object,IDictionary,ICollection,IEnumerable):
 
    value: The value of the element to insert.
   """
-  pass
- def OnRemove(self,*args):
-  """
+        pass
+
+    def OnRemove(self, *args):
+        """
   OnRemove(self: DictionaryBase,key: object,value: object)
 
    Performs additional custom processes before removing an element from the 
@@ -2056,9 +2210,10 @@ class DictionaryBase(object,IDictionary,ICollection,IEnumerable):
 
    value: The value of the element to remove.
   """
-  pass
- def OnRemoveComplete(self,*args):
-  """
+        pass
+
+    def OnRemoveComplete(self, *args):
+        """
   OnRemoveComplete(self: DictionaryBase,key: object,value: object)
 
    Performs additional custom processes after removing an element from the 
@@ -2073,9 +2228,10 @@ class DictionaryBase(object,IDictionary,ICollection,IEnumerable):
 
    value: The value of the element to remove.
   """
-  pass
- def OnSet(self,*args):
-  """
+        pass
+
+    def OnSet(self, *args):
+        """
   OnSet(self: DictionaryBase,key: object,oldValue: object,newValue: object)
 
    Performs additional custom processes before setting a value in the 
@@ -2092,9 +2248,10 @@ class DictionaryBase(object,IDictionary,ICollection,IEnumerable):
 
    newValue: The new value of the element associated with key.
   """
-  pass
- def OnSetComplete(self,*args):
-  """
+        pass
+
+    def OnSetComplete(self, *args):
+        """
   OnSetComplete(self: DictionaryBase,key: object,oldValue: object,newValue: object)
 
    Performs additional custom processes after setting a value in the 
@@ -2111,9 +2268,10 @@ class DictionaryBase(object,IDictionary,ICollection,IEnumerable):
 
    newValue: The new value of the element associated with key.
   """
-  pass
- def OnValidate(self,*args):
-  """
+        pass
+
+    def OnValidate(self, *args):
+        """
   OnValidate(self: DictionaryBase,key: object,value: object)
 
    Performs additional custom processes when validating the element with the specified key and 
@@ -2128,9 +2286,10 @@ class DictionaryBase(object,IDictionary,ICollection,IEnumerable):
 
    value: The value of the element to validate.
   """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IDictionary,key: object) -> bool
 
   
@@ -2147,23 +2306,29 @@ class DictionaryBase(object,IDictionary,ICollection,IEnumerable):
 
    Returns: true if the System.Collections.IDictionary contains an element with the key; otherwise,false.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of elements contained in the System.Collections.DictionaryBase instance.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of elements contained in the System.Collections.DictionaryBase instance.
 
 
 
@@ -2173,40 +2338,45 @@ Get: Count(self: DictionaryBase) -> int
 
 """
 
- Dictionary=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of elements contained in the System.Collections.DictionaryBase instance.
+    Dictionary = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the list of elements contained in the System.Collections.DictionaryBase instance.
 
 
 
 """
 
- InnerHashtable=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of elements contained in the System.Collections.DictionaryBase instance.
+    InnerHashtable = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the list of elements contained in the System.Collections.DictionaryBase instance.
 
 
 
 """
-
 
 
 class DictionaryEntry(object):
- """
+    """
  Defines a dictionary key/value pair that can be set or retrieved.
 
  
 
  DictionaryEntry(key: object,value: object)
  """
- @staticmethod
- def __new__(self,key,value):
-  """
+
+    @staticmethod
+    def __new__(self, key, value):
+        """
   __new__(cls: type,key: object,value: object)
 
   __new__[DictionaryEntry]() -> DictionaryEntry
   """
-  pass
- Key=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the key in the key/value pair.
+        pass
+
+    Key = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the key in the key/value pair.
 
 
 
@@ -2218,8 +2388,8 @@ Set: Key(self: DictionaryEntry)=value
 
 """
 
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the value in the key/value pair.
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the value in the key/value pair.
 
 
 
@@ -2232,9 +2402,16 @@ Set: Value(self: DictionaryEntry)=value
 """
 
 
-
-class Hashtable(object,IDictionary,ICollection,IEnumerable,ISerializable,IDeserializationCallback,ICloneable):
- """
+class Hashtable(
+    object,
+    IDictionary,
+    ICollection,
+    IEnumerable,
+    ISerializable,
+    IDeserializationCallback,
+    ICloneable,
+):
+    """
  Represents a collection of key/value pairs that are organized based on the hash code of the key.
 
  
@@ -2269,8 +2446,9 @@ class Hashtable(object,IDictionary,ICollection,IEnumerable,ISerializable,IDeseri
 
  Hashtable(d: IDictionary,loadFactor: Single,equalityComparer: IEqualityComparer)
  """
- def Add(self,key,value):
-  """
+
+    def Add(self, key, value):
+        """
   Add(self: Hashtable,key: object,value: object)
 
    Adds an element with the specified key and value into the System.Collections.Hashtable.
@@ -2281,16 +2459,18 @@ class Hashtable(object,IDictionary,ICollection,IEnumerable,ISerializable,IDeseri
 
    value: The value of the element to add. The value can be null.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: Hashtable)
 
    Removes all elements from the System.Collections.Hashtable.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: Hashtable) -> object
 
   
@@ -2299,9 +2479,10 @@ class Hashtable(object,IDictionary,ICollection,IEnumerable,ISerializable,IDeseri
 
    Returns: A shallow copy of the System.Collections.Hashtable.
   """
-  pass
- def Contains(self,key):
-  """
+        pass
+
+    def Contains(self, key):
+        """
   Contains(self: Hashtable,key: object) -> bool
 
   
@@ -2316,9 +2497,10 @@ class Hashtable(object,IDictionary,ICollection,IEnumerable,ISerializable,IDeseri
 
     false.
   """
-  pass
- def ContainsKey(self,key):
-  """
+        pass
+
+    def ContainsKey(self, key):
+        """
   ContainsKey(self: Hashtable,key: object) -> bool
 
   
@@ -2333,9 +2515,10 @@ class Hashtable(object,IDictionary,ICollection,IEnumerable,ISerializable,IDeseri
 
     false.
   """
-  pass
- def ContainsValue(self,value):
-  """
+        pass
+
+    def ContainsValue(self, value):
+        """
   ContainsValue(self: Hashtable,value: object) -> bool
 
   
@@ -2350,9 +2533,10 @@ class Hashtable(object,IDictionary,ICollection,IEnumerable,ISerializable,IDeseri
 
     otherwise,false.
   """
-  pass
- def CopyTo(self,array,arrayIndex):
-  """
+        pass
+
+    def CopyTo(self, array, arrayIndex):
+        """
   CopyTo(self: Hashtable,array: Array,arrayIndex: int)
 
    Copies the System.Collections.Hashtable elements to a one-dimensional System.Array instance at 
@@ -2373,9 +2557,10 @@ class Hashtable(object,IDictionary,ICollection,IEnumerable,ISerializable,IDeseri
 
    arrayIndex: The zero-based index in array at which copying begins.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: Hashtable) -> IDictionaryEnumerator
 
   
@@ -2388,9 +2573,10 @@ class Hashtable(object,IDictionary,ICollection,IEnumerable,ISerializable,IDeseri
 
    Returns: An System.Collections.IDictionaryEnumerator for the System.Collections.Hashtable.
   """
-  pass
- def GetHash(self,*args):
-  """
+        pass
+
+    def GetHash(self, *args):
+        """
   GetHash(self: Hashtable,key: object) -> int
 
   
@@ -2403,9 +2589,10 @@ class Hashtable(object,IDictionary,ICollection,IEnumerable,ISerializable,IDeseri
 
    Returns: The hash code for key.
   """
-  pass
- def GetObjectData(self,info,context):
-  """
+        pass
+
+    def GetObjectData(self, info, context):
+        """
   GetObjectData(self: Hashtable,info: SerializationInfo,context: StreamingContext)
 
    Implements the System.Runtime.Serialization.ISerializable interface and returns the data needed 
@@ -2426,9 +2613,10 @@ class Hashtable(object,IDictionary,ICollection,IEnumerable,ISerializable,IDeseri
 
     the serialized stream associated with the System.Collections.Hashtable.
   """
-  pass
- def KeyEquals(self,*args):
-  """
+        pass
+
+    def KeyEquals(self, *args):
+        """
   KeyEquals(self: Hashtable,item: object,key: object) -> bool
 
   
@@ -2443,9 +2631,10 @@ class Hashtable(object,IDictionary,ICollection,IEnumerable,ISerializable,IDeseri
 
    Returns: true if item and key are equal; otherwise,false.
   """
-  pass
- def OnDeserialization(self,sender):
-  """
+        pass
+
+    def OnDeserialization(self, sender):
+        """
   OnDeserialization(self: Hashtable,sender: object)
 
    Implements the System.Runtime.Serialization.ISerializable interface and raises the 
@@ -2458,9 +2647,10 @@ class Hashtable(object,IDictionary,ICollection,IEnumerable,ISerializable,IDeseri
 
    sender: The source of the deserialization event.
   """
-  pass
- def Remove(self,key):
-  """
+        pass
+
+    def Remove(self, key):
+        """
   Remove(self: Hashtable,key: object)
 
    Removes the element with the specified key from the System.Collections.Hashtable.
@@ -2469,10 +2659,11 @@ class Hashtable(object,IDictionary,ICollection,IEnumerable,ISerializable,IDeseri
 
    key: The key of the element to remove.
   """
-  pass
- @staticmethod
- def Synchronized(table):
-  """
+        pass
+
+    @staticmethod
+    def Synchronized(table):
+        """
   Synchronized(table: Hashtable) -> Hashtable
 
   
@@ -2485,12 +2676,14 @@ class Hashtable(object,IDictionary,ICollection,IEnumerable,ISerializable,IDeseri
 
    Returns: A synchronized (thread-safe) wrapper for the System.Collections.Hashtable.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IDictionary,key: object) -> bool
 
   
@@ -2507,22 +2700,27 @@ class Hashtable(object,IDictionary,ICollection,IEnumerable,ISerializable,IDeseri
 
    Returns: true if the System.Collections.IDictionary contains an element with the key; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,capacity: int)
@@ -2555,24 +2753,28 @@ class Hashtable(object,IDictionary,ICollection,IEnumerable,ISerializable,IDeseri
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- comparer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Collections.IComparer to use for the System.Collections.Hashtable.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    comparer = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the System.Collections.IComparer to use for the System.Collections.Hashtable.
 
 
 
 """
 
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of key/value pairs contained in the System.Collections.Hashtable.
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of key/value pairs contained in the System.Collections.Hashtable.
 
 
 
@@ -2582,22 +2784,26 @@ Get: Count(self: Hashtable) -> int
 
 """
 
- EqualityComparer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Collections.IEqualityComparer to use for the System.Collections.Hashtable.
+    EqualityComparer = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Collections.IEqualityComparer to use for the System.Collections.Hashtable.
 
 
 
 """
 
- hcp=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the object that can dispense hash codes.
+    hcp = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the object that can dispense hash codes.
 
 
 
 """
 
- IsFixedSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Collections.Hashtable has a fixed size.
+    IsFixedSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Collections.Hashtable has a fixed size.
 
 
 
@@ -2607,8 +2813,10 @@ Get: IsFixedSize(self: Hashtable) -> bool
 
 """
 
- IsReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the System.Collections.Hashtable is read-only.
+    IsReadOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the System.Collections.Hashtable is read-only.
 
 
 
@@ -2618,8 +2826,10 @@ Get: IsReadOnly(self: Hashtable) -> bool
 
 """
 
- IsSynchronized=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether access to the System.Collections.Hashtable is synchronized (thread safe).
+    IsSynchronized = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether access to the System.Collections.Hashtable is synchronized (thread safe).
 
 
 
@@ -2629,8 +2839,8 @@ Get: IsSynchronized(self: Hashtable) -> bool
 
 """
 
- Keys=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an System.Collections.ICollection containing the keys in the System.Collections.Hashtable.
+    Keys = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an System.Collections.ICollection containing the keys in the System.Collections.Hashtable.
 
 
 
@@ -2640,8 +2850,8 @@ Get: Keys(self: Hashtable) -> ICollection
 
 """
 
- SyncRoot=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an object that can be used to synchronize access to the System.Collections.Hashtable.
+    SyncRoot = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an object that can be used to synchronize access to the System.Collections.Hashtable.
 
 
 
@@ -2651,8 +2861,8 @@ Get: SyncRoot(self: Hashtable) -> object
 
 """
 
- Values=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an System.Collections.ICollection containing the values in the System.Collections.Hashtable.
+    Values = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an System.Collections.ICollection containing the values in the System.Collections.Hashtable.
 
 
 
@@ -2663,11 +2873,11 @@ Get: Values(self: Hashtable) -> ICollection
 """
 
 
-
 class IComparer:
- """ Exposes a method that compares two objects. """
- def Compare(self,x,y):
-  """
+    """ Exposes a method that compares two objects. """
+
+    def Compare(self, x, y):
+        """
   Compare(self: IComparer,x: object,y: object) -> int
 
   
@@ -2690,18 +2900,22 @@ class IComparer:
 
     greater than y.
   """
-  pass
- def __cmp__(self,*args):
-  """ x.__cmp__(y) <==> cmp(x,y) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __cmp__(self, *args):
+        """ x.__cmp__(y) <==> cmp(x,y) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
 
 class IEnumerator:
- """ Supports a simple iteration over a nongeneric collection. """
- def MoveNext(self):
-  """
+    """ Supports a simple iteration over a nongeneric collection. """
+
+    def MoveNext(self):
+        """
   MoveNext(self: IEnumerator) -> bool
 
   
@@ -2712,25 +2926,30 @@ class IEnumerator:
 
     has passed the end of the collection.
   """
-  pass
- def next(self,*args):
-  """ next(self: object) -> object """
-  pass
- def Reset(self):
-  """
+        pass
+
+    def next(self, *args):
+        """ next(self: object) -> object """
+        pass
+
+    def Reset(self):
+        """
   Reset(self: IEnumerator)
 
    Sets the enumerator to its initial position,which is before the first element in the collection.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerator) -> object """
-  pass
- Current=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the current element in the collection.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerator) -> object """
+        pass
+
+    Current = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the current element in the collection.
 
 
 
@@ -2741,14 +2960,15 @@ Get: Current(self: IEnumerator) -> object
 """
 
 
-
 class IDictionaryEnumerator(IEnumerator):
- """ Enumerates the elements of a nongeneric dictionary. """
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Entry=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets both the key and the value of the current dictionary entry.
+    """ Enumerates the elements of a nongeneric dictionary. """
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Entry = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets both the key and the value of the current dictionary entry.
 
 
 
@@ -2758,8 +2978,8 @@ Get: Entry(self: IDictionaryEnumerator) -> DictionaryEntry
 
 """
 
- Key=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the key of the current dictionary entry.
+    Key = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the key of the current dictionary entry.
 
 
 
@@ -2769,8 +2989,8 @@ Get: Key(self: IDictionaryEnumerator) -> object
 
 """
 
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the value of the current dictionary entry.
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the value of the current dictionary entry.
 
 
 
@@ -2781,11 +3001,11 @@ Get: Value(self: IDictionaryEnumerator) -> object
 """
 
 
-
 class IEqualityComparer:
- """ Defines methods to support the comparison of objects for equality. """
- def Equals(self,x,y):
-  """
+    """ Defines methods to support the comparison of objects for equality. """
+
+    def Equals(self, x, y):
+        """
   Equals(self: IEqualityComparer,x: object,y: object) -> bool
 
   
@@ -2800,9 +3020,10 @@ class IEqualityComparer:
 
    Returns: true if the specified objects are equal; otherwise,false.
   """
-  pass
- def GetHashCode(self,obj):
-  """
+        pass
+
+    def GetHashCode(self, obj):
+        """
   GetHashCode(self: IEqualityComparer,obj: object) -> int
 
   
@@ -2815,18 +3036,22 @@ class IEqualityComparer:
 
    Returns: A hash code for the specified object.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
 
 class IHashCodeProvider:
- """ Supplies a hash code for an object,using a custom hash function. """
- def GetHashCode(self,obj):
-  """
+    """ Supplies a hash code for an object,using a custom hash function. """
+
+    def GetHashCode(self, obj):
+        """
   GetHashCode(self: IHashCodeProvider,obj: object) -> int
 
   
@@ -2839,15 +3064,18 @@ class IHashCodeProvider:
 
    Returns: A hash code for the specified object.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
 
 class IStructuralComparable:
- """ Supports the structural comparison of collection objects. """
- def CompareTo(self,other,comparer):
-  """
+    """ Supports the structural comparison of collection objects. """
+
+    def CompareTo(self, other, comparer):
+        """
   CompareTo(self: IStructuralComparable,other: object,comparer: IComparer) -> int
 
   
@@ -2874,28 +3102,37 @@ class IStructuralComparable:
 
     instance and other are equal.1The current instance follows other.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
 
 class IStructuralEquatable:
- """ Defines methods to support the comparison of objects for structural equality. """
- def Equals(self,other,comparer):
-  """
+    """ Defines methods to support the comparison of objects for structural equality. """
+
+    def Equals(self, other, comparer):
+        """
   Equals(self: IStructuralEquatable,other: object,comparer: IEqualityComparer) -> bool
 
   
@@ -2910,9 +3147,10 @@ class IStructuralEquatable:
 
    Returns: true if the two objects are equal; otherwise,false.
   """
-  pass
- def GetHashCode(self,comparer):
-  """
+        pass
+
+    def GetHashCode(self, comparer):
+        """
   GetHashCode(self: IStructuralEquatable,comparer: IEqualityComparer) -> int
 
   
@@ -2925,18 +3163,22 @@ class IStructuralEquatable:
 
    Returns: The hash code for the current instance.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __ne__(self,*args):
-  pass
+        pass
 
-class Queue(object,ICollection,IEnumerable,ICloneable):
- """
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+
+class Queue(object, ICollection, IEnumerable, ICloneable):
+    """
  Represents a first-in,first-out collection of objects.
 
  
@@ -2949,15 +3191,17 @@ class Queue(object,ICollection,IEnumerable,ICloneable):
 
  Queue(col: ICollection)
  """
- def Clear(self):
-  """
+
+    def Clear(self):
+        """
   Clear(self: Queue)
 
    Removes all objects from the System.Collections.Queue.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: Queue) -> object
 
   
@@ -2966,9 +3210,10 @@ class Queue(object,ICollection,IEnumerable,ICloneable):
 
    Returns: A shallow copy of the System.Collections.Queue.
   """
-  pass
- def Contains(self,obj):
-  """
+        pass
+
+    def Contains(self, obj):
+        """
   Contains(self: Queue,obj: object) -> bool
 
   
@@ -2981,9 +3226,10 @@ class Queue(object,ICollection,IEnumerable,ICloneable):
 
    Returns: true if obj is found in the System.Collections.Queue; otherwise,false.
   """
-  pass
- def CopyTo(self,array,index):
-  """
+        pass
+
+    def CopyTo(self, array, index):
+        """
   CopyTo(self: Queue,array: Array,index: int)
 
    Copies the System.Collections.Queue elements to an existing one-dimensional System.Array,
@@ -3002,9 +3248,10 @@ class Queue(object,ICollection,IEnumerable,ICloneable):
 
    index: The zero-based index in array at which copying begins.
   """
-  pass
- def Dequeue(self):
-  """
+        pass
+
+    def Dequeue(self):
+        """
   Dequeue(self: Queue) -> object
 
   
@@ -3013,9 +3260,10 @@ class Queue(object,ICollection,IEnumerable,ICloneable):
 
    Returns: The object that is removed from the beginning of the System.Collections.Queue.
   """
-  pass
- def Enqueue(self,obj):
-  """
+        pass
+
+    def Enqueue(self, obj):
+        """
   Enqueue(self: Queue,obj: object)
 
    Adds an object to the end of the System.Collections.Queue.
@@ -3024,9 +3272,10 @@ class Queue(object,ICollection,IEnumerable,ICloneable):
 
    obj: The object to add to the System.Collections.Queue. The value can be null.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: Queue) -> IEnumerator
 
   
@@ -3035,9 +3284,10 @@ class Queue(object,ICollection,IEnumerable,ICloneable):
 
    Returns: An System.Collections.IEnumerator for the System.Collections.Queue.
   """
-  pass
- def Peek(self):
-  """
+        pass
+
+    def Peek(self):
+        """
   Peek(self: Queue) -> object
 
   
@@ -3046,10 +3296,11 @@ class Queue(object,ICollection,IEnumerable,ICloneable):
 
    Returns: The object at the beginning of the System.Collections.Queue.
   """
-  pass
- @staticmethod
- def Synchronized(queue):
-  """
+        pass
+
+    @staticmethod
+    def Synchronized(queue):
+        """
   Synchronized(queue: Queue) -> Queue
 
   
@@ -3062,9 +3313,10 @@ class Queue(object,ICollection,IEnumerable,ICloneable):
 
    Returns: A System.Collections.Queue wrapper that is synchronized (thread safe).
   """
-  pass
- def ToArray(self):
-  """
+        pass
+
+    def ToArray(self):
+        """
   ToArray(self: Queue) -> Array[object]
 
   
@@ -3073,26 +3325,31 @@ class Queue(object,ICollection,IEnumerable,ICloneable):
 
    Returns: A new array containing elements copied from the System.Collections.Queue.
   """
-  pass
- def TrimToSize(self):
-  """
+        pass
+
+    def TrimToSize(self):
+        """
   TrimToSize(self: Queue)
 
    Sets the capacity to the actual number of elements in the System.Collections.Queue.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,capacity: int)
@@ -3101,14 +3358,17 @@ class Queue(object,ICollection,IEnumerable,ICloneable):
 
   __new__(cls: type,col: ICollection)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of elements contained in the System.Collections.Queue.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of elements contained in the System.Collections.Queue.
 
 
 
@@ -3118,8 +3378,10 @@ Get: Count(self: Queue) -> int
 
 """
 
- IsSynchronized=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether access to the System.Collections.Queue is synchronized (thread safe).
+    IsSynchronized = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether access to the System.Collections.Queue is synchronized (thread safe).
 
 
 
@@ -3129,8 +3391,8 @@ Get: IsSynchronized(self: Queue) -> bool
 
 """
 
- SyncRoot=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an object that can be used to synchronize access to the System.Collections.Queue.
+    SyncRoot = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an object that can be used to synchronize access to the System.Collections.Queue.
 
 
 
@@ -3141,11 +3403,11 @@ Get: SyncRoot(self: Queue) -> object
 """
 
 
+class ReadOnlyCollectionBase(object, ICollection, IEnumerable):
+    """ Provides the abstract base class for a strongly typed non-generic read-only collection. """
 
-class ReadOnlyCollectionBase(object,ICollection,IEnumerable):
- """ Provides the abstract base class for a strongly typed non-generic read-only collection. """
- def GetEnumerator(self):
-  """
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: ReadOnlyCollectionBase) -> IEnumerator
 
   
@@ -3158,23 +3420,29 @@ class ReadOnlyCollectionBase(object,ICollection,IEnumerable):
 
    Returns: An System.Collections.IEnumerator for the System.Collections.ReadOnlyCollectionBase instance.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of elements contained in the System.Collections.ReadOnlyCollectionBase instance.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of elements contained in the System.Collections.ReadOnlyCollectionBase instance.
 
 
 
@@ -3184,17 +3452,16 @@ Get: Count(self: ReadOnlyCollectionBase) -> int
 
 """
 
- InnerList=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of elements contained in the System.Collections.ReadOnlyCollectionBase instance.
+    InnerList = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of elements contained in the System.Collections.ReadOnlyCollectionBase instance.
 
 
 
 """
 
 
-
-class SortedList(object,IDictionary,ICollection,IEnumerable,ICloneable):
- """
+class SortedList(object, IDictionary, ICollection, IEnumerable, ICloneable):
+    """
  Represents a collection of key/value pairs that are sorted by the keys and are accessible by key and by index.
 
  
@@ -3211,8 +3478,9 @@ class SortedList(object,IDictionary,ICollection,IEnumerable,ICloneable):
 
  SortedList(d: IDictionary,comparer: IComparer)
  """
- def Add(self,key,value):
-  """
+
+    def Add(self, key, value):
+        """
   Add(self: SortedList,key: object,value: object)
 
    Adds an element with the specified key and value to a System.Collections.SortedList object.
@@ -3223,16 +3491,18 @@ class SortedList(object,IDictionary,ICollection,IEnumerable,ICloneable):
 
    value: The value of the element to add. The value can be null.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: SortedList)
 
    Removes all elements from a System.Collections.SortedList object.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: SortedList) -> object
 
   
@@ -3241,9 +3511,10 @@ class SortedList(object,IDictionary,ICollection,IEnumerable,ICloneable):
 
    Returns: A shallow copy of the System.Collections.SortedList object.
   """
-  pass
- def Contains(self,key):
-  """
+        pass
+
+    def Contains(self, key):
+        """
   Contains(self: SortedList,key: object) -> bool
 
   
@@ -3258,9 +3529,10 @@ class SortedList(object,IDictionary,ICollection,IEnumerable,ICloneable):
 
     otherwise,false.
   """
-  pass
- def ContainsKey(self,key):
-  """
+        pass
+
+    def ContainsKey(self, key):
+        """
   ContainsKey(self: SortedList,key: object) -> bool
 
   
@@ -3275,9 +3547,10 @@ class SortedList(object,IDictionary,ICollection,IEnumerable,ICloneable):
 
     otherwise,false.
   """
-  pass
- def ContainsValue(self,value):
-  """
+        pass
+
+    def ContainsValue(self, value):
+        """
   ContainsValue(self: SortedList,value: object) -> bool
 
   
@@ -3292,9 +3565,10 @@ class SortedList(object,IDictionary,ICollection,IEnumerable,ICloneable):
 
     otherwise,false.
   """
-  pass
- def CopyTo(self,array,arrayIndex):
-  """
+        pass
+
+    def CopyTo(self, array, arrayIndex):
+        """
   CopyTo(self: SortedList,array: Array,arrayIndex: int)
 
    Copies System.Collections.SortedList elements to a one-dimensional System.Array object,starting 
@@ -3315,9 +3589,10 @@ class SortedList(object,IDictionary,ICollection,IEnumerable,ICloneable):
 
    arrayIndex: The zero-based index in array at which copying begins.
   """
-  pass
- def GetByIndex(self,index):
-  """
+        pass
+
+    def GetByIndex(self, index):
+        """
   GetByIndex(self: SortedList,index: int) -> object
 
   
@@ -3330,9 +3605,10 @@ class SortedList(object,IDictionary,ICollection,IEnumerable,ICloneable):
 
    Returns: The value at the specified index of the System.Collections.SortedList object.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: SortedList) -> IDictionaryEnumerator
 
   
@@ -3345,9 +3621,10 @@ class SortedList(object,IDictionary,ICollection,IEnumerable,ICloneable):
 
    Returns: An System.Collections.IDictionaryEnumerator object for the System.Collections.SortedList object.
   """
-  pass
- def GetKey(self,index):
-  """
+        pass
+
+    def GetKey(self, index):
+        """
   GetKey(self: SortedList,index: int) -> object
 
   
@@ -3360,9 +3637,10 @@ class SortedList(object,IDictionary,ICollection,IEnumerable,ICloneable):
 
    Returns: The key at the specified index of the System.Collections.SortedList object.
   """
-  pass
- def GetKeyList(self):
-  """
+        pass
+
+    def GetKeyList(self):
+        """
   GetKeyList(self: SortedList) -> IList
 
   
@@ -3373,9 +3651,10 @@ class SortedList(object,IDictionary,ICollection,IEnumerable,ICloneable):
 
     object.
   """
-  pass
- def GetValueList(self):
-  """
+        pass
+
+    def GetValueList(self):
+        """
   GetValueList(self: SortedList) -> IList
 
   
@@ -3386,9 +3665,10 @@ class SortedList(object,IDictionary,ICollection,IEnumerable,ICloneable):
 
     object.
   """
-  pass
- def IndexOfKey(self,key):
-  """
+        pass
+
+    def IndexOfKey(self, key):
+        """
   IndexOfKey(self: SortedList,key: object) -> int
 
   
@@ -3403,9 +3683,10 @@ class SortedList(object,IDictionary,ICollection,IEnumerable,ICloneable):
 
     object; otherwise,-1.
   """
-  pass
- def IndexOfValue(self,value):
-  """
+        pass
+
+    def IndexOfValue(self, value):
+        """
   IndexOfValue(self: SortedList,value: object) -> int
 
   
@@ -3424,9 +3705,10 @@ class SortedList(object,IDictionary,ICollection,IEnumerable,ICloneable):
 
     System.Collections.SortedList object; otherwise,-1.
   """
-  pass
- def Remove(self,key):
-  """
+        pass
+
+    def Remove(self, key):
+        """
   Remove(self: SortedList,key: object)
 
    Removes the element with the specified key from a System.Collections.SortedList object.
@@ -3435,9 +3717,10 @@ class SortedList(object,IDictionary,ICollection,IEnumerable,ICloneable):
 
    key: The key of the element to remove.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: SortedList,index: int)
 
    Removes the element at the specified index of a System.Collections.SortedList object.
@@ -3446,9 +3729,10 @@ class SortedList(object,IDictionary,ICollection,IEnumerable,ICloneable):
 
    index: The zero-based index of the element to remove.
   """
-  pass
- def SetByIndex(self,index,value):
-  """
+        pass
+
+    def SetByIndex(self, index, value):
+        """
   SetByIndex(self: SortedList,index: int,value: object)
 
    Replaces the value at a specific index in a System.Collections.SortedList object.
@@ -3459,10 +3743,11 @@ class SortedList(object,IDictionary,ICollection,IEnumerable,ICloneable):
 
    value: The System.Object to save into the System.Collections.SortedList object. The value can be null.
   """
-  pass
- @staticmethod
- def Synchronized(list):
-  """
+        pass
+
+    @staticmethod
+    def Synchronized(list):
+        """
   Synchronized(list: SortedList) -> SortedList
 
   
@@ -3475,19 +3760,22 @@ class SortedList(object,IDictionary,ICollection,IEnumerable,ICloneable):
 
    Returns: A synchronized (thread-safe) wrapper for the System.Collections.SortedList object.
   """
-  pass
- def TrimToSize(self):
-  """
+        pass
+
+    def TrimToSize(self):
+        """
   TrimToSize(self: SortedList)
 
    Sets the capacity to the actual number of elements in a System.Collections.SortedList object.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IDictionary,key: object) -> bool
 
   
@@ -3504,22 +3792,27 @@ class SortedList(object,IDictionary,ICollection,IEnumerable,ICloneable):
 
    Returns: true if the System.Collections.IDictionary contains an element with the key; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,initialCapacity: int)
@@ -3532,17 +3825,21 @@ class SortedList(object,IDictionary,ICollection,IEnumerable,ICloneable):
 
   __new__(cls: type,d: IDictionary,comparer: IComparer)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Capacity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the capacity of a System.Collections.SortedList object.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Capacity = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the capacity of a System.Collections.SortedList object.
 
 
 
@@ -3554,8 +3851,8 @@ Set: Capacity(self: SortedList)=value
 
 """
 
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of elements contained in a System.Collections.SortedList object.
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of elements contained in a System.Collections.SortedList object.
 
 
 
@@ -3565,8 +3862,10 @@ Get: Count(self: SortedList) -> int
 
 """
 
- IsFixedSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether a System.Collections.SortedList object has a fixed size.
+    IsFixedSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether a System.Collections.SortedList object has a fixed size.
 
 
 
@@ -3576,8 +3875,10 @@ Get: IsFixedSize(self: SortedList) -> bool
 
 """
 
- IsReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether a System.Collections.SortedList object is read-only.
+    IsReadOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether a System.Collections.SortedList object is read-only.
 
 
 
@@ -3587,8 +3888,10 @@ Get: IsReadOnly(self: SortedList) -> bool
 
 """
 
- IsSynchronized=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether access to a System.Collections.SortedList object is synchronized (thread safe).
+    IsSynchronized = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether access to a System.Collections.SortedList object is synchronized (thread safe).
 
 
 
@@ -3598,8 +3901,8 @@ Get: IsSynchronized(self: SortedList) -> bool
 
 """
 
- Keys=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the keys in a System.Collections.SortedList object.
+    Keys = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the keys in a System.Collections.SortedList object.
 
 
 
@@ -3609,8 +3912,8 @@ Get: Keys(self: SortedList) -> ICollection
 
 """
 
- SyncRoot=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an object that can be used to synchronize access to a System.Collections.SortedList object.
+    SyncRoot = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an object that can be used to synchronize access to a System.Collections.SortedList object.
 
 
 
@@ -3620,8 +3923,8 @@ Get: SyncRoot(self: SortedList) -> object
 
 """
 
- Values=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the values in a System.Collections.SortedList object.
+    Values = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the values in a System.Collections.SortedList object.
 
 
 
@@ -3632,9 +3935,8 @@ Get: Values(self: SortedList) -> ICollection
 """
 
 
-
-class Stack(object,ICollection,IEnumerable,ICloneable):
- """
+class Stack(object, ICollection, IEnumerable, ICloneable):
+    """
  Represents a simple last-in-first-out (LIFO) non-generic collection of objects.
 
  
@@ -3645,15 +3947,17 @@ class Stack(object,ICollection,IEnumerable,ICloneable):
 
  Stack(col: ICollection)
  """
- def Clear(self):
-  """
+
+    def Clear(self):
+        """
   Clear(self: Stack)
 
    Removes all objects from the System.Collections.Stack.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: Stack) -> object
 
   
@@ -3662,9 +3966,10 @@ class Stack(object,ICollection,IEnumerable,ICloneable):
 
    Returns: A shallow copy of the System.Collections.Stack.
   """
-  pass
- def Contains(self,obj):
-  """
+        pass
+
+    def Contains(self, obj):
+        """
   Contains(self: Stack,obj: object) -> bool
 
   
@@ -3677,9 +3982,10 @@ class Stack(object,ICollection,IEnumerable,ICloneable):
 
    Returns: true,if obj is found in the System.Collections.Stack; otherwise,false.
   """
-  pass
- def CopyTo(self,array,index):
-  """
+        pass
+
+    def CopyTo(self, array, index):
+        """
   CopyTo(self: Stack,array: Array,index: int)
 
    Copies the System.Collections.Stack to an existing one-dimensional System.Array,starting at the 
@@ -3698,9 +4004,10 @@ class Stack(object,ICollection,IEnumerable,ICloneable):
 
    index: The zero-based index in array at which copying begins.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: Stack) -> IEnumerator
 
   
@@ -3709,9 +4016,10 @@ class Stack(object,ICollection,IEnumerable,ICloneable):
 
    Returns: An System.Collections.IEnumerator for the System.Collections.Stack.
   """
-  pass
- def Peek(self):
-  """
+        pass
+
+    def Peek(self):
+        """
   Peek(self: Stack) -> object
 
   
@@ -3720,9 +4028,10 @@ class Stack(object,ICollection,IEnumerable,ICloneable):
 
    Returns: The System.Object at the top of the System.Collections.Stack.
   """
-  pass
- def Pop(self):
-  """
+        pass
+
+    def Pop(self):
+        """
   Pop(self: Stack) -> object
 
   
@@ -3731,9 +4040,10 @@ class Stack(object,ICollection,IEnumerable,ICloneable):
 
    Returns: The System.Object removed from the top of the System.Collections.Stack.
   """
-  pass
- def Push(self,obj):
-  """
+        pass
+
+    def Push(self, obj):
+        """
   Push(self: Stack,obj: object)
 
    Inserts an object at the top of the System.Collections.Stack.
@@ -3742,10 +4052,11 @@ class Stack(object,ICollection,IEnumerable,ICloneable):
 
    obj: The System.Object to push onto the System.Collections.Stack. The value can be null.
   """
-  pass
- @staticmethod
- def Synchronized(stack):
-  """
+        pass
+
+    @staticmethod
+    def Synchronized(stack):
+        """
   Synchronized(stack: Stack) -> Stack
 
   
@@ -3758,9 +4069,10 @@ class Stack(object,ICollection,IEnumerable,ICloneable):
 
    Returns: A synchronized wrapper around the System.Collections.Stack.
   """
-  pass
- def ToArray(self):
-  """
+        pass
+
+    def ToArray(self):
+        """
   ToArray(self: Stack) -> Array[object]
 
   
@@ -3769,33 +4081,40 @@ class Stack(object,ICollection,IEnumerable,ICloneable):
 
    Returns: A new array containing copies of the elements of the System.Collections.Stack.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,initialCapacity: int)
 
   __new__(cls: type,col: ICollection)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of elements contained in the System.Collections.Stack.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of elements contained in the System.Collections.Stack.
 
 
 
@@ -3805,8 +4124,10 @@ Get: Count(self: Stack) -> int
 
 """
 
- IsSynchronized=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether access to the System.Collections.Stack is synchronized (thread safe).
+    IsSynchronized = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether access to the System.Collections.Stack is synchronized (thread safe).
 
 
 
@@ -3816,8 +4137,8 @@ Get: IsSynchronized(self: Stack) -> bool
 
 """
 
- SyncRoot=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an object that can be used to synchronize access to the System.Collections.Stack.
+    SyncRoot = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an object that can be used to synchronize access to the System.Collections.Stack.
 
 
 
@@ -3828,13 +4149,12 @@ Get: SyncRoot(self: Stack) -> object
 """
 
 
-
 class StructuralComparisons(object):
- """ Provides objects for performing a structural comparison of two collection objects. """
- StructuralComparer=None
- StructuralEqualityComparer=None
- __all__=[]
+    """ Provides objects for performing a structural comparison of two collection objects. """
+
+    StructuralComparer = None
+    StructuralEqualityComparer = None
+    __all__ = []
 
 
 # variables with complex values
-

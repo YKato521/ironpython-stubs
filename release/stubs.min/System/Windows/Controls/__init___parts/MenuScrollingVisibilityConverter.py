@@ -1,13 +1,14 @@
-class MenuScrollingVisibilityConverter(object,IMultiValueConverter):
- """
+class MenuScrollingVisibilityConverter(object, IMultiValueConverter):
+    """
  Represents a data-binding converter to handle the visibility of repeat buttons in scrolling menus.
 
  
 
  MenuScrollingVisibilityConverter()
  """
- def Convert(self,values,targetType,parameter,culture):
-  """
+
+    def Convert(self, values, targetType, parameter, culture):
+        """
   Convert(self: MenuScrollingVisibilityConverter,values: Array[object],targetType: Type,parameter: object,culture: CultureInfo) -> object
 
   
@@ -26,9 +27,10 @@ class MenuScrollingVisibilityConverter(object,IMultiValueConverter):
 
    Returns: Converted value.
   """
-  pass
- def ConvertBack(self,value,targetTypes,parameter,culture):
-  """
+        pass
+
+    def ConvertBack(self, value, targetTypes, parameter, culture):
+        """
   ConvertBack(self: MenuScrollingVisibilityConverter,value: object,targetTypes: Array[Type],parameter: object,culture: CultureInfo) -> Array[object]
 
   
@@ -47,10 +49,12 @@ class MenuScrollingVisibilityConverter(object,IMultiValueConverter):
 
    Returns: System.Windows.Data.Binding.DoNothing
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass

@@ -1,7 +1,8 @@
-class Part(Element,IDisposable):
- """ This element represents a part of another element. """
- def CanOffsetFace(self,face):
-  """
+class Part(Element, IDisposable):
+    """ This element represents a part of another element. """
+
+    def CanOffsetFace(self, face):
+        """
   CanOffsetFace(self: Part,face: Face) -> bool
 
   
@@ -12,15 +13,18 @@ class Part(Element,IDisposable):
 
    face: face to be checked.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetSourceElementIds(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetSourceElementIds(self):
+        """
   GetSourceElementIds(self: Part) -> ICollection[LinkElementId]
 
   
@@ -37,9 +41,10 @@ class Part(Element,IDisposable):
 
    Returns: The collection of elements
   """
-  pass
- def GetSourceElementOriginalCategoryIds(self):
-  """
+        pass
+
+    def GetSourceElementOriginalCategoryIds(self):
+        """
   GetSourceElementOriginalCategoryIds(self: Part) -> ICollection[ElementId]
 
   
@@ -48,22 +53,26 @@ class Part(Element,IDisposable):
 
    Returns: The category ids.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def ResetPartShape(self):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def ResetPartShape(self):
+        """
   ResetPartShape(self: Part)
 
    Resets all face offsets applied to part faces.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetFaceOffset(self,face,offset):
-  """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetFaceOffset(self, face, offset):
+        """
   SetFaceOffset(self: Part,face: Face,offset: float)
 
    Offsets the given part face in the direction that points out of the solid shape 
@@ -82,18 +91,22 @@ class Part(Element,IDisposable):
 
    offset: The magnitude of the offset.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Excluded=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """True if the part is excluded,false otherwise
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Excluded = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """True if the part is excluded,false otherwise
 
 
 
@@ -105,8 +118,10 @@ Set: Excluded(self: Part)=value
 
 """
 
- OriginalCategoryId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The category Id of the original element corresponding to this Part.
+    OriginalCategoryId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The category Id of the original element corresponding to this Part.
 
 
 
@@ -118,8 +133,8 @@ Set: OriginalCategoryId(self: Part)=value
 
 """
 
- PartMaker=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The PartMaker that created this Part.
+    PartMaker = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The PartMaker that created this Part.
 
 
 
@@ -128,5 +143,3 @@ Get: PartMaker(self: Part) -> PartMaker
 
 
 """
-
-

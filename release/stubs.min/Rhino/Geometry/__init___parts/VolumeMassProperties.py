@@ -1,14 +1,15 @@
-class VolumeMassProperties(object,IDisposable):
- """
+class VolumeMassProperties(object, IDisposable):
+    """
  Contains static initialization methods and allows access to the computed
 
     metrics of volume,volume centroid and volume moments in 
 
     in solid meshes,in solid surfaces and in solid (closed) boundary representations.
  """
- @staticmethod
- def Compute(*__args):
-  """
+
+    @staticmethod
+    def Compute(*__args):
+        """
   Compute(surface: Surface) -> VolumeMassProperties
 
   
@@ -45,16 +46,18 @@ class VolumeMassProperties(object,IDisposable):
 
    Returns: The VolumeMassProperties for the given Mesh or null on failure.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: VolumeMassProperties)
 
    Actively reclaims unmanaged resources that this instance uses.
   """
-  pass
- def Sum(self,summand):
-  """
+        pass
+
+    def Sum(self, summand):
+        """
   Sum(self: VolumeMassProperties,summand: VolumeMassProperties) -> bool
 
   
@@ -67,31 +70,36 @@ class VolumeMassProperties(object,IDisposable):
 
    Returns: true if successful.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Centroid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the volume centroid in the world coordinate system.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Centroid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the volume centroid in the world coordinate system.
 
 
 
@@ -101,8 +109,10 @@ Get: Centroid(self: VolumeMassProperties) -> Point3d
 
 """
 
- CentroidCoordinatesMomentsOfInertia=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Moments of inertia with respect to centroid coordinate system.
+    CentroidCoordinatesMomentsOfInertia = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Moments of inertia with respect to centroid coordinate system.
 
    X=integral of ((y-y0)^2 + (z-z0)^2) dm
 
@@ -120,8 +130,10 @@ Get: CentroidCoordinatesMomentsOfInertia(self: VolumeMassProperties) -> Vector3d
 
 """
 
- CentroidCoordinatesMomentsOfInertiaError=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Uncertainty in centroid coordinates moments of inertia calculation.
+    CentroidCoordinatesMomentsOfInertiaError = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Uncertainty in centroid coordinates moments of inertia calculation.
 
 
 
@@ -131,8 +143,10 @@ Get: CentroidCoordinatesMomentsOfInertiaError(self: VolumeMassProperties) -> Vec
 
 """
 
- CentroidCoordinatesRadiiOfGyration=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Radii of gyration with respect to centroid coordinate system.
+    CentroidCoordinatesRadiiOfGyration = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Radii of gyration with respect to centroid coordinate system.
 
    X=sqrt(integral of ((y-y0)^2 + (z-z0)^2) dm/M)
 
@@ -150,8 +164,10 @@ Get: CentroidCoordinatesRadiiOfGyration(self: VolumeMassProperties) -> Vector3d
 
 """
 
- CentroidCoordinatesSecondMoments=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Second moments with respect to centroid coordinate system.
+    CentroidCoordinatesSecondMoments = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Second moments with respect to centroid coordinate system.
 
    X=integral of (x-x0)^2 dm
 
@@ -169,8 +185,10 @@ Get: CentroidCoordinatesSecondMoments(self: VolumeMassProperties) -> Vector3d
 
 """
 
- CentroidCoordinatesSecondMomentsError=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Uncertainty in centroid coordinates second moments calculation.
+    CentroidCoordinatesSecondMomentsError = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Uncertainty in centroid coordinates second moments calculation.
 
 
 
@@ -180,8 +198,10 @@ Get: CentroidCoordinatesSecondMomentsError(self: VolumeMassProperties) -> Vector
 
 """
 
- CentroidError=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the uncertainty in the Centroid calculation.
+    CentroidError = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the uncertainty in the Centroid calculation.
 
 
 
@@ -191,8 +211,8 @@ Get: CentroidError(self: VolumeMassProperties) -> Vector3d
 
 """
 
- Volume=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the volume solution.
+    Volume = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the volume solution.
 
 
 
@@ -202,8 +222,10 @@ Get: Volume(self: VolumeMassProperties) -> float
 
 """
 
- VolumeError=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the uncertainty in the volume calculation.
+    VolumeError = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the uncertainty in the volume calculation.
 
 
 
@@ -213,8 +235,10 @@ Get: VolumeError(self: VolumeMassProperties) -> float
 
 """
 
- WorldCoordinatesFirstMoments=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the world coordinate first moments if they were able to be calculated.
+    WorldCoordinatesFirstMoments = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the world coordinate first moments if they were able to be calculated.
 
    X is integral of "x dm" over the volume
 
@@ -230,8 +254,10 @@ Get: WorldCoordinatesFirstMoments(self: VolumeMassProperties) -> Vector3d
 
 """
 
- WorldCoordinatesFirstMomentsError=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Uncertainty in world coordinates first moments calculation.
+    WorldCoordinatesFirstMomentsError = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Uncertainty in world coordinates first moments calculation.
 
 
 
@@ -241,8 +267,10 @@ Get: WorldCoordinatesFirstMomentsError(self: VolumeMassProperties) -> Vector3d
 
 """
 
- WorldCoordinatesMomentsOfInertia=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The moments of inertia about the world coordinate axes.
+    WorldCoordinatesMomentsOfInertia = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The moments of inertia about the world coordinate axes.
 
    X=integral of (y^2 + z^2) dm
 
@@ -258,8 +286,10 @@ Get: WorldCoordinatesMomentsOfInertia(self: VolumeMassProperties) -> Vector3d
 
 """
 
- WorldCoordinatesMomentsOfInertiaError=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Uncertainty in world coordinates moments of inertia calculation.
+    WorldCoordinatesMomentsOfInertiaError = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Uncertainty in world coordinates moments of inertia calculation.
 
 
 
@@ -269,8 +299,10 @@ Get: WorldCoordinatesMomentsOfInertiaError(self: VolumeMassProperties) -> Vector
 
 """
 
- WorldCoordinatesProductMoments=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the world coordinate product moments if they were able to be calculated.
+    WorldCoordinatesProductMoments = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the world coordinate product moments if they were able to be calculated.
 
    X is integral of "xy dm" over the area
 
@@ -286,8 +318,10 @@ Get: WorldCoordinatesProductMoments(self: VolumeMassProperties) -> Vector3d
 
 """
 
- WorldCoordinatesProductMomentsError=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Uncertainty in world coordinates second moments calculation.
+    WorldCoordinatesProductMomentsError = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Uncertainty in world coordinates second moments calculation.
 
 
 
@@ -297,8 +331,10 @@ Get: WorldCoordinatesProductMomentsError(self: VolumeMassProperties) -> Vector3d
 
 """
 
- WorldCoordinatesRadiiOfGyration=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Radii of gyration with respect to world coordinate system.
+    WorldCoordinatesRadiiOfGyration = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Radii of gyration with respect to world coordinate system.
 
    X=sqrt(integral of (y^2 + z^2) dm/M)
 
@@ -314,8 +350,10 @@ Get: WorldCoordinatesRadiiOfGyration(self: VolumeMassProperties) -> Vector3d
 
 """
 
- WorldCoordinatesSecondMoments=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the world coordinate first moments if they were able to be calculated.
+    WorldCoordinatesSecondMoments = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the world coordinate first moments if they were able to be calculated.
 
    X is integral of "xx dm" over the area
 
@@ -331,8 +369,10 @@ Get: WorldCoordinatesSecondMoments(self: VolumeMassProperties) -> Vector3d
 
 """
 
- WorldCoordinatesSecondMomentsError=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Uncertainty in world coordinates second moments calculation.
+    WorldCoordinatesSecondMomentsError = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Uncertainty in world coordinates second moments calculation.
 
 
 
@@ -343,6 +383,4 @@ Get: WorldCoordinatesSecondMomentsError(self: VolumeMassProperties) -> Vector3d
 """
 
 
-
 # variables with complex values
-

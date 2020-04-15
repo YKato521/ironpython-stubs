@@ -1,13 +1,14 @@
 class ImageFormatConverter(TypeConverter):
- """
+    """
  System.Drawing.ImageFormatConverter is a class that can be used to convert System.Drawing.Imaging.ImageFormat objects from one data type to another. Access this class through the System.ComponentModel.TypeDescriptor object.
 
  
 
  ImageFormatConverter()
  """
- def CanConvertFrom(self,*__args):
-  """
+
+    def CanConvertFrom(self, *__args):
+        """
   CanConvertFrom(self: ImageFormatConverter,context: ITypeDescriptorContext,sourceType: Type) -> bool
 
   
@@ -32,9 +33,10 @@ class ImageFormatConverter(TypeConverter):
 
    Returns: This method returns true if this object can perform the conversion.
   """
-  pass
- def CanConvertTo(self,*__args):
-  """
+        pass
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: ImageFormatConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -61,9 +63,10 @@ class ImageFormatConverter(TypeConverter):
 
    Returns: This method returns true if this object can perform the conversion.
   """
-  pass
- def ConvertFrom(self,*__args):
-  """
+        pass
+
+    def ConvertFrom(self, *__args):
+        """
   ConvertFrom(self: ImageFormatConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object) -> object
 
   
@@ -90,9 +93,10 @@ class ImageFormatConverter(TypeConverter):
 
    Returns: The converted object.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: ImageFormatConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -121,9 +125,10 @@ class ImageFormatConverter(TypeConverter):
 
    Returns: The converted object.
   """
-  pass
- def GetStandardValues(self,context=None):
-  """
+        pass
+
+    def GetStandardValues(self, context=None):
+        """
   GetStandardValues(self: ImageFormatConverter,context: ITypeDescriptorContext) -> StandardValuesCollection
 
   
@@ -148,9 +153,10 @@ class ImageFormatConverter(TypeConverter):
 
     always returns null.
   """
-  pass
- def GetStandardValuesSupported(self,context=None):
-  """
+        pass
+
+    def GetStandardValuesSupported(self, context=None):
+        """
   GetStandardValuesSupported(self: ImageFormatConverter,context: ITypeDescriptorContext) -> bool
 
   
@@ -165,4 +171,4 @@ class ImageFormatConverter(TypeConverter):
 
     method should be called to find a common set of values the object supports.
   """
-  pass
+        pass

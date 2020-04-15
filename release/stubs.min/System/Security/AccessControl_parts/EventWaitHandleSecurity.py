@@ -1,13 +1,22 @@
 class EventWaitHandleSecurity(NativeObjectSecurity):
- """
+    """
  Represents the Windows access control security applied to a named system wait handle. This class cannot be inherited.
 
  
 
  EventWaitHandleSecurity()
  """
- def AccessRuleFactory(self,identityReference,accessMask,isInherited,inheritanceFlags,propagationFlags,type):
-  """
+
+    def AccessRuleFactory(
+        self,
+        identityReference,
+        accessMask,
+        isInherited,
+        inheritanceFlags,
+        propagationFlags,
+        type,
+    ):
+        """
   AccessRuleFactory(self: EventWaitHandleSecurity,identityReference: IdentityReference,accessMask: int,isInherited: bool,inheritanceFlags: InheritanceFlags,propagationFlags: PropagationFlags,type: AccessControlType) -> AccessRule
 
   
@@ -48,9 +57,10 @@ class EventWaitHandleSecurity(NativeObjectSecurity):
 
     rights for the specified user.
   """
-  pass
- def AddAccessRule(self,rule):
-  """
+        pass
+
+    def AddAccessRule(self, rule):
+        """
   AddAccessRule(self: EventWaitHandleSecurity,rule: EventWaitHandleAccessRule)
 
    Searches for a matching access control rule with which the new rule can be merged. If none are 
@@ -63,9 +73,10 @@ class EventWaitHandleSecurity(NativeObjectSecurity):
 
    rule: The access control rule to add.
   """
-  pass
- def AddAuditRule(self,rule):
-  """
+        pass
+
+    def AddAuditRule(self, rule):
+        """
   AddAuditRule(self: EventWaitHandleSecurity,rule: EventWaitHandleAuditRule)
 
    Searches for an audit rule with which the new rule can be merged. If none are found,adds the 
@@ -78,9 +89,18 @@ class EventWaitHandleSecurity(NativeObjectSecurity):
 
    rule: The audit rule to add. The user specified by this rule determines the search.
   """
-  pass
- def AuditRuleFactory(self,identityReference,accessMask,isInherited,inheritanceFlags,propagationFlags,flags):
-  """
+        pass
+
+    def AuditRuleFactory(
+        self,
+        identityReference,
+        accessMask,
+        isInherited,
+        inheritanceFlags,
+        propagationFlags,
+        flags,
+    ):
+        """
   AuditRuleFactory(self: EventWaitHandleSecurity,identityReference: IdentityReference,accessMask: int,isInherited: bool,inheritanceFlags: InheritanceFlags,propagationFlags: PropagationFlags,flags: AuditFlags) -> AuditRule
 
   
@@ -125,9 +145,10 @@ class EventWaitHandleSecurity(NativeObjectSecurity):
 
     class.
   """
-  pass
- def RemoveAccessRule(self,rule):
-  """
+        pass
+
+    def RemoveAccessRule(self, rule):
+        """
   RemoveAccessRule(self: EventWaitHandleSecurity,rule: EventWaitHandleAccessRule) -> bool
 
   
@@ -156,9 +177,10 @@ class EventWaitHandleSecurity(NativeObjectSecurity):
 
    Returns: true if a compatible rule is found; otherwise,false.
   """
-  pass
- def RemoveAccessRuleAll(self,rule):
-  """
+        pass
+
+    def RemoveAccessRuleAll(self, rule):
+        """
   RemoveAccessRuleAll(self: EventWaitHandleSecurity,rule: EventWaitHandleAccessRule)
 
    Searches for all access control rules with the same user and 
@@ -177,9 +199,10 @@ class EventWaitHandleSecurity(NativeObjectSecurity):
 
     are ignored.
   """
-  pass
- def RemoveAccessRuleSpecific(self,rule):
-  """
+        pass
+
+    def RemoveAccessRuleSpecific(self, rule):
+        """
   RemoveAccessRuleSpecific(self: EventWaitHandleSecurity,rule: EventWaitHandleAccessRule)
 
    Searches for an access control rule that exactly matches the specified rule and,if found,
@@ -192,9 +215,10 @@ class EventWaitHandleSecurity(NativeObjectSecurity):
 
    rule: The System.Security.AccessControl.EventWaitHandleAccessRule to remove.
   """
-  pass
- def RemoveAuditRule(self,rule):
-  """
+        pass
+
+    def RemoveAuditRule(self, rule):
+        """
   RemoveAuditRule(self: EventWaitHandleSecurity,rule: EventWaitHandleAuditRule) -> bool
 
   
@@ -219,9 +243,10 @@ class EventWaitHandleSecurity(NativeObjectSecurity):
 
    Returns: true if a compatible rule is found; otherwise,false.
   """
-  pass
- def RemoveAuditRuleAll(self,rule):
-  """
+        pass
+
+    def RemoveAuditRuleAll(self, rule):
+        """
   RemoveAuditRuleAll(self: EventWaitHandleSecurity,rule: EventWaitHandleAuditRule)
 
    Searches for all audit rules with the same user as the specified rule and,if found,removes 
@@ -236,9 +261,10 @@ class EventWaitHandleSecurity(NativeObjectSecurity):
 
     Any rights specified by this rule are ignored.
   """
-  pass
- def RemoveAuditRuleSpecific(self,rule):
-  """
+        pass
+
+    def RemoveAuditRuleSpecific(self, rule):
+        """
   RemoveAuditRuleSpecific(self: EventWaitHandleSecurity,rule: EventWaitHandleAuditRule)
 
    Searches for an audit rule that exactly matches the specified rule and,if found,removes it.
@@ -247,9 +273,10 @@ class EventWaitHandleSecurity(NativeObjectSecurity):
 
    rule: The System.Security.AccessControl.EventWaitHandleAuditRule to remove.
   """
-  pass
- def ResetAccessRule(self,rule):
-  """
+        pass
+
+    def ResetAccessRule(self, rule):
+        """
   ResetAccessRule(self: EventWaitHandleSecurity,rule: EventWaitHandleAccessRule)
 
    Removes all access control rules with the same user as the specified rule,regardless of 
@@ -264,9 +291,10 @@ class EventWaitHandleSecurity(NativeObjectSecurity):
 
     rule determines the rules to remove before this rule is added.
   """
-  pass
- def SetAccessRule(self,rule):
-  """
+        pass
+
+    def SetAccessRule(self, rule):
+        """
   SetAccessRule(self: EventWaitHandleSecurity,rule: EventWaitHandleAccessRule)
 
    Removes all access control rules with the same user and 
@@ -285,9 +313,10 @@ class EventWaitHandleSecurity(NativeObjectSecurity):
 
     before this rule is added.
   """
-  pass
- def SetAuditRule(self,rule):
-  """
+        pass
+
+    def SetAuditRule(self, rule):
+        """
   SetAuditRule(self: EventWaitHandleSecurity,rule: EventWaitHandleAuditRule)
 
    Removes all audit rules with the same user as the specified rule,regardless of the 
@@ -302,9 +331,12 @@ class EventWaitHandleSecurity(NativeObjectSecurity):
 
     rule determines the rules to remove before this rule is added.
   """
-  pass
- AccessRightType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the enumeration type that the System.Security.AccessControl.EventWaitHandleSecurity class uses to represent access rights.
+        pass
+
+    AccessRightType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the enumeration type that the System.Security.AccessControl.EventWaitHandleSecurity class uses to represent access rights.
 
 
 
@@ -314,15 +346,19 @@ Get: AccessRightType(self: EventWaitHandleSecurity) -> Type
 
 """
 
- AccessRulesModified=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that specifies whether the access rules associated with this System.Security.AccessControl.ObjectSecurity object have been modified.
+    AccessRulesModified = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that specifies whether the access rules associated with this System.Security.AccessControl.ObjectSecurity object have been modified.
 
 
 
 """
 
- AccessRuleType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the type that the System.Security.AccessControl.EventWaitHandleSecurity class uses to represent access rules.
+    AccessRuleType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the type that the System.Security.AccessControl.EventWaitHandleSecurity class uses to represent access rules.
 
 
 
@@ -332,15 +368,19 @@ Get: AccessRuleType(self: EventWaitHandleSecurity) -> Type
 
 """
 
- AuditRulesModified=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that specifies whether the audit rules associated with this System.Security.AccessControl.ObjectSecurity object have been modified.
+    AuditRulesModified = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that specifies whether the audit rules associated with this System.Security.AccessControl.ObjectSecurity object have been modified.
 
 
 
 """
 
- AuditRuleType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the type that the System.Security.AccessControl.EventWaitHandleSecurity class uses to represent audit rules.
+    AuditRuleType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the type that the System.Security.AccessControl.EventWaitHandleSecurity class uses to represent audit rules.
 
 
 
@@ -350,32 +390,36 @@ Get: AuditRuleType(self: EventWaitHandleSecurity) -> Type
 
 """
 
- GroupModified=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that specifies whether the group associated with the securable object has been modified.
+    GroupModified = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that specifies whether the group associated with the securable object has been modified.
 
 
 
 """
 
- IsContainer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a Boolean value that specifies whether this System.Security.AccessControl.ObjectSecurity object is a container object.
+    IsContainer = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a Boolean value that specifies whether this System.Security.AccessControl.ObjectSecurity object is a container object.
 
 
 
 """
 
- IsDS=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a Boolean value that specifies whether this System.Security.AccessControl.ObjectSecurity object is a directory object.
+    IsDS = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a Boolean value that specifies whether this System.Security.AccessControl.ObjectSecurity object is a directory object.
 
 
 
 """
 
- OwnerModified=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Boolean value that specifies whether the owner of the securable object has been modified.
+    OwnerModified = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a Boolean value that specifies whether the owner of the securable object has been modified.
 
 
 
 """
-
-

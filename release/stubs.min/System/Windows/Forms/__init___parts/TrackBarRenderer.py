@@ -1,8 +1,9 @@
 class TrackBarRenderer(object):
- """ Provides methods used to render a track bar control with visual styles. This class cannot be inherited. """
- @staticmethod
- def DrawBottomPointingThumb(g,bounds,state):
-  """
+    """ Provides methods used to render a track bar control with visual styles. This class cannot be inherited. """
+
+    @staticmethod
+    def DrawBottomPointingThumb(g, bounds, state):
+        """
   DrawBottomPointingThumb(g: Graphics,bounds: Rectangle,state: TrackBarThumbState)
 
    Draws a downward-pointing track bar slider (also known as the thumb) with visual styles.
@@ -17,10 +18,11 @@ class TrackBarRenderer(object):
 
     state of the track bar slider.
   """
-  pass
- @staticmethod
- def DrawHorizontalThumb(g,bounds,state):
-  """
+        pass
+
+    @staticmethod
+    def DrawHorizontalThumb(g, bounds, state):
+        """
   DrawHorizontalThumb(g: Graphics,bounds: Rectangle,state: TrackBarThumbState)
 
    Draws a horizontal track bar slider (also known as the thumb) with visual styles.
@@ -35,10 +37,11 @@ class TrackBarRenderer(object):
 
     state of the track bar slider.
   """
-  pass
- @staticmethod
- def DrawHorizontalTicks(g,bounds,numTicks,edgeStyle):
-  """
+        pass
+
+    @staticmethod
+    def DrawHorizontalTicks(g, bounds, numTicks, edgeStyle):
+        """
   DrawHorizontalTicks(g: Graphics,bounds: Rectangle,numTicks: int,edgeStyle: EdgeStyle)
 
    Draws the specified number of horizontal track bar ticks with visual styles.
@@ -53,10 +56,11 @@ class TrackBarRenderer(object):
 
    edgeStyle: One of the System.Windows.Forms.VisualStyles.EdgeStyle values.
   """
-  pass
- @staticmethod
- def DrawHorizontalTrack(g,bounds):
-  """
+        pass
+
+    @staticmethod
+    def DrawHorizontalTrack(g, bounds):
+        """
   DrawHorizontalTrack(g: Graphics,bounds: Rectangle)
 
    Draws the track for a horizontal track bar with visual styles.
@@ -67,10 +71,11 @@ class TrackBarRenderer(object):
 
    bounds: The System.Drawing.Rectangle that specifies the bounds of the track.
   """
-  pass
- @staticmethod
- def DrawLeftPointingThumb(g,bounds,state):
-  """
+        pass
+
+    @staticmethod
+    def DrawLeftPointingThumb(g, bounds, state):
+        """
   DrawLeftPointingThumb(g: Graphics,bounds: Rectangle,state: TrackBarThumbState)
 
    Draws a left-pointing track bar slider (also known as the thumb) with visual styles.
@@ -85,10 +90,11 @@ class TrackBarRenderer(object):
 
     state of the track bar slider.
   """
-  pass
- @staticmethod
- def DrawRightPointingThumb(g,bounds,state):
-  """
+        pass
+
+    @staticmethod
+    def DrawRightPointingThumb(g, bounds, state):
+        """
   DrawRightPointingThumb(g: Graphics,bounds: Rectangle,state: TrackBarThumbState)
 
    Draws a right-pointing track bar slider (also known as the thumb) with visual styles.
@@ -103,10 +109,11 @@ class TrackBarRenderer(object):
 
     state of the track bar slider.
   """
-  pass
- @staticmethod
- def DrawTopPointingThumb(g,bounds,state):
-  """
+        pass
+
+    @staticmethod
+    def DrawTopPointingThumb(g, bounds, state):
+        """
   DrawTopPointingThumb(g: Graphics,bounds: Rectangle,state: TrackBarThumbState)
 
    Draws an upward-pointing track bar slider (also known as the thumb) with visual styles.
@@ -121,10 +128,11 @@ class TrackBarRenderer(object):
 
     state of the track bar slider.
   """
-  pass
- @staticmethod
- def DrawVerticalThumb(g,bounds,state):
-  """
+        pass
+
+    @staticmethod
+    def DrawVerticalThumb(g, bounds, state):
+        """
   DrawVerticalThumb(g: Graphics,bounds: Rectangle,state: TrackBarThumbState)
 
    Draws a vertical track bar slider (also known as the thumb) with visual styles.
@@ -139,10 +147,11 @@ class TrackBarRenderer(object):
 
     state of the track bar slider.
   """
-  pass
- @staticmethod
- def DrawVerticalTicks(g,bounds,numTicks,edgeStyle):
-  """
+        pass
+
+    @staticmethod
+    def DrawVerticalTicks(g, bounds, numTicks, edgeStyle):
+        """
   DrawVerticalTicks(g: Graphics,bounds: Rectangle,numTicks: int,edgeStyle: EdgeStyle)
 
    Draws the specified number of vertical track bar ticks with visual styles.
@@ -157,10 +166,11 @@ class TrackBarRenderer(object):
 
    edgeStyle: One of the System.Windows.Forms.VisualStyles.EdgeStyle values.
   """
-  pass
- @staticmethod
- def DrawVerticalTrack(g,bounds):
-  """
+        pass
+
+    @staticmethod
+    def DrawVerticalTrack(g, bounds):
+        """
   DrawVerticalTrack(g: Graphics,bounds: Rectangle)
 
    Draws the track for a vertical track bar with visual styles.
@@ -171,10 +181,11 @@ class TrackBarRenderer(object):
 
    bounds: The System.Drawing.Rectangle that specifies the bounds of the track.
   """
-  pass
- @staticmethod
- def GetBottomPointingThumbSize(g,state):
-  """
+        pass
+
+    @staticmethod
+    def GetBottomPointingThumbSize(g, state):
+        """
   GetBottomPointingThumbSize(g: Graphics,state: TrackBarThumbState) -> Size
 
   
@@ -193,10 +204,11 @@ class TrackBarRenderer(object):
 
    Returns: A System.Drawing.Size that specifies the size,in pixels,of the slider.
   """
-  pass
- @staticmethod
- def GetLeftPointingThumbSize(g,state):
-  """
+        pass
+
+    @staticmethod
+    def GetLeftPointingThumbSize(g, state):
+        """
   GetLeftPointingThumbSize(g: Graphics,state: TrackBarThumbState) -> Size
 
   
@@ -219,10 +231,11 @@ class TrackBarRenderer(object):
 
    Returns: A System.Drawing.Size that specifies the size,in pixels,of the slider.
   """
-  pass
- @staticmethod
- def GetRightPointingThumbSize(g,state):
-  """
+        pass
+
+    @staticmethod
+    def GetRightPointingThumbSize(g, state):
+        """
   GetRightPointingThumbSize(g: Graphics,state: TrackBarThumbState) -> Size
 
   
@@ -245,10 +258,11 @@ class TrackBarRenderer(object):
 
    Returns: A System.Drawing.Size that specifies the size,in pixels,of the slider.
   """
-  pass
- @staticmethod
- def GetTopPointingThumbSize(g,state):
-  """
+        pass
+
+    @staticmethod
+    def GetTopPointingThumbSize(g, state):
+        """
   GetTopPointingThumbSize(g: Graphics,state: TrackBarThumbState) -> Size
 
   
@@ -267,6 +281,6 @@ class TrackBarRenderer(object):
 
    Returns: A System.Drawing.Size that specifies the size,in pixels,of the slider.
   """
-  pass
- IsSupported=True
+        pass
 
+    IsSupported = True

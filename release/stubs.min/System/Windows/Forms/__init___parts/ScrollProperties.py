@@ -1,11 +1,13 @@
 class ScrollProperties(object):
- """ Encapsulates properties related to scrolling. """
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """ __new__(cls: type,container: ScrollableControl) """
-  pass
- Enabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets whether the scroll bar can be used on the container.
+    """ Encapsulates properties related to scrolling. """
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """ __new__(cls: type,container: ScrollableControl) """
+        pass
+
+    Enabled = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets whether the scroll bar can be used on the container.
 
 
 
@@ -17,8 +19,10 @@ Set: Enabled(self: ScrollProperties)=value
 
 """
 
- LargeChange=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the distance to move a scroll bar in response to a large scroll command.
+    LargeChange = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the distance to move a scroll bar in response to a large scroll command.
 
 
 
@@ -30,8 +34,8 @@ Set: LargeChange(self: ScrollProperties)=value
 
 """
 
- Maximum=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the upper limit of the scrollable range.
+    Maximum = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the upper limit of the scrollable range.
 
 
 
@@ -43,8 +47,8 @@ Set: Maximum(self: ScrollProperties)=value
 
 """
 
- Minimum=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the lower limit of the scrollable range.
+    Minimum = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the lower limit of the scrollable range.
 
 
 
@@ -56,15 +60,19 @@ Set: Minimum(self: ScrollProperties)=value
 
 """
 
- ParentControl=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the control to which this scroll information applies.
+    ParentControl = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the control to which this scroll information applies.
 
 
 
 """
 
- SmallChange=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the distance to move a scroll bar in response to a small scroll command.
+    SmallChange = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the distance to move a scroll bar in response to a small scroll command.
 
 
 
@@ -76,8 +84,8 @@ Set: SmallChange(self: ScrollProperties)=value
 
 """
 
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a numeric value that represents the current position of the scroll bar box.
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a numeric value that represents the current position of the scroll bar box.
 
 
 
@@ -89,8 +97,8 @@ Set: Value(self: ScrollProperties)=value
 
 """
 
- Visible=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets whether the scroll bar can be seen by the user.
+    Visible = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets whether the scroll bar can be seen by the user.
 
 
 
@@ -101,5 +109,3 @@ Get: Visible(self: ScrollProperties) -> bool
 Set: Visible(self: ScrollProperties)=value
 
 """
-
-

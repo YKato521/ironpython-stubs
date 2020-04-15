@@ -1,5 +1,5 @@
-class Mesh(GeometryBase,IDisposable,ISerializable):
- """
+class Mesh(GeometryBase, IDisposable, ISerializable):
+    """
  Represents a geometry type that is defined by vertices and faces.
 
     This is often called a face-vertex mesh.
@@ -8,8 +8,9 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
  Mesh()
  """
- def Append(self,other):
-  """
+
+    def Append(self, other):
+        """
   Append(self: Mesh,other: Mesh)
 
    Appends a copy of another mesh to this one and updates indices of appended mesh parts.
@@ -18,16 +19,18 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    other: Mesh to append to this one.
   """
-  pass
- def ClearTextureData(self):
-  """
+        pass
+
+    def ClearTextureData(self):
+        """
   ClearTextureData(self: Mesh)
 
    Remove all texture coordinate information from this mesh.
   """
-  pass
- def ClosestMeshPoint(self,testPoint,maximumDistance):
-  """
+        pass
+
+    def ClosestMeshPoint(self, testPoint, maximumDistance):
+        """
   ClosestMeshPoint(self: Mesh,testPoint: Point3d,maximumDistance: float) -> MeshPoint
 
   
@@ -68,9 +71,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    Returns: closest point information on success. null on failure.
   """
-  pass
- def ClosestPoint(self,testPoint,pointOnMesh=None,*__args):
-  """
+        pass
+
+    def ClosestPoint(self, testPoint, pointOnMesh=None, *__args):
+        """
   ClosestPoint(self: Mesh,testPoint: Point3d,maximumDistance: float) -> (int,Point3d,Vector3d)
 
   
@@ -155,9 +159,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    Returns: The point on the mesh closest to testPoint,or Point3d.Unset on failure.
   """
-  pass
- def ColorAt(self,*__args):
-  """
+        pass
+
+    def ColorAt(self, *__args):
+        """
   ColorAt(self: Mesh,faceIndex: int,t0: float,t1: float,t2: float,t3: float) -> Color
 
   
@@ -210,9 +215,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
     defined on the mesh.
   """
-  pass
- def Compact(self):
-  """
+        pass
+
+    def Compact(self):
+        """
   Compact(self: Mesh) -> bool
 
   
@@ -227,9 +233,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    Returns: true on success,false on failure.
   """
-  pass
- def ConstructConstObject(self,*args):
-  """
+        pass
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -240,9 +247,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    subobject_index: The subobject index.
   """
-  pass
- def CopyFrom(self,other):
-  """
+        pass
+
+    def CopyFrom(self, other):
+        """
   CopyFrom(self: Mesh,other: Mesh)
 
    Copies mesh values into this mesh from another mesh.
@@ -251,26 +259,31 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    other: The other mesh to copy from.
   """
-  pass
- @staticmethod
- def CreateBooleanDifference(firstSet,secondSet):
-  """ CreateBooleanDifference(firstSet: IEnumerable[Mesh],secondSet: IEnumerable[Mesh]) -> Array[Mesh] """
-  pass
- @staticmethod
- def CreateBooleanIntersection(firstSet,secondSet):
-  """ CreateBooleanIntersection(firstSet: IEnumerable[Mesh],secondSet: IEnumerable[Mesh]) -> Array[Mesh] """
-  pass
- @staticmethod
- def CreateBooleanSplit(meshesToSplit,meshSplitters):
-  """ CreateBooleanSplit(meshesToSplit: IEnumerable[Mesh],meshSplitters: IEnumerable[Mesh]) -> Array[Mesh] """
-  pass
- @staticmethod
- def CreateBooleanUnion(meshes):
-  """ CreateBooleanUnion(meshes: IEnumerable[Mesh]) -> Array[Mesh] """
-  pass
- @staticmethod
- def CreateContourCurves(meshToContour,*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateBooleanDifference(firstSet, secondSet):
+        """ CreateBooleanDifference(firstSet: IEnumerable[Mesh],secondSet: IEnumerable[Mesh]) -> Array[Mesh] """
+        pass
+
+    @staticmethod
+    def CreateBooleanIntersection(firstSet, secondSet):
+        """ CreateBooleanIntersection(firstSet: IEnumerable[Mesh],secondSet: IEnumerable[Mesh]) -> Array[Mesh] """
+        pass
+
+    @staticmethod
+    def CreateBooleanSplit(meshesToSplit, meshSplitters):
+        """ CreateBooleanSplit(meshesToSplit: IEnumerable[Mesh],meshSplitters: IEnumerable[Mesh]) -> Array[Mesh] """
+        pass
+
+    @staticmethod
+    def CreateBooleanUnion(meshes):
+        """ CreateBooleanUnion(meshes: IEnumerable[Mesh]) -> Array[Mesh] """
+        pass
+
+    @staticmethod
+    def CreateContourCurves(meshToContour, *__args):
+        """
   CreateContourCurves(meshToContour: Mesh,sectionPlane: Plane) -> Array[Curve]
 
   
@@ -303,10 +316,11 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    Returns: An array of curves. This array can be empty.
   """
-  pass
- @staticmethod
- def CreateFromBox(*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromBox(*__args):
+        """
   CreateFromBox(corners: IEnumerable[Point3d],xCount: int,yCount: int,zCount: int) -> Mesh
 
   CreateFromBox(box: Box,xCount: int,yCount: int,zCount: int) -> Mesh
@@ -343,10 +357,11 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    Returns: A new brep,or null on failure.
   """
-  pass
- @staticmethod
- def CreateFromBrep(brep,meshingParameters=None):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromBrep(brep, meshingParameters=None):
+        """
   CreateFromBrep(brep: Brep,meshingParameters: MeshingParameters) -> Array[Mesh]
 
   
@@ -373,10 +388,11 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    Returns: An array of meshes.
   """
-  pass
- @staticmethod
- def CreateFromClosedPolyline(polyline):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromClosedPolyline(polyline):
+        """
   CreateFromClosedPolyline(polyline: Polyline) -> Mesh
 
   
@@ -389,10 +405,11 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    Returns: New mesh on success or null on failure.
   """
-  pass
- @staticmethod
- def CreateFromCone(cone,vertical,around):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromCone(cone, vertical, around):
+        """
   CreateFromCone(cone: Cone,vertical: int,around: int) -> Mesh
 
   
@@ -405,10 +422,11 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    around: Number of faces around the cone
   """
-  pass
- @staticmethod
- def CreateFromCylinder(cylinder,vertical,around):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromCylinder(cylinder, vertical, around):
+        """
   CreateFromCylinder(cylinder: Cylinder,vertical: int,around: int) -> Mesh
 
   
@@ -421,10 +439,11 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    around: Number of faces around the cylinder
   """
-  pass
- @staticmethod
- def CreateFromPlanarBoundary(boundary,parameters):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromPlanarBoundary(boundary, parameters):
+        """
   CreateFromPlanarBoundary(boundary: Curve,parameters: MeshingParameters) -> Mesh
 
   
@@ -439,10 +458,11 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    Returns: New mesh on success or null on failure.
   """
-  pass
- @staticmethod
- def CreateFromPlane(plane,xInterval,yInterval,xCount,yCount):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromPlane(plane, xInterval, yInterval, xCount, yCount):
+        """
   CreateFromPlane(plane: Plane,xInterval: Interval,yInterval: Interval,xCount: int,yCount: int) -> Mesh
 
   
@@ -461,10 +481,11 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    yCount: Number of faces in y-direction.
   """
-  pass
- @staticmethod
- def CreateFromSphere(sphere,xCount,yCount):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromSphere(sphere, xCount, yCount):
+        """
   CreateFromSphere(sphere: Sphere,xCount: int,yCount: int) -> Mesh
 
   
@@ -479,9 +500,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    yCount: Number of faces in the top-to-bottom direction.
   """
-  pass
- def CreatePartitions(self,maximumVertexCount,maximumTriangleCount):
-  """
+        pass
+
+    def CreatePartitions(self, maximumVertexCount, maximumTriangleCount):
+        """
   CreatePartitions(self: Mesh,maximumVertexCount: int,maximumTriangleCount: int) -> bool
 
   
@@ -504,9 +526,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    Returns: true on success
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: CommonObject,disposing: bool)
 
    For derived class implementers.
@@ -531,9 +554,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
     finalizer.
   """
-  pass
- def Duplicate(self):
-  """
+        pass
+
+    def Duplicate(self):
+        """
   Duplicate(self: Mesh) -> GeometryBase
 
   
@@ -548,9 +572,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    Returns: A mesh.
   """
-  pass
- def DuplicateMesh(self):
-  """
+        pass
+
+    def DuplicateMesh(self):
+        """
   DuplicateMesh(self: Mesh) -> Mesh
 
   
@@ -559,9 +584,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
      This is the same as Rhino.Geometry.Mesh.Duplicate.
   """
-  pass
- def EvaluateMeshGeometry(self,surface):
-  """
+        pass
+
+    def EvaluateMeshGeometry(self, surface):
+        """
   EvaluateMeshGeometry(self: Mesh,surface: Surface) -> bool
 
   
@@ -580,9 +606,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if the operation succceeded; false otherwise.
   """
-  pass
- def ExplodeAtUnweldedEdges(self):
-  """
+        pass
+
+    def ExplodeAtUnweldedEdges(self):
+        """
   ExplodeAtUnweldedEdges(self: Mesh) -> Array[Mesh]
 
   
@@ -607,9 +634,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
       nothing happened and the ouput is essentially a copy of the input.
   """
-  pass
- def Flip(self,vertexNormals,faceNormals,faceOrientation):
-  """
+        pass
+
+    def Flip(self, vertexNormals, faceNormals, faceOrientation):
+        """
   Flip(self: Mesh,vertexNormals: bool,faceNormals: bool,faceOrientation: bool)
 
    Reverses the direction of the mesh.
@@ -622,9 +650,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    faceOrientation: If true,face orientations will be reversed.
   """
-  pass
- def GetCachedTextureCoordinates(self,textureMappingId):
-  """
+        pass
+
+    def GetCachedTextureCoordinates(self, textureMappingId):
+        """
   GetCachedTextureCoordinates(self: Mesh,textureMappingId: Guid) -> CachedTextureCoordinates
 
   
@@ -643,9 +672,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    Returns: Object which allows access to coordinates and other props.
   """
-  pass
- def GetNakedEdgePointStatus(self):
-  """
+        pass
+
+    def GetNakedEdgePointStatus(self):
+        """
   GetNakedEdgePointStatus(self: Mesh) -> Array[bool]
 
   
@@ -668,9 +698,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
     vertex is completely surrounded by faces.
   """
-  pass
- def GetNakedEdges(self):
-  """
+        pass
+
+    def GetNakedEdges(self):
+        """
   GetNakedEdges(self: Mesh) -> Array[Polyline]
 
   
@@ -685,9 +716,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    Returns: An array of polylines,or null on error.
   """
-  pass
- def GetOutlines(self,*__args):
-  """
+        pass
+
+    def GetOutlines(self, *__args):
+        """
   GetOutlines(self: Mesh,viewport: RhinoViewport) -> Array[Polyline]
 
   
@@ -718,9 +750,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    Returns: An array of polylines,or null on error.
   """
-  pass
- def GetPartition(self,which):
-  """
+        pass
+
+    def GetPartition(self, which):
+        """
   GetPartition(self: Mesh,which: int) -> MeshPart
 
   
@@ -735,9 +768,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    which: The partition index.
   """
-  pass
- def IsManifold(self,topologicalTest,isOriented,hasBoundary):
-  """
+        pass
+
+    def IsManifold(self, topologicalTest, isOriented, hasBoundary):
+        """
   IsManifold(self: Mesh,topologicalTest: bool) -> (bool,bool,bool)
 
   
@@ -756,9 +790,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if every mesh "edge" has at most two adjacent faces.
   """
-  pass
- def IsPointInside(self,point,tolerance,strictlyIn):
-  """
+        pass
+
+    def IsPointInside(self, point, tolerance, strictlyIn):
+        """
   IsPointInside(self: Mesh,point: Point3d,tolerance: float,strictlyIn: bool) -> bool
 
   
@@ -795,9 +830,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    Returns: true if point is inside the solid mesh,false if not.
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: CommonObject)
 
    For derived classes implementers.
@@ -806,9 +842,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
     instance from being const.
   """
-  pass
- def NormalAt(self,*__args):
-  """
+        pass
+
+    def NormalAt(self, *__args):
+        """
   NormalAt(self: Mesh,faceIndex: int,t0: float,t1: float,t2: float,t3: float) -> Vector3d
 
   
@@ -853,9 +890,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
     barycentric coordinates could not be evaluated.
   """
-  pass
- def Offset(self,distance,solidify=None):
-  """
+        pass
+
+    def Offset(self, distance, solidify=None):
+        """
   Offset(self: Mesh,distance: float,solidify: bool) -> Mesh
 
   
@@ -900,16 +938,18 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    Returns: A new mesh on success,or null on failure.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: Mesh)
 
    Performs some memory cleanup if necessary
   """
-  pass
- def PointAt(self,*__args):
-  """
+        pass
+
+    def PointAt(self, *__args):
+        """
   PointAt(self: Mesh,faceIndex: int,t0: float,t1: float,t2: float,t3: float) -> Point3d
 
   
@@ -954,12 +994,14 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
     coordinates could not be evaluated.
   """
-  pass
- def PullPointsToMesh(self,points):
-  """ PullPointsToMesh(self: Mesh,points: IEnumerable[Point3d]) -> Array[Point3d] """
-  pass
- def Reduce(self,desiredPolygonCount,allowDistortion,accuracy,normalizeSize):
-  """
+        pass
+
+    def PullPointsToMesh(self, points):
+        """ PullPointsToMesh(self: Mesh,points: IEnumerable[Point3d]) -> Array[Point3d] """
+        pass
+
+    def Reduce(self, desiredPolygonCount, allowDistortion, accuracy, normalizeSize):
+        """
   Reduce(self: Mesh,desiredPolygonCount: int,allowDistortion: bool,accuracy: int,normalizeSize: bool) -> bool
 
   
@@ -984,18 +1026,20 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    Returns: True if mesh is successfully reduced and false if mesh could not be reduced for some reason.
   """
-  pass
- def SetCachedTextureCoordinates(self,tm,xf):
-  """
+        pass
+
+    def SetCachedTextureCoordinates(self, tm, xf):
+        """
   SetCachedTextureCoordinates(self: Mesh,tm: TextureMapping,xf: Transform) -> Transform
 
   
 
    Set cached texture coordinates using the specified mapping.
   """
-  pass
- def SolidOrientation(self):
-  """
+        pass
+
+    def SolidOrientation(self):
+        """
   SolidOrientation(self: Mesh) -> int
 
   
@@ -1006,9 +1050,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
     mesh is not solid.
   """
-  pass
- def Split(self,*__args):
-  """
+        pass
+
+    def Split(self, *__args):
+        """
   Split(self: Mesh,meshes: IEnumerable[Mesh]) -> Array[Mesh]
 
   Split(self: Mesh,mesh: Mesh) -> Array[Mesh]
@@ -1035,9 +1080,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    Returns: A new mesh array with the split result. This can be null if no result was found.
   """
-  pass
- def SplitDisjointPieces(self):
-  """
+        pass
+
+    def SplitDisjointPieces(self):
+        """
   SplitDisjointPieces(self: Mesh) -> Array[Mesh]
 
   
@@ -1046,9 +1092,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    Returns: An array containing all the disjoint pieces that make up this Mesh.
   """
-  pass
- def UnifyNormals(self):
-  """
+        pass
+
+    def UnifyNormals(self):
+        """
   UnifyNormals(self: Mesh) -> int
 
   
@@ -1073,9 +1120,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    Returns: number of faces that were modified.
   """
-  pass
- def Unweld(self,angleToleranceRadians,modifyNormals):
-  """
+        pass
+
+    def Unweld(self, angleToleranceRadians, modifyNormals):
+        """
   Unweld(self: Mesh,angleToleranceRadians: float,modifyNormals: bool)
 
    Makes sure that faces sharing an edge and having a difference of normal greater
@@ -1100,9 +1148,10 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
       or vertex normals made from the corrsponding face normals (true)
   """
-  pass
- def Weld(self,angleToleranceRadians):
-  """
+        pass
+
+    def Weld(self, angleToleranceRadians):
+        """
   Weld(self: Mesh,angleToleranceRadians: float)
 
    Makes sure that faces sharing an edge and having a difference of normal greater
@@ -1121,38 +1170,46 @@ class Mesh(GeometryBase,IDisposable,ISerializable):
 
    angleToleranceRadians: Angle at which to weld vertices.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self):
+        """
   __new__(cls: type)
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- DisjointMeshCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of disjoint (topologically unconnected) pieces in this mesh.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    DisjointMeshCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the number of disjoint (topologically unconnected) pieces in this mesh.
 
 
 
@@ -1162,8 +1219,10 @@ Get: DisjointMeshCount(self: Mesh) -> int
 
 """
 
- FaceNormals=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets access to the face normal collection in this mesh.
+    FaceNormals = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets access to the face normal collection in this mesh.
 
 
 
@@ -1173,8 +1232,8 @@ Get: FaceNormals(self: Mesh) -> MeshFaceNormalList
 
 """
 
- Faces=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets access to the faces collection in this mesh.
+    Faces = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets access to the faces collection in this mesh.
 
 
 
@@ -1184,8 +1243,10 @@ Get: Faces(self: Mesh) -> MeshFaceList
 
 """
 
- HasCachedTextureCoordinates=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Will return true if SetCachedTextureCoordinates has been called;
+    HasCachedTextureCoordinates = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Will return true if SetCachedTextureCoordinates has been called;
 
    otherwise will return false.
 
@@ -1197,8 +1258,8 @@ Get: HasCachedTextureCoordinates(self: Mesh) -> bool
 
 """
 
- IsClosed=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether a mesh is considered to be closed (solid).
+    IsClosed = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether a mesh is considered to be closed (solid).
 
    A mesh is considered solid when every mesh edge borders two or more faces.
 
@@ -1210,8 +1271,8 @@ Get: IsClosed(self: Mesh) -> bool
 
 """
 
- Normals=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets access to the vertex normal collection in this mesh.
+    Normals = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets access to the vertex normal collection in this mesh.
 
 
 
@@ -1221,8 +1282,10 @@ Get: Normals(self: Mesh) -> MeshVertexNormalList
 
 """
 
- PartitionCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Number of partition information chunks stored on this mesh based
+    PartitionCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Number of partition information chunks stored on this mesh based
 
    on the last call to CreatePartitions
 
@@ -1234,8 +1297,10 @@ Get: PartitionCount(self: Mesh) -> int
 
 """
 
- TextureCoordinates=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets access to the vertex texture coordinate collection in this mesh.
+    TextureCoordinates = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets access to the vertex texture coordinate collection in this mesh.
 
 
 
@@ -1245,8 +1310,10 @@ Get: TextureCoordinates(self: Mesh) -> MeshTextureCoordinateList
 
 """
 
- TopologyEdges=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the Rhino.Geometry.Collections.MeshTopologyEdgeList object associated with this mesh.
+    TopologyEdges = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the Rhino.Geometry.Collections.MeshTopologyEdgeList object associated with this mesh.
 
    This object stores edge connectivity.
 
@@ -1258,8 +1325,10 @@ Get: TopologyEdges(self: Mesh) -> MeshTopologyEdgeList
 
 """
 
- TopologyVertices=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the Rhino.Geometry.Collections.MeshTopologyVertexList object associated with this mesh.
+    TopologyVertices = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the Rhino.Geometry.Collections.MeshTopologyVertexList object associated with this mesh.
 
    This object stores vertex connectivity and the indices of vertices
 
@@ -1273,8 +1342,10 @@ Get: TopologyVertices(self: Mesh) -> MeshTopologyVertexList
 
 """
 
- VertexColors=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets access to the (optional) vertex color collection in this mesh.
+    VertexColors = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets access to the (optional) vertex color collection in this mesh.
 
 
 
@@ -1284,8 +1355,8 @@ Get: VertexColors(self: Mesh) -> MeshVertexColorList
 
 """
 
- Vertices=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets access to the vertices set of this mesh.
+    Vertices = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets access to the vertices set of this mesh.
 
 
 
@@ -1294,5 +1365,3 @@ Get: Vertices(self: Mesh) -> MeshVertexList
 
 
 """
-
-

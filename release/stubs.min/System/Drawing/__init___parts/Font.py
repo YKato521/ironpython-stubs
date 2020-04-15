@@ -1,5 +1,5 @@
-class Font(MarshalByRefObject,ICloneable,ISerializable,IDisposable):
- """
+class Font(MarshalByRefObject, ICloneable, ISerializable, IDisposable):
+    """
  Defines a particular format for text,including font face,size,and style attributes. This class cannot be inherited.
 
  
@@ -30,8 +30,9 @@ class Font(MarshalByRefObject,ICloneable,ISerializable,IDisposable):
 
  Font(familyName: str,emSize: Single,unit: GraphicsUnit)
  """
- def Clone(self):
-  """
+
+    def Clone(self):
+        """
   Clone(self: Font) -> object
 
   
@@ -40,16 +41,18 @@ class Font(MarshalByRefObject,ICloneable,ISerializable,IDisposable):
 
    Returns: The System.Drawing.Font this method creates,cast as an System.Object.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: Font)
 
    Releases all resources used by this System.Drawing.Font.
   """
-  pass
- def Equals(self,obj):
-  """
+        pass
+
+    def Equals(self, obj):
+        """
   Equals(self: Font,obj: object) -> bool
 
   
@@ -76,10 +79,11 @@ class Font(MarshalByRefObject,ICloneable,ISerializable,IDisposable):
 
     System.Drawing.Font.Unit property values as this System.Drawing.Font; otherwise,false.
   """
-  pass
- @staticmethod
- def FromHdc(hdc):
-  """
+        pass
+
+    @staticmethod
+    def FromHdc(hdc):
+        """
   FromHdc(hdc: IntPtr) -> Font
 
   
@@ -92,10 +96,11 @@ class Font(MarshalByRefObject,ICloneable,ISerializable,IDisposable):
 
    Returns: The System.Drawing.Font this method creates.
   """
-  pass
- @staticmethod
- def FromHfont(hfont):
-  """
+        pass
+
+    @staticmethod
+    def FromHfont(hfont):
+        """
   FromHfont(hfont: IntPtr) -> Font
 
   
@@ -108,10 +113,11 @@ class Font(MarshalByRefObject,ICloneable,ISerializable,IDisposable):
 
    Returns: The System.Drawing.Font this method creates.
   """
-  pass
- @staticmethod
- def FromLogFont(lf,hdc=None):
-  """
+        pass
+
+    @staticmethod
+    def FromLogFont(lf, hdc=None):
+        """
   FromLogFont(lf: object) -> Font
 
   
@@ -146,9 +152,10 @@ class Font(MarshalByRefObject,ICloneable,ISerializable,IDisposable):
 
    Returns: The System.Drawing.Font that this method creates.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Font) -> int
 
   
@@ -157,9 +164,10 @@ class Font(MarshalByRefObject,ICloneable,ISerializable,IDisposable):
 
    Returns: The hash code for this System.Drawing.Font.
   """
-  pass
- def GetHeight(self,*__args):
-  """
+        pass
+
+    def GetHeight(self, *__args):
+        """
   GetHeight(self: Font,dpi: Single) -> Single
 
   
@@ -204,9 +212,10 @@ class Font(MarshalByRefObject,ICloneable,ISerializable,IDisposable):
 
    Returns: The line spacing,in pixels,of this font.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -237,9 +246,10 @@ class Font(MarshalByRefObject,ICloneable,ISerializable,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def ToHfont(self):
-  """
+        pass
+
+    def ToHfont(self):
+        """
   ToHfont(self: Font) -> IntPtr
 
   
@@ -248,9 +258,10 @@ class Font(MarshalByRefObject,ICloneable,ISerializable,IDisposable):
 
    Returns: A Windows handle to this System.Drawing.Font.
   """
-  pass
- def ToLogFont(self,logFont,graphics=None):
-  """
+        pass
+
+    def ToLogFont(self, logFont, graphics=None):
+        """
   ToLogFont(self: Font,logFont: object,graphics: Graphics)
 
    Creates a GDI logical font (LOGFONT) structure from this System.Drawing.Font.
@@ -269,9 +280,10 @@ class Font(MarshalByRefObject,ICloneable,ISerializable,IDisposable):
 
    logFont: An System.Object that represents the LOGFONT structure that this method creates.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: Font) -> str
 
   
@@ -280,32 +292,37 @@ class Font(MarshalByRefObject,ICloneable,ISerializable,IDisposable):
 
    Returns: A string that represents this System.Drawing.Font.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,prototype: Font,newStyle: FontStyle)
 
   __new__(cls: type,family: FontFamily,emSize: Single,style: FontStyle,unit: GraphicsUnit)
@@ -332,15 +349,19 @@ class Font(MarshalByRefObject,ICloneable,ISerializable,IDisposable):
 
   __new__(cls: type,familyName: str,emSize: Single)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Bold=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether this System.Drawing.Font is bold.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Bold = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether this System.Drawing.Font is bold.
 
 
 
@@ -350,8 +371,10 @@ Get: Bold(self: Font) -> bool
 
 """
 
- FontFamily=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Drawing.FontFamily associated with this System.Drawing.Font.
+    FontFamily = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Drawing.FontFamily associated with this System.Drawing.Font.
 
 
 
@@ -361,8 +384,10 @@ Get: FontFamily(self: Font) -> FontFamily
 
 """
 
- GdiCharSet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a byte value that specifies the GDI character set that this System.Drawing.Font uses.
+    GdiCharSet = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a byte value that specifies the GDI character set that this System.Drawing.Font uses.
 
 
 
@@ -372,8 +397,10 @@ Get: GdiCharSet(self: Font) -> Byte
 
 """
 
- GdiVerticalFont=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a Boolean value that indicates whether this System.Drawing.Font is derived from a GDI vertical font.
+    GdiVerticalFont = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a Boolean value that indicates whether this System.Drawing.Font is derived from a GDI vertical font.
 
 
 
@@ -383,8 +410,8 @@ Get: GdiVerticalFont(self: Font) -> bool
 
 """
 
- Height=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the line spacing of this font.
+    Height = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the line spacing of this font.
 
 
 
@@ -394,8 +421,10 @@ Get: Height(self: Font) -> int
 
 """
 
- IsSystemFont=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the font is a member of System.Drawing.SystemFonts.
+    IsSystemFont = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the font is a member of System.Drawing.SystemFonts.
 
 
 
@@ -405,8 +434,8 @@ Get: IsSystemFont(self: Font) -> bool
 
 """
 
- Italic=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether this font has the italic style applied.
+    Italic = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether this font has the italic style applied.
 
 
 
@@ -416,8 +445,8 @@ Get: Italic(self: Font) -> bool
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the face name of this System.Drawing.Font.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the face name of this System.Drawing.Font.
 
 
 
@@ -427,8 +456,10 @@ Get: Name(self: Font) -> str
 
 """
 
- OriginalFontName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name of the font originally specified.
+    OriginalFontName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the name of the font originally specified.
 
 
 
@@ -438,8 +469,8 @@ Get: OriginalFontName(self: Font) -> str
 
 """
 
- Size=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the em-size of this System.Drawing.Font measured in the units specified by the System.Drawing.Font.Unit property.
+    Size = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the em-size of this System.Drawing.Font measured in the units specified by the System.Drawing.Font.Unit property.
 
 
 
@@ -449,8 +480,10 @@ Get: Size(self: Font) -> Single
 
 """
 
- SizeInPoints=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the em-size,in points,of this System.Drawing.Font.
+    SizeInPoints = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the em-size,in points,of this System.Drawing.Font.
 
 
 
@@ -460,8 +493,8 @@ Get: SizeInPoints(self: Font) -> Single
 
 """
 
- Strikeout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether this System.Drawing.Font specifies a horizontal line through the font.
+    Strikeout = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether this System.Drawing.Font specifies a horizontal line through the font.
 
 
 
@@ -471,8 +504,8 @@ Get: Strikeout(self: Font) -> bool
 
 """
 
- Style=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets style information for this System.Drawing.Font.
+    Style = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets style information for this System.Drawing.Font.
 
 
 
@@ -482,8 +515,10 @@ Get: Style(self: Font) -> FontStyle
 
 """
 
- SystemFontName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name of the system font if the System.Drawing.Font.IsSystemFont property returns true.
+    SystemFontName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the name of the system font if the System.Drawing.Font.IsSystemFont property returns true.
 
 
 
@@ -493,8 +528,8 @@ Get: SystemFontName(self: Font) -> str
 
 """
 
- Underline=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether this System.Drawing.Font is underlined.
+    Underline = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether this System.Drawing.Font is underlined.
 
 
 
@@ -504,8 +539,8 @@ Get: Underline(self: Font) -> bool
 
 """
 
- Unit=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the unit of measure for this System.Drawing.Font.
+    Unit = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the unit of measure for this System.Drawing.Font.
 
 
 
@@ -514,5 +549,3 @@ Get: Unit(self: Font) -> GraphicsUnit
 
 
 """
-
-

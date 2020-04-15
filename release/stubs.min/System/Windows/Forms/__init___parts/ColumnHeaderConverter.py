@@ -1,13 +1,14 @@
 class ColumnHeaderConverter(ExpandableObjectConverter):
- """
+    """
  Provides a type converter to convert System.Windows.Forms.ColumnHeader objects from one type to another.
 
  
 
  ColumnHeaderConverter()
  """
- def CanConvertTo(self,*__args):
-  """
+
+    def CanConvertTo(self, *__args):
+        """
   CanConvertTo(self: ColumnHeaderConverter,context: ITypeDescriptorContext,destinationType: Type) -> bool
 
   
@@ -26,9 +27,10 @@ class ColumnHeaderConverter(ExpandableObjectConverter):
 
    Returns: true if this converter can perform the conversion; otherwise,false.
   """
-  pass
- def ConvertTo(self,*__args):
-  """
+        pass
+
+    def ConvertTo(self, *__args):
+        """
   ConvertTo(self: ColumnHeaderConverter,context: ITypeDescriptorContext,culture: CultureInfo,value: object,destinationType: Type) -> object
 
   
@@ -55,4 +57,4 @@ class ColumnHeaderConverter(ExpandableObjectConverter):
 
    Returns: The System.Object that is the result of the conversion.
   """
-  pass
+        pass

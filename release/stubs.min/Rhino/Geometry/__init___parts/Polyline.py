@@ -1,5 +1,13 @@
-class Polyline(Point3dList,IList[Point3d],ICollection[Point3d],IEnumerable[Point3d],IEnumerable,IList,ICollection):
- """
+class Polyline(
+    Point3dList,
+    IList[Point3d],
+    ICollection[Point3d],
+    IEnumerable[Point3d],
+    IEnumerable,
+    IList,
+    ICollection,
+):
+    """
  Represents an ordered set of points connected by linear segments.
 
     Polylines are closed if start and end points coincide.
@@ -12,8 +20,9 @@ class Polyline(Point3dList,IList[Point3d],ICollection[Point3d],IEnumerable[Point
 
  Polyline(collection: IEnumerable[Point3d])
  """
- def BreakAtAngles(self,angle):
-  """
+
+    def BreakAtAngles(self, angle):
+        """
   BreakAtAngles(self: Polyline,angle: float) -> Array[Polyline]
 
   
@@ -32,9 +41,10 @@ class Polyline(Point3dList,IList[Point3d],ICollection[Point3d],IEnumerable[Point
 
    Returns: An array of polyline segments,or null on error.
   """
-  pass
- def CenterPoint(self):
-  """
+        pass
+
+    def CenterPoint(self):
+        """
   CenterPoint(self: Polyline) -> Point3d
 
   
@@ -43,9 +53,10 @@ class Polyline(Point3dList,IList[Point3d],ICollection[Point3d],IEnumerable[Point
 
    Returns: The weighted average of all segments.
   """
-  pass
- def ClosestParameter(self,testPoint):
-  """
+        pass
+
+    def ClosestParameter(self, testPoint):
+        """
   ClosestParameter(self: Polyline,testPoint: Point3d) -> float
 
   
@@ -58,9 +69,10 @@ class Polyline(Point3dList,IList[Point3d],ICollection[Point3d],IEnumerable[Point
 
    Returns: The parameter along the polyline closest to testPoint.
   """
-  pass
- def ClosestPoint(self,testPoint):
-  """
+        pass
+
+    def ClosestPoint(self, testPoint):
+        """
   ClosestPoint(self: Polyline,testPoint: Point3d) -> Point3d
 
   
@@ -73,9 +85,10 @@ class Polyline(Point3dList,IList[Point3d],ICollection[Point3d],IEnumerable[Point
 
    Returns: The point on the polyline closest to testPoint.
   """
-  pass
- def CollapseShortSegments(self,tolerance):
-  """
+        pass
+
+    def CollapseShortSegments(self, tolerance):
+        """
   CollapseShortSegments(self: Polyline,tolerance: float) -> int
 
   
@@ -102,9 +115,10 @@ class Polyline(Point3dList,IList[Point3d],ICollection[Point3d],IEnumerable[Point
 
    Returns: The number of segments that were collapsed.
   """
-  pass
- def DeleteShortSegments(self,tolerance):
-  """
+        pass
+
+    def DeleteShortSegments(self, tolerance):
+        """
   DeleteShortSegments(self: Polyline,tolerance: float) -> int
 
   
@@ -123,9 +137,10 @@ class Polyline(Point3dList,IList[Point3d],ICollection[Point3d],IEnumerable[Point
 
    Returns: Number of points (and segments) removed.
   """
-  pass
- def GetSegments(self):
-  """
+        pass
+
+    def GetSegments(self):
+        """
   GetSegments(self: Polyline) -> Array[Line]
 
   
@@ -134,9 +149,10 @@ class Polyline(Point3dList,IList[Point3d],ICollection[Point3d],IEnumerable[Point
 
    Returns: An array of line segments or null if the polyline contains fewer than 2 points.
   """
-  pass
- def IsClosedWithinTolerance(self,tolerance):
-  """
+        pass
+
+    def IsClosedWithinTolerance(self, tolerance):
+        """
   IsClosedWithinTolerance(self: Polyline,tolerance: float) -> bool
 
   
@@ -155,9 +171,10 @@ class Polyline(Point3dList,IList[Point3d],ICollection[Point3d],IEnumerable[Point
 
    Returns: true if the polyline is closed to within tolerance,false otherwise.
   """
-  pass
- def PointAt(self,t):
-  """
+        pass
+
+    def PointAt(self, t):
+        """
   PointAt(self: Polyline,t: float) -> Point3d
 
   
@@ -176,9 +193,10 @@ class Polyline(Point3dList,IList[Point3d],ICollection[Point3d],IEnumerable[Point
 
    Returns: The point on the polyline at t.
   """
-  pass
- def ReduceSegments(self,tolerance):
-  """
+        pass
+
+    def ReduceSegments(self, tolerance):
+        """
   ReduceSegments(self: Polyline,tolerance: float) -> int
 
   
@@ -197,9 +215,10 @@ class Polyline(Point3dList,IList[Point3d],ICollection[Point3d],IEnumerable[Point
 
    Returns: The number of vertices that disappeared due to reduction.
   """
-  pass
- def SegmentAt(self,index):
-  """
+        pass
+
+    def SegmentAt(self, index):
+        """
   SegmentAt(self: Polyline,index: int) -> Line
 
   
@@ -212,9 +231,10 @@ class Polyline(Point3dList,IList[Point3d],ICollection[Point3d],IEnumerable[Point
 
    Returns: Line segment at index or Line.Unset on failure.
   """
-  pass
- def Smooth(self,amount):
-  """
+        pass
+
+    def Smooth(self, amount):
+        """
   Smooth(self: Polyline,amount: float) -> bool
 
   
@@ -233,9 +253,10 @@ class Polyline(Point3dList,IList[Point3d],ICollection[Point3d],IEnumerable[Point
 
    Returns: true on success,false on failure.
   """
-  pass
- def TangentAt(self,t):
-  """
+        pass
+
+    def TangentAt(self, t):
+        """
   TangentAt(self: Polyline,t: float) -> Vector3d
 
   
@@ -254,9 +275,10 @@ class Polyline(Point3dList,IList[Point3d],ICollection[Point3d],IEnumerable[Point
 
    Returns: The tangent along the polyline at t.
   """
-  pass
- def ToNurbsCurve(self):
-  """
+        pass
+
+    def ToNurbsCurve(self):
+        """
   ToNurbsCurve(self: Polyline) -> NurbsCurve
 
   
@@ -265,9 +287,10 @@ class Polyline(Point3dList,IList[Point3d],ICollection[Point3d],IEnumerable[Point
 
    Returns: A Nurbs curve shaped like this polyline or null on failure.
   """
-  pass
- def TriangulateClosedPolyline(self):
-  """
+        pass
+
+    def TriangulateClosedPolyline(self):
+        """
   TriangulateClosedPolyline(self: Polyline) -> Array[MeshFace]
 
   
@@ -278,9 +301,10 @@ class Polyline(Point3dList,IList[Point3d],ICollection[Point3d],IEnumerable[Point
 
     polyline
   """
-  pass
- def Trim(self,domain):
-  """
+        pass
+
+    def Trim(self, domain):
+        """
   Trim(self: Polyline,domain: Interval) -> Polyline
 
   
@@ -299,33 +323,40 @@ class Polyline(Point3dList,IList[Point3d],ICollection[Point3d],IEnumerable[Point
 
    Returns: The polyline as defined by the subdomain,or null on failure.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,initialCapacity: int)
 
   __new__(cls: type,collection: IEnumerable[Point3d])
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- IsClosed=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether this polyline is closed. 
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    IsClosed = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether this polyline is closed. 
 
    The polyline is considered to be closed if its start is 
 
@@ -339,8 +370,8 @@ Get: IsClosed(self: Polyline) -> bool
 
 """
 
- IsValid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether this polyline is valid. 
+    IsValid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether this polyline is valid. 
 
    Valid polylines have at least one segment,no Invalid points and no zero length segments.Closed polylines with only two segments are also not considered valid.
 
@@ -352,8 +383,8 @@ Get: IsValid(self: Polyline) -> bool
 
 """
 
- Length=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the total length of the polyline.
+    Length = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the total length of the polyline.
 
 
 
@@ -363,8 +394,10 @@ Get: Length(self: Polyline) -> float
 
 """
 
- SegmentCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of segments for this polyline.
+    SegmentCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the number of segments for this polyline.
 
 
 
@@ -373,5 +406,3 @@ Get: SegmentCount(self: Polyline) -> int
 
 
 """
-
-

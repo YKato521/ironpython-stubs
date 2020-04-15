@@ -1,10 +1,12 @@
-class WorksharingTooltipInfo(object,IDisposable):
- """ Worksharing information about a single element suitable for display in an in-canvas tooltip. """
- def Dispose(self):
-  """ Dispose(self: WorksharingTooltipInfo) """
-  pass
- def GetRequesters(self):
-  """
+class WorksharingTooltipInfo(object, IDisposable):
+    """ Worksharing information about a single element suitable for display in an in-canvas tooltip. """
+
+    def Dispose(self):
+        """ Dispose(self: WorksharingTooltipInfo) """
+        pass
+
+    def GetRequesters(self):
+        """
   GetRequesters(self: WorksharingTooltipInfo) -> IList[str]
 
   
@@ -19,24 +21,30 @@ class WorksharingTooltipInfo(object,IDisposable):
 
    Returns: The ordered list of unique user names.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: WorksharingTooltipInfo,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Creator=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The user name of the user who created the element.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: WorksharingTooltipInfo,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Creator = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The user name of the user who created the element.
 
 
 
@@ -46,8 +54,10 @@ Get: Creator(self: WorksharingTooltipInfo) -> str
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -57,8 +67,10 @@ Get: IsValidObject(self: WorksharingTooltipInfo) -> bool
 
 """
 
- LastChangedBy=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The user name of the most recent user who saved a user change of this element
+    LastChangedBy = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The user name of the most recent user who saved a user change of this element
 
    to the central model.
 
@@ -70,8 +82,8 @@ Get: LastChangedBy(self: WorksharingTooltipInfo) -> str
 
 """
 
- Owner=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The current owner of the element or empty string if no one owns the element.
+    Owner = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The current owner of the element or empty string if no one owns the element.
 
 
 
@@ -80,5 +92,3 @@ Get: Owner(self: WorksharingTooltipInfo) -> str
 
 
 """
-
-

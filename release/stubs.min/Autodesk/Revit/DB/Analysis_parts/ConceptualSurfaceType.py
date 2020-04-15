@@ -1,17 +1,19 @@
-class ConceptualSurfaceType(Element,IDisposable):
- """
+class ConceptualSurfaceType(Element, IDisposable):
+    """
  This element represents a conceptual BIM object category to assign to faces in Mass geometries.
 
     There is one ConceptualSurfaceType element for each of the Mass Surface Subcategories.
 
     for serialization
  """
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- @staticmethod
- def GetAllMassSubCategoryIds():
-  """
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    @staticmethod
+    def GetAllMassSubCategoryIds():
+        """
   GetAllMassSubCategoryIds() -> IList[ElementId]
 
   
@@ -22,13 +24,15 @@ class ConceptualSurfaceType(Element,IDisposable):
 
     ConceptualSurfaceType's.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- @staticmethod
- def GetByMassSubCategoryId(cda,massSubCategoryId):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    @staticmethod
+    def GetByMassSubCategoryId(cda, massSubCategoryId):
+        """
   GetByMassSubCategoryId(cda: Document,massSubCategoryId: ElementId) -> ConceptualSurfaceType
 
   
@@ -43,9 +47,10 @@ class ConceptualSurfaceType(Element,IDisposable):
 
    Returns: Returns ConceptualSurfaceType associated with input id or NULL.
   """
-  pass
- def GetConstructionTypeIds(self):
-  """
+        pass
+
+    def GetConstructionTypeIds(self):
+        """
   GetConstructionTypeIds(self: ConceptualSurfaceType) -> ICollection[ElementId]
 
   
@@ -54,24 +59,32 @@ class ConceptualSurfaceType(Element,IDisposable):
 
     ConceptualSurfaceType.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- DefaultConstructionTypeId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The element id of the user specified ConceptualConstructionType to be used by default on creation for mass faces of this mass subcategory.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    DefaultConstructionTypeId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The element id of the user specified ConceptualConstructionType to be used by default on creation for mass faces of this mass subcategory.
 
 
 
@@ -83,8 +96,10 @@ Set: DefaultConstructionTypeId(self: ConceptualSurfaceType)=value
 
 """
 
- MassSubCategoryId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The mass subcategory id of the ConceptualSurfaceType.
+    MassSubCategoryId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The mass subcategory id of the ConceptualSurfaceType.
 
 
 
@@ -93,5 +108,3 @@ Get: MassSubCategoryId(self: ConceptualSurfaceType) -> ElementId
 
 
 """
-
-

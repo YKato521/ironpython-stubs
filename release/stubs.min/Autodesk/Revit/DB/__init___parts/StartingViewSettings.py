@@ -1,18 +1,21 @@
-class StartingViewSettings(Element,IDisposable):
- """
+class StartingViewSettings(Element, IDisposable):
+    """
  The initial view settings for a document dictate which view will initially be open when this model
 
     is opened.  These settings are available for all Revit project documents.
  """
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- @staticmethod
- def GetStartingViewSettings(doc):
-  """
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    @staticmethod
+    def GetStartingViewSettings(doc):
+        """
   GetStartingViewSettings(doc: Document) -> StartingViewSettings
 
   
@@ -25,9 +28,10 @@ class StartingViewSettings(Element,IDisposable):
 
    Returns: The starting view settings for the document.
   """
-  pass
- def IsAcceptableStartingView(self,viewId):
-  """
+        pass
+
+    def IsAcceptableStartingView(self, viewId):
+        """
   IsAcceptableStartingView(self: StartingViewSettings,viewId: ElementId) -> bool
 
   
@@ -44,24 +48,30 @@ class StartingViewSettings(Element,IDisposable):
 
    Returns: True if the view is acceptable,False if it is not.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- ViewId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates the specific view that will be opened when the model is loaded.  InvalidElementId indicates
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    ViewId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Indicates the specific view that will be opened when the model is loaded.  InvalidElementId indicates
 
    that no view has been specified.  In that case,Revit will open the last views that were open at the
 
@@ -76,5 +86,3 @@ Get: ViewId(self: StartingViewSettings) -> ElementId
 Set: ViewId(self: StartingViewSettings)=value
 
 """
-
-

@@ -8,6 +8,7 @@
 # no functions
 # classes
 
+
 class AreWeUnitTesting(object):
     # no doc
     Value = False
@@ -16,6 +17,7 @@ class AreWeUnitTesting(object):
 
 class BasePoint(object):
     """ BasePoint(id: int, guid: Guid, name: str, description: str, coordinateSystem: str, northSouth: float, eastWest: float, elevation: float, latitude: float, longitude: float, locationInModelX: float, locationInModelY: float, locationInModelZ: float, angleToNorth: float) """
+
     def GetCompoundPlaneAngleLatitude(self):
         """ GetCompoundPlaneAngleLatitude(self: BasePoint) -> Tuple[bool, int, int, int] """
         pass
@@ -28,101 +30,187 @@ class BasePoint(object):
         """ GetCoordinateSystem(self: BasePoint, CoordsysType: CoordinateSystemType) -> CoordinateSystem """
         pass
 
-    @staticmethod # known case of __new__
-    def __new__(self, id, guid, name, description, coordinateSystem, northSouth, eastWest, elevation, latitude, longitude, locationInModelX, locationInModelY, locationInModelZ, angleToNorth):
+    @staticmethod  # known case of __new__
+    def __new__(
+        self,
+        id,
+        guid,
+        name,
+        description,
+        coordinateSystem,
+        northSouth,
+        eastWest,
+        elevation,
+        latitude,
+        longitude,
+        locationInModelX,
+        locationInModelY,
+        locationInModelZ,
+        angleToNorth,
+    ):
         """ __new__(cls: type, id: int, guid: Guid, name: str, description: str, coordinateSystem: str, northSouth: float, eastWest: float, elevation: float, latitude: float, longitude: float, locationInModelX: float, locationInModelY: float, locationInModelZ: float, angleToNorth: float) """
         pass
 
-    AngleToNorth = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: AngleToNorth(self: BasePoint) -> float
-
-Set: AngleToNorth(self: BasePoint) = value
+    AngleToNorth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: AngleToNorth(self: BasePoint) -> float
+
+
+
+Set: AngleToNorth(self: BasePoint) = value
+
 """
 
-    CoordinateSystem = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: CoordinateSystem(self: BasePoint) -> str
-
-Set: CoordinateSystem(self: BasePoint) = value
+    CoordinateSystem = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: CoordinateSystem(self: BasePoint) -> str
+
+
+
+Set: CoordinateSystem(self: BasePoint) = value
+
 """
 
-    Description = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Description(self: BasePoint) -> str
-
-Set: Description(self: BasePoint) = value
+    Description = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Description(self: BasePoint) -> str
+
+
+
+Set: Description(self: BasePoint) = value
+
 """
 
-    EastWest = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: EastWest(self: BasePoint) -> float
-
-Set: EastWest(self: BasePoint) = value
+    EastWest = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: EastWest(self: BasePoint) -> float
+
+
+
+Set: EastWest(self: BasePoint) = value
+
 """
 
-    Elevation = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Elevation(self: BasePoint) -> float
-
-Set: Elevation(self: BasePoint) = value
+    Elevation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Elevation(self: BasePoint) -> float
+
+
+
+Set: Elevation(self: BasePoint) = value
+
 """
 
-    Guid = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Guid(self: BasePoint) -> Guid
-
-Set: Guid(self: BasePoint) = value
+    Guid = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Guid(self: BasePoint) -> Guid
+
+
+
+Set: Guid(self: BasePoint) = value
+
 """
 
-    Id = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Id(self: BasePoint) -> int
-
-Set: Id(self: BasePoint) = value
+    Id = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Id(self: BasePoint) -> int
+
+
+
+Set: Id(self: BasePoint) = value
+
 """
 
-    Latitude = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Latitude(self: BasePoint) -> float
-
-Set: Latitude(self: BasePoint) = value
+    Latitude = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Latitude(self: BasePoint) -> float
+
+
+
+Set: Latitude(self: BasePoint) = value
+
 """
 
-    LocationInModelX = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: LocationInModelX(self: BasePoint) -> float
-
-Set: LocationInModelX(self: BasePoint) = value
+    LocationInModelX = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: LocationInModelX(self: BasePoint) -> float
+
+
+
+Set: LocationInModelX(self: BasePoint) = value
+
 """
 
-    LocationInModelY = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: LocationInModelY(self: BasePoint) -> float
-
-Set: LocationInModelY(self: BasePoint) = value
+    LocationInModelY = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: LocationInModelY(self: BasePoint) -> float
+
+
+
+Set: LocationInModelY(self: BasePoint) = value
+
 """
 
-    LocationInModelZ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: LocationInModelZ(self: BasePoint) -> float
-
-Set: LocationInModelZ(self: BasePoint) = value
+    LocationInModelZ = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: LocationInModelZ(self: BasePoint) -> float
+
+
+
+Set: LocationInModelZ(self: BasePoint) = value
+
 """
 
-    Longitude = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Longitude(self: BasePoint) -> float
-
-Set: Longitude(self: BasePoint) = value
+    Longitude = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Longitude(self: BasePoint) -> float
+
+
+
+Set: Longitude(self: BasePoint) = value
+
 """
 
-    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Name(self: BasePoint) -> str
-
-Set: Name(self: BasePoint) = value
+    Name = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Name(self: BasePoint) -> str
+
+
+
+Set: Name(self: BasePoint) = value
+
 """
 
-    NorthSouth = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: NorthSouth(self: BasePoint) -> float
-
-Set: NorthSouth(self: BasePoint) = value
-"""
+    NorthSouth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: NorthSouth(self: BasePoint) -> float
 
+
+
+Set: NorthSouth(self: BasePoint) = value
+
+"""
 
     CoordinateSystemType = None
 
 
 class BentPlateTestingTool(object):
     """ BentPlateTestingTool() """
+
     def CreateByFaces(self, part1, face1, part2, face2):
         """ CreateByFaces(self: BentPlateTestingTool, part1: Part, face1: IList[Point], part2: Part, face2: IList[Point]) -> BentPlate """
         pass
@@ -130,6 +218,7 @@ class BentPlateTestingTool(object):
 
 class BentPlateTools(object):
     """ BentPlateTools() """
+
     def ExtractBentPlateFromComponent(self, partId):
         """ ExtractBentPlateFromComponent(self: BentPlateTools, partId: Identifier) -> Identifier """
         pass
@@ -155,13 +244,14 @@ class CDelegateSetter(object):
         pass
 
     __all__ = [
-        '__reduce_ex__',
-        'SetInstanceForUnitTesting',
+        "__reduce_ex__",
+        "SetInstanceForUnitTesting",
     ]
 
 
 class CDelegateWrapper(MarshalByRefObject):
     """ CDelegateWrapper(instance: ICDelegate, functionality: WrapperFunctionalityBase) """
+
     def ExplodeBentPlate(self, partId):
         """ ExplodeBentPlate(self: CDelegateWrapper, partId: int) -> int """
         pass
@@ -222,11 +312,15 @@ class CDelegateWrapper(MarshalByRefObject):
         """ ExportConnectGeometryTrees(self: CDelegateWrapper, clientId: dotClientId_t) -> (int, dotClientId_t) """
         pass
 
-    def ExportConnectGeometryTreesByPoints(self, side1Start, side1End, side2Start, side2End, clientId):
+    def ExportConnectGeometryTreesByPoints(
+        self, side1Start, side1End, side2Start, side2End, clientId
+    ):
         """ ExportConnectGeometryTreesByPoints(self: CDelegateWrapper, side1Start: dotPoint_t, side1End: dotPoint_t, side2Start: dotPoint_t, side2End: dotPoint_t, clientId: dotClientId_t) -> (int, dotPoint_t, dotPoint_t, dotPoint_t, dotPoint_t, dotClientId_t) """
         pass
 
-    def ExportConnectGeometryTreesByPointsWithRadius(self, radius, side1Start, side1End, side2Start, side2End, clientId):
+    def ExportConnectGeometryTreesByPointsWithRadius(
+        self, radius, side1Start, side1End, side2Start, side2End, clientId
+    ):
         """ ExportConnectGeometryTreesByPointsWithRadius(self: CDelegateWrapper, radius: float, side1Start: dotPoint_t, side1End: dotPoint_t, side2Start: dotPoint_t, side2End: dotPoint_t, clientId: dotClientId_t) -> (int, dotPoint_t, dotPoint_t, dotPoint_t, dotPoint_t, dotClientId_t) """
         pass
 
@@ -242,7 +336,9 @@ class CDelegateWrapper(MarshalByRefObject):
         """ ExportCreateBentPlateByFaces(self: CDelegateWrapper, part1Id: int, part2Id: int, face1: dotPolygon_t, face2: dotPolygon_t) -> (int, dotPolygon_t, dotPolygon_t) """
         pass
 
-    def ExportCreateBentPlateByFacesAndRadius(self, part1Id, part2Id, face1, face2, radius):
+    def ExportCreateBentPlateByFacesAndRadius(
+        self, part1Id, part2Id, face1, face2, radius
+    ):
         """ ExportCreateBentPlateByFacesAndRadius(self: CDelegateWrapper, part1Id: int, part2Id: int, face1: dotPolygon_t, face2: dotPolygon_t, radius: float) -> (int, dotPolygon_t, dotPolygon_t) """
         pass
 
@@ -382,7 +478,9 @@ class CDelegateWrapper(MarshalByRefObject):
         """ ExportCreateSurfaceByFace(self: CDelegateWrapper, hitPoint: dotPoint_t, faceNormal: dotPoint_t, id: int) -> (int, dotPoint_t, dotPoint_t) """
         pass
 
-    def ExportCreateSurfaceByFaceAndAttrib(self, hitPoint, faceNormal, id, name, surfaceClass):
+    def ExportCreateSurfaceByFaceAndAttrib(
+        self, hitPoint, faceNormal, id, name, surfaceClass
+    ):
         """ ExportCreateSurfaceByFaceAndAttrib(self: CDelegateWrapper, hitPoint: dotPoint_t, faceNormal: dotPoint_t, id: int, name: str, surfaceClass: str) -> (int, dotPoint_t, dotPoint_t) """
         pass
 
@@ -542,7 +640,18 @@ class CDelegateWrapper(MarshalByRefObject):
         """ ExportGetCoordinateSystem(self: CDelegateWrapper, pModelObject: dotModelObject_t, pCoordinateSystem: dotCoordinateSystem_t) -> (int, dotModelObject_t, dotCoordinateSystem_t) """
         pass
 
-    def ExportGetCutSolidSerialized(self, dotSolid1, dotSolid2, serializedFaceList, serializedVectorList, serializedFaceOriginPartIdList, serializedShellIndexList, serializedEdgeVertexList, serializedEdgeTypeList, serializedEdgeShellIndexList):
+    def ExportGetCutSolidSerialized(
+        self,
+        dotSolid1,
+        dotSolid2,
+        serializedFaceList,
+        serializedVectorList,
+        serializedFaceOriginPartIdList,
+        serializedShellIndexList,
+        serializedEdgeVertexList,
+        serializedEdgeTypeList,
+        serializedEdgeShellIndexList,
+    ):
         """ ExportGetCutSolidSerialized(self: CDelegateWrapper, dotSolid1: dotSolid_t, dotSolid2: dotSolid_t, serializedFaceList: List[List[List[dotPoint_t]]], serializedVectorList: List[dotPoint_t], serializedFaceOriginPartIdList: List[int], serializedShellIndexList: List[int], serializedEdgeVertexList: List[dotPoint_t], serializedEdgeTypeList: List[int], serializedEdgeShellIndexList: List[int]) -> (int, dotSolid_t, dotSolid_t, List[List[List[dotPoint_t]]], List[dotPoint_t], List[int], List[int], List[dotPoint_t], List[int], List[int]) """
         pass
 
@@ -634,7 +743,9 @@ class CDelegateWrapper(MarshalByRefObject):
         """ ExportGetProperties(self: CDelegateWrapper, pProperties: dotGetProperties_t) -> (int, dotGetProperties_t) """
         pass
 
-    def ExportGetReferenceModelObjectByExternalGuid(self, referenceModelId, externalGuid):
+    def ExportGetReferenceModelObjectByExternalGuid(
+        self, referenceModelId, externalGuid
+    ):
         """ ExportGetReferenceModelObjectByExternalGuid(self: CDelegateWrapper, referenceModelId: int, externalGuid: dotIdentifier_t) -> (int, dotIdentifier_t) """
         pass
 
@@ -666,7 +777,14 @@ class CDelegateWrapper(MarshalByRefObject):
         """ ExportGetSolidMerged(self: CDelegateWrapper, dotSolid: dotSolid_t, polymeshes: dotPolymesh_t) -> (int, dotSolid_t, dotPolymesh_t) """
         pass
 
-    def ExportGetSolidSerialized(self, dotSolid, serializedFaceList, serializedVectorList, serializedShellIndexList, serializedFaceOriginIdList):
+    def ExportGetSolidSerialized(
+        self,
+        dotSolid,
+        serializedFaceList,
+        serializedVectorList,
+        serializedShellIndexList,
+        serializedFaceOriginIdList,
+    ):
         """ ExportGetSolidSerialized(self: CDelegateWrapper, dotSolid: dotSolid_t, serializedFaceList: List[List[List[dotPoint_t]]], serializedVectorList: List[dotPoint_t], serializedShellIndexList: List[int], serializedFaceOriginIdList: List[int]) -> (int, dotSolid_t, List[List[List[dotPoint_t]]], List[dotPoint_t], List[int], List[int]) """
         pass
 
@@ -766,7 +884,9 @@ class CDelegateWrapper(MarshalByRefObject):
         """ ExportModifyControlPlane(self: CDelegateWrapper, pControlObject: dotControlObject_t) -> (int, dotControlObject_t) """
         pass
 
-    def ExportModifyCylindricalSurfaceNode(self, geometryNodeId, surfacePoints, clientId):
+    def ExportModifyCylindricalSurfaceNode(
+        self, geometryNodeId, surfacePoints, clientId
+    ):
         """ ExportModifyCylindricalSurfaceNode(self: CDelegateWrapper, geometryNodeId: int, surfacePoints: dotContour_t, clientId: dotClientId_t) -> (int, dotContour_t, dotClientId_t) """
         pass
 
@@ -778,11 +898,15 @@ class CDelegateWrapper(MarshalByRefObject):
         """ ExportModifyFittingOrCutPlane(self: CDelegateWrapper, pFittingOrCutPlane: dotFittingOrCutPlane_t) -> (int, dotFittingOrCutPlane_t) """
         pass
 
-    def ExportModifyGeometryTreeCylindricalNodeCurveType(self, geometryNodeId, newCurveType, clientId):
+    def ExportModifyGeometryTreeCylindricalNodeCurveType(
+        self, geometryNodeId, newCurveType, clientId
+    ):
         """ ExportModifyGeometryTreeCylindricalNodeCurveType(self: CDelegateWrapper, geometryNodeId: int, newCurveType: int, clientId: dotClientId_t) -> (int, dotClientId_t) """
         pass
 
-    def ExportModifyGeometryTreeCylindricalNodeRadius(self, geometryNodeId, radius, clientId):
+    def ExportModifyGeometryTreeCylindricalNodeRadius(
+        self, geometryNodeId, radius, clientId
+    ):
         """ ExportModifyGeometryTreeCylindricalNodeRadius(self: CDelegateWrapper, geometryNodeId: int, radius: float, clientId: dotClientId_t) -> (int, dotClientId_t) """
         pass
 
@@ -1246,7 +1370,7 @@ class CDelegateWrapper(MarshalByRefObject):
         """ IsMacroRunning(self: CDelegateWrapper) -> int """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, instance, functionality):
         """ __new__(cls: type, instance: ICDelegate, functionality: WrapperFunctionalityBase) """
         pass
@@ -1257,6 +1381,7 @@ class CDelegateWrapper(MarshalByRefObject):
 
 class ChangeManager(object):
     """ ChangeManager() """
+
     def AllowNumbering(self, NumberingFlag):
         """ AllowNumbering(self: ChangeManager, NumberingFlag: bool) -> bool """
         pass
@@ -1268,6 +1393,7 @@ class ChangeManager(object):
 
 class ConversionLink(object):
     """ ConversionLink(partId: int) """
+
     def Delete(self):
         """ Delete(self: ConversionLink) -> bool """
         pass
@@ -1284,40 +1410,63 @@ class ConversionLink(object):
         """ Select(self: ConversionLink) -> bool """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, partId):
         """ __new__(cls: type, partId: int) """
         pass
 
-    ApprovalStatus = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: ApprovalStatus(self: ConversionLink) -> ApprovalStatusEnum
-
-Set: ApprovalStatus(self: ConversionLink) = value
+    ApprovalStatus = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: ApprovalStatus(self: ConversionLink) -> ApprovalStatusEnum
+
+
+
+Set: ApprovalStatus(self: ConversionLink) = value
+
 """
 
-    ConversionStatus = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: ConversionStatus(self: ConversionLink) -> ConversionStatusEnum
-
-Set: ConversionStatus(self: ConversionLink) = value
+    ConversionStatus = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: ConversionStatus(self: ConversionLink) -> ConversionStatusEnum
+
+
+
+Set: ConversionStatus(self: ConversionLink) = value
+
 """
 
-    PartId = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: PartId(self: ConversionLink) -> int
-
+    PartId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: PartId(self: ConversionLink) -> int
+
+
+
 """
 
-    RefModelId = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: RefModelId(self: ConversionLink) -> int
-
-Set: RefModelId(self: ConversionLink) = value
+    RefModelId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: RefModelId(self: ConversionLink) -> int
+
+
+
+Set: RefModelId(self: ConversionLink) = value
+
 """
 
-    RefModelObjectId = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: RefModelObjectId(self: ConversionLink) -> int
-
-Set: RefModelObjectId(self: ConversionLink) = value
-"""
+    RefModelObjectId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: RefModelObjectId(self: ConversionLink) -> int
 
+
+
+Set: RefModelObjectId(self: ConversionLink) = value
+
+"""
 
     ApprovalStatusEnum = None
     ConversionStatusEnum = None
@@ -1325,6 +1474,7 @@ Set: RefModelObjectId(self: ConversionLink) = value
 
 class DelegateFake(object):
     """ DelegateFake() """
+
     def EditMacro(self, FileName):
         """ EditMacro(self: DelegateFake, FileName: str) -> int """
         pass
@@ -1393,11 +1543,15 @@ class DelegateFake(object):
         """ ExportConnectGeometryTrees(self: DelegateFake, clientId: dotClientId_t) -> (int, dotClientId_t) """
         pass
 
-    def ExportConnectGeometryTreesByPoints(self, side1Start, side1End, side2Start, side2End, clientId):
+    def ExportConnectGeometryTreesByPoints(
+        self, side1Start, side1End, side2Start, side2End, clientId
+    ):
         """ ExportConnectGeometryTreesByPoints(self: DelegateFake, side1Start: dotPoint_t, side1End: dotPoint_t, side2Start: dotPoint_t, side2End: dotPoint_t, clientId: dotClientId_t) -> (int, dotPoint_t, dotPoint_t, dotPoint_t, dotPoint_t, dotClientId_t) """
         pass
 
-    def ExportConnectGeometryTreesByPointsWithRadius(self, radius, side1Start, side1End, side2Start, side2End, clientId):
+    def ExportConnectGeometryTreesByPointsWithRadius(
+        self, radius, side1Start, side1End, side2Start, side2End, clientId
+    ):
         """ ExportConnectGeometryTreesByPointsWithRadius(self: DelegateFake, radius: float, side1Start: dotPoint_t, side1End: dotPoint_t, side2Start: dotPoint_t, side2End: dotPoint_t, clientId: dotClientId_t) -> (int, dotPoint_t, dotPoint_t, dotPoint_t, dotPoint_t, dotClientId_t) """
         pass
 
@@ -1413,7 +1567,9 @@ class DelegateFake(object):
         """ ExportCreateBentPlateByFaces(self: DelegateFake, part1Id: int, part2Id: int, face1: dotPolygon_t, face2: dotPolygon_t) -> (int, dotPolygon_t, dotPolygon_t) """
         pass
 
-    def ExportCreateBentPlateByFacesAndRadius(self, part1Id, part2Id, face1, face2, radius):
+    def ExportCreateBentPlateByFacesAndRadius(
+        self, part1Id, part2Id, face1, face2, radius
+    ):
         """ ExportCreateBentPlateByFacesAndRadius(self: DelegateFake, part1Id: int, part2Id: int, face1: dotPolygon_t, face2: dotPolygon_t, radius: float) -> (int, dotPolygon_t, dotPolygon_t) """
         pass
 
@@ -1553,7 +1709,9 @@ class DelegateFake(object):
         """ ExportCreateSurfaceByFace(self: DelegateFake, hitPoint: dotPoint_t, faceNormal: dotPoint_t, id: int) -> (int, dotPoint_t, dotPoint_t) """
         pass
 
-    def ExportCreateSurfaceByFaceAndAttrib(self, hitPoint, faceNormal, id, name, surfaceClass):
+    def ExportCreateSurfaceByFaceAndAttrib(
+        self, hitPoint, faceNormal, id, name, surfaceClass
+    ):
         """ ExportCreateSurfaceByFaceAndAttrib(self: DelegateFake, hitPoint: dotPoint_t, faceNormal: dotPoint_t, id: int, name: str, surfaceClass: str) -> (int, dotPoint_t, dotPoint_t) """
         pass
 
@@ -1717,7 +1875,18 @@ class DelegateFake(object):
         """ ExportGetCoordinateSystemAccordingToBasePoint(self: DelegateFake, id: int, pCoordSys: dotCoordinateSystem_t) -> (int, dotCoordinateSystem_t) """
         pass
 
-    def ExportGetCutSolidSerialized(self, dotSolid1, dotSolid2, serializedFaceList, serializedVectorList, serializedFaceOriginPartIdList, serializedShellIndexList, serializedEdgeVertexList, serializedEdgeTypeList, serializedEdgeShellIndexList):
+    def ExportGetCutSolidSerialized(
+        self,
+        dotSolid1,
+        dotSolid2,
+        serializedFaceList,
+        serializedVectorList,
+        serializedFaceOriginPartIdList,
+        serializedShellIndexList,
+        serializedEdgeVertexList,
+        serializedEdgeTypeList,
+        serializedEdgeShellIndexList,
+    ):
         """ ExportGetCutSolidSerialized(self: DelegateFake, dotSolid1: dotSolid_t, dotSolid2: dotSolid_t, serializedFaceList: List[List[List[dotPoint_t]]], serializedVectorList: List[dotPoint_t], serializedFaceOriginPartIdList: List[int], serializedShellIndexList: List[int], serializedEdgeVertexList: List[dotPoint_t], serializedEdgeTypeList: List[int], serializedEdgeShellIndexList: List[int]) -> (int, dotSolid_t, dotSolid_t, List[List[List[dotPoint_t]]], List[dotPoint_t], List[int], List[int], List[dotPoint_t], List[int], List[int]) """
         pass
 
@@ -1809,7 +1978,9 @@ class DelegateFake(object):
         """ ExportGetProperties(self: DelegateFake, pProperties: dotGetProperties_t) -> (int, dotGetProperties_t) """
         pass
 
-    def ExportGetReferenceModelObjectByExternalGuid(self, referenceModelId, externalGuid):
+    def ExportGetReferenceModelObjectByExternalGuid(
+        self, referenceModelId, externalGuid
+    ):
         """ ExportGetReferenceModelObjectByExternalGuid(self: DelegateFake, referenceModelId: int, externalGuid: dotIdentifier_t) -> (int, dotIdentifier_t) """
         pass
 
@@ -1841,7 +2012,14 @@ class DelegateFake(object):
         """ ExportGetSolidMerged(self: DelegateFake, dotSolid: dotSolid_t, polymeshes: dotPolymesh_t) -> (int, dotSolid_t, dotPolymesh_t) """
         pass
 
-    def ExportGetSolidSerialized(self, dotSolid, serializedFaceList, serializedVectorList, serializedShellIndexList, serializedFaceOriginIdList):
+    def ExportGetSolidSerialized(
+        self,
+        dotSolid,
+        serializedFaceList,
+        serializedVectorList,
+        serializedShellIndexList,
+        serializedFaceOriginIdList,
+    ):
         """ ExportGetSolidSerialized(self: DelegateFake, dotSolid: dotSolid_t, serializedFaceList: List[List[List[dotPoint_t]]], serializedVectorList: List[dotPoint_t], serializedShellIndexList: List[int], serializedFaceOriginIdList: List[int]) -> (int, dotSolid_t, List[List[List[dotPoint_t]]], List[dotPoint_t], List[int], List[int]) """
         pass
 
@@ -1941,7 +2119,9 @@ class DelegateFake(object):
         """ ExportModifyControlPlane(self: DelegateFake, pControlObject: dotControlObject_t) -> (int, dotControlObject_t) """
         pass
 
-    def ExportModifyCylindricalSurfaceNode(self, geometryNodeId, surfacePoints, clientId):
+    def ExportModifyCylindricalSurfaceNode(
+        self, geometryNodeId, surfacePoints, clientId
+    ):
         """ ExportModifyCylindricalSurfaceNode(self: DelegateFake, geometryNodeId: int, surfacePoints: dotContour_t, clientId: dotClientId_t) -> (int, dotContour_t, dotClientId_t) """
         pass
 
@@ -1953,11 +2133,15 @@ class DelegateFake(object):
         """ ExportModifyFittingOrCutPlane(self: DelegateFake, pFittingOrCutPlane: dotFittingOrCutPlane_t) -> (int, dotFittingOrCutPlane_t) """
         pass
 
-    def ExportModifyGeometryTreeCylindricalNodeCurveType(self, geometryNodeId, newCurveType, clientId):
+    def ExportModifyGeometryTreeCylindricalNodeCurveType(
+        self, geometryNodeId, newCurveType, clientId
+    ):
         """ ExportModifyGeometryTreeCylindricalNodeCurveType(self: DelegateFake, geometryNodeId: int, newCurveType: int, clientId: dotClientId_t) -> (int, dotClientId_t) """
         pass
 
-    def ExportModifyGeometryTreeCylindricalNodeRadius(self, geometryNodeId, radius, clientId):
+    def ExportModifyGeometryTreeCylindricalNodeRadius(
+        self, geometryNodeId, radius, clientId
+    ):
         """ ExportModifyGeometryTreeCylindricalNodeRadius(self: DelegateFake, geometryNodeId: int, radius: float, clientId: dotClientId_t) -> (int, dotClientId_t) """
         pass
 
@@ -2553,15 +2737,18 @@ class dotBoltGroup_t(object):
 
 class dotBoltPolygon_t(object):
     """ dotBoltPolygon_t(Size: int) """
+
     def GetPoints(self):
         """ GetPoints(self: dotBoltPolygon_t) -> ArrayList """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, Size):
         """
-        __new__[dotBoltPolygon_t]() -> dotBoltPolygon_t
-        
+        __new__[dotBoltPolygon_t]() -> dotBoltPolygon_t
+
+        
+
         __new__(cls: type, Size: int)
         """
         pass
@@ -2672,11 +2859,14 @@ class dotContourPoint_t(object):
 
 class dotContour_t(object):
     """ dotContour_t(Size: int) """
-    @staticmethod # known case of __new__
+
+    @staticmethod  # known case of __new__
     def __new__(self, Size):
         """
-        __new__[dotContour_t]() -> dotContour_t
-        
+        __new__[dotContour_t]() -> dotContour_t
+
+        
+
         __new__(cls: type, Size: int)
         """
         pass
@@ -2992,6 +3182,7 @@ class dotIFC2X3_Organization_t(object):
 
 class dotIFC2X3_OwnerHistoryChangeAction_t(Enum):
     """ enum dotIFC2X3_OwnerHistoryChangeAction_t, values: CHANGEACTION_ADDED (2), CHANGEACTION_DELETED (3), CHANGEACTION_MODIFIED (1), CHANGEACTION_NOCHANGE (0) """
+
     CHANGEACTION_ADDED = None
     CHANGEACTION_DELETED = None
     CHANGEACTION_MODIFIED = None
@@ -3001,6 +3192,7 @@ class dotIFC2X3_OwnerHistoryChangeAction_t(Enum):
 
 class dotIFC2X3_OwnerHistoryState_t(Enum):
     """ enum dotIFC2X3_OwnerHistoryState_t, values: STATE_LOCKED (3), STATE_READONLY (2), STATE_READONLYLOCKED (5), STATE_READWRITE (1), STATE_READWRITELOCKED (4), STATE_UNDEFINED (0) """
+
     STATE_LOCKED = None
     STATE_READONLY = None
     STATE_READONLYLOCKED = None
@@ -3063,11 +3255,14 @@ class dotIFC2X3_Product_t(object):
 
 class dotIntersectionPoints_t(object):
     """ dotIntersectionPoints_t(Size: int) """
-    @staticmethod # known case of __new__
+
+    @staticmethod  # known case of __new__
     def __new__(self, Size):
         """
-        __new__[dotIntersectionPoints_t]() -> dotIntersectionPoints_t
-        
+        __new__[dotIntersectionPoints_t]() -> dotIntersectionPoints_t
+
+        
+
         __new__(cls: type, Size: int)
         """
         pass
@@ -3083,11 +3278,14 @@ class dotIntersectionPoints_t(object):
 
 class dotIntersectionSolid_t(object):
     """ dotIntersectionSolid_t(Size: int) """
-    @staticmethod # known case of __new__
+
+    @staticmethod  # known case of __new__
     def __new__(self, Size):
         """
-        __new__[dotIntersectionSolid_t]() -> dotIntersectionSolid_t
-        
+        __new__[dotIntersectionSolid_t]() -> dotIntersectionSolid_t
+
+        
+
         __new__(cls: type, Size: int)
         """
         pass
@@ -3192,6 +3390,7 @@ class dotModelCommit_t(object):
 
 class dotModelInfoModeEnum(Enum):
     """ enum dotModelInfoModeEnum, values: CloseModel (2), GetModelInfo (0), OpenModel (1) """
+
     CloseModel = None
     GetModelInfo = None
     OpenModel = None
@@ -3265,6 +3464,7 @@ class dotModStamp_t(object):
 
 class dotnetDoubleList_t(object):
     """ dotnetDoubleList_t(size: int) """
+
     def FromStruct(self, doubleList):
         """ FromStruct(self: dotnetDoubleList_t, doubleList: DoubleList) """
         pass
@@ -3273,11 +3473,13 @@ class dotnetDoubleList_t(object):
         """ ToStruct(self: dotnetDoubleList_t, doubleList: DoubleList) """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, size):
         """
-        __new__[dotnetDoubleList_t]() -> dotnetDoubleList_t
-        
+        __new__[dotnetDoubleList_t]() -> dotnetDoubleList_t
+
+        
+
         __new__(cls: type, size: int)
         """
         pass
@@ -3291,6 +3493,7 @@ class dotnetDoubleList_t(object):
 
 class dotnetEdgeList_t(object):
     """ dotnetEdgeList_t(Size: int) """
+
     def FromStruct(self, Edges):
         """ FromStruct(self: dotnetEdgeList_t, Edges: IList[IndirectPolymeshEdge]) """
         pass
@@ -3299,11 +3502,13 @@ class dotnetEdgeList_t(object):
         """ ToStruct(self: dotnetEdgeList_t, Edges: IList[IndirectPolymeshEdge]) """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, Size):
         """
-        __new__[dotnetEdgeList_t]() -> dotnetEdgeList_t
-        
+        __new__[dotnetEdgeList_t]() -> dotnetEdgeList_t
+
+        
+
         __new__(cls: type, Size: int)
         """
         pass
@@ -3317,6 +3522,7 @@ class dotnetEdgeList_t(object):
 
 class dotnetIntList_t(object):
     """ dotnetIntList_t(Size: int) """
+
     def FromStruct(self, IntList):
         """ FromStruct(self: dotnetIntList_t, IntList: IntList) """
         pass
@@ -3325,11 +3531,13 @@ class dotnetIntList_t(object):
         """ ToStruct(self: dotnetIntList_t, IntList: IntList) """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, Size):
         """
-        __new__[dotnetIntList_t]() -> dotnetIntList_t
-        
+        __new__[dotnetIntList_t]() -> dotnetIntList_t
+
+        
+
         __new__(cls: type, Size: int)
         """
         pass
@@ -3343,6 +3551,7 @@ class dotnetIntList_t(object):
 
 class DotNetModelProxy(object):
     """ DotNetModelProxy() """
+
     @staticmethod
     def Run(Param):
         """ Run(Param: str) -> int """
@@ -3351,6 +3560,7 @@ class DotNetModelProxy(object):
 
 class dotnetPointList_t(object):
     """ dotnetPointList_t(Size: int) """
+
     def FromStruct(self, PointList):
         """ FromStruct(self: dotnetPointList_t, PointList: PointList) """
         pass
@@ -3359,11 +3569,13 @@ class dotnetPointList_t(object):
         """ ToStruct(self: dotnetPointList_t, PointList: PointList) """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, Size):
         """
-        __new__[dotnetPointList_t]() -> dotnetPointList_t
-        
+        __new__[dotnetPointList_t]() -> dotnetPointList_t
+
+        
+
         __new__(cls: type, Size: int)
         """
         pass
@@ -3396,6 +3608,7 @@ class dotNumberingSeries_t(object):
 
 class dotObjectOperationsEnum(Enum):
     """ enum dotObjectOperationsEnum, values: DOT_CREATE_OBJECT (0), DOT_DELETE_OBJECT (3), DOT_MODIFY_OBJECT (1), DOT_SELECT_OBJECT (2) """
+
     DOT_CREATE_OBJECT = None
     DOT_DELETE_OBJECT = None
     DOT_MODIFY_OBJECT = None
@@ -3478,15 +3691,18 @@ class dotPlane_t(object):
 
 class dotPolygon_t(object):
     """ dotPolygon_t(Size: int) """
+
     def GetPoints(self):
         """ GetPoints(self: dotPolygon_t) -> ArrayList """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, Size):
         """
-        __new__[dotPolygon_t]() -> dotPolygon_t
-        
+        __new__[dotPolygon_t]() -> dotPolygon_t
+
+        
+
         __new__(cls: type, Size: int)
         """
         pass
@@ -3900,11 +4116,14 @@ class dotSingleRebar_t(object):
 
 class dotSolid_t(object):
     """ dotSolid_t(Size: int) """
-    @staticmethod # known case of __new__
+
+    @staticmethod  # known case of __new__
     def __new__(self, Size):
         """
-        __new__[dotSolid_t]() -> dotSolid_t
-        
+        __new__[dotSolid_t]() -> dotSolid_t
+
+        
+
         __new__(cls: type, Size: int)
         """
         pass
@@ -4029,7 +4248,8 @@ class dotTemporaryState(object):
     @staticmethod
     def SetColor(*__args):
         """
-        SetColor(ModelObjects: ArrayList, Color: Color) -> bool
+        SetColor(ModelObjects: ArrayList, Color: Color) -> bool
+
         SetColor(MO: ModelObject, Color: Color) -> bool
         """
         pass
@@ -4042,11 +4262,16 @@ class dotTemporaryState(object):
     @staticmethod
     def SetState(*__args):
         """
-        SetState(ModelObjects: ArrayList, State: dotTemporaryStatesEnum, Transparency: dotTemporaryTransparenciesEnum) -> bool
-        SetState(ModelObjects: ArrayList, State: dotTemporaryStatesEnum) -> bool
-        SetState(Color: Color) -> bool
-        SetState(State: dotTemporaryStatesEnum, Transparency: dotTemporaryTransparenciesEnum) -> bool
-        SetState(State: dotTemporaryStatesEnum) -> bool
+        SetState(ModelObjects: ArrayList, State: dotTemporaryStatesEnum, Transparency: dotTemporaryTransparenciesEnum) -> bool
+
+        SetState(ModelObjects: ArrayList, State: dotTemporaryStatesEnum) -> bool
+
+        SetState(Color: Color) -> bool
+
+        SetState(State: dotTemporaryStatesEnum, Transparency: dotTemporaryTransparenciesEnum) -> bool
+
+        SetState(State: dotTemporaryStatesEnum) -> bool
+
         SetState(MO: ModelObject, State: dotTemporaryStatesEnum) -> bool
         """
         pass
@@ -4054,26 +4279,28 @@ class dotTemporaryState(object):
     @staticmethod
     def SetState_FAST(ModelObjects, State, Transparency=None):
         """
-        SetState_FAST(ModelObjects: ArrayList, State: dotTemporaryStatesEnum) -> bool
+        SetState_FAST(ModelObjects: ArrayList, State: dotTemporaryStatesEnum) -> bool
+
         SetState_FAST(ModelObjects: ArrayList, State: dotTemporaryStatesEnum, Transparency: dotTemporaryTransparenciesEnum) -> bool
         """
         pass
 
     OBJECT_MAX_SIZE = 5000
     __all__ = [
-        '__reduce_ex__',
-        'ClearAllStates',
-        'ClearState',
-        'OBJECT_MAX_SIZE',
-        'SetColor',
-        'SetColor_FAST',
-        'SetState',
-        'SetState_FAST',
+        "__reduce_ex__",
+        "ClearAllStates",
+        "ClearState",
+        "OBJECT_MAX_SIZE",
+        "SetColor",
+        "SetColor_FAST",
+        "SetState",
+        "SetState_FAST",
     ]
 
 
 class dotTemporaryStatesEnum(Enum):
     """ enum dotTemporaryStatesEnum, values: DOT_TEMPORARY_STATE_ACCEPTED (8), DOT_TEMPORARY_STATE_ACTIVE (6), DOT_TEMPORARY_STATE_DELETED (3), DOT_TEMPORARY_STATE_DM_ONGOING (4), DOT_TEMPORARY_STATE_MODIFIED (2), DOT_TEMPORARY_STATE_NEW (1), DOT_TEMPORARY_STATE_ORIGINAL (7), DOT_TEMPORARY_STATE_REJECTED (9), DOT_TEMPORARY_STATE_UNCHANGED (5), DOT_TEMPORARY_STATE_UNKNOWN (0), DOT_TEMPORARY_STATE_USE_EXISTING_REPRESENTATION (10) """
+
     DOT_TEMPORARY_STATE_ACCEPTED = None
     DOT_TEMPORARY_STATE_ACTIVE = None
     DOT_TEMPORARY_STATE_DELETED = None
@@ -4090,6 +4317,7 @@ class dotTemporaryStatesEnum(Enum):
 
 class dotTemporaryTransparenciesEnum(Enum):
     """ enum dotTemporaryTransparenciesEnum, values: DOT_TEMPORARY_TRANSPARENCY_HIDDEN (0), DOT_TEMPORARY_TRANSPARENCY_SEMITRANSPARENT (3), DOT_TEMPORARY_TRANSPARENCY_SEMIVISIBLE (5), DOT_TEMPORARY_TRANSPARENCY_TRANSPARENT (1), DOT_TEMPORARY_TRANSPARENCY_VISIBLE (10) """
+
     DOT_TEMPORARY_TRANSPARENCY_HIDDEN = None
     DOT_TEMPORARY_TRANSPARENCY_SEMITRANSPARENT = None
     DOT_TEMPORARY_TRANSPARENCY_SEMIVISIBLE = None
@@ -4100,11 +4328,14 @@ class dotTemporaryTransparenciesEnum(Enum):
 
 class dotTransformationPlane_t(object):
     """ dotTransformationPlane_t(Size: int) """
-    @staticmethod # known case of __new__
+
+    @staticmethod  # known case of __new__
     def __new__(self, Size):
         """
-        __new__[dotTransformationPlane_t]() -> dotTransformationPlane_t
-        
+        __new__[dotTransformationPlane_t]() -> dotTransformationPlane_t
+
+        
+
         __new__(cls: type, Size: int)
         """
         pass
@@ -4125,16 +4356,19 @@ class dotUIModelObjectSelector_t(object):
 
 class dotUIPicker_t(object):
     """ dotUIPicker_t(Size: int) """
+
     @staticmethod
     def Construct():
         """ Construct() -> dotUIPicker_t """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, Size):
         """
-        __new__[dotUIPicker_t]() -> dotUIPicker_t
-        
+        __new__[dotUIPicker_t]() -> dotUIPicker_t
+
+        
+
         __new__(cls: type, Size: int)
         """
         pass
@@ -4223,15 +4457,18 @@ class dotView_t(object):
 
 class dotWeldGeometry_t(object):
     """ dotWeldGeometry_t(weldId: Identifier, position: int, maxPolygonPointsPerRequest: int) """
+
     def CopyAndInitialize(self):
         """ CopyAndInitialize(self: dotWeldGeometry_t) -> dotWeldGeometry_t """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, weldId, position, maxPolygonPointsPerRequest):
         """
-        __new__[dotWeldGeometry_t]() -> dotWeldGeometry_t
-        
+        __new__[dotWeldGeometry_t]() -> dotWeldGeometry_t
+
+        
+
         __new__(cls: type, weldId: Identifier, position: int, maxPolygonPointsPerRequest: int)
         """
         pass
@@ -4314,9 +4551,11 @@ class dotWire_t(object):
 
 class DoubleList(CollectionBase):
     """
-    DoubleList()
+    DoubleList()
+
     DoubleList(doubles: IEnumerable)
     """
+
     def Add(self, value):
         """ Add(self: DoubleList, value: float) -> int """
         pass
@@ -4331,8 +4570,10 @@ class DoubleList(CollectionBase):
 
     def IndexOf(self, value, startIndex=None, count=None):
         """
-        IndexOf(self: DoubleList, value: float, startIndex: int, count: int) -> int
-        IndexOf(self: DoubleList, value: float, startIndex: int) -> int
+        IndexOf(self: DoubleList, value: float, startIndex: int, count: int) -> int
+
+        IndexOf(self: DoubleList, value: float, startIndex: int) -> int
+
         IndexOf(self: DoubleList, value: float) -> int
         """
         pass
@@ -4347,8 +4588,10 @@ class DoubleList(CollectionBase):
 
     def LastIndexOf(self, value, startIndex=None, count=None):
         """
-        LastIndexOf(self: DoubleList, value: float, startIndex: int, count: int) -> int
-        LastIndexOf(self: DoubleList, value: float, startIndex: int) -> int
+        LastIndexOf(self: DoubleList, value: float, startIndex: int, count: int) -> int
+
+        LastIndexOf(self: DoubleList, value: float, startIndex: int) -> int
+
         LastIndexOf(self: DoubleList, value: float) -> int
         """
         pass
@@ -4365,28 +4608,37 @@ class DoubleList(CollectionBase):
         """ ToArray(self: DoubleList) -> Array[float] """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, doubles=None):
         """
-        __new__(cls: type)
+        __new__(cls: type)
+
         __new__(cls: type, doubles: IEnumerable)
         """
         pass
 
-    InnerList = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Gets an System.Collections.ArrayList containing the list of elements in the System.Collections.CollectionBase instance.
-
+    InnerList = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Gets an System.Collections.ArrayList containing the list of elements in the System.Collections.CollectionBase instance.
+
+
+
 """
 
-    List = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Gets an System.Collections.IList containing the list of elements in the System.Collections.CollectionBase instance.
-
-"""
+    List = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Gets an System.Collections.IList containing the list of elements in the System.Collections.CollectionBase instance.
 
+
+
+"""
 
 
 class EventHandlerWrapper(MarshalByRefObject):
     """ EventHandlerWrapper(Instance: IEventHandler, Functionality: WrapperFunctionalityBase) """
+
     def AddListener(self, EventListener):
         """ AddListener(self: EventHandlerWrapper, EventListener: Events) """
         pass
@@ -4395,7 +4647,7 @@ class EventHandlerWrapper(MarshalByRefObject):
         """ RemoveListener(self: EventHandlerWrapper, EventListener: Events) """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, Instance, Functionality):
         """ __new__(cls: type, Instance: IEventHandler, Functionality: WrapperFunctionalityBase) """
         pass
@@ -4413,14 +4665,15 @@ class GeometryImporter(object):
 
     GeometryType = None
     __all__ = [
-        '__reduce_ex__',
-        'GeometryType',
-        'ImportGeometry',
+        "__reduce_ex__",
+        "GeometryType",
+        "ImportGeometry",
     ]
 
 
 class GeometryTree(object):
     """ GeometryTree(node: IGeometryNode) """
+
     def AddBranch(self, branchSource, branchRoot):
         """ AddBranch(self: GeometryTree, branchSource: GeometryTree, branchRoot: IGeometryNode) """
         pass
@@ -4493,27 +4746,39 @@ class GeometryTree(object):
         """ Split(self: GeometryTree, nodeIndex: int) -> IList[GeometryTree] """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, node):
         """ __new__(cls: type, node: IGeometryNode) """
         pass
 
-    Edges = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Edges(self: GeometryTree) -> Dictionary[int, HashSet[int]]
-
+    Edges = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Edges(self: GeometryTree) -> Dictionary[int, HashSet[int]]
+
+
+
 """
 
-    NodesById = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: NodesById(self: GeometryTree) -> Dictionary[int, IGeometryNode]
-
+    NodesById = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: NodesById(self: GeometryTree) -> Dictionary[int, IGeometryNode]
+
+
+
 """
 
-    Root = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Root(self: GeometryTree) -> IGeometryNode
-
-Set: Root(self: GeometryTree) = value
-"""
+    Root = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Root(self: GeometryTree) -> IGeometryNode
 
+
+
+Set: Root(self: GeometryTree) = value
+
+"""
 
     InvalidGeometryNodeId = -1
 
@@ -4580,11 +4845,15 @@ class ICDelegate:
         """ ExportConnectGeometryTrees(self: ICDelegate, clientId: dotClientId_t) -> (int, dotClientId_t) """
         pass
 
-    def ExportConnectGeometryTreesByPoints(self, side1Start, side1End, side2Start, side2End, clientId):
+    def ExportConnectGeometryTreesByPoints(
+        self, side1Start, side1End, side2Start, side2End, clientId
+    ):
         """ ExportConnectGeometryTreesByPoints(self: ICDelegate, side1Start: dotPoint_t, side1End: dotPoint_t, side2Start: dotPoint_t, side2End: dotPoint_t, clientId: dotClientId_t) -> (int, dotPoint_t, dotPoint_t, dotPoint_t, dotPoint_t, dotClientId_t) """
         pass
 
-    def ExportConnectGeometryTreesByPointsWithRadius(self, radius, side1Start, side1End, side2Start, side2End, clientId):
+    def ExportConnectGeometryTreesByPointsWithRadius(
+        self, radius, side1Start, side1End, side2Start, side2End, clientId
+    ):
         """ ExportConnectGeometryTreesByPointsWithRadius(self: ICDelegate, radius: float, side1Start: dotPoint_t, side1End: dotPoint_t, side2Start: dotPoint_t, side2End: dotPoint_t, clientId: dotClientId_t) -> (int, dotPoint_t, dotPoint_t, dotPoint_t, dotPoint_t, dotClientId_t) """
         pass
 
@@ -4600,7 +4869,9 @@ class ICDelegate:
         """ ExportCreateBentPlateByFaces(self: ICDelegate, part1Id: int, part2Id: int, face1: dotPolygon_t, face2: dotPolygon_t) -> (int, dotPolygon_t, dotPolygon_t) """
         pass
 
-    def ExportCreateBentPlateByFacesAndRadius(self, part1Id, part2Id, face1, face2, radius):
+    def ExportCreateBentPlateByFacesAndRadius(
+        self, part1Id, part2Id, face1, face2, radius
+    ):
         """ ExportCreateBentPlateByFacesAndRadius(self: ICDelegate, part1Id: int, part2Id: int, face1: dotPolygon_t, face2: dotPolygon_t, radius: float) -> (int, dotPolygon_t, dotPolygon_t) """
         pass
 
@@ -4740,7 +5011,9 @@ class ICDelegate:
         """ ExportCreateSurfaceByFace(self: ICDelegate, hitPoint: dotPoint_t, faceNormal: dotPoint_t, id: int) -> (int, dotPoint_t, dotPoint_t) """
         pass
 
-    def ExportCreateSurfaceByFaceAndAttrib(self, hitPoint, faceNormal, id, name, surfaceClass):
+    def ExportCreateSurfaceByFaceAndAttrib(
+        self, hitPoint, faceNormal, id, name, surfaceClass
+    ):
         """ ExportCreateSurfaceByFaceAndAttrib(self: ICDelegate, hitPoint: dotPoint_t, faceNormal: dotPoint_t, id: int, name: str, surfaceClass: str) -> (int, dotPoint_t, dotPoint_t) """
         pass
 
@@ -4900,7 +5173,18 @@ class ICDelegate:
         """ ExportGetCoordinateSystem(self: ICDelegate, pModelObject: dotModelObject_t, pCoordinateSystem: dotCoordinateSystem_t) -> (int, dotModelObject_t, dotCoordinateSystem_t) """
         pass
 
-    def ExportGetCutSolidSerialized(self, dotSolid1, dotSolid2, serializedFaceList, serializedVectorList, serializedFaceOriginPartIdList, serializedShellIndexList, serializedEdgeVertexList, serializedEdgeTypeList, serializedEdgeShellIndexList):
+    def ExportGetCutSolidSerialized(
+        self,
+        dotSolid1,
+        dotSolid2,
+        serializedFaceList,
+        serializedVectorList,
+        serializedFaceOriginPartIdList,
+        serializedShellIndexList,
+        serializedEdgeVertexList,
+        serializedEdgeTypeList,
+        serializedEdgeShellIndexList,
+    ):
         """ ExportGetCutSolidSerialized(self: ICDelegate, dotSolid1: dotSolid_t, dotSolid2: dotSolid_t, serializedFaceList: List[List[List[dotPoint_t]]], serializedVectorList: List[dotPoint_t], serializedFaceOriginPartIdList: List[int], serializedShellIndexList: List[int], serializedEdgeVertexList: List[dotPoint_t], serializedEdgeTypeList: List[int], serializedEdgeShellIndexList: List[int]) -> (int, dotSolid_t, dotSolid_t, List[List[List[dotPoint_t]]], List[dotPoint_t], List[int], List[int], List[dotPoint_t], List[int], List[int]) """
         pass
 
@@ -4992,7 +5276,9 @@ class ICDelegate:
         """ ExportGetProperties(self: ICDelegate, pProperties: dotGetProperties_t) -> (int, dotGetProperties_t) """
         pass
 
-    def ExportGetReferenceModelObjectByExternalGuid(self, referenceModelId, externalGuid):
+    def ExportGetReferenceModelObjectByExternalGuid(
+        self, referenceModelId, externalGuid
+    ):
         """ ExportGetReferenceModelObjectByExternalGuid(self: ICDelegate, referenceModelId: int, externalGuid: dotIdentifier_t) -> (int, dotIdentifier_t) """
         pass
 
@@ -5024,7 +5310,14 @@ class ICDelegate:
         """ ExportGetSolidMerged(self: ICDelegate, dotSolid: dotSolid_t, polymeshes: dotPolymesh_t) -> (int, dotSolid_t, dotPolymesh_t) """
         pass
 
-    def ExportGetSolidSerialized(self, dotSolid, serializedFaceList, serializedVectorList, serializedShellIndexList, serializedFaceOriginIdList):
+    def ExportGetSolidSerialized(
+        self,
+        dotSolid,
+        serializedFaceList,
+        serializedVectorList,
+        serializedShellIndexList,
+        serializedFaceOriginIdList,
+    ):
         """ ExportGetSolidSerialized(self: ICDelegate, dotSolid: dotSolid_t, serializedFaceList: List[List[List[dotPoint_t]]], serializedVectorList: List[dotPoint_t], serializedShellIndexList: List[int], serializedFaceOriginIdList: List[int]) -> (int, dotSolid_t, List[List[List[dotPoint_t]]], List[dotPoint_t], List[int], List[int]) """
         pass
 
@@ -5124,7 +5417,9 @@ class ICDelegate:
         """ ExportModifyControlPlane(self: ICDelegate, pControlObject: dotControlObject_t) -> (int, dotControlObject_t) """
         pass
 
-    def ExportModifyCylindricalSurfaceNode(self, geometryNodeId, surfacePoints, clientId):
+    def ExportModifyCylindricalSurfaceNode(
+        self, geometryNodeId, surfacePoints, clientId
+    ):
         """ ExportModifyCylindricalSurfaceNode(self: ICDelegate, geometryNodeId: int, surfacePoints: dotContour_t, clientId: dotClientId_t) -> (int, dotContour_t, dotClientId_t) """
         pass
 
@@ -5136,11 +5431,15 @@ class ICDelegate:
         """ ExportModifyFittingOrCutPlane(self: ICDelegate, pFittingOrCutPlane: dotFittingOrCutPlane_t) -> (int, dotFittingOrCutPlane_t) """
         pass
 
-    def ExportModifyGeometryTreeCylindricalNodeCurveType(self, geometryNodeId, newCurveType, clientId):
+    def ExportModifyGeometryTreeCylindricalNodeCurveType(
+        self, geometryNodeId, newCurveType, clientId
+    ):
         """ ExportModifyGeometryTreeCylindricalNodeCurveType(self: ICDelegate, geometryNodeId: int, newCurveType: int, clientId: dotClientId_t) -> (int, dotClientId_t) """
         pass
 
-    def ExportModifyGeometryTreeCylindricalNodeRadius(self, geometryNodeId, radius, clientId):
+    def ExportModifyGeometryTreeCylindricalNodeRadius(
+        self, geometryNodeId, radius, clientId
+    ):
         """ ExportModifyGeometryTreeCylindricalNodeRadius(self: ICDelegate, geometryNodeId: int, radius: float, clientId: dotClientId_t) -> (int, dotClientId_t) """
         pass
 
@@ -5604,7 +5903,7 @@ class ICDelegate:
         """ IsMacroRunning(self: ICDelegate) -> int """
         pass
 
-    def __init__(self, *args): #cannot find CLR method
+    def __init__(self, *args):  # cannot find CLR method
         """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
         pass
 
@@ -5619,16 +5918,18 @@ class IEventHandler:
         """ RemoveListener(self: IEventHandler, EventListener: Events) """
         pass
 
-    def __init__(self, *args): #cannot find CLR method
+    def __init__(self, *args):  # cannot find CLR method
         """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
         pass
 
 
 class IntList(CollectionBase):
     """
-    IntList()
+    IntList()
+
     IntList(integers: IEnumerable)
     """
+
     def Add(self, Value):
         """ Add(self: IntList, Value: int) -> int """
         pass
@@ -5643,8 +5944,10 @@ class IntList(CollectionBase):
 
     def IndexOf(self, Value, StartIndex=None, Count=None):
         """
-        IndexOf(self: IntList, Value: int, StartIndex: int, Count: int) -> int
-        IndexOf(self: IntList, Value: int, StartIndex: int) -> int
+        IndexOf(self: IntList, Value: int, StartIndex: int, Count: int) -> int
+
+        IndexOf(self: IntList, Value: int, StartIndex: int) -> int
+
         IndexOf(self: IntList, Value: int) -> int
         """
         pass
@@ -5659,8 +5962,10 @@ class IntList(CollectionBase):
 
     def LastIndexOf(self, Value, StartIndex=None, Count=None):
         """
-        LastIndexOf(self: IntList, Value: int, StartIndex: int, Count: int) -> int
-        LastIndexOf(self: IntList, Value: int, StartIndex: int) -> int
+        LastIndexOf(self: IntList, Value: int, StartIndex: int, Count: int) -> int
+
+        LastIndexOf(self: IntList, Value: int, StartIndex: int) -> int
+
         LastIndexOf(self: IntList, Value: int) -> int
         """
         pass
@@ -5677,24 +5982,32 @@ class IntList(CollectionBase):
         """ ToArray(self: IntList) -> Array[int] """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, integers=None):
         """
-        __new__(cls: type)
+        __new__(cls: type)
+
         __new__(cls: type, integers: IEnumerable)
         """
         pass
 
-    InnerList = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Gets an System.Collections.ArrayList containing the list of elements in the System.Collections.CollectionBase instance.
-
+    InnerList = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Gets an System.Collections.ArrayList containing the list of elements in the System.Collections.CollectionBase instance.
+
+
+
 """
 
-    List = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Gets an System.Collections.IList containing the list of elements in the System.Collections.CollectionBase instance.
-
-"""
+    List = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Gets an System.Collections.IList containing the list of elements in the System.Collections.CollectionBase instance.
 
+
+
+"""
 
 
 class ModelExtensions(object):
@@ -5710,30 +6023,34 @@ class ModelExtensions(object):
         pass
 
     __all__ = [
-        '__reduce_ex__',
-        'GetModelObjectType',
-        'TryGetModelObjectType',
+        "__reduce_ex__",
+        "GetModelObjectType",
+        "TryGetModelObjectType",
     ]
 
 
 class ModelObjectFactory(object):
     # no doc
     @staticmethod
-    def GetCorrectInstance(model, identifier, modelObjectType=None, modelObjectSubType=None):
+    def GetCorrectInstance(
+        model, identifier, modelObjectType=None, modelObjectSubType=None
+    ):
         """
-        GetCorrectInstance(model: Model, identifier: Identifier, modelObjectType: ModelObjectEnum, modelObjectSubType: int) -> ModelObject
+        GetCorrectInstance(model: Model, identifier: Identifier, modelObjectType: ModelObjectEnum, modelObjectSubType: int) -> ModelObject
+
         GetCorrectInstance(model: Model, identifier: Identifier) -> ModelObject
         """
         pass
 
     __all__ = [
-        '__reduce_ex__',
-        'GetCorrectInstance',
+        "__reduce_ex__",
+        "GetCorrectInstance",
     ]
 
 
 class NumberingQueryModeEnum(Enum):
     """ enum NumberingQueryModeEnum, values: ALL_PARTS_REBARS_ASSEMBLIES (1), SINGLE_ID (0) """
+
     ALL_PARTS_REBARS_ASSEMBLIES = None
     SINGLE_ID = None
     value__ = None
@@ -5852,7 +6169,9 @@ class Operation(object):
         pass
 
     @staticmethod
-    def dotCreateNewSingleUserModelFromTemplate(ModelName, ModelPath, ModelTemplateName):
+    def dotCreateNewSingleUserModelFromTemplate(
+        ModelName, ModelPath, ModelTemplateName
+    ):
         """ dotCreateNewSingleUserModelFromTemplate(ModelName: str, ModelPath: str, ModelTemplateName: str) -> bool """
         pass
 
@@ -5897,17 +6216,23 @@ class Operation(object):
         pass
 
     @staticmethod
-    def dotGetDataBaseVersionInfoFromModel(ModelName, ModelPath, ModelVersion, CurrentVersion):
+    def dotGetDataBaseVersionInfoFromModel(
+        ModelName, ModelPath, ModelVersion, CurrentVersion
+    ):
         """ dotGetDataBaseVersionInfoFromModel(ModelName: str, ModelPath: str, ModelVersion: int, CurrentVersion: int) -> (bool, int, int) """
         pass
 
     @staticmethod
-    def dotGetDeletedObjecs(ModStamp, ObjectTypes, returnAlsoIfObjectIsCreatedAndDeletedAfterEvent):
+    def dotGetDeletedObjecs(
+        ModStamp, ObjectTypes, returnAlsoIfObjectIsCreatedAndDeletedAfterEvent
+    ):
         """ dotGetDeletedObjecs(ModStamp: str, ObjectTypes: IEnumerable[ModelObjectEnum], returnAlsoIfObjectIsCreatedAndDeletedAfterEvent: bool) -> ModelObjectEnumerator """
         pass
 
     @staticmethod
-    def dotGetModifications(ModStamp, ObjectTypes, returnAlsoIfObjectIsCreatedAndDeletedAfterEvent):
+    def dotGetModifications(
+        ModStamp, ObjectTypes, returnAlsoIfObjectIsCreatedAndDeletedAfterEvent
+    ):
         """ dotGetModifications(ModStamp: str, ObjectTypes: IEnumerable[ModelObjectEnum], returnAlsoIfObjectIsCreatedAndDeletedAfterEvent: bool) -> ModificationInfo """
         pass
 
@@ -5964,9 +6289,12 @@ class Operation(object):
     @staticmethod
     def dotSetAdvancedOption(VariableName, Value):
         """
-        dotSetAdvancedOption(VariableName: str, Value: str) -> bool
-        dotSetAdvancedOption(VariableName: str, Value: float) -> bool
-        dotSetAdvancedOption(VariableName: str, Value: bool) -> bool
+        dotSetAdvancedOption(VariableName: str, Value: str) -> bool
+
+        dotSetAdvancedOption(VariableName: str, Value: float) -> bool
+
+        dotSetAdvancedOption(VariableName: str, Value: bool) -> bool
+
         dotSetAdvancedOption(VariableName: str, Value: int) -> bool
         """
         pass
@@ -6022,7 +6350,9 @@ class Operation(object):
         pass
 
     @staticmethod
-    def dotSharingReadIn(packetFolder, packetNumber, errorCode, errorDetail, moduleBaselines):
+    def dotSharingReadIn(
+        packetFolder, packetNumber, errorCode, errorDetail, moduleBaselines
+    ):
         """ dotSharingReadIn(packetFolder: str, packetNumber: int) -> (bool, DotSharingErrorCodeEnum, str, Dictionary[str, Tuple[str, str]]) """
         pass
 
@@ -6062,7 +6392,15 @@ class Operation(object):
         pass
 
     @staticmethod
-    def dotSharingWriteOut(permission, packetFolder, mode, revisionInfo, errorCode, errorDetail, moduleBaselines):
+    def dotSharingWriteOut(
+        permission,
+        packetFolder,
+        mode,
+        revisionInfo,
+        errorCode,
+        errorDetail,
+        moduleBaselines,
+    ):
         """ dotSharingWriteOut(permission: DotSharingPrivilegeEnum, packetFolder: str, mode: DotSharingWriteOutModeEnum, revisionInfo: str) -> (bool, DotSharingErrorCodeEnum, str, Dictionary[str, Tuple[str, str]]) """
         pass
 
@@ -6102,22 +6440,56 @@ class Operation(object):
         pass
 
     @staticmethod
-    def ExportIFCFromAll(ModelName, FullFileName, ViewType, PropertySets, BasePoint, UseTimer, CreateReport):
+    def ExportIFCFromAll(
+        ModelName,
+        FullFileName,
+        ViewType,
+        PropertySets,
+        BasePoint,
+        UseTimer,
+        CreateReport,
+    ):
         """ ExportIFCFromAll(ModelName: str, FullFileName: str, ViewType: IFCExportViewTypeEnum, PropertySets: List[str], BasePoint: IFCExportBasePoint, UseTimer: bool, CreateReport: bool) -> bool """
         pass
 
     @staticmethod
-    def ExportIFCFromFilteredObjects(ModelName, FullFileName, ViewType, PropertySets, FilterName, BasePoint, UseTimer, CreateReport):
+    def ExportIFCFromFilteredObjects(
+        ModelName,
+        FullFileName,
+        ViewType,
+        PropertySets,
+        FilterName,
+        BasePoint,
+        UseTimer,
+        CreateReport,
+    ):
         """ ExportIFCFromFilteredObjects(ModelName: str, FullFileName: str, ViewType: IFCExportViewTypeEnum, PropertySets: List[str], FilterName: str, BasePoint: IFCExportBasePoint, UseTimer: bool, CreateReport: bool) -> bool """
         pass
 
     @staticmethod
-    def ExportIFCFromObjects(ModelName, FullFileName, ViewType, PropertySets, ModelObjects, BasePoint, UseTimer, CreateReport):
+    def ExportIFCFromObjects(
+        ModelName,
+        FullFileName,
+        ViewType,
+        PropertySets,
+        ModelObjects,
+        BasePoint,
+        UseTimer,
+        CreateReport,
+    ):
         """ ExportIFCFromObjects(ModelName: str, FullFileName: str, ViewType: IFCExportViewTypeEnum, PropertySets: List[str], ModelObjects: List[ModelObject], BasePoint: IFCExportBasePoint, UseTimer: bool, CreateReport: bool) -> bool """
         pass
 
     @staticmethod
-    def ExportIFCFromSelected(ModelName, FullFileName, ViewType, PropertySets, BasePoint, UseTimer, CreateReport):
+    def ExportIFCFromSelected(
+        ModelName,
+        FullFileName,
+        ViewType,
+        PropertySets,
+        BasePoint,
+        UseTimer,
+        CreateReport,
+    ):
         """ ExportIFCFromSelected(ModelName: str, FullFileName: str, ViewType: IFCExportViewTypeEnum, PropertySets: List[str], BasePoint: IFCExportBasePoint, UseTimer: bool, CreateReport: bool) -> bool """
         pass
 
@@ -6163,104 +6535,105 @@ class Operation(object):
     SharingOperationEnum = None
     UndoOperationEnum = None
     __all__ = [
-        '__reduce_ex__',
-        'AddToPourUnit',
-        'CreateBasePoint',
-        'DeleteBasePoint',
-        'DeleteMacro',
-        'dotAutoSaveModel',
-        'dotCheckBoltAssemblyDefinitionsModified',
-        'dotCheckBoltDefinitionsModified',
-        'dotCheckCustomPropertiesModified',
-        'dotCheckDrawingOptionsModified',
-        'dotCheckDrawingsModified',
-        'dotCheckMaterialDefinitionsModified',
-        'dotCheckModelOptionsModified',
-        'dotCheckObjectModifiedAfterStamp',
-        'dotCheckProfileDefinitionsModified',
-        'dotCleanDrawingFiles',
-        'dotClearUndoLog',
-        'dotConnectToNewMultiUserServerAndOpenModel',
-        'dotConvertAndOpenAsMultiUserModel',
-        'dotConvertAndOpenAsSingleUserModel',
-        'dotCreateNewMultiUserModel',
-        'dotCreateNewSharedModel',
-        'dotCreateNewSingleUserModel',
-        'dotCreateNewSingleUserModelFromTemplate',
-        'dotDisplayAutoDefaultSettings',
-        'dotDisplayComponentHelp',
-        'dotExcludeFromSharingAndOpen',
-        'dotExportGetColorRepresentationForObject',
-        'dotExportShadowRegion',
-        'dotExportShadowRegionComplement',
-        'dotGetCurrentModificationStampGuid',
-        'dotGetDatabaseVersion',
-        'dotGetDataBaseVersionInfoFromModel',
-        'dotGetDeletedObjecs',
-        'dotGetModifications',
-        'dotGetModificationsByFilter',
-        'dotGetObjectsWithAnyModification',
-        'dotIsModelSaved',
-        'dotModelImportIsEnabled',
-        'dotModelSharingLicenseInfo',
-        'dotQuitProgram',
-        'dotRedo',
-        'dotResetUserOptionToDefaultValue',
-        'dotSaveAsModel',
-        'dotSaveModel',
-        'dotSetAdvancedOption',
-        'dotSetUserModelRole',
-        'dotSharingCommandResult',
-        'dotSharingCreateEmptyModel',
-        'dotSharingCreateNewModel',
-        'dotSharingCreateStartSharingBackup',
-        'DotSharingErrorCodeEnum',
-        'dotSharingGetVersionGuid',
-        'dotSharingIsEnabled',
-        'dotSharingLogPrint',
-        'DotSharingLogTypeEnum',
-        'dotSharingMakeModelShareable',
-        'dotSharingOpenModelForJoin',
-        'DotSharingPrivilegeEnum',
-        'dotSharingReadIn',
-        'dotSharingReadInCommit',
-        'dotSharingReadInStarting',
-        'dotSharingRegisterPlugin',
-        'dotSharingRestoreStartSharingBackup',
-        'dotSharingSaveVersionGuid',
-        'dotSharingSetMenu',
-        'dotSharingShowReadInChanges',
-        'dotSharingWriteOut',
-        'dotSharingWriteOutCommit',
-        'DotSharingWriteOutModeEnum',
-        'dotStartAction',
-        'dotStartCommand',
-        'dotStartCustomComponentCreation',
-        'dotStartPluginCreation',
-        'dotUndo',
-        'dotWriteToSessionLog',
-        'ExportIFCFromAll',
-        'ExportIFCFromFilteredObjects',
-        'ExportIFCFromObjects',
-        'ExportIFCFromSelected',
-        'GetBasePointByGuid',
-        'GetBasePointByName',
-        'GetBasePoints',
-        'IFCExportBasePoint',
-        'IFCExportViewTypeEnum',
-        'MacroLocationEnum',
-        'ModifyBasePoint',
-        'OperationsMaxMessageLength',
-        'RollbackToTestSavePoint',
-        'SaveOperationEnum',
-        'SetTestSavePoint',
-        'SharingOperationEnum',
-        'UndoOperationEnum',
+        "__reduce_ex__",
+        "AddToPourUnit",
+        "CreateBasePoint",
+        "DeleteBasePoint",
+        "DeleteMacro",
+        "dotAutoSaveModel",
+        "dotCheckBoltAssemblyDefinitionsModified",
+        "dotCheckBoltDefinitionsModified",
+        "dotCheckCustomPropertiesModified",
+        "dotCheckDrawingOptionsModified",
+        "dotCheckDrawingsModified",
+        "dotCheckMaterialDefinitionsModified",
+        "dotCheckModelOptionsModified",
+        "dotCheckObjectModifiedAfterStamp",
+        "dotCheckProfileDefinitionsModified",
+        "dotCleanDrawingFiles",
+        "dotClearUndoLog",
+        "dotConnectToNewMultiUserServerAndOpenModel",
+        "dotConvertAndOpenAsMultiUserModel",
+        "dotConvertAndOpenAsSingleUserModel",
+        "dotCreateNewMultiUserModel",
+        "dotCreateNewSharedModel",
+        "dotCreateNewSingleUserModel",
+        "dotCreateNewSingleUserModelFromTemplate",
+        "dotDisplayAutoDefaultSettings",
+        "dotDisplayComponentHelp",
+        "dotExcludeFromSharingAndOpen",
+        "dotExportGetColorRepresentationForObject",
+        "dotExportShadowRegion",
+        "dotExportShadowRegionComplement",
+        "dotGetCurrentModificationStampGuid",
+        "dotGetDatabaseVersion",
+        "dotGetDataBaseVersionInfoFromModel",
+        "dotGetDeletedObjecs",
+        "dotGetModifications",
+        "dotGetModificationsByFilter",
+        "dotGetObjectsWithAnyModification",
+        "dotIsModelSaved",
+        "dotModelImportIsEnabled",
+        "dotModelSharingLicenseInfo",
+        "dotQuitProgram",
+        "dotRedo",
+        "dotResetUserOptionToDefaultValue",
+        "dotSaveAsModel",
+        "dotSaveModel",
+        "dotSetAdvancedOption",
+        "dotSetUserModelRole",
+        "dotSharingCommandResult",
+        "dotSharingCreateEmptyModel",
+        "dotSharingCreateNewModel",
+        "dotSharingCreateStartSharingBackup",
+        "DotSharingErrorCodeEnum",
+        "dotSharingGetVersionGuid",
+        "dotSharingIsEnabled",
+        "dotSharingLogPrint",
+        "DotSharingLogTypeEnum",
+        "dotSharingMakeModelShareable",
+        "dotSharingOpenModelForJoin",
+        "DotSharingPrivilegeEnum",
+        "dotSharingReadIn",
+        "dotSharingReadInCommit",
+        "dotSharingReadInStarting",
+        "dotSharingRegisterPlugin",
+        "dotSharingRestoreStartSharingBackup",
+        "dotSharingSaveVersionGuid",
+        "dotSharingSetMenu",
+        "dotSharingShowReadInChanges",
+        "dotSharingWriteOut",
+        "dotSharingWriteOutCommit",
+        "DotSharingWriteOutModeEnum",
+        "dotStartAction",
+        "dotStartCommand",
+        "dotStartCustomComponentCreation",
+        "dotStartPluginCreation",
+        "dotUndo",
+        "dotWriteToSessionLog",
+        "ExportIFCFromAll",
+        "ExportIFCFromFilteredObjects",
+        "ExportIFCFromObjects",
+        "ExportIFCFromSelected",
+        "GetBasePointByGuid",
+        "GetBasePointByName",
+        "GetBasePoints",
+        "IFCExportBasePoint",
+        "IFCExportViewTypeEnum",
+        "MacroLocationEnum",
+        "ModifyBasePoint",
+        "OperationsMaxMessageLength",
+        "RollbackToTestSavePoint",
+        "SaveOperationEnum",
+        "SetTestSavePoint",
+        "SharingOperationEnum",
+        "UndoOperationEnum",
     ]
 
 
 class PointList(CollectionBase):
     """ PointList() """
+
     def Add(self, Value):
         """ Add(self: PointList, Value: Point) -> int """
         pass
@@ -6275,8 +6648,10 @@ class PointList(CollectionBase):
 
     def IndexOf(self, Value, StartIndex=None, Count=None):
         """
-        IndexOf(self: PointList, Value: Point, StartIndex: int, Count: int) -> int
-        IndexOf(self: PointList, Value: Point, StartIndex: int) -> int
+        IndexOf(self: PointList, Value: Point, StartIndex: int, Count: int) -> int
+
+        IndexOf(self: PointList, Value: Point, StartIndex: int) -> int
+
         IndexOf(self: PointList, Value: Point) -> int
         """
         pass
@@ -6291,8 +6666,10 @@ class PointList(CollectionBase):
 
     def LastIndexOf(self, Value, StartIndex=None, Count=None):
         """
-        LastIndexOf(self: PointList, Value: Point, StartIndex: int, Count: int) -> int
-        LastIndexOf(self: PointList, Value: Point, StartIndex: int) -> int
+        LastIndexOf(self: PointList, Value: Point, StartIndex: int, Count: int) -> int
+
+        LastIndexOf(self: PointList, Value: Point, StartIndex: int) -> int
+
         LastIndexOf(self: PointList, Value: Point) -> int
         """
         pass
@@ -6309,16 +6686,23 @@ class PointList(CollectionBase):
         """ ToArray(self: PointList) -> Array[Point] """
         pass
 
-    InnerList = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Gets an System.Collections.ArrayList containing the list of elements in the System.Collections.CollectionBase instance.
-
+    InnerList = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Gets an System.Collections.ArrayList containing the list of elements in the System.Collections.CollectionBase instance.
+
+
+
 """
 
-    List = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Gets an System.Collections.IList containing the list of elements in the System.Collections.CollectionBase instance.
-
-"""
+    List = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Gets an System.Collections.IList containing the list of elements in the System.Collections.CollectionBase instance.
 
+
+
+"""
 
 
 class PolygonExtensions(object):
@@ -6334,14 +6718,15 @@ class PolygonExtensions(object):
         pass
 
     __all__ = [
-        '__reduce_ex__',
-        'ToDotPolygon',
-        'ToPolygon',
+        "__reduce_ex__",
+        "ToDotPolygon",
+        "ToPolygon",
     ]
 
 
 class RebarSetAction(Enum):
     """ enum RebarSetAction, values: BeginCreate (0), BeginModify (2), BeginSelect (4), EndCreate (1), EndModify (3), EndSelect (5) """
+
     BeginCreate = None
     BeginModify = None
     BeginSelect = None
@@ -6353,6 +6738,7 @@ class RebarSetAction(Enum):
 
 class Remoter(object):
     """ Remoter() """
+
     @staticmethod
     def InitializeSandBox():
         """ InitializeSandBox() -> bool """
@@ -6361,19 +6747,20 @@ class Remoter(object):
 
 class ScopedCDelegateSetter(object):
     """ ScopedCDelegateSetter(deleg: ICDelegate) """
+
     def Dispose(self):
         """ Dispose(self: ScopedCDelegateSetter) """
         pass
 
-    def __enter__(self, *args): #cannot find CLR method
+    def __enter__(self, *args):  # cannot find CLR method
         """ __enter__(self: IDisposable) -> object """
         pass
 
-    def __exit__(self, *args): #cannot find CLR method
+    def __exit__(self, *args):  # cannot find CLR method
         """ __exit__(self: IDisposable, exc_type: object, exc_value: object, exc_back: object) """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, deleg):
         """ __new__(cls: type, deleg: ICDelegate) """
         pass
@@ -6381,6 +6768,7 @@ class ScopedCDelegateSetter(object):
 
 class Serializer(object):
     """ Serializer() """
+
     @staticmethod
     def JsonToUDAChanges(json):
         """ JsonToUDAChanges(json: Array[Byte]) -> UDAChanges """
@@ -6394,9 +6782,11 @@ class Serializer(object):
 
 class StringList(CollectionBase):
     """
-    StringList(Capacity: int)
+    StringList(Capacity: int)
+
     StringList()
     """
+
     def Add(self, Value):
         """ Add(self: StringList, Value: str) -> int """
         pass
@@ -6411,8 +6801,10 @@ class StringList(CollectionBase):
 
     def IndexOf(self, Value, StartIndex=None, Count=None):
         """
-        IndexOf(self: StringList, Value: str, StartIndex: int, Count: int) -> int
-        IndexOf(self: StringList, Value: str, StartIndex: int) -> int
+        IndexOf(self: StringList, Value: str, StartIndex: int, Count: int) -> int
+
+        IndexOf(self: StringList, Value: str, StartIndex: int) -> int
+
         IndexOf(self: StringList, Value: str) -> int
         """
         pass
@@ -6427,8 +6819,10 @@ class StringList(CollectionBase):
 
     def LastIndexOf(self, Value, StartIndex=None, Count=None):
         """
-        LastIndexOf(self: StringList, Value: str, StartIndex: int, Count: int) -> int
-        LastIndexOf(self: StringList, Value: str, StartIndex: int) -> int
+        LastIndexOf(self: StringList, Value: str, StartIndex: int, Count: int) -> int
+
+        LastIndexOf(self: StringList, Value: str, StartIndex: int) -> int
+
         LastIndexOf(self: StringList, Value: str) -> int
         """
         pass
@@ -6445,32 +6839,42 @@ class StringList(CollectionBase):
         """ ToArray(self: StringList) -> Array[str] """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, Capacity=None):
         """
-        __new__(cls: type, Capacity: int)
+        __new__(cls: type, Capacity: int)
+
         __new__(cls: type)
         """
         pass
 
-    InnerList = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Gets an System.Collections.ArrayList containing the list of elements in the System.Collections.CollectionBase instance.
-
+    InnerList = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Gets an System.Collections.ArrayList containing the list of elements in the System.Collections.CollectionBase instance.
+
+
+
 """
 
-    List = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Gets an System.Collections.IList containing the list of elements in the System.Collections.CollectionBase instance.
-
-"""
+    List = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Gets an System.Collections.IList containing the list of elements in the System.Collections.CollectionBase instance.
 
+
+
+"""
 
 
 class SurfaceObjectCreator(object):
     """ SurfaceObjectCreator() """
+
     @staticmethod
     def CreateByFace(objectId, hitPoint, faceNormal, name=None, surfaceClass=None):
         """
-        CreateByFace(objectId: int, hitPoint: Vector, faceNormal: Vector, name: str, surfaceClass: str) -> SurfaceObject
+        CreateByFace(objectId: int, hitPoint: Vector, faceNormal: Vector, name: str, surfaceClass: str) -> SurfaceObject
+
         CreateByFace(objectId: int, hitPoint: Vector, faceNormal: Vector) -> SurfaceObject
         """
         pass
@@ -6478,6 +6882,7 @@ class SurfaceObjectCreator(object):
 
 class SyncHandler(MulticastDelegate):
     """ SyncHandler(object: object, method: IntPtr) """
+
     def BeginInvoke(self, callback, object):
         """ BeginInvoke(self: SyncHandler, callback: AsyncCallback, object: object) -> IAsyncResult """
         pass
@@ -6490,7 +6895,7 @@ class SyncHandler(MulticastDelegate):
         """ Invoke(self: SyncHandler) """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, object, method):
         """ __new__(cls: type, object: object, method: IntPtr) """
         pass
@@ -6500,5 +6905,3 @@ class UDAChanges(object):
     # no doc
     Changed = None
     Deleted = None
-
-

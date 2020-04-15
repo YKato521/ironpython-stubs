@@ -1,7 +1,8 @@
 class IFormattable:
- """ Provides functionality to format the value of an object into a string representation. """
- def ToString(self,format,formatProvider):
-  """
+    """ Provides functionality to format the value of an object into a string representation. """
+
+    def ToString(self, format, formatProvider):
+        """
   ToString(self: IFormattable,format: str,formatProvider: IFormatProvider) -> str
 
   
@@ -24,10 +25,12 @@ class IFormattable:
 
    Returns: The value of the current instance in the specified format.
   """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

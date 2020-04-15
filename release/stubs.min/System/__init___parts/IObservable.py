@@ -1,7 +1,7 @@
 class IObservable:
- # no doc
- def Subscribe(self,observer):
-  """
+    # no doc
+    def Subscribe(self, observer):
+        """
   Subscribe(self: IObservable[T],observer: IObserver[T]) -> IDisposable
 
   
@@ -16,7 +16,8 @@ class IObservable:
 
     provider has finished sending them.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

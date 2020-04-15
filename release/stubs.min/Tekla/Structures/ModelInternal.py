@@ -60,11 +60,19 @@ from ModelInternal_parts.dotHierarchicList_t import dotHierarchicList_t
 from ModelInternal_parts.dotHierarchicObject_t import dotHierarchicObject_t
 from ModelInternal_parts.dotIFC2X3_Application_t import dotIFC2X3_Application_t
 from ModelInternal_parts.dotIFC2X3_Organization_t import dotIFC2X3_Organization_t
-from ModelInternal_parts.dotIFC2X3_OwnerHistoryChangeAction_t import dotIFC2X3_OwnerHistoryChangeAction_t
-from ModelInternal_parts.dotIFC2X3_OwnerHistoryState_t import dotIFC2X3_OwnerHistoryState_t
+from ModelInternal_parts.dotIFC2X3_OwnerHistoryChangeAction_t import (
+    dotIFC2X3_OwnerHistoryChangeAction_t,
+)
+from ModelInternal_parts.dotIFC2X3_OwnerHistoryState_t import (
+    dotIFC2X3_OwnerHistoryState_t,
+)
 from ModelInternal_parts.dotIFC2X3_OwnerHistory_t import dotIFC2X3_OwnerHistory_t
-from ModelInternal_parts.dotIFC2X3_ParametricObject_ShapeProfile_t import dotIFC2X3_ParametricObject_ShapeProfile_t
-from ModelInternal_parts.dotIFC2X3_PersonAndOrganization_t import dotIFC2X3_PersonAndOrganization_t
+from ModelInternal_parts.dotIFC2X3_ParametricObject_ShapeProfile_t import (
+    dotIFC2X3_ParametricObject_ShapeProfile_t,
+)
+from ModelInternal_parts.dotIFC2X3_PersonAndOrganization_t import (
+    dotIFC2X3_PersonAndOrganization_t,
+)
 from ModelInternal_parts.dotIFC2X3_Person_t import dotIFC2X3_Person_t
 from ModelInternal_parts.dotIFC2X3_Product_t import dotIFC2X3_Product_t
 from ModelInternal_parts.dotIntersectionPoints_t import dotIntersectionPoints_t
@@ -102,7 +110,9 @@ from ModelInternal_parts.dotPhase_t import dotPhase_t
 from ModelInternal_parts.dotPlane_t import dotPlane_t
 from ModelInternal_parts.dotPolygon_t import dotPolygon_t
 from ModelInternal_parts.dotPolymeshObject_t import dotPolymeshObject_t
-from ModelInternal_parts.dotPolymeshValidateInvalidInfo_t import dotPolymeshValidateInvalidInfo_t
+from ModelInternal_parts.dotPolymeshValidateInvalidInfo_t import (
+    dotPolymeshValidateInvalidInfo_t,
+)
 from ModelInternal_parts.dotPolymesh_t import dotPolymesh_t
 from ModelInternal_parts.dotPosition_t import dotPosition_t
 from ModelInternal_parts.dotPourObject_t import dotPourObject_t
@@ -123,8 +133,12 @@ from ModelInternal_parts.dotRebarSplitter_t import dotRebarSplitter_t
 from ModelInternal_parts.dotRebarStrand_t import dotRebarStrand_t
 from ModelInternal_parts.dotRebarStrip_t import dotRebarStrip_t
 from ModelInternal_parts.dotRebarThreading_t import dotRebarThreading_t
-from ModelInternal_parts.dotReferenceModelObjectAttributeEnumerator_t import dotReferenceModelObjectAttributeEnumerator_t
-from ModelInternal_parts.dotReferenceModelObjectAttribute_t import dotReferenceModelObjectAttribute_t
+from ModelInternal_parts.dotReferenceModelObjectAttributeEnumerator_t import (
+    dotReferenceModelObjectAttributeEnumerator_t,
+)
+from ModelInternal_parts.dotReferenceModelObjectAttribute_t import (
+    dotReferenceModelObjectAttribute_t,
+)
 from ModelInternal_parts.dotReferenceModelObject_t import dotReferenceModelObject_t
 from ModelInternal_parts.dotReferenceModelRevision_t import dotReferenceModelRevision_t
 from ModelInternal_parts.dotReferenceModel_t import dotReferenceModel_t
@@ -148,7 +162,9 @@ from ModelInternal_parts.dotTaskWorktype_t import dotTaskWorktype_t
 from ModelInternal_parts.dotTask_t import dotTask_t
 from ModelInternal_parts.dotTemporaryState import dotTemporaryState
 from ModelInternal_parts.dotTemporaryStatesEnum import dotTemporaryStatesEnum
-from ModelInternal_parts.dotTemporaryTransparenciesEnum import dotTemporaryTransparenciesEnum
+from ModelInternal_parts.dotTemporaryTransparenciesEnum import (
+    dotTemporaryTransparenciesEnum,
+)
 from ModelInternal_parts.dotTransformationPlane_t import dotTransformationPlane_t
 from ModelInternal_parts.dotUIModelObjectSelector_t import dotUIModelObjectSelector_t
 from ModelInternal_parts.dotUIPicker_t import dotUIPicker_t

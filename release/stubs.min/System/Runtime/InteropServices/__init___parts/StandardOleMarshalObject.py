@@ -1,7 +1,8 @@
-class StandardOleMarshalObject(MarshalByRefObject,IMarshal):
- """ Replaces the standard common language runtime (CLR) free-threaded marshaler with the standard OLE STA marshaler. """
- def MemberwiseClone(self,*args):
-  """
+class StandardOleMarshalObject(MarshalByRefObject, IMarshal):
+    """ Replaces the standard common language runtime (CLR) free-threaded marshaler with the standard OLE STA marshaler. """
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -32,7 +33,8 @@ class StandardOleMarshalObject(MarshalByRefObject,IMarshal):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

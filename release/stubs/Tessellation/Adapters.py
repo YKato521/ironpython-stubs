@@ -8,22 +8,32 @@
 # no functions
 # classes
 
+
 class Cell2(TriangulationCell[Vertex2, Cell2]):
     """ Cell2() """
-    Centroid = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Centroid(self: Cell2) -> Point
-
+
+    Centroid = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Centroid(self: Cell2) -> Point
+
+
+
 """
 
-    Circumcenter = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Circumcenter(self: Cell2) -> Point
-
-"""
+    Circumcenter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Circumcenter(self: Cell2) -> Point
 
+
+
+"""
 
 
 class Vertex2(object, IVertex, IGraphicItem):
     """ Vertex2(x: float, y: float) """
+
     def AsPoint(self):
         """ AsPoint(self: Vertex2) -> Point """
         pass
@@ -41,24 +51,26 @@ class Vertex2(object, IVertex, IGraphicItem):
         """ Tessellate(self: Vertex2, package: IRenderPackage, parameters: TessellationParameters) """
         pass
 
-    def __init__(self, *args): #cannot find CLR method
+    def __init__(self, *args):  # cannot find CLR method
         """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
         pass
 
-    @staticmethod # known case of __new__
+    @staticmethod  # known case of __new__
     def __new__(self, x, y):
         """ __new__(cls: type, x: float, y: float) """
         pass
 
-    def __repr__(self, *args): #cannot find CLR method
+    def __repr__(self, *args):  # cannot find CLR method
         """ __repr__(self: object) -> str """
         pass
 
-    Position = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: Position(self: Vertex2) -> Array[float]
-
-Set: Position(self: Vertex2) = value
+    Position = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: Position(self: Vertex2) -> Array[float]
+
+
+
+Set: Position(self: Vertex2) = value
+
 """
-
-
-

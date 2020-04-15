@@ -1,5 +1,5 @@
-class StreamWriter(TextWriter,IDisposable):
- """
+class StreamWriter(TextWriter, IDisposable):
+    """
  Implements a System.IO.TextWriter for writing characters to a stream in a particular encoding.
 
  
@@ -20,15 +20,17 @@ class StreamWriter(TextWriter,IDisposable):
 
  StreamWriter(path: str,append: bool,encoding: Encoding,bufferSize: int)
  """
- def Close(self):
-  """
+
+    def Close(self):
+        """
   Close(self: StreamWriter)
 
    Closes the current StreamWriter object and the underlying stream.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: StreamWriter,disposing: bool)
 
    Releases the unmanaged resources used by the System.IO.StreamWriter and optionally releases the 
@@ -41,21 +43,24 @@ class StreamWriter(TextWriter,IDisposable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def Flush(self):
-  """
+        pass
+
+    def Flush(self):
+        """
   Flush(self: StreamWriter)
 
    Clears all buffers for the current writer and causes any buffered data to be written to the 
 
     underlying stream.
   """
-  pass
- def FlushAsync(self):
-  """ FlushAsync(self: StreamWriter) -> Task """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def FlushAsync(self):
+        """ FlushAsync(self: StreamWriter) -> Task """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -86,9 +91,10 @@ class StreamWriter(TextWriter,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def Write(self,*__args):
-  """
+        pass
+
+    def Write(self, *__args):
+        """
   Write(self: StreamWriter,buffer: Array[Char],index: int,count: int)
 
    Writes a subarray of characters to the stream.
@@ -125,18 +131,20 @@ class StreamWriter(TextWriter,IDisposable):
 
    buffer: A character array containing the data to write. If buffer is null,nothing is written.
   """
-  pass
- def WriteAsync(self,*__args):
-  """
+        pass
+
+    def WriteAsync(self, *__args):
+        """
   WriteAsync(self: StreamWriter,buffer: Array[Char],index: int,count: int) -> Task
 
   WriteAsync(self: StreamWriter,value: str) -> Task
 
   WriteAsync(self: StreamWriter,value: Char) -> Task
   """
-  pass
- def WriteLineAsync(self,*__args):
-  """
+        pass
+
+    def WriteLineAsync(self, *__args):
+        """
   WriteLineAsync(self: StreamWriter,value: str) -> Task
 
   WriteLineAsync(self: StreamWriter,buffer: Array[Char],index: int,count: int) -> Task
@@ -145,29 +153,33 @@ class StreamWriter(TextWriter,IDisposable):
 
   WriteLineAsync(self: StreamWriter,value: Char) -> Task
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,stream: Stream)
 
   __new__(cls: type,stream: Stream,encoding: Encoding)
@@ -184,11 +196,13 @@ class StreamWriter(TextWriter,IDisposable):
 
   __new__(cls: type,path: str,append: bool,encoding: Encoding,bufferSize: int)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- AutoFlush=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the System.IO.StreamWriter will flush its buffer to the underlying stream after every call to System.IO.StreamWriter.Write(System.Char).
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    AutoFlush = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the System.IO.StreamWriter will flush its buffer to the underlying stream after every call to System.IO.StreamWriter.Write(System.Char).
 
 
 
@@ -200,8 +214,10 @@ Set: AutoFlush(self: StreamWriter)=value
 
 """
 
- BaseStream=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the underlying stream that interfaces with a backing store.
+    BaseStream = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the underlying stream that interfaces with a backing store.
 
 
 
@@ -211,8 +227,8 @@ Get: BaseStream(self: StreamWriter) -> Stream
 
 """
 
- Encoding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Text.Encoding in which the output is written.
+    Encoding = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the System.Text.Encoding in which the output is written.
 
 
 
@@ -222,7 +238,5 @@ Get: Encoding(self: StreamWriter) -> Encoding
 
 """
 
-
- CoreNewLine=None
- Null=None
-
+    CoreNewLine = None
+    Null = None

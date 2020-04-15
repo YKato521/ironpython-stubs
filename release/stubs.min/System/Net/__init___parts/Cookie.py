@@ -1,5 +1,5 @@
 class Cookie(object):
- """
+    """
  Provides a set of properties and methods that are used to manage cookies. This class cannot be inherited.
 
  
@@ -12,8 +12,9 @@ class Cookie(object):
 
  Cookie(name: str,value: str,path: str,domain: str)
  """
- def Equals(self,comparand):
-  """
+
+    def Equals(self, comparand):
+        """
   Equals(self: Cookie,comparand: object) -> bool
 
   
@@ -32,9 +33,10 @@ class Cookie(object):
 
     System.Net.Cookie.Name and System.Net.Cookie.Domain string comparisons are case-insensitive.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Cookie) -> int
 
   
@@ -43,9 +45,10 @@ class Cookie(object):
 
    Returns: The 32-bit signed integer hash code for this instance.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: Cookie) -> str
 
   
@@ -56,13 +59,15 @@ class Cookie(object):
 
     in a HTTP Cookie: request header.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- @staticmethod
- def __new__(self,name=None,value=None,path=None,domain=None):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    @staticmethod
+    def __new__(self, name=None, value=None, path=None, domain=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,name: str,value: str)
@@ -71,11 +76,13 @@ class Cookie(object):
 
   __new__(cls: type,name: str,value: str,path: str,domain: str)
   """
-  pass
- def __ne__(self,*args):
-  pass
- Comment=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a comment that the server can add to a System.Net.Cookie.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    Comment = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a comment that the server can add to a System.Net.Cookie.
 
 
 
@@ -87,8 +94,10 @@ Set: Comment(self: Cookie)=value
 
 """
 
- CommentUri=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a URI comment that the server can provide with a System.Net.Cookie.
+    CommentUri = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a URI comment that the server can provide with a System.Net.Cookie.
 
 
 
@@ -100,8 +109,8 @@ Set: CommentUri(self: Cookie)=value
 
 """
 
- Discard=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the discard flag set by the server.
+    Discard = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the discard flag set by the server.
 
 
 
@@ -113,8 +122,8 @@ Set: Discard(self: Cookie)=value
 
 """
 
- Domain=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the URI for which the System.Net.Cookie is valid.
+    Domain = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the URI for which the System.Net.Cookie is valid.
 
 
 
@@ -126,8 +135,8 @@ Set: Domain(self: Cookie)=value
 
 """
 
- Expired=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the current state of the System.Net.Cookie.
+    Expired = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the current state of the System.Net.Cookie.
 
 
 
@@ -139,8 +148,8 @@ Set: Expired(self: Cookie)=value
 
 """
 
- Expires=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the expiration date and time for the System.Net.Cookie as a System.DateTime.
+    Expires = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the expiration date and time for the System.Net.Cookie as a System.DateTime.
 
 
 
@@ -152,8 +161,8 @@ Set: Expires(self: Cookie)=value
 
 """
 
- HttpOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determines whether a page script or other active content can access this cookie.
+    HttpOnly = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Determines whether a page script or other active content can access this cookie.
 
 
 
@@ -165,8 +174,8 @@ Set: HttpOnly(self: Cookie)=value
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name for the System.Net.Cookie.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the name for the System.Net.Cookie.
 
 
 
@@ -178,8 +187,8 @@ Set: Name(self: Cookie)=value
 
 """
 
- Path=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the URIs to which the System.Net.Cookie applies.
+    Path = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the URIs to which the System.Net.Cookie applies.
 
 
 
@@ -191,8 +200,8 @@ Set: Path(self: Cookie)=value
 
 """
 
- Port=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a list of TCP ports that the System.Net.Cookie applies to.
+    Port = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a list of TCP ports that the System.Net.Cookie applies to.
 
 
 
@@ -204,8 +213,8 @@ Set: Port(self: Cookie)=value
 
 """
 
- Secure=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the security level of a System.Net.Cookie.
+    Secure = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the security level of a System.Net.Cookie.
 
 
 
@@ -217,8 +226,8 @@ Set: Secure(self: Cookie)=value
 
 """
 
- TimeStamp=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the time when the cookie was issued as a System.DateTime.
+    TimeStamp = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the time when the cookie was issued as a System.DateTime.
 
 
 
@@ -228,8 +237,8 @@ Get: TimeStamp(self: Cookie) -> DateTime
 
 """
 
- Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Net.Cookie.Value for the System.Net.Cookie.
+    Value = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the System.Net.Cookie.Value for the System.Net.Cookie.
 
 
 
@@ -241,8 +250,8 @@ Set: Value(self: Cookie)=value
 
 """
 
- Version=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the version of HTTP state maintenance to which the cookie conforms.
+    Version = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the version of HTTP state maintenance to which the cookie conforms.
 
 
 
@@ -253,5 +262,3 @@ Get: Version(self: Cookie) -> int
 Set: Version(self: Cookie)=value
 
 """
-
-

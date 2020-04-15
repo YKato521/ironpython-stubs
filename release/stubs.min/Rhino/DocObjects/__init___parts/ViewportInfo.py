@@ -1,5 +1,5 @@
-class ViewportInfo(object,IDisposable,ISerializable):
- """
+class ViewportInfo(object, IDisposable, ISerializable):
+    """
  Represents a viewing frustum.
 
  
@@ -10,8 +10,9 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
  ViewportInfo(rhinoViewport: RhinoViewport)
  """
- def ChangeToParallelProjection(self,symmetricFrustum):
-  """
+
+    def ChangeToParallelProjection(self, symmetricFrustum):
+        """
   ChangeToParallelProjection(self: ViewportInfo,symmetricFrustum: bool) -> bool
 
   
@@ -50,9 +51,12 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
    Returns: true if the operation succeeded; otherwise,false.
   """
-  pass
- def ChangeToPerspectiveProjection(self,targetDistance,symmetricFrustum,lensLength):
-  """
+        pass
+
+    def ChangeToPerspectiveProjection(
+        self, targetDistance, symmetricFrustum, lensLength
+    ):
+        """
   ChangeToPerspectiveProjection(self: ViewportInfo,targetDistance: float,symmetricFrustum: bool,lensLength: float) -> bool
 
   
@@ -115,9 +119,12 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
    Returns: true if the operation succeeded; otherwise,false.
   """
-  pass
- def ChangeToSymmetricFrustum(self,isLeftRightSymmetric,isTopBottomSymmetric,targetDistance):
-  """
+        pass
+
+    def ChangeToSymmetricFrustum(
+        self, isLeftRightSymmetric, isTopBottomSymmetric, targetDistance
+    ):
+        """
   ChangeToSymmetricFrustum(self: ViewportInfo,isLeftRightSymmetric: bool,isTopBottomSymmetric: bool,targetDistance: float) -> bool
 
   
@@ -156,9 +163,10 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
    Returns: Returns true if the viewport has now a frustum with the specified symmetries.
   """
-  pass
- def ChangeToTwoPointPerspectiveProjection(self,targetDistance,up,lensLength):
-  """
+        pass
+
+    def ChangeToTwoPointPerspectiveProjection(self, targetDistance, up, lensLength):
+        """
   ChangeToTwoPointPerspectiveProjection(self: ViewportInfo,targetDistance: float,up: Vector3d,lensLength: float) -> bool
 
   
@@ -233,16 +241,18 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
    Returns: true if the operation succeeded; otherwise,false.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: ViewportInfo)
 
    Actively reclaims unmanaged resources that this instance uses.
   """
-  pass
- def DollyCamera(self,dollyVector):
-  """
+        pass
+
+    def DollyCamera(self, dollyVector):
+        """
   DollyCamera(self: ViewportInfo,dollyVector: Vector3d) -> bool
 
   
@@ -273,9 +283,10 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
    Returns: true if the operation succeeded; otherwise,false.
   """
-  pass
- def DollyExtents(self,*__args):
-  """
+        pass
+
+    def DollyExtents(self, *__args):
+        """
   DollyExtents(self: ViewportInfo,cameraCoordinateBoundingBox: BoundingBox,border: float) -> bool
 
   
@@ -310,9 +321,10 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
   DollyExtents(self: ViewportInfo,geometry: IEnumerable[GeometryBase],border: float) -> bool
   """
-  pass
- def DollyFrustum(self,dollyDistance):
-  """
+        pass
+
+    def DollyFrustum(self, dollyDistance):
+        """
   DollyFrustum(self: ViewportInfo,dollyDistance: float) -> bool
 
   
@@ -325,9 +337,10 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
    Returns: true if the operation succeeded; otherwise,false.
   """
-  pass
- def Extents(self,halfViewAngleRadians,*__args):
-  """
+        pass
+
+    def Extents(self, halfViewAngleRadians, *__args):
+        """
   Extents(self: ViewportInfo,halfViewAngleRadians: float,sphere: Sphere) -> bool
 
   
@@ -380,9 +393,10 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
    Returns: true if the operation succeeded; otherwise,false.
   """
-  pass
- def FrustumCenterPoint(self,targetDistance):
-  """
+        pass
+
+    def FrustumCenterPoint(self, targetDistance):
+        """
   FrustumCenterPoint(self: ViewportInfo,targetDistance: float) -> Point3d
 
   
@@ -431,9 +445,10 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
     ON_3dPoint::UnsetPoint is returned.
   """
-  pass
- def GetBoundingBoxDepth(self,bbox,nearDistance,farDistance):
-  """
+        pass
+
+    def GetBoundingBoxDepth(self, bbox, nearDistance, farDistance):
+        """
   GetBoundingBoxDepth(self: ViewportInfo,bbox: BoundingBox) -> (bool,float,float)
 
   
@@ -480,9 +495,15 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
     false if the bounding box does not intesect the view frustum.
   """
-  pass
- def GetCameraAngles(self,halfDiagonalAngleRadians,halfVerticalAngleRadians,halfHorizontalAngleRadians):
-  """
+        pass
+
+    def GetCameraAngles(
+        self,
+        halfDiagonalAngleRadians,
+        halfVerticalAngleRadians,
+        halfHorizontalAngleRadians,
+    ):
+        """
   GetCameraAngles(self: ViewportInfo) -> (bool,float,float,float)
 
   
@@ -491,9 +512,10 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
    Returns: true if the operation succeeded; otherwise,false.
   """
-  pass
- def GetCameraFrame(self,location,cameraX,cameraY,cameraZ):
-  """
+        pass
+
+    def GetCameraFrame(self, location, cameraX, cameraY, cameraZ):
+        """
   GetCameraFrame(self: ViewportInfo) -> (bool,Point3d,Vector3d,Vector3d,Vector3d)
 
   
@@ -502,9 +524,10 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
    Returns: true if current camera orientation is valid; otherwise false.
   """
-  pass
- def GetDollyCameraVector(self,*__args):
-  """
+        pass
+
+    def GetDollyCameraVector(self, *__args):
+        """
   GetDollyCameraVector(self: ViewportInfo,screen0: Point,screen1: Point,projectionPlaneDistance: float) -> Vector3d
 
   
@@ -541,9 +564,10 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
    Returns: The world coordinate dolly vector.
   """
-  pass
- def GetFarPlaneCorners(self):
-  """
+        pass
+
+    def GetFarPlaneCorners(self):
+        """
   GetFarPlaneCorners(self: ViewportInfo) -> Array[Point3d]
 
   
@@ -562,9 +586,10 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
      Empty array if viewport is not valid.
   """
-  pass
- def GetFrustum(self,left,right,bottom,top,nearDistance,farDistance):
-  """
+        pass
+
+    def GetFrustum(self, left, right, bottom, top, nearDistance, farDistance):
+        """
   GetFrustum(self: ViewportInfo) -> (bool,float,float,float,float,float,float)
 
   
@@ -573,9 +598,10 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
    Returns: true if operation succeeded; otherwise,false.
   """
-  pass
- def GetFrustumLine(self,*__args):
-  """
+        pass
+
+    def GetFrustumLine(self, *__args):
+        """
   GetFrustumLine(self: ViewportInfo,screenPoint: PointF) -> Line
 
   
@@ -642,9 +668,10 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
     clipping plane.
   """
-  pass
- def GetNearPlaneCorners(self):
-  """
+        pass
+
+    def GetNearPlaneCorners(self):
+        """
   GetNearPlaneCorners(self: ViewportInfo) -> Array[Point3d]
 
   
@@ -663,9 +690,10 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
      Empty array if viewport is not valid.
   """
-  pass
- def GetObjectData(self,info,context):
-  """
+        pass
+
+    def GetObjectData(self, info, context):
+        """
   GetObjectData(self: ViewportInfo,info: SerializationInfo,context: StreamingContext)
 
    Populates a System.Runtime.Serialization.SerializationInfo with the data needed to serialize the 
@@ -680,9 +708,10 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
    context: The destination (see System.Runtime.Serialization.StreamingContext) for this serialization.
   """
-  pass
- def GetPointDepth(self,point,distance):
-  """
+        pass
+
+    def GetPointDepth(self, point, distance):
+        """
   GetPointDepth(self: ViewportInfo,point: Point3d) -> (bool,float)
 
   
@@ -727,9 +756,10 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
      false if the bounding box does not intesect the view frustum.
   """
-  pass
- def GetScreenPort(self,near=None,far=None):
-  """
+        pass
+
+    def GetScreenPort(self, near=None, far=None):
+        """
   GetScreenPort(self: ViewportInfo) -> Rectangle
 
   
@@ -762,9 +792,10 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
    Returns: The rectangle,or System.Drawing.Rectangle.EmptyEmpty rectangle on error.
   """
-  pass
- def GetSphereDepth(self,sphere,nearDistance,farDistance):
-  """
+        pass
+
+    def GetSphereDepth(self, sphere, nearDistance, farDistance):
+        """
   GetSphereDepth(self: ViewportInfo,sphere: Sphere) -> (bool,float,float)
 
   
@@ -781,9 +812,10 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
     false if the sphere does not intesect the view frustum.
   """
-  pass
- def GetWorldToScreenScale(self,pointInFrustum):
-  """
+        pass
+
+    def GetWorldToScreenScale(self, pointInFrustum):
+        """
   GetWorldToScreenScale(self: ViewportInfo,pointInFrustum: Point3d) -> float
 
   
@@ -796,9 +828,10 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
    Returns: number of pixels per world unit at the 3d point.
   """
-  pass
- def GetXform(self,sourceSystem,destinationSystem):
-  """
+        pass
+
+    def GetXform(self, sourceSystem, destinationSystem):
+        """
   GetXform(self: ViewportInfo,sourceSystem: CoordinateSystem,destinationSystem: CoordinateSystem) -> Transform
 
   
@@ -813,9 +846,10 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
    Returns: The 4x4 transformation matrix (acts on the left).
   """
-  pass
- def SetCameraDirection(self,direction):
-  """
+        pass
+
+    def SetCameraDirection(self, direction):
+        """
   SetCameraDirection(self: ViewportInfo,direction: Vector3d) -> bool
 
   
@@ -828,9 +862,10 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
    Returns: true if the direction was set; otherwise false.
   """
-  pass
- def SetCameraLocation(self,location):
-  """
+        pass
+
+    def SetCameraLocation(self, location):
+        """
   SetCameraLocation(self: ViewportInfo,location: Point3d) -> bool
 
   
@@ -839,9 +874,10 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
    Returns: true if the operation succeeded; otherwise,false.
   """
-  pass
- def SetCameraUp(self,up):
-  """
+        pass
+
+    def SetCameraUp(self, up):
+        """
   SetCameraUp(self: ViewportInfo,up: Vector3d) -> bool
 
   
@@ -854,9 +890,10 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
    Returns: true if the direction was set; otherwise false.
   """
-  pass
- def SetFrustum(self,left,right,bottom,top,nearDistance,farDistance):
-  """
+        pass
+
+    def SetFrustum(self, left, right, bottom, top, nearDistance, farDistance):
+        """
   SetFrustum(self: ViewportInfo,left: float,right: float,bottom: float,top: float,nearDistance: float,farDistance: float) -> bool
 
   
@@ -887,9 +924,10 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
    Returns: true if operation succeeded; otherwise,false.
   """
-  pass
- def SetFrustumNearFar(self,*__args):
-  """
+        pass
+
+    def SetFrustumNearFar(self, *__args):
+        """
   SetFrustumNearFar(self: ViewportInfo,nearDistance: float,farDistance: float) -> bool
 
   
@@ -992,9 +1030,10 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
    Returns: true if operation succeeded; otherwise,false.
   """
-  pass
- def SetScreenPort(self,*__args):
-  """
+        pass
+
+    def SetScreenPort(self, *__args):
+        """
   SetScreenPort(self: ViewportInfo,windowRectangle: Rectangle) -> bool
 
   
@@ -1109,9 +1148,10 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
    Returns: true if input is valid.
   """
-  pass
- def TargetDistance(self,useFrustumCenterFallback):
-  """
+        pass
+
+    def TargetDistance(self, useFrustumCenterFallback):
+        """
   TargetDistance(self: ViewportInfo,useFrustumCenterFallback: bool) -> float
 
   
@@ -1160,23 +1200,26 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
      when the input of view is not valid.
   """
-  pass
- def UnlockCamera(self):
-  """
+        pass
+
+    def UnlockCamera(self):
+        """
   UnlockCamera(self: ViewportInfo)
 
    Unlocks the camera vectors and location.
   """
-  pass
- def UnlockFrustumSymmetry(self):
-  """
+        pass
+
+    def UnlockFrustumSymmetry(self):
+        """
   UnlockFrustumSymmetry(self: ViewportInfo)
 
    Unlocks frustum horizontal and vertical symmetries.
   """
-  pass
- def ZoomToScreenRect(self,*__args):
-  """
+        pass
+
+    def ZoomToScreenRect(self, *__args):
+        """
   ZoomToScreenRect(self: ViewportInfo,windowRectangle: Rectangle) -> bool
 
   
@@ -1231,43 +1274,52 @@ class ViewportInfo(object,IDisposable,ISerializable):
 
    Returns: true if the operation succeeded; otherwise,false.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,other: ViewportInfo)
 
   __new__(cls: type,rhinoViewport: RhinoViewport)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Camera35mmLensLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This property assumes the camera is horizontal and crop the
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Camera35mmLensLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """This property assumes the camera is horizontal and crop the
 
    film rather than the image when the aspect of the frustum
 
@@ -1287,8 +1339,10 @@ Set: Camera35mmLensLength(self: ViewportInfo)=value
 
 """
 
- CameraAngle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the 1/2 smallest angle. See Rhino.DocObjects.ViewportInfo.GetCameraAngles(System.Double@,System.Double@,System.Double@) for more information.
+    CameraAngle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the 1/2 smallest angle. See Rhino.DocObjects.ViewportInfo.GetCameraAngles(System.Double@,System.Double@,System.Double@) for more information.
 
 
 
@@ -1300,8 +1354,10 @@ Set: CameraAngle(self: ViewportInfo)=value
 
 """
 
- CameraDirection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the direction that the camera faces.
+    CameraDirection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the direction that the camera faces.
 
 
 
@@ -1311,8 +1367,10 @@ Get: CameraDirection(self: ViewportInfo) -> Vector3d
 
 """
 
- CameraLocation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the camera location (position) point.
+    CameraLocation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the camera location (position) point.
 
 
 
@@ -1322,8 +1380,8 @@ Get: CameraLocation(self: ViewportInfo) -> Point3d
 
 """
 
- CameraUp=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the camera up vector.
+    CameraUp = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the camera up vector.
 
 
 
@@ -1333,8 +1391,8 @@ Get: CameraUp(self: ViewportInfo) -> Vector3d
 
 """
 
- CameraX=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the unit "to the right" vector.
+    CameraX = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the unit "to the right" vector.
 
 
 
@@ -1344,8 +1402,8 @@ Get: CameraX(self: ViewportInfo) -> Vector3d
 
 """
 
- CameraY=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the unit "up" vector.
+    CameraY = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the unit "up" vector.
 
 
 
@@ -1355,8 +1413,8 @@ Get: CameraY(self: ViewportInfo) -> Vector3d
 
 """
 
- CameraZ=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the unit vector in -CameraDirection.
+    CameraZ = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the unit vector in -CameraDirection.
 
 
 
@@ -1366,8 +1424,10 @@ Get: CameraZ(self: ViewportInfo) -> Vector3d
 
 """
 
- FrustumAspect=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Setting FrustumAspect changes the larger of the frustum's width/height
+    FrustumAspect = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Setting FrustumAspect changes the larger of the frustum's width/height
 
    so that the resulting value of width/height matches the requested
 
@@ -1389,8 +1449,10 @@ Set: FrustumAspect(self: ViewportInfo)=value
 
 """
 
- FrustumBottom=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the frustum bottom value. This is -top if the frustum has a horizontal symmetry axis.
+    FrustumBottom = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the frustum bottom value. This is -top if the frustum has a horizontal symmetry axis.
 
    This number is usually negative.
 
@@ -1402,8 +1464,10 @@ Get: FrustumBottom(self: ViewportInfo) -> float
 
 """
 
- FrustumBottomPlane=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the frustum bottom plane that separates visibile from off-screen.
+    FrustumBottomPlane = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the frustum bottom plane that separates visibile from off-screen.
 
 
 
@@ -1413,8 +1477,10 @@ Get: FrustumBottomPlane(self: ViewportInfo) -> Plane
 
 """
 
- FrustumCenter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the frustum center point.
+    FrustumCenter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the frustum center point.
 
 
 
@@ -1424,8 +1490,10 @@ Get: FrustumCenter(self: ViewportInfo) -> Point3d
 
 """
 
- FrustumFar=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the frustum far-cutting value.
+    FrustumFar = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the frustum far-cutting value.
 
 
 
@@ -1435,8 +1503,10 @@ Get: FrustumFar(self: ViewportInfo) -> float
 
 """
 
- FrustumFarPlane=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets far clipping plane if camera and frustum
+    FrustumFarPlane = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets far clipping plane if camera and frustum
 
    are valid.  The plane's frame is the same as the camera's
 
@@ -1454,8 +1524,10 @@ Get: FrustumFarPlane(self: ViewportInfo) -> Plane
 
 """
 
- FrustumHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the frustum height. This is Rhino.DocObjects.ViewportInfo.FrustumTop - Rhino.DocObjects.ViewportInfo.FrustumBottom.
+    FrustumHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the frustum height. This is Rhino.DocObjects.ViewportInfo.FrustumTop - Rhino.DocObjects.ViewportInfo.FrustumBottom.
 
 
 
@@ -1465,8 +1537,10 @@ Get: FrustumHeight(self: ViewportInfo) -> float
 
 """
 
- FrustumLeft=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the frustum left value. This is -right if the frustum has a vertical symmetry axis.
+    FrustumLeft = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the frustum left value. This is -right if the frustum has a vertical symmetry axis.
 
    This number is usually negative.
 
@@ -1478,8 +1552,10 @@ Get: FrustumLeft(self: ViewportInfo) -> float
 
 """
 
- FrustumLeftPlane=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the frustum left plane that separates visibile from off-screen.
+    FrustumLeftPlane = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the frustum left plane that separates visibile from off-screen.
 
 
 
@@ -1489,8 +1565,10 @@ Get: FrustumLeftPlane(self: ViewportInfo) -> Plane
 
 """
 
- FrustumMaximumDiameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the frustum maximum diameter,or the maximum between Rhino.DocObjects.ViewportInfo.FrustumWidth and Rhino.DocObjects.ViewportInfo.FrustumHeight.
+    FrustumMaximumDiameter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the frustum maximum diameter,or the maximum between Rhino.DocObjects.ViewportInfo.FrustumWidth and Rhino.DocObjects.ViewportInfo.FrustumHeight.
 
 
 
@@ -1500,8 +1578,10 @@ Get: FrustumMaximumDiameter(self: ViewportInfo) -> float
 
 """
 
- FrustumMinimumDiameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the frustum minimum diameter,or the minimum between Rhino.DocObjects.ViewportInfo.FrustumWidth and Rhino.DocObjects.ViewportInfo.FrustumHeight.
+    FrustumMinimumDiameter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the frustum minimum diameter,or the minimum between Rhino.DocObjects.ViewportInfo.FrustumWidth and Rhino.DocObjects.ViewportInfo.FrustumHeight.
 
 
 
@@ -1511,8 +1591,10 @@ Get: FrustumMinimumDiameter(self: ViewportInfo) -> float
 
 """
 
- FrustumNear=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the frustum near-cutting value.
+    FrustumNear = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the frustum near-cutting value.
 
 
 
@@ -1522,8 +1604,10 @@ Get: FrustumNear(self: ViewportInfo) -> float
 
 """
 
- FrustumNearPlane=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets near clipping plane if camera and frustum
+    FrustumNearPlane = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets near clipping plane if camera and frustum
 
    are valid.  The plane's frame is the same as the camera's
 
@@ -1543,8 +1627,10 @@ Get: FrustumNearPlane(self: ViewportInfo) -> Plane
 
 """
 
- FrustumRight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the frustum right value. This is -left if the frustum has a vertical symmetry axis.
+    FrustumRight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the frustum right value. This is -left if the frustum has a vertical symmetry axis.
 
    This number is usually positive.
 
@@ -1556,8 +1642,10 @@ Get: FrustumRight(self: ViewportInfo) -> float
 
 """
 
- FrustumRightPlane=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the frustum right plane that separates visibile from off-screen.
+    FrustumRightPlane = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the frustum right plane that separates visibile from off-screen.
 
 
 
@@ -1567,8 +1655,10 @@ Get: FrustumRightPlane(self: ViewportInfo) -> Plane
 
 """
 
- FrustumTop=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the frustum top value. This is -bottom if the frustum has a horizontal symmetry axis.
+    FrustumTop = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the frustum top value. This is -bottom if the frustum has a horizontal symmetry axis.
 
    This number is usually positive.
 
@@ -1580,8 +1670,10 @@ Get: FrustumTop(self: ViewportInfo) -> float
 
 """
 
- FrustumTopPlane=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the frustum top plane that separates visibile from off-screen.
+    FrustumTopPlane = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the frustum top plane that separates visibile from off-screen.
 
 
 
@@ -1591,8 +1683,10 @@ Get: FrustumTopPlane(self: ViewportInfo) -> Plane
 
 """
 
- FrustumWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the frustum width. This is Rhino.DocObjects.ViewportInfo.FrustumRight - Rhino.DocObjects.ViewportInfo.FrustumLeft.
+    FrustumWidth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the frustum width. This is Rhino.DocObjects.ViewportInfo.FrustumRight - Rhino.DocObjects.ViewportInfo.FrustumLeft.
 
 
 
@@ -1602,8 +1696,8 @@ Get: FrustumWidth(self: ViewportInfo) -> float
 
 """
 
- Id=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Sets the viewport's id to the value used to 
+    Id = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Sets the viewport's id to the value used to 
 
    uniquely identify this viewport.
 
@@ -1623,8 +1717,10 @@ Get: Id(self: ViewportInfo) -> Guid
 
 """
 
- IsCameraDirectionLocked=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether the direction that the camera faces is unmodifiable.
+    IsCameraDirectionLocked = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether the direction that the camera faces is unmodifiable.
 
 
 
@@ -1636,8 +1732,10 @@ Set: IsCameraDirectionLocked(self: ViewportInfo)=value
 
 """
 
- IsCameraLocationLocked=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether the camera location is unmodifiable.
+    IsCameraLocationLocked = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether the camera location is unmodifiable.
 
 
 
@@ -1649,8 +1747,10 @@ Set: IsCameraLocationLocked(self: ViewportInfo)=value
 
 """
 
- IsCameraUpLocked=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether the camera up vector is unmodifiable.
+    IsCameraUpLocked = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether the camera up vector is unmodifiable.
 
 
 
@@ -1662,8 +1762,10 @@ Set: IsCameraUpLocked(self: ViewportInfo)=value
 
 """
 
- IsFrustumLeftRightSymmetric=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether the camera frustum has a vertical symmetry axis.
+    IsFrustumLeftRightSymmetric = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether the camera frustum has a vertical symmetry axis.
 
 
 
@@ -1675,8 +1777,10 @@ Set: IsFrustumLeftRightSymmetric(self: ViewportInfo)=value
 
 """
 
- IsFrustumTopBottomSymmetric=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether the camera frustum has a horizontal symmetry axis.
+    IsFrustumTopBottomSymmetric = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether the camera frustum has a horizontal symmetry axis.
 
 
 
@@ -1688,8 +1792,10 @@ Set: IsFrustumTopBottomSymmetric(self: ViewportInfo)=value
 
 """
 
- IsParallelProjection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get or set whether this projection is parallel.
+    IsParallelProjection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get or set whether this projection is parallel.
 
 
 
@@ -1701,8 +1807,10 @@ Set: IsParallelProjection(self: ViewportInfo)=value
 
 """
 
- IsPerspectiveProjection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get or set whether this projection is perspective.
+    IsPerspectiveProjection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get or set whether this projection is perspective.
 
 
 
@@ -1714,8 +1822,10 @@ Set: IsPerspectiveProjection(self: ViewportInfo)=value
 
 """
 
- IsTwoPointPerspectiveProjection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether this projection is a two-point perspective.
+    IsTwoPointPerspectiveProjection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether this projection is a two-point perspective.
 
 
 
@@ -1725,8 +1835,8 @@ Get: IsTwoPointPerspectiveProjection(self: ViewportInfo) -> bool
 
 """
 
- IsValid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether this complete object is valid.
+    IsValid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether this complete object is valid.
 
 
 
@@ -1736,8 +1846,10 @@ Get: IsValid(self: ViewportInfo) -> bool
 
 """
 
- IsValidCamera=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the camera is valid.
+    IsValidCamera = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the camera is valid.
 
 
 
@@ -1747,8 +1859,10 @@ Get: IsValidCamera(self: ViewportInfo) -> bool
 
 """
 
- IsValidFrustum=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the frustum is valid.
+    IsValidFrustum = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the frustum is valid.
 
 
 
@@ -1758,8 +1872,10 @@ Get: IsValidFrustum(self: ViewportInfo) -> bool
 
 """
 
- ScreenPortAspect=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the sceen aspect ratio.
+    ScreenPortAspect = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the sceen aspect ratio.
 
    This is width / height.
 
@@ -1771,8 +1887,10 @@ Get: ScreenPortAspect(self: ViewportInfo) -> float
 
 """
 
- TargetPoint=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The current value of the target point.  This point does not play
+    TargetPoint = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The current value of the target point.  This point does not play
 
    a role in the view projection calculations.  It can be used as a 
 
@@ -1796,8 +1914,8 @@ Set: TargetPoint(self: ViewportInfo)=value
 
 """
 
- ViewScale=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Applies scaling factors to parallel projection clipping coordinates
+    ViewScale = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Applies scaling factors to parallel projection clipping coordinates
 
    by setting the m_clip_mod transformation. 
 
@@ -1816,6 +1934,4 @@ Set: ViewScale(self: ViewportInfo)=value
 """
 
 
-
 # variables with complex values
-

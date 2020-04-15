@@ -1,5 +1,5 @@
-class Sphere(object,IEpsilonComparable[Sphere]):
- """
+class Sphere(object, IEpsilonComparable[Sphere]):
+    """
  Represents the plane and radius values of a sphere.
 
  
@@ -8,8 +8,9 @@ class Sphere(object,IEpsilonComparable[Sphere]):
 
  Sphere(equatorialPlane: Plane,radius: float)
  """
- def ClosestParameter(self,testPoint,longitudeRadians,latitudeRadians):
-  """
+
+    def ClosestParameter(self, testPoint, longitudeRadians, latitudeRadians):
+        """
   ClosestParameter(self: Sphere,testPoint: Point3d) -> (bool,float,float)
 
   
@@ -24,9 +25,10 @@ class Sphere(object,IEpsilonComparable[Sphere]):
 
     sphere center.
   """
-  pass
- def ClosestPoint(self,testPoint):
-  """
+        pass
+
+    def ClosestPoint(self, testPoint):
+        """
   ClosestPoint(self: Sphere,testPoint: Point3d) -> Point3d
 
   
@@ -39,22 +41,25 @@ class Sphere(object,IEpsilonComparable[Sphere]):
 
    Returns: Point on sphere surface closest to testPoint.
   """
-  pass
- def EpsilonEquals(self,other,epsilon):
-  """
+        pass
+
+    def EpsilonEquals(self, other, epsilon):
+        """
   EpsilonEquals(self: Sphere,other: Sphere,epsilon: float) -> bool
 
   
 
    Check that all values in other are within epsilon of the values in this
   """
-  pass
- @staticmethod
- def FitSphereToPoints(points):
-  """ FitSphereToPoints(points: IEnumerable[Point3d]) -> Sphere """
-  pass
- def LatitudeDegrees(self,degrees):
-  """
+        pass
+
+    @staticmethod
+    def FitSphereToPoints(points):
+        """ FitSphereToPoints(points: IEnumerable[Point3d]) -> Sphere """
+        pass
+
+    def LatitudeDegrees(self, degrees):
+        """
   LatitudeDegrees(self: Sphere,degrees: float) -> Circle
 
   
@@ -73,9 +78,10 @@ class Sphere(object,IEpsilonComparable[Sphere]):
 
    Returns: A circle.
   """
-  pass
- def LatitudeRadians(self,radians):
-  """
+        pass
+
+    def LatitudeRadians(self, radians):
+        """
   LatitudeRadians(self: Sphere,radians: float) -> Circle
 
   
@@ -94,9 +100,10 @@ class Sphere(object,IEpsilonComparable[Sphere]):
 
    Returns: A circle.
   """
-  pass
- def LongitudeDegrees(self,degrees):
-  """
+        pass
+
+    def LongitudeDegrees(self, degrees):
+        """
   LongitudeDegrees(self: Sphere,degrees: float) -> Circle
 
   
@@ -115,9 +122,10 @@ class Sphere(object,IEpsilonComparable[Sphere]):
 
    Returns: A circle.
   """
-  pass
- def LongitudeRadians(self,radians):
-  """
+        pass
+
+    def LongitudeRadians(self, radians):
+        """
   LongitudeRadians(self: Sphere,radians: float) -> Circle
 
   
@@ -136,9 +144,10 @@ class Sphere(object,IEpsilonComparable[Sphere]):
 
    Returns: A circle.
   """
-  pass
- def NormalAt(self,longitudeRadians,latitudeRadians):
-  """
+        pass
+
+    def NormalAt(self, longitudeRadians, latitudeRadians):
+        """
   NormalAt(self: Sphere,longitudeRadians: float,latitudeRadians: float) -> Vector3d
 
   
@@ -153,9 +162,10 @@ class Sphere(object,IEpsilonComparable[Sphere]):
 
    Returns: A vector.
   """
-  pass
- def PointAt(self,longitudeRadians,latitudeRadians):
-  """
+        pass
+
+    def PointAt(self, longitudeRadians, latitudeRadians):
+        """
   PointAt(self: Sphere,longitudeRadians: float,latitudeRadians: float) -> Point3d
 
   
@@ -170,9 +180,10 @@ class Sphere(object,IEpsilonComparable[Sphere]):
 
    Returns: A point value.
   """
-  pass
- def Rotate(self,*__args):
-  """
+        pass
+
+    def Rotate(self, *__args):
+        """
   Rotate(self: Sphere,sinAngle: float,cosAngle: float,axisOfRotation: Vector3d,centerOfRotation: Point3d) -> bool
 
   
@@ -237,18 +248,20 @@ class Sphere(object,IEpsilonComparable[Sphere]):
 
    Returns: true on success; false on failure.
   """
-  pass
- def ToBrep(self):
-  """
+        pass
+
+    def ToBrep(self):
+        """
   ToBrep(self: Sphere) -> Brep
 
   
 
    Converts this sphere is it Brep representation
   """
-  pass
- def ToNurbsSurface(self):
-  """
+        pass
+
+    def ToNurbsSurface(self):
+        """
   ToNurbsSurface(self: Sphere) -> NurbsSurface
 
   
@@ -263,9 +276,10 @@ class Sphere(object,IEpsilonComparable[Sphere]):
 
    Returns: A nurbs surface representation of this sphere or null.
   """
-  pass
- def ToRevSurface(self):
-  """
+        pass
+
+    def ToRevSurface(self):
+        """
   ToRevSurface(self: Sphere) -> RevSurface
 
   
@@ -280,9 +294,10 @@ class Sphere(object,IEpsilonComparable[Sphere]):
 
    Returns: A surface of revolution representation of this sphere or null.
   """
-  pass
- def Transform(self,xform):
-  """
+        pass
+
+    def Transform(self, xform):
+        """
   Transform(self: Sphere,xform: Transform) -> bool
 
   
@@ -301,9 +316,10 @@ class Sphere(object,IEpsilonComparable[Sphere]):
 
    Returns: true on success,false on failure.
   """
-  pass
- def Translate(self,delta):
-  """
+        pass
+
+    def Translate(self, delta):
+        """
   Translate(self: Sphere,delta: Vector3d) -> bool
 
   
@@ -316,13 +332,15 @@ class Sphere(object,IEpsilonComparable[Sphere]):
 
    Returns: true on success; false on failure.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__[Sphere]() -> Sphere
 
   
@@ -331,16 +349,22 @@ class Sphere(object,IEpsilonComparable[Sphere]):
 
   __new__(cls: type,equatorialPlane: Plane,radius: float)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- BoundingBox=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the world aligned boundingbox for this Sphere. 
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    BoundingBox = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the world aligned boundingbox for this Sphere. 
 
    If the Sphere is Invalid,an empty box is returned.
 
@@ -352,8 +376,8 @@ Get: BoundingBox(self: Sphere) -> BoundingBox
 
 """
 
- Center=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the center point of the sphere.
+    Center = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the center point of the sphere.
 
 
 
@@ -365,8 +389,8 @@ Set: Center(self: Sphere)=value
 
 """
 
- Diameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the diameter for this sphere.
+    Diameter = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the diameter for this sphere.
 
 
 
@@ -378,8 +402,10 @@ Set: Diameter(self: Sphere)=value
 
 """
 
- EquitorialPlane=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Equatorial plane for this sphere.
+    EquitorialPlane = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the Equatorial plane for this sphere.
 
 
 
@@ -391,8 +417,8 @@ Set: EquitorialPlane(self: Sphere)=value
 
 """
 
- IsValid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the sphere is valid.
+    IsValid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether the sphere is valid.
 
 
 
@@ -402,8 +428,8 @@ Get: IsValid(self: Sphere) -> bool
 
 """
 
- NorthPole=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the point at the North Pole of the sphere.
+    NorthPole = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the point at the North Pole of the sphere.
 
    This is the parameterization singularity that can be obtained,
 
@@ -417,8 +443,8 @@ Get: NorthPole(self: Sphere) -> Point3d
 
 """
 
- Radius=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Radius for this sphere.
+    Radius = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Radius for this sphere.
 
 
 
@@ -430,8 +456,8 @@ Set: Radius(self: Sphere)=value
 
 """
 
- SouthPole=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the point at the South Pole of the sphere.
+    SouthPole = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the point at the South Pole of the sphere.
 
    This is the parameterization singularity that can be obtained,
 
@@ -445,6 +471,4 @@ Get: SouthPole(self: Sphere) -> Point3d
 
 """
 
-
- Unset=None
-
+    Unset = None

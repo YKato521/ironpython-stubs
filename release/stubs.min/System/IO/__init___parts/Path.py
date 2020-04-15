@@ -1,8 +1,9 @@
 class Path(object):
- """ Performs operations on System.String instances that contain file or directory path information. These operations are performed in a cross-platform manner. """
- @staticmethod
- def ChangeExtension(path,extension):
-  """
+    """ Performs operations on System.String instances that contain file or directory path information. These operations are performed in a cross-platform manner. """
+
+    @staticmethod
+    def ChangeExtension(path, extension):
+        """
   ChangeExtension(path: str,extension: str) -> str
 
   
@@ -31,10 +32,11 @@ class Path(object):
 
     extension is not null,the returned path string contains extension appended to the end of path.
   """
-  pass
- @staticmethod
- def Combine(*__args):
-  """
+        pass
+
+    @staticmethod
+    def Combine(*__args):
+        """
   Combine(path1: str,path2: str,path3: str,path4: str) -> str
 
   
@@ -99,10 +101,11 @@ class Path(object):
 
    Returns: The combined paths.
   """
-  pass
- @staticmethod
- def GetDirectoryName(path):
-  """
+        pass
+
+    @staticmethod
+    def GetDirectoryName(path):
+        """
   GetDirectoryName(path: str) -> str
 
   
@@ -117,10 +120,11 @@ class Path(object):
 
     System.String.Empty if path does not contain directory information.
   """
-  pass
- @staticmethod
- def GetExtension(path):
-  """
+        pass
+
+    @staticmethod
+    def GetExtension(path):
+        """
   GetExtension(path: str) -> str
 
   
@@ -137,10 +141,11 @@ class Path(object):
 
     extension information,System.IO.Path.GetExtension(System.String) returns System.String.Empty.
   """
-  pass
- @staticmethod
- def GetFileName(path):
-  """
+        pass
+
+    @staticmethod
+    def GetFileName(path):
+        """
   GetFileName(path: str) -> str
 
   
@@ -157,10 +162,11 @@ class Path(object):
 
     null,this method returns null.
   """
-  pass
- @staticmethod
- def GetFileNameWithoutExtension(path):
-  """
+        pass
+
+    @staticmethod
+    def GetFileNameWithoutExtension(path):
+        """
   GetFileNameWithoutExtension(path: str) -> str
 
   
@@ -175,10 +181,11 @@ class Path(object):
 
     all characters following it.
   """
-  pass
- @staticmethod
- def GetFullPath(path):
-  """
+        pass
+
+    @staticmethod
+    def GetFullPath(path):
+        """
   GetFullPath(path: str) -> str
 
   
@@ -191,10 +198,11 @@ class Path(object):
 
    Returns: The fully qualified location of path,such as "C:\MyFile.txt".
   """
-  pass
- @staticmethod
- def GetInvalidFileNameChars():
-  """
+        pass
+
+    @staticmethod
+    def GetInvalidFileNameChars():
+        """
   GetInvalidFileNameChars() -> Array[Char]
 
   
@@ -203,10 +211,11 @@ class Path(object):
 
    Returns: An array containing the characters that are not allowed in file names.
   """
-  pass
- @staticmethod
- def GetInvalidPathChars():
-  """
+        pass
+
+    @staticmethod
+    def GetInvalidPathChars():
+        """
   GetInvalidPathChars() -> Array[Char]
 
   
@@ -215,10 +224,11 @@ class Path(object):
 
    Returns: An array containing the characters that are not allowed in path names.
   """
-  pass
- @staticmethod
- def GetPathRoot(path):
-  """
+        pass
+
+    @staticmethod
+    def GetPathRoot(path):
+        """
   GetPathRoot(path: str) -> str
 
   
@@ -233,10 +243,11 @@ class Path(object):
 
     does not contain root directory information.
   """
-  pass
- @staticmethod
- def GetRandomFileName():
-  """
+        pass
+
+    @staticmethod
+    def GetRandomFileName():
+        """
   GetRandomFileName() -> str
 
   
@@ -245,10 +256,11 @@ class Path(object):
 
    Returns: A random folder name or file name.
   """
-  pass
- @staticmethod
- def GetTempFileName():
-  """
+        pass
+
+    @staticmethod
+    def GetTempFileName():
+        """
   GetTempFileName() -> str
 
   
@@ -261,10 +273,11 @@ class Path(object):
 
    Returns: The full path of the temporary file.
   """
-  pass
- @staticmethod
- def GetTempPath():
-  """
+        pass
+
+    @staticmethod
+    def GetTempPath():
+        """
   GetTempPath() -> str
 
   
@@ -273,10 +286,11 @@ class Path(object):
 
    Returns: The path to the temporary folder,ending with a backslash.
   """
-  pass
- @staticmethod
- def HasExtension(path):
-  """
+        pass
+
+    @staticmethod
+    def HasExtension(path):
+        """
   HasExtension(path: str) -> bool
 
   
@@ -291,10 +305,11 @@ class Path(object):
 
     (:) in the path include a period (.) followed by one or more characters; otherwise,false.
   """
-  pass
- @staticmethod
- def IsPathRooted(path):
-  """
+        pass
+
+    @staticmethod
+    def IsPathRooted(path):
+        """
   IsPathRooted(path: str) -> bool
 
   
@@ -307,32 +322,32 @@ class Path(object):
 
    Returns: true if path contains a root; otherwise,false.
   """
-  pass
- AltDirectorySeparatorChar=None
- DirectorySeparatorChar=None
- InvalidPathChars=None
- PathSeparator=None
- VolumeSeparatorChar=None
- __all__=[
-  'AltDirectorySeparatorChar',
-  'ChangeExtension',
-  'Combine',
-  'DirectorySeparatorChar',
-  'GetDirectoryName',
-  'GetExtension',
-  'GetFileName',
-  'GetFileNameWithoutExtension',
-  'GetFullPath',
-  'GetInvalidFileNameChars',
-  'GetInvalidPathChars',
-  'GetPathRoot',
-  'GetRandomFileName',
-  'GetTempFileName',
-  'GetTempPath',
-  'HasExtension',
-  'InvalidPathChars',
-  'IsPathRooted',
-  'PathSeparator',
-  'VolumeSeparatorChar',
- ]
+        pass
 
+    AltDirectorySeparatorChar = None
+    DirectorySeparatorChar = None
+    InvalidPathChars = None
+    PathSeparator = None
+    VolumeSeparatorChar = None
+    __all__ = [
+        "AltDirectorySeparatorChar",
+        "ChangeExtension",
+        "Combine",
+        "DirectorySeparatorChar",
+        "GetDirectoryName",
+        "GetExtension",
+        "GetFileName",
+        "GetFileNameWithoutExtension",
+        "GetFullPath",
+        "GetInvalidFileNameChars",
+        "GetInvalidPathChars",
+        "GetPathRoot",
+        "GetRandomFileName",
+        "GetTempFileName",
+        "GetTempPath",
+        "HasExtension",
+        "InvalidPathChars",
+        "IsPathRooted",
+        "PathSeparator",
+        "VolumeSeparatorChar",
+    ]

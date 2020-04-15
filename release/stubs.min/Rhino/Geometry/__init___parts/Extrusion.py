@@ -1,5 +1,5 @@
-class Extrusion(Surface,IDisposable,ISerializable):
- """
+class Extrusion(Surface, IDisposable, ISerializable):
+    """
  Represents an extrusion,or objects such as beams or linearly extruded elements,
 
     that can be represented by profile curves and two miter planes at the extremes.
@@ -8,8 +8,9 @@ class Extrusion(Surface,IDisposable,ISerializable):
 
  Extrusion()
  """
- def AddInnerProfile(self,innerProfile):
-  """
+
+    def AddInnerProfile(self, innerProfile):
+        """
   AddInnerProfile(self: Extrusion,innerProfile: Curve) -> bool
 
   
@@ -22,9 +23,10 @@ class Extrusion(Surface,IDisposable,ISerializable):
 
    Returns: true if the profile was set.
   """
-  pass
- def ConstructConstObject(self,*args):
-  """
+        pass
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -35,10 +37,11 @@ class Extrusion(Surface,IDisposable,ISerializable):
 
    subobject_index: The subobject index.
   """
-  pass
- @staticmethod
- def Create(planarCurve,height,cap):
-  """
+        pass
+
+    @staticmethod
+    def Create(planarCurve, height, cap):
+        """
   Create(planarCurve: Curve,height: float,cap: bool) -> Extrusion
 
   
@@ -71,10 +74,11 @@ class Extrusion(Surface,IDisposable,ISerializable):
 
    Returns: If the input is valid,then a new extrusion is returned. Otherwise null is returned
   """
-  pass
- @staticmethod
- def CreateCylinderExtrusion(cylinder,capBottom,capTop):
-  """
+        pass
+
+    @staticmethod
+    def CreateCylinderExtrusion(cylinder, capBottom, capTop):
+        """
   CreateCylinderExtrusion(cylinder: Cylinder,capBottom: bool,capTop: bool) -> Extrusion
 
   
@@ -91,10 +95,11 @@ class Extrusion(Surface,IDisposable,ISerializable):
 
    Returns: Extrusion on success. null on failure.
   """
-  pass
- @staticmethod
- def CreatePipeExtrusion(cylinder,otherRadius,capTop,capBottom):
-  """
+        pass
+
+    @staticmethod
+    def CreatePipeExtrusion(cylinder, otherRadius, capTop, capBottom):
+        """
   CreatePipeExtrusion(cylinder: Cylinder,otherRadius: float,capTop: bool,capBottom: bool) -> Extrusion
 
   
@@ -119,9 +124,10 @@ class Extrusion(Surface,IDisposable,ISerializable):
 
    Returns: Extrusion on success. null on failure.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: CommonObject,disposing: bool)
 
    For derived class implementers.
@@ -146,9 +152,10 @@ class Extrusion(Surface,IDisposable,ISerializable):
 
     finalizer.
   """
-  pass
- def GetMesh(self,meshType):
-  """
+        pass
+
+    def GetMesh(self, meshType):
+        """
   GetMesh(self: Extrusion,meshType: MeshType) -> Mesh
 
   
@@ -161,9 +168,10 @@ class Extrusion(Surface,IDisposable,ISerializable):
 
    Returns: A mesh.
   """
-  pass
- def GetPathPlane(self,s):
-  """
+        pass
+
+    def GetPathPlane(self, s):
+        """
   GetPathPlane(self: Extrusion,s: float) -> Plane
 
   
@@ -178,9 +186,10 @@ class Extrusion(Surface,IDisposable,ISerializable):
 
    Returns: A plane. The plane is Invalid on failure.
   """
-  pass
- def GetProfilePlane(self,s):
-  """
+        pass
+
+    def GetProfilePlane(self, s):
+        """
   GetProfilePlane(self: Extrusion,s: float) -> Plane
 
   
@@ -195,9 +204,10 @@ class Extrusion(Surface,IDisposable,ISerializable):
 
    Returns: A plane. The plane is Invalid on failure.
   """
-  pass
- def GetProfileTransformation(self,s):
-  """
+        pass
+
+    def GetProfileTransformation(self, s):
+        """
   GetProfileTransformation(self: Extrusion,s: float) -> Transform
 
   
@@ -212,9 +222,10 @@ class Extrusion(Surface,IDisposable,ISerializable):
 
    Returns: A Transformation. The transform is Invalid on failure.
   """
-  pass
- def GetWireframe(self):
-  """
+        pass
+
+    def GetWireframe(self):
+        """
   GetWireframe(self: Extrusion) -> Array[Curve]
 
   
@@ -223,9 +234,10 @@ class Extrusion(Surface,IDisposable,ISerializable):
 
    Returns: An array of Wireframe curves.
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: CommonObject)
 
    For derived classes implementers.
@@ -234,16 +246,18 @@ class Extrusion(Surface,IDisposable,ISerializable):
 
     instance from being const.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: GeometryBase)
 
    Is called when a non-const operation occurs.
   """
-  pass
- def PathLineCurve(self):
-  """
+        pass
+
+    def PathLineCurve(self):
+        """
   PathLineCurve(self: Extrusion) -> LineCurve
 
   
@@ -252,9 +266,10 @@ class Extrusion(Surface,IDisposable,ISerializable):
 
    Returns: The path as a line curve.
   """
-  pass
- def Profile3d(self,*__args):
-  """
+        pass
+
+    def Profile3d(self, *__args):
+        """
   Profile3d(self: Extrusion,ci: ComponentIndex) -> Curve
 
   
@@ -291,9 +306,10 @@ class Extrusion(Surface,IDisposable,ISerializable):
 
    Returns: The profile.
   """
-  pass
- def ProfileIndex(self,profileParameter):
-  """
+        pass
+
+    def ProfileIndex(self, profileParameter):
+        """
   ProfileIndex(self: Extrusion,profileParameter: float) -> int
 
   
@@ -314,9 +330,10 @@ class Extrusion(Surface,IDisposable,ISerializable):
 
     next profile,the index of the next profile is returned.
   """
-  pass
- def SetOuterProfile(self,outerProfile,cap):
-  """
+        pass
+
+    def SetOuterProfile(self, outerProfile, cap):
+        """
   SetOuterProfile(self: Extrusion,outerProfile: Curve,cap: bool) -> bool
 
   
@@ -347,9 +364,10 @@ class Extrusion(Surface,IDisposable,ISerializable):
 
      has a profile,the set will fail.
   """
-  pass
- def SetPathAndUp(self,a,b,up):
-  """
+        pass
+
+    def SetPathAndUp(self, a, b, up):
+        """
   SetPathAndUp(self: Extrusion,a: Point3d,b: Point3d,up: Vector3d) -> bool
 
   
@@ -370,9 +388,10 @@ class Extrusion(Surface,IDisposable,ISerializable):
 
     operation fail.
   """
-  pass
- def ToBrep(self,splitKinkyFaces=None):
-  """
+        pass
+
+    def ToBrep(self, splitKinkyFaces=None):
+        """
   ToBrep(self: Extrusion,splitKinkyFaces: bool) -> Brep
 
   
@@ -403,9 +422,10 @@ class Extrusion(Surface,IDisposable,ISerializable):
 
    Returns: A brep with a similar shape like this extrustion,or null on error.
   """
-  pass
- def WallEdge(self,ci):
-  """
+        pass
+
+    def WallEdge(self, ci):
+        """
   WallEdge(self: Extrusion,ci: ComponentIndex) -> Curve
 
   
@@ -418,9 +438,10 @@ class Extrusion(Surface,IDisposable,ISerializable):
 
    Returns: The profile.
   """
-  pass
- def WallSurface(self,ci):
-  """
+        pass
+
+    def WallSurface(self, ci):
+        """
   WallSurface(self: Extrusion,ci: ComponentIndex) -> Surface
 
   
@@ -433,38 +454,44 @@ class Extrusion(Surface,IDisposable,ISerializable):
 
    Returns: The surface.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self):
+        """
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
 
   __new__(cls: type)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- CapCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the amount of capping surfaces.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    CapCount = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the amount of capping surfaces.
 
 
 
@@ -474,8 +501,10 @@ Get: CapCount(self: Extrusion) -> int
 
 """
 
- IsCappedAtBottom=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the surface that fills the bottom profile is existing.
+    IsCappedAtBottom = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the surface that fills the bottom profile is existing.
 
 
 
@@ -485,8 +514,10 @@ Get: IsCappedAtBottom(self: Extrusion) -> bool
 
 """
 
- IsCappedAtTop=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the surface that fills the top profile is existing.
+    IsCappedAtTop = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the surface that fills the top profile is existing.
 
 
 
@@ -496,8 +527,10 @@ Get: IsCappedAtTop(self: Extrusion) -> bool
 
 """
 
- IsMiteredAtEnd=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether a miter plane at the end is defined.
+    IsMiteredAtEnd = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether a miter plane at the end is defined.
 
 
 
@@ -507,8 +540,10 @@ Get: IsMiteredAtEnd(self: Extrusion) -> bool
 
 """
 
- IsMiteredAtStart=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns a value indicating whether a miter plane at start is defined.
+    IsMiteredAtStart = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns a value indicating whether a miter plane at start is defined.
 
 
 
@@ -518,8 +553,8 @@ Get: IsMiteredAtStart(self: Extrusion) -> bool
 
 """
 
- IsSolid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether there is no gap among all surfaces constructing this object.
+    IsSolid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether there is no gap among all surfaces constructing this object.
 
 
 
@@ -529,8 +564,10 @@ Get: IsSolid(self: Extrusion) -> bool
 
 """
 
- MiterPlaneNormalAtEnd=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the normal of the miter plane at the end in profile coordinates.
+    MiterPlaneNormalAtEnd = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the normal of the miter plane at the end in profile coordinates.
 
    In profile coordinates,0,0,1 always maps to the extrusion axis
 
@@ -544,8 +581,10 @@ Set: MiterPlaneNormalAtEnd(self: Extrusion)=value
 
 """
 
- MiterPlaneNormalAtStart=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the normal of the miter plane at the start in profile coordinates.
+    MiterPlaneNormalAtStart = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the normal of the miter plane at the start in profile coordinates.
 
    In profile coordinates,0,0,1 always maps to the extrusion axis
 
@@ -559,8 +598,8 @@ Set: MiterPlaneNormalAtStart(self: Extrusion)=value
 
 """
 
- PathEnd=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the end point of the path.
+    PathEnd = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the end point of the path.
 
 
 
@@ -570,8 +609,8 @@ Get: PathEnd(self: Extrusion) -> Point3d
 
 """
 
- PathStart=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the start point of the path.
+    PathStart = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the start point of the path.
 
 
 
@@ -581,8 +620,10 @@ Get: PathStart(self: Extrusion) -> Point3d
 
 """
 
- PathTangent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the up vector of the path.
+    PathTangent = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the up vector of the path.
 
 
 
@@ -592,8 +633,10 @@ Get: PathTangent(self: Extrusion) -> Vector3d
 
 """
 
- ProfileCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the amount of profile curves.
+    ProfileCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the amount of profile curves.
 
 
 
@@ -602,5 +645,3 @@ Get: ProfileCount(self: Extrusion) -> int
 
 
 """
-
-

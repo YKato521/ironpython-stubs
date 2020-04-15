@@ -1,8 +1,9 @@
 class ToolStripManager(object):
- """ Controls System.Windows.Forms.ToolStrip rendering and rafting,and the merging of System.Windows.Forms.MenuStrip,System.Windows.Forms.ToolStripDropDownMenu,and System.Windows.Forms.ToolStripMenuItem objects. This class cannot be inherited. """
- @staticmethod
- def FindToolStrip(toolStripName):
-  """
+    """ Controls System.Windows.Forms.ToolStrip rendering and rafting,and the merging of System.Windows.Forms.MenuStrip,System.Windows.Forms.ToolStripDropDownMenu,and System.Windows.Forms.ToolStripMenuItem objects. This class cannot be inherited. """
+
+    @staticmethod
+    def FindToolStrip(toolStripName):
+        """
   FindToolStrip(toolStripName: str) -> ToolStrip
 
   
@@ -25,10 +26,11 @@ class ToolStripManager(object):
 
     parameter,or null if the System.Windows.Forms.ToolStrip is not found.
   """
-  pass
- @staticmethod
- def IsShortcutDefined(shortcut):
-  """
+        pass
+
+    @staticmethod
+    def IsShortcutDefined(shortcut):
+        """
   IsShortcutDefined(shortcut: Keys) -> bool
 
   
@@ -47,10 +49,11 @@ class ToolStripManager(object):
 
     false.
   """
-  pass
- @staticmethod
- def IsValidShortcut(shortcut):
-  """
+        pass
+
+    @staticmethod
+    def IsValidShortcut(shortcut):
+        """
   IsValidShortcut(shortcut: Keys) -> bool
 
   
@@ -63,10 +66,11 @@ class ToolStripManager(object):
 
    Returns: true if the shortcut key is valid; otherwise,false.
   """
-  pass
- @staticmethod
- def LoadSettings(targetForm,key=None):
-  """
+        pass
+
+    @staticmethod
+    def LoadSettings(targetForm, key=None):
+        """
   LoadSettings(targetForm: Form,key: str)
 
    Loads settings for the specified System.Windows.Forms.Form using the specified settings key.
@@ -89,10 +93,11 @@ class ToolStripManager(object):
 
    targetForm: The System.Windows.Forms.Form whose name is also the settings key.
   """
-  pass
- @staticmethod
- def Merge(sourceToolStrip,*__args):
-  """
+        pass
+
+    @staticmethod
+    def Merge(sourceToolStrip, *__args):
+        """
   Merge(sourceToolStrip: ToolStrip,targetName: str) -> bool
 
   
@@ -137,10 +142,11 @@ class ToolStripManager(object):
 
    Returns: true if the merge is successful; otherwise,false.
   """
-  pass
- @staticmethod
- def RevertMerge(*__args):
-  """
+        pass
+
+    @staticmethod
+    def RevertMerge(*__args):
+        """
   RevertMerge(targetName: str) -> bool
 
   
@@ -197,10 +203,11 @@ class ToolStripManager(object):
 
    Returns: true if the undoing of the merge is successful; otherwise,false.
   """
-  pass
- @staticmethod
- def SaveSettings(sourceForm,key=None):
-  """
+        pass
+
+    @staticmethod
+    def SaveSettings(sourceForm, key=None):
+        """
   SaveSettings(sourceForm: Form,key: str)
 
    Saves settings for the specified System.Windows.Forms.Form using the specified settings key.
@@ -223,9 +230,9 @@ class ToolStripManager(object):
 
    sourceForm: The System.Windows.Forms.Form whose name is also the settings key.
   """
-  pass
- Renderer=None
- RendererChanged=None
- RenderMode=None
- VisualStylesEnabled=False
+        pass
 
+    Renderer = None
+    RendererChanged = None
+    RenderMode = None
+    VisualStylesEnabled = False

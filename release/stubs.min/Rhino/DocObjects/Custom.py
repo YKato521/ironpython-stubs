@@ -8,13 +8,15 @@
 # no functions
 # classes
 
-class CustomBrepObject(BrepObject,IDisposable):
- # no doc
- def Dispose(self):
-  """ Dispose(self: CustomBrepObject) """
-  pass
- def OnAddToDocument(self,*args):
-  """
+
+class CustomBrepObject(BrepObject, IDisposable):
+    # no doc
+    def Dispose(self):
+        """ Dispose(self: CustomBrepObject) """
+        pass
+
+    def OnAddToDocument(self, *args):
+        """
   OnAddToDocument(self: RhinoObject,doc: RhinoDoc)
 
    This call informs an object it is about to be added to the list of
@@ -23,9 +25,10 @@ class CustomBrepObject(BrepObject,IDisposable):
 
     in the document.
   """
-  pass
- def OnDeleteFromDocument(self,*args):
-  """
+        pass
+
+    def OnDeleteFromDocument(self, *args):
+        """
   OnDeleteFromDocument(self: RhinoObject,doc: RhinoDoc)
 
    This call informs an object it is about to be deleted.
@@ -36,16 +39,18 @@ class CustomBrepObject(BrepObject,IDisposable):
 
      before they are deleted.
   """
-  pass
- def OnDraw(self,*args):
-  """
+        pass
+
+    def OnDraw(self, *args):
+        """
   OnDraw(self: RhinoObject,e: DrawEventArgs)
 
    Called when Rhino wants to draw this object
   """
-  pass
- def OnDuplicate(self,*args):
-  """
+        pass
+
+    def OnDuplicate(self, *args):
+        """
   OnDuplicate(self: RhinoObject,source: RhinoObject)
 
    Called when this a new instance of this object is created and copied from
@@ -54,9 +59,10 @@ class CustomBrepObject(BrepObject,IDisposable):
 
     existing object
   """
-  pass
- def OnPick(self,*args):
-  """
+        pass
+
+    def OnPick(self, *args):
+        """
   OnPick(self: RhinoObject,context: PickContext) -> IEnumerable[ObjRef]
 
   
@@ -67,19 +73,22 @@ class CustomBrepObject(BrepObject,IDisposable):
 
     picked given a pick context.
   """
-  pass
- def OnPicked(self,*args):
-  """ OnPicked(self: RhinoObject,context: PickContext,pickedItems: IEnumerable[ObjRef]) """
-  pass
- def OnSelectionChanged(self,*args):
-  """
+        pass
+
+    def OnPicked(self, *args):
+        """ OnPicked(self: RhinoObject,context: PickContext,pickedItems: IEnumerable[ObjRef]) """
+        pass
+
+    def OnSelectionChanged(self, *args):
+        """
   OnSelectionChanged(self: RhinoObject)
 
    Called when the selection state of this object has changed
   """
-  pass
- def OnSpaceMorph(self,*args):
-  """
+        pass
+
+    def OnSpaceMorph(self, *args):
+        """
   OnSpaceMorph(self: RhinoObject,morph: SpaceMorph)
 
    Called when a space morph has been applied to the geometry.
@@ -88,49 +97,56 @@ class CustomBrepObject(BrepObject,IDisposable):
 
     works for CustomMeshObject instances
   """
-  pass
- def OnTransform(self,*args):
-  """
+        pass
+
+    def OnTransform(self, *args):
+        """
   OnTransform(self: RhinoObject,transform: Transform)
 
    Called when a transformation has been applied to the geometry
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """
   __new__(cls: type)
 
   __new__(cls: type,brep: Brep)
   """
-  pass
+        pass
 
-class CustomCurveObject(CurveObject,IDisposable):
- # no doc
- def Dispose(self):
-  """ Dispose(self: CustomCurveObject) """
-  pass
- def OnAddToDocument(self,*args):
-  """
+
+class CustomCurveObject(CurveObject, IDisposable):
+    # no doc
+    def Dispose(self):
+        """ Dispose(self: CustomCurveObject) """
+        pass
+
+    def OnAddToDocument(self, *args):
+        """
   OnAddToDocument(self: RhinoObject,doc: RhinoDoc)
 
    This call informs an object it is about to be added to the list of
@@ -139,9 +155,10 @@ class CustomCurveObject(CurveObject,IDisposable):
 
     in the document.
   """
-  pass
- def OnDeleteFromDocument(self,*args):
-  """
+        pass
+
+    def OnDeleteFromDocument(self, *args):
+        """
   OnDeleteFromDocument(self: RhinoObject,doc: RhinoDoc)
 
    This call informs an object it is about to be deleted.
@@ -152,16 +169,18 @@ class CustomCurveObject(CurveObject,IDisposable):
 
      before they are deleted.
   """
-  pass
- def OnDraw(self,*args):
-  """
+        pass
+
+    def OnDraw(self, *args):
+        """
   OnDraw(self: RhinoObject,e: DrawEventArgs)
 
    Called when Rhino wants to draw this object
   """
-  pass
- def OnDuplicate(self,*args):
-  """
+        pass
+
+    def OnDuplicate(self, *args):
+        """
   OnDuplicate(self: RhinoObject,source: RhinoObject)
 
    Called when this a new instance of this object is created and copied from
@@ -170,9 +189,10 @@ class CustomCurveObject(CurveObject,IDisposable):
 
     existing object
   """
-  pass
- def OnPick(self,*args):
-  """
+        pass
+
+    def OnPick(self, *args):
+        """
   OnPick(self: RhinoObject,context: PickContext) -> IEnumerable[ObjRef]
 
   
@@ -183,19 +203,22 @@ class CustomCurveObject(CurveObject,IDisposable):
 
     picked given a pick context.
   """
-  pass
- def OnPicked(self,*args):
-  """ OnPicked(self: RhinoObject,context: PickContext,pickedItems: IEnumerable[ObjRef]) """
-  pass
- def OnSelectionChanged(self,*args):
-  """
+        pass
+
+    def OnPicked(self, *args):
+        """ OnPicked(self: RhinoObject,context: PickContext,pickedItems: IEnumerable[ObjRef]) """
+        pass
+
+    def OnSelectionChanged(self, *args):
+        """
   OnSelectionChanged(self: RhinoObject)
 
    Called when the selection state of this object has changed
   """
-  pass
- def OnSpaceMorph(self,*args):
-  """
+        pass
+
+    def OnSpaceMorph(self, *args):
+        """
   OnSpaceMorph(self: RhinoObject,morph: SpaceMorph)
 
    Called when a space morph has been applied to the geometry.
@@ -204,16 +227,18 @@ class CustomCurveObject(CurveObject,IDisposable):
 
     works for CustomMeshObject instances
   """
-  pass
- def OnTransform(self,*args):
-  """
+        pass
+
+    def OnTransform(self, *args):
+        """
   OnTransform(self: RhinoObject,transform: Transform)
 
    Called when a transformation has been applied to the geometry
   """
-  pass
- def SetCurve(self,*args):
-  """
+        pass
+
+    def SetCurve(self, *args):
+        """
   SetCurve(self: CustomCurveObject,curve: Curve) -> Curve
 
   
@@ -232,45 +257,53 @@ class CustomCurveObject(CurveObject,IDisposable):
 
    Returns: The old curve geometry that was set for this object
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """
   __new__(cls: type)
 
   __new__(cls: type,curve: Curve)
   """
-  pass
+        pass
 
-class CustomGripObject(GripObject,IDisposable):
- """ CustomGripObject() """
- def Dispose(self):
-  """ Dispose(self: CustomGripObject) """
-  pass
- def NewLocation(self):
-  """ NewLocation(self: CustomGripObject) """
-  pass
- def OnAddToDocument(self,*args):
-  """
+
+class CustomGripObject(GripObject, IDisposable):
+    """ CustomGripObject() """
+
+    def Dispose(self):
+        """ Dispose(self: CustomGripObject) """
+        pass
+
+    def NewLocation(self):
+        """ NewLocation(self: CustomGripObject) """
+        pass
+
+    def OnAddToDocument(self, *args):
+        """
   OnAddToDocument(self: RhinoObject,doc: RhinoDoc)
 
    This call informs an object it is about to be added to the list of
@@ -279,9 +312,10 @@ class CustomGripObject(GripObject,IDisposable):
 
     in the document.
   """
-  pass
- def OnDeleteFromDocument(self,*args):
-  """
+        pass
+
+    def OnDeleteFromDocument(self, *args):
+        """
   OnDeleteFromDocument(self: RhinoObject,doc: RhinoDoc)
 
    This call informs an object it is about to be deleted.
@@ -292,16 +326,18 @@ class CustomGripObject(GripObject,IDisposable):
 
      before they are deleted.
   """
-  pass
- def OnDraw(self,*args):
-  """
+        pass
+
+    def OnDraw(self, *args):
+        """
   OnDraw(self: RhinoObject,e: DrawEventArgs)
 
    Called when Rhino wants to draw this object
   """
-  pass
- def OnDuplicate(self,*args):
-  """
+        pass
+
+    def OnDuplicate(self, *args):
+        """
   OnDuplicate(self: RhinoObject,source: RhinoObject)
 
    Called when this a new instance of this object is created and copied from
@@ -310,9 +346,10 @@ class CustomGripObject(GripObject,IDisposable):
 
     existing object
   """
-  pass
- def OnPick(self,*args):
-  """
+        pass
+
+    def OnPick(self, *args):
+        """
   OnPick(self: RhinoObject,context: PickContext) -> IEnumerable[ObjRef]
 
   
@@ -323,19 +360,22 @@ class CustomGripObject(GripObject,IDisposable):
 
     picked given a pick context.
   """
-  pass
- def OnPicked(self,*args):
-  """ OnPicked(self: RhinoObject,context: PickContext,pickedItems: IEnumerable[ObjRef]) """
-  pass
- def OnSelectionChanged(self,*args):
-  """
+        pass
+
+    def OnPicked(self, *args):
+        """ OnPicked(self: RhinoObject,context: PickContext,pickedItems: IEnumerable[ObjRef]) """
+        pass
+
+    def OnSelectionChanged(self, *args):
+        """
   OnSelectionChanged(self: RhinoObject)
 
    Called when the selection state of this object has changed
   """
-  pass
- def OnSpaceMorph(self,*args):
-  """
+        pass
+
+    def OnSpaceMorph(self, *args):
+        """
   OnSpaceMorph(self: RhinoObject,morph: SpaceMorph)
 
    Called when a space morph has been applied to the geometry.
@@ -344,35 +384,40 @@ class CustomGripObject(GripObject,IDisposable):
 
     works for CustomMeshObject instances
   """
-  pass
- def OnTransform(self,*args):
-  """
+        pass
+
+    def OnTransform(self, *args):
+        """
   OnTransform(self: RhinoObject,transform: Transform)
 
    Called when a transformation has been applied to the geometry
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Index=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Index(self: CustomGripObject) -> int
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Index = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Index(self: CustomGripObject) -> int
 
 
 
@@ -380,8 +425,10 @@ Set: Index(self: CustomGripObject)=value
 
 """
 
- OriginalLocation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: OriginalLocation(self: CustomGripObject) -> Point3d
+    OriginalLocation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: OriginalLocation(self: CustomGripObject) -> Point3d
 
 
 
@@ -389,8 +436,8 @@ Set: OriginalLocation(self: CustomGripObject)=value
 
 """
 
- Weight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Weight(self: CustomGripObject) -> float
+    Weight = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Weight(self: CustomGripObject) -> float
 
 
 
@@ -399,14 +446,14 @@ Set: Weight(self: CustomGripObject)=value
 """
 
 
+class CustomMeshObject(MeshObject, IDisposable):
+    # no doc
+    def Dispose(self):
+        """ Dispose(self: CustomMeshObject) """
+        pass
 
-class CustomMeshObject(MeshObject,IDisposable):
- # no doc
- def Dispose(self):
-  """ Dispose(self: CustomMeshObject) """
-  pass
- def OnAddToDocument(self,*args):
-  """
+    def OnAddToDocument(self, *args):
+        """
   OnAddToDocument(self: RhinoObject,doc: RhinoDoc)
 
    This call informs an object it is about to be added to the list of
@@ -415,9 +462,10 @@ class CustomMeshObject(MeshObject,IDisposable):
 
     in the document.
   """
-  pass
- def OnDeleteFromDocument(self,*args):
-  """
+        pass
+
+    def OnDeleteFromDocument(self, *args):
+        """
   OnDeleteFromDocument(self: RhinoObject,doc: RhinoDoc)
 
    This call informs an object it is about to be deleted.
@@ -428,16 +476,18 @@ class CustomMeshObject(MeshObject,IDisposable):
 
      before they are deleted.
   """
-  pass
- def OnDraw(self,*args):
-  """
+        pass
+
+    def OnDraw(self, *args):
+        """
   OnDraw(self: RhinoObject,e: DrawEventArgs)
 
    Called when Rhino wants to draw this object
   """
-  pass
- def OnDuplicate(self,*args):
-  """
+        pass
+
+    def OnDuplicate(self, *args):
+        """
   OnDuplicate(self: RhinoObject,source: RhinoObject)
 
    Called when this a new instance of this object is created and copied from
@@ -446,9 +496,10 @@ class CustomMeshObject(MeshObject,IDisposable):
 
     existing object
   """
-  pass
- def OnPick(self,*args):
-  """
+        pass
+
+    def OnPick(self, *args):
+        """
   OnPick(self: RhinoObject,context: PickContext) -> IEnumerable[ObjRef]
 
   
@@ -459,19 +510,22 @@ class CustomMeshObject(MeshObject,IDisposable):
 
     picked given a pick context.
   """
-  pass
- def OnPicked(self,*args):
-  """ OnPicked(self: RhinoObject,context: PickContext,pickedItems: IEnumerable[ObjRef]) """
-  pass
- def OnSelectionChanged(self,*args):
-  """
+        pass
+
+    def OnPicked(self, *args):
+        """ OnPicked(self: RhinoObject,context: PickContext,pickedItems: IEnumerable[ObjRef]) """
+        pass
+
+    def OnSelectionChanged(self, *args):
+        """
   OnSelectionChanged(self: RhinoObject)
 
    Called when the selection state of this object has changed
   """
-  pass
- def OnSpaceMorph(self,*args):
-  """
+        pass
+
+    def OnSpaceMorph(self, *args):
+        """
   OnSpaceMorph(self: RhinoObject,morph: SpaceMorph)
 
    Called when a space morph has been applied to the geometry.
@@ -480,16 +534,18 @@ class CustomMeshObject(MeshObject,IDisposable):
 
     works for CustomMeshObject instances
   """
-  pass
- def OnTransform(self,*args):
-  """
+        pass
+
+    def OnTransform(self, *args):
+        """
   OnTransform(self: RhinoObject,transform: Transform)
 
    Called when a transformation has been applied to the geometry
   """
-  pass
- def SetMesh(self,*args):
-  """
+        pass
+
+    def SetMesh(self, *args):
+        """
   SetMesh(self: MeshObject,mesh: Mesh) -> Mesh
 
   
@@ -508,46 +564,53 @@ class CustomMeshObject(MeshObject,IDisposable):
 
    Returns: The old mesh geometry that was set for this object
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """
   __new__(cls: type)
 
   __new__(cls: type,mesh: Mesh)
   """
-  pass
+        pass
 
-class CustomObjectGrips(object,IDisposable):
- # no doc
- def AddGrip(self,*args):
-  """ AddGrip(self: CustomObjectGrips,grip: CustomGripObject) """
-  pass
- def Dispose(self):
-  """ Dispose(self: CustomObjectGrips) """
-  pass
- @staticmethod
- def Dragging():
-  """
+
+class CustomObjectGrips(object, IDisposable):
+    # no doc
+    def AddGrip(self, *args):
+        """ AddGrip(self: CustomObjectGrips,grip: CustomGripObject) """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: CustomObjectGrips) """
+        pass
+
+    @staticmethod
+    def Dragging():
+        """
   Dragging() -> bool
 
   
@@ -556,12 +619,14 @@ class CustomObjectGrips(object,IDisposable):
 
    Returns: true if grips are dragged.
   """
-  pass
- def Grip(self,index):
-  """ Grip(self: CustomObjectGrips,index: int) -> CustomGripObject """
-  pass
- def NeighborGrip(self,*args):
-  """
+        pass
+
+    def Grip(self, index):
+        """ Grip(self: CustomObjectGrips,index: int) -> CustomGripObject """
+        pass
+
+    def NeighborGrip(self, *args):
+        """
   NeighborGrip(self: CustomObjectGrips,gripIndex: int,dr: int,ds: int,dt: int,wrap: bool) -> GripObject
 
   
@@ -582,9 +647,10 @@ class CustomObjectGrips(object,IDisposable):
 
    Returns: Pointer to the desired neighbor or NULL if there is no neighbor.
   """
-  pass
- def NewGeometry(self,*args):
-  """
+        pass
+
+    def NewGeometry(self, *args):
+        """
   NewGeometry(self: CustomObjectGrips) -> GeometryBase
 
   
@@ -603,9 +669,10 @@ class CustomObjectGrips(object,IDisposable):
 
    Returns: The new geometry. The default implementation returns null.
   """
-  pass
- def NurbsSurface(self,*args):
-  """
+        pass
+
+    def NurbsSurface(self, *args):
+        """
   NurbsSurface(self: CustomObjectGrips) -> NurbsSurface
 
   
@@ -620,9 +687,10 @@ class CustomObjectGrips(object,IDisposable):
 
    Returns: A pointer to a NURBS surface or null.
   """
-  pass
- def NurbsSurfaceGrip(self,*args):
-  """
+        pass
+
+    def NurbsSurfaceGrip(self, *args):
+        """
   NurbsSurfaceGrip(self: CustomObjectGrips,i: int,j: int) -> GripObject
 
   
@@ -643,9 +711,10 @@ class CustomObjectGrips(object,IDisposable):
 
    Returns: A grip controling a NURBS surface CV or null.
   """
-  pass
- def OnDraw(self,*args):
-  """
+        pass
+
+    def OnDraw(self, *args):
+        """
   OnDraw(self: CustomObjectGrips,args: GripsDrawEventArgs)
 
    Draws the grips. In your implementation,override this if you need to draw
@@ -660,9 +729,10 @@ class CustomObjectGrips(object,IDisposable):
 
    args: The grips draw event arguments.
   """
-  pass
- def OnReset(self,*args):
-  """
+        pass
+
+    def OnReset(self, *args):
+        """
   OnReset(self: CustomObjectGrips)
 
    Resets location of all grips to original spots and cleans up stuff that
@@ -679,9 +749,10 @@ class CustomObjectGrips(object,IDisposable):
 
     stuff.
   """
-  pass
- def OnResetMeshes(self,*args):
-  """
+        pass
+
+    def OnResetMeshes(self, *args):
+        """
   OnResetMeshes(self: CustomObjectGrips)
 
    Just before Rhino turns off object grips,it calls this function.
@@ -694,9 +765,10 @@ class CustomObjectGrips(object,IDisposable):
 
     meshes to their original states.
   """
-  pass
- def OnUpdateMesh(self,*args):
-  """
+        pass
+
+    def OnUpdateMesh(self, *args):
+        """
   OnUpdateMesh(self: CustomObjectGrips,meshType: MeshType)
 
    Just before Rhino shades an object with grips on,it calls this method
@@ -715,42 +787,50 @@ class CustomObjectGrips(object,IDisposable):
 
    meshType: The mesh type being updated.
   """
-  pass
- @staticmethod
- def RegisterGripsEnabler(enabler,customGripsType):
-  """ RegisterGripsEnabler(enabler: TurnOnGripsEventHandler,customGripsType: Type) """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    @staticmethod
+    def RegisterGripsEnabler(enabler, customGripsType):
+        """ RegisterGripsEnabler(enabler: TurnOnGripsEventHandler,customGripsType: Type) """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- GripCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: GripCount(self: CustomObjectGrips) -> int
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    GripCount = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: GripCount(self: CustomObjectGrips) -> int
 
 
 
 """
 
- GripsMoved=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If GripsMoved is true if some of the grips have ever been moved
+    GripsMoved = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """If GripsMoved is true if some of the grips have ever been moved
 
    GripObject.NewLocation() sets GripsMoved=true.
 
@@ -762,8 +842,10 @@ Get: GripsMoved(self: CustomObjectGrips) -> bool
 
 """
 
- NewLocation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """true if some of the grips have been moved. GripObject.NewLocation() sets
+    NewLocation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """true if some of the grips have been moved. GripObject.NewLocation() sets
 
    NewLocation=true.  Derived classes can set NewLocation to false after 
 
@@ -779,8 +861,10 @@ Set: NewLocation(self: CustomObjectGrips)=value
 
 """
 
- OwnerObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Owner of the grips.
+    OwnerObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Owner of the grips.
 
 
 
@@ -791,14 +875,14 @@ Get: OwnerObject(self: CustomObjectGrips) -> RhinoObject
 """
 
 
+class CustomPointObject(PointObject, IDisposable):
+    # no doc
+    def Dispose(self):
+        """ Dispose(self: CustomPointObject) """
+        pass
 
-class CustomPointObject(PointObject,IDisposable):
- # no doc
- def Dispose(self):
-  """ Dispose(self: CustomPointObject) """
-  pass
- def OnAddToDocument(self,*args):
-  """
+    def OnAddToDocument(self, *args):
+        """
   OnAddToDocument(self: RhinoObject,doc: RhinoDoc)
 
    This call informs an object it is about to be added to the list of
@@ -807,9 +891,10 @@ class CustomPointObject(PointObject,IDisposable):
 
     in the document.
   """
-  pass
- def OnDeleteFromDocument(self,*args):
-  """
+        pass
+
+    def OnDeleteFromDocument(self, *args):
+        """
   OnDeleteFromDocument(self: RhinoObject,doc: RhinoDoc)
 
    This call informs an object it is about to be deleted.
@@ -820,16 +905,18 @@ class CustomPointObject(PointObject,IDisposable):
 
      before they are deleted.
   """
-  pass
- def OnDraw(self,*args):
-  """
+        pass
+
+    def OnDraw(self, *args):
+        """
   OnDraw(self: RhinoObject,e: DrawEventArgs)
 
    Called when Rhino wants to draw this object
   """
-  pass
- def OnDuplicate(self,*args):
-  """
+        pass
+
+    def OnDuplicate(self, *args):
+        """
   OnDuplicate(self: RhinoObject,source: RhinoObject)
 
    Called when this a new instance of this object is created and copied from
@@ -838,9 +925,10 @@ class CustomPointObject(PointObject,IDisposable):
 
     existing object
   """
-  pass
- def OnPick(self,*args):
-  """
+        pass
+
+    def OnPick(self, *args):
+        """
   OnPick(self: RhinoObject,context: PickContext) -> IEnumerable[ObjRef]
 
   
@@ -851,19 +939,22 @@ class CustomPointObject(PointObject,IDisposable):
 
     picked given a pick context.
   """
-  pass
- def OnPicked(self,*args):
-  """ OnPicked(self: RhinoObject,context: PickContext,pickedItems: IEnumerable[ObjRef]) """
-  pass
- def OnSelectionChanged(self,*args):
-  """
+        pass
+
+    def OnPicked(self, *args):
+        """ OnPicked(self: RhinoObject,context: PickContext,pickedItems: IEnumerable[ObjRef]) """
+        pass
+
+    def OnSelectionChanged(self, *args):
+        """
   OnSelectionChanged(self: RhinoObject)
 
    Called when the selection state of this object has changed
   """
-  pass
- def OnSpaceMorph(self,*args):
-  """
+        pass
+
+    def OnSpaceMorph(self, *args):
+        """
   OnSpaceMorph(self: RhinoObject,morph: SpaceMorph)
 
    Called when a space morph has been applied to the geometry.
@@ -872,46 +963,52 @@ class CustomPointObject(PointObject,IDisposable):
 
     works for CustomMeshObject instances
   """
-  pass
- def OnTransform(self,*args):
-  """
+        pass
+
+    def OnTransform(self, *args):
+        """
   OnTransform(self: RhinoObject,transform: Transform)
 
    Called when a transformation has been applied to the geometry
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """
   __new__(cls: type)
 
   __new__(cls: type,point: Point)
   """
-  pass
+        pass
+
 
 class GripsDrawEventArgs(DrawEventArgs):
- # no doc
- def DrawControlPolygonLine(self,*__args):
-  """
+    # no doc
+    def DrawControlPolygonLine(self, *__args):
+        """
   DrawControlPolygonLine(self: GripsDrawEventArgs,start: Point3d,end: Point3d,startStatus: int,endStatus: int)
 
    Draws the lines in a control polygons.
@@ -956,15 +1053,20 @@ class GripsDrawEventArgs(DrawEventArgs):
 
    endStatus: Grip status at end of line.
   """
-  pass
- def GripStatus(self,index):
-  """ GripStatus(self: GripsDrawEventArgs,index: int) -> GripStatus """
-  pass
- def RestoreViewportSettings(self):
-  """ RestoreViewportSettings(self: GripsDrawEventArgs) """
-  pass
- ControlPolygonStyle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """What kind of line is used to display things like control polygons.
+        pass
+
+    def GripStatus(self, index):
+        """ GripStatus(self: GripsDrawEventArgs,index: int) -> GripStatus """
+        pass
+
+    def RestoreViewportSettings(self):
+        """ RestoreViewportSettings(self: GripsDrawEventArgs) """
+        pass
+
+    ControlPolygonStyle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """What kind of line is used to display things like control polygons.
 
    0=no control polygon, 1=solid control polygon, 2=dotted control polygon.
 
@@ -978,8 +1080,10 @@ Set: ControlPolygonStyle(self: GripsDrawEventArgs)=value
 
 """
 
- DrawDynamicStuff=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If true,then draw stuff that does not move when grips are
+    DrawDynamicStuff = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """If true,then draw stuff that does not move when grips are
 
    dragged,like the control polygon of the "original" curve.
 
@@ -991,8 +1095,10 @@ Get: DrawDynamicStuff(self: GripsDrawEventArgs) -> bool
 
 """
 
- DrawStaticStuff=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If true,then draw stuff that moves when grips are dragged,
+    DrawStaticStuff = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """If true,then draw stuff that moves when grips are dragged,
 
    like the curve being bent by a dragged control point.
 
@@ -1004,8 +1110,8 @@ Get: DrawStaticStuff(self: GripsDrawEventArgs) -> bool
 
 """
 
- GripColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: GripColor(self: GripsDrawEventArgs) -> Color
+    GripColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: GripColor(self: GripsDrawEventArgs) -> Color
 
 
 
@@ -1013,15 +1119,19 @@ Set: GripColor(self: GripsDrawEventArgs)=value
 
 """
 
- GripStatusCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: GripStatusCount(self: GripsDrawEventArgs) -> int
+    GripStatusCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: GripStatusCount(self: GripsDrawEventArgs) -> int
 
 
 
 """
 
- LockedGripColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: LockedGripColor(self: GripsDrawEventArgs) -> Color
+    LockedGripColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: LockedGripColor(self: GripsDrawEventArgs) -> Color
 
 
 
@@ -1029,8 +1139,10 @@ Set: LockedGripColor(self: GripsDrawEventArgs)=value
 
 """
 
- SelectedGripColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: SelectedGripColor(self: GripsDrawEventArgs) -> Color
+    SelectedGripColor = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: SelectedGripColor(self: GripsDrawEventArgs) -> Color
 
 
 
@@ -1039,11 +1151,10 @@ Set: SelectedGripColor(self: GripsDrawEventArgs)=value
 """
 
 
-
 class GripStatus(object):
- # no doc
- Culled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Culled(self: GripStatus) -> bool
+    # no doc
+    Culled = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Culled(self: GripStatus) -> bool
 
 
 
@@ -1051,22 +1162,23 @@ Set: Culled(self: GripStatus)=value
 
 """
 
- Visible=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Visible(self: GripStatus) -> bool
+    Visible = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Visible(self: GripStatus) -> bool
 
 
 
 """
 
 
+class TurnOnGripsEventHandler(MulticastDelegate, ICloneable, ISerializable):
+    """ TurnOnGripsEventHandler(object: object,method: IntPtr) """
 
-class TurnOnGripsEventHandler(MulticastDelegate,ICloneable,ISerializable):
- """ TurnOnGripsEventHandler(object: object,method: IntPtr) """
- def BeginInvoke(self,rhObj,callback,object):
-  """ BeginInvoke(self: TurnOnGripsEventHandler,rhObj: RhinoObject,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+    def BeginInvoke(self, rhObj, callback, object):
+        """ BeginInvoke(self: TurnOnGripsEventHandler,rhObj: RhinoObject,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -1079,9 +1191,10 @@ class TurnOnGripsEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -1100,12 +1213,14 @@ class TurnOnGripsEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: TurnOnGripsEventHandler,result: IAsyncResult) """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: TurnOnGripsEventHandler,result: IAsyncResult) """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -1114,12 +1229,14 @@ class TurnOnGripsEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,rhObj):
-  """ Invoke(self: TurnOnGripsEventHandler,rhObj: RhinoObject) """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, rhObj):
+        """ Invoke(self: TurnOnGripsEventHandler,rhObj: RhinoObject) """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -1138,26 +1255,31 @@ class TurnOnGripsEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
 
-class UserData(object,IDisposable):
- """
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+
+class UserData(object, IDisposable):
+    """
  Provides a base class for custom classes of information which may be attached to
 
     geometry or attribute classes.
  """
- @staticmethod
- def Copy(source,destination):
-  """
+
+    @staticmethod
+    def Copy(source, destination):
+        """
   Copy(source: CommonObject,destination: CommonObject)
 
    Expert user tool that copies user data that has a positive 
@@ -1180,17 +1302,19 @@ class UserData(object,IDisposable):
 
    destination: A destination object for the data.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: UserData)
 
    Actively reclaims unmanaged resources that this instance uses.
   """
-  pass
- @staticmethod
- def MoveUserDataFrom(objectWithUserData):
-  """
+        pass
+
+    @staticmethod
+    def MoveUserDataFrom(objectWithUserData):
+        """
   MoveUserDataFrom(objectWithUserData: CommonObject) -> Guid
 
   
@@ -1225,10 +1349,11 @@ class UserData(object,IDisposable):
 
     to transfer.
   """
-  pass
- @staticmethod
- def MoveUserDataTo(objectToGetUserData,id,append):
-  """
+        pass
+
+    @staticmethod
+    def MoveUserDataTo(objectToGetUserData, id, append):
+        """
   MoveUserDataTo(objectToGetUserData: CommonObject,id: Guid,append: bool)
 
    Moves the user data.
@@ -1249,9 +1374,10 @@ class UserData(object,IDisposable):
 
    append: If the data should be appended or replaced.
   """
-  pass
- def OnDuplicate(self,*args):
-  """
+        pass
+
+    def OnDuplicate(self, *args):
+        """
   OnDuplicate(self: UserData,source: UserData)
 
    Is called when the object is being duplicated.
@@ -1260,9 +1386,10 @@ class UserData(object,IDisposable):
 
    source: The source data.
   """
-  pass
- def OnTransform(self,*args):
-  """
+        pass
+
+    def OnTransform(self, *args):
+        """
   OnTransform(self: UserData,transform: Transform)
 
    Is called when the object associated with this data is transformed. If you override this
@@ -1277,9 +1404,10 @@ class UserData(object,IDisposable):
 
    transform: The transform being applied.
   """
-  pass
- def Read(self,*args):
-  """
+        pass
+
+    def Read(self, *args):
+        """
   Read(self: UserData,archive: BinaryArchiveReader) -> bool
 
   
@@ -1292,9 +1420,10 @@ class UserData(object,IDisposable):
 
    Returns: true if the data was successfully written. The default implementation always returns false.
   """
-  pass
- def Write(self,*args):
-  """
+        pass
+
+    def Write(self, *args):
+        """
   Write(self: UserData,archive: BinaryArchiveWriter) -> bool
 
   
@@ -1307,31 +1436,38 @@ class UserData(object,IDisposable):
 
    Returns: true if the data was successfully written. The default implementation always returns false.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Description=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Descriptive name of the user data.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Description = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Descriptive name of the user data.
 
 
 
@@ -1341,8 +1477,10 @@ Get: Description(self: UserData) -> str
 
 """
 
- ShouldWrite=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If you want to save this user data in a 3dm file,override
+    ShouldWrite = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """If you want to save this user data in a 3dm file,override
 
    ShouldWrite and return true.  If you do support serialization,
 
@@ -1356,8 +1494,8 @@ Get: ShouldWrite(self: UserData) -> bool
 
 """
 
- Transform=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Updated if user data is attached to a piece of geometry that is
+    Transform = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Updated if user data is attached to a piece of geometry that is
 
    transformed and the virtual OnTransform() is not overridden.  If you
 
@@ -1376,17 +1514,17 @@ Get: Transform(self: UserData) -> Transform
 """
 
 
-
-class UnknownUserData(UserData,IDisposable):
- """
+class UnknownUserData(UserData, IDisposable):
+    """
  Represents user data with unknown origin.
 
  
 
  UnknownUserData(pointerNativeUserData: IntPtr)
  """
- def Dispose(self):
-  """
+
+    def Dispose(self):
+        """
   Dispose(self: UserData,disposing: bool)
 
    For derived class implementers.
@@ -1411,9 +1549,10 @@ class UnknownUserData(UserData,IDisposable):
 
     finalizer.
   """
-  pass
- def OnDuplicate(self,*args):
-  """
+        pass
+
+    def OnDuplicate(self, *args):
+        """
   OnDuplicate(self: UserData,source: UserData)
 
    Is called when the object is being duplicated.
@@ -1422,9 +1561,10 @@ class UnknownUserData(UserData,IDisposable):
 
    source: The source data.
   """
-  pass
- def OnTransform(self,*args):
-  """
+        pass
+
+    def OnTransform(self, *args):
+        """
   OnTransform(self: UserData,transform: Transform)
 
    Is called when the object associated with this data is transformed. If you override this
@@ -1439,9 +1579,10 @@ class UnknownUserData(UserData,IDisposable):
 
    transform: The transform being applied.
   """
-  pass
- def Read(self,*args):
-  """
+        pass
+
+    def Read(self, *args):
+        """
   Read(self: UserData,archive: BinaryArchiveReader) -> bool
 
   
@@ -1454,9 +1595,10 @@ class UnknownUserData(UserData,IDisposable):
 
    Returns: true if the data was successfully written. The default implementation always returns false.
   """
-  pass
- def Write(self,*args):
-  """
+        pass
+
+    def Write(self, *args):
+        """
   Write(self: UserData,archive: BinaryArchiveWriter) -> bool
 
   
@@ -1469,35 +1611,41 @@ class UnknownUserData(UserData,IDisposable):
 
    Returns: true if the data was successfully written. The default implementation always returns false.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,pointerNativeUserData):
-  """ __new__(cls: type,pointerNativeUserData: IntPtr) """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, pointerNativeUserData):
+        """ __new__(cls: type,pointerNativeUserData: IntPtr) """
+        pass
+
 
 class UserDataList(object):
- """ Represents a collection of user data. """
- def Add(self,userdata):
-  """
+    """ Represents a collection of user data. """
+
+    def Add(self, userdata):
+        """
   Add(self: UserDataList,userdata: UserData) -> bool
 
   
@@ -1516,9 +1664,10 @@ class UserDataList(object):
 
    Returns: Whether this operation succeeded.
   """
-  pass
- def Find(self,userdataType):
-  """
+        pass
+
+    def Find(self, userdataType):
+        """
   Find(self: UserDataList,userdataType: Type) -> UserData
 
   
@@ -1531,9 +1680,10 @@ class UserDataList(object):
 
    Returns: The found data,or null of nothing was found.
   """
-  pass
- def Remove(self,userdata):
-  """
+        pass
+
+    def Remove(self, userdata):
+        """
   Remove(self: UserDataList,userdata: UserData) -> bool
 
   
@@ -1542,12 +1692,14 @@ class UserDataList(object):
 
    Returns: true if the user data was successfully removed
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Number of UserData objects in this list.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Number of UserData objects in this list.
 
 
 
@@ -1558,17 +1710,17 @@ Get: Count(self: UserDataList) -> int
 """
 
 
-
-class UserDictionary(UserData,IDisposable):
- """
+class UserDictionary(UserData, IDisposable):
+    """
  Defines the storage data class for a Rhino.Collections.ArchivableDictionaryuser dictionary.
 
  
 
  UserDictionary()
  """
- def Dispose(self):
-  """
+
+    def Dispose(self):
+        """
   Dispose(self: UserData,disposing: bool)
 
    For derived class implementers.
@@ -1593,9 +1745,10 @@ class UserDictionary(UserData,IDisposable):
 
     finalizer.
   """
-  pass
- def OnDuplicate(self,*args):
-  """
+        pass
+
+    def OnDuplicate(self, *args):
+        """
   OnDuplicate(self: UserDictionary,source: UserData)
 
    Clones the user data.
@@ -1604,9 +1757,10 @@ class UserDictionary(UserData,IDisposable):
 
    source: The source data.
   """
-  pass
- def OnTransform(self,*args):
-  """
+        pass
+
+    def OnTransform(self, *args):
+        """
   OnTransform(self: UserData,transform: Transform)
 
    Is called when the object associated with this data is transformed. If you override this
@@ -1621,9 +1775,10 @@ class UserDictionary(UserData,IDisposable):
 
    transform: The transform being applied.
   """
-  pass
- def Read(self,*args):
-  """
+        pass
+
+    def Read(self, *args):
+        """
   Read(self: UserDictionary,archive: BinaryArchiveReader) -> bool
 
   
@@ -1636,9 +1791,10 @@ class UserDictionary(UserData,IDisposable):
 
    Returns: Always returns true.
   """
-  pass
- def Write(self,*args):
-  """
+        pass
+
+    def Write(self, *args):
+        """
   Write(self: UserDictionary,archive: BinaryArchiveWriter) -> bool
 
   
@@ -1651,28 +1807,34 @@ class UserDictionary(UserData,IDisposable):
 
    Returns: Always returns true.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Description=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the text "RhinoCommon UserDictionary".
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Description = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the text "RhinoCommon UserDictionary".
 
 
 
@@ -1682,8 +1844,10 @@ Get: Description(self: UserDictionary) -> str
 
 """
 
- Dictionary=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the dictionary that is associated with this class.
+    Dictionary = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the dictionary that is associated with this class.
 
    This dictionary is unique.
 
@@ -1695,8 +1859,10 @@ Get: Dictionary(self: UserDictionary) -> ArchivableDictionary
 
 """
 
- ShouldWrite=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Writes this entity if the count is larger than 0.
+    ShouldWrite = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Writes this entity if the count is larger than 0.
 
 
 
@@ -1705,6 +1871,3 @@ Get: ShouldWrite(self: UserDictionary) -> bool
 
 
 """
-
-
-

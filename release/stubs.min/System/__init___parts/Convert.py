@@ -1,8 +1,9 @@
 class Convert(object):
- """ Converts a base data type to another base data type. """
- @staticmethod
- def ChangeType(value,*__args):
-  """
+    """ Converts a base data type to another base data type. """
+
+    @staticmethod
+    def ChangeType(value, *__args):
+        """
   ChangeType(value: object,conversionType: Type) -> object
 
   
@@ -91,10 +92,11 @@ class Convert(object):
 
     System.TypeCode.String,or System.TypeCode.Object.
   """
-  pass
- @staticmethod
- def FromBase64CharArray(inArray,offset,length):
-  """
+        pass
+
+    @staticmethod
+    def FromBase64CharArray(inArray, offset, length):
+        """
   FromBase64CharArray(inArray: Array[Char],offset: int,length: int) -> Array[Byte]
 
   
@@ -117,10 +119,11 @@ class Convert(object):
 
    Returns: An array of 8-bit unsigned integers equivalent to length elements at position offset in inArray.
   """
-  pass
- @staticmethod
- def FromBase64String(s):
-  """
+        pass
+
+    @staticmethod
+    def FromBase64String(s):
+        """
   FromBase64String(s: str) -> Array[Byte]
 
   
@@ -137,10 +140,11 @@ class Convert(object):
 
    Returns: An array of 8-bit unsigned integers that is equivalent to s.
   """
-  pass
- @staticmethod
- def GetTypeCode(value):
-  """
+        pass
+
+    @staticmethod
+    def GetTypeCode(value):
+        """
   GetTypeCode(value: object) -> TypeCode
 
   
@@ -153,10 +157,11 @@ class Convert(object):
 
    Returns: The System.TypeCode for value,or System.TypeCode.Empty if value is null.
   """
-  pass
- @staticmethod
- def IsDBNull(value):
-  """
+        pass
+
+    @staticmethod
+    def IsDBNull(value):
+        """
   IsDBNull(value: object) -> bool
 
   
@@ -169,10 +174,11 @@ class Convert(object):
 
    Returns: true if value is of type System.DBNull; otherwise,false.
   """
-  pass
- @staticmethod
- def ToBase64CharArray(inArray,offsetIn,length,outArray,offsetOut,options=None):
-  """
+        pass
+
+    @staticmethod
+    def ToBase64CharArray(inArray, offsetIn, length, outArray, offsetOut, options=None):
+        """
   ToBase64CharArray(inArray: Array[Byte],offsetIn: int,length: int,outArray: Array[Char],offsetOut: int,options: Base64FormattingOptions) -> int
 
   
@@ -233,10 +239,11 @@ class Convert(object):
 
    Returns: A 32-bit signed integer containing the number of bytes in outArray.
   """
-  pass
- @staticmethod
- def ToBase64String(inArray,*__args):
-  """
+        pass
+
+    @staticmethod
+    def ToBase64String(inArray, *__args):
+        """
   ToBase64String(inArray: Array[Byte],offset: int,length: int) -> str
 
   
@@ -329,10 +336,11 @@ class Convert(object):
 
    Returns: The string representation in base 64 of the elements in inArray.
   """
-  pass
- @staticmethod
- def ToBoolean(value,provider=None):
-  """
+        pass
+
+    @staticmethod
+    def ToBoolean(value, provider=None):
+        """
   ToBoolean(value: UInt64) -> bool
 
   
@@ -597,10 +605,11 @@ class Convert(object):
 
    Returns: true if value is not zero; otherwise,false.
   """
-  pass
- @staticmethod
- def ToByte(value,*__args):
-  """
+        pass
+
+    @staticmethod
+    def ToByte(value, *__args):
+        """
   ToByte(value: Single) -> Byte
 
   
@@ -895,10 +904,11 @@ class Convert(object):
 
    Returns: An 8-bit unsigned integer that is equivalent to value.
   """
-  pass
- @staticmethod
- def ToChar(value,provider=None):
-  """
+        pass
+
+    @staticmethod
+    def ToChar(value, provider=None):
+        """
   ToChar(value: UInt64) -> Char
 
   
@@ -1127,10 +1137,11 @@ class Convert(object):
 
    Returns: A Unicode character that is equivalent to value.
   """
-  pass
- @staticmethod
- def ToDateTime(value,provider=None):
-  """
+        pass
+
+    @staticmethod
+    def ToDateTime(value, provider=None):
+        """
   ToDateTime(value: Int64) -> DateTime
 
   
@@ -1379,10 +1390,11 @@ class Convert(object):
 
    Returns: This conversion is not supported. No value is returned.
   """
-  pass
- @staticmethod
- def ToDecimal(value,provider=None):
-  """
+        pass
+
+    @staticmethod
+    def ToDecimal(value, provider=None):
+        """
   ToDecimal(value: Single) -> Decimal
 
   
@@ -1619,10 +1631,11 @@ class Convert(object):
 
    Returns: The decimal number that is equivalent to value.
   """
-  pass
- @staticmethod
- def ToDouble(value,provider=None):
-  """
+        pass
+
+    @staticmethod
+    def ToDouble(value, provider=None):
+        """
   ToDouble(value: Single) -> float
 
   
@@ -1903,10 +1916,11 @@ class Convert(object):
 
    Returns: A double-precision floating-point number that is equivalent to value.
   """
-  pass
- @staticmethod
- def ToInt16(value,*__args):
-  """
+        pass
+
+    @staticmethod
+    def ToInt16(value, *__args):
+        """
   ToInt16(value: Single) -> Int16
 
   
@@ -2189,10 +2203,11 @@ class Convert(object):
 
    Returns: A 16-bit signed integer that is equivalent to value.
   """
-  pass
- @staticmethod
- def ToInt32(value,*__args):
-  """
+        pass
+
+    @staticmethod
+    def ToInt32(value, *__args):
+        """
   ToInt32(value: Single) -> int
 
   
@@ -2475,10 +2490,11 @@ class Convert(object):
 
    Returns: A 32-bit signed integer that is equivalent to value.
   """
-  pass
- @staticmethod
- def ToInt64(value,*__args):
-  """
+        pass
+
+    @staticmethod
+    def ToInt64(value, *__args):
+        """
   ToInt64(value: Single) -> Int64
 
   
@@ -2761,10 +2777,11 @@ class Convert(object):
 
    Returns: A 64-bit signed integer that is equivalent to value.
   """
-  pass
- @staticmethod
- def ToSByte(value,*__args):
-  """
+        pass
+
+    @staticmethod
+    def ToSByte(value, *__args):
+        """
   ToSByte(value: Single) -> SByte
 
   
@@ -3047,10 +3064,11 @@ class Convert(object):
 
    Returns: An 8-bit signed integer that is equivalent to value.
   """
-  pass
- @staticmethod
- def ToSingle(value,provider=None):
-  """
+        pass
+
+    @staticmethod
+    def ToSingle(value, provider=None):
+        """
   ToSingle(value: Single) -> Single
 
   
@@ -3343,10 +3361,11 @@ class Convert(object):
 
    Returns: A single-precision floating-point number that is equivalent to value.
   """
-  pass
- @staticmethod
- def ToString(value=None,*__args):
-  """
+        pass
+
+    @staticmethod
+    def ToString(value=None, *__args):
+        """
   ToString(value: float) -> str
 
   
@@ -3927,10 +3946,11 @@ class Convert(object):
 
    Returns: The string representation of value.
   """
-  pass
- @staticmethod
- def ToUInt16(value,*__args):
-  """
+        pass
+
+    @staticmethod
+    def ToUInt16(value, *__args):
+        """
   ToUInt16(value: Single) -> UInt16
 
   
@@ -4241,10 +4261,11 @@ class Convert(object):
 
    Returns: A 16-bit unsigned integer that is equivalent to value.
   """
-  pass
- @staticmethod
- def ToUInt32(value,*__args):
-  """
+        pass
+
+    @staticmethod
+    def ToUInt32(value, *__args):
+        """
   ToUInt32(value: Single) -> UInt32
 
   
@@ -4555,10 +4576,11 @@ class Convert(object):
 
    Returns: A 32-bit unsigned integer that is equivalent to value.
   """
-  pass
- @staticmethod
- def ToUInt64(value,*__args):
-  """
+        pass
+
+    @staticmethod
+    def ToUInt64(value, *__args):
+        """
   ToUInt64(value: Single) -> UInt64
 
   
@@ -4865,31 +4887,31 @@ class Convert(object):
 
    Returns: A 64-bit unsigned integer that is equivalent to value.
   """
-  pass
- DBNull=None
- __all__=[
-  'ChangeType',
-  'DBNull',
-  'FromBase64CharArray',
-  'FromBase64String',
-  'GetTypeCode',
-  'IsDBNull',
-  'ToBase64CharArray',
-  'ToBase64String',
-  'ToBoolean',
-  'ToByte',
-  'ToChar',
-  'ToDateTime',
-  'ToDecimal',
-  'ToDouble',
-  'ToInt16',
-  'ToInt32',
-  'ToInt64',
-  'ToSByte',
-  'ToSingle',
-  'ToString',
-  'ToUInt16',
-  'ToUInt32',
-  'ToUInt64',
- ]
+        pass
 
+    DBNull = None
+    __all__ = [
+        "ChangeType",
+        "DBNull",
+        "FromBase64CharArray",
+        "FromBase64String",
+        "GetTypeCode",
+        "IsDBNull",
+        "ToBase64CharArray",
+        "ToBase64String",
+        "ToBoolean",
+        "ToByte",
+        "ToChar",
+        "ToDateTime",
+        "ToDecimal",
+        "ToDouble",
+        "ToInt16",
+        "ToInt32",
+        "ToInt64",
+        "ToSByte",
+        "ToSingle",
+        "ToString",
+        "ToUInt16",
+        "ToUInt32",
+        "ToUInt64",
+    ]

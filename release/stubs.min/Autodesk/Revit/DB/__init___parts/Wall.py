@@ -1,8 +1,9 @@
-class Wall(HostObject,IDisposable):
- """ Represents a wall in Autodesk Revit. """
- @staticmethod
- def Create(document,*__args):
-  """
+class Wall(HostObject, IDisposable):
+    """ Represents a wall in Autodesk Revit. """
+
+    @staticmethod
+    def Create(document, *__args):
+        """
   Create(document: Document,curve: Curve,wallTypeId: ElementId,levelId: ElementId,height: float,offset: float,flip: bool,structural: bool) -> Wall
 
   
@@ -65,22 +66,26 @@ class Wall(HostObject,IDisposable):
 
   Create(document: Document,profile: IList[Curve],wallTypeId: ElementId,levelId: ElementId,structural: bool) -> Wall
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def Flip(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def Flip(self):
+        """
   Flip(self: Wall)
 
    The wall orientation will be flipped.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetStackedWallMemberIds(self):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetStackedWallMemberIds(self):
+        """
   GetStackedWallMemberIds(self: Wall) -> IList[ElementId]
 
   
@@ -91,24 +96,32 @@ class Wall(HostObject,IDisposable):
 
     bottom-top order.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- CurtainGrid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the grid object of a curtain wall
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    CurtainGrid = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get the grid object of a curtain wall
 
 
 
@@ -118,8 +131,8 @@ Get: CurtainGrid(self: Wall) -> CurtainGrid
 
 """
 
- Flipped=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Property to test whether the wall orientation is flipped.
+    Flipped = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Property to test whether the wall orientation is flipped.
 
 
 
@@ -129,8 +142,10 @@ Get: Flipped(self: Wall) -> bool
 
 """
 
- IsStackedWall=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies if the wall is a stacked wall.
+    IsStackedWall = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies if the wall is a stacked wall.
 
 
 
@@ -140,8 +155,10 @@ Get: IsStackedWall(self: Wall) -> bool
 
 """
 
- IsStackedWallMember=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies if the wall is a member of a stacked wall.
+    IsStackedWallMember = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies if the wall is a member of a stacked wall.
 
 
 
@@ -151,8 +168,10 @@ Get: IsStackedWallMember(self: Wall) -> bool
 
 """
 
- Orientation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The normal vector projected from the exterior side of the wall.
+    Orientation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The normal vector projected from the exterior side of the wall.
 
 
 
@@ -162,8 +181,10 @@ Get: Orientation(self: Wall) -> XYZ
 
 """
 
- StackedWallOwnerId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the stacked wall which contains this stacked wall member.
+    StackedWallOwnerId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the stacked wall which contains this stacked wall member.
 
 
 
@@ -173,8 +194,10 @@ Get: StackedWallOwnerId(self: Wall) -> ElementId
 
 """
 
- StructuralUsage=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Retrieves or changes  the wall's designated structural usage.
+    StructuralUsage = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Retrieves or changes  the wall's designated structural usage.
 
 
 
@@ -186,8 +209,8 @@ Set: StructuralUsage(self: Wall)=value
 
 """
 
- WallType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Retrieves or changes the type of the wall.
+    WallType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Retrieves or changes the type of the wall.
 
 
 
@@ -199,8 +222,8 @@ Set: WallType(self: Wall)=value
 
 """
 
- Width=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get the overall thickness of the wall.
+    Width = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get the overall thickness of the wall.
 
 
 
@@ -209,5 +232,3 @@ Get: Width(self: Wall) -> float
 
 
 """
-
-

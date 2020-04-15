@@ -1,7 +1,8 @@
-class BindingsCollection(BaseCollection,ICollection,IEnumerable):
- """ Represents a collection of System.Windows.Forms.Binding objects for a control. """
- def Add(self,*args):
-  """
+class BindingsCollection(BaseCollection, ICollection, IEnumerable):
+    """ Represents a collection of System.Windows.Forms.Binding objects for a control. """
+
+    def Add(self, *args):
+        """
   Add(self: BindingsCollection,binding: Binding)
 
    Adds the specified binding to the collection.
@@ -10,9 +11,10 @@ class BindingsCollection(BaseCollection,ICollection,IEnumerable):
 
    binding: The System.Windows.Forms.Binding to add to the collection.
   """
-  pass
- def AddCore(self,*args):
-  """
+        pass
+
+    def AddCore(self, *args):
+        """
   AddCore(self: BindingsCollection,dataBinding: Binding)
 
    Adds a System.Windows.Forms.Binding to the collection.
@@ -21,23 +23,26 @@ class BindingsCollection(BaseCollection,ICollection,IEnumerable):
 
    dataBinding: The System.Windows.Forms.Binding to add to the collection.
   """
-  pass
- def Clear(self,*args):
-  """
+        pass
+
+    def Clear(self, *args):
+        """
   Clear(self: BindingsCollection)
 
    Clears the collection of binding objects.
   """
-  pass
- def ClearCore(self,*args):
-  """
+        pass
+
+    def ClearCore(self, *args):
+        """
   ClearCore(self: BindingsCollection)
 
    Clears the collection of any members.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -68,9 +73,10 @@ class BindingsCollection(BaseCollection,ICollection,IEnumerable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def OnCollectionChanged(self,*args):
-  """
+        pass
+
+    def OnCollectionChanged(self, *args):
+        """
   OnCollectionChanged(self: BindingsCollection,ccevent: CollectionChangeEventArgs)
 
    Raises the System.Windows.Forms.BindingsCollection.CollectionChanged event.
@@ -79,9 +85,10 @@ class BindingsCollection(BaseCollection,ICollection,IEnumerable):
 
    ccevent: A System.ComponentModel.CollectionChangeEventArgs that contains the event data.
   """
-  pass
- def OnCollectionChanging(self,*args):
-  """
+        pass
+
+    def OnCollectionChanging(self, *args):
+        """
   OnCollectionChanging(self: BindingsCollection,e: CollectionChangeEventArgs)
 
    Raises the System.Windows.Forms.BindingsCollection.CollectionChanging event.
@@ -90,9 +97,10 @@ class BindingsCollection(BaseCollection,ICollection,IEnumerable):
 
    e: A System.ComponentModel.CollectionChangeEventArgs that contains event data.
   """
-  pass
- def Remove(self,*args):
-  """
+        pass
+
+    def Remove(self, *args):
+        """
   Remove(self: BindingsCollection,binding: Binding)
 
    Deletes the specified binding from the collection.
@@ -101,9 +109,10 @@ class BindingsCollection(BaseCollection,ICollection,IEnumerable):
 
    binding: The Binding to remove from the collection.
   """
-  pass
- def RemoveAt(self,*args):
-  """
+        pass
+
+    def RemoveAt(self, *args):
+        """
   RemoveAt(self: BindingsCollection,index: int)
 
    Deletes the binding from the collection at the specified index.
@@ -112,9 +121,10 @@ class BindingsCollection(BaseCollection,ICollection,IEnumerable):
 
    index: The index of the System.Windows.Forms.Binding to remove.
   """
-  pass
- def RemoveCore(self,*args):
-  """
+        pass
+
+    def RemoveCore(self, *args):
+        """
   RemoveCore(self: BindingsCollection,dataBinding: Binding)
 
    Removes the specified System.Windows.Forms.Binding from the collection.
@@ -123,9 +133,10 @@ class BindingsCollection(BaseCollection,ICollection,IEnumerable):
 
    dataBinding: The System.Windows.Forms.Binding to remove.
   """
-  pass
- def ShouldSerializeMyAll(self,*args):
-  """
+        pass
+
+    def ShouldSerializeMyAll(self, *args):
+        """
   ShouldSerializeMyAll(self: BindingsCollection) -> bool
 
   
@@ -134,21 +145,26 @@ class BindingsCollection(BaseCollection,ICollection,IEnumerable):
 
    Returns: true if the collection count is greater than zero; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the total number of bindings in the collection.
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the total number of bindings in the collection.
 
 
 
@@ -158,14 +174,12 @@ Get: Count(self: BindingsCollection) -> int
 
 """
 
- List=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the bindings in the collection as an object.
+    List = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the bindings in the collection as an object.
 
 
 
 """
 
-
- CollectionChanged=None
- CollectionChanging=None
-
+    CollectionChanged = None
+    CollectionChanging = None

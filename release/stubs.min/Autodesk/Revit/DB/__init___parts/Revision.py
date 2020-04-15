@@ -1,8 +1,9 @@
-class Revision(Element,IDisposable):
- """ Represents a single revision in the project. """
- @staticmethod
- def CombineWithNext(document,revisionId):
-  """
+class Revision(Element, IDisposable):
+    """ Represents a single revision in the project. """
+
+    @staticmethod
+    def CombineWithNext(document, revisionId):
+        """
   CombineWithNext(document: Document,revisionId: ElementId) -> ISet[ElementId]
 
   
@@ -21,10 +22,11 @@ class Revision(Element,IDisposable):
 
    Returns: The ids of all RevisionClouds that were reassigned to the next Revision.
   """
-  pass
- @staticmethod
- def CombineWithPrevious(document,revisionId):
-  """
+        pass
+
+    @staticmethod
+    def CombineWithPrevious(document, revisionId):
+        """
   CombineWithPrevious(document: Document,revisionId: ElementId) -> ISet[ElementId]
 
   
@@ -43,10 +45,11 @@ class Revision(Element,IDisposable):
 
    Returns: The ids of all RevisionClouds that were reassigned to the previous Revision.
   """
-  pass
- @staticmethod
- def Create(document):
-  """
+        pass
+
+    @staticmethod
+    def Create(document):
+        """
   Create(document: Document) -> Revision
 
   
@@ -59,13 +62,15 @@ class Revision(Element,IDisposable):
 
    Returns: The newly created Revision.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- @staticmethod
- def GetAllRevisionIds(document):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    @staticmethod
+    def GetAllRevisionIds(document):
+        """
   GetAllRevisionIds(document: Document) -> IList[ElementId]
 
   
@@ -78,31 +83,41 @@ class Revision(Element,IDisposable):
 
    Returns: The ids of all the Revisions in the document ordered by sequence number.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- @staticmethod
- def ReorderRevisionSequence(document,newSequence):
-  """ ReorderRevisionSequence(document: Document,newSequence: IList[ElementId]) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Description=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The description of this Revision.
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    @staticmethod
+    def ReorderRevisionSequence(document, newSequence):
+        """ ReorderRevisionSequence(document: Document,newSequence: IList[ElementId]) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Description = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The description of this Revision.
 
 
 
@@ -114,8 +129,8 @@ Set: Description(self: Revision)=value
 
 """
 
- Issued=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether this Revision has been issued.
+    Issued = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Indicates whether this Revision has been issued.
 
 
 
@@ -127,8 +142,8 @@ Set: Issued(self: Revision)=value
 
 """
 
- IssuedBy=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates who has issued or will issue this Revision.
+    IssuedBy = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Indicates who has issued or will issue this Revision.
 
 
 
@@ -140,8 +155,8 @@ Set: IssuedBy(self: Revision)=value
 
 """
 
- IssuedTo=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates to whom this Revision was or will be issued.
+    IssuedTo = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Indicates to whom this Revision was or will be issued.
 
 
 
@@ -153,8 +168,10 @@ Set: IssuedTo(self: Revision)=value
 
 """
 
- NumberType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates what number type the Revision Number for this Revision should use.
+    NumberType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates what number type the Revision Number for this Revision should use.
 
 
 
@@ -166,8 +183,10 @@ Set: NumberType(self: Revision)=value
 
 """
 
- RevisionDate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The date of this Revision.
+    RevisionDate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The date of this Revision.
 
 
 
@@ -179,8 +198,10 @@ Set: RevisionDate(self: Revision)=value
 
 """
 
- RevisionNumber=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Revision number of this revision.
+    RevisionNumber = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The Revision number of this revision.
 
 
 
@@ -190,8 +211,10 @@ Get: RevisionNumber(self: Revision) -> str
 
 """
 
- SequenceNumber=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The Sequence Number of this Revision.
+    SequenceNumber = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The Sequence Number of this Revision.
 
 
 
@@ -201,8 +224,10 @@ Get: SequenceNumber(self: Revision) -> int
 
 """
 
- Visibility=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Controls the visibility of revision clouds and revision tags related to this Revision.
+    Visibility = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Controls the visibility of revision clouds and revision tags related to this Revision.
 
 
 
@@ -213,5 +238,3 @@ Get: Visibility(self: Revision) -> RevisionVisibility
 Set: Visibility(self: Revision)=value
 
 """
-
-

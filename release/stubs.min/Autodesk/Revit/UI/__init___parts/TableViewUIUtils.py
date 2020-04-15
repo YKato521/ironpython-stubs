@@ -1,8 +1,9 @@
 class TableViewUIUtils(object):
- """ This utility class contains members that involve the Revit UI and operate on schedule views or MEP electrical panel schedules. """
- @staticmethod
- def TestCellAndPromptToEditTypeParameter(tableView,sectionType,row,column):
-  """
+    """ This utility class contains members that involve the Revit UI and operate on schedule views or MEP electrical panel schedules. """
+
+    @staticmethod
+    def TestCellAndPromptToEditTypeParameter(tableView, sectionType, row, column):
+        """
   TestCellAndPromptToEditTypeParameter(tableView: TableView,sectionType: SectionType,row: int,column: int) -> bool
 
   
@@ -25,8 +26,8 @@ class TableViewUIUtils(object):
 
    Returns: Returns true if editing the cell is allowed; otherwise false.
   """
-  pass
- __all__=[
-  'TestCellAndPromptToEditTypeParameter',
- ]
+        pass
 
+    __all__ = [
+        "TestCellAndPromptToEditTypeParameter",
+    ]

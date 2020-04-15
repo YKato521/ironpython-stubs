@@ -1,5 +1,5 @@
-class PasswordPropertyTextAttribute(Attribute,_Attribute):
- """
+class PasswordPropertyTextAttribute(Attribute, _Attribute):
+    """
  Indicates that an object's text representation is obscured by characters such as asterisks. This class cannot be inherited.
 
  
@@ -8,8 +8,9 @@ class PasswordPropertyTextAttribute(Attribute,_Attribute):
 
  PasswordPropertyTextAttribute(password: bool)
  """
- def Equals(self,o):
-  """
+
+    def Equals(self, o):
+        """
   Equals(self: PasswordPropertyTextAttribute,o: object) -> bool
 
   
@@ -28,9 +29,10 @@ class PasswordPropertyTextAttribute(Attribute,_Attribute):
 
     current System.ComponentModel.PasswordPropertyTextAttribute; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: PasswordPropertyTextAttribute) -> int
 
   
@@ -39,9 +41,10 @@ class PasswordPropertyTextAttribute(Attribute,_Attribute):
 
    Returns: A hash code for the current System.ComponentModel.PasswordPropertyTextAttribute.
   """
-  pass
- def IsDefaultAttribute(self):
-  """
+        pass
+
+    def IsDefaultAttribute(self):
+        """
   IsDefaultAttribute(self: PasswordPropertyTextAttribute) -> bool
 
   
@@ -50,25 +53,30 @@ class PasswordPropertyTextAttribute(Attribute,_Attribute):
 
    Returns: true if this instance is the default attribute for the class; otherwise,false.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,password=None):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, password=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,password: bool)
   """
-  pass
- def __ne__(self,*args):
-  pass
- Password=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating if the property for which the System.ComponentModel.PasswordPropertyTextAttribute is defined should be shown as password text.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    Password = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating if the property for which the System.ComponentModel.PasswordPropertyTextAttribute is defined should be shown as password text.
 
 
 
@@ -78,8 +86,6 @@ Get: Password(self: PasswordPropertyTextAttribute) -> bool
 
 """
 
-
- Default=None
- No=None
- Yes=None
-
+    Default = None
+    No = None
+    Yes = None

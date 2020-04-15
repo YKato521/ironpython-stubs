@@ -8,43 +8,47 @@
 # no functions
 # classes
 
+
 class GetBoxMode(Enum, IComparable, IFormattable, IConvertible):
     """
-    Enumerates all Box getter modes.
-    
+    Enumerates all Box getter modes.
+
+    
+
     enum GetBoxMode, values: All (0), Center (4), Corner (1), ThreePoint (2), Vertical (3)
     """
-    def __eq__(self, *args): #cannot find CLR method
+
+    def __eq__(self, *args):  # cannot find CLR method
         """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
         pass
 
-    def __format__(self, *args): #cannot find CLR method
+    def __format__(self, *args):  # cannot find CLR method
         """ __format__(formattable: IFormattable, format: str) -> str """
         pass
 
-    def __ge__(self, *args): #cannot find CLR method
+    def __ge__(self, *args):  # cannot find CLR method
         pass
 
-    def __gt__(self, *args): #cannot find CLR method
+    def __gt__(self, *args):  # cannot find CLR method
         pass
 
-    def __init__(self, *args): #cannot find CLR method
+    def __init__(self, *args):  # cannot find CLR method
         """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
         pass
 
-    def __le__(self, *args): #cannot find CLR method
+    def __le__(self, *args):  # cannot find CLR method
         pass
 
-    def __lt__(self, *args): #cannot find CLR method
+    def __lt__(self, *args):  # cannot find CLR method
         pass
 
-    def __ne__(self, *args): #cannot find CLR method
+    def __ne__(self, *args):  # cannot find CLR method
         pass
 
-    def __reduce_ex__(self, *args): #cannot find CLR method
+    def __reduce_ex__(self, *args):  # cannot find CLR method
         pass
 
-    def __str__(self, *args): #cannot find CLR method
+    def __str__(self, *args):  # cannot find CLR method
         pass
 
     All = None
@@ -57,41 +61,44 @@ class GetBoxMode(Enum, IComparable, IFormattable, IConvertible):
 
 class GetResult(Enum, IComparable, IFormattable, IConvertible):
     """
-    Possible results from GetObject.Get(), GetPoint.Get(), etc...
-    
+    Possible results from GetObject.Get(), GetPoint.Get(), etc...
+
+    
+
     enum GetResult, values: Angle (20), Cancel (1), Circle (16), Color (5), CustomMessage (14), Cylinder (18), Direction (22), Distance (21), ExitRhino (268435455), Frame (23), Line2d (10), Miss (7), NoResult (0), Nothing (2), Number (4), Object (12), Option (3), Plane (17), Point (8), Point2d (9), Rectangle2d (11), Sphere (19), String (13), Timeout (15), Undo (6), User1 (4294967295), User2 (4294967294), User3 (4294967293), User4 (4294967292), User5 (4294967291)
     """
-    def __eq__(self, *args): #cannot find CLR method
+
+    def __eq__(self, *args):  # cannot find CLR method
         """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
         pass
 
-    def __format__(self, *args): #cannot find CLR method
+    def __format__(self, *args):  # cannot find CLR method
         """ __format__(formattable: IFormattable, format: str) -> str """
         pass
 
-    def __ge__(self, *args): #cannot find CLR method
+    def __ge__(self, *args):  # cannot find CLR method
         pass
 
-    def __gt__(self, *args): #cannot find CLR method
+    def __gt__(self, *args):  # cannot find CLR method
         pass
 
-    def __init__(self, *args): #cannot find CLR method
+    def __init__(self, *args):  # cannot find CLR method
         """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
         pass
 
-    def __le__(self, *args): #cannot find CLR method
+    def __le__(self, *args):  # cannot find CLR method
         pass
 
-    def __lt__(self, *args): #cannot find CLR method
+    def __lt__(self, *args):  # cannot find CLR method
         pass
 
-    def __ne__(self, *args): #cannot find CLR method
+    def __ne__(self, *args):  # cannot find CLR method
         pass
 
-    def __reduce_ex__(self, *args): #cannot find CLR method
+    def __reduce_ex__(self, *args):  # cannot find CLR method
         pass
 
-    def __str__(self, *args): #cannot find CLR method
+    def __str__(self, *args):  # cannot find CLR method
         pass
 
     Angle = None
@@ -129,37 +136,59 @@ class GetResult(Enum, IComparable, IFormattable, IConvertible):
 
 class RhinoGet(object):
     """
-    Base class for GetObject, GetPoint, GetSphere, etc.
-                
-                You will never directly create a RhinoGet but you will use its member
-                functions after calling GetObject::GetObjects(), GetPoint::GetPoint(), and so on.
-                
-                Provides tools to set command prompt, set command options, and specify
-                if the "get" can optionally accept numbers, nothing (pressing enter),
+    Base class for GetObject, GetPoint, GetSphere, etc.
+
+                
+
+                You will never directly create a RhinoGet but you will use its member
+
+                functions after calling GetObject::GetObjects(), GetPoint::GetPoint(), and so on.
+
+                
+
+                Provides tools to set command prompt, set command options, and specify
+
+                if the "get" can optionally accept numbers, nothing (pressing enter),
+
                 and undo.
     """
+
     @staticmethod
     def Get2dRectangle(solidPen, rectangle, rectView):
         """
-        Get2dRectangle(solidPen: bool) -> (Result, Rectangle, RhinoView)
-        
-            Gets a rectangle in view window coordinates.
-        
-            solidPen: If true, a solid pen is used for drawing while the user selects a rectangle.
-                    If 
-             false, a dotted pen is used for drawing while the user selects a rectangle.
-        
+        Get2dRectangle(solidPen: bool) -> (Result, Rectangle, RhinoView)
+
+        
+
+            Gets a rectangle in view window coordinates.
+
+        
+
+            solidPen: If true, a solid pen is used for drawing while the user selects a rectangle.
+
+                    If 
+
+             false, a dotted pen is used for drawing while the user selects a rectangle.
+
+        
+
             Returns: Success or Cancel.
         """
         pass
 
     @staticmethod
-    def GetAngle(commandPrompt, basePoint, referencePoint, defaultAngleRadians, angleRadians):
+    def GetAngle(
+        commandPrompt, basePoint, referencePoint, defaultAngleRadians, angleRadians
+    ):
         """
-        GetAngle(commandPrompt: str, basePoint: Point3d, referencePoint: Point3d, defaultAngleRadians: float) -> (Result, float)
-        
-            Allows user to interactively pick an angle
-        
+        GetAngle(commandPrompt: str, basePoint: Point3d, referencePoint: Point3d, defaultAngleRadians: float) -> (Result, float)
+
+        
+
+            Allows user to interactively pick an angle
+
+        
+
             commandPrompt: if null, a default prompt will be displayed
         """
         pass
@@ -172,38 +201,65 @@ class RhinoGet(object):
     @staticmethod
     def GetBool(prompt, acceptNothing, offPrompt, onPrompt, boolValue):
         """
-        GetBool(prompt: str, acceptNothing: bool, offPrompt: str, onPrompt: str, boolValue: bool) -> (Result, bool)
-        
-            Easy to use bool getter.
-        
-            prompt: Command prompt.
-            acceptNothing: If true, the user can press enter.
-            offPrompt: The 'false/off' message.
-            onPrompt: The 'true/on' message.
-            boolValue: Default bool value set to this and returned here.
-            Returns: The getter result based on user choice.
-                    Commands.Result.Success - got 
-             value.Commands.Result.Nothing - user pressed enter.Commands.Result.Cancel - user cancelled value 
+        GetBool(prompt: str, acceptNothing: bool, offPrompt: str, onPrompt: str, boolValue: bool) -> (Result, bool)
+
+        
+
+            Easy to use bool getter.
+
+        
+
+            prompt: Command prompt.
+
+            acceptNothing: If true, the user can press enter.
+
+            offPrompt: The 'false/off' message.
+
+            onPrompt: The 'true/on' message.
+
+            boolValue: Default bool value set to this and returned here.
+
+            Returns: The getter result based on user choice.
+
+                    Commands.Result.Success - got 
+
+             value.Commands.Result.Nothing - user pressed enter.Commands.Result.Cancel - user cancelled value 
+
              getting.
         """
         pass
 
     @staticmethod
-    def GetBox(box, mode=None, basePoint=None, prompt1=None, prompt2=None, prompt3=None):
+    def GetBox(
+        box, mode=None, basePoint=None, prompt1=None, prompt2=None, prompt3=None
+    ):
         """
-        GetBox(mode: GetBoxMode, basePoint: Point3d, prompt1: str, prompt2: str, prompt3: str) -> (Result, Box)
-        
-            Asks the user to select a Box in the viewport.
-        
-            mode: A particular "get box" mode, or Rhino.Input.GetBoxMode.All.
-            basePoint: Optional base point. Supply Point3d.Unset if you don't want to use this.
-            prompt1: Optional first prompt. Supply null to use the default prompt.
-            prompt2: Optional second prompt. Supply null to use the default prompt.
-            prompt3: Optional third prompt. Supply null to use the default prompt.
-            Returns: Commands.Result.Success if successful.
-        GetBox() -> (Result, Box)
-        
-            Asks the user to select a Box in the viewport.
+        GetBox(mode: GetBoxMode, basePoint: Point3d, prompt1: str, prompt2: str, prompt3: str) -> (Result, Box)
+
+        
+
+            Asks the user to select a Box in the viewport.
+
+        
+
+            mode: A particular "get box" mode, or Rhino.Input.GetBoxMode.All.
+
+            basePoint: Optional base point. Supply Point3d.Unset if you don't want to use this.
+
+            prompt1: Optional first prompt. Supply null to use the default prompt.
+
+            prompt2: Optional second prompt. Supply null to use the default prompt.
+
+            prompt3: Optional third prompt. Supply null to use the default prompt.
+
+            Returns: Commands.Result.Success if successful.
+
+        GetBox() -> (Result, Box)
+
+        
+
+            Asks the user to select a Box in the viewport.
+
             Returns: Commands.Result.Success if successful.
         """
         pass
@@ -216,14 +272,22 @@ class RhinoGet(object):
     @staticmethod
     def GetColor(prompt, acceptNothing, color):
         """
-        GetColor(prompt: str, acceptNothing: bool, color: Color) -> (Result, Color)
-        
-            Easy to use color getter.
-        
-            prompt: Command prompt.
-            acceptNothing: If true, the user can press enter.
-            color: Color value returned here. also used as default color.
-            Returns: Commands.Result.Success - got color.Commands.Result.Nothing - user pressed 
+        GetColor(prompt: str, acceptNothing: bool, color: Color) -> (Result, Color)
+
+        
+
+            Easy to use color getter.
+
+        
+
+            prompt: Command prompt.
+
+            acceptNothing: If true, the user can press enter.
+
+            color: Color value returned here. also used as default color.
+
+            Returns: Commands.Result.Success - got color.Commands.Result.Nothing - user pressed 
+
              enter.Commands.Result.Cancel - user cancel color getting.
         """
         pass
@@ -254,32 +318,58 @@ class RhinoGet(object):
         pass
 
     @staticmethod
-    def GetInteger(prompt, acceptNothing, outputNumber, lowerLimit=None, upperLimit=None):
+    def GetInteger(
+        prompt, acceptNothing, outputNumber, lowerLimit=None, upperLimit=None
+    ):
         """
-        GetInteger(prompt: str, acceptNothing: bool, outputNumber: int, lowerLimit: int, upperLimit: int) -> (Result, int)
-        
-            Easy to use number getter.
-        
-            prompt: The command prompt.
-            acceptNothing: If true, the user can press enter.
-            outputNumber: default number is set to this value and number value returned here.
-            lowerLimit: The minimum allowed value.
-            upperLimit: The maximum allowed value.
-            Returns: Commands.Result.Success - got number
-                    Commands.Result.Nothing - user pressed enter
-         
-                        Commands.Result.Cancel - user cancel number getting.
-        
-        GetInteger(prompt: str, acceptNothing: bool, outputNumber: int) -> (Result, int)
-        
-            Easy to use number getter.
-        
-            prompt: command prompt.
-            acceptNothing: if true, the user can press enter.
-            outputNumber: default number is set to this value and number value returned here.
-            Returns: Commands.Result.Success - got number
-                    Commands.Result.Nothing - user pressed enter
-         
+        GetInteger(prompt: str, acceptNothing: bool, outputNumber: int, lowerLimit: int, upperLimit: int) -> (Result, int)
+
+        
+
+            Easy to use number getter.
+
+        
+
+            prompt: The command prompt.
+
+            acceptNothing: If true, the user can press enter.
+
+            outputNumber: default number is set to this value and number value returned here.
+
+            lowerLimit: The minimum allowed value.
+
+            upperLimit: The maximum allowed value.
+
+            Returns: Commands.Result.Success - got number
+
+                    Commands.Result.Nothing - user pressed enter
+
+         
+
+                        Commands.Result.Cancel - user cancel number getting.
+
+        
+
+        GetInteger(prompt: str, acceptNothing: bool, outputNumber: int) -> (Result, int)
+
+        
+
+            Easy to use number getter.
+
+        
+
+            prompt: command prompt.
+
+            acceptNothing: if true, the user can press enter.
+
+            outputNumber: default number is set to this value and number value returned here.
+
+            Returns: Commands.Result.Success - got number
+
+                    Commands.Result.Nothing - user pressed enter
+
+         
+
                         Commands.Result.Cancel - user cancel number getting.
         """
         pass
@@ -297,59 +387,107 @@ class RhinoGet(object):
     @staticmethod
     def GetMultipleObjects(prompt, acceptNothing, filter, rhObjects):
         """
-        GetMultipleObjects(prompt: str, acceptNothing: bool, filter: GetObjectGeometryFilter) -> (Result, Array[ObjRef])
-        
-            Easy to use object getter for getting multiple objects.
-        
-            prompt: command prompt.
-            acceptNothing: if true, the user can press enter.
-            filter: geometry filter to use when getting objects.
-            Returns: Commands.Result.Success - got object
-                    Commands.Result.Nothing - user pressed enter
-         
-                        Commands.Result.Cancel - user cancel object getting.
-        
-        GetMultipleObjects(prompt: str, acceptNothing: bool, filter: ObjectType) -> (Result, Array[ObjRef])
-        
-            Easy to use object getter for getting multiple objects.
-        
-            prompt: command prompt.
-            acceptNothing: if true, the user can press enter.
-            filter: geometry filter to use when getting objects.
-            Returns: Commands.Result.Success - got object
-                    Commands.Result.Nothing - user pressed enter
-         
+        GetMultipleObjects(prompt: str, acceptNothing: bool, filter: GetObjectGeometryFilter) -> (Result, Array[ObjRef])
+
+        
+
+            Easy to use object getter for getting multiple objects.
+
+        
+
+            prompt: command prompt.
+
+            acceptNothing: if true, the user can press enter.
+
+            filter: geometry filter to use when getting objects.
+
+            Returns: Commands.Result.Success - got object
+
+                    Commands.Result.Nothing - user pressed enter
+
+         
+
+                        Commands.Result.Cancel - user cancel object getting.
+
+        
+
+        GetMultipleObjects(prompt: str, acceptNothing: bool, filter: ObjectType) -> (Result, Array[ObjRef])
+
+        
+
+            Easy to use object getter for getting multiple objects.
+
+        
+
+            prompt: command prompt.
+
+            acceptNothing: if true, the user can press enter.
+
+            filter: geometry filter to use when getting objects.
+
+            Returns: Commands.Result.Success - got object
+
+                    Commands.Result.Nothing - user pressed enter
+
+         
+
                         Commands.Result.Cancel - user cancel object getting.
         """
         pass
 
     @staticmethod
-    def GetNumber(prompt, acceptNothing, outputNumber, lowerLimit=None, upperLimit=None):
+    def GetNumber(
+        prompt, acceptNothing, outputNumber, lowerLimit=None, upperLimit=None
+    ):
         """
-        GetNumber(prompt: str, acceptNothing: bool, outputNumber: float) -> (Result, float)
-        
-            Easy to use number getter.
-        
-            prompt: command prompt.
-            acceptNothing: if true, the user can press enter.
-            outputNumber: default number is set to this value and number value returned here.
-            Returns: Commands.Result.Success - got number
-                    Commands.Result.Nothing - user pressed enter
-         
-                        Commands.Result.Cancel - user cancel number getting.
-        
-        GetNumber(prompt: str, acceptNothing: bool, outputNumber: float, lowerLimit: float, upperLimit: float) -> (Result, float)
-        
-            Easy to use number getter.
-        
-            prompt: The command prompt.
-            acceptNothing: If true, the user can press Enter.
-            outputNumber: Default number is set to this value and the return number value is assigned to this variable 
-             during the call.
-        
-            lowerLimit: The minimum allowed value.
-            upperLimit: The maximum allowed value.
-            Returns: Commands.Result.Success - got number.Commands.Result.Nothing - user pressed 
+        GetNumber(prompt: str, acceptNothing: bool, outputNumber: float) -> (Result, float)
+
+        
+
+            Easy to use number getter.
+
+        
+
+            prompt: command prompt.
+
+            acceptNothing: if true, the user can press enter.
+
+            outputNumber: default number is set to this value and number value returned here.
+
+            Returns: Commands.Result.Success - got number
+
+                    Commands.Result.Nothing - user pressed enter
+
+         
+
+                        Commands.Result.Cancel - user cancel number getting.
+
+        
+
+        GetNumber(prompt: str, acceptNothing: bool, outputNumber: float, lowerLimit: float, upperLimit: float) -> (Result, float)
+
+        
+
+            Easy to use number getter.
+
+        
+
+            prompt: The command prompt.
+
+            acceptNothing: If true, the user can press Enter.
+
+            outputNumber: Default number is set to this value and the return number value is assigned to this variable 
+
+             during the call.
+
+        
+
+            lowerLimit: The minimum allowed value.
+
+            upperLimit: The maximum allowed value.
+
+            Returns: Commands.Result.Success - got number.Commands.Result.Nothing - user pressed 
+
              enter.Commands.Result.Cancel - user cancel number getting.
         """
         pass
@@ -357,28 +495,50 @@ class RhinoGet(object):
     @staticmethod
     def GetOneObject(prompt, acceptNothing, filter, *__args):
         """
-        GetOneObject(prompt: str, acceptNothing: bool, filter: GetObjectGeometryFilter) -> (Result, ObjRef)
-        
-            Easy to use object getter.
-        
-            prompt: command prompt.
-            acceptNothing: if true, the user can press enter.
-            filter: geometry filter to use when getting objects.
-            Returns: Commands.Result.Success - got object
-                    Commands.Result.Nothing - user pressed enter
-         
-                        Commands.Result.Cancel - user cancel object getting.
-        
-        GetOneObject(prompt: str, acceptNothing: bool, filter: ObjectType) -> (Result, ObjRef)
-        
-            Easy to use object getter.
-        
-            prompt: command prompt.
-            acceptNothing: if true, the user can press enter.
-            filter: geometry filter to use when getting objects.
-            Returns: Commands.Result.Success - got object
-                    Commands.Result.Nothing - user pressed enter
-         
+        GetOneObject(prompt: str, acceptNothing: bool, filter: GetObjectGeometryFilter) -> (Result, ObjRef)
+
+        
+
+            Easy to use object getter.
+
+        
+
+            prompt: command prompt.
+
+            acceptNothing: if true, the user can press enter.
+
+            filter: geometry filter to use when getting objects.
+
+            Returns: Commands.Result.Success - got object
+
+                    Commands.Result.Nothing - user pressed enter
+
+         
+
+                        Commands.Result.Cancel - user cancel object getting.
+
+        
+
+        GetOneObject(prompt: str, acceptNothing: bool, filter: ObjectType) -> (Result, ObjRef)
+
+        
+
+            Easy to use object getter.
+
+        
+
+            prompt: command prompt.
+
+            acceptNothing: if true, the user can press enter.
+
+            filter: geometry filter to use when getting objects.
+
+            Returns: Commands.Result.Success - got object
+
+                    Commands.Result.Nothing - user pressed enter
+
+         
+
                         Commands.Result.Cancel - user cancel object getting.
         """
         pass
@@ -386,10 +546,14 @@ class RhinoGet(object):
     @staticmethod
     def GetPlane(plane):
         """
-        GetPlane() -> (Result, Plane)
-        
-            Gets an oriented infinite plane.
-            Returns: Commands.Result.Success - got plane.Commands.Result.Nothing - user pressed 
+        GetPlane() -> (Result, Plane)
+
+        
+
+            Gets an oriented infinite plane.
+
+            Returns: Commands.Result.Success - got plane.Commands.Result.Nothing - user pressed 
+
              enter.Commands.Result.Cancel - user cancel number getting.
         """
         pass
@@ -397,15 +561,24 @@ class RhinoGet(object):
     @staticmethod
     def GetPoint(prompt, acceptNothing, point):
         """
-        GetPoint(prompt: str, acceptNothing: bool) -> (Result, Point3d)
-        
-            Gets a point coordinate from the document.
-        
-            prompt: Prompt to display in command line during the operation.
-            acceptNothing: if true, the user can press enter.
-            Returns: Commands.Result.Success - got point
-                    Commands.Result.Nothing - user pressed enter
-          
+        GetPoint(prompt: str, acceptNothing: bool) -> (Result, Point3d)
+
+        
+
+            Gets a point coordinate from the document.
+
+        
+
+            prompt: Prompt to display in command line during the operation.
+
+            acceptNothing: if true, the user can press enter.
+
+            Returns: Commands.Result.Success - got point
+
+                    Commands.Result.Nothing - user pressed enter
+
+          
+
                        Commands.Result.Cancel - user cancel point getting.
         """
         pass
@@ -413,21 +586,36 @@ class RhinoGet(object):
     @staticmethod
     def GetPointOnMesh(*__args):
         """
-        GetPointOnMesh(meshObject: MeshObject, prompt: str, acceptNothing: bool) -> (Result, Point3d)
-        
-            Gets a point constrained to an existing mesh in the document.
-        
-            meshObject: An mesh object in the document.
-            prompt: Text prompt.
-            acceptNothing: true if nothing else should be accepted.
-            Returns: The command result based on user choice.
-        GetPointOnMesh(meshObjectId: Guid, prompt: str, acceptNothing: bool) -> (Result, Point3d)
-        
-            Gets a point constrained to an existing mesh in the document.
-        
-            meshObjectId: An ID of a mesh in the document.
-            prompt: Text prompt.
-            acceptNothing: true if nothing else should be accepted.
+        GetPointOnMesh(meshObject: MeshObject, prompt: str, acceptNothing: bool) -> (Result, Point3d)
+
+        
+
+            Gets a point constrained to an existing mesh in the document.
+
+        
+
+            meshObject: An mesh object in the document.
+
+            prompt: Text prompt.
+
+            acceptNothing: true if nothing else should be accepted.
+
+            Returns: The command result based on user choice.
+
+        GetPointOnMesh(meshObjectId: Guid, prompt: str, acceptNothing: bool) -> (Result, Point3d)
+
+        
+
+            Gets a point constrained to an existing mesh in the document.
+
+        
+
+            meshObjectId: An ID of a mesh in the document.
+
+            prompt: Text prompt.
+
+            acceptNothing: true if nothing else should be accepted.
+
             Returns: A command result based on user choice.
         """
         pass
@@ -440,10 +628,14 @@ class RhinoGet(object):
     @staticmethod
     def GetRectangle(*__args):
         """
-        GetRectangle(mode: GetBoxMode, firstPoint: Point3d, prompts: IEnumerable[str]) -> (Result, Array[Point3d])
-        GetRectangle() -> (Result, Array[Point3d])
-        
-            Gets a 3d rectangle.
+        GetRectangle(mode: GetBoxMode, firstPoint: Point3d, prompts: IEnumerable[str]) -> (Result, Array[Point3d])
+
+        GetRectangle() -> (Result, Array[Point3d])
+
+        
+
+            Gets a 3d rectangle.
+
             Returns: Commands.Result.Success if successful.
         """
         pass
@@ -456,16 +648,26 @@ class RhinoGet(object):
     @staticmethod
     def GetString(prompt, acceptNothing, outputString):
         """
-        GetString(prompt: str, acceptNothing: bool, outputString: str) -> (Result, str)
-        
-            Easy to use string getter.
-        
-            prompt: command prompt.
-            acceptNothing: if true, the user can press enter.
-            outputString: default string set to this value and string value returned here.
-            Returns: Commands.Result.Success - got string
-                    Commands.Result.Nothing - user pressed enter
-         
+        GetString(prompt: str, acceptNothing: bool, outputString: str) -> (Result, str)
+
+        
+
+            Easy to use string getter.
+
+        
+
+            prompt: command prompt.
+
+            acceptNothing: if true, the user can press enter.
+
+            outputString: default string set to this value and string value returned here.
+
+            Returns: Commands.Result.Success - got string
+
+                    Commands.Result.Nothing - user pressed enter
+
+         
+
                         Commands.Result.Cancel - user cancel string getting.
         """
         pass
@@ -473,11 +675,16 @@ class RhinoGet(object):
     @staticmethod
     def GetView(commandPrompt, view):
         """
-        GetView(commandPrompt: str) -> (Result, RhinoView)
-        
-            Allows the user to interactively pick a viewport.
-        
-            commandPrompt: The command prompt during the request.
+        GetView(commandPrompt: str) -> (Result, RhinoView)
+
+        
+
+            Allows the user to interactively pick a viewport.
+
+        
+
+            commandPrompt: The command prompt during the request.
+
             Returns: The result based on user choice.
         """
         pass
@@ -485,43 +692,45 @@ class RhinoGet(object):
     @staticmethod
     def InGet(doc):
         """
-        InGet(doc: RhinoDoc) -> bool
-        
-            Returns true if the document is current in a "Get" operation.
+        InGet(doc: RhinoDoc) -> bool
+
+        
+
+            Returns true if the document is current in a "Get" operation.
+
             Returns: true if a getter is currently active.
         """
         pass
 
     __all__ = [
-        'Get2dRectangle',
-        'GetAngle',
-        'GetArc',
-        'GetBool',
-        'GetBox',
-        'GetCircle',
-        'GetColor',
-        'GetFileName',
-        'GetFileNameScripted',
-        'GetGrip',
-        'GetGrips',
-        'GetHelix',
-        'GetInteger',
-        'GetLine',
-        'GetLinearDimension',
-        'GetMultipleObjects',
-        'GetNumber',
-        'GetOneObject',
-        'GetPlane',
-        'GetPoint',
-        'GetPointOnMesh',
-        'GetPolyline',
-        'GetRectangle',
-        'GetSpiral',
-        'GetString',
-        'GetView',
-        'InGet',
+        "Get2dRectangle",
+        "GetAngle",
+        "GetArc",
+        "GetBool",
+        "GetBox",
+        "GetCircle",
+        "GetColor",
+        "GetFileName",
+        "GetFileNameScripted",
+        "GetGrip",
+        "GetGrips",
+        "GetHelix",
+        "GetInteger",
+        "GetLine",
+        "GetLinearDimension",
+        "GetMultipleObjects",
+        "GetNumber",
+        "GetOneObject",
+        "GetPlane",
+        "GetPoint",
+        "GetPointOnMesh",
+        "GetPolyline",
+        "GetRectangle",
+        "GetSpiral",
+        "GetString",
+        "GetView",
+        "InGet",
     ]
 
 
 # variables with complex values
-

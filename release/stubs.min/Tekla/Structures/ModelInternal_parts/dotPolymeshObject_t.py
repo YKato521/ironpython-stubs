@@ -1,5 +1,4 @@
 class dotPolymeshObject_t(object):
- # no doc
- ModelObject=None
- Polymesh=None
-
+    # no doc
+    ModelObject = None
+    Polymesh = None

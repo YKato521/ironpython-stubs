@@ -1,11 +1,12 @@
 class UIControlledApplication(object):
- """
+    """
  Represents the Autodesk Revit user interface,providing access to
 
  UI customization methods and events.
  """
- def CreateAddInCommandBinding(self,revitCommandId):
-  """
+
+    def CreateAddInCommandBinding(self, revitCommandId):
+        """
   CreateAddInCommandBinding(self: UIControlledApplication,revitCommandId: RevitCommandId) -> AddInCommandBinding
 
   
@@ -16,9 +17,10 @@ class UIControlledApplication(object):
 
    revitCommandId: The Revit command id to identify the command handler you want to replace.
   """
-  pass
- def CreateRibbonPanel(self,*__args):
-  """
+        pass
+
+    def CreateRibbonPanel(self, *__args):
+        """
   CreateRibbonPanel(self: UIControlledApplication,tabName: str,panelName: str) -> RibbonPanel
 
   
@@ -53,9 +55,10 @@ class UIControlledApplication(object):
 
    panelName: The name of the panel to be created.
   """
-  pass
- def CreateRibbonTab(self,tabName):
-  """
+        pass
+
+    def CreateRibbonTab(self, tabName):
+        """
   CreateRibbonTab(self: UIControlledApplication,tabName: str)
 
    Creates a new tab on the Revit user interface.
@@ -64,9 +67,10 @@ class UIControlledApplication(object):
 
    tabName: The name of the tab to be created.
   """
-  pass
- def GetDockablePane(self,id):
-  """
+        pass
+
+    def GetDockablePane(self, id):
+        """
   GetDockablePane(self: UIControlledApplication,id: DockablePaneId) -> DockablePane
 
   
@@ -77,9 +81,10 @@ class UIControlledApplication(object):
 
    id: Unique identifier for the new pane.
   """
-  pass
- def GetRibbonPanels(self,*__args):
-  """
+        pass
+
+    def GetRibbonPanels(self, *__args):
+        """
   GetRibbonPanels(self: UIControlledApplication) -> List[RibbonPanel]
 
   
@@ -106,9 +111,10 @@ class UIControlledApplication(object):
 
    tabName: The name of the tab on which the panels are located.
   """
-  pass
- def LoadAddIn(self,fileName):
-  """
+        pass
+
+    def LoadAddIn(self, fileName):
+        """
   LoadAddIn(self: UIControlledApplication,fileName: str)
 
    Loads add-ins from the given manifest file.
@@ -121,9 +127,10 @@ class UIControlledApplication(object):
 
   manifest file which contains Revit add-ins.
   """
-  pass
- def LoadPackageContents(self,packageContentsPath):
-  """
+        pass
+
+    def LoadPackageContents(self, packageContentsPath):
+        """
   LoadPackageContents(self: UIControlledApplication,packageContentsPath: str)
 
    Loads add-ins from the given packageContents.xml file.
@@ -132,9 +139,10 @@ class UIControlledApplication(object):
 
    packageContentsPath: The name of package contents file
   """
-  pass
- def RegisterDockablePane(self,id,title,provider):
-  """
+        pass
+
+    def RegisterDockablePane(self, id, title, provider):
+        """
   RegisterDockablePane(self: UIControlledApplication,id: DockablePaneId,title: str,provider: IDockablePaneProvider)
 
    Adds a new dockable pane to the Revit user interface.
@@ -147,9 +155,10 @@ class UIControlledApplication(object):
 
    provider: Your add-in's implementation of the IDockablePaneProvider interface.
   """
-  pass
- def RemoveAddInCommandBinding(self,revitCommandId):
-  """
+        pass
+
+    def RemoveAddInCommandBinding(self, revitCommandId):
+        """
   RemoveAddInCommandBinding(self: UIControlledApplication,revitCommandId: RevitCommandId)
 
    Removes an AddInCommandBinding.
@@ -160,9 +169,12 @@ class UIControlledApplication(object):
 
     binding.
   """
-  pass
- ActiveAddInId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get current active external application or external command id.
+        pass
+
+    ActiveAddInId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get current active external application or external command id.
 
 
 
@@ -172,8 +184,10 @@ Get: ActiveAddInId(self: UIControlledApplication) -> AddInId
 
 """
 
- ControlledApplication=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the database level ControlledApplication represented by this UI-level ControlledApplication.
+    ControlledApplication = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the database level ControlledApplication represented by this UI-level ControlledApplication.
 
 
 
@@ -183,8 +197,10 @@ Get: ControlledApplication(self: UIControlledApplication) -> ControlledApplicati
 
 """
 
- IsLateAddinLoading=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether this add-in is loaded on the fly or not. If it is loaded when Revit is starting up,it
+    IsLateAddinLoading = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Indicates whether this add-in is loaded on the fly or not. If it is loaded when Revit is starting up,it
 
 is false,otherwise it should be true.
 
@@ -196,8 +212,10 @@ Get: IsLateAddinLoading(self: UIControlledApplication) -> bool
 
 """
 
- LoadedApplications=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns an array of successfully loaded external applications.
+    LoadedApplications = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns an array of successfully loaded external applications.
 
 
 
@@ -207,14 +225,12 @@ Get: LoadedApplications(self: UIControlledApplication) -> ExternalApplicationArr
 
 """
 
-
- ApplicationClosing=None
- DialogBoxShowing=None
- DisplayingOptionsDialog=None
- DockableFrameFocusChanged=None
- DockableFrameVisibilityChanged=None
- FabricationPartBrowserChanged=None
- Idling=None
- ViewActivated=None
- ViewActivating=None
-
+    ApplicationClosing = None
+    DialogBoxShowing = None
+    DisplayingOptionsDialog = None
+    DockableFrameFocusChanged = None
+    DockableFrameVisibilityChanged = None
+    FabricationPartBrowserChanged = None
+    Idling = None
+    ViewActivated = None
+    ViewActivating = None

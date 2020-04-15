@@ -8,6 +8,7 @@
 # no functions
 # classes
 
+
 class MaterialsManager(object):
     # no doc
     def InitializeForActiveDocumentOnIdle(self):
@@ -19,22 +20,31 @@ class MaterialsManager(object):
         """ Reset() """
         pass
 
-    DynamoErrorMaterialId = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: DynamoErrorMaterialId(self: MaterialsManager) -> ElementId
-
+    DynamoErrorMaterialId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: DynamoErrorMaterialId(self: MaterialsManager) -> ElementId
+
+
+
 """
 
-    DynamoGStyleId = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: DynamoGStyleId(self: MaterialsManager) -> ElementId
-
+    DynamoGStyleId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: DynamoGStyleId(self: MaterialsManager) -> ElementId
+
+
+
 """
 
-    DynamoMaterialId = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """Get: DynamoMaterialId(self: MaterialsManager) -> ElementId
-
-"""
+    DynamoMaterialId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )  # default
+    """Get: DynamoMaterialId(self: MaterialsManager) -> ElementId
 
+
+
+"""
 
     Instance = None
-
-

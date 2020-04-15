@@ -41,8 +41,12 @@ from __init___parts.BindingCompleteEventHandler import BindingCompleteEventHandl
 from __init___parts.BindingCompleteState import BindingCompleteState
 from __init___parts.BindingContext import BindingContext
 from __init___parts.BindingManagerBase import BindingManagerBase
-from __init___parts.BindingManagerDataErrorEventArgs import BindingManagerDataErrorEventArgs
-from __init___parts.BindingManagerDataErrorEventHandler import BindingManagerDataErrorEventHandler
+from __init___parts.BindingManagerDataErrorEventArgs import (
+    BindingManagerDataErrorEventArgs,
+)
+from __init___parts.BindingManagerDataErrorEventHandler import (
+    BindingManagerDataErrorEventHandler,
+)
 from __init___parts.BindingMemberInfo import BindingMemberInfo
 from __init___parts.ScrollableControl import ScrollableControl
 from __init___parts.ToolStrip import ToolStrip
@@ -89,7 +93,9 @@ from __init___parts.ColumnStyle import ColumnStyle
 from __init___parts.ColumnWidthChangedEventArgs import ColumnWidthChangedEventArgs
 from __init___parts.ColumnWidthChangedEventHandler import ColumnWidthChangedEventHandler
 from __init___parts.ColumnWidthChangingEventArgs import ColumnWidthChangingEventArgs
-from __init___parts.ColumnWidthChangingEventHandler import ColumnWidthChangingEventHandler
+from __init___parts.ColumnWidthChangingEventHandler import (
+    ColumnWidthChangingEventHandler,
+)
 from __init___parts.ComboBox import ComboBox
 from __init___parts.ComboBoxRenderer import ComboBoxRenderer
 from __init___parts.ComboBoxStyle import ComboBoxStyle
@@ -118,98 +124,190 @@ from __init___parts.Cursors import Cursors
 from __init___parts.DataFormats import DataFormats
 from __init___parts.IDataGridEditingService import IDataGridEditingService
 from __init___parts.DataGrid import DataGrid
-from __init___parts.IDataGridColumnStyleEditingNotificationService import IDataGridColumnStyleEditingNotificationService
+from __init___parts.IDataGridColumnStyleEditingNotificationService import (
+    IDataGridColumnStyleEditingNotificationService,
+)
 from __init___parts.DataGridColumnStyle import DataGridColumnStyle
 from __init___parts.DataGridBoolColumn import DataGridBoolColumn
 from __init___parts.DataGridCell import DataGridCell
 from __init___parts.DataGridLineStyle import DataGridLineStyle
 from __init___parts.DataGridParentRowsLabelStyle import DataGridParentRowsLabelStyle
-from __init___parts.DataGridPreferredColumnWidthTypeConverter import DataGridPreferredColumnWidthTypeConverter
+from __init___parts.DataGridPreferredColumnWidthTypeConverter import (
+    DataGridPreferredColumnWidthTypeConverter,
+)
 from __init___parts.DataGridTableStyle import DataGridTableStyle
 from __init___parts.TextBoxBase import TextBoxBase
 from __init___parts.TextBox import TextBox
 from __init___parts.DataGridTextBox import DataGridTextBox
 from __init___parts.DataGridTextBoxColumn import DataGridTextBoxColumn
 from __init___parts.DataGridView import DataGridView
-from __init___parts.DataGridViewAdvancedBorderStyle import DataGridViewAdvancedBorderStyle
-from __init___parts.DataGridViewAdvancedCellBorderStyle import DataGridViewAdvancedCellBorderStyle
+from __init___parts.DataGridViewAdvancedBorderStyle import (
+    DataGridViewAdvancedBorderStyle,
+)
+from __init___parts.DataGridViewAdvancedCellBorderStyle import (
+    DataGridViewAdvancedCellBorderStyle,
+)
 from __init___parts.DataGridViewAutoSizeColumnMode import DataGridViewAutoSizeColumnMode
-from __init___parts.DataGridViewAutoSizeColumnModeEventArgs import DataGridViewAutoSizeColumnModeEventArgs
-from __init___parts.DataGridViewAutoSizeColumnModeEventHandler import DataGridViewAutoSizeColumnModeEventHandler
-from __init___parts.DataGridViewAutoSizeColumnsMode import DataGridViewAutoSizeColumnsMode
-from __init___parts.DataGridViewAutoSizeColumnsModeEventArgs import DataGridViewAutoSizeColumnsModeEventArgs
-from __init___parts.DataGridViewAutoSizeColumnsModeEventHandler import DataGridViewAutoSizeColumnsModeEventHandler
-from __init___parts.DataGridViewAutoSizeModeEventArgs import DataGridViewAutoSizeModeEventArgs
-from __init___parts.DataGridViewAutoSizeModeEventHandler import DataGridViewAutoSizeModeEventHandler
+from __init___parts.DataGridViewAutoSizeColumnModeEventArgs import (
+    DataGridViewAutoSizeColumnModeEventArgs,
+)
+from __init___parts.DataGridViewAutoSizeColumnModeEventHandler import (
+    DataGridViewAutoSizeColumnModeEventHandler,
+)
+from __init___parts.DataGridViewAutoSizeColumnsMode import (
+    DataGridViewAutoSizeColumnsMode,
+)
+from __init___parts.DataGridViewAutoSizeColumnsModeEventArgs import (
+    DataGridViewAutoSizeColumnsModeEventArgs,
+)
+from __init___parts.DataGridViewAutoSizeColumnsModeEventHandler import (
+    DataGridViewAutoSizeColumnsModeEventHandler,
+)
+from __init___parts.DataGridViewAutoSizeModeEventArgs import (
+    DataGridViewAutoSizeModeEventArgs,
+)
+from __init___parts.DataGridViewAutoSizeModeEventHandler import (
+    DataGridViewAutoSizeModeEventHandler,
+)
 from __init___parts.DataGridViewAutoSizeRowMode import DataGridViewAutoSizeRowMode
 from __init___parts.DataGridViewAutoSizeRowsMode import DataGridViewAutoSizeRowsMode
 from __init___parts.DataGridViewElement import DataGridViewElement
 from __init___parts.DataGridViewBand import DataGridViewBand
-from __init___parts.DataGridViewBindingCompleteEventArgs import DataGridViewBindingCompleteEventArgs
-from __init___parts.DataGridViewBindingCompleteEventHandler import DataGridViewBindingCompleteEventHandler
+from __init___parts.DataGridViewBindingCompleteEventArgs import (
+    DataGridViewBindingCompleteEventArgs,
+)
+from __init___parts.DataGridViewBindingCompleteEventHandler import (
+    DataGridViewBindingCompleteEventHandler,
+)
 from __init___parts.DataGridViewCell import DataGridViewCell
 from __init___parts.DataGridViewButtonCell import DataGridViewButtonCell
 from __init___parts.DataGridViewColumn import DataGridViewColumn
 from __init___parts.DataGridViewButtonColumn import DataGridViewButtonColumn
 from __init___parts.DataGridViewCellBorderStyle import DataGridViewCellBorderStyle
-from __init___parts.DataGridViewCellCancelEventArgs import DataGridViewCellCancelEventArgs
-from __init___parts.DataGridViewCellCancelEventHandler import DataGridViewCellCancelEventHandler
+from __init___parts.DataGridViewCellCancelEventArgs import (
+    DataGridViewCellCancelEventArgs,
+)
+from __init___parts.DataGridViewCellCancelEventHandler import (
+    DataGridViewCellCancelEventHandler,
+)
 from __init___parts.DataGridViewCellCollection import DataGridViewCellCollection
 from __init___parts.DataGridViewCellEventArgs import DataGridViewCellEventArgs
-from __init___parts.DataGridViewCellContextMenuStripNeededEventArgs import DataGridViewCellContextMenuStripNeededEventArgs
-from __init___parts.DataGridViewCellContextMenuStripNeededEventHandler import DataGridViewCellContextMenuStripNeededEventHandler
-from __init___parts.DataGridViewCellErrorTextNeededEventArgs import DataGridViewCellErrorTextNeededEventArgs
-from __init___parts.DataGridViewCellErrorTextNeededEventHandler import DataGridViewCellErrorTextNeededEventHandler
+from __init___parts.DataGridViewCellContextMenuStripNeededEventArgs import (
+    DataGridViewCellContextMenuStripNeededEventArgs,
+)
+from __init___parts.DataGridViewCellContextMenuStripNeededEventHandler import (
+    DataGridViewCellContextMenuStripNeededEventHandler,
+)
+from __init___parts.DataGridViewCellErrorTextNeededEventArgs import (
+    DataGridViewCellErrorTextNeededEventArgs,
+)
+from __init___parts.DataGridViewCellErrorTextNeededEventHandler import (
+    DataGridViewCellErrorTextNeededEventHandler,
+)
 from __init___parts.DataGridViewCellEventHandler import DataGridViewCellEventHandler
-from __init___parts.DataGridViewCellFormattingEventArgs import DataGridViewCellFormattingEventArgs
-from __init___parts.DataGridViewCellFormattingEventHandler import DataGridViewCellFormattingEventHandler
+from __init___parts.DataGridViewCellFormattingEventArgs import (
+    DataGridViewCellFormattingEventArgs,
+)
+from __init___parts.DataGridViewCellFormattingEventHandler import (
+    DataGridViewCellFormattingEventHandler,
+)
 from __init___parts.MouseEventArgs import MouseEventArgs
 from __init___parts.DataGridViewCellMouseEventArgs import DataGridViewCellMouseEventArgs
-from __init___parts.DataGridViewCellMouseEventHandler import DataGridViewCellMouseEventHandler
-from __init___parts.DataGridViewCellPaintingEventArgs import DataGridViewCellPaintingEventArgs
-from __init___parts.DataGridViewCellPaintingEventHandler import DataGridViewCellPaintingEventHandler
-from __init___parts.DataGridViewCellParsingEventArgs import DataGridViewCellParsingEventArgs
-from __init___parts.DataGridViewCellParsingEventHandler import DataGridViewCellParsingEventHandler
-from __init___parts.DataGridViewCellStateChangedEventArgs import DataGridViewCellStateChangedEventArgs
-from __init___parts.DataGridViewCellStateChangedEventHandler import DataGridViewCellStateChangedEventHandler
+from __init___parts.DataGridViewCellMouseEventHandler import (
+    DataGridViewCellMouseEventHandler,
+)
+from __init___parts.DataGridViewCellPaintingEventArgs import (
+    DataGridViewCellPaintingEventArgs,
+)
+from __init___parts.DataGridViewCellPaintingEventHandler import (
+    DataGridViewCellPaintingEventHandler,
+)
+from __init___parts.DataGridViewCellParsingEventArgs import (
+    DataGridViewCellParsingEventArgs,
+)
+from __init___parts.DataGridViewCellParsingEventHandler import (
+    DataGridViewCellParsingEventHandler,
+)
+from __init___parts.DataGridViewCellStateChangedEventArgs import (
+    DataGridViewCellStateChangedEventArgs,
+)
+from __init___parts.DataGridViewCellStateChangedEventHandler import (
+    DataGridViewCellStateChangedEventHandler,
+)
 from __init___parts.DataGridViewCellStyle import DataGridViewCellStyle
-from __init___parts.DataGridViewCellStyleContentChangedEventArgs import DataGridViewCellStyleContentChangedEventArgs
-from __init___parts.DataGridViewCellStyleContentChangedEventHandler import DataGridViewCellStyleContentChangedEventHandler
+from __init___parts.DataGridViewCellStyleContentChangedEventArgs import (
+    DataGridViewCellStyleContentChangedEventArgs,
+)
+from __init___parts.DataGridViewCellStyleContentChangedEventHandler import (
+    DataGridViewCellStyleContentChangedEventHandler,
+)
 from __init___parts.DataGridViewCellStyleConverter import DataGridViewCellStyleConverter
 from __init___parts.DataGridViewCellStyleScopes import DataGridViewCellStyleScopes
-from __init___parts.DataGridViewCellToolTipTextNeededEventArgs import DataGridViewCellToolTipTextNeededEventArgs
-from __init___parts.DataGridViewCellToolTipTextNeededEventHandler import DataGridViewCellToolTipTextNeededEventHandler
-from __init___parts.DataGridViewCellValidatingEventArgs import DataGridViewCellValidatingEventArgs
-from __init___parts.DataGridViewCellValidatingEventHandler import DataGridViewCellValidatingEventHandler
+from __init___parts.DataGridViewCellToolTipTextNeededEventArgs import (
+    DataGridViewCellToolTipTextNeededEventArgs,
+)
+from __init___parts.DataGridViewCellToolTipTextNeededEventHandler import (
+    DataGridViewCellToolTipTextNeededEventHandler,
+)
+from __init___parts.DataGridViewCellValidatingEventArgs import (
+    DataGridViewCellValidatingEventArgs,
+)
+from __init___parts.DataGridViewCellValidatingEventHandler import (
+    DataGridViewCellValidatingEventHandler,
+)
 from __init___parts.DataGridViewCellValueEventArgs import DataGridViewCellValueEventArgs
-from __init___parts.DataGridViewCellValueEventHandler import DataGridViewCellValueEventHandler
+from __init___parts.DataGridViewCellValueEventHandler import (
+    DataGridViewCellValueEventHandler,
+)
 from __init___parts.DataGridViewCheckBoxCell import DataGridViewCheckBoxCell
 from __init___parts.DataGridViewCheckBoxColumn import DataGridViewCheckBoxColumn
 from __init___parts.DataGridViewClipboardCopyMode import DataGridViewClipboardCopyMode
 from __init___parts.DataGridViewColumnCollection import DataGridViewColumnCollection
-from __init___parts.DataGridViewColumnDesignTimeVisibleAttribute import DataGridViewColumnDesignTimeVisibleAttribute
+from __init___parts.DataGridViewColumnDesignTimeVisibleAttribute import (
+    DataGridViewColumnDesignTimeVisibleAttribute,
+)
 from __init___parts.HandledMouseEventArgs import HandledMouseEventArgs
-from __init___parts.DataGridViewColumnDividerDoubleClickEventArgs import DataGridViewColumnDividerDoubleClickEventArgs
-from __init___parts.DataGridViewColumnDividerDoubleClickEventHandler import DataGridViewColumnDividerDoubleClickEventHandler
+from __init___parts.DataGridViewColumnDividerDoubleClickEventArgs import (
+    DataGridViewColumnDividerDoubleClickEventArgs,
+)
+from __init___parts.DataGridViewColumnDividerDoubleClickEventHandler import (
+    DataGridViewColumnDividerDoubleClickEventHandler,
+)
 from __init___parts.DataGridViewColumnEventArgs import DataGridViewColumnEventArgs
 from __init___parts.DataGridViewColumnEventHandler import DataGridViewColumnEventHandler
 from __init___parts.DataGridViewHeaderCell import DataGridViewHeaderCell
 from __init___parts.DataGridViewColumnHeaderCell import DataGridViewColumnHeaderCell
-from __init___parts.DataGridViewColumnHeadersHeightSizeMode import DataGridViewColumnHeadersHeightSizeMode
+from __init___parts.DataGridViewColumnHeadersHeightSizeMode import (
+    DataGridViewColumnHeadersHeightSizeMode,
+)
 from __init___parts.DataGridViewColumnSortMode import DataGridViewColumnSortMode
-from __init___parts.DataGridViewColumnStateChangedEventArgs import DataGridViewColumnStateChangedEventArgs
-from __init___parts.DataGridViewColumnStateChangedEventHandler import DataGridViewColumnStateChangedEventHandler
+from __init___parts.DataGridViewColumnStateChangedEventArgs import (
+    DataGridViewColumnStateChangedEventArgs,
+)
+from __init___parts.DataGridViewColumnStateChangedEventHandler import (
+    DataGridViewColumnStateChangedEventHandler,
+)
 from __init___parts.DataGridViewComboBoxCell import DataGridViewComboBoxCell
 from __init___parts.DataGridViewComboBoxColumn import DataGridViewComboBoxColumn
-from __init___parts.DataGridViewComboBoxDisplayStyle import DataGridViewComboBoxDisplayStyle
+from __init___parts.DataGridViewComboBoxDisplayStyle import (
+    DataGridViewComboBoxDisplayStyle,
+)
 from __init___parts.IDataGridViewEditingControl import IDataGridViewEditingControl
-from __init___parts.DataGridViewComboBoxEditingControl import DataGridViewComboBoxEditingControl
+from __init___parts.DataGridViewComboBoxEditingControl import (
+    DataGridViewComboBoxEditingControl,
+)
 from __init___parts.DataGridViewContentAlignment import DataGridViewContentAlignment
 from __init___parts.DataGridViewDataErrorContexts import DataGridViewDataErrorContexts
 from __init___parts.DataGridViewDataErrorEventArgs import DataGridViewDataErrorEventArgs
-from __init___parts.DataGridViewDataErrorEventHandler import DataGridViewDataErrorEventHandler
-from __init___parts.DataGridViewEditingControlShowingEventArgs import DataGridViewEditingControlShowingEventArgs
-from __init___parts.DataGridViewEditingControlShowingEventHandler import DataGridViewEditingControlShowingEventHandler
+from __init___parts.DataGridViewDataErrorEventHandler import (
+    DataGridViewDataErrorEventHandler,
+)
+from __init___parts.DataGridViewEditingControlShowingEventArgs import (
+    DataGridViewEditingControlShowingEventArgs,
+)
+from __init___parts.DataGridViewEditingControlShowingEventHandler import (
+    DataGridViewEditingControlShowingEventHandler,
+)
 from __init___parts.DataGridViewEditMode import DataGridViewEditMode
 from __init___parts.DataGridViewElementStates import DataGridViewElementStates
 from __init___parts.DataGridViewHeaderBorderStyle import DataGridViewHeaderBorderStyle
@@ -222,41 +320,95 @@ from __init___parts.DataGridViewLinkColumn import DataGridViewLinkColumn
 from __init___parts.DataGridViewPaintParts import DataGridViewPaintParts
 from __init___parts.DataGridViewRow import DataGridViewRow
 from __init___parts.DataGridViewRowCancelEventArgs import DataGridViewRowCancelEventArgs
-from __init___parts.DataGridViewRowCancelEventHandler import DataGridViewRowCancelEventHandler
+from __init___parts.DataGridViewRowCancelEventHandler import (
+    DataGridViewRowCancelEventHandler,
+)
 from __init___parts.DataGridViewRowCollection import DataGridViewRowCollection
-from __init___parts.DataGridViewRowContextMenuStripNeededEventArgs import DataGridViewRowContextMenuStripNeededEventArgs
-from __init___parts.DataGridViewRowContextMenuStripNeededEventHandler import DataGridViewRowContextMenuStripNeededEventHandler
-from __init___parts.DataGridViewRowDividerDoubleClickEventArgs import DataGridViewRowDividerDoubleClickEventArgs
-from __init___parts.DataGridViewRowDividerDoubleClickEventHandler import DataGridViewRowDividerDoubleClickEventHandler
-from __init___parts.DataGridViewRowErrorTextNeededEventArgs import DataGridViewRowErrorTextNeededEventArgs
-from __init___parts.DataGridViewRowErrorTextNeededEventHandler import DataGridViewRowErrorTextNeededEventHandler
+from __init___parts.DataGridViewRowContextMenuStripNeededEventArgs import (
+    DataGridViewRowContextMenuStripNeededEventArgs,
+)
+from __init___parts.DataGridViewRowContextMenuStripNeededEventHandler import (
+    DataGridViewRowContextMenuStripNeededEventHandler,
+)
+from __init___parts.DataGridViewRowDividerDoubleClickEventArgs import (
+    DataGridViewRowDividerDoubleClickEventArgs,
+)
+from __init___parts.DataGridViewRowDividerDoubleClickEventHandler import (
+    DataGridViewRowDividerDoubleClickEventHandler,
+)
+from __init___parts.DataGridViewRowErrorTextNeededEventArgs import (
+    DataGridViewRowErrorTextNeededEventArgs,
+)
+from __init___parts.DataGridViewRowErrorTextNeededEventHandler import (
+    DataGridViewRowErrorTextNeededEventHandler,
+)
 from __init___parts.DataGridViewRowEventArgs import DataGridViewRowEventArgs
 from __init___parts.DataGridViewRowEventHandler import DataGridViewRowEventHandler
 from __init___parts.DataGridViewRowHeaderCell import DataGridViewRowHeaderCell
-from __init___parts.DataGridViewRowHeadersWidthSizeMode import DataGridViewRowHeadersWidthSizeMode
-from __init___parts.DataGridViewRowHeightInfoNeededEventArgs import DataGridViewRowHeightInfoNeededEventArgs
-from __init___parts.DataGridViewRowHeightInfoNeededEventHandler import DataGridViewRowHeightInfoNeededEventHandler
-from __init___parts.DataGridViewRowHeightInfoPushedEventArgs import DataGridViewRowHeightInfoPushedEventArgs
-from __init___parts.DataGridViewRowHeightInfoPushedEventHandler import DataGridViewRowHeightInfoPushedEventHandler
-from __init___parts.DataGridViewRowPostPaintEventArgs import DataGridViewRowPostPaintEventArgs
-from __init___parts.DataGridViewRowPostPaintEventHandler import DataGridViewRowPostPaintEventHandler
-from __init___parts.DataGridViewRowPrePaintEventArgs import DataGridViewRowPrePaintEventArgs
-from __init___parts.DataGridViewRowPrePaintEventHandler import DataGridViewRowPrePaintEventHandler
+from __init___parts.DataGridViewRowHeadersWidthSizeMode import (
+    DataGridViewRowHeadersWidthSizeMode,
+)
+from __init___parts.DataGridViewRowHeightInfoNeededEventArgs import (
+    DataGridViewRowHeightInfoNeededEventArgs,
+)
+from __init___parts.DataGridViewRowHeightInfoNeededEventHandler import (
+    DataGridViewRowHeightInfoNeededEventHandler,
+)
+from __init___parts.DataGridViewRowHeightInfoPushedEventArgs import (
+    DataGridViewRowHeightInfoPushedEventArgs,
+)
+from __init___parts.DataGridViewRowHeightInfoPushedEventHandler import (
+    DataGridViewRowHeightInfoPushedEventHandler,
+)
+from __init___parts.DataGridViewRowPostPaintEventArgs import (
+    DataGridViewRowPostPaintEventArgs,
+)
+from __init___parts.DataGridViewRowPostPaintEventHandler import (
+    DataGridViewRowPostPaintEventHandler,
+)
+from __init___parts.DataGridViewRowPrePaintEventArgs import (
+    DataGridViewRowPrePaintEventArgs,
+)
+from __init___parts.DataGridViewRowPrePaintEventHandler import (
+    DataGridViewRowPrePaintEventHandler,
+)
 from __init___parts.DataGridViewRowsAddedEventArgs import DataGridViewRowsAddedEventArgs
-from __init___parts.DataGridViewRowsAddedEventHandler import DataGridViewRowsAddedEventHandler
-from __init___parts.DataGridViewRowsRemovedEventArgs import DataGridViewRowsRemovedEventArgs
-from __init___parts.DataGridViewRowsRemovedEventHandler import DataGridViewRowsRemovedEventHandler
-from __init___parts.DataGridViewRowStateChangedEventArgs import DataGridViewRowStateChangedEventArgs
-from __init___parts.DataGridViewRowStateChangedEventHandler import DataGridViewRowStateChangedEventHandler
-from __init___parts.DataGridViewSelectedCellCollection import DataGridViewSelectedCellCollection
-from __init___parts.DataGridViewSelectedColumnCollection import DataGridViewSelectedColumnCollection
-from __init___parts.DataGridViewSelectedRowCollection import DataGridViewSelectedRowCollection
+from __init___parts.DataGridViewRowsAddedEventHandler import (
+    DataGridViewRowsAddedEventHandler,
+)
+from __init___parts.DataGridViewRowsRemovedEventArgs import (
+    DataGridViewRowsRemovedEventArgs,
+)
+from __init___parts.DataGridViewRowsRemovedEventHandler import (
+    DataGridViewRowsRemovedEventHandler,
+)
+from __init___parts.DataGridViewRowStateChangedEventArgs import (
+    DataGridViewRowStateChangedEventArgs,
+)
+from __init___parts.DataGridViewRowStateChangedEventHandler import (
+    DataGridViewRowStateChangedEventHandler,
+)
+from __init___parts.DataGridViewSelectedCellCollection import (
+    DataGridViewSelectedCellCollection,
+)
+from __init___parts.DataGridViewSelectedColumnCollection import (
+    DataGridViewSelectedColumnCollection,
+)
+from __init___parts.DataGridViewSelectedRowCollection import (
+    DataGridViewSelectedRowCollection,
+)
 from __init___parts.DataGridViewSelectionMode import DataGridViewSelectionMode
-from __init___parts.DataGridViewSortCompareEventArgs import DataGridViewSortCompareEventArgs
-from __init___parts.DataGridViewSortCompareEventHandler import DataGridViewSortCompareEventHandler
+from __init___parts.DataGridViewSortCompareEventArgs import (
+    DataGridViewSortCompareEventArgs,
+)
+from __init___parts.DataGridViewSortCompareEventHandler import (
+    DataGridViewSortCompareEventHandler,
+)
 from __init___parts.DataGridViewTextBoxCell import DataGridViewTextBoxCell
 from __init___parts.DataGridViewTextBoxColumn import DataGridViewTextBoxColumn
-from __init___parts.DataGridViewTextBoxEditingControl import DataGridViewTextBoxEditingControl
+from __init___parts.DataGridViewTextBoxEditingControl import (
+    DataGridViewTextBoxEditingControl,
+)
 from __init___parts.DataGridViewTopLeftHeaderCell import DataGridViewTopLeftHeaderCell
 from __init___parts.DataGridViewTriState import DataGridViewTriState
 from __init___parts.IDataObject import IDataObject
@@ -284,12 +436,18 @@ from __init___parts.DragEventHandler import DragEventHandler
 from __init___parts.DrawItemEventArgs import DrawItemEventArgs
 from __init___parts.DrawItemEventHandler import DrawItemEventHandler
 from __init___parts.DrawItemState import DrawItemState
-from __init___parts.DrawListViewColumnHeaderEventArgs import DrawListViewColumnHeaderEventArgs
-from __init___parts.DrawListViewColumnHeaderEventHandler import DrawListViewColumnHeaderEventHandler
+from __init___parts.DrawListViewColumnHeaderEventArgs import (
+    DrawListViewColumnHeaderEventArgs,
+)
+from __init___parts.DrawListViewColumnHeaderEventHandler import (
+    DrawListViewColumnHeaderEventHandler,
+)
 from __init___parts.DrawListViewItemEventArgs import DrawListViewItemEventArgs
 from __init___parts.DrawListViewItemEventHandler import DrawListViewItemEventHandler
 from __init___parts.DrawListViewSubItemEventArgs import DrawListViewSubItemEventArgs
-from __init___parts.DrawListViewSubItemEventHandler import DrawListViewSubItemEventHandler
+from __init___parts.DrawListViewSubItemEventHandler import (
+    DrawListViewSubItemEventHandler,
+)
 from __init___parts.DrawMode import DrawMode
 from __init___parts.DrawToolTipEventArgs import DrawToolTipEventArgs
 from __init___parts.DrawToolTipEventHandler import DrawToolTipEventHandler
@@ -301,7 +459,9 @@ from __init___parts.ErrorProvider import ErrorProvider
 from __init___parts.FeatureSupport import FeatureSupport
 from __init___parts.FileDialog import FileDialog
 from __init___parts.FileDialogCustomPlace import FileDialogCustomPlace
-from __init___parts.FileDialogCustomPlacesCollection import FileDialogCustomPlacesCollection
+from __init___parts.FileDialogCustomPlacesCollection import (
+    FileDialogCustomPlacesCollection,
+)
 from __init___parts.FixedPanel import FixedPanel
 from __init___parts.FlatButtonAppearance import FlatButtonAppearance
 from __init___parts.FlatStyle import FlatStyle
@@ -350,7 +510,9 @@ from __init___parts.HtmlElementErrorEventArgs import HtmlElementErrorEventArgs
 from __init___parts.HtmlElementErrorEventHandler import HtmlElementErrorEventHandler
 from __init___parts.HtmlElementEventArgs import HtmlElementEventArgs
 from __init___parts.HtmlElementEventHandler import HtmlElementEventHandler
-from __init___parts.HtmlElementInsertionOrientation import HtmlElementInsertionOrientation
+from __init___parts.HtmlElementInsertionOrientation import (
+    HtmlElementInsertionOrientation,
+)
 from __init___parts.HtmlHistory import HtmlHistory
 from __init___parts.HtmlWindow import HtmlWindow
 from __init___parts.HtmlWindowCollection import HtmlWindowCollection
@@ -370,9 +532,13 @@ from __init___parts.ImeModeConversion import ImeModeConversion
 from __init___parts.IMessageFilter import IMessageFilter
 from __init___parts.InputLanguage import InputLanguage
 from __init___parts.InputLanguageChangedEventArgs import InputLanguageChangedEventArgs
-from __init___parts.InputLanguageChangedEventHandler import InputLanguageChangedEventHandler
+from __init___parts.InputLanguageChangedEventHandler import (
+    InputLanguageChangedEventHandler,
+)
 from __init___parts.InputLanguageChangingEventArgs import InputLanguageChangingEventArgs
-from __init___parts.InputLanguageChangingEventHandler import InputLanguageChangingEventHandler
+from __init___parts.InputLanguageChangingEventHandler import (
+    InputLanguageChangingEventHandler,
+)
 from __init___parts.InputLanguageCollection import InputLanguageCollection
 from __init___parts.InsertKeyMode import InsertKeyMode
 from __init___parts.InvalidateEventArgs import InvalidateEventArgs
@@ -407,7 +573,9 @@ from __init___parts.LinkClickedEventHandler import LinkClickedEventHandler
 from __init___parts.LinkConverter import LinkConverter
 from __init___parts.LinkLabel import LinkLabel
 from __init___parts.LinkLabelLinkClickedEventArgs import LinkLabelLinkClickedEventArgs
-from __init___parts.LinkLabelLinkClickedEventHandler import LinkLabelLinkClickedEventHandler
+from __init___parts.LinkLabelLinkClickedEventHandler import (
+    LinkLabelLinkClickedEventHandler,
+)
 from __init___parts.LinkState import LinkState
 from __init___parts.ListBindingConverter import ListBindingConverter
 from __init___parts.ListBindingHelper import ListBindingHelper
@@ -422,13 +590,25 @@ from __init___parts.ListViewHitTestLocations import ListViewHitTestLocations
 from __init___parts.ListViewInsertionMark import ListViewInsertionMark
 from __init___parts.ListViewItem import ListViewItem
 from __init___parts.ListViewItemConverter import ListViewItemConverter
-from __init___parts.ListViewItemMouseHoverEventArgs import ListViewItemMouseHoverEventArgs
-from __init___parts.ListViewItemMouseHoverEventHandler import ListViewItemMouseHoverEventHandler
-from __init___parts.ListViewItemSelectionChangedEventArgs import ListViewItemSelectionChangedEventArgs
-from __init___parts.ListViewItemSelectionChangedEventHandler import ListViewItemSelectionChangedEventHandler
+from __init___parts.ListViewItemMouseHoverEventArgs import (
+    ListViewItemMouseHoverEventArgs,
+)
+from __init___parts.ListViewItemMouseHoverEventHandler import (
+    ListViewItemMouseHoverEventHandler,
+)
+from __init___parts.ListViewItemSelectionChangedEventArgs import (
+    ListViewItemSelectionChangedEventArgs,
+)
+from __init___parts.ListViewItemSelectionChangedEventHandler import (
+    ListViewItemSelectionChangedEventHandler,
+)
 from __init___parts.ListViewItemStates import ListViewItemStates
-from __init___parts.ListViewVirtualItemsSelectionRangeChangedEventArgs import ListViewVirtualItemsSelectionRangeChangedEventArgs
-from __init___parts.ListViewVirtualItemsSelectionRangeChangedEventHandler import ListViewVirtualItemsSelectionRangeChangedEventHandler
+from __init___parts.ListViewVirtualItemsSelectionRangeChangedEventArgs import (
+    ListViewVirtualItemsSelectionRangeChangedEventArgs,
+)
+from __init___parts.ListViewVirtualItemsSelectionRangeChangedEventHandler import (
+    ListViewVirtualItemsSelectionRangeChangedEventHandler,
+)
 from __init___parts.MainMenu import MainMenu
 from __init___parts.MaskedTextBox import MaskedTextBox
 from __init___parts.MaskFormat import MaskFormat
@@ -461,7 +641,9 @@ from __init___parts.NodeLabelEditEventHandler import NodeLabelEditEventHandler
 from __init___parts.NotifyIcon import NotifyIcon
 from __init___parts.NumericUpDown import NumericUpDown
 from __init___parts.NumericUpDownAcceleration import NumericUpDownAcceleration
-from __init___parts.NumericUpDownAccelerationCollection import NumericUpDownAccelerationCollection
+from __init___parts.NumericUpDownAccelerationCollection import (
+    NumericUpDownAccelerationCollection,
+)
 from __init___parts.OpacityConverter import OpacityConverter
 from __init___parts.OpenFileDialog import OpenFileDialog
 from __init___parts.Orientation import Orientation
@@ -482,7 +664,9 @@ from __init___parts.PowerStatus import PowerStatus
 from __init___parts.PreProcessControlState import PreProcessControlState
 from __init___parts.PreviewKeyDownEventArgs import PreviewKeyDownEventArgs
 from __init___parts.PreviewKeyDownEventHandler import PreviewKeyDownEventHandler
-from __init___parts.PrintControllerWithStatusDialog import PrintControllerWithStatusDialog
+from __init___parts.PrintControllerWithStatusDialog import (
+    PrintControllerWithStatusDialog,
+)
 from __init___parts.PrintDialog import PrintDialog
 from __init___parts.PrintPreviewControl import PrintPreviewControl
 from __init___parts.PrintPreviewDialog import PrintPreviewDialog
@@ -497,9 +681,15 @@ from __init___parts.PropertySort import PropertySort
 from __init___parts.PropertyTabChangedEventArgs import PropertyTabChangedEventArgs
 from __init___parts.PropertyTabChangedEventHandler import PropertyTabChangedEventHandler
 from __init___parts.PropertyValueChangedEventArgs import PropertyValueChangedEventArgs
-from __init___parts.PropertyValueChangedEventHandler import PropertyValueChangedEventHandler
-from __init___parts.QueryAccessibilityHelpEventArgs import QueryAccessibilityHelpEventArgs
-from __init___parts.QueryAccessibilityHelpEventHandler import QueryAccessibilityHelpEventHandler
+from __init___parts.PropertyValueChangedEventHandler import (
+    PropertyValueChangedEventHandler,
+)
+from __init___parts.QueryAccessibilityHelpEventArgs import (
+    QueryAccessibilityHelpEventArgs,
+)
+from __init___parts.QueryAccessibilityHelpEventHandler import (
+    QueryAccessibilityHelpEventHandler,
+)
 from __init___parts.QueryContinueDragEventArgs import QueryContinueDragEventArgs
 from __init___parts.QueryContinueDragEventHandler import QueryContinueDragEventHandler
 from __init___parts.QuestionEventArgs import QuestionEventArgs
@@ -508,7 +698,9 @@ from __init___parts.RadioButton import RadioButton
 from __init___parts.RadioButtonRenderer import RadioButtonRenderer
 from __init___parts.RelatedImageListAttribute import RelatedImageListAttribute
 from __init___parts.RetrieveVirtualItemEventArgs import RetrieveVirtualItemEventArgs
-from __init___parts.RetrieveVirtualItemEventHandler import RetrieveVirtualItemEventHandler
+from __init___parts.RetrieveVirtualItemEventHandler import (
+    RetrieveVirtualItemEventHandler,
+)
 from __init___parts.RichTextBox import RichTextBox
 from __init___parts.RichTextBoxFinds import RichTextBoxFinds
 from __init___parts.RichTextBoxLanguageOptions import RichTextBoxLanguageOptions
@@ -531,10 +723,16 @@ from __init___parts.ScrollEventType import ScrollEventType
 from __init___parts.ScrollOrientation import ScrollOrientation
 from __init___parts.SearchDirectionHint import SearchDirectionHint
 from __init___parts.SearchForVirtualItemEventArgs import SearchForVirtualItemEventArgs
-from __init___parts.SearchForVirtualItemEventHandler import SearchForVirtualItemEventHandler
+from __init___parts.SearchForVirtualItemEventHandler import (
+    SearchForVirtualItemEventHandler,
+)
 from __init___parts.SecurityIDType import SecurityIDType
-from __init___parts.SelectedGridItemChangedEventArgs import SelectedGridItemChangedEventArgs
-from __init___parts.SelectedGridItemChangedEventHandler import SelectedGridItemChangedEventHandler
+from __init___parts.SelectedGridItemChangedEventArgs import (
+    SelectedGridItemChangedEventArgs,
+)
+from __init___parts.SelectedGridItemChangedEventHandler import (
+    SelectedGridItemChangedEventHandler,
+)
 from __init___parts.SelectionMode import SelectionMode
 from __init___parts.SelectionRange import SelectionRange
 from __init___parts.SelectionRangeConverter import SelectionRangeConverter
@@ -557,7 +755,9 @@ from __init___parts.StatusBarPanel import StatusBarPanel
 from __init___parts.StatusBarPanelAutoSize import StatusBarPanelAutoSize
 from __init___parts.StatusBarPanelBorderStyle import StatusBarPanelBorderStyle
 from __init___parts.StatusBarPanelClickEventArgs import StatusBarPanelClickEventArgs
-from __init___parts.StatusBarPanelClickEventHandler import StatusBarPanelClickEventHandler
+from __init___parts.StatusBarPanelClickEventHandler import (
+    StatusBarPanelClickEventHandler,
+)
 from __init___parts.StatusBarPanelStyle import StatusBarPanelStyle
 from __init___parts.StatusStrip import StatusStrip
 from __init___parts.StructFormat import StructFormat
@@ -573,12 +773,18 @@ from __init___parts.TabControlEventArgs import TabControlEventArgs
 from __init___parts.TabControlEventHandler import TabControlEventHandler
 from __init___parts.TabDrawMode import TabDrawMode
 from __init___parts.TableLayoutCellPaintEventArgs import TableLayoutCellPaintEventArgs
-from __init___parts.TableLayoutCellPaintEventHandler import TableLayoutCellPaintEventHandler
+from __init___parts.TableLayoutCellPaintEventHandler import (
+    TableLayoutCellPaintEventHandler,
+)
 from __init___parts.TableLayoutStyleCollection import TableLayoutStyleCollection
-from __init___parts.TableLayoutColumnStyleCollection import TableLayoutColumnStyleCollection
+from __init___parts.TableLayoutColumnStyleCollection import (
+    TableLayoutColumnStyleCollection,
+)
 from __init___parts.TableLayoutControlCollection import TableLayoutControlCollection
 from __init___parts.TableLayoutPanel import TableLayoutPanel
-from __init___parts.TableLayoutPanelCellBorderStyle import TableLayoutPanelCellBorderStyle
+from __init___parts.TableLayoutPanelCellBorderStyle import (
+    TableLayoutPanelCellBorderStyle,
+)
 from __init___parts.TableLayoutPanelCellPosition import TableLayoutPanelCellPosition
 from __init___parts.TableLayoutPanelGrowStyle import TableLayoutPanelGrowStyle
 from __init___parts.TableLayoutRowStyleCollection import TableLayoutRowStyleCollection
@@ -602,45 +808,75 @@ from __init___parts.ToolBarButtonClickEventHandler import ToolBarButtonClickEven
 from __init___parts.ToolBarButtonStyle import ToolBarButtonStyle
 from __init___parts.ToolBarTextAlign import ToolBarTextAlign
 from __init___parts.ToolStripArrowRenderEventArgs import ToolStripArrowRenderEventArgs
-from __init___parts.ToolStripArrowRenderEventHandler import ToolStripArrowRenderEventHandler
+from __init___parts.ToolStripArrowRenderEventHandler import (
+    ToolStripArrowRenderEventHandler,
+)
 from __init___parts.ToolStripItem import ToolStripItem
 from __init___parts.ToolStripButton import ToolStripButton
 from __init___parts.ToolStripControlHost import ToolStripControlHost
 from __init___parts.ToolStripComboBox import ToolStripComboBox
 from __init___parts.ToolStripContainer import ToolStripContainer
 from __init___parts.ToolStripContentPanel import ToolStripContentPanel
-from __init___parts.ToolStripContentPanelRenderEventArgs import ToolStripContentPanelRenderEventArgs
-from __init___parts.ToolStripContentPanelRenderEventHandler import ToolStripContentPanelRenderEventHandler
+from __init___parts.ToolStripContentPanelRenderEventArgs import (
+    ToolStripContentPanelRenderEventArgs,
+)
+from __init___parts.ToolStripContentPanelRenderEventHandler import (
+    ToolStripContentPanelRenderEventHandler,
+)
 from __init___parts.ToolStripDropDownItem import ToolStripDropDownItem
 from __init___parts.ToolStripDropDownButton import ToolStripDropDownButton
-from __init___parts.ToolStripDropDownClosedEventArgs import ToolStripDropDownClosedEventArgs
-from __init___parts.ToolStripDropDownClosedEventHandler import ToolStripDropDownClosedEventHandler
+from __init___parts.ToolStripDropDownClosedEventArgs import (
+    ToolStripDropDownClosedEventArgs,
+)
+from __init___parts.ToolStripDropDownClosedEventHandler import (
+    ToolStripDropDownClosedEventHandler,
+)
 from __init___parts.ToolStripDropDownCloseReason import ToolStripDropDownCloseReason
-from __init___parts.ToolStripDropDownClosingEventArgs import ToolStripDropDownClosingEventArgs
-from __init___parts.ToolStripDropDownClosingEventHandler import ToolStripDropDownClosingEventHandler
+from __init___parts.ToolStripDropDownClosingEventArgs import (
+    ToolStripDropDownClosingEventArgs,
+)
+from __init___parts.ToolStripDropDownClosingEventHandler import (
+    ToolStripDropDownClosingEventHandler,
+)
 from __init___parts.ToolStripDropDownDirection import ToolStripDropDownDirection
-from __init___parts.ToolStripDropDownItemAccessibleObject import ToolStripDropDownItemAccessibleObject
+from __init___parts.ToolStripDropDownItemAccessibleObject import (
+    ToolStripDropDownItemAccessibleObject,
+)
 from __init___parts.ToolStripGripDisplayStyle import ToolStripGripDisplayStyle
 from __init___parts.ToolStripRenderEventArgs import ToolStripRenderEventArgs
 from __init___parts.ToolStripGripRenderEventArgs import ToolStripGripRenderEventArgs
-from __init___parts.ToolStripGripRenderEventHandler import ToolStripGripRenderEventHandler
+from __init___parts.ToolStripGripRenderEventHandler import (
+    ToolStripGripRenderEventHandler,
+)
 from __init___parts.ToolStripGripStyle import ToolStripGripStyle
 from __init___parts.ToolStripItemAlignment import ToolStripItemAlignment
 from __init___parts.ToolStripItemClickedEventArgs import ToolStripItemClickedEventArgs
-from __init___parts.ToolStripItemClickedEventHandler import ToolStripItemClickedEventHandler
+from __init___parts.ToolStripItemClickedEventHandler import (
+    ToolStripItemClickedEventHandler,
+)
 from __init___parts.ToolStripItemCollection import ToolStripItemCollection
 from __init___parts.ToolStripItemDisplayStyle import ToolStripItemDisplayStyle
 from __init___parts.ToolStripItemEventArgs import ToolStripItemEventArgs
 from __init___parts.ToolStripItemEventHandler import ToolStripItemEventHandler
 from __init___parts.ToolStripItemRenderEventArgs import ToolStripItemRenderEventArgs
-from __init___parts.ToolStripItemImageRenderEventArgs import ToolStripItemImageRenderEventArgs
-from __init___parts.ToolStripItemImageRenderEventHandler import ToolStripItemImageRenderEventHandler
+from __init___parts.ToolStripItemImageRenderEventArgs import (
+    ToolStripItemImageRenderEventArgs,
+)
+from __init___parts.ToolStripItemImageRenderEventHandler import (
+    ToolStripItemImageRenderEventHandler,
+)
 from __init___parts.ToolStripItemImageScaling import ToolStripItemImageScaling
 from __init___parts.ToolStripItemOverflow import ToolStripItemOverflow
 from __init___parts.ToolStripItemPlacement import ToolStripItemPlacement
-from __init___parts.ToolStripItemRenderEventHandler import ToolStripItemRenderEventHandler
-from __init___parts.ToolStripItemTextRenderEventArgs import ToolStripItemTextRenderEventArgs
-from __init___parts.ToolStripItemTextRenderEventHandler import ToolStripItemTextRenderEventHandler
+from __init___parts.ToolStripItemRenderEventHandler import (
+    ToolStripItemRenderEventHandler,
+)
+from __init___parts.ToolStripItemTextRenderEventArgs import (
+    ToolStripItemTextRenderEventArgs,
+)
+from __init___parts.ToolStripItemTextRenderEventHandler import (
+    ToolStripItemTextRenderEventHandler,
+)
 from __init___parts.ToolStripLabel import ToolStripLabel
 from __init___parts.ToolStripLayoutStyle import ToolStripLayoutStyle
 from __init___parts.ToolStripManager import ToolStripManager
@@ -650,7 +886,9 @@ from __init___parts.ToolStripOverflow import ToolStripOverflow
 from __init___parts.ToolStripOverflowButton import ToolStripOverflowButton
 from __init___parts.ToolStripPanel import ToolStripPanel
 from __init___parts.ToolStripPanelRenderEventArgs import ToolStripPanelRenderEventArgs
-from __init___parts.ToolStripPanelRenderEventHandler import ToolStripPanelRenderEventHandler
+from __init___parts.ToolStripPanelRenderEventHandler import (
+    ToolStripPanelRenderEventHandler,
+)
 from __init___parts.ToolStripPanelRow import ToolStripPanelRow
 from __init___parts.ToolStripRenderer import ToolStripRenderer
 from __init___parts.ToolStripProfessionalRenderer import ToolStripProfessionalRenderer
@@ -658,11 +896,17 @@ from __init___parts.ToolStripProgressBar import ToolStripProgressBar
 from __init___parts.ToolStripRenderEventHandler import ToolStripRenderEventHandler
 from __init___parts.ToolStripRenderMode import ToolStripRenderMode
 from __init___parts.ToolStripSeparator import ToolStripSeparator
-from __init___parts.ToolStripSeparatorRenderEventArgs import ToolStripSeparatorRenderEventArgs
-from __init___parts.ToolStripSeparatorRenderEventHandler import ToolStripSeparatorRenderEventHandler
+from __init___parts.ToolStripSeparatorRenderEventArgs import (
+    ToolStripSeparatorRenderEventArgs,
+)
+from __init___parts.ToolStripSeparatorRenderEventHandler import (
+    ToolStripSeparatorRenderEventHandler,
+)
 from __init___parts.ToolStripSplitButton import ToolStripSplitButton
 from __init___parts.ToolStripStatusLabel import ToolStripStatusLabel
-from __init___parts.ToolStripStatusLabelBorderSides import ToolStripStatusLabelBorderSides
+from __init___parts.ToolStripStatusLabelBorderSides import (
+    ToolStripStatusLabelBorderSides,
+)
 from __init___parts.ToolStripSystemRenderer import ToolStripSystemRenderer
 from __init___parts.ToolStripTextBox import ToolStripTextBox
 from __init___parts.ToolStripTextDirection import ToolStripTextDirection
@@ -704,17 +948,31 @@ from __init___parts.VScrollBar import VScrollBar
 from __init___parts.VScrollProperties import VScrollProperties
 from __init___parts.WebBrowserBase import WebBrowserBase
 from __init___parts.WebBrowser import WebBrowser
-from __init___parts.WebBrowserDocumentCompletedEventArgs import WebBrowserDocumentCompletedEventArgs
-from __init___parts.WebBrowserDocumentCompletedEventHandler import WebBrowserDocumentCompletedEventHandler
+from __init___parts.WebBrowserDocumentCompletedEventArgs import (
+    WebBrowserDocumentCompletedEventArgs,
+)
+from __init___parts.WebBrowserDocumentCompletedEventHandler import (
+    WebBrowserDocumentCompletedEventHandler,
+)
 from __init___parts.WebBrowserEncryptionLevel import WebBrowserEncryptionLevel
 from __init___parts.WebBrowserNavigatedEventArgs import WebBrowserNavigatedEventArgs
-from __init___parts.WebBrowserNavigatedEventHandler import WebBrowserNavigatedEventHandler
+from __init___parts.WebBrowserNavigatedEventHandler import (
+    WebBrowserNavigatedEventHandler,
+)
 from __init___parts.WebBrowserNavigatingEventArgs import WebBrowserNavigatingEventArgs
-from __init___parts.WebBrowserNavigatingEventHandler import WebBrowserNavigatingEventHandler
-from __init___parts.WebBrowserProgressChangedEventArgs import WebBrowserProgressChangedEventArgs
-from __init___parts.WebBrowserProgressChangedEventHandler import WebBrowserProgressChangedEventHandler
+from __init___parts.WebBrowserNavigatingEventHandler import (
+    WebBrowserNavigatingEventHandler,
+)
+from __init___parts.WebBrowserProgressChangedEventArgs import (
+    WebBrowserProgressChangedEventArgs,
+)
+from __init___parts.WebBrowserProgressChangedEventHandler import (
+    WebBrowserProgressChangedEventHandler,
+)
 from __init___parts.WebBrowserReadyState import WebBrowserReadyState
 from __init___parts.WebBrowserRefreshOption import WebBrowserRefreshOption
 from __init___parts.WebBrowserSiteBase import WebBrowserSiteBase
 from __init___parts.WindowsFormsSection import WindowsFormsSection
-from __init___parts.WindowsFormsSynchronizationContext import WindowsFormsSynchronizationContext
+from __init___parts.WindowsFormsSynchronizationContext import (
+    WindowsFormsSynchronizationContext,
+)

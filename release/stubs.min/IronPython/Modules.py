@@ -8,11 +8,13 @@
 # no functions
 # classes
 
+
 class Wpf(object):
- """ Provides helpers for interacting with Windows Presentation Foundation applications. """
- @staticmethod
- def LoadComponent(context,self,*__args):
-  """
+    """ Provides helpers for interacting with Windows Presentation Foundation applications. """
+
+    @staticmethod
+    def LoadComponent(context, self, *__args):
+        """
   LoadComponent(self: object,filename: TextReader) -> object
 
   
@@ -111,9 +113,8 @@ class Wpf(object):
 
     same type as the root of the XAML element.
   """
-  pass
- __all__=[
-  'LoadComponent',
- ]
+        pass
 
-
+    __all__ = [
+        "LoadComponent",
+    ]

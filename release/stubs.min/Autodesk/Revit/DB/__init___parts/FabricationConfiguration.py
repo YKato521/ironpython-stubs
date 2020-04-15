@@ -1,7 +1,8 @@
-class FabricationConfiguration(Element,IDisposable):
- """ This element contains the information about the fabrication configuration settings used by the project. """
- def CanBeSwapped(self):
-  """
+class FabricationConfiguration(Element, IDisposable):
+    """ This element contains the information about the fabrication configuration settings used by the project. """
+
+    def CanBeSwapped(self):
+        """
   CanBeSwapped(self: FabricationConfiguration) -> bool
 
   
@@ -10,12 +11,14 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: True if the fabrication configuration can be swapped,false otherwise.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def GetAllFabricationConnectorDefinitions(self,domain,shape):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def GetAllFabricationConnectorDefinitions(self, domain, shape):
+        """
   GetAllFabricationConnectorDefinitions(self: FabricationConfiguration,domain: ConnectorDomainType,shape: ConnectorProfileType) -> IList[int]
 
   
@@ -44,9 +47,10 @@ class FabricationConfiguration(Element,IDisposable):
 
     return will be empty if no connectors are found.
   """
-  pass
- def GetAllInsulationSpecifications(self,pFabPart):
-  """
+        pass
+
+    def GetAllInsulationSpecifications(self, pFabPart):
+        """
   GetAllInsulationSpecifications(self: FabricationConfiguration,pFabPart: FabricationPart) -> IList[int]
 
   
@@ -59,9 +63,10 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: An array of insulation specification identifiers.
   """
-  pass
- def GetAllLoadedServices(self):
-  """
+        pass
+
+    def GetAllLoadedServices(self):
+        """
   GetAllLoadedServices(self: FabricationConfiguration) -> IList[FabricationService]
 
   
@@ -70,9 +75,10 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: All the loaded fabrication services.
   """
-  pass
- def GetAllMaterials(self,part):
-  """
+        pass
+
+    def GetAllMaterials(self, part):
+        """
   GetAllMaterials(self: FabricationConfiguration,part: FabricationPart) -> IList[int]
 
   
@@ -85,9 +91,10 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: An array of material identifiers.
   """
-  pass
- def GetAllServices(self):
-  """
+        pass
+
+    def GetAllServices(self):
+        """
   GetAllServices(self: FabricationConfiguration) -> IList[FabricationService]
 
   
@@ -96,9 +103,10 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: All fabrication services. The return will be empty if no services are found.
   """
-  pass
- def GetAllSpecifications(self,part):
-  """
+        pass
+
+    def GetAllSpecifications(self, part):
+        """
   GetAllSpecifications(self: FabricationConfiguration,part: FabricationPart) -> IList[int]
 
   
@@ -111,9 +119,10 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: An array of specification identifiers.
   """
-  pass
- def GetAllUsedServices(self):
-  """
+        pass
+
+    def GetAllUsedServices(self):
+        """
   GetAllUsedServices(self: FabricationConfiguration) -> IList[FabricationService]
 
   
@@ -126,13 +135,15 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: All the used fabrication services.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- @staticmethod
- def GetFabricationConfiguration(doc):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    @staticmethod
+    def GetFabricationConfiguration(doc):
+        """
   GetFabricationConfiguration(doc: Document) -> FabricationConfiguration
 
   
@@ -145,9 +156,10 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: The fabrication configuration element in the document.
   """
-  pass
- def GetFabricationConfigurationInfo(self):
-  """
+        pass
+
+    def GetFabricationConfigurationInfo(self):
+        """
   GetFabricationConfigurationInfo(self: FabricationConfiguration) -> FabricationConfigurationInfo
 
   
@@ -156,9 +168,10 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: The information about the fabrication configuration of the project.
   """
-  pass
- def GetFabricationConnectorDomain(self,fabricationConnectorId):
-  """
+        pass
+
+    def GetFabricationConnectorDomain(self, fabricationConnectorId):
+        """
   GetFabricationConnectorDomain(self: FabricationConfiguration,fabricationConnectorId: int) -> ConnectorDomainType
 
   
@@ -171,9 +184,10 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: The fabrication connector's domain.
   """
-  pass
- def GetFabricationConnectorGroup(self,fabricationConnectorId):
-  """
+        pass
+
+    def GetFabricationConnectorGroup(self, fabricationConnectorId):
+        """
   GetFabricationConnectorGroup(self: FabricationConfiguration,fabricationConnectorId: int) -> str
 
   
@@ -186,9 +200,10 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: The fabrication connector's group.
   """
-  pass
- def GetFabricationConnectorName(self,fabricationConnectorId):
-  """
+        pass
+
+    def GetFabricationConnectorName(self, fabricationConnectorId):
+        """
   GetFabricationConnectorName(self: FabricationConfiguration,fabricationConnectorId: int) -> str
 
   
@@ -201,9 +216,10 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: The fabrication connector's name.
   """
-  pass
- def GetFabricationConnectorShape(self,fabricationConnectorId):
-  """
+        pass
+
+    def GetFabricationConnectorShape(self, fabricationConnectorId):
+        """
   GetFabricationConnectorShape(self: FabricationConfiguration,fabricationConnectorId: int) -> ConnectorProfileType
 
   
@@ -216,9 +232,10 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: The fabrication connector's shape.
   """
-  pass
- def GetInsulationSpecificationAbbreviation(self,insulationSpecificationId):
-  """
+        pass
+
+    def GetInsulationSpecificationAbbreviation(self, insulationSpecificationId):
+        """
   GetInsulationSpecificationAbbreviation(self: FabricationConfiguration,insulationSpecificationId: int) -> str
 
   
@@ -229,9 +246,10 @@ class FabricationConfiguration(Element,IDisposable):
 
    insulationSpecificationId: The insulation specification identifier.
   """
-  pass
- def GetInsulationSpecificationGroup(self,specId):
-  """
+        pass
+
+    def GetInsulationSpecificationGroup(self, specId):
+        """
   GetInsulationSpecificationGroup(self: FabricationConfiguration,specId: int) -> str
 
   
@@ -244,9 +262,10 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: The insulation specification group.
   """
-  pass
- def GetInsulationSpecificationName(self,specId):
-  """
+        pass
+
+    def GetInsulationSpecificationName(self, specId):
+        """
   GetInsulationSpecificationName(self: FabricationConfiguration,specId: int) -> str
 
   
@@ -259,9 +278,10 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: The insulation specification name.
   """
-  pass
- def GetMaterialAbbreviation(self,materialId):
-  """
+        pass
+
+    def GetMaterialAbbreviation(self, materialId):
+        """
   GetMaterialAbbreviation(self: FabricationConfiguration,materialId: int) -> str
 
   
@@ -276,9 +296,10 @@ class FabricationConfiguration(Element,IDisposable):
 
    materialId: The material identifier.
   """
-  pass
- def GetMaterialGroup(self,materialId):
-  """
+        pass
+
+    def GetMaterialGroup(self, materialId):
+        """
   GetMaterialGroup(self: FabricationConfiguration,materialId: int) -> str
 
   
@@ -291,9 +312,10 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: The material group.
   """
-  pass
- def GetMaterialName(self,materialId):
-  """
+        pass
+
+    def GetMaterialName(self, materialId):
+        """
   GetMaterialName(self: FabricationConfiguration,materialId: int) -> str
 
   
@@ -306,9 +328,10 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: The material name without the group.
   """
-  pass
- def GetMaterialThickness(self,materialId,gaugeId):
-  """
+        pass
+
+    def GetMaterialThickness(self, materialId, gaugeId):
+        """
   GetMaterialThickness(self: FabricationConfiguration,materialId: int,gaugeId: int) -> float
 
   
@@ -323,9 +346,10 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: The thickness of the material/gauge.
   """
-  pass
- def GetProfile(self):
-  """
+        pass
+
+    def GetProfile(self):
+        """
   GetProfile(self: FabricationConfiguration) -> str
 
   
@@ -334,9 +358,10 @@ class FabricationConfiguration(Element,IDisposable):
 
     for global profile.
   """
-  pass
- def GetService(self,serviceId):
-  """
+        pass
+
+    def GetService(self, serviceId):
+        """
   GetService(self: FabricationConfiguration,serviceId: int) -> FabricationService
 
   
@@ -353,9 +378,10 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: The service based on the service identifier.
   """
-  pass
- def GetSpecificationAbbreviation(self,specificationId):
-  """
+        pass
+
+    def GetSpecificationAbbreviation(self, specificationId):
+        """
   GetSpecificationAbbreviation(self: FabricationConfiguration,specificationId: int) -> str
 
   
@@ -366,9 +392,10 @@ class FabricationConfiguration(Element,IDisposable):
 
    specificationId: The specification identifier.
   """
-  pass
- def GetSpecificationGroup(self,specId):
-  """
+        pass
+
+    def GetSpecificationGroup(self, specId):
+        """
   GetSpecificationGroup(self: FabricationConfiguration,specId: int) -> str
 
   
@@ -381,9 +408,10 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: The specification group.
   """
-  pass
- def GetSpecificationName(self,specId):
-  """
+        pass
+
+    def GetSpecificationName(self, specId):
+        """
   GetSpecificationName(self: FabricationConfiguration,specId: int) -> str
 
   
@@ -396,9 +424,10 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: The specification name;
   """
-  pass
- def HasValidConfiguration(self):
-  """
+        pass
+
+    def HasValidConfiguration(self):
+        """
   HasValidConfiguration(self: FabricationConfiguration) -> bool
 
   
@@ -407,12 +436,14 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: True if a valid fabrication configuration has been set for the project.
   """
-  pass
- def LoadServices(self,serviceIds):
-  """ LoadServices(self: FabricationConfiguration,serviceIds: IList[int]) -> IList[int] """
-  pass
- def LocateFabricationConnector(self,group,name,domain,shape):
-  """
+        pass
+
+    def LoadServices(self, serviceIds):
+        """ LoadServices(self: FabricationConfiguration,serviceIds: IList[int]) -> IList[int] """
+        pass
+
+    def LocateFabricationConnector(self, group, name, domain, shape):
+        """
   LocateFabricationConnector(self: FabricationConfiguration,group: str,name: str,domain: ConnectorDomainType,shape: ConnectorProfileType) -> int
 
   
@@ -443,9 +474,10 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: Return the fabrication connector identifier. Returns -1 if not found.
   """
-  pass
- def LocateInsulationSpecification(self,group,name):
-  """
+        pass
+
+    def LocateInsulationSpecification(self, group, name):
+        """
   LocateInsulationSpecification(self: FabricationConfiguration,group: str,name: str) -> int
 
   
@@ -460,9 +492,10 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: The insulation specification identifier. Returns -1 if not found.
   """
-  pass
- def LocateMaterial(self,group,name):
-  """
+        pass
+
+    def LocateMaterial(self, group, name):
+        """
   LocateMaterial(self: FabricationConfiguration,group: str,name: str) -> int
 
   
@@ -477,9 +510,10 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: The material identifier. Returns -1 if not found.
   """
-  pass
- def LocateSpecification(self,group,name):
-  """
+        pass
+
+    def LocateSpecification(self, group, name):
+        """
   LocateSpecification(self: FabricationConfiguration,group: str,name: str) -> int
 
   
@@ -494,12 +528,14 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: The specification identifier. Returns -1 if not found.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def ReloadConfiguration(self):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def ReloadConfiguration(self):
+        """
   ReloadConfiguration(self: FabricationConfiguration) -> ConfigurationReloadInfo
 
   
@@ -508,9 +544,10 @@ class FabricationConfiguration(Element,IDisposable):
 
    Returns: The information about the reload of the fabrication configuration.
   """
-  pass
- def SetConfiguration(self,fabricationConfigurationInfo,profile=None):
-  """
+        pass
+
+    def SetConfiguration(self, fabricationConfigurationInfo, profile=None):
+        """
   SetConfiguration(self: FabricationConfiguration,fabricationConfigurationInfo: FabricationConfigurationInfo)
 
    Set the fabrication configuration with global profile.
@@ -531,19 +568,24 @@ class FabricationConfiguration(Element,IDisposable):
 
     global profile.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def UnloadServices(self,serviceIds):
-  """ UnloadServices(self: FabricationConfiguration,serviceIds: IList[int]) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def UnloadServices(self, serviceIds):
+        """ UnloadServices(self: FabricationConfiguration,serviceIds: IList[int]) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

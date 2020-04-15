@@ -1,7 +1,10 @@
-class ElectricalSetting(Element,IDisposable):
- """ The ElectricalSetting class represents an instance of element of electrical settings. """
- def AddDistributionSysType(self,name,phase,phaseConfig,numWire,volLineToLine,volLineToGround):
-  """
+class ElectricalSetting(Element, IDisposable):
+    """ The ElectricalSetting class represents an instance of element of electrical settings. """
+
+    def AddDistributionSysType(
+        self, name, phase, phaseConfig, numWire, volLineToLine, volLineToGround
+    ):
+        """
   AddDistributionSysType(self: ElectricalSetting,name: str,phase: ElectricalPhase,phaseConfig: ElectricalPhaseConfiguration,numWire: int,volLineToLine: VoltageType,volLineToGround: VoltageType) -> DistributionSysType
 
   
@@ -24,9 +27,10 @@ class ElectricalSetting(Element,IDisposable):
 
    Returns: New added distribution system type object.
   """
-  pass
- def AddVoltageType(self,name,actualValue,minValue,maxValue):
-  """
+        pass
+
+    def AddVoltageType(self, name, actualValue, minValue, maxValue):
+        """
   AddVoltageType(self: ElectricalSetting,name: str,actualValue: float,minValue: float,maxValue: float) -> VoltageType
 
   
@@ -45,9 +49,10 @@ class ElectricalSetting(Element,IDisposable):
 
    Returns: New added voltage type object.
   """
-  pass
- def AddWireMaterialType(self,name,baseMaterial):
-  """
+        pass
+
+    def AddWireMaterialType(self, name, baseMaterial):
+        """
   AddWireMaterialType(self: ElectricalSetting,name: str,baseMaterial: WireMaterialType) -> WireMaterialType
 
   
@@ -66,9 +71,21 @@ class ElectricalSetting(Element,IDisposable):
 
    Returns: New added wire material type object.
   """
-  pass
- def AddWireType(self,name,materialType,temperatureRating,insulation,maxSize,neutralMultiplier,neutralRequired,neutralMode,conduit):
-  """
+        pass
+
+    def AddWireType(
+        self,
+        name,
+        materialType,
+        temperatureRating,
+        insulation,
+        maxSize,
+        neutralMultiplier,
+        neutralRequired,
+        neutralMode,
+        conduit,
+    ):
+        """
   AddWireType(self: ElectricalSetting,name: str,materialType: WireMaterialType,temperatureRating: TemperatureRatingType,insulation: InsulationType,maxSize: WireSize,neutralMultiplier: float,neutralRequired: bool,neutralMode: NeutralMode,conduit: WireConduitType) -> WireType
 
   
@@ -97,16 +114,19 @@ class ElectricalSetting(Element,IDisposable):
 
    Returns: New added wire type object.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- @staticmethod
- def GetElectricalSettings(document):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    @staticmethod
+    def GetElectricalSettings(document):
+        """
   GetElectricalSettings(document: Document) -> ElectricalSetting
 
   
@@ -119,9 +139,10 @@ class ElectricalSetting(Element,IDisposable):
 
    Returns: The electrical settings of the project.
   """
-  pass
- def GetSpecificFittingAngles(self):
-  """
+        pass
+
+    def GetSpecificFittingAngles(self):
+        """
   GetSpecificFittingAngles(self: ElectricalSetting) -> IList[float]
 
   
@@ -130,9 +151,10 @@ class ElectricalSetting(Element,IDisposable):
 
    Returns: Angles (in degrees).
   """
-  pass
- def GetSpecificFittingAngleStatus(self,angle):
-  """
+        pass
+
+    def GetSpecificFittingAngleStatus(self, angle):
+        """
   GetSpecificFittingAngleStatus(self: ElectricalSetting,angle: float) -> bool
 
   
@@ -145,9 +167,10 @@ class ElectricalSetting(Element,IDisposable):
 
     or 11.25 degrees.
   """
-  pass
- def IsValidSpecificFittingAngle(self,angle):
-  """
+        pass
+
+    def IsValidSpecificFittingAngle(self, angle):
+        """
   IsValidSpecificFittingAngle(self: ElectricalSetting,angle: float) -> bool
 
   
@@ -164,19 +187,22 @@ class ElectricalSetting(Element,IDisposable):
 
    Returns: True if the given value is a valid specific fitting angle.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def RemoveDistributionSysType(self,distributionSysType):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def RemoveDistributionSysType(self, distributionSysType):
+        """
   RemoveDistributionSysType(self: ElectricalSetting,distributionSysType: DistributionSysType)
 
    Remove an existing distribution system type from the project.
   """
-  pass
- def RemoveVoltageType(self,voltageType):
-  """
+        pass
+
+    def RemoveVoltageType(self, voltageType):
+        """
   RemoveVoltageType(self: ElectricalSetting,voltageType: VoltageType)
 
    Remove the voltage type from project.
@@ -185,9 +211,10 @@ class ElectricalSetting(Element,IDisposable):
 
    voltageType: Specify the voltage type to be removed.
   """
-  pass
- def RemoveWireMaterialType(self,materialType):
-  """
+        pass
+
+    def RemoveWireMaterialType(self, materialType):
+        """
   RemoveWireMaterialType(self: ElectricalSetting,materialType: WireMaterialType)
 
    Remove the wire material type from project.
@@ -196,19 +223,22 @@ class ElectricalSetting(Element,IDisposable):
 
    materialType: The wire material type to be removed.
   """
-  pass
- def RemoveWireType(self,wireType):
-  """
+        pass
+
+    def RemoveWireType(self, wireType):
+        """
   RemoveWireType(self: ElectricalSetting,wireType: WireType)
 
    Remove wire type definition from project.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetSpecificFittingAngleStatus(self,angle,bStatus):
-  """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetSpecificFittingAngleStatus(self, angle, bStatus):
+        """
   SetSpecificFittingAngleStatus(self: ElectricalSetting,angle: float,bStatus: bool)
 
    Sets the status of given specific angle.
@@ -219,18 +249,24 @@ class ElectricalSetting(Element,IDisposable):
 
    bStatus: Status,true - using the given angle during the pipe layout.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- CircuitLoadCalculationMethod=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The method to calculate circuit load
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    CircuitLoadCalculationMethod = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The method to calculate circuit load
 
 
 
@@ -242,8 +278,10 @@ Set: CircuitLoadCalculationMethod(self: ElectricalSetting)=value
 
 """
 
- CircuitNamePhaseA=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Circuit Naming by Phase - Phase A Label.
+    CircuitNamePhaseA = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Circuit Naming by Phase - Phase A Label.
 
 
 
@@ -255,8 +293,10 @@ Set: CircuitNamePhaseA(self: ElectricalSetting)=value
 
 """
 
- CircuitNamePhaseB=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Circuit Naming by Phase - Phase B Label.
+    CircuitNamePhaseB = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Circuit Naming by Phase - Phase B Label.
 
 
 
@@ -268,8 +308,10 @@ Set: CircuitNamePhaseB(self: ElectricalSetting)=value
 
 """
 
- CircuitNamePhaseC=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Circuit Naming by Phase - Phase C Label.
+    CircuitNamePhaseC = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Circuit Naming by Phase - Phase C Label.
 
 
 
@@ -281,8 +323,10 @@ Set: CircuitNamePhaseC(self: ElectricalSetting)=value
 
 """
 
- CircuitRating=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The default circuit rating for newly created circuit.
+    CircuitRating = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The default circuit rating for newly created circuit.
 
 
 
@@ -294,8 +338,10 @@ Set: CircuitRating(self: ElectricalSetting)=value
 
 """
 
- CircuitSequence=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The sequence in which power circuits are created.
+    CircuitSequence = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The sequence in which power circuits are created.
 
 
 
@@ -307,8 +353,10 @@ Set: CircuitSequence(self: ElectricalSetting)=value
 
 """
 
- DistributionSysTypes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get all distribution system types of the project.
+    DistributionSysTypes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get all distribution system types of the project.
 
 
 
@@ -318,8 +366,10 @@ Get: DistributionSysTypes(self: ElectricalSetting) -> DistributionSysTypeSet
 
 """
 
- VoltageTypes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get all voltage type definitions information of the project.
+    VoltageTypes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get all voltage type definitions information of the project.
 
 
 
@@ -329,8 +379,10 @@ Get: VoltageTypes(self: ElectricalSetting) -> VoltageTypeSet
 
 """
 
- WireConduitTypes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get electrical conduit types information of the project.
+    WireConduitTypes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get electrical conduit types information of the project.
 
 
 
@@ -340,8 +392,10 @@ Get: WireConduitTypes(self: ElectricalSetting) -> WireConduitTypeSet
 
 """
 
- WireMaterialTypes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get electrical wire material types information of the project.
+    WireMaterialTypes = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get electrical wire material types information of the project.
 
 
 
@@ -351,8 +405,8 @@ Get: WireMaterialTypes(self: ElectricalSetting) -> WireMaterialTypeSet
 
 """
 
- WireTypes=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get all wire type definition information of the project.
+    WireTypes = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get all wire type definition information of the project.
 
 
 
@@ -361,5 +415,3 @@ Get: WireTypes(self: ElectricalSetting) -> WireTypeSet
 
 
 """
-
-

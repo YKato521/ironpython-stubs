@@ -1,7 +1,8 @@
-class ListViewGroupCollection(object,IList,ICollection,IEnumerable):
- """ Represents the collection of groups within a System.Windows.Forms.ListView control. """
- def Add(self,*__args):
-  """
+class ListViewGroupCollection(object, IList, ICollection, IEnumerable):
+    """ Represents the collection of groups within a System.Windows.Forms.ListView control. """
+
+    def Add(self, *__args):
+        """
   Add(self: ListViewGroupCollection,key: str,headerText: str) -> ListViewGroup
 
   
@@ -36,9 +37,10 @@ class ListViewGroupCollection(object,IList,ICollection,IEnumerable):
 
     collection.
   """
-  pass
- def AddRange(self,groups):
-  """
+        pass
+
+    def AddRange(self, groups):
+        """
   AddRange(self: ListViewGroupCollection,groups: ListViewGroupCollection)
 
    Adds the groups in an existing System.Windows.Forms.ListViewGroupCollection to the collection.
@@ -57,16 +59,18 @@ class ListViewGroupCollection(object,IList,ICollection,IEnumerable):
 
     collection.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: ListViewGroupCollection)
 
    Removes all groups from the collection.
   """
-  pass
- def Contains(self,value):
-  """
+        pass
+
+    def Contains(self, value):
+        """
   Contains(self: ListViewGroupCollection,value: ListViewGroup) -> bool
 
   
@@ -79,9 +83,10 @@ class ListViewGroupCollection(object,IList,ICollection,IEnumerable):
 
    Returns: true if the group is in the collection; otherwise,false.
   """
-  pass
- def CopyTo(self,array,index):
-  """
+        pass
+
+    def CopyTo(self, array, index):
+        """
   CopyTo(self: ListViewGroupCollection,array: Array,index: int)
 
    Copies the groups in the collection to a compatible one-dimensional System.Array,starting at 
@@ -96,9 +101,10 @@ class ListViewGroupCollection(object,IList,ICollection,IEnumerable):
 
    index: The first index within the array to which the groups are copied.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: ListViewGroupCollection) -> IEnumerator
 
   
@@ -107,9 +113,10 @@ class ListViewGroupCollection(object,IList,ICollection,IEnumerable):
 
    Returns: An System.Collections.IEnumerator that represents the collection.
   """
-  pass
- def IndexOf(self,value):
-  """
+        pass
+
+    def IndexOf(self, value):
+        """
   IndexOf(self: ListViewGroupCollection,value: ListViewGroup) -> int
 
   
@@ -124,9 +131,10 @@ class ListViewGroupCollection(object,IList,ICollection,IEnumerable):
 
     collection.
   """
-  pass
- def Insert(self,index,group):
-  """
+        pass
+
+    def Insert(self, index, group):
+        """
   Insert(self: ListViewGroupCollection,index: int,group: ListViewGroup)
 
    Inserts the specified System.Windows.Forms.ListViewGroup into the collection at the specified 
@@ -141,9 +149,10 @@ class ListViewGroupCollection(object,IList,ICollection,IEnumerable):
 
    group: The System.Windows.Forms.ListViewGroup to insert into the collection.
   """
-  pass
- def Remove(self,group):
-  """
+        pass
+
+    def Remove(self, group):
+        """
   Remove(self: ListViewGroupCollection,group: ListViewGroup)
 
    Removes the specified System.Windows.Forms.ListViewGroup from the collection.
@@ -152,9 +161,10 @@ class ListViewGroupCollection(object,IList,ICollection,IEnumerable):
 
    group: The System.Windows.Forms.ListViewGroup to remove from the collection.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: ListViewGroupCollection,index: int)
 
    Removes the System.Windows.Forms.ListViewGroup at the specified index within the collection.
@@ -163,12 +173,14 @@ class ListViewGroupCollection(object,IList,ICollection,IEnumerable):
 
    index: The index within the collection of the System.Windows.Forms.ListViewGroup to remove.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IList,value: object) -> bool
 
   
@@ -181,27 +193,34 @@ class ListViewGroupCollection(object,IList,ICollection,IEnumerable):
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]=x.__setitem__(i,y) <==> x[i]= """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of groups in the collection.
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]=x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of groups in the collection.
 
 
 
@@ -210,5 +229,3 @@ Get: Count(self: ListViewGroupCollection) -> int
 
 
 """
-
-

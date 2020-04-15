@@ -1,11 +1,12 @@
-class KeyBasedTreeEntriesLoadContent(ExternalResourceLoadContent,IDisposable):
- """
+class KeyBasedTreeEntriesLoadContent(ExternalResourceLoadContent, IDisposable):
+    """
  This class is used by IExternalResourceServers to return KeyBasedTreeEntries data to Revit when their
 
     LoadResource method is invoked.
  """
- def AddEntry(self,entry):
-  """
+
+    def AddEntry(self, entry):
+        """
   AddEntry(self: KeyBasedTreeEntriesLoadContent,entry: KeyBasedTreeEntry) -> bool
 
   
@@ -30,16 +31,18 @@ class KeyBasedTreeEntriesLoadContent(ExternalResourceLoadContent,IDisposable):
 
      of one in the entry data set.
   """
-  pass
- def BuildEntries(self):
-  """
+        pass
+
+    def BuildEntries(self):
+        """
   BuildEntries(self: KeyBasedTreeEntriesLoadContent)
 
    Builds a KeyBasedTreeEntries object.
   """
-  pass
- def CanAddEntry(self,entry):
-  """
+        pass
+
+    def CanAddEntry(self, entry):
+        """
   CanAddEntry(self: KeyBasedTreeEntriesLoadContent,entry: KeyBasedTreeEntry) -> bool
 
   
@@ -56,12 +59,14 @@ class KeyBasedTreeEntriesLoadContent(ExternalResourceLoadContent,IDisposable):
 
    Returns: True if the KeyBasedTreeEntry could be added in,otherwise false.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: ExternalResourceLoadContent,A_0: bool) """
-  pass
- def GetEntries(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: ExternalResourceLoadContent,A_0: bool) """
+        pass
+
+    def GetEntries(self):
+        """
   GetEntries(self: KeyBasedTreeEntriesLoadContent) -> KeyBasedTreeEntries
 
   
@@ -76,9 +81,10 @@ class KeyBasedTreeEntriesLoadContent(ExternalResourceLoadContent,IDisposable):
 
     KeyBasedTreeEntriesLoadContent object.
   """
-  pass
- def GetLoadResults(self):
-  """
+        pass
+
+    def GetLoadResults(self):
+        """
   GetLoadResults(self: KeyBasedTreeEntriesLoadContent) -> KeyBasedTreeEntriesLoadResults
 
   
@@ -93,10 +99,11 @@ class KeyBasedTreeEntriesLoadContent(ExternalResourceLoadContent,IDisposable):
 
     KeyBasedTreeEntriesLoadContent object.
   """
-  pass
- @staticmethod
- def IsEntriesBuilt(content):
-  """
+        pass
+
+    @staticmethod
+    def IsEntriesBuilt(content):
+        """
   IsEntriesBuilt(content: KeyBasedTreeEntriesLoadContent) -> bool
 
   
@@ -113,12 +120,14 @@ class KeyBasedTreeEntriesLoadContent(ExternalResourceLoadContent,IDisposable):
 
    Returns: True if the KeyBasedTreeEntries object is built already,otherwise false.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: ExternalResourceLoadContent,disposing: bool) """
-  pass
- def Reset(self):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: ExternalResourceLoadContent,disposing: bool) """
+        pass
+
+    def Reset(self):
+        """
   Reset(self: KeyBasedTreeEntriesLoadContent)
 
    Clears KeyBasedTreeEntriesLoadContent object,including KeyBasedTreeEntries and 
@@ -127,13 +136,16 @@ class KeyBasedTreeEntriesLoadContent(ExternalResourceLoadContent,IDisposable):
 
     object.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

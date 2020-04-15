@@ -1,5 +1,5 @@
-class Matrix(object,IDisposable):
- """
+class Matrix(object, IDisposable):
+    """
  Represents an arbitrarily sized matrix of System.Doubledouble-precision
 
     floating point numbers. If you are working with a 4x4 matrix,then you may want
@@ -12,8 +12,9 @@ class Matrix(object,IDisposable):
 
  Matrix(xform: Transform)
  """
- def BackSolve(self,zeroTolerance,b):
-  """
+
+    def BackSolve(self, zeroTolerance, b):
+        """
   BackSolve(self: Matrix,zeroTolerance: float,b: Array[float]) -> Array[float]
 
   
@@ -42,9 +43,10 @@ class Matrix(object,IDisposable):
 
    Returns: Array of length ColumnCount on success. null on error.
   """
-  pass
- def BackSolvePoints(self,zeroTolerance,b):
-  """
+        pass
+
+    def BackSolvePoints(self, zeroTolerance, b):
+        """
   BackSolvePoints(self: Matrix,zeroTolerance: float,b: Array[Point3d]) -> Array[Point3d]
 
   
@@ -69,16 +71,18 @@ class Matrix(object,IDisposable):
 
    Returns: Array of length ColumnCount on success. null on error.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: Matrix)
 
    Actively reclaims unmanaged resources that this instance uses.
   """
-  pass
- def Duplicate(self):
-  """
+        pass
+
+    def Duplicate(self):
+        """
   Duplicate(self: Matrix) -> Matrix
 
   
@@ -87,9 +91,10 @@ class Matrix(object,IDisposable):
 
    Returns: An exact duplicate of this matrix.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Matrix) -> int
 
   
@@ -106,9 +111,10 @@ class Matrix(object,IDisposable):
 
    Returns: Hash code.
   """
-  pass
- def Invert(self,zeroTolerance):
-  """
+        pass
+
+    def Invert(self, zeroTolerance):
+        """
   Invert(self: Matrix,zeroTolerance: float) -> bool
 
   
@@ -127,9 +133,10 @@ class Matrix(object,IDisposable):
 
    Returns: true if operation succeeded; otherwise false.
   """
-  pass
- def RowReduce(self,zeroTolerance,*__args):
-  """
+        pass
+
+    def RowReduce(self, zeroTolerance, *__args):
+        """
   RowReduce(self: Matrix,zeroTolerance: float,b: Array[Point3d]) -> (int,float)
 
   
@@ -200,9 +207,10 @@ class Matrix(object,IDisposable):
 
    Returns: Rank of the matrix.
   """
-  pass
- def Scale(self,s):
-  """
+        pass
+
+    def Scale(self, s):
+        """
   Scale(self: Matrix,s: float)
 
    Modifies the current matrix by multiplying its values by a number.
@@ -211,9 +219,10 @@ class Matrix(object,IDisposable):
 
    s: A scale factor.
   """
-  pass
- def SetDiagonal(self,d):
-  """
+        pass
+
+    def SetDiagonal(self, d):
+        """
   SetDiagonal(self: Matrix,d: float)
 
    Sets diagonal value and zeros off all non-diagonal values.
@@ -222,9 +231,10 @@ class Matrix(object,IDisposable):
 
    d: The new diagonal value.
   """
-  pass
- def SwapColumns(self,columnA,columnB):
-  """
+        pass
+
+    def SwapColumns(self, columnA, columnB):
+        """
   SwapColumns(self: Matrix,columnA: int,columnB: int) -> bool
 
   
@@ -239,9 +249,10 @@ class Matrix(object,IDisposable):
 
    Returns: true if operation succeeded; otherwise false.
   """
-  pass
- def SwapRows(self,rowA,rowB):
-  """
+        pass
+
+    def SwapRows(self, rowA, rowB):
+        """
   SwapRows(self: Matrix,rowA: int,rowB: int) -> bool
 
   
@@ -256,9 +267,10 @@ class Matrix(object,IDisposable):
 
    Returns: true if operation succeeded; otherwise false.
   """
-  pass
- def Transpose(self):
-  """
+        pass
+
+    def Transpose(self):
+        """
   Transpose(self: Matrix) -> bool
 
   
@@ -273,52 +285,61 @@ class Matrix(object,IDisposable):
 
    Returns: true if operation succeeded; otherwise false.
   """
-  pass
- def Zero(self):
-  """
+        pass
+
+    def Zero(self):
+        """
   Zero(self: Matrix)
 
    Sets all values inside the matrix to zero.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __mul__(self,*args):
-  """ x.__mul__(y) <==> x*y """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __mul__(self, *args):
+        """ x.__mul__(y) <==> x*y """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,rowCount: int,columnCount: int)
 
   __new__(cls: type,xform: Transform)
   """
-  pass
- def __radd__(self,*args):
-  """
+        pass
+
+    def __radd__(self, *args):
+        """
   __radd__(a: Matrix,b: Matrix) -> Matrix
 
   
@@ -333,12 +354,14 @@ class Matrix(object,IDisposable):
 
    Returns: The sum matrix.
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __rmul__(self,*args):
-  """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __rmul__(self, *args):
+        """
   __rmul__(a: Matrix,b: Matrix) -> Matrix
 
   
@@ -353,12 +376,16 @@ class Matrix(object,IDisposable):
 
    Returns: The product matrix.
   """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- ColumnCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the amount of columns.
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    ColumnCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the amount of columns.
 
 
 
@@ -368,8 +395,10 @@ Get: ColumnCount(self: Matrix) -> int
 
 """
 
- IsColumnOrthogonal=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the matrix is column orthogonal.
+    IsColumnOrthogonal = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the matrix is column orthogonal.
 
 
 
@@ -379,8 +408,10 @@ Get: IsColumnOrthogonal(self: Matrix) -> bool
 
 """
 
- IsColumnOrthoNormal=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the matrix is column orthonormal.
+    IsColumnOrthoNormal = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the matrix is column orthonormal.
 
 
 
@@ -390,8 +421,10 @@ Get: IsColumnOrthoNormal(self: Matrix) -> bool
 
 """
 
- IsRowOrthogonal=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the matrix is row orthogonal.
+    IsRowOrthogonal = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the matrix is row orthogonal.
 
 
 
@@ -401,8 +434,10 @@ Get: IsRowOrthogonal(self: Matrix) -> bool
 
 """
 
- IsRowOrthoNormal=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the matrix is row orthonormal.
+    IsRowOrthoNormal = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the matrix is row orthonormal.
 
 
 
@@ -412,8 +447,8 @@ Get: IsRowOrthoNormal(self: Matrix) -> bool
 
 """
 
- IsSquare=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether this matrix has the same number of rows
+    IsSquare = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether this matrix has the same number of rows
 
    and columns. 0x0 matrices are not considered square.
 
@@ -425,8 +460,8 @@ Get: IsSquare(self: Matrix) -> bool
 
 """
 
- IsValid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether this matrix is valid.
+    IsValid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether this matrix is valid.
 
 
 
@@ -436,8 +471,8 @@ Get: IsValid(self: Matrix) -> bool
 
 """
 
- RowCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the amount of rows.
+    RowCount = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the amount of rows.
 
 
 
@@ -446,5 +481,3 @@ Get: RowCount(self: Matrix) -> int
 
 
 """
-
-

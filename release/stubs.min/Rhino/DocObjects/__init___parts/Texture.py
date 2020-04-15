@@ -1,13 +1,14 @@
-class Texture(CommonObject,IDisposable,ISerializable):
- """
+class Texture(CommonObject, IDisposable, ISerializable):
+    """
  Represents a texture that is mapped on objects.
 
  
 
  Texture()
  """
- def ConstructConstObject(self,*args):
-  """
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -18,9 +19,10 @@ class Texture(CommonObject,IDisposable,ISerializable):
 
    subobject_index: The subobject index.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: CommonObject,disposing: bool)
 
    For derived class implementers.
@@ -45,9 +47,10 @@ class Texture(CommonObject,IDisposable,ISerializable):
 
     finalizer.
   """
-  pass
- def GetAlphaBlendValues(self,constant,a0,a1,a2,a3):
-  """
+        pass
+
+    def GetAlphaBlendValues(self, constant, a0, a1, a2, a3):
+        """
   GetAlphaBlendValues(self: Texture) -> (float,float,float,float,float)
 
   
@@ -76,9 +79,10 @@ class Texture(CommonObject,IDisposable,ISerializable):
 
     alpha)
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: CommonObject)
 
    For derived classes implementers.
@@ -87,16 +91,18 @@ class Texture(CommonObject,IDisposable,ISerializable):
 
     instance from being const.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: CommonObject)
 
    Is called when a non-const operation first occurs.
   """
-  pass
- def SetAlphaBlendValues(self,constant,a0,a1,a2,a3):
-  """
+        pass
+
+    def SetAlphaBlendValues(self, constant, a0, a1, a2, a3):
+        """
   SetAlphaBlendValues(self: Texture,constant: float,a0: float,a1: float,a2: float,a3: float)
 
    If the TextureCombineMode is Blend,then the blending function
@@ -123,38 +129,46 @@ class Texture(CommonObject,IDisposable,ISerializable):
 
     alpha)
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self):
+        """
   __new__(cls: type)
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- ApplyUvwTransform=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If true then the UVW transform is applied to the texture
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    ApplyUvwTransform = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """If true then the UVW transform is applied to the texture
 
    otherwise the UVW transform is ignored.
 
@@ -168,8 +182,8 @@ Set: ApplyUvwTransform(self: Texture)=value
 
 """
 
- Enabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """If the texture is enabled then it will be visible in the rendered
+    Enabled = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """If the texture is enabled then it will be visible in the rendered
 
    display otherwise it will not.
 
@@ -183,8 +197,8 @@ Set: Enabled(self: Texture)=value
 
 """
 
- FileName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a file name that is used by this texture.
+    FileName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a file name that is used by this texture.
 
    NOTE: this filename may well not be a path that makes sense
 
@@ -206,8 +220,8 @@ Set: FileName(self: Texture)=value
 
 """
 
- Id=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the globally unique identifier of this texture.
+    Id = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the globally unique identifier of this texture.
 
 
 
@@ -217,8 +231,10 @@ Get: Id(self: Texture) -> Guid
 
 """
 
- MappingChannelId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """
+    MappingChannelId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """
 
 
 
@@ -228,8 +244,10 @@ Get: MappingChannelId(self: Texture) -> int
 
 """
 
- TextureCombineMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determines how this texture is combined with others in a material's
+    TextureCombineMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Determines how this texture is combined with others in a material's
 
    texture list.
 
@@ -243,8 +261,10 @@ Set: TextureCombineMode(self: Texture)=value
 
 """
 
- TextureType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Controls how the pixels in the bitmap are interpreted
+    TextureType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Controls how the pixels in the bitmap are interpreted
 
 
 
@@ -256,8 +276,10 @@ Set: TextureType(self: Texture)=value
 
 """
 
- UvwTransform=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Transform to be applied to each instance of this texture
+    UvwTransform = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Transform to be applied to each instance of this texture
 
    if ApplyUvw is true
 
@@ -271,8 +293,8 @@ Set: UvwTransform(self: Texture)=value
 
 """
 
- WrapU=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Texture wrapping mode in the U direction
+    WrapU = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Texture wrapping mode in the U direction
 
 
 
@@ -284,8 +306,8 @@ Set: WrapU(self: Texture)=value
 
 """
 
- WrapV=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Texture wrapping mode in the V direction
+    WrapV = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Texture wrapping mode in the V direction
 
 
 
@@ -297,8 +319,8 @@ Set: WrapV(self: Texture)=value
 
 """
 
- WrapW=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Texture wrapping mode in the W direction
+    WrapW = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Texture wrapping mode in the W direction
 
 
 
@@ -309,5 +331,3 @@ Get: WrapW(self: Texture) -> TextureUvwWrapping
 Set: WrapW(self: Texture)=value
 
 """
-
-

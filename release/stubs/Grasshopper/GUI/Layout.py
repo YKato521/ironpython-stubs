@@ -8,6 +8,7 @@
 # no functions
 # classes
 
+
 class GH_GenericLayout(object):
     # no doc
     @staticmethod
@@ -18,7 +19,8 @@ class GH_GenericLayout(object):
     @staticmethod
     def Horizontal_ByPosition(area, stack, expand, radical=None):
         """
-        Horizontal_ByPosition(area: Rectangle, stack: List[Rectangle], expand: bool, radical: int) -> List[Rectangle]
+        Horizontal_ByPosition(area: Rectangle, stack: List[Rectangle], expand: bool, radical: int) -> List[Rectangle]
+
         Horizontal_ByPosition(area: Rectangle, stack: List[Rectangle], expand: bool) -> List[Rectangle]
         """
         pass
@@ -31,9 +33,8 @@ class GH_GenericLayout(object):
     @staticmethod
     def Vertical_ByPosition(area, stack, expand, radical=None):
         """
-        Vertical_ByPosition(area: Rectangle, stack: List[Rectangle], expand: bool, radical: int) -> List[Rectangle]
+        Vertical_ByPosition(area: Rectangle, stack: List[Rectangle], expand: bool, radical: int) -> List[Rectangle]
+
         Vertical_ByPosition(area: Rectangle, stack: List[Rectangle], expand: bool) -> List[Rectangle]
         """
         pass
-
-

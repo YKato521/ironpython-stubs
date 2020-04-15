@@ -1,5 +1,5 @@
 class StackTrace(object):
- """
+    """
  Represents a stack trace,which is an ordered collection of one or more stack frames.
 
  
@@ -24,8 +24,9 @@ class StackTrace(object):
 
  StackTrace(targetThread: Thread,needFileInfo: bool)
  """
- def GetFrame(self,index):
-  """
+
+    def GetFrame(self, index):
+        """
   GetFrame(self: StackTrace,index: int) -> StackFrame
 
   
@@ -38,9 +39,10 @@ class StackTrace(object):
 
    Returns: The specified stack frame.
   """
-  pass
- def GetFrames(self):
-  """
+        pass
+
+    def GetFrames(self):
+        """
   GetFrames(self: StackTrace) -> Array[StackFrame]
 
   
@@ -51,9 +53,10 @@ class StackTrace(object):
 
     trace.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: StackTrace) -> str
 
   
@@ -62,10 +65,11 @@ class StackTrace(object):
 
    Returns: A readable representation of the stack trace.
   """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,fNeedFileInfo: bool)
@@ -86,9 +90,12 @@ class StackTrace(object):
 
   __new__(cls: type,targetThread: Thread,needFileInfo: bool)
   """
-  pass
- FrameCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of frames in the stack trace.
+        pass
+
+    FrameCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the number of frames in the stack trace.
 
 
 
@@ -98,6 +105,4 @@ Get: FrameCount(self: StackTrace) -> int
 
 """
 
-
- METHODS_TO_SKIP=0
-
+    METHODS_TO_SKIP = 0

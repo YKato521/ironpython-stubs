@@ -1,7 +1,8 @@
-class TextNote(TextElement,IDisposable):
- """ A class representing text note annotations in Revit. """
- def AddLeader(self,leaderType):
-  """
+class TextNote(TextElement, IDisposable):
+    """ A class representing text note annotations in Revit. """
+
+    def AddLeader(self, leaderType):
+        """
   AddLeader(self: TextNote,leaderType: TextNoteLeaderTypes) -> Leader
 
   
@@ -14,10 +15,11 @@ class TextNote(TextElement,IDisposable):
 
    Returns: The newly added leader.
   """
-  pass
- @staticmethod
- def Create(document,viewId,position,*__args):
-  """
+        pass
+
+    @staticmethod
+    def Create(document, viewId, position, *__args):
+        """
   Create(document: Document,viewId: ElementId,position: XYZ,text: str,options: TextNoteOptions) -> TextNote
 
   
@@ -186,15 +188,18 @@ class TextNote(TextElement,IDisposable):
 
    Returns: The newly created text note.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetFormattedText(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetFormattedText(self):
+        """
   GetFormattedText(self: TextNote) -> FormattedText
 
   
@@ -205,31 +210,36 @@ class TextNote(TextElement,IDisposable):
 
     this text note.
   """
-  pass
- def GetLeaders(self):
-  """
+        pass
+
+    def GetLeaders(self):
+        """
   GetLeaders(self: TextNote) -> IList[Leader]
 
   
 
    Returns a collection of leaders currently attached to the text note.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def RemoveLeaders(self):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def RemoveLeaders(self):
+        """
   RemoveLeaders(self: TextNote)
 
    Removes all leaders currently attached to the text note.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def SetFormattedText(self,formattedText):
-  """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def SetFormattedText(self, formattedText):
+        """
   SetFormattedText(self: TextNote,formattedText: FormattedText)
 
    Sets the text and associated formatting of the text of in this text note with
@@ -246,18 +256,24 @@ class TextNote(TextElement,IDisposable):
 
     text.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- LeaderCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Number of leader objects currently attached to the text note.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    LeaderCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Number of leader objects currently attached to the text note.
 
 
 
@@ -267,8 +283,10 @@ Get: LeaderCount(self: TextNote) -> int
 
 """
 
- LeaderLeftAttachment=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Attachment position of leaders on the left side of the text note.
+    LeaderLeftAttachment = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Attachment position of leaders on the left side of the text note.
 
 
 
@@ -280,8 +298,10 @@ Set: LeaderLeftAttachment(self: TextNote)=value
 
 """
 
- LeaderRightAttachment=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Attachment position of leaders on the right side of the text note.
+    LeaderRightAttachment = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Attachment position of leaders on the right side of the text note.
 
 
 
@@ -293,8 +313,10 @@ Set: LeaderRightAttachment(self: TextNote)=value
 
 """
 
- TextNoteType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Access the type of the TextNote object.
+    TextNoteType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Access the type of the TextNote object.
 
 
 
@@ -305,5 +327,3 @@ Get: TextNoteType(self: TextNote) -> TextNoteType
 Set: TextNoteType(self: TextNote)=value
 
 """
-
-

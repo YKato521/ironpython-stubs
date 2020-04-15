@@ -1,12 +1,13 @@
-class RevolvedSurface(Surface,IDisposable):
- """
+class RevolvedSurface(Surface, IDisposable):
+    """
  A surface of revolution defined by a profile curve and a local coordinate system.
 
     The surface is obtained by rotating the curve around Z axis of the local coordinate system.
  """
- @staticmethod
- def Create(*__args):
-  """
+
+    @staticmethod
+    def Create(*__args):
+        """
   Create(axisBasePoint: XYZ,axisDirection: XYZ,profileCurve: Curve,startAngle: float,endAngle: float) -> Surface
 
   
@@ -199,12 +200,14 @@ class RevolvedSurface(Surface,IDisposable):
 
    Returns: The created surface. Note that this surface may not be of type RevolvedSurface.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Surface,A_0: bool) """
-  pass
- def GetProfileCurve(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Surface,A_0: bool) """
+        pass
+
+    def GetProfileCurve(self):
+        """
   GetProfileCurve(self: RevolvedSurface) -> Curve
 
   
@@ -217,10 +220,11 @@ class RevolvedSurface(Surface,IDisposable):
 
    Returns: A copy of the profile curve.
   """
-  pass
- @staticmethod
- def IsValidProfileCurve(*__args):
-  """
+        pass
+
+    @staticmethod
+    def IsValidProfileCurve(*__args):
+        """
   IsValidProfileCurve(axisBasePoint: XYZ,axisDirection: XYZ,profileCurve: Curve) -> bool
 
   
@@ -269,21 +273,26 @@ class RevolvedSurface(Surface,IDisposable):
 
    Returns: True if the profile curve is valid; False otherwise.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Surface,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Axis=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Axis of the revolved surface. This is the Z axis of the local coordinate system associated with this revolved surface.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Surface,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Axis = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Axis of the revolved surface. This is the Z axis of the local coordinate system associated with this revolved surface.
 
 
 
@@ -293,8 +302,8 @@ Get: Axis(self: RevolvedSurface) -> XYZ
 
 """
 
- Origin=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Center of the circle that defines the base of the revolved surface. This is the origin of the local coordinate system associated with this revolved surface.
+    Origin = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Center of the circle that defines the base of the revolved surface. This is the origin of the local coordinate system associated with this revolved surface.
 
 
 
@@ -304,8 +313,8 @@ Get: Origin(self: RevolvedSurface) -> XYZ
 
 """
 
- XDir=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """X axis of the local coordinate system associated with this revolved surface.
+    XDir = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """X axis of the local coordinate system associated with this revolved surface.
 
 
 
@@ -315,8 +324,8 @@ Get: XDir(self: RevolvedSurface) -> XYZ
 
 """
 
- YDir=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """X axis of the local coordinate system associated with this revolved surface.
+    YDir = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """X axis of the local coordinate system associated with this revolved surface.
 
 
 
@@ -325,5 +334,3 @@ Get: YDir(self: RevolvedSurface) -> XYZ
 
 
 """
-
-

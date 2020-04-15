@@ -1,7 +1,8 @@
-class GridTableStylesCollection(BaseCollection,ICollection,IEnumerable,IList):
- """ Represents a collection of System.Windows.Forms.DataGridTableStyle objects in the System.Windows.Forms.DataGrid control. """
- def Add(self,table):
-  """
+class GridTableStylesCollection(BaseCollection, ICollection, IEnumerable, IList):
+    """ Represents a collection of System.Windows.Forms.DataGridTableStyle objects in the System.Windows.Forms.DataGrid control. """
+
+    def Add(self, table):
+        """
   Add(self: GridTableStylesCollection,table: DataGridTableStyle) -> int
 
   
@@ -14,9 +15,10 @@ class GridTableStylesCollection(BaseCollection,ICollection,IEnumerable,IList):
 
    Returns: The index of the newly added object.
   """
-  pass
- def AddRange(self,tables):
-  """
+        pass
+
+    def AddRange(self, tables):
+        """
   AddRange(self: GridTableStylesCollection,tables: Array[DataGridTableStyle])
 
    Adds an array of table styles to the collection.
@@ -25,16 +27,18 @@ class GridTableStylesCollection(BaseCollection,ICollection,IEnumerable,IList):
 
    tables: An array of System.Windows.Forms.DataGridTableStyle objects.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: GridTableStylesCollection)
 
    Clears the collection.
   """
-  pass
- def Contains(self,*__args):
-  """
+        pass
+
+    def Contains(self, *__args):
+        """
   Contains(self: GridTableStylesCollection,name: str) -> bool
 
   
@@ -71,9 +75,10 @@ class GridTableStylesCollection(BaseCollection,ICollection,IEnumerable,IList):
 
    Returns: true if the specified table style exists in the collection; otherwise,false.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -104,9 +109,10 @@ class GridTableStylesCollection(BaseCollection,ICollection,IEnumerable,IList):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def OnCollectionChanged(self,*args):
-  """
+        pass
+
+    def OnCollectionChanged(self, *args):
+        """
   OnCollectionChanged(self: GridTableStylesCollection,e: CollectionChangeEventArgs)
 
    Raises the System.Windows.Forms.GridTableStylesCollection.CollectionChanged event.
@@ -115,9 +121,10 @@ class GridTableStylesCollection(BaseCollection,ICollection,IEnumerable,IList):
 
    e: A System.ComponentModel.CollectionChangeEventArgs containing the event data.
   """
-  pass
- def Remove(self,table):
-  """
+        pass
+
+    def Remove(self, table):
+        """
   Remove(self: GridTableStylesCollection,table: DataGridTableStyle)
 
    Removes the specified System.Windows.Forms.DataGridTableStyle.
@@ -126,9 +133,10 @@ class GridTableStylesCollection(BaseCollection,ICollection,IEnumerable,IList):
 
    table: The System.Windows.Forms.DataGridTableStyle to remove.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: GridTableStylesCollection,index: int)
 
    Removes a System.Windows.Forms.DataGridTableStyle at the specified index.
@@ -137,12 +145,14 @@ class GridTableStylesCollection(BaseCollection,ICollection,IEnumerable,IList):
 
    index: The index of the System.Windows.Forms.DataGridTableStyle to remove.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IList,value: object) -> bool
 
   
@@ -155,26 +165,29 @@ class GridTableStylesCollection(BaseCollection,ICollection,IEnumerable,IList):
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- List=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the underlying list.
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y]x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    List = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the underlying list.
 
 
 
 """
 
-
- CollectionChanged=None
-
+    CollectionChanged = None

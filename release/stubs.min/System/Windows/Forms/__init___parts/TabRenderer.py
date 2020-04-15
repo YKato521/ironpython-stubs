@@ -1,8 +1,9 @@
 class TabRenderer(object):
- """ Provides methods used to render a tab control with visual styles. This class cannot be inherited. """
- @staticmethod
- def DrawTabItem(g,bounds,*__args):
-  """
+    """ Provides methods used to render a tab control with visual styles. This class cannot be inherited. """
+
+    @staticmethod
+    def DrawTabItem(g, bounds, *__args):
+        """
   DrawTabItem(g: Graphics,bounds: Rectangle,image: Image,imageRectangle: Rectangle,focused: bool,state: TabItemState)
 
    Draws a tab in the specified state and bounds,with the specified image,and with an optional 
@@ -197,10 +198,11 @@ class TabRenderer(object):
 
     of the tab.
   """
-  pass
- @staticmethod
- def DrawTabPage(g,bounds):
-  """
+        pass
+
+    @staticmethod
+    def DrawTabPage(g, bounds):
+        """
   DrawTabPage(g: Graphics,bounds: Rectangle)
 
    Draws a tab page in the specified bounds.
@@ -211,6 +213,6 @@ class TabRenderer(object):
 
    bounds: The System.Drawing.Rectangle that specifies the bounds of the tab page.
   """
-  pass
- IsSupported=True
+        pass
 
+    IsSupported = True

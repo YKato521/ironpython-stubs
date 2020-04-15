@@ -8,10 +8,12 @@
 # no functions
 # classes
 
-class BitmapEffect(Animatable,ISealable,IAnimatable,IResource):
- """ Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Defines a bitmap effect. Derived classes define effects that can be applied to a System.Windows.Media.Visual object,such as a System.Windows.Controls.Button or an System.Windows.Controls.Image. """
- def Clone(self):
-  """
+
+class BitmapEffect(Animatable, ISealable, IAnimatable, IResource):
+    """ Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Defines a bitmap effect. Derived classes define effects that can be applied to a System.Windows.Media.Visual object,such as a System.Windows.Controls.Button or an System.Windows.Controls.Image. """
+
+    def Clone(self):
+        """
   Clone(self: BitmapEffect) -> BitmapEffect
 
   
@@ -30,9 +32,10 @@ class BitmapEffect(Animatable,ISealable,IAnimatable,IResource):
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCore(self,*args):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """
   CloneCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a clone (deep copy) of the specified System.Windows.Freezable using base 
@@ -45,9 +48,10 @@ class BitmapEffect(Animatable,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The object to clone.
   """
-  pass
- def CloneCurrentValue(self):
-  """
+        pass
+
+    def CloneCurrentValue(self):
+        """
   CloneCurrentValue(self: BitmapEffect) -> BitmapEffect
 
   
@@ -64,9 +68,10 @@ class BitmapEffect(Animatable,ISealable,IAnimatable,IResource):
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """
   CloneCurrentValueCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a modifiable clone (deep copy) of the specified System.Windows.Freezable 
@@ -79,9 +84,10 @@ class BitmapEffect(Animatable,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Freezable to be cloned.
   """
-  pass
- def CreateBitmapEffectOuter(self,*args):
-  """
+        pass
+
+    def CreateBitmapEffectOuter(self, *args):
+        """
   CreateBitmapEffectOuter() -> SafeHandle
 
   
@@ -90,9 +96,10 @@ class BitmapEffect(Animatable,ISealable,IAnimatable,IResource):
 
    Returns: A handle to an IMILBitmapEffect object.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -101,9 +108,10 @@ class BitmapEffect(Animatable,ISealable,IAnimatable,IResource):
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """
   CreateInstanceCore(self: Freezable) -> Freezable
 
   
@@ -116,9 +124,10 @@ class BitmapEffect(Animatable,ISealable,IAnimatable,IResource):
 
    Returns: The new instance.
   """
-  pass
- def CreateUnmanagedEffect(self,*args):
-  """
+        pass
+
+    def CreateUnmanagedEffect(self, *args):
+        """
   CreateUnmanagedEffect(self: BitmapEffect) -> SafeHandle
 
   
@@ -127,9 +136,10 @@ class BitmapEffect(Animatable,ISealable,IAnimatable,IResource):
 
    Returns: A handle to the unmanaged effect clone.
   """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: Animatable,isChecking: bool) -> bool
 
   
@@ -158,9 +168,10 @@ class BitmapEffect(Animatable,ISealable,IAnimatable,IResource):
 
     unmodifiable,with the side effect of having begun to change the frozen status of this object.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """
   GetAsFrozenCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a frozen clone of the specified System.Windows.Freezable using base 
@@ -173,9 +184,10 @@ class BitmapEffect(Animatable,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The instance to copy.
   """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """
   GetCurrentValueAsFrozenCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the current instance a frozen clone of the specified System.Windows.Freezable. If the 
@@ -188,9 +200,10 @@ class BitmapEffect(Animatable,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Freezable to copy and freeze.
   """
-  pass
- def GetOutput(self,input):
-  """
+        pass
+
+    def GetOutput(self, input):
+        """
   GetOutput(self: BitmapEffect,input: BitmapEffectInput) -> BitmapSource
 
   
@@ -207,9 +220,10 @@ class BitmapEffect(Animatable,ISealable,IAnimatable,IResource):
 
    Returns: The System.Windows.Media.Imaging.BitmapSource with the effect applied to the input.
   """
-  pass
- def InitializeBitmapEffect(self,*args):
-  """
+        pass
+
+    def InitializeBitmapEffect(self, *args):
+        """
   InitializeBitmapEffect(outerObject: SafeHandle,innerObject: SafeHandle)
 
    Initializes an IMILBitmapEffect handle obtained from 
@@ -226,16 +240,18 @@ class BitmapEffect(Animatable,ISealable,IAnimatable,IResource):
 
    innerObject: The inner IMILBitmapEffectPrimitive.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: Freezable)
 
    Called when the current System.Windows.Freezable object is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -266,9 +282,10 @@ class BitmapEffect(Animatable,ISealable,IAnimatable,IResource):
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -285,9 +302,10 @@ class BitmapEffect(Animatable,ISealable,IAnimatable,IResource):
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -296,9 +314,10 @@ class BitmapEffect(Animatable,ISealable,IAnimatable,IResource):
 
     members that are not dependency properties.
   """
-  pass
- def SetValue(self,*__args):
-  """
+        pass
+
+    def SetValue(self, *__args):
+        """
   SetValue(effect: SafeHandle,propertyName: str,value: object)
 
    Sets the specified property to the given value.
@@ -311,9 +330,10 @@ class BitmapEffect(Animatable,ISealable,IAnimatable,IResource):
 
    value: The value to use to set the property.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -330,9 +350,10 @@ class BitmapEffect(Animatable,ISealable,IAnimatable,IResource):
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def UpdateUnmanagedPropertyState(self,*args):
-  """
+        pass
+
+    def UpdateUnmanagedPropertyState(self, *args):
+        """
   UpdateUnmanagedPropertyState(self: BitmapEffect,unmanagedEffect: SafeHandle)
 
    When overridden in a derived class,updates the property states of the unmanaged properties of 
@@ -345,9 +366,10 @@ class BitmapEffect(Animatable,ISealable,IAnimatable,IResource):
 
    unmanagedEffect: The handle to the effect that contains the properties to update.
   """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -358,9 +380,10 @@ class BitmapEffect(Animatable,ISealable,IAnimatable,IResource):
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -369,21 +392,24 @@ class BitmapEffect(Animatable,ISealable,IAnimatable,IResource):
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
 
-class BevelBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
- """
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+
+class BevelBitmapEffect(BitmapEffect, ISealable, IAnimatable, IResource):
+    """
  Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Creates a bevel which raises the surface of the image according to a specified curve.
 
  
 
  BevelBitmapEffect()
  """
- def Clone(self):
-  """
+
+    def Clone(self):
+        """
   Clone(self: BevelBitmapEffect) -> BevelBitmapEffect
 
   
@@ -404,9 +430,10 @@ class BevelBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCore(self,*args):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """
   CloneCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a clone (deep copy) of the specified System.Windows.Freezable using base 
@@ -419,9 +446,10 @@ class BevelBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The object to clone.
   """
-  pass
- def CloneCurrentValue(self):
-  """
+        pass
+
+    def CloneCurrentValue(self):
+        """
   CloneCurrentValue(self: BevelBitmapEffect) -> BevelBitmapEffect
 
   
@@ -442,9 +470,10 @@ class BevelBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """
   CloneCurrentValueCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a modifiable clone (deep copy) of the specified System.Windows.Freezable 
@@ -457,9 +486,10 @@ class BevelBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Freezable to be cloned.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -468,15 +498,18 @@ class BevelBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """ CreateInstanceCore(self: BevelBitmapEffect) -> Freezable """
-  pass
- def CreateUnmanagedEffect(self,*args):
-  """ CreateUnmanagedEffect(self: BevelBitmapEffect) -> SafeHandle """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """ CreateInstanceCore(self: BevelBitmapEffect) -> Freezable """
+        pass
+
+    def CreateUnmanagedEffect(self, *args):
+        """ CreateUnmanagedEffect(self: BevelBitmapEffect) -> SafeHandle """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: Animatable,isChecking: bool) -> bool
 
   
@@ -505,9 +538,10 @@ class BevelBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     unmodifiable,with the side effect of having begun to change the frozen status of this object.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """
   GetAsFrozenCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a frozen clone of the specified System.Windows.Freezable using base 
@@ -520,9 +554,10 @@ class BevelBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The instance to copy.
   """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """
   GetCurrentValueAsFrozenCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the current instance a frozen clone of the specified System.Windows.Freezable. If the 
@@ -535,16 +570,18 @@ class BevelBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Freezable to copy and freeze.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: Freezable)
 
    Called when the current System.Windows.Freezable object is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -575,9 +612,10 @@ class BevelBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -594,9 +632,10 @@ class BevelBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -605,9 +644,10 @@ class BevelBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     members that are not dependency properties.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -624,12 +664,14 @@ class BevelBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def UpdateUnmanagedPropertyState(self,*args):
-  """ UpdateUnmanagedPropertyState(self: BevelBitmapEffect,unmanagedEffect: SafeHandle) """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def UpdateUnmanagedPropertyState(self, *args):
+        """ UpdateUnmanagedPropertyState(self: BevelBitmapEffect,unmanagedEffect: SafeHandle) """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -640,9 +682,10 @@ class BevelBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -651,12 +694,16 @@ class BevelBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- BevelWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Gets or sets the width of the bevel.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    BevelWidth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Gets or sets the width of the bevel.
 
 
 
@@ -668,8 +715,10 @@ Set: BevelWidth(self: BevelBitmapEffect)=value
 
 """
 
- EdgeProfile=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Gets or sets the curve of the bevel.
+    EdgeProfile = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Gets or sets the curve of the bevel.
 
 
 
@@ -681,8 +730,10 @@ Set: EdgeProfile(self: BevelBitmapEffect)=value
 
 """
 
- LightAngle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Gets or sets the direction the "virtual light" is coming from that creates the shadows of the bevel.
+    LightAngle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Gets or sets the direction the "virtual light" is coming from that creates the shadows of the bevel.
 
 
 
@@ -694,8 +745,8 @@ Set: LightAngle(self: BevelBitmapEffect)=value
 
 """
 
- Relief=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Gets or sets the height of the relief of the bevel.
+    Relief = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Gets or sets the height of the relief of the bevel.
 
 
 
@@ -707,8 +758,10 @@ Set: Relief(self: BevelBitmapEffect)=value
 
 """
 
- Smoothness=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Gets or sets how smooth the shadows of the bevel are.
+    Smoothness = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Gets or sets how smooth the shadows of the bevel are.
 
 
 
@@ -720,16 +773,26 @@ Set: Smoothness(self: BevelBitmapEffect)=value
 
 """
 
+    BevelWidthProperty = None
+    EdgeProfileProperty = None
+    LightAngleProperty = None
+    ReliefProperty = None
+    SmoothnessProperty = None
 
- BevelWidthProperty=None
- EdgeProfileProperty=None
- LightAngleProperty=None
- ReliefProperty=None
- SmoothnessProperty=None
 
-
-class BitmapEffectCollection(Animatable,ISealable,IAnimatable,IResource,IList,ICollection,IEnumerable,IList[BitmapEffect],ICollection[BitmapEffect],IEnumerable[BitmapEffect]):
- """
+class BitmapEffectCollection(
+    Animatable,
+    ISealable,
+    IAnimatable,
+    IResource,
+    IList,
+    ICollection,
+    IEnumerable,
+    IList[BitmapEffect],
+    ICollection[BitmapEffect],
+    IEnumerable[BitmapEffect],
+):
+    """
  Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Represents a collection of System.Windows.Media.Effects.BitmapEffect objects. This collection is used as part of a System.Windows.Media.Effects.BitmapEffectGroup to apply multiple bitmap effects to visual content.
 
  
@@ -740,8 +803,9 @@ class BitmapEffectCollection(Animatable,ISealable,IAnimatable,IResource,IList,IC
 
  BitmapEffectCollection(collection: IEnumerable[BitmapEffect])
  """
- def Add(self,value):
-  """
+
+    def Add(self, value):
+        """
   Add(self: BitmapEffectCollection,value: BitmapEffect)
 
    Note: This API is now obsolete. The non-obsolete alternative is 
@@ -756,18 +820,20 @@ class BitmapEffectCollection(Animatable,ISealable,IAnimatable,IResource,IList,IC
 
    value: The System.Windows.Media.Effects.BitmapEffect to add to the end of the collection.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: BitmapEffectCollection)
 
    Note: This API is now obsolete. The non-obsolete alternative is 
 
     System.Windows.Media.Effects.Effect. Removes all effects from the collection.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: BitmapEffectCollection) -> BitmapEffectCollection
 
   
@@ -788,12 +854,14 @@ class BitmapEffectCollection(Animatable,ISealable,IAnimatable,IResource,IList,IC
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCore(self,*args):
-  """ CloneCore(self: BitmapEffectCollection,source: Freezable) """
-  pass
- def CloneCurrentValue(self):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """ CloneCore(self: BitmapEffectCollection,source: Freezable) """
+        pass
+
+    def CloneCurrentValue(self):
+        """
   CloneCurrentValue(self: BitmapEffectCollection) -> BitmapEffectCollection
 
   
@@ -814,12 +882,14 @@ class BitmapEffectCollection(Animatable,ISealable,IAnimatable,IResource,IList,IC
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """ CloneCurrentValueCore(self: BitmapEffectCollection,source: Freezable) """
-  pass
- def Contains(self,value):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """ CloneCurrentValueCore(self: BitmapEffectCollection,source: Freezable) """
+        pass
+
+    def Contains(self, value):
+        """
   Contains(self: BitmapEffectCollection,value: BitmapEffect) -> bool
 
   
@@ -838,9 +908,10 @@ class BitmapEffectCollection(Animatable,ISealable,IAnimatable,IResource,IList,IC
 
    Returns: true if the collection contains value; otherwise,false.
   """
-  pass
- def CopyTo(self,array,index):
-  """
+        pass
+
+    def CopyTo(self, array, index):
+        """
   CopyTo(self: BitmapEffectCollection,array: Array[BitmapEffect],index: int)
 
    Note: This API is now obsolete. The non-obsolete alternative is 
@@ -857,9 +928,10 @@ class BitmapEffectCollection(Animatable,ISealable,IAnimatable,IResource,IList,IC
 
    index: The collection index to begin coping.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -868,21 +940,26 @@ class BitmapEffectCollection(Animatable,ISealable,IAnimatable,IResource,IList,IC
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """ CreateInstanceCore(self: BitmapEffectCollection) -> Freezable """
-  pass
- def FreezeCore(self,*args):
-  """ FreezeCore(self: BitmapEffectCollection,isChecking: bool) -> bool """
-  pass
- def GetAsFrozenCore(self,*args):
-  """ GetAsFrozenCore(self: BitmapEffectCollection,source: Freezable) """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """ GetCurrentValueAsFrozenCore(self: BitmapEffectCollection,source: Freezable) """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """ CreateInstanceCore(self: BitmapEffectCollection) -> Freezable """
+        pass
+
+    def FreezeCore(self, *args):
+        """ FreezeCore(self: BitmapEffectCollection,isChecking: bool) -> bool """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """ GetAsFrozenCore(self: BitmapEffectCollection,source: Freezable) """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """ GetCurrentValueAsFrozenCore(self: BitmapEffectCollection,source: Freezable) """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: BitmapEffectCollection) -> Enumerator
 
   
@@ -899,9 +976,10 @@ class BitmapEffectCollection(Animatable,ISealable,IAnimatable,IResource,IList,IC
 
     collection.
   """
-  pass
- def IndexOf(self,value):
-  """
+        pass
+
+    def IndexOf(self, value):
+        """
   IndexOf(self: BitmapEffectCollection,value: BitmapEffect) -> int
 
   
@@ -920,9 +998,10 @@ class BitmapEffectCollection(Animatable,ISealable,IAnimatable,IResource,IList,IC
 
    Returns: The index of the specified effect.
   """
-  pass
- def Insert(self,index,value):
-  """
+        pass
+
+    def Insert(self, index, value):
+        """
   Insert(self: BitmapEffectCollection,index: int,value: BitmapEffect)
 
    Note: This API is now obsolete. The non-obsolete alternative is 
@@ -939,16 +1018,18 @@ class BitmapEffectCollection(Animatable,ISealable,IAnimatable,IResource,IList,IC
 
    value: The specified effect to insert.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: Freezable)
 
    Called when the current System.Windows.Freezable object is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -979,9 +1060,10 @@ class BitmapEffectCollection(Animatable,ISealable,IAnimatable,IResource,IList,IC
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -998,9 +1080,10 @@ class BitmapEffectCollection(Animatable,ISealable,IAnimatable,IResource,IList,IC
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -1009,9 +1092,10 @@ class BitmapEffectCollection(Animatable,ISealable,IAnimatable,IResource,IList,IC
 
     members that are not dependency properties.
   """
-  pass
- def Remove(self,value):
-  """
+        pass
+
+    def Remove(self, value):
+        """
   Remove(self: BitmapEffectCollection,value: BitmapEffect) -> bool
 
   
@@ -1030,9 +1114,10 @@ class BitmapEffectCollection(Animatable,ISealable,IAnimatable,IResource,IList,IC
 
    Returns: true if value was removed; otherwise,false.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: BitmapEffectCollection,index: int)
 
    Note: This API is now obsolete. The non-obsolete alternative is 
@@ -1047,9 +1132,10 @@ class BitmapEffectCollection(Animatable,ISealable,IAnimatable,IResource,IList,IC
 
    index: The index of the effect to remove.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -1066,9 +1152,10 @@ class BitmapEffectCollection(Animatable,ISealable,IAnimatable,IResource,IList,IC
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -1079,9 +1166,10 @@ class BitmapEffectCollection(Animatable,ISealable,IAnimatable,IResource,IList,IC
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -1090,12 +1178,14 @@ class BitmapEffectCollection(Animatable,ISealable,IAnimatable,IResource,IList,IC
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: ICollection[BitmapEffect],item: BitmapEffect) -> bool
 
   __contains__(self: IList,value: object) -> bool
@@ -1110,34 +1200,41 @@ class BitmapEffectCollection(Animatable,ISealable,IAnimatable,IResource,IList,IC
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type)
 
   __new__(cls: type,capacity: int)
 
   __new__(cls: type,collection: IEnumerable[BitmapEffect])
   """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Gets the number of effects contained in the System.Windows.Media.Effects.BitmapEffectCollection.
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Gets the number of effects contained in the System.Windows.Media.Effects.BitmapEffectCollection.
 
 
 
@@ -1147,20 +1244,20 @@ Get: Count(self: BitmapEffectCollection) -> int
 
 """
 
+    Enumerator = None
 
- Enumerator=None
 
-
-class BitmapEffectGroup(BitmapEffect,ISealable,IAnimatable,IResource):
- """
+class BitmapEffectGroup(BitmapEffect, ISealable, IAnimatable, IResource):
+    """
  Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Represents a group of System.Windows.Media.Effects.BitmapEffect objects that is used to apply multiple effects to a visible object.
 
  
 
  BitmapEffectGroup()
  """
- def Clone(self):
-  """
+
+    def Clone(self):
+        """
   Clone(self: BitmapEffectGroup) -> BitmapEffectGroup
 
   
@@ -1181,9 +1278,10 @@ class BitmapEffectGroup(BitmapEffect,ISealable,IAnimatable,IResource):
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCore(self,*args):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """
   CloneCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a clone (deep copy) of the specified System.Windows.Freezable using base 
@@ -1196,9 +1294,10 @@ class BitmapEffectGroup(BitmapEffect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The object to clone.
   """
-  pass
- def CloneCurrentValue(self):
-  """
+        pass
+
+    def CloneCurrentValue(self):
+        """
   CloneCurrentValue(self: BitmapEffectGroup) -> BitmapEffectGroup
 
   
@@ -1219,9 +1318,10 @@ class BitmapEffectGroup(BitmapEffect,ISealable,IAnimatable,IResource):
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """
   CloneCurrentValueCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a modifiable clone (deep copy) of the specified System.Windows.Freezable 
@@ -1234,9 +1334,10 @@ class BitmapEffectGroup(BitmapEffect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Freezable to be cloned.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -1245,15 +1346,18 @@ class BitmapEffectGroup(BitmapEffect,ISealable,IAnimatable,IResource):
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """ CreateInstanceCore(self: BitmapEffectGroup) -> Freezable """
-  pass
- def CreateUnmanagedEffect(self,*args):
-  """ CreateUnmanagedEffect(self: BitmapEffectGroup) -> SafeHandle """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """ CreateInstanceCore(self: BitmapEffectGroup) -> Freezable """
+        pass
+
+    def CreateUnmanagedEffect(self, *args):
+        """ CreateUnmanagedEffect(self: BitmapEffectGroup) -> SafeHandle """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: Animatable,isChecking: bool) -> bool
 
   
@@ -1282,9 +1386,10 @@ class BitmapEffectGroup(BitmapEffect,ISealable,IAnimatable,IResource):
 
     unmodifiable,with the side effect of having begun to change the frozen status of this object.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """
   GetAsFrozenCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a frozen clone of the specified System.Windows.Freezable using base 
@@ -1297,9 +1402,10 @@ class BitmapEffectGroup(BitmapEffect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The instance to copy.
   """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """
   GetCurrentValueAsFrozenCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the current instance a frozen clone of the specified System.Windows.Freezable. If the 
@@ -1312,16 +1418,18 @@ class BitmapEffectGroup(BitmapEffect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Freezable to copy and freeze.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: Freezable)
 
    Called when the current System.Windows.Freezable object is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -1352,9 +1460,10 @@ class BitmapEffectGroup(BitmapEffect,ISealable,IAnimatable,IResource):
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -1371,9 +1480,10 @@ class BitmapEffectGroup(BitmapEffect,ISealable,IAnimatable,IResource):
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -1382,9 +1492,10 @@ class BitmapEffectGroup(BitmapEffect,ISealable,IAnimatable,IResource):
 
     members that are not dependency properties.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -1401,12 +1512,14 @@ class BitmapEffectGroup(BitmapEffect,ISealable,IAnimatable,IResource):
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def UpdateUnmanagedPropertyState(self,*args):
-  """ UpdateUnmanagedPropertyState(self: BitmapEffectGroup,unmanagedEffect: SafeHandle) """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def UpdateUnmanagedPropertyState(self, *args):
+        """ UpdateUnmanagedPropertyState(self: BitmapEffectGroup,unmanagedEffect: SafeHandle) """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -1417,9 +1530,10 @@ class BitmapEffectGroup(BitmapEffect,ISealable,IAnimatable,IResource):
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -1428,12 +1542,14 @@ class BitmapEffectGroup(BitmapEffect,ISealable,IAnimatable,IResource):
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Children=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Gets or sets the children of the System.Windows.Media.Effects.BitmapEffectGroup.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Children = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Gets or sets the children of the System.Windows.Media.Effects.BitmapEffectGroup.
 
 
 
@@ -1445,12 +1561,11 @@ Set: Children(self: BitmapEffectGroup)=value
 
 """
 
+    ChildrenProperty = None
 
- ChildrenProperty=None
 
-
-class BitmapEffectInput(Animatable,ISealable,IAnimatable,IResource):
- """
+class BitmapEffectInput(Animatable, ISealable, IAnimatable, IResource):
+    """
  Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Applies the System.Windows.Media.Effects.BitmapEffect given in the System.Windows.UIElement.BitmapEffect property to a specified region of the visual object.
 
  
@@ -1459,8 +1574,9 @@ class BitmapEffectInput(Animatable,ISealable,IAnimatable,IResource):
 
  BitmapEffectInput(input: BitmapSource)
  """
- def Clone(self):
-  """
+
+    def Clone(self):
+        """
   Clone(self: BitmapEffectInput) -> BitmapEffectInput
 
   
@@ -1481,9 +1597,10 @@ class BitmapEffectInput(Animatable,ISealable,IAnimatable,IResource):
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCore(self,*args):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """
   CloneCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a clone (deep copy) of the specified System.Windows.Freezable using base 
@@ -1496,9 +1613,10 @@ class BitmapEffectInput(Animatable,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The object to clone.
   """
-  pass
- def CloneCurrentValue(self):
-  """
+        pass
+
+    def CloneCurrentValue(self):
+        """
   CloneCurrentValue(self: BitmapEffectInput) -> BitmapEffectInput
 
   
@@ -1519,9 +1637,10 @@ class BitmapEffectInput(Animatable,ISealable,IAnimatable,IResource):
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """
   CloneCurrentValueCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a modifiable clone (deep copy) of the specified System.Windows.Freezable 
@@ -1534,9 +1653,10 @@ class BitmapEffectInput(Animatable,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Freezable to be cloned.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -1545,12 +1665,14 @@ class BitmapEffectInput(Animatable,ISealable,IAnimatable,IResource):
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """ CreateInstanceCore(self: BitmapEffectInput) -> Freezable """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """ CreateInstanceCore(self: BitmapEffectInput) -> Freezable """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: Animatable,isChecking: bool) -> bool
 
   
@@ -1579,9 +1701,10 @@ class BitmapEffectInput(Animatable,ISealable,IAnimatable,IResource):
 
     unmodifiable,with the side effect of having begun to change the frozen status of this object.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """
   GetAsFrozenCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a frozen clone of the specified System.Windows.Freezable using base 
@@ -1594,9 +1717,10 @@ class BitmapEffectInput(Animatable,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The instance to copy.
   """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """
   GetCurrentValueAsFrozenCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the current instance a frozen clone of the specified System.Windows.Freezable. If the 
@@ -1609,16 +1733,18 @@ class BitmapEffectInput(Animatable,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Freezable to copy and freeze.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: Freezable)
 
    Called when the current System.Windows.Freezable object is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -1649,9 +1775,10 @@ class BitmapEffectInput(Animatable,ISealable,IAnimatable,IResource):
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -1668,9 +1795,10 @@ class BitmapEffectInput(Animatable,ISealable,IAnimatable,IResource):
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -1679,9 +1807,10 @@ class BitmapEffectInput(Animatable,ISealable,IAnimatable,IResource):
 
     members that are not dependency properties.
   """
-  pass
- def ShouldSerializeInput(self):
-  """
+        pass
+
+    def ShouldSerializeInput(self):
+        """
   ShouldSerializeInput(self: BitmapEffectInput) -> bool
 
   
@@ -1698,9 +1827,10 @@ class BitmapEffectInput(Animatable,ISealable,IAnimatable,IResource):
 
     false.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -1717,9 +1847,10 @@ class BitmapEffectInput(Animatable,ISealable,IAnimatable,IResource):
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -1730,9 +1861,10 @@ class BitmapEffectInput(Animatable,ISealable,IAnimatable,IResource):
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -1741,20 +1873,25 @@ class BitmapEffectInput(Animatable,ISealable,IAnimatable,IResource):
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,input=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, input=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,input: BitmapSource)
   """
-  pass
- AreaToApplyEffect=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Gets or sets a rectangular region on the visual to which the System.Windows.Media.Effects.BitmapEffect is applied.
+        pass
+
+    AreaToApplyEffect = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Gets or sets a rectangular region on the visual to which the System.Windows.Media.Effects.BitmapEffect is applied.
 
 
 
@@ -1766,8 +1903,10 @@ Set: AreaToApplyEffect(self: BitmapEffectInput)=value
 
 """
 
- AreaToApplyEffectUnits=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Gets or sets the method in which to interpret the rectangle provided by System.Windows.Media.Effects.BitmapEffectInput.AreaToApplyEffect.
+    AreaToApplyEffectUnits = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Gets or sets the method in which to interpret the rectangle provided by System.Windows.Media.Effects.BitmapEffectInput.AreaToApplyEffect.
 
 
 
@@ -1779,8 +1918,8 @@ Set: AreaToApplyEffectUnits(self: BitmapEffectInput)=value
 
 """
 
- Input=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Gets or sets the System.Windows.Media.Imaging.BitmapSource that is used for the input for the object.
+    Input = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Gets or sets the System.Windows.Media.Imaging.BitmapSource that is used for the input for the object.
 
 
 
@@ -1792,23 +1931,23 @@ Set: Input(self: BitmapEffectInput)=value
 
 """
 
+    AreaToApplyEffectProperty = None
+    AreaToApplyEffectUnitsProperty = None
+    ContextInputSource = None
+    InputProperty = None
 
- AreaToApplyEffectProperty=None
- AreaToApplyEffectUnitsProperty=None
- ContextInputSource=None
- InputProperty=None
 
-
-class BlurBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
- """
+class BlurBitmapEffect(BitmapEffect, ISealable, IAnimatable, IResource):
+    """
  Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.BlurEffect. Simulates looking at an object through an out-of-focus lens.
 
  
 
  BlurBitmapEffect()
  """
- def Clone(self):
-  """
+
+    def Clone(self):
+        """
   Clone(self: BlurBitmapEffect) -> BlurBitmapEffect
 
   
@@ -1829,9 +1968,10 @@ class BlurBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCore(self,*args):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """
   CloneCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a clone (deep copy) of the specified System.Windows.Freezable using base 
@@ -1844,9 +1984,10 @@ class BlurBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The object to clone.
   """
-  pass
- def CloneCurrentValue(self):
-  """
+        pass
+
+    def CloneCurrentValue(self):
+        """
   CloneCurrentValue(self: BlurBitmapEffect) -> BlurBitmapEffect
 
   
@@ -1867,9 +2008,10 @@ class BlurBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """
   CloneCurrentValueCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a modifiable clone (deep copy) of the specified System.Windows.Freezable 
@@ -1882,9 +2024,10 @@ class BlurBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Freezable to be cloned.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -1893,15 +2036,18 @@ class BlurBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """ CreateInstanceCore(self: BlurBitmapEffect) -> Freezable """
-  pass
- def CreateUnmanagedEffect(self,*args):
-  """ CreateUnmanagedEffect(self: BlurBitmapEffect) -> SafeHandle """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """ CreateInstanceCore(self: BlurBitmapEffect) -> Freezable """
+        pass
+
+    def CreateUnmanagedEffect(self, *args):
+        """ CreateUnmanagedEffect(self: BlurBitmapEffect) -> SafeHandle """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: Animatable,isChecking: bool) -> bool
 
   
@@ -1930,9 +2076,10 @@ class BlurBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     unmodifiable,with the side effect of having begun to change the frozen status of this object.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """
   GetAsFrozenCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a frozen clone of the specified System.Windows.Freezable using base 
@@ -1945,9 +2092,10 @@ class BlurBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The instance to copy.
   """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """
   GetCurrentValueAsFrozenCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the current instance a frozen clone of the specified System.Windows.Freezable. If the 
@@ -1960,16 +2108,18 @@ class BlurBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Freezable to copy and freeze.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: Freezable)
 
    Called when the current System.Windows.Freezable object is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -2000,9 +2150,10 @@ class BlurBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -2019,9 +2170,10 @@ class BlurBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -2030,9 +2182,10 @@ class BlurBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     members that are not dependency properties.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -2049,12 +2202,14 @@ class BlurBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def UpdateUnmanagedPropertyState(self,*args):
-  """ UpdateUnmanagedPropertyState(self: BlurBitmapEffect,unmanagedEffect: SafeHandle) """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def UpdateUnmanagedPropertyState(self, *args):
+        """ UpdateUnmanagedPropertyState(self: BlurBitmapEffect,unmanagedEffect: SafeHandle) """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -2065,9 +2220,10 @@ class BlurBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -2076,12 +2232,16 @@ class BlurBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- KernelType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.BlurEffect. Gets or sets the type of blur kernel to use for the System.Windows.Media.Effects.BlurBitmapEffect.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    KernelType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.BlurEffect. Gets or sets the type of blur kernel to use for the System.Windows.Media.Effects.BlurBitmapEffect.
 
 
 
@@ -2093,8 +2253,8 @@ Set: KernelType(self: BlurBitmapEffect)=value
 
 """
 
- Radius=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.BlurEffect. Gets or sets the radius used in the blur kernel. A larger radius implies more blurring.
+    Radius = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.BlurEffect. Gets or sets the radius used in the blur kernel. A larger radius implies more blurring.
 
 
 
@@ -2106,15 +2266,15 @@ Set: Radius(self: BlurBitmapEffect)=value
 
 """
 
+    KernelTypeProperty = None
+    RadiusProperty = None
 
- KernelTypeProperty=None
- RadiusProperty=None
 
+class Effect(Animatable, ISealable, IAnimatable, IResource):
+    """ Provides a custom bitmap effect. """
 
-class Effect(Animatable,ISealable,IAnimatable,IResource):
- """ Provides a custom bitmap effect. """
- def Clone(self):
-  """
+    def Clone(self):
+        """
   Clone(self: Effect) -> Effect
 
   
@@ -2133,9 +2293,10 @@ class Effect(Animatable,ISealable,IAnimatable,IResource):
 
     current object. The clone's System.Windows.Freezable.IsFrozen property is false.
   """
-  pass
- def CloneCore(self,*args):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """
   CloneCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a clone (deep copy) of the specified System.Windows.Freezable using base 
@@ -2148,9 +2309,10 @@ class Effect(Animatable,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The object to clone.
   """
-  pass
- def CloneCurrentValue(self):
-  """
+        pass
+
+    def CloneCurrentValue(self):
+        """
   CloneCurrentValue(self: Effect) -> Effect
 
   
@@ -2167,9 +2329,10 @@ class Effect(Animatable,ISealable,IAnimatable,IResource):
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """
   CloneCurrentValueCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a modifiable clone (deep copy) of the specified System.Windows.Freezable 
@@ -2182,9 +2345,10 @@ class Effect(Animatable,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Freezable to be cloned.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -2193,9 +2357,10 @@ class Effect(Animatable,ISealable,IAnimatable,IResource):
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """
   CreateInstanceCore(self: Freezable) -> Freezable
 
   
@@ -2208,9 +2373,10 @@ class Effect(Animatable,ISealable,IAnimatable,IResource):
 
    Returns: The new instance.
   """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: Animatable,isChecking: bool) -> bool
 
   
@@ -2239,9 +2405,10 @@ class Effect(Animatable,ISealable,IAnimatable,IResource):
 
     unmodifiable,with the side effect of having begun to change the frozen status of this object.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """
   GetAsFrozenCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a frozen clone of the specified System.Windows.Freezable using base 
@@ -2254,9 +2421,10 @@ class Effect(Animatable,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The instance to copy.
   """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """
   GetCurrentValueAsFrozenCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the current instance a frozen clone of the specified System.Windows.Freezable. If the 
@@ -2269,16 +2437,18 @@ class Effect(Animatable,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Freezable to copy and freeze.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: Freezable)
 
    Called when the current System.Windows.Freezable object is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -2309,9 +2479,10 @@ class Effect(Animatable,ISealable,IAnimatable,IResource):
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -2328,9 +2499,10 @@ class Effect(Animatable,ISealable,IAnimatable,IResource):
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -2339,9 +2511,10 @@ class Effect(Animatable,ISealable,IAnimatable,IResource):
 
     members that are not dependency properties.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -2358,9 +2531,10 @@ class Effect(Animatable,ISealable,IAnimatable,IResource):
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -2371,9 +2545,10 @@ class Effect(Animatable,ISealable,IAnimatable,IResource):
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -2382,31 +2557,35 @@ class Effect(Animatable,ISealable,IAnimatable,IResource):
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- EffectMapping=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,transforms mouse input and coordinate systems through the effect.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    EffectMapping = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """When overridden in a derived class,transforms mouse input and coordinate systems through the effect.
 
 
 
 """
 
+    ImplicitInput = None
 
- ImplicitInput=None
 
-
-class BlurEffect(Effect,ISealable,IAnimatable,IResource):
- """
+class BlurEffect(Effect, ISealable, IAnimatable, IResource):
+    """
  A bitmap effect that blurs the target texture.
 
  
 
  BlurEffect()
  """
- def Clone(self):
-  """
+
+    def Clone(self):
+        """
   Clone(self: BlurEffect) -> BlurEffect
 
   
@@ -2425,9 +2604,10 @@ class BlurEffect(Effect,ISealable,IAnimatable,IResource):
 
     current object. The clone's System.Windows.Freezable.IsFrozen property is false.
   """
-  pass
- def CloneCore(self,*args):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """
   CloneCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a clone (deep copy) of the specified System.Windows.Freezable using base 
@@ -2440,9 +2620,10 @@ class BlurEffect(Effect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The object to clone.
   """
-  pass
- def CloneCurrentValue(self):
-  """
+        pass
+
+    def CloneCurrentValue(self):
+        """
   CloneCurrentValue(self: BlurEffect) -> BlurEffect
 
   
@@ -2459,9 +2640,10 @@ class BlurEffect(Effect,ISealable,IAnimatable,IResource):
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """
   CloneCurrentValueCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a modifiable clone (deep copy) of the specified System.Windows.Freezable 
@@ -2474,9 +2656,10 @@ class BlurEffect(Effect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Freezable to be cloned.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -2485,12 +2668,14 @@ class BlurEffect(Effect,ISealable,IAnimatable,IResource):
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """ CreateInstanceCore(self: BlurEffect) -> Freezable """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """ CreateInstanceCore(self: BlurEffect) -> Freezable """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: Animatable,isChecking: bool) -> bool
 
   
@@ -2519,9 +2704,10 @@ class BlurEffect(Effect,ISealable,IAnimatable,IResource):
 
     unmodifiable,with the side effect of having begun to change the frozen status of this object.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """
   GetAsFrozenCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a frozen clone of the specified System.Windows.Freezable using base 
@@ -2534,9 +2720,10 @@ class BlurEffect(Effect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The instance to copy.
   """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """
   GetCurrentValueAsFrozenCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the current instance a frozen clone of the specified System.Windows.Freezable. If the 
@@ -2549,16 +2736,18 @@ class BlurEffect(Effect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Freezable to copy and freeze.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: Freezable)
 
    Called when the current System.Windows.Freezable object is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -2589,9 +2778,10 @@ class BlurEffect(Effect,ISealable,IAnimatable,IResource):
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -2608,9 +2798,10 @@ class BlurEffect(Effect,ISealable,IAnimatable,IResource):
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -2619,9 +2810,10 @@ class BlurEffect(Effect,ISealable,IAnimatable,IResource):
 
     members that are not dependency properties.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -2638,9 +2830,10 @@ class BlurEffect(Effect,ISealable,IAnimatable,IResource):
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -2651,9 +2844,10 @@ class BlurEffect(Effect,ISealable,IAnimatable,IResource):
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -2662,19 +2856,25 @@ class BlurEffect(Effect,ISealable,IAnimatable,IResource):
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- EffectMapping=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,transforms mouse input and coordinate systems through the effect.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    EffectMapping = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """When overridden in a derived class,transforms mouse input and coordinate systems through the effect.
 
 
 
 """
 
- KernelType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value representing the curve that is used to calculate the blur.
+    KernelType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value representing the curve that is used to calculate the blur.
 
 
 
@@ -2686,8 +2886,8 @@ Set: KernelType(self: BlurEffect)=value
 
 """
 
- Radius=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates the radius of the blur effect's curve.
+    Radius = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value that indicates the radius of the blur effect's curve.
 
 
 
@@ -2699,8 +2899,10 @@ Set: Radius(self: BlurEffect)=value
 
 """
 
- RenderingBias=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether the system renders an effect with emphasis on speed or quality.
+    RenderingBias = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether the system renders an effect with emphasis on speed or quality.
 
 
 
@@ -2712,22 +2914,22 @@ Set: RenderingBias(self: BlurEffect)=value
 
 """
 
+    KernelTypeProperty = None
+    RadiusProperty = None
+    RenderingBiasProperty = None
 
- KernelTypeProperty=None
- RadiusProperty=None
- RenderingBiasProperty=None
 
-
-class DropShadowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
- """
+class DropShadowBitmapEffect(BitmapEffect, ISealable, IAnimatable, IResource):
+    """
  Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.DropShadowEffect. Applies a shadow behind a visual object at a slight offset. The offset is determined by mimicking a casting shadow from an imaginary light source.
 
  
 
  DropShadowBitmapEffect()
  """
- def Clone(self):
-  """
+
+    def Clone(self):
+        """
   Clone(self: DropShadowBitmapEffect) -> DropShadowBitmapEffect
 
   
@@ -2748,9 +2950,10 @@ class DropShadowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCore(self,*args):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """
   CloneCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a clone (deep copy) of the specified System.Windows.Freezable using base 
@@ -2763,9 +2966,10 @@ class DropShadowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The object to clone.
   """
-  pass
- def CloneCurrentValue(self):
-  """
+        pass
+
+    def CloneCurrentValue(self):
+        """
   CloneCurrentValue(self: DropShadowBitmapEffect) -> DropShadowBitmapEffect
 
   
@@ -2786,9 +2990,10 @@ class DropShadowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """
   CloneCurrentValueCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a modifiable clone (deep copy) of the specified System.Windows.Freezable 
@@ -2801,9 +3006,10 @@ class DropShadowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Freezable to be cloned.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -2812,15 +3018,18 @@ class DropShadowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """ CreateInstanceCore(self: DropShadowBitmapEffect) -> Freezable """
-  pass
- def CreateUnmanagedEffect(self,*args):
-  """ CreateUnmanagedEffect(self: DropShadowBitmapEffect) -> SafeHandle """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """ CreateInstanceCore(self: DropShadowBitmapEffect) -> Freezable """
+        pass
+
+    def CreateUnmanagedEffect(self, *args):
+        """ CreateUnmanagedEffect(self: DropShadowBitmapEffect) -> SafeHandle """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: Animatable,isChecking: bool) -> bool
 
   
@@ -2849,9 +3058,10 @@ class DropShadowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     unmodifiable,with the side effect of having begun to change the frozen status of this object.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """
   GetAsFrozenCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a frozen clone of the specified System.Windows.Freezable using base 
@@ -2864,9 +3074,10 @@ class DropShadowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The instance to copy.
   """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """
   GetCurrentValueAsFrozenCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the current instance a frozen clone of the specified System.Windows.Freezable. If the 
@@ -2879,16 +3090,18 @@ class DropShadowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Freezable to copy and freeze.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: Freezable)
 
    Called when the current System.Windows.Freezable object is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -2919,9 +3132,10 @@ class DropShadowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -2938,9 +3152,10 @@ class DropShadowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -2949,9 +3164,10 @@ class DropShadowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     members that are not dependency properties.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -2968,12 +3184,14 @@ class DropShadowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def UpdateUnmanagedPropertyState(self,*args):
-  """ UpdateUnmanagedPropertyState(self: DropShadowBitmapEffect,unmanagedEffect: SafeHandle) """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def UpdateUnmanagedPropertyState(self, *args):
+        """ UpdateUnmanagedPropertyState(self: DropShadowBitmapEffect,unmanagedEffect: SafeHandle) """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -2984,9 +3202,10 @@ class DropShadowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -2995,12 +3214,14 @@ class DropShadowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Color=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.DropShadowEffect. Gets or sets the color of the shadow.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Color = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.DropShadowEffect. Gets or sets the color of the shadow.
 
 
 
@@ -3012,8 +3233,8 @@ Set: Color(self: DropShadowBitmapEffect)=value
 
 """
 
- Direction=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.DropShadowEffect. Gets or sets the angle at which the shadow is cast.
+    Direction = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.DropShadowEffect. Gets or sets the angle at which the shadow is cast.
 
 
 
@@ -3025,8 +3246,8 @@ Set: Direction(self: DropShadowBitmapEffect)=value
 
 """
 
- Noise=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.DropShadowEffect. Gets or sets the graininess,or "noise level," of the shadow.
+    Noise = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.DropShadowEffect. Gets or sets the graininess,or "noise level," of the shadow.
 
 
 
@@ -3038,8 +3259,8 @@ Set: Noise(self: DropShadowBitmapEffect)=value
 
 """
 
- Opacity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.DropShadowEffect. Gets or sets the degree of opacity of the shadow.
+    Opacity = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.DropShadowEffect. Gets or sets the degree of opacity of the shadow.
 
 
 
@@ -3051,8 +3272,10 @@ Set: Opacity(self: DropShadowBitmapEffect)=value
 
 """
 
- ShadowDepth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.DropShadowEffect. Gets or sets the distance between the object and the shadow that it casts.
+    ShadowDepth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.DropShadowEffect. Gets or sets the distance between the object and the shadow that it casts.
 
 
 
@@ -3064,8 +3287,8 @@ Set: ShadowDepth(self: DropShadowBitmapEffect)=value
 
 """
 
- Softness=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.DropShadowEffect. Gets or sets the softness of the shadow.
+    Softness = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.DropShadowEffect. Gets or sets the softness of the shadow.
 
 
 
@@ -3077,25 +3300,25 @@ Set: Softness(self: DropShadowBitmapEffect)=value
 
 """
 
+    ColorProperty = None
+    DirectionProperty = None
+    NoiseProperty = None
+    OpacityProperty = None
+    ShadowDepthProperty = None
+    SoftnessProperty = None
 
- ColorProperty=None
- DirectionProperty=None
- NoiseProperty=None
- OpacityProperty=None
- ShadowDepthProperty=None
- SoftnessProperty=None
 
-
-class DropShadowEffect(Effect,ISealable,IAnimatable,IResource):
- """
+class DropShadowEffect(Effect, ISealable, IAnimatable, IResource):
+    """
  A bitmap effect that paints a drop shadow around the target texture.
 
  
 
  DropShadowEffect()
  """
- def Clone(self):
-  """
+
+    def Clone(self):
+        """
   Clone(self: DropShadowEffect) -> DropShadowEffect
 
   
@@ -3114,9 +3337,10 @@ class DropShadowEffect(Effect,ISealable,IAnimatable,IResource):
 
     current object. The clone's System.Windows.Freezable.IsFrozen property is false.
   """
-  pass
- def CloneCore(self,*args):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """
   CloneCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a clone (deep copy) of the specified System.Windows.Freezable using base 
@@ -3129,9 +3353,10 @@ class DropShadowEffect(Effect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The object to clone.
   """
-  pass
- def CloneCurrentValue(self):
-  """
+        pass
+
+    def CloneCurrentValue(self):
+        """
   CloneCurrentValue(self: DropShadowEffect) -> DropShadowEffect
 
   
@@ -3148,9 +3373,10 @@ class DropShadowEffect(Effect,ISealable,IAnimatable,IResource):
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """
   CloneCurrentValueCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a modifiable clone (deep copy) of the specified System.Windows.Freezable 
@@ -3163,9 +3389,10 @@ class DropShadowEffect(Effect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Freezable to be cloned.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -3174,12 +3401,14 @@ class DropShadowEffect(Effect,ISealable,IAnimatable,IResource):
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """ CreateInstanceCore(self: DropShadowEffect) -> Freezable """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """ CreateInstanceCore(self: DropShadowEffect) -> Freezable """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: Animatable,isChecking: bool) -> bool
 
   
@@ -3208,9 +3437,10 @@ class DropShadowEffect(Effect,ISealable,IAnimatable,IResource):
 
     unmodifiable,with the side effect of having begun to change the frozen status of this object.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """
   GetAsFrozenCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a frozen clone of the specified System.Windows.Freezable using base 
@@ -3223,9 +3453,10 @@ class DropShadowEffect(Effect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The instance to copy.
   """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """
   GetCurrentValueAsFrozenCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the current instance a frozen clone of the specified System.Windows.Freezable. If the 
@@ -3238,16 +3469,18 @@ class DropShadowEffect(Effect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Freezable to copy and freeze.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: Freezable)
 
    Called when the current System.Windows.Freezable object is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -3278,9 +3511,10 @@ class DropShadowEffect(Effect,ISealable,IAnimatable,IResource):
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -3297,9 +3531,10 @@ class DropShadowEffect(Effect,ISealable,IAnimatable,IResource):
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -3308,9 +3543,10 @@ class DropShadowEffect(Effect,ISealable,IAnimatable,IResource):
 
     members that are not dependency properties.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -3327,9 +3563,10 @@ class DropShadowEffect(Effect,ISealable,IAnimatable,IResource):
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -3340,9 +3577,10 @@ class DropShadowEffect(Effect,ISealable,IAnimatable,IResource):
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -3351,12 +3589,16 @@ class DropShadowEffect(Effect,ISealable,IAnimatable,IResource):
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- BlurRadius=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates the radius of the shadow's blur effect.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    BlurRadius = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates the radius of the shadow's blur effect.
 
 
 
@@ -3368,8 +3610,8 @@ Set: BlurRadius(self: DropShadowEffect)=value
 
 """
 
- Color=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the color of the drop shadow.
+    Color = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the color of the drop shadow.
 
 
 
@@ -3381,8 +3623,8 @@ Set: Color(self: DropShadowEffect)=value
 
 """
 
- Direction=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the direction of the drop shadow.
+    Direction = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the direction of the drop shadow.
 
 
 
@@ -3394,15 +3636,17 @@ Set: Direction(self: DropShadowEffect)=value
 
 """
 
- EffectMapping=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,transforms mouse input and coordinate systems through the effect.
+    EffectMapping = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """When overridden in a derived class,transforms mouse input and coordinate systems through the effect.
 
 
 
 """
 
- Opacity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the opacity of the drop shadow.
+    Opacity = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the opacity of the drop shadow.
 
 
 
@@ -3414,8 +3658,10 @@ Set: Opacity(self: DropShadowEffect)=value
 
 """
 
- RenderingBias=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether the system renders the drop shadow with emphasis on speed or quality.
+    RenderingBias = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether the system renders the drop shadow with emphasis on speed or quality.
 
 
 
@@ -3427,8 +3673,10 @@ Set: RenderingBias(self: DropShadowEffect)=value
 
 """
 
- ShadowDepth=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the distance of the drop shadow below the texture.
+    ShadowDepth = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the distance of the drop shadow below the texture.
 
 
 
@@ -3440,63 +3688,74 @@ Set: ShadowDepth(self: DropShadowEffect)=value
 
 """
 
+    BlurRadiusProperty = None
+    ColorProperty = None
+    DirectionProperty = None
+    OpacityProperty = None
+    RenderingBiasProperty = None
+    ShadowDepthProperty = None
 
- BlurRadiusProperty=None
- ColorProperty=None
- DirectionProperty=None
- OpacityProperty=None
- RenderingBiasProperty=None
- ShadowDepthProperty=None
 
-
-class EdgeProfile(Enum,IComparable,IFormattable,IConvertible):
- """
+class EdgeProfile(Enum, IComparable, IFormattable, IConvertible):
+    """
  Specifies the type of curve to apply to the edge of a bitmap.
 
  
 
  enum EdgeProfile,values: BulgedUp (3),CurvedIn (1),CurvedOut (2),Linear (0)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- BulgedUp=None
- CurvedIn=None
- CurvedOut=None
- Linear=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    BulgedUp = None
+    CurvedIn = None
+    CurvedOut = None
+    Linear = None
+    value__ = None
 
 
-class EmbossBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
- """
+class EmbossBitmapEffect(BitmapEffect, ISealable, IAnimatable, IResource):
+    """
  Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Creates a bump mapping of the visual object to give the impression of depth and texture from an artificial light source.
 
  
 
  EmbossBitmapEffect()
  """
- def Clone(self):
-  """
+
+    def Clone(self):
+        """
   Clone(self: EmbossBitmapEffect) -> EmbossBitmapEffect
 
   
@@ -3517,9 +3776,10 @@ class EmbossBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCore(self,*args):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """
   CloneCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a clone (deep copy) of the specified System.Windows.Freezable using base 
@@ -3532,9 +3792,10 @@ class EmbossBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The object to clone.
   """
-  pass
- def CloneCurrentValue(self):
-  """
+        pass
+
+    def CloneCurrentValue(self):
+        """
   CloneCurrentValue(self: EmbossBitmapEffect) -> EmbossBitmapEffect
 
   
@@ -3555,9 +3816,10 @@ class EmbossBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """
   CloneCurrentValueCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a modifiable clone (deep copy) of the specified System.Windows.Freezable 
@@ -3570,9 +3832,10 @@ class EmbossBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Freezable to be cloned.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -3581,15 +3844,18 @@ class EmbossBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """ CreateInstanceCore(self: EmbossBitmapEffect) -> Freezable """
-  pass
- def CreateUnmanagedEffect(self,*args):
-  """ CreateUnmanagedEffect(self: EmbossBitmapEffect) -> SafeHandle """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """ CreateInstanceCore(self: EmbossBitmapEffect) -> Freezable """
+        pass
+
+    def CreateUnmanagedEffect(self, *args):
+        """ CreateUnmanagedEffect(self: EmbossBitmapEffect) -> SafeHandle """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: Animatable,isChecking: bool) -> bool
 
   
@@ -3618,9 +3884,10 @@ class EmbossBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     unmodifiable,with the side effect of having begun to change the frozen status of this object.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """
   GetAsFrozenCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a frozen clone of the specified System.Windows.Freezable using base 
@@ -3633,9 +3900,10 @@ class EmbossBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The instance to copy.
   """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """
   GetCurrentValueAsFrozenCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the current instance a frozen clone of the specified System.Windows.Freezable. If the 
@@ -3648,16 +3916,18 @@ class EmbossBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Freezable to copy and freeze.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: Freezable)
 
    Called when the current System.Windows.Freezable object is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -3688,9 +3958,10 @@ class EmbossBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -3707,9 +3978,10 @@ class EmbossBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -3718,9 +3990,10 @@ class EmbossBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     members that are not dependency properties.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -3737,12 +4010,14 @@ class EmbossBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def UpdateUnmanagedPropertyState(self,*args):
-  """ UpdateUnmanagedPropertyState(self: EmbossBitmapEffect,unmanagedEffect: SafeHandle) """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def UpdateUnmanagedPropertyState(self, *args):
+        """ UpdateUnmanagedPropertyState(self: EmbossBitmapEffect,unmanagedEffect: SafeHandle) """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -3753,9 +4028,10 @@ class EmbossBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -3764,12 +4040,16 @@ class EmbossBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- LightAngle=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Gets or sets the direction the artificial light is cast upon the embossed object.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    LightAngle = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Gets or sets the direction the artificial light is cast upon the embossed object.
 
 
 
@@ -3781,8 +4061,8 @@ Set: LightAngle(self: EmbossBitmapEffect)=value
 
 """
 
- Relief=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Gets or sets the amount of relief of the emboss.
+    Relief = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.Effect. Gets or sets the amount of relief of the emboss.
 
 
 
@@ -3794,57 +4074,68 @@ Set: Relief(self: EmbossBitmapEffect)=value
 
 """
 
+    LightAngleProperty = None
+    ReliefProperty = None
 
- LightAngleProperty=None
- ReliefProperty=None
 
-
-class KernelType(Enum,IComparable,IFormattable,IConvertible):
- """
+class KernelType(Enum, IComparable, IFormattable, IConvertible):
+    """
  Describes the kernel used to create the effect.
 
  
 
  enum KernelType,values: Box (1),Gaussian (0)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Box=None
- Gaussian=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Box = None
+    Gaussian = None
+    value__ = None
 
 
-class OuterGlowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
- """
+class OuterGlowBitmapEffect(BitmapEffect, ISealable, IAnimatable, IResource):
+    """
  Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.BlurEffect. Creates a halo of color around objects or areas of color.
 
  
 
  OuterGlowBitmapEffect()
  """
- def Clone(self):
-  """
+
+    def Clone(self):
+        """
   Clone(self: OuterGlowBitmapEffect) -> OuterGlowBitmapEffect
 
   
@@ -3865,9 +4156,10 @@ class OuterGlowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCore(self,*args):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """
   CloneCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a clone (deep copy) of the specified System.Windows.Freezable using base 
@@ -3880,9 +4172,10 @@ class OuterGlowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The object to clone.
   """
-  pass
- def CloneCurrentValue(self):
-  """
+        pass
+
+    def CloneCurrentValue(self):
+        """
   CloneCurrentValue(self: OuterGlowBitmapEffect) -> OuterGlowBitmapEffect
 
   
@@ -3903,9 +4196,10 @@ class OuterGlowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """
   CloneCurrentValueCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a modifiable clone (deep copy) of the specified System.Windows.Freezable 
@@ -3918,9 +4212,10 @@ class OuterGlowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Freezable to be cloned.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -3929,15 +4224,18 @@ class OuterGlowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """ CreateInstanceCore(self: OuterGlowBitmapEffect) -> Freezable """
-  pass
- def CreateUnmanagedEffect(self,*args):
-  """ CreateUnmanagedEffect(self: OuterGlowBitmapEffect) -> SafeHandle """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """ CreateInstanceCore(self: OuterGlowBitmapEffect) -> Freezable """
+        pass
+
+    def CreateUnmanagedEffect(self, *args):
+        """ CreateUnmanagedEffect(self: OuterGlowBitmapEffect) -> SafeHandle """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: Animatable,isChecking: bool) -> bool
 
   
@@ -3966,9 +4264,10 @@ class OuterGlowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     unmodifiable,with the side effect of having begun to change the frozen status of this object.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """
   GetAsFrozenCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the instance a frozen clone of the specified System.Windows.Freezable using base 
@@ -3981,9 +4280,10 @@ class OuterGlowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The instance to copy.
   """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """
   GetCurrentValueAsFrozenCore(self: Freezable,sourceFreezable: Freezable)
 
    Makes the current instance a frozen clone of the specified System.Windows.Freezable. If the 
@@ -3996,16 +4296,18 @@ class OuterGlowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    sourceFreezable: The System.Windows.Freezable to copy and freeze.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: Freezable)
 
    Called when the current System.Windows.Freezable object is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -4036,9 +4338,10 @@ class OuterGlowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -4055,9 +4358,10 @@ class OuterGlowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -4066,9 +4370,10 @@ class OuterGlowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     members that are not dependency properties.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -4085,12 +4390,14 @@ class OuterGlowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def UpdateUnmanagedPropertyState(self,*args):
-  """ UpdateUnmanagedPropertyState(self: OuterGlowBitmapEffect,unmanagedEffect: SafeHandle) """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def UpdateUnmanagedPropertyState(self, *args):
+        """ UpdateUnmanagedPropertyState(self: OuterGlowBitmapEffect,unmanagedEffect: SafeHandle) """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -4101,9 +4408,10 @@ class OuterGlowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -4112,12 +4420,14 @@ class OuterGlowBitmapEffect(BitmapEffect,ISealable,IAnimatable,IResource):
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- GlowColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.BlurEffect. Gets or sets the color of the halo glow.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    GlowColor = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.BlurEffect. Gets or sets the color of the halo glow.
 
 
 
@@ -4129,8 +4439,8 @@ Set: GlowColor(self: OuterGlowBitmapEffect)=value
 
 """
 
- GlowSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.BlurEffect. Gets or sets the thickness of the halo glow.
+    GlowSize = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.BlurEffect. Gets or sets the thickness of the halo glow.
 
 
 
@@ -4142,8 +4452,8 @@ Set: GlowSize(self: OuterGlowBitmapEffect)=value
 
 """
 
- Noise=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.BlurEffect. Gets or sets the graininess of the halo glow.
+    Noise = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.BlurEffect. Gets or sets the graininess of the halo glow.
 
 
 
@@ -4155,8 +4465,8 @@ Set: Noise(self: OuterGlowBitmapEffect)=value
 
 """
 
- Opacity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.BlurEffect. Gets or sets the degree of opacity of the halo glow.
+    Opacity = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Note: This API is now obsolete. The non-obsolete alternative is System.Windows.Media.Effects.BlurEffect. Gets or sets the degree of opacity of the halo glow.
 
 
 
@@ -4168,23 +4478,23 @@ Set: Opacity(self: OuterGlowBitmapEffect)=value
 
 """
 
+    GlowColorProperty = None
+    GlowSizeProperty = None
+    NoiseProperty = None
+    OpacityProperty = None
 
- GlowColorProperty=None
- GlowSizeProperty=None
- NoiseProperty=None
- OpacityProperty=None
 
-
-class PixelShader(Animatable,ISealable,IAnimatable,IResource):
- """
+class PixelShader(Animatable, ISealable, IAnimatable, IResource):
+    """
  Provides a managed wrapper around a High Level Shading Language (HLSL) pixel shader.
 
  
 
  PixelShader()
  """
- def Clone(self):
-  """
+
+    def Clone(self):
+        """
   Clone(self: PixelShader) -> PixelShader
 
   
@@ -4203,12 +4513,14 @@ class PixelShader(Animatable,ISealable,IAnimatable,IResource):
 
     current object. The clone's System.Windows.Freezable.IsFrozen property is false.
   """
-  pass
- def CloneCore(self,*args):
-  """ CloneCore(self: PixelShader,sourceFreezable: Freezable) """
-  pass
- def CloneCurrentValue(self):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """ CloneCore(self: PixelShader,sourceFreezable: Freezable) """
+        pass
+
+    def CloneCurrentValue(self):
+        """
   CloneCurrentValue(self: PixelShader) -> PixelShader
 
   
@@ -4225,12 +4537,14 @@ class PixelShader(Animatable,ISealable,IAnimatable,IResource):
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """ CloneCurrentValueCore(self: PixelShader,sourceFreezable: Freezable) """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """ CloneCurrentValueCore(self: PixelShader,sourceFreezable: Freezable) """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -4239,12 +4553,14 @@ class PixelShader(Animatable,ISealable,IAnimatable,IResource):
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """ CreateInstanceCore(self: PixelShader) -> Freezable """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """ CreateInstanceCore(self: PixelShader) -> Freezable """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: Animatable,isChecking: bool) -> bool
 
   
@@ -4273,22 +4589,26 @@ class PixelShader(Animatable,ISealable,IAnimatable,IResource):
 
     unmodifiable,with the side effect of having begun to change the frozen status of this object.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """ GetAsFrozenCore(self: PixelShader,sourceFreezable: Freezable) """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """ GetCurrentValueAsFrozenCore(self: PixelShader,sourceFreezable: Freezable) """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """ GetAsFrozenCore(self: PixelShader,sourceFreezable: Freezable) """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """ GetCurrentValueAsFrozenCore(self: PixelShader,sourceFreezable: Freezable) """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: Freezable)
 
    Called when the current System.Windows.Freezable object is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -4319,9 +4639,10 @@ class PixelShader(Animatable,ISealable,IAnimatable,IResource):
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -4338,9 +4659,10 @@ class PixelShader(Animatable,ISealable,IAnimatable,IResource):
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -4349,9 +4671,10 @@ class PixelShader(Animatable,ISealable,IAnimatable,IResource):
 
     members that are not dependency properties.
   """
-  pass
- def SetStreamSource(self,source):
-  """
+        pass
+
+    def SetStreamSource(self, source):
+        """
   SetStreamSource(self: PixelShader,source: Stream)
 
    Assigns the System.IO.Stream to use as the source of HLSL bytecode.
@@ -4360,9 +4683,10 @@ class PixelShader(Animatable,ISealable,IAnimatable,IResource):
 
    source: The stream to read the HLSL bytecode from.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -4379,9 +4703,10 @@ class PixelShader(Animatable,ISealable,IAnimatable,IResource):
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -4392,9 +4717,10 @@ class PixelShader(Animatable,ISealable,IAnimatable,IResource):
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -4403,12 +4729,16 @@ class PixelShader(Animatable,ISealable,IAnimatable,IResource):
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- ShaderRenderMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether to use hardware or software rendering.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    ShaderRenderMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether to use hardware or software rendering.
 
 
 
@@ -4420,8 +4750,8 @@ Set: ShaderRenderMode(self: PixelShader)=value
 
 """
 
- UriSource=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a Pack URI reference to HLSL bytecode in the assembly.
+    UriSource = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a Pack URI reference to HLSL bytecode in the assembly.
 
 
 
@@ -4433,89 +4763,111 @@ Set: UriSource(self: PixelShader)=value
 
 """
 
+    InvalidPixelShaderEncountered = None
+    ShaderRenderModeProperty = None
+    UriSourceProperty = None
 
- InvalidPixelShaderEncountered=None
- ShaderRenderModeProperty=None
- UriSourceProperty=None
 
-
-class RenderingBias(Enum,IComparable,IFormattable,IConvertible):
- """
+class RenderingBias(Enum, IComparable, IFormattable, IConvertible):
+    """
  Indicates whether the system renders an effect with emphasis on speed or quality.
 
  
 
  enum RenderingBias,values: Performance (0),Quality (1)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Performance=None
- Quality=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Performance = None
+    Quality = None
+    value__ = None
 
 
-class SamplingMode(Enum,IComparable,IFormattable,IConvertible):
- """
+class SamplingMode(Enum, IComparable, IFormattable, IConvertible):
+    """
  Indicates the way System.Windows.Media.Brush-valued dependency properties are sampled in a custom shader effect.
 
  
 
  enum SamplingMode,values: Auto (2),Bilinear (1),NearestNeighbor (0)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Auto=None
- Bilinear=None
- NearestNeighbor=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Auto = None
+    Bilinear = None
+    NearestNeighbor = None
+    value__ = None
 
 
-class ShaderEffect(Effect,ISealable,IAnimatable,IResource):
- """ Provides a custom bitmap effect by using a System.Windows.Media.Effects.PixelShader. """
- def Clone(self):
-  """
+class ShaderEffect(Effect, ISealable, IAnimatable, IResource):
+    """ Provides a custom bitmap effect by using a System.Windows.Media.Effects.PixelShader. """
+
+    def Clone(self):
+        """
   Clone(self: ShaderEffect) -> ShaderEffect
 
   
@@ -4534,16 +4886,18 @@ class ShaderEffect(Effect,ISealable,IAnimatable,IResource):
 
     current object. The clone's System.Windows.Freezable.IsFrozen property is false.
   """
-  pass
- def CloneCore(self,*args):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """
   CloneCore(self: ShaderEffect,sourceFreezable: Freezable)
 
    sourceFreezable: The object to clone.
   """
-  pass
- def CloneCurrentValue(self):
-  """
+        pass
+
+    def CloneCurrentValue(self):
+        """
   CloneCurrentValue(self: ShaderEffect) -> ShaderEffect
 
   
@@ -4560,16 +4914,18 @@ class ShaderEffect(Effect,ISealable,IAnimatable,IResource):
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """
   CloneCurrentValueCore(self: ShaderEffect,sourceFreezable: Freezable)
 
    sourceFreezable: The System.Windows.Freezable to be cloned.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -4578,12 +4934,14 @@ class ShaderEffect(Effect,ISealable,IAnimatable,IResource):
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """ CreateInstanceCore(self: ShaderEffect) -> Freezable """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """ CreateInstanceCore(self: ShaderEffect) -> Freezable """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: Animatable,isChecking: bool) -> bool
 
   
@@ -4612,30 +4970,34 @@ class ShaderEffect(Effect,ISealable,IAnimatable,IResource):
 
     unmodifiable,with the side effect of having begun to change the frozen status of this object.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """
   GetAsFrozenCore(self: ShaderEffect,sourceFreezable: Freezable)
 
    sourceFreezable: The instance to copy.
   """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """
   GetCurrentValueAsFrozenCore(self: ShaderEffect,sourceFreezable: Freezable)
 
    sourceFreezable: The System.Windows.Freezable to copy and freeze.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: Freezable)
 
    Called when the current System.Windows.Freezable object is modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -4666,9 +5028,10 @@ class ShaderEffect(Effect,ISealable,IAnimatable,IResource):
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -4685,9 +5048,10 @@ class ShaderEffect(Effect,ISealable,IAnimatable,IResource):
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def PixelShaderConstantCallback(self,*args):
-  """
+        pass
+
+    def PixelShaderConstantCallback(self, *args):
+        """
   PixelShaderConstantCallback(floatRegisterIndex: int) -> PropertyChangedCallback
 
   
@@ -4702,9 +5066,10 @@ class ShaderEffect(Effect,ISealable,IAnimatable,IResource):
 
     shader constant register specified by floatRegisterIndex.
   """
-  pass
- def PixelShaderSamplerCallback(self,*args):
-  """
+        pass
+
+    def PixelShaderSamplerCallback(self, *args):
+        """
   PixelShaderSamplerCallback(samplerRegisterIndex: int,samplingMode: SamplingMode) -> PropertyChangedCallback
 
   
@@ -4741,9 +5106,10 @@ class ShaderEffect(Effect,ISealable,IAnimatable,IResource):
 
     shader sampler register specified by samplerRegisterIndex.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -4752,9 +5118,10 @@ class ShaderEffect(Effect,ISealable,IAnimatable,IResource):
 
     members that are not dependency properties.
   """
-  pass
- def RegisterPixelShaderSamplerProperty(self,*args):
-  """
+        pass
+
+    def RegisterPixelShaderSamplerProperty(self, *args):
+        """
   RegisterPixelShaderSamplerProperty(dpName: str,ownerType: Type,samplerRegisterIndex: int,samplingMode: SamplingMode) -> DependencyProperty
 
   
@@ -4793,9 +5160,10 @@ class ShaderEffect(Effect,ISealable,IAnimatable,IResource):
 
    Returns: A dependency property associated with the shader sampler specified by samplerRegisterIndex.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -4812,9 +5180,10 @@ class ShaderEffect(Effect,ISealable,IAnimatable,IResource):
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def UpdateShaderValue(self,*args):
-  """
+        pass
+
+    def UpdateShaderValue(self, *args):
+        """
   UpdateShaderValue(self: ShaderEffect,dp: DependencyProperty)
 
    Notifies the effect that the shader constant or sampler corresponding to the specified 
@@ -4827,9 +5196,10 @@ class ShaderEffect(Effect,ISealable,IAnimatable,IResource):
 
    dp: The dependency property to be updated.
   """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -4840,9 +5210,10 @@ class ShaderEffect(Effect,ISealable,IAnimatable,IResource):
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -4851,97 +5222,121 @@ class ShaderEffect(Effect,ISealable,IAnimatable,IResource):
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- DdxUvDdyUvRegisterIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates the shader register to use for the partial derivatives of the texture coordinates with respect to screen space.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    DdxUvDdyUvRegisterIndex = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates the shader register to use for the partial derivatives of the texture coordinates with respect to screen space.
 
 
 
 """
 
- EffectMapping=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,transforms mouse input and coordinate systems through the effect.
+    EffectMapping = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """When overridden in a derived class,transforms mouse input and coordinate systems through the effect.
 
 
 
 """
 
- PaddingBottom=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating that the effect's output texture is larger than its input texture along the bottom edge.
+    PaddingBottom = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating that the effect's output texture is larger than its input texture along the bottom edge.
 
 
 
 """
 
- PaddingLeft=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating that the effect's output texture is larger than its input texture along the left edge.
+    PaddingLeft = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating that the effect's output texture is larger than its input texture along the left edge.
 
 
 
 """
 
- PaddingRight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating that the effect's output texture is larger than its input texture along the right edge.
+    PaddingRight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating that the effect's output texture is larger than its input texture along the right edge.
 
 
 
 """
 
- PaddingTop=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating that the effect's output texture is larger than its input texture along the top edge.
+    PaddingTop = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating that the effect's output texture is larger than its input texture along the top edge.
 
 
 
 """
 
- PixelShader=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Windows.Media.Effects.PixelShader to use for the effect.
+    PixelShader = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Windows.Media.Effects.PixelShader to use for the effect.
 
 
 
 """
 
+    PixelShaderProperty = None
 
- PixelShaderProperty=None
 
-
-class ShaderRenderMode(Enum,IComparable,IFormattable,IConvertible):
- """
+class ShaderRenderMode(Enum, IComparable, IFormattable, IConvertible):
+    """
  Indicates the policy for rendering a System.Windows.Media.Effects.ShaderEffect in software.
 
  
 
  enum ShaderRenderMode,values: Auto (0),HardwareOnly (2),SoftwareOnly (1)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Auto=None
- HardwareOnly=None
- SoftwareOnly=None
- value__=None
 
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
 
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Auto = None
+    HardwareOnly = None
+    SoftwareOnly = None
+    value__ = None

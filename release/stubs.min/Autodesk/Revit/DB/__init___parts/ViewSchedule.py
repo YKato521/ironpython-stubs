@@ -1,7 +1,8 @@
-class ViewSchedule(TableView,IDisposable):
- """ A schedule view. """
- def CanGroupHeaders(self,top,left,bottom,right):
-  """
+class ViewSchedule(TableView, IDisposable):
+    """ A schedule view. """
+
+    def CanGroupHeaders(self, top, left, bottom, right):
+        """
   CanGroupHeaders(self: ViewSchedule,top: int,left: int,bottom: int,right: int) -> bool
 
   
@@ -20,9 +21,10 @@ class ViewSchedule(TableView,IDisposable):
 
    Returns: True if the selected headers can be grouped,false otherwise.
   """
-  pass
- def CanUngroupHeaders(self,top,left,bottom,right):
-  """
+        pass
+
+    def CanUngroupHeaders(self, top, left, bottom, right):
+        """
   CanUngroupHeaders(self: ViewSchedule,top: int,left: int,bottom: int,right: int) -> bool
 
   
@@ -41,10 +43,11 @@ class ViewSchedule(TableView,IDisposable):
 
    Returns: True if the selected headers can be grouped,false otherwise.
   """
-  pass
- @staticmethod
- def CreateKeynoteLegend(document):
-  """
+        pass
+
+    @staticmethod
+    def CreateKeynoteLegend(document):
+        """
   CreateKeynoteLegend(document: Document) -> ViewSchedule
 
   
@@ -57,10 +60,11 @@ class ViewSchedule(TableView,IDisposable):
 
    Returns: The newly created schedule.
   """
-  pass
- @staticmethod
- def CreateKeySchedule(document,categoryId):
-  """
+        pass
+
+    @staticmethod
+    def CreateKeySchedule(document, categoryId):
+        """
   CreateKeySchedule(document: Document,categoryId: ElementId) -> ViewSchedule
 
   
@@ -79,10 +83,11 @@ class ViewSchedule(TableView,IDisposable):
 
    Returns: The newly created schedule.
   """
-  pass
- @staticmethod
- def CreateMaterialTakeoff(document,categoryId):
-  """
+        pass
+
+    @staticmethod
+    def CreateMaterialTakeoff(document, categoryId):
+        """
   CreateMaterialTakeoff(document: Document,categoryId: ElementId) -> ViewSchedule
 
   
@@ -103,10 +108,11 @@ class ViewSchedule(TableView,IDisposable):
 
    Returns: The newly created schedule.
   """
-  pass
- @staticmethod
- def CreateNoteBlock(document,familyId):
-  """
+        pass
+
+    @staticmethod
+    def CreateNoteBlock(document, familyId):
+        """
   CreateNoteBlock(document: Document,familyId: ElementId) -> ViewSchedule
 
   
@@ -121,10 +127,11 @@ class ViewSchedule(TableView,IDisposable):
 
    Returns: The newly created schedule.
   """
-  pass
- @staticmethod
- def CreateRevisionSchedule(document):
-  """
+        pass
+
+    @staticmethod
+    def CreateRevisionSchedule(document):
+        """
   CreateRevisionSchedule(document: Document) -> ViewSchedule
 
   
@@ -137,10 +144,11 @@ class ViewSchedule(TableView,IDisposable):
 
    Returns: The newly created schedule.
   """
-  pass
- @staticmethod
- def CreateSchedule(document,categoryId,areaSchemeId=None):
-  """
+        pass
+
+    @staticmethod
+    def CreateSchedule(document, categoryId, areaSchemeId=None):
+        """
   CreateSchedule(document: Document,categoryId: ElementId) -> ViewSchedule
 
   
@@ -179,10 +187,11 @@ class ViewSchedule(TableView,IDisposable):
 
    Returns: The newly created schedule.
   """
-  pass
- @staticmethod
- def CreateSheetList(document):
-  """
+        pass
+
+    @staticmethod
+    def CreateSheetList(document):
+        """
   CreateSheetList(document: Document) -> ViewSchedule
 
   
@@ -195,10 +204,11 @@ class ViewSchedule(TableView,IDisposable):
 
    Returns: The newly created schedule.
   """
-  pass
- @staticmethod
- def CreateViewList(document):
-  """
+        pass
+
+    @staticmethod
+    def CreateViewList(document):
+        """
   CreateViewList(document: Document) -> ViewSchedule
 
   
@@ -211,12 +221,14 @@ class ViewSchedule(TableView,IDisposable):
 
    Returns: The newly created schedule.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def Export(self,folder,name,options):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def Export(self, folder, name, options):
+        """
   Export(self: ViewSchedule,folder: str,name: str,options: ViewScheduleExportOptions)
 
    Exports the schedule data to a text file.
@@ -229,13 +241,15 @@ class ViewSchedule(TableView,IDisposable):
 
    options: Options that relate to schedule export.
   """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: View,view: View) -> BoundingBoxXYZ """
-  pass
- @staticmethod
- def GetDefaultNameForKeynoteLegend(document):
-  """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: View,view: View) -> BoundingBoxXYZ """
+        pass
+
+    @staticmethod
+    def GetDefaultNameForKeynoteLegend(document):
+        """
   GetDefaultNameForKeynoteLegend(document: Document) -> str
 
   
@@ -248,10 +262,11 @@ class ViewSchedule(TableView,IDisposable):
 
    Returns: The default view name.
   """
-  pass
- @staticmethod
- def GetDefaultNameForKeySchedule(document,categoryId):
-  """
+        pass
+
+    @staticmethod
+    def GetDefaultNameForKeySchedule(document, categoryId):
+        """
   GetDefaultNameForKeySchedule(document: Document,categoryId: ElementId) -> str
 
   
@@ -270,10 +285,11 @@ class ViewSchedule(TableView,IDisposable):
 
    Returns: The default view name.
   """
-  pass
- @staticmethod
- def GetDefaultNameForMaterialTakeoff(document,categoryId):
-  """
+        pass
+
+    @staticmethod
+    def GetDefaultNameForMaterialTakeoff(document, categoryId):
+        """
   GetDefaultNameForMaterialTakeoff(document: Document,categoryId: ElementId) -> str
 
   
@@ -292,10 +308,11 @@ class ViewSchedule(TableView,IDisposable):
 
    Returns: The default view name.
   """
-  pass
- @staticmethod
- def GetDefaultNameForNoteBlock(document):
-  """
+        pass
+
+    @staticmethod
+    def GetDefaultNameForNoteBlock(document):
+        """
   GetDefaultNameForNoteBlock(document: Document) -> str
 
   
@@ -308,10 +325,11 @@ class ViewSchedule(TableView,IDisposable):
 
    Returns: The default view name.
   """
-  pass
- @staticmethod
- def GetDefaultNameForRevisionSchedule(document):
-  """
+        pass
+
+    @staticmethod
+    def GetDefaultNameForRevisionSchedule(document):
+        """
   GetDefaultNameForRevisionSchedule(document: Document) -> str
 
   
@@ -324,10 +342,11 @@ class ViewSchedule(TableView,IDisposable):
 
    Returns: The default view name.
   """
-  pass
- @staticmethod
- def GetDefaultNameForSchedule(document,categoryId,areaSchemeId=None):
-  """
+        pass
+
+    @staticmethod
+    def GetDefaultNameForSchedule(document, categoryId, areaSchemeId=None):
+        """
   GetDefaultNameForSchedule(document: Document,categoryId: ElementId) -> str
 
   
@@ -366,10 +385,11 @@ class ViewSchedule(TableView,IDisposable):
 
    Returns: The default view name.
   """
-  pass
- @staticmethod
- def GetDefaultNameForSheetList(document):
-  """
+        pass
+
+    @staticmethod
+    def GetDefaultNameForSheetList(document):
+        """
   GetDefaultNameForSheetList(document: Document) -> str
 
   
@@ -382,10 +402,11 @@ class ViewSchedule(TableView,IDisposable):
 
    Returns: The default view name.
   """
-  pass
- @staticmethod
- def GetDefaultNameForViewList(document):
-  """
+        pass
+
+    @staticmethod
+    def GetDefaultNameForViewList(document):
+        """
   GetDefaultNameForViewList(document: Document) -> str
 
   
@@ -398,10 +419,11 @@ class ViewSchedule(TableView,IDisposable):
 
    Returns: The default view name.
   """
-  pass
- @staticmethod
- def GetDefaultParameterNameForKeySchedule(document,categoryId):
-  """
+        pass
+
+    @staticmethod
+    def GetDefaultParameterNameForKeySchedule(document, categoryId):
+        """
   GetDefaultParameterNameForKeySchedule(document: Document,categoryId: ElementId) -> str
 
   
@@ -420,9 +442,10 @@ class ViewSchedule(TableView,IDisposable):
 
    Returns: The default parameter name.
   """
-  pass
- def GetTableData(self):
-  """
+        pass
+
+    def GetTableData(self):
+        """
   GetTableData(self: ViewSchedule) -> TableData
 
   
@@ -431,10 +454,11 @@ class ViewSchedule(TableView,IDisposable):
 
    Returns: The schedule data object.
   """
-  pass
- @staticmethod
- def GetValidCategoriesForKeySchedule():
-  """
+        pass
+
+    @staticmethod
+    def GetValidCategoriesForKeySchedule():
+        """
   GetValidCategoriesForKeySchedule() -> ICollection[ElementId]
 
   
@@ -443,10 +467,11 @@ class ViewSchedule(TableView,IDisposable):
 
    Returns: The IDs of all valid categories.
   """
-  pass
- @staticmethod
- def GetValidCategoriesForMaterialTakeoff():
-  """
+        pass
+
+    @staticmethod
+    def GetValidCategoriesForMaterialTakeoff():
+        """
   GetValidCategoriesForMaterialTakeoff() -> ICollection[ElementId]
 
   
@@ -455,10 +480,11 @@ class ViewSchedule(TableView,IDisposable):
 
    Returns: The IDs of all valid categories.
   """
-  pass
- @staticmethod
- def GetValidCategoriesForSchedule():
-  """
+        pass
+
+    @staticmethod
+    def GetValidCategoriesForSchedule():
+        """
   GetValidCategoriesForSchedule() -> ICollection[ElementId]
 
   
@@ -467,10 +493,11 @@ class ViewSchedule(TableView,IDisposable):
 
    Returns: The IDs of all valid categories.
   """
-  pass
- @staticmethod
- def GetValidFamiliesForNoteBlock(document):
-  """
+        pass
+
+    @staticmethod
+    def GetValidFamiliesForNoteBlock(document):
+        """
   GetValidFamiliesForNoteBlock(document: Document) -> ICollection[ElementId]
 
   
@@ -483,9 +510,10 @@ class ViewSchedule(TableView,IDisposable):
 
    Returns: The IDs of all valid families.
   """
-  pass
- def GroupHeaders(self,top,left,bottom,right,caption=None):
-  """
+        pass
+
+    def GroupHeaders(self, top, left, bottom, right, caption=None):
+        """
   GroupHeaders(self: ViewSchedule,top: int,left: int,bottom: int,right: int)
 
    Groups schedule header cells.
@@ -516,9 +544,10 @@ class ViewSchedule(TableView,IDisposable):
 
    caption: The header caption.
   """
-  pass
- def HasImageField(self):
-  """
+        pass
+
+    def HasImageField(self):
+        """
   HasImageField(self: ViewSchedule) -> bool
 
   
@@ -533,9 +562,10 @@ class ViewSchedule(TableView,IDisposable):
 
     false otherwise.
   """
-  pass
- def IsDataOutOfDate(self):
-  """
+        pass
+
+    def IsDataOutOfDate(self):
+        """
   IsDataOutOfDate(self: ViewSchedule) -> bool
 
   
@@ -544,10 +574,11 @@ class ViewSchedule(TableView,IDisposable):
 
    Returns: True if the schedule data is out of date,false otherwise.
   """
-  pass
- @staticmethod
- def IsValidCategoryForKeySchedule(categoryId):
-  """
+        pass
+
+    @staticmethod
+    def IsValidCategoryForKeySchedule(categoryId):
+        """
   IsValidCategoryForKeySchedule(categoryId: ElementId) -> bool
 
   
@@ -562,10 +593,11 @@ class ViewSchedule(TableView,IDisposable):
 
      false otherwise.
   """
-  pass
- @staticmethod
- def IsValidCategoryForMaterialTakeoff(categoryId):
-  """
+        pass
+
+    @staticmethod
+    def IsValidCategoryForMaterialTakeoff(categoryId):
+        """
   IsValidCategoryForMaterialTakeoff(categoryId: ElementId) -> bool
 
   
@@ -580,10 +612,11 @@ class ViewSchedule(TableView,IDisposable):
 
      false otherwise.
   """
-  pass
- @staticmethod
- def IsValidCategoryForSchedule(categoryId):
-  """
+        pass
+
+    @staticmethod
+    def IsValidCategoryForSchedule(categoryId):
+        """
   IsValidCategoryForSchedule(categoryId: ElementId) -> bool
 
   
@@ -598,10 +631,11 @@ class ViewSchedule(TableView,IDisposable):
 
      false otherwise.
   """
-  pass
- @staticmethod
- def IsValidFamilyForNoteBlock(document,familyId):
-  """
+        pass
+
+    @staticmethod
+    def IsValidFamilyForNoteBlock(document, familyId):
+        """
   IsValidFamilyForNoteBlock(document: Document,familyId: ElementId) -> bool
 
   
@@ -618,9 +652,10 @@ class ViewSchedule(TableView,IDisposable):
 
      false otherwise.
   """
-  pass
- def IsValidTextTypeId(self,textTypeId):
-  """
+        pass
+
+    def IsValidTextTypeId(self, textTypeId):
+        """
   IsValidTextTypeId(self: ViewSchedule,textTypeId: ElementId) -> bool
 
   
@@ -635,9 +670,10 @@ class ViewSchedule(TableView,IDisposable):
 
    textTypeId: The element id of the text type.
   """
-  pass
- def RefreshData(self):
-  """
+        pass
+
+    def RefreshData(self):
+        """
   RefreshData(self: ViewSchedule) -> bool
 
   
@@ -646,22 +682,26 @@ class ViewSchedule(TableView,IDisposable):
 
    Returns: True if the data is up to date after the refresh.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def RestoreImageSize(self):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def RestoreImageSize(self):
+        """
   RestoreImageSize(self: ViewSchedule)
 
    Restores all images to their original sizes.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def UngroupHeaders(self,top,left,bottom,right):
-  """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def UngroupHeaders(self, top, left, bottom, right):
+        """
   UngroupHeaders(self: ViewSchedule,top: int,left: int,bottom: int,right: int)
 
    Ungroups selected headers of schedule.
@@ -676,18 +716,24 @@ class ViewSchedule(TableView,IDisposable):
 
    right: The index of the right column of the selected headers.
   """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- BodyTextTypeId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Defines the default text style used for the data section of the schedule.
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    BodyTextTypeId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Defines the default text style used for the data section of the schedule.
 
 
 
@@ -699,8 +745,10 @@ Set: BodyTextTypeId(self: ViewSchedule)=value
 
 """
 
- Definition=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The primary ScheduleDefinition.
+    Definition = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The primary ScheduleDefinition.
 
 
 
@@ -710,8 +758,10 @@ Get: Definition(self: ViewSchedule) -> ScheduleDefinition
 
 """
 
- EmbeddedDefinition=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The embedded ScheduleDefinition.
+    EmbeddedDefinition = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The embedded ScheduleDefinition.
 
 
 
@@ -721,8 +771,10 @@ Get: EmbeddedDefinition(self: ViewSchedule) -> ScheduleDefinition
 
 """
 
- HeaderTextTypeId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Defines the default text style used in the column headers in the body section of the schedule.
+    HeaderTextTypeId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Defines the default text style used in the column headers in the body section of the schedule.
 
 
 
@@ -734,8 +786,10 @@ Set: HeaderTextTypeId(self: ViewSchedule)=value
 
 """
 
- ImageRowHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Defines the image row height in the schedule.
+    ImageRowHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Defines the image row height in the schedule.
 
 
 
@@ -747,8 +801,10 @@ Set: ImageRowHeight(self: ViewSchedule)=value
 
 """
 
- IsInternalKeynoteSchedule=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies if this ViewSchedule is an internal schedule used when keynotes are filtered based on the elements that are shown on a sheet.
+    IsInternalKeynoteSchedule = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies if this ViewSchedule is an internal schedule used when keynotes are filtered based on the elements that are shown on a sheet.
 
 
 
@@ -758,8 +814,10 @@ Get: IsInternalKeynoteSchedule(self: ViewSchedule) -> bool
 
 """
 
- IsTitleblockRevisionSchedule=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Identifies if this ViewSchedule is an internal schedule used to display revision schedules as part of a titleblock.
+    IsTitleblockRevisionSchedule = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Identifies if this ViewSchedule is an internal schedule used to display revision schedules as part of a titleblock.
 
 
 
@@ -769,8 +827,10 @@ Get: IsTitleblockRevisionSchedule(self: ViewSchedule) -> bool
 
 """
 
- KeyScheduleParameterName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """In a key schedule,the name of the parameter for choosing one of the keys.
+    KeyScheduleParameterName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """In a key schedule,the name of the parameter for choosing one of the keys.
 
 
 
@@ -782,8 +842,10 @@ Set: KeyScheduleParameterName(self: ViewSchedule)=value
 
 """
 
- TitleTextTypeId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Defines the default text style used in the header section of the schedule.
+    TitleTextTypeId = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Defines the default text style used in the header section of the schedule.
 
 
 
@@ -794,5 +856,3 @@ Get: TitleTextTypeId(self: ViewSchedule) -> ElementId
 Set: TitleTextTypeId(self: ViewSchedule)=value
 
 """
-
-

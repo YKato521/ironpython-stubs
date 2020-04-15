@@ -1,13 +1,16 @@
-class KeyBasedTreeEntryTable(Element,IDisposable):
- """ KeyBasedTreeEntryTable represents the collection of key-based tree entries for a document. """
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetKeyBasedTreeEntries(self):
-  """
+class KeyBasedTreeEntryTable(Element, IDisposable):
+    """ KeyBasedTreeEntryTable represents the collection of key-based tree entries for a document. """
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetKeyBasedTreeEntries(self):
+        """
   GetKeyBasedTreeEntries(self: KeyBasedTreeEntryTable) -> KeyBasedTreeEntries
 
   
@@ -16,9 +19,10 @@ class KeyBasedTreeEntryTable(Element,IDisposable):
 
    Returns: The KeyBasedTreeEntries for this table.
   """
-  pass
- def LoadFrom(self,desiredResourceReference,loadResults):
-  """
+        pass
+
+    def LoadFrom(self, desiredResourceReference, loadResults):
+        """
   LoadFrom(self: KeyBasedTreeEntryTable,desiredResourceReference: ExternalResourceReference,loadResults: KeyBasedTreeEntriesLoadResults) -> ExternalResourceLoadStatus
 
   
@@ -47,12 +51,14 @@ class KeyBasedTreeEntryTable(Element,IDisposable):
 
    Returns: Returns whether the operation succeeded or failed.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def Reload(self,loadResults):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def Reload(self, loadResults):
+        """
   Reload(self: KeyBasedTreeEntryTable,loadResults: KeyBasedTreeEntriesLoadResults) -> ExternalResourceLoadStatus
 
   
@@ -81,9 +87,10 @@ class KeyBasedTreeEntryTable(Element,IDisposable):
 
    Returns: Returns the outcome of the reload operation.
   """
-  pass
- def ServerSupports(self,extRef):
-  """
+        pass
+
+    def ServerSupports(self, extRef):
+        """
   ServerSupports(self: KeyBasedTreeEntryTable,extRef: ExternalResourceReference) -> bool
 
   
@@ -108,16 +115,20 @@ class KeyBasedTreeEntryTable(Element,IDisposable):
 
     otherwise.
   """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

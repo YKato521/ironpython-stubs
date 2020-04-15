@@ -1,7 +1,8 @@
 class IStructuralSectionsServer(IExternalServer):
- """ Interface for the section type parameter server to implement. """
- def StructuralSectionsUpdate(self,data):
-  """
+    """ Interface for the section type parameter server to implement. """
+
+    def StructuralSectionsUpdate(self, data):
+        """
   StructuralSectionsUpdate(self: IStructuralSectionsServer,data: StructuralSectionsServiceData) -> bool
 
   
@@ -18,7 +19,8 @@ class IStructuralSectionsServer(IExternalServer):
 
    Returns: Indicates whether the section type parameter server is executed successfully.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass

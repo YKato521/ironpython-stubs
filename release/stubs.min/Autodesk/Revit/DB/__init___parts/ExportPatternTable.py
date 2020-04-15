@@ -1,5 +1,10 @@
-class ExportPatternTable(object,IEnumerable[KeyValuePair[ExportPatternKey,ExportPatternInfo]],IEnumerable,IDisposable):
- """
+class ExportPatternTable(
+    object,
+    IEnumerable[KeyValuePair[ExportPatternKey, ExportPatternInfo]],
+    IEnumerable,
+    IDisposable,
+):
+    """
  A table supporting a mapping of FillPatterns in Revit to pattern names that will be set
 
     in the target export format.
@@ -8,8 +13,9 @@ class ExportPatternTable(object,IEnumerable[KeyValuePair[ExportPatternKey,Export
 
  ExportPatternTable()
  """
- def Add(self,exportPatternKey,exportPatternInfo):
-  """
+
+    def Add(self, exportPatternKey, exportPatternInfo):
+        """
   Add(self: ExportPatternTable,exportPatternKey: ExportPatternKey,exportPatternInfo: ExportPatternInfo)
 
    Inserts a (key,info) pair into Export pattern table.
@@ -20,16 +26,18 @@ class ExportPatternTable(object,IEnumerable[KeyValuePair[ExportPatternKey,Export
 
    exportPatternInfo: The export pattern info to be added.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: ExportPatternTable)
 
    Removes all contents stored in the table.
   """
-  pass
- def ContainsKey(self,exportpatternKey):
-  """
+        pass
+
+    def ContainsKey(self, exportpatternKey):
+        """
   ContainsKey(self: ExportPatternTable,exportpatternKey: ExportPatternKey) -> bool
 
   
@@ -42,12 +50,14 @@ class ExportPatternTable(object,IEnumerable[KeyValuePair[ExportPatternKey,Export
 
    Returns: True if the pattern key exists in the table.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: ExportPatternTable) """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: ExportPatternTable) """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: ExportPatternTable) -> IEnumerator[KeyValuePair[ExportPatternKey,ExportPatternInfo]]
 
   
@@ -56,9 +66,10 @@ class ExportPatternTable(object,IEnumerable[KeyValuePair[ExportPatternKey,Export
 
    Returns: An IEnumerator object that can be used to iterate through the collection.
   """
-  pass
- def GetExportPatternInfo(self,exportPatternKey):
-  """
+        pass
+
+    def GetExportPatternInfo(self, exportPatternKey):
+        """
   GetExportPatternInfo(self: ExportPatternTable,exportPatternKey: ExportPatternKey) -> ExportPatternInfo
 
   
@@ -71,9 +82,10 @@ class ExportPatternTable(object,IEnumerable[KeyValuePair[ExportPatternKey,Export
 
    Returns: Return the patternInfo for this key.
   """
-  pass
- def GetKeys(self):
-  """
+        pass
+
+    def GetKeys(self):
+        """
   GetKeys(self: ExportPatternTable) -> IList[ExportPatternKey]
 
   
@@ -82,9 +94,10 @@ class ExportPatternTable(object,IEnumerable[KeyValuePair[ExportPatternKey,Export
 
    Returns: Return the key array.
   """
-  pass
- def GetPatternTableIterator(self):
-  """
+        pass
+
+    def GetPatternTableIterator(self):
+        """
   GetPatternTableIterator(self: ExportPatternTable) -> ExportPatternTableIterator
 
   
@@ -95,9 +108,10 @@ class ExportPatternTable(object,IEnumerable[KeyValuePair[ExportPatternKey,Export
 
     pairs in the collection.
   """
-  pass
- def GetValues(self):
-  """
+        pass
+
+    def GetValues(self):
+        """
   GetValues(self: ExportPatternTable) -> IList[ExportPatternInfo]
 
   
@@ -106,12 +120,14 @@ class ExportPatternTable(object,IEnumerable[KeyValuePair[ExportPatternKey,Export
 
    Returns: Return the info array.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: ExportPatternTable,disposing: bool) """
-  pass
- def Remove(self,exportPatternKey):
-  """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: ExportPatternTable,disposing: bool) """
+        pass
+
+    def Remove(self, exportPatternKey):
+        """
   Remove(self: ExportPatternTable,exportPatternKey: ExportPatternKey)
 
    Removes the pair (key,info) by pattern key.
@@ -120,36 +136,46 @@ class ExportPatternTable(object,IEnumerable[KeyValuePair[ExportPatternKey,Export
 
    exportPatternKey: The export pattern key.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__[KeyValuePair[ExportPatternKey,ExportPatternInfo]](enumerable: IEnumerable[KeyValuePair[ExportPatternKey,ExportPatternInfo]],value: KeyValuePair[ExportPatternKey,ExportPatternInfo]) -> bool """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Count of the items contained in the collection.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__[KeyValuePair[ExportPatternKey,ExportPatternInfo]](enumerable: IEnumerable[KeyValuePair[ExportPatternKey,ExportPatternInfo]],value: KeyValuePair[ExportPatternKey,ExportPatternInfo]) -> bool """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Count of the items contained in the collection.
 
 
 
@@ -159,8 +185,10 @@ Get: Count(self: ExportPatternTable) -> int
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -169,5 +197,3 @@ Get: IsValidObject(self: ExportPatternTable) -> bool
 
 
 """
-
-

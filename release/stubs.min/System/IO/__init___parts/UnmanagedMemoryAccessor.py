@@ -1,5 +1,5 @@
-class UnmanagedMemoryAccessor(object,IDisposable):
- """
+class UnmanagedMemoryAccessor(object, IDisposable):
+    """
  Provides random access to unmanaged blocks of memory from managed code.
 
  
@@ -8,15 +8,17 @@ class UnmanagedMemoryAccessor(object,IDisposable):
 
  UnmanagedMemoryAccessor(buffer: SafeBuffer,offset: Int64,capacity: Int64,access: FileAccess)
  """
- def Dispose(self):
-  """
+
+    def Dispose(self):
+        """
   Dispose(self: UnmanagedMemoryAccessor)
 
    Releases all resources used by the System.IO.UnmanagedMemoryAccessor.
   """
-  pass
- def Initialize(self,*args):
-  """
+        pass
+
+    def Initialize(self, *args):
+        """
   Initialize(self: UnmanagedMemoryAccessor,buffer: SafeBuffer,offset: Int64,capacity: Int64,access: FileAccess)
 
    Sets the initial values for the accessor.
@@ -33,15 +35,18 @@ class UnmanagedMemoryAccessor(object,IDisposable):
 
     System.IO.MemoryMappedFiles.MemoryMappedFileAccess.ReadWrite.
   """
-  pass
- def Read(self,position,structure):
-  """ Read[T](self: UnmanagedMemoryAccessor,position: Int64) -> T """
-  pass
- def ReadArray(self,position,array,offset,count):
-  """ ReadArray[T](self: UnmanagedMemoryAccessor,position: Int64,array: Array[T],offset: int,count: int) -> int """
-  pass
- def ReadBoolean(self,position):
-  """
+        pass
+
+    def Read(self, position, structure):
+        """ Read[T](self: UnmanagedMemoryAccessor,position: Int64) -> T """
+        pass
+
+    def ReadArray(self, position, array, offset, count):
+        """ ReadArray[T](self: UnmanagedMemoryAccessor,position: Int64,array: Array[T],offset: int,count: int) -> int """
+        pass
+
+    def ReadBoolean(self, position):
+        """
   ReadBoolean(self: UnmanagedMemoryAccessor,position: Int64) -> bool
 
   
@@ -54,9 +59,10 @@ class UnmanagedMemoryAccessor(object,IDisposable):
 
    Returns: true or false.
   """
-  pass
- def ReadByte(self,position):
-  """
+        pass
+
+    def ReadByte(self, position):
+        """
   ReadByte(self: UnmanagedMemoryAccessor,position: Int64) -> Byte
 
   
@@ -69,9 +75,10 @@ class UnmanagedMemoryAccessor(object,IDisposable):
 
    Returns: The value that was read.
   """
-  pass
- def ReadChar(self,position):
-  """
+        pass
+
+    def ReadChar(self, position):
+        """
   ReadChar(self: UnmanagedMemoryAccessor,position: Int64) -> Char
 
   
@@ -84,9 +91,10 @@ class UnmanagedMemoryAccessor(object,IDisposable):
 
    Returns: The value that was read.
   """
-  pass
- def ReadDecimal(self,position):
-  """
+        pass
+
+    def ReadDecimal(self, position):
+        """
   ReadDecimal(self: UnmanagedMemoryAccessor,position: Int64) -> Decimal
 
   
@@ -99,9 +107,10 @@ class UnmanagedMemoryAccessor(object,IDisposable):
 
    Returns: The value that was read.
   """
-  pass
- def ReadDouble(self,position):
-  """
+        pass
+
+    def ReadDouble(self, position):
+        """
   ReadDouble(self: UnmanagedMemoryAccessor,position: Int64) -> float
 
   
@@ -114,9 +123,10 @@ class UnmanagedMemoryAccessor(object,IDisposable):
 
    Returns: The value that was read.
   """
-  pass
- def ReadInt16(self,position):
-  """
+        pass
+
+    def ReadInt16(self, position):
+        """
   ReadInt16(self: UnmanagedMemoryAccessor,position: Int64) -> Int16
 
   
@@ -129,9 +139,10 @@ class UnmanagedMemoryAccessor(object,IDisposable):
 
    Returns: The value that was read.
   """
-  pass
- def ReadInt32(self,position):
-  """
+        pass
+
+    def ReadInt32(self, position):
+        """
   ReadInt32(self: UnmanagedMemoryAccessor,position: Int64) -> int
 
   
@@ -144,9 +155,10 @@ class UnmanagedMemoryAccessor(object,IDisposable):
 
    Returns: The value that was read.
   """
-  pass
- def ReadInt64(self,position):
-  """
+        pass
+
+    def ReadInt64(self, position):
+        """
   ReadInt64(self: UnmanagedMemoryAccessor,position: Int64) -> Int64
 
   
@@ -159,9 +171,10 @@ class UnmanagedMemoryAccessor(object,IDisposable):
 
    Returns: The value that was read.
   """
-  pass
- def ReadSByte(self,position):
-  """
+        pass
+
+    def ReadSByte(self, position):
+        """
   ReadSByte(self: UnmanagedMemoryAccessor,position: Int64) -> SByte
 
   
@@ -174,9 +187,10 @@ class UnmanagedMemoryAccessor(object,IDisposable):
 
    Returns: The value that was read.
   """
-  pass
- def ReadSingle(self,position):
-  """
+        pass
+
+    def ReadSingle(self, position):
+        """
   ReadSingle(self: UnmanagedMemoryAccessor,position: Int64) -> Single
 
   
@@ -189,9 +203,10 @@ class UnmanagedMemoryAccessor(object,IDisposable):
 
    Returns: The value that was read.
   """
-  pass
- def ReadUInt16(self,position):
-  """
+        pass
+
+    def ReadUInt16(self, position):
+        """
   ReadUInt16(self: UnmanagedMemoryAccessor,position: Int64) -> UInt16
 
   
@@ -204,9 +219,10 @@ class UnmanagedMemoryAccessor(object,IDisposable):
 
    Returns: The value that was read.
   """
-  pass
- def ReadUInt32(self,position):
-  """
+        pass
+
+    def ReadUInt32(self, position):
+        """
   ReadUInt32(self: UnmanagedMemoryAccessor,position: Int64) -> UInt32
 
   
@@ -219,9 +235,10 @@ class UnmanagedMemoryAccessor(object,IDisposable):
 
    Returns: The value that was read.
   """
-  pass
- def ReadUInt64(self,position):
-  """
+        pass
+
+    def ReadUInt64(self, position):
+        """
   ReadUInt64(self: UnmanagedMemoryAccessor,position: Int64) -> UInt64
 
   
@@ -234,9 +251,10 @@ class UnmanagedMemoryAccessor(object,IDisposable):
 
    Returns: The value that was read.
   """
-  pass
- def Write(self,position,*__args):
-  """
+        pass
+
+    def Write(self, position, *__args):
+        """
   Write(self: UnmanagedMemoryAccessor,position: Int64,value: SByte)
 
    Writes an 8-bit integer into the accessor.
@@ -369,44 +387,51 @@ class UnmanagedMemoryAccessor(object,IDisposable):
 
    value: The value to write.
   """
-  pass
- def WriteArray(self,position,array,offset,count):
-  """ WriteArray[T](self: UnmanagedMemoryAccessor,position: Int64,array: Array[T],offset: int,count: int) """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def WriteArray(self, position, array, offset, count):
+        """ WriteArray[T](self: UnmanagedMemoryAccessor,position: Int64,array: Array[T],offset: int,count: int) """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,buffer,offset,capacity,access=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, buffer, offset, capacity, access=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,buffer: SafeBuffer,offset: Int64,capacity: Int64)
 
   __new__(cls: type,buffer: SafeBuffer,offset: Int64,capacity: Int64,access: FileAccess)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- CanRead=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determines whether the accessor is readable.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    CanRead = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Determines whether the accessor is readable.
 
 
 
@@ -416,8 +441,8 @@ Get: CanRead(self: UnmanagedMemoryAccessor) -> bool
 
 """
 
- CanWrite=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determines whether the accessory is writable.
+    CanWrite = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Determines whether the accessory is writable.
 
 
 
@@ -427,8 +452,8 @@ Get: CanWrite(self: UnmanagedMemoryAccessor) -> bool
 
 """
 
- Capacity=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the capacity of the accessor.
+    Capacity = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the capacity of the accessor.
 
 
 
@@ -438,11 +463,9 @@ Get: Capacity(self: UnmanagedMemoryAccessor) -> Int64
 
 """
 
- IsOpen=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Determines whether the accessor is currently open by a process.
+    IsOpen = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Determines whether the accessor is currently open by a process.
 
 
 
 """
-
-

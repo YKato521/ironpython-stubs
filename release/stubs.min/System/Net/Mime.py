@@ -8,8 +8,9 @@
 # no functions
 # classes
 
+
 class ContentDisposition(object):
- """
+    """
  Represents a MIME protocol Content-Disposition header.
 
  
@@ -18,8 +19,9 @@ class ContentDisposition(object):
 
  ContentDisposition(disposition: str)
  """
- def Equals(self,rparam):
-  """
+
+    def Equals(self, rparam):
+        """
   Equals(self: ContentDisposition,rparam: object) -> bool
 
   
@@ -38,9 +40,10 @@ class ContentDisposition(object):
 
    Returns: true if the content-disposition headers are the same; otherwise false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: ContentDisposition) -> int
 
   
@@ -49,9 +52,10 @@ class ContentDisposition(object):
 
    Returns: An integer hash value.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: ContentDisposition) -> str
 
   
@@ -60,22 +64,28 @@ class ContentDisposition(object):
 
    Returns: A System.String that contains the property values for this instance.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- @staticmethod
- def __new__(self,disposition=None):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    @staticmethod
+    def __new__(self, disposition=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,disposition: str)
   """
-  pass
- def __ne__(self,*args):
-  pass
- CreationDate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the creation date for a file attachment.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    CreationDate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the creation date for a file attachment.
 
 
 
@@ -87,8 +97,10 @@ Set: CreationDate(self: ContentDisposition)=value
 
 """
 
- DispositionType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the disposition type for an e-mail attachment.
+    DispositionType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the disposition type for an e-mail attachment.
 
 
 
@@ -100,8 +112,8 @@ Set: DispositionType(self: ContentDisposition)=value
 
 """
 
- FileName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the suggested file name for an e-mail attachment.
+    FileName = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the suggested file name for an e-mail attachment.
 
 
 
@@ -113,8 +125,8 @@ Set: FileName(self: ContentDisposition)=value
 
 """
 
- Inline=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a System.Boolean value that determines the disposition type (Inline or Attachment) for an e-mail attachment.
+    Inline = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a System.Boolean value that determines the disposition type (Inline or Attachment) for an e-mail attachment.
 
 
 
@@ -126,8 +138,10 @@ Set: Inline(self: ContentDisposition)=value
 
 """
 
- ModificationDate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the modification date for a file attachment.
+    ModificationDate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the modification date for a file attachment.
 
 
 
@@ -139,8 +153,10 @@ Set: ModificationDate(self: ContentDisposition)=value
 
 """
 
- Parameters=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the parameters included in the Content-Disposition header represented by this instance.
+    Parameters = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the parameters included in the Content-Disposition header represented by this instance.
 
 
 
@@ -150,8 +166,8 @@ Get: Parameters(self: ContentDisposition) -> StringDictionary
 
 """
 
- ReadDate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the read date for a file attachment.
+    ReadDate = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the read date for a file attachment.
 
 
 
@@ -163,8 +179,8 @@ Set: ReadDate(self: ContentDisposition)=value
 
 """
 
- Size=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the size of a file attachment.
+    Size = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the size of a file attachment.
 
 
 
@@ -177,9 +193,8 @@ Set: Size(self: ContentDisposition)=value
 """
 
 
-
 class ContentType(object):
- """
+    """
  Represents a MIME protocol Content-Type header.
 
  
@@ -188,8 +203,9 @@ class ContentType(object):
 
  ContentType(contentType: str)
  """
- def Equals(self,rparam):
-  """
+
+    def Equals(self, rparam):
+        """
   Equals(self: ContentType,rparam: object) -> bool
 
   
@@ -206,9 +222,10 @@ class ContentType(object):
 
    Returns: true if the content-type headers are the same; otherwise false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: ContentType) -> int
 
   
@@ -217,9 +234,10 @@ class ContentType(object):
 
    Returns: An integer hash value.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: ContentType) -> str
 
   
@@ -228,22 +246,26 @@ class ContentType(object):
 
    Returns: A System.String that contains the current settings for this System.Net.Mime.ContentType.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- @staticmethod
- def __new__(self,contentType=None):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    @staticmethod
+    def __new__(self, contentType=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,contentType: str)
   """
-  pass
- def __ne__(self,*args):
-  pass
- Boundary=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the value of the boundary parameter included in the Content-Type header represented by this instance.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    Boundary = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the value of the boundary parameter included in the Content-Type header represented by this instance.
 
 
 
@@ -255,8 +277,8 @@ Set: Boundary(self: ContentType)=value
 
 """
 
- CharSet=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the value of the charset parameter included in the Content-Type header represented by this instance.
+    CharSet = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the value of the charset parameter included in the Content-Type header represented by this instance.
 
 
 
@@ -268,8 +290,8 @@ Set: CharSet(self: ContentType)=value
 
 """
 
- MediaType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the media type value included in the Content-Type header represented by this instance.
+    MediaType = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the media type value included in the Content-Type header represented by this instance.
 
 
 
@@ -281,8 +303,8 @@ Set: MediaType(self: ContentType)=value
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the value of the name parameter included in the Content-Type header represented by this instance.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the value of the name parameter included in the Content-Type header represented by this instance.
 
 
 
@@ -294,8 +316,10 @@ Set: Name(self: ContentType)=value
 
 """
 
- Parameters=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the dictionary that contains the parameters included in the Content-Type header represented by this instance.
+    Parameters = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the dictionary that contains the parameters included in the Content-Type header represented by this instance.
 
 
 
@@ -306,65 +330,75 @@ Get: Parameters(self: ContentType) -> StringDictionary
 """
 
 
-
 class DispositionTypeNames(object):
- """ Supplies the strings used to specify the disposition type for an e-mail attachment. """
- Attachment='attachment'
- Inline='inline'
- __all__=[
-  'Attachment',
-  'Inline',
- ]
+    """ Supplies the strings used to specify the disposition type for an e-mail attachment. """
+
+    Attachment = "attachment"
+    Inline = "inline"
+    __all__ = [
+        "Attachment",
+        "Inline",
+    ]
 
 
 class MediaTypeNames(object):
- """ Specifies the media type information for an e-mail message attachment. """
- Application=None
- Image=None
- Text=None
- __all__=[
-  'Application',
-  'Image',
-  'Text',
- ]
+    """ Specifies the media type information for an e-mail message attachment. """
+
+    Application = None
+    Image = None
+    Text = None
+    __all__ = [
+        "Application",
+        "Image",
+        "Text",
+    ]
 
 
-class TransferEncoding(Enum,IComparable,IFormattable,IConvertible):
- """
+class TransferEncoding(Enum, IComparable, IFormattable, IConvertible):
+    """
  Specifies the Content-Transfer-Encoding header information for an e-mail message attachment.
 
  
 
  enum TransferEncoding,values: Base64 (1),EightBit (3),QuotedPrintable (0),SevenBit (2),Unknown (-1)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Base64=None
- EightBit=None
- QuotedPrintable=None
- SevenBit=None
- Unknown=None
- value__=None
 
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
 
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Base64 = None
+    EightBit = None
+    QuotedPrintable = None
+    SevenBit = None
+    Unknown = None
+    value__ = None

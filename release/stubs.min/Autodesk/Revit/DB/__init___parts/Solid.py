@@ -1,7 +1,8 @@
-class Solid(GeometryObject,IDisposable):
- """ A 3d solid. """
- def ComputeCentroid(self):
-  """
+class Solid(GeometryObject, IDisposable):
+    """ A 3d solid. """
+
+    def ComputeCentroid(self):
+        """
   ComputeCentroid(self: Solid) -> XYZ
 
   
@@ -10,21 +11,24 @@ class Solid(GeometryObject,IDisposable):
 
    Returns: The XYZ point of the Centroid of this solid.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: APIObject,A_0: bool) """
-  pass
- def GetBoundingBox(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: APIObject,A_0: bool) """
+        pass
+
+    def GetBoundingBox(self):
+        """
   GetBoundingBox(self: Solid) -> BoundingBoxXYZ
 
   
 
    Retrieves a box that circumscribes the solid geometry.
   """
-  pass
- def IntersectWithCurve(self,curve,options):
-  """
+        pass
+
+    def IntersectWithCurve(self, curve, options):
+        """
   IntersectWithCurve(self: Solid,curve: Curve,options: SolidCurveIntersectionOptions) -> SolidCurveIntersection
 
   
@@ -39,24 +43,30 @@ class Solid(GeometryObject,IDisposable):
 
    Returns: The intersection results.
   """
-  pass
- def ReleaseManagedResources(self,*args):
-  """ ReleaseManagedResources(self: APIObject) """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: GeometryObject) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Edges=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The edges that belong to the solid.
+        pass
+
+    def ReleaseManagedResources(self, *args):
+        """ ReleaseManagedResources(self: APIObject) """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: GeometryObject) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Edges = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The edges that belong to the solid.
 
 
 
@@ -66,8 +76,8 @@ Get: Edges(self: Solid) -> EdgeArray
 
 """
 
- Faces=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The faces that belong to the solid.
+    Faces = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The faces that belong to the solid.
 
 
 
@@ -77,8 +87,10 @@ Get: Faces(self: Solid) -> FaceArray
 
 """
 
- SurfaceArea=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the total surface area of this solid.
+    SurfaceArea = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the total surface area of this solid.
 
 
 
@@ -88,8 +100,8 @@ Get: SurfaceArea(self: Solid) -> float
 
 """
 
- Volume=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the signed volume of this solid.
+    Volume = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns the signed volume of this solid.
 
 
 
@@ -98,5 +110,3 @@ Get: Volume(self: Solid) -> float
 
 
 """
-
-

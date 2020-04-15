@@ -1,5 +1,5 @@
-class Line(object,IEquatable[Line],IEpsilonComparable[Line]):
- """
+class Line(object, IEquatable[Line], IEpsilonComparable[Line]):
+    """
  Represents the value of start and end points in a single line segment.
 
  
@@ -12,8 +12,9 @@ class Line(object,IEquatable[Line],IEpsilonComparable[Line]):
 
  Line(x0: float,y0: float,z0: float,x1: float,y1: float,z1: float)
  """
- def ClosestParameter(self,testPoint):
-  """
+
+    def ClosestParameter(self, testPoint):
+        """
   ClosestParameter(self: Line,testPoint: Point3d) -> float
 
   
@@ -26,9 +27,10 @@ class Line(object,IEquatable[Line],IEpsilonComparable[Line]):
 
    Returns: The parameter on the line that is closest to testPoint.
   """
-  pass
- def ClosestPoint(self,testPoint,limitToFiniteSegment):
-  """
+        pass
+
+    def ClosestPoint(self, testPoint, limitToFiniteSegment):
+        """
   ClosestPoint(self: Line,testPoint: Point3d,limitToFiniteSegment: bool) -> Point3d
 
   
@@ -43,9 +45,10 @@ class Line(object,IEquatable[Line],IEpsilonComparable[Line]):
 
    Returns: The point on the (in)finite line that is closest to testPoint.
   """
-  pass
- def DistanceTo(self,testPoint,limitToFiniteSegment):
-  """
+        pass
+
+    def DistanceTo(self, testPoint, limitToFiniteSegment):
+        """
   DistanceTo(self: Line,testPoint: Point3d,limitToFiniteSegment: bool) -> float
 
   
@@ -60,18 +63,20 @@ class Line(object,IEquatable[Line],IEpsilonComparable[Line]):
 
    Returns: The shortest distance between this line segment and testPoint.
   """
-  pass
- def EpsilonEquals(self,other,epsilon):
-  """
+        pass
+
+    def EpsilonEquals(self, other, epsilon):
+        """
   EpsilonEquals(self: Line,other: Line,epsilon: float) -> bool
 
   
 
    Check that all values in other are within epsilon of the values in this
   """
-  pass
- def Equals(self,*__args):
-  """
+        pass
+
+    def Equals(self, *__args):
+        """
   Equals(self: Line,other: Line) -> bool
 
   
@@ -96,9 +101,10 @@ class Line(object,IEquatable[Line],IEpsilonComparable[Line]):
 
    Returns: true if obj is a Line and has the same coordinates as this; otherwise false.
   """
-  pass
- def Extend(self,startLength,endLength):
-  """
+        pass
+
+    def Extend(self, startLength, endLength):
+        """
   Extend(self: Line,startLength: float,endLength: float) -> bool
 
   
@@ -125,9 +131,10 @@ class Line(object,IEquatable[Line],IEpsilonComparable[Line]):
 
    Returns: true on success,false on failure.
   """
-  pass
- def ExtendThroughBox(self,box,additionalLength=None):
-  """
+        pass
+
+    def ExtendThroughBox(self, box, additionalLength=None):
+        """
   ExtendThroughBox(self: Line,box: Box) -> bool
 
   
@@ -206,16 +213,18 @@ class Line(object,IEquatable[Line],IEpsilonComparable[Line]):
 
    Returns: true on success,false on failure.
   """
-  pass
- def Flip(self):
-  """
+        pass
+
+    def Flip(self):
+        """
   Flip(self: Line)
 
    Flip the endpoints of the line segment.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: Line) -> int
 
   
@@ -224,9 +233,10 @@ class Line(object,IEquatable[Line],IEpsilonComparable[Line]):
 
    Returns: A number that is not unique to the value of this line.
   """
-  pass
- def MaximumDistanceTo(self,*__args):
-  """
+        pass
+
+    def MaximumDistanceTo(self, *__args):
+        """
   MaximumDistanceTo(self: Line,testLine: Line) -> float
 
   
@@ -259,9 +269,10 @@ class Line(object,IEquatable[Line],IEpsilonComparable[Line]):
 
    Returns: The maximum distance.
   """
-  pass
- def MinimumDistanceTo(self,*__args):
-  """
+        pass
+
+    def MinimumDistanceTo(self, *__args):
+        """
   MinimumDistanceTo(self: Line,testLine: Line) -> float
 
   
@@ -294,9 +305,10 @@ class Line(object,IEquatable[Line],IEpsilonComparable[Line]):
 
    Returns: The minimum distance.
   """
-  pass
- def PointAt(self,t):
-  """
+        pass
+
+    def PointAt(self, t):
+        """
   PointAt(self: Line,t: float) -> Point3d
 
   
@@ -309,9 +321,10 @@ class Line(object,IEquatable[Line],IEpsilonComparable[Line]):
 
    Returns: The point at the specified parameter.
   """
-  pass
- def ToNurbsCurve(self):
-  """
+        pass
+
+    def ToNurbsCurve(self):
+        """
   ToNurbsCurve(self: Line) -> NurbsCurve
 
   
@@ -326,9 +339,10 @@ class Line(object,IEquatable[Line],IEpsilonComparable[Line]):
 
    Returns: A nurbs curve representation of this line or null if no such representation could be made.
   """
-  pass
- def ToString(self):
-  """
+        pass
+
+    def ToString(self):
+        """
   ToString(self: Line) -> str
 
   
@@ -337,9 +351,10 @@ class Line(object,IEquatable[Line],IEpsilonComparable[Line]):
 
    Returns: A text string.
   """
-  pass
- def Transform(self,xform):
-  """
+        pass
+
+    def Transform(self, xform):
+        """
   Transform(self: Line,xform: Transform) -> bool
 
   
@@ -352,10 +367,13 @@ class Line(object,IEquatable[Line],IEpsilonComparable[Line]):
 
    Returns: true on success,false on failure.
   """
-  pass
- @staticmethod
- def TryCreateBetweenCurves(curve0,curve1,t0,t1,perpendicular0,perpendicular1,line):
-  """
+        pass
+
+    @staticmethod
+    def TryCreateBetweenCurves(
+        curve0, curve1, t0, t1, perpendicular0, perpendicular1, line
+    ):
+        """
   TryCreateBetweenCurves(curve0: Curve,curve1: Curve,t0: float,t1: float,perpendicular0: bool,perpendicular1: bool) -> (bool,float,float,Line)
 
   
@@ -382,13 +400,15 @@ class Line(object,IEquatable[Line],IEpsilonComparable[Line]):
 
    Returns: true on success,false on failure.
   """
-  pass
- @staticmethod
- def TryFitLineToPoints(points,fitLine):
-  """ TryFitLineToPoints(points: IEnumerable[Point3d]) -> (bool,Line) """
-  pass
- def TryGetPlane(self,plane):
-  """
+        pass
+
+    @staticmethod
+    def TryFitLineToPoints(points, fitLine):
+        """ TryFitLineToPoints(points: IEnumerable[Point3d]) -> (bool,Line) """
+        pass
+
+    def TryGetPlane(self, plane):
+        """
   TryGetPlane(self: Line) -> (bool,Plane)
 
   
@@ -403,16 +423,19 @@ class Line(object,IEquatable[Line],IEpsilonComparable[Line]):
 
    Returns: true on success.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__[Line]() -> Line
 
   
@@ -425,18 +448,25 @@ class Line(object,IEquatable[Line],IEpsilonComparable[Line]):
 
   __new__(cls: type,x0: float,y0: float,z0: float,x1: float,y1: float,z1: float)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __str__(self,*args):
-  pass
- BoundingBox=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the line's 3d axis aligned bounding box.
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    BoundingBox = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the line's 3d axis aligned bounding box.
 
 
 
@@ -446,8 +476,8 @@ Get: BoundingBox(self: Line) -> BoundingBox
 
 """
 
- Direction=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the direction of this line segment. 
+    Direction = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the direction of this line segment. 
 
    The length of the direction vector equals the length of 
 
@@ -461,8 +491,8 @@ Get: Direction(self: Line) -> Vector3d
 
 """
 
- From=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Start point of line segment.
+    From = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Start point of line segment.
 
 
 
@@ -474,8 +504,8 @@ Set: From(self: Line)=value
 
 """
 
- FromX=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the X coordinate of the line From point.
+    FromX = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the X coordinate of the line From point.
 
 
 
@@ -487,8 +517,8 @@ Set: FromX(self: Line)=value
 
 """
 
- FromY=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Y coordinate of the line From point.
+    FromY = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Y coordinate of the line From point.
 
 
 
@@ -500,8 +530,8 @@ Set: FromY(self: Line)=value
 
 """
 
- FromZ=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Z coordinate of the line From point.
+    FromZ = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Z coordinate of the line From point.
 
 
 
@@ -513,8 +543,8 @@ Set: FromZ(self: Line)=value
 
 """
 
- IsValid=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether or not this line is valid. 
+    IsValid = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value indicating whether or not this line is valid. 
 
    Valid lines must have valid start and end points.
 
@@ -526,8 +556,8 @@ Get: IsValid(self: Line) -> bool
 
 """
 
- Length=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the length of this line segment. 
+    Length = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the length of this line segment. 
 
    Note that a negative length will invert the line segment without 
 
@@ -545,8 +575,8 @@ Set: Length(self: Line)=value
 
 """
 
- To=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """End point of line segment.
+    To = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """End point of line segment.
 
 
 
@@ -558,8 +588,8 @@ Set: To(self: Line)=value
 
 """
 
- ToX=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the X coordinate of the line To point.
+    ToX = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the X coordinate of the line To point.
 
 
 
@@ -571,8 +601,8 @@ Set: ToX(self: Line)=value
 
 """
 
- ToY=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Y coordinate of the line To point.
+    ToY = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Y coordinate of the line To point.
 
 
 
@@ -584,8 +614,8 @@ Set: ToY(self: Line)=value
 
 """
 
- ToZ=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Z coordinate of the line To point.
+    ToZ = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the Z coordinate of the line To point.
 
 
 
@@ -597,8 +627,10 @@ Set: ToZ(self: Line)=value
 
 """
 
- UnitTangent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the tangent of the line segment. 
+    UnitTangent = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the tangent of the line segment. 
 
    Note that tangent vectors are always unit vectors.
 
@@ -610,6 +642,4 @@ Get: UnitTangent(self: Line) -> Vector3d
 
 """
 
-
- Unset=None
-
+    Unset = None

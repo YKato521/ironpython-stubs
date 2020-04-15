@@ -1,13 +1,14 @@
-class PrintDialog(CommonDialog,IComponent,IDisposable):
- """
+class PrintDialog(CommonDialog, IComponent, IDisposable):
+    """
  Lets users select a printer and choose which sections of the document to print from a Windows Forms application.
 
  
 
  PrintDialog()
  """
- def Dispose(self):
-  """
+
+    def Dispose(self):
+        """
   Dispose(self: Component,disposing: bool)
 
    Releases the unmanaged resources used by the System.ComponentModel.Component and optionally 
@@ -20,9 +21,10 @@ class PrintDialog(CommonDialog,IComponent,IDisposable):
 
    disposing: true to release both managed and unmanaged resources; false to release only unmanaged resources.
   """
-  pass
- def GetService(self,*args):
-  """
+        pass
+
+    def GetService(self, *args):
+        """
   GetService(self: Component,service: Type) -> object
 
   
@@ -41,9 +43,10 @@ class PrintDialog(CommonDialog,IComponent,IDisposable):
 
     null if the System.ComponentModel.Component does not provide the specified service.
   """
-  pass
- def HookProc(self,*args):
-  """
+        pass
+
+    def HookProc(self, *args):
+        """
   HookProc(self: CommonDialog,hWnd: IntPtr,msg: int,wparam: IntPtr,lparam: IntPtr) -> IntPtr
 
   
@@ -68,9 +71,10 @@ class PrintDialog(CommonDialog,IComponent,IDisposable):
 
     default dialog box procedure ignores the message.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -101,9 +105,10 @@ class PrintDialog(CommonDialog,IComponent,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def OnHelpRequest(self,*args):
-  """
+        pass
+
+    def OnHelpRequest(self, *args):
+        """
   OnHelpRequest(self: CommonDialog,e: EventArgs)
 
    Raises the System.Windows.Forms.CommonDialog.HelpRequest event.
@@ -112,9 +117,10 @@ class PrintDialog(CommonDialog,IComponent,IDisposable):
 
    e: An System.Windows.Forms.HelpEventArgs that provides the event data.
   """
-  pass
- def OwnerWndProc(self,*args):
-  """
+        pass
+
+    def OwnerWndProc(self, *args):
+        """
   OwnerWndProc(self: CommonDialog,hWnd: IntPtr,msg: int,wparam: IntPtr,lparam: IntPtr) -> IntPtr
 
   
@@ -137,40 +143,49 @@ class PrintDialog(CommonDialog,IComponent,IDisposable):
 
    Returns: The result of the message processing,which is dependent on the message sent.
   """
-  pass
- def Reset(self):
-  """
+        pass
+
+    def Reset(self):
+        """
   Reset(self: PrintDialog)
 
    Resets all options,the last selected printer,and the page settings to their default values.
   """
-  pass
- def RunDialog(self,*args):
-  """ RunDialog(self: PrintDialog,hwndOwner: IntPtr) -> bool """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def RunDialog(self, *args):
+        """ RunDialog(self: PrintDialog,hwndOwner: IntPtr) -> bool """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __str__(self,*args):
-  pass
- AllowCurrentPage=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the Current Page option button is displayed.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    AllowCurrentPage = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the Current Page option button is displayed.
 
 
 
@@ -182,8 +197,10 @@ Set: AllowCurrentPage(self: PrintDialog)=value
 
 """
 
- AllowPrintToFile=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the Print to file check box is enabled.
+    AllowPrintToFile = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the Print to file check box is enabled.
 
 
 
@@ -195,8 +212,10 @@ Set: AllowPrintToFile(self: PrintDialog)=value
 
 """
 
- AllowSelection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the Selection option button is enabled.
+    AllowSelection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the Selection option button is enabled.
 
 
 
@@ -208,8 +227,10 @@ Set: AllowSelection(self: PrintDialog)=value
 
 """
 
- AllowSomePages=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the Pages option button is enabled.
+    AllowSomePages = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the Pages option button is enabled.
 
 
 
@@ -221,22 +242,26 @@ Set: AllowSomePages(self: PrintDialog)=value
 
 """
 
- CanRaiseEvents=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the component can raise an event.
+    CanRaiseEvents = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the component can raise an event.
 
 
 
 """
 
- DesignMode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
+    DesignMode = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.ComponentModel.Component is currently in design mode.
 
 
 
 """
 
- Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating the System.Drawing.Printing.PrintDocument used to obtain System.Drawing.Printing.PrinterSettings.
+    Document = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating the System.Drawing.Printing.PrintDocument used to obtain System.Drawing.Printing.PrinterSettings.
 
 
 
@@ -248,15 +273,17 @@ Set: Document(self: PrintDialog)=value
 
 """
 
- Events=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
+    Events = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the list of event handlers that are attached to this System.ComponentModel.Component.
 
 
 
 """
 
- PrinterSettings=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the printer settings the dialog box modifies.
+    PrinterSettings = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the printer settings the dialog box modifies.
 
 
 
@@ -268,8 +295,10 @@ Set: PrinterSettings(self: PrintDialog)=value
 
 """
 
- PrintToFile=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the Print to file check box is selected.
+    PrintToFile = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the Print to file check box is selected.
 
 
 
@@ -281,8 +310,8 @@ Set: PrintToFile(self: PrintDialog)=value
 
 """
 
- ShowHelp=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the Help button is displayed.
+    ShowHelp = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value indicating whether the Help button is displayed.
 
 
 
@@ -294,8 +323,10 @@ Set: ShowHelp(self: PrintDialog)=value
 
 """
 
- ShowNetwork=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the Network button is displayed.
+    ShowNetwork = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the Network button is displayed.
 
 
 
@@ -307,8 +338,10 @@ Set: ShowNetwork(self: PrintDialog)=value
 
 """
 
- UseEXDialog=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value indicating whether the dialog should be shown in the Windows XP style for systems running Windows XP Home Edition,Windows XP Professional,Windows Server 2003�or later.
+    UseEXDialog = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value indicating whether the dialog should be shown in the Windows XP style for systems running Windows XP Home Edition,Windows XP Professional,Windows Server 2003�or later.
 
 
 
@@ -319,5 +352,3 @@ Get: UseEXDialog(self: PrintDialog) -> bool
 Set: UseEXDialog(self: PrintDialog)=value
 
 """
-
-

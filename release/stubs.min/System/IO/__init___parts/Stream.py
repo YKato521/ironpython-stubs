@@ -1,7 +1,8 @@
-class Stream(MarshalByRefObject,IDisposable):
- """ Provides a generic view of a sequence of bytes. """
- def BeginRead(self,buffer,offset,count,callback,state):
-  """
+class Stream(MarshalByRefObject, IDisposable):
+    """ Provides a generic view of a sequence of bytes. """
+
+    def BeginRead(self, buffer, offset, count, callback, state):
+        """
   BeginRead(self: Stream,buffer: Array[Byte],offset: int,count: int,callback: AsyncCallback,state: object) -> IAsyncResult
 
   
@@ -26,9 +27,10 @@ class Stream(MarshalByRefObject,IDisposable):
 
    Returns: An System.IAsyncResult that represents the asynchronous read,which could still be pending.
   """
-  pass
- def BeginWrite(self,buffer,offset,count,callback,state):
-  """
+        pass
+
+    def BeginWrite(self, buffer, offset, count, callback, state):
+        """
   BeginWrite(self: Stream,buffer: Array[Byte],offset: int,count: int,callback: AsyncCallback,state: object) -> IAsyncResult
 
   
@@ -53,18 +55,20 @@ class Stream(MarshalByRefObject,IDisposable):
 
    Returns: An IAsyncResult that represents the asynchronous write,which could still be pending.
   """
-  pass
- def Close(self):
-  """
+        pass
+
+    def Close(self):
+        """
   Close(self: Stream)
 
    Closes the current stream and releases any resources (such as sockets and file handles) 
 
     associated with the current stream.
   """
-  pass
- def CopyTo(self,destination,bufferSize=None):
-  """
+        pass
+
+    def CopyTo(self, destination, bufferSize=None):
+        """
   CopyTo(self: Stream,destination: Stream,bufferSize: int)
 
    Reads all the bytes from the current stream and writes them to a destination stream,using a 
@@ -87,18 +91,20 @@ class Stream(MarshalByRefObject,IDisposable):
 
    destination: The stream that will contain the contents of the current stream.
   """
-  pass
- def CopyToAsync(self,destination,bufferSize=None,cancellationToken=None):
-  """
+        pass
+
+    def CopyToAsync(self, destination, bufferSize=None, cancellationToken=None):
+        """
   CopyToAsync(self: Stream,destination: Stream,bufferSize: int,cancellationToken: CancellationToken) -> Task
 
   CopyToAsync(self: Stream,destination: Stream,bufferSize: int) -> Task
 
   CopyToAsync(self: Stream,destination: Stream) -> Task
   """
-  pass
- def CreateWaitHandle(self,*args):
-  """
+        pass
+
+    def CreateWaitHandle(self, *args):
+        """
   CreateWaitHandle(self: Stream) -> WaitHandle
 
   
@@ -107,16 +113,18 @@ class Stream(MarshalByRefObject,IDisposable):
 
    Returns: A reference to the allocated WaitHandle.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: Stream)
 
    Releases all resources used by the System.IO.Stream.
   """
-  pass
- def EndRead(self,asyncResult):
-  """
+        pass
+
+    def EndRead(self, asyncResult):
+        """
   EndRead(self: Stream,asyncResult: IAsyncResult) -> int
 
   
@@ -133,9 +141,10 @@ class Stream(MarshalByRefObject,IDisposable):
 
     until at least one byte is available.
   """
-  pass
- def EndWrite(self,asyncResult):
-  """
+        pass
+
+    def EndWrite(self, asyncResult):
+        """
   EndWrite(self: Stream,asyncResult: IAsyncResult)
 
    Ends an asynchronous write operation.
@@ -144,25 +153,28 @@ class Stream(MarshalByRefObject,IDisposable):
 
    asyncResult: A reference to the outstanding asynchronous I/O request.
   """
-  pass
- def Flush(self):
-  """
+        pass
+
+    def Flush(self):
+        """
   Flush(self: Stream)
 
    When overridden in a derived class,clears all buffers for this stream and causes any buffered 
 
     data to be written to the underlying device.
   """
-  pass
- def FlushAsync(self,cancellationToken=None):
-  """
+        pass
+
+    def FlushAsync(self, cancellationToken=None):
+        """
   FlushAsync(self: Stream,cancellationToken: CancellationToken) -> Task
 
   FlushAsync(self: Stream) -> Task
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -193,16 +205,18 @@ class Stream(MarshalByRefObject,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def ObjectInvariant(self,*args):
-  """
+        pass
+
+    def ObjectInvariant(self, *args):
+        """
   ObjectInvariant(self: Stream)
 
    Provides support for a System.Diagnostics.Contracts.Contract.
   """
-  pass
- def Read(self,buffer,offset,count):
-  """
+        pass
+
+    def Read(self, buffer, offset, count):
+        """
   Read(self: Stream,offset: int,count: int) -> (int,Array[Byte])
 
   
@@ -229,16 +243,18 @@ class Stream(MarshalByRefObject,IDisposable):
 
     has been reached.
   """
-  pass
- def ReadAsync(self,buffer,offset,count,cancellationToken=None):
-  """
+        pass
+
+    def ReadAsync(self, buffer, offset, count, cancellationToken=None):
+        """
   ReadAsync(self: Stream,buffer: Array[Byte],offset: int,count: int,cancellationToken: CancellationToken) -> Task[int]
 
   ReadAsync(self: Stream,buffer: Array[Byte],offset: int,count: int) -> Task[int]
   """
-  pass
- def ReadByte(self):
-  """
+        pass
+
+    def ReadByte(self):
+        """
   ReadByte(self: Stream) -> int
 
   
@@ -251,9 +267,10 @@ class Stream(MarshalByRefObject,IDisposable):
 
    Returns: The unsigned byte cast to an Int32,or -1 if at the end of the stream.
   """
-  pass
- def Seek(self,offset,origin):
-  """
+        pass
+
+    def Seek(self, offset, origin):
+        """
   Seek(self: Stream,offset: Int64,origin: SeekOrigin) -> Int64
 
   
@@ -272,9 +289,10 @@ class Stream(MarshalByRefObject,IDisposable):
 
    Returns: The new position within the current stream.
   """
-  pass
- def SetLength(self,value):
-  """
+        pass
+
+    def SetLength(self, value):
+        """
   SetLength(self: Stream,value: Int64)
 
    When overridden in a derived class,sets the length of the current stream.
@@ -283,10 +301,11 @@ class Stream(MarshalByRefObject,IDisposable):
 
    value: The desired length of the current stream in bytes.
   """
-  pass
- @staticmethod
- def Synchronized(stream):
-  """
+        pass
+
+    @staticmethod
+    def Synchronized(stream):
+        """
   Synchronized(stream: Stream) -> Stream
 
   
@@ -299,9 +318,10 @@ class Stream(MarshalByRefObject,IDisposable):
 
    Returns: A thread-safe System.IO.Stream object.
   """
-  pass
- def Write(self,buffer,offset,count):
-  """
+        pass
+
+    def Write(self, buffer, offset, count):
+        """
   Write(self: Stream,buffer: Array[Byte],offset: int,count: int)
 
    When overridden in a derived class,writes a sequence of bytes to the current stream and 
@@ -318,16 +338,18 @@ class Stream(MarshalByRefObject,IDisposable):
 
    count: The number of bytes to be written to the current stream.
   """
-  pass
- def WriteAsync(self,buffer,offset,count,cancellationToken=None):
-  """
+        pass
+
+    def WriteAsync(self, buffer, offset, count, cancellationToken=None):
+        """
   WriteAsync(self: Stream,buffer: Array[Byte],offset: int,count: int,cancellationToken: CancellationToken) -> Task
 
   WriteAsync(self: Stream,buffer: Array[Byte],offset: int,count: int) -> Task
   """
-  pass
- def WriteByte(self,value):
-  """
+        pass
+
+    def WriteByte(self, value):
+        """
   WriteByte(self: Stream,value: Byte)
 
    Writes a byte to the current position in the stream and advances the position within the stream 
@@ -340,30 +362,35 @@ class Stream(MarshalByRefObject,IDisposable):
 
    value: The byte to write to the stream.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- CanRead=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets a value indicating whether the current stream supports reading.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    CanRead = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """When overridden in a derived class,gets a value indicating whether the current stream supports reading.
 
 
 
@@ -373,8 +400,8 @@ Get: CanRead(self: Stream) -> bool
 
 """
 
- CanSeek=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets a value indicating whether the current stream supports seeking.
+    CanSeek = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """When overridden in a derived class,gets a value indicating whether the current stream supports seeking.
 
 
 
@@ -384,8 +411,10 @@ Get: CanSeek(self: Stream) -> bool
 
 """
 
- CanTimeout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that determines whether the current stream can time out.
+    CanTimeout = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that determines whether the current stream can time out.
 
 
 
@@ -395,8 +424,8 @@ Get: CanTimeout(self: Stream) -> bool
 
 """
 
- CanWrite=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets a value indicating whether the current stream supports writing.
+    CanWrite = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """When overridden in a derived class,gets a value indicating whether the current stream supports writing.
 
 
 
@@ -406,8 +435,8 @@ Get: CanWrite(self: Stream) -> bool
 
 """
 
- Length=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets the length in bytes of the stream.
+    Length = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """When overridden in a derived class,gets the length in bytes of the stream.
 
 
 
@@ -417,8 +446,8 @@ Get: Length(self: Stream) -> Int64
 
 """
 
- Position=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """When overridden in a derived class,gets or sets the position within the current stream.
+    Position = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """When overridden in a derived class,gets or sets the position within the current stream.
 
 
 
@@ -430,8 +459,10 @@ Set: Position(self: Stream)=value
 
 """
 
- ReadTimeout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value,in miliseconds,that determines how long the stream will attempt to read before timing out.
+    ReadTimeout = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value,in miliseconds,that determines how long the stream will attempt to read before timing out.
 
 
 
@@ -443,8 +474,10 @@ Set: ReadTimeout(self: Stream)=value
 
 """
 
- WriteTimeout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value,in miliseconds,that determines how long the stream will attempt to write before timing out.
+    WriteTimeout = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value,in miliseconds,that determines how long the stream will attempt to write before timing out.
 
 
 
@@ -456,6 +489,4 @@ Set: WriteTimeout(self: Stream)=value
 
 """
 
-
- Null=None
-
+    Null = None

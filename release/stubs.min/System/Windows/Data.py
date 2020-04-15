@@ -8,10 +8,12 @@
 # no functions
 # classes
 
+
 class BindingBase(MarkupExtension):
- """ Defines the common characteristics of the System.Windows.Data.Binding,System.Windows.Data.PriorityBinding,and System.Windows.Data.MultiBinding classes. """
- def ProvideValue(self,serviceProvider):
-  """
+    """ Defines the common characteristics of the System.Windows.Data.Binding,System.Windows.Data.PriorityBinding,and System.Windows.Data.MultiBinding classes. """
+
+    def ProvideValue(self, serviceProvider):
+        """
   ProvideValue(self: BindingBase,serviceProvider: IServiceProvider) -> object
 
   
@@ -32,9 +34,10 @@ class BindingBase(MarkupExtension):
 
    Returns: The value to set on the binding target property.
   """
-  pass
- def ShouldSerializeFallbackValue(self):
-  """
+        pass
+
+    def ShouldSerializeFallbackValue(self):
+        """
   ShouldSerializeFallbackValue(self: BindingBase) -> bool
 
   
@@ -49,9 +52,10 @@ class BindingBase(MarkupExtension):
 
     otherwise,false.
   """
-  pass
- def ShouldSerializeTargetNullValue(self):
-  """
+        pass
+
+    def ShouldSerializeTargetNullValue(self):
+        """
   ShouldSerializeTargetNullValue(self: BindingBase) -> bool
 
   
@@ -66,9 +70,12 @@ class BindingBase(MarkupExtension):
 
     otherwise,false.
   """
-  pass
- BindingGroupName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the System.Windows.Data.BindingGroup to which this binding belongs.
+        pass
+
+    BindingGroupName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the System.Windows.Data.BindingGroup to which this binding belongs.
 
 
 
@@ -80,8 +87,8 @@ Set: BindingGroupName(self: BindingBase)=value
 
 """
 
- Delay=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Delay(self: BindingBase) -> int
+    Delay = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Delay(self: BindingBase) -> int
 
 
 
@@ -89,8 +96,10 @@ Set: Delay(self: BindingBase)=value
 
 """
 
- FallbackValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the value to use when the binding is unable to return a value.
+    FallbackValue = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the value to use when the binding is unable to return a value.
 
 
 
@@ -102,8 +111,10 @@ Set: FallbackValue(self: BindingBase)=value
 
 """
 
- StringFormat=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a string that specifies how to format the binding if it displays the bound value as a string.
+    StringFormat = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a string that specifies how to format the binding if it displays the bound value as a string.
 
 
 
@@ -115,8 +126,10 @@ Set: StringFormat(self: BindingBase)=value
 
 """
 
- TargetNullValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the value that is used in the target when the value of the source is null.
+    TargetNullValue = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the value that is used in the target when the value of the source is null.
 
 
 
@@ -129,9 +142,8 @@ Set: TargetNullValue(self: BindingBase)=value
 """
 
 
-
 class Binding(BindingBase):
- """
+    """
  Provides high-level access to the definition of a binding,which connects the properties of binding target objects (typically,WPF elements),and any data source (for example,a database,an XML file,or any object that contains data).
 
  
@@ -140,17 +152,20 @@ class Binding(BindingBase):
 
  Binding(path: str)
  """
- @staticmethod
- def AddSourceUpdatedHandler(element,handler):
-  """ AddSourceUpdatedHandler(element: DependencyObject,handler: EventHandler[DataTransferEventArgs]) """
-  pass
- @staticmethod
- def AddTargetUpdatedHandler(element,handler):
-  """ AddTargetUpdatedHandler(element: DependencyObject,handler: EventHandler[DataTransferEventArgs]) """
-  pass
- @staticmethod
- def GetXmlNamespaceManager(target):
-  """
+
+    @staticmethod
+    def AddSourceUpdatedHandler(element, handler):
+        """ AddSourceUpdatedHandler(element: DependencyObject,handler: EventHandler[DataTransferEventArgs]) """
+        pass
+
+    @staticmethod
+    def AddTargetUpdatedHandler(element, handler):
+        """ AddTargetUpdatedHandler(element: DependencyObject,handler: EventHandler[DataTransferEventArgs]) """
+        pass
+
+    @staticmethod
+    def GetXmlNamespaceManager(target):
+        """
   GetXmlNamespaceManager(target: DependencyObject) -> XmlNamespaceManager
 
   
@@ -165,18 +180,21 @@ class Binding(BindingBase):
 
     object element. This object should be cast as System.Xml.XmlNamespaceManager.
   """
-  pass
- @staticmethod
- def RemoveSourceUpdatedHandler(element,handler):
-  """ RemoveSourceUpdatedHandler(element: DependencyObject,handler: EventHandler[DataTransferEventArgs]) """
-  pass
- @staticmethod
- def RemoveTargetUpdatedHandler(element,handler):
-  """ RemoveTargetUpdatedHandler(element: DependencyObject,handler: EventHandler[DataTransferEventArgs]) """
-  pass
- @staticmethod
- def SetXmlNamespaceManager(target,value):
-  """
+        pass
+
+    @staticmethod
+    def RemoveSourceUpdatedHandler(element, handler):
+        """ RemoveSourceUpdatedHandler(element: DependencyObject,handler: EventHandler[DataTransferEventArgs]) """
+        pass
+
+    @staticmethod
+    def RemoveTargetUpdatedHandler(element, handler):
+        """ RemoveTargetUpdatedHandler(element: DependencyObject,handler: EventHandler[DataTransferEventArgs]) """
+        pass
+
+    @staticmethod
+    def SetXmlNamespaceManager(target, value):
+        """
   SetXmlNamespaceManager(target: DependencyObject,value: XmlNamespaceManager)
 
    Sets a namespace manager object used by the binding attached to the provided element.
@@ -187,9 +205,10 @@ class Binding(BindingBase):
 
    value: The System.Xml.XmlNamespaceManager to use for namespace evaluation in the passed element.
   """
-  pass
- def ShouldSerializePath(self):
-  """
+        pass
+
+    def ShouldSerializePath(self):
+        """
   ShouldSerializePath(self: Binding) -> bool
 
   
@@ -198,9 +217,10 @@ class Binding(BindingBase):
 
    Returns: true if the property value has changed from its default; otherwise,false.
   """
-  pass
- def ShouldSerializeSource(self):
-  """
+        pass
+
+    def ShouldSerializeSource(self):
+        """
   ShouldSerializeSource(self: Binding) -> bool
 
   
@@ -209,9 +229,10 @@ class Binding(BindingBase):
 
    Returns: true if the property value has changed from its default; otherwise,false.
   """
-  pass
- def ShouldSerializeValidationRules(self):
-  """
+        pass
+
+    def ShouldSerializeValidationRules(self):
+        """
   ShouldSerializeValidationRules(self: Binding) -> bool
 
   
@@ -220,17 +241,21 @@ class Binding(BindingBase):
 
    Returns: true if the property value has changed from its default; otherwise,false.
   """
-  pass
- @staticmethod
- def __new__(self,path=None):
-  """
+        pass
+
+    @staticmethod
+    def __new__(self, path=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,path: str)
   """
-  pass
- AsyncState=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets opaque data passed to the asynchronous data dispatcher.
+        pass
+
+    AsyncState = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets opaque data passed to the asynchronous data dispatcher.
 
 
 
@@ -242,8 +267,10 @@ Set: AsyncState(self: Binding)=value
 
 """
 
- BindsDirectlyToSource=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether to evaluate the System.Windows.Data.Binding.Path relative to the data item or the System.Windows.Data.DataSourceProvider object.
+    BindsDirectlyToSource = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether to evaluate the System.Windows.Data.Binding.Path relative to the data item or the System.Windows.Data.DataSourceProvider object.
 
 
 
@@ -255,8 +282,8 @@ Set: BindsDirectlyToSource(self: Binding)=value
 
 """
 
- Converter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the converter to use.
+    Converter = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the converter to use.
 
 
 
@@ -268,8 +295,10 @@ Set: Converter(self: Binding)=value
 
 """
 
- ConverterCulture=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the culture in which to evaluate the converter.
+    ConverterCulture = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the culture in which to evaluate the converter.
 
 
 
@@ -281,8 +310,10 @@ Set: ConverterCulture(self: Binding)=value
 
 """
 
- ConverterParameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the parameter to pass to the System.Windows.Data.Binding.Converter.
+    ConverterParameter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the parameter to pass to the System.Windows.Data.Binding.Converter.
 
 
 
@@ -294,8 +325,10 @@ Set: ConverterParameter(self: Binding)=value
 
 """
 
- ElementName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the element to use as the binding source object.
+    ElementName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the element to use as the binding source object.
 
 
 
@@ -307,8 +340,8 @@ Set: ElementName(self: Binding)=value
 
 """
 
- IsAsync=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether the System.Windows.Data.Binding should get and set values asynchronously.
+    IsAsync = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value that indicates whether the System.Windows.Data.Binding should get and set values asynchronously.
 
 
 
@@ -320,8 +353,8 @@ Set: IsAsync(self: Binding)=value
 
 """
 
- Mode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates the direction of the data flow in the binding.
+    Mode = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value that indicates the direction of the data flow in the binding.
 
 
 
@@ -333,8 +366,10 @@ Set: Mode(self: Binding)=value
 
 """
 
- NotifyOnSourceUpdated=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether to raise the System.Windows.Data.Binding.SourceUpdated event when a value is transferred from the binding target to the binding source.
+    NotifyOnSourceUpdated = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether to raise the System.Windows.Data.Binding.SourceUpdated event when a value is transferred from the binding target to the binding source.
 
 
 
@@ -346,8 +381,10 @@ Set: NotifyOnSourceUpdated(self: Binding)=value
 
 """
 
- NotifyOnTargetUpdated=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether to raise the System.Windows.Data.Binding.TargetUpdated event when a value is transferred from the binding source to the binding target.
+    NotifyOnTargetUpdated = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether to raise the System.Windows.Data.Binding.TargetUpdated event when a value is transferred from the binding source to the binding target.
 
 
 
@@ -359,8 +396,10 @@ Set: NotifyOnTargetUpdated(self: Binding)=value
 
 """
 
- NotifyOnValidationError=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether to raise the System.Windows.Controls.Validation.Error�attached event on the bound object.
+    NotifyOnValidationError = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether to raise the System.Windows.Controls.Validation.Error�attached event on the bound object.
 
 
 
@@ -372,8 +411,8 @@ Set: NotifyOnValidationError(self: Binding)=value
 
 """
 
- Path=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the path to the binding source property.
+    Path = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the path to the binding source property.
 
 
 
@@ -385,8 +424,10 @@ Set: Path(self: Binding)=value
 
 """
 
- RelativeSource=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the binding source by specifying its location relative to the position of the binding target.
+    RelativeSource = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the binding source by specifying its location relative to the position of the binding target.
 
 
 
@@ -398,8 +439,8 @@ Set: RelativeSource(self: Binding)=value
 
 """
 
- Source=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the object to use as the binding source.
+    Source = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the object to use as the binding source.
 
 
 
@@ -411,8 +452,10 @@ Set: Source(self: Binding)=value
 
 """
 
- UpdateSourceExceptionFilter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a handler you can use to provide custom logic for handling exceptions that the binding engine encounters during the update of the binding source value. This is only applicable if you have associated an System.Windows.Controls.ExceptionValidationRule with your binding.
+    UpdateSourceExceptionFilter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a handler you can use to provide custom logic for handling exceptions that the binding engine encounters during the update of the binding source value. This is only applicable if you have associated an System.Windows.Controls.ExceptionValidationRule with your binding.
 
 
 
@@ -424,8 +467,10 @@ Set: UpdateSourceExceptionFilter(self: Binding)=value
 
 """
 
- UpdateSourceTrigger=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that determines the timing of binding source updates.
+    UpdateSourceTrigger = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that determines the timing of binding source updates.
 
 
 
@@ -437,8 +482,10 @@ Set: UpdateSourceTrigger(self: Binding)=value
 
 """
 
- ValidatesOnDataErrors=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether to include the System.Windows.Controls.DataErrorValidationRule.
+    ValidatesOnDataErrors = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether to include the System.Windows.Controls.DataErrorValidationRule.
 
 
 
@@ -450,8 +497,10 @@ Set: ValidatesOnDataErrors(self: Binding)=value
 
 """
 
- ValidatesOnExceptions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether to include the System.Windows.Controls.ExceptionValidationRule.
+    ValidatesOnExceptions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether to include the System.Windows.Controls.ExceptionValidationRule.
 
 
 
@@ -463,8 +512,10 @@ Set: ValidatesOnExceptions(self: Binding)=value
 
 """
 
- ValidatesOnNotifyDataErrors=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: ValidatesOnNotifyDataErrors(self: Binding) -> bool
+    ValidatesOnNotifyDataErrors = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: ValidatesOnNotifyDataErrors(self: Binding) -> bool
 
 
 
@@ -472,8 +523,10 @@ Set: ValidatesOnNotifyDataErrors(self: Binding)=value
 
 """
 
- ValidationRules=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of rules that check the validity of the user input.
+    ValidationRules = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a collection of rules that check the validity of the user input.
 
 
 
@@ -483,8 +536,8 @@ Get: ValidationRules(self: Binding) -> Collection[ValidationRule]
 
 """
 
- XPath=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets an XPath query that returns the value on the XML�binding source to use.
+    XPath = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets an XPath query that returns the value on the XML�binding source to use.
 
 
 
@@ -496,18 +549,18 @@ Set: XPath(self: Binding)=value
 
 """
 
+    DoNothing = None
+    IndexerName = "Item[]"
+    SourceUpdatedEvent = None
+    TargetUpdatedEvent = None
+    XmlNamespaceManagerProperty = None
 
- DoNothing=None
- IndexerName='Item[]'
- SourceUpdatedEvent=None
- TargetUpdatedEvent=None
- XmlNamespaceManagerProperty=None
 
+class BindingExpressionBase(Expression, IWeakEventListener):
+    """ Represents the base class for System.Windows.Data.BindingExpression,System.Windows.Data.PriorityBindingExpression,and System.Windows.Data.MultiBindingExpression. """
 
-class BindingExpressionBase(Expression,IWeakEventListener):
- """ Represents the base class for System.Windows.Data.BindingExpression,System.Windows.Data.PriorityBindingExpression,and System.Windows.Data.MultiBindingExpression. """
- def UpdateSource(self):
-  """
+    def UpdateSource(self):
+        """
   UpdateSource(self: BindingExpressionBase)
 
    Sends the current binding target value to the binding source in 
@@ -516,16 +569,18 @@ class BindingExpressionBase(Expression,IWeakEventListener):
 
     bindings.
   """
-  pass
- def UpdateTarget(self):
-  """
+        pass
+
+    def UpdateTarget(self):
+        """
   UpdateTarget(self: BindingExpressionBase)
 
    Forces a data transfer from the binding source to the binding target.
   """
-  pass
- def ValidateWithoutUpdate(self):
-  """
+        pass
+
+    def ValidateWithoutUpdate(self):
+        """
   ValidateWithoutUpdate(self: BindingExpressionBase) -> bool
 
   
@@ -544,19 +599,23 @@ class BindingExpressionBase(Expression,IWeakEventListener):
 
    Returns: true if the validation rules succeed; otherwise,false.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- BindingGroup=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: BindingGroup(self: BindingExpressionBase) -> BindingGroup
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    BindingGroup = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: BindingGroup(self: BindingExpressionBase) -> BindingGroup
 
 
 
 """
 
- HasError=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the parent binding has a failed validation rule.
+    HasError = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether the parent binding has a failed validation rule.
 
 
 
@@ -566,22 +625,26 @@ Get: HasError(self: BindingExpressionBase) -> bool
 
 """
 
- HasValidationError=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: HasValidationError(self: BindingExpressionBase) -> bool
+    HasValidationError = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: HasValidationError(self: BindingExpressionBase) -> bool
 
 
 
 """
 
- IsDirty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsDirty(self: BindingExpressionBase) -> bool
+    IsDirty = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: IsDirty(self: BindingExpressionBase) -> bool
 
 
 
 """
 
- ParentBindingBase=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Data.BindingBase object from which this System.Windows.Data.BindingExpressionBase object is created.
+    ParentBindingBase = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Windows.Data.BindingBase object from which this System.Windows.Data.BindingExpressionBase object is created.
 
 
 
@@ -591,8 +654,8 @@ Get: ParentBindingBase(self: BindingExpressionBase) -> BindingBase
 
 """
 
- Status=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the status of the binding expression.
+    Status = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the status of the binding expression.
 
 
 
@@ -602,22 +665,26 @@ Get: Status(self: BindingExpressionBase) -> BindingStatus
 
 """
 
- Target=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Target(self: BindingExpressionBase) -> DependencyObject
+    Target = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Target(self: BindingExpressionBase) -> DependencyObject
 
 
 
 """
 
- TargetProperty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: TargetProperty(self: BindingExpressionBase) -> DependencyProperty
+    TargetProperty = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: TargetProperty(self: BindingExpressionBase) -> DependencyProperty
 
 
 
 """
 
- ValidationError=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Controls.ValidationError that caused this instance of System.Windows.Data.BindingExpressionBase to be invalid.
+    ValidationError = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Windows.Controls.ValidationError that caused this instance of System.Windows.Data.BindingExpressionBase to be invalid.
 
 
 
@@ -627,19 +694,23 @@ Get: ValidationError(self: BindingExpressionBase) -> ValidationError
 
 """
 
- ValidationErrors=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: ValidationErrors(self: BindingExpressionBase) -> ReadOnlyCollection[ValidationError]
+    ValidationErrors = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: ValidationErrors(self: BindingExpressionBase) -> ReadOnlyCollection[ValidationError]
 
 
 
 """
 
 
+class BindingExpression(
+    BindingExpressionBase, IWeakEventListener, IDataBindEngineClient
+):
+    """ Contains information about a single instance of a System.Windows.Data.Binding. """
 
-class BindingExpression(BindingExpressionBase,IWeakEventListener,IDataBindEngineClient):
- """ Contains information about a single instance of a System.Windows.Data.Binding. """
- def UpdateSource(self):
-  """
+    def UpdateSource(self):
+        """
   UpdateSource(self: BindingExpression)
 
    Sends the current binding target value to the binding source property in 
@@ -648,19 +719,22 @@ class BindingExpression(BindingExpressionBase,IWeakEventListener,IDataBindEngine
 
     bindings.
   """
-  pass
- def UpdateTarget(self):
-  """
+        pass
+
+    def UpdateTarget(self):
+        """
   UpdateTarget(self: BindingExpression)
 
    Forces a data transfer from the binding source property to the binding target property.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- DataItem=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the binding source object that this System.Windows.Data.BindingExpression uses.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    DataItem = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the binding source object that this System.Windows.Data.BindingExpression uses.
 
 
 
@@ -670,8 +744,10 @@ Get: DataItem(self: BindingExpression) -> object
 
 """
 
- ParentBinding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the System.Windows.Data.Binding object of the current System.Windows.Data.BindingExpression.
+    ParentBinding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the System.Windows.Data.Binding object of the current System.Windows.Data.BindingExpression.
 
 
 
@@ -681,46 +757,52 @@ Get: ParentBinding(self: BindingExpression) -> Binding
 
 """
 
- ResolvedSource=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: ResolvedSource(self: BindingExpression) -> object
+    ResolvedSource = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: ResolvedSource(self: BindingExpression) -> object
 
 
 
 """
 
- ResolvedSourcePropertyName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: ResolvedSourcePropertyName(self: BindingExpression) -> str
+    ResolvedSourcePropertyName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: ResolvedSourcePropertyName(self: BindingExpression) -> str
 
 
 
 """
-
 
 
 class BindingGroup(DependencyObject):
- """
+    """
  Contains a collection of bindings and System.Windows.Controls.ValidationRule objects that are used to validate an object.
 
  
 
  BindingGroup()
  """
- def BeginEdit(self):
-  """
+
+    def BeginEdit(self):
+        """
   BeginEdit(self: BindingGroup)
 
    Begins an edit transaction on the sources in the System.Windows.Data.BindingGroup.
   """
-  pass
- def CancelEdit(self):
-  """
+        pass
+
+    def CancelEdit(self):
+        """
   CancelEdit(self: BindingGroup)
 
    Ends the edit transaction and discards the pending changes.
   """
-  pass
- def CommitEdit(self):
-  """
+        pass
+
+    def CommitEdit(self):
+        """
   CommitEdit(self: BindingGroup) -> bool
 
   
@@ -735,9 +817,10 @@ class BindingGroup(DependencyObject):
 
     the sources; otherwise,false.
   """
-  pass
- def GetValue(self,*__args):
-  """
+        pass
+
+    def GetValue(self, *__args):
+        """
   GetValue(self: BindingGroup,item: object,propertyName: str) -> object
 
   
@@ -752,9 +835,10 @@ class BindingGroup(DependencyObject):
 
    Returns: The proposed property value.
   """
-  pass
- def TryGetValue(self,item,propertyName,value):
-  """
+        pass
+
+    def TryGetValue(self, item, propertyName, value):
+        """
   TryGetValue(self: BindingGroup,item: object,propertyName: str) -> (bool,object)
 
   
@@ -769,9 +853,10 @@ class BindingGroup(DependencyObject):
 
    Returns: true if value is the proposed value for the specified property; otherwise,false.
   """
-  pass
- def UpdateSources(self):
-  """
+        pass
+
+    def UpdateSources(self):
+        """
   UpdateSources(self: BindingGroup) -> bool
 
   
@@ -792,9 +877,10 @@ class BindingGroup(DependencyObject):
 
    Returns: true if all validation rules succeed; otherwise,false.
   """
-  pass
- def ValidateWithoutUpdate(self):
-  """
+        pass
+
+    def ValidateWithoutUpdate(self):
+        """
   ValidateWithoutUpdate(self: BindingGroup) -> bool
 
   
@@ -811,9 +897,12 @@ class BindingGroup(DependencyObject):
 
    Returns: true if the validation rules succeed; otherwise,false.
   """
-  pass
- BindingExpressions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of System.Windows.Data.BindingExpression objects that contains information for each Binding in the System.Windows.Data.BindingGroup.
+        pass
+
+    BindingExpressions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a collection of System.Windows.Data.BindingExpression objects that contains information for each Binding in the System.Windows.Data.BindingGroup.
 
 
 
@@ -823,8 +912,10 @@ Get: BindingExpressions(self: BindingGroup) -> Collection[BindingExpressionBase]
 
 """
 
- CanRestoreValues=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets whether each source in the binding can discard pending changes and restore the original values.
+    CanRestoreValues = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets whether each source in the binding can discard pending changes and restore the original values.
 
 
 
@@ -834,22 +925,24 @@ Get: CanRestoreValues(self: BindingGroup) -> bool
 
 """
 
- HasValidationError=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: HasValidationError(self: BindingGroup) -> bool
+    HasValidationError = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: HasValidationError(self: BindingGroup) -> bool
 
 
 
 """
 
- IsDirty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsDirty(self: BindingGroup) -> bool
+    IsDirty = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: IsDirty(self: BindingGroup) -> bool
 
 
 
 """
 
- Items=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the sources that are used by the Binding objects in the System.Windows.Data.BindingGroup.
+    Items = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the sources that are used by the Binding objects in the System.Windows.Data.BindingGroup.
 
 
 
@@ -859,8 +952,8 @@ Get: Items(self: BindingGroup) -> IList
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name that identifies the System.Windows.Data.BindingGroup,which can be used to include and exclude Binding objects in the System.Windows.Data.BindingGroup.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the name that identifies the System.Windows.Data.BindingGroup,which can be used to include and exclude Binding objects in the System.Windows.Data.BindingGroup.
 
 
 
@@ -872,8 +965,10 @@ Set: Name(self: BindingGroup)=value
 
 """
 
- NotifyOnValidationError=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets whether the System.Windows.Controls.Validation.Error event occurs when the state of a System.Windows.Controls.ValidationRule changes.
+    NotifyOnValidationError = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets whether the System.Windows.Controls.Validation.Error event occurs when the state of a System.Windows.Controls.ValidationRule changes.
 
 
 
@@ -885,15 +980,17 @@ Set: NotifyOnValidationError(self: BindingGroup)=value
 
 """
 
- Owner=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Owner(self: BindingGroup) -> DependencyObject
+    Owner = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Owner(self: BindingGroup) -> DependencyObject
 
 
 
 """
 
- SharesProposedValues=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether the System.Windows.Data.BindingGroup reuses target values that have not been committed to the source.
+    SharesProposedValues = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether the System.Windows.Data.BindingGroup reuses target values that have not been committed to the source.
 
 
 
@@ -905,8 +1002,10 @@ Set: SharesProposedValues(self: BindingGroup)=value
 
 """
 
- ValidatesOnNotifyDataError=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: ValidatesOnNotifyDataError(self: BindingGroup) -> bool
+    ValidatesOnNotifyDataError = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: ValidatesOnNotifyDataError(self: BindingGroup) -> bool
 
 
 
@@ -914,15 +1013,19 @@ Set: ValidatesOnNotifyDataError(self: BindingGroup)=value
 
 """
 
- ValidationErrors=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: ValidationErrors(self: BindingGroup) -> ReadOnlyCollection[ValidationError]
+    ValidationErrors = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: ValidationErrors(self: BindingGroup) -> ReadOnlyCollection[ValidationError]
 
 
 
 """
 
- ValidationRules=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of System.Windows.Controls.ValidationRule objects that validate the source objects in the System.Windows.Data.BindingGroup.
+    ValidationRules = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a collection of System.Windows.Controls.ValidationRule objects that validate the source objects in the System.Windows.Data.BindingGroup.
 
 
 
@@ -933,33 +1036,43 @@ Get: ValidationRules(self: BindingGroup) -> Collection[ValidationRule]
 """
 
 
-
-class CollectionView(DispatcherObject,ICollectionView,IEnumerable,INotifyCollectionChanged,INotifyPropertyChanged):
- """
+class CollectionView(
+    DispatcherObject,
+    ICollectionView,
+    IEnumerable,
+    INotifyCollectionChanged,
+    INotifyPropertyChanged,
+):
+    """
  Represents a view for grouping,sorting,filtering,and navigating a data collection.
 
  
 
  CollectionView(collection: IEnumerable)
  """
- def add_CollectionChanged(self,*args):
-  """ add_CollectionChanged(self: CollectionView,value: NotifyCollectionChangedEventHandler) """
-  pass
- def add_PropertyChanged(self,*args):
-  """ add_PropertyChanged(self: CollectionView,value: PropertyChangedEventHandler) """
-  pass
- def ClearChangeLog(self,*args):
-  """
+
+    def add_CollectionChanged(self, *args):
+        """ add_CollectionChanged(self: CollectionView,value: NotifyCollectionChangedEventHandler) """
+        pass
+
+    def add_PropertyChanged(self, *args):
+        """ add_PropertyChanged(self: CollectionView,value: PropertyChangedEventHandler) """
+        pass
+
+    def ClearChangeLog(self, *args):
+        """
   ClearChangeLog(self: CollectionView)
 
    Clears any pending changes from the change log.
   """
-  pass
- def ClearPendingChanges(self,*args):
-  """ ClearPendingChanges(self: CollectionView) """
-  pass
- def Contains(self,item):
-  """
+        pass
+
+    def ClearPendingChanges(self, *args):
+        """ ClearPendingChanges(self: CollectionView) """
+        pass
+
+    def Contains(self, item):
+        """
   Contains(self: CollectionView,item: object) -> bool
 
   
@@ -972,9 +1085,10 @@ class CollectionView(DispatcherObject,ICollectionView,IEnumerable,INotifyCollect
 
    Returns: true if the item belongs to the view; otherwise,false.
   """
-  pass
- def DeferRefresh(self):
-  """
+        pass
+
+    def DeferRefresh(self):
+        """
   DeferRefresh(self: CollectionView) -> IDisposable
 
   
@@ -983,12 +1097,14 @@ class CollectionView(DispatcherObject,ICollectionView,IEnumerable,INotifyCollect
 
    Returns: An System.IDisposable object that you can use to dispose of the calling object.
   """
-  pass
- def DetachFromSourceCollection(self):
-  """ DetachFromSourceCollection(self: CollectionView) """
-  pass
- def GetEnumerator(self,*args):
-  """
+        pass
+
+    def DetachFromSourceCollection(self):
+        """ DetachFromSourceCollection(self: CollectionView) """
+        pass
+
+    def GetEnumerator(self, *args):
+        """
   GetEnumerator(self: CollectionView) -> IEnumerator
 
   
@@ -997,9 +1113,10 @@ class CollectionView(DispatcherObject,ICollectionView,IEnumerable,INotifyCollect
 
    Returns: An System.Collections.IEnumerator object that you can use to enumerate the items in the view.
   """
-  pass
- def GetItemAt(self,index):
-  """
+        pass
+
+    def GetItemAt(self, index):
+        """
   GetItemAt(self: CollectionView,index: int) -> object
 
   
@@ -1012,9 +1129,10 @@ class CollectionView(DispatcherObject,ICollectionView,IEnumerable,INotifyCollect
 
    Returns: The item at the specified zero-based index in the view.
   """
-  pass
- def IndexOf(self,item):
-  """
+        pass
+
+    def IndexOf(self, item):
+        """
   IndexOf(self: CollectionView,item: object) -> int
 
   
@@ -1026,9 +1144,10 @@ class CollectionView(DispatcherObject,ICollectionView,IEnumerable,INotifyCollect
    item: The item to locate.
 
     """
-  pass
- def MoveCurrentTo(self,item):
-  """
+        pass
+
+    def MoveCurrentTo(self, item):
+        """
   MoveCurrentTo(self: CollectionView,item: object) -> bool
 
   
@@ -1043,9 +1162,10 @@ class CollectionView(DispatcherObject,ICollectionView,IEnumerable,INotifyCollect
 
     otherwise,false.
   """
-  pass
- def MoveCurrentToFirst(self):
-  """
+        pass
+
+    def MoveCurrentToFirst(self):
+        """
   MoveCurrentToFirst(self: CollectionView) -> bool
 
   
@@ -1056,9 +1176,10 @@ class CollectionView(DispatcherObject,ICollectionView,IEnumerable,INotifyCollect
 
     otherwise,false.
   """
-  pass
- def MoveCurrentToLast(self):
-  """
+        pass
+
+    def MoveCurrentToLast(self):
+        """
   MoveCurrentToLast(self: CollectionView) -> bool
 
   
@@ -1069,9 +1190,10 @@ class CollectionView(DispatcherObject,ICollectionView,IEnumerable,INotifyCollect
 
     otherwise,false.
   """
-  pass
- def MoveCurrentToNext(self):
-  """
+        pass
+
+    def MoveCurrentToNext(self):
+        """
   MoveCurrentToNext(self: CollectionView) -> bool
 
   
@@ -1086,9 +1208,10 @@ class CollectionView(DispatcherObject,ICollectionView,IEnumerable,INotifyCollect
 
     otherwise,false.
   """
-  pass
- def MoveCurrentToPosition(self,position):
-  """
+        pass
+
+    def MoveCurrentToPosition(self, position):
+        """
   MoveCurrentToPosition(self: CollectionView,position: int) -> bool
 
   
@@ -1107,9 +1230,10 @@ class CollectionView(DispatcherObject,ICollectionView,IEnumerable,INotifyCollect
 
     otherwise,false.
   """
-  pass
- def MoveCurrentToPrevious(self):
-  """
+        pass
+
+    def MoveCurrentToPrevious(self):
+        """
   MoveCurrentToPrevious(self: CollectionView) -> bool
 
   
@@ -1124,9 +1248,10 @@ class CollectionView(DispatcherObject,ICollectionView,IEnumerable,INotifyCollect
 
     otherwise,false.
   """
-  pass
- def OKToChangeCurrent(self,*args):
-  """
+        pass
+
+    def OKToChangeCurrent(self, *args):
+        """
   OKToChangeCurrent(self: CollectionView) -> bool
 
   
@@ -1139,12 +1264,14 @@ class CollectionView(DispatcherObject,ICollectionView,IEnumerable,INotifyCollect
 
    Returns: false if a listener cancels the change; otherwise,true.
   """
-  pass
- def OnAllowsCrossThreadChangesChanged(self,*args):
-  """ OnAllowsCrossThreadChangesChanged(self: CollectionView) """
-  pass
- def OnBeginChangeLogging(self,*args):
-  """
+        pass
+
+    def OnAllowsCrossThreadChangesChanged(self, *args):
+        """ OnAllowsCrossThreadChangesChanged(self: CollectionView) """
+        pass
+
+    def OnBeginChangeLogging(self, *args):
+        """
   OnBeginChangeLogging(self: CollectionView,args: NotifyCollectionChangedEventArgs)
 
    Called by the base class to notify the derived class that an 
@@ -1161,9 +1288,10 @@ class CollectionView(DispatcherObject,ICollectionView,IEnumerable,INotifyCollect
 
     change log.
   """
-  pass
- def OnCollectionChanged(self,*args):
-  """
+        pass
+
+    def OnCollectionChanged(self, *args):
+        """
   OnCollectionChanged(self: CollectionView,sender: object,args: NotifyCollectionChangedEventArgs)
 
    Raises the System.Windows.Data.CollectionView.CollectionChanged event.
@@ -1188,16 +1316,18 @@ class CollectionView(DispatcherObject,ICollectionView,IEnumerable,INotifyCollect
 
     handler.
   """
-  pass
- def OnCurrentChanged(self,*args):
-  """
+        pass
+
+    def OnCurrentChanged(self, *args):
+        """
   OnCurrentChanged(self: CollectionView)
 
    Raises the System.Windows.Data.CollectionView.CurrentChanged event.
   """
-  pass
- def OnCurrentChanging(self,*args):
-  """
+        pass
+
+    def OnCurrentChanging(self, *args):
+        """
   OnCurrentChanging(self: CollectionView,args: CurrentChangingEventArgs)
 
    Raises the System.Windows.Data.CollectionView.CurrentChanging event with the specified arguments.
@@ -1210,9 +1340,10 @@ class CollectionView(DispatcherObject,ICollectionView,IEnumerable,INotifyCollect
 
    Raises a System.Windows.Data.CollectionView.CurrentChanging event that is not cancelable.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: CollectionView,e: PropertyChangedEventArgs)
 
    Raises the System.ComponentModel.INotifyPropertyChanged.PropertyChanged event using the 
@@ -1225,9 +1356,10 @@ class CollectionView(DispatcherObject,ICollectionView,IEnumerable,INotifyCollect
 
    e: Arguments of the event being raised.
   """
-  pass
- def PassesFilter(self,item):
-  """
+        pass
+
+    def PassesFilter(self, item):
+        """
   PassesFilter(self: CollectionView,item: object) -> bool
 
   
@@ -1246,9 +1378,10 @@ class CollectionView(DispatcherObject,ICollectionView,IEnumerable,INotifyCollect
 
     view; otherwise,false.
   """
-  pass
- def ProcessCollectionChanged(self,*args):
-  """
+        pass
+
+    def ProcessCollectionChanged(self, *args):
+        """
   ProcessCollectionChanged(self: CollectionView,args: NotifyCollectionChangedEventArgs)
 
    When overridden in a derived class,processes a single change on the UI�thread.
@@ -1257,41 +1390,48 @@ class CollectionView(DispatcherObject,ICollectionView,IEnumerable,INotifyCollect
 
    args: The System.Collections.Specialized.NotifyCollectionChangedEventArgs object to process.
   """
-  pass
- def ProcessPendingChanges(self,*args):
-  """ ProcessPendingChanges(self: CollectionView) """
-  pass
- def Refresh(self):
-  """
+        pass
+
+    def ProcessPendingChanges(self, *args):
+        """ ProcessPendingChanges(self: CollectionView) """
+        pass
+
+    def Refresh(self):
+        """
   Refresh(self: CollectionView)
 
    Re-creates the view.
   """
-  pass
- def RefreshOrDefer(self,*args):
-  """
+        pass
+
+    def RefreshOrDefer(self, *args):
+        """
   RefreshOrDefer(self: CollectionView)
 
    Refreshes the view or specifies that the view needs to be refreshed when the defer cycle 
 
     completes.
   """
-  pass
- def RefreshOverride(self,*args):
-  """
+        pass
+
+    def RefreshOverride(self, *args):
+        """
   RefreshOverride(self: CollectionView)
 
    Re-creates the view.
   """
-  pass
- def remove_CollectionChanged(self,*args):
-  """ remove_CollectionChanged(self: CollectionView,value: NotifyCollectionChangedEventHandler) """
-  pass
- def remove_PropertyChanged(self,*args):
-  """ remove_PropertyChanged(self: CollectionView,value: PropertyChangedEventHandler) """
-  pass
- def SetCurrent(self,*args):
-  """
+        pass
+
+    def remove_CollectionChanged(self, *args):
+        """ remove_CollectionChanged(self: CollectionView,value: NotifyCollectionChangedEventHandler) """
+        pass
+
+    def remove_PropertyChanged(self, *args):
+        """ remove_PropertyChanged(self: CollectionView,value: PropertyChangedEventHandler) """
+        pass
+
+    def SetCurrent(self, *args):
+        """
   SetCurrent(self: CollectionView,newItem: object,newPosition: int,count: int)
 
    Sets the specified item and index as the values of the 
@@ -1328,21 +1468,27 @@ class CollectionView(DispatcherObject,ICollectionView,IEnumerable,INotifyCollect
 
    newPosition: The value to set as the System.Windows.Data.CollectionView.CurrentPosition property value.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- @staticmethod
- def __new__(self,collection):
-  """ __new__(cls: type,collection: IEnumerable) """
-  pass
- AllowsCrossThreadChanges=property(lambda self: object(),lambda self,v: None,lambda self: None)
+        pass
 
- CanFilter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the view supports filtering.
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    @staticmethod
+    def __new__(self, collection):
+        """ __new__(cls: type,collection: IEnumerable) """
+        pass
+
+    AllowsCrossThreadChanges = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+
+    CanFilter = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether the view supports filtering.
 
 
 
@@ -1352,8 +1498,8 @@ Get: CanFilter(self: CollectionView) -> bool
 
 """
 
- CanGroup=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the view supports grouping.
+    CanGroup = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether the view supports grouping.
 
 
 
@@ -1363,8 +1509,8 @@ Get: CanGroup(self: CollectionView) -> bool
 
 """
 
- CanSort=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the view supports sorting.
+    CanSort = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether the view supports sorting.
 
 
 
@@ -1374,8 +1520,8 @@ Get: CanSort(self: CollectionView) -> bool
 
 """
 
- Comparer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns an object that you can use to compare items in the view.
+    Comparer = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns an object that you can use to compare items in the view.
 
 
 
@@ -1385,8 +1531,8 @@ Get: Comparer(self: CollectionView) -> IComparer
 
 """
 
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of records in the view.
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of records in the view.
 
 
 
@@ -1396,8 +1542,8 @@ Get: Count(self: CollectionView) -> int
 
 """
 
- Culture=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the culture information to use during sorting.
+    Culture = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the culture information to use during sorting.
 
 
 
@@ -1409,8 +1555,10 @@ Set: Culture(self: CollectionView)=value
 
 """
 
- CurrentItem=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the current item in the view.
+    CurrentItem = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the current item in the view.
 
 
 
@@ -1420,8 +1568,10 @@ Get: CurrentItem(self: CollectionView) -> object
 
 """
 
- CurrentPosition=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the ordinal position of the System.Windows.Data.CollectionView.CurrentItem within the (optionally sorted and filtered) view.
+    CurrentPosition = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the ordinal position of the System.Windows.Data.CollectionView.CurrentItem within the (optionally sorted and filtered) view.
 
 
 
@@ -1431,8 +1581,8 @@ Get: CurrentPosition(self: CollectionView) -> int
 
 """
 
- Filter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a method used to determine if an item is suitable for inclusion in the view.
+    Filter = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a method used to determine if an item is suitable for inclusion in the view.
 
 
 
@@ -1444,8 +1594,10 @@ Set: Filter(self: CollectionView)=value
 
 """
 
- GroupDescriptions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of System.ComponentModel.GroupDescription objects that describes how the items in the collection are grouped in the view.
+    GroupDescriptions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a collection of System.ComponentModel.GroupDescription objects that describes how the items in the collection are grouped in the view.
 
 
 
@@ -1455,8 +1607,8 @@ Get: GroupDescriptions(self: CollectionView) -> ObservableCollection[GroupDescri
 
 """
 
- Groups=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of the top-level groups that is constructed based on the System.Windows.Data.CollectionView.GroupDescriptions property.
+    Groups = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a collection of the top-level groups that is constructed based on the System.Windows.Data.CollectionView.GroupDescriptions property.
 
 
 
@@ -1466,8 +1618,10 @@ Get: Groups(self: CollectionView) -> ReadOnlyObservableCollection[object]
 
 """
 
- IsCurrentAfterLast=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.Windows.Data.CollectionView.CurrentItem of the view is beyond the end of the collection.
+    IsCurrentAfterLast = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.Windows.Data.CollectionView.CurrentItem of the view is beyond the end of the collection.
 
 
 
@@ -1477,8 +1631,10 @@ Get: IsCurrentAfterLast(self: CollectionView) -> bool
 
 """
 
- IsCurrentBeforeFirst=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.Windows.Data.CollectionView.CurrentItem of the view is before the beginning of the collection.
+    IsCurrentBeforeFirst = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.Windows.Data.CollectionView.CurrentItem of the view is before the beginning of the collection.
 
 
 
@@ -1488,22 +1644,24 @@ Get: IsCurrentBeforeFirst(self: CollectionView) -> bool
 
 """
 
- IsCurrentInSync=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.Windows.Data.CollectionView.CurrentItem is at the System.Windows.Data.CollectionView.CurrentPosition.
+    IsCurrentInSync = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.Windows.Data.CollectionView.CurrentItem is at the System.Windows.Data.CollectionView.CurrentPosition.
 
 
 
 """
 
- IsDynamic=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the underlying collection provides change notifications.
+    IsDynamic = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether the underlying collection provides change notifications.
 
 
 
 """
 
- IsEmpty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the resulting (filtered) view is empty.
+    IsEmpty = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether the resulting (filtered) view is empty.
 
 
 
@@ -1513,22 +1671,26 @@ Get: IsEmpty(self: CollectionView) -> bool
 
 """
 
- IsInUse=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsInUse(self: CollectionView) -> bool
+    IsInUse = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: IsInUse(self: CollectionView) -> bool
 
 
 
 """
 
- IsRefreshDeferred=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether there is an outstanding System.Windows.Data.CollectionView.DeferRefresh in use.
+    IsRefreshDeferred = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether there is an outstanding System.Windows.Data.CollectionView.DeferRefresh in use.
 
 
 
 """
 
- NeedsRefresh=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the view needs to be refreshed.
+    NeedsRefresh = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the view needs to be refreshed.
 
 
 
@@ -1538,8 +1700,10 @@ Get: NeedsRefresh(self: CollectionView) -> bool
 
 """
 
- SortDescriptions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of System.ComponentModel.SortDescription structures that describes how the items in the collection are sorted in the view.
+    SortDescriptions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a collection of System.ComponentModel.SortDescription structures that describes how the items in the collection are sorted in the view.
 
 
 
@@ -1549,8 +1713,10 @@ Get: SortDescriptions(self: CollectionView) -> SortDescriptionCollection
 
 """
 
- SourceCollection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the underlying unfiltered collection.
+    SourceCollection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns the underlying unfiltered collection.
 
 
 
@@ -1560,29 +1726,41 @@ Get: SourceCollection(self: CollectionView) -> IEnumerable
 
 """
 
- UpdatedOutsideDispatcher=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether it has been necessary to update the change log because a System.Windows.Data.CollectionView.CollectionChanged notification has been received on a different thread without first entering the user interface (UI) thread dispatcher.
+    UpdatedOutsideDispatcher = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether it has been necessary to update the change log because a System.Windows.Data.CollectionView.CollectionChanged notification has been received on a different thread without first entering the user interface (UI) thread dispatcher.
 
 
 
 """
 
+    CurrentChanged = None
+    CurrentChanging = None
+    NewItemPlaceholder = None
 
- CurrentChanged=None
- CurrentChanging=None
- NewItemPlaceholder=None
 
-
-class BindingListCollectionView(CollectionView,ICollectionView,IEnumerable,INotifyCollectionChanged,INotifyPropertyChanged,IComparer,IEditableCollectionView,ICollectionViewLiveShaping,IItemProperties):
- """
+class BindingListCollectionView(
+    CollectionView,
+    ICollectionView,
+    IEnumerable,
+    INotifyCollectionChanged,
+    INotifyPropertyChanged,
+    IComparer,
+    IEditableCollectionView,
+    ICollectionViewLiveShaping,
+    IItemProperties,
+):
+    """
  Represents the System.Windows.Data.CollectionView for collections that implement System.ComponentModel.IBindingList,such as Microsoft ActiveX Data Objects (ADO) data views.
 
  
 
  BindingListCollectionView(list: IBindingList)
  """
- def AddNew(self):
-  """
+
+    def AddNew(self):
+        """
   AddNew(self: BindingListCollectionView) -> object
 
   
@@ -1591,53 +1769,62 @@ class BindingListCollectionView(CollectionView,ICollectionView,IEnumerable,INoti
 
    Returns: The pending new item.
   """
-  pass
- def add_CollectionChanged(self,*args):
-  """ add_CollectionChanged(self: CollectionView,value: NotifyCollectionChangedEventHandler) """
-  pass
- def add_PropertyChanged(self,*args):
-  """ add_PropertyChanged(self: CollectionView,value: PropertyChangedEventHandler) """
-  pass
- def CancelEdit(self):
-  """
+        pass
+
+    def add_CollectionChanged(self, *args):
+        """ add_CollectionChanged(self: CollectionView,value: NotifyCollectionChangedEventHandler) """
+        pass
+
+    def add_PropertyChanged(self, *args):
+        """ add_PropertyChanged(self: CollectionView,value: PropertyChangedEventHandler) """
+        pass
+
+    def CancelEdit(self):
+        """
   CancelEdit(self: BindingListCollectionView)
 
    Ends the edit transaction and,if possible,restores the original value to the item.
   """
-  pass
- def CancelNew(self):
-  """
+        pass
+
+    def CancelNew(self):
+        """
   CancelNew(self: BindingListCollectionView)
 
    Ends the add transaction and discards the pending new item.
   """
-  pass
- def ClearChangeLog(self,*args):
-  """
+        pass
+
+    def ClearChangeLog(self, *args):
+        """
   ClearChangeLog(self: CollectionView)
 
    Clears any pending changes from the change log.
   """
-  pass
- def ClearPendingChanges(self,*args):
-  """ ClearPendingChanges(self: CollectionView) """
-  pass
- def CommitEdit(self):
-  """
+        pass
+
+    def ClearPendingChanges(self, *args):
+        """ ClearPendingChanges(self: CollectionView) """
+        pass
+
+    def CommitEdit(self):
+        """
   CommitEdit(self: BindingListCollectionView)
 
    Ends the edit transaction and saves the pending changes.
   """
-  pass
- def CommitNew(self):
-  """
+        pass
+
+    def CommitNew(self):
+        """
   CommitNew(self: BindingListCollectionView)
 
    Ends the add transaction and saves the pending new item.
   """
-  pass
- def Contains(self,item):
-  """
+        pass
+
+    def Contains(self, item):
+        """
   Contains(self: BindingListCollectionView,item: object) -> bool
 
   
@@ -1650,12 +1837,14 @@ class BindingListCollectionView(CollectionView,ICollectionView,IEnumerable,INoti
 
    Returns: true if the item belongs to the collection view; otherwise,false.
   """
-  pass
- def DetachFromSourceCollection(self):
-  """ DetachFromSourceCollection(self: BindingListCollectionView) """
-  pass
- def EditItem(self,item):
-  """
+        pass
+
+    def DetachFromSourceCollection(self):
+        """ DetachFromSourceCollection(self: BindingListCollectionView) """
+        pass
+
+    def EditItem(self, item):
+        """
   EditItem(self: BindingListCollectionView,item: object)
 
    Begins an edit transaction of the specified item.
@@ -1664,12 +1853,14 @@ class BindingListCollectionView(CollectionView,ICollectionView,IEnumerable,INoti
 
    item: The item to edit.
   """
-  pass
- def GetEnumerator(self,*args):
-  """ GetEnumerator(self: BindingListCollectionView) -> IEnumerator """
-  pass
- def GetItemAt(self,index):
-  """
+        pass
+
+    def GetEnumerator(self, *args):
+        """ GetEnumerator(self: BindingListCollectionView) -> IEnumerator """
+        pass
+
+    def GetItemAt(self, index):
+        """
   GetItemAt(self: BindingListCollectionView,index: int) -> object
 
   
@@ -1682,9 +1873,10 @@ class BindingListCollectionView(CollectionView,ICollectionView,IEnumerable,INoti
 
    Returns: The item at the specified position in the view.
   """
-  pass
- def IndexOf(self,item):
-  """
+        pass
+
+    def IndexOf(self, item):
+        """
   IndexOf(self: BindingListCollectionView,item: object) -> int
 
   
@@ -1697,9 +1889,10 @@ class BindingListCollectionView(CollectionView,ICollectionView,IEnumerable,INoti
 
    Returns: The index of the item in the collection,or -1 if the item does not exist in the collection view.
   """
-  pass
- def MoveCurrentToPosition(self,position):
-  """
+        pass
+
+    def MoveCurrentToPosition(self, position):
+        """
   MoveCurrentToPosition(self: BindingListCollectionView,position: int) -> bool
 
   
@@ -1718,9 +1911,10 @@ class BindingListCollectionView(CollectionView,ICollectionView,IEnumerable,INoti
 
     otherwise,false.
   """
-  pass
- def OKToChangeCurrent(self,*args):
-  """
+        pass
+
+    def OKToChangeCurrent(self, *args):
+        """
   OKToChangeCurrent(self: CollectionView) -> bool
 
   
@@ -1733,15 +1927,18 @@ class BindingListCollectionView(CollectionView,ICollectionView,IEnumerable,INoti
 
    Returns: false if a listener cancels the change; otherwise,true.
   """
-  pass
- def OnAllowsCrossThreadChangesChanged(self,*args):
-  """ OnAllowsCrossThreadChangesChanged(self: BindingListCollectionView) """
-  pass
- def OnBeginChangeLogging(self,*args):
-  """ OnBeginChangeLogging(self: BindingListCollectionView,args: NotifyCollectionChangedEventArgs) """
-  pass
- def OnCollectionChanged(self,*args):
-  """
+        pass
+
+    def OnAllowsCrossThreadChangesChanged(self, *args):
+        """ OnAllowsCrossThreadChangesChanged(self: BindingListCollectionView) """
+        pass
+
+    def OnBeginChangeLogging(self, *args):
+        """ OnBeginChangeLogging(self: BindingListCollectionView,args: NotifyCollectionChangedEventArgs) """
+        pass
+
+    def OnCollectionChanged(self, *args):
+        """
   OnCollectionChanged(self: CollectionView,sender: object,args: NotifyCollectionChangedEventArgs)
 
    Raises the System.Windows.Data.CollectionView.CollectionChanged event.
@@ -1766,16 +1963,18 @@ class BindingListCollectionView(CollectionView,ICollectionView,IEnumerable,INoti
 
     handler.
   """
-  pass
- def OnCurrentChanged(self,*args):
-  """
+        pass
+
+    def OnCurrentChanged(self, *args):
+        """
   OnCurrentChanged(self: CollectionView)
 
    Raises the System.Windows.Data.CollectionView.CurrentChanged event.
   """
-  pass
- def OnCurrentChanging(self,*args):
-  """
+        pass
+
+    def OnCurrentChanging(self, *args):
+        """
   OnCurrentChanging(self: CollectionView,args: CurrentChangingEventArgs)
 
    Raises the System.Windows.Data.CollectionView.CurrentChanging event with the specified arguments.
@@ -1788,9 +1987,10 @@ class BindingListCollectionView(CollectionView,ICollectionView,IEnumerable,INoti
 
    Raises a System.Windows.Data.CollectionView.CurrentChanging event that is not cancelable.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: CollectionView,e: PropertyChangedEventArgs)
 
    Raises the System.ComponentModel.INotifyPropertyChanged.PropertyChanged event using the 
@@ -1803,9 +2003,10 @@ class BindingListCollectionView(CollectionView,ICollectionView,IEnumerable,INoti
 
    e: Arguments of the event being raised.
   """
-  pass
- def PassesFilter(self,item):
-  """
+        pass
+
+    def PassesFilter(self, item):
+        """
   PassesFilter(self: BindingListCollectionView,item: object) -> bool
 
   
@@ -1824,27 +2025,32 @@ class BindingListCollectionView(CollectionView,ICollectionView,IEnumerable,INoti
 
     view; otherwise,false.
   """
-  pass
- def ProcessCollectionChanged(self,*args):
-  """ ProcessCollectionChanged(self: BindingListCollectionView,args: NotifyCollectionChangedEventArgs) """
-  pass
- def ProcessPendingChanges(self,*args):
-  """ ProcessPendingChanges(self: CollectionView) """
-  pass
- def RefreshOrDefer(self,*args):
-  """
+        pass
+
+    def ProcessCollectionChanged(self, *args):
+        """ ProcessCollectionChanged(self: BindingListCollectionView,args: NotifyCollectionChangedEventArgs) """
+        pass
+
+    def ProcessPendingChanges(self, *args):
+        """ ProcessPendingChanges(self: CollectionView) """
+        pass
+
+    def RefreshOrDefer(self, *args):
+        """
   RefreshOrDefer(self: CollectionView)
 
    Refreshes the view or specifies that the view needs to be refreshed when the defer cycle 
 
     completes.
   """
-  pass
- def RefreshOverride(self,*args):
-  """ RefreshOverride(self: BindingListCollectionView) """
-  pass
- def Remove(self,item):
-  """
+        pass
+
+    def RefreshOverride(self, *args):
+        """ RefreshOverride(self: BindingListCollectionView) """
+        pass
+
+    def Remove(self, item):
+        """
   Remove(self: BindingListCollectionView,item: object)
 
    Removes the specified item from the collection.
@@ -1853,9 +2059,10 @@ class BindingListCollectionView(CollectionView,ICollectionView,IEnumerable,INoti
 
    item: The item to remove.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: BindingListCollectionView,index: int)
 
    Removes the item at the specified position from the collection.
@@ -1864,15 +2071,18 @@ class BindingListCollectionView(CollectionView,ICollectionView,IEnumerable,INoti
 
    index: The zero-based index of the item to remove.
   """
-  pass
- def remove_CollectionChanged(self,*args):
-  """ remove_CollectionChanged(self: CollectionView,value: NotifyCollectionChangedEventHandler) """
-  pass
- def remove_PropertyChanged(self,*args):
-  """ remove_PropertyChanged(self: CollectionView,value: PropertyChangedEventHandler) """
-  pass
- def SetCurrent(self,*args):
-  """
+        pass
+
+    def remove_CollectionChanged(self, *args):
+        """ remove_CollectionChanged(self: CollectionView,value: NotifyCollectionChangedEventHandler) """
+        pass
+
+    def remove_PropertyChanged(self, *args):
+        """ remove_PropertyChanged(self: CollectionView,value: PropertyChangedEventHandler) """
+        pass
+
+    def SetCurrent(self, *args):
+        """
   SetCurrent(self: CollectionView,newItem: object,newPosition: int,count: int)
 
    Sets the specified item and index as the values of the 
@@ -1909,21 +2119,27 @@ class BindingListCollectionView(CollectionView,ICollectionView,IEnumerable,INoti
 
    newPosition: The value to set as the System.Windows.Data.CollectionView.CurrentPosition property value.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- @staticmethod
- def __new__(self,list):
-  """ __new__(cls: type,list: IBindingList) """
-  pass
- AllowsCrossThreadChanges=property(lambda self: object(),lambda self,v: None,lambda self: None)
+        pass
 
- CanAddNew=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether a new item can be added to the collection.
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    @staticmethod
+    def __new__(self, list):
+        """ __new__(cls: type,list: IBindingList) """
+        pass
+
+    AllowsCrossThreadChanges = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+
+    CanAddNew = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether a new item can be added to the collection.
 
 
 
@@ -1933,8 +2149,10 @@ Get: CanAddNew(self: BindingListCollectionView) -> bool
 
 """
 
- CanCancelEdit=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the collection view can discard pending changes and restore the original values of an edited object.
+    CanCancelEdit = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the collection view can discard pending changes and restore the original values of an edited object.
 
 
 
@@ -1944,29 +2162,37 @@ Get: CanCancelEdit(self: BindingListCollectionView) -> bool
 
 """
 
- CanChangeLiveFiltering=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: CanChangeLiveFiltering(self: BindingListCollectionView) -> bool
+    CanChangeLiveFiltering = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: CanChangeLiveFiltering(self: BindingListCollectionView) -> bool
 
 
 
 """
 
- CanChangeLiveGrouping=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: CanChangeLiveGrouping(self: BindingListCollectionView) -> bool
+    CanChangeLiveGrouping = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: CanChangeLiveGrouping(self: BindingListCollectionView) -> bool
 
 
 
 """
 
- CanChangeLiveSorting=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: CanChangeLiveSorting(self: BindingListCollectionView) -> bool
+    CanChangeLiveSorting = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: CanChangeLiveSorting(self: BindingListCollectionView) -> bool
 
 
 
 """
 
- CanCustomFilter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the view supports custom filtering.
+    CanCustomFilter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the view supports custom filtering.
 
 
 
@@ -1976,8 +2202,8 @@ Get: CanCustomFilter(self: BindingListCollectionView) -> bool
 
 """
 
- CanFilter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the view supports callback-based filtering.
+    CanFilter = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether the view supports callback-based filtering.
 
 
 
@@ -1987,8 +2213,8 @@ Get: CanFilter(self: BindingListCollectionView) -> bool
 
 """
 
- CanGroup=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the view supports grouping.
+    CanGroup = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether the view supports grouping.
 
 
 
@@ -1998,8 +2224,8 @@ Get: CanGroup(self: BindingListCollectionView) -> bool
 
 """
 
- CanRemove=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether an item can be removed from the collection.
+    CanRemove = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether an item can be removed from the collection.
 
 
 
@@ -2009,8 +2235,8 @@ Get: CanRemove(self: BindingListCollectionView) -> bool
 
 """
 
- CanSort=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the collection supports sorting.
+    CanSort = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether the collection supports sorting.
 
 
 
@@ -2020,8 +2246,8 @@ Get: CanSort(self: BindingListCollectionView) -> bool
 
 """
 
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the estimated number of records in the collection.
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the estimated number of records in the collection.
 
 
 
@@ -2031,8 +2257,10 @@ Get: Count(self: BindingListCollectionView) -> int
 
 """
 
- CurrentAddItem=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the item that is being added during the current add transaction.
+    CurrentAddItem = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the item that is being added during the current add transaction.
 
 
 
@@ -2042,8 +2270,10 @@ Get: CurrentAddItem(self: BindingListCollectionView) -> object
 
 """
 
- CurrentEditItem=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the item in the collection that is being edited.
+    CurrentEditItem = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the item in the collection that is being edited.
 
 
 
@@ -2053,8 +2283,10 @@ Get: CurrentEditItem(self: BindingListCollectionView) -> object
 
 """
 
- CustomFilter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a custom filter.
+    CustomFilter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a custom filter.
 
 
 
@@ -2066,8 +2298,10 @@ Set: CustomFilter(self: BindingListCollectionView)=value
 
 """
 
- GroupBySelector=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a delegate to select the System.ComponentModel.GroupDescription as a function of the parent group and its level.
+    GroupBySelector = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a delegate to select the System.ComponentModel.GroupDescription as a function of the parent group and its level.
 
 
 
@@ -2079,8 +2313,10 @@ Set: GroupBySelector(self: BindingListCollectionView)=value
 
 """
 
- GroupDescriptions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of System.ComponentModel.GroupDescription objects that describe how the items in the collection are grouped in the view.
+    GroupDescriptions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a collection of System.ComponentModel.GroupDescription objects that describe how the items in the collection are grouped in the view.
 
 
 
@@ -2090,8 +2326,8 @@ Get: GroupDescriptions(self: BindingListCollectionView) -> ObservableCollection[
 
 """
 
- Groups=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the top-level groups.
+    Groups = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the top-level groups.
 
 
 
@@ -2101,8 +2337,10 @@ Get: Groups(self: BindingListCollectionView) -> ReadOnlyObservableCollection[obj
 
 """
 
- IsAddingNew=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether an add transaction is in progress.
+    IsAddingNew = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether an add transaction is in progress.
 
 
 
@@ -2112,15 +2350,19 @@ Get: IsAddingNew(self: BindingListCollectionView) -> bool
 
 """
 
- IsCurrentInSync=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.Windows.Data.CollectionView.CurrentItem is at the System.Windows.Data.CollectionView.CurrentPosition.
+    IsCurrentInSync = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.Windows.Data.CollectionView.CurrentItem is at the System.Windows.Data.CollectionView.CurrentPosition.
 
 
 
 """
 
- IsDataInGroupOrder=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether the list of items (after applying the sort and filters,if any) is already in the correct order for grouping.
+    IsDataInGroupOrder = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether the list of items (after applying the sort and filters,if any) is already in the correct order for grouping.
 
 
 
@@ -2132,15 +2374,17 @@ Set: IsDataInGroupOrder(self: BindingListCollectionView)=value
 
 """
 
- IsDynamic=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the underlying collection provides change notifications.
+    IsDynamic = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether the underlying collection provides change notifications.
 
 
 
 """
 
- IsEditingItem=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether an edit transaction is in progress.
+    IsEditingItem = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether an edit transaction is in progress.
 
 
 
@@ -2150,8 +2394,8 @@ Get: IsEditingItem(self: BindingListCollectionView) -> bool
 
 """
 
- IsEmpty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns a value that indicates whether the resulting (filtered) view is empty.
+    IsEmpty = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns a value that indicates whether the resulting (filtered) view is empty.
 
 
 
@@ -2161,8 +2405,10 @@ Get: IsEmpty(self: BindingListCollectionView) -> bool
 
 """
 
- IsLiveFiltering=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsLiveFiltering(self: BindingListCollectionView) -> Nullable[bool]
+    IsLiveFiltering = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IsLiveFiltering(self: BindingListCollectionView) -> Nullable[bool]
 
 
 
@@ -2170,8 +2416,10 @@ Set: IsLiveFiltering(self: BindingListCollectionView)=value
 
 """
 
- IsLiveGrouping=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsLiveGrouping(self: BindingListCollectionView) -> Nullable[bool]
+    IsLiveGrouping = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IsLiveGrouping(self: BindingListCollectionView) -> Nullable[bool]
 
 
 
@@ -2179,8 +2427,10 @@ Set: IsLiveGrouping(self: BindingListCollectionView)=value
 
 """
 
- IsLiveSorting=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsLiveSorting(self: BindingListCollectionView) -> Nullable[bool]
+    IsLiveSorting = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IsLiveSorting(self: BindingListCollectionView) -> Nullable[bool]
 
 
 
@@ -2188,15 +2438,19 @@ Set: IsLiveSorting(self: BindingListCollectionView)=value
 
 """
 
- IsRefreshDeferred=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether there is an outstanding System.Windows.Data.CollectionView.DeferRefresh in use.
+    IsRefreshDeferred = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether there is an outstanding System.Windows.Data.CollectionView.DeferRefresh in use.
 
 
 
 """
 
- ItemProperties=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of objects that describes the properties of the items in the collection.
+    ItemProperties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a collection of objects that describes the properties of the items in the collection.
 
 
 
@@ -2206,29 +2460,37 @@ Get: ItemProperties(self: BindingListCollectionView) -> ReadOnlyCollection[ItemP
 
 """
 
- LiveFilteringProperties=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: LiveFilteringProperties(self: BindingListCollectionView) -> ObservableCollection[str]
+    LiveFilteringProperties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: LiveFilteringProperties(self: BindingListCollectionView) -> ObservableCollection[str]
 
 
 
 """
 
- LiveGroupingProperties=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: LiveGroupingProperties(self: BindingListCollectionView) -> ObservableCollection[str]
+    LiveGroupingProperties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: LiveGroupingProperties(self: BindingListCollectionView) -> ObservableCollection[str]
 
 
 
 """
 
- LiveSortingProperties=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: LiveSortingProperties(self: BindingListCollectionView) -> ObservableCollection[str]
+    LiveSortingProperties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: LiveSortingProperties(self: BindingListCollectionView) -> ObservableCollection[str]
 
 
 
 """
 
- NewItemPlaceholderPosition=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the position of the new item placeholder in the System.Windows.Data.BindingListCollectionView.
+    NewItemPlaceholderPosition = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the position of the new item placeholder in the System.Windows.Data.BindingListCollectionView.
 
 
 
@@ -2240,8 +2502,10 @@ Set: NewItemPlaceholderPosition(self: BindingListCollectionView)=value
 
 """
 
- SortDescriptions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of System.ComponentModel.SortDescription objects that describes how the items in the collection are sorted in the view.
+    SortDescriptions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a collection of System.ComponentModel.SortDescription objects that describes how the items in the collection are sorted in the view.
 
 
 
@@ -2251,63 +2515,77 @@ Get: SortDescriptions(self: BindingListCollectionView) -> SortDescriptionCollect
 
 """
 
- UpdatedOutsideDispatcher=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether it has been necessary to update the change log because a System.Windows.Data.CollectionView.CollectionChanged notification has been received on a different thread without first entering the user interface (UI) thread dispatcher.
+    UpdatedOutsideDispatcher = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether it has been necessary to update the change log because a System.Windows.Data.CollectionView.CollectionChanged notification has been received on a different thread without first entering the user interface (UI) thread dispatcher.
 
 
 
 """
 
 
-
-class BindingMode(Enum,IComparable,IFormattable,IConvertible):
- """
+class BindingMode(Enum, IComparable, IFormattable, IConvertible):
+    """
  Describes the direction of the data flow in a binding.
 
  
 
  enum BindingMode,values: Default (4),OneTime (2),OneWay (1),OneWayToSource (3),TwoWay (0)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Default=None
- OneTime=None
- OneWay=None
- OneWayToSource=None
- TwoWay=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Default = None
+    OneTime = None
+    OneWay = None
+    OneWayToSource = None
+    TwoWay = None
+    value__ = None
 
 
 class BindingOperations(object):
- """ Provides static methods to manipulate bindings,including System.Windows.Data.Binding,System.Windows.Data.MultiBinding,and System.Windows.Data.PriorityBinding objects. """
- @staticmethod
- def AccessCollection(collection,accessMethod,writeAccess):
-  """ AccessCollection(collection: IEnumerable,accessMethod: Action,writeAccess: bool) """
-  pass
- @staticmethod
- def ClearAllBindings(target):
-  """
+    """ Provides static methods to manipulate bindings,including System.Windows.Data.Binding,System.Windows.Data.MultiBinding,and System.Windows.Data.PriorityBinding objects. """
+
+    @staticmethod
+    def AccessCollection(collection, accessMethod, writeAccess):
+        """ AccessCollection(collection: IEnumerable,accessMethod: Action,writeAccess: bool) """
+        pass
+
+    @staticmethod
+    def ClearAllBindings(target):
+        """
   ClearAllBindings(target: DependencyObject)
 
    Removes all bindings,including bindings of type System.Windows.Data.Binding,
@@ -2322,10 +2600,11 @@ class BindingOperations(object):
 
    target: The object from which to remove bindings.
   """
-  pass
- @staticmethod
- def ClearBinding(target,dp):
-  """
+        pass
+
+    @staticmethod
+    def ClearBinding(target, dp):
+        """
   ClearBinding(target: DependencyObject,dp: DependencyProperty)
 
    Removes the binding from a property if there is one.
@@ -2336,18 +2615,21 @@ class BindingOperations(object):
 
    dp: The dependency property from which to remove the binding.
   """
-  pass
- @staticmethod
- def DisableCollectionSynchronization(collection):
-  """ DisableCollectionSynchronization(collection: IEnumerable) """
-  pass
- @staticmethod
- def EnableCollectionSynchronization(collection,*__args):
-  """ EnableCollectionSynchronization(collection: IEnumerable,lockObject: object)EnableCollectionSynchronization(collection: IEnumerable,context: object,synchronizationCallback: CollectionSynchronizationCallback) """
-  pass
- @staticmethod
- def GetBinding(target,dp):
-  """
+        pass
+
+    @staticmethod
+    def DisableCollectionSynchronization(collection):
+        """ DisableCollectionSynchronization(collection: IEnumerable) """
+        pass
+
+    @staticmethod
+    def EnableCollectionSynchronization(collection, *__args):
+        """ EnableCollectionSynchronization(collection: IEnumerable,lockObject: object)EnableCollectionSynchronization(collection: IEnumerable,context: object,synchronizationCallback: CollectionSynchronizationCallback) """
+        pass
+
+    @staticmethod
+    def GetBinding(target, dp):
+        """
   GetBinding(target: DependencyObject,dp: DependencyProperty) -> Binding
 
   
@@ -2364,10 +2646,11 @@ class BindingOperations(object):
 
     System.Windows.Data.Binding object has been set.
   """
-  pass
- @staticmethod
- def GetBindingBase(target,dp):
-  """
+        pass
+
+    @staticmethod
+    def GetBindingBase(target, dp):
+        """
   GetBindingBase(target: DependencyObject,dp: DependencyProperty) -> BindingBase
 
   
@@ -2384,10 +2667,11 @@ class BindingOperations(object):
 
     binding object has been set.
   """
-  pass
- @staticmethod
- def GetBindingExpression(target,dp):
-  """
+        pass
+
+    @staticmethod
+    def GetBindingExpression(target, dp):
+        """
   GetBindingExpression(target: DependencyObject,dp: DependencyProperty) -> BindingExpression
 
   
@@ -2414,10 +2698,11 @@ class BindingOperations(object):
 
     the System.Windows.Data.PriorityBindingExpression.ActiveBindingExpression is returned.
   """
-  pass
- @staticmethod
- def GetBindingExpressionBase(target,dp):
-  """
+        pass
+
+    @staticmethod
+    def GetBindingExpressionBase(target, dp):
+        """
   GetBindingExpressionBase(target: DependencyObject,dp: DependencyProperty) -> BindingExpressionBase
 
   
@@ -2442,10 +2727,11 @@ class BindingOperations(object):
 
     if no binding object has been set.
   """
-  pass
- @staticmethod
- def GetMultiBinding(target,dp):
-  """
+        pass
+
+    @staticmethod
+    def GetMultiBinding(target, dp):
+        """
   GetMultiBinding(target: DependencyObject,dp: DependencyProperty) -> MultiBinding
 
   
@@ -2462,10 +2748,11 @@ class BindingOperations(object):
 
     System.Windows.Data.MultiBinding object has been set.
   """
-  pass
- @staticmethod
- def GetMultiBindingExpression(target,dp):
-  """
+        pass
+
+    @staticmethod
+    def GetMultiBindingExpression(target, dp):
+        """
   GetMultiBindingExpression(target: DependencyObject,dp: DependencyProperty) -> MultiBindingExpression
 
   
@@ -2490,10 +2777,11 @@ class BindingOperations(object):
 
     if none exists.
   """
-  pass
- @staticmethod
- def GetPriorityBinding(target,dp):
-  """
+        pass
+
+    @staticmethod
+    def GetPriorityBinding(target, dp):
+        """
   GetPriorityBinding(target: DependencyObject,dp: DependencyProperty) -> PriorityBinding
 
   
@@ -2510,10 +2798,11 @@ class BindingOperations(object):
 
     System.Windows.Data.PriorityBinding object has been set.
   """
-  pass
- @staticmethod
- def GetPriorityBindingExpression(target,dp):
-  """
+        pass
+
+    @staticmethod
+    def GetPriorityBindingExpression(target, dp):
+        """
   GetPriorityBindingExpression(target: DependencyObject,dp: DependencyProperty) -> PriorityBindingExpression
 
   
@@ -2538,18 +2827,21 @@ class BindingOperations(object):
 
     null if none exists.
   """
-  pass
- @staticmethod
- def GetSourceUpdatingBindingGroups(root):
-  """ GetSourceUpdatingBindingGroups(root: DependencyObject) -> ReadOnlyCollection[BindingGroup] """
-  pass
- @staticmethod
- def GetSourceUpdatingBindings(root):
-  """ GetSourceUpdatingBindings(root: DependencyObject) -> ReadOnlyCollection[BindingExpressionBase] """
-  pass
- @staticmethod
- def IsDataBound(target,dp):
-  """
+        pass
+
+    @staticmethod
+    def GetSourceUpdatingBindingGroups(root):
+        """ GetSourceUpdatingBindingGroups(root: DependencyObject) -> ReadOnlyCollection[BindingGroup] """
+        pass
+
+    @staticmethod
+    def GetSourceUpdatingBindings(root):
+        """ GetSourceUpdatingBindings(root: DependencyObject) -> ReadOnlyCollection[BindingExpressionBase] """
+        pass
+
+    @staticmethod
+    def IsDataBound(target, dp):
+        """
   IsDataBound(target: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -2564,10 +2856,11 @@ class BindingOperations(object):
 
    Returns: true if the specified property is data-bound; otherwise,false.
   """
-  pass
- @staticmethod
- def SetBinding(target,dp,binding):
-  """
+        pass
+
+    @staticmethod
+    def SetBinding(target, dp, binding):
+        """
   SetBinding(target: DependencyObject,dp: DependencyProperty,binding: BindingBase) -> BindingExpressionBase
 
   
@@ -2594,88 +2887,104 @@ class BindingOperations(object):
 
     System.Windows.Data.PriorityBindingExpression.
   """
-  pass
- CollectionRegistering=None
- CollectionViewRegistering=None
- DisconnectedSource=None
- __all__=[
-  'AccessCollection',
-  'ClearAllBindings',
-  'ClearBinding',
-  'CollectionRegistering',
-  'CollectionViewRegistering',
-  'DisableCollectionSynchronization',
-  'EnableCollectionSynchronization',
-  'GetBinding',
-  'GetBindingBase',
-  'GetBindingExpression',
-  'GetBindingExpressionBase',
-  'GetMultiBinding',
-  'GetMultiBindingExpression',
-  'GetPriorityBinding',
-  'GetPriorityBindingExpression',
-  'GetSourceUpdatingBindingGroups',
-  'GetSourceUpdatingBindings',
-  'IsDataBound',
-  'SetBinding',
- ]
+        pass
+
+    CollectionRegistering = None
+    CollectionViewRegistering = None
+    DisconnectedSource = None
+    __all__ = [
+        "AccessCollection",
+        "ClearAllBindings",
+        "ClearBinding",
+        "CollectionRegistering",
+        "CollectionViewRegistering",
+        "DisableCollectionSynchronization",
+        "EnableCollectionSynchronization",
+        "GetBinding",
+        "GetBindingBase",
+        "GetBindingExpression",
+        "GetBindingExpressionBase",
+        "GetMultiBinding",
+        "GetMultiBindingExpression",
+        "GetPriorityBinding",
+        "GetPriorityBindingExpression",
+        "GetSourceUpdatingBindingGroups",
+        "GetSourceUpdatingBindings",
+        "IsDataBound",
+        "SetBinding",
+    ]
 
 
-class BindingStatus(Enum,IComparable,IFormattable,IConvertible):
- """
+class BindingStatus(Enum, IComparable, IFormattable, IConvertible):
+    """
  Describes the status of a binding.
 
  
 
  enum BindingStatus,values: Active (2),AsyncRequestPending (4),Detached (3),Inactive (1),PathError (5),Unattached (0),UpdateSourceError (7),UpdateTargetError (6)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Active=None
- AsyncRequestPending=None
- Detached=None
- Inactive=None
- PathError=None
- Unattached=None
- UpdateSourceError=None
- UpdateTargetError=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Active = None
+    AsyncRequestPending = None
+    Detached = None
+    Inactive = None
+    PathError = None
+    Unattached = None
+    UpdateSourceError = None
+    UpdateTargetError = None
+    value__ = None
 
 
-class CollectionContainer(DependencyObject,INotifyCollectionChanged,IWeakEventListener):
- """
+class CollectionContainer(
+    DependencyObject, INotifyCollectionChanged, IWeakEventListener
+):
+    """
  Holds an existing collection structure,such as an System.Collections.ObjectModel.ObservableCollection or a System.Data.DataSet,to be used inside a System.Windows.Data.CompositeCollection.
 
  
 
  CollectionContainer()
  """
- def add_CollectionChanged(self,*args):
-  """ add_CollectionChanged(self: CollectionContainer,value: NotifyCollectionChangedEventHandler) """
-  pass
- def OnContainedCollectionChanged(self,*args):
-  """
+
+    def add_CollectionChanged(self, *args):
+        """ add_CollectionChanged(self: CollectionContainer,value: NotifyCollectionChangedEventHandler) """
+        pass
+
+    def OnContainedCollectionChanged(self, *args):
+        """
   OnContainedCollectionChanged(self: CollectionContainer,args: NotifyCollectionChangedEventArgs)
 
    Raises the System.Windows.Data.CollectionContainer.CollectionChanged event.
@@ -2684,9 +2993,10 @@ class CollectionContainer(DependencyObject,INotifyCollectionChanged,IWeakEventLi
 
    args: The event data.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: DependencyObject,e: DependencyPropertyChangedEventArgs)
 
    Invoked whenever the effective value of any dependency property on this 
@@ -2703,9 +3013,10 @@ class CollectionContainer(DependencyObject,INotifyCollectionChanged,IWeakEventLi
 
     metadata for the type,and old and new values.
   """
-  pass
- def ReceiveWeakEvent(self,*args):
-  """
+        pass
+
+    def ReceiveWeakEvent(self, *args):
+        """
   ReceiveWeakEvent(self: CollectionContainer,managerType: Type,sender: object,e: EventArgs) -> bool
 
   
@@ -2726,12 +3037,14 @@ class CollectionContainer(DependencyObject,INotifyCollectionChanged,IWeakEventLi
 
    Returns: true if the listener handled the event; otherwise,false.
   """
-  pass
- def remove_CollectionChanged(self,*args):
-  """ remove_CollectionChanged(self: CollectionContainer,value: NotifyCollectionChangedEventHandler) """
-  pass
- def ShouldSerializeCollection(self):
-  """
+        pass
+
+    def remove_CollectionChanged(self, *args):
+        """ remove_CollectionChanged(self: CollectionContainer,value: NotifyCollectionChangedEventHandler) """
+        pass
+
+    def ShouldSerializeCollection(self):
+        """
   ShouldSerializeCollection(self: CollectionContainer) -> bool
 
   
@@ -2744,9 +3057,10 @@ class CollectionContainer(DependencyObject,INotifyCollectionChanged,IWeakEventLi
 
    Returns: true if the property value has changed from its default; otherwise,false.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -2763,12 +3077,16 @@ class CollectionContainer(DependencyObject,INotifyCollectionChanged,IWeakEventLi
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Collection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the collection to add.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Collection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the collection to add.
 
 
 
@@ -2780,35 +3098,39 @@ Set: Collection(self: CollectionContainer)=value
 
 """
 
-
- CollectionProperty=None
+    CollectionProperty = None
 
 
 class CollectionRegisteringEventArgs(EventArgs):
- # no doc
- Collection=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Collection(self: CollectionRegisteringEventArgs) -> IEnumerable
+    # no doc
+    Collection = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: Collection(self: CollectionRegisteringEventArgs) -> IEnumerable
 
 
 
 """
 
- Parent=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: Parent(self: CollectionRegisteringEventArgs) -> object
+    Parent = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Get: Parent(self: CollectionRegisteringEventArgs) -> object
 
 
 
 """
 
 
+class CollectionSynchronizationCallback(MulticastDelegate, ICloneable, ISerializable):
+    """ CollectionSynchronizationCallback(object: object,method: IntPtr) """
 
-class CollectionSynchronizationCallback(MulticastDelegate,ICloneable,ISerializable):
- """ CollectionSynchronizationCallback(object: object,method: IntPtr) """
- def BeginInvoke(self,collection,context,accessMethod,writeAccess,callback,object):
-  """ BeginInvoke(self: CollectionSynchronizationCallback,collection: IEnumerable,context: object,accessMethod: Action,writeAccess: bool,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+    def BeginInvoke(
+        self, collection, context, accessMethod, writeAccess, callback, object
+    ):
+        """ BeginInvoke(self: CollectionSynchronizationCallback,collection: IEnumerable,context: object,accessMethod: Action,writeAccess: bool,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -2821,9 +3143,10 @@ class CollectionSynchronizationCallback(MulticastDelegate,ICloneable,ISerializab
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -2842,12 +3165,14 @@ class CollectionSynchronizationCallback(MulticastDelegate,ICloneable,ISerializab
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: CollectionSynchronizationCallback,result: IAsyncResult) """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: CollectionSynchronizationCallback,result: IAsyncResult) """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -2856,12 +3181,14 @@ class CollectionSynchronizationCallback(MulticastDelegate,ICloneable,ISerializab
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,collection,context,accessMethod,writeAccess):
-  """ Invoke(self: CollectionSynchronizationCallback,collection: IEnumerable,context: object,accessMethod: Action,writeAccess: bool) """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, collection, context, accessMethod, writeAccess):
+        """ Invoke(self: CollectionSynchronizationCallback,collection: IEnumerable,context: object,accessMethod: Action,writeAccess: bool) """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -2880,24 +3207,30 @@ class CollectionSynchronizationCallback(MulticastDelegate,ICloneable,ISerializab
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
 
-class CollectionViewGroup(object,INotifyPropertyChanged):
- """ Represents a group created by a System.Windows.Data.CollectionView object based on the System.Windows.Data.CollectionView.GroupDescriptions. """
- def add_PropertyChanged(self,*args):
-  """ add_PropertyChanged(self: CollectionViewGroup,value: PropertyChangedEventHandler) """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+
+class CollectionViewGroup(object, INotifyPropertyChanged):
+    """ Represents a group created by a System.Windows.Data.CollectionView object based on the System.Windows.Data.CollectionView.GroupDescriptions. """
+
+    def add_PropertyChanged(self, *args):
+        """ add_PropertyChanged(self: CollectionViewGroup,value: PropertyChangedEventHandler) """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: CollectionViewGroup,e: PropertyChangedEventArgs)
 
    Raises the System.Windows.Data.CollectionViewGroup.PropertyChanged event using the provided 
@@ -2910,22 +3243,29 @@ class CollectionViewGroup(object,INotifyPropertyChanged):
 
    e: Arguments of the event being raised.
   """
-  pass
- def remove_PropertyChanged(self,*args):
-  """ remove_PropertyChanged(self: CollectionViewGroup,value: PropertyChangedEventHandler) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """ __new__(cls: type,name: object) """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- IsBottomLevel=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether this group has any subgroups.
+        pass
+
+    def remove_PropertyChanged(self, *args):
+        """ remove_PropertyChanged(self: CollectionViewGroup,value: PropertyChangedEventHandler) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """ __new__(cls: type,name: object) """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    IsBottomLevel = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether this group has any subgroups.
 
 
 
@@ -2935,8 +3275,8 @@ Get: IsBottomLevel(self: CollectionViewGroup) -> bool
 
 """
 
- ItemCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of items in the subtree under this group.
+    ItemCount = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of items in the subtree under this group.
 
 
 
@@ -2946,8 +3286,8 @@ Get: ItemCount(self: CollectionViewGroup) -> int
 
 """
 
- Items=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the immediate items contained in this group.
+    Items = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the immediate items contained in this group.
 
 
 
@@ -2957,8 +3297,8 @@ Get: Items(self: CollectionViewGroup) -> ReadOnlyObservableCollection[object]
 
 """
 
- Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the name of this group.
+    Name = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the name of this group.
 
 
 
@@ -2968,43 +3308,48 @@ Get: Name(self: CollectionViewGroup) -> object
 
 """
 
- ProtectedItemCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets and sets the number of items in the subtree under this group.
+    ProtectedItemCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets and sets the number of items in the subtree under this group.
 
 
 
 """
 
- ProtectedItems=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the immediate items contained in this group.
+    ProtectedItems = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the immediate items contained in this group.
 
 
 
 """
-
 
 
 class CollectionViewRegisteringEventArgs(EventArgs):
- # no doc
- CollectionView=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: CollectionView(self: CollectionViewRegisteringEventArgs) -> CollectionView
+    # no doc
+    CollectionView = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: CollectionView(self: CollectionViewRegisteringEventArgs) -> CollectionView
 
 
 
 """
 
 
-
-class CollectionViewSource(DependencyObject,ISupportInitialize,IWeakEventListener):
- """
+class CollectionViewSource(DependencyObject, ISupportInitialize, IWeakEventListener):
+    """
  The Extensible Application Markup Language (XAML) proxy of a�System.Windows.Data.CollectionView class.
 
  
 
  CollectionViewSource()
  """
- def DeferRefresh(self):
-  """
+
+    def DeferRefresh(self):
+        """
   DeferRefresh(self: CollectionViewSource) -> IDisposable
 
   
@@ -3013,10 +3358,11 @@ class CollectionViewSource(DependencyObject,ISupportInitialize,IWeakEventListene
 
    Returns: An System.IDisposable object that you can use to dispose of the calling object.
   """
-  pass
- @staticmethod
- def GetDefaultView(source):
-  """
+        pass
+
+    @staticmethod
+    def GetDefaultView(source):
+        """
   GetDefaultView(source: object) -> ICollectionView
 
   
@@ -3031,10 +3377,11 @@ class CollectionViewSource(DependencyObject,ISupportInitialize,IWeakEventListene
 
     source collection.
   """
-  pass
- @staticmethod
- def IsDefaultView(view):
-  """
+        pass
+
+    @staticmethod
+    def IsDefaultView(view):
+        """
   IsDefaultView(view: ICollectionView) -> bool
 
   
@@ -3055,9 +3402,10 @@ class CollectionViewSource(DependencyObject,ISupportInitialize,IWeakEventListene
 
     otherwise,false.
   """
-  pass
- def OnCollectionViewTypeChanged(self,*args):
-  """
+        pass
+
+    def OnCollectionViewTypeChanged(self, *args):
+        """
   OnCollectionViewTypeChanged(self: CollectionViewSource,oldCollectionViewType: Type,newCollectionViewType: Type)
 
    Invoked when the System.Windows.Data.CollectionViewSource.CollectionViewType property changes.
@@ -3068,9 +3416,10 @@ class CollectionViewSource(DependencyObject,ISupportInitialize,IWeakEventListene
 
    newCollectionViewType: The new value of the System.Windows.Data.CollectionViewSource.CollectionViewType property.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: DependencyObject,e: DependencyPropertyChangedEventArgs)
 
    Invoked whenever the effective value of any dependency property on this 
@@ -3087,9 +3436,10 @@ class CollectionViewSource(DependencyObject,ISupportInitialize,IWeakEventListene
 
     metadata for the type,and old and new values.
   """
-  pass
- def OnSourceChanged(self,*args):
-  """
+        pass
+
+    def OnSourceChanged(self, *args):
+        """
   OnSourceChanged(self: CollectionViewSource,oldSource: object,newSource: object)
 
    Invoked when the System.Windows.Data.CollectionViewSource.Source property changes.
@@ -3100,9 +3450,10 @@ class CollectionViewSource(DependencyObject,ISupportInitialize,IWeakEventListene
 
    newSource: The new value of the System.Windows.Data.CollectionViewSource.Source property.
   """
-  pass
- def ReceiveWeakEvent(self,*args):
-  """
+        pass
+
+    def ReceiveWeakEvent(self, *args):
+        """
   ReceiveWeakEvent(self: CollectionViewSource,managerType: Type,sender: object,e: EventArgs) -> bool
 
   
@@ -3123,9 +3474,10 @@ class CollectionViewSource(DependencyObject,ISupportInitialize,IWeakEventListene
 
    Returns: true if the listener handled the event; otherwise,false.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -3142,33 +3494,43 @@ class CollectionViewSource(DependencyObject,ISupportInitialize,IWeakEventListene
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- CanChangeLiveFiltering=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: CanChangeLiveFiltering(self: CollectionViewSource) -> bool
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    CanChangeLiveFiltering = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: CanChangeLiveFiltering(self: CollectionViewSource) -> bool
 
 
 
 """
 
- CanChangeLiveGrouping=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: CanChangeLiveGrouping(self: CollectionViewSource) -> bool
+    CanChangeLiveGrouping = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: CanChangeLiveGrouping(self: CollectionViewSource) -> bool
 
 
 
 """
 
- CanChangeLiveSorting=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: CanChangeLiveSorting(self: CollectionViewSource) -> bool
+    CanChangeLiveSorting = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: CanChangeLiveSorting(self: CollectionViewSource) -> bool
 
 
 
 """
 
- CollectionViewType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the desired view type.
+    CollectionViewType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the desired view type.
 
 
 
@@ -3180,8 +3542,8 @@ Set: CollectionViewType(self: CollectionViewSource)=value
 
 """
 
- Culture=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the culture that is used for operations such as sorting and comparisons.
+    Culture = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the culture that is used for operations such as sorting and comparisons.
 
 
 
@@ -3193,8 +3555,10 @@ Set: Culture(self: CollectionViewSource)=value
 
 """
 
- GroupDescriptions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a collection of System.ComponentModel.GroupDescription objects that describes how the items in the collection are grouped in the view.
+    GroupDescriptions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a collection of System.ComponentModel.GroupDescription objects that describes how the items in the collection are grouped in the view.
 
 
 
@@ -3204,15 +3568,19 @@ Get: GroupDescriptions(self: CollectionViewSource) -> ObservableCollection[Group
 
 """
 
- IsLiveFiltering=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsLiveFiltering(self: CollectionViewSource) -> Nullable[bool]
+    IsLiveFiltering = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IsLiveFiltering(self: CollectionViewSource) -> Nullable[bool]
 
 
 
 """
 
- IsLiveFilteringRequested=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsLiveFilteringRequested(self: CollectionViewSource) -> bool
+    IsLiveFilteringRequested = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IsLiveFilteringRequested(self: CollectionViewSource) -> bool
 
 
 
@@ -3220,15 +3588,19 @@ Set: IsLiveFilteringRequested(self: CollectionViewSource)=value
 
 """
 
- IsLiveGrouping=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsLiveGrouping(self: CollectionViewSource) -> Nullable[bool]
+    IsLiveGrouping = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IsLiveGrouping(self: CollectionViewSource) -> Nullable[bool]
 
 
 
 """
 
- IsLiveGroupingRequested=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsLiveGroupingRequested(self: CollectionViewSource) -> bool
+    IsLiveGroupingRequested = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IsLiveGroupingRequested(self: CollectionViewSource) -> bool
 
 
 
@@ -3236,15 +3608,19 @@ Set: IsLiveGroupingRequested(self: CollectionViewSource)=value
 
 """
 
- IsLiveSorting=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsLiveSorting(self: CollectionViewSource) -> Nullable[bool]
+    IsLiveSorting = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IsLiveSorting(self: CollectionViewSource) -> Nullable[bool]
 
 
 
 """
 
- IsLiveSortingRequested=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsLiveSortingRequested(self: CollectionViewSource) -> bool
+    IsLiveSortingRequested = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IsLiveSortingRequested(self: CollectionViewSource) -> bool
 
 
 
@@ -3252,29 +3628,37 @@ Set: IsLiveSortingRequested(self: CollectionViewSource)=value
 
 """
 
- LiveFilteringProperties=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: LiveFilteringProperties(self: CollectionViewSource) -> ObservableCollection[str]
+    LiveFilteringProperties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: LiveFilteringProperties(self: CollectionViewSource) -> ObservableCollection[str]
 
 
 
 """
 
- LiveGroupingProperties=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: LiveGroupingProperties(self: CollectionViewSource) -> ObservableCollection[str]
+    LiveGroupingProperties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: LiveGroupingProperties(self: CollectionViewSource) -> ObservableCollection[str]
 
 
 
 """
 
- LiveSortingProperties=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: LiveSortingProperties(self: CollectionViewSource) -> ObservableCollection[str]
+    LiveSortingProperties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: LiveSortingProperties(self: CollectionViewSource) -> ObservableCollection[str]
 
 
 
 """
 
- SortDescriptions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a collection of System.ComponentModel.SortDescription objects that describes how the items in the collection are sorted in the view.
+    SortDescriptions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a collection of System.ComponentModel.SortDescription objects that describes how the items in the collection are sorted in the view.
 
 
 
@@ -3284,8 +3668,8 @@ Get: SortDescriptions(self: CollectionViewSource) -> SortDescriptionCollection
 
 """
 
- Source=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the collection object from which to create this view.
+    Source = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the collection object from which to create this view.
 
 
 
@@ -3297,8 +3681,8 @@ Set: Source(self: CollectionViewSource)=value
 
 """
 
- View=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the view object that is currently associated with this instance of System.Windows.Data.CollectionViewSource.
+    View = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the view object that is currently associated with this instance of System.Windows.Data.CollectionViewSource.
 
 
 
@@ -3308,24 +3692,31 @@ Get: View(self: CollectionViewSource) -> ICollectionView
 
 """
 
+    CanChangeLiveFilteringProperty = None
+    CanChangeLiveGroupingProperty = None
+    CanChangeLiveSortingProperty = None
+    CollectionViewTypeProperty = None
+    Filter = None
+    IsLiveFilteringProperty = None
+    IsLiveFilteringRequestedProperty = None
+    IsLiveGroupingProperty = None
+    IsLiveGroupingRequestedProperty = None
+    IsLiveSortingProperty = None
+    IsLiveSortingRequestedProperty = None
+    SourceProperty = None
+    ViewProperty = None
 
- CanChangeLiveFilteringProperty=None
- CanChangeLiveGroupingProperty=None
- CanChangeLiveSortingProperty=None
- CollectionViewTypeProperty=None
- Filter=None
- IsLiveFilteringProperty=None
- IsLiveFilteringRequestedProperty=None
- IsLiveGroupingProperty=None
- IsLiveGroupingRequestedProperty=None
- IsLiveSortingProperty=None
- IsLiveSortingRequestedProperty=None
- SourceProperty=None
- ViewProperty=None
 
-
-class CompositeCollection(object,IList,ICollection,IEnumerable,INotifyCollectionChanged,ICollectionViewFactory,IWeakEventListener):
- """
+class CompositeCollection(
+    object,
+    IList,
+    ICollection,
+    IEnumerable,
+    INotifyCollectionChanged,
+    ICollectionViewFactory,
+    IWeakEventListener,
+):
+    """
  Enables multiple collections and items to be displayed as a single list.
 
  
@@ -3334,8 +3725,9 @@ class CompositeCollection(object,IList,ICollection,IEnumerable,INotifyCollection
 
  CompositeCollection(capacity: int)
  """
- def Add(self,newItem):
-  """
+
+    def Add(self, newItem):
+        """
   Add(self: CompositeCollection,newItem: object) -> int
 
   
@@ -3348,19 +3740,22 @@ class CompositeCollection(object,IList,ICollection,IEnumerable,INotifyCollection
 
    Returns: Zero-based index where the new item is added.
   """
-  pass
- def add_CollectionChanged(self,*args):
-  """ add_CollectionChanged(self: CompositeCollection,value: NotifyCollectionChangedEventHandler) """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def add_CollectionChanged(self, *args):
+        """ add_CollectionChanged(self: CompositeCollection,value: NotifyCollectionChangedEventHandler) """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: CompositeCollection)
 
    Clears the collection.
   """
-  pass
- def Contains(self,containItem):
-  """
+        pass
+
+    def Contains(self, containItem):
+        """
   Contains(self: CompositeCollection,containItem: object) -> bool
 
   
@@ -3373,9 +3768,10 @@ class CompositeCollection(object,IList,ICollection,IEnumerable,INotifyCollection
 
    Returns: true if the collection contains the given item; otherwise,false.
   """
-  pass
- def CopyTo(self,array,index):
-  """
+        pass
+
+    def CopyTo(self, array, index):
+        """
   CopyTo(self: CompositeCollection,array: Array,index: int)
 
    Makes a shallow copy of object references from this collection to the given array.
@@ -3386,9 +3782,10 @@ class CompositeCollection(object,IList,ICollection,IEnumerable,INotifyCollection
 
    index: Zero-based index in the target array at which the copying starts.
   """
-  pass
- def IndexOf(self,indexItem):
-  """
+        pass
+
+    def IndexOf(self, indexItem):
+        """
   IndexOf(self: CompositeCollection,indexItem: object) -> int
 
   
@@ -3403,9 +3800,10 @@ class CompositeCollection(object,IList,ICollection,IEnumerable,INotifyCollection
 
     given item is found; otherwise,-1.
   """
-  pass
- def Insert(self,insertIndex,insertItem):
-  """
+        pass
+
+    def Insert(self, insertIndex, insertItem):
+        """
   Insert(self: CompositeCollection,insertIndex: int,insertItem: object)
 
    Inserts an item in the collection at a given index. All items after the given position are moved 
@@ -3420,9 +3818,10 @@ class CompositeCollection(object,IList,ICollection,IEnumerable,INotifyCollection
 
    insertItem: The item reference to add to the collection.
   """
-  pass
- def ReceiveWeakEvent(self,*args):
-  """
+        pass
+
+    def ReceiveWeakEvent(self, *args):
+        """
   ReceiveWeakEvent(self: CompositeCollection,managerType: Type,sender: object,e: EventArgs) -> bool
 
   
@@ -3443,9 +3842,10 @@ class CompositeCollection(object,IList,ICollection,IEnumerable,INotifyCollection
 
    Returns: true if the listener handled the event; otherwise,false.
   """
-  pass
- def Remove(self,removeItem):
-  """
+        pass
+
+    def Remove(self, removeItem):
+        """
   Remove(self: CompositeCollection,removeItem: object)
 
    Removes the given item reference from the collection. All remaining items move up by one.
@@ -3454,9 +3854,10 @@ class CompositeCollection(object,IList,ICollection,IEnumerable,INotifyCollection
 
    removeItem: The item to remove.
   """
-  pass
- def RemoveAt(self,removeIndex):
-  """
+        pass
+
+    def RemoveAt(self, removeIndex):
+        """
   RemoveAt(self: CompositeCollection,removeIndex: int)
 
    Removes an item from the collection at the given index. All remaining items move up by one.
@@ -3465,15 +3866,18 @@ class CompositeCollection(object,IList,ICollection,IEnumerable,INotifyCollection
 
    removeIndex: The index at which to remove an item.
   """
-  pass
- def remove_CollectionChanged(self,*args):
-  """ remove_CollectionChanged(self: CompositeCollection,value: NotifyCollectionChangedEventHandler) """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def remove_CollectionChanged(self, *args):
+        """ remove_CollectionChanged(self: CompositeCollection,value: NotifyCollectionChangedEventHandler) """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IList,value: object) -> bool
 
   
@@ -3486,35 +3890,43 @@ class CompositeCollection(object,IList,ICollection,IEnumerable,INotifyCollection
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,capacity=None):
-  """
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, capacity=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,capacity: int)
   """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- def __setitem__(self,*args):
-  """ x.__setitem__(i,y) <==> x[i]= """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of items stored in this collection.
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    def __setitem__(self, *args):
+        """ x.__setitem__(i,y) <==> x[i]= """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of items stored in this collection.
 
 
 
@@ -3525,16 +3937,17 @@ Get: Count(self: CompositeCollection) -> int
 """
 
 
-
 class DataChangedEventManager(WeakEventManager):
- """ Provides a System.Windows.WeakEventManager implementation so that you can use the "weak event listener" pattern to attach listeners for the System.Windows.Data.DataSourceProvider.DataChanged event. """
- @staticmethod
- def AddHandler(source,handler):
-  """ AddHandler(source: DataSourceProvider,handler: EventHandler[EventArgs]) """
-  pass
- @staticmethod
- def AddListener(source,listener):
-  """
+    """ Provides a System.Windows.WeakEventManager implementation so that you can use the "weak event listener" pattern to attach listeners for the System.Windows.Data.DataSourceProvider.DataChanged event. """
+
+    @staticmethod
+    def AddHandler(source, handler):
+        """ AddHandler(source: DataSourceProvider,handler: EventHandler[EventArgs]) """
+        pass
+
+    @staticmethod
+    def AddListener(source, listener):
+        """
   AddListener(source: DataSourceProvider,listener: IWeakEventListener)
 
    Adds the specified listener to the System.Windows.Data.DataSourceProvider.DataChanged event of 
@@ -3549,14 +3962,16 @@ class DataChangedEventManager(WeakEventManager):
 
    listener: The object to add as a listener.
   """
-  pass
- @staticmethod
- def RemoveHandler(source,handler):
-  """ RemoveHandler(source: DataSourceProvider,handler: EventHandler[EventArgs]) """
-  pass
- @staticmethod
- def RemoveListener(source,listener):
-  """
+        pass
+
+    @staticmethod
+    def RemoveHandler(source, handler):
+        """ RemoveHandler(source: DataSourceProvider,handler: EventHandler[EventArgs]) """
+        pass
+
+    @staticmethod
+    def RemoveListener(source, listener):
+        """
   RemoveListener(source: DataSourceProvider,listener: IWeakEventListener)
 
    Removes the specified listener from the System.Windows.Data.DataSourceProvider.DataChanged event 
@@ -3571,27 +3986,28 @@ class DataChangedEventManager(WeakEventManager):
 
    listener: The listener to remove.
   """
-  pass
- ReadLock=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Establishes a read-lock on the underlying data table,and returns an System.IDisposable.
+        pass
+
+    ReadLock = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Establishes a read-lock on the underlying data table,and returns an System.IDisposable.
 
 
 
 """
 
- WriteLock=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Establishes a write-lock on the underlying data table,and returns an System.IDisposable.
+    WriteLock = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Establishes a write-lock on the underlying data table,and returns an System.IDisposable.
 
 
 
 """
-
 
 
 class DataTransferEventArgs(RoutedEventArgs):
- """ Encapsulates arguments for data transfer events. """
- Property=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the specific binding target property that is involved in the data transfer event.
+    """ Encapsulates arguments for data transfer events. """
+
+    Property = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the specific binding target property that is involved in the data transfer event.
 
 
 
@@ -3601,8 +4017,10 @@ Get: Property(self: DataTransferEventArgs) -> DependencyProperty
 
 """
 
- TargetObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the binding target object of the binding that raised the event.
+    TargetObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the binding target object of the binding that raised the event.
 
 
 
@@ -3613,14 +4031,15 @@ Get: TargetObject(self: DataTransferEventArgs) -> DependencyObject
 """
 
 
-
 class FilterEventArgs(EventArgs):
- """ Provides information and event data that is associated with the System.Windows.Data.CollectionViewSource.Filter event. """
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- Accepted=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether the item passes the filter.
+    """ Provides information and event data that is associated with the System.Windows.Data.CollectionViewSource.Filter event. """
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    Accepted = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value that indicates whether the item passes the filter.
 
 
 
@@ -3632,8 +4051,8 @@ Set: Accepted(self: FilterEventArgs)=value
 
 """
 
- Item=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the object that the filter should test.
+    Item = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the object that the filter should test.
 
 
 
@@ -3644,20 +4063,21 @@ Get: Item(self: FilterEventArgs) -> object
 """
 
 
-
-class FilterEventHandler(MulticastDelegate,ICloneable,ISerializable):
- """
+class FilterEventHandler(MulticastDelegate, ICloneable, ISerializable):
+    """
  Represents the method that will handle the System.Windows.Data.CollectionViewSource.Filter event.
 
  
 
  FilterEventHandler(object: object,method: IntPtr)
  """
- def BeginInvoke(self,sender,e,callback,object):
-  """ BeginInvoke(self: FilterEventHandler,sender: object,e: FilterEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+
+    def BeginInvoke(self, sender, e, callback, object):
+        """ BeginInvoke(self: FilterEventHandler,sender: object,e: FilterEventArgs,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -3670,9 +4090,10 @@ class FilterEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -3691,12 +4112,14 @@ class FilterEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: FilterEventHandler,result: IAsyncResult) """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: FilterEventHandler,result: IAsyncResult) """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -3705,12 +4128,14 @@ class FilterEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,sender,e):
-  """ Invoke(self: FilterEventHandler,sender: object,e: FilterEventArgs) """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, sender, e):
+        """ Invoke(self: FilterEventHandler,sender: object,e: FilterEventArgs) """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -3729,30 +4154,36 @@ class FilterEventHandler(MulticastDelegate,ICloneable,ISerializable):
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
 
-class GroupDescriptionSelectorCallback(MulticastDelegate,ICloneable,ISerializable):
- """
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+
+class GroupDescriptionSelectorCallback(MulticastDelegate, ICloneable, ISerializable):
+    """
  Represents a method that is used to provide custom logic to select the System.ComponentModel.GroupDescription based on the parent group and its level.
 
  
 
  GroupDescriptionSelectorCallback(object: object,method: IntPtr)
  """
- def BeginInvoke(self,group,level,callback,object):
-  """ BeginInvoke(self: GroupDescriptionSelectorCallback,group: CollectionViewGroup,level: int,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+
+    def BeginInvoke(self, group, level, callback, object):
+        """ BeginInvoke(self: GroupDescriptionSelectorCallback,group: CollectionViewGroup,level: int,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -3765,9 +4196,10 @@ class GroupDescriptionSelectorCallback(MulticastDelegate,ICloneable,ISerializabl
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -3786,12 +4218,14 @@ class GroupDescriptionSelectorCallback(MulticastDelegate,ICloneable,ISerializabl
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: GroupDescriptionSelectorCallback,result: IAsyncResult) -> GroupDescription """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: GroupDescriptionSelectorCallback,result: IAsyncResult) -> GroupDescription """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -3800,12 +4234,14 @@ class GroupDescriptionSelectorCallback(MulticastDelegate,ICloneable,ISerializabl
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,group,level):
-  """ Invoke(self: GroupDescriptionSelectorCallback,group: CollectionViewGroup,level: int) -> GroupDescription """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, group, level):
+        """ Invoke(self: GroupDescriptionSelectorCallback,group: CollectionViewGroup,level: int) -> GroupDescription """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -3824,21 +4260,26 @@ class GroupDescriptionSelectorCallback(MulticastDelegate,ICloneable,ISerializabl
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
 
 class IMultiValueConverter:
- """ Provides a way to apply custom logic in a System.Windows.Data.MultiBinding. """
- def Convert(self,values,targetType,parameter,culture):
-  """
+    """ Provides a way to apply custom logic in a System.Windows.Data.MultiBinding. """
+
+    def Convert(self, values, targetType, parameter, culture):
+        """
   Convert(self: IMultiValueConverter,values: Array[object],targetType: Type,parameter: object,culture: CultureInfo) -> object
 
   
@@ -3879,9 +4320,10 @@ class IMultiValueConverter:
 
     System.Windows.Data.BindingBase.FallbackValue or the default value.
   """
-  pass
- def ConvertBack(self,value,targetTypes,parameter,culture):
-  """
+        pass
+
+    def ConvertBack(self, value, targetTypes, parameter, culture):
+        """
   ConvertBack(self: IMultiValueConverter,value: object,targetTypes: Array[Type],parameter: object,culture: CultureInfo) -> Array[object]
 
   
@@ -3904,15 +4346,18 @@ class IMultiValueConverter:
 
    Returns: An array of values that have been converted from the target value back to the source values.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
 
 class IValueConverter:
- """ Provides a way to apply custom logic to a binding. """
- def Convert(self,value,targetType,parameter,culture):
-  """
+    """ Provides a way to apply custom logic to a binding. """
+
+    def Convert(self, value, targetType, parameter, culture):
+        """
   Convert(self: IValueConverter,value: object,targetType: Type,parameter: object,culture: CultureInfo) -> object
 
   
@@ -3931,9 +4376,10 @@ class IValueConverter:
 
    Returns: A converted value. If the method returns null,the valid null value is used.
   """
-  pass
- def ConvertBack(self,value,targetType,parameter,culture):
-  """
+        pass
+
+    def ConvertBack(self, value, targetType, parameter, culture):
+        """
   ConvertBack(self: IValueConverter,value: object,targetType: Type,parameter: object,culture: CultureInfo) -> object
 
   
@@ -3952,21 +4398,35 @@ class IValueConverter:
 
    Returns: A converted value. If the method returns null,the valid null value is used.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
+        pass
 
-class ListCollectionView(CollectionView,ICollectionView,IEnumerable,INotifyCollectionChanged,INotifyPropertyChanged,IComparer,IEditableCollectionViewAddNewItem,IEditableCollectionView,ICollectionViewLiveShaping,IItemProperties):
- """
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+
+class ListCollectionView(
+    CollectionView,
+    ICollectionView,
+    IEnumerable,
+    INotifyCollectionChanged,
+    INotifyPropertyChanged,
+    IComparer,
+    IEditableCollectionViewAddNewItem,
+    IEditableCollectionView,
+    ICollectionViewLiveShaping,
+    IItemProperties,
+):
+    """
  Represents the collection view for collections that implement System.Collections.IList.
 
  
 
  ListCollectionView(list: IList)
  """
- def AddNew(self):
-  """
+
+    def AddNew(self):
+        """
   AddNew(self: ListCollectionView) -> object
 
   
@@ -3975,9 +4435,10 @@ class ListCollectionView(CollectionView,ICollectionView,IEnumerable,INotifyColle
 
    Returns: The pending new item.
   """
-  pass
- def AddNewItem(self,newItem):
-  """
+        pass
+
+    def AddNewItem(self, newItem):
+        """
   AddNewItem(self: ListCollectionView,newItem: object) -> object
 
   
@@ -3990,53 +4451,62 @@ class ListCollectionView(CollectionView,ICollectionView,IEnumerable,INotifyColle
 
    Returns: The object that was added to the collection.
   """
-  pass
- def add_CollectionChanged(self,*args):
-  """ add_CollectionChanged(self: CollectionView,value: NotifyCollectionChangedEventHandler) """
-  pass
- def add_PropertyChanged(self,*args):
-  """ add_PropertyChanged(self: CollectionView,value: PropertyChangedEventHandler) """
-  pass
- def CancelEdit(self):
-  """
+        pass
+
+    def add_CollectionChanged(self, *args):
+        """ add_CollectionChanged(self: CollectionView,value: NotifyCollectionChangedEventHandler) """
+        pass
+
+    def add_PropertyChanged(self, *args):
+        """ add_PropertyChanged(self: CollectionView,value: PropertyChangedEventHandler) """
+        pass
+
+    def CancelEdit(self):
+        """
   CancelEdit(self: ListCollectionView)
 
    Ends the edit transaction,and if possible,restores the original value to the item.
   """
-  pass
- def CancelNew(self):
-  """
+        pass
+
+    def CancelNew(self):
+        """
   CancelNew(self: ListCollectionView)
 
    Ends the add transaction and discards the pending new item.
   """
-  pass
- def ClearChangeLog(self,*args):
-  """
+        pass
+
+    def ClearChangeLog(self, *args):
+        """
   ClearChangeLog(self: CollectionView)
 
    Clears any pending changes from the change log.
   """
-  pass
- def ClearPendingChanges(self,*args):
-  """ ClearPendingChanges(self: CollectionView) """
-  pass
- def CommitEdit(self):
-  """
+        pass
+
+    def ClearPendingChanges(self, *args):
+        """ ClearPendingChanges(self: CollectionView) """
+        pass
+
+    def CommitEdit(self):
+        """
   CommitEdit(self: ListCollectionView)
 
    Ends the edit transaction and saves the pending changes.
   """
-  pass
- def CommitNew(self):
-  """
+        pass
+
+    def CommitNew(self):
+        """
   CommitNew(self: ListCollectionView)
 
    Ends the add transaction and saves the pending new item.
   """
-  pass
- def Compare(self,*args):
-  """
+        pass
+
+    def Compare(self, *args):
+        """
   Compare(self: ListCollectionView,o1: object,o2: object) -> int
 
   
@@ -4057,9 +4527,10 @@ class ListCollectionView(CollectionView,ICollectionView,IEnumerable,INotifyColle
 
     greater than o2.
   """
-  pass
- def Contains(self,item):
-  """
+        pass
+
+    def Contains(self, item):
+        """
   Contains(self: ListCollectionView,item: object) -> bool
 
   
@@ -4072,9 +4543,10 @@ class ListCollectionView(CollectionView,ICollectionView,IEnumerable,INotifyColle
 
    Returns: true if the item belongs to the collection view; otherwise,false.
   """
-  pass
- def EditItem(self,item):
-  """
+        pass
+
+    def EditItem(self, item):
+        """
   EditItem(self: ListCollectionView,item: object)
 
    Begins an edit transaction of the specified item.
@@ -4083,9 +4555,10 @@ class ListCollectionView(CollectionView,ICollectionView,IEnumerable,INotifyColle
 
    item: The item to edit.
   """
-  pass
- def GetEnumerator(self,*args):
-  """
+        pass
+
+    def GetEnumerator(self, *args):
+        """
   GetEnumerator(self: ListCollectionView) -> IEnumerator
 
   
@@ -4094,9 +4567,10 @@ class ListCollectionView(CollectionView,ICollectionView,IEnumerable,INotifyColle
 
    Returns: An System.Collections.IEnumerator object that you can use to enumerate the items in the view.
   """
-  pass
- def GetItemAt(self,index):
-  """
+        pass
+
+    def GetItemAt(self, index):
+        """
   GetItemAt(self: ListCollectionView,index: int) -> object
 
   
@@ -4109,9 +4583,10 @@ class ListCollectionView(CollectionView,ICollectionView,IEnumerable,INotifyColle
 
    Returns: The item at the specified position in the view.
   """
-  pass
- def IndexOf(self,item):
-  """
+        pass
+
+    def IndexOf(self, item):
+        """
   IndexOf(self: ListCollectionView,item: object) -> int
 
   
@@ -4128,9 +4603,10 @@ class ListCollectionView(CollectionView,ICollectionView,IEnumerable,INotifyColle
 
    Returns: The index of the item in the collection,or -1 if the item does not exist in the collection.
   """
-  pass
- def InternalContains(self,*args):
-  """
+        pass
+
+    def InternalContains(self, *args):
+        """
   InternalContains(self: ListCollectionView,item: object) -> bool
 
   
@@ -4149,9 +4625,10 @@ class ListCollectionView(CollectionView,ICollectionView,IEnumerable,INotifyColle
 
     false.
   """
-  pass
- def InternalGetEnumerator(self,*args):
-  """
+        pass
+
+    def InternalGetEnumerator(self, *args):
+        """
   InternalGetEnumerator(self: ListCollectionView) -> IEnumerator
 
   
@@ -4160,9 +4637,10 @@ class ListCollectionView(CollectionView,ICollectionView,IEnumerable,INotifyColle
 
    Returns: An enumerator for the System.Windows.Data.ListCollectionView.InternalList.
   """
-  pass
- def InternalIndexOf(self,*args):
-  """
+        pass
+
+    def InternalIndexOf(self, *args):
+        """
   InternalIndexOf(self: ListCollectionView,item: object) -> int
 
   
@@ -4179,9 +4657,10 @@ class ListCollectionView(CollectionView,ICollectionView,IEnumerable,INotifyColle
 
    Returns: The index of the specified item in the System.Windows.Data.ListCollectionView.InternalList.
   """
-  pass
- def InternalItemAt(self,*args):
-  """
+        pass
+
+    def InternalItemAt(self, *args):
+        """
   InternalItemAt(self: ListCollectionView,index: int) -> object
 
   
@@ -4194,9 +4673,10 @@ class ListCollectionView(CollectionView,ICollectionView,IEnumerable,INotifyColle
 
    Returns: The item at the specified zero-based index in the view.
   """
-  pass
- def MoveCurrentToPosition(self,position):
-  """
+        pass
+
+    def MoveCurrentToPosition(self, position):
+        """
   MoveCurrentToPosition(self: ListCollectionView,position: int) -> bool
 
   
@@ -4215,9 +4695,10 @@ class ListCollectionView(CollectionView,ICollectionView,IEnumerable,INotifyColle
 
     otherwise,false.
   """
-  pass
- def OKToChangeCurrent(self,*args):
-  """
+        pass
+
+    def OKToChangeCurrent(self, *args):
+        """
   OKToChangeCurrent(self: CollectionView) -> bool
 
   
@@ -4230,12 +4711,14 @@ class ListCollectionView(CollectionView,ICollectionView,IEnumerable,INotifyColle
 
    Returns: false if a listener cancels the change; otherwise,true.
   """
-  pass
- def OnAllowsCrossThreadChangesChanged(self,*args):
-  """ OnAllowsCrossThreadChangesChanged(self: ListCollectionView) """
-  pass
- def OnBeginChangeLogging(self,*args):
-  """
+        pass
+
+    def OnAllowsCrossThreadChangesChanged(self, *args):
+        """ OnAllowsCrossThreadChangesChanged(self: ListCollectionView) """
+        pass
+
+    def OnBeginChangeLogging(self, *args):
+        """
   OnBeginChangeLogging(self: ListCollectionView,args: NotifyCollectionChangedEventArgs)
 
    Called by the base class to notify the derived class that a 
@@ -4252,9 +4735,10 @@ class ListCollectionView(CollectionView,ICollectionView,IEnumerable,INotifyColle
 
     change log.
   """
-  pass
- def OnCollectionChanged(self,*args):
-  """
+        pass
+
+    def OnCollectionChanged(self, *args):
+        """
   OnCollectionChanged(self: CollectionView,sender: object,args: NotifyCollectionChangedEventArgs)
 
    Raises the System.Windows.Data.CollectionView.CollectionChanged event.
@@ -4279,16 +4763,18 @@ class ListCollectionView(CollectionView,ICollectionView,IEnumerable,INotifyColle
 
     handler.
   """
-  pass
- def OnCurrentChanged(self,*args):
-  """
+        pass
+
+    def OnCurrentChanged(self, *args):
+        """
   OnCurrentChanged(self: CollectionView)
 
    Raises the System.Windows.Data.CollectionView.CurrentChanged event.
   """
-  pass
- def OnCurrentChanging(self,*args):
-  """
+        pass
+
+    def OnCurrentChanging(self, *args):
+        """
   OnCurrentChanging(self: CollectionView,args: CurrentChangingEventArgs)
 
    Raises the System.Windows.Data.CollectionView.CurrentChanging event with the specified arguments.
@@ -4301,9 +4787,10 @@ class ListCollectionView(CollectionView,ICollectionView,IEnumerable,INotifyColle
 
    Raises a System.Windows.Data.CollectionView.CurrentChanging event that is not cancelable.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: CollectionView,e: PropertyChangedEventArgs)
 
    Raises the System.ComponentModel.INotifyPropertyChanged.PropertyChanged event using the 
@@ -4316,9 +4803,10 @@ class ListCollectionView(CollectionView,ICollectionView,IEnumerable,INotifyColle
 
    e: Arguments of the event being raised.
   """
-  pass
- def PassesFilter(self,item):
-  """
+        pass
+
+    def PassesFilter(self, item):
+        """
   PassesFilter(self: ListCollectionView,item: object) -> bool
 
   
@@ -4337,9 +4825,10 @@ class ListCollectionView(CollectionView,ICollectionView,IEnumerable,INotifyColle
 
     view; otherwise,false.
   """
-  pass
- def ProcessCollectionChanged(self,*args):
-  """
+        pass
+
+    def ProcessCollectionChanged(self, *args):
+        """
   ProcessCollectionChanged(self: ListCollectionView,args: NotifyCollectionChangedEventArgs)
 
    Handles System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged events.
@@ -4348,28 +4837,32 @@ class ListCollectionView(CollectionView,ICollectionView,IEnumerable,INotifyColle
 
    args: The System.Collections.Specialized.NotifyCollectionChangedEventArgs object to process.
   """
-  pass
- def ProcessPendingChanges(self,*args):
-  """ ProcessPendingChanges(self: CollectionView) """
-  pass
- def RefreshOrDefer(self,*args):
-  """
+        pass
+
+    def ProcessPendingChanges(self, *args):
+        """ ProcessPendingChanges(self: CollectionView) """
+        pass
+
+    def RefreshOrDefer(self, *args):
+        """
   RefreshOrDefer(self: CollectionView)
 
    Refreshes the view or specifies that the view needs to be refreshed when the defer cycle 
 
     completes.
   """
-  pass
- def RefreshOverride(self,*args):
-  """
+        pass
+
+    def RefreshOverride(self, *args):
+        """
   RefreshOverride(self: ListCollectionView)
 
    Recreates the view.
   """
-  pass
- def Remove(self,item):
-  """
+        pass
+
+    def Remove(self, item):
+        """
   Remove(self: ListCollectionView,item: object)
 
    Removes the specified item from the collection.
@@ -4378,9 +4871,10 @@ class ListCollectionView(CollectionView,ICollectionView,IEnumerable,INotifyColle
 
    item: The item to remove.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: ListCollectionView,index: int)
 
    Removes the item at the specified position from the collection.
@@ -4389,15 +4883,18 @@ class ListCollectionView(CollectionView,ICollectionView,IEnumerable,INotifyColle
 
    index: The zero-based index of the item to remove.
   """
-  pass
- def remove_CollectionChanged(self,*args):
-  """ remove_CollectionChanged(self: CollectionView,value: NotifyCollectionChangedEventHandler) """
-  pass
- def remove_PropertyChanged(self,*args):
-  """ remove_PropertyChanged(self: CollectionView,value: PropertyChangedEventHandler) """
-  pass
- def SetCurrent(self,*args):
-  """
+        pass
+
+    def remove_CollectionChanged(self, *args):
+        """ remove_CollectionChanged(self: CollectionView,value: NotifyCollectionChangedEventHandler) """
+        pass
+
+    def remove_PropertyChanged(self, *args):
+        """ remove_PropertyChanged(self: CollectionView,value: PropertyChangedEventHandler) """
+        pass
+
+    def SetCurrent(self, *args):
+        """
   SetCurrent(self: CollectionView,newItem: object,newPosition: int,count: int)
 
    Sets the specified item and index as the values of the 
@@ -4434,35 +4931,45 @@ class ListCollectionView(CollectionView,ICollectionView,IEnumerable,INotifyColle
 
    newPosition: The value to set as the System.Windows.Data.CollectionView.CurrentPosition property value.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- @staticmethod
- def __new__(self,list):
-  """ __new__(cls: type,list: IList) """
-  pass
- ActiveComparer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the current active comparer that is used in sorting.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    @staticmethod
+    def __new__(self, list):
+        """ __new__(cls: type,list: IList) """
+        pass
+
+    ActiveComparer = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the current active comparer that is used in sorting.
 
 
 
 """
 
- ActiveFilter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the current active System.Windows.Data.CollectionView.Filter callback.
+    ActiveFilter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the current active System.Windows.Data.CollectionView.Filter callback.
 
 
 
 """
 
- AllowsCrossThreadChanges=property(lambda self: object(),lambda self,v: None,lambda self: None)
+    AllowsCrossThreadChanges = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
 
- CanAddNew=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether a new item can be added to the collection.
+    CanAddNew = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether a new item can be added to the collection.
 
 
 
@@ -4472,8 +4979,10 @@ Get: CanAddNew(self: ListCollectionView) -> bool
 
 """
 
- CanAddNewItem=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether a specified object can be added to the collection.
+    CanAddNewItem = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether a specified object can be added to the collection.
 
 
 
@@ -4483,8 +4992,10 @@ Get: CanAddNewItem(self: ListCollectionView) -> bool
 
 """
 
- CanCancelEdit=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the collection view can discard pending changes and restore the original values of an edited object.
+    CanCancelEdit = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the collection view can discard pending changes and restore the original values of an edited object.
 
 
 
@@ -4494,29 +5005,35 @@ Get: CanCancelEdit(self: ListCollectionView) -> bool
 
 """
 
- CanChangeLiveFiltering=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: CanChangeLiveFiltering(self: ListCollectionView) -> bool
+    CanChangeLiveFiltering = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: CanChangeLiveFiltering(self: ListCollectionView) -> bool
 
 
 
 """
 
- CanChangeLiveGrouping=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: CanChangeLiveGrouping(self: ListCollectionView) -> bool
+    CanChangeLiveGrouping = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: CanChangeLiveGrouping(self: ListCollectionView) -> bool
 
 
 
 """
 
- CanChangeLiveSorting=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: CanChangeLiveSorting(self: ListCollectionView) -> bool
+    CanChangeLiveSorting = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: CanChangeLiveSorting(self: ListCollectionView) -> bool
 
 
 
 """
 
- CanFilter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the view supports callback-based filtering.
+    CanFilter = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether the view supports callback-based filtering.
 
 
 
@@ -4526,8 +5043,8 @@ Get: CanFilter(self: ListCollectionView) -> bool
 
 """
 
- CanGroup=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the collection view supports grouping.
+    CanGroup = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether the collection view supports grouping.
 
 
 
@@ -4537,8 +5054,8 @@ Get: CanGroup(self: ListCollectionView) -> bool
 
 """
 
- CanRemove=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether an item can be removed from the collection.
+    CanRemove = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether an item can be removed from the collection.
 
 
 
@@ -4548,8 +5065,8 @@ Get: CanRemove(self: ListCollectionView) -> bool
 
 """
 
- CanSort=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the collection view supports sorting.
+    CanSort = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether the collection view supports sorting.
 
 
 
@@ -4559,8 +5076,8 @@ Get: CanSort(self: ListCollectionView) -> bool
 
 """
 
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the estimated number of records.
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the estimated number of records.
 
 
 
@@ -4570,8 +5087,10 @@ Get: Count(self: ListCollectionView) -> int
 
 """
 
- CurrentAddItem=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the item that is being added during the current add transaction.
+    CurrentAddItem = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the item that is being added during the current add transaction.
 
 
 
@@ -4581,8 +5100,10 @@ Get: CurrentAddItem(self: ListCollectionView) -> object
 
 """
 
- CurrentEditItem=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the item in the collection that is being edited.
+    CurrentEditItem = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the item in the collection that is being edited.
 
 
 
@@ -4592,8 +5113,10 @@ Get: CurrentEditItem(self: ListCollectionView) -> object
 
 """
 
- CustomSort=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a custom object that implements System.Collections.IComparer to sort items in the view.
+    CustomSort = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a custom object that implements System.Collections.IComparer to sort items in the view.
 
 
 
@@ -4605,8 +5128,8 @@ Set: CustomSort(self: ListCollectionView)=value
 
 """
 
- Filter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a method that is used to determine whether an item is suitable for inclusion in the view.
+    Filter = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a method that is used to determine whether an item is suitable for inclusion in the view.
 
 
 
@@ -4618,8 +5141,10 @@ Set: Filter(self: ListCollectionView)=value
 
 """
 
- GroupBySelector=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a delegate to select the System.ComponentModel.GroupDescription as a function of the parent group and its level.
+    GroupBySelector = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a delegate to select the System.ComponentModel.GroupDescription as a function of the parent group and its level.
 
 
 
@@ -4631,8 +5156,10 @@ Set: GroupBySelector(self: ListCollectionView)=value
 
 """
 
- GroupDescriptions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of System.ComponentModel.GroupDescription objects that describe how the items in the collection are grouped in the view.
+    GroupDescriptions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a collection of System.ComponentModel.GroupDescription objects that describe how the items in the collection are grouped in the view.
 
 
 
@@ -4642,8 +5169,8 @@ Get: GroupDescriptions(self: ListCollectionView) -> ObservableCollection[GroupDe
 
 """
 
- Groups=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the top-level groups.
+    Groups = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the top-level groups.
 
 
 
@@ -4653,22 +5180,28 @@ Get: Groups(self: ListCollectionView) -> ReadOnlyObservableCollection[object]
 
 """
 
- InternalCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of records in the System.Windows.Data.ListCollectionView.InternalList.
+    InternalCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the number of records in the System.Windows.Data.ListCollectionView.InternalList.
 
 
 
 """
 
- InternalList=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the complete and unfiltered underlying collection.
+    InternalList = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the complete and unfiltered underlying collection.
 
 
 
 """
 
- IsAddingNew=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether an add transaction is in progress.
+    IsAddingNew = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether an add transaction is in progress.
 
 
 
@@ -4678,15 +5211,19 @@ Get: IsAddingNew(self: ListCollectionView) -> bool
 
 """
 
- IsCurrentInSync=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the System.Windows.Data.CollectionView.CurrentItem is at the System.Windows.Data.CollectionView.CurrentPosition.
+    IsCurrentInSync = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether the System.Windows.Data.CollectionView.CurrentItem is at the System.Windows.Data.CollectionView.CurrentPosition.
 
 
 
 """
 
- IsDataInGroupOrder=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether the list of items (after applying the sort and filters,if any) is already in the correct order for grouping.
+    IsDataInGroupOrder = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether the list of items (after applying the sort and filters,if any) is already in the correct order for grouping.
 
 
 
@@ -4698,15 +5235,17 @@ Set: IsDataInGroupOrder(self: ListCollectionView)=value
 
 """
 
- IsDynamic=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether the underlying collection provides change notifications.
+    IsDynamic = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets a value that indicates whether the underlying collection provides change notifications.
 
 
 
 """
 
- IsEditingItem=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether an edit transaction is in progress.
+    IsEditingItem = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether an edit transaction is in progress.
 
 
 
@@ -4716,8 +5255,8 @@ Get: IsEditingItem(self: ListCollectionView) -> bool
 
 """
 
- IsEmpty=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns a value that indicates whether the resulting (filtered) view is empty.
+    IsEmpty = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns a value that indicates whether the resulting (filtered) view is empty.
 
 
 
@@ -4727,15 +5266,19 @@ Get: IsEmpty(self: ListCollectionView) -> bool
 
 """
 
- IsGrouping=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether there are groups in the view.
+    IsGrouping = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether there are groups in the view.
 
 
 
 """
 
- IsLiveFiltering=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsLiveFiltering(self: ListCollectionView) -> Nullable[bool]
+    IsLiveFiltering = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IsLiveFiltering(self: ListCollectionView) -> Nullable[bool]
 
 
 
@@ -4743,8 +5286,10 @@ Set: IsLiveFiltering(self: ListCollectionView)=value
 
 """
 
- IsLiveGrouping=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsLiveGrouping(self: ListCollectionView) -> Nullable[bool]
+    IsLiveGrouping = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IsLiveGrouping(self: ListCollectionView) -> Nullable[bool]
 
 
 
@@ -4752,8 +5297,10 @@ Set: IsLiveGrouping(self: ListCollectionView)=value
 
 """
 
- IsLiveSorting=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: IsLiveSorting(self: ListCollectionView) -> Nullable[bool]
+    IsLiveSorting = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: IsLiveSorting(self: ListCollectionView) -> Nullable[bool]
 
 
 
@@ -4761,15 +5308,19 @@ Set: IsLiveSorting(self: ListCollectionView)=value
 
 """
 
- IsRefreshDeferred=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether there is an outstanding System.Windows.Data.CollectionView.DeferRefresh in use.
+    IsRefreshDeferred = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether there is an outstanding System.Windows.Data.CollectionView.DeferRefresh in use.
 
 
 
 """
 
- ItemProperties=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of objects that describes the properties of the items in the collection.
+    ItemProperties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a collection of objects that describes the properties of the items in the collection.
 
 
 
@@ -4779,29 +5330,37 @@ Get: ItemProperties(self: ListCollectionView) -> ReadOnlyCollection[ItemProperty
 
 """
 
- LiveFilteringProperties=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: LiveFilteringProperties(self: ListCollectionView) -> ObservableCollection[str]
+    LiveFilteringProperties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: LiveFilteringProperties(self: ListCollectionView) -> ObservableCollection[str]
 
 
 
 """
 
- LiveGroupingProperties=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: LiveGroupingProperties(self: ListCollectionView) -> ObservableCollection[str]
+    LiveGroupingProperties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: LiveGroupingProperties(self: ListCollectionView) -> ObservableCollection[str]
 
 
 
 """
 
- LiveSortingProperties=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: LiveSortingProperties(self: ListCollectionView) -> ObservableCollection[str]
+    LiveSortingProperties = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: LiveSortingProperties(self: ListCollectionView) -> ObservableCollection[str]
 
 
 
 """
 
- NewItemPlaceholderPosition=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the position of the new item placeholder in the System.Windows.Data.ListCollectionView.
+    NewItemPlaceholderPosition = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the position of the new item placeholder in the System.Windows.Data.ListCollectionView.
 
 
 
@@ -4813,8 +5372,10 @@ Set: NewItemPlaceholderPosition(self: ListCollectionView)=value
 
 """
 
- SortDescriptions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a collection of System.ComponentModel.SortDescription objects that describes how the items in the collection are sorted in the view.
+    SortDescriptions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a collection of System.ComponentModel.SortDescription objects that describes how the items in the collection are sorted in the view.
 
 
 
@@ -4824,32 +5385,36 @@ Get: SortDescriptions(self: ListCollectionView) -> SortDescriptionCollection
 
 """
 
- UpdatedOutsideDispatcher=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether it has been necessary to update the change log because a System.Windows.Data.CollectionView.CollectionChanged notification has been received on a different thread without first entering the user interface (UI) thread dispatcher.
+    UpdatedOutsideDispatcher = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether it has been necessary to update the change log because a System.Windows.Data.CollectionView.CollectionChanged notification has been received on a different thread without first entering the user interface (UI) thread dispatcher.
 
 
 
 """
 
- UsesLocalArray=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether a private copy of the data is needed for sorting and filtering.
+    UsesLocalArray = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether a private copy of the data is needed for sorting and filtering.
 
 
 
 """
 
 
-
-class MultiBinding(BindingBase,IAddChild):
- """
+class MultiBinding(BindingBase, IAddChild):
+    """
  Describes a collection of System.Windows.Data.Binding objects attached to a single binding target property.
 
  
 
  MultiBinding()
  """
- def ShouldSerializeBindings(self):
-  """
+
+    def ShouldSerializeBindings(self):
+        """
   ShouldSerializeBindings(self: MultiBinding) -> bool
 
   
@@ -4858,9 +5423,10 @@ class MultiBinding(BindingBase,IAddChild):
 
    Returns: true if the property value has changed from its default; otherwise,false.
   """
-  pass
- def ShouldSerializeValidationRules(self):
-  """
+        pass
+
+    def ShouldSerializeValidationRules(self):
+        """
   ShouldSerializeValidationRules(self: MultiBinding) -> bool
 
   
@@ -4873,12 +5439,14 @@ class MultiBinding(BindingBase,IAddChild):
 
    Returns: true if the property value has changed from its default; otherwise,false.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Bindings=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of System.Windows.Data.Binding objects within this System.Windows.Data.MultiBinding instance.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Bindings = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the collection of System.Windows.Data.Binding objects within this System.Windows.Data.MultiBinding instance.
 
 
 
@@ -4888,8 +5456,8 @@ Get: Bindings(self: MultiBinding) -> Collection[BindingBase]
 
 """
 
- Converter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the converter to use to convert the source values to or from the target value.
+    Converter = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the converter to use to convert the source values to or from the target value.
 
 
 
@@ -4901,8 +5469,10 @@ Set: Converter(self: MultiBinding)=value
 
 """
 
- ConverterCulture=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Globalization.CultureInfo object that applies to any converter assigned to bindings wrapped by the System.Windows.Data.MultiBinding or on the System.Windows.Data.MultiBinding itself.
+    ConverterCulture = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Globalization.CultureInfo object that applies to any converter assigned to bindings wrapped by the System.Windows.Data.MultiBinding or on the System.Windows.Data.MultiBinding itself.
 
 
 
@@ -4914,8 +5484,10 @@ Set: ConverterCulture(self: MultiBinding)=value
 
 """
 
- ConverterParameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets an optional parameter to pass to a converter as additional information.
+    ConverterParameter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets an optional parameter to pass to a converter as additional information.
 
 
 
@@ -4927,8 +5499,8 @@ Set: ConverterParameter(self: MultiBinding)=value
 
 """
 
- Mode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates the direction of the data flow of this binding.
+    Mode = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a value that indicates the direction of the data flow of this binding.
 
 
 
@@ -4940,8 +5512,10 @@ Set: Mode(self: MultiBinding)=value
 
 """
 
- NotifyOnSourceUpdated=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether to raise the System.Windows.FrameworkElement.SourceUpdated event when a value is transferred from the binding target to the binding source.
+    NotifyOnSourceUpdated = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether to raise the System.Windows.FrameworkElement.SourceUpdated event when a value is transferred from the binding target to the binding source.
 
 
 
@@ -4953,8 +5527,10 @@ Set: NotifyOnSourceUpdated(self: MultiBinding)=value
 
 """
 
- NotifyOnTargetUpdated=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether to raise the System.Windows.FrameworkElement.TargetUpdated event when a value is transferred from the binding source to the binding target.
+    NotifyOnTargetUpdated = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether to raise the System.Windows.FrameworkElement.TargetUpdated event when a value is transferred from the binding source to the binding target.
 
 
 
@@ -4966,8 +5542,10 @@ Set: NotifyOnTargetUpdated(self: MultiBinding)=value
 
 """
 
- NotifyOnValidationError=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether to raise the System.Windows.Controls.Validation.Error�attached event on the bound element.
+    NotifyOnValidationError = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether to raise the System.Windows.Controls.Validation.Error�attached event on the bound element.
 
 
 
@@ -4979,8 +5557,10 @@ Set: NotifyOnValidationError(self: MultiBinding)=value
 
 """
 
- UpdateSourceExceptionFilter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a handler you can use to provide custom logic for handling exceptions that the binding engine encounters during the update of the binding source value. This is only applicable if you have associated the System.Windows.Controls.ExceptionValidationRule with your System.Windows.Data.MultiBinding object.
+    UpdateSourceExceptionFilter = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a handler you can use to provide custom logic for handling exceptions that the binding engine encounters during the update of the binding source value. This is only applicable if you have associated the System.Windows.Controls.ExceptionValidationRule with your System.Windows.Data.MultiBinding object.
 
 
 
@@ -4992,8 +5572,10 @@ Set: UpdateSourceExceptionFilter(self: MultiBinding)=value
 
 """
 
- UpdateSourceTrigger=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that determines the timing of binding source updates.
+    UpdateSourceTrigger = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that determines the timing of binding source updates.
 
 
 
@@ -5005,8 +5587,10 @@ Set: UpdateSourceTrigger(self: MultiBinding)=value
 
 """
 
- ValidatesOnDataErrors=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether to include the System.Windows.Controls.DataErrorValidationRule.
+    ValidatesOnDataErrors = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether to include the System.Windows.Controls.DataErrorValidationRule.
 
 
 
@@ -5018,8 +5602,10 @@ Set: ValidatesOnDataErrors(self: MultiBinding)=value
 
 """
 
- ValidatesOnExceptions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether to include the System.Windows.Controls.ExceptionValidationRule.
+    ValidatesOnExceptions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether to include the System.Windows.Controls.ExceptionValidationRule.
 
 
 
@@ -5031,8 +5617,10 @@ Set: ValidatesOnExceptions(self: MultiBinding)=value
 
 """
 
- ValidatesOnNotifyDataErrors=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: ValidatesOnNotifyDataErrors(self: MultiBinding) -> bool
+    ValidatesOnNotifyDataErrors = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: ValidatesOnNotifyDataErrors(self: MultiBinding) -> bool
 
 
 
@@ -5040,8 +5628,10 @@ Set: ValidatesOnNotifyDataErrors(self: MultiBinding)=value
 
 """
 
- ValidationRules=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of System.Windows.Controls.ValidationRule objects for this instance of System.Windows.Data.MultiBinding.
+    ValidationRules = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the collection of System.Windows.Controls.ValidationRule objects for this instance of System.Windows.Data.MultiBinding.
 
 
 
@@ -5052,11 +5642,13 @@ Get: ValidationRules(self: MultiBinding) -> Collection[ValidationRule]
 """
 
 
+class MultiBindingExpression(
+    BindingExpressionBase, IWeakEventListener, IDataBindEngineClient
+):
+    """ Contains instance information about a single instance of a System.Windows.Data.MultiBinding. """
 
-class MultiBindingExpression(BindingExpressionBase,IWeakEventListener,IDataBindEngineClient):
- """ Contains instance information about a single instance of a System.Windows.Data.MultiBinding. """
- def UpdateSource(self):
-  """
+    def UpdateSource(self):
+        """
   UpdateSource(self: MultiBindingExpression)
 
    Sends the current binding target value to the binding source properties in 
@@ -5065,19 +5657,24 @@ class MultiBindingExpression(BindingExpressionBase,IWeakEventListener,IDataBindE
 
     bindings.
   """
-  pass
- def UpdateTarget(self):
-  """
+        pass
+
+    def UpdateTarget(self):
+        """
   UpdateTarget(self: MultiBindingExpression)
 
    Forces a data transfer from the binding source properties to the binding target property.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- BindingExpressions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of System.Windows.Data.BindingExpression objects in this instance of System.Windows.Data.MultiBindingExpression.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    BindingExpressions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the collection of System.Windows.Data.BindingExpression objects in this instance of System.Windows.Data.MultiBindingExpression.
 
 
 
@@ -5087,8 +5684,8 @@ Get: BindingExpressions(self: MultiBindingExpression) -> ReadOnlyCollection[Bind
 
 """
 
- HasError=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns a value that indicates whether any of the inner System.Windows.Data.Binding objects or the System.Windows.Data.MultiBinding itself has a failing validation rule.
+    HasError = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns a value that indicates whether any of the inner System.Windows.Data.Binding objects or the System.Windows.Data.MultiBinding itself has a failing validation rule.
 
 
 
@@ -5098,15 +5695,19 @@ Get: HasError(self: MultiBindingExpression) -> bool
 
 """
 
- HasValidationError=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: HasValidationError(self: MultiBindingExpression) -> bool
+    HasValidationError = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: HasValidationError(self: MultiBindingExpression) -> bool
 
 
 
 """
 
- ParentMultiBinding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Data.MultiBinding object from which this System.Windows.Data.MultiBindingExpression is created.
+    ParentMultiBinding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Windows.Data.MultiBinding object from which this System.Windows.Data.MultiBindingExpression is created.
 
 
 
@@ -5116,8 +5717,10 @@ Get: ParentMultiBinding(self: MultiBindingExpression) -> MultiBinding
 
 """
 
- ValidationError=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Controls.ValidationError object that caused this instance of System.Windows.Data.MultiBindingExpression to be invalid.
+    ValidationError = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Windows.Controls.ValidationError object that caused this instance of System.Windows.Data.MultiBindingExpression to be invalid.
 
 
 
@@ -5128,20 +5731,23 @@ Get: ValidationError(self: MultiBindingExpression) -> ValidationError
 """
 
 
-
-class ObjectDataProvider(DataSourceProvider,INotifyPropertyChanged,ISupportInitialize):
- """
+class ObjectDataProvider(
+    DataSourceProvider, INotifyPropertyChanged, ISupportInitialize
+):
+    """
  Wraps and creates an object that you can use as a binding source.
 
  
 
  ObjectDataProvider()
  """
- def add_PropertyChanged(self,*args):
-  """ add_PropertyChanged(self: DataSourceProvider,value: PropertyChangedEventHandler) """
-  pass
- def BeginInit(self,*args):
-  """
+
+    def add_PropertyChanged(self, *args):
+        """ add_PropertyChanged(self: DataSourceProvider,value: PropertyChangedEventHandler) """
+        pass
+
+    def BeginInit(self, *args):
+        """
   BeginInit(self: DataSourceProvider)
 
    Indicates that initialization of this object is about to begin; no implicit 
@@ -5150,18 +5756,20 @@ class ObjectDataProvider(DataSourceProvider,INotifyPropertyChanged,ISupportIniti
 
     System.Windows.Data.DataSourceProvider.EndInit method is called.
   """
-  pass
- def BeginQuery(self,*args):
-  """
+        pass
+
+    def BeginQuery(self, *args):
+        """
   BeginQuery(self: ObjectDataProvider)
 
    Starts to create the requested object,either immediately or on a background thread,based on 
 
     the value of the System.Windows.Data.ObjectDataProvider.IsAsynchronous property.
   """
-  pass
- def EndInit(self,*args):
-  """
+        pass
+
+    def EndInit(self, *args):
+        """
   EndInit(self: DataSourceProvider)
 
    Indicates that the initialization of this object has completed; this causes a 
@@ -5170,9 +5778,10 @@ class ObjectDataProvider(DataSourceProvider,INotifyPropertyChanged,ISupportIniti
 
     System.Windows.Data.DataSourceProvider.DeferRefresh is outstanding.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: DataSourceProvider,e: PropertyChangedEventArgs)
 
    Raises the System.Windows.Data.DataSourceProvider.PropertyChanged event with the provided 
@@ -5185,9 +5794,10 @@ class ObjectDataProvider(DataSourceProvider,INotifyPropertyChanged,ISupportIniti
 
    e: Arguments of the event being raised.
   """
-  pass
- def OnQueryFinished(self,*args):
-  """
+        pass
+
+    def OnQueryFinished(self, *args):
+        """
   OnQueryFinished(self: DataSourceProvider,newData: object,error: Exception,completionWork: DispatcherOperationCallback,callbackArguments: object)
 
    Derived classes call this method to indicate that a query has finished.
@@ -5214,12 +5824,14 @@ class ObjectDataProvider(DataSourceProvider,INotifyPropertyChanged,ISupportIniti
 
    newData: The data that is the result of the query.
   """
-  pass
- def remove_PropertyChanged(self,*args):
-  """ remove_PropertyChanged(self: DataSourceProvider,value: PropertyChangedEventHandler) """
-  pass
- def ShouldSerializeConstructorParameters(self):
-  """
+        pass
+
+    def remove_PropertyChanged(self, *args):
+        """ remove_PropertyChanged(self: DataSourceProvider,value: PropertyChangedEventHandler) """
+        pass
+
+    def ShouldSerializeConstructorParameters(self):
+        """
   ShouldSerializeConstructorParameters(self: ObjectDataProvider) -> bool
 
   
@@ -5232,9 +5844,10 @@ class ObjectDataProvider(DataSourceProvider,INotifyPropertyChanged,ISupportIniti
 
    Returns: true if the property value has changed from its default; otherwise,false.
   """
-  pass
- def ShouldSerializeMethodParameters(self):
-  """
+        pass
+
+    def ShouldSerializeMethodParameters(self):
+        """
   ShouldSerializeMethodParameters(self: ObjectDataProvider) -> bool
 
   
@@ -5247,9 +5860,10 @@ class ObjectDataProvider(DataSourceProvider,INotifyPropertyChanged,ISupportIniti
 
    Returns: true if the property value has changed from its default; otherwise,false.
   """
-  pass
- def ShouldSerializeObjectInstance(self):
-  """
+        pass
+
+    def ShouldSerializeObjectInstance(self):
+        """
   ShouldSerializeObjectInstance(self: ObjectDataProvider) -> bool
 
   
@@ -5262,9 +5876,10 @@ class ObjectDataProvider(DataSourceProvider,INotifyPropertyChanged,ISupportIniti
 
    Returns: true if the property value has changed from its default; otherwise,false.
   """
-  pass
- def ShouldSerializeObjectType(self):
-  """
+        pass
+
+    def ShouldSerializeObjectType(self):
+        """
   ShouldSerializeObjectType(self: ObjectDataProvider) -> bool
 
   
@@ -5277,12 +5892,16 @@ class ObjectDataProvider(DataSourceProvider,INotifyPropertyChanged,ISupportIniti
 
    Returns: true if the property value has changed from its default; otherwise,false.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- ConstructorParameters=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of parameters to pass to the constructor.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    ConstructorParameters = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the list of parameters to pass to the constructor.
 
 
 
@@ -5292,15 +5911,19 @@ Get: ConstructorParameters(self: ObjectDataProvider) -> IList
 
 """
 
- Dispatcher=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the current System.Windows.Threading.Dispatcher object to the UI�thread to use.
+    Dispatcher = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the current System.Windows.Threading.Dispatcher object to the UI�thread to use.
 
 
 
 """
 
- IsAsynchronous=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether to perform object creation in a worker thread or in the active context.
+    IsAsynchronous = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether to perform object creation in a worker thread or in the active context.
 
 
 
@@ -5312,15 +5935,19 @@ Set: IsAsynchronous(self: ObjectDataProvider)=value
 
 """
 
- IsRefreshDeferred=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether there is an outstanding System.Windows.Data.DataSourceProvider.DeferRefresh in use.
+    IsRefreshDeferred = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether there is an outstanding System.Windows.Data.DataSourceProvider.DeferRefresh in use.
 
 
 
 """
 
- MethodName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the method to call.
+    MethodName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the method to call.
 
 
 
@@ -5332,8 +5959,10 @@ Set: MethodName(self: ObjectDataProvider)=value
 
 """
 
- MethodParameters=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the list of parameters to pass to the method.
+    MethodParameters = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the list of parameters to pass to the method.
 
 
 
@@ -5343,8 +5972,10 @@ Get: MethodParameters(self: ObjectDataProvider) -> IList
 
 """
 
- ObjectInstance=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the object used as the binding source.
+    ObjectInstance = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the object used as the binding source.
 
 
 
@@ -5356,8 +5987,10 @@ Set: ObjectInstance(self: ObjectDataProvider)=value
 
 """
 
- ObjectType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the type of object to create an instance of.
+    ObjectType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the type of object to create an instance of.
 
 
 
@@ -5370,17 +6003,17 @@ Set: ObjectType(self: ObjectDataProvider)=value
 """
 
 
-
-class PriorityBinding(BindingBase,IAddChild):
- """
+class PriorityBinding(BindingBase, IAddChild):
+    """
  Describes a collection of System.Windows.Data.Binding objects that is attached to a single binding target property,which receives its value from the first binding in the collection that produces a value successfully.
 
  
 
  PriorityBinding()
  """
- def ShouldSerializeBindings(self):
-  """
+
+    def ShouldSerializeBindings(self):
+        """
   ShouldSerializeBindings(self: PriorityBinding) -> bool
 
   
@@ -5395,12 +6028,14 @@ class PriorityBinding(BindingBase,IAddChild):
 
     otherwise,false.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Bindings=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of System.Windows.Data.Binding objects that is established for this instance of System.Windows.Data.PriorityBinding.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Bindings = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the collection of System.Windows.Data.Binding objects that is established for this instance of System.Windows.Data.PriorityBinding.
 
 
 
@@ -5411,28 +6046,33 @@ Get: Bindings(self: PriorityBinding) -> Collection[BindingBase]
 """
 
 
+class PriorityBindingExpression(BindingExpressionBase, IWeakEventListener):
+    """ Contains instance information about a single instance of a System.Windows.Data.PriorityBinding. """
 
-class PriorityBindingExpression(BindingExpressionBase,IWeakEventListener):
- """ Contains instance information about a single instance of a System.Windows.Data.PriorityBinding. """
- def UpdateSource(self):
-  """
+    def UpdateSource(self):
+        """
   UpdateSource(self: PriorityBindingExpression)
 
    Updates the source on the active binding.
   """
-  pass
- def UpdateTarget(self):
-  """
+        pass
+
+    def UpdateTarget(self):
+        """
   UpdateTarget(self: PriorityBindingExpression)
 
    Updates the target on the active binding.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- ActiveBindingExpression=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the active System.Windows.Data.BindingExpression object.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    ActiveBindingExpression = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the active System.Windows.Data.BindingExpression object.
 
 
 
@@ -5442,8 +6082,10 @@ Get: ActiveBindingExpression(self: PriorityBindingExpression) -> BindingExpressi
 
 """
 
- BindingExpressions=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of System.Windows.Data.BindingExpression objects inside this instance of System.Windows.Data.PriorityBindingExpression.
+    BindingExpressions = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the collection of System.Windows.Data.BindingExpression objects inside this instance of System.Windows.Data.PriorityBindingExpression.
 
 
 
@@ -5453,15 +6095,19 @@ Get: BindingExpressions(self: PriorityBindingExpression) -> ReadOnlyCollection[B
 
 """
 
- HasValidationError=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Get: HasValidationError(self: PriorityBindingExpression) -> bool
+    HasValidationError = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Get: HasValidationError(self: PriorityBindingExpression) -> bool
 
 
 
 """
 
- ParentPriorityBinding=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Data.PriorityBinding object from which this System.Windows.Data.PriorityBindingExpression is created.
+    ParentPriorityBinding = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Windows.Data.PriorityBinding object from which this System.Windows.Data.PriorityBindingExpression is created.
 
 
 
@@ -5472,9 +6118,8 @@ Get: ParentPriorityBinding(self: PriorityBindingExpression) -> PriorityBinding
 """
 
 
-
-class PropertyGroupDescription(GroupDescription,INotifyPropertyChanged):
- """
+class PropertyGroupDescription(GroupDescription, INotifyPropertyChanged):
+    """
  Describes the grouping of items using a property name as the criteria.
 
  
@@ -5487,11 +6132,13 @@ class PropertyGroupDescription(GroupDescription,INotifyPropertyChanged):
 
  PropertyGroupDescription(propertyName: str,converter: IValueConverter,stringComparison: StringComparison)
  """
- def add_PropertyChanged(self,*args):
-  """ add_PropertyChanged(self: GroupDescription,value: PropertyChangedEventHandler) """
-  pass
- def GroupNameFromItem(self,item,level,culture):
-  """
+
+    def add_PropertyChanged(self, *args):
+        """ add_PropertyChanged(self: GroupDescription,value: PropertyChangedEventHandler) """
+        pass
+
+    def GroupNameFromItem(self, item, level, culture):
+        """
   GroupNameFromItem(self: PropertyGroupDescription,item: object,level: int,culture: CultureInfo) -> object
 
   
@@ -5508,9 +6155,10 @@ class PropertyGroupDescription(GroupDescription,INotifyPropertyChanged):
 
    Returns: The group name(s) for the given item.
   """
-  pass
- def NamesMatch(self,groupName,itemName):
-  """
+        pass
+
+    def NamesMatch(self, groupName, itemName):
+        """
   NamesMatch(self: PropertyGroupDescription,groupName: object,itemName: object) -> bool
 
   
@@ -5529,9 +6177,10 @@ class PropertyGroupDescription(GroupDescription,INotifyPropertyChanged):
 
    Returns: true if the names match and the item belongs to the group; otherwise,false.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: GroupDescription,e: PropertyChangedEventArgs)
 
    Raises the System.ComponentModel.GroupDescription.PropertyChanged event.
@@ -5540,16 +6189,19 @@ class PropertyGroupDescription(GroupDescription,INotifyPropertyChanged):
 
    e: Arguments of the event being raised.
   """
-  pass
- def remove_PropertyChanged(self,*args):
-  """ remove_PropertyChanged(self: GroupDescription,value: PropertyChangedEventHandler) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,propertyName=None,converter=None,stringComparison=None):
-  """
+        pass
+
+    def remove_PropertyChanged(self, *args):
+        """ remove_PropertyChanged(self: GroupDescription,value: PropertyChangedEventHandler) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, propertyName=None, converter=None, stringComparison=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,propertyName: str)
@@ -5558,9 +6210,10 @@ class PropertyGroupDescription(GroupDescription,INotifyPropertyChanged):
 
   __new__(cls: type,propertyName: str,converter: IValueConverter,stringComparison: StringComparison)
   """
-  pass
- Converter=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a converter to apply to the property value or the item to produce the final value that is used to determine which group(s) an item belongs to.
+        pass
+
+    Converter = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a converter to apply to the property value or the item to produce the final value that is used to determine which group(s) an item belongs to.
 
 
 
@@ -5572,8 +6225,10 @@ Set: Converter(self: PropertyGroupDescription)=value
 
 """
 
- PropertyName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the property that is used to determine which group(s) an item belongs to.
+    PropertyName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the property that is used to determine which group(s) an item belongs to.
 
 
 
@@ -5585,8 +6240,10 @@ Set: PropertyName(self: PropertyGroupDescription)=value
 
 """
 
- StringComparison=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a System.StringComparison value that specifies the comparison between the value of an item (as determined by System.Windows.Data.PropertyGroupDescription.PropertyName and System.Windows.Data.PropertyGroupDescription.Converter) and the name of a group.
+    StringComparison = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a System.StringComparison value that specifies the comparison between the value of an item (as determined by System.Windows.Data.PropertyGroupDescription.PropertyName and System.Windows.Data.PropertyGroupDescription.Converter) and the name of a group.
 
 
 
@@ -5598,13 +6255,12 @@ Set: StringComparison(self: PropertyGroupDescription)=value
 
 """
 
+    CompareNameAscending = None
+    CompareNameDescending = None
 
- CompareNameAscending=None
- CompareNameDescending=None
 
-
-class RelativeSource(MarkupExtension,ISupportInitialize):
- """
+class RelativeSource(MarkupExtension, ISupportInitialize):
+    """
  Implements a markup extension that describes the location of the binding source relative to the position of the binding target.
 
  
@@ -5615,8 +6271,9 @@ class RelativeSource(MarkupExtension,ISupportInitialize):
 
  RelativeSource(mode: RelativeSourceMode,ancestorType: Type,ancestorLevel: int)
  """
- def ProvideValue(self,serviceProvider):
-  """
+
+    def ProvideValue(self, serviceProvider):
+        """
   ProvideValue(self: RelativeSource,serviceProvider: IServiceProvider) -> object
 
   
@@ -5639,9 +6296,10 @@ class RelativeSource(MarkupExtension,ISupportInitialize):
 
    Returns: Another System.Windows.Data.RelativeSource.
   """
-  pass
- def ShouldSerializeAncestorLevel(self):
-  """
+        pass
+
+    def ShouldSerializeAncestorLevel(self):
+        """
   ShouldSerializeAncestorLevel(self: RelativeSource) -> bool
 
   
@@ -5654,9 +6312,10 @@ class RelativeSource(MarkupExtension,ISupportInitialize):
 
    Returns: true if the property value has changed from its default; otherwise,false.
   """
-  pass
- def ShouldSerializeAncestorType(self):
-  """
+        pass
+
+    def ShouldSerializeAncestorType(self):
+        """
   ShouldSerializeAncestorType(self: RelativeSource) -> bool
 
   
@@ -5669,22 +6328,27 @@ class RelativeSource(MarkupExtension,ISupportInitialize):
 
    Returns: true if the property value has changed from its default; otherwise,false.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,mode=None,ancestorType=None,ancestorLevel=None):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, mode=None, ancestorType=None, ancestorLevel=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,mode: RelativeSourceMode)
 
   __new__(cls: type,mode: RelativeSourceMode,ancestorType: Type,ancestorLevel: int)
   """
-  pass
- AncestorLevel=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the level of ancestor to look for,in System.Windows.Data.RelativeSourceMode.FindAncestor mode. Use 1 to indicate the one nearest to the binding target element.
+        pass
+
+    AncestorLevel = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the level of ancestor to look for,in System.Windows.Data.RelativeSourceMode.FindAncestor mode. Use 1 to indicate the one nearest to the binding target element.
 
 
 
@@ -5696,8 +6360,10 @@ Set: AncestorLevel(self: RelativeSource)=value
 
 """
 
- AncestorType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the type of ancestor to look for.
+    AncestorType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the type of ancestor to look for.
 
 
 
@@ -5709,8 +6375,8 @@ Set: AncestorType(self: RelativeSource)=value
 
 """
 
- Mode=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a System.Windows.Data.RelativeSourceMode value that describes the location of the binding source relative to the position of the binding target.
+    Mode = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets a System.Windows.Data.RelativeSourceMode value that describes the location of the binding source relative to the position of the binding target.
 
 
 
@@ -5722,63 +6388,75 @@ Set: Mode(self: RelativeSource)=value
 
 """
 
+    PreviousData = None
+    Self = None
+    TemplatedParent = None
 
- PreviousData=None
- Self=None
- TemplatedParent=None
 
-
-class RelativeSourceMode(Enum,IComparable,IFormattable,IConvertible):
- """
+class RelativeSourceMode(Enum, IComparable, IFormattable, IConvertible):
+    """
  Describes the location of the binding source relative to the position of the binding target.
 
  
 
  enum RelativeSourceMode,values: FindAncestor (3),PreviousData (0),Self (2),TemplatedParent (1)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- FindAncestor=None
- PreviousData=None
- Self=None
- TemplatedParent=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    FindAncestor = None
+    PreviousData = None
+    Self = None
+    TemplatedParent = None
+    value__ = None
 
 
-class UpdateSourceExceptionFilterCallback(MulticastDelegate,ICloneable,ISerializable):
- """
+class UpdateSourceExceptionFilterCallback(MulticastDelegate, ICloneable, ISerializable):
+    """
  Represents the method that handles exceptions that are thrown during the update of the binding source value. This must be used with the System.Windows.Controls.ExceptionValidationRule.
 
  
 
  UpdateSourceExceptionFilterCallback(object: object,method: IntPtr)
  """
- def BeginInvoke(self,bindExpression,exception,callback,object):
-  """ BeginInvoke(self: UpdateSourceExceptionFilterCallback,bindExpression: object,exception: Exception,callback: AsyncCallback,object: object) -> IAsyncResult """
-  pass
- def CombineImpl(self,*args):
-  """
+
+    def BeginInvoke(self, bindExpression, exception, callback, object):
+        """ BeginInvoke(self: UpdateSourceExceptionFilterCallback,bindExpression: object,exception: Exception,callback: AsyncCallback,object: object) -> IAsyncResult """
+        pass
+
+    def CombineImpl(self, *args):
+        """
   CombineImpl(self: MulticastDelegate,follow: Delegate) -> Delegate
 
   
@@ -5791,9 +6469,10 @@ class UpdateSourceExceptionFilterCallback(MulticastDelegate,ICloneable,ISerializ
 
    Returns: A delegate that is the new root of the System.MulticastDelegate invocation list.
   """
-  pass
- def DynamicInvokeImpl(self,*args):
-  """
+        pass
+
+    def DynamicInvokeImpl(self, *args):
+        """
   DynamicInvokeImpl(self: Delegate,args: Array[object]) -> object
 
   
@@ -5812,12 +6491,14 @@ class UpdateSourceExceptionFilterCallback(MulticastDelegate,ICloneable,ISerializ
 
    Returns: The object returned by the method represented by the delegate.
   """
-  pass
- def EndInvoke(self,result):
-  """ EndInvoke(self: UpdateSourceExceptionFilterCallback,result: IAsyncResult) -> object """
-  pass
- def GetMethodImpl(self,*args):
-  """
+        pass
+
+    def EndInvoke(self, result):
+        """ EndInvoke(self: UpdateSourceExceptionFilterCallback,result: IAsyncResult) -> object """
+        pass
+
+    def GetMethodImpl(self, *args):
+        """
   GetMethodImpl(self: MulticastDelegate) -> MethodInfo
 
   
@@ -5826,12 +6507,14 @@ class UpdateSourceExceptionFilterCallback(MulticastDelegate,ICloneable,ISerializ
 
    Returns: A static method represented by the current System.MulticastDelegate.
   """
-  pass
- def Invoke(self,bindExpression,exception):
-  """ Invoke(self: UpdateSourceExceptionFilterCallback,bindExpression: object,exception: Exception) -> object """
-  pass
- def RemoveImpl(self,*args):
-  """
+        pass
+
+    def Invoke(self, bindExpression, exception):
+        """ Invoke(self: UpdateSourceExceptionFilterCallback,bindExpression: object,exception: Exception) -> object """
+        pass
+
+    def RemoveImpl(self, *args):
+        """
   RemoveImpl(self: MulticastDelegate,value: Delegate) -> Delegate
 
   
@@ -5850,65 +6533,81 @@ class UpdateSourceExceptionFilterCallback(MulticastDelegate,ICloneable,ISerializ
 
     value in its invocation list; otherwise,this instance with its original invocation list.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,object,method):
-  """ __new__(cls: type,object: object,method: IntPtr) """
-  pass
- def __reduce_ex__(self,*args):
-  pass
+        pass
 
-class UpdateSourceTrigger(Enum,IComparable,IFormattable,IConvertible):
- """
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, object, method):
+        """ __new__(cls: type,object: object,method: IntPtr) """
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+
+class UpdateSourceTrigger(Enum, IComparable, IFormattable, IConvertible):
+    """
  Describes the timing of binding source updates.
 
  
 
  enum UpdateSourceTrigger,values: Default (0),Explicit (3),LostFocus (2),PropertyChanged (1)
  """
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
-  pass
- def __format__(self,*args):
-  """ __format__(formattable: IFormattable,format: str) -> str """
-  pass
- def __ge__(self,*args):
-  pass
- def __gt__(self,*args):
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __le__(self,*args):
-  pass
- def __lt__(self,*args):
-  pass
- def __ne__(self,*args):
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
- Default=None
- Explicit=None
- LostFocus=None
- PropertyChanged=None
- value__=None
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==yx.__eq__(y) <==> x==yx.__eq__(y) <==> x==y """
+        pass
+
+    def __format__(self, *args):
+        """ __format__(formattable: IFormattable,format: str) -> str """
+        pass
+
+    def __ge__(self, *args):
+        pass
+
+    def __gt__(self, *args):
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __le__(self, *args):
+        pass
+
+    def __lt__(self, *args):
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+    Default = None
+    Explicit = None
+    LostFocus = None
+    PropertyChanged = None
+    value__ = None
 
 
-class ValueConversionAttribute(Attribute,_Attribute):
- """
+class ValueConversionAttribute(Attribute, _Attribute):
+    """
  Represents an attribute that allows the author of a value converter to specify the data types involved in the implementation of the converter.
 
  
 
  ValueConversionAttribute(sourceType: Type,targetType: Type)
  """
- def GetHashCode(self):
-  """
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: ValueConversionAttribute) -> int
 
   
@@ -5917,16 +6616,21 @@ class ValueConversionAttribute(Attribute,_Attribute):
 
    Returns: The hash code for this instance of System.Windows.Data.ValueConversionAttribute.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,sourceType,targetType):
-  """ __new__(cls: type,sourceType: Type,targetType: Type) """
-  pass
- ParameterType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets and sets the type of the optional value converter parameter object.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, sourceType, targetType):
+        """ __new__(cls: type,sourceType: Type,targetType: Type) """
+        pass
+
+    ParameterType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets and sets the type of the optional value converter parameter object.
 
 
 
@@ -5938,8 +6642,10 @@ Set: ParameterType(self: ValueConversionAttribute)=value
 
 """
 
- SourceType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the type this converter converts.
+    SourceType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the type this converter converts.
 
 
 
@@ -5949,8 +6655,10 @@ Get: SourceType(self: ValueConversionAttribute) -> Type
 
 """
 
- TargetType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the type this converter converts to.
+    TargetType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the type this converter converts to.
 
 
 
@@ -5960,8 +6668,8 @@ Get: TargetType(self: ValueConversionAttribute) -> Type
 
 """
 
- TypeId=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the unique identifier of this System.Windows.Data.ValueConversionAttribute instance.
+    TypeId = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the unique identifier of this System.Windows.Data.ValueConversionAttribute instance.
 
 
 
@@ -5972,9 +6680,8 @@ Get: TypeId(self: ValueConversionAttribute) -> object
 """
 
 
-
-class ValueUnavailableException(SystemException,ISerializable,_Exception):
- """
+class ValueUnavailableException(SystemException, ISerializable, _Exception):
+    """
  The exception that is thrown by the System.Windows.Data.BindingGroup.GetValue(System.Object,System.String) method when the value is not available.
 
  
@@ -5985,18 +6692,22 @@ class ValueUnavailableException(SystemException,ISerializable,_Exception):
 
  ValueUnavailableException(message: str,innerException: Exception)
  """
- def add_SerializeObjectState(self,*args):
-  """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def remove_SerializeObjectState(self,*args):
-  """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,message=None,innerException=None):
-  """
+
+    def add_SerializeObjectState(self, *args):
+        """ add_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def remove_SerializeObjectState(self, *args):
+        """ remove_SerializeObjectState(self: Exception,value: EventHandler[SafeSerializationEventArgs]) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, message=None, innerException=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,message: str)
@@ -6005,25 +6716,32 @@ class ValueUnavailableException(SystemException,ISerializable,_Exception):
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- def __str__(self,*args):
-  pass
+        pass
 
-class XmlDataProvider(DataSourceProvider,INotifyPropertyChanged,ISupportInitialize,IUriContext):
- """
+    def __reduce_ex__(self, *args):
+        pass
+
+    def __str__(self, *args):
+        pass
+
+
+class XmlDataProvider(
+    DataSourceProvider, INotifyPropertyChanged, ISupportInitialize, IUriContext
+):
+    """
  Enables declarative access to XML data for data binding.
 
  
 
  XmlDataProvider()
  """
- def add_PropertyChanged(self,*args):
-  """ add_PropertyChanged(self: DataSourceProvider,value: PropertyChangedEventHandler) """
-  pass
- def BeginInit(self,*args):
-  """
+
+    def add_PropertyChanged(self, *args):
+        """ add_PropertyChanged(self: DataSourceProvider,value: PropertyChangedEventHandler) """
+        pass
+
+    def BeginInit(self, *args):
+        """
   BeginInit(self: DataSourceProvider)
 
    Indicates that initialization of this object is about to begin; no implicit 
@@ -6032,18 +6750,20 @@ class XmlDataProvider(DataSourceProvider,INotifyPropertyChanged,ISupportInitiali
 
     System.Windows.Data.DataSourceProvider.EndInit method is called.
   """
-  pass
- def BeginQuery(self,*args):
-  """
+        pass
+
+    def BeginQuery(self, *args):
+        """
   BeginQuery(self: XmlDataProvider)
 
    Prepares the loading of either the inline XML or the external XML file to produce a collection 
 
     of XML nodes.
   """
-  pass
- def EndInit(self,*args):
-  """
+        pass
+
+    def EndInit(self, *args):
+        """
   EndInit(self: XmlDataProvider)
 
    Indicates that the initialization of this element has completed; this causes a 
@@ -6052,9 +6772,10 @@ class XmlDataProvider(DataSourceProvider,INotifyPropertyChanged,ISupportInitiali
 
     System.Windows.Data.DataSourceProvider.DeferRefresh is outstanding.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: DataSourceProvider,e: PropertyChangedEventArgs)
 
    Raises the System.Windows.Data.DataSourceProvider.PropertyChanged event with the provided 
@@ -6067,9 +6788,10 @@ class XmlDataProvider(DataSourceProvider,INotifyPropertyChanged,ISupportInitiali
 
    e: Arguments of the event being raised.
   """
-  pass
- def OnQueryFinished(self,*args):
-  """
+        pass
+
+    def OnQueryFinished(self, *args):
+        """
   OnQueryFinished(self: DataSourceProvider,newData: object,error: Exception,completionWork: DispatcherOperationCallback,callbackArguments: object)
 
    Derived classes call this method to indicate that a query has finished.
@@ -6096,12 +6818,14 @@ class XmlDataProvider(DataSourceProvider,INotifyPropertyChanged,ISupportInitiali
 
    newData: The data that is the result of the query.
   """
-  pass
- def remove_PropertyChanged(self,*args):
-  """ remove_PropertyChanged(self: DataSourceProvider,value: PropertyChangedEventHandler) """
-  pass
- def ShouldSerializeSource(self):
-  """
+        pass
+
+    def remove_PropertyChanged(self, *args):
+        """ remove_PropertyChanged(self: DataSourceProvider,value: PropertyChangedEventHandler) """
+        pass
+
+    def ShouldSerializeSource(self):
+        """
   ShouldSerializeSource(self: XmlDataProvider) -> bool
 
   
@@ -6110,9 +6834,10 @@ class XmlDataProvider(DataSourceProvider,INotifyPropertyChanged,ISupportInitiali
 
    Returns: true if the property value has changed from its default; otherwise,false.
   """
-  pass
- def ShouldSerializeXmlSerializer(self):
-  """
+        pass
+
+    def ShouldSerializeXmlSerializer(self):
+        """
   ShouldSerializeXmlSerializer(self: XmlDataProvider) -> bool
 
   
@@ -6125,9 +6850,10 @@ class XmlDataProvider(DataSourceProvider,INotifyPropertyChanged,ISupportInitiali
 
    Returns: true if the property value has changed from its default; otherwise,false.
   """
-  pass
- def ShouldSerializeXPath(self):
-  """
+        pass
+
+    def ShouldSerializeXPath(self):
+        """
   ShouldSerializeXPath(self: XmlDataProvider) -> bool
 
   
@@ -6136,26 +6862,30 @@ class XmlDataProvider(DataSourceProvider,INotifyPropertyChanged,ISupportInitiali
 
    Returns: true if the property value has changed from its default; otherwise,false.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- BaseUri=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """This type or member supports the WPF infrastructure and is not intended to be used directly from your code.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    BaseUri = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """This type or member supports the WPF infrastructure and is not intended to be used directly from your code.
 
 
 
 """
 
- Dispatcher=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the current System.Windows.Threading.Dispatcher object to the UI�thread to use.
+    Dispatcher = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the current System.Windows.Threading.Dispatcher object to the UI�thread to use.
 
 
 
 """
 
- Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Xml.XmlDocument to use as the binding source.
+    Document = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the System.Xml.XmlDocument to use as the binding source.
 
 
 
@@ -6167,8 +6897,10 @@ Set: Document(self: XmlDataProvider)=value
 
 """
 
- IsAsynchronous=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether node collection creation will be performed in a worker thread or in the active context.
+    IsAsynchronous = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether node collection creation will be performed in a worker thread or in the active context.
 
 
 
@@ -6180,15 +6912,17 @@ Set: IsAsynchronous(self: XmlDataProvider)=value
 
 """
 
- IsRefreshDeferred=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether there is an outstanding System.Windows.Data.DataSourceProvider.DeferRefresh in use.
+    IsRefreshDeferred = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether there is an outstanding System.Windows.Data.DataSourceProvider.DeferRefresh in use.
 
 
 
 """
 
- Source=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Uri of the XML data file to use as the binding source.
+    Source = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the System.Uri of the XML data file to use as the binding source.
 
 
 
@@ -6200,8 +6934,10 @@ Set: Source(self: XmlDataProvider)=value
 
 """
 
- XmlNamespaceManager=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Xml.XmlNamespaceManager used to run System.Windows.Data.XmlDataProvider.XPath queries.
+    XmlNamespaceManager = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Xml.XmlNamespaceManager used to run System.Windows.Data.XmlDataProvider.XPath queries.
 
 
 
@@ -6213,8 +6949,10 @@ Set: XmlNamespaceManager(self: XmlDataProvider)=value
 
 """
 
- XmlSerializer=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the inline XML content.
+    XmlSerializer = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the inline XML content.
 
 
 
@@ -6224,8 +6962,8 @@ Get: XmlSerializer(self: XmlDataProvider) -> IXmlSerializable
 
 """
 
- XPath=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the XPath query used to generate the data collection.
+    XPath = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the XPath query used to generate the data collection.
 
 
 
@@ -6238,9 +6976,8 @@ Set: XPath(self: XmlDataProvider)=value
 """
 
 
-
-class XmlNamespaceMapping(object,ISupportInitialize):
- """
+class XmlNamespaceMapping(object, ISupportInitialize):
+    """
  Declares a mapping between a uniform resource identifier (URI) and a prefix.
 
  
@@ -6249,8 +6986,9 @@ class XmlNamespaceMapping(object,ISupportInitialize):
 
  XmlNamespaceMapping(prefix: str,uri: Uri)
  """
- def Equals(self,obj):
-  """
+
+    def Equals(self, obj):
+        """
   Equals(self: XmlNamespaceMapping,obj: object) -> bool
 
   
@@ -6267,9 +7005,10 @@ class XmlNamespaceMapping(object,ISupportInitialize):
 
    Returns: true if the two instances are the same; otherwise,false.
   """
-  pass
- def GetHashCode(self):
-  """
+        pass
+
+    def GetHashCode(self):
+        """
   GetHashCode(self: XmlNamespaceMapping) -> int
 
   
@@ -6278,28 +7017,34 @@ class XmlNamespaceMapping(object,ISupportInitialize):
 
    Returns: The hash code for this System.Windows.Data.XmlNamespaceMapping.
   """
-  pass
- def __eq__(self,*args):
-  """ x.__eq__(y) <==> x==y """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,prefix=None,uri=None):
-  """
+        pass
+
+    def __eq__(self, *args):
+        """ x.__eq__(y) <==> x==y """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, prefix=None, uri=None):
+        """
   __new__(cls: type)
 
   __new__(cls: type,prefix: str,uri: Uri)
   """
-  pass
- def __ne__(self,*args):
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Prefix=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the prefix to use in Extensible Application Markup Language (XAML).
+        pass
+
+    def __ne__(self, *args):
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Prefix = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the prefix to use in Extensible Application Markup Language (XAML).
 
 
 
@@ -6311,8 +7056,8 @@ Set: Prefix(self: XmlNamespaceMapping)=value
 
 """
 
- Uri=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Uri of the namespace for which to create a mapping.
+    Uri = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the System.Uri of the namespace for which to create a mapping.
 
 
 
@@ -6325,17 +7070,25 @@ Set: Uri(self: XmlNamespaceMapping)=value
 """
 
 
-
-class XmlNamespaceMappingCollection(XmlNamespaceManager,IXmlNamespaceResolver,IEnumerable,ICollection[XmlNamespaceMapping],IEnumerable[XmlNamespaceMapping],IAddChildInternal,IAddChild):
- """
+class XmlNamespaceMappingCollection(
+    XmlNamespaceManager,
+    IXmlNamespaceResolver,
+    IEnumerable,
+    ICollection[XmlNamespaceMapping],
+    IEnumerable[XmlNamespaceMapping],
+    IAddChildInternal,
+    IAddChild,
+):
+    """
  Represents a collection of System.Windows.Data.XmlNamespaceMapping objects.
 
  
 
  XmlNamespaceMappingCollection()
  """
- def Add(self,mapping):
-  """
+
+    def Add(self, mapping):
+        """
   Add(self: XmlNamespaceMappingCollection,mapping: XmlNamespaceMapping)
 
    Adds a System.Windows.Data.XmlNamespaceMapping object to this collection.
@@ -6344,9 +7097,10 @@ class XmlNamespaceMappingCollection(XmlNamespaceManager,IXmlNamespaceResolver,IE
 
    mapping: The System.Windows.Data.XmlNamespaceMapping object to add. This cannot be null.
   """
-  pass
- def AddChild(self,*args):
-  """
+        pass
+
+    def AddChild(self, *args):
+        """
   AddChild(self: XmlNamespaceMappingCollection,value: object)
 
    Adds a System.Windows.Data.XmlNamespaceMapping object to this collection.
@@ -6355,9 +7109,10 @@ class XmlNamespaceMappingCollection(XmlNamespaceManager,IXmlNamespaceResolver,IE
 
    value: The System.Windows.Data.XmlNamespaceMapping object to add. This cannot be null.
   """
-  pass
- def AddText(self,*args):
-  """
+        pass
+
+    def AddText(self, *args):
+        """
   AddText(self: XmlNamespaceMappingCollection,text: str)
 
    Adds a text string as a child of this System.Windows.Data.XmlNamespaceMappingCollection object.
@@ -6366,16 +7121,18 @@ class XmlNamespaceMappingCollection(XmlNamespaceManager,IXmlNamespaceResolver,IE
 
    text: The text string to add as a child.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: XmlNamespaceMappingCollection)
 
    Removes all System.Windows.Data.XmlNamespaceMapping objects in this collection.
   """
-  pass
- def Contains(self,mapping):
-  """
+        pass
+
+    def Contains(self, mapping):
+        """
   Contains(self: XmlNamespaceMappingCollection,mapping: XmlNamespaceMapping) -> bool
 
   
@@ -6394,9 +7151,10 @@ class XmlNamespaceMappingCollection(XmlNamespaceManager,IXmlNamespaceResolver,IE
 
     otherwise,false.
   """
-  pass
- def CopyTo(self,array,arrayIndex):
-  """
+        pass
+
+    def CopyTo(self, array, arrayIndex):
+        """
   CopyTo(self: XmlNamespaceMappingCollection,array: Array[XmlNamespaceMapping],arrayIndex: int)
 
    Copies the items of the collection to the specified array,starting at the specified index.
@@ -6407,9 +7165,10 @@ class XmlNamespaceMappingCollection(XmlNamespaceManager,IXmlNamespaceResolver,IE
 
    arrayIndex: The zero-based index in array at which copying starts.
   """
-  pass
- def GetEnumerator(self):
-  """
+        pass
+
+    def GetEnumerator(self):
+        """
   GetEnumerator(self: XmlNamespaceMappingCollection) -> IEnumerator
 
   
@@ -6424,9 +7183,10 @@ class XmlNamespaceMappingCollection(XmlNamespaceManager,IXmlNamespaceResolver,IE
 
     collection.
   """
-  pass
- def ProtectedGetEnumerator(self,*args):
-  """
+        pass
+
+    def ProtectedGetEnumerator(self, *args):
+        """
   ProtectedGetEnumerator(self: XmlNamespaceMappingCollection) -> IEnumerator[XmlNamespaceMapping]
 
   
@@ -6435,9 +7195,10 @@ class XmlNamespaceMappingCollection(XmlNamespaceManager,IXmlNamespaceResolver,IE
 
    Returns: A generic System.Collections.Generic.IEnumerator object.
   """
-  pass
- def Remove(self,mapping):
-  """
+        pass
+
+    def Remove(self, mapping):
+        """
   Remove(self: XmlNamespaceMappingCollection,mapping: XmlNamespaceMapping) -> bool
 
   
@@ -6452,24 +7213,30 @@ class XmlNamespaceMappingCollection(XmlNamespaceManager,IXmlNamespaceResolver,IE
 
     removed; otherwise,false.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """ __contains__(self: ICollection[XmlNamespaceMapping],item: XmlNamespaceMapping) -> bool """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of System.Windows.Data.XmlNamespaceMapping objects in the collection.
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """ __contains__(self: ICollection[XmlNamespaceMapping],item: XmlNamespaceMapping) -> bool """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of System.Windows.Data.XmlNamespaceMapping objects in the collection.
 
 
 
@@ -6479,8 +7246,10 @@ Get: Count(self: XmlNamespaceMappingCollection) -> int
 
 """
 
- IsReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that indicates whether this collection is read-only.
+    IsReadOnly = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that indicates whether this collection is read-only.
 
 
 
@@ -6489,6 +7258,3 @@ Get: IsReadOnly(self: XmlNamespaceMappingCollection) -> bool
 
 
 """
-
-
-

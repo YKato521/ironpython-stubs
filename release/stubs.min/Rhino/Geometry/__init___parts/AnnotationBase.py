@@ -1,11 +1,12 @@
-class AnnotationBase(GeometryBase,IDisposable,ISerializable):
- """
+class AnnotationBase(GeometryBase, IDisposable, ISerializable):
+    """
  Provides a common base class to all annotation geometry.
 
     This class refers to the geometric element that is independent from the document.
  """
- def ConstructConstObject(self,*args):
-  """
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -16,9 +17,10 @@ class AnnotationBase(GeometryBase,IDisposable,ISerializable):
 
    subobject_index: The subobject index.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: CommonObject,disposing: bool)
 
    For derived class implementers.
@@ -43,9 +45,10 @@ class AnnotationBase(GeometryBase,IDisposable,ISerializable):
 
     finalizer.
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: CommonObject)
 
    For derived classes implementers.
@@ -54,45 +57,52 @@ class AnnotationBase(GeometryBase,IDisposable,ISerializable):
 
     instance from being const.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: GeometryBase)
 
    Is called when a non-const operation occurs.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*args): #cannot find CLR constructor
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *args):  # cannot find CLR constructor
+        """
   __new__(cls: type)
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- Index=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Index of DimensionStyle in document DimStyle table used by the dimension.
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    Index = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Index of DimensionStyle in document DimStyle table used by the dimension.
 
 
 
@@ -104,8 +114,10 @@ Set: Index(self: AnnotationBase)=value
 
 """
 
- NumericValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the numeric value,depending on geometry type.
+    NumericValue = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the numeric value,depending on geometry type.
 
    LinearDimension: distance between arrow tipsRadialDimension: radius or diamater depending on typeAngularDimension: angle in degreesLeader or Text: UnsetValue
 
@@ -117,8 +129,8 @@ Get: NumericValue(self: AnnotationBase) -> float
 
 """
 
- Plane=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the plane containing the annotation.
+    Plane = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the plane containing the annotation.
 
 
 
@@ -130,8 +142,8 @@ Set: Plane(self: AnnotationBase)=value
 
 """
 
- Text=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the text for this annotation.
+    Text = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the text for this annotation.
 
 
 
@@ -143,8 +155,10 @@ Set: Text(self: AnnotationBase)=value
 
 """
 
- TextFormula=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a formula for this annotation.
+    TextFormula = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a formula for this annotation.
 
 
 
@@ -156,8 +170,10 @@ Set: TextFormula(self: AnnotationBase)=value
 
 """
 
- TextHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the text height in model units.
+    TextHeight = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the text height in model units.
 
 
 
@@ -168,5 +184,3 @@ Get: TextHeight(self: AnnotationBase) -> float
 Set: TextHeight(self: AnnotationBase)=value
 
 """
-
-

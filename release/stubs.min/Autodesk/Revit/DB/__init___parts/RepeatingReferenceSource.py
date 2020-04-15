@@ -1,10 +1,12 @@
-class RepeatingReferenceSource(object,IDisposable):
- """ Represents a collection of repeating references. """
- def Dispose(self):
-  """ Dispose(self: RepeatingReferenceSource) """
-  pass
- def GetBounds(self):
-  """
+class RepeatingReferenceSource(object, IDisposable):
+    """ Represents a collection of repeating references. """
+
+    def Dispose(self):
+        """ Dispose(self: RepeatingReferenceSource) """
+        pass
+
+    def GetBounds(self):
+        """
   GetBounds(self: RepeatingReferenceSource) -> RepeaterBounds
 
   
@@ -13,10 +15,11 @@ class RepeatingReferenceSource(object,IDisposable):
 
    Returns: The bounds of the repeating reference source.
   """
-  pass
- @staticmethod
- def GetDefaultRepeatingReferenceSource(document,elementId):
-  """
+        pass
+
+    @staticmethod
+    def GetDefaultRepeatingReferenceSource(document, elementId):
+        """
   GetDefaultRepeatingReferenceSource(document: Document,elementId: ElementId) -> RepeatingReferenceSource
 
   
@@ -31,9 +34,10 @@ class RepeatingReferenceSource(object,IDisposable):
 
    Returns: The default repeating reference source of the given element.
   """
-  pass
- def GetReference(self,coordinates):
-  """
+        pass
+
+    def GetReference(self, coordinates):
+        """
   GetReference(self: RepeatingReferenceSource,coordinates: RepeaterCoordinates) -> Reference
 
   
@@ -52,10 +56,11 @@ class RepeatingReferenceSource(object,IDisposable):
 
    Returns: The repeating reference.
   """
-  pass
- @staticmethod
- def HasRepeatingReferenceSource(document,elementId):
-  """
+        pass
+
+    @staticmethod
+    def HasRepeatingReferenceSource(document, elementId):
+        """
   HasRepeatingReferenceSource(document: Document,elementId: ElementId) -> bool
 
   
@@ -74,24 +79,32 @@ class RepeatingReferenceSource(object,IDisposable):
 
    Returns: True if the element has any repeating reference sources.
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: RepeatingReferenceSource,disposing: bool) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- DimensionCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The dimension count of the repeating reference array.
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: RepeatingReferenceSource,disposing: bool) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    DimensionCount = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The dimension count of the repeating reference array.
 
 
 
@@ -101,8 +114,10 @@ Get: DimensionCount(self: RepeatingReferenceSource) -> int
 
 """
 
- IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Specifies whether the .NET object represents a valid Revit entity.
+    IsValidObject = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Specifies whether the .NET object represents a valid Revit entity.
 
 
 
@@ -111,5 +126,3 @@ Get: IsValidObject(self: RepeatingReferenceSource) -> bool
 
 
 """
-
-

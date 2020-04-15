@@ -1,28 +1,36 @@
-class WireType(ElementType,IDisposable):
- """ Represents a specific wire type. """
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- Conduit=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The conduit type of the wire type.
+class WireType(ElementType, IDisposable):
+    """ Represents a specific wire type. """
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    Conduit = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The conduit type of the wire type.
 
 
 
@@ -34,8 +42,10 @@ Set: Conduit(self: WireType)=value
 
 """
 
- Insulation=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The insulation type.
+    Insulation = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The insulation type.
 
 
 
@@ -47,8 +57,8 @@ Set: Insulation(self: WireType)=value
 
 """
 
- IsInUse=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Indicates whether the wire type is in use.
+    IsInUse = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Indicates whether the wire type is in use.
 
 
 
@@ -58,8 +68,8 @@ Get: IsInUse(self: WireType) -> bool
 
 """
 
- MaxSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The max size of the wire type.
+    MaxSize = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """The max size of the wire type.
 
 
 
@@ -71,8 +81,10 @@ Set: MaxSize(self: WireType)=value
 
 """
 
- NeutralMultiplier=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The neutral multiplier type of the wire type.
+    NeutralMultiplier = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The neutral multiplier type of the wire type.
 
 
 
@@ -84,8 +96,10 @@ Set: NeutralMultiplier(self: WireType)=value
 
 """
 
- NeutralRequired=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Whether or not the neutral point is required.
+    NeutralRequired = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Whether or not the neutral point is required.
 
 
 
@@ -97,8 +111,10 @@ Set: NeutralRequired(self: WireType)=value
 
 """
 
- NeutralSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The maximum neutral size of the wire type.
+    NeutralSize = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The maximum neutral size of the wire type.
 
 
 
@@ -110,8 +126,10 @@ Set: NeutralSize(self: WireType)=value
 
 """
 
- TemperatureRating=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The temperature rating type of the wire type.
+    TemperatureRating = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The temperature rating type of the wire type.
 
 
 
@@ -123,8 +141,10 @@ Set: TemperatureRating(self: WireType)=value
 
 """
 
- WireMaterial=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The material type of the wire type.
+    WireMaterial = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The material type of the wire type.
 
 
 
@@ -135,5 +155,3 @@ Get: WireMaterial(self: WireType) -> WireMaterialType
 Set: WireMaterial(self: WireType)=value
 
 """
-
-

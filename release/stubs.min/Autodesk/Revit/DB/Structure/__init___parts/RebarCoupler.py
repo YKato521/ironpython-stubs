@@ -1,17 +1,19 @@
-class RebarCoupler(Element,IDisposable):
- """ Represents a rebar coupler element in Autodesk Revit. """
- def CouplerLinkTwoBars(self):
-  """
+class RebarCoupler(Element, IDisposable):
+    """ Represents a rebar coupler element in Autodesk Revit. """
+
+    def CouplerLinkTwoBars(self):
+        """
   CouplerLinkTwoBars(self: RebarCoupler) -> bool
 
   
 
    returns true if the coupler sits on two rebar and false otherwise
   """
-  pass
- @staticmethod
- def Create(doc,typeId,pFirstData,pSecondData,error):
-  """
+        pass
+
+    @staticmethod
+    def Create(doc, typeId, pFirstData, pSecondData, error):
+        """
   Create(doc: Document,typeId: ElementId,pFirstData: ReinforcementData,pSecondData: ReinforcementData) -> (RebarCoupler,RebarCouplerError)
 
   
@@ -34,15 +36,18 @@ class RebarCoupler(Element,IDisposable):
 
    Returns: The newly created Rebar Coupler instance,or ll if the operation fails.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def GetCoupledReinforcementData(self):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def GetCoupledReinforcementData(self):
+        """
   GetCoupledReinforcementData(self: RebarCoupler) -> IList[ReinforcementData]
 
   
@@ -51,9 +56,10 @@ class RebarCoupler(Element,IDisposable):
 
     size=1. If coupler connects two bars the size will be 2.
   """
-  pass
- def GetCouplerPositionTransform(self,couplerPositionIndex):
-  """
+        pass
+
+    def GetCouplerPositionTransform(self, couplerPositionIndex):
+        """
   GetCouplerPositionTransform(self: RebarCoupler,couplerPositionIndex: int) -> Transform
 
   
@@ -70,9 +76,10 @@ class RebarCoupler(Element,IDisposable):
 
    Returns: The position of a coupler in the set relative (0,0,0).
   """
-  pass
- def GetCouplerQuantity(self):
-  """
+        pass
+
+    def GetCouplerQuantity(self):
+        """
   GetCouplerQuantity(self: RebarCoupler) -> int
 
   
@@ -81,33 +88,42 @@ class RebarCoupler(Element,IDisposable):
 
    Returns: Returns the number of couplers in a set.
   """
-  pass
- def GetPointsForPlacement(self):
-  """
+        pass
+
+    def GetPointsForPlacement(self):
+        """
   GetPointsForPlacement(self: RebarCoupler) -> IList[XYZ]
 
   
 
    gets the point (or points in case of rebar set) where the coupler is placed
   """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- CouplerMark=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """gets and sets the coupler mark
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    CouplerMark = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """gets and sets the coupler mark
 
 
 
@@ -118,5 +134,3 @@ Get: CouplerMark(self: RebarCoupler) -> str
 Set: CouplerMark(self: RebarCoupler)=value
 
 """
-
-

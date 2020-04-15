@@ -1,5 +1,5 @@
-class NurbsCurve(Curve,IDisposable,ISerializable,IEpsilonComparable[NurbsCurve]):
- """
+class NurbsCurve(Curve, IDisposable, ISerializable, IEpsilonComparable[NurbsCurve]):
+    """
  Represents a Non Uniform Rational B-Splines (NURBS) curve.
 
  
@@ -10,8 +10,9 @@ class NurbsCurve(Curve,IDisposable,ISerializable,IEpsilonComparable[NurbsCurve])
 
  NurbsCurve(dimension: int,rational: bool,order: int,pointCount: int)
  """
- def ConstructConstObject(self,*args):
-  """
+
+    def ConstructConstObject(self, *args):
+        """
   ConstructConstObject(self: CommonObject,parentObject: object,subobject_index: int)
 
    Assigns a parent object and a subobject index to this.
@@ -22,14 +23,16 @@ class NurbsCurve(Curve,IDisposable,ISerializable,IEpsilonComparable[NurbsCurve])
 
    subobject_index: The subobject index.
   """
-  pass
- @staticmethod
- def Create(periodic,degree,points):
-  """ Create(periodic: bool,degree: int,points: IEnumerable[Point3d]) -> NurbsCurve """
-  pass
- @staticmethod
- def CreateFromArc(arc):
-  """
+        pass
+
+    @staticmethod
+    def Create(periodic, degree, points):
+        """ Create(periodic: bool,degree: int,points: IEnumerable[Point3d]) -> NurbsCurve """
+        pass
+
+    @staticmethod
+    def CreateFromArc(arc):
+        """
   CreateFromArc(arc: Arc) -> NurbsCurve
 
   
@@ -48,10 +51,11 @@ class NurbsCurve(Curve,IDisposable,ISerializable,IEpsilonComparable[NurbsCurve])
 
    Returns: Curve on success,null on failure.
   """
-  pass
- @staticmethod
- def CreateFromCircle(circle):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromCircle(circle):
+        """
   CreateFromCircle(circle: Circle) -> NurbsCurve
 
   
@@ -80,10 +84,11 @@ class NurbsCurve(Curve,IDisposable,ISerializable,IEpsilonComparable[NurbsCurve])
 
    Returns: Curve on success,null on failure.
   """
-  pass
- @staticmethod
- def CreateFromEllipse(ellipse):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromEllipse(ellipse):
+        """
   CreateFromEllipse(ellipse: Ellipse) -> NurbsCurve
 
   
@@ -102,10 +107,11 @@ class NurbsCurve(Curve,IDisposable,ISerializable,IEpsilonComparable[NurbsCurve])
 
    Returns: A nurbs curve representation of this ellipse or null if no such representation could be made.
   """
-  pass
- @staticmethod
- def CreateFromLine(line):
-  """
+        pass
+
+    @staticmethod
+    def CreateFromLine(line):
+        """
   CreateFromLine(line: Line) -> NurbsCurve
 
   
@@ -114,10 +120,11 @@ class NurbsCurve(Curve,IDisposable,ISerializable,IEpsilonComparable[NurbsCurve])
 
    Returns: Curve on success,null on failure.
   """
-  pass
- @staticmethod
- def CreateSpiral(*__args):
-  """
+        pass
+
+    @staticmethod
+    def CreateSpiral(*__args):
+        """
   CreateSpiral(railCurve: Curve,t0: float,t1: float,radiusPoint: Point3d,pitch: float,turnCount: float,radius0: float,radius1: float,pointsPerTurn: int) -> NurbsCurve
 
   
@@ -240,9 +247,10 @@ class NurbsCurve(Curve,IDisposable,ISerializable,IEpsilonComparable[NurbsCurve])
 
    Returns: NurbsCurve on success,null on failure.
   """
-  pass
- def Dispose(self):
-  """
+        pass
+
+    def Dispose(self):
+        """
   Dispose(self: Curve,disposing: bool)
 
    For derived class implementers.
@@ -267,18 +275,20 @@ class NurbsCurve(Curve,IDisposable,ISerializable,IEpsilonComparable[NurbsCurve])
 
     finalizer.
   """
-  pass
- def EpsilonEquals(self,other,epsilon):
-  """
+        pass
+
+    def EpsilonEquals(self, other, epsilon):
+        """
   EpsilonEquals(self: NurbsCurve,other: NurbsCurve,epsilon: float) -> bool
 
   
 
    Check that all values in other are within epsilon of the values in this
   """
-  pass
- def GrevilleParameter(self,index):
-  """
+        pass
+
+    def GrevilleParameter(self, index):
+        """
   GrevilleParameter(self: NurbsCurve,index: int) -> float
 
   
@@ -295,18 +305,20 @@ class NurbsCurve(Curve,IDisposable,ISerializable,IEpsilonComparable[NurbsCurve])
 
    index: Index of Greville (Edit) point.
   """
-  pass
- def GrevilleParameters(self):
-  """
+        pass
+
+    def GrevilleParameters(self):
+        """
   GrevilleParameters(self: NurbsCurve) -> Array[float]
 
   
 
    Gets all Greville (Edit point) parameters for this curve.
   """
-  pass
- def GrevillePoint(self,index):
-  """
+        pass
+
+    def GrevillePoint(self, index):
+        """
   GrevillePoint(self: NurbsCurve,index: int) -> Point3d
 
   
@@ -323,18 +335,20 @@ class NurbsCurve(Curve,IDisposable,ISerializable,IEpsilonComparable[NurbsCurve])
 
    index: Index of Greville (Edit) point.
   """
-  pass
- def GrevillePoints(self):
-  """
+        pass
+
+    def GrevillePoints(self):
+        """
   GrevillePoints(self: NurbsCurve) -> Point3dList
 
   
 
    Gets all Greville (Edit) points for this curve.
   """
-  pass
- def IncreaseDegree(self,desiredDegree):
-  """
+        pass
+
+    def IncreaseDegree(self, desiredDegree):
+        """
   IncreaseDegree(self: NurbsCurve,desiredDegree: int) -> bool
 
   
@@ -349,10 +363,11 @@ class NurbsCurve(Curve,IDisposable,ISerializable,IEpsilonComparable[NurbsCurve])
 
    Returns: true on success,false on failure.
   """
-  pass
- @staticmethod
- def IsDuplicate(curveA,curveB,ignoreParameterization,tolerance):
-  """
+        pass
+
+    @staticmethod
+    def IsDuplicate(curveA, curveB, ignoreParameterization, tolerance):
+        """
   IsDuplicate(curveA: NurbsCurve,curveB: NurbsCurve,ignoreParameterization: bool,tolerance: float) -> bool
 
   
@@ -371,9 +386,10 @@ class NurbsCurve(Curve,IDisposable,ISerializable,IEpsilonComparable[NurbsCurve])
 
    Returns: true if curves are similar within tolerance.
   """
-  pass
- def MakePiecewiseBezier(self,setEndWeightsToOne):
-  """
+        pass
+
+    def MakePiecewiseBezier(self, setEndWeightsToOne):
+        """
   MakePiecewiseBezier(self: NurbsCurve,setEndWeightsToOne: bool) -> bool
 
   
@@ -398,9 +414,10 @@ class NurbsCurve(Curve,IDisposable,ISerializable,IEpsilonComparable[NurbsCurve])
 
    Returns: true on success,false on failure.
   """
-  pass
- def NonConstOperation(self,*args):
-  """
+        pass
+
+    def NonConstOperation(self, *args):
+        """
   NonConstOperation(self: Curve)
 
    For derived classes implementers.
@@ -409,16 +426,18 @@ class NurbsCurve(Curve,IDisposable,ISerializable,IEpsilonComparable[NurbsCurve])
 
     instance from being const.
   """
-  pass
- def OnSwitchToNonConst(self,*args):
-  """
+        pass
+
+    def OnSwitchToNonConst(self, *args):
+        """
   OnSwitchToNonConst(self: GeometryBase)
 
    Is called when a non-const operation occurs.
   """
-  pass
- def Reparameterize(self,c):
-  """
+        pass
+
+    def Reparameterize(self, c):
+        """
   Reparameterize(self: NurbsCurve,c: float) -> bool
 
   
@@ -453,29 +472,33 @@ class NurbsCurve(Curve,IDisposable,ISerializable,IEpsilonComparable[NurbsCurve])
 
    Returns: true if successful.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- @staticmethod
- def __new__(self,*__args):
-  """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    @staticmethod
+    def __new__(self, *__args):
+        """
   __new__(cls: type,other: NurbsCurve)
 
   __new__(cls: type,info: SerializationInfo,context: StreamingContext)
@@ -484,11 +507,15 @@ class NurbsCurve(Curve,IDisposable,ISerializable,IEpsilonComparable[NurbsCurve])
 
   __new__(cls: type,dimension: int,rational: bool,order: int,pointCount: int)
   """
-  pass
- def __reduce_ex__(self,*args):
-  pass
- HasBezierSpans=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns true if the NURBS curve has bezier spans (all distinct knots have multiplitity=degree)
+        pass
+
+    def __reduce_ex__(self, *args):
+        pass
+
+    HasBezierSpans = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Returns true if the NURBS curve has bezier spans (all distinct knots have multiplitity=degree)
 
 
 
@@ -498,8 +525,10 @@ Get: HasBezierSpans(self: NurbsCurve) -> bool
 
 """
 
- IsRational=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether or not the curve is rational. 
+    IsRational = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether or not the curve is rational. 
 
    Rational curves have control-points with custom weights.
 
@@ -511,8 +540,8 @@ Get: IsRational(self: NurbsCurve) -> bool
 
 """
 
- Knots=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets access to the knots (or "knot vector") of this nurbs curve.
+    Knots = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets access to the knots (or "knot vector") of this nurbs curve.
 
 
 
@@ -522,8 +551,8 @@ Get: Knots(self: NurbsCurve) -> NurbsCurveKnotList
 
 """
 
- Order=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the order of the curve. Order=Degree + 1.
+    Order = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the order of the curve. Order=Degree + 1.
 
 
 
@@ -533,8 +562,8 @@ Get: Order(self: NurbsCurve) -> int
 
 """
 
- Points=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets access to the control points of this nurbs curve.
+    Points = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets access to the control points of this nurbs curve.
 
 
 
@@ -543,5 +572,3 @@ Get: Points(self: NurbsCurve) -> NurbsCurvePointList
 
 
 """
-
-

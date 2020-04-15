@@ -1,8 +1,9 @@
-class PointLoad(LoadBase,IDisposable):
- """ An object that represents a force/moment applied to a single point. """
- @staticmethod
- def Create(aDoc,*__args):
-  """
+class PointLoad(LoadBase, IDisposable):
+    """ An object that represents a force/moment applied to a single point. """
+
+    @staticmethod
+    def Create(aDoc, *__args):
+        """
   Create(aDoc: Document,host: AnalyticalModelStick,selector: AnalyticalElementSelector,forceVector: XYZ,momentVector: XYZ,symbol: PointLoadType) -> PointLoad
 
   
@@ -71,30 +72,40 @@ class PointLoad(LoadBase,IDisposable):
 
    Returns: If successful,returns the newly created PointLoad,ll otherwise.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: Element,A_0: bool) """
-  pass
- def getBoundingBox(self,*args):
-  """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
-  pass
- def ReleaseUnmanagedResources(self,*args):
-  """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
-  pass
- def setElementType(self,*args):
-  """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
-  pass
- def __enter__(self,*args):
-  """ __enter__(self: IDisposable) -> object """
-  pass
- def __exit__(self,*args):
-  """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- ForceVector=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The force vector applied to the point load,oriented according to OrientTo setting.
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: Element,A_0: bool) """
+        pass
+
+    def getBoundingBox(self, *args):
+        """ getBoundingBox(self: Element,view: View) -> BoundingBoxXYZ """
+        pass
+
+    def ReleaseUnmanagedResources(self, *args):
+        """ ReleaseUnmanagedResources(self: Element,disposing: bool) """
+        pass
+
+    def setElementType(self, *args):
+        """ setElementType(self: Element,type: ElementType,incompatibleExceptionMessage: str) """
+        pass
+
+    def __enter__(self, *args):
+        """ __enter__(self: IDisposable) -> object """
+        pass
+
+    def __exit__(self, *args):
+        """ __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object) """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    ForceVector = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The force vector applied to the point load,oriented according to OrientTo setting.
 
 
 
@@ -106,8 +117,10 @@ Set: ForceVector(self: PointLoad)=value
 
 """
 
- MomentVector=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """The moment vector applied to the point load,oriented according to OrientTo setting.
+    MomentVector = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """The moment vector applied to the point load,oriented according to OrientTo setting.
 
 
 
@@ -119,8 +132,8 @@ Set: MomentVector(self: PointLoad)=value
 
 """
 
- Point=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Returns the position of point load,measured in decimal feet.
+    Point = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Returns the position of point load,measured in decimal feet.
 
 
 
@@ -131,5 +144,3 @@ Get: Point(self: PointLoad) -> XYZ
 Set: Point(self: PointLoad)=value
 
 """
-
-

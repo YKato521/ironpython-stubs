@@ -8,27 +8,32 @@
 # no functions
 # classes
 
+
 class EventHandlerProxy(object):
- """ EventHandlerProxy() """
- def OnApplicationDocumentClosed(self,sender,args):
-  """ OnApplicationDocumentClosed(self: EventHandlerProxy,sender: object,args: DocumentClosedEventArgs) """
-  pass
- def OnApplicationDocumentClosing(self,sender,args):
-  """ OnApplicationDocumentClosing(self: EventHandlerProxy,sender: object,args: DocumentClosingEventArgs) """
-  pass
- def OnApplicationDocumentOpened(self,sender,args):
-  """ OnApplicationDocumentOpened(self: EventHandlerProxy,sender: object,args: DocumentOpenedEventArgs) """
-  pass
- def OnApplicationViewActivated(self,sender,args):
-  """ OnApplicationViewActivated(self: EventHandlerProxy,sender: object,args: ViewActivatedEventArgs) """
-  pass
- def OnApplicationViewActivating(self,sender,args):
-  """ OnApplicationViewActivating(self: EventHandlerProxy,sender: object,args: ViewActivatingEventArgs) """
-  pass
- DocumentClosed=None
- DocumentClosing=None
- DocumentOpened=None
- ViewActivated=None
- ViewActivating=None
+    """ EventHandlerProxy() """
 
+    def OnApplicationDocumentClosed(self, sender, args):
+        """ OnApplicationDocumentClosed(self: EventHandlerProxy,sender: object,args: DocumentClosedEventArgs) """
+        pass
 
+    def OnApplicationDocumentClosing(self, sender, args):
+        """ OnApplicationDocumentClosing(self: EventHandlerProxy,sender: object,args: DocumentClosingEventArgs) """
+        pass
+
+    def OnApplicationDocumentOpened(self, sender, args):
+        """ OnApplicationDocumentOpened(self: EventHandlerProxy,sender: object,args: DocumentOpenedEventArgs) """
+        pass
+
+    def OnApplicationViewActivated(self, sender, args):
+        """ OnApplicationViewActivated(self: EventHandlerProxy,sender: object,args: ViewActivatedEventArgs) """
+        pass
+
+    def OnApplicationViewActivating(self, sender, args):
+        """ OnApplicationViewActivating(self: EventHandlerProxy,sender: object,args: ViewActivatingEventArgs) """
+        pass
+
+    DocumentClosed = None
+    DocumentClosing = None
+    DocumentOpened = None
+    ViewActivated = None
+    ViewActivating = None

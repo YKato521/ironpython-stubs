@@ -1,13 +1,14 @@
-class DataGridViewRowCollection(object,ICollection,IEnumerable,IList):
- """
+class DataGridViewRowCollection(object, ICollection, IEnumerable, IList):
+    """
  A collection of System.Windows.Forms.DataGridViewRow objects.
 
  
 
  DataGridViewRowCollection(dataGridView: DataGridView)
  """
- def Add(self,*__args):
-  """
+
+    def Add(self, *__args):
+        """
   Add(self: DataGridViewRowCollection,dataGridViewRow: DataGridViewRow) -> int
 
   
@@ -60,9 +61,10 @@ class DataGridViewRowCollection(object,ICollection,IEnumerable,IList):
 
    Returns: The index of the new row.
   """
-  pass
- def AddCopies(self,indexSource,count):
-  """
+        pass
+
+    def AddCopies(self, indexSource, count):
+        """
   AddCopies(self: DataGridViewRowCollection,indexSource: int,count: int) -> int
 
   
@@ -77,9 +79,10 @@ class DataGridViewRowCollection(object,ICollection,IEnumerable,IList):
 
    Returns: The index of the last row that was added.
   """
-  pass
- def AddCopy(self,indexSource):
-  """
+        pass
+
+    def AddCopy(self, indexSource):
+        """
   AddCopy(self: DataGridViewRowCollection,indexSource: int) -> int
 
   
@@ -92,9 +95,10 @@ class DataGridViewRowCollection(object,ICollection,IEnumerable,IList):
 
    Returns: The index of the new row.
   """
-  pass
- def AddRange(self,dataGridViewRows):
-  """
+        pass
+
+    def AddRange(self, dataGridViewRows):
+        """
   AddRange(self: DataGridViewRowCollection,*dataGridViewRows: Array[DataGridViewRow])
 
    Adds the specified System.Windows.Forms.DataGridViewRow objects to the collection.
@@ -105,16 +109,18 @@ class DataGridViewRowCollection(object,ICollection,IEnumerable,IList):
 
     System.Windows.Forms.DataGridViewRowCollection.
   """
-  pass
- def Clear(self):
-  """
+        pass
+
+    def Clear(self):
+        """
   Clear(self: DataGridViewRowCollection)
 
    Clears the collection.
   """
-  pass
- def Contains(self,dataGridViewRow):
-  """
+        pass
+
+    def Contains(self, dataGridViewRow):
+        """
   Contains(self: DataGridViewRowCollection,dataGridViewRow: DataGridViewRow) -> bool
 
   
@@ -133,9 +139,10 @@ class DataGridViewRowCollection(object,ICollection,IEnumerable,IList):
 
     System.Windows.Forms.DataGridViewRowCollection; otherwise,false.
   """
-  pass
- def CopyTo(self,array,index):
-  """
+        pass
+
+    def CopyTo(self, array, index):
+        """
   CopyTo(self: DataGridViewRowCollection,array: Array[DataGridViewRow],index: int)
 
    Copies the items from the collection into the specified System.Windows.Forms.DataGridViewRow 
@@ -154,9 +161,10 @@ class DataGridViewRowCollection(object,ICollection,IEnumerable,IList):
 
    index: The zero-based index in array at which copying begins.
   """
-  pass
- def GetFirstRow(self,includeFilter,excludeFilter=None):
-  """
+        pass
+
+    def GetFirstRow(self, includeFilter, excludeFilter=None):
+        """
   GetFirstRow(self: DataGridViewRowCollection,includeFilter: DataGridViewElementStates,excludeFilter: DataGridViewElementStates) -> int
 
   
@@ -199,9 +207,10 @@ class DataGridViewRowCollection(object,ICollection,IEnumerable,IList):
 
     includeFilter; -1 if no row is found.
   """
-  pass
- def GetLastRow(self,includeFilter):
-  """
+        pass
+
+    def GetLastRow(self, includeFilter):
+        """
   GetLastRow(self: DataGridViewRowCollection,includeFilter: DataGridViewElementStates) -> int
 
   
@@ -220,9 +229,10 @@ class DataGridViewRowCollection(object,ICollection,IEnumerable,IList):
 
     includeFilter; -1 if no row is found.
   """
-  pass
- def GetNextRow(self,indexStart,includeFilter,excludeFilter=None):
-  """
+        pass
+
+    def GetNextRow(self, indexStart, includeFilter, excludeFilter=None):
+        """
   GetNextRow(self: DataGridViewRowCollection,indexStart: int,includeFilter: DataGridViewElementStates,excludeFilter: DataGridViewElementStates) -> int
 
   
@@ -277,9 +287,10 @@ class DataGridViewRowCollection(object,ICollection,IEnumerable,IList):
 
     attributes specified by includeFilter,or -1 if no row is found.
   """
-  pass
- def GetPreviousRow(self,indexStart,includeFilter,excludeFilter=None):
-  """
+        pass
+
+    def GetPreviousRow(self, indexStart, includeFilter, excludeFilter=None):
+        """
   GetPreviousRow(self: DataGridViewRowCollection,indexStart: int,includeFilter: DataGridViewElementStates,excludeFilter: DataGridViewElementStates) -> int
 
   
@@ -334,9 +345,10 @@ class DataGridViewRowCollection(object,ICollection,IEnumerable,IList):
 
     by includeFilter; -1 if no row is found.
   """
-  pass
- def GetRowCount(self,includeFilter):
-  """
+        pass
+
+    def GetRowCount(self, includeFilter):
+        """
   GetRowCount(self: DataGridViewRowCollection,includeFilter: DataGridViewElementStates) -> int
 
   
@@ -357,9 +369,10 @@ class DataGridViewRowCollection(object,ICollection,IEnumerable,IList):
 
     includeFilter.
   """
-  pass
- def GetRowsHeight(self,includeFilter):
-  """
+        pass
+
+    def GetRowsHeight(self, includeFilter):
+        """
   GetRowsHeight(self: DataGridViewRowCollection,includeFilter: DataGridViewElementStates) -> int
 
   
@@ -380,9 +393,10 @@ class DataGridViewRowCollection(object,ICollection,IEnumerable,IList):
 
     includeFilter.
   """
-  pass
- def GetRowState(self,rowIndex):
-  """
+        pass
+
+    def GetRowState(self, rowIndex):
+        """
   GetRowState(self: DataGridViewRowCollection,rowIndex: int) -> DataGridViewElementStates
 
   
@@ -397,9 +411,10 @@ class DataGridViewRowCollection(object,ICollection,IEnumerable,IList):
 
     state of the specified row.
   """
-  pass
- def IndexOf(self,dataGridViewRow):
-  """
+        pass
+
+    def IndexOf(self, dataGridViewRow):
+        """
   IndexOf(self: DataGridViewRowCollection,dataGridViewRow: DataGridViewRow) -> int
 
   
@@ -418,9 +433,10 @@ class DataGridViewRowCollection(object,ICollection,IEnumerable,IList):
 
     System.Windows.Forms.DataGridViewRowCollection; otherwise,-1.
   """
-  pass
- def Insert(self,rowIndex,*__args):
-  """
+        pass
+
+    def Insert(self, rowIndex, *__args):
+        """
   Insert(self: DataGridViewRowCollection,rowIndex: int,count: int)
 
    Inserts the specified number of rows into the collection at the specified location.
@@ -459,9 +475,10 @@ class DataGridViewRowCollection(object,ICollection,IEnumerable,IList):
 
    values: A variable number of objects that populate the cells of the new row.
   """
-  pass
- def InsertCopies(self,indexSource,indexDestination,count):
-  """
+        pass
+
+    def InsertCopies(self, indexSource, indexDestination, count):
+        """
   InsertCopies(self: DataGridViewRowCollection,indexSource: int,indexDestination: int,count: int)
 
    Inserts rows into the collection at the specified position.
@@ -476,9 +493,10 @@ class DataGridViewRowCollection(object,ICollection,IEnumerable,IList):
 
     System.Windows.Forms.DataGridViewRowCollection.
   """
-  pass
- def InsertCopy(self,indexSource,indexDestination):
-  """
+        pass
+
+    def InsertCopy(self, indexSource, indexDestination):
+        """
   InsertCopy(self: DataGridViewRowCollection,indexSource: int,indexDestination: int)
 
    Inserts a row into the collection at the specified position,based on the row at specified 
@@ -493,9 +511,10 @@ class DataGridViewRowCollection(object,ICollection,IEnumerable,IList):
 
    indexDestination: The position at which to insert the row.
   """
-  pass
- def InsertRange(self,rowIndex,dataGridViewRows):
-  """
+        pass
+
+    def InsertRange(self, rowIndex, dataGridViewRows):
+        """
   InsertRange(self: DataGridViewRowCollection,rowIndex: int,*dataGridViewRows: Array[DataGridViewRow])
 
    Inserts the System.Windows.Forms.DataGridViewRow objects into the collection at the specified 
@@ -512,9 +531,10 @@ class DataGridViewRowCollection(object,ICollection,IEnumerable,IList):
 
     System.Windows.Forms.DataGridViewRowCollection.
   """
-  pass
- def OnCollectionChanged(self,*args):
-  """
+        pass
+
+    def OnCollectionChanged(self, *args):
+        """
   OnCollectionChanged(self: DataGridViewRowCollection,e: CollectionChangeEventArgs)
 
    Raises the System.Windows.Forms.DataGridViewRowCollection.CollectionChanged event.
@@ -523,9 +543,10 @@ class DataGridViewRowCollection(object,ICollection,IEnumerable,IList):
 
    e: A System.ComponentModel.CollectionChangeEventArgs that contains the event data.
   """
-  pass
- def Remove(self,dataGridViewRow):
-  """
+        pass
+
+    def Remove(self, dataGridViewRow):
+        """
   Remove(self: DataGridViewRowCollection,dataGridViewRow: DataGridViewRow)
 
    Removes the row from the collection.
@@ -534,9 +555,10 @@ class DataGridViewRowCollection(object,ICollection,IEnumerable,IList):
 
    dataGridViewRow: The row to remove from the System.Windows.Forms.DataGridViewRowCollection.
   """
-  pass
- def RemoveAt(self,index):
-  """
+        pass
+
+    def RemoveAt(self, index):
+        """
   RemoveAt(self: DataGridViewRowCollection,index: int)
 
    Removes the row at the specified position from the collection.
@@ -545,9 +567,10 @@ class DataGridViewRowCollection(object,ICollection,IEnumerable,IList):
 
    index: The position of the row to remove.
   """
-  pass
- def SharedRow(self,rowIndex):
-  """
+        pass
+
+    def SharedRow(self, rowIndex):
+        """
   SharedRow(self: DataGridViewRowCollection,rowIndex: int) -> DataGridViewRow
 
   
@@ -560,12 +583,14 @@ class DataGridViewRowCollection(object,ICollection,IEnumerable,IList):
 
    Returns: The System.Windows.Forms.DataGridViewRow positioned at the specified index.
   """
-  pass
- def __add__(self,*args):
-  """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
-  pass
- def __contains__(self,*args):
-  """
+        pass
+
+    def __add__(self, *args):
+        """ x.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+yx.__add__(y) <==> x+y """
+        pass
+
+    def __contains__(self, *args):
+        """
   __contains__(self: IList,value: object) -> bool
 
   
@@ -578,28 +603,35 @@ class DataGridViewRowCollection(object,ICollection,IEnumerable,IList):
 
    Returns: true if the System.Object is found in the System.Collections.IList; otherwise,false.
   """
-  pass
- def __getitem__(self,*args):
-  """ x.__getitem__(y) <==> x[y] """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __iter__(self,*args):
-  """ __iter__(self: IEnumerable) -> object """
-  pass
- def __len__(self,*args):
-  """ x.__len__() <==> len(x) """
-  pass
- @staticmethod
- def __new__(self,dataGridView):
-  """ __new__(cls: type,dataGridView: DataGridView) """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
- Count=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the number of rows in the collection.
+        pass
+
+    def __getitem__(self, *args):
+        """ x.__getitem__(y) <==> x[y] """
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __iter__(self, *args):
+        """ __iter__(self: IEnumerable) -> object """
+        pass
+
+    def __len__(self, *args):
+        """ x.__len__() <==> len(x) """
+        pass
+
+    @staticmethod
+    def __new__(self, dataGridView):
+        """ __new__(cls: type,dataGridView: DataGridView) """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+    Count = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the number of rows in the collection.
 
 
 
@@ -609,20 +641,20 @@ Get: Count(self: DataGridViewRowCollection) -> int
 
 """
 
- DataGridView=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the System.Windows.Forms.DataGridView that owns the collection.
+    DataGridView = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the System.Windows.Forms.DataGridView that owns the collection.
 
 
 
 """
 
- List=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets an array of System.Windows.Forms.DataGridViewRow objects.
+    List = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets an array of System.Windows.Forms.DataGridViewRow objects.
 
 
 
 """
 
-
- CollectionChanged=None
-
+    CollectionChanged = None

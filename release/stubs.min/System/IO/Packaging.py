@@ -8,11 +8,13 @@
 # no functions
 # classes
 
+
 class PackageStore(object):
- """ Represents a collection of application-specific System.IO.Packaging.Package instances used in combination with System.IO.Packaging.PackWebRequest. """
- @staticmethod
- def AddPackage(uri,package):
-  """
+    """ Represents a collection of application-specific System.IO.Packaging.Package instances used in combination with System.IO.Packaging.PackWebRequest. """
+
+    @staticmethod
+    def AddPackage(uri, package):
+        """
   AddPackage(uri: Uri,package: Package)
 
    Adds a System.IO.Packaging.Package to the store.
@@ -23,10 +25,11 @@ class PackageStore(object):
 
    package: The package to add to the store.
   """
-  pass
- @staticmethod
- def GetPackage(uri):
-  """
+        pass
+
+    @staticmethod
+    def GetPackage(uri):
+        """
   GetPackage(uri: Uri) -> Package
 
   
@@ -41,10 +44,11 @@ class PackageStore(object):
 
     not in the store.
   """
-  pass
- @staticmethod
- def RemovePackage(uri):
-  """
+        pass
+
+    @staticmethod
+    def RemovePackage(uri):
+        """
   RemovePackage(uri: Uri)
 
    Removes the System.IO.Packaging.Package with a specified URI from the store.
@@ -53,18 +57,20 @@ class PackageStore(object):
 
    uri: The uniform resource identifier (URI) of the package to remove.
   """
-  pass
- __all__=[
-  'AddPackage',
-  'GetPackage',
-  'RemovePackage',
- ]
+        pass
+
+    __all__ = [
+        "AddPackage",
+        "GetPackage",
+        "RemovePackage",
+    ]
 
 
-class PackWebRequest(WebRequest,ISerializable):
- """ Makes a request to an entire System.IO.Packaging.PackagePart or to a System.IO.Packaging.PackagePart in a package,identified by a pack URI. """
- def GetInnerRequest(self):
-  """
+class PackWebRequest(WebRequest, ISerializable):
+    """ Makes a request to an entire System.IO.Packaging.PackagePart or to a System.IO.Packaging.PackagePart in a package,identified by a pack URI. """
+
+    def GetInnerRequest(self):
+        """
   GetInnerRequest(self: PackWebRequest) -> WebRequest
 
   
@@ -77,9 +83,10 @@ class PackWebRequest(WebRequest,ISerializable):
 
     resolves from the System.IO.Packaging.PackageStore cache.
   """
-  pass
- def GetObjectData(self,*args):
-  """
+        pass
+
+    def GetObjectData(self, *args):
+        """
   GetObjectData(self: WebRequest,serializationInfo: SerializationInfo,streamingContext: StreamingContext)
 
    Populates a System.Runtime.Serialization.SerializationInfo with the data needed to serialize the 
@@ -96,9 +103,10 @@ class PackWebRequest(WebRequest,ISerializable):
 
     serialization.
   """
-  pass
- def GetRequestStream(self):
-  """
+        pass
+
+    def GetRequestStream(self):
+        """
   GetRequestStream(self: PackWebRequest) -> Stream
 
   
@@ -111,9 +119,10 @@ class PackWebRequest(WebRequest,ISerializable):
 
     is thrown.
   """
-  pass
- def GetResponse(self):
-  """
+        pass
+
+    def GetResponse(self):
+        """
   GetResponse(self: PackWebRequest) -> WebResponse
 
   
@@ -122,9 +131,10 @@ class PackWebRequest(WebRequest,ISerializable):
 
    Returns: The response stream for the request.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -155,12 +165,16 @@ class PackWebRequest(WebRequest,ISerializable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- CachePolicy=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the System.Net.Cache.RequestCachePolicy.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    CachePolicy = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the System.Net.Cache.RequestCachePolicy.
 
 
 
@@ -172,8 +186,10 @@ Set: CachePolicy(self: PackWebRequest)=value
 
 """
 
- ConnectionGroupName=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the name of the connection group.
+    ConnectionGroupName = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the name of the connection group.
 
 
 
@@ -185,8 +201,10 @@ Set: ConnectionGroupName(self: PackWebRequest)=value
 
 """
 
- ContentLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Content-length�HTTP header.
+    ContentLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the Content-length�HTTP header.
 
 
 
@@ -198,8 +216,10 @@ Set: ContentLength(self: PackWebRequest)=value
 
 """
 
- ContentType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the Content-type�HTTP header.
+    ContentType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the Content-type�HTTP header.
 
 
 
@@ -211,8 +231,10 @@ Set: ContentType(self: PackWebRequest)=value
 
 """
 
- Credentials=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the authentication credentials.
+    Credentials = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the authentication credentials.
 
 
 
@@ -224,8 +246,8 @@ Set: Credentials(self: PackWebRequest)=value
 
 """
 
- Headers=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the collection of header name/value pairs associated with the request.
+    Headers = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the collection of header name/value pairs associated with the request.
 
 
 
@@ -237,8 +259,8 @@ Set: Headers(self: PackWebRequest)=value
 
 """
 
- Method=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the protocol method to use with the pack URI request.
+    Method = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the protocol method to use with the pack URI request.
 
 
 
@@ -250,8 +272,10 @@ Set: Method(self: PackWebRequest)=value
 
 """
 
- PreAuthenticate=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that indicates whether to preauthenticate the request.
+    PreAuthenticate = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that indicates whether to preauthenticate the request.
 
 
 
@@ -263,8 +287,8 @@ Set: PreAuthenticate(self: PackWebRequest)=value
 
 """
 
- Proxy=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the network proxy for Internet access.
+    Proxy = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the network proxy for Internet access.
 
 
 
@@ -276,8 +300,10 @@ Set: Proxy(self: PackWebRequest)=value
 
 """
 
- RequestUri=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the URI of the resource associated with the request.
+    RequestUri = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the URI of the resource associated with the request.
 
 
 
@@ -287,8 +313,8 @@ Get: RequestUri(self: PackWebRequest) -> Uri
 
 """
 
- Timeout=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the length of time before the request times out.
+    Timeout = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the length of time before the request times out.
 
 
 
@@ -300,8 +326,10 @@ Set: Timeout(self: PackWebRequest)=value
 
 """
 
- UseDefaultCredentials=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the default authentication credentials.
+    UseDefaultCredentials = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets the default authentication credentials.
 
 
 
@@ -314,36 +342,41 @@ Set: UseDefaultCredentials(self: PackWebRequest)=value
 """
 
 
-
-class PackWebRequestFactory(object,IWebRequestCreate):
- """
+class PackWebRequestFactory(object, IWebRequestCreate):
+    """
  Represents the class that is invoked when an instance of a pack URI�System.IO.Packaging.PackWebRequest is created.
 
  
 
  PackWebRequestFactory()
  """
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- def __repr__(self,*args):
-  """ __repr__(self: object) -> str """
-  pass
 
-class PackWebResponse(WebResponse,ISerializable,IDisposable):
- """ Represents a response of a System.IO.Packaging.PackWebRequest. """
- def Close(self):
-  """
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    def __repr__(self, *args):
+        """ __repr__(self: object) -> str """
+        pass
+
+
+class PackWebResponse(WebResponse, ISerializable, IDisposable):
+    """ Represents a response of a System.IO.Packaging.PackWebRequest. """
+
+    def Close(self):
+        """
   Close(self: PackWebResponse)
 
    Closes the stream for this request.
   """
-  pass
- def Dispose(self):
-  """ Dispose(self: PackWebResponse,disposing: bool) """
-  pass
- def GetObjectData(self,*args):
-  """
+        pass
+
+    def Dispose(self):
+        """ Dispose(self: PackWebResponse,disposing: bool) """
+        pass
+
+    def GetObjectData(self, *args):
+        """
   GetObjectData(self: WebResponse,serializationInfo: SerializationInfo,streamingContext: StreamingContext)
 
    Populates a System.Runtime.Serialization.SerializationInfo with the data that is needed to 
@@ -360,9 +393,10 @@ class PackWebResponse(WebResponse,ISerializable,IDisposable):
 
     serialization.
   """
-  pass
- def GetResponseStream(self):
-  """
+        pass
+
+    def GetResponseStream(self):
+        """
   GetResponseStream(self: PackWebResponse) -> Stream
 
   
@@ -371,9 +405,10 @@ class PackWebResponse(WebResponse,ISerializable,IDisposable):
 
    Returns: The response stream.
   """
-  pass
- def MemberwiseClone(self,*args):
-  """
+        pass
+
+    def MemberwiseClone(self, *args):
+        """
   MemberwiseClone(self: MarshalByRefObject,cloneIdentity: bool) -> MarshalByRefObject
 
   
@@ -404,28 +439,34 @@ class PackWebResponse(WebResponse,ISerializable,IDisposable):
 
    Returns: A shallow copy of the current System.Object.
   """
-  pass
- def __enter__(self,*args):
-  """
+        pass
+
+    def __enter__(self, *args):
+        """
   __enter__(self: IDisposable) -> object
 
   
 
    Provides the implementation of __enter__ for objects which implement IDisposable.
   """
-  pass
- def __exit__(self,*args):
-  """
+        pass
+
+    def __exit__(self, *args):
+        """
   __exit__(self: IDisposable,exc_type: object,exc_value: object,exc_back: object)
 
    Provides the implementation of __exit__ for objects which implement IDisposable.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- ContentLength=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the content length of the response.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    ContentLength = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the content length of the response.
 
 
 
@@ -435,8 +476,10 @@ Get: ContentLength(self: PackWebResponse) -> Int64
 
 """
 
- ContentType=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the Multipurpose Internet Mail Extensions (MIME) content type of the response stream's content.
+    ContentType = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the Multipurpose Internet Mail Extensions (MIME) content type of the response stream's content.
 
 
 
@@ -446,8 +489,8 @@ Get: ContentType(self: PackWebResponse) -> str
 
 """
 
- Headers=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the collection of Web System.Net.WebResponse.Headers for this response.
+    Headers = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets the collection of Web System.Net.WebResponse.Headers for this response.
 
 
 
@@ -457,8 +500,10 @@ Get: Headers(self: PackWebResponse) -> WebHeaderCollection
 
 """
 
- InnerResponse=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the inner System.Net.WebResponse object for the response.
+    InnerResponse = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the inner System.Net.WebResponse object for the response.
 
 
 
@@ -468,8 +513,10 @@ Get: InnerResponse(self: PackWebResponse) -> WebResponse
 
 """
 
- IsFromCache=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value indicating whether the response is from the package cache or from a Web request.
+    IsFromCache = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value indicating whether the response is from the package cache or from a Web request.
 
 
 
@@ -479,8 +526,10 @@ Get: IsFromCache(self: PackWebResponse) -> bool
 
 """
 
- ResponseUri=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets the uniform resource identifier (URI) of the response.
+    ResponseUri = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets the uniform resource identifier (URI) of the response.
 
 
 
@@ -489,6 +538,3 @@ Get: ResponseUri(self: PackWebResponse) -> Uri
 
 
 """
-
-
-

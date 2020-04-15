@@ -1,13 +1,16 @@
-class SizeAnimationUsingKeyFrames(SizeAnimationBase,ISealable,IAnimatable,IResource,IKeyFrameAnimation,IAddChild):
- """
+class SizeAnimationUsingKeyFrames(
+    SizeAnimationBase, ISealable, IAnimatable, IResource, IKeyFrameAnimation, IAddChild
+):
+    """
  Animates the value of a System.Windows.Size property along a set of System.Windows.Media.Animation.SizeAnimationUsingKeyFrames.KeyFrames.
 
  
 
  SizeAnimationUsingKeyFrames()
  """
- def AddChild(self,*args):
-  """
+
+    def AddChild(self, *args):
+        """
   AddChild(self: SizeAnimationUsingKeyFrames,child: object)
 
    Adds a child System.Windows.Media.Animation.SizeKeyFrame to this 
@@ -22,9 +25,10 @@ class SizeAnimationUsingKeyFrames(SizeAnimationBase,ISealable,IAnimatable,IResou
 
     System.Windows.Media.Animation.SizeAnimationUsingKeyFrames.
   """
-  pass
- def AddText(self,*args):
-  """
+        pass
+
+    def AddText(self, *args):
+        """
   AddText(self: SizeAnimationUsingKeyFrames,childText: str)
 
    Adds a text string as a child of this System.Windows.Media.Animation.SizeAnimationUsingKeyFrames.
@@ -33,9 +37,10 @@ class SizeAnimationUsingKeyFrames(SizeAnimationBase,ISealable,IAnimatable,IResou
 
    childText: The text added to the System.Windows.Media.Animation.SizeAnimationUsingKeyFrames.
   """
-  pass
- def AllocateClock(self,*args):
-  """
+        pass
+
+    def AllocateClock(self, *args):
+        """
   AllocateClock(self: AnimationTimeline) -> Clock
 
   
@@ -48,9 +53,10 @@ class SizeAnimationUsingKeyFrames(SizeAnimationBase,ISealable,IAnimatable,IResou
 
    Returns: A clock for this System.Windows.Media.Animation.AnimationTimeline.
   """
-  pass
- def Clone(self):
-  """
+        pass
+
+    def Clone(self):
+        """
   Clone(self: SizeAnimationUsingKeyFrames) -> SizeAnimationUsingKeyFrames
 
   
@@ -69,9 +75,10 @@ class SizeAnimationUsingKeyFrames(SizeAnimationBase,ISealable,IAnimatable,IResou
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCore(self,*args):
-  """
+        pass
+
+    def CloneCore(self, *args):
+        """
   CloneCore(self: SizeAnimationUsingKeyFrames,sourceFreezable: Freezable)
 
    Makes this instance a deep copy of the specified 
@@ -88,9 +95,10 @@ class SizeAnimationUsingKeyFrames(SizeAnimationBase,ISealable,IAnimatable,IResou
 
    sourceFreezable: The System.Windows.Media.Animation.SizeAnimationUsingKeyFrames to clone.
   """
-  pass
- def CloneCurrentValue(self):
-  """
+        pass
+
+    def CloneCurrentValue(self):
+        """
   CloneCurrentValue(self: SizeAnimationUsingKeyFrames) -> SizeAnimationUsingKeyFrames
 
   
@@ -107,9 +115,10 @@ class SizeAnimationUsingKeyFrames(SizeAnimationBase,ISealable,IAnimatable,IResou
 
     property will be false even if the source's System.Windows.Freezable.IsFrozen property was true.
   """
-  pass
- def CloneCurrentValueCore(self,*args):
-  """
+        pass
+
+    def CloneCurrentValueCore(self, *args):
+        """
   CloneCurrentValueCore(self: SizeAnimationUsingKeyFrames,sourceFreezable: Freezable)
 
    Makes this instance a modifiable deep copy of the specified 
@@ -124,9 +133,10 @@ class SizeAnimationUsingKeyFrames(SizeAnimationBase,ISealable,IAnimatable,IResou
 
    sourceFreezable: The System.Windows.Media.Animation.SizeAnimationUsingKeyFrames to clone.
   """
-  pass
- def CreateInstance(self,*args):
-  """
+        pass
+
+    def CreateInstance(self, *args):
+        """
   CreateInstance(self: Freezable) -> Freezable
 
   
@@ -135,9 +145,10 @@ class SizeAnimationUsingKeyFrames(SizeAnimationBase,ISealable,IAnimatable,IResou
 
    Returns: The new instance.
   """
-  pass
- def CreateInstanceCore(self,*args):
-  """
+        pass
+
+    def CreateInstanceCore(self, *args):
+        """
   CreateInstanceCore(self: SizeAnimationUsingKeyFrames) -> Freezable
 
   
@@ -146,9 +157,10 @@ class SizeAnimationUsingKeyFrames(SizeAnimationBase,ISealable,IAnimatable,IResou
 
    Returns: A new instance of System.Windows.Media.Animation.SizeAnimationUsingKeyFrames.
   """
-  pass
- def FreezeCore(self,*args):
-  """
+        pass
+
+    def FreezeCore(self, *args):
+        """
   FreezeCore(self: SizeAnimationUsingKeyFrames,isChecking: bool) -> bool
 
   
@@ -171,9 +183,10 @@ class SizeAnimationUsingKeyFrames(SizeAnimationBase,ISealable,IAnimatable,IResou
 
     having begun to change the frozen status of this object.
   """
-  pass
- def GetAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetAsFrozenCore(self, *args):
+        """
   GetAsFrozenCore(self: SizeAnimationUsingKeyFrames,source: Freezable)
 
    Makes this instance a clone of the specified 
@@ -186,9 +199,10 @@ class SizeAnimationUsingKeyFrames(SizeAnimationBase,ISealable,IAnimatable,IResou
 
    source: The System.Windows.Media.Animation.SizeAnimationUsingKeyFrames object to clone.
   """
-  pass
- def GetCurrentValueAsFrozenCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueAsFrozenCore(self, *args):
+        """
   GetCurrentValueAsFrozenCore(self: SizeAnimationUsingKeyFrames,source: Freezable)
 
    Makes this instance a frozen clone of the specified 
@@ -203,9 +217,10 @@ class SizeAnimationUsingKeyFrames(SizeAnimationBase,ISealable,IAnimatable,IResou
 
    source: The System.Windows.Media.Animation.SizeAnimationUsingKeyFrames to copy and freeze.
   """
-  pass
- def GetCurrentValueCore(self,*args):
-  """
+        pass
+
+    def GetCurrentValueCore(self, *args):
+        """
   GetCurrentValueCore(self: SizeAnimationUsingKeyFrames,defaultOriginValue: Size,defaultDestinationValue: Size,animationClock: AnimationClock) -> Size
 
   
@@ -240,9 +255,10 @@ class SizeAnimationUsingKeyFrames(SizeAnimationBase,ISealable,IAnimatable,IResou
 
    Returns: The calculated value of the property,as determined by the current instance.
   """
-  pass
- def GetNaturalDuration(self,*args):
-  """
+        pass
+
+    def GetNaturalDuration(self, *args):
+        """
   GetNaturalDuration(self: Timeline,clock: Clock) -> Duration
 
   
@@ -261,9 +277,10 @@ class SizeAnimationUsingKeyFrames(SizeAnimationBase,ISealable,IAnimatable,IResou
 
     System.Windows.Duration.Automatic if the natural duration is unknown.
   """
-  pass
- def GetNaturalDurationCore(self,*args):
-  """
+        pass
+
+    def GetNaturalDurationCore(self, *args):
+        """
   GetNaturalDurationCore(self: SizeAnimationUsingKeyFrames,clock: Clock) -> Duration
 
   
@@ -284,18 +301,20 @@ class SizeAnimationUsingKeyFrames(SizeAnimationBase,ISealable,IAnimatable,IResou
 
     one second.
   """
-  pass
- def OnChanged(self,*args):
-  """
+        pass
+
+    def OnChanged(self, *args):
+        """
   OnChanged(self: SizeAnimationUsingKeyFrames)
 
    Called when the current System.Windows.Media.Animation.SizeAnimationUsingKeyFrames object is 
 
     modified.
   """
-  pass
- def OnFreezablePropertyChanged(self,*args):
-  """
+        pass
+
+    def OnFreezablePropertyChanged(self, *args):
+        """
   OnFreezablePropertyChanged(self: Freezable,oldValue: DependencyObject,newValue: DependencyObject,property: DependencyProperty)
 
    This member supports the Windows Presentation Foundation (WPF) infrastructure and is not 
@@ -326,9 +345,10 @@ class SizeAnimationUsingKeyFrames(SizeAnimationBase,ISealable,IAnimatable,IResou
 
    newValue: The current value of the data member.
   """
-  pass
- def OnPropertyChanged(self,*args):
-  """
+        pass
+
+    def OnPropertyChanged(self, *args):
+        """
   OnPropertyChanged(self: Freezable,e: DependencyPropertyChangedEventArgs)
 
    Overrides the System.Windows.DependencyObject implementation of 
@@ -345,9 +365,10 @@ class SizeAnimationUsingKeyFrames(SizeAnimationBase,ISealable,IAnimatable,IResou
 
    e: Event data that contains information about which property changed,and its old and new values.
   """
-  pass
- def ReadPreamble(self,*args):
-  """
+        pass
+
+    def ReadPreamble(self, *args):
+        """
   ReadPreamble(self: Freezable)
 
    Ensures that the System.Windows.Freezable is being accessed from a valid thread. Inheritors of 
@@ -356,9 +377,10 @@ class SizeAnimationUsingKeyFrames(SizeAnimationBase,ISealable,IAnimatable,IResou
 
     members that are not dependency properties.
   """
-  pass
- def ShouldSerializeKeyFrames(self):
-  """
+        pass
+
+    def ShouldSerializeKeyFrames(self):
+        """
   ShouldSerializeKeyFrames(self: SizeAnimationUsingKeyFrames) -> bool
 
   
@@ -373,9 +395,10 @@ class SizeAnimationUsingKeyFrames(SizeAnimationBase,ISealable,IAnimatable,IResou
 
    Returns: true if the property value should be serialized; otherwise,false.
   """
-  pass
- def ShouldSerializeProperty(self,*args):
-  """
+        pass
+
+    def ShouldSerializeProperty(self, *args):
+        """
   ShouldSerializeProperty(self: DependencyObject,dp: DependencyProperty) -> bool
 
   
@@ -392,9 +415,10 @@ class SizeAnimationUsingKeyFrames(SizeAnimationBase,ISealable,IAnimatable,IResou
 
    Returns: true if the dependency property that is supplied should be value-serialized; otherwise,false.
   """
-  pass
- def WritePostscript(self,*args):
-  """
+        pass
+
+    def WritePostscript(self, *args):
+        """
   WritePostscript(self: Freezable)
 
    Raises the System.Windows.Freezable.Changed event for the System.Windows.Freezable and invokes 
@@ -405,9 +429,10 @@ class SizeAnimationUsingKeyFrames(SizeAnimationBase,ISealable,IAnimatable,IResou
 
     dependency properties.
   """
-  pass
- def WritePreamble(self,*args):
-  """
+        pass
+
+    def WritePreamble(self, *args):
+        """
   WritePreamble(self: Freezable)
 
    Verifies that the System.Windows.Freezable is not frozen and that it is being accessed from a 
@@ -416,12 +441,16 @@ class SizeAnimationUsingKeyFrames(SizeAnimationBase,ISealable,IAnimatable,IResou
 
     beginning of any API that writes to data members that are not dependency properties.
   """
-  pass
- def __init__(self,*args):
-  """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
-  pass
- IsAdditive=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets a value that specifies whether the animation's output value is added to the base value of the property being animated.
+        pass
+
+    def __init__(self, *args):
+        """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
+        pass
+
+    IsAdditive = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets a value that specifies whether the animation's output value is added to the base value of the property being animated.
 
 
 
@@ -433,8 +462,10 @@ Set: IsAdditive(self: SizeAnimationUsingKeyFrames)=value
 
 """
 
- IsCumulative=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets a value that specifies whether the animation's value accumulates when it repeats.
+    IsCumulative = property(
+        lambda self: object(), lambda self, v: None, lambda self: None
+    )
+    """Gets or sets a value that specifies whether the animation's value accumulates when it repeats.
 
 
 
@@ -446,8 +477,8 @@ Set: IsCumulative(self: SizeAnimationUsingKeyFrames)=value
 
 """
 
- KeyFrames=property(lambda self: object(),lambda self,v: None,lambda self: None)
- """Gets or sets the collection of System.Windows.Media.Animation.SizeKeyFrame objects that define the animation.
+    KeyFrames = property(lambda self: object(), lambda self, v: None, lambda self: None)
+    """Gets or sets the collection of System.Windows.Media.Animation.SizeKeyFrame objects that define the animation.
 
 
 
@@ -458,5 +489,3 @@ Get: KeyFrames(self: SizeAnimationUsingKeyFrames) -> SizeKeyFrameCollection
 Set: KeyFrames(self: SizeAnimationUsingKeyFrames)=value
 
 """
-
-
